@@ -39,6 +39,8 @@ PUBLIC_SURFACES = {
     "RESULTS/OPEN-QUESTIONS.md", "RESULTS/ADJUDICATION-SUMMARY.md",
     "RESULTS/RESEARCH-AND-ARTICLES.md",
 }
+STABLE_SOURCE_LOCATOR_SURFACES = {"SUMMARY.md", "HUMAN-READING.md", "STATE-CHANGELOG.md"}
+INLINE_MARKDOWN_LINK = re.compile(r"!?\[([^\]]*)\]\([^)]*\)")
 TEXT_SUFFIXES = {".md", ".txt", ".rst", ".json", ".jsonl", ".csv", ".yml", ".yaml", ".toml", ".py", ".sage", ".lean", ".js", ".jsx", ".ts", ".tsx", ".sh", ".html"}
 SELF_EXCLUDES = {
     # Task 151 homepage projection outputs are provenance-bound generated
@@ -334,11 +336,44 @@ def source_context(path: str, text: str) -> str:
     return "CURRENT_REPOSITORY_RECORD"
 
 
-def candidate(text: str) -> bool:
-    compact = " ".join(text.strip().split())
+def visible_markdown_text(text: str) -> str:
+    """Return displayed Markdown words for claim-signal detection only.
+
+    The stored source fragment keeps link destinations as evidence. URLs are
+    ignored only when deciding whether visible text itself is claim-like.
+    """
+    text = INLINE_MARKDOWN_LINK.sub(lambda match: match.group(1), text)
+    text = re.sub(r"https?://\S+", " ", text)
+    return text
+
+
+def candidate(text: str, *, markdown: bool = False) -> bool:
+    visible = visible_markdown_text(text) if markdown else text
+    compact = " ".join(visible.strip().split())
     if len(compact) < 8 or compact.startswith(("```", "<!--")):
         return False
     return bool(SIGNALS.search(compact))
+
+
+def editorial_navigation_only_fragment(text: str) -> bool:
+    """Identify standalone link navigation with no claim-like visible label."""
+    if not INLINE_MARKDOWN_LINK.search(text) or candidate(text, markdown=True):
+        return False
+    remainder = INLINE_MARKDOWN_LINK.sub(" ", text)
+    remainder = re.sub(r"[\s#>*+|:-]+", "", remainder)
+    return not remainder
+
+
+def impact_class_for_fragment(text: str, is_new: bool, *, markdown: bool = False) -> str:
+    if not candidate(text, markdown=markdown):
+        return "EDITORIAL_NAVIGATION_ONLY"
+    return "NEW_CLAIM_CANDIDATE" if is_new else "SOURCE_CONTENT_CHANGED"
+
+
+def stable_content_locator(text: str, occurrence: int) -> str:
+    key = " ".join(visible_markdown_text(text).split()).casefold()
+    digest = hashlib.sha256(key.encode("utf-8")).hexdigest()[:16]
+    return f"content-sha256:{digest}:occurrence:{occurrence}"
 
 
 def walk_json_strings(value: object, pointer: str = "") -> Iterable[tuple[str, str]]:
@@ -388,9 +423,9 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
                 value = None
             if value is not None:
                 for pointer, text in walk_json_strings(value):
-                    if candidate(text):
+                    if candidate(text, markdown=False):
                         fragments.append({"text": " ".join(text.split()), "line": line_no, "locator": pointer})
-            elif candidate(line[:2000]):
+            elif candidate(line[:2000], markdown=False):
                 fragments.append({"text": " ".join(line[:2000].split()), "line": line_no, "locator": "raw-line"})
     elif suffix == ".json":
         try:
@@ -400,24 +435,25 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
         if value is not None:
             lines = raw.splitlines()
             for pointer, text in walk_json_strings(value):
-                if candidate(text):
+                if candidate(text, markdown=False):
                     short = " ".join(text.split())
                     line_no = next((i for i, line in enumerate(lines, 1) if short[:60] in " ".join(line.split())), 1)
                     fragments.append({"text": short, "line": line_no, "locator": pointer})
         else:
             for line_no, line in enumerate(raw.splitlines(), 1):
-                if candidate(line):
+                if candidate(line, markdown=False):
                     fragments.append({"text": " ".join(line.split())[:2000], "line": line_no, "locator": "raw-line"})
     elif suffix == ".csv":
         try:
             reader = csv.DictReader(io.StringIO(raw))
             for row_no, row in enumerate(reader, 2):
                 for key, text in sorted(row.items()):
-                    if text and candidate(text):
+                    if text and candidate(text, markdown=False):
                         fragments.append({"text": " ".join(text.split())[:2000], "line": row_no, "locator": f"column:{key}"})
         except csv.Error:
             pass
     else:
+        stable_occurrences: Counter[str] = Counter()
         for line_no, line in enumerate(raw.splitlines(), 1):
             if path == "STATE-CHANGELOG.md" and OPERATIONAL_RECORD_ONLY_MARKER in line:
                 continue
@@ -427,9 +463,21 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
             pieces = re.split(r"(?<=[。！？.!?])\s+", line) if len(line) > 600 else [line]
             for index, piece in enumerate(pieces):
                 piece = piece[:2000]
-                if candidate(piece):
-                    fragments.append({"text": piece, "line": line_no, "locator": f"line-fragment:{index}"})
-    return fragments, "SCANNED_REGISTERED" if fragments else "SCANNED_NO_CANDIDATE"
+                if candidate(piece, markdown=path in STABLE_SOURCE_LOCATOR_SURFACES):
+                    if path in STABLE_SOURCE_LOCATOR_SURFACES:
+                        key = " ".join(visible_markdown_text(piece).split()).casefold()
+                        stable_occurrences[key] += 1
+                        locator = stable_content_locator(piece, stable_occurrences[key])
+                    else:
+                        locator = f"line-fragment:{index}"
+                    fragments.append({"text": piece, "line": line_no, "locator": locator, "candidate": True})
+                elif path in STABLE_SOURCE_LOCATOR_SURFACES and editorial_navigation_only_fragment(piece):
+                    fragments.append({
+                        "text": piece, "line": line_no, "locator": f"editorial-navigation:{index}",
+                        "candidate": False, "impact_class": "EDITORIAL_NAVIGATION_ONLY",
+                    })
+    has_candidates = any(fragment.get("candidate", True) for fragment in fragments)
+    return fragments, "SCANNED_REGISTERED" if has_candidates else "SCANNED_NO_CANDIDATE"
 
 
 def classify(text: str) -> str:
@@ -593,7 +641,10 @@ def load_jsonl(path: Path) -> list[dict]:
 
 
 def anchor(path: str, fragment: dict, context: str) -> dict:
-    return {"path": path, "first_line": fragment["line"], "last_line": fragment["line"], "locator": fragment["locator"], "source_context": context}
+    row = {"path": path, "locator": fragment["locator"], "source_context": context}
+    if path not in STABLE_SOURCE_LOCATOR_SURFACES:
+        row.update({"first_line": fragment["line"], "last_line": fragment["line"]})
+    return row
 
 
 def build() -> dict[Path, str]:
@@ -620,20 +671,26 @@ def build() -> dict[Path, str]:
     discovery_by_path.append({
         "path": "data/foundation/claims/claims.jsonl", "coverage_status": "EXPLICIT_CANONICAL_IMPORT",
         "candidate_fragments": len(existing_claims), "canonical_claim_ids": sorted(grouped),
-        "exclusion_reason": None,
+        "exclusion_reason": None, "impact_classes": ["SOURCE_CONTENT_CHANGED"],
     })
 
     for path in tracked_paths():
         if path == "data/foundation/claims/claims.jsonl":
             continue
         fragments, status = text_fragments(path)
+        admission = admission_for_path(path)
+        impact_classes = {admission.impact_class}
         ids_for_path: set[str] = set()
         for fragment in fragments:
+            if not fragment.get("candidate", True):
+                impact_classes.add(fragment.get("impact_class", "EDITORIAL_NAVIGATION_ONLY"))
+                continue
             text = fragment["text"]
             norm = normalize(text)
             if not norm:
                 continue
             existing = existing_by_norm.get(norm)
+            impact_classes.add(impact_class_for_fragment(text, existing is None, markdown=Path(path).suffix.casefold() == ".md"))
             if existing:
                 cid = f"CLAIM-{existing['id']}"
             else:
@@ -648,16 +705,17 @@ def build() -> dict[Path, str]:
         discovery_by_path.append({
             "path": path,
             "coverage_status": status,
-            "candidate_fragments": len(fragments),
+            "candidate_fragments": sum(fragment.get("candidate", True) for fragment in fragments),
             "canonical_claim_ids": sorted(ids_for_path),
             "exclusion_reason": status if status.startswith("EXCLUDED") else None,
+            "impact_classes": sorted(impact_classes),
         })
 
     claims: list[dict] = []
     for cid in sorted(grouped):
         item = grouped[cid]
         text = item["text"]
-        anchors = sorted(item["anchors"], key=lambda row: (row["path"], row["first_line"], row["locator"]))
+        anchors = sorted(item["anchors"], key=lambda row: (row["path"], row.get("first_line", 0), row["locator"]))
         contexts = {row["source_context"] for row in anchors}
         if "CURRENT_PUBLIC_SURFACE" in contexts:
             context = "CURRENT_PUBLIC_SURFACE"
@@ -716,7 +774,14 @@ def build() -> dict[Path, str]:
             internal_external = "MIXED_OR_UNRESOLVED"
         else:
             internal_external = "MODEL_INTERNAL"
-        source_refs = [{"kind": "SOURCE_TEXT", "path": row["path"], "line": row["first_line"], "supports_exact_claim": False} for row in anchors]
+        source_refs = []
+        for row in anchors:
+            reference = {"kind": "SOURCE_TEXT", "path": row["path"], "supports_exact_claim": False}
+            if "first_line" in row:
+                reference["line"] = row["first_line"]
+            else:
+                reference["locator"] = row["locator"]
+            source_refs.append(reference)
         if authority_card:
             source_refs.append({"kind": "FUNCTION_ASSET_AUTHORITY", "canonical_id": authority_card["canonical_id"], "supports_exact_claim": disposition == "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT"})
         title = re.sub(r"^[#>*\-\s\d.]+", "", text).strip()[:120] or cid
@@ -811,11 +876,16 @@ def build() -> dict[Path, str]:
         for item in row["source_anchors"]:
             if item["path"] in PUBLIC_SURFACES:
                 violation = row["audit_gates"]["public_surface_audit"] == "FAIL"
-                public_rows.append({
-                    "canonical_id": row["canonical_id"], "source_path": item["path"], "line": item["first_line"],
+                public_item = {
+                    "canonical_id": row["canonical_id"], "source_path": item["path"],
                     "claim_ceiling": row["claim_ceiling"], "final_disposition": row["final_disposition"],
                     "current_violation": violation, "status": "VIOLATION_REQUIRES_SOURCE_CORRECTION" if violation else "WITHIN_CEILING",
-                })
+                }
+                if "first_line" in item:
+                    public_item["line"] = item["first_line"]
+                else:
+                    public_item["locator"] = item["locator"]
+                public_rows.append(public_item)
 
     quarantine_dispositions = {
         "PENDING_PROOF", "PENDING_EMPIRICAL_TEST", "PENDING_LITERATURE_ADJUDICATION", "REWRITE_AND_RETEST",
