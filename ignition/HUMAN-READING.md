@@ -8,8 +8,9 @@
 第一个大型 Domain Pack，而不是整个系统本体。它是 OS / orchestration-governance
 layer 与 driver；Task 122 的 External Agent Federation R1 让 OpenClaw、Hermes、
 Codex 作为可替换 external executors 通过 adapter 接入，并把现有执行层冻结为
-Reference / Conformance / Fallback。当前唯一完整系统图为 `0.8.0`，上一版 `0.7.0`
-仅作 Historical。要理解这句话的工程含义，读
+Reference / Conformance / Fallback。仓库首页使用经 Task150 来源核验的架构展示投影；机器可读地图的版本与当前状态，以
+[Current Facts](./docs/architecture/current-facts.md) 为准，投影来源与边界见
+[交互式系统图说明](./docs/architecture/interactive-system-map.md)。要理解这句话的工程含义，读
 [Agent Platform R2](./docs/architecture/agent-platform-r2.md) 与
 [External Agent Federation R1](./docs/architecture/external-agent-federation-r1.md)；要核对当前公开
 结果，读[当前结果](./RESULTS/LATEST.md)；计数、版本和 live ceiling 见

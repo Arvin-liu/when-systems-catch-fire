@@ -1,6 +1,6 @@
 # 点火项目阅读导航
 
-> 当前快照：2026-07-30，任务 102 知识体验入口与探索层。分支提交在普通合并和 `main` 复验前仍是 Candidate；历史版本和关闭证据保留在 Git、CHANGELOG 与原报告中。
+> 本页是阅读导航，不是动态状态快照。项目当前身份、能力边界与未完成义务，以[AI 冷启动](./AI-START-HERE.md)、[Current Facts](./docs/architecture/current-facts.md)和[当前结果](./RESULTS/LATEST.md)中的对应权威来源为准。
 
 ## 先看结果
 

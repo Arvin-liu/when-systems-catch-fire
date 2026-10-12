@@ -740,3 +740,11 @@
 - stale_knowledge: a green local generator or CI result must not be read as independent validation, Current promotion, production readiness or epistemic acceptance; the old main pointer remains the baseline until remote observation. [OPERATIONAL_RECORD_ONLY]
 - next_read: inspect the dedicated integration PR and required CI at its exact head, then verify the merged remote main SHA, Task165 ancestry, post-merge smoke/Foundation gates and the independent `1111` receipt. [OPERATIONAL_RECORD_ONLY]
 - claim_ceiling: repository-local derived-output reconciliation and formal integration-candidate evidence only; no external truth, Owner acceptance, production readiness, validated research finding or `READY_FOR_NEW_MATERIAL_RUN` status is inferred before all command gates close. [OPERATIONAL_RECORD_ONLY]
+
+## 2026-10-12 — R1-HOMEPAGE-PROJECT-IDENTITY-SYNC — formal main release candidate
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; candidate base is `f17477dd9761c898563dbf5670c63914a5ecedfa`; public `main` remains unchanged while this change is a candidate.
+- architecture_boundary: `PRESENTATION_ONLY`; system architecture, generated Current facts, capabilities and obligations are unchanged.
+- task_lineage: Current formal task remains `IGNITION-20260829-148`; this homepage synchronization does not create or advance formal task identity.
+- current_boundary: Owner/Chat project identity wording is synchronized to the front-door guard; stale navigation snapshots now point to Current authorities; usage clarifies Owner-selected research scope. No Current facts are copied or changed.
+- claim_ceiling: repository-local homepage, navigation and regression-test candidate only; no architecture, external, production, Owner-acceptance or epistemic-status promotion is claimed.
