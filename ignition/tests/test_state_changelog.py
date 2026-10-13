@@ -161,5 +161,96 @@ class StateChangelogTests(unittest.TestCase):
         self.assertTrue(any("not an authorized" in error or "authorized versioned seal" in error for error in errors), errors)
 
 
+    def test_r2_negative_counterfactuals_preserve_fixed_57_entry_boundary(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        cases = {
+            "tampered-historical-56": _replace_in_entry(source, 56, "- main_state:", "- main_state: TAMPERED;"),
+            "tampered-current-57": _replace_in_entry(source, 57, "- main_state:", "- main_state: TAMPERED;"),
+            "arbitrary-scientific-claim-upgrade": _replace_in_entry(
+                source, 57, "- claim_ceiling:", "- claim_ceiling: SCIENTIFICALLY_VALIDATED_WITHOUT_EVIDENCE;"
+            ),
+            "missing-required-field": _replace_in_entry(
+                source, 57, "- claim_ceiling:", "- claim_ceiling_removed:"
+            ),
+            "duplicate-entry": source + "\n" + source[source.rfind("\n## ") + 1:],
+            "unauthorized-58th-append": source + (
+                "\n## 2026-10-13 — SYNTHETIC-UNAUTHORIZED-58\n\n"
+                "- main_state: synthetic candidate only\n"
+                "- delta: no authorized trust root was supplied\n"
+                "- authority_changes: none\n"
+                "- epistemic_state: unchanged\n"
+                "- obligations: remain open\n"
+                "- stale_knowledge: none\n"
+                "- next_read: Owner must authorize a real successor independently\n"
+                "- claim_ceiling: repository-local fixture only\n"
+            ),
+            "invalid-date": re.sub(
+                r"(?m)^## 2026-10-12 — IGNITION-GOVERNANCE-SELF-REPAIR-R1-PACKAGE-A",
+                "## 2026-99-99 — IGNITION-GOVERNANCE-SELF-REPAIR-R1-PACKAGE-A",
+                source,
+                count=1,
+            ),
+        }
+        expected_fragments = {
+            "tampered-historical-56": "fingerprint mismatch",
+            "tampered-current-57": "fingerprint mismatch",
+            "arbitrary-scientific-claim-upgrade": "fingerprint mismatch",
+            "missing-required-field": "missing nonblank field claim_ceiling",
+            "duplicate-entry": "expects 57 entries",
+            "unauthorized-58th-append": "expects 57 entries",
+            "invalid-date": "invalid ISO date",
+        }
+        for case_id, mutated in cases.items():
+            with self.subTest(case=case_id), tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / "STATE-CHANGELOG.md"
+                path.write_text(mutated, encoding="utf-8")
+                errors = validate(path=path)
+                self.assertTrue(any(expected_fragments[case_id] in error for error in errors), (case_id, errors))
+
+    def test_r2_profile_authority_counterfactuals_fail_closed(self):
+        profile = json.loads(PROFILE_PATH.read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            forged = json.loads(json.dumps(profile))
+            forged["entries"].append(dict(forged["entries"][-1], ordinal=58, date="2026-10-13"))
+            forged["entry_count"] = 58
+            forged_path = root / "forged-successor.json"
+            forged_path.write_text(json.dumps(forged), encoding="utf-8")
+            errors = validate(profile_path=forged_path)
+            self.assertTrue(any("not an authorized versioned profile" in error for error in errors), errors)
+
+            changed_anchor = json.loads(json.dumps(profile))
+            changed_anchor["authorization"]["commit"] = "0" * 40
+            changed_path = root / "changed-trust-anchor.json"
+            changed_path.write_text(json.dumps(changed_anchor), encoding="utf-8")
+            errors = validate(profile_path=changed_path)
+            self.assertTrue(any("exact authorized append source" in error for error in errors), errors)
+
+            duplicate_ordinal = json.loads(json.dumps(profile))
+            duplicate_ordinal["entries"][-1]["ordinal"] = 56
+            duplicate_path = root / "duplicate-ordinal.json"
+            duplicate_path.write_text(json.dumps(duplicate_ordinal), encoding="utf-8")
+            errors = validate(profile_path=duplicate_path)
+            self.assertTrue(any("ordinals are not a complete ordered seal" in error for error in errors), errors)
+
+            errors = validate(profile_path=PROFILE_PATH_R1)
+            self.assertTrue(any("expects" in error or "entry set" in error for error in errors), errors)
+
+    def test_r2_profile_rollback_and_canonical_bytes_remain_unchanged(self):
+        r1_bytes = PROFILE_PATH_R1.read_bytes()
+        r2_bytes = PROFILE_PATH.read_bytes()
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+        prefix_56 = source[: headings[-1].start()]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "STATE-CHANGELOG.md"
+            path.write_text(prefix_56, encoding="utf-8")
+            errors = validate(path=path, profile_path=PROFILE_PATH)
+        self.assertTrue(any("expects 57 entries" in error or "entry set" in error for error in errors), errors)
+        self.assertEqual(hashlib.sha256(r1_bytes).hexdigest(), R1_PROFILE_SHA256)
+        self.assertEqual(hashlib.sha256(r2_bytes).hexdigest(), R2_PROFILE_SHA256)
+        self.assertEqual([], validate())
+        self.assertEqual(57, json.loads(r2_bytes)["entry_count"])
+
 if __name__ == "__main__":
     unittest.main()
