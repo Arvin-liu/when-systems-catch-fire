@@ -81,7 +81,7 @@
       "id": "WRITING_PUBLICATION",
       "label": "文章、写作与公共表达",
       "question": "研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？",
-      "keywords": ["publication", "writing", "文章", "写作", "作品", "story", "金朝", "public"]
+      "keywords": ["publication", "writing", "文章", "写作", "作品", "story", "金朝", "public", "gpt6-participant-reflection"]
     },
     {
       "id": "OPERATIONS_EVIDENCE",

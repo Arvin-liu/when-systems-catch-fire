@@ -8,12 +8,14 @@
     "docs/governance",
     "docs/operations",
     "docs/publication",
+    "docs/what-is-ignition",
     "outputs",
     "agent-results",
     "新故事"
   ],
   "excluded_prefixes": [
     "docs/generated/",
+    "docs/what-is-ignition/README.md",
     "reports/readme/"
   ],
   "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",

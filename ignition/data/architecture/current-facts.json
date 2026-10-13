@@ -155,11 +155,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 1353,
-      "cards": 653,
-      "changes": 548,
-      "layered_readings": 574,
-      "search_records": 24690
+      "aliases": 1355,
+      "cards": 654,
+      "changes": 549,
+      "layered_readings": 575,
+      "search_records": 24691
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -245,7 +245,7 @@
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
-      "sha256": "9452ae86f6ce151ac7c08ae16300aeae9a086445651e821eb40aa79f29af6b47"
+      "sha256": "d6f3240d07c61d2ad8ad9eebdeb222cebf2435d1a6dec7a18e5e7e0bb8d68ebd"
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "185e2fcf997854a08a1df83015f6cf869aaed5cb2957d646626c7aaa5fbd24d1"
+      "sha256": "8c135de04d046d297ae0e9e2a5f19eba0af19ee57eca3e02e228e51ca0fb9a2a"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",

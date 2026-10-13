@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-49c323b109c04a79"></a>
+### 2026-10-13 · GPT-6 对“点火是什么”的一次参与者回应
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文写到 GPT-6 查看当时的公开 main 与 252 候选 README 后，没有找到诗句。这只记录了评论写作时检查的范围，并未核对 Git 历史。后续来源重建确认：Owner 在 2026-07-26 的人机讨论中提出南宗炼丹与“没有最终形态”的项目隐喻，ChatGPT 随后拟出四句，Owner 认可并决定将其作为独立项目宣言；公开仓库 PR 142 于 2026-07-27 合并该宣言，2026-08-28 的首页简化提交移除了含诗句的旧引言。请查阅栏目中的来源重建、PR 142和移除提交。原文保留其当时视角，不把后来查到的历史混入作者原稿。
+- **来源：** [2026-10-13-gpt6-participant-reflection.md](../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
+- **资产卡：** [HR-49C323B109C04A79](./ASSET-CARDS.md#asset-hr-49c323b109c04a79)
+
 <a id="change-src-hr-721da9720e4dc58a"></a>
 ### 2026-09-10 · IGNITION-20260910-169 result
 

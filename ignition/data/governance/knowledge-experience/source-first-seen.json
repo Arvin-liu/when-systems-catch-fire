@@ -167,6 +167,7 @@
     "docs/publication/zhiyuan-writing-examples.md": "2026-07-16",
     "docs/publication/zhiyuan-writing-method.md": "2026-07-16",
     "docs/publication/zhiyuan-writing-showcase.md": "2026-07-16",
+    "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md": "2026-10-14",
     "outputs/audit/agent-collision-phase-closeout-20260708.md": "2026-07-08",
     "outputs/audit/agent-project-understanding-20260708.md": "2026-07-08",
     "outputs/audit/book-validation-case-table-formalization-audit-20260709.md": "2026-07-09",
@@ -577,7 +578,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 575,
+  "entry_count": 576,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

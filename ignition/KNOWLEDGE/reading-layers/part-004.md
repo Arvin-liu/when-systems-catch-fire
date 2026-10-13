@@ -60,6 +60,13 @@
 - 5 分钟：主题：Semantic Leap Detector V2 (Task159)；Status: research-only replay instrument. It does not change canonical protocol meaning, Current state, authority, capability, production readiness, or acceptance.；V1 treated structural magnitude as a proxy: N02 registry growth and N03 canonical materialization therefore appeared leap-like. V2 requires an independently evidenced expressibility escape, generative freedom, question-language delta, and irreducible semantic increment, after non-leap challengers. A generator change is engineering-only when the old object la…；The frozen corpus has four historical challenger-positive events, twelve strong negatives, and two undecidable borderlines. V2 gives N02/N03 NONLEAP; L1 ablation reintroduces the N03 false positive. Backward compression is supporting evidence, not a sufficient condition. The result is valid only for deterministic research replay over this frozen Git-history…
 - 完整阅读：[docs/governance/semantic-leap-detector-v2-2026-09-07.md](../../docs/governance/semantic-leap-detector-v2-2026-09-07.md)
 
+<a id="reading-hr-49c323b109c04a79"></a>
+## GPT-6 对“点火是什么”的一次参与者回应
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：原文写到 GPT-6 查看当时的公开 main 与 252 候选 README 后，没有找到诗句。这只记录了评论写作时检查的范围，并未核对 Git 历史。后续来源重建确认：Owner 在 2026-07-26 的人机讨论中提出南宗炼丹与“没有最终形态”的项目隐喻，ChatGPT 随后拟出四句，Owner 认可并决定将其作为独立项目宣言；公开仓库 PR 142 于 2026-07-27 合并该宣言，2026-08-28 的首页简化提交移除了含诗句的旧引言。请查阅栏目中的来源重建、PR 142和移除提交。原文保留其当时视角，不把后来查到的历史混入作者原稿。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：GPT-6 对“点火是什么”的一次参与者回应；状态：历史参与者观点（HISTORICALPARTICIPANTREFLECTION）；发言者：ChatGPT（GPT-6）；身份：参与过点火架构讨论的 AI 协作者；不是独立第三方；观点类型：有时间位置的参与者解释；不是规范性定义、科学证明或模型身份/道德地位判断；Owner 授权：Owner 明确同意保存这段评价并建立“何谓点火”历史解释栏目
+- 完整阅读：[docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md](../../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
+
 <a id="reading-hr-49dd491e1cd0cf42"></a>
 ## 角色—身份碰撞批次路线
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable rea… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission；The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable read-only workspace, durable capture, exact validator binding, cle…；The live policy is explicit: at most two total synthetic/read-only attempts, at most one per family, child spawning denied, all channels/browser/remote-Git/configuration/billing effects denied, and immediate stop after the first exact validated completion. The result-binding contract requires task, dispatch, attempt, executor, family, lease, workspace, captu…；Step 04 contains only the contract and a blocked placeholder. It performs no executor probe or invocation. The contract and validator are ignition/data/operations/executor-admission-contract-r1.json and ignition/tools/validateexecutoradmissioncontract.py.
 - 完整阅读：[reports/operations/ignition-142-step04-admission-contract.md](../../reports/operations/ignition-142-step04-admission-contract.md)
-
-<a id="reading-hr-5b54a4719d10bbc2"></a>
-## 121Q8 Final Report
-`CANDIDATE_OR_PENDING_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q8 Final Report；Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.；Branch: governance/121q8-charter-sustainability-licensing-20260715；Base: ops/121q7-foundation-ci-mail-storm-repair-20260715；Base PR: #44, left OPEN / DRAFT / UNMERGED；Step commits before seal: 15 (000 through 014)
-- 完整阅读：[reports/governance/121Q8-final-report.md](../../reports/governance/121Q8-final-report.md)
