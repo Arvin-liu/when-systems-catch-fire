@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "1cb9e4397d0d8e09c809deb30ce538012eef1e6c3f69b4ad0b748cf9b6235bef"
+      "sha256": "8ca1f2a6816949ae8a66c6ad02a023c4050ee5b5249cc824368eac4c7575f9db"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
