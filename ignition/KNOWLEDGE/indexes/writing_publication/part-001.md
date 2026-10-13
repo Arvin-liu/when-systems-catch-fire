@@ -184,6 +184,11 @@
   - 可搜索名称：GetNote external verification R1 / pointfire-getnote-external-verification-r1-20260813
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
+- [GPT-6 对“点火是什么”的一次参与者回应](../../ASSET-CARDS.md#asset-hr-49c323b109c04a79)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：GPT-6 对“点火是什么”的一次参与者回应 / 2026-10-13-gpt6-participant-reflection
+  - 来源：`docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md`
+  - 依赖：—；被引用：—
 - [IGNITION-140 Step 04 — Typed Observation Outcomes](../../ASSET-CARDS.md#asset-hr-67d1c79c98329e3c)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：IGNITION-140 Step 04 — Typed Observation Outcomes / ignition-140-step04-typed-observation-outcomes
