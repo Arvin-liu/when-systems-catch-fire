@@ -59,10 +59,27 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertNotIn("CURRENT-SNAPSHOT", self.readme)
         self.assertNotIn("architecture_counts", self.readme)
 
-    def test_project_identity_is_the_owner_provided_text(self):
+    def test_project_identity_matches_the_controlled_text(self):
         start = self.readme.index("### 项目现状") + len("### 项目现状")
         end = self.readme.index("### 价值宪章")
         self.assertEqual(self.readme[start:end].strip(), PROJECT_IDENTITY_TEXT)
+
+    def test_identity_preserves_open_research_scope_and_historical_poem(self):
+        self.assertIn("研究对象与范围由人决定", PROJECT_IDENTITY_TEXT)
+        self.assertIn("研究成果可以改变我们对对象的理解，也可以改变研究的方法", PROJECT_IDENTITY_TEXT)
+        self.assertIn("丹无定形，火有法度；炼无终局，化有来路", PROJECT_IDENTITY_TEXT)
+        self.assertNotIn("丹无定型", PROJECT_IDENTITY_TEXT)
+
+    def test_identity_truncation_and_single_character_drift_fail_closed(self):
+        mutations = (
+            PROJECT_IDENTITY_TEXT[:-1],
+            PROJECT_IDENTITY_TEXT.replace("好奇心", "好奇性", 1),
+        )
+        for mutated_identity in mutations:
+            with self.subTest(mutated_identity=mutated_identity[-24:]):
+                mutated_readme = self.readme.replace(PROJECT_IDENTITY_TEXT, mutated_identity, 1)
+                with self.assertRaisesRegex(AssertionError, "controlled identity input"):
+                    validate_readme_structure(mutated_readme)
 
     def test_project_identity_has_one_machine_readable_authoring_input(self):
         payload = json.loads(IDENTITY_INPUT.read_text(encoding="utf-8"))
@@ -120,7 +137,7 @@ class HumanFrontDoorTests(unittest.TestCase):
                 elif case["mutation"] == "insert-machine-count":
                     mutated = mutated.replace("### 价值宪章", "architecture_counts=99\n\n### 价值宪章", 1)
                 elif case["mutation"] == "drift-project-identity":
-                    mutated = mutated.replace("点火是一个面向长期研究", "点火是一个面向短期研究", 1)
+                    mutated = mutated.replace("点火首先是一种以人的好奇心", "点火首先是一种以人的短期兴趣", 1)
                 elif case["mutation"] == "insert-raw-svg-link":
                     entry = f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL}) · [阅读模式]({ARCHITECTURE_PAGES_URL}) · {ARCHITECTURE_INTERACTION_HINT}。\n\n"
                     mutated = mutated.replace(entry, "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n" + entry, 1)
