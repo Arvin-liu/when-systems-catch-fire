@@ -44,6 +44,82 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
             self.assertEqual(audits[row["expected_gate"]], row["expected_result"], row["case_id"])
             self.assertEqual(disposition, row["expected_disposition"], row["case_id"])
 
+    def test_q1_editorial_proof_mentions_keep_source_ceiling_and_coverage(self):
+        editorial_paths = {
+            "docs/what-is-ignition/README.md",
+            "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md",
+        }
+        manifest_path = ROOT / "data/foundation/repository-path-classification/classification-manifest.jsonl"
+        manifest = {
+            row["path"][len("ignition/"):]: row["category"]
+            for row in (json.loads(line) for line in manifest_path.read_text(encoding="utf-8").splitlines())
+            if row["path"].startswith("ignition/")
+        }
+        self.assertEqual({path: manifest.get(path) for path in editorial_paths}, {
+            path: "EDITORIAL_ARTICLE" for path in editorial_paths
+        })
+
+        reflection = "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md"
+        proof_limit_lines = [
+            (reflection, 7),
+            (reflection, 15),
+            ("docs/what-is-ignition/README.md", 15),
+        ]
+        for path, line_number in proof_limit_lines:
+            text = (ROOT / path).read_text(encoding="utf-8").splitlines()[line_number - 1]
+            self.assertEqual(self.adjudicator.classify(text, source_path=path), "UNRESOLVED_CLAIM")
+            self.assertEqual(self.adjudicator.classify(text), "THEOREM_OR_MATHEMATICAL_CLAIM")
+
+        theorem = "Theorem: every finite graph has a spanning forest."
+        self.assertEqual(
+            self.adjudicator.classify(theorem, source_path="docs/what-is-ignition/README.md"),
+            "THEOREM_OR_MATHEMATICAL_CLAIM",
+        )
+
+        outputs = self.adjudicator.build()
+        summary = json.loads(outputs[ROOT / "data/foundation/nonfunction-claims/closure-summary.json"])
+        discovery = [
+            json.loads(line)
+            for line in outputs[ROOT / "data/foundation/nonfunction-claims/source-discovery.jsonl"].splitlines()
+            if line.strip()
+        ]
+        self.assertEqual(summary["tracked_files_accounted"], 5796)
+        for path, expected_count in ((reflection, 13), ("docs/what-is-ignition/README.md", 3)):
+            row = next(item for item in discovery if item["path"] == path)
+            self.assertEqual(row["coverage_status"], "SCANNED_REGISTERED")
+            self.assertEqual(row["candidate_fragments"], expected_count)
+
+        registry = [
+            json.loads(line)
+            for line in outputs[ROOT / "data/foundation/nonfunction-claims/claim-registry.jsonl"].splitlines()
+            if line.strip()
+        ]
+        rows = [
+            row for row in registry
+            if any(anchor["path"] in editorial_paths for anchor in row["source_anchors"])
+        ]
+        self.assertEqual(len(rows), 16)
+        quarantine = {"NFC-3e00c3b947c97890", "NFC-84ef1c09d7dd193e"}
+        self.assertEqual({row["canonical_id"] for row in rows if row["final_disposition"] == "QUARANTINED_AMBIGUOUS"}, quarantine)
+        for row in rows:
+            self.assertEqual(row["external_evidence_maturity"], "E0")
+            self.assertEqual(row["mathematical_maturity"], "M0")
+            self.assertNotEqual(row["reviewer_state"], "TASK98_99_AUTHORITY_INHERITED")
+            self.assertFalse(any(ref.get("supports_exact_claim") for ref in row["evidence_references"]))
+            self.assertFalse(any(ref.get("kind") == "FUNCTION_ASSET_AUTHORITY" for ref in row["evidence_references"]))
+            if row["canonical_id"] in quarantine:
+                self.assertEqual(row["claim_ceiling"], "Unresolved historical or current claim candidate; it cannot appear as current knowledge.")
+            else:
+                self.assertEqual(row["final_disposition"], "HISTORICAL_ONLY")
+                self.assertEqual(row["claim_ceiling"], "Historical source wording only; it is not a current repository endorsement.")
+
+        false_theorem_ids = {"NFC-28ad745b599b9e9c", "NFC-79e4f2beeeb89ff9", "NFC-f41818a4a2bbdec4"}
+        by_id = {row["canonical_id"]: row for row in rows}
+        self.assertTrue(false_theorem_ids.issubset(by_id))
+        for claim_id in false_theorem_ids:
+            self.assertNotEqual(by_id[claim_id]["claim_class"], "THEOREM_OR_MATHEMATICAL_CLAIM")
+            self.assertNotEqual(by_id[claim_id]["assertion_type"], "MATHEMATICAL")
+
     def test_rebound_normalization_removes_renaming_adjectives(self):
         left = self.adjudicator.semantic_rebound_text("Physical grand unification proved impossible")
         right = self.adjudicator.semantic_rebound_text("Structural grand unification proved impossible")

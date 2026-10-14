@@ -32,6 +32,18 @@ TEXT_EXTENSIONS = {
     ".lean", ".js", ".jsx", ".ts", ".tsx", ".toml", ".txt", ".rst",
 }
 EXPLICIT_ID = re.compile(r"(?<![A-Za-z0-9_])(?:MF|D|T|M|Y|A|P)\d+(?![A-Za-z0-9_])")
+Q1_EDITORIAL_EXPLICIT_ID = re.compile(r"(?<![A-Za-z0-9_%])(?:MF|D|T|M|Y|A|P)\d+(?![A-Za-z0-9_])")
+Q1_EDITORIAL_SOURCE_PATHS = frozenset({
+    "docs/what-is-ignition/README.md",
+    "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md",
+})
+
+
+def explicit_asset_ids(text: str, source_path: str | None = None) -> list[str]:
+    pattern = Q1_EDITORIAL_EXPLICIT_ID if source_path in Q1_EDITORIAL_SOURCE_PATHS else EXPLICIT_ID
+    return pattern.findall(text)
+
+
 NAMED_ASSET = re.compile(
     r"(函数|方程|定理|公式|定律|算子|门控|门函数|评分|指数|比率|内核|度量|概率|能量|力|模型|判定器|"
     r"function|equation|theorem|formula|law|operator|gate|score|index|ratio|kernel|metric|probability|energy|force|model|classifier)",
@@ -260,7 +272,7 @@ def tracked_text_files() -> list[str]:
 
 def implicit_candidate(relative: str, line: str) -> bool:
     stripped = line.strip()
-    if not stripped or len(stripped) > 2000 or EXPLICIT_ID.search(stripped):
+    if not stripped or len(stripped) > 2000 or explicit_asset_ids(stripped, relative):
         return False
     if CODE_ASSET.search(line):
         return True
@@ -369,7 +381,7 @@ def build(destination: Path) -> dict:
         lines = raw.splitlines()
         per_id: dict[str, list[int]] = defaultdict(list)
         for number, line in enumerate(lines, 1):
-            for asset_id in sorted(set(EXPLICIT_ID.findall(line))):
+            for asset_id in sorted(set(explicit_asset_ids(line, relative))):
                 per_id[asset_id].append(number)
                 explicit_ids.add(asset_id)
             if implicit_candidate(relative, line):
