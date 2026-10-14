@@ -13,9 +13,9 @@
 - [第 007 片](./architecture_governance/part-007.md)：3001—3500；link: "已迁移的历史案例来源/0788-C-0793-《写作是门手艺》段落控制≤10行.md" → Repository objects cannot self-claim Accepted, Merged or Current or cite their own current HEAD as their validity premis
 - [第 008 片](./architecture_governance/part-008.md)：3501—4000；Repository-local candidate state is `CURRENT` for all four capability names and boundaries across README, the expanded g → Three public trial libraries contain 51, 52 and 55 active executable skill artifacts plus retained replacement files.
 - [第 009 片](./architecture_governance/part-009.md)：4001—4500；tiers = Counter\(s.get\("evidence_tier"\) for s in sources\) → \| \[C-50\]\( \) \| \[华为员工持股\]\( \) \| 员工可辞职且行业有下家，"华为人"认同经退出权验证 \|
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-510\]\( \) \| \[三阶段=曲率穿越验证 — 创业者路 → 个数据集（classic_problems_benchmark、pending_claims、storytelling_backlog）可自动抽取，基础行完整；4 个数据集（publication_risk_rules、failure_ty
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；个案经验上升为普遍法则； → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 吴军财富规划笔记碰撞验证
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；周公制礼\(dim=2\)→八百年；#3秦统一\(dim=2\)→15年亡\(但通过H压制犹豫域\)。 → 案例不能从单一材料推出普遍结论（边界条件强制约束）。
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；案例范围默认全量**（即 `已迁移的历史案例来源/` 全部条目）；除非任务明确限定。 → 须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `已迁移的历史案例来源/` 并更新 INDEX。本轮（第三步）未做此步。
-- [第 015 片](./architecture_governance/part-015.md)：7001—7111；预测命题（如：某个教育现象的预测） → （证据不足、需外部验证、待人工复核）
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-510\]\( \) \| \[三阶段=曲率穿越验证 — 创业者路 → 个体评估验证（个体评估研究）
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；个数据集（classic_problems_benchmark、pending_claims、storytelling_backlog）可自动抽取，基础行完整；4 个数据集（publication_risk_rules、failure_ty → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 后续需要的证据或验证；
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。 → 核心案例：数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；核心案例：有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。 → 需要实验、量表、纵向研究、临床证据。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7117；需要教育实验、长期追踪、个体评估。 → （证据不足、需外部验证、待人工复核）
