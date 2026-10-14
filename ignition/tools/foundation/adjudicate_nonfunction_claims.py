@@ -273,6 +273,16 @@ PUBLIC_OVERCLAIM = re.compile(
 )
 UNIVERSAL = re.compile(r"(?:all|every|always|never|universal|impossible|inevitable|任何|全部|所有|永远|从不|普遍|不可能|必然)", re.IGNORECASE)
 THEOREM = re.compile(r"(?:theorem|lemma|proof|proved|axiom|定理|引理|证明|公理)", re.IGNORECASE)
+Q1_EDITORIAL_HISTORY_PATHS = frozenset({
+    "docs/what-is-ignition/README.md",
+    "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md",
+})
+EDITORIAL_PROOF_LIMIT = re.compile(
+    r"(?:不是[^。；;]{0,30}(?:科学)?证明|不能由[^。；;]{0,100}证明|只证明[^。；;]{0,80}不证明|"
+    r"not\s+(?:a\s+)?(?:scientific\s+)?proof|does\s+not\s+prove|cannot\s+be\s+proved|cannot\s+be\s+proven|"
+    r"only\s+proves?[^.;]{0,100}does\s+not\s+prove)",
+    re.IGNORECASE,
+)
 LAW = re.compile(r"(?:\blaw\b|principle|规律|法则|原理)", re.IGNORECASE)
 CAUSAL = re.compile(r"(?:caus(?:e|al)|mechanism|leads? to|results? in|因果|导致|决定|机制)", re.IGNORECASE)
 CROSS_DOMAIN = re.compile(r"(?:isomorph|homomorph|correspond|projection|analogy|同构|同态|对应|投影|类比)", re.IGNORECASE)
@@ -480,9 +490,19 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
     return fragments, "SCANNED_REGISTERED" if has_candidates else "SCANNED_NO_CANDIDATE"
 
 
-def classify(text: str) -> str:
+def is_q1_editorial_proof_limit(text: str, source_path: str | None) -> bool:
+    """Recognize proof-word mentions that explicitly deny proof in the two Q1 essays."""
+    return source_path in Q1_EDITORIAL_HISTORY_PATHS and bool(EDITORIAL_PROOF_LIMIT.search(text))
+
+
+def classify(text: str, *, source_path: str | None = None) -> str:
     if UNIFICATION_NOGO.search(text):
         return "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM"
+    if is_q1_editorial_proof_limit(text, source_path):
+        # These fragments describe viewpoint metadata or repository history and
+        # explicitly limit what the cited records prove. A proof-related word
+        # alone does not make the text a mathematical result.
+        return "UNRESOLVED_CLAIM"
     if THEOREM.search(text):
         return "THEOREM_OR_MATHEMATICAL_CLAIM"
     if LAW.search(text):
@@ -729,7 +749,13 @@ def build() -> dict[Path, str]:
         refs = sorted(set(IDENT.findall(text)))
         direct_function_refs = [ref for ref in refs if ref in function_ids]
         authority_card = function_by_id.get(existing["id"]) if existing and existing["id"] in function_ids else None
-        claim_class = classify(text)
+        q1_editorial_history_only = bool(anchors) and all(
+            row["path"] in Q1_EDITORIAL_HISTORY_PATHS for row in anchors
+        )
+        claim_class = classify(
+            text,
+            source_path=anchors[0]["path"] if q1_editorial_history_only else None,
+        )
         kind = assertion_type(claim_class)
         if authority_card:
             primary = authority_card["primary_identity"]
@@ -745,6 +771,11 @@ def build() -> dict[Path, str]:
                 claim_class = "UNRESOLVED_CLAIM"
             kind = assertion_type(claim_class)
         disposition = disposition_for(claim_class, context, text, existing, authority_card)
+        if q1_editorial_history_only and not authority_card and disposition in {
+            "ACCEPTED_AS_DEFINITION", "RETAINED_AS_HEURISTIC", "RETAINED_AS_STRUCTURAL_METAPHOR",
+            "RETAINED_AS_RESEARCH_HYPOTHESIS",
+        }:
+            disposition = "HISTORICAL_ONLY"
         audits = audits_for(claim_class, kind, text, disposition, context)
         if authority_card:
             task99_gates = authority_card["audit_gates"]
@@ -785,7 +816,7 @@ def build() -> dict[Path, str]:
         if authority_card:
             source_refs.append({"kind": "FUNCTION_ASSET_AUTHORITY", "canonical_id": authority_card["canonical_id"], "supports_exact_claim": disposition == "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT"})
         title = re.sub(r"^[#>*\-\s\d.]+", "", text).strip()[:120] or cid
-        scope = "Exact source-defined repository scope" if context != "HISTORICAL_OR_AUDIT_RECORD" else "Historical source wording only"
+        scope = "Historical source wording only" if q1_editorial_history_only or context == "HISTORICAL_OR_AUDIT_RECORD" else "Exact source-defined repository scope"
         quantifier = "UNRESOLVED_OR_OVERBROAD" if UNIVERSAL.search(text) and not CAVEAT.search(text) else "BOUNDED_OR_NO_UNIVERSAL_QUANTIFIER_DETECTED"
         row = {
             "canonical_id": cid,
