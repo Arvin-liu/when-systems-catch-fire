@@ -26,6 +26,7 @@ OpenAlex 是完全免费的开放学术数据库，无需 API key。
 from __future__ import annotations
 
 import sys
+import hashlib
 import json
 import urllib.request
 import urllib.parse
@@ -52,6 +53,65 @@ def _restore_abstract(inverted_index: dict | None) -> str | None:
     return " ".join(words)
 
 
+def _canonical_work_sha256(work: dict) -> str:
+    canonical = json.dumps(work, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
+
+
+def _normalize_work(w: dict) -> dict:
+    """Normalize one OpenAlex work using only fields in that raw record."""
+    authors = []
+    for authorship in w.get("authorships", []):
+        name = authorship.get("author", {}).get("display_name", "")
+        if name:
+            authors.append(name)
+
+    abstract = _restore_abstract(w.get("abstract_inverted_index"))
+    open_access = w.get("open_access", {}) or {}
+    primary = w.get("primary_location") or {}
+    source = primary.get("source") or {}
+
+    return {
+        "openalex_id": w.get("id", ""),
+        "doi": w.get("doi", ""),
+        "title": w.get("title", "") or w.get("display_name", ""),
+        "year": w.get("publication_year"),
+        "authors": authors,
+        "venue": source.get("display_name", ""),
+        "type": w.get("type", ""),
+        "abstract": abstract,
+        "is_oa": open_access.get("is_oa", False),
+        "oa_status": open_access.get("oa_status", ""),
+        "oa_url": open_access.get("oa_url", ""),
+        "any_repository_has_fulltext": open_access.get("any_repository_has_fulltext", False),
+        "cited_by_count": w.get("cited_by_count", 0),
+        "is_retracted": w.get("is_retracted", False),
+        "concepts": [c.get("display_name", "") for c in w.get("concepts", [])[:8]],
+        "relevance_score": w.get("relevance_score"),
+        "language": w.get("language", ""),
+    }
+
+
+def parse_search_response(response_body: bytes) -> dict:
+    """Derive normalized rows and per-record hashes from the same raw bytes.
+
+    The record hashes use canonical JSON encoding of each raw work object. The
+    complete original response bytes remain the authoritative captured artifact.
+    """
+    if not isinstance(response_body, bytes):
+        raise TypeError("OpenAlex response body must be bytes")
+    data = json.loads(response_body.decode("utf-8"))
+    if not isinstance(data, dict) or not isinstance(data.get("results"), list):
+        raise ValueError("OpenAlex response must contain a results array")
+    works = data["results"]
+    if any(not isinstance(work, dict) for work in works):
+        raise ValueError("OpenAlex results must contain only work objects")
+    return {
+        "results": [_normalize_work(work) for work in works],
+        "raw_record_sha256": [_canonical_work_sha256(work) for work in works],
+    }
+
+
 def search_with_evidence(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> dict:
     """搜索 OpenAlex 并同时保留原始响应，供可复现工作流记录来源。
 
@@ -72,47 +132,13 @@ def search_with_evidence(query: str, limit: int = DEFAULT_LIMIT, mailto: str = D
     req = urllib.request.Request(url, headers={"User-Agent": "OpenAlex-Client/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         response_body = r.read()
-    data = json.loads(response_body.decode("utf-8"))
-
-    results = []
-    for w in data.get("results", []):
-        # 作者列表
-        authors = []
-        for a in w.get("authorships", []):
-            name = a.get("author", {}).get("display_name", "")
-            if name:
-                authors.append(name)
-
-        # 摘要还原
-        abstract = _restore_abstract(w.get("abstract_inverted_index"))
-
-        # OA 信息
-        oa = w.get("open_access", {})
-        primary = w.get("primary_location") or {}
-        source = primary.get("source") or {}
-
-        result = {
-            "openalex_id": w.get("id", ""),
-            "doi": w.get("doi", ""),
-            "title": w.get("title", "") or w.get("display_name", ""),
-            "year": w.get("publication_year"),
-            "authors": authors,
-            "venue": source.get("display_name", ""),
-            "type": w.get("type", ""),
-            "abstract": abstract,
-            "is_oa": oa.get("is_oa", False),
-            "oa_status": oa.get("oa_status", ""),
-            "oa_url": oa.get("oa_url", ""),
-            "any_repository_has_fulltext": oa.get("any_repository_has_fulltext", False),
-            "cited_by_count": w.get("cited_by_count", 0),
-            "is_retracted": w.get("is_retracted", False),
-            "concepts": [c.get("display_name", "") for c in w.get("concepts", [])[:8]],
-            "relevance_score": w.get("relevance_score"),
-            "language": w.get("language", ""),
-        }
-        results.append(result)
-
-    return {"request_url": url, "response_body": response_body, "results": results}
+    parsed = parse_search_response(response_body)
+    return {
+        "request_url": url,
+        "response_body": response_body,
+        "results": parsed["results"],
+        "raw_record_sha256": parsed["raw_record_sha256"],
+    }
 
 
 def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> list[dict]:

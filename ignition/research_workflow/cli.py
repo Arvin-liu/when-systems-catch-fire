@@ -46,6 +46,11 @@ MAX_RESULTS_PER_QUERY = 25
 MAX_SOURCES = 50
 CITATION_RE = re.compile(r"\[(S[0-9]+)\]")
 HTML_TAG_RE = re.compile(r"</?[A-Za-z][^<>]*>")
+CLAIM_REVIEW_JUDGMENTS = {"SUPPORTS", "CONTRADICTS", "CONTEXT_ONLY", "INSUFFICIENT", "NOT_REVIEWED"}
+
+
+class EvidenceIntegrityError(ValueError):
+    """A provider/test adapter returned normalized data detached from raw bytes."""
 
 
 def utc_now() -> str:
@@ -145,7 +150,7 @@ def _redact_command(command: list[str]) -> list[str]:
             redact_next = False
             continue
         redacted.append(token)
-        if token in {"--mailto", "--draft", "--output-dir"}:
+        if token in {"--mailto", "--draft", "--output-dir", "--claim-reviews"}:
             redact_next = True
     return redacted
 
@@ -231,6 +236,120 @@ def _validate_draft(draft: str, source_ids: set[str]) -> None:
         raise ValueError(f"draft cites unknown source IDs: {', '.join(unknown)}")
 
 
+def _read_claim_reviews(path: str | Path | None) -> list[dict[str, Any]]:
+    if path is None:
+        return []
+    rows = []
+    seen_claim_sources = set()
+    for line_number, line in enumerate(Path(path).read_text(encoding="utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"invalid claim-review JSON on line {line_number}") from exc
+        if not isinstance(row, dict):
+            raise ValueError(f"claim-review line {line_number} must be a JSON object")
+        for field in ("claim_id", "claim_text", "source_id", "review_judgment"):
+            if not isinstance(row.get(field), str) or not row[field].strip():
+                raise ValueError(f"claim-review line {line_number} requires non-empty {field}")
+        if row["review_judgment"] not in CLAIM_REVIEW_JUDGMENTS:
+            raise ValueError(f"claim-review line {line_number} has an unsupported review_judgment")
+        reviewer_type = row.get("reviewer_type", "NOT_REVIEWED")
+        if not isinstance(reviewer_type, str) or reviewer_type not in {"HUMAN", "NOT_REVIEWED"}:
+            raise ValueError(f"claim-review line {line_number} has an unsupported reviewer_type")
+        if reviewer_type == "HUMAN":
+            required = ("reviewer", "reviewed_at_utc", "evidence_field", "evidence_quote")
+            missing = [field for field in required if not isinstance(row.get(field), str) or not row[field].strip()]
+            if missing:
+                raise ValueError(f"claim-review line {line_number} requires {', '.join(missing)} for HUMAN review")
+            if row["review_judgment"] == "NOT_REVIEWED":
+                raise ValueError(f"claim-review line {line_number} cannot pair HUMAN with NOT_REVIEWED")
+            if row["evidence_field"] not in {"title", "abstract"}:
+                raise ValueError(f"claim-review line {line_number} evidence_field must be title or abstract")
+        elif row["review_judgment"] != "NOT_REVIEWED":
+            raise ValueError(f"claim-review line {line_number} requires reviewer_type HUMAN for a judgment")
+        if "evidence_quote" in row and not isinstance(row["evidence_quote"], str):
+            raise ValueError(f"claim-review line {line_number} evidence_quote must be a string")
+        if "evidence_field" in row and (
+            not isinstance(row["evidence_field"], str) or row["evidence_field"] not in {"title", "abstract"}
+        ):
+            raise ValueError(f"claim-review line {line_number} evidence_field must be title or abstract")
+        for field in ("reviewer", "reviewed_at_utc", "review_note"):
+            if field in row and row[field] is not None and not isinstance(row[field], str):
+                raise ValueError(f"claim-review line {line_number} {field} must be a string")
+        key = (row["claim_id"], row["source_id"])
+        if key in seen_claim_sources:
+            raise ValueError(f"claim-review line {line_number} duplicates claim_id/source_id")
+        seen_claim_sources.add(key)
+        rows.append(row)
+    return rows
+
+
+def _build_claim_review_ledger(
+    reviews: list[dict[str, Any]], sources: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], str]:
+    source_by_id = {source["source_id"]: source for source in sources}
+    ledger = []
+    for review in reviews:
+        source = source_by_id.get(review["source_id"])
+        evidence_quote = review.get("evidence_quote")
+        evidence_field = review.get("evidence_field")
+        if source is None:
+            anchor_status = "UNKNOWN_SOURCE"
+        elif not evidence_quote:
+            anchor_status = "NOT_PROVIDED"
+        elif evidence_quote in (source.get(evidence_field) or ""):
+            anchor_status = "EXACT_MATCH"
+        else:
+            anchor_status = "NOT_FOUND"
+        if review.get("reviewer_type") == "HUMAN" and anchor_status == "EXACT_MATCH":
+            row_status = "REVIEWED_AND_ANCHORED"
+        elif review.get("review_judgment") == "NOT_REVIEWED":
+            row_status = "NOT_REVIEWED"
+        else:
+            row_status = "UNANCHORED_OR_SOURCE_UNAVAILABLE"
+        ledger.append({
+            "claim_id": review["claim_id"],
+            "claim_text": review["claim_text"],
+            "source_id": review["source_id"],
+            "source_title": source.get("title") if source else None,
+            "source_openalex_id": source.get("openalex_id") if source else None,
+            "source_raw_evidence": source.get("raw_evidence", []) if source else [],
+            "evidence_field": evidence_field,
+            "evidence_quote": evidence_quote,
+            "evidence_quote_sha256": sha256(evidence_quote.encode("utf-8")) if evidence_quote else None,
+            "evidence_anchor_status": anchor_status,
+            "review_judgment": review["review_judgment"],
+            "reviewer_type": review.get("reviewer_type", "NOT_REVIEWED"),
+            "reviewer": review.get("reviewer"),
+            "reviewed_at_utc": review.get("reviewed_at_utc"),
+            "review_note": review.get("review_note"),
+            "row_status": row_status,
+        })
+    if not ledger:
+        status = "NOT_VALIDATED"
+    elif any(row["evidence_anchor_status"] in {"UNKNOWN_SOURCE", "NOT_FOUND"} for row in ledger):
+        status = "FAILED"
+    elif all(row["row_status"] == "REVIEWED_AND_ANCHORED" for row in ledger):
+        status = "COMPLETED"
+    else:
+        status = "PARTIAL"
+    return ledger, status
+
+
+def _acquisition_status(query_rows: list[dict[str, Any]], sources: list[dict[str, Any]]) -> str:
+    successful = sum(row.get("status") == "OK" for row in query_rows)
+    failed = len(query_rows) - successful
+    if successful == 0:
+        return "FAILED"
+    if failed:
+        return "PARTIAL"
+    if not sources:
+        return "NOT_VALIDATED"
+    return "COMPLETED"
+
+
 def _markdown_report(
     question: str,
     queries: list[str],
@@ -238,6 +357,9 @@ def _markdown_report(
     verifications: list[dict[str, Any]],
     draft: str | None,
     status: str,
+    acquisition_status: str,
+    claim_review_status: str,
+    claim_review_count: int,
 ) -> str:
     matched = sum(row.get("metadata_match_status") == "MATCH" for row in verifications)
     mismatch = sum(row.get("metadata_match_status") == "MISMATCH" for row in verifications)
@@ -245,10 +367,12 @@ def _markdown_report(
         f"# Research report: {question}",
         "",
         f"- Run status: `{status}`",
+        f"- Source acquisition status: `{acquisition_status}`",
+        f"- Claim review ledger status: `{claim_review_status}` ({claim_review_count} rows)",
         f"- Sources captured: {len(sources)}",
         f"- DOI title/year metadata matches: {matched}",
         f"- DOI metadata mismatches: {mismatch}",
-        "- Evidence ceiling: citation markers and bibliographic metadata checked; source contents and claims not independently validated by this workflow.",
+        "- Evidence ceiling: this workflow checks acquisition integrity, citation IDs, and exact excerpt anchors; it does not decide whether claims are true or supported.",
         "",
         "## Search method",
         "",
@@ -305,6 +429,13 @@ def _markdown_report(
 
     lines += [
         "",
+        "## Claim review handoff",
+        "",
+        "Human review judgments and quoted excerpts are recorded in `claim-review.jsonl`. Exact excerpt matching only confirms that the quote occurs in the captured title or abstract and is linked to raw response evidence; it does not establish that the claim is true or that the excerpt semantically supports it.",
+    ]
+
+    lines += [
+        "",
         "## Limits",
         "",
         "OpenAlex and Crossref checks cover bibliographic metadata only. They do not establish that a paper's findings are correct, that an abstract fully represents the paper, or that any synthesis claim is supported. Full-text access, study quality, causal interpretation, and independent replication require separate review.",
@@ -321,6 +452,7 @@ def run_research(
     max_sources: int = 12,
     mailto: str = openalex_client.DEFAULT_MAILTO,
     draft_path: str | Path | None = None,
+    claim_review_path: str | Path | None = None,
     searcher: Callable[..., dict[str, Any]] | None = None,
     crossref_fetch: Callable[[str], dict[str, Any]] | None = None,
     command: list[str] | None = None,
@@ -328,7 +460,8 @@ def run_research(
     """Run source collection, DOI metadata checks, report assembly, and receipt.
 
     The supplied draft (when present) must cite captured sources as ``[S1]`` etc.
-    A returned ``MATCH`` means only that Crossref title and year match OpenAlex.
+    Claim-review judgments are supplied by a human; the workflow only anchors
+    quoted text and source bytes, and never infers semantic support.
     """
     question = (question or "").strip()
     queries = [str(query).strip() for query in queries if str(query).strip()]
@@ -340,6 +473,7 @@ def run_research(
         raise ValueError(f"at most {MAX_QUERIES} queries are allowed")
     if not 1 <= max_sources <= MAX_SOURCES:
         raise ValueError(f"max_sources must be between 1 and {MAX_SOURCES}")
+    claim_reviews = _read_claim_reviews(claim_review_path)
 
     out = Path(output_dir)
     if out.exists() and (not out.is_dir() or any(out.iterdir())):
@@ -356,19 +490,24 @@ def run_research(
         try:
             evidence = searcher(query, limit=MAX_RESULTS_PER_QUERY, mailto=mailto)
             raw = evidence.get("response_body")
-            if isinstance(raw, str):
-                raw = raw.encode("utf-8")
             if not isinstance(raw, bytes):
-                raw = _json_bytes(evidence.get("results", []))
+                raise TypeError("search response did not include original response bytes")
             raw_path = f"raw/openalex-query-{index:02d}.json"
             _write_bytes(out / raw_path, raw)
             row.update({
-                "status": "OK",
                 "request_url": _redact_request_url(evidence.get("request_url")),
                 "raw_response_path": raw_path,
                 "raw_response_sha256": sha256(raw),
             })
-            for rank, item in enumerate(evidence.get("results", []), 1):
+            parsed = openalex_client.parse_search_response(raw)
+            results = parsed["results"]
+            provided_results = evidence.get("results")
+            if provided_results is not None and provided_results != results:
+                raise EvidenceIntegrityError("normalized source records do not match the captured raw response")
+            row["normalized_output_status"] = (
+                "MATCHES_RAW_RESPONSE" if provided_results is not None else "DERIVED_FROM_RAW_RESPONSE"
+            )
+            for rank, item in enumerate(results, 1):
                 key = _source_key(item)
                 if key not in candidates:
                     candidates[key] = {**item, "query_ids": [], "rank_by_query": {}, "raw_evidence": []}
@@ -377,13 +516,23 @@ def run_research(
                     record["query_ids"].append(row["query_id"])
                 record["rank_by_query"].setdefault(row["query_id"], rank)
                 if raw_path not in [entry["path"] for entry in record["raw_evidence"]]:
-                    record["raw_evidence"].append({"path": raw_path, "sha256": sha256(raw)})
-            row["result_count"] = len(evidence.get("results", []))
+                    record["raw_evidence"].append({
+                        "query_id": row["query_id"],
+                        "path": raw_path,
+                        "response_sha256": sha256(raw),
+                        "record_index": rank,
+                        "raw_record_sha256": parsed["raw_record_sha256"][rank - 1],
+                    })
+            row["result_count"] = len(results)
+            row["status"] = "OK"
         except Exception as exc:  # preserve failed acquisition as an explicit row
             row.update({
                 "status": "ERROR",
                 "error_type": type(exc).__name__,
-                "error_summary": "provider request failed; exception details omitted from the public receipt",
+                "error_summary": (
+                    str(exc) if isinstance(exc, EvidenceIntegrityError)
+                    else "provider request failed or returned an invalid evidence envelope; exception details omitted from the public receipt"
+                ),
             })
         query_rows.append(row)
 
@@ -420,6 +569,8 @@ def run_research(
             "captured_at_utc": started,
         })
 
+    claim_ledger, claim_review_status = _build_claim_review_ledger(claim_reviews, sources)
+
     draft = Path(draft_path).read_text(encoding="utf-8") if draft_path else None
     draft_error = None
     if draft is not None:
@@ -433,18 +584,25 @@ def run_research(
     _write_jsonl(out / "query-manifest.jsonl", query_rows)
     _write_jsonl(out / "sources.jsonl", sources)
     _write_jsonl(out / "verification.jsonl", verifications)
+    _write_jsonl(out / "claim-review.jsonl", claim_ledger)
 
-    status = "INVALID_DRAFT" if draft_error else ("COMPLETED" if sources else "NO_SOURCES")
-    report = _markdown_report(question, queries, sources, verifications, draft, status)
+    acquisition_status = _acquisition_status(query_rows, sources)
+    status = "INVALID_DRAFT" if draft_error else acquisition_status
+    report = _markdown_report(
+        question, queries, sources, verifications, draft, status,
+        acquisition_status, claim_review_status, len(claim_ledger),
+    )
     _write_bytes(out / "report.md", report.encode("utf-8"))
 
     artifact_paths = sorted(
         path for path in out.rglob("*") if path.is_file() and path.name != "receipt.json"
     )
     receipt = {
-        "workflow": "ignition-research-workflow-r0",
+        "workflow": "ignition-research-workflow-r1",
         "status": status,
-        "claim_ceiling": "source_capture_and_bibliographic_metadata_check_only",
+        "acquisition_status": acquisition_status,
+        "claim_review_status": claim_review_status,
+        "claim_ceiling": "source_capture_and_human_review_handoff; no_semantic_claim_verification",
         "question": question,
         "queries": queries,
         "started_at_utc": started,
@@ -455,6 +613,9 @@ def run_research(
             "query_ok": sum(row["status"] == "OK" for row in query_rows),
             "query_error": sum(row["status"] == "ERROR" for row in query_rows),
             "sources_captured": len(sources),
+            "claim_review_rows": len(claim_ledger),
+            "claim_review_anchored": sum(row["row_status"] == "REVIEWED_AND_ANCHORED" for row in claim_ledger),
+            "claim_review_unanchored": sum(row["evidence_anchor_status"] in {"UNKNOWN_SOURCE", "NOT_FOUND"} for row in claim_ledger),
             "crossref_matches": sum(row["metadata_match_status"] == "MATCH" for row in verifications),
             "crossref_mismatches": sum(row["metadata_match_status"] == "MISMATCH" for row in verifications),
             "crossref_unresolved": sum(row["metadata_match_status"] in {"UNDETERMINED", "PARTIAL_OR_MISSING_METADATA"} for row in verifications),
@@ -475,6 +636,8 @@ def run_research(
             "Crossref checks only DOI resolution, title, year, and available retraction metadata.",
             "Citation markers are checked for references to captured source IDs; factual support is not semantically validated.",
             "OpenAlex abstracts are metadata and may not represent the full paper.",
+            "Normalized source rows are re-derived from captured response bytes; caller-supplied normalized rows that differ are rejected.",
+            "Claim-review judgments are human-supplied and self-reported; exact quote anchoring is not semantic support verification.",
         ],
     }
     _write_bytes(out / "receipt.json", _json_bytes(receipt))
@@ -489,6 +652,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--max-sources", type=int, default=12, help=f"number of records to retain (1-{MAX_SOURCES})")
     parser.add_argument("--mailto", default=openalex_client.DEFAULT_MAILTO, help="OpenAlex polite-pool contact")
     parser.add_argument("--draft", help="optional UTF-8 Markdown synthesis that cites captured IDs such as [S1]")
+    parser.add_argument("--claim-reviews", help="optional JSONL human claim-to-source review rows")
     args = parser.parse_args(argv)
     try:
         receipt = run_research(
@@ -498,17 +662,23 @@ def main(argv: list[str] | None = None) -> int:
             max_sources=args.max_sources,
             mailto=args.mailto,
             draft_path=args.draft,
+            claim_review_path=args.claim_reviews,
             command=sys.argv,
         )
     except (ValueError, FileExistsError, OSError) as exc:
         parser.error(str(exc))
     print(json.dumps({
         "status": receipt["status"],
+        "acquisition_status": receipt["acquisition_status"],
+        "claim_review_status": receipt["claim_review_status"],
         "receipt": str(Path(args.output_dir) / "receipt.json"),
         "report": str(Path(args.output_dir) / "report.md"),
         "sources": receipt["counts"]["sources_captured"],
     }, ensure_ascii=False))
-    return 0 if receipt["status"] == "COMPLETED" else 2
+    return 0 if (
+        receipt["status"] == "COMPLETED"
+        and receipt["claim_review_status"] in {"COMPLETED", "NOT_VALIDATED"}
+    ) else 2
 
 
 if __name__ == "__main__":

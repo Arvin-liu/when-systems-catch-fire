@@ -1,16 +1,45 @@
 """Offline regression tests for the bounded research workflow."""
 import hashlib
+import io
 import json
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
+import cli
 from cli import openalex_client, run_research
 
 
 def openalex_response(items):
-    return {"request_url": "https://api.openalex.org/works?search=fixture&mailto=private%40example.test", "response_body": b'{"results":[]}', "results": items}
+    works = []
+    for row in items:
+        abstract_index = {}
+        for position, word in enumerate((row.get("abstract") or "").split()):
+            abstract_index.setdefault(word, []).append(position)
+        works.append({
+            "id": row.get("openalex_id", ""),
+            "doi": row.get("doi", ""),
+            "title": row.get("title", ""),
+            "publication_year": row.get("year"),
+            "authorships": [{"author": {"display_name": name}} for name in row.get("authors", [])],
+            "abstract_inverted_index": abstract_index or None,
+            "open_access": {"oa_url": row.get("oa_url", "")},
+            "primary_location": {"source": {"display_name": row.get("venue", "")}},
+            "type": row.get("type", "journal-article"),
+            "cited_by_count": row.get("cited_by_count", 0),
+            "is_retracted": row.get("is_retracted", False),
+            "concepts": [],
+            "language": "en",
+        })
+    body = json.dumps({"results": works}, ensure_ascii=False).encode("utf-8")
+    parsed = openalex_client.parse_search_response(body)
+    return {
+        "request_url": "https://api.openalex.org/works?search=fixture&mailto=private%40example.test",
+        "response_body": body,
+        **parsed,
+    }
 
 
 def item(doi="10.1234/example", title="Example study", year=2024, openalex_id="https://openalex.org/W1"):
@@ -96,6 +125,10 @@ class ResearchWorkflowTests(unittest.TestCase):
             self.assertIn("[S1]: https://doi.org/10.1234/example", report)
             query = json.loads((out / "query-manifest.jsonl").read_text().splitlines()[0])
             self.assertNotIn("private", query["request_url"])
+            self.assertEqual(query["normalized_output_status"], "MATCHES_RAW_RESPONSE")
+            raw_doc = json.loads((out / query["raw_response_path"]).read_bytes())
+            raw_record = json.dumps(raw_doc["results"][0], ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
+            self.assertEqual(source["raw_evidence"][0]["raw_record_sha256"], hashlib.sha256(raw_record).hexdigest())
             saved_receipt = json.loads((out / "receipt.json").read_text())
             self.assertEqual(saved_receipt["artifacts"][-1]["path"], "verification.jsonl")
             self.assertNotIn("private@example.test", saved_receipt["command"])
@@ -189,11 +222,189 @@ class ResearchWorkflowTests(unittest.TestCase):
                 searcher=lambda *a, **k: (_ for _ in ()).throw(TimeoutError("fixture timeout")),
                 crossref_fetch=lambda doi: crossref_response(),
             )
-            self.assertEqual(receipt["status"], "NO_SOURCES")
+            self.assertEqual(receipt["status"], "FAILED")
+            self.assertEqual(receipt["acquisition_status"], "FAILED")
             query = json.loads((out / "query-manifest.jsonl").read_text().splitlines()[0])
             self.assertEqual(query["status"], "ERROR")
             self.assertEqual(query["error_type"], "TimeoutError")
             self.assertIn("no conclusion is supported", (out / "report.md").read_text())
+
+    def test_partial_query_failure_is_not_reported_as_completed(self):
+        def searcher(query, **_):
+            if query == "failed query":
+                raise TimeoutError("fixture timeout")
+            return openalex_response([item()])
+
+        with tempfile.TemporaryDirectory() as temp:
+            out = Path(temp) / "run"
+            receipt = run_research(
+                question="Question with partial source coverage",
+                queries=["successful query", "failed query"],
+                output_dir=out,
+                searcher=searcher,
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+            rows = [json.loads(line) for line in (out / "query-manifest.jsonl").read_text().splitlines()]
+        self.assertEqual(receipt["status"], "PARTIAL")
+        self.assertEqual(receipt["counts"]["query_error"], 1)
+        self.assertEqual([row["status"] for row in rows], ["OK", "ERROR"])
+
+    def test_successful_empty_queries_are_not_validated(self):
+        with tempfile.TemporaryDirectory() as temp:
+            receipt = run_research(
+                question="Question with no matching records",
+                queries=["empty search"],
+                output_dir=Path(temp) / "run",
+                searcher=lambda *a, **k: openalex_response([]),
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+        self.assertEqual(receipt["status"], "NOT_VALIDATED")
+        self.assertEqual(receipt["counts"]["query_ok"], 1)
+        self.assertEqual(receipt["counts"]["sources_captured"], 0)
+
+    def test_injected_normalized_rows_detached_from_raw_bytes_are_rejected(self):
+        detached = openalex_response([item()])
+        detached["response_body"] = b'{"results":[]}'
+        with tempfile.TemporaryDirectory() as temp:
+            out = Path(temp) / "run"
+            receipt = run_research(
+                question="Question with injected result mismatch",
+                queries=["query"],
+                output_dir=out,
+                searcher=lambda *a, **k: detached,
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+            query = json.loads((out / "query-manifest.jsonl").read_text().splitlines()[0])
+            saved_raw = out / query["raw_response_path"]
+            self.assertEqual(saved_raw.read_bytes(), b'{"results":[]}')
+        self.assertEqual(receipt["status"], "FAILED")
+        self.assertEqual(receipt["counts"]["sources_captured"], 0)
+        self.assertIn("normalized source records do not match", query["error_summary"])
+
+    def test_claim_review_exact_quote_links_manual_judgment_to_source_bytes(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            reviews = root / "claims.jsonl"
+            reviews.write_text(json.dumps({
+                "claim_id": "C-1",
+                "claim_text": "The example study reports its stated abstract result.",
+                "source_id": "S1",
+                "review_judgment": "SUPPORTS",
+                "reviewer_type": "HUMAN",
+                "reviewer": "reviewer-1",
+                "reviewed_at_utc": "2026-10-16T08:00:00Z",
+                "evidence_field": "abstract",
+                "evidence_quote": "A short captured abstract.",
+            }) + "\n")
+            out = root / "run"
+            receipt = run_research(
+                question="Question",
+                queries=["query"],
+                output_dir=out,
+                claim_review_path=reviews,
+                searcher=lambda *a, **k: openalex_response([item()]),
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+            ledger = json.loads((out / "claim-review.jsonl").read_text().splitlines()[0])
+            report = (out / "report.md").read_text()
+        self.assertEqual(receipt["claim_review_status"], "COMPLETED")
+        self.assertEqual(ledger["evidence_anchor_status"], "EXACT_MATCH")
+        self.assertEqual(ledger["row_status"], "REVIEWED_AND_ANCHORED")
+        self.assertEqual(ledger["source_raw_evidence"][0]["record_index"], 1)
+        self.assertIn("does not establish", report)
+
+    def test_claim_review_missing_excerpt_fails_closed_without_claiming_truth(self):
+        review = {
+            "claim_id": "C-1", "claim_text": "A claim", "source_id": "S1",
+            "review_judgment": "SUPPORTS", "reviewer_type": "HUMAN",
+            "reviewer": "reviewer-1", "reviewed_at_utc": "2026-10-16T08:00:00Z",
+            "evidence_field": "abstract", "evidence_quote": "not in the abstract",
+        }
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            path = root / "claims.jsonl"
+            path.write_text(json.dumps(review) + "\n")
+            receipt = run_research(
+                question="Question", queries=["query"], output_dir=root / "run",
+                claim_review_path=path,
+                searcher=lambda *a, **k: openalex_response([item()]),
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+            ledger = json.loads((root / "run/claim-review.jsonl").read_text().splitlines()[0])
+        self.assertEqual(receipt["status"], "COMPLETED")
+        self.assertEqual(receipt["claim_review_status"], "FAILED")
+        self.assertEqual(ledger["evidence_anchor_status"], "NOT_FOUND")
+        self.assertEqual(ledger["review_judgment"], "SUPPORTS")
+
+    def test_claim_review_unknown_source_is_explicit(self):
+        review = {"claim_id": "C-1", "claim_text": "A claim", "source_id": "S99", "review_judgment": "NOT_REVIEWED"}
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            path = root / "claims.jsonl"
+            path.write_text(json.dumps(review) + "\n")
+            receipt = run_research(
+                question="Question", queries=["query"], output_dir=root / "run",
+                claim_review_path=path,
+                searcher=lambda *a, **k: openalex_response([item()]),
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+            ledger = json.loads((root / "run/claim-review.jsonl").read_text().splitlines()[0])
+        self.assertEqual(receipt["claim_review_status"], "FAILED")
+        self.assertEqual(ledger["evidence_anchor_status"], "UNKNOWN_SOURCE")
+        self.assertEqual(ledger["source_raw_evidence"], [])
+
+    def test_no_claim_review_input_is_not_validated_not_implicitly_approved(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            receipt = run_research(
+                question="Question", queries=["query"], output_dir=root / "run",
+                searcher=lambda *a, **k: openalex_response([item()]),
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+            self.assertEqual((root / "run/claim-review.jsonl").read_text(), "")
+        self.assertEqual(receipt["claim_review_status"], "NOT_VALIDATED")
+        self.assertEqual(receipt["counts"]["claim_review_rows"], 0)
+
+    def test_claim_review_invalid_human_record_is_rejected_before_output(self):
+        review = {"claim_id": "C-1", "claim_text": "A claim", "source_id": "S1", "review_judgment": "SUPPORTS"}
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            path = root / "claims.jsonl"
+            path.write_text(json.dumps(review) + "\n")
+            output = root / "run"
+            with self.assertRaisesRegex(ValueError, "reviewer_type HUMAN"):
+                run_research(
+                    question="Question", queries=["query"], output_dir=output,
+                    claim_review_path=path,
+                    searcher=lambda *a, **k: openalex_response([item()]),
+                    crossref_fetch=lambda doi: crossref_response(),
+                )
+            self.assertFalse(output.exists())
+
+    def test_claim_review_duplicate_claim_source_pair_is_rejected(self):
+        review = {"claim_id": "C-1", "claim_text": "A claim", "source_id": "S1", "review_judgment": "NOT_REVIEWED"}
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            path = root / "claims.jsonl"
+            path.write_text(json.dumps(review) + "\n" + json.dumps(review) + "\n")
+            with self.assertRaisesRegex(ValueError, "duplicates claim_id/source_id"):
+                run_research(
+                    question="Question", queries=["query"], output_dir=root / "run",
+                    claim_review_path=path,
+                    searcher=lambda *a, **k: openalex_response([item()]),
+                    crossref_fetch=lambda doi: crossref_response(),
+                )
+
+    def test_cli_exit_code_preserves_acquisition_and_claim_review_failures(self):
+        argv = ["--question", "q", "--query", "q", "--output-dir", "/tmp/unused"]
+        cases = [
+            ({"status": "COMPLETED", "acquisition_status": "COMPLETED", "claim_review_status": "NOT_VALIDATED", "counts": {"sources_captured": 1}}, 0),
+            ({"status": "PARTIAL", "acquisition_status": "PARTIAL", "claim_review_status": "NOT_VALIDATED", "counts": {"sources_captured": 1}}, 2),
+            ({"status": "COMPLETED", "acquisition_status": "COMPLETED", "claim_review_status": "FAILED", "counts": {"sources_captured": 1}}, 2),
+        ]
+        for receipt, expected in cases:
+            with self.subTest(receipt=receipt), patch.object(cli, "run_research", return_value=receipt), redirect_stdout(io.StringIO()):
+                self.assertEqual(cli.main(argv), expected)
 
     def test_crossref_exception_is_explicit(self):
         with tempfile.TemporaryDirectory() as temp:
