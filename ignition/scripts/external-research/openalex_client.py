@@ -23,6 +23,8 @@ OpenAlex 是完全免费的开放学术数据库，无需 API key。
   - is_retracted 字段可用于撤稿预警
 """
 
+from __future__ import annotations
+
 import sys
 import json
 import urllib.request
@@ -50,15 +52,15 @@ def _restore_abstract(inverted_index: dict | None) -> str | None:
     return " ".join(words)
 
 
-def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> list[dict]:
-    """搜索 OpenAlex，返回标准化的结果列表。
+def search_with_evidence(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> dict:
+    """搜索 OpenAlex 并同时保留原始响应，供可复现工作流记录来源。
 
     Args:
         query: 搜索词
         limit: 返回条数（1-25）
         mailto: polite pool 邮箱
     Returns:
-        list of dict，每条包含标准化字段
+        dict containing request_url, response_body (bytes), and normalized results
     """
     limit = max(1, min(int(limit), MAX_LIMIT))
     params = urllib.parse.urlencode({
@@ -69,7 +71,8 @@ def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO)
     url = f"{API}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "OpenAlex-Client/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
-        data = json.load(r)
+        response_body = r.read()
+    data = json.loads(response_body.decode("utf-8"))
 
     results = []
     for w in data.get("results", []):
@@ -109,7 +112,12 @@ def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO)
         }
         results.append(result)
 
-    return results
+    return {"request_url": url, "response_body": response_body, "results": results}
+
+
+def search(query: str, limit: int = DEFAULT_LIMIT, mailto: str = DEFAULT_MAILTO) -> list[dict]:
+    """搜索 OpenAlex，返回标准化的结果列表（兼容原调用方）。"""
+    return search_with_evidence(query, limit=limit, mailto=mailto)["results"]
 
 
 def fetch_by_doi(doi: str, mailto: str = DEFAULT_MAILTO) -> dict | None:

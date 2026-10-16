@@ -1,0 +1,462 @@
+#!/usr/bin/env python3
+"""Create a source-backed research brief from a question and search queries.
+
+The workflow captures OpenAlex responses, independently checks DOI metadata with
+Crossref, validates citation markers in an optional agent-authored synthesis, and
+writes a Markdown report plus machine-readable manifests and a hash receipt.
+It never claims that citation syntax or metadata checks validate paper contents.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import importlib.util
+import json
+import os
+import platform
+import re
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any, Callable
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+
+
+IGNITION_DIR = Path(__file__).resolve().parents[1]
+_EXTERNAL_RESEARCH = IGNITION_DIR / "scripts" / "external-research"
+
+
+def _load_module(name: str, path: Path) -> Any:
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"cannot load {name} from {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+openalex_client = _load_module("ignition_openalex_client", _EXTERNAL_RESEARCH / "openalex_client.py")
+crossref_runner = _load_module(
+    "ignition_crossref_runner", IGNITION_DIR / "evidence-program" / "tools" / "run_crossref_verification.py"
+)
+
+MAX_QUERIES = 12
+MAX_RESULTS_PER_QUERY = 25
+MAX_SOURCES = 50
+CITATION_RE = re.compile(r"\[(S[0-9]+)\]")
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def sha256(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def _json_bytes(value: Any) -> bytes:
+    return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode("utf-8")
+
+
+def _write_bytes(path: Path, data: bytes) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("xb") as handle:
+        handle.write(data)
+        handle.flush()
+        os.fsync(handle.fileno())
+
+
+def _write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
+    data = b"".join(_json_bytes(row) for row in rows)
+    _write_bytes(path, data)
+
+
+def _source_key(item: dict[str, Any]) -> str:
+    if item.get("openalex_id"):
+        return str(item["openalex_id"]).casefold()
+    if item.get("doi"):
+        return str(item["doi"]).casefold()
+    return f"{crossref_runner.norm(item.get('title'))}:{item.get('year')}"
+
+
+def _redact_request_url(raw_url: str | None) -> str | None:
+    if not raw_url:
+        return raw_url
+    parts = urlsplit(raw_url)
+    query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key.casefold() != "mailto"]
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+
+
+def _redact_command(command: list[str]) -> list[str]:
+    redacted = []
+    redact_next = False
+    for token in command:
+        if redact_next:
+            redacted.append("<provided>")
+            redact_next = False
+            continue
+        redacted.append(token)
+        if token in {"--mailto", "--draft", "--output-dir"}:
+            redact_next = True
+    return redacted
+
+
+def _verify_doi(
+    source: dict[str, Any],
+    fetch: Callable[[str], dict[str, Any]],
+    raw_dir: Path | None = None,
+) -> dict[str, Any]:
+    doi = crossref_runner.bare_doi(source.get("doi"))
+    row: dict[str, Any] = {
+        "source_id": source["source_id"],
+        "doi": doi,
+        "checked_at_utc": utc_now(),
+        "provider": "Crossref REST API",
+    }
+    if not doi:
+        row.update({"acquisition_status": "NO_DOI", "metadata_match_status": "NOT_APPLICABLE"})
+        return row
+
+    try:
+        response = fetch(doi)
+    except Exception as exc:
+        response = {"http_ok": False, "status": -1, "error_type": type(exc).__name__}
+    if not response.get("http_ok"):
+        status = response.get("status")
+        row.update({
+            "acquisition_status": "RESOLUTION_FAILED" if status == 404 else "NETWORK_ERROR",
+            "metadata_match_status": "UNDETERMINED",
+            "http_status": status,
+            "error_type": response.get("error_type"),
+        })
+        return row
+
+    body = response["body"]
+    row["response_sha256"] = sha256(body)
+    if raw_dir is not None:
+        raw_path = raw_dir / f"crossref-{source['source_id']}.json"
+        _write_bytes(raw_path, body)
+        row["raw_response_path"] = raw_path.relative_to(raw_dir.parent).as_posix()
+    try:
+        message = json.loads(body.decode("utf-8"))["message"]
+    except (UnicodeDecodeError, json.JSONDecodeError, KeyError, TypeError):
+        row.update({"acquisition_status": "INVALID_RESPONSE", "metadata_match_status": "UNDETERMINED"})
+        return row
+
+    observed_title = (message.get("title") or [None])[0]
+    observed_year = crossref_runner.extract_year(message)
+    expected_title = source.get("title")
+    expected_year = source.get("year")
+    title_match = (
+        crossref_runner.norm(observed_title) == crossref_runner.norm(expected_title)
+        if observed_title and expected_title else None
+    )
+    try:
+        year_match = int(observed_year) == int(expected_year) if observed_year and expected_year else None
+    except (TypeError, ValueError):
+        year_match = None
+    if title_match is True and year_match is True:
+        match_status = "MATCH"
+    elif title_match is False or year_match is False:
+        match_status = "MISMATCH"
+    else:
+        match_status = "PARTIAL_OR_MISSING_METADATA"
+    row.update({
+        "acquisition_status": "OK",
+        "metadata_match_status": match_status,
+        "observed_title": observed_title,
+        "observed_year": observed_year,
+        "title_match": title_match,
+        "year_match": year_match,
+        "retraction_signal": crossref_runner.retraction_signal(message),
+    })
+    return row
+
+
+def _validate_draft(draft: str, source_ids: set[str]) -> None:
+    references = set(CITATION_RE.findall(draft))
+    if not references:
+        raise ValueError("draft must cite at least one captured source using [S1], [S2], ...")
+    unknown = sorted(references - source_ids)
+    if unknown:
+        raise ValueError(f"draft cites unknown source IDs: {', '.join(unknown)}")
+
+
+def _markdown_report(
+    question: str,
+    queries: list[str],
+    sources: list[dict[str, Any]],
+    verifications: list[dict[str, Any]],
+    draft: str | None,
+    status: str,
+) -> str:
+    matched = sum(row.get("metadata_match_status") == "MATCH" for row in verifications)
+    mismatch = sum(row.get("metadata_match_status") == "MISMATCH" for row in verifications)
+    lines = [
+        f"# Research report: {question}",
+        "",
+        f"- Run status: `{status}`",
+        f"- Sources captured: {len(sources)}",
+        f"- DOI title/year metadata matches: {matched}",
+        f"- DOI metadata mismatches: {mismatch}",
+        "- Evidence ceiling: citation markers and bibliographic metadata checked; source contents and claims not independently validated by this workflow.",
+        "",
+        "## Search method",
+        "",
+        "Searches used OpenAlex works metadata. The query set and original response bytes are preserved in the run directory.",
+    ]
+    lines.extend(f"- `{query}`" for query in queries)
+    lines += ["", "## Synthesis", ""]
+    if status == "INVALID_DRAFT":
+        lines += ["The supplied synthesis was rejected because its citation markers did not resolve to sources in this run. Details are recorded in receipt.json."]
+    elif draft is not None:
+        lines += [
+            "The following synthesis was supplied by the research agent. Citation IDs were checked syntactically against this run; the workflow does not judge whether each claim follows from its cited paper.",
+            "",
+            draft.strip(),
+        ]
+    elif sources:
+        lines += [
+            "No agent-authored synthesis was supplied. The source notes below are retrieval evidence, not a conclusion about the research question.",
+        ]
+    else:
+        lines += ["No sources were captured; no conclusion is supported by this run."]
+
+    lines += ["", "## Source notes", ""]
+    if not sources:
+        lines.append("No source records were returned by the search provider.")
+    for source in sources:
+        title = source.get("title") or "Untitled record"
+        authors = ", ".join(source.get("authors") or []) or "Author metadata unavailable"
+        year = source.get("year") or "Year unavailable"
+        venue = source.get("venue") or "Venue unavailable"
+        url = source.get("doi_url") or source.get("openalex_id") or ""
+        lines += [
+            f"### [{source['source_id']}] {title}",
+            "",
+            f"- Bibliography: {authors} ({year}). {venue}.",
+            f"- OpenAlex work type: {source.get('type') or 'unavailable'}; cited-by count: {source.get('cited_by_count') if source.get('cited_by_count') is not None else 'unavailable'}.",
+        ]
+        if url:
+            lines.append(f"- Source: {url}")
+        verification = next((v for v in verifications if v["source_id"] == source["source_id"]), None)
+        if verification:
+            lines.append(
+                f"- Crossref check: `{verification['acquisition_status']}` / `{verification['metadata_match_status']}`."
+            )
+        if source.get("abstract"):
+            lines += ["", "> Abstract (OpenAlex metadata):", ">", *(f"> {line}" for line in source["abstract"].splitlines()), ""]
+        else:
+            lines.append("- Abstract: unavailable in the captured OpenAlex record.")
+
+    for source in sources:
+        url = source.get("doi_url") or source.get("openalex_id")
+        if url:
+            lines += ["", f"[{source['source_id']}]: {url}"]
+
+    lines += [
+        "",
+        "## Limits",
+        "",
+        "OpenAlex and Crossref checks cover bibliographic metadata only. They do not establish that a paper's findings are correct, that an abstract fully represents the paper, or that any synthesis claim is supported. Full-text access, study quality, causal interpretation, and independent replication require separate review.",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def run_research(
+    *,
+    question: str,
+    queries: list[str],
+    output_dir: str | Path,
+    max_sources: int = 12,
+    mailto: str = openalex_client.DEFAULT_MAILTO,
+    draft_path: str | Path | None = None,
+    searcher: Callable[..., dict[str, Any]] | None = None,
+    crossref_fetch: Callable[[str], dict[str, Any]] | None = None,
+    command: list[str] | None = None,
+) -> dict[str, Any]:
+    """Run source collection, DOI metadata checks, report assembly, and receipt.
+
+    The supplied draft (when present) must cite captured sources as ``[S1]`` etc.
+    A returned ``MATCH`` means only that Crossref title and year match OpenAlex.
+    """
+    question = (question or "").strip()
+    queries = [str(query).strip() for query in queries if str(query).strip()]
+    if not question:
+        raise ValueError("question is required")
+    if not queries:
+        raise ValueError("at least one non-empty --query is required")
+    if len(queries) > MAX_QUERIES:
+        raise ValueError(f"at most {MAX_QUERIES} queries are allowed")
+    if not 1 <= max_sources <= MAX_SOURCES:
+        raise ValueError(f"max_sources must be between 1 and {MAX_SOURCES}")
+
+    out = Path(output_dir)
+    if out.exists() and (not out.is_dir() or any(out.iterdir())):
+        raise FileExistsError(f"output directory must be absent or empty: {out}")
+    out.mkdir(parents=True, exist_ok=True)
+    started = utc_now()
+    searcher = searcher or openalex_client.search_with_evidence
+    crossref_fetch = crossref_fetch or crossref_runner.fetch
+    query_rows: list[dict[str, Any]] = []
+    candidates: dict[str, dict[str, Any]] = {}
+
+    for index, query in enumerate(queries, 1):
+        row: dict[str, Any] = {"query_id": f"Q{index}", "query": query, "retrieved_at_utc": utc_now()}
+        try:
+            evidence = searcher(query, limit=MAX_RESULTS_PER_QUERY, mailto=mailto)
+            raw = evidence.get("response_body")
+            if isinstance(raw, str):
+                raw = raw.encode("utf-8")
+            if not isinstance(raw, bytes):
+                raw = _json_bytes(evidence.get("results", []))
+            raw_path = f"raw/openalex-query-{index:02d}.json"
+            _write_bytes(out / raw_path, raw)
+            row.update({
+                "status": "OK",
+                "request_url": _redact_request_url(evidence.get("request_url")),
+                "raw_response_path": raw_path,
+                "raw_response_sha256": sha256(raw),
+            })
+            for rank, item in enumerate(evidence.get("results", []), 1):
+                key = _source_key(item)
+                if key not in candidates:
+                    candidates[key] = {**item, "query_ids": [], "rank_by_query": {}, "raw_evidence": []}
+                record = candidates[key]
+                if row["query_id"] not in record["query_ids"]:
+                    record["query_ids"].append(row["query_id"])
+                record["rank_by_query"][row["query_id"]] = rank
+                if raw_path not in [entry["path"] for entry in record["raw_evidence"]]:
+                    record["raw_evidence"].append({"path": raw_path, "sha256": sha256(raw)})
+            row["result_count"] = len(evidence.get("results", []))
+        except Exception as exc:  # preserve failed acquisition as an explicit row
+            row.update({
+                "status": "ERROR",
+                "error_type": type(exc).__name__,
+                "error_summary": "provider request failed; exception details omitted from the public receipt",
+            })
+        query_rows.append(row)
+
+    selected = list(candidates.values())[:max_sources]
+    sources: list[dict[str, Any]] = []
+    for index, candidate in enumerate(selected, 1):
+        doi = crossref_runner.bare_doi(candidate.get("doi"))
+        openalex_id = candidate.get("openalex_id") or ""
+        sources.append({
+            "source_id": f"S{index}",
+            "provider": "OpenAlex",
+            "openalex_id": openalex_id,
+            "doi": doi,
+            "doi_url": f"https://doi.org/{doi}" if doi else None,
+            "title": candidate.get("title"),
+            "year": candidate.get("year"),
+            "type": candidate.get("type"),
+            "authors": candidate.get("authors") or [],
+            "venue": candidate.get("venue"),
+            "abstract": candidate.get("abstract"),
+            "concepts": candidate.get("concepts") or [],
+            "cited_by_count": candidate.get("cited_by_count"),
+            "relevance_score": candidate.get("relevance_score"),
+            "language": candidate.get("language"),
+            "is_retracted": candidate.get("is_retracted"),
+            "oa_url": candidate.get("oa_url"),
+            "query_ids": candidate["query_ids"],
+            "rank_by_query": candidate["rank_by_query"],
+            "raw_evidence": candidate["raw_evidence"],
+            "captured_at_utc": started,
+        })
+
+    draft = Path(draft_path).read_text(encoding="utf-8") if draft_path else None
+    draft_error = None
+    if draft is not None:
+        try:
+            _validate_draft(draft, {source["source_id"] for source in sources})
+        except ValueError as exc:
+            draft_error = str(exc)
+            draft = None
+
+    verifications = [_verify_doi(source, crossref_fetch, raw_dir=out / "raw") for source in sources]
+    _write_jsonl(out / "query-manifest.jsonl", query_rows)
+    _write_jsonl(out / "sources.jsonl", sources)
+    _write_jsonl(out / "verification.jsonl", verifications)
+
+    status = "INVALID_DRAFT" if draft_error else ("COMPLETED" if sources else "NO_SOURCES")
+    report = _markdown_report(question, queries, sources, verifications, draft, status)
+    _write_bytes(out / "report.md", report.encode("utf-8"))
+
+    artifact_paths = sorted(
+        path for path in out.rglob("*") if path.is_file() and path.name != "receipt.json"
+    )
+    receipt = {
+        "workflow": "ignition-research-workflow-r0",
+        "status": status,
+        "claim_ceiling": "source_capture_and_bibliographic_metadata_check_only",
+        "question": question,
+        "queries": queries,
+        "started_at_utc": started,
+        "finished_at_utc": utc_now(),
+        "runtime": {"python": platform.python_version(), "platform": platform.platform()},
+        "budget": {"query_count": len(queries), "max_sources": max_sources, "direct_api_cost_usd": 0},
+        "counts": {
+            "query_ok": sum(row["status"] == "OK" for row in query_rows),
+            "query_error": sum(row["status"] == "ERROR" for row in query_rows),
+            "sources_captured": len(sources),
+            "crossref_matches": sum(row["metadata_match_status"] == "MATCH" for row in verifications),
+            "crossref_mismatches": sum(row["metadata_match_status"] == "MISMATCH" for row in verifications),
+            "crossref_unresolved": sum(row["metadata_match_status"] in {"UNDETERMINED", "PARTIAL_OR_MISSING_METADATA"} for row in verifications),
+        },
+        "draft_mode": (
+            "rejected_agent_authored_synthesis" if draft_error
+            else "agent_authored_citations_syntax_checked" if draft is not None
+            else "evidence_brief_only"
+        ),
+        "draft_error": draft_error,
+        "command": _redact_command(command or []),
+        "mailto_configured": bool(mailto),
+        "artifacts": [
+            {"path": path.relative_to(out).as_posix(), "sha256": sha256(path.read_bytes()), "bytes": path.stat().st_size}
+            for path in artifact_paths
+        ],
+        "limitations": [
+            "Crossref checks only DOI resolution, title, year, and available retraction metadata.",
+            "Citation markers are checked for references to captured source IDs; factual support is not semantically validated.",
+            "OpenAlex abstracts are metadata and may not represent the full paper.",
+        ],
+    }
+    _write_bytes(out / "receipt.json", _json_bytes(receipt))
+    return receipt
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--question", required=True, help="Owner/research question")
+    parser.add_argument("--query", action="append", required=True, help="OpenAlex query; repeat up to 12 times")
+    parser.add_argument("--output-dir", required=True, help="new or empty run directory")
+    parser.add_argument("--max-sources", type=int, default=12, help=f"number of records to retain (1-{MAX_SOURCES})")
+    parser.add_argument("--mailto", default=openalex_client.DEFAULT_MAILTO, help="OpenAlex polite-pool contact")
+    parser.add_argument("--draft", help="optional UTF-8 Markdown synthesis that cites captured IDs such as [S1]")
+    args = parser.parse_args(argv)
+    try:
+        receipt = run_research(
+            question=args.question,
+            queries=args.query,
+            output_dir=args.output_dir,
+            max_sources=args.max_sources,
+            mailto=args.mailto,
+            draft_path=args.draft,
+            command=sys.argv,
+        )
+    except (ValueError, FileExistsError, OSError) as exc:
+        parser.error(str(exc))
+    print(json.dumps({
+        "status": receipt["status"],
+        "receipt": str(Path(args.output_dir) / "receipt.json"),
+        "report": str(Path(args.output_dir) / "report.md"),
+        "sources": receipt["counts"]["sources_captured"],
+    }, ensure_ascii=False))
+    return 0 if receipt["status"] == "COMPLETED" else 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
