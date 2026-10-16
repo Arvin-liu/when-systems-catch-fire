@@ -151,6 +151,34 @@ class ResearchWorkflowTests(unittest.TestCase):
             self.assertEqual(rows[1]["acquisition_status"], "NO_DOI")
             self.assertEqual(receipt["counts"]["crossref_mismatches"], 1)
 
+    def test_crossref_inline_markup_does_not_create_false_title_mismatch(self):
+        plain_title = "ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences"
+        crossref_title = (
+            "<scp>ReplicatorBench:</scp>\n"
+            "                    Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences"
+        )
+        with tempfile.TemporaryDirectory() as temp:
+            out = Path(temp) / "run"
+            run_research(
+                question="Does Crossref metadata match the source title?",
+                queries=["ReplicatorBench"],
+                output_dir=out,
+                searcher=lambda *a, **k: openalex_response([
+                    item(
+                        doi="10.1145/3770855.3819003",
+                        title=plain_title,
+                        year=2026,
+                        openalex_id="https://openalex.org/W7196968176",
+                    )
+                ]),
+                crossref_fetch=lambda doi: crossref_response(title=crossref_title, year=2026),
+            )
+            verification = json.loads((out / "verification.jsonl").read_text().splitlines()[0])
+
+        self.assertTrue(verification["title_match"])
+        self.assertTrue(verification["year_match"])
+        self.assertEqual(verification["metadata_match_status"], "MATCH")
+
     def test_query_failure_is_preserved_and_empty_result_does_not_claim_success(self):
         with tempfile.TemporaryDirectory() as temp:
             out = Path(temp) / "run"

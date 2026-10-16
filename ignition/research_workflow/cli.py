@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import importlib.util
 import json
 import os
@@ -44,6 +45,7 @@ MAX_QUERIES = 12
 MAX_RESULTS_PER_QUERY = 25
 MAX_SOURCES = 50
 CITATION_RE = re.compile(r"\[(S[0-9]+)\]")
+HTML_TAG_RE = re.compile(r"</?[A-Za-z][^<>]*>")
 
 
 def utc_now() -> str:
@@ -77,6 +79,12 @@ def _source_key(item: dict[str, Any]) -> str:
     if item.get("doi"):
         return str(item["doi"]).casefold()
     return f"{crossref_runner.norm(item.get('title'))}:{item.get('year')}"
+
+
+def _normalized_title(value: Any) -> str:
+    """Normalize title text after removing Crossref's inline markup tags."""
+    text = HTML_TAG_RE.sub(" ", html.unescape(str(value or "")))
+    return crossref_runner.norm(text)
 
 
 def _select_candidates_round_robin(
@@ -189,7 +197,7 @@ def _verify_doi(
     expected_title = source.get("title")
     expected_year = source.get("year")
     title_match = (
-        crossref_runner.norm(observed_title) == crossref_runner.norm(expected_title)
+        _normalized_title(observed_title) == _normalized_title(expected_title)
         if observed_title and expected_title else None
     )
     try:
