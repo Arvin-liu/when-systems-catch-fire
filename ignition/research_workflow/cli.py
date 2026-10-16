@@ -79,6 +79,47 @@ def _source_key(item: dict[str, Any]) -> str:
     return f"{crossref_runner.norm(item.get('title'))}:{item.get('year')}"
 
 
+def _select_candidates_round_robin(
+    candidates: dict[str, dict[str, Any]],
+    query_ids: list[str],
+    limit: int,
+) -> list[dict[str, Any]]:
+    """Select unique records fairly across queries, preserving each query's ranks."""
+    ranked_by_query: dict[str, list[tuple[int, str, dict[str, Any]]]] = {
+        query_id: [] for query_id in query_ids
+    }
+    for key, candidate in candidates.items():
+        for query_id, rank in candidate["rank_by_query"].items():
+            if query_id in ranked_by_query:
+                ranked_by_query[query_id].append((int(rank), key, candidate))
+    for ranked in ranked_by_query.values():
+        ranked.sort(key=lambda entry: (entry[0], entry[1]))
+
+    selected: list[dict[str, Any]] = []
+    selected_keys: set[str] = set()
+    positions = {query_id: 0 for query_id in query_ids}
+    while len(selected) < limit:
+        added_this_round = False
+        for query_id in query_ids:
+            ranked = ranked_by_query[query_id]
+            position = positions[query_id]
+            while position < len(ranked) and ranked[position][1] in selected_keys:
+                position += 1
+            positions[query_id] = position
+            if position >= len(ranked):
+                continue
+            _, key, candidate = ranked[position]
+            positions[query_id] += 1
+            selected_keys.add(key)
+            selected.append(candidate)
+            added_this_round = True
+            if len(selected) >= limit:
+                break
+        if not added_this_round:
+            break
+    return selected
+
+
 def _redact_request_url(raw_url: str | None) -> str | None:
     if not raw_url:
         return raw_url
@@ -326,7 +367,7 @@ def run_research(
                 record = candidates[key]
                 if row["query_id"] not in record["query_ids"]:
                     record["query_ids"].append(row["query_id"])
-                record["rank_by_query"][row["query_id"]] = rank
+                record["rank_by_query"].setdefault(row["query_id"], rank)
                 if raw_path not in [entry["path"] for entry in record["raw_evidence"]]:
                     record["raw_evidence"].append({"path": raw_path, "sha256": sha256(raw)})
             row["result_count"] = len(evidence.get("results", []))
@@ -338,7 +379,11 @@ def run_research(
             })
         query_rows.append(row)
 
-    selected = list(candidates.values())[:max_sources]
+    selected = _select_candidates_round_robin(
+        candidates,
+        [row["query_id"] for row in query_rows],
+        max_sources,
+    )
     sources: list[dict[str, Any]] = []
     for index, candidate in enumerate(selected, 1):
         doi = crossref_runner.bare_doi(candidate.get("doi"))

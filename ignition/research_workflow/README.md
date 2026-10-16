@@ -24,5 +24,9 @@ metadata and abstracts, not a generated conclusion.
 
 The output directory must be new or empty. A missing DOI, failed request,
 Crossref mismatch, or absent abstract remains explicit in the machine records.
+When `--max-sources` truncates results, selection proceeds round-robin in query
+order, by each query's captured rank, so a broad early query cannot consume the
+entire cap before later query areas are represented. Duplicate works are kept
+once, with their query IDs and per-query ranks retained in `sources.jsonl`.
 Run `python3 -m unittest discover -s ignition/research_workflow -p 'test_*.py'`
 for offline tests.

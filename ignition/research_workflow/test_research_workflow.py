@@ -101,6 +101,37 @@ class ResearchWorkflowTests(unittest.TestCase):
             self.assertNotIn("private@example.test", saved_receipt["command"])
             self.assertNotIn("/private/run", saved_receipt["command"])
 
+    def test_source_cap_round_robins_queries_and_deduplicates(self):
+        broad = [
+            item(doi="10.1234/a", title="Broad result A", openalex_id="W-A"),
+            item(doi="10.1234/b", title="Broad result B", openalex_id="W-B"),
+            item(doi="10.1234/c", title="Broad result C", openalex_id="W-C"),
+        ]
+        later = [
+            item(doi="10.1234/a", title="Broad result A", openalex_id="W-A"),
+            item(doi="10.1234/x", title="Later question result X", openalex_id="W-X"),
+        ]
+
+        def searcher(query, **_):
+            return openalex_response(broad if query == "broad query" else later)
+
+        with tempfile.TemporaryDirectory() as temp:
+            out = Path(temp) / "run"
+            run_research(
+                question="A broad question with a later distinct subquestion",
+                queries=["broad query", "later query"],
+                output_dir=out,
+                max_sources=2,
+                searcher=searcher,
+                crossref_fetch=lambda doi: crossref_response(),
+            )
+            sources = [json.loads(line) for line in (out / "sources.jsonl").read_text().splitlines()]
+
+        self.assertEqual([source["openalex_id"] for source in sources], ["W-A", "W-X"])
+        self.assertEqual(sources[0]["rank_by_query"], {"Q1": 1, "Q2": 1})
+        self.assertEqual(sources[0]["query_ids"], ["Q1", "Q2"])
+        self.assertEqual(sources[1]["rank_by_query"], {"Q2": 2})
+
     def test_mismatch_and_no_doi_are_explicit(self):
         with tempfile.TemporaryDirectory() as temp:
             out = Path(temp) / "run"
