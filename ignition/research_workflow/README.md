@@ -60,3 +60,38 @@ entire cap before later query areas are represented. Duplicate works are kept
 once, with their query IDs and per-query ranks retained in `sources.jsonl`.
 Run `python3 -m unittest discover -s ignition/research_workflow -p 'test_*.py'`
 for offline tests.
+
+## Offline source snapshots
+
+Use `--source-snapshots manifest.jsonl` when research uses official pages or
+data that are not available through OpenAlex. The CLI makes no network request
+in this mode. It records the query strings as researcher-provided inputs, but
+does not claim that it executed or verified those searches.
+
+```bash
+python3 ignition/research_workflow/cli.py \
+  --question "What does the official evidence show?" \
+  --query "frozen search query one" \
+  --source-snapshots /tmp/source-snapshots/manifest.jsonl \
+  --output-dir /tmp/example-snapshot-run
+```
+
+Each manifest line points to one UTF-8 capture file beside the manifest:
+
+```json
+{"title":"Official report section","source_url":"https://example.org/report","capture_path":"captures/report-section.txt","capture_kind":"web_run_observation","captured_at_utc":"2026-10-16T09:30:00Z","locator":"Section 2, table 1","query_ids":["Q1","Q2"],"content_type":"text/plain; charset=utf-8"}
+```
+
+`web_run_observation` means the saved rendered text returned by the web search/open
+tool. It is not the publisher's original HTTP response. `official_api_json` is
+for an actual UTF-8 JSON response body; at most one such response and at most
+five source captures are allowed per run, and each capture is limited to 10 MB.
+The `source_url`, title, locator, timestamp, query IDs, and capture kind are
+manifest metadata supplied by the caller. The tool preserves the capture bytes,
+hashes the manifest and each capture, and links those hashes from `sources.jsonl`
+and `claim-review.jsonl`. It does not authenticate the capture's origin.
+
+In a human claim-review row, use `"evidence_field":"captured_text"` to check
+that the quoted excerpt appears exactly in the saved capture bytes. An exact
+match only confirms an anchor; it does not determine whether the excerpt
+supports the claim. The source note and receipt keep this limitation explicit.

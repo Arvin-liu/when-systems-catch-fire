@@ -450,6 +450,186 @@ class ResearchWorkflowTests(unittest.TestCase):
             self.assertTrue((out / "receipt.json").is_file())
             self.assertIn("synthesis was rejected", (out / "report.md").read_text())
 
+    def test_offline_source_snapshots_preserve_bytes_and_anchor_claims_without_network(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            captures = root / "captures"
+            captures.mkdir()
+            web_capture = b"Test report observation.\nThe annual mean exceeded the stated threshold.\n"
+            api_capture = b'{"status":"REQUEST_SUCCEEDED","Results":{"series":[{"seriesID":"TEST","data":[{"year":"2024","value":"101.2"}]}]}}'
+            (captures / "report.txt").write_bytes(web_capture)
+            (captures / "api.json").write_bytes(api_capture)
+            manifest_rows = [
+                {
+                    "title": "Test report",
+                    "source_url": "https://example.org/report",
+                    "capture_path": "captures/report.txt",
+                    "capture_kind": "web_run_observation",
+                    "captured_at_utc": "2026-10-16T09:30:00Z",
+                    "locator": "Results section, paragraph 1",
+                    "query_ids": ["Q1"],
+                },
+                {
+                    "title": "Test API response",
+                    "source_url": "https://api.example.org/series",
+                    "capture_path": "captures/api.json",
+                    "capture_kind": "official_api_json",
+                    "captured_at_utc": "2026-10-16T09:31:00+00:00",
+                    "locator": "Results.series[0].data[0].value",
+                    "query_ids": ["Q2"],
+                },
+            ]
+            manifest = root / "source-snapshots.jsonl"
+            manifest.write_text("".join(json.dumps(row) + "\n" for row in manifest_rows), encoding="utf-8")
+            claim = {
+                "claim_id": "C-1",
+                "claim_text": "The captured report states the annual mean exceeded the threshold.",
+                "source_id": "S1",
+                "review_judgment": "SUPPORTS",
+                "reviewer_type": "HUMAN",
+                "reviewer": "test-reviewer",
+                "reviewed_at_utc": "2026-10-16T09:32:00Z",
+                "evidence_field": "captured_text",
+                "evidence_quote": "The annual mean exceeded the stated threshold.",
+            }
+            claims = root / "claims.jsonl"
+            claims.write_text(json.dumps(claim) + "\n", encoding="utf-8")
+            out = root / "run"
+
+            def unexpected_network(*_args, **_kwargs):
+                raise AssertionError("offline snapshot mode called a network adapter")
+
+            receipt = run_research(
+                question="Test snapshot ingestion",
+                queries=["frozen search query one", "frozen search query two"],
+                output_dir=out,
+                source_snapshots_path=manifest,
+                claim_review_path=claims,
+                searcher=unexpected_network,
+                crossref_fetch=unexpected_network,
+            )
+
+            self.assertEqual(receipt["status"], "COMPLETED")
+            self.assertEqual(receipt["ingestion_mode"], "OFFLINE_SOURCE_SNAPSHOTS")
+            self.assertEqual(receipt["counts"]["query_ok"], 0)
+            self.assertEqual(receipt["counts"]["queries_declared"], 2)
+            self.assertEqual(receipt["counts"]["claim_review_anchored"], 1)
+            self.assertEqual(receipt["source_snapshot_manifest_sha256"], hashlib.sha256(manifest.read_bytes()).hexdigest())
+            saved_sources = [json.loads(line) for line in (out / "sources.jsonl").read_text().splitlines()]
+            self.assertEqual([source["source_id"] for source in saved_sources], ["S1", "S2"])
+            self.assertEqual((out / saved_sources[0]["raw_evidence"][0]["path"]).read_bytes(), web_capture)
+            self.assertEqual((out / saved_sources[1]["raw_evidence"][0]["path"]).read_bytes(), api_capture)
+            self.assertEqual(saved_sources[1]["capture_sha256"], hashlib.sha256(api_capture).hexdigest())
+            ledger = json.loads((out / "claim-review.jsonl").read_text().splitlines()[0])
+            self.assertEqual(ledger["evidence_anchor_status"], "EXACT_MATCH")
+            self.assertEqual(ledger["source_url"], "https://example.org/report")
+            query_rows = [json.loads(line) for line in (out / "query-manifest.jsonl").read_text().splitlines()]
+            self.assertEqual(query_rows[0]["status"], "DECLARED_EXTERNALLY_NOT_VERIFIED")
+            self.assertEqual(query_rows[0]["response_capture_status"], "NOT_CAPTURED_BY_CLI")
+            report = (out / "report.md").read_text()
+            self.assertIn("not the original publisher HTTP response", report)
+            self.assertNotIn("DOI title/year metadata matches", report)
+
+    def test_offline_source_snapshots_reject_path_escape_before_output(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "outside.txt").write_text("not allowed", encoding="utf-8")
+            manifest = root / "source-snapshots.jsonl"
+            row = {
+                "title": "Outside file",
+                "source_url": "https://example.org/report",
+                "capture_path": "../outside.txt",
+                "capture_kind": "web_run_observation",
+                "captured_at_utc": "2026-10-16T09:30:00Z",
+                "locator": "Section 1",
+            }
+            manifest.write_text(json.dumps(row) + "\n", encoding="utf-8")
+            output = root / "run"
+            with self.assertRaisesRegex(ValueError, "stay under the manifest directory"):
+                run_research(
+                    question="Question", queries=["query"], output_dir=output,
+                    source_snapshots_path=manifest,
+                )
+            self.assertFalse(output.exists())
+
+    def test_offline_source_snapshots_allow_only_one_official_api_response(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "one.json").write_text('{"status":"ok"}', encoding="utf-8")
+            (root / "two.json").write_text('{"status":"ok"}', encoding="utf-8")
+            manifest = root / "source-snapshots.jsonl"
+            rows = [
+                {
+                    "title": f"API {index}",
+                    "source_url": f"https://api.example.org/series/{index}",
+                    "capture_path": f"{name}.json",
+                    "capture_kind": "official_api_json",
+                    "captured_at_utc": "2026-10-16T09:30:00Z",
+                    "locator": "Results[0]",
+                }
+                for index, name in ((1, "one"), (2, "two"))
+            ]
+            manifest.write_text("".join(json.dumps(row) + "\n" for row in rows), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "at most one official_api_json"):
+                run_research(
+                    question="Question", queries=["query"], output_dir=root / "run",
+                    source_snapshots_path=manifest,
+                )
+
+    def test_cli_runs_offline_source_snapshot_mode(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            capture = b"Saved source observation."
+            (root / "capture.txt").write_bytes(capture)
+            manifest = root / "manifest.jsonl"
+            row = {
+                "title": "Saved source",
+                "source_url": "https://example.org/source",
+                "capture_path": "capture.txt",
+                "capture_kind": "web_run_observation",
+                "captured_at_utc": "2026-10-16T09:30:00Z",
+                "locator": "Summary",
+            }
+            manifest.write_text(json.dumps(row) + "\n", encoding="utf-8")
+            out = root / "run"
+            args = [
+                "--question", "A source question",
+                "--query", "one frozen query",
+                "--source-snapshots", str(manifest),
+                "--output-dir", str(out),
+            ]
+            stdout = io.StringIO()
+            with redirect_stdout(stdout):
+                exit_code = cli.main(args)
+            self.assertEqual(exit_code, 0)
+            saved_receipt = json.loads((out / "receipt.json").read_text())
+            self.assertEqual(saved_receipt["ingestion_mode"], "OFFLINE_SOURCE_SNAPSHOTS")
+            self.assertIn("Saved source observation", (out / "raw/source-S1.txt").read_text())
+
+    def test_offline_source_snapshots_enforce_ten_mb_capture_limit(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            capture = root / "large.txt"
+            with capture.open("wb") as handle:
+                handle.truncate(cli.MAX_SOURCE_SNAPSHOT_BYTES + 1)
+            manifest = root / "manifest.jsonl"
+            row = {
+                "title": "Large capture",
+                "source_url": "https://example.org/source",
+                "capture_path": "large.txt",
+                "capture_kind": "web_run_observation",
+                "captured_at_utc": "2026-10-16T09:30:00Z",
+                "locator": "Section 1",
+            }
+            manifest.write_text(json.dumps(row) + "\n", encoding="utf-8")
+            output = root / "run"
+            with self.assertRaisesRegex(ValueError, "10 MB capture limit"):
+                run_research(
+                    question="Question", queries=["query"], output_dir=output,
+                    source_snapshots_path=manifest,
+                )
+            self.assertFalse(output.exists())
+
 
 if __name__ == "__main__":
     unittest.main()

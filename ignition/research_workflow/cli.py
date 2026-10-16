@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Create a source-backed research brief from a question and search queries.
 
-The workflow captures OpenAlex responses, independently checks DOI metadata with
-Crossref, validates citation markers in an optional agent-authored synthesis, and
-writes a Markdown report plus machine-readable manifests and a hash receipt.
-It never claims that citation syntax or metadata checks validate paper contents.
+The workflow can capture OpenAlex responses or import offline source snapshots,
+validate citations in an optional agent-authored synthesis, and write a Markdown
+report plus machine-readable manifests and a hash receipt. It never claims that
+citation syntax, metadata, or exact excerpt anchors validate source contents.
 """
 from __future__ import annotations
 
@@ -47,6 +47,11 @@ MAX_SOURCES = 50
 CITATION_RE = re.compile(r"\[(S[0-9]+)\]")
 HTML_TAG_RE = re.compile(r"</?[A-Za-z][^<>]*>")
 CLAIM_REVIEW_JUDGMENTS = {"SUPPORTS", "CONTRADICTS", "CONTEXT_ONLY", "INSUFFICIENT", "NOT_REVIEWED"}
+CLAIM_EVIDENCE_FIELDS = {"title", "abstract", "captured_text"}
+MAX_SOURCE_SNAPSHOT_BYTES = 10_000_000
+MAX_SOURCE_SNAPSHOT_MANIFEST_BYTES = 1_000_000
+MAX_SNAPSHOT_SOURCES_PER_QUESTION = 5
+SOURCE_SNAPSHOT_KINDS = {"web_run_observation", "official_api_json"}
 
 
 class EvidenceIntegrityError(ValueError):
@@ -150,9 +155,14 @@ def _redact_command(command: list[str]) -> list[str]:
             redact_next = False
             continue
         redacted.append(token)
-        if token in {"--mailto", "--draft", "--output-dir", "--claim-reviews"}:
+        if token in {"--mailto", "--draft", "--output-dir", "--claim-reviews", "--source-snapshots"}:
             redact_next = True
     return redacted
+
+
+def _markdown_escape(text: str) -> str:
+    """Keep caller-supplied source metadata from changing Markdown structure."""
+    return re.sub(r"([\\`*_{}\[\]()#+\-.!|>])", r"\\\1", text)
 
 
 def _verify_doi(
@@ -265,16 +275,16 @@ def _read_claim_reviews(path: str | Path | None) -> list[dict[str, Any]]:
                 raise ValueError(f"claim-review line {line_number} requires {', '.join(missing)} for HUMAN review")
             if row["review_judgment"] == "NOT_REVIEWED":
                 raise ValueError(f"claim-review line {line_number} cannot pair HUMAN with NOT_REVIEWED")
-            if row["evidence_field"] not in {"title", "abstract"}:
-                raise ValueError(f"claim-review line {line_number} evidence_field must be title or abstract")
+            if row["evidence_field"] not in CLAIM_EVIDENCE_FIELDS:
+                raise ValueError(f"claim-review line {line_number} evidence_field must be title, abstract, or captured_text")
         elif row["review_judgment"] != "NOT_REVIEWED":
             raise ValueError(f"claim-review line {line_number} requires reviewer_type HUMAN for a judgment")
         if "evidence_quote" in row and not isinstance(row["evidence_quote"], str):
             raise ValueError(f"claim-review line {line_number} evidence_quote must be a string")
         if "evidence_field" in row and (
-            not isinstance(row["evidence_field"], str) or row["evidence_field"] not in {"title", "abstract"}
+            not isinstance(row["evidence_field"], str) or row["evidence_field"] not in CLAIM_EVIDENCE_FIELDS
         ):
-            raise ValueError(f"claim-review line {line_number} evidence_field must be title or abstract")
+            raise ValueError(f"claim-review line {line_number} evidence_field must be title, abstract, or captured_text")
         for field in ("reviewer", "reviewed_at_utc", "review_note"):
             if field in row and row[field] is not None and not isinstance(row[field], str):
                 raise ValueError(f"claim-review line {line_number} {field} must be a string")
@@ -286,8 +296,123 @@ def _read_claim_reviews(path: str | Path | None) -> list[dict[str, Any]]:
     return rows
 
 
+def _read_source_snapshots(path: str | Path, query_count: int) -> tuple[list[dict[str, Any]], bytes]:
+    """Read offline UTF-8 source captures and reject detached or unsafe inputs."""
+    manifest_path = Path(path)
+    manifest_bytes = manifest_path.read_bytes()
+    if len(manifest_bytes) > MAX_SOURCE_SNAPSHOT_MANIFEST_BYTES:
+        raise ValueError("source-snapshot manifest exceeds the 1 MB limit")
+    rows: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    api_snapshot_count = 0
+    for line_number, line in enumerate(manifest_bytes.decode("utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        if len(rows) >= MAX_SNAPSHOT_SOURCES_PER_QUESTION:
+            raise ValueError("at most five source snapshots are allowed per research question")
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"source-snapshot JSON is invalid on line {line_number}") from exc
+        if not isinstance(row, dict):
+            raise ValueError(f"source-snapshot line {line_number} must be a JSON object")
+        for field in ("title", "source_url", "capture_path", "capture_kind", "captured_at_utc", "locator"):
+            if not isinstance(row.get(field), str) or not row[field].strip():
+                raise ValueError(f"source-snapshot line {line_number} requires non-empty {field}")
+        if row["capture_kind"] not in SOURCE_SNAPSHOT_KINDS:
+            raise ValueError(f"source-snapshot line {line_number} has an unsupported capture_kind")
+        source_url = row["source_url"].strip()
+        url = urlsplit(source_url)
+        if (
+            url.scheme != "https" or not url.netloc or url.username or url.password
+            or any(character.isspace() or ord(character) < 32 for character in source_url)
+            or any(character in source_url for character in "<>\\")
+        ):
+            raise ValueError(f"source-snapshot line {line_number} source_url must be an HTTPS URL without credentials")
+        normalized_url = urlunsplit((url.scheme.lower(), url.netloc.lower(), url.path.rstrip("/"), url.query, ""))
+        if normalized_url in seen_urls:
+            raise ValueError(f"source-snapshot line {line_number} duplicates a source_url")
+        seen_urls.add(normalized_url)
+        capture_rel = Path(row["capture_path"])
+        if capture_rel.is_absolute() or ".." in capture_rel.parts:
+            raise ValueError(f"source-snapshot line {line_number} capture_path must stay under the manifest directory")
+        capture_path = manifest_path.parent / capture_rel
+        try:
+            resolved_capture = capture_path.resolve(strict=True)
+        except OSError as exc:
+            raise ValueError(f"source-snapshot line {line_number} capture_path cannot be read") from exc
+        try:
+            resolved_capture.relative_to(manifest_path.parent.resolve())
+        except ValueError as exc:
+            raise ValueError(f"source-snapshot line {line_number} capture_path escapes the manifest directory") from exc
+        try:
+            if resolved_capture.stat().st_size > MAX_SOURCE_SNAPSHOT_BYTES:
+                raise ValueError(f"source-snapshot line {line_number} exceeds the 10 MB capture limit")
+        except OSError as exc:
+            raise ValueError(f"source-snapshot line {line_number} capture_path cannot be read") from exc
+        try:
+            raw = resolved_capture.read_bytes()
+        except OSError as exc:
+            raise ValueError(f"source-snapshot line {line_number} capture_path cannot be read") from exc
+        if not raw:
+            raise ValueError(f"source-snapshot line {line_number} capture is empty")
+        if len(raw) > MAX_SOURCE_SNAPSHOT_BYTES:
+            raise ValueError(f"source-snapshot line {line_number} exceeds the 10 MB capture limit")
+        try:
+            captured_text = raw.decode("utf-8")
+        except UnicodeDecodeError as exc:
+            raise ValueError(f"source-snapshot line {line_number} capture must be UTF-8") from exc
+        if row["capture_kind"] == "official_api_json":
+            api_snapshot_count += 1
+            if api_snapshot_count > 1:
+                raise ValueError("at most one official_api_json source snapshot is allowed per run")
+            try:
+                json.loads(captured_text)
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"source-snapshot line {line_number} official_api_json capture is invalid JSON") from exc
+        captured_at_utc = row["captured_at_utc"].strip()
+        try:
+            parsed_captured_at = datetime.fromisoformat(captured_at_utc.replace("Z", "+00:00"))
+        except ValueError as exc:
+            raise ValueError(f"source-snapshot line {line_number} captured_at_utc must be ISO-8601") from exc
+        offset = parsed_captured_at.utcoffset()
+        if parsed_captured_at.tzinfo is None or offset is None or offset.total_seconds() != 0:
+            raise ValueError(f"source-snapshot line {line_number} captured_at_utc must include a UTC timezone")
+        query_ids = row.get("query_ids", [])
+        if not isinstance(query_ids, list) or any(not isinstance(value, str) for value in query_ids):
+            raise ValueError(f"source-snapshot line {line_number} query_ids must be a list of strings")
+        if len(set(query_ids)) != len(query_ids):
+            raise ValueError(f"source-snapshot line {line_number} contains duplicate query_ids")
+        known_query_ids = {f"Q{index}" for index in range(1, query_count + 1)}
+        if any(value not in known_query_ids for value in query_ids):
+            raise ValueError(f"source-snapshot line {line_number} references an unknown query_id")
+        default_content_type = (
+            "application/json" if row["capture_kind"] == "official_api_json"
+            else "text/plain; charset=utf-8"
+        )
+        content_type = row.get("content_type", default_content_type)
+        if not isinstance(content_type, str) or not content_type.strip():
+            raise ValueError(f"source-snapshot line {line_number} content_type must be a non-empty string")
+        rows.append({
+            "title": re.sub(r"\s+", " ", row["title"]).strip(),
+            "source_url": source_url,
+            "capture_path": capture_rel.as_posix(),
+            "capture_kind": row["capture_kind"],
+            "captured_at_utc": captured_at_utc,
+            "locator": re.sub(r"\s+", " ", row["locator"]).strip(),
+            "query_ids": query_ids,
+            "content_type": content_type,
+            "raw_bytes": raw,
+            "captured_text": captured_text,
+        })
+    if not rows:
+        raise ValueError("source-snapshot manifest must contain at least one source")
+    return rows, manifest_bytes
+
+
 def _build_claim_review_ledger(
     reviews: list[dict[str, Any]], sources: list[dict[str, Any]],
+    evidence_text_by_source: dict[str, str] | None = None,
 ) -> tuple[list[dict[str, Any]], str]:
     source_by_id = {source["source_id"]: source for source in sources}
     ledger = []
@@ -299,7 +424,10 @@ def _build_claim_review_ledger(
             anchor_status = "UNKNOWN_SOURCE"
         elif not evidence_quote:
             anchor_status = "NOT_PROVIDED"
-        elif evidence_quote in (source.get(evidence_field) or ""):
+        elif evidence_quote in (
+            (evidence_text_by_source or {}).get(review["source_id"], "")
+            if evidence_field == "captured_text" else (source.get(evidence_field) or "")
+        ):
             anchor_status = "EXACT_MATCH"
         else:
             anchor_status = "NOT_FOUND"
@@ -315,6 +443,7 @@ def _build_claim_review_ledger(
             "source_id": review["source_id"],
             "source_title": source.get("title") if source else None,
             "source_openalex_id": source.get("openalex_id") if source else None,
+            "source_url": source.get("source_url") if source else None,
             "source_raw_evidence": source.get("raw_evidence", []) if source else [],
             "evidence_field": evidence_field,
             "evidence_quote": evidence_quote,
@@ -360,6 +489,7 @@ def _markdown_report(
     acquisition_status: str,
     claim_review_status: str,
     claim_review_count: int,
+    ingestion_mode: str = "OPENALEX_LIVE_SEARCH",
 ) -> str:
     matched = sum(row.get("metadata_match_status") == "MATCH" for row in verifications)
     mismatch = sum(row.get("metadata_match_status") == "MISMATCH" for row in verifications)
@@ -367,24 +497,37 @@ def _markdown_report(
         f"# Research report: {question}",
         "",
         f"- Run status: `{status}`",
-        f"- Source acquisition status: `{acquisition_status}`",
+        (
+            f"- Source capture import status: `{acquisition_status}`"
+            if ingestion_mode == "OFFLINE_SOURCE_SNAPSHOTS"
+            else f"- Source acquisition status: `{acquisition_status}`"
+        ),
         f"- Claim review ledger status: `{claim_review_status}` ({claim_review_count} rows)",
         f"- Sources captured: {len(sources)}",
-        f"- DOI title/year metadata matches: {matched}",
-        f"- DOI metadata mismatches: {mismatch}",
         "- Evidence ceiling: this workflow checks acquisition integrity, citation IDs, and exact excerpt anchors; it does not decide whether claims are true or supported.",
         "",
         "## Search method",
         "",
-        "Searches used OpenAlex works metadata. The query set and original response bytes are preserved in the run directory.",
+        (
+            "Query strings are recorded as arm-provided inputs; this CLI did not execute or verify those searches. "
+            "Source capture files are copied byte-for-byte into the run directory. A web_run_observation is the "
+            "saved tool observation, not the original publisher HTTP response."
+            if ingestion_mode == "OFFLINE_SOURCE_SNAPSHOTS"
+            else "Searches used OpenAlex works metadata. The query set and original response bytes are preserved in the run directory."
+        ),
     ]
+    if ingestion_mode != "OFFLINE_SOURCE_SNAPSHOTS":
+        lines[6:6] = [
+            f"- DOI title/year metadata matches: {matched}",
+            f"- DOI metadata mismatches: {mismatch}",
+        ]
     lines.extend(f"- `{query}`" for query in queries)
     lines += ["", "## Synthesis", ""]
     if status == "INVALID_DRAFT":
         lines += ["The supplied synthesis was rejected because its citation markers did not resolve to sources in this run. Details are recorded in receipt.json."]
     elif draft is not None:
         lines += [
-            "The following synthesis was supplied by the research agent. Citation IDs were checked syntactically against this run; the workflow does not judge whether each claim follows from its cited paper.",
+            "The following synthesis was supplied by the research agent. Citation IDs were checked syntactically against this run; the workflow does not judge whether each claim follows from its cited source.",
             "",
             draft.strip(),
         ]
@@ -400,48 +543,228 @@ def _markdown_report(
         lines.append("No source records were returned by the search provider.")
     for source in sources:
         title = source.get("title") or "Untitled record"
+        safe_title = _markdown_escape(str(title))
         authors = ", ".join(source.get("authors") or []) or "Author metadata unavailable"
         year = source.get("year") or "Year unavailable"
         venue = source.get("venue") or "Venue unavailable"
-        url = source.get("doi_url") or source.get("openalex_id") or ""
-        lines += [
-            f"### [{source['source_id']}] {title}",
-            "",
-            f"- Bibliography: {authors} ({year}). {venue}.",
-            f"- OpenAlex work type: {source.get('type') or 'unavailable'}; cited-by count: {source.get('cited_by_count') if source.get('cited_by_count') is not None else 'unavailable'}.",
-        ]
+        url = source.get("source_url") or source.get("doi_url") or source.get("openalex_id") or ""
+        lines += [f"### [{source['source_id']}] {safe_title}", ""]
+        if ingestion_mode == "OFFLINE_SOURCE_SNAPSHOTS":
+            evidence = (source.get("raw_evidence") or [{}])[0]
+            lines += [
+                f"- Capture kind: `{source.get('capture_kind')}`; locator: {_markdown_escape(source.get('locator') or 'not supplied')}.",
+                f"- Capture bytes: `{evidence.get('path')}`; SHA-256: `{evidence.get('capture_sha256') or evidence.get('response_sha256')}`.",
+            ]
+        else:
+            lines += [
+                f"- Bibliography: {authors} ({year}). {venue}.",
+                f"- OpenAlex work type: {source.get('type') or 'unavailable'}; cited-by count: {source.get('cited_by_count') if source.get('cited_by_count') is not None else 'unavailable'}.",
+            ]
         if url:
             lines.append(f"- Source: {url}")
         verification = next((v for v in verifications if v["source_id"] == source["source_id"]), None)
-        if verification:
+        if verification and verification.get("provider") != "OFFLINE_SOURCE_SNAPSHOT":
             lines.append(
                 f"- Crossref check: `{verification['acquisition_status']}` / `{verification['metadata_match_status']}`."
             )
-        if source.get("abstract"):
+        if ingestion_mode == "OFFLINE_SOURCE_SNAPSHOTS":
+            pass
+        elif source.get("abstract"):
             lines += ["", "> Abstract (OpenAlex metadata):", ">", *(f"> {line}" for line in source["abstract"].splitlines()), ""]
         else:
             lines.append("- Abstract: unavailable in the captured OpenAlex record.")
 
     for source in sources:
-        url = source.get("doi_url") or source.get("openalex_id")
+        url = source.get("source_url") or source.get("doi_url") or source.get("openalex_id")
         if url:
-            lines += ["", f"[{source['source_id']}]: {url}"]
+            target = f"<{url}>" if ingestion_mode == "OFFLINE_SOURCE_SNAPSHOTS" else url
+            lines += ["", f"[{source['source_id']}]: {target}"]
 
     lines += [
         "",
         "## Claim review handoff",
         "",
-        "Human review judgments and quoted excerpts are recorded in `claim-review.jsonl`. Exact excerpt matching only confirms that the quote occurs in the captured title or abstract and is linked to raw response evidence; it does not establish that the claim is true or that the excerpt semantically supports it.",
+        (
+            "Human review judgments and quoted excerpts are recorded in `claim-review.jsonl`. Exact excerpt matching "
+            "only confirms that the quote occurs in the saved capture bytes and is linked to their hash; it does not "
+            "establish that the claim is true or that the excerpt semantically supports it."
+            if ingestion_mode == "OFFLINE_SOURCE_SNAPSHOTS"
+            else "Human review judgments and quoted excerpts are recorded in `claim-review.jsonl`. Exact excerpt matching only confirms that the quote occurs in the captured title or abstract and is linked to raw response evidence; it does not establish that the claim is true or that the excerpt semantically supports it."
+        ),
     ]
 
     lines += [
         "",
         "## Limits",
         "",
-        "OpenAlex and Crossref checks cover bibliographic metadata only. They do not establish that a paper's findings are correct, that an abstract fully represents the paper, or that any synthesis claim is supported. Full-text access, study quality, causal interpretation, and independent replication require separate review.",
+        (
+            "Snapshot hashes establish the saved capture bytes used by this run, not the authenticity or completeness of "
+            "the originating web observation. The workflow does not perform semantic claim verification."
+            if ingestion_mode == "OFFLINE_SOURCE_SNAPSHOTS"
+            else "OpenAlex and Crossref checks cover bibliographic metadata only. They do not establish that a paper's findings are correct, that an abstract fully represents the paper, or that any synthesis claim is supported. Full-text access, study quality, causal interpretation, and independent replication require separate review."
+        ),
         "",
     ]
     return "\n".join(lines)
+
+
+def _run_snapshot_research(
+    *,
+    question: str,
+    queries: list[str],
+    output_dir: str | Path,
+    source_snapshots_path: str | Path,
+    max_sources: int,
+    draft_path: str | Path | None,
+    claim_reviews: list[dict[str, Any]],
+    command: list[str] | None,
+) -> dict[str, Any]:
+    """Import saved source observations without network access or search claims."""
+    snapshots, manifest_bytes = _read_source_snapshots(source_snapshots_path, len(queries))
+    if len(snapshots) > max_sources:
+        raise ValueError("source-snapshot count exceeds max_sources")
+    out = Path(output_dir)
+    if out.exists() and (not out.is_dir() or any(out.iterdir())):
+        raise FileExistsError(f"output directory must be absent or empty: {out}")
+    out.mkdir(parents=True, exist_ok=True)
+    started = utc_now()
+
+    query_source_counts = {f"Q{index}": 0 for index in range(1, len(queries) + 1)}
+    for snapshot in snapshots:
+        for query_id in snapshot["query_ids"]:
+            query_source_counts[query_id] += 1
+    query_rows = [
+        {
+            "query_id": f"Q{index}",
+            "query": query,
+            "status": "DECLARED_EXTERNALLY_NOT_VERIFIED",
+            "search_provider": "NOT_VERIFIED_BY_CLI",
+            "source_capture_count": query_source_counts[f"Q{index}"],
+            "response_capture_status": "NOT_CAPTURED_BY_CLI",
+        }
+        for index, query in enumerate(queries, 1)
+    ]
+
+    sources: list[dict[str, Any]] = []
+    evidence_text_by_source: dict[str, str] = {}
+    for index, snapshot in enumerate(snapshots, 1):
+        source_id = f"S{index}"
+        suffix = "json" if snapshot["capture_kind"] == "official_api_json" else "txt"
+        raw_path = f"raw/source-{source_id}.{suffix}"
+        _write_bytes(out / raw_path, snapshot["raw_bytes"])
+        capture_sha256 = sha256(snapshot["raw_bytes"])
+        evidence_text_by_source[source_id] = snapshot["captured_text"]
+        sources.append({
+            "source_id": source_id,
+            "provider": "OFFLINE_SOURCE_SNAPSHOT",
+            "capture_kind": snapshot["capture_kind"],
+            "source_url": snapshot["source_url"],
+            "title": snapshot["title"],
+            "locator": snapshot["locator"],
+            "content_type": snapshot["content_type"],
+            "captured_at_utc": snapshot["captured_at_utc"],
+            "query_ids": snapshot["query_ids"],
+            "capture_sha256": capture_sha256,
+            "capture_bytes": len(snapshot["raw_bytes"]),
+            "raw_evidence": [{
+                "path": raw_path,
+                "capture_sha256": capture_sha256,
+                "capture_kind": snapshot["capture_kind"],
+                "manifest_capture_path": snapshot["capture_path"],
+                "query_ids": snapshot["query_ids"],
+            }],
+        })
+
+    claim_ledger, claim_review_status = _build_claim_review_ledger(
+        claim_reviews, sources, evidence_text_by_source=evidence_text_by_source,
+    )
+    draft = Path(draft_path).read_text(encoding="utf-8") if draft_path else None
+    draft_error = None
+    if draft is not None:
+        try:
+            _validate_draft(draft, {source["source_id"] for source in sources})
+        except ValueError as exc:
+            draft_error = str(exc)
+            draft = None
+
+    verifications = [{
+        "source_id": source["source_id"],
+        "provider": "OFFLINE_SOURCE_SNAPSHOT",
+        "acquisition_status": "IMPORTED",
+        "metadata_match_status": "NOT_APPLICABLE",
+        "capture_sha256": source["capture_sha256"],
+        "source_url": source["source_url"],
+    } for source in sources]
+    _write_jsonl(out / "query-manifest.jsonl", query_rows)
+    _write_jsonl(out / "sources.jsonl", sources)
+    _write_jsonl(out / "verification.jsonl", verifications)
+    _write_jsonl(out / "claim-review.jsonl", claim_ledger)
+
+    acquisition_status = "IMPORTED"
+    status = "INVALID_DRAFT" if draft_error else "COMPLETED"
+    report = _markdown_report(
+        question, queries, sources, verifications, draft, status,
+        acquisition_status, claim_review_status, len(claim_ledger),
+        ingestion_mode="OFFLINE_SOURCE_SNAPSHOTS",
+    )
+    _write_bytes(out / "report.md", report.encode("utf-8"))
+    artifact_paths = sorted(
+        path for path in out.rglob("*") if path.is_file() and path.name != "receipt.json"
+    )
+    receipt = {
+        "workflow": "ignition-research-workflow-r1",
+        "ingestion_mode": "OFFLINE_SOURCE_SNAPSHOTS",
+        "query_execution_status": "NOT_VERIFIED_BY_CLI",
+        "status": status,
+        "acquisition_status": acquisition_status,
+        "claim_review_status": claim_review_status,
+        "claim_ceiling": "capture_integrity_and_human_review_handoff; no_search_verification_or_semantic_claim_verification",
+        "question": question,
+        "queries": queries,
+        "source_snapshot_manifest_sha256": sha256(manifest_bytes),
+        "started_at_utc": started,
+        "finished_at_utc": utc_now(),
+        "runtime": {"python": platform.python_version(), "platform": platform.platform()},
+        "budget": {
+            "query_count": len(queries),
+            "max_sources": max_sources,
+            "direct_api_cost_usd": 0,
+            "network_requests_by_cli": 0,
+        },
+        "counts": {
+            "query_ok": 0,
+            "query_error": 0,
+            "queries_declared": len(query_rows),
+            "sources_captured": len(sources),
+            "claim_review_rows": len(claim_ledger),
+            "claim_review_anchored": sum(row["row_status"] == "REVIEWED_AND_ANCHORED" for row in claim_ledger),
+            "claim_review_unanchored": sum(row["evidence_anchor_status"] in {"UNKNOWN_SOURCE", "NOT_FOUND"} for row in claim_ledger),
+            "crossref_matches": 0,
+            "crossref_mismatches": 0,
+            "crossref_unresolved": 0,
+        },
+        "draft_mode": (
+            "rejected_agent_authored_synthesis" if draft_error
+            else "agent_authored_citations_syntax_checked" if draft is not None
+            else "evidence_brief_only"
+        ),
+        "draft_error": draft_error,
+        "command": _redact_command(command or []),
+        "mailto_configured": False,
+        "artifacts": [
+            {"path": path.relative_to(out).as_posix(), "sha256": sha256(path.read_bytes()), "bytes": path.stat().st_size}
+            for path in artifact_paths
+        ],
+        "limitations": [
+            "The CLI imports source captures and does not execute or verify the listed search queries.",
+            "web_run_observation is the saved tool observation, not the publisher's original HTTP response.",
+            "Source URL, title, locator, capture timestamp, and query associations are caller-supplied manifest metadata.",
+            "Capture hashes prove which saved bytes were used, not the authenticity or completeness of their origin.",
+            "Claim-review judgments are human-supplied and self-reported; exact quote anchoring is not semantic support verification.",
+        ],
+    }
+    _write_bytes(out / "receipt.json", _json_bytes(receipt))
+    return receipt
 
 
 def run_research(
@@ -453,6 +776,7 @@ def run_research(
     mailto: str = openalex_client.DEFAULT_MAILTO,
     draft_path: str | Path | None = None,
     claim_review_path: str | Path | None = None,
+    source_snapshots_path: str | Path | None = None,
     searcher: Callable[..., dict[str, Any]] | None = None,
     crossref_fetch: Callable[[str], dict[str, Any]] | None = None,
     command: list[str] | None = None,
@@ -474,6 +798,18 @@ def run_research(
     if not 1 <= max_sources <= MAX_SOURCES:
         raise ValueError(f"max_sources must be between 1 and {MAX_SOURCES}")
     claim_reviews = _read_claim_reviews(claim_review_path)
+
+    if source_snapshots_path is not None:
+        return _run_snapshot_research(
+            question=question,
+            queries=queries,
+            output_dir=output_dir,
+            source_snapshots_path=source_snapshots_path,
+            max_sources=max_sources,
+            draft_path=draft_path,
+            claim_reviews=claim_reviews,
+            command=command,
+        )
 
     out = Path(output_dir)
     if out.exists() and (not out.is_dir() or any(out.iterdir())):
@@ -647,12 +983,13 @@ def run_research(
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--question", required=True, help="Owner/research question")
-    parser.add_argument("--query", action="append", required=True, help="OpenAlex query; repeat up to 12 times")
+    parser.add_argument("--query", action="append", required=True, help="recorded query; repeat up to 12 times")
     parser.add_argument("--output-dir", required=True, help="new or empty run directory")
     parser.add_argument("--max-sources", type=int, default=12, help=f"number of records to retain (1-{MAX_SOURCES})")
     parser.add_argument("--mailto", default=openalex_client.DEFAULT_MAILTO, help="OpenAlex polite-pool contact")
     parser.add_argument("--draft", help="optional UTF-8 Markdown synthesis that cites captured IDs such as [S1]")
     parser.add_argument("--claim-reviews", help="optional JSONL human claim-to-source review rows")
+    parser.add_argument("--source-snapshots", help="offline JSONL manifest for saved source capture files")
     args = parser.parse_args(argv)
     try:
         receipt = run_research(
@@ -663,6 +1000,7 @@ def main(argv: list[str] | None = None) -> int:
             mailto=args.mailto,
             draft_path=args.draft,
             claim_review_path=args.claim_reviews,
+            source_snapshots_path=args.source_snapshots,
             command=sys.argv,
         )
     except (ValueError, FileExistsError, OSError) as exc:
