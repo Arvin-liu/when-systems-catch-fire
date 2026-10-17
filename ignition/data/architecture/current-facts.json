@@ -117,10 +117,10 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6151,
-      "function_quarantine_or_pending": 4999,
-      "nonfunction_claims": 17966,
-      "nonfunction_quarantine_or_pending": 4993
+      "function_identity_cards": 6142,
+      "function_quarantine_or_pending": 4996,
+      "nonfunction_claims": 17957,
+      "nonfunction_quarantine_or_pending": 4985
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -237,11 +237,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "f30f1908774031a683546d9528e768bd350527c6e4183d135c7889b9bd5d5747"
+      "sha256": "da69a398f83d051ad52eb4298f915403493fa37692995c8536e5481085b12960"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "6e6bfabb9ebf73e0a5a66d636b7fc9434220a2f3c77f897e1fe7800e72772ddc"
+      "sha256": "64f466f84e714ceed19c2dfcba5e07536126311f8391c5708305ff4b0594fd7d"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
