@@ -3343,6 +3343,13 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "ignition/requirements-foundation.txt"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "ignition/requirements-q33.txt"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/research_workflow/README.md"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/research_workflow/SLOT.md"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/research_workflow/__init__.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/research_workflow/cli.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/research_workflow/slot.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/research_workflow/test_pluggable_slot.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/research_workflow/test_research_workflow.py"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/README.md"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/agent-federation/build-vs-integrate-policy-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/agent-federation/executor-component-ownership-r1.schema.json"}
