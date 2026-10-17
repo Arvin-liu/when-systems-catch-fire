@@ -246,12 +246,13 @@ def _validate_draft(draft: str, source_ids: set[str]) -> None:
         raise ValueError(f"draft cites unknown source IDs: {', '.join(unknown)}")
 
 
-def _read_claim_reviews(path: str | Path | None) -> list[dict[str, Any]]:
+def _read_claim_reviews(path: str | Path | bytes | None) -> list[dict[str, Any]]:
     if path is None:
         return []
     rows = []
     seen_claim_sources = set()
-    for line_number, line in enumerate(Path(path).read_text(encoding="utf-8").splitlines(), 1):
+    raw_text = path.decode("utf-8") if isinstance(path, bytes) else Path(path).read_text(encoding="utf-8")
+    for line_number, line in enumerate(raw_text.splitlines(), 1):
         if not line.strip():
             continue
         try:
@@ -479,6 +480,23 @@ def _acquisition_status(query_rows: list[dict[str, Any]], sources: list[dict[str
     return "COMPLETED"
 
 
+def _overall_run_status(
+    acquisition_status: str,
+    claim_review_status: str,
+    draft_error: str | None,
+) -> str:
+    """Keep acquisition success distinct from citation-review completion."""
+    if draft_error:
+        return "INVALID_DRAFT"
+    if acquisition_status in {"FAILED", "PARTIAL", "INVALID_RESPONSE", "NETWORK_ERROR", "RESOLUTION_FAILED"}:
+        return acquisition_status
+    if claim_review_status == "FAILED":
+        return "CLAIM_REVIEW_FAILED"
+    if claim_review_status == "PARTIAL":
+        return "CLAIM_REVIEW_INCOMPLETE"
+    return "COMPLETED" if acquisition_status in {"COMPLETED", "IMPORTED", "NORMALIZED_RECORDS_RECEIVED"} else acquisition_status
+
+
 def _markdown_report(
     question: str,
     queries: list[str],
@@ -701,7 +719,7 @@ def _run_snapshot_research(
     _write_jsonl(out / "claim-review.jsonl", claim_ledger)
 
     acquisition_status = "IMPORTED"
-    status = "INVALID_DRAFT" if draft_error else "COMPLETED"
+    status = _overall_run_status(acquisition_status, claim_review_status, draft_error)
     report = _markdown_report(
         question, queries, sources, verifications, draft, status,
         acquisition_status, claim_review_status, len(claim_ledger),
@@ -923,7 +941,7 @@ def run_research(
     _write_jsonl(out / "claim-review.jsonl", claim_ledger)
 
     acquisition_status = _acquisition_status(query_rows, sources)
-    status = "INVALID_DRAFT" if draft_error else acquisition_status
+    status = _overall_run_status(acquisition_status, claim_review_status, draft_error)
     report = _markdown_report(
         question, queries, sources, verifications, draft, status,
         acquisition_status, claim_review_status, len(claim_ledger),

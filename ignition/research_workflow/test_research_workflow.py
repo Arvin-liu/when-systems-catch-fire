@@ -331,7 +331,7 @@ class ResearchWorkflowTests(unittest.TestCase):
                 crossref_fetch=lambda doi: crossref_response(),
             )
             ledger = json.loads((root / "run/claim-review.jsonl").read_text().splitlines()[0])
-        self.assertEqual(receipt["status"], "COMPLETED")
+        self.assertEqual(receipt["status"], "CLAIM_REVIEW_FAILED")
         self.assertEqual(receipt["claim_review_status"], "FAILED")
         self.assertEqual(ledger["evidence_anchor_status"], "NOT_FOUND")
         self.assertEqual(ledger["review_judgment"], "SUPPORTS")
@@ -350,6 +350,7 @@ class ResearchWorkflowTests(unittest.TestCase):
             )
             ledger = json.loads((root / "run/claim-review.jsonl").read_text().splitlines()[0])
         self.assertEqual(receipt["claim_review_status"], "FAILED")
+        self.assertEqual(receipt["status"], "CLAIM_REVIEW_FAILED")
         self.assertEqual(ledger["evidence_anchor_status"], "UNKNOWN_SOURCE")
         self.assertEqual(ledger["source_raw_evidence"], [])
 
@@ -364,6 +365,36 @@ class ResearchWorkflowTests(unittest.TestCase):
             self.assertEqual((root / "run/claim-review.jsonl").read_text(), "")
         self.assertEqual(receipt["claim_review_status"], "NOT_VALIDATED")
         self.assertEqual(receipt["counts"]["claim_review_rows"], 0)
+
+    def test_snapshot_claim_review_failure_does_not_report_completed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "capture.txt").write_text("The verified abstract text.", encoding="utf-8")
+            manifest = root / "sources.jsonl"
+            manifest.write_text(json.dumps({
+                "title": "Frozen abstract",
+                "source_url": "https://example.org/article",
+                "capture_path": "capture.txt",
+                "capture_kind": "web_run_observation",
+                "captured_at_utc": "2026-10-17T00:00:00Z",
+                "locator": "Abstract, results",
+                "query_ids": ["Q1"],
+            }) + "\n", encoding="utf-8")
+            claim = {
+                "claim_id": "C-1", "claim_text": "A claim", "source_id": "S1",
+                "review_judgment": "SUPPORTS", "reviewer_type": "HUMAN",
+                "reviewer": "reviewer-1", "reviewed_at_utc": "2026-10-17T00:00:00Z",
+                "evidence_field": "captured_text", "evidence_quote": "not present",
+            }
+            claims = root / "claims.jsonl"
+            claims.write_text(json.dumps(claim) + "\n", encoding="utf-8")
+            receipt = run_research(
+                question="Question", queries=["frozen query"], output_dir=root / "run",
+                source_snapshots_path=manifest, claim_review_path=claims,
+            )
+        self.assertEqual(receipt["acquisition_status"], "IMPORTED")
+        self.assertEqual(receipt["claim_review_status"], "FAILED")
+        self.assertEqual(receipt["status"], "CLAIM_REVIEW_FAILED")
 
     def test_claim_review_invalid_human_record_is_rejected_before_output(self):
         review = {"claim_id": "C-1", "claim_text": "A claim", "source_id": "S1", "review_judgment": "SUPPORTS"}
@@ -400,7 +431,7 @@ class ResearchWorkflowTests(unittest.TestCase):
         cases = [
             ({"status": "COMPLETED", "acquisition_status": "COMPLETED", "claim_review_status": "NOT_VALIDATED", "counts": {"sources_captured": 1}}, 0),
             ({"status": "PARTIAL", "acquisition_status": "PARTIAL", "claim_review_status": "NOT_VALIDATED", "counts": {"sources_captured": 1}}, 2),
-            ({"status": "COMPLETED", "acquisition_status": "COMPLETED", "claim_review_status": "FAILED", "counts": {"sources_captured": 1}}, 2),
+            ({"status": "CLAIM_REVIEW_FAILED", "acquisition_status": "COMPLETED", "claim_review_status": "FAILED", "counts": {"sources_captured": 1}}, 2),
         ]
         for receipt, expected in cases:
             with self.subTest(receipt=receipt), patch.object(cli, "run_research", return_value=receipt), redirect_stdout(io.StringIO()):

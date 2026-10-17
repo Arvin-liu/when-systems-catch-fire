@@ -95,3 +95,8 @@ In a human claim-review row, use `"evidence_field":"captured_text"` to check
 that the quoted excerpt appears exactly in the saved capture bytes. An exact
 match only confirms an anchor; it does not determine whether the excerpt
 supports the claim. The source note and receipt keep this limitation explicit.
+
+
+## Fixed source-binding slot
+
+The first pluggable source-binding slot fixes one adapter for each run and feeds normalized legacy records or saved source snapshots into the same downstream consumer. See [SLOT.md](SLOT.md) for the interface, run receipt, and next-run rollback behavior.
