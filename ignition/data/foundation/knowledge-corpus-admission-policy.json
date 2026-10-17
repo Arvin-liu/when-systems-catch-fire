@@ -42,9 +42,12 @@
         "schemas/",
         "tests/",
         "tools/",
-        ".github/workflows/"
+        ".github/workflows/",
+        "research_workflow/"
       ],
-      "exact_paths": []
+      "exact_paths": [
+        "scripts/external-research/openalex_client.py"
+      ]
     },
     {
       "classification": "GENERATED_PROJECTION_EXCLUDED",
@@ -57,7 +60,8 @@
         "data/operations/durability/",
         "KNOWLEDGE/",
         "docs/human/",
-        "data/operations/iterations/121/"
+        "data/operations/iterations/121/",
+        "data/foundation/repository-path-classification/"
       ],
       "exact_paths": [
         "data/foundation/knowledge-corpus-admission-policy.json",
