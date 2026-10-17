@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [仅凭表面相似就判定同构；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d1410beba2af6d4b / 仅凭表面相似就判定同构；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [从"跨域同构"进化为"证据制度约束下的跨域同构"；](../../../docs/v0.2_summary.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-44c956761e2391e2 / 从"跨域同构"进化为"证据制度约束下的跨域同构"；
-  - 来源：`docs/v0.2_summary.md`
-  - 依赖：—；被引用：—
-- [仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见](../../ASSET-CARDS.md#asset-nfc-ef9727c199e45632)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef9727c199e45632 / 仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见 / 仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见
-  - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
 - [价值宪章/元协议仅作投影与规范边界检查，不作经验事实来源。](../../../docs/material-collision-validation-and-classification.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-179ec35345d321de / 价值宪章/元协议仅作投影与规范边界检查，不作经验事实来源。
