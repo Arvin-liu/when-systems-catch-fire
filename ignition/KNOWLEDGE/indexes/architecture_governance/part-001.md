@@ -34,26 +34,6 @@
   - 可搜索名称：NFC-e7ca016bd29a7763 / """Return an operational disposition without inferring truth."""
   - 来源：`reos_vnext/kernel.py`
   - 依赖：—；被引用：—
-- ["""批量验证 DOI 列表，返回每条 DOI 的 OpenAlex 状态。](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-28cb03fba3f21fc8 / """批量验证 DOI 列表，返回每条 DOI 的 OpenAlex 状态。
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- ["""检查文献是否被撤稿。](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-eb2b6fd46659fa61 / """检查文献是否被撤稿。
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- ["""通过 DOI 直接获取单篇文献信息。](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a6cd861b8939a919 / """通过 DOI 直接获取单篇文献信息。
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- ["""通过 OpenAlex ID \(W开头\) 获取单篇文献。](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f737a3e533b7a597 / """通过 OpenAlex ID \(W开头\) 获取单篇文献。
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
 - ["AI 泛化能力是由数据、模型、架构等多重因素共同促成"（这是 AI 界和计算机科学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-30bf85d4e55c80b6 / "AI 泛化能力是由数据、模型、架构等多重因素共同促成"（这是 AI 界和计算机科学界的共识，点火框架只是重述）
@@ -1103,11 +1083,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a13f20d63522883f / === CHECK 9: Fulltext evidence cards have required fields ===
   - 来源：`data/external-research/106-105-correction/106-validator.py`
-  - 依赖：—；被引用：—
-- [=== 批量 DOI 验证 ===](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ea882c5020912db8 / === 批量 DOI 验证 ===
-  - 来源：`scripts/external-research/openalex_client.py`
   - 依赖：—；被引用：—
 - [\["evidence-regime"\]](../../../data/publication_risk_rules.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2503,4 +2478,29 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3e436859091f4829 / _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
   - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [_strings\(results, f"{item_path}.result_artifact_ids", issues\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5def4e4dd74b6776 / _strings\(results, f"{item_path}.result_artifact_ids", issues\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [_validate_evidence\(case.get\("evidence_requests"\), obligation_ids, artifact_ids, "$.case.evidence_requests", issues\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fc59aede4e195a6a / _validate_evidence\(case.get\("evidence_requests"\), obligation_ids, artifact_ids, "$.case.evidence_requests", issues\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [_本协议保证 088 不污染 Ψ₀ 最小必要结构。_](../../../data/external-research/093-scope-guard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-253685174c0bba56 / _本协议保证 088 不污染 Ψ₀ 最小必要结构。_
+  - 来源：`data/external-research/093-scope-guard.md`
+  - 依赖：—；被引用：—
+- [`--all --prune`; its verified `origin/main`, remote `refs/heads/main`, and the](../../../reports/operations/ignition-138-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3f6a2dfdd162dc9a / `--all --prune`; its verified `origin/main`, remote `refs/heads/main`, and the
+  - 来源：`reports/operations/ignition-138-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [`0.2.0` 将上位方法修订并命名为“之元写作法”，以心智层级跃迁为内部生成内核。肉身锚定是可选生成／回返模式，跨域同构叙事是一种应用类型，高维压缩结尾是一种可选收束。旧候选从未被接受、合并或成为当前能力；其错误与纠正保留在 Git 历史](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-69c6f41c5ff4a316 / `0.2.0` 将上位方法修订并命名为“之元写作法”，以心智层级跃迁为内部生成内核。肉身锚定是可选生成／回返模式，跨域同构叙事是一种应用类型，高维压缩结尾是一种可选收束。旧候选从未被接受、合并或成为当前能力；其错误与纠正保留在 Git 历史
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—

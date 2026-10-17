@@ -2124,16 +2124,6 @@
   - 可搜索名称：NFC-8a6dad0800f1b0cd / lifecycle: Current. Its snapshot record \(`data/operations/stage-snapshots.json` and deterministic repository Markdown pr
   - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
-- [lim = DEFAULT_LIMIT](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C899902DEBE8B7D8 / lim = DEFAULT_LIMIT / IMPLICIT-C899902DEBE8B7D8
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- [lim = int\(positional\[1\]\)](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D947F0580A768333 / lim = int\(positional\[1\]\) / IMPLICIT-D947F0580A768333
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
 - [lim=5](../../../scripts/external-research/anysearch_client.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C43CFB9D8B43B227 / lim=5 / IMPLICIT-C43CFB9D8B43B227
@@ -2503,4 +2493,14 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-cd12af4876604de8 / O₇\(x,y\) := 乘法归零跨域同构**
   - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [O₉\(x,y\) := D179-space\(空间尺度同构\)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d3752f6689d085cd / O₉\(x,y\) := D179-space\(空间尺度同构\)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D179；被引用：—
+- [P1 机器可读化抽取可行性审计](../../ASSET-CARDS.md#asset-hr-850e9cc7f0805b92)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：P1 机器可读化抽取可行性审计 / p1-extraction-feasibility-audit-20260707
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
   - 依赖：—；被引用：—
