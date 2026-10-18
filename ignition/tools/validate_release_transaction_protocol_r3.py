@@ -33,7 +33,7 @@ OWNER_AUTHORIZATION_REPOSITORY = "Arvin-liu/1111"
 OWNER_AUTHORIZATION_PATH = "instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json"
 TRANSITION_WITNESS_PATH = "reports/operations/IGNITION-2026-10-18-R3-PUBLISHED-AND-VERIFIED-R0.json"
 PUBLIC_REPOSITORY = "Arvin-liu/when-systems-catch-fire"
-CANONICAL_SUITE_WINDOW_SECONDS = 14400
+R2_CANONICAL_SUITE_MINIMUM_SECONDS = 14400
 
 
 def load_json(path: Path) -> Any:
@@ -64,13 +64,22 @@ def validate_contract(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("R3 must preserve the exact R2 required-gate set and order")
     preserved_suite = preserved["canonical_full_suite"]
     r2_suite = r2_gates["canonical_full_suite"]
-    for field in ("required_runs", "minimum_natural_window_seconds", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"):
+    for field in ("required_runs", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"):
         if preserved_suite.get(field) != r2_suite.get(field):
             errors.append(f"R3 must preserve the R2 canonical full-suite gate value for {field}")
             break
-    window = protocol["canonical_suite_window"]
-    if window["configured_window_seconds"] != r2_suite["minimum_natural_window_seconds"]:
-        errors.append("R3 natural-completion window must retain the exact configured R2 window value")
+    duration_policy = protocol["canonical_suite_duration_policy"]
+    exception = duration_policy["r2_duration_exception"]
+    if exception["r2_minimum_natural_window_seconds"] != r2_suite["minimum_natural_window_seconds"]:
+        errors.append("R3 must identify the unchanged R2 duration clause being explicitly excepted")
+    if exception["r2_minimum_natural_window_seconds"] != R2_CANONICAL_SUITE_MINIMUM_SECONDS:
+        errors.append("R2 historical minimum natural window must remain 14,400 seconds")
+    if exception["r3_candidate_duration_threshold"] != "NONE" or not exception["explicit_owner_approval_required"]:
+        errors.append("R3 duration exception must have no elapsed-time threshold and require explicit Owner approval")
+    if duration_policy["elapsed_duration_semantics"] != "OBSERVED_NATURAL_ELAPSED_SECONDS_ONLY":
+        errors.append("R3 must record natural elapsed duration as an observed value only")
+    if not duration_policy["natural_process_exit_required"] or not duration_policy["watchdog_termination_fails"]:
+        errors.append("R3 must require successful natural process exit and fail watchdog termination")
     if protocol["effective_policy_before_activation"] != r2["contract_id"]:
         errors.append("R2 remains current until a matching independent transition receipt is verified")
     if protocol["status"] != "CANDIDATE_NOT_EFFECTIVE":
@@ -644,8 +653,6 @@ def _suite_receipt_errors(receipt: dict[str, Any], *, canonical_identity: dict[s
         errors.append("full-suite test count is not from the bound current run")
     if receipt["environment_sha256"] != expected.get("environment_sha256"):
         errors.append("full-suite environment digest differs from the recorded run environment")
-    if receipt["window_seconds"] != CANONICAL_SUITE_WINDOW_SECONDS or receipt["duration_seconds"] > receipt["window_seconds"]:
-        errors.append("canonical full-suite duration exceeds its 14,400-second watchdog window")
     started = datetime.fromisoformat(receipt["started_at"].replace("Z", "+00:00"))
     finished = datetime.fromisoformat(receipt["finished_at"].replace("Z", "+00:00"))
     elapsed = (finished - started).total_seconds()

@@ -108,7 +108,7 @@ CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收�
 
 `data/operations/release-transaction-protocol-r3.json` 与其 schema 定义 R3 候选。R2 保持 Current，直到独立 `1111` 回执绑定一次过渡批准、已合并 PR 和实际最终 `main` SHA，并完成新鲜 checkout 与该 SHA 上的 post-publication 验证。
 
-- R2 保留的两次 canonical full-suite 仍是硬门。`minimum_natural_window_seconds=14400` 在 R3 的执行语义中是 watchdog 时间预算上限；测试进程可以自然提前成功退出。自然完成、零失败/错误/跳过、运行前后工作树干净、精确候选 SHA 和未使用 watchdog 仍全部必需；到达窗口并被 watchdog 杀死则失败。
+- R2 保留两次 canonical full-suite、零失败/错误/跳过、运行前后工作树干净和精确候选 SHA 等实质门。R2 当前仍将 `minimum_natural_window_seconds=14400` 作为有效规则；R3 候选把自然运行时长只作为真实起止时间的观测值，不设最低或最高时长门，也不要求等待。只有一次性 Owner 转换记录明确填写 `r2_duration_policy_exception=R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3` 后，才可在 R3 激活时移除 R2 的该数值条款。自然成功退出且零失败/错误/跳过、运行前后工作树干净、精确候选 SHA 和未使用 watchdog 仍全部必需；任何 watchdog/超时杀死都失败。
 - `pull_request` 的 GitHub check run 关联 PR head SHA；Actions 作业日志显示 checkout 使用本地远端跟踪 ref `refs/remotes/pull/{number}/merge` 与合成 merge SHA（对应 GitHub PR merge preview）。分别记录 check-run head、PR base/head、workflow run 与日志中的实际 checkout ref/SHA；不要求另造一套候选 SHA 或 merge-preview check。任一 base、head 或 preview 变化都会使旧 admission 证据失效。
 - Owner 的一次性 R2→R3 制度批准保存在固定 `1111` commit 的专用授权文件中，并通过现有 GitHub OAuth 读回。授权必须由已认证 Owner 写入且精确绑定 PR、候选 head、base、R3 blob、范围与时间；校验同时要求当前 OAuth Owner ID、两个仓库的实际 Owner ID、固定 commit 的 GitHub author/committer ID 与记录内容一致，不能只信 JSON 中的 Owner ID。此记录不是 GitHub code review；只有当前分支保护规则要求 review 时才另行取得 review，且 PR 作者不能批准自己的 PR。
 - 逐项读取并保存 GitHub 实际 main 保护规则。未设置 required review/status checks、管理员 enforcement 关闭或读取返回 403，都必须按实际值记录或保持未验证；候选不得静默追加仓库规则，也不得把不可读说成已验证。

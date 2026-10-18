@@ -10,7 +10,7 @@
     "effective_policy_before_activation", "activation", "preserved_hard_gates",
     "identity_binding", "source_evidence_fields", "prepublication", "merge_method",
     "postpublication", "independent_witness", "failure_states", "claim_ceiling",
-    "canonical_suite_window"
+    "canonical_suite_duration_policy"
   ],
   "properties": {
     "schema_version": {"const": "release-transaction-protocol-r3"},
@@ -38,7 +38,7 @@
       "items": {"enum": ["MERGED_PENDING_POSTPUBLICATION_VALIDATION", "PUBLISHED_UNVERIFIED", "RELEASE_CLOSURE_BLOCKED"]}
     },
     "claim_ceiling": {"type": "string", "minLength": 1},
-    "canonical_suite_window": {"$ref": "#/$defs/canonicalSuiteWindow"}
+    "canonical_suite_duration_policy": {"$ref": "#/$defs/canonicalSuiteDurationPolicy"}
   },
   "$defs": {
     "activation": {
@@ -70,10 +70,9 @@
     },
     "canonicalFullSuite": {
       "type": "object", "additionalProperties": false,
-      "required": ["required_runs", "minimum_natural_window_seconds", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"],
+      "required": ["required_runs", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"],
       "properties": {
         "required_runs": {"const": 2},
-        "minimum_natural_window_seconds": {"const": 14400},
         "zero_failures_errors_skips": {"const": true},
         "clean_before_after": {"const": true},
         "exact_candidate_sha": {"const": true},
@@ -156,16 +155,26 @@
     },
     "sha1": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
     "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-    "canonicalSuiteWindow": {
+    "canonicalSuiteDurationPolicy": {
       "type": "object", "additionalProperties": false,
-      "required": ["configured_window_seconds", "elapsed_duration_semantics", "natural_early_completion_allowed", "natural_process_exit_required", "watchdog_termination_fails", "preserved_r2_gate_value_source"],
+      "required": ["elapsed_duration_semantics", "natural_process_exit_required", "watchdog_termination_fails", "r2_duration_exception"],
       "properties": {
-        "configured_window_seconds": {"const": 14400},
-        "elapsed_duration_semantics": {"const": "MAXIMUM_TIME_BUDGET_BEFORE_WATCHDOG"},
-        "natural_early_completion_allowed": {"const": true},
+        "elapsed_duration_semantics": {"const": "OBSERVED_NATURAL_ELAPSED_SECONDS_ONLY"},
         "natural_process_exit_required": {"const": true},
         "watchdog_termination_fails": {"const": true},
-        "preserved_r2_gate_value_source": {"const": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/minimum_natural_window_seconds"}
+        "r2_duration_exception": {
+          "type": "object", "additionalProperties": false,
+          "required": ["source", "r2_minimum_natural_window_seconds", "r2_remains_effective_before_activation", "r3_candidate_duration_threshold", "explicit_owner_approval_required", "owner_authorization_field", "owner_authorization_value"],
+          "properties": {
+            "source": {"const": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/minimum_natural_window_seconds"},
+            "r2_minimum_natural_window_seconds": {"const": 14400},
+            "r2_remains_effective_before_activation": {"const": true},
+            "r3_candidate_duration_threshold": {"const": "NONE"},
+            "explicit_owner_approval_required": {"const": true},
+            "owner_authorization_field": {"const": "r2_duration_policy_exception"},
+            "owner_authorization_value": {"const": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"}
+          }
+        }
       }
     },
     "check": {
@@ -233,7 +242,7 @@
     },
     "ownerAuthorization": {
       "type": "object", "additionalProperties": false,
-      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "authorization_repository", "authorization_path", "authorization_commit_sha", "authorization_committed_at", "authorization_file_sha256", "approved_at"],
+      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "r2_duration_policy_exception", "authorization_repository", "authorization_path", "authorization_commit_sha", "authorization_committed_at", "authorization_file_sha256", "approved_at"],
       "properties": {
         "approved": {"const": true},
         "owner_actor_id": {"type": "integer", "minimum": 1},
@@ -242,6 +251,7 @@
         "approved_base_sha": {"$ref": "#/$defs/sha1"},
         "r3_protocol_blob_sha": {"$ref": "#/$defs/sha1"},
         "scope": {"const": "ONE_TIME_R3_BOOTSTRAP_ONLY"},
+        "r2_duration_policy_exception": {"const": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"},
         "authorization_repository": {"const": "Arvin-liu/1111"},
         "authorization_path": {"const": "instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json"},
         "authorization_commit_sha": {"$ref": "#/$defs/sha1"},
@@ -252,7 +262,7 @@
     },
     "ownerAuthorizationStatement": {
       "type": "object", "additionalProperties": false,
-      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "approved_at"],
+      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "r2_duration_policy_exception", "approved_at"],
       "properties": {
         "approved": {"const": true},
         "owner_actor_id": {"type": "integer", "minimum": 1},
@@ -261,12 +271,13 @@
         "approved_base_sha": {"$ref": "#/$defs/sha1"},
         "r3_protocol_blob_sha": {"$ref": "#/$defs/sha1"},
         "scope": {"const": "ONE_TIME_R3_BOOTSTRAP_ONLY"},
+        "r2_duration_policy_exception": {"const": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"},
         "approved_at": {"type": "string", "format": "date-time"}
       }
     },
     "suiteReceipt": {
       "type": "object", "additionalProperties": false,
-      "required": ["run_id", "task_id", "task_branch", "sha", "inventory_sha256", "test_count", "environment_sha256", "window_seconds", "duration_seconds", "started_at", "finished_at", "process_exit_code", "termination_reason", "failures", "errors", "skips", "clean_before", "clean_after", "watchdog_used", "conclusion", "source_url"],
+      "required": ["run_id", "task_id", "task_branch", "sha", "inventory_sha256", "test_count", "environment_sha256", "duration_seconds", "started_at", "finished_at", "process_exit_code", "termination_reason", "failures", "errors", "skips", "clean_before", "clean_after", "watchdog_used", "conclusion", "source_url"],
       "properties": {
         "run_id": {"type": "string", "minLength": 1},
         "task_id": {"type": "string", "minLength": 1},
@@ -275,8 +286,7 @@
         "inventory_sha256": {"$ref": "#/$defs/sha256"},
         "test_count": {"type": "integer", "minimum": 1},
         "environment_sha256": {"$ref": "#/$defs/sha256"},
-        "duration_seconds": {"type": "integer", "minimum": 0, "maximum": 14400},
-        "window_seconds": {"const": 14400},
+        "duration_seconds": {"type": "number", "minimum": 0},
         "started_at": {"type": "string", "format": "date-time"},
         "finished_at": {"type": "string", "format": "date-time"},
         "process_exit_code": {"const": 0},

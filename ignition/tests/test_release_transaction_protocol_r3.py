@@ -3,12 +3,11 @@ from __future__ import annotations
 import base64
 import hashlib
 import json
-import math
 import subprocess
 import sys
 import time
 import unittest
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 
 from tools import validate_release_transaction_protocol as r2
@@ -33,7 +32,7 @@ def _suite(run_id: str, task_id: str, branch: str, sha: str) -> dict[str, object
     return {
         "run_id": run_id, "task_id": task_id, "task_branch": branch, "sha": sha,
         "inventory_sha256": "1" * 64, "test_count": 3, "environment_sha256": "2" * 64,
-        "window_seconds": 14400, "duration_seconds": math.ceil(elapsed),
+        "duration_seconds": round(elapsed, 3),
         "started_at": started_at.isoformat().replace("+00:00", "Z"),
         "finished_at": finished_at.isoformat().replace("+00:00", "Z"),
         "process_exit_code": result.returncode, "termination_reason": "NATURAL_PROCESS_EXIT",
@@ -51,7 +50,9 @@ def _owner_statement(
         "approved": True, "owner_actor_id": actor_id, "approved_pr_number": pr_number,
         "approved_head_sha": head_sha, "approved_base_sha": base_sha,
         "r3_protocol_blob_sha": protocol_blob_sha or r3.git_blob_sha(),
-        "scope": "ONE_TIME_R3_BOOTSTRAP_ONLY", "approved_at": "2026-10-18T05:30:00Z",
+        "scope": "ONE_TIME_R3_BOOTSTRAP_ONLY",
+        "r2_duration_policy_exception": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3",
+        "approved_at": "2026-10-18T05:30:00Z",
     }
 
 
@@ -288,13 +289,24 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
     def _validate(self, record: dict[str, object], phase: str, expected: dict[str, object]) -> list[str]:
         return r3.validate_transaction_record(record, phase=phase, expected=expected, synthetic=True)
 
-    def test_contract_preserves_r2_hard_gates_and_defers_activation(self) -> None:
+    def test_contract_preserves_r2_baseline_and_requires_explicit_duration_exception(self) -> None:
         self.assertEqual(r3.validate_contract(), [])
         self.assertEqual(r2.validate(), [])
         policy = r3.load_json(r3.PROTOCOL_PATH)
         self.assertEqual(policy["status"], "CANDIDATE_NOT_EFFECTIVE")
-        self.assertEqual(policy["canonical_suite_window"]["configured_window_seconds"], 14400)
-        self.assertTrue(policy["canonical_suite_window"]["natural_early_completion_allowed"])
+        duration = policy["canonical_suite_duration_policy"]
+        self.assertEqual(
+            duration["elapsed_duration_semantics"], "OBSERVED_NATURAL_ELAPSED_SECONDS_ONLY",
+        )
+        self.assertEqual(duration["r2_duration_exception"]["r2_minimum_natural_window_seconds"], 14400)
+        self.assertEqual(duration["r2_duration_exception"]["r3_candidate_duration_threshold"], "NONE")
+        self.assertTrue(duration["r2_duration_exception"]["r2_remains_effective_before_activation"])
+        self.assertTrue(duration["r2_duration_exception"]["explicit_owner_approval_required"])
+        self.assertNotIn("minimum_natural_window_seconds", policy["preserved_hard_gates"]["canonical_full_suite"])
+        self.assertEqual(
+            r2.load_json(r2.PROTOCOL_PATH)["pre_publication_hard_gates"]["canonical_full_suite"]["minimum_natural_window_seconds"],
+            14400,
+        )
 
     def test_short_real_natural_suite_process_passes(self) -> None:
         receipt = _record()["canonical_full_suite_receipts"][0]
@@ -302,7 +314,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             receipt, canonical_identity=_context(), expected=_context(), candidate_sha="b" * 40
         )
         self.assertEqual(errors, [])
-        self.assertLess(receipt["duration_seconds"], 14400)
+        self.assertGreaterEqual(receipt["duration_seconds"], 0)
         self.assertEqual(receipt["process_exit_code"], 0)
         self.assertFalse(receipt["watchdog_used"])
 
@@ -315,8 +327,39 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             receipt, canonical_identity=_context(), expected=_context(), candidate_sha="b" * 40
         ))
 
-    def test_short_natural_completion_is_not_rejected_by_window_budget(self) -> None:
+    def test_short_natural_completion_is_admitted_by_observed_duration_policy(self) -> None:
         self.assertEqual(self._validate(_record(), "prepublication", _context()), [])
+
+    def test_natural_durations_have_no_minimum_or_maximum_threshold(self) -> None:
+        started_at = datetime(2026, 10, 18, 6, 0, tzinfo=timezone.utc)
+        for seconds in (600, 14400, 72000):
+            with self.subTest(seconds=seconds):
+                receipt = _suite(f"natural-{seconds}", "SYNTHETIC_FIXTURE_ONLY", "synthetic/fixture-only", "b" * 40)
+                finished_at = started_at + timedelta(seconds=seconds)
+                receipt.update({
+                    "duration_seconds": seconds,
+                    "started_at": started_at.isoformat().replace("+00:00", "Z"),
+                    "finished_at": finished_at.isoformat().replace("+00:00", "Z"),
+                })
+                self.assertEqual(
+                    r3.validate_suite_receipt(
+                        receipt, canonical_identity=_context(), expected=_context(), candidate_sha="b" * 40
+                    ),
+                    [],
+                )
+
+    def test_natural_suite_duration_must_match_recorded_start_and_finish(self) -> None:
+        receipt = _suite("natural-duration-mismatch", "SYNTHETIC_FIXTURE_ONLY", "synthetic/fixture-only", "b" * 40)
+        started_at = datetime(2026, 10, 18, 6, 0, tzinfo=timezone.utc)
+        receipt.update({
+            "duration_seconds": 14401,
+            "started_at": started_at.isoformat().replace("+00:00", "Z"),
+            "finished_at": (started_at + timedelta(seconds=14500)).isoformat().replace("+00:00", "Z"),
+        })
+        errors = r3.validate_suite_receipt(
+            receipt, canonical_identity=_context(), expected=_context(), candidate_sha="b" * 40
+        )
+        self.assertIn("canonical full-suite elapsed time does not match its recorded start and finish", errors)
 
     def test_owner_transition_authorization_is_separate_from_review_and_live_verified(self) -> None:
         receipt, observations, api = _activation_receipt(), _live_observations(), _github_api()
@@ -369,6 +412,23 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         )
         self.assertEqual(active, "R2")
         self.assertTrue(errors)
+
+    def test_owner_transition_requires_explicit_r2_duration_exception(self) -> None:
+        statement = _owner_statement()
+        del statement["r2_duration_policy_exception"]
+        receipt, observations = _activation_receipt(), _live_observations()
+        approval = _owner_evidence(statement)
+        receipt["owner_approval"] = approval
+        observations["owner_authorization"] = approval
+        observations["authorization_file_sha256"] = approval["authorization_file_sha256"]
+        active, errors = r3.resolve_effective_protocol(
+            receipt,
+            observations=observations,
+            repository_owner_id=49422864,
+            github_api=_github_api(statement),
+        )
+        self.assertEqual(active, "R2")
+        self.assertTrue(any("r2_duration_policy_exception" in error for error in errors))
 
     def test_branch_protection_read_failure_or_stale_rules_fails_closed(self) -> None:
         receipt, observations, api = _activation_receipt(), _live_observations(), _github_api()

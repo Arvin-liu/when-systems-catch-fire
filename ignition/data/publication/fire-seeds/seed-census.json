@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "e4a3133716fca4f6f9c4e16198566ef4dddcf908274a3dde289fe117f6f7e603",
+      "source_sha256": "112c5c689e7523f17cd3f9dc63d92e5e5cb777447ae14c06aa77bcfe682452dc",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d2a571381be1a7cb1898bf20af249c898a3c00a17a592aeff188d64548160931",
+      "source_sha256": "233bf6d0d9014d488bb396bd3d972451c0d55a1b67720ff504329536e877de8b",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2873,7 +2873,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "3647fd05093481492047f752033cd20cd8497dc9fb3427a0117fe940b6adebad",
+      "source_sha256": "3ac90ed085ceaa2be3acaaa88085d055e9f81575bc8b3bb0fb6a9b3c29ba2c58",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -5212,7 +5212,7 @@
       "title": "阶段成果持续快照与分层发布制度",
       "knowledge_status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
       "subject": null,
-      "source_sha256": "8ef35133b3ce3d39928c8fb83177920137af68216617819e61c29094848903cc",
+      "source_sha256": "d4d7ea888e3a1ad95e3d0f85259dc0e084e8921b62db04b135ef5bbc411243d0",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-11"

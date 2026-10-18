@@ -33,7 +33,6 @@
     "fail_closed": true,
     "canonical_full_suite": {
       "required_runs": 2,
-      "minimum_natural_window_seconds": 14400,
       "zero_failures_errors_skips": true,
       "clean_before_after": true,
       "exact_candidate_sha": true,
@@ -150,12 +149,18 @@
     "RELEASE_CLOSURE_BLOCKED"
   ],
   "claim_ceiling": "Candidate R3 release protocol only. It does not activate R3, change R2 or GitHub settings, self-authorize, assert a review/check rule that GitHub does not enforce, authorize publication, or infer external truth or production readiness.",
-  "canonical_suite_window": {
-    "configured_window_seconds": 14400,
-    "elapsed_duration_semantics": "MAXIMUM_TIME_BUDGET_BEFORE_WATCHDOG",
-    "natural_early_completion_allowed": true,
+  "canonical_suite_duration_policy": {
+    "elapsed_duration_semantics": "OBSERVED_NATURAL_ELAPSED_SECONDS_ONLY",
     "natural_process_exit_required": true,
     "watchdog_termination_fails": true,
-    "preserved_r2_gate_value_source": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/minimum_natural_window_seconds"
+    "r2_duration_exception": {
+      "source": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/minimum_natural_window_seconds",
+      "r2_minimum_natural_window_seconds": 14400,
+      "r2_remains_effective_before_activation": true,
+      "r3_candidate_duration_threshold": "NONE",
+      "explicit_owner_approval_required": true,
+      "owner_authorization_field": "r2_duration_policy_exception",
+      "owner_authorization_value": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"
+    }
   }
 }
