@@ -97,9 +97,69 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--transition-receipt", type=Path)
+    parser.add_argument("--observations", type=Path)
+    parser.add_argument("--repository-owner-id", type=int)
+    parser.add_argument("--transaction-record", type=Path)
+    parser.add_argument("--expected-context", type=Path)
+    parser.add_argument("--phase", choices=["prepublication", "postpublication"])
     args = parser.parse_args()
     if not args.check:
         parser.error("--check is required")
+
+    transition_arguments = (args.transition_receipt, args.observations, args.repository_owner_id)
+    has_transition = any(value is not None for value in transition_arguments)
+    if has_transition or args.transaction_record or args.expected_context or args.phase:
+        if has_transition and not all(value is not None for value in transition_arguments):
+            parser.error("transition selection requires --transition-receipt, --observations and --repository-owner-id")
+        if args.transaction_record and (not args.expected_context or not args.phase):
+            parser.error("--transaction-record requires --expected-context and --phase")
+        if args.phase and not args.transaction_record:
+            parser.error("--phase requires --transaction-record")
+        try:
+            from tools import validate_release_transaction_protocol_r3 as protocol_r3
+        except ModuleNotFoundError:  # direct `python tools/...py` invocation
+            import validate_release_transaction_protocol_r3 as protocol_r3
+
+        contract_errors = protocol_r3.validate_contract()
+        if contract_errors:
+            print("RELEASE_TRANSACTION_PROTOCOL_R3_INVALID", file=sys.stderr)
+            for error in contract_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 1
+
+        active = "R2"
+        activation_errors = ["no independent R3 transition receipt was supplied"]
+        if has_transition:
+            active, activation_errors = protocol_r3.resolve_effective_protocol(
+                load_json(args.transition_receipt),
+                observations=load_json(args.observations),
+                repository_owner_id=args.repository_owner_id,
+            )
+        if args.transaction_record:
+            if args.phase == "postpublication" and active != "R3":
+                print("RELEASE_TRANSACTION_R3_RECORD_REJECTED: R2 remains effective", file=sys.stderr)
+                for error in activation_errors:
+                    print(f"- {error}", file=sys.stderr)
+                return 2
+            errors = protocol_r3.validate_transaction_record(
+                load_json(args.transaction_record),
+                phase=args.phase,
+                expected=load_json(args.expected_context),
+            )
+            if errors:
+                print("RELEASE_TRANSACTION_R3_RECORD_INVALID", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                return 1
+            if args.phase == "prepublication":
+                print(f"RELEASE_TRANSACTION_R3_PREFLIGHT_OK current={active}")
+            else:
+                print("RELEASE_TRANSACTION_R3_RECORD_OK phase=postpublication")
+            return 0
+        print(f"RELEASE_TRANSACTION_PROTOCOL_{active}_CURRENT")
+        return 0
+
     errors = validate()
     if errors:
         print("RELEASE_TRANSACTION_PROTOCOL_INVALID", file=sys.stderr)

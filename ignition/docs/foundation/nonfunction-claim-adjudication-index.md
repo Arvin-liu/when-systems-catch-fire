@@ -4,9 +4,9 @@
 
 ## 闭合摘要
 
-- 已核算跟踪文件：5789
-- 候选片段：31019
-- 规范断言：17966
+- 已核算跟踪文件：5794
+- 候选片段：31023
+- 规范断言：17970
 - 既有断言映射：678
 - 显式隔离或待决：4993
 - 依赖边：5642
@@ -17,7 +17,7 @@
 
 |处置|数量|
 |---|---:|
-|ACCEPTED_AS_DEFINITION|3777|
+|ACCEPTED_AS_DEFINITION|3781|
 |ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT|1|
 |HISTORICAL_ONLY|7440|
 |PENDING_EMPIRICAL_TEST|889|

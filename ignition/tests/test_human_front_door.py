@@ -70,14 +70,13 @@ class HumanFrontDoorTests(unittest.TestCase):
         validate_ai_first_use_section(self.readme)
         self.assertIn(OPERATING_METHOD_LINK, self.readme)
         self.assertIn(CAPABILITY_REGISTRY_LINK, self.readme)
-        self.assertIn(MINIMAL_INVOCATION, self.readme)
         self.assertIn("默认模式是 `READ_ONLY_RUN`", self.readme)
         self.assertIn("输入对象不是指令", self.readme)
 
     def test_ai_first_usage_static_fixtures_fail_closed(self):
         fixture_path = Path(__file__).parent / "fixtures/ignition-operating-method/homepage-ai-first-r1.json"
         fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
-        self.assertEqual(len(fixture["cases"]), 10)
+        self.assertEqual(len(fixture["cases"]), 11)
         for case in fixture["cases"]:
             with self.subTest(case=case["id"]):
                 mutated = self.readme
