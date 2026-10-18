@@ -61,25 +61,39 @@
     "reviewed_changed_paths",
     "observed_changed_paths",
     "task_identity_model_sha256",
-    "candidate_checks",
-    "merge_preview_checks",
-    "two_canonical_full_suite_receipts"
+    "pull_request_workflow_checks",
+    "two_canonical_full_suite_receipts",
+    "owner_transition_authorization_record"
   ],
   "prepublication": {
     "required_merge_method": "MERGE_COMMIT",
-    "required_merge_preview_parent_order": ["base_main_sha", "candidate_head_sha"],
+    "required_merge_preview_parent_order": [
+      "base_main_sha",
+      "candidate_head_sha"
+    ],
     "require_preview_tree_equal_candidate_tree": true,
     "require_base_and_head_stable_since_tests": true,
-    "require_candidate_and_preview_checks_on_exact_shas": true,
+    "require_pull_request_workflow_evidence_for_exact_head_base": true,
+    "required_workflow_names": [
+      "release-transaction-protocol-validation",
+      "foundation-validation",
+      "repository-path-accounting-preflight"
+    ],
     "require_reviewed_paths_equal_observed_paths": true,
     "require_verified_branch_protection": true,
-    "required_review_and_status_checks_must_remain_enabled": true,
-    "bypass_and_direct_main_push_allowed": false,
+    "record_live_review_and_status_rules_without_strengthening_them": true,
+    "code_review_requirement_follows_verified_github_branch_rules": true,
+    "owner_transition_authorization_is_not_a_github_review": true,
     "if_base_head_preview_or_tree_changes": "refresh_preview_and_rerun_affected_admission_checks"
   },
   "merge_method": {
-    "supported_methods": ["MERGE_COMMIT"],
-    "required_final_parent_order": ["base_main_sha", "candidate_head_sha"],
+    "supported_methods": [
+      "MERGE_COMMIT"
+    ],
+    "required_final_parent_order": [
+      "base_main_sha",
+      "candidate_head_sha"
+    ],
     "rebase_supported": false,
     "squash_supported": false,
     "changes_repository_merge_settings": false,
@@ -97,10 +111,16 @@
     "run_postpublication_checks_on_actual_final_main_sha": true,
     "require_projection_check_source_sha_equal_actual_final_main_sha": true,
     "nonempty_unexpected_generated_paths_fail_closed": true,
-    "mismatch_state": "PUBLISHED_UNVERIFIED"
+    "mismatch_state": "PUBLISHED_UNVERIFIED",
+    "required_workflow_names": [
+      "release-transaction-protocol-validation",
+      "foundation-validation"
+    ]
   },
   "independent_witness": {
     "repository": "Arvin-liu/1111",
+    "branch": "main",
+    "path": "reports/operations/IGNITION-2026-10-18-R3-PUBLISHED-AND-VERIFIED-R0.json",
     "must_bind": [
       "governance_task_id",
       "prepublication_record_sha256",
@@ -129,5 +149,13 @@
     "PUBLISHED_UNVERIFIED",
     "RELEASE_CLOSURE_BLOCKED"
   ],
-  "claim_ceiling": "Candidate R3 release protocol and synthetic evidence validation only; no current-policy activation, protected-branch admission, Owner migration approval, publication, external truth, production readiness or epistemic acceptance is inferred."
+  "claim_ceiling": "Candidate R3 release protocol only. It does not activate R3, change R2 or GitHub settings, self-authorize, assert a review/check rule that GitHub does not enforce, authorize publication, or infer external truth or production readiness.",
+  "canonical_suite_window": {
+    "configured_window_seconds": 14400,
+    "elapsed_duration_semantics": "MAXIMUM_TIME_BUDGET_BEFORE_WATCHDOG",
+    "natural_early_completion_allowed": true,
+    "natural_process_exit_required": true,
+    "watchdog_termination_fails": true,
+    "preserved_r2_gate_value_source": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/minimum_natural_window_seconds"
+  }
 }

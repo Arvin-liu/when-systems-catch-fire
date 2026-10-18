@@ -103,3 +103,13 @@ CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收�
 1.3.0 的能力生命周期、typed propagation 与增量执行保持历史兼容。没有快照记录的旧任务仍合法；只有希望进入展示层的真实阶段成果才使用新接口。独立部署阅读面已经退役，当前展示义务由仓库 Markdown 与人类可见性 CI 承担。
 
 若 1.4.0 候选被拒绝，删除新 schema、registry、validator、投影和 workflow 步骤即可回到 1.3.0；不需要回滚任何候选能力，因为本制度从未把候选载荷注册或激活为正式能力。
+
+## 8. R2→R3 版本化发布事务
+
+`data/operations/release-transaction-protocol-r3.json` 与其 schema 定义 R3 候选。R2 保持 Current，直到独立 `1111` 回执绑定一次过渡批准、已合并 PR 和实际最终 `main` SHA，并完成新鲜 checkout 与该 SHA 上的 post-publication 验证。
+
+- R2 保留的两次 canonical full-suite 仍是硬门。`minimum_natural_window_seconds=14400` 在 R3 的执行语义中是 watchdog 时间预算上限；测试进程可以自然提前成功退出。自然完成、零失败/错误/跳过、运行前后工作树干净、精确候选 SHA 和未使用 watchdog 仍全部必需；到达窗口并被 watchdog 杀死则失败。
+- `pull_request` 的 GitHub check run 关联 PR head SHA；Actions 作业日志显示 checkout 使用本地远端跟踪 ref `refs/remotes/pull/{number}/merge` 与合成 merge SHA（对应 GitHub PR merge preview）。分别记录 check-run head、PR base/head、workflow run 与日志中的实际 checkout ref/SHA；不要求另造一套候选 SHA 或 merge-preview check。任一 base、head 或 preview 变化都会使旧 admission 证据失效。
+- Owner 的一次性 R2→R3 制度批准保存在固定 `1111` commit 的专用授权文件中，并通过现有 GitHub OAuth 读回。授权必须由已认证 Owner 写入且精确绑定 PR、候选 head、base、R3 blob、范围与时间；校验同时要求当前 OAuth Owner ID、两个仓库的实际 Owner ID、固定 commit 的 GitHub author/committer ID 与记录内容一致，不能只信 JSON 中的 Owner ID。此记录不是 GitHub code review；只有当前分支保护规则要求 review 时才另行取得 review，且 PR 作者不能批准自己的 PR。
+- 逐项读取并保存 GitHub 实际 main 保护规则。未设置 required review/status checks、管理员 enforcement 关闭或读取返回 403，都必须按实际值记录或保持未验证；候选不得静默追加仓库规则，也不得把不可读说成已验证。
+- 只通过正常 GitHub PR merge。合并后，以 PR merge commit 和 `refs/heads/main` 的实际 SHA 为发布见证目标，核对 tree/parents、远端 main、新鲜 clone 与实际 main SHA Actions 结果。最终回执固定写入私有 `1111/main` 的 `reports/operations/IGNITION-2026-10-18-R3-PUBLISHED-AND-VERIFIED-R0.json`；validator 必须从该路径的最新 main 历史提交读回、hash 文件，并逐字段比对调用方提供的回执。缺少独立回执、精确身份、权限或 post-publication 证据时继续使用 R2。

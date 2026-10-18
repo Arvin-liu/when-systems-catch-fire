@@ -12,6 +12,7 @@ on:
       - 'ignition/tools/validate_release_transaction_protocol_r3.py'
       - 'ignition/tests/test_release_transaction_protocol.py'
       - 'ignition/tests/test_release_transaction_protocol_r3.py'
+      - 'ignition/docs/operations/stage-snapshot-publication.md'
       - 'ignition/data/operations/current-task-lineage-status.json'
       - 'ignition/data/operations/task-identity-model-r1.json'
       - 'ignition/data/operations/iterations/**/execution-contract*.json'
@@ -27,6 +28,7 @@ on:
       - 'ignition/tools/validate_release_transaction_protocol_r3.py'
       - 'ignition/tests/test_release_transaction_protocol.py'
       - 'ignition/tests/test_release_transaction_protocol_r3.py'
+      - 'ignition/docs/operations/stage-snapshot-publication.md'
       - 'ignition/data/operations/current-task-lineage-status.json'
       - 'ignition/data/operations/task-identity-model-r1.json'
       - 'ignition/data/operations/iterations/**/execution-contract*.json'
@@ -55,5 +57,5 @@ jobs:
         run: python3 tools/validate_release_transaction_protocol.py --check
       - name: Validate the R3 candidate without activating it
         run: python3 tools/validate_release_transaction_protocol_r3.py --check
-      - name: Run preserved R2 tests and R3 negative controls
+      - name: Run preserved R2 tests and R3 candidate protocol tests
         run: python3 -m unittest tests.test_release_transaction_protocol tests.test_release_transaction_protocol_r3 -v
