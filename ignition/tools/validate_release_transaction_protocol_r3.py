@@ -64,10 +64,29 @@ def validate_contract(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("R3 must preserve the exact R2 required-gate set and order")
     preserved_suite = preserved["canonical_full_suite"]
     r2_suite = r2_gates["canonical_full_suite"]
-    for field in ("required_runs", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"):
+    for field in ("zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"):
         if preserved_suite.get(field) != r2_suite.get(field):
             errors.append(f"R3 must preserve the R2 canonical full-suite gate value for {field}")
             break
+    count_exception = protocol["r2_full_suite_count_exception"]
+    if count_exception["r2_required_runs"] != r2_suite["required_runs"]:
+        errors.append("R3 must identify the unchanged R2 canonical full-suite run-count clause being explicitly excepted")
+    if count_exception["r2_required_runs"] != 2:
+        errors.append("R2 historical canonical full-suite run count must remain two")
+    if count_exception["r3_run_count_policy"] != preserved_suite["run_count_policy"]:
+        errors.append("R3 run-count exception and canonical suite evidence policy disagree")
+    if not count_exception["explicit_owner_approval_required"] or not count_exception["r3_requires_complete_evidence_and_independent_revalidation"]:
+        errors.append("R3 run-count exception must require complete evidence, independent revalidation and explicit Owner approval")
+    publication_exception = protocol["r2_publication_method_exception"]
+    r2_publication_method = r2.get("main_mutation_policy", {}).get("mode")
+    if publication_exception["r2_publication_method"] != r2_publication_method:
+        errors.append("R3 must identify the unchanged R2 fast-forward publication method being explicitly excepted")
+    if publication_exception["r2_publication_method"] != "ORDINARY_FAST_FORWARD_ONLY":
+        errors.append("R2 historical publication method must remain ordinary fast-forward only")
+    if publication_exception["r3_publication_method"] != "PROTECTED_GITHUB_PR_MERGE_COMMIT" or protocol["prepublication"]["required_merge_method"] != "MERGE_COMMIT":
+        errors.append("R3 publication exception must specify the protected PR merge-commit path")
+    if not publication_exception["explicit_owner_approval_required"]:
+        errors.append("R3 publication-method exception must require explicit Owner approval")
     duration_policy = protocol["canonical_suite_duration_policy"]
     exception = duration_policy["r2_duration_exception"]
     if exception["r2_minimum_natural_window_seconds"] != r2_suite["minimum_natural_window_seconds"]:
@@ -767,13 +786,36 @@ def validate_transaction_record(
         ))
 
     suite_receipts = record["canonical_full_suite_receipts"]
-    if len(suite_receipts) != 2:
-        errors.append("exactly two natural canonical full-suite receipts are required")
+    if not suite_receipts:
+        errors.append("at least one complete natural canonical full-suite receipt is required to establish evidence sufficiency")
     run_ids = [receipt["run_id"] for receipt in suite_receipts]
     if len(run_ids) != len(set(run_ids)):
         errors.append("canonical full-suite receipts must have distinct run IDs")
     for receipt in suite_receipts:
         errors.extend(_suite_receipt_errors(receipt, canonical_identity=canonical_identity, expected=expected, candidate_sha=pr["head_sha"]))
+
+    revalidation = record["canonical_full_suite_evidence_revalidation"]
+    for key, expected_key in (
+        ("candidate_head_sha", "candidate_head_sha"),
+        ("inventory_sha256", "test_inventory_sha256"),
+        ("test_count", "test_count"),
+        ("environment_sha256", "environment_sha256"),
+    ):
+        if revalidation[key] != expected.get(expected_key):
+            errors.append(f"independent canonical-suite revalidation {key} differs from the exact candidate evidence")
+    if sorted(revalidation["receipt_run_ids"]) != sorted(run_ids):
+        errors.append("independent canonical-suite revalidation does not cover every exact receipt run ID")
+    matching_revalidation_checks = [
+        check for check in record["pull_request_workflow_checks"]
+        if check["workflow_name"] == revalidation["workflow_name"]
+        and check["workflow_run_id"] == revalidation["workflow_run_id"]
+        and check["check_run_id"] == revalidation["check_run_id"]
+        and check["check_run_url"] == revalidation["check_run_url"]
+        and check["conclusion"] == revalidation["conclusion"]
+        and check["head_sha"] == revalidation["candidate_head_sha"]
+    ]
+    if len(matching_revalidation_checks) != 1:
+        errors.append("independent canonical-suite revalidation is not bound to one successful exact-head PR validator check")
 
     approval = record["owner_approval"]
     if approval["owner_actor_id"] != expected.get("repository_owner_id"):

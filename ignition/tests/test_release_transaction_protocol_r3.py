@@ -52,6 +52,8 @@ def _owner_statement(
         "r3_protocol_blob_sha": protocol_blob_sha or r3.git_blob_sha(),
         "scope": "ONE_TIME_R3_BOOTSTRAP_ONLY",
         "r2_duration_policy_exception": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3",
+        "r2_full_suite_count_policy_exception": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT",
+        "r2_publication_method_exception": "R2_FAST_FORWARD_SHA_EQUALITY_REPLACED_BY_PROTECTED_PR_MERGE_COMMIT_WITH_FINAL_MAIN_TREE_PARENT_REMOTE_AND_FRESH_CLONE_WITNESS",
         "approved_at": "2026-10-18T05:30:00Z",
     }
 
@@ -206,8 +208,19 @@ def _record() -> dict[str, object]:
         "pull_request_workflow_checks": workflow_checks, "pull_request_reviews": [],
         "canonical_full_suite_receipts": [
             _suite("run-1", str(context["task_id"]), str(context["task_branch"]), candidate_sha),
-            _suite("run-2", str(context["task_id"]), str(context["task_branch"]), candidate_sha),
         ],
+        "canonical_full_suite_evidence_revalidation": {
+            "workflow_name": "release-transaction-protocol-validation",
+            "workflow_run_id": workflow_checks[0]["workflow_run_id"],
+            "check_run_id": workflow_checks[0]["check_run_id"],
+            "candidate_head_sha": candidate_sha,
+            "inventory_sha256": context["test_inventory_sha256"],
+            "test_count": context["test_count"],
+            "environment_sha256": context["environment_sha256"],
+            "receipt_run_ids": ["run-1"],
+            "conclusion": "success",
+            "check_run_url": workflow_checks[0]["check_run_url"],
+        },
         "merge_method": "MERGE_COMMIT", "branch_protection": context["branch_protection_rules"],
         "owner_approval": context["owner_authorization"],
         "publication": {
@@ -289,7 +302,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
     def _validate(self, record: dict[str, object], phase: str, expected: dict[str, object]) -> list[str]:
         return r3.validate_transaction_record(record, phase=phase, expected=expected, synthetic=True)
 
-    def test_contract_preserves_r2_baseline_and_requires_explicit_duration_exception(self) -> None:
+    def test_contract_preserves_r2_baseline_and_identifies_all_transition_exceptions(self) -> None:
         self.assertEqual(r3.validate_contract(), [])
         self.assertEqual(r2.validate(), [])
         policy = r3.load_json(r3.PROTOCOL_PATH)
@@ -302,11 +315,19 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(duration["r2_duration_exception"]["r3_candidate_duration_threshold"], "NONE")
         self.assertTrue(duration["r2_duration_exception"]["r2_remains_effective_before_activation"])
         self.assertTrue(duration["r2_duration_exception"]["explicit_owner_approval_required"])
-        self.assertNotIn("minimum_natural_window_seconds", policy["preserved_hard_gates"]["canonical_full_suite"])
+        suite_policy = policy["preserved_hard_gates"]["canonical_full_suite"]
+        self.assertNotIn("required_runs", suite_policy)
+        self.assertEqual(suite_policy["run_count_policy"], "EVIDENCE_DRIVEN_NO_FIXED_COUNT")
+        self.assertTrue(suite_policy["independent_revalidation"]["required"])
+        self.assertTrue(policy["r2_full_suite_count_exception"]["r2_remains_effective_before_activation"])
+        self.assertTrue(policy["r2_publication_method_exception"]["explicit_owner_approval_required"])
+        self.assertNotIn("minimum_natural_window_seconds", suite_policy)
         self.assertEqual(
             r2.load_json(r2.PROTOCOL_PATH)["pre_publication_hard_gates"]["canonical_full_suite"]["minimum_natural_window_seconds"],
             14400,
         )
+        self.assertEqual(r2.load_json(r2.PROTOCOL_PATH)["pre_publication_hard_gates"]["canonical_full_suite"]["required_runs"], 2)
+        self.assertEqual(r2.load_json(r2.PROTOCOL_PATH)["main_mutation_policy"]["mode"], "ORDINARY_FAST_FORWARD_ONLY")
 
     def test_short_real_natural_suite_process_passes(self) -> None:
         receipt = _record()["canonical_full_suite_receipts"][0]
@@ -329,6 +350,37 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
 
     def test_short_natural_completion_is_admitted_by_observed_duration_policy(self) -> None:
         self.assertEqual(self._validate(_record(), "prepublication", _context()), [])
+
+    def test_evidence_sufficiency_accepts_one_or_more_receipts_without_fixed_run_count(self) -> None:
+        record = _record()
+        record["canonical_full_suite_receipts"].extend([
+            _suite("run-2", "SYNTHETIC_FIXTURE_ONLY", "synthetic/fixture-only", "b" * 40),
+            _suite("run-3", "SYNTHETIC_FIXTURE_ONLY", "synthetic/fixture-only", "b" * 40),
+        ])
+        record["canonical_full_suite_evidence_revalidation"]["receipt_run_ids"] = ["run-1", "run-2", "run-3"]
+        self.assertEqual(self._validate(record, "prepublication", _context()), [])
+
+    def test_independent_revalidation_must_cover_exact_head_inventory_environment_and_all_runs(self) -> None:
+        for key, value in (("candidate_head_sha", "f" * 40),
+                           ("inventory_sha256", "f" * 64),
+                           ("test_count", 1082),
+                           ("environment_sha256", "f" * 64)):
+            record = _record()
+            record["canonical_full_suite_evidence_revalidation"][key] = value
+            self.assertTrue(self._validate(record, "prepublication", _context()), key)
+        record = _record()
+        record["canonical_full_suite_evidence_revalidation"]["receipt_run_ids"] = ["different-run"]
+        self.assertTrue(self._validate(record, "prepublication", _context()))
+
+    def test_run_count_exception_and_publication_method_exception_are_explicit_owner_fields(self) -> None:
+        for field in ("r2_full_suite_count_policy_exception", "r2_publication_method_exception"):
+            statement = _owner_statement()
+            del statement[field]
+            errors = r3._schema_errors(
+                statement,
+                {"$ref": "#/$defs/ownerAuthorizationStatement", "$defs": r3.load_json(r3.SCHEMA_PATH)["$defs"]},
+            )
+            self.assertTrue(errors, field)
 
     def test_natural_durations_have_no_minimum_or_maximum_threshold(self) -> None:
         started_at = datetime(2026, 10, 18, 6, 0, tzinfo=timezone.utc)

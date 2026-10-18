@@ -32,7 +32,22 @@
     ],
     "fail_closed": true,
     "canonical_full_suite": {
-      "required_runs": 2,
+      "run_count_policy": "EVIDENCE_DRIVEN_NO_FIXED_COUNT",
+      "evidence_sufficiency": {
+        "complete_current_inventory_required": true,
+        "exact_candidate_sha_and_environment_required": true,
+        "zero_failures_errors_skips_required": true,
+        "clean_before_after_required": true,
+        "natural_successful_exit_required": true,
+        "every_admitted_receipt_must_pass": true
+      },
+      "independent_revalidation": {
+        "required": true,
+        "workflow_name": "release-transaction-protocol-validation",
+        "method": "INDEPENDENTLY_RECHECK_EXACT_HEAD_INVENTORY_ENVIRONMENT_AND_ALL_SUITE_RECEIPTS",
+        "must_cover_all_receipt_ids": true,
+        "requires_another_full_suite_execution": false
+      },
       "zero_failures_errors_skips": true,
       "clean_before_after": true,
       "exact_candidate_sha": true,
@@ -61,7 +76,8 @@
     "observed_changed_paths",
     "task_identity_model_sha256",
     "pull_request_workflow_checks",
-    "two_canonical_full_suite_receipts",
+    "canonical_full_suite_receipts",
+    "canonical_full_suite_evidence_revalidation",
     "owner_transition_authorization_record"
   ],
   "prepublication": {
@@ -162,5 +178,32 @@
       "owner_authorization_field": "r2_duration_policy_exception",
       "owner_authorization_value": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"
     }
+  },
+  "r2_full_suite_count_exception": {
+    "source": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/required_runs",
+    "r2_required_runs": 2,
+    "r2_remains_effective_before_activation": true,
+    "r3_run_count_policy": "EVIDENCE_DRIVEN_NO_FIXED_COUNT",
+    "r3_requires_complete_evidence_and_independent_revalidation": true,
+    "explicit_owner_approval_required": true,
+    "owner_authorization_field": "r2_full_suite_count_policy_exception",
+    "owner_authorization_value": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT"
+  },
+  "r2_publication_method_exception": {
+    "source": "ignition/data/operations/release-transaction-protocol-r2.json#/main_mutation_policy/mode",
+    "r2_publication_method": "ORDINARY_FAST_FORWARD_ONLY",
+    "r2_candidate_sha_must_equal_final_main_sha": true,
+    "r3_publication_method": "PROTECTED_GITHUB_PR_MERGE_COMMIT",
+    "r3_final_merge_commit_sha_may_differ_from_candidate_sha": true,
+    "preserved_requirements": [
+      "normal_protected_pull_request_merge_with_no_bypass",
+      "merge_commit_parents_equal_base_then_candidate",
+      "final_main_tree_equals_tested_merge_preview_tree",
+      "actual_final_main_sha_equals_remote_main_and_fresh_clone_head",
+      "postpublication_checks_and_1111_witness_bind_actual_final_main_sha"
+    ],
+    "explicit_owner_approval_required": true,
+    "owner_authorization_field": "r2_publication_method_exception",
+    "owner_authorization_value": "R2_FAST_FORWARD_SHA_EQUALITY_REPLACED_BY_PROTECTED_PR_MERGE_COMMIT_WITH_FINAL_MAIN_TREE_PARENT_REMOTE_AND_FRESH_CLONE_WITNESS"
   }
 }

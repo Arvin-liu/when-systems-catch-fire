@@ -10,7 +10,7 @@
     "effective_policy_before_activation", "activation", "preserved_hard_gates",
     "identity_binding", "source_evidence_fields", "prepublication", "merge_method",
     "postpublication", "independent_witness", "failure_states", "claim_ceiling",
-    "canonical_suite_duration_policy"
+    "canonical_suite_duration_policy", "r2_full_suite_count_exception", "r2_publication_method_exception"
   ],
   "properties": {
     "schema_version": {"const": "release-transaction-protocol-r3"},
@@ -26,7 +26,7 @@
     "preserved_hard_gates": {"$ref": "#/$defs/preservedHardGates"},
     "identity_binding": {"$ref": "#/$defs/identityBinding"},
     "source_evidence_fields": {
-      "type": "array", "uniqueItems": true, "minItems": 15,
+      "type": "array", "uniqueItems": true, "minItems": 16,
       "items": {"type": "string", "minLength": 1}
     },
     "prepublication": {"$ref": "#/$defs/prepublication"},
@@ -38,7 +38,9 @@
       "items": {"enum": ["MERGED_PENDING_POSTPUBLICATION_VALIDATION", "PUBLISHED_UNVERIFIED", "RELEASE_CLOSURE_BLOCKED"]}
     },
     "claim_ceiling": {"type": "string", "minLength": 1},
-    "canonical_suite_duration_policy": {"$ref": "#/$defs/canonicalSuiteDurationPolicy"}
+    "canonical_suite_duration_policy": {"$ref": "#/$defs/canonicalSuiteDurationPolicy"},
+    "r2_full_suite_count_exception": {"$ref": "#/$defs/r2FullSuiteCountException"},
+    "r2_publication_method_exception": {"$ref": "#/$defs/r2PublicationMethodException"}
   },
   "$defs": {
     "activation": {
@@ -70,9 +72,32 @@
     },
     "canonicalFullSuite": {
       "type": "object", "additionalProperties": false,
-      "required": ["required_runs", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"],
+      "required": ["run_count_policy", "evidence_sufficiency", "independent_revalidation", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"],
       "properties": {
-        "required_runs": {"const": 2},
+        "run_count_policy": {"const": "EVIDENCE_DRIVEN_NO_FIXED_COUNT"},
+        "evidence_sufficiency": {
+          "type": "object", "additionalProperties": false,
+          "required": ["complete_current_inventory_required", "exact_candidate_sha_and_environment_required", "zero_failures_errors_skips_required", "clean_before_after_required", "natural_successful_exit_required", "every_admitted_receipt_must_pass"],
+          "properties": {
+            "complete_current_inventory_required": {"const": true},
+            "exact_candidate_sha_and_environment_required": {"const": true},
+            "zero_failures_errors_skips_required": {"const": true},
+            "clean_before_after_required": {"const": true},
+            "natural_successful_exit_required": {"const": true},
+            "every_admitted_receipt_must_pass": {"const": true}
+          }
+        },
+        "independent_revalidation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["required", "workflow_name", "method", "must_cover_all_receipt_ids", "requires_another_full_suite_execution"],
+          "properties": {
+            "required": {"const": true},
+            "workflow_name": {"const": "release-transaction-protocol-validation"},
+            "method": {"const": "INDEPENDENTLY_RECHECK_EXACT_HEAD_INVENTORY_ENVIRONMENT_AND_ALL_SUITE_RECEIPTS"},
+            "must_cover_all_receipt_ids": {"const": true},
+            "requires_another_full_suite_execution": {"const": false}
+          }
+        },
         "zero_failures_errors_skips": {"const": true},
         "clean_before_after": {"const": true},
         "exact_candidate_sha": {"const": true},
@@ -177,6 +202,43 @@
         }
       }
     },
+    "r2FullSuiteCountException": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source", "r2_required_runs", "r2_remains_effective_before_activation", "r3_run_count_policy", "r3_requires_complete_evidence_and_independent_revalidation", "explicit_owner_approval_required", "owner_authorization_field", "owner_authorization_value"],
+      "properties": {
+        "source": {"const": "ignition/data/operations/release-transaction-protocol-r2.json#/pre_publication_hard_gates/canonical_full_suite/required_runs"},
+        "r2_required_runs": {"const": 2},
+        "r2_remains_effective_before_activation": {"const": true},
+        "r3_run_count_policy": {"const": "EVIDENCE_DRIVEN_NO_FIXED_COUNT"},
+        "r3_requires_complete_evidence_and_independent_revalidation": {"const": true},
+        "explicit_owner_approval_required": {"const": true},
+        "owner_authorization_field": {"const": "r2_full_suite_count_policy_exception"},
+        "owner_authorization_value": {"const": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT"}
+      }
+    },
+    "r2PublicationMethodException": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source", "r2_publication_method", "r2_candidate_sha_must_equal_final_main_sha", "r3_publication_method", "r3_final_merge_commit_sha_may_differ_from_candidate_sha", "preserved_requirements", "explicit_owner_approval_required", "owner_authorization_field", "owner_authorization_value"],
+      "properties": {
+        "source": {"const": "ignition/data/operations/release-transaction-protocol-r2.json#/main_mutation_policy/mode"},
+        "r2_publication_method": {"const": "ORDINARY_FAST_FORWARD_ONLY"},
+        "r2_candidate_sha_must_equal_final_main_sha": {"const": true},
+        "r3_publication_method": {"const": "PROTECTED_GITHUB_PR_MERGE_COMMIT"},
+        "r3_final_merge_commit_sha_may_differ_from_candidate_sha": {"const": true},
+        "preserved_requirements": {
+          "const": [
+            "normal_protected_pull_request_merge_with_no_bypass",
+            "merge_commit_parents_equal_base_then_candidate",
+            "final_main_tree_equals_tested_merge_preview_tree",
+            "actual_final_main_sha_equals_remote_main_and_fresh_clone_head",
+            "postpublication_checks_and_1111_witness_bind_actual_final_main_sha"
+          ]
+        },
+        "explicit_owner_approval_required": {"const": true},
+        "owner_authorization_field": {"const": "r2_publication_method_exception"},
+        "owner_authorization_value": {"const": "R2_FAST_FORWARD_SHA_EQUALITY_REPLACED_BY_PROTECTED_PR_MERGE_COMMIT_WITH_FINAL_MAIN_TREE_PARENT_REMOTE_AND_FRESH_CLONE_WITNESS"}
+      }
+    },
     "check": {
       "type": "object", "additionalProperties": false,
       "required": ["name", "sha", "conclusion", "completed_at", "workflow_run_id", "event"],
@@ -242,7 +304,7 @@
     },
     "ownerAuthorization": {
       "type": "object", "additionalProperties": false,
-      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "r2_duration_policy_exception", "authorization_repository", "authorization_path", "authorization_commit_sha", "authorization_committed_at", "authorization_file_sha256", "approved_at"],
+      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "r2_duration_policy_exception", "r2_full_suite_count_policy_exception", "r2_publication_method_exception", "authorization_repository", "authorization_path", "authorization_commit_sha", "authorization_committed_at", "authorization_file_sha256", "approved_at"],
       "properties": {
         "approved": {"const": true},
         "owner_actor_id": {"type": "integer", "minimum": 1},
@@ -252,6 +314,8 @@
         "r3_protocol_blob_sha": {"$ref": "#/$defs/sha1"},
         "scope": {"const": "ONE_TIME_R3_BOOTSTRAP_ONLY"},
         "r2_duration_policy_exception": {"const": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"},
+        "r2_full_suite_count_policy_exception": {"const": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT"},
+        "r2_publication_method_exception": {"const": "R2_FAST_FORWARD_SHA_EQUALITY_REPLACED_BY_PROTECTED_PR_MERGE_COMMIT_WITH_FINAL_MAIN_TREE_PARENT_REMOTE_AND_FRESH_CLONE_WITNESS"},
         "authorization_repository": {"const": "Arvin-liu/1111"},
         "authorization_path": {"const": "instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json"},
         "authorization_commit_sha": {"$ref": "#/$defs/sha1"},
@@ -262,7 +326,7 @@
     },
     "ownerAuthorizationStatement": {
       "type": "object", "additionalProperties": false,
-      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "r2_duration_policy_exception", "approved_at"],
+      "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "approved_base_sha", "r3_protocol_blob_sha", "scope", "r2_duration_policy_exception", "r2_full_suite_count_policy_exception", "r2_publication_method_exception", "approved_at"],
       "properties": {
         "approved": {"const": true},
         "owner_actor_id": {"type": "integer", "minimum": 1},
@@ -272,7 +336,25 @@
         "r3_protocol_blob_sha": {"$ref": "#/$defs/sha1"},
         "scope": {"const": "ONE_TIME_R3_BOOTSTRAP_ONLY"},
         "r2_duration_policy_exception": {"const": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3"},
+        "r2_full_suite_count_policy_exception": {"const": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT"},
+        "r2_publication_method_exception": {"const": "R2_FAST_FORWARD_SHA_EQUALITY_REPLACED_BY_PROTECTED_PR_MERGE_COMMIT_WITH_FINAL_MAIN_TREE_PARENT_REMOTE_AND_FRESH_CLONE_WITNESS"},
         "approved_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "canonicalFullSuiteRevalidation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["workflow_name", "workflow_run_id", "check_run_id", "candidate_head_sha", "inventory_sha256", "test_count", "environment_sha256", "receipt_run_ids", "conclusion", "check_run_url"],
+      "properties": {
+        "workflow_name": {"const": "release-transaction-protocol-validation"},
+        "workflow_run_id": {"type": "string", "minLength": 1},
+        "check_run_id": {"type": "integer", "minimum": 1},
+        "candidate_head_sha": {"$ref": "#/$defs/sha1"},
+        "inventory_sha256": {"$ref": "#/$defs/sha256"},
+        "test_count": {"type": "integer", "minimum": 1},
+        "environment_sha256": {"$ref": "#/$defs/sha256"},
+        "receipt_run_ids": {"type": "array", "uniqueItems": true, "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "conclusion": {"const": "success"},
+        "check_run_url": {"type": "string", "format": "uri"}
       }
     },
     "suiteReceipt": {
@@ -303,7 +385,7 @@
     },
     "transactionRecord": {
       "type": "object", "additionalProperties": false,
-      "required": ["task_identity", "pull_request", "refs", "changed_paths", "required_check_names", "pull_request_workflow_checks", "pull_request_reviews", "canonical_full_suite_receipts", "merge_method", "branch_protection", "owner_approval", "publication"],
+      "required": ["task_identity", "pull_request", "refs", "changed_paths", "required_check_names", "pull_request_workflow_checks", "pull_request_reviews", "canonical_full_suite_receipts", "canonical_full_suite_evidence_revalidation", "merge_method", "branch_protection", "owner_approval", "publication"],
       "properties": {
         "task_identity": {
           "type": "object", "additionalProperties": false,
@@ -353,7 +435,8 @@
         "required_check_names": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
         "pull_request_workflow_checks": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/prWorkflowCheck"}},
         "pull_request_reviews": {"type": "array", "items": {"$ref": "#/$defs/pullRequestReview"}},
-        "canonical_full_suite_receipts": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/suiteReceipt"}},
+        "canonical_full_suite_receipts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/suiteReceipt"}},
+        "canonical_full_suite_evidence_revalidation": {"$ref": "#/$defs/canonicalFullSuiteRevalidation"},
         "merge_method": {"const": "MERGE_COMMIT"},
         "branch_protection": {"$ref": "#/$defs/branchProtectionObservation"},
         "owner_approval": {"$ref": "#/$defs/ownerAuthorization"},
