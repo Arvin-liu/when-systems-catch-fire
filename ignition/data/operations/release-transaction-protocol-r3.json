@@ -1,0 +1,133 @@
+{
+  "schema_version": "release-transaction-protocol-r3",
+  "contract_id": "RELEASE_TRANSACTION_PROTOCOL_R3",
+  "governance_task_id": "IGNITION_20261018_R3_PROTECTED_PR_MERGE_CONTRACT",
+  "type": "GOVERNANCE",
+  "status": "CANDIDATE_NOT_EFFECTIVE",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "receipt_repository": "Arvin-liu/1111",
+  "supersedes_contract_id": "RELEASE_TRANSACTION_PROTOCOL_R2",
+  "effective_policy_before_activation": "RELEASE_TRANSACTION_PROTOCOL_R2",
+  "activation": {
+    "candidate_can_self_authorize": false,
+    "requires_independent_1111_transition_receipt": true,
+    "requires_exact_remote_main_sha_observation": true,
+    "requires_fresh_main_checkout": true,
+    "requires_explicit_owner_transition_approval": true,
+    "required_receipt_status": "PUBLISHED_AND_VERIFIED",
+    "required_migration_scope": "ONE_TIME_R3_BOOTSTRAP_ONLY",
+    "r2_remains_current_if_receipt_missing_or_invalid": true
+  },
+  "preserved_hard_gates": {
+    "source_contract": "ignition/data/operations/release-transaction-protocol-r2.json",
+    "required_gate_ids": [
+      "deterministic_projection_preflight",
+      "current_path_manifest_exact",
+      "residual_non_growth",
+      "current_semantic_gates",
+      "canonical_full_suite",
+      "exact_candidate_sha_binding",
+      "no_post_suite_tracked_mutation",
+      "task_ordinal_binding"
+    ],
+    "fail_closed": true,
+    "canonical_full_suite": {
+      "required_runs": 2,
+      "minimum_natural_window_seconds": 14400,
+      "zero_failures_errors_skips": true,
+      "clean_before_after": true,
+      "exact_candidate_sha": true,
+      "no_watchdog": true
+    }
+  },
+  "identity_binding": {
+    "current_task_source_path": "ignition/data/operations/current-task-lineage-status.json",
+    "task_identity_model_path": "ignition/data/operations/task-identity-model-r1.json",
+    "formal_ordinal_source": "the exact authorized task execution contract and canonical current-task source",
+    "bind_source_digests": true,
+    "reject_historical_task_receipt_replay": true,
+    "never_infer_task_ordinal_from_this_protocol": true
+  },
+  "source_evidence_fields": [
+    "task_id",
+    "formal_ordinal",
+    "task_branch",
+    "candidate_head_sha",
+    "candidate_tree_sha",
+    "base_main_sha",
+    "merge_preview_sha",
+    "merge_preview_tree_sha",
+    "ordered_merge_preview_parents",
+    "reviewed_changed_paths",
+    "observed_changed_paths",
+    "task_identity_model_sha256",
+    "candidate_checks",
+    "merge_preview_checks",
+    "two_canonical_full_suite_receipts"
+  ],
+  "prepublication": {
+    "required_merge_method": "MERGE_COMMIT",
+    "required_merge_preview_parent_order": ["base_main_sha", "candidate_head_sha"],
+    "require_preview_tree_equal_candidate_tree": true,
+    "require_base_and_head_stable_since_tests": true,
+    "require_candidate_and_preview_checks_on_exact_shas": true,
+    "require_reviewed_paths_equal_observed_paths": true,
+    "require_verified_branch_protection": true,
+    "required_review_and_status_checks_must_remain_enabled": true,
+    "bypass_and_direct_main_push_allowed": false,
+    "if_base_head_preview_or_tree_changes": "refresh_preview_and_rerun_affected_admission_checks"
+  },
+  "merge_method": {
+    "supported_methods": ["MERGE_COMMIT"],
+    "required_final_parent_order": ["base_main_sha", "candidate_head_sha"],
+    "rebase_supported": false,
+    "squash_supported": false,
+    "changes_repository_merge_settings": false,
+    "unknown_branch_protection_blocks_admission": true
+  },
+  "postpublication": {
+    "verify_remote_ref": "refs/heads/main",
+    "verify_pr_merged": true,
+    "verify_final_commit_parents_and_tree": true,
+    "require_final_parents_equal_preview_parent_order": true,
+    "require_final_tree_equal_tested_preview_tree": true,
+    "allow_final_sha_to_differ_from_preview_sha": true,
+    "require_observed_remote_sha_equal_actual_final_main_sha": true,
+    "require_fresh_clone_head_equal_actual_final_main_sha": true,
+    "run_postpublication_checks_on_actual_final_main_sha": true,
+    "require_projection_check_source_sha_equal_actual_final_main_sha": true,
+    "nonempty_unexpected_generated_paths_fail_closed": true,
+    "mismatch_state": "PUBLISHED_UNVERIFIED"
+  },
+  "independent_witness": {
+    "repository": "Arvin-liu/1111",
+    "must_bind": [
+      "governance_task_id",
+      "prepublication_record_sha256",
+      "pr_number",
+      "candidate_head_sha",
+      "candidate_tree_sha",
+      "base_main_sha",
+      "merge_preview_sha",
+      "merge_preview_tree_sha",
+      "ordered_merge_preview_parents",
+      "merge_method",
+      "actual_final_main_sha",
+      "actual_final_main_tree_sha",
+      "actual_final_main_parents",
+      "remote_main_observation",
+      "fresh_clone_head_sha",
+      "postpublication_check_statuses",
+      "owner_transition_approval"
+    ],
+    "pending_status": "MERGED_PENDING_POSTPUBLICATION_VALIDATION",
+    "success_status": "PUBLISHED_AND_VERIFIED",
+    "receipt_must_not_create_formal_commit": true
+  },
+  "failure_states": [
+    "MERGED_PENDING_POSTPUBLICATION_VALIDATION",
+    "PUBLISHED_UNVERIFIED",
+    "RELEASE_CLOSURE_BLOCKED"
+  ],
+  "claim_ceiling": "Candidate R3 release protocol and synthetic evidence validation only; no current-policy activation, protected-branch admission, Owner migration approval, publication, external truth, production readiness or epistemic acceptance is inferred."
+}

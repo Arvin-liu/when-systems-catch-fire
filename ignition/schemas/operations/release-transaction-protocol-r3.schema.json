@@ -1,0 +1,379 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/release-transaction-protocol-r3.schema.json",
+  "title": "Release transaction protocol R3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "contract_id", "governance_task_id", "type", "status",
+    "formal_repository", "receipt_repository", "supersedes_contract_id",
+    "effective_policy_before_activation", "activation", "preserved_hard_gates",
+    "identity_binding", "source_evidence_fields", "prepublication", "merge_method",
+    "postpublication", "independent_witness", "failure_states", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "release-transaction-protocol-r3"},
+    "contract_id": {"const": "RELEASE_TRANSACTION_PROTOCOL_R3"},
+    "governance_task_id": {"const": "IGNITION_20261018_R3_PROTECTED_PR_MERGE_CONTRACT"},
+    "type": {"const": "GOVERNANCE"},
+    "status": {"const": "CANDIDATE_NOT_EFFECTIVE"},
+    "formal_repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+    "receipt_repository": {"const": "Arvin-liu/1111"},
+    "supersedes_contract_id": {"const": "RELEASE_TRANSACTION_PROTOCOL_R2"},
+    "effective_policy_before_activation": {"const": "RELEASE_TRANSACTION_PROTOCOL_R2"},
+    "activation": {"$ref": "#/$defs/activation"},
+    "preserved_hard_gates": {"$ref": "#/$defs/preservedHardGates"},
+    "identity_binding": {"$ref": "#/$defs/identityBinding"},
+    "source_evidence_fields": {
+      "type": "array", "uniqueItems": true, "minItems": 15,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "prepublication": {"$ref": "#/$defs/prepublication"},
+    "merge_method": {"$ref": "#/$defs/mergeMethod"},
+    "postpublication": {"$ref": "#/$defs/postpublication"},
+    "independent_witness": {"$ref": "#/$defs/independentWitness"},
+    "failure_states": {
+      "type": "array", "uniqueItems": true, "minItems": 3,
+      "items": {"enum": ["MERGED_PENDING_POSTPUBLICATION_VALIDATION", "PUBLISHED_UNVERIFIED", "RELEASE_CLOSURE_BLOCKED"]}
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "activation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["candidate_can_self_authorize", "requires_independent_1111_transition_receipt", "requires_exact_remote_main_sha_observation", "requires_fresh_main_checkout", "requires_explicit_owner_transition_approval", "required_receipt_status", "required_migration_scope", "r2_remains_current_if_receipt_missing_or_invalid"],
+      "properties": {
+        "candidate_can_self_authorize": {"const": false},
+        "requires_independent_1111_transition_receipt": {"const": true},
+        "requires_exact_remote_main_sha_observation": {"const": true},
+        "requires_fresh_main_checkout": {"const": true},
+        "requires_explicit_owner_transition_approval": {"const": true},
+        "required_receipt_status": {"const": "PUBLISHED_AND_VERIFIED"},
+        "required_migration_scope": {"const": "ONE_TIME_R3_BOOTSTRAP_ONLY"},
+        "r2_remains_current_if_receipt_missing_or_invalid": {"const": true}
+      }
+    },
+    "preservedHardGates": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_contract", "required_gate_ids", "fail_closed", "canonical_full_suite"],
+      "properties": {
+        "source_contract": {"const": "ignition/data/operations/release-transaction-protocol-r2.json"},
+        "required_gate_ids": {
+          "type": "array", "uniqueItems": true, "minItems": 8,
+          "items": {"enum": ["deterministic_projection_preflight", "current_path_manifest_exact", "residual_non_growth", "current_semantic_gates", "canonical_full_suite", "exact_candidate_sha_binding", "no_post_suite_tracked_mutation", "task_ordinal_binding"]}
+        },
+        "fail_closed": {"const": true},
+        "canonical_full_suite": {"$ref": "#/$defs/canonicalFullSuite"}
+      }
+    },
+    "canonicalFullSuite": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_runs", "minimum_natural_window_seconds", "zero_failures_errors_skips", "clean_before_after", "exact_candidate_sha", "no_watchdog"],
+      "properties": {
+        "required_runs": {"const": 2},
+        "minimum_natural_window_seconds": {"const": 14400},
+        "zero_failures_errors_skips": {"const": true},
+        "clean_before_after": {"const": true},
+        "exact_candidate_sha": {"const": true},
+        "no_watchdog": {"const": true}
+      }
+    },
+    "identityBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["current_task_source_path", "task_identity_model_path", "formal_ordinal_source", "bind_source_digests", "reject_historical_task_receipt_replay", "never_infer_task_ordinal_from_this_protocol"],
+      "properties": {
+        "current_task_source_path": {"const": "ignition/data/operations/current-task-lineage-status.json"},
+        "task_identity_model_path": {"const": "ignition/data/operations/task-identity-model-r1.json"},
+        "formal_ordinal_source": {"type": "string", "minLength": 1},
+        "bind_source_digests": {"const": true},
+        "reject_historical_task_receipt_replay": {"const": true},
+        "never_infer_task_ordinal_from_this_protocol": {"const": true}
+      }
+    },
+    "prepublication": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_merge_method", "required_merge_preview_parent_order", "require_preview_tree_equal_candidate_tree", "require_base_and_head_stable_since_tests", "require_candidate_and_preview_checks_on_exact_shas", "require_reviewed_paths_equal_observed_paths", "require_verified_branch_protection", "required_review_and_status_checks_must_remain_enabled", "bypass_and_direct_main_push_allowed", "if_base_head_preview_or_tree_changes"],
+      "properties": {
+        "required_merge_method": {"const": "MERGE_COMMIT"},
+        "required_merge_preview_parent_order": {"const": ["base_main_sha", "candidate_head_sha"]},
+        "require_preview_tree_equal_candidate_tree": {"const": true},
+        "require_base_and_head_stable_since_tests": {"const": true},
+        "require_candidate_and_preview_checks_on_exact_shas": {"const": true},
+        "require_reviewed_paths_equal_observed_paths": {"const": true},
+        "require_verified_branch_protection": {"const": true},
+        "required_review_and_status_checks_must_remain_enabled": {"const": true},
+        "bypass_and_direct_main_push_allowed": {"const": false},
+        "if_base_head_preview_or_tree_changes": {"const": "refresh_preview_and_rerun_affected_admission_checks"}
+      }
+    },
+    "mergeMethod": {
+      "type": "object", "additionalProperties": false,
+      "required": ["supported_methods", "required_final_parent_order", "rebase_supported", "squash_supported", "changes_repository_merge_settings", "unknown_branch_protection_blocks_admission"],
+      "properties": {
+        "supported_methods": {"const": ["MERGE_COMMIT"]},
+        "required_final_parent_order": {"const": ["base_main_sha", "candidate_head_sha"]},
+        "rebase_supported": {"const": false},
+        "squash_supported": {"const": false},
+        "changes_repository_merge_settings": {"const": false},
+        "unknown_branch_protection_blocks_admission": {"const": true}
+      }
+    },
+    "postpublication": {
+      "type": "object", "additionalProperties": false,
+      "required": ["verify_remote_ref", "verify_pr_merged", "verify_final_commit_parents_and_tree", "require_final_parents_equal_preview_parent_order", "require_final_tree_equal_tested_preview_tree", "allow_final_sha_to_differ_from_preview_sha", "require_observed_remote_sha_equal_actual_final_main_sha", "require_fresh_clone_head_equal_actual_final_main_sha", "run_postpublication_checks_on_actual_final_main_sha", "require_projection_check_source_sha_equal_actual_final_main_sha", "nonempty_unexpected_generated_paths_fail_closed", "mismatch_state"],
+      "properties": {
+        "verify_remote_ref": {"const": "refs/heads/main"},
+        "verify_pr_merged": {"const": true},
+        "verify_final_commit_parents_and_tree": {"const": true},
+        "require_final_parents_equal_preview_parent_order": {"const": true},
+        "require_final_tree_equal_tested_preview_tree": {"const": true},
+        "allow_final_sha_to_differ_from_preview_sha": {"const": true},
+        "require_observed_remote_sha_equal_actual_final_main_sha": {"const": true},
+        "require_fresh_clone_head_equal_actual_final_main_sha": {"const": true},
+        "run_postpublication_checks_on_actual_final_main_sha": {"const": true},
+        "require_projection_check_source_sha_equal_actual_final_main_sha": {"const": true},
+        "nonempty_unexpected_generated_paths_fail_closed": {"const": true},
+        "mismatch_state": {"const": "PUBLISHED_UNVERIFIED"}
+      }
+    },
+    "independentWitness": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "must_bind", "pending_status", "success_status", "receipt_must_not_create_formal_commit"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "must_bind": {"type": "array", "uniqueItems": true, "minItems": 16, "items": {"type": "string"}},
+        "pending_status": {"const": "MERGED_PENDING_POSTPUBLICATION_VALIDATION"},
+        "success_status": {"const": "PUBLISHED_AND_VERIFIED"},
+        "receipt_must_not_create_formal_commit": {"const": true}
+      }
+    },
+    "sha1": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "check": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "sha", "conclusion", "completed_at"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "sha": {"$ref": "#/$defs/sha1"},
+        "conclusion": {"enum": ["success", "failure", "cancelled", "timed_out", "skipped", "neutral", "action_required", "in_progress", "queued"]},
+        "completed_at": {"type": "string", "format": "date-time"},
+        "check_url": {"type": "string", "format": "uri"}
+      }
+    },
+    "suiteReceipt": {
+      "type": "object", "additionalProperties": false,
+      "required": ["run_id", "task_id", "task_branch", "sha", "inventory_sha256", "test_count", "environment_sha256", "duration_seconds", "failures", "errors", "skips", "clean_before", "clean_after", "watchdog_used", "conclusion", "source_url"],
+      "properties": {
+        "run_id": {"type": "string", "minLength": 1},
+        "task_id": {"type": "string", "minLength": 1},
+        "task_branch": {"type": "string", "minLength": 1},
+        "sha": {"$ref": "#/$defs/sha1"},
+        "inventory_sha256": {"$ref": "#/$defs/sha256"},
+        "test_count": {"type": "integer", "minimum": 1},
+        "environment_sha256": {"$ref": "#/$defs/sha256"},
+        "duration_seconds": {"type": "integer", "minimum": 14400},
+        "failures": {"const": 0},
+        "errors": {"const": 0},
+        "skips": {"const": 0},
+        "clean_before": {"const": true},
+        "clean_after": {"const": true},
+        "watchdog_used": {"const": false},
+        "conclusion": {"const": "success"},
+        "source_url": {"type": "string", "format": "uri"}
+      }
+    },
+    "transactionRecord": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task_identity", "pull_request", "refs", "changed_paths", "required_check_names", "candidate_checks", "merge_preview_checks", "canonical_full_suite_receipts", "merge_method", "branch_protection", "owner_approval", "publication"],
+      "properties": {
+        "task_identity": {
+          "type": "object", "additionalProperties": false,
+          "required": ["task_id", "formal_ordinal", "task_branch", "current_task_source_sha256", "task_identity_model_sha256", "execution_contract_sha256"],
+          "properties": {
+            "task_id": {"type": "string", "minLength": 1},
+            "formal_ordinal": {"type": "integer", "minimum": 1},
+            "task_branch": {"type": "string", "minLength": 1},
+            "current_task_source_sha256": {"$ref": "#/$defs/sha256"},
+            "task_identity_model_sha256": {"$ref": "#/$defs/sha256"},
+            "execution_contract_sha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "pull_request": {
+          "type": "object", "additionalProperties": false,
+          "required": ["number", "url", "base_branch", "head_branch", "state", "draft", "head_sha"],
+          "properties": {
+            "number": {"type": "integer", "minimum": 1},
+            "url": {"type": "string", "format": "uri"},
+            "base_branch": {"const": "main"},
+            "head_branch": {"type": "string", "minLength": 1},
+            "state": {"enum": ["OPEN", "MERGED"]},
+            "draft": {"const": false},
+            "head_sha": {"$ref": "#/$defs/sha1"}
+          }
+        },
+        "refs": {
+          "type": "object", "additionalProperties": false,
+          "required": ["base_main_sha", "candidate_tree_sha", "merge_preview_sha", "merge_preview_tree_sha", "merge_preview_parents"],
+          "properties": {
+            "base_main_sha": {"$ref": "#/$defs/sha1"},
+            "candidate_tree_sha": {"$ref": "#/$defs/sha1"},
+            "merge_preview_sha": {"$ref": "#/$defs/sha1"},
+            "merge_preview_tree_sha": {"$ref": "#/$defs/sha1"},
+            "merge_preview_parents": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}}
+          }
+        },
+        "changed_paths": {
+          "type": "object", "additionalProperties": false,
+          "required": ["reviewed_paths", "observed_paths"],
+          "properties": {
+            "reviewed_paths": {"type": "array", "uniqueItems": true, "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "observed_paths": {"type": "array", "uniqueItems": true, "minItems": 1, "items": {"type": "string", "minLength": 1}}
+          }
+        },
+        "required_check_names": {"type": "array", "uniqueItems": true, "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "candidate_checks": {"type": "array", "items": {"$ref": "#/$defs/check"}},
+        "merge_preview_checks": {"type": "array", "items": {"$ref": "#/$defs/check"}},
+        "canonical_full_suite_receipts": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/suiteReceipt"}},
+        "merge_method": {"const": "MERGE_COMMIT"},
+        "branch_protection": {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "target_branch", "required_review", "required_status_checks", "bypass_enabled", "observed_at", "rules_sha256"],
+          "properties": {
+            "status": {"const": "VERIFIED"},
+            "target_branch": {"const": "main"},
+            "required_review": {"const": true},
+            "required_status_checks": {"const": true},
+            "bypass_enabled": {"const": false},
+            "observed_at": {"type": "string", "format": "date-time"},
+            "rules_sha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "owner_approval": {
+          "type": "object", "additionalProperties": false,
+          "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "review_state", "scope", "review_url", "approved_at"],
+          "properties": {
+            "approved": {"const": true},
+            "owner_actor_id": {"type": "integer", "minimum": 1},
+            "approved_pr_number": {"type": "integer", "minimum": 1},
+            "approved_head_sha": {"$ref": "#/$defs/sha1"},
+            "review_state": {"const": "APPROVED"},
+            "scope": {"enum": ["ONE_TIME_R3_BOOTSTRAP_ONLY", "EXACT_RELEASE_PR_ONLY"]},
+            "review_url": {"type": "string", "format": "uri"},
+            "approved_at": {"type": "string", "format": "date-time"}
+          }
+        },
+        "publication": {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "actual_final_main_sha", "actual_final_main_tree_sha", "actual_final_main_parents", "observed_remote_main_sha", "fresh_main_checkout_sha", "postpublication_checks", "projection_check"],
+          "properties": {
+            "status": {"enum": ["NOT_MERGED", "MERGED_PENDING_POSTPUBLICATION_VALIDATION", "PUBLISHED_UNVERIFIED", "PUBLISHED_AND_VERIFIED"]},
+            "actual_final_main_sha": {"oneOf": [{"$ref": "#/$defs/sha1"}, {"type": "null"}]},
+            "actual_final_main_tree_sha": {"oneOf": [{"$ref": "#/$defs/sha1"}, {"type": "null"}]},
+            "actual_final_main_parents": {"oneOf": [{"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}}, {"type": "null"}]},
+            "observed_remote_main_sha": {"oneOf": [{"$ref": "#/$defs/sha1"}, {"type": "null"}]},
+            "fresh_main_checkout_sha": {"oneOf": [{"$ref": "#/$defs/sha1"}, {"type": "null"}]},
+            "postpublication_checks": {"type": "array", "items": {"$ref": "#/$defs/check"}},
+            "projection_check": {
+              "oneOf": [
+                {"type": "null"},
+                {"type": "object", "additionalProperties": false, "required": ["status", "source_sha", "unexpected_changed_paths"], "properties": {"status": {"const": "PASS"}, "source_sha": {"$ref": "#/$defs/sha1"}, "unexpected_changed_paths": {"type": "array", "items": {"type": "string"}}}}
+              ]
+            }
+          }
+        }
+      }
+    },
+    "activationReceipt": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "migration_scope", "r3_protocol_blob_sha", "prepublication_record_sha256", "prepublication_validation_status", "pr_number", "pr_url", "pr_base_branch", "pr_head_ref", "task_branch", "pr_merged", "pr_merge_commit_sha", "base_main_sha", "candidate_head_sha", "candidate_tree_sha", "merge_preview_sha", "merge_preview_tree_sha", "merge_preview_parents", "actual_final_main_sha", "actual_final_main_tree_sha", "actual_final_main_parents", "observed_remote_main_sha", "fresh_main_clone_head_sha", "merge_method", "branch_protection_verified", "branch_protection_rules_sha256", "owner_approved_before_merge", "owner_approval", "postpublication_checks", "published_at"],
+      "properties": {
+        "status": {"const": "PUBLISHED_AND_VERIFIED"},
+        "migration_scope": {"const": "ONE_TIME_R3_BOOTSTRAP_ONLY"},
+        "r3_protocol_blob_sha": {"$ref": "#/$defs/sha1"},
+        "prepublication_record_sha256": {"$ref": "#/$defs/sha256"},
+        "prepublication_validation_status": {"const": "VALIDATED"},
+        "pr_number": {"type": "integer", "minimum": 1},
+        "pr_url": {"type": "string", "pattern": "^https://github\\.com/Arvin-liu/when-systems-catch-fire/pull/[0-9]+$"},
+        "pr_base_branch": {"const": "main"},
+        "pr_head_ref": {"type": "string", "minLength": 1},
+        "task_branch": {"type": "string", "minLength": 1},
+        "pr_merged": {"const": true},
+        "pr_merge_commit_sha": {"$ref": "#/$defs/sha1"},
+        "base_main_sha": {"$ref": "#/$defs/sha1"},
+        "candidate_head_sha": {"$ref": "#/$defs/sha1"},
+        "candidate_tree_sha": {"$ref": "#/$defs/sha1"},
+        "merge_preview_sha": {"$ref": "#/$defs/sha1"},
+        "merge_preview_tree_sha": {"$ref": "#/$defs/sha1"},
+        "merge_preview_parents": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}},
+        "actual_final_main_sha": {"$ref": "#/$defs/sha1"},
+        "actual_final_main_tree_sha": {"$ref": "#/$defs/sha1"},
+        "actual_final_main_parents": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}},
+        "observed_remote_main_sha": {"$ref": "#/$defs/sha1"},
+        "fresh_main_clone_head_sha": {"$ref": "#/$defs/sha1"},
+        "merge_method": {"const": "MERGE_COMMIT"},
+        "branch_protection_verified": {"const": true},
+        "branch_protection_rules_sha256": {"$ref": "#/$defs/sha256"},
+        "owner_approved_before_merge": {"const": true},
+        "owner_approval": {
+          "type": "object", "additionalProperties": false,
+          "required": ["approved", "owner_actor_id", "approved_pr_number", "approved_head_sha", "review_state", "scope", "review_url", "approved_at"],
+          "properties": {
+            "approved": {"const": true},
+            "owner_actor_id": {"type": "integer", "minimum": 1},
+            "approved_pr_number": {"type": "integer", "minimum": 1},
+            "approved_head_sha": {"$ref": "#/$defs/sha1"},
+            "review_state": {"const": "APPROVED"},
+            "scope": {"const": "ONE_TIME_R3_BOOTSTRAP_ONLY"},
+            "review_url": {"type": "string", "format": "uri"},
+            "approved_at": {"type": "string", "format": "date-time"}
+          }
+        },
+        "postpublication_checks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/check"}},
+        "published_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "liveObservations": {
+      "type": "object", "additionalProperties": false,
+      "required": ["observation_source", "observed_at", "repository_owner_id", "prepublication_record_sha256", "prepublication_validation_status", "pr_number", "pr_url", "pr_base_branch", "pr_head_ref", "pr_merged", "pr_merge_commit_sha", "pr_head_sha", "remote_main_sha", "final_main_tree_sha", "final_main_parents", "fresh_main_clone_head_sha", "branch_protection_status", "branch_protection_rules_sha256", "branch_protection_rules", "required_check_names", "postpublication_checks", "owner_review_actor_id", "owner_review_state", "owner_review_pr_number", "owner_review_head_sha", "owner_review_url"],
+      "properties": {
+        "observation_source": {"const": "authenticated_github_and_fresh_clone_readback_and_1111_receipt_readback"},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "repository_owner_id": {"type": "integer", "minimum": 1},
+        "prepublication_record_sha256": {"$ref": "#/$defs/sha256"},
+        "prepublication_validation_status": {"const": "VALIDATED"},
+        "pr_number": {"type": "integer", "minimum": 1},
+        "pr_url": {"type": "string", "pattern": "^https://github\\.com/Arvin-liu/when-systems-catch-fire/pull/[0-9]+$"},
+        "pr_base_branch": {"const": "main"},
+        "pr_head_ref": {"type": "string", "minLength": 1},
+        "pr_merged": {"const": true},
+        "pr_merge_commit_sha": {"$ref": "#/$defs/sha1"},
+        "pr_head_sha": {"$ref": "#/$defs/sha1"},
+        "remote_main_sha": {"$ref": "#/$defs/sha1"},
+        "final_main_tree_sha": {"$ref": "#/$defs/sha1"},
+        "final_main_parents": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/sha1"}},
+        "fresh_main_clone_head_sha": {"$ref": "#/$defs/sha1"},
+        "branch_protection_status": {"const": "VERIFIED"},
+        "branch_protection_rules_sha256": {"$ref": "#/$defs/sha256"},
+        "branch_protection_rules": {
+          "type": "object", "additionalProperties": false,
+          "required": ["target_branch", "required_review", "required_status_checks", "bypass_enabled", "direct_main_push_allowed", "required_check_names"],
+          "properties": {
+            "target_branch": {"const": "main"},
+            "required_review": {"const": true},
+            "required_status_checks": {"const": true},
+            "bypass_enabled": {"const": false},
+            "direct_main_push_allowed": {"const": false},
+            "required_check_names": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+          }
+        },
+        "required_check_names": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "postpublication_checks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/check"}},
+        "owner_review_actor_id": {"type": "integer", "minimum": 1},
+        "owner_review_state": {"const": "APPROVED"},
+        "owner_review_pr_number": {"type": "integer", "minimum": 1},
+        "owner_review_head_sha": {"$ref": "#/$defs/sha1"},
+        "owner_review_url": {"type": "string", "format": "uri"}
+      }
+    }
+  }
+}
