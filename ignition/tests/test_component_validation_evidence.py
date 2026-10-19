@@ -28,7 +28,10 @@ class ComponentValidationEvidenceTest(unittest.TestCase):
         module = self.validation_map["targets"][
             next(i for i, item in enumerate(self.validation_map["targets"]) if item["target_id"] == target_id)
         ]["modules"][0]
-        test_report = f"test_passes ({module}.Fixture.test_passes) ... ok\n"
+        test_report = (
+            f"test_passes ({module}.Fixture.test_passes) ... ok\n\n"
+            "Ran 1 test in 0.001s\n\nOK\n"
+        )
         plan = {
             "schema_version": "1.0.0",
             "mode": "TARGETED",

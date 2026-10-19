@@ -52,7 +52,11 @@ class ComponentReleasePreparationTest(unittest.TestCase):
 
     def _evidence(self, directory, source_sha):
         module = self.r_target["modules"][0]
-        test_report = "R tests passed\n"
+        test_id = f"{module}.Fixture.test_research"
+        test_report = (
+            f"test_research ({test_id}) ... ok\n\n"
+            "Ran 1 test in 0.001s\n\nOK\n"
+        )
         plan = {
             "schema_version": "1.0.0",
             "mode": "TARGETED",
@@ -86,7 +90,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
                     "skipped": 0,
                     "expected_failures": [],
                     "unexpected_successes": [],
-                    "test_outcomes": [{"test": f"{module}.Fixture.test_research", "status": "passed"}],
+                    "test_outcomes": [{"test": test_id, "status": "passed"}],
                     "test_report": test_report,
                     "test_report_sha256": hashlib.sha256(test_report.encode("utf-8")).hexdigest(),
                     "test_report_bytes": len(test_report.encode("utf-8")),

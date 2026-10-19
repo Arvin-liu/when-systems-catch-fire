@@ -103,6 +103,7 @@ def verify_evidence(
         if not isinstance(report, str):
             _fail(f"target {target_id} has no auditable test report")
         report_bytes = report.encode("utf-8")
+        report_lines = report.rstrip().splitlines()
         if (
             not isinstance(test_count, int) or isinstance(test_count, bool) or test_count <= 0
             or tests.get("modules") != modules
@@ -122,6 +123,10 @@ def verify_evidence(
                 or not any(item["test"].startswith(module + ".") for module in modules)
                 for item in outcomes
             )
+            or any(item["test"] not in report for item in outcomes)
+            or not any(line.startswith(f"Ran {test_count} test") for line in report_lines)
+            or not report_lines
+            or report_lines[-1] != "OK"
             or len({item["test"] for item in outcomes if isinstance(item, dict) and isinstance(item.get("test"), str)}) != len(outcomes)
             or tests.get("test_report_sha256") != hashlib.sha256(report_bytes).hexdigest()
             or tests.get("test_report_bytes") != len(report_bytes)
