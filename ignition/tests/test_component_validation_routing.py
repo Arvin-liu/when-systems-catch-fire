@@ -93,6 +93,13 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["seed_components"], ["ai_guide"])
         self.assertEqual(result["selected_target_ids"], ["o_human_result_consumers"])
 
+    def test_human_usage_guide_routes_to_operating_method_consumers(self):
+        result = self.plan(["ignition/docs/USAGE.md"])
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertEqual(result["domains"], ["G"])
+        self.assertEqual(result["seed_components"], ["usage"])
+        self.assertEqual(result["selected_target_ids"], ["g_operating_method_consumers"])
+
     def test_g_only_change_selects_governance_controls(self):
         result = self.plan(["data/governance/history-remediation-register.json"])
         self.assertEqual(result["mode"], "TARGETED")

@@ -212,6 +212,19 @@
       "evidence": "The PR changes AI-facing entry and handoff guides; these are human-facing output surfaces and use the O surface consumer target."
     },
     {
+      "component_id": "usage",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_operating_method_consumers"
+      ],
+      "change_classifications": [
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The registry assigns docs/USAGE.md as the human usage entry; its operating-method links and READ_ONLY_RUN boundary are checked by the registered G operating-method consumers."
+    },
+    {
       "component_id": "component_validation_router",
       "domains": [
         "G"
