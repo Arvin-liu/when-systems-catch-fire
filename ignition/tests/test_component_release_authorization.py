@@ -15,7 +15,7 @@ class ComponentReleaseAuthorizationTest(unittest.TestCase):
         return {
             "id": review_id,
             "state": state,
-            "user": {"login": login},
+            "user": {"login": login, "type": "User"},
             "commit_id": commit_id or self.head_sha,
             "submitted_at": submitted_at,
         }
@@ -59,6 +59,11 @@ class ComponentReleaseAuthorizationTest(unittest.TestCase):
     def test_review_without_a_reviewer_identity_does_not_count(self):
         review = self.review(10, "APPROVED", login="reviewer")
         review["user"] = None
+        self.assertFalse(independent_approval_is_current([review], "Arvin-liu", self.head_sha, self.merged_at))
+
+    def test_bot_approval_does_not_count_as_an_independent_human_review(self):
+        review = self.review(10, "APPROVED", login="reviewer")
+        review["user"]["type"] = "Bot"
         self.assertFalse(independent_approval_is_current([review], "Arvin-liu", self.head_sha, self.merged_at))
 
     def test_missing_pr_author_identity_fails_closed(self):

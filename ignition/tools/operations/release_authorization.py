@@ -28,7 +28,8 @@ def current_independent_approvals(
     for review in reviews:
         reviewer = review.get("user")
         login = reviewer.get("login") if isinstance(reviewer, dict) else None
-        if not isinstance(login, str) or not login.strip():
+        if (not isinstance(reviewer, dict) or reviewer.get("type") != "User"
+                or not isinstance(login, str) or not login.strip()):
             continue
         if (login.casefold() == author.casefold() or review.get("commit_id") != head_sha
                 or review.get("state") not in {"APPROVED", "CHANGES_REQUESTED", "DISMISSED"}):

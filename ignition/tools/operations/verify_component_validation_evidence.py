@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -97,9 +98,14 @@ def verify_evidence(
             _fail(f"target {target_id} has no test evidence")
         test_count = tests.get("tests_run")
         outcomes = tests.get("test_outcomes")
+        modules = target["modules"]
+        report = tests.get("test_report")
+        if not isinstance(report, str):
+            _fail(f"target {target_id} has no auditable test report")
+        report_bytes = report.encode("utf-8")
         if (
             not isinstance(test_count, int) or isinstance(test_count, bool) or test_count <= 0
-            or tests.get("modules") != target["modules"]
+            or tests.get("modules") != modules
             or tests.get("tests_executed") != test_count
             or tests.get("skipped") != 0
             or tests.get("failures") != 0
@@ -111,6 +117,14 @@ def verify_evidence(
             or not isinstance(outcomes, list)
             or len(outcomes) != test_count
             or any(not isinstance(item, dict) or item.get("status") != "passed" for item in outcomes)
+            or any(
+                not isinstance(item.get("test"), str)
+                or not any(item["test"].startswith(module + ".") for module in modules)
+                for item in outcomes
+            )
+            or len({item["test"] for item in outcomes if isinstance(item, dict) and isinstance(item.get("test"), str)}) != len(outcomes)
+            or tests.get("test_report_sha256") != hashlib.sha256(report_bytes).hexdigest()
+            or tests.get("test_report_bytes") != len(report_bytes)
             or not isinstance(tests.get("test_report_sha256"), str)
             or not SHA64.fullmatch(tests["test_report_sha256"])
             or not isinstance(tests.get("test_report_bytes"), int)

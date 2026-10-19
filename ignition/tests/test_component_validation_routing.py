@@ -100,6 +100,30 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["seed_components"], ["usage"])
         self.assertEqual(result["selected_target_ids"], ["g_operating_method_consumers"])
 
+    def test_foundation_only_change_requires_full_regression_and_actual_consumer_targets(self):
+        result = self.plan(["data/foundation/README.md"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], ["foundation"])
+        self.assertEqual(
+            result["selected_target_ids"],
+            [
+                "g_current_state_consumers",
+                "g_epistemic_boundary_consumers",
+                "g_federation_boundary_consumers",
+                "g_foundation_argument_consumers",
+                "g_foundation_formal_consumers",
+                "g_human_front_door_consumers",
+                "g_publication_consumers",
+                "g_repository_path_consumers",
+                "o_human_result_consumers",
+            ],
+        )
+        self.assertEqual(result["domains"], ["G", "O", "R"])
+        self.assertTrue(any(
+            reason == {"kind": "component_requires_full_regression", "component_id": "foundation"}
+            for reason in result["full_regression_reasons"]
+        ))
+
     def test_g_only_change_selects_governance_controls(self):
         result = self.plan(["data/governance/history-remediation-register.json"])
         self.assertEqual(result["mode"], "TARGETED")

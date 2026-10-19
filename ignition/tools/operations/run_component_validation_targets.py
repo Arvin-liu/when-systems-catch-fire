@@ -179,6 +179,7 @@ def _run_suite(
         "expected_failures": result.expected_failure_evidence,
         "unexpected_successes": result.unexpected_success_evidence,
         "test_outcomes": sorted(result.test_outcomes, key=lambda item: (item["test"], item["status"])),
+        "test_report": report,
         "test_report_sha256": hashlib.sha256(report.encode("utf-8")).hexdigest(),
         "test_report_bytes": len(report.encode("utf-8")),
         "duration_seconds": round(duration, 6),

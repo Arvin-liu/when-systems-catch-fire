@@ -51,6 +51,8 @@ class ComponentReleasePreparationTest(unittest.TestCase):
         return self._git(repo, "rev-parse", "HEAD")
 
     def _evidence(self, directory, source_sha):
+        module = self.r_target["modules"][0]
+        test_report = "R tests passed\n"
         plan = {
             "schema_version": "1.0.0",
             "mode": "TARGETED",
@@ -84,9 +86,10 @@ class ComponentReleasePreparationTest(unittest.TestCase):
                     "skipped": 0,
                     "expected_failures": [],
                     "unexpected_successes": [],
-                    "test_outcomes": [{"test": "fixture.test_research", "status": "passed"}],
-                    "test_report_sha256": hashlib.sha256(b"R tests passed").hexdigest(),
-                    "test_report_bytes": len(b"R tests passed"),
+                    "test_outcomes": [{"test": f"{module}.Fixture.test_research", "status": "passed"}],
+                    "test_report": test_report,
+                    "test_report_sha256": hashlib.sha256(test_report.encode("utf-8")).hexdigest(),
+                    "test_report_bytes": len(test_report.encode("utf-8")),
                     "successful": True,
                     "status": "PASSED",
                 },
@@ -147,7 +150,8 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             tests["tests_run"] = 2
             tests["tests_executed"] = 1
             tests["skipped"] = 1
-            tests["test_outcomes"].append({"test": "fixture.test_skip", "status": "skipped"})
+            module = tests["modules"][0]
+            tests["test_outcomes"].append({"test": f"{module}.Fixture.test_skip", "status": "skipped"})
             receipt.pop("receipt_sha256")
             receipt["receipt_sha256"] = digest_json(receipt)
             receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
