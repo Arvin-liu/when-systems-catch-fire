@@ -50,15 +50,17 @@ def current_independent_approvals(
         login: max(events, key=lambda item: (item[1], item[0]["id"]))[0]
         for login, events in by_reviewer.items()
     }
-    if any(review.get("state") == "CHANGES_REQUESTED" for review in current_decisions.values()):
+    merge_decisions = {}
+    for login, events in by_reviewer.items():
+        before_merge = [item for item in events if item[1] < merge_time]
+        if before_merge:
+            merge_decisions[login] = max(before_merge, key=lambda item: (item[1], item[0]["id"]))[0]
+    if (any(review.get("state") == "CHANGES_REQUESTED" for review in current_decisions.values())
+            or any(review.get("state") == "CHANGES_REQUESTED" for review in merge_decisions.values())):
         return []
 
     approvals = []
-    for login, events in by_reviewer.items():
-        before_merge = [item for item in events if item[1] < merge_time]
-        if not before_merge:
-            continue
-        merge_decision = max(before_merge, key=lambda item: (item[1], item[0]["id"]))[0]
+    for login, merge_decision in merge_decisions.items():
         if merge_decision.get("state") != "APPROVED":
             continue
         if current_decisions[login].get("state") != "DISMISSED":

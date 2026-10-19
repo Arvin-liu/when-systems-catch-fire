@@ -112,6 +112,14 @@ class ComponentReleaseAuthorizationTest(unittest.TestCase):
         ]
         self.assertFalse(independent_approval_is_current(reviews, "Arvin-liu", self.head_sha, self.merged_at))
 
+    def test_postmerge_approval_cannot_clear_another_reviewers_merge_time_request(self):
+        reviews = [
+            self.review(10, "CHANGES_REQUESTED", login="reviewer-a", submitted_at="2026-10-18T11:00:00Z"),
+            self.review(11, "APPROVED", login="reviewer-b", submitted_at="2026-10-18T11:10:00Z"),
+            self.review(12, "APPROVED", login="reviewer-a", submitted_at="2026-10-18T13:00:00Z"),
+        ]
+        self.assertFalse(independent_approval_is_current(reviews, "Arvin-liu", self.head_sha, self.merged_at))
+
     def test_postmerge_change_request_blocks_publication(self):
         reviews = [
             self.review(10, "APPROVED", login="reviewer", submitted_at="2026-10-18T11:00:00Z"),
