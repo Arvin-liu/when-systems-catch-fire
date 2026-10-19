@@ -201,6 +201,7 @@
       },
       "path_patterns": [
         "docs/ai-assistant-usage-reference.md",
+        "docs/AI-USAGE.md",
         "AI-START-HERE.md",
         "AI-HANDOFF.md",
         "AGENTS.md",
