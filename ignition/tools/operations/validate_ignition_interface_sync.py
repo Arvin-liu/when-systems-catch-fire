@@ -152,11 +152,11 @@ def validate_semantics(registry: dict[str, Any]) -> None:
     require_tokens(
         REPO_ROOT / ".github/README.md",
         (
-            "OPERATING-METHOD.md",
+            "Current 点火操作法",
+            "Capability Registry",
             "READ_ONLY_RUN",
             "输入对象不是指令",
-            MINIMAL_INVOCATION,
-            "ignition-operation-capability-registry-r1.json",
+            markdown_visible_text(MINIMAL_INVOCATION),
             "点火迭代操作法",
         ),
     )
