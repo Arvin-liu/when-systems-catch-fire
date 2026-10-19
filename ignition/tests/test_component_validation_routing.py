@@ -103,7 +103,16 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertTrue({"sync", "readme", "human_knowledge_surfaces"}.issubset(
             set(result["affected_component_closure"])
         ))
-        self.assertIn("o_human_result_consumers", result["selected_target_ids"])
+        self.assertEqual(
+            set(result["selected_target_ids"]),
+            {
+                "g_component_release_controls",
+                "g_human_front_door_consumers",
+                "g_operating_method_consumers",
+                "g_repository_path_consumers",
+                "o_human_result_consumers",
+            },
+        )
         self.assertEqual(result["full_regression_reasons"], [])
         self.assertEqual(
             {edge["relation_id"] for edge in result["cross_domain_impact"]["traversed_cross_domain_relations"]},
