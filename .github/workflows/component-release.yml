@@ -20,7 +20,7 @@ on:
         required: true
         type: string
       authorization_pr_number:
-        description: Merged component PR with an exact-head approval from the repository owner
+        description: Merged component PR with an independent approval on its exact final head
         required: true
         type: string
       previous_release_tag:
@@ -102,25 +102,24 @@ jobs:
           repository: ${{ github.repository }}
           github-token: ${{ github.token }}
           path: ${{ runner.temp }}/main-witness
-      - name: Verify Owner-approved merged component PR
+      - name: Verify independently reviewed merged component PR
         env:
           GH_TOKEN: ${{ github.token }}
           AUTHORIZATION_PR: ${{ inputs.authorization_pr_number }}
           EXPECTED_SHA: ${{ github.sha }}
-          REPOSITORY_OWNER: ${{ github.repository_owner }}
           PR_FILE: ${{ runner.temp }}/authorization-pr.json
           REVIEWS_FILE: ${{ runner.temp }}/authorization-reviews.jsonl
           FILES_FILE: ${{ runner.temp }}/authorization-files.jsonl
+          AUTHORIZATION_EVIDENCE_FILE: ${{ runner.temp }}/component-authorization.json
         run: |
           gh api "repos/$GITHUB_REPOSITORY/pulls/$AUTHORIZATION_PR" > "$PR_FILE"
           gh api --paginate --jq '.[]' "repos/$GITHUB_REPOSITORY/pulls/$AUTHORIZATION_PR/reviews" > "$REVIEWS_FILE"
           gh api --paginate --jq '.[]' "repos/$GITHUB_REPOSITORY/pulls/$AUTHORIZATION_PR/files" > "$FILES_FILE"
-          python3 - "$PR_FILE" "$REVIEWS_FILE" "$FILES_FILE" "$REPOSITORY_OWNER" <<'PY'
+          python3 - "$PR_FILE" "$REVIEWS_FILE" "$FILES_FILE" <<'PY'
           import json, os, pathlib, subprocess, sys
           pr = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
           reviews = [json.loads(line) for line in pathlib.Path(sys.argv[2]).read_text(encoding="utf-8").splitlines() if line.strip()]
           files = [json.loads(line) for line in pathlib.Path(sys.argv[3]).read_text(encoding="utf-8").splitlines() if line.strip()]
-          owner = sys.argv[4]
           if pr.get("state") != "closed" or not pr.get("merged_at") or pr.get("base", {}).get("ref") != "main":
               raise SystemExit("authorization PR must be merged to main")
           head_sha = pr.get("head", {}).get("sha")
@@ -128,9 +127,12 @@ jobs:
           if not head_sha or not merge_sha:
               raise SystemExit("authorization PR is missing its exact head or merge commit")
           sys.path.insert(0, str(pathlib.Path("ignition/tools/operations").resolve()))
-          from release_authorization import owner_approval_is_current
-          if not owner_approval_is_current(reviews, owner, head_sha):
-              raise SystemExit("authorization PR requires an Owner approval bound to its final head SHA")
+          from release_authorization import current_independent_approvals
+          independent_approvals = current_independent_approvals(
+              reviews, pr.get("user", {}).get("login", ""), head_sha, pr.get("merged_at")
+          )
+          if not independent_approvals:
+              raise SystemExit("authorization PR requires a non-author approval bound to its final head SHA")
           if not any(item.get("filename", "").startswith("ignition/research_workflow/") for item in files):
               raise SystemExit("authorization PR does not contain the research workflow component source")
           subprocess.run(["git", "merge-base", "--is-ancestor", merge_sha, os.environ["EXPECTED_SHA"]], check=True)
@@ -144,6 +146,19 @@ jobs:
               for pattern in components[component_id]["path_patterns"]
           })
           subprocess.run(["git", "diff", "--quiet", merge_sha, os.environ["EXPECTED_SHA"], "--", *source_paths], check=True)
+          authorization = {
+              "schema_version": "component-release-authorization-r1",
+              "authorization_pr_number": pr["number"],
+              "authorization_pr_head_sha": head_sha,
+              "authorization_pr_merge_commit_sha": merge_sha,
+              "authorization_pr_merged_at": pr["merged_at"],
+              "source_main_sha": os.environ["EXPECTED_SHA"],
+              "independent_approvals": [
+                  {"review_id": review["id"], "reviewer": review["user"]["login"], "reviewed_head_sha": review["commit_id"], "submitted_at": review["submitted_at"], "state": review["state"]}
+                  for review in independent_approvals
+              ],
+          }
+          pathlib.Path(os.environ["AUTHORIZATION_EVIDENCE_FILE"]).write_text(json.dumps(authorization, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
           PY
       - name: Verify exact plan and receipt for this main SHA
         env:
@@ -233,6 +248,11 @@ jobs:
           PREVIOUS_RELEASE_TAG: ${{ inputs.previous_release_tag }}
           SOURCE_SHA: ${{ github.sha }}
           AUTHORIZATION_PR: ${{ inputs.authorization_pr_number }}
+          AUTHORIZATION_ACTOR: ${{ github.actor }}
+          AUTHORIZATION_TRIGGERING_ACTOR: ${{ github.triggering_actor || github.actor }}
+          AUTHORIZATION_RUN_ID: ${{ github.run_id }}
+          AUTHORIZATION_RUN_ATTEMPT: ${{ github.run_attempt }}
+          AUTHORIZATION_EVIDENCE_FILE: ${{ runner.temp }}/component-authorization.json
           VALIDATION_RUN_ID: ${{ inputs.validation_run_id }}
           VALIDATION_RUN_ATTEMPT: ${{ inputs.validation_run_attempt }}
           OUTPUT_DIR: ${{ runner.temp }}/component-release
@@ -260,8 +280,13 @@ jobs:
           import json, os, pathlib, sys
           release = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
           manifest = json.loads(pathlib.Path(sys.argv[2]).read_text(encoding="utf-8"))
+          authorization = json.loads(pathlib.Path(os.environ["AUTHORIZATION_EVIDENCE_FILE"]).read_text(encoding="utf-8"))
           if release.get("tagName") != manifest.get("release_tag") or release.get("isDraft") is not False or not release.get("url"):
               raise SystemExit("GitHub release metadata does not match the prepared component release")
+          if authorization.get("authorization_pr_number") != int(os.environ["AUTHORIZATION_PR"]):
+              raise SystemExit("release authorization evidence names a different component PR")
+          if authorization.get("source_main_sha") != os.environ["SOURCE_SHA"] or not authorization.get("independent_approvals"):
+              raise SystemExit("release authorization evidence is incomplete or bound to another main SHA")
           receipt = {
               "schema_version": "component-publication-witness-r1",
               "release_status": "PUBLISHED",
@@ -275,6 +300,15 @@ jobs:
               "validation_plan_sha256": manifest["validation"]["plan_sha256"],
               "validation_receipt_sha256": manifest["validation"]["receipt_sha256"],
               "authorization_pr_number": int(os.environ["AUTHORIZATION_PR"]),
+              "authorization_pr_head_sha": authorization["authorization_pr_head_sha"],
+              "authorization_pr_merge_commit_sha": authorization["authorization_pr_merge_commit_sha"],
+              "authorization_pr_merged_at": authorization["authorization_pr_merged_at"],
+              "authorization_independent_approvals": authorization["independent_approvals"],
+              "authorization_source_main_sha": authorization["source_main_sha"],
+              "authorization_actor": os.environ["AUTHORIZATION_ACTOR"],
+              "authorization_triggering_actor": os.environ["AUTHORIZATION_TRIGGERING_ACTOR"],
+              "authorization_run_id": os.environ["AUTHORIZATION_RUN_ID"],
+              "authorization_run_attempt": os.environ["AUTHORIZATION_RUN_ATTEMPT"],
               "validation_run_id": os.environ["VALIDATION_RUN_ID"],
               "validation_run_attempt": os.environ["VALIDATION_RUN_ATTEMPT"],
               "claim_ceiling": "GitHub Release exists for this exact content-addressed artifact; runtime activation is not established",
