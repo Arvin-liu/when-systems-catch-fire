@@ -15,6 +15,7 @@ from tools.operations.prepare_component_release import (
     simulate_rollback,
     validate_release_manifest,
 )
+from tools.operations.run_component_validation_targets import collect_registered_test_ids
 
 
 class ComponentReleasePreparationTest(unittest.TestCase):
@@ -38,6 +39,16 @@ class ComponentReleasePreparationTest(unittest.TestCase):
         self._git(repo, "config", "user.email", "component@example.invalid")
         files = {
             "ignition/research_workflow/slot.py": "VERSION = 'r1'\n",
+            "ignition/research_workflow/test_pluggable_slot.py": (
+                "import unittest\n"
+                "class Fixture(unittest.TestCase):\n"
+                "    def test_research(self): pass\n"
+            ),
+            "ignition/research_workflow/test_research_workflow.py": (
+                "import unittest\n"
+                "class Fixture(unittest.TestCase):\n"
+                "    def test_research(self): pass\n"
+            ),
             "ignition/scripts/external-research/openalex_client.py": "PROVIDER = 'openalex'\n",
         }
         if include_crossref:
@@ -50,13 +61,14 @@ class ComponentReleasePreparationTest(unittest.TestCase):
         self._git(repo, "commit", "-m", "R component source")
         return self._git(repo, "rev-parse", "HEAD")
 
-    def _evidence(self, directory, source_sha):
-        module = self.r_target["modules"][0]
-        test_id = f"{module}.Fixture.test_research"
-        test_report = (
-            f"test_research ({test_id}) ... ok\n\n"
-            "Ran 1 test in 0.001s\n\nOK\n"
+    def _evidence(self, directory, source_sha, repo):
+        test_ids = collect_registered_test_ids(
+            self.r_target["modules"], repo_root=repo,
+            import_roots=self.r_target.get("import_roots", []), validation_sha=source_sha,
         )
+        report_lines = [f"{test_id.rsplit('.', 1)[-1]} ({test_id}) ... ok" for test_id in test_ids]
+        test_word = "test" if len(test_ids) == 1 else "tests"
+        test_report = "\n".join(report_lines) + f"\n\nRan {len(test_ids)} {test_word} in 0.001s\n\nOK\n"
         plan = {
             "schema_version": "1.0.0",
             "mode": "TARGETED",
@@ -83,14 +95,14 @@ class ComponentReleasePreparationTest(unittest.TestCase):
                 "successful": True,
                 "tests": {
                     "modules": self.r_target["modules"],
-                    "tests_run": 1,
-                    "tests_executed": 1,
+                    "tests_run": len(test_ids),
+                    "tests_executed": len(test_ids),
                     "failures": 0,
                     "errors": 0,
                     "skipped": 0,
                     "expected_failures": [],
                     "unexpected_successes": [],
-                    "test_outcomes": [{"test": test_id, "status": "passed"}],
+                    "test_outcomes": [{"test": test_id, "status": "passed"} for test_id in test_ids],
                     "test_report": test_report,
                     "test_report_sha256": hashlib.sha256(test_report.encode("utf-8")).hexdigest(),
                     "test_report_bytes": len(test_report.encode("utf-8")),
@@ -121,7 +133,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             repo = parent / "source"
             repo.mkdir()
             source_sha = self._source_repository(repo)
-            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha)
+            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha, repo)
             first = self._prepare(repo, source_sha, parent / "first", "1.0.0", plan_path, receipt_path)
             second = self._prepare(repo, source_sha, parent / "second", "1.0.0", plan_path, receipt_path)
             first_archive = parent / "first" / first["artifact_file"]
@@ -129,7 +141,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             self.assertEqual(first["artifact_state"], "CONTENT_ADDRESSED")
             self.assertEqual(first["artifact_sha256"], second["artifact_sha256"])
             self.assertEqual(first_archive.read_bytes(), second_archive.read_bytes())
-            self.assertEqual(len(first["files"]), 3)
+            self.assertEqual(len(first["files"]), 5)
             verified = validate_release_manifest(first, first_archive, repo_root=repo)
             self.assertEqual(verified["source_commit_sha"], source_sha)
 
@@ -139,7 +151,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             repo = parent / "source"
             repo.mkdir()
             source_sha = self._source_repository(repo, include_crossref=False)
-            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha)
+            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha, repo)
             with self.assertRaisesRegex(RoutingBlocked, "no regular source files.*crossref_verifier_r1"):
                 self._prepare(repo, source_sha, parent / "release", "1.0.0", plan_path, receipt_path)
 
@@ -149,7 +161,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             repo = parent / "source"
             repo.mkdir()
             source_sha = self._source_repository(repo)
-            plan_path, receipt_path, _, receipt = self._evidence(parent, source_sha)
+            plan_path, receipt_path, _, receipt = self._evidence(parent, source_sha, repo)
             tests = receipt["target_results"][0]["tests"]
             tests["tests_run"] = 2
             tests["tests_executed"] = 1
@@ -168,7 +180,7 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             repo = parent / "source"
             repo.mkdir()
             source_sha = self._source_repository(repo)
-            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha)
+            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha, repo)
             manifest = self._prepare(repo, source_sha, parent / "release", "1.0.0", plan_path, receipt_path)
             archive_path = parent / "release" / manifest["artifact_file"]
             archive_path.write_bytes(archive_path.read_bytes() + b"tamper")
@@ -181,12 +193,13 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             repo = parent / "source"
             repo.mkdir()
             source_sha = self._source_repository(repo)
-            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha)
+            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha, repo)
             earlier = self._prepare(repo, source_sha, parent / "v1", "1.0.0", plan_path, receipt_path)
             current = self._prepare(repo, source_sha, parent / "v2", "1.1.0", plan_path, receipt_path)
             event = simulate_rollback(
                 current, parent / "v2" / current["artifact_file"],
                 earlier, parent / "v1" / earlier["artifact_file"],
+                repo_root=repo,
             )
             self.assertEqual(event["release_status"], "SIMULATED_UNPUBLISHED")
             self.assertFalse(event["activation_performed"])
@@ -198,13 +211,14 @@ class ComponentReleasePreparationTest(unittest.TestCase):
             repo = parent / "source"
             repo.mkdir()
             source_sha = self._source_repository(repo)
-            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha)
+            plan_path, receipt_path, _, _ = self._evidence(parent, source_sha, repo)
             earlier = self._prepare(repo, source_sha, parent / "v1", "1.0.0", plan_path, receipt_path)
             current = self._prepare(repo, source_sha, parent / "v2", "1.1.0", plan_path, receipt_path)
             with self.assertRaisesRegex(RoutingBlocked, "earlier component version"):
                 simulate_rollback(
                     earlier, parent / "v1" / earlier["artifact_file"],
                     current, parent / "v2" / current["artifact_file"],
+                    repo_root=repo,
                 )
 
     def test_publication_witness_uses_named_environment_inputs_after_release_creation(self):

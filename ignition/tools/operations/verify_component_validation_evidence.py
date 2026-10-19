@@ -18,6 +18,10 @@ from tools.operations.route_component_validation import (  # noqa: E402
     digest_json,
     load_json,
 )
+from tools.operations.run_component_validation_targets import (  # noqa: E402
+    CHECKOUT_ROOT,
+    collect_registered_test_ids,
+)
 
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
 SHA64 = re.compile(r"^[0-9a-f]{64}$")
@@ -30,6 +34,7 @@ def _fail(message: str) -> None:
 def verify_evidence(
     plan: dict[str, Any], receipt: dict[str, Any], *, expected_validation_sha: str,
     expected_mode: str, validation_map: dict[str, Any] | None = None,
+    repo_root: Path | None = None,
 ) -> dict[str, Any]:
     """Fail closed unless every declared target has complete successful evidence."""
     if not SHA40.fullmatch(expected_validation_sha):
@@ -55,6 +60,7 @@ def verify_evidence(
         _fail("plan validation SHA does not match the exact workflow commit")
 
     validation_map = validation_map or load_json(MAP_PATH)
+    repo_root = (repo_root or CHECKOUT_ROOT).resolve()
     targets = {item["target_id"]: item for item in validation_map["targets"]}
     expected_map_hash = digest_json(validation_map)
     if plan.get("validation_map_sha256") != expected_map_hash:
@@ -88,6 +94,16 @@ def verify_evidence(
     result_ids = [item.get("target_id") if isinstance(item, dict) else None for item in result_docs]
     if result_ids != selected:
         _fail("receipt target IDs do not exactly match the plan target IDs")
+
+    collected_ids_by_target = {
+        target_id: set(collect_registered_test_ids(
+            targets[target_id]["modules"],
+            repo_root=repo_root,
+            import_roots=targets[target_id].get("import_roots", []),
+            validation_sha=expected_validation_sha,
+        ))
+        for target_id in selected
+    }
 
     for result, target_id in zip(result_docs, selected):
         target = targets[target_id]
@@ -137,6 +153,9 @@ def verify_evidence(
             or tests["test_report_bytes"] <= 0
         ):
             _fail(f"target {target_id} test results are incomplete, skipped, or unsuccessful")
+        outcome_ids = {item["test"] for item in outcomes if isinstance(item, dict) and isinstance(item.get("test"), str)}
+        if outcome_ids != collected_ids_by_target[target_id]:
+            _fail(f"target {target_id} test outcomes do not match the registered test collection")
 
         expected_commands = target.get("command_ids", [])
         command_docs = result.get("commands")

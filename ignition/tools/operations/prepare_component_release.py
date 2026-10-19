@@ -142,7 +142,7 @@ def prepare_release(
     validation_sha = plan.get("source", {}).get("validation_sha")
     evidence = verify_evidence(
         plan, receipt, expected_validation_sha=validation_sha,
-        expected_mode=plan.get("mode"),
+        expected_mode=plan.get("mode"), repo_root=repo_root,
     )
     missing_targets = sorted(set(release_policy["validation_target_ids"]) - set(evidence["selected_target_ids"]))
     if missing_targets:
@@ -264,7 +264,9 @@ def prepare_release(
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     (output_dir / "component-validation-plan.json").write_bytes(plan_bytes)
     (output_dir / "component-validation-receipt.json").write_bytes(receipt_bytes)
-    validate_release_manifest(manifest, archive_path, policy=policy, registry=registry_components)
+    validate_release_manifest(
+        manifest, archive_path, policy=policy, registry=registry_components, repo_root=repo_root,
+    )
     return manifest
 
 
@@ -324,7 +326,7 @@ def validate_release_manifest(
         raise RoutingBlocked("embedded component metadata does not match the external manifest")
     evidence = verify_evidence(
         plan, receipt, expected_validation_sha=manifest["validation"]["validation_sha"],
-        expected_mode=plan.get("mode"),
+        expected_mode=plan.get("mode"), repo_root=repo_root,
     )
     for field in ("plan_sha256", "receipt_sha256", "validation_map_sha256", "validation_sha"):
         if evidence[field] != manifest["validation"][field]:
@@ -366,9 +368,10 @@ def validate_release_manifest(
 def simulate_rollback(
     current_manifest: dict[str, Any], current_archive: Path,
     previous_manifest: dict[str, Any], previous_archive: Path,
+    *, repo_root: Path | None = None,
 ) -> dict[str, Any]:
-    validate_release_manifest(current_manifest, current_archive)
-    validate_release_manifest(previous_manifest, previous_archive)
+    validate_release_manifest(current_manifest, current_archive, repo_root=repo_root)
+    validate_release_manifest(previous_manifest, previous_archive, repo_root=repo_root)
     if current_manifest["component_id"] != previous_manifest["component_id"]:
         raise RoutingBlocked("rollback target must be the same component")
     current_version = tuple(map(int, current_manifest["version"].split(".")))
@@ -415,6 +418,7 @@ def main() -> int:
     validate.add_argument("--manifest", type=Path, required=True)
     validate.add_argument("--archive", type=Path, required=True)
     rollback = commands.add_parser("simulate-rollback")
+    rollback.add_argument("--repo-root", type=Path)
     rollback.add_argument("--current-manifest", type=Path, required=True)
     rollback.add_argument("--current-archive", type=Path, required=True)
     rollback.add_argument("--previous-manifest", type=Path, required=True)
@@ -443,7 +447,10 @@ def main() -> int:
         else:
             current = json.loads(args.current_manifest.read_text(encoding="utf-8"))
             previous = json.loads(args.previous_manifest.read_text(encoding="utf-8"))
-            event = simulate_rollback(current, args.current_archive.resolve(), previous, args.previous_archive.resolve())
+            event = simulate_rollback(
+                current, args.current_archive.resolve(), previous, args.previous_archive.resolve(),
+                repo_root=args.repo_root.resolve() if args.repo_root else None,
+            )
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(json.dumps(event, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
             print(json.dumps(event, ensure_ascii=False, sort_keys=True))

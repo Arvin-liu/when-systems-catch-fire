@@ -146,6 +146,82 @@ def run_modules(
         sys.path[:] = previous_path
 
 
+def collect_registered_test_ids(
+    modules: list[str], *, repo_root: Path = CHECKOUT_ROOT,
+    import_roots: list[str] | None = None, validation_sha: str | None = None,
+) -> list[str]:
+    """Collect the exact unittest IDs loadable from the registered checkout modules."""
+    if not modules:
+        raise RoutingBlocked("an empty module list has no registered test inventory")
+    expected_paths = {
+        module: _module_file(repo_root, module, import_roots, validation_sha=validation_sha)
+        for module in modules
+    }
+    search_paths = [str(repo_root.resolve())]
+    for relative in import_roots or []:
+        candidate = _path_without_symlink_components(
+            repo_root, repo_root / relative, f"test import root {relative}"
+        )
+        if not candidate.is_dir():
+            raise RoutingBlocked(f"selected test import root is missing: {relative}")
+        search_paths.append(str(candidate))
+
+    previous_path = list(sys.path)
+    module_prefixes = {module.split(".", 1)[0] for module in modules}
+    previous_package_modules = {
+        name: module for name, module in sys.modules.items()
+        if any(name == prefix or name.startswith(prefix + ".") for prefix in module_prefixes)
+    }
+    for name in previous_package_modules:
+        sys.modules.pop(name, None)
+    try:
+        sys.path[:0] = search_paths
+        for module, expected in expected_paths.items():
+            spec = importlib.util.find_spec(module)
+            if spec is None or spec.origin is None:
+                raise RoutingBlocked(f"selected test module has no importable origin: {module}")
+            if Path(spec.origin).resolve() != expected.resolve():
+                raise RoutingBlocked(
+                    f"selected test module import origin differs from its registered checkout file: "
+                    f"{module}: {spec.origin} != {expected}"
+                )
+            if module in sys.modules:
+                loaded = getattr(sys.modules[module], "__file__", None)
+                if not loaded or Path(loaded).resolve() != expected.resolve():
+                    raise RoutingBlocked(f"selected test module was already loaded from another path: {module}")
+
+        suite = unittest.defaultTestLoader.loadTestsFromNames(modules)
+        for module, expected in expected_paths.items():
+            loaded = sys.modules.get(module)
+            actual = getattr(loaded, "__file__", None) if loaded else None
+            if not actual or Path(actual).resolve() != expected.resolve():
+                raise RoutingBlocked(f"selected test module did not load from its registered file: {module}")
+
+        def visit(item: unittest.TestSuite | unittest.TestCase):
+            if isinstance(item, unittest.TestSuite):
+                for child in item:
+                    yield from visit(child)
+            elif isinstance(item, unittest.TestCase):
+                yield item.id()
+            else:
+                raise RoutingBlocked(f"registered test loader returned an unsupported item: {type(item).__name__}")
+
+        test_ids = sorted(visit(suite))
+        if not test_ids:
+            raise RoutingBlocked("registered test modules collected no runnable tests")
+        if len(test_ids) != len(set(test_ids)):
+            raise RoutingBlocked("registered test modules collected duplicate test IDs")
+        if any(not any(test_id.startswith(module + ".") for module in modules) for test_id in test_ids):
+            raise RoutingBlocked("registered test collection contains an ID outside its declared modules")
+        return test_ids
+    finally:
+        for name in list(sys.modules):
+            if any(name == prefix or name.startswith(prefix + ".") for prefix in module_prefixes):
+                sys.modules.pop(name, None)
+        sys.modules.update(previous_package_modules)
+        sys.path[:] = previous_path
+
+
 def _run_suite(
     suite: unittest.TestSuite,
     modules: list[str],

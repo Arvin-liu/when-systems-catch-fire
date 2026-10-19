@@ -89,6 +89,7 @@ def create_witness(
             receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
             evidence = verify_evidence(
                 plan, receipt, expected_validation_sha=expected_sha, expected_mode=mode,
+                repo_root=repo_root,
             )
             if plan["source"]["head_sha"] != expected_sha:
                 raise RoutingBlocked("main validation plan head SHA is not the actual pushed main SHA")

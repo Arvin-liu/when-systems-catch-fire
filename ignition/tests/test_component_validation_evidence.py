@@ -10,6 +10,7 @@ from unittest.mock import patch
 from pathlib import Path
 
 from tools.operations.route_component_validation import MAP_PATH, digest_json, load_json
+from tools.operations.run_component_validation_targets import CHECKOUT_ROOT, collect_registered_test_ids
 from tools.operations.verify_component_validation_evidence import RoutingBlocked, verify_evidence
 from tools.operations.write_final_main_witness import create_witness
 
@@ -22,16 +23,22 @@ class ComponentValidationEvidenceTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.validation_map = load_json(MAP_PATH)
+        cls.validation_sha = subprocess.run(
+            ["git", "-C", str(CHECKOUT_ROOT), "rev-parse", "HEAD"],
+            check=True, capture_output=True, text=True,
+        ).stdout.strip()
 
     def make_evidence(self):
         target_id = "g_history_remediation_contract"
-        module = self.validation_map["targets"][
-            next(i for i, item in enumerate(self.validation_map["targets"]) if item["target_id"] == target_id)
-        ]["modules"][0]
-        test_report = (
-            f"test_passes ({module}.Fixture.test_passes) ... ok\n\n"
-            "Ran 1 test in 0.001s\n\nOK\n"
+        target = next(item for item in self.validation_map["targets"] if item["target_id"] == target_id)
+        modules = target["modules"]
+        test_ids = collect_registered_test_ids(
+            modules, repo_root=CHECKOUT_ROOT, import_roots=target.get("import_roots", []),
+            validation_sha=self.validation_sha,
         )
+        report_lines = [f"{test_id.rsplit('.', 1)[-1]} ({test_id}) ... ok" for test_id in test_ids]
+        test_word = "test" if len(test_ids) == 1 else "tests"
+        test_report = "\n".join(report_lines) + f"\n\nRan {len(test_ids)} {test_word} in 0.001s\n\nOK\n"
         plan = {
             "schema_version": "1.0.0",
             "mode": "TARGETED",
@@ -57,17 +64,15 @@ class ComponentValidationEvidenceTest(unittest.TestCase):
                 "domain": "G",
                 "successful": True,
                 "tests": {
-                    "modules": self.validation_map["targets"][
-                        next(i for i, item in enumerate(self.validation_map["targets"]) if item["target_id"] == target_id)
-                    ]["modules"],
-                    "tests_run": 1,
-                    "tests_executed": 1,
+                    "modules": modules,
+                    "tests_run": len(test_ids),
+                    "tests_executed": len(test_ids),
                     "failures": 0,
                     "errors": 0,
                     "skipped": 0,
                     "expected_failures": [],
                     "unexpected_successes": [],
-                    "test_outcomes": [{"test": f"{module}.Fixture.test_passes", "status": "passed"}],
+                    "test_outcomes": [{"test": test_id, "status": "passed"} for test_id in test_ids],
                     "test_report": test_report,
                     "test_report_sha256": hashlib.sha256(test_report.encode("utf-8")).hexdigest(),
                     "test_report_bytes": len(test_report.encode("utf-8")),
@@ -161,6 +166,27 @@ class ComponentValidationEvidenceTest(unittest.TestCase):
                 expected_mode="TARGETED", validation_map=self.validation_map,
             )
 
+    def test_nonexistent_test_id_with_registered_module_prefix_is_rejected(self):
+        plan, receipt = self.make_evidence()
+        tests = receipt["target_results"][0]["tests"]
+        module = tests["modules"][0]
+        fake_id = f"{module}.Fixture.test_passes"
+        report = f"test_passes ({fake_id}) ... ok\n\nRan 1 test in 0.001s\n\nOK\n"
+        tests.update({
+            "tests_run": 1,
+            "tests_executed": 1,
+            "test_outcomes": [{"test": fake_id, "status": "passed"}],
+            "test_report": report,
+            "test_report_sha256": hashlib.sha256(report.encode("utf-8")).hexdigest(),
+            "test_report_bytes": len(report.encode("utf-8")),
+        })
+        self.rehash_receipt(receipt)
+        with self.assertRaisesRegex(RoutingBlocked, "do not match the registered test collection"):
+            verify_evidence(
+                plan, receipt, expected_validation_sha=self.validation_sha,
+                expected_mode="TARGETED", validation_map=self.validation_map,
+            )
+
     def test_duplicate_test_outcomes_are_rejected(self):
         plan, receipt = self.make_evidence()
         tests = receipt["target_results"][0]["tests"]
@@ -194,9 +220,19 @@ class ComponentValidationEvidenceTest(unittest.TestCase):
         self._git(repo, "init", "-q", "-b", "main")
         self._git(repo, "config", "user.name", "Witness Fixture")
         self._git(repo, "config", "user.email", "witness@example.invalid")
+        test_module = repo / "ignition/tests/test_history_remediation_contract.py"
+        test_module.parent.mkdir(parents=True)
+        (test_module.parent / "__init__.py").write_text("", encoding="utf-8")
+        test_module.write_text(
+            "import unittest\n"
+            "class HistoryRemediationContractTest(unittest.TestCase):\n"
+            "    def test_remediation_entries_match_their_schema_without_rewriting_history(self): pass\n"
+            "    def test_summary_is_derived_from_remediation_evidence(self): pass\n",
+            encoding="utf-8",
+        )
         state = repo / "state.txt"
         state.write_text("before\n", encoding="utf-8")
-        self._git(repo, "add", "state.txt")
+        self._git(repo, "add", ".")
         self._git(repo, "commit", "-m", "before")
         before = self._git(repo, "rev-parse", "HEAD")
         state.write_text("final\n", encoding="utf-8")
