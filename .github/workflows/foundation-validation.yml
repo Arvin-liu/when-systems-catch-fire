@@ -271,6 +271,7 @@ jobs:
     needs: [route, full_regression]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Enforce the selected or full validation result
         env:
           ROUTE_RESULT: ${{ needs.route.result }}
