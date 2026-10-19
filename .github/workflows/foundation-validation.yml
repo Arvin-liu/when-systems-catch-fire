@@ -72,7 +72,8 @@ jobs:
         env:
           PLAN_FILE: ${{ runner.temp }}/component-validation-plan.json
           RECEIPT_FILE: ${{ runner.temp }}/component-validation-receipt.json
-        run: python3 tools/operations/run_component_validation_targets.py \
+        run: |
+          python3 tools/operations/run_component_validation_targets.py \
           --repo-root "$GITHUB_WORKSPACE" \
           --plan "$PLAN_FILE" \
           --receipt "$RECEIPT_FILE"
