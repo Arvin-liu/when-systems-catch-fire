@@ -8,6 +8,7 @@ from tools.operations.validate_ignition_interface_sync import (
     REGISTRY_PATH,
     historical_rewrite_violations,
     load_json,
+    markdown_visible_text,
     operation_method_surfaces,
     step11_introduction_commit,
     validate,
@@ -57,6 +58,12 @@ class IgnitionInterfaceSyncTests(unittest.TestCase):
         validate_semantics(self.registry)
         surfaces = {item["surface_id"]: item for item in self.registry["surfaces"]}
         self.assertIn("method.operating", surfaces["method.iteration"]["derived_from"])
+
+    def test_markdown_tokens_use_visible_link_labels_not_destinations(self):
+        source = "请从[这个仓库](https://example.invalid/hidden-token)获取 Current。"
+        visible = markdown_visible_text(source)
+        self.assertIn("请从这个仓库获取", visible)
+        self.assertNotIn("hidden-token", visible)
 
     def test_step11_no_change_digests_are_exact(self):
         validate_preserved_digests(

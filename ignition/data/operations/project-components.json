@@ -201,6 +201,7 @@
       },
       "path_patterns": [
         "docs/ai-assistant-usage-reference.md",
+        "docs/AI-USAGE.md",
         "AI-START-HERE.md",
         "AI-HANDOFF.md",
         "AGENTS.md",
@@ -1542,7 +1543,8 @@
       },
       "path_patterns": [
         "data/governance/history-remediation-register.json",
-        "schemas/governance/history-remediation-entry.schema.json"
+        "schemas/governance/history-remediation-entry.schema.json",
+        "tests/test_history_remediation_contract.py"
       ]
     },
     {
@@ -2102,8 +2104,111 @@
       "lifecycle": {"source": "agent_federation/executor_admission_contract.py", "status": "current", "version": "R1"},
       "map_projection": {"group": "federation", "visible": true},
       "path_patterns": ["agent_federation/executor_admission_contract.py", "schemas/operations/executor-admission-contract-r1.schema.json", "data/operations/executor-admission-contract-r1.json", "tools/validate_executor_admission_contract.py", "data/operations/iterations/142/local-executor-census-r2.json", "tests/test_executor_admission_contract.py"]
+    },
+    {
+        "authority": "canonical",
+        "canonical_target": "scripts/external-research/openalex_client.py",
+        "component_id": "openalex_adapter_r1",
+        "component_type": "operation_control",
+        "description": "PR #259 candidate OpenAlex adapter used by the research workflow slot; this component declaration grants no source access or publication authority.",
+        "label": "OpenAlex Research Adapter R1",
+        "layer_or_overlay": "infrastructure",
+        "lifecycle": {
+            "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
+            "status": "draft_candidate",
+            "version": "R1"
+        },
+        "map_projection": {
+            "represented_by": "research_pack_reos_light",
+            "no_change_reason": "The candidate adapter is an implementation detail of the visible research pack and does not add an architecture node.",
+            "visible": false
+        },
+        "path_patterns": [
+            "scripts/external-research/openalex_client.py"
+        ]
+    },
+    {
+        "authority": "canonical",
+        "canonical_target": "research_workflow/SLOT.md",
+        "component_id": "research_workflow_slot",
+        "component_type": "operation_control",
+      "description": "PR #259 candidate research workflow package, including the live CLI and source-binding slot; it does not acquire authority to alter review or release decisions.",
+      "label": "Research Workflow R1",
+        "layer_or_overlay": "infrastructure",
+        "lifecycle": {
+            "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
+            "status": "draft_candidate",
+            "version": "R1"
+        },
+        "map_projection": {
+            "represented_by": "research_pack_reos_light",
+            "no_change_reason": "The workflow slot is an implementation detail of the visible research pack and does not add an architecture node.",
+            "visible": false
+        },
+        "path_patterns": [
+            "research_workflow/"
+        ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "evidence-program/tools/run_crossref_verification.py",
+      "component_id": "crossref_verifier_r1",
+      "component_type": "operation_control",
+      "description": "Existing Crossref DOI and bibliographic metadata verifier dynamically loaded by the PR #259 research CLI; this component grants no source-access or semantic claim authority.",
+      "label": "Crossref Verification Adapter R1",
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "represented_by": "research_pack_reos_light",
+        "no_change_reason": "The Crossref verifier is an implementation detail of the visible research pack and does not add an architecture node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "evidence-program/tools/run_crossref_verification.py"
+      ]
+    },
+    {
+        "authority": "canonical",
+        "canonical_target": "tools/operations/route_component_validation.py",
+        "component_id": "component_validation_router",
+        "component_type": "operation_control",
+        "description": "G-domain controls for causal component impact closure, exact consumer validation evidence, deterministic component releases, and final protected-main SHA witnesses.",
+        "label": "Component Validation Router",
+        "layer_or_overlay": "infrastructure",
+        "lifecycle": {
+            "source": "formal G-domain implementation candidate",
+            "status": "draft_candidate",
+            "version": "R1"
+        },
+        "map_projection": {
+            "represented_by": "iteration",
+            "no_change_reason": "The component validation router extends the existing incremental execution operation and does not add a separate architecture node.",
+            "visible": false
+        },
+        "path_patterns": [
+            "data/operations/component-validation-map-r1.json",
+            "data/operations/component-release-policy-r1.json",
+            "schemas/operations/component-validation-map-r1.schema.json",
+            "schemas/operations/component-release-policy-r1.schema.json",
+            "schemas/operations/component-release-manifest-r1.schema.json",
+            "tools/operations/route_component_validation.py",
+            "tools/operations/run_component_validation_targets.py",
+            "tools/operations/verify_component_validation_evidence.py",
+            "tools/operations/write_final_main_witness.py",
+            "tools/operations/prepare_component_release.py",
+            "tools/operations/release_authorization.py",
+            "tests/test_component_validation_routing.py",
+            "tests/test_component_validation_evidence.py",
+            "tests/test_component_release_preparation.py",
+            "tests/test_component_release_authorization.py",
+            "tests/test_history_remediation_contract.py"
+        ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.6.0"
+  "registry_version": "2.7.0"
 }

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/component-release-policy-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "purpose", "claim_ceiling", "components"],
+  "properties": {
+    "schema_version": {"const": "component-release-policy-r1"},
+    "purpose": {"$ref": "#/$defs/nonblank"},
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"},
+    "components": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"$ref": "#/$defs/component"}
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+    "component": {
+      "type": "object", "additionalProperties": false,
+      "required": ["component_id", "versioning", "bundle_components", "validation_target_ids", "release_tag_template", "evidence"],
+      "properties": {
+        "component_id": {"$ref": "#/$defs/id"},
+        "versioning": {"const": "semver"},
+        "bundle_components": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "validation_target_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "release_tag_template": {"type": "string", "pattern": "^[A-Za-z0-9_./-]+\\{version\\}$"},
+        "evidence": {"$ref": "#/$defs/nonblank"}
+      }
+    }
+  }
+}

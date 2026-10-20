@@ -8,13 +8,13 @@
   "facts": {
     "architecture": {
       "current_map_version": "0.16.0",
-      "hidden_components": 13,
+      "hidden_components": 17,
       "historical_map_version": "0.14.0",
       "layout_version": "2.0.0",
-      "registry_components": 100,
+      "registry_components": 104,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
-      "typed_topology_relations": 140,
+      "typed_topology_relations": 142,
       "visible_map_nodes": 87,
       "visible_typed_edges": 92
     },
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "6e6bfabb9ebf73e0a5a66d636b7fc9434220a2f3c77f897e1fe7800e72772ddc"
+      "sha256": "00eb76c2d6e8d5520f359656bac88b6143ebe0bce47a3932e5c5922fb8c0101e"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -253,11 +253,11 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "3bd1b6acc9fb8827f05c3e99cbc857f7b40c367551bfcc84dac8fd8028f6d5a9"
+      "sha256": "9f4336bc6050e0386a02542b9dc115504ff0d3ad83f2d1099a583da6c039776d"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "efde6fb6d29caee917cd3e6a723b66dad2c63fe9e123b18753270b710b9e8085"
+      "sha256": "d8b0d00fae55b525694b0d05bcddf3828ca2436bd4fd6c65d111e75b5b2752dc"
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "bab5e0ea70a7b6636d310994116803eea352c554a22a33daa19fc55e4374f8a8"
+      "sha256": "d378775bc2aa2f30d369680021322a37e88f5c2907114d3be54bbc312b5a925d"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
