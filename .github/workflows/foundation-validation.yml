@@ -342,7 +342,7 @@ jobs:
           EVIDENCE_DIR: ${{ runner.temp }}/main-validation-evidence
           OUTPUT_DIR: ${{ runner.temp }}/final-main-witness
         run: |
-          python3 ignition/tools/operations/write_final_main_witness.py \
+          python3 tools/operations/write_final_main_witness.py \
             --repo-root "$GITHUB_WORKSPACE" \
             --evidence-dir "$EVIDENCE_DIR" \
             --output-dir "$OUTPUT_DIR" \

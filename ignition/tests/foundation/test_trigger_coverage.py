@@ -128,6 +128,13 @@ class LayerBTriggerTest(unittest.TestCase):
             "would omit the authoritative CJK-table directories (contract §3.4)",
         )
 
+    def test_final_main_witness_script_path_matches_working_directory(self) -> None:
+        text = self._on_block()
+        self.assertIn("working-directory: ignition", text)
+        self.assertIn("python3 tools/operations/write_final_main_witness.py", text)
+        self.assertNotIn("python3 ignition/tools/operations/write_final_main_witness.py", text)
+        self.assertTrue((ROOT / "tools/operations/write_final_main_witness.py").is_file())
+
 
 if __name__ == "__main__":
     unittest.main()

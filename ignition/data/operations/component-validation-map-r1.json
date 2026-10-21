@@ -14,9 +14,10 @@
         "tests.test_component_profiles",
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
-        "tests.test_production_execution_authority"
+        "tests.test_production_execution_authority",
+        "tests.foundation.test_trigger_coverage"
       ],
-      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, and final-main-witness fixtures exercise component closure and fail-closed release evidence.",
+      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
       "import_roots": [
         "ignition"
       ]
