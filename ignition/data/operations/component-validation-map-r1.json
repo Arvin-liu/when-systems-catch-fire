@@ -11,6 +11,8 @@
         "tests.test_component_validation_evidence",
         "tests.test_component_release_preparation",
         "tests.test_component_release_authorization",
+        "tests.test_release_transaction_protocol",
+        "tests.test_release_transaction_protocol_r3",
         "tests.test_component_profiles",
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
@@ -642,6 +644,21 @@
       ],
       "requires_full_regression": true,
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "stage_snapshot_publication",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls",
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The R3 migration contract is documented alongside the existing stage-snapshot governance. Release-control consumers validate exact R2/R3 protocol tests; publication consumers validate that this documentation change preserves the existing publication boundary."
     },
     {
       "component_id": "release_transaction_protocol_r3",
