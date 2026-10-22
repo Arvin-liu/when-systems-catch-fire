@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [框架内判定写成外部验证。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-bc652709fdc6d144 / 框架内判定写成外部验证。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [案例不能从单一材料推出普遍结论（边界条件强制约束）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0495cb9a528317a7 / 案例不能从单一材料推出普遍结论（边界条件强制约束）。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
 - [案例范围默认全量**（即 `已迁移的历史案例来源/` 全部条目）；除非任务明确限定。](../../../docs/getbrain-operation-guide-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-089f41482e0f49eb / 案例范围默认全量**（即 `已迁移的历史案例来源/` 全部条目）；除非任务明确限定。
@@ -2309,6 +2319,11 @@
   - 可搜索名称：NFC-72d0d0719c5c2060 / 选择一个真实、来源充分、距离足够远的外部事件。跳转时不解释“为什么要跳”，而是让共享结构先出现。
   - 来源：`docs/narrative-story-template.md`
   - 依赖：—；被引用：—
+- [逐项读取并保存 GitHub 实际 main 保护规则。未设置 required review/status checks、管理员 enforcement 关闭或读取返回 403，都必须按实际值记录或保持未验证；候选不得静默追加仓库规则，也](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-538ce24d1dad6ade / 逐项读取并保存 GitHub 实际 main 保护规则。未设置 required review/status checks、管理员 enforcement 关闭或读取返回 403，都必须按实际值记录或保持未验证；候选不得静默追加仓库规则，也
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
 - [通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。\[Current Facts\]\(../data/architecture/current-facts.json\) 与\[人读 facts blo](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-46234d850863c4ff / 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。\[Current Facts\]\(../data/architecture/current-facts.json\) 与\[人读 facts blo
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-0c0ad41090f7d1b9 / 需要调查、统计、田野、实验和反事实识别。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [非亲缘职业军队却具有高阵形保持与多日作战能力；若常见，则 Primary Group 不是必要条件。](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ce68bf7871909126 / 非亲缘职业军队却具有高阵形保持与多日作战能力；若常见，则 Primary Group 不是必要条件。
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [非对称耦合验证 — 提高Bsemantic不提高Fintent,但提高εaware同时提高Fintent和ηShannon,方向不对称](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8bb80f3a7f533604 / 非对称耦合验证 — 提高Bsemantic不提高Fintent,但提高εaware同时提高Fintent和ηShannon,方向不对称
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `已迁移的历史案例来源/` 并更新 INDEX。本轮（第三步）未做此步。](../../../docs/GET-BRAIN-WORKFLOW.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-74405a9924cee7b3 / 须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `已迁移的历史案例来源/` 并更新 INDEX。本轮（第三步）未做此步。
-  - 来源：`docs/GET-BRAIN-WORKFLOW.md`
   - 依赖：—；被引用：—

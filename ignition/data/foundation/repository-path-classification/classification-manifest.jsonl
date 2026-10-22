@@ -14,6 +14,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/iteration-lifecycle-validation.yml"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/iteration-planner-ci.yml"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/q33-governance-validation.yml"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/release-transaction-protocol-validation.yml"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/repository-path-accounting-preflight.yml"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": ".gitignore"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "AGENTS.md"}
@@ -2088,6 +2089,7 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/publication-witness-protocol-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-state-model-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-transaction-protocol-r2.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/release-transaction-protocol-r3.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/residual-ledger-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/responsibility-actors.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/root-normalization/post-migration-inbound-reference-audit.json"}
@@ -3538,6 +3540,7 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/publication-witness-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-state-model-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-transaction-protocol-r2.schema.json"}
+{"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/release-transaction-protocol-r3.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/residual-ledger-r1.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/residual-ledger-r2.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "ignition/schemas/operations/responsibility-actor-registry.schema.json"}
@@ -3888,6 +3891,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_release_fault_matrix.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_release_state_model.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_release_transaction_protocol.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_release_transaction_protocol_r3.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_reos_vnext_minimal_kernel.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_residual_delta_adversarial_matrix.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_residual_delta_gate.py"}
@@ -4262,6 +4266,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_release_fault_matrix.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_release_state_model.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_release_transaction_protocol.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_release_transaction_protocol_r3.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_residual_adversarial_matrix.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_residual_ledger.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_residual_ledger_r2.py"}
