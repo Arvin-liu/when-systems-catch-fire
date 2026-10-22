@@ -2207,6 +2207,32 @@
             "tests/test_component_release_authorization.py",
             "tests/test_history_remediation_contract.py"
         ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/operations/release-transaction-protocol-r3.json",
+      "component_id": "release_transaction_protocol_r3",
+      "component_type": "operation_control",
+      "description": "Versioned protected-PR merge and post-merge witness contract; candidate only until separately authorized and witnessed.",
+      "label": "Release transaction protocol R3 candidate",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "data/operations/release-transaction-protocol-r3.json",
+        "status": "draft_candidate",
+        "version": "3.0.0-candidate"
+      },
+      "map_projection": {
+        "represented_by": "iteration",
+        "no_change_reason": "This release-governance candidate uses the existing protected PR and iteration process; it adds no runtime capability or architecture layer.",
+        "visible": false
+      },
+      "path_patterns": [
+        ".github/workflows/release-transaction-protocol-validation.yml",
+        "data/operations/release-transaction-protocol-r3.json",
+        "schemas/operations/release-transaction-protocol-r3.schema.json",
+        "tests/test_release_transaction_protocol_r3.py",
+        "tools/validate_release_transaction_protocol_r3.py"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",

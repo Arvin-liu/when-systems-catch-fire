@@ -642,6 +642,20 @@
       ],
       "requires_full_regression": true,
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "release_transaction_protocol_r3",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The dedicated release-transaction-protocol-validation workflow tests the exact R2/R3 validators and fixtures; g_component_release_controls tests cover the shared validation router, release authority and defensive boundaries. R3 remains a candidate until a separate Owner authorization and 1111 witness verify the protected merge."
     }
   ]
 }
