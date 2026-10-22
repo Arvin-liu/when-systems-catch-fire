@@ -2228,7 +2228,6 @@
       },
       "path_patterns": [
         ".github/workflows/release-transaction-protocol-validation.yml",
-        "docs/operations/stage-snapshot-publication.md",
         "data/operations/release-transaction-protocol-r3.json",
         "schemas/operations/release-transaction-protocol-r3.schema.json",
         "tests/test_release_transaction_protocol_r3.py",
