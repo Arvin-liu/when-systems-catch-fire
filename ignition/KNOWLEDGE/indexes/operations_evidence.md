@@ -8,6 +8,6 @@
 - [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8\(内在驱动力\), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0 → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0404}\)=1\].
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0405}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-06.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-07.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → O₇\(x,y\) := 乘法归零跨域同构**
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；O₉\(x,y\) := D179-space\(空间尺度同构\)** → 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
-- [第 007 片](./operations_evidence/part-007.md)：3001—3195；仅凭表面相似就判定同构； → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → P1 机器可读化抽取可行性审计
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；P1 机器可读数据完整性审计 → 仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见
+- [第 007 片](./operations_evidence/part-007.md)：3001—3192；价值宪章/元协议仅作投影与规范边界检查，不作经验事实来源。 → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

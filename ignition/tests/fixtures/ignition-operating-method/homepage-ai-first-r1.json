@@ -60,6 +60,16 @@
       "expected": "FAIL"
     },
     {
+      "id": "minimal-invocation-repository-link-target-changed",
+      "replacements": [
+        {
+          "old": "https://github.com/Arvin-liu/when-systems-catch-fire",
+          "new": "https://example.org/when-systems-catch-fire"
+        }
+      ],
+      "expected": "FAIL"
+    },
+    {
       "id": "human-reading-route-removed",
       "replacements": [
         {"old": "HUMAN-READING.md", "new": "HUMAN-READING.txt"}
