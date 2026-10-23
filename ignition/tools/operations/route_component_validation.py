@@ -48,6 +48,7 @@ LEAN_VALIDATION_COMMANDS = {"validate_l4_lean_foundation"}
 FULL_REGRESSION_PATHS = {
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/component-release.yml",
+    ".github/workflows/repository-path-accounting-preflight.yml",
     ".github/CODEOWNERS",
     "requirements-foundation.txt",
     "data/operations/project-components.json",

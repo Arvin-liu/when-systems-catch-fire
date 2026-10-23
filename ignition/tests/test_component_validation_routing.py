@@ -229,9 +229,19 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertIn("component_validation_router", result["affected_component_closure"])
 
     def test_shared_workflow_change_requires_full_regression(self):
-        result = self.plan([".github/workflows/foundation-validation.yml"])
-        self.assertEqual(result["mode"], "FULL")
-        self.assertTrue(any(x["kind"] == "validation_authority_changed" for x in result["full_regression_reasons"]))
+        for path in (
+            ".github/workflows/foundation-validation.yml",
+            ".github/workflows/repository-path-accounting-preflight.yml",
+        ):
+            with self.subTest(path=path):
+                self.assertIn(path, FULL_REGRESSION_PATHS)
+                result = self.plan([path])
+                self.assertEqual(result["mode"], "FULL")
+                self.assertTrue(any(
+                    x["kind"] == "validation_authority_changed"
+                    and path in x["paths"]
+                    for x in result["full_regression_reasons"]
+                ))
 
     def test_unknown_path_blocks_instead_of_running_zero_targets(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):

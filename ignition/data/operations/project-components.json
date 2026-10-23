@@ -2228,9 +2228,14 @@
       },
       "path_patterns": [
         ".github/workflows/release-transaction-protocol-validation.yml",
+        "data/operations/release-transaction-protocol-r2.json",
         "data/operations/release-transaction-protocol-r3.json",
+        "data/operations/release-transaction-recovery-state-r1.json",
+        "schemas/operations/release-transaction-protocol-r2.schema.json",
         "schemas/operations/release-transaction-protocol-r3.schema.json",
+        "tests/test_release_transaction_protocol.py",
         "tests/test_release_transaction_protocol_r3.py",
+        "tools/validate_release_transaction_protocol.py",
         "tools/validate_release_transaction_protocol_r3.py"
       ]
     }
