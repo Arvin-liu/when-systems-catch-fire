@@ -9,8 +9,10 @@ from __future__ import annotations
 
 import argparse
 import base64
+import fnmatch
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -27,13 +29,18 @@ REPO_ROOT = ROOT.parent
 PROTOCOL_PATH = ROOT / "data/operations/release-transaction-protocol-r3.json"
 SCHEMA_PATH = ROOT / "schemas/operations/release-transaction-protocol-r3.schema.json"
 R2_PROTOCOL_PATH = ROOT / "data/operations/release-transaction-protocol-r2.json"
+RECOVERY_STATE_PATH = ROOT / "data/operations/release-transaction-recovery-state-r1.json"
 CURRENT_TASK_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 TASK_IDENTITY_MODEL_PATH = ROOT / "data/operations/task-identity-model-r1.json"
 OWNER_AUTHORIZATION_REPOSITORY = "Arvin-liu/1111"
 OWNER_AUTHORIZATION_PATH = "instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json"
+SUCCESSOR_REGISTRATION_PATH = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R1.json"
+R2_RESTORE_AUTHORIZATION_PATH = "instructions/goal-mode/IGNITION-R3-TO-R2-RESTORE-AUTHORIZATION-R1.json"
 TRANSITION_WITNESS_PATH = "reports/operations/IGNITION-2026-10-18-R3-PUBLISHED-AND-VERIFIED-R0.json"
+R2_RESTORATION_WITNESS_PATH = "reports/operations/IGNITION-R3-TO-R2-RESTORED-AND-VERIFIED-R1.json"
 PUBLIC_REPOSITORY = "Arvin-liu/when-systems-catch-fire"
 R2_CANONICAL_SUITE_MINIMUM_SECONDS = 14400
+GITHUB_WEB_FLOW_ACCOUNT_ID = 19864447
 
 
 def load_json(path: Path) -> Any:
@@ -103,6 +110,38 @@ def validate_contract(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("R2 remains current until a matching independent transition receipt is verified")
     if protocol["status"] != "CANDIDATE_NOT_EFFECTIVE":
         errors.append("an unmerged R3 candidate cannot declare itself effective")
+    required_contexts = protocol["prepublication"]["required_status_check_contexts"]
+    branch_policy = protocol["branch_protection_requirements"]
+    if required_contexts != branch_policy["required_status_check_contexts"]:
+        errors.append("prepublication and branch-protection required contexts must match exactly")
+    if sorted(item["context"] for item in required_contexts) != sorted(protocol["prepublication"]["required_workflow_names"]):
+        errors.append("required workflow names must exactly equal the unique required status contexts")
+    if protocol["prepublication"]["minimum_approving_reviews"] != 0 or protocol["prepublication"]["self_approval_is_not_required"] is not True:
+        errors.append("single-Owner admission must not require an impossible self-approval")
+    if any(
+        branch_policy.get(field) is not True
+        for field in (
+            "require_code_owner_review_disabled",
+            "require_last_push_approval_disabled",
+            "require_linear_history_disabled",
+        )
+    ):
+        errors.append("single-Owner merge-commit policy must explicitly disable code-owner/last-push reviews and linear history")
+    if protocol["postactivation_recovery"]["target_r2_protocol_blob_sha"] != git_blob_sha(R2_PROTOCOL_PATH):
+        errors.append("R3 recovery must target the exact preserved R2 protocol blob")
+    try:
+        recovery_state = load_json(RECOVERY_STATE_PATH)
+    except (OSError, json.JSONDecodeError) as error:
+        errors.append(f"R3 recovery state is missing or unreadable: {error}")
+    else:
+        recovery_errors = _schema_errors(
+            recovery_state, {"$ref": "#/$defs/recoveryState", "$defs": schema["$defs"]}
+        )
+        errors.extend(f"R3 recovery state: {item}" for item in recovery_errors)
+        if recovery_state.get("source_r3_protocol_blob_sha") != git_blob_sha(PROTOCOL_PATH):
+            errors.append("R3 recovery state must bind the exact candidate protocol blob")
+        if recovery_state.get("target_r2_protocol_blob_sha") != git_blob_sha(R2_PROTOCOL_PATH):
+            errors.append("R3 recovery state must bind the exact preserved R2 protocol blob")
     return errors
 
 
@@ -138,10 +177,26 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
 
     ordinal = next((execution.get(key) for key in ("formal_ordinal", "task_ordinal", "ordinal") if type(execution.get(key)) is int), None)
     branch = execution.get("expected_task_branch")
+    receipt_branch = execution.get("expected_receipt_branch")
+    formal_base_main_sha = execution.get("formal_base_main_sha")
     if ordinal is None:
         errors.append("canonical execution contract does not bind a formal task ordinal")
     if not isinstance(branch, str) or not branch:
         errors.append("canonical execution contract does not bind an expected task branch")
+    if not isinstance(receipt_branch, str) or not receipt_branch:
+        errors.append("canonical execution contract does not bind an expected 1111 receipt branch")
+    if not isinstance(formal_base_main_sha, str) or len(formal_base_main_sha) != 40:
+        errors.append("canonical execution contract does not bind the exact formal main base SHA")
+    registration = execution.get("successor_registration")
+    if not isinstance(registration, dict):
+        errors.append("canonical execution contract does not bind a signed 1111 successor registration")
+        registration = {}
+    registration_sha = registration.get("commit_sha")
+    registration_file_sha256 = registration.get("file_sha256")
+    if not isinstance(registration_sha, str) or len(registration_sha) != 40:
+        errors.append("execution contract does not bind the exact Owner-signed successor-registration commit")
+    if not isinstance(registration_file_sha256, str) or len(registration_file_sha256) != 64:
+        errors.append("execution contract does not bind the successor-registration file digest")
 
     def digest(path: Path) -> str:
         return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -153,14 +208,35 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
     except OSError as error:
         return {}, [f"canonical task identity digest could not be read: {error}"]
 
-    return {
+    context = {
         "task_id": task_id,
         "formal_ordinal": ordinal,
         "task_branch": branch,
+        "receipt_branch": receipt_branch,
+        "formal_base_main_sha": formal_base_main_sha,
         "current_task_source_sha256": source_digest,
         "task_identity_model_sha256": identity_digest,
         "execution_contract_sha256": execution_digest,
-    }, errors
+        "successor_registration_commit_sha": registration_sha,
+        "successor_registration_file_sha256": registration_file_sha256,
+    }
+    if not errors:
+        registration_evidence, registration_errors = read_authenticated_successor_registration(
+            registration_sha, expected_file_sha256=registration_file_sha256
+        )
+        errors.extend(registration_errors)
+        if registration_evidence is not None:
+            statement = registration_evidence["statement"]
+            if (
+                statement["task_id"] != task_id or statement["formal_ordinal"] != ordinal
+                or statement["work_branch"] != branch or statement["receipt_branch"] != receipt_branch
+                or statement["formal_base_main_sha"] != formal_base_main_sha
+            ):
+                errors.append("Owner-signed successor registration does not match the exact task, ordinal, work/receipt branches and formal base")
+            if statement["r3_protocol_candidate_blob_sha"] != git_blob_sha():
+                errors.append("Owner-signed successor registration is stale for the exact R3 protocol blob")
+            context["successor_registration"] = registration_evidence
+    return context, errors
 
 
 def _gh_api_json(endpoint: str) -> dict[str, Any] | list[Any]:
@@ -169,6 +245,145 @@ def _gh_api_json(endpoint: str) -> dict[str, Any] | list[Any]:
         ["gh", "api", endpoint], check=True, capture_output=True, text=True, timeout=30
     )
     return json.loads(result.stdout)
+
+
+def _verified_owner_commit(commit: dict[str, Any], owner_id: int) -> tuple[bool, str]:
+    """Require Owner authorship plus a verified Owner or GitHub web-flow commit."""
+    author_id = (commit.get("author") or {}).get("id")
+    committer = commit.get("committer") or {}
+    committer_id = committer.get("id")
+    verification = (commit.get("commit") or {}).get("verification") or {}
+    owner_committer = committer_id == owner_id
+    github_web_flow_committer = (
+        committer_id == GITHUB_WEB_FLOW_ACCOUNT_ID and committer.get("login") == "web-flow"
+    )
+    if author_id != owner_id or not (owner_committer or github_web_flow_committer):
+        return False, "commit author must be the Owner and committer must be the Owner or GitHub web-flow"
+    if verification.get("verified") is not True or verification.get("reason") != "valid":
+        return False, "GitHub did not verify the Owner commit signature as valid"
+    if not isinstance(verification.get("signature"), str) or not verification["signature"].strip():
+        return False, "GitHub commit verification has no signature payload"
+    if not isinstance(verification.get("payload"), str) or not verification["payload"].strip():
+        return False, "GitHub commit verification has no signed commit payload"
+    return True, ""
+
+
+def read_authenticated_successor_registration(
+    commit_sha: str,
+    *,
+    expected_file_sha256: str | None = None,
+    expected_formal_base_main_sha: str | None = None,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Verify the Owner-signed, unique task/ordinal registration on 1111/main."""
+    api = github_api or _gh_api_json
+    try:
+        actor = api("user")
+        public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
+        public_main = api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
+        control_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}")
+        history = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(SUCCESSOR_REGISTRATION_PATH, safe='')}&sha=main&per_page=1"
+        )
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
+        content = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{SUCCESSOR_REGISTRATION_PATH}?ref={commit_sha}"
+        )
+        owner_id = public_repo.get("owner", {}).get("id")
+        actor_id = actor.get("id")
+        if actor_id != owner_id or actor_id != control_repo.get("owner", {}).get("id"):
+            return None, ["authenticated GitHub actor is not the Owner of both repositories"]
+        if control_repo.get("private") is not True or control_repo.get("default_branch") != "main":
+            return None, ["1111 registration source is not confirmed private/main"]
+        if commit.get("sha") != commit_sha:
+            return None, ["Owner-signed task-registration commit readback SHA mismatch"]
+        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
+        if not signature_ok:
+            return None, [f"Owner-signed task-registration signature failed closed: {signature_error}"]
+        if not isinstance(history, list) or not history or history[0].get("sha") != commit_sha:
+            return None, ["task-registration record is not the latest commit to its path on 1111/main"]
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["Owner-signed task-registration commit is not present in 1111/main history"]
+        if content.get("path") != SUCCESSOR_REGISTRATION_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
+            return None, ["fixed successor-registration path is unavailable at its exact signed commit"]
+        raw = base64.b64decode("".join(content["content"].split()), validate=True)
+        file_sha256 = hashlib.sha256(raw).hexdigest()
+        if expected_file_sha256 and file_sha256 != expected_file_sha256:
+            return None, ["successor-registration file digest differs from the execution contract"]
+        statement = json.loads(raw.decode("utf-8"))
+        schema = load_json(SCHEMA_PATH)
+        errors = _schema_errors(statement, {"$ref": "#/$defs/successorRegistrationStatement", "$defs": schema["$defs"]})
+        if errors:
+            return None, [f"Owner-signed successor registration is invalid: {item}" for item in errors]
+        if statement["task_id"] == "IGNITION-20260829-148" or statement["formal_ordinal"] == 148:
+            return None, ["successor registration may not reuse Task148 identity or ordinal"]
+        formal_base_sha = expected_formal_base_main_sha or public_main.get("commit", {}).get("sha")
+        if expected_formal_base_main_sha and statement["formal_base_main_sha"] != expected_formal_base_main_sha:
+            return None, ["successor registration base SHA differs from the exact admitted PR base"]
+        if not expected_formal_base_main_sha and formal_base_sha != statement["formal_base_main_sha"]:
+            return None, ["successor registration base SHA is not the current live public main SHA"]
+        if not isinstance(formal_base_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", formal_base_sha):
+            return None, ["successor registration base SHA is not a readable exact Git commit"]
+        current_task_content = api(
+            f"repos/{PUBLIC_REPOSITORY}/contents/{quote(relative(CURRENT_TASK_PATH), safe='/')}?ref={quote(formal_base_sha, safe='')}"
+        )
+        if current_task_content.get("path") != relative(CURRENT_TASK_PATH) or current_task_content.get("type") != "file" or current_task_content.get("encoding") != "base64":
+            return None, ["canonical current-task source cannot be read at the exact registered base SHA"]
+        current_task_raw = base64.b64decode("".join(current_task_content["content"].split()), validate=True)
+        current_task_id = json.loads(current_task_raw.decode("utf-8")).get("current_task", {}).get("task_id")
+        if not isinstance(current_task_id, str) or statement["prior_task_id"] != current_task_id:
+            return None, ["successor registration predecessor does not equal the canonical current task at its exact base SHA"]
+        inventory = statement["conflict_inventory"]
+        inventory_payload = {key: value for key, value in inventory.items() if key != "inventory_sha256"}
+        computed_inventory_digest = hashlib.sha256(
+            json.dumps(inventory_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+        if computed_inventory_digest != inventory["inventory_sha256"]:
+            return None, ["successor registration conflict-inventory digest does not match its exact inventory bytes"]
+        identities = inventory["formal_task_identities"]
+        task_ids = [item["task_id"] for item in identities]
+        ordinals = [item["formal_ordinal"] for item in identities]
+        work_branches = [item["work_branch"] for item in identities]
+        receipt_branches = [item["receipt_branch"] for item in identities]
+        if any(len(items) != len(set(items)) for items in (task_ids, ordinals, work_branches, receipt_branches)):
+            return None, ["successor registration inventory contains colliding formal task IDs, ordinals or branches"]
+        identity_by_id = {item["task_id"]: item for item in identities}
+        if statement["task_id"] in identity_by_id or statement["formal_ordinal"] in ordinals:
+            return None, ["successor task ID or formal ordinal is already assigned in the signed conflict inventory"]
+        if statement["work_branch"] in work_branches or statement["receipt_branch"] in receipt_branches:
+            return None, ["successor work or receipt branch is already assigned in the signed conflict inventory"]
+        merged_ids = set(inventory["merged_task_ids"])
+        open_ids = set(inventory["open_task_ids"])
+        if merged_ids & open_ids:
+            return None, ["conflict inventory marks the same task both merged and open"]
+        if not merged_ids.issubset(identity_by_id) or not open_ids.issubset(identity_by_id):
+            return None, ["merged/open task lists include an ID absent from formal_task_identities"]
+        if any(identity_by_id[task_id]["lifecycle_state"] != "MERGED" for task_id in merged_ids):
+            return None, ["merged task list conflicts with the formal identity lifecycle state"]
+        if any(identity_by_id[task_id]["lifecycle_state"] != "OPEN" for task_id in open_ids):
+            return None, ["open task list conflicts with the formal identity lifecycle state"]
+        if statement["prior_task_id"] not in identity_by_id:
+            return None, ["prior_task_id is not present in the signed formal identity inventory"]
+        if statement["prior_task_id"] not in merged_ids or identity_by_id[statement["prior_task_id"]]["lifecycle_state"] != "MERGED":
+            return None, ["canonical prior task must be listed as merged in the signed formal identity inventory"]
+        committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
+        if not committed_at:
+            return None, ["Owner-signed task-registration commit has no committer timestamp"]
+        if datetime.fromisoformat(statement["registered_at"].replace("Z", "+00:00")) > datetime.fromisoformat(committed_at.replace("Z", "+00:00")):
+            return None, ["successor registration timestamp is later than its signed commit"]
+        return {
+            "statement": statement,
+            "repository": OWNER_AUTHORIZATION_REPOSITORY,
+            "path": SUCCESSOR_REGISTRATION_PATH,
+            "commit_sha": commit_sha,
+            "committed_at": committed_at,
+            "file_sha256": file_sha256,
+            "signature_verified": True,
+            "signature_reason": "valid",
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"authenticated 1111 successor registration readback failed closed: {error.__class__.__name__}: {error}"]
 
 
 def read_authenticated_owner_authorization(
@@ -183,6 +398,10 @@ def read_authenticated_owner_authorization(
         public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
         private_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
         commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}")
+        history = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(OWNER_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1"
+        )
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
         content = api(
             f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{OWNER_AUTHORIZATION_PATH}?ref={commit_sha}"
         )
@@ -200,6 +419,13 @@ def read_authenticated_owner_authorization(
             return None, ["1111 default branch is not main, so the fixed authorization source cannot be verified"]
         if returned_sha != commit_sha or commit_author_id != actor_id or commit_committer_id != actor_id:
             return None, ["fixed 1111 authorization commit is missing or is not authored and committed by the authenticated Owner"]
+        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
+        if not signature_ok:
+            return None, [f"fixed 1111 authorization signature failed closed: {signature_error}"]
+        if not isinstance(history, list) or not history or history[0].get("sha") != commit_sha:
+            return None, ["fixed 1111 authorization record is not the latest commit to its path on main"]
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["fixed 1111 authorization commit is not present in the current main history"]
         if content.get("path") != OWNER_AUTHORIZATION_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
             return None, ["fixed 1111 authorization path did not resolve to a readable file at the exact commit"]
         raw = base64.b64decode("".join(content["content"].split()), validate=True)
@@ -224,6 +450,8 @@ def read_authenticated_owner_authorization(
             "authorization_commit_sha": returned_sha,
             "authorization_committed_at": commit_date,
             "authorization_file_sha256": hashlib.sha256(raw).hexdigest(),
+            "authorization_signature_verified": True,
+            "authorization_signature_reason": "valid",
         }
         meta = {
             "authenticated_actor_id": actor_id,
@@ -232,6 +460,8 @@ def read_authenticated_owner_authorization(
             "authorization_repository_owner_id": private_owner_id,
             "authorization_readback_commit_sha": returned_sha,
             "authorization_file_sha256": evidence["authorization_file_sha256"],
+            "authorization_signature_verified": True,
+            "authorization_signature_reason": "valid",
         }
         return {"evidence": evidence, "meta": meta}, []
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
@@ -259,6 +489,17 @@ def read_live_transition_witness(
         committer_id = (commit.get("committer") or {}).get("id")
         if commit.get("sha") != commit_sha or author_id != actor_id or committer_id != actor_id:
             return None, ["fixed 1111 witness commit is not attributed to the authenticated Owner"]
+        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
+        if not signature_ok:
+            return None, [f"fixed 1111 witness signature failed closed: {signature_error}"]
+        ancestry = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{owner_authorization['evidence']['authorization_commit_sha']}...{commit_sha}"
+        )
+        witness_on_main = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
+        if not isinstance(ancestry, dict) or ancestry.get("status") != "ahead":
+            return None, ["signed 1111 witness is not a descendant of the exact signed Owner authorization commit"]
+        if not isinstance(witness_on_main, dict) or witness_on_main.get("status") not in {"ahead", "identical"}:
+            return None, ["signed 1111 witness commit is not present in the current main history"]
 
         content = api(
             f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{TRANSITION_WITNESS_PATH}?ref={commit_sha}"
@@ -300,6 +541,8 @@ def read_live_transition_witness(
             "witness_readback_commit_sha": commit_sha,
             "witness_commit_author_id": author_id,
             "witness_commit_committer_id": committer_id,
+            "witness_signature_verified": True,
+            "witness_signature_reason": "valid",
             "witness_committed_at": committed_at,
             "witness_file_sha256": hashlib.sha256(raw).hexdigest(),
         }, []
@@ -310,69 +553,281 @@ def read_live_transition_witness(
 def read_live_branch_protection(
     *, github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None
 ) -> tuple[dict[str, Any] | None, list[str]]:
-    """Read and hash the actual classic protection and matching rulesets."""
+    """Read and enforce actual PR-only, required-check and no-bypass rules."""
     api = github_api or _gh_api_json
     try:
         branch = api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
         protection = api(f"repos/{PUBLIC_REPOSITORY}/branches/main/protection")
         rules = api(f"repos/{PUBLIC_REPOSITORY}/rules/branches/main")
+        rulesets = api(f"repos/{PUBLIC_REPOSITORY}/rulesets?includes_parents=true&per_page=100")
+        repository = api(f"repos/{PUBLIC_REPOSITORY}")
+        if not isinstance(protection, dict) or not isinstance(rules, list) or not isinstance(rulesets, list):
+            return None, ["GitHub protection, effective-rule or ruleset endpoint returned an invalid shape"]
+        if len(rulesets) >= 100:
+            return None, ["ruleset listing may be truncated; paginate before treating protection as complete"]
+
+        def status_contexts(value: Any) -> tuple[list[dict[str, Any]], bool]:
+            if not isinstance(value, dict):
+                return [], False
+            contexts = value.get("checks")
+            if isinstance(contexts, list) and contexts:
+                if any(
+                    not isinstance(item, dict)
+                    or not isinstance(item.get("context"), str)
+                    or type(item.get("app_id")) is not int
+                    for item in contexts
+                ):
+                    raise ValueError("classic required status-check context/app bindings are malformed")
+                normalized = [
+                    {"context": item.get("context"), "app_id": item.get("app_id")}
+                    for item in contexts
+                ]
+                return sorted(normalized, key=lambda row: (str(row["context"]), str(row["app_id"]))), value.get("strict") is True
+            legacy = value.get("contexts")
+            if isinstance(legacy, list):
+                return sorted(
+                    [{"context": item, "app_id": None} for item in legacy if isinstance(item, str)],
+                    key=lambda row: row["context"],
+                ), value.get("strict") is True
+            return [], value.get("strict") is True
+
+        def targets_main(ruleset: dict[str, Any]) -> bool:
+            if ruleset.get("target") not in {"branch", "push"}:
+                return False
+            conditions = ruleset.get("conditions")
+            if conditions is None:
+                return True
+            if not isinstance(conditions, dict):
+                raise ValueError("ruleset branch conditions are not readable")
+            refs = conditions.get("ref_name")
+            if not isinstance(refs, dict):
+                return True
+            includes = refs.get("include", [])
+            excludes = refs.get("exclude", [])
+            if not isinstance(includes, list) or not isinstance(excludes, list) or any(
+                not isinstance(value, str) for value in (*includes, *excludes)
+            ):
+                raise ValueError("ruleset ref include/exclude lists are not readable")
+            candidates = ("refs/heads/main", "~DEFAULT_BRANCH", "main")
+            included = not includes or any(
+                fnmatch.fnmatchcase(candidate, pattern)
+                for pattern in includes if isinstance(pattern, str)
+                for candidate in candidates
+            )
+            excluded = any(
+                fnmatch.fnmatchcase(candidate, pattern)
+                for pattern in excludes if isinstance(pattern, str)
+                for candidate in candidates
+            )
+            return included and not excluded
+
+        if any(not isinstance(item, dict) for item in rulesets):
+            raise ValueError("ruleset listing contains a malformed entry")
+        if any(item.get("enforcement") not in {"active", "evaluate", "disabled"} for item in rulesets):
+            raise ValueError("ruleset enforcement state is unknown")
+        applicable_rulesets = [item for item in rulesets if targets_main(item)]
+        active_rulesets = [item for item in applicable_rulesets if item.get("enforcement") == "active"]
+        ruleset_bypass_count = 0
+        ruleset_contexts: list[dict[str, Any]] = []
+        ruleset_pr_rule_present = False
+        ruleset_approval_counts: list[int] = []
+        ruleset_status_required = False
+        ruleset_status_strict = True
+        for ruleset in active_rulesets:
+            actors = ruleset.get("bypass_actors")
+            if not isinstance(actors, list):
+                raise ValueError("applicable ruleset bypass_actors is missing or unreadable")
+            ruleset_bypass_count += len(actors)
+            for rule in ruleset.get("rules", []):
+                if not isinstance(rule, dict):
+                    raise ValueError("applicable ruleset contains a malformed rule")
+                params = rule.get("parameters") or {}
+                if not isinstance(params, dict):
+                    raise ValueError("applicable ruleset rule parameters are malformed")
+                if rule.get("type") == "pull_request":
+                    ruleset_pr_rule_present = True
+                    count = params.get("required_approving_review_count")
+                    if type(count) is not int or count < 0:
+                        raise ValueError("ruleset approval count is not a non-negative integer")
+                    ruleset_approval_counts.append(count)
+                    if params.get("require_code_owner_review") is True or params.get("require_last_push_approval") is True:
+                        raise ValueError("ruleset adds an independent-review requirement incompatible with a single Owner")
+                if rule.get("type") == "required_status_checks":
+                    ruleset_status_required = True
+                    strict_value = params.get("strict_required_status_checks_policy")
+                    if strict_value is not True:
+                        ruleset_status_strict = False
+                    checks = params.get("required_status_checks", [])
+                    if not isinstance(checks, list):
+                        raise ValueError("ruleset required_status_checks is not a list")
+                    if any(
+                        not isinstance(item, dict)
+                        or not isinstance(item.get("context"), str)
+                        or type(item.get("integration_id")) is not int
+                        for item in checks
+                    ):
+                        raise ValueError("ruleset required status-check context/app bindings are malformed")
+                    ruleset_contexts.extend(
+                        {"context": item.get("context"), "app_id": item.get("integration_id")}
+                        for item in checks
+                    )
+
         status = protection.get("required_status_checks")
         review = protection.get("required_pull_request_reviews")
-        if isinstance(status, dict):
-            check_names = status.get("contexts") or [row.get("context") for row in status.get("checks", []) if row.get("context")]
-        else:
-            check_names = []
-        ruleset_status_checks: list[str] = []
-        ruleset_review_required = False
-        ruleset_status_required = False
-        if not isinstance(rules, list):
-            return None, ["GitHub branch-rules endpoint did not return a ruleset list"]
+        classic_contexts, classic_status_strict = status_contexts(status)
+        classic_approval_count = 0
+        classic_pr_bypass_count = 0
+        code_owner_review_required = False
+        last_push_approval_required = False
+        if isinstance(review, dict):
+            classic_approval_count = review.get("required_approving_review_count")
+            if type(classic_approval_count) is not int or classic_approval_count < 0:
+                raise ValueError("classic required approval count is not a non-negative integer")
+            code_owner_review_required = review.get("require_code_owner_reviews") is True
+            last_push_approval_required = review.get("require_last_push_approval") is True
+            if code_owner_review_required or last_push_approval_required:
+                raise ValueError("classic protection adds an independent-review requirement incompatible with a single Owner")
+            bypass_allowances = review.get("bypass_pull_request_allowances", {})
+            if bypass_allowances is None:
+                bypass_allowances = {}
+            if not isinstance(bypass_allowances, dict):
+                raise ValueError("classic pull-request bypass allowances are malformed")
+            allowance_lists = [bypass_allowances.get(key, []) for key in ("users", "teams", "apps")]
+            if any(not isinstance(value, list) for value in allowance_lists):
+                raise ValueError("classic pull-request bypass allowance lists are malformed")
+            classic_pr_bypass_count = sum(len(value) for value in allowance_lists)
+
+        effective_ruleset_contexts: list[dict[str, Any]] = []
+        effective_ruleset_approval_counts: list[int] = []
+        effective_ruleset_pr_rule_present = False
         for rule in rules:
             parameters = rule.get("parameters") or {}
+            if not isinstance(parameters, dict):
+                raise ValueError("effective branch-rule parameters are malformed")
             if rule.get("type") == "required_status_checks":
+                checks = parameters.get("required_status_checks", [])
+                if not isinstance(checks, list):
+                    raise ValueError("effective required_status_checks is not a list")
+                if any(
+                    not isinstance(item, dict)
+                    or not isinstance(item.get("context"), str)
+                    or type(item.get("integration_id")) is not int
+                    for item in checks
+                ):
+                    raise ValueError("effective status-check context/app bindings are malformed")
+                effective_ruleset_contexts.extend(
+                    {"context": item.get("context"), "app_id": item.get("integration_id")}
+                    for item in checks
+                )
                 ruleset_status_required = True
-                ruleset_status_checks.extend(
-                    item.get("context") for item in parameters.get("required_status_checks", [])
-                    if item.get("context")
-                )
+                if parameters.get("strict_required_status_checks_policy") is not True:
+                    ruleset_status_strict = False
             elif rule.get("type") == "pull_request":
-                ruleset_review_required = (
-                    ruleset_review_required
-                    or parameters.get("required_approving_review_count", 0) > 0
-                    or parameters.get("require_code_owner_review") is True
-                )
-        review_required = bool(
-            review and (
-                review.get("required_approving_review_count", 0) > 0
-                or review.get("require_code_owner_reviews") is True
-            )
-        ) or ruleset_review_required
-        all_check_names = sorted(set(check_names) | set(ruleset_status_checks))
-        ruleset_sha = hashlib.sha256(json.dumps(rules, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+                effective_ruleset_pr_rule_present = True
+                count = parameters.get("required_approving_review_count")
+                if type(count) is not int or count < 0:
+                    raise ValueError("effective ruleset approval count is invalid")
+                effective_ruleset_approval_counts.append(count)
+                if parameters.get("require_code_owner_review") is True or parameters.get("require_last_push_approval") is True:
+                    raise ValueError("effective ruleset adds an independent-review requirement incompatible with a single Owner")
+
+        all_contexts = classic_contexts + effective_ruleset_contexts + ruleset_contexts
+        normalized_contexts = sorted(
+            { (row.get("context"), row.get("app_id")) for row in all_contexts if isinstance(row.get("context"), str) },
+            key=lambda pair: (pair[0], -1 if pair[1] is None else pair[1]),
+        )
+        required_contexts = load_json(PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"]
+        required_context_pairs = sorted(
+            {(item["context"], item["app_id"]) for item in required_contexts},
+            key=lambda pair: (pair[0], pair[1]),
+        )
+        required_status_present = isinstance(status, dict) or ruleset_status_required or any(
+            item.get("type") == "required_status_checks" for item in rules
+        )
+        strict_checks = (status is None or classic_status_strict) and ruleset_status_strict
+        approval_counts = [classic_approval_count, *effective_ruleset_approval_counts, *ruleset_approval_counts]
+        approval_count = max(approval_counts, default=0)
+        pull_request_required = isinstance(review, dict) or effective_ruleset_pr_rule_present or ruleset_pr_rule_present
+        for field in ("enforce_admins", "allow_force_pushes", "allow_deletions", "required_linear_history"):
+            if not isinstance(protection.get(field), dict) or type(protection[field].get("enabled")) is not bool:
+                raise ValueError(f"classic protection field {field} is missing or unreadable")
+        admin_enforced = protection["enforce_admins"]["enabled"] is True
+        force_push_allowed = protection["allow_force_pushes"]["enabled"] is True
+        deletions_allowed = protection["allow_deletions"]["enabled"] is True
+        linear_history_required = protection["required_linear_history"]["enabled"] is True or any(
+            item.get("type") == "required_linear_history" for item in rules
+        ) or any(
+            rule.get("type") == "required_linear_history"
+            for ruleset in active_rulesets for rule in ruleset.get("rules", [])
+        )
+        no_bypass_confirmed = admin_enforced and ruleset_bypass_count == 0 and classic_pr_bypass_count == 0
+        merge_settings = {
+            "allow_merge_commit": repository.get("allow_merge_commit") is True,
+            "allow_squash_merge": repository.get("allow_squash_merge") is True,
+            "allow_rebase_merge": repository.get("allow_rebase_merge") is True,
+        }
+        all_check_names = sorted({row[0] for row in normalized_contexts})
+        ruleset_sha = hashlib.sha256(json.dumps(rulesets, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
         snapshot = {
             "target_branch": "main",
             "protected": branch.get("protected") is True,
-            "required_review": review_required,
-            "required_status_checks": isinstance(status, dict) or ruleset_status_required,
-            "admin_enforcement_enabled": protection.get("enforce_admins", {}).get("enabled") is True,
-            "force_push_allowed": protection.get("allow_force_pushes", {}).get("enabled") is True,
-            "deletions_allowed": protection.get("allow_deletions", {}).get("enabled") is True,
+            "pull_request_required": pull_request_required,
+            "required_approval_count": approval_count,
+            "required_review": approval_count > 0,
+            "code_owner_review_required": code_owner_review_required,
+            "last_push_approval_required": last_push_approval_required,
+            "linear_history_required": linear_history_required,
+            "required_status_checks": required_status_present,
+            "required_status_check_contexts": [{"context": name, "app_id": app_id} for name, app_id in normalized_contexts],
+            "status_checks_strict": strict_checks,
+            "admin_enforcement_enabled": admin_enforced,
+            "no_bypass_confirmed": no_bypass_confirmed,
+            "ruleset_bypass_actor_count": ruleset_bypass_count,
+            "classic_pr_bypass_actor_count": classic_pr_bypass_count,
+            "force_push_allowed": force_push_allowed,
+            "deletions_allowed": deletions_allowed,
             "push_restrictions_enabled": bool(protection.get("restrictions")),
             "required_check_names": all_check_names,
             "ruleset_sha256": ruleset_sha,
+            **merge_settings,
         }
         if not snapshot["protected"]:
             return None, ["GitHub reports that main is not a protected branch"]
-        exact_rule_payload = {"classic_branch_protection": protection, "branch_rulesets": rules}
+        expected_policy = load_json(PROTOCOL_PATH)["branch_protection_requirements"]
+        errors: list[str] = []
+        if not snapshot["pull_request_required"]:
+            errors.append("GitHub does not require a pull request before main can be updated")
+        if approval_count != expected_policy["minimum_approving_reviews"]:
+            errors.append("live approval count differs from the single-owner zero-approval policy")
+        if code_owner_review_required or last_push_approval_required:
+            errors.append("live review rules require an independent reviewer and cannot be satisfied by the single Owner")
+        if not required_status_present or normalized_contexts != required_context_pairs:
+            errors.append("live required status-check contexts do not exactly match the three required R3 checks")
+        if not strict_checks:
+            errors.append("required status checks are not configured to require an up-to-date base")
+        if not no_bypass_confirmed:
+            errors.append("administrator enforcement is off or a classic/ruleset bypass actor is configured")
+        if snapshot["force_push_allowed"] or snapshot["deletions_allowed"]:
+            errors.append("main permits force pushes or deletion")
+        if linear_history_required:
+            errors.append("main requires linear history and cannot accept the required merge commit")
+        if not merge_settings["allow_merge_commit"] or merge_settings["allow_squash_merge"] or merge_settings["allow_rebase_merge"]:
+            errors.append("repository merge settings do not enforce the R3 merge-commit path")
+        exact_rule_payload = {
+            "classic_branch_protection": protection,
+            "effective_branch_rules": rules,
+            "all_rulesets_including_parents": rulesets,
+            "repository_merge_settings": merge_settings,
+        }
         digest = hashlib.sha256(json.dumps(exact_rule_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
         observed = {
             "status": "VERIFIED",
             **snapshot,
             "rules_sha256": digest,
             "observed_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-            "ruleset_count": len(rules) if isinstance(rules, list) else None,
+            "ruleset_count": len(rulesets),
         }
-        return observed, []
+        return observed, errors
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
         return None, [f"live GitHub branch-protection readback failed closed: {error.__class__.__name__}: {error}"]
 
@@ -477,18 +932,41 @@ def resolve_effective_protocol(
     repository_owner_id: int | None,
     protocol_blob_sha: str | None = None,
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+    allow_main_descendant: bool = False,
 ) -> tuple[str, list[str]]:
-    """Return R3 only after OAuth, immutable 1111, live rules and final-SHA readback agree."""
+    """Return R3 only after Owner, immutable 1111, live rules and final-SHA evidence agree.
+
+    Before activation, R2 remains current. Once a merge-bound activation claim
+    exists, failed or unavailable revalidation leaves R3 blocked and effective;
+    only the separate signed protected-PR restoration path can select R2 again.
+    """
+    activation_claimed = (
+        allow_main_descendant
+        and isinstance(transition_receipt, dict)
+        and transition_receipt.get("pr_merged") is True
+        and isinstance(transition_receipt.get("actual_final_main_sha"), str)
+        and bool(re.fullmatch(r"[0-9a-f]{40}", transition_receipt["actual_final_main_sha"]))
+        and transition_receipt.get("pr_merge_commit_sha") == transition_receipt.get("actual_final_main_sha")
+    )
     if transition_receipt is None:
         return "R2", ["no independent R3 transition receipt was supplied"]
     if observations is None:
-        return "R2", ["no independent GitHub and fresh-clone observations were supplied"]
+        current = "R3" if activation_claimed else "R2"
+        return current, ["no independent GitHub and fresh-clone observations were supplied"]
 
     schema = load_json(SCHEMA_PATH)
     errors = _schema_errors(transition_receipt, {"$ref": "#/$defs/activationReceipt", "$defs": schema["$defs"]})
     errors.extend(_schema_errors(observations, {"$ref": "#/$defs/liveObservations", "$defs": schema["$defs"]}))
     if errors:
-        return "R2", [f"invalid R3 transition receipt: {item}" for item in errors]
+        current = "R3" if activation_claimed else "R2"
+        return current, [f"invalid R3 transition receipt: {item}" for item in errors]
+
+    owner_authorization_matches = False
+    successor_registration_matches = False
+    transition_witness_matches = False
+    live_pr_matches = False
+    final_commit_matches = False
+    final_protocol_blob_matches = False
 
     expected_blob = protocol_blob_sha or git_blob_sha()
     if transition_receipt["r3_protocol_blob_sha"] != expected_blob:
@@ -507,6 +985,16 @@ def resolve_effective_protocol(
     live_pr, pr_errors = read_live_merged_pr(transition_receipt["pr_number"], github_api=github_api)
     errors.extend(pr_errors)
     if live_pr is not None:
+        live_pr_matches = (
+            live_pr["pr_url"] == transition_receipt["pr_url"]
+            and live_pr["head_ref"] == transition_receipt["pr_head_ref"]
+            and live_pr["head_sha"] == transition_receipt["candidate_head_sha"]
+            and live_pr["merge_commit_sha"] == final_sha
+            and live_pr["merged_at"] == transition_receipt["pr_merged_at"]
+            and observations["pr_merged_at"] == live_pr["merged_at"]
+            and transition_receipt["pr_merged"] is True
+            and observations["pr_merged"] is True
+        )
         if live_pr["pr_url"] != transition_receipt["pr_url"] or live_pr["head_ref"] != transition_receipt["pr_head_ref"] or live_pr["head_sha"] != transition_receipt["candidate_head_sha"] or live_pr["merge_commit_sha"] != final_sha:
             errors.append("authenticated GitHub PR metadata differs from the transition receipt")
         if live_pr["merged_at"] != transition_receipt["pr_merged_at"] or observations["pr_merged_at"] != live_pr["merged_at"]:
@@ -537,6 +1025,17 @@ def resolve_effective_protocol(
     if live_auth is not None:
         actual_approval = live_auth["evidence"]
         meta = live_auth["meta"]
+        owner_authorization_matches = (
+            approval == actual_approval
+            and observations["owner_authorization"] == actual_approval
+            and repository_owner_id is not None
+            and actual_approval["owner_actor_id"] == repository_owner_id
+            and observations["repository_owner_id"] == repository_owner_id
+            and actual_approval["approved_pr_number"] == transition_receipt["pr_number"]
+            and actual_approval["approved_head_sha"] == transition_receipt["candidate_head_sha"]
+            and actual_approval["approved_base_sha"] == transition_receipt["base_main_sha"]
+            and actual_approval["r3_protocol_blob_sha"] == transition_receipt["r3_protocol_blob_sha"]
+        )
         if approval != actual_approval or observations["owner_authorization"] != actual_approval:
             errors.append("Owner authorization does not equal the exact 1111 file read at its fixed commit")
         if repository_owner_id is None or actual_approval["owner_actor_id"] != repository_owner_id:
@@ -548,8 +1047,34 @@ def resolve_effective_protocol(
                 errors.append(f"live Owner authorization identity/readback mismatch: {key}")
         if actual_approval["approved_pr_number"] != transition_receipt["pr_number"] or actual_approval["approved_head_sha"] != transition_receipt["candidate_head_sha"]:
             errors.append("Owner authorization does not bind the exact transition PR and candidate head")
-        if actual_approval["approved_base_sha"] != transition_receipt["base_main_sha"] or actual_approval["r3_protocol_blob_sha"] != expected_blob:
-            errors.append("Owner authorization is stale for the base SHA or R3 protocol blob")
+        if actual_approval["approved_base_sha"] != transition_receipt["base_main_sha"] or actual_approval["r3_protocol_blob_sha"] != transition_receipt["r3_protocol_blob_sha"]:
+            errors.append("Owner authorization is stale for the admitted base SHA or activation-time R3 protocol blob")
+        registration, registration_errors = read_authenticated_successor_registration(
+            actual_approval["successor_registration_commit_sha"],
+            expected_file_sha256=actual_approval["successor_registration_file_sha256"],
+            expected_formal_base_main_sha=transition_receipt["base_main_sha"],
+            github_api=github_api,
+        )
+        errors.extend(registration_errors)
+        if registration is not None:
+            registered = registration["statement"]
+            successor_registration_matches = (
+                actual_approval["task_id"] == registered["task_id"]
+                and actual_approval["formal_ordinal"] == registered["formal_ordinal"]
+                and actual_approval["approved_head_sha"] == transition_receipt["candidate_head_sha"]
+                and transition_receipt["task_branch"] == registered["work_branch"]
+                and transition_receipt["pr_head_ref"] == registered["work_branch"]
+                and registered["r3_protocol_candidate_blob_sha"] == transition_receipt["r3_protocol_blob_sha"]
+            )
+            if (
+                actual_approval["task_id"] != registered["task_id"]
+                or actual_approval["formal_ordinal"] != registered["formal_ordinal"]
+                or actual_approval["approved_head_sha"] != transition_receipt["candidate_head_sha"]
+                or transition_receipt["task_branch"] != registered["work_branch"]
+                or transition_receipt["pr_head_ref"] != registered["work_branch"]
+                or registered["r3_protocol_candidate_blob_sha"] != transition_receipt["r3_protocol_blob_sha"]
+            ):
+                errors.append("Owner authorization or merged PR does not match the exact signed successor registration")
         approved_at = datetime.fromisoformat(actual_approval["approved_at"].replace("Z", "+00:00"))
         authorized_commit_at = datetime.fromisoformat(actual_approval["authorization_committed_at"].replace("Z", "+00:00"))
         if live_pr is not None:
@@ -561,6 +1086,7 @@ def resolve_effective_protocol(
         )
         errors.extend(witness_errors)
         if witness_meta is not None:
+            transition_witness_matches = all(observations.get(key) == value for key, value in witness_meta.items())
             for key, value in witness_meta.items():
                 if observations[key] != value:
                     errors.append(f"live 1111 witness readback mismatch: {key}")
@@ -568,14 +1094,39 @@ def resolve_effective_protocol(
     live_main_sha, main_errors = read_live_main_sha(github_api=github_api)
     errors.extend(main_errors)
     if live_main_sha != final_sha:
-        errors.append("live GitHub refs/heads/main does not equal the witnessed actual final main SHA")
+        if allow_main_descendant and live_main_sha:
+            ancestry = (github_api or _gh_api_json)(
+                f"repos/{PUBLIC_REPOSITORY}/compare/{final_sha}...{live_main_sha}"
+            )
+            if not isinstance(ancestry, dict) or ancestry.get("status") != "ahead":
+                errors.append("current main is not a strict descendant of the witnessed R3 activation commit")
+        else:
+            errors.append("live GitHub refs/heads/main does not equal the witnessed actual final main SHA")
     live_commit, commit_errors = read_live_commit_structure(final_sha, github_api=github_api)
     errors.extend(commit_errors)
     if live_commit is not None:
+        final_commit_matches = (
+            live_commit["tree_sha"] == transition_receipt["actual_final_main_tree_sha"]
+            and live_commit["tree_sha"] == observations["final_main_tree_sha"]
+            and live_commit["tree_sha"] == transition_receipt["merge_preview_tree_sha"]
+            and live_commit["parents"] == transition_receipt["actual_final_main_parents"]
+            and live_commit["parents"] == observations["final_main_parents"]
+            and live_commit["parents"] == [transition_receipt["base_main_sha"], transition_receipt["candidate_head_sha"]]
+        )
+        if not final_commit_matches:
+            errors.append("live GitHub final-main commit tree or ordered parents differ from the witnessed activation")
         if live_commit["tree_sha"] != transition_receipt["actual_final_main_tree_sha"] or live_commit["tree_sha"] != observations["final_main_tree_sha"]:
             errors.append("live GitHub final-main commit tree differs from the transition receipt or observation")
         if live_commit["parents"] != transition_receipt["actual_final_main_parents"] or live_commit["parents"] != observations["final_main_parents"]:
             errors.append("live GitHub final-main commit parents differ from the transition receipt or observation")
+
+    live_protocol_blob, _, protocol_file_errors = _read_live_file_identity(
+        PUBLIC_REPOSITORY, relative(PROTOCOL_PATH), final_sha, github_api=github_api or _gh_api_json,
+    )
+    errors.extend(protocol_file_errors)
+    final_protocol_blob_matches = live_protocol_blob == transition_receipt["r3_protocol_blob_sha"]
+    if not final_protocol_blob_matches:
+        errors.append("activation final-main commit does not contain the exact witnessed R3 protocol blob")
 
     live_protection, protection_errors = read_live_branch_protection(github_api=github_api)
     errors.extend(protection_errors)
@@ -601,9 +1152,396 @@ def resolve_effective_protocol(
     if live_checks is not None and (receipt_checks != live_checks or observed_checks != live_checks):
         errors.append("receipt and observation postpublication checks differ from the live GitHub Actions readback")
 
+    required_contexts = load_json(PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"]
+    protection_snapshot = observations["branch_protection_rules"]
+    activation_protection_matches = (
+        transition_receipt["branch_protection_verified"] is True
+        and observations["branch_protection_status"] == "VERIFIED"
+        and transition_receipt["branch_protection_rules_sha256"] == observations["branch_protection_rules_sha256"]
+        and protection_snapshot.get("rules_sha256") == transition_receipt["branch_protection_rules_sha256"]
+        and protection_snapshot.get("pull_request_required") is True
+        and protection_snapshot.get("required_approval_count") == 0
+        and protection_snapshot.get("status_checks_strict") is True
+        and protection_snapshot.get("admin_enforcement_enabled") is True
+        and protection_snapshot.get("no_bypass_confirmed") is True
+        and protection_snapshot.get("force_push_allowed") is False
+        and protection_snapshot.get("deletions_allowed") is False
+        and protection_snapshot.get("required_status_check_contexts") == sorted(
+            required_contexts, key=lambda item: (item["context"], item["app_id"])
+        )
+        and sorted(transition_receipt["required_status_check_contexts"], key=lambda item: (item["context"], item["app_id"]))
+        == sorted(required_contexts, key=lambda item: (item["context"], item["app_id"]))
+        and observations["required_check_names"] == sorted(item["context"] for item in required_contexts)
+    )
+    activation_check_set_matches = (
+        not _check_set(receipt_checks, required_post_checks, final_sha, "receipt postpublication")
+        and not _check_set(observed_checks, required_post_checks, final_sha, "live postpublication")
+        and receipt_checks == observed_checks
+        and live_checks == receipt_checks
+    )
+    activation_proven = (
+        allow_main_descendant
+        and owner_authorization_matches
+        and successor_registration_matches
+        and transition_witness_matches
+        and live_pr_matches
+        and final_commit_matches
+        and final_protocol_blob_matches
+        and activation_protection_matches
+        and activation_check_set_matches
+        and transition_receipt["merge_method"] == "MERGE_COMMIT"
+        and transition_receipt["pr_merged"] is True
+        and observations["pr_merged"] is True
+        and transition_receipt["pr_merge_commit_sha"] == final_sha
+        and observations["pr_merge_commit_sha"] == final_sha
+        and observations["remote_main_sha"] == final_sha
+        and observations["fresh_main_clone_head_sha"] == final_sha
+        and transition_receipt["observed_remote_main_sha"] == final_sha
+        and transition_receipt["fresh_main_clone_head_sha"] == final_sha
+    )
     if errors:
+        if activation_claimed:
+            if not activation_proven:
+                errors.insert(0, "R3 activation is claimed by a merge-bound receipt but could not be fully reverified; R3 stays effective until signed R2 restoration")
+            return "R3", errors
         return "R2", errors
     return "R3", []
+
+
+def read_authenticated_r2_restore_authorization(
+    commit_sha: str,
+    *,
+    expected_file_sha256: str | None = None,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Read a separate, signed Owner instruction whose sole action is RESTORE_R2_ONLY."""
+    api = github_api or _gh_api_json
+    try:
+        actor = api("user")
+        public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
+        control_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
+        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}")
+        history = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(R2_RESTORE_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1"
+        )
+        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
+        content = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{R2_RESTORE_AUTHORIZATION_PATH}?ref={commit_sha}"
+        )
+        actor_id = actor.get("id")
+        if actor_id != public_repo.get("owner", {}).get("id") or actor_id != control_repo.get("owner", {}).get("id"):
+            return None, ["authenticated actor is not the Owner of both repositories"]
+        if control_repo.get("private") is not True or control_repo.get("default_branch") != "main":
+            return None, ["R2 restoration authorization source is not confirmed private 1111/main"]
+        if commit.get("sha") != commit_sha:
+            return None, ["R2 restoration authorization commit SHA mismatch"]
+        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
+        if not signature_ok:
+            return None, [f"R2 restoration authorization signature failed closed: {signature_error}"]
+        if not isinstance(history, list) or not history or history[0].get("sha") != commit_sha:
+            return None, ["R2 restoration authorization is not the latest record commit on 1111/main"]
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["R2 restoration authorization commit is not present in 1111/main history"]
+        if content.get("path") != R2_RESTORE_AUTHORIZATION_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
+            return None, ["fixed R2 restoration authorization path is unreadable at the exact signed commit"]
+        raw = base64.b64decode("".join(content["content"].split()), validate=True)
+        file_sha256 = hashlib.sha256(raw).hexdigest()
+        if expected_file_sha256 and file_sha256 != expected_file_sha256:
+            return None, ["R2 restoration authorization digest differs from the independent receipt"]
+        statement = json.loads(raw.decode("utf-8"))
+        schema = load_json(SCHEMA_PATH)
+        errors = _schema_errors(statement, {"$ref": "#/$defs/restoreAuthorizationStatement", "$defs": schema["$defs"]})
+        if errors:
+            return None, [f"invalid R2 restoration authorization: {item}" for item in errors]
+        if statement["owner_actor_id"] != actor_id:
+            return None, ["R2 restoration authorization names a different Owner account"]
+        committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
+        if not committed_at:
+            return None, ["R2 restoration authorization commit has no committer timestamp"]
+        if datetime.fromisoformat(statement["approved_at"].replace("Z", "+00:00")) > datetime.fromisoformat(committed_at.replace("Z", "+00:00")):
+            return None, ["R2 restoration authorization time is later than its signed commit"]
+        return {
+            "statement": statement,
+            "authorization_repository": OWNER_AUTHORIZATION_REPOSITORY,
+            "authorization_path": R2_RESTORE_AUTHORIZATION_PATH,
+            "authorization_commit_sha": commit_sha,
+            "authorization_committed_at": committed_at,
+            "authorization_file_sha256": file_sha256,
+            "authorization_signature_verified": True,
+            "authorization_signature_reason": "valid",
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"authenticated R2 restoration authorization readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def read_live_r2_restoration_witness(
+    recovery_receipt: dict[str, Any],
+    *,
+    restore_authorization: dict[str, Any],
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Require the latest signed 1111 witness to carry the exact restored-main receipt."""
+    api = github_api or _gh_api_json
+    try:
+        history = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(R2_RESTORATION_WITNESS_PATH, safe='')}&sha=main&per_page=1"
+        )
+        if not isinstance(history, list) or not history or not isinstance(history[0].get("sha"), str):
+            return None, ["no signed R2 restoration witness exists on 1111/main"]
+        witness_sha = history[0]["sha"]
+        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{witness_sha}")
+        owner_id = restore_authorization["statement"]["owner_actor_id"]
+        if commit.get("sha") != witness_sha:
+            return None, ["R2 restoration witness commit SHA mismatch"]
+        signature_ok, signature_error = _verified_owner_commit(commit, owner_id)
+        if not signature_ok:
+            return None, [f"R2 restoration witness signature failed closed: {signature_error}"]
+        auth_ancestry = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{restore_authorization['authorization_commit_sha']}...{witness_sha}"
+        )
+        main_ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{witness_sha}...main")
+        if not isinstance(auth_ancestry, dict) or auth_ancestry.get("status") != "ahead":
+            return None, ["R2 restoration witness is not a descendant of its signed Owner authorization"]
+        if not isinstance(main_ancestry, dict) or main_ancestry.get("status") not in {"ahead", "identical"}:
+            return None, ["R2 restoration witness is no longer present on 1111/main"]
+        content = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{R2_RESTORATION_WITNESS_PATH}?ref={witness_sha}"
+        )
+        if content.get("path") != R2_RESTORATION_WITNESS_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
+            return None, ["fixed R2 restoration witness file is unreadable at its exact signed commit"]
+        raw = base64.b64decode("".join(content["content"].split()), validate=True)
+        actual = json.loads(raw.decode("utf-8"))
+        if actual != recovery_receipt:
+            return None, ["caller-supplied R2 restoration receipt differs from the exact 1111 witness file"]
+        auth_content = api(
+            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{R2_RESTORE_AUTHORIZATION_PATH}?ref={witness_sha}"
+        )
+        if auth_content.get("path") != R2_RESTORE_AUTHORIZATION_PATH or auth_content.get("encoding") != "base64":
+            return None, ["signed restoration witness does not retain its Owner authorization file"]
+        auth_raw = base64.b64decode("".join(auth_content["content"].split()), validate=True)
+        if hashlib.sha256(auth_raw).hexdigest() != recovery_receipt["owner_authorization_file_sha256"]:
+            return None, ["restoration witness contains a different Owner authorization record"]
+        committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
+        if not committed_at:
+            return None, ["R2 restoration witness commit has no committer timestamp"]
+        return {
+            "witness_commit_sha": witness_sha,
+            "witness_file_sha256": hashlib.sha256(raw).hexdigest(),
+            "witness_signature_verified": True,
+            "witness_signature_reason": "valid",
+            "witness_committed_at": committed_at,
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"live R2 restoration witness readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def _read_live_file_identity(
+    repository: str, path: str, ref: str, *, github_api: Callable[[str], dict[str, Any] | list[Any]]
+) -> tuple[str | None, str | None, list[str]]:
+    try:
+        content = github_api(f"repos/{repository}/contents/{path}?ref={quote(ref, safe='')}")
+        if content.get("path") != path or content.get("type") != "file" or content.get("encoding") != "base64":
+            return None, None, [f"GitHub file readback is invalid for {repository}:{path}@{ref}"]
+        raw = base64.b64decode("".join(content["content"].split()), validate=True)
+        return content.get("sha"), hashlib.sha256(raw).hexdigest(), []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, None, [f"GitHub file readback failed closed: {error.__class__.__name__}: {error}"]
+
+
+def resolve_effective_protocol_with_recovery(
+    transition_receipt: dict[str, Any] | None,
+    *,
+    observations: dict[str, Any] | None,
+    repository_owner_id: int | None,
+    recovery_state: dict[str, Any] | None = None,
+    recovery_state_file_sha256: str | None = None,
+    recovery_receipt: dict[str, Any] | None = None,
+    recovery_observations: dict[str, Any] | None = None,
+    protocol_blob_sha: str | None = None,
+    github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
+) -> tuple[str, list[str]]:
+    """Select R2 only after a complete signed R3→R2 restoration witness."""
+    current, errors = resolve_effective_protocol(
+        transition_receipt, observations=observations, repository_owner_id=repository_owner_id,
+        protocol_blob_sha=protocol_blob_sha, github_api=github_api, allow_main_descendant=True,
+    )
+    if current != "R3":
+        return current, errors
+    if recovery_state is None:
+        return "R3", errors
+    schema = load_json(SCHEMA_PATH)
+    state_errors = _schema_errors(recovery_state, {"$ref": "#/$defs/recoveryState", "$defs": schema["$defs"]})
+    if state_errors:
+        return "R3", [f"invalid R2 recovery state; R3 remains effective: {item}" for item in state_errors]
+    target_r2_blob = git_blob_sha(R2_PROTOCOL_PATH)
+    if recovery_state["source_r3_protocol_blob_sha"] != transition_receipt["r3_protocol_blob_sha"]:
+        return "R3", ["recovery state is not bound to the effective R3 protocol blob"]
+    if recovery_state["target_r2_protocol_blob_sha"] != target_r2_blob:
+        return "R3", ["recovery state does not target the exact preserved R2 protocol blob"]
+    if recovery_state["status"] == "NOT_REQUESTED":
+        if recovery_receipt is not None or recovery_observations is not None:
+            return "R3", ["R2 restoration evidence was supplied without a RESTORE_R2_PENDING main state"]
+        return "R3", errors
+    if recovery_receipt is None or recovery_observations is None or recovery_state_file_sha256 is None:
+        return "R3", ["R2 restoration lacks a signed Owner authorization, merged-PR record or final-main witness"]
+    receipt_errors = _schema_errors(recovery_receipt, {"$ref": "#/$defs/recoveryReceipt", "$defs": schema["$defs"]})
+    observation_errors = _schema_errors(recovery_observations, {"$ref": "#/$defs/recoveryObservations", "$defs": schema["$defs"]})
+    if receipt_errors or observation_errors:
+        return "R3", [f"invalid R2 restoration evidence; R3 remains effective: {item}" for item in receipt_errors + observation_errors]
+    api = github_api or _gh_api_json
+    errors = []
+    if recovery_state["status"] != "RESTORE_R2_PENDING":
+        errors.append("R2 restoration state is not pending")
+    if recovery_receipt["source_r3_protocol_blob_sha"] != recovery_state["source_r3_protocol_blob_sha"]:
+        errors.append("R2 restoration witness source R3 blob differs from the pending state")
+    if recovery_receipt["target_r2_protocol_blob_sha"] != target_r2_blob:
+        errors.append("R2 restoration witness does not identify the exact R2 blob")
+    if recovery_receipt["recovery_state_file_sha256"] != recovery_state_file_sha256:
+        errors.append("R2 restoration witness does not bind the exact pending state file bytes")
+    if recovery_receipt["pr_number"] <= 0 or recovery_receipt["candidate_head_sha"] != recovery_observations["recovery_pr_head_sha"]:
+        errors.append("restoration PR number or candidate SHA differs from the independent observation")
+    if recovery_receipt["final_main_sha"] != recovery_receipt["remote_main_sha"] or recovery_receipt["final_main_sha"] != recovery_receipt["fresh_clone_sha"]:
+        errors.append("restoration final SHA differs from remote main or fresh clone")
+    if recovery_receipt["final_main_sha"] != recovery_observations["recovery_pr_merge_commit_sha"]:
+        errors.append("restoration final SHA differs from the exact GitHub merge commit")
+    if recovery_observations["recovery_pr_base_sha"] != recovery_receipt["base_main_sha"]:
+        errors.append("restoration base SHA differs from its recovery PR base")
+    if recovery_receipt["final_main_parents"] != [recovery_receipt["base_main_sha"], recovery_receipt["candidate_head_sha"]]:
+        errors.append("restoration merge commit parents are not [base, candidate] in order")
+    if recovery_receipt["merge_preview_parents"] != [recovery_receipt["base_main_sha"], recovery_receipt["candidate_head_sha"]]:
+        errors.append("restoration preview parents are not [base, candidate] in order")
+    if recovery_receipt["final_main_tree_sha"] != recovery_receipt["merge_preview_tree_sha"]:
+        errors.append("restoration final tree differs from the tested merge-preview tree")
+    if recovery_observations["current_main_sha"] != recovery_receipt["final_main_sha"] and recovery_observations["current_main_sha"] != recovery_observations.get("remote_main_sha"):
+        errors.append("current main observation is internally inconsistent")
+    if recovery_observations["recovery_pr_merged"] is not True:
+        errors.append("GitHub does not confirm a merged protected recovery PR")
+    if recovery_observations["recovery_pr_merge_commit_sha"] != recovery_receipt["final_main_sha"]:
+        errors.append("GitHub recovery PR merge commit differs from the receipt")
+    if recovery_observations["recovery_pr_base_sha"] != recovery_receipt["base_main_sha"]:
+        errors.append("GitHub recovery PR base differs from the receipt")
+    if recovery_observations["final_tree_sha"] != recovery_receipt["final_main_tree_sha"] or recovery_observations["final_parents"] != recovery_receipt["final_main_parents"]:
+        errors.append("GitHub final commit tree or parents differ from the receipt")
+    if recovery_observations["remote_main_sha"] != recovery_observations["current_main_sha"]:
+        errors.append("live remote main differs from the current main observation")
+    if recovery_observations["fresh_clone_sha"] != recovery_receipt["final_main_sha"]:
+        errors.append("fresh-clone HEAD differs from the restoration final SHA")
+    if recovery_observations["current_r2_protocol_blob_sha"] != target_r2_blob:
+        errors.append("current main does not contain the exact R2 protocol blob")
+    if recovery_observations["current_recovery_state_file_sha256"] != recovery_state_file_sha256:
+        errors.append("current main does not contain the exact pending recovery-state bytes")
+    required_contexts = load_json(PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"]
+    if recovery_observations["required_status_check_contexts"] != required_contexts or recovery_receipt["required_status_check_contexts"] != required_contexts:
+        errors.append("recovery did not use every exact R3 required status context/app ID")
+    if recovery_receipt["branch_protection_rules_sha256"] != recovery_observations["branch_protection_rules_sha256"]:
+        errors.append("recovery witness and live observation use different protected-main rules")
+    if recovery_receipt["owner_authorization_commit_sha"] != recovery_observations["authorization_commit_sha"]:
+        errors.append("restoration receipt and live observation bind different Owner authorization commits")
+    if recovery_observations["authorization_signature_verified"] is not True or recovery_observations["authorization_signature_reason"] != "valid":
+        errors.append("Owner restoration authorization lacks a verified GitHub signature")
+    if recovery_observations["witness_signature_verified"] is not True or recovery_observations["witness_signature_reason"] != "valid":
+        errors.append("R2 restoration witness lacks a verified GitHub signature")
+
+    authorization, authorization_errors = read_authenticated_r2_restore_authorization(
+        recovery_receipt["owner_authorization_commit_sha"],
+        expected_file_sha256=recovery_receipt["owner_authorization_file_sha256"], github_api=api,
+    )
+    errors.extend(authorization_errors)
+    if authorization is not None:
+        statement = authorization["statement"]
+        expected_fields = {
+            "action": "RESTORE_R2_ONLY", "scope": "ONE_TIME_R3_TO_R2_RESTORATION_ONLY",
+            "source_r3_protocol_blob_sha": recovery_state["source_r3_protocol_blob_sha"],
+            "target_r2_protocol_blob_sha": target_r2_blob,
+            "recovery_state_file_sha256": recovery_state_file_sha256,
+            "pr_number": recovery_receipt["pr_number"], "task_id": recovery_receipt["task_id"],
+            "formal_ordinal": recovery_receipt["formal_ordinal"],
+            "work_branch": recovery_receipt["work_branch"],
+            "candidate_head_sha": recovery_receipt["candidate_head_sha"],
+            "base_main_sha": recovery_receipt["base_main_sha"],
+            "merge_preview_sha": recovery_receipt["merge_preview_sha"],
+            "merge_preview_tree_sha": recovery_receipt["merge_preview_tree_sha"],
+            "prepublication_record_sha256": recovery_receipt["prepublication_record_sha256"],
+        }
+        for key, value in expected_fields.items():
+            if statement.get(key) != value:
+                errors.append(f"RESTORE_R2_ONLY authorization does not bind {key}")
+        if statement["owner_actor_id"] != repository_owner_id or statement["owner_actor_id"] != recovery_observations["repository_owner_id"]:
+            errors.append("R2 restoration authorization is not bound to the repository Owner")
+
+    live_pr, pr_errors = read_live_merged_pr(recovery_receipt["pr_number"], github_api=api)
+    errors.extend(pr_errors)
+    if live_pr is not None and (
+        live_pr["head_sha"] != recovery_receipt["candidate_head_sha"]
+        or live_pr["merge_commit_sha"] != recovery_receipt["final_main_sha"]
+        or live_pr["head_ref"] != recovery_receipt["work_branch"]
+    ):
+        errors.append("live GitHub recovery PR metadata differs from the signed restoration record")
+
+    live_protection, protection_errors = read_live_branch_protection(github_api=api)
+    errors.extend(protection_errors)
+    if live_protection is not None and live_protection["rules_sha256"] != recovery_receipt["branch_protection_rules_sha256"]:
+        errors.append("live branch protections differ from those witnessed for the recovery merge")
+    live_main_sha, main_errors = read_live_main_sha(github_api=api)
+    errors.extend(main_errors)
+    if live_main_sha != recovery_observations["current_main_sha"]:
+        errors.append("current main SHA differs from its live GitHub ref")
+    if live_main_sha and live_main_sha != recovery_receipt["final_main_sha"]:
+        ancestry = api(f"repos/{PUBLIC_REPOSITORY}/compare/{recovery_receipt['final_main_sha']}...{live_main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") != "ahead":
+            errors.append("current main is not a descendant of the witnessed R2 restoration commit")
+    live_final, final_errors = read_live_commit_structure(recovery_receipt["final_main_sha"], github_api=api)
+    errors.extend(final_errors)
+    if live_final is not None and (live_final["tree_sha"] != recovery_receipt["final_main_tree_sha"] or live_final["parents"] != recovery_receipt["final_main_parents"]):
+        errors.append("live restoration commit object differs from the witnessed tree or parent order")
+    current_r2_blob, _, r2_file_errors = _read_live_file_identity(
+        PUBLIC_REPOSITORY, relative(R2_PROTOCOL_PATH), live_main_sha or recovery_receipt["final_main_sha"], github_api=api,
+    )
+    errors.extend(r2_file_errors)
+    if current_r2_blob != target_r2_blob:
+        errors.append("current main no longer carries the exact R2 protocol blob")
+    state_blob, state_digest, state_file_errors = _read_live_file_identity(
+        PUBLIC_REPOSITORY, relative(RECOVERY_STATE_PATH), live_main_sha or recovery_receipt["final_main_sha"], github_api=api,
+    )
+    errors.extend(state_file_errors)
+    if state_digest != recovery_state_file_sha256:
+        errors.append("current main recovery-state file differs from the exact pending state")
+
+    candidate_commit, candidate_errors = read_live_commit_structure(recovery_receipt["candidate_head_sha"], github_api=api)
+    preview_commit, preview_errors = read_live_commit_structure(recovery_receipt["merge_preview_sha"], github_api=api)
+    errors.extend(candidate_errors)
+    errors.extend(preview_errors)
+    if candidate_commit is not None and candidate_commit["tree_sha"] != recovery_receipt["merge_preview_tree_sha"]:
+        errors.append("recovery candidate tree differs from its tested merge preview")
+    if preview_commit is not None and preview_commit["parents"] != recovery_receipt["merge_preview_parents"]:
+        errors.append("live recovery merge-preview parents differ from the receipt")
+    if preview_commit is not None and preview_commit["tree_sha"] != recovery_receipt["merge_preview_tree_sha"]:
+        errors.append("live recovery merge-preview tree differs from the receipt")
+
+    live_checks, check_errors = read_live_postpublication_checks(
+        recovery_receipt["final_main_sha"],
+        required_workflows=load_json(PROTOCOL_PATH)["postpublication"]["required_workflow_names"], github_api=api,
+    )
+    errors.extend(check_errors)
+    errors.extend(_check_set(recovery_receipt["postpublication_checks"], load_json(PROTOCOL_PATH)["postpublication"]["required_workflow_names"], recovery_receipt["final_main_sha"], "R2 restoration postpublication"))
+    if live_checks is not None and live_checks != recovery_receipt["postpublication_checks"]:
+        errors.append("R2 restoration postpublication checks differ from authenticated Actions readback")
+
+    witness_meta, witness_errors = read_live_r2_restoration_witness(
+        recovery_receipt, restore_authorization=authorization or {"statement": {"owner_actor_id": repository_owner_id}}, github_api=api,
+    ) if authorization else (None, ["signed R2 restoration authorization is missing"])
+    errors.extend(witness_errors)
+    if witness_meta is not None:
+        if witness_meta["witness_commit_sha"] != recovery_observations["witness_commit_sha"]:
+            errors.append("live signed R2 restoration witness commit differs from the independent observation")
+        if witness_meta["witness_file_sha256"] != recovery_observations["witness_file_sha256"]:
+            errors.append("live signed R2 restoration witness differs from the receipt")
+        if datetime.fromisoformat(witness_meta["witness_committed_at"].replace("Z", "+00:00")) < datetime.fromisoformat(recovery_receipt["published_at"].replace("Z", "+00:00")):
+            errors.append("R2 restoration witness predates the final publication observation")
+
+    if errors:
+        return "R3", [f"R2 restoration did not verify; R3 remains effective: {item}" for item in errors]
+    return "R2", []
 
 
 def _check_set(
@@ -727,7 +1665,7 @@ def validate_transaction_record(
             return errors
 
     identity = record["task_identity"]
-    for key in ("task_id", "formal_ordinal", "task_branch", "current_task_source_sha256", "task_identity_model_sha256", "execution_contract_sha256"):
+    for key in ("task_id", "formal_ordinal", "task_branch", "current_task_source_sha256", "task_identity_model_sha256", "execution_contract_sha256", "successor_registration_commit_sha", "successor_registration_file_sha256"):
         if identity[key] != canonical_identity.get(key):
             errors.append(f"task identity field {key} differs from the exact authorized current task source")
 
@@ -775,10 +1713,39 @@ def validate_transaction_record(
             errors.append("required check contexts differ from the exact live GitHub branch rules")
         if protection["status"] != "VERIFIED" or protection["target_branch"] != "main" or protection["protected"] is not True:
             errors.append("main branch protection is unknown, absent or targets another branch")
+        if protection["pull_request_required"] is not True:
+            errors.append("GitHub does not enforce pull requests before updating main")
+        if protection["required_approval_count"] != 0:
+            errors.append("GitHub approval count violates the single-owner zero-approval policy")
+        if protection["code_owner_review_required"] or protection["last_push_approval_required"]:
+            errors.append("GitHub requires an independent reviewer, which the single Owner cannot provide")
+        if protection["linear_history_required"]:
+            errors.append("GitHub requires linear history and conflicts with the R3 merge-commit method")
+        normalized_recorded_contexts = sorted(
+            protection["required_status_check_contexts"], key=lambda item: (item["context"], item["app_id"])
+        )
+        normalized_protocol_contexts = sorted(
+            load_json(PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"],
+            key=lambda item: (item["context"], item["app_id"]),
+        )
+        if normalized_recorded_contexts != normalized_protocol_contexts:
+            errors.append("required status contexts/app IDs differ from the exact R3 contract")
+        if protection["status_checks_strict"] is not True:
+            errors.append("required checks do not require an up-to-date base")
+        if protection["admin_enforcement_enabled"] is not True or protection["no_bypass_confirmed"] is not True:
+            errors.append("main protection permits an administrator/ruleset bypass")
+        if protection["ruleset_bypass_actor_count"] != 0 or protection["classic_pr_bypass_actor_count"] != 0:
+            errors.append("main protection contains one or more explicit bypass actors")
+        if protection["force_push_allowed"] is not False or protection["deletions_allowed"] is not False:
+            errors.append("main protection permits force push or branch deletion")
+        if not protection["allow_merge_commit"] or protection["allow_squash_merge"] or protection["allow_rebase_merge"]:
+            errors.append("repository settings do not allow only the supported merge-commit path")
         stable_fields = [key for key in live_protection if key not in {"observed_at", "ruleset_count"}]
         if any(protection.get(key) != live_protection.get(key) for key in stable_fields):
             errors.append("recorded branch-protection details differ from the exact live GitHub observation")
         required_workflows = load_json(PROTOCOL_PATH)["prepublication"]["required_workflow_names"]
+        if record["required_check_names"] != required_names:
+            errors.append("recorded required check names differ from the live branch-rule contexts")
         errors.extend(_pull_request_workflow_errors(
             record["pull_request_workflow_checks"], pr_number=pr["number"], head_sha=pr["head_sha"],
             base_sha=refs["base_main_sha"], preview_sha=refs["merge_preview_sha"],
@@ -820,6 +1787,10 @@ def validate_transaction_record(
     approval = record["owner_approval"]
     if approval["owner_actor_id"] != expected.get("repository_owner_id"):
         errors.append("approval actor is not the observed repository Owner")
+    if approval["task_id"] != identity["task_id"] or approval["formal_ordinal"] != identity["formal_ordinal"]:
+        errors.append("Owner transition authorization does not bind the exact registered task ID and ordinal")
+    if approval["successor_registration_commit_sha"] != identity["successor_registration_commit_sha"] or approval["successor_registration_file_sha256"] != identity["successor_registration_file_sha256"]:
+        errors.append("Owner transition authorization does not bind the exact signed successor-registration record")
     if approval["approved_pr_number"] != pr["number"] or approval["approved_head_sha"] != pr["head_sha"] or approval["approved_base_sha"] != refs["base_main_sha"]:
         errors.append("Owner transition authorization does not bind the exact PR, head and base")
     if approval["r3_protocol_blob_sha"] != expected.get("r3_protocol_blob_sha", git_blob_sha()):
@@ -880,6 +1851,8 @@ def main() -> int:
     parser.add_argument("--transition-receipt", type=Path)
     parser.add_argument("--observations", type=Path)
     parser.add_argument("--repository-owner-id", type=int)
+    parser.add_argument("--recovery-receipt", type=Path)
+    parser.add_argument("--recovery-observations", type=Path)
     parser.add_argument("--transaction-record", type=Path)
     parser.add_argument("--expected-context", type=Path)
     parser.add_argument("--phase", choices=["prepublication", "postpublication"])
@@ -889,6 +1862,9 @@ def main() -> int:
     has_transition = any((args.transition_receipt, args.observations, args.repository_owner_id is not None))
     if has_transition and not all((args.transition_receipt, args.observations, args.repository_owner_id is not None)):
         parser.error("transition selection requires --transition-receipt, --observations and --repository-owner-id")
+    has_recovery_evidence = any((args.recovery_receipt, args.recovery_observations))
+    if has_recovery_evidence and (not has_transition or not all((args.recovery_receipt, args.recovery_observations))):
+        parser.error("R2 recovery selection requires a complete transition receipt/observation and both recovery receipt/observations")
     if args.transaction_record and (not args.expected_context or not args.phase):
         parser.error("--transaction-record requires --expected-context and --phase")
     if args.phase and not args.transaction_record:
@@ -904,12 +1880,21 @@ def main() -> int:
     current = "R2"
     activation_errors = ["no independent R3 transition receipt was supplied"]
     if has_transition:
-        current, activation_errors = resolve_effective_protocol(
+        current, activation_errors = resolve_effective_protocol_with_recovery(
             load_json(args.transition_receipt),
             observations=load_json(args.observations),
             repository_owner_id=args.repository_owner_id,
+            recovery_state=load_json(RECOVERY_STATE_PATH),
+            recovery_state_file_sha256=hashlib.sha256(RECOVERY_STATE_PATH.read_bytes()).hexdigest(),
+            recovery_receipt=load_json(args.recovery_receipt) if args.recovery_receipt else None,
+            recovery_observations=load_json(args.recovery_observations) if args.recovery_observations else None,
         )
     if args.transaction_record:
+        if current == "R3" and activation_errors:
+            print("R3_TRANSACTION_REJECTED: R3 remains effective but its live governance evidence is blocked", file=sys.stderr)
+            for error in activation_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 2
         if args.phase == "postpublication" and current != "R3":
             print("R3_TRANSACTION_REJECTED: R2 remains the effective policy", file=sys.stderr)
             for error in activation_errors:
@@ -932,6 +1917,11 @@ def main() -> int:
         return 0
 
     if current == "R3":
+        if activation_errors:
+            print("RELEASE_TRANSACTION_PROTOCOL_R3_CURRENT_BLOCKED", file=sys.stderr)
+            for error in activation_errors:
+                print(f"- {error}", file=sys.stderr)
+            return 2
         print("RELEASE_TRANSACTION_PROTOCOL_R3_CURRENT")
     else:
         print(f"RELEASE_TRANSACTION_PROTOCOL_R3_CANDIDATE_OK current=R2 path={relative(PROTOCOL_PATH)}")

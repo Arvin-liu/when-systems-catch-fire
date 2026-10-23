@@ -266,7 +266,7 @@ jobs:
           test -z "$(git status --porcelain --untracked-files=all)"
 
   validate:
-    name: validate
+    name: foundation-validation
     if: always()
     needs: [route, full_regression]
     runs-on: ubuntu-latest

@@ -1,13 +1,18 @@
 from __future__ import annotations
 
 import base64
+from contextlib import redirect_stderr
 import hashlib
+from io import StringIO
 import json
 import subprocess
 import sys
+import tempfile
 import time
 import unittest
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from unittest.mock import patch
 from urllib.parse import quote
 
 from tools import validate_release_transaction_protocol as r2
@@ -15,7 +20,11 @@ from tools import validate_release_transaction_protocol_r3 as r3
 
 
 def _check(name: str, sha: str) -> dict[str, str]:
-    run_id = 2001 if name == "release-transaction-protocol-validation" else 2002
+    run_id = {
+        "release-transaction-protocol-validation": 2001,
+        "foundation-validation": 2002,
+        "repository-path-accounting-preflight": 2003,
+    }[name]
     return {
         "name": name, "sha": sha, "conclusion": "success", "completed_at": "2026-10-18T06:00:00Z",
         "check_url": f"https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/{run_id}",
@@ -42,6 +51,27 @@ def _suite(run_id: str, task_id: str, branch: str, sha: str) -> dict[str, object
     }
 
 
+def _registration_statement() -> dict[str, object]:
+    inventory = {
+        "merged_task_ids": ["SYNTHETIC_PRIOR"], "open_task_pr_numbers": [], "open_task_ids": [],
+        "formal_task_identities": [{
+            "task_id": "SYNTHETIC_PRIOR", "formal_ordinal": 149, "work_branch": "synthetic/prior",
+            "receipt_branch": "synthetic/prior-receipt", "lifecycle_state": "MERGED", "evidence_ref": "fixture:prior",
+        }],
+        "1111_task_receipt_refs": ["relay/receipts/SYNTHETIC_PRIOR"],
+    }
+    inventory["inventory_sha256"] = hashlib.sha256(
+        json.dumps(inventory, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    return {
+        "registration_status": "OWNER_REGISTERED", "task_id": "SYNTHETIC_FIXTURE_ONLY",
+        "formal_ordinal": 1, "work_branch": "synthetic/fixture-only", "receipt_branch": "synthetic/fixture-only-receipt",
+        "formal_base_main_sha": "a" * 40, "r3_protocol_candidate_blob_sha": r3.git_blob_sha(),
+        "registration_nonce": "n" * 32, "prior_task_id": "SYNTHETIC_PRIOR",
+        "conflict_inventory": inventory, "registered_at": "2026-10-18T05:00:00Z",
+    }
+
+
 def _owner_statement(
     *, pr_number: int = 301, head_sha: str = "b" * 40, base_sha: str = "a" * 40,
     actor_id: int = 49422864, protocol_blob_sha: str | None = None,
@@ -50,6 +80,11 @@ def _owner_statement(
         "approved": True, "owner_actor_id": actor_id, "approved_pr_number": pr_number,
         "approved_head_sha": head_sha, "approved_base_sha": base_sha,
         "r3_protocol_blob_sha": protocol_blob_sha or r3.git_blob_sha(),
+        "task_id": "SYNTHETIC_FIXTURE_ONLY", "formal_ordinal": 1,
+        "successor_registration_commit_sha": "5" * 40,
+        "successor_registration_file_sha256": hashlib.sha256(
+            json.dumps(_registration_statement(), sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest(),
         "scope": "ONE_TIME_R3_BOOTSTRAP_ONLY",
         "r2_duration_policy_exception": "R2_MINIMUM_NATURAL_WINDOW_14400S_NOT_CARRIED_FORWARD_IN_R3",
         "r2_full_suite_count_policy_exception": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT",
@@ -67,19 +102,49 @@ def _owner_evidence(statement: dict[str, object] | None = None) -> dict[str, obj
         "authorization_commit_sha": "f" * 40,
         "authorization_committed_at": "2026-10-18T06:00:00Z",
         "authorization_file_sha256": hashlib.sha256(content).hexdigest(),
+        "authorization_signature_verified": True, "authorization_signature_reason": "valid",
     }
 
 
-def _github_api(statement: dict[str, object] | None = None, *, actor_id: int = 49422864, commit_sha: str = "f" * 40):
+def _github_api(
+    statement: dict[str, object] | None = None, *, actor_id: int = 49422864,
+    commit_sha: str = "f" * 40, registration_statement: dict[str, object] | None = None,
+):
     statement = statement or _owner_statement(actor_id=actor_id)
     content = json.dumps(statement, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    registration = registration_statement or _registration_statement()
+    registration_content = json.dumps(registration, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    registration_sha = "5" * 40
     values = {
         "user": {"login": "Arvin-liu", "id": actor_id},
-        "repos/Arvin-liu/when-systems-catch-fire": {"owner": {"id": 49422864}},
+        "repos/Arvin-liu/when-systems-catch-fire": {
+            "owner": {"id": 49422864}, "allow_merge_commit": True,
+            "allow_squash_merge": False, "allow_rebase_merge": False,
+        },
         "repos/Arvin-liu/1111": {"owner": {"id": 49422864}, "private": True, "default_branch": "main"},
         f"repos/Arvin-liu/1111/commits/{commit_sha}": {
             "sha": commit_sha, "author": {"id": actor_id}, "committer": {"id": actor_id},
-            "commit": {"committer": {"date": "2026-10-18T06:00:00Z"}},
+            "commit": {"committer": {"date": "2026-10-18T06:00:00Z"}, "verification": {
+                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
+            }},
+        },
+        f"repos/Arvin-liu/1111/commits?path={quote(r3.OWNER_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1": [{"sha": commit_sha}],
+        f"repos/Arvin-liu/1111/compare/{commit_sha}...main": {"status": "identical"},
+        f"repos/Arvin-liu/1111/commits/{registration_sha}": {
+            "sha": registration_sha, "author": {"id": actor_id}, "committer": {"id": actor_id},
+            "commit": {"committer": {"date": "2026-10-18T06:00:00Z"}, "verification": {
+                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
+            }},
+        },
+        f"repos/Arvin-liu/1111/commits?path={quote(r3.SUCCESSOR_REGISTRATION_PATH, safe='')}&sha=main&per_page=1": [{"sha": registration_sha}],
+        f"repos/Arvin-liu/1111/compare/{registration_sha}...main": {"status": "ahead"},
+        f"repos/Arvin-liu/1111/contents/{r3.SUCCESSOR_REGISTRATION_PATH}?ref={registration_sha}": {
+            "path": r3.SUCCESSOR_REGISTRATION_PATH, "type": "file", "encoding": "base64",
+            "content": base64.b64encode(registration_content).decode("ascii"),
+        },
+        f"repos/Arvin-liu/when-systems-catch-fire/contents/{r3.relative(r3.CURRENT_TASK_PATH)}?ref={'a' * 40}": {
+            "path": r3.relative(r3.CURRENT_TASK_PATH), "type": "file", "encoding": "base64",
+            "content": base64.b64encode(json.dumps({"current_task": {"task_id": "SYNTHETIC_PRIOR"}}).encode("utf-8")).decode("ascii"),
         },
         f"repos/Arvin-liu/1111/contents/{r3.OWNER_AUTHORIZATION_PATH}?ref={commit_sha}": {
             "path": r3.OWNER_AUTHORIZATION_PATH, "type": "file", "encoding": "base64",
@@ -88,8 +153,12 @@ def _github_api(statement: dict[str, object] | None = None, *, actor_id: int = 4
         f"repos/Arvin-liu/1111/commits?path={quote(r3.TRANSITION_WITNESS_PATH, safe='')}&sha=main&per_page=1": [{"sha": "6" * 40}],
         f"repos/Arvin-liu/1111/commits/{'6' * 40}": {
             "sha": "6" * 40, "author": {"id": actor_id}, "committer": {"id": actor_id},
-            "commit": {"committer": {"date": "2026-10-18T06:40:00Z"}},
+            "commit": {"committer": {"date": "2026-10-18T06:40:00Z"}, "verification": {
+                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
+            }},
         },
+        f"repos/Arvin-liu/1111/compare/{commit_sha}...{'6' * 40}": {"status": "ahead"},
+        f"repos/Arvin-liu/1111/compare/{'6' * 40}...main": {"status": "ahead"},
         f"repos/Arvin-liu/1111/contents/{r3.OWNER_AUTHORIZATION_PATH}?ref={'6' * 40}": {
             "path": r3.OWNER_AUTHORIZATION_PATH, "type": "file", "encoding": "base64",
             "content": base64.b64encode(content).decode("ascii"),
@@ -99,6 +168,11 @@ def _github_api(statement: dict[str, object] | None = None, *, actor_id: int = 4
             "sha": "e" * 40, "commit": {"tree": {"sha": "c" * 40}},
             "parents": [{"sha": "a" * 40}, {"sha": "b" * 40}],
         },
+        f"repos/Arvin-liu/when-systems-catch-fire/contents/{r3.relative(r3.PROTOCOL_PATH)}?ref={'e' * 40}": {
+            "path": r3.relative(r3.PROTOCOL_PATH), "type": "file", "encoding": "base64",
+            "sha": r3.git_blob_sha(),
+            "content": base64.b64encode(r3.PROTOCOL_PATH.read_bytes()).decode("ascii"),
+        },
         "repos/Arvin-liu/when-systems-catch-fire/pulls/301": {
             "number": 301, "state": "closed", "merged": True,
             "base": {"ref": "main"}, "head": {"ref": "synthetic/fixture-only", "sha": "b" * 40},
@@ -107,11 +181,18 @@ def _github_api(statement: dict[str, object] | None = None, *, actor_id: int = 4
             "html_url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/301",
         },
         "repos/Arvin-liu/when-systems-catch-fire/branches/main/protection": {
-            "required_status_checks": None, "required_pull_request_reviews": None,
-            "enforce_admins": {"enabled": False}, "allow_force_pushes": {"enabled": False},
-            "allow_deletions": {"enabled": False}, "restrictions": None,
+            "required_status_checks": {"strict": True, "checks": [
+                {"context": item["context"], "app_id": item["app_id"]}
+                for item in r3.load_json(r3.PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"]
+            ]},
+            "required_pull_request_reviews": {"required_approving_review_count": 0,
+                "bypass_pull_request_allowances": {"users": [], "teams": [], "apps": []}},
+            "enforce_admins": {"enabled": True}, "allow_force_pushes": {"enabled": False},
+            "allow_deletions": {"enabled": False}, "required_linear_history": {"enabled": False},
+            "restrictions": None,
         },
         "repos/Arvin-liu/when-systems-catch-fire/rules/branches/main": [],
+        "repos/Arvin-liu/when-systems-catch-fire/rulesets?includes_parents=true&per_page=100": [],
     }
     def read(endpoint: str):
         if endpoint not in values:
@@ -129,6 +210,7 @@ def _github_api(statement: dict[str, object] | None = None, *, actor_id: int = 4
                     "workflow_runs": [
                         {"name": "release-transaction-protocol-validation", "id": 2001, "event": "push", "head_branch": "main", "head_sha": final_sha, "status": "completed", "conclusion": "success", "updated_at": "2026-10-18T06:00:00Z", "html_url": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/2001", "run_number": 1, "run_attempt": 1},
                         {"name": "foundation-validation", "id": 2002, "event": "push", "head_branch": "main", "head_sha": final_sha, "status": "completed", "conclusion": "success", "updated_at": "2026-10-18T06:00:00Z", "html_url": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/2002", "run_number": 1, "run_attempt": 1},
+                        {"name": "repository-path-accounting-preflight", "id": 2003, "event": "push", "head_branch": "main", "head_sha": final_sha, "status": "completed", "conclusion": "success", "updated_at": "2026-10-18T06:00:00Z", "html_url": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/2003", "run_number": 1, "run_attempt": 1},
                     ]
                 }
             raise KeyError(endpoint)
@@ -157,10 +239,13 @@ def _context() -> dict[str, object]:
         "task_id": "SYNTHETIC_FIXTURE_ONLY", "formal_ordinal": 1,
         "task_branch": "synthetic/fixture-only", "current_task_source_sha256": "3" * 64,
         "task_identity_model_sha256": "6" * 64, "execution_contract_sha256": "4" * 64,
+        "successor_registration_commit_sha": "5" * 40,
+        "successor_registration_file_sha256": owner["successor_registration_file_sha256"],
         "pr_number": 301, "repository_owner_id": 49422864,
         "candidate_head_sha": "b" * 40, "candidate_tree_sha": "c" * 40,
         "base_main_sha": "a" * 40, "merge_preview_sha": "d" * 40,
-        "merge_preview_tree_sha": "c" * 40, "required_check_names": [],
+        "merge_preview_tree_sha": "c" * 40,
+        "required_check_names": list(protection["required_check_names"]),
         "required_workflow_names": workflows, "required_postpublication_check_names": post_workflows,
         "test_inventory_sha256": "1" * 64, "test_count": 3, "environment_sha256": "2" * 64,
         "reviewed_changed_paths": ["ignition/tools/release.py", "ignition/tests/test_release.py"],
@@ -182,13 +267,14 @@ def _record() -> dict[str, object]:
     candidate_sha = str(context["candidate_head_sha"])
     preview_sha = str(context["merge_preview_sha"])
     workflow_checks = [
-        _workflow_check(name, 1001 + i, "preflight" if name == "repository-path-accounting-preflight" else "validate")
+        _workflow_check(name, 1001 + i, name)
         for i, name in enumerate(context["required_workflow_names"])
     ]
     return {
         "task_identity": {key: context[key] for key in (
             "task_id", "formal_ordinal", "task_branch", "current_task_source_sha256",
-            "task_identity_model_sha256", "execution_contract_sha256"
+            "task_identity_model_sha256", "execution_contract_sha256",
+            "successor_registration_commit_sha", "successor_registration_file_sha256"
         )},
         "pull_request": {
             "number": 301, "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/301",
@@ -263,6 +349,7 @@ def _activation_receipt() -> dict[str, object]:
         "actual_final_main_parents": ["a" * 40, "b" * 40], "observed_remote_main_sha": "e" * 40,
         "fresh_main_clone_head_sha": "e" * 40, "merge_method": "MERGE_COMMIT",
         "branch_protection_verified": True, "branch_protection_rules_sha256": context["branch_protection_rules_sha256"],
+        "required_status_check_contexts": r3.load_json(r3.PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"],
         "owner_approved_before_merge": True, "owner_approval": context["owner_authorization"],
         "postpublication_checks": [_check(name, "e" * 40) for name in context["required_postpublication_check_names"]],
         "published_at": "2026-10-18T06:30:00Z",
@@ -284,29 +371,406 @@ def _live_observations() -> dict[str, object]:
         "final_main_tree_sha": "c" * 40, "final_main_parents": ["a" * 40, "b" * 40],
         "fresh_main_clone_head_sha": "e" * 40, "branch_protection_status": "VERIFIED",
         "branch_protection_rules_sha256": context["branch_protection_rules_sha256"],
-        "branch_protection_rules": context["branch_protection_rules"], "required_check_names": [],
+        "branch_protection_rules": context["branch_protection_rules"], "required_check_names": context["required_check_names"],
         "postpublication_checks": [_check(name, "e" * 40) for name in context["required_postpublication_check_names"]],
         "authenticated_actor_id": 49422864, "authorization_commit_author_id": 49422864,
         "authorization_commit_committer_id": 49422864,
         "authorization_repository_owner_id": 49422864, "authorization_readback_commit_sha": "f" * 40,
         "authorization_file_sha256": owner["authorization_file_sha256"], "owner_authorization": owner,
+        "authorization_signature_verified": True, "authorization_signature_reason": "valid",
         "witness_repository": "Arvin-liu/1111", "witness_branch": "main",
         "witness_path": r3.TRANSITION_WITNESS_PATH, "witness_readback_commit_sha": "6" * 40,
         "witness_commit_author_id": 49422864, "witness_commit_committer_id": 49422864,
+        "witness_signature_verified": True, "witness_signature_reason": "valid",
         "witness_committed_at": "2026-10-18T06:40:00Z",
         "witness_file_sha256": hashlib.sha256(witness_raw).hexdigest(),
     }
+
+
+def _recovery_fixture():
+    def canonical_bytes(value: object) -> bytes:
+        return json.dumps(value, sort_keys=True, separators=(",", ":")).encode("utf-8")
+
+    def file_object(path: str, raw: bytes) -> dict[str, object]:
+        git_header = f"blob {len(raw)}\0".encode("ascii")
+        return {
+            "path": path, "type": "file", "encoding": "base64",
+            "content": base64.b64encode(raw).decode("ascii"),
+            "sha": hashlib.sha1(git_header + raw).hexdigest(),
+        }
+
+    final_sha, recovery_head, preview_sha = "5" * 40, "7" * 40, "8" * 40
+    base_sha, final_tree = "e" * 40, "9" * 40
+    auth_sha, witness_sha = "1" * 40, "2" * 40
+    contexts = r3.load_json(r3.PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"]
+    main_api = _github_api()
+    protection, protection_errors = r3.read_live_branch_protection(github_api=main_api)
+    assert protection and not protection_errors
+
+    state = {
+        "schema_version": "release-transaction-recovery-state-r1",
+        "contract_id": "RELEASE_TRANSACTION_RECOVERY_STATE",
+        "status": "RESTORE_R2_PENDING",
+        "source_r3_protocol_blob_sha": r3.git_blob_sha(),
+        "target_r2_protocol_blob_sha": r3.git_blob_sha(r3.R2_PROTOCOL_PATH),
+        "scope": "RESTORE_R2_ONLY", "requested_at": "2026-10-19T04:00:00Z",
+        "reason": "synthetic fixture: validate R3 to R2 recovery binding",
+    }
+    state_raw = canonical_bytes(state)
+    state_digest = hashlib.sha256(state_raw).hexdigest()
+    statement = {
+        "action": "RESTORE_R2_ONLY", "scope": "ONE_TIME_R3_TO_R2_RESTORATION_ONLY",
+        "owner_actor_id": 49422864, "source_r3_protocol_blob_sha": state["source_r3_protocol_blob_sha"],
+        "target_r2_protocol_blob_sha": state["target_r2_protocol_blob_sha"],
+        "recovery_state_file_sha256": state_digest, "pr_number": 302,
+        "task_id": "SYNTHETIC_FIXTURE_ONLY", "formal_ordinal": 1,
+        "work_branch": "synthetic/r2-restore", "candidate_head_sha": recovery_head,
+        "base_main_sha": base_sha, "merge_preview_sha": preview_sha,
+        "merge_preview_tree_sha": final_tree, "prepublication_record_sha256": "a" * 64,
+        "approved_at": "2026-10-19T05:00:00Z", "reason": "synthetic positive fixture",
+    }
+    auth_raw = canonical_bytes(statement)
+    auth_file_sha = hashlib.sha256(auth_raw).hexdigest()
+    receipt = {
+        "status": "R2_RESTORED_AND_VERIFIED", "scope": "ONE_TIME_R3_TO_R2_RESTORATION_ONLY",
+        "source_r3_protocol_blob_sha": state["source_r3_protocol_blob_sha"],
+        "target_r2_protocol_blob_sha": state["target_r2_protocol_blob_sha"],
+        "recovery_state_file_sha256": state_digest, "owner_authorization_commit_sha": auth_sha,
+        "owner_authorization_file_sha256": auth_file_sha, "prepublication_record_sha256": "a" * 64,
+        "pr_number": 302, "task_id": "SYNTHETIC_FIXTURE_ONLY", "formal_ordinal": 1,
+        "work_branch": "synthetic/r2-restore", "candidate_head_sha": recovery_head,
+        "base_main_sha": base_sha, "merge_preview_sha": preview_sha,
+        "merge_preview_tree_sha": final_tree, "merge_preview_parents": [base_sha, recovery_head],
+        "final_main_sha": final_sha, "final_main_tree_sha": final_tree,
+        "final_main_parents": [base_sha, recovery_head], "remote_main_sha": final_sha,
+        "fresh_clone_sha": final_sha,
+        "postpublication_checks": [_check(name, final_sha) for name in r3.load_json(r3.PROTOCOL_PATH)["postpublication"]["required_workflow_names"]],
+        "published_at": "2026-10-19T07:00:00Z", "branch_protection_rules_sha256": protection["rules_sha256"],
+        "required_status_check_contexts": contexts,
+    }
+    witness_raw = canonical_bytes(receipt)
+    witness_file_sha = hashlib.sha256(witness_raw).hexdigest()
+    recovery_observations = {
+        "repository_owner_id": 49422864, "current_main_sha": final_sha,
+        "recovery_pr_merged": True, "recovery_pr_merge_commit_sha": final_sha,
+        "recovery_pr_head_sha": recovery_head, "recovery_pr_base_sha": base_sha,
+        "final_tree_sha": final_tree, "final_parents": [base_sha, recovery_head],
+        "remote_main_sha": final_sha, "fresh_clone_sha": final_sha,
+        "current_r2_protocol_blob_sha": state["target_r2_protocol_blob_sha"],
+        "current_recovery_state_file_sha256": state_digest,
+        "authorization_commit_sha": auth_sha, "authorization_signature_verified": True,
+        "authorization_signature_reason": "valid", "witness_commit_sha": witness_sha,
+        "witness_file_sha256": witness_file_sha, "witness_signature_verified": True,
+        "witness_signature_reason": "valid", "branch_protection_rules_sha256": protection["rules_sha256"],
+        "required_status_check_contexts": contexts, "postpublication_checks": receipt["postpublication_checks"],
+    }
+
+    def signed_commit(sha: str, date: str) -> dict[str, object]:
+        return {
+            "sha": sha, "author": {"id": 49422864}, "committer": {"id": 49422864},
+            "commit": {"committer": {"date": date}, "verification": {
+                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
+            }},
+        }
+
+    def api(endpoint: str):
+        if endpoint == "repos/Arvin-liu/when-systems-catch-fire/branches/main":
+            return {"protected": True, "commit": {"sha": final_sha}}
+        if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/pulls/302":
+            return {
+                "number": 302, "state": "closed", "merged": True,
+                "base": {"ref": "main", "sha": base_sha},
+                "head": {"ref": "synthetic/r2-restore", "sha": recovery_head},
+                "merge_commit_sha": final_sha, "merged_at": "2026-10-19T06:30:00Z",
+                "html_url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/302",
+            }
+        if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/commits/{final_sha}":
+            return {"sha": final_sha, "commit": {"tree": {"sha": final_tree}}, "parents": [{"sha": base_sha}, {"sha": recovery_head}]}
+        if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/commits/{recovery_head}":
+            return {"sha": recovery_head, "commit": {"tree": {"sha": final_tree}}, "parents": [{"sha": base_sha}]}
+        if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/commits/{preview_sha}":
+            return {"sha": preview_sha, "commit": {"tree": {"sha": final_tree}}, "parents": [{"sha": base_sha}, {"sha": recovery_head}]}
+        if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/compare/{'e' * 40}...{final_sha}":
+            return {"status": "ahead"}
+        if endpoint == f"repos/Arvin-liu/1111/commits?path={quote(r3.R2_RESTORE_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1":
+            return [{"sha": auth_sha}]
+        if endpoint == f"repos/Arvin-liu/1111/commits?path={quote(r3.R2_RESTORATION_WITNESS_PATH, safe='')}&sha=main&per_page=1":
+            return [{"sha": witness_sha}]
+        if endpoint == f"repos/Arvin-liu/1111/commits/{auth_sha}":
+            return signed_commit(auth_sha, "2026-10-19T05:30:00Z")
+        if endpoint == f"repos/Arvin-liu/1111/commits/{witness_sha}":
+            return signed_commit(witness_sha, "2026-10-19T07:10:00Z")
+        if endpoint == f"repos/Arvin-liu/1111/compare/{auth_sha}...main":
+            return {"status": "ahead"}
+        if endpoint == f"repos/Arvin-liu/1111/compare/{auth_sha}...{witness_sha}":
+            return {"status": "ahead"}
+        if endpoint == f"repos/Arvin-liu/1111/compare/{witness_sha}...main":
+            return {"status": "ahead"}
+        if endpoint == f"repos/Arvin-liu/1111/contents/{r3.R2_RESTORE_AUTHORIZATION_PATH}?ref={auth_sha}":
+            return file_object(r3.R2_RESTORE_AUTHORIZATION_PATH, auth_raw)
+        if endpoint == f"repos/Arvin-liu/1111/contents/{r3.R2_RESTORE_AUTHORIZATION_PATH}?ref={witness_sha}":
+            return file_object(r3.R2_RESTORE_AUTHORIZATION_PATH, auth_raw)
+        if endpoint == f"repos/Arvin-liu/1111/contents/{r3.R2_RESTORATION_WITNESS_PATH}?ref={witness_sha}":
+            return file_object(r3.R2_RESTORATION_WITNESS_PATH, witness_raw)
+        if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/contents/{r3.relative(r3.R2_PROTOCOL_PATH)}?ref={final_sha}":
+            return file_object(r3.relative(r3.R2_PROTOCOL_PATH), r3.R2_PROTOCOL_PATH.read_bytes())
+        if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/contents/{r3.relative(r3.RECOVERY_STATE_PATH)}?ref={final_sha}":
+            return file_object(r3.relative(r3.RECOVERY_STATE_PATH), state_raw)
+        return main_api(endpoint)
+
+    return state, state_digest, statement, receipt, recovery_observations, api
 
 
 class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
     def _validate(self, record: dict[str, object], phase: str, expected: dict[str, object]) -> list[str]:
         return r3.validate_transaction_record(record, phase=phase, expected=expected, synthetic=True)
 
+    def test_single_owner_protection_requires_pr_zero_reviews_exact_checks_and_no_bypass(self) -> None:
+        api = _github_api()
+        protection, errors = r3.read_live_branch_protection(github_api=api)
+        self.assertEqual(errors, [])
+        self.assertTrue(protection["pull_request_required"])
+        self.assertEqual(protection["required_approval_count"], 0)
+        self.assertEqual(protection["required_status_check_contexts"], [
+            {"context": "foundation-validation", "app_id": 15368},
+            {"context": "release-transaction-protocol-validation", "app_id": 15368},
+            {"context": "repository-path-accounting-preflight", "app_id": 15368},
+        ])
+        self.assertTrue(protection["status_checks_strict"])
+        self.assertTrue(protection["admin_enforcement_enabled"])
+        self.assertTrue(protection["no_bypass_confirmed"])
+        self.assertFalse(protection["force_push_allowed"])
+        self.assertFalse(protection["deletions_allowed"])
+
+        weakened_rules = [
+            (lambda value: value.update(required_pull_request_reviews=None), "pull request"),
+            (lambda value: value.update(required_status_checks={"strict": False, "checks": []}), "status-check contexts"),
+            (lambda value: value.update(enforce_admins={"enabled": False}), "administrator enforcement"),
+        ]
+        for mutate, expected in weakened_rules:
+            def weakened(request: str):
+                value = api(request)
+                if request.endswith("/branches/main/protection"):
+                    value = dict(value)
+                    mutate(value)
+                return value
+            observed, errors = r3.read_live_branch_protection(github_api=weakened)
+            self.assertIsNotNone(observed)
+            self.assertTrue(any(expected in error for error in errors), errors)
+
+    def test_github_unsigned_owner_attribution_is_rejected(self) -> None:
+        commit = {
+            "author": {"id": 49422864}, "committer": {"id": 49422864},
+            "commit": {"verification": {"verified": False, "reason": "unsigned"}},
+        }
+        valid, reason = r3._verified_owner_commit(commit, 49422864)
+        self.assertFalse(valid)
+        self.assertIn("did not verify", reason)
+
+    def test_verified_github_web_flow_commit_preserves_owner_author_attribution(self) -> None:
+        web_flow_commit = {
+            "author": {"id": 49422864, "login": "Arvin-liu"},
+            "committer": {"id": 19864447, "login": "web-flow"},
+            "commit": {"verification": {
+                "verified": True, "reason": "valid", "signature": "verified-signature",
+                "payload": "verified-commit-payload",
+            }},
+        }
+        valid, reason = r3._verified_owner_commit(web_flow_commit, 49422864)
+        self.assertTrue(valid, reason)
+
+        foreign_committer = json.loads(json.dumps(web_flow_commit))
+        foreign_committer["committer"] = {"id": 99, "login": "other-user"}
+        valid, reason = r3._verified_owner_commit(foreign_committer, 49422864)
+        self.assertFalse(valid)
+        self.assertIn("committer must be", reason)
+
+        unsigned_web_flow = json.loads(json.dumps(web_flow_commit))
+        unsigned_web_flow["commit"]["verification"] = {
+            "verified": False, "reason": "unsigned", "signature": None, "payload": None,
+        }
+        valid, reason = r3._verified_owner_commit(unsigned_web_flow, 49422864)
+        self.assertFalse(valid)
+        self.assertIn("did not verify", reason)
+
+    def test_successor_registration_binds_unique_task_ordinal_branches_and_inventory(self) -> None:
+        registration = _registration_statement()
+        content = json.dumps(registration, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        api = _github_api()
+        evidence, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=hashlib.sha256(content).hexdigest(),
+            expected_formal_base_main_sha="a" * 40, github_api=api,
+        )
+        self.assertEqual(errors, [])
+        self.assertEqual(evidence["statement"]["formal_ordinal"], 1)
+        self.assertEqual(evidence["signature_verified"], True)
+
+        wrong_predecessor = _registration_statement()
+        wrong_predecessor["prior_task_id"] = "IGNITION-20260829-147"
+        wrong_content = json.dumps(wrong_predecessor, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        _, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=hashlib.sha256(wrong_content).hexdigest(),
+            expected_formal_base_main_sha="a" * 40,
+            github_api=_github_api(registration_statement=wrong_predecessor),
+        )
+        self.assertTrue(any("predecessor does not equal the canonical current task" in item for item in errors), errors)
+
+        duplicate = json.loads(json.dumps(registration))
+        duplicate["conflict_inventory"]["formal_task_identities"].append(dict(
+            duplicate["conflict_inventory"]["formal_task_identities"][0], task_id="ANOTHER_ID"
+        ))
+        inventory = duplicate["conflict_inventory"]
+        inventory_payload = {key: value for key, value in inventory.items() if key != "inventory_sha256"}
+        inventory["inventory_sha256"] = hashlib.sha256(
+            json.dumps(inventory_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+        duplicate_raw = json.dumps(duplicate, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        endpoint = f"repos/Arvin-liu/1111/contents/{r3.SUCCESSOR_REGISTRATION_PATH}?ref={'5' * 40}"
+        def colliding_registration(request: str):
+            value = api(request)
+            if request == endpoint:
+                value = dict(value)
+                value["content"] = base64.b64encode(duplicate_raw).decode("ascii")
+            return value
+        evidence, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_formal_base_main_sha="a" * 40, github_api=colliding_registration,
+        )
+        self.assertIsNone(evidence)
+        self.assertTrue(any("colliding formal task IDs, ordinals" in error for error in errors))
+
+        task148 = dict(registration, task_id="IGNITION-20260829-148", formal_ordinal=148)
+        task148_raw = json.dumps(task148, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        def reused_task148(request: str):
+            value = api(request)
+            if request == endpoint:
+                value = dict(value)
+                value["content"] = base64.b64encode(task148_raw).decode("ascii")
+            return value
+        evidence, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_formal_base_main_sha="a" * 40, github_api=reused_task148
+        )
+        self.assertIsNone(evidence)
+        self.assertTrue(any("may not reuse Task148" in error for error in errors))
+
+    def test_r2_recovery_requires_exact_signed_pr_and_fresh_main_witness(self) -> None:
+        active_receipt, active_observations = _activation_receipt(), _live_observations()
+        state, state_digest, _, receipt, recovery_observations, api = _recovery_fixture()
+        current, errors = r3.resolve_effective_protocol_with_recovery(
+            active_receipt, observations=active_observations, repository_owner_id=49422864,
+            recovery_state=state, recovery_state_file_sha256=state_digest,
+            recovery_receipt=receipt, recovery_observations=recovery_observations,
+            protocol_blob_sha=r3.git_blob_sha(), github_api=api,
+        )
+        self.assertEqual((current, errors), ("R2", []))
+
+        tampered = dict(receipt)
+        tampered["target_r2_protocol_blob_sha"] = "3" * 40
+        current, errors = r3.resolve_effective_protocol_with_recovery(
+            active_receipt, observations=active_observations, repository_owner_id=49422864,
+            recovery_state=state, recovery_state_file_sha256=state_digest,
+            recovery_receipt=tampered, recovery_observations=recovery_observations,
+            protocol_blob_sha=r3.git_blob_sha(), github_api=api,
+        )
+        self.assertEqual(current, "R3")
+        self.assertTrue(errors)
+
+        current, errors = r3.resolve_effective_protocol_with_recovery(
+            active_receipt, observations=active_observations, repository_owner_id=49422864,
+            recovery_state=state, recovery_state_file_sha256=state_digest,
+            protocol_blob_sha=r3.git_blob_sha(), github_api=api,
+        )
+        self.assertEqual(current, "R3")
+        self.assertTrue(any("lacks a signed Owner authorization" in error for error in errors))
+
+    def test_validated_r3_activation_never_falls_back_to_r2_on_later_protection_drift(self) -> None:
+        active_receipt, active_observations, api = _activation_receipt(), _live_observations(), _github_api()
+        recovery_state = r3.load_json(r3.RECOVERY_STATE_PATH)
+        recovery_state_digest = hashlib.sha256(r3.RECOVERY_STATE_PATH.read_bytes()).hexdigest()
+
+        def drifted_protection(endpoint: str):
+            value = api(endpoint)
+            if endpoint.endswith("/branches/main/protection"):
+                value = dict(value)
+                value["enforce_admins"] = {"enabled": False}
+            return value
+
+        current, errors = r3.resolve_effective_protocol_with_recovery(
+            active_receipt, observations=active_observations, repository_owner_id=49422864,
+            recovery_state=recovery_state, recovery_state_file_sha256=recovery_state_digest,
+            protocol_blob_sha=r3.git_blob_sha(), github_api=drifted_protection,
+        )
+        self.assertEqual(current, "R3")
+        self.assertTrue(any("administrator enforcement is off" in error for error in errors), errors)
+
+    def test_merge_bound_r3_activation_claim_stays_blocked_r3_if_witness_readback_is_lost(self) -> None:
+        active_receipt, active_observations, api = _activation_receipt(), _live_observations(), _github_api()
+        recovery_state = r3.load_json(r3.RECOVERY_STATE_PATH)
+        recovery_state_digest = hashlib.sha256(r3.RECOVERY_STATE_PATH.read_bytes()).hexdigest()
+
+        def missing_witness(endpoint: str):
+            if endpoint == f"repos/Arvin-liu/1111/commits?path={quote(r3.TRANSITION_WITNESS_PATH, safe='')}&sha=main&per_page=1":
+                return []
+            return api(endpoint)
+
+        current, errors = r3.resolve_effective_protocol_with_recovery(
+            active_receipt, observations=active_observations, repository_owner_id=49422864,
+            recovery_state=recovery_state, recovery_state_file_sha256=recovery_state_digest,
+            protocol_blob_sha=r3.git_blob_sha(), github_api=missing_witness,
+        )
+        self.assertEqual(current, "R3")
+        self.assertTrue(any("fixed R3 witness file has no commit" in error for error in errors), errors)
+
     def test_contract_preserves_r2_baseline_and_identifies_all_transition_exceptions(self) -> None:
         self.assertEqual(r3.validate_contract(), [])
+
+    def test_recovery_state_must_bind_exact_r3_and_r2_protocol_blobs(self) -> None:
+        state = r3.load_json(r3.RECOVERY_STATE_PATH)
+        state["source_r3_protocol_blob_sha"] = "0" * 40
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "recovery-state.json"
+            path.write_text(json.dumps(state), encoding="utf-8")
+            with patch.object(r3, "RECOVERY_STATE_PATH", path):
+                errors = r3.validate_contract()
+        self.assertTrue(any("recovery state must bind the exact candidate protocol blob" in item for item in errors), errors)
+
+    def test_cli_policy_selection_routes_recovery_evidence_through_resolver(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            transition = Path(temp_dir) / "transition.json"
+            observations = Path(temp_dir) / "observations.json"
+            recovery = Path(temp_dir) / "recovery.json"
+            recovery_observations = Path(temp_dir) / "recovery-observations.json"
+            for path in (transition, observations, recovery, recovery_observations):
+                path.write_text("{}", encoding="utf-8")
+            argv = [
+                "validate_release_transaction_protocol_r3.py", "--check",
+                "--transition-receipt", str(transition), "--observations", str(observations),
+                "--repository-owner-id", "49422864", "--recovery-receipt", str(recovery),
+                "--recovery-observations", str(recovery_observations),
+            ]
+            with patch.object(sys, "argv", argv), patch.object(
+                r3, "resolve_effective_protocol_with_recovery", return_value=("R2", [])
+            ) as resolver:
+                self.assertEqual(r3.main(), 0)
+            resolver.assert_called_once()
+            kwargs = resolver.call_args.kwargs
+            self.assertEqual(kwargs["recovery_receipt"], {})
+            self.assertEqual(kwargs["recovery_observations"], {})
+            self.assertEqual(kwargs["recovery_state"]["status"], "NOT_REQUESTED")
+            self.assertEqual(len(kwargs["recovery_state_file_sha256"]), 64)
+
+            blocked_stderr = StringIO()
+            with patch.object(sys, "argv", argv), patch.object(
+                r3, "resolve_effective_protocol_with_recovery", return_value=("R3", ["protection drift"])
+            ), redirect_stderr(blocked_stderr):
+                self.assertEqual(r3.main(), 2)
+            self.assertIn("RELEASE_TRANSACTION_PROTOCOL_R3_CURRENT_BLOCKED", blocked_stderr.getvalue())
+            self.assertIn("protection drift", blocked_stderr.getvalue())
         self.assertEqual(r2.validate(), [])
         policy = r3.load_json(r3.PROTOCOL_PATH)
         self.assertEqual(policy["status"], "CANDIDATE_NOT_EFFECTIVE")
+        self.assertTrue(policy["activation"]["r2_is_current_before_any_merge_bound_activation_claim"])
+        self.assertTrue(policy["activation"]["merge_bound_activation_claim_latches_r3_until_signed_r2_restoration"])
+        self.assertTrue(policy["activation"]["signed_protected_r2_restoration_is_the_only_postactivation_route_to_r2"])
         duration = policy["canonical_suite_duration_policy"]
         self.assertEqual(
             duration["elapsed_duration_semantics"], "OBSERVED_NATURAL_ELAPSED_SECONDS_ONLY",
@@ -418,8 +882,10 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         live_rules, errors = r3.read_live_branch_protection(github_api=api)
         self.assertEqual(errors, [])
         self.assertFalse(live_rules["required_review"])
-        self.assertFalse(live_rules["required_status_checks"])
-        self.assertEqual(live_rules["required_check_names"], [])
+        self.assertTrue(live_rules["required_status_checks"])
+        self.assertEqual(live_rules["required_check_names"], [
+            "foundation-validation", "release-transaction-protocol-validation", "repository-path-accounting-preflight"
+        ])
         active, errors = r3.resolve_effective_protocol(
             receipt, observations=observations, repository_owner_id=49422864, github_api=api
         )
@@ -497,7 +963,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         def changed_rules(endpoint: str):
             value = api(endpoint)
             if endpoint.endswith("/branches/main/protection"):
-                value["enforce_admins"] = {"enabled": True}
+                value["enforce_admins"] = {"enabled": False}
             return value
         active, errors = r3.resolve_effective_protocol(
             receipt, observations=observations, repository_owner_id=49422864, github_api=changed_rules
@@ -507,22 +973,26 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
 
     def test_ruleset_review_and_required_status_rules_are_read_from_live_endpoint(self) -> None:
         api = _github_api()
-        rules = [
-            {"type": "pull_request", "parameters": {"required_approving_review_count": 1}},
-            {"type": "required_status_checks", "parameters": {
-                "required_status_checks": [{"context": "ruleset/ci"}],
-            }},
-        ]
+        ruleset = {
+            "id": 10, "target": "branch", "enforcement": "active", "bypass_actors": [],
+            "conditions": {"ref_name": {"include": ["refs/heads/main"], "exclude": []}},
+            "rules": [
+                {"type": "pull_request", "parameters": {"required_approving_review_count": 1}},
+                {"type": "required_status_checks", "parameters": {
+                    "strict_required_status_checks_policy": True,
+                    "required_status_checks": [{"context": "ruleset/ci", "integration_id": 15368}],
+                }},
+            ],
+        }
         def with_rulesets(endpoint: str):
-            if endpoint.endswith("/rules/branches/main"):
-                return rules
+            if endpoint.endswith("/rulesets?includes_parents=true&per_page=100"):
+                return [ruleset]
             return api(endpoint)
         protection, errors = r3.read_live_branch_protection(github_api=with_rulesets)
-        self.assertEqual(errors, [])
-        self.assertTrue(protection["required_review"])
-        self.assertTrue(protection["required_status_checks"])
-        self.assertEqual(protection["required_check_names"], ["ruleset/ci"])
-        self.assertEqual(protection["ruleset_count"], 2)
+        self.assertIsNotNone(protection)
+        self.assertTrue(any("approval count" in error for error in errors))
+        self.assertTrue(any("contexts" in error for error in errors))
+        self.assertEqual(protection["ruleset_count"], 1)
 
     def test_caller_receipt_must_match_the_latest_1111_main_witness_file(self) -> None:
         receipt, observations, api = _activation_receipt(), _live_observations(), _github_api()
@@ -600,7 +1070,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
                 value["required_pull_request_reviews"] = {"required_approving_review_count": 1}
             return value
         live_protection, errors = r3.read_live_branch_protection(github_api=with_review_rule)
-        self.assertEqual(errors, [])
+        self.assertTrue(any("approval count" in error for error in errors))
         record, expected = _record(), _context()
         record["branch_protection"] = live_protection
         expected["branch_protection_rules"] = live_protection
@@ -611,8 +1081,6 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             "review_url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/301#pullrequestreview-1",
         }]
         self.assertTrue(self._validate(record, "prepublication", expected))
-        record["pull_request_reviews"][0]["actor_id"] = 7
-        self.assertEqual(self._validate(record, "prepublication", expected), [])
 
     def test_parent_order_scope_historical_and_missing_suite_evidence_fail_closed(self) -> None:
         record = _record()

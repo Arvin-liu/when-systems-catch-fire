@@ -6,6 +6,7 @@ on:
       - '.github/workflows/release-transaction-protocol-validation.yml'
       - 'ignition/data/operations/release-transaction-protocol-r2.json'
       - 'ignition/data/operations/release-transaction-protocol-r3.json'
+      - 'ignition/data/operations/release-transaction-recovery-state-r1.json'
       - 'ignition/schemas/operations/release-transaction-protocol-r2.schema.json'
       - 'ignition/schemas/operations/release-transaction-protocol-r3.schema.json'
       - 'ignition/tools/validate_release_transaction_protocol.py'
@@ -22,6 +23,7 @@ on:
       - '.github/workflows/release-transaction-protocol-validation.yml'
       - 'ignition/data/operations/release-transaction-protocol-r2.json'
       - 'ignition/data/operations/release-transaction-protocol-r3.json'
+      - 'ignition/data/operations/release-transaction-recovery-state-r1.json'
       - 'ignition/schemas/operations/release-transaction-protocol-r2.schema.json'
       - 'ignition/schemas/operations/release-transaction-protocol-r3.schema.json'
       - 'ignition/tools/validate_release_transaction_protocol.py'
@@ -43,6 +45,7 @@ defaults:
 
 jobs:
   validate:
+    name: release-transaction-protocol-validation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
