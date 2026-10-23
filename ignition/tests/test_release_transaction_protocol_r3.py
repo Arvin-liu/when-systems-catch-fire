@@ -558,16 +558,26 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             self.assertIsNotNone(observed)
             self.assertTrue(any(expected in error for error in errors), errors)
 
-    def test_foundation_required_check_context_matches_job_display_name(self) -> None:
+    def test_foundation_required_check_context_is_unique_and_owned_by_final_gate(self) -> None:
         workflow_path = Path(__file__).resolve().parents[2] / ".github" / "workflows" / "foundation-validation.yml"
         workflow_text = workflow_path.read_text(encoding="utf-8")
         route_job = re.search(r"(?ms)^  route:\n(?P<body>(?:^    .*\n|^\n)*)", workflow_text)
         self.assertIsNotNone(route_job)
-        display_name = re.search(r"(?m)^    name:\s*(\S+)\s*$", route_job.group("body"))
-        self.assertIsNotNone(display_name)
+        route_display_name = re.search(r"(?m)^    name:\s*(\S+)\s*$", route_job.group("body"))
+        self.assertIsNotNone(route_display_name)
+        final_gate = re.search(r"(?ms)^  validate:\n(?P<body>(?:^    .*\n|^\n)*)", workflow_text)
+        self.assertIsNotNone(final_gate)
+        final_gate_display_name = re.search(r"(?m)^    name:\s*(\S+)\s*$", final_gate.group("body"))
+        self.assertIsNotNone(final_gate_display_name)
         contexts = r3.load_json(r3.PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"]
         foundation_contexts = [item["context"] for item in contexts if item["context"] == "foundation-validation"]
-        self.assertEqual(foundation_contexts, [display_name.group(1)])
+        self.assertEqual(foundation_contexts, [final_gate_display_name.group(1)])
+        self.assertNotEqual(route_display_name.group(1), final_gate_display_name.group(1))
+        self.assertEqual(
+            len(re.findall(r"(?m)^    name:\s*foundation-validation\s*$", workflow_text)),
+            1,
+            "the required Foundation check context must identify one workflow job only",
+        )
 
     def test_github_unsigned_owner_attribution_is_rejected(self) -> None:
         commit = {

@@ -16,7 +16,7 @@ defaults:
     working-directory: ignition
 jobs:
   route:
-    name: foundation-validation
+    name: foundation-validation-route
     runs-on: ubuntu-latest
     outputs:
       mode: ${{ steps.plan.outputs.mode }}
