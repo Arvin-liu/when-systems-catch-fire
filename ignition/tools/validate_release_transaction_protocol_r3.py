@@ -417,8 +417,8 @@ def read_authenticated_owner_authorization(
             return None, ["1111 authorization repository is not confirmed private by the authenticated GitHub API"]
         if private_repo.get("default_branch") != "main":
             return None, ["1111 default branch is not main, so the fixed authorization source cannot be verified"]
-        if returned_sha != commit_sha or commit_author_id != actor_id or commit_committer_id != actor_id:
-            return None, ["fixed 1111 authorization commit is missing or is not authored and committed by the authenticated Owner"]
+        if returned_sha != commit_sha or commit_author_id != actor_id:
+            return None, ["fixed 1111 authorization commit is missing or is not authored by the authenticated Owner"]
         signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
         if not signature_ok:
             return None, [f"fixed 1111 authorization signature failed closed: {signature_error}"]

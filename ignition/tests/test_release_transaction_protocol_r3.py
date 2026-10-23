@@ -5,6 +5,7 @@ from contextlib import redirect_stderr
 import hashlib
 from io import StringIO
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -541,7 +542,6 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertTrue(protection["no_bypass_confirmed"])
         self.assertFalse(protection["force_push_allowed"])
         self.assertFalse(protection["deletions_allowed"])
-
         weakened_rules = [
             (lambda value: value.update(required_pull_request_reviews=None), "pull request"),
             (lambda value: value.update(required_status_checks={"strict": False, "checks": []}), "status-check contexts"),
@@ -557,6 +557,17 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             observed, errors = r3.read_live_branch_protection(github_api=weakened)
             self.assertIsNotNone(observed)
             self.assertTrue(any(expected in error for error in errors), errors)
+
+    def test_foundation_required_check_context_matches_job_display_name(self) -> None:
+        workflow_path = Path(__file__).resolve().parents[2] / ".github" / "workflows" / "foundation-validation.yml"
+        workflow_text = workflow_path.read_text(encoding="utf-8")
+        route_job = re.search(r"(?ms)^  route:\n(?P<body>(?:^    .*\n|^\n)*)", workflow_text)
+        self.assertIsNotNone(route_job)
+        display_name = re.search(r"(?m)^    name:\s*(\S+)\s*$", route_job.group("body"))
+        self.assertIsNotNone(display_name)
+        contexts = r3.load_json(r3.PROTOCOL_PATH)["prepublication"]["required_status_check_contexts"]
+        foundation_contexts = [item["context"] for item in contexts if item["context"] == "foundation-validation"]
+        self.assertEqual(foundation_contexts, [display_name.group(1)])
 
     def test_github_unsigned_owner_attribution_is_rejected(self) -> None:
         commit = {
@@ -930,6 +941,41 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         )
         self.assertEqual(active, "R2")
         self.assertTrue(errors)
+
+    def test_owner_authorization_accepts_only_verified_owner_authored_web_flow_commit(self) -> None:
+        base_api = _github_api()
+        authorization_sha = "f" * 40
+
+        def verified_web_flow(endpoint: str):
+            value = base_api(endpoint)
+            if endpoint == f"repos/Arvin-liu/1111/commits/{authorization_sha}":
+                value = dict(value)
+                value["committer"] = {"id": 19864447, "login": "web-flow"}
+            return value
+
+        evidence, errors = r3.read_authenticated_owner_authorization(
+            authorization_sha, github_api=verified_web_flow,
+        )
+        self.assertEqual(errors, [])
+        self.assertIsNotNone(evidence)
+        self.assertEqual(evidence["meta"]["authorization_commit_committer_id"], 19864447)
+        self.assertTrue(evidence["meta"]["authorization_signature_verified"])
+
+        def unsigned_web_flow(endpoint: str):
+            value = verified_web_flow(endpoint)
+            if endpoint == f"repos/Arvin-liu/1111/commits/{authorization_sha}":
+                value = dict(value)
+                value["commit"] = dict(value["commit"])
+                value["commit"]["verification"] = {
+                    "verified": False, "reason": "unsigned", "signature": None, "payload": None,
+                }
+            return value
+
+        evidence, errors = r3.read_authenticated_owner_authorization(
+            authorization_sha, github_api=unsigned_web_flow,
+        )
+        self.assertIsNone(evidence)
+        self.assertTrue(any("signature failed closed" in error for error in errors), errors)
 
     def test_owner_transition_requires_explicit_r2_duration_exception(self) -> None:
         statement = _owner_statement()
