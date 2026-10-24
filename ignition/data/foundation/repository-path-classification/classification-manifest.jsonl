@@ -3893,6 +3893,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_publication_witness.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_q33_fail_closed_fixtures.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_q33_governance_infrastructure.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_q33_workflow_trigger_coverage.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_queue_control.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_r2_repository_maintenance.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_reasoner_gateway.py"}
