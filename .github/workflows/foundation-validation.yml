@@ -120,14 +120,18 @@ jobs:
       PYTHONPATH: ${{ github.workspace }}/ignition:${{ github.workspace }}/ignition/tests:${{ github.workspace }}/ignition/tools/foundation
     steps:
       - uses: actions/checkout@v4
+        id: checkout_validation_commit
         with:
           fetch-depth: 0
           ref: ${{ github.sha }}
       - uses: actions/setup-python@v5
+        id: setup_python
         with:
           python-version: '3.12'
       - run: python3 -m pip install -r requirements-foundation.txt
+        id: install_foundation_dependencies
       - name: Bind full regression to the exact validation commit
+        id: bind_validation_sha
         env:
           VALIDATION_SHA: ${{ github.sha }}
         run: |
@@ -135,23 +139,36 @@ jobs:
           test -z "$(git status --porcelain --untracked-files=all)"
           printf 'validation_sha=%s\n' "$VALIDATION_SHA" >> "$GITHUB_STEP_SUMMARY"
       - uses: leanprover/lean-action@v1
+        id: setup_lean
         with:
           auto-config: false
           lake-package-directory: ignition/formal/lean
           use-mathlib-cache: false
           use-github-cache: false
       - run: cd formal/lean && lake env lean Foundation.lean
+        id: lean_foundation
       - run: python3 tools/foundation/adjudicate_core.py --check
+        id: adjudicate_core_claims
       - run: python3 tools/foundation/migrate_legacy.py --check
+        id: migrate_legacy_claims
       - run: python3 tools/foundation/validate_foundation.py
+        id: validate_foundation
       - run: python3 tools/foundation/build_function_asset_census.py --check
+        id: build_function_asset_census
       - run: python3 tools/foundation/adjudicate_function_assets.py --check
+        id: adjudicate_function_assets
       - run: python3 tools/foundation/validate_claim_governance.py
+        id: validate_claim_governance
       - run: python3 tools/foundation/validate_function_asset_closure.py
+        id: validate_function_asset_closure
       - run: python3 tools/foundation/run_function_asset_math_checks.py --check
+        id: check_function_asset_math
       - run: python3 tools/foundation/adjudicate_nonfunction_claims.py --check
+        id: adjudicate_nonfunction_claims
       - run: python3 tools/foundation/validate_nonfunction_claim_closure.py
+        id: validate_nonfunction_claim_closure
       - name: Validate human result census and self-correction products
+        id: validate_human_results_and_products
         run: |
           python3 tools/governance/build_human_results.py --check
           python3 tools/governance/run_self_correction.py --check
@@ -162,13 +179,19 @@ jobs:
           python3 tools/governance/build_claim_browsers.py --check
           python3 tools/generate_overall_architecture.py --check
       - name: Regression — knowledge-experience clone-independence (task 102)
+        id: check_knowledge_experience_determinism
         run: python3 tools/governance/check_knowledge_experience_determinism.py
       - run: python3 tools/foundation/verify_core_claims.py --check
+        id: verify_core_claims
       - run: python3 tools/foundation/verify_079.py --check
+        id: verify_079
       - run: python3 tools/foundation/validate_080_adjudications.py
+        id: validate_080
       - name: Validate synchronization registry and iteration closures
+        id: validate_iteration_sync
         run: python3 tools/validate_iteration_sync.py
       - name: Validate typed change-propagation products
+        id: validate_typed_change_propagation
         run: |
           # Q32 is accepted historical evidence and is verified by the D4
           # closeout validator; do not reinterpret its map delta against the
@@ -216,55 +239,124 @@ jobs:
             --head-ref f59b9f359ea16a346e07e9621049468417b66423 \
             --check
       - name: Validate Q32I Phase E candidate
+        id: validate_phase_e_candidate
         run: python3 tools/operations/validate_phase_e_candidate.py --check
       - name: Validate registry-derived system map
+        id: validate_registry_system_map
         run: python3 tools/generate_interactive_system_map.py --check
       - name: Validate homepage architecture projection provenance
+        id: validate_homepage_projection
         run: python3 tools/validate_homepage_architecture_projection.py --check
       - name: Validate stage snapshot registry and deterministic homepage projection
+        id: validate_stage_snapshots_and_projection
         run: |
           python3 tools/operations/generate_stage_snapshot_actor_contract.py --check
           python3 tools/operations/validate_stage_snapshots.py --check
       - name: Run instance-level stage snapshot responsibility actor cases
+        id: run_stage_snapshot_actor_cases
         run: python3 tools/operations/run_stage_snapshot_responsibility_cases.py
       - run: python3 tools/validate_human_front_door.py
+        id: validate_human_front_door
       - name: Validate Language-Thought Logic Plane
+        id: validate_language_thought_plane
         run: |
           python3 tools/language_thought/validate_language_thought.py
           python3 -m unittest tests.test_language_thought_plane
       - name: Validate epistemic governance referential kernel
+        id: validate_epistemic_relationships
         run: |
           python3 tools/validate_epistemic_governance_relationships.py data/governance/epistemic-governance-relationships.json --repo-root .
           python3 -m unittest tests.test_epistemic_governance_relationships -v
       - name: Validate AI-first project state delta log
+        id: validate_state_changelog
         run: |
           python3 tools/validate_state_changelog.py
           python3 -m unittest tests.test_state_changelog -v
       - run: python3 -m unittest tests.foundation.test_foundation
+        id: test_foundation
       - run: python3 -m unittest tests.foundation.test_claim_governance
+        id: test_claim_governance
       - run: python3 -m unittest tests.foundation.test_function_asset_closure
+        id: test_function_asset_closure
       - run: python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v
+        id: test_nonfunction_claim_closure
       - run: python3 -m unittest tests.test_iteration_sync -v
+        id: test_iteration_sync
       - run: python3 -m unittest tests.test_human_front_door -v
+        id: test_human_front_door
       - run: python3 -m unittest tests.test_change_propagation -v
+        id: test_change_propagation
       - run: python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v
+        id: test_visibility_correction_experience
       - run: python3 -m unittest tests.test_stage_snapshot_publication -v
+        id: test_stage_snapshot_publication
       - run: python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v
+        id: test_era_generated_authority
       - run: python3 -m unittest tests.test_phase_e_candidate -v
+        id: test_phase_e_candidate
       - run: python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v
+        id: test_routing_history_contract
       - run: python3 -m unittest tests.test_production_execution_authority -v
+        id: test_production_execution_authority
       - name: "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)"
+        id: test_generator_reconciliation
         run: python3 -m unittest tests.foundation.test_generator_reconciliation_staleness -v
       - name: "Task 106 — fail-closed propagation reconciliation"
+        id: test_propagation_reconciliation
         run: |
           python3 -m unittest tests.test_propagation_reconciliation -v
           python3 tools/propagation/validate_reconciliation.py --check
       - name: Confirm full regression source remained unchanged
+        id: confirm_source_unchanged
         env:
           VALIDATION_SHA: ${{ github.sha }}
         run: |
           test "$(git rev-parse HEAD)" = "$VALIDATION_SHA"
           test -z "$(git status --porcelain --untracked-files=all)"
+
+      - name: Summarize full regression step outcomes
+        if: ${{ always() }}
+        env:
+          STEP_OUTCOMES: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+
+          step_ids = [
+              'checkout_validation_commit', 'setup_python', 'install_foundation_dependencies',
+              'bind_validation_sha', 'setup_lean', 'lean_foundation', 'adjudicate_core_claims',
+              'migrate_legacy_claims', 'validate_foundation', 'build_function_asset_census',
+              'adjudicate_function_assets', 'validate_claim_governance', 'validate_function_asset_closure',
+              'check_function_asset_math', 'adjudicate_nonfunction_claims', 'validate_nonfunction_claim_closure',
+              'validate_human_results_and_products', 'check_knowledge_experience_determinism',
+              'verify_core_claims', 'verify_079', 'validate_080', 'validate_iteration_sync',
+              'validate_typed_change_propagation', 'validate_phase_e_candidate', 'validate_registry_system_map',
+              'validate_homepage_projection', 'validate_stage_snapshots_and_projection',
+              'run_stage_snapshot_actor_cases', 'validate_human_front_door', 'validate_language_thought_plane',
+              'validate_epistemic_relationships', 'validate_state_changelog', 'test_foundation',
+              'test_claim_governance', 'test_function_asset_closure', 'test_nonfunction_claim_closure',
+              'test_iteration_sync', 'test_human_front_door', 'test_change_propagation',
+              'test_visibility_correction_experience', 'test_stage_snapshot_publication',
+              'test_era_generated_authority', 'test_phase_e_candidate', 'test_routing_history_contract',
+              'test_production_execution_authority', 'test_generator_reconciliation',
+              'test_propagation_reconciliation', 'confirm_source_unchanged',
+          ]
+          outcomes = json.loads(os.environ['STEP_OUTCOMES'])
+          lines = [
+              '### Full Foundation regression step outcomes',
+              '',
+              '| Step ID | Outcome | Conclusion |',
+              '|---|---|---|',
+          ]
+          for step_id in step_ids:
+              result = outcomes.get(step_id, {})
+              outcome = result.get('outcome', 'not recorded')
+              conclusion = result.get('conclusion', 'not recorded')
+              lines.append(f'| `{step_id}` | `{outcome}` | `{conclusion}` |')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary_file:
+              summary_file.write('\n'.join(lines) + '\n')
+          PY
 
   validate:
     name: foundation-validation
