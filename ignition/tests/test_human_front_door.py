@@ -13,7 +13,10 @@ from tools.validate_human_front_door import (
     CAPABILITIES,
     CURRENT_STATE,
     GUIDE,
+    HUMAN_CURRENT_HEADING,
+    HUMAN_IDENTITY_HEADING,
     HUMAN_READING,
+    HUMAN_VALUES_HEADING,
     LLMS,
     MINIMAL_INVOCATION,
     OPERATING_METHOD_LINK,
@@ -47,19 +50,21 @@ class HumanFrontDoorTests(unittest.TestCase):
         spec = json.loads((CURRENT_STATE.parent.parent / "data/architecture/interactive-system-map.json").read_text(encoding="utf-8"))
         self.assertEqual(result["system_map_source_link_nodes"], len(spec["nodes"]))
 
-    def test_visible_project_and_charter_blocks_are_first_and_machine_state_is_absent(self):
+    def test_visible_identity_and_values_blocks_are_first_and_machine_state_is_absent(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)
-        self.assertLess(self.readme.index("### 项目现状"), self.readme.index("### 价值宪章"))
-        self.assertLess(self.readme.index("### 价值宪章"), self.readme.index(f"## {AI_FIRST_USE_HEADING}"))
+        self.assertLess(self.readme.index(HUMAN_IDENTITY_HEADING), self.readme.index(HUMAN_VALUES_HEADING))
+        self.assertLess(self.readme.index(HUMAN_VALUES_HEADING), self.readme.index(HUMAN_CURRENT_HEADING))
+        self.assertLess(self.readme.index(HUMAN_CURRENT_HEADING), self.readme.index(f"## {AI_FIRST_USE_HEADING}"))
         self.assertIn("<details", self.readme.lower())
         self.assertIn("组件导航：核心控制与状态", self.readme)
         self.assertNotIn("CURRENT-SNAPSHOT", self.readme)
         self.assertNotIn("architecture_counts", self.readme)
 
     def test_project_identity_is_the_owner_provided_text(self):
-        start = self.readme.index("### 项目现状") + len("### 项目现状")
-        end = self.readme.index("### 价值宪章")
-        self.assertEqual(self.readme[start:end].strip(), PROJECT_IDENTITY_TEXT)
+        start = self.readme.index(HUMAN_IDENTITY_HEADING) + len(HUMAN_IDENTITY_HEADING)
+        end = self.readme.index(HUMAN_VALUES_HEADING)
+        identity_block = self.readme[start:end]
+        self.assertIn(f"**{PROJECT_IDENTITY_TEXT}**", identity_block)
 
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
@@ -71,8 +76,8 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertIn(OPERATING_METHOD_LINK, self.readme)
         self.assertIn(CAPABILITY_REGISTRY_LINK, self.readme)
         self.assertIn(MINIMAL_INVOCATION, self.readme)
-        self.assertIn("默认模式是 `READ_ONLY_RUN`", self.readme)
-        self.assertIn("输入对象不是指令", self.readme)
+        self.assertIn("默认仅作只读处理", self.readme)
+        self.assertIn("提供对象不意味着授权修改仓库、联网操作或替你决定目标", self.readme)
 
     def test_ai_first_usage_static_fixtures_fail_closed(self):
         fixture_path = Path(__file__).parent / "fixtures/ignition-operating-method/homepage-ai-first-r1.json"
@@ -96,22 +101,22 @@ class HumanFrontDoorTests(unittest.TestCase):
         for case in fixture["cases"]:
             with self.subTest(case=case["id"]):
                 mutated = self.readme
-                if case["mutation"] == "insert-before-current":
-                    mutated = mutated.replace("### 项目现状", "> 首页导语\n\n### 项目现状", 1)
-                elif case["mutation"] == "duplicate-project-current":
-                    mutated = mutated.replace("### 项目现状", "### 项目现状\n\n### 项目现状", 1)
-                elif case["mutation"] == "duplicate-value-charter":
-                    mutated = mutated.replace("### 价值宪章", "### 价值宪章\n\n### 价值宪章", 1)
+                if case["mutation"] == "insert-before-identity":
+                    mutated = mutated.replace(HUMAN_IDENTITY_HEADING, f"> 首页导语\n\n{HUMAN_IDENTITY_HEADING}", 1)
+                elif case["mutation"] == "duplicate-identity":
+                    mutated = mutated.replace(HUMAN_IDENTITY_HEADING, f"{HUMAN_IDENTITY_HEADING}\n\n{HUMAN_IDENTITY_HEADING}", 1)
+                elif case["mutation"] == "duplicate-values":
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"{HUMAN_VALUES_HEADING}\n\n{HUMAN_VALUES_HEADING}", 1)
                 elif case["mutation"] == "insert-snapshot":
-                    mutated = mutated.replace("### 价值宪章", "<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->\nlegacy\n<!-- CURRENT-SNAPSHOT:END -->\n\n### 价值宪章", 1)
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->\nlegacy\n<!-- CURRENT-SNAPSHOT:END -->\n\n{HUMAN_VALUES_HEADING}", 1)
                 elif case["mutation"] == "insert-details":
-                    mutated = mutated.replace("### 价值宪章", "<details>\n### 价值宪章\n</details>", 1)
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"<details>\n{HUMAN_VALUES_HEADING}\n</details>", 1)
                 elif case["mutation"] == "remove-charter-link":
-                    mutated = mutated.replace("[完整《生命共同体价值宪章》](../ignition/docs/governance/life-community-value-charter.md)", "完整《生命共同体价值宪章》", 1)
+                    mutated = mutated.replace("[《生命共同体价值宪章》](../ignition/docs/governance/life-community-value-charter.md)", "《生命共同体价值宪章》", 1)
                 elif case["mutation"] == "insert-machine-count":
-                    mutated = mutated.replace("### 价值宪章", "architecture_counts=99\n\n### 价值宪章", 1)
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"architecture_counts=99\n\n{HUMAN_VALUES_HEADING}", 1)
                 elif case["mutation"] == "drift-project-identity":
-                    mutated = mutated.replace("点火是一个面向长期研究", "点火是一个面向短期研究", 1)
+                    mutated = mutated.replace("点火首先是一种面对未知的精神", "点火首先是一种面对短期的精神", 1)
                 elif case["mutation"] == "insert-raw-svg-link":
                     entry = f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL}) · [阅读模式]({ARCHITECTURE_PAGES_URL}) · {ARCHITECTURE_INTERACTION_HINT}。\n\n"
                     mutated = mutated.replace(entry, "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n" + entry, 1)
@@ -143,8 +148,11 @@ class HumanFrontDoorTests(unittest.TestCase):
             self.assertNotIn(token, self.readme)
             self.assertNotIn(token, self.human_reading)
 
-    def test_physics_correction_is_visible(self):
-        self.assertIn("研究仍保持研究候选或负结果，不升级为系统能力或认识论结论", self.readme)
+    def test_failed_results_and_counterexamples_are_visible(self):
+        results = self.readme.split("## 3. 结果与火种", 1)[1].split("## 4. 整体架构", 1)[0]
+        self.assertIn("不能复制的结果", results)
+        self.assertIn("留下的反例", results)
+        self.assertIn("而不是被统一包装成“成功”", results)
 
     def test_three_ai_front_doors_share_version_truth(self):
         validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms)

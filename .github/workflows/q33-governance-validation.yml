@@ -11,6 +11,13 @@ on:
       - 'ignition/schemas/governance/**'
       - 'ignition/tools/governance/**'
       - 'ignition/data/operations/propagation/121Q33-request.json'
+      - '.github/README.md'
+      - 'ignition/HUMAN-READING.md'
+      - 'ignition/AI-START-HERE.md'
+      - 'ignition/AI-HANDOFF.md'
+      - 'ignition/llms.txt'
+      - 'ignition/docs/human/**'
+      - 'ignition/docs/governance/human-surface-editorial-contract.md'
       - 'ignition/tests/test_q33_governance_infrastructure.py'
       - 'ignition/tests/test_publication_gate_fail_closed.py'
       - 'ignition/tests/test_publication_provenance_attack.py'
@@ -22,6 +29,10 @@ on:
       - 'ignition/tests/test_diff_coverage_gate.py'
       - 'ignition/tests/test_era_resolver_generalization.py'
       - 'ignition/tests/test_human_front_door.py'
+      - 'ignition/tests/test_human_visibility_gate.py'
+      - 'ignition/tests/test_current_surface_compiler.py'
+      - 'ignition/tests/fixtures/human-front-door-r3.json'
+      - 'ignition/tests/fixtures/ignition-operating-method/homepage-ai-first-r1.json'
       - 'ignition/tests/test_pr_front_door_audit.py'
       - 'ignition/tests/test_q33_fail_closed_fixtures.py'
   push:
@@ -61,6 +72,8 @@ jobs:
             tests/test_diff_coverage_gate.py \
             tests/test_era_resolver_generalization.py \
             tests/test_human_front_door.py \
+            tests/test_human_visibility_gate.py \
+            tests/test_current_surface_compiler.py \
             tests/test_pr_front_door_audit.py \
             tests/test_q33_fail_closed_fixtures.py \
             -v

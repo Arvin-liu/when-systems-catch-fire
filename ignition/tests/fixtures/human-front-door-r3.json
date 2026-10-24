@@ -2,9 +2,9 @@
   "schema_version": "human-front-door-fixtures-r3",
   "cases": [
     {"id": "canonical-identity-and-five-groups", "mutation": "none", "expected": "PASS"},
-    {"id": "prose-before-project-current", "mutation": "insert-before-current", "expected": "FAIL"},
-    {"id": "duplicate-project-current", "mutation": "duplicate-project-current", "expected": "FAIL"},
-    {"id": "duplicate-value-charter", "mutation": "duplicate-value-charter", "expected": "FAIL"},
+    {"id": "prose-before-project-identity", "mutation": "insert-before-identity", "expected": "FAIL"},
+    {"id": "duplicate-project-identity", "mutation": "duplicate-identity", "expected": "FAIL"},
+    {"id": "duplicate-value-direction", "mutation": "duplicate-values", "expected": "FAIL"},
     {"id": "legacy-current-snapshot", "mutation": "insert-snapshot", "expected": "FAIL"},
     {"id": "nested-details-under-project-value", "mutation": "insert-details", "expected": "FAIL"},
     {"id": "missing-canonical-charter-link", "mutation": "remove-charter-link", "expected": "FAIL"},
