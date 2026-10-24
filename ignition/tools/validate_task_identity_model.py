@@ -28,7 +28,7 @@ def current_execution_contract_path() -> str:
     lineage = load_json(ROOT / "data/operations/current-task-lineage-status.json")
     task_id = lineage["task_identity"]["current_formal_task"]
     ordinal = task_identity.parse_task_id(task_id)["ordinal"]
-    return f"ignition/data/operations/iterations/{ordinal}/execution-contract-r1.json"
+    return f"ignition/data/operations/iterations/{ordinal:03d}/execution-contract-r1.json"
 
 ROLE_KEYS = (
     "current_formal_task",

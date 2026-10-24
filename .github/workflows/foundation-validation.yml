@@ -16,6 +16,7 @@ defaults:
     working-directory: ignition
 jobs:
   route:
+    name: foundation-validation-route
     runs-on: ubuntu-latest
     outputs:
       mode: ${{ steps.plan.outputs.mode }}
@@ -266,7 +267,7 @@ jobs:
           test -z "$(git status --porcelain --untracked-files=all)"
 
   validate:
-    name: validate
+    name: foundation-validation
     if: always()
     needs: [route, full_regression]
     runs-on: ubuntu-latest

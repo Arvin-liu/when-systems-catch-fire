@@ -104,6 +104,11 @@
   - 可搜索名称：NFC-669d97a762b49aa9 / `normalized_meaning_candidate`（必须标明候选投影，不是真义）：
   - 来源：`templates/publication/zhiyuan-writing-spec.md`
   - 依赖：—；被引用：—
+- [`pull_request` 的 GitHub check run 关联 PR head SHA；Actions 作业日志显示 checkout 使用本地远端跟踪 ref `refs/remotes/pull/{number}/merge`](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6eec44a33705120e / `pull_request` 的 GitHub check run 关联 PR head SHA；Actions 作业日志显示 checkout 使用本地远端跟踪 ref `refs/remotes/pull/{number}/merge`
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
 - [`stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2304d7a7965cf7f8 / `stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap

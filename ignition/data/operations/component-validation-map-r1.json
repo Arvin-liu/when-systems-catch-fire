@@ -11,6 +11,8 @@
         "tests.test_component_validation_evidence",
         "tests.test_component_release_preparation",
         "tests.test_component_release_authorization",
+        "tests.test_release_transaction_protocol",
+        "tests.test_release_transaction_protocol_r3",
         "tests.test_component_profiles",
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
@@ -28,9 +30,10 @@
       "modules": [
         "tests.test_current_state_sync",
         "tests.test_current_surface_compiler",
-        "tests.test_state_changelog"
+        "tests.test_state_changelog",
+        "tests.test_current_task_advancement"
       ],
-      "evidence": "Existing current-state sync, surface compilation and state-change tests exercise the affected declared consumers.",
+      "evidence": "Existing current-state sync, surface compilation, state-change, and task-identity advancement tests exercise the affected declared consumers.",
       "import_roots": [
         "ignition"
       ]
@@ -271,6 +274,76 @@
       ],
       "requires_full_regression": true,
       "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
+    },
+    {
+      "component_id": "formal_task_lifecycle_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Formal-task lifecycle and Task20 advancement sources update canonical Current task identity; the existing current-state consumer target includes the Task20 identity-selection negative controls."
+    },
+    {
+      "component_id": "iteration_manifest_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The Task20 iteration records and manifest-bound ordinal are covered by the existing iteration synchronization and publication consumer tests."
+    },
+    {
+      "component_id": "iteration",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Task20 current-iteration and publication changes propagate to the existing iteration synchronization and stage publication consumer tests."
+    },
+    {
+      "component_id": "open_obligation_registry_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The changed cross-task obligation registry is current-state authority and is included in the existing current-state consumer closure."
+    },
+    {
+      "component_id": "project_component_registry",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The project component registry and its route ownership are covered by the existing validation-router, plan, and defensive-rejection consumer tests."
     },
     {
       "component_id": "epistemic_governance_kernel",
@@ -642,6 +715,35 @@
       ],
       "requires_full_regression": true,
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "stage_snapshot_publication",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls",
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The R3 migration contract is documented alongside the existing stage-snapshot governance. Release-control consumers validate exact R2/R3 protocol tests; publication consumers validate that this documentation change preserves the existing publication boundary."
+    },
+    {
+      "component_id": "release_transaction_protocol_r3",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The dedicated release-transaction-protocol-validation workflow tests the exact R2/R3 validators and fixtures; g_component_release_controls tests cover the shared validation router, release authority and defensive boundaries. R3 remains a candidate until a separate Owner authorization and 1111 witness verify the protected merge."
     }
   ]
 }

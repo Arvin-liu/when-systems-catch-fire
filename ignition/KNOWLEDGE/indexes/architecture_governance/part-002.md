@@ -169,6 +169,11 @@
   - 可搜索名称：NFC-adc677320cb1ab17 / `data/external-research/121b-fulltext-batch/121b-fulltext-anchor-manifest.jsonl` — 30 anchor-verified, 49 pending
   - 来源：`reports/external-research/121b-handoff-to-121c.md`
   - 依赖：—；被引用：—
+- [`data/operations/release-transaction-protocol-r3.json` 与其 schema 定义 R3 候选。R2 保持 Current，直到独立 `1111` 回执绑定一次过渡批准、已合并 PR 和实](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-81cd82780770aba9 / `data/operations/release-transaction-protocol-r3.json` 与其 schema 定义 R3 候选。R2 保持 Current，直到独立 `1111` 回执绑定一次过渡批准、已合并 PR 和实
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
 - [`data/operations/synchronization-surfaces.json` is the canonical topology of synchronization obligations. It does not st](../../../reports/operations/121Q25B-whole-project-synchronization-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cd2636c4118dfd40 / `data/operations/synchronization-surfaces.json` is the canonical topology of synchronization obligations. It does not st
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2d5cf18b4ed756c1 / Classic Problems Benchmark Dataset
   - 来源：`data/schemas/classic_problems_benchmark.schema.json`
-  - 依赖：—；被引用：—
-- [classic_problems_benchmark 数据结构](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cdf4220868dbb8d3 / classic_problems_benchmark 数据结构
-  - 来源：`docs/machine_readable_data_plan.md`
   - 依赖：—；被引用：—

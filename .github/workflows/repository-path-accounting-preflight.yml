@@ -24,6 +24,7 @@ defaults:
     working-directory: ignition
 jobs:
   preflight:
+    name: repository-path-accounting-preflight
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

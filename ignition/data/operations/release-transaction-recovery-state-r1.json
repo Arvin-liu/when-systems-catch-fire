@@ -1,0 +1,10 @@
+{
+  "schema_version": "release-transaction-recovery-state-r1",
+  "contract_id": "RELEASE_TRANSACTION_RECOVERY_STATE",
+  "status": "NOT_REQUESTED",
+  "source_r3_protocol_blob_sha": "51158eede2bab5a36c297e7d1274b1547af1a8c0",
+  "target_r2_protocol_blob_sha": "9d87de51f0b2bb0a1d075bbcdf6ca6e8ff8e3615",
+  "scope": "RESTORE_R2_ONLY",
+  "requested_at": null,
+  "reason": null
+}

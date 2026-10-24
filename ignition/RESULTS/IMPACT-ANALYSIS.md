@@ -301,7 +301,7 @@
 |`docs/narrative-story-validation.md`|6|0|否|
 |`docs/operations/ignition-operation-playbooks-r1.md`|91|0|否|
 |`docs/operations/lifecycle-readme.md`|0|0|是|
-|`docs/operations/stage-snapshot-publication.md`|21|0|否|
+|`docs/operations/stage-snapshot-publication.md`|25|0|否|
 |`docs/p1-data-index-map-20260708.md`|16|0|否|
 |`docs/p1-machine-data-collision-workflow-20260708.md`|25|0|否|
 |`docs/participate.md`|7|0|否|

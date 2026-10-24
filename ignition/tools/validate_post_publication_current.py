@@ -59,9 +59,9 @@ def _current_paths() -> tuple[Path, Path, Path]:
     task_id = lineage["task_identity"]["current_formal_task"]
     ordinal = int(task_id.rsplit("-", 1)[1])
     return (
-        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json",
         ROOT / f"agent-results/{task_id}-result.md",
-        ROOT / f"data/operations/iterations/{ordinal}/step17-post-publication-task-binding-report.json",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/step17-post-publication-task-binding-report.json",
     )
 
 
