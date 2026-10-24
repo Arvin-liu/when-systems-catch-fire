@@ -42,8 +42,8 @@ def _current_identity() -> tuple[str, str, int]:
 def _current_paths() -> tuple[Path, Path, Path, Path, str, str]:
     task_id, architecture_task, ordinal = _current_identity()
     return (
-        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
-        ROOT / f"data/operations/iterations/{ordinal}/progress.jsonl",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json",
+        ROOT / f"data/operations/iterations/{ordinal:03d}/progress.jsonl",
         ROOT / f"agent-results/{task_id}-result.md",
         ROOT / f"agent-results/{task_id}-machine-receipt.json",
         task_id,

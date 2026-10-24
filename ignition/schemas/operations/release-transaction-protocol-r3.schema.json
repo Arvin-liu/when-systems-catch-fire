@@ -527,7 +527,7 @@
       "properties": {
         "task_identity": {
           "type": "object", "additionalProperties": false,
-          "required": ["task_id", "formal_ordinal", "task_branch", "current_task_source_sha256", "task_identity_model_sha256", "execution_contract_sha256", "successor_registration_commit_sha", "successor_registration_file_sha256"],
+          "required": ["task_id", "formal_ordinal", "task_branch", "current_task_source_sha256", "task_identity_model_sha256", "execution_contract_sha256", "successor_registration_commit_sha", "successor_registration_file_sha256", "successor_registration_nonce", "successor_registration_parent_shas"],
           "properties": {
             "task_id": {"type": "string", "minLength": 1},
             "formal_ordinal": {"type": "integer", "minimum": 1},
@@ -536,7 +536,12 @@
             "task_identity_model_sha256": {"$ref": "#/$defs/sha256"},
             "execution_contract_sha256": {"$ref": "#/$defs/sha256"},
             "successor_registration_commit_sha": { "$ref": "#/$defs/sha1" },
-            "successor_registration_file_sha256": { "$ref": "#/$defs/sha256" }
+            "successor_registration_file_sha256": { "$ref": "#/$defs/sha256" },
+            "successor_registration_nonce": { "type": "string", "minLength": 32 },
+            "successor_registration_parent_shas": {
+              "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true,
+              "items": { "$ref": "#/$defs/sha1" }
+            }
           }
         },
         "pull_request": {

@@ -1,0 +1,43 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20261024-020",
+  "formal_ordinal": 20,
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/main",
+    "commit": "44de013f09b63535fe16b1e38cab7eff4d68ae66",
+    "command_path": "instructions/goal-mode/IGNITION-2026-10-24-SIGNED-OWNER-WEB-MERGE-REGISTRATION-COMPATIBILITY-R0.md",
+    "command_record_commit": "44de013f09b63535fe16b1e38cab7eff4d68ae66"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+  },
+  "successor_registration": {
+    "commit_sha": "2709651e63238ee6e1bd812e3f7bc692c10f0acc",
+    "file_sha256": "7a20c9cbabfd1b7a673a6e1f9b1ea8ad44bc9479639be34cb10c8b94c4520dc8",
+    "registration_nonce": "b07011542e8c8104c35c5104a5464c7c",
+    "parent_shas": [
+      "d451305c4c606460665a30ffb523db59edd58e5d",
+      "538ebc673b13fd8d376a704ab3bb2b8fc325d86c"
+    ]
+  },
+  "expected_task_branch": "codex/r3-forward-20261022",
+  "expected_receipt_branch": "relay/receipts/IGNITION-20261024-020-r3-transition",
+  "required_release_ref": "refs/heads/main",
+  "draft_pr_only": true,
+  "owner_authorization_required_for_ready_merge_or_close": true,
+  "no_owner_intermediate": true,
+  "identity_impact": "NONE",
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20261024-020",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260829-148",
+    "previous_formal_task": "IGNITION-20260829-148",
+    "release_candidate_task": "IGNITION-20261024-020",
+    "publication_witness_task": "IGNITION-20261024-020"
+  },
+  "claim_ceiling": "Task20 repository-local R3 candidate verifier and registered identity-source repair only; Owner authority is not inferred or transferred, R2 remains current, the three R2 exceptions remain unauthorized, and no R3 activation, external truth, production readiness, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

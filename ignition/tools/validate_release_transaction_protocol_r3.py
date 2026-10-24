@@ -41,6 +41,7 @@ R2_RESTORATION_WITNESS_PATH = "reports/operations/IGNITION-R3-TO-R2-RESTORED-AND
 PUBLIC_REPOSITORY = "Arvin-liu/when-systems-catch-fire"
 R2_CANONICAL_SUITE_MINIMUM_SECONDS = 14400
 GITHUB_WEB_FLOW_ACCOUNT_ID = 19864447
+MAX_FIRST_PARENT_CONTROL_PATH_SCAN = 10000
 
 
 def load_json(path: Path) -> Any:
@@ -172,15 +173,21 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
         errors.append("task identity model does not bind the release-candidate execution contract")
     if not task_id or execution.get("task_id") != task_id:
         errors.append("lineage, identity model and authorized execution contract task IDs disagree")
+    task_match = (
+        re.fullmatch(r"IGNITION-[0-9]{8}-(?P<ordinal>[0-9]{3})", task_id)
+        if isinstance(task_id, str) else None
+    )
     if execution.get("identity_expectations", {}).get("current_formal_task") != task_id or execution.get("identity_expectations", {}).get("release_candidate_task") != task_id:
         errors.append("lineage, identity model and authorized execution contract task IDs disagree")
 
     ordinal = next((execution.get(key) for key in ("formal_ordinal", "task_ordinal", "ordinal") if type(execution.get(key)) is int), None)
     branch = execution.get("expected_task_branch")
     receipt_branch = execution.get("expected_receipt_branch")
-    formal_base_main_sha = execution.get("formal_base_main_sha")
+    formal_base_main_sha = execution.get("formal_baseline", {}).get("sha")
     if ordinal is None:
         errors.append("canonical execution contract does not bind a formal task ordinal")
+    elif task_match is None or int(task_match.group("ordinal")) != ordinal:
+        errors.append("canonical execution-contract ordinal differs from its canonical task ID")
     if not isinstance(branch, str) or not branch:
         errors.append("canonical execution contract does not bind an expected task branch")
     if not isinstance(receipt_branch, str) or not receipt_branch:
@@ -193,10 +200,20 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
         registration = {}
     registration_sha = registration.get("commit_sha")
     registration_file_sha256 = registration.get("file_sha256")
+    registration_nonce = registration.get("registration_nonce")
+    registration_parent_shas = registration.get("parent_shas")
     if not isinstance(registration_sha, str) or len(registration_sha) != 40:
         errors.append("execution contract does not bind the exact Owner-signed successor-registration commit")
     if not isinstance(registration_file_sha256, str) or len(registration_file_sha256) != 64:
         errors.append("execution contract does not bind the successor-registration file digest")
+    if not isinstance(registration_nonce, str) or len(registration_nonce) < 32:
+        errors.append("execution contract does not bind the exact successor-registration nonce")
+    if (
+        not isinstance(registration_parent_shas, list)
+        or len(registration_parent_shas) != 2
+        or any(not isinstance(parent, str) or not re.fullmatch(r"[0-9a-f]{40}", parent) for parent in registration_parent_shas)
+    ):
+        errors.append("execution contract does not bind the exact ordered two-parent registration commit")
 
     def digest(path: Path) -> str:
         return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -219,10 +236,16 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
         "execution_contract_sha256": execution_digest,
         "successor_registration_commit_sha": registration_sha,
         "successor_registration_file_sha256": registration_file_sha256,
+        "successor_registration_nonce": registration_nonce,
+        "successor_registration_parent_shas": registration_parent_shas,
     }
     if not errors:
         registration_evidence, registration_errors = read_authenticated_successor_registration(
-            registration_sha, expected_file_sha256=registration_file_sha256
+            registration_sha,
+            expected_file_sha256=registration_file_sha256,
+            expected_formal_base_main_sha=formal_base_main_sha,
+            expected_nonce=registration_nonce,
+            expected_parent_shas=registration_parent_shas,
         )
         errors.extend(registration_errors)
         if registration_evidence is not None:
@@ -231,8 +254,10 @@ def authoritative_task_context() -> tuple[dict[str, Any], list[str]]:
                 statement["task_id"] != task_id or statement["formal_ordinal"] != ordinal
                 or statement["work_branch"] != branch or statement["receipt_branch"] != receipt_branch
                 or statement["formal_base_main_sha"] != formal_base_main_sha
+                or statement["registration_nonce"] != registration_nonce
+                or registration_evidence["parents"] != registration_parent_shas
             ):
-                errors.append("Owner-signed successor registration does not match the exact task, ordinal, work/receipt branches and formal base")
+                errors.append("Owner-signed successor registration does not match the exact task, ordinal, branches, base, nonce and ordered signed-merge parents")
             if statement["r3_protocol_candidate_blob_sha"] != git_blob_sha():
                 errors.append("Owner-signed successor registration is stale for the exact R3 protocol blob")
             context["successor_registration"] = registration_evidence
@@ -268,11 +293,231 @@ def _verified_owner_commit(commit: dict[str, Any], owner_id: int) -> tuple[bool,
     return True, ""
 
 
+def _git_blob_sha(raw: bytes) -> str:
+    header = f"blob {len(raw)}\0".encode("ascii")
+    return hashlib.sha1(header + raw).hexdigest()
+
+
+def _commit_from_api(
+    repository: str,
+    commit_sha: str,
+    api: Callable[[str], dict[str, Any] | list[Any]],
+    cache: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    if commit_sha not in cache:
+        commit = api(f"repos/{repository}/commits/{commit_sha}")
+        if not isinstance(commit, dict) or commit.get("sha") != commit_sha:
+            raise ValueError(f"GitHub commit readback is invalid for {repository}@{commit_sha}")
+        tree_sha = (commit.get("commit", {}).get("tree") or {}).get("sha")
+        if not isinstance(tree_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", tree_sha):
+            raise ValueError(f"GitHub commit has no exact tree SHA for {repository}@{commit_sha}")
+        cache[commit_sha] = commit
+    return cache[commit_sha]
+
+
+def _tree_path_entry(
+    repository: str,
+    tree_sha: str,
+    path: str,
+    api: Callable[[str], dict[str, Any] | list[Any]],
+) -> dict[str, str] | None:
+    """Read one exact Git tree path without relying on GitHub's path-history API."""
+    if not re.fullmatch(r"[0-9a-f]{40}", tree_sha):
+        raise ValueError("Git tree SHA is not an exact SHA-1")
+    parts = path.split("/")
+    if not path or any(not part or part in {".", ".."} for part in parts):
+        raise ValueError("control path is empty or contains an unsafe segment")
+    current_tree = tree_sha
+    for index, part in enumerate(parts):
+        tree = api(f"repos/{repository}/git/trees/{current_tree}")
+        if not isinstance(tree, dict) or tree.get("truncated") is True or not isinstance(tree.get("tree"), list):
+            raise ValueError(f"Git tree readback is invalid or truncated for {repository}:{path}")
+        matches = [entry for entry in tree["tree"] if isinstance(entry, dict) and entry.get("path") == part]
+        if not matches:
+            return None
+        if len(matches) != 1:
+            raise ValueError(f"Git tree contains an ambiguous path segment for {repository}:{path}")
+        entry = matches[0]
+        if index == len(parts) - 1:
+            if (
+                entry.get("type") != "blob"
+                or not isinstance(entry.get("sha"), str)
+                or not re.fullmatch(r"[0-9a-f]{40}", entry["sha"])
+                or entry.get("mode") not in {"100644", "100755"}
+            ):
+                raise ValueError(f"fixed control path is not a Git blob for {repository}:{path}")
+            return {"sha": entry["sha"], "mode": str(entry.get("mode", "")), "type": "blob"}
+        if entry.get("type") != "tree" or not isinstance(entry.get("sha"), str):
+            return None
+        current_tree = entry["sha"]
+    return None
+
+
+def _path_entry_for_commit(
+    repository: str,
+    commit_sha: str,
+    path: str,
+    api: Callable[[str], dict[str, Any] | list[Any]],
+    cache: dict[str, dict[str, Any]],
+) -> dict[str, str] | None:
+    commit = _commit_from_api(repository, commit_sha, api, cache)
+    tree_sha = commit["commit"]["tree"]["sha"]
+    return _tree_path_entry(repository, tree_sha, path, api)
+
+
+def _latest_first_parent_path_update(
+    repository: str,
+    path: str,
+    main_sha: str,
+    api: Callable[[str], dict[str, Any] | list[Any]],
+    cache: dict[str, dict[str, Any]],
+) -> tuple[str, dict[str, str] | None, dict[str, str] | None]:
+    """Find the newest main first-parent commit that changes this path's tree entry.
+
+    A commits?path query is deliberately not used: GitHub can return an unsigned
+    staging commit instead of the signed web-merge commit for merge-heavy paths.
+    """
+    cursor = main_sha
+    for _ in range(MAX_FIRST_PARENT_CONTROL_PATH_SCAN):
+        commit = _commit_from_api(repository, cursor, api, cache)
+        parents = commit.get("parents")
+        if not isinstance(parents, list):
+            raise ValueError(f"GitHub commit parents are unreadable for {repository}@{cursor}")
+        if not parents:
+            raise ValueError(f"fixed control path has no first-parent update on {repository}/main")
+        first_parent = parents[0].get("sha") if isinstance(parents[0], dict) else None
+        if not isinstance(first_parent, str) or not re.fullmatch(r"[0-9a-f]{40}", first_parent):
+            raise ValueError(f"first parent is unreadable for {repository}@{cursor}")
+        after = _path_entry_for_commit(repository, cursor, path, api, cache)
+        before = _path_entry_for_commit(repository, first_parent, path, api, cache)
+        if after != before:
+            return cursor, after, before
+        cursor = first_parent
+    raise ValueError(f"first-parent control-path scan exceeded {MAX_FIRST_PARENT_CONTROL_PATH_SCAN} commits")
+
+
+def _decode_control_file(content: Any, repository: str, path: str, ref: str) -> tuple[bytes, str]:
+    if (
+        not isinstance(content, dict)
+        or content.get("path") != path
+        or content.get("type") != "file"
+        or content.get("encoding") != "base64"
+        or not isinstance(content.get("content"), str)
+    ):
+        raise ValueError(f"fixed control path is not readable at {repository}:{path}@{ref}")
+    raw = base64.b64decode("".join(content["content"].split()), validate=True)
+    blob_sha = _git_blob_sha(raw)
+    if content.get("sha") != blob_sha:
+        raise ValueError(f"GitHub blob SHA does not bind exact control-file bytes at {repository}:{path}@{ref}")
+    return raw, blob_sha
+
+
+def _read_authenticated_control_path_commit(
+    repository: str,
+    path: str,
+    commit_sha: str | None,
+    owner_id: int,
+    *,
+    expected_file_sha256: str | None = None,
+    expected_parent_shas: list[str] | None = None,
+    expected_nonce: str | None = None,
+    api: Callable[[str], dict[str, Any] | list[Any]],
+) -> tuple[dict[str, Any] | None, list[str]]:
+    """Bind a verified Owner signature to one new fixed-path commit on current main."""
+    try:
+        if commit_sha is not None and (
+            not isinstance(commit_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", commit_sha)
+        ):
+            return None, [f"fixed control-record commit SHA is not exact for {repository}:{path}"]
+        cache: dict[str, dict[str, Any]] = {}
+        branch = api(f"repos/{repository}/branches/main")
+        main_sha = branch.get("commit", {}).get("sha") if isinstance(branch, dict) else None
+        if not isinstance(main_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", main_sha):
+            return None, [f"{repository}/main exact commit SHA is unreadable"]
+        latest_sha, latest_entry, _latest_before = _latest_first_parent_path_update(
+            repository, path, main_sha, api, cache
+        )
+        if commit_sha is None:
+            commit_sha = latest_sha
+        if latest_sha != commit_sha:
+            return None, [f"signed control record is not the latest first-parent content update to {path} on {repository}/main"]
+        if latest_entry is None:
+            return None, [f"fixed control path is absent from {repository}/main: {path}"]
+
+        ancestry = api(f"repos/{repository}/compare/{commit_sha}...{main_sha}")
+        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
+            return None, [f"signed control commit is not an ancestor of the exact current {repository}/main tip"]
+
+        commit = _commit_from_api(repository, commit_sha, api, cache)
+        signature_ok, signature_error = _verified_owner_commit(commit, owner_id)
+        if not signature_ok:
+            return None, [f"Owner signature failed closed for {repository}:{path}: {signature_error}"]
+        parents = commit.get("parents")
+        if not isinstance(parents, list) or len(parents) not in {1, 2}:
+            return None, [f"signed control commit has an unsupported parent count for {repository}:{path}"]
+        parent_shas = [parent.get("sha") if isinstance(parent, dict) else None for parent in parents]
+        if any(not isinstance(parent_sha, str) or not re.fullmatch(r"[0-9a-f]{40}", parent_sha) for parent_sha in parent_shas):
+            return None, [f"signed control commit has an unreadable parent for {repository}:{path}"]
+        if expected_parent_shas is not None and parent_shas != expected_parent_shas:
+            return None, [f"signed control commit parent order differs from the exact expected parents for {repository}:{path}"]
+        committer_id = (commit.get("committer") or {}).get("id")
+        if committer_id == GITHUB_WEB_FLOW_ACCOUNT_ID and len(parents) != 2:
+            return None, [f"GitHub web-flow signed control commit is not a two-parent merge for {repository}:{path}"]
+
+        after_entry = _path_entry_for_commit(repository, commit_sha, path, api, cache)
+        before_entry = _path_entry_for_commit(repository, parent_shas[0], path, api, cache)
+        if after_entry is None or after_entry != latest_entry:
+            return None, [f"signed commit tree does not bind the latest exact fixed-path blob for {repository}:{path}"]
+        if before_entry is not None:
+            return None, [f"fixed Owner control path already existed in the signed commit's first parent; replay/update is rejected for {repository}:{path}"]
+        second_parent_entry = None
+        if len(parent_shas) == 2:
+            second_parent_entry = _path_entry_for_commit(repository, parent_shas[1], path, api, cache)
+            if committer_id == GITHUB_WEB_FLOW_ACCOUNT_ID and second_parent_entry != after_entry:
+                return None, [f"signed web merge tree differs from its reviewed second-parent fixed path for {repository}:{path}"]
+
+        signed_content = api(f"repos/{repository}/contents/{quote(path, safe='/')}?ref={quote(commit_sha, safe='')}")
+        current_content = api(f"repos/{repository}/contents/{quote(path, safe='/')}?ref={quote(main_sha, safe='')}")
+        signed_raw, signed_blob_sha = _decode_control_file(signed_content, repository, path, commit_sha)
+        current_raw, current_blob_sha = _decode_control_file(current_content, repository, path, main_sha)
+        if signed_blob_sha != after_entry["sha"] or current_blob_sha != latest_entry["sha"]:
+            return None, [f"GitHub file bytes do not match the signed and current Git tree blobs for {repository}:{path}"]
+        if signed_raw != current_raw or signed_blob_sha != current_blob_sha:
+            return None, [f"current main fixed-path bytes differ from the exact signed commit for {repository}:{path}"]
+        file_sha256 = hashlib.sha256(signed_raw).hexdigest()
+        if expected_file_sha256 is not None and file_sha256 != expected_file_sha256:
+            return None, [f"fixed control-file SHA-256 differs from the independently bound digest for {repository}:{path}"]
+        if expected_nonce is not None:
+            statement = json.loads(signed_raw.decode("utf-8"))
+            if statement.get("registration_nonce") != expected_nonce:
+                return None, [f"fixed control-file nonce differs from the independently bound registration nonce for {repository}:{path}"]
+        commit_date = (commit.get("commit", {}).get("committer") or {}).get("date")
+        if not isinstance(commit_date, str) or not commit_date:
+            return None, [f"signed control commit has no GitHub committer timestamp for {repository}:{path}"]
+        return {
+            "raw": signed_raw,
+            "file_sha256": file_sha256,
+            "blob_sha": signed_blob_sha,
+            "commit": commit,
+            "committed_at": commit_date,
+            "main_sha": main_sha,
+            "path_update_commit_sha": latest_sha,
+            "path_before": before_entry,
+            "path_after": after_entry,
+            "second_parent_path": second_parent_entry,
+            "parents": parent_shas,
+        }, []
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError, ValueError) as error:
+        return None, [f"authenticated fixed control-path readback failed closed: {error.__class__.__name__}: {error}"]
+
+
 def read_authenticated_successor_registration(
     commit_sha: str,
     *,
     expected_file_sha256: str | None = None,
     expected_formal_base_main_sha: str | None = None,
+    expected_nonce: str | None = None,
+    expected_parent_shas: list[str] | None = None,
     github_api: Callable[[str], dict[str, Any] | list[Any]] | None = None,
 ) -> tuple[dict[str, Any] | None, list[str]]:
     """Verify the Owner-signed, unique task/ordinal registration on 1111/main."""
@@ -282,35 +527,27 @@ def read_authenticated_successor_registration(
         public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
         public_main = api(f"repos/{PUBLIC_REPOSITORY}/branches/main")
         control_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
-        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}")
-        history = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(SUCCESSOR_REGISTRATION_PATH, safe='')}&sha=main&per_page=1"
-        )
-        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
-        content = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{SUCCESSOR_REGISTRATION_PATH}?ref={commit_sha}"
-        )
         owner_id = public_repo.get("owner", {}).get("id")
         actor_id = actor.get("id")
         if actor_id != owner_id or actor_id != control_repo.get("owner", {}).get("id"):
             return None, ["authenticated GitHub actor is not the Owner of both repositories"]
         if control_repo.get("private") is not True or control_repo.get("default_branch") != "main":
             return None, ["1111 registration source is not confirmed private/main"]
-        if commit.get("sha") != commit_sha:
-            return None, ["Owner-signed task-registration commit readback SHA mismatch"]
-        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
-        if not signature_ok:
-            return None, [f"Owner-signed task-registration signature failed closed: {signature_error}"]
-        if not isinstance(history, list) or not history or history[0].get("sha") != commit_sha:
-            return None, ["task-registration record is not the latest commit to its path on 1111/main"]
-        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
-            return None, ["Owner-signed task-registration commit is not present in 1111/main history"]
-        if content.get("path") != SUCCESSOR_REGISTRATION_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
-            return None, ["fixed successor-registration path is unavailable at its exact signed commit"]
-        raw = base64.b64decode("".join(content["content"].split()), validate=True)
-        file_sha256 = hashlib.sha256(raw).hexdigest()
-        if expected_file_sha256 and file_sha256 != expected_file_sha256:
-            return None, ["successor-registration file digest differs from the execution contract"]
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY,
+            SUCCESSOR_REGISTRATION_PATH,
+            commit_sha,
+            actor_id,
+            expected_file_sha256=expected_file_sha256,
+            expected_parent_shas=expected_parent_shas,
+            expected_nonce=expected_nonce,
+            api=api,
+        )
+        if binding_errors or binding is None:
+            return None, [f"Owner-signed successor registration binding failed: {item}" for item in binding_errors]
+        commit = binding["commit"]
+        raw = binding["raw"]
+        file_sha256 = binding["file_sha256"]
         statement = json.loads(raw.decode("utf-8"))
         schema = load_json(SCHEMA_PATH)
         errors = _schema_errors(statement, {"$ref": "#/$defs/successorRegistrationStatement", "$defs": schema["$defs"]})
@@ -370,6 +607,10 @@ def read_authenticated_successor_registration(
         committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
         if not committed_at:
             return None, ["Owner-signed task-registration commit has no committer timestamp"]
+        if expected_nonce is not None and statement["registration_nonce"] != expected_nonce:
+            return None, ["successor-registration nonce differs from the exact execution-contract binding"]
+        if expected_parent_shas is not None and binding["parents"] != expected_parent_shas:
+            return None, ["successor-registration parents differ from the exact ordered execution-contract binding"]
         if datetime.fromisoformat(statement["registered_at"].replace("Z", "+00:00")) > datetime.fromisoformat(committed_at.replace("Z", "+00:00")):
             return None, ["successor registration timestamp is later than its signed commit"]
         return {
@@ -379,6 +620,10 @@ def read_authenticated_successor_registration(
             "commit_sha": commit_sha,
             "committed_at": committed_at,
             "file_sha256": file_sha256,
+            "git_blob_sha": binding["blob_sha"],
+            "parents": binding["parents"],
+            "main_sha": binding["main_sha"],
+            "path_update_commit_sha": binding["path_update_commit_sha"],
             "signature_verified": True,
             "signature_reason": "valid",
         }, []
@@ -397,38 +642,25 @@ def read_authenticated_owner_authorization(
         actor = api("user")
         public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
         private_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
-        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}")
-        history = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(OWNER_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1"
-        )
-        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
-        content = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{OWNER_AUTHORIZATION_PATH}?ref={commit_sha}"
-        )
         actor_id = actor.get("id")
         public_owner_id = public_repo.get("owner", {}).get("id")
         private_owner_id = private_repo.get("owner", {}).get("id")
-        commit_author_id = (commit.get("author") or {}).get("id")
-        commit_committer_id = (commit.get("committer") or {}).get("id")
-        returned_sha = commit.get("sha")
         if not isinstance(actor_id, int) or actor_id != public_owner_id or actor_id != private_owner_id:
             return None, ["authenticated GitHub actor is not the Owner of both the release and authorization repositories"]
         if private_repo.get("private") is not True:
             return None, ["1111 authorization repository is not confirmed private by the authenticated GitHub API"]
         if private_repo.get("default_branch") != "main":
             return None, ["1111 default branch is not main, so the fixed authorization source cannot be verified"]
-        if returned_sha != commit_sha or commit_author_id != actor_id:
-            return None, ["fixed 1111 authorization commit is missing or is not authored by the authenticated Owner"]
-        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
-        if not signature_ok:
-            return None, [f"fixed 1111 authorization signature failed closed: {signature_error}"]
-        if not isinstance(history, list) or not history or history[0].get("sha") != commit_sha:
-            return None, ["fixed 1111 authorization record is not the latest commit to its path on main"]
-        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
-            return None, ["fixed 1111 authorization commit is not present in the current main history"]
-        if content.get("path") != OWNER_AUTHORIZATION_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
-            return None, ["fixed 1111 authorization path did not resolve to a readable file at the exact commit"]
-        raw = base64.b64decode("".join(content["content"].split()), validate=True)
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, OWNER_AUTHORIZATION_PATH, commit_sha, actor_id, api=api
+        )
+        if binding_errors or binding is None:
+            return None, [f"fixed 1111 authorization binding failed: {item}" for item in binding_errors]
+        commit = binding["commit"]
+        returned_sha = commit["sha"]
+        commit_author_id = (commit.get("author") or {}).get("id")
+        commit_committer_id = (commit.get("committer") or {}).get("id")
+        raw = binding["raw"]
         statement = json.loads(raw.decode("utf-8"))
         schema = load_json(SCHEMA_PATH)
         statement_errors = _schema_errors(
@@ -448,8 +680,8 @@ def read_authenticated_owner_authorization(
             "authorization_repository": OWNER_AUTHORIZATION_REPOSITORY,
             "authorization_path": OWNER_AUTHORIZATION_PATH,
             "authorization_commit_sha": returned_sha,
-            "authorization_committed_at": commit_date,
-            "authorization_file_sha256": hashlib.sha256(raw).hexdigest(),
+            "authorization_committed_at": binding["committed_at"],
+            "authorization_file_sha256": binding["file_sha256"],
             "authorization_signature_verified": True,
             "authorization_signature_reason": "valid",
         }
@@ -477,36 +709,22 @@ def read_live_transition_witness(
     """Read the exact final-SHA witness from its fixed path on private 1111 main."""
     api = github_api or _gh_api_json
     try:
-        history = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(TRANSITION_WITNESS_PATH, safe='')}&sha=main&per_page=1"
-        )
-        if not isinstance(history, list) or not history or not isinstance(history[0].get("sha"), str):
-            return None, ["fixed R3 witness file has no commit in the 1111 main-branch history"]
-        commit_sha = history[0]["sha"]
-        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}")
         actor_id = owner_authorization["meta"]["authenticated_actor_id"]
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, TRANSITION_WITNESS_PATH, None, actor_id, api=api
+        )
+        if binding_errors or binding is None:
+            return None, [f"fixed 1111 transition-witness binding failed: {item}" for item in binding_errors]
+        commit_sha = binding["path_update_commit_sha"]
+        commit = binding["commit"]
         author_id = (commit.get("author") or {}).get("id")
         committer_id = (commit.get("committer") or {}).get("id")
-        if commit.get("sha") != commit_sha or author_id != actor_id or committer_id != actor_id:
-            return None, ["fixed 1111 witness commit is not attributed to the authenticated Owner"]
-        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
-        if not signature_ok:
-            return None, [f"fixed 1111 witness signature failed closed: {signature_error}"]
         ancestry = api(
             f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{owner_authorization['evidence']['authorization_commit_sha']}...{commit_sha}"
         )
-        witness_on_main = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
         if not isinstance(ancestry, dict) or ancestry.get("status") != "ahead":
             return None, ["signed 1111 witness is not a descendant of the exact signed Owner authorization commit"]
-        if not isinstance(witness_on_main, dict) or witness_on_main.get("status") not in {"ahead", "identical"}:
-            return None, ["signed 1111 witness commit is not present in the current main history"]
-
-        content = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{TRANSITION_WITNESS_PATH}?ref={commit_sha}"
-        )
-        if content.get("path") != TRANSITION_WITNESS_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
-            return None, ["fixed 1111 witness path did not resolve to a readable file at its exact main-branch commit"]
-        raw = base64.b64decode("".join(content["content"].split()), validate=True)
+        raw = binding["raw"]
         witnessed_receipt = json.loads(raw.decode("utf-8"))
         if witnessed_receipt != transition_receipt:
             return None, ["caller-supplied transition receipt differs from the exact 1111 main-branch witness file"]
@@ -514,13 +732,19 @@ def read_live_transition_witness(
         auth_content = api(
             f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{OWNER_AUTHORIZATION_PATH}?ref={commit_sha}"
         )
-        if auth_content.get("path") != OWNER_AUTHORIZATION_PATH or auth_content.get("encoding") != "base64":
+        auth_raw, auth_blob_sha = _decode_control_file(
+            auth_content, OWNER_AUTHORIZATION_REPOSITORY, OWNER_AUTHORIZATION_PATH, commit_sha
+        )
+        witness_cache = {commit_sha: commit}
+        auth_entry = _path_entry_for_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, commit_sha, OWNER_AUTHORIZATION_PATH, api, witness_cache
+        )
+        if auth_entry is None or auth_entry["sha"] != auth_blob_sha:
             return None, ["R3 witness commit no longer contains the fixed Owner authorization record"]
-        auth_raw = base64.b64decode("".join(auth_content["content"].split()), validate=True)
         if hashlib.sha256(auth_raw).hexdigest() != owner_authorization["evidence"]["authorization_file_sha256"]:
             return None, ["R3 witness commit contains a different Owner authorization file"]
 
-        committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
+        committed_at = binding["committed_at"]
         if not committed_at:
             return None, ["fixed 1111 witness commit has no GitHub committer timestamp"]
         committed_time = datetime.fromisoformat(committed_at.replace("Z", "+00:00"))
@@ -1220,32 +1444,20 @@ def read_authenticated_r2_restore_authorization(
         actor = api("user")
         public_repo = api(f"repos/{PUBLIC_REPOSITORY}")
         control_repo = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}")
-        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{commit_sha}")
-        history = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(R2_RESTORE_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1"
-        )
-        ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{commit_sha}...main")
-        content = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{R2_RESTORE_AUTHORIZATION_PATH}?ref={commit_sha}"
-        )
         actor_id = actor.get("id")
         if actor_id != public_repo.get("owner", {}).get("id") or actor_id != control_repo.get("owner", {}).get("id"):
             return None, ["authenticated actor is not the Owner of both repositories"]
         if control_repo.get("private") is not True or control_repo.get("default_branch") != "main":
             return None, ["R2 restoration authorization source is not confirmed private 1111/main"]
-        if commit.get("sha") != commit_sha:
-            return None, ["R2 restoration authorization commit SHA mismatch"]
-        signature_ok, signature_error = _verified_owner_commit(commit, actor_id)
-        if not signature_ok:
-            return None, [f"R2 restoration authorization signature failed closed: {signature_error}"]
-        if not isinstance(history, list) or not history or history[0].get("sha") != commit_sha:
-            return None, ["R2 restoration authorization is not the latest record commit on 1111/main"]
-        if not isinstance(ancestry, dict) or ancestry.get("status") not in {"ahead", "identical"}:
-            return None, ["R2 restoration authorization commit is not present in 1111/main history"]
-        if content.get("path") != R2_RESTORE_AUTHORIZATION_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
-            return None, ["fixed R2 restoration authorization path is unreadable at the exact signed commit"]
-        raw = base64.b64decode("".join(content["content"].split()), validate=True)
-        file_sha256 = hashlib.sha256(raw).hexdigest()
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, R2_RESTORE_AUTHORIZATION_PATH, commit_sha, actor_id,
+            expected_file_sha256=expected_file_sha256, api=api,
+        )
+        if binding_errors or binding is None:
+            return None, [f"R2 restoration authorization binding failed: {item}" for item in binding_errors]
+        commit = binding["commit"]
+        raw = binding["raw"]
+        file_sha256 = binding["file_sha256"]
         if expected_file_sha256 and file_sha256 != expected_file_sha256:
             return None, ["R2 restoration authorization digest differs from the independent receipt"]
         statement = json.loads(raw.decode("utf-8"))
@@ -1255,7 +1467,7 @@ def read_authenticated_r2_restore_authorization(
             return None, [f"invalid R2 restoration authorization: {item}" for item in errors]
         if statement["owner_actor_id"] != actor_id:
             return None, ["R2 restoration authorization names a different Owner account"]
-        committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
+        committed_at = binding["committed_at"]
         if not committed_at:
             return None, ["R2 restoration authorization commit has no committer timestamp"]
         if datetime.fromisoformat(statement["approved_at"].replace("Z", "+00:00")) > datetime.fromisoformat(committed_at.replace("Z", "+00:00")):
@@ -1283,45 +1495,38 @@ def read_live_r2_restoration_witness(
     """Require the latest signed 1111 witness to carry the exact restored-main receipt."""
     api = github_api or _gh_api_json
     try:
-        history = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits?path={quote(R2_RESTORATION_WITNESS_PATH, safe='')}&sha=main&per_page=1"
-        )
-        if not isinstance(history, list) or not history or not isinstance(history[0].get("sha"), str):
-            return None, ["no signed R2 restoration witness exists on 1111/main"]
-        witness_sha = history[0]["sha"]
-        commit = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/commits/{witness_sha}")
         owner_id = restore_authorization["statement"]["owner_actor_id"]
-        if commit.get("sha") != witness_sha:
-            return None, ["R2 restoration witness commit SHA mismatch"]
-        signature_ok, signature_error = _verified_owner_commit(commit, owner_id)
-        if not signature_ok:
-            return None, [f"R2 restoration witness signature failed closed: {signature_error}"]
+        binding, binding_errors = _read_authenticated_control_path_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, R2_RESTORATION_WITNESS_PATH, None, owner_id, api=api
+        )
+        if binding_errors or binding is None:
+            return None, [f"R2 restoration witness binding failed: {item}" for item in binding_errors]
+        witness_sha = binding["path_update_commit_sha"]
+        commit = binding["commit"]
         auth_ancestry = api(
             f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{restore_authorization['authorization_commit_sha']}...{witness_sha}"
         )
-        main_ancestry = api(f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/compare/{witness_sha}...main")
         if not isinstance(auth_ancestry, dict) or auth_ancestry.get("status") != "ahead":
             return None, ["R2 restoration witness is not a descendant of its signed Owner authorization"]
-        if not isinstance(main_ancestry, dict) or main_ancestry.get("status") not in {"ahead", "identical"}:
-            return None, ["R2 restoration witness is no longer present on 1111/main"]
-        content = api(
-            f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{R2_RESTORATION_WITNESS_PATH}?ref={witness_sha}"
-        )
-        if content.get("path") != R2_RESTORATION_WITNESS_PATH or content.get("type") != "file" or content.get("encoding") != "base64":
-            return None, ["fixed R2 restoration witness file is unreadable at its exact signed commit"]
-        raw = base64.b64decode("".join(content["content"].split()), validate=True)
+        raw = binding["raw"]
         actual = json.loads(raw.decode("utf-8"))
         if actual != recovery_receipt:
             return None, ["caller-supplied R2 restoration receipt differs from the exact 1111 witness file"]
         auth_content = api(
             f"repos/{OWNER_AUTHORIZATION_REPOSITORY}/contents/{R2_RESTORE_AUTHORIZATION_PATH}?ref={witness_sha}"
         )
-        if auth_content.get("path") != R2_RESTORE_AUTHORIZATION_PATH or auth_content.get("encoding") != "base64":
+        auth_raw, auth_blob_sha = _decode_control_file(
+            auth_content, OWNER_AUTHORIZATION_REPOSITORY, R2_RESTORE_AUTHORIZATION_PATH, witness_sha
+        )
+        witness_cache = {witness_sha: commit}
+        auth_entry = _path_entry_for_commit(
+            OWNER_AUTHORIZATION_REPOSITORY, witness_sha, R2_RESTORE_AUTHORIZATION_PATH, api, witness_cache
+        )
+        if auth_entry is None or auth_entry["sha"] != auth_blob_sha:
             return None, ["signed restoration witness does not retain its Owner authorization file"]
-        auth_raw = base64.b64decode("".join(auth_content["content"].split()), validate=True)
         if hashlib.sha256(auth_raw).hexdigest() != recovery_receipt["owner_authorization_file_sha256"]:
             return None, ["restoration witness contains a different Owner authorization record"]
-        committed_at = (commit.get("commit", {}).get("committer") or {}).get("date")
+        committed_at = binding["committed_at"]
         if not committed_at:
             return None, ["R2 restoration witness commit has no committer timestamp"]
         return {
@@ -1665,7 +1870,12 @@ def validate_transaction_record(
             return errors
 
     identity = record["task_identity"]
-    for key in ("task_id", "formal_ordinal", "task_branch", "current_task_source_sha256", "task_identity_model_sha256", "execution_contract_sha256", "successor_registration_commit_sha", "successor_registration_file_sha256"):
+    for key in (
+        "task_id", "formal_ordinal", "task_branch", "current_task_source_sha256",
+        "task_identity_model_sha256", "execution_contract_sha256",
+        "successor_registration_commit_sha", "successor_registration_file_sha256",
+        "successor_registration_nonce", "successor_registration_parent_shas",
+    ):
         if identity[key] != canonical_identity.get(key):
             errors.append(f"task identity field {key} differs from the exact authorized current task source")
 

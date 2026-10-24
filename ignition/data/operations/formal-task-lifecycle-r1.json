@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20260829-148",
+  "current_task_id": "IGNITION-20261024-020",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,23 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20261024-020",
+      "execution_status": "IN_PROGRESS",
+      "terminal": false,
+      "scope_complete": false,
+      "identity_impact": "NONE",
+      "terminal_basis": "Task20 is an in-progress, branch-local R3 verifier compatibility and exact registered identity-source repair. It preserves Task148 as predecessor, Task142 as latest architecture-changing task, R2 as the effective release protocol, and LIVE_EXTERNAL_INVOCATION as OPEN/OWNER_DEFERRED; it authorizes no R3 activation or R2 exception.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/020/execution-contract-r1.json",
+        "ignition/data/operations/iterations/020/step01-remote-truth-audit.json",
+        "ignition/data/operations/iterations/020/step02-task20-source-repair.json"
+      ],
+      "claim_ceiling": "Task20 bounded repository-local R3 candidate source repair and validation evidence only; no Owner authorization for R3 activation or any R2 exception, no external truth, production readiness, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
     {
       "task_id": "IGNITION-20260829-148",
       "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
@@ -89,7 +106,9 @@
       "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
       "terminal_basis": "Task145 Steps 00-09 complete the repository-local Human Front Door cleanup, compiler folding, validator repair, architecture naming correction, deterministic Current projection, targeted regression, first-visit audit, scope check and release-ready terminal candidate. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
-      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
       "evidence_refs": [
         "ignition/data/operations/iterations/145/execution-contract-r1.json",
         "ignition/data/operations/iterations/145/step00-baseline-audit.json",
@@ -109,7 +128,9 @@
       "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
       "terminal_basis": "Task144 Steps 00-19 complete the engineering phase closure, Owner production handoff, exact candidate and fresh-task-clone regression, formal release candidate sealing and terminal lifecycle state. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
-      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
       "evidence_refs": [
         "ignition/data/operations/iterations/144/execution-contract-r1.json",
         "ignition/data/operations/iterations/144/step00-baseline-audit.json",
@@ -129,7 +150,9 @@
       "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
       "terminal_basis": "Task143 Steps 00-19 complete the phase parking, publication production, canonical integration, Current sync, natural regression and terminal release scope. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
-      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
       "evidence_refs": [
         "ignition/data/operations/iterations/143/execution-contract-r1.json",
         "ignition/data/operations/iterations/143/step00-baseline-audit.json",
@@ -148,7 +171,9 @@
       "scope_complete": true,
       "identity_impact": "ARCHITECTURE_CHANGED",
       "terminal_basis": "Task142 Steps 00-19 complete the lifecycle decoupling, obligation carry-forward, provider-neutral admission, fresh executor census, adversarial matrix, exact candidate and fresh-clone regression, formal publication transaction and independent witness contract; LIVE_EXTERNAL_INVOCATION remains independently OPEN because no exact-bound validated completion occurred.",
-      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
       "evidence_refs": [
         "ignition/data/operations/iterations/142/execution-contract-r1.json",
         "ignition/data/operations/iterations/142/step02-obligation-registry.json",
@@ -165,7 +190,9 @@
       "scope_complete": true,
       "identity_impact": "ARCHITECTURE_CHANGED",
       "terminal_basis": "Task141 Step00-16 completed and formal publication closed; the validated-completion obligation is tracked independently and does not keep the formal task alive.",
-      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
       "evidence_refs": [
         "ignition/data/operations/iterations/141/step16-fresh-clone-publication.json",
         "ignition/agent-results/IGNITION-20260826-141-machine-receipt.json",

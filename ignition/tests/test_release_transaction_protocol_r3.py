@@ -107,6 +107,173 @@ def _owner_evidence(statement: dict[str, object] | None = None) -> dict[str, obj
     }
 
 
+class _PrivateGitFixture:
+    """Small GitHub Git Data API model with first-parent and web-merge trees."""
+
+    def __init__(self, registration: bytes, owner_authorization: bytes, actor_id: int):
+        self.actor_id = actor_id
+        self.main_sha = "6" * 40
+        self.calls: list[str] = []
+        self.commits: dict[str, dict[str, object]] = {}
+        self.snapshots: dict[str, dict[str, bytes]] = {}
+        self.trees: dict[str, dict[str, object]] = {}
+        self.materialize_witness = True
+        self.registration_sha = "5" * 40
+        self.staging_sha = "538ebc673b13fd8d376a704ab3bb2b8fc325d86c"
+        self.base_sha = "d451305c4c606460665a30ffb523db59edd58e5d"
+        self.authorization_sha = "f" * 40
+        self.witness_sha = "6" * 40
+        self.registration_raw = registration
+        self.owner_authorization_raw = owner_authorization
+        self.add_commit(self.base_sha, [], {}, date="2026-10-18T04:00:00Z", signed=False)
+        self.add_commit(
+            self.staging_sha, [self.base_sha], {r3.SUCCESSOR_REGISTRATION_PATH: registration},
+            date="2026-10-18T05:50:00Z", signed=False,
+        )
+        self.add_commit(
+            self.registration_sha, [self.base_sha, self.staging_sha],
+            {r3.SUCCESSOR_REGISTRATION_PATH: registration},
+            date="2026-10-18T05:55:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+            committer_login="web-flow", signed=True,
+        )
+        self.add_commit(
+            self.authorization_sha, [self.registration_sha], {
+                r3.SUCCESSOR_REGISTRATION_PATH: registration,
+                r3.OWNER_AUTHORIZATION_PATH: owner_authorization,
+            }, date="2026-10-18T06:00:00Z", signed=True,
+        )
+
+    def _tree(self, files: dict[str, bytes]) -> str:
+        root: dict[str, object] = {}
+        for path, raw in files.items():
+            parts = path.split("/")
+            node = root
+            for part in parts[:-1]:
+                node = node.setdefault(part, {})
+            node[parts[-1]] = raw
+
+        def build(node: dict[str, object]) -> str:
+            entries = []
+            api_entries = []
+            for name, value in sorted(node.items()):
+                if isinstance(value, dict):
+                    sha = build(value)
+                    item = {"path": name, "mode": "040000", "type": "tree", "sha": sha}
+                else:
+                    sha = r3._git_blob_sha(value)
+                    item = {"path": name, "mode": "100644", "type": "blob", "sha": sha}
+                api_entries.append(item)
+                entries.append((name, item["mode"], item["type"], sha))
+            raw_tree = json.dumps(entries, separators=(",", ":")).encode("utf-8")
+            sha = hashlib.sha1(b"tree " + str(len(raw_tree)).encode("ascii") + b"\0" + raw_tree).hexdigest()
+            self.trees[sha] = {"truncated": False, "tree": api_entries}
+            return sha
+
+        return build(root)
+
+    def add_commit(
+        self,
+        sha: str,
+        parents: list[str],
+        files: dict[str, bytes],
+        *,
+        date: str,
+        signed: bool,
+        committer_id: int = 49422864,
+        committer_login: str = "Arvin-liu",
+    ) -> None:
+        tree_sha = self._tree(files)
+        self.snapshots[sha] = dict(files)
+        verification = {
+            "verified": signed,
+            "reason": "valid" if signed else "unsigned",
+            "signature": "fixture-signature" if signed else None,
+            "payload": "fixture-payload" if signed else None,
+        }
+        self.commits[sha] = {
+            "sha": sha,
+            "author": {"id": self.actor_id, "login": "Arvin-liu"},
+            "committer": {"id": committer_id, "login": committer_login},
+            "commit": {"tree": {"sha": tree_sha}, "committer": {"date": date}, "verification": verification},
+            "parents": [{"sha": parent} for parent in parents],
+        }
+
+    def _materialize_witness(self) -> None:
+        if self.witness_sha in self.commits:
+            return
+        receipt = _activation_receipt()
+        witness = json.dumps(receipt, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        files = dict(self.snapshots[self.authorization_sha])
+        files[r3.TRANSITION_WITNESS_PATH] = witness
+        staging_sha = "9" * 40
+        self.add_commit(
+            staging_sha, [self.authorization_sha], files,
+            date="2026-10-18T06:35:00Z", signed=False,
+        )
+        self.add_commit(
+            self.witness_sha, [self.authorization_sha, staging_sha], files,
+            date="2026-10-18T06:40:00Z", committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID,
+            committer_login="web-flow", signed=True,
+        )
+
+    def is_ancestor(self, ancestor: str, descendant: str) -> bool:
+        pending = [descendant]
+        visited: set[str] = set()
+        while pending:
+            current = pending.pop()
+            if current == ancestor:
+                return True
+            if current in visited:
+                continue
+            visited.add(current)
+            pending.extend(parent["sha"] for parent in self.commits.get(current, {}).get("parents", []))
+        return False
+
+    def __call__(self, endpoint: str):
+        self.calls.append(endpoint)
+        prefix = "repos/Arvin-liu/1111/"
+        if not endpoint.startswith(prefix):
+            raise KeyError(endpoint)
+        tail = endpoint[len(prefix):]
+        if tail == "branches/main":
+            return {"commit": {"sha": self.main_sha}}
+        if tail.startswith("commits/"):
+            sha = tail[len("commits/"):]
+            if sha == self.witness_sha:
+                self._materialize_witness()
+            if sha in self.commits:
+                return self.commits[sha]
+        if tail.startswith("git/trees/"):
+            tree_sha = tail[len("git/trees/"):]
+            if tree_sha in self.trees:
+                return self.trees[tree_sha]
+        if tail.startswith("contents/") and "?ref=" in tail:
+            path_ref, ref = tail[len("contents/"):].split("?ref=", 1)
+            path = path_ref
+            if ref == self.witness_sha:
+                self._materialize_witness()
+            if ref in self.snapshots and path in self.snapshots[ref]:
+                raw = self.snapshots[ref][path]
+                return {
+                    "path": path, "type": "file", "encoding": "base64",
+                    "sha": r3._git_blob_sha(raw), "content": base64.b64encode(raw).decode("ascii"),
+                }
+        if tail.startswith("compare/"):
+            left, right = tail[len("compare/"):].split("...", 1)
+            left = self.main_sha if left == "main" else left
+            right = self.main_sha if right == "main" else right
+            if right == self.witness_sha:
+                self._materialize_witness()
+            if left == right:
+                return {"status": "identical"}
+            if self.is_ancestor(left, right):
+                return {"status": "ahead"}
+            if self.is_ancestor(right, left):
+                return {"status": "behind"}
+            return {"status": "diverged"}
+        raise KeyError(endpoint)
+
+
 def _github_api(
     statement: dict[str, object] | None = None, *, actor_id: int = 49422864,
     commit_sha: str = "f" * 40, registration_statement: dict[str, object] | None = None,
@@ -116,6 +283,7 @@ def _github_api(
     registration = registration_statement or _registration_statement()
     registration_content = json.dumps(registration, sort_keys=True, separators=(",", ":")).encode("utf-8")
     registration_sha = "5" * 40
+    private = _PrivateGitFixture(registration_content, content, actor_id)
     values = {
         "user": {"login": "Arvin-liu", "id": actor_id},
         "repos/Arvin-liu/when-systems-catch-fire": {
@@ -123,47 +291,11 @@ def _github_api(
             "allow_squash_merge": False, "allow_rebase_merge": False,
         },
         "repos/Arvin-liu/1111": {"owner": {"id": 49422864}, "private": True, "default_branch": "main"},
-        f"repos/Arvin-liu/1111/commits/{commit_sha}": {
-            "sha": commit_sha, "author": {"id": actor_id}, "committer": {"id": actor_id},
-            "commit": {"committer": {"date": "2026-10-18T06:00:00Z"}, "verification": {
-                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
-            }},
-        },
-        f"repos/Arvin-liu/1111/commits?path={quote(r3.OWNER_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1": [{"sha": commit_sha}],
-        f"repos/Arvin-liu/1111/compare/{commit_sha}...main": {"status": "identical"},
-        f"repos/Arvin-liu/1111/commits/{registration_sha}": {
-            "sha": registration_sha, "author": {"id": actor_id}, "committer": {"id": actor_id},
-            "commit": {"committer": {"date": "2026-10-18T06:00:00Z"}, "verification": {
-                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
-            }},
-        },
-        f"repos/Arvin-liu/1111/commits?path={quote(r3.SUCCESSOR_REGISTRATION_PATH, safe='')}&sha=main&per_page=1": [{"sha": registration_sha}],
-        f"repos/Arvin-liu/1111/compare/{registration_sha}...main": {"status": "ahead"},
-        f"repos/Arvin-liu/1111/contents/{r3.SUCCESSOR_REGISTRATION_PATH}?ref={registration_sha}": {
-            "path": r3.SUCCESSOR_REGISTRATION_PATH, "type": "file", "encoding": "base64",
-            "content": base64.b64encode(registration_content).decode("ascii"),
-        },
         f"repos/Arvin-liu/when-systems-catch-fire/contents/{r3.relative(r3.CURRENT_TASK_PATH)}?ref={'a' * 40}": {
             "path": r3.relative(r3.CURRENT_TASK_PATH), "type": "file", "encoding": "base64",
             "content": base64.b64encode(json.dumps({"current_task": {"task_id": "SYNTHETIC_PRIOR"}}).encode("utf-8")).decode("ascii"),
         },
-        f"repos/Arvin-liu/1111/contents/{r3.OWNER_AUTHORIZATION_PATH}?ref={commit_sha}": {
-            "path": r3.OWNER_AUTHORIZATION_PATH, "type": "file", "encoding": "base64",
-            "content": base64.b64encode(content).decode("ascii"),
-        },
-        f"repos/Arvin-liu/1111/commits?path={quote(r3.TRANSITION_WITNESS_PATH, safe='')}&sha=main&per_page=1": [{"sha": "6" * 40}],
-        f"repos/Arvin-liu/1111/commits/{'6' * 40}": {
-            "sha": "6" * 40, "author": {"id": actor_id}, "committer": {"id": actor_id},
-            "commit": {"committer": {"date": "2026-10-18T06:40:00Z"}, "verification": {
-                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
-            }},
-        },
-        f"repos/Arvin-liu/1111/compare/{commit_sha}...{'6' * 40}": {"status": "ahead"},
-        f"repos/Arvin-liu/1111/compare/{'6' * 40}...main": {"status": "ahead"},
-        f"repos/Arvin-liu/1111/contents/{r3.OWNER_AUTHORIZATION_PATH}?ref={'6' * 40}": {
-            "path": r3.OWNER_AUTHORIZATION_PATH, "type": "file", "encoding": "base64",
-            "content": base64.b64encode(content).decode("ascii"),
-        },
+        f"repos/Arvin-liu/1111/commits?path={quote(r3.SUCCESSOR_REGISTRATION_PATH, safe='')}&sha=main&per_page=1": [{"sha": private.staging_sha}],
         "repos/Arvin-liu/when-systems-catch-fire/branches/main": {"protected": True, "commit": {"sha": "e" * 40}},
         f"repos/Arvin-liu/when-systems-catch-fire/commits/{'e' * 40}": {
             "sha": "e" * 40, "commit": {"tree": {"sha": "c" * 40}},
@@ -196,14 +328,9 @@ def _github_api(
         "repos/Arvin-liu/when-systems-catch-fire/rulesets?includes_parents=true&per_page=100": [],
     }
     def read(endpoint: str):
+        if endpoint.startswith("repos/Arvin-liu/1111/") and endpoint not in values:
+            return private(endpoint)
         if endpoint not in values:
-            witness_prefix = f"repos/Arvin-liu/1111/contents/{r3.TRANSITION_WITNESS_PATH}?ref="
-            if endpoint == witness_prefix + "6" * 40:
-                receipt_content = json.dumps(_activation_receipt(), sort_keys=True, separators=(",", ":")).encode("utf-8")
-                return {
-                    "path": r3.TRANSITION_WITNESS_PATH, "type": "file", "encoding": "base64",
-                    "content": base64.b64encode(receipt_content).decode("ascii"),
-                }
             prefix = "repos/Arvin-liu/when-systems-catch-fire/actions/runs?head_sha="
             if endpoint.startswith(prefix) and endpoint.endswith("&per_page=100"):
                 final_sha = endpoint[len(prefix):-len("&per_page=100")]
@@ -216,6 +343,7 @@ def _github_api(
                 }
             raise KeyError(endpoint)
         return values[endpoint]
+    read.control = private
     return read
 
 
@@ -236,12 +364,16 @@ def _context() -> dict[str, object]:
     workflows = r3.load_json(r3.PROTOCOL_PATH)["prepublication"]["required_workflow_names"]
     post_workflows = r3.load_json(r3.PROTOCOL_PATH)["postpublication"]["required_workflow_names"]
     owner = _owner_evidence()
+    api = _github_api()
+    registration = _registration_statement()
     return {
         "task_id": "SYNTHETIC_FIXTURE_ONLY", "formal_ordinal": 1,
         "task_branch": "synthetic/fixture-only", "current_task_source_sha256": "3" * 64,
         "task_identity_model_sha256": "6" * 64, "execution_contract_sha256": "4" * 64,
         "successor_registration_commit_sha": "5" * 40,
         "successor_registration_file_sha256": owner["successor_registration_file_sha256"],
+        "successor_registration_nonce": registration["registration_nonce"],
+        "successor_registration_parent_shas": [api.control.base_sha, api.control.staging_sha],
         "pr_number": 301, "repository_owner_id": 49422864,
         "candidate_head_sha": "b" * 40, "candidate_tree_sha": "c" * 40,
         "base_main_sha": "a" * 40, "merge_preview_sha": "d" * 40,
@@ -275,7 +407,8 @@ def _record() -> dict[str, object]:
         "task_identity": {key: context[key] for key in (
             "task_id", "formal_ordinal", "task_branch", "current_task_source_sha256",
             "task_identity_model_sha256", "execution_contract_sha256",
-            "successor_registration_commit_sha", "successor_registration_file_sha256"
+            "successor_registration_commit_sha", "successor_registration_file_sha256",
+            "successor_registration_nonce", "successor_registration_parent_shas"
         )},
         "pull_request": {
             "number": 301, "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/301",
@@ -381,7 +514,7 @@ def _live_observations() -> dict[str, object]:
         "authorization_signature_verified": True, "authorization_signature_reason": "valid",
         "witness_repository": "Arvin-liu/1111", "witness_branch": "main",
         "witness_path": r3.TRANSITION_WITNESS_PATH, "witness_readback_commit_sha": "6" * 40,
-        "witness_commit_author_id": 49422864, "witness_commit_committer_id": 49422864,
+        "witness_commit_author_id": 49422864, "witness_commit_committer_id": 19864447,
         "witness_signature_verified": True, "witness_signature_reason": "valid",
         "witness_committed_at": "2026-10-18T06:40:00Z",
         "witness_file_sha256": hashlib.sha256(witness_raw).hexdigest(),
@@ -451,6 +584,20 @@ def _recovery_fixture():
     }
     witness_raw = canonical_bytes(receipt)
     witness_file_sha = hashlib.sha256(witness_raw).hexdigest()
+    control = main_api.control
+    control._materialize_witness()
+    parent_sha = control.main_sha
+    auth_files = dict(control.snapshots[parent_sha])
+    auth_files[r3.R2_RESTORE_AUTHORIZATION_PATH] = auth_raw
+    control.add_commit(
+        auth_sha, [parent_sha], auth_files, date="2026-10-19T05:30:00Z", signed=True,
+    )
+    witness_files = dict(auth_files)
+    witness_files[r3.R2_RESTORATION_WITNESS_PATH] = witness_raw
+    control.add_commit(
+        witness_sha, [auth_sha], witness_files, date="2026-10-19T07:10:00Z", signed=True,
+    )
+    control.main_sha = witness_sha
     recovery_observations = {
         "repository_owner_id": 49422864, "current_main_sha": final_sha,
         "recovery_pr_merged": True, "recovery_pr_merge_commit_sha": final_sha,
@@ -465,14 +612,6 @@ def _recovery_fixture():
         "witness_signature_reason": "valid", "branch_protection_rules_sha256": protection["rules_sha256"],
         "required_status_check_contexts": contexts, "postpublication_checks": receipt["postpublication_checks"],
     }
-
-    def signed_commit(sha: str, date: str) -> dict[str, object]:
-        return {
-            "sha": sha, "author": {"id": 49422864}, "committer": {"id": 49422864},
-            "commit": {"committer": {"date": date}, "verification": {
-                "verified": True, "reason": "valid", "signature": "fixture-signature", "payload": "fixture-payload",
-            }},
-        }
 
     def api(endpoint: str):
         if endpoint == "repos/Arvin-liu/when-systems-catch-fire/branches/main":
@@ -493,26 +632,6 @@ def _recovery_fixture():
             return {"sha": preview_sha, "commit": {"tree": {"sha": final_tree}}, "parents": [{"sha": base_sha}, {"sha": recovery_head}]}
         if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/compare/{'e' * 40}...{final_sha}":
             return {"status": "ahead"}
-        if endpoint == f"repos/Arvin-liu/1111/commits?path={quote(r3.R2_RESTORE_AUTHORIZATION_PATH, safe='')}&sha=main&per_page=1":
-            return [{"sha": auth_sha}]
-        if endpoint == f"repos/Arvin-liu/1111/commits?path={quote(r3.R2_RESTORATION_WITNESS_PATH, safe='')}&sha=main&per_page=1":
-            return [{"sha": witness_sha}]
-        if endpoint == f"repos/Arvin-liu/1111/commits/{auth_sha}":
-            return signed_commit(auth_sha, "2026-10-19T05:30:00Z")
-        if endpoint == f"repos/Arvin-liu/1111/commits/{witness_sha}":
-            return signed_commit(witness_sha, "2026-10-19T07:10:00Z")
-        if endpoint == f"repos/Arvin-liu/1111/compare/{auth_sha}...main":
-            return {"status": "ahead"}
-        if endpoint == f"repos/Arvin-liu/1111/compare/{auth_sha}...{witness_sha}":
-            return {"status": "ahead"}
-        if endpoint == f"repos/Arvin-liu/1111/compare/{witness_sha}...main":
-            return {"status": "ahead"}
-        if endpoint == f"repos/Arvin-liu/1111/contents/{r3.R2_RESTORE_AUTHORIZATION_PATH}?ref={auth_sha}":
-            return file_object(r3.R2_RESTORE_AUTHORIZATION_PATH, auth_raw)
-        if endpoint == f"repos/Arvin-liu/1111/contents/{r3.R2_RESTORE_AUTHORIZATION_PATH}?ref={witness_sha}":
-            return file_object(r3.R2_RESTORE_AUTHORIZATION_PATH, auth_raw)
-        if endpoint == f"repos/Arvin-liu/1111/contents/{r3.R2_RESTORATION_WITNESS_PATH}?ref={witness_sha}":
-            return file_object(r3.R2_RESTORATION_WITNESS_PATH, witness_raw)
         if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/contents/{r3.relative(r3.R2_PROTOCOL_PATH)}?ref={final_sha}":
             return file_object(r3.relative(r3.R2_PROTOCOL_PATH), r3.R2_PROTOCOL_PATH.read_bytes())
         if endpoint == f"repos/Arvin-liu/when-systems-catch-fire/contents/{r3.relative(r3.RECOVERY_STATE_PATH)}?ref={final_sha}":
@@ -614,17 +733,29 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertFalse(valid)
         self.assertIn("did not verify", reason)
 
+        for field in ("signature", "payload"):
+            empty_signed_field = json.loads(json.dumps(web_flow_commit))
+            empty_signed_field["commit"]["verification"][field] = "  "
+            valid, reason = r3._verified_owner_commit(empty_signed_field, 49422864)
+            self.assertFalse(valid)
+            self.assertIn("no signed commit" if field == "payload" else "no signature", reason)
+
     def test_successor_registration_binds_unique_task_ordinal_branches_and_inventory(self) -> None:
         registration = _registration_statement()
         content = json.dumps(registration, sort_keys=True, separators=(",", ":")).encode("utf-8")
         api = _github_api()
         evidence, errors = r3.read_authenticated_successor_registration(
             "5" * 40, expected_file_sha256=hashlib.sha256(content).hexdigest(),
-            expected_formal_base_main_sha="a" * 40, github_api=api,
+            expected_formal_base_main_sha="a" * 40, expected_nonce="n" * 32,
+            expected_parent_shas=[api.control.base_sha, api.control.staging_sha], github_api=api,
         )
         self.assertEqual(errors, [])
         self.assertEqual(evidence["statement"]["formal_ordinal"], 1)
         self.assertEqual(evidence["signature_verified"], True)
+        self.assertEqual(evidence["parents"], [api.control.base_sha, api.control.staging_sha])
+        self.assertEqual(evidence["path_update_commit_sha"], "5" * 40)
+        self.assertEqual(api.control.commits["5" * 40]["committer"], {"id": 19864447, "login": "web-flow"})
+        self.assertFalse(any("commits?path=" in endpoint for endpoint in api.control.calls))
 
         wrong_predecessor = _registration_statement()
         wrong_predecessor["prior_task_id"] = "IGNITION-20260829-147"
@@ -645,33 +776,104 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         inventory["inventory_sha256"] = hashlib.sha256(
             json.dumps(inventory_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
         ).hexdigest()
-        duplicate_raw = json.dumps(duplicate, sort_keys=True, separators=(",", ":")).encode("utf-8")
-        endpoint = f"repos/Arvin-liu/1111/contents/{r3.SUCCESSOR_REGISTRATION_PATH}?ref={'5' * 40}"
-        def colliding_registration(request: str):
-            value = api(request)
-            if request == endpoint:
-                value = dict(value)
-                value["content"] = base64.b64encode(duplicate_raw).decode("ascii")
-            return value
+        duplicate_api = _github_api(registration_statement=duplicate)
         evidence, errors = r3.read_authenticated_successor_registration(
-            "5" * 40, expected_formal_base_main_sha="a" * 40, github_api=colliding_registration,
+            "5" * 40, expected_formal_base_main_sha="a" * 40, github_api=duplicate_api,
         )
         self.assertIsNone(evidence)
         self.assertTrue(any("colliding formal task IDs, ordinals" in error for error in errors))
 
         task148 = dict(registration, task_id="IGNITION-20260829-148", formal_ordinal=148)
-        task148_raw = json.dumps(task148, sort_keys=True, separators=(",", ":")).encode("utf-8")
-        def reused_task148(request: str):
-            value = api(request)
-            if request == endpoint:
-                value = dict(value)
-                value["content"] = base64.b64encode(task148_raw).decode("ascii")
-            return value
         evidence, errors = r3.read_authenticated_successor_registration(
-            "5" * 40, expected_formal_base_main_sha="a" * 40, github_api=reused_task148
+            "5" * 40, expected_formal_base_main_sha="a" * 40,
+            github_api=_github_api(registration_statement=task148),
         )
         self.assertIsNone(evidence)
         self.assertTrue(any("may not reuse Task148" in error for error in errors))
+
+    def test_signed_registration_rejects_staging_nonce_parent_and_later_replay(self) -> None:
+        content = json.dumps(_registration_statement(), sort_keys=True, separators=(",", ":")).encode("utf-8")
+        digest = hashlib.sha256(content).hexdigest()
+        api = _github_api()
+        _, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=digest, expected_formal_base_main_sha="a" * 40,
+            expected_nonce="wrong-registration-nonce-0123456789", github_api=api,
+        )
+        self.assertTrue(any("nonce differs" in error for error in errors), errors)
+
+        _, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=digest, expected_formal_base_main_sha="a" * 40,
+            expected_parent_shas=[api.control.staging_sha, api.control.base_sha], github_api=api,
+        )
+        self.assertTrue(any("parent order differs" in error for error in errors), errors)
+
+        api.control.main_sha = api.control.staging_sha
+        _, errors = r3.read_authenticated_successor_registration(
+            api.control.staging_sha, expected_formal_base_main_sha="a" * 40, github_api=api,
+        )
+        self.assertTrue(any("signature failed closed" in error for error in errors), errors)
+
+        api = _github_api()
+        api.control._materialize_witness()
+        prior_files = dict(api.control.snapshots[api.control.main_sha])
+        changed_registration = dict(_registration_statement(), registered_at="2026-10-18T05:01:00Z")
+        changed_raw = json.dumps(changed_registration, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        prior_files[r3.SUCCESSOR_REGISTRATION_PATH] = changed_raw
+        later_sha = "8" * 40
+        api.control.add_commit(
+            later_sha, [api.control.main_sha], prior_files, date="2026-10-18T06:50:00Z", signed=True,
+        )
+        revert_sha = "a" * 40
+        reverted_files = dict(api.control.snapshots[api.control.main_sha])
+        api.control.add_commit(
+            revert_sha, [later_sha], reverted_files, date="2026-10-18T06:55:00Z", signed=True,
+        )
+        api.control.main_sha = revert_sha
+        _, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=digest, expected_formal_base_main_sha="a" * 40,
+            github_api=api,
+        )
+        self.assertTrue(any("not the latest first-parent content update" in error for error in errors), errors)
+        _, errors = r3._read_authenticated_control_path_commit(
+            "Arvin-liu/1111", r3.SUCCESSOR_REGISTRATION_PATH, revert_sha, 49422864,
+            expected_file_sha256=digest, api=api,
+        )
+        self.assertTrue(any("already existed in the signed commit's first parent" in error for error in errors), errors)
+
+    def test_registration_readback_rejects_wrong_author_truncated_tree_and_blob_mismatch(self) -> None:
+        raw = json.dumps(_registration_statement(), sort_keys=True, separators=(",", ":")).encode("utf-8")
+        digest = hashlib.sha256(raw).hexdigest()
+
+        api = _github_api()
+        api.control.commits["5" * 40]["author"]["id"] = 7
+        _, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=digest, expected_formal_base_main_sha="a" * 40,
+            github_api=api,
+        )
+        self.assertTrue(any("commit author must be the Owner" in error for error in errors), errors)
+
+        api = _github_api()
+        api.control._materialize_witness()
+        main_tree_sha = api.control.commits[api.control.main_sha]["commit"]["tree"]["sha"]
+        api.control.trees[main_tree_sha]["truncated"] = True
+        _, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=digest, expected_formal_base_main_sha="a" * 40,
+            github_api=api,
+        )
+        self.assertTrue(any("truncated" in error for error in errors), errors)
+
+        api = _github_api()
+        def bad_blob(request: str):
+            value = api(request)
+            if request.endswith(f"{r3.SUCCESSOR_REGISTRATION_PATH}?ref={'5' * 40}"):
+                value = dict(value)
+                value["sha"] = "0" * 40
+            return value
+        _, errors = r3.read_authenticated_successor_registration(
+            "5" * 40, expected_file_sha256=digest, expected_formal_base_main_sha="a" * 40,
+            github_api=bad_blob,
+        )
+        self.assertTrue(any("blob SHA does not bind exact control-file bytes" in error for error in errors), errors)
 
     def test_r2_recovery_requires_exact_signed_pr_and_fresh_main_witness(self) -> None:
         active_receipt, active_observations = _activation_receipt(), _live_observations()
@@ -729,9 +931,9 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         recovery_state_digest = hashlib.sha256(r3.RECOVERY_STATE_PATH.read_bytes()).hexdigest()
 
         def missing_witness(endpoint: str):
-            if endpoint == f"repos/Arvin-liu/1111/commits?path={quote(r3.TRANSITION_WITNESS_PATH, safe='')}&sha=main&per_page=1":
-                return []
             return api(endpoint)
+
+        api.control.main_sha = api.control.authorization_sha
 
         current, errors = r3.resolve_effective_protocol_with_recovery(
             active_receipt, observations=active_observations, repository_owner_id=49422864,
@@ -739,7 +941,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             protocol_blob_sha=r3.git_blob_sha(), github_api=missing_witness,
         )
         self.assertEqual(current, "R3")
-        self.assertTrue(any("fixed R3 witness file has no commit" in error for error in errors), errors)
+        self.assertTrue(any("no first-parent update" in error for error in errors), errors)
 
     def test_contract_preserves_r2_baseline_and_identifies_all_transition_exceptions(self) -> None:
         self.assertEqual(r3.validate_contract(), [])
@@ -943,7 +1145,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             receipt, observations=observations, repository_owner_id=49422864, github_api=stale_read
         )
         self.assertEqual(active, "R2")
-        self.assertTrue(any("fixed 1111 authorization commit" in error for error in errors))
+        self.assertTrue(any("GitHub commit readback is invalid" in error for error in errors), errors)
 
         receipt, observations = _activation_receipt(), _live_observations()
         active, errors = r3.resolve_effective_protocol(
@@ -955,13 +1157,20 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
     def test_owner_authorization_accepts_only_verified_owner_authored_web_flow_commit(self) -> None:
         base_api = _github_api()
         authorization_sha = "f" * 40
+        files = dict(base_api.control.snapshots[authorization_sha])
+        staging_sha = "8" * 40
+        base_api.control.add_commit(
+            staging_sha, [base_api.control.registration_sha], files,
+            date="2026-10-18T05:59:00Z", signed=False,
+        )
+        base_api.control.add_commit(
+            authorization_sha, [base_api.control.registration_sha, staging_sha], files,
+            date="2026-10-18T06:00:00Z", signed=True,
+            committer_id=19864447, committer_login="web-flow",
+        )
 
         def verified_web_flow(endpoint: str):
-            value = base_api(endpoint)
-            if endpoint == f"repos/Arvin-liu/1111/commits/{authorization_sha}":
-                value = dict(value)
-                value["committer"] = {"id": 19864447, "login": "web-flow"}
-            return value
+            return base_api(endpoint)
 
         evidence, errors = r3.read_authenticated_owner_authorization(
             authorization_sha, github_api=verified_web_flow,
@@ -1064,7 +1273,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             receipt, observations=observations, repository_owner_id=49422864, github_api=altered_witness
         )
         self.assertEqual(active, "R2")
-        self.assertTrue(any("differs from the exact 1111 main-branch witness file" in error for error in errors))
+        self.assertTrue(any("GitHub blob SHA does not bind exact control-file bytes" in error for error in errors), errors)
 
     def test_unmerged_candidate_and_missing_receipt_keep_r2_current(self) -> None:
         policy = r3.load_json(r3.PROTOCOL_PATH)
@@ -1117,6 +1326,16 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
             record = _record()
             record["pull_request_workflow_checks"][0][field] = value
             self.assertTrue(self._validate(record, "prepublication", _context()), field)
+
+    def test_transaction_record_binds_registration_nonce_and_ordered_parents(self) -> None:
+        for field, value in (
+            ("successor_registration_nonce", "x" * 32),
+            ("successor_registration_parent_shas", ["c" * 40, "d" * 40]),
+        ):
+            record = _record()
+            record["task_identity"][field] = value
+            errors = self._validate(record, "prepublication", _context())
+            self.assertTrue(any(f"task identity field {field}" in error for error in errors), errors)
 
     def test_verified_review_rule_requires_independent_exact_head_reviewer(self) -> None:
         api = _github_api()
