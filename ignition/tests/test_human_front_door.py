@@ -60,6 +60,26 @@ class HumanFrontDoorTests(unittest.TestCase):
         start = self.readme.index("### 项目现状") + len("### 项目现状")
         end = self.readme.index("### 价值宪章")
         self.assertEqual(self.readme[start:end].strip(), PROJECT_IDENTITY_TEXT)
+        validate_readme_structure(self.readme)
+
+    def test_project_identity_rejects_old_truncated_and_altered_text(self):
+        old_text = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
+        wrong_char = PROJECT_IDENTITY_TEXT.replace("好奇心为起点", "好奇念为起点", 1)
+        truncated = PROJECT_IDENTITY_TEXT[:-1]
+        self.assertEqual(len(wrong_char), len(PROJECT_IDENTITY_TEXT))
+        for label, replacement in (
+            ("old prose", old_text),
+            ("one-character rewrite", wrong_char),
+            ("truncated prose", truncated),
+        ):
+            with self.subTest(variant=label):
+                mutated = self.readme.replace(PROJECT_IDENTITY_TEXT, replacement, 1)
+                self.assertNotEqual(mutated, self.readme)
+                with self.assertRaisesRegex(
+                    AssertionError,
+                    "README 项目现状 must match the Owner-provided identity text exactly",
+                ):
+                    validate_readme_structure(mutated)
 
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
@@ -111,7 +131,8 @@ class HumanFrontDoorTests(unittest.TestCase):
                 elif case["mutation"] == "insert-machine-count":
                     mutated = mutated.replace("### 价值宪章", "architecture_counts=99\n\n### 价值宪章", 1)
                 elif case["mutation"] == "drift-project-identity":
-                    mutated = mutated.replace("点火是一个面向长期研究", "点火是一个面向短期研究", 1)
+                    incorrect = PROJECT_IDENTITY_TEXT.replace("好奇心为起点", "好奇念为起点", 1)
+                    mutated = mutated.replace(PROJECT_IDENTITY_TEXT, incorrect, 1)
                 elif case["mutation"] == "insert-raw-svg-link":
                     entry = f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL}) · [阅读模式]({ARCHITECTURE_PAGES_URL}) · {ARCHITECTURE_INTERACTION_HINT}。\n\n"
                     mutated = mutated.replace(entry, "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n" + entry, 1)
