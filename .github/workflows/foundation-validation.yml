@@ -316,11 +316,59 @@ jobs:
 
       - name: Summarize full regression step outcomes
         if: ${{ always() }}
+        working-directory: .
         env:
-          STEP_OUTCOMES: ${{ toJSON(steps) }}
+          STEP_OUTCOMES: |
+            checkout_validation_commit=${{ steps.checkout_validation_commit.outcome }}|${{ steps.checkout_validation_commit.conclusion }}
+            setup_python=${{ steps.setup_python.outcome }}|${{ steps.setup_python.conclusion }}
+            install_foundation_dependencies=${{ steps.install_foundation_dependencies.outcome }}|${{ steps.install_foundation_dependencies.conclusion }}
+            bind_validation_sha=${{ steps.bind_validation_sha.outcome }}|${{ steps.bind_validation_sha.conclusion }}
+            setup_lean=${{ steps.setup_lean.outcome }}|${{ steps.setup_lean.conclusion }}
+            lean_foundation=${{ steps.lean_foundation.outcome }}|${{ steps.lean_foundation.conclusion }}
+            adjudicate_core_claims=${{ steps.adjudicate_core_claims.outcome }}|${{ steps.adjudicate_core_claims.conclusion }}
+            migrate_legacy_claims=${{ steps.migrate_legacy_claims.outcome }}|${{ steps.migrate_legacy_claims.conclusion }}
+            validate_foundation=${{ steps.validate_foundation.outcome }}|${{ steps.validate_foundation.conclusion }}
+            build_function_asset_census=${{ steps.build_function_asset_census.outcome }}|${{ steps.build_function_asset_census.conclusion }}
+            adjudicate_function_assets=${{ steps.adjudicate_function_assets.outcome }}|${{ steps.adjudicate_function_assets.conclusion }}
+            validate_claim_governance=${{ steps.validate_claim_governance.outcome }}|${{ steps.validate_claim_governance.conclusion }}
+            validate_function_asset_closure=${{ steps.validate_function_asset_closure.outcome }}|${{ steps.validate_function_asset_closure.conclusion }}
+            check_function_asset_math=${{ steps.check_function_asset_math.outcome }}|${{ steps.check_function_asset_math.conclusion }}
+            adjudicate_nonfunction_claims=${{ steps.adjudicate_nonfunction_claims.outcome }}|${{ steps.adjudicate_nonfunction_claims.conclusion }}
+            validate_nonfunction_claim_closure=${{ steps.validate_nonfunction_claim_closure.outcome }}|${{ steps.validate_nonfunction_claim_closure.conclusion }}
+            validate_human_results_and_products=${{ steps.validate_human_results_and_products.outcome }}|${{ steps.validate_human_results_and_products.conclusion }}
+            check_knowledge_experience_determinism=${{ steps.check_knowledge_experience_determinism.outcome }}|${{ steps.check_knowledge_experience_determinism.conclusion }}
+            verify_core_claims=${{ steps.verify_core_claims.outcome }}|${{ steps.verify_core_claims.conclusion }}
+            verify_079=${{ steps.verify_079.outcome }}|${{ steps.verify_079.conclusion }}
+            validate_080=${{ steps.validate_080.outcome }}|${{ steps.validate_080.conclusion }}
+            validate_iteration_sync=${{ steps.validate_iteration_sync.outcome }}|${{ steps.validate_iteration_sync.conclusion }}
+            validate_typed_change_propagation=${{ steps.validate_typed_change_propagation.outcome }}|${{ steps.validate_typed_change_propagation.conclusion }}
+            validate_phase_e_candidate=${{ steps.validate_phase_e_candidate.outcome }}|${{ steps.validate_phase_e_candidate.conclusion }}
+            validate_registry_system_map=${{ steps.validate_registry_system_map.outcome }}|${{ steps.validate_registry_system_map.conclusion }}
+            validate_homepage_projection=${{ steps.validate_homepage_projection.outcome }}|${{ steps.validate_homepage_projection.conclusion }}
+            validate_stage_snapshots_and_projection=${{ steps.validate_stage_snapshots_and_projection.outcome }}|${{ steps.validate_stage_snapshots_and_projection.conclusion }}
+            run_stage_snapshot_actor_cases=${{ steps.run_stage_snapshot_actor_cases.outcome }}|${{ steps.run_stage_snapshot_actor_cases.conclusion }}
+            validate_human_front_door=${{ steps.validate_human_front_door.outcome }}|${{ steps.validate_human_front_door.conclusion }}
+            validate_language_thought_plane=${{ steps.validate_language_thought_plane.outcome }}|${{ steps.validate_language_thought_plane.conclusion }}
+            validate_epistemic_relationships=${{ steps.validate_epistemic_relationships.outcome }}|${{ steps.validate_epistemic_relationships.conclusion }}
+            validate_state_changelog=${{ steps.validate_state_changelog.outcome }}|${{ steps.validate_state_changelog.conclusion }}
+            test_foundation=${{ steps.test_foundation.outcome }}|${{ steps.test_foundation.conclusion }}
+            test_claim_governance=${{ steps.test_claim_governance.outcome }}|${{ steps.test_claim_governance.conclusion }}
+            test_function_asset_closure=${{ steps.test_function_asset_closure.outcome }}|${{ steps.test_function_asset_closure.conclusion }}
+            test_nonfunction_claim_closure=${{ steps.test_nonfunction_claim_closure.outcome }}|${{ steps.test_nonfunction_claim_closure.conclusion }}
+            test_iteration_sync=${{ steps.test_iteration_sync.outcome }}|${{ steps.test_iteration_sync.conclusion }}
+            test_human_front_door=${{ steps.test_human_front_door.outcome }}|${{ steps.test_human_front_door.conclusion }}
+            test_change_propagation=${{ steps.test_change_propagation.outcome }}|${{ steps.test_change_propagation.conclusion }}
+            test_visibility_correction_experience=${{ steps.test_visibility_correction_experience.outcome }}|${{ steps.test_visibility_correction_experience.conclusion }}
+            test_stage_snapshot_publication=${{ steps.test_stage_snapshot_publication.outcome }}|${{ steps.test_stage_snapshot_publication.conclusion }}
+            test_era_generated_authority=${{ steps.test_era_generated_authority.outcome }}|${{ steps.test_era_generated_authority.conclusion }}
+            test_phase_e_candidate=${{ steps.test_phase_e_candidate.outcome }}|${{ steps.test_phase_e_candidate.conclusion }}
+            test_routing_history_contract=${{ steps.test_routing_history_contract.outcome }}|${{ steps.test_routing_history_contract.conclusion }}
+            test_production_execution_authority=${{ steps.test_production_execution_authority.outcome }}|${{ steps.test_production_execution_authority.conclusion }}
+            test_generator_reconciliation=${{ steps.test_generator_reconciliation.outcome }}|${{ steps.test_generator_reconciliation.conclusion }}
+            test_propagation_reconciliation=${{ steps.test_propagation_reconciliation.outcome }}|${{ steps.test_propagation_reconciliation.conclusion }}
+            confirm_source_unchanged=${{ steps.confirm_source_unchanged.outcome }}|${{ steps.confirm_source_unchanged.conclusion }}
         run: |
           python3 - <<'PY'
-          import json
           import os
 
           step_ids = [
@@ -342,7 +390,13 @@ jobs:
               'test_production_execution_authority', 'test_generator_reconciliation',
               'test_propagation_reconciliation', 'confirm_source_unchanged',
           ]
-          outcomes = json.loads(os.environ['STEP_OUTCOMES'])
+          outcomes = {}
+          for record in os.environ['STEP_OUTCOMES'].splitlines():
+              step_id, separator, status = record.partition('=')
+              if not separator:
+                  continue
+              outcome, _, conclusion = status.partition('|')
+              outcomes[step_id] = {'outcome': outcome, 'conclusion': conclusion}
           lines = [
               '### Full Foundation regression step outcomes',
               '',
