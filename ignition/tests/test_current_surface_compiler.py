@@ -3,6 +3,7 @@ from __future__ import annotations
 import unittest
 
 from tools import current_surface_compiler as compiler
+from tools.validate_human_front_door import PROJECT_IDENTITY_TEXT
 
 
 class CurrentSurfaceCompilerTests(unittest.TestCase):
@@ -77,7 +78,7 @@ class CurrentSurfaceCompilerTests(unittest.TestCase):
         surface = next(row for row in self.contract["non_generated_surfaces"] if row["surface_id"] == "homepage-identity")
         compiled = compiler.compile_surface(source, surface, self.snapshot)
         self.assertEqual(compiled, source)
-        self.assertIn("点火是一个面向长期研究、判断与创作的认知—行动工作系统", compiled)
+        self.assertIn(PROJECT_IDENTITY_TEXT, compiled)
         self.assertIn("组件导航：核心控制与状态", compiled)
 
 

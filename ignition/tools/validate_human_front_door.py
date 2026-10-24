@@ -50,6 +50,7 @@ VERSION_FACTS = {
 HUMAN_IDENTITY_HEADING = "### 点火是什么"
 HUMAN_VALUES_HEADING = "### 价值方向"
 HUMAN_CURRENT_HEADING = "### 现在做到哪里"
+PROJECT_IDENTITY_TEXT = "点火首先是一种面对未知的精神：不把已有的认识当作世界的终点，不把尚未理解的事物简单排除，也不因为一个解释足够漂亮，就停止追问它是否成立。"
 CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
@@ -225,6 +226,7 @@ def validate_readme_structure(readme: str) -> None:
     identity_text = section_one[h3_matches[0].end() : h3_matches[1].start()]
     values_text = section_one[h3_matches[1].end() : h3_matches[2].start()]
     current_text = section_one[h3_matches[2].end() :]
+    require(PROJECT_IDENTITY_TEXT in identity_text, "README 点火是什么 lacks the canonical project identity sentence")
     for phrase, label in (
         ("面对未知的精神", "open-ended project identity"),
         ("不能因此占有最后的解释权", "bounded explanatory authority"),
