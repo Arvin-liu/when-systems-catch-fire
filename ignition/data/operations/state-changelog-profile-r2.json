@@ -1,0 +1,16 @@
+{
+  "schema_version": "state-changelog-profile-r2",
+  "profile_contract": "R1_PREFIX_PLUS_ONE_APPEND",
+  "parent_profile_sha256": "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c",
+  "parent_entry_count": 56,
+  "entry_count": 57,
+  "extension_entries": [
+    {
+      "ordinal": 57,
+      "date": "2026-10-12",
+      "label": "R1-HOMEPAGE-PROJECT-IDENTITY-SYNC — formal main release candidate",
+      "profile": "current-project-identity-r1",
+      "section_sha256": "0b306c4a257c854be051eb6a878389e471d8a43475e5ba657ce7cdb838298b3f"
+    }
+  ]
+}

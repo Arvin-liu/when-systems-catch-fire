@@ -1,13 +1,21 @@
+import hashlib
 import json
 import re
 import tempfile
 import unittest
 from pathlib import Path
 
-from tools.validate_state_changelog import PROFILE_PATH, ROOT, validate
+from tools.validate_state_changelog import (
+    PROFILE_PATH,
+    PROFILE_R2_PATH,
+    ROOT,
+    _select_profile_version,
+    validate,
+)
 
 
 FIXTURE_PATH = ROOT / "tests" / "fixtures" / "state-changelog-profile-r1.json"
+R2_APPEND_FIXTURE_PATH = ROOT / "tests" / "fixtures" / "state-changelog-r2-append.md"
 
 
 def _replace_in_entry(source: str, ordinal: int, old: str, new: str) -> str:
@@ -18,6 +26,13 @@ def _replace_in_entry(source: str, ordinal: int, old: str, new: str) -> str:
     if old not in section:
         raise AssertionError(f"fixture marker not found in entry {ordinal}: {old}")
     return source[:start] + section.replace(old, new, 1) + source[end:]
+
+
+def _entry_section(source: str, ordinal: int) -> str:
+    headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+    start = headings[ordinal - 1].start()
+    end = headings[ordinal].start() if ordinal < len(headings) else len(source)
+    return source[start:end]
 
 
 class StateChangelogTests(unittest.TestCase):
@@ -105,6 +120,99 @@ class StateChangelogTests(unittest.TestCase):
                 self.fail(f"unhandled fixture case: {case_id}")
             expected = case["expected_status"] == "PASS"
             self.assertEqual(expected, passed, case_id)
+
+    def test_profile_selection_is_deterministic_by_exact_entry_count(self):
+        self.assertEqual("r1", _select_profile_version(56))
+        self.assertEqual("r2", _select_profile_version(57))
+        self.assertIsNone(_select_profile_version(58))
+
+    def test_unsupported_append_count_fails_closed(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        append = R2_APPEND_FIXTURE_PATH.read_text(encoding="utf-8")
+        path = ROOT / ".state-changelog-r2-test.md"
+        try:
+            path.write_text(source + append + append, encoding="utf-8")
+            errors = validate(path)
+        finally:
+            path.unlink(missing_ok=True)
+        self.assertTrue(
+            any("no changelog profile is defined for exactly 58 entries" in error for error in errors),
+            errors,
+        )
+
+    def test_r2_accepts_one_append_without_resealing_the_r1_prefix(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        append = R2_APPEND_FIXTURE_PATH.read_text(encoding="utf-8")
+        self.assertTrue(source.endswith("\n"))
+        self.assertTrue(append.startswith("## 2026-10-12 — R1-HOMEPAGE-PROJECT-IDENTITY-SYNC"))
+        combined = source + append
+        path = ROOT / ".state-changelog-r2-test.md"
+        try:
+            path.write_text(combined, encoding="utf-8")
+            self.assertEqual([], validate(path))
+        finally:
+            path.unlink(missing_ok=True)
+
+    def test_r2_rejects_old_and_new_entry_tampering(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        combined = source + R2_APPEND_FIXTURE_PATH.read_text(encoding="utf-8")
+        for ordinal in (17, 57):
+            with self.subTest(ordinal=ordinal):
+                mutated = _replace_in_entry(combined, ordinal, "- main_state:", "- main_state: MUTATED;")
+                path = ROOT / ".state-changelog-r2-test.md"
+                try:
+                    path.write_text(mutated, encoding="utf-8")
+                    errors = validate(path)
+                finally:
+                    path.unlink(missing_ok=True)
+                self.assertTrue(
+                    any(f"entry {ordinal} historical/current fingerprint mismatch" == error for error in errors),
+                    errors,
+                )
+
+    def test_r2_rejects_a_fabricated_extension_reseal(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        combined = source + R2_APPEND_FIXTURE_PATH.read_text(encoding="utf-8")
+        mutated = _replace_in_entry(combined, 57, "- main_state:", "- main_state: MUTATED;")
+        profile = json.loads(PROFILE_R2_PATH.read_text(encoding="utf-8"))
+        profile["extension_entries"][0]["section_sha256"] = hashlib.sha256(
+            _entry_section(mutated, 57).encode("utf-8")
+        ).hexdigest()
+        path = ROOT / ".state-changelog-r2-test.md"
+        try:
+            path.write_text(mutated, encoding="utf-8")
+            with tempfile.TemporaryDirectory() as tmp:
+                profile_path = Path(tmp) / "state-changelog-profile-r2.json"
+                profile_path.write_text(json.dumps(profile, indent=2) + "\n", encoding="utf-8")
+                errors = validate(path, r2_profile_path=profile_path)
+        finally:
+            path.unlink(missing_ok=True)
+        self.assertTrue(
+            any("R2 validation profile fingerprint mismatch" in error for error in errors),
+            errors,
+        )
+
+    def test_r2_rejects_a_fabricated_reseal_of_the_r1_prefix(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        combined = source + R2_APPEND_FIXTURE_PATH.read_text(encoding="utf-8")
+        mutated = _replace_in_entry(combined, 17, "- main_state:", "- main_state: MUTATED;")
+        profile = json.loads(PROFILE_PATH.read_text(encoding="utf-8"))
+        profile["entries"][16]["section_sha256"] = hashlib.sha256(
+            _entry_section(mutated, 17).encode("utf-8")
+        ).hexdigest()
+        path = ROOT / ".state-changelog-r2-test.md"
+        try:
+            path.write_text(mutated, encoding="utf-8")
+            with tempfile.TemporaryDirectory() as tmp:
+                profile_path = Path(tmp) / "state-changelog-profile-r1.json"
+                profile_path.write_text(json.dumps(profile, indent=2) + "\n", encoding="utf-8")
+                errors = validate(path, profile_path=profile_path)
+        finally:
+            path.unlink(missing_ok=True)
+        self.assertTrue(
+            any("R1 validation profile fingerprint mismatch" in error for error in errors),
+            errors,
+        )
 
 
 if __name__ == "__main__":

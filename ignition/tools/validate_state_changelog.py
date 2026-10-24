@@ -14,8 +14,13 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = ROOT.parent
 PATH = ROOT / "STATE-CHANGELOG.md"
 PROFILE_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r1.json"
+PROFILE_R2_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r2.json"
 PROFILE_SCHEMA_VERSION = "state-changelog-profile-r1"
+PROFILE_R2_SCHEMA_VERSION = "state-changelog-profile-r2"
+EXPECTED_R1_PROFILE_SHA256 = "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c"
+EXPECTED_R2_PROFILE_SHA256 = "0a376c2b9c2b00cc4eb7397629c02d00c92195488a0a28684410489993f02ad2"
 EXPECTED_ENTRY_COUNT = 56
+R2_ENTRY_COUNT = 57
 EXPECTED_CURRENT_ORDINALS = list(range(27, 55))
 EXPECTED_HISTORICAL_COUNT = 28
 EXPECTED_LEGACY_COUNT = 6
@@ -104,13 +109,16 @@ def _validate_profile_contract(profile: dict, errors: list[str]) -> None:
 
 
 def _load_profile(profile_path: Path) -> tuple[dict, list[str]]:
-    try:
-        profile = json.loads(profile_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        return {}, [f"cannot load validation profile: {exc}"]
-    if not isinstance(profile, dict):
-        return {}, ["validation profile must be a JSON object"]
     errors: list[str] = []
+    try:
+        profile_bytes = profile_path.read_bytes()
+        profile = json.loads(profile_bytes.decode("utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        return {}, [f"cannot load validation profile: {exc}"]
+    if hashlib.sha256(profile_bytes).hexdigest() != EXPECTED_R1_PROFILE_SHA256:
+        errors.append("R1 validation profile fingerprint mismatch; historical reseals are not accepted")
+    if not isinstance(profile, dict):
+        return {}, errors + ["validation profile must be a JSON object"]
     if profile.get("schema_version") != PROFILE_SCHEMA_VERSION:
         errors.append("validation profile schema_version is unknown")
     if profile.get("profile_contract") != "CURRENT_STRICT_HISTORICAL_VERSIONED":
@@ -121,6 +129,98 @@ def _load_profile(profile_path: Path) -> tuple[dict, list[str]]:
         errors.append("validation profile entries must be an array")
     _validate_profile_contract(profile, errors)
     return profile, errors
+
+
+def _load_r2_extension(
+    profile_path: Path,
+    profiles: dict,
+    errors: list[str],
+) -> list[dict]:
+    try:
+        profile_bytes = profile_path.read_bytes()
+        profile = json.loads(profile_bytes.decode("utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        errors.append(f"cannot load R2 validation profile: {exc}")
+        return []
+    if hashlib.sha256(profile_bytes).hexdigest() != EXPECTED_R2_PROFILE_SHA256:
+        errors.append("R2 validation profile fingerprint mismatch; fabricated reseals are not accepted")
+    if not isinstance(profile, dict):
+        errors.append("R2 validation profile must be a JSON object")
+        return []
+    expected_keys = {
+        "schema_version",
+        "profile_contract",
+        "parent_profile_sha256",
+        "parent_entry_count",
+        "entry_count",
+        "extension_entries",
+    }
+    if set(profile) != expected_keys:
+        errors.append("R2 validation profile fields do not match the sealed extension contract")
+    if profile.get("schema_version") != PROFILE_R2_SCHEMA_VERSION:
+        errors.append("R2 validation profile schema_version is unknown")
+    if profile.get("profile_contract") != "R1_PREFIX_PLUS_ONE_APPEND":
+        errors.append("R2 validation profile contract is unknown")
+    if profile.get("parent_profile_sha256") != EXPECTED_R1_PROFILE_SHA256:
+        errors.append("R2 validation profile does not bind the sealed R1 profile")
+    if profile.get("parent_entry_count") != EXPECTED_ENTRY_COUNT:
+        errors.append("R2 validation profile does not preserve the 56-entry R1 prefix")
+    if profile.get("entry_count") != R2_ENTRY_COUNT:
+        errors.append("R2 validation profile does not describe exactly one appended entry")
+    extension_entries = profile.get("extension_entries")
+    if not isinstance(extension_entries, list) or len(extension_entries) != 1:
+        errors.append("R2 validation profile must contain exactly one extension entry")
+        return []
+    entry = extension_entries[0]
+    entry_keys = {"ordinal", "date", "label", "profile", "section_sha256"}
+    if not isinstance(entry, dict) or set(entry) != entry_keys:
+        errors.append("R2 extension entry fields do not match the sealed entry contract")
+        return []
+    if isinstance(entry.get("ordinal"), bool) or entry.get("ordinal") != R2_ENTRY_COUNT:
+        errors.append("R2 extension entry must be ordinal 57")
+    if not isinstance(entry.get("date"), str) or not isinstance(entry.get("label"), str):
+        errors.append("R2 extension entry date and label must be strings")
+    profile_name = entry.get("profile")
+    if (
+        not isinstance(profile_name, str)
+        or not isinstance(profiles.get(profile_name), dict)
+        or profiles[profile_name].get("kind") != "current"
+    ):
+        errors.append("R2 extension entry must reuse a defined current profile")
+    section_sha256 = entry.get("section_sha256")
+    if not isinstance(section_sha256, str) or not re.fullmatch(r"[0-9a-f]{64}", section_sha256):
+        errors.append("R2 extension entry section_sha256 is invalid")
+    return [entry]
+
+
+def _select_profile_version(entry_count: int) -> str | None:
+    """Select the changelog contract by exact entry count, never by content."""
+    if entry_count == EXPECTED_ENTRY_COUNT:
+        return "r1"
+    if entry_count == R2_ENTRY_COUNT:
+        return "r2"
+    return None
+
+
+def _load_active_profile(
+    entry_count: int,
+    profile_path: Path,
+    r2_profile_path: Path,
+    errors: list[str],
+) -> tuple[dict, str | None]:
+    profile, profile_errors = _load_profile(profile_path)
+    errors.extend(profile_errors)
+    version = _select_profile_version(entry_count)
+    if version is None:
+        errors.append(f"no changelog profile is defined for exactly {entry_count} entries")
+        return profile, None
+    if version == "r1" or not profile:
+        return profile, version
+    extensions = _load_r2_extension(r2_profile_path, profile.get("profiles", {}), errors)
+    combined = dict(profile)
+    combined["entry_count"] = R2_ENTRY_COUNT
+    combined["entries"] = list(profile.get("entries", [])) + extensions
+    return combined, version
 
 
 def _profile_entry_map(profile: dict, errors: list[str]) -> dict[int, dict]:
@@ -193,22 +293,30 @@ def _validate_links(text: str, path: Path, errors: list[str]) -> None:
             errors.append(f"broken repository link: {target}")
 
 
-def validate(path: Path = PATH, profile_path: Path = PROFILE_PATH) -> list[str]:
+def validate(
+    path: Path = PATH,
+    profile_path: Path = PROFILE_PATH,
+    r2_profile_path: Path = PROFILE_R2_PATH,
+) -> list[str]:
     errors: list[str] = []
     if not path.is_file():
         return [f"missing {path.relative_to(ROOT)}"]
-    profile, profile_errors = _load_profile(profile_path)
-    errors.extend(profile_errors)
+    text = path.read_text(encoding="utf-8")
+    entries = list(ENTRY_RE.finditer(text))
+    profile, _profile_version = _load_active_profile(
+        len(entries),
+        profile_path,
+        r2_profile_path,
+        errors,
+    )
     profile_entries = _profile_entry_map(profile, errors)
     profiles = profile.get("profiles", {})
     if not isinstance(profiles, dict):
         profiles = {}
-    text = path.read_text(encoding="utf-8")
     if not text.startswith("# STATE-CHANGELOG\n"):
         errors.append("title must be exactly # STATE-CHANGELOG")
     if "append-only" not in text:
         errors.append("append-only protocol is missing")
-    entries = list(ENTRY_RE.finditer(text))
     if len(entries) < 2:
         errors.append("baseline and at least one formal delta are required")
         return errors
@@ -267,7 +375,13 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    profile, _ = _load_profile(PROFILE_PATH)
+    entry_count = len(ENTRY_RE.findall(PATH.read_text(encoding="utf-8")))
+    profile, _profile_version = _load_active_profile(
+        entry_count,
+        PROFILE_PATH,
+        PROFILE_R2_PATH,
+        [],
+    )
     entries = profile.get("entries", [])
     definitions = profile.get("profiles", {})
     current = sum(
