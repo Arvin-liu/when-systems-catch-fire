@@ -30,9 +30,10 @@
       "modules": [
         "tests.test_current_state_sync",
         "tests.test_current_surface_compiler",
-        "tests.test_state_changelog"
+        "tests.test_state_changelog",
+        "tests.test_current_task_advancement"
       ],
-      "evidence": "Existing current-state sync, surface compilation and state-change tests exercise the affected declared consumers.",
+      "evidence": "Existing current-state sync, surface compilation, state-change, and task-identity advancement tests exercise the affected declared consumers.",
       "import_roots": [
         "ignition"
       ]
@@ -273,6 +274,20 @@
       ],
       "requires_full_regression": true,
       "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
+    },
+    {
+      "component_id": "formal_task_lifecycle_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Formal-task lifecycle and Task20 advancement sources update canonical Current task identity; the existing current-state consumer target includes the Task20 identity-selection negative controls."
     },
     {
       "component_id": "epistemic_governance_kernel",
