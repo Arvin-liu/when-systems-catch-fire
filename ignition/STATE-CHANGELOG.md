@@ -740,7 +740,6 @@
 - stale_knowledge: a green local generator or CI result must not be read as independent validation, Current promotion, production readiness or epistemic acceptance; the old main pointer remains the baseline until remote observation. [OPERATIONAL_RECORD_ONLY]
 - next_read: inspect the dedicated integration PR and required CI at its exact head, then verify the merged remote main SHA, Task165 ancestry, post-merge smoke/Foundation gates and the independent `1111` receipt. [OPERATIONAL_RECORD_ONLY]
 - claim_ceiling: repository-local derived-output reconciliation and formal integration-candidate evidence only; no external truth, Owner acceptance, production readiness, validated research finding or `READY_FOR_NEW_MATERIAL_RUN` status is inferred before all command gates close. [OPERATIONAL_RECORD_ONLY]
-
 ## 2026-10-24 — IGNITION-20261024-020 — signed registration compatibility and exact task-source repair
 
 - main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline remains `483658e2ff57ad553c3fda762ed855a8bd93ebbe`. Task20 is an in-progress, branch-local candidate record; it is not merged or published.

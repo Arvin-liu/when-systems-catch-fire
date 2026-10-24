@@ -1,0 +1,30 @@
+{
+  "schema_version": "state-changelog-profile-r2",
+  "profile_contract": "R1_PREFIX_PLUS_ONE_APPEND",
+  "parent_profile_sha256": "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c",
+  "parent_entry_count": 56,
+  "entry_count": 57,
+  "extension_entries": [
+    {
+      "ordinal": 57,
+      "date": "2026-10-24",
+      "label": "IGNITION-20261024-020 — signed registration compatibility and exact task-source repair",
+      "profile": "current-task-progress-r1",
+      "section_sha256": "454f96a4212820e25b1e44a3f42f6beaabe1533856f2cab8d4eb17c744be793b"
+    }
+  ],
+  "extension_profile": {
+    "name": "current-task-progress-r1",
+    "kind": "current",
+    "required_fields": [
+      "main_state",
+      "delta",
+      "task_lineage",
+      "obligations",
+      "release_boundary",
+      "validation_boundary",
+      "claim_ceiling"
+    ],
+    "base_sha_required": false
+  }
+}
