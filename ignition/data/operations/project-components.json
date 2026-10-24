@@ -335,6 +335,10 @@
         "tools/validate_post_publication_current.py",
         "tools/validate_release_candidate_task_identity.py",
         "tools/validate_task_identity_model.py",
+        "tests/test_current_task_advancement.py",
+        "tools/advance_current_task.py",
+        "tools/validate_execution_contract.py",
+        "tools/validate_iteration_ordinal_binding.py",
         "tools/validate_current_state_sync.py",
         "tools/validate_state_changelog.py"
       ]
@@ -2085,7 +2089,7 @@
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "data/operations/formal-task-lifecycle-r1.json", "status": "current", "version": "R1"},
       "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/operations/formal-task-lifecycle-r1.json", "schemas/operations/formal-task-lifecycle-r1.schema.json", "schemas/operations/execution-contract-r1.schema.json", "tools/validate_formal_task_lifecycle.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_formal_task_lifecycle.py", "tests/test_current_task_advancement.py", "tools/advance_current_task.py", "tools/validate_execution_contract.py", "tools/validate_iteration_ordinal_binding.py"]
+      "path_patterns": ["data/operations/formal-task-lifecycle-r1.json", "schemas/operations/formal-task-lifecycle-r1.schema.json", "schemas/operations/execution-contract-r1.schema.json", "tools/validate_formal_task_lifecycle.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_formal_task_lifecycle.py"]
     },
     {
       "authority": "canonical",
