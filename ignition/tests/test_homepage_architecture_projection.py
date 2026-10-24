@@ -69,9 +69,11 @@ class HomepageArchitectureProjectionTests(unittest.TestCase):
             readme[start:end],
             """## 3. 结果与火种
 
-先看[《火种：点火跑出来的发现、问题与写作种子》](../ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)：现有成果、失败、边界和仍值得继续追踪的问题都从这里进入；最近一轮关于表征/基底变化、状态转换与跨线程认知碰撞的研究仍保持研究候选或负结果，不升级为系统能力或认识论结论。详见[下一步认识论能力评估](../ignition/docs/governance/next-epistemic-capability-assessment-2026-09-08.md)。
+点火的成果不只包括得到支持的判断，也包括被排除的假设、不能复制的结果、留下的反例、需要补足的证据，以及从一次研究中萌生的新问题。它们的状态应当可以被读者分辨，而不是被统一包装成“成功”。
 
-随后按目的进入唯一[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)、[当前结果](../ignition/RESULTS/LATEST.md)、[开放问题](../ignition/RESULTS/OPEN-QUESTIONS.md)、[函数资产](../ignition/docs/human/function-assets/README.md)或[非函数资产](../ignition/docs/human/nonfunction-assets/README.md)。机器闭合只表示状态已记录，不表示证明、外部证据、复制或现实真值已经完成。
+建议先读[《火种：点火跑出来的发现、问题与写作种子》](../ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)，再按兴趣进入[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)、[当前结果](../ignition/RESULTS/LATEST.md)、[纠正与撤回](../ignition/RESULTS/CORRECTIONS.md)及[开放问题](../ignition/RESULTS/OPEN-QUESTIONS.md)。
+
+若需要核查具体的知识资产，可进一步阅读[函数资产](../ignition/docs/human/function-assets/README.md)和[非函数资产](../ignition/docs/human/nonfunction-assets/README.md)。来源归档、工程验收、数学证明、现实证据和人工科学审阅是不同层次；一个环节完成，不代表其他环节已经完成。
 
 """,
         )
@@ -84,9 +86,11 @@ class HomepageArchitectureProjectionTests(unittest.TestCase):
             readme[start:end],
             """## 4. 整体架构
 
+点火把目标与价值判断、记忆与证据、行动与验证、Agent 与工具、成果与撤回连接在一起。架构图展示**当前仓库记录下的组织关系**，不是对现实因果的完整刻画，也不是所有组件都已投入实际运行的保证。
+
 [![点火整体架构图](../ignition/docs/generated/ignition-system-architecture.svg)](https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1)
 
-[全屏打开交互式架构图](https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1) · [阅读模式](https://arvin-liu.github.io/when-systems-catch-fire/architecture/) · 滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件。
+[全屏打开交互式架构图](https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1) · [阅读模式](https://arvin-liu.github.io/when-systems-catch-fire/architecture/) · 可缩放、拖动、搜索节点并查看关联。
 
 """,
         )

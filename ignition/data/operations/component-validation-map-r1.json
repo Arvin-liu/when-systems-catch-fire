@@ -109,7 +109,8 @@
       "modules": [
         "tests.test_human_front_door",
         "tests.test_overall_architecture",
-        "tests.test_generated_output_authority"
+        "tests.test_generated_output_authority",
+        "tests.test_homepage_architecture_projection"
       ],
       "evidence": "These existing tests cover the registered no-L7 and system-map/front-door projection constraints.",
       "import_roots": [
