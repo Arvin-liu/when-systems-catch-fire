@@ -304,6 +304,20 @@
       "evidence": "The Task20 iteration records and manifest-bound ordinal are covered by the existing iteration synchronization and publication consumer tests."
     },
     {
+      "component_id": "iteration",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Task20 current-iteration and publication changes propagate to the existing iteration synchronization and stage publication consumer tests."
+    },
+    {
       "component_id": "open_obligation_registry_r1",
       "domains": [
         "G"
