@@ -1177,6 +1177,7 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         )
         self.assertEqual(errors, [])
         self.assertIsNotNone(evidence)
+        self.assertEqual(evidence["evidence"]["authorization_path"], r3.OWNER_AUTHORIZATION_PATH)
         self.assertEqual(evidence["meta"]["authorization_commit_committer_id"], 19864447)
         self.assertTrue(evidence["meta"]["authorization_signature_verified"])
 
@@ -1195,6 +1196,23 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         )
         self.assertIsNone(evidence)
         self.assertTrue(any("signature failed closed" in error for error in errors), errors)
+
+    def test_r0_owner_authorization_path_is_rejected_after_versioned_rotation(self) -> None:
+        api = _github_api()
+        control = api.control
+        authorization_sha = control.authorization_sha
+        files = dict(control.snapshots[authorization_sha])
+        raw = files.pop(r3.OWNER_AUTHORIZATION_PATH)
+        files["instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json"] = raw
+        tree_sha = control._tree(files)
+        control.snapshots[authorization_sha] = files
+        control.commits[authorization_sha]["commit"]["tree"]["sha"] = tree_sha
+
+        evidence, errors = r3.read_authenticated_owner_authorization(
+            authorization_sha, github_api=api,
+        )
+        self.assertIsNone(evidence)
+        self.assertTrue(any("no first-parent update" in error for error in errors), errors)
 
     def test_owner_transition_requires_explicit_r2_duration_exception(self) -> None:
         statement = _owner_statement()

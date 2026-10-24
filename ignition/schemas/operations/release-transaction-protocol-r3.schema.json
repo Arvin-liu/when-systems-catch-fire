@@ -429,7 +429,7 @@
         "r2_full_suite_count_policy_exception": {"const": "R2_FIXED_TWO_RUNS_REPLACED_BY_EVIDENCE_SUFFICIENCY_AND_INDEPENDENT_REVALIDATION_WITHOUT_FIXED_COUNT"},
         "r2_publication_method_exception": {"const": "R2_FAST_FORWARD_SHA_EQUALITY_REPLACED_BY_PROTECTED_PR_MERGE_COMMIT_WITH_FINAL_MAIN_TREE_PARENT_REMOTE_AND_FRESH_CLONE_WITNESS"},
         "authorization_repository": {"const": "Arvin-liu/1111"},
-        "authorization_path": {"const": "instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json"},
+        "authorization_path": {"const": "instructions/goal-mode/IGNITION-2026-10-24-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R1.json"},
         "authorization_commit_sha": {"$ref": "#/$defs/sha1"},
         "authorization_committed_at": {"type": "string", "format": "date-time"},
         "authorization_file_sha256": {"$ref": "#/$defs/sha256"},
@@ -890,7 +890,7 @@
       "properties": {
         "repository": { "const": "Arvin-liu/1111" },
         "branch": { "const": "main" },
-        "record_path": { "const": "instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json" },
+        "record_path": { "const": "instructions/goal-mode/IGNITION-2026-10-24-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R1.json" },
         "signature_verification_source": { "const": "GitHub REST commit.verification" },
         "require_verified": { "const": true },
         "require_reason": { "const": "valid" },
