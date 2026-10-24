@@ -290,6 +290,48 @@
       "evidence": "Formal-task lifecycle and Task20 advancement sources update canonical Current task identity; the existing current-state consumer target includes the Task20 identity-selection negative controls."
     },
     {
+      "component_id": "iteration_manifest_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The Task20 iteration records and manifest-bound ordinal are covered by the existing iteration synchronization and publication consumer tests."
+    },
+    {
+      "component_id": "open_obligation_registry_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The changed cross-task obligation registry is current-state authority and is included in the existing current-state consumer closure."
+    },
+    {
+      "component_id": "project_component_registry",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The project component registry and its route ownership are covered by the existing validation-router, plan, and defensive-rejection consumer tests."
+    },
+    {
       "component_id": "epistemic_governance_kernel",
       "domains": [
         "G"

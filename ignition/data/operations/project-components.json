@@ -1054,6 +1054,7 @@
         "tests/test_era_resolver_generalization.py",
         "data/operations/propagation/",
         ".github/workflows/foundation-validation.yml",
+        ".github/workflows/repository-path-accounting-preflight.yml",
         "tests/fixtures/",
         "data/operations/generated-output-authority.json",
         "data/operations/generator-source-contracts.json",
