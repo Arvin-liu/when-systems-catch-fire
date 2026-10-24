@@ -282,10 +282,11 @@
       ],
       "change_classifications": [
         "EVIDENCE_UPDATE",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
       ],
       "requires_full_regression": true,
-      "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
+      "evidence": "The versioned state-changelog profile and its R1/R2 schemas define the append contract and belong to current_state; the registered G and O targets validate the shared profile boundary, and cross-domain current-state changes require Full Foundation regression."
     },
     {
       "component_id": "formal_task_lifecycle_r1",
