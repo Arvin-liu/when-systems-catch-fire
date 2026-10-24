@@ -56,11 +56,59 @@
       "target_id": "g_federation_boundary_consumers",
       "domain": "G",
       "modules": [
+        "tests.test_codex_adapter",
+        "tests.test_cross_executor_driver_pilot",
+        "tests.test_durability_executor_admission",
+        "tests.test_executor_conformance",
+        "tests.test_executor_health",
+        "tests.test_executor_inventory",
         "tests.test_federation_core",
         "tests.test_federation_ownership",
-        "tests.test_federation_step12_adversarial"
+        "tests.test_federation_pilots",
+        "tests.test_federation_step12_adversarial",
+        "tests.test_hermes_adapter",
+        "tests.test_live_admission",
+        "tests.test_live_attempt_ledger",
+        "tests.test_live_bridge_contracts",
+        "tests.test_live_capture",
+        "tests.test_live_capture_fault_matrix",
+        "tests.test_live_child_guard",
+        "tests.test_live_codex_adapter",
+        "tests.test_live_codex_runtime_scratch",
+        "tests.test_live_codex_safety_matrix",
+        "tests.test_live_current_projection",
+        "tests.test_live_durable_transport",
+        "tests.test_live_execution",
+        "tests.test_live_failover",
+        "tests.test_live_fault_matrix",
+        "tests.test_live_filesystem",
+        "tests.test_live_filesystem_harness",
+        "tests.test_live_hermes_adapter",
+        "tests.test_live_history_import",
+        "tests.test_live_inference_observation_events",
+        "tests.test_live_observation_events",
+        "tests.test_live_observation_plane",
+        "tests.test_live_observation_semantics",
+        "tests.test_live_openclaw_adapter",
+        "tests.test_live_orchestration",
+        "tests.test_live_pilot",
+        "tests.test_live_preflight",
+        "tests.test_live_privacy",
+        "tests.test_live_reconciliation",
+        "tests.test_live_reconciliation_events",
+        "tests.test_live_state_dimensions",
+        "tests.test_live_task137",
+        "tests.test_live_task138_fixture",
+        "tests.test_live_transport",
+        "tests.test_live_validation",
+        "tests.test_local_executor_census",
+        "tests.test_openclaw_adapter",
+        "tests.test_task139_live_admission",
+        "tests.test_task139_local_executor_census",
+        "tests.test_task141_live_admission",
+        "tests.test_task141_local_executor_census"
       ],
-      "evidence": "Existing federation contract, ownership, and adversarial tests exercise the declared executor and future-slot permission, interface, and evidence boundaries.",
+      "evidence": "The existing federation contract, ownership and adversarial tests are extended with the registered Codex/Hermes/OpenClaw adapter tests, executor conformance/health/inventory and admission tests, plus the profile-declared live bridge and observation test family. These remain repository boundary checks and do not assert provider quality or external completion.",
       "import_roots": [
         "ignition"
       ]
@@ -210,6 +258,141 @@
       "import_roots": [
         "ignition"
       ]
+    },
+    {
+      "target_id": "g_agent_runtime_boundary_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_agent_profile_r1",
+        "tests.test_agent_runtime_r0",
+        "tests.test_agent_runtime_r1"
+      ],
+      "evidence": "The Agent Runtime R0/R1 and profile consumer suites exercise the registered Kernel, Profile, runtime execution/configuration boundary and non-knowledge pilot, including self-escalation rejection, pack authority limits and bounded local execution.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_domain_pack_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_pack_registry",
+        "tests.test_pack_aware_routing",
+        "tests.test_r2_repository_maintenance"
+      ],
+      "evidence": "The Pack registry/routing and repository-maintenance suites exercise registered domain and maintenance pack manifests, bounded capability selection and repository-local maintenance behavior.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "o_knowledge_pack_consumers",
+      "domain": "O",
+      "modules": [
+        "tests.test_knowledge_corpus_admission",
+        "tests.test_knowledge_experience"
+      ],
+      "evidence": "Knowledge corpus admission and Knowledge Experience consumers exercise the registered knowledge pack intake and human-facing derived outputs without promoting evidence or claims.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_durability_lifecycle_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_durability_accounting",
+        "tests.test_durability_adversarial",
+        "tests.test_durability_compaction",
+        "tests.test_durability_continuity_pilot",
+        "tests.test_durability_dr_bundle",
+        "tests.test_durability_executor_admission",
+        "tests.test_durability_memory",
+        "tests.test_durability_migration",
+        "tests.test_durability_namespace",
+        "tests.test_durability_pack_lifecycle",
+        "tests.test_durability_projection_hygiene",
+        "tests.test_durability_recovery",
+        "tests.test_durability_revocation",
+        "tests.test_durability_snapshot",
+        "tests.test_durability_soft_governance",
+        "tests.test_durability_taxonomy"
+      ],
+      "evidence": "The complete existing durability test family exercises the registered lifecycle, snapshot/tail, recovery, migration, namespace, revocation, accounting, pack-lifecycle and conservative unknown-effect boundaries.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_event_ledger_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_event_ledger",
+        "tests.test_durability_compaction",
+        "tests.test_durability_recovery",
+        "tests.test_durability_snapshot",
+        "tests.test_durability_soft_governance",
+        "tests.test_live_orchestration",
+        "tests.test_live_reconciliation_events",
+        "tests.test_steering_durability"
+      ],
+      "evidence": "The append-only ledger contract, durability/replay consumers and live/steering event consumers exercise the registered event ledger and its hash-chain, CAS, replay and snapshot-tail boundaries.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_resource_arbitration_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_resource_arbitration",
+        "tests.test_scheduler",
+        "tests.test_live_orchestration"
+      ],
+      "evidence": "Resource-arbitration, scheduler and live orchestration tests exercise typed intents, lease expiry, atomic acquisition and conservative serialization of unknown effects.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_steering_obligation_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_steering_adversarial",
+        "tests.test_steering_capsule",
+        "tests.test_steering_commitments",
+        "tests.test_steering_completion",
+        "tests.test_steering_conflicts",
+        "tests.test_steering_console",
+        "tests.test_steering_drift",
+        "tests.test_steering_durability",
+        "tests.test_steering_episode_binding",
+        "tests.test_steering_goal_lifecycle",
+        "tests.test_steering_graph",
+        "tests.test_steering_intent_registry",
+        "tests.test_steering_memory_profile",
+        "tests.test_steering_namespace",
+        "tests.test_steering_ontology",
+        "tests.test_steering_pilot",
+        "tests.test_steering_priority",
+        "tests.test_steering_temporal",
+        "tests.test_steering_why_next"
+      ],
+      "evidence": "The existing Steering test family covers intent provenance, goal lifecycle, completion contracts, obligations, priority/conflict handling, drift, namespace, memory/profile boundaries, and explainable why-next behavior.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "r_reos_pack_consumers",
+      "domain": "R",
+      "modules": [
+        "tests.test_reos_vnext_minimal_kernel"
+      ],
+      "evidence": "The REOS vNext minimal-kernel test directly exercises the bounded research-pack navigation and keeps it outside generic Kernel, authority and Owner definitions.",
+      "import_roots": [
+        "ignition"
+      ]
     }
   ],
   "components": [
@@ -286,7 +469,7 @@
         "OPERATIONS_METHOD"
       ],
       "requires_full_regression": true,
-      "evidence": "The versioned state-changelog profile and its R1/R2 schemas define the append contract and belong to current_state; the registered G and O targets validate the shared profile boundary, and cross-domain current-state changes require Full Foundation regression."
+      "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression. The Task20 state-changelog R2 profile and versioned schemas are current-state recording and operational-method contracts."
     },
     {
       "component_id": "formal_task_lifecycle_r1",
@@ -771,6 +954,367 @@
         "OPERATIONS_METHOD"
       ],
       "evidence": "The existing Q33 governance test-suite component owns its dedicated workflow and human-front-door trigger contract; the registered G target checks that required source edits cannot silently skip Q33 validation."
+    },
+    {
+      "component_id": "agent_kernel_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "Kernel imports and authority-limit assertions are exercised directly by the runtime/profile consumer suites; the row preserves the repository-only claim ceiling."
+    },
+    {
+      "component_id": "agent_profile_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The R0 profile is parsed by the profile suite, which verifies legacy compatibility, bounded projection and non-escalation alongside the R1 registry consumers."
+    },
+    {
+      "component_id": "agent_runtime_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Runtime R0/R1 tests exercise the registered runtime boundary, bounded local actions, lineage and profile integration; no live provider claim is added."
+    },
+    {
+      "component_id": "codex_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The adapter and live Codex safety/runtime suites cover the registered JSONL CLI boundary, isolated configuration and pointer-only session contract."
+    },
+    {
+      "component_id": "domain_pack_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_boundary_consumers",
+        "g_domain_pack_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Runtime R0 tests exercise DomainPackManifest authority rejection; pack registry and routing tests cover manifest admission and bounded selection."
+    },
+    {
+      "component_id": "durability_lifecycle_r3",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_durability_lifecycle_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registered durability path pattern resolves to the full existing durability test family, covering the declared lifecycle/recovery consumers."
+    },
+    {
+      "component_id": "event_ledger_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_event_ledger_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The ledger and its durability, live-reconciliation and steering consumers have focused existing tests; the target covers those declared consumers."
+    },
+    {
+      "component_id": "executor_admission_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Existing executor, live-admission and durability-admission modules cover the checked-in admission implementation. The profile-listed test_executor_admission_contract.py path is absent and is intentionally not treated as a runnable target."
+    },
+    {
+      "component_id": "hermes_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Hermes public adapter and live text-bridge tests cover typed parsing, redaction and independent validation boundaries."
+    },
+    {
+      "component_id": "knowledge_domain_pack",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_domain_pack_consumers",
+        "o_knowledge_pack_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Pack registry/routing and knowledge admission/experience consumers cover the manifest and its human-facing outputs; claim ceiling is unchanged."
+    },
+    {
+      "component_id": "live_executor_bridge_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registered tests/test_live_*.py family plus executor protocol tests exercise the declared bounded bridge, receipts, timeouts and reconciliation surfaces."
+    },
+    {
+      "component_id": "live_observation_reconciliation_plane_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Observation plane, semantics, event, state-dimension and reconciliation tests exercise the registered separation of observation, durable capture, validation and unknown effects."
+    },
+    {
+      "component_id": "maintenance_pack",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_domain_pack_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Repository maintenance and pack registry/routing tests cover the bounded maintenance manifest and declared capability boundary."
+    },
+    {
+      "component_id": "nonknowledge_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Agent Runtime R0 tests directly execute the non-knowledge manifest pilot and assert its offline, bounded-write and independent-resume constraints."
+    },
+    {
+      "component_id": "openclaw_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "OpenClaw public adapter, ownership, adversarial and live adapter tests cover the provider-neutral CLI and pointer-only session boundary."
+    },
+    {
+      "component_id": "reference_executor",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Federation-pilot and conformance tests exercise the frozen local reference/fallback executor role and its protocol boundary."
+    },
+    {
+      "component_id": "research_pack_reos_light",
+      "domains": [
+        "G",
+        "R"
+      ],
+      "validation_targets": [
+        "g_domain_pack_consumers",
+        "r_reos_pack_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Pack-aware routing and REOS minimal-kernel tests cover bounded research-pack navigation; no generic Kernel or Owner authority is claimed."
+    },
+    {
+      "component_id": "resource_arbitration_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_resource_arbitration_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Resource arbitration and scheduler/live consumers exercise typed intents, leases and unknown-side-effect serialization."
+    },
+    {
+      "component_id": "runtime_environment",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The execution profile names agent_runtime/protocols.py. Agent Runtime R1 tests exercise the configured reasoner, local executor and validator run boundary, while R0/profile suites cover adjacent capability restrictions. There is no standalone protocol-signature test module, so source review remains required; this target is not claimed as a direct Protocol type-check."
+    },
+    {
+      "component_id": "steering_intent_obligation_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_steering_obligation_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The complete Steering test family exercises the registered intent, goal, obligation, priority, conflict, drift and memory/profile boundaries."
+    },
+    {
+      "component_id": "writing_pack",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The authored writing method/template have no dedicated semantic-content test target in this checkout; require cross-domain FULL rather than claim unrelated publication tests cover their content.",
+      "requires_full_regression": true
+    },
+    {
+      "component_id": "owner_human",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "requires_full_regression": false,
+      "evidence": "The declared .github/README.md overlap with the existing readme front door reuses its G/O consumer suites and change classifications; the homepage projection and changed target module require FULL for this candidate."
     }
   ]
 }
