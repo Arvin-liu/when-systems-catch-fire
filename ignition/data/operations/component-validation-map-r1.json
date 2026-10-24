@@ -199,6 +199,17 @@
         "ignition/research_workflow"
       ],
       "evidence": "PR #259 candidate package tests: test_research_workflow.py covers the live CLI with OpenAlex and Crossref; test_pluggable_slot.py covers the independent offline/source-binding slot. The output receipts do not enter the canonical O human-knowledge surfaces."
+    },
+    {
+      "target_id": "g_q33_workflow_trigger_contract",
+      "domain": "G",
+      "modules": [
+        "tests.test_q33_workflow_trigger_coverage"
+      ],
+      "evidence": "A stdlib trigger-coverage test binds the dedicated Q33 workflow to the human-front-door files, validators, projection inputs, fixtures, and its own regression test.",
+      "import_roots": [
+        "ignition"
+      ]
     }
   ],
   "components": [
@@ -745,6 +756,20 @@
         "OPERATIONS_METHOD"
       ],
       "evidence": "The dedicated release-transaction-protocol-validation workflow tests the exact R2/R3 validators and fixtures; g_component_release_controls tests cover the shared validation router, release authority and defensive boundaries. R3 remains a candidate until a separate Owner authorization and 1111 witness verify the protected merge."
+    },
+    {
+      "component_id": "copyright_governance_tests",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_q33_workflow_trigger_contract"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The existing Q33 governance test-suite component owns its dedicated workflow and human-front-door trigger contract; the registered G target checks that required source edits cannot silently skip Q33 validation."
     }
   ]
 }

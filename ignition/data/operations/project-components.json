@@ -1619,7 +1619,9 @@
         "visible": true
       },
       "path_patterns": [
-        "tests/test_q33_governance_infrastructure.py"
+        "tests/test_q33_governance_infrastructure.py",
+        ".github/workflows/q33-governance-validation.yml",
+        "tests/test_q33_workflow_trigger_coverage.py"
       ]
     },
     {
