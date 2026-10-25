@@ -261,7 +261,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9"
+      "experimental_candidate_catalog_git_blob_sha1": "fbbe74e875667ac3516509fa18606376bbae094f"
     }
   },
   "execution_status": "NOT_RUN",
