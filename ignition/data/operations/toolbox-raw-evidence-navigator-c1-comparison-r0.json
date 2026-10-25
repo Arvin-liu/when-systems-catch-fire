@@ -5,7 +5,7 @@
   "comparison_status": "COMPARISON_UNKNOWN",
   "claim_ceiling": "Lexical navigation through entries in the checked-out Knowledge search index, followed by bounded reopening of current repository source files and exact line/hash output. No source completeness, semantic relevance, evidence coverage, truth, proof, authenticity, scientific acceptance, or publication readiness is established.",
   "source_binding": {
-    "candidate_catalog_git_blob_sha1": "c6a7645ad3915fba219edc0185f8fc6a2875c62f",
+    "candidate_catalog_git_blob_sha1": "73086bb6592144a36911dd06bc5532c2fb0a8ece",
     "tool_source_sha256": "229d0c707af65f49ca1e0e566e6c341214878b7193d1448e58cdc682ec728752",
     "route_receipt_path": "ignition/data/operations/toolbox-raw-evidence-navigator-route-evidence-r0.json"
   },

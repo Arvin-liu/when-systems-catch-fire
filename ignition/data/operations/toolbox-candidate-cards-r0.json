@@ -214,7 +214,8 @@
       "counterindicated_when": [
         "The task requires current external facts or sources outside the checked-out Formal repository.",
         "The relevant source may be new or unindexed and the caller needs a completeness guarantee.",
-        "A semantic, causal, mathematical, or scientific judgment is required rather than literal source navigation."
+        "A semantic, causal, mathematical, or scientific judgment is required rather than literal source navigation.",
+        "The selected repository excerpts may contain sensitive text; use only when the current caller and output audience are authorized to read those files because the tool does not redact source content."
       ],
       "accepted_input_types": [
         "Bounded UTF-8 JSON stdin with requirement IDs, literal query terms, maximum sources per requirement, total raw-source byte budget, and maximum excerpt length"
