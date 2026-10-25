@@ -112,6 +112,7 @@ class CrossrefMetadataVerifierTests(unittest.TestCase):
         self.assertEqual(timeout, TOOL.REQUEST_TIMEOUT_SECONDS)
         result = json.loads(stdout.getvalue())
         self.assertEqual(result["status"], "ALL_METADATA_MATCHED")
+        self.assertEqual(result["tool_version"], "0.3.0")
         self.assertEqual(result["record_count"], 1)
         self.assertEqual(result["rows"][0]["acquisition_status"], "OK")
         self.assertTrue(result["rows"][0]["full_match"])
@@ -122,6 +123,7 @@ class CrossrefMetadataVerifierTests(unittest.TestCase):
         self.assertEqual(projected["updated_by"]["field_status"], "PRESENT_NONEMPTY")
         self.assertEqual(projected["related_items"]["reported_count"], 2)
         self.assertEqual(projected["related_items"]["rows"][0]["identifier"], "10.5555/12345681.9882")
+        self.assertEqual(result["rows"][0]["crossref_reference_metadata"]["field_status"], "NOT_REPORTED")
         self.assertEqual(len(opener.calls), 1, "related identifiers are reported, never requested")
         self.assertIn("article content", result["claim_ceiling"])
 
@@ -187,6 +189,87 @@ class CrossrefMetadataVerifierTests(unittest.TestCase):
         self.assertTrue(related["truncated"])
         self.assertNotIn("https://untrusted.example/payload", json.dumps(related))
         self.assertEqual(len(opener.calls), 1)
+
+    def test_reference_projection_is_bounded_and_keeps_only_short_provider_fields(self) -> None:
+        references = [
+            {
+                "key": "ref-1",
+                "DOI": "10.5555/reference.1",
+                "article-title": "A short cited work",
+                "author": "Example Author",
+                "year": "2020",
+                "journal-title": "Example Journal",
+                "first-page": "12",
+                "unstructured": "Example Author (2020). A short cited work.",
+            },
+            {
+                "key": "ref-url",
+                "DOI": "https://doi.org/10.5555/not-a-bare-doi",
+                "article-title": "URL must not be returned: https://example.test/path",
+            },
+            {},
+            *[
+                {"key": f"ref-{index}", "DOI": f"10.5555/reference.{index}"}
+                for index in range(TOOL.MAX_REFERENCE_ROWS + 5)
+            ],
+        ]
+        message = {
+            "message": {
+                "title": [SAMPLE_MESSAGE["message"]["title"][0]],
+                "published": {"date-parts": [[2024]]},
+                "reference": references,
+            }
+        }
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+
+        projected = row["crossref_reference_metadata"]
+        self.assertEqual(projected["field_status"], "PRESENT_NONEMPTY")
+        self.assertEqual(projected["reported_count"], len(references))
+        self.assertLessEqual(len(projected["rows"]), TOOL.MAX_REFERENCE_ROWS)
+        self.assertEqual(projected["omitted_count"], len(references) - len(projected["rows"]))
+        self.assertTrue(projected["truncated"])
+        self.assertGreaterEqual(projected["invalid_entry_count"], 1)
+        self.assertEqual(
+            projected["rows"][0],
+            {
+                "doi": "10.5555/reference.1",
+                "key": "ref-1",
+                "unstructured": "Example Author (2020). A short cited work.",
+                "article_title": "A short cited work",
+                "author": "Example Author",
+                "journal_title": "Example Journal",
+                "first_page": "12",
+                "year": 2020,
+            },
+        )
+        serialized = json.dumps(projected)
+        self.assertNotIn("https://doi.org/", serialized)
+        self.assertNotIn("https://example.test/", serialized)
+        self.assertEqual(len(opener.calls), 1, "references are projected from the same Work response")
+
+    def test_reference_field_distinguishes_unreported_empty_and_malformed(self) -> None:
+        message = {"message": {"title": ["x"], "published": {"date-parts": [[2024]]}, "reference": []}}
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+        self.assertEqual(row["crossref_reference_metadata"]["field_status"], "PRESENT_EMPTY")
+        self.assertEqual(row["crossref_reference_metadata"]["reported_count"], 0)
+
+        del message["message"]["reference"]
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+        self.assertEqual(row["crossref_reference_metadata"]["field_status"], "NOT_REPORTED")
+        self.assertIsNone(row["crossref_reference_metadata"]["reported_count"])
+
+        message["message"]["reference"] = {"unexpected": "object"}
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+        self.assertEqual(row["crossref_reference_metadata"]["field_status"], "MALFORMED")
+        self.assertEqual(row["crossref_reference_metadata"]["rows"], [])
 
     def test_no_network_occurs_without_per_call_flag(self) -> None:
         opener = FakeOpener()

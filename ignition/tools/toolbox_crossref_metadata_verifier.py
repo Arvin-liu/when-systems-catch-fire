@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Any
 
 
-TOOL_VERSION = "0.2.0"
+TOOL_VERSION = "0.3.0"
 API_BASE = "https://api.crossref.org/works/"
 API_HOST = "api.crossref.org"
 MAX_REQUEST_BYTES = 32 * 1024
@@ -37,6 +37,8 @@ MAX_UPDATE_ROWS_PER_KIND = 25
 MAX_RELATION_TYPES = 32
 MAX_RELATION_ROWS = 50
 MAX_RELATION_TEXT_LENGTH = 128
+MAX_REFERENCE_ROWS = 25
+MAX_REFERENCE_TEXT_LENGTH = 384
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+\Z")
 SOURCE_ID_RE = re.compile(r"[A-Za-z0-9._:-]+\Z")
 
@@ -292,6 +294,73 @@ def _relation_metadata(message: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _reference_text(value: Any, *, max_length: int = MAX_REFERENCE_TEXT_LENGTH) -> str | None:
+    text = _safe_text(value, max_length=max_length)
+    if text is None or re.search(r"https?://", text, flags=re.IGNORECASE):
+        return None
+    return text
+
+
+def _parse_reference_rows(message: dict[str, Any]) -> dict[str, Any]:
+    if "reference" not in message:
+        return {
+            "field_status": "NOT_REPORTED", "reported_count": None, "rows": [],
+            "omitted_count": 0, "truncated": False, "invalid_entry_count": 0,
+        }
+    raw_rows = message["reference"]
+    if not isinstance(raw_rows, list):
+        return {
+            "field_status": "MALFORMED", "reported_count": None, "rows": [],
+            "omitted_count": 0, "truncated": False, "invalid_entry_count": 0,
+        }
+
+    rows: list[dict[str, Any]] = []
+    invalid_entry_count = 0
+    for item in raw_rows[:MAX_REFERENCE_ROWS]:
+        if not isinstance(item, dict):
+            invalid_entry_count += 1
+            continue
+        row: dict[str, Any] = {}
+        doi = item.get("DOI")
+        if isinstance(doi, str) and DOI_RE.fullmatch(doi):
+            row["doi"] = doi
+        for source_key, output_key, limit in (
+            ("key", "key", 96),
+            ("unstructured", "unstructured", MAX_REFERENCE_TEXT_LENGTH),
+            ("article-title", "article_title", 256),
+            ("author", "author", 128),
+            ("journal-title", "journal_title", 160),
+            ("volume", "volume", 48),
+            ("issue", "issue", 48),
+            ("first-page", "first_page", 48),
+            ("series-title", "series_title", 160),
+            ("edition", "edition", 48),
+            ("issn", "issn", 48),
+            ("isbn", "isbn", 48),
+        ):
+            value = _reference_text(item.get(source_key), max_length=limit)
+            if value is not None:
+                row[output_key] = value
+        year = item.get("year")
+        if type(year) is int and 1000 <= year <= 2200:
+            row["year"] = year
+        elif isinstance(year, str) and re.fullmatch(r"\d{4}", year) and 1000 <= int(year) <= 2200:
+            row["year"] = int(year)
+        if row:
+            rows.append(row)
+        else:
+            invalid_entry_count += 1
+
+    return {
+        "field_status": "PRESENT_EMPTY" if not raw_rows else "PRESENT_NONEMPTY",
+        "reported_count": len(raw_rows),
+        "rows": rows,
+        "omitted_count": len(raw_rows) - len(rows),
+        "truncated": len(raw_rows) > MAX_REFERENCE_ROWS,
+        "invalid_entry_count": invalid_entry_count,
+    }
+
+
 def _verify_row(record: dict[str, Any]) -> dict[str, Any]:
     observed_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     result: dict[str, Any] = {
@@ -303,6 +372,7 @@ def _verify_row(record: dict[str, Any]) -> dict[str, Any]:
         "source_url": API_BASE + urllib.parse.quote(record["doi"], safe=""),
         "source_license": "Crossref bibliographic metadata; public reuse basis documented by Crossref",
         "crossref_relation_metadata": None,
+        "crossref_reference_metadata": None,
     }
     fetched = _fetch_one(record["doi"])
     result["acquisition_status"] = fetched["acquisition_status"]
@@ -356,6 +426,7 @@ def _verify_row(record: dict[str, Any]) -> dict[str, Any]:
         "full_match": bool(title_match and year_match),
         "retraction_signal": UPSTREAM.retraction_signal(message),
         "crossref_relation_metadata": _relation_metadata(message),
+        "crossref_reference_metadata": _parse_reference_rows(message),
     })
     return result
 
@@ -382,7 +453,7 @@ def verify(records: list[dict[str, Any]]) -> dict[str, Any]:
             "wrapper": _sha256(Path(__file__).resolve()),
             "task103_crossref_helpers": _sha256(UPSTREAM_HELPERS_PATH),
         },
-        "claim_ceiling": "Crossref API metadata retrieval, normalized title/year comparison, and bounded projection of returned update-to, updated-by, and typed relation identifiers only. Returned fields are provider-deposited metadata at retrieval time; omissions, empty fields, or relation labels do not establish completeness, source authenticity, article content, scientific truth, or current retraction status.",
+        "claim_ceiling": "Crossref API metadata retrieval, normalized title/year comparison, and bounded projection of returned update-to, updated-by, typed relation identifiers, and deposited reference citation metadata only. Returned fields are provider-deposited metadata at retrieval time; omissions, empty fields, or relation labels do not establish completeness, source authenticity, article content, scientific truth, or current retraction status.",
     }
 
 
