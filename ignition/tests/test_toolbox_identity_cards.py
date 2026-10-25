@@ -21,8 +21,8 @@ class ToolboxIdentityCardTests(unittest.TestCase):
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 4)
-        self.assertEqual(document["card_count"], 24)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 5)
+        self.assertEqual(document["card_count"], 25)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
@@ -46,6 +46,11 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(pack_catalog["permissions"]["write_paths"], [])
         self.assertIn("no Pack module is loaded", pack_catalog["claim_ceiling"])
         self.assertIn("ignition/packs/", pack_catalog["dependencies"])
+        reader = next(card for card in candidates if card["tool_id"] == "foundation.read_current_asset_card")
+        self.assertEqual(reader["execution_mode"], "READ_ONLY_RUN")
+        self.assertEqual(reader["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertEqual(reader["permissions"]["write_paths"], [])
+        self.assertIn("both identity registries source-hashed", reader["claim_ceiling"])
 
     def test_candidate_catalog_schema_and_source_pin_are_valid(self) -> None:
         validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"

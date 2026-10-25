@@ -21,11 +21,26 @@
       "source_path": "ignition/tools/toolbox_cluster_source_brief.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_cluster_source_brief.py C000",
       "source_refs": [
-        {"path": "ignition/tools/toolbox_cluster_source_brief.py", "role": "READ_ONLY_TOOL_ENTRYPOINT"},
-        {"path": "ignition/tools/extract_cluster_source_brief.py", "role": "BRIEF_RENDERER_AND_RECEIPT_BUILDER"},
-        {"path": "ignition/analysis/corpus-relation/article_cluster_candidates.json", "role": "CLUSTER_SNAPSHOT"},
-        {"path": "ignition/tools/build_corpus_relation_graph.py", "role": "CARD_PARSER"},
-        {"path": "ignition/KNOWLEDGE/cards/", "role": "GOVERNED_ASSET_CARD_CORPUS"}
+        {
+          "path": "ignition/tools/toolbox_cluster_source_brief.py",
+          "role": "READ_ONLY_TOOL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/tools/extract_cluster_source_brief.py",
+          "role": "BRIEF_RENDERER_AND_RECEIPT_BUILDER"
+        },
+        {
+          "path": "ignition/analysis/corpus-relation/article_cluster_candidates.json",
+          "role": "CLUSTER_SNAPSHOT"
+        },
+        {
+          "path": "ignition/tools/build_corpus_relation_graph.py",
+          "role": "CARD_PARSER"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/cards/",
+          "role": "GOVERNED_ASSET_CARD_CORPUS"
+        }
       ],
       "dependencies": [
         "ignition/analysis/corpus-relation/article_cluster_candidates.json",
@@ -51,8 +66,13 @@
         "The task asks for scientific adjudication, proof, or external evidence validation.",
         "The cluster snapshot is stale for the user's requested time period."
       ],
-      "accepted_input_types": ["article cluster ID"],
-      "output_types": ["source-backed cluster member brief", "source and output digest receipt"],
+      "accepted_input_types": [
+        "article cluster ID"
+      ],
+      "output_types": [
+        "source-backed cluster member brief",
+        "source and output digest receipt"
+      ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
       "explicit_owner_authorization_required": false,
@@ -68,8 +88,12 @@
         "billing": false,
         "external_actions": false
       },
-      "side_effects": ["Writes only the JSON receipt to stdout; does not create or overwrite repository files."],
-      "runtime_dependencies": ["Python >=3.9 standard library"],
+      "side_effects": [
+        "Writes only the JSON receipt to stdout; does not create or overwrite repository files."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
       "estimated_cost": {
         "status": "UNKNOWN",
         "basis": "No comparable timing, token, memory, or compute-cost profile has been established."
@@ -114,9 +138,18 @@
       "source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
       "entrypoint": "python3 -B ignition/tools/operations/plan_ignition_operation_run.py --route-request",
       "source_refs": [
-        {"path": "ignition/data/operations/ignition-operation-capability-registry-r1.json", "role": "CURRENT_OPERATION_AUTHORITY"},
-        {"path": "ignition/data/operations/toolbox-candidate-cards-r0.json", "role": "OPT_IN_CANDIDATE_CARDS"},
-        {"path": "ignition/tools/operations/classify_ignition_run_mode.py", "role": "EXECUTION_MODE_CLASSIFIER_DEPENDENCY"}
+        {
+          "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+          "role": "CURRENT_OPERATION_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+          "role": "OPT_IN_CANDIDATE_CARDS"
+        },
+        {
+          "path": "ignition/tools/operations/classify_ignition_run_mode.py",
+          "role": "EXECUTION_MODE_CLASSIFIER_DEPENDENCY"
+        }
       ],
       "dependencies": [
         "ignition/data/operations/ignition-operation-capability-registry-r1.json",
@@ -143,8 +176,14 @@
         "The caller needs actual tool execution or a scientific conclusion rather than a route proposal.",
         "The current operation registry no longer matches the candidate-card source pin."
       ],
-      "accepted_input_types": ["typed toolbox route profile on stdin"],
-      "output_types": ["typed route proposal", "covered and unmet output list", "candidate rejection reasons"],
+      "accepted_input_types": [
+        "typed toolbox route profile on stdin"
+      ],
+      "output_types": [
+        "typed route proposal",
+        "covered and unmet output list",
+        "candidate rejection reasons"
+      ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
       "explicit_owner_authorization_required": false,
@@ -159,8 +198,12 @@
         "billing": false,
         "external_actions": false
       },
-      "side_effects": ["stdout only"],
-      "runtime_dependencies": ["Python >=3.9 standard library"],
+      "side_effects": [
+        "stdout only"
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
       "estimated_cost": {
         "status": "UNKNOWN",
         "basis": "The selection run is local, but no calibrated latency, memory, or compute-cost comparison exists."
@@ -207,13 +250,34 @@
       "source_path": "ignition/tools/toolbox_batch_resolve_current_assets.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_batch_resolve_current_assets.py --stdin (stdin JSON: {\"references\":[...]})",
       "source_refs": [
-        {"path": "ignition/tools/toolbox_batch_resolve_current_assets.py", "role": "BATCH_TOOL_ENTRYPOINT"},
-        {"path": "ignition/tools/foundation/resolve_current_canonical_asset.py", "role": "EXISTING_EXACT_RESOLVER_ALGORITHM"},
-        {"path": "ignition/data/foundation/function-assets/identity-cards.jsonl", "role": "CURRENT_FUNCTION_IDENTITY_AUTHORITY"},
-        {"path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl", "role": "CURRENT_NONFUNCTION_CLAIM_AUTHORITY"},
-        {"path": "ignition/data/governance/knowledge-experience/alias-index.jsonl", "role": "CURRENT_REGISTERED_ALIAS_AUTHORITY"},
-        {"path": "ignition/data/foundation/function-assets/corrections.jsonl", "role": "CURRENT_IDENTITY_CORRECTION_AUTHORITY"},
-        {"path": "ignition/data/foundation/mappings/legacy-mappings.jsonl", "role": "CURRENT_LEGACY_MIGRATION_AUTHORITY"}
+        {
+          "path": "ignition/tools/toolbox_batch_resolve_current_assets.py",
+          "role": "BATCH_TOOL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/tools/foundation/resolve_current_canonical_asset.py",
+          "role": "EXISTING_EXACT_RESOLVER_ALGORITHM"
+        },
+        {
+          "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+          "role": "CURRENT_FUNCTION_IDENTITY_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+          "role": "CURRENT_NONFUNCTION_CLAIM_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+          "role": "CURRENT_REGISTERED_ALIAS_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/foundation/function-assets/corrections.jsonl",
+          "role": "CURRENT_IDENTITY_CORRECTION_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/foundation/mappings/legacy-mappings.jsonl",
+          "role": "CURRENT_LEGACY_MIGRATION_AUTHORITY"
+        }
       ],
       "dependencies": [
         "ignition/tools/foundation/resolve_current_canonical_asset.py",
@@ -243,8 +307,13 @@
         "An ambiguous or unresolved result must be automatically selected or corrected.",
         "The task asks for scientific adjudication, proof, or evidence validation."
       ],
-      "accepted_input_types": ["JSON stdin object with an ordered nonempty array of exact reference strings"],
-      "output_types": ["input-ordered canonical identity resolution rows", "authority and resolver SHA-256 receipt"],
+      "accepted_input_types": [
+        "JSON stdin object with an ordered nonempty array of exact reference strings"
+      ],
+      "output_types": [
+        "input-ordered canonical identity resolution rows",
+        "authority and resolver SHA-256 receipt"
+      ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
       "explicit_owner_authorization_required": false,
@@ -263,8 +332,12 @@
         "billing": false,
         "external_actions": false
       },
-      "side_effects": ["Writes the result only to stdout; malformed input and unavailable authority are reported to stderr with nonzero status; no repository files are created or changed."],
-      "runtime_dependencies": ["Python >=3.9 standard library"],
+      "side_effects": [
+        "Writes the result only to stdout; malformed input and unavailable authority are reported to stderr with nonzero status; no repository files are created or changed."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
       "estimated_cost": {
         "status": "UNKNOWN",
         "basis": "The resolver rebuilds exact lookup indexes for each reference; no comparable batch latency or memory benchmark has been established."
@@ -312,10 +385,22 @@
       "source_path": "ignition/tools/toolbox_pack_registry_inspector.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_pack_registry_inspector.py list | show <pack_id>",
       "source_refs": [
-        {"path": "ignition/tools/toolbox_pack_registry_inspector.py", "role": "FIXED_READ_ONLY_CATALOG_ENTRYPOINT"},
-        {"path": "ignition/agent_runtime/", "role": "PACK_REGISTRY_AND_PACKAGE_RUNTIME_SOURCE_TREE"},
-        {"path": "ignition/agent_kernel/", "role": "PACK_REGISTRY_KERNEL_CONTRACT_DEPENDENCY_TREE"},
-        {"path": "ignition/packs/", "role": "FOUR_LOCAL_PACK_MANIFESTS"}
+        {
+          "path": "ignition/tools/toolbox_pack_registry_inspector.py",
+          "role": "FIXED_READ_ONLY_CATALOG_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/agent_runtime/",
+          "role": "PACK_REGISTRY_AND_PACKAGE_RUNTIME_SOURCE_TREE"
+        },
+        {
+          "path": "ignition/agent_kernel/",
+          "role": "PACK_REGISTRY_KERNEL_CONTRACT_DEPENDENCY_TREE"
+        },
+        {
+          "path": "ignition/packs/",
+          "role": "FOUR_LOCAL_PACK_MANIFESTS"
+        }
       ],
       "dependencies": [
         "ignition/agent_runtime/",
@@ -342,21 +427,36 @@
         "The task needs current information outside the local repository snapshot.",
         "The requested Pack ID is missing or its manifest source is ambiguous."
       ],
-      "accepted_input_types": ["Pack metadata list request", "local Pack ID"],
-      "output_types": ["declared Pack metadata", "declared capability route list", "manifest and source-tree SHA-256 references"],
+      "accepted_input_types": [
+        "Pack metadata list request",
+        "local Pack ID"
+      ],
+      "output_types": [
+        "declared Pack metadata",
+        "declared capability route list",
+        "manifest and source-tree SHA-256 references"
+      ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
       "explicit_owner_authorization_required": false,
       "permissions": {
-        "read_paths": ["ignition/packs/", "ignition/agent_runtime/", "ignition/agent_kernel/"],
+        "read_paths": [
+          "ignition/packs/",
+          "ignition/agent_runtime/",
+          "ignition/agent_kernel/"
+        ],
         "write_paths": [],
         "network": false,
         "secrets": false,
         "billing": false,
         "external_actions": false
       },
-      "side_effects": ["Writes JSON only to stdout or error text to stderr; does not load, activate, or execute any Pack hook and creates no repository files."],
-      "runtime_dependencies": ["Python >=3.9 standard library"],
+      "side_effects": [
+        "Writes JSON only to stdout or error text to stderr; does not load, activate, or execute any Pack hook and creates no repository files."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
       "estimated_cost": {
         "status": "UNKNOWN",
         "basis": "The command imports the local Agent Runtime package and hashes its source trees; no latency or memory benchmark has been established."
@@ -387,6 +487,116 @@
         "Never select it to execute hooks or infer that declared routes are callable."
       ],
       "claim_ceiling": "Local Pack manifest declarations and versioned capability-route metadata only; no Pack module is loaded, no hook is executed, and no declared capability is proved callable in another environment."
+    },
+    {
+      "tool_id": "foundation.read_current_asset_card",
+      "display_name": {
+        "zh": "Current Foundation 身份卡读取器",
+        "en": "Current Foundation record reader"
+      },
+      "description": "Read one exact canonical ID from the checked-out Current function-identity or non-function-claim registry; return the complete stored record and verify its record SHA-256.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_read_current_asset_card.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_read_current_asset_card.py --stdin (stdin JSON: {\"canonical_id\":\"<exact Current ID>\"})",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_read_current_asset_card.py",
+          "role": "READ_ONLY_TOOL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+          "role": "CURRENT_FUNCTION_IDENTITY_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+          "role": "CURRENT_NONFUNCTION_CLAIM_AUTHORITY"
+        }
+      ],
+      "dependencies": [
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+      ],
+      "good_for": [
+        "Read the complete current record after the caller already has an exact canonical ID.",
+        "Inspect the record kind, authority fields, evidence references, use boundaries, and verified record digest in one deterministic JSON result."
+      ],
+      "not_for": [
+        "Discovering IDs, resolving aliases or historical references, fuzzy search, or selecting between ambiguous records.",
+        "Checking that linked source files still support the record, validating scientific claims, or establishing proof or external validity.",
+        "Changing registries or writing a dossier into the repository."
+      ],
+      "only_if": [
+        "The caller supplies one exact canonical ID already listed in a Current registry.",
+        "The function identity and non-function claim registries are available in the same checked-out snapshot.",
+        "The caller accepts a full record payload on stdout and record-level SHA-256 verification only."
+      ],
+      "counterindicated_when": [
+        "The input is a title, alias, historical path, natural-language query, or uncertain identifier.",
+        "The task needs fresh external evidence, independent source-anchor checking, scientific adjudication, or an authority upgrade.",
+        "The caller needs only a compact yes/no identity resolution; use the existing resolver instead."
+      ],
+      "accepted_input_types": [
+        "JSON stdin object containing exactly one exact canonical_id string"
+      ],
+      "output_types": [
+        "complete Current function-identity card or non-function claim record",
+        "verified record digest and hashes of both registry snapshots"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/data/foundation/function-assets/identity-cards.jsonl",
+          "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Writes the record result only to stdout; invalid input or unavailable/corrupt authorities return a nonzero status and no partial stdout."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Both checked-out JSONL registries are scanned per call; latency and memory have not been benchmarked."
+      },
+      "alternatives": [
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The batch resolver accepts aliases and historical references but returns bounded resolution rows; this reader accepts one canonical ID and returns its full current registry record."
+        }
+      ],
+      "fallback": "Use foundation.batch_resolve_current_asset_references to confirm exact Current identity resolution; for full record content, read the authority row through a separately approved repository reader and verify its record_sha256.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_read_current_asset_card.py",
+          "ignition/tests/test_current_canonical_resolution.py"
+        ],
+        "negative_controls": [
+          "Aliases, titles, paths, malformed IDs, and unknown IDs are rejected without partial stdout.",
+          "A duplicate canonical ID across function and claim registries, a corrupt record hash, or a symlinked authority fails closed.",
+          "The result marks only the stored record hash as verified and states that linked-source support and scientific validity are not established."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Include only through an explicit experimental-tool allowlist when the task requires a full current record for an already-known canonical ID.",
+        "The route proposal does not execute the reader; the caller separately supplies the exact ID.",
+        "Do not select for discovery, alias resolution, source verification, scientific judgment, or truth/authority decisions."
+      ],
+      "claim_ceiling": "One exact checked-out Current registry record, with its stored record hash verified and both identity registries source-hashed; no truth, proof, external validity, or independent source-anchor verification is inferred."
     }
   ]
 }

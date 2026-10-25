@@ -98,6 +98,28 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(included["execution_authorized"])
 
+    def test_current_asset_record_reader_is_excluded_until_explicitly_allowlisted(self) -> None:
+        task = profile(
+            "read-full-current-foundation-record",
+            ["JSON stdin object containing exactly one exact canonical_id string"],
+            [
+                "complete Current function-identity card or non-function claim record",
+                "verified record digest and hashes of both registry snapshots",
+            ],
+        )
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["foundation.read_current_asset_card"],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["foundation.read_current_asset_card"],
+        )
+        self.assertFalse(included["execution_authorized"])
+
     def test_unknown_experimental_allowlist_id_is_reported(self) -> None:
         result = planner.plan_tool_route(
             profile("unknown-opt-in", ["article cluster ID"], ["source-backed cluster member brief"]),
