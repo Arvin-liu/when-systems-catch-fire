@@ -22,11 +22,13 @@ from tools.validate_human_front_door import (
     OPERATING_METHOD_LINK,
     PROJECT_IDENTITY_TEXT,
     README,
+    TOOLBOX_ENTRY_LINK,
     validate_component_navigation,
     validate_all,
     validate_ai_first_use_section,
     validate_readme_structure,
     validate_texts,
+    validate_toolbox_entry,
     validate_version_front_doors,
 )
 
@@ -70,6 +72,12 @@ class HumanFrontDoorTests(unittest.TestCase):
         architecture_start = self.readme.index("## 4. 整体架构")
         architecture_end = self.readme.index("## 5. 致谢")
         self.assertGreater(validate_component_navigation(self.readme[architecture_start:architecture_end]), 0)
+
+    def test_toolbox_entry_is_visible_and_resolves_to_generated_directory(self):
+        validate_toolbox_entry(self.readme)
+        self.assertIn(f"[点火工具箱 / 工具身份卡]({TOOLBOX_ENTRY_LINK})", self.readme)
+        with self.assertRaises(AssertionError):
+            validate_toolbox_entry(self.readme.replace(f"[点火工具箱 / 工具身份卡]({TOOLBOX_ENTRY_LINK})", "", 1))
 
     def test_ai_first_usage_entry_is_self_sufficient(self):
         validate_ai_first_use_section(self.readme)

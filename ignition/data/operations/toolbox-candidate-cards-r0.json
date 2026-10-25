@@ -1,0 +1,195 @@
+{
+  "schema_version": "toolbox-candidate-cards-r0",
+  "catalog_status": "NON_CURRENT_OPTIONAL_EXTENSION",
+  "source_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+  "source_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "claim_ceiling": "Optional candidate tool declarations only; these cards do not change the Current operation registry, grant permission, imply automatic use, or establish scientific validity.",
+  "candidates": [
+    {
+      "tool_id": "knowledge.cluster_source_brief",
+      "display_name": {
+        "zh": "文章簇来源简报",
+        "en": "Article-cluster source brief"
+      },
+      "description": "Render a deterministic source brief for declared article-cluster IDs from the repository's existing asset-card corpus.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_cluster_source_brief.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_cluster_source_brief.py C000",
+      "source_refs": [
+        {"path": "ignition/tools/toolbox_cluster_source_brief.py", "role": "READ_ONLY_TOOL_ENTRYPOINT"},
+        {"path": "ignition/tools/extract_cluster_source_brief.py", "role": "BRIEF_RENDERER_AND_RECEIPT_BUILDER"},
+        {"path": "ignition/analysis/corpus-relation/article_cluster_candidates.json", "role": "CLUSTER_SNAPSHOT"},
+        {"path": "ignition/tools/build_corpus_relation_graph.py", "role": "CARD_PARSER"},
+        {"path": "ignition/KNOWLEDGE/cards/", "role": "GOVERNED_ASSET_CARD_CORPUS"}
+      ],
+      "dependencies": [
+        "ignition/analysis/corpus-relation/article_cluster_candidates.json",
+        "ignition/KNOWLEDGE/cards/",
+        "ignition/tools/build_corpus_relation_graph.py",
+        "ignition/tools/extract_cluster_source_brief.py"
+      ],
+      "good_for": [
+        "Preparing a source-linked inventory of the members and declared status of a known article cluster.",
+        "Finding source and evidence fields already recorded in the repository's governed asset cards."
+      ],
+      "not_for": [
+        "Determining whether a cluster's claims are true.",
+        "Producing a finished or publication-approved article.",
+        "Looking up clusters or sources outside the checked-out repository snapshot."
+      ],
+      "only_if": [
+        "The requested cluster ID exists in ignition/analysis/corpus-relation/article_cluster_candidates.json.",
+        "The governed Knowledge card corpus and source parser are available in the same checkout."
+      ],
+      "counterindicated_when": [
+        "The task requires live or freshly updated external sources.",
+        "The task asks for scientific adjudication, proof, or external evidence validation.",
+        "The cluster snapshot is stale for the user's requested time period."
+      ],
+      "accepted_input_types": ["article cluster ID"],
+      "output_types": ["source-backed cluster member brief", "source and output digest receipt"],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/KNOWLEDGE/cards/",
+          "ignition/analysis/corpus-relation/article_cluster_candidates.json",
+          "ignition/tools/build_corpus_relation_graph.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": ["Writes only the JSON receipt to stdout; does not create or overwrite repository files."],
+      "runtime_dependencies": ["Python >=3.9 standard library"],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable timing, token, memory, or compute-cost profile has been established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "knowledge.read_foundation",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The registered operation provides source-bounded knowledge summaries but does not render this cluster-member brief contract."
+        }
+      ],
+      "fallback": "If the cluster ID or source data is unavailable, stop and report the missing reference; read the canonical asset cards manually without substituting an inferred cluster.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_cluster_source_brief_tool.py"
+        ],
+        "negative_controls": [
+          "Unknown cluster ID returns nonzero and emits no partial brief.",
+          "--stdout creates or overwrites no repository file."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only include through an explicit experimental-tool allowlist for source-brief tasks.",
+        "Do not invoke after selection without the task's own user authorization and input."
+      ],
+      "claim_ceiling": "A formatted projection of repository-local cluster metadata and asset-card fields only; no truth, proof, external evidence, article quality, acceptance, or publication status is inferred."
+    },
+    {
+      "tool_id": "ignition.adaptive_toolbox_route_planner",
+      "display_name": {
+        "zh": "点火工具组合路由预览",
+        "en": "Ignition toolbox route preview"
+      },
+      "description": "Select a sufficient set of registered operations for exact input and output requirements, optionally considering explicitly allowlisted experimental cards.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "entrypoint": "python3 -B ignition/tools/operations/plan_ignition_operation_run.py --route-request",
+      "source_refs": [
+        {"path": "ignition/data/operations/ignition-operation-capability-registry-r1.json", "role": "CURRENT_OPERATION_AUTHORITY"},
+        {"path": "ignition/data/operations/toolbox-candidate-cards-r0.json", "role": "OPT_IN_CANDIDATE_CARDS"},
+        {"path": "ignition/tools/operations/classify_ignition_run_mode.py", "role": "EXECUTION_MODE_CLASSIFIER_DEPENDENCY"}
+      ],
+      "dependencies": [
+        "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "ignition/tools/operations/classify_ignition_run_mode.py"
+      ],
+      "good_for": [
+        "Planning routes from explicit input types and required output types.",
+        "Showing when a task needs one operation, complementary operations, or remains uncovered.",
+        "Keeping experimental tools opt-in and returning an explicit incomplete result when no declared route covers a requirement."
+      ],
+      "not_for": [
+        "Inferring the task contract from unstructured natural language.",
+        "Calling, dispatching, or executing selected operations.",
+        "Granting permissions, Owner approval, or scientific authority.",
+        "Claiming measured cost optimality or a globally minimal set."
+      ],
+      "only_if": [
+        "The caller supplies exact input types, required outputs, allowed modes, and a nonblank Current reference string; the planner echoes that string without resolving it.",
+        "The operation registry and pinned experimental candidate-card source are present."
+      ],
+      "counterindicated_when": [
+        "Task requirements cannot be expressed with the declared input/output types.",
+        "The caller needs actual tool execution or a scientific conclusion rather than a route proposal.",
+        "The current operation registry no longer matches the candidate-card source pin."
+      ],
+      "accepted_input_types": ["typed toolbox route profile on stdin"],
+      "output_types": ["typed route proposal", "covered and unmet output list", "candidate rejection reasons"],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+          "ignition/data/operations/toolbox-candidate-cards-r0.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": ["stdout only"],
+      "runtime_dependencies": ["Python >=3.9 standard library"],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The selection run is local, but no calibrated latency, memory, or compute-cost comparison exists."
+      },
+      "alternatives": [
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "relationship": "NOT_EQUIVALENT",
+          "reason": "The existing single-operation lifecycle planner resolves one declared operation; this preview selects a typed set and still does not execute it."
+        }
+      ],
+      "fallback": "If exact typed coverage is unavailable, return INCOMPLETE and use the existing single-operation planner or report the missing capability; never guess an operation from natural-language similarity.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_ignition_operation_lifecycle.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "negative_controls": [
+          "Owner-deferred, historical, unsupported, and external-action operations are not selected.",
+          "Experimental tools remain excluded unless their IDs are explicitly allowlisted.",
+          "Unknown required outputs yield INCOMPLETE and do not cause dispatch."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Invoke only when a task explicitly needs an auditable operation-set proposal.",
+        "A route proposal never authorizes invocation; each selected tool is separately checked at call time."
+      ],
+      "claim_ceiling": "A deterministic proposal based on declared contracts only; completion quality, measured cost, invocation, permission, Owner approval, and scientific validity remain unverified."
+    }
+  ]
+}

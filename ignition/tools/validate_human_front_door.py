@@ -56,6 +56,7 @@ ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architec
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
 ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
 ARCHITECTURE_INTERACTION_HINT = "可缩放、拖动、搜索节点并查看关联"
+TOOLBOX_ENTRY_LINK = "../ignition/TOOLBOX.md"
 AI_FIRST_USE_HEADING = "2. 点火操作法 / 如何使用"
 OPERATING_METHOD_LINK = "../ignition/OPERATING-METHOD.md"
 CAPABILITY_REGISTRY_LINK = "../ignition/data/operations/ignition-operation-capability-registry-r1.json"
@@ -171,6 +172,13 @@ def validate_component_navigation(architecture: str) -> int:
     return link_count
 
 
+def validate_toolbox_entry(readme: str) -> None:
+    label = "[点火工具箱 / 工具身份卡]"
+    require(readme.count(f"{label}({TOOLBOX_ENTRY_LINK})") == 1, "README must expose one direct Toolbox and identity-card entry")
+    candidate, fragment = _resolve_readme_link(TOOLBOX_ENTRY_LINK)
+    require(candidate.is_file() and not fragment, "README Toolbox entry must resolve to the generated directory")
+
+
 def validate_ai_first_use_section(readme: str) -> None:
     section = _section_text(readme, AI_FIRST_USE_HEADING)
     require("<details" not in section.casefold(), "README AI-first usage entry must remain directly visible")
@@ -256,6 +264,7 @@ def validate_readme_structure(readme: str) -> None:
     require(CHARTER_LINK in values_text, "README value charter link is missing or not canonical")
     require("点火是一个仓库原生" not in readme, "README must not retain the superseded project definition")
     validate_ai_first_use_section(readme)
+    validate_toolbox_entry(readme)
     lowered = readme.casefold()
     for token in FORBIDDEN_HOMEPAGE_MACHINE_TOKENS:
         require(token.casefold() not in lowered, f"README must not contain machine Current state: {token}")

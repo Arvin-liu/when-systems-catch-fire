@@ -1,0 +1,2356 @@
+{
+  "schema_version": "toolbox-identity-cards-r0",
+  "authority_boundary": "GENERATED_DISCOVERY_PROJECTION; CURRENT_OPERATION_REGISTRY_AND_PINNED_CANDIDATE_CARDS_REMAIN_THE_SOURCES",
+  "current_registry": {
+    "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "operation_count": 20
+  },
+  "candidate_cards": {
+    "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "blob_sha1": "593449134ec20d97139c9cb2663b113a5433c10a",
+    "candidate_count": 2
+  },
+  "cards": [
+    {
+      "tool_id": "executor.reference_conformance",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "REFERENCE_ONLY",
+      "name": {
+        "zh": "Reference Executor 一致性边界",
+        "en": "Reference Executor conformance boundary"
+      },
+      "can_do": "Expose the frozen local executor only as a reference, conformance and minimal fallback boundary.",
+      "good_for": {
+        "accepted_inputs": [
+          "executor compatibility status query"
+        ],
+        "declared_outputs": [
+          "reference/conformance boundary report"
+        ],
+        "operation_class": "EXECUTOR_ORCHESTRATION"
+      },
+      "cannot_do": [
+        "Not a default or production executor.",
+        "Cannot grant Owner, truth, permission, network, channel, billing or epistemic authority."
+      ],
+      "only_if": [
+        "Current status is REFERENCE_ONLY and callability is STATUS_ONLY.",
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/data/agent-federation/os-executor-ownership-r1.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "executor compatibility status query"
+      ],
+      "output_types": [
+        "reference/conformance boundary report"
+      ],
+      "permission": {
+        "ai_callability": "STATUS_ONLY",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/data/agent-federation/os-executor-ownership-r1.json",
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/docs/architecture/external-agent-federation-r1.md",
+        "ignition/tools/validate_federation_ownership.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/data/architecture/current-system-identity.json",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "909851f47ca749a5911d2064d1bfbdbcde9b8a07"
+          },
+          {
+            "path": "ignition/data/agent-federation/os-executor-ownership-r1.json",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "77442a75a202deaa2b2b0b63568e10bd3ed6985a"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_federation_ownership.py"
+        ],
+        "claim_ceiling": "Reference and conformance compatibility only; no live execution, production safety, external completion or authority upgrade."
+      },
+      "router_selectable_by_default": false
+    },
+    {
+      "tool_id": "external.live_invocation",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "OWNER_DEFERRED",
+      "name": {
+        "zh": "外部 Agent 实时调用",
+        "en": "Live external Agent invocation"
+      },
+      "can_do": "Represent the live external execution obligation and its current admission boundary without starting a process.",
+      "good_for": {
+        "accepted_inputs": [
+          "explicit Owner external-action request",
+          "executor admission evidence"
+        ],
+        "declared_outputs": [
+          "deferred status",
+          "admission decision",
+          "bounded execution receipt if separately authorized and validated"
+        ],
+        "operation_class": "EXECUTOR_ORCHESTRATION"
+      },
+      "cannot_do": [
+        "OPEN and OWNER_DEFERRED with zero validated completions.",
+        "No automatic resume; explicit Owner reopening and a prepared, installed and attested local environment are prerequisites.",
+        "Dispatch, process observation, inference observation, result return and validated completion remain separate facts."
+      ],
+      "only_if": [
+        "Current status is OWNER_DEFERRED and callability is STATUS_ONLY.",
+        "ignition/data/operations/open-obligation-registry-r1.json",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/agent-federation/executor-inventory-r1.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than EXTERNAL_ACTION_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "explicit Owner external-action request",
+        "executor admission evidence"
+      ],
+      "output_types": [
+        "deferred status",
+        "admission decision",
+        "bounded execution receipt if separately authorized and validated"
+      ],
+      "permission": {
+        "ai_callability": "STATUS_ONLY",
+        "execution_mode": "EXTERNAL_ACTION_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "EXPLICIT_OWNER_AUTHORIZATION_AND_CURRENT_ADMISSION",
+        "explicit_owner_authorization_required": true
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "EXPLICIT_OWNER_AUTHORIZATION_AND_CURRENT_ADMISSION"
+      },
+      "dependencies": [
+        "ignition/data/agent-federation/executor-inventory-r1.json",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/operations/open-obligation-registry-r1.json",
+        "ignition/docs/architecture/external-agent-federation-r1.md",
+        "ignition/docs/architecture/os-control-plane-r2.md",
+        "ignition/tools/validate_federation_ownership.py",
+        "ignition/tools/validate_open_obligation_registry.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/data/operations/open-obligation-registry-r1.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "fc3c46072937e225f066b25cf6d740a605c355ac"
+          },
+          {
+            "path": "ignition/data/architecture/current-facts.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "cf1dd8faef5e81d95dfe941aee5edfc6157e3bca"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_open_obligation_registry.py",
+          "ignition/tools/validate_federation_ownership.py"
+        ],
+        "claim_ceiling": "Deferred capability status and admission boundary only; no live process, validated completion, external truth or production readiness."
+      },
+      "router_selectable_by_default": false
+    },
+    {
+      "tool_id": "foundation.resolve_current_asset",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "解析 Current canonical 资产",
+        "en": "Resolve a Current canonical asset"
+      },
+      "can_do": "Resolve function, claim and legacy references through Current identity, migration, evolution and alias authorities.",
+      "good_for": {
+        "accepted_inputs": [
+          "canonical id",
+          "legacy id",
+          "alias",
+          "natural-language asset query"
+        ],
+        "declared_outputs": [
+          "canonical identity match",
+          "migration relation",
+          "unresolved reference status"
+        ],
+        "operation_class": "KNOWLEDGE"
+      },
+      "cannot_do": [
+        "Aliases and search hits are navigation aids, not canonical identity by themselves.",
+        "Unresolved legacy references must fail closed rather than be reconstructed from model memory.",
+        "Canonical registration does not prove truth or external validity."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/data/foundation/function-assets/closure-summary.json",
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/data/governance/knowledge-experience/manifest.json",
+        "ignition/docs/foundation/migration.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "canonical id",
+        "legacy id",
+        "alias",
+        "natural-language asset query"
+      ],
+      "output_types": [
+        "canonical identity match",
+        "migration relation",
+        "unresolved reference status"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/KNOWLEDGE/EVOLUTION.md",
+        "ignition/data/foundation/function-assets/closure-summary.json",
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/data/governance/knowledge-experience/manifest.json",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/docs/foundation/migration.md",
+        "ignition/tools/foundation/validate_function_asset_closure.py",
+        "ignition/tools/foundation/validate_nonfunction_claim_closure.py",
+        "ignition/tools/governance/validate_knowledge_experience.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "739a72378120b6777bafe930f020f22eb141d112"
+          },
+          {
+            "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "81d0cd8dfc5273b0879effc6ff9a62e166d0b172"
+          },
+          {
+            "path": "ignition/docs/foundation/migration.md",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "ee5ed2716ba095e87b7276cac7321cef38a6e0ba"
+          },
+          {
+            "path": "ignition/KNOWLEDGE/EVOLUTION.md",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "038682d0e9f93f0f31f3d763bc001e50617bb684"
+          },
+          {
+            "path": "ignition/data/governance/knowledge-experience/manifest.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "e87a13598ede79d7428003586f2bd8eed3710b2c"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/foundation/validate_function_asset_closure.py",
+          "ignition/tools/foundation/validate_nonfunction_claim_closure.py",
+          "ignition/tools/governance/validate_knowledge_experience.py"
+        ],
+        "claim_ceiling": "Repository-local identity and migration resolution only; no proof, evidence upgrade or external truth."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "ignition.adaptive_toolbox_route_planner",
+      "display_name": {
+        "zh": "点火工具组合路由预览",
+        "en": "Ignition toolbox route preview"
+      },
+      "description": "Select a sufficient set of registered operations for exact input and output requirements, optionally considering explicitly allowlisted experimental cards.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "entrypoint": "python3 -B ignition/tools/operations/plan_ignition_operation_run.py --route-request",
+      "source_refs": [
+        {
+          "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+          "role": "CURRENT_OPERATION_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+          "role": "OPT_IN_CANDIDATE_CARDS"
+        },
+        {
+          "path": "ignition/tools/operations/classify_ignition_run_mode.py",
+          "role": "EXECUTION_MODE_CLASSIFIER_DEPENDENCY"
+        }
+      ],
+      "dependencies": [
+        "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "ignition/tools/operations/classify_ignition_run_mode.py"
+      ],
+      "good_for": [
+        "Planning routes from explicit input types and required output types.",
+        "Showing when a task needs one operation, complementary operations, or remains uncovered.",
+        "Keeping experimental tools opt-in and returning an explicit incomplete result when no declared route covers a requirement."
+      ],
+      "not_for": [
+        "Inferring the task contract from unstructured natural language.",
+        "Calling, dispatching, or executing selected operations.",
+        "Granting permissions, Owner approval, or scientific authority.",
+        "Claiming measured cost optimality or a globally minimal set."
+      ],
+      "only_if": [
+        "The caller supplies exact input types, required outputs, allowed modes, and a nonblank Current reference string; the planner echoes that string without resolving it.",
+        "The operation registry and pinned experimental candidate-card source are present."
+      ],
+      "counterindicated_when": [
+        "Task requirements cannot be expressed with the declared input/output types.",
+        "The caller needs actual tool execution or a scientific conclusion rather than a route proposal.",
+        "The current operation registry no longer matches the candidate-card source pin."
+      ],
+      "accepted_input_types": [
+        "typed toolbox route profile on stdin"
+      ],
+      "output_types": [
+        "typed route proposal",
+        "covered and unmet output list",
+        "candidate rejection reasons"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+          "ignition/data/operations/toolbox-candidate-cards-r0.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "stdout only"
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The selection run is local, but no calibrated latency, memory, or compute-cost comparison exists."
+      },
+      "alternatives": [
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "relationship": "NOT_EQUIVALENT",
+          "reason": "The existing single-operation lifecycle planner resolves one declared operation; this preview selects a typed set and still does not execute it."
+        }
+      ],
+      "fallback": "If exact typed coverage is unavailable, return INCOMPLETE and use the existing single-operation planner or report the missing capability; never guess an operation from natural-language similarity.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_ignition_operation_lifecycle.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "negative_controls": [
+          "Owner-deferred, historical, unsupported, and external-action operations are not selected.",
+          "Experimental tools remain excluded unless their IDs are explicitly allowlisted.",
+          "Unknown required outputs yield INCOMPLETE and do not cause dispatch."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Invoke only when a task explicitly needs an auditable operation-set proposal.",
+        "A route proposal never authorizes invocation; each selected tool is separately checked at call time."
+      ],
+      "claim_ceiling": "A deterministic proposal based on declared contracts only; completion quality, measured cost, invocation, permission, Owner approval, and scientific validity remain unverified.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "a329c8e438429bffad0daa33dbe7525e54831f67",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "593449134ec20d97139c9cb2663b113a5433c10a"
+        },
+        {
+          "path": "ignition/tools/operations/classify_ignition_run_mode.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "d2c437cbeb46d68d72a86a00c98b0f91faeca8e1"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "593449134ec20d97139c9cb2663b113a5433c10a",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
+      "tool_id": "ignition.recover_current_state",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT",
+      "name": {
+        "zh": "恢复点火 Current 状态",
+        "en": "Recover Ignition Current state"
+      },
+      "can_do": "Recover repository identity, formal task, lifecycle, open obligations, current method, current map and minimum read order before interpreting a user task.",
+      "good_for": {
+        "accepted_inputs": [
+          "Ignition repository URL",
+          "repository checkout",
+          "Current state query"
+        ],
+        "declared_outputs": [
+          "Current identity snapshot",
+          "minimum authority read plan",
+          "open-obligation boundary"
+        ],
+        "operation_class": "CURRENT_RECOVERY"
+      },
+      "cannot_do": [
+        "Recovers what is Current and where authority lives; it does not itself choose or execute a user-facing domain operation.",
+        "Repository Current evidence is not external truth, production readiness or Owner acceptance."
+      ],
+      "only_if": [
+        "Current status is CURRENT and callability is PUBLIC.",
+        "ignition/AI-START-HERE.md",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/operations/current-snapshot-r1.json",
+        "ignition/data/operations/open-obligation-registry-r1.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "Ignition repository URL",
+        "repository checkout",
+        "Current state query"
+      ],
+      "output_types": [
+        "Current identity snapshot",
+        "minimum authority read plan",
+        "open-obligation boundary"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/AI-START-HERE.md",
+        "ignition/STATE-CHANGELOG.md",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/operations/current-snapshot-r1.json",
+        "ignition/data/operations/open-obligation-registry-r1.json",
+        "ignition/docs/project-current-state.md",
+        "ignition/tools/validate_current_state_sync.py",
+        "ignition/tools/validate_state_changelog.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/AI-START-HERE.md",
+            "role": "METHOD_AUTHORITY",
+            "blob_sha1": "2b8c2f5acab807c1aef9bdedb734fea18f81bfe9"
+          },
+          {
+            "path": "ignition/data/architecture/current-facts.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "cf1dd8faef5e81d95dfe941aee5edfc6157e3bca"
+          },
+          {
+            "path": "ignition/data/operations/current-snapshot-r1.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "69b1f95e8013e4199403b860964e326c6fc9ccfc"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_current_state_sync.py",
+          "ignition/tools/validate_state_changelog.py"
+        ],
+        "claim_ceiling": "Deterministic repository-local Current recovery only; no external truth, permission or epistemic upgrade."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "knowledge.cluster_source_brief",
+      "display_name": {
+        "zh": "文章簇来源简报",
+        "en": "Article-cluster source brief"
+      },
+      "description": "Render a deterministic source brief for declared article-cluster IDs from the repository's existing asset-card corpus.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_cluster_source_brief.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_cluster_source_brief.py C000",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_cluster_source_brief.py",
+          "role": "READ_ONLY_TOOL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/tools/extract_cluster_source_brief.py",
+          "role": "BRIEF_RENDERER_AND_RECEIPT_BUILDER"
+        },
+        {
+          "path": "ignition/analysis/corpus-relation/article_cluster_candidates.json",
+          "role": "CLUSTER_SNAPSHOT"
+        },
+        {
+          "path": "ignition/tools/build_corpus_relation_graph.py",
+          "role": "CARD_PARSER"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/cards/",
+          "role": "GOVERNED_ASSET_CARD_CORPUS"
+        }
+      ],
+      "dependencies": [
+        "ignition/analysis/corpus-relation/article_cluster_candidates.json",
+        "ignition/KNOWLEDGE/cards/",
+        "ignition/tools/build_corpus_relation_graph.py",
+        "ignition/tools/extract_cluster_source_brief.py"
+      ],
+      "good_for": [
+        "Preparing a source-linked inventory of the members and declared status of a known article cluster.",
+        "Finding source and evidence fields already recorded in the repository's governed asset cards."
+      ],
+      "not_for": [
+        "Determining whether a cluster's claims are true.",
+        "Producing a finished or publication-approved article.",
+        "Looking up clusters or sources outside the checked-out repository snapshot."
+      ],
+      "only_if": [
+        "The requested cluster ID exists in ignition/analysis/corpus-relation/article_cluster_candidates.json.",
+        "The governed Knowledge card corpus and source parser are available in the same checkout."
+      ],
+      "counterindicated_when": [
+        "The task requires live or freshly updated external sources.",
+        "The task asks for scientific adjudication, proof, or external evidence validation.",
+        "The cluster snapshot is stale for the user's requested time period."
+      ],
+      "accepted_input_types": [
+        "article cluster ID"
+      ],
+      "output_types": [
+        "source-backed cluster member brief",
+        "source and output digest receipt"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/KNOWLEDGE/cards/",
+          "ignition/analysis/corpus-relation/article_cluster_candidates.json",
+          "ignition/tools/build_corpus_relation_graph.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Writes only the JSON receipt to stdout; does not create or overwrite repository files."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable timing, token, memory, or compute-cost profile has been established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "knowledge.read_foundation",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The registered operation provides source-bounded knowledge summaries but does not render this cluster-member brief contract."
+        }
+      ],
+      "fallback": "If the cluster ID or source data is unavailable, stop and report the missing reference; read the canonical asset cards manually without substituting an inferred cluster.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_cluster_source_brief_tool.py"
+        ],
+        "negative_controls": [
+          "Unknown cluster ID returns nonzero and emits no partial brief.",
+          "--stdout creates or overwrites no repository file."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only include through an explicit experimental-tool allowlist for source-brief tasks.",
+        "Do not invoke after selection without the task's own user authorization and input."
+      ],
+      "claim_ceiling": "A formatted projection of repository-local cluster metadata and asset-card fields only; no truth, proof, external evidence, article quality, acceptance, or publication status is inferred.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "493513e3966d02214692918b847f4c4e92d81884",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_cluster_source_brief.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "493513e3966d02214692918b847f4c4e92d81884"
+        },
+        {
+          "path": "ignition/tools/extract_cluster_source_brief.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "2d0c1d623220bb94ea18aaea6004c7c49c36c9e1"
+        },
+        {
+          "path": "ignition/analysis/corpus-relation/article_cluster_candidates.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "e1320ada12f3b4a21038ba284183a2493d27fd45"
+        },
+        {
+          "path": "ignition/tools/build_corpus_relation_graph.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "590e5e27bb794639b76cc80a7f5cb5fd77ff9c0d"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/cards/",
+          "hash_kind": "SHA256_FILE_TREE_R0",
+          "sha256": "ce86c1e13b22c09cee66c06c7e72266ce60a6e5c4f8a649430605019f719d4dd",
+          "file_count": 14
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "593449134ec20d97139c9cb2663b113a5433c10a",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
+      "tool_id": "knowledge.collide_object",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "运行受约束对象碰撞",
+        "en": "Run a bounded object collision"
+      },
+      "can_do": "Decompose a user-supplied note, article, case, argument or source object; preserve provenance; collide it with Current function and non-function canonical registries; and separate source-derived content from bounded post-collision increments.",
+      "good_for": {
+        "accepted_inputs": [
+          "note",
+          "article",
+          "case",
+          "argument",
+          "source material",
+          "structured collision run"
+        ],
+        "declared_outputs": [
+          "provenance-preserving object decomposition",
+          "verified canonical collision matches",
+          "bounded relationship findings",
+          "unregistered candidate-new records"
+        ],
+        "operation_class": "KNOWLEDGE"
+      },
+      "cannot_do": [
+        "Canonical registry matches establish repository identity and relationship evidence, not truth, proof, external evidence or novelty.",
+        "Input-explicit viewpoints remain source-derived and cannot be counted as Ignition discoveries.",
+        "CANDIDATE_NEW requires actual nearest canonical matches and never writes a registry automatically.",
+        "Undefined percentages, similarity scores and isomorphism scores are prohibited."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/OPERATING-METHOD.md",
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "note",
+        "article",
+        "case",
+        "argument",
+        "source material",
+        "structured collision run"
+      ],
+      "output_types": [
+        "provenance-preserving object decomposition",
+        "verified canonical collision matches",
+        "bounded relationship findings",
+        "unregistered candidate-new records"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/OPERATING-METHOD.md",
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/schemas/operations/ignition-object-collision-run-r1.schema.json",
+        "ignition/tests/test_ignition_object_collision.py",
+        "ignition/tools/operations/evaluate_object_collision_run.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/OPERATING-METHOD.md",
+            "role": "METHOD_AUTHORITY",
+            "blob_sha1": "4acaee30d0e300c16746d828d84539df4414a33d"
+          },
+          {
+            "path": "ignition/schemas/operations/ignition-object-collision-run-r1.schema.json",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "78adff41b3a94916d84036500fe4469b4afa2241"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/operations/evaluate_object_collision_run.py",
+          "ignition/tests/test_ignition_object_collision.py"
+        ],
+        "claim_ceiling": "Repository-local object decomposition and canonical collision relation only; no candidate registration, truth, evidence, proof, causality, novelty or epistemic acceptance."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "knowledge.project_results",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "投影受约束知识结果",
+        "en": "Project bounded knowledge results"
+      },
+      "can_do": "Route a declared result record into bounded Knowledge result projections without upgrading its epistemic state.",
+      "good_for": {
+        "accepted_inputs": [
+          "result_record",
+          "epistemic_correction"
+        ],
+        "declared_outputs": [
+          "bounded result projection",
+          "projection validation report"
+        ],
+        "operation_class": "KNOWLEDGE"
+      },
+      "cannot_do": [
+        "The Pack Bus routes a proposal and does not execute hooks.",
+        "Projection cannot increase claim, evidence, proof or acceptance status."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/data/governance/knowledge-experience/manifest.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "result_record",
+        "epistemic_correction"
+      ],
+      "output_types": [
+        "bounded result projection",
+        "projection validation report"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/governance/knowledge-experience/manifest.json",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/governance/knowledge-experience-layer.md",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/tools/governance/validate_knowledge_experience.py",
+        "ignition/tools/validate_pack_registry.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/knowledge/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "947f8d72f27b5abefc16c44707c3e60c28dc2575"
+          },
+          {
+            "path": "ignition/data/architecture/current-facts.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "cf1dd8faef5e81d95dfe941aee5edfc6157e3bca"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_pack_registry.py",
+          "ignition/tools/governance/validate_knowledge_experience.py"
+        ],
+        "claim_ceiling": "Bounded repository result projection only; no truth, evidence or epistemic upgrade."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "knowledge.read_foundation",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "读取 Foundation",
+        "en": "Read Foundation"
+      },
+      "can_do": "Read declared Foundation objects and Current knowledge entrances under Pack and claim-governance boundaries.",
+      "good_for": {
+        "accepted_inputs": [
+          "foundation_object",
+          "function_asset",
+          "nonfunction_assertion",
+          "natural-language knowledge query"
+        ],
+        "declared_outputs": [
+          "source-bounded knowledge summary",
+          "canonical source references"
+        ],
+        "operation_class": "KNOWLEDGE"
+      },
+      "cannot_do": [
+        "Navigation, registry closure and summaries do not prove substantive claims.",
+        "The Pack Bus is declarative and performs no hook execution."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/FOUNDATION.md",
+        "ignition/KNOWLEDGE/README.md",
+        "ignition/packs/knowledge/manifest.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "foundation_object",
+        "function_asset",
+        "nonfunction_assertion",
+        "natural-language knowledge query"
+      ],
+      "output_types": [
+        "source-bounded knowledge summary",
+        "canonical source references"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/FOUNDATION.md",
+        "ignition/KNOWLEDGE/README.md",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/tools/foundation/validate_foundation.py",
+        "ignition/tools/validate_pack_registry.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/knowledge/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "947f8d72f27b5abefc16c44707c3e60c28dc2575"
+          },
+          {
+            "path": "ignition/data/architecture/current-facts.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "cf1dd8faef5e81d95dfe941aee5edfc6157e3bca"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_pack_registry.py",
+          "ignition/tools/foundation/validate_foundation.py"
+        ],
+        "claim_ceiling": "Repository-local Foundation reading only; no independent truth, proof or evidence upgrade."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "knowledge.validate_claim",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "校验断言边界",
+        "en": "Validate claim boundaries"
+      },
+      "can_do": "Apply declared function and non-function claim governance checks without inferring human-review passes.",
+      "good_for": {
+        "accepted_inputs": [
+          "claim",
+          "function_asset",
+          "nonfunction_assertion",
+          "proof_obligation"
+        ],
+        "declared_outputs": [
+          "claim-governance findings",
+          "required human review",
+          "bounded adjudication status"
+        ],
+        "operation_class": "VALIDATION_AUDIT"
+      },
+      "cannot_do": [
+        "Formal maturity and external evidence remain independent.",
+        "Unautomatable gates return human review rather than inferred PASS.",
+        "Quarantine or closure does not establish truth."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/packs/knowledge/manifest.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "claim",
+        "function_asset",
+        "nonfunction_assertion",
+        "proof_obligation"
+      ],
+      "output_types": [
+        "claim-governance findings",
+        "required human review",
+        "bounded adjudication status"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/tools/foundation/validate_claim_governance.py",
+        "ignition/tools/foundation/validate_nonfunction_claim_closure.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/knowledge/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "947f8d72f27b5abefc16c44707c3e60c28dc2575"
+          },
+          {
+            "path": "ignition/docs/foundation/claim-governance-and-function-identity.md",
+            "role": "METHOD_AUTHORITY",
+            "blob_sha1": "bba18ae75e10ff0118eaf6be020352e2ab51bf50"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/foundation/validate_claim_governance.py",
+          "ignition/tools/foundation/validate_nonfunction_claim_closure.py"
+        ],
+        "claim_ceiling": "Repository-local governance validation only; no truth, proof, evidence, causal or Owner-status upgrade."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "knowledge.validate_evidence_link",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "校验证据链接",
+        "en": "Validate an evidence link"
+      },
+      "can_do": "Check declared evidence-link structure, provenance and source relationship without treating a link as substantive confirmation.",
+      "good_for": {
+        "accepted_inputs": [
+          "evidence_link",
+          "source record",
+          "claim-to-source relation"
+        ],
+        "declared_outputs": [
+          "provenance validation report",
+          "missing-evidence finding",
+          "scope mismatch"
+        ],
+        "operation_class": "VALIDATION_AUDIT"
+      },
+      "cannot_do": [
+        "A valid link establishes traceability, not truth or replication.",
+        "Source presence cannot substitute for claim-specific support."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "evidence_link",
+        "source record",
+        "claim-to-source relation"
+      ],
+      "output_types": [
+        "provenance validation report",
+        "missing-evidence finding",
+        "scope mismatch"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/tools/validate_epistemic_governance_relationships.py",
+        "ignition/tools/validate_pack_registry.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/knowledge/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "947f8d72f27b5abefc16c44707c3e60c28dc2575"
+          },
+          {
+            "path": "ignition/docs/foundation/claim-governance-and-function-identity.md",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "bba18ae75e10ff0118eaf6be020352e2ab51bf50"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_pack_registry.py",
+          "ignition/tools/validate_epistemic_governance_relationships.py"
+        ],
+        "claim_ceiling": "Evidence-link structure and provenance validation only; no substantive confirmation or epistemic acceptance."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "language_thought.project_bounded_meaning",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "语言—思维受约束投影",
+        "en": "Bounded Language-Thought projection"
+      },
+      "can_do": "Normalize and project meaning across source and target language profiles while preserving framing delta and unmapped residue.",
+      "good_for": {
+        "accepted_inputs": [
+          "source text",
+          "proposition",
+          "translation request",
+          "target-language publication material"
+        ],
+        "declared_outputs": [
+          "normalized meaning candidate",
+          "target form candidate",
+          "framing delta",
+          "unmapped residue"
+        ],
+        "operation_class": "LANGUAGE_THOUGHT"
+      },
+      "cannot_do": [
+        "Meaning candidates are not language-independent truth.",
+        "Human review remains required for naturalness, literary quality and context-sensitive loss.",
+        "Language profiles do not establish strong linguistic determinism or different truth logics."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/docs/architecture/language-thought-logic-plane.md",
+        "ignition/data/language-thought/manifest.json",
+        "ignition/docs/language-thought/README.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "source text",
+        "proposition",
+        "translation request",
+        "target-language publication material"
+      ],
+      "output_types": [
+        "normalized meaning candidate",
+        "target form candidate",
+        "framing delta",
+        "unmapped residue"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/data/language-thought/manifest.json",
+        "ignition/docs/architecture/language-thought-logic-plane.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/language-thought/README.md",
+        "ignition/docs/publication/zhiyuan-writing-method.md",
+        "ignition/tests/test_language_thought_plane.py",
+        "ignition/tools/language_thought/validate_language_thought.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/docs/architecture/language-thought-logic-plane.md",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "749ac11bff29c9300db5e9e697a5d06ce265ea48"
+          },
+          {
+            "path": "ignition/data/language-thought/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "a680e725cb80f9748961d417f33aff4099724b2d"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/language_thought/validate_language_thought.py",
+          "ignition/tests/test_language_thought_plane.py"
+        ],
+        "claim_ceiling": "Bounded cross-language representation and audit only; no universal meaning, literary-quality or truth guarantee."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "maintenance.inspect_repository",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "检查仓库",
+        "en": "Inspect a repository"
+      },
+      "can_do": "Perform declared offline, read-only repository inspection through the Repository Maintenance Pack boundary.",
+      "good_for": {
+        "accepted_inputs": [
+          "repository_snapshot",
+          "declared repository path",
+          "offline maintenance query"
+        ],
+        "declared_outputs": [
+          "read-only inspection report",
+          "offline maintenance proposal"
+        ],
+        "operation_class": "REPOSITORY_MAINTENANCE"
+      },
+      "cannot_do": [
+        "Network and remote Git mutation are prohibited.",
+        "Pack Bus routing produces a proposal and does not execute hooks.",
+        "Inspection does not authorize repository change."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/agent_runtime/README.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "repository_snapshot",
+        "declared repository path",
+        "offline maintenance query"
+      ],
+      "output_types": [
+        "read-only inspection report",
+        "offline maintenance proposal"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/ITERATION.md",
+        "ignition/agent_runtime/README.md",
+        "ignition/docs/architecture/os-control-plane-r2.md",
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/tools/validate_agent_runtime_boundary.py",
+        "ignition/tools/validate_r2_offline_repository_maintenance.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/maintenance/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "e5a443456418cddaaa8d4ae2902a092b71b283d1"
+          },
+          {
+            "path": "ignition/agent_runtime/README.md",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_r2_offline_repository_maintenance.py",
+          "ignition/tools/validate_agent_runtime_boundary.py"
+        ],
+        "claim_ceiling": "Offline read-only repository inspection only; no mutation, remote publication or production claim."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "maintenance.validate_checkpoint",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "校验仓库 checkpoint",
+        "en": "Validate a repository checkpoint"
+      },
+      "can_do": "Validate bounded repository checkpoint and runtime-boundary evidence without publishing or mutating remote state.",
+      "good_for": {
+        "accepted_inputs": [
+          "checkpoint_receipt",
+          "repository_snapshot",
+          "offline validation request"
+        ],
+        "declared_outputs": [
+          "checkpoint validation report",
+          "bounded failure finding"
+        ],
+        "operation_class": "VALIDATION_AUDIT"
+      },
+      "cannot_do": [
+        "A passing checkpoint does not imply accepted, merged, Current, deployed or externally valid state.",
+        "Remote Git mutation remains prohibited."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/agent_runtime/README.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "checkpoint_receipt",
+        "repository_snapshot",
+        "offline validation request"
+      ],
+      "output_types": [
+        "checkpoint validation report",
+        "bounded failure finding"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/ITERATION.md",
+        "ignition/agent_runtime/README.md",
+        "ignition/docs/architecture/os-control-plane-r2.md",
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/tools/validate_agent_runtime_boundary.py",
+        "ignition/tools/validate_state_changelog.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/maintenance/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "e5a443456418cddaaa8d4ae2902a092b71b283d1"
+          },
+          {
+            "path": "ignition/agent_runtime/README.md",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "2e0fc318bacfbb505b165fc4c30575e169025795"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_agent_runtime_boundary.py",
+          "ignition/tools/validate_state_changelog.py"
+        ],
+        "claim_ceiling": "Repository-local checkpoint validation only; no publication, deployment, external completion or acceptance."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "repository.apply_iteration_method",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT",
+      "name": {
+        "zh": "按点火迭代操作法修改点火",
+        "en": "Change Ignition through the Iteration Method"
+      },
+      "can_do": "Govern explicitly authorized changes to Ignition through remote truth, gap, claim ceiling, propagation, validation, review, merge and receipt boundaries.",
+      "good_for": {
+        "accepted_inputs": [
+          "explicit Ignition repository change request",
+          "declared change manifest"
+        ],
+        "declared_outputs": [
+          "candidate repository change",
+          "validation evidence",
+          "Draft lifecycle record",
+          "merge/current receipt when separately authorized"
+        ],
+        "operation_class": "REPOSITORY_SELF_ITERATION"
+      },
+      "cannot_do": [
+        "Governs how Ignition changes itself; it is not the general protocol for using Ignition on an external object.",
+        "An open Draft PR is not Current and tests do not self-establish acceptance or merge.",
+        "Repository propagation is not reality causality."
+      ],
+      "only_if": [
+        "Current status is CURRENT and callability is PUBLIC_BOUNDED.",
+        "ignition/ITERATION.md",
+        "ignition/AI-START-HERE.md",
+        "ignition/data/operations/project-components.json",
+        "ignition/data/operations/change-propagation-topology.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than REPOSITORY_CHANGE_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "explicit Ignition repository change request",
+        "declared change manifest"
+      ],
+      "output_types": [
+        "candidate repository change",
+        "validation evidence",
+        "Draft lifecycle record",
+        "merge/current receipt when separately authorized"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "REPOSITORY_CHANGE_RUN",
+        "repository_mutation": "EXPLICIT_USER_OR_OWNER_AUTHORIZATION_AND_ITERATION_METHOD",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": true
+      },
+      "side_effects": {
+        "repository_mutation_permission": "EXPLICIT_USER_OR_OWNER_AUTHORIZATION_AND_ITERATION_METHOD",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/AI-START-HERE.md",
+        "ignition/ITERATION.md",
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/data/operations/change-propagation-topology.json",
+        "ignition/data/operations/project-components.json",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/governance/life-community-value-charter.md",
+        "ignition/tests/test_change_propagation.py",
+        "ignition/tools/validate_current_state_sync.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/ITERATION.md",
+            "role": "METHOD_AUTHORITY",
+            "blob_sha1": "f45510bc262f9b32541625013f048292455d1840"
+          },
+          {
+            "path": "ignition/data/architecture/current-system-identity.json",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "909851f47ca749a5911d2064d1bfbdbcde9b8a07"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tests/test_change_propagation.py",
+          "ignition/tools/validate_current_state_sync.py"
+        ],
+        "claim_ceiling": "Repository-state change discipline only; no truth, evidence, causal, Owner-acceptance or publication inference."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "repository.apply_iteration_method_1_3",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "HISTORICAL",
+      "name": {
+        "zh": "点火迭代操作法 1.3.0",
+        "en": "Ignition Iteration Method 1.3.0"
+      },
+      "can_do": "Preserve the superseded incremental-execution method as historical provenance only.",
+      "good_for": {
+        "accepted_inputs": [
+          "historical method query"
+        ],
+        "declared_outputs": [
+          "historical status",
+          "supersession relation"
+        ],
+        "operation_class": "REPOSITORY_SELF_ITERATION"
+      },
+      "cannot_do": [
+        "Cannot be selected as the Current method.",
+        "Historical execution evidence cannot override Current 1.4.0."
+      ],
+      "only_if": [
+        "Current status is HISTORICAL and callability is STATUS_ONLY.",
+        "ignition/ITERATION.md",
+        "ignition/data/architecture/current-system-identity.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "historical method query"
+      ],
+      "output_types": [
+        "historical status",
+        "supersession relation"
+      ],
+      "permission": {
+        "ai_callability": "STATUS_ONLY",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/ITERATION.md",
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/docs/VERSIONING.md"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/ITERATION.md",
+            "role": "HISTORICAL_STATUS_AUTHORITY",
+            "blob_sha1": "f45510bc262f9b32541625013f048292455d1840"
+          }
+        ],
+        "validation_refs": [
+          "ignition/ITERATION.md"
+        ],
+        "claim_ceiling": "Historical provenance and supersession status only; no Current execution authority."
+      },
+      "router_selectable_by_default": false
+    },
+    {
+      "tool_id": "research.coordinate_obligations",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "协调受约束研究义务",
+        "en": "Coordinate bounded research obligations"
+      },
+      "can_do": "Coordinate bounded research obligations, dependencies, negative results and typed handoff through REOS LIGHT.",
+      "good_for": {
+        "accepted_inputs": [
+          "research_obligation",
+          "evidence_request",
+          "negative_result"
+        ],
+        "declared_outputs": [
+          "bounded obligation DAG",
+          "case status",
+          "typed handoff bundle"
+        ],
+        "operation_class": "RESEARCH"
+      },
+      "cannot_do": [
+        "REOS LIGHT adds process control, not epistemic authority.",
+        "Direct research remains preferable when obligation control is unnecessary.",
+        "The Pack Bus does not execute declared hooks."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/packs/research/manifest.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "research_obligation",
+        "evidence_request",
+        "negative_result"
+      ],
+      "output_types": [
+        "bounded obligation DAG",
+        "case status",
+        "typed handoff bundle"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/packs/research/manifest.json",
+        "ignition/tests/test_reos_vnext_minimal_kernel.py",
+        "ignition/tools/validate_pack_registry.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/research/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "86ed54e73fb7cee087496372f37e073630c94967"
+          },
+          {
+            "path": "ignition/docs/architecture/reos-vnext-light.md",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "c9469685182f576a39ec5e4076d4387c26357d61"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/validate_pack_registry.py",
+          "ignition/tests/test_reos_vnext_minimal_kernel.py"
+        ],
+        "claim_ceiling": "Bounded research-process coordination only; no truth, publication, acceptance or external-validation inference."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "research.reos_full",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "UNSUPPORTED",
+      "name": {
+        "zh": "REOS FULL",
+        "en": "REOS FULL"
+      },
+      "can_do": "Record that no REOS FULL runtime is available and prevent an Agent from inventing one.",
+      "good_for": {
+        "accepted_inputs": [
+          "REOS FULL capability request"
+        ],
+        "declared_outputs": [
+          "UNSUPPORTED status",
+          "bounded alternative reference"
+        ],
+        "operation_class": "RESEARCH"
+      },
+      "cannot_do": [
+        "There is no available REOS FULL runtime.",
+        "No recovery layer or expanded authority may be inferred."
+      ],
+      "only_if": [
+        "Current status is UNSUPPORTED and callability is STATUS_ONLY.",
+        "ignition/docs/architecture/reos-vnext-light.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "REOS FULL capability request"
+      ],
+      "output_types": [
+        "UNSUPPORTED status",
+        "bounded alternative reference"
+      ],
+      "permission": {
+        "ai_callability": "STATUS_ONLY",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/docs/architecture/reos-vnext-light.md",
+            "role": "UNSUPPORTED_STATUS_AUTHORITY",
+            "blob_sha1": "c9469685182f576a39ec5e4076d4387c26357d61"
+          }
+        ],
+        "validation_refs": [
+          "ignition/docs/architecture/reos-vnext-light.md"
+        ],
+        "claim_ceiling": "Unsupported-status declaration only; no runtime, recovery, execution or epistemic capability."
+      },
+      "router_selectable_by_default": false
+    },
+    {
+      "tool_id": "research.validate_reos_light",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "校验 REOS LIGHT",
+        "en": "Validate REOS LIGHT"
+      },
+      "can_do": "Validate bounded REOS LIGHT case state, references, obligation graph, review and typed handoff.",
+      "good_for": {
+        "accepted_inputs": [
+          "reos_light_run",
+          "research case state",
+          "typed handoff bundle"
+        ],
+        "declared_outputs": [
+          "REOS LIGHT validation report",
+          "bounded failure state"
+        ],
+        "operation_class": "VALIDATION_AUDIT"
+      },
+      "cannot_do": [
+        "Validation checks process structure, not proposition truth.",
+        "Generic SUCCESS and authority upgrades fail closed."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/packs/research/manifest.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "reos_light_run",
+        "research case state",
+        "typed handoff bundle"
+      ],
+      "output_types": [
+        "REOS LIGHT validation report",
+        "bounded failure state"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/packs/research/manifest.json",
+        "ignition/tests/test_reos_vnext_minimal_kernel.py",
+        "ignition/tools/validate_pack_registry.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/research/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "86ed54e73fb7cee087496372f37e073630c94967"
+          },
+          {
+            "path": "ignition/docs/architecture/reos-vnext-light.md",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "c9469685182f576a39ec5e4076d4387c26357d61"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tests/test_reos_vnext_minimal_kernel.py",
+          "ignition/tools/validate_pack_registry.py"
+        ],
+        "claim_ceiling": "REOS LIGHT structural validation only; no truth, external validity or publication status."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "visualization.render_derived_system_view",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "生成受约束派生系统视图",
+        "en": "Render a bounded derived system view"
+      },
+      "can_do": "Generate a provider-neutral, source-bound derived system view for declared technical readability while preserving canonical topology, provenance and failure boundaries.",
+      "good_for": {
+        "accepted_inputs": [
+          "canonical architecture source",
+          "derived system view request",
+          "bounded visualization run"
+        ],
+        "declared_outputs": [
+          "standalone derived system view artifact",
+          "provenance receipt",
+          "provider unavailable status"
+        ],
+        "operation_class": "VALIDATION_AUDIT"
+      },
+      "cannot_do": [
+        "The operation produces a bounded derived artifact for declared technical use; it does not replace or write back to the canonical architecture source.",
+        "The provider is an optional tested implementation selected by Ignition; provider validation cannot add, delete or semantically mutate topology.",
+        "An unavailable provider returns PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT and cannot trigger installation, substitution or repository mutation.",
+        "A request for architecture analysis alone does not auto-render a derived view.",
+        "Delta, default-renderer selection, architecture truth, external truth, production readiness and aesthetic endorsement remain outside this operation.",
+        "The tested compatibility envelope is pinned to Archify exact commit 06dd052602dd9a369e4d034e24faef0917b5a60c; future provider versions require a new compatibility check."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/data/architecture/overall-architecture.json",
+        "ignition/data/architecture/interactive-system-map.json",
+        "ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json",
+        "ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json",
+        "ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "canonical architecture source",
+        "derived system view request",
+        "bounded visualization run"
+      ],
+      "output_types": [
+        "standalone derived system view artifact",
+        "provenance receipt",
+        "provider unavailable status"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/ITERATION.md",
+        "ignition/data/architecture/interactive-system-map.json",
+        "ignition/data/architecture/overall-architecture.json",
+        "ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json",
+        "ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json",
+        "ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json",
+        "ignition/tests/test_task150_step21_fresh_standalone_evidence.py",
+        "ignition/tests/test_task150_step22_immutable_compatibility_envelope.py",
+        "ignition/tools/run_task150_bounded_visualization_adapter.py",
+        "ignition/tools/validate_task150_step21_fresh_standalone_evidence.py",
+        "ignition/tools/validate_task150_step22_immutable_compatibility_envelope.py"
+      ],
+      "version": "UNKNOWN_NOT_DECLARED_BY_OPERATION_REGISTRY",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "86f0ff1ea9c029cf3d212328ba45f81c36fc5bb9"
+          },
+          {
+            "path": "ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "00c7f17ff1e05bf4a9997823323921fdb6c699fd"
+          },
+          {
+            "path": "ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "3c1de5bc34bebabb79cc2786c438862e7b7ff6c5"
+          },
+          {
+            "path": "ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json",
+            "role": "HISTORICAL_STATUS_AUTHORITY",
+            "blob_sha1": "9a1430100238e43db4ad1e438b11adb087e24a1e"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/run_task150_bounded_visualization_adapter.py",
+          "ignition/tools/validate_task150_step21_fresh_standalone_evidence.py",
+          "ignition/tools/validate_task150_step22_immutable_compatibility_envelope.py",
+          "ignition/tests/test_task150_step21_fresh_standalone_evidence.py",
+          "ignition/tests/test_task150_step22_immutable_compatibility_envelope.py"
+        ],
+        "claim_ceiling": "Current bounded provider-neutral derived system view for declared technical use only; no canonical architecture truth, topology authority, default renderer, Delta promotion, aesthetic endorsement, external truth or production readiness."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "writing.apply_editorial_method",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT",
+      "name": {
+        "zh": "应用之元写作法",
+        "en": "Apply the Zhiyuan Writing Method"
+      },
+      "can_do": "Transform source-bounded material into L6 writing while preserving source class, provenance, language-thought deltas and claim ceiling.",
+      "good_for": {
+        "accepted_inputs": [
+          "editorial_source",
+          "external_input",
+          "ignition_increment",
+          "publication draft request"
+        ],
+        "declared_outputs": [
+          "source-bounded publication draft",
+          "editorial provenance record",
+          "language-thought residue"
+        ],
+        "operation_class": "WRITING"
+      },
+      "cannot_do": [
+        "Writing quality cannot raise fact, cause, proof, value or evidence status.",
+        "Ignition-derived material is not a new independent source.",
+        "The Pack Bus routes a proposal and does not execute publishing hooks."
+      ],
+      "only_if": [
+        "Current status is CURRENT and callability is PUBLIC.",
+        "ignition/docs/publication/zhiyuan-writing-method.md",
+        "ignition/templates/publication/zhiyuan-writing-spec.md",
+        "ignition/docs/architecture/language-thought-logic-plane.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "editorial_source",
+        "external_input",
+        "ignition_increment",
+        "publication draft request"
+      ],
+      "output_types": [
+        "source-bounded publication draft",
+        "editorial provenance record",
+        "language-thought residue"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/docs/architecture/language-thought-logic-plane.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/governance/life-community-value-charter.md",
+        "ignition/docs/publication/zhiyuan-writing-method.md",
+        "ignition/packs/writing/manifest.json",
+        "ignition/templates/publication/zhiyuan-writing-spec.md",
+        "ignition/tools/governance/validate_human_surface_contract.py",
+        "ignition/tools/publication/validate_fire_seeds.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/writing/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "6f6b792a0b5e9e486e12e351c7e8b29cdb881b67"
+          },
+          {
+            "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+            "role": "CURRENT_STATUS_AUTHORITY",
+            "blob_sha1": "5cd9b5e85561ead7718273dc869416f26fdf3a34"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/publication/validate_fire_seeds.py",
+          "ignition/tools/governance/validate_human_surface_contract.py"
+        ],
+        "claim_ceiling": "Current L6 writing transformation only; no factual, causal, proof, value, publication-acceptance or literary-quality guarantee."
+      },
+      "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "writing.validate_publication_surface",
+      "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
+      "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
+      "lifecycle": "CURRENT_BOUNDED",
+      "name": {
+        "zh": "校验出版表面",
+        "en": "Validate a publication surface"
+      },
+      "can_do": "Validate declared publication and human-surface structure, provenance and navigation without establishing substantive acceptance.",
+      "good_for": {
+        "accepted_inputs": [
+          "publication_draft",
+          "publication_review",
+          "human_surface_entry"
+        ],
+        "declared_outputs": [
+          "publication-surface validation report",
+          "provenance or navigation finding"
+        ],
+        "operation_class": "VALIDATION_AUDIT"
+      },
+      "cannot_do": [
+        "Surface validity does not imply content truth, literary quality, acceptance, deployment or Current status.",
+        "Public visibility is distinct from capability availability."
+      ],
+      "only_if": [
+        "Current status is CURRENT_BOUNDED and callability is PUBLIC_BOUNDED.",
+        "ignition/packs/writing/manifest.json",
+        "ignition/docs/publication/zhiyuan-writing-method.md"
+      ],
+      "counterindicated_when": [
+        "The request requires a mode other than READ_ONLY_RUN.",
+        "A required Current authority or declared source is unavailable."
+      ],
+      "accepted_input_types": [
+        "publication_draft",
+        "publication_review",
+        "human_surface_entry"
+      ],
+      "output_types": [
+        "publication-surface validation report",
+        "provenance or navigation finding"
+      ],
+      "permission": {
+        "ai_callability": "PUBLIC_BOUNDED",
+        "execution_mode": "READ_ONLY_RUN",
+        "repository_mutation": "FORBIDDEN",
+        "external_action": "FORBIDDEN",
+        "explicit_owner_authorization_required": false
+      },
+      "side_effects": {
+        "repository_mutation_permission": "FORBIDDEN",
+        "external_action_permission": "FORBIDDEN"
+      },
+      "dependencies": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/governance/life-community-value-charter.md",
+        "ignition/docs/publication/zhiyuan-writing-method.md",
+        "ignition/packs/writing/manifest.json",
+        "ignition/tools/governance/validate_human_surface_contract.py",
+        "ignition/tools/publication/validate_fire_seeds.py"
+      ],
+      "version": "1.0.0",
+      "runtime_dependencies": [],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable per-operation cost evidence is declared."
+      },
+      "alternatives": {
+        "status": "NOT_MAPPED_IN_CURRENT_REGISTRY",
+        "tool_ids": []
+      },
+      "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
+      "evidence": {
+        "level": "DECLARATION_ONLY",
+        "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        "registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "source_refs": [
+          {
+            "path": "ignition/packs/writing/manifest.json",
+            "role": "CAPABILITY_DECLARATION",
+            "blob_sha1": "6f6b792a0b5e9e486e12e351c7e8b29cdb881b67"
+          },
+          {
+            "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+            "role": "BOUNDARY_AUTHORITY",
+            "blob_sha1": "5cd9b5e85561ead7718273dc869416f26fdf3a34"
+          }
+        ],
+        "validation_refs": [
+          "ignition/tools/governance/validate_human_surface_contract.py",
+          "ignition/tools/publication/validate_fire_seeds.py"
+        ],
+        "claim_ceiling": "Publication-surface structure and provenance validation only; no substantive acceptance, truth or deployment inference."
+      },
+      "router_selectable_by_default": true
+    }
+  ],
+  "card_count": 22,
+  "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
+}

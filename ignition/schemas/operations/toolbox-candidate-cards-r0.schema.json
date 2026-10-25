@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-candidate-cards-r0",
+  "title": "Ignition Optional Toolbox Candidate Cards R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "catalog_status", "source_registry_path", "source_registry_blob_sha1", "claim_ceiling", "candidates"],
+  "properties": {
+    "schema_version": {"const": "toolbox-candidate-cards-r0"},
+    "catalog_status": {"const": "NON_CURRENT_OPTIONAL_EXTENSION"},
+    "source_registry_path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+    "source_registry_blob_sha1": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"},
+    "candidates": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/candidate"}}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "repoPath": {"type": "string", "pattern": "^ignition/(?!\\.\\.?(?:$|/))(?!.*?/\\.\\.?(?:$|/))[A-Za-z0-9._/-]+$"},
+    "stringList": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+    "name": {
+      "type": "object", "additionalProperties": false,
+      "required": ["zh", "en"],
+      "properties": {"zh": {"$ref": "#/$defs/nonblank"}, "en": {"$ref": "#/$defs/nonblank"}}
+    },
+    "sourceRef": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "role"],
+      "properties": {"path": {"$ref": "#/$defs/repoPath"}, "role": {"$ref": "#/$defs/nonblank"}}
+    },
+    "alternative": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tool_id", "relationship", "reason"],
+      "properties": {"tool_id": {"$ref": "#/$defs/nonblank"}, "relationship": {"$ref": "#/$defs/nonblank"}, "reason": {"$ref": "#/$defs/nonblank"}}
+    },
+    "candidate": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "tool_id", "display_name", "description", "version", "license", "maintainer", "availability", "lifecycle", "evidence_level", "source_path", "entrypoint", "source_refs", "dependencies", "good_for", "not_for", "only_if", "counterindicated_when", "accepted_input_types", "output_types", "execution_mode", "permission_mode", "explicit_owner_authorization_required", "permissions", "side_effects", "runtime_dependencies", "estimated_cost", "alternatives", "fallback", "validation", "router_selectable_by_default", "router_conditions", "claim_ceiling"
+      ],
+      "properties": {
+        "tool_id": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]+$"},
+        "display_name": {"$ref": "#/$defs/name"},
+        "description": {"$ref": "#/$defs/nonblank"},
+        "version": {"$ref": "#/$defs/nonblank"},
+        "license": {"$ref": "#/$defs/nonblank"},
+        "maintainer": {"$ref": "#/$defs/nonblank"},
+        "availability": {"const": "EXPERIMENTAL_AVAILABLE"},
+        "lifecycle": {"const": "EXPERIMENTAL"},
+        "evidence_level": {"enum": ["DOC_ONLY", "SYNTHETIC_ONLY", "REAL_TOOL_TEST", "REAL_TASK_OUTCOME"]},
+        "source_path": {"$ref": "#/$defs/repoPath"},
+        "entrypoint": {"$ref": "#/$defs/nonblank"},
+        "source_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sourceRef"}},
+        "dependencies": {"type": "array", "items": {"$ref": "#/$defs/repoPath"}, "uniqueItems": true},
+        "good_for": {"$ref": "#/$defs/stringList"},
+        "not_for": {"$ref": "#/$defs/stringList"},
+        "only_if": {"$ref": "#/$defs/stringList"},
+        "counterindicated_when": {"$ref": "#/$defs/stringList"},
+        "accepted_input_types": {"$ref": "#/$defs/stringList"},
+        "output_types": {"$ref": "#/$defs/stringList"},
+        "execution_mode": {"enum": ["READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"]},
+        "permission_mode": {"$ref": "#/$defs/nonblank"},
+        "explicit_owner_authorization_required": {"type": "boolean"},
+        "permissions": {
+          "type": "object", "additionalProperties": false,
+          "required": ["read_paths", "write_paths", "network", "secrets", "billing", "external_actions"],
+          "properties": {
+            "read_paths": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
+            "write_paths": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
+            "network": {"type": "boolean"}, "secrets": {"type": "boolean"}, "billing": {"type": "boolean"}, "external_actions": {"type": "boolean"}
+          }
+        },
+        "side_effects": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
+        "runtime_dependencies": {"$ref": "#/$defs/stringList"},
+        "estimated_cost": {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "basis"],
+          "properties": {"status": {"const": "UNKNOWN"}, "basis": {"$ref": "#/$defs/nonblank"}}
+        },
+        "alternatives": {"type": "array", "items": {"$ref": "#/$defs/alternative"}},
+        "fallback": {"$ref": "#/$defs/nonblank"},
+        "validation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["focused_checks", "negative_controls"],
+          "properties": {
+            "focused_checks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/repoPath"}, "uniqueItems": true},
+            "negative_controls": {"$ref": "#/$defs/stringList"}
+          }
+        },
+        "router_selectable_by_default": {"const": false},
+        "router_conditions": {"$ref": "#/$defs/stringList"},
+        "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+      }
+    }
+  }
+}
