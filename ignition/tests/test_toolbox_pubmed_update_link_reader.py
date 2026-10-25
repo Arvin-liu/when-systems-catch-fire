@@ -19,14 +19,15 @@ SPEC.loader.exec_module(TOOL)
 
 
 PMID = "9500320"
+SAMPLE_DOI = "10.1234/example.1"
 SAMPLE_XML = f'''<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMed 3.0//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/in/PubMed.dtd">
 <PubmedArticleSet><PubmedArticle><MedlineCitation><PMID Version="1">{PMID}</PMID>
-<Article><ArticleTitle>Ignored title.</ArticleTitle><Abstract><AbstractText>Ignored abstract.</AbstractText></Abstract></Article>
+<Article><ArticleTitle>Ignored title.</ArticleTitle><Abstract><AbstractText>Ignored abstract.</AbstractText></Abstract><ELocationID EIdType="doi">{SAMPLE_DOI}</ELocationID></Article>
 <CommentsCorrectionsList>
  <CommentsCorrections RefType="RetractionIn"><RefSource>Lancet. 2004 Mar 6;363(9411):750.</RefSource><PMID Version="1">15022645</PMID></CommentsCorrections>
  <CommentsCorrections RefType="CommentIn"><RefSource>BMJ. 2004;328(7438):394.</RefSource><PMID Version="1">14962870</PMID></CommentsCorrections>
-</CommentsCorrectionsList></MedlineCitation></PubmedArticle></PubmedArticleSet>'''.encode("utf-8")
+</CommentsCorrectionsList></MedlineCitation><PubmedData><ArticleIdList><ArticleId IdType="doi">{SAMPLE_DOI}</ArticleId></ArticleIdList></PubmedData></PubmedArticle></PubmedArticleSet>'''.encode("utf-8")
 
 
 class FakeResponse:
@@ -98,6 +99,61 @@ class PubMedUpdateLinkReaderTests(unittest.TestCase):
         self.assertNotIn("Ignored abstract", json.dumps(result))
         self.assertEqual(len(row["response_sha256"]), 64)
         self.assertIn("empty relation list does not prove", result["claim_ceiling"])
+
+    def test_expected_doi_binding_is_checked_in_the_same_efetch_record(self) -> None:
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener()):
+            result = TOOL.inspect([PMID], expected_doi=SAMPLE_DOI)
+        row = result["rows"][0]
+        self.assertEqual(row["expected_doi"], SAMPLE_DOI)
+        self.assertEqual(row["doi_binding_status"], "EXACT_MATCH")
+        self.assertEqual(row["record_status"], "RECORD_FOUND_WITH_RECORDED_RELATIONS")
+        self.assertEqual(len(row["relations"]), 2)
+
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener()):
+            mismatch = TOOL.inspect([PMID], expected_doi="10.9999/other")
+        mismatch_row = mismatch["rows"][0]
+        self.assertEqual(mismatch_row["doi_binding_status"], "MISMATCH")
+        self.assertEqual(mismatch_row["record_status"], "DOI_IDENTITY_NOT_CONFIRMED")
+        self.assertEqual(mismatch_row["relations"], [])
+        self.assertEqual(mismatch["records_found"], 1)
+
+    def test_expected_doi_is_not_confirmed_when_missing_or_ambiguous(self) -> None:
+        no_doi = f"<PubmedArticleSet><PubmedArticle><MedlineCitation><PMID>{PMID}</PMID></MedlineCitation></PubmedArticle></PubmedArticleSet>".encode()
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(no_doi))):
+            missing = TOOL.inspect([PMID], expected_doi=SAMPLE_DOI)["rows"][0]
+        self.assertEqual(missing["doi_binding_status"], "NOT_REPORTED")
+        self.assertEqual(missing["record_status"], "DOI_IDENTITY_NOT_CONFIRMED")
+        self.assertEqual(missing["relations"], [])
+
+        multiple = SAMPLE_XML.replace(
+            b"</Article>", b'<ELocationID EIdType="doi">10.9999/other</ELocationID></Article>',
+        )
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(multiple))):
+            ambiguous = TOOL.inspect([PMID], expected_doi=SAMPLE_DOI)["rows"][0]
+        self.assertEqual(ambiguous["doi_binding_status"], "MULTIPLE_VALUES")
+        self.assertEqual(ambiguous["record_status"], "DOI_IDENTITY_NOT_CONFIRMED")
+        self.assertEqual(ambiguous["relations"], [])
+
+        invalid = SAMPLE_XML.replace(
+            b"</Article>", b'<ELocationID EIdType="doi">https://doi.org/10.1234/example.1</ELocationID></Article>',
+        )
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(invalid))):
+            malformed = TOOL.inspect([PMID], expected_doi=SAMPLE_DOI)["rows"][0]
+        self.assertEqual(malformed["doi_binding_status"], "INVALID_VALUE")
+        self.assertEqual(malformed["record_status"], "DOI_IDENTITY_NOT_CONFIRMED")
+        self.assertEqual(malformed["relations"], [])
+
+    def test_expected_doi_is_bounded_to_one_valid_bare_doi_and_one_pmid(self) -> None:
+        with self.assertRaisesRegex(TOOL.ToolInputError, "bare DOI"):
+            TOOL.parse_request_with_options(json.dumps({"pmids": [PMID], "expected_doi": None}).encode())
+        with self.assertRaisesRegex(TOOL.ToolInputError, "exactly one PMID"):
+            TOOL.parse_request_with_options(json.dumps({"pmids": [PMID, "9500321"], "expected_doi": SAMPLE_DOI}).encode())
+        self.assertEqual(
+            TOOL.parse_request_with_options(json.dumps({"pmids": [PMID], "expected_doi": SAMPLE_DOI}).encode()),
+            ([PMID], SAMPLE_DOI),
+        )
+        with self.assertRaisesRegex(TOOL.ToolInputError, "exactly one PMID"):
+            TOOL.inspect([PMID, "9500321"], expected_doi=SAMPLE_DOI)
 
     def test_requires_explicit_network_flag_and_makes_no_request_without_it(self) -> None:
         opener = FakeOpener()

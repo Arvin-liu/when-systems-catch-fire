@@ -725,11 +725,10 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(result["cost_estimate"]["status"], "UNKNOWN")
 
     def test_pubmed_update_links_are_separate_opt_in_capability(self) -> None:
-        pmid_input = "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs)"
-        outputs = [
-            "input-ordered PubMed comments/corrections relation rows with raw RefType, related PMID, and reference source",
-            "per-response SHA-256 and explicit HTTP or network outcome summary",
-        ]
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.inspect_pubmed_update_links")
+        pmid_input = card["accepted_input_types"][0]
+        outputs = card["output_types"]
         task = profile("pubmed-record-updates", [pmid_input], outputs)
         default = planner.plan_tool_route(task)
         self.assertEqual(default["decision"], "INCOMPLETE")
@@ -748,6 +747,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertEqual(permitted["decision"], "COMPLETE")
         self.assertEqual([row["tool_id"] for row in permitted["selected_tools"]], ["research.inspect_pubmed_update_links"])
+        self.assertFalse(permitted["execution_authorized"])
         self.assertIn(
             {"tool_id": "research.resolve_pubmed_identifiers", "reason": "NO_INPUT_TYPE_MATCH"},
             permitted["rejected_candidates"],
@@ -1096,6 +1096,26 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             opted["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
+
+    def test_pubmed_doi_update_route_evidence_r1_replays_for_both_specialized_scopes(self) -> None:
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-pubmed-doi-update-route-evidence-r1.json").read_text(encoding="utf-8")
+        )
+        current_catalog_hash = planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes())
+        self.assertEqual(evidence["candidate_catalog_git_blob_sha1"], current_catalog_hash)
+        self.assertEqual(evidence["summary"]["execution_authorized"], False)
+        for trial in evidence["route_trials"]:
+            with self.subTest(scenario=trial["scenario"]):
+                result = planner.plan_tool_route(
+                    trial["task_profile"],
+                    include_experimental_tool_ids=trial["include_experimental_tool_ids"],
+                )
+                self.assertEqual(result["decision"], trial["expected_decision"])
+                self.assertEqual(
+                    [row["tool_id"] for row in result["selected_tools"]],
+                    trial["expected_selected_tool_ids"],
+                )
+                self.assertFalse(result["execution_authorized"])
 
 
 if __name__ == "__main__":

@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Any
 
 
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 API_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 API_HOST = "eutils.ncbi.nlm.nih.gov"
 MAX_REQUEST_BYTES = 16 * 1024
@@ -34,6 +34,7 @@ INTER_REQUEST_DELAY_SECONDS = 0.34
 MAX_RELATIONS_PER_RECORD = 100
 MAX_RELATION_SOURCE_LENGTH = 2000
 PMID_RE = re.compile(r"[1-9][0-9]{0,11}\Z")
+DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+\Z")
 
 
 class ToolInputError(ValueError):
@@ -60,15 +61,15 @@ def _strict_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
     return result
 
 
-def parse_request(raw: bytes) -> list[str]:
+def parse_request_with_options(raw: bytes) -> tuple[list[str], str | None]:
     if len(raw) > MAX_REQUEST_BYTES:
         raise ToolInputError(f"request exceeds {MAX_REQUEST_BYTES} bytes")
     try:
         document = json.loads(raw.decode("utf-8", errors="strict"), object_pairs_hook=_strict_object)
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise ToolInputError("request must be valid UTF-8 JSON") from exc
-    if not isinstance(document, dict) or set(document) != {"pmids"}:
-        raise ToolInputError("request must be an object with exactly one key: pmids")
+    if not isinstance(document, dict) or set(document) not in ({"pmids"}, {"pmids", "expected_doi"}):
+        raise ToolInputError("request must contain pmids and may contain expected_doi")
     pmids = document["pmids"]
     if not isinstance(pmids, list) or not 1 <= len(pmids) <= MAX_RECORDS:
         raise ToolInputError(f"pmids must contain between 1 and {MAX_RECORDS} entries")
@@ -81,7 +82,18 @@ def parse_request(raw: bytes) -> list[str]:
             raise ToolInputError("PMID values must be unique within one request")
         seen.add(pmid)
         result.append(pmid)
-    return result
+    expected_doi = document.get("expected_doi")
+    if "expected_doi" in document:
+        if not isinstance(expected_doi, str) or len(expected_doi) > 128 or not DOI_RE.fullmatch(expected_doi):
+            raise ToolInputError("expected_doi must be one bare DOI identifier")
+        if len(result) != 1:
+            raise ToolInputError("expected_doi may be supplied only with exactly one PMID")
+    return result, expected_doi
+
+
+def parse_request(raw: bytes) -> list[str]:
+    """Backward-compatible PMID-only view of the typed request parser."""
+    return parse_request_with_options(raw)[0]
 
 
 def _request_url(pmid: str) -> str:
@@ -135,15 +147,37 @@ def _fetch_one(pmid: str) -> dict[str, Any]:
         return {"acquisition_status": "NETWORK_ERROR", "http_status": None, "body": None}
 
 
-def _record_relations(body: bytes, requested_pmid: str) -> dict[str, Any]:
+def _doi_values(article: ET.Element) -> list[str]:
+    values: list[str] = []
+    doi_nodes = article.findall("./MedlineCitation/Article/ELocationID")
+    doi_nodes.extend(article.findall("./PubmedData/ArticleIdList/ArticleId"))
+    for node in doi_nodes:
+        id_type = node.attrib.get("EIdType", node.attrib.get("IdType", ""))
+        value = node.text.strip() if isinstance(node.text, str) else ""
+        if id_type.casefold() == "doi":
+            values.append(value)
+    return values
+
+
+def _record_relations(
+    body: bytes,
+    requested_pmid: str,
+    expected_doi: str | None = None,
+) -> dict[str, Any]:
     # ElementTree does not fetch external DTDs, and explicit entity declarations
     # are rejected so an upstream response cannot expand internal entities.
     if b"<!ENTITY" in body.upper():
-        return {"acquisition_status": "XML_ENTITY_DECLARATION_REJECTED", "record_status": "NOT_AVAILABLE", "relations": []}
+        result = {"acquisition_status": "XML_ENTITY_DECLARATION_REJECTED", "record_status": "NOT_AVAILABLE", "relations": []}
+        if expected_doi is not None:
+            result.update({"expected_doi": expected_doi, "doi_binding_status": "NOT_EVALUATED"})
+        return result
     try:
         root = ET.fromstring(body)
     except ET.ParseError:
-        return {"acquisition_status": "INVALID_XML_RESPONSE", "record_status": "NOT_AVAILABLE", "relations": []}
+        result = {"acquisition_status": "INVALID_XML_RESPONSE", "record_status": "NOT_AVAILABLE", "relations": []}
+        if expected_doi is not None:
+            result.update({"expected_doi": expected_doi, "doi_binding_status": "NOT_EVALUATED"})
+        return result
     articles = root.findall(".//PubmedArticle")
     matches = []
     for article in articles:
@@ -151,11 +185,37 @@ def _record_relations(body: bytes, requested_pmid: str) -> dict[str, Any]:
         if isinstance(value, str) and value.strip() == requested_pmid:
             matches.append(article)
     if len(matches) != 1:
-        return {
+        result = {
             "acquisition_status": "OK",
             "record_status": "NO_RECORD" if not articles else "UPSTREAM_RECORD_MISMATCH",
             "relations": [],
         }
+        if expected_doi is not None:
+            result.update({"expected_doi": expected_doi, "doi_binding_status": "NOT_EVALUATED"})
+        return result
+
+    doi_binding_status: str | None = None
+    if expected_doi is not None:
+        observed_dois = _doi_values(matches[0])
+        if not observed_dois:
+            doi_binding_status = "NOT_REPORTED"
+        elif any(not DOI_RE.fullmatch(value) for value in observed_dois):
+            doi_binding_status = "INVALID_VALUE"
+        elif len({value.casefold() for value in observed_dois}) > 1:
+            doi_binding_status = "MULTIPLE_VALUES"
+        elif expected_doi.casefold() not in {value.casefold() for value in observed_dois}:
+            doi_binding_status = "MISMATCH"
+        else:
+            doi_binding_status = "EXACT_MATCH"
+        if doi_binding_status != "EXACT_MATCH":
+            return {
+                "acquisition_status": "OK",
+                "record_status": "DOI_IDENTITY_NOT_CONFIRMED",
+                "relations": [],
+                "relations_truncated": False,
+                "expected_doi": expected_doi,
+                "doi_binding_status": doi_binding_status,
+            }
 
     relations: list[dict[str, str | None]] = []
     relation_list = matches[0].find("./MedlineCitation/CommentsCorrectionsList")
@@ -170,15 +230,18 @@ def _record_relations(body: bytes, requested_pmid: str) -> dict[str, Any]:
                 "reference_source": ref_source or None,
             })
     truncated = relation_list is not None and len(relation_list.findall("./CommentsCorrections")) > MAX_RELATIONS_PER_RECORD
-    return {
+    result = {
         "acquisition_status": "OK",
         "record_status": "RECORD_FOUND_WITH_RECORDED_RELATIONS" if relations else "RECORD_FOUND_NO_RECORDED_RELATIONS",
         "relations": relations,
         "relations_truncated": truncated,
     }
+    if expected_doi is not None:
+        result.update({"expected_doi": expected_doi, "doi_binding_status": "EXACT_MATCH"})
+    return result
 
 
-def _inspect_row(pmid: str) -> dict[str, Any]:
+def _inspect_row(pmid: str, expected_doi: str | None = None) -> dict[str, Any]:
     row: dict[str, Any] = {
         "pmid": pmid,
         "retrieval_timestamp_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
@@ -196,22 +259,33 @@ def _inspect_row(pmid: str) -> dict[str, Any]:
     row["http_status"] = fetched["http_status"]
     if fetched["acquisition_status"] != "OK":
         row["record_status"] = "NOT_AVAILABLE"
+        if expected_doi is not None:
+            row.update({"expected_doi": expected_doi, "doi_binding_status": "NOT_EVALUATED"})
         return row
     body = fetched["body"]
     row["response_sha256"] = hashlib.sha256(body).hexdigest()
-    parsed = _record_relations(body, pmid)
+    parsed = _record_relations(body, pmid, expected_doi)
     row.update(parsed)
     return row
 
 
-def inspect(pmids: list[str]) -> dict[str, Any]:
+def inspect(pmids: list[str], *, expected_doi: str | None = None) -> dict[str, Any]:
+    if expected_doi is not None:
+        if not isinstance(expected_doi, str) or len(expected_doi) > 128 or not DOI_RE.fullmatch(expected_doi):
+            raise ToolInputError("expected_doi must be one bare DOI identifier")
+        if len(pmids) != 1:
+            raise ToolInputError("expected_doi may be supplied only when inspecting exactly one PMID")
     rows: list[dict[str, Any]] = []
     for index, pmid in enumerate(pmids):
-        rows.append(_inspect_row(pmid))
+        rows.append(_inspect_row(pmid, expected_doi))
         if index + 1 < len(pmids):
             time.sleep(INTER_REQUEST_DELAY_SECONDS)
     failures = sum(row["acquisition_status"] != "OK" for row in rows)
-    found = sum(row["record_status"] in {"RECORD_FOUND_WITH_RECORDED_RELATIONS", "RECORD_FOUND_NO_RECORDED_RELATIONS"} for row in rows)
+    found = sum(row["record_status"] in {
+        "RECORD_FOUND_WITH_RECORDED_RELATIONS",
+        "RECORD_FOUND_NO_RECORDED_RELATIONS",
+        "DOI_IDENTITY_NOT_CONFIRMED",
+    } for row in rows)
     return {
         "schema_version": "ignition.pubmed-update-link-inspection-r0",
         "tool_id": "research.inspect_pubmed_update_links",
@@ -222,7 +296,7 @@ def inspect(pmids: list[str]) -> dict[str, Any]:
         "acquisition_failure_count": failures,
         "rows": rows,
         "source_code_sha256": {"wrapper": _sha256(Path(__file__).resolve())},
-        "claim_ceiling": "Raw Comments/Corrections relation fields returned for exact PubMed records at retrieval time only; no completeness claim is made and an empty relation list does not prove that no correction, expression of concern, or retraction exists.",
+        "claim_ceiling": "Raw Comments/Corrections relation fields returned for exact PubMed records at retrieval time only. When an expected DOI is supplied by a composing caller, relations are returned only if the same EFetch record reports exactly that DOI; this does not authenticate the source. No completeness claim is made and an empty relation list does not prove that no correction, expression of concern, or retraction exists.",
     }
 
 
@@ -236,11 +310,11 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     raw = sys.stdin.buffer.read(MAX_REQUEST_BYTES + 1)
     try:
-        pmids = parse_request(raw)
+        pmids, expected_doi = parse_request_with_options(raw)
     except ToolInputError as exc:
         print(f"INVALID_REQUEST: {exc}", file=sys.stderr)
         return 2
-    print(json.dumps(inspect(pmids), ensure_ascii=False, sort_keys=True, separators=(",", ":")))
+    print(json.dumps(inspect(pmids, expected_doi=expected_doi), ensure_ascii=False, sort_keys=True, separators=(",", ":")))
     return 0
 
 

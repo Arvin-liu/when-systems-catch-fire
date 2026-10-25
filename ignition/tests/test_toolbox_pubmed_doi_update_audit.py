@@ -77,8 +77,10 @@ def inspection_row(
     relations: list[dict[str, str | None]] | None = None,
     acquisition_status: str = "OK",
     http_status: int | None = 200,
+    expected_doi: str | None = DOI,
+    doi_binding_status: str | None = "EXACT_MATCH",
 ) -> dict[str, object]:
-    return {
+    row: dict[str, object] = {
         "pmid": pmid,
         "retrieval_timestamp_utc": "2026-10-26T00:00:01Z",
         "source_url": f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id={pmid}&retmode=xml&tool=IgnitionToolbox",
@@ -90,6 +92,11 @@ def inspection_row(
         "relations": relations or [],
         "relations_truncated": False,
     }
+    if expected_doi is not None:
+        row["expected_doi"] = expected_doi
+    if doi_binding_status is not None:
+        row["doi_binding_status"] = doi_binding_status
+    return row
 
 
 def make_inspection_result(row: dict[str, object]) -> dict[str, object]:
@@ -98,7 +105,7 @@ def make_inspection_result(row: dict[str, object]) -> dict[str, object]:
     return {
         "schema_version": "ignition.pubmed-update-link-inspection-r0",
         "tool_id": "research.inspect_pubmed_update_links",
-        "tool_version": "0.1.0",
+        "tool_version": "0.2.0",
         "status": "COMPLETED_WITH_EXPLICIT_FAILURES" if failures else ("RECORDS_INSPECTED" if found else "NO_RECORDS_FOUND"),
         "pmid_count": 1,
         "records_found": found,
@@ -119,7 +126,7 @@ class PubMedDoiUpdateAuditTests(unittest.TestCase):
             result = TOOL.audit([DOI])
 
         resolve.assert_called_once_with([DOI])
-        inspect.assert_called_once_with([PMID])
+        inspect.assert_called_once_with([PMID], expected_doi=DOI)
         self.assertEqual(result["update_link_status"], "RECORDED_RELATIONS_RETURNED")
         self.assertEqual(result["identifier_resolution"], resolver_stage)
         self.assertEqual(result["update_link_inspection"], reader_stage)
@@ -134,11 +141,17 @@ class PubMedDoiUpdateAuditTests(unittest.TestCase):
         historical_row["pmcid"] = "PMC2885863"
         historical_resolution = make_resolver_result(historical_row)
         historical_resolution["tool_version"] = "0.1.0"
+        legacy_reader = make_inspection_result(inspection_row())
+        legacy_reader["tool_version"] = "0.1.0"
+        legacy_row = legacy_reader["rows"][0]
+        legacy_row.pop("expected_doi")
+        legacy_row.pop("doi_binding_status")
         historical = {
             **result,
+            "tool_version": "0.1.0",
             "identifier_resolution": historical_resolution,
-            "update_link_inspection": None,
-            "update_link_status": "SKIPPED_NO_EXACT_PMID",
+            "update_link_inspection": legacy_reader,
+            "update_link_status": "RECORDED_RELATIONS_RETURNED",
         }
         jsonschema.Draft202012Validator(OUTPUT_SCHEMA).validate(historical)
 
@@ -174,6 +187,42 @@ class PubMedDoiUpdateAuditTests(unittest.TestCase):
             result = TOOL.audit([DOI])
         self.assertEqual(result["update_link_status"], "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE")
         self.assertIn("does not establish that no update exists", result["claim_ceiling"])
+        jsonschema.Draft202012Validator(OUTPUT_SCHEMA).validate(result)
+
+    def test_withholds_update_claim_when_same_response_doi_binding_is_not_exact(self) -> None:
+        resolver_stage = make_resolver_result(resolution_row())
+        mismatch_row = inspection_row(
+            record_status="DOI_IDENTITY_NOT_CONFIRMED",
+            relations=[],
+            doi_binding_status="MISMATCH",
+        )
+        reader_stage = make_inspection_result(mismatch_row)
+        with patch.object(TOOL.identifier_resolver, "resolve", return_value=resolver_stage), patch.object(
+            TOOL.update_reader, "inspect", return_value=reader_stage,
+        ):
+            result = TOOL.audit([DOI])
+        self.assertEqual(result["update_link_status"], "RECORD_IDENTITY_NOT_CONFIRMED")
+        jsonschema.Draft202012Validator(OUTPUT_SCHEMA).validate(result)
+
+        legacy_row = inspection_row(expected_doi=None, doi_binding_status=None)
+        legacy_reader_stage = make_inspection_result(legacy_row)
+        legacy_reader_stage["tool_version"] = "0.1.0"
+        with patch.object(TOOL.identifier_resolver, "resolve", return_value=resolver_stage), patch.object(
+            TOOL.update_reader, "inspect", return_value=legacy_reader_stage,
+        ):
+            legacy = TOOL.audit([DOI])
+        self.assertEqual(legacy["update_link_status"], "RECORD_IDENTITY_NOT_CONFIRMED")
+        jsonschema.Draft202012Validator(OUTPUT_SCHEMA).validate(legacy)
+
+    def test_missing_pubmed_record_is_not_reported_as_an_identity_mismatch(self) -> None:
+        resolver_stage = make_resolver_result(resolution_row())
+        no_record_row = inspection_row(record_status="NO_RECORD", doi_binding_status="NOT_EVALUATED")
+        reader_stage = make_inspection_result(no_record_row)
+        with patch.object(TOOL.identifier_resolver, "resolve", return_value=resolver_stage), patch.object(
+            TOOL.update_reader, "inspect", return_value=reader_stage,
+        ):
+            result = TOOL.audit([DOI])
+        self.assertEqual(result["update_link_status"], "RECORD_NOT_CONFIRMED")
         jsonschema.Draft202012Validator(OUTPUT_SCHEMA).validate(result)
 
     def test_empty_reader_stage_is_reported_as_unavailable(self) -> None:

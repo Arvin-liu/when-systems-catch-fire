@@ -8,12 +8,12 @@
   "properties": {
     "schema_version": {"const": "ignition.pubmed-doi-update-audit-r0"},
     "tool_id": {"const": "research.audit_pubmed_updates_from_doi"},
-    "tool_version": {"const": "0.1.0"},
+    "tool_version": {"enum": ["0.1.0", "0.2.0"]},
     "status": {"const": "COMPLETED_WITH_EXPLICIT_STAGE_OUTCOMES"},
     "doi": {"type": "string", "maxLength": 128, "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"},
     "identifier_resolution": {"$ref": "#/$defs/IdentifierResolution"},
     "update_link_inspection": {"oneOf": [{"$ref": "#/$defs/UpdateLinkInspection"}, {"type": "null"}]},
-    "update_link_status": {"enum": ["SKIPPED_NO_EXACT_PMID", "SKIPPED_NO_VALID_PMID", "INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]},
+    "update_link_status": {"enum": ["SKIPPED_NO_EXACT_PMID", "SKIPPED_NO_VALID_PMID", "INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORD_IDENTITY_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]},
     "source_code_sha256": {
       "type": "object",
       "additionalProperties": false,
@@ -30,7 +30,7 @@
     {
       "if": {"properties": {"update_link_inspection": {"type": "null"}}, "required": ["update_link_inspection"]},
       "then": {"properties": {"update_link_status": {"enum": ["SKIPPED_NO_EXACT_PMID", "SKIPPED_NO_VALID_PMID"]}}},
-      "else": {"properties": {"update_link_status": {"enum": ["INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]}}}
+      "else": {"properties": {"update_link_status": {"enum": ["INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORD_IDENTITY_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]}}}
     }
   ],
   "$defs": {
@@ -92,10 +92,24 @@
         "acquisition_status": {"enum": ["OK", "HTTP_ERROR", "NON_XML_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "REDIRECT_BLOCKED", "NOT_FOUND", "RATE_LIMITED", "NETWORK_ERROR", "XML_ENTITY_DECLARATION_REJECTED", "INVALID_XML_RESPONSE"]},
         "http_status": {"oneOf": [{"type": "integer", "minimum": 100, "maximum": 599}, {"type": "null"}]},
         "response_sha256": {"$ref": "#/$defs/Sha256OrNull"},
-        "record_status": {"enum": ["NOT_AVAILABLE", "NO_RECORD", "UPSTREAM_RECORD_MISMATCH", "RECORD_FOUND_WITH_RECORDED_RELATIONS", "RECORD_FOUND_NO_RECORDED_RELATIONS"]},
+        "record_status": {"enum": ["NOT_AVAILABLE", "NO_RECORD", "UPSTREAM_RECORD_MISMATCH", "DOI_IDENTITY_NOT_CONFIRMED", "RECORD_FOUND_WITH_RECORDED_RELATIONS", "RECORD_FOUND_NO_RECORDED_RELATIONS"]},
         "relations": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/Relation"}},
-        "relations_truncated": {"type": "boolean"}
-      }
+        "relations_truncated": {"type": "boolean"},
+        "expected_doi": {"type": "string", "maxLength": 128, "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"},
+        "doi_binding_status": {"enum": ["NOT_EVALUATED", "NOT_REPORTED", "INVALID_VALUE", "MISMATCH", "MULTIPLE_VALUES", "EXACT_MATCH"]}
+      },
+      "allOf": [
+        {"if": {"required": ["expected_doi"]}, "then": {"required": ["doi_binding_status"]}},
+        {"if": {"required": ["doi_binding_status"]}, "then": {"required": ["expected_doi"]}},
+        {
+          "if": {"properties": {"doi_binding_status": {"enum": ["NOT_REPORTED", "INVALID_VALUE", "MISMATCH", "MULTIPLE_VALUES"]}}, "required": ["doi_binding_status"]},
+          "then": {"properties": {"record_status": {"const": "DOI_IDENTITY_NOT_CONFIRMED"}, "relations": {"maxItems": 0}}}
+        },
+        {
+          "if": {"properties": {"doi_binding_status": {"const": "EXACT_MATCH"}}, "required": ["doi_binding_status"]},
+          "then": {"properties": {"record_status": {"enum": ["RECORD_FOUND_WITH_RECORDED_RELATIONS", "RECORD_FOUND_NO_RECORDED_RELATIONS"]}}}
+        }
+      ]
     },
     "UpdateLinkSourceHashes": {
       "type": "object", "additionalProperties": false, "required": ["wrapper"],
@@ -107,7 +121,7 @@
       "properties": {
         "schema_version": {"const": "ignition.pubmed-update-link-inspection-r0"},
         "tool_id": {"const": "research.inspect_pubmed_update_links"},
-        "tool_version": {"const": "0.1.0"},
+        "tool_version": {"enum": ["0.1.0", "0.2.0"]},
         "status": {"enum": ["RECORDS_INSPECTED", "NO_RECORDS_FOUND", "COMPLETED_WITH_EXPLICIT_FAILURES"]},
         "pmid_count": {"const": 1},
         "records_found": {"type": "integer", "minimum": 0, "maximum": 1},

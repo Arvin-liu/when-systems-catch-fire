@@ -449,12 +449,20 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(updates["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertEqual(updates["estimated_cost"]["status"], "UNKNOWN")
         self.assertEqual(updates["dependencies"], [])
+        self.assertEqual(updates["version"], "0.2.0")
+        self.assertIn(
+            "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs); optional expected_doi is accepted only for exactly one PMID and must be a bare DOI.",
+            updates["accepted_input_types"],
+        )
+        self.assertTrue(any(ref["path"] == "ignition/schemas/operations/pubmed-update-link-inspection-input-r0.schema.json" for ref in updates["source_refs"]))
         self.assertIn("absence claim", updates["claim_ceiling"])
         self.assertEqual(updates["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
         self.assertTrue(updates["unique_remaining_use_cases"])
+        self.assertIn("ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json", [ref["path"] for ref in updates["source_refs"]])
         self.assertEqual(pubmed_composition["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov", "eutils.ncbi.nlm.nih.gov"])
         self.assertEqual(pubmed_composition["execution_mode"], "READ_ONLY_RUN")
         self.assertEqual(pubmed_composition["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertEqual(pubmed_composition["version"], "0.2.0")
         self.assertFalse(pubmed_composition["router_selectable_by_default"])
         self.assertEqual(pubmed_composition["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
         self.assertEqual(set(pubmed_composition["comparison_evidence"]["compared_tool_ids"]), {pubmed["tool_id"], updates["tool_id"]})

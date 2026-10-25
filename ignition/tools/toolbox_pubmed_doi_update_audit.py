@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Any
 
 
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 MAX_REQUEST_BYTES = 16 * 1024
 TOOLS_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(TOOLS_DIR))
@@ -51,7 +51,7 @@ def audit(dois: list[str]) -> dict[str, Any]:
     resolved_pmid = resolution_row.get("pmid") if resolution_row.get("identifier_status") == "IDENTIFIER_RESOLVED" else None
     pmid = resolved_pmid if isinstance(resolved_pmid, str) and update_reader.PMID_RE.fullmatch(resolved_pmid) else None
 
-    inspection = update_reader.inspect([pmid]) if isinstance(pmid, str) else None
+    inspection = update_reader.inspect([pmid], expected_doi=normalized[0]) if isinstance(pmid, str) else None
     inspection_rows = inspection.get("rows") if isinstance(inspection, dict) else None
     inspection_row = inspection_rows[0] if isinstance(inspection_rows, list) and inspection_rows else None
     if pmid is None:
@@ -60,6 +60,14 @@ def audit(dois: list[str]) -> dict[str, Any]:
         update_status = "INSPECTION_UNAVAILABLE"
     elif inspection_row.get("acquisition_status") != "OK":
         update_status = "INSPECTION_UNAVAILABLE"
+    elif inspection_row.get("record_status") == "DOI_IDENTITY_NOT_CONFIRMED" or (
+        inspection_row.get("record_status") in {
+            "RECORD_FOUND_WITH_RECORDED_RELATIONS",
+            "RECORD_FOUND_NO_RECORDED_RELATIONS",
+        }
+        and inspection_row.get("doi_binding_status") != "EXACT_MATCH"
+    ):
+        update_status = "RECORD_IDENTITY_NOT_CONFIRMED"
     elif inspection_row.get("record_status") not in {
         "RECORD_FOUND_WITH_RECORDED_RELATIONS",
         "RECORD_FOUND_NO_RECORDED_RELATIONS",
@@ -85,7 +93,7 @@ def audit(dois: list[str]) -> dict[str, Any]:
             "update_link_reader": _sha256(Path(update_reader.__file__).resolve()),
         },
         "claim_ceiling": (
-            "One DOI-to-PMID resolution response followed, only when an exact PMID is returned, by raw PubMed Comments/Corrections fields for that exact record. "
+            "One DOI-to-PMID resolution response followed, only when an exact PMID is returned, by raw PubMed Comments/Corrections fields for that exact record and the same EFetch response reports exactly the input DOI. "
             "An absent PMID, unavailable response, or empty relation list does not establish that no update exists; no source authenticity, completeness, retraction-status, article-content, or scientific-validity claim is made."
         ),
     }

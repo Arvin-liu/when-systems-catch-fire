@@ -69,10 +69,18 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertIn(f"**{PROJECT_IDENTITY_TEXT}**", identity_block)
 
     def test_identity_self_revision_includes_ignition_as_a_whole(self):
-        required = "点火的整体架构乃至我们对「点火是什么」的表述也如此"
-        self.assertIn(required, self.readme)
-        with self.assertRaises(AssertionError):
-            validate_readme_structure(self.readme.replace(required, "点火的个别工具也如此", 1))
+        required_phrases = (
+            "点火的整体架构乃至我们对「点火是什么」的表述也如此",
+            "它们的价值不取决于新旧、名义或过去投入了多少",
+            "新方法确实更好，就可以替换旧方法",
+            "旧方法仍有独特作用，就保留其适用位置",
+            "证据不足，就承认尚不能判断",
+        )
+        for phrase in required_phrases:
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase, self.readme)
+                with self.assertRaises(AssertionError):
+                    validate_readme_structure(self.readme.replace(phrase, "", 1))
 
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
