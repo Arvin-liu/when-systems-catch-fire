@@ -70,6 +70,40 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertFalse(route["execution_authorized"])
         self.assertFalse(route["route_result"]["execution_authorized"])
 
+    def test_handoff_artifact_byte_checker_card_preserves_c1_specialization_and_bounds(self) -> None:
+        document = TOOL.build_cards()
+        card = next(
+            item for item in document["cards"]
+            if item["tool_id"] == "collaboration.verify_handoff_artifact_files"
+        )
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertEqual(card["evidence_level"], "SYNTHETIC_ONLY")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], ["ignition/"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["estimated_cost"]["status"], "UNKNOWN")
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertTrue(card["unique_remaining_use_cases"])
+        self.assertEqual(card["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(
+            set(card["comparison_evidence"]["compared_tool_ids"]),
+            {"collaboration.preflight_receiver_handoff", "knowledge.assemble_context_packet"},
+        )
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+        self.assertIn("no file contents", " ".join(card["output_types"]).lower())
+        route = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-handoff-artifact-byte-check-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(route["default_route_result"]["decision"], "INCOMPLETE")
+        self.assertEqual(route["route_result"]["decision"], "COMPLETE")
+        self.assertFalse(route["route_result"]["execution_authorized"])
+
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         candidate_document = json.loads(
@@ -211,6 +245,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             noaa["tool_id"],
             noaa_co2["tool_id"],
             batch["tool_id"],
+            "collaboration.verify_handoff_artifact_files",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))

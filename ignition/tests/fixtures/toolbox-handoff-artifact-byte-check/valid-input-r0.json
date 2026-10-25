@@ -1,0 +1,31 @@
+{
+  "schema_version": "handoff-artifact-byte-check-r0",
+  "source_receipt": {
+    "artifact_refs": [
+      {
+        "kind": "manifest",
+        "ref": "fixture/manifest.json",
+        "sha256": "07f6fd7b4c5c74a1837db6bc24d18b8d7be09dd8f3be361bbf9d87b6f5c8adf5"
+      }
+    ],
+    "claimed_actions": [
+      "record fixture manifest"
+    ],
+    "executor_id": "external.codex",
+    "executor_telemetry": {
+      "transport": "controlled-fixture"
+    },
+    "external_session_ref": null,
+    "federation_task_id": "handoff-artifact-byte-fixture-001",
+    "handoff_eligibility": {
+      "eligible": true,
+      "reason": "bounded local digest fixture"
+    },
+    "receipt_digest": "e0d43df0733c17dd0a8dab8626c13779f6d3aa765f73610b2d35a662f12a3ebc",
+    "terminal_state": "COMPLETED_VALIDATED",
+    "unresolveds": [],
+    "validation_refs": [
+      "validator/fixture-v1"
+    ]
+  }
+}

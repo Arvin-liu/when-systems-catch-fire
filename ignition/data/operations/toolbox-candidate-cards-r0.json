@@ -3747,6 +3747,211 @@
         "A route is a proposal only; a separate task-level decision must authorize invocation, and any external takeover still requires its independent authority and runtime checks."
       ],
       "claim_ceiling": "Canonical self-digest consistency, deterministic receipt-to-handoff projection equality, and existing caller-declared receiver capability/re-observation preconditions only. No receipt authenticity, actual workspace observation, live capability enforcement, takeover authorization, task correctness, science, or safety is established."
+    },
+    {
+      "tool_id": "collaboration.verify_handoff_artifact_files",
+      "display_name": {
+        "zh": "交接产物字节核验器",
+        "en": "Handoff Artifact Byte Verifier"
+      },
+      "description": "Compare bounded bytes from local files under an explicit ignition/ workspace root with the SHA-256 values in a typed FederatedResultReceipt, without returning artifact contents or authorizing a handoff.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_verify_handoff_artifact_files.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_verify_handoff_artifact_files.py --stdin --workspace-root <path-under-ignition>",
+      "source_refs": [
+        {
+          "path": "ignition/agent_federation/contracts.py",
+          "role": "CANONICAL_FEDERATED_RECEIPT_AND_ARTIFACT_REF_TYPES"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-c1-evidence-r0.json",
+          "role": "SYNTHETIC_MATCHED_COMPARISON_AND_C1_DISPOSITION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-route-profile-r0.json",
+          "role": "EXPLICIT_LOCAL_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_ALLOWLISTED_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-handoff-artifact-byte-check.md",
+          "role": "USER_SCOPE_COMPARATORS_AND_LIMITS"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-handoff-artifact-byte-check/valid-input-r0.json",
+          "role": "BOUNDED_CONTROLLED_CLI_EXAMPLE"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-handoff-artifact-byte-check/workspace/",
+          "role": "LOCAL_NONAUTHORITATIVE_FIXTURE_ARTIFACT_TREE"
+        },
+        {
+          "path": "ignition/tests/test_approval_handoff.py",
+          "role": "EXISTING_RECEIVER_API_CONTRACT_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_context_packet.py",
+          "role": "EXISTING_UTF8_CONTEXT_PACKET_BASELINE_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py",
+          "role": "FOCUSED_BYTE_BOUNDARY_AND_MATCHED_NEGATIVE_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "IDENTITY_CARD_AND_C1_ASSERTIONS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_TESTS"
+        },
+        {
+          "path": "ignition/tools/toolbox_context_packet.py",
+          "role": "TEXT_EXCERPT_DIGEST_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_receiver_handoff_preflight.py",
+          "role": "RECEIPT_PROJECTION_PRECHECK_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_verify_handoff_artifact_files.py",
+          "role": "READ_ONLY_BOUNDED_ARTIFACT_BYTE_ENTRYPOINT"
+        }
+      ],
+      "dependencies": [
+        "ignition/agent_federation/contracts.py"
+      ],
+      "good_for": [
+        "Checking whether the current local bytes of receipt-referenced artifacts under a caller-selected ignition/ workspace root match the receipt's declared SHA-256 values.",
+        "Hashing bounded regular files, including non-UTF-8 and binary artifacts, without returning their contents.",
+        "Adding a local byte observation before a separate receiver or reviewer decision when an existing handoff preflight only checks declarations and receipt-to-bundle binding."
+      ],
+      "not_for": [
+        "Authenticating the receipt, its author, executor, or source; its self-digest is unkeyed.",
+        "Proving artifact provenance, stable state after the read, task completion, semantic correctness, scientific validity, or receiver authorization.",
+        "Reading paths outside ignition/, contacting a provider, dispatching or accepting a handoff, writing files, or enforcing runtime isolation."
+      ],
+      "only_if": [
+        "The caller supplies one valid FederatedResultReceipt with 1 to 64 artifact references and an explicit workspace root under ignition/.",
+        "Every artifact reference is a safe relative POSIX path under that selected root, and each file is expected to be a regular file no larger than 8 MiB within the 32 MiB total byte budget.",
+        "The caller accepts an unkeyed digest comparison and preserves execution_authorized=false as well as runtime_enforcement_status=NOT_EVALUATED."
+      ],
+      "counterindicated_when": [
+        "Receipt provenance or sender identity must be authenticated, or the task needs a trusted source or stable snapshot guarantee.",
+        "The artifacts are outside ignition/, exceed the declared count/byte limits, or require following symlinks or reading non-regular files.",
+        "The requested outcome requires semantic review, task correctness, a handoff decision, permission grant, network action, or scientific acceptance."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object with schema_version handoff-artifact-byte-check-r0 and a valid FederatedResultReceipt containing artifact refs, plus a separately supplied workspace-root CLI argument under ignition/; stdin is capped at 262144 bytes."
+      ],
+      "output_types": [
+        "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned.",
+        "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_LOCAL_ARTIFACT_HASHING",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads only caller-referenced regular-file bytes under the explicit workspace root with bounded descriptor-based opens; prints one bounded JSON result to stdout."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9",
+        "Local Ignition agent_federation.contracts types; otherwise standard library only.",
+        "POSIX O_NOFOLLOW, O_DIRECTORY, and dir_fd support; unsupported platforms fail closed."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No measured CPU, memory, latency, or matched alternative cost profile has been collected; per-invocation file reads are capped at 32 MiB."
+      },
+      "alternatives": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The receiver preflight checks receipt-to-bundle projection and caller-declared receiver preconditions without reading referenced file bytes; this candidate checks current bounded local bytes without deciding takeover readiness."
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "relationship": "SPECIALIZED_NOT_EQUIVALENT",
+          "reason": "The context packet also checks current file digests but requires UTF-8 text context, line ranges, and obligation mapping and emits excerpts; this candidate is receipt-native, hashes binary artifacts, and emits no file contents."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Verify receipt-bound bytes of binary or non-UTF-8 artifacts under a caller-selected ignition/ workspace without returning artifact contents.",
+        "Add current local-byte digest comparison to a Federation handoff review while leaving authenticity, provenance, and takeover decisions to separate authority."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Matched synthetic controls show that the receiver preflight accepts caller-declared artifact refs without checking changed local bytes, while the context packet hashes UTF-8 context files but classifies the same binary artifact as SOURCE_NOT_UTF8. The candidate returns DIGEST_MISMATCH for the first case and DIGEST_MATCH for the binary case without emitting file contents. No real-task quality, broad reliability, cost, authenticity, provenance, or stable-snapshot conclusion is established.",
+        "compared_tool_ids": [
+          "collaboration.preflight_receiver_handoff",
+          "knowledge.assemble_context_packet"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-handoff-artifact-byte-check-c1-evidence-r0.json",
+          "ignition/tests/test_toolbox_context_packet.py",
+          "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py",
+          "ignition/tests/test_approval_handoff.py"
+        ],
+        "findings": [
+          "The receiver preflight and byte verifier serve consecutive, distinct handoff stages: declaration consistency first, current local byte comparison only when separately requested.",
+          "The context packet has a distinct text-context and obligation-mapping output; its UTF-8 excerpt behavior does not cover binary artifacts or digest-only handling without content output.",
+          "Retain both existing tools and add this optional specialization; evidence does not support replacing or retiring any current or candidate tool, and cost remains unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "A synthetic matched comparison supports a separate binary-capable, no-content artifact-byte check; it does not establish that the receiver preflight or context packet should be retired or replaced."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry operation or existing candidate is migrated. Keep the receiver preflight for receipt-to-bundle and receiver-declaration checks; add this tool only when actual local artifact-byte comparison is required.",
+          "Use the context packet when a task needs UTF-8 excerpts and structural obligation linkage; do not route those tasks here merely to obtain a digest."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, entrypoint, docs, fixtures, tests, comparison/route evidence, and regenerate toolbox identity projections on the isolated branch; preserve prior evidence commits for history."
+        ]
+      },
+      "fallback": "If any ref, root, size, or digest check fails, stop before receiver takeover and reconcile the receipt, workspace, and artifact bytes. Use a separate provenance/authenticity process when trust is required; never infer authorization from a digest match.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tests/test_approval_handoff.py",
+          "ignition/tests/test_toolbox_context_packet.py"
+        ],
+        "negative_controls": [
+          "With the same receipt ref and a changed local file, preflight_receiver_handoff returns PREFLIGHT_READY_NO_AUTHORITY while this checker returns DIGEST_MISMATCH.",
+          "A binary non-UTF-8 artifact returns DIGEST_MATCH without its contents; the context packet returns SOURCE_NOT_UTF8 and no excerpt for the same file.",
+          "Traversal, URI refs, symlinks, outside roots, non-regular files, byte/count limits, duplicate JSON keys, invalid receipts, and oversized stdin fail closed.",
+          "The router excludes the candidate by default and proposes it only under its explicit experimental allowlist; route output never authorizes execution."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only select through an explicit experimental-tool allowlist when a task requires current bytes for receipt-referenced local artifacts under ignition/ and needs no artifact content output.",
+        "Do not select for UTF-8 excerpt or obligation-mapping work covered by knowledge.assemble_context_packet, or for receipt-to-bundle and receiver-declaration checks covered by collaboration.preflight_receiver_handoff.",
+        "A route is a proposal only; the caller separately decides whether to invoke the read-only tool, and digest match never authorizes a handoff."
+      ],
+      "claim_ceiling": "Checks whether bounded bytes read from regular files under an explicit repository-local ignition/ workspace root match the SHA-256 values in a typed FederatedResultReceipt whose canonical unkeyed self-digest passes. It does not authenticate the receipt or source, prove file provenance or task correctness, observe a stable runtime workspace after reading, authorize actions, enforce runtime isolation, or establish scientific truth."
     }
   ]
 }

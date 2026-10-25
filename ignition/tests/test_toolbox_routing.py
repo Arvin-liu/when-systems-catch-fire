@@ -755,6 +755,39 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
 
+    def test_handoff_artifact_byte_checker_is_default_off_and_uses_only_explicit_allowlist(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "collaboration.verify_handoff_artifact_files"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("handoff-artifact-local-digest-check", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        opt_in = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        receipt = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-handoff-artifact-byte-check-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+        self.assertEqual(opt_in["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opt_in["selected_tools"]], [tool_id])
+        self.assertFalse(opt_in["execution_authorized"])
+        self.assertFalse(opt_in["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(opt_in["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertFalse(receipt["default_route_result"]["execution_authorized"])
+        self.assertEqual(receipt["default_route_result"]["decision"], "INCOMPLETE")
+        self.assertEqual(receipt["route_result"]["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in receipt["route_result"]["selected_tools"]], [tool_id])
+        self.assertFalse(receipt["route_result"]["execution_authorized"])
+        self.assertEqual(
+            receipt["route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
