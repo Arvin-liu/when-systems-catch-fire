@@ -52,7 +52,7 @@
     "claim_ceiling": "One live provider response returned three metadata rows for one public query at this retrieval time; this does not establish query relevance, completeness, source authenticity, scientific support, or article status."
   },
   "route_profile": {
-    "candidate_catalog_git_blob_sha1": "ea391224da5417b9211fcf36138d81fb40a8deb9",
+    "candidate_catalog_git_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
     "input_types": [
       "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
     ],
@@ -115,10 +115,46 @@
   ],
   "comparison_scope": {
     "compared_tool_ids": [
+      "research.verify_crossref_metadata",
+      "research.lookup_openalex_work_metadata",
       "research.resolve_pubmed_identifiers",
-      "research.inspect_pubmed_update_links"
+      "research.inspect_pubmed_update_links",
+      "research.lookup_arxiv_paper_metadata",
+      "research.compare_publication_metadata_snapshots"
     ],
-    "distinct_inputs_and_outputs": "Topic query to bounded literature metadata differs from exact DOI-to-PMID/PMCID mapping and exact PMID-to-Comments/Corrections inspection.",
+    "neighbor_contracts": [
+      {
+        "tool_id": "research.verify_crossref_metadata",
+        "input_scope": "Caller-supplied DOI plus expected title and year",
+        "output_scope": "Comparison rows against one Crossref record"
+      },
+      {
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "input_scope": "Caller-supplied DOI identifiers",
+        "output_scope": "Selected OpenAlex Work metadata"
+      },
+      {
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "input_scope": "Caller-supplied DOI identifiers",
+        "output_scope": "PMID and PMCID mapping when returned"
+      },
+      {
+        "tool_id": "research.inspect_pubmed_update_links",
+        "input_scope": "Caller-supplied exact PMIDs",
+        "output_scope": "Raw Comments/Corrections relations recorded for those records"
+      },
+      {
+        "tool_id": "research.lookup_arxiv_paper_metadata",
+        "input_scope": "Caller-supplied exact modern arXiv identifier",
+        "output_scope": "Selected arXiv provider metadata for that identifier"
+      },
+      {
+        "tool_id": "research.compare_publication_metadata_snapshots",
+        "input_scope": "Already-collected Crossref and OpenAlex adapter results for one DOI",
+        "output_scope": "Local title/year field agreement, disagreement or insufficiency; no retrieval"
+      }
+    ],
+    "distinct_inputs_and_outputs": "Europe PMC topic query to bounded record discovery does not replace known-DOI Crossref/OpenAlex lookup, DOI-to-PubMed mapping, PMID update-link inspection, arXiv-ID lookup, or local comparison of two already-collected provider results.",
     "unmeasured": [
       "search relevance and recall",
       "completeness against other databases or search strategies",

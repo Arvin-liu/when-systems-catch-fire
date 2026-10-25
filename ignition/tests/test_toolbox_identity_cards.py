@@ -225,6 +225,19 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(europe_pmc["evidence_level"], "REAL_TOOL_TEST")
         self.assertFalse(europe_pmc["router_selectable_by_default"])
         self.assertIn("--allow-public-network", europe_pmc["entrypoint"])
+        self.assertEqual(
+            europe_pmc["comparison_evidence"]["compared_tool_ids"],
+            [
+                "research.verify_crossref_metadata",
+                "research.lookup_openalex_work_metadata",
+                "research.resolve_pubmed_identifiers",
+                "research.inspect_pubmed_update_links",
+                "research.lookup_arxiv_paper_metadata",
+                "research.compare_publication_metadata_snapshots",
+            ],
+        )
+        self.assertEqual(europe_pmc["replacement_candidates"], [])
+        self.assertEqual(europe_pmc["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         self.assertEqual(crossref["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
         self.assertIn("--allow-public-network", crossref["entrypoint"])
         self.assertFalse(crossref["router_selectable_by_default"])
