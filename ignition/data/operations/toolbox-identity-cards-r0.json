@@ -8,7 +8,7 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+    "blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
     "candidate_count": 14
   },
   "cards": [
@@ -478,7 +478,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -656,7 +656,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -992,7 +992,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1162,7 +1162,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05"
+          "sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -1182,11 +1182,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "bc3ddcd801535dbaaed30c7d54ea2a0466a11d5f"
+          "sha1": "a7b2c1a170c80064991aeb52128f6703b7de836c"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1511,7 +1511,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2605,7 +2605,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3262,7 +3262,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3482,7 +3482,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3607,7 +3607,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_identifier_resolver.py --stdin --allow-public-network",
       "source_refs": [
@@ -3618,6 +3618,10 @@
         {
           "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+          "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -3708,14 +3712,18 @@
       "unique_remaining_use_cases": [],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Existing evidence tests this candidate in isolation; no paired same-task comparison against its mapped alternatives has been recorded for C1.",
-        "compared_tool_ids": [],
+        "scope": "A single paired route and live API task records complementary output contracts and one exact outcome; it does not establish comparative quality, effort, cost, broad replacement value, or retirement.",
+        "compared_tool_ids": [
+          "research.verify_crossref_metadata"
+        ],
         "evidence_refs": [
           "ignition/tools/toolbox_pubmed_identifier_resolver.py",
-          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py"
+          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
+          "ignition/data/operations/toolbox-real-task-route-evidence-r0.json"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters."
+          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters.",
+          "On GAP001-02, the router selected this identifier lookup with Crossref metadata only when both outputs were required; ID Converter returned the matched DOI with no PMID/PMCID (HTTP 200). The result does not establish global absence or comparative cost; C1 remains unknown."
         ]
       },
       "deprecation_or_retirement_status": {
@@ -3742,10 +3750,15 @@
           "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "5c4a93069dbfb5fa7c0f8bafdf06579567280261"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "78546de59aa4b65577660ec12f3b0bd04277871a"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3926,7 +3939,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4069,7 +4082,7 @@
       "maintainer": "Ignition repository maintainers; Task 103 Crossref pilot supplies reused normalization helpers, not Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
       "source_refs": [
@@ -4088,6 +4101,10 @@
         {
           "path": "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
           "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+          "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE"
         }
       ],
       "dependencies": [
@@ -4182,14 +4199,18 @@
       "unique_remaining_use_cases": [],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Existing evidence tests this candidate in isolation; no paired same-task comparison against its mapped alternatives has been recorded for C1.",
-        "compared_tool_ids": [],
+        "scope": "A single paired route and live API task records complementary output contracts and one exact outcome; it does not establish comparative quality, effort, cost, broad replacement value, or retirement.",
+        "compared_tool_ids": [
+          "research.resolve_pubmed_identifiers"
+        ],
         "evidence_refs": [
           "ignition/tools/toolbox_crossref_metadata_verifier.py",
-          "ignition/tests/test_toolbox_crossref_metadata_verifier.py"
+          "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
+          "ignition/data/operations/toolbox-real-task-route-evidence-r0.json"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters."
+          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters.",
+          "On GAP001-02, the router selected this metadata comparison with the PubMed ID resolver only when both outputs were required; this tool matched title/year (HTTP 200). The paired evidence is one record, not a comparative quality/cost or replacement result; C1 remains unknown."
         ]
       },
       "deprecation_or_retirement_status": {
@@ -4226,10 +4247,15 @@
           "path": "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "4c4635430b4d147d965824beb13d409642aab8ca"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "78546de59aa4b65577660ec12f3b0bd04277871a"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4424,7 +4450,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4616,7 +4642,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5120,11 +5146,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "bc3ddcd801535dbaaed30c7d54ea2a0466a11d5f"
+          "sha1": "a7b2c1a170c80064991aeb52128f6703b7de836c"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "0a0bd8327d775a54db99d68d2b3aafdb1edd6c05",
+      "candidate_catalog_blob_sha1": "4ff4c0fad777d071827ff9b8c30d95bb1232106a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },

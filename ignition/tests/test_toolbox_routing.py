@@ -370,6 +370,33 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(combined["execution_authorized"])
         self.assertEqual(combined["network_authority_binding"], "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER")
 
+    def test_real_doi_task_expands_to_two_required_outputs_and_skips_redundant_candidates(self) -> None:
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-real-task-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        route = evidence["route_profile"]
+        task = profile(
+            evidence["task"]["task_id"],
+            route["input_types"],
+            route["required_outputs"],
+            allowed_network_hosts=route["allowed_network_hosts"],
+        )
+        redundant = next(row for row in evidence["route_trials"] if row["scenario"] == "redundant_options")
+        result = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=redundant["include_experimental_tool_ids"],
+        )
+        self.assertEqual(result["decision"], "COMPLETE")
+        self.assertEqual(
+            {row["tool_id"] for row in result["selected_tools"]},
+            {"research.resolve_pubmed_identifiers", "research.verify_crossref_metadata"},
+        )
+        actual_rejections = {row["tool_id"]: row["reason"] for row in result["rejected_candidates"]}
+        for rejection in redundant["rejected_candidates"]:
+            self.assertEqual(actual_rejections[rejection["tool_id"]], rejection["reason"])
+        self.assertFalse(result["execution_authorized"])
+        self.assertEqual(result["cost_estimate"]["status"], "UNKNOWN")
+
     def test_pubmed_update_links_are_separate_opt_in_capability(self) -> None:
         pmid_input = "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs)"
         outputs = [

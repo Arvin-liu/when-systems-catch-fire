@@ -49,12 +49,26 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(crossref["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
         self.assertIn("--allow-public-network", crossref["entrypoint"])
         self.assertFalse(crossref["router_selectable_by_default"])
-        self.assertEqual(crossref["evidence_level"], "REAL_TOOL_TEST")
+        self.assertEqual(crossref["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertIn(
+            {
+                "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+                "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE",
+            },
+            crossref["source_refs"],
+        )
         self.assertEqual(crossref["estimated_cost"]["status"], "UNKNOWN")
         self.assertIn("article full text", " ".join(crossref["not_for"]))
         self.assertEqual(pubmed["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
         self.assertIn("--allow-public-network", pubmed["entrypoint"])
-        self.assertEqual(pubmed["evidence_level"], "REAL_TOOL_TEST")
+        self.assertEqual(pubmed["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertIn(
+            {
+                "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+                "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE",
+            },
+            pubmed["source_refs"],
+        )
         self.assertEqual(pubmed["estimated_cost"]["status"], "UNKNOWN")
         self.assertEqual(pubmed["dependencies"], [])
         self.assertIn("scientific truth", pubmed["claim_ceiling"])

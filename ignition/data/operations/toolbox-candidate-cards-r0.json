@@ -1232,7 +1232,7 @@
       "maintainer": "Ignition repository maintainers; Task 103 Crossref pilot supplies reused normalization helpers, not Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
       "source_refs": [
@@ -1251,6 +1251,10 @@
         {
           "path": "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
           "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+          "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE"
         }
       ],
       "dependencies": [
@@ -1345,14 +1349,18 @@
       "unique_remaining_use_cases": [],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Existing evidence tests this candidate in isolation; no paired same-task comparison against its mapped alternatives has been recorded for C1.",
-        "compared_tool_ids": [],
+        "scope": "A single paired route and live API task records complementary output contracts and one exact outcome; it does not establish comparative quality, effort, cost, broad replacement value, or retirement.",
+        "compared_tool_ids": [
+          "research.resolve_pubmed_identifiers"
+        ],
         "evidence_refs": [
           "ignition/tools/toolbox_crossref_metadata_verifier.py",
-          "ignition/tests/test_toolbox_crossref_metadata_verifier.py"
+          "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
+          "ignition/data/operations/toolbox-real-task-route-evidence-r0.json"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters."
+          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters.",
+          "On GAP001-02, the router selected this metadata comparison with the PubMed ID resolver only when both outputs were required; this tool matched title/year (HTTP 200). The paired evidence is one record, not a comparative quality/cost or replacement result; C1 remains unknown."
         ]
       },
       "deprecation_or_retirement_status": {
@@ -1380,7 +1388,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_identifier_resolver.py --stdin --allow-public-network",
       "source_refs": [
@@ -1391,6 +1399,10 @@
         {
           "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+          "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -1481,14 +1493,18 @@
       "unique_remaining_use_cases": [],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Existing evidence tests this candidate in isolation; no paired same-task comparison against its mapped alternatives has been recorded for C1.",
-        "compared_tool_ids": [],
+        "scope": "A single paired route and live API task records complementary output contracts and one exact outcome; it does not establish comparative quality, effort, cost, broad replacement value, or retirement.",
+        "compared_tool_ids": [
+          "research.verify_crossref_metadata"
+        ],
         "evidence_refs": [
           "ignition/tools/toolbox_pubmed_identifier_resolver.py",
-          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py"
+          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
+          "ignition/data/operations/toolbox-real-task-route-evidence-r0.json"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters."
+          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters.",
+          "On GAP001-02, the router selected this identifier lookup with Crossref metadata only when both outputs were required; ID Converter returned the matched DOI with no PMID/PMCID (HTTP 200). The result does not establish global absence or comparative cost; C1 remains unknown."
         ]
       },
       "deprecation_or_retirement_status": {
