@@ -796,6 +796,38 @@ class AdaptiveToolRouteTests(unittest.TestCase):
                 )
                 self.assertEqual(result["cost_estimate"]["status"], "UNKNOWN")
 
+    def test_europe_pmc_fulltext_locator_is_default_off_and_specialized(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.resolve_europe_pmc_fulltext_locations")
+        task = profile("exact-doi-europe-pmc-fulltext-locations", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+
+        no_host = planner.plan_tool_route(task, include_experimental_tool_ids=[card["tool_id"]])
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": card["tool_id"], "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+
+        permitted = planner.plan_tool_route(
+            profile(
+                task["task_id"], task["input_types"], task["required_outputs"],
+                allowed_network_hosts=["www.ebi.ac.uk"],
+            ),
+            include_experimental_tool_ids=[card["tool_id"], "research.search_europe_pmc_query"],
+        )
+        self.assertEqual(permitted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in permitted["selected_tools"]], [card["tool_id"]])
+        self.assertIn(
+            {"tool_id": "research.search_europe_pmc_query", "reason": "NO_INPUT_TYPE_MATCH"},
+            permitted["rejected_candidates"],
+        )
+        self.assertFalse(permitted["execution_authorized"])
+        self.assertEqual(permitted["cost_estimate"]["status"], "UNKNOWN")
+
     def test_g1_goal_intake_preflight_is_opt_in_and_never_authorizes(self) -> None:
         task = profile(
             "offline-g1-goal-proposal-preflight",

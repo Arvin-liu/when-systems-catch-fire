@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/operations/toolbox-europe-pmc-fulltext-locator-r0.schema.json",
+  "title": "Europe PMC exact DOI full-text location locator request and result",
+  "description": "Optional, default-off metadata-only adapter. Returned provider URLs and license fields are claims; the adapter never requests the URLs or adjudicates rights.",
+  "$defs": {
+    "doi": {
+      "type": "string",
+      "maxLength": 128,
+      "pattern": "^10\\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dois"],
+      "properties": {
+        "dois": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/doi"}
+        }
+      }
+    },
+    "full_text_location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "availability", "availability_code", "document_style", "site", "license"],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "maxLength": 2048,
+          "pattern": "^https://",
+          "description": "Provider-reported HTTPS URL. It is not fetched or verified by this adapter."
+        },
+        "availability": {"type": ["string", "null"], "maxLength": 128},
+        "availability_code": {"type": ["string", "null"], "maxLength": 64},
+        "document_style": {"type": ["string", "null"], "maxLength": 64},
+        "site": {"type": ["string", "null"], "maxLength": 256},
+        "license": {
+          "type": ["string", "null"],
+          "maxLength": 128,
+          "description": "Unverified provider-reported metadata, not a rights determination."
+        }
+      }
+    },
+    "provider_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "id", "pmid", "pmcid", "doi", "is_open_access_claim", "full_text_locations", "omitted_unsafe_location_count"],
+      "properties": {
+        "source": {"type": "string", "minLength": 1, "maxLength": 32},
+        "id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "pmid": {"type": ["string", "null"], "maxLength": 32},
+        "pmcid": {"type": ["string", "null"], "maxLength": 32},
+        "doi": {"$ref": "#/$defs/doi"},
+        "is_open_access_claim": {"type": ["string", "boolean", "null"], "maxLength": 16},
+        "full_text_locations": {"type": "array", "maxItems": 64, "items": {"$ref": "#/$defs/full_text_location"}},
+        "omitted_unsafe_location_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "doi_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requested_doi", "query_sha256", "retrieval_timestamp_utc", "source_endpoint", "acquisition_status", "http_status", "response_sha256", "provider_hit_count", "match_status", "record_count", "full_text_location_count", "records"],
+      "properties": {
+        "requested_doi": {"$ref": "#/$defs/doi"},
+        "query_sha256": {"$ref": "#/$defs/sha256"},
+        "retrieval_timestamp_utc": {"type": "string", "format": "date-time"},
+        "source_endpoint": {"const": "https://www.ebi.ac.uk/europepmc/webservices/rest/search"},
+        "acquisition_status": {
+          "enum": ["NOT_AVAILABLE", "OK", "HTTP_ERROR", "NON_JSON_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "REDIRECT_BLOCKED", "RATE_LIMITED", "NETWORK_ERROR", "INVALID_PROVIDER_RESPONSE"]
+        },
+        "http_status": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+        "response_sha256": {"oneOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+        "provider_hit_count": {"type": ["integer", "null"], "minimum": 0},
+        "match_status": {"enum": ["NOT_RUN", "NOT_AVAILABLE", "NO_EXACT_MATCH", "MULTIPLE_EXACT_RECORDS", "EXACT_RECORD_WITH_LOCATIONS", "EXACT_RECORD_NO_USABLE_LOCATION"]},
+        "record_count": {"type": "integer", "minimum": 0, "maximum": 5},
+        "full_text_location_count": {"type": "integer", "minimum": 0},
+        "records": {"type": "array", "maxItems": 5, "items": {"$ref": "#/$defs/provider_record"}}
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "tool_id", "tool_version", "source_code_sha256", "provider", "status", "requested_count", "successful_acquisition_count", "valid_provider_response_count", "records", "claim_ceiling"],
+      "properties": {
+        "schema_version": {"const": "ignition.europe-pmc-fulltext-locator-r0"},
+        "tool_id": {"const": "research.resolve_europe_pmc_fulltext_locations"},
+        "tool_version": {"const": "0.1.0"},
+        "source_code_sha256": {"$ref": "#/$defs/sha256"},
+        "provider": {"const": "Europe PMC"},
+        "status": {"enum": ["OK", "PARTIAL", "NOT_AVAILABLE"]},
+        "requested_count": {"type": "integer", "minimum": 1, "maximum": 5},
+        "successful_acquisition_count": {"type": "integer", "minimum": 0, "maximum": 5},
+        "valid_provider_response_count": {"type": "integer", "minimum": 0, "maximum": 5},
+        "records": {"type": "array", "minItems": 1, "maxItems": 5, "items": {"$ref": "#/$defs/doi_result"}},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "oneOf": [
+    {"$ref": "#/$defs/request"},
+    {"$ref": "#/$defs/response"}
+  ]
+}

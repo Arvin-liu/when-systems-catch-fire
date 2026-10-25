@@ -338,12 +338,18 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         pubmed_composition = next(card for card in candidates if card["tool_id"] == "research.audit_pubmed_updates_from_doi")
         editorial = next(card for card in candidates if card["tool_id"] == "writing.preflight_cognitive_migration_revision")
         europe_pmc = next(card for card in candidates if card["tool_id"] == "research.search_europe_pmc_query")
-        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], pubmed_composition["tool_id"], "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], europe_pmc["tool_id"]})
+        europe_pmc_fulltext = next(card for card in candidates if card["tool_id"] == "research.resolve_europe_pmc_fulltext_locations")
+        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], pubmed_composition["tool_id"], "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"]})
         self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertEqual(pubmed["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov"])
         self.assertEqual(openalex["permissions"]["network_hosts"], ["api.openalex.org"])
         self.assertEqual(updates["permissions"]["network_hosts"], ["eutils.ncbi.nlm.nih.gov"])
         self.assertEqual(europe_pmc["permissions"]["network_hosts"], ["www.ebi.ac.uk"])
+        self.assertEqual(europe_pmc_fulltext["permissions"]["network_hosts"], ["www.ebi.ac.uk"])
+        self.assertFalse(europe_pmc_fulltext["router_selectable_by_default"])
+        self.assertEqual(europe_pmc_fulltext["replacement_candidates"], [])
+        self.assertEqual(europe_pmc_fulltext["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertIn("fullTextUrlList", " ".join(europe_pmc_fulltext["output_types"]))
         self.assertEqual(europe_pmc["evidence_level"], "REAL_TOOL_TEST")
         self.assertFalse(europe_pmc["router_selectable_by_default"])
         self.assertIn("--allow-public-network", europe_pmc["entrypoint"])
@@ -501,6 +507,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             pubmed_composition["tool_id"],
             "maintenance.attribute_actions_validation_evidence",
             "research.search_europe_pmc_query",
+            "research.resolve_europe_pmc_fulltext_locations",
             "maintenance.compare_context_packet_variants",
             "maintenance.compare_audit_findings",
             offline_snapshot_binding["tool_id"],
@@ -509,7 +516,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
-        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings"} for card in candidates))
+        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings"} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         self.assertEqual(batch["execution_mode"], "READ_ONLY_RUN")
