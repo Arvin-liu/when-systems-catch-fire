@@ -4957,7 +4957,7 @@
       "maintainer": "Ignition repository maintainers; Task 103 Crossref pilot supplies reused normalization helpers, not Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
       "source_refs": [
@@ -5024,6 +5024,14 @@
         {
           "path": "ignition/data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json",
           "role": "C1_PAIRED_REAL_DOI_CORRECTION_RELATION_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+          "role": "V0_3_REAL_TASK_REFERENCE_PROJECTION_OUTCOME"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-references-route-evidence-r0.json",
+          "role": "V0_3_TASK_SPECIFIC_MINIMAL_ROUTE_EXPERIMENT"
         }
       ],
       "dependencies": [
@@ -5110,13 +5118,17 @@
       "fallback": "If live network use is not approved or fails, retain the explicit NOT_RUN or acquisition failure and use a pinned historical Crossref source manifest only as historical evidence; never label it a live re-check.",
       "validation": {
         "focused_checks": [
-          "ignition/tests/test_toolbox_crossref_metadata_verifier.py"
+          "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
+          "ignition/tests/test_toolbox_routing.py"
         ],
         "negative_controls": [
           "Missing --allow-public-network makes no request and emits no result.",
           "Reject URLs, malformed or duplicate DOI rows, duplicate JSON keys, and batches above ten before network access.",
           "Only api.crossref.org is contacted; redirects, non-JSON, oversized responses, 404, timeout, and malformed JSON are explicit outcomes.",
-          "No repository files are written and network failures are not silently dropped."
+          "No repository files are written and network failures are not silently dropped.",
+          "Reference fields are optional: missing, empty, malformed, and nonempty states remain distinct.",
+          "Projection is capped at 25 rows per DOI; omitted, invalid, and truncation counts are explicit.",
+          "Routing remains default-off; without the exact api.crossref.org host the plan is incomplete, and a complete route proposal still has execution_authorized=false."
         ]
       },
       "router_selectable_by_default": false,
@@ -5133,19 +5145,22 @@
       ],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Version 0.3.0 adds a same-response bounded reference projection. One purposively selected real DOI will demonstrate only whether this record returns a projection; it cannot estimate reference-deposit prevalence, completeness, correctness, or cross-provider quality.",
+        "scope": "One purposively selected real DOI produced a nonempty Crossref reference projection: 40 entries reported, 25 projected, 15 omitted, and truncation=true. This is a single-record observation only; it cannot estimate deposit prevalence, coverage, completeness, correctness, or cross-provider quality. Overall comparison remains COMPARISON_UNKNOWN.",
         "compared_tool_ids": [
           "research.lookup_openalex_work_metadata",
           "research.inspect_pubmed_update_links"
         ],
         "evidence_refs": [
           "ignition/data/operations/toolbox-crossref-relations-evidence-r0.json",
-          "ignition/data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json"
+          "ignition/data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json",
+          "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+          "ignition/data/operations/toolbox-crossref-references-route-evidence-r0.json"
         ],
         "findings": [
           "Crossref documents that reference deposits are optional; absence or emptiness does not establish that a work has no references.",
           "The existing OpenAlex candidate returns Work identity, OA, and location projections, while the PubMed relation reader returns Comments/Corrections fields; neither current adapter returns a Crossref-deposited bibliography projection.",
-          "This feature uses fields from the same Crossref Work response and does not add a request or permission. Any single DOI result is a positive or negative record-level observation only, not a coverage or quality comparison."
+          "This feature uses fields from the same Crossref Work response and does not add a request or permission. Any single DOI result is a positive or negative record-level observation only, not a coverage or quality comparison.",
+          "For the one purposively selected record, Crossref reported 40 references and the bounded adapter projected 25, omitted 15, and marked truncation; this does not establish general coverage or completeness."
         ]
       },
       "deprecation_or_retirement_status": {

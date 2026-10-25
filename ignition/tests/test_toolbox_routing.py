@@ -425,6 +425,78 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(permitted_host["network_authority_binding"], "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER")
         self.assertFalse(permitted_host["execution_authorized"])
 
+    def test_crossref_reference_projection_is_opt_in_and_ignores_unneeded_providers(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        cards = {
+            item["tool_id"]: item
+            for item in catalog["candidates"]
+            if item["tool_id"] in {
+                "research.verify_crossref_metadata",
+                "research.lookup_openalex_work_metadata",
+                "research.audit_pubmed_updates_from_doi",
+            }
+        }
+        crossref_id = "research.verify_crossref_metadata"
+        crossref = cards[crossref_id]
+        required_references = crossref["output_types"][-1]
+        all_input_types = list(dict.fromkeys(
+            value
+            for tool_id in cards
+            for value in cards[tool_id]["accepted_input_types"]
+        ))
+        task = profile(
+            "crossref-deposited-reference-projection",
+            all_input_types,
+            [required_references],
+        )
+
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": crossref_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+
+        no_host = planner.plan_tool_route(task, include_experimental_tool_ids=[crossref_id])
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": crossref_id, "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+
+        minimum = planner.plan_tool_route(
+            profile(
+                task["task_id"],
+                task["input_types"],
+                task["required_outputs"],
+                allowed_network_hosts=["api.crossref.org"],
+            ),
+            include_experimental_tool_ids=[crossref_id],
+        )
+        self.assertEqual(minimum["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in minimum["selected_tools"]], [crossref_id])
+        self.assertEqual(minimum["selected_tools"][0]["permissions"]["network_hosts"], ["api.crossref.org"])
+        self.assertFalse(minimum["execution_authorized"])
+
+        expanded_options = planner.plan_tool_route(
+            profile(
+                task["task_id"],
+                task["input_types"],
+                task["required_outputs"],
+                allowed_network_hosts=["api.crossref.org"],
+            ),
+            include_experimental_tool_ids=list(cards),
+        )
+        self.assertEqual(expanded_options["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in expanded_options["selected_tools"]], [crossref_id])
+        for tool_id in set(cards) - {crossref_id}:
+            self.assertIn(
+                {"tool_id": tool_id, "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+                expanded_options["rejected_candidates"],
+            )
+        self.assertFalse(expanded_options["execution_authorized"])
+
     def test_network_route_rejects_wildcards_urls_and_ports(self) -> None:
         task = profile("invalid-network-route", ["x"], ["y"], allowed_network_hosts=["*.crossref.org"])
         with self.assertRaises(planner.RunPlanningError):
