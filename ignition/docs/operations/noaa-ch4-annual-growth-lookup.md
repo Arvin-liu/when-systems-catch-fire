@@ -16,7 +16,7 @@ The table's header defines annual CH4 mole-fraction increase from Jan 1 through 
 
 ## C1 comparison
 
-The existing Crossref and OpenAlex metadata tools resolve DOI-keyed scholarly records; neither accepts a year range or returns NOAA's atmospheric CH4 annual-increment series. That establishes a distinct input/output purpose and a remaining use case for this source-specific adapter. It does not establish comparative latency, reliability, quality, or cost; estimated cost remains unknown, and no replacement candidate is identified.
+The existing Crossref and OpenAlex metadata tools resolve DOI-keyed scholarly records; neither accepts a year range or returns NOAA's atmospheric CH4 annual-increment series. The complementary `research.lookup_noaa_global_co2_annual_growth` adapter reads a separate CO2 table and returns ppm; it cannot provide methane values in ppb. The two NOAA tools remain separate by species and task. This establishes distinct input/output purposes, not comparative latency, reliability, quality, or cost; estimated cost remains unknown, and no replacement candidate is identified.
 
 The 2026-10-24 #259 source snapshot recorded the NOAA raw-table SHA-256 `0501e15f5ffea518f8dfb90477ad28a7dbcdb26285c2792118f49b3a71e076eb`, ETag `d6c-65d6d473a0edb`, and Last-Modified `Fri, 09 Oct 2026 19:23:08 GMT`. This prior live source observation is source evidence, not a live execution of this newly implemented adapter. Focused tests use a bounded captured-row fixture with mocked transport; actual public-network use remains per-call opt-in.
 

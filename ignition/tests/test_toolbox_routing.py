@@ -505,6 +505,42 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(permitted["selected_tools"][0]["permissions"]["network_hosts"], ["gml.noaa.gov"])
         self.assertFalse(permitted["execution_authorized"])
 
+    def test_noaa_co2_growth_is_complementary_default_off_and_needs_exact_host(self) -> None:
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.lookup_noaa_global_co2_annual_growth")
+        ch4 = next(row for row in catalog["candidates"] if row["tool_id"] == "research.lookup_noaa_global_ch4_annual_growth")
+        task = profile("noaa-co2-annual-growth", card["accepted_input_types"], card["output_types"])
+
+        excluded = planner.plan_tool_route(task)
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(excluded["selected_tools"], [])
+
+        ch4_only = planner.plan_tool_route(
+            profile("noaa-co2-annual-growth", card["accepted_input_types"], card["output_types"], allowed_network_hosts=["gml.noaa.gov"]),
+            include_experimental_tool_ids=[ch4["tool_id"]],
+        )
+        self.assertEqual(ch4_only["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": ch4["tool_id"], "reason": "NO_INPUT_TYPE_MATCH"},
+            ch4_only["rejected_candidates"],
+        )
+
+        missing_host = planner.plan_tool_route(task, include_experimental_tool_ids=[card["tool_id"]])
+        self.assertEqual(missing_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": card["tool_id"], "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            missing_host["rejected_candidates"],
+        )
+
+        permitted = planner.plan_tool_route(
+            profile("noaa-co2-annual-growth", card["accepted_input_types"], card["output_types"], allowed_network_hosts=["gml.noaa.gov"]),
+            include_experimental_tool_ids=[card["tool_id"]],
+        )
+        self.assertEqual(permitted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in permitted["selected_tools"]], [card["tool_id"]])
+        self.assertEqual(permitted["selected_tools"][0]["permissions"]["network_hosts"], ["gml.noaa.gov"])
+        self.assertFalse(permitted["execution_authorized"])
+
     def test_real_doi_task_expands_to_two_required_outputs_and_skips_redundant_candidates(self) -> None:
         evidence = json.loads(
             (IGNITION_ROOT / "data/operations/toolbox-real-task-route-evidence-r0.json").read_text(encoding="utf-8")

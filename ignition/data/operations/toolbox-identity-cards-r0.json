@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
-    "candidate_count": 18
+    "blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
+    "candidate_count": 19
   },
   "cards": [
     {
@@ -478,7 +478,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -656,7 +656,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -992,7 +992,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1162,7 +1162,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd"
+          "sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -1182,11 +1182,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
+          "sha1": "a81ba8ba1899b3d65fd65a45707159255b8e02b9"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1511,7 +1511,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2509,7 +2509,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2841,7 +2841,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3498,7 +3498,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3691,7 +3691,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
+          "sha1": "a81ba8ba1899b3d65fd65a45707159255b8e02b9"
         },
         {
           "path": "ignition/docs/operations/arxiv-metadata-lookup.md",
@@ -3715,7 +3715,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3770,6 +3770,18 @@
         {
           "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
           "role": "REAL_BOUNDED_NOAA_TASK_OUTCOME_WITH_NO_RAW_RESPONSE_RETENTION"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "role": "COMPLEMENTARY_CO2_CONTRACT_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "role": "COMPLEMENTARY_CO2_SOURCE_AND_OUTPUT_CONTRACT_COMPARATOR"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
+          "role": "COMPLEMENTARY_CO2_SCOPE_AND_SOURCE_DIFFERENCE"
         }
       ],
       "dependencies": [],
@@ -3837,6 +3849,11 @@
           "tool_id": "research.lookup_openalex_work_metadata",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
           "reason": "OpenAlex returns DOI-keyed scholarly Work metadata and does not retrieve atmospheric CH4 annual growth observations."
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CO2 adapter reads a separate NOAA table and returns ppm; it cannot replace this methane/ppb task contract."
         }
       ],
       "fallback": "If public network use is not approved or retrieval fails, report the explicit NOT_RUN or acquisition status and consult an appropriately pinned NOAA snapshot. Never label a cached snapshot as a live check or convert missing rows to zero.",
@@ -3868,22 +3885,26 @@
       ],
       "comparison_evidence": {
         "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
-        "scope": "Function and contract comparison against the currently available DOI-keyed Crossref and OpenAlex metadata adapters. Their source code, inputs, and outputs cover bibliographic Works; this adapter reads one NOAA atmospheric observation table. This establishes a distinct use case, not comparative reliability, latency, quality, or cost.",
+        "scope": "Function and contract comparison against the DOI-keyed Crossref/OpenAlex bibliographic adapters and the complementary NOAA GML global CO2 annual-growth adapter. The NOAA tools return different gas-specific observations and units; the bibliographic tools do not return atmospheric observations. This establishes distinct use by task, not comparative reliability, latency, quality, or cost.",
         "compared_tool_ids": [
           "research.verify_crossref_metadata",
-          "research.lookup_openalex_work_metadata"
+          "research.lookup_openalex_work_metadata",
+          "research.lookup_noaa_global_co2_annual_growth"
         ],
         "evidence_refs": [
           "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
           "ignition/tools/toolbox_crossref_metadata_verifier.py",
           "ignition/tools/toolbox_openalex_work_metadata.py",
           "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
-          "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md"
+          "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
+          "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "ignition/docs/operations/noaa-co2-annual-growth-lookup.md"
         ],
         "findings": [
-          "The comparison found no existing candidate with the year-range input and NOAA global atmospheric CH4 increment plus uncertainty output contract; Crossref and OpenAlex are DOI-keyed metadata tools.",
-          "Retain alongside the bibliography tools for this separate observation-data use case. No replacement or retirement decision is supported for either comparator.",
-          "Cost and live-service quality remain unmeasured; this disposition does not claim superiority."
+          "The existing CH4 adapter returns annual atmospheric methane increments and uncertainty in ppb. The CO2 adapter reads a different NOAA table and returns carbon-dioxide increments in ppm; neither gas-specific tool can satisfy the other species-specific request.",
+          "Crossref and OpenAlex are DOI-keyed bibliographic metadata tools and do not return either atmospheric observation series.",
+          "Retain the CH4 and CO2 adapters as separate default-off tools by task. This comparison establishes contract complementarity, not performance, source agreement, or scientific validity; cost remains unknown."
         ]
       },
       "deprecation_or_retirement_status": {
@@ -3914,7 +3935,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
+          "sha1": "a81ba8ba1899b3d65fd65a45707159255b8e02b9"
         },
         {
           "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-route-evidence-r0.json",
@@ -3924,12 +3945,12 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0dacc1d035a8fe8ccfd13324967e2f8c626dcfda"
+          "sha1": "1a13ddcb9f3f23dbfa21e2342706e96a8c9a4ce8"
         },
         {
           "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "71edb315d828e32d5a2ebf03e58c569688285271"
+          "sha1": "e57bb0360121f7eee97ce9d54fde66413a085e4b"
         },
         {
           "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
@@ -3945,10 +3966,266 @@
           "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "5d9b40f6256d042789e5bed547e1d7c87e482b4c"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "6592a0d62700360e9c48d8062377bef6fd15db12"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "2a3df127284dff6205d8a5d759dbe3a16a0b91b9"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "3ca966b34eaed998c743dae1182d13e7d8821b75"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+      "display_name": {
+        "zh": "NOAA 全球二氧化碳年度增量读取器",
+        "en": "NOAA global carbon dioxide annual growth lookup"
+      },
+      "description": "Retrieve a bounded year range from NOAA GML’s fixed globally averaged marine-surface annual atmospheric CO2 mole-fraction increment table, including provider-reported uncertainty.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; NOAA GML source-use page requests fair credit for its measurements and data.",
+      "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_co2_annual_growth.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "role": "BOUNDED_FIXED_HOST_CO2_DATA_LOOKUP"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "role": "SOURCE_SHAPED_FIXTURE_AND_MOCKED_NETWORK_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_EXACT_HOST_AND_C1_COMPLEMENTARY_ROUTING_TEST"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-annual-growth-route-evidence-r0.json",
+          "role": "CANDIDATE_ROUTE_EXPERIMENT_NOT_EXECUTION_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-review-r0.json",
+          "role": "NOAA_PRIMARY_SOURCE_PAGE_COMPARISON_NOT_TOOL_INVOCATION"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_READABLE_IDENTITY_CARD_PROJECTION_TEST"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
+          "role": "SOURCE_SCOPE_CAVEATS_AND_C1_COMPARISON"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+          "role": "COMPLEMENTARY_CH4_CONTRACT_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
+          "role": "COMPLEMENTARY_CH4_SOURCE_AND_OUTPUT_CONTRACT_COMPARATOR"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Retrieving NOAA GML globally averaged marine-surface annual atmospheric CO2 mole-fraction increment and uncertainty for an explicit bounded year range.",
+        "Recording the provider response digest, HTTP metadata, retrieval time, and explicit missing-year or acquisition status for source review."
+      ],
+      "not_for": [
+        "Estimating CO2 emissions, identifying emitting sectors, attributing causes, or making a scientific conclusion.",
+        "Retrieving arbitrary URLs, station-level or monthly data, article content, or unrestricted date ranges.",
+        "Treating a missing year as zero, interpolating values, or declaring a provider failure to prove that data do not exist."
+      ],
+      "only_if": [
+        "The caller has decided that the public NOAA GML request is appropriate and passes --allow-public-network for this invocation.",
+        "The request contains exactly integer start_year and end_year values from 1959 through 2100, with no more than 50 inclusive years.",
+        "A proposed route explicitly includes this candidate ID and allowed_network_hosts contains exactly gml.noaa.gov; route planning is not execution authorization."
+      ],
+      "counterindicated_when": [
+        "Public network access is disallowed or the caller must not contact NOAA GML.",
+        "The task needs an emissions inventory, source attribution, causal explanation, station data, or independent method validation.",
+        "The requested range exceeds the tool’s year or size bounds, or a precise historical snapshot is required and the live response is not archived."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with exactly integer start_year and end_year (1959–2100 inclusive; range at most 50 years)"
+      ],
+      "output_types": [
+        "Provider-reported annual CO2 atmospheric mole-fraction increment and uncertainty in ppm for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+        "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_noaa_co2_annual_growth.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked with --allow-public-network, sends one HTTPS GET to the fixed NOAA GML CO2 table URL; year bounds are applied locally and no caller URL or private identifier is transmitted.",
+        "Writes a bounded selected-record JSON receipt to stdout and errors to stderr; does not retain the raw response or write repository files.",
+        "Rejects redirects, non-text content, oversized or slow responses, malformed headers/tables, duplicate or out-of-order years, and invalid numeric rows as explicit outcomes."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "One bounded public GET is permitted per invocation; no comparable latency, reliability, bandwidth, or compute-cost profile has been measured."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CH4 adapter reads the separate NOAA methane table and returns ppb; it cannot provide CO2 observations in ppm."
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Crossref compares DOI-keyed bibliographic metadata and does not retrieve atmospheric CO2 annual growth observations."
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "OpenAlex returns DOI-keyed scholarly Work metadata and does not retrieve atmospheric CO2 annual growth observations."
+        }
+      ],
+      "fallback": "If public network use is not approved or retrieval fails, report the explicit NOT_RUN or acquisition status and consult an appropriately pinned NOAA snapshot. Never label a cached snapshot as a live check or convert missing rows to zero.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network makes no request and emits no result.",
+          "Reject arbitrary URL keys, duplicate JSON keys, Boolean years, reversed/out-of-range bounds, and ranges over 50 years before network access.",
+          "Only gml.noaa.gov and the fixed CO2 HTTPS path are contacted; redirects, non-text, oversized/slow data, malformed table rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
+          "Default routing excludes this candidate; explicit allowlisting still requires the exact gml.noaa.gov host and never authorizes execution.",
+          "A CH4-only task or candidate cannot satisfy the CO2/ppm contract; missing source years remain PARTIAL_DATA or NO_MATCH."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task requesting NOAA globally averaged marine-surface annual atmospheric CO2 increment values.",
+        "Require the typed route profile to list gml.noaa.gov explicitly; route planning does not grant network or execution permission.",
+        "Every actual CLI call separately requires --allow-public-network and a task-specific decision to make this public request.",
+        "Do not select this adapter for CH4 observations, emission inventories, causal analysis, or DOI metadata tasks."
+      ],
+      "claim_ceiling": "Provider-reported NOAA GML globally averaged marine-surface annual atmospheric CO2 mole-fraction increment values and stated uncertainties for selected years only; not emissions, attribution, causal analysis, source authentication, or scientific validation.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Retrieve a year-bounded global atmospheric CO2 annual mole-fraction increment and uncertainty series directly from NOAA GML; the separate CH4 adapter cannot return CO2 values, and the DOI metadata adapters do not return atmospheric observations."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Function and contract comparison against the existing NOAA GML global CH4 annual growth adapter and the DOI-keyed Crossref/OpenAlex adapters. CO2 and CH4 are distinct species with different fixed source tables and units; neither gas-specific adapter supplies the other gas. This supports coexistence by task, not comparative reliability, latency, quality, or cost.",
+        "compared_tool_ids": [
+          "research.lookup_noaa_global_ch4_annual_growth",
+          "research.verify_crossref_metadata",
+          "research.lookup_openalex_work_metadata"
+        ],
+        "evidence_refs": [
+          "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+          "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
+          "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/data/operations/toolbox-noaa-co2-source-review-r0.json"
+        ],
+        "findings": [
+          "The NOAA CO2 table returns carbon-dioxide annual increments and uncertainty in ppm; the existing CH4 table returns methane increments in ppb. Their input/output units and fixed paths are species-specific, so both tools remain useful for different research questions.",
+          "The CH4 tool cannot satisfy a CO2/ppm request; Crossref and OpenAlex are bibliographic metadata tools rather than atmospheric observation readers.",
+          "No performance or cost superiority is claimed; live service quality and comparable cost remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Retain as a separate optional default-off NOAA CO2 table reader. It complements, and does not replace, the CH4 table reader because the species, source path, and units differ."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry or default route migration is made. Keep the CH4 adapter for CH4/ppb tasks and explicitly select this candidate only for CO2/ppm tasks."
+        ],
+        "rollback_steps": [
+          "Remove this optional catalog entry, wrapper, tests, route receipt, and scope note from the isolated branch; regenerate candidate identity cards and TOOLBOX.md; preserve the evidence showing why the CO2 and CH4 contracts are distinct if still useful."
+        ]
+      },
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "6592a0d62700360e9c48d8062377bef6fd15db12",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "6592a0d62700360e9c48d8062377bef6fd15db12"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "2a3df127284dff6205d8a5d759dbe3a16a0b91b9"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "a81ba8ba1899b3d65fd65a45707159255b8e02b9"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-annual-growth-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "35fb70547f702cfc72af0db37277baf3ef9c6f8b"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-review-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "34ad9924644ea5d76a4f29af6b090b577754db19"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "1a13ddcb9f3f23dbfa21e2342706e96a8c9a4ce8"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "3ca966b34eaed998c743dae1182d13e7d8821b75"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "138e5eb50953a19d5c83455f063a3fc7b0a7badd"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "370f6917a0f6ddd1d206fa22ce6229602dbf0a1c"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4156,7 +4433,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
+          "sha1": "a81ba8ba1899b3d65fd65a45707159255b8e02b9"
         },
         {
           "path": "ignition/data/operations/iterations/110/openalex/PREREGISTRATION.md",
@@ -4190,7 +4467,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4410,7 +4687,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4686,7 +4963,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4867,7 +5144,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5183,7 +5460,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5378,7 +5655,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5570,7 +5847,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6074,11 +6351,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
+          "sha1": "a81ba8ba1899b3d65fd65a45707159255b8e02b9"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
+      "candidate_catalog_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6210,6 +6487,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 38,
+  "card_count": 39,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }

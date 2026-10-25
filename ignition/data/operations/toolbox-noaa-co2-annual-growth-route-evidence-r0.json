@@ -1,0 +1,271 @@
+{
+  "schema_version": "toolbox-noaa-co2-annual-growth-route-evidence-r0",
+  "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
+  "task": {
+    "task_id": "noaa-global-co2-annual-growth-bounded-2023-2025",
+    "input_types": [
+      "UTF-8 JSON stdin object with exactly integer start_year and end_year (1959–2100 inclusive; range at most 50 years)"
+    ],
+    "required_outputs": [
+      "Provider-reported annual CO2 atmospheric mole-fraction increment and uncertainty in ppm for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+      "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+    ],
+    "rationale": "A bounded request for NOAA globally averaged marine-surface annual CO2 atmospheric growth and uncertainty. This is a CO2 observation task, not an emissions or causal claim."
+  },
+  "route_profile": {
+    "task_id": "noaa-global-co2-annual-growth-bounded-2023-2025",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin object with exactly integer start_year and end_year (1959–2100 inclusive; range at most 50 years)"
+    ],
+    "required_outputs": [
+      "Provider-reported annual CO2 atmospheric mole-fraction increment and uncertainty in ppm for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+      "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "allowed_network_hosts": [
+      "gml.noaa.gov"
+    ]
+  },
+  "candidate_allowlist": [
+    "research.lookup_noaa_global_co2_annual_growth"
+  ],
+  "route_result": {
+    "schema_version": "ignition-tool-route-plan-r0",
+    "task_id": "noaa-global-co2-annual-growth-bounded-2023-2025",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+    "allowed_network_hosts": [
+      "gml.noaa.gov"
+    ],
+    "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+    "decision": "COMPLETE",
+    "selected_tools": [
+      {
+        "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+        "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+        "availability": "EXPERIMENTAL_AVAILABLE",
+        "input_types": [
+          "UTF-8 JSON stdin object with exactly integer start_year and end_year (1959–2100 inclusive; range at most 50 years)"
+        ],
+        "output_types": [
+          "Provider-reported annual CO2 atmospheric mole-fraction increment and uncertainty in ppm for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+        ],
+        "execution_mode": "READ_ONLY_RUN",
+        "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+        "permissions": {
+          "read_paths": [
+            "ignition/tools/toolbox_noaa_co2_annual_growth.py"
+          ],
+          "write_paths": [],
+          "network": true,
+          "network_hosts": [
+            "gml.noaa.gov"
+          ],
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        },
+        "explicit_owner_authorization_required": false,
+        "dependencies": [],
+        "declared_effect_rank": 1,
+        "pre_invocation_conditions": [
+          "A proposed route explicitly includes this candidate ID and allowed_network_hosts contains exactly gml.noaa.gov; route planning is not execution authorization.",
+          "Do not select this adapter for CH4 observations, emission inventories, causal analysis, or DOI metadata tasks.",
+          "Every actual CLI call separately requires --allow-public-network and a task-specific decision to make this public request.",
+          "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task requesting NOAA globally averaged marine-surface annual atmospheric CO2 increment values.",
+          "Require the typed route profile to list gml.noaa.gov explicitly; route planning does not grant network or execution permission.",
+          "The caller has decided that the public NOAA GML request is appropriate and passes --allow-public-network for this invocation.",
+          "The request contains exactly integer start_year and end_year values from 1959 through 2100, with no more than 50 inclusive years."
+        ],
+        "claim_ceiling": "Provider-reported NOAA GML globally averaged marine-surface annual atmospheric CO2 mole-fraction increment values and stated uncertainties for selected years only; not emissions, attribution, causal analysis, source authentication, or scientific validation.",
+        "covers_required_outputs": [
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats",
+          "Provider-reported annual CO2 atmospheric mole-fraction increment and uncertainty in ppm for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status"
+        ]
+      }
+    ],
+    "required_outputs": [
+      "Provider-reported annual CO2 atmospheric mole-fraction increment and uncertainty in ppm for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+      "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+    ],
+    "covered_outputs": [
+      "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats",
+      "Provider-reported annual CO2 atmospheric mole-fraction increment and uncertainty in ppm for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status"
+    ],
+    "unmet_outputs": [],
+    "rejected_candidates": [
+      {
+        "tool_id": "executor.reference_conformance",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "external.live_invocation",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "foundation.batch_resolve_current_asset_references",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.read_current_asset_card",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "foundation.resolve_current_asset",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "function_os.run_bounded_symbolic_spec",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.adaptive_toolbox_route_planner",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "ignition.recover_current_state",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.cluster_source_brief",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.collide_object",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.project_results",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.read_foundation",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_claim",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "knowledge.validate_evidence_link",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "language_thought.project_bounded_meaning",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_repository",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_step_timeline",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.validate_checkpoint",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method",
+        "reason": "EXECUTION_MODE_NOT_ALLOWED"
+      },
+      {
+        "tool_id": "repository.apply_iteration_method_1_3",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.coordinate_obligations",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.inspect_pubmed_update_links",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_arxiv_paper_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_openalex_work_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.preflight_g1_goal_intake",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.reos_full",
+        "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_evidence_program_snapshot",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.validate_reos_light",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "research.verify_crossref_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "runtime.inspect_declared_pack_catalog",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.build_archify_derived_ir",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "visualization.render_derived_system_view",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.apply_editorial_method",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "writing.preflight_cognitive_migration_revision",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "writing.validate_publication_surface",
+        "reason": "NO_INPUT_TYPE_MATCH"
+      }
+    ],
+    "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+    "cost_estimate": {
+      "status": "UNKNOWN",
+      "reason": "No comparable measured cost data is declared for the candidate operations."
+    },
+    "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+    "execution_authorized": false,
+    "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+    "source_refs": {
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "experimental_candidate_catalog_git_blob_sha1": "2fb8e34d59550be4fbe14ed0cc319f646a385ff9"
+    }
+  },
+  "execution_status": "NOT_RUN",
+  "execution_authorized": false,
+  "network_call_made": false,
+  "claim_ceiling": "Candidate route matching only. The caller-supplied current_ref and network host are not authority verified here; no NOAA request, permission grant, source authentication, scientific validation, or Current promotion is established."
+}
