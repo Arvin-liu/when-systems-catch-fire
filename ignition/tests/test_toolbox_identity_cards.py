@@ -35,6 +35,8 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         batch = next(card for card in candidates if card["tool_id"] == "foundation.batch_resolve_current_asset_references")
         self.assertEqual(batch["execution_mode"], "READ_ONLY_RUN")
+        self.assertEqual(batch["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertIn("Python >=3.9 standard library", batch["runtime_dependencies"])
         self.assertIn("ambiguous", " ".join(batch["counterindicated_when"]).lower())
         self.assertTrue(any("legacy-mappings.jsonl" in path for path in batch["dependencies"]))
 

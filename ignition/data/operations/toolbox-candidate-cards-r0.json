@@ -203,7 +203,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_batch_resolve_current_assets.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_batch_resolve_current_assets.py --stdin (stdin JSON: {\"references\":[...]})",
       "source_refs": [
@@ -264,7 +264,7 @@
         "external_actions": false
       },
       "side_effects": ["Writes the result only to stdout; malformed input and unavailable authority are reported to stderr with nonzero status; no repository files are created or changed."],
-      "runtime_dependencies": ["Python >=3.10 standard library"],
+      "runtime_dependencies": ["Python >=3.9 standard library"],
       "estimated_cost": {
         "status": "UNKNOWN",
         "basis": "The resolver rebuilds exact lookup indexes for each reference; no comparable batch latency or memory benchmark has been established."

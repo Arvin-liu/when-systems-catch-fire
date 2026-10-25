@@ -8,7 +8,7 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "4c5c51715167d52fff849a4d656c1332d1d5c7fe",
+    "blob_sha1": "01158fa2b086f216b6b1129122be4b04b611bc8a",
     "candidate_count": 3
   },
   "cards": [
@@ -214,7 +214,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_batch_resolve_current_assets.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_batch_resolve_current_assets.py --stdin (stdin JSON: {\"references\":[...]})",
       "source_refs": [
@@ -304,7 +304,7 @@
         "Writes the result only to stdout; malformed input and unavailable authority are reported to stderr with nonzero status; no repository files are created or changed."
       ],
       "runtime_dependencies": [
-        "Python >=3.10 standard library"
+        "Python >=3.9 standard library"
       ],
       "estimated_cost": {
         "status": "UNKNOWN",
@@ -376,7 +376,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "4c5c51715167d52fff849a4d656c1332d1d5c7fe",
+      "candidate_catalog_blob_sha1": "01158fa2b086f216b6b1129122be4b04b611bc8a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -629,7 +629,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "4c5c51715167d52fff849a4d656c1332d1d5c7fe"
+          "sha1": "01158fa2b086f216b6b1129122be4b04b611bc8a"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -638,7 +638,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "4c5c51715167d52fff849a4d656c1332d1d5c7fe",
+      "candidate_catalog_blob_sha1": "01158fa2b086f216b6b1129122be4b04b611bc8a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -898,7 +898,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "4c5c51715167d52fff849a4d656c1332d1d5c7fe",
+      "candidate_catalog_blob_sha1": "01158fa2b086f216b6b1129122be4b04b611bc8a",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
