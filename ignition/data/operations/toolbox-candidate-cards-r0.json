@@ -5020,6 +5020,10 @@
         {
           "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json",
           "role": "C1_COMPARATOR_C1_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json",
+          "role": "C1_PAIRED_REAL_DOI_CORRECTION_RELATION_COMPARISON"
         }
       ],
       "dependencies": [
@@ -5120,11 +5124,11 @@
       "claim_ceiling": "Crossref API metadata retrieval, normalized title/year comparison, and bounded projection of returned update-to, updated-by, and typed relation identifiers only. Returned fields are provider-deposited metadata at retrieval time; omissions, empty fields, or relation labels do not establish completeness, source authenticity, article content, scientific truth, or current retraction status.",
       "replacement_candidates": [],
       "unique_remaining_use_cases": [
-        "Potential specialized use: expose Crossref-deposited update and general typed relation identifiers from the same DOI response as the title/year check; matched real-task coverage against PubMed relation records remains unmeasured."
+        "Potential specialized use: expose Crossref-deposited update source/date and typed DOI relation alongside the same-response DOI metadata check. One paired DOI showed overlap with PubMed ErratumIn; unique coverage and comparative value remain unmeasured."
       ],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Version 0.2.0 adds a bounded projection of Crossref update-to, updated-by, and general typed relation metadata. A controlled live smoke against Crossref documentation test record 10.5555/12345681 exercised one update-to row, one updated-by row, and seven has-review identifiers; this is a test account, not a research-task result. No matched real DOI with nonempty relation fields has been compared with the PubMed Comments/Corrections tool.",
+        "scope": "Version 0.2.0 adds bounded Crossref update-to, updated-by, and typed relation metadata. A one-DOI positive paired observation found the same correction DOI in Crossref and DOI-bound PubMed Comments/Corrections output; the sample was selected from Crossref has-update results and cannot estimate general coverage or comparative quality.",
         "compared_tool_ids": [
           "research.inspect_pubmed_update_links",
           "research.audit_pubmed_updates_from_doi"
@@ -5132,13 +5136,15 @@
         "evidence_refs": [
           "ignition/data/operations/toolbox-crossref-relations-evidence-r0.json",
           "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r1.json",
-          "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json"
+          "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json",
+          "ignition/data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json"
         ],
         "findings": [
-          "Crossref official REST/schema documentation describes update metadata and general typed relations; the bounded projection preserves only identifier/type assertions and does not request referenced records.",
-          "The one live tool test returned its Crossref test-account update-to/updated-by fields and seven typed relation IDs with exact title/year match and HTTP 200. The response digest was retained; raw provider bytes were not.",
-          "The PubMed tool reads raw Comments/Corrections fields for exact PubMed records, while Crossref returns provider-deposited Crossref update and typed relation metadata. These contracts differ, but this test account does not show comparative coverage or completion quality on a real research DOI.",
-          "Keep both tools optional and default-off. Retain COMPARISON_UNKNOWN and do not claim replacement, superiority, completeness, or comparative cost until a same-real-task matched comparison exists."
+          "Crossref official REST/schema documentation describes update metadata and typed relations; the bounded projection returns identifiers and limited source/date assertions without fetching related records.",
+          "A Crossref documentation test record exercised nonempty update-to, updated-by, and has-review fields but is not a research-task result.",
+          "One matched real DOI, 10.1186/s12884-025-07725-7, returned correction DOI 10.1186/s12884-025-07791-x as Crossref updated-by and typed correction relation; DOI-bound PubMed output for the same source DOI returned ErratumIn referencing that same correction DOI and related PMID 40514682.",
+          "This single positive sample was selected from Crossref has-update results. It demonstrates overlap for one correction only; it does not establish broad coverage, accuracy, reliability, cost, latency, or superiority. Provider contracts also differ: Crossref supplied depositor source/date and typed DOI relation; PubMed supplied a DOI-bound Comments/Corrections record and PubMed identifiers.",
+          "Keep both tools optional and default-off. Retain COMPARISON_UNKNOWN; no replacement or broader-coverage conclusion is supported."
         ]
       },
       "deprecation_or_retirement_status": {
