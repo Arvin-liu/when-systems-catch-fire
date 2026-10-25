@@ -52,7 +52,7 @@
     "claim_ceiling": "One live provider response returned three metadata rows for one public query at this retrieval time; this does not establish query relevance, completeness, source authenticity, scientific support, or article status."
   },
   "route_profile": {
-    "candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
+    "candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
     "input_types": [
       "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
     ],
@@ -177,8 +177,20 @@
     "retirement_decision": "No existing component is deprecated or retired by this evidence."
   },
   "candidate_catalog_refresh": {
-    "prior_candidate_catalog_git_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
-    "current_candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
-    "note": "The context-packet comparator was added as a default-off local option. The recorded Europe PMC live response is historical; the three route trial expectations are rechecked by the focused routing test against this refreshed candidate catalog."
+    "prior_candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
+    "current_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
+    "note": "The route catalog pin is refreshed after default-off candidate additions. The recorded Europe PMC live response remains historical; route expectations are checked against the current candidate catalog by focused routing tests.",
+    "refresh_history": [
+      {
+        "prior_candidate_catalog_git_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
+        "current_candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
+        "reason": "The ContextPacket comparator became the active default-off catalog at this historical revision."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
+        "current_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
+        "reason": "The audit-finding comparator was added as another default-off optional candidate; the historical live Europe PMC response was not repeated."
+      }
+    ]
   }
 }

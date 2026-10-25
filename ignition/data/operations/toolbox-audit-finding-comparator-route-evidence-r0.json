@@ -1,0 +1,38 @@
+{
+  "schema_version": "toolbox-audit-finding-comparator-route-evidence-r0",
+  "profile_ref": "ignition/data/operations/toolbox-audit-finding-comparator-route-profile-r0.json",
+  "profile_sha256": "5f724129eb1786067713223763a267a75beff74ac5ca80def685bb89777ce30c",
+  "routes": {
+    "default_off": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Caller-declared finding coverage and disposition relations, source-reference lists, target binding, and explicit non-adjudication / non-independence status in JSON."
+      ],
+      "comparison_candidate_rejection": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "execution_authorized": false,
+      "allowed_network_hosts": [],
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f"
+      }
+    },
+    "explicit_allowlist": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.compare_audit_findings"
+      ],
+      "unmet_outputs": [],
+      "comparison_candidate_rejection": [],
+      "execution_authorized": false,
+      "allowed_network_hosts": [],
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f"
+      }
+    }
+  },
+  "claim_ceiling": "Local planner behavior only: default routing leaves the optional comparator unselected and unmet; an exact experimental allowlist proposes it for this input/output contract. The planner neither invokes the tool nor grants authority."
+}

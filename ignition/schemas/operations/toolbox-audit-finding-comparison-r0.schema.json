@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-audit-finding-comparison-r0",
+  "title": "Ignition Audit Finding Comparison Request R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "comparison_id", "primary_audit", "second_review"],
+  "properties": {
+    "schema_version": {"const": "toolbox-audit-finding-comparison-request-r0"},
+    "comparison_id": {"$ref": "#/$defs/id"},
+    "primary_audit": {"$ref": "#/$defs/review"},
+    "second_review": {"$ref": "#/$defs/review"}
+  },
+  "$defs": {
+    "id": {"type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "text": {"type": "string", "minLength": 1, "maxLength": 512, "pattern": "\\S"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref", "sha256"],
+      "properties": {"ref": {"$ref": "#/$defs/text"}, "sha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding_id", "disposition", "evidence_refs"],
+      "properties": {
+        "finding_id": {"$ref": "#/$defs/id"},
+        "disposition": {"enum": ["CONFIRMED", "NEEDS_VALIDATION", "REJECTED", "OUT_OF_SCOPE"]},
+        "evidence_refs": {"type": "array", "maxItems": 20, "items": {"$ref": "#/$defs/evidenceRef"}}
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["audit_id", "reviewer_ref", "scope_ref", "target_ref", "target_revision", "findings"],
+      "properties": {
+        "audit_id": {"$ref": "#/$defs/id"},
+        "reviewer_ref": {"$ref": "#/$defs/id"},
+        "scope_ref": {"$ref": "#/$defs/text"},
+        "target_ref": {"$ref": "#/$defs/text"},
+        "target_revision": {"$ref": "#/$defs/text"},
+        "findings": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/finding"}}
+      }
+    }
+  }
+}

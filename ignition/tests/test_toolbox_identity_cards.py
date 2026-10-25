@@ -103,6 +103,42 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(route["route_result"]["decision"], "COMPLETE")
         self.assertFalse(route["execution_authorized"])
 
+    def test_audit_finding_comparator_card_preserves_c1_scope_and_non_independence_boundary(self) -> None:
+        document = TOOL.build_cards()
+        tool_id = "maintenance.compare_audit_findings"
+        card = next(item for item in document["cards"] if item["tool_id"] == tool_id)
+        c1 = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-audit-finding-comparator-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        real_task = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-audit-finding-comparator-real-task-r0.json").read_text(encoding="utf-8")
+        )
+        route = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-audit-finding-comparator-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertEqual(card["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], [])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["estimated_cost"]["status"], "UNKNOWN")
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertEqual(card["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+        self.assertFalse(real_task["reviewer_independence_established"])
+        self.assertEqual(real_task["summary"]["shared"], 1)
+        self.assertEqual(real_task["summary"]["second_review_only"], 1)
+        self.assertEqual(c1["disposition"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(route["routes"]["default_off"]["decision"], "INCOMPLETE")
+        self.assertEqual(route["routes"]["explicit_allowlist"]["decision"], "COMPLETE")
+        self.assertFalse(route["routes"]["explicit_allowlist"]["execution_authorized"])
+
     def test_handoff_artifact_byte_checker_card_preserves_c1_specialization_and_bounds(self) -> None:
         document = TOOL.build_cards()
         card = next(
@@ -385,11 +421,12 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "maintenance.attribute_actions_validation_evidence",
             "research.search_europe_pmc_query",
             "maintenance.compare_context_packet_variants",
+            "maintenance.compare_audit_findings",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
-        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "maintenance.compare_context_packet_variants"} for card in candidates))
+        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings"} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         self.assertEqual(batch["execution_mode"], "READ_ONLY_RUN")

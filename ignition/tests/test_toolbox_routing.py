@@ -135,6 +135,35 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             evidence["candidate_catalog_git_blob_sha1"],
         )
 
+    def test_audit_finding_comparator_is_default_off_and_only_proposed_for_exact_review_pair(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "maintenance.compare_audit_findings"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("same-target-audit-finding-comparison-route-experiment", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        opted = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-audit-finding-comparator-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn({"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"}, default["rejected_candidates"])
+        self.assertEqual(opted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opted["selected_tools"]], [tool_id])
+        self.assertFalse(opted["execution_authorized"])
+        self.assertFalse(opted["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(opted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(evidence["routes"]["default_off"]["decision"], "INCOMPLETE")
+        self.assertEqual(evidence["routes"]["explicit_allowlist"]["decision"], "COMPLETE")
+        self.assertEqual(evidence["routes"]["explicit_allowlist"]["selected_tool_ids"], [tool_id])
+        self.assertFalse(evidence["routes"]["explicit_allowlist"]["execution_authorized"])
+        self.assertEqual(
+            evidence["routes"]["explicit_allowlist"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+
     def test_agent_episode_binding_preflight_is_default_off_and_opt_in_is_not_execution(self) -> None:
         catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
         tool_id = "collaboration.validate_agent_episode_binding"
