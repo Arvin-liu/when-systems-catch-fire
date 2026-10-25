@@ -357,6 +357,40 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(permitted["execution_authorized"])
 
+    def test_g1_goal_intake_preflight_is_opt_in_and_never_authorizes(self) -> None:
+        task = profile(
+            "offline-g1-goal-proposal-preflight",
+            ["UTF-8 JSON stdin object with one closed ResearchEpisodeRequest envelope (maximum 1,000,000 bytes)"],
+            [
+                "machine-readable preflight status, structural outcome, and reason-coded findings for the supplied proposal bytes",
+                "exact raw input SHA-256 and bounded Intent/Goal/parent/Completion Contract projection",
+                "explicit non-authentication and no-write/no-activation/no-completion/no-dispatch flags plus wrapper-source SHA-256",
+            ],
+        )
+        excluded = planner.plan_tool_route(task)
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(excluded["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": "research.preflight_g1_goal_intake", "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            excluded["rejected_candidates"],
+        )
+
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["research.preflight_g1_goal_intake"],
+        )
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["research.preflight_g1_goal_intake"],
+        )
+        permissions = included["selected_tools"][0]["permissions"]
+        self.assertEqual(permissions["write_paths"], [])
+        self.assertFalse(permissions["network"])
+        self.assertFalse(permissions["secrets"])
+        self.assertFalse(permissions["external_actions"])
+        self.assertFalse(included["execution_authorized"])
+
     def test_route_expands_without_a_fixed_tool_count(self) -> None:
         result = planner.plan_tool_route(profile(
             "three-output-task",

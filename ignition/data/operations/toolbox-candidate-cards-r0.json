@@ -1287,6 +1287,139 @@
         "Every actual CLI invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied PMID values."
       ],
       "claim_ceiling": "Raw PubMed Comments/Corrections fields for exact records at retrieval time only; the response may omit relationships that exist elsewhere or have not been added, so no completeness, retraction-status, content, authenticity, scientific-validity, or absence claim is established."
+    },
+    {
+      "tool_id": "research.preflight_g1_goal_intake",
+      "display_name": {
+        "zh": "Goal 提案只读预检器",
+        "en": "Goal proposal read-only preflight"
+      },
+      "description": "Evaluate one caller-supplied V1 ResearchEpisodeRequest envelope against existing Steering value semantics and emit a bounded proposal-only report.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_g1_goal_intake_preflight.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+          "role": "BOUNDED_STDIN_STDOUT_TOOL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/research_os_v1/g1_goal_intake/preflight.py",
+          "role": "PROPOSAL_ONLY_CROSS_FIELD_PREFLIGHT"
+        },
+        {
+          "path": "ignition/agent_runtime/",
+          "role": "EXISTING_STEERING_RECORD_TYPES"
+        },
+        {
+          "path": "ignition/agent_kernel/",
+          "role": "EXISTING_GENERIC_KERNEL_VALUE_TYPES"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_g1_goal_intake_preflight.py",
+          "role": "TOOLBOX_ENTRYPOINT_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_research_os_v1_g1_goal_intake.py",
+          "role": "UPSTREAM_58_CASE_SYNTHETIC_CONTROLS"
+        }
+      ],
+      "dependencies": [
+        "ignition/research_os_v1/g1_goal_intake/preflight.py",
+        "ignition/agent_runtime/",
+        "ignition/agent_kernel/"
+      ],
+      "good_for": [
+        "Checking caller-supplied Intent, Goal, Completion Contract, version, parent, and objective-digest bindings in one closed ResearchEpisodeRequest proposal envelope.",
+        "Detecting malformed or stale/unbound lineage, policy expansion, budget changes, weakened stop conditions, and forbidden RUN_PASS-to-completion shortcuts.",
+        "Producing a bounded machine report while keeping Owner authentication, live Current lookup, canonical Goal mutation, completion, approval receipts, and dispatch outside the tool."
+      ],
+      "not_for": [
+        "Authenticating the person named in the input, Owner identity, trust roots, or current canonical Goal/Intent state.",
+        "Activating, editing, completing, approving, or dispatching a Goal or research task.",
+        "Interpreting a structurally valid proposal as truth, scientific validity, independent review, or G1 completion.",
+        "Writing report files; the advertised Toolbox wrapper accepts stdin and emits stdout only."
+      ],
+      "only_if": [
+        "The caller explicitly requests an offline structural preflight for exactly one JSON request envelope no larger than 1,000,000 bytes.",
+        "Caller-provided snapshots and all authority/provenance claims are treated as untrusted and may be stale.",
+        "The caller understands that every structurally valid proposal still returns REQUIRES_OWNER_AUTHORITY and requires the separate canonical Owner/Goal lifecycle."
+      ],
+      "counterindicated_when": [
+        "The task requires live Owner identity, trust-root, registry-currentness, or canonical record resolution.",
+        "The task requests Goal activation, completion, approval, publication, or dispatch.",
+        "The task requires network retrieval, provider use, or evidence of scientific truth."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with one closed ResearchEpisodeRequest envelope (maximum 1,000,000 bytes)"
+      ],
+      "output_types": [
+        "machine-readable preflight status, structural outcome, and reason-coded findings for the supplied proposal bytes",
+        "exact raw input SHA-256 and bounded Intent/Goal/parent/Completion Contract projection",
+        "explicit non-authentication and no-write/no-activation/no-completion/no-dispatch flags plus wrapper-source SHA-256"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_UNTRUSTED_STDIN_AND_FIXED_SOURCE_IMPORTS",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+          "ignition/research_os_v1/g1_goal_intake/preflight.py",
+          "ignition/agent_runtime/",
+          "ignition/agent_kernel/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "The advertised Toolbox entrypoint reads at most 1,000,001 bytes from stdin, writes one deterministic JSON receipt to stdout, and writes no repository or temporary files.",
+        "It imports fixed local Steering and Kernel source modules and evaluates only caller-supplied bytes; the separate upstream package CLI can write two reports below an explicitly guarded temporary directory and is not invoked by this entrypoint."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "Existing ignition.agent_runtime.steering value types and their local ignition.agent_runtime/ and ignition.agent_kernel/ imports"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No calibrated latency or memory profile has been measured; input is capped at 1,000,000 bytes and the report is bounded by the source validator."
+      },
+      "alternatives": [
+        {
+          "tool_id": "python -m research_os_v1.g1_goal_intake",
+          "relationship": "SAME_PREFLIGHT_WITH_FILE_REPORTS",
+          "reason": "The upstream package CLI consumes only an allowlisted local fixture and writes JSON/Markdown into a guarded temporary report directory; the Toolbox wrapper consumes stdin and emits JSON only."
+        }
+      ],
+      "fallback": "Use the upstream module CLI only when the original fixture-only JSON and Markdown file pair is needed; otherwise preserve the machine status. If the wrapper cannot run, record NOT_RUN and do not infer proposal validity or authority.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_g1_goal_intake_preflight.py",
+          "ignition/tests/test_research_os_v1_g1_goal_intake.py",
+          "ignition/tests/test_steering_episode_binding.py",
+          "ignition/tests/test_steering_completion.py"
+        ],
+        "negative_controls": [
+          "Malformed, duplicate-key, invalid-UTF-8, deeply nested, and oversized JSON stays invalid with bounded machine findings.",
+          "Forged OWNER_DECLARED and authorized provenance are recorded as claims and never authenticate Owner identity.",
+          "Missing or mismatched lineage, stale versions, parent gaps, policy expansion, budget expansion, weakened stop rules, and RUN_PASS completion shortcuts fail closed.",
+          "The Toolbox entrypoint has no caller-controlled input or output path, network flag, or repository mutation and emits deterministic stdout for identical bytes."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless research.preflight_g1_goal_intake is explicitly allowlisted for a task that requests a proposal-only preflight.",
+        "The route proposal has execution_authorized=false and does not establish Owner approval, Goal validity, or execution permission.",
+        "Only the Toolbox stdin/stdout entrypoint is represented; do not route to the upstream package CLI that writes temporary report files."
+      ],
+      "claim_ceiling": "Offline structural preflight of one caller-supplied, untrusted Goal proposal only; authority remains unverified, currentness is not checked, and no canonical Goal lifecycle transition, completion, approval, dispatch, truth, or scientific validity is established."
     }
   ]
 }
