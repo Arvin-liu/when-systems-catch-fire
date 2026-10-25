@@ -247,6 +247,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             batch["tool_id"],
             "collaboration.verify_handoff_artifact_files",
             "research.compare_publication_metadata_snapshots",
+            "maintenance.attribute_actions_validation_evidence",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))

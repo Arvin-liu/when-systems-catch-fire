@@ -1,0 +1,81 @@
+{
+  "schema_version": "toolbox-actions-validation-attribution-route-evidence-r0",
+  "observed_at_utc": "2026-10-25T13:41:16Z",
+  "scenario": "READ_ONLY_RUN route planner proposal; no candidate execution",
+  "current_main_ref_used": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "task_profile": {
+    "task_id": "offline-validation-plan-run-receipt-attribution",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin containing one component validation plan, one workflow run/jobs snapshot, one artifact inventory with extracted basenames and completeness flag, and an optional component validation receipt."
+    ],
+    "required_outputs": [
+      "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "catalog_counts": {
+    "current_operations": 20,
+    "experimental_candidates": 26
+  },
+  "source_files": [
+    {
+      "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83"
+    },
+    {
+      "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "sha256": "3e90229c81ef41e7ce5272c112790e0d48798517cae54172e8474e385adc8c86"
+    },
+    {
+      "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "sha256": "ec285324bbdff4a718f7ffd761a61f8d393b77b8e15967bfd2e207a6d9950ea4"
+    }
+  ],
+  "route_trials": [
+    {
+      "scenario": "default_opt_out",
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "selected_tool_ids": [],
+      "new_candidate_rejection_reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+      "selected_tool_permissions": null,
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ]
+    },
+    {
+      "scenario": "explicit_candidate_allowlist",
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "selected_tool_ids": [
+        "maintenance.attribute_actions_validation_evidence"
+      ],
+      "new_candidate_rejection_reason": null,
+      "selected_tool_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_actions_validation_attribution.py",
+          "ignition/tools/toolbox_actions_step_timeline.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "covered_outputs": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ],
+      "unmet_outputs": []
+    }
+  ],
+  "findings": [
+    "Default route excludes the candidate and is incomplete for the requested plan/run/artifact attribution outputs.",
+    "Explicit allowlisting selects exactly this candidate and completes the declared output coverage, while execution_authorized remains false.",
+    "The selected candidate remains READ_ONLY_RUN with empty write paths and network, secrets, billing, and external actions all false."
+  ],
+  "claim_ceiling": "A route-planner proposal only. It does not invoke the candidate, authenticate inputs, change permissions, certify validation, or authorize merge/release."
+}

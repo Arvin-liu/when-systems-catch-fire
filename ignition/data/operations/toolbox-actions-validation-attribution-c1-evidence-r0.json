@@ -1,0 +1,78 @@
+{
+  "schema_version": "toolbox-actions-validation-attribution-c1-evidence-r0",
+  "observed_at_utc": "2026-10-25T13:41:16Z",
+  "decision": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "same_task": {
+    "pull_request_number": 264,
+    "run_id": 40064357026,
+    "run_attempt": 1,
+    "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+    "selected_target_count": 11,
+    "artifact_id": 12549244084
+  },
+  "comparison": {
+    "existing_single_run_tool_id": "maintenance.summarize_actions_step_timeline",
+    "new_tool_id": "maintenance.attribute_actions_validation_evidence",
+    "same_input_actions_snapshot": true,
+    "existing_timeline_summary_sha256": "6d7469b9051a05d57b14e8d8dc2c4da1af49659e54e8bfcd9fc290f087a68639",
+    "new_tool_timeline_summary_sha256": "6d7469b9051a05d57b14e8d8dc2c4da1af49659e54e8bfcd9fc290f087a68639",
+    "timeline_summary_equal": true,
+    "existing_tool_summary": {
+      "job_count": 2,
+      "jobs_with_observed_elapsed": 2,
+      "sum_observed_job_intervals_seconds": 1998.0,
+      "step_count": 65,
+      "steps_with_observed_elapsed": 65,
+      "sum_observed_step_intervals_seconds": 1996.0,
+      "interval_sum_semantics": "SUM_OF_RECORDED_INTERVALS; PARALLEL_JOBS_MAY_OVERLAP; NOT_BILLABLE_MINUTES"
+    },
+    "new_association_added": {
+      "plan_digest_and_mode": {
+        "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+        "mode": "FULL"
+      },
+      "selected_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_operating_method_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "artifact_id_and_digest": {
+        "artifact_id": 12549244084,
+        "artifact_sha256": "cdbe451766bfbd07ebf26a5103474f4e2064902a1ad7f12627fe2756425dd888"
+      },
+      "receipt_presence": "ABSENT_FROM_SUPPLIED_COMPLETE_FILE_LIST",
+      "workflow_identity": {
+        "run_id": 40064357026,
+        "run_attempt": 1,
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "base_sha_binding": "SUPPLIED_PULL_REQUEST_BASE_MATCHES_PLAN"
+      }
+    }
+  },
+  "second_alternative": {
+    "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+    "declared_input_scope": "2-20 context-matched Actions runs",
+    "this_task_run_count": 1,
+    "comparison_status": "NOT_APPLICABLE_DIFFERENT_INPUT_CONTRACT"
+  },
+  "findings": [
+    "The existing single-run analyzer and new tool produce identical interval summaries for the same Actions snapshot.",
+    "The new tool additionally binds plan digest, selected targets, run/base/head identity, artifact digest/file list, and receipt-presence semantics; the existing single-run output does not provide those associations.",
+    "The repeated-step analyzer requires multiple runs, so its distinct multi-run use case remains uncovered by this one-run comparison."
+  ],
+  "replacement_or_retirement": "No existing tool is shown to cover all of its valuable uses. Keep the timeline tool for interval-only analysis and the repeated-step analyzer for multi-run history; retain this optional specialist for plan/artifact/receipt attribution.",
+  "uncertainty_and_limits": [
+    "No runtime, analyst-time, resource-use, billed-minute, cash-cost, savings, or waste comparison was performed.",
+    "The source snapshot and artifact inventory are caller-supplied and unauthenticated by this tool; this comparison does not certify CI or target results."
+  ]
+}
