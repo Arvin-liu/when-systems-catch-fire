@@ -1,0 +1,56 @@
+{
+  "schema_version": "toolbox-agent-episode-binding-source-provenance-r0",
+  "source_repository": "Arvin-liu/Workbench",
+  "source_pull_request": {
+    "number": 70,
+    "state_at_inspection": "OPEN_DRAFT",
+    "head_sha": "2f13848f693cd8411329fd92c4bf0735464e3677",
+    "base": "main"
+  },
+  "source_status": "RECORDED_CANDIDATE",
+  "source_files": [
+    {
+      "path": "schemas/agent-episode-binding-r0.schema.json",
+      "git_blob_sha1": "07429a42df0fc89edac81d884b65f4520c6f5a66",
+      "sha256": "08f4b2f681dbbe48e2bc37efada7a885326201c40220d542001c92efc128e651"
+    },
+    {
+      "path": "decisions/ADR-0003-multi-agent-needs-episode-binding-not-second-scheduler.md",
+      "git_blob_sha1": "2787a881c2c7df3c38fc29c036d4213de62fa5ec",
+      "sha256": "153421fa3c6b795bdae03907947285d172a91f9624fc7de1869b9907876f5226"
+    },
+    {
+      "path": "iterations/2026-10-04-ab05-concurrent-multi-agent-gap-audit.md",
+      "git_blob_sha1": "3bbe628aefde37fe95f736a4f3728faf4f72b5b5",
+      "sha256": "d24adb66017699776c30289378283b15b4476fbd7f514eb6d3e3978231d066a0"
+    },
+    {
+      "path": "pilots/ab05-heterogeneous-agent-episode-binding-r0/PREREGISTRATION.md",
+      "git_blob_sha1": "c9db66631811349f41bea7214dd6f348946c61e0",
+      "sha256": "e12d245963cd031dc8f7312d531b1e8b570cf59bc4a6a23d1b7aa4693ec518e5"
+    },
+    {
+      "path": "pilots/ab05-heterogeneous-agent-episode-binding-r0/metrics.json",
+      "git_blob_sha1": "1a73890881f258a7ddb9f8ce15fe7a3589f21a69",
+      "sha256": "ad2720a41a8a869f3b20e821e4b213278132ed45e6c580b9f1847b1afaead47e"
+    },
+    {
+      "path": "reviews/2026-10-05-ab05-independent-pilot-r1-review.md",
+      "git_blob_sha1": "bad57b2b1cce165e82dbddc60dd3e6bb943a38e3",
+      "sha256": "a46b5fe383e3ce292fe6f1f04c71dee061ebdbc6d00184e89d03a0b69d427491"
+    },
+    {
+      "path": "reviews/2026-10-05-ab05-protocol-invalidation-review.md",
+      "git_blob_sha1": "efd19d523d21df56f7d432ae7e8db22b5885b958",
+      "sha256": "03162caa6dc248b4d490748f3e9c2ef92415ada60c23eabc6945836485d5b2a4"
+    }
+  ],
+  "upstream_evidence_summary": {
+    "independent_synthetic_r1_review": "AB05_PILOT_NET_BENEFIT_ESTABLISHED",
+    "reported_primary_result": "Holdout plus transfer primary violations fell from 11 to 0; safe parallelism was 7/11 to 11/11; sibling continuation was 2/4 to 4/4; mandatory gates remained zero.",
+    "scope_limit": "Offline scripted agents only. No live agents, stochastic behavior, production contention, or enforcement overhead was tested.",
+    "protocol_history": "The earlier R0 protocol-invalidation review remains invalidated and diagnostic only; it is not used as accepted evidence.",
+    "architecture_boundary": "ADR-0003 says not to build a second scheduler; scheduler, resource arbitration, queue, health, and reconciliation remain the execution substrate. The proposed binding concerns agent role, context, channel, write-domain, and feedback declarations."
+  },
+  "formal_tool_claim_ceiling": "This provenance supports an optional declaration-preflight candidate only. It does not promote the Workbench schema or public Formal Current and does not establish runtime enforcement or production safety."
+}

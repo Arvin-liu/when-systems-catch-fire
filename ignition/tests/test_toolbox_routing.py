@@ -106,6 +106,30 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
 
+    def test_agent_episode_binding_preflight_is_default_off_and_opt_in_is_not_execution(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "collaboration.validate_agent_episode_binding"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile(
+            "agent-episode-binding-declaration-preflight",
+            card["accepted_input_types"],
+            card["output_types"],
+        )
+
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(excluded["selected_tools"], [])
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in included["selected_tools"]], [tool_id])
+        self.assertFalse(included["execution_authorized"])
+        self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(included["selected_tools"][0]["permissions"]["read_paths"], [
+            "ignition/schemas/operations/toolbox-agent-episode-binding-r0.schema.json",
+        ])
+
     def test_cognitive_migration_editorial_proposal_is_opt_in_and_read_only(self) -> None:
         catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
         card = next(row for row in catalog["candidates"] if row["tool_id"] == "writing.preflight_cognitive_migration_revision")
