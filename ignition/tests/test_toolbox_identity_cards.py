@@ -483,6 +483,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         offline_snapshot_binding = next(
             card for card in candidates if card["tool_id"] == "research.bind_offline_source_snapshot_run"
         )
+        offline_snapshot_verifier = next(
+            card for card in candidates if card["tool_id"] == "research.verify_offline_source_snapshot_run"
+        )
         specialized_tool_ids = {
             editorial["tool_id"],
             "maintenance.summarize_actions_step_timeline",
@@ -501,6 +504,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "maintenance.compare_context_packet_variants",
             "maintenance.compare_audit_findings",
             offline_snapshot_binding["tool_id"],
+            offline_snapshot_verifier["tool_id"],
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
@@ -523,6 +527,18 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertFalse(offline_snapshot_binding["router_selectable_by_default"])
         self.assertEqual(offline_snapshot_binding["replacement_candidates"], [])
         self.assertTrue(offline_snapshot_binding["unique_remaining_use_cases"])
+        self.assertEqual(offline_snapshot_verifier["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(
+            offline_snapshot_verifier["comparison_evidence"]["compared_tool_ids"],
+            ["collaboration.verify_handoff_artifact_files"],
+        )
+        self.assertEqual(offline_snapshot_verifier["execution_mode"], "READ_ONLY_RUN")
+        self.assertFalse(offline_snapshot_verifier["permissions"]["network"])
+        self.assertEqual(offline_snapshot_verifier["permissions"]["write_paths"], [])
+        self.assertFalse(offline_snapshot_verifier["router_selectable_by_default"])
+        self.assertEqual(offline_snapshot_verifier["replacement_candidates"], [])
+        self.assertTrue(offline_snapshot_verifier["unique_remaining_use_cases"])
+        self.assertEqual(offline_snapshot_verifier["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         self.assertEqual(batch["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         pack_catalog = next(card for card in candidates if card["tool_id"] == "runtime.inspect_declared_pack_catalog")
         self.assertEqual(pack_catalog["execution_mode"], "READ_ONLY_RUN")

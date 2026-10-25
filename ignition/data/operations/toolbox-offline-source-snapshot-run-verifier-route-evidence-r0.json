@@ -1,0 +1,70 @@
+{
+  "schema_version": "toolbox-route-evidence-r0",
+  "tool_id": "research.verify_offline_source_snapshot_run",
+  "candidate_catalog_git_blob_sha1": "63c02c657f16c1e077c61faee46314054688fb6d",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "task_profile": {
+        "task_id": "offline-e37-run-receipt-verification",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One canonical absolute filesystem path to a caller-selected external E37 run directory containing receipt.json and its receipt-listed files."
+        ],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "execution_authorized": false,
+      "relevant_rejections": [
+        {
+          "tool_id": "research.verify_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_candidate_allowlist",
+      "task_profile": {
+        "task_id": "offline-e37-run-receipt-verification",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One canonical absolute filesystem path to a caller-selected external E37 run directory containing receipt.json and its receipt-listed files."
+        ],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.verify_offline_source_snapshot_run"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.verify_offline_source_snapshot_run"
+      ],
+      "execution_authorized": false,
+      "relevant_rejections": []
+    }
+  ],
+  "summary": {
+    "default_decision": "INCOMPLETE",
+    "default_selected_tool_ids": [],
+    "explicit_allowlist_decision": "COMPLETE",
+    "explicit_allowlist_selected_tool_ids": [
+      "research.verify_offline_source_snapshot_run"
+    ],
+    "execution_authorized": false,
+    "network": false,
+    "repository_write_paths": []
+  }
+}
