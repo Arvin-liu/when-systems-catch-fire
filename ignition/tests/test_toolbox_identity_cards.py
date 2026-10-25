@@ -21,8 +21,8 @@ class ToolboxIdentityCardTests(unittest.TestCase):
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 12)
-        self.assertEqual(document["card_count"], 32)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 13)
+        self.assertEqual(document["card_count"], 33)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
@@ -31,6 +31,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         crossref = next(card for card in candidates if card["tool_id"] == "research.verify_crossref_metadata")
         pubmed = next(card for card in candidates if card["tool_id"] == "research.resolve_pubmed_identifiers")
         updates = next(card for card in candidates if card["tool_id"] == "research.inspect_pubmed_update_links")
+        editorial = next(card for card in candidates if card["tool_id"] == "writing.preflight_cognitive_migration_revision")
         self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], pubmed["tool_id"], updates["tool_id"]})
         self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertEqual(pubmed["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov"])
@@ -53,6 +54,12 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(updates["estimated_cost"]["status"], "UNKNOWN")
         self.assertEqual(updates["dependencies"], [])
         self.assertIn("absence claim", updates["claim_ceiling"])
+        self.assertEqual(editorial["execution_mode"], "READ_ONLY_RUN")
+        self.assertEqual(editorial["evidence_level"], "SYNTHETIC_ONLY")
+        self.assertFalse(editorial["permissions"]["network"])
+        self.assertEqual(editorial["permissions"]["write_paths"], [])
+        self.assertFalse(editorial["router_selectable_by_default"])
+        self.assertIn("publication readiness", editorial["claim_ceiling"])
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
         self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], updates["tool_id"]} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))

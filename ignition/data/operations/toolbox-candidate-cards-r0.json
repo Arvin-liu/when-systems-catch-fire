@@ -1420,6 +1420,126 @@
         "Only the Toolbox stdin/stdout entrypoint is represented; do not route to the upstream package CLI that writes temporary report files."
       ],
       "claim_ceiling": "Offline structural preflight of one caller-supplied, untrusted Goal proposal only; authority remains unverified, currentness is not checked, and no canonical Goal lifecycle transition, completion, approval, dispatch, truth, or scientific validity is established."
+    },
+    {
+      "tool_id": "writing.preflight_cognitive_migration_revision",
+      "display_name": {
+        "zh": "认知迁移编辑修订预检",
+        "en": "Cognitive-migration editorial revision preflight"
+      },
+      "description": "Build a bounded editorial proposal by reordering caller-supplied paragraphs verbatim, checking declared excerpt-to-paragraph associations, protecting evidence/counterargument/affected-person paragraphs, and reporting nonbinding structural diagnostics.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or publication authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_cognitive_migration_revision.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_cognitive_migration_revision.py --stdin < request.json",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_cognitive_migration_revision.py",
+          "role": "BOUNDED_VERBATIM_EDITORIAL_PROPOSAL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "role": "CURRENT_GENERATIVE_METHOD_BOUNDARY"
+        },
+        {
+          "path": "ignition/templates/publication/zhiyuan-writing-spec.md",
+          "role": "CURRENT_WRITING_SPEC_BOUNDARY"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_cognitive_migration_revision.py",
+          "role": "FOCUSED_SYNTHETIC_AND_NEGATIVE_CONTROLS"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_cognitive_migration_revision.py"
+      ],
+      "good_for": [
+        "Producing a local proposed order for explicitly selected source paragraphs without changing their wording.",
+        "Checking that caller-declared exact excerpt strings occur in their assigned paragraphs and echoing caller-supplied source references without inspecting those sources; keeping anchored, counterargument, and affected-person paragraphs in a proposal.",
+        "Reviewing caller-declared cognitive-move variety, concept-to-anchor mapping, paragraph lengths, and repeated surface patterns as nonbinding editorial prompts."
+      ],
+      "not_for": [
+        "Generating, paraphrasing, deleting or fact-checking prose; selecting an editorial direction on the author's behalf; or publishing or accepting a work.",
+        "Verifying that a source reference is real, that an excerpt is faithfully transcribed, that a factual claim is true, or that a claim stays within its ceiling.",
+        "Treating one paragraph-count range, cognitive-move set, surface pattern, readability signal, or proposal status as a universal writing rule or quality judgment."
+      ],
+      "only_if": [
+        "The caller supplies one UTF-8 JSON request no larger than 1,000,000 bytes with exact source paragraphs, declared anchor excerpts and references, a claim ceiling, reader-shift fields, and the desired paragraph order.",
+        "The caller accepts that caller-declared evidence, counterargument, affected-person, and source-anchor paragraphs cannot be omitted from the generated proposal.",
+        "The result is reviewed by the author for factual support, scope, voice, and suitability before any use."
+      ],
+      "counterindicated_when": [
+        "The task requires fresh sources, source authentication, factual or causal adjudication, or independent claim-ceiling review.",
+        "The caller expects automatic paraphrase, paragraph selection, style imitation, publication approval, or a finished article.",
+        "The source draft or editorial decision is not authorized for local processing."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin containing 1–80 identified paragraphs, declared exact anchors and source-reference strings, before/after reader-shift statements, a caller-supplied claim ceiling, and an ordered selection (maximum 1,000,000 bytes)"
+      ],
+      "output_types": [
+        "deterministic JSON review receipt with wrapper, source-paragraph, and proposal SHA-256, declared move and concept-anchor coverage, paragraph diagnostics, and explicit unverified-source boundaries",
+        "optional proposed text formed only by joining caller-selected paragraph text verbatim in caller order; withheld if protected content is omitted"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_STDIN_AND_SELF_HASH",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_cognitive_migration_revision.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded JSON request from stdin and its own regular wrapper file for SHA-256, then writes a deterministic receipt to stdout; it creates no files and does not modify the repository.",
+        "When protected content is omitted, returns a blocker and no proposal text; when safe unanchored paragraphs are omitted, reports their IDs for human review."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable latency or memory profile has been measured; input is capped at 1,000,000 bytes and processing is local deterministic text/JSON work."
+      },
+      "alternatives": [
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The Current registered operation describes the broader writing method; this optional CLI only checks caller annotations and reorders existing paragraphs without applying generative or editorial judgment."
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The Current registered operation covers publication-surface validation; this CLI produces a local editorial structure proposal and does not validate publication readiness."
+        }
+      ],
+      "fallback": "If the proposal is blocked or the tool is unavailable, preserve the full draft and reorder paragraphs manually; review all factual claims and source links against the original evidence.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_cognitive_migration_revision.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "negative_controls": [
+          "Omitting any declared evidence-anchor, counterargument, or affected-person paragraph withholds proposal text and reports every protected paragraph ID.",
+          "An anchor excerpt absent from its attached paragraph, a missing concept anchor, an unknown selected paragraph, duplicate JSON keys, invalid input, and oversized requests fail closed without a partial stdout receipt.",
+          "Repeated contrast/deepening patterns and an incomplete cognitive-move set are review advisories; phrases are not banned and declared move labels are never independently inferred from prose.",
+          "Repeated invocations on identical input produce identical JSON, and unsupported output-path options are rejected; no file, network, secret, billing, or external-action effect is exposed."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless writing.preflight_cognitive_migration_revision is explicitly allowlisted for a user-requested, source-bounded editorial structure proposal.",
+        "The caller supplies exact accepted inputs, desired outputs, and the allowed READ_ONLY_RUN mode; route planning does not execute the tool or verify user authority over the draft.",
+        "The route proposal has execution_authorized=false and does not confer publication, truth, evidence, or Owner authority."
+      ],
+      "claim_ceiling": "Deterministic editorial structure proposal over caller-supplied paragraphs only. Selected text is copied verbatim and reordered; caller-supplied source anchors, claim limits, factual accuracy, causal meaning, literary quality, and publication readiness are not independently verified."
     }
   ]
 }

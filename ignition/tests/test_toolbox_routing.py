@@ -63,6 +63,25 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["execution_authorized"])
         self.assertEqual(included["source_refs"]["current_registry_git_blob_sha1"], "21fe1bfcdb0d9762edd60339aca14f1040393fc7")
 
+    def test_cognitive_migration_editorial_proposal_is_opt_in_and_read_only(self) -> None:
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "writing.preflight_cognitive_migration_revision")
+        task = profile("cognitive-migration-editorial-proposal", card["accepted_input_types"], [card["output_types"][1]])
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["writing.preflight_cognitive_migration_revision"],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["writing.preflight_cognitive_migration_revision"],
+        )
+        self.assertFalse(included["execution_authorized"])
+        self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
+
     def test_batch_identity_resolution_is_excluded_until_explicitly_allowlisted(self) -> None:
         task = profile(
             "batch-current-identity-resolution",
