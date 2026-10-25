@@ -1377,6 +1377,195 @@
       }
     },
     {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "display_name": {
+        "zh": "OpenAlex Work 元数据查询器",
+        "en": "OpenAlex Work metadata lookup"
+      },
+      "description": "Retrieve a bounded selected OpenAlex Work projection for caller-supplied DOI identifiers and fail closed on ambiguous exact-primary-DOI matches.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1. OpenAlex states its metadata is CC0: https://help.openalex.org/data/how-its-built/. Public API usage is metered: https://help.openalex.org/api/authentication/ and https://help.openalex.org/access/example-costs/.",
+      "maintainer": "Ignition repository maintainers; this field grants no Owner, retraction, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_openalex_work_metadata.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_openalex_work_metadata.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "role": "BOUNDED_FIXED_HOST_CLI"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_openalex_work_metadata.py",
+          "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "OPT_IN_AND_HOST_ALLOWLIST_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/iterations/110/openalex/PREREGISTRATION.md",
+          "role": "FROZEN_DOI_MATCH_AND_FAIL_CLOSED_PROTOCOL"
+        },
+        {
+          "path": "ignition/data/operations/iterations/110/openalex/first-run-20260801/adjudication.jsonl",
+          "role": "HISTORICAL_OPENALEX_OUTCOMES"
+        },
+        {
+          "path": "ignition/data/external-research/104-source-registry.jsonl",
+          "role": "SAME_TASK_EXPECTED_TITLE_YEAR_AND_RETRACTION_CONTEXT"
+        },
+        {
+          "path": "ignition/scripts/external-research/openalex_client.py",
+          "role": "EXISTING_GENERAL_OPENALEX_CLIENT_COMPATIBILITY_REFERENCE"
+        },
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "role": "COMPLEMENTARY_PROVIDER_COMPARATOR"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-openalex-live-task-evidence-r0.json",
+          "role": "LIVE_TASK_ROUTE_API_AND_COST_EVIDENCE"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Retrieving an exact-primary-DOI-matched OpenAlex Work ID, title, publication year, work type, and the API-reported is_retracted flag.",
+        "Recording a bounded OpenAlex response digest, HTTP result, and server-reported rate-limit and usage fields without retaining the raw response.",
+        "Adding OpenAlex-specific work identity and retraction-signal output when a task explicitly asks for them alongside another provider."
+      ],
+      "not_for": [
+        "Retrieving abstracts, article full text, publisher pages, or arbitrary URLs.",
+        "Establishing source authenticity, scientific truth, article-content support, or complete OpenAlex coverage.",
+        "Treating OpenAlex is_retracted as an authoritative or complete retraction adjudication; the documented signal is sourced from Retraction Watch.",
+        "Treating no exact primary DOI match as proof that a work does not exist; DOI filters can match DOI values on work locations.",
+        "Selecting a best guess when multiple exact primary DOI matches are returned or updating repository source records."
+      ],
+      "only_if": [
+        "The caller explicitly permits transmitting the supplied public DOI identifiers for this invocation and passes --allow-public-network.",
+        "The invocation uses only the fixed HTTPS host api.openalex.org and a JSON stdin object with one to five unique bare DOI identifiers.",
+        "A route proposal may include this candidate only when the task explicitly requires OpenAlex Work identity or its provider-reported fields and allowed_network_hosts contains api.openalex.org.",
+        "The route proposal remains non-authoritative; actual invocation consent is checked separately by the CLI flag and task-specific decision."
+      ],
+      "counterindicated_when": [
+        "A DOI is confidential or must not be transmitted to a public scholarly metadata service.",
+        "Network access is unavailable, disallowed, or not explicitly approved for this invocation.",
+        "The task needs an authoritative or complete retraction decision, article-content review, or scientific assessment.",
+        "The task requires an exhaustive search, an unbounded query, cursor paging, or full raw-response retention."
+      ],
+      "accepted_input_types": [
+        "JSON stdin object with one to five unique bare DOI identifiers"
+      ],
+      "output_types": [
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_openalex_work_metadata.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.openalex.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked, sends one HTTPS GET to api.openalex.org/works. It transmits only the caller-supplied DOI values in a DOI filter; no email, API key, title, source ID, credential, arbitrary host, or other external action is sent.",
+        "Selects only id, doi, display_name, publication_year, type, and is_retracted; keeps the raw body in memory long enough to parse and hash, then emits no raw response or article content and writes no repository files.",
+        "Does not follow redirects or retry; uses a 5-second socket timeout, 7-second response-body budget, 8 KiB bounded reads, and a 256 KiB response cap. HTTP, rate-limit, malformed, oversized, ambiguous, and non-exact outcomes remain explicit.",
+        "OpenAlex documents anonymous API usage as budgeted and returns usage fields. This wrapper sends no API key or payment data and records the server-reported usage; one live filter request consumed one reported credit."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library; no third-party runtime dependency"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "OpenAlex documents a keyless daily API budget and returns per-response usage headers; one live filter request reported X-RateLimit-Credits-Used=1 while meta.cost was null. No API key or paid account was used, and a single observation is not a cost profile."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Crossref compares caller-supplied expected title/year to Crossref fields; OpenAlex returns its Work ID and Retraction Watch-derived signal. One paired DOI matched on title/year but cannot establish provider quality or replacement value."
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The PubMed/PMC resolver maps DOI identifiers to NCBI IDs; this tool returns OpenAlex Work identity and selected OpenAlex metadata."
+        },
+        {
+          "tool_id": "ignition.scripts.external-research.openalex_client.fetch_by_doi",
+          "relationship": "EXISTING_BROADER_LIBRARY_FUNCTION_NOT_TOOLBOX_EQUIVALENT",
+          "reason": "The existing general client already fetches DOI works and returns a wider projection, including abstract and open-access fields. This candidate provides a bounded route-facing contract: exact fixed host, selected fields, no user mailto or API key, no redirects, bounded response handling, hashes and explicit ambiguity. No evidence establishes overall superiority or retirement; keep the general client for its broader search and abstract workflows."
+        }
+      ],
+      "fallback": "If the network is not allowed or OpenAlex fails, preserve NOT_RUN or the explicit acquisition outcome. Prior Task 110 records are historical evidence only; use a separately requested Crossref or NCBI query for that provider-specific output and do not infer a missing OpenAlex record.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_openalex_work_metadata.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network performs no request and emits no result.",
+          "Reject DOI URLs, malformed or duplicate DOI inputs, duplicate JSON keys, and batches above five before network access.",
+          "Only api.openalex.org is contacted; redirects, non-JSON, oversized responses, HTTP errors, rate limits, timeouts, malformed records, and invalid work IDs are explicit outcomes.",
+          "Multiple exact primary DOI matches and truncated result sets fail closed without selecting a Work; a filter hit with no exact primary DOI match remains inconclusive.",
+          "No response body, article content, credentials, or repository writes are emitted or persisted."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the candidate ID is explicitly allowlisted and the typed route profile explicitly lists api.openalex.org in allowed_network_hosts.",
+        "A route proposal has execution_authorized=false and does not validate the caller authority behind its host list.",
+        "Every actual invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers.",
+        "Select only when an OpenAlex-specific Work ID or provider-reported field is required; do not include merely to repeat title/year metadata."
+      ],
+      "claim_ceiling": "Live OpenAlex selected Work metadata and response-specific usage evidence only. OpenAlex documents is_retracted as a Retraction Watch-derived flag; it does not establish complete retraction coverage, source authenticity, article content, scientific truth, or a provider-wide quality comparison.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Provide the optional router a constrained OpenAlex-only lookup contract with selected fields, response hash, and reported usage without exposing abstracts or arbitrary query URLs.",
+        "Return OpenAlex Work IDs and its reported is_retracted value when those provider-specific outputs are explicitly requested; the existing broad client remains the wider search/abstract path."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "One same-DOI live task compares the selected OpenAlex wrapper against Crossref output and observes its distinction from the existing broader OpenAlex client. This does not measure comparative accuracy, coverage, effort, latency, or cost, and cannot support replacing or retiring any implementation.",
+        "compared_tool_ids": [
+          "research.verify_crossref_metadata",
+          "research.resolve_pubmed_identifiers"
+        ],
+        "evidence_refs": [
+          "ignition/tests/test_toolbox_openalex_work_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/data/operations/iterations/110/openalex/first-run-20260801/adjudication.jsonl",
+          "ignition/data/operations/toolbox-openalex-live-task-evidence-r0.json"
+        ],
+        "findings": [
+          "For GAP001-05, live Crossref and OpenAlex both returned the expected title and year; OpenAlex additionally returned Work ID W3083006799 and is_retracted=false. Crossref returned retraction_signal=NONE; these are separate provider fields, not validated equivalent signals.",
+          "The existing openalex_client.py already supports broader DOI lookup/search output including abstracts and OA fields. This wrapper adds a constrained, opt-in route contract rather than claiming new API coverage. No provider or implementation ranks as globally better; keep each task-bounded and preserve uncertainty."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "ACTIVE",
+        "basis": "This optional experimental wrapper is default-off. C1 comparison remains unknown; keep it available only for explicitly requested OpenAlex-specific output."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation or automatic migration is introduced. If a later paired comparison supports replacement, retain task-specific OpenAlex identity/retraction outputs where they remain uniquely useful."
+        ],
+        "rollback_steps": [
+          "Remove this optional candidate and wrapper from the isolated branch, regenerate the identity cards and human toolbox projection, and retain the Task 110 source artifacts and comparison evidence."
+        ]
+      }
+    },
+    {
       "tool_id": "research.resolve_pubmed_identifiers",
       "display_name": {
         "zh": "PubMed/PMC DOI 标识符解析器",

@@ -370,6 +370,54 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(combined["execution_authorized"])
         self.assertEqual(combined["network_authority_binding"], "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER")
 
+    def test_openalex_work_metadata_lookup_is_opt_in_and_complements_crossref(self) -> None:
+        openalex_input = "JSON stdin object with one to five unique bare DOI identifiers"
+        openalex_outputs = [
+            "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+            "per-request response SHA-256, HTTP status, and public API usage fields",
+        ]
+        task = profile("openalex-work-metadata", [openalex_input], openalex_outputs)
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+
+        no_host = planner.plan_tool_route(
+            task, include_experimental_tool_ids=["research.lookup_openalex_work_metadata"],
+        )
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": "research.lookup_openalex_work_metadata", "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+
+        permitted = planner.plan_tool_route(
+            profile("openalex-work-metadata", [openalex_input], openalex_outputs, allowed_network_hosts=["api.openalex.org"]),
+            include_experimental_tool_ids=["research.lookup_openalex_work_metadata"],
+        )
+        self.assertEqual(permitted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in permitted["selected_tools"]], ["research.lookup_openalex_work_metadata"])
+        self.assertEqual(permitted["selected_tools"][0]["permissions"]["network_hosts"], ["api.openalex.org"])
+        self.assertFalse(permitted["execution_authorized"])
+
+        crossref_input = "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"
+        crossref_output = "input-ordered Crossref metadata comparison rows"
+        paired = planner.plan_tool_route(
+            profile(
+                "crossref-and-openalex-doi-task",
+                [crossref_input, openalex_input],
+                [crossref_output] + openalex_outputs,
+                allowed_network_hosts=["api.crossref.org", "api.openalex.org"],
+            ),
+            include_experimental_tool_ids=["research.verify_crossref_metadata", "research.lookup_openalex_work_metadata"],
+        )
+        self.assertEqual(paired["decision"], "COMPLETE")
+        self.assertEqual(
+            {row["tool_id"] for row in paired["selected_tools"]},
+            {"research.verify_crossref_metadata", "research.lookup_openalex_work_metadata"},
+        )
+        self.assertFalse(paired["execution_authorized"])
+        self.assertEqual(paired["cost_estimate"]["status"], "UNKNOWN")
+
     def test_real_doi_task_expands_to_two_required_outputs_and_skips_redundant_candidates(self) -> None:
         evidence = json.loads(
             (IGNITION_ROOT / "data/operations/toolbox-real-task-route-evidence-r0.json").read_text(encoding="utf-8")
