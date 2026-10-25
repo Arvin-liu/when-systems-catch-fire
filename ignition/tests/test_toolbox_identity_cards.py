@@ -41,6 +41,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(any("legacy-mappings.jsonl" in path for path in batch["dependencies"]))
         pack_catalog = next(card for card in candidates if card["tool_id"] == "runtime.inspect_declared_pack_catalog")
         self.assertEqual(pack_catalog["execution_mode"], "READ_ONLY_RUN")
+        self.assertEqual(pack_catalog["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertFalse(pack_catalog["permissions"]["network"])
         self.assertEqual(pack_catalog["permissions"]["write_paths"], [])
         self.assertIn("no Pack module is loaded", pack_catalog["claim_ceiling"])

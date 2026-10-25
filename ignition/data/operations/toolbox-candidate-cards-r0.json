@@ -308,7 +308,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_pack_registry_inspector.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_pack_registry_inspector.py list | show <pack_id>",
       "source_refs": [

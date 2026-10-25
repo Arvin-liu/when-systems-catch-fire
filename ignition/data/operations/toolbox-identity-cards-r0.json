@@ -8,7 +8,7 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "7d7cdd2ee1cd03c71891dc944e46fb7a25d99d1e",
+    "blob_sha1": "be202c91b869f9952d64d5958d68c2425817ca1c",
     "candidate_count": 4
   },
   "cards": [
@@ -376,7 +376,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "7d7cdd2ee1cd03c71891dc944e46fb7a25d99d1e",
+      "candidate_catalog_blob_sha1": "be202c91b869f9952d64d5958d68c2425817ca1c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -629,7 +629,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "7d7cdd2ee1cd03c71891dc944e46fb7a25d99d1e"
+          "sha1": "be202c91b869f9952d64d5958d68c2425817ca1c"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -638,7 +638,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "7d7cdd2ee1cd03c71891dc944e46fb7a25d99d1e",
+      "candidate_catalog_blob_sha1": "be202c91b869f9952d64d5958d68c2425817ca1c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -898,7 +898,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "7d7cdd2ee1cd03c71891dc944e46fb7a25d99d1e",
+      "candidate_catalog_blob_sha1": "be202c91b869f9952d64d5958d68c2425817ca1c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2208,7 +2208,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_pack_registry_inspector.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_pack_registry_inspector.py list | show <pack_id>",
       "source_refs": [
@@ -2342,7 +2342,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "7d7cdd2ee1cd03c71891dc944e46fb7a25d99d1e",
+      "candidate_catalog_blob_sha1": "be202c91b869f9952d64d5958d68c2425817ca1c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
