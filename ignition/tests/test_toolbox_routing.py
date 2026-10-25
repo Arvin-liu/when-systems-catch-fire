@@ -327,6 +327,36 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(combined["execution_authorized"])
         self.assertEqual(combined["network_authority_binding"], "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER")
 
+    def test_pubmed_update_links_are_separate_opt_in_capability(self) -> None:
+        pmid_input = "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs)"
+        outputs = [
+            "input-ordered PubMed comments/corrections relation rows with raw RefType, related PMID, and reference source",
+            "per-response SHA-256 and explicit HTTP or network outcome summary",
+        ]
+        task = profile("pubmed-record-updates", [pmid_input], outputs)
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+
+        no_host = planner.plan_tool_route(task, include_experimental_tool_ids=["research.inspect_pubmed_update_links"])
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": "research.inspect_pubmed_update_links", "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+
+        permitted = planner.plan_tool_route(
+            profile("pubmed-record-updates", [pmid_input], outputs, allowed_network_hosts=["eutils.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov"]),
+            include_experimental_tool_ids=["research.inspect_pubmed_update_links", "research.resolve_pubmed_identifiers"],
+        )
+        self.assertEqual(permitted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in permitted["selected_tools"]], ["research.inspect_pubmed_update_links"])
+        self.assertIn(
+            {"tool_id": "research.resolve_pubmed_identifiers", "reason": "NO_INPUT_TYPE_MATCH"},
+            permitted["rejected_candidates"],
+        )
+        self.assertFalse(permitted["execution_authorized"])
+
     def test_route_expands_without_a_fixed_tool_count(self) -> None:
         result = planner.plan_tool_route(profile(
             "three-output-task",
