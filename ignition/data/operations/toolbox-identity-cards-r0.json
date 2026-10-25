@@ -8,7 +8,7 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+    "blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
     "candidate_count": 18
   },
   "cards": [
@@ -478,7 +478,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -656,7 +656,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -992,7 +992,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1162,7 +1162,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb"
+          "sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -1186,7 +1186,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1511,7 +1511,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2509,7 +2509,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2841,7 +2841,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3498,7 +3498,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3715,7 +3715,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3731,7 +3731,7 @@
       "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_noaa_ch4_annual_growth.py --stdin --allow-public-network",
       "source_refs": [
@@ -3766,6 +3766,10 @@
         {
           "path": "ignition/tools/toolbox_openalex_work_metadata.py",
           "role": "DOI_METADATA_FUNCTION_COMPARATOR"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
+          "role": "REAL_BOUNDED_NOAA_TASK_OUTCOME_WITH_NO_RAW_RESPONSE_RETENTION"
         }
       ],
       "dependencies": [],
@@ -3920,12 +3924,12 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "c8fe21af60d84730d2260e951b6856c88aa9da83"
+          "sha1": "0dacc1d035a8fe8ccfd13324967e2f8c626dcfda"
         },
         {
           "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "dcbe85a746122f7486cb0e851476776336705e7d"
+          "sha1": "71edb315d828e32d5a2ebf03e58c569688285271"
         },
         {
           "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
@@ -3936,10 +3940,15 @@
           "path": "ignition/tools/toolbox_openalex_work_metadata.py",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "8585194b4ebf459e50a7a813e90eafeeff16a5ad"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "5d9b40f6256d042789e5bed547e1d7c87e482b4c"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4181,7 +4190,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4401,7 +4410,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4677,7 +4686,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4858,7 +4867,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5174,7 +5183,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5369,7 +5378,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5561,7 +5570,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6069,7 +6078,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "candidate_catalog_blob_sha1": "a16262fd49c0444c2e5f621605d2d6437a83e2fd",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },

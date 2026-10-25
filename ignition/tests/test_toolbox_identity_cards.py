@@ -90,6 +90,14 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(noaa["permissions"]["network_hosts"], ["gml.noaa.gov"])
         self.assertEqual(noaa["execution_mode"], "READ_ONLY_RUN")
         self.assertEqual(noaa["estimated_cost"]["status"], "UNKNOWN")
+        self.assertEqual(noaa["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertIn(
+            {
+                "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
+                "role": "REAL_BOUNDED_NOAA_TASK_OUTCOME_WITH_NO_RAW_RESPONSE_RETENTION",
+            },
+            noaa["source_refs"],
+        )
         self.assertIn("--allow-public-network", noaa["entrypoint"])
         self.assertFalse(noaa["router_selectable_by_default"])
         self.assertEqual(noaa["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")

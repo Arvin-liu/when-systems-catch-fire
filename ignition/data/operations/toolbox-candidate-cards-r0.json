@@ -2692,7 +2692,7 @@
       "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_noaa_ch4_annual_growth.py --stdin --allow-public-network",
       "source_refs": [
@@ -2727,6 +2727,10 @@
         {
           "path": "ignition/tools/toolbox_openalex_work_metadata.py",
           "role": "DOI_METADATA_FUNCTION_COMPARATOR"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-live-task-evidence-r0.json",
+          "role": "REAL_BOUNDED_NOAA_TASK_OUTCOME_WITH_NO_RAW_RESPONSE_RETENTION"
         }
       ],
       "dependencies": [],
