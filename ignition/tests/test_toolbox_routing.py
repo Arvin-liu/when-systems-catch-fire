@@ -785,7 +785,15 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(receipt["route_result"]["execution_authorized"])
         self.assertEqual(
             receipt["route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            receipt["candidate_catalog_refresh"]["current_git_blob_sha1"],
+        )
+        self.assertEqual(
+            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+        self.assertNotEqual(
+            receipt["candidate_catalog_refresh"]["current_git_blob_sha1"],
+            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
         )
 
     def test_cross_source_metadata_comparator_is_default_off_and_opt_in(self) -> None:
@@ -822,7 +830,15 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(comparison["route_result"]["execution_authorized"])
         self.assertEqual(
             comparison["route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            receipt["candidate_catalog_git_blob_sha1"],
+        )
+        self.assertEqual(
+            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+        self.assertNotEqual(
+            receipt["candidate_catalog_git_blob_sha1"],
+            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
         )
         retrieval = receipt["source_retrieval_stage"]
         self.assertEqual(retrieval["route_trials"]["default_light"]["decision"], "INCOMPLETE")
@@ -869,7 +885,53 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(evidence["allowlisted_route_result"]["execution_authorized"])
         self.assertEqual(
             evidence["allowlisted_route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            evidence["candidate_catalog_git_blob_sha1"],
+        )
+        self.assertEqual(
+            opted["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+        self.assertNotEqual(
+            evidence["candidate_catalog_git_blob_sha1"],
+            opted["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+        )
+
+    def test_producer_consumer_semantic_preflight_is_default_off_and_minimally_routed(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "maintenance.preflight_producer_consumer_semantics"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("producer-consumer-static-pattern-preflight", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        opted = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-producer-consumer-semantic-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        trials = {row["scenario"]: row for row in evidence["route_trials"]}
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+        self.assertEqual(opted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opted["selected_tools"]], [tool_id])
+        self.assertFalse(opted["execution_authorized"])
+        self.assertFalse(opted["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(opted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(trials["default_light"]["decision"], "INCOMPLETE")
+        self.assertEqual(trials["explicit_candidate"]["decision"], "COMPLETE")
+        self.assertEqual(trials["explicit_candidate"]["selected_tool_ids"], [tool_id])
+        self.assertFalse(trials["explicit_candidate"]["explicit_invocation_authorized"])
+        self.assertEqual(trials["candidate_with_adjacent_options"]["selected_tool_ids"], [tool_id])
+        self.assertEqual(
+            {row["reason"] for row in trials["candidate_with_adjacent_options"]["relevant_rejections"]},
+            {"NO_INPUT_TYPE_MATCH"},
+        )
+        self.assertEqual(
+            opted["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            evidence["candidate_binding"]["candidate_cards_git_blob_sha1"],
         )
 
 

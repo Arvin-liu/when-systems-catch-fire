@@ -1,0 +1,61 @@
+{
+  "schema_version": "toolbox-producer-consumer-semantic-c1-evidence-r0",
+  "candidate_tool_id": "maintenance.preflight_producer_consumer_semantics",
+  "owner_rule": {
+    "source": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "section": "C1",
+    "rule": "Compare real task effects on equivalent inputs and environment before replacement; retain uncertainty and use low-cost controlled comparison when evidence is insufficient."
+  },
+  "blueprint_source": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 75,
+    "head": "acf2caebbb615d2827d1767a7a17358f8de38fc4",
+    "path": "programs/2026-10-16-global-unfinished-blueprints/successors/MASTER-BLUEPRINT-R1-OUTCOME-AND-RESEARCH-HANDOFF.md",
+    "git_blob_sha1": "c34779720edb07f36698d1f660451a2a7ffe2ea9",
+    "target_scope": "Static producer-consumer contract preflight for bounded literal regex checks without executing the consumer."
+  },
+  "frozen_task": {
+    "task_id": "frozen-b2-handoff-consumer-static-preflight",
+    "input": "Exact-ref source excerpt for parse_a_handoff plus exact-ref producer text, each with SHA-256, under Python 3.9.6 and jsonschema 4.25.1.",
+    "required_outcome": "Report whether each supported constant required pattern matches, identify a missing/malformed/reordered field without exposing captured values, and preserve all non-authorization and non-authentication claims as false.",
+    "permission_boundary": "READ_ONLY_RUN; local schema read and stdin only; no network, file writes, consumer import/execution, or external action."
+  },
+  "comparison_attempt": {
+    "method": "Low-cost input/output contract comparison with adjacent installed toolbox candidates, plus deterministic repeated execution on the same pinned task input. No equivalent candidate accepts the same pair of consumer source and producer text for static pattern checking.",
+    "compared_tool_ids": [
+      "collaboration.validate_agent_episode_binding",
+      "collaboration.verify_handoff_artifact_files"
+    ],
+    "observations": [
+      {
+        "tool_id": "collaboration.validate_agent_episode_binding",
+        "coverage": "Checks caller-declared multi-agent plan roles, contexts, feedback, write domains, and work-unit dependency DAG.",
+        "not_covered": "Does not parse consumer source or match required producer text patterns.",
+        "same_task_result": "NOT_COMPARABLE_DIFFERENT_INPUT_CONTRACT"
+      },
+      {
+        "tool_id": "collaboration.verify_handoff_artifact_files",
+        "coverage": "Checks bounded current local artifact bytes against receipt-declared SHA-256 values.",
+        "not_covered": "Does not statically inspect parser patterns or compare producer/consumer field contracts; it reads artifact files rather than caller-supplied text pairs.",
+        "same_task_result": "NOT_COMPARABLE_DIFFERENT_INPUT_CONTRACT"
+      }
+    ],
+    "candidate_real_task_ref": "ignition/data/operations/toolbox-producer-consumer-semantic-real-task-r0.json",
+    "matched_task_completion_or_quality_scores": "NOT_MEASURED",
+    "runtime_cpu_memory_latency_and_cash_cost": "NOT_MEASURED",
+    "comparison_limits": [
+      "The actual task was a static mismatch observation against an exact frozen source pair; no alternate implementation accepted the same typed input and output contract.",
+      "The adjacent tools' inability to accept these inputs is a scope difference, not a losing task result.",
+      "Two deterministic invocations establish repeatable output for this input only; they do not establish broad reliability, accuracy, superiority, or cost."
+    ]
+  },
+  "c1_disposition": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "replacement_candidates": [],
+    "retirements_supported": [],
+    "unique_use_cases_established": [],
+    "observed_scope": "The candidate statically analyzes one bounded Python function's constant re.search contracts against caller-supplied producer text, reports typed match/mismatch and field-presence states, and emits capture digests instead of raw values.",
+    "next_low_cost_comparison": "If a second tool later accepts this same source-and-text input contract, bind both to identical bytes and environment, then compare field classification, false accepts/rejects, unsupported-case handling, output boundaries, and measured runtime/resources. Until then keep replacement, retirement, comparative quality, and cost unknown."
+  },
+  "claim_ceiling": "No evidence establishes a replacement, retirement, globally unique use case, runtime consumer acceptance, semantic equivalence, source authenticity, scientific validity, or lower cost."
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/toolbox-producer-consumer-semantic-input-r0.schema.json",
+  "title": "Producer Consumer Semantic Preflight input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "consumer_source", "producer_text"],
+  "properties": {
+    "schema_version": {"const": "producer-consumer-semantic-preflight-input-r0"},
+    "consumer_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["python_source", "function_name", "expected_sha256"],
+      "properties": {
+        "python_source": {"type": "string", "minLength": 1, "maxLength": 131072},
+        "function_name": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,127}$"},
+        "expected_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "producer_text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "expected_sha256"],
+      "properties": {
+        "text": {"type": "string", "maxLength": 65536},
+        "expected_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

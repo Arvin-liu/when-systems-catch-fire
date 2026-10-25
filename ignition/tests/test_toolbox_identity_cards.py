@@ -140,6 +140,52 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual([row["tool_id"] for row in route["allowlisted_route_result"]["selected_tools"]], [tool_id])
         self.assertFalse(route["allowlisted_route_result"]["execution_authorized"])
 
+    def test_producer_consumer_semantic_card_keeps_scope_c1_and_read_only_boundary(self) -> None:
+        document = TOOL.build_cards()
+        tool_id = "maintenance.preflight_producer_consumer_semantics"
+        card = next(item for item in document["cards"] if item["tool_id"] == tool_id)
+        c1 = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-producer-consumer-semantic-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        real_task = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-producer-consumer-semantic-real-task-r0.json").read_text(encoding="utf-8")
+        )
+        route = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-producer-consumer-semantic-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(card["card_kind"], "OPTIONAL_EXPERIMENTAL_TOOL")
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], ["ignition/schemas/operations/toolbox-producer-consumer-semantic-input-r0.schema.json"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        for permission in ("network", "secrets", "billing", "external_actions"):
+            self.assertFalse(card["permissions"][permission])
+        self.assertEqual(card["estimated_cost"]["status"], "UNKNOWN")
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertEqual(card["unique_remaining_use_cases"], [])
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(set(card["comparison_evidence"]["compared_tool_ids"]), {
+            "collaboration.validate_agent_episode_binding",
+            "collaboration.verify_handoff_artifact_files",
+        })
+        self.assertEqual(c1["c1_disposition"]["comparison_status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(real_task["invocation"]["contract_status"], "STATIC_REQUIRED_PATTERN_MISMATCH")
+        self.assertEqual(real_task["invocation"]["check_statuses"], {"m2": "PRESENT", "p2": "MALFORMED_OR_REORDERED"})
+        self.assertEqual(real_task["invocation"]["p2_field_statuses"]["focused_repair_checker_pass"], "ABSENT")
+        self.assertFalse(real_task["invocation"]["claim_flags"]["consumer_code_executed"])
+        self.assertFalse(real_task["invocation"]["claim_flags"]["execution_authorized"])
+        trials = {row["scenario"]: row for row in route["route_trials"]}
+        self.assertEqual(trials["default_light"]["selected_tool_ids"], [])
+        self.assertEqual(trials["explicit_candidate"]["selected_tool_ids"], [tool_id])
+        self.assertEqual(trials["candidate_with_adjacent_options"]["selected_tool_ids"], [tool_id])
+        self.assertEqual(
+            card["source_refs"],
+            [ref for ref in card["source_refs"] if ref["path"].startswith("ignition/")],
+        )
+
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         candidate_document = json.loads(

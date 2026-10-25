@@ -4541,6 +4541,217 @@
           "Remove this optional candidate card, implementation, schema, fixtures, tests, documentation and evidence; regenerate identity-card and toolbox projections; preserve prior commits and external source/evidence receipts for historical reproduction."
         ]
       }
+    },
+    {
+      "tool_id": "maintenance.preflight_producer_consumer_semantics",
+      "display_name": {
+        "zh": "生产者—消费者语义预检器",
+        "en": "Producer-Consumer Semantic Preflight"
+      },
+      "description": "Statically inspect one bounded caller-supplied Python consumer function for direct constant re.search checks and compare them with caller-supplied producer text; never import or execute the consumer.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_producer_consumer_semantic_preflight.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/LICENSES/active/BUSL-1.1.md",
+          "role": "CURRENT_EXECUTABLE_CODE_LICENSE"
+        },
+        {
+          "path": "ignition/LICENSES/README.md",
+          "role": "CURRENT_LICENSE_SCOPE_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-producer-consumer-semantic-c1-evidence-r0.json",
+          "role": "C1_COMPARISON_AND_RETIREMENT_DISPOSITION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-producer-consumer-semantic-real-task-r0.json",
+          "role": "PINNED_REAL_TASK_SOURCE_BINDINGS_AND_STATIC_OUTCOME"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-producer-consumer-semantic-route-profile-r0.json",
+          "role": "FROZEN_TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-producer-consumer-semantic-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/docs/operations/producer-consumer-semantic-preflight.md",
+          "role": "USER_SCOPE_LIMITS_AND_INVOCATION_GUIDE"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-producer-consumer-semantic-input-r0.schema.json",
+          "role": "STRICT_BOUNDED_INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-producer-consumer-semantic-output-r0.schema.json",
+          "role": "BOUNDED_OUTPUT_SCHEMA_AND_CLAIM_FLAGS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_CARD_AND_C1_ASSERTIONS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_producer_consumer_semantic_preflight.py",
+          "role": "FOCUSED_FUNCTIONAL_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_TESTS"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_COVERAGE_FIRST_READ_ONLY_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tools/toolbox_agent_episode_binding.py",
+          "role": "ADJACENT_DIFFERENT_SCOPE_C1_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+          "role": "BOUNDED_STATIC_ANALYZER_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/tools/toolbox_verify_handoff_artifact_files.py",
+          "role": "ADJACENT_DIFFERENT_SCOPE_C1_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_agent_episode_binding.py",
+          "role": "ADJACENT_AGENT_PLAN_TOOL_TEST_REFERENCE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py",
+          "role": "ADJACENT_RECEIPT_BYTE_TOOL_TEST_REFERENCE"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/toolbox-producer-consumer-semantic-input-r0.schema.json"
+      ],
+      "good_for": [
+        "Checking whether a bounded producer text contains the direct constant regex records required by one supported consumer function.",
+        "Distinguishing missing, case-variant, malformed or reordered, duplicate, and contradictory required records without returning raw captured field values.",
+        "Producing a local diagnostic before a separately authorized runtime acceptance check when the consumer uses the narrowly supported direct re.search subset."
+      ],
+      "not_for": [
+        "Authenticating the caller, source repository, Git revision, expected digest, or producer provenance.",
+        "Proving the complete consumer accepts the producer, that producer and consumer are semantically equivalent, or that any task or scientific claim is correct.",
+        "Evaluating dynamic regex construction, arbitrary transformations, nested parser logic, arbitrary Python semantics, or runtime side effects.",
+        "Editing a producer, changing a frozen handoff, importing or executing an old consumer, or restarting an experiment."
+      ],
+      "only_if": [
+        "The caller provides one UTF-8 JSON input object within the 262144-byte cap, with consumer source up to 131072 UTF-8 bytes and producer text up to 65536 UTF-8 bytes.",
+        "The caller-supplied expected SHA-256 values bind the exact strings supplied in the same input; they are digests, not authenticated provenance.",
+        "The selected function uses only direct constant re.search(pattern, text_name) calls over a direct string argument or a single UTF-8 decode, with all result variables jointly guarded by a simple fail-closed raise."
+      ],
+      "counterindicated_when": [
+        "Actual runtime acceptance, full parser behavior, arbitrary control flow, or semantic interpretation must be tested.",
+        "Patterns are dynamic, transformed, nested, unsupported by the bounded regex subset, or not jointly fail-closed.",
+        "The decision requires authenticated provenance, permission enforcement, scientific review, external truth, or publication approval."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object containing a Python consumer source excerpt, function name, expected SHA-256, producer text, and its expected SHA-256; stdin is capped at 262144 bytes."
+      ],
+      "output_types": [
+        "One bounded deterministic JSON result with source digest bindings, per-pattern and field match statuses/counts/digests, redacted captures, and all non-execution/non-authentication claim flags false."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_STDIN_AND_LOCAL_INPUT_SCHEMA",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/schemas/operations/toolbox-producer-consumer-semantic-input-r0.schema.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads bounded JSON from stdin and the local input schema; writes one bounded JSON result to stdout only."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9",
+        "jsonschema >=4.18 with Draft 2020-12 support."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No CPU, memory, latency, or cash-cost measurements against an equivalent implementation have been collected."
+      },
+      "alternatives": [
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool checks caller-declared multi-agent plan roles, context, feedback, write domains, and dependency DAGs; this tool checks static producer text against a source-level consumer pattern contract."
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool hashes current local receipt-referenced artifact bytes; this tool analyzes caller-supplied consumer and producer text and does not authenticate or read those source artifacts."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "The frozen real task produced a repeatable static mismatch observation, but the inspected adjacent tools accept different typed inputs and outputs. No matched same-task implementation, comparative quality score, broad reliability result, or cost measurement exists.",
+        "compared_tool_ids": [
+          "collaboration.validate_agent_episode_binding",
+          "collaboration.verify_handoff_artifact_files"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-producer-consumer-semantic-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-producer-consumer-semantic-real-task-r0.json",
+          "ignition/tests/test_toolbox_agent_episode_binding.py",
+          "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py"
+        ],
+        "findings": [
+          "The agent-plan validator checks a different declared object and does not evaluate a producer-consumer text contract.",
+          "The receipt byte verifier compares local artifact bytes to receipt hashes and does not evaluate parser patterns or field relationships.",
+          "Two invocations on the same pinned task input returned the same mismatch classification; this establishes repeatability for that input only.",
+          "No evidence supports replacement, retirement, globally unique scope, comparative quality, or lower cost; keep this tool optional and preserve COMPARISON_UNKNOWN."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "New optional default-off candidate; inspected neighboring tools have different input contracts and no matched task evidence supports retiring or replacing any component."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry operation or existing tool is migrated. Keep runtime consumer checks and receipt-byte verification in their existing scopes; use this candidate only for a static preflight when its supported source pattern applies."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, source wrapper, schemas, documentation, tests, and task evidence from the isolated branch; regenerate the identity-card and toolbox projections while retaining the prior source commit and external evidence references."
+        ]
+      },
+      "fallback": "If source shape or regex syntax is unsupported, report NOT_EVALUABLE and inspect the pinned consumer and producer manually. If a required pattern mismatches, preserve the mismatch and seek a separately authorized reviewed runtime test; do not edit or rerun frozen artifacts.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_producer_consumer_semantic_preflight.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "A known frozen task with matching source digests yields M2 PRESENT and P2 MALFORMED_OR_REORDERED, with the missing focused_repair_checker_pass field reported ABSENT and no raw captured values returned.",
+          "Missing, case-variant, malformed or reordered, identical duplicate, and conflicting duplicate records are not treated as a pass.",
+          "Dynamic regex patterns, nested consumer code, invalid Unicode surrogates, duplicate JSON keys, oversized input, and caller digest mismatch fail closed or return NOT_EVALUABLE.",
+          "The consumer source is parsed as AST but never imported or executed; route selection remains default-off and never sets execution_authorized=true."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only include through an explicit experimental-tool allowlist for a task that needs static comparison of bounded producer text against direct constant consumer regex checks.",
+        "A route proposal does not invoke the tool; the actual read-only invocation still requires the task request and exact caller-supplied input.",
+        "Do not use the result as proof of full consumer acceptance, source authenticity, semantic equivalence, scientific truth, or authorization."
+      ],
+      "claim_ceiling": "Static match status for a bounded supported subset of source-level constant regex checks against caller-supplied text, plus hashes of the supplied strings and captured values. No consumer code execution, full runtime acceptance, semantic equivalence, source provenance, external truth, scientific validity, or execution authorization is established."
     }
   ]
 }
