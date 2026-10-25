@@ -21,14 +21,22 @@ class ToolboxIdentityCardTests(unittest.TestCase):
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 8)
-        self.assertEqual(document["card_count"], 28)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 9)
+        self.assertEqual(document["card_count"], 29)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
         self.assertTrue(all(card["availability"] == "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE" for card in current))
         self.assertTrue(all(card["router_selectable_by_default"] is False for card in candidates))
-        self.assertTrue(all(card["permissions"]["network"] is False for card in candidates))
+        crossref = next(card for card in candidates if card["tool_id"] == "research.verify_crossref_metadata")
+        self.assertTrue(all(card["permissions"]["network"] is (card["tool_id"] == crossref["tool_id"]) for card in candidates))
+        self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
+        self.assertEqual(crossref["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
+        self.assertIn("--allow-public-network", crossref["entrypoint"])
+        self.assertFalse(crossref["router_selectable_by_default"])
+        self.assertEqual(crossref["evidence_level"], "REAL_TOOL_TEST")
+        self.assertEqual(crossref["estimated_cost"]["status"], "UNKNOWN")
+        self.assertIn("article full text", " ".join(crossref["not_for"]))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
         self.assertTrue(all(card["dependencies"] for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
@@ -70,6 +78,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(evidence["permissions"]["write_paths"], [])
         self.assertFalse(evidence["permissions"]["network"])
         self.assertIn("no source authenticity", evidence["claim_ceiling"])
+        planner_card = next(card for card in candidates if card["tool_id"] == "ignition.adaptive_toolbox_route_planner")
+        self.assertIn("allowed_network_hosts", " ".join(planner_card["accepted_input_types"]))
+        self.assertIn("authorization", planner_card["claim_ceiling"])
 
     def test_candidate_catalog_schema_and_source_pin_are_valid(self) -> None:
         validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"
@@ -83,6 +94,19 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         schema = json.loads((IGNITION_ROOT / "schemas/operations/toolbox-candidate-cards-r0.schema.json").read_text(encoding="utf-8"))
         catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
         catalog["candidates"][0]["dependencies"].append("ignition/../../outside.py")
+        self.assertFalse(Draft202012Validator(schema).is_valid(catalog))
+
+    def test_network_candidate_requires_a_bounded_exact_host(self) -> None:
+        schema = json.loads((IGNITION_ROOT / "schemas/operations/toolbox-candidate-cards-r0.schema.json").read_text(encoding="utf-8"))
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        crossref = next(row for row in catalog["candidates"] if row["tool_id"] == "research.verify_crossref_metadata")
+        crossref["permissions"].pop("network_hosts")
+        self.assertFalse(Draft202012Validator(schema).is_valid(catalog))
+        crossref["permissions"]["network_hosts"] = ["*.crossref.org"]
+        self.assertFalse(Draft202012Validator(schema).is_valid(catalog))
+        crossref["permissions"]["network_hosts"] = ["127.0.0.1"]
+        self.assertFalse(Draft202012Validator(schema).is_valid(catalog))
+        crossref["permissions"]["network_hosts"] = [f"host-{index}.example.org" for index in range(17)]
         self.assertFalse(Draft202012Validator(schema).is_valid(catalog))
 
 

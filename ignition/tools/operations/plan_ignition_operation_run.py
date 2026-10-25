@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -46,6 +47,8 @@ LIFECYCLE_STAGES = (
     "RENDER_RESULT",
     "STOP / HANDOFF",
 )
+NETWORK_HOST_RE = re.compile(r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\Z")
+MAX_NETWORK_HOSTS = 16
 STATUS_DECISIONS = {
     "CURRENT": ("PROCEED", None),
     "CURRENT_BOUNDED": ("PROCEED_BOUNDED", None),
@@ -83,6 +86,16 @@ def route_source_path_is_safe(relative_path: str) -> bool:
     return True
 
 
+def route_network_host_is_safe(host: str) -> bool:
+    """Accept one exact lowercase DNS host; reject URLs, ports, IPs, and wildcards."""
+    return (
+        isinstance(host, str)
+        and len(host) <= 253
+        and NETWORK_HOST_RE.fullmatch(host) is not None
+        and any(char.isalpha() for char in host)
+    )
+
+
 class RunPlanningError(ValueError):
     """Raised when a run plan request is structurally invalid."""
 
@@ -106,8 +119,9 @@ def plan_tool_route(task_profile: dict[str, Any], *, include_experimental_tool_i
     authority. Selection is coverage-first and does not claim a global optimum.
     """
     expected_keys = {"task_id", "current_ref", "input_types", "required_outputs", "allowed_execution_modes"}
-    if not isinstance(task_profile, dict) or set(task_profile) != expected_keys:
-        raise RunPlanningError(f"task profile keys must be exactly {sorted(expected_keys)}")
+    extended_keys = expected_keys | {"allowed_network_hosts"}
+    if not isinstance(task_profile, dict) or set(task_profile) not in (expected_keys, extended_keys):
+        raise RunPlanningError(f"task profile keys must be exactly {sorted(expected_keys)} with optional allowed_network_hosts")
     for field in ("task_id", "current_ref"):
         if not isinstance(task_profile[field], str) or not task_profile[field].strip():
             raise RunPlanningError(f"{field} must be a nonblank string")
@@ -116,6 +130,13 @@ def plan_tool_route(task_profile: dict[str, Any], *, include_experimental_tool_i
     allowed_modes = set(_route_strings(task_profile["allowed_execution_modes"], "allowed_execution_modes"))
     if not allowed_modes <= ROUTE_MODES:
         raise RunPlanningError("allowed_execution_modes contains an unknown mode")
+    allowed_network_hosts = _route_strings(
+        task_profile.get("allowed_network_hosts", []), "allowed_network_hosts", nonempty=False,
+    )
+    if len(allowed_network_hosts) > MAX_NETWORK_HOSTS:
+        raise RunPlanningError(f"allowed_network_hosts must contain no more than {MAX_NETWORK_HOSTS} entries")
+    if any(not route_network_host_is_safe(host) for host in allowed_network_hosts):
+        raise RunPlanningError("allowed_network_hosts must contain exact lowercase DNS names without schemes, ports, IPs, or wildcards")
     include_ids = _route_strings(include_experimental_tool_ids or [], "include_experimental_tool_ids", nonempty=False)
 
     registry_bytes = REGISTRY_PATH.read_bytes()
@@ -228,17 +249,29 @@ def plan_tool_route(task_profile: dict[str, Any], *, include_experimental_tool_i
         if any(not isinstance(permissions[key], list) or any(not isinstance(path, str) or not route_source_path_is_safe(path) for path in permissions[key]) for key in ("read_paths", "write_paths")):
             rejected.append({"tool_id": tool_id, "reason": "PERMISSION_PATH_UNAVAILABLE_OR_UNSAFE"})
             continue
+        network_hosts = permissions.get("network_hosts", [])
+        if not isinstance(network_hosts, list) or len(network_hosts) > MAX_NETWORK_HOSTS or any(not route_network_host_is_safe(host) for host in network_hosts):
+            rejected.append({"tool_id": tool_id, "reason": "PERMISSION_NETWORK_HOSTS_INVALID"})
+            continue
+        if permissions["network"] is not True and network_hosts:
+            rejected.append({"tool_id": tool_id, "reason": "PERMISSION_NETWORK_HOSTS_CONFLICT"})
+            continue
+        if permissions["network"] is True and not network_hosts:
+            rejected.append({"tool_id": tool_id, "reason": "PERMISSION_NETWORK_HOSTS_MISSING"})
+            continue
         if type(card.get("explicit_owner_authorization_required")) is not bool:
             rejected.append({"tool_id": tool_id, "reason": "OWNER_AUTHORIZATION_CARD_MISSING"})
             continue
         if card["execution_mode"] == "READ_ONLY_RUN" and any((
             bool(permissions.get("write_paths")),
-            permissions.get("network") is not False,
             permissions.get("secrets") is not False,
             permissions.get("billing") is not False,
             permissions.get("external_actions") is not False,
         )):
             rejected.append({"tool_id": tool_id, "reason": "READ_ONLY_PERMISSION_CONFLICT"})
+            continue
+        if permissions["network"] is True and not set(network_hosts) <= set(allowed_network_hosts):
+            rejected.append({"tool_id": tool_id, "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"})
             continue
         accepted = _route_strings(card.get("accepted_input_types"), f"{tool_id}.accepted_input_types")
         outputs = _route_strings(card.get("output_types"), f"{tool_id}.output_types")
@@ -307,6 +340,8 @@ def plan_tool_route(task_profile: dict[str, Any], *, include_experimental_tool_i
         "task_id": task_profile["task_id"],
         "current_ref": task_profile["current_ref"],
         "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": allowed_network_hosts,
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER" if allowed_network_hosts else "NO_NETWORK_HOSTS_ALLOWED",
         "decision": decision,
         "selected_tools": selected,
         "required_outputs": required_outputs,
@@ -317,7 +352,7 @@ def plan_tool_route(task_profile: dict[str, Any], *, include_experimental_tool_i
         "cost_estimate": {"status": "UNKNOWN", "reason": "No comparable measured cost data is declared for the candidate operations."},
         "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
         "execution_authorized": False,
-        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref is echoed but not resolved; no tool invocation, result quality, permission, Owner approval, scientific validity or Current promotion is established.",
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
             "current_registry_git_blob_sha1": registry_blob,
             "experimental_candidate_catalog_git_blob_sha1": candidate_blob,

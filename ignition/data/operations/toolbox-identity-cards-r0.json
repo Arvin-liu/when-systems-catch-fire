@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
-    "candidate_count": 8
+    "blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+    "candidate_count": 9
   },
   "cards": [
     {
@@ -376,7 +376,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -509,7 +509,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -777,7 +777,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -787,7 +787,7 @@
         "zh": "点火工具组合路由预览",
         "en": "Ignition toolbox route preview"
       },
-      "description": "Select a sufficient set of registered operations for exact input and output requirements, optionally considering explicitly allowlisted experimental cards.",
+      "description": "Select a sufficient set of registered operations for exact input and output requirements, optionally considering explicitly allowlisted experimental cards and exact caller-supplied network hosts.",
       "version": "0.1.0",
       "license": "BUSL-1.1",
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
@@ -818,17 +818,20 @@
       "good_for": [
         "Planning routes from explicit input types and required output types.",
         "Showing when a task needs one operation, complementary operations, or remains uncovered.",
-        "Keeping experimental tools opt-in and returning an explicit incomplete result when no declared route covers a requirement."
+        "Keeping experimental tools opt-in and returning an explicit incomplete result when no declared route covers a requirement.",
+        "Keeping fixed-host network candidates excluded unless the typed profile explicitly lists every exact required DNS host."
       ],
       "not_for": [
         "Inferring the task contract from unstructured natural language.",
         "Calling, dispatching, or executing selected operations.",
         "Granting permissions, Owner approval, or scientific authority.",
-        "Claiming measured cost optimality or a globally minimal set."
+        "Claiming measured cost optimality or a globally minimal set.",
+        "Authenticating the caller authority behind an allowed_network_hosts value or authorizing a network request."
       ],
       "only_if": [
         "The caller supplies exact input types, required outputs, allowed modes, and a nonblank Current reference string; the planner echoes that string without resolving it.",
-        "The operation registry and pinned experimental candidate-card source are present."
+        "The operation registry and pinned experimental candidate-card source are present.",
+        "Optional allowed_network_hosts entries are caller-supplied route context only and never grant authority; actual invocation and permissions are checked separately."
       ],
       "counterindicated_when": [
         "Task requirements cannot be expressed with the declared input/output types.",
@@ -836,12 +839,14 @@
         "The current operation registry no longer matches the candidate-card source pin."
       ],
       "accepted_input_types": [
-        "typed toolbox route profile on stdin"
+        "typed toolbox route profile on stdin",
+        "optional allowed_network_hosts exact DNS-name list; omitted means no network hosts allowed"
       ],
       "output_types": [
         "typed route proposal",
         "covered and unmet output list",
-        "candidate rejection reasons"
+        "candidate rejection reasons",
+        "caller-supplied network-host context and its unverified binding status"
       ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
@@ -891,9 +896,9 @@
         "Invoke only when a task explicitly needs an auditable operation-set proposal.",
         "A route proposal never authorizes invocation; each selected tool is separately checked at call time."
       ],
-      "claim_ceiling": "A deterministic proposal based on declared contracts only; completion quality, measured cost, invocation, permission, Owner approval, and scientific validity remain unverified.",
+      "claim_ceiling": "A deterministic proposal based on declared contracts and caller-supplied exact host strings only; host authorization, measured cost optimality, tool invocation, permission, Owner approval, and scientific validity remain unverified.",
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
-      "source_blob_sha1": "a329c8e438429bffad0daa33dbe7525e54831f67",
+      "source_blob_sha1": "d7881daae28a3d82612ceadb78d77bcd879bfe83",
       "source_refs_with_hashes": [
         {
           "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
@@ -903,7 +908,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "616f5642851e5cabe6ba75848415107439cb5c8b"
+          "sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -912,7 +917,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1172,7 +1177,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2504,7 +2509,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2605,6 +2610,156 @@
         "claim_ceiling": "REOS LIGHT structural validation only; no truth, external validity or publication status."
       },
       "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "research.verify_crossref_metadata",
+      "display_name": {
+        "zh": "Crossref 元数据核验器",
+        "en": "Crossref metadata verifier"
+      },
+      "description": "Compare up to ten caller-supplied DOI title/year expectations against live Crossref bibliographic metadata using bounded fixed-host HTTPS GET requests.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; Crossref bibliographic metadata reuse basis documented at https://www.crossref.org/documentation/retrieve-metadata/.",
+      "maintainer": "Ignition repository maintainers; Task 103 Crossref pilot supplies reused normalization helpers, not Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "role": "BOUNDED_FIXED_HOST_CLI"
+        },
+        {
+          "path": "ignition/evidence-program/tools/run_crossref_verification.py",
+          "role": "TASK103_METADATA_NORMALIZATION_HELPERS"
+        },
+        {
+          "path": "ignition/evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.prereg.json",
+          "role": "FROZEN_METADATA_COMPARISON_PROTOCOL"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
+          "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        }
+      ],
+      "dependencies": [
+        "ignition/evidence-program/tools/run_crossref_verification.py"
+      ],
+      "good_for": [
+        "Comparing caller-supplied expected DOI title and year with the live Crossref metadata record.",
+        "Retaining per-record HTTP outcome, response SHA-256, observed fields, and explicit mismatch or network-failure status.",
+        "Checking public bibliographic metadata for a bounded batch without retrieving article content."
+      ],
+      "not_for": [
+        "Retrieving article full text, abstracts, publisher pages, or arbitrary URLs.",
+        "Establishing that a paper is authentic, scientifically correct, or supports a claim.",
+        "Treating missing or stale Crossref fields as proof that a source does not exist.",
+        "Adding or correcting records in a repository registry."
+      ],
+      "only_if": [
+        "The caller has explicitly approved transmission of the DOI identifiers in this invocation and passes --allow-public-network.",
+        "A route proposal may include this candidate only when allowed_network_hosts explicitly contains api.crossref.org; the proposal is not a permission grant.",
+        "The request contains one to ten unique bare DOI identifiers with caller-supplied expected title and year.",
+        "The public Crossref REST API is reachable from the declared environment."
+      ],
+      "counterindicated_when": [
+        "The DOI or associated task context is confidential or must not be sent to a public service.",
+        "Network access is unavailable, disallowed, or not explicitly approved for this invocation.",
+        "The task requires article-content review, source authenticity, current retraction adjudication, or scientific assessment."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"
+      ],
+      "output_types": [
+        "input-ordered Crossref metadata comparison rows",
+        "per-response SHA-256 and explicit HTTP or network outcome summary"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/evidence-program/tools/run_crossref_verification.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.crossref.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked with --allow-public-network, sends at most ten HTTPS GET requests to api.crossref.org with DOI identifiers only; no user title, source_id, credential, or arbitrary URL is transmitted.",
+        "Writes the JSON result to stdout and validation errors to stderr; does not create or modify repository files.",
+        "Follows no redirects; uses a 5-second socket inactivity timeout, checks a 7-second response-body budget between and after 8 KiB reads, and caps responses at 256 KiB; records timeout, size, HTTP, and malformed-response failures explicitly."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "Task103 Crossref helper source in the same checkout"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Crossref documents public REST access without signup. The wrapper permits at most ten serial requests, applies a 5-second socket timeout and a 7-second body-read budget with bounded chunks; no comparable latency, bandwidth, service-availability, or compute-cost profile has been measured."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The local validator checks the Evidence Program structure and recorded provenance but does not retrieve current Crossref metadata."
+        }
+      ],
+      "fallback": "If live network use is not approved or fails, retain the explicit NOT_RUN or acquisition failure and use a pinned historical Crossref source manifest only as historical evidence; never label it a live re-check.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_crossref_metadata_verifier.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network makes no request and emits no result.",
+          "Reject URLs, malformed or duplicate DOI rows, duplicate JSON keys, and batches above ten before network access.",
+          "Only api.crossref.org is contacted; redirects, non-JSON, oversized responses, 404, timeout, and malformed JSON are explicit outcomes.",
+          "No repository files are written and network failures are not silently dropped."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the candidate ID is explicitly allowlisted and the typed route profile explicitly lists api.crossref.org in allowed_network_hosts.",
+        "A route proposal has execution_authorized=false and does not validate the caller authority behind that host list.",
+        "Every actual CLI invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers."
+      ],
+      "claim_ceiling": "Live Crossref bibliographic metadata retrieval and normalized title/year comparison only; response hashes bind received bytes, not source authenticity, article contents, scientific truth, or a complete retraction check.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "803e4666c00df462207d52db4495f9ca31cad0ac",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "803e4666c00df462207d52db4495f9ca31cad0ac"
+        },
+        {
+          "path": "ignition/evidence-program/tools/run_crossref_verification.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "14eb4b7cbc54edbb7e736517170bca43661eca10"
+        },
+        {
+          "path": "ignition/evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.prereg.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "63305f2f58f5609aca4aecfeff5ae37bde882cd5"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "4c4635430b4d147d965824beb13d409642aab8ca"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
     {
       "tool_id": "runtime.inspect_declared_pack_catalog",
@@ -2752,7 +2907,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2899,7 +3054,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3236,6 +3391,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 28,
+  "card_count": 29,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }

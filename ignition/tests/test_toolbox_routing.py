@@ -13,14 +13,17 @@ sys.path.insert(0, str(IGNITION_ROOT / "tools/operations"))
 import plan_ignition_operation_run as planner  # noqa: E402
 
 
-def profile(task_id: str, inputs: list[str], outputs: list[str]) -> dict:
-    return {
+def profile(task_id: str, inputs: list[str], outputs: list[str], *, allowed_network_hosts: list[str] | None = None) -> dict:
+    result = {
         "task_id": task_id,
         "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
         "input_types": inputs,
         "required_outputs": outputs,
         "allowed_execution_modes": ["READ_ONLY_RUN"],
     }
+    if allowed_network_hosts is not None:
+        result["allowed_network_hosts"] = allowed_network_hosts
+    return result
 
 
 class AdaptiveToolRouteTests(unittest.TestCase):
@@ -158,6 +161,51 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(included["execution_authorized"])
 
+    def test_network_candidate_requires_both_tool_allowlist_and_exact_host_allowance(self) -> None:
+        task = profile(
+            "live-crossref-metadata-comparison",
+            ["UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"],
+            ["input-ordered Crossref metadata comparison rows", "per-response SHA-256 and explicit HTTP or network outcome summary"],
+        )
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["allowed_network_hosts"], [])
+        self.assertEqual(default["network_authority_binding"], "NO_NETWORK_HOSTS_ALLOWED")
+
+        allowlisted_without_host = planner.plan_tool_route(
+            task, include_experimental_tool_ids=["research.verify_crossref_metadata"],
+        )
+        self.assertEqual(allowlisted_without_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": "research.verify_crossref_metadata", "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            allowlisted_without_host["rejected_candidates"],
+        )
+
+        permitted_host = planner.plan_tool_route(
+            profile(
+                "live-crossref-metadata-comparison",
+                task["input_types"], task["required_outputs"],
+                allowed_network_hosts=["api.crossref.org"],
+            ),
+            include_experimental_tool_ids=["research.verify_crossref_metadata"],
+        )
+        self.assertEqual(permitted_host["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in permitted_host["selected_tools"]], ["research.verify_crossref_metadata"])
+        self.assertEqual(permitted_host["selected_tools"][0]["permissions"]["network_hosts"], ["api.crossref.org"])
+        self.assertEqual(permitted_host["network_authority_binding"], "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER")
+        self.assertFalse(permitted_host["execution_authorized"])
+
+    def test_network_route_rejects_wildcards_urls_and_ports(self) -> None:
+        task = profile("invalid-network-route", ["x"], ["y"], allowed_network_hosts=["*.crossref.org"])
+        with self.assertRaises(planner.RunPlanningError):
+            planner.plan_tool_route(task)
+        for invalid in ("https://api.crossref.org", "api.crossref.org:443", "127.0.0.1"):
+            with self.subTest(invalid=invalid), self.assertRaises(planner.RunPlanningError):
+                planner.plan_tool_route(profile("invalid-host", ["x"], ["y"], allowed_network_hosts=[invalid]))
+        too_many = [f"host-{index}.example.org" for index in range(planner.MAX_NETWORK_HOSTS + 1)]
+        with self.assertRaisesRegex(planner.RunPlanningError, "no more than"):
+            planner.plan_tool_route(profile("too-many-hosts", ["x"], ["y"], allowed_network_hosts=too_many))
+
     def test_evidence_program_validator_stays_out_of_router_without_git_metadata_path_support(self) -> None:
         task = profile(
             "fixed-evidence-program-validation",
@@ -205,10 +253,11 @@ class AdaptiveToolRouteTests(unittest.TestCase):
                         include_experimental_tool_ids=["knowledge.cluster_source_brief"],
                     )
 
-    def test_read_only_route_rejects_candidate_with_network_permission(self) -> None:
+    def test_read_only_network_route_rejects_host_without_explicit_allowance(self) -> None:
         registry_bytes = planner.REGISTRY_PATH.read_bytes()
         candidates = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
         candidates["candidates"][0]["permissions"]["network"] = True
+        candidates["candidates"][0]["permissions"]["network_hosts"] = ["example.org"]
         with tempfile.TemporaryDirectory() as tmp:
             registry_path = Path(tmp) / "registry.json"
             candidates_path = Path(tmp) / "candidates.json"
@@ -221,7 +270,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
                 )
         self.assertEqual(result["decision"], "INCOMPLETE")
         self.assertIn(
-            {"tool_id": "knowledge.cluster_source_brief", "reason": "READ_ONLY_PERMISSION_CONFLICT"},
+            {"tool_id": "knowledge.cluster_source_brief", "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
             result["rejected_candidates"],
         )
 

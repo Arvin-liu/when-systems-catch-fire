@@ -233,6 +233,7 @@ def render_human(document: dict[str, Any]) -> str:
             for row in card["alternatives"]
         ) or "none mapped"
         source_refs = ", ".join(f"`{row['path']}` ({row['role']})" for row in card["source_refs"])
+        network_hosts = ", ".join(card["permissions"].get("network_hosts", [])) or "none"
         lines.extend([
             f"### `{card['tool_id']}` · {card['display_name']['zh']} / {card['display_name']['en']}",
             "",
@@ -243,7 +244,7 @@ def render_human(document: dict[str, Any]) -> str:
             f"- Use only if: {'; '.join(card['only_if'])}",
             f"- Do not use when: {'; '.join(card['counterindicated_when'])}",
             f"- Inputs → outputs: {', '.join(card['accepted_input_types'])} → {', '.join(card['output_types'])}",
-            f"- Permissions: `{card['execution_mode']}` / `{card['permission_mode']}` · explicit Owner authorization required `{str(card['explicit_owner_authorization_required']).lower()}` · reads `{', '.join(card['permissions']['read_paths']) or 'none'}` · writes `{', '.join(card['permissions']['write_paths']) or 'none'}` · network `{str(card['permissions']['network']).lower()}` · secrets `{str(card['permissions']['secrets']).lower()}` · billing `{str(card['permissions']['billing']).lower()}` · external actions `{str(card['permissions']['external_actions']).lower()}.",
+            f"- Permissions: `{card['execution_mode']}` / `{card['permission_mode']}` · explicit Owner authorization required `{str(card['explicit_owner_authorization_required']).lower()}` · reads `{', '.join(card['permissions']['read_paths']) or 'none'}` · writes `{', '.join(card['permissions']['write_paths']) or 'none'}` · network `{str(card['permissions']['network']).lower()}` hosts `{network_hosts}` · secrets `{str(card['permissions']['secrets']).lower()}` · billing `{str(card['permissions']['billing']).lower()}` · external actions `{str(card['permissions']['external_actions']).lower()}.",
             f"- Side effects: {', '.join(card['side_effects']) or 'none declared'}.",
             f"- Dependencies: {', '.join(card['dependencies']) or 'none declared'}; runtime dependencies: {', '.join(card['runtime_dependencies']) or 'none declared'}.",
             f"- Cost: `{card['estimated_cost']['status']}` · {card['estimated_cost']['basis']}",

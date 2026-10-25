@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import sys
 
 from jsonschema import Draft202012Validator
@@ -15,6 +16,7 @@ from jsonschema import Draft202012Validator
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[2]
 REPO_ROOT = ROOT.parent
+NETWORK_HOST_RE = re.compile(r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\Z")
 CATALOG = ROOT / "data/operations/toolbox-candidate-cards-r0.json"
 SCHEMA = ROOT / "schemas/operations/toolbox-candidate-cards-r0.schema.json"
 REGISTRY = ROOT / "data/operations/ignition-operation-capability-registry-r1.json"
@@ -61,8 +63,15 @@ def validate() -> list[str]:
                 errors.append(f"{card['tool_id']}: focused check is missing or is a symlink: {check}")
         if card["execution_mode"] == "READ_ONLY_RUN":
             permissions = card["permissions"]
-            if permissions["write_paths"] or permissions["network"] or permissions["secrets"] or permissions["billing"] or permissions["external_actions"]:
-                errors.append(f"{card['tool_id']}: READ_ONLY_RUN candidate declares a write or external effect")
+            if permissions["write_paths"] or permissions["secrets"] or permissions["billing"] or permissions["external_actions"]:
+                errors.append(f"{card['tool_id']}: READ_ONLY_RUN candidate declares a write, secret, billing, or external-action effect")
+        network_hosts = card["permissions"].get("network_hosts", [])
+        if any(not isinstance(host, str) or len(host) > 253 or not NETWORK_HOST_RE.fullmatch(host) or not any(char.isalpha() for char in host) for host in network_hosts):
+            errors.append(f"{card['tool_id']}: network hosts must be exact lowercase DNS names without schemes or wildcards")
+        if card["permissions"]["network"] and not network_hosts:
+            errors.append(f"{card['tool_id']}: network permission requires at least one exact network host")
+        if not card["permissions"]["network"] and network_hosts:
+            errors.append(f"{card['tool_id']}: network hosts are declared while network permission is false")
         if card["permissions"]["external_actions"] and not card["explicit_owner_authorization_required"]:
             errors.append(f"{card['tool_id']}: external-action candidate must require explicit Owner authorization")
         if card["availability"] != "EXPERIMENTAL_AVAILABLE" or card["router_selectable_by_default"]:

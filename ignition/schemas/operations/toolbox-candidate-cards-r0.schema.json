@@ -66,8 +66,25 @@
           "properties": {
             "read_paths": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
             "write_paths": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
+            "network_hosts": {
+              "type": "array", "maxItems": 16, "uniqueItems": true,
+              "items": {
+                "type": "string", "maxLength": 253,
+                "pattern": "^(?=.*[a-z])(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$"
+              }
+            },
             "network": {"type": "boolean"}, "secrets": {"type": "boolean"}, "billing": {"type": "boolean"}, "external_actions": {"type": "boolean"}
-          }
+          },
+          "allOf": [
+            {
+              "if": {"properties": {"network": {"const": true}}, "required": ["network"]},
+              "then": {"required": ["network_hosts"], "properties": {"network_hosts": {"minItems": 1}}}
+            },
+            {
+              "if": {"properties": {"network": {"const": false}}, "required": ["network"]},
+              "then": {"properties": {"network_hosts": {"maxItems": 0}}}
+            }
+          ]
         },
         "side_effects": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
         "runtime_dependencies": {"$ref": "#/$defs/stringList"},
