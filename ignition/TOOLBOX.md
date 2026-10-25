@@ -5,7 +5,7 @@
 > Current operation entries are registered capabilities; the registry does not prove that every entry is a standalone executable in this environment. Experimental tools are opt-in and default off.
 
 Current operation registry: 20 entries · `blob 21fe1bfcdb0d9762edd60339aca14f1040393fc7`.
-Optional experimental tools: 3 · `blob 01158fa2b086f216b6b1129122be4b04b611bc8a`.
+Optional experimental tools: 4 · `blob 7d7cdd2ee1cd03c71891dc944e46fb7a25d99d1e`.
 
 Machine-readable cards: [toolbox-identity-cards-r0.json](data/operations/toolbox-identity-cards-r0.json).
 Current operation authority: [ignition-operation-capability-registry-r1.json](data/operations/ignition-operation-capability-registry-r1.json).
@@ -453,3 +453,23 @@ Current operation authority: [ignition-operation-capability-registry-r1.json](da
 - Evidence: `REAL_TOOL_TEST` · source refs `ignition/tools/toolbox_cluster_source_brief.py` (READ_ONLY_TOOL_ENTRYPOINT), `ignition/tools/extract_cluster_source_brief.py` (BRIEF_RENDERER_AND_RECEIPT_BUILDER), `ignition/analysis/corpus-relation/article_cluster_candidates.json` (CLUSTER_SNAPSHOT), `ignition/tools/build_corpus_relation_graph.py` (CARD_PARSER), `ignition/KNOWLEDGE/cards/` (GOVERNED_ASSET_CARD_CORPUS); focused checks [ignition/tests/test_cluster_source_brief_tool.py](tests/test_cluster_source_brief_tool.py); negative controls: Unknown cluster ID returns nonzero and emits no partial brief.; --stdout creates or overwrites no repository file..
 - Route default: `false` · conditions: Only include through an explicit experimental-tool allowlist for source-brief tasks.; Do not invoke after selection without the task's own user authorization and input..
 - Claim ceiling: A formatted projection of repository-local cluster metadata and asset-card fields only; no truth, proof, external evidence, article quality, acceptance, or publication status is inferred.
+
+### `runtime.inspect_declared_pack_catalog` · 声明式 Pack 能力目录检查器 / Declared Pack catalog inspector
+
+- State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repository maintainers; this field does not grant Owner or scientific authority.` · source blob `20a8685606421cc537284c2526eb18c35e759818`.
+- Can do: List or show versioned Pack manifest metadata and declared capability routes from the local checkout, with source hashes; it does not load Packs or execute hooks.
+- Good for: Discovering which Pack IDs and versions are declared in the checked-out repository.; Inspecting the object types, declared permissions, lifecycle policy, and capability routes of one Pack.; Checking manifest source hashes before planning a Pack-aware task.
+- Not for: Proving that a declared capability is executable or that its runtime dependencies are installed in another environment.; Loading or unloading a Pack, routing a domain action, or executing any action or planning hook.; Granting permission, Owner authority, truth, proof, or scientific acceptance.
+- Use only if: The task needs local Pack metadata discovery or one manifest's declared capability routes.; The checked-out ignition/packs directory contains non-symlink manifest files and the local Agent Runtime source is available.; The caller accepts declaration-only output and does not treat route metadata as runtime execution evidence.
+- Do not use when: The task requires executing a Pack hook, validating task data, or proving operational availability.; The task needs current information outside the local repository snapshot.; The requested Pack ID is missing or its manifest source is ambiguous.
+- Inputs → outputs: Pack metadata list request, local Pack ID → declared Pack metadata, declared capability route list, manifest and source-tree SHA-256 references
+- Permissions: `READ_ONLY_RUN` / `READ_ONLY_REPOSITORY_SNAPSHOT` · explicit Owner authorization required `false` · reads `ignition/packs/, ignition/agent_runtime/, ignition/agent_kernel/` · writes `none` · network `false` · secrets `false` · billing `false` · external actions `false.
+- Side effects: Writes JSON only to stdout or error text to stderr; does not load, activate, or execute any Pack hook and creates no repository files..
+- Dependencies: ignition/agent_runtime/, ignition/agent_kernel/, ignition/packs/; runtime dependencies: Python >=3.9 standard library.
+- Cost: `UNKNOWN` · The command imports the local Agent Runtime package and hashes its source trees; no latency or memory benchmark has been established.
+- Alternatives: `ignition.adaptive_toolbox_route_planner` (COMPLEMENTARY_NOT_EQUIVALENT): The route planner maps typed task requirements to registered operations; this tool inspects Pack manifest declarations and does not propose or execute a task route..
+- Invocation example: `python3 -B ignition/tools/toolbox_pack_registry_inspector.py list | show <pack_id>`
+- Fallback: Read ignition/TOOLBOX.md and the generated identity cards for the repository's static operation/candidate directory; if this inspector fails, report that local Pack metadata could not be read and do not infer that hooks ran.
+- Evidence: `REAL_TOOL_TEST` · source refs `ignition/tools/toolbox_pack_registry_inspector.py` (FIXED_READ_ONLY_CATALOG_ENTRYPOINT), `ignition/agent_runtime/` (PACK_REGISTRY_AND_PACKAGE_RUNTIME_SOURCE_TREE), `ignition/agent_kernel/` (PACK_REGISTRY_KERNEL_CONTRACT_DEPENDENCY_TREE), `ignition/packs/` (FOUR_LOCAL_PACK_MANIFESTS); focused checks [ignition/tests/test_toolbox_pack_registry_inspector.py](tests/test_toolbox_pack_registry_inspector.py), [ignition/tests/test_pack_registry.py](tests/test_pack_registry.py); negative controls: List and show do not call PackLoader.load/unload or execute action/planning hooks.; Unknown Pack IDs return nonzero without a partial JSON result.; Symlinked Pack directories or manifests and path traversal are rejected..
+- Route default: `false` · conditions: Include only through an explicit experimental-tool allowlist when local Pack capability discovery is a required task output.; The route proposal does not invoke this tool; the caller must separately authorize and provide the requested action and Pack ID.; Never select it to execute hooks or infer that declared routes are callable..
+- Claim ceiling: Local Pack manifest declarations and versioned capability-route metadata only; no Pack module is loaded, no hook is executed, and no declared capability is proved callable in another environment.

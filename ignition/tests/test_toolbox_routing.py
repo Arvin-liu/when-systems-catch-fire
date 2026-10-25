@@ -79,6 +79,25 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(included["execution_authorized"])
 
+    def test_pack_catalog_inspector_is_excluded_until_explicitly_allowlisted(self) -> None:
+        task = profile(
+            "declared-pack-capability-inspection",
+            ["Pack metadata list request"],
+            ["declared Pack metadata", "declared capability route list", "manifest and source-tree SHA-256 references"],
+        )
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["runtime.inspect_declared_pack_catalog"],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["runtime.inspect_declared_pack_catalog"],
+        )
+        self.assertFalse(included["execution_authorized"])
+
     def test_unknown_experimental_allowlist_id_is_reported(self) -> None:
         result = planner.plan_tool_route(
             profile("unknown-opt-in", ["article cluster ID"], ["source-backed cluster member brief"]),

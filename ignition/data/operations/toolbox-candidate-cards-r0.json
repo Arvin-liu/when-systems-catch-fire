@@ -295,6 +295,98 @@
         "Do not select when fuzzy matching, external freshness, scientific judgment, or automatic identity repair is required."
       ],
       "claim_ceiling": "Repository-snapshot canonical identity and migration resolution only; ambiguous and unresolved rows remain explicit; no fuzzy identity, truth, proof, evidence upgrade, or external validity is inferred."
+    },
+    {
+      "tool_id": "runtime.inspect_declared_pack_catalog",
+      "display_name": {
+        "zh": "声明式 Pack 能力目录检查器",
+        "en": "Declared Pack catalog inspector"
+      },
+      "description": "List or show versioned Pack manifest metadata and declared capability routes from the local checkout, with source hashes; it does not load Packs or execute hooks.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_pack_registry_inspector.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pack_registry_inspector.py list | show <pack_id>",
+      "source_refs": [
+        {"path": "ignition/tools/toolbox_pack_registry_inspector.py", "role": "FIXED_READ_ONLY_CATALOG_ENTRYPOINT"},
+        {"path": "ignition/agent_runtime/", "role": "PACK_REGISTRY_AND_PACKAGE_RUNTIME_SOURCE_TREE"},
+        {"path": "ignition/agent_kernel/", "role": "PACK_REGISTRY_KERNEL_CONTRACT_DEPENDENCY_TREE"},
+        {"path": "ignition/packs/", "role": "FOUR_LOCAL_PACK_MANIFESTS"}
+      ],
+      "dependencies": [
+        "ignition/agent_runtime/",
+        "ignition/agent_kernel/",
+        "ignition/packs/"
+      ],
+      "good_for": [
+        "Discovering which Pack IDs and versions are declared in the checked-out repository.",
+        "Inspecting the object types, declared permissions, lifecycle policy, and capability routes of one Pack.",
+        "Checking manifest source hashes before planning a Pack-aware task."
+      ],
+      "not_for": [
+        "Proving that a declared capability is executable or that its runtime dependencies are installed in another environment.",
+        "Loading or unloading a Pack, routing a domain action, or executing any action or planning hook.",
+        "Granting permission, Owner authority, truth, proof, or scientific acceptance."
+      ],
+      "only_if": [
+        "The task needs local Pack metadata discovery or one manifest's declared capability routes.",
+        "The checked-out ignition/packs directory contains non-symlink manifest files and the local Agent Runtime source is available.",
+        "The caller accepts declaration-only output and does not treat route metadata as runtime execution evidence."
+      ],
+      "counterindicated_when": [
+        "The task requires executing a Pack hook, validating task data, or proving operational availability.",
+        "The task needs current information outside the local repository snapshot.",
+        "The requested Pack ID is missing or its manifest source is ambiguous."
+      ],
+      "accepted_input_types": ["Pack metadata list request", "local Pack ID"],
+      "output_types": ["declared Pack metadata", "declared capability route list", "manifest and source-tree SHA-256 references"],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": ["ignition/packs/", "ignition/agent_runtime/", "ignition/agent_kernel/"],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": ["Writes JSON only to stdout or error text to stderr; does not load, activate, or execute any Pack hook and creates no repository files."],
+      "runtime_dependencies": ["Python >=3.9 standard library"],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The command imports the local Agent Runtime package and hashes its source trees; no latency or memory benchmark has been established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The route planner maps typed task requirements to registered operations; this tool inspects Pack manifest declarations and does not propose or execute a task route."
+        }
+      ],
+      "fallback": "Read ignition/TOOLBOX.md and the generated identity cards for the repository's static operation/candidate directory; if this inspector fails, report that local Pack metadata could not be read and do not infer that hooks ran.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_pack_registry_inspector.py",
+          "ignition/tests/test_pack_registry.py"
+        ],
+        "negative_controls": [
+          "List and show do not call PackLoader.load/unload or execute action/planning hooks.",
+          "Unknown Pack IDs return nonzero without a partial JSON result.",
+          "Symlinked Pack directories or manifests and path traversal are rejected."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Include only through an explicit experimental-tool allowlist when local Pack capability discovery is a required task output.",
+        "The route proposal does not invoke this tool; the caller must separately authorize and provide the requested action and Pack ID.",
+        "Never select it to execute hooks or infer that declared routes are callable."
+      ],
+      "claim_ceiling": "Local Pack manifest declarations and versioned capability-route metadata only; no Pack module is loaded, no hook is executed, and no declared capability is proved callable in another environment."
     }
   ]
 }

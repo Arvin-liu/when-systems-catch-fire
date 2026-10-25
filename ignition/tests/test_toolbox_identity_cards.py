@@ -21,8 +21,8 @@ class ToolboxIdentityCardTests(unittest.TestCase):
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 3)
-        self.assertEqual(document["card_count"], 23)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 4)
+        self.assertEqual(document["card_count"], 24)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
@@ -39,6 +39,12 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertIn("Python >=3.9 standard library", batch["runtime_dependencies"])
         self.assertIn("ambiguous", " ".join(batch["counterindicated_when"]).lower())
         self.assertTrue(any("legacy-mappings.jsonl" in path for path in batch["dependencies"]))
+        pack_catalog = next(card for card in candidates if card["tool_id"] == "runtime.inspect_declared_pack_catalog")
+        self.assertEqual(pack_catalog["execution_mode"], "READ_ONLY_RUN")
+        self.assertFalse(pack_catalog["permissions"]["network"])
+        self.assertEqual(pack_catalog["permissions"]["write_paths"], [])
+        self.assertIn("no Pack module is loaded", pack_catalog["claim_ceiling"])
+        self.assertIn("ignition/packs/", pack_catalog["dependencies"])
 
     def test_candidate_catalog_schema_and_source_pin_are_valid(self) -> None:
         validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"
