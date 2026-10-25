@@ -1,0 +1,243 @@
+{
+  "experiment_id": "maintenance.compare_actions_repeated_step_sequences.pr264_history",
+  "formal_state": {
+    "branch_protection_changed": false,
+    "formal_main_written": false,
+    "foundation_dispatched": false,
+    "required_checks_changed": false
+  },
+  "negative_control_results": {
+    "candidate_validator": "PASS candidates=16 current_registry_unchanged=true",
+    "git_diff_check": "PASS",
+    "identity_card_tests": "6/6 PASS",
+    "identity_projection": "PASS current_operations=20 experimental=16 cards=36",
+    "multi_run_unit_tests": "7/7 PASS",
+    "routing_tests": "26/26 PASS",
+    "single_run_compatibility_tests": "6/6 PASS",
+    "test_history": [
+      {
+        "cause": "The assertion expected the word avoidable, while the claim ceiling accurately said causal waste attribution. The assertion was aligned to the card wording and the module reran 6/6.",
+        "scope": "identity card assertion",
+        "status": "FAILED_THEN_CORRECTED"
+      }
+    ]
+  },
+  "observed_at_utc": "2026-10-25T07:17:05Z",
+  "routing_trials": [
+    {
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "scenario": "default_opt_out",
+      "selected_tool_ids": []
+    },
+    {
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "rejected_candidates": [
+        {
+          "reason": "NO_INPUT_TYPE_MATCH",
+          "tool_id": "maintenance.summarize_actions_step_timeline"
+        }
+      ],
+      "scenario": "explicit_batch_tool_opt_in",
+      "selected_tool_ids": [
+        "maintenance.compare_actions_repeated_step_sequences"
+      ]
+    }
+  ],
+  "run_sequence_outcomes": {
+    "conclusions": [
+      "failure",
+      "failure",
+      "success"
+    ],
+    "distinct_head_sha_count": 3,
+    "same_pr_and_base": true
+  },
+  "runs": [
+    {
+      "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "conclusion": "failure",
+      "event": "pull_request",
+      "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+      "job_count": 4,
+      "pull_request_number": 264,
+      "run_attempt": 1,
+      "run_id": 39889835854,
+      "run_started_at": "2026-10-23T02:29:23Z",
+      "status": "completed",
+      "step_count": 70,
+      "updated_at": "2026-10-23T04:18:29Z",
+      "workflow_id": 311987523,
+      "workflow_path": ".github/workflows/foundation-validation.yml"
+    },
+    {
+      "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "conclusion": "failure",
+      "event": "pull_request",
+      "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+      "job_count": 4,
+      "pull_request_number": 264,
+      "run_attempt": 1,
+      "run_id": 39899735096,
+      "run_started_at": "2026-10-23T04:19:47Z",
+      "status": "completed",
+      "step_count": 70,
+      "updated_at": "2026-10-23T06:11:58Z",
+      "workflow_id": 311987523,
+      "workflow_path": ".github/workflows/foundation-validation.yml"
+    },
+    {
+      "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+      "job_count": 4,
+      "pull_request_number": 264,
+      "run_attempt": 1,
+      "run_id": 39910840268,
+      "run_started_at": "2026-10-23T06:20:01Z",
+      "status": "completed",
+      "step_count": 70,
+      "updated_at": "2026-10-23T09:35:20Z",
+      "workflow_id": 311987523,
+      "workflow_path": ".github/workflows/foundation-validation.yml"
+    }
+  ],
+  "same_task_comparator": {
+    "finding": "The existing tool accepted the first run and rejected the other two because the completed skipped Final main SHA witness job had a one-second reversed interval. The batch analyzer preserves the original timestamps in an anomaly list, nulls only those two skipped-job intervals, and returns partial time coverage while grouping repeated steps. This is complementary robustness evidence, not a claim that the prior tool or CI work was generally inferior.",
+    "per_run_invocations": [
+      {
+        "exit_code": 0,
+        "input_ordinal": 1,
+        "job_count": 4,
+        "receipt_status": "COMPLETE_SNAPSHOT",
+        "run_id": 39889835854,
+        "step_count": 70
+      },
+      {
+        "exit_code": 2,
+        "input_ordinal": 2,
+        "run_id": 39899735096,
+        "stderr": "- jobs_response.jobs[3] completed before it started"
+      },
+      {
+        "exit_code": 2,
+        "input_ordinal": 3,
+        "run_id": 39910840268,
+        "stderr": "- jobs_response.jobs[3] completed before it started"
+      }
+    ],
+    "tool_id": "maintenance.summarize_actions_step_timeline"
+  },
+  "schema_version": "toolbox-actions-repeated-step-evidence-r0",
+  "source_acquisition": {
+    "api_resources": [
+      "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/runs/39889835854",
+      "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/runs/39899735096",
+      "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/runs/39910840268",
+      "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/runs/39889835854/jobs?per_page=100",
+      "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/runs/39899735096/jobs?per_page=100",
+      "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/runs/39910840268/jobs?per_page=100"
+    ],
+    "normalized_input_path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-three-runs-r0.json",
+    "normalized_input_sha256": "fabb5a2cd3f838a0325203e54747555f3c5308dabfbc207ce01f5a12f74e0c80",
+    "provider": "GitHub REST API through the connected read-only GitHub fetch tool",
+    "raw_responses_retained": false
+  },
+  "source_blueprint": {
+    "head_sha": "77d308ea132a4952d151cab1d81f9f9c9f44f55c",
+    "paths": [
+      "governance/IGNITION-FOUNDATION-VALIDATION-ECONOMICS-AND-CAUSAL-TRIGGERS-R0.md",
+      "sources/HARNESSPRO-RSI-PARETO-AGENT-HARNESS-DELTA-R0.md"
+    ],
+    "pull_request": 85,
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "url": "https://github.com/Arvin-liu/ignition-architecture-workbench/pull/85"
+  },
+  "task": {
+    "claim_ceiling": "Historical interval and repeated-step observation only. Runs have three different head SHAs; this does not establish avoidable work, net savings, or that rerunning a required gate was unnecessary.",
+    "description": "Analyze the three existing #264 foundation-validation PR runs explicitly cited by Workbench #85; no workflow was dispatched by this experiment."
+  },
+  "tool_invocation": {
+    "candidate_catalog_git_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+    "entrypoint": "python3 -B ignition/tools/toolbox_actions_repeated_step_analysis.py --stdin",
+    "exit_code": 0,
+    "network_used_by_tool": false,
+    "normalized_per_run_input_sha256": [
+      "01a6c72d8b04aa40618caa89367724ff0d3e6ce216ef91fc39e90111913bfa8a",
+      "163c563ecc3e83cab232012f23067994ce5a1f48a6a38b683792c6faa1bfd193",
+      "2eed92aaf88e5a56d28286119aa6a0d8fcfe7160c00baf6e4e5ba71a88bb7a27"
+    ],
+    "receipt_status": "PARTIAL_TIME_COVERAGE",
+    "representative_repeated_step": {
+      "job_name": "Full Foundation regression",
+      "occurrences": [
+        {
+          "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+          "observed_elapsed_seconds": 1234.0,
+          "run_conclusion": "failure",
+          "run_id": 39889835854,
+          "step_conclusion": "failure"
+        },
+        {
+          "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+          "observed_elapsed_seconds": 1205.0,
+          "run_conclusion": "failure",
+          "run_id": 39899735096,
+          "step_conclusion": "failure"
+        },
+        {
+          "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+          "observed_elapsed_seconds": 701.0,
+          "run_conclusion": "success",
+          "run_id": 39910840268,
+          "step_conclusion": "success"
+        }
+      ],
+      "run_presence_count": 3,
+      "step_name": "Run python3 tools/foundation/validate_foundation.py"
+    },
+    "single_run_helper_source_sha256": "8ce2a1660dbac7f41384e19b15884387b848cd7ab7cc1a780f19a5ac148e457f",
+    "summary": {
+      "distinct_head_sha_count": 3,
+      "elapsed_time_aggregated_across_runs": false,
+      "job_count_across_runs": 12,
+      "job_lists_complete_for_all_runs": true,
+      "repeated_step_group_count": 57,
+      "run_count": 3,
+      "step_count_across_runs": 210,
+      "time_coverage_complete_for_all_runs": false
+    },
+    "timestamp_anomalies": [
+      {
+        "analysis_completed_at": null,
+        "analysis_started_at": null,
+        "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB",
+        "job_id": 120270681927,
+        "job_name": "Final main SHA witness",
+        "original_completed_at": "2026-10-23T06:11:57Z",
+        "original_started_at": "2026-10-23T06:11:58Z",
+        "snapshot_path": "snapshots[1].jobs_response.jobs[3]"
+      },
+      {
+        "analysis_completed_at": null,
+        "analysis_started_at": null,
+        "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB",
+        "job_id": 120345454366,
+        "job_name": "Final main SHA witness",
+        "original_completed_at": "2026-10-23T09:35:19Z",
+        "original_started_at": "2026-10-23T09:35:20Z",
+        "snapshot_path": "snapshots[2].jobs_response.jobs[3]"
+      }
+    ],
+    "tool_source_sha256": "3e0befadc24eff71ba7130b0043e7b8a2051e2e0529196ef021233b832a1182d"
+  },
+  "workflow_context": {
+    "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "event": "pull_request",
+    "path": ".github/workflows/foundation-validation.yml",
+    "pull_request_number": 264,
+    "workflow_id": 311987523
+  }
+}

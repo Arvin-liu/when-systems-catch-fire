@@ -204,6 +204,37 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
 
+    def test_actions_repeated_step_sequence_is_off_by_default_and_uses_batch_specific_tool(self) -> None:
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "maintenance.compare_actions_repeated_step_sequences")
+        task = profile(
+            "compare-one-pr-actions-history",
+            card["accepted_input_types"],
+            card["output_types"],
+        )
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=[
+                "maintenance.compare_actions_repeated_step_sequences",
+                "maintenance.summarize_actions_step_timeline",
+            ],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(excluded["selected_tools"], [])
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["maintenance.compare_actions_repeated_step_sequences"],
+        )
+        self.assertIn(
+            {"tool_id": "maintenance.summarize_actions_step_timeline", "reason": "NO_INPUT_TYPE_MATCH"},
+            included["rejected_candidates"],
+        )
+        self.assertFalse(included["execution_authorized"])
+        self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
+
     def test_network_candidate_requires_both_tool_allowlist_and_exact_host_allowance(self) -> None:
         task = profile(
             "live-crossref-metadata-comparison",

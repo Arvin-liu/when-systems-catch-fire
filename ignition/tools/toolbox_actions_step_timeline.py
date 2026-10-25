@@ -237,13 +237,18 @@ def _snapshot(raw: bytes) -> dict[str, Any]:
     }
 
 
+def summarize_snapshot(raw: bytes) -> dict[str, Any]:
+    """Return the validated single-run receipt for reuse by batch analyzers."""
+    return _snapshot(raw)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, allow_abbrev=False)
     parser.add_argument("--stdin", action="store_true", required=True, help="read one bounded JSON envelope from stdin")
     parser.parse_args(argv)
     raw = sys.stdin.buffer.read(MAX_INPUT_BYTES + 1)
     try:
-        result = _snapshot(raw)
+        result = summarize_snapshot(raw)
     except InputError as exc:
         print("ACTIONS_STEP_TIMELINE_INVALID", file=sys.stderr)
         print(f"- {exc}", file=sys.stderr)

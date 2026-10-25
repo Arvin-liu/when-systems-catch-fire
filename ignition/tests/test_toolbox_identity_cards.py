@@ -23,8 +23,8 @@ class ToolboxIdentityCardTests(unittest.TestCase):
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 15)
-        self.assertEqual(document["card_count"], 35)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 16)
+        self.assertEqual(document["card_count"], 36)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
@@ -157,6 +157,17 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertIn("NOT_BILLABLE_MINUTES", timeline["claim_ceiling"])
         self.assertEqual(timeline["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
         self.assertFalse(timeline["router_selectable_by_default"])
+        actions_history = next(card for card in candidates if card["tool_id"] == "maintenance.compare_actions_repeated_step_sequences")
+        self.assertEqual(actions_history["execution_mode"], "READ_ONLY_RUN")
+        self.assertEqual(actions_history["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertFalse(actions_history["router_selectable_by_default"])
+        self.assertFalse(actions_history["permissions"]["network"])
+        self.assertEqual(actions_history["permissions"]["write_paths"], [])
+        self.assertEqual(actions_history["estimated_cost"]["status"], "UNKNOWN")
+        self.assertEqual(actions_history["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(actions_history["replacement_candidates"], [])
+        self.assertTrue(actions_history["unique_remaining_use_cases"])
+        self.assertIn("causal waste attribution", actions_history["claim_ceiling"])
         planner_card = next(card for card in candidates if card["tool_id"] == "ignition.adaptive_toolbox_route_planner")
         self.assertIn("allowed_network_hosts", " ".join(planner_card["accepted_input_types"]))
         self.assertIn("authorization", planner_card["claim_ceiling"])

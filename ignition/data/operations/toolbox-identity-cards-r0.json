@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
-    "candidate_count": 15
+    "blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+    "candidate_count": 16
   },
   "cards": [
     {
@@ -478,7 +478,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -656,7 +656,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -992,7 +992,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1162,7 +1162,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0"
+          "sha1": "895f09362d8d6d4a3c7b7644af17828acff79425"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -1182,11 +1182,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "3fde60d2c3a8d806ef62eed48578523d93b633b1"
+          "sha1": "2082a02828d566914815cc586daee73654b29b0d"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1511,7 +1511,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2314,6 +2314,202 @@
       "router_selectable_by_default": true
     },
     {
+      "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+      "display_name": {
+        "zh": "GitHub Actions 重复步骤序列分析器",
+        "en": "GitHub Actions repeated step sequence analyzer"
+      },
+      "description": "Compare repeated job/step names and observed intervals across supplied runs of one workflow, event, pull request, and base commit; keep changed head revisions and source anomalies visible.",
+      "version": "0.1.0; reuses toolbox_actions_step_timeline summarize_snapshot contract",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no CI, Owner, or release authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_actions_repeated_step_analysis.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "role": "BOUNDED_OFFLINE_MULTI_RUN_ANALYZER"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_step_timeline.py",
+          "role": "REUSED_SINGLE_RUN_VALIDATION_AND_INTERVAL_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "role": "LIVE_HISTORY_AND_ADVERSARIAL_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-three-runs-r0.json",
+          "role": "MINIMIZED_GITHUB_API_RUN_AND_JOB_SNAPSHOTS"
+        },
+        {
+          "path": "ignition/docs/operations/actions-step-timeline-summary.md",
+          "role": "EXISTING_SINGLE_RUN_SCOPE_AND_CLAIM_CEILING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+          "role": "LIVE_TASK_ROUTE_AND_PAIRED_ANALYSIS_EVIDENCE"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_actions_step_timeline.py"
+      ],
+      "good_for": [
+        "Finding repeated job/step labels across two to twenty caller-supplied workflow runs for the same workflow, event, pull request, and base SHA.",
+        "Reviewing each run and exact head SHA beside repeated step outcomes and observed intervals, including failed and successful runs.",
+        "Preserving source timestamp anomalies and partial coverage rather than silently converting them to zero duration."
+      ],
+      "not_for": [
+        "Deciding repeated work was avoidable, wasted, caused by a workflow defect, or safe to remove.",
+        "Calculating billable runner minutes, cash cost, user wait, globally elapsed time, or causal value of CI.",
+        "Assessing required-check satisfaction, test equivalence, branch protection, merge/release permission, or Foundation validity.",
+        "Fetching or authenticating GitHub data; the tool only processes caller-supplied JSON snapshots."
+      ],
+      "only_if": [
+        "The caller supplies two to twenty complete enough workflow-run/jobs snapshots with one shared workflow ID/path, event, PR number, and base SHA.",
+        "Each snapshot can be bound to its run ID, attempt, head SHA, and matching job IDs/attempts/head SHA.",
+        "The caller accepts that head SHAs may differ, timestamps may be partial, and input provenance is unauthenticated by this tool."
+      ],
+      "counterindicated_when": [
+        "Snapshots mix workflows, events, pull requests, or base commits; the analyzer fails closed on mixed contexts.",
+        "The task requires a causal waste estimate, exact GitHub billing, a CI policy decision, or an authoritative source signature.",
+        "The caller cannot retain or process the supplied workflow metadata within the current task authority."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object containing 2–20 workflow_run/jobs_response snapshots for one workflow/event/PR/base context"
+      ],
+      "output_types": [
+        "Per-run source-bound-to-input timeline projections retaining each head SHA and run conclusion",
+        "Repeated step groups with per-run identifiers, outcomes, timestamps, and observed interval seconds",
+        "Explicit timestamp-anomaly list, input/tool digests, and non-claim markers"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_CALLER_SUPPLIED_ACTIONS_SNAPSHOT_BATCH",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "ignition/tools/toolbox_actions_step_timeline.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads bounded UTF-8 JSON from stdin and the analyzer/helper source files for their digests; emits one JSON receipt to stdout or a validation error to stderr; makes no network request and creates or modifies no files.",
+        "For a completed skipped job with reversed timestamps only, preserves the original times in timestamp_anomalies and nulls both interval endpoints in the derived analysis; all other reversed intervals remain invalid."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No representative CPU, memory, latency, GitHub hosted-runner, or cash-cost profile has been measured; the analyzer itself is offline."
+      },
+      "alternatives": [
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The existing tool analyzes one supplied run. This analyzer reuses its per-run contract and adds cross-run repeated-step grouping for a single PR/base history; neither proves avoidable work."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Compare repeated named steps and their per-head outcomes across a PR run sequence in one call, preserving changed heads and partial-time anomalies."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "One three-run exact PR/base sequence demonstrates that single-run receipts do not emit cross-run step groups; the new analyzer emits 57 such groups. This is a feature-scope comparison, not a general speed, accuracy, cost, or avoidable-work comparison.",
+        "compared_tool_ids": [
+          "maintenance.summarize_actions_step_timeline"
+        ],
+        "evidence_refs": [
+          "ignition/tools/toolbox_actions_step_timeline.py",
+          "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json"
+        ],
+        "findings": [
+          "The single-run tool remains valuable for isolated snapshots; the new batch analyzer complements it for same-PR run history. No evidence supports replacement, retirement, or classifying repeated steps as waste."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "ACTIVE",
+        "basis": "This default-off experimental candidate adds a bounded multi-run comparison surface; C1 comparative outcome evidence remains limited and it has not replaced any existing tool."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation or route default changes. Callers who need one run can keep using the existing single-run timeline tool; this tool is opt-in for same-PR run-history comparisons."
+        ],
+        "rollback_steps": [
+          "Remove the optional candidate, analyzer, test, fixture, and evidence artifact; regenerate identity cards and TOOLBOX.md; retain source API URLs and historical run IDs in the durable report if the analytical result remains useful."
+        ]
+      },
+      "fallback": "If context, run/job binding, or timestamps are invalid, report the exact rejection and inspect each run separately with the existing single-run tool; do not convert missing intervals to zero or infer wasted work.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "ignition/tests/test_toolbox_actions_step_timeline.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Reject mixed workflow, event, PR, or base context.",
+          "Reject duplicate run/attempt pairs, duplicate JSON keys, input beyond 2 MiB, and job/run/head/attempt mismatches.",
+          "Only null the reversed interval of a completed skipped job while preserving original timestamps and marking partial coverage; reject reversed intervals for executed jobs and reversed step timestamps.",
+          "Route proposals remain default-off and execution_authorized=false; no network or repository writes occur."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless this exact candidate ID is explicitly allowlisted for a caller-supplied multi-run same-PR Actions history task.",
+        "A route proposal does not authenticate the source of snapshots, authorize an invocation, or imply that repeated execution was wasteful."
+      ],
+      "claim_ceiling": "Observed repeated step names and source-supplied intervals within caller-supplied same-workflow/event/PR/base snapshots. Different head SHAs are different candidate revisions; no source authentication, causal waste attribution, billing, check satisfaction, CI sufficiency, merge permission, or release authorization.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "7eaaa9f5f8161ae0f590c059875567fb42c1c421",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "7eaaa9f5f8161ae0f590c059875567fb42c1c421"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_step_timeline.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "9c9981755b58dcfff8dd830d6581c330ea02e191"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "d4620d6d3cb0b30f2f892c54864cb093e1422023"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-three-runs-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "7af337ad5a18cc164b3ac42cc37c6e3bd95c7a55"
+        },
+        {
+          "path": "ignition/docs/operations/actions-step-timeline-summary.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "6ff420635eae83b76da4eb2255b053602013b751"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "cbe1e82566e5a00567a0ef8d69cae24b9b00c1eb"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
       "tool_id": "maintenance.inspect_repository",
       "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
       "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
@@ -2581,12 +2777,12 @@
         ]
       },
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
-      "source_blob_sha1": "7c0db5ff6594db4aaa4cf8fdd5c000277a2f9890",
+      "source_blob_sha1": "9c9981755b58dcfff8dd830d6581c330ea02e191",
       "source_refs_with_hashes": [
         {
           "path": "ignition/tools/toolbox_actions_step_timeline.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "7c0db5ff6594db4aaa4cf8fdd5c000277a2f9890"
+          "sha1": "9c9981755b58dcfff8dd830d6581c330ea02e191"
         },
         {
           "path": "ignition/tests/test_toolbox_actions_step_timeline.py",
@@ -2605,7 +2801,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3262,7 +3458,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3470,7 +3666,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "3fde60d2c3a8d806ef62eed48578523d93b633b1"
+          "sha1": "2082a02828d566914815cc586daee73654b29b0d"
         },
         {
           "path": "ignition/data/operations/iterations/110/openalex/PREREGISTRATION.md",
@@ -3504,7 +3700,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3724,7 +3920,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4000,7 +4196,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4181,7 +4377,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4497,7 +4693,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4692,7 +4888,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4884,7 +5080,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5388,11 +5584,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "3fde60d2c3a8d806ef62eed48578523d93b633b1"
+          "sha1": "2082a02828d566914815cc586daee73654b29b0d"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "a39ab5181206cca45da3cd74c190c7918bed51b0",
+      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5524,6 +5720,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 35,
+  "card_count": 36,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }
