@@ -132,7 +132,44 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564"
+      "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+    },
+    "route_catalog_history": [
+      {
+        "catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+        "default_decision": "INCOMPLETE",
+        "default_selected_tool_ids": [],
+        "explicit_decision": "COMPLETE",
+        "explicit_selected_tool_ids": [
+          "knowledge.cluster_source_brief"
+        ]
+      }
+    ],
+    "catalog_replay": {
+      "catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "provider_call_made": false,
+      "routes": [
+        {
+          "scenario": "default_off",
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "unmet_outputs": [
+            "source and output digest receipt",
+            "source-backed cluster member brief"
+          ],
+          "execution_authorized": false
+        },
+        {
+          "scenario": "explicit_allowlist",
+          "decision": "COMPLETE",
+          "selected_tool_ids": [
+            "knowledge.cluster_source_brief"
+          ],
+          "unmet_outputs": [],
+          "execution_authorized": false
+        }
+      ]
     }
   },
   "disposition": {
