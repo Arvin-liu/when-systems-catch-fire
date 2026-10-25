@@ -5797,6 +5797,226 @@
         "Do not select for PMID-only reading, DOI metadata verification, complete retraction adjudication, article-content review, or scientific-claim review."
       ],
       "claim_ceiling": "One live PMC ID Converter DOI-to-PMID response and, only when that response yields an exact PMID, raw Comments/Corrections fields from the matching PubMed record when that same EFetch response reports exactly the input DOI. This identity gate does not authenticate the provider or establish completeness, article content, retraction status, scientific validity, or absence of updates."
+    },
+    {
+      "tool_id": "research.bind_offline_source_snapshot_run",
+      "display_name": {
+        "zh": "离线来源快照绑定",
+        "en": "Offline source-snapshot binding"
+      },
+      "description": "Run one caller-frozen source set through the fixed E37 offline adapter, verify per-capture and canonical source-set digests, and preserve the inputs and run artifacts in a receipt-bound output directory.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_bind_offline_source_snapshot_run.py",
+      "entrypoint": "python3 ignition/tools/toolbox_bind_offline_source_snapshot_run.py --source-snapshots MANIFEST --expected-digests LOCK --print-source-set-digest (or supply the expected digest, caller inputs, and an external output directory for a run)",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_bind_offline_source_snapshot_run.py",
+          "role": "FIXED_OFFLINE_E37_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/research_workflow/slot.py",
+          "role": "FIXED_ADAPTER_AND_DIGEST_LOCK_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/research_workflow/cli.py",
+          "role": "SAVED_SNAPSHOT_AND_CLAIM_ANCHOR_CONSUMER"
+        },
+        {
+          "path": "ignition/research_workflow/test_pluggable_slot.py",
+          "role": "MATCHED_ADAPTER_COMPARISON_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/research_workflow/test_research_workflow.py",
+          "role": "OFFLINE_SOURCE_SNAPSHOT_REGRESSION_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_source_snapshot_binding.py",
+          "role": "PUBLIC_ENTRYPOINT_AND_WRITE_BOUNDARY_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_ROUTE_TEST"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-offline-source-snapshot-binding.md",
+          "role": "USER_CONTRACT_AND_USAGE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-offline-source-snapshot-binding-c1-evidence-r0.json",
+          "role": "C1_COMPARISON_AND_DISPOSITION_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_ROUTE_PROPOSAL_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+          "role": "OPTIONAL_CANDIDATE_CATALOG"
+        },
+        {
+          "path": "ignition/tools/toolbox_validate_evidence_program.py",
+          "role": "ADJACENT_CONTRACT_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "role": "ADJACENT_CONTRACT_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "role": "ALTERNATE_PROVENANCE_COMPARATOR"
+        }
+      ],
+      "dependencies": [
+        "ignition/research_workflow/slot.py",
+        "ignition/research_workflow/cli.py"
+      ],
+      "good_for": [
+        "Replaying one to five saved source captures without search or network access.",
+        "Binding each raw capture, the canonical source set, draft, claim-review rows, and output artifacts to explicit SHA-256 values.",
+        "Checking exact quote anchors against saved captured text while preserving that semantic support was not evaluated."
+      ],
+      "not_for": [
+        "Finding current sources, refreshing metadata, or retrieving new external material.",
+        "Authenticating a publisher or capture origin, deciding whether a quotation supports a claim, or validating a human review judgment.",
+        "Establishing scientific truth, study quality, causal support, or publication readiness."
+      ],
+      "only_if": [
+        "The caller explicitly supplies a UTF-8 saved-source manifest and exact per-capture SHA-256 lock.",
+        "The caller supplies the expected canonical source-set SHA-256 before the run; the digest-preview mode can compute it after validating capture locks.",
+        "The task needs an offline source-binding receipt and accepts exact-anchor-only validation.",
+        "Run output is directed to a new or empty path outside the checked-out repository."
+      ],
+      "counterindicated_when": [
+        "Current external acquisition or source discovery is required.",
+        "The capture origin or publisher authenticity must be independently verified by this tool.",
+        "A semantic, scientific, causal, or mathematical judgment is being requested.",
+        "The caller cannot provide a trustworthy capture digest lock or safe non-repository output location."
+      ],
+      "accepted_input_types": [
+        "Caller-supplied offline source-snapshot JSONL manifest with relative capture files, per-capture SHA-256 lock, expected canonical source-set SHA-256, question, draft, claim-review JSONL, task/episode/source-set identifiers, and an output path outside the repository."
+      ],
+      "output_types": [
+        "A new run directory containing a manifest, receipt, report, normalized sources, claim-anchor ledger, copied review inputs, raw captures, and artifact hashes.",
+        "Digest-preview JSON containing the verified capture count and canonical source-set SHA-256, written to stdout only."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_WITH_CALLER_SELECTED_NONREPOSITORY_RUN_OUTPUT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_bind_offline_source_snapshot_run.py",
+          "ignition/research_workflow/slot.py",
+          "ignition/research_workflow/cli.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads only the caller-selected manifest, its relative capture files, digest lock, draft, and claim-review file plus the fixed local implementation.",
+        "Run mode creates the caller-selected new/empty output directory and required parents outside the checkout; it rejects symlinks, nonempty destinations, and paths inside or containing the checkout.",
+        "Digest-preview mode writes one JSON result to stdout and creates no files.",
+        "No repository files are written; no network, search, model, secret, billing, or external action is used."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "The checked-out ignition.research_workflow.slot and ignition.research_workflow.cli modules"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The adapter allows up to five source captures of 10 MB each plus a 1 MB manifest. Wall time, memory, and local storage cost have not been calibrated."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Validates an existing Evidence Program snapshot but does not create this receipt-bound offline source run."
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Navigates current repository files by literal terms; it does not bind a caller-supplied external capture manifest and draft."
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "relationship": "ALTERNATE_PROVIDER_DIFFERENT_PROVENANCE",
+          "reason": "Performs an explicitly invoked live OpenAlex metadata lookup; this tool uses saved capture bytes offline."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Offline replay that binds saved external capture bytes, the normalized source set, reviewer-authored claim rows, draft text, and run artifacts into one digest-locked receipt.",
+        "Exact quote anchoring against raw captured text when the legacy normalized-record adapter has no capture bytes."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "PR #259 contains a matched offline adapter comparison on the same frozen source abstracts, draft, claim rows, and anchor consumer. The first version was inconclusive because both arms shared the same Unicode-space input mismatch; a separately preregistered correction produced equal 7/7 anchor counts. An audit found a narrow raw-capture recovery difference. Adjacent registered tools were compared by declared input/output and permission contracts, not by a matched performance experiment.",
+        "compared_tool_ids": [
+          "research.validate_evidence_program_snapshot",
+          "knowledge.navigate_raw_evidence",
+          "research.lookup_openalex_work_metadata"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_validate_evidence_program.py",
+          "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "ignition/tools/toolbox_openalex_work_metadata.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-offline-source-snapshot-binding-c1-evidence-r0.json",
+          "ignition/research_workflow/test_pluggable_slot.py",
+          "ignition/tests/test_toolbox_source_snapshot_binding.py",
+          "ignition/docs/operations/toolbox-offline-source-snapshot-binding.md"
+        ],
+        "findings": [
+          "The original matched v1 had 6/7 exact anchors in each arm; a shared U+0020/U+00A0 mismatch explains the result and establishes no adapter advantage.",
+          "The preregistered corrected v2 had 7/7 anchors and 2/2 normalized abstracts in both arms; wrong-source and unknown-ID controls failed closed in both.",
+          "An audit found 1/2 whole-output legacy raw streams versus 2/2 E37 raw capture files, a narrow recoverability difference rather than retrieval or scientific superiority.",
+          "The nearest registered tools use different input or permission contracts; no Current operation is replaced, and reliability, semantic accuracy, external authenticity, and cost remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Keep this optional offline-capture specialization alongside the adjacent validator, repository navigator, and live metadata lookup; current matched evidence does not support replacing or retiring any of them."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation, legacy adapter, or existing toolbox card is migrated or disabled. The E37 wrapper remains a separately allowlisted experimental option."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, wrapper, tests, route evidence, and user guide from the isolated branch; regenerate the identity-card projections; preserve the comparison evidence and implementation history."
+        ]
+      },
+      "fallback": "Use the existing research workflow saved-snapshot mode with a caller-frozen manifest and manually preserve source hashes; this preserves offline review but does not provide this wrapper's fixed E37 entrypoint and lock-bound run receipt.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_source_snapshot_binding.py",
+          "ignition/research_workflow/test_pluggable_slot.py",
+          "ignition/research_workflow/test_research_workflow.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "negative_controls": [
+          "A capture-byte digest mismatch fails closed before the output directory is created.",
+          "A canonical source-set digest mismatch fails closed before run artifacts are written.",
+          "A destination inside or containing the checkout, a symlink destination, or a nonempty output directory is rejected.",
+          "The wrapper exposes only e37-source-snapshot-v1 and cannot switch adapters during a run.",
+          "Unknown source IDs fail closed; exact anchors remain explicitly separate from semantic support validation."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless this exact candidate ID is explicitly allowlisted for the task.",
+        "The route profile must allow READ_ONLY_RUN and request offline source snapshot binding with a separate run output artifact.",
+        "Only caller-selected saved captures are consumed; no host allowance or network permission is needed.",
+        "The route proposal is not an execution authorization; the wrapper enforces a new/empty output path outside the repository."
+      ],
+      "claim_ceiling": "Repository-local execution evidence for offline capture hash binding, source-set identity, artifact preservation, and exact quote anchoring only; no capture-origin authentication, semantic claim validation, scientific truth, retrieval quality, or epistemic acceptance is established."
     }
   ]
 }

@@ -480,6 +480,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(editorial["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         self.assertTrue(editorial["unique_remaining_use_cases"])
         batch = next(card for card in candidates if card["tool_id"] == "foundation.batch_resolve_current_asset_references")
+        offline_snapshot_binding = next(
+            card for card in candidates if card["tool_id"] == "research.bind_offline_source_snapshot_run"
+        )
         specialized_tool_ids = {
             editorial["tool_id"],
             "maintenance.summarize_actions_step_timeline",
@@ -497,6 +500,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "research.search_europe_pmc_query",
             "maintenance.compare_context_packet_variants",
             "maintenance.compare_audit_findings",
+            offline_snapshot_binding["tool_id"],
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
@@ -513,6 +517,12 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(batch["comparison_evidence"]["compared_tool_ids"], ["foundation.resolve_current_asset"])
         self.assertEqual(batch["replacement_candidates"], [])
         self.assertTrue(batch["unique_remaining_use_cases"])
+        self.assertEqual(offline_snapshot_binding["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(offline_snapshot_binding["execution_mode"], "READ_ONLY_RUN")
+        self.assertFalse(offline_snapshot_binding["permissions"]["network"])
+        self.assertFalse(offline_snapshot_binding["router_selectable_by_default"])
+        self.assertEqual(offline_snapshot_binding["replacement_candidates"], [])
+        self.assertTrue(offline_snapshot_binding["unique_remaining_use_cases"])
         self.assertEqual(batch["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         pack_catalog = next(card for card in candidates if card["tool_id"] == "runtime.inspect_declared_pack_catalog")
         self.assertEqual(pack_catalog["execution_mode"], "READ_ONLY_RUN")

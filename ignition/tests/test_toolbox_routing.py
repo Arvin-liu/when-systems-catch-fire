@@ -1117,6 +1117,48 @@ class AdaptiveToolRouteTests(unittest.TestCase):
                 )
                 self.assertFalse(result["execution_authorized"])
 
+    def test_offline_source_snapshot_binding_is_default_off_and_routes_only_when_allowlisted(self) -> None:
+        tool_id = "research.bind_offline_source_snapshot_run"
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("offline-frozen-source-binding", card["accepted_input_types"], card["output_types"])
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r0.json")
+            .read_text(encoding="utf-8")
+        )
+
+        default = planner.plan_tool_route(task)
+        allowlisted = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+        self.assertEqual(allowlisted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in allowlisted["selected_tools"]], [tool_id])
+        self.assertFalse(allowlisted["execution_authorized"])
+        self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(
+            evidence["candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+        self.assertEqual(evidence["summary"]["execution_authorized"], False)
+        for trial in evidence["route_trials"]:
+            with self.subTest(scenario=trial["scenario"]):
+                result = planner.plan_tool_route(
+                    trial["task_profile"],
+                    include_experimental_tool_ids=trial["include_experimental_tool_ids"],
+                )
+                self.assertEqual(result["decision"], trial["expected_decision"])
+                self.assertEqual(
+                    [row["tool_id"] for row in result["selected_tools"]],
+                    trial["expected_selected_tool_ids"],
+                )
+                self.assertFalse(result["execution_authorized"])
+
 
 if __name__ == "__main__":
     unittest.main()
