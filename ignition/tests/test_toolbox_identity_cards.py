@@ -72,9 +72,13 @@ class ToolboxIdentityCardTests(unittest.TestCase):
 
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
+        candidate_document = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8")
+        )
+        expected_candidate_count = len(candidate_document["candidates"])
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 21)
-        self.assertEqual(document["card_count"], 41)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], expected_candidate_count)
+        self.assertEqual(document["card_count"], 20 + expected_candidate_count)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
@@ -199,18 +203,32 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(editorial["replacement_candidates"], [])
         self.assertEqual(editorial["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         self.assertTrue(editorial["unique_remaining_use_cases"])
-        self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in {editorial["tool_id"], "maintenance.summarize_actions_step_timeline", "maintenance.compare_actions_repeated_step_sequences", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"]}))
+        batch = next(card for card in candidates if card["tool_id"] == "foundation.batch_resolve_current_asset_references")
+        specialized_tool_ids = {
+            editorial["tool_id"],
+            "maintenance.summarize_actions_step_timeline",
+            "maintenance.compare_actions_repeated_step_sequences",
+            "research.lookup_arxiv_paper_metadata",
+            noaa["tool_id"],
+            noaa_co2["tool_id"],
+            batch["tool_id"],
+        }
+        self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
         self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet"} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
-        batch = next(card for card in candidates if card["tool_id"] == "foundation.batch_resolve_current_asset_references")
         self.assertEqual(batch["execution_mode"], "READ_ONLY_RUN")
         self.assertEqual(batch["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertIn("Python >=3.9 standard library", batch["runtime_dependencies"])
         self.assertIn("ambiguous", " ".join(batch["counterindicated_when"]).lower())
         self.assertTrue(any("legacy-mappings.jsonl" in path for path in batch["dependencies"]))
+        self.assertEqual(batch["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(batch["comparison_evidence"]["compared_tool_ids"], ["foundation.resolve_current_asset"])
+        self.assertEqual(batch["replacement_candidates"], [])
+        self.assertTrue(batch["unique_remaining_use_cases"])
+        self.assertEqual(batch["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         pack_catalog = next(card for card in candidates if card["tool_id"] == "runtime.inspect_declared_pack_catalog")
         self.assertEqual(pack_catalog["execution_mode"], "READ_ONLY_RUN")
         self.assertEqual(pack_catalog["evidence_level"], "REAL_TASK_OUTCOME")

@@ -99,6 +99,10 @@
     "unmet_outputs": [],
     "rejected_candidates": [
       {
+        "tool_id": "collaboration.validate_agent_episode_binding",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "executor.reference_conformance",
         "reason": "NOT_CURRENT_CALLABLE"
       },
@@ -269,12 +273,12 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "835aace12da79c5c68e14be27b2489ea7c41e8b3"
+      "experimental_candidate_catalog_git_blob_sha1": "2e6b940a903deb6670c12fd314ab711da1f4e9e8"
     }
   },
   "execution_status": "NOT_RUN",
   "execution_authorized": false,
   "network_call_made": false,
   "claim_ceiling": "Candidate route matching only. The caller-supplied current_ref and network host are not authority verified here; no NOAA request, permission grant, source authentication, scientific validation, or Current promotion is established.",
-  "candidate_catalog_git_blob_sha1": "835aace12da79c5c68e14be27b2489ea7c41e8b3"
+  "candidate_catalog_git_blob_sha1": "2e6b940a903deb6670c12fd314ab711da1f4e9e8"
 }
