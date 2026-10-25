@@ -391,7 +391,11 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         task = profile(
             "live-crossref-metadata-comparison",
             ["UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"],
-            ["input-ordered Crossref metadata comparison rows", "per-response SHA-256 and explicit HTTP or network outcome summary"],
+            [
+                "input-ordered Crossref metadata comparison rows",
+                "per-response SHA-256 and explicit HTTP or network outcome summary",
+                "bounded update-to, updated-by, and typed relation identifier projections with reported/omitted counts and truncation state",
+            ],
         )
         default = planner.plan_tool_route(task)
         self.assertEqual(default["decision"], "INCOMPLETE")

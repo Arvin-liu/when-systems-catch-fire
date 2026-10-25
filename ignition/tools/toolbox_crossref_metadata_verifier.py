@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Any
 
 
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 API_BASE = "https://api.crossref.org/works/"
 API_HOST = "api.crossref.org"
 MAX_REQUEST_BYTES = 32 * 1024
@@ -33,6 +33,10 @@ MAX_RESPONSE_BYTES = 256 * 1024
 REQUEST_TIMEOUT_SECONDS = 5
 MAX_RESPONSE_DURATION_SECONDS = 7
 RESPONSE_CHUNK_BYTES = 8 * 1024
+MAX_UPDATE_ROWS_PER_KIND = 25
+MAX_RELATION_TYPES = 32
+MAX_RELATION_ROWS = 50
+MAX_RELATION_TEXT_LENGTH = 128
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+\Z")
 SOURCE_ID_RE = re.compile(r"[A-Za-z0-9._:-]+\Z")
 
@@ -167,6 +171,127 @@ def _fetch_one(doi: str) -> dict[str, Any]:
         return {"acquisition_status": "NETWORK_ERROR", "http_status": None, "body": None}
 
 
+def _safe_text(value: Any, *, max_length: int = MAX_RELATION_TEXT_LENGTH) -> str | None:
+    if not isinstance(value, str) or not value or len(value) > max_length or value != value.strip():
+        return None
+    if any(ord(char) < 32 or ord(char) == 127 for char in value):
+        return None
+    return value
+
+
+def _parse_update_rows(message: dict[str, Any], field: str) -> dict[str, Any]:
+    if field not in message:
+        return {"field_status": "NOT_REPORTED", "reported_count": None, "rows": [], "omitted_count": 0, "truncated": False}
+    raw_rows = message[field]
+    if not isinstance(raw_rows, list):
+        return {"field_status": "MALFORMED", "reported_count": None, "rows": [], "omitted_count": 0, "truncated": False}
+
+    rows: list[dict[str, Any]] = []
+    for item in raw_rows[:MAX_UPDATE_ROWS_PER_KIND]:
+        if not isinstance(item, dict):
+            continue
+        doi = item.get("DOI")
+        if not isinstance(doi, str) or not DOI_RE.fullmatch(doi):
+            continue
+        row: dict[str, Any] = {"doi": doi}
+        for source_key, output_key in (("type", "type"), ("label", "label"), ("source", "source")):
+            value = _safe_text(item.get(source_key), max_length=64)
+            if value is not None:
+                row[output_key] = value
+        updated = item.get("updated")
+        if isinstance(updated, dict):
+            date_time = _safe_text(updated.get("date-time"), max_length=32)
+            if date_time is not None:
+                row["updated_date_time"] = date_time
+        rows.append(row)
+
+    if not raw_rows:
+        status = "PRESENT_EMPTY"
+    else:
+        status = "PRESENT_NONEMPTY"
+    return {
+        "field_status": status,
+        "reported_count": len(raw_rows),
+        "rows": rows,
+        "omitted_count": len(raw_rows) - len(rows),
+        "truncated": len(raw_rows) > MAX_UPDATE_ROWS_PER_KIND,
+    }
+
+
+def _parse_relation_rows(message: dict[str, Any]) -> dict[str, Any]:
+    if "relation" not in message:
+        return {
+            "field_status": "NOT_REPORTED", "relation_type_count": None, "reported_count": None,
+            "rows": [], "omitted_count": 0, "truncated": False,
+        }
+    relation = message["relation"]
+    if not isinstance(relation, dict):
+        return {
+            "field_status": "MALFORMED", "relation_type_count": None, "reported_count": None,
+            "rows": [], "omitted_count": 0, "truncated": False,
+        }
+
+    raw_count = sum(len(values) for values in relation.values() if isinstance(values, list))
+    malformed_type_count = 0
+    rows: list[dict[str, Any]] = []
+    valid_types: list[tuple[str, Any]] = []
+    for relation_type, values in relation.items():
+        safe_type = _safe_text(relation_type, max_length=64)
+        if safe_type is None:
+            malformed_type_count += 1
+            continue
+        valid_types.append((safe_type, values))
+    valid_types.sort(key=lambda item: item[0])
+    type_truncated = len(valid_types) > MAX_RELATION_TYPES
+
+    for relation_type, values in valid_types[:MAX_RELATION_TYPES]:
+        if not isinstance(values, list):
+            malformed_type_count += 1
+            continue
+        for item in values:
+            if len(rows) >= MAX_RELATION_ROWS:
+                continue
+            if not isinstance(item, dict):
+                continue
+            id_type = _safe_text(item.get("id-type"), max_length=32)
+            identifier = _safe_text(item.get("id"), max_length=MAX_RELATION_TEXT_LENGTH)
+            if id_type is None or identifier is None or "://" in identifier:
+                continue
+            if id_type.lower() == "doi":
+                if not DOI_RE.fullmatch(identifier):
+                    continue
+            elif not SOURCE_ID_RE.fullmatch(identifier):
+                continue
+            row = {"relation_type": relation_type, "id_type": id_type, "identifier": identifier}
+            asserted_by = _safe_text(item.get("asserted-by"), max_length=32)
+            if asserted_by is not None:
+                row["asserted_by"] = asserted_by
+            rows.append(row)
+
+    if not relation:
+        status = "PRESENT_EMPTY"
+    else:
+        status = "PRESENT_NONEMPTY"
+    truncated = type_truncated or raw_count > MAX_RELATION_ROWS
+    return {
+        "field_status": status,
+        "relation_type_count": len(relation),
+        "reported_count": raw_count,
+        "rows": rows,
+        "omitted_count": raw_count - len(rows),
+        "malformed_relation_type_count": malformed_type_count,
+        "truncated": truncated,
+    }
+
+
+def _relation_metadata(message: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "update_to": _parse_update_rows(message, "update-to"),
+        "updated_by": _parse_update_rows(message, "updated-by"),
+        "related_items": _parse_relation_rows(message),
+    }
+
+
 def _verify_row(record: dict[str, Any]) -> dict[str, Any]:
     observed_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     result: dict[str, Any] = {
@@ -177,6 +302,7 @@ def _verify_row(record: dict[str, Any]) -> dict[str, Any]:
         "retrieval_timestamp_utc": observed_at,
         "source_url": API_BASE + urllib.parse.quote(record["doi"], safe=""),
         "source_license": "Crossref bibliographic metadata; public reuse basis documented by Crossref",
+        "crossref_relation_metadata": None,
     }
     fetched = _fetch_one(record["doi"])
     result["acquisition_status"] = fetched["acquisition_status"]
@@ -229,6 +355,7 @@ def _verify_row(record: dict[str, Any]) -> dict[str, Any]:
         "year_match": year_match,
         "full_match": bool(title_match and year_match),
         "retraction_signal": UPSTREAM.retraction_signal(message),
+        "crossref_relation_metadata": _relation_metadata(message),
     })
     return result
 
@@ -255,7 +382,7 @@ def verify(records: list[dict[str, Any]]) -> dict[str, Any]:
             "wrapper": _sha256(Path(__file__).resolve()),
             "task103_crossref_helpers": _sha256(UPSTREAM_HELPERS_PATH),
         },
-        "claim_ceiling": "Crossref API metadata retrieval and normalized title/year comparison only; this does not validate article content, source authenticity, scientific truth, or retraction status beyond returned metadata fields.",
+        "claim_ceiling": "Crossref API metadata retrieval, normalized title/year comparison, and bounded projection of returned update-to, updated-by, and typed relation identifiers only. Returned fields are provider-deposited metadata at retrieval time; omissions, empty fields, or relation labels do not establish completeness, source authenticity, article content, scientific truth, or current retraction status.",
     }
 
 

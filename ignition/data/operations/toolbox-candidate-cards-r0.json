@@ -4951,8 +4951,8 @@
         "zh": "Crossref 元数据核验器",
         "en": "Crossref metadata verifier"
       },
-      "description": "Compare up to ten caller-supplied DOI title/year expectations against live Crossref bibliographic metadata using bounded fixed-host HTTPS GET requests.",
-      "version": "0.1.0",
+      "description": "Compare up to ten caller-supplied DOI title/year expectations against fixed-host Crossref metadata and project bounded update-to, updated-by, and typed relation identifiers from the same response.",
+      "version": "0.2.0",
       "license": "Wrapper BUSL-1.1; Crossref bibliographic metadata reuse basis documented at https://www.crossref.org/documentation/retrieve-metadata/.",
       "maintainer": "Ignition repository maintainers; Task 103 Crossref pilot supplies reused normalization helpers, not Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
@@ -5004,6 +5004,22 @@
         {
           "path": "ignition/data/operations/toolbox-real-task-route-evidence-r1.json",
           "role": "R1_REPEAT_REAL_ROUTE_AND_MEASURED_SINGLE_RUN_OUTCOME"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-crossref-metadata-verifier.md",
+          "role": "VERSIONED_HUMAN_TOOL_SCOPE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-relations-evidence-r0.json",
+          "role": "V0_2_RELATION_PROJECTION_TOOL_TEST_AND_C1_LIMITS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r1.json",
+          "role": "C1_COMPARATOR_REAL_TASK_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json",
+          "role": "C1_COMPARATOR_C1_EVIDENCE"
         }
       ],
       "dependencies": [
@@ -5012,13 +5028,15 @@
       "good_for": [
         "Comparing caller-supplied expected DOI title and year with the live Crossref metadata record.",
         "Retaining per-record HTTP outcome, response SHA-256, observed fields, and explicit mismatch or network-failure status.",
-        "Checking public bibliographic metadata for a bounded batch without retrieving article content."
+        "Checking public bibliographic metadata for a bounded batch without retrieving article content.",
+        "Inspect Crossref-deposited update-to, updated-by, and typed related-item identifiers alongside title/year comparison without making a second request or following related identifiers."
       ],
       "not_for": [
         "Retrieving article full text, abstracts, publisher pages, or arbitrary URLs.",
         "Establishing that a paper is authentic, scientifically correct, or supports a claim.",
         "Treating missing or stale Crossref fields as proof that a source does not exist.",
-        "Adding or correcting records in a repository registry."
+        "Adding or correcting records in a repository registry.",
+        "Treating absent or empty provider relation fields as proof that no correction, update, or related item exists."
       ],
       "only_if": [
         "The caller has explicitly approved transmission of the DOI identifiers in this invocation and passes --allow-public-network.",
@@ -5036,7 +5054,8 @@
       ],
       "output_types": [
         "input-ordered Crossref metadata comparison rows",
-        "per-response SHA-256 and explicit HTTP or network outcome summary"
+        "per-response SHA-256 and explicit HTTP or network outcome summary",
+        "bounded update-to, updated-by, and typed relation identifier projections with reported/omitted counts and truncation state"
       ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
@@ -5098,42 +5117,40 @@
         "A route proposal has execution_authorized=false and does not validate the caller authority behind that host list.",
         "Every actual CLI invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers."
       ],
-      "claim_ceiling": "Live Crossref bibliographic metadata retrieval and normalized title/year comparison only; response hashes bind received bytes, not source authenticity, article contents, scientific truth, or a complete retraction check.",
+      "claim_ceiling": "Crossref API metadata retrieval, normalized title/year comparison, and bounded projection of returned update-to, updated-by, and typed relation identifiers only. Returned fields are provider-deposited metadata at retrieval time; omissions, empty fields, or relation labels do not establish completeness, source authenticity, article content, scientific truth, or current retraction status.",
       "replacement_candidates": [],
-      "unique_remaining_use_cases": [],
+      "unique_remaining_use_cases": [
+        "Potential specialized use: expose Crossref-deposited update and general typed relation identifiers from the same DOI response as the title/year check; matched real-task coverage against PubMed relation records remains unmeasured."
+      ],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "One live same-DOI comparison between this bounded wrapper and the Task 103 Crossref runner produced equal title/year matches and the same response digest for GAP001-01. A separate real task compared Crossref with registered OpenAlex for GAP001-05. These small observations do not estimate comparative correctness, coverage, reliability, cost, or broad replacement value; preserve uncertainty.",
+        "scope": "Version 0.2.0 adds a bounded projection of Crossref update-to, updated-by, and general typed relation metadata. A controlled live smoke against Crossref documentation test record 10.5555/12345681 exercised one update-to row, one updated-by row, and seven has-review identifiers; this is a test account, not a research-task result. No matched real DOI with nonempty relation fields has been compared with the PubMed Comments/Corrections tool.",
         "compared_tool_ids": [
-          "research.lookup_openalex_work_metadata"
+          "research.inspect_pubmed_update_links",
+          "research.audit_pubmed_updates_from_doi"
         ],
         "evidence_refs": [
-          "ignition/tools/toolbox_crossref_metadata_verifier.py",
-          "ignition/evidence-program/tools/run_crossref_verification.py",
-          "ignition/data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json",
-          "ignition/data/operations/toolbox-publication-metadata-cross-source-c1-evidence-r0.json",
-          "ignition/data/operations/toolbox-publication-metadata-cross-source-real-task-r0.json",
-          "ignition/data/operations/toolbox-real-task-route-evidence-r1.json"
+          "ignition/data/operations/toolbox-crossref-relations-evidence-r0.json",
+          "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r1.json",
+          "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r1.json"
         ],
         "findings": [
-          "On one live GAP001-01 query, this wrapper and the Task 103 reference runner returned the same title, year, field matches, full-match result, HTTP 200 outcome, and Crossref response SHA-256. The raw provider payload was not retained.",
-          "The Task 103 runner is a source script rather than a registered toolbox identity. It normally handles registry-wide duplicate detection, aggregate metrics, and manifest writes; this candidate accepts a bounded caller-selected batch and writes JSON only to stdout. No retirement conclusion follows from the one-row overlap.",
-          "The existing GAP001-05 Crossref/OpenAlex comparison records one additional matching title/year observation and a synthetic changed-year negative control. It establishes no provider-wide quality ranking or replacement.",
-          "One DOI per comparison and one timing sample per implementation do not establish broad accuracy, reliability, coverage, latency, or economic cost. Keep the candidate optional and default off; no replacement, unique-use, or retirement decision is established.",
-          "R1 repeated the same GAP001-02 public lookup through the task-sufficient two-tool route: Crossref response digest was unchanged; PMC ID Converter response bytes changed while HTTP status and MATCHED_WITHOUT_PUBMED_OR_PMC_ID output were unchanged. One repeat does not establish source completeness or reliability.",
-          "One invocation per tool observed 1547.352 ms and 68.352 ms child CPU for Crossref, and 622.937 ms and 71.600 ms child CPU for the PMC converter, including process and network overhead. Billed cost, bandwidth, stable latency, and comparative cost remain UNKNOWN."
+          "Crossref official REST/schema documentation describes update metadata and general typed relations; the bounded projection preserves only identifier/type assertions and does not request referenced records.",
+          "The one live tool test returned its Crossref test-account update-to/updated-by fields and seven typed relation IDs with exact title/year match and HTTP 200. The response digest was retained; raw provider bytes were not.",
+          "The PubMed tool reads raw Comments/Corrections fields for exact PubMed records, while Crossref returns provider-deposited Crossref update and typed relation metadata. These contracts differ, but this test account does not show comparative coverage or completion quality on a real research DOI.",
+          "Keep both tools optional and default-off. Retain COMPARISON_UNKNOWN and do not claim replacement, superiority, completeness, or comparative cost until a same-real-task matched comparison exists."
         ]
       },
       "deprecation_or_retirement_status": {
         "status": "ACTIVE",
-        "basis": "The optional experimental entry remains available and default-off. C1 evidence includes one paired wrapper/runner result and one cross-provider task, which are insufficient to support replacement, retirement, or a broad specialization claim."
+        "basis": "The optional Crossref tool remains available and default-off. Version 0.2.0 adds a source-specific relation projection; C1 comparative coverage against PubMed remains unknown, so neither replacement nor retirement is justified."
       },
       "migration_and_rollback": {
         "migration_notes": [
-          "No automatic migration is inferred; preserve this exact input/output contract until a same-task comparison supports specialization or replacement."
+          "The v0.2.0 relation projection is additive. Existing callers may ignore crossref_relation_metadata; the title/year input and match contract remain unchanged."
         ],
         "rollback_steps": [
-          "Remove the candidate entry and wrapper from the isolated toolbox branch, regenerate the identity and human-directory projections, and preserve prior commits and evidence."
+          "Revert the v0.2.0 tool change to v0.1.0, remove its version-specific evidence/document reference if unused, regenerate identity cards and TOOLBOX.md, then rerun focused checks. Preserve the comparison evidence and prior source history."
         ]
       }
     },

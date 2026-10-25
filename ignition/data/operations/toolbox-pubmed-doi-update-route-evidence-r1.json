@@ -1812,9 +1812,9 @@
     "execution_authorized": false
   },
   "catalog_replay": {
-    "observed_at_utc": "2026-10-25T22:53:36Z",
-    "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
-    "candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
+    "observed_at_utc": "2026-10-25T23:11:27Z",
+    "previous_candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+    "candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
     "route_trials_replayed": 6,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
@@ -1825,6 +1825,24 @@
       "observed_at_utc": "2026-10-25T22:52:47Z",
       "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
       "candidate_catalog_git_blob_sha1": "8f3384fda573a43bc7cdd8564798e99f6afc026d",
+      "route_trials_replayed": 6,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    },
+    {
+      "observed_at_utc": "2026-10-25T23:10:52Z",
+      "previous_candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
+      "candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "route_trials_replayed": 6,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    },
+    {
+      "observed_at_utc": "2026-10-25T23:11:27Z",
+      "previous_candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
       "route_trials_replayed": 6,
       "all_expected_decisions_reproduced": true,
       "provider_calls_made": 0,

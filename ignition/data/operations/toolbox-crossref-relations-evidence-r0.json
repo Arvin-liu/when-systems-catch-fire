@@ -1,0 +1,168 @@
+{
+  "schema_version": "ignition.toolbox-crossref-relations-evidence-r0",
+  "evidence_level": "REAL_TOOL_TEST",
+  "observed_at_utc": "2026-10-25T23:07:32Z",
+  "tool": {
+    "tool_id": "research.verify_crossref_metadata",
+    "version": "0.2.0",
+    "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
+    "source_sha256": "b050413a92043a6cf7afcd760e50a342917cd3c53bdb2e6d0458a4da56116151",
+    "upstream_helper_sha256": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51"
+  },
+  "task": {
+    "input_kind": "Crossref documentation test record; not a real research task or scientific article assessment",
+    "doi": "10.5555/12345681",
+    "expected_title": "Dog: A Methodology for the Development of Simulated Annealing",
+    "expected_year": 2012,
+    "purpose": "Exercise bounded update-to, updated-by, and typed relation projection from one Crossref Work response."
+  },
+  "invocation": {
+    "network_permission": "Explicit per-call --allow-public-network flag",
+    "http_host": "api.crossref.org",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "return_code": 0,
+    "status": "ALL_METADATA_MATCHED",
+    "record_count": 1,
+    "title_match": true,
+    "year_match": true,
+    "response_sha256": "b734d281a85498fa2791e4e5c05eeab41b96e89efac60a433f3fd3b7ea9f0a43",
+    "raw_provider_body_retained": false,
+    "related_identifiers_requested": false,
+    "repository_files_written_by_tool": false,
+    "result_summary": {
+      "update_to": {
+        "field_status": "PRESENT_NONEMPTY",
+        "reported_count": 1,
+        "included_count": 1,
+        "type": "correction",
+        "label": "Correction",
+        "source": "publisher",
+        "updated_date_time": "2012-05-12T00:00:00Z"
+      },
+      "updated_by": {
+        "field_status": "PRESENT_NONEMPTY",
+        "reported_count": 1,
+        "included_count": 1,
+        "type": "correction"
+      },
+      "related_items": {
+        "field_status": "PRESENT_NONEMPTY",
+        "relation_type_count": 1,
+        "reported_count": 7,
+        "included_count": 7,
+        "relation_type": "has-review",
+        "identifier_type": "doi"
+      },
+      "truncation_observed": false
+    }
+  },
+  "focused_validation": {
+    "commands": [
+      "PYTHONPATH=ignition python3 -m pytest -q ignition/tests/test_toolbox_crossref_metadata_verifier.py",
+      "python3 -m py_compile ignition/tools/toolbox_crossref_metadata_verifier.py",
+      "git diff --check"
+    ],
+    "status": "12/12_CROSSREF_UNIT_TESTS_PASS; py_compile and git diff --check pass; broader routing suite pending catalog replay repair"
+  },
+  "official_references": [
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/rest-api-filters/",
+    "https://www.crossref.org/documentation/principles-practices/best-practices/relationships/",
+    "https://www.crossref.org/documentation/schema-library/markup-guide-metadata-segments/relationships/",
+    "https://api.crossref.org/works/10.5555/12345681"
+  ],
+  "c1_disposition": {
+    "status": "COMPARISON_UNKNOWN",
+    "compared_tool_ids": [
+      "research.inspect_pubmed_update_links",
+      "research.audit_pubmed_updates_from_doi"
+    ],
+    "finding": "Crossref supplies provider-deposited update and general typed relation metadata; the PubMed tools expose raw PubMed Comments/Corrections rows. These contracts differ, but this test-account record cannot establish comparative coverage or practical superiority on real research tasks.",
+    "decision": "Keep both optional and default-off. Do not infer replacement, broader coverage, relation completeness, or comparative cost. A matched real DOI with nonempty relation output remains a future low-cost comparison."
+  },
+  "route_experiment": {
+    "observed_at_utc": "2026-10-25T23:11:27Z",
+    "planner_source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "experimental_candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+    "current_ref": "WORKTREE_UNCOMMITTED_BASE_8b691b3cfb7801c0b967332fdd51726b8f2c9da5",
+    "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+    "task_profile": {
+      "task_id": "crossref-relation-metadata-smoke",
+      "input_types": [
+        "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"
+      ],
+      "required_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "per-response SHA-256 and explicit HTTP or network outcome summary",
+        "bounded update-to, updated-by, and typed relation identifier projections with reported/omitted counts and truncation state"
+      ],
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ]
+    },
+    "trials": [
+      {
+        "scenario": "default_off",
+        "include_experimental_tool_ids": [],
+        "allowed_network_hosts": [],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "crossref_rejection": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+        "execution_authorized": false,
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+      },
+      {
+        "scenario": "candidate_without_host",
+        "include_experimental_tool_ids": [
+          "research.verify_crossref_metadata"
+        ],
+        "allowed_network_hosts": [],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "crossref_rejection": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+        "execution_authorized": false,
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+      },
+      {
+        "scenario": "candidate_and_exact_host",
+        "include_experimental_tool_ids": [
+          "research.verify_crossref_metadata"
+        ],
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.verify_crossref_metadata"
+        ],
+        "crossref_rejection": null,
+        "execution_authorized": false,
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+      }
+    ],
+    "provider_calls_made": 0,
+    "interpretation": "The relation projection routes only when the experimental tool is explicitly included and api.crossref.org is explicitly allowed. The route planner never authorizes execution; the public GET was performed separately under the tool CLI flag."
+  },
+  "construction_preflight_failure": {
+    "status": "INCOMPLETE",
+    "rejected_candidate": "research.verify_crossref_metadata",
+    "reason": "SOURCE_REFERENCE_UNAVAILABLE_OR_UNSAFE",
+    "context": "First route replay occurred before the newly referenced v0.2 evidence file had been created. It made no provider calls and authorized no execution. The completed-file route is rerun separately below.",
+    "preserve_as_historical_failure": true
+  },
+  "claim_ceiling": "One Crossref documentation test-record response exercised the v0.2 bounded relation projection. This is a tool/API-shape test only; it does not establish performance on a real research task, provider authenticity, relationship completeness/correctness, article content, scientific support, or current retraction status.",
+  "route_catalog_replay_history": [
+    {
+      "observed_at_utc": "2026-10-25T23:11:27Z",
+      "previous_candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+      "route_trials_replayed": 3,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    }
+  ]
+}

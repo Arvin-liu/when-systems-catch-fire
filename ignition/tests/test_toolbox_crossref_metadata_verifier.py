@@ -24,7 +24,20 @@ SAMPLE_MESSAGE = {
         "title": ["Causal inference in the medical domain: a survey"],
         "published": {"date-parts": [[2024]]},
         "type": "journal-article",
-        "relation": {},
+        "update-to": [{
+            "DOI": "10.5555/12345681",
+            "type": "correction",
+            "label": "Correction",
+            "source": "publisher",
+            "updated": {"date-time": "2012-05-12T00:00:00Z"},
+        }],
+        "updated-by": [{"DOI": "10.5555/12345681", "type": "correction"}],
+        "relation": {
+            "has-review": [
+                {"id-type": "doi", "id": "10.5555/12345681.9882", "asserted-by": "object"},
+                {"id-type": "arxiv", "id": "arXiv:2401.12345", "asserted-by": "subject"},
+            ],
+        },
     }
 }
 
@@ -103,7 +116,77 @@ class CrossrefMetadataVerifierTests(unittest.TestCase):
         self.assertEqual(result["rows"][0]["acquisition_status"], "OK")
         self.assertTrue(result["rows"][0]["full_match"])
         self.assertEqual(len(result["rows"][0]["response_sha256"]), 64)
-        self.assertIn("does not validate article content", result["claim_ceiling"])
+        projected = result["rows"][0]["crossref_relation_metadata"]
+        self.assertEqual(projected["update_to"]["rows"][0]["doi"], "10.5555/12345681")
+        self.assertEqual(projected["update_to"]["rows"][0]["type"], "correction")
+        self.assertEqual(projected["updated_by"]["field_status"], "PRESENT_NONEMPTY")
+        self.assertEqual(projected["related_items"]["reported_count"], 2)
+        self.assertEqual(projected["related_items"]["rows"][0]["identifier"], "10.5555/12345681.9882")
+        self.assertEqual(len(opener.calls), 1, "related identifiers are reported, never requested")
+        self.assertIn("article content", result["claim_ceiling"])
+
+    def test_empty_and_unreported_relation_fields_are_distinct(self) -> None:
+        message = {"message": {"title": ["x"], "published": {"date-parts": [[2024]]}, "relation": {}}}
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+        projection = row["crossref_relation_metadata"]
+        self.assertEqual(projection["update_to"]["field_status"], "NOT_REPORTED")
+        self.assertEqual(projection["related_items"]["field_status"], "PRESENT_EMPTY")
+
+        del message["message"]["relation"]
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+        self.assertEqual(row["crossref_relation_metadata"]["related_items"]["field_status"], "NOT_REPORTED")
+
+    def test_update_relation_rows_are_bounded_and_reject_url_like_dois(self) -> None:
+        updates = [
+            {"DOI": f"10.5555/update-{index}", "type": "correction", "source": "publisher"}
+            for index in range(TOOL.MAX_UPDATE_ROWS_PER_KIND + 5)
+        ]
+        updates.append({"DOI": "https://doi.org/10.5555/not-a-doi", "type": "correction"})
+        message = {
+            "message": {
+                "title": [SAMPLE_MESSAGE["message"]["title"][0]],
+                "published": {"date-parts": [[2024]]},
+                "update-to": updates,
+                "relation": {},
+            }
+        }
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+        update_to = row["crossref_relation_metadata"]["update_to"]
+        self.assertEqual(len(update_to["rows"]), TOOL.MAX_UPDATE_ROWS_PER_KIND)
+        self.assertEqual(update_to["reported_count"], TOOL.MAX_UPDATE_ROWS_PER_KIND + 6)
+        self.assertEqual(update_to["omitted_count"], 6)
+        self.assertTrue(update_to["truncated"])
+        self.assertEqual(len(opener.calls), 1)
+
+    def test_relation_projection_bounds_rows_and_drops_url_identifiers(self) -> None:
+        relation_rows = [
+            {"id-type": "doi", "id": f"10.5555/item-{index}", "asserted-by": "object"}
+            for index in range(TOOL.MAX_RELATION_ROWS + 10)
+        ]
+        relation_rows.append({"id-type": "uri", "id": "https://untrusted.example/payload"})
+        message = {
+            "message": {
+                "title": [SAMPLE_MESSAGE["message"]["title"][0]],
+                "published": {"date-parts": [[2024]]},
+                "relation": {"has-review": relation_rows},
+            }
+        }
+        opener = FakeOpener(response=FakeResponse(json.dumps(message).encode("utf-8")))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.verify(TOOL.parse_request(request_bytes()))["rows"][0]
+        related = row["crossref_relation_metadata"]["related_items"]
+        self.assertEqual(len(related["rows"]), TOOL.MAX_RELATION_ROWS)
+        self.assertEqual(related["reported_count"], TOOL.MAX_RELATION_ROWS + 11)
+        self.assertEqual(related["omitted_count"], 11)
+        self.assertTrue(related["truncated"])
+        self.assertNotIn("https://untrusted.example/payload", json.dumps(related))
+        self.assertEqual(len(opener.calls), 1)
 
     def test_no_network_occurs_without_per_call_flag(self) -> None:
         opener = FakeOpener()
