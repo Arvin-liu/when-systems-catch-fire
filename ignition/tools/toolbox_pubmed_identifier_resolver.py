@@ -19,7 +19,7 @@ from pathlib import Path
 from typing import Any
 
 
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.1.1"
 API_BASE = "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/"
 API_HOST = "pmc.ncbi.nlm.nih.gov"
 MAX_REQUEST_BYTES = 16 * 1024
@@ -131,7 +131,13 @@ def _fetch_one(doi: str) -> dict[str, Any]:
 
 
 def _normalized_identifier(value: Any, pattern: re.Pattern[str]) -> str | None:
-    return value if isinstance(value, str) and pattern.fullmatch(value) else None
+    if isinstance(value, str):
+        return value if pattern.fullmatch(value) else None
+    # NCBI ID Converter serializes PMID values as JSON integers. Preserve the
+    # prior string form while normalizing only positive, bounded numeric PMIDs.
+    if type(value) is int and pattern is IDENTIFIER_RE and 1 <= value <= 999_999_999_999:
+        return str(value)
+    return None
 
 
 def _resolve_row(doi: str) -> dict[str, Any]:

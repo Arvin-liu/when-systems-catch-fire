@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:pubmed-doi-update-audit-output-r0",
+  "title": "PubMed DOI Update Audit Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "status", "doi", "identifier_resolution", "update_link_inspection", "update_link_status", "source_code_sha256", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition.pubmed-doi-update-audit-r0"},
+    "tool_id": {"const": "research.audit_pubmed_updates_from_doi"},
+    "tool_version": {"const": "0.1.0"},
+    "status": {"const": "COMPLETED_WITH_EXPLICIT_STAGE_OUTCOMES"},
+    "doi": {"type": "string", "minLength": 1},
+    "identifier_resolution": {"type": "object"},
+    "update_link_inspection": {"type": ["object", "null"]},
+    "update_link_status": {"enum": ["SKIPPED_NO_EXACT_PMID", "INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]},
+    "source_code_sha256": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["composition_wrapper", "identifier_resolver", "update_link_reader"],
+      "properties": {
+        "composition_wrapper": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "identifier_resolver": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "update_link_reader": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}

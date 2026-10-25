@@ -23,7 +23,7 @@ SAMPLE_RESPONSE = {
     "status": "ok",
     "records": [{
         "doi": DOI,
-        "pmid": "20466091",
+        "pmid": 20466091,
         "pmcid": "PMC2885863",
         "requested-id": DOI,
         "idtype": "doi",
@@ -154,6 +154,24 @@ class PubMedIdentifierResolverTests(unittest.TestCase):
         self.assertEqual(row["identifier_status"], "MATCHED_WITHOUT_PUBMED_OR_PMC_ID")
         self.assertIsNone(row["pmid"])
         self.assertIsNone(row["pmcid"])
+
+    def test_accepts_ncbi_integer_pmid_and_keeps_string_compatibility(self) -> None:
+        for pmid in (20466091, "20466091"):
+            with self.subTest(pmid=pmid):
+                response = {"status": "ok", "records": [{"doi": DOI, "pmid": pmid}]}
+                with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(json.dumps(response).encode()))):
+                    row = TOOL.resolve([DOI])["rows"][0]
+                self.assertEqual(row["identifier_status"], "IDENTIFIER_RESOLVED")
+                self.assertEqual(row["pmid"], "20466091")
+
+    def test_rejects_invalid_numeric_pmid_values(self) -> None:
+        for pmid in (0, -1, 1_000_000_000_000, True):
+            with self.subTest(pmid=pmid):
+                response = {"status": "ok", "records": [{"doi": DOI, "pmid": pmid}]}
+                with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(json.dumps(response).encode()))):
+                    row = TOOL.resolve([DOI])["rows"][0]
+                self.assertEqual(row["identifier_status"], "MATCHED_WITHOUT_PUBMED_OR_PMC_ID")
+                self.assertIsNone(row["pmid"])
 
     def test_redirect_oversize_timeout_and_non_json_are_explicit(self) -> None:
         redirect = FakeOpener(error=HTTPError(TOOL.API_BASE, 302, "redirect", {}, None))

@@ -84,8 +84,9 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(evidence["routing"]["explicit_allowlist"]["decision"], opted_in["decision"])
         self.assertEqual(evidence["routing"]["explicit_allowlist"]["selected_tool_ids"], [card["tool_id"]])
         self.assertFalse(evidence["routing"]["explicit_allowlist"]["execution_authorized"])
+        self.assertRegex(evidence["routing"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"], r"^[0-9a-f]{40}$")
         self.assertEqual(
-            evidence["routing"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            opted_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
 
@@ -187,7 +188,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(evidence["routes"]["explicit_allowlist"]["execution_authorized"])
         self.assertEqual(
             evidence["routes"]["explicit_allowlist"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
-            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+            evidence["candidate_catalog_refresh"]["current_candidate_catalog_git_blob_sha1"],
         )
 
     def test_agent_episode_binding_preflight_is_default_off_and_opt_in_is_not_execution(self) -> None:
@@ -759,7 +760,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertEqual(
             evidence["route_profile"]["candidate_catalog_git_blob_sha1"],
-            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+            evidence["candidate_catalog_refresh"]["current_candidate_catalog_git_blob_sha1"],
         )
         route = evidence["route_profile"]
         task = profile(
@@ -1060,6 +1061,41 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         # This pre-addition receipt remains bound to its historical candidate catalog snapshot.
         self.assertEqual(evidence["candidate_binding"]["candidate_cards_git_blob_sha1"], "01eb6ebeec0b55c5a1416ad557ea524182ca71e4")
         self.assertNotEqual(current_candidate_hash, evidence["candidate_binding"]["candidate_cards_git_blob_sha1"])
+
+    def test_pubmed_doi_update_composition_is_default_off_and_routes_only_with_both_hosts(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "research.audit_pubmed_updates_from_doi"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("pubmed-doi-update-audit", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        missing_host = planner.plan_tool_route(
+            {**task, "allowed_network_hosts": ["pmc.ncbi.nlm.nih.gov"]},
+            include_experimental_tool_ids=[tool_id],
+        )
+        opted = planner.plan_tool_route(
+            {**task, "allowed_network_hosts": ["pmc.ncbi.nlm.nih.gov", "eutils.ncbi.nlm.nih.gov"]},
+            include_experimental_tool_ids=[
+                tool_id,
+                "research.resolve_pubmed_identifiers",
+                "research.inspect_pubmed_update_links",
+            ],
+        )
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn({"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"}, default["rejected_candidates"])
+        self.assertEqual(missing_host["decision"], "INCOMPLETE")
+        self.assertIn({"tool_id": tool_id, "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"}, missing_host["rejected_candidates"])
+        self.assertEqual(opted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opted["selected_tools"]], [tool_id])
+        self.assertFalse(opted["execution_authorized"])
+        self.assertEqual(opted["selected_tools"][0]["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov", "eutils.ncbi.nlm.nih.gov"])
+        self.assertEqual(opted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(
+            opted["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
 
 
 if __name__ == "__main__":

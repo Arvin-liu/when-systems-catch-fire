@@ -335,9 +335,10 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         noaa = next(card for card in candidates if card["tool_id"] == "research.lookup_noaa_global_ch4_annual_growth")
         noaa_co2 = next(card for card in candidates if card["tool_id"] == "research.lookup_noaa_global_co2_annual_growth")
         updates = next(card for card in candidates if card["tool_id"] == "research.inspect_pubmed_update_links")
+        pubmed_composition = next(card for card in candidates if card["tool_id"] == "research.audit_pubmed_updates_from_doi")
         editorial = next(card for card in candidates if card["tool_id"] == "writing.preflight_cognitive_migration_revision")
         europe_pmc = next(card for card in candidates if card["tool_id"] == "research.search_europe_pmc_query")
-        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], europe_pmc["tool_id"]})
+        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], pubmed_composition["tool_id"], "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], europe_pmc["tool_id"]})
         self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertEqual(pubmed["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov"])
         self.assertEqual(openalex["permissions"]["network_hosts"], ["api.openalex.org"])
@@ -375,6 +376,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(crossref["estimated_cost"]["status"], "UNKNOWN")
         self.assertIn("article full text", " ".join(crossref["not_for"]))
         self.assertEqual(pubmed["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
+        self.assertEqual(pubmed["version"], "0.1.1")
         self.assertIn("--allow-public-network", pubmed["entrypoint"])
         self.assertEqual(pubmed["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertIn(
@@ -444,10 +446,20 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         )
         self.assertEqual(updates["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
         self.assertIn("--allow-public-network", updates["entrypoint"])
-        self.assertEqual(updates["evidence_level"], "REAL_TOOL_TEST")
+        self.assertEqual(updates["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertEqual(updates["estimated_cost"]["status"], "UNKNOWN")
         self.assertEqual(updates["dependencies"], [])
         self.assertIn("absence claim", updates["claim_ceiling"])
+        self.assertEqual(updates["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertTrue(updates["unique_remaining_use_cases"])
+        self.assertEqual(pubmed_composition["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov", "eutils.ncbi.nlm.nih.gov"])
+        self.assertEqual(pubmed_composition["execution_mode"], "READ_ONLY_RUN")
+        self.assertEqual(pubmed_composition["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertFalse(pubmed_composition["router_selectable_by_default"])
+        self.assertEqual(pubmed_composition["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(set(pubmed_composition["comparison_evidence"]["compared_tool_ids"]), {pubmed["tool_id"], updates["tool_id"]})
+        self.assertEqual(pubmed_composition["replacement_candidates"], [])
+        self.assertTrue(pubmed_composition["unique_remaining_use_cases"])
         self.assertEqual(editorial["execution_mode"], "READ_ONLY_RUN")
         self.assertEqual(editorial["evidence_level"], "REAL_TOOL_TEST")
         self.assertFalse(editorial["permissions"]["network"])
@@ -470,6 +482,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             batch["tool_id"],
             "collaboration.verify_handoff_artifact_files",
             "research.compare_publication_metadata_snapshots",
+            pubmed["tool_id"],
+            updates["tool_id"],
+            pubmed_composition["tool_id"],
             "maintenance.attribute_actions_validation_evidence",
             "research.search_europe_pmc_query",
             "maintenance.compare_context_packet_variants",

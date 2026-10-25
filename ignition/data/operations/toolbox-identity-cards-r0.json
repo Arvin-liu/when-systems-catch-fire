@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
-    "candidate_count": 31
+    "blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
+    "candidate_count": 32
   },
   "cards": [
     {
@@ -219,7 +219,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -437,7 +437,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/tools/toolbox_agent_episode_binding.py",
@@ -451,7 +451,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -709,7 +709,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/tests/test_toolbox_agent_episode_binding.py",
@@ -738,7 +738,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1003,12 +1003,12 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0c6b0503a2447d4c5edb1079fe8ddc49b5dbd206"
+          "sha1": "7b145cb575fef39e30bc7eb5fde27ba67962fbce"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/tools/toolbox_context_packet.py",
@@ -1027,7 +1027,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1514,7 +1514,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1692,7 +1692,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2028,7 +2028,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2198,7 +2198,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+          "sha1": "4af27d4d329c9cab403c62ce371b8bf354911108"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -2218,11 +2218,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2562,7 +2562,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2773,12 +2773,12 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0c6b0503a2447d4c5edb1079fe8ddc49b5dbd206"
+          "sha1": "7b145cb575fef39e30bc7eb5fde27ba67962fbce"
         },
         {
           "path": "ignition/data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json",
@@ -2787,7 +2787,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3131,7 +3131,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4074,7 +4074,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4274,7 +4274,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4542,7 +4542,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4821,16 +4821,16 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0c6b0503a2447d4c5edb1079fe8ddc49b5dbd206"
+          "sha1": "7b145cb575fef39e30bc7eb5fde27ba67962fbce"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5223,7 +5223,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0c6b0503a2447d4c5edb1079fe8ddc49b5dbd206"
+          "sha1": "7b145cb575fef39e30bc7eb5fde27ba67962fbce"
         },
         {
           "path": "ignition/tests/test_toolbox_producer_consumer_semantic_preflight.py",
@@ -5233,7 +5233,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -5267,7 +5267,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5471,7 +5471,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5849,6 +5849,261 @@
       "router_selectable_by_default": false
     },
     {
+      "tool_id": "research.audit_pubmed_updates_from_doi",
+      "display_name": {
+        "zh": "PubMed DOI 更新关联审计",
+        "en": "PubMed DOI update-link audit"
+      },
+      "description": "Resolve one caller-supplied DOI through the fixed PMC ID Converter, then read raw PubMed Comments/Corrections only when an exact PMID is returned.",
+      "version": "0.1.0",
+      "license": "Composition wrapper BUSL-1.1; wrapped adapters and NCBI service terms apply independently; no license for provider record data is asserted.",
+      "maintainer": "Ignition repository maintainers; no Owner, source-authentication, or scientific authority is implied.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_doi_update_audit.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "role": "BOUNDED_TWO_STAGE_COMPOSITION_CLI"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "role": "FIXED_HOST_DOI_TO_PUBMED_IDENTIFIER_STAGE"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
+          "role": "FIXED_HOST_EXACT_PMID_RELATION_STAGE"
+        },
+        {
+          "path": "ignition/schemas/operations/pubmed-doi-update-audit-input-r0.schema.json",
+          "role": "ONE_DOI_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/pubmed-doi-update-audit-output-r0.schema.json",
+          "role": "STAGED_RESULT_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pubmed_doi_update_audit.py",
+          "role": "FOCUSED_AND_NEGATIVE_CONTROL_TESTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "role": "C1_MATCHED_MANUAL_VS_COMPOSED_TASK_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+          "role": "PRESERVED_PRE_FIX_LIMITED_OUTCOME"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_TWO_HOST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_AND_HOST_GATED_ROUTE_NEGATIVE_CONTROLS"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+        "ignition/tools/toolbox_pubmed_update_link_reader.py"
+      ],
+      "good_for": [
+        "A single DOI task that needs both NCBI PMID/PMCID lookup and raw PubMed Comments/Corrections for an exact PMID returned by the first stage.",
+        "Returning both source-stage receipts and an explicit skipped outcome when the DOI response contains no exact PMID.",
+        "An allowlisted router task whose requested output spans DOI-to-PMID resolution and exact-record update-link fields."
+      ],
+      "not_for": [
+        "Bulk DOI processing; the composition intentionally accepts exactly one DOI per invocation.",
+        "Proving that a paper is or is not retracted, corrected, valid, authentic, or scientifically supported.",
+        "Treating an unresolved PMID or empty relation list as evidence that no update exists.",
+        "Article title, abstract, full text, arbitrary URL, source discovery, or repository-record modification."
+      ],
+      "only_if": [
+        "The caller supplies one bare DOI and explicitly permits sending it to the fixed public PMC ID Converter; if a PMID resolves, the caller also permits sending that identifier to fixed NCBI EFetch.",
+        "The CLI is invoked with --allow-public-network and the environment separately permits both pmc.ncbi.nlm.nih.gov and eutils.ncbi.nlm.nih.gov.",
+        "The caller accepts two serial fixed-host GETs at most and the limited meaning of each returned stage."
+      ],
+      "counterindicated_when": [
+        "The DOI or any derived PMID is confidential or must not be sent to a public service.",
+        "Either network host is unavailable, disallowed, or not explicitly approved for this invocation.",
+        "The task requires complete retraction status, article-content review, source-authenticity review, or scientific assessment."
+      ],
+      "accepted_input_types": [
+        "JSON stdin object with exactly one unique bare DOI identifier"
+      ],
+      "output_types": [
+        "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
+        "If the identifier response returns one exact PMID, that PubMed record's raw Comments/Corrections fields and response digest; otherwise an explicit no-fetch stage outcome."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_TWO_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "ignition/tools/toolbox_pubmed_update_link_reader.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "pmc.ncbi.nlm.nih.gov",
+          "eutils.ncbi.nlm.nih.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "With --allow-public-network, makes one HTTPS GET to pmc.ncbi.nlm.nih.gov using the supplied DOI. It makes at most one subsequent HTTPS GET to eutils.ncbi.nlm.nih.gov and only if the first response yields one exact numeric PMID.",
+        "Both stages use their existing bounded response, timeout, redirect, content-type, parsing, and no-retry rules; the composition does not widen endpoints or return article title/abstract fields.",
+        "Reads stdin and writes one JSON result to stdout or an input error to stderr; creates or modifies no repository file and uses no secrets, credentials, API key, billing, or external action."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library; the two pinned local adapter modules"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "At most two serial public GET requests. No comparable billed cost, bandwidth, latency distribution, or service-availability benchmark is established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "This composition reuses DOI-to-PMID/PMCID resolution but continues to exact PubMed relation fields; the resolver alone does not read Comments/Corrections."
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The raw relation reader accepts an exact PMID only; this composition starts from one DOI and conditionally feeds it the resolver's returned PMID."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Route one DOI directly to a bounded two-stage resolution and exact PubMed update-link read while preserving independent stage receipts and skipping the second request unless an exact PMID is returned."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One live DOI task was executed as separate resolver-plus-reader calls and through this composition. The observed identity fields matched; response hashes differed on the resolver stage, while the exact PubMed relation-stage digest matched.",
+        "compared_tool_ids": [
+          "research.resolve_pubmed_identifiers",
+          "research.inspect_pubmed_update_links"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "ignition/tools/toolbox_pubmed_update_link_reader.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+          "ignition/data/operations/toolbox-pubmed-doi-update-route-evidence-r0.json",
+          "ignition/tests/test_toolbox_pubmed_doi_update_audit.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "findings": [
+          "For DOI 10.1371/journal.pone.0005403 both execution paths mapped to PMID 19404397 and PMCID PMC2671458 and the same PubMed relation-stage record/digest.",
+          "The resolver response hashes differed across separate live calls although normalized identity/status fields matched; this limits byte-level equivalence claims.",
+          "A single task shows the composition can route one DOI to both stages; it does not establish broad accuracy, service coverage, cost, or reliability.",
+          "The identifier resolver and exact-PMID reader retain separate useful input scopes and are not replaced."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Keep as a default-off optional one-DOI two-stage route for tasks needing both identifier resolution and raw PubMed update fields; retain the DOI-only and exact-PMID-only adapters for their own scopes."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry, existing adapter contract, or default route change is made. Only tasks requiring both DOI resolution and PubMed relations may explicitly allowlist this composition.",
+          "The composition does not alter Current operations or default routing. It may be used only by explicit opt-in tasks that need both stages."
+        ],
+        "rollback_steps": [
+          "Remove the optional card, composition wrapper, focused test, schemas, and human-directory projection from the isolated candidate; regenerate identity projections and preserve source adapter code and historical comparison evidence.",
+          "Remove the composition independently; the resolver and exact-PMID reader remain available as before."
+        ]
+      },
+      "fallback": "If the first stage fails or returns no exact PMID, retain its explicit status and do not query EFetch. If the second stage fails or returns no relations, preserve that limited outcome and do not infer absence of an update.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_pubmed_doi_update_audit.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network makes neither stage call.",
+          "Reject URL-like, malformed, over-limit, or multi-DOI input before either stage.",
+          "Do not call PubMed EFetch when the resolver fails or returns no exact numeric PMID.",
+          "Keep empty relations and unavailable sources distinct; do not infer no retraction or no update.",
+          "Only two pinned fixed hosts are declared; no write, secret, billing, redirect, or arbitrary-URL capability is added."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the candidate is explicitly allowlisted for a one-DOI task that requires both identifier resolution and raw PubMed Comments/Corrections.",
+        "The route proposal does not authorize network execution; the actual invocation separately requires --allow-public-network and approval to send the DOI and any returned PMID to the two listed hosts.",
+        "Do not select for PMID-only reading, DOI metadata verification, complete retraction adjudication, article-content review, or scientific-claim review."
+      ],
+      "claim_ceiling": "One live PMC ID Converter DOI-to-PMID response and, only when that response yields an exact PMID, raw Comments/Corrections fields from the matching PubMed record at retrieval time. This tool does not establish completeness, source authenticity, article content, retraction status, scientific validity, or absence of updates.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "ab209f69aebb5beaf098664cc85f1e4b39ca120e"
+        },
+        {
+          "path": "ignition/schemas/operations/pubmed-doi-update-audit-input-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "59dc01358fd1cbe4057d1065a80b9b842601f053"
+        },
+        {
+          "path": "ignition/schemas/operations/pubmed-doi-update-audit-output-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "76f87d62e3492cf5537212438f239821f3ac299a"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pubmed_doi_update_audit.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "1d12ac333cae6dbe7eb062a6df6e6b7bfcf6501f"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "f5a958cdc286bf003ce7b27a069423301405a5b2"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "3f8cb3beecb1a874f7d328a431156db68af40f5c"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "a7c6d7a5c94f214c39eb0dd798e501601d45e3c4"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
       "tool_id": "research.compare_publication_metadata_snapshots",
       "display_name": {
         "zh": "跨来源出版元数据比较器",
@@ -6086,7 +6341,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6232,7 +6487,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_update_link_reader.py --stdin --allow-public-network",
       "source_refs": [
@@ -6243,6 +6498,18 @@
         {
           "path": "ignition/tests/test_toolbox_pubmed_update_link_reader.py",
           "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "role": "C1_MATCHED_COMPOSITION_COMPARISON"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "role": "C1_COMPOSED_ROUTE_IMPLEMENTATION_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "role": "C1_DOI_IDENTIFIER_STAGE_IMPLEMENTATION_COMPARATOR"
         }
       ],
       "dependencies": [],
@@ -6308,6 +6575,11 @@
           "tool_id": "research.resolve_pubmed_identifiers",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
           "reason": "The identifier resolver maps DOI values to returned PMID/PMCID values; this tool requires an exact PMID and reads only the record's raw comments/corrections relations."
+        },
+        {
+          "tool_id": "research.audit_pubmed_updates_from_doi",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The composition starts from one DOI and performs lookup conditionally; this standalone reader remains useful when the caller already has an exact PMID and needs only its raw relation fields."
         }
       ],
       "fallback": "If live network use is not approved or fails, preserve NOT_RUN or the acquisition failure and open the official PubMed record manually only when the caller separately authorizes that lookup; never infer no update from an empty/unavailable response.",
@@ -6330,29 +6602,43 @@
       ],
       "claim_ceiling": "Raw PubMed Comments/Corrections fields for exact records at retrieval time only; the response may omit relationships that exist elsewhere or have not been added, so no completeness, retraction-status, content, authenticity, scientific-validity, or absence claim is established.",
       "replacement_candidates": [],
-      "unique_remaining_use_cases": [],
+      "unique_remaining_use_cases": [
+        "Read only the raw Comments/Corrections fields for exact caller-supplied PMIDs, including PMIDs obtained outside the DOI resolver.",
+        "Avoid an unnecessary DOI-conversion request when the task already has an authorized exact PMID."
+      ],
       "comparison_evidence": {
-        "status": "COMPARISON_UNKNOWN",
-        "scope": "Existing evidence tests this candidate in isolation; no paired same-task comparison against its mapped alternatives has been recorded for C1.",
-        "compared_tool_ids": [],
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One matched DOI task compared this exact-PMID reader as a separate stage and within a DOI composition; the relation row and response hash matched across the two calls.",
+        "compared_tool_ids": [
+          "research.resolve_pubmed_identifiers",
+          "research.audit_pubmed_updates_from_doi"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "ignition/tools/toolbox_pubmed_identifier_resolver.py"
+        ],
         "evidence_refs": [
-          "ignition/tools/toolbox_pubmed_update_link_reader.py",
+          "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
           "ignition/tests/test_toolbox_pubmed_update_link_reader.py"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters."
+          "The reader provides exact-PMID relation inspection; the composition supplies DOI resolution first and skips the reader if no exact PMID is returned.",
+          "On the matched task both paths returned RECORD_FOUND_NO_RECORDED_RELATIONS and the same response hash. This supports stage consistency for that record, not comprehensive update detection.",
+          "The exact-PMID contract remains a unique standalone use case; no reader retirement or replacement is supported."
         ]
       },
       "deprecation_or_retirement_status": {
-        "status": "ACTIVE",
-        "basis": "The optional experimental entry remains available and default-off; comparative retirement status is unknown."
+        "status": "SPECIALIZED",
+        "basis": "Keep the default-off exact-PMID reader for caller-supplied PMID tasks; the DOI composition extends the chain but does not cover this standalone input scope."
       },
       "migration_and_rollback": {
         "migration_notes": [
-          "No automatic migration is inferred; preserve this exact input/output contract until a same-task comparison supports specialization or replacement."
+          "No automatic migration is inferred; preserve this exact input/output contract until a same-task comparison supports specialization or replacement.",
+          "Existing PMID-only calls remain on this adapter and incur no identifier-resolution request."
         ],
         "rollback_steps": [
-          "Remove the candidate entry and wrapper from the isolated toolbox branch, regenerate the identity and human-directory projections, and preserve prior commits and evidence."
+          "Remove the candidate entry and wrapper from the isolated toolbox branch, regenerate the identity and human-directory projections, and preserve prior commits and evidence.",
+          "If the composition is removed, keep this standalone exact-PMID reader and its prior evidence untouched."
         ]
       },
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
@@ -6367,10 +6653,25 @@
           "path": "ignition/tests/test_toolbox_pubmed_update_link_reader.py",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "131e70d8017d3b04df42483d9d1fd7a402bd70ee"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "f5a958cdc286bf003ce7b27a069423301405a5b2"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6563,7 +6864,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/docs/operations/arxiv-metadata-lookup.md",
@@ -6587,7 +6888,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6807,7 +7108,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-route-evidence-r0.json",
@@ -6817,7 +7118,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0c6b0503a2447d4c5edb1079fe8ddc49b5dbd206"
+          "sha1": "7b145cb575fef39e30bc7eb5fde27ba67962fbce"
         },
         {
           "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
@@ -6856,7 +7157,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7063,7 +7364,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/data/operations/toolbox-noaa-co2-annual-growth-route-evidence-r0.json",
@@ -7078,7 +7379,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0c6b0503a2447d4c5edb1079fe8ddc49b5dbd206"
+          "sha1": "7b145cb575fef39e30bc7eb5fde27ba67962fbce"
         },
         {
           "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
@@ -7097,7 +7398,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7305,7 +7606,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/data/operations/iterations/110/openalex/PREREGISTRATION.md",
@@ -7339,7 +7640,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7559,7 +7860,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7678,8 +7979,8 @@
         "zh": "PubMed/PMC DOI 标识符解析器",
         "en": "PubMed/PMC DOI identifier resolver"
       },
-      "description": "Resolve caller-supplied bare DOIs to matching PMID and PMCID identifiers through the fixed PMC ID Converter API.",
-      "version": "0.1.0",
+      "description": "Resolve caller-supplied bare DOIs to matching PMID and PMCID identifiers through the fixed PMC ID Converter API, normalizing NCBI's numeric JSON PMID representation to a bounded decimal string.",
+      "version": "0.1.1",
       "license": "Wrapper BUSL-1.1; NCBI PMC ID Converter service terms apply, and no license for underlying record metadata is asserted. API documentation: https://pmc.ncbi.nlm.nih.gov/tools/idconv/.",
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
@@ -7703,13 +8004,30 @@
         {
           "path": "ignition/data/operations/toolbox-real-task-route-evidence-r1.json",
           "role": "R1_REPEAT_REAL_ROUTE_AND_MEASURED_SINGLE_RUN_OUTCOME"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "role": "C1_MATCHED_COMPOSITION_COMPARISON_AND_INTEGER_ID_FINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+          "role": "PRESERVED_PRE_FIX_NO_EXACT_PMID_OUTCOME"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "role": "C1_COMPOSED_ROUTE_IMPLEMENTATION_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
+          "role": "C1_EXACT_PMID_STAGE_IMPLEMENTATION_COMPARATOR"
         }
       ],
       "dependencies": [],
       "good_for": [
         "Mapping caller-supplied DOI identifiers to PubMed PMID and PMC PMCID values when those identifiers are returned by NCBI's ID Converter.",
         "Retaining per-DOI source response hashes, HTTP outcomes, and explicit no-match results.",
-        "Adding an NCBI/PMC identifier lookup alongside a separately requested Crossref DOI metadata comparison."
+        "Adding an NCBI/PMC identifier lookup alongside a separately requested Crossref DOI metadata comparison.",
+        "Normalizing a positive bounded integer PMID returned by NCBI while preserving the legacy decimal-string form."
       ],
       "not_for": [
         "Retrieving article full text, abstracts, publisher pages, or arbitrary URLs.",
@@ -7790,50 +8108,60 @@
       ],
       "claim_ceiling": "DOI-to-PMID/PMCID identifier lookup from the live PMC ID Converter response only; response hashes bind received bytes, not source authenticity, article content, bibliographic accuracy, scientific truth, retraction status, or complete PubMed/PMC coverage.",
       "replacement_candidates": [],
-      "unique_remaining_use_cases": [],
+      "unique_remaining_use_cases": [
+        "Resolve one to ten DOI identifiers to NCBI-returned PMID/PMCID values without requesting PubMed update relations.",
+        "Provide the first DOI-to-PMID/PMCID stage for the optional single-DOI update-audit composition."
+      ],
       "comparison_evidence": {
-        "status": "COMPARISON_UNKNOWN",
-        "scope": "A single paired route and live API task records complementary output contracts and one exact outcome; it does not establish comparative quality, effort, cost, broad replacement value, or retirement.",
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One live DOI pair exposed the NCBI numeric-PMID response form and demonstrated its use as the identifier stage in a raw-update-link workflow. The candidate remains separately useful for DOI-only identifier lookup.",
         "compared_tool_ids": [
-          "research.verify_crossref_metadata"
+          "research.verify_crossref_metadata",
+          "research.audit_pubmed_updates_from_doi"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "ignition/tools/toolbox_pubmed_update_link_reader.py"
         ],
         "evidence_refs": [
-          "ignition/tools/toolbox_pubmed_identifier_resolver.py",
-          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
-          "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
-          "ignition/data/operations/toolbox-real-task-route-evidence-r1.json"
+          "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters.",
-          "On GAP001-02, the router selected this identifier lookup with Crossref metadata only when both outputs were required; ID Converter returned the matched DOI with no PMID/PMCID (HTTP 200). The result does not establish global absence or comparative cost; C1 remains unknown.",
-          "R1 repeated the same GAP001-02 public lookup through the task-sufficient two-tool route: Crossref response digest was unchanged; PMC ID Converter response bytes changed while HTTP status and MATCHED_WITHOUT_PUBMED_OR_PMC_ID output were unchanged. One repeat does not establish source completeness or reliability.",
-          "One invocation per tool observed 1547.352 ms and 68.352 ms child CPU for Crossref, and 622.937 ms and 71.600 ms child CPU for the PMC converter, including process and network overhead. Billed cost, bandwidth, stable latency, and comparative cost remain UNKNOWN."
+          "A live PMC ID Converter response encoded PMID as an integer; v0.1.0 dropped it. v0.1.1 normalizes bounded positive integers while retaining string inputs and rejecting booleans, zero, negatives, and over-limit values.",
+          "The resolver still covers DOI-to-PMID/PMCID lookup without a PubMed relation request; the composition proceeds to the second stage only when an exact PMID is returned.",
+          "One DOI comparison does not establish provider completeness, broad reliability, cost, or retirement of either adapter."
         ]
       },
       "deprecation_or_retirement_status": {
-        "status": "ACTIVE",
-        "basis": "The optional experimental entry remains available and default-off; comparative retirement status is unknown."
+        "status": "SPECIALIZED",
+        "basis": "Optional/default-off DOI identifier lookup remains useful independently; the same-task composition extends this capability but does not cover DOI-only lookup tasks."
       },
       "migration_and_rollback": {
         "migration_notes": [
-          "No automatic migration is inferred; preserve this exact input/output contract until a same-task comparison supports specialization or replacement."
+          "No automatic migration is inferred; preserve this exact input/output contract until a same-task comparison supports specialization or replacement.",
+          "Version 0.1.1 adds support for the observed positive integer PMID JSON form and preserves decimal-string inputs; downstream output remains a normalized string and the resolver remains optional/default-off.",
+          "Do not migrate DOI-only identifier lookup callers to the composition; they would incur an unnecessary second public request when a PMID is present."
         ],
         "rollback_steps": [
-          "Remove the candidate entry and wrapper from the isolated toolbox branch, regenerate the identity and human-directory projections, and preserve prior commits and evidence."
+          "Remove the candidate entry and wrapper from the isolated toolbox branch, regenerate the identity and human-directory projections, and preserve prior commits and evidence.",
+          "If integer normalization causes an incompatible consumer result, revert the bounded numeric branch in _normalized_identifier, restore the prior wrapper version and candidate card, rerun focused tests, and preserve the provider-response evidence.",
+          "If version 0.1.1 numeric normalization is incompatible, restore resolver 0.1.0 and its card while retaining the exact provider-shape evidence."
         ]
       },
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
-      "source_blob_sha1": "2cb5117e19bd9b30b594404a84def2e4aeb7a1de",
+      "source_blob_sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23",
       "source_refs_with_hashes": [
         {
           "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "2cb5117e19bd9b30b594404a84def2e4aeb7a1de"
+          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
         },
         {
           "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "5c4a93069dbfb5fa7c0f8bafdf06579567280261"
+          "sha1": "66364660df815fdff714f723752f25d9a9e2bf92"
         },
         {
           "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
@@ -7844,10 +8172,30 @@
           "path": "ignition/data/operations/toolbox-real-task-route-evidence-r1.json",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "eb7db04df42c9c795af2c5a3e7da635d59846938"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "f5a958cdc286bf003ce7b27a069423301405a5b2"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-doi-update-real-task-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "3f8cb3beecb1a874f7d328a431156db68af40f5c"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "ab209f69aebb5beaf098664cc85f1e4b39ca120e"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8147,7 +8495,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         },
         {
           "path": "ignition/docs/operations/toolbox-europe-pmc-query-search.md",
@@ -8162,7 +8510,7 @@
         {
           "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "2cb5117e19bd9b30b594404a84def2e4aeb7a1de"
+          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
         },
         {
           "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
@@ -8172,7 +8520,7 @@
         {
           "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "5c4a93069dbfb5fa7c0f8bafdf06579567280261"
+          "sha1": "66364660df815fdff714f723752f25d9a9e2bf92"
         },
         {
           "path": "ignition/tests/test_toolbox_pubmed_update_link_reader.py",
@@ -8241,7 +8589,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8437,7 +8785,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8819,7 +9167,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9014,7 +9362,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9206,7 +9554,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9710,11 +10058,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d00d092e3a839b0f89f4f4bbcaed1327151f264d"
+          "sha1": "bc2be20e4a4eaab7e4b2659a911b49b0a60cd04b"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "candidate_catalog_blob_sha1": "4af27d4d329c9cab403c62ce371b8bf354911108",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9846,6 +10194,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 51,
+  "card_count": 52,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }
