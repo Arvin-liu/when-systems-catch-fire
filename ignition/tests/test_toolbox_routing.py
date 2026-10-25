@@ -60,6 +60,25 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["execution_authorized"])
         self.assertEqual(included["source_refs"]["current_registry_git_blob_sha1"], "21fe1bfcdb0d9762edd60339aca14f1040393fc7")
 
+    def test_batch_identity_resolution_is_excluded_until_explicitly_allowlisted(self) -> None:
+        task = profile(
+            "batch-current-identity-resolution",
+            ["JSON stdin object with an ordered nonempty array of exact reference strings"],
+            ["input-ordered canonical identity resolution rows", "authority and resolver SHA-256 receipt"],
+        )
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["foundation.batch_resolve_current_asset_references"],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["foundation.batch_resolve_current_asset_references"],
+        )
+        self.assertFalse(included["execution_authorized"])
+
     def test_unknown_experimental_allowlist_id_is_reported(self) -> None:
         result = planner.plan_tool_route(
             profile("unknown-opt-in", ["article cluster ID"], ["source-backed cluster member brief"]),

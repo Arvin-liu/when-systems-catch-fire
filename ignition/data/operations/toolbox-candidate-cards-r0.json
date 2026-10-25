@@ -190,6 +190,111 @@
         "A route proposal never authorizes invocation; each selected tool is separately checked at call time."
       ],
       "claim_ceiling": "A deterministic proposal based on declared contracts only; completion quality, measured cost, invocation, permission, Owner approval, and scientific validity remain unverified."
+    },
+    {
+      "tool_id": "foundation.batch_resolve_current_asset_references",
+      "display_name": {
+        "zh": "Current 资产身份批量解析",
+        "en": "Batch Current asset identity resolver"
+      },
+      "description": "Resolve an ordered batch of exact references against the checked-out Current canonical identity, alias, correction, claim, and legacy-mapping authorities; emit a source-hashed receipt to stdout.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_batch_resolve_current_assets.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_batch_resolve_current_assets.py --stdin (stdin JSON: {\"references\":[...]})",
+      "source_refs": [
+        {"path": "ignition/tools/toolbox_batch_resolve_current_assets.py", "role": "BATCH_TOOL_ENTRYPOINT"},
+        {"path": "ignition/tools/foundation/resolve_current_canonical_asset.py", "role": "EXISTING_EXACT_RESOLVER_ALGORITHM"},
+        {"path": "ignition/data/foundation/function-assets/identity-cards.jsonl", "role": "CURRENT_FUNCTION_IDENTITY_AUTHORITY"},
+        {"path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl", "role": "CURRENT_NONFUNCTION_CLAIM_AUTHORITY"},
+        {"path": "ignition/data/governance/knowledge-experience/alias-index.jsonl", "role": "CURRENT_REGISTERED_ALIAS_AUTHORITY"},
+        {"path": "ignition/data/foundation/function-assets/corrections.jsonl", "role": "CURRENT_IDENTITY_CORRECTION_AUTHORITY"},
+        {"path": "ignition/data/foundation/mappings/legacy-mappings.jsonl", "role": "CURRENT_LEGACY_MIGRATION_AUTHORITY"}
+      ],
+      "dependencies": [
+        "ignition/tools/foundation/resolve_current_canonical_asset.py",
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+        "ignition/data/foundation/function-assets/corrections.jsonl",
+        "ignition/data/foundation/mappings/legacy-mappings.jsonl"
+      ],
+      "good_for": [
+        "Resolving multiple exact IDs, canonical titles, registered aliases, and authority-backed identity corrections in one input-ordered batch.",
+        "Producing a reproducible receipt with SHA-256 references to the resolver and five Current authority snapshots.",
+        "Preserving ambiguous and unresolved references as explicit outcomes instead of dropping or guessing them."
+      ],
+      "not_for": [
+        "Fuzzy, semantic, natural-language, web, or cross-repository identity search.",
+        "Changing identities, repairing source data, or writing results into the repository.",
+        "Establishing scientific truth, proof, external validity, or evidence quality."
+      ],
+      "only_if": [
+        "The caller supplies a nonempty JSON object containing exactly one key, references, whose value is a nonempty array of nonblank strings.",
+        "All five Current authority files and the existing exact resolver are available in the same repository snapshot.",
+        "The caller accepts repository-snapshot resolution semantics and an output receipt on stdout."
+      ],
+      "counterindicated_when": [
+        "The task requires fresh external sources, fuzzy matching, or resolution beyond the checked-out repository snapshot.",
+        "An ambiguous or unresolved result must be automatically selected or corrected.",
+        "The task asks for scientific adjudication, proof, or evidence validation."
+      ],
+      "accepted_input_types": ["JSON stdin object with an ordered nonempty array of exact reference strings"],
+      "output_types": ["input-ordered canonical identity resolution rows", "authority and resolver SHA-256 receipt"],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SNAPSHOT",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/foundation/resolve_current_canonical_asset.py",
+          "ignition/data/foundation/function-assets/identity-cards.jsonl",
+          "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+          "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+          "ignition/data/foundation/function-assets/corrections.jsonl",
+          "ignition/data/foundation/mappings/legacy-mappings.jsonl"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": ["Writes the result only to stdout; malformed input and unavailable authority are reported to stderr with nonzero status; no repository files are created or changed."],
+      "runtime_dependencies": ["Python >=3.10 standard library"],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The resolver rebuilds exact lookup indexes for each reference; no comparable batch latency or memory benchmark has been established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "relationship": "COMPLEMENTARY_SINGLE_REFERENCE_TOOL",
+          "reason": "The Current operation exposes the single-reference resolver contract; this experimental CLI adds ordered multi-reference input and a batch receipt while reusing that resolver algorithm."
+        }
+      ],
+      "fallback": "For one reference, use the existing foundation.resolve_current_asset operation or ignition/tools/foundation/resolve_current_canonical_asset.py --reference; if this batch tool is unavailable, process references individually and preserve each unresolved or ambiguous status.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_batch_canonical_resolution_tool.py",
+          "ignition/tests/test_current_canonical_resolution.py"
+        ],
+        "negative_controls": [
+          "Unknown, historical-path, and near-match references remain explicitly unresolved in input order.",
+          "Malformed batches, path traversal, and symlinked authorities fail closed without partial stdout output.",
+          "Running the CLI creates or changes no repository files."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Include only through an explicit experimental-tool allowlist for exact multi-reference repository identity resolution.",
+        "The route proposal does not execute the tool; the caller must separately authorize and supply the specific batch input.",
+        "Do not select when fuzzy matching, external freshness, scientific judgment, or automatic identity repair is required."
+      ],
+      "claim_ceiling": "Repository-snapshot canonical identity and migration resolution only; ambiguous and unresolved rows remain explicit; no fuzzy identity, truth, proof, evidence upgrade, or external validity is inferred."
     }
   ]
 }
