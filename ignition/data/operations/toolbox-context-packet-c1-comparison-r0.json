@@ -1,0 +1,245 @@
+{
+  "schema_version": "toolbox-context-packet-c1-comparison-r0",
+  "tool_id": "knowledge.assemble_context_packet",
+  "tool_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "claim_ceiling": "A bounded packet of caller-selected local excerpts with current byte-digest checks and structural obligation linkage only. Current-ref resolution, source-kind declarations, authority, freshness meaning, semantic relevance, evidential support, sufficiency, truth, proof, scientific acceptance, and publication readiness are not evaluated.",
+  "source_binding": {
+    "candidate_catalog_git_blob_sha1": "835aace12da79c5c68e14be27b2489ea7c41e8b3",
+    "tool_source_sha256": "568822468ab808c6f70eddf034d229f062b0d5a2cdafb595dad2a497c1ecbe33",
+    "route_receipt_path": "ignition/data/operations/toolbox-context-packet-route-evidence-r0.json"
+  },
+  "blueprint_evidence": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "reviewed_ref": "2f13848f693cd8411329fd92c4bf0735464e3677",
+    "blueprint": "AB-01 Reliable Context Assembly / ContextPacket",
+    "review_path": "reviews/2026-10-04-ab01-independent-pilot-review.md",
+    "claim_ceiling": "Independent synthetic pilot only; not public Current, production utility, or an external validity result.",
+    "selected_metrics": {
+      "required_context_coverage": "8/12 -> 12/12",
+      "stale_source_admission": "1/2 -> 0/2",
+      "false_complete": "2/5 -> 0/5",
+      "source_attribution_precision": "8/14 -> 10/10",
+      "mandatory_packet_violations": 0
+    }
+  },
+  "matched_local_task": {
+    "request": {
+      "packet_id": "context-packet-smoke-20261025",
+      "current_ref": "local checkout based on 14ee27504fb91434cc497292297c130f8ae4b271; caller supplied, not resolved",
+      "operation_or_question_id": "toolbox-context-packet-boundary-smoke",
+      "obligations": [
+        {
+          "obligation_id": "O1",
+          "description": "Current repository-change and external-action boundary.",
+          "source_required": true
+        },
+        {
+          "obligation_id": "O2",
+          "description": "Default minimum-authority operating mode.",
+          "source_required": true
+        }
+      ],
+      "context_items": [
+        {
+          "context_item_id": "C-AI-START",
+          "canonical_source_ref": "ignition/AI-START-HERE.md",
+          "source_kind": "CANONICAL_SOURCE",
+          "line_start": 38,
+          "line_end": 40,
+          "evidence_role": "current-use-boundary",
+          "source_version_or_digest": "1dd7b4460289b0f3b39de34c95de7052ac52d88e04b1d4cbf0720e3c896db9a0",
+          "epistemic_status": "CALLER_DECLARED_CURRENT",
+          "freshness_or_as_of": "Selected file bytes match the checked-out files; caller did not resolve a remote ref.",
+          "inclusion_reason": "Explicit local source excerpt required for the bounded tool-boundary context task.",
+          "obligation_ids": [
+            "O1"
+          ]
+        },
+        {
+          "context_item_id": "C-OPERATING-METHOD",
+          "canonical_source_ref": "ignition/OPERATING-METHOD.md",
+          "source_kind": "CANONICAL_SOURCE",
+          "line_start": 130,
+          "line_end": 132,
+          "evidence_role": "default-read-only-mode",
+          "source_version_or_digest": "139886003d2e6250e4d55ffe05e913b39d8ba562deadf6d4e5368e811ccd3072",
+          "epistemic_status": "CALLER_DECLARED_CURRENT",
+          "freshness_or_as_of": "Selected file bytes match the checked-out files; caller did not resolve a remote ref.",
+          "inclusion_reason": "Explicit local source excerpt required for the bounded tool-boundary context task.",
+          "obligation_ids": [
+            "O2"
+          ]
+        }
+      ],
+      "max_total_source_bytes": 500000,
+      "max_excerpt_chars": 300
+    },
+    "task_scope": "Assemble two exact local source excerpts about repository-change and default read-only boundaries into one task-scoped packet.",
+    "tool_result": {
+      "packet_status": "ASSEMBLED_STRUCTURAL_CONTEXT_NO_DECLARED_GAPS",
+      "coverage": {
+        "required": [
+          "O1",
+          "O2"
+        ],
+        "declared_present": [
+          "O1",
+          "O2"
+        ],
+        "source_required_present": [
+          "O1",
+          "O2"
+        ],
+        "missing": [],
+        "stale_or_invalid": [],
+        "generated_only": [],
+        "obligations": [
+          {
+            "obligation_id": "O1",
+            "description": "Current repository-change and external-action boundary.",
+            "source_required": true,
+            "linked_context_item_ids": [
+              "C-AI-START"
+            ],
+            "current_context_item_ids": [
+              "C-AI-START"
+            ],
+            "current_canonical_source_item_ids": [
+              "C-AI-START"
+            ],
+            "declared_status": "SOURCE_PRESENT_BY_CALLER_DECLARATION",
+            "semantic_support": "NOT_EVALUATED"
+          },
+          {
+            "obligation_id": "O2",
+            "description": "Default minimum-authority operating mode.",
+            "source_required": true,
+            "linked_context_item_ids": [
+              "C-OPERATING-METHOD"
+            ],
+            "current_context_item_ids": [
+              "C-OPERATING-METHOD"
+            ],
+            "current_canonical_source_item_ids": [
+              "C-OPERATING-METHOD"
+            ],
+            "declared_status": "SOURCE_PRESENT_BY_CALLER_DECLARATION",
+            "semantic_support": "NOT_EVALUATED"
+          }
+        ],
+        "semantic_coverage": "NOT_EVALUATED",
+        "sufficiency_decision": "NOT_EVALUATED"
+      },
+      "gaps": [],
+      "budgets": {
+        "max_total_source_bytes": 500000,
+        "source_bytes_read": 51961,
+        "max_context_items": 16,
+        "max_lines_per_item": 200,
+        "max_excerpt_chars": 300
+      },
+      "selected_items": [
+        {
+          "context_item_id": "C-AI-START",
+          "path": "ignition/AI-START-HERE.md",
+          "expected_sha256": "1dd7b4460289b0f3b39de34c95de7052ac52d88e04b1d4cbf0720e3c896db9a0",
+          "current_sha256": "1dd7b4460289b0f3b39de34c95de7052ac52d88e04b1d4cbf0720e3c896db9a0",
+          "status": "CURRENT_BYTES_MATCH_EXPECTED_DIGEST",
+          "line_numbers": [
+            38,
+            39,
+            40
+          ],
+          "excerpt": [
+            {
+              "line": 38,
+              "text": "没有当前请求中的明确升级依据时，一律选择 `READ_ONLY_RUN`。只有用户明确要求修改点火自身，",
+              "truncated": false
+            },
+            {
+              "line": 39,
+              "text": "才进入 `REPOSITORY_CHANGE_RUN`，并把 [`ITERATION.md`](./ITERATION.md) 作为仓库变更子协议；",
+              "truncated": false
+            },
+            {
+              "line": 40,
+              "text": "Iteration Method 不是一般用户任务的默认入口。`EXTERNAL_ACTION_RUN` 还必须同时满足当前 capability、",
+              "truncated": false
+            }
+          ]
+        },
+        {
+          "context_item_id": "C-OPERATING-METHOD",
+          "path": "ignition/OPERATING-METHOD.md",
+          "expected_sha256": "139886003d2e6250e4d55ffe05e913b39d8ba562deadf6d4e5368e811ccd3072",
+          "current_sha256": "139886003d2e6250e4d55ffe05e913b39d8ba562deadf6d4e5368e811ccd3072",
+          "status": "CURRENT_BYTES_MATCH_EXPECTED_DIGEST",
+          "line_numbers": [
+            130,
+            131,
+            132
+          ],
+          "excerpt": [
+            {
+              "line": 130,
+              "text": "### 7.1 `READ_ONLY_RUN` — 默认",
+              "truncated": false
+            },
+            {
+              "line": 131,
+              "text": "",
+              "truncated": false
+            },
+            {
+              "line": 132,
+              "text": "这是所有一般用户任务的默认模式。分析、碰撞、研究、核查、映射、知识组织、解释、综合、开放问题生成、写作和翻译都先进入 `READ_ONLY_RUN`。",
+              "truncated": false
+            }
+          ]
+        }
+      ],
+      "execution_authorized": false
+    },
+    "baseline": {
+      "method": "Direct local SHA-256 plus exact line-range read (sha256sum and sed-equivalent); no packet assembly.",
+      "sources": [
+        {
+          "path": "ignition/AI-START-HERE.md",
+          "line_numbers": [
+            38,
+            39,
+            40
+          ],
+          "source_sha256": "1dd7b4460289b0f3b39de34c95de7052ac52d88e04b1d4cbf0720e3c896db9a0",
+          "lines": [
+            "没有当前请求中的明确升级依据时，一律选择 `READ_ONLY_RUN`。只有用户明确要求修改点火自身，",
+            "才进入 `REPOSITORY_CHANGE_RUN`，并把 [`ITERATION.md`](./ITERATION.md) 作为仓库变更子协议；",
+            "Iteration Method 不是一般用户任务的默认入口。`EXTERNAL_ACTION_RUN` 还必须同时满足当前 capability、"
+          ]
+        },
+        {
+          "path": "ignition/OPERATING-METHOD.md",
+          "line_numbers": [
+            130,
+            131,
+            132
+          ],
+          "source_sha256": "139886003d2e6250e4d55ffe05e913b39d8ba562deadf6d4e5368e811ccd3072",
+          "lines": [
+            "### 7.1 `READ_ONLY_RUN` — 默认",
+            "",
+            "这是所有一般用户任务的默认模式。分析、碰撞、研究、核查、映射、知识组织、解释、综合、开放问题生成、写作和翻译都先进入 `READ_ONLY_RUN`。"
+          ]
+        }
+      ],
+      "baseline_packet_coverage": "NOT_COMPUTED",
+      "comparison_scope": "Byte and excerpt equality only; no downstream answer-consumption quality, reliability, semantic relevance, or cost benchmark."
+    },
+    "finding": "The packet returned the same exact source digests and line excerpts as the direct baseline, while adding one grouped obligation map, structural gaps, caller-declaration labels and an explicit NOT_EVALUATED ceiling. This single local smoke does not establish better answers or a cost advantage.",
+    "replacement_or_retirement_decision": "NONE; retain COMPARISON_UNKNOWN, optional and default-off.",
+    "network_call_made": false,
+    "repository_mutation_by_tool": false,
+    "execution_authorized": false
+  }
+}

@@ -39,11 +39,42 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(card["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
         self.assertIn("sufficiency_decision is always NOT_EVALUATED", " ".join(card["output_types"]))
 
+    def test_context_packet_card_keeps_structural_only_boundary_and_route_receipt(self) -> None:
+        document = TOOL.build_cards()
+        card = next(
+            item for item in document["cards"]
+            if item["tool_id"] == "knowledge.assemble_context_packet"
+        )
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], ["ignition/"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        self.assertIn("does not redact", " ".join(card["counterindicated_when"]).lower())
+        self.assertIn("NOT_EVALUATED", " ".join(card["output_types"]))
+        route = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-context-packet-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(route["route_result"]["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in route["route_result"]["selected_tools"]],
+            [card["tool_id"]],
+        )
+        self.assertFalse(route["execution_authorized"])
+        self.assertFalse(route["route_result"]["execution_authorized"])
+
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 20)
-        self.assertEqual(document["card_count"], 40)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 21)
+        self.assertEqual(document["card_count"], 41)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
@@ -171,7 +202,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in {editorial["tool_id"], "maintenance.summarize_actions_step_timeline", "maintenance.compare_actions_repeated_step_sequences", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"]}))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
-        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"]} for card in candidates))
+        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet"} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         batch = next(card for card in candidates if card["tool_id"] == "foundation.batch_resolve_current_asset_references")

@@ -131,6 +131,10 @@
         "reason": "NO_INPUT_TYPE_MATCH"
       },
       {
+        "tool_id": "knowledge.assemble_context_packet",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "knowledge.cluster_source_brief",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
@@ -265,11 +269,12 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "73086bb6592144a36911dd06bc5532c2fb0a8ece"
+      "experimental_candidate_catalog_git_blob_sha1": "835aace12da79c5c68e14be27b2489ea7c41e8b3"
     }
   },
   "execution_status": "NOT_RUN",
   "execution_authorized": false,
   "network_call_made": false,
-  "claim_ceiling": "This receipt demonstrates candidate route matching only. It neither authorizes invocation nor establishes scientific validity or live endpoint availability."
+  "claim_ceiling": "This receipt demonstrates candidate route matching only. It neither authorizes invocation nor establishes scientific validity or live endpoint availability.",
+  "candidate_catalog_git_blob_sha1": "835aace12da79c5c68e14be27b2489ea7c41e8b3"
 }
