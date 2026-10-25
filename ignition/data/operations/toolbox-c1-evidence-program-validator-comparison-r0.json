@@ -1,0 +1,76 @@
+{
+  "schema_version": "toolbox-c1-pair-comparison-r0",
+  "comparison_id": "C1-EVIDENCE-PROGRAM-VALIDATOR-PAIR-01",
+  "recorded_on": "2026-10-25",
+  "task": "Validate the fixed checked-out Evidence Program snapshot using the optional toolbox wrapper and its existing direct validator on the same repository snapshot.",
+  "binding": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "head_sha": "5283b98d0e60c31569a67ca7614dcf015a09772b",
+    "evidence_program_tree": {
+      "path": "ignition/evidence-program",
+      "file_count": 31,
+      "hash_kind": "SHA256_FILE_TREE_R0",
+      "sha256": "0d12b35722484c99fb4bad267d0d977a0d05f5b9f4b4c6f47f18f4faaa21e8d4"
+    },
+    "wrapper_source": {
+      "path": "ignition/tools/toolbox_validate_evidence_program.py",
+      "git_blob_sha1": "b1abb127207333b53472b48be3fdc7d81b732f1c",
+      "sha256": "0fc3a92a078efc1c4077d8edeff38fa41dc27139d5d964edd1775a1049659261"
+    },
+    "underlying_validator_source": {
+      "path": "ignition/evidence-program/tools/validate_evidence_program.py",
+      "git_blob_sha1": "91d845f1994248b8caa0383b5c08be9c7d70862d",
+      "sha256": "47c99fea1c5f29e1723e1b4bee70db962d469ea64af96c06d6fca23f226f0576"
+    }
+  },
+  "paired_invocations": [
+    {
+      "tool_id": "research.validate_evidence_program_snapshot",
+      "argv": [
+        "python3",
+        "-B",
+        "ignition/tools/toolbox_validate_evidence_program.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "result_status": "ALL_CHECKS_PASSED",
+      "check_count": 499,
+      "failure_count": 0,
+      "output_format": "bounded JSON receipt with fixed repository root, source-tree digest, and validator-source hash",
+      "stdout_sha256": "595c297eedf1d81d3608894a351668d1d93fba91f864802639454f16b7f2e5d0",
+      "single_observation_wall_ms": 107.39
+    },
+    {
+      "exit_code": 0,
+      "result_status": "ALL_CHECKS_PASSED",
+      "check_count": 499,
+      "failure_count": 0,
+      "output_format": "verbose per-check text log; accepts caller-selected --root",
+      "stdout_sha256": "4d70fb048f63f1b540c7cc6b6d2ee71ec2ed34004b4dbd4dd3597dbf77467688",
+      "single_observation_wall_ms": 63.72,
+      "interface_id": "direct-validator-cli",
+      "source_path": "ignition/evidence-program/tools/validate_evidence_program.py",
+      "argv_template": [
+        "python3",
+        "-B",
+        "ignition/evidence-program/tools/validate_evidence_program.py",
+        "--root",
+        "<repo-root>/ignition/evidence-program"
+      ]
+    }
+  ],
+  "comparison": {
+    "same_checkout_and_input_tree": true,
+    "same_validator_source_bytes": true,
+    "outcome_parity_observed": true,
+    "paired_output_content_identical": false,
+    "disposition": "COMPARISON_UNKNOWN",
+    "findings": [
+      "Both interfaces invoked the same checked-out validator bytes and returned exit code 0 with 499 checks and 0 failures for this snapshot.",
+      "The wrapper adds a fixed-root, bounded JSON receipt with the 31-file source-tree hash and validator-source hash; the direct interface keeps detailed per-check diagnostics and supports a caller-selected root.",
+      "This single matched run compares a toolbox candidate with an upstream script interface, not independent tools or validators; it does not establish task-utility, reliability, or cost advantage."
+    ],
+    "cost_assessment": "UNKNOWN; the two wall times are single observations with order/cache effects and are not a benchmark or stable cost estimate."
+  },
+  "claim_ceiling": "One paired repository-local run on the pinned 5283b98 snapshot demonstrates observed result parity and different interface/output contracts for the same underlying validator; it does not establish relative tool utility, source authenticity, scientific truth, independent review, general reliability, or cost superiority."
+}

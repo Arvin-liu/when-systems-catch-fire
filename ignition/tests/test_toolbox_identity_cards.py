@@ -192,6 +192,20 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(evidence["permissions"]["write_paths"], [])
         self.assertFalse(evidence["permissions"]["network"])
         self.assertIn("no source authenticity", evidence["claim_ceiling"])
+        self.assertEqual(evidence["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(evidence["comparison_evidence"]["compared_tool_ids"], [])
+        self.assertIn(
+            "ignition/data/operations/toolbox-c1-evidence-program-validator-comparison-r0.json",
+            evidence["comparison_evidence"]["evidence_refs"],
+        )
+        self.assertEqual(evidence["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        comparison = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-c1-evidence-program-validator-comparison-r0.json").read_text(encoding="utf-8")
+        )
+        self.assertTrue(comparison["comparison"]["same_validator_source_bytes"])
+        self.assertTrue(comparison["comparison"]["outcome_parity_observed"])
+        self.assertEqual(comparison["paired_invocations"][0]["check_count"], 499)
+        self.assertEqual(comparison["paired_invocations"][1]["failure_count"], 0)
         timeline = next(card for card in candidates if card["tool_id"] == "maintenance.summarize_actions_step_timeline")
         self.assertEqual(timeline["execution_mode"], "READ_ONLY_RUN")
         self.assertEqual(timeline["evidence_level"], "REAL_TOOL_TEST")

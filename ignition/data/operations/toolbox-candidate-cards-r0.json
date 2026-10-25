@@ -1108,6 +1108,10 @@
         {
           "path": "ignition/evidence-program/tests/test_evidence_program.py",
           "role": "C1_FUNCTIONAL_EVIDENCE_REFERENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-c1-evidence-program-validator-comparison-r0.json",
+          "role": "C1_MATCHED_TASK_COMPARISON_RECEIPT"
         }
       ],
       "dependencies": [
@@ -1193,23 +1197,29 @@
       ],
       "claim_ceiling": "The fixed checked-out Evidence Program tree passed or failed this repository validator's schema and recorded-consistency checks, with local Git metadata read-only; no source authenticity, committed-file binding, scientific truth, independent review, acceptance, or publication is established.",
       "replacement_candidates": [],
-      "unique_remaining_use_cases": [],
+      "unique_remaining_use_cases": [
+        "Validate only the fixed checked-out Evidence Program tree and emit a bounded machine-readable receipt that binds the tree and validator source hashes, without exposing a caller-selected root; use the direct validator when detailed per-check logs or another declared root are needed."
+      ],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Existing evidence tests this candidate in isolation; no paired same-task comparison against its mapped alternatives has been recorded for C1.",
+        "scope": "One paired run on the same Formal candidate snapshot and Evidence Program tree compared the fixed-root JSON wrapper with its underlying direct validator; this is interface/receipt evidence, not an independent correctness or cost benchmark.",
         "compared_tool_ids": [],
         "evidence_refs": [
           "ignition/tools/toolbox_validate_evidence_program.py",
+          "ignition/evidence-program/tools/validate_evidence_program.py",
+          "ignition/data/operations/toolbox-c1-evidence-program-validator-comparison-r0.json",
           "ignition/tests/test_toolbox_validate_evidence_program.py",
           "ignition/evidence-program/tests/test_evidence_program.py"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters."
+          "Both commands invoked identical underlying validator source bytes on the same 31-file tree and returned exit 0 with 499 checks and zero failures.",
+          "The wrapper adds a fixed repository root, bounded JSON receipt, Evidence Program tree digest, and validator-source hash; the direct validator retains verbose per-check output and arbitrary declared-root support.",
+          "This one matched run compares a toolbox candidate with an upstream script interface, not two registered toolbox tools; no paired task utility, reliability, or cost evidence establishes a retention advantage or replacement. Keep the candidate default-off and retain COMPARISON_UNKNOWN."
         ]
       },
       "deprecation_or_retirement_status": {
-        "status": "ACTIVE",
-        "basis": "The optional experimental entry remains available and default-off; comparative retirement status is unknown."
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "One exact-snapshot parity comparison observed different interfaces, but the direct validator is not a registered toolbox identity and no paired task utility, reliability, or cost evidence supports a retention or replacement decision; keep the candidate default-off and review again if a real consumer gap appears."
       },
       "migration_and_rollback": {
         "migration_notes": [
