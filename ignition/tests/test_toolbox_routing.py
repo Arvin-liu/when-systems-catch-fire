@@ -158,6 +158,25 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(included["execution_authorized"])
 
+    def test_evidence_program_validator_stays_out_of_router_without_git_metadata_path_support(self) -> None:
+        task = profile(
+            "fixed-evidence-program-validation",
+            ["fixed checked-out ignition/evidence-program snapshot plus containing checkout Git metadata for read-only ancestry checks"],
+            ["compact validator status, check count, failure count, and bounded failure details"],
+        )
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["research.validate_evidence_program_snapshot"],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(included["decision"], "INCOMPLETE")
+        self.assertEqual(included["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": "research.validate_evidence_program_snapshot", "reason": "PERMISSION_PATH_UNAVAILABLE_OR_UNSAFE"},
+            included["rejected_candidates"],
+        )
+
     def test_unknown_experimental_allowlist_id_is_reported(self) -> None:
         result = planner.plan_tool_route(
             profile("unknown-opt-in", ["article cluster ID"], ["source-backed cluster member brief"]),

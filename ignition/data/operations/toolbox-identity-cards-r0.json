@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
-    "candidate_count": 7
+    "blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+    "candidate_count": 8
   },
   "cards": [
     {
@@ -376,7 +376,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -509,7 +509,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -777,7 +777,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -903,7 +903,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b"
+          "sha1": "616f5642851e5cabe6ba75848415107439cb5c8b"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -912,7 +912,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1172,7 +1172,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2373,6 +2373,142 @@
       "router_selectable_by_default": false
     },
     {
+      "tool_id": "research.validate_evidence_program_snapshot",
+      "display_name": {
+        "zh": "科研证据计划快照校验器",
+        "en": "Evidence Program snapshot validator"
+      },
+      "description": "Run the existing standard-library Evidence Program validator against the fixed checked-out evidence-program tree and return a compact summary plus a source-tree digest.",
+      "version": "toolbox-wrapper-0.1.0; upstream Task103 Evidence Program validator",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_validate_evidence_program.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_validate_evidence_program.py --check",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_validate_evidence_program.py",
+          "role": "FIXED_ROOT_READ_ONLY_SUMMARY_WRAPPER"
+        },
+        {
+          "path": "ignition/evidence-program/tools/validate_evidence_program.py",
+          "role": "EXISTING_SCHEMA_AND_CROSS_FILE_VALIDATOR"
+        },
+        {
+          "path": "ignition/evidence-program/",
+          "role": "FIXED_VALIDATION_INPUT_TREE"
+        }
+      ],
+      "dependencies": [
+        "ignition/evidence-program/tools/validate_evidence_program.py",
+        "ignition/evidence-program/"
+      ],
+      "good_for": [
+        "Check the fixed repository Evidence Program schemas, recorded preregistration-order metadata, source provenance fields, post-hoc threshold equality, and metric leakage constraints.",
+        "Get a compact check/failure count and SHA-256 digest for the entire fixed Evidence Program input tree."
+      ],
+      "not_for": [
+        "Running Crossref, OpenAlex, model, browser, search, or other network queries; the source-acquisition runner is a separate tool with different permissions.",
+        "Authenticating source origins, proving every file was committed as claimed, verifying scientific content, deciding truth, or recording independent/human acceptance.",
+        "Editing manifests, registrations, run records, thresholds, or the evidence-program tree."
+      ],
+      "only_if": [
+        "The caller wants to validate the fixed `ignition/evidence-program/` snapshot in the currently checked-out Formal repository.",
+        "Python >=3.9 and the local Git CLI are available; Git is used only for repository-root discovery and preregistration ancestor checks.",
+        "The caller understands that the result validates recorded structure and consistency only, and that checkout-level Git metadata is read-only input."
+      ],
+      "counterindicated_when": [
+        "The task asks to fetch or refresh any evidence source; use a separately authorized acquisition workflow with network and output-path controls.",
+        "The task requires scientific adjudication, primary-source support review, authorship/authenticity proof, or epistemic acceptance.",
+        "The tool router must authorize an exact Git metadata read path; the current route planner cannot represent the containing checkout's `.git` metadata and will fail closed."
+      ],
+      "accepted_input_types": [
+        "fixed checked-out ignition/evidence-program snapshot plus containing checkout Git metadata for read-only ancestry checks"
+      ],
+      "output_types": [
+        "compact validator status, check count, failure count, and bounded failure details",
+        "SHA-256 digest and file count for the complete checked-out Evidence Program tree",
+        "validator source SHA-256 and local Git root identity"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_TREE_AND_LOCAL_GIT_METADATA",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/evidence-program/",
+          "containing checkout Git metadata (read-only; `git rev-parse` and `git merge-base --is-ancestor` only)"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Writes one compact JSON summary to stdout; no repository files are created or changed.",
+        "Runs the validator and fixed-argument local Git read commands as child processes; never invokes a shell or a remote Git operation."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library and local Git CLI; no third-party runtime packages"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The fixed tree has 31 files and 499 observed checks in the current run, but no calibrated latency or memory profile has been established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "ignition.evidence_program.validate_evidence_program.py",
+          "relationship": "EQUIVALENT_VALIDATION_DIFFERENT_INTERFACE",
+          "reason": "The upstream validator exposes a configurable root and a verbose per-check log; this wrapper fixes the repository root and summarizes the same validator run."
+        }
+      ],
+      "fallback": "Run the upstream validator directly with `--root ignition/evidence-program` when full per-check output is needed; if local Git ancestry cannot be read, report validation unavailable rather than inferring an ordering pass.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_validate_evidence_program.py",
+          "ignition/evidence-program/tests/test_evidence_program.py"
+        ],
+        "negative_controls": [
+          "A modified schema, missing provenance field, changed threshold, leaked metric, or failed recorded preregistration ordering remains a validator failure and returns a nonzero status.",
+          "The wrapper has no caller-controlled root, output path, network option, or mutation operation; invalid checkout identity fails closed.",
+          "The adaptive route planner must reject the candidate because the declared local Git metadata read is outside its ignition/ path authority."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Direct CLI invocation only after an explicit task request; the current typed route planner is expected to reject the Git metadata path as unavailable or unsafe.",
+        "Do not remove the Git metadata dependency to make routing pass; preregistration ancestry is one of the validator's declared checks.",
+        "Never use the result as evidence of scientific truth, source authenticity, acceptance, or publication readiness."
+      ],
+      "claim_ceiling": "The fixed checked-out Evidence Program tree passed or failed this repository validator's schema and recorded-consistency checks, with local Git metadata read-only; no source authenticity, committed-file binding, scientific truth, independent review, acceptance, or publication is established.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "b1abb127207333b53472b48be3fdc7d81b732f1c",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_validate_evidence_program.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "b1abb127207333b53472b48be3fdc7d81b732f1c"
+        },
+        {
+          "path": "ignition/evidence-program/tools/validate_evidence_program.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "91d845f1994248b8caa0383b5c08be9c7d70862d"
+        },
+        {
+          "path": "ignition/evidence-program/",
+          "hash_kind": "SHA256_FILE_TREE_R0",
+          "sha256": "0d12b35722484c99fb4bad267d0d977a0d05f5b9f4b4c6f47f18f4faaa21e8d4",
+          "file_count": 31
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
       "tool_id": "research.validate_reos_light",
       "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
       "availability": "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE",
@@ -2616,7 +2752,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2763,7 +2899,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "6fba4f6a40ccb980b541390f2e5b02d58085ae0b",
+      "candidate_catalog_blob_sha1": "616f5642851e5cabe6ba75848415107439cb5c8b",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3100,6 +3236,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 27,
+  "card_count": 28,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }
