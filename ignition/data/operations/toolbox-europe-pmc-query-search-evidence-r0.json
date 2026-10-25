@@ -1,0 +1,131 @@
+{
+  "schema_version": "toolbox-europe-pmc-query-search-evidence-r0",
+  "evidence_type": "LIVE_TOOL_SMOKE_AND_ROUTE_EXPERIMENT",
+  "task": {
+    "task_id": "europe-pmc-query-search-bounded-discovery",
+    "description": "Check one generic public scientific-topic query can return a bounded set of Europe PMC metadata rows and exercise default-off/minimal route selection.",
+    "raw_query_retained": false,
+    "query_sha256": "39a7eb39d1e54cc0687c0867ae7276b09a1a0f66f182f56cbf2a9ac28f767f66"
+  },
+  "live_tool_trial": {
+    "tool_id": "research.search_europe_pmc_query",
+    "tool_version": "0.1.0",
+    "wrapper_path": "ignition/tools/toolbox_europe_pmc_query_search.py",
+    "wrapper_source_sha256": "0c6374f3d3bbd3bdcc05ede780b935ee942c1b190d378dc492913c7c1783ce1c",
+    "source_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "provider_documentation": "https://europepmc.org/RestfulWebService",
+    "invocation_flags": [
+      "--stdin",
+      "--allow-public-network"
+    ],
+    "request_parameters": {
+      "format": "json",
+      "resultType": "lite",
+      "pageSize": 3
+    },
+    "retrieval_timestamp_utc": "2026-10-25T16:27:13Z",
+    "http_status": 200,
+    "acquisition_status": "OK",
+    "status": "FOUND",
+    "provider_hit_count": 81011,
+    "returned_count": 3,
+    "response_sha256": "8245035b46deac67ab31fe8600639b435cdbdf19b2505693e79b68ee4a930c04",
+    "returned_source_ids": [
+      {
+        "source": "MED",
+        "id": "42541388",
+        "doi": "10.1177/10430342261466427"
+      },
+      {
+        "source": "MED",
+        "id": "42088116",
+        "doi": "10.3389/fbinf.2026.1800237"
+      },
+      {
+        "source": "PPR",
+        "id": "PPR1144778",
+        "doi": "10.21203/rs.3.rs-8551250/v1"
+      }
+    ],
+    "raw_response_retained": false,
+    "query_echoed_in_receipt": false,
+    "claim_ceiling": "One live provider response returned three metadata rows for one public query at this retrieval time; this does not establish query relevance, completeness, source authenticity, scientific support, or article status."
+  },
+  "route_profile": {
+    "candidate_catalog_git_blob_sha1": "ea391224da5417b9211fcf36138d81fb40a8deb9",
+    "input_types": [
+      "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
+    ],
+    "required_outputs": [
+      "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+      "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+    ],
+    "allowed_network_hosts": [
+      "www.ebi.ac.uk"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "candidate_excluded_by_default",
+      "include_experimental_tool_ids": [],
+      "allowed_network_hosts": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": []
+    },
+    {
+      "scenario": "explicit_candidate_without_host_permission",
+      "include_experimental_tool_ids": [
+        "research.search_europe_pmc_query"
+      ],
+      "allowed_network_hosts": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_minimal_route_with_redundant_identifier_tool",
+      "include_experimental_tool_ids": [
+        "research.search_europe_pmc_query",
+        "research.resolve_pubmed_identifiers"
+      ],
+      "allowed_network_hosts": [
+        "pmc.ncbi.nlm.nih.gov",
+        "www.ebi.ac.uk"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.search_europe_pmc_query"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ]
+    }
+  ],
+  "comparison_scope": {
+    "compared_tool_ids": [
+      "research.resolve_pubmed_identifiers",
+      "research.inspect_pubmed_update_links"
+    ],
+    "distinct_inputs_and_outputs": "Topic query to bounded literature metadata differs from exact DOI-to-PMID/PMCID mapping and exact PMID-to-Comments/Corrections inspection.",
+    "unmeasured": [
+      "search relevance and recall",
+      "completeness against other databases or search strategies",
+      "latency and service availability",
+      "comparative cost",
+      "scientific quality"
+    ],
+    "retirement_decision": "No existing component is deprecated or retired by this evidence."
+  }
+}

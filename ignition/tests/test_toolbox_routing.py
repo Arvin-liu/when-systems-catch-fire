@@ -669,6 +669,48 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(permitted["execution_authorized"])
 
+    def test_europe_pmc_query_search_is_default_off_and_minimally_sufficient(self) -> None:
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-europe-pmc-query-search-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            evidence["route_profile"]["candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+        route = evidence["route_profile"]
+        task = profile(
+            evidence["task"]["task_id"],
+            route["input_types"],
+            route["required_outputs"],
+            allowed_network_hosts=route["allowed_network_hosts"],
+        )
+        for trial in evidence["route_trials"]:
+            trial_task = profile(
+                task["task_id"],
+                task["input_types"],
+                task["required_outputs"],
+                allowed_network_hosts=trial["allowed_network_hosts"],
+            )
+            result = planner.plan_tool_route(
+                trial_task,
+                include_experimental_tool_ids=trial["include_experimental_tool_ids"],
+            )
+            self.assertEqual(result["decision"], trial["expected_decision"], trial["scenario"])
+            self.assertEqual(
+                [row["tool_id"] for row in result["selected_tools"]],
+                trial["expected_selected_tool_ids"],
+                trial["scenario"],
+            )
+            self.assertEqual(result["execution_authorized"], trial["expected_execution_authorized"], trial["scenario"])
+            for rejected in trial["expected_rejections"]:
+                self.assertIn(rejected, result["rejected_candidates"], trial["scenario"])
+            if trial["scenario"] == "explicit_minimal_route_with_redundant_identifier_tool":
+                self.assertEqual(
+                    result["network_authority_binding"],
+                    "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+                )
+                self.assertEqual(result["cost_estimate"]["status"], "UNKNOWN")
+
     def test_g1_goal_intake_preflight_is_opt_in_and_never_authorizes(self) -> None:
         task = profile(
             "offline-g1-goal-proposal-preflight",
@@ -929,10 +971,11 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             {row["reason"] for row in trials["candidate_with_adjacent_options"]["relevant_rejections"]},
             {"NO_INPUT_TYPE_MATCH"},
         )
-        self.assertEqual(
-            opted["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
-            evidence["candidate_binding"]["candidate_cards_git_blob_sha1"],
-        )
+        current_candidate_hash = planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes())
+        self.assertEqual(opted["source_refs"]["experimental_candidate_catalog_git_blob_sha1"], current_candidate_hash)
+        # This pre-addition receipt remains bound to its historical candidate catalog snapshot.
+        self.assertEqual(evidence["candidate_binding"]["candidate_cards_git_blob_sha1"], "01eb6ebeec0b55c5a1416ad557ea524182ca71e4")
+        self.assertNotEqual(current_candidate_hash, evidence["candidate_binding"]["candidate_cards_git_blob_sha1"])
 
 
 if __name__ == "__main__":
