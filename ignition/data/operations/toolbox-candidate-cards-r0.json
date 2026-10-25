@@ -3584,6 +3584,169 @@
           "Remove this candidate card and its optional wrapper from the isolated branch, regenerate identity and toolbox projections, and retain the prior source/evidence commit for history."
         ]
       }
+    },
+    {
+      "tool_id": "collaboration.preflight_receiver_handoff",
+      "display_name": {
+        "zh": "接收端交接预检器",
+        "en": "Receiver Handoff Preflight"
+      },
+      "description": "Check an incoming serialized Federation handoff against its public source receipt, then evaluate receiver capability and workspace-reobservation preconditions without accepting or executing the handoff.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_receiver_handoff_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_receiver_handoff_preflight.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/agent_federation/approval_handoff.py",
+          "role": "EXISTING_RECEIVER_TAKEOVER_BASELINE"
+        },
+        {
+          "path": "ignition/agent_federation/contracts.py",
+          "role": "CANONICAL_RECEIPT_AND_HANDOFF_TYPES"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-receiver-handoff-preflight-c1-evidence-r0.json",
+          "role": "SYNTHETIC_MATCHED_CONFLICT_AND_C1_DISPOSITION"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-receiver-handoff-preflight.md",
+          "role": "USER_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-receiver-handoff-preflight/valid-input-r0.json",
+          "role": "BOUNDED_CONTROLLED_CLI_EXAMPLE"
+        },
+        {
+          "path": "ignition/tests/test_approval_handoff.py",
+          "role": "EXISTING_API_CONTRACT_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_receiver_handoff_preflight.py",
+          "role": "FOCUSED_MATCHED_NEGATIVE_AND_CLI_TESTS"
+        },
+        {
+          "path": "ignition/tools/toolbox_receiver_handoff_preflight.py",
+          "role": "READ_ONLY_RECEIVER_PREFLIGHT_ENTRYPOINT"
+        }
+      ],
+      "dependencies": [
+        "ignition/agent_federation/approval_handoff.py",
+        "ignition/agent_federation/contracts.py"
+      ],
+      "good_for": [
+        "Checking that an incoming typed handoff preserves the task, executor, validated completed work, artifacts, external-session pointers, and unresolved items bound by its canonical public result receipt.",
+        "Running the existing receiver capability and re-observation preconditions only after source-receipt/bundle projection equality passes.",
+        "Returning a machine-readable, read-only preflight before a human or separately authorized runtime decides whether to continue."
+      ],
+      "not_for": [
+        "Authenticating the person, executor, or system that created a receipt; the receipt digest is unkeyed.",
+        "Independently observing a workspace, verifying live receiver capabilities, authorizing a takeover, or dispatching/resuming an executor.",
+        "Proving that prior actions happened, artifacts are true, work is correct, or any scientific claim is valid."
+      ],
+      "only_if": [
+        "The task has a serialized public FederatedResultReceipt and FederatedHandoffBundle using the existing strict contract shapes.",
+        "The caller treats workspace_reobserved and target_capabilities as caller declarations and preserves execution_authorized=false.",
+        "The input is a single UTF-8 JSON object no larger than 262144 bytes on stdin."
+      ],
+      "counterindicated_when": [
+        "The source receipt authenticity must be cryptographically authenticated or the sender identity is unknown and cannot be separately checked.",
+        "A live handoff, workspace read, network call, permission grant, provider action, or automatic takeover is expected.",
+        "A current runtime receiver protocol/version negotiation is required; this tool only uses the existing local Federation contract."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON object with schema_version receiver-handoff-preflight-r0, strict FederatedResultReceipt and FederatedHandoffBundle objects, target executor ID/capabilities, caller workspace_reobserved boolean, and observed artifact refs; maximum 262144 bytes."
+      ],
+      "output_types": [
+        "Bounded JSON status for receipt digest, receipt-to-bundle projection, capability/re-observation preconditions, and typed mismatch findings.",
+        "Explicit receipt_authenticity=NOT_ESTABLISHED_UNKEYED_DIGEST, execution_authorized=false, and runtime_enforcement_status=NOT_EVALUATED."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_SINGLE_HANDOFF_AND_LOCAL_FEDERATION_CONTRACTS",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/agent_federation/approval_handoff.py",
+          "ignition/agent_federation/contracts.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded stdin object and local Federation code; writes one JSON result to stdout only."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9",
+        "Local Ignition agent_federation package; standard library only."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No measured CPU, memory, stable latency, or matched cost profile has been collected."
+      },
+      "alternatives": [
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool checks caller-declared multi-agent role, context, channel, permission, write-domain, and work-unit relationships. This tool checks serialized Federation receipt-to-handoff projection and receiver preconditions."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Before receiver takeover, reject a validly shaped handoff whose source-bound artifact, task/executor identity, validated work, session pointer, or unresolved items no longer match its public result receipt."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "A matched synthetic negative control showed the existing accept_handoff function returns ACCEPTED for an altered artifact reference when the caller supplies source_receipt_verified=true and the altered reference as observed; this tool rejects the same receipt/bundle mismatch before receiver preconditions. This does not establish real-task quality or cost.",
+        "compared_tool_ids": [],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-receiver-handoff-preflight-c1-evidence-r0.json",
+          "ignition/agent_federation/approval_handoff.py",
+          "ignition/tests/test_approval_handoff.py",
+          "ignition/tests/test_toolbox_receiver_handoff_preflight.py"
+        ],
+        "findings": [
+          "The candidate adds a receipt-to-bundle projection check that the current accept_handoff API does not perform.",
+          "The difference is supported only by synthetic contract fixtures; source authenticity, live receiver behavior, real task benefit, broad quality, and cost remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "ACTIVE",
+        "basis": "Optional default-off specialization with synthetic-only evidence; no existing Federation or Agent Episode Binding component is replaced."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No existing API or scheduler contract is migrated. Use only as a receiver preflight before a separate authorization and runtime decision."
+        ],
+        "rollback_steps": [
+          "Remove this optional candidate card, script, test, documentation, fixture, and C1 evidence; regenerate toolbox and identity-card projections; preserve prior commits and negative-control evidence."
+        ]
+      },
+      "fallback": "If receipt binding does not pass, stop and require reconciliation. For an authentic or live takeover decision, use the existing Federation process only with independent receipt provenance, workspace re-observation, and current policy checks; never treat this preflight as authorization.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_receiver_handoff_preflight.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_approval_handoff.py"
+        ],
+        "negative_controls": [
+          "A changed source-bound artifact reference is rejected before receiver checks even when the caller reports it as observed.",
+          "Invalid source receipt digest, wrong target capability, ineligible handoff, absent workspace re-observation, duplicate JSON keys, and oversized stdin fail closed.",
+          "The valid checked-in example returns PREFLIGHT_READY_NO_AUTHORITY; execution_authorized remains false."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Select only through an explicit experimental-tool allowlist for a task that must validate a serialized Federation receipt-to-handoff binding before receiver preconditions.",
+        "A route is a proposal only; a separate task-level decision must authorize invocation, and any external takeover still requires its independent authority and runtime checks."
+      ],
+      "claim_ceiling": "Canonical self-digest consistency, deterministic receipt-to-handoff projection equality, and existing caller-declared receiver capability/re-observation preconditions only. No receipt authenticity, actual workspace observation, live capability enforcement, takeover authorization, task correctness, science, or safety is established."
     }
   ]
 }

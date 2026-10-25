@@ -730,6 +730,31 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(result["unmet_outputs"], ["unregistered output"])
         self.assertFalse(result["execution_authorized"])
 
+    def test_receiver_handoff_preflight_is_default_off_and_opt_in_is_a_proposal(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "collaboration.preflight_receiver_handoff"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile(
+            "receiver-handoff-source-binding-preflight",
+            card["accepted_input_types"],
+            card["output_types"],
+        )
+
+        default = planner.plan_tool_route(task)
+        opt_in = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertEqual(opt_in["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opt_in["selected_tools"]], [tool_id])
+        self.assertEqual(opt_in["selected_tools"][0]["kind"], "EXPERIMENTAL_OPTIONAL_TOOL")
+        self.assertFalse(opt_in["execution_authorized"])
+        self.assertEqual(opt_in["cost_estimate"]["status"], "UNKNOWN")
+        self.assertEqual(
+            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

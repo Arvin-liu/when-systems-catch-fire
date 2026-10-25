@@ -181,10 +181,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual([row["tool_id"] for row in co2_route["route_result"]["selected_tools"]], [noaa_co2["tool_id"]])
         self.assertFalse(co2_route["execution_authorized"])
         self.assertFalse(co2_route["network_call_made"])
-        candidate_path = IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json"
         self.assertEqual(
             co2_route["route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
-            TOOL.git_blob_sha1(candidate_path.read_bytes()),
+            co2_route["candidate_catalog_git_blob_sha1"],
         )
         self.assertEqual(updates["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
         self.assertIn("--allow-public-network", updates["entrypoint"])

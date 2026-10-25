@@ -58,11 +58,15 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     ("RECEIPT_HISTORY_OPERATIONS", ("data/operations/", "data/ops/")),
     # 3. Research workflow tests.
     ("TEST_FIXTURE", ("research_workflow/test_",)),
+    # 3b. G1 intake documentation and fixture are non-authoritative support
+    # surfaces; classify the implementation separately as a local tool.
+    ("REFERENCE_OR_KNOWLEDGE", ("research_os_v1/g1_goal_intake/README.md",)),
+    ("TEST_FIXTURE", ("research_os_v1/g1_goal_intake/fixtures/",)),
     # 4. Tools, scripts, workflows.
     # Agent Kernel/Runtime implementation is platform provenance, not a
     # Knowledge source.  Keep it in the non-authoritative tool/workflow plane
     # so path accounting and the Knowledge admission policy agree.
-    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/", "agent_kernel/", "agent_runtime/", "agent_federation/", "research_workflow/")),
+    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/", "agent_kernel/", "agent_runtime/", "agent_federation/", "research_workflow/", "research_os_v1/g1_goal_intake/")),
     # 5. Schemas.
     ("SCHEMA", ("schemas/",)),
     # 6. Test fixtures.
