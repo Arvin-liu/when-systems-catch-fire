@@ -233,6 +233,13 @@ def validate_readme_structure(readme: str) -> None:
         ("容纳反例、承认未知、允许修订与重新开始", "revision and counterexample principle"),
         ("不是某一套固定代码", "non-code identity boundary"),
         ("留下别人能够继续检验和修正的路径", "inspectable continuation path"),
+        ("点火既是持续认识和改造对象的过程，也是这个过程本身可以被重新认识和改造的对象", "whole-system self-examination"),
+        ("点火的整体架构乃至我们对「点火是什么」的表述也如此", "system-definition revision scope"),
+        ("它们的价值不取决于新旧、名义或过去投入了多少", "evidence-based retention"),
+        ("新方法确实更好，就可以替换旧方法", "evidence-based replacement"),
+        ("旧方法仍有独特作用，就保留其适用位置", "use-case-specific coexistence"),
+        ("证据不足，就承认尚不能判断", "preserved uncertainty"),
+        ("我们既不为了变化而变化，也不因为曾经有效就拒绝改变", "non-mechanical change"),
     ):
         require(phrase in identity_text, f"README 点火是什么 lacks {label}")
     for phrase, label in (

@@ -66,6 +66,21 @@ class HumanFrontDoorTests(unittest.TestCase):
         identity_block = self.readme[start:end]
         self.assertIn(f"**{PROJECT_IDENTITY_TEXT}**", identity_block)
 
+    def test_identity_applies_self_examination_to_the_whole_system(self):
+        start = self.readme.index(HUMAN_IDENTITY_HEADING) + len(HUMAN_IDENTITY_HEADING)
+        end = self.readme.index(HUMAN_VALUES_HEADING)
+        identity_block = self.readme[start:end]
+        for phrase in (
+            "点火既是持续认识和改造对象的过程，也是这个过程本身可以被重新认识和改造的对象",
+            "点火的整体架构乃至我们对「点火是什么」的表述也如此",
+            "它们的价值不取决于新旧、名义或过去投入了多少",
+            "新方法确实更好，就可以替换旧方法",
+            "旧方法仍有独特作用，就保留其适用位置",
+            "证据不足，就承认尚不能判断",
+            "我们既不为了变化而变化，也不因为曾经有效就拒绝改变",
+        ):
+            self.assertIn(phrase, identity_block)
+
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
         architecture_end = self.readme.index("## 5. 致谢")
@@ -117,6 +132,8 @@ class HumanFrontDoorTests(unittest.TestCase):
                     mutated = mutated.replace(HUMAN_VALUES_HEADING, f"architecture_counts=99\n\n{HUMAN_VALUES_HEADING}", 1)
                 elif case["mutation"] == "drift-project-identity":
                     mutated = mutated.replace("点火首先是一种面对未知的精神", "点火首先是一种面对短期的精神", 1)
+                elif case["mutation"] == "drift-whole-system-self-examination":
+                    mutated = mutated.replace("点火的整体架构乃至我们对「点火是什么」的表述也如此", "点火的整体架构不需要重新审视", 1)
                 elif case["mutation"] == "insert-raw-svg-link":
                     entry = f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL}) · [阅读模式]({ARCHITECTURE_PAGES_URL}) · {ARCHITECTURE_INTERACTION_HINT}。\n\n"
                     mutated = mutated.replace(entry, "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n" + entry, 1)
