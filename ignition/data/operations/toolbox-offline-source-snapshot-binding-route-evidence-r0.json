@@ -1,7 +1,7 @@
 {
   "schema_version": "toolbox-route-evidence-r0",
   "tool_id": "research.bind_offline_source_snapshot_run",
-  "candidate_catalog_git_blob_sha1": "415ffdde8365dd9337ba58612fddd5e341c55391",
+  "candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_trials": [
     {

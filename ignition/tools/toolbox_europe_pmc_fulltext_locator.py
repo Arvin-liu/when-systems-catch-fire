@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Locate provider-reported Europe PMC full-text URLs for exact DOI inputs.
+"""Locate provider-reported Europe PMC full-text URLs for exact identifiers.
 
 This adapter performs a bounded metadata search only. It never requests the
 returned article URLs, downloads article content, or adjudicates rights or
@@ -23,20 +23,25 @@ from urllib.parse import urlsplit
 
 
 TOOL_ID = "research.resolve_europe_pmc_fulltext_locations"
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 API_BASE = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 API_HOST = "www.ebi.ac.uk"
 MAX_REQUEST_BYTES = 4096
-MAX_DOIS = 5
+MAX_IDENTIFIERS = 5
+MAX_DOIS = MAX_IDENTIFIERS  # Backward-compatible constant name for existing callers.
 MAX_DOI_LENGTH = 128
+MAX_IDENTIFIER_LENGTH = 128
 MAX_PROVIDER_RECORDS = 5
 MAX_RESPONSE_BYTES = 512 * 1024
 MAX_RESPONSE_DURATION_SECONDS = 7
 REQUEST_TIMEOUT_SECONDS = 5
 RESPONSE_CHUNK_BYTES = 8192
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+\Z")
+PMID_RE = re.compile(r"[1-9][0-9]{0,11}\Z")
+PMCID_RE = re.compile(r"PMC[1-9][0-9]{0,11}\Z", re.IGNORECASE)
+IDENTIFIER_QUERY_FIELDS = {"DOI": "DOI", "PMID": "EXT_ID", "PMCID": "PMCID"}
 CLAIM_CEILING = (
-    "Reports exact-DOI Europe PMC records and their provider-reported fullTextUrlList metadata at retrieval time. "
+    "Reports exact DOI, PMID, or PMCID Europe PMC records and their provider-reported fullTextUrlList metadata at retrieval time. "
     "It does not request the returned URLs, download or inspect article content, verify link availability or license, "
     "establish legal permission, source authenticity, article status, or scientific support."
 )
@@ -79,7 +84,26 @@ def _normalize_doi(value: Any) -> Optional[str]:
     return doi if DOI_RE.fullmatch(doi) else None
 
 
-def parse_request(raw: bytes) -> List[str]:
+def _normalize_identifier(identifier_type: Any, value: Any) -> Optional[str]:
+    if not isinstance(identifier_type, str) or not isinstance(value, str):
+        return None
+    if value != value.strip() or not value or len(value) > MAX_IDENTIFIER_LENGTH:
+        return None
+    if identifier_type == "DOI":
+        return value.casefold() if len(value) <= MAX_DOI_LENGTH and DOI_RE.fullmatch(value) else None
+    if identifier_type == "PMID":
+        return value if PMID_RE.fullmatch(value) else None
+    if identifier_type == "PMCID":
+        return value.upper() if PMCID_RE.fullmatch(value) else None
+    return None
+
+
+def _query_term(identifier: Dict[str, str]) -> str:
+    identifier_type = identifier["type"]
+    return "{}:{}".format(IDENTIFIER_QUERY_FIELDS[identifier_type], identifier["value"])
+
+
+def parse_request(raw: bytes) -> List[Dict[str, str]]:
     if len(raw) > MAX_REQUEST_BYTES:
         raise ToolInputError("request exceeds the declared byte limit")
     try:
@@ -90,31 +114,41 @@ def parse_request(raw: bytes) -> List[str]:
         )
     except (UnicodeDecodeError, json.JSONDecodeError, ToolInputError) as exc:
         raise ToolInputError("request must be valid UTF-8 JSON with unique keys") from exc
-    if not isinstance(document, dict) or set(document) != {"dois"}:
-        raise ToolInputError("request must contain exactly one key: dois")
-    values = document["dois"]
-    if not isinstance(values, list) or not 1 <= len(values) <= MAX_DOIS:
-        raise ToolInputError("dois must contain between one and five values")
+    if not isinstance(document, dict) or len(document) != 1:
+        raise ToolInputError("request must contain exactly one key: dois or identifiers")
+    if set(document) == {"dois"}:
+        values = document["dois"]
+        if not isinstance(values, list) or not 1 <= len(values) <= MAX_IDENTIFIERS:
+            raise ToolInputError("dois must contain between one and five values")
+        typed_values = [{"type": "DOI", "value": value} for value in values]
+    elif set(document) == {"identifiers"}:
+        values = document["identifiers"]
+        if not isinstance(values, list) or not 1 <= len(values) <= MAX_IDENTIFIERS:
+            raise ToolInputError("identifiers must contain between one and five values")
+        typed_values = values
+    else:
+        raise ToolInputError("request must contain exactly one key: dois or identifiers")
 
-    normalized: List[str] = []
-    for index, value in enumerate(values):
-        if (
-            not isinstance(value, str)
-            or len(value) > MAX_DOI_LENGTH
-            or value != value.strip()
-            or not DOI_RE.fullmatch(value)
-        ):
-            raise ToolInputError("dois[{}] must be a bare DOI identifier".format(index))
-        doi = value.casefold()
-        if doi in normalized:
-            raise ToolInputError("DOI values must be unique within one request")
-        normalized.append(doi)
+    normalized: List[Dict[str, str]] = []
+    seen = set()
+    for index, item in enumerate(typed_values):
+        if not isinstance(item, dict) or set(item) != {"type", "value"}:
+            raise ToolInputError("identifier[{}] must contain exactly type and value".format(index))
+        identifier_type = item["type"]
+        value = _normalize_identifier(identifier_type, item["value"])
+        if value is None:
+            raise ToolInputError("identifier[{}] must be a supported bare DOI, PMID, or PMCID".format(index))
+        key = (identifier_type, value)
+        if key in seen:
+            raise ToolInputError("identifier values must be unique within each type")
+        seen.add(key)
+        normalized.append({"type": identifier_type, "value": value})
     return normalized
 
 
-def _request_url(doi: str) -> str:
+def _request_url(identifier: Dict[str, str]) -> str:
     url = API_BASE + "?" + urllib.parse.urlencode({
-        "query": "DOI:" + doi,
+        "query": _query_term(identifier),
         "format": "json",
         "resultType": "core",
         "pageSize": str(MAX_PROVIDER_RECORDS),
@@ -148,8 +182,8 @@ def _read_bounded(response: Any) -> Tuple[Optional[bytes], Optional[str]]:
     return b"".join(chunks), None
 
 
-def _fetch(doi: str) -> Dict[str, Any]:
-    url = _request_url(doi)
+def _fetch(identifier: Dict[str, str]) -> Dict[str, Any]:
+    url = _request_url(identifier)
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "IgnitionToolboxEuropePMCFullTextLocator/{}".format(TOOL_VERSION), "Accept": "application/json"},
@@ -184,6 +218,20 @@ def _optional_text(record: Dict[str, Any], key: str, *, max_length: int = 2048) 
     text = " ".join(value.split())
     if len(text) > max_length:
         raise ToolInputError("provider text field exceeds the declared limit")
+    return text or None
+
+
+def _optional_identifier_text(record: Dict[str, Any], key: str, *, max_length: int = MAX_IDENTIFIER_LENGTH) -> Optional[str]:
+    value = record.get(key)
+    if value is None:
+        return None
+    if isinstance(value, int) and not isinstance(value, bool):
+        value = str(value)
+    if not isinstance(value, str):
+        raise ToolInputError("invalid provider identifier field")
+    text = value.strip()
+    if len(text) > max_length:
+        raise ToolInputError("provider identifier field exceeds the declared limit")
     return text or None
 
 
@@ -246,7 +294,13 @@ def _fulltext_urls(record: Dict[str, Any]) -> Tuple[List[Dict[str, Optional[str]
     return locations, omitted
 
 
-def _parse_provider_document(body: bytes, requested_doi: str) -> Dict[str, Any]:
+def _matches_identifier(result: Dict[str, Any], identifier: Dict[str, str]) -> bool:
+    field = {"DOI": "doi", "PMID": "pmid", "PMCID": "pmcid"}[identifier["type"]]
+    returned_value = _optional_identifier_text(result, field, max_length=MAX_IDENTIFIER_LENGTH)
+    return _normalize_identifier(identifier["type"], returned_value) == identifier["value"]
+
+
+def _parse_provider_document(body: bytes, identifier: Dict[str, str]) -> Dict[str, Any]:
     document = json.loads(
         body.decode("utf-8", errors="strict"),
         object_pairs_hook=_strict_object,
@@ -265,25 +319,26 @@ def _parse_provider_document(body: bytes, requested_doi: str) -> Dict[str, Any]:
         raise ToolInputError("provider response has an invalid hitCount")
     results = result_list["result"]
     if len(results) > MAX_PROVIDER_RECORDS:
-        raise ToolInputError("provider response exceeds the exact-DOI record limit")
+        raise ToolInputError("provider response exceeds the exact-identifier record limit")
 
     exact_records: List[Dict[str, Any]] = []
     for result in results:
         if not isinstance(result, dict):
             raise ToolInputError("provider result must be an object")
-        doi = _optional_text(result, "doi", max_length=MAX_DOI_LENGTH)
-        if _normalize_doi(doi) != requested_doi:
+        if not _matches_identifier(result, identifier):
             continue
+        doi_raw = _optional_identifier_text(result, "doi", max_length=MAX_DOI_LENGTH)
+        doi = _normalize_doi(doi_raw)
         source = _optional_text(result, "source", max_length=32)
         record_id = _optional_text(result, "id", max_length=128)
         if not source or not record_id:
-            raise ToolInputError("exact DOI provider record is missing source or id")
+            raise ToolInputError("exact identifier provider record is missing source or id")
         locations, omitted = _fulltext_urls(result)
         exact_records.append({
             "source": source,
             "id": record_id,
-            "pmid": _optional_text(result, "pmid", max_length=32),
-            "pmcid": _optional_text(result, "pmcid", max_length=32),
+            "pmid": _optional_identifier_text(result, "pmid", max_length=32),
+            "pmcid": _optional_identifier_text(result, "pmcid", max_length=32),
             "doi": doi,
             "is_open_access_claim": _provider_open_access(result.get("isOpenAccess")),
             "full_text_locations": locations,
@@ -292,15 +347,24 @@ def _parse_provider_document(body: bytes, requested_doi: str) -> Dict[str, Any]:
     return {"hit_count": int(hit_count), "records": exact_records}
 
 
-def locate(dois: List[str]) -> Dict[str, Any]:
+def locate(identifiers: List[Dict[str, str] | str]) -> Dict[str, Any]:
     rows: List[Dict[str, Any]] = []
     successful_acquisitions = 0
     valid_provider_responses = 0
-    for doi in dois:
+    for requested in identifiers:
+        raw_identifier = {"type": "DOI", "value": requested} if isinstance(requested, str) else requested
+        if not isinstance(raw_identifier, dict) or set(raw_identifier) != {"type", "value"}:
+            raise ToolInputError("identifier must contain exactly type and value")
+        normalized_value = _normalize_identifier(raw_identifier["type"], raw_identifier["value"])
+        if normalized_value is None:
+            raise ToolInputError("identifier must be a supported bare DOI, PMID, or PMCID")
+        identifier = {"type": raw_identifier["type"], "value": normalized_value}
+        query_term = _query_term(identifier)
         timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         row: Dict[str, Any] = {
-            "requested_doi": doi,
-            "query_sha256": hashlib.sha256(("DOI:" + doi).encode("utf-8")).hexdigest(),
+            "requested_doi": identifier["value"] if identifier["type"] == "DOI" else None,
+            "requested_identifier": identifier,
+            "query_sha256": hashlib.sha256(query_term.encode("utf-8")).hexdigest(),
             "retrieval_timestamp_utc": timestamp,
             "source_endpoint": API_BASE,
             "acquisition_status": "NOT_AVAILABLE",
@@ -312,7 +376,7 @@ def locate(dois: List[str]) -> Dict[str, Any]:
             "full_text_location_count": 0,
             "records": [],
         }
-        fetched = _fetch(doi)
+        fetched = _fetch(identifier)
         row["acquisition_status"] = fetched["acquisition_status"]
         row["http_status"] = fetched["http_status"]
         if fetched["acquisition_status"] != "OK":
@@ -323,7 +387,7 @@ def locate(dois: List[str]) -> Dict[str, Any]:
         body = fetched["body"]
         row["response_sha256"] = hashlib.sha256(body).hexdigest()
         try:
-            provider = _parse_provider_document(body, doi)
+            provider = _parse_provider_document(body, identifier)
         except (ToolInputError, UnicodeDecodeError, json.JSONDecodeError):
             row["acquisition_status"] = "INVALID_PROVIDER_RESPONSE"
             row["match_status"] = "NOT_AVAILABLE"
@@ -344,7 +408,7 @@ def locate(dois: List[str]) -> Dict[str, Any]:
             row["match_status"] = "EXACT_RECORD_NO_USABLE_LOCATION"
         rows.append(row)
 
-    status = "OK" if valid_provider_responses == len(dois) else ("PARTIAL" if valid_provider_responses else "NOT_AVAILABLE")
+    status = "OK" if valid_provider_responses == len(identifiers) else ("PARTIAL" if valid_provider_responses else "NOT_AVAILABLE")
     return {
         "schema_version": "ignition.europe-pmc-fulltext-locator-r0",
         "tool_id": TOOL_ID,
@@ -352,7 +416,7 @@ def locate(dois: List[str]) -> Dict[str, Any]:
         "source_code_sha256": hashlib.sha256(Path(__file__).resolve().read_bytes()).hexdigest(),
         "provider": "Europe PMC",
         "status": status,
-        "requested_count": len(dois),
+        "requested_count": len(identifiers),
         "successful_acquisition_count": successful_acquisitions,
         "valid_provider_response_count": valid_provider_responses,
         "records": rows,
@@ -373,11 +437,11 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 2
     try:
         raw = sys.stdin.buffer.read(MAX_REQUEST_BYTES + 1)
-        dois = parse_request(raw)
+        identifiers = parse_request(raw)
     except ToolInputError as exc:
         print("INVALID_REQUEST: {}".format(exc), file=sys.stderr)
         return 2
-    print(json.dumps(locate(dois), ensure_ascii=False, separators=(",", ":")))
+    print(json.dumps(locate(identifiers), ensure_ascii=False, separators=(",", ":")))
     return 0
 
 

@@ -799,7 +799,8 @@ class AdaptiveToolRouteTests(unittest.TestCase):
     def test_europe_pmc_fulltext_locator_is_default_off_and_specialized(self) -> None:
         catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
         card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.resolve_europe_pmc_fulltext_locations")
-        task = profile("exact-doi-europe-pmc-fulltext-locations", card["accepted_input_types"], card["output_types"])
+        self.assertIn("DOI, PMID, or PMCID", card["accepted_input_types"][0])
+        task = profile("exact-typed-identifier-europe-pmc-fulltext-locations", card["accepted_input_types"], card["output_types"])
 
         default = planner.plan_tool_route(task)
         self.assertEqual(default["decision"], "INCOMPLETE")

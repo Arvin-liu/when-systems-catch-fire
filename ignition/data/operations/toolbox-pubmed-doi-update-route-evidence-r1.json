@@ -4,7 +4,7 @@
     "research.audit_pubmed_updates_from_doi",
     "research.inspect_pubmed_update_links"
   ],
-  "candidate_catalog_git_blob_sha1": "415ffdde8365dd9337ba58612fddd5e341c55391",
+  "candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
   "current_operation_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "task_profiles": {
     "doi_composition": {

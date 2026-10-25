@@ -21,6 +21,8 @@ SPEC.loader.exec_module(TOOL)
 
 
 DOI = "10.1371/journal.pone.0005403"
+PMID = "19404397"
+PMCID = "PMC2671458"
 SAMPLE_RESPONSE = {
     "hitCount": "1",
     "resultList": {"result": [{
@@ -123,6 +125,38 @@ class EuropePmcFullTextLocatorTests(unittest.TestCase):
         self.assertNotIn("This title", serialized)
         self.assertEqual(len(receipt["records"][0]["response_sha256"]), 64)
 
+    def test_typed_pmid_and_pmcid_queries_match_their_exact_provider_fields(self) -> None:
+        for identifier, expected_query, expected_type in [
+            ({"type": "PMID", "value": PMID}, "EXT_ID:" + PMID, "PMID"),
+            ({"type": "PMCID", "value": PMCID}, "PMCID:" + PMCID, "PMCID"),
+        ]:
+            with self.subTest(identifier=identifier):
+                opener = FakeOpener()
+                with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+                    receipt = TOOL.locate([identifier])
+                parsed = urlsplit(opener.calls[0][0].full_url)
+                self.assertEqual(parse_qs(parsed.query)["query"], [expected_query])
+                row = receipt["records"][0]
+                self.assertEqual(row["requested_identifier"], identifier)
+                self.assertEqual(row["match_status"], "EXACT_RECORD_WITH_LOCATIONS")
+                self.assertEqual(row["records"][0][expected_type.lower()], identifier["value"])
+                self.assertEqual(row["full_text_location_count"], 1)
+
+    def test_pmid_match_can_return_a_record_without_a_doi(self) -> None:
+        record = {
+            "source": "MED",
+            "id": PMID,
+            "pmid": PMID,
+            "pmcid": PMCID,
+            "fullTextUrlList": SAMPLE_RESPONSE["resultList"]["result"][0]["fullTextUrlList"],
+        }
+        opener = FakeOpener(FakeResponse(provider_body({"hitCount": "1", "resultList": {"result": [record]}})))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            row = TOOL.locate([{"type": "PMID", "value": PMID}])["records"][0]
+        self.assertEqual(row["match_status"], "EXACT_RECORD_WITH_LOCATIONS")
+        self.assertIsNone(row["records"][0]["doi"])
+        self.assertIsNone(row["requested_doi"])
+
     def test_returned_article_url_is_never_requested(self) -> None:
         opener = FakeOpener()
         with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
@@ -200,7 +234,7 @@ class EuropePmcFullTextLocatorTests(unittest.TestCase):
         self.assertEqual(first.calls[0][0].full_url.split("?", 1)[0], TOOL.API_BASE)
         self.assertEqual(second.calls[0][0].full_url.split("?", 1)[0], TOOL.API_BASE)
 
-    def test_request_rejects_duplicate_json_keys_duplicate_dois_and_invalid_dois(self) -> None:
+    def test_request_rejects_duplicate_json_keys_duplicate_identifiers_and_invalid_identifiers(self) -> None:
         for raw in [
             b'{"dois":["10.1000/x"],"dois":["10.2000/y"]}',
             json.dumps({"dois": [DOI, DOI.upper()]}).encode(),
@@ -208,16 +242,29 @@ class EuropePmcFullTextLocatorTests(unittest.TestCase):
             json.dumps({"dois": ["10.123/example"]}).encode(),
             json.dumps({"dois": ["10.1234/a\n"]}).encode(),
             json.dumps({"dois": [DOI] * (TOOL.MAX_DOIS + 1)}).encode(),
+            json.dumps({"identifiers": [{"type": "PMID", "value": PMID}, {"type": "PMID", "value": PMID}]}).encode(),
+            json.dumps({"identifiers": [{"type": "PMID", "value": "019404397"}]}).encode(),
+            json.dumps({"identifiers": [{"type": "PMCID", "value": "PMC"}]}).encode(),
+            json.dumps({"identifiers": [{"type": "pmid", "value": PMID}]}).encode(),
+            json.dumps({"identifiers": [{"type": "PMCID", "value": PMCID, "extra": "rejected"}]}).encode(),
+            json.dumps({"dois": [DOI], "identifiers": [{"type": "PMID", "value": PMID}]}).encode(),
             b" " * (TOOL.MAX_REQUEST_BYTES + 1),
         ]:
             with self.subTest(request=raw[:60]), self.assertRaises(TOOL.ToolInputError):
                 TOOL.parse_request(raw)
 
-        self.assertEqual(TOOL.parse_request(request_bytes()), [DOI])
+        self.assertEqual(TOOL.parse_request(request_bytes()), [{"type": "DOI", "value": DOI}])
+        typed = TOOL.parse_request(json.dumps({"identifiers": [
+            {"type": "PMID", "value": PMID}, {"type": "PMCID", "value": "pmc2671458"},
+        ]}).encode())
+        self.assertEqual(typed, [
+            {"type": "PMID", "value": PMID}, {"type": "PMCID", "value": PMCID},
+        ])
 
     def test_receipt_matches_machine_schema_and_body_timeout_is_bounded(self) -> None:
         schema = json.loads((IGNITION_ROOT / "schemas/operations/toolbox-europe-pmc-fulltext-locator-r0.schema.json").read_text(encoding="utf-8"))
         Draft202012Validator(schema).validate({"dois": [DOI]})
+        Draft202012Validator(schema).validate({"identifiers": [{"type": "PMID", "value": PMID}]})
         opener = FakeOpener()
         with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
             receipt = TOOL.locate([DOI])

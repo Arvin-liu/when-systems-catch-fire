@@ -6198,27 +6198,27 @@
         "zh": "Europe PMC 全文位置定位器",
         "en": "Europe PMC Full-text Location Locator"
       },
-      "description": "Resolve up to five exact DOI values against Europe PMC core-search results and return exact provider-reported fullTextUrlList metadata without requesting article URLs or assessing access rights.",
-      "version": "0.1.0",
+      "description": "Resolve up to five exact DOI, PMID, or PMCID values against Europe PMC core-search results and return provider-reported fullTextUrlList metadata without requesting article URLs or assessing access rights.",
+      "version": "0.2.0",
       "license": "Wrapper BUSL-1.1; Europe PMC Web Services terms and applicable provider/data licensing terms apply. Provider-reported location and license metadata are not rights determinations. API documentation: https://europepmc.org/RestfulWebService.",
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "REAL_TOOL_TEST",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_europe_pmc_fulltext_locator.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_europe_pmc_fulltext_locator.py --stdin --allow-public-network",
       "source_refs": [
         {
           "path": "ignition/tools/toolbox_europe_pmc_fulltext_locator.py",
-          "role": "BOUNDED_FIXED_HOST_EXACT_DOI_CLI"
+          "role": "BOUNDED_FIXED_HOST_TYPED_IDENTIFIER_CLI"
         },
         {
           "path": "ignition/tests/test_toolbox_europe_pmc_fulltext_locator.py",
-          "role": "FOCUSED_MOCKED_NETWORK_SCHEMA_AND_NEGATIVE_CONTROLS"
+          "role": "TYPED_IDENTIFIER_MATCH_SCHEMA_AND_NEGATIVE_CONTROLS"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
-          "role": "DEFAULT_OFF_EXPLICIT_HOST_AND_MINIMAL_ROUTE_EXPERIMENT"
+          "role": "DEFAULT_OFF_EXPLICIT_HOST_AND_TYPED_ROUTE_TEST"
         },
         {
           "path": "ignition/schemas/operations/toolbox-europe-pmc-fulltext-locator-r0.schema.json",
@@ -6259,8 +6259,8 @@
       ],
       "dependencies": [],
       "good_for": [
-        "A task already has one to five public DOI identifiers and needs the provider-reported Europe PMC fullTextUrlList projection for exact DOI records.",
-        "Returning bounded source identifiers, URL metadata, response hashes, retrieval timestamps and explicit no-match or ambiguous-match states without article content.",
+        "A task already has one to five public DOI, PMID, or PMCID values and needs the provider-reported Europe PMC fullTextUrlList projection for exact identifier records.",
+        "Returning bounded source identifiers, URL metadata, response hashes, retrieval timestamps, and explicit no-match or ambiguous-match states without article content.",
         "Checking whether this provider reports candidate locations before a separately authorized retrieval or rights review performed by another workflow."
       ],
       "not_for": [
@@ -6270,24 +6270,24 @@
         "Establishing article quality, retraction status, clinical advice, or scientific support for any claim."
       ],
       "only_if": [
-        "The caller supplies one to five unique bare DOI values and the exact-DOI Europe PMC location output is needed.",
-        "The candidate is explicitly selected for this task and the caller separately permits sending those public DOI values to www.ebi.ac.uk.",
+        "The caller supplies one to five unique bare DOI, PMID, or PMCID values and exact Europe PMC location metadata is needed.",
+        "The candidate is explicitly selected for this task and the caller separately permits sending those public identifiers to www.ebi.ac.uk.",
         "The actual CLI invocation includes --allow-public-network; routing remains a proposal and does not authorize network access.",
-        "The DOI values contain no confidential, patient-identifying, or otherwise sensitive information that should not be sent to a public service."
+        "The identifiers contain no confidential, patient-identifying, or otherwise sensitive information that should not be sent to a public service."
       ],
       "counterindicated_when": [
-        "No exact DOI is known, the task needs general topic discovery, or a checked-out local source already satisfies the request.",
-        "Public network access or disclosure of the DOI to Europe PMC is not allowed.",
+        "No persistent identifier is known, the task needs general topic discovery, or a checked-out local source already satisfies the request.",
+        "Public network access or disclosure of the identifier to Europe PMC is not allowed.",
         "The task requires the article itself, a verified working URL, a license determination, a rights decision, or scientific appraisal.",
-        "The caller requests unrestricted or exhaustive location discovery beyond the provider response bounded to five records per DOI."
+        "The caller requests unrestricted or exhaustive location discovery beyond the provider response bounded to five records per identifier."
       ],
       "accepted_input_types": [
-        "UTF-8 JSON stdin object with exactly one key dois whose value is an array of 1-5 unique bare DOI strings (each at most 128 characters); request maximum 4096 bytes"
+        "Legacy UTF-8 JSON stdin object with exactly one key dois and an array of 1-5 unique bare DOI strings (each at most 128 characters), or typed UTF-8 JSON stdin object with exactly one key identifiers and an array of 1-5 unique {type,value} objects where type is DOI, PMID, or PMCID; request maximum 4096 bytes."
       ],
       "output_types": [
-        "Input-ordered per-DOI acquisition and exact-match state, provider hit count, and at most five exact DOI-matched provider records.",
-        "For each exact record, provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and a count of omitted unsafe locations; no title, abstract, raw response, or article content.",
-        "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts."
+        "Input-ordered per-identifier acquisition and exact-match state, provider hit count, and at most five exact-identifier-matched provider records.",
+        "Each row preserves requested_identifier type/value and keeps requested_doi populated only for legacy/typed DOI requests; records include provider source/id/PMID/PMCID/DOI, isOpenAccess claim, safe HTTPS fullTextUrlList fields, and omitted-unsafe count.",
+        "Provider endpoint, UTC retrieval timestamp, query and response SHA-256 values, source-code SHA-256, top-level status, claim ceiling, and valid/acquired response counts; no title, abstract, raw response, or article content."
       ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
@@ -6306,7 +6306,7 @@
         "external_actions": false
       },
       "side_effects": [
-        "One explicit invocation sends one HTTPS GET per DOI, at most five requests total, to the fixed www.ebi.ac.uk Europe PMC Search endpoint using query=DOI:<doi>, format=json, resultType=core and pageSize=5; the caller-supplied DOI may appear in provider-side access logs.",
+        "One explicit invocation sends one HTTPS GET per identifier, at most five requests total, to the fixed www.ebi.ac.uk Europe PMC Search endpoint: DOI:<value>, EXT_ID:<value> for PMID, or PMCID:<value>, with format=json, resultType=core, and pageSize=5. Caller-supplied identifiers may appear in provider-side access logs.",
         "Returned fullTextUrlList links are output metadata only: the adapter never requests them, follows redirects, downloads content, or checks live availability or license.",
         "Uses no retries, secrets, API key, billing account, file write, repository mutation, or external action; only a bounded JSON receipt is written to stdout.",
         "Each API request has a five-second socket timeout, each response body has a seven-second time budget and a 512 KiB cap, and no response contains more than five provider records."
@@ -6322,7 +6322,7 @@
         {
           "tool_id": "research.search_europe_pmc_query",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
-          "reason": "The existing lite topic/query adapter remains useful for discovering records from public text; in the same exact-DOI observation it returned the same record identity but no fullTextUrlList fields."
+          "reason": "The existing lite topic/query adapter remains useful for discovering records from public text; same PMID evidence shows it can return the record identity but omits fullTextUrlList, while core results expose provider-reported locations."
         },
         {
           "tool_id": "research.lookup_openalex_work_metadata",
@@ -6332,46 +6332,47 @@
         {
           "tool_id": "research.resolve_pubmed_identifiers",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
-          "reason": "The resolver maps supplied DOI values to PubMed identifiers; it does not return a Europe PMC fullTextUrlList projection or access locations."
+          "reason": "The resolver remains useful when PMID/PMCID/DOI cross-reference mapping is itself required. For an already-known PMID or PMCID and a Europe PMC location task, the direct typed locator can skip that extra lookup stage; this does not establish the resolver is replaceable."
         }
       ],
       "replacement_candidates": [],
       "unique_remaining_use_cases": [
-        "For already-known public DOI values, retrieve exact Europe PMC provider-reported fullTextUrlList metadata while leaving the returned article URLs untouched and preserving explicit rights and availability uncertainty."
+        "For already-known public DOI, PMID, or PMCID values, retrieve exact Europe PMC provider-reported fullTextUrlList metadata while leaving returned article URLs untouched and preserving rights and availability uncertainty."
       ],
       "comparison_evidence": {
         "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
-        "scope": "One same-DOI, same-provider live comparison used resultType=core for this locator and resultType=lite for the existing Europe PMC query adapter. Both returned the same MED record identity; the lite result omitted fullTextUrlList while the core result exposed three provider-reported locations. This supports a distinct output scope, not superior recall, reliability, availability, rights, quality, latency, or cost.",
+        "scope": "One DOI same-provider core-versus-lite comparison showed that the lite projection omitted fullTextUrlList while core exposed three provider-reported locations. A second live same-PMID comparison on 2026-10-26 returned the same MED record identity from both lite and core; only core supplied three fullTextUrlList entries. One request per PMID was used for each comparison arm. The separate two-identifier core invocation also resolved both PMID and PMCID. This supports a distinct typed-identifier location task, not broad superiority, stable latency/cost, rights, provider completeness, or scientific quality.",
         "compared_tool_ids": [
           "research.search_europe_pmc_query",
-          "research.lookup_openalex_work_metadata",
-          "research.resolve_pubmed_identifiers"
+          "research.resolve_pubmed_identifiers",
+          "research.lookup_openalex_work_metadata"
         ],
         "evidence_refs": [
           "ignition/data/operations/toolbox-europe-pmc-fulltext-locator-evidence-r0.json",
           "ignition/tools/toolbox_europe_pmc_query_search.py",
           "ignition/tests/test_toolbox_europe_pmc_query_search.py",
-          "ignition/tools/toolbox_openalex_work_metadata.py",
-          "ignition/tests/test_toolbox_openalex_work_metadata.py",
           "ignition/tools/toolbox_pubmed_identifier_resolver.py",
-          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py"
+          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
+          "ignition/tools/toolbox_openalex_work_metadata.py",
+          "ignition/tests/test_toolbox_openalex_work_metadata.py"
         ],
         "findings": [
-          "For the same DOI, both Europe PMC adapters returned MED record id 19404397 and PMCID PMC2671458. The lite query-search projection did not expose fullTextUrlList; the exact DOI core response supplied three URL records, including an OA-labeled Europe PMC HTML and PDF location.",
-          "The provider response had isOpenAccess=Y while the location license fields were null. The candidate preserves those claims and does not infer permission, access success, or lawful reuse.",
-          "The topic search retains its unique query-to-record discovery use case; OpenAlex and PubMed identifier adapters expose different declared output contracts. No existing tool is replaced."
+          "For the same DOI, lite and core returned MED record id 19404397; the lite projection omitted fullTextUrlList, while core supplied three provider-reported locations. The provider response said isOpenAccess=Y but all location license fields were null; no permission inference follows.",
+          "For the same PMID 19404397, the existing lite query returned one exact MED record identity without fullTextUrlList; the typed core locator returned the same identity and three provider-reported locations using one request in each arm. A separate typed PMCID request for PMC2671458 returned that same exact record and three locations.",
+          "The topic-search adapter retains its discovery use case. The PubMed identifier resolver remains useful for cross-reference mapping, but a known PMID/PMCID location task can skip that extra step. No existing tool is removed, made Current, or enabled for default routing."
         ]
       },
       "deprecation_or_retirement_status": {
         "status": "SPECIALIZED",
-        "basis": "Retain as an opt-in exact-DOI location metadata adapter because it supplies a distinct Europe PMC fullTextUrlList projection; topic search and identifier/metadata adapters keep their own useful scopes."
+        "basis": "Retain as an opt-in exact persistent-identifier location metadata adapter. Current topic search and identifier cross-reference tools have distinct functions; the extension does not establish a replacement or retirement case."
       },
       "migration_and_rollback": {
         "migration_notes": [
-          "No existing tool or Current operation is migrated. Use the topic-search adapter when no DOI is known; use DOI-to-identifier or metadata tools for their declared outputs; invoke this candidate only for exact-DOI Europe PMC location metadata."
+          "The legacy DOI request shape remains accepted. Use typed PMID/PMCID inputs when those identifiers are already known; keep the identifier resolver for cross-reference work and the topic-search adapter for discovery."
         ],
         "rollback_steps": [
-          "If later same-task evidence proves this candidate adds no useful location output, remove its optional card and generated projection, and retire unneeded runtime code while preserving this historical response and comparison evidence."
+          "If typed identifier lookups fail exact-match or compatibility checks, revert to the 0.1.0 DOI-only source and generated card; preserve the original DOI smoke and all failed typed-identifier evidence.",
+          "If later same-task evidence proves the overall candidate adds no useful output, remove its optional card and generated projection and retire unneeded runtime code while preserving historical evidence."
         ]
       },
       "fallback": "If Europe PMC is unavailable, returns no exact match, or lists no usable URL, preserve that status without inferring absence. Use another explicitly authorized provider or manual lookup only under the caller's separate network and rights instructions; do not fetch returned locations through this tool.",
@@ -6383,7 +6384,7 @@
           "ignition/schemas/operations/toolbox-europe-pmc-fulltext-locator-r0.schema.json"
         ],
         "negative_controls": [
-          "Missing --allow-public-network makes no request; malformed, duplicate-key, duplicate-DOI, non-bare, and oversized inputs fail before network access.",
+          "Missing --allow-public-network makes no request; malformed JSON, duplicate keys, duplicate typed identifiers, unsupported types, whitespace, invalid bare DOI/PMID/PMCID values, excess items, and oversized inputs fail before network access.",
           "Only the fixed Europe PMC HTTPS host is requested; redirects, rate limits, non-JSON responses, timeout, oversized bodies, malformed provider JSON, duplicate provider keys, and invalid hit counts remain explicit.",
           "Returned URLs are never requested; non-HTTPS URLs, credentials, fragments, invalid ports, control characters, and malformed values are omitted and counted.",
           "Abstracts, titles, raw provider payloads, article content, inferred rights, and execution authorization are never returned."
@@ -6391,11 +6392,11 @@
       },
       "router_selectable_by_default": false,
       "router_conditions": [
-        "Remain excluded unless the caller explicitly allowlists research.resolve_europe_pmc_fulltext_locations for a known-DOI fullTextUrlList metadata task.",
+        "Remain excluded unless the caller explicitly allowlists research.resolve_europe_pmc_fulltext_locations for a known DOI, PMID, or PMCID fullTextUrlList metadata task.",
         "The typed route profile must separately list the exact www.ebi.ac.uk network host; route selection is not execution permission.",
-        "Every actual CLI call requires --allow-public-network and a per-task decision that the supplied DOI may be sent to Europe PMC."
+        "Every actual CLI call requires --allow-public-network and a per-task decision that the supplied public identifier may be sent to Europe PMC."
       ],
-      "claim_ceiling": "Reports exact-DOI Europe PMC records and provider-reported fullTextUrlList fields at retrieval time only. It does not request or inspect article URLs/content, verify link availability or licensing, establish lawful reuse, authenticate the source, assess article status, or establish scientific support."
+      "claim_ceiling": "Reports exact DOI, PMID, or PMCID Europe PMC records and provider-reported fullTextUrlList fields at retrieval time only. It does not request or inspect article URLs/content, verify link availability or licensing, establish lawful reuse, authenticate the source, assess article status, or establish scientific support."
     }
   ]
 }
