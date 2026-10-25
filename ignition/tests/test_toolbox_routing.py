@@ -840,6 +840,38 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(retrieval["route_result"]["execution_authorized"])
 
+    def test_portable_research_episode_preflight_is_default_off_and_allowlist_does_not_execute(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "collaboration.validate_portable_research_episode"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("portable-research-episode-manifest-preflight", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        opted = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-portable-research-episode-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+        self.assertEqual(opted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opted["selected_tools"]], [tool_id])
+        self.assertFalse(opted["execution_authorized"])
+        self.assertFalse(opted["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(opted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(evidence["default_route_result"]["decision"], "INCOMPLETE")
+        self.assertEqual(evidence["allowlisted_route_result"]["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in evidence["allowlisted_route_result"]["selected_tools"]], [tool_id])
+        self.assertFalse(evidence["allowlisted_route_result"]["execution_authorized"])
+        self.assertEqual(
+            evidence["allowlisted_route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

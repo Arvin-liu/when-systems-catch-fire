@@ -2,9 +2,9 @@
   "schema_version": "ignition.toolbox-publication-metadata-cross-source-route-evidence-r0",
   "experiment_id": "ROUTE-20261025-GAP001-05-CROSS-PROVIDER-RETRIEVAL-AND-COMPARISON",
   "candidate_base": "5940dd1e25142545e2345c0126d1384ebca6121d",
-  "candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8",
-  "candidate_catalog_prior_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
-  "candidate_catalog_refresh_note": "The candidate card now includes bounded same-task route measurements. Routing decisions were re-run under the new catalog; tool inputs, outputs, permissions, and selected-tool outcomes remain unchanged.",
+  "candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc",
+  "candidate_catalog_prior_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8",
+  "candidate_catalog_refresh_note": "One default-off portable-episode candidate was added. Both stored route stages were re-run against the updated catalog; task inputs, permissions and selected-tool outcomes remain unchanged.",
   "source_retrieval_stage": {
     "task_profile": {
       "task_id": "retrieve-gap001-05-cross-provider-metadata",
@@ -38,7 +38,11 @@
           "per-request response SHA-256, HTTP status, and public API usage fields",
           "per-response SHA-256 and explicit HTTP or network outcome summary"
         ],
-        "execution_authorized": false
+        "execution_authorized": false,
+        "allowed_network_hosts": [
+          "api.crossref.org",
+          "api.openalex.org"
+        ]
       },
       "minimum_sufficient_pair": {
         "include_experimental_tool_ids": [
@@ -113,6 +117,10 @@
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
           "tool_id": "collaboration.verify_handoff_artifact_files",
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
@@ -183,6 +191,10 @@
         {
           "tool_id": "language_thought.project_bounded_meaning",
           "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
           "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -295,7 +307,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+        "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
       }
     },
     "route_result": {
@@ -426,6 +438,10 @@
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
           "tool_id": "collaboration.verify_handoff_artifact_files",
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
@@ -496,6 +512,10 @@
         {
           "tool_id": "language_thought.project_bounded_meaning",
           "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
           "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -600,7 +620,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+        "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
       }
     },
     "extra_options_result": {
@@ -731,6 +751,10 @@
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
           "tool_id": "collaboration.verify_handoff_artifact_files",
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
@@ -801,6 +825,10 @@
         {
           "tool_id": "language_thought.project_bounded_meaning",
           "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
           "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -905,7 +933,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+        "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
       }
     }
   },
@@ -929,7 +957,11 @@
         "include_experimental_tool_ids": [],
         "decision": "INCOMPLETE",
         "selected_tool_ids": [],
-        "execution_authorized": false
+        "execution_authorized": false,
+        "unmet_outputs": [
+          "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+          "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+        ]
       },
       "explicit_minimum_sufficient": {
         "include_experimental_tool_ids": [
@@ -940,7 +972,8 @@
           "research.compare_publication_metadata_snapshots"
         ],
         "allowed_network_hosts": [],
-        "execution_authorized": false
+        "execution_authorized": false,
+        "unmet_outputs": []
       },
       "extra_provider_and_context_candidates": {
         "include_experimental_tool_ids": [
@@ -1132,7 +1165,8 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           }
         ],
-        "execution_authorized": false
+        "execution_authorized": false,
+        "unmet_outputs": []
       }
     },
     "default_route_result": {
@@ -1160,6 +1194,10 @@
         },
         {
           "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
@@ -1233,6 +1271,10 @@
         {
           "tool_id": "language_thought.project_bounded_meaning",
           "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
           "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -1345,7 +1387,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+        "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
       }
     },
     "route_result": {
@@ -1416,6 +1458,10 @@
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
           "tool_id": "collaboration.verify_handoff_artifact_files",
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
@@ -1486,6 +1532,10 @@
         {
           "tool_id": "language_thought.project_bounded_meaning",
           "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
           "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -1594,7 +1644,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+        "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
       }
     },
     "extra_options_result": {
@@ -1665,6 +1715,10 @@
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
           "tool_id": "collaboration.verify_handoff_artifact_files",
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
@@ -1735,6 +1789,10 @@
         {
           "tool_id": "language_thought.project_bounded_meaning",
           "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         },
         {
           "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -1843,7 +1901,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+        "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
       }
     }
   },
@@ -1867,6 +1925,7 @@
   "candidate_catalog_history": [
     "933a349b5d7e34df3a9d46c42896e9ec236a9831",
     "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
-    "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+    "86e0372a292afe58e65d7641fb07cc61776ec8a8",
+    "00fae5794f52ef3270ede181b5ef0679e83f21dc"
   ]
 }

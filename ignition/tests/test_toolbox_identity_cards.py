@@ -104,6 +104,42 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(route["route_result"]["decision"], "COMPLETE")
         self.assertFalse(route["route_result"]["execution_authorized"])
 
+    def test_portable_research_episode_card_keeps_c1_uncertainty_and_nonexecution_boundary(self) -> None:
+        document = TOOL.build_cards()
+        tool_id = "collaboration.validate_portable_research_episode"
+        card = next(item for item in document["cards"] if item["tool_id"] == tool_id)
+        c1 = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-portable-research-episode-c1-comparison-r0.json").read_text(encoding="utf-8")
+        )
+        real_task = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-portable-research-episode-real-task-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertEqual(card["estimated_cost"]["status"], "UNKNOWN")
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertIn("does not authenticate", card["claim_ceiling"])
+        self.assertEqual(c1["c1_disposition"]["comparison_status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(real_task["invocation"]["result"]["status"], "EPISODE_MANIFEST_CONSISTENT")
+        self.assertFalse(real_task["invocation"]["result"]["execution_authorized"])
+        self.assertFalse(real_task["invocation"]["result"]["import_performed"])
+        self.assertFalse(real_task["invocation"]["result"]["artifact_bytes_verified"])
+        route = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-portable-research-episode-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(route["default_route_result"]["selected_tools"], [])
+        self.assertEqual([row["tool_id"] for row in route["allowlisted_route_result"]["selected_tools"]], [tool_id])
+        self.assertFalse(route["allowlisted_route_result"]["execution_authorized"])
+
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         candidate_document = json.loads(

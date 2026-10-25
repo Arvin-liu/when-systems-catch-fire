@@ -1,6 +1,6 @@
 {
   "schema_version": "toolbox-actions-validation-attribution-route-evidence-r0",
-  "observed_at_utc": "2026-10-25T13:41:16Z",
+  "observed_at_utc": "2026-10-25T14:24:07Z",
   "scenario": "READ_ONLY_RUN route planner proposal; no candidate execution",
   "current_main_ref_used": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
   "task_profile": {
@@ -18,7 +18,7 @@
   },
   "catalog_counts": {
     "current_operations": 20,
-    "experimental_candidates": 26
+    "experimental_candidates": 27
   },
   "source_files": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "sha256": "9340750609c92e4ef37a5dd20819605fff676086c80ffcb2e4f85204fc79859b"
+      "sha256": "e635d551366a76f2203be3c4877fdb514ad0c7c2d48f3d2ee72f1075a0a62d09"
     },
     {
       "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
@@ -75,7 +75,8 @@
   "findings": [
     "Default route excludes the candidate and is incomplete for the requested plan/run/artifact attribution outputs.",
     "Explicit allowlisting selects exactly this candidate and completes the declared output coverage, while execution_authorized remains false.",
-    "The selected candidate remains READ_ONLY_RUN with empty write paths and network, secrets, billing, and external actions all false."
+    "The selected candidate remains READ_ONLY_RUN with empty write paths and network, secrets, billing, and external actions all false.",
+    "A default-off portable-episode candidate was added. The same Actions-attribution route task was re-evaluated: its explicit allowlist still selects only the attribution candidate."
   ],
   "claim_ceiling": "A route-planner proposal only. It does not invoke the candidate, authenticate inputs, change permissions, certify validation, or authorize merge/release.",
   "end_to_end_task_trials": {
@@ -336,5 +337,7 @@
         "git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
       }
     ]
-  }
+  },
+  "candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc",
+  "candidate_catalog_prior_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
 }

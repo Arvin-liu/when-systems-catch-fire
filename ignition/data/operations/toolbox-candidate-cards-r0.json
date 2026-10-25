@@ -4337,6 +4337,210 @@
           "Remove this optional candidate, implementation, schemas, fixture, tests, documentation, and evidence files; regenerate identity-card and TOOLBOX projections; preserve the previous commit and any durable source API/job evidence required for historical review."
         ]
       }
+    },
+    {
+      "tool_id": "collaboration.validate_portable_research_episode",
+      "display_name": {
+        "zh": "可移植研究 Episode 预检器",
+        "en": "Portable Research Episode preflight"
+      },
+      "description": "Validate one caller-supplied portable research episode manifest for declared artifact-version, dependency, run/execution, review-target, omission, and read-only fork-ID relationships without reading or importing package contents.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_portable_research_episode.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_portable_research_episode.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/data/operations/toolbox-portable-research-episode-c1-comparison-r0.json",
+          "role": "C1_SCOPE_COMPARISON_AND_UNKNOWN_DISPOSITION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-portable-research-episode-route-profile-r0.json",
+          "role": "FROZEN_DEFAULT_OFF_ROUTE_TASK_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-portable-research-episode-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-portable-research-episode-real-task-r0.json",
+          "role": "BOUNDED_PR264_EPISODE_MANIFEST_TASK_OUTPUT_AND_PROVENANCE"
+        },
+        {
+          "path": "ignition/docs/operations/portable-research-episode-preflight.md",
+          "role": "USER_SCOPE_CONTRACT_AND_LIMITS"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-portable-research-episode-r0.schema.json",
+          "role": "STRICT_VERSIONED_MANIFEST_SCHEMA"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-portable-research-episode/pr264-actions-attribution-episode-r0.json",
+          "role": "CALLER_DECLARED_PR264_TASK_MANIFEST"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-portable-research-episode/valid-source-package-r0.json",
+          "role": "CONTROLLED_SOURCE_PACKAGE_FIXTURE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_portable_research_episode.py",
+          "role": "FOCUSED_FUNCTIONAL_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_agent_episode_binding.py",
+          "role": "ADJACENT_AGENT_PLAN_VALIDATOR_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py",
+          "role": "ADJACENT_RECEIPT_BYTE_VALIDATOR_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_agent_episode_binding.py",
+          "role": "ADJACENT_DECLARED_AGENT_EXECUTION_PLAN_VALIDATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_verify_handoff_artifact_files.py",
+          "role": "ADJACENT_LOCAL_RECEIPT_BYTE_HASHER"
+        },
+        {
+          "path": "ignition/tools/toolbox_portable_research_episode.py",
+          "role": "BOUNDED_READ_ONLY_MANIFEST_VALIDATOR"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/toolbox-portable-research-episode-r0.schema.json"
+      ],
+      "good_for": [
+        "Checking that caller-declared artifact versions, parents and dependencies resolve consistently within one portable episode manifest.",
+        "Keeping PLANNED, ATTEMPTED, EXECUTED, NOT_EXECUTED and UNKNOWN declarations distinct, including separate used, attached and produced artifact references.",
+        "Pinning reviews to exact artifact versions, surfacing reviews of non-current versions, recording explicit omissions, and requiring unique identifier remaps for a read-only fork preview."
+      ],
+      "not_for": [
+        "Authenticating package bytes, source provenance, caller or actor identity, run records, review authors, permission declarations or digest truth.",
+        "Importing or copying packages, resolving forks, dispatching work, executing code, enforcing runtime permissions or writing files.",
+        "Establishing research reproducibility, scientific correctness, evidence sufficiency, publication readiness or Owner approval."
+      ],
+      "only_if": [
+        "The caller supplies one UTF-8 JSON manifest conforming to the local R0 schema within the 262144-byte limit.",
+        "The result is treated only as internal consistency of caller declarations; any referenced run, digest, review and permission remains unauthenticated.",
+        "A portable episode manifest preflight is needed rather than a multi-agent plan check or a byte-only receipt check."
+      ],
+      "counterindicated_when": [
+        "The task requires independent authentication or byte verification of referenced files, runs, reviews, actors or sources.",
+        "The task requires importing, copying, executing, dispatching, changing permissions or making a publication or scientific decision.",
+        "Required package artifacts are unavailable and the task cannot tolerate caller-declared omissions or an incomplete status."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object conforming to ignition-portable-research-episode-r0 on stdin; maximum 262144 bytes."
+      ],
+      "output_types": [
+        "Bounded deterministic JSON with schema and cross-reference status, typed findings and warnings, artifact/execution/review/omission/fork-map counts, and explicit non-authorization/non-import/non-byte-verification flags.",
+        "Per-execution declared status and counts of used, attached and produced artifact references, without treating those caller declarations as authenticated events."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_SINGLE_CALLER_MANIFEST_AND_LOCAL_SCHEMA",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/schemas/operations/toolbox-portable-research-episode-r0.schema.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded stdin manifest and the local schema; emits one bounded JSON result or validation error; does not read package paths or create or modify files."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9",
+        "jsonschema >=4.18 with Draft 2020-12 support"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No matched latency, CPU, memory, analyst-time, network or cash-cost comparison has been measured."
+      },
+      "alternatives": [
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool validates a declared agent execution plan (roles, contexts, feedback channels, write domains and work-unit DAG); it does not validate portable artifact versions, run status relations, review-version targets, explicit omissions or fork ID maps."
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool hashes bounded local files against a caller-supplied handoff receipt; it does not validate episode semantics, execution histories, review targets or fork mappings."
+        }
+      ],
+      "fallback": "If the schema or relationships fail, report the typed findings and inspect the caller-supplied manifest and source contracts manually. Use an appropriate byte verifier separately when actual file bytes need checking; do not infer authenticity or research validity.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_portable_research_episode.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tests/test_toolbox_agent_episode_binding.py",
+          "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py"
+        ],
+        "negative_controls": [
+          "Reject invalid schema, repeated JSON keys, over-limit input, unknown artifact versions, duplicate versions or IDs, dependency cycles, inconsistent current-version declarations, and malformed digest declarations without authorizing work.",
+          "Reject run references on PLANNED/NOT_EXECUTED/UNKNOWN entries, missing run references on ATTEMPTED/EXECUTED entries, used/produced references on non-run states, and unknown artifact references.",
+          "Warn when a review targets a non-current version; reject unresolved targets and incomplete/duplicate read-only fork identifier maps.",
+          "The default router excludes this candidate; an explicit allowlist only proposes it and keeps execution_authorized=false."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless this exact candidate ID is explicitly allowlisted for a caller-supplied portable research episode manifest preflight task.",
+        "Use only when artifact-version, execution, review, omission or read-only fork-map relationships are required; do not add it to unrelated tasks.",
+        "A route proposal never invokes the validator, authenticates manifest fields or authorizes package import, execution, research or publication."
+      ],
+      "claim_ceiling": "Checks only schema and caller-declared episode, artifact-version, execution, review, omission, and fork-map relations. It does not authenticate any source, actor, digest, execution, review, or permission; read package bytes; import or fork files; execute code; validate scientific meaning; or authorize research, publication, or external action.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Validate a portable episode manifest that records artifact revisions and dependency links, run-state distinctions, separate used/attached/produced objects, version-pinned reviews, explicit omissions and complete ID remapping for a read-only fork preview."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "Low-cost contract and route inspection compared the frozen portable-manifest task with collaboration.validate_agent_episode_binding and collaboration.verify_handoff_artifact_files. Their required input schemas and outputs cover adjacent but different objects. No fair same-task baseline, matched completion/quality trial or resource-cost comparison was available, so relative correctness, reliability and cost remain unknown.",
+        "compared_tool_ids": [
+          "collaboration.validate_agent_episode_binding",
+          "collaboration.verify_handoff_artifact_files"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-portable-research-episode-c1-comparison-r0.json",
+          "ignition/tests/test_toolbox_agent_episode_binding.py",
+          "ignition/tests/test_toolbox_handoff_artifact_file_verifier.py",
+          "ignition/tools/toolbox_agent_episode_binding.py",
+          "ignition/tools/toolbox_verify_handoff_artifact_files.py"
+        ],
+        "findings": [
+          "The agent-plan validator accepts a different object and checks declared role/context/channel/write-domain/DAG bindings; portable episode version, run, review, omission and fork-map relations are outside its contract.",
+          "The handoff byte verifier checks current local bytes against receipt digests but does not assess episode relationships; this candidate does not read or authenticate those bytes. The tools may be complementary in a larger handoff, but are not equivalent.",
+          "The PR #264 fixture invocation checks a real task-derived, caller-declared manifest and returns internally consistent relations; it does not authenticate the underlying Actions run, fixture digests or execution claim.",
+          "C1 disposition remains COMPARISON_UNKNOWN. No replacement candidate or retirement is supported; revisit with a same-task baseline and measured resource comparison when a natural portable-episode consumer supplies one."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "The component is a new optional candidate and the inspected tools have distinct input and output contracts. There is no matched same-task evidence to support replacing it, retiring either neighbor, or claiming comparative cost or reliability."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry operation or existing tool is migrated. Keep agent-plan and receipt-byte checks for their existing scopes; use this candidate only for manifest relationship preflight and preserve all output non-claims."
+        ],
+        "rollback_steps": [
+          "Remove this optional candidate card, implementation, schema, fixtures, tests, documentation and evidence; regenerate identity-card and toolbox projections; preserve prior commits and external source/evidence receipts for historical reproduction."
+        ]
+      }
     }
   ]
 }

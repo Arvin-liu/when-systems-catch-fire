@@ -1,14 +1,15 @@
 {
   "schema_version": "toolbox-handoff-artifact-byte-check-route-evidence-r0",
   "candidate_catalog_refresh": {
-    "prior_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
-    "current_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8",
+    "prior_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8",
+    "current_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc",
     "history": [
       "933a349b5d7e34df3a9d46c42896e9ec236a9831",
       "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
-      "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+      "86e0372a292afe58e65d7641fb07cc61776ec8a8",
+      "00fae5794f52ef3270ede181b5ef0679e83f21dc"
     ],
-    "note": "The candidate card now includes bounded same-task route measurements; the existing handoff route was revalidated and remains unchanged."
+    "note": "A new optional portable-episode candidate was added default-off. Existing handoff route was re-evaluated under the current catalog; its task, permissions and selected tool remain unchanged."
   },
   "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
   "task": {
@@ -64,6 +65,10 @@
       },
       {
         "tool_id": "collaboration.validate_agent_episode_binding",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.validate_portable_research_episode",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -137,6 +142,10 @@
       {
         "tool_id": "language_thought.project_bounded_meaning",
         "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.attribute_actions_validation_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -249,7 +258,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+      "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
     }
   },
   "route_result": {
@@ -323,6 +332,10 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "collaboration.validate_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "executor.reference_conformance",
         "reason": "NOT_CURRENT_CALLABLE"
       },
@@ -389,6 +402,10 @@
       {
         "tool_id": "language_thought.project_bounded_meaning",
         "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "maintenance.attribute_actions_validation_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "maintenance.compare_actions_repeated_step_sequences",
@@ -501,7 +518,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+      "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
     }
   },
   "execution_authorized": false,
