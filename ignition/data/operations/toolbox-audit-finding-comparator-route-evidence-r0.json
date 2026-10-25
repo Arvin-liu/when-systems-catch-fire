@@ -16,7 +16,7 @@
       "allowed_network_hosts": [],
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20"
+        "experimental_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564"
       }
     },
     "explicit_allowlist": {
@@ -30,14 +30,26 @@
       "allowed_network_hosts": [],
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20"
+        "experimental_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564"
       }
     }
   },
   "claim_ceiling": "Local planner behavior only: default routing leaves the optional comparator unselected and unmet; an exact experimental allowlist proposes it for this input/output contract. The planner neither invokes the tool nor grants authority.",
   "candidate_catalog_refresh": {
-    "prior_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
-    "current_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
-    "reason": "Replayed both declared routes after adding C1 comparison evidence and an alternate-provider identity-card reference; the candidate remains default-off and route selection is unchanged."
+    "prior_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+    "current_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+    "reason": "Replayed both declared audit-finding routes after the C1 source-brief implementation comparison fields changed the candidate catalog; route decisions and permissions remain unchanged.",
+    "refresh_history": [
+      {
+        "prior_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
+        "current_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "reason": "Replayed both declared routes after adding C1 comparison evidence and an alternate-provider identity-card reference; the candidate remains default-off and route selection is unchanged."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "current_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+        "reason": "Replayed both declared audit-finding routes after the C1 source-brief implementation comparison fields changed the candidate catalog; route decisions and permissions remain unchanged."
+      }
+    ]
   }
 }

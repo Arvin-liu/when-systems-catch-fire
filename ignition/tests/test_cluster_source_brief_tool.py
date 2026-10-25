@@ -133,6 +133,51 @@ class ClusterSourceBriefTests(unittest.TestCase):
         self.assertTrue(receipt["receipt_sha256"])
         self.assertEqual(snapshot(output_dir), before)
 
+    def test_c007_fixed_receipt_adapter_matches_existing_cli_and_neither_writes(self) -> None:
+        output_dir = IGNITION_ROOT / "analysis/corpus-relation/cluster_source_briefs"
+        def snapshot(path: Path):
+            if not path.exists():
+                return None
+            rows = []
+            for item in sorted(path.rglob("*")):
+                relative = item.relative_to(path).as_posix()
+                if item.is_symlink():
+                    rows.append((relative, "SYMLINK", str(item.readlink())))
+                elif item.is_file():
+                    rows.append((relative, hashlib.sha256(item.read_bytes()).hexdigest()))
+                else:
+                    rows.append((relative, "DIRECTORY"))
+            return rows
+
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        before = snapshot(output_dir)
+        cwd = IGNITION_ROOT.parent
+        candidate = subprocess.run(
+            [sys.executable, "-B", str(IGNITION_ROOT / "tools/toolbox_cluster_source_brief.py"), "C007"],
+            cwd=cwd, capture_output=True, check=False,
+        )
+        baseline = subprocess.run(
+            [sys.executable, "-B", str(IGNITION_ROOT / "tools/extract_cluster_source_brief.py"), "C007", "--stdout", "--json"],
+            cwd=cwd, capture_output=True, check=False,
+        )
+        self.assertEqual(candidate.returncode, 0, candidate.stderr.decode("utf-8", "replace"))
+        self.assertEqual(baseline.returncode, 0, baseline.stderr.decode("utf-8", "replace"))
+        self.assertEqual(candidate.stdout, baseline.stdout)
+        receipt = json.loads(candidate.stdout)
+        self.assertEqual(receipt["briefs"][0]["cluster_id"], "C007")
+        self.assertEqual(receipt["briefs"][0]["member_count"], evidence["paired_comparison"]["member_count"])
+        self.assertEqual(
+            hashlib.sha256(candidate.stdout).hexdigest(),
+            evidence["paired_comparison"]["candidate_result"]["stdout_sha256"],
+        )
+        self.assertEqual(
+            receipt["receipt_sha256"],
+            evidence["paired_comparison"]["candidate_result"]["receipt_sha256"],
+        )
+        self.assertEqual(snapshot(output_dir), before)
+
 
 if __name__ == "__main__":
     unittest.main()

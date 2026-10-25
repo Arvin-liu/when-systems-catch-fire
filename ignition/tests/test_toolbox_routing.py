@@ -63,6 +63,32 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["execution_authorized"])
         self.assertEqual(included["source_refs"]["current_registry_git_blob_sha1"], "21fe1bfcdb0d9762edd60339aca14f1040393fc7")
 
+    def test_cluster_source_brief_c007_route_is_minimal_explicit_and_not_execution(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "knowledge.cluster_source_brief")
+        task = profile("C007-source-brief-route-c1-01", card["accepted_input_types"], card["output_types"])
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        default = planner.plan_tool_route(task)
+        opted_in = planner.plan_tool_route(task, include_experimental_tool_ids=[card["tool_id"]])
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertEqual(opted_in["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opted_in["selected_tools"]], [card["tool_id"]])
+        self.assertFalse(opted_in["execution_authorized"])
+        self.assertFalse(opted_in["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(opted_in["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(evidence["routing"]["default_off"]["decision"], default["decision"])
+        self.assertEqual(evidence["routing"]["explicit_allowlist"]["decision"], opted_in["decision"])
+        self.assertEqual(evidence["routing"]["explicit_allowlist"]["selected_tool_ids"], [card["tool_id"]])
+        self.assertFalse(evidence["routing"]["explicit_allowlist"]["execution_authorized"])
+        self.assertEqual(
+            evidence["routing"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+
     def test_raw_evidence_navigator_is_default_off_and_requires_explicit_allowlist(self) -> None:
         catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
         card = next(row for row in catalog["candidates"] if row["tool_id"] == "knowledge.navigate_raw_evidence")

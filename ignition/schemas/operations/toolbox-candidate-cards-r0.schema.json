@@ -18,6 +18,7 @@
     "repoPath": {"type": "string", "pattern": "^ignition/(?!\\.\\.?(?:$|/))(?!.*?/\\.\\.?(?:$|/))[A-Za-z0-9._/-]+$"},
     "stringList": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
     "optionalStringList": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+    "repoPathList": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/repoPath"}},
     "toolIdList": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]+$"}},
     "name": {
       "type": "object", "additionalProperties": false,
@@ -41,6 +42,7 @@
         "status": {"enum": ["COMPARISON_UNKNOWN", "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED", "REPLACEMENT_SUPPORTED", "RETIREMENT_SUPPORTED"]},
         "scope": {"$ref": "#/$defs/nonblank"},
         "compared_tool_ids": {"$ref": "#/$defs/toolIdList"},
+        "compared_implementation_refs": {"$ref": "#/$defs/repoPathList"},
         "evidence_refs": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/repoPath"}},
         "findings": {"$ref": "#/$defs/stringList"}
       }

@@ -20,6 +20,31 @@ SPEC.loader.exec_module(TOOL)
 
 
 class ToolboxIdentityCardTests(unittest.TestCase):
+    def test_cluster_source_brief_c1_records_implementation_comparator_and_safe_scope(self) -> None:
+        document = TOOL.build_cards()
+        card = next(item for item in document["cards"] if item["tool_id"] == "knowledge.cluster_source_brief")
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(evidence["disposition"]["relationship"], "COEXIST_BY_INVOCATION_SCOPE")
+        self.assertTrue(evidence["paired_comparison"]["stdout_byte_identical"])
+        self.assertEqual(
+            card["comparison_evidence"]["compared_implementation_refs"],
+            ["ignition/tools/extract_cluster_source_brief.py"],
+        )
+        self.assertIn(
+            "implementation refs: ignition/tools/extract_cluster_source_brief.py",
+            TOOL.render_human(document),
+        )
+        self.assertIn("toolbox-cluster-source-brief-c1-evidence-r0.json", " ".join(card["comparison_evidence"]["evidence_refs"]))
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "ACTIVE")
+        self.assertTrue(card["unique_remaining_use_cases"])
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+
     def test_crossref_c1_keeps_uncertainty_after_single_same_task_runner_comparison(self) -> None:
         document = TOOL.build_cards()
         card = next(

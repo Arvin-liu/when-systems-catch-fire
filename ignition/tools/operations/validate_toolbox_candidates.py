@@ -53,6 +53,7 @@ def validate() -> list[str]:
         })
         replacement_candidates = card.get("replacement_candidates", [])
         unique_remaining_use_cases = card.get("unique_remaining_use_cases", [])
+        compared_implementation_refs = comparison_evidence.get("compared_implementation_refs", [])
         retirement = card.get("deprecation_or_retirement_status", {
             "status": "COMPARISON_UNKNOWN",
             "basis": "No comparative evidence is declared in this legacy candidate card.",
@@ -67,6 +68,12 @@ def validate() -> list[str]:
         source_ref_paths = {ref["path"] for ref in card["source_refs"]}
         if not set(card["dependencies"]) <= source_ref_paths:
             errors.append(f"{card['tool_id']}: every declared dependency must have a hashed source reference")
+        if not set(compared_implementation_refs) <= source_ref_paths:
+            errors.append(f"{card['tool_id']}: every compared implementation path must have a source reference")
+        for implementation_ref in compared_implementation_refs:
+            path = REPO_ROOT / implementation_ref
+            if not path.is_file() or path.is_symlink():
+                errors.append(f"{card['tool_id']}: compared implementation is missing or is a symlink: {implementation_ref}")
         comparison_refs = set(comparison_evidence["evidence_refs"])
         if not comparison_refs <= source_ref_paths:
             errors.append(f"{card['tool_id']}: every comparison-evidence path must have a hashed source reference")

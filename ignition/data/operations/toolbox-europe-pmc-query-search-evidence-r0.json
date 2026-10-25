@@ -52,7 +52,7 @@
     "claim_ceiling": "One live provider response returned three metadata rows for one public query at this retrieval time; this does not establish query relevance, completeness, source authenticity, scientific support, or article status."
   },
   "route_profile": {
-    "candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+    "candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
     "input_types": [
       "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
     ],
@@ -72,7 +72,28 @@
       "expected_decision": "INCOMPLETE",
       "expected_selected_tool_ids": [],
       "expected_execution_authorized": false,
-      "expected_rejections": []
+      "expected_rejections": [],
+      "actual_result": {
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "unmet_outputs": [
+          "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+          "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+        ],
+        "relevant_rejected_candidates": [
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          }
+        ],
+        "execution_authorized": false,
+        "allowed_network_hosts": [],
+        "selected_permissions": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564"
+        }
+      }
     },
     {
       "scenario": "explicit_candidate_without_host_permission",
@@ -88,7 +109,28 @@
           "tool_id": "research.search_europe_pmc_query",
           "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
         }
-      ]
+      ],
+      "actual_result": {
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "unmet_outputs": [
+          "at most ten Europe PMC provider-ranked lite publication metadata rows with source, provider ID, DOI/PMID/PMCID when present, title, author string, journal and publication year",
+          "query SHA-256, response SHA-256, retrieval timestamp, provider hit count, returned count, HTTP and acquisition status, and bounded claim ceiling"
+        ],
+        "relevant_rejected_candidates": [
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          }
+        ],
+        "execution_authorized": false,
+        "allowed_network_hosts": [],
+        "selected_permissions": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564"
+        }
+      }
     },
     {
       "scenario": "explicit_minimal_route_with_redundant_identifier_tool",
@@ -110,7 +152,30 @@
           "tool_id": "research.resolve_pubmed_identifiers",
           "reason": "NO_INPUT_TYPE_MATCH"
         }
-      ]
+      ],
+      "actual_result": {
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.search_europe_pmc_query"
+        ],
+        "unmet_outputs": [],
+        "relevant_rejected_candidates": [
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "execution_authorized": false,
+        "allowed_network_hosts": [
+          "pmc.ncbi.nlm.nih.gov",
+          "www.ebi.ac.uk"
+        ],
+        "selected_permissions": [],
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564"
+        }
+      }
     }
   ],
   "comparison_scope": {
@@ -177,9 +242,9 @@
     "retirement_decision": "No existing component is deprecated or retired by this evidence."
   },
   "candidate_catalog_refresh": {
-    "prior_candidate_catalog_git_blob_sha1": "7228940461ca2ad29296960f1a0dc32996eff8ae",
-    "current_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
-    "note": "The route catalog pin is refreshed after default-off candidate additions or C1 identity-card evidence changes. The recorded Europe PMC live response remains historical; current route expectations are replayed against the exact pinned catalog by focused routing tests.",
+    "prior_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+    "current_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+    "note": "Replayed all three default-off, missing-host, and minimality trials against the current catalog after the C1 source-brief comparison metadata change. The historical Europe PMC response remains unchanged and was not repeated.",
     "refresh_history": [
       {
         "prior_candidate_catalog_git_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
@@ -195,6 +260,11 @@
         "prior_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
         "current_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
         "reason": "Added the Crossref C1 same-task comparison and registered alternate-provider reference to the identity card; replayed all three Europe PMC default-off/permission/minimality route trials, which retained their prior decisions."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "current_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+        "reason": "Replayed all three Europe PMC route trials after the C1 source-brief comparison metadata changed the candidate catalog; the historical provider response was not repeated."
       }
     ]
   }
