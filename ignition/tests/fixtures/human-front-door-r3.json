@@ -10,6 +10,7 @@
     {"id": "missing-canonical-charter-link", "mutation": "remove-charter-link", "expected": "FAIL"},
     {"id": "machine-count-in-homepage", "mutation": "insert-machine-count", "expected": "FAIL"},
     {"id": "project-identity-drift", "mutation": "drift-project-identity", "expected": "FAIL"},
+    {"id": "whole-system-self-examination-drift", "mutation": "drift-whole-system-self-examination", "expected": "FAIL"},
     {"id": "raw-svg-secondary-link", "mutation": "insert-raw-svg-link", "expected": "FAIL"},
     {"id": "machine-architecture-explanation", "mutation": "insert-machine-architecture-explanation", "expected": "FAIL"},
     {"id": "open-component-group", "mutation": "open-component-group", "expected": "FAIL"},
