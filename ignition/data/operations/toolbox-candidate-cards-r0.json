@@ -4836,6 +4836,22 @@
         {
           "path": "ignition/tests/test_toolbox_publication_metadata_comparison.py",
           "role": "C1_COMPARATOR_CONTRACT_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_cluster_source_brief.py",
+          "role": "C1_LOCAL_SOURCE_BRIEF_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_cluster_source_brief_tool.py",
+          "role": "C1_COMPARATOR_CONTRACT_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "role": "C1_LOCAL_SOURCE_SEARCH_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_raw_evidence_navigator.py",
+          "role": "C1_COMPARATOR_CONTRACT_TEST"
         }
       ],
       "dependencies": [],
@@ -4853,12 +4869,14 @@
         "The caller supplies one public, non-confidential query of at most 512 characters and a result limit from one through ten.",
         "The caller separately chooses this experimental candidate and explicitly invokes the CLI with --allow-public-network.",
         "The caller's actual invocation context explicitly permits sending this query to www.ebi.ac.uk; a route profile's host list is not authority.",
+        "Checked-out local source navigation or an existing article-cluster brief does not already satisfy the task; the caller specifically needs external topic-to-record discovery.",
         "A bounded metadata discovery result is sufficient for the task and provider-side query logging is acceptable."
       ],
       "counterindicated_when": [
         "The query contains confidential, patient-identifying, personal-health or otherwise sensitive material that should not be sent to a public service.",
         "Network use is not permitted, a public query is not appropriate, or an exhaustive independently reproducible search is required.",
-        "The caller already has exact identifiers and only needs DOI-to-PMID/PMCID mapping, PubMed update-link inspection, Crossref/OpenAlex metadata lookup, or arXiv-ID metadata lookup."
+        "The caller already has exact identifiers and only needs DOI-to-PMID/PMCID mapping, PubMed update-link inspection, Crossref/OpenAlex metadata lookup, or arXiv-ID metadata lookup.",
+        "The checked-out raw-evidence navigator or declared article-cluster source brief already supplies the evidence needed for the task."
       ],
       "accepted_input_types": [
         "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
@@ -4925,49 +4943,66 @@
           "tool_id": "research.compare_publication_metadata_snapshots",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
           "reason": "The local comparator consumes already-collected Crossref and OpenAlex results for one DOI and performs no retrieval; it cannot discover records from a query."
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The local source brief requires an already-declared article-cluster ID and reads the checked-out asset-card corpus; it cannot discover external records from a public text query."
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The local navigator searches the checked-out Knowledge index and returns bounded current raw source lines; it does not query Europe PMC or return provider publication metadata for arbitrary external topics."
         }
       ],
       "replacement_candidates": [],
       "unique_remaining_use_cases": [
-        "Find a bounded set of Europe PMC records from a public topic query when no DOI, PMID or arXiv identifier is known, while preserving the returned source identifier for follow-up."
+        "Find a bounded set of Europe PMC records from a public topic query when the checked-out source corpus is insufficient and no DOI, PMID or arXiv identifier is known, while preserving the returned source identifier for follow-up."
       ],
       "comparison_evidence": {
         "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
-      "scope": "Compared declared input/output contracts and execution scopes of all existing toolbox publication metadata retrieval adapters and the local paired metadata comparator; same-task search quality, completeness, availability and cost comparisons remain unmeasured.",
+        "scope": "Compared declared input/output contracts and execution scopes of all existing toolbox publication metadata retrieval adapters plus the two directly relevant local source-discovery alternatives; same-task search quality, completeness, availability and cost comparisons remain unmeasured.",
         "compared_tool_ids": [
-        "research.verify_crossref_metadata",
-        "research.lookup_openalex_work_metadata",
+          "research.verify_crossref_metadata",
+          "research.lookup_openalex_work_metadata",
           "research.resolve_pubmed_identifiers",
-        "research.inspect_pubmed_update_links",
-        "research.lookup_arxiv_paper_metadata",
-        "research.compare_publication_metadata_snapshots"
+          "research.inspect_pubmed_update_links",
+          "research.lookup_arxiv_paper_metadata",
+          "research.compare_publication_metadata_snapshots",
+          "knowledge.cluster_source_brief",
+          "knowledge.navigate_raw_evidence"
         ],
         "evidence_refs": [
-        "ignition/tools/toolbox_crossref_metadata_verifier.py",
-        "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
-        "ignition/tools/toolbox_openalex_work_metadata.py",
-        "ignition/tests/test_toolbox_openalex_work_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
+          "ignition/tools/toolbox_openalex_work_metadata.py",
+          "ignition/tests/test_toolbox_openalex_work_metadata.py",
           "ignition/tools/toolbox_pubmed_identifier_resolver.py",
           "ignition/tools/toolbox_pubmed_update_link_reader.py",
-        "ignition/tools/toolbox_arxiv_metadata_lookup.py",
-        "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
-        "ignition/tools/toolbox_compare_publication_metadata.py",
-        "ignition/tests/test_toolbox_publication_metadata_comparison.py",
+          "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+          "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
+          "ignition/tools/toolbox_compare_publication_metadata.py",
+          "ignition/tests/test_toolbox_publication_metadata_comparison.py",
           "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "ignition/tests/test_toolbox_pubmed_update_link_reader.py",
           "ignition/tests/test_toolbox_routing.py",
-          "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json"
+          "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
+          "ignition/tools/toolbox_cluster_source_brief.py",
+          "ignition/tests/test_cluster_source_brief_tool.py",
+          "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "ignition/tests/test_toolbox_raw_evidence_navigator.py"
         ],
         "findings": [
-        "The new tool accepts a public text query and returns bounded provider metadata. Crossref and OpenAlex adapters require known DOIs, the PubMed resolver requires a known DOI, the update reader requires a known PMID, and the arXiv adapter requires a known arXiv ID; each returns a different exact-identifier or record-level output.",
-        "The local Crossref/OpenAlex comparator consumes two prior adapter results for one DOI and performs no source retrieval. None of these declared contracts covers query-to-record discovery, and the search does not cover their known-identifier or pairwise-comparison outputs.",
+          "The new tool accepts a public text query and returns bounded provider metadata. Crossref and OpenAlex adapters require known DOIs, the PubMed resolver requires a known DOI, the update reader requires a known PMID, and the arXiv adapter requires a known arXiv ID; each returns a different exact-identifier or record-level output.",
+          "The local Crossref/OpenAlex comparator consumes two prior adapter results for one DOI and performs no source retrieval. None of these declared contracts covers query-to-record discovery, and the search does not cover their known-identifier or pairwise-comparison outputs.",
           "The route experiment selects only the query-search candidate for its declared query-to-metadata task and rejects the DOI resolver as an input-type mismatch, even when both candidates are explicitly offered.",
-          "No paired evidence establishes superior relevance, recall, latency, cost or scientific quality; those comparisons remain unknown and do not support retiring any existing tool."
+          "No paired evidence establishes superior relevance, recall, latency, cost or scientific quality; those comparisons remain unknown and do not support retiring any existing tool.",
+          "The local cluster brief needs a declared cluster ID, while the raw-evidence navigator searches only the checked-out Knowledge index and returns source lines. These local tools remain preferred when their bounded corpus already satisfies the task; neither discovers external topic records."
         ]
       },
       "deprecation_or_retirement_status": {
         "status": "SPECIALIZED",
-        "basis": "Retain as a specialized experimental topic-to-record discovery operation; its query input and bounded metadata output do not cover known-DOI provider lookup, exact DOI/PMID/arXiv resolution, or local paired-result comparison contracts."
+        "basis": "Retain as a specialized experimental topic-to-record discovery operation; its query input and bounded metadata output do not cover known-identifier retrieval, local source navigation, or local paired-result comparison contracts."
       },
       "migration_and_rollback": {
         "migration_notes": [

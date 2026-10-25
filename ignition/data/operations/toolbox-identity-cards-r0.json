@@ -8,7 +8,7 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+    "blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
     "candidate_count": 29
   },
   "cards": [
@@ -219,7 +219,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -451,7 +451,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -738,7 +738,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1003,7 +1003,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0afb6d93d7dd21ad602244c888dfb0d05e3e56d4"
+          "sha1": "25a0cc504c8687f836bdaf55d08e7c40faca574a"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -1027,7 +1027,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1514,7 +1514,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1692,7 +1692,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2028,7 +2028,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2198,7 +2198,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51"
+          "sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -2222,7 +2222,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2562,7 +2562,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2748,7 +2748,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3092,7 +3092,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4035,7 +4035,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4235,7 +4235,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4628,7 +4628,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0afb6d93d7dd21ad602244c888dfb0d05e3e56d4"
+          "sha1": "25a0cc504c8687f836bdaf55d08e7c40faca574a"
         },
         {
           "path": "ignition/tests/test_toolbox_producer_consumer_semantic_preflight.py",
@@ -4672,7 +4672,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4876,7 +4876,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5491,7 +5491,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5775,7 +5775,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5992,7 +5992,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6222,7 +6222,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0afb6d93d7dd21ad602244c888dfb0d05e3e56d4"
+          "sha1": "25a0cc504c8687f836bdaf55d08e7c40faca574a"
         },
         {
           "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
@@ -6261,7 +6261,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6483,7 +6483,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0afb6d93d7dd21ad602244c888dfb0d05e3e56d4"
+          "sha1": "25a0cc504c8687f836bdaf55d08e7c40faca574a"
         },
         {
           "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
@@ -6502,7 +6502,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6744,7 +6744,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6964,7 +6964,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7240,7 +7240,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7327,6 +7327,22 @@
         {
           "path": "ignition/tests/test_toolbox_publication_metadata_comparison.py",
           "role": "C1_COMPARATOR_CONTRACT_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_cluster_source_brief.py",
+          "role": "C1_LOCAL_SOURCE_BRIEF_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_cluster_source_brief_tool.py",
+          "role": "C1_COMPARATOR_CONTRACT_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "role": "C1_LOCAL_SOURCE_SEARCH_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_raw_evidence_navigator.py",
+          "role": "C1_COMPARATOR_CONTRACT_TEST"
         }
       ],
       "dependencies": [],
@@ -7344,12 +7360,14 @@
         "The caller supplies one public, non-confidential query of at most 512 characters and a result limit from one through ten.",
         "The caller separately chooses this experimental candidate and explicitly invokes the CLI with --allow-public-network.",
         "The caller's actual invocation context explicitly permits sending this query to www.ebi.ac.uk; a route profile's host list is not authority.",
+        "Checked-out local source navigation or an existing article-cluster brief does not already satisfy the task; the caller specifically needs external topic-to-record discovery.",
         "A bounded metadata discovery result is sufficient for the task and provider-side query logging is acceptable."
       ],
       "counterindicated_when": [
         "The query contains confidential, patient-identifying, personal-health or otherwise sensitive material that should not be sent to a public service.",
         "Network use is not permitted, a public query is not appropriate, or an exhaustive independently reproducible search is required.",
-        "The caller already has exact identifiers and only needs DOI-to-PMID/PMCID mapping, PubMed update-link inspection, Crossref/OpenAlex metadata lookup, or arXiv-ID metadata lookup."
+        "The caller already has exact identifiers and only needs DOI-to-PMID/PMCID mapping, PubMed update-link inspection, Crossref/OpenAlex metadata lookup, or arXiv-ID metadata lookup.",
+        "The checked-out raw-evidence navigator or declared article-cluster source brief already supplies the evidence needed for the task."
       ],
       "accepted_input_types": [
         "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
@@ -7416,22 +7434,34 @@
           "tool_id": "research.compare_publication_metadata_snapshots",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
           "reason": "The local comparator consumes already-collected Crossref and OpenAlex results for one DOI and performs no retrieval; it cannot discover records from a query."
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The local source brief requires an already-declared article-cluster ID and reads the checked-out asset-card corpus; it cannot discover external records from a public text query."
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The local navigator searches the checked-out Knowledge index and returns bounded current raw source lines; it does not query Europe PMC or return provider publication metadata for arbitrary external topics."
         }
       ],
       "replacement_candidates": [],
       "unique_remaining_use_cases": [
-        "Find a bounded set of Europe PMC records from a public topic query when no DOI, PMID or arXiv identifier is known, while preserving the returned source identifier for follow-up."
+        "Find a bounded set of Europe PMC records from a public topic query when the checked-out source corpus is insufficient and no DOI, PMID or arXiv identifier is known, while preserving the returned source identifier for follow-up."
       ],
       "comparison_evidence": {
         "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
-        "scope": "Compared declared input/output contracts and execution scopes of all existing toolbox publication metadata retrieval adapters and the local paired metadata comparator; same-task search quality, completeness, availability and cost comparisons remain unmeasured.",
+        "scope": "Compared declared input/output contracts and execution scopes of all existing toolbox publication metadata retrieval adapters plus the two directly relevant local source-discovery alternatives; same-task search quality, completeness, availability and cost comparisons remain unmeasured.",
         "compared_tool_ids": [
           "research.verify_crossref_metadata",
           "research.lookup_openalex_work_metadata",
           "research.resolve_pubmed_identifiers",
           "research.inspect_pubmed_update_links",
           "research.lookup_arxiv_paper_metadata",
-          "research.compare_publication_metadata_snapshots"
+          "research.compare_publication_metadata_snapshots",
+          "knowledge.cluster_source_brief",
+          "knowledge.navigate_raw_evidence"
         ],
         "evidence_refs": [
           "ignition/tools/toolbox_crossref_metadata_verifier.py",
@@ -7447,18 +7477,23 @@
           "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "ignition/tests/test_toolbox_pubmed_update_link_reader.py",
           "ignition/tests/test_toolbox_routing.py",
-          "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json"
+          "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
+          "ignition/tools/toolbox_cluster_source_brief.py",
+          "ignition/tests/test_cluster_source_brief_tool.py",
+          "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "ignition/tests/test_toolbox_raw_evidence_navigator.py"
         ],
         "findings": [
           "The new tool accepts a public text query and returns bounded provider metadata. Crossref and OpenAlex adapters require known DOIs, the PubMed resolver requires a known DOI, the update reader requires a known PMID, and the arXiv adapter requires a known arXiv ID; each returns a different exact-identifier or record-level output.",
           "The local Crossref/OpenAlex comparator consumes two prior adapter results for one DOI and performs no source retrieval. None of these declared contracts covers query-to-record discovery, and the search does not cover their known-identifier or pairwise-comparison outputs.",
           "The route experiment selects only the query-search candidate for its declared query-to-metadata task and rejects the DOI resolver as an input-type mismatch, even when both candidates are explicitly offered.",
-          "No paired evidence establishes superior relevance, recall, latency, cost or scientific quality; those comparisons remain unknown and do not support retiring any existing tool."
+          "No paired evidence establishes superior relevance, recall, latency, cost or scientific quality; those comparisons remain unknown and do not support retiring any existing tool.",
+          "The local cluster brief needs a declared cluster ID, while the raw-evidence navigator searches only the checked-out Knowledge index and returns source lines. These local tools remain preferred when their bounded corpus already satisfies the task; neither discovers external topic records."
         ]
       },
       "deprecation_or_retirement_status": {
         "status": "SPECIALIZED",
-        "basis": "Retain as a specialized experimental topic-to-record discovery operation; its query input and bounded metadata output do not cover known-DOI provider lookup, exact DOI/PMID/arXiv resolution, or local paired-result comparison contracts."
+        "basis": "Retain as a specialized experimental topic-to-record discovery operation; its query input and bounded metadata output do not cover known-identifier retrieval, local source navigation, or local paired-result comparison contracts."
       },
       "migration_and_rollback": {
         "migration_notes": [
@@ -7510,12 +7545,12 @@
         {
           "path": "ignition/docs/operations/toolbox-europe-pmc-query-search.md",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "849df9c5e0225ceae5c5a56c976af38092c1d33c"
+          "sha1": "5b2f9f8455046705807ba4ab75b34d045b1d442c"
         },
         {
           "path": "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "59ddd490f34f6adf6d741c409531c6c0253e33c9"
+          "sha1": "5f4318eaf19a649f3c3d4698c7c8b8e2c8fcc631"
         },
         {
           "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
@@ -7576,10 +7611,30 @@
           "path": "ignition/tests/test_toolbox_publication_metadata_comparison.py",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "b5d9a7c146ffce8cb1cd9a23263345fb9d803db6"
+        },
+        {
+          "path": "ignition/tools/toolbox_cluster_source_brief.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "493513e3966d02214692918b847f4c4e92d81884"
+        },
+        {
+          "path": "ignition/tests/test_cluster_source_brief_tool.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "72ffcb6a1d9746183d5c58ead6aa7eeae33f7976"
+        },
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "c8ef67442dcf90a9ef657e725b7562f63c392988"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_raw_evidence_navigator.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "e79a6fb234fa01331d42c3bd0a104623a9d32c9d"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7775,7 +7830,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8091,7 +8146,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8286,7 +8341,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8478,7 +8533,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8986,7 +9041,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "f8f4f4ce9873ded3080c1f47ac2ddf45d927fc51",
+      "candidate_catalog_blob_sha1": "a57b4dc19ebd65d81ef6d7934012aa161a4db200",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },

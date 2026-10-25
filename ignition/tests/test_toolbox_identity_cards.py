@@ -234,6 +234,8 @@ class ToolboxIdentityCardTests(unittest.TestCase):
                 "research.inspect_pubmed_update_links",
                 "research.lookup_arxiv_paper_metadata",
                 "research.compare_publication_metadata_snapshots",
+                "knowledge.cluster_source_brief",
+                "knowledge.navigate_raw_evidence",
             ],
         )
         self.assertEqual(europe_pmc["replacement_candidates"], [])
