@@ -4,7 +4,7 @@
   "task": {
     "task_id": "noaa-global-ch4-annual-growth-bounded-2023-2025",
     "input_types": [
-      "UTF-8 JSON stdin object with exactly integer start_year and end_year (1984\u20132100 inclusive; range at most 50 years)"
+      "UTF-8 JSON stdin object with exactly integer start_year and end_year (1984–2100 inclusive; range at most 50 years)"
     ],
     "required_outputs": [
       "Provider-reported annual CH4 atmospheric mole-fraction increment and uncertainty in ppb for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
@@ -16,7 +16,7 @@
     "task_id": "noaa-global-ch4-annual-growth-bounded-2023-2025",
     "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
     "input_types": [
-      "UTF-8 JSON stdin object with exactly integer start_year and end_year (1984\u20132100 inclusive; range at most 50 years)"
+      "UTF-8 JSON stdin object with exactly integer start_year and end_year (1984–2100 inclusive; range at most 50 years)"
     ],
     "required_outputs": [
       "Provider-reported annual CH4 atmospheric mole-fraction increment and uncertainty in ppb for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
@@ -48,7 +48,7 @@
         "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
         "availability": "EXPERIMENTAL_AVAILABLE",
         "input_types": [
-          "UTF-8 JSON stdin object with exactly integer start_year and end_year (1984\u20132100 inclusive; range at most 50 years)"
+          "UTF-8 JSON stdin object with exactly integer start_year and end_year (1984–2100 inclusive; range at most 50 years)"
         ],
         "output_types": [
           "Provider-reported annual CH4 atmospheric mole-fraction increment and uncertainty in ppb for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
@@ -139,6 +139,10 @@
         "reason": "NO_INPUT_TYPE_MATCH"
       },
       {
+        "tool_id": "knowledge.navigate_raw_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "knowledge.project_results",
         "reason": "NO_INPUT_TYPE_MATCH"
       },
@@ -192,6 +196,10 @@
       },
       {
         "tool_id": "research.lookup_arxiv_paper_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_co2_annual_growth",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -257,7 +265,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb"
+      "experimental_candidate_catalog_git_blob_sha1": "c6a7645ad3915fba219edc0185f8fc6a2875c62f"
     }
   },
   "execution_status": "NOT_RUN",

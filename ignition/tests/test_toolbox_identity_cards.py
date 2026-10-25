@@ -20,11 +20,30 @@ SPEC.loader.exec_module(TOOL)
 
 
 class ToolboxIdentityCardTests(unittest.TestCase):
+    def test_raw_evidence_navigator_card_keeps_scope_and_comparison_uncertainty(self) -> None:
+        document = TOOL.build_cards()
+        card = next(
+            item for item in document["cards"]
+            if item["tool_id"] == "knowledge.navigate_raw_evidence"
+        )
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], ["ignition/"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        self.assertIn("sufficiency_decision is always NOT_EVALUATED", " ".join(card["output_types"]))
+
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 19)
-        self.assertEqual(document["card_count"], 39)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 20)
+        self.assertEqual(document["card_count"], 40)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)

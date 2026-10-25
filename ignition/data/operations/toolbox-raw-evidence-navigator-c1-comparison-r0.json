@@ -1,0 +1,195 @@
+{
+  "schema_version": "toolbox-raw-evidence-navigator-c1-comparison-r0",
+  "tool_id": "knowledge.navigate_raw_evidence",
+  "tool_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "claim_ceiling": "Lexical navigation through entries in the checked-out Knowledge search index, followed by bounded reopening of current repository source files and exact line/hash output. No source completeness, semantic relevance, evidence coverage, truth, proof, authenticity, scientific acceptance, or publication readiness is established.",
+  "source_binding": {
+    "candidate_catalog_git_blob_sha1": "c6a7645ad3915fba219edc0185f8fc6a2875c62f",
+    "tool_source_sha256": "229d0c707af65f49ca1e0e566e6c341214878b7193d1448e58cdc682ec728752",
+    "route_receipt_path": "ignition/data/operations/toolbox-raw-evidence-navigator-route-evidence-r0.json"
+  },
+  "historical_blueprint_evidence": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "blueprint": "AB-02 Query-Conditioned Raw Evidence Navigation R0",
+    "review_path": "reviews/2026-10-05-ab02-independent-pilot-r1-review.md",
+    "reviewed_pr": 7,
+    "reviewed_head": "b53052327bf206058ee961474b07de1f4027a9a0",
+    "synthetic_result": {
+      "freshness_sensitive_coverage": "0/12 -> 10/12",
+      "stale_source_error": "8/8 -> 0/8",
+      "current_raw_grounding": "0/12 -> 10/12",
+      "premature_sufficiency_stop": "4/13 -> 0/13",
+      "unresolved_gap_honesty": "4/6 -> 6/6",
+      "read_cost_per_sufficiently_covered_query": "1.000000 -> 7.888889"
+    },
+    "limitation": "Frozen synthetic dynamic-corpus pilot evidence only; substantial read-cost tradeoff and no production search-quality claim."
+  },
+  "matched_local_task": {
+    "request": {
+      "requirements": [
+        {
+          "requirement_id": "R1",
+          "query_terms": [
+            "foundation",
+            "validation"
+          ]
+        }
+      ],
+      "max_sources_per_requirement": 3,
+      "max_total_source_bytes": 300000,
+      "max_excerpt_chars": 280
+    },
+    "task_scope": "Locate current repository-local Foundation validation records for two literal terms.",
+    "tool_result": {
+      "navigation_status": "RAW_MATCHES_FOUND_WITH_BUDGET_GAP",
+      "sufficiency_decision": "NOT_EVALUATED",
+      "candidate_source_count": 265,
+      "selected_source_count": 3,
+      "unopened_source_count": 1,
+      "search_index": {
+        "bytes": 20468038,
+        "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "record_count": 24695,
+        "role": "NONAUTHORITATIVE_NAVIGATION_PRIOR",
+        "sha256": "4a032548f6a163704e39dfec609a50efe263de8eb0424fafd83cc83dd0c3430c"
+      },
+      "budgets": {
+        "max_excerpt_chars": 280,
+        "max_line_matches_per_source": 8,
+        "max_sources_per_requirement": 3,
+        "max_total_source_bytes": 300000,
+        "source_bytes_read": 3630,
+        "source_files_read": 2
+      },
+      "selected_sources": [
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+          "search_id": "NFC-975591f478d55541",
+          "source_status": "RAW_SOURCE_NOT_OPENED_BUDGET",
+          "indexed_digest_relation": "NOT_CHECKED",
+          "current_source_sha256": null,
+          "matched_current_terms": [],
+          "missing_current_terms": [],
+          "matched_line_count": null,
+          "line_matches_truncated": null,
+          "line_numbers": [],
+          "excerpts": []
+        },
+        {
+          "path": "ignition/data/foundation/validations/079-equivalence-checks.jsonl",
+          "search_id": "NFC-ffb18bf55f3c83d7",
+          "source_status": "CURRENT_RAW_NO_TERM_MATCH",
+          "indexed_digest_relation": "MATCHES_INDEXED_DIGEST",
+          "current_source_sha256": "a4e82e3c97bfe77d63ab7642692b02c0d88bbbe43cf151b4953f52255c469947",
+          "matched_current_terms": [],
+          "missing_current_terms": [
+            "foundation",
+            "validation"
+          ],
+          "matched_line_count": 0,
+          "line_matches_truncated": false,
+          "line_numbers": [],
+          "excerpts": []
+        },
+        {
+          "path": "ignition/data/foundation/validations/records.jsonl",
+          "search_id": "NFC-cb766761d8fa2991",
+          "source_status": "CURRENT_RAW_MATCHES_ALL_QUERY_TERMS",
+          "indexed_digest_relation": "MATCHES_INDEXED_DIGEST",
+          "current_source_sha256": "36008b26075888e770481ae0f26ea1231a985ef38f71c277541bee596252ebe2",
+          "matched_current_terms": [
+            "foundation",
+            "validation"
+          ],
+          "missing_current_terms": [],
+          "matched_line_count": 6,
+          "line_matches_truncated": false,
+          "line_numbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "excerpts": [
+            {
+              "excerpt": "{\"asset_kind\":\"validation_record\",\"claim\":\"binomial square identity\",\"entity_key\":\"validation:076-math-true\",\"id\":\"076-MATH-TRUE\",\"replay\":\"python3 tools/foundation/run_benchmarks.py --check\",\"result\":\"PROVED_BY_NORMALIZATION\"}",
+              "line": 1,
+              "matched_terms": [
+                "foundation",
+                "validation"
+              ],
+              "truncated": false
+            },
+            {
+              "excerpt": "{\"asset_kind\":\"validation_record\",\"claim\":\"forall rational x, x squared is at least x\",\"counterexample\":\"x=1/2\",\"entity_key\":\"validation:076-math-false\",\"id\":\"076-MATH-FALSE\",\"replay\":\"python3 tools/foundation/run_benchmarks.py --check\",\"result\":\"COUNTEREXAMPLE_VERIFIED\"}",
+              "line": 2,
+              "matched_terms": [
+                "foundation",
+                "validation"
+              ],
+              "truncated": false
+            },
+            {
+              "excerpt": "{\"asset_kind\":\"validation_record\",\"claim\":\"Goldbach conjecture\",\"entity_key\":\"validation:076-math-pending\",\"id\":\"076-MATH-PENDING\",\"result\":\"PENDING_NOT_PROVED\"}",
+              "line": 3,
+              "matched_terms": [
+                "validation"
+              ],
+              "truncated": false
+            },
+            {
+              "excerpt": "{\"asset_kind\":\"validation_record\",\"claim\":\"modus ponens\",\"entity_key\":\"validation:076-logic-valid\",\"id\":\"076-LOGIC-VALID\",\"replay\":\"python3 tools/foundation/run_benchmarks.py --check\",\"result\":\"VALID_BY_TRUTH_TABLE\"}",
+              "line": 4,
+              "matched_terms": [
+                "foundation",
+                "validation"
+              ],
+              "truncated": false
+            },
+            {
+              "excerpt": "{\"asset_kind\":\"validation_record\",\"claim\":\"affirming the consequent\",\"counterexample\":\"p=false,q=true\",\"entity_key\":\"validation:076-logic-invalid\",\"id\":\"076-LOGIC-INVALID\",\"replay\":\"python3 tools/foundation/run_benchmarks.py --check\",\"result\":\"COUNTERMODEL_VERIFIED\"}",
+              "line": 5,
+              "matched_terms": [
+                "foundation",
+                "validation"
+              ],
+              "truncated": false
+            },
+            {
+              "excerpt": "{\"asset_kind\":\"validation_record\",\"claim\":\"cross-domain analogy\",\"entity_key\":\"validation:076-analogy\",\"id\":\"076-ANALOGY\",\"result\":\"DEFEASIBLE_SUPPORT\"}",
+              "line": 6,
+              "matched_terms": [
+                "validation"
+              ],
+              "truncated": false
+            }
+          ]
+        }
+      ]
+    },
+    "baseline": {
+      "method": "ripgrep literal case-insensitive line search on the same source path selected and reopened by the candidate: rg -n -i -m 8 -e foundation -e validation <path>",
+      "source_path": "ignition/data/foundation/validations/records.jsonl",
+      "exit_code": 0,
+      "matched_line_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "raw_output_sha256": "27cc97c84c86b2458222aa210b0405e9f0dfa5e9fcee342430d35e9ff79112ee",
+      "tool_and_baseline_line_numbers_match": true,
+      "scope_limit": "The baseline receives the raw file path already selected by the candidate. This is a line-search comparison, not a full end-to-end discovery, reliability, or cost benchmark."
+    },
+    "finding": "The candidate and ripgrep returned the same literal matching line numbers for the reopened source. The candidate additionally recorded index-derived candidate count, current/index digest relation, read budget, unopened-source gap, total line-match count, and excerpt truncation status. One task does not establish superiority; ripgrep can search known files, and the candidate has not been compared with a registered equivalent for a full search task.",
+    "replacement_or_retirement_decision": "NONE; retain COMPARISON_UNKNOWN, optional and default-off.",
+    "network_call_made": false,
+    "repository_mutation_by_tool": false,
+    "execution_authorized": false
+  }
+}

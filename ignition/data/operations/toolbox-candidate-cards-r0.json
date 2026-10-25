@@ -153,6 +153,167 @@
       }
     },
     {
+      "tool_id": "knowledge.navigate_raw_evidence",
+      "display_name": {
+        "zh": "原始证据导航器",
+        "en": "Raw evidence navigator"
+      },
+      "description": "Use the checked-out Knowledge search index as a navigation prior, reopen bounded current raw files, and return exact line matches with source hashes.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_raw_evidence_navigator.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "role": "BOUNDED_LOCAL_NAVIGATION_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+          "role": "NONAUTHORITATIVE_NAVIGATION_PRIOR"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/SEARCH.md",
+          "role": "CURRENT_KNOWLEDGE_SEARCH_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_raw_evidence_navigator.py",
+          "role": "C1_BUDGET_FRESHNESS_AND_PATH_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-raw-evidence-navigator-route-evidence-r0.json",
+          "role": "OPT_IN_LOCAL_ROUTE_PLAN"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-raw-evidence-navigator-c1-comparison-r0.json",
+          "role": "MATCHED_LOCAL_SEARCH_BASELINE_EVIDENCE"
+        }
+      ],
+      "dependencies": [
+        "ignition/data/governance/knowledge-experience/search-index.jsonl"
+      ],
+      "good_for": [
+        "Finding repository-local source candidates from explicit literal query terms when the caller does not know an asset ID or article-cluster ID.",
+        "Reopening indexed source files from the current checkout and returning line numbers, current SHA-256 values, and whether the indexed digest differs.",
+        "Keeping incomplete or budget-limited navigation visible as an unresolved gap."
+      ],
+      "not_for": [
+        "Semantic retrieval, query expansion, or discovery of newly added sources absent from the checked-out search index.",
+        "Deciding that any source supports a proposition, that a requirement is satisfied, or that independent source-family support exists.",
+        "Replacing a live web search, scientific review, source-authenticity check, proof, or publication decision."
+      ],
+      "only_if": [
+        "The requested task is local repository navigation and supplies 1 to 12 literal query terms for each of 1 to 8 named requirements.",
+        "The checked-out Knowledge search index and current source files are the intended scope.",
+        "The caller accepts an explicit total raw-source byte budget, a per-requirement source limit, and a result ceiling of navigation hints only."
+      ],
+      "counterindicated_when": [
+        "The task requires current external facts or sources outside the checked-out Formal repository.",
+        "The relevant source may be new or unindexed and the caller needs a completeness guarantee.",
+        "A semantic, causal, mathematical, or scientific judgment is required rather than literal source navigation."
+      ],
+      "accepted_input_types": [
+        "Bounded UTF-8 JSON stdin with requirement IDs, literal query terms, maximum sources per requirement, total raw-source byte budget, and maximum excerpt length"
+      ],
+      "output_types": [
+        "Ranked Knowledge-index candidates with exact repository source paths and indexed/current SHA-256 comparison.",
+        "Current raw line matches with line numbers, matched and missing query terms, current/indexed SHA-256 comparison, at most 8 excerpts per source, matched-line count, truncation flag, and explicit partial/unopened/missing statuses.",
+        "Requirement-level navigation hints and unresolved gaps; sufficiency_decision is always NOT_EVALUATED."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_SEARCH_INDEX_AND_INDEX_SELECTED_SOURCES_UNDER_IGNITION",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads the fixed checked-out Knowledge index and bounded indexed source files; emits one JSON result to stdout and writes no repository or temporary files."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The current fixed index is about 20.5 MB and 24695 rows; raw-source reads are caller-bounded to at most 2 MB, but latency and memory profiles are not calibrated."
+      },
+      "alternatives": [
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool renders a declared cluster by ID; this tool accepts explicit query terms and reopens indexed raw sources."
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool reads one exact canonical record ID; this tool navigates from literal terms without requiring an ID."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Offline query-conditioned navigation from the checked-out Knowledge index to current raw source lines when the caller does not know a canonical asset or cluster ID.",
+        "Detecting that a currently reopened source digest differs from the digest recorded in the navigation index while preserving the current raw bytes as the returned source."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "A same-corpus local task compared this implementation's reopened source lines with ripgrep on the same selected source. It shows output overlap and the additional index/digest/budget receipt, not end-to-end search superiority, reliability, or cost. The current registered cluster-ID and exact-asset-ID tools have different input contracts.",
+        "compared_tool_ids": [],
+        "evidence_refs": [
+          "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "ignition/tests/test_toolbox_raw_evidence_navigator.py",
+          "ignition/KNOWLEDGE/SEARCH.md",
+          "ignition/data/operations/toolbox-raw-evidence-navigator-c1-comparison-r0.json"
+        ],
+        "findings": [
+          "On one bounded repository task, the navigator's exact raw line numbers matched ripgrep on the same reopened source file.",
+          "The navigator additionally recorded 24,695 index rows, an index digest, prioritized candidate paths, current-versus-indexed source digests, and the 300000-byte budget gap.",
+          "The baseline was given a raw path already selected by the navigator; this does not measure full source-discovery quality or runtime/cost.",
+          "No same-task comparison with a registered equivalent tool, calibrated reliability evidence, or cost benchmark supports replacement, retirement, or default routing; preserve COMPARISON_UNKNOWN."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "Optional default-off candidate; the synthetic AB-02 result and local tool tests do not establish replacement value or justify retirement of another tool."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation is migrated or changed; existing cluster-ID and exact-record-ID tool contracts remain available."
+        ],
+        "rollback_steps": [
+          "Remove this candidate entry and wrapper from the isolated toolbox branch, regenerate the identity-card projections, and preserve the implementation/test/evidence commit history."
+        ]
+      },
+      "fallback": "Use the current Knowledge search surface or direct repository search, then inspect the exact current source manually. If no indexed candidate is returned, report that the index did not locate one; do not infer that no source exists.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_raw_evidence_navigator.py"
+        ],
+        "negative_controls": [
+          "Stale indexed digests are reported separately from the hash of reopened current raw bytes.",
+          "A partial raw-term match reports missing terms; no term match or budget exhaustion never becomes a sufficiency pass.",
+          "Missing files, path traversal, symlink targets, invalid request fields, and excessive budgets fail closed without reading outside ignition/.",
+          "More than 8 matching lines report the full match count and an explicit line_matches_truncated flag."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only include through an explicit experimental allowlist for a local raw-source navigation task with literal terms and an available checked-out repository.",
+        "Never invoke after route selection without the task's own request and input.",
+        "Do not use a returned lexical match as claim support, freshness of an external source, or requirement completion."
+      ],
+      "claim_ceiling": "Lexical navigation through entries in the checked-out Knowledge search index, followed by bounded reopening of current repository source files and exact line/hash output. No source completeness, semantic relevance, evidence coverage, truth, proof, authenticity, scientific acceptance, or publication readiness is established."
+    },
+    {
       "tool_id": "ignition.adaptive_toolbox_route_planner",
       "display_name": {
         "zh": "点火工具组合路由预览",

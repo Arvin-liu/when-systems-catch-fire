@@ -63,6 +63,27 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["execution_authorized"])
         self.assertEqual(included["source_refs"]["current_registry_git_blob_sha1"], "21fe1bfcdb0d9762edd60339aca14f1040393fc7")
 
+    def test_raw_evidence_navigator_is_default_off_and_requires_explicit_allowlist(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "knowledge.navigate_raw_evidence")
+        task = profile("local-raw-evidence-navigation", card["accepted_input_types"], card["output_types"])
+
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["knowledge.navigate_raw_evidence"],
+        )
+
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["knowledge.navigate_raw_evidence"],
+        )
+        self.assertFalse(included["execution_authorized"])
+        self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
+
     def test_cognitive_migration_editorial_proposal_is_opt_in_and_read_only(self) -> None:
         catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
         card = next(row for row in catalog["candidates"] if row["tool_id"] == "writing.preflight_cognitive_migration_revision")
@@ -330,8 +351,12 @@ class AdaptiveToolRouteTests(unittest.TestCase):
     def test_read_only_network_route_rejects_host_without_explicit_allowance(self) -> None:
         registry_bytes = planner.REGISTRY_PATH.read_bytes()
         candidates = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
-        candidates["candidates"][0]["permissions"]["network"] = True
-        candidates["candidates"][0]["permissions"]["network_hosts"] = ["example.org"]
+        cluster_brief = next(
+            item for item in candidates["candidates"]
+            if item["tool_id"] == "knowledge.cluster_source_brief"
+        )
+        cluster_brief["permissions"]["network"] = True
+        cluster_brief["permissions"]["network_hosts"] = ["example.org"]
         with tempfile.TemporaryDirectory() as tmp:
             registry_path = Path(tmp) / "registry.json"
             candidates_path = Path(tmp) / "candidates.json"
