@@ -180,6 +180,30 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(included["execution_authorized"])
 
+    def test_actions_step_timeline_summary_is_off_by_default_and_opt_in(self) -> None:
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "maintenance.summarize_actions_step_timeline")
+        task = profile(
+            "summarize-actions-run-job-and-step-intervals",
+            card["accepted_input_types"],
+            [card["output_types"][0]],
+        )
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["maintenance.summarize_actions_step_timeline"],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(excluded["selected_tools"], [])
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["maintenance.summarize_actions_step_timeline"],
+        )
+        self.assertFalse(included["execution_authorized"])
+        self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
+
     def test_network_candidate_requires_both_tool_allowlist_and_exact_host_allowance(self) -> None:
         task = profile(
             "live-crossref-metadata-comparison",
