@@ -1,0 +1,14 @@
+{
+  "task_id": "matched-context-packet-structural-variant-comparison",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON object with exactly comparison_id, baseline_packet, candidate_packet; each packet is a knowledge.assemble_context_packet R0 result."
+  ],
+  "required_outputs": [
+    "Matched caller-declared task binding, exact UTF-8 excerpt-text byte/character/line counts, source identity counts, and declared obligation set differences without echoing excerpts.",
+    "Explicit NOT_EVALUATED semantic coverage and sufficiency, NOT_MEASURED provider tokens/cost, and execution_authorized=false."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

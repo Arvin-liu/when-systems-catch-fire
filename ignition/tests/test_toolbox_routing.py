@@ -106,6 +106,35 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
 
+    def test_context_packet_variant_comparator_is_default_off_and_selects_only_after_allowlisting(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "maintenance.compare_context_packet_variants"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("matched-context-packet-structural-variant-comparison", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        allowlisted = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-context-packet-variant-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn({"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"}, default["rejected_candidates"])
+        self.assertEqual(allowlisted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in allowlisted["selected_tools"]], [tool_id])
+        self.assertFalse(allowlisted["execution_authorized"])
+        self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertEqual(evidence["default_route_result"]["decision"], "INCOMPLETE")
+        self.assertEqual(evidence["route_result"]["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in evidence["route_result"]["selected_tools"]], [tool_id])
+        self.assertFalse(evidence["execution_authorized"])
+        self.assertEqual(
+            evidence["route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            evidence["candidate_catalog_git_blob_sha1"],
+        )
+
     def test_agent_episode_binding_preflight_is_default_off_and_opt_in_is_not_execution(self) -> None:
         catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
         tool_id = "collaboration.validate_agent_episode_binding"

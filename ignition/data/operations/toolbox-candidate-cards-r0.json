@@ -478,6 +478,216 @@
       "claim_ceiling": "A bounded packet of caller-selected local excerpts with current byte-digest checks and structural obligation linkage only. Current-ref resolution, source-kind declarations, authority, freshness meaning, semantic relevance, evidential support, sufficiency, truth, proof, scientific acceptance, and publication readiness are not evaluated."
     },
     {
+      "tool_id": "maintenance.compare_context_packet_variants",
+      "display_name": {
+        "zh": "上下文包变体对照器",
+        "en": "ContextPacket Variant Comparator"
+      },
+      "description": "Compare two matched ContextPacket outputs by exact excerpt text bytes and caller-declared structural obligation deltas without echoing excerpts or judging sufficiency.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_context_packet_variant_comparator.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_context_packet_variant_comparator.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_context_packet_variant_comparator.py",
+          "role": "BOUNDED_PACKET_VARIANT_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_context_packet_variant_comparator.py",
+          "role": "MATCHING_AND_NEGATIVE_CONTROL_TESTS"
+        },
+        {
+          "path": "ignition/tools/toolbox_context_packet.py",
+          "role": "INPUT_CONTEXT_PACKET_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_context_packet.py",
+          "role": "INPUT_PACKET_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-context-packet-variant-comparator.md",
+          "role": "CONTRACT_AND_LIMITS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-context-packet-variant-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-context-packet-variant-route-profile-r0.json",
+          "role": "MATCHED_TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-context-packet-variant-c1-evidence-r0.json",
+          "role": "C1_FUNCTIONAL_SCOPE_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-context-packet-variant-real-task-r0.json",
+          "role": "BOUNDED_LOCAL_TASK_INVOCATION"
+        },
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "role": "C1_ALTERNATIVE_LOCAL_EVIDENCE_NAVIGATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "role": "C1_ALTERNATIVE_WORKFLOW_TIMING_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_compare_publication_metadata.py",
+          "role": "C1_ALTERNATIVE_PUBLICATION_METADATA_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_ROUTE_TEST"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "GENERATED_IDENTITY_CARD_TEST"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Comparing two ContextPacket R0 outputs for the same caller-declared question, current_ref, and ordered obligation list.",
+        "Counting excerpt text UTF-8 bytes, lines, and characters without returning excerpt content.",
+        "Showing which caller-declared obligations are present or missing in each packet while preserving semantic_coverage and sufficiency_decision as NOT_EVALUATED."
+      ],
+      "not_for": [
+        "Authenticating either packet, resolving a Current ref, or verifying source authority or source bytes against the checkout.",
+        "Judging semantic relevance, evidence support, important-error recall, task outcome, source completeness, or packet sufficiency.",
+        "Estimating provider token use, latency, or billing cost; exact local UTF-8 text bytes are not provider tokens.",
+        "Comparing packets from different declared questions, current_ref values, or obligation lists."
+      ],
+      "only_if": [
+        "Both inputs are outputs from knowledge.assemble_context_packet R0 and the caller wants a structural, same-task comparison.",
+        "Both packets declare the exact same operation_or_question_id, current_ref, and ordered required obligation IDs.",
+        "The caller accepts that packet identity, source status, and obligation labels remain caller-declared and are not authenticated."
+      ],
+      "counterindicated_when": [
+        "Either packet contains confidential text that should not be passed to a local stdin tool or retained in process memory.",
+        "The task requires a judgment about semantic coverage, actual answer quality, scientific support, important-error recall, or provider cost.",
+        "The two variants do not share the same caller-declared task, current reference, or ordered obligations."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON object with exactly comparison_id, baseline_packet, candidate_packet; each packet is a knowledge.assemble_context_packet R0 result."
+      ],
+      "output_types": [
+        "Matched caller-declared task binding, exact UTF-8 excerpt-text byte/character/line counts, source identity counts, and declared obligation set differences without echoing excerpts.",
+        "Explicit NOT_EVALUATED semantic coverage and sufficiency, NOT_MEASURED provider tokens/cost, and execution_authorized=false."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_LOCAL_STDIN_PACKET_COMPARISON",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads two bounded packet objects from stdin and emits a compact structural comparison to stdout; it does not read files, echo excerpts, write files, contact a network, or authorize execution."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Input is capped at 256000 bytes and at most 16 context items per packet. Runtime and memory are not calibrated; UTF-8 excerpt bytes are not provider token or billing costs."
+      },
+      "alternatives": [
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The assembler reads caller-selected local sources and creates one digest-checked packet; this comparator consumes two packet outputs and reports structural deltas without re-reading sources."
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The navigator searches a checked-out index and opens bounded raw matches; it does not compare two assembled task contexts."
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That comparator measures repeated workflow job/step timing sequences, not excerpt bytes or declared context obligations."
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That comparator checks selected title/year metadata fields for the same DOI, not task context packets."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Compare two caller-selected ContextPacket R0 variants for the same declared task and show exact text-byte and structural obligation deltas without emitting context text."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Contract-level comparison against the ContextPacket assembler, local raw-evidence navigator, repeated Actions sequence comparator, and publication metadata comparator. Same-task semantic quality, important-error recall, provider token cost, and retrieval-maintenance savings are not measured.",
+        "compared_tool_ids": [
+          "knowledge.assemble_context_packet",
+          "knowledge.navigate_raw_evidence",
+          "maintenance.compare_actions_repeated_step_sequences",
+          "research.compare_publication_metadata_snapshots"
+        ],
+        "evidence_refs": [
+          "ignition/tools/toolbox_context_packet.py",
+          "ignition/tests/test_toolbox_context_packet.py",
+          "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "ignition/tools/toolbox_compare_publication_metadata.py",
+          "ignition/data/operations/toolbox-context-packet-variant-c1-evidence-r0.json"
+        ],
+        "findings": [
+          "The existing assembler creates and hashes one packet but does not compare two matched packet outputs or report their exact excerpt-byte delta.",
+          "The raw-evidence navigator searches one local corpus; the Actions comparator compares job/step intervals; the publication comparator compares DOI metadata fields. Their inputs and outputs differ from matched context-packet comparison.",
+          "No comparison establishes better semantic coverage, answer quality, important-error recall, provider token use, billing, or retrieval cost. No existing tool is retired or replaced."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Retain as a narrowly specialized comparator for two matched ContextPacket outputs. It does not assemble packets, search sources, or measure semantic quality or provider cost."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation or existing tool is migrated. Continue using the ContextPacket assembler to build each packet; select this candidate only when two outputs need a matched structural comparison."
+        ],
+        "rollback_steps": [
+          "Remove the optional candidate card, wrapper, tests, and generated tool-directory entry; regenerate identity projections and retain historical comparison and route receipts."
+        ]
+      },
+      "fallback": "For a simple pair of packets, inspect their existing coverage fields and use a local UTF-8 byte counter. Do not infer semantic sufficiency or provider cost from this tool.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_context_packet_variant_comparator.py",
+          "ignition/tests/test_toolbox_context_packet.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Mismatched operation/question ID, current_ref, or ordered obligations fails closed.",
+          "Execution authorization, semantic coverage, or sufficiency claims other than false/NOT_EVALUATED are rejected.",
+          "A packet claiming current source bytes whose current digest differs from its declared source digest is rejected.",
+          "Dropped declared and source-required obligations remain visible in the comparison deltas.",
+          "Duplicate JSON keys, oversized input, malformed excerpts, and invalid caller-declared packet structures fail closed.",
+          "Excerpt text is counted locally but never echoed in output; no network or file access is performed."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded by default; callers must explicitly allowlist maintenance.compare_context_packet_variants.",
+        "Only propose this operation for two ContextPacket R0 outputs with a matched caller-declared task, current_ref, and obligation list.",
+        "Routing proposes tool selection only; it does not authorize external actions, semantic sufficiency, or acceptance."
+      ],
+      "claim_ceiling": "Exact structural differences and UTF-8 byte counts within two caller-supplied ContextPacket outputs only. Packet authenticity, current-ref resolution, source truth, semantic relevance, evidence support, task outcome, provider token use, billing, sufficiency, and execution authorization are not established."
+    },
+    {
       "tool_id": "ignition.adaptive_toolbox_route_planner",
       "display_name": {
         "zh": "点火工具组合路由预览",
