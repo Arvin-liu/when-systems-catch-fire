@@ -45,7 +45,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(card["permissions"]["write_paths"], [])
         self.assertFalse(card["permissions"]["network"])
 
-    def test_crossref_c1_keeps_uncertainty_after_single_same_task_runner_comparison(self) -> None:
+    def test_crossref_c1_keeps_uncertainty_after_limited_record_comparison(self) -> None:
         document = TOOL.build_cards()
         card = next(
             item for item in document["cards"]
@@ -61,13 +61,21 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(evidence["disposition"]["status"], "COMPARISON_UNKNOWN")
         self.assertEqual(evidence["reference_implementation"]["identity"].split(";")[1].strip(), "source script, not a registered toolbox tool identity")
         self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
-        self.assertEqual(card["comparison_evidence"]["compared_tool_ids"], ["research.lookup_openalex_work_metadata"])
+        self.assertEqual(
+            card["comparison_evidence"]["compared_tool_ids"],
+            ["research.lookup_openalex_work_metadata", "research.inspect_pubmed_update_links"],
+        )
         self.assertIn(
-            "ignition/data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json",
+            "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+            card["comparison_evidence"]["evidence_refs"],
+        )
+        self.assertIn(
+            "ignition/data/operations/toolbox-crossref-references-route-evidence-r0.json",
             card["comparison_evidence"]["evidence_refs"],
         )
         self.assertEqual(card["replacement_candidates"], [])
-        self.assertEqual(card["unique_remaining_use_cases"], [])
+        self.assertTrue(card["unique_remaining_use_cases"])
+        self.assertIn("Crossref reference citation metadata", card["unique_remaining_use_cases"][0])
         self.assertEqual(card["deprecation_or_retirement_status"]["status"], "ACTIVE")
         self.assertFalse(card["router_selectable_by_default"])
         self.assertEqual(card["permissions"]["network_hosts"], ["api.crossref.org"])
@@ -404,7 +412,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertFalse(openalex["permissions"]["billing"])
         self.assertIn("is_retracted", " ".join(openalex["output_types"]))
         self.assertIn("scientific truth", openalex["claim_ceiling"])
-        self.assertEqual(openalex["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(openalex["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
         self.assertEqual(openalex["replacement_candidates"], [])
         self.assertTrue(openalex["unique_remaining_use_cases"])
         self.assertEqual(noaa["permissions"]["network_hosts"], ["gml.noaa.gov"])
@@ -497,6 +505,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "maintenance.summarize_actions_step_timeline",
             "maintenance.compare_actions_repeated_step_sequences",
             "research.lookup_arxiv_paper_metadata",
+            openalex["tool_id"],
             noaa["tool_id"],
             noaa_co2["tool_id"],
             batch["tool_id"],
