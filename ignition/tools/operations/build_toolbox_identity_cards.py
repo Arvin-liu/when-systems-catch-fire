@@ -92,6 +92,16 @@ def build_cards() -> dict[str, Any]:
         dependencies.extend(check["path"] for check in operation["validation_checks"])
         if binding:
             dependencies.append(binding["manifest_path"])
+        comparison_refs = sorted({
+            REGISTRY_REL,
+            *(source["path"] for source in operation["authoritative_sources"]),
+            *(check["path"] for check in operation["validation_checks"]),
+        })
+        disposition_status = (
+            "ACTIVE"
+            if operation["current_status"] in {"CURRENT", "CURRENT_BOUNDED"} and operation["ai_callability"] != "STATUS_ONLY"
+            else "ROUTER_EXCLUDED"
+        )
         cards.append({
             "tool_id": operation["operation_id"],
             "card_kind": "CURRENT_OPERATION_REGISTRY_PROJECTION",
@@ -131,6 +141,23 @@ def build_cards() -> dict[str, Any]:
             "runtime_dependencies": manifest.get("optional_dependencies", []) if manifest else [],
             "estimated_cost": {"status": "UNKNOWN", "basis": "No comparable per-operation cost evidence is declared."},
             "alternatives": {"status": "NOT_MAPPED_IN_CURRENT_REGISTRY", "tool_ids": []},
+            "replacement_candidates": [],
+            "unique_remaining_use_cases": [],
+            "comparison_evidence": {
+                "status": "COMPARISON_UNKNOWN",
+                "scope": "The Current operation projection contains no paired same-task outcome comparison; this card does not infer uniqueness, redundancy, or replacement value.",
+                "compared_tool_ids": [],
+                "evidence_refs": comparison_refs,
+                "findings": ["Current lifecycle and callability remain sourced from the authoritative operation registry; no replacement or retirement decision is inferred."],
+            },
+            "deprecation_or_retirement_status": {
+                "status": disposition_status,
+                "basis": f"Preserve registry status {operation['current_status']} and callability {operation['ai_callability']}; no comparative retirement decision is recorded.",
+            },
+            "migration_and_rollback": {
+                "migration_notes": ["Do not replace this Current operation from discovery-card similarity alone; compare the same task, permission, environment, and output contract first."],
+                "rollback_steps": ["Apply any lifecycle change through the canonical operation registry and its governed dependent projections; restore the prior registry entry if the replacement regresses."],
+            },
             "fallback": "Follow the operation-specific stop conditions and report the unmet input, authority, or output contract.",
             "evidence": {
                 "level": "DECLARATION_ONLY",
@@ -156,8 +183,28 @@ def build_cards() -> dict[str, Any]:
         source_path = candidate.get("source_path")
         source_blob = file_blob_sha1(source_path)
         source_refs = [source_ref_digest(reference["path"]) for reference in candidate.get("source_refs", [])]
+        comparison_evidence = candidate.get("comparison_evidence", {
+            "status": "COMPARISON_UNKNOWN",
+            "scope": "No same-task comparative assessment is declared in this legacy candidate card.",
+            "compared_tool_ids": [],
+            "evidence_refs": [],
+            "findings": ["Replacement value and remaining unique use cases are unknown; preserve uncertainty."],
+        })
+        retirement_status = candidate.get("deprecation_or_retirement_status", {
+            "status": "COMPARISON_UNKNOWN",
+            "basis": "No comparative evidence is declared in this legacy candidate card.",
+        })
+        migration_and_rollback = candidate.get("migration_and_rollback", {
+            "migration_notes": ["Do not infer replacement from name or capability similarity; compare the same task and contract first."],
+            "rollback_steps": ["Retain the previous candidate source and card until a reviewed comparison supports migration."],
+        })
         cards.append({
             **candidate,
+            "replacement_candidates": candidate.get("replacement_candidates", []),
+            "unique_remaining_use_cases": candidate.get("unique_remaining_use_cases", []),
+            "comparison_evidence": comparison_evidence,
+            "deprecation_or_retirement_status": retirement_status,
+            "migration_and_rollback": migration_and_rollback,
             "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
             "source_blob_sha1": source_blob,
             "source_refs_with_hashes": source_refs,
@@ -199,6 +246,9 @@ def render_human(document: dict[str, Any]) -> str:
     for card in document["cards"]:
         if card["card_kind"] != "CURRENT_OPERATION_REGISTRY_PROJECTION":
             continue
+        comparison = card["comparison_evidence"]
+        disposition = card["deprecation_or_retirement_status"]
+        migration = card["migration_and_rollback"]
         lines.extend([
             f"### `{card['tool_id']}` · {card['name']['zh']} / {card['name']['en']}",
             "",
@@ -214,6 +264,11 @@ def render_human(document: dict[str, Any]) -> str:
             f"- Dependencies: {', '.join(card['dependencies']) or 'none declared'}; runtime `{', '.join(card['runtime_dependencies']) or 'none declared'}`; version `{card['version']}`.",
             f"- Cost: `{card['estimated_cost']['status']}` · {card['estimated_cost']['basis']}",
             f"- Alternatives: `{card['alternatives']['status']}` · {', '.join(card['alternatives']['tool_ids']) or 'none mapped'}.",
+            f"- Replacement candidates: {', '.join(card['replacement_candidates']) or 'none established'}.",
+            f"- Unique remaining use cases: {'; '.join(card['unique_remaining_use_cases']) or 'not established'}.",
+            f"- Comparison evidence: `{comparison['status']}` · {comparison['scope']} Comparators: {', '.join(comparison['compared_tool_ids']) or 'none recorded'}; refs: {', '.join(comparison['evidence_refs'])}; findings: {'; '.join(comparison['findings'])}.",
+            f"- Deprecation/retirement: `{disposition['status']}` · {disposition['basis']}",
+            f"- Migration/rollback: {'; '.join(migration['migration_notes'])} / {'; '.join(migration['rollback_steps'])}.",
             f"- Fallback: {card['fallback']}",
             f"- Limits: {'; '.join(card['cannot_do'])}",
             f"- Evidence: `{card['evidence']['level']}` · registry blob `{card['evidence']['registry_blob_sha1']}` · validation `{', '.join(card['evidence']['validation_refs']) or 'none declared'}`.",
@@ -234,6 +289,9 @@ def render_human(document: dict[str, Any]) -> str:
         ) or "none mapped"
         source_refs = ", ".join(f"`{row['path']}` ({row['role']})" for row in card["source_refs"])
         network_hosts = ", ".join(card["permissions"].get("network_hosts", [])) or "none"
+        comparison = card["comparison_evidence"]
+        disposition = card["deprecation_or_retirement_status"]
+        migration = card["migration_and_rollback"]
         lines.extend([
             f"### `{card['tool_id']}` · {card['display_name']['zh']} / {card['display_name']['en']}",
             "",
@@ -249,6 +307,11 @@ def render_human(document: dict[str, Any]) -> str:
             f"- Dependencies: {', '.join(card['dependencies']) or 'none declared'}; runtime dependencies: {', '.join(card['runtime_dependencies']) or 'none declared'}.",
             f"- Cost: `{card['estimated_cost']['status']}` · {card['estimated_cost']['basis']}",
             f"- Alternatives: {alternatives}.",
+            f"- Replacement candidates: {', '.join(card['replacement_candidates']) or 'none established'}.",
+            f"- Unique remaining use cases: {'; '.join(card['unique_remaining_use_cases']) or 'not established'}.",
+            f"- Comparison evidence: `{comparison['status']}` · {comparison['scope']} Comparators: {', '.join(comparison['compared_tool_ids']) or 'none recorded'}; refs: {', '.join(comparison['evidence_refs'])}; findings: {'; '.join(comparison['findings'])}.",
+            f"- Deprecation/retirement: `{disposition['status']}` · {disposition['basis']}",
+            f"- Migration/rollback: {'; '.join(migration['migration_notes'])} / {'; '.join(migration['rollback_steps'])}.",
             f"- Invocation example: `{card['entrypoint']}`",
             f"- Fallback: {card['fallback']}",
             f"- Evidence: `{card['evidence_level']}` · source refs {source_refs}; focused checks {validation_links}; negative controls: {'; '.join(card['validation']['negative_controls'])}.",

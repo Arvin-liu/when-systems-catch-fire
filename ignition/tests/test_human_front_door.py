@@ -68,6 +68,12 @@ class HumanFrontDoorTests(unittest.TestCase):
         identity_block = self.readme[start:end]
         self.assertIn(f"**{PROJECT_IDENTITY_TEXT}**", identity_block)
 
+    def test_identity_self_revision_includes_ignition_as_a_whole(self):
+        required = "点火的整体架构乃至我们对「点火是什么」的表述也如此"
+        self.assertIn(required, self.readme)
+        with self.assertRaises(AssertionError):
+            validate_readme_structure(self.readme.replace(required, "点火的个别工具也如此", 1))
+
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
         architecture_end = self.readme.index("## 5. 致谢")

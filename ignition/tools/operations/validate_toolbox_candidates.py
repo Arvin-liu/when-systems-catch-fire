@@ -42,7 +42,21 @@ def validate() -> list[str]:
         errors.append("candidate tool IDs must be unique")
     if current_ids.intersection(candidate_ids):
         errors.append("candidate tool IDs must not shadow Current operation IDs")
+    known_ids = current_ids | set(candidate_ids)
     for card in catalog["candidates"]:
+        comparison_evidence = card.get("comparison_evidence", {
+            "status": "COMPARISON_UNKNOWN",
+            "scope": "No same-task comparative assessment is declared in this legacy candidate card.",
+            "compared_tool_ids": [],
+            "evidence_refs": [],
+            "findings": ["Replacement value and remaining unique use cases are unknown; preserve uncertainty."],
+        })
+        replacement_candidates = card.get("replacement_candidates", [])
+        unique_remaining_use_cases = card.get("unique_remaining_use_cases", [])
+        retirement = card.get("deprecation_or_retirement_status", {
+            "status": "COMPARISON_UNKNOWN",
+            "basis": "No comparative evidence is declared in this legacy candidate card.",
+        })
         source = REPO_ROOT / card["source_path"]
         if not source.is_file() or source.is_symlink():
             errors.append(f"{card['tool_id']}: implementation source is missing or is a symlink")
@@ -53,6 +67,33 @@ def validate() -> list[str]:
         source_ref_paths = {ref["path"] for ref in card["source_refs"]}
         if not set(card["dependencies"]) <= source_ref_paths:
             errors.append(f"{card['tool_id']}: every declared dependency must have a hashed source reference")
+        comparison_refs = set(comparison_evidence["evidence_refs"])
+        if not comparison_refs <= source_ref_paths:
+            errors.append(f"{card['tool_id']}: every comparison-evidence path must have a hashed source reference")
+        for evidence_ref in comparison_refs:
+            path = REPO_ROOT / evidence_ref.rstrip("/")
+            if not path.exists() or path.is_symlink():
+                errors.append(f"{card['tool_id']}: comparison evidence is missing or is a symlink: {evidence_ref}")
+        unknown_replacements = set(replacement_candidates) - known_ids
+        if unknown_replacements:
+            errors.append(f"{card['tool_id']}: replacement candidates are not registered identities: {', '.join(sorted(unknown_replacements))}")
+        unknown_comparators = set(comparison_evidence["compared_tool_ids"]) - known_ids
+        if unknown_comparators:
+            errors.append(f"{card['tool_id']}: compared tool IDs are not registered identities: {', '.join(sorted(unknown_comparators))}")
+        if card["tool_id"] in replacement_candidates:
+            errors.append(f"{card['tool_id']}: a candidate cannot replace itself")
+        comparison_status = comparison_evidence["status"]
+        if comparison_status == "COMPARISON_UNKNOWN" and retirement["status"] in {"DEPRECATED", "REMOVED"}:
+            errors.append(f"{card['tool_id']}: an unknown comparison cannot support deprecation or removal")
+        if comparison_status == "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED":
+            if not comparison_evidence["compared_tool_ids"] or not unique_remaining_use_cases:
+                errors.append(f"{card['tool_id']}: specialized disposition needs comparator IDs and declared remaining use cases")
+            if replacement_candidates:
+                errors.append(f"{card['tool_id']}: specialized-no-replacement status conflicts with replacement candidates")
+        if comparison_status == "REPLACEMENT_SUPPORTED" and not replacement_candidates:
+            errors.append(f"{card['tool_id']}: supported replacement status requires at least one replacement candidate")
+        if comparison_status == "RETIREMENT_SUPPORTED" and retirement["status"] not in {"DEPRECATED", "ROUTER_EXCLUDED", "REMOVED"}:
+            errors.append(f"{card['tool_id']}: supported retirement evidence must be reflected in the retirement status")
         for dependency in card["dependencies"]:
             path = REPO_ROOT / dependency.rstrip("/")
             if not path.exists() or path.is_symlink():

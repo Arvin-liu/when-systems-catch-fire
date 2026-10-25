@@ -4,7 +4,9 @@ import importlib.util
 import json
 from pathlib import Path
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
 
 from jsonschema import Draft202012Validator
 
@@ -28,6 +30,14 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(len(current), 20)
         self.assertTrue(all(card["availability"] == "REGISTERED_OPERATION_NOT_INFERRED_EXECUTABLE" for card in current))
         self.assertTrue(all(card["router_selectable_by_default"] is False for card in candidates))
+        for card in current + candidates:
+            self.assertIn("replacement_candidates", card)
+            self.assertIn("unique_remaining_use_cases", card)
+            self.assertIn("comparison_evidence", card)
+            self.assertIn("deprecation_or_retirement_status", card)
+            self.assertIn("migration_and_rollback", card)
+            self.assertTrue(card["migration_and_rollback"]["migration_notes"])
+            self.assertTrue(card["migration_and_rollback"]["rollback_steps"])
         crossref = next(card for card in candidates if card["tool_id"] == "research.verify_crossref_metadata")
         pubmed = next(card for card in candidates if card["tool_id"] == "research.resolve_pubmed_identifiers")
         updates = next(card for card in candidates if card["tool_id"] == "research.inspect_pubmed_update_links")
@@ -55,11 +65,18 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(updates["dependencies"], [])
         self.assertIn("absence claim", updates["claim_ceiling"])
         self.assertEqual(editorial["execution_mode"], "READ_ONLY_RUN")
-        self.assertEqual(editorial["evidence_level"], "SYNTHETIC_ONLY")
+        self.assertEqual(editorial["evidence_level"], "REAL_TOOL_TEST")
         self.assertFalse(editorial["permissions"]["network"])
         self.assertEqual(editorial["permissions"]["write_paths"], [])
         self.assertFalse(editorial["router_selectable_by_default"])
         self.assertIn("publication readiness", editorial["claim_ceiling"])
+        self.assertEqual(editorial["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(set(editorial["comparison_evidence"]["compared_tool_ids"]), {"writing.apply_editorial_method", "writing.validate_publication_surface"})
+        self.assertEqual(editorial["replacement_candidates"], [])
+        self.assertEqual(editorial["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+        self.assertTrue(editorial["unique_remaining_use_cases"])
+        self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] != editorial["tool_id"]))
+        self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
         self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], updates["tool_id"]} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
@@ -112,6 +129,46 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         assert validator_spec.loader is not None
         validator_spec.loader.exec_module(validator)
         self.assertEqual(validator.validate(), [])
+
+    def test_legacy_candidate_without_c1_fields_defaults_to_unknown(self) -> None:
+        validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"
+        validator_spec = importlib.util.spec_from_file_location("validate_toolbox_candidates_legacy", validator_path)
+        validator = importlib.util.module_from_spec(validator_spec)
+        assert validator_spec.loader is not None
+        validator_spec.loader.exec_module(validator)
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        legacy = catalog["candidates"][0]
+        legacy_id = legacy["tool_id"]
+        for field in ("replacement_candidates", "unique_remaining_use_cases", "comparison_evidence", "deprecation_or_retirement_status", "migration_and_rollback"):
+            legacy.pop(field, None)
+        with tempfile.TemporaryDirectory() as temp_dir:
+            candidate_catalog = Path(temp_dir) / "legacy-candidate-cards.json"
+            candidate_catalog.write_text(json.dumps(catalog, ensure_ascii=False), encoding="utf-8")
+            with patch.object(validator, "CATALOG", candidate_catalog):
+                self.assertEqual(validator.validate(), [])
+            with patch.object(TOOL, "CANDIDATES_PATH", candidate_catalog):
+                document = TOOL.build_cards()
+        projected = next(card for card in document["cards"] if card["tool_id"] == legacy_id)
+        self.assertEqual(projected["replacement_candidates"], [])
+        self.assertEqual(projected["unique_remaining_use_cases"], [])
+        self.assertEqual(projected["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(projected["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        self.assertTrue(projected["migration_and_rollback"]["rollback_steps"])
+
+    def test_unknown_comparison_cannot_authorize_retirement(self) -> None:
+        validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"
+        validator_spec = importlib.util.spec_from_file_location("validate_toolbox_candidates_retirement", validator_path)
+        validator = importlib.util.module_from_spec(validator_spec)
+        assert validator_spec.loader is not None
+        validator_spec.loader.exec_module(validator)
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        catalog["candidates"][0]["deprecation_or_retirement_status"]["status"] = "DEPRECATED"
+        with tempfile.TemporaryDirectory() as temp_dir:
+            candidate_catalog = Path(temp_dir) / "candidate-cards.json"
+            candidate_catalog.write_text(json.dumps(catalog, ensure_ascii=False), encoding="utf-8")
+            with patch.object(validator, "CATALOG", candidate_catalog):
+                errors = validator.validate()
+        self.assertTrue(any("unknown comparison cannot support deprecation or removal" in error for error in errors))
 
     def test_candidate_schema_rejects_dependency_path_traversal(self) -> None:
         schema = json.loads((IGNITION_ROOT / "schemas/operations/toolbox-candidate-cards-r0.schema.json").read_text(encoding="utf-8"))
