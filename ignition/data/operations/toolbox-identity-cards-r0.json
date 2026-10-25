@@ -6045,17 +6045,17 @@
       ],
       "claim_ceiling": "One live PMC ID Converter DOI-to-PMID response and, only when that response yields an exact PMID, raw Comments/Corrections fields from the matching PubMed record at retrieval time. This tool does not establish completeness, source authenticity, article content, retraction status, scientific validity, or absence of updates.",
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
-      "source_blob_sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253",
+      "source_blob_sha1": "996fd9b5efced75d3e044bf4660a7ebb5b3e5b92",
       "source_refs_with_hashes": [
         {
           "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253"
+          "sha1": "996fd9b5efced75d3e044bf4660a7ebb5b3e5b92"
         },
         {
           "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
+          "sha1": "566c6d84149b11b0bbb7a9417094a146b8601f80"
         },
         {
           "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
@@ -6070,12 +6070,12 @@
         {
           "path": "ignition/schemas/operations/pubmed-doi-update-audit-output-r0.schema.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "76f87d62e3492cf5537212438f239821f3ac299a"
+          "sha1": "c0ece5a1a669461f420ff1dab514e3192040b5c0"
         },
         {
           "path": "ignition/tests/test_toolbox_pubmed_doi_update_audit.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "1d12ac333cae6dbe7eb062a6df6e6b7bfcf6501f"
+          "sha1": "aed3ea94c4fb3ede3e1ca20775eecbb718d21e89"
         },
         {
           "path": "ignition/data/operations/toolbox-pubmed-doi-update-c1-evidence-r0.json",
@@ -6662,12 +6662,12 @@
         {
           "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253"
+          "sha1": "996fd9b5efced75d3e044bf4660a7ebb5b3e5b92"
         },
         {
           "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
+          "sha1": "566c6d84149b11b0bbb7a9417094a146b8601f80"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
@@ -8151,17 +8151,17 @@
         ]
       },
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
-      "source_blob_sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23",
+      "source_blob_sha1": "566c6d84149b11b0bbb7a9417094a146b8601f80",
       "source_refs_with_hashes": [
         {
           "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
+          "sha1": "566c6d84149b11b0bbb7a9417094a146b8601f80"
         },
         {
           "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "66364660df815fdff714f723752f25d9a9e2bf92"
+          "sha1": "166d7c0ba9eeefacc899096f812587474e623b38"
         },
         {
           "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
@@ -8186,7 +8186,7 @@
         {
           "path": "ignition/tools/toolbox_pubmed_doi_update_audit.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "35415c29ecbc5e5a95036e110b1e18e5b7bec253"
+          "sha1": "996fd9b5efced75d3e044bf4660a7ebb5b3e5b92"
         },
         {
           "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
@@ -8510,7 +8510,7 @@
         {
           "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "44fcf96e33e8d5b17202b36dff5476264993dc23"
+          "sha1": "566c6d84149b11b0bbb7a9417094a146b8601f80"
         },
         {
           "path": "ignition/tools/toolbox_pubmed_update_link_reader.py",
@@ -8520,7 +8520,7 @@
         {
           "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "66364660df815fdff714f723752f25d9a9e2bf92"
+          "sha1": "166d7c0ba9eeefacc899096f812587474e623b38"
         },
         {
           "path": "ignition/tests/test_toolbox_pubmed_update_link_reader.py",

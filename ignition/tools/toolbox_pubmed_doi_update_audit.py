@@ -48,12 +48,16 @@ def audit(dois: list[str]) -> dict[str, Any]:
     normalized = parse_request(json.dumps({"dois": dois}, ensure_ascii=False).encode("utf-8"))
     resolution = identifier_resolver.resolve(normalized)
     resolution_row = resolution["rows"][0]
-    pmid = resolution_row.get("pmid") if resolution_row.get("identifier_status") == "IDENTIFIER_RESOLVED" else None
+    resolved_pmid = resolution_row.get("pmid") if resolution_row.get("identifier_status") == "IDENTIFIER_RESOLVED" else None
+    pmid = resolved_pmid if isinstance(resolved_pmid, str) and update_reader.PMID_RE.fullmatch(resolved_pmid) else None
 
     inspection = update_reader.inspect([pmid]) if isinstance(pmid, str) else None
-    inspection_row = inspection["rows"][0] if inspection is not None else None
-    if inspection_row is None:
-        update_status = "SKIPPED_NO_EXACT_PMID"
+    inspection_rows = inspection.get("rows") if isinstance(inspection, dict) else None
+    inspection_row = inspection_rows[0] if isinstance(inspection_rows, list) and inspection_rows else None
+    if pmid is None:
+        update_status = "SKIPPED_NO_VALID_PMID"
+    elif not isinstance(inspection_row, dict):
+        update_status = "INSPECTION_UNAVAILABLE"
     elif inspection_row.get("acquisition_status") != "OK":
         update_status = "INSPECTION_UNAVAILABLE"
     elif inspection_row.get("record_status") not in {

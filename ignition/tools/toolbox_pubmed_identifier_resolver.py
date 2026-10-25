@@ -32,6 +32,7 @@ RESPONSE_CHUNK_BYTES = 8 * 1024
 INTER_REQUEST_DELAY_SECONDS = 0.34
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+\Z")
 IDENTIFIER_RE = re.compile(r"[0-9]+\Z")
+PMID_OUTPUT_RE = re.compile(r"[1-9][0-9]{0,11}\Z")
 PMCID_RE = re.compile(r"PMC[0-9]+\Z")
 
 
@@ -131,12 +132,16 @@ def _fetch_one(doi: str) -> dict[str, Any]:
 
 
 def _normalized_identifier(value: Any, pattern: re.Pattern[str]) -> str | None:
-    if isinstance(value, str):
-        return value if pattern.fullmatch(value) else None
-    # NCBI ID Converter serializes PMID values as JSON integers. Preserve the
-    # prior string form while normalizing only positive, bounded numeric PMIDs.
-    if type(value) is int and pattern is IDENTIFIER_RE and 1 <= value <= 999_999_999_999:
-        return str(value)
+    if pattern is IDENTIFIER_RE:
+        if isinstance(value, str):
+            return value if PMID_OUTPUT_RE.fullmatch(value) else None
+        # NCBI ID Converter serializes PMID values as JSON integers. Normalize
+        # only positive, bounded values and keep the downstream reader contract.
+        if type(value) is int and 1 <= value <= 999_999_999_999:
+            return str(value)
+        return None
+    if isinstance(value, str) and pattern.fullmatch(value):
+        return value
     return None
 
 

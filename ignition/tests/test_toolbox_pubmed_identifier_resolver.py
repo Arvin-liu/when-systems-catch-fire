@@ -164,8 +164,8 @@ class PubMedIdentifierResolverTests(unittest.TestCase):
                 self.assertEqual(row["identifier_status"], "IDENTIFIER_RESOLVED")
                 self.assertEqual(row["pmid"], "20466091")
 
-    def test_rejects_invalid_numeric_pmid_values(self) -> None:
-        for pmid in (0, -1, 1_000_000_000_000, True):
+    def test_rejects_invalid_integer_and_string_pmid_values(self) -> None:
+        for pmid in (0, -1, 1_000_000_000_000, True, "0", "001", "1000000000000"):
             with self.subTest(pmid=pmid):
                 response = {"status": "ok", "records": [{"doi": DOI, "pmid": pmid}]}
                 with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(json.dumps(response).encode()))):

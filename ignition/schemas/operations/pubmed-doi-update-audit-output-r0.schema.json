@@ -10,10 +10,10 @@
     "tool_id": {"const": "research.audit_pubmed_updates_from_doi"},
     "tool_version": {"const": "0.1.0"},
     "status": {"const": "COMPLETED_WITH_EXPLICIT_STAGE_OUTCOMES"},
-    "doi": {"type": "string", "minLength": 1},
-    "identifier_resolution": {"type": "object"},
-    "update_link_inspection": {"type": ["object", "null"]},
-    "update_link_status": {"enum": ["SKIPPED_NO_EXACT_PMID", "INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]},
+    "doi": {"type": "string", "maxLength": 128, "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"},
+    "identifier_resolution": {"$ref": "#/$defs/IdentifierResolution"},
+    "update_link_inspection": {"oneOf": [{"$ref": "#/$defs/UpdateLinkInspection"}, {"type": "null"}]},
+    "update_link_status": {"enum": ["SKIPPED_NO_EXACT_PMID", "SKIPPED_NO_VALID_PMID", "INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]},
     "source_code_sha256": {
       "type": "object",
       "additionalProperties": false,
@@ -25,5 +25,97 @@
       }
     },
     "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"update_link_inspection": {"type": "null"}}, "required": ["update_link_inspection"]},
+      "then": {"properties": {"update_link_status": {"enum": ["SKIPPED_NO_EXACT_PMID", "SKIPPED_NO_VALID_PMID"]}}},
+      "else": {"properties": {"update_link_status": {"enum": ["INSPECTION_UNAVAILABLE", "RECORD_NOT_CONFIRMED", "RECORDED_RELATIONS_RETURNED", "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"]}}}
+    }
+  ],
+  "$defs": {
+    "Sha256OrNull": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"type": "null"}]},
+    "PositivePmidOrNull": {"oneOf": [{"type": "string", "pattern": "^[1-9][0-9]{0,11}$"}, {"type": "null"}]},
+    "ResolverRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["doi", "retrieval_timestamp_utc", "source_url", "acquisition_status", "http_status", "response_sha256", "identifier_status", "matched_doi", "pmid", "pmcid"],
+      "properties": {
+        "doi": {"type": "string", "maxLength": 128, "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"},
+        "retrieval_timestamp_utc": {"type": "string", "format": "date-time", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"},
+        "source_url": {"type": "string", "pattern": "^https://pmc\\.ncbi\\.nlm\\.nih\\.gov/tools/idconv/api/v1/articles/\\?ids=.+&format=json$"},
+        "acquisition_status": {"enum": ["OK", "HTTP_ERROR", "NON_JSON_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "REDIRECT_BLOCKED", "NOT_FOUND", "RATE_LIMITED", "NETWORK_ERROR", "INVALID_JSON_RESPONSE", "INVALID_IDCONV_RESPONSE", "UPSTREAM_ERROR"]},
+        "http_status": {"oneOf": [{"type": "integer", "minimum": 100, "maximum": 599}, {"type": "null"}]},
+        "response_sha256": {"$ref": "#/$defs/Sha256OrNull"},
+        "identifier_status": {"enum": ["NOT_AVAILABLE", "NO_MATCH", "UPSTREAM_RECORD_MISMATCH", "MATCHED_WITHOUT_PUBMED_OR_PMC_ID", "IDENTIFIER_RESOLVED"]},
+        "matched_doi": {"type": ["string", "null"], "maxLength": 128},
+        "pmid": {"$ref": "#/$defs/PositivePmidOrNull"},
+        "pmcid": {"type": ["string", "null"], "pattern": "^PMC[0-9]+$"}
+      }
+    },
+    "ResolverSourceHashes": {
+      "type": "object", "additionalProperties": false, "required": ["wrapper"],
+      "properties": {"wrapper": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+    },
+    "IdentifierResolution": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema_version", "tool_id", "tool_version", "status", "doi_count", "resolved_count", "acquisition_failure_count", "rows", "source_code_sha256", "claim_ceiling"],
+      "properties": {
+        "schema_version": {"const": "ignition.pubmed-identifier-resolution-r0"},
+        "tool_id": {"const": "research.resolve_pubmed_identifiers"},
+        "tool_version": {"enum": ["0.1.0", "0.1.1"]},
+        "status": {"enum": ["IDENTIFIERS_RESOLVED", "NO_IDENTIFIERS_RESOLVED", "COMPLETED_WITH_EXPLICIT_FAILURES"]},
+        "doi_count": {"const": 1},
+        "resolved_count": {"type": "integer", "minimum": 0, "maximum": 1},
+        "acquisition_failure_count": {"type": "integer", "minimum": 0, "maximum": 1},
+        "rows": {"type": "array", "minItems": 1, "maxItems": 1, "items": {"$ref": "#/$defs/ResolverRow"}},
+        "source_code_sha256": {"$ref": "#/$defs/ResolverSourceHashes"},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    },
+    "Relation": {
+      "type": "object", "additionalProperties": false, "required": ["ref_type", "related_pmid", "reference_source"],
+      "properties": {
+        "ref_type": {"type": ["string", "null"], "maxLength": 100},
+        "related_pmid": {"$ref": "#/$defs/PositivePmidOrNull"},
+        "reference_source": {"type": ["string", "null"], "maxLength": 2000}
+      }
+    },
+    "UpdateLinkRow": {
+      "type": "object", "additionalProperties": false,
+      "required": ["pmid", "retrieval_timestamp_utc", "source_url", "pubmed_record_url", "acquisition_status", "http_status", "response_sha256", "record_status", "relations", "relations_truncated"],
+      "properties": {
+        "pmid": {"type": "string", "pattern": "^[1-9][0-9]{0,11}$"},
+        "retrieval_timestamp_utc": {"type": "string", "format": "date-time", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"},
+        "source_url": {"type": "string", "pattern": "^https://eutils\\.ncbi\\.nlm\\.nih\\.gov/entrez/eutils/efetch\\.fcgi\\?db=pubmed&id=[1-9][0-9]{0,11}&retmode=xml&tool=IgnitionToolbox$"},
+        "pubmed_record_url": {"type": "string", "pattern": "^https://pubmed\\.ncbi\\.nlm\\.nih\\.gov/[1-9][0-9]{0,11}/$"},
+        "acquisition_status": {"enum": ["OK", "HTTP_ERROR", "NON_XML_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "REDIRECT_BLOCKED", "NOT_FOUND", "RATE_LIMITED", "NETWORK_ERROR", "XML_ENTITY_DECLARATION_REJECTED", "INVALID_XML_RESPONSE"]},
+        "http_status": {"oneOf": [{"type": "integer", "minimum": 100, "maximum": 599}, {"type": "null"}]},
+        "response_sha256": {"$ref": "#/$defs/Sha256OrNull"},
+        "record_status": {"enum": ["NOT_AVAILABLE", "NO_RECORD", "UPSTREAM_RECORD_MISMATCH", "RECORD_FOUND_WITH_RECORDED_RELATIONS", "RECORD_FOUND_NO_RECORDED_RELATIONS"]},
+        "relations": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/Relation"}},
+        "relations_truncated": {"type": "boolean"}
+      }
+    },
+    "UpdateLinkSourceHashes": {
+      "type": "object", "additionalProperties": false, "required": ["wrapper"],
+      "properties": {"wrapper": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+    },
+    "UpdateLinkInspection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema_version", "tool_id", "tool_version", "status", "pmid_count", "records_found", "acquisition_failure_count", "rows", "source_code_sha256", "claim_ceiling"],
+      "properties": {
+        "schema_version": {"const": "ignition.pubmed-update-link-inspection-r0"},
+        "tool_id": {"const": "research.inspect_pubmed_update_links"},
+        "tool_version": {"const": "0.1.0"},
+        "status": {"enum": ["RECORDS_INSPECTED", "NO_RECORDS_FOUND", "COMPLETED_WITH_EXPLICIT_FAILURES"]},
+        "pmid_count": {"const": 1},
+        "records_found": {"type": "integer", "minimum": 0, "maximum": 1},
+        "acquisition_failure_count": {"type": "integer", "minimum": 0, "maximum": 1},
+        "rows": {"type": "array", "minItems": 1, "maxItems": 1, "items": {"$ref": "#/$defs/UpdateLinkRow"}},
+        "source_code_sha256": {"$ref": "#/$defs/UpdateLinkSourceHashes"},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    }
   }
 }
