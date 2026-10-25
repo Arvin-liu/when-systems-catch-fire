@@ -139,6 +139,25 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertFalse(included["execution_authorized"])
 
+    def test_archify_ir_exporter_is_excluded_until_explicitly_allowlisted(self) -> None:
+        task = profile(
+            "canonical-architecture-typed-ir-export",
+            ["UTF-8 JSON stdin object containing exactly one formal_revision lowercase commit-SHA string"],
+            ["typed Archify-shaped derived visualization IR with component, connection, and boundary counts"],
+        )
+        excluded = planner.plan_tool_route(task)
+        included = planner.plan_tool_route(
+            task,
+            include_experimental_tool_ids=["visualization.build_archify_derived_ir"],
+        )
+        self.assertEqual(excluded["decision"], "INCOMPLETE")
+        self.assertEqual(included["decision"], "COMPLETE")
+        self.assertEqual(
+            [row["tool_id"] for row in included["selected_tools"]],
+            ["visualization.build_archify_derived_ir"],
+        )
+        self.assertFalse(included["execution_authorized"])
+
     def test_unknown_experimental_allowlist_id_is_reported(self) -> None:
         result = planner.plan_tool_route(
             profile("unknown-opt-in", ["article cluster ID"], ["source-backed cluster member brief"]),

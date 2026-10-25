@@ -709,6 +709,125 @@
         "Never select for arbitrary code, scientific proof, truth, registry admission, or effectful execution."
       ],
       "claim_ceiling": "A bounded local execution report for one pure symbolic FunctionSpec through Function OS N1-N7, with internal artifact/trace consistency checks only; it does not establish specification truth, empirical or scientific correctness, proof, external validation, security isolation, registry admission, or publication status."
+    },
+    {
+      "tool_id": "visualization.build_archify_derived_ir",
+      "display_name": {
+        "zh": "派生架构 IR 导出器",
+        "en": "Derived architecture IR exporter"
+      },
+      "description": "Build the existing Task149 provider-neutral typed visualization IR from the checked-out canonical architecture source and include the current system-map snapshot digest as context; emit JSON without writing files or invoking a renderer.",
+      "version": "toolbox-wrapper-0.1.0; upstream adapter IGNITION-20260831-149 Step05",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_build_archify_derived_ir.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_build_archify_derived_ir.py --stdin (stdin JSON: {\"formal_revision\":\"<40 lowercase hex SHA>\"})",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_build_archify_derived_ir.py",
+          "role": "READ_ONLY_STDOUT_TOOL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/tools/run_task149_archify_adapter.py",
+          "role": "REUSED_PROVIDER_NEUTRAL_IR_BUILDER"
+        },
+        {
+          "path": "ignition/data/architecture/overall-architecture.json",
+          "role": "CANONICAL_ARCHITECTURE_INPUT"
+        },
+        {
+          "path": "ignition/data/architecture/interactive-system-map.json",
+          "role": "CURRENT_SYSTEM_MAP_CONTEXT_DIGEST"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/run_task149_archify_adapter.py",
+        "ignition/data/architecture/overall-architecture.json",
+        "ignition/data/architecture/interactive-system-map.json"
+      ],
+      "good_for": [
+        "Produce the repository's deterministic typed component/connection/boundary IR as stdout JSON for a separately selected downstream consumer.",
+        "Inspect canonical architecture node and edge coverage together with the exact source-file digests and caller-supplied revision string."
+      ],
+      "not_for": [
+        "Rendering an image, invoking Archify, validating provider delivery, or claiming visual usefulness or visual review.",
+        "Changing canonical architecture files, repairing the separately deferred Task150 geometry delta, or publishing a derived artifact.",
+        "Establishing architecture truth, Current integration, provider admission, or resolution of the caller-supplied revision to the checked-out Git HEAD."
+      ],
+      "only_if": [
+        "The canonical architecture, current system map, and Task149 adapter source are present in the checked-out Ignition repository and pass fixed-path safety checks.",
+        "The caller supplies an exact lowercase 40-character SHA string; the tool records that string but does not resolve or verify it against Git.",
+        "The request is at most 4 KiB and both fixed canonical JSON sources are at most 1 MiB."
+      ],
+      "counterindicated_when": [
+        "The user needs a rendered or visually reviewed system map, fresh provider evidence, or a Current provider integration.",
+        "The requested input requires arbitrary source paths or the caller needs the formal revision independently resolved.",
+        "The task requires the Task150 geometry repair or any aesthetic, architecture-truth, Owner, or scientific claim."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object containing exactly one formal_revision lowercase commit-SHA string"
+      ],
+      "output_types": [
+        "typed Archify-shaped derived visualization IR with component, connection, and boundary counts",
+        "SHA-256 refs for the wrapper, reused builder, canonical architecture source, and system-map context",
+        "provider-invoked false and caller-supplied revision-binding status"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_REPOSITORY_SOURCES",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_build_archify_derived_ir.py",
+          "ignition/tools/run_task149_archify_adapter.py",
+          "ignition/data/architecture/overall-architecture.json",
+          "ignition/data/architecture/interactive-system-map.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Writes only the IR result to stdout; does not create or overwrite repository artifacts.",
+        "The renderer/provider is not imported, contacted, or invoked."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library; no third-party runtime packages"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The projection is local and bounded by fixed source sizes, but no latency or memory benchmark has been established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The registered bounded operation describes a derived view/provider status; this candidate emits typed IR only and never renders or invokes a provider."
+        }
+      ],
+      "fallback": "Use the existing Task149 writer only when an intentional repository artifact write is needed; for a rendered image, separately select and validate an admitted renderer. Do not treat the IR as a visual or canonical architecture result.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_build_archify_derived_ir.py",
+          "ignition/tests/test_task150_step28_owner_adjudication_scope_split.py"
+        ],
+        "negative_controls": [
+          "Moving refs, malformed SHAs, duplicate JSON keys, and requests over 4 KiB fail with no partial stdout.",
+          "The route never invokes Archify or selects the separately deferred Task150 geometry delta; output states provider_invoked=false.",
+          "The output binds four local source digests and explicitly marks formal_revision as caller-supplied and unresolved."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Include only through an explicit experimental-tool allowlist when the task requires typed IR from the fixed canonical architecture source.",
+        "The route proposal never builds or renders the IR; a caller separately invokes the CLI and supplies the revision string.",
+        "Do not select for rendering, provider validation, Task150 geometry repair, architecture truth, or source revision resolution."
+      ],
+      "claim_ceiling": "A deterministic provider-neutral typed IR projection from the checked-out canonical architecture, with a source-hashed system-map context and an unresolved caller-supplied revision string; no external Archify validation/delivery, visual quality, architecture truth, Current integration, provider admission, or publication is inferred."
     }
   ]
 }
