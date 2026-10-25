@@ -679,7 +679,7 @@
         {
           "path": "ignition/data/operations/toolbox-portable-research-episode-real-task-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "72704fe7a0a66aeaa627e300f02bc0cb3ffcab0e"
+          "sha1": "dd4cd0edb03604ea1c40afddb9adf3d9a3f3e613"
         },
         {
           "path": "ignition/docs/operations/portable-research-episode-preflight.md",

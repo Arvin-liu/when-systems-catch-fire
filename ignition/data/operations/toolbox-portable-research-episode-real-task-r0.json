@@ -4,11 +4,11 @@
   "observed_at_utc": "2026-10-25T14:24:07Z",
   "task_binding": {
     "task": "Offline preflight of a portable episode manifest reconstructed from the prior #264 Actions attribution task.",
-    "formal_candidate_head": "fd5b287d83584517909114b1f045e223ac77b0a8",
     "actions_run_id": "40064357026",
     "attempt": 1,
     "run_id_semantics": "CALLER_DECLARED_OFFLINE_ATTRIBUTION_REFERENCE_NOT_AUTHENTICATED_BY_THIS_TOOL",
-    "source_evidence": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json"
+    "source_evidence": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+    "source_package_revision": "fd5b287d83584517909114b1f045e223ac77b0a8"
   },
   "environment": {
     "python_version": "3.9.6",
@@ -81,5 +81,11 @@
     "source_authenticity": "NOT_ESTABLISHED",
     "scientific_validity": "NOT_ESTABLISHED",
     "limitation": "This is a real local invocation over a caller-constructed manifest based on prior #264 task records. The tool validates declarations only; the referenced Actions/run evidence and digest values were not independently authenticated during this invocation."
+  },
+  "execution_context": {
+    "formal_branch": "codex/toolbox-growth-20261025",
+    "git_head_when_invocation_was_run": "fd5b287d83584517909114b1f045e223ac77b0a8",
+    "tool_source_worktree_had_uncommitted_candidate_files": true,
+    "exact_tool_and_schema_identity": "implementation_binding.tool_git_blob_sha1 and implementation_binding.schema_git_blob_sha1"
   }
 }
