@@ -153,6 +153,10 @@
         "reason": "NOT_CURRENT_CALLABLE"
       },
       {
+        "tool_id": "research.compare_publication_metadata_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.coordinate_obligations",
         "reason": "NO_INPUT_TYPE_MATCH"
       },
@@ -235,7 +239,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "198b05a2d4afde5fa5051bba6860d24cc3e156f9"
+      "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
     }
   },
   "route_result": {
@@ -401,6 +405,10 @@
         "reason": "NOT_CURRENT_CALLABLE"
       },
       {
+        "tool_id": "research.compare_publication_metadata_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.coordinate_obligations",
         "reason": "NO_INPUT_TYPE_MATCH"
       },
@@ -483,7 +491,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "198b05a2d4afde5fa5051bba6860d24cc3e156f9"
+      "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
     }
   },
   "execution_authorized": false,

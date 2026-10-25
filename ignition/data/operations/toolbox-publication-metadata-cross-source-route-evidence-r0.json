@@ -1,0 +1,1865 @@
+{
+  "schema_version": "ignition.toolbox-publication-metadata-cross-source-route-evidence-r0",
+  "experiment_id": "ROUTE-20261025-GAP001-05-CROSS-PROVIDER-RETRIEVAL-AND-COMPARISON",
+  "candidate_base": "5940dd1e25142545e2345c0126d1384ebca6121d",
+  "candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831",
+  "source_retrieval_stage": {
+    "task_profile": {
+      "task_id": "retrieve-gap001-05-cross-provider-metadata",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "input_types": [
+        "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records",
+        "JSON stdin object with one to five unique bare DOI identifiers"
+      ],
+      "required_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "per-response SHA-256 and explicit HTTP or network outcome summary",
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields"
+      ],
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ],
+      "allowed_network_hosts": [
+        "api.crossref.org",
+        "api.openalex.org"
+      ]
+    },
+    "route_trials": {
+      "default_light": {
+        "include_experimental_tool_ids": [],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "unmet_outputs": [
+          "input-ordered Crossref metadata comparison rows",
+          "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+          "per-request response SHA-256, HTTP status, and public API usage fields",
+          "per-response SHA-256 and explicit HTTP or network outcome summary"
+        ],
+        "execution_authorized": false
+      },
+      "minimum_sufficient_pair": {
+        "include_experimental_tool_ids": [
+          "research.verify_crossref_metadata",
+          "research.lookup_openalex_work_metadata"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.lookup_openalex_work_metadata",
+          "research.verify_crossref_metadata"
+        ],
+        "unmet_outputs": [],
+        "allowed_network_hosts": [
+          "api.crossref.org",
+          "api.openalex.org"
+        ],
+        "execution_authorized": false
+      },
+      "extra_provider_options_same_permission_context": {
+        "include_experimental_tool_ids": [
+          "research.verify_crossref_metadata",
+          "research.lookup_openalex_work_metadata",
+          "research.resolve_pubmed_identifiers",
+          "research.inspect_pubmed_update_links",
+          "knowledge.assemble_context_packet"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.lookup_openalex_work_metadata",
+          "research.verify_crossref_metadata"
+        ],
+        "unmet_outputs": [],
+        "allowed_network_hosts": [
+          "api.crossref.org",
+          "api.openalex.org"
+        ],
+        "execution_authorized": false
+      }
+    },
+    "default_route_result": {
+      "schema_version": "ignition-tool-route-plan-r0",
+      "task_id": "retrieve-gap001-05-cross-provider-metadata",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+      "allowed_network_hosts": [
+        "api.crossref.org",
+        "api.openalex.org"
+      ],
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "decision": "INCOMPLETE",
+      "selected_tools": [],
+      "required_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "per-response SHA-256 and explicit HTTP or network outcome summary",
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields"
+      ],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields",
+        "per-response SHA-256 and explicit HTTP or network outcome summary"
+      ],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+      "execution_authorized": false,
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
+      }
+    },
+    "route_result": {
+      "schema_version": "ignition-tool-route-plan-r0",
+      "task_id": "retrieve-gap001-05-cross-provider-metadata",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+      "allowed_network_hosts": [
+        "api.crossref.org",
+        "api.openalex.org"
+      ],
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "decision": "COMPLETE",
+      "selected_tools": [
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "JSON stdin object with one to five unique bare DOI identifiers"
+          ],
+          "output_types": [
+            "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+            "per-request response SHA-256, HTTP status, and public API usage fields"
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_openalex_work_metadata.py"
+            ],
+            "write_paths": [],
+            "network": true,
+            "network_hosts": [
+              "api.openalex.org"
+            ],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [],
+          "declared_effect_rank": 1,
+          "pre_invocation_conditions": [
+            "A route proposal has execution_authorized=false and does not validate the caller authority behind its host list.",
+            "A route proposal may include this candidate only when the task explicitly requires OpenAlex Work identity or its provider-reported fields and allowed_network_hosts contains api.openalex.org.",
+            "Every actual invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers.",
+            "Remain excluded unless the candidate ID is explicitly allowlisted and the typed route profile explicitly lists api.openalex.org in allowed_network_hosts.",
+            "Select only when an OpenAlex-specific Work ID or provider-reported field is required; do not include merely to repeat title/year metadata.",
+            "The caller explicitly permits transmitting the supplied public DOI identifiers for this invocation and passes --allow-public-network.",
+            "The invocation uses only the fixed HTTPS host api.openalex.org and a JSON stdin object with one to five unique bare DOI identifiers.",
+            "The route proposal remains non-authoritative; actual invocation consent is checked separately by the CLI flag and task-specific decision."
+          ],
+          "claim_ceiling": "Live OpenAlex selected Work metadata and response-specific usage evidence only. OpenAlex documents is_retracted as a Retraction Watch-derived flag; it does not establish complete retraction coverage, source authenticity, article content, scientific truth, or a provider-wide quality comparison.",
+          "covers_required_outputs": [
+            "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+            "per-request response SHA-256, HTTP status, and public API usage fields"
+          ]
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"
+          ],
+          "output_types": [
+            "input-ordered Crossref metadata comparison rows",
+            "per-response SHA-256 and explicit HTTP or network outcome summary"
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_crossref_metadata_verifier.py",
+              "ignition/evidence-program/tools/run_crossref_verification.py"
+            ],
+            "write_paths": [],
+            "network": true,
+            "network_hosts": [
+              "api.crossref.org"
+            ],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [
+            "ignition/evidence-program/tools/run_crossref_verification.py"
+          ],
+          "declared_effect_rank": 1,
+          "pre_invocation_conditions": [
+            "A route proposal has execution_authorized=false and does not validate the caller authority behind that host list.",
+            "A route proposal may include this candidate only when allowed_network_hosts explicitly contains api.crossref.org; the proposal is not a permission grant.",
+            "Every actual CLI invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers.",
+            "Remain excluded unless the candidate ID is explicitly allowlisted and the typed route profile explicitly lists api.crossref.org in allowed_network_hosts.",
+            "The caller has explicitly approved transmission of the DOI identifiers in this invocation and passes --allow-public-network.",
+            "The public Crossref REST API is reachable from the declared environment.",
+            "The request contains one to ten unique bare DOI identifiers with caller-supplied expected title and year."
+          ],
+          "claim_ceiling": "Live Crossref bibliographic metadata retrieval and normalized title/year comparison only; response hashes bind received bytes, not source authenticity, article contents, scientific truth, or a complete retraction check.",
+          "covers_required_outputs": [
+            "input-ordered Crossref metadata comparison rows",
+            "per-response SHA-256 and explicit HTTP or network outcome summary"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "per-response SHA-256 and explicit HTTP or network outcome summary",
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields"
+      ],
+      "covered_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields",
+        "per-response SHA-256 and explicit HTTP or network outcome summary"
+      ],
+      "unmet_outputs": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+      "execution_authorized": false,
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
+      }
+    },
+    "extra_options_result": {
+      "schema_version": "ignition-tool-route-plan-r0",
+      "task_id": "retrieve-gap001-05-cross-provider-metadata",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+      "allowed_network_hosts": [
+        "api.crossref.org",
+        "api.openalex.org"
+      ],
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "decision": "COMPLETE",
+      "selected_tools": [
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "JSON stdin object with one to five unique bare DOI identifiers"
+          ],
+          "output_types": [
+            "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+            "per-request response SHA-256, HTTP status, and public API usage fields"
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_openalex_work_metadata.py"
+            ],
+            "write_paths": [],
+            "network": true,
+            "network_hosts": [
+              "api.openalex.org"
+            ],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [],
+          "declared_effect_rank": 1,
+          "pre_invocation_conditions": [
+            "A route proposal has execution_authorized=false and does not validate the caller authority behind its host list.",
+            "A route proposal may include this candidate only when the task explicitly requires OpenAlex Work identity or its provider-reported fields and allowed_network_hosts contains api.openalex.org.",
+            "Every actual invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers.",
+            "Remain excluded unless the candidate ID is explicitly allowlisted and the typed route profile explicitly lists api.openalex.org in allowed_network_hosts.",
+            "Select only when an OpenAlex-specific Work ID or provider-reported field is required; do not include merely to repeat title/year metadata.",
+            "The caller explicitly permits transmitting the supplied public DOI identifiers for this invocation and passes --allow-public-network.",
+            "The invocation uses only the fixed HTTPS host api.openalex.org and a JSON stdin object with one to five unique bare DOI identifiers.",
+            "The route proposal remains non-authoritative; actual invocation consent is checked separately by the CLI flag and task-specific decision."
+          ],
+          "claim_ceiling": "Live OpenAlex selected Work metadata and response-specific usage evidence only. OpenAlex documents is_retracted as a Retraction Watch-derived flag; it does not establish complete retraction coverage, source authenticity, article content, scientific truth, or a provider-wide quality comparison.",
+          "covers_required_outputs": [
+            "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+            "per-request response SHA-256, HTTP status, and public API usage fields"
+          ]
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"
+          ],
+          "output_types": [
+            "input-ordered Crossref metadata comparison rows",
+            "per-response SHA-256 and explicit HTTP or network outcome summary"
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_crossref_metadata_verifier.py",
+              "ignition/evidence-program/tools/run_crossref_verification.py"
+            ],
+            "write_paths": [],
+            "network": true,
+            "network_hosts": [
+              "api.crossref.org"
+            ],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [
+            "ignition/evidence-program/tools/run_crossref_verification.py"
+          ],
+          "declared_effect_rank": 1,
+          "pre_invocation_conditions": [
+            "A route proposal has execution_authorized=false and does not validate the caller authority behind that host list.",
+            "A route proposal may include this candidate only when allowed_network_hosts explicitly contains api.crossref.org; the proposal is not a permission grant.",
+            "Every actual CLI invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers.",
+            "Remain excluded unless the candidate ID is explicitly allowlisted and the typed route profile explicitly lists api.crossref.org in allowed_network_hosts.",
+            "The caller has explicitly approved transmission of the DOI identifiers in this invocation and passes --allow-public-network.",
+            "The public Crossref REST API is reachable from the declared environment.",
+            "The request contains one to ten unique bare DOI identifiers with caller-supplied expected title and year."
+          ],
+          "claim_ceiling": "Live Crossref bibliographic metadata retrieval and normalized title/year comparison only; response hashes bind received bytes, not source authenticity, article contents, scientific truth, or a complete retraction check.",
+          "covers_required_outputs": [
+            "input-ordered Crossref metadata comparison rows",
+            "per-response SHA-256 and explicit HTTP or network outcome summary"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "per-response SHA-256 and explicit HTTP or network outcome summary",
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields"
+      ],
+      "covered_outputs": [
+        "input-ordered Crossref metadata comparison rows",
+        "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+        "per-request response SHA-256, HTTP status, and public API usage fields",
+        "per-response SHA-256 and explicit HTTP or network outcome summary"
+      ],
+      "unmet_outputs": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+      "execution_authorized": false,
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
+      }
+    }
+  },
+  "comparison_stage": {
+    "task_profile": {
+      "task_id": "compare-collected-crossref-openalex-title-year-gap001-05",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "input_types": [
+        "UTF-8 JSON stdin up to 262144 bytes with one DOI and exactly one full Crossref verifier result plus one full OpenAlex lookup result, both from adapter version 0.1.0."
+      ],
+      "required_outputs": [
+        "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+        "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+      ],
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ]
+    },
+    "route_trials": {
+      "default_light": {
+        "include_experimental_tool_ids": [],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "execution_authorized": false
+      },
+      "explicit_minimum_sufficient": {
+        "include_experimental_tool_ids": [
+          "research.compare_publication_metadata_snapshots"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.compare_publication_metadata_snapshots"
+        ],
+        "allowed_network_hosts": [],
+        "execution_authorized": false
+      },
+      "extra_provider_and_context_candidates": {
+        "include_experimental_tool_ids": [
+          "research.compare_publication_metadata_snapshots",
+          "research.verify_crossref_metadata",
+          "research.lookup_openalex_work_metadata",
+          "research.inspect_pubmed_update_links",
+          "knowledge.assemble_context_packet"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.compare_publication_metadata_snapshots"
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "execution_authorized": false
+      }
+    },
+    "default_route_result": {
+      "schema_version": "ignition-tool-route-plan-r0",
+      "task_id": "compare-collected-crossref-openalex-title-year-gap001-05",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "decision": "INCOMPLETE",
+      "selected_tools": [],
+      "required_outputs": [
+        "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+        "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+      ],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+        "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+      ],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+      "execution_authorized": false,
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
+      }
+    },
+    "route_result": {
+      "schema_version": "ignition-tool-route-plan-r0",
+      "task_id": "compare-collected-crossref-openalex-title-year-gap001-05",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "decision": "COMPLETE",
+      "selected_tools": [
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "UTF-8 JSON stdin up to 262144 bytes with one DOI and exactly one full Crossref verifier result plus one full OpenAlex lookup result, both from adapter version 0.1.0."
+          ],
+          "output_types": [
+            "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+            "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "LOCAL_READ_ONLY_STDIN_STDOUT",
+          "permissions": {
+            "read_paths": [],
+            "write_paths": [],
+            "network": false,
+            "network_hosts": [],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [],
+          "declared_effect_rank": 0,
+          "pre_invocation_conditions": [
+            "A local, read-only comparison with no additional network access is appropriate.",
+            "Both complete result objects came from the supported 0.1.0 Crossref and OpenAlex adapters for one identical DOI.",
+            "Do not route for a single-provider lookup, source authenticity, article-content, retraction, or scientific-claim adjudication.",
+            "Remain excluded unless explicitly allowlisted for a task that already has both supported source-result objects and specifically requires title/year comparison.",
+            "The caller specifically needs title/year comparison after source acquisition; the source calls themselves require separate permission and routing.",
+            "The route planner only proposes this local comparison; it does not authorize the prior public Crossref or OpenAlex calls."
+          ],
+          "claim_ceiling": "Agreement or disagreement in title/year fields returned by caller-supplied Crossref and OpenAlex result objects only. The comparator does not authenticate inputs or providers, establish publication identity, verify article contents, decide scientific truth, or reconcile retraction status.",
+          "covers_required_outputs": [
+            "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+            "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+          ]
+        }
+      ],
+      "required_outputs": [
+        "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+        "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+      ],
+      "covered_outputs": [
+        "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+        "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+      ],
+      "unmet_outputs": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+      "execution_authorized": false,
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
+      }
+    },
+    "extra_options_result": {
+      "schema_version": "ignition-tool-route-plan-r0",
+      "task_id": "compare-collected-crossref-openalex-title-year-gap001-05",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "decision": "COMPLETE",
+      "selected_tools": [
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+          "availability": "EXPERIMENTAL_AVAILABLE",
+          "input_types": [
+            "UTF-8 JSON stdin up to 262144 bytes with one DOI and exactly one full Crossref verifier result plus one full OpenAlex lookup result, both from adapter version 0.1.0."
+          ],
+          "output_types": [
+            "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+            "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+          ],
+          "execution_mode": "READ_ONLY_RUN",
+          "permission_mode": "LOCAL_READ_ONLY_STDIN_STDOUT",
+          "permissions": {
+            "read_paths": [],
+            "write_paths": [],
+            "network": false,
+            "network_hosts": [],
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          },
+          "explicit_owner_authorization_required": false,
+          "dependencies": [],
+          "declared_effect_rank": 0,
+          "pre_invocation_conditions": [
+            "A local, read-only comparison with no additional network access is appropriate.",
+            "Both complete result objects came from the supported 0.1.0 Crossref and OpenAlex adapters for one identical DOI.",
+            "Do not route for a single-provider lookup, source authenticity, article-content, retraction, or scientific-claim adjudication.",
+            "Remain excluded unless explicitly allowlisted for a task that already has both supported source-result objects and specifically requires title/year comparison.",
+            "The caller specifically needs title/year comparison after source acquisition; the source calls themselves require separate permission and routing.",
+            "The route planner only proposes this local comparison; it does not authorize the prior public Crossref or OpenAlex calls."
+          ],
+          "claim_ceiling": "Agreement or disagreement in title/year fields returned by caller-supplied Crossref and OpenAlex result objects only. The comparator does not authenticate inputs or providers, establish publication identity, verify article contents, decide scientific truth, or reconcile retraction status.",
+          "covers_required_outputs": [
+            "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+            "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+          ]
+        }
+      ],
+      "required_outputs": [
+        "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+        "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+      ],
+      "covered_outputs": [
+        "Field-level title and publication-year AGREE, DISAGREE, or INSUFFICIENT status with the observed values per adapter.",
+        "Per-provider acquisition outcome and response SHA-256 copied from each adapter result; no raw provider response or article content."
+      ],
+      "unmet_outputs": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.validate_agent_episode_binding",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "collaboration.verify_handoff_artifact_files",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "executor.reference_conformance",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "external.live_invocation",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "foundation.batch_resolve_current_asset_references",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.read_current_asset_card",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "foundation.resolve_current_asset",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "ignition.recover_current_state",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.collide_object",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "knowledge.project_results",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.read_foundation",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_claim",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "knowledge.validate_evidence_link",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "language_thought.project_bounded_meaning",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.inspect_repository",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.validate_checkpoint",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method",
+          "reason": "EXECUTION_MODE_NOT_ALLOWED"
+        },
+        {
+          "tool_id": "repository.apply_iteration_method_1_3",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.coordinate_obligations",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.inspect_pubmed_update_links",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.reos_full",
+          "reason": "NOT_CURRENT_CALLABLE"
+        },
+        {
+          "tool_id": "research.resolve_pubmed_identifiers",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.validate_reos_light",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "runtime.inspect_declared_pack_catalog",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.build_archify_derived_ir",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "visualization.render_derived_system_view",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.apply_editorial_method",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "writing.validate_publication_surface",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+      "execution_authorized": false,
+      "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831"
+      }
+    }
+  },
+  "real_task_invocations": [
+    {
+      "tool_id": "research.verify_crossref_metadata",
+      "response_sha256": "3f2f32d42cd289de9e36d00cfa5a97906e09df22fc78a1d4dba9f2241c222e1c",
+      "status": "ALL_METADATA_MATCHED"
+    },
+    {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "response_sha256": "2991ddc93727ea8ff31682a6f9aa10e10362905c42e10921857a3062396a9372",
+      "status": "EXACT_DOI_WORKS_RESOLVED"
+    },
+    {
+      "tool_id": "research.compare_publication_metadata_snapshots",
+      "status": "METADATA_FIELDS_AGREE"
+    }
+  ],
+  "interpretation": "The actual task was routed in two stages. The public retrieval stage selects both provider adapters because the task requires outputs from both; its host allowlist is limited to api.crossref.org and api.openalex.org. The local comparison stage selects only the comparator after those outputs exist. Default light routing leaves each stage incomplete, while adding PubMed/context candidates does not change selected tools. Both route plans remain proposals with execution_authorized=false; public calls were separately made through explicit CLI flags."
+}

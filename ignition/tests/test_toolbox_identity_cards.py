@@ -246,11 +246,12 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             noaa_co2["tool_id"],
             batch["tool_id"],
             "collaboration.verify_handoff_artifact_files",
+            "research.compare_publication_metadata_snapshots",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
-        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet"} for card in candidates))
+        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], openalex["tool_id"], updates["tool_id"], "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots"} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         self.assertEqual(batch["execution_mode"], "READ_ONLY_RUN")

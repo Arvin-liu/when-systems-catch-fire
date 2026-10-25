@@ -788,6 +788,58 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
 
+    def test_cross_source_metadata_comparator_is_default_off_and_opt_in(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "research.compare_publication_metadata_snapshots"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile(
+            "compare-collected-crossref-openalex-title-year",
+            card["accepted_input_types"],
+            card["output_types"],
+        )
+
+        default = planner.plan_tool_route(task)
+        opt_in = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        receipt = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-publication-metadata-cross-source-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+        self.assertEqual(opt_in["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opt_in["selected_tools"]], [tool_id])
+        self.assertEqual(opt_in["allowed_network_hosts"], [])
+        self.assertFalse(opt_in["execution_authorized"])
+        self.assertFalse(opt_in["selected_tools"][0]["permissions"]["network"])
+        comparison = receipt["comparison_stage"]
+        self.assertEqual(comparison["default_route_result"]["decision"], "INCOMPLETE")
+        self.assertEqual(comparison["route_result"]["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in comparison["route_result"]["selected_tools"]], [tool_id])
+        self.assertFalse(comparison["route_result"]["execution_authorized"])
+        self.assertEqual(
+            comparison["route_result"]["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+        retrieval = receipt["source_retrieval_stage"]
+        self.assertEqual(retrieval["route_trials"]["default_light"]["decision"], "INCOMPLETE")
+        self.assertEqual(
+            set(retrieval["route_trials"]["minimum_sufficient_pair"]["selected_tool_ids"]),
+            {"research.verify_crossref_metadata", "research.lookup_openalex_work_metadata"},
+        )
+        self.assertEqual(
+            retrieval["route_trials"]["minimum_sufficient_pair"]["allowed_network_hosts"],
+            ["api.crossref.org", "api.openalex.org"],
+        )
+        self.assertEqual(
+            retrieval["route_trials"]["extra_provider_options_same_permission_context"]["selected_tool_ids"],
+            retrieval["route_trials"]["minimum_sufficient_pair"]["selected_tool_ids"],
+        )
+        self.assertFalse(retrieval["route_result"]["execution_authorized"])
+
 
 if __name__ == "__main__":
     unittest.main()
