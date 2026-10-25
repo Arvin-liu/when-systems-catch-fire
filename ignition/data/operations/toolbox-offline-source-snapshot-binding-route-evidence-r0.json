@@ -68,5 +68,25 @@
     "execution_authorized": false,
     "network": false,
     "repository_write_paths": []
-  }
+  },
+  "catalog_replay": {
+    "observed_at_utc": "2026-10-25T22:53:36Z",
+    "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
+    "candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
+    "route_trials_replayed": 2,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false
+  },
+  "catalog_replay_history": [
+    {
+      "observed_at_utc": "2026-10-25T22:52:47Z",
+      "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
+      "candidate_catalog_git_blob_sha1": "8f3384fda573a43bc7cdd8564798e99f6afc026d",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Look up bounded OpenAlex Work metadata by caller-supplied DOI, stdout only.
+"""Look up bounded OpenAlex Work metadata and location records by DOI, stdout only.
 
 The optional adapter makes one fixed-host public GET per invocation. It
 returns a small selected projection and a digest, never stores the response,
@@ -17,10 +17,10 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 API_BASE = "https://api.openalex.org/works"
 API_HOST = "api.openalex.org"
 MAX_REQUEST_BYTES = 16 * 1024
@@ -31,13 +31,16 @@ MAX_RESPONSE_DURATION_SECONDS = 7
 REQUEST_TIMEOUT_SECONDS = 5
 RESPONSE_CHUNK_BYTES = 8 * 1024
 MAX_RESULTS = 100
-SELECT_FIELDS = "id,doi,display_name,publication_year,type,is_retracted"
+MAX_LOCATIONS_PER_WORK = 25
+MAX_LOCATION_TEXT_LENGTH = 2048
+SELECT_FIELDS = "id,doi,display_name,publication_year,type,is_retracted,open_access,locations,best_oa_location"
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+\Z")
 OPENALEX_WORK_ID_RE = re.compile(r"https://openalex\.org/W[0-9]+\Z")
 CLAIM_CEILING = (
-    "OpenAlex Work metadata retrieved in this response only; an OpenAlex ID or is_retracted flag "
-    "does not establish source authenticity, complete coverage, article content, scientific truth, "
-    "or authoritative retraction status."
+    "OpenAlex Work metadata and provider-reported open-access/location fields in this response only. "
+    "A reported URL, license, access status, or is_retracted flag does not establish URL availability, "
+    "legal reuse permission, source authenticity, complete coverage, article content, scientific truth, "
+    "or authoritative retraction status. Returned URLs are never requested."
 )
 
 
@@ -215,7 +218,111 @@ def _valid_work(work: Dict[str, Any]) -> bool:
         return False
     if work.get("is_retracted") is not None and type(work.get("is_retracted")) is not bool:
         return False
+    if "locations" in work:
+        locations = work.get("locations")
+        if locations is not None and (
+            not isinstance(locations, list)
+            or any(not _valid_location(location) for location in locations)
+        ):
+            return False
+    if "best_oa_location" in work and work.get("best_oa_location") is not None:
+        if not _valid_location(work["best_oa_location"]):
+            return False
+    if "open_access" in work and work.get("open_access") is not None:
+        if not _valid_open_access(work["open_access"]):
+            return False
     return True
+
+
+def _valid_optional_text(value: Any, max_length: int = MAX_LOCATION_TEXT_LENGTH) -> bool:
+    return value is None or (isinstance(value, str) and len(value) <= max_length)
+
+
+def _valid_location(location: Any) -> bool:
+    if not isinstance(location, dict):
+        return False
+    for key in ("id", "landing_page_url", "pdf_url", "license", "version"):
+        if not _valid_optional_text(location.get(key)):
+            return False
+    if location.get("is_oa") is not None and type(location.get("is_oa")) is not bool:
+        return False
+    source = location.get("source")
+    if source is not None:
+        if not isinstance(source, dict):
+            return False
+        for key, limit in (("id", 256), ("display_name", 512), ("type", 128)):
+            if not _valid_optional_text(source.get(key), limit):
+                return False
+    return True
+
+
+def _valid_open_access(value: Any) -> bool:
+    if not isinstance(value, dict):
+        return False
+    for key in ("is_oa", "any_repository_has_fulltext"):
+        if value.get(key) is not None and type(value.get(key)) is not bool:
+            return False
+    if not _valid_optional_text(value.get("oa_status"), 64):
+        return False
+    return _valid_optional_text(value.get("oa_url"))
+
+
+def _safe_https_url(value: Any) -> Tuple[Optional[str], bool]:
+    if value is None:
+        return None, False
+    if not isinstance(value, str) or len(value) > MAX_LOCATION_TEXT_LENGTH:
+        return None, True
+    try:
+        parsed = urllib.parse.urlsplit(value)
+        port = parsed.port
+    except ValueError:
+        return None, True
+    if (
+        parsed.scheme.casefold() != "https"
+        or not parsed.hostname
+        or parsed.username is not None
+        or parsed.password is not None
+        or port not in (None, 443)
+        or any(ord(char) < 32 for char in value)
+    ):
+        return None, True
+    return value, False
+
+
+def _project_location(location: Optional[Dict[str, Any]]) -> Tuple[Optional[Dict[str, Any]], int]:
+    if location is None:
+        return None, 0
+    landing_page_url, unsafe_landing = _safe_https_url(location.get("landing_page_url"))
+    pdf_url, unsafe_pdf = _safe_https_url(location.get("pdf_url"))
+    source = location.get("source")
+    projected_source = None
+    if isinstance(source, dict):
+        projected_source = {
+            "id": source.get("id"),
+            "display_name": source.get("display_name"),
+            "type": source.get("type"),
+        }
+    return {
+        "id": location.get("id"),
+        "is_oa": location.get("is_oa"),
+        "landing_page_url": landing_page_url,
+        "pdf_url": pdf_url,
+        "source": projected_source,
+        "license": location.get("license"),
+        "version": location.get("version"),
+    }, int(unsafe_landing) + int(unsafe_pdf)
+
+
+def _project_open_access(value: Optional[Dict[str, Any]]) -> Tuple[Optional[Dict[str, Any]], int]:
+    if value is None:
+        return None, 0
+    oa_url, unsafe_url = _safe_https_url(value.get("oa_url"))
+    return {
+        "is_oa": value.get("is_oa"),
+        "oa_status": value.get("oa_status"),
+        "oa_url": oa_url,
+        "any_repository_has_fulltext": value.get("any_repository_has_fulltext"),
+    }, int(unsafe_url)
 
 
 def _parse_response(body: bytes) -> Dict[str, Any]:
@@ -270,6 +377,18 @@ def _project_row(doi: str, works: List[Dict[str, Any]], total_count: Optional[in
             "note": "A DOI filter hit can include a DOI recorded at a work location; no exact primary DOI match was selected.",
         }
     work = exact[0]
+    raw_locations = work.get("locations")
+    projected_locations: Optional[List[Dict[str, Any]]] = None
+    unsafe_location_url_count = 0
+    if isinstance(raw_locations, list):
+        projected_locations = []
+        for location in raw_locations[:MAX_LOCATIONS_PER_WORK]:
+            projected, unsafe_count = _project_location(location)
+            if projected is not None:
+                projected_locations.append(projected)
+            unsafe_location_url_count += unsafe_count
+    best_oa_location, unsafe_best_url_count = _project_location(work.get("best_oa_location"))
+    open_access, unsafe_oa_url_count = _project_open_access(work.get("open_access"))
     return {
         "requested_doi": doi,
         "status": "EXACT_PRIMARY_DOI_MATCH",
@@ -279,6 +398,18 @@ def _project_row(doi: str, works: List[Dict[str, Any]], total_count: Optional[in
         "publication_year": work.get("publication_year"),
         "type": work.get("type"),
         "is_retracted": work.get("is_retracted"),
+        "location_metadata_status": "PROVIDER_REPORTED" if isinstance(raw_locations, list) else "NOT_RETURNED",
+        "openalex_locations_count": len(raw_locations) if isinstance(raw_locations, list) else None,
+        "openalex_locations_returned_count": len(projected_locations) if projected_locations is not None else None,
+        "openalex_locations_truncated": bool(
+            isinstance(raw_locations, list) and len(raw_locations) > MAX_LOCATIONS_PER_WORK
+        ),
+        "openalex_locations": projected_locations,
+        "openalex_best_oa_location": best_oa_location,
+        "openalex_open_access": open_access,
+        "omitted_unsafe_location_url_count": (
+            unsafe_location_url_count + unsafe_best_url_count + unsafe_oa_url_count
+        ),
     }
 
 

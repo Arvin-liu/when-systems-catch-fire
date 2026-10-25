@@ -560,7 +560,8 @@ class AdaptiveToolRouteTests(unittest.TestCase):
     def test_openalex_work_metadata_lookup_is_opt_in_and_complements_crossref(self) -> None:
         openalex_input = "JSON stdin object with one to five unique bare DOI identifiers"
         openalex_outputs = [
-            "input-ordered OpenAlex Work ID and selected metadata rows including the provider-reported is_retracted signal",
+            "input-ordered OpenAlex Work ID and selected bibliographic metadata rows including the provider-reported is_retracted signal",
+            "OpenAlex-reported open-access summary, best OA location, and up to 25 sanitized location records per matched Work; provider count and truncation state remain explicit",
             "per-request response SHA-256, HTTP status, and public API usage fields",
         ]
         task = profile("openalex-work-metadata", [openalex_input], openalex_outputs)
@@ -1135,7 +1136,8 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             (IGNITION_ROOT / "data/operations/toolbox-pubmed-doi-update-route-evidence-r1.json").read_text(encoding="utf-8")
         )
         current_catalog_hash = planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes())
-        self.assertEqual(evidence["candidate_catalog_git_blob_sha1"], current_catalog_hash)
+        self.assertEqual(evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"], current_catalog_hash)
+        self.assertTrue(evidence["catalog_replay"]["all_expected_decisions_reproduced"])
         self.assertEqual(evidence["summary"]["execution_authorized"], False)
         for trial in evidence["route_trials"]:
             with self.subTest(scenario=trial["scenario"]):
@@ -1175,9 +1177,10 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
         self.assertEqual(
-            evidence["candidate_catalog_git_blob_sha1"],
+            evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
+        self.assertTrue(evidence["catalog_replay"]["all_expected_decisions_reproduced"])
         self.assertEqual(evidence["summary"]["execution_authorized"], False)
         for trial in evidence["route_trials"]:
             with self.subTest(scenario=trial["scenario"]):
@@ -1217,9 +1220,10 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
         self.assertEqual(
-            evidence["candidate_catalog_git_blob_sha1"],
+            evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
+        self.assertTrue(evidence["catalog_replay"]["all_expected_decisions_reproduced"])
         self.assertFalse(evidence["summary"]["execution_authorized"])
         for trial in evidence["route_trials"]:
             with self.subTest(scenario=trial["scenario"]):

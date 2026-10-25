@@ -30,6 +30,40 @@ WORK = {
     "publication_year": 2021,
     "type": "article",
     "is_retracted": False,
+    "open_access": {
+        "is_oa": True,
+        "oa_status": "green",
+        "oa_url": "https://repository.example.org/paper.pdf",
+        "any_repository_has_fulltext": True,
+    },
+    "best_oa_location": {
+        "id": "https://openalex.org/locations/L123",
+        "is_oa": True,
+        "landing_page_url": "https://repository.example.org/paper",
+        "pdf_url": "https://repository.example.org/paper.pdf",
+        "source": {
+            "id": "https://openalex.org/S123",
+            "display_name": "Example Repository",
+            "type": "repository",
+        },
+        "license": "cc-by",
+        "version": "acceptedVersion",
+    },
+    "locations": [
+        {
+            "id": "https://openalex.org/locations/L123",
+            "is_oa": True,
+            "landing_page_url": "https://repository.example.org/paper",
+            "pdf_url": "https://repository.example.org/paper.pdf",
+            "source": {
+                "id": "https://openalex.org/S123",
+                "display_name": "Example Repository",
+                "type": "repository",
+            },
+            "license": "cc-by",
+            "version": "acceptedVersion",
+        }
+    ],
 }
 
 
@@ -98,15 +132,71 @@ class OpenAlexWorkMetadataTests(unittest.TestCase):
         self.assertEqual(timeout, REQUEST_TIMEOUT_SECONDS)
         query = parse_qs(parsed.query)
         self.assertEqual(query["filter"], ["doi:" + DOI])
-        self.assertEqual(query["select"], ["id,doi,display_name,publication_year,type,is_retracted"])
+        self.assertEqual(query["select"], [TOOL.SELECT_FIELDS])
         self.assertEqual(result["request_count"], 1)
         self.assertEqual(result["status"], "EXACT_DOI_WORKS_RESOLVED")
         self.assertEqual(result["rows"][0]["status"], "EXACT_PRIMARY_DOI_MATCH")
         self.assertEqual(result["rows"][0]["openalex_id"], WORK["id"])
         self.assertFalse(result["rows"][0]["is_retracted"])
+        row = result["rows"][0]
+        self.assertEqual(row["location_metadata_status"], "PROVIDER_REPORTED")
+        self.assertEqual(row["openalex_locations_count"], 1)
+        self.assertEqual(row["openalex_locations_returned_count"], 1)
+        self.assertFalse(row["openalex_locations_truncated"])
+        self.assertEqual(row["openalex_locations"][0]["pdf_url"], "https://repository.example.org/paper.pdf")
+        self.assertEqual(row["openalex_best_oa_location"]["source"]["display_name"], "Example Repository")
+        self.assertEqual(row["openalex_open_access"]["oa_status"], "green")
+        self.assertEqual(row["omitted_unsafe_location_url_count"], 0)
         self.assertEqual(len(result["response_sha256"]), 64)
         self.assertEqual(result["api_usage"]["meta"]["cost"], 0.0001)
         self.assertNotIn("abstract", json.dumps(result))
+
+    def test_location_projection_drops_non_https_and_credential_urls_without_fetching_them(self) -> None:
+        work = json.loads(json.dumps(WORK))
+        work["locations"][0]["landing_page_url"] = "http://repository.example.org/paper"
+        work["locations"][0]["pdf_url"] = "https://user:secret@repository.example.org/paper.pdf"
+        work["best_oa_location"]["pdf_url"] = "http://repository.example.org/paper.pdf"
+        work["open_access"]["oa_url"] = "http://repository.example.org/paper.pdf"
+        body = json.dumps({"meta": {"count": 1}, "results": [work]}).encode("utf-8")
+        opener = FakeOpener(FakeResponse(body))
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=opener):
+            result = lookup([DOI])
+        row = result["rows"][0]
+        self.assertIsNone(row["openalex_locations"][0]["landing_page_url"])
+        self.assertIsNone(row["openalex_locations"][0]["pdf_url"])
+        self.assertIsNone(row["openalex_best_oa_location"]["pdf_url"])
+        self.assertIsNone(row["openalex_open_access"]["oa_url"])
+        self.assertEqual(row["omitted_unsafe_location_url_count"], 4)
+        self.assertEqual(len(opener.calls), 1)
+
+    def test_location_projection_caps_returned_records_and_preserves_provider_count(self) -> None:
+        work = json.loads(json.dumps(WORK))
+        work["locations"] = [dict(WORK["locations"][0], id="https://openalex.org/locations/L{}".format(i)) for i in range(30)]
+        body = json.dumps({"meta": {"count": 1}, "results": [work]}).encode("utf-8")
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(body))):
+            result = lookup([DOI])
+        row = result["rows"][0]
+        self.assertEqual(row["openalex_locations_count"], 30)
+        self.assertEqual(row["openalex_locations_returned_count"], TOOL.MAX_LOCATIONS_PER_WORK)
+        self.assertTrue(row["openalex_locations_truncated"])
+
+    def test_malformed_location_projection_fails_closed_and_missing_fields_remain_explicit(self) -> None:
+        malformed = json.loads(json.dumps(WORK))
+        malformed["locations"] = {"unexpected": "not-an-array"}
+        body = json.dumps({"meta": {"count": 1}, "results": [malformed]}).encode("utf-8")
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(body))):
+            invalid = lookup([DOI])
+        self.assertEqual(invalid["status"], "COMPLETED_WITH_EXPLICIT_FAILURES")
+        self.assertEqual(invalid["rows"][0]["status"], "INVALID_OPENALEX_WORK_RECORD")
+
+        work_without_locations = {key: value for key, value in WORK.items() if key not in {"locations", "best_oa_location", "open_access"}}
+        body = json.dumps({"meta": {"count": 1}, "results": [work_without_locations]}).encode("utf-8")
+        with patch.object(TOOL.urllib.request, "build_opener", return_value=FakeOpener(FakeResponse(body))):
+            missing = lookup([DOI])
+        row = missing["rows"][0]
+        self.assertEqual(row["location_metadata_status"], "NOT_RETURNED")
+        self.assertIsNone(row["openalex_locations"])
+        self.assertIsNone(row["openalex_open_access"])
 
     def test_no_network_occurs_without_per_call_flag(self) -> None:
         opener = FakeOpener()
