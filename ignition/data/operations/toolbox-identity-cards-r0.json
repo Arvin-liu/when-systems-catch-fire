@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
-    "candidate_count": 9
+    "blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
+    "candidate_count": 10
   },
   "cards": [
     {
@@ -376,7 +376,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -509,7 +509,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -777,7 +777,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -908,7 +908,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f"
+          "sha1": "246d944e566a113ff4956d9f6d1431eca976933c"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -917,7 +917,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1177,7 +1177,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2378,6 +2378,134 @@
       "router_selectable_by_default": false
     },
     {
+      "tool_id": "research.resolve_pubmed_identifiers",
+      "display_name": {
+        "zh": "PubMed/PMC DOI 标识符解析器",
+        "en": "PubMed/PMC DOI identifier resolver"
+      },
+      "description": "Resolve caller-supplied bare DOIs to matching PMID and PMCID identifiers through the fixed PMC ID Converter API.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; NCBI PMC ID Converter service terms apply, and no license for underlying record metadata is asserted. API documentation: https://pmc.ncbi.nlm.nih.gov/tools/idconv/.",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_identifier_resolver.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "role": "BOUNDED_FIXED_HOST_CLI"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
+          "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Mapping caller-supplied DOI identifiers to PubMed PMID and PMC PMCID values when those identifiers are returned by NCBI's ID Converter.",
+        "Retaining per-DOI source response hashes, HTTP outcomes, and explicit no-match results.",
+        "Adding an NCBI/PMC identifier lookup alongside a separately requested Crossref DOI metadata comparison."
+      ],
+      "not_for": [
+        "Retrieving article full text, abstracts, publisher pages, or arbitrary URLs.",
+        "Establishing that a paper is authentic, scientifically correct, retracted, or supports a claim.",
+        "Treating a missing PMID or PMCID as proof that a DOI or article does not exist.",
+        "Adding or correcting repository records or registering scientific sources."
+      ],
+      "only_if": [
+        "The caller provides one to ten unique bare DOI identifiers and explicitly permits sending those DOI identifiers to the public API for this invocation.",
+        "The caller invokes the CLI with --allow-public-network.",
+        "The exact fixed host pmc.ncbi.nlm.nih.gov is allowed by the actual invocation environment; route context alone is not authority.",
+        "The PMC ID Converter endpoint is reachable and returns a supported JSON response."
+      ],
+      "counterindicated_when": [
+        "A DOI or its presence in task context is confidential or must not be sent to a public service.",
+        "Network access is unavailable, disallowed, or not explicitly approved for this invocation.",
+        "The task requires article-content review, source-authenticity review, retraction adjudication, or scientific assessment."
+      ],
+      "accepted_input_types": [
+        "JSON stdin object with one to ten unique bare DOI identifiers"
+      ],
+      "output_types": [
+        "input-ordered PubMed/PMC identifier resolution rows",
+        "per-response SHA-256 and explicit HTTP or network outcome summary"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_pubmed_identifier_resolver.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "pmc.ncbi.nlm.nih.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked with --allow-public-network, sends at most ten HTTPS GET requests to the fixed pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/ endpoint; only the DOI identifier and response-format parameter are sent.",
+        "Uses no redirects, secrets, API key, billing, or arbitrary URL. Returns a compact JSON receipt on stdout and validation errors on stderr; does not create or modify repository files.",
+        "Applies a five-second socket timeout, seven-second response-body budget checked between and after bounded 8 KiB reads, a 128 KiB response cap, and a serial 0.34-second inter-request delay; no retries are performed."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable latency, bandwidth, service-availability, or compute-cost profile has been measured; the wrapper has a maximum of ten serial fixed-host lookups and bounded response handling."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Crossref compares caller-supplied DOI title/year expectations with Crossref metadata; this tool maps DOI identifiers to NCBI PMID/PMCID values and does not verify title or year."
+        }
+      ],
+      "fallback": "If live network use is not approved or fails, preserve the explicit NOT_RUN or acquisition failure and use the official PubMed/PMC interface manually only when the caller separately authorizes that lookup; never infer an absent record from an unavailable response.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_pubmed_identifier_resolver.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network makes no request and emits no result.",
+          "Reject URLs, malformed or duplicate DOI identifiers, duplicate JSON keys, and batches above ten before network access.",
+          "Only pmc.ncbi.nlm.nih.gov is contacted; redirects, non-JSON, oversized responses, HTTP errors, timeout, malformed JSON, mismatched records, and invalid identifiers remain explicit outcomes.",
+          "A no-match response yields no invented PMID/PMCID; no repository files are written."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the candidate ID is explicitly allowlisted and the typed route profile explicitly lists pmc.ncbi.nlm.nih.gov in allowed_network_hosts.",
+        "A route proposal has execution_authorized=false and does not validate the caller authority behind that host list.",
+        "Every actual CLI invocation separately requires --allow-public-network and a task-specific decision to transmit the supplied DOI identifiers."
+      ],
+      "claim_ceiling": "DOI-to-PMID/PMCID identifier lookup from the live PMC ID Converter response only; response hashes bind received bytes, not source authenticity, article content, bibliographic accuracy, scientific truth, retraction status, or complete PubMed/PMC coverage.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "2cb5117e19bd9b30b594404a84def2e4aeb7a1de",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_pubmed_identifier_resolver.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "2cb5117e19bd9b30b594404a84def2e4aeb7a1de"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pubmed_identifier_resolver.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "5c4a93069dbfb5fa7c0f8bafdf06579567280261"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
       "tool_id": "research.validate_evidence_program_snapshot",
       "display_name": {
         "zh": "科研证据计划快照校验器",
@@ -2509,7 +2637,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2757,7 +2885,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2907,7 +3035,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3054,7 +3182,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "bbb7bcb3e63c735bd90824961aa777fdafeeb51f",
+      "candidate_catalog_blob_sha1": "246d944e566a113ff4956d9f6d1431eca976933c",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3391,6 +3519,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 29,
+  "card_count": 30,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }

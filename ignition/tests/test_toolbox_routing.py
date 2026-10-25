@@ -274,6 +274,59 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             result["rejected_candidates"],
         )
 
+    def test_pubmed_identifier_lookup_is_opt_in_and_complements_crossref(self) -> None:
+        pubmed_input = "JSON stdin object with one to ten unique bare DOI identifiers"
+        crossref_input = "UTF-8 JSON stdin object with one to ten unique DOI, expected-title, expected-year records"
+        task = profile(
+            "doi-index-identifiers",
+            [pubmed_input],
+            ["input-ordered PubMed/PMC identifier resolution rows", "per-response SHA-256 and explicit HTTP or network outcome summary"],
+        )
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+
+        no_host = planner.plan_tool_route(
+            task, include_experimental_tool_ids=["research.resolve_pubmed_identifiers"],
+        )
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": "research.resolve_pubmed_identifiers", "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+
+        pubmed_route = planner.plan_tool_route(
+            profile("doi-index-identifiers", [pubmed_input], task["required_outputs"], allowed_network_hosts=["pmc.ncbi.nlm.nih.gov"]),
+            include_experimental_tool_ids=["research.resolve_pubmed_identifiers", "runtime.inspect_declared_pack_catalog"],
+        )
+        self.assertEqual(pubmed_route["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in pubmed_route["selected_tools"]], ["research.resolve_pubmed_identifiers"])
+        self.assertIn(
+            {"tool_id": "runtime.inspect_declared_pack_catalog", "reason": "NO_INPUT_TYPE_MATCH"},
+            pubmed_route["rejected_candidates"],
+        )
+        self.assertFalse(pubmed_route["execution_authorized"])
+
+        combined = planner.plan_tool_route(
+            profile(
+                "crossref-plus-pubmed-identifiers",
+                [crossref_input, pubmed_input],
+                [
+                    "input-ordered Crossref metadata comparison rows",
+                    "input-ordered PubMed/PMC identifier resolution rows",
+                ],
+                allowed_network_hosts=["api.crossref.org", "pmc.ncbi.nlm.nih.gov"],
+            ),
+            include_experimental_tool_ids=["research.resolve_pubmed_identifiers", "research.verify_crossref_metadata"],
+        )
+        self.assertEqual(combined["decision"], "COMPLETE")
+        self.assertEqual(
+            {row["tool_id"] for row in combined["selected_tools"]},
+            {"research.resolve_pubmed_identifiers", "research.verify_crossref_metadata"},
+        )
+        self.assertFalse(combined["execution_authorized"])
+        self.assertEqual(combined["network_authority_binding"], "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER")
+
     def test_route_expands_without_a_fixed_tool_count(self) -> None:
         result = planner.plan_tool_route(profile(
             "three-output-task",
