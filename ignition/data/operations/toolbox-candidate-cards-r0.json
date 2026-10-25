@@ -4824,24 +4824,44 @@
       "entrypoint": "python3 -B ignition/tools/toolbox_crossref_metadata_verifier.py --stdin --allow-public-network",
       "source_refs": [
         {
-          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
-          "role": "BOUNDED_FIXED_HOST_CLI"
+          "path": "ignition/data/external-research/104-source-registry.jsonl",
+          "role": "REAL_TASK_INPUT_SOURCE_REGISTRY"
         },
         {
-          "path": "ignition/evidence-program/tools/run_crossref_verification.py",
-          "role": "TASK103_METADATA_NORMALIZATION_HELPERS"
+          "path": "ignition/data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json",
+          "role": "C1_SAME_DOI_CANDIDATE_VS_TASK103_RUNNER_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-publication-metadata-cross-source-c1-evidence-r0.json",
+          "role": "RELATED_C1_CROSS_PROVIDER_COMPARISON_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-publication-metadata-cross-source-real-task-r0.json",
+          "role": "RELATED_REAL_CROSS_PROVIDER_TASK_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
+          "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE"
         },
         {
           "path": "ignition/evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.prereg.json",
           "role": "FROZEN_METADATA_COMPARISON_PROTOCOL"
         },
         {
+          "path": "ignition/evidence-program/tools/run_crossref_verification.py",
+          "role": "TASK103_RUNNER_AND_NORMALIZATION_REFERENCE"
+        },
+        {
           "path": "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
           "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
         },
         {
-          "path": "ignition/data/operations/toolbox-real-task-route-evidence-r0.json",
-          "role": "REAL_TASK_ROUTE_AND_OUTCOME_EVIDENCE"
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "role": "BOUNDED_FIXED_HOST_CLI"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "role": "REGISTERED_ALTERNATE_PROVIDER_IMPLEMENTATION"
         }
       ],
       "dependencies": [
@@ -4911,6 +4931,11 @@
           "tool_id": "research.validate_evidence_program_snapshot",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
           "reason": "The local validator checks the Evidence Program structure and recorded provenance but does not retrieve current Crossref metadata."
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "relationship": "ALTERNATE_PROVIDER_DIFFERENT_PROVENANCE",
+          "reason": "OpenAlex can return DOI-resolved title/year plus an OpenAlex Work ID and provider-reported retraction signal. It is a different metadata source and cannot establish the content or status of the Crossref record; one paired DOI comparison is not evidence that either provider replaces the other."
         }
       ],
       "fallback": "If live network use is not approved or fails, retain the explicit NOT_RUN or acquisition failure and use a pinned historical Crossref source manifest only as historical evidence; never label it a live re-check.",
@@ -4936,23 +4961,27 @@
       "unique_remaining_use_cases": [],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "A single paired route and live API task records complementary output contracts and one exact outcome; it does not establish comparative quality, effort, cost, broad replacement value, or retirement.",
+        "scope": "One live same-DOI comparison between this bounded wrapper and the Task 103 Crossref runner produced equal title/year matches and the same response digest for GAP001-01. A separate real task compared Crossref with registered OpenAlex for GAP001-05. These small observations do not estimate comparative correctness, coverage, reliability, cost, or broad replacement value; preserve uncertainty.",
         "compared_tool_ids": [
-          "research.resolve_pubmed_identifiers"
+          "research.lookup_openalex_work_metadata"
         ],
         "evidence_refs": [
           "ignition/tools/toolbox_crossref_metadata_verifier.py",
-          "ignition/tests/test_toolbox_crossref_metadata_verifier.py",
-          "ignition/data/operations/toolbox-real-task-route-evidence-r0.json"
+          "ignition/evidence-program/tools/run_crossref_verification.py",
+          "ignition/data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-publication-metadata-cross-source-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-publication-metadata-cross-source-real-task-r0.json"
         ],
         "findings": [
-          "No replacement, unique-use, or retirement conclusion is established; preserve the current optional/default-off disposition pending a task-paired comparison where overlap matters.",
-          "On GAP001-02, the router selected this metadata comparison with the PubMed ID resolver only when both outputs were required; this tool matched title/year (HTTP 200). The paired evidence is one record, not a comparative quality/cost or replacement result; C1 remains unknown."
+          "On one live GAP001-01 query, this wrapper and the Task 103 reference runner returned the same title, year, field matches, full-match result, HTTP 200 outcome, and Crossref response SHA-256. The raw provider payload was not retained.",
+          "The Task 103 runner is a source script rather than a registered toolbox identity. It normally handles registry-wide duplicate detection, aggregate metrics, and manifest writes; this candidate accepts a bounded caller-selected batch and writes JSON only to stdout. No retirement conclusion follows from the one-row overlap.",
+          "The existing GAP001-05 Crossref/OpenAlex comparison records one additional matching title/year observation and a synthetic changed-year negative control. It establishes no provider-wide quality ranking or replacement.",
+          "One DOI per comparison and one timing sample per implementation do not establish broad accuracy, reliability, coverage, latency, or economic cost. Keep the candidate optional and default off; no replacement, unique-use, or retirement decision is established."
         ]
       },
       "deprecation_or_retirement_status": {
         "status": "ACTIVE",
-        "basis": "The optional experimental entry remains available and default-off; comparative retirement status is unknown."
+        "basis": "The optional experimental entry remains available and default-off. C1 evidence includes one paired wrapper/runner result and one cross-provider task, which are insufficient to support replacement, retirement, or a broad specialization claim."
       },
       "migration_and_rollback": {
         "migration_notes": [

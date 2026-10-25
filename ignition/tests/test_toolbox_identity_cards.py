@@ -20,6 +20,33 @@ SPEC.loader.exec_module(TOOL)
 
 
 class ToolboxIdentityCardTests(unittest.TestCase):
+    def test_crossref_c1_keeps_uncertainty_after_single_same_task_runner_comparison(self) -> None:
+        document = TOOL.build_cards()
+        card = next(
+            item for item in document["cards"]
+            if item["tool_id"] == "research.verify_crossref_metadata"
+        )
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(evidence["schema_version"], "ignition.toolbox-c1-crossref-task103-comparison-evidence-r0")
+        self.assertTrue(evidence["paired_result"]["all_fields_equal"])
+        self.assertEqual(evidence["candidate"]["response_sha256"], evidence["reference_implementation"]["response_sha256"])
+        self.assertEqual(evidence["disposition"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(evidence["reference_implementation"]["identity"].split(";")[1].strip(), "source script, not a registered toolbox tool identity")
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["comparison_evidence"]["compared_tool_ids"], ["research.lookup_openalex_work_metadata"])
+        self.assertIn(
+            "ignition/data/operations/toolbox-crossref-task103-comparison-c1-evidence-r0.json",
+            card["comparison_evidence"]["evidence_refs"],
+        )
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertEqual(card["unique_remaining_use_cases"], [])
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "ACTIVE")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["network_hosts"], ["api.crossref.org"])
+
     def test_raw_evidence_navigator_card_keeps_scope_and_comparison_uncertainty(self) -> None:
         document = TOOL.build_cards()
         card = next(
