@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
-    "candidate_count": 17
+    "blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+    "candidate_count": 18
   },
   "cards": [
     {
@@ -478,7 +478,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -656,7 +656,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -992,7 +992,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1162,7 +1162,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "797a7de31d688ea031809bbab76e45443c791288"
+          "sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -1182,11 +1182,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
+          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1511,7 +1511,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2509,7 +2509,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2841,7 +2841,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3498,7 +3498,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3691,7 +3691,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
+          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
         },
         {
           "path": "ignition/docs/operations/arxiv-metadata-lookup.md",
@@ -3715,7 +3715,231 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+      "display_name": {
+        "zh": "NOAA 全球甲烷年度增量读取器",
+        "en": "NOAA global methane annual growth lookup"
+      },
+      "description": "Retrieve a bounded year range from NOAA GML’s fixed global annual atmospheric CH4 mole-fraction increment table, including provider-reported uncertainty.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; NOAA GML source-use page requests fair credit for its measurements and data.",
+      "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_ch4_annual_growth.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+          "role": "BOUNDED_FIXED_HOST_DATA_LOOKUP"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
+          "role": "CAPTURED_SOURCE_FIXTURE_AND_MOCKED_NETWORK_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_AND_EXACT_HOST_ROUTING_TEST"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-route-evidence-r0.json",
+          "role": "CANDIDATE_ROUTE_EXPERIMENT_NOT_EXECUTION_AUTHORITY"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_READABLE_IDENTITY_CARD_PROJECTION_TEST"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
+          "role": "SOURCE_SCOPE_CAVEATS_AND_C1_COMPARISON"
+        },
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "role": "DOI_METADATA_FUNCTION_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "role": "DOI_METADATA_FUNCTION_COMPARATOR"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Retrieving NOAA GML global annual atmospheric methane mole-fraction increment and uncertainty for an explicit bounded year range.",
+        "Recording provider response digest, HTTP metadata, retrieval time, and explicit missing-year or acquisition status for source review."
+      ],
+      "not_for": [
+        "Estimating methane emissions, identifying emitting sectors, attributing causes, or making a scientific conclusion.",
+        "Retrieving arbitrary URLs, station-level/monthly data, article content, or unrestricted date ranges.",
+        "Treating a missing year as zero, interpolating values, or declaring a provider failure to prove that data do not exist."
+      ],
+      "only_if": [
+        "The caller has decided that the public NOAA GML request is appropriate and passes --allow-public-network for this invocation.",
+        "The request contains exactly integer start_year and end_year values from 1984 through 2100, with no more than 50 inclusive years.",
+        "A proposed route explicitly includes this candidate ID and allowed_network_hosts contains exactly gml.noaa.gov; route planning is not execution authorization."
+      ],
+      "counterindicated_when": [
+        "Public network access is disallowed or the caller must not contact NOAA GML.",
+        "The task needs a specific greenhouse-gas inventory, source attribution, causal explanation, station data, or independent method validation.",
+        "The requested range exceeds the tool’s year or size bounds, or a precise historical snapshot is required and the live response is not archived."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with exactly integer start_year and end_year (1984–2100 inclusive; range at most 50 years)"
+      ],
+      "output_types": [
+        "Provider-reported annual CH4 atmospheric mole-fraction increment and uncertainty in ppb for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+        "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_noaa_ch4_annual_growth.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked with --allow-public-network, sends one HTTPS GET to the fixed NOAA GML table URL; year bounds are applied locally and no caller URL or private identifier is transmitted.",
+        "Writes a bounded selected-record JSON receipt to stdout and errors to stderr; does not retain the raw response or write repository files.",
+        "Rejects redirects, non-text content, oversized or slow responses, malformed headers/tables, duplicate/out-of-order years, and invalid numeric rows as explicit outcomes."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "One bounded public GET is permitted per invocation; no comparable latency, reliability, bandwidth, or compute-cost profile has been measured."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Crossref compares DOI-keyed bibliographic metadata and does not retrieve atmospheric CH4 annual growth observations."
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "OpenAlex returns DOI-keyed scholarly Work metadata and does not retrieve atmospheric CH4 annual growth observations."
+        }
+      ],
+      "fallback": "If public network use is not approved or retrieval fails, report the explicit NOT_RUN or acquisition status and consult an appropriately pinned NOAA snapshot. Never label a cached snapshot as a live check or convert missing rows to zero.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network makes no request and emits no result.",
+          "Reject arbitrary URL keys, duplicate JSON keys, Boolean years, reversed/out-of-range bounds, and ranges over 50 years before network access.",
+          "Only gml.noaa.gov and its fixed HTTPS path are contacted; redirects, non-text, oversized/slow data, malformed table rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
+          "Default route excludes the candidate; explicit candidate allowlisting still requires the exact gml.noaa.gov host, and planned routes keep execution_authorized=false.",
+          "Missing source years remain PARTIAL_DATA or NO_MATCH; no emission estimate or scientific claim is produced."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task requesting NOAA global annual atmospheric CH4 increment values.",
+        "Require the typed route profile to list gml.noaa.gov explicitly; route planning does not grant network or execution permission.",
+        "Every actual CLI call separately requires --allow-public-network and a task-specific decision to make this public request.",
+        "Do not select this adapter for emission inventories, causal analysis, or DOI metadata tasks."
+      ],
+      "claim_ceiling": "Provider-reported NOAA GML global annual atmospheric CH4 mole-fraction increment values and stated uncertainties for selected years only; not emissions, attribution, causal analysis, source authentication, or scientific validation.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Retrieve a year-bounded global atmospheric CH4 annual mole-fraction increment and uncertainty series directly from NOAA GML; the current DOI metadata adapters do not accept this data request or return this observation type."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Function and contract comparison against the currently available DOI-keyed Crossref and OpenAlex metadata adapters. Their source code, inputs, and outputs cover bibliographic Works; this adapter reads one NOAA atmospheric observation table. This establishes a distinct use case, not comparative reliability, latency, quality, or cost.",
+        "compared_tool_ids": [
+          "research.verify_crossref_metadata",
+          "research.lookup_openalex_work_metadata"
+        ],
+        "evidence_refs": [
+          "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/tools/toolbox_openalex_work_metadata.py",
+          "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
+          "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md"
+        ],
+        "findings": [
+          "The comparison found no existing candidate with the year-range input and NOAA global atmospheric CH4 increment plus uncertainty output contract; Crossref and OpenAlex are DOI-keyed metadata tools.",
+          "Retain alongside the bibliography tools for this separate observation-data use case. No replacement or retirement decision is supported for either comparator.",
+          "Cost and live-service quality remain unmeasured; this disposition does not claim superiority."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Retain as an optional, default-off source-specific adapter for the distinct NOAA atmospheric annual-growth contract; it does not replace the compared bibliographic metadata tools."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry or default route migration is made. If a future NOAA adapter overlaps this contract, compare identical year ranges and output fields before changing either disposition."
+        ],
+        "rollback_steps": [
+          "Remove the optional catalog entry, wrapper, tests, and scope note from the isolated branch; regenerate the candidate identity-card and TOOLBOX.md projections; retain the historical source snapshot and comparison rationale if still useful."
+        ]
+      },
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "138e5eb50953a19d5c83455f063a3fc7b0a7badd",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_noaa_ch4_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "138e5eb50953a19d5c83455f063a3fc7b0a7badd"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "370f6917a0f6ddd1d206fa22ce6229602dbf0a1c"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-ch4-annual-growth-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "1db3446dfe3723e56e8526a329ee3f98d5067469"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "c8fe21af60d84730d2260e951b6856c88aa9da83"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "dcbe85a746122f7486cb0e851476776336705e7d"
+        },
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "803e4666c00df462207d52db4495f9ca31cad0ac"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "8585194b4ebf459e50a7a813e90eafeeff16a5ad"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3923,7 +4147,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
+          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
         },
         {
           "path": "ignition/data/operations/iterations/110/openalex/PREREGISTRATION.md",
@@ -3957,7 +4181,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4177,7 +4401,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4453,7 +4677,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4634,7 +4858,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4950,7 +5174,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5145,7 +5369,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5337,7 +5561,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5841,11 +6065,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
+          "sha1": "c8fe88e2d361933bda8567d74f3aae25276e2687"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "candidate_catalog_blob_sha1": "24e7a0a5bbf76eb50c851da51d3f0e8af0bd69fb",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5977,6 +6201,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 37,
+  "card_count": 38,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }
