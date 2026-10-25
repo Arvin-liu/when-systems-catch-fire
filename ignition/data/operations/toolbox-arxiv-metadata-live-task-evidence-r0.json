@@ -1,0 +1,151 @@
+{
+  "schema_version": "toolbox-arxiv-metadata-live-task-evidence-r0",
+  "experiment_id": "research.lookup_arxiv_paper_metadata.workbench81_cited_id",
+  "observed_at_utc": "2026-10-25T07:45:53Z",
+  "source_blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 81,
+    "head_sha": "9dae5a0d73f66c8b0b6d01c0c6ca14fad34cc03a",
+    "path": "sources/IDEASCIENTIST-RESEARCH-IDEATION-CANDIDATE-R0.json",
+    "candidate_key": "grounded_cross_domain_ideation",
+    "source_url": "https://github.com/Arvin-liu/ignition-architecture-workbench/blob/9dae5a0d73f66c8b0b6d01c0c6ca14fad34cc03a/sources/IDEASCIENTIST-RESEARCH-IDEATION-CANDIDATE-R0.json"
+  },
+  "official_api_documentation": "https://info.arxiv.org/help/api/user-manual.html",
+  "task": {
+    "description": "Resolve the modern arXiv ID explicitly cited by the existing Workbench #81 candidate to check whether the identifier yields a provider metadata record.",
+    "claim_ceiling": "Provider-reported arXiv metadata for one caller-supplied modern arXiv identifier. The lookup does not authenticate a paper, assess its contents, establish that cited claims are supported, or imply scientific acceptance.",
+    "no_scientific_assessment": true,
+    "no_article_content_requested": true
+  },
+  "source_acquisition": {
+    "provider": "arXiv public API",
+    "request_url": "https://export.arxiv.org/api/query?id_list=2610.04074",
+    "http_status": 200,
+    "request_count": 1,
+    "request_id": "2610.04074",
+    "response_bytes": 3669,
+    "response_sha256": "3dd7058bd7b23cda8ae91302f814f2adf036dc799420b5e83f6b8ade756b50a5",
+    "raw_response_retained": false
+  },
+  "tool_invocation": {
+    "tool_id": "research.lookup_arxiv_paper_metadata",
+    "entrypoint": "python3 -B ignition/tools/toolbox_arxiv_metadata_lookup.py --arxiv-id 2610.04074 --allow-public-network",
+    "exit_code": 0,
+    "status": "FOUND",
+    "tool_source_sha256": "ce0760a1fe1010a6383e3d438bfb5e912c86720722578167f2514697b0d533d2",
+    "request_sha256": "3ee819297e3cb5939202666e620bc5bb55b7264894cf683e3160b7b1820c0ae3",
+    "receipt": {
+      "claim_ceiling": "Provider-reported arXiv metadata for one caller-supplied modern arXiv identifier. The lookup does not authenticate a paper, assess its contents, establish that cited claims are supported, or imply scientific acceptance.",
+      "http_status": 200,
+      "non_claims": [
+        "The lookup does not fetch or retain abstracts, article files, or full text.",
+        "Metadata presence does not establish paper authenticity, content support, scientific validity, or publication acceptance.",
+        "The provider response is not independently authenticated by this tool."
+      ],
+      "record": {
+        "authors": [
+          "Jiarui Liu",
+          "Renjie Tao",
+          "Yiwei Liao",
+          "Chuanyang Jin",
+          "Kai Sun",
+          "Xiao Yang",
+          "Xinyuan Zhang",
+          "Xilun Chen",
+          "Zhuangqun Huang",
+          "Lechen Zhang",
+          "Yongjin Yang",
+          "Yinghui He",
+          "Weihao Xuan",
+          "Rakesh Wanga",
+          "Anuj Kumar",
+          "Mona T. Diab",
+          "Wen-tau Yih",
+          "Xin Luna Dong"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "doi": null,
+        "entry_id": "http://arxiv.org/abs/2610.04074v2",
+        "journal_ref": null,
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T21:35:55Z",
+        "requested_id": "2610.04074",
+        "title": "IdeaScientist: Orchestrating Agents for Grounded Scientific Ideation",
+        "updated": "2026-10-09T18:44:38Z"
+      },
+      "request_sha256": "3ee819297e3cb5939202666e620bc5bb55b7264894cf683e3160b7b1820c0ae3",
+      "request_url": "https://export.arxiv.org/api/query?id_list=2610.04074",
+      "requested_id": "2610.04074",
+      "response_bytes": 3669,
+      "response_sha256": "3dd7058bd7b23cda8ae91302f814f2adf036dc799420b5e83f6b8ade756b50a5",
+      "retrieved_at_utc": "2026-10-25T07:45:53Z",
+      "schema_version": "toolbox-arxiv-metadata-lookup-r0",
+      "status": "FOUND",
+      "tool_id": "research.lookup_arxiv_paper_metadata",
+      "tool_source_sha256": "ce0760a1fe1010a6383e3d438bfb5e912c86720722578167f2514697b0d533d2",
+      "tool_version": "0.1.0"
+    }
+  },
+  "routing_trials": [
+    {
+      "scenario": "default_opt_out",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_rejections": [
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+    },
+    {
+      "scenario": "candidate_allowlisted_without_host",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_rejections": [
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "execution_authorized": false,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED"
+    },
+    {
+      "scenario": "candidate_and_exact_host_allowlisted",
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.lookup_arxiv_paper_metadata"
+      ],
+      "candidate_rejections": [],
+      "execution_authorized": false,
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER"
+    }
+  ],
+  "same_task_comparison": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "compared_tool_ids": [
+      "research.verify_crossref_metadata",
+      "research.lookup_openalex_work_metadata"
+    ],
+    "finding": "This specific arXiv record returned no DOI. The existing Crossref/OpenAlex candidates accept DOI input; they therefore cannot directly perform this ID lookup. Their metadata quality, broader coverage, speed, and cost were not compared."
+  },
+  "negative_control_results": {
+    "focused_unit_tests": "7/7 expected after current test additions",
+    "route_default_opt_out": true,
+    "route_candidate_without_exact_host": true,
+    "route_with_candidate_and_host": true,
+    "route_proposal_execution_authorized": false
+  },
+  "formal_state": {
+    "formal_main_written": false,
+    "foundation_dispatched": false,
+    "required_checks_changed": false,
+    "current_registry_changed": false,
+    "current_route_defaults_changed": false
+  }
+}

@@ -8,7 +8,7 @@ import unittest
 from tools.toolbox_actions_repeated_step_analysis import BatchInputError, analyze_batch
 
 
-FIXTURE = Path(__file__).parent / "fixtures/toolbox-actions-repeated-step-analysis/pr264-three-runs-r0.json"
+FIXTURE = Path(__file__).parent / "fixtures/toolbox-actions-repeated-step-analysis/pr264-four-runs-r0.json"
 
 
 class ActionsRepeatedStepAnalysisTests(unittest.TestCase):
@@ -26,25 +26,27 @@ class ActionsRepeatedStepAnalysisTests(unittest.TestCase):
             "pull_request_number": 264,
             "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
         })
-        self.assertEqual(result["summary"]["run_count"], 3)
-        self.assertEqual(result["summary"]["distinct_head_sha_count"], 3)
-        self.assertEqual(result["summary"]["job_count_across_runs"], 12)
-        self.assertEqual(result["summary"]["step_count_across_runs"], 210)
+        self.assertEqual(result["summary"]["run_count"], 4)
+        self.assertEqual(result["summary"]["distinct_head_sha_count"], 4)
+        self.assertEqual(result["summary"]["job_count_across_runs"], 14)
+        self.assertEqual(result["summary"]["step_count_across_runs"], 275)
         self.assertTrue(result["summary"]["job_lists_complete_for_all_runs"])
         self.assertFalse(result["summary"]["elapsed_time_aggregated_across_runs"])
         self.assertFalse(result["non_claims"]["avoidable_work_attributed"])
         self.assertFalse(result["non_claims"]["billable_minutes_calculated"])
 
         foundation_job = next(group for group in result["repeated_step_groups"] if group["job_name"] == "Full Foundation regression" and group["step_name"] == "Run python3 tools/foundation/validate_foundation.py")
-        self.assertEqual(foundation_job["run_presence_count"], 3)
+        self.assertEqual(foundation_job["run_presence_count"], 4)
         self.assertEqual(
             [row["observed_elapsed_seconds"] for row in foundation_job["occurrences"]],
-            [1234.0, 1205.0, 701.0],
+            [1234.0, 1205.0, 701.0, 0.0],
         )
         self.assertEqual(
             [run["workflow_run"]["conclusion"] for run in result["runs"]],
-            ["failure", "failure", "success"],
+            ["failure", "failure", "success", "cancelled"],
         )
+        self.assertEqual(foundation_job["occurrences"][3]["conclusion"], "skipped")
+        self.assertEqual(foundation_job["occurrences"][3]["run_conclusion"], "cancelled")
         self.assertEqual(len(result["timestamp_anomalies"]), 2)
         self.assertTrue(all(row["analysis_started_at"] is None and row["analysis_completed_at"] is None for row in result["timestamp_anomalies"]))
 

@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
-    "candidate_count": 16
+    "blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+    "candidate_count": 17
   },
   "cards": [
     {
@@ -478,7 +478,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -656,7 +656,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -992,7 +992,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1162,7 +1162,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "895f09362d8d6d4a3c7b7644af17828acff79425"
+          "sha1": "797a7de31d688ea031809bbab76e45443c791288"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -1182,11 +1182,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "2082a02828d566914815cc586daee73654b29b0d"
+          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1511,7 +1511,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2342,16 +2342,16 @@
           "role": "LIVE_HISTORY_AND_ADVERSARIAL_NEGATIVE_CONTROLS"
         },
         {
-          "path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-three-runs-r0.json",
-          "role": "MINIMIZED_GITHUB_API_RUN_AND_JOB_SNAPSHOTS"
-        },
-        {
           "path": "ignition/docs/operations/actions-step-timeline-summary.md",
           "role": "EXISTING_SINGLE_RUN_SCOPE_AND_CLAIM_CEILING"
         },
         {
           "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
           "role": "LIVE_TASK_ROUTE_AND_PAIRED_ANALYSIS_EVIDENCE"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-four-runs-r0.json",
+          "role": "FOUR_MINIMIZED_GITHUB_API_RUN_AND_JOB_SNAPSHOTS"
         }
       ],
       "dependencies": [
@@ -2366,7 +2366,8 @@
         "Deciding repeated work was avoidable, wasted, caused by a workflow defect, or safe to remove.",
         "Calculating billable runner minutes, cash cost, user wait, globally elapsed time, or causal value of CI.",
         "Assessing required-check satisfaction, test equivalence, branch protection, merge/release permission, or Foundation validity.",
-        "Fetching or authenticating GitHub data; the tool only processes caller-supplied JSON snapshots."
+        "Fetching or authenticating GitHub data; the tool only processes caller-supplied JSON snapshots.",
+        "Treating an equal-timestamp skipped step in a cancelled run as a successful execution or as proof that the check ran."
       ],
       "only_if": [
         "The caller supplies two to twenty complete enough workflow-run/jobs snapshots with one shared workflow ID/path, event, PR number, and base SHA.",
@@ -2420,30 +2421,33 @@
       ],
       "replacement_candidates": [],
       "unique_remaining_use_cases": [
-        "Compare repeated named steps and their per-head outcomes across a PR run sequence in one call, preserving changed heads and partial-time anomalies."
+        "Compare repeated named steps and their per-head outcomes across two to twenty snapshots from one PR/base context in one call, preserving changed heads and partial-time anomalies."
       ],
       "comparison_evidence": {
-        "status": "COMPARISON_UNKNOWN",
-        "scope": "One three-run exact PR/base sequence demonstrates that single-run receipts do not emit cross-run step groups; the new analyzer emits 57 such groups. This is a feature-scope comparison, not a general speed, accuracy, cost, or avoidable-work comparison.",
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Paired offline analysis of four same-workflow/event/PR/base #264 run snapshots and an isolated single-run smoke. The batch output has 70 repeated-step groups and preserves two timestamp anomalies; no latency, resource, analyst-effort, or causal-waste comparison was performed.",
         "compared_tool_ids": [
           "maintenance.summarize_actions_step_timeline"
         ],
         "evidence_refs": [
+          "ignition/tools/toolbox_actions_repeated_step_analysis.py",
           "ignition/tools/toolbox_actions_step_timeline.py",
           "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-four-runs-r0.json",
           "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json"
         ],
         "findings": [
-          "The single-run tool remains valuable for isolated snapshots; the new batch analyzer complements it for same-PR run history. No evidence supports replacement, retirement, or classifying repeated steps as waste."
+          "The single-run tool emits a per-run timeline and cannot produce cross-run groups; the batch analyzer handles two to twenty context-matched runs and emits repeated-step groups. The batch tool adds a distinct capability without covering the single-run tool's isolated-input use case, so both remain active as specialized default-off tools. Repeated steps, including repeated Foundation commands, are not evidence of avoidable work."
         ]
       },
       "deprecation_or_retirement_status": {
-        "status": "ACTIVE",
-        "basis": "This default-off experimental candidate adds a bounded multi-run comparison surface; C1 comparative outcome evidence remains limited and it has not replaced any existing tool."
+        "status": "SPECIALIZED",
+        "basis": "Four-run comparison demonstrates a multi-run grouping use case that the single-run tool does not cover; single-run analysis remains a distinct useful input scope."
       },
       "migration_and_rollback": {
         "migration_notes": [
-          "No Current operation or route default changes. Callers who need one run can keep using the existing single-run timeline tool; this tool is opt-in for same-PR run-history comparisons."
+          "Use the existing single-run candidate for exactly one snapshot; opt into this tool only for two to twenty runs sharing workflow, event, PR, and base SHA.",
+          "A reported zero interval for a skipped step is not evidence that the step executed. No Current operation, router default, or existing route changes."
         ],
         "rollback_steps": [
           "Remove the optional candidate, analyzer, test, fixture, and evidence artifact; regenerate identity cards and TOOLBOX.md; retain source API URLs and historical run IDs in the durable report if the analytical result remains useful."
@@ -2469,7 +2473,7 @@
         "Remain excluded unless this exact candidate ID is explicitly allowlisted for a caller-supplied multi-run same-PR Actions history task.",
         "A route proposal does not authenticate the source of snapshots, authorize an invocation, or imply that repeated execution was wasteful."
       ],
-      "claim_ceiling": "Observed repeated step names and source-supplied intervals within caller-supplied same-workflow/event/PR/base snapshots. Different head SHAs are different candidate revisions; no source authentication, causal waste attribution, billing, check satisfaction, CI sufficiency, merge permission, or release authorization.",
+      "claim_ceiling": "Observed repeated step names and source-supplied intervals within caller-supplied same-workflow/event/PR/base snapshots. Different head SHAs are different candidate revisions; no source authentication, causal waste attribution, billing, check satisfaction, CI sufficiency, merge permission, or release authorization. A skipped step with identical source timestamps may project as zero observed seconds; that does not prove it executed.",
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
       "source_blob_sha1": "7eaaa9f5f8161ae0f590c059875567fb42c1c421",
       "source_refs_with_hashes": [
@@ -2486,12 +2490,7 @@
         {
           "path": "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d4620d6d3cb0b30f2f892c54864cb093e1422023"
-        },
-        {
-          "path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-three-runs-r0.json",
-          "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "7af337ad5a18cc164b3ac42cc37c6e3bd95c7a55"
+          "sha1": "50fcfba8343d30d57b9ec8644c3752b78e6303e5"
         },
         {
           "path": "ignition/docs/operations/actions-step-timeline-summary.md",
@@ -2501,11 +2500,16 @@
         {
           "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "cbe1e82566e5a00567a0ef8d69cae24b9b00c1eb"
+          "sha1": "ad800f594050d4d12ac9a7b106e772d4bf78fd16"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-four-runs-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "fb1a6bb60fc7e79efeceb4b92255becb84f54001"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2668,6 +2672,18 @@
         {
           "path": "ignition/docs/operations/actions-step-timeline-summary.md",
           "role": "SCOPE_PROVENANCE_AND_CLAIM_CEILING"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "role": "PAIRED_MULTI_RUN_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "role": "PAIRED_MULTI_RUN_COMPARISON_TESTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+          "role": "PAIRED_MULTI_RUN_COMPARISON_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -2679,7 +2695,8 @@
       "not_for": [
         "Querying GitHub, authenticating the source of a supplied snapshot, or fetching workflow/job records.",
         "Calculating billable runner minutes, service charges, cash cost, user wait, or elapsed workflow duration from overlapping job sums.",
-        "Determining required-check satisfaction, test equivalence, CI sufficiency, merge/release authorization, or scientific validity."
+        "Determining required-check satisfaction, test equivalence, CI sufficiency, merge/release authorization, or scientific validity.",
+        "Treating equal timestamps on skipped workflow steps as proof that the step executed or consumed measured runtime."
       ],
       "only_if": [
         "The caller supplies one UTF-8 JSON envelope containing the workflow run and corresponding jobs API snapshot.",
@@ -2725,6 +2742,11 @@
           "tool_id": "maintenance.inspect_repository",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
           "reason": "Generic repository inspection does not parse a caller-supplied Actions jobs snapshot into per-job and per-step intervals; manual API/UI review remains an alternative but has not been compared on the same task."
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The paired #264 comparison confirms this tool accepts a single run while the batch analyzer requires 2-20 runs and adds cross-run repeated-step grouping; retain the single-run path for isolated snapshots."
         }
       ],
       "fallback": "If the envelope is incomplete or inconsistent, stop and report the exact validation error; inspect the source API snapshot manually only when separately authorized, and do not estimate billing from interval totals.",
@@ -2746,27 +2768,30 @@
         "Remain excluded unless this exact candidate ID is explicitly allowlisted for a caller-supplied Actions timeline task.",
         "A route proposal does not authenticate input provenance or authorize invocation; no network host is available to this tool."
       ],
-      "claim_ceiling": "Observed intervals from caller-supplied unauthenticated JSON only; parallel sums are NOT_BILLABLE_MINUTES and do not establish workflow wall time, hosted runner usage, service charges, test equivalence, required-check status, merge permission, or release authorization.",
+      "claim_ceiling": "Observed intervals from caller-supplied unauthenticated JSON only; parallel sums are NOT_BILLABLE_MINUTES and do not establish workflow wall time, hosted runner usage, service charges, test equivalence, required-check status, merge permission, or release authorization. Equal timestamps on skipped steps remain source observations only and do not establish execution or elapsed runtime.",
       "replacement_candidates": [],
-      "unique_remaining_use_cases": [],
+      "unique_remaining_use_cases": [
+        "Analyze one supplied GitHub Actions run when there is no multi-run comparison set, including its per-job and per-step observed intervals and source-snapshot digest."
+      ],
       "comparison_evidence": {
-        "status": "COMPARISON_UNKNOWN",
-        "scope": "One real caller-supplied API snapshot smoke and declaration-level alternative review are available; no paired same-task effort, accuracy, or cost comparison against manual inspection is recorded.",
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Paired offline analysis of the four-run #264 workflow/event/PR/base history plus the existing one-run API snapshot smoke; confirms distinct cardinalities and output scope, but does not compare latency, CPU, memory, or analyst effort.",
         "compared_tool_ids": [
-          "maintenance.inspect_repository"
+          "maintenance.compare_actions_repeated_step_sequences"
         ],
         "evidence_refs": [
           "ignition/tools/toolbox_actions_step_timeline.py",
-          "ignition/tests/test_toolbox_actions_step_timeline.py",
-          "ignition/docs/operations/actions-step-timeline-summary.md"
+          "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json"
         ],
         "findings": [
-          "No replacement, retirement, or unique-use conclusion is established; retain the optional default-off candidate while a low-cost same-task comparison remains useful."
+          "The single-run tool handles one supplied run; the batch tool requires two to twenty runs and emits repeated-step groups. The batch tool cannot replace isolated single-run analysis. Retain both as opt-in specialized tools; broader cost and performance comparisons remain unknown."
         ]
       },
       "deprecation_or_retirement_status": {
-        "status": "ACTIVE",
-        "basis": "The optional experimental entry remains default-off; comparative replacement and retirement value is unknown."
+        "status": "SPECIALIZED",
+        "basis": "Four-run paired scope evidence shows the single-run input contract remains useful for isolated Actions snapshots, while the batch analyzer covers same-PR run histories."
       },
       "migration_and_rollback": {
         "migration_notes": [
@@ -2798,10 +2823,25 @@
           "path": "ignition/docs/operations/actions-step-timeline-summary.md",
           "hash_kind": "GIT_BLOB_SHA1",
           "sha1": "6ff420635eae83b76da4eb2255b053602013b751"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "7eaaa9f5f8161ae0f590c059875567fb42c1c421"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "50fcfba8343d30d57b9ec8644c3752b78e6303e5"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "ad800f594050d4d12ac9a7b106e772d4bf78fd16"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3458,7 +3498,224 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
+      "tool_id": "research.lookup_arxiv_paper_metadata",
+      "display_name": {
+        "zh": "arXiv 论文元数据查询器",
+        "en": "arXiv paper metadata lookup"
+      },
+      "description": "Look up selected current arXiv metadata for one caller-supplied modern arXiv identifier using one bounded fixed-host HTTPS request.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; arXiv metadata source and reuse terms remain provider-controlled.",
+      "maintainer": "Ignition repository maintainers; no Owner, source-authentication, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_arxiv_metadata_lookup.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+          "role": "BOUNDED_FIXED_HOST_METADATA_LOOKUP"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
+          "role": "MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_AND_EXACT_HOST_ROUTING_TEST"
+        },
+        {
+          "path": "ignition/docs/operations/arxiv-metadata-lookup.md",
+          "role": "API_SCOPE_AND_BLUEPRINT_PROVENANCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-metadata-live-task-evidence-r0.json",
+          "role": "LIVE_API_TASK_AND_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "role": "DOI_INPUT_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "role": "DOI_INPUT_COMPARATOR"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Resolving one modern arXiv identifier to its provider-reported current entry/version, title, authors, dates, categories, journal reference, and DOI when supplied.",
+        "Checking an arXiv citation identifier before literature work while keeping source metadata retrieval separate from claim support and scientific judgment.",
+        "Retaining the request URL, retrieval timestamp, response digest, and explicit acquisition or parse status without storing the provider response."
+      ],
+      "not_for": [
+        "Retrieving abstracts, article files, full text, or arbitrary URLs.",
+        "Establishing that an article is authentic, supports a claim, is scientifically valid, peer reviewed, or accepted by a venue.",
+        "Resolving DOI identifiers, legacy slash-form arXiv identifiers, or provider records outside the modern arXiv identifier format.",
+        "Sending confidential task identifiers or metadata to a public service without caller approval."
+      ],
+      "only_if": [
+        "The caller explicitly approves sending one modern arXiv identifier to the public arXiv API and passes --allow-public-network.",
+        "A route proposal includes this exact candidate ID and export.arxiv.org in allowed_network_hosts; a proposal does not authorize execution.",
+        "The identifier matches YYMM.NNNN[N] with an optional lowercase vN suffix and the caller accepts unauthenticated provider metadata.",
+        "The fixed HTTPS arXiv API is reachable from the declared environment."
+      ],
+      "counterindicated_when": [
+        "The identifier or task context must remain private and cannot be transmitted to arXiv.",
+        "Network access is disallowed, unavailable, or not approved for this invocation.",
+        "The task needs full text, an abstract, source authenticity, claim entailment, scientific assessment, or a DOI-based provider comparison."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with exactly one modern arXiv ID (YYMM.NNNN[N], optionally vN)"
+      ],
+      "output_types": [
+        "Provider-reported arXiv entry ID/version, title, author names, dates, categories, journal reference, and DOI when present",
+        "One request URL, retrieval timestamp, response SHA-256, byte count, and claim-ceiling receipt"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_arxiv_metadata_lookup.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "export.arxiv.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked with --allow-public-network, sends one fixed-host HTTPS GET to export.arxiv.org containing only the caller-supplied arXiv ID; it does not send title text or arbitrary query parameters.",
+        "Reads bounded UTF-8 JSON and emits one selected metadata receipt to stdout or a validation error to stderr; it creates or modifies no files and retains no raw response.",
+        "Rejects redirects, non-Atom content, oversized or slow responses, malformed XML, DTD/entity payloads, error entries, and mismatched provider IDs as explicit statuses."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "One bounded public metadata request was observed; comparable latency, reliability, bandwidth, or service-cost profiling has not been done."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Crossref compares caller-provided expected title/year by bare DOI; the arXiv adapter accepts a modern arXiv ID and returns the arXiv provider entry/version. The identifiers and output contracts differ."
+        },
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "OpenAlex requires a DOI and returns OpenAlex Work fields; the arXiv adapter directly resolves the source arXiv ID and provider entry/version without requiring a DOI."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Resolve a cited modern arXiv ID directly, including the provider entry/version when no DOI is supplied; DOI-based Crossref and OpenAlex candidates cannot consume that identifier as input."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One real arXiv API lookup for the arXiv ID cited by Workbench #81 returned an arXiv entry/version and no DOI. Current Crossref and OpenAlex adapters require bare DOI inputs. This establishes a distinct identifier contract for that task, not comparative accuracy, coverage beyond this sample, performance, effort, or cost.",
+        "compared_tool_ids": [
+          "research.verify_crossref_metadata",
+          "research.lookup_openalex_work_metadata"
+        ],
+        "evidence_refs": [
+          "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+          "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/docs/operations/arxiv-metadata-lookup.md",
+          "ignition/data/operations/toolbox-arxiv-metadata-live-task-evidence-r0.json",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/tools/toolbox_openalex_work_metadata.py"
+        ],
+        "findings": [
+          "For the source-bound Workbench #81 cited ID 2610.04074, the live arXiv API returned entry 2610.04074v2 and no DOI. Existing Crossref/OpenAlex adapters accept bare DOI inputs, so they cannot directly resolve this input. This demonstrates specialized identifier coverage; it does not establish a broader provider or performance advantage."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "The live source-bound task returned an arXiv entry/version without a DOI; direct modern arXiv-ID lookup is outside the input contracts of the current DOI-based metadata tools."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "Keep this tool opt-in for direct arXiv identifiers. When an arXiv response includes a DOI and DOI-provider fields are specifically required, route that separate task to Crossref or OpenAlex as well. No Current operation or default route changes."
+        ],
+        "rollback_steps": [
+          "Remove this optional candidate, tool, focused tests, evidence, and scope note from the isolated branch; regenerate the candidate identity cards and TOOLBOX.md; retain the source API URL and recorded evidence if useful."
+        ]
+      },
+      "fallback": "If live lookup is not approved or fails, retain the explicit acquisition outcome and use the official arXiv abstract page only when separately authorized; do not infer that a failed API lookup means the paper does not exist.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network performs no request and emits no result.",
+          "Reject DOI/URL inputs, legacy slash-form IDs, invalid months or versions, duplicate JSON keys, and requests above 4 KiB before network access.",
+          "Only export.arxiv.org receives a request; redirects, non-Atom content, oversized or slow bodies, DTD/entities, malformed XML, provider errors, and mismatched record IDs return explicit non-success outcomes.",
+          "The receipt excludes abstracts/full text and does not authenticate source identity or scientific claims; invocation creates no files."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless this exact candidate ID is explicitly allowlisted for a direct modern arXiv-ID metadata task.",
+        "Require the route profile to list export.arxiv.org explicitly; the route planner does not verify caller authority or grant network permission.",
+        "Every actual invocation also requires --allow-public-network and a task-specific decision to transmit the identifier.",
+        "Do not select this tool only to repeat DOI metadata or infer article support."
+      ],
+      "claim_ceiling": "Provider-reported selected arXiv metadata for one caller-supplied modern ID only; the result does not authenticate a source, retrieve article content, establish claim support, or imply scientific validity or acceptance.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "fb932d94028e4a75c2e2e97eba2391d9d4ebd78d",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "fb932d94028e4a75c2e2e97eba2391d9d4ebd78d"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "7c25d68d714ae81f92b24edb4271d4adac189018"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
+        },
+        {
+          "path": "ignition/docs/operations/arxiv-metadata-lookup.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "cffdfbef75f4166597890c1493056adc0a98531c"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-metadata-live-task-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "2c0fdb453c6288c1bc28ab84ac626d07dab98a56"
+        },
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "803e4666c00df462207d52db4495f9ca31cad0ac"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "8585194b4ebf459e50a7a813e90eafeeff16a5ad"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3666,7 +3923,7 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "2082a02828d566914815cc586daee73654b29b0d"
+          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
         },
         {
           "path": "ignition/data/operations/iterations/110/openalex/PREREGISTRATION.md",
@@ -3700,7 +3957,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3920,7 +4177,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4196,7 +4453,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4377,7 +4634,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4693,7 +4950,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4888,7 +5145,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5080,7 +5337,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5584,11 +5841,11 @@
         {
           "path": "ignition/tests/test_toolbox_routing.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "2082a02828d566914815cc586daee73654b29b0d"
+          "sha1": "3c97fbeae1d612850d66de8ddbcc9fbc2c74d6f6"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "895f09362d8d6d4a3c7b7644af17828acff79425",
+      "candidate_catalog_blob_sha1": "797a7de31d688ea031809bbab76e45443c791288",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5720,6 +5977,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 36,
+  "card_count": 37,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }
