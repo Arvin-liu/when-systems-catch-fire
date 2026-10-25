@@ -597,6 +597,118 @@
         "Do not select for discovery, alias resolution, source verification, scientific judgment, or truth/authority decisions."
       ],
       "claim_ceiling": "One exact checked-out Current registry record, with its stored record hash verified and both identity registries source-hashed; no truth, proof, external validity, or independent source-anchor verification is inferred."
+    },
+    {
+      "tool_id": "function_os.run_bounded_symbolic_spec",
+      "display_name": {
+        "zh": "有界符号函数规格执行器",
+        "en": "Bounded symbolic FunctionSpec runner"
+      },
+      "description": "Run one explicitly supplied, single-output pure symbolic FunctionSpec through Function OS N1-N7 with bounded expression size, arithmetic intermediates, and numeric input magnitude.",
+      "version": "toolbox-wrapper-0.1.0; Function OS 0.2.1rc0 candidate",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_function_os_evaluator.py",
+      "entrypoint": "python3.11 -B ignition/tools/toolbox_function_os_evaluator.py --stdin (stdin JSON: {\"function_spec\":{...},\"inputs\":{...}})",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_function_os_evaluator.py",
+          "role": "BOUNDED_READ_ONLY_TOOL_ENTRYPOINT"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/function_os/",
+          "role": "FUNCTION_OS_N1_TO_N7_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+          "role": "UPSTREAM_SCOPE_AND_NON_GOAL_CONTRACT"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/pyproject.toml",
+          "role": "UPSTREAM_VERSION_LICENSE_AND_RUNTIME_METADATA"
+        }
+      ],
+      "dependencies": [
+        "ignition/function-os-candidate/v0.2/function_os/",
+        "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+        "ignition/function-os-candidate/v0.2/pyproject.toml"
+      ],
+      "good_for": [
+        "Run one declared deterministic symbolic function with one output and 1 to 16 explicitly supplied numeric or boolean inputs.",
+        "Inspect the N1-N7 execution status, in-memory artifact integrity report, trace, and N7 internal consistency checks for a bounded specification."
+      ],
+      "not_for": [
+        "Executing untrusted or malicious code, acting as an isolated security sandbox, or processing arbitrary Python expressions.",
+        "Scientific adjudication, proof, empirical validation, external truth claims, or recognition that a function models reality.",
+        "Stateful or I/O effects, multiple outputs, exponentiation, calls, attributes, N8 routing, N9 registry writes, or persisted artifacts."
+      ],
+      "only_if": [
+        "Python 3.10 or newer is available and the checked-out Function OS v0.2 source and wrapper are intact.",
+        "The caller supplies a single symbolic FunctionSpec with exactly one output, exactly pure effects, 1 to 16 declared inputs, and one output equality postcondition.",
+        "The UTF-8 JSON request is at most 16 KiB; expressions are at most 512 characters, 64 AST nodes, and depth 16; numeric inputs/constants are at most 10^12 in magnitude and arithmetic intermediates/results at most 10^100."
+      ],
+      "counterindicated_when": [
+        "Inputs or expressions are adversarial and require operating-system isolation or a security boundary.",
+        "The specification needs exponentiation, calls, attributes, strings, collections, multiple outputs, non-pure effects, or values beyond the declared bounds.",
+        "The task requires persistence, registry admission, source-backed evidence, scientific truth, proof, or external validation."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object containing exactly one bounded FunctionSpec object and one exact input-value object"
+      ],
+      "output_types": [
+        "N1-N7 execution status and single declared output when successful",
+        "in-memory artifact integrity report, execution trace, and N7 internal consistency result",
+        "source-tree and wrapper source digests"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SOURCE_AND_STDIN",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_function_os_evaluator.py",
+          "ignition/function-os-candidate/v0.2/function_os/",
+          "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+          "ignition/function-os-candidate/v0.2/pyproject.toml"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Writes the bounded JSON result to stdout; execution artifacts and traces remain in process memory and N9 is not invoked.",
+        "The wrapper disables Python bytecode writes before loading Function OS modules."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.10 standard library; no third-party runtime packages"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Execution is local and bounded by request and AST limits, but no latency or memory benchmark has been established."
+      },
+      "alternatives": [],
+      "fallback": "Use the checked-in Function OS N1-N7 tests on Python 3.10 or newer and inspect the exact specification and expected outputs manually; do not substitute eval, a general Python runner, or a scientific-validity claim.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_function_os_evaluator.py"
+        ],
+        "negative_controls": [
+          "Calls, attributes, exponentiation, multiple outputs, non-pure effects, oversized inputs, and oversized intermediate arithmetic are rejected.",
+          "Duplicate JSON keys and requests over 16 KiB return nonzero with no partial stdout; division by zero is rejected by the bounded arithmetic preflight.",
+          "Precondition failure is preserved; N9 registry writes are never invoked; a passing N7 status is explicitly limited to internal consistency."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Include only through an explicit experimental-tool allowlist when the task supplies a bounded pure symbolic FunctionSpec and asks for its local N1-N7 execution report.",
+        "A route proposal never runs the function; the caller separately supplies the complete FunctionSpec and inputs to the CLI.",
+        "Never select for arbitrary code, scientific proof, truth, registry admission, or effectful execution."
+      ],
+      "claim_ceiling": "A bounded local execution report for one pure symbolic FunctionSpec through Function OS N1-N7, with internal artifact/trace consistency checks only; it does not establish specification truth, empirical or scientific correctness, proof, external validation, security isolation, registry admission, or publication status."
     }
   ]
 }

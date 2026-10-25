@@ -21,8 +21,8 @@ class ToolboxIdentityCardTests(unittest.TestCase):
     def test_projection_keeps_current_registry_and_candidate_tools_separate(self) -> None:
         document = TOOL.build_cards()
         self.assertEqual(document["current_registry"]["operation_count"], 20)
-        self.assertEqual(document["candidate_cards"]["candidate_count"], 5)
-        self.assertEqual(document["card_count"], 25)
+        self.assertEqual(document["candidate_cards"]["candidate_count"], 6)
+        self.assertEqual(document["card_count"], 26)
         current = [card for card in document["cards"] if card["card_kind"] == "CURRENT_OPERATION_REGISTRY_PROJECTION"]
         candidates = [card for card in document["cards"] if card["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"]
         self.assertEqual(len(current), 20)
@@ -51,6 +51,13 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(reader["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertEqual(reader["permissions"]["write_paths"], [])
         self.assertIn("both identity registries source-hashed", reader["claim_ceiling"])
+        function_os = next(card for card in candidates if card["tool_id"] == "function_os.run_bounded_symbolic_spec")
+        self.assertEqual(function_os["execution_mode"], "READ_ONLY_RUN")
+        self.assertEqual(function_os["evidence_level"], "REAL_TOOL_TEST")
+        self.assertEqual(function_os["permissions"]["write_paths"], [])
+        self.assertFalse(function_os["permissions"]["network"])
+        self.assertIn("security isolation", function_os["claim_ceiling"])
+        self.assertIn("isolated security sandbox", " ".join(function_os["not_for"]))
 
     def test_candidate_catalog_schema_and_source_pin_are_valid(self) -> None:
         validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"
