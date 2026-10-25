@@ -72,7 +72,36 @@
   ],
   "replacement_or_retirement": "No existing tool is shown to cover all of its valuable uses. Keep the timeline tool for interval-only analysis and the repeated-step analyzer for multi-run history; retain this optional specialist for plan/artifact/receipt attribution.",
   "uncertainty_and_limits": [
-    "No runtime, analyst-time, resource-use, billed-minute, cash-cost, savings, or waste comparison was performed.",
-    "The source snapshot and artifact inventory are caller-supplied and unauthenticated by this tool; this comparison does not certify CI or target results."
-  ]
+    "The follow-up route trial measured local wall time, child CPU and input/output bytes for three fresh CLI samples on one machine; these observations are task-specific and do not establish general performance or resource cost.",
+    "No analyst-time, token, hosted-runner billable-minute, cash-cost, savings, or waste comparison was performed.",
+    "The source snapshot and artifact inventory are caller-supplied and unauthenticated by this tool; neither the functional comparison nor the route trial certifies CI or target results."
+  ],
+  "follow_up_route_trial": {
+    "observed_at_utc": "2026-10-25T13:54:10Z",
+    "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json",
+    "same_task": "PR #264 run 40064357026, same plan, Actions snapshot and artifact inventory",
+    "sample_count_per_executed_variant": 3,
+    "local_cli_medians": {
+      "timeline_only": {
+        "wall_ms": 30.032,
+        "child_cpu_ms": 27.233,
+        "input_bytes": 13531,
+        "output_bytes": 16521
+      },
+      "attribution_only": {
+        "wall_ms": 28.975,
+        "child_cpu_ms": 27.024,
+        "input_bytes": 122646,
+        "output_bytes": 3357
+      },
+      "timeline_plus_attribution": {
+        "wall_ms": 54.409,
+        "child_cpu_ms": 51.481,
+        "input_bytes": 136177,
+        "output_bytes": 19878
+      }
+    },
+    "outcome": "Attribution-only met the frozen job-level plan/artifact/receipt contract. Timeline-only met an interval-only contract but not the full attribution contract. The two-tool counterfactual added no required fact for this task and the adaptive router selected attribution alone.",
+    "interpretation_limit": "One local task and three subprocess samples only. No general runtime, analyst-time, token, hosted-runner billing, cash-cost, savings, waste or reliability claim."
+  }
 }

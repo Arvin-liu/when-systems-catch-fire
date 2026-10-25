@@ -2,9 +2,9 @@
   "schema_version": "ignition.toolbox-publication-metadata-cross-source-route-evidence-r0",
   "experiment_id": "ROUTE-20261025-GAP001-05-CROSS-PROVIDER-RETRIEVAL-AND-COMPARISON",
   "candidate_base": "5940dd1e25142545e2345c0126d1384ebca6121d",
-  "candidate_catalog_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
-  "candidate_catalog_prior_git_blob_sha1": "933a349b5d7e34df3a9d46c42896e9ec236a9831",
-  "candidate_catalog_refresh_note": "The new default-off plan/artifact attribution candidate was appended; existing selected-tool outcomes were revalidated by focused routing tests and remain unchanged.",
+  "candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8",
+  "candidate_catalog_prior_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
+  "candidate_catalog_refresh_note": "The candidate card now includes bounded same-task route measurements. Routing decisions were re-run under the new catalog; tool inputs, outputs, permissions, and selected-tool outcomes remain unchanged.",
   "source_retrieval_stage": {
     "task_profile": {
       "task_id": "retrieve-gap001-05-cross-provider-metadata",
@@ -295,7 +295,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e"
+        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
       }
     },
     "route_result": {
@@ -600,7 +600,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e"
+        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
       }
     },
     "extra_options_result": {
@@ -905,7 +905,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e"
+        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
       }
     }
   },
@@ -1345,7 +1345,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e"
+        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
       }
     },
     "route_result": {
@@ -1594,7 +1594,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e"
+        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
       }
     },
     "extra_options_result": {
@@ -1843,7 +1843,7 @@
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "7e381aafb5b8f150744d8b02a9eb82ced7004e3e"
+        "experimental_candidate_catalog_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
       }
     }
   },
@@ -1863,5 +1863,10 @@
       "status": "METADATA_FIELDS_AGREE"
     }
   ],
-  "interpretation": "The actual task was routed in two stages. The public retrieval stage selects both provider adapters because the task requires outputs from both; its host allowlist is limited to api.crossref.org and api.openalex.org. The local comparison stage selects only the comparator after those outputs exist. Default light routing leaves each stage incomplete, while adding PubMed/context candidates does not change selected tools. Both route plans remain proposals with execution_authorized=false; public calls were separately made through explicit CLI flags."
+  "interpretation": "The actual task was routed in two stages. The public retrieval stage selects both provider adapters because the task requires outputs from both; its host allowlist is limited to api.crossref.org and api.openalex.org. The local comparison stage selects only the comparator after those outputs exist. Default light routing leaves each stage incomplete, while adding PubMed/context candidates does not change selected tools. Both route plans remain proposals with execution_authorized=false; public calls were separately made through explicit CLI flags.",
+  "candidate_catalog_history": [
+    "933a349b5d7e34df3a9d46c42896e9ec236a9831",
+    "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
+    "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+  ]
 }

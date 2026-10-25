@@ -27,7 +27,7 @@
     },
     {
       "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "sha256": "3e90229c81ef41e7ce5272c112790e0d48798517cae54172e8474e385adc8c86"
+      "sha256": "9340750609c92e4ef37a5dd20819605fff676086c80ffcb2e4f85204fc79859b"
     },
     {
       "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
@@ -77,5 +77,264 @@
     "Explicit allowlisting selects exactly this candidate and completes the declared output coverage, while execution_authorized remains false.",
     "The selected candidate remains READ_ONLY_RUN with empty write paths and network, secrets, billing, and external actions all false."
   ],
-  "claim_ceiling": "A route-planner proposal only. It does not invoke the candidate, authenticate inputs, change permissions, certify validation, or authorize merge/release."
+  "claim_ceiling": "A route-planner proposal only. It does not invoke the candidate, authenticate inputs, change permissions, certify validation, or authorize merge/release.",
+  "end_to_end_task_trials": {
+    "observed_at_utc": "2026-10-25T13:55:34Z",
+    "task_contract": {
+      "task_id": "pr264-run-40064357026-plan-run-artifact-target-attribution",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "required_outputs": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ],
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ],
+      "success_criteria": [
+        "verify plan digest and selected target list",
+        "bind run ID, attempt, PR base and head",
+        "report artifact ID, digest and supplied file inventory",
+        "report receipt presence without inferring target pass or fail",
+        "preserve job conclusions and observed job interval seconds"
+      ],
+      "excluded_from_this_task": "Detailed per-step interval listing; it is available from the timeline tool but is not needed for this plan/target/artifact attribution question.",
+      "input_types": [
+        "UTF-8 JSON stdin containing one component validation plan, one workflow run/jobs snapshot, one artifact inventory with extracted basenames and completeness flag, and an optional component validation receipt.",
+        "UTF-8 JSON stdin envelope with one workflow_run object and a jobs_response containing job snapshots for the same run ID, attempt, and head SHA"
+      ]
+    },
+    "route_trials": [
+      {
+        "scenario": "default_full_task",
+        "task_id": "pr264-run-40064357026-plan-run-artifact-target-attribution",
+        "include_experimental_tool_ids": [],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "unmet_outputs": [
+          "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+        ],
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+      },
+      {
+        "scenario": "time_only_explicit_route",
+        "task_id": "pr264-run-40064357026-job-interval-summary-only",
+        "include_experimental_tool_ids": [
+          "maintenance.summarize_actions_step_timeline"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "maintenance.summarize_actions_step_timeline"
+        ],
+        "unmet_outputs": [],
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+      },
+      {
+        "scenario": "full_task_timeline_only_allowlist",
+        "task_id": "pr264-run-40064357026-plan-run-artifact-target-attribution",
+        "include_experimental_tool_ids": [
+          "maintenance.summarize_actions_step_timeline"
+        ],
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "unmet_outputs": [
+          "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+        ],
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+      },
+      {
+        "scenario": "minimum_sufficient_full_task",
+        "task_id": "pr264-run-40064357026-plan-run-artifact-target-attribution",
+        "include_experimental_tool_ids": [
+          "maintenance.attribute_actions_validation_evidence"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "maintenance.attribute_actions_validation_evidence"
+        ],
+        "unmet_outputs": [],
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+      },
+      {
+        "scenario": "both_allowlisted_full_task",
+        "task_id": "pr264-run-40064357026-plan-run-artifact-target-attribution",
+        "include_experimental_tool_ids": [
+          "maintenance.summarize_actions_step_timeline",
+          "maintenance.attribute_actions_validation_evidence"
+        ],
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "maintenance.attribute_actions_validation_evidence"
+        ],
+        "unmet_outputs": [],
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
+      }
+    ],
+    "measured_execution_comparison": {
+      "measurement_method": "Three fresh local CLI subprocess samples per invoked route variant; wall time and child CPU from the local macOS process, plus UTF-8 stdin/stdout bytes. No network or external runner.",
+      "default_full_task": {
+        "selected_tool_ids": [],
+        "tool_invocations": 0,
+        "decision": "INCOMPLETE",
+        "outcome": "NO_TOOL_RUN; required association outputs unavailable by default",
+        "execution_authorized": false
+      },
+      "light_baseline": {
+        "tool_ids": [
+          "maintenance.summarize_actions_step_timeline"
+        ],
+        "route_profile": "job interval summary only; same underlying run snapshot, narrower output contract",
+        "execution": {
+          "sample_count": 3,
+          "wall_ms": {
+            "samples": [
+              30.049,
+              30.032,
+              28.079
+            ],
+            "median": 30.032
+          },
+          "child_cpu_ms": {
+            "samples": [
+              27.233,
+              28.407,
+              26.7
+            ],
+            "median": 27.233
+          },
+          "input_bytes_per_sample": 13531,
+          "output_bytes_per_sample": 16521,
+          "output_sha256_per_sample": "02c59161e4ff80a940ffab85c4af2a61039ce6ab223b5c0cfc13bfd1968f458a"
+        },
+        "task_outcome": "COMPLETE_FOR_INTERVAL_ONLY; INSUFFICIENT_FOR_FULL_PLAN_ARTIFACT_RECEIPT_CONTRACT",
+        "observed_facts": {
+          "run_id": 40064357026,
+          "conclusion": "cancelled",
+          "job_count": 2,
+          "step_count": 65,
+          "sum_observed_job_intervals_seconds": 1998.0
+        },
+        "missing_full_task_outputs": [
+          "plan digest and selected targets",
+          "artifact inventory and receipt-presence interpretation"
+        ]
+      },
+      "minimum_sufficient_route": {
+        "tool_ids": [
+          "maintenance.attribute_actions_validation_evidence"
+        ],
+        "execution": {
+          "sample_count": 3,
+          "wall_ms": {
+            "samples": [
+              31.133,
+              28.975,
+              28.9
+            ],
+            "median": 28.975
+          },
+          "child_cpu_ms": {
+            "samples": [
+              28.856,
+              27.024,
+              26.852
+            ],
+            "median": 27.024
+          },
+          "input_bytes_per_sample": 122646,
+          "output_bytes_per_sample": 3357,
+          "output_sha256_per_sample": "772ab7aaab899d283d25a572942ad12e8daa057cec8b5b8b0f7c36259dd75f2f"
+        },
+        "task_outcome": "COMPLETE_FOR_FROZEN_TASK_CONTRACT",
+        "observed_facts": {
+          "plan_mode": "FULL",
+          "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+          "target_count": 11,
+          "receipt_presence": "ABSENT_FROM_SUPPLIED_COMPLETE_FILE_LIST",
+          "job_conclusions": [
+            "cancelled",
+            "cancelled"
+          ],
+          "job_intervals_seconds": [
+            1949.0,
+            49.0
+          ],
+          "sum_observed_job_intervals_seconds": 1998.0
+        },
+        "output_sha256": "772ab7aaab899d283d25a572942ad12e8daa057cec8b5b8b0f7c36259dd75f2f"
+      },
+      "redundant_counterfactual": {
+        "tool_ids": [
+          "maintenance.summarize_actions_step_timeline",
+          "maintenance.attribute_actions_validation_evidence"
+        ],
+        "execution": {
+          "sample_count": 3,
+          "wall_ms": {
+            "samples": [
+              54.819,
+              54.409,
+              54.017
+            ],
+            "median": 54.409
+          },
+          "child_cpu_ms": {
+            "samples": [
+              51.75,
+              51.481,
+              51.192
+            ],
+            "median": 51.481
+          },
+          "input_bytes_per_sample": 136177,
+          "output_bytes_per_sample": 19878,
+          "tool_call_output_sha256s_per_sample": [
+            "02c59161e4ff80a940ffab85c4af2a61039ce6ab223b5c0cfc13bfd1968f458a",
+            "772ab7aaab899d283d25a572942ad12e8daa057cec8b5b8b0f7c36259dd75f2f"
+          ]
+        },
+        "task_outcome": "COMPLETE; no additional required job-interval fact beyond attribution output; standalone timeline adds unused per-step detail for this frozen task",
+        "timeline_summary_equal_to_attribution": true,
+        "selected_by_adaptive_router": false,
+        "reason_not_selected": "With both IDs allowlisted, the planner selected the attribution tool alone for this job-level task; the extra timeline invocation was measured only as a redundant counterfactual."
+      }
+    },
+    "result_and_cost_interpretation": [
+      "The default-off route correctly did not call either experimental tool and left this specialist task incomplete.",
+      "The explicitly selected light timeline route completed only the narrower interval task; it did not bind the plan, target list or artifact receipt.",
+      "The attribution tool alone met the frozen job-level attribution contract. Allowlisting both still selected only attribution.",
+      "Manually running timeline plus attribution as a counterfactual reproduced the same required interval facts and added unnecessary step details and a second process. In these three local samples its median wall/CPU time and I/O bytes are reported above; this is task-local evidence, not a general performance claim."
+    ],
+    "limits": [
+      "One real PR #264 run fixture; caller-supplied and unauthenticated inputs.",
+      "No cash, hosted-runner billing, token cost, long-run reliability or general performance claim.",
+      "Observed 1,998 seconds are recorded workflow job intervals, not the experiment process time and not billable minutes.",
+      "Router proposals do not invoke the tool or grant authority. The experiment explicitly allowlisted and manually executed only offline read-only CLIs."
+    ],
+    "source_files": [
+      {
+        "path": "ignition/tests/fixtures/toolbox-actions-validation-attribution/input-run-40064357026-r0.json",
+        "sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b"
+      },
+      {
+        "path": "ignition/tools/toolbox_actions_validation_attribution.py",
+        "sha256": "9ac1000a812e5abf3207a361aa5499ed61e080685a527738613fd683581a2558"
+      },
+      {
+        "path": "ignition/tools/toolbox_actions_step_timeline.py",
+        "sha256": "8ce2a1660dbac7f41384e19b15884387b848cd7ab7cc1a780f19a5ac148e457f"
+      },
+      {
+        "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+        "sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83"
+      },
+      {
+        "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+        "git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8"
+      }
+    ]
+  }
 }
