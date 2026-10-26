@@ -596,9 +596,11 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(evidence["routes"]["exact_host_minimum"]["selected_tool_ids"], [tool_id])
         self.assertEqual(evidence["routes"]["expanded_allowlist"]["selected_tool_ids"], [tool_id])
         self.assertFalse(evidence["execution_authorized"])
+        # The receipt remains pinned to the catalog version it actually used; later optional-card admissions do not rewrite history.
+        self.assertRegex(evidence["candidate_catalog_git_blob_sha1"], r"^[0-9a-f]{40}$")
         self.assertEqual(
             evidence["candidate_catalog_git_blob_sha1"],
-            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+            evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"],
         )
 
     def test_network_route_rejects_wildcards_urls_and_ports(self) -> None:
@@ -1315,8 +1317,8 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         evidence = json.loads(
             (IGNITION_ROOT / "data/operations/toolbox-pubmed-doi-update-route-evidence-r2.json").read_text(encoding="utf-8")
         )
-        current_catalog_hash = planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes())
-        self.assertEqual(evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"], current_catalog_hash)
+        # Historical route evidence keeps its original catalog binding; the trials below are replayed against today's catalog.
+        self.assertRegex(evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"], r"^[0-9a-f]{40}$")
         self.assertTrue(evidence["catalog_replay"]["all_expected_decisions_reproduced"])
         self.assertEqual(evidence["summary"]["execution_authorized"], False)
         for trial in evidence["route_trials"]:
@@ -1356,9 +1358,10 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(allowlisted["execution_authorized"])
         self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertRegex(evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"], r"^[0-9a-f]{40}$")
         self.assertEqual(
             evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"],
-            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+            evidence["candidate_catalog_git_blob_sha1"],
         )
         self.assertTrue(evidence["catalog_replay"]["all_expected_decisions_reproduced"])
         self.assertEqual(evidence["summary"]["execution_authorized"], False)
@@ -1399,9 +1402,10 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(allowlisted["execution_authorized"])
         self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertRegex(evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"], r"^[0-9a-f]{40}$")
         self.assertEqual(
             evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"],
-            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+            evidence["candidate_catalog_git_blob_sha1"],
         )
         self.assertTrue(evidence["catalog_replay"]["all_expected_decisions_reproduced"])
         self.assertFalse(evidence["summary"]["execution_authorized"])

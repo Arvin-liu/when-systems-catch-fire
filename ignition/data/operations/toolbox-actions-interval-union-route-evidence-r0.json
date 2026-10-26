@@ -1,0 +1,85 @@
+{
+  "schema_version": "toolbox-actions-interval-union-route-evidence-r0",
+  "task_profile_path": "ignition/data/operations/toolbox-actions-interval-union-route-profile-r0.json",
+  "scenario_results": {
+    "default_off": {
+      "allowlisted_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Per-run and aggregate observed job interval sum, interval union, excess overlap seconds, maximum concurrent observed jobs, completeness flags, anomaly list, and input/tool digests."
+      ],
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "new_tool_rejection": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+    },
+    "repeated_step_only_insufficient": {
+      "allowlisted_tool_ids": [
+        "maintenance.compare_actions_repeated_step_sequences"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Per-run and aggregate observed job interval sum, interval union, excess overlap seconds, maximum concurrent observed jobs, completeness flags, anomaly list, and input/tool digests."
+      ],
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "insufficiency": "The existing batch analyzer has no interval-union output, so the requested output remains unmet."
+    },
+    "adequate_explicit_allowlist": {
+      "allowlisted_tool_ids": [
+        "maintenance.summarize_actions_interval_union"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.summarize_actions_interval_union"
+      ],
+      "unmet_outputs": [],
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      }
+    },
+    "redundant_allowlist": {
+      "allowlisted_tool_ids": [
+        "maintenance.summarize_actions_interval_union",
+        "maintenance.compare_actions_repeated_step_sequences",
+        "maintenance.summarize_actions_step_timeline"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.summarize_actions_interval_union"
+      ],
+      "unmet_outputs": [],
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "unused_tools_not_selected": [
+        "maintenance.compare_actions_repeated_step_sequences",
+        "maintenance.summarize_actions_step_timeline"
+      ],
+      "planner_rejected_candidates": [
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ]
+    }
+  },
+  "scenario_result_set_sha256": "74ab7d432ce2df786f2075add7914f0ff63813310217f0a92451749919072fcb",
+  "source_refs": {
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "experimental_candidate_catalog_git_blob_sha1": "00d4774e2446030b9dee906b0c073d4015bd192d"
+  },
+  "planner_execution_authorized": false,
+  "claim_ceiling": "Route proposal comparison only; no analyzer invocation, network access, billing estimate, execution authorization, CI decision, or release permission."
+}

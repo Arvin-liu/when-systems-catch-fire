@@ -1,0 +1,15 @@
+{
+  "task_id": "pr264-multi-run-observed-interval-union",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON with 2–20 caller-supplied workflow_run/jobs_response snapshots sharing workflow ID, path, event, pull request, and base SHA; each job interval is timezone-aware ISO-8601 or explicitly missing.",
+    "UTF-8 JSON stdin object containing 2–20 workflow_run/jobs_response snapshots for one workflow/event/PR/base context"
+  ],
+  "required_outputs": [
+    "Per-run and aggregate observed job interval sum, interval union, excess overlap seconds, maximum concurrent observed jobs, completeness flags, anomaly list, and input/tool digests."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "purpose": "Summarize observed job interval union and overlap across the four supplied PR #264 run snapshots."
+}
