@@ -1,0 +1,13 @@
+{
+  "task_id": "homepage-main-readiness-decomposition-comparison",
+  "current_ref": "Arvin-liu/when-systems-catch-fire#264@8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+  "input_types": [
+    "Typed caller-supplied task DAG alternatives with executor and validator contracts, required outputs, and a bounded resource budget."
+  ],
+  "required_outputs": [
+    "Caller-declared task decomposition solvability comparison report."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

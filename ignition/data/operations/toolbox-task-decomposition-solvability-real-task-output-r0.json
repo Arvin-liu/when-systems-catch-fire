@@ -1,0 +1,203 @@
+{
+  "alternative_count": 2,
+  "alternatives": [
+    {
+      "alternative_id": "focused_homepage_checks_only",
+      "blockers": [
+        "REQUIRED_TASK_OUTPUTS_NOT_PRODUCED:formal_main_release_readiness"
+      ],
+      "dependency_order": [
+        "compare_copy",
+        "run_focused_homepage_tests"
+      ],
+      "required_output_types": [
+        "formal_main_release_readiness"
+      ],
+      "resource_estimate": {
+        "basis": "Caller-declared per-unit estimates summed serially; no execution or calibration was performed.",
+        "budget": {
+          "max_action_count": 8,
+          "max_output_bytes": 65536,
+          "max_wall_clock_seconds": 600
+        },
+        "status": "UNKNOWN",
+        "total": null
+      },
+      "status": "UNSOLVABLE_AS_DECLARED",
+      "unit_results": [
+        {
+          "blockers": [],
+          "capability_id": "compare_owner_copy_to_candidate",
+          "produced_output_types": [
+            "homepage_copy_match_receipt"
+          ],
+          "required_input_types": [
+            "homepage_candidate_ref",
+            "owner_source_sha"
+          ],
+          "status": "SOLVABLE_AS_DECLARED",
+          "unit_id": "compare_copy",
+          "unknowns": [],
+          "validator_ids": [
+            "verify_source_candidate_blob_equality"
+          ]
+        },
+        {
+          "blockers": [],
+          "capability_id": "run_human_front_door_targeted_suite",
+          "produced_output_types": [
+            "human_front_door_test_receipt"
+          ],
+          "required_input_types": [
+            "homepage_candidate_ref"
+          ],
+          "status": "SOLVABLE_AS_DECLARED",
+          "unit_id": "run_focused_homepage_tests",
+          "unknowns": [],
+          "validator_ids": [
+            "verify_target_test_exit_and_count"
+          ]
+        }
+      ],
+      "unknowns": []
+    },
+    {
+      "alternative_id": "current_protected_main_release_path",
+      "blockers": [
+        "run_full_foundation_gate:CAPABILITY_DECLARED_UNAVAILABLE"
+      ],
+      "dependency_order": [
+        "compare_copy",
+        "run_focused_homepage_tests",
+        "read_current_release_gate",
+        "run_full_foundation_gate",
+        "evaluate_main_release_readiness"
+      ],
+      "required_output_types": [
+        "formal_main_release_readiness"
+      ],
+      "resource_estimate": {
+        "basis": "Caller-declared per-unit estimates summed serially; no execution or calibration was performed.",
+        "budget": {
+          "max_action_count": 8,
+          "max_output_bytes": 65536,
+          "max_wall_clock_seconds": 600
+        },
+        "status": "UNKNOWN",
+        "total": null
+      },
+      "status": "UNSOLVABLE_AS_DECLARED",
+      "unit_results": [
+        {
+          "blockers": [],
+          "capability_id": "compare_owner_copy_to_candidate",
+          "produced_output_types": [
+            "homepage_copy_match_receipt"
+          ],
+          "required_input_types": [
+            "homepage_candidate_ref",
+            "owner_source_sha"
+          ],
+          "status": "SOLVABLE_AS_DECLARED",
+          "unit_id": "compare_copy",
+          "unknowns": [],
+          "validator_ids": [
+            "verify_source_candidate_blob_equality"
+          ]
+        },
+        {
+          "blockers": [],
+          "capability_id": "run_human_front_door_targeted_suite",
+          "produced_output_types": [
+            "human_front_door_test_receipt"
+          ],
+          "required_input_types": [
+            "homepage_candidate_ref"
+          ],
+          "status": "SOLVABLE_AS_DECLARED",
+          "unit_id": "run_focused_homepage_tests",
+          "unknowns": [],
+          "validator_ids": [
+            "verify_target_test_exit_and_count"
+          ]
+        },
+        {
+          "blockers": [],
+          "capability_id": "read_formal_pr_and_branch_protection",
+          "produced_output_types": [
+            "formal_required_checks_snapshot"
+          ],
+          "required_input_types": [
+            "formal_main_ref",
+            "formal_pr_head"
+          ],
+          "status": "SOLVABLE_AS_DECLARED",
+          "unit_id": "read_current_release_gate",
+          "unknowns": [],
+          "validator_ids": [
+            "bind_pr_head_to_required_check_snapshot"
+          ]
+        },
+        {
+          "blockers": [
+            "CAPABILITY_DECLARED_UNAVAILABLE"
+          ],
+          "capability_id": "run_required_full_foundation",
+          "produced_output_types": [
+            "foundation_validation_receipt"
+          ],
+          "required_input_types": [
+            "formal_pr_head"
+          ],
+          "status": "BLOCKED_AS_DECLARED",
+          "unit_id": "run_full_foundation_gate",
+          "unknowns": [],
+          "validator_ids": [
+            "verify_required_foundation_status"
+          ]
+        },
+        {
+          "blockers": [],
+          "capability_id": "evaluate_current_protected_release_contract",
+          "produced_output_types": [
+            "formal_main_release_readiness"
+          ],
+          "required_input_types": [
+            "formal_required_checks_snapshot",
+            "foundation_validation_receipt",
+            "homepage_copy_match_receipt",
+            "human_front_door_test_receipt"
+          ],
+          "status": "SOLVABLE_AS_DECLARED",
+          "unit_id": "evaluate_main_release_readiness",
+          "unknowns": [],
+          "validator_ids": [
+            "recompute_release_gate_from_bound_evidence"
+          ]
+        }
+      ],
+      "unknowns": []
+    }
+  ],
+  "claim_ceiling": "Deterministic consistency of caller-declared task graphs, capability/validator contracts, and bounded cost estimates only; no actual solvability, success probability, task correctness, executor availability, validator execution, authority, or scientific validity is established.",
+  "comparison_status": "CALLER_DECLARED_ALTERNATIVES_COMPARED",
+  "declaration_limits": [
+    "Capability and validator availability are caller declarations, not live observations.",
+    "Validator contracts were checked structurally; validators were not executed.",
+    "Executors were not invoked and no task output was produced."
+  ],
+  "disposition": "NO_ALTERNATIVE_SOLVABLE_AS_DECLARED",
+  "execution_authorized": false,
+  "executors_invoked": false,
+  "input_sha256": "cc3585904af420a471eb1906df6342c17c861f063845314bd8b1fdd72f6346af",
+  "resource_frontier": {
+    "alternative_ids": [],
+    "basis": "Caller-declared serial estimates only; no empirical success or calibrated cost ranking.",
+    "status": "NOT_EVALUATED_NO_FEASIBLE_ALTERNATIVE"
+  },
+  "schema_version": "task-decomposition-solvability-output-r0",
+  "structural_leader_id": null,
+  "task_id": "homepage-main-release-readiness-20261026",
+  "task_revision": "source-4e1e3ae8-candidate-a081fe47-formal-main-483658e2-pr264-8230dc6c",
+  "validators_executed": false
+}

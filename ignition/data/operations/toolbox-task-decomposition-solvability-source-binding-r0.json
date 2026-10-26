@@ -1,0 +1,51 @@
+{
+  "schema_version": "toolbox-task-decomposition-solvability-source-binding-r0",
+  "binding_status": "PINNED_PROPOSAL_AND_CURRENT_INTERFACE_GAP",
+  "owner_direction": {
+    "repository": "Arvin-liu/1111",
+    "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "blob_sha1": "d0e85f7baeb55ec538189e2657c33e4759d704ef",
+    "relevant_requirements": [
+      "Implement deduplicated, reversible optional tools when dependencies are available and focused checks reveal no unacceptable effect.",
+      "Keep additions default off, provide precise identity cards, and separate entry from invocation.",
+      "Use focused checks during development; do not start Full Foundation for this work.",
+      "Preserve one Owner decision entry in 1111 PR #143 and obey protected-main requirements."
+    ]
+  },
+  "blueprint_question": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "ref": "main",
+    "commit": "9a865118dbd0ae84dbed716b8c03accc395e7047",
+    "backlog": {
+      "path": "BACKLOG.md",
+      "blob_sha1": "5cd3335724d345fbf3c7b2d0f9ea0f06fb2fcf41",
+      "line": 21,
+      "status": "NEEDS_GAP_AUDIT",
+      "summary": "Compare alternative task decompositions by downstream executor/validator solvability rather than planner confidence alone."
+    },
+    "question_source": {
+      "path": "iterations/2026-10-05-literature-scan-architecture-iteration.md",
+      "blob_sha1": "17bf6494fa214a7aa9c35941a43cdb25ebbbbd76",
+      "lines": "373-377",
+      "question": "Does Current task decomposition/scheduler reason about downstream validator/executor solvability when choosing among alternative decompositions, or only schedule a decomposition after it exists?"
+    },
+    "authority_limit": "This Workbench source records a proposal and gap question; it is not Formal Current authority or evidence of runtime performance."
+  },
+  "current_formal_surface": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "baseline_main": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "scheduler": {
+      "path": "ignition/agent_runtime/scheduler.py",
+      "blob_sha1": "b4b5bf762330a19181d3f769dac45d37fa2626b3",
+      "interface_observation": "WorkUnit declares run_id, depends_on, executor_id, resource intents, action/output budgets, priority, deadline, retry limit, and policy digest. It has no typed task input/output or validator contract and schedules an already-selected work graph."
+    },
+    "route_planner": {
+      "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+      "blob_sha1": "05d59ab389a96d3971ae882d199a160ecc55c9b3",
+      "interface_observation": "The planner covers typed required outputs with registered operation IDs and explicitly allowlisted experimental cards. It returns a route proposal and does not compare alternative work-unit DAGs or execute the selected tools."
+    },
+    "gap_disposition": "A bounded pre-execution comparison of caller-declared DAGs by input reachability, executor output contracts, validator coverage, and resource declarations is not supplied by these interfaces. This candidate does not add a second scheduler, Current registry, or authority plane."
+  },
+  "claim_ceiling": "Exact source binding and a code-contract gap observation only. This record does not establish actual task solvability, quality improvement, provider availability, or runtime performance."
+}

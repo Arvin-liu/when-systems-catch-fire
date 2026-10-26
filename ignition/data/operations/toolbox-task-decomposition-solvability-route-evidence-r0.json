@@ -1,0 +1,71 @@
+{
+  "schema_version": "toolbox-task-decomposition-solvability-route-evidence-r0",
+  "tool_id": "planning.compare_task_decomposition_solvability",
+  "route_profile_ref": "ignition/data/operations/toolbox-task-decomposition-solvability-route-profile-r0.json",
+  "route_planner_source_ref": "ignition/tools/operations/plan_ignition_operation_run.py",
+  "route_planner_invocation_count": 3,
+  "route_trials": [
+    {
+      "trial_id": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "rejected_candidate_reasons": [
+        {
+          "tool_id": "planning.compare_task_decomposition_solvability",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_tool_invocation_count": 0,
+      "planner_output_projection_sha256": "cff05cd1c1ec628aaf442ca2d5bdd748c09559c86323baef0b25ade7700bd5b1"
+    },
+    {
+      "trial_id": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "planning.compare_task_decomposition_solvability"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "planning.compare_task_decomposition_solvability"
+      ],
+      "rejected_candidate_reasons": [
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_tool_invocation_count": 0,
+      "planner_output_projection_sha256": "1673d382d8534f4d3aeee599ce386478c1d6f8b3679ceaac509d306bbdc59a95"
+    },
+    {
+      "trial_id": "with_unrelated_candidate",
+      "include_experimental_tool_ids": [
+        "planning.compare_task_decomposition_solvability",
+        "research.compare_evidence_update_snapshots"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "planning.compare_task_decomposition_solvability"
+      ],
+      "rejected_candidate_reasons": [
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "execution_authorized": false,
+      "candidate_tool_invocation_count": 0,
+      "planner_output_projection_sha256": "9d1099f6a64dac6ab277dad8cfad78dc3953fb33163293879002d38c3de05438"
+    }
+  ],
+  "provider_call_count": 0,
+  "candidate_tool_invocation_count": 0,
+  "execution_authorized": false,
+  "interpretation": "Route planner results are proposals only. The default profile excludes the optional tool; an explicit experimental allowlist permits a route proposal. An unrelated read-only experimental candidate is rejected for input mismatch. This evidence does not invoke the candidate or grant task authority. The planner-output digest excludes source_refs to avoid a candidate-catalog/evidence self-reference cycle."
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "task-decomposition-solvability-input-r0",
+  "task_id": "fixture-research-brief",
+  "task_revision": "fixture-r0",
+  "task_input_types": ["question_text"],
+  "required_output_types": ["validated_report"],
+  "resource_budget": {"max_action_count": 4, "max_wall_clock_seconds": 30, "max_output_bytes": 8000},
+  "capability_contracts": [
+    {"capability_id": "quick_draft", "availability": "AVAILABLE", "accepted_input_types": ["question_text"], "produced_output_types": ["draft_report"]},
+    {"capability_id": "source_retrieval", "availability": "AVAILABLE", "accepted_input_types": ["question_text"], "produced_output_types": ["source_notes"]},
+    {"capability_id": "synthesis", "availability": "AVAILABLE", "accepted_input_types": ["question_text", "source_notes"], "produced_output_types": ["draft_report"]},
+    {"capability_id": "independent_review", "availability": "AVAILABLE", "accepted_input_types": ["draft_report"], "produced_output_types": ["validated_report"]},
+    {"capability_id": "combined_production_review", "availability": "AVAILABLE", "accepted_input_types": ["question_text"], "produced_output_types": ["validated_report"]}
+  ],
+  "validator_contracts": [
+    {"validator_id": "source_notes_validator", "availability": "AVAILABLE", "accepted_input_types": ["source_notes"], "validated_output_types": ["source_notes"]},
+    {"validator_id": "draft_report_validator", "availability": "AVAILABLE", "accepted_input_types": ["draft_report"], "validated_output_types": ["draft_report"]},
+    {"validator_id": "validated_report_validator", "availability": "AVAILABLE", "accepted_input_types": ["validated_report"], "validated_output_types": ["validated_report"]}
+  ],
+  "alternatives": [
+    {"alternative_id": "unchecked_shortcut", "work_units": [
+      {"unit_id": "draft_only", "depends_on": [], "required_input_types": ["question_text"], "produced_output_types": ["validated_report"], "capability_id": "quick_draft", "validator_ids": [], "estimated_cost": {"action_count": 1, "wall_clock_seconds": 4, "output_bytes": 1200}}
+    ]},
+    {"alternative_id": "staged_verified", "work_units": [
+      {"unit_id": "gather", "depends_on": [], "required_input_types": ["question_text"], "produced_output_types": ["source_notes"], "capability_id": "source_retrieval", "validator_ids": ["source_notes_validator"], "estimated_cost": {"action_count": 1, "wall_clock_seconds": 2, "output_bytes": 1000}},
+      {"unit_id": "synthesize", "depends_on": ["gather"], "required_input_types": ["question_text", "source_notes"], "produced_output_types": ["draft_report"], "capability_id": "synthesis", "validator_ids": ["draft_report_validator"], "estimated_cost": {"action_count": 1, "wall_clock_seconds": 5, "output_bytes": 1500}},
+      {"unit_id": "review", "depends_on": ["synthesize"], "required_input_types": ["draft_report"], "produced_output_types": ["validated_report"], "capability_id": "independent_review", "validator_ids": ["validated_report_validator"], "estimated_cost": {"action_count": 1, "wall_clock_seconds": 6, "output_bytes": 1000}}
+    ]},
+    {"alternative_id": "combined_verified", "work_units": [
+      {"unit_id": "combined", "depends_on": [], "required_input_types": ["question_text"], "produced_output_types": ["validated_report"], "capability_id": "combined_production_review", "validator_ids": ["validated_report_validator"], "estimated_cost": {"action_count": 1, "wall_clock_seconds": 18, "output_bytes": 5000}}
+    ]}
+  ]
+}
