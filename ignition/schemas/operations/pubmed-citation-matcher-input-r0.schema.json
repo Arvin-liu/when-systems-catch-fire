@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:pubmed-citation-matcher-input-r0",
+  "title": "PubMed Citation Matcher Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["journal_title", "year", "volume", "first_page", "first_author"],
+  "properties": {
+    "journal_title": {"type": "string", "minLength": 1, "maxLength": 160},
+    "year": {"type": "string", "pattern": "^[0-9]{4}$"},
+    "volume": {"type": "string", "minLength": 1, "maxLength": 32},
+    "first_page": {"type": "string", "minLength": 1, "maxLength": 32},
+    "first_author": {"type": "string", "minLength": 1, "maxLength": 100}
+  }
+}

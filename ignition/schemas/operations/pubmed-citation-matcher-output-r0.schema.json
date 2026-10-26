@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:pubmed-citation-matcher-output-r0",
+  "title": "PubMed Citation Matcher Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "tool_id", "tool_version", "source_code_sha256", "citation_sha256",
+    "source_endpoint", "retrieval_timestamp_utc", "acquisition_status", "http_status", "request_count",
+    "tool_parameter_sent", "email_sent_to_provider", "api_key_used", "response_sha256",
+    "response_binding_status", "match_status", "returned_pmid", "provider_disclaimer",
+    "provider_usage_policy", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition.pubmed-citation-matcher-r0"},
+    "tool_id": {"const": "research.match_pubmed_citation"},
+    "tool_version": {"const": "0.1.0"},
+    "source_code_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "citation_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_endpoint": {"const": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/ecitmatch.cgi"},
+    "retrieval_timestamp_utc": {"type": "string", "format": "date-time"},
+    "acquisition_status": {
+      "enum": [
+        "OK", "NETWORK_ERROR", "RATE_LIMITED", "HTTP_ERROR", "REDIRECT_BLOCKED",
+        "NON_TEXT_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "INVALID_RESPONSE_ENCODING",
+        "INVALID_RESPONSE_SHAPE", "CITATION_ECHO_MISMATCH", "UNRECOGNIZED_MATCH_VALUE"
+      ]
+    },
+    "http_status": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+    "request_count": {"const": 1},
+    "tool_parameter_sent": {"const": true},
+    "email_sent_to_provider": {"const": false},
+    "api_key_used": {"const": false},
+    "response_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "response_binding_status": {"enum": ["REQUEST_KEY_AND_NORMALIZED_CITATION_ECHO", "NOT_ESTABLISHED"]},
+    "match_status": {"enum": ["PROVIDER_MATCH_REPORTED", "NO_MATCH_REPORTED", "NOT_AVAILABLE", "NOT_EVALUATED"]},
+    "returned_pmid": {"type": ["string", "null"], "pattern": "^[1-9][0-9]{0,11}$"},
+    "provider_disclaimer": {"const": "https://www.ncbi.nlm.nih.gov/About/disclaimer.html"},
+    "provider_usage_policy": {"const": "https://www.ncbi.nlm.nih.gov/home/about/policies/"},
+    "claim_ceiling": {"type": "string", "minLength": 1, "maxLength": 1000}
+  }
+}

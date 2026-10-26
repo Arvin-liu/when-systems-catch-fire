@@ -1,0 +1,44 @@
+{
+  "schema_version": "toolbox-pubmed-citation-matcher-c1-evidence-r0",
+  "evidence_type": "LOW_COST_SAME_CITATION_PROVIDER_ROUTE_COMPARISON",
+  "task_id": "resolve-one-published-structured-citation-to-a-pubmed-id",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "compared_tool_ids": [
+    "research.search_pubmed_query",
+    "research.resolve_pubmed_identifiers"
+  ],
+  "candidate_observation": {
+    "evidence_path": "ignition/data/operations/toolbox-pubmed-citation-matcher-real-task-r0.json",
+    "prior_source_hash_success": {
+      "source_code_sha256": "801415af6c011a39f30140dc0ded9ff4ac18c9dc2f1385f947d36c50a7ee6c96",
+      "match_status": "PROVIDER_MATCH_REPORTED",
+      "matched_pmid": "2014248"
+    },
+    "final_source_hash_attempt": {
+      "source_code_sha256": "30f18c8bbb62dd9d64275fa80fe0a7ab9eb573210a7c372e9ecf0ec5b5ba1862",
+      "acquisition_status": "NETWORK_ERROR",
+      "match_status": "NOT_AVAILABLE"
+    },
+    "contact_email_sent": false
+  },
+  "same_citation_query_probe": {
+    "method": "One direct NCBI ESearch request composed from the same public structured citation fields; this was not a full invocation of research.search_pubmed_query, which requires a caller-supplied contact email and performs an ESummary stage.",
+    "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+    "http_status": 200,
+    "request_count": 1,
+    "email_sent_to_provider": false,
+    "result_count": "1",
+    "returned_ids": [
+      "2014248"
+    ],
+    "response_sha256": "cabfac52d9541163c6075129742e115453413963144c9cfaaf2ba1f364509b24"
+  },
+  "findings": [
+    "An earlier source version and one direct ESearch query generated from the same public citation both reported PMID 2014248; the final-source recheck ended in NETWORK_ERROR and is preserved.",
+    "The direct ESearch probe was not a full research.search_pubmed_query invocation because that adapter requires a caller-supplied contact email and performs an ESummary stage.",
+    "This small probe does not measure bibliographic error rates, metadata quality, broad query recall, reliability, analyst time, or monetary cost; comparison remains COMPARISON_UNKNOWN.",
+    "research.search_pubmed_query retains its broader query-to-bounded-metadata scope, while research.resolve_pubmed_identifiers accepts DOI input; neither is shown to cover all useful citation-matching or query tasks.",
+    "No tool is retired, replaced, or promoted to Current from this evidence."
+  ],
+  "claim_ceiling": "One earlier adapter source version and one direct ESearch probe returned the same PMID for a single public example; a final-source request failed with NETWORK_ERROR. This does not establish functional equivalence, comparative quality, cost superiority, source authenticity, citation correctness, or scientific support."
+}

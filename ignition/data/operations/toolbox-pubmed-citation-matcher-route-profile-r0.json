@@ -1,0 +1,20 @@
+{
+  "schema_version": "toolbox-pubmed-citation-matcher-route-profile-r0",
+  "task_id": "structured-citation-to-pubmed-id",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin object with exactly journal_title, year, volume, first_page, and first_author; public non-sensitive citation"
+  ],
+  "required_outputs": [
+    "One provider-reported PubMed PMID for the structured citation, or an explicit NO_MATCH_REPORTED observation, with citation/response hashes and bounded status"
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": [
+    "eutils.ncbi.nlm.nih.gov"
+  ],
+  "route_default": "EXCLUDED",
+  "candidate_catalog_git_blob_sha1": "cc62e34795b23d510d06dbe27e603872822998c0",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+}
