@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare caller-supplied Crossref reference rows with DOI-resolved Work metadata."""
+"""Compare selected Crossref reference rows with their source and target Work records."""
 
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ import toolbox_crossref_metadata_verifier as crossref  # noqa: E402
 
 
 TOOL_ID = "research.compare_crossref_reference_metadata"
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 MAX_REQUEST_BYTES = 32 * 1024
 MAX_REFERENCE_ROWS = 5
 MAX_REFERENCE_KEY_LENGTH = 96
@@ -80,8 +80,13 @@ def parse_request(raw: bytes) -> dict[str, Any]:
         raise
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise ToolInputError("request must be valid UTF-8 JSON") from exc
-    if not isinstance(document, dict) or set(document) != {"source_work_doi", "references"}:
-        raise ToolInputError("request must contain exactly source_work_doi and references")
+    required_keys = {"source_work_doi", "references"}
+    allowed_keys = required_keys | {"verify_source_link"}
+    if not isinstance(document, dict) or not required_keys <= set(document) or not set(document) <= allowed_keys:
+        raise ToolInputError("request must contain source_work_doi and references, plus optional verify_source_link")
+    verify_source_link = document.get("verify_source_link", False)
+    if type(verify_source_link) is not bool:
+        raise ToolInputError("verify_source_link must be a boolean")
 
     source_work_doi = document["source_work_doi"]
     if (
@@ -129,7 +134,11 @@ def parse_request(raw: bytes) -> dict[str, Any]:
             item["year"] = year
         normalized.append(item)
 
-    return {"source_work_doi": source_work_doi, "references": normalized}
+    return {
+        "source_work_doi": source_work_doi,
+        "references": normalized,
+        "verify_source_link": verify_source_link,
+    }
 
 
 def _first_text(message: dict[str, Any], key: str) -> str | None:
@@ -218,22 +227,146 @@ def _sha256_file(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def _compare_one(reference: dict[str, Any]) -> dict[str, Any]:
+def _fetch_source_work(request: dict[str, Any]) -> dict[str, Any]:
+    fetched = crossref._fetch_one(request["source_work_doi"])
+    state: dict[str, Any] = {
+        "request_attempted": True,
+        "source_work_doi": request["source_work_doi"],
+        "acquisition_status": fetched["acquisition_status"],
+        "http_status": fetched["http_status"],
+        "response_sha256": None,
+        "status": "SOURCE_WORK_ACQUISITION_FAILED",
+        "reported_reference_count": None,
+        "raw_reference_rows": [],
+    }
+    if fetched["acquisition_status"] != "OK":
+        return state
+
+    body = fetched["body"]
+    state["response_sha256"] = hashlib.sha256(body).hexdigest()
+    try:
+        document = json.loads(body.decode("utf-8", errors="strict"), object_pairs_hook=crossref._strict_object)
+    except (UnicodeDecodeError, json.JSONDecodeError, crossref.ToolInputError):
+        state["acquisition_status"] = "INVALID_JSON_RESPONSE"
+        state["status"] = "SOURCE_WORK_INVALID_JSON"
+        return state
+    message = document.get("message") if isinstance(document, dict) else None
+    if not isinstance(message, dict):
+        state["acquisition_status"] = "INVALID_CROSSREF_MESSAGE"
+        state["status"] = "SOURCE_WORK_INVALID_MESSAGE"
+        return state
+
+    source_work = _work_projection(message)
+    if source_work["doi"] is None:
+        state["source_work_identity_status"] = "WORK_DOI_NOT_REPORTED"
+    elif source_work["doi"].lower() == request["source_work_doi"].lower():
+        state["source_work_identity_status"] = "EXACT_DOI_MATCH"
+    else:
+        state["source_work_identity_status"] = "RETURNED_DOI_DIFFERS"
+    if state["source_work_identity_status"] != "EXACT_DOI_MATCH":
+        state["status"] = "SOURCE_WORK_DOI_IDENTITY_UNRESOLVED"
+        return state
+    if "reference" not in message:
+        state["status"] = "SOURCE_REFERENCES_NOT_REPORTED"
+        return state
+    raw_rows = message["reference"]
+    if not isinstance(raw_rows, list):
+        state["status"] = "SOURCE_REFERENCES_MALFORMED"
+        return state
+    state["reported_reference_count"] = len(raw_rows)
+    state["raw_reference_rows"] = raw_rows
+    state["status"] = "SOURCE_RECORD_READY"
+    return state
+
+
+def _source_reference_binding(reference: dict[str, Any], source_state: dict[str, Any]) -> dict[str, Any]:
+    result: dict[str, Any] = {
+        "status": source_state["status"],
+        "reference_key": reference["key"],
+        "source_reference_metadata": None,
+        "source_field_comparisons": {},
+    }
+    if source_state["status"] != "SOURCE_RECORD_READY":
+        return result
+
+    matches = [
+        item for item in source_state["raw_reference_rows"]
+        if isinstance(item, dict)
+        and crossref._reference_text(item.get("key"), max_length=MAX_REFERENCE_KEY_LENGTH) == reference["key"]
+    ]
+    if not matches:
+        result["status"] = "SOURCE_REFERENCE_KEY_NOT_FOUND"
+        return result
+    if len(matches) != 1:
+        result["status"] = "SOURCE_REFERENCE_KEY_AMBIGUOUS"
+        return result
+
+    projection = crossref._parse_reference_rows({"reference": [matches[0]]})
+    if not projection["rows"]:
+        result["status"] = "SOURCE_REFERENCE_ROW_MALFORMED"
+        return result
+    source_reference = projection["rows"][0]
+    result["source_reference_metadata"] = source_reference
+    source_doi = source_reference.get("doi")
+    if source_doi is None:
+        result["status"] = "SOURCE_REFERENCE_DOI_NOT_REPORTED"
+        return result
+    if source_doi.lower() != reference["doi"].lower():
+        result["status"] = "SOURCE_REFERENCE_DOI_MISMATCH"
+        return result
+
+    source_work_projection = {
+        "article_title": source_reference.get("article_title"),
+        "year": source_reference.get("year"),
+        "journal_title": source_reference.get("journal_title"),
+        "volume": source_reference.get("volume"),
+        "issue": source_reference.get("issue"),
+        "first_page": source_reference.get("first_page"),
+    }
+    result["status"] = "SOURCE_REFERENCE_DOI_MATCH"
+    result["source_field_comparisons"] = _field_comparisons(reference, source_work_projection)
+    return result
+
+
+def _compare_one(
+    reference: dict[str, Any],
+    *,
+    source_binding: dict[str, Any] | None = None,
+    verify_source_link: bool = False,
+) -> dict[str, Any]:
     retrieved_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    fetched = crossref._fetch_one(reference["doi"])
+    source_binding = source_binding or {
+        "status": "NOT_REQUESTED",
+        "reference_key": reference["key"],
+        "source_reference_metadata": None,
+        "source_field_comparisons": {},
+    }
     result: dict[str, Any] = {
         "reference_key": reference["key"],
         "reference_doi": reference["doi"],
         "reference_fields": {key: value for key, value in reference.items() if key not in {"key", "doi"}},
         "retrieval_timestamp_utc": retrieved_at,
-        "source_url": crossref.API_BASE + urllib.parse.quote(reference["doi"], safe=""),
-        "acquisition_status": fetched["acquisition_status"],
-        "http_status": fetched["http_status"],
+        "source_reference_binding": source_binding,
+        "source_url": None,
+        "target_request_attempted": False,
+        "acquisition_status": "NOT_ATTEMPTED",
+        "http_status": None,
         "response_sha256": None,
         "crossref_work": None,
         "doi_identity_status": "NOT_CHECKED",
         "field_comparisons": {},
     }
+    if verify_source_link and source_binding["status"] != "SOURCE_REFERENCE_DOI_MATCH":
+        result["comparison_status"] = "NOT_COMPARED_SOURCE_REFERENCE_NOT_BOUND"
+        return result
+
+    result["source_url"] = crossref.API_BASE + urllib.parse.quote(reference["doi"], safe="")
+    result["target_request_attempted"] = True
+    fetched = crossref._fetch_one(reference["doi"])
+    result.update({
+        "acquisition_status": fetched["acquisition_status"],
+        "http_status": fetched["http_status"],
+    })
     if fetched["acquisition_status"] != "OK":
         result["comparison_status"] = _row_status(fetched["acquisition_status"], {})
         return result
@@ -269,16 +402,40 @@ def _compare_one(reference: dict[str, Any]) -> dict[str, Any]:
 
 
 def compare(request: dict[str, Any]) -> dict[str, Any]:
+    source_state = _fetch_source_work(request) if request["verify_source_link"] else None
     rows: list[dict[str, Any]] = []
     for index, reference in enumerate(request["references"]):
-        rows.append(_compare_one(reference))
+        binding = _source_reference_binding(reference, source_state) if source_state is not None else None
+        rows.append(_compare_one(
+            reference,
+            source_binding=binding,
+            verify_source_link=request["verify_source_link"],
+        ))
         if index + 1 < len(request["references"]):
             time.sleep(0.1)
-    failures = sum(row["acquisition_status"] != "OK" for row in rows)
+    failures = sum(row["acquisition_status"] not in {"OK", "NOT_ATTEMPTED"} for row in rows)
     identity_failures = sum(row["doi_identity_status"] != "EXACT_DOI_MATCH" for row in rows if row["acquisition_status"] == "OK")
     differences = sum(row["comparison_status"] == "FIELD_DIFFERENCES_OBSERVED" for row in rows)
     no_comparable_fields = sum(row["comparison_status"] == "NO_COMPARABLE_REFERENCE_FIELDS" for row in rows)
-    if failures or identity_failures:
+    source_binding_failures = sum(
+        row["source_reference_binding"]["status"] != "SOURCE_REFERENCE_DOI_MATCH"
+        for row in rows
+    ) if request["verify_source_link"] else 0
+    source_acquisition_failure_count = int(
+        source_state is not None and source_state["acquisition_status"] != "OK"
+    )
+    source_work_verification_failure_count = int(
+        source_state is not None
+        and source_state["acquisition_status"] == "OK"
+        and source_state["status"] != "SOURCE_RECORD_READY"
+    )
+    if (
+        failures
+        or identity_failures
+        or source_binding_failures
+        or source_acquisition_failure_count
+        or source_work_verification_failure_count
+    ):
         status = "COMPLETED_WITH_EXPLICIT_FAILURES"
     elif no_comparable_fields == len(rows):
         status = "NO_COMPARABLE_REFERENCE_FIELDS"
@@ -287,16 +444,27 @@ def compare(request: dict[str, Any]) -> dict[str, Any]:
     else:
         status = "COMPLETED_WITHOUT_FIELD_DIFFERENCES"
     return {
-        "schema_version": "ignition.crossref-reference-metadata-comparison-r0",
+        "schema_version": "ignition.crossref-reference-metadata-comparison-r1",
         "tool_id": TOOL_ID,
         "tool_version": TOOL_VERSION,
         "status": status,
         "source_work_doi": request["source_work_doi"],
-        "source_work_doi_status": "CALLER_DECLARED_NOT_AUTHENTICATED_OR_FETCHED",
+        "source_work_doi_status": (
+            "CALLER_DECLARED_NOT_AUTHENTICATED_OR_FETCHED"
+            if source_state is None
+            else source_state.get("source_work_identity_status", "NOT_VERIFIED")
+        ),
         "record_count": len(rows),
-        "request_count": len(rows),
+        "request_count": int(source_state is not None) + sum(row["target_request_attempted"] for row in rows),
         "acquisition_failure_count": failures,
         "doi_identity_failure_count": identity_failures,
+        "source_binding_mode": "VERIFY" if source_state is not None else "NOT_REQUESTED",
+        "source_work_verification": None if source_state is None else {
+            key: value for key, value in source_state.items() if key != "raw_reference_rows"
+        },
+        "source_acquisition_failure_count": source_acquisition_failure_count,
+        "source_work_verification_failure_count": source_work_verification_failure_count,
+        "source_reference_binding_failure_count": source_binding_failures,
         "rows_with_field_differences": differences,
         "rows_without_comparable_reference_fields": no_comparable_fields,
         "rows": rows,
@@ -308,9 +476,11 @@ def compare(request: dict[str, Any]) -> dict[str, Any]:
         "claim_ceiling": (
             "For up to five caller-supplied Crossref reference rows, retrieve the exact cited DOI Work metadata from "
             "api.crossref.org and report normalized field equality or difference for supplied title, year, journal, "
-            "volume, issue, and first-page values. A difference is not proof of an incorrect citation; a match does "
-            "not establish source authenticity, bibliography completeness, article content, or scientific support. "
-            "The source-work DOI and projection provenance are caller declarations only."
+            "volume, issue, and first-page values. A difference is not proof of an incorrect citation. "
+            "When verify_source_link=true, make one additional fixed-host request "
+            "to check whether each selected key and DOI occurs in the source Work's Crossref-deposited references, "
+            "then compare supplied fields with that row. This does not establish publisher/source authenticity, "
+            "citation correctness, bibliography completeness, article content, or scientific support."
         ),
     }
 
@@ -318,7 +488,7 @@ def compare(request: dict[str, Any]) -> dict[str, Any]:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--stdin", action="store_true", required=True, help="read the bounded JSON input contract from stdin")
-    parser.add_argument("--allow-public-network", action="store_true", help="authorize up to five fixed-host Crossref HTTPS GET requests")
+    parser.add_argument("--allow-public-network", action="store_true", help="authorize up to six fixed-host Crossref HTTPS GET requests: one source Work plus up to five cited Works")
     args = parser.parse_args(argv)
     if not args.allow_public_network:
         print("PUBLIC_NETWORK_CALL_REQUIRES --allow-public-network", file=sys.stderr)

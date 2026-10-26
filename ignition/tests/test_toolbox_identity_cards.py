@@ -390,7 +390,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(crossref["estimated_cost"]["status"], "UNKNOWN")
         self.assertIn("article full text", " ".join(crossref["not_for"]))
         reference_comparator = next(card for card in candidates if card["tool_id"] == "research.compare_crossref_reference_metadata")
-        self.assertEqual(reference_comparator["version"], "0.1.0")
+        self.assertEqual(reference_comparator["version"], "0.2.0")
         self.assertFalse(reference_comparator["router_selectable_by_default"])
         self.assertEqual(reference_comparator["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertTrue(reference_comparator["permissions"]["network"])
@@ -401,7 +401,14 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertIn("--allow-public-network", reference_comparator["entrypoint"])
         self.assertEqual(reference_comparator["replacement_candidates"], [])
         self.assertEqual(reference_comparator["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
-        self.assertIn("A difference is not proof", reference_comparator["claim_ceiling"])
+        self.assertIn("Differences do not prove incorrect citations", reference_comparator["claim_ceiling"])
+        self.assertIn("verify_source_link", " ".join(reference_comparator["accepted_input_types"]))
+        self.assertIn("source Work", " ".join(reference_comparator["output_types"]))
+        self.assertIn(
+            "ignition/schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r1.schema.json",
+            {item["path"] for item in reference_comparator["source_refs"]},
+        )
+        self.assertIn("source Work request", " ".join(reference_comparator["side_effects"]))
         self.assertIn("research.verify_crossref_metadata", {item["tool_id"] for item in reference_comparator["alternatives"]})
         self.assertEqual(pubmed["permission_mode"], "READ_ONLY_FIXED_HOST_NETWORK_QUERY")
         self.assertEqual(pubmed["version"], "0.1.1")

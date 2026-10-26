@@ -554,7 +554,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(expanded["execution_authorized"])
 
         evidence = json.loads(
-            (IGNITION_ROOT / "data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r0.json").read_text(encoding="utf-8")
+            (IGNITION_ROOT / "data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r1.json").read_text(encoding="utf-8")
         )
         self.assertEqual(evidence["routes"]["default_off"]["decision"], default["decision"])
         self.assertEqual(evidence["routes"]["tool_allowlist_without_host"]["decision"], allowlisted_without_host["decision"])
@@ -1277,9 +1277,9 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
 
-    def test_pubmed_doi_update_route_evidence_r1_replays_for_both_specialized_scopes(self) -> None:
+    def test_pubmed_doi_update_route_evidence_r2_replays_for_both_specialized_scopes(self) -> None:
         evidence = json.loads(
-            (IGNITION_ROOT / "data/operations/toolbox-pubmed-doi-update-route-evidence-r1.json").read_text(encoding="utf-8")
+            (IGNITION_ROOT / "data/operations/toolbox-pubmed-doi-update-route-evidence-r2.json").read_text(encoding="utf-8")
         )
         current_catalog_hash = planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes())
         self.assertEqual(evidence["catalog_replay"]["candidate_catalog_git_blob_sha1"], current_catalog_hash)
@@ -1304,7 +1304,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
         task = profile("offline-frozen-source-binding", card["accepted_input_types"], card["output_types"])
         evidence = json.loads(
-            (IGNITION_ROOT / "data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r0.json")
+            (IGNITION_ROOT / "data/operations/toolbox-offline-source-snapshot-binding-route-evidence-r1.json")
             .read_text(encoding="utf-8")
         )
 
@@ -1347,7 +1347,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
         task = profile("offline-e37-run-receipt-verification", card["accepted_input_types"], card["output_types"])
         evidence = json.loads(
-            (IGNITION_ROOT / "data/operations/toolbox-offline-source-snapshot-run-verifier-route-evidence-r0.json")
+            (IGNITION_ROOT / "data/operations/toolbox-offline-source-snapshot-run-verifier-route-evidence-r1.json")
             .read_text(encoding="utf-8")
         )
 

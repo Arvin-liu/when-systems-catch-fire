@@ -55,6 +55,23 @@ def work_message(**overrides: object) -> dict:
     return message
 
 
+def source_work_message(reference_rows: list[dict] | None = None, **overrides: object) -> dict:
+    message = {
+        "DOI": "10.1186/s12884-025-07725-7",
+        "title": ["Source work title"],
+        "reference": reference_rows if reference_rows is not None else [{
+            "key": "7725_CR2",
+            "DOI": "10.1136/bjsports-2020-102955",
+            "first-page": "1451",
+            "journal-title": "Br J Sports Med",
+            "volume": "54",
+            "year": 2020,
+        }],
+    }
+    message.update(overrides)
+    return message
+
+
 class CrossrefReferenceMetadataComparisonTests(unittest.TestCase):
     def test_matches_only_supplied_fields_after_normalization(self) -> None:
         with patch.object(TOOL.crossref, "_fetch_one", return_value=fetched(work_message())) as fetch:
@@ -81,6 +98,157 @@ class CrossrefReferenceMetadataComparisonTests(unittest.TestCase):
         self.assertEqual(row["crossref_work"]["page"], "1451-1458")
         self.assertEqual(result["request_count"], 1)
         self.assertEqual(result["doi_identity_failure_count"], 0)
+        self.assertEqual(result["source_binding_mode"], "NOT_REQUESTED")
+        self.assertEqual(result["schema_version"], "ignition.crossref-reference-metadata-comparison-r1")
+        self.assertTrue(result["rows"][0]["target_request_attempted"])
+
+    def test_optional_source_binding_checks_key_doi_and_both_field_projections(self) -> None:
+        inputs = request()
+        inputs["verify_source_link"] = True
+        inputs["references"][0]["journal_title"] = "Br J Sports Med"
+        with patch.object(
+            TOOL.crossref,
+            "_fetch_one",
+            side_effect=[fetched(source_work_message()), fetched(work_message())],
+        ) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 2)
+        self.assertEqual(fetch.call_args_list[0].args[0], "10.1186/s12884-025-07725-7")
+        self.assertEqual(fetch.call_args_list[1].args[0], "10.1136/bjsports-2020-102955")
+        self.assertEqual(result["request_count"], 2)
+        self.assertEqual(result["source_work_doi_status"], "EXACT_DOI_MATCH")
+        self.assertNotIn("raw_reference_rows", result["source_work_verification"])
+        row = result["rows"][0]
+        self.assertEqual(row["source_reference_binding"]["status"], "SOURCE_REFERENCE_DOI_MATCH")
+        self.assertEqual(row["source_reference_binding"]["source_reference_metadata"]["key"], "7725_CR2")
+        self.assertEqual(
+            row["source_reference_binding"]["source_field_comparisons"]["journal_title"]["status"],
+            "NORMALIZED_EQUAL",
+        )
+        self.assertEqual(row["field_comparisons"]["journal_title"]["status"], "NORMALIZED_DIFFERENT")
+        self.assertEqual(result["source_reference_binding_failure_count"], 0)
+
+    def test_source_reference_key_absence_prevents_target_fetch(self) -> None:
+        inputs = request()
+        inputs["verify_source_link"] = True
+        with patch.object(TOOL.crossref, "_fetch_one", return_value=fetched(source_work_message(reference_rows=[]))) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(result["request_count"], 1)
+        self.assertEqual(result["status"], "COMPLETED_WITH_EXPLICIT_FAILURES")
+        self.assertEqual(result["source_reference_binding_failure_count"], 1)
+        self.assertEqual(result["rows"][0]["source_reference_binding"]["status"], "SOURCE_REFERENCE_KEY_NOT_FOUND")
+        self.assertEqual(result["rows"][0]["acquisition_status"], "NOT_ATTEMPTED")
+        self.assertFalse(result["rows"][0]["target_request_attempted"])
+
+    def test_source_reference_doi_mismatch_prevents_target_fetch(self) -> None:
+        inputs = request()
+        inputs["verify_source_link"] = True
+        source = source_work_message(reference_rows=[{
+            "key": "7725_CR2",
+            "DOI": "10.9999/different",
+            "year": 2020,
+        }])
+        with patch.object(TOOL.crossref, "_fetch_one", return_value=fetched(source)) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(result["request_count"], 1)
+        self.assertEqual(result["rows"][0]["source_reference_binding"]["status"], "SOURCE_REFERENCE_DOI_MISMATCH")
+        self.assertFalse(result["rows"][0]["target_request_attempted"])
+
+    def test_source_work_fetch_failure_is_preserved_and_target_is_skipped(self) -> None:
+        inputs = request()
+        inputs["verify_source_link"] = True
+        unavailable = {"acquisition_status": "NETWORK_ERROR", "http_status": None, "body": None}
+        with patch.object(TOOL.crossref, "_fetch_one", return_value=unavailable) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(result["source_work_verification"]["status"], "SOURCE_WORK_ACQUISITION_FAILED")
+        self.assertEqual(result["source_acquisition_failure_count"], 1)
+        self.assertEqual(result["source_work_verification_failure_count"], 0)
+        self.assertEqual(result["rows"][0]["comparison_status"], "NOT_COMPARED_SOURCE_REFERENCE_NOT_BOUND")
+        self.assertFalse(result["rows"][0]["target_request_attempted"])
+
+    def test_source_work_returned_doi_mismatch_prevents_target_fetch(self) -> None:
+        inputs = request()
+        inputs["verify_source_link"] = True
+        with patch.object(
+            TOOL.crossref,
+            "_fetch_one",
+            return_value=fetched(source_work_message(DOI="10.9999/different")),
+        ) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(result["source_work_doi_status"], "RETURNED_DOI_DIFFERS")
+        self.assertEqual(result["source_work_verification_failure_count"], 1)
+        self.assertEqual(result["source_acquisition_failure_count"], 0)
+        self.assertEqual(result["rows"][0]["source_reference_binding"]["status"], "SOURCE_WORK_DOI_IDENTITY_UNRESOLVED")
+        self.assertFalse(result["rows"][0]["target_request_attempted"])
+
+    def test_ambiguous_source_reference_key_prevents_target_fetch(self) -> None:
+        inputs = request()
+        inputs["verify_source_link"] = True
+        duplicate_rows = [
+            {"key": "7725_CR2", "DOI": "10.1136/bjsports-2020-102955"},
+            {"key": "7725_CR2", "DOI": "10.1136/bjsports-2020-102955"},
+        ]
+        with patch.object(
+            TOOL.crossref,
+            "_fetch_one",
+            return_value=fetched(source_work_message(reference_rows=duplicate_rows)),
+        ) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(result["rows"][0]["source_reference_binding"]["status"], "SOURCE_REFERENCE_KEY_AMBIGUOUS")
+        self.assertEqual(result["source_reference_binding_failure_count"], 1)
+        self.assertFalse(result["rows"][0]["target_request_attempted"])
+
+    def test_source_link_mode_is_bounded_to_one_source_and_five_target_attempts(self) -> None:
+        inputs = request([
+            {"key": f"ref-{index}", "doi": f"10.1136/bjsports-2020-1029{index}"}
+            for index in range(5)
+        ])
+        inputs["verify_source_link"] = True
+        source_rows = [
+            {"key": item["key"], "DOI": item["doi"]}
+            for item in inputs["references"]
+        ]
+        target_messages = [
+            fetched(work_message(DOI=item["doi"]))
+            for item in inputs["references"]
+        ]
+        with patch.object(
+            TOOL.crossref,
+            "_fetch_one",
+            side_effect=[fetched(source_work_message(reference_rows=source_rows)), *target_messages],
+        ) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 6)
+        self.assertEqual(result["request_count"], 6)
+        self.assertEqual(result["source_reference_binding_failure_count"], 0)
+        self.assertTrue(all(row["target_request_attempted"] for row in result["rows"]))
+
+    def test_source_work_without_reference_projection_skips_all_targets(self) -> None:
+        inputs = request()
+        inputs["verify_source_link"] = True
+        source_message = source_work_message()
+        source_message.pop("reference")
+        with patch.object(TOOL.crossref, "_fetch_one", return_value=fetched(source_message)) as fetch:
+            result = TOOL.compare(TOOL.parse_request(json.dumps(inputs).encode("utf-8")))
+
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(result["source_work_verification"]["status"], "SOURCE_REFERENCES_NOT_REPORTED")
+        self.assertEqual(result["source_work_verification_failure_count"], 1)
+        self.assertEqual(result["source_acquisition_failure_count"], 0)
+        self.assertEqual(result["rows"][0]["source_reference_binding"]["status"], "SOURCE_REFERENCES_NOT_REPORTED")
+        self.assertFalse(result["rows"][0]["target_request_attempted"])
 
     def test_difference_is_reported_as_metadata_difference_not_citation_error(self) -> None:
         inputs = request([{
@@ -162,6 +330,7 @@ class CrossrefReferenceMetadataComparisonTests(unittest.TestCase):
             request([{"key": "same", "doi": "10.1136/bjsports-2020-102955"}, {"key": "same", "doi": "10.1136/bjsports-2019-101413"}]),
             request([{"key": "a", "doi": "10.1136/bjsports-2020-102955"}, {"key": "b", "doi": "10.1136/BJSports-2020-102955"}]),
             request([{"key": "x", "doi": "10.1136/bjsports-2020-102955", "unexpected": "ignored fields are unsafe"}]),
+            request() | {"verify_source_link": "true"},
             request([{"key": str(index), "doi": f"10.1136/bjsports-2020-10295{index}"} for index in range(6)]),
         ]
         with patch.object(TOOL.crossref, "_fetch_one") as fetch:

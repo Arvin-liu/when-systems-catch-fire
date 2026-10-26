@@ -1,0 +1,35 @@
+{
+  "schema_version": "ignition.crossref-reference-metadata-comparison-c1-evidence-r1",
+  "tool_id": "research.compare_crossref_reference_metadata",
+  "tool_version": "0.2.0",
+  "c1_disposition": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "retention_decision": "ACTIVE_SPECIALIZED_COEXISTENCE",
+    "replacement_candidates": [],
+    "rationale": "The one matched source-reference task demonstrates an optional key/DOI binding and target Work lookup. It does not establish broad quality, completeness, cost, latency, or general reliability sufficient to replace another tool."
+  },
+  "matched_task_evidence": {
+    "path": "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r1.json",
+    "selection": "Purposive one-row public Crossref task, compared with the existing source-projection evidence for the same source DOI and reference key.",
+    "source_work_doi": "10.1186/s12884-025-07725-7",
+    "reference_key": "7725_CR2",
+    "target_doi": "10.1136/bjsports-2020-102955",
+    "request_attempt_count": 2,
+    "source_key_and_doi_binding": "EXACT_UNIQUE_MATCH",
+    "target_work_doi_identity": "EXACT_DOI_MATCH",
+    "observed_difference": "Target journal abbreviation versus full journal title; reported as normalized metadata difference only."
+  },
+  "comparison": {
+    "compared_tool_ids": [
+      "research.verify_crossref_metadata",
+      "research.compare_publication_metadata_snapshots"
+    ],
+    "evidence_refs": [
+      "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-c1-evidence-r0.json",
+      "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r0.json",
+      "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r1.json",
+      "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json"
+    ],
+    "finding": "Source projection and target Work resolution are complementary on this example. No replacement is supported; retain COMPARISON_UNKNOWN and keep the candidate default-off."
+  }
+}

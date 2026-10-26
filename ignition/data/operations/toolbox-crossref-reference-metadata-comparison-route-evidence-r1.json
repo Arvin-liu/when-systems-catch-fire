@@ -1,0 +1,1658 @@
+{
+  "schema_version": "ignition.toolbox-crossref-reference-metadata-comparison-route-evidence-r1",
+  "tool_id": "research.compare_crossref_reference_metadata",
+  "task_id": "selected-crossref-reference-doi-metadata-comparison",
+  "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "network_calls_during_planning": 0,
+  "routes": {
+    "default_off": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_reasons": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "selected_permissions": null,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+      }
+    },
+    "host_without_tool_allowlist": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_reasons": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "selected_permissions": null,
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+      }
+    },
+    "tool_allowlist_without_host": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_reasons": [
+        "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+      ],
+      "selected_permissions": null,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+      }
+    },
+    "exact_host_minimum": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "candidate_reasons": [],
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/evidence-program/tools/run_crossref_verification.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.crossref.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+      }
+    },
+    "expanded_allowlist": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "candidate_reasons": [],
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/evidence-program/tools/run_crossref_verification.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.crossref.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+      }
+    }
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "task_profile": {
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON object with one source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Optional verify_source_link is a boolean default false. Maximum 32768 bytes."
+        ],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "execution_authorized": false,
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        }
+      }
+    },
+    {
+      "scenario": "host_without_tool_allowlist",
+      "task_profile": {
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON object with one source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Optional verify_source_link is a boolean default false. Maximum 32768 bytes."
+        ],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "execution_authorized": false,
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        }
+      }
+    },
+    {
+      "scenario": "tool_allowlist_without_host",
+      "task_profile": {
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON object with one source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Optional verify_source_link is a boolean default false. Maximum 32768 bytes."
+        ],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "execution_authorized": false,
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        }
+      }
+    },
+    {
+      "scenario": "exact_host_minimum",
+      "task_profile": {
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON object with one source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Optional verify_source_link is a boolean default false. Maximum 32768 bytes."
+        ],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "execution_authorized": false,
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "UTF-8 JSON object with one source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Optional verify_source_link is a boolean default false. Maximum 32768 bytes."
+            ],
+            "output_types": [
+              "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+              "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+              "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+            "permissions": {
+              "read_paths": [
+                "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+                "ignition/tools/toolbox_crossref_metadata_verifier.py",
+                "ignition/evidence-program/tools/run_crossref_verification.py"
+              ],
+              "write_paths": [],
+              "network": true,
+              "network_hosts": [
+                "api.crossref.org"
+              ],
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [
+              "ignition/tools/toolbox_crossref_metadata_verifier.py",
+              "ignition/evidence-program/tools/run_crossref_verification.py"
+            ],
+            "declared_effect_rank": 1,
+            "pre_invocation_conditions": [
+              "A routed proposal explicitly includes this candidate and allowed_network_hosts contains exactly api.crossref.org; a route proposal alone is not execution permission.",
+              "Even a COMPLETE planner result has execution_authorized=false and does not verify the caller's authority behind the host declaration.",
+              "Every actual CLI invocation separately requires --allow-public-network and caller approval to transmit its selected DOI identifiers.",
+              "Remain excluded unless the caller explicitly allowlists research.compare_crossref_reference_metadata and the typed route profile explicitly lists api.crossref.org.",
+              "The actual CLI invocation includes --allow-public-network.",
+              "The caller has explicitly selected up to five DOI-bearing reference rows and approves their DOI transmission; when verify_source_link is true, the caller also approves sending the source-work DOI to the public Crossref API.",
+              "The exact input follows the JSON Schema at ignition/schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r1.schema.json; verify_source_link is an optional boolean defaulting to false."
+            ],
+            "claim_ceiling": "For up to five caller-selected Crossref reference rows, report normalized supplied-field equality or difference against the DOI-resolved target Work. With verify_source_link=true, additionally report whether the fetched source Work returned the requested DOI and whether each selected key is unique and bound to the same DOI in Crossref-deposited references before target lookup. Differences do not prove incorrect citations; matches do not establish source authenticity, reference provenance, bibliography completeness, article content, or scientific support.",
+            "covers_required_outputs": [
+              "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+              "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support.",
+              "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned."
+            ]
+          }
+        ],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "covered_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned."
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        }
+      }
+    },
+    {
+      "scenario": "expanded_allowlist",
+      "task_profile": {
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON object with one source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Optional verify_source_link is a boolean default false. Maximum 32768 bytes."
+        ],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_crossref_reference_metadata",
+        "research.verify_crossref_metadata",
+        "research.lookup_openalex_work_metadata",
+        "research.compare_publication_metadata_snapshots"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "execution_authorized": false,
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "selected-crossref-reference-doi-metadata-comparison",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [
+          "api.crossref.org"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "UTF-8 JSON object with one source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Optional verify_source_link is a boolean default false. Maximum 32768 bytes."
+            ],
+            "output_types": [
+              "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+              "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+              "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+            "permissions": {
+              "read_paths": [
+                "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+                "ignition/tools/toolbox_crossref_metadata_verifier.py",
+                "ignition/evidence-program/tools/run_crossref_verification.py"
+              ],
+              "write_paths": [],
+              "network": true,
+              "network_hosts": [
+                "api.crossref.org"
+              ],
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [
+              "ignition/tools/toolbox_crossref_metadata_verifier.py",
+              "ignition/evidence-program/tools/run_crossref_verification.py"
+            ],
+            "declared_effect_rank": 1,
+            "pre_invocation_conditions": [
+              "A routed proposal explicitly includes this candidate and allowed_network_hosts contains exactly api.crossref.org; a route proposal alone is not execution permission.",
+              "Even a COMPLETE planner result has execution_authorized=false and does not verify the caller's authority behind the host declaration.",
+              "Every actual CLI invocation separately requires --allow-public-network and caller approval to transmit its selected DOI identifiers.",
+              "Remain excluded unless the caller explicitly allowlists research.compare_crossref_reference_metadata and the typed route profile explicitly lists api.crossref.org.",
+              "The actual CLI invocation includes --allow-public-network.",
+              "The caller has explicitly selected up to five DOI-bearing reference rows and approves their DOI transmission; when verify_source_link is true, the caller also approves sending the source-work DOI to the public Crossref API.",
+              "The exact input follows the JSON Schema at ignition/schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r1.schema.json; verify_source_link is an optional boolean defaulting to false."
+            ],
+            "claim_ceiling": "For up to five caller-selected Crossref reference rows, report normalized supplied-field equality or difference against the DOI-resolved target Work. With verify_source_link=true, additionally report whether the fetched source Work returned the requested DOI and whether each selected key is unique and bound to the same DOI in Crossref-deposited references before target lookup. Differences do not prove incorrect citations; matches do not establish source authenticity, reference provenance, bibliography completeness, article content, or scientific support.",
+            "covers_required_outputs": [
+              "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+              "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support.",
+              "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned."
+            ]
+          }
+        ],
+        "required_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support."
+        ],
+        "covered_outputs": [
+          "Input-ordered per-reference result with bounded source-key/DOI binding status, target DOI identity, acquisition/HTTP state, and selected Crossref Work metadata.",
+          "Separate source and target per-field normalized equality/difference/missing statuses, response digests, bounded request-attempt count, and a claim ceiling that excludes citation correctness and scientific support.",
+          "When source-link verification is requested, one source Work DOI identity summary plus per-row selected source-reference metadata and supplied-field comparisons; raw source reference lists are not returned."
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        }
+      }
+    }
+  ],
+  "execution_authorized": false,
+  "source_refs": {
+    "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+    "route_test_path": "ignition/tests/test_toolbox_routing.py"
+  },
+  "catalog_replay": {
+    "observed_at_utc": "2026-10-26T00:52:07Z",
+    "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+    "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+    "route_trials_replayed": 5,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
+    "replay_result_sha256": "e03174985d472a603dd244db6b2f9041ef6a38793c321831112805ece87ff966"
+  },
+  "catalog_replay_history": []
+}
