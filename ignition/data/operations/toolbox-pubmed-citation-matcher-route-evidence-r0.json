@@ -2,7 +2,7 @@
   "schema_version": "toolbox-pubmed-citation-matcher-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_AND_MINIMUM_SUFFICIENT_ROUTE_EXPERIMENT",
   "tool_id": "research.match_pubmed_citation",
-  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+  "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_path": "ignition/data/operations/toolbox-pubmed-citation-matcher-route-profile-r0.json",
   "route_profile": {
@@ -22,7 +22,7 @@
       "eutils.ncbi.nlm.nih.gov"
     ],
     "route_default": "EXCLUDED",
-    "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
@@ -58,7 +58,7 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "4392fd67b17030b2f2b168b00cf96447960e08cbbbbefcf76be4bfea897bce11"
+      "full_planner_output_sha256": "b8d6e66297a40c4e3d13bd9b2340575879eebf802e29e1991cd39c007119ed5d"
     },
     {
       "scenario": "explicit_candidate_missing_host",
@@ -91,7 +91,7 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "4cd88f82cafbeb22766e002b0f7cb8aa07e3feb945a0c2295770783cbf0bc268"
+      "full_planner_output_sha256": "9560564b229dbc2b33dc1f9f1b9df440a766782cf6085d719094e1a0a09abab9"
     },
     {
       "scenario": "explicit_candidate_minimum_sufficient",
@@ -128,7 +128,7 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "6229679e62f7087e9463982899c7126163fc24deba206ab746c764d5258b860d"
+      "full_planner_output_sha256": "708ac04dabefb1ab20d0dd55e708a2c24f66840710ee60aed606ae39a996a761"
     },
     {
       "scenario": "redundant_generic_query_also_allowlisted",
@@ -166,19 +166,29 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "1a8e89df377634da189bff2784a3732f69fe2ded647919dba307b7541b63266e"
+      "full_planner_output_sha256": "df321e55ecab5fe4a23e7e4aa2e011bf514dd146f280560be11bffa35e0d9a82"
     }
   ],
   "claim_ceiling": "Local route-planner proposal only; selection is default-off, caller host declarations are not authority verified, and no candidate execution is authorized by a route proposal.",
   "catalog_replay": {
     "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T20:20:59Z",
+    "replayed_at_utc": "2026-10-26T21:11:36Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,
     "candidate_invoked": false,
     "provider_calls": 0,
-    "execution_authorized": false
-  }
+    "execution_authorized": false,
+    "provider_calls_made": 0,
+    "replay_result_sha256": "897c36631a486356a085508a40cc515a173ae579dbe4d783f583f64776938aa6"
+  },
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "0c5397974190b93e16b9e410c4445700e0dc038d",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    }
+  ]
 }

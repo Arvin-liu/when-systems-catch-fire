@@ -78,8 +78,27 @@
   "scenario_result_set_sha256": "74ab7d432ce2df786f2075add7914f0ff63813310217f0a92451749919072fcb",
   "source_refs": {
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "experimental_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2"
+    "experimental_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199"
   },
   "planner_execution_authorized": false,
-  "claim_ceiling": "Route proposal comparison only; no analyzer invocation, network access, billing estimate, execution authorization, CI decision, or release permission."
+  "claim_ceiling": "Route proposal comparison only; no analyzer invocation, network access, billing estimate, execution authorization, CI decision, or release permission.",
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "2655528ee86a958988db53046f6839acfaa114cb",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    }
+  ],
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-26T21:11:36Z",
+    "route_trials_replayed": 4,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "replay_result_sha256": "7ef388e03165fbcee21dad42f7ae50f3d3db2298e53842da9f4847146069a4e4"
+  }
 }

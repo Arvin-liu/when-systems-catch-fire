@@ -2,7 +2,7 @@
   "schema_version": "toolbox-component-comparison-route-evidence-r0",
   "tool_id": "maintenance.compare_toolbox_component_coverage",
   "observed_at_utc": "2026-10-26T20:20:59Z",
-  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+  "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile": {
     "task_id": "pr264-toolbox-component-scope-comparison",
@@ -63,7 +63,7 @@
   "candidate_invoked": false,
   "execution_authorized": false,
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
     "all_expected_decisions_reproduced": true,
     "route_trials_replayed": 2,
     "provider_calls_made": 0,
@@ -72,7 +72,16 @@
     "candidate_invoked": false,
     "observed_at_utc": "2026-10-26T20:20:59Z",
     "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "replay_result_sha256": "62535a9b734d27cc46d6b53ca9ac661cfdca648ec1bd5e9812cfda71feda9987"
+    "replay_result_sha256": "c8be08078897786f0c23d234e399a9e47b3133760f3f3fa53dd2b39cc884aa4d",
+    "replayed_at_utc": "2026-10-26T21:11:36Z"
   },
-  "claim_ceiling": "Offline planner proposal only; the candidate was not invoked, no provider was contacted, no lifecycle was changed, and no execution permission was granted."
+  "claim_ceiling": "Offline planner proposal only; the candidate was not invoked, no provider was contacted, no lifecycle was changed, and no execution permission was granted.",
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "fcd5d492f2866470e98c7cb64c71670a57e731ab",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": "2026-10-26T20:20:59Z",
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    }
+  ]
 }

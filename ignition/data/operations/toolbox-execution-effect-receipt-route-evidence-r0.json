@@ -2,7 +2,7 @@
   "schema_version": "toolbox-execution-effect-receipt-route-evidence-r0",
   "tool_id": "maintenance.preflight_execution_effect_receipt",
   "observed_at_utc": "2026-10-26T19:34:17Z",
-  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+  "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_git_blob_sha1": "627881277a0a90c47b040bca24a6db52851ebe91",
   "route_profile": {
@@ -37,7 +37,7 @@
       "include_experimental_tool_ids": [],
       "decision": "INCOMPLETE",
       "selected_tool_ids": [],
-      "result_sha256": "3c1b3756cdb0ec02d55ee89d214d718aff5a263602b8ed077d6a131cfbe18686",
+      "result_sha256": "374803b149661247e46b5c6a9bb0251a792f5a62a0eab06c74618391ec44d85b",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -79,7 +79,7 @@
       "selected_tool_ids": [
         "maintenance.preflight_execution_effect_receipt"
       ],
-      "result_sha256": "498d0938a1803e24bf614b1d7c0d4d67025fc86bbd2443d0afe8eae3c511ee90",
+      "result_sha256": "e57f8615135cce3731e355f6ddf782e775567ee3d9beae85cded2234bfeeb4d0",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -130,7 +130,7 @@
       "selected_tool_ids": [
         "maintenance.preflight_execution_effect_receipt"
       ],
-      "result_sha256": "cca3ec0538de114e80ccc98988bcfd5cee52da47e0587fe4b39869fff2c90431",
+      "result_sha256": "d7a932610926cfe1581e1e475e7d29b3ed14f73f999419d43420dd3b34242219",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -177,7 +177,7 @@
       ],
       "decision": "INCOMPLETE",
       "selected_tool_ids": [],
-      "result_sha256": "eea931e0cd8d8092e4a5bb19495291000d7ee47e2751b4f522d566ec37451831",
+      "result_sha256": "4ff7643423a975060f068d6012c593d4d92b72424457a6ad9a6cc2b91cd9abbd",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -203,5 +203,24 @@
   "provider_calls_made": 0,
   "candidate_invoked": false,
   "execution_authorized": false,
-  "claim_ceiling": "Local offline route proposals only. The candidate was not invoked by the route planner; no provider was contacted, no repository path was reread by routing, and no execution permission was granted."
+  "claim_ceiling": "Local offline route proposals only. The candidate was not invoked by the route planner; no provider was contacted, no repository path was reread by routing, and no execution permission was granted.",
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "c8376aacfad560a36d2b11ca4a8c3a7efc31926c",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": "2026-10-26T19:34:17Z",
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    }
+  ],
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-26T21:11:36Z",
+    "route_trials_replayed": 4,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "replay_result_sha256": "fbd7bba40a31df858479bba071dd1c9065c76009ec8c877110d51d02f5003564"
+  }
 }

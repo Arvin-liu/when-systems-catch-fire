@@ -1,0 +1,49 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-growth-pair-c1-evidence-r0",
+  "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "comparison_scope": {
+    "task": "Produce one year-keyed view from already captured NOAA GML global CO2 (ppm) and CH4 (ppb) source-surface comparator outputs while retaining independent units and source receipts.",
+    "environment": "Local Python standard library; supplied JSON on stdin; no network, credentials, billing, or file reads during invocation.",
+    "permission_mode": "READ_ONLY_RUN",
+    "same_task_baseline": "No existing registered operation or candidate has an input contract accepting both complete NOAA gas-specific comparator outputs and emitting separate per-gas rows with both source receipts."
+  },
+  "compared_tool_ids": [
+    "research.compare_noaa_co2_source_surfaces",
+    "research.compare_noaa_ch4_source_surfaces"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_compare_noaa_co2_surfaces.py",
+    "ignition/tools/toolbox_compare_noaa_ch4_surfaces.py",
+    "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
+    "ignition/tests/test_toolbox_compare_noaa_co2_surfaces.py",
+    "ignition/tests/test_toolbox_compare_noaa_ch4_surfaces.py"
+  ],
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-output-r0.json",
+    "ignition/data/operations/toolbox-noaa-ch4-source-surface-comparison-real-task-output-r0.json",
+    "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-input-r0.json",
+    "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-output-r0.json",
+    "ignition/tests/test_toolbox_pair_noaa_co2_ch4_growth_by_year.py"
+  ],
+  "observed_functional_result": {
+    "paired_years": [2023, 2024, 2025],
+    "co2_unit": "ppm",
+    "ch4_unit": "ppb",
+    "cross_gas_arithmetic_performed": false,
+    "simultaneous_capture_claimed": false,
+    "combined_capture_span_seconds": 3635,
+    "input_payload_sha256": "650452979fe4daa701e0d7b5b78eb7ff57b5633a025add5283fa8febf3231a3c",
+    "output_file_sha256": "bc2b616bd9dc3ee8aa78457f1e79f88253e180fd570524eaa1275789b9271e46"
+  },
+  "findings": [
+    "The CO2 comparator produces only the CO2 page/raw comparison and the CH4 comparator produces only the CH4 page/raw comparison; neither alone satisfies the paired-output contract.",
+    "The two comparators remain complementary inputs and are not replaced. The pairer does not retrieve either source and does not rank, convert, sum, divide, or otherwise combine the gases' values.",
+    "One controlled real-artifact run demonstrates the year-key transform and retained receipts. It does not establish comparative correctness against a maintained manual alternative, lower cost, reliability, or scientific usefulness; those remain COMPARISON_UNKNOWN."
+  ],
+  "unique_remaining_use_cases": [
+    "Create a same-year table for CO2 and CH4 comparator captures while preserving ppm/ppb as separate quantities and exposing the nonzero capture-time span."
+  ],
+  "disposition": "EXPERIMENTAL_AVAILABLE_DEFAULT_OFF; no incumbent retirement supported",
+  "claim_ceiling": "Task-fit and functional evidence for a bounded offline transformation only; not a comparison of scientific validity or provider accuracy."
+}

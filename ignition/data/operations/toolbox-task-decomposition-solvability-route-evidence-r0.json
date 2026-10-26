@@ -22,7 +22,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "5e127c50e1eff23705d68bcc623af9704434432ba44d66e7b3c0f041c07f61d4"
+      "planner_output_projection_sha256": "a473312f0f6067e1cd2f1441a15d2bb9112951565cddcc2fabd5744222455069"
     },
     {
       "trial_id": "explicit_allowlist",
@@ -41,7 +41,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "df93864fdc90e9694d0d1752f77c818e9137f34068b336a0174747e2bb357782"
+      "planner_output_projection_sha256": "2aa75eefc5bc788e39532475f056094c8e9e5554a54b98f911954d6ba9fdbf41"
     },
     {
       "trial_id": "with_unrelated_candidate",
@@ -61,7 +61,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "64459da577c30cfd5b6901d9c121e5ddd569999ec7394b5db6da6dc9b6cdd112"
+      "planner_output_projection_sha256": "034c952eed023b57423da931cc6cb6995024358d9bf86af2e1eb8fd7fb1df834"
     }
   ],
   "provider_call_count": 0,
@@ -69,14 +69,25 @@
   "execution_authorized": false,
   "interpretation": "Route planner results are proposals only. The default profile excludes the optional tool; an explicit experimental allowlist permits a route proposal. An unrelated read-only experimental candidate is rejected for input mismatch. This evidence does not invoke the candidate or grant task authority. The planner-output digest excludes source_refs to avoid a candidate-catalog/evidence self-reference cycle.",
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T20:20:59Z",
+    "replayed_at_utc": "2026-10-26T21:11:36Z",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
     "candidate_tool_invocation_count": 0,
     "provider_call_count": 0,
     "execution_authorized": false,
-    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d"
-  }
+    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "provider_calls_made": 0,
+    "candidate_invoked": false,
+    "replay_result_sha256": "3a3216cd3045abc8c3a84a5c44ea0657f07f1c725165ab2effe2009d816ec06a"
+  },
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "77af7256b32e63af767264f07b5123f6e96cc262",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    }
+  ]
 }

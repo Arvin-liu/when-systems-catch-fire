@@ -12153,6 +12153,246 @@
         "Do not route for authenticated remote/physical effects, source verification, action execution, retry, or external authority."
       ],
       "claim_ceiling": "Checks caller-declared execution and observation relations, and directly hashes only explicitly selected regular files under the current ignition/ checkout within bounded limits. It does not authenticate references or baseline provenance, prove causality or external effects, execute or authorize an action, or establish scientific or release truth."
+    },
+    {
+      "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+      "display_name": {
+        "zh": "NOAA CO₂–CH₄ 年增长配对器",
+        "en": "NOAA CO2–CH4 Annual Growth Pairer"
+      },
+      "description": "Pair two already captured, complete NOAA GML CO2 and CH4 page/raw comparison outputs by year while retaining ppm and ppb as separate fields, upstream statuses, source receipts and capture-time span.",
+      "version": "0.1.0",
+      "license": "Pairer wrapper BUSL-1.1; NOAA GML source-use page requests fair credit for its measurements and data carried by the supplied comparator outputs.",
+      "maintainer": "Ignition repository maintainers; this field grants no NOAA, Owner, emissions-accounting, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_pair_noaa_co2_ch4_growth_by_year.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pair_noaa_co2_ch4_growth_by_year.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_pair_noaa_co2_ch4_growth_by_year.py",
+          "role": "OFFLINE_TYPED_YEAR_KEY_PAIRING_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r0.schema.json",
+          "role": "STRICT_ENVELOPE_INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-co2-ch4-growth-pair-output-r0.schema.json",
+          "role": "PAIRED_ROWS_AND_PROVENANCE_OUTPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-co2-source-surface-comparison-output-r0.schema.json",
+          "role": "SUPPORTED_CO2_UPSTREAM_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-ch4-source-surface-comparison-output-r0.schema.json",
+          "role": "SUPPORTED_CH4_UPSTREAM_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/tools/toolbox_compare_noaa_co2_surfaces.py",
+          "role": "COMPLEMENTARY_CO2_SOURCE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_compare_noaa_ch4_surfaces.py",
+          "role": "COMPLEMENTARY_CH4_SOURCE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
+          "role": "UPSTREAM_SOURCE_ROW_AND_STATUS_CONTRACT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-source-binding-r0.json",
+          "role": "OWNER_INSTRUCTION_AND_C1_SOURCE_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-c1-evidence-r0.json",
+          "role": "COMPARISON_UNKNOWN_AND_COEXISTENCE_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-output-r0.json",
+          "role": "CAPTURED_CO2_COMPARATOR_INPUT_NOT_FRESH_RETRIEVAL"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-comparison-real-task-output-r0.json",
+          "role": "CAPTURED_CH4_COMPARATOR_INPUT_NOT_FRESH_RETRIEVAL"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-input-r0.json",
+          "role": "REPRODUCIBLE_PAIRED_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-output-r0.json",
+          "role": "OBSERVED_OFFLINE_TRANSFORMATION_OUTCOME"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-evidence-r0.json",
+          "role": "INPUT_OUTPUT_DIGEST_AND_NO_NETWORK_RUN_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-route-profile-r0.json",
+          "role": "MATCHED_EXPERIMENTAL_TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-co2-ch4-annual-growth-pairing.md",
+          "role": "TASK_SCOPE_LIMITS_AND_INVOCATION_GUIDE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pair_noaa_co2_ch4_growth_by_year.py",
+          "role": "OFFLINE_REAL_INPUT_NEGATIVE_CONTROL_AND_SCHEMA_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pair_noaa_co2_ch4_growth_routing.py",
+          "role": "DEFAULT_OFF_AND_TASK_TYPE_ROUTE_TESTS"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_DEFAULT_OFF_EXPERIMENTAL_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_compare_noaa_co2_surfaces.py",
+          "role": "CO2_COMPARATOR_CONTRACT_FOR_C1_SCOPE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_compare_noaa_ch4_surfaces.py",
+          "role": "CH4_COMPARATOR_CONTRACT_FOR_C1_SCOPE"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Creating a same-year table from already captured NOAA GML CO2 and CH4 page/raw comparison outputs when both use the same range.",
+        "Retaining each gas comparator status, separate ppm/ppb row values, fixed-source receipts, retrieval times and response digests in one bounded output.",
+        "Offline review where the caller needs year alignment and must see that source captures were not simultaneous."
+      ],
+      "not_for": [
+        "Fetching fresh NOAA data, resolving source access, or using arbitrary URLs or caller-supplied file paths.",
+        "Converting, summing, weighting, dividing or ranking CO2 ppm and CH4 ppb values, or asserting physical comparability.",
+        "Estimating emissions, attributing sources, making causal claims, authenticating NOAA, validating measurements or establishing scientific truth."
+      ],
+      "only_if": [
+        "The caller already has complete version-0.1.0 outputs from both declared NOAA surface comparators and submits them in the exact JSON envelope on stdin.",
+        "Both source comparator outputs request the identical inclusive year range from 1984 through 2100, containing no more than 50 years.",
+        "The request is at most 256 KiB, uses the fixed NOAA source URLs and carries valid retrieval metadata, response digests, complete year rows and source-consistent comparison values."
+      ],
+      "counterindicated_when": [
+        "Only one gas, a raw table value, or a fresh source retrieval is needed.",
+        "Either input output is unavailable, has a different year range or cannot supply valid fixed-source receipts.",
+        "The requested result would combine unlike units, infer relative contribution, estimate emissions or make a causal/scientific conclusion."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin envelope with schema_version toolbox-noaa-co2-ch4-growth-pair-input-r0, one complete version-0.1.0 CO2 source-surface comparator output and one complete version-0.1.0 CH4 source-surface comparator output; both use the same 1984–2100 inclusive range of at most 50 years; arbitrary URLs and file paths are rejected."
+      ],
+      "output_types": [
+        "Same-year separate NOAA GML CO2 (ppm) and CH4 (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic.",
+        "Four fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_RUN_NO_NETWORK_NO_FILESYSTEM_ACCESS",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads at most 256 KiB of caller-supplied JSON from stdin and writes one JSON result to stdout or a bounded validation error to stderr.",
+        "Does not read or write repository or caller files; does not use network, credentials, billing or external actions."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Input is bounded to 256 KiB and at most 50 years; execution latency and CPU cost have not been benchmarked. It makes no network requests and has no paid or third-party runtime dependency."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Produces the CO2 page/raw result in ppm; it does not accept a CH4 comparator output or create a cross-gas year-key table."
+        },
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Produces the CH4 page/raw result in ppb; it does not accept a CO2 comparator output or create a cross-gas year-key table."
+        }
+      ],
+      "fallback": "Keep the two source comparator outputs separate and report that pairing was not run. Do not fetch missing data, treat a missing year as zero, or construct cross-gas arithmetic.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_pair_noaa_co2_ch4_growth_by_year.py",
+          "ignition/tests/test_toolbox_pair_noaa_co2_ch4_growth_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tools/operations/validate_toolbox_candidates.py"
+        ],
+        "negative_controls": [
+          "Reject duplicate JSON keys, non-standard numeric constants, oversized stdin, unknown envelope keys and arbitrary URL/path fields before producing output.",
+          "Reject wrong comparator tool/schema/version, unavailable upstream status, mismatched ranges, Boolean years, duplicate or incomplete rows, changed source URLs, invalid timestamps/digests and mismatches between source receipts and comparison rows.",
+          "Preserve partial/missing gas years as explicit statuses and never fill them with zero.",
+          "The real captured 2023–2025 pair has a 3,635-second capture span; output states simultaneous_capture_claimed=false and cross_gas_arithmetic_performed=false.",
+          "Route planning is default-off; explicit allowlisting proposes the read-only tool but does not invoke it or grant execution authority."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task that needs both captured gas comparator outputs paired by year.",
+        "Require the exact same-year-range JSON input type and both independent gas outputs; single-gas tasks must reject this candidate.",
+        "Execution reads stdin only and performs no network calls; route planning is not execution authorization.",
+        "Do not select for source retrieval, unit conversion, emissions, cross-gas ratios, attribution, causal analysis or scientific validation."
+      ],
+      "claim_ceiling": "Year-key alignment of caller-supplied, already captured NOAA GML CO2 and CH4 source-surface comparison outputs with separate ppm and ppb values and preserved provenance. No network retrieval or cross-gas arithmetic is performed; this does not establish simultaneous measurement, physical comparability, source authenticity, measurement validity, emissions, attribution, causation or scientific truth.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Create a same-year table for already captured CO2 and CH4 comparator outputs while retaining unlike units, per-gas status and the capture-time span."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "One offline same-task run demonstrates the year-key transform against captured 2023–2025 comparator outputs. The two source comparators are complementary inputs, not same-task replacements. A maintained manual or alternate-tool baseline has not been compared for correctness, effort, cost or reliability.",
+        "compared_tool_ids": [
+          "research.compare_noaa_co2_source_surfaces",
+          "research.compare_noaa_ch4_source_surfaces"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_compare_noaa_co2_surfaces.py",
+          "ignition/tools/toolbox_compare_noaa_ch4_surfaces.py",
+          "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
+          "ignition/tests/test_toolbox_compare_noaa_co2_surfaces.py",
+          "ignition/tests/test_toolbox_compare_noaa_ch4_surfaces.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-output-r0.json"
+        ],
+        "findings": [
+          "The CO2 comparator alone cannot return CH4 rows and the CH4 comparator alone cannot return CO2 rows; both remain complementary and neither is replaced.",
+          "The offline transform produced three paired year rows and preserved all four source receipts, source-output digests, independent units and a 3,635-second capture span.",
+          "Relative performance, manual effort, latency, reliability and broad research value remain unknown; keep this candidate experimental, optional and default off."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "No same-task pairer incumbent was found among the current registry and candidate tools, but no same-task manual/alternate implementation benchmark was run. The two gas-specific comparator tools remain valuable inputs and are not retirement candidates."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "This isolated candidate does not modify the Current registry, existing gas comparator contracts, permissions or default route.",
+          "Both comparator tools remain independent upstream inputs with their own units and source receipts."
+        ],
+        "rollback_steps": [
+          "Remove this optional card, pairing implementation, schemas, documentation, tests, route artifacts and paired-task artifacts from the isolated branch; regenerate identity cards and TOOLBOX.md.",
+          "Preserve upstream comparator captures and the C1 comparison record as historical evidence; retain the two source comparators."
+        ]
+      }
     }
   ]
 }
