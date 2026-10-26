@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/toolbox-component-path-residue-output-r0.schema.json",
+  "title": "Component path residue grouping output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "input_sha256",
+    "tool_sha256",
+    "summary",
+    "directory_groups",
+    "repeated_filename_families",
+    "uncohorted_paths",
+    "mapping_authority",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "component-path-residue-output-r0"},
+    "input_sha256": {"$ref": "#/$defs/sha256"},
+    "tool_sha256": {"$ref": "#/$defs/sha256"},
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path_count",
+        "unique_path_count",
+        "directory_group_count",
+        "repeated_filename_family_count",
+        "paths_in_repeated_filename_families",
+        "uncohorted_path_count"
+      ],
+      "properties": {
+        "path_count": {"type": "integer", "minimum": 1, "maximum": 5000},
+        "unique_path_count": {"type": "integer", "minimum": 1, "maximum": 5000},
+        "directory_group_count": {"type": "integer", "minimum": 1, "maximum": 5000},
+        "repeated_filename_family_count": {"type": "integer", "minimum": 0, "maximum": 5000},
+        "paths_in_repeated_filename_families": {"type": "integer", "minimum": 0, "maximum": 5000},
+        "uncohorted_path_count": {"type": "integer", "minimum": 0, "maximum": 5000}
+      }
+    },
+    "directory_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["directory", "path_count", "extensions", "paths"],
+        "properties": {
+          "directory": {"type": "string", "minLength": 1},
+          "path_count": {"type": "integer", "minimum": 1, "maximum": 5000},
+          "extensions": {
+            "type": "object",
+            "additionalProperties": {"type": "integer", "minimum": 1, "maximum": 5000}
+          },
+          "paths": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1, "maxLength": 512}
+          }
+        }
+      }
+    },
+    "repeated_filename_families": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["family_prefix", "path_count", "paths", "basis"],
+        "properties": {
+          "family_prefix": {"type": "string", "minLength": 1},
+          "path_count": {"type": "integer", "minimum": 2, "maximum": 5000},
+          "paths": {
+            "type": "array",
+            "minItems": 2,
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1, "maxLength": 512}
+          },
+          "basis": {"const": "normalized_filename_prefix_and_known_artifact_suffixes"}
+        }
+      }
+    },
+    "uncohorted_paths": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 512}
+    },
+    "mapping_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "component_ids_suggested",
+        "path_patterns_suggested",
+        "canonical_registry_modified",
+        "human_mapping_decision_required"
+      ],
+      "properties": {
+        "component_ids_suggested": {"type": "array", "maxItems": 0},
+        "path_patterns_suggested": {"type": "array", "maxItems": 0},
+        "canonical_registry_modified": {"const": false},
+        "human_mapping_decision_required": {"const": true}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

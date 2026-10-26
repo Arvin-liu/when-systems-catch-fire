@@ -1,66 +1,168 @@
 {
-  "schema_version": "ignition.toolbox-pubmed-doi-update-route-evidence-r2",
+  "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
   "candidate_tool_ids": [
     "research.audit_pubmed_updates_from_doi",
     "research.inspect_pubmed_update_links"
   ],
-  "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
-  "current_operation_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-  "task_profiles": {
-    "doi_composition": {
-      "task_id": "pubmed-doi-update-identity-binding-route-r1",
-      "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
-      "input_types": [
-        "JSON stdin object with exactly one unique bare DOI identifier"
-      ],
-      "required_outputs": [
-        "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
-        "If one exact PMID is returned, a PubMed relation read gated by an exact DOI match in that same EFetch response; otherwise an explicit no-fetch or RECORD_IDENTITY_NOT_CONFIRMED outcome."
-      ],
-      "allowed_execution_modes": [
-        "READ_ONLY_RUN"
-      ],
-      "allowed_network_hosts": []
-    },
-    "known_pmid_reader": {
-      "task_id": "pubmed-known-pmid-doi-binding-route-r1",
-      "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
-      "input_types": [
-        "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs); optional expected_doi is accepted only for exactly one PMID and must be a bare DOI."
-      ],
-      "required_outputs": [
-        "input-ordered PubMed Comments/Corrections relation rows with raw RefType, related PMID, and reference source",
-        "when expected_doi is supplied: expected DOI, same-response DOI binding status, and relations only on EXACT_MATCH",
-        "per-response SHA-256 and explicit HTTP or network outcome summary"
-      ],
-      "allowed_execution_modes": [
-        "READ_ONLY_RUN"
-      ],
-      "allowed_network_hosts": []
-    }
+  "catalog_replay": {
+    "all_expected_decisions_reproduced": true,
+    "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "execution_authorized": false,
+    "observed_at_utc": "2026-10-26T03:18:22Z",
+    "previous_candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+    "provider_calls_made": 0,
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+    "replay_result_sha256": "4a42b31faa5408c32e0a4cfaec093b06c7d1dbfb4443dd156c13e53c0defa885",
+    "route_trials_replayed": 6
   },
+  "catalog_replay_history": [
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "8f3384fda573a43bc7cdd8564798e99f6afc026d",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T22:52:47Z",
+      "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:10:52Z",
+      "previous_candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:11:27Z",
+      "previous_candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:26:13Z",
+      "previous_candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-25T23:51:22Z",
+      "previous_candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T00:19:19Z",
+      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "690cb452107c6475d7139415e6f88b8cc0c752ecc476603045f28e9b271e0f96",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T00:19:19Z",
+      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "provider_calls_made": 0,
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T00:52:07Z",
+      "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
+      "replay_result_sha256": "de9db047125dc35b9eeeb26334053e8e3ab17c77d354586873c0030cfb35d119",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "d4064d06e3646902f1dc47f2258734fd38d179f9",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:31:40Z",
+      "previous_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:33:10Z",
+      "previous_candidate_catalog_git_blob_sha1": "d4064d06e3646902f1dc47f2258734fd38d179f9",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:51:05Z",
+      "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:51:05Z",
+      "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd",
+      "route_trials_replayed": 6
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T03:11:49Z",
+      "previous_candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "4a42b31faa5408c32e0a4cfaec093b06c7d1dbfb4443dd156c13e53c0defa885",
+      "route_trials_replayed": 6
+    }
+  ],
+  "claim_ceiling": "Default-off local route proposal only. Explicit candidate inclusion and exact host allowlists select minimal read-only proposals, but do not authorize network execution, verify the caller authority, or upgrade a scientific claim.",
+  "current_operation_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_trials": [
     {
-      "scenario": "composition_default_off",
-      "task_profile": {
-        "task_id": "pubmed-doi-update-identity-binding-route-r1",
-        "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
-        "input_types": [
-          "JSON stdin object with exactly one unique bare DOI identifier"
-        ],
-        "required_outputs": [
-          "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
-          "If one exact PMID is returned, a PubMed relation read gated by an exact DOI match in that same EFetch response; otherwise an explicit no-fetch or RECORD_IDENTITY_NOT_CONFIRMED outcome."
-        ],
-        "allowed_execution_modes": [
-          "READ_ONLY_RUN"
-        ],
-        "allowed_network_hosts": []
-      },
-      "include_experimental_tool_ids": [],
+      "execution_authorized": false,
       "expected_decision": "INCOMPLETE",
-      "expected_selected_tool_ids": [],
       "expected_execution_authorized": false,
+      "expected_selected_tool_ids": [],
+      "include_experimental_tool_ids": [],
       "result": {
         "schema_version": "ignition-tool-route-plan-r0",
         "task_id": "pubmed-doi-update-identity-binding-route-r1",
@@ -189,6 +291,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "maintenance.inspect_repository",
             "reason": "NO_INPUT_TYPE_MATCH"
           },
@@ -198,6 +304,14 @@
           },
           {
             "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -323,15 +437,15 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
         }
       },
-      "execution_authorized": false
-    },
-    {
-      "scenario": "composition_opt_in_without_hosts",
+      "scenario": "composition_default_off",
       "task_profile": {
-        "task_id": "pubmed-doi-update-identity-binding-route-r1",
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [],
         "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
         "input_types": [
           "JSON stdin object with exactly one unique bare DOI identifier"
@@ -340,17 +454,17 @@
           "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
           "If one exact PMID is returned, a PubMed relation read gated by an exact DOI match in that same EFetch response; otherwise an explicit no-fetch or RECORD_IDENTITY_NOT_CONFIRMED outcome."
         ],
-        "allowed_execution_modes": [
-          "READ_ONLY_RUN"
-        ],
-        "allowed_network_hosts": []
-      },
+        "task_id": "pubmed-doi-update-identity-binding-route-r1"
+      }
+    },
+    {
+      "execution_authorized": false,
+      "expected_decision": "INCOMPLETE",
+      "expected_execution_authorized": false,
+      "expected_selected_tool_ids": [],
       "include_experimental_tool_ids": [
         "research.audit_pubmed_updates_from_doi"
       ],
-      "expected_decision": "INCOMPLETE",
-      "expected_selected_tool_ids": [],
-      "expected_execution_authorized": false,
       "result": {
         "schema_version": "ignition-tool-route-plan-r0",
         "task_id": "pubmed-doi-update-identity-binding-route-r1",
@@ -479,6 +593,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "maintenance.inspect_repository",
             "reason": "NO_INPUT_TYPE_MATCH"
           },
@@ -488,6 +606,14 @@
           },
           {
             "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -613,15 +739,15 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
         }
       },
-      "execution_authorized": false
-    },
-    {
-      "scenario": "composition_minimal_two_host_route",
+      "scenario": "composition_opt_in_without_hosts",
       "task_profile": {
-        "task_id": "pubmed-doi-update-identity-binding-route-r1",
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [],
         "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
         "input_types": [
           "JSON stdin object with exactly one unique bare DOI identifier"
@@ -630,22 +756,19 @@
           "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
           "If one exact PMID is returned, a PubMed relation read gated by an exact DOI match in that same EFetch response; otherwise an explicit no-fetch or RECORD_IDENTITY_NOT_CONFIRMED outcome."
         ],
-        "allowed_execution_modes": [
-          "READ_ONLY_RUN"
-        ],
-        "allowed_network_hosts": [
-          "pmc.ncbi.nlm.nih.gov",
-          "eutils.ncbi.nlm.nih.gov"
-        ]
-      },
-      "include_experimental_tool_ids": [
-        "research.audit_pubmed_updates_from_doi"
-      ],
+        "task_id": "pubmed-doi-update-identity-binding-route-r1"
+      }
+    },
+    {
+      "execution_authorized": false,
       "expected_decision": "COMPLETE",
+      "expected_execution_authorized": false,
       "expected_selected_tool_ids": [
         "research.audit_pubmed_updates_from_doi"
       ],
-      "expected_execution_authorized": false,
+      "include_experimental_tool_ids": [
+        "research.audit_pubmed_updates_from_doi"
+      ],
       "result": {
         "schema_version": "ignition-tool-route-plan-r0",
         "task_id": "pubmed-doi-update-identity-binding-route-r1",
@@ -827,6 +950,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "maintenance.inspect_repository",
             "reason": "NO_INPUT_TYPE_MATCH"
           },
@@ -836,6 +963,14 @@
           },
           {
             "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -957,15 +1092,18 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
         }
       },
-      "execution_authorized": false
-    },
-    {
-      "scenario": "composition_with_redundant_adjacent_candidates",
+      "scenario": "composition_minimal_two_host_route",
       "task_profile": {
-        "task_id": "pubmed-doi-update-identity-binding-route-r1",
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "pmc.ncbi.nlm.nih.gov",
+          "eutils.ncbi.nlm.nih.gov"
+        ],
         "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
         "input_types": [
           "JSON stdin object with exactly one unique bare DOI identifier"
@@ -974,24 +1112,21 @@
           "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
           "If one exact PMID is returned, a PubMed relation read gated by an exact DOI match in that same EFetch response; otherwise an explicit no-fetch or RECORD_IDENTITY_NOT_CONFIRMED outcome."
         ],
-        "allowed_execution_modes": [
-          "READ_ONLY_RUN"
-        ],
-        "allowed_network_hosts": [
-          "pmc.ncbi.nlm.nih.gov",
-          "eutils.ncbi.nlm.nih.gov"
-        ]
-      },
+        "task_id": "pubmed-doi-update-identity-binding-route-r1"
+      }
+    },
+    {
+      "execution_authorized": false,
+      "expected_decision": "COMPLETE",
+      "expected_execution_authorized": false,
+      "expected_selected_tool_ids": [
+        "research.audit_pubmed_updates_from_doi"
+      ],
       "include_experimental_tool_ids": [
         "research.audit_pubmed_updates_from_doi",
         "research.resolve_pubmed_identifiers",
         "research.inspect_pubmed_update_links"
       ],
-      "expected_decision": "COMPLETE",
-      "expected_selected_tool_ids": [
-        "research.audit_pubmed_updates_from_doi"
-      ],
-      "expected_execution_authorized": false,
       "result": {
         "schema_version": "ignition-tool-route-plan-r0",
         "task_id": "pubmed-doi-update-identity-binding-route-r1",
@@ -1173,6 +1308,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "maintenance.inspect_repository",
             "reason": "NO_INPUT_TYPE_MATCH"
           },
@@ -1182,6 +1321,14 @@
           },
           {
             "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -1303,33 +1450,35 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
         }
       },
-      "execution_authorized": false
-    },
-    {
-      "scenario": "known_pmid_reader_default_off",
+      "scenario": "composition_with_redundant_adjacent_candidates",
       "task_profile": {
-        "task_id": "pubmed-known-pmid-doi-binding-route-r1",
-        "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
-        "input_types": [
-          "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs); optional expected_doi is accepted only for exactly one PMID and must be a bare DOI."
-        ],
-        "required_outputs": [
-          "input-ordered PubMed Comments/Corrections relation rows with raw RefType, related PMID, and reference source",
-          "when expected_doi is supplied: expected DOI, same-response DOI binding status, and relations only on EXACT_MATCH",
-          "per-response SHA-256 and explicit HTTP or network outcome summary"
-        ],
         "allowed_execution_modes": [
           "READ_ONLY_RUN"
         ],
-        "allowed_network_hosts": []
-      },
-      "include_experimental_tool_ids": [],
+        "allowed_network_hosts": [
+          "pmc.ncbi.nlm.nih.gov",
+          "eutils.ncbi.nlm.nih.gov"
+        ],
+        "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
+        "input_types": [
+          "JSON stdin object with exactly one unique bare DOI identifier"
+        ],
+        "required_outputs": [
+          "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
+          "If one exact PMID is returned, a PubMed relation read gated by an exact DOI match in that same EFetch response; otherwise an explicit no-fetch or RECORD_IDENTITY_NOT_CONFIRMED outcome."
+        ],
+        "task_id": "pubmed-doi-update-identity-binding-route-r1"
+      }
+    },
+    {
+      "execution_authorized": false,
       "expected_decision": "INCOMPLETE",
-      "expected_selected_tool_ids": [],
       "expected_execution_authorized": false,
+      "expected_selected_tool_ids": [],
+      "include_experimental_tool_ids": [],
       "result": {
         "schema_version": "ignition-tool-route-plan-r0",
         "task_id": "pubmed-known-pmid-doi-binding-route-r1",
@@ -1460,6 +1609,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "maintenance.inspect_repository",
             "reason": "NO_INPUT_TYPE_MATCH"
           },
@@ -1469,6 +1622,14 @@
           },
           {
             "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -1594,15 +1755,15 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
         }
       },
-      "execution_authorized": false
-    },
-    {
-      "scenario": "known_pmid_reader_minimal_host_route",
+      "scenario": "known_pmid_reader_default_off",
       "task_profile": {
-        "task_id": "pubmed-known-pmid-doi-binding-route-r1",
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [],
         "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
         "input_types": [
           "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs); optional expected_doi is accepted only for exactly one PMID and must be a bare DOI."
@@ -1612,21 +1773,19 @@
           "when expected_doi is supplied: expected DOI, same-response DOI binding status, and relations only on EXACT_MATCH",
           "per-response SHA-256 and explicit HTTP or network outcome summary"
         ],
-        "allowed_execution_modes": [
-          "READ_ONLY_RUN"
-        ],
-        "allowed_network_hosts": [
-          "eutils.ncbi.nlm.nih.gov"
-        ]
-      },
-      "include_experimental_tool_ids": [
-        "research.inspect_pubmed_update_links"
-      ],
+        "task_id": "pubmed-known-pmid-doi-binding-route-r1"
+      }
+    },
+    {
+      "execution_authorized": false,
       "expected_decision": "COMPLETE",
+      "expected_execution_authorized": false,
       "expected_selected_tool_ids": [
         "research.inspect_pubmed_update_links"
       ],
-      "expected_execution_authorized": false,
+      "include_experimental_tool_ids": [
+        "research.inspect_pubmed_update_links"
+      ],
       "result": {
         "schema_version": "ignition-tool-route-plan-r0",
         "task_id": "pubmed-known-pmid-doi-binding-route-r1",
@@ -1806,6 +1965,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "maintenance.inspect_repository",
             "reason": "NO_INPUT_TYPE_MATCH"
           },
@@ -1815,6 +1978,14 @@
           },
           {
             "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -1936,21 +2107,46 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
+          "experimental_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59"
         }
       },
-      "execution_authorized": false
+      "scenario": "known_pmid_reader_minimal_host_route",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ],
+        "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
+        "input_types": [
+          "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs); optional expected_doi is accepted only for exactly one PMID and must be a bare DOI."
+        ],
+        "required_outputs": [
+          "input-ordered PubMed Comments/Corrections relation rows with raw RefType, related PMID, and reference source",
+          "when expected_doi is supplied: expected DOI, same-response DOI binding status, and relations only on EXACT_MATCH",
+          "per-response SHA-256 and explicit HTTP or network outcome summary"
+        ],
+        "task_id": "pubmed-known-pmid-doi-binding-route-r1"
+      }
     }
   ],
-  "claim_ceiling": "Default-off local route proposal only. Explicit candidate inclusion and exact host allowlists select minimal read-only proposals, but do not authorize network execution, verify the caller authority, or upgrade a scientific claim.",
+  "schema_version": "ignition.toolbox-pubmed-doi-update-route-evidence-r2",
   "summary": {
-    "default_off_verified": true,
     "composition_hosts_required": [
       "pmc.ncbi.nlm.nih.gov",
       "eutils.ncbi.nlm.nih.gov"
     ],
+    "default_decision": "INCOMPLETE",
+    "default_off_verified": true,
+    "default_selected_tool_ids": [],
     "direct_reader_host_required": [
       "eutils.ncbi.nlm.nih.gov"
+    ],
+    "execution_authorized": false,
+    "explicit_allowlist_decision": "COMPLETE",
+    "explicit_allowlist_selected_tool_ids": [
+      "research.audit_pubmed_updates_from_doi"
     ],
     "minimal_composition_route": [
       "research.audit_pubmed_updates_from_doi"
@@ -1958,139 +2154,39 @@
     "minimal_known_pmid_route": [
       "research.inspect_pubmed_update_links"
     ],
-    "redundant_adjacent_candidates_selected": false,
-    "execution_authorized": false,
-    "default_decision": "INCOMPLETE",
-    "default_selected_tool_ids": [],
-    "explicit_allowlist_decision": "COMPLETE",
-    "explicit_allowlist_selected_tool_ids": [
-      "research.audit_pubmed_updates_from_doi"
-    ]
+    "redundant_adjacent_candidates_selected": false
   },
-  "catalog_replay": {
-    "observed_at_utc": "2026-10-26T02:51:05Z",
-    "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
-    "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
-    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "route_trials_replayed": 6,
-    "all_expected_decisions_reproduced": true,
-    "provider_calls_made": 0,
-    "execution_authorized": false,
-    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
-    "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd"
-  },
-  "catalog_replay_history": [
-    {
-      "observed_at_utc": "2026-10-25T22:52:47Z",
-      "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
-      "candidate_catalog_git_blob_sha1": "8f3384fda573a43bc7cdd8564798e99f6afc026d",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false
+  "task_profiles": {
+    "doi_composition": {
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ],
+      "allowed_network_hosts": [],
+      "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
+      "input_types": [
+        "JSON stdin object with exactly one unique bare DOI identifier"
+      ],
+      "required_outputs": [
+        "One DOI-to-PMID/PMCID identifier response with the provider response digest and explicit acquisition outcome.",
+        "If one exact PMID is returned, a PubMed relation read gated by an exact DOI match in that same EFetch response; otherwise an explicit no-fetch or RECORD_IDENTITY_NOT_CONFIRMED outcome."
+      ],
+      "task_id": "pubmed-doi-update-identity-binding-route-r1"
     },
-    {
-      "observed_at_utc": "2026-10-25T23:10:52Z",
-      "previous_candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
-      "candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false
-    },
-    {
-      "observed_at_utc": "2026-10-25T23:11:27Z",
-      "previous_candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
-      "candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false
-    },
-    {
-      "observed_at_utc": "2026-10-25T23:26:13Z",
-      "previous_candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
-      "candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false,
-      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d"
-    },
-    {
-      "observed_at_utc": "2026-10-25T23:51:22Z",
-      "previous_candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
-      "candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false,
-      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d"
-    },
-    {
-      "observed_at_utc": "2026-10-26T00:19:19Z",
-      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
-      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false,
-      "replay_result_sha256": "690cb452107c6475d7139415e6f88b8cc0c752ecc476603045f28e9b271e0f96"
-    },
-    {
-      "observed_at_utc": "2026-10-26T00:19:19Z",
-      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
-      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false
-    },
-    {
-      "observed_at_utc": "2026-10-26T00:52:07Z",
-      "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
-      "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false,
-      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
-      "replay_result_sha256": "de9db047125dc35b9eeeb26334053e8e3ab17c77d354586873c0030cfb35d119"
-    },
-    {
-      "observed_at_utc": "2026-10-26T02:31:40Z",
-      "previous_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
-      "candidate_catalog_git_blob_sha1": "d4064d06e3646902f1dc47f2258734fd38d179f9",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false,
-      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
-      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d"
-    },
-    {
-      "observed_at_utc": "2026-10-26T02:33:10Z",
-      "previous_candidate_catalog_git_blob_sha1": "d4064d06e3646902f1dc47f2258734fd38d179f9",
-      "candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false,
-      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
-      "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d"
-    },
-    {
-      "observed_at_utc": "2026-10-26T02:51:05Z",
-      "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
-      "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
-      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "route_trials_replayed": 6,
-      "all_expected_decisions_reproduced": true,
-      "provider_calls_made": 0,
-      "execution_authorized": false,
-      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
-      "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd"
+    "known_pmid_reader": {
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ],
+      "allowed_network_hosts": [],
+      "current_ref": "WORKTREE_UNCOMMITTED_BASE_988e05c87f693c86518b37d00600a4dae21c1ff1; caller-supplied and not resolved by the planner",
+      "input_types": [
+        "JSON stdin object with one to ten unique numeric PubMed IDs (PMIDs); optional expected_doi is accepted only for exactly one PMID and must be a bare DOI."
+      ],
+      "required_outputs": [
+        "input-ordered PubMed Comments/Corrections relation rows with raw RefType, related PMID, and reference source",
+        "when expected_doi is supplied: expected DOI, same-response DOI binding status, and relations only on EXACT_MATCH",
+        "per-response SHA-256 and explicit HTTP or network outcome summary"
+      ],
+      "task_id": "pubmed-known-pmid-doi-binding-route-r1"
     }
-  ],
-  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+  }
 }

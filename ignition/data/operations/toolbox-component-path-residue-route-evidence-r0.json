@@ -1,0 +1,92 @@
+{
+  "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+  "catalog_replay": {
+    "all_expected_decisions_reproduced": true,
+    "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "execution_authorized": false,
+    "observed_at_utc": "2026-10-26T03:18:22Z",
+    "previous_candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+    "provider_calls_made": 0,
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+    "replay_result_sha256": "763e97e9751ac4e15c02e2076e54824500bf845c32243199f1bed18af642c093",
+    "route_trials_replayed": 2,
+    "candidate_invoked": false
+  },
+  "claim_ceiling": "Route planner proposal only; the candidate was not invoked and execution was not authorized.",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "development_attempt_note": {
+    "initial_explicit_trial": "INCOMPLETE",
+    "reason": "SOURCE_REFERENCE_UNAVAILABLE_OR_UNSAFE because the route-evidence file had not yet been created while wiring the candidate card.",
+    "resolution": "Added the evidence path, aligned the route profile input/output strings exactly to the identity card, then replayed both final scenarios."
+  },
+  "route_profile": {
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON matching toolbox-component-path-residue-input-r0.schema.json with 1–5000 unique unmapped_path records and normalized relative paths."
+    ],
+    "required_outputs": [
+      "Deterministic JSON with input/tool SHA-256 digests, exact parent-directory groups, repeated filename-prefix groups, all uncohorted paths, and explicit empty mapping suggestions."
+    ],
+    "task_id": "component-validation-path-residue-triage"
+  },
+  "route_trials": [
+    {
+      "candidate_invoked": false,
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "include_experimental_tool_ids": [],
+      "router_provider_calls": 0,
+      "scenario": "default_off",
+      "selected_permissions": null,
+      "selected_tool_ids": []
+    },
+    {
+      "candidate_invoked": false,
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "include_experimental_tool_ids": [
+        "maintenance.summarize_component_path_residue"
+      ],
+      "router_provider_calls": 0,
+      "scenario": "explicit_allowlist",
+      "selected_permissions": {
+        "billing": false,
+        "external_actions": false,
+        "network": false,
+        "network_hosts": [],
+        "read_paths": [
+          "ignition/tools/toolbox_component_path_residue.py"
+        ],
+        "secrets": false,
+        "write_paths": []
+      },
+      "selected_tool_ids": [
+        "maintenance.summarize_component_path_residue"
+      ]
+    }
+  ],
+  "schema_version": "component-path-residue-route-evidence-r0",
+  "source_refs": {
+    "candidate_catalog": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "planner": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "route_profile": "ignition/data/operations/toolbox-component-path-residue-route-profile-r0.json"
+  },
+  "tool_id": "maintenance.summarize_component_path_residue",
+  "catalog_replay_history": [
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+      "candidate_invoked": false,
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T03:11:49Z",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "763e97e9751ac4e15c02e2076e54824500bf845c32243199f1bed18af642c093",
+      "route_trials_replayed": 2
+    }
+  ]
+}

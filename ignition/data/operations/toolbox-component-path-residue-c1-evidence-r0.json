@@ -1,0 +1,29 @@
+{
+  "schema_version": "component-path-residue-c1-evidence-r0",
+  "candidate_tool_id": "maintenance.summarize_component_path_residue",
+  "status": "COMPARISON_UNKNOWN",
+  "compared_tool_ids": [
+    "maintenance.attribute_actions_validation_evidence",
+    "maintenance.compare_audit_findings",
+    "maintenance.summarize_actions_step_timeline"
+  ],
+  "comparison_scope": "Static input/output comparison against existing toolbox candidates and the authoritative route validator. No matched user task has measured triage time or compared this output with an existing workflow.",
+  "paired_real_task_comparison": "NOT_RUN_NO_MATCHED_TRIAGE_OUTCOME",
+  "findings": [
+    "The official route validator detects unmapped paths and selects validation targets; this candidate only groups caller-supplied unmapped_path rows by directory and normalized filename prefix.",
+    "The candidate does not identify canonical component owners, infer mapping patterns, change registries, or select validation targets.",
+    "The Actions-attribution, audit-finding, and job-timeline tools consume different input contracts and do not emit directory and filename-prefix cohorts for route residues.",
+    "Relative reviewer time, error reduction, and cost have not been measured; preserve uncertainty and run a low-cost same-task comparison before changing the candidate's lifecycle or route eligibility."
+  ],
+  "disposition": "KEEP_NEW_TOOL_EXPERIMENTAL_AND_DEFAULT_OFF; KEEP_EXISTING_TOOLS; RETIRE_NO_TOOL",
+  "evidence_refs": [
+    "ignition/tools/toolbox_component_path_residue.py",
+    "ignition/tools/operations/compute_change_propagation.py",
+    "ignition/tools/operations/route_component_validation.py",
+    "ignition/tools/toolbox_actions_validation_attribution.py",
+    "ignition/tools/toolbox_audit_finding_comparator.py",
+    "ignition/tools/toolbox_actions_step_timeline.py",
+    "ignition/data/operations/toolbox-component-path-residue-real-task-evidence-r0.json"
+  ],
+  "claim_ceiling": "Structural grouping of caller-supplied path strings only. Cohorts do not imply shared component ownership, semantic equivalence, validation scope, or approval."
+}
