@@ -1,7 +1,7 @@
 {
   "schema_version": "toolbox-route-evidence-r0",
   "tool_id": "research.bind_offline_source_snapshot_run",
-  "candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+  "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_trials": [
     {
@@ -70,14 +70,14 @@
     "repository_write_paths": []
   },
   "catalog_replay": {
-    "observed_at_utc": "2026-10-25T23:51:22Z",
-    "previous_candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
-    "candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+    "observed_at_utc": "2026-10-26T00:19:19Z",
+    "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+    "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
     "route_trials_replayed": 2,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
-    "replay_result_sha256": "d8020ba998ff53402e56cc89f1a1f923a064ecdfdb0cff9e9880d51716abfb67"
+    "replay_result_sha256": "58f1af59cc278e2cb8db91cc19e58d2f70db195b8a6947e0753c3101cc618d1a"
   },
   "catalog_replay_history": [
     {
@@ -116,6 +116,26 @@
       "provider_calls_made": 0,
       "execution_authorized": false,
       "replay_result_sha256": "d8020ba998ff53402e56cc89f1a1f923a064ecdfdb0cff9e9880d51716abfb67"
+    },
+    {
+      "observed_at_utc": "2026-10-25T23:51:22Z",
+      "previous_candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
+      "candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_result_sha256": "d8020ba998ff53402e56cc89f1a1f923a064ecdfdb0cff9e9880d51716abfb67"
+    },
+    {
+      "observed_at_utc": "2026-10-26T00:19:19Z",
+      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_result_sha256": "58f1af59cc278e2cb8db91cc19e58d2f70db195b8a6947e0753c3101cc618d1a"
     }
   ]
 }

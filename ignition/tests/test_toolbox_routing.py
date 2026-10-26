@@ -497,6 +497,76 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             )
         self.assertFalse(expanded_options["execution_authorized"])
 
+    def test_crossref_reference_metadata_comparator_is_default_off_and_requires_exact_host(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "research.compare_crossref_reference_metadata"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile(
+            "selected-crossref-reference-doi-metadata-comparison",
+            card["accepted_input_types"],
+            card["output_types"],
+        )
+
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+
+        allowlisted_without_host = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        self.assertEqual(allowlisted_without_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            allowlisted_without_host["rejected_candidates"],
+        )
+
+        permitted = planner.plan_tool_route(
+            profile(
+                task["task_id"],
+                task["input_types"],
+                task["required_outputs"],
+                allowed_network_hosts=["api.crossref.org"],
+            ),
+            include_experimental_tool_ids=[tool_id],
+        )
+        self.assertEqual(permitted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in permitted["selected_tools"]], [tool_id])
+        self.assertEqual(permitted["selected_tools"][0]["permissions"]["network_hosts"], ["api.crossref.org"])
+        self.assertFalse(permitted["execution_authorized"])
+
+        expanded = planner.plan_tool_route(
+            profile(
+                task["task_id"],
+                task["input_types"],
+                task["required_outputs"],
+                allowed_network_hosts=["api.crossref.org"],
+            ),
+            include_experimental_tool_ids=[
+                tool_id,
+                "research.verify_crossref_metadata",
+                "research.lookup_openalex_work_metadata",
+                "research.compare_publication_metadata_snapshots",
+            ],
+        )
+        self.assertEqual([row["tool_id"] for row in expanded["selected_tools"]], [tool_id])
+        self.assertFalse(expanded["execution_authorized"])
+
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(evidence["routes"]["default_off"]["decision"], default["decision"])
+        self.assertEqual(evidence["routes"]["tool_allowlist_without_host"]["decision"], allowlisted_without_host["decision"])
+        self.assertEqual(evidence["routes"]["exact_host_minimum"]["decision"], permitted["decision"])
+        self.assertEqual(evidence["routes"]["exact_host_minimum"]["selected_tool_ids"], [tool_id])
+        self.assertEqual(evidence["routes"]["expanded_allowlist"]["selected_tool_ids"], [tool_id])
+        self.assertFalse(evidence["execution_authorized"])
+        self.assertEqual(
+            evidence["candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
+
     def test_network_route_rejects_wildcards_urls_and_ports(self) -> None:
         task = profile("invalid-network-route", ["x"], ["y"], allowed_network_hosts=["*.crossref.org"])
         with self.assertRaises(planner.RunPlanningError):

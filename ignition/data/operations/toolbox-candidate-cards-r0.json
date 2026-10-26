@@ -5177,6 +5177,202 @@
       }
     },
     {
+      "tool_id": "research.compare_crossref_reference_metadata",
+      "display_name": {
+        "zh": "Crossref 引文元数据比较器",
+        "en": "Crossref Reference Metadata Comparator"
+      },
+      "description": "Resolve up to five caller-selected cited DOI identifiers through Crossref Works and compare supplied structured citation metadata with each returned Work record.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; Crossref bibliographic metadata reuse basis documented at https://www.crossref.org/documentation/retrieve-metadata/.",
+      "maintainer": "Ignition repository maintainers; reused Crossref request and Task 103 normalization helpers do not confer Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_crossref_reference_metadata.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json",
+          "role": "SOURCE_WORK_REFERENCE_PROJECTION_AND_SELECTED_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-c1-evidence-r0.json",
+          "role": "C1_COMPLEMENTARITY_AND_RETENTION_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r0.json",
+          "role": "ONE_DOI_REAL_TASK_OUTCOME"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_EXACT_HOST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-crossref-reference-metadata-comparison.md",
+          "role": "USER_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/evidence-program/tools/run_crossref_verification.py",
+          "role": "PINNED_TASK103_NORMALIZATION_HELPER"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r0.schema.json",
+          "role": "MACHINE_READABLE_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_crossref_reference_metadata_comparison.py",
+          "role": "FOCUSED_FIELD_DOI_AND_NETWORK_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "EXPLICIT_ALLOWLIST_AND_EXACT_HOST_ROUTE_CONTROLS"
+        },
+        {
+          "path": "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+          "role": "FIXED_HOST_SELECTED_REFERENCE_DOI_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "role": "REUSED_BOUNDED_CROSSREF_HTTP_ADAPTER"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_crossref_metadata_verifier.py",
+        "ignition/evidence-program/tools/run_crossref_verification.py"
+      ],
+      "good_for": [
+        "Resolving one to five caller-selected cited DOI identifiers to their Crossref Work records after the caller supplies the DOI-bearing reference rows.",
+        "Comparing only supplied structured article title, year, journal title, volume, issue, and first-page values after the adapter's bounded normalization.",
+        "Returning exact DOI-identity status, per-field equality/difference/missing status, response digests, and acquisition failures for each selected row.",
+        "Separating source-deposited citation text from metadata on the target Work without claiming that either record is complete or authoritative."
+      ],
+      "not_for": [
+        "Deciding that a reference is correct or incorrect, authenticating the citing Work or reference-row provenance, or validating scientific support.",
+        "Searching or enumerating a bibliography, estimating reference-deposit coverage, or certifying bibliography completeness.",
+        "Parsing author names or free-form unstructured citation strings, following citation URLs, reading publisher pages, or downloading article full text.",
+        "Making a network call without per-invocation approval of the DOI transmission and the --allow-public-network flag."
+      ],
+      "only_if": [
+        "The caller has explicitly selected up to five DOI-bearing Crossref reference rows and approves sending those DOI identifiers to the public Crossref API for this invocation.",
+        "The exact input follows the JSON Schema at ignition/schemas/operations/toolbox-crossref-reference-metadata-comparison-input-r0.schema.json and fits the bounded stdin contract.",
+        "A routed proposal explicitly includes this candidate and allowed_network_hosts contains exactly api.crossref.org; a route proposal alone is not execution permission.",
+        "The actual CLI invocation includes --allow-public-network."
+      ],
+      "counterindicated_when": [
+        "The DOI or task context is confidential or public-network transmission is not approved.",
+        "The caller has only an unstructured citation or needs source provenance, citation correctness, completeness, scientific assessment, or full-text review.",
+        "The task requires resolving more than five references or searching for cited works not already selected by the caller."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON object with one caller-declared source_work_doi and one to five selected reference objects. Each reference has a unique key and bare DOI; optional fields are article_title, year, journal_title, volume, issue, and first_page. Maximum 32768 bytes."
+      ],
+      "output_types": [
+        "Input-ordered per-reference result with resolved DOI identity, acquisition/HTTP state, and bounded Crossref Work metadata.",
+        "Per-supplied-field normalized equality, normalized difference, or WORK_FIELD_NOT_REPORTED status; no field is inferred from unstructured citation text.",
+        "Input, provider-response, and local source SHA-256 digests plus a claim ceiling that excludes citation correctness and scientific support."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/evidence-program/tools/run_crossref_verification.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.crossref.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "For one explicitly invoked run, performs one sequential HTTPS GET for each of one to five caller-selected DOI identifiers using the existing Crossref adapter's fixed api.crossref.org host, redirect block, timeout, response limit, and body deadline.",
+        "Writes one bounded JSON result to stdout and input errors to stderr; it does not write repository files, follow citation URLs, or retrieve article content."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "Local toolbox_crossref_metadata_verifier.py and its SHA-pinned Task 103 Crossref normalization helper"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No matched latency distribution, bandwidth profile, service availability estimate, or billed-cost measurement exists; the request count and response bounds are explicit."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Crossref v0.3 can project a bounded set of deposited references from the citing Work response and compare that Work's title/year, but it does not resolve selected cited DOI records or compare their journal, volume, issue, and first page."
+        },
+        {
+          "tool_id": "research.compare_publication_metadata_snapshots",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool compares already-collected Crossref/OpenAlex title/year snapshots; it does not retrieve a cited DOI Work or compare source-deposited reference fields against the target record."
+        }
+      ],
+      "replacement_candidates": [],
+      "fallback": "If a network call is not approved or fails, preserve NOT_RUN or the explicit acquisition failure. Use research.verify_crossref_metadata only when a bounded source-deposited reference projection is sufficient; it does not resolve cited DOI Works.",
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the caller explicitly allowlists research.compare_crossref_reference_metadata and the typed route profile explicitly lists api.crossref.org.",
+        "Even a COMPLETE planner result has execution_authorized=false and does not verify the caller's authority behind the host declaration.",
+        "Every actual CLI invocation separately requires --allow-public-network and caller approval to transmit its selected DOI identifiers."
+      ],
+      "claim_ceiling": "For up to five caller-supplied Crossref reference rows, retrieve the exact cited DOI Work metadata from api.crossref.org and report normalized field equality or difference for supplied title, year, journal, volume, issue, and first-page values. A difference is not proof of an incorrect citation; a match does not establish source authenticity, bibliography completeness, article content, or scientific support. The source-work DOI and projection provenance are caller declarations only.",
+      "unique_remaining_use_cases": [
+        "Resolve caller-selected DOI-bearing reference rows individually and compare supplied structured citation fields with the DOI-resolved target Work while preserving per-field and DOI-identity uncertainty."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "One purposively selected cited DOI was resolved and four caller-provided fields were compared. This demonstrates the distinct target-Work lookup contract but does not estimate accuracy, coverage, completeness, quality, latency, or cost.",
+        "compared_tool_ids": [
+          "research.verify_crossref_metadata",
+          "research.compare_publication_metadata_snapshots"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-crossref-reference-metadata-comparison-real-task-r0.json",
+          "ignition/data/operations/toolbox-crossref-references-real-task-evidence-r0.json"
+        ],
+        "findings": [
+          "The existing Crossref verifier projects source-deposited references; this tool resolves one selected cited DOI to its target Work.",
+          "One journal-title difference between an abbreviation and a full provider title remains a metadata difference only; no citation-error judgment is made.",
+          "The existing source-projection and target-Work comparison capabilities are complementary; no replacement or general superiority has been established."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "ACTIVE",
+        "basis": "Optional default-off specialization; one record does not establish broad quality or replacement evidence."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation or existing CLI contract is changed. Use this optional selector only when target DOI metadata comparison is needed; keep the existing source-reference projection for bibliography intake."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, comparator entrypoint, schema, docs, tests, route and C1 evidence, and real-task evidence from active projections; regenerate toolbox identity-card outputs. Preserve the source commits and historical evidence receipts."
+        ]
+      },
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_crossref_reference_metadata_comparison.py",
+          "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tests/test_toolbox_routing.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network causes no request and emits no result.",
+          "Reject duplicate JSON keys, URLs in place of bare DOI, duplicate DOI/key rows, unsupported fields, invalid years, and inputs above one to five rows before any network request.",
+          "Reject or mark malformed provider JSON, duplicate provider keys, unavailable DOI identity, and returned DOI mismatch without comparing citation fields.",
+          "Keep provider-field absence distinct from normalized differences and report selected fields only.",
+          "Call only the fixed api.crossref.org host, follow no redirects, write no repository files, and retrieve no citation URLs or article content.",
+          "Keep the candidate default-off; route requires explicit inclusion plus exact api.crossref.org, and planner output cannot authorize execution."
+        ]
+      }
+    },
+    {
       "tool_id": "runtime.inspect_declared_pack_catalog",
       "display_name": {
         "zh": "声明式 Pack 能力目录检查器",
