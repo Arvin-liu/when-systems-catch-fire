@@ -1,0 +1,204 @@
+{
+  "schema_version": "ignition-routed-real-task-comparison-r1",
+  "observed_at_utc": "2026-10-26T15:55:29Z",
+  "task": {
+    "task_id": "pr264-run-attribution-summary-20261026",
+    "intent": "Bind one supplied PR #264 workflow plan, run, and artifact inventory; report selected targets, observed intervals, and receipt presence.",
+    "source_authentication": "NOT_PERFORMED",
+    "source_head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "source_run_id": 40064357026,
+    "source_run_attempt": 1,
+    "input_contract": {
+      "task_id": "pr264-run-attribution-summary-20261026",
+      "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "input_types": [
+        "UTF-8 JSON stdin containing one component validation plan, one workflow run/jobs snapshot, one artifact inventory with extracted basenames and completeness flag, and an optional component validation receipt.",
+        "UTF-8 JSON stdin envelope with one workflow_run object and a jobs_response containing job snapshots for the same run ID, attempt, and head SHA"
+      ],
+      "required_outputs": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ],
+      "allowed_execution_modes": [
+        "READ_ONLY_RUN"
+      ]
+    }
+  },
+  "source_inputs": {
+    "attribution_fixture": "ignition/tests/fixtures/toolbox-actions-validation-attribution/input-run-40064357026-r0.json",
+    "attribution_fixture_sha256": "6781ae69ec6c2dc581443657f77dd845cd4289b829dd50b2c7f47d96e03d4e2b",
+    "timeline_fixture": "ignition/tests/fixtures/toolbox-actions-step-timeline/actions-run-40064357026.json",
+    "timeline_fixture_sha256": "bf3aeff00faa3a6927f1a856aff36516240254acc79a9b230b9119bb17bd6a4c",
+    "attribution_input_bytes": 122646,
+    "timeline_input_bytes": 20593,
+    "same_run_id_attempt_head": true,
+    "timeline_fixture_identity": {
+      "run_id": 40064357026,
+      "run_attempt": 1,
+      "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8"
+    }
+  },
+  "tool_sources": {
+    "maintenance.attribute_actions_validation_evidence": {
+      "source_path": "ignition/tools/toolbox_actions_validation_attribution.py",
+      "source_blob_sha1": "4a37bd62415975999c31f07d83cffeb612b35533",
+      "version": "0.1.0",
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_actions_validation_attribution.py",
+          "ignition/tools/toolbox_actions_step_timeline.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      }
+    },
+    "maintenance.summarize_actions_step_timeline": {
+      "source_path": "ignition/tools/toolbox_actions_step_timeline.py",
+      "source_blob_sha1": "9c9981755b58dcfff8dd830d6581c330ea02e191",
+      "version": "0.1.0",
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_actions_step_timeline.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      }
+    }
+  },
+  "router_bindings": {
+    "source_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "source_blob_sha1": "d7881daae28a3d82612ceadb78d77bcd879bfe83",
+    "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "candidate_catalog_blob_sha1": "00361ac0acaa926ad9f621d56d237c723246f4c7",
+    "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "execution_authorized_by_router": false
+  },
+  "route_trials": {
+    "default_no_experimental_tools": {
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "selected_tool_ids": [],
+      "allowlist": [],
+      "unmet_outputs": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ],
+      "reason": null,
+      "task_outcome": "NOT_COMPLETED_BY_TOOLBOX_ROUTE",
+      "tool_invocations": 0
+    },
+    "sufficient_attribution_only": {
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "selected_tool_ids": [
+        "maintenance.attribute_actions_validation_evidence"
+      ],
+      "allowlist": [
+        "maintenance.attribute_actions_validation_evidence"
+      ],
+      "unmet_outputs": [],
+      "reason": null,
+      "tool_cli_invoked_explicitly_after_route": true,
+      "tool_invocations_per_trial": 1
+    },
+    "timeline_only": {
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "selected_tool_ids": [],
+      "allowlist": [
+        "maintenance.summarize_actions_step_timeline"
+      ],
+      "unmet_outputs": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ],
+      "reason": null,
+      "task_outcome": "NOT_COMPLETED_REQUIRED_ATTRIBUTION_OUTPUT_UNMET",
+      "tool_invocations": 0
+    },
+    "both_allowlisted": {
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "selected_tool_ids": [
+        "maintenance.attribute_actions_validation_evidence"
+      ],
+      "allowlist": [
+        "maintenance.summarize_actions_step_timeline",
+        "maintenance.attribute_actions_validation_evidence"
+      ],
+      "unmet_outputs": [],
+      "reason": "The attribution receipt alone covers the only required output; the planner does not require the timeline tool.",
+      "timeline_tool_selected": false,
+      "tool_cli_invoked_explicitly_after_route": true,
+      "tool_invocations_per_trial": 1
+    }
+  },
+  "actual_tool_result": {
+    "tool_id": "maintenance.attribute_actions_validation_evidence",
+    "process_exit_code": 0,
+    "repeated_invocations": 9,
+    "all_outputs_byte_identical": true,
+    "output_bytes": 3357,
+    "output_sha256": "772ab7aaab899d283d25a572942ad12e8daa057cec8b5b8b0f7c36259dd75f2f",
+    "run_id": 40064357026,
+    "run_attempt": 1,
+    "head_sha_matches_plan": true,
+    "plan_mode": "FULL",
+    "selected_target_count": 11,
+    "validation_receipt_presence": "ABSENT_FROM_SUPPLIED_COMPLETE_FILE_LIST",
+    "timeline_summary_matches_standalone_tool": true,
+    "timeline_summary_sha256": "6d7469b9051a05d57b14e8d8dc2c4da1af49659e54e8bfcd9fc290f087a68639",
+    "timeline_output_bytes": 16521,
+    "timeline_output_sha256": "472c7ae64f29ec95900924171b9f229405dc406edcd3b30aba1c023b212e121a",
+    "no_files_written_by_cli": true,
+    "claim_ceiling": {
+      "github_source_authenticated": false,
+      "component_validation_receipt_officially_verified": false,
+      "required_check_satisfaction_interpreted": false,
+      "selected_target_success_inferred_without_receipt": false,
+      "billable_minutes_cost_or_savings_estimated": false,
+      "merge_or_release_authorized": false
+    }
+  },
+  "c1_same_task_comparison": {
+    "shared_use_case_id": "job_interval_summary",
+    "paired_runs": 9,
+    "same_snapshot_and_host": true,
+    "timeline_summary_exactly_equal": true,
+    "incumbent_output_sha256": "472c7ae64f29ec95900924171b9f229405dc406edcd3b30aba1c023b212e121a",
+    "incumbent_output_bytes": 16521,
+    "successor_output_sha256": "772ab7aaab899d283d25a572942ad12e8daa057cec8b5b8b0f7c36259dd75f2f",
+    "successor_output_bytes": 3357,
+    "unique_value_retained_by_timeline": "65 per-step records from the supplied snapshot",
+    "unique_value_retained_by_attribution": "plan/run/artifact bindings and supplied validation-receipt presence",
+    "cash_cost": "UNKNOWN",
+    "lifecycle_disposition": "COEXIST_DISTINCT_SCOPE",
+    "replacement_supported": false,
+    "comparison_limit": "Local timing is not hosted runner cost; output identity covers only the shared interval-summary field and this one caller-supplied snapshot."
+  },
+  "local_wall_time_ms": {
+    "method": "monotonic subprocess wall time, 9 repeats per lane on one local host, alternating order in redundant lane; no provider or network calls",
+    "sample_count_per_executed_lane": 9,
+    "default_route_planner_only_median": 2.62,
+    "sufficient_route_plus_one_tool_median": 31.847,
+    "attribution_tool_cli_median": 28.86,
+    "extra_timeline_tool_cli_median": 26.861,
+    "redundant_route_plus_two_tools_median": 59.292,
+    "redundant_increment_vs_sufficient_paired_median": 27.33
+  },
+  "experiment_boundary": {
+    "all_execution_local": true,
+    "network_calls": 0,
+    "external_actions": false,
+    "billing": false,
+    "secrets": false,
+    "files_written_by_cli": false,
+    "extra_timeline_run": "CONTROLLED_SHADOW_COMPARISON_ONLY_NOT_REQUIRED_BY_TASK_CONTRACT",
+    "route_planner_execution_authorized": false,
+    "claim_ceiling": "One supplied historical Actions snapshot on one local host. Route and output observations are reproducible but do not authenticate GitHub, certify CI, estimate hosted billing or prove global tool quality."
+  }
+}
