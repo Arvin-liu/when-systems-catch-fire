@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-failure-anchored-recovery-output-r0",
+  "title": "Failure-Anchored Recovery Preflight Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "status", "next_action", "failure_ref", "run_head_sha", "failure_fingerprint_sha256", "action_fingerprint_sha256", "supported_diagnosis_ids", "supporting_evidence_ids", "proposed_instructions", "verification", "stop_conditions", "findings", "source_authentication", "execution_authorized", "retry_authorized", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "toolbox-failure-anchored-recovery-output-r0"},
+    "tool_id": {"const": "maintenance.preflight_failure_anchored_recovery"},
+    "tool_version": {"const": "0.1.0"},
+    "status": {"enum": ["READY_FOR_HUMAN_REVIEW", "BLOCKED"]},
+    "next_action": {"enum": ["HUMAN_REVIEW", "STOP_NO_RETRY"]},
+    "failure_ref": {"type": "string", "minLength": 1},
+    "run_head_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "failure_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "action_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "supported_diagnosis_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "supporting_evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "proposed_instructions": {"type": "array", "items": {"type": "string"}},
+    "verification": {"oneOf": [{"type": "object", "additionalProperties": false, "required": ["command", "success_signal", "failure_signature_to_recheck"], "properties": {"command": {"type": "string"}, "success_signal": {"type": "string"}, "failure_signature_to_recheck": {"type": "string"}}}, {"type": "null"}]},
+    "stop_conditions": {"type": "array", "items": {"type": "string"}},
+    "findings": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["code", "path"], "properties": {"code": {"type": "string"}, "path": {"type": "string"}}}},
+    "source_authentication": {"const": "NOT_PERFORMED"},
+    "execution_authorized": {"const": false},
+    "retry_authorized": {"const": false},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}

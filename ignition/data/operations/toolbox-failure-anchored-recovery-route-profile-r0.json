@@ -1,0 +1,13 @@
+{
+  "task_id": "pr264-failure-anchored-recovery-preflight",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "One UTF-8 JSON object conforming to toolbox-failure-anchored-recovery-input-r0, maximum 131072 bytes, supplied on stdin."
+  ],
+  "required_outputs": [
+    "Deterministic JSON with READY_FOR_HUMAN_REVIEW or BLOCKED, exact failure/action fingerprints, diagnosis and evidence references, verifier and stop conditions, plus fixed execution_authorized=false and retry_authorized=false."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

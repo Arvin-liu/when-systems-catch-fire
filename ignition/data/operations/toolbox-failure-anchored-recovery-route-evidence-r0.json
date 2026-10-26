@@ -1,0 +1,73 @@
+{
+  "schema_version": "toolbox-failure-anchored-recovery-route-evidence-r0",
+  "tool_id": "maintenance.preflight_failure_anchored_recovery",
+  "observed_at_utc": "2026-10-26T15:07:30Z",
+  "candidate_catalog_git_blob_sha1": "00361ac0acaa926ad9f621d56d237c723246f4c7",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_git_blob_sha1": "c1bbdec95c2cf3e0af7ca86816dc3820e81a5fc2",
+  "route_profile": {
+    "task_id": "pr264-failure-anchored-recovery-preflight",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "One UTF-8 JSON object conforming to toolbox-failure-anchored-recovery-input-r0, maximum 131072 bytes, supplied on stdin."
+    ],
+    "required_outputs": [
+      "Deterministic JSON with READY_FOR_HUMAN_REVIEW or BLOCKED, exact failure/action fingerprints, diagnosis and evidence references, verifier and stop conditions, plus fixed execution_authorized=false and retry_authorized=false."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "result_sha256": "dd8213bd2e480017584740865129af74a26e34df05582531ff0a6d9155c2d363",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "maintenance.preflight_failure_anchored_recovery",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.preflight_failure_anchored_recovery"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.preflight_failure_anchored_recovery"
+      ],
+      "result_sha256": "62125501e731a39aafeb411caa953204a21e0907305483e8d3ea94cb47aceae7",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/schemas/operations/toolbox-failure-anchored-recovery-input-r0.schema.json"
+          ],
+          "write_paths": [],
+          "network": false,
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
+      "relevant_rejections": []
+    }
+  ],
+  "route_trials_replayed": 2,
+  "all_expected_decisions_reproduced": true,
+  "provider_calls_made": 0,
+  "candidate_invoked": false,
+  "execution_authorized": false,
+  "claim_ceiling": "Offline routing proposals only. The candidate was not invoked; no recovery ran, no provider was contacted, and no execution or retry permission was granted."
+}

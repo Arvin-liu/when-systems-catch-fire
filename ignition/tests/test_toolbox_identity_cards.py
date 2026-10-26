@@ -624,6 +624,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "foundation.read_current_asset_card",
             "research.probe_counterfactual_fragility",
             "reasoning.search_structural_analogies",
+            "maintenance.preflight_failure_anchored_recovery",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
