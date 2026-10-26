@@ -1561,6 +1561,62 @@ class AdaptiveToolRouteTests(unittest.TestCase):
                 self.assertEqual(trial["router_provider_calls"], 0)
                 self.assertFalse(trial["candidate_invoked"])
 
+    def test_declared_permission_delta_is_default_off_and_proposes_only_on_allowlist(self) -> None:
+        tool_id = "governance.preflight_declared_permission_delta"
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        route_profile = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-declared-permission-delta-route-profile-r0.json")
+            .read_text(encoding="utf-8")
+        )
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-declared-permission-delta-route-evidence-r0.json")
+            .read_text(encoding="utf-8")
+        )
+        self.assertEqual(route_profile["input_types"], card["accepted_input_types"])
+        self.assertEqual(route_profile["required_outputs"], card["output_types"])
+        fingerprint_fields = (
+            "tool_id", "version", "accepted_input_types", "output_types", "execution_mode",
+            "explicit_owner_authorization_required", "permissions", "router_selectable_by_default",
+            "router_conditions", "claim_ceiling",
+        )
+        fingerprint_doc = {key: card[key] for key in fingerprint_fields}
+        fingerprint = hashlib.sha256(
+            json.dumps(fingerprint_doc, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+        self.assertEqual(evidence["tool_id"], tool_id)
+        self.assertEqual(evidence["route_profile_sha256"], hashlib.sha256(
+            (IGNITION_ROOT / "data/operations/toolbox-declared-permission-delta-route-profile-r0.json")
+            .read_bytes()
+        ).hexdigest())
+        self.assertEqual(evidence["routing_contract_sha256"], fingerprint)
+
+        default = planner.plan_tool_route(route_profile)
+        allowlisted = planner.plan_tool_route(route_profile, include_experimental_tool_ids=[tool_id])
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+        self.assertEqual(allowlisted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in allowlisted["selected_tools"]], [tool_id])
+        self.assertFalse(allowlisted["execution_authorized"])
+        self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
+        for trial in evidence["route_trials"]:
+            with self.subTest(scenario=trial["scenario"]):
+                replay = planner.plan_tool_route(
+                    route_profile,
+                    include_experimental_tool_ids=trial["include_experimental_tool_ids"],
+                )
+                self.assertEqual(replay["decision"], trial["decision"])
+                self.assertEqual([row["tool_id"] for row in replay["selected_tools"]], trial["selected_tool_ids"])
+                self.assertEqual(replay["unmet_outputs"], trial["unmet_outputs"])
+                self.assertFalse(replay["execution_authorized"])
+                self.assertEqual(trial["router_provider_calls"], 0)
+                self.assertFalse(trial["candidate_invoked"])
+
     def test_offline_source_snapshot_binding_is_default_off_and_routes_only_when_allowlisted(self) -> None:
         tool_id = "research.bind_offline_source_snapshot_run"
         catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))

@@ -747,6 +747,35 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             " ".join(ref["path"] for ref in card["source_refs_with_hashes"]),
         )
 
+    def test_declared_permission_delta_card_preserves_exact_scope_and_c1_uncertainty(self) -> None:
+        document = TOOL.build_cards()
+        card = next(
+            item for item in document["cards"]
+            if item["tool_id"] == "governance.preflight_declared_permission_delta"
+        )
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertEqual(card["evidence_level"], "SYNTHETIC_ONLY")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], [])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(
+            card["comparison_evidence"]["compared_tool_ids"],
+            ["ignition.adaptive_toolbox_route_planner", "maintenance.compare_audit_findings"],
+        )
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        self.assertIn("effective sandbox", card["claim_ceiling"])
+        refs = " ".join(ref["path"] for ref in card["source_refs_with_hashes"])
+        self.assertIn("declared-permission-delta-r0.schema.json", refs)
+        self.assertIn("toolbox-declared-permission-delta-route-evidence-r0.json", refs)
+
     def test_legacy_candidate_without_c1_fields_defaults_to_unknown(self) -> None:
         validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"
         validator_spec = importlib.util.spec_from_file_location("validate_toolbox_candidates_legacy", validator_path)

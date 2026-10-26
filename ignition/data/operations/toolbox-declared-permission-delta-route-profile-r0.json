@@ -1,0 +1,15 @@
+{
+  "task_id": "declared-permission-delta-structural-review",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin request matching ignition/schemas/operations/declared-permission-delta-r0.schema.json: two declared grant snapshots with the same policy_id and subject_id."
+  ],
+  "required_outputs": [
+    "Exact string-set differences listing caller-declared (capability, scope) grants added to and removed from the candidate snapshot.",
+    "Review-required status and explicit source-authenticity, effective-policy, enforcement, permission-grant, and Owner-authorization ceilings."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": []
+}

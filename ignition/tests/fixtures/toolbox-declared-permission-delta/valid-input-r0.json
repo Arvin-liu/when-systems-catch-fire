@@ -1,0 +1,23 @@
+{
+  "schema_version": "declared-permission-delta-r0",
+  "baseline": {
+    "snapshot_id": "baseline-001",
+    "policy_id": "agent-sandbox-policy",
+    "policy_revision": "r4",
+    "subject_id": "local-review-agent",
+    "grants": [
+      {"capability": "filesystem.read", "scope": "repo:ignition/"},
+      {"capability": "network.connect", "scope": "api.crossref.org"}
+    ]
+  },
+  "candidate": {
+    "snapshot_id": "candidate-002",
+    "policy_id": "agent-sandbox-policy",
+    "policy_revision": "r5",
+    "subject_id": "local-review-agent",
+    "grants": [
+      {"capability": "filesystem.read", "scope": "repo:ignition/"},
+      {"capability": "filesystem.write", "scope": "repo:ignition/reports/"}
+    ]
+  }
+}
