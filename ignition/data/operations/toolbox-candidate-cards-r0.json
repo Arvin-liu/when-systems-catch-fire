@@ -8795,7 +8795,10 @@
     },
     {
       "tool_id": "research.search_crossref_query",
-      "display_name": {"zh": "Crossref 主题检索", "en": "Crossref topic search"},
+      "display_name": {
+        "zh": "Crossref 主题检索",
+        "en": "Crossref topic search"
+      },
       "description": "Search Crossref Works v1 for one caller-supplied public topic query and return a bounded DOI-oriented metadata projection.",
       "version": "0.1.0",
       "license": "Wrapper BUSL-1.1. Crossref states that almost none of its metadata is subject to copyright, while some abstracts may be; this adapter excludes abstracts and claims no license over returned metadata.",
@@ -8806,22 +8809,70 @@
       "source_path": "ignition/tools/toolbox_crossref_query_search.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_crossref_query_search.py --stdin --allow-public-network",
       "source_refs": [
-        {"path": "ignition/tools/toolbox_crossref_query_search.py", "role": "BOUNDED_FIXED_HOST_CLI"},
-        {"path": "ignition/tools/toolbox_openalex_query_search.py", "role": "C1_SAME_QUERY_PROVIDER_COMPARATOR"},
-        {"path": "ignition/tests/test_toolbox_openalex_query_search.py", "role": "C1_COMPARATOR_CONTRACT_TEST"},
-        {"path": "ignition/tests/test_toolbox_crossref_query_search.py", "role": "MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"},
-        {"path": "ignition/tests/test_toolbox_routing.py", "role": "DEFAULT_OFF_EXACT_HOST_AND_MINIMAL_ROUTE_EXPERIMENT"},
-        {"path": "ignition/tests/test_toolbox_identity_cards.py", "role": "MACHINE_CARD_AND_PROJECTION_VALIDATION"},
-        {"path": "ignition/schemas/operations/toolbox-crossref-query-search-input-r0.schema.json", "role": "INPUT_SCHEMA"},
-        {"path": "ignition/schemas/operations/toolbox-crossref-query-search-output-r0.schema.json", "role": "OUTPUT_SCHEMA"},
-        {"path": "ignition/docs/operations/crossref-query-search.md", "role": "CONTRACT_AND_OFFICIAL_PROVIDER_TERMS"},
-        {"path": "ignition/data/operations/toolbox-crossref-query-search-source-binding-r0.json", "role": "VERSIONED_API_AND_SOURCE_BINDING"},
-        {"path": "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r0.json", "role": "PRESERVED_INITIAL_FAILURE"},
-        {"path": "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json", "role": "FINAL_SOURCE_LIVE_TASK_RECEIPT"},
-        {"path": "ignition/data/operations/toolbox-crossref-query-search-c1-evidence-r0.json", "role": "SAME_QUERY_PROVIDER_COMPARISON"},
-        {"path": "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json", "role": "OPENALEX_SAME_QUERY_COMPARATOR_RECEIPT"},
-        {"path": "ignition/data/operations/toolbox-crossref-query-search-route-profile-r0.json", "role": "ROUTE_PROFILE"},
-        {"path": "ignition/data/operations/toolbox-crossref-query-search-route-evidence-r0.json", "role": "DEFAULT_OFF_AND_MINIMUM_ROUTE_EXPERIMENT"}
+        {
+          "path": "ignition/tools/toolbox_crossref_query_search.py",
+          "role": "BOUNDED_FIXED_HOST_CLI"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_query_search.py",
+          "role": "C1_SAME_QUERY_PROVIDER_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_openalex_query_search.py",
+          "role": "C1_COMPARATOR_CONTRACT_TEST"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_crossref_query_search.py",
+          "role": "MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_EXACT_HOST_AND_MINIMAL_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_CARD_AND_PROJECTION_VALIDATION"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-crossref-query-search-input-r0.schema.json",
+          "role": "INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-crossref-query-search-output-r0.schema.json",
+          "role": "OUTPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/docs/operations/crossref-query-search.md",
+          "role": "CONTRACT_AND_OFFICIAL_PROVIDER_TERMS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-query-search-source-binding-r0.json",
+          "role": "VERSIONED_API_AND_SOURCE_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r0.json",
+          "role": "PRESERVED_INITIAL_FAILURE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+          "role": "FINAL_SOURCE_LIVE_TASK_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-query-search-c1-evidence-r0.json",
+          "role": "SAME_QUERY_PROVIDER_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json",
+          "role": "OPENALEX_SAME_QUERY_COMPARATOR_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-query-search-route-profile-r0.json",
+          "role": "ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-crossref-query-search-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_MINIMUM_ROUTE_EXPERIMENT"
+        }
       ],
       "dependencies": [],
       "good_for": [
@@ -8847,7 +8898,9 @@
         "The task requires exhaustive coverage, abstract/full-text assessment, source authentication, authoritative correction/retraction adjudication, or scientific review.",
         "Network use is not authorized, the API is unavailable, or the request would exceed the public-pool rate/concurrency boundary."
       ],
-      "accepted_input_types": ["UTF-8 JSON stdin object with exactly a public query string (1-512 characters, at most 2048 UTF-8 bytes) and integer max_results (1-10)"],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with exactly a public query string (1-512 characters, at most 2048 UTF-8 bytes) and integer max_results (1-10)"
+      ],
       "output_types": [
         "At most ten Crossref Works metadata rows with DOI when present, title, issued publication year when present, type, publisher, container title, up to ten author names with count/truncation, and provider-reported cited-by count; abstracts, references, links, and URLs are omitted.",
         "Provider hit count, retrieval timestamp, response bytes, query/request/response/source-code SHA-256 values, HTTP/acquisition outcome, selected public-pool rate headers, and bounded claim ceiling."
@@ -8856,10 +8909,14 @@
       "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
       "explicit_owner_authorization_required": false,
       "permissions": {
-        "read_paths": ["ignition/tools/toolbox_crossref_query_search.py"],
+        "read_paths": [
+          "ignition/tools/toolbox_crossref_query_search.py"
+        ],
         "write_paths": [],
         "network": true,
-        "network_hosts": ["api.crossref.org"],
+        "network_hosts": [
+          "api.crossref.org"
+        ],
         "secrets": false,
         "billing": false,
         "external_actions": false
@@ -8870,16 +8927,49 @@
         "The request is fixed-host, v1-pinned, no-redirect, no-retry, with a five-second socket timeout, seven-second response budget, 512 KiB response cap, and one-page maximum of ten rows.",
         "The response body is parsed and hashed in memory; the receipt excludes the raw query, abstract, references, links, and raw response. No repository files are written."
       ],
-      "runtime_dependencies": ["Python >=3.9 standard library; no third-party runtime dependency."],
-      "estimated_cost": {"status": "UNKNOWN", "basis": "Crossref public REST use requires no signup, and this adapter made one public-pool request; no stable latency, bandwidth, service-availability, human-review, or billed-cost profile has been measured."},
+      "runtime_dependencies": [
+        "Python >=3.9 standard library; no third-party runtime dependency."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Crossref public REST use requires no signup, and this adapter made one public-pool request; no stable latency, bandwidth, service-availability, human-review, or billed-cost profile has been measured."
+      },
       "alternatives": [
-        {"tool_id": "research.verify_crossref_metadata", "relationship": "COMPLEMENTARY_NOT_EQUIVALENT", "reason": "The existing Crossref tool verifies caller-supplied DOI records and projects their references; it requires known DOI identifiers and does not discover records from a text query."},
-        {"tool_id": "research.search_openalex_query", "relationship": "ALTERNATE_PROVIDER_DIFFERENT_PROVENANCE", "reason": "OpenAlex searches its Works index and returns OpenAlex Work IDs and provider metadata. One same-query top-five snapshot had no DOI intersection, but it does not establish comparative relevance, recall, or superiority."},
-        {"tool_id": "research.search_arxiv_query", "relationship": "COMPLEMENTARY_NOT_EQUIVALENT", "reason": "arXiv has its own preprint corpus, query syntax, identifiers, and metadata contract; use it when arXiv-specific source coverage is needed."},
-        {"tool_id": "research.search_europe_pmc_query", "relationship": "COMPLEMENTARY_NOT_EQUIVALENT", "reason": "Europe PMC covers its biomedical corpus and returns MED/PMC source identifiers; provider scope and output identifiers differ."},
-        {"tool_id": "research.search_pubmed_query", "relationship": "COMPLEMENTARY_NOT_EQUIVALENT", "reason": "PubMed uses NCBI database syntax and requires caller-provided contact email; it was not re-run for this Crossref comparison."},
-        {"tool_id": "knowledge.cluster_source_brief", "relationship": "LOCAL_FIRST_COMPLEMENT", "reason": "Prefer the declared local article-cluster brief when it already covers the task; it does not perform arbitrary Crossref discovery."},
-        {"tool_id": "knowledge.navigate_raw_evidence", "relationship": "LOCAL_FIRST_COMPLEMENT", "reason": "Prefer local Knowledge navigation when the needed sources are indexed; it does not query Crossref."}
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The existing Crossref tool verifies caller-supplied DOI records and projects their references; it requires known DOI identifiers and does not discover records from a text query."
+        },
+        {
+          "tool_id": "research.search_openalex_query",
+          "relationship": "ALTERNATE_PROVIDER_DIFFERENT_PROVENANCE",
+          "reason": "OpenAlex searches its Works index and returns OpenAlex Work IDs and provider metadata. One same-query top-five snapshot had no DOI intersection, but it does not establish comparative relevance, recall, or superiority."
+        },
+        {
+          "tool_id": "research.search_arxiv_query",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "arXiv has its own preprint corpus, query syntax, identifiers, and metadata contract; use it when arXiv-specific source coverage is needed."
+        },
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Europe PMC covers its biomedical corpus and returns MED/PMC source identifiers; provider scope and output identifiers differ."
+        },
+        {
+          "tool_id": "research.search_pubmed_query",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "PubMed uses NCBI database syntax and requires caller-provided contact email; it was not re-run for this Crossref comparison."
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "relationship": "LOCAL_FIRST_COMPLEMENT",
+          "reason": "Prefer the declared local article-cluster brief when it already covers the task; it does not perform arbitrary Crossref discovery."
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "relationship": "LOCAL_FIRST_COMPLEMENT",
+          "reason": "Prefer local Knowledge navigation when the needed sources are indexed; it does not query Crossref."
+        }
       ],
       "replacement_candidates": [],
       "unique_remaining_use_cases": [
@@ -8888,9 +8978,18 @@
       "comparison_evidence": {
         "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
         "scope": "One same-exact-query, same-limit comparison of the top five Crossref and OpenAlex results at different timestamps. The DOI sets did not overlap; Crossref returned three same-title rows with distinct DOIs and one row without a reported year. No human relevance review, source validation, recall assessment, or outcome comparison was performed.",
-        "compared_tool_ids": ["research.search_openalex_query"],
-        "compared_implementation_refs": ["ignition/tools/toolbox_openalex_query_search.py"],
-        "evidence_refs": ["ignition/data/operations/toolbox-crossref-query-search-c1-evidence-r0.json", "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json", "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json", "ignition/data/operations/toolbox-crossref-query-search-source-binding-r0.json"],
+        "compared_tool_ids": [
+          "research.search_openalex_query"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_openalex_query_search.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-crossref-query-search-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+          "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json",
+          "ignition/data/operations/toolbox-crossref-query-search-source-binding-r0.json"
+        ],
         "findings": [
           "Crossref and OpenAlex completed the same public query and returned five records each; their top-five DOI sets shared zero exact DOIs in this one snapshot.",
           "Crossref's top-five provider response includes repeated title text under distinct DOIs and a missing year. This observation does not adjudicate duplicate records or relevance.",
@@ -8903,8 +9002,12 @@
         "basis": "The candidate exposes a default-off Crossref topic-to-DOI route. Its small same-query comparison shows provider-specific results but no superiority or full coverage; existing Crossref exact-DOI and other provider tools remain available for their distinct scopes."
       },
       "migration_and_rollback": {
-        "migration_notes": ["No Current operation or known-DOI verifier is migrated. Select this candidate only for explicit Crossref topic discovery; select an exact-identifier adapter when the DOI is known."],
-        "rollback_steps": ["Remove the optional candidate, wrapper, focused tests, schemas, documentation, and unneeded route projections from the isolated branch; regenerate identity projections. Preserve initial failure, final-source, C1, and route evidence without rewriting it."]
+        "migration_notes": [
+          "No Current operation or known-DOI verifier is migrated. Select this candidate only for explicit Crossref topic discovery; select an exact-identifier adapter when the DOI is known."
+        ],
+        "rollback_steps": [
+          "Remove the optional candidate, wrapper, focused tests, schemas, documentation, and unneeded route projections from the isolated branch; regenerate identity projections. Preserve initial failure, final-source, C1, and route evidence without rewriting it."
+        ]
       },
       "fallback": "Prefer local source navigation or the existing cluster brief when they cover the task. For a known DOI, use the corresponding exact-identifier adapter. If the query cannot be sent or Crossref fails, preserve NOT_RUN or the explicit acquisition outcome; do not silently substitute another provider.",
       "validation": {
@@ -9416,6 +9519,26 @@
         {
           "path": "ignition/tools/toolbox_cognitive_migration_revision.py",
           "role": "COMPARED_NEIGHBOR_TOOL_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-b-r0.json",
+          "role": "C1_MATCHED_SYNTHETIC_TRANSITION_INPUT"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-c-r0.json",
+          "role": "C1_MATCHED_SYNTHETIC_TRANSITION_INPUT"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-pareto-input-r0.json",
+          "role": "C1_MATCHED_SYNTHETIC_PARETO_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json",
+          "role": "C1_MATCHED_SYNTHETIC_OUTPUT_COVERAGE_AND_LOCAL_RUNTIME_RECEIPT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_governed_improvement_transition_c1_comparison.py",
+          "role": "C1_MATCHED_COMPARISON_REGRESSION_TEST"
         }
       ],
       "dependencies": [
@@ -9491,7 +9614,7 @@
       ],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Static declared-input/output and task-contract comparison against three adjacent tools only. Same-task outcome, evidence completeness, runtime, cost, reliability, and maintainability trials were not run.",
+        "scope": "Static contract comparison plus one matched synthetic multi-successor task across this preflight and the closest Pareto neighbor. The synthetic run compared output coverage, operator invocation count, and local CLI elapsed time; no real-task outcome, calibrated cost, reliability, or maintainability trial exists.",
         "compared_tool_ids": [
           "maintenance.summarize_execution_candidate_pareto_frontier",
           "maintenance.preflight_producer_consumer_semantics",
@@ -9507,16 +9630,21 @@
           "ignition/data/operations/toolbox-governed-improvement-transition-provenance-r0.json",
           "ignition/tools/toolbox_execution_pareto_frontier.py",
           "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
-          "ignition/tools/toolbox_cognitive_migration_revision.py"
+          "ignition/tools/toolbox_cognitive_migration_revision.py",
+          "ignition/data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json",
+          "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-b-r0.json",
+          "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-c-r0.json",
+          "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-pareto-input-r0.json"
         ],
         "findings": [
-          "The compared tools declare different primary inputs and outputs; they appear complementary by task contract, but this does not establish better performance or replacement value.",
-          "Keep all compared tools unchanged and preserve COMPARISON_UNKNOWN; a low-cost matched synthetic comparison is specified for a future task context but has not been run."
+          "Static task contracts distinguish this per-successor transition review from the neighboring Pareto summary, producer-consumer static checker, and cognitive-migration reviewer.",
+          "One matched synthetic multi-successor run showed Pareto provides an aggregate frontier in one call, while this candidate provides evaluator/benchmark/held-out, failure/cost, authority, rollback, and next-round status per transition.",
+          "The trial is synthetic and caller-declared; it does not establish correctness, utility, real-task superiority, calibrated cost, or replacement value. Preserve COMPARISON_UNKNOWN and retire no tool."
         ]
       },
       "deprecation_or_retirement_status": {
         "status": "COMPARISON_UNKNOWN",
-        "basis": "No prior tool has been shown redundant or inferior on matched tasks; this candidate remains experimental and default-off."
+        "basis": "The matched synthetic trial showed complementary output coverage only. No real-task evidence establishes redundancy, inferiority, or a reason to retire or replace any neighbor."
       },
       "migration_and_rollback": {
         "migration_notes": [
@@ -9532,7 +9660,8 @@
           "ignition/tests/test_toolbox_governed_improvement_transition.py",
           "ignition/tests/test_toolbox_governed_improvement_transition_routing.py",
           "ignition/tools/operations/validate_toolbox_candidates.py",
-          "ignition/tools/operations/build_toolbox_identity_cards.py"
+          "ignition/tools/operations/build_toolbox_identity_cards.py",
+          "ignition/tests/test_toolbox_governed_improvement_transition_c1_comparison.py"
         ],
         "negative_controls": [
           "Changed evaluator without replay remains incomparable.",

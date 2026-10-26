@@ -15,3 +15,9 @@ The result always has `status=REVIEW_REQUIRED`. It performs exact structural che
 Use only when comparing a specific frozen predecessor with a successor candidate and the task needs the transition-level deltas. Do not use it as a general benchmark/Pareto analyzer, a release gate, or a substitute for the existing Iteration Method, preregistration, independent review, or rollback machinery. Existing Pareto, producer-consumer, and writing-migration tools retain their distinct task contracts.
 
 Input contract: `ignition/schemas/operations/governed-improvement-transition-r0.schema.json`. Synthetic input: `ignition/tests/fixtures/toolbox-governed-improvement-transition/valid-input-r0.json`.
+
+## C1 comparison
+
+A matched synthetic three-candidate task was run through the transition preflight for each successor and through the neighboring Pareto summary across all candidates. Pareto reported the pass-rate/resource frontier in one call; the transition preflight reported evaluation-anchor, failure/cost, authority, rollback, and next-round status per successor. The result supports complementary output coverage only. Replacement value, real-task utility, reliability, and calibrated cost remain unknown; no tool was retired.
+
+See `ignition/data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json` and the three pinned inputs under `ignition/tests/fixtures/toolbox-governed-improvement-transition/` for the synthetic comparison and local CLI timing protocol.

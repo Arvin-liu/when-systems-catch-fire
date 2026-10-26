@@ -15,7 +15,7 @@
     "blob_sha1": "d84326160a2793fdf45f1d96efef9ffed8b95f66",
     "status": "NONCANONICAL_NEEDS_SYNTHETIC_PILOT"
   },
-  "comparison_method": "Static input, output, and declared-task-contract comparison against the closest existing toolbox neighbors. No matched real-task outcome, latency, cost, or reliability trial was run.",
+  "comparison_method": "One matched synthetic multi-successor task was supplied to the transition preflight once per successor and to the Pareto summary once across all candidates. Output coverage and CLI elapsed time were recorded; no real candidate system ran.",
   "compared_tools": [
     {
       "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
@@ -37,20 +37,23 @@
     }
   ],
   "same_task_trials": {
-    "status": "NOT_RUN",
-    "task_fixture_count": 0,
-    "measured_cost": "UNKNOWN",
-    "matched_quality_results": "UNKNOWN"
+    "status": "COMPLETED_SYNTHETIC_ONLY",
+    "task_fixture_count": 1,
+    "input_fixture_count": 3,
+    "measured_cost": "Local Python CLI elapsed time only; 30 process invocations per input shape, including interpreter startup; no calibrated runtime or operating-cost estimate.",
+    "matched_quality_results": "Predecessor A passed 2/3; B passed 2/3 at 8 declared work units/case; C passed 3/3 at 11 units/case. Pareto reported B and C on the observed frontier; transition reviews returned REVIEW_REQUIRED for A→B and A→C.",
+    "evidence_ref": "ignition/data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json"
   },
   "decision": {
     "comparison_status": "COMPARISON_UNKNOWN",
     "replacement_candidates": [],
     "deprecation_or_retirement_status": "COMPARISON_UNKNOWN",
-    "coexistence_basis": "Declared inputs and required outputs differ. Static contracts support separate task scopes, but no same-task performance or cost evidence supports ranking, replacement, or retirement."
+    "coexistence_basis": "On the one synthetic task, Pareto uniquely summarized the multi-successor pass-rate/resource frontier; transition preflight uniquely reported per-successor evaluation binding, failure/cost guardrails, authority scope, rollback binding, and next-round R&D status. This demonstrates complementary declared output coverage only. Real-task utility, correctness, reliability, generalization, and cost remain unknown; do not replace or retire any tool."
   },
   "low_cost_follow_up": {
-    "status": "NOT_RUN",
-    "proposal": "When a multi-successor transition task is available, run one synthetic frozen-transition packet through this preflight and the existing Pareto summary on the same declared outcomes; compare missing-output coverage, operator steps, and local runtime. Keep the contracts separate and all results review-only.",
+    "status": "COMPLETED_SYNTHETIC_ONLY",
+    "proposal": "Executed the planned low-cost matched synthetic comparison: one frozen A/B/C packet, two per-successor transition preflights, and one multi-candidate Pareto summary; compared output coverage, invocation count, and local CLI elapsed time.",
+    "evidence_ref": "ignition/data/operations/toolbox-governed-improvement-transition-c1-matched-comparison-r0.json",
     "automatic_replacement_permitted": false
   },
   "claim_ceiling": "The comparison establishes declared contract differences only; it does not establish superior quality, lower cost, reliability, or replacement value."
