@@ -3963,6 +3963,256 @@
       "claim_ceiling": "Provider-reported selected arXiv metadata for one caller-supplied modern ID only; the result does not authenticate a source, retrieve article content, establish claim support, or imply scientific validity or acceptance."
     },
     {
+      "tool_id": "research.search_arxiv_query",
+      "display_name": {
+        "zh": "arXiv 主题检索",
+        "en": "arXiv topic search"
+      },
+      "description": "Search one caller-supplied public query in the arXiv corpus and return at most ten provider-reported metadata rows with source IDs and response evidence.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; arXiv descriptive metadata may be used under CC0 1.0 as stated by the provider. arXiv API terms and article-content copyright boundaries apply; this wrapper asserts no license over returned data.",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner, source-authentication, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_arxiv_query_search.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_arxiv_query_search.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_arxiv_query_search.py",
+          "role": "BOUNDED_FIXED_HOST_CLI"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_arxiv_query_search.py",
+          "role": "MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_EXACT_HOST_AND_MINIMAL_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_CARD_AND_PROJECTION_VALIDATION"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-arxiv-query-search-input-r0.schema.json",
+          "role": "INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-arxiv-query-search-output-r0.schema.json",
+          "role": "OUTPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/docs/operations/arxiv-query-search.md",
+          "role": "CONTRACT_AND_OFFICIAL_PROVIDER_TERMS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-query-search-source-binding-r0.json",
+          "role": "PINNED_BLUEPRINT_SOURCE_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-query-search-real-task-evidence-r0.json",
+          "role": "LIVE_READ_ONLY_TASK_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-query-search-c1-evidence-r0.json",
+          "role": "SAME_TASK_SOURCE_SCOPE_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-query-search-route-profile-r0.json",
+          "role": "TYPED_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-query-search-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXACT_HOST_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/tools/toolbox_europe_pmc_query_search.py",
+          "role": "C1_QUERY_SEARCH_COMPARATOR"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_europe_pmc_query_search.py",
+          "role": "C1_COMPARATOR_CONTRACT_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_pubmed_query_search.py",
+          "role": "ALTERNATIVE_QUERY_SEARCH_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pubmed_query_search.py",
+          "role": "ALTERNATIVE_QUERY_SEARCH_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+          "role": "KNOWN_ID_COMPLEMENT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
+          "role": "KNOWN_ID_COMPLEMENT_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "role": "LOCAL_SOURCE_FIRST_ALTERNATIVE"
+        },
+        {
+          "path": "ignition/tools/toolbox_cluster_source_brief.py",
+          "role": "LOCAL_SOURCE_FIRST_ALTERNATIVE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-arxiv-query-search-real-task-evidence-r1.json",
+          "role": "LIVE_FINAL_SOURCE_TASK_RECEIPT"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Discovering up to ten arXiv metadata records for one public research topic when no arXiv ID is known and the checked-out source corpus does not already cover the task.",
+        "Returning arXiv identifiers and selected provider metadata for caller-directed follow-up in the arXiv corpus.",
+        "Retaining the query hash, response hash, retrieval time, hit count, result count, and bounded claim ceiling without echoing the query."
+      ],
+      "not_for": [
+        "Exhaustive or systematic-review search, guaranteed recall, or treating provider order as a scientific quality ranking.",
+        "Searching PubMed, Europe PMC, or arbitrary web sources; retrieving abstracts, paper files, or full text; or replacing known-ID lookup.",
+        "Assessing relevance, source authenticity, publication or correction status, claim support, scientific quality, or discovery."
+      ],
+      "only_if": [
+        "The caller supplies one public, non-sensitive query of at most 512 characters and a result limit from one through ten.",
+        "Local source navigation and an existing source-cluster brief do not already satisfy the task.",
+        "The caller explicitly selects this experimental candidate, approves query transmission to arXiv, and invokes --allow-public-network.",
+        "The exact export.arxiv.org host is separately allowed by the typed route profile.",
+        "All arXiv API use is serialized with one connection at a time and at least three seconds between requests across the caller's controlled machines."
+      ],
+      "counterindicated_when": [
+        "The query or task context is confidential, patient-identifying, personal-health, or otherwise unsuitable for public-provider transmission.",
+        "Network access is not allowed, bulk harvesting or concurrent API requests are needed, or an exhaustive reproducible search is required.",
+        "A known arXiv ID, DOI, or PMID is already supplied and a source-specific exact-identifier operation is required.",
+        "The caller needs abstract/full-text review, scientific support, or evaluation of source truth."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with exactly a public query string (1-512 characters) and integer max_results (1-10)"
+      ],
+      "output_types": [
+        "At most ten arXiv records with ID, entry URL, title, first ten author names/count, dates, categories, journal reference, and DOI when returned; abstracts and full text are omitted.",
+        "Provider hit count, retrieval timestamp, source/response byte count, query/request/response SHA-256 values, explicit acquisition status, and bounded claim ceiling."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_arxiv_query_search.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "export.arxiv.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "One explicit invocation sends one HTTPS GET containing the public query to the fixed export.arxiv.org API; provider-side query logging is outside this wrapper's control.",
+        "The adapter makes no retries or redirects, sends no credentials, and writes no files; it emits only bounded selected metadata and a JSON receipt.",
+        "Callers must serialize arXiv API access and wait at least three seconds between requests across all machines they control; this CLI has no shared cross-process or cross-machine rate limiter."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable latency, reliability, bandwidth, human review, or service-cost profile has been measured; the adapter makes at most one request and caps output."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.lookup_arxiv_paper_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The existing arXiv adapter resolves one already-known modern arXiv ID. It cannot discover record IDs from a topic query."
+        },
+        {
+          "tool_id": "research.search_pubmed_query",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "PubMed search uses its own collection and ESearch/ESummary metadata contract. It may coexist when PubMed-indexed records are required; this candidate does not replace that source."
+        },
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Europe PMC search uses its own MED/PMC collection and source identifiers. The arXiv corpus and returned identifier contract differ."
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "relationship": "LOCAL_FIRST_COMPLEMENT",
+          "reason": "The local navigator searches only the checked-out Knowledge corpus. Prefer it when the needed sources are already indexed; this candidate searches the external arXiv corpus."
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "relationship": "LOCAL_FIRST_COMPLEMENT",
+          "reason": "The cluster brief reads a declared local article cluster and does not perform arbitrary external topic-to-record discovery."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Discover a bounded set of arXiv records from a public topic query when no arXiv ID is known and local checked-out sources do not cover the topic."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One same-environment public read-only query task was run against arXiv and Europe PMC with a limit of five rows per provider. A same-task PubMed search was not run because the PubMed wrapper requires a caller-supplied contact address and none was provided. This snapshot identifies distinct source scopes only; comparative recall, relevance, reliability, latency, cost, and scientific quality remain unknown.",
+        "compared_tool_ids": [
+          "research.search_europe_pmc_query",
+          "research.lookup_arxiv_paper_metadata"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_europe_pmc_query_search.py",
+          "ignition/tools/toolbox_arxiv_metadata_lookup.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-arxiv-query-search-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-arxiv-query-search-real-task-evidence-r1.json",
+          "ignition/data/operations/toolbox-arxiv-query-search-source-binding-r0.json"
+        ],
+        "findings": [
+          "Both same-task providers returned five metadata rows for the public topic within seconds of one another; their provider hit counts, result orders, and query syntax differ, so this does not establish relative relevance or recall.",
+          "arXiv returns arXiv entry IDs while Europe PMC returns MED/PMC identifiers and provider publication fields. They address distinct source collections and can coexist when the task requires those scopes.",
+          "The known-ID arXiv lookup requires an ID and cannot replace topic discovery. PubMed remains a source-specific alternative whose same-task result was not measured.",
+          "No retirement or replacement is supported. Keep this experimental search default-off and route only for arXiv topic discovery."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "The bounded topic-query input and arXiv identifier output serve a distinct source-discovery use case. Evidence is insufficient to rank or replace other source-specific search adapters."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation, existing query adapter, or exact-ID adapter is migrated. Use this candidate only for arXiv topic discovery; use the known-ID adapter after an arXiv identifier is available."
+        ],
+        "rollback_steps": [
+          "Remove the optional candidate, runtime code, focused tests, and unneeded projections from the isolated branch; regenerate the identity cards and human toolbox directory. Preserve source, task, comparison, and route evidence without rewriting it."
+        ]
+      },
+      "fallback": "If the caller does not approve a public query or the API fails, preserve the explicit outcome and use local source navigation when it covers the task. For a known arXiv ID, select the exact-ID adapter. A manual arXiv web lookup requires a separate caller decision.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_arxiv_query_search.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network performs no request and emits no receipt.",
+          "Reject duplicate JSON keys, invalid UTF-8, blank/untrimmed/control-containing queries, extra fields, invalid result limits, and oversized input before network access.",
+          "Only export.arxiv.org is contacted; no redirects or retries; wrong content type, rate limit, HTTP/network errors, timeouts, oversized bodies, DTD/entities, malformed feeds, API error entries, unbound result URLs, and excessive rows return explicit failure outcomes.",
+          "The request is one HTTPS GET; receipt excludes the raw query and URL, abstracts/full text, credentials, and local file writes.",
+          "A route without the exact candidate and host is excluded; a matching route proposal leaves execution_authorized=false."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for an arXiv topic-to-record task.",
+        "Require export.arxiv.org in the typed route's exact allowed_network_hosts; route selection does not verify caller authority or grant network permission.",
+        "Every actual CLI call requires --allow-public-network and task-specific approval to transmit the non-sensitive query.",
+        "Caller must enforce the arXiv three-second global interval and single-connection rule across all controlled machines; do not select for bulk or concurrent use."
+      ],
+      "claim_ceiling": "Bounded provider-reported arXiv metadata returned for one caller-supplied query at retrieval time only; it does not establish exhaustive recall, relevance, source authenticity, scientific support, publication status, scientific validity, or Owner acceptance."
+    },
+    {
       "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
       "display_name": {
         "zh": "NOAA 全球甲烷年度增量读取器",

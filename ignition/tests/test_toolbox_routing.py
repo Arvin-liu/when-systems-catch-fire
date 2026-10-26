@@ -817,6 +817,42 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(permitted["selected_tools"][0]["permissions"]["network_hosts"], ["export.arxiv.org"])
         self.assertFalse(permitted["execution_authorized"])
 
+    def test_arxiv_query_search_is_default_off_and_requires_exact_host_allowlist(self) -> None:
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.search_arxiv_query")
+        task = profile("arxiv-public-topic-search", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+
+        no_host = planner.plan_tool_route(task, include_experimental_tool_ids=[card["tool_id"]])
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": card["tool_id"], "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+
+        competitors = [
+            "research.search_pubmed_query",
+            "research.search_europe_pmc_query",
+            "research.lookup_arxiv_paper_metadata",
+            card["tool_id"],
+        ]
+        permitted = planner.plan_tool_route(
+            profile(
+                "arxiv-public-topic-search",
+                card["accepted_input_types"],
+                card["output_types"],
+                allowed_network_hosts=["export.arxiv.org"],
+            ),
+            include_experimental_tool_ids=competitors,
+        )
+        self.assertEqual(permitted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in permitted["selected_tools"]], [card["tool_id"]])
+        self.assertEqual(permitted["selected_tools"][0]["permissions"]["network_hosts"], ["export.arxiv.org"])
+        self.assertFalse(permitted["execution_authorized"])
+
     def test_noaa_ch4_growth_lookup_is_default_off_and_requires_exact_host_allowance(self) -> None:
         catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
         card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.lookup_noaa_global_ch4_annual_growth")

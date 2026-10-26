@@ -1,0 +1,51 @@
+{
+  "schema_version": "toolbox-arxiv-query-search-source-binding-r0",
+  "candidate_tool_id": "research.search_arxiv_query",
+  "source_blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 81,
+    "head_sha": "9dae5a0d73f66c8b0b6d01c0c6ca14fad34cc03a",
+    "path": "sources/IDEASCIENTIST-RESEARCH-IDEATION-CANDIDATE-R0.json",
+    "blob_sha": "0abdc502b07fd77cedb129db91f8ae2ce85499a4",
+    "candidate_key": "grounded_cross_domain_ideation",
+    "source_url": "https://github.com/Arvin-liu/ignition-architecture-workbench/blob/9dae5a0d73f66c8b0b6d01c0c6ca14fad34cc03a/sources/IDEASCIENTIST-RESEARCH-IDEATION-CANDIDATE-R0.json"
+  },
+  "relationship": "SUPPORTING_INPUT_DISCOVERY_FOR_IN_DOMAIN_PRIOR_ART",
+  "blueprint_requirements": {
+    "goal": "grounded_methodological_gap",
+    "stage": "gap",
+    "input_type": "in_domain_prior_art",
+    "source_rule": "cited_id_must_resolve",
+    "existing_arxiv_id": "2610.04074"
+  },
+  "deduplication": {
+    "existing_tool_id_lookup": "research.lookup_arxiv_paper_metadata",
+    "difference": "The existing adapter resolves one known arXiv ID. This candidate discovers bounded record IDs from a topic query. The input and output coverage differ.",
+    "other_query_adapters": [
+      "research.search_pubmed_query",
+      "research.search_europe_pmc_query"
+    ],
+    "scope_difference": "The existing query adapters search PubMed and Europe PMC collections. This candidate searches the arXiv corpus and returns arXiv identifiers and metadata.",
+    "local_first_rule": "Use checked-out source navigation or an existing cluster brief when it already covers the requested source scope."
+  },
+  "implementation_boundary": {
+    "implements": "One explicitly authorized, fixed-host, public query that returns at most ten arXiv metadata rows and a bounded receipt.",
+    "does_not_implement": [
+      "Idea generation or the IdeaScientist method",
+      "Gap validation, mechanism transfer, proposal evaluation, or independent science review",
+      "Paper text, abstract, code, model, dataset, or vault import",
+      "Scientific acceptance or truth authority"
+    ],
+    "reuse": "No IdeaScientist code, model, paper text, or vault data is copied or loaded."
+  },
+  "official_api_sources": [
+    "https://info.arxiv.org/help/api/user-manual.html",
+    "https://info.arxiv.org/help/api/tou.html"
+  ],
+  "metadata_and_content_boundary": {
+    "metadata_license_note": "arXiv API terms state that descriptive metadata may be used under CC0 1.0.",
+    "article_content_note": "The adapter does not return or retain abstracts, article files, or full text; article content remains subject to its own copyright and license.",
+    "rate_limit": "One legacy API request every three seconds and one connection at a time across all machines controlled by the caller. The wrapper does not implement a shared rate limiter; callers must serialize use."
+  },
+  "claim_ceiling": "Blueprint-linked bounded source-discovery support and provider-reported metadata only; no blueprint effectiveness, evidence quality, scientific validity, or discovery is established."
+}
