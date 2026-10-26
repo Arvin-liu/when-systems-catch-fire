@@ -1,0 +1,228 @@
+{
+  "schema_version": "toolbox-evidence-update-snapshot-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
+  "observed_at_utc": "2026-10-26T10:26:08Z",
+  "candidate_tool_id": "research.compare_evidence_update_snapshots",
+  "candidate_catalog_git_blob_sha1": "b1b1172033047bd3d9b2c8ca1f16f4e670dc2d6f",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_profile_path": "ignition/data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
+  "route_profile_sha256": "0df8cf32944f3a96f11cefc9ae3c58d81a8f0c512274f5bc873fdc6590c79439",
+  "route_trials_replayed": 3,
+  "all_expected_decisions_reproduced": true,
+  "route_trials": [
+    {
+      "scenario": "DEFAULT_OFF",
+      "task_profile": {
+        "task_id": "formal-claim-a1-main-to-toolbox-candidate-update-trace",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+        "input_types": [
+          "Two bounded caller-supplied evidence snapshots for the same task_id and claim_id, each with exact as-of reference/UTC time, scope and applicability digests, declared claim state/change reason, evaluator/update/stopping policy identities, acquisition-dependence mode, and up to 200 evidence records."
+        ],
+        "required_outputs": [
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas.",
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "formal-claim-a1-main-to-toolbox-candidate-update-trace",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "required_outputs": [
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas.",
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false.",
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas."
+        ],
+        "relevant_rejections": [
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          }
+        ],
+        "rejected_candidate_count": 71,
+        "omitted_rejected_candidate_count": 70,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "planner_output_sha256": "2fc39a118cb5cf0a42e8d965ce6a6fe57d272dcbd7f8972a2a0270d3bd20941c"
+    },
+    {
+      "scenario": "EXPLICIT_SINGLE_TOOL_ALLOWLIST",
+      "task_profile": {
+        "task_id": "formal-claim-a1-main-to-toolbox-candidate-update-trace",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+        "input_types": [
+          "Two bounded caller-supplied evidence snapshots for the same task_id and claim_id, each with exact as-of reference/UTC time, scope and applicability digests, declared claim state/change reason, evaluator/update/stopping policy identities, acquisition-dependence mode, and up to 200 evidence records."
+        ],
+        "required_outputs": [
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas.",
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_evidence_update_snapshots"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_evidence_update_snapshots"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "maintenance.compare_audit_findings",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "formal-claim-a1-main-to-toolbox-candidate-update-trace",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.compare_evidence_update_snapshots"
+        ],
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "required_outputs": [
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas.",
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false."
+        ],
+        "covered_outputs": [
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false.",
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas."
+        ],
+        "unmet_outputs": [],
+        "relevant_rejections": [
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          }
+        ],
+        "rejected_candidate_count": 70,
+        "omitted_rejected_candidate_count": 69,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "planner_output_sha256": "0295d85db749f0edb909658048a562df860e2ec87c48a7ddf2e1041d847cc901"
+    },
+    {
+      "scenario": "UNRELATED_AUDIT_TOOL_REJECTED",
+      "task_profile": {
+        "task_id": "formal-claim-a1-main-to-toolbox-candidate-update-trace",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+        "input_types": [
+          "Two bounded caller-supplied evidence snapshots for the same task_id and claim_id, each with exact as-of reference/UTC time, scope and applicability digests, declared claim state/change reason, evaluator/update/stopping policy identities, acquisition-dependence mode, and up to 200 evidence records."
+        ],
+        "required_outputs": [
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas.",
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_evidence_update_snapshots",
+        "maintenance.compare_audit_findings"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_evidence_update_snapshots"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "maintenance.compare_audit_findings",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "formal-claim-a1-main-to-toolbox-candidate-update-trace",
+        "current_ref": "refs/heads/codex/toolbox-growth-20261025@c94ad44078232a3657f7ae4fcca62a2a34a852f4",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.compare_evidence_update_snapshots"
+        ],
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "required_outputs": [
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas.",
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false."
+        ],
+        "covered_outputs": [
+          "COMPARABLE_AS_DECLARED or COMPARISON_UNKNOWN with explicit EXPLICIT_NO_CHANGE/NO_CHANGE_NOT_ESTABLISHED distinction and execution_authorized=false.",
+          "Exact added, absent-from-candidate, retained, changed, and unresolved evidence record IDs; declared withdrawal/retraction transitions; and source-family counts.",
+          "Predecessor/as-of binding plus scope, applicability, task-revision, claim-state, evaluator, update/stopping-policy, and acquisition-dependence deltas."
+        ],
+        "unmet_outputs": [],
+        "relevant_rejections": [
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "rejected_candidate_count": 70,
+        "omitted_rejected_candidate_count": 69,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "planner_output_sha256": "cb543fbd25d3f7dbb4da41dc8b03996d9f051de974bc1255f913e02dbebbd985"
+    }
+  ],
+  "summary": {
+    "default_route": "EXCLUDED",
+    "default_decision": "INCOMPLETE",
+    "explicit_single_tool_decision": "COMPLETE",
+    "unrelated_tool_decision": "COMPLETE_WITH_UNRELATED_TOOL_REJECTED",
+    "candidate_invoked": false,
+    "provider_calls_made": 0,
+    "router_rule_modified": false,
+    "execution_authorized": false
+  },
+  "execution_authorized": false,
+  "candidate_invoked": false,
+  "provider_calls_made": 0,
+  "claim_ceiling": "Offline route planning only. The candidate was not invoked, no provider was called, and no permission, Owner approval, scientific validity, or Current promotion is established."
+}
