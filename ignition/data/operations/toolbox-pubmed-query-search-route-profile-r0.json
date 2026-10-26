@@ -1,0 +1,21 @@
+{
+  "schema_version": "toolbox-pubmed-query-search-route-profile-r0",
+  "task_id": "pubmed-native-bounded-query-discovery",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+  ],
+  "required_outputs": [
+    "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+    "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": [
+    "eutils.ncbi.nlm.nih.gov"
+  ],
+  "route_default": "EXCLUDED",
+  "candidate_catalog_git_blob_sha1": "ac99334eafbfe6b3b13a57ae78f713c2504b5e6f",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+}

@@ -7932,6 +7932,209 @@
         ]
       },
       "version": "0.1.0"
+    },
+    {
+      "tool_id": "research.search_pubmed_query",
+      "display_name": {
+        "zh": "PubMed 限量检索器",
+        "en": "PubMed Bounded Query Search"
+      },
+      "description": "Run a caller-specified PubMed ESearch query and retrieve a bounded ESummary metadata projection for the returned PMIDs.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1. NCBI's scripting guidelines require the NCBI Disclaimer and Copyright notice to be evident to users; PubMed records can include third-party material, and this wrapper makes no reuse-right determination for returned metadata. See https://www.ncbi.nlm.nih.gov/home/about/policies/ and https://www.ncbi.nlm.nih.gov/About/disclaimer.html.",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_pubmed_query_search.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_pubmed_query_search.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_pubmed_query_search.py",
+          "role": "FIXED_HOST_PUBMED_QUERY_ADAPTER"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-pubmed-query-search-input-r0.schema.json",
+          "role": "BOUNDED_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-pubmed-query-search-output-r0.schema.json",
+          "role": "BOUNDED_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-query-search-source-binding-r0.json",
+          "role": "NCBI_SOURCE_AND_PERMISSION_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-query-search-real-task-r0.json",
+          "role": "LIVE_PUBMED_AND_SAME_QUERY_EUROPE_PMC_RECEIPTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-query-search-c1-evidence-r0.json",
+          "role": "OWNER_C1_SAME_TASK_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-query-search-route-profile-r0.json",
+          "role": "TYPED_DEFAULT_OFF_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-pubmed-query-search-route-evidence-r0.json",
+          "role": "REPLAYABLE_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-pubmed-query-search.md",
+          "role": "USER_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pubmed_query_search.py",
+          "role": "FOCUSED_FUNCTIONAL_AND_NEGATIVE_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_pubmed_query_search_routing.py",
+          "role": "DEFAULT_OFF_AND_MINIMAL_ROUTE_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "IDENTITY_PROJECTION_AND_C1_INVARIANTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
+          "role": "MATCHED_BASELINE_PROVIDER_RECEIPT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_europe_pmc_query_search.py",
+          "role": "BASELINE_ADAPTER_NEGATIVE_AND_CONTRACT_TESTS"
+        },
+        {
+          "path": "ignition/tools/toolbox_europe_pmc_query_search.py",
+          "role": "BASELINE_PROVIDER_QUERY_ADAPTER"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Discovering a bounded set of PubMed records when the task explicitly requires PubMed or its Entrez field-tag search syntax.",
+        "Returning provider-reported hit count, ordered PMIDs, and selected ESummary metadata for caller review.",
+        "Adding a PubMed-specific source alongside Europe PMC when the task needs separate provider observations."
+      ],
+      "not_for": [
+        "Exhaustive or independently reproducible systematic-review searching, recall claims, or scientific ranking.",
+        "Retrieving abstracts, full text, clinical advice, source content, or arbitrary URLs.",
+        "Deciding that a record is relevant, authentic, current, retracted, scientifically sound, or supportive of a claim.",
+        "Replacing known DOI/PMID lookup, PubMed update-link inspection, Europe PMC full-text location, or repository source navigation."
+      ],
+      "only_if": [
+        "The caller supplies a public, non-sensitive PubMed/Entrez query of at most 512 characters, a result cap of one through ten, and a contact email suitable for NCBI.",
+        "The caller explicitly permits sending the query and contact email to eutils.ncbi.nlm.nih.gov.",
+        "The caller explicitly selects this experimental candidate, permits the exact network host, and passes --allow-public-network for this invocation.",
+        "PubMed-specific source/indexing requirements matter and local checked-out source navigation does not already satisfy the bounded task."
+      ],
+      "counterindicated_when": [
+        "The query is confidential, patient-identifying, personal-health, or otherwise inappropriate for a public provider.",
+        "No contact email or explicit public-network permission is available.",
+        "High-volume or concurrent requests are needed and the caller cannot enforce NCBI's per-IP request-rate guidance across invocations.",
+        "The task requires exhaustive search, full-text retrieval, source authentication, scientific evaluation, or clinical decision-making.",
+        "The task already has an exact DOI or PMID and only needs the narrower corresponding identifier adapter."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin with a public PubMed/Entrez query (including optional PubMed field tags), max_results 1-10, and caller-supplied contact_email"
+      ],
+      "output_types": [
+        "At most ten PubMed ESummary metadata rows in ESearch result order, with PMID, DOI when unique, title, first ten author names, journal, and provider publication date",
+        "Provider hit count, ordered PubMed PMID list, per-endpoint HTTP status and response hashes, retrieval timestamp, partial-summary IDs, and bounded claim ceiling"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NCBI_QUERY_AND_SUMMARY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_pubmed_query_search.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "eutils.ncbi.nlm.nih.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Sends the non-sensitive query and caller-supplied contact_email to NCBI; provider-side access logging is outside this wrapper's control.",
+        "Makes one ESearch HTTPS request and, only when PMIDs are returned, one ESummary HTTPS request; does not follow redirects or retry.",
+        "Reads bounded stdin and writes one JSON receipt to stdout; writes no files and changes no repository state."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable latency, provider-availability, analyst-time, or monetary cost measurement exists; no paid account or API key is used."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.search_europe_pmc_query",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Europe PMC performs a separate provider query and can include non-PubMed source IDs. One same-query top-five comparison found different returned IDs but cannot establish relative relevance, recall, quality, or cost."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "A bounded query task that explicitly requires the PubMed Entrez database or PubMed field-tag semantics and needs provider-ranked PMID plus ESummary metadata output."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One same-query, same-limit live comparison against the existing Europe PMC query tool at the same recorded UTC timestamp. Both returned five records; the top-five PubMed PMID sets did not overlap. Search quality, recall, completeness, accuracy, latency, reliability, human review time, and cost remain unknown.",
+        "compared_tool_ids": [
+          "research.search_europe_pmc_query"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_europe_pmc_query_search.py",
+          "ignition/tests/test_toolbox_europe_pmc_query_search.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-pubmed-query-search-real-task-r0.json",
+          "ignition/data/operations/toolbox-pubmed-query-search-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json"
+        ],
+        "findings": [
+          "A matched public query returned five PubMed records and five Europe PMC records at one recorded timestamp; provider hit counts and rank order differed.",
+          "No exact PMID was shared in the two top-five result lists for this query. This does not show which list is more relevant or complete.",
+          "Keep both adapters for their distinct source and query contracts; do not retire either from one task."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "This optional PubMed-specific source adapter adds an explicit PubMed/Entrez query path. The Europe PMC adapter remains in use for its separate source. The matched one-query comparison does not support a replacement."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry, required check, operation, or existing tool is migrated. Select the PubMed adapter only when the task requires PubMed or its query syntax; retain Europe PMC for its distinct provider scope."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, adapter, schemas, focused tests, documentation, and its run/C1/route/source evidence; regenerate the identity projection and toolbox page. Retain historical evidence and prior commits."
+        ]
+      },
+      "fallback": "If the query or contact email cannot be sent to NCBI, do not run the adapter. Report the unavailable scope or use an explicitly permitted alternative source adapter with its own host and limits; preserve the provider-specific source boundary.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_pubmed_query_search.py",
+          "ignition/tests/test_toolbox_pubmed_query_search_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Without --allow-public-network, no request is made and no result is emitted.",
+          "Reject duplicate JSON keys, blank/untrimmed/control-character or oversized queries, invalid result bounds, malformed email, extra properties, and oversized stdin before network access.",
+          "Only eutils.ncbi.nlm.nih.gov is requested; redirects, rate limits, non-JSON, oversized or slow responses, malformed IDs, mismatched summary UIDs, partial metadata and provider failures remain explicit.",
+          "At most two sequential HTTPS requests and ten records; query and contact email are not retained in the output, and abstracts/full text are not returned."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the caller explicitly allowlists research.search_pubmed_query for a PubMed query-to-record task.",
+        "The typed route profile must separately permit eutils.ncbi.nlm.nih.gov; the planner echoes this caller declaration but does not validate authority.",
+        "Each actual invocation requires a task decision to send the non-sensitive query and contact email and the --allow-public-network flag."
+      ],
+      "claim_ceiling": "One source-returned PubMed hit count, ordered PMID list and bounded metadata projection at retrieval time, with response hashes. No source authenticity, relevance, recall, completeness, scientific support, article content, current correction/retraction status, provider superiority, or execution authorization is established."
     }
   ]
 }

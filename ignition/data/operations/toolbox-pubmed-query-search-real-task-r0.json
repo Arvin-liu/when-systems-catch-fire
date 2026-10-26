@@ -1,0 +1,220 @@
+{
+  "schema_version": "toolbox-pubmed-query-search-real-task-r0",
+  "evidence_type": "REAL_TOOL_TEST_AND_REAL_TASK_OUTCOME",
+  "task": {
+    "task_id": "paired-public-literature-query-20261026",
+    "description": "Retrieve at most five provider-ranked publication metadata rows from PubMed for a public topic term; run the existing Europe PMC query adapter on the same term as a bounded source comparison.",
+    "raw_query_retained": false,
+    "query_sha256": "dceab6e71d36458d77f55f8a7685020484fc9a381c61131f215f6a8f145ea000",
+    "requested_result_limit": 5
+  },
+  "permission_and_privacy": {
+    "per_invocation_public_network_flag": true,
+    "host_permission": "eutils.ncbi.nlm.nih.gov",
+    "contact_email_sent_to_provider": true,
+    "contact_email_value_retained": false,
+    "contact_address_source": "public GitHub noreply commit identity; literal value not retained",
+    "query_class": "NON_SENSITIVE_PUBLIC_TOPIC_TERM",
+    "api_key_or_secret_used": false,
+    "files_written_by_tool": false,
+    "repository_mutation": false,
+    "billing": false,
+    "external_actions": false
+  },
+  "tool_result": {
+    "acquisition_status": "OK",
+    "claim_ceiling": "Bounded PubMed search and summary metadata returned for the supplied public query at retrieval time. The result set is not exhaustive, does not establish relevance, source authenticity, scientific support, publication status, or article content.",
+    "contact_email_retained": false,
+    "contact_email_sent_to_provider": true,
+    "hit_count": 24603,
+    "http_status": {
+      "esearch": 200,
+      "esummary": 200
+    },
+    "max_results": 5,
+    "missing_summary_pmids": [],
+    "query_sha256": "dceab6e71d36458d77f55f8a7685020484fc9a381c61131f215f6a8f145ea000",
+    "records": [
+      {
+        "author_count": 2,
+        "author_names": [
+          "Chandra S",
+          "Walsh KB"
+        ],
+        "authors_truncated": false,
+        "doi": "10.1016/j.jconhyd.2024.104360",
+        "journal_title": "Journal of contaminant hydrology",
+        "pmid": "38729026",
+        "publication_date": "2024 May",
+        "title": "Microplastics in water: Occurrence, fate and removal."
+      },
+      {
+        "author_count": 11,
+        "author_names": [
+          "Yang Y",
+          "Zhang F",
+          "Jiang Z",
+          "Du Z",
+          "Liu S",
+          "Zhang M",
+          "Jin Y",
+          "Qin Y",
+          "Yang X",
+          "Wang C"
+        ],
+        "authors_truncated": true,
+        "doi": "10.1186/s12989-024-00596-4",
+        "journal_title": "Particle and fibre toxicology",
+        "pmid": "39164741",
+        "publication_date": "2024 Aug 21",
+        "title": "Microplastics are associated with elevated atherosclerotic risk and increased vascular complexity in acute coronary syndrome patients."
+      },
+      {
+        "author_count": 3,
+        "author_names": [
+          "Muthulakshmi L",
+          "Mohan S",
+          "Tatarchuk T"
+        ],
+        "authors_truncated": false,
+        "doi": "10.1007/s11356-023-28460-6",
+        "journal_title": "Environmental science and pollution research international",
+        "pmid": "37386221",
+        "publication_date": "2023 Aug",
+        "title": "Microplastics in water: types, detection, and removal strategies."
+      },
+      {
+        "author_count": 7,
+        "author_names": [
+          "Jain R",
+          "Gaur A",
+          "Suravajhala R",
+          "Chauhan U",
+          "Pant M",
+          "Tripathi V",
+          "Pant G"
+        ],
+        "authors_truncated": false,
+        "doi": "10.1016/j.scitotenv.2023.167098",
+        "journal_title": "The Science of the total environment",
+        "pmid": "37717754",
+        "publication_date": "2023 Dec 20",
+        "title": "Microplastic pollution: Understanding microbial degradation and strategies for pollutant reduction."
+      },
+      {
+        "author_count": 3,
+        "author_names": [
+          "Pereao O",
+          "Opeolu B",
+          "Fatoki O"
+        ],
+        "authors_truncated": false,
+        "doi": "10.1007/s11356-020-08688-2",
+        "journal_title": "Environmental science and pollution research international",
+        "pmid": "32335826",
+        "publication_date": "2020 Jun",
+        "title": "Microplastics in aquatic environment: characterization, ecotoxicological effect, implications for ecosystems and developments in South Africa."
+      }
+    ],
+    "request_count": 2,
+    "response_sha256": {
+      "esearch": "52f2e5604800b10c4a7c29e699d27e5e1795875e119f087e72e0a631426ab654",
+      "esummary": "7cd79dc5b340632e2584f95271af2d447abe24b89d95a921bce4836166c745bb"
+    },
+    "retrieval_timestamp_utc": "2026-10-26T04:00:05Z",
+    "returned_count": 5,
+    "schema_version": "ignition.pubmed-query-search-r0",
+    "search_returned_pmids": [
+      "38729026",
+      "39164741",
+      "37386221",
+      "37717754",
+      "32335826"
+    ],
+    "search_status": "FOUND",
+    "source_code_sha256": "83066d4262b63f5fac44aa9f7f3feccd0ca298aaf7f7b9442b1858c276790aec",
+    "source_endpoints": {
+      "esearch": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+      "esummary": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
+    },
+    "status": "FOUND",
+    "tool_id": "research.search_pubmed_query",
+    "tool_version": "0.1.0"
+  },
+  "comparison_observation": {
+    "tool_id": "research.search_europe_pmc_query",
+    "tool_version": "0.1.0",
+    "source_code_sha256": "0c6374f3d3bbd3bdcc05ede780b935ee942c1b190d378dc492913c7c1783ce1c",
+    "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "acquisition_status": "OK",
+    "http_status": 200,
+    "status": "FOUND",
+    "hit_count": 32604,
+    "returned_count": 5,
+    "query_sha256": "dceab6e71d36458d77f55f8a7685020484fc9a381c61131f215f6a8f145ea000",
+    "response_sha256": "7f27b6003eeeaf2c917c487e86effec226bd295e32b35cbf820bf8967c9a42fe",
+    "retrieval_timestamp_utc": "2026-10-26T04:00:05Z",
+    "records": [
+      {
+        "author_string": "Gene SM, Katzenback BA, Provencher JF, Mallory ML, Lougheed SC, Orihel DM.",
+        "doi": "10.1007/s10646-026-03145-1",
+        "id": "42909688",
+        "journal_title": "Ecotoxicology",
+        "pmcid": null,
+        "pmid": "42909688",
+        "publication_year": "2026",
+        "source": "MED",
+        "title": "Outdoor mesocosm experiment provides novel insights into the relative importance of water and food as sources of microplastics to aquatic amphibians."
+      },
+      {
+        "author_string": "Zhao N, Sun Y, Liu Z, Zhu P, Li W, Wang M, Wang M.",
+        "doi": "10.1016/j.etap.2026.105202",
+        "id": "42913926",
+        "journal_title": "Environ Toxicol Pharmacol",
+        "pmcid": null,
+        "pmid": "42913926",
+        "publication_year": "2026",
+        "source": "MED",
+        "title": "The interplay between microplastics and respiratory viral diseases."
+      },
+      {
+        "author_string": "Yu L, Qian B, Kang R, Wang Q, Cai L, Wang Z.",
+        "doi": null,
+        "id": "PMC13670869",
+        "journal_title": "ACS Omega",
+        "pmcid": "PMC13670869",
+        "pmid": null,
+        "publication_year": null,
+        "source": "PMC",
+        "title": "Thermodynamics, Adsorption Kinetics, and Interfacial Partitioning of Tetracycline Antibiotics on Biodegradable Polyester versus Polyethylene Microplastics"
+      },
+      {
+        "author_string": "Saeed MS, Song X, Khan F, Sadiq R, Chen B.",
+        "doi": "10.1016/j.envpol.2026.129365",
+        "id": "42892510",
+        "journal_title": "Environ Pollut",
+        "pmcid": null,
+        "pmid": "42892510",
+        "publication_year": "2026",
+        "source": "MED",
+        "title": "Modeling sorption dynamics and ecotoxicological risk of microplastics and polybrominated diphenyl ethers in Arctic and subarctic freshwater."
+      },
+      {
+        "author_string": "Brijmohan N, Vasanth D.",
+        "doi": "10.1007/s10532-026-10388-6",
+        "id": "42875677",
+        "journal_title": "Biodegradation",
+        "pmcid": null,
+        "pmid": "42875677",
+        "publication_year": "2026",
+        "source": "MED",
+        "title": "Evaluation of microplastic pollution in industrial wastewater and their biodegradation using a novel indigenous bacterial isolate."
+      }
+    ]
+  },
+  "outcome": {
+    "pubmed": "Two fixed-host calls returned HTTP 200; ESearch reported 24603 provider hits and ESummary returned five metadata rows.",
+    "europe_pmc": "One fixed-host call returned HTTP 200; provider reported 32604 hits and five lite metadata rows.",
+    "claim_ceiling": "One live query at one retrieval time only. Provider hit counts, ordering, IDs and metadata are not a relevance, completeness, accuracy, coverage, cost, or scientific-quality comparison."
+  }
+}

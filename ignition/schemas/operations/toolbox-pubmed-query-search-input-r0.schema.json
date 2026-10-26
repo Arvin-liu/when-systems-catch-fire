@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-pubmed-query-search-input-r0",
+  "title": "Bounded PubMed Query Search Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["query", "max_results", "contact_email"],
+  "properties": {
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Public non-sensitive PubMed/Entrez query, including optional PubMed field tags."
+    },
+    "max_results": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "contact_email": {
+      "type": "string",
+      "format": "email",
+      "maxLength": 254,
+      "description": "Caller-supplied provider contact address; transmitted to NCBI and not retained in the output."
+    }
+  }
+}

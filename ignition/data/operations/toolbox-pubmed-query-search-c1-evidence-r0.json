@@ -1,0 +1,75 @@
+{
+  "schema_version": "toolbox-pubmed-query-search-c1-evidence-r0",
+  "policy": "Owner C1: retain, replace, or retire tools from real same-task evidence; preserve uncertainty when evidence is insufficient.",
+  "comparison_design": {
+    "same_public_query_sha256": "dceab6e71d36458d77f55f8a7685020484fc9a381c61131f215f6a8f145ea000",
+    "same_result_limit": 5,
+    "same_execution_environment": true,
+    "same_permission_class": "one explicitly permitted public read-only query per provider; no secret or billing",
+    "retrieval_timestamps_utc": {
+      "pubmed": "2026-10-26T04:00:05Z",
+      "europe_pmc": "2026-10-26T04:00:05Z"
+    },
+    "identical_timestamp": true
+  },
+  "observations": {
+    "pubmed": {
+      "tool_id": "research.search_pubmed_query",
+      "source": "NCBI PubMed ESearch plus ESummary",
+      "hit_count": 24603,
+      "returned_count": 5,
+      "returned_pmids": [
+        "38729026",
+        "39164741",
+        "37386221",
+        "37717754",
+        "32335826"
+      ],
+      "response_sha256": {
+        "esearch": "52f2e5604800b10c4a7c29e699d27e5e1795875e119f087e72e0a631426ab654",
+        "esummary": "7cd79dc5b340632e2584f95271af2d447abe24b89d95a921bce4836166c745bb"
+      }
+    },
+    "europe_pmc": {
+      "tool_id": "research.search_europe_pmc_query",
+      "source": "Europe PMC search lite",
+      "hit_count": 32604,
+      "returned_count": 5,
+      "returned_pmids": [
+        "42909688",
+        "42913926",
+        "42892510",
+        "42875677"
+      ],
+      "returned_ids": [
+        "42909688",
+        "42913926",
+        "PMC13670869",
+        "42892510",
+        "42875677"
+      ],
+      "response_sha256": "7f27b6003eeeaf2c917c487e86effec226bd295e32b35cbf820bf8967c9a42fe"
+    },
+    "shared_exact_pmid_in_top_five": [],
+    "shared_exact_pmid_count": 0
+  },
+  "findings": [
+    "Both adapters completed the same public query with HTTP 200 at the same recorded UTC timestamp and returned five metadata rows.",
+    "For this single query, PubMed reported 24603 hits and Europe PMC reported 32604 hits; these provider-specific counts do not measure comparative recall or query quality.",
+    "The top-five result lists shared 0 exact PMID values. This is one ranked snapshot and does not establish that either provider is more relevant, complete, or accurate.",
+    "PubMed ESearch/ESummary is specialized for PubMed source requests and PubMed field-tag syntax; Europe PMC remains useful as a separate provider and may include other source identifiers.",
+    "No measured runtime, human review time, monetary cost, provider reliability, relevance precision, or false-negative rate was collected."
+  ],
+  "disposition": {
+    "status": "COEXIST_SPECIALIZED",
+    "retired_tools": [],
+    "replacement_claim": "NONE",
+    "reason": "The matched snapshot does not establish superiority or full coverage. Preserve both source adapters with distinct provider scopes; route only when the task explicitly needs PubMed or Europe PMC."
+  },
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-pubmed-query-search-real-task-r0.json",
+    "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
+    "ignition/tools/toolbox_pubmed_query_search.py",
+    "ignition/tools/toolbox_europe_pmc_query_search.py"
+  ]
+}
