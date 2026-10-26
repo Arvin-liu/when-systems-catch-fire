@@ -1,0 +1,59 @@
+{
+  "schema_version": "toolbox-bounded-thinking-operation-input-r0",
+  "task": {
+    "episode_id": "bounded-verification-example",
+    "intent_ref": "task:verify-a-claim",
+    "goal_ref": "goal:resolve-one-source-bound-claim",
+    "frame_ref": "frame:claim-and-source-are-fixed",
+    "objective": "Check one declared claim against its required source evidence.",
+    "required_outputs": ["verification outcome with evidence reference"]
+  },
+  "state": {
+    "state_ref": "state:initial",
+    "required_obligations": [
+      {
+        "obligation_ref": "obligation:verify-claim",
+        "status": "OPEN",
+        "required": true,
+        "verification_required": true,
+        "evidence_refs": ["source:claim-record"]
+      }
+    ],
+    "uncertainty_refs": ["uncertainty:source-match"],
+    "frame_unresolved": false,
+    "authority_missing": false,
+    "capability_missing": false,
+    "freshness_gap": false,
+    "decomposition_needed": false,
+    "first_failure_ref": null,
+    "failure_refs": [],
+    "operation_history": [],
+    "remaining_budget_units": 3
+  },
+  "available_operations": ["VERIFY", "READ_MORE"],
+  "available_capabilities": ["local-source-comparator"],
+  "candidate_assessments": [
+    {
+      "operation": "VERIFY",
+      "expected_state_delta": "Resolve the required claim-to-source check or return an explicit mismatch.",
+      "expected_value_status": "POSITIVE",
+      "expected_value_band": "MEDIUM",
+      "expected_cost_band": "LOW",
+      "estimated_cost_units": 1,
+      "reason_refs": ["obligation:verify-claim", "source:claim-record"],
+      "required_capabilities": ["local-source-comparator"],
+      "return_condition": "Return to operation selection after recording the verifier outcome."
+    },
+    {
+      "operation": "READ_MORE",
+      "expected_state_delta": "Acquire more source context.",
+      "expected_value_status": "POSITIVE",
+      "expected_value_band": "LOW",
+      "expected_cost_band": "LOW",
+      "estimated_cost_units": 1,
+      "reason_refs": ["uncertainty:source-match"],
+      "required_capabilities": [],
+      "return_condition": "Re-evaluate after adding a source record."
+    }
+  ]
+}

@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
-    "candidate_count": 36
+    "blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
+    "candidate_count": 37
   },
   "cards": [
     {
@@ -219,7 +219,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -451,7 +451,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -738,7 +738,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1027,7 +1027,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1514,7 +1514,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1692,7 +1692,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2028,7 +2028,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2198,7 +2198,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -2222,7 +2222,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2364,6 +2364,318 @@
         "claim_ceiling": "Deterministic repository-local Current recovery only; no external truth, permission or epistemic upgrade."
       },
       "router_selectable_by_default": true
+    },
+    {
+      "tool_id": "ignition.select_bounded_thinking_operation",
+      "display_name": {
+        "zh": "有界思考操作选择器",
+        "en": "Bounded Thinking Operation Selector"
+      },
+      "description": "From caller-declared state of an already bounded run, recommend one next thinking-operation class or a terminal STOP; it neither chooses a Goal nor selects or executes concrete tools.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no Owner, executor, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_bounded_thinking_operation.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_bounded_thinking_operation.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_bounded_thinking_operation.py",
+          "role": "BOUNDED_LOCAL_SELECTOR_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-bounded-thinking-operation-input-r0.schema.json",
+          "role": "CALLER_STATE_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-bounded-thinking-operation-output-r0.schema.json",
+          "role": "NO_AUTHORITY_RECOMMENDATION_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-bounded-thinking-operation.md",
+          "role": "USAGE_LIMITS_AND_ROLLBACK"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-bounded-thinking-operation/verify-needed-r0.json",
+          "role": "REQUIRED_VERIFICATION_EXAMPLE"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-bounded-thinking-operation/freshness-verification-transfer-r0.json",
+          "role": "F13_FRESHNESS_THEN_VERIFICATION_TRANSFER_FIXTURE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_bounded_thinking_operation.py",
+          "role": "SELECTOR_AND_NEGATIVE_CONTROL_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_bounded_thinking_operation_routing.py",
+          "role": "DEFAULT_OFF_AND_REDUNDANT_CANDIDATE_ROUTE_TESTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-blueprint-reference-r0.json",
+          "role": "PINNED_WORKBENCH_BLUEPRINT_AND_SYNTHETIC_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-r0.json",
+          "role": "ONE_BOUNDED_REAL_TASK_OBSERVATION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-input-r0.json",
+          "role": "EXACT_REAL_TASK_INITIAL_CALLER_STATE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-output-r0.json",
+          "role": "EXACT_REAL_TASK_INITIAL_SELECTOR_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-input-r0.json",
+          "role": "EXACT_REAL_TASK_CLOSEOUT_CALLER_STATE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-output-r0.json",
+          "role": "EXACT_REAL_TASK_CLOSEOUT_SELECTOR_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-c1-evidence-r0.json",
+          "role": "C1_COMPLEMENTARITY_AND_COMPARISON_UNKNOWN"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_OPT_IN_AND_OVERINCLUSIVE_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "COMPLEMENTARY_TYPED_TOOL_ROUTE_PLANNER_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+          "role": "OPTIONAL_CANDIDATE_CATALOG_AND_COMPARATOR_CARD"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/toolbox-bounded-thinking-operation-input-r0.schema.json",
+        "ignition/schemas/operations/toolbox-bounded-thinking-operation-output-r0.schema.json"
+      ],
+      "good_for": [
+        "Proposing one next thinking-operation class from explicit authority, frame, capability, freshness, verification, decomposition, obligation, failure-history and budget state inside an already bounded run.",
+        "Returning explicit STOP dispositions when a required operation is unavailable, the declared budget is insufficient, expected value is not positive, or a required obligation remains unresolved.",
+        "Re-evaluating after the caller records an observable operation result, including a new verification obligation revealed by a freshness read."
+      ],
+      "not_for": [
+        "Selecting or changing Intent, Goal, authority, the task frame, the toolbox route, or the executor.",
+        "Executing READ_MORE, VERIFY, escalation, owner contact, or any other operation; a proposal is not an invocation or permission grant.",
+        "Reading or exposing hidden chain-of-thought, establishing source truth, completing a Goal, or upgrading scientific evidence.",
+        "Replacing the adaptive toolbox route planner, which selects concrete tools for typed input/output requirements."
+      ],
+      "only_if": [
+        "The caller has already admitted a bounded run and supplies a schema-valid, current caller-declared state with explicit references and required outputs.",
+        "Each non-STOP candidate has caller-declared positive expected value, abstract cost, required capabilities, and a return condition; cost units are planning inputs, not measured resource costs.",
+        "The caller separately authorizes and performs any suggested operation, records its observable outcome, and submits a new state for reconsideration."
+      ],
+      "counterindicated_when": [
+        "Goal/authority/frame state is unknown, stale, untrusted, or cannot be declared without inventing facts.",
+        "The request expects the selector to execute a tool, grant permission, contact an Owner, decide truth, or complete an obligation automatically.",
+        "The task requires calibrated cost estimates, live-model metacognition, or production-level effectiveness claims."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object matching toolbox-bounded-thinking-operation-input-r0; one bounded run with explicit task refs, state/obligations, available operation/capability lists, and candidate assessments; maximum 262144 bytes."
+      ],
+      "output_types": [
+        "One thinking-operation proposal READ_MORE, VERIFY, DECOMPOSE, REFRAME_OR_CLARIFY, CAPACITY_OR_EXECUTOR_ESCALATE, REQUEST_OWNER_DECISION, or STOP with a bounded terminal disposition.",
+        "Structured reasons and refs, expected state delta/value/cost declarations when present, preserved first failure, and fixed no-authority/no-execution flags."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_LOCAL_SCHEMA_READ",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/schemas/operations/toolbox-bounded-thinking-operation-input-r0.schema.json",
+          "ignition/schemas/operations/toolbox-bounded-thinking-operation-output-r0.schema.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads stdin and the two local schemas; writes one JSON result to stdout only."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9",
+        "jsonschema with Draft 2020-12 support"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "One local process timing is recorded but is not a calibrated latency, compute, memory, or cost benchmark; the input cost bands are caller-declared."
+      },
+      "alternatives": [
+        {
+          "tool_id": "ignition.adaptive_toolbox_route_planner",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The existing planner selects a sufficient set of concrete tools for typed inputs and outputs; this selector chooses the next thinking-operation class inside an already bounded run. Neither performs the other’s job."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Select one next thinking-operation class from caller-declared within-run state without selecting a Goal or concrete tool set."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "One bounded tool-admission task was observed, but the compared systems emit different output types and operate at different layers; broad quality, cost, reliability, and maintenance comparisons remain unknown.",
+        "compared_tool_ids": [
+          "ignition.adaptive_toolbox_route_planner"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/operations/plan_ignition_operation_run.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-bounded-thinking-operation-blueprint-reference-r0.json",
+          "ignition/data/operations/toolbox-bounded-thinking-operation-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-r0.json",
+          "ignition/data/operations/toolbox-bounded-thinking-operation-route-evidence-r0.json"
+        ],
+        "findings": [
+          "Workbench AB-16 results are frozen synthetic mechanism evidence only; they do not establish the Formal CLI as a live-model or production system.",
+          "The new selector recommends an intra-run thinking operation; the adaptive planner proposes concrete tools for typed coverage, so they are complementary and non-equivalent.",
+          "No tool is retired, deprecated, or claimed as a replacement; measured comparative quality and cost are unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "This default-off experimental candidate has one bounded real-task observation and a synthetic-only upstream pilot; no same-output comparison supports a replacement or retirement decision."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No caller migrates from the adaptive toolbox route planner; explicitly allowlist this candidate only for the within-run thinking-operation output contract."
+        ],
+        "rollback_steps": [
+          "Remove this experimental card and CLI from the isolated branch after checking consumers, regenerate toolbox-identity-cards-r0.json and TOOLBOX.md, rerun focused checks, and retain the blueprint/real-task evidence as history."
+        ]
+      },
+      "fallback": "Use the current Operating Method and the caller’s existing bounded run process; when required state, capability, budget, or validation is missing, return the gap without guessing or invoking another tool.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_bounded_thinking_operation.py",
+          "ignition/tests/test_toolbox_bounded_thinking_operation_routing.py",
+          "ignition/tools/operations/validate_toolbox_candidates.py",
+          "ignition/tools/operations/build_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Default route excludes the experimental candidate unless its exact tool ID is explicitly allowlisted.",
+          "An unrelated Crossref candidate is rejected for input-type mismatch even when the route profile includes api.crossref.org as caller-supplied context; no network request or execution authority is created.",
+          "Missing authority, missing verifier, unavailable capability, exhausted budget, nonpositive/unknown expected value, repeated failure and malformed/oversized stdin fail closed.",
+          "Every proposal reports execution_authorized=false, permission_expanded=false and authority_effect=NONE."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "The caller explicitly includes ignition.select_bounded_thinking_operation in include_experimental_tool_ids and the typed input/output profile matches this candidate.",
+        "Only for proposing a thinking-operation class within an already admitted bounded run; route selection does not invoke the selector or authorize the proposed operation.",
+        "The candidate is excluded from ordinary/default tasks and may be removed by deleting this card and regenerating derived identity projections."
+      ],
+      "claim_ceiling": "Caller-declared state-based operation recommendation only. The upstream AB-16 evidence is synthetic; this one task does not establish live-model metacognition, human-like cognition, broad production efficiency, scientific truth, Goal completion, Current promotion, or authority.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "04d0b7e8036e77b8419650d845125d571f772029",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_bounded_thinking_operation.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "04d0b7e8036e77b8419650d845125d571f772029"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-bounded-thinking-operation-input-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "b6eb97eaca5ae413a509ef03c70218c46e81d556"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-bounded-thinking-operation-output-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "5a97b9b186278b57976635fb4e1864f8874e8be8"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-bounded-thinking-operation.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "85c4eb71ce465b05a75e6968adda8d3f0cd8390e"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-bounded-thinking-operation/verify-needed-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "731711bed5099e4d7ad64a98feb829706cbd2e8a"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-bounded-thinking-operation/freshness-verification-transfer-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "9aa019499f4b3ae4c68e0e08d6a7398447da84cf"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_bounded_thinking_operation.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "7834919f167bffe8b120c2b95c897059bef53589"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_bounded_thinking_operation_routing.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "317e08c5c17037f9885f8f91c069d748c6dd4848"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-blueprint-reference-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "faa357b4faacef6534685a2419d4985c61027b50"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "bf473632792bbf6499a158d63680927cccbb3a68"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-input-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "5988b6c0d7c3c35619f964ba3dacd81d0357236a"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-initial-output-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "15eee13c36013bef9e4d4cd6b3b89b3879db2169"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-input-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "c24d55df6ca19366b902bf63e4d5d0a0c1acce14"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-real-task-closeout-output-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "a8577418eca8527d5b689f14b97344ab9c48be89"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-c1-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "c05e1fd8b99106dbce2e4a74ba4571534b2ab8ee"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-bounded-thinking-operation-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "1c60dcbdab035d14d1dde156b418d52f717b3c34"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "d7881daae28a3d82612ceadb78d77bcd879bfe83"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
     {
       "tool_id": "knowledge.assemble_context_packet",
@@ -2562,7 +2874,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2787,7 +3099,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3131,7 +3443,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4074,7 +4386,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4274,7 +4586,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4542,7 +4854,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4830,7 +5142,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5267,7 +5579,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5471,7 +5783,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6148,7 +6460,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6431,7 +6743,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef"
         },
         {
           "path": "ignition/tools/toolbox_validate_evidence_program.py",
@@ -6455,7 +6767,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6756,7 +7068,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6998,7 +7310,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7369,7 +7681,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7586,7 +7898,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7855,7 +8167,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8096,7 +8408,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8390,7 +8702,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8610,7 +8922,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9004,7 +9316,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9230,7 +9542,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9624,7 +9936,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9820,7 +10132,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10276,7 +10588,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10493,7 +10805,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef"
         },
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
@@ -10512,7 +10824,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10707,7 +11019,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10899,7 +11211,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11407,7 +11719,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+      "candidate_catalog_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11539,6 +11851,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 56,
+  "card_count": 57,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }

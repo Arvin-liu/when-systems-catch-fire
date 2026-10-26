@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-bounded-thinking-operation-output-r0",
+  "title": "Bounded Thinking Operation Selector Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "episode_id", "state_ref", "selected_operation", "terminal_disposition",
+    "reason_codes", "reason_refs", "expected_state_delta", "expected_value_status",
+    "expected_value_band", "expected_cost_band", "estimated_cost_units", "cost_basis",
+    "return_condition", "first_failure_ref", "authority_effect", "execution_authorized",
+    "permission_expanded", "source_evidence_mutated", "frame_changed", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-bounded-thinking-operation-output-r0"},
+    "episode_id": {"type": "string", "minLength": 1},
+    "state_ref": {"type": "string", "minLength": 1},
+    "selected_operation": {
+      "enum": [
+        "READ_MORE", "VERIFY", "DECOMPOSE", "REFRAME_OR_CLARIFY",
+        "CAPACITY_OR_EXECUTOR_ESCALATE", "REQUEST_OWNER_DECISION", "STOP"
+      ]
+    },
+    "terminal_disposition": {
+      "type": ["string", "null"],
+      "enum": [
+        "SUFFICIENT", "EXPLICIT_GAP", "OWNER_DECISION_REQUIRED", "CAPABILITY_BLOCKED",
+        "BUDGET_EXHAUSTED", "VERIFICATION_CEILING", "FRAME_UNRESOLVED", null
+      ]
+    },
+    "reason_codes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "AUTHORITY_DEFICIT", "FRAME_UNRESOLVED", "CAPABILITY_DEFICIT",
+          "REQUIRED_VERIFICATION_OPEN", "DECOMPOSITION_NEEDED", "FRESHNESS_GAP",
+          "REQUIRED_OBLIGATION_OPEN", "DECLARED_REQUIREMENTS_MET", "OPTIONAL_GAP_REMAINS",
+          "REQUIRED_OPERATION_UNAVAILABLE", "REQUIRED_CAPABILITY_UNAVAILABLE",
+          "BUDGET_EXHAUSTED", "EXPECTED_VALUE_NOT_POSITIVE",
+          "REPEATED_OPERATION_WITHOUT_STATE_CHANGE", "FIRST_FAILURE_PRESERVED"
+        ]
+      }
+    },
+    "reason_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "expected_state_delta": {"type": ["string", "null"]},
+    "expected_value_status": {"enum": ["POSITIVE", "NON_POSITIVE", "UNKNOWN", "NOT_APPLICABLE"]},
+    "expected_value_band": {"type": ["string", "null"], "enum": ["LOW", "MEDIUM", "HIGH", null]},
+    "expected_cost_band": {"type": ["string", "null"], "enum": ["LOW", "MEDIUM", "HIGH", null]},
+    "estimated_cost_units": {"type": ["integer", "null"], "minimum": 1},
+    "cost_basis": {"const": "CALLER_DECLARED_ABSTRACT_UNITS_NOT_MEASURED"},
+    "return_condition": {"type": "string", "minLength": 1},
+    "first_failure_ref": {"type": ["string", "null"]},
+    "authority_effect": {"const": "NONE"},
+    "execution_authorized": {"const": false},
+    "permission_expanded": {"const": false},
+    "source_evidence_mutated": {"const": false},
+    "frame_changed": {"const": false},
+    "claim_ceiling": {"const": "CALLER_STATE_BASED_OPERATION_RECOMMENDATION_ONLY"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"selected_operation": {"const": "STOP"}}, "required": ["selected_operation"]},
+      "then": {
+        "properties": {
+          "terminal_disposition": {"type": "string"},
+          "expected_state_delta": {"type": "null"},
+          "expected_value_status": {"const": "NOT_APPLICABLE"},
+          "expected_value_band": {"type": "null"},
+          "expected_cost_band": {"type": "null"},
+          "estimated_cost_units": {"type": "null"}
+        }
+      },
+      "else": {
+        "properties": {
+          "terminal_disposition": {"type": "null"},
+          "expected_state_delta": {"type": "string", "minLength": 1},
+          "expected_value_status": {"const": "POSITIVE"},
+          "expected_value_band": {"enum": ["LOW", "MEDIUM", "HIGH"]},
+          "expected_cost_band": {"enum": ["LOW", "MEDIUM", "HIGH"]},
+          "estimated_cost_units": {"type": "integer", "minimum": 1}
+        }
+      }
+    }
+  ]
+}
