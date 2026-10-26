@@ -1,8 +1,8 @@
 {
-  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true,
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "execution_authorized": false,
     "observed_at_utc": "2026-10-26T22:04:06Z",
@@ -33,7 +33,7 @@
       "Deterministic JSON with input/tool SHA-256 digests, exact parent-directory groups, repeated filename-prefix groups, all uncohorted paths, and explicit empty mapping suggestions."
     ],
     "task_id": "component-validation-path-residue-triage",
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [

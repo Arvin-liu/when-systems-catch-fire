@@ -3,7 +3,7 @@
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
   "observed_at_utc": "2026-10-26T22:44:00Z",
   "candidate_tool_id": "research.compare_noaa_ch4_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-route-profile-r0.json",
@@ -404,12 +404,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "b4f9703a096f673b06d1a8bb34b5a9142d3a2c2b57bf5cb644c0cc3c3a02517b",
+      "planner_output_sha256": "10eba35b97f5ab041938571f3110ee9d58b25caac6de7dc0d5065f3c935ecf7c",
       "decision": "INCOMPLETE"
     },
     {
@@ -846,12 +846,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "cb9214b5934435320083ec035feb5b6145d727e09f568e146dde55f245eb24c2",
+      "planner_output_sha256": "e1ee3f3230c5db6f5638910eb14d2d102b4ecbe6f54b460e28daac6eaff947ce",
       "decision": "COMPLETE"
     },
     {
@@ -1245,12 +1245,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "960ed9f99f05ea86b5024d48343b996850430f06943c670869e73160af102bee",
+      "planner_output_sha256": "1a0f120390fb89c114274a82bcb12d24898bddee796d8659ec40ff26e17b86ed",
       "decision": "INCOMPLETE"
     }
   ],
@@ -1274,7 +1274,7 @@
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "replayed_at_utc": "2026-10-26T22:44:00Z",
     "route_trials_replayed": 3,

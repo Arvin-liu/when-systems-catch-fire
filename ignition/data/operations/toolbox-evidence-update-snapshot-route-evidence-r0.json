@@ -3,7 +3,7 @@
   "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
   "observed_at_utc": "2026-10-26T22:44:00Z",
   "candidate_tool_id": "research.compare_evidence_update_snapshots",
-  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
@@ -71,7 +71,7 @@
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "e2aa10a97e5c0b71b96a5eaa8d353dc43eef94db625c497fcb8eca3ee425e84e",
+      "planner_output_sha256": "1b10a4e6a11b1058f9c68061b4fef0c82e3962d537c25d8f3e78cc5c69a6903e",
       "decision": "INCOMPLETE"
     },
     {
@@ -140,7 +140,7 @@
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "fd03cb56e48db70cbc8e8a715d778ed9509aa7eabdd1709f916f39fae6ffcef6",
+      "planner_output_sha256": "a11189185efee0496c19e9513e0ef884fee2d8e34e1918f4553d7c0a33525939",
       "decision": "COMPLETE"
     },
     {
@@ -210,7 +210,7 @@
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "d68eb4e2131c21ad4b0ec4b3a26d274d8756aeb29033b3c1bdc1fddfe2c84c1e",
+      "planner_output_sha256": "f6ef85a9b312ef1d2074324d16041e6e290a9dc9ac9dd1d56ccce5729678fd08",
       "decision": "COMPLETE"
     }
   ],
@@ -231,7 +231,7 @@
   "catalog_replay": {
     "replayed_at_utc": "2026-10-26T22:47:07Z",
     "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,

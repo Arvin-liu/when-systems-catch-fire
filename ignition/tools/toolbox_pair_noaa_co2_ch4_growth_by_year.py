@@ -14,9 +14,10 @@ from typing import Any, Optional
 
 
 TOOL_ID = "research.pair_noaa_co2_ch4_growth_by_year"
-TOOL_VERSION = "0.1.0"
-INPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-input-r0"
-OUTPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-output-r0"
+TOOL_VERSION = "0.2.0"
+LEGACY_INPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-input-r0"
+INPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-input-r1"
+OUTPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-output-r1"
 MAX_INPUT_BYTES = 256 * 1024
 MAX_RANGE_YEARS = 50
 DECIMAL_RE = re.compile(r"^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$")
@@ -56,6 +57,10 @@ SOURCE_URLS = {
         "provider_page": "https://gml.noaa.gov/ccgg/trends_ch4/",
         "fixed_raw_table": "https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4_gr_gl.txt",
     },
+    "n2o": {
+        "provider_page": "https://gml.noaa.gov/ccgg/trends_n2o/",
+        "fixed_raw_table": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+    },
 }
 UNIT_FIELDS = {
     "co2": {
@@ -88,14 +93,28 @@ UNIT_FIELDS = {
         "tool_id": "research.compare_noaa_ch4_source_surfaces",
         "input_schema_version": "toolbox-noaa-ch4-source-surface-comparison-output-r0",
     },
+    "n2o": {
+        "annual": "annual_increase_ppb",
+        "uncertainty": "uncertainty_ppb",
+        "row_fields": {
+            "page_annual_increase_ppb",
+            "raw_table_annual_increase_ppb",
+            "page_minus_raw_annual_increase_ppb",
+            "page_uncertainty_ppb",
+            "raw_table_uncertainty_ppb",
+            "page_minus_raw_uncertainty_ppb",
+        },
+        "min_year": 2001,
+        "tool_id": "research.compare_noaa_n2o_source_surfaces",
+        "input_schema_version": "toolbox-noaa-n2o-source-surface-comparison-output-r0",
+    },
 }
 OUTPUT_ROW_FIELDS = {
     "year",
     "status",
-    *UNIT_FIELDS["co2"]["row_fields"],
-    *UNIT_FIELDS["ch4"]["row_fields"],
+    *(field for gas in UNIT_FIELDS.values() for field in gas["row_fields"]),
 }
-CLAIM_CEILING = (
+LEGACY_CLAIM_CEILING = (
     "Year-key alignment of caller-supplied, already captured NOAA GML CO2 and CH4 "
     "source-surface comparison outputs, preserving each gas's original unit, "
     "comparison status, retrieval metadata, and response digests. It performs no "
@@ -103,8 +122,22 @@ CLAIM_CEILING = (
     "measurement, physical comparability, emissions, attribution, causation, source "
     "authenticity, measurement validity, or a scientific conclusion."
 )
-NON_CLAIMS = [
+CLAIM_CEILING = (
+    "Year-key alignment of caller-supplied, already captured NOAA GML CO2, CH4, and "
+    "optionally N2O source-surface comparison outputs, preserving each gas's original "
+    "unit, comparison status, retrieval metadata, and response digests. It performs no "
+    "network retrieval or cross-gas arithmetic and does not establish simultaneous "
+    "measurement, physical comparability, emissions, attribution, causation, source "
+    "authenticity, measurement validity, or a scientific conclusion."
+)
+LEGACY_NON_CLAIMS = [
     "Pairing rows by the same integer year does not make CO2 ppm and CH4 ppb values directly comparable or commensurate.",
+    "The tool performs no unit conversion, ratio, sum, weighting, trend ranking, interpolation, or causal analysis across gases.",
+    "Source timestamps and response digests are inherited from caller-supplied comparator outputs; they do not authenticate NOAA or make the captures simultaneous.",
+    "The tool does not retrieve current data, validate measurements, estimate emissions, attribute sources, or establish scientific truth.",
+]
+NON_CLAIMS = [
+    "Pairing rows by the same integer year does not make CO2 ppm, CH4 ppb, and N2O ppb values directly comparable or commensurate.",
     "The tool performs no unit conversion, ratio, sum, weighting, trend ranking, interpolation, or causal analysis across gases.",
     "Source timestamps and response digests are inherited from caller-supplied comparator outputs; they do not authenticate NOAA or make the captures simultaneous.",
     "The tool does not retrieve current data, validate measurements, estimate emissions, attribute sources, or establish scientific truth.",
@@ -380,14 +413,23 @@ def parse_request(raw: bytes) -> tuple[dict[str, Any], str]:
         )
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise PairingInputError("request must be valid UTF-8 JSON with unique keys") from exc
-    envelope = _require_object(envelope, "request", {"schema_version", "co2_output", "ch4_output"})
-    if envelope["schema_version"] != INPUT_SCHEMA_VERSION:
+    required_keys = {"schema_version", "co2_output", "ch4_output"}
+    allowed_keys = required_keys | {"n2o_output"}
+    if not isinstance(envelope, dict) or not required_keys <= set(envelope) <= allowed_keys:
+        raise PairingInputError(f"request must contain exactly {sorted(required_keys)} with optional n2o_output")
+    if envelope["schema_version"] not in {LEGACY_INPUT_SCHEMA_VERSION, INPUT_SCHEMA_VERSION}:
         raise PairingInputError("unsupported schema_version")
+    if envelope["schema_version"] == LEGACY_INPUT_SCHEMA_VERSION and "n2o_output" in envelope:
+        raise PairingInputError("legacy input schema does not accept n2o_output")
     co2 = _validate_comparison_output(envelope["co2_output"], "co2")
     ch4 = _validate_comparison_output(envelope["ch4_output"], "ch4")
-    if co2["range"] != ch4["range"]:
-        raise PairingInputError("CO2 and CH4 comparison outputs must request the same year range")
-    return {"co2": co2, "ch4": ch4}, hashlib.sha256(raw).hexdigest()
+    parsed = {"co2": co2, "ch4": ch4}
+    if "n2o_output" in envelope:
+        parsed["n2o"] = _validate_comparison_output(envelope["n2o_output"], "n2o")
+    ranges = {gas: result["range"] for gas, result in parsed.items()}
+    if any(year_range != co2["range"] for year_range in ranges.values()):
+        raise PairingInputError("all supplied gas comparison outputs must request the same year range")
+    return parsed, hashlib.sha256(raw).hexdigest()
 
 
 def _source_receipt_projection(receipt: dict[str, Any]) -> dict[str, Any]:
@@ -424,47 +466,60 @@ def pair_outputs(parsed: dict[str, Any], input_payload_sha256: str) -> dict[str,
     co2 = parsed["co2"]
     ch4 = parsed["ch4"]
     years = range(co2["range"]["start_year"], co2["range"]["end_year"] + 1)
+    gases = list(parsed)
     rows = [
-        {
-            "year": year,
-            "co2": co2["rows"][year],
-            "ch4": ch4["rows"][year],
-        }
+        {"year": year, **{gas: parsed[gas]["rows"][year] for gas in gases}}
         for year in years
     ]
-    co2_has_values = [row["co2"]["status"] in {"EXACT_MATCH", "NUMERIC_DIFFERENCE"} for row in rows]
-    ch4_has_values = [row["ch4"]["status"] in {"EXACT_MATCH", "NUMERIC_DIFFERENCE"} for row in rows]
-    all_capture_times = co2["captured_times"] + ch4["captured_times"]
-    return {
+    values_by_gas = {
+        gas: [row[gas]["status"] in {"EXACT_MATCH", "NUMERIC_DIFFERENCE"} for row in rows]
+        for gas in gases
+    }
+    all_values_for_year = [all(values_by_gas[gas][index] for gas in gases) for index in range(len(rows))]
+    all_capture_times = [time for gas in gases for time in parsed[gas]["captured_times"]]
+    pairing = {
+        "join_key": "year",
+        "co2_unit": "ppm",
+        "ch4_unit": "ppb",
+        "cross_gas_arithmetic_performed": False,
+        "simultaneous_capture_claimed": False,
+    }
+    metrics = {
+        "paired_year_count": len(rows),
+        "co2_rows_with_two_surface_values": sum(values_by_gas["co2"]),
+        "ch4_rows_with_two_surface_values": sum(values_by_gas["ch4"]),
+        "years_with_two_surface_values_for_both_gases": sum(
+            co2_ok and ch4_ok for co2_ok, ch4_ok in zip(values_by_gas["co2"], values_by_gas["ch4"])
+        ),
+        "years_with_a_missing_surface_value": sum(not (co2_ok and ch4_ok) for co2_ok, ch4_ok in zip(values_by_gas["co2"], values_by_gas["ch4"])),
+    }
+    if "n2o" in parsed:
+        pairing["n2o_unit"] = "ppb"
+        metrics.update({
+            "n2o_rows_with_two_surface_values": sum(values_by_gas["n2o"]),
+            "years_with_two_surface_values_for_all_three_gases": sum(all_values_for_year),
+            "years_with_a_missing_surface_value_for_any_gas": sum(not value for value in all_values_for_year),
+        })
+    result = {
         "schema_version": OUTPUT_SCHEMA_VERSION,
         "tool_id": TOOL_ID,
         "tool_version": TOOL_VERSION,
         "status": "PAIRED",
         "requested_range": co2["range"],
         "input_payload_sha256": input_payload_sha256,
-        "pairing": {
-            "join_key": "year",
-            "co2_unit": "ppm",
-            "ch4_unit": "ppb",
-            "cross_gas_arithmetic_performed": False,
-            "simultaneous_capture_claimed": False,
-        },
-        "metrics": {
-            "paired_year_count": len(rows),
-            "co2_rows_with_two_surface_values": sum(co2_has_values),
-            "ch4_rows_with_two_surface_values": sum(ch4_has_values),
-            "years_with_two_surface_values_for_both_gases": sum(a and b for a, b in zip(co2_has_values, ch4_has_values)),
-            "years_with_a_missing_surface_value": sum(not (a and b) for a, b in zip(co2_has_values, ch4_has_values)),
-        },
-        "source_captures": {
-            "co2": _capture_summary(co2, "co2"),
-            "ch4": _capture_summary(ch4, "ch4"),
-        },
+        "pairing": pairing,
+        "metrics": metrics,
+        "source_captures": {gas: _capture_summary(parsed[gas], gas) for gas in gases},
         "cohort_capture_span_seconds": int((max(all_capture_times) - min(all_capture_times)).total_seconds()),
         "rows": rows,
-        "claim_ceiling": CLAIM_CEILING,
-        "non_claims": list(NON_CLAIMS),
     }
+    if "n2o" in parsed:
+        result["claim_ceiling"] = CLAIM_CEILING
+        result["non_claims"] = list(NON_CLAIMS)
+    else:
+        result["claim_ceiling"] = LEGACY_CLAIM_CEILING
+        result["non_claims"] = list(LEGACY_NON_CLAIMS)
+    return result
 
 
 def main(argv: Optional[list[str]] = None) -> int:

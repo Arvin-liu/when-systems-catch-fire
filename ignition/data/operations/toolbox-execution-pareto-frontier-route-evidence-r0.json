@@ -1,8 +1,8 @@
 {
-  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true,
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "execution_authorized": false,
     "observed_at_utc": "2026-10-26T22:04:06Z",
@@ -114,7 +114,7 @@
       "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
     ],
     "task_id": "paired-execution-candidate-performance-resource-analysis",
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
@@ -486,7 +486,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "router_provider_calls": 0,
@@ -907,7 +907,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "router_provider_calls": 0,

@@ -1,0 +1,237 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-growth-pair-route-evidence-r1",
+  "evidence_type": "DEFAULT_OFF_TWO_AND_THREE_GAS_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
+  "observed_on": "2026-10-27",
+  "candidate_tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+  "candidate_tool_version": "0.2.0",
+  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_profiles": [
+    {
+      "id": "TWO_GAS",
+      "path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-route-profile-r1.json",
+      "sha256": "6e8e1ca80dd4f99402a6bcff4ed533d0184939a60b1adac066945b6603f8531f"
+    },
+    {
+      "id": "THREE_GAS",
+      "path": "ignition/data/operations/toolbox-noaa-co2-ch4-n2o-growth-pair-route-profile-r1.json",
+      "sha256": "ea110762fce8170ba5c3974c92e250f98d61991cc7a63150adf45e435915e671"
+    }
+  ],
+  "route_trials_replayed": 5,
+  "all_expected_decisions_reproduced": true,
+  "route_trials": [
+    {
+      "scenario": "TWO_GAS_DEFAULT_OFF",
+      "route_profile_id": "TWO_GAS",
+      "task_profile": {
+        "task_id": "noaa-co2-ch4-captured-growth-pair-2023-2025-v0-2",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "Legacy UTF-8 JSON stdin envelope with schema_version toolbox-noaa-co2-ch4-growth-pair-input-r0, or schema r1 with no n2o_output, containing complete version-0.1.0 CO2 and CH4 comparator outputs from the fixed NOAA GML page/raw surfaces with the same inclusive year range."
+        ],
+        "required_outputs": [
+          "Same-year separate NOAA GML CO2 (ppm) and CH4 (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic.",
+          "Four fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_decision": "INCOMPLETE",
+      "actual_selected_tool_ids": [],
+      "actual_candidate_rejections": [
+        {
+          "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_unmet_outputs": [
+        "Four fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span.",
+        "Same-year separate NOAA GML CO2 (ppm) and CH4 (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic."
+      ],
+      "planner_output_sha256": "466710a76758ca2a8d103526b3106fc083fc2f319ad0a7eebe3f42f0b1d1330b",
+      "candidate_invoked": false,
+      "network_calls_made": 0
+    },
+    {
+      "scenario": "TWO_GAS_EXPLICIT",
+      "route_profile_id": "TWO_GAS",
+      "task_profile": {
+        "task_id": "noaa-co2-ch4-captured-growth-pair-2023-2025-v0-2",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "Legacy UTF-8 JSON stdin envelope with schema_version toolbox-noaa-co2-ch4-growth-pair-input-r0, or schema r1 with no n2o_output, containing complete version-0.1.0 CO2 and CH4 comparator outputs from the fixed NOAA GML page/raw surfaces with the same inclusive year range."
+        ],
+        "required_outputs": [
+          "Same-year separate NOAA GML CO2 (ppm) and CH4 (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic.",
+          "Four fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "actual_decision": "COMPLETE",
+      "actual_selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "actual_candidate_rejections": [],
+      "actual_unmet_outputs": [],
+      "planner_output_sha256": "6e93bdee9155300d2905d8846b2006714ca4967a4a109ca530554aa4ea0ee805",
+      "candidate_invoked": false,
+      "network_calls_made": 0
+    },
+    {
+      "scenario": "THREE_GAS_DEFAULT_OFF",
+      "route_profile_id": "THREE_GAS",
+      "task_profile": {
+        "task_id": "noaa-co2-ch4-n2o-captured-growth-panel-2023-2025-v0-2",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin envelope with schema_version toolbox-noaa-co2-ch4-growth-pair-input-r1 containing complete version-0.1.0 CO2, CH4 and N2O comparator outputs from fixed NOAA GML page/raw surfaces; all request the same inclusive year range and N2O starts no earlier than 2001."
+        ],
+        "required_outputs": [
+          "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim.",
+          "Six fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_decision": "INCOMPLETE",
+      "actual_selected_tool_ids": [],
+      "actual_candidate_rejections": [
+        {
+          "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_unmet_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim.",
+        "Six fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
+      ],
+      "planner_output_sha256": "f0e366216a2180493b69f9147c50bb3c17f458c309f27c6ad2fc5178d6bc0a09",
+      "candidate_invoked": false,
+      "network_calls_made": 0
+    },
+    {
+      "scenario": "THREE_GAS_EXPLICIT",
+      "route_profile_id": "THREE_GAS",
+      "task_profile": {
+        "task_id": "noaa-co2-ch4-n2o-captured-growth-panel-2023-2025-v0-2",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin envelope with schema_version toolbox-noaa-co2-ch4-growth-pair-input-r1 containing complete version-0.1.0 CO2, CH4 and N2O comparator outputs from fixed NOAA GML page/raw surfaces; all request the same inclusive year range and N2O starts no earlier than 2001."
+        ],
+        "required_outputs": [
+          "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim.",
+          "Six fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "actual_decision": "COMPLETE",
+      "actual_selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "actual_candidate_rejections": [],
+      "actual_unmet_outputs": [],
+      "planner_output_sha256": "7c7b90d503d8095389c50c19ea2785630dcaf8b367eaf66489fbc073b0a71e78",
+      "candidate_invoked": false,
+      "network_calls_made": 0
+    },
+    {
+      "scenario": "SINGLE_N2O_REJECTION",
+      "route_profile_id": "SINGLE_N2O",
+      "task_profile": {
+        "task_id": "noaa-n2o-single-gas-control-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One complete version-0.1.0 N2O comparator output only; no CO2 or CH4 output is supplied."
+        ],
+        "required_outputs": [
+          "Single-gas annual N2O source comparison only; no year alignment with CO2 or CH4 is required."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "actual_decision": "INCOMPLETE",
+      "actual_selected_tool_ids": [],
+      "actual_candidate_rejections": [
+        {
+          "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "actual_unmet_outputs": [
+        "Single-gas annual N2O source comparison only; no year alignment with CO2 or CH4 is required."
+      ],
+      "planner_output_sha256": "a835b90e5453a6d9101965720a8b91822b643550d8d317f4c3e368fbcc90b1db",
+      "candidate_invoked": false,
+      "network_calls_made": 0
+    }
+  ],
+  "summary": {
+    "two_gas_default_off": "INCOMPLETE_NO_SELECTION",
+    "two_gas_explicit_allowlist": "COMPLETE_ONE_CANDIDATE_PROPOSED",
+    "three_gas_default_off": "INCOMPLETE_NO_SELECTION",
+    "three_gas_explicit_allowlist": "COMPLETE_ONE_CANDIDATE_PROPOSED",
+    "single_n2o_explicit_allowlist": "INCOMPLETE_NO_INPUT_TYPE_MATCH",
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "network_calls_made": 0
+  }
+}

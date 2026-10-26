@@ -1,10 +1,10 @@
 {
   "schema_version": "toolbox-pubmed-query-search-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_TYPED_ROUTE_EXPERIMENT",
-  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "candidate_catalog_refresh": {
-    "current_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "current_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
     "replayed_at_utc": "2026-10-26T22:47:07Z",
     "replayed_without_tool_execution": true
@@ -27,7 +27,7 @@
       "eutils.ncbi.nlm.nih.gov"
     ],
     "route_default": "EXCLUDED",
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "catalog_replay_history": [
       {
@@ -430,7 +430,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "decision": "INCOMPLETE"
@@ -826,7 +826,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "decision": "INCOMPLETE"
@@ -1264,7 +1264,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "decision": "COMPLETE"
@@ -1710,7 +1710,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
         }
       },
       "decision": "COMPLETE"
@@ -1979,7 +1979,7 @@
   "claim_ceiling": "Typed local route proposal only. Candidate selection remains default-off; caller-declared host permission is not authenticated, no invocation or network authority is granted, and no relevance or scientific result is established.",
   "catalog_replay": {
     "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
-    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "replayed_at_utc": "2026-10-26T22:47:07Z",
     "route_trials_replayed": 4,

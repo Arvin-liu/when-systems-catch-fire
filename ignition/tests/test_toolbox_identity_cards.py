@@ -602,6 +602,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         )
         specialized_tool_ids = {
             editorial["tool_id"],
+            "research.pair_noaa_co2_ch4_growth_by_year",
             "maintenance.summarize_actions_step_timeline",
             "maintenance.compare_actions_repeated_step_sequences",
             "research.lookup_arxiv_paper_metadata",

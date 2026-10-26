@@ -1,6 +1,6 @@
 {
   "all_expected_decisions_reproduced": true,
-  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
   "candidate_tool_id": "research.lookup_noaa_global_n2o_annual_growth",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "evidence_type": "REPLAYED_DEFAULT_OFF_EXACT_HOST_AND_TASK_SCOPE_ROUTE_PROPOSALS",
@@ -25,7 +25,7 @@
       "expected_selected_tool_ids": [],
       "include_experimental_tool_ids": [],
       "network_calls_made": 0,
-      "planner_output_sha256": "ba0ab00e423d490cc630355a5acd87888f4cfeaba82791c1e9d17b6acf458de1",
+      "planner_output_sha256": "747cf8f51b911cc6aea757eeb90626cbcd4ba3c734aaf563a37bc2430e2e8f36",
       "scenario": "DEFAULT_OFF_RAW_ONLY",
       "task_profile": {
         "allowed_execution_modes": [
@@ -63,7 +63,7 @@
         "research.compare_noaa_n2o_source_surfaces"
       ],
       "network_calls_made": 0,
-      "planner_output_sha256": "02c96d2cee4085ee6a132638f475839d8099a7f2ea159530ace9080e06efa82e",
+      "planner_output_sha256": "e9082bc7323af3e0e11eea398e6df61739e77acaf408b137095fc14fa5b2969a",
       "scenario": "EXPLICIT_RAW_ONLY_EXACT_HOST",
       "task_profile": {
         "allowed_execution_modes": [
@@ -102,7 +102,7 @@
         "research.lookup_noaa_global_n2o_annual_growth"
       ],
       "network_calls_made": 0,
-      "planner_output_sha256": "6ff1d6bdfa9f8d1acda0b80dca6308994fe934f509e6061b0e023c0dc66d698a",
+      "planner_output_sha256": "786531d525bd67c88e992d0d9898be7b1c610bbaee0689ca061d2c447bbf5623",
       "scenario": "EXPLICIT_RAW_ONLY_HOST_MISSING",
       "task_profile": {
         "allowed_execution_modes": [
@@ -138,7 +138,7 @@
         "research.compare_noaa_n2o_source_surfaces"
       ],
       "network_calls_made": 0,
-      "planner_output_sha256": "6d14d74415e3bfd3c8d8cda9a93c2920d3b65a2562e9cd15623db42a675a649f",
+      "planner_output_sha256": "b1387b102ed7ed9416bdf996a7c1a2999cb8e15f344eda180c9d05a1ff8bd08d",
       "scenario": "EXPLICIT_RAW_ONLY_OVERBROAD_HOST_LIST",
       "task_profile": {
         "allowed_execution_modes": [
@@ -177,7 +177,7 @@
         "research.compare_noaa_n2o_source_surfaces"
       ],
       "network_calls_made": 0,
-      "planner_output_sha256": "0ad0c7ee3acc2b443fe90a7d984f87f19b73f17f33a17194d533ceb2cf163547",
+      "planner_output_sha256": "6ecae30242ffc5c1246e536599752844da9bb52160a603d42cc784cda1d5d3a8",
       "scenario": "EXPLICIT_TWO_SURFACE_COMPARISON",
       "task_profile": {
         "allowed_execution_modes": [
