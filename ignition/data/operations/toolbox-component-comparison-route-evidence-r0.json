@@ -1,0 +1,75 @@
+{
+  "schema_version": "toolbox-component-comparison-route-evidence-r0",
+  "tool_id": "maintenance.compare_toolbox_component_coverage",
+  "observed_at_utc": "2026-10-26T14:36:23Z",
+  "candidate_catalog_git_blob_sha1": "bcf6c8406defb87c0726d43871f063d57ab2af15",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile": {
+    "task_id": "pr264-toolbox-component-scope-comparison",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin matching toolbox-component-comparison-input-r0; exactly one incumbent, one proposed successor, 1-100 declared use cases per tool, and up to 100 paired results; maximum 512 KiB."
+    ],
+    "required_outputs": [
+      "Deterministic JSON with shared and distinct task ranges, matched-result completeness, caller-declared permission/risk/cost deltas, a bounded replacement/coexistence/retention/unknown disposition, and a next low-cost comparison suggestion."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "router_provider_calls": 0,
+      "selected_permissions": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "maintenance.compare_toolbox_component_coverage",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.compare_toolbox_component_coverage"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.compare_toolbox_component_coverage"
+      ],
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "router_provider_calls": 0,
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/tools/toolbox_component_comparison.py"
+          ],
+          "write_paths": [],
+          "network": false,
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
+      "relevant_rejections": []
+    }
+  ],
+  "router_provider_calls": 0,
+  "candidate_invoked": false,
+  "execution_authorized": false,
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "bcf6c8406defb87c0726d43871f063d57ab2af15",
+    "all_expected_decisions_reproduced": true,
+    "route_trials_replayed": 2,
+    "provider_calls_made": 0,
+    "execution_authorized": false
+  },
+  "claim_ceiling": "Offline planner proposal only; the candidate was not invoked, no provider was contacted, no lifecycle was changed, and no execution permission was granted."
+}

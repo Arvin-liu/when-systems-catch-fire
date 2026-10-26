@@ -10804,6 +10804,202 @@
           "Remove the optional candidate card, implementation, schemas, fixture, focused tests, documentation, and candidate-specific route/C1/task evidence from the isolated branch; regenerate toolbox and identity-card projections while preserving prior commits and historical evidence."
         ]
       }
+    },
+    {
+      "tool_id": "maintenance.compare_toolbox_component_coverage",
+      "display_name": {
+        "zh": "工具组件覆盖比较器",
+        "en": "Toolbox Component Coverage Comparator"
+      },
+      "description": "Compare an incumbent toolbox component with a proposed successor across declared valuable use cases, matched results, cost, permission rank, and adverse effects; emit replacement, coexistence, retention, or uncertainty guidance without changing lifecycle state.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no Owner, lifecycle, or release authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_component_comparison.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_component_comparison.py --stdin < comparison.json",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_component_comparison.py",
+          "role": "BOUNDED_LOCAL_COMPARATOR"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-component-comparison-input-r0.schema.json",
+          "role": "STRICT_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-component-comparison-output-r0.schema.json",
+          "role": "BOUNDED_RESULT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-component-comparison.md",
+          "role": "USAGE_LIMITS_AND_FALLBACK"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_component_comparison.py",
+          "role": "FUNCTIONAL_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_component_comparison_routing.py",
+          "role": "DEFAULT_OFF_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-component-comparison/pr264-actions-tool-scope-r0.json",
+          "role": "PR264_REAL_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-component-comparison-source-binding-r0.json",
+          "role": "OWNER_C1_SOURCE_AND_SCOPE_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-component-comparison-real-task-r0.json",
+          "role": "PR264_REAL_TASK_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-component-comparison-c1-evidence-r0.json",
+          "role": "COMPARATOR_COMPLEMENTARITY_AND_UNKNOWN_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-component-comparison-route-profile-r0.json",
+          "role": "BOUND_TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-component-comparison-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_RECEIPT"
+        },
+        {
+          "path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+          "role": "ADJACENT_NON_EQUIVALENT_COMPARATOR"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+          "role": "EXISTING_TOOL_OVERLAP_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json",
+          "role": "TASK_SCOPE_AND_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
+          "role": "COMPLEMENTARY_PARETO_COMPARISON_EVIDENCE"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Comparing declared incumbent and successor task ranges before changing an optional tool card or route.",
+        "Detecting incomplete same-task evidence, missing cost, new permission exposure, and declared adverse effects.",
+        "Keeping complementary tools together when each retains distinct valuable tasks."
+      ],
+      "not_for": [
+        "Authenticating evidence or independently deciding whether a caller-declared use case is valuable.",
+        "Automatically removing runtime code, editing cards or registries, changing routes, or granting permission.",
+        "Scientific quality assessment, external truth, production approval, merge, or release decisions."
+      ],
+      "only_if": [
+        "The caller supplies both exact tool identities and explicit valuable-use-case inventories with input/output contract digests.",
+        "Any claimed replacement is backed by paired results with matching contracts, input identity, evaluator, and environment.",
+        "Interpret every result as caller-declared evidence and keep incomplete cost, risk, or outcome data unknown."
+      ],
+      "counterindicated_when": [
+        "The incumbent valuable-use-case inventory is missing or inferred only from similar names.",
+        "The task requires a route invocation, registry migration, code removal, scientific adjudication, or Owner authorization.",
+        "The supplied trials use different task contracts, evaluators, environments, permission inventories, or resource units."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin matching toolbox-component-comparison-input-r0; exactly one incumbent, one proposed successor, 1-100 declared use cases per tool, and up to 100 paired results; maximum 512 KiB."
+      ],
+      "output_types": [
+        "Deterministic JSON with shared and distinct task ranges, matched-result completeness, caller-declared permission/risk/cost deltas, a bounded replacement/coexistence/retention/unknown disposition, and a next low-cost comparison suggestion."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_STDIN_AND_SOURCE_HASH",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_component_comparison.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded stdin request and the running source file for its SHA-256; writes one JSON response to stdout or a bounded error to stderr."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Local input size and case count are bounded; no calibrated latency, memory, or resource-cost benchmark is recorded."
+      },
+      "alternatives": [
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The Pareto analyzer computes a repeated-trial outcome/resource frontier; this tool compares incumbent/successor use-case coverage and permission/risk constraints. Neither produces the other output."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Compare declared incumbent-versus-successor valuable-use-case coverage and identify evidence required before a lifecycle decision."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "The new tool evaluates whole-tool use-case coverage and lifecycle evidence; the existing Pareto analyzer summarizes matched candidate pass rates and resource costs. Their inputs and outputs differ, and no same-task comparative quality/cost trial has been recorded.",
+        "compared_tool_ids": [
+          "maintenance.summarize_execution_candidate_pareto_frontier"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_execution_pareto_frontier.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
+          "ignition/data/operations/toolbox-component-comparison-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-component-comparison-real-task-r0.json"
+        ],
+        "findings": [
+          "The Pareto analyzer has no incumbent/successor tool identity or valuable-use-case inventory input.",
+          "This comparator does not aggregate repeated trials into a statistical pass-rate frontier.",
+          "Keep both available for their distinct output contracts; broad quality, cost, and maintenance comparisons remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Default-off candidate with one recorded C1 scope task. No replacement or retirement is supported or executed."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "Do not migrate lifecycle status from the comparator output alone; review cited evidence, then edit the candidate catalog and regenerate projections in a separately governed change."
+        ],
+        "rollback_steps": [
+          "Remove the candidate entry and implementation from the isolated branch, preserve its evidence and comparison output, regenerate identity cards and TOOLBOX.md, then run the focused validation checks."
+        ]
+      },
+      "fallback": "Compare the two identity cards and matched task receipts manually. If any shared case lacks matching input, output contract, evaluator, environment, cost, or risk evidence, preserve COMPARISON_UNKNOWN and run only the smallest needed paired task.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_component_comparison.py",
+          "ignition/tests/test_toolbox_component_comparison_routing.py",
+          "ignition/tools/operations/validate_toolbox_candidates.py",
+          "ignition/tools/operations/build_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "A successor missing any declared incumbent valuable task cannot receive replacement support.",
+          "Mismatched output contracts, missing pairs, unknown outcomes, unpinned evaluator/environment, and missing costs remain unknown.",
+          "Any successor permission expansion or new adverse effect blocks replacement support.",
+          "Default routing excludes the candidate; explicit allowlisting proposes it but does not invoke it or authorize changes."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "The caller explicitly includes maintenance.compare_toolbox_component_coverage in include_experimental_tool_ids and its exact input/output profile matches.",
+        "Route planning does not call this tool, alter a lifecycle record, or authorize code removal."
+      ],
+      "claim_ceiling": "Deterministic analysis of caller-declared use-case inventories and matched outcomes only; supplied evidence, value claims, measurements, risk lists, and source identities are not authenticated or independently validated."
     }
   ]
 }

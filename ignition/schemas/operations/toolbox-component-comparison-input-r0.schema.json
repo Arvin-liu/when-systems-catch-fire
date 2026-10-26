@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-component-comparison-input-r0",
+  "title": "Toolbox Component Comparison Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "comparison_id", "incumbent", "proposed_successor", "evaluation_context", "incumbent_use_cases", "successor_use_cases", "paired_results"],
+  "properties": {
+    "schema_version": {"const": "toolbox-component-comparison-input-r0"},
+    "comparison_id": {"$ref": "#/$defs/id"},
+    "incumbent": {"$ref": "#/$defs/tool"},
+    "proposed_successor": {"$ref": "#/$defs/tool"},
+    "evaluation_context": {
+      "type": "object", "additionalProperties": false,
+      "required": ["environment_sha256", "evaluator_sha256", "resource_metric_id", "resource_metric_unit"],
+      "properties": {
+        "environment_sha256": {"oneOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+        "evaluator_sha256": {"description": "Digest of the shared scoring and permission-rank rubric; null prevents performance replacement support.", "oneOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+        "resource_metric_id": {"$ref": "#/$defs/id"},
+        "resource_metric_unit": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "incumbent_use_cases": {"$ref": "#/$defs/useCases"},
+    "successor_use_cases": {"$ref": "#/$defs/useCases"},
+    "paired_results": {
+      "type": "array", "maxItems": 100,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["use_case_id", "input_sha256", "output_contract_sha256", "environment_sha256", "evaluator_sha256", "evidence_ref", "incumbent", "proposed_successor"],
+        "properties": {
+          "use_case_id": {"$ref": "#/$defs/id"},
+          "input_sha256": {"$ref": "#/$defs/sha256"},
+          "output_contract_sha256": {"$ref": "#/$defs/sha256"},
+          "environment_sha256": {"oneOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+        "evaluator_sha256": {"description": "Digest of the same evaluator and score/rank rubric used for both results; null makes the pair incomparable.", "oneOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+          "evidence_ref": {"$ref": "#/$defs/nonblank"},
+          "incumbent": {"$ref": "#/$defs/result"},
+          "proposed_successor": {"$ref": "#/$defs/result"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,95}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "tool": {
+      "type": "object", "additionalProperties": false, "required": ["tool_id", "version"],
+      "properties": {"tool_id": {"$ref": "#/$defs/id"}, "version": {"$ref": "#/$defs/nonblank"}}
+    },
+    "useCases": {
+      "type": "array", "minItems": 1, "maxItems": 100, "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["use_case_id", "value_basis", "input_contract_sha256", "output_contract_sha256", "evidence_ref"],
+        "properties": {
+          "use_case_id": {"$ref": "#/$defs/id"},
+          "value_basis": {"$ref": "#/$defs/nonblank"},
+          "input_contract_sha256": {"$ref": "#/$defs/sha256"},
+          "output_contract_sha256": {"$ref": "#/$defs/sha256"},
+          "evidence_ref": {"$ref": "#/$defs/nonblank"}
+        }
+      }
+    },
+    "result": {
+      "type": "object", "additionalProperties": false,
+      "required": ["outcome", "quality_score", "resource_cost", "permission_rank", "adverse_effect_ids"],
+      "properties": {
+        "outcome": {"enum": ["PASS", "FAIL", "UNKNOWN"]},
+        "quality_score": {"description": "Caller-scored output quality on the shared evaluator scale from 0 to 1000; higher is better.", "type": ["integer", "null"], "minimum": 0, "maximum": 1000},
+        "resource_cost": {"type": ["number", "null"], "minimum": 0, "maximum": 1000000000000000},
+        "permission_rank": {"description": "Caller-declared rank on one shared scale where higher means broader permission exposure.", "type": "integer", "minimum": 0, "maximum": 100},
+        "adverse_effect_ids": {"description": "Exact IDs from one shared caller-declared adverse-effect checklist.", "type": "array", "uniqueItems": true, "maxItems": 100, "items": {"$ref": "#/$defs/id"}}
+      }
+    }
+  }
+}
