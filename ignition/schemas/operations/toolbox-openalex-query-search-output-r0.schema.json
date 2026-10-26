@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ignition OpenAlex query search receipt R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "tool_id", "tool_version", "status", "acquisition_status", "http_status",
+    "source_endpoint", "retrieval_timestamp_utc", "max_results", "request_count", "query_sha256",
+    "request_sha256", "response_sha256", "response_bytes", "source_code_sha256", "shared_client_source_sha256",
+    "provider_hit_count", "returned_count", "usage_headers", "records", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition.openalex-query-search-r0"},
+    "tool_id": {"const": "research.search_openalex_query"},
+    "tool_version": {"type": "string", "minLength": 1, "maxLength": 32},
+    "status": {"enum": ["FOUND", "NOT_FOUND", "FAILED"]},
+    "acquisition_status": {
+      "enum": ["OK", "HTTP_ERROR", "REDIRECT_BLOCKED", "RATE_LIMITED", "NON_JSON_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "NETWORK_ERROR", "INVALID_RESPONSE"]
+    },
+    "http_status": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+    "source_endpoint": {"const": "https://api.openalex.org/works"},
+    "retrieval_timestamp_utc": {"type": "string", "format": "date-time"},
+    "max_results": {"type": "integer", "minimum": 1, "maximum": 10},
+    "request_count": {"const": 1},
+    "query_sha256": {"$ref": "#/$defs/sha256"},
+    "request_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "response_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "response_bytes": {"type": "integer", "minimum": 0, "maximum": 524288},
+    "source_code_sha256": {"$ref": "#/$defs/sha256"},
+    "shared_client_source_sha256": {"$ref": "#/$defs/sha256"},
+    "provider_hit_count": {"type": ["integer", "null"], "minimum": 0},
+    "returned_count": {"type": "integer", "minimum": 0, "maximum": 10},
+    "usage_headers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["X-RateLimit-Limit", "X-RateLimit-Remaining", "X-RateLimit-Credits-Used", "X-RateLimit-Reset"],
+      "properties": {
+        "X-RateLimit-Limit": {"type": ["string", "null"], "maxLength": 64},
+        "X-RateLimit-Remaining": {"type": ["string", "null"], "maxLength": 64},
+        "X-RateLimit-Credits-Used": {"type": ["string", "null"], "maxLength": 64},
+        "X-RateLimit-Reset": {"type": ["string", "null"], "maxLength": 64}
+      }
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["openalex_id", "doi", "title", "publication_year", "type", "author_names", "author_count", "authors_truncated", "primary_venue", "relevance_score"],
+        "properties": {
+          "openalex_id": {"type": "string", "pattern": "^https://openalex\\.org/W[0-9]{1,20}$"},
+          "doi": {"type": ["string", "null"], "maxLength": 1024},
+          "title": {"type": ["string", "null"], "maxLength": 4096},
+          "publication_year": {"type": ["integer", "null"], "minimum": 0, "maximum": 3000},
+          "type": {"type": ["string", "null"], "maxLength": 256},
+          "author_names": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 512}},
+          "author_count": {"type": "integer", "minimum": 0, "maximum": 1000},
+          "authors_truncated": {"type": "boolean"},
+          "primary_venue": {"type": ["string", "null"], "maxLength": 512},
+          "relevance_score": {"type": ["number", "null"]}
+        }
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "maxLength": 1024}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

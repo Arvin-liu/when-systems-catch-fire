@@ -853,6 +853,74 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(permitted["selected_tools"][0]["permissions"]["network_hosts"], ["export.arxiv.org"])
         self.assertFalse(permitted["execution_authorized"])
 
+    def test_openalex_query_search_is_default_off_and_selects_only_for_its_required_outputs(self) -> None:
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        tool_id = "research.search_openalex_query"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("openalex-public-topic-search", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+
+        no_host = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+
+        exact_host = planner.plan_tool_route(
+            profile(
+                "openalex-public-topic-search",
+                card["accepted_input_types"],
+                card["output_types"],
+                allowed_network_hosts=["api.openalex.org"],
+            ),
+            include_experimental_tool_ids=[tool_id],
+        )
+        self.assertEqual(exact_host["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in exact_host["selected_tools"]], [tool_id])
+        self.assertEqual(exact_host["selected_tools"][0]["permissions"]["network_hosts"], ["api.openalex.org"])
+        self.assertEqual(exact_host["selected_tools"][0]["permissions"]["write_paths"], [])
+        self.assertFalse(exact_host["selected_tools"][0]["permissions"]["secrets"])
+        self.assertFalse(exact_host["selected_tools"][0]["permissions"]["billing"])
+        self.assertFalse(exact_host["selected_tools"][0]["permissions"]["external_actions"])
+        self.assertFalse(exact_host["execution_authorized"])
+
+        redundant_options = planner.plan_tool_route(
+            profile(
+                "openalex-public-topic-search",
+                card["accepted_input_types"],
+                card["output_types"],
+                allowed_network_hosts=["api.openalex.org", "export.arxiv.org", "www.ebi.ac.uk"],
+            ),
+            include_experimental_tool_ids=[
+                tool_id,
+                "research.search_arxiv_query",
+                "research.search_europe_pmc_query",
+            ],
+        )
+        self.assertEqual(redundant_options["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in redundant_options["selected_tools"]], [tool_id])
+        self.assertFalse(redundant_options["execution_authorized"])
+
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-openalex-query-search-route-evidence-r0.json")
+            .read_text(encoding="utf-8")
+        )
+        for trial in evidence["route_trials"]:
+            route_profile = dict(evidence["route_profile"])
+            if trial["allowed_network_hosts"]:
+                route_profile["allowed_network_hosts"] = trial["allowed_network_hosts"]
+            replay = planner.plan_tool_route(
+                route_profile,
+                include_experimental_tool_ids=trial["include_experimental_tool_ids"],
+            )
+            self.assertEqual(replay["decision"], trial["decision"])
+            self.assertEqual([row["tool_id"] for row in replay["selected_tools"]], trial["selected_tool_ids"])
+            self.assertFalse(replay["execution_authorized"])
+
     def test_noaa_ch4_growth_lookup_is_default_off_and_requires_exact_host_allowance(self) -> None:
         catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
         card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.lookup_noaa_global_ch4_annual_growth")

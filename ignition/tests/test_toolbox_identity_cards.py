@@ -348,7 +348,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         editorial = next(card for card in candidates if card["tool_id"] == "writing.preflight_cognitive_migration_revision")
         europe_pmc = next(card for card in candidates if card["tool_id"] == "research.search_europe_pmc_query")
         europe_pmc_fulltext = next(card for card in candidates if card["tool_id"] == "research.resolve_europe_pmc_fulltext_locations")
-        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], updates["tool_id"], pubmed_composition["tool_id"], "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"]})
+        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], "research.search_openalex_query", updates["tool_id"], pubmed_composition["tool_id"], "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"]})
         self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertEqual(pubmed["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov"])
         self.assertEqual(openalex["permissions"]["network_hosts"], ["api.openalex.org"])
@@ -403,6 +403,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
                 "research.compare_publication_metadata_snapshots",
                 "knowledge.cluster_source_brief",
                 "knowledge.navigate_raw_evidence",
+                "research.search_openalex_query",
             ],
         )
         self.assertEqual(europe_pmc["replacement_candidates"], [])
@@ -558,6 +559,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "maintenance.compare_actions_repeated_step_sequences",
             "research.lookup_arxiv_paper_metadata",
             "research.search_arxiv_query",
+            "research.search_openalex_query",
             openalex["tool_id"],
             noaa["tool_id"],
             noaa_co2["tool_id"],

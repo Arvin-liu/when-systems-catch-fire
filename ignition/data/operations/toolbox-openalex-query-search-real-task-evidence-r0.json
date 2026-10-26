@@ -1,0 +1,114 @@
+{
+  "schema_version": "toolbox-openalex-query-search-real-task-evidence-r0",
+  "experiment_id": "research.search_openalex_query.public_ai_healthcare_discovery.smoke_r0",
+  "task": {
+    "description": "Find up to five OpenAlex Works metadata records about artificial intelligence in healthcare for optional literature follow-up.",
+    "public_query": "artificial intelligence healthcare",
+    "query_was_public_and_non_sensitive": true,
+    "max_results": 5,
+    "claim_ceiling": "Provider-reported metadata and ranking only; no relevance review, scientific support, source authentication, or exhaustive recall was performed."
+  },
+  "execution": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_openalex_query_search.py --stdin --allow-public-network",
+    "permission": "One explicit public read-only GET to api.openalex.org; no API key, email, billing credential, file write, or external action.",
+    "request_count": 1,
+    "raw_response_retained": false,
+    "query_echoed_in_receipt": false,
+    "response_budget_bytes": 524288,
+    "response_budget_seconds": 7
+  },
+  "tool_receipt": {
+    "schema_version": "ignition.openalex-query-search-r0",
+    "tool_id": "research.search_openalex_query",
+    "tool_version": "0.1.0",
+    "status": "FOUND",
+    "acquisition_status": "OK",
+    "http_status": 200,
+    "source_endpoint": "https://api.openalex.org/works",
+    "retrieval_timestamp_utc": "2026-10-26T05:02:19.124118Z",
+    "max_results": 5,
+    "request_count": 1,
+    "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+    "request_sha256": "e19660e37d92f38f12cce29c8aaa07ddfd02be2cfec93073be3188b69261347e",
+    "response_sha256": "e899cfcf237fcc8038d0b95bdc36efb498cbeb4c81568ad5cde4dab28ab7c94c",
+    "response_bytes": 47129,
+    "source_code_sha256": "d42fd826d2555caa8fac4767ef8dceafa91e48909783d8b4aaf7474bcadd8bf9",
+    "shared_client_source_sha256": "c5ea6a9109c426cf9e439c0cb31c6703039fbc52bc2a295df09ddb5b3f40e5bf",
+    "provider_hit_count": 638997,
+    "returned_count": 5,
+    "usage_headers": {
+      "X-RateLimit-Limit": "1000",
+      "X-RateLimit-Remaining": "990",
+      "X-RateLimit-Credits-Used": "10",
+      "X-RateLimit-Reset": "68262"
+    },
+    "records": [
+      {
+        "openalex_id": "https://openalex.org/W4408314709",
+        "doi": "https://doi.org/10.1038/s41746-025-01503-7",
+        "title": "Bias recognition and mitigation strategies in artificial intelligence healthcare applications",
+        "publication_year": 2025,
+        "type": "article",
+        "author_names": ["Fereshteh Hasanzadeh", "Colin B. Josephson", "Gabriella Waters", "Demilade A. Adedinsewo", "Zahra Azizi", "James A. White"],
+        "author_count": 6,
+        "authors_truncated": false,
+        "primary_venue": "npj Digital Medicine",
+        "relevance_score": 183.32922
+      },
+      {
+        "openalex_id": "https://openalex.org/W4286628547",
+        "doi": "https://doi.org/10.3389/fgene.2022.929736",
+        "title": "Artificial Intelligence, Healthcare, Clinical Genomics, and Pharmacogenomics Approaches in Precision Medicine",
+        "publication_year": 2022,
+        "type": "article",
+        "author_names": ["Habiba Abdelhalim", "Asude Berber", "Mudassir K. Lodi", "Rihi Jain", "Achuth Suresh Nair", "Anirudh Pappu", "Kush Patel", "Vignesh Venkat", "Cynthia Venkatesan", "Raghunandan Wable"],
+        "author_count": 26,
+        "authors_truncated": true,
+        "primary_venue": "Frontiers in Genetics",
+        "relevance_score": 170.26207
+      },
+      {
+        "openalex_id": "https://openalex.org/W3203074056",
+        "doi": "https://doi.org/10.3390/electronics10192421",
+        "title": "Electronic Solutions for Artificial Intelligence Healthcare",
+        "publication_year": 2021,
+        "type": "editorial",
+        "author_names": ["Hyeyoung Ko", "Jun‐Ho Huh"],
+        "author_count": 2,
+        "authors_truncated": false,
+        "primary_venue": "Electronics",
+        "relevance_score": 153.47586
+      },
+      {
+        "openalex_id": "https://openalex.org/W4382631288",
+        "doi": "https://doi.org/10.3233/shti230409",
+        "title": "The Representation of Trust in Artificial Intelligence Healthcare Research",
+        "publication_year": 2023,
+        "type": "book-chapter",
+        "author_names": ["Jan-Oliver Kutza", "Niels Hannemann", "Ursula Hübner", "Birgit Babitsch"],
+        "author_count": 4,
+        "authors_truncated": false,
+        "primary_venue": "Studies in health technology and informatics",
+        "relevance_score": 151.8808
+      },
+      {
+        "openalex_id": "https://openalex.org/W4397041170",
+        "doi": "https://doi.org/10.58532/v2bs16ch28",
+        "title": "ARTIFICIAL INTELLIGENCE HEALTHCARE TECHNOLOGIES IN SURGERY",
+        "publication_year": 2022,
+        "type": "book-chapter",
+        "author_names": ["Salmani Praveena", "G . Kishor Kumar", "Jyothi A P", "T. Vinith Anand"],
+        "author_count": 4,
+        "authors_truncated": false,
+        "primary_venue": "Iterative International Publishers eBooks",
+        "relevance_score": 147.91112
+      }
+    ],
+    "claim_ceiling": "At most ten OpenAlex-ranked Works metadata rows returned for one caller-supplied query at retrieval time. The search is not exhaustive and establishes no relevance, source authenticity, scientific support, publication status, or scientific validity."
+  },
+  "outcome": {
+    "observed": "One OpenAlex request returned five bounded Works metadata rows and provider count 638997 for the public topic. Its response was 47129 bytes and the provider returned X-RateLimit-Credits-Used=10.",
+    "not_established": ["relevance precision", "recall", "completeness", "availability over time", "comparative quality", "scientific validity", "account-level monetary charge"],
+    "scientific_review": "NOT_PERFORMED"
+  }
+}

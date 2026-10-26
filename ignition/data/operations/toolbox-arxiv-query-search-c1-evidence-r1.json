@@ -1,0 +1,151 @@
+{
+  "schema_version": "toolbox-topic-query-search-c1-evidence-r1",
+  "policy": "Owner C1: compare same-task capability with available alternatives; retire no tool without evidence that its valuable uses are covered.",
+  "comparison_design": {
+    "task": "Find at most five bibliographic metadata records about artificial intelligence in healthcare, retaining provider identifiers for follow-up.",
+    "public_task_query": "artificial intelligence AND healthcare",
+    "provider_query_syntax": {
+      "arxiv": "all:\"artificial intelligence\" AND all:healthcare",
+      "europe_pmc": "artificial intelligence AND healthcare",
+      "openalex": "artificial intelligence healthcare"
+    },
+    "same_execution_environment": true,
+    "same_permission_class": "One public read-only query per selected provider; no API key, account email, repository writes, or external action. OpenAlex reported rate-limit usage credits; account-level monetary charge remains unknown.",
+    "max_results_per_provider": 5,
+    "query_was_public_and_non_sensitive": true,
+    "query_persisted_in_receipts": false,
+    "raw_provider_responses_retained": false,
+    "retrieval_window_utc": {
+      "first": "2026-10-26T04:37:24Z",
+      "last": "2026-10-26T05:11:51.127704Z",
+      "note": "Provider observations are within one session window but were not simultaneous."
+    }
+  },
+  "observations": {
+    "arxiv": {
+      "tool_id": "research.search_arxiv_query",
+      "source": "arXiv API Atom search",
+      "retrieval_timestamp_utc": "2026-10-26T04:41:21Z",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "status": "FOUND",
+      "hit_count": 4563,
+      "returned_count": 5,
+      "returned_arxiv_ids": [
+        "2304.04780v1",
+        "1301.2158v1",
+        "2107.13454v1",
+        "2508.03278v1",
+        "2307.00067v1"
+      ],
+      "response_sha256": "a0a4aa37299048d4a0995f62632c58915cc6648caa9312f6807b4c42f638ec46",
+      "query_sha256": "911406f2d2b51a79888ffafdc1cafd3a1401ac70c731e3c02355e47b9c64b4ce",
+      "request_sha256": "e17b60e9189ff8c7226a09edf8193ae573117dd9975e3e4e54616c65645b6506",
+      "source_code_sha256": "aea2472d4ea99c38939fdbfa5dd91a11aa574680ede8549d88d1100256c1afbe",
+      "response_bytes": 13040,
+      "abstracts_or_full_text_returned": false
+    },
+    "europe_pmc": {
+      "tool_id": "research.search_europe_pmc_query",
+      "source": "Europe PMC lite search",
+      "retrieval_timestamp_utc": "2026-10-26T04:37:24Z",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "status": "FOUND",
+      "hit_count": 159566,
+      "returned_count": 5,
+      "returned_ids": [
+        "41672140",
+        "40069303",
+        "PMC11718711",
+        "37386943",
+        "37467785"
+      ],
+      "returned_pmids": [
+        "41672140",
+        "40069303",
+        null,
+        "37386943",
+        "37467785"
+      ],
+      "response_sha256": "fefdf30b99631d43976845ad35ad1f97972636797945d492383e6e8c7182aba2",
+      "query_sha256": "a7ad72be7af8a1513495e3e2a93f0264bebc9ae65e70f793cd90ac7ebc5ed557",
+      "source_code_sha256": "0c6374f3d3bbd3bdcc05ede780b935ee942c1b190d378dc492913c7c1783ce1c",
+      "abstracts_or_full_text_returned": false
+    },
+    "pubmed": {
+      "tool_id": "research.search_pubmed_query",
+      "same_task_live_query": "NOT_RUN",
+      "reason": "The existing PubMed adapter requires a caller-supplied contact_email sent to NCBI. No task-specific contact address was supplied, so none was transmitted.",
+      "contract_comparison": "Reviewed as an alternative, but no same-task quality, recall, or result comparison is claimed."
+    },
+    "arxiv_known_id_lookup": {
+      "tool_id": "research.lookup_arxiv_paper_metadata",
+      "comparison": "Its exact-ID input cannot discover candidate IDs from a topic query; it remains useful after a record identifier is known."
+    },
+    "openalex": {
+      "tool_id": "research.search_openalex_query",
+      "source": "OpenAlex Works search",
+      "retrieval_timestamp_utc": "2026-10-26T05:11:51.127704Z",
+      "http_status": 200,
+      "acquisition_status": "OK",
+      "status": "FOUND",
+      "hit_count": 638997,
+      "returned_count": 5,
+      "returned_work_ids": [
+        "W4408314709",
+        "W4286628547",
+        "W3203074056",
+        "W4382631288",
+        "W4397041170"
+      ],
+      "response_sha256": "6f79220fec231f3d27f18ca0f1716cb1f7b6c8e1afbbee49d7f5555e777a8648",
+      "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+      "request_sha256": "e19660e37d92f38f12cce29c8aaa07ddfd02be2cfec93073be3188b69261347e",
+      "source_code_sha256": "6b1e260e61d869ecd59192888ca9e77250e208d23157aeff2f119d189e5a657a",
+      "response_bytes": 47129,
+      "usage_headers": {
+        "X-RateLimit-Limit": "1000",
+        "X-RateLimit-Remaining": "980",
+        "X-RateLimit-Credits-Used": "10",
+        "X-RateLimit-Reset": "67690"
+      },
+      "raw_query_or_response_persisted_in_tool_receipt": false,
+      "abstracts_or_full_text_returned": false
+    },
+    "openalex_known_doi_lookup": {
+      "tool_id": "research.lookup_openalex_work_metadata",
+      "comparison": "Requires caller-supplied DOI identifiers and returns selected Work metadata; it does not perform text query-to-record discovery."
+    }
+  },
+  "findings": [
+    "All three public query adapters completed one bounded same-high-level-task discovery observation and returned five metadata rows, but their query syntax, corpus scope, provider ordering, identifiers, ranking fields, and retrieval times differ.",
+    "OpenAlex reported 638997 matching Works for this query, Europe PMC 159566, and arXiv 4563. Provider hit counts have provider-specific definitions and are not comparable measures of recall or corpus completeness.",
+    "The observed result sets and provider identifiers differ. This one snapshot does not establish comparative relevance, recall, source quality, availability, cost, or scientific value; no scientific review was performed.",
+    "arXiv, Europe PMC, and OpenAlex have distinct source collections and identifier contracts. They can coexist when the task needs those scopes; this evidence does not support retiring any query tool.",
+    "OpenAlex search capability already existed in a general client, which returns broader data. The new candidate adds a bounded no-key, no-placeholder-email, metadata-only route; it does not establish a new provider capability.",
+    "The existing OpenAlex DOI metadata lookup has a different input and purpose. PubMed same-task comparison remains NOT_RUN because its adapter requires a caller-supplied contact_email, and none was supplied.",
+    "The OpenAlex request reported ten keyless rate-limit usage credits used. No API key, account email, or account-specific monetary charge was established."
+  ],
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "retired_tools": [],
+    "replacement_candidates": [],
+    "reason": "The measured providers have different source scopes and identifiers; no paired evidence ranks relevance or establishes that one source covers the other valuable uses. Preserve them as default-off, task-scoped options."
+  },
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-arxiv-query-search-source-binding-r0.json",
+    "ignition/data/operations/toolbox-arxiv-query-search-real-task-evidence-r1.json",
+    "ignition/tools/toolbox_arxiv_query_search.py",
+    "ignition/tests/test_toolbox_arxiv_query_search.py",
+    "ignition/tools/toolbox_europe_pmc_query_search.py",
+    "ignition/tests/test_toolbox_europe_pmc_query_search.py",
+    "ignition/tools/toolbox_arxiv_metadata_lookup.py",
+    "ignition/tests/test_toolbox_arxiv_metadata_lookup.py",
+    "ignition/data/operations/toolbox-openalex-query-search-source-binding-r1.json",
+    "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json",
+    "ignition/tools/toolbox_openalex_query_search.py",
+    "ignition/tests/test_toolbox_openalex_query_search.py",
+    "ignition/data/operations/toolbox-arxiv-query-search-c1-evidence-r0.json"
+  ]
+}
