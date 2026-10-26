@@ -1,0 +1,53 @@
+{
+  "schema_version": "execution-candidate-pareto-input-r0",
+  "evaluation_context": {
+    "evaluation_id": "synthetic-frontier-control-01",
+    "task_set_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "evaluator_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "environment_ref": "synthetic-python-3.12-linux"
+  },
+  "resource_metric": {"metric_id": "provider_input_tokens", "unit": "tokens"},
+  "baseline_candidate_id": "baseline",
+  "candidates": [
+    {
+      "candidate_id": "baseline",
+      "candidate_ref": "fixture:baseline-v1",
+      "observations": [
+        {"case_id": "case-1", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 10, "evidence_ref": "fixture:baseline:1"},
+        {"case_id": "case-2", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 12, "evidence_ref": "fixture:baseline:2"},
+        {"case_id": "case-3", "trial_id": "trial-1", "outcome": "FAIL", "resource_cost": 8, "evidence_ref": "fixture:baseline:3"},
+        {"case_id": "case-4", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 10, "evidence_ref": "fixture:baseline:4"}
+      ]
+    },
+    {
+      "candidate_id": "higher-pass-rate",
+      "candidate_ref": "fixture:variant-high-pass-v1",
+      "observations": [
+        {"case_id": "case-1", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 30, "evidence_ref": "fixture:high:1"},
+        {"case_id": "case-2", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 28, "evidence_ref": "fixture:high:2"},
+        {"case_id": "case-3", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 34, "evidence_ref": "fixture:high:3"},
+        {"case_id": "case-4", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 32, "evidence_ref": "fixture:high:4"}
+      ]
+    },
+    {
+      "candidate_id": "dominated",
+      "candidate_ref": "fixture:variant-dominated-v1",
+      "observations": [
+        {"case_id": "case-1", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 20, "evidence_ref": "fixture:dominated:1"},
+        {"case_id": "case-2", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 20, "evidence_ref": "fixture:dominated:2"},
+        {"case_id": "case-3", "trial_id": "trial-1", "outcome": "FAIL", "resource_cost": 20, "evidence_ref": "fixture:dominated:3"},
+        {"case_id": "case-4", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 20, "evidence_ref": "fixture:dominated:4"}
+      ]
+    },
+    {
+      "candidate_id": "below-quality-floor",
+      "candidate_ref": "fixture:variant-low-pass-v1",
+      "observations": [
+        {"case_id": "case-1", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 3, "evidence_ref": "fixture:low:1"},
+        {"case_id": "case-2", "trial_id": "trial-1", "outcome": "FAIL", "resource_cost": 3, "evidence_ref": "fixture:low:2"},
+        {"case_id": "case-3", "trial_id": "trial-1", "outcome": "FAIL", "resource_cost": 3, "evidence_ref": "fixture:low:3"},
+        {"case_id": "case-4", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 3, "evidence_ref": "fixture:low:4"}
+      ]
+    }
+  ]
+}

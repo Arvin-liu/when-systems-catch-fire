@@ -1,0 +1,71 @@
+{
+  "schema_version": "execution-candidate-pareto-route-evidence-r0",
+  "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+  "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile": {
+    "task_id": "paired-execution-candidate-performance-resource-analysis",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON matching execution-candidate-pareto-input-r0 with 2–20 paired candidates and one caller-declared resource metric."
+    ],
+    "required_outputs": [
+      "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "selected_permissions": null,
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "execution_authorized": false,
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_execution_pareto_frontier.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    }
+  ],
+  "claim_ceiling": "Offline planner routing only; the candidate was not invoked, no provider was contacted, and no execution permission was granted.",
+  "source_refs": {
+    "planner": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "candidate_catalog": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "route_profile": "ignition/data/operations/toolbox-execution-pareto-frontier-route-profile-r0.json"
+  },
+  "catalog_replay": {
+    "observed_at_utc": "2026-10-26T02:51:16Z",
+    "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "route_trials_replayed": 2,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "candidate_invoked": false,
+    "execution_authorized": false,
+    "replay_result_sha256": "cc50751835eaa007b05d9bfb728ff45d6d373dc809680346b46a656a9d388875"
+  }
+}

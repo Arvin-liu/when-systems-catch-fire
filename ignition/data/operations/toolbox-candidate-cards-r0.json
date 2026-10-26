@@ -7322,6 +7322,197 @@
           "Remove this optional card, implementation, schemas, fixture, focused tests, docs, route/C1/task evidence; regenerate identity cards and TOOLBOX.md; retain the prior commit and source snapshots."
         ]
       }
+    },
+    {
+      "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+      "display_name": {
+        "zh": "执行候选帕累托前沿汇总器",
+        "en": "Execution candidate Pareto frontier summarizer"
+      },
+      "description": "Summarize matched caller-supplied candidate outcomes and one shared resource metric above a baseline pass-rate floor; report observed dominated and nondominated candidates without selecting a deployment.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no execution, CI, Owner, or release authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_execution_pareto_frontier.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+          "role": "BOUNDED_OFFLINE_ANALYZER"
+        },
+        {
+          "path": "ignition/schemas/operations/execution-candidate-pareto-input-r0.schema.json",
+          "role": "INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/execution-candidate-pareto-output-r0.schema.json",
+          "role": "OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/execution-candidate-pareto-frontier.md",
+          "role": "SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-execution-pareto-frontier/matched-candidates-r0.json",
+          "role": "SYNTHETIC_MATCHED_TRADEOFF_AND_NEGATIVE_CONTROL_FIXTURE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_execution_pareto_frontier.py",
+          "role": "FOCUSED_FUNCTIONAL_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-frontier-source-binding-r0.json",
+          "role": "PINNED_WORKBENCH_AND_PAPER_SOURCE_SCOPE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
+          "role": "C1_FUNCTIONAL_SCOPE_COMPARISON_AND_UNKNOWN_DISPOSITION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-frontier-route-profile-r0.json",
+          "role": "DEFAULT_OFF_ROUTE_DEMAND_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-frontier-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "role": "STATIC_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_attribution.py",
+          "role": "STATIC_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_context_packet_variant_comparator.py",
+          "role": "STATIC_SCOPE_COMPARATOR"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Compare two to twenty caller-declared candidate implementations measured on exactly the same case/trial set, evaluator digest, environment reference, and one resource metric.",
+        "Show an empirical pass-rate floor from a named baseline and identify candidates that are below the floor, dominated, or observed on a nondominated frontier.",
+        "Preserve unknown resource measurements and exact input/tool digests rather than treating missing cost as zero."
+      ],
+      "not_for": [
+        "Authenticating test results, resource telemetry, task-set digests, evaluator identity, or candidate revisions.",
+        "Establishing statistical significance, generalization, causal improvement, billable savings, or reliability.",
+        "Selecting a deployment, editing a harness, changing a route, CI workflow, required check, permission, or release decision.",
+        "Comparing different task sets, evaluators, environments, resource metrics, or unpaired case/trial observations."
+      ],
+      "only_if": [
+        "The caller supplies at least two candidate revisions and the same complete case/trial identifiers for each candidate.",
+        "The caller declares one task-set digest, evaluator digest, environment reference, and a shared resource metric with a single unit.",
+        "The baseline candidate is named; each trial outcome is known PASS or FAIL. Missing resource cost stays null and suppresses the frontier.",
+        "The task explicitly needs an observed outcome/resource tradeoff summary and accepts caller-declared, unauthenticated measurements."
+      ],
+      "counterindicated_when": [
+        "Any candidate has a different case/trial set, evaluator digest, task-set digest, or environment from the comparison group.",
+        "Outcome or cost evidence is missing in a way that prevents the intended comparison, or resource units cannot be held constant.",
+        "The request asks for the paper’s benchmark findings, a causal cost-saving claim, or automatic candidate selection."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON matching execution-candidate-pareto-input-r0 with 2–20 paired candidates and one caller-declared resource metric."
+      ],
+      "output_types": [
+        "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_CALLER_SUPPLIED_PAIRED_EVALUATION_JSON",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_execution_pareto_frontier.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads bounded JSON from stdin and its implementation source for a digest; emits one JSON receipt to stdout and creates or modifies no files."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No representative latency, memory, dataset-size, or resource profile has been measured; this tool is offline."
+      },
+      "alternatives": [
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool groups observed GitHub Actions step intervals across runs; this tool compares paired task outcomes against a caller-declared resource metric."
+        },
+        {
+          "tool_id": "maintenance.compare_context_packet_variants",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "That tool compares packet structure and declared obligations; this tool computes empirical outcome/resource fractions and nondominance."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "For explicit candidate-comparison tasks, summarize paired pass outcomes and one same-unit measured resource metric with a baseline quality floor."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "Static functional-contract comparison with three existing offline analyzers; no matched real task has supplied paired outcome/resource measurements to both the new tool and any comparator.",
+        "compared_tool_ids": [
+          "maintenance.compare_actions_repeated_step_sequences",
+          "maintenance.attribute_actions_validation_evidence",
+          "maintenance.compare_context_packet_variants"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "ignition/tools/toolbox_actions_validation_attribution.py",
+          "ignition/tools/toolbox_context_packet_variant_comparator.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
+          "ignition/docs/operations/execution-candidate-pareto-frontier.md"
+        ],
+        "findings": [
+          "Existing comparators expose different inputs and outputs; a same-task quality/cost comparison remains unrun, so broad non-replacement is unknown.",
+          "No incumbent tool is retired; retain all candidates as separate default-off options until comparable task evidence exists."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "No matched real task comparison establishes replacement, comprehensive coverage, or relative maintenance value."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation, CI analyzer, router rule, Foundation gate, or required check is migrated. Invoke only for an explicitly opted-in paired candidate comparison."
+        ],
+        "rollback_steps": [
+          "Remove this experimental card, implementation, schemas, fixture, tests, docs, route/source/C1 evidence; regenerate the identity projection and TOOLBOX.md; retain the prior branch commit and evidence."
+        ]
+      },
+      "fallback": "If input contexts or paired keys do not match, report the exact rejection. If any resource measurement is missing, return no frontier and request the missing source measurement; do not infer cost or choose a candidate.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_execution_pareto_frontier.py",
+          "ignition/tests/test_toolbox_execution_pareto_frontier_routing.py"
+        ],
+        "negative_controls": [
+          "Reject duplicate JSON keys, duplicate candidate IDs, bool costs, unknown outcomes, unpaired case/trial sets, and oversized input.",
+          "Preserve null resource costs and suppress the frontier instead of imputing zero.",
+          "A profile below baseline pass rate cannot enter the frontier even when cheaper.",
+          "Execution authorization and all non-claim flags remain false."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only when the task explicitly compares candidate execution outcomes on the same case/trial set, evaluator, environment, and one resource metric.",
+        "The candidate remains default-off and requires explicit experimental allowlisting; route planning does not authorize execution."
+      ],
+      "claim_ceiling": "Caller-declared paired empirical pass counts and arithmetic mean of one declared resource metric over the supplied rows only. No source authentication, inferential significance, generalization, causality, savings, deployment choice, route authority, or scientific validity is established."
     }
   ]
 }

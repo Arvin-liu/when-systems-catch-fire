@@ -4,7 +4,7 @@
     "research.audit_pubmed_updates_from_doi",
     "research.inspect_pubmed_update_links"
   ],
-  "candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+  "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
   "current_operation_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "task_profiles": {
     "doi_composition": {
@@ -1968,15 +1968,16 @@
     ]
   },
   "catalog_replay": {
-    "observed_at_utc": "2026-10-26T02:33:10Z",
-    "previous_candidate_catalog_git_blob_sha1": "d4064d06e3646902f1dc47f2258734fd38d179f9",
-    "candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+    "observed_at_utc": "2026-10-26T02:51:05Z",
+    "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+    "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "route_trials_replayed": 6,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
-    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
-    "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d"
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+    "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd"
   },
   "catalog_replay_history": [
     {
@@ -2077,6 +2078,18 @@
       "execution_authorized": false,
       "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario, decision, selected_tool_ids, and execution_authorized projections.",
       "replay_result_sha256": "5e133b8da421f692e4681f74ccf353a1e1c36bcc6c9f426e65d4eec68c662e7d"
+    },
+    {
+      "observed_at_utc": "2026-10-26T02:51:05Z",
+      "previous_candidate_catalog_git_blob_sha1": "bdf0a76894e47901cb84d687085e98fdc3846a08",
+      "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "route_trials_replayed": 6,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "1351b6aaf28c1c47a005352b667bc4494659f85b3f7e49a69d6a719c81f33acd"
     }
   ],
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
