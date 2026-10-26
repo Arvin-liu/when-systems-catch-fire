@@ -1,0 +1,37 @@
+{
+  "schema_version": "toolbox-noaa-ch4-source-surface-source-binding-r0",
+  "tool_id": "research.compare_noaa_ch4_source_surfaces",
+  "tool_version": "0.1.0",
+  "owner_instructions": [
+    {
+      "repository": "Arvin-liu/1111",
+      "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+      "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+      "role": "TOOL_ADMISSION_IDENTITY_ROUTING_AND_VALIDATION_AUTHORITY"
+    },
+    {
+      "repository": "Arvin-liu/1111",
+      "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+      "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+      "role": "C1_REPLACEMENT_COEXISTENCE_AND_UNCERTAINTY_RULE"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://gml.noaa.gov/ccgg/trends_ch4/",
+      "role": "RENDERED_GLOBAL_ANNUAL_METHANE_GROWTH_TABLE"
+    },
+    {
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4_gr_gl.txt",
+      "role": "FIXED_RAW_GLOBAL_ANNUAL_METHANE_GROWTH_TABLE"
+    }
+  ],
+  "fixed_network_scope": {
+    "host": "gml.noaa.gov",
+    "method": "GET",
+    "request_count": 2,
+    "redirects_followed": false,
+    "caller_controlled_urls": false
+  },
+  "claim_boundary": "Compare literal selected values and uncertainties as served by two NOAA GML surfaces at retrieval time. This record does not authenticate the provider, determine which surface is authoritative, validate measurements, establish emissions, attribute sources, or establish a scientific conclusion."
+}

@@ -3,414 +3,66 @@
 
 from __future__ import annotations
 
-import argparse
-from datetime import datetime, timezone
-from decimal import Decimal, InvalidOperation
-from html.parser import HTMLParser
-import hashlib
-import json
-import re
 import sys
 import time
-import urllib.error
-import urllib.parse
-import urllib.request
+import urllib
 from typing import Any
 
-
-TOOL_ID = "research.compare_noaa_co2_source_surfaces"
-TOOL_VERSION = "0.1.0"
-INPUT_SCHEMA_VERSION = "toolbox-noaa-co2-source-surface-comparison-input-r0"
-OUTPUT_SCHEMA_VERSION = "toolbox-noaa-co2-source-surface-comparison-output-r0"
-PAGE_URL = "https://gml.noaa.gov/ccgg/trends/gl_gr.html"
-PAGE_PATH = "/ccgg/trends/gl_gr.html"
-RAW_URL = "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_gr_gl.txt"
-RAW_PATH = "/webdata/ccgg/trends/co2/co2_gr_gl.txt"
-SOURCE_HOST = "gml.noaa.gov"
-SOURCE_DEFINITION_MARKER = (
-    "annual co2 mole fraction increase (ppm) from jan 1 through dec 31."
-)
-PAGE_HEADING_MARKER = "annual mean global carbon dioxide growth rates"
-MAX_INPUT_BYTES = 4096
-MAX_RESPONSE_BYTES = 256 * 1024
-MAX_RESPONSE_DURATION_SECONDS = 7
-REQUEST_TIMEOUT_SECONDS = 5
-RESPONSE_CHUNK_BYTES = 4096
-MIN_YEAR = 1959
-MAX_YEAR = 2100
-MAX_RANGE_YEARS = 50
-DECIMAL_RE = re.compile(r"^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$")
-ROW_RE = re.compile(
-    r"\s*(\d{4})\s+([+-]?(?:\d+(?:\.\d*)?|\.\d+))"
-    r"\s+([+-]?(?:\d+(?:\.\d*)?|\.\d+))\s*\Z"
-)
-CLAIM_CEILING = (
-    "Exact selected values and stated uncertainties from two NOAA GML CO2 source "
-    "surfaces at retrieval time, plus their arithmetic differences. This result "
-    "does not authenticate the source, rank the surfaces, establish why a "
-    "difference exists, validate the measurements, estimate emissions, attribute "
-    "sources, explain causes, or establish a scientific conclusion."
-)
-NON_CLAIMS = [
-    "A response digest binds the received bytes but does not independently authenticate NOAA.",
-    "The comparison reports literal numeric differences and does not judge rounding, statistical significance, or which surface is correct.",
-    "The raw response bodies are not retained; the result is not a reproducible archive or independent scientific validation.",
-    "Annual atmospheric growth values are not an emissions inventory, source attribution, or causal explanation.",
-]
+import toolbox_noaa_source_surface_comparison_core as _core
 
 
-class ToolInputError(ValueError):
-    """Raised when the bounded year-range request is malformed."""
-
-
-def _unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
-    result: dict[str, Any] = {}
-    for key, value in pairs:
-        if key in result:
-            raise ToolInputError("duplicate JSON object key")
-        result[key] = value
-    return result
+PROFILE = _core.CO2_PROFILE
+TOOL_ID = PROFILE.tool_id
+TOOL_VERSION = PROFILE.tool_version
+INPUT_SCHEMA_VERSION = PROFILE.input_schema_version
+OUTPUT_SCHEMA_VERSION = PROFILE.output_schema_version
+PAGE_URL = PROFILE.page_url
+PAGE_PATH = PROFILE.page_path
+RAW_URL = PROFILE.raw_url
+RAW_PATH = PROFILE.raw_path
+SOURCE_HOST = PROFILE.source_host
+SOURCE_DEFINITION_MARKER = PROFILE.source_definition_marker
+PAGE_HEADING_MARKER = PROFILE.page_heading_marker
+MAX_INPUT_BYTES = _core.MAX_INPUT_BYTES
+MAX_RESPONSE_BYTES = _core.MAX_RESPONSE_BYTES
+MAX_RESPONSE_DURATION_SECONDS = _core.MAX_RESPONSE_DURATION_SECONDS
+REQUEST_TIMEOUT_SECONDS = _core.REQUEST_TIMEOUT_SECONDS
+RESPONSE_CHUNK_BYTES = _core.RESPONSE_CHUNK_BYTES
+MIN_YEAR = PROFILE.min_year
+MAX_YEAR = PROFILE.max_year
+MAX_RANGE_YEARS = _core.MAX_RANGE_YEARS
+DECIMAL_RE = _core.DECIMAL_RE
+ROW_RE = _core.ROW_RE
+CLAIM_CEILING = PROFILE.claim_ceiling
+NON_CLAIMS = _core.NON_CLAIMS
+ToolInputError = _core.ToolInputError
+_NoRedirectHandler = _core._NoRedirectHandler
+_AnnualGrowthHtmlParser = _core._AnnualGrowthHtmlParser
+_bounded_header = _core._bounded_header
+_read_bounded = _core._read_bounded
+_decimal = _core._decimal
+_selected_status = _core._selected_status
+_source_receipt = _core._source_receipt
 
 
 def parse_request(raw: bytes) -> dict[str, int]:
-    if len(raw) > MAX_INPUT_BYTES:
-        raise ToolInputError(f"request exceeds {MAX_INPUT_BYTES} bytes")
-    try:
-        document = json.loads(
-            raw.decode("utf-8", errors="strict"),
-            object_pairs_hook=_unique_object,
-            parse_constant=lambda _: (_ for _ in ()).throw(
-                ToolInputError("non-standard JSON number is not allowed")
-            ),
-        )
-    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
-        raise ToolInputError("request must be valid UTF-8 JSON with unique keys") from exc
-    if not isinstance(document, dict) or set(document) != {
-        "schema_version", "start_year", "end_year"
-    }:
-        raise ToolInputError("request must contain exactly schema_version, start_year, and end_year")
-    if document["schema_version"] != INPUT_SCHEMA_VERSION:
-        raise ToolInputError("unsupported schema_version")
-    start, end = document["start_year"], document["end_year"]
-    if type(start) is not int or type(end) is not int:
-        raise ToolInputError("start_year and end_year must be JSON integers")
-    if not MIN_YEAR <= start <= end <= MAX_YEAR:
-        raise ToolInputError(
-            f"year range must satisfy {MIN_YEAR} <= start_year <= end_year <= {MAX_YEAR}"
-        )
-    if end - start + 1 > MAX_RANGE_YEARS:
-        raise ToolInputError(f"requested range may contain no more than {MAX_RANGE_YEARS} years")
-    return {"start_year": start, "end_year": end}
-
-
-class _NoRedirectHandler(urllib.request.HTTPRedirectHandler):
-    """Do not follow redirects away from the two fixed NOAA endpoints."""
-
-    def redirect_request(self, req, fp, code, msg, headers, newurl):  # type: ignore[override]
-        return None
+    return _core.parse_request(raw, PROFILE)
 
 
 def _validate_fixed_url(url: str, expected_path: str) -> None:
-    parsed = urllib.parse.urlsplit(url)
-    if (
-        parsed.scheme != "https"
-        or parsed.hostname != SOURCE_HOST
-        or parsed.port is not None
-        or parsed.username
-        or parsed.password
-        or parsed.path != expected_path
-        or parsed.query
-        or parsed.fragment
-    ):
-        raise RuntimeError("NOAA source URL is not the declared fixed HTTPS endpoint")
-
-
-def _bounded_header(response: Any, name: str) -> str | None:
-    value = response.headers.get(name)
-    if not isinstance(value, str):
-        return None
-    value = value.strip()
-    if len(value) > 256 or "\r" in value or "\n" in value:
-        return None
-    return value or None
-
-
-def _read_bounded(response: Any) -> tuple[bytes | None, str | None]:
-    deadline = time.monotonic() + MAX_RESPONSE_DURATION_SECONDS
-    chunks: list[bytes] = []
-    total = 0
-    while total <= MAX_RESPONSE_BYTES:
-        if time.monotonic() >= deadline:
-            return None, "RESPONSE_TIMEOUT"
-        chunk = response.read(min(RESPONSE_CHUNK_BYTES, MAX_RESPONSE_BYTES + 1 - total))
-        if time.monotonic() > deadline:
-            return None, "RESPONSE_TIMEOUT"
-        if not chunk:
-            break
-        chunks.append(chunk)
-        total += len(chunk)
-    if total > MAX_RESPONSE_BYTES:
-        return None, "RESPONSE_TOO_LARGE"
-    return b"".join(chunks), None
+    _core._validate_fixed_url(url, expected_path, PROFILE)
 
 
 def _fetch(url: str, expected_path: str, expected_content_type: str) -> dict[str, Any]:
-    _validate_fixed_url(url, expected_path)
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": f"IgnitionToolboxNoaaCo2SurfaceComparator/{TOOL_VERSION}",
-            "Accept": expected_content_type,
-        },
-    )
-    opener = urllib.request.build_opener(_NoRedirectHandler())
-    retrieved_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-    try:
-        with opener.open(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
-            status = int(response.status)
-            if status != 200:
-                return {
-                    "acquisition_status": "HTTP_ERROR",
-                    "http_status": status,
-                    "body": None,
-                    "retrieved_at_utc": retrieved_at,
-                }
-            content_type = response.headers.get("Content-Type", "").split(";", 1)[0].strip().casefold()
-            if content_type != expected_content_type:
-                return {
-                    "acquisition_status": "NON_TEXT_RESPONSE",
-                    "http_status": status,
-                    "body": None,
-                    "retrieved_at_utc": retrieved_at,
-                }
-            body, error = _read_bounded(response)
-            if error:
-                return {
-                    "acquisition_status": error,
-                    "http_status": status,
-                    "body": None,
-                    "retrieved_at_utc": retrieved_at,
-                }
-            return {
-                "acquisition_status": "OK",
-                "http_status": status,
-                "body": body,
-                "etag": _bounded_header(response, "ETag"),
-                "last_modified": _bounded_header(response, "Last-Modified"),
-                "retrieved_at_utc": retrieved_at,
-            }
-    except urllib.error.HTTPError as exc:
-        status = int(exc.code)
-        if 300 <= status < 400:
-            outcome = "REDIRECT_BLOCKED"
-        elif status == 429:
-            outcome = "RATE_LIMITED"
-        else:
-            outcome = "HTTP_ERROR"
-        return {
-            "acquisition_status": outcome,
-            "http_status": status,
-            "body": None,
-            "retrieved_at_utc": retrieved_at,
-        }
-    except (urllib.error.URLError, TimeoutError, OSError):
-        return {
-            "acquisition_status": "NETWORK_ERROR",
-            "http_status": None,
-            "body": None,
-            "retrieved_at_utc": retrieved_at,
-        }
-
-
-class _AnnualGrowthHtmlParser(HTMLParser):
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.tables: list[list[list[str]]] = []
-        self.text_parts: list[str] = []
-        self._in_table = False
-        self._table: list[list[str]] | None = None
-        self._row: list[str] | None = None
-        self._cell_parts: list[str] | None = None
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag == "table" and not self._in_table:
-            self._in_table = True
-            self._table = []
-        elif self._in_table and tag == "tr":
-            self._row = []
-        elif self._in_table and self._row is not None and tag in {"td", "th"}:
-            self._cell_parts = []
-
-    def handle_data(self, data: str) -> None:
-        self.text_parts.append(data)
-        if self._cell_parts is not None:
-            self._cell_parts.append(data)
-
-    def handle_endtag(self, tag: str) -> None:
-        if self._in_table and tag in {"td", "th"} and self._cell_parts is not None:
-            assert self._row is not None
-            self._row.append(" ".join(" ".join(self._cell_parts).split()))
-            self._cell_parts = None
-        elif self._in_table and tag == "tr" and self._row is not None:
-            assert self._table is not None
-            self._table.append(self._row)
-            self._row = None
-        elif tag == "table" and self._in_table:
-            assert self._table is not None
-            self.tables.append(self._table)
-            self._table = None
-            self._in_table = False
-
-
-def _decimal(value: str, where: str) -> Decimal:
-    if not DECIMAL_RE.fullmatch(value):
-        raise ValueError(where)
-    try:
-        result = Decimal(value)
-    except InvalidOperation as exc:
-        raise ValueError(where) from exc
-    if not result.is_finite():
-        raise ValueError(where)
-    return result
-
-
-def _selected_status(records: list[dict[str, Any]], start: int, end: int) -> str:
-    if not records:
-        return "NO_MATCH"
-    if len(records) == end - start + 1:
-        return "FOUND"
-    return "PARTIAL_DATA"
+    return _core._fetch(url, expected_path, expected_content_type, PROFILE)
 
 
 def _parse_page(body: bytes, start_year: int, end_year: int) -> dict[str, Any]:
-    try:
-        decoded = body.decode("utf-8", errors="strict")
-    except UnicodeDecodeError:
-        return {"status": "INVALID_TEXT_RESPONSE", "records": []}
-    parser = _AnnualGrowthHtmlParser()
-    try:
-        parser.feed(decoded)
-        parser.close()
-    except Exception:
-        return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-
-    text = " ".join(" ".join(parser.text_parts).split()).casefold()
-    if PAGE_HEADING_MARKER not in text:
-        return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-    expected_header = ["year", "growth (ppm)", "uncertainty (ppm)"]
-    candidates = [
-        table for table in parser.tables
-        if any([cell.casefold() for cell in row] == expected_header for row in table)
-    ]
-    if len(candidates) != 1:
-        return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-
-    table = candidates[0]
-    header_index = next(
-        index for index, row in enumerate(table)
-        if [cell.casefold() for cell in row] == expected_header
-    )
-    all_records: list[dict[str, Any]] = []
-    previous_year: int | None = None
-    seen_years: set[int] = set()
-    for row in table[header_index + 1:]:
-        if not row or all(not cell for cell in row):
-            continue
-        if len(row) != 3 or not re.fullmatch(r"\d{4}", row[0]):
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        year = int(row[0])
-        if not MIN_YEAR <= year <= MAX_YEAR or year in seen_years or (
-            previous_year is not None and year <= previous_year
-        ):
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        try:
-            growth = _decimal(row[1], "annual growth")
-            uncertainty = _decimal(row[2], "uncertainty")
-        except ValueError:
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        if uncertainty < 0:
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        all_records.append({
-            "year": year,
-            "annual_increase_ppm": format(growth, "f"),
-            "uncertainty_ppm": format(uncertainty, "f"),
-        })
-        seen_years.add(year)
-        previous_year = year
-    records = [
-        row for row in all_records
-        if start_year <= row["year"] <= end_year
-    ]
-    return {"status": _selected_status(records, start_year, end_year), "records": records}
+    return _core._parse_page(body, start_year, end_year, PROFILE)
 
 
 def _parse_raw_table(body: bytes, start_year: int, end_year: int) -> dict[str, Any]:
-    try:
-        decoded = body.decode("utf-8", errors="strict")
-    except UnicodeDecodeError:
-        return {"status": "INVALID_TEXT_RESPONSE", "records": []}
-    lines = decoded.splitlines()
-    if not any(
-        SOURCE_DEFINITION_MARKER in line.casefold()
-        for line in lines if line.lstrip().startswith("#")
-    ):
-        return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-    if not any(
-        re.match(r"^\s*#\s*year\s+ann\s+inc\s+unc\s*$", line, re.IGNORECASE)
-        for line in lines
-    ):
-        return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-    all_records: list[dict[str, Any]] = []
-    previous_year: int | None = None
-    seen_years: set[int] = set()
-    for line in lines:
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
-            continue
-        match = ROW_RE.fullmatch(line)
-        if not match:
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        year = int(match.group(1))
-        if not MIN_YEAR <= year <= MAX_YEAR or year in seen_years or (
-            previous_year is not None and year <= previous_year
-        ):
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        try:
-            growth = _decimal(match.group(2), "annual growth")
-            uncertainty = _decimal(match.group(3), "uncertainty")
-        except ValueError:
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        if uncertainty < 0:
-            return {"status": "INVALID_PROVIDER_RESPONSE", "records": []}
-        all_records.append({
-            "year": year,
-            "annual_increase_ppm": format(growth, "f"),
-            "uncertainty_ppm": format(uncertainty, "f"),
-        })
-        seen_years.add(year)
-        previous_year = year
-    records = [
-        row for row in all_records
-        if start_year <= row["year"] <= end_year
-    ]
-    return {"status": _selected_status(records, start_year, end_year), "records": records}
-
-
-def _source_receipt(url: str, capture: dict[str, Any], parsed: dict[str, Any]) -> dict[str, Any]:
-    body = capture.get("body")
-    return {
-        "url": url,
-        "acquisition_status": capture.get("acquisition_status", "UNKNOWN"),
-        "parse_status": parsed.get("status", "NOT_RUN"),
-        "http_status": capture.get("http_status"),
-        "etag": capture.get("etag"),
-        "last_modified": capture.get("last_modified"),
-        "retrieved_at_utc": capture.get("retrieved_at_utc"),
-        "response_bytes": len(body) if isinstance(body, bytes) else None,
-        "response_sha256": hashlib.sha256(body).hexdigest() if isinstance(body, bytes) else None,
-        "records": parsed.get("records", []),
-        "raw_response_retained": False,
-    }
+    return _core._parse_raw_table(body, start_year, end_year, PROFILE)
 
 
 def _compare(
@@ -419,144 +71,15 @@ def _compare(
     start_year: int,
     end_year: int,
 ) -> dict[str, Any]:
-    page_by_year = {row["year"]: row for row in page_records}
-    raw_by_year = {row["year"]: row for row in raw_records}
-    rows: list[dict[str, Any]] = []
-    for year in range(start_year, end_year + 1):
-        page = page_by_year.get(year)
-        raw = raw_by_year.get(year)
-        if page is None and raw is None:
-            rows.append({"year": year, "status": "MISSING_FROM_BOTH"})
-            continue
-        if page is None:
-            rows.append({
-                "year": year,
-                "status": "MISSING_FROM_PAGE",
-                "raw_table": raw,
-            })
-            continue
-        if raw is None:
-            rows.append({
-                "year": year,
-                "status": "MISSING_FROM_RAW_TABLE",
-                "page": page,
-            })
-            continue
-        page_growth = Decimal(page["annual_increase_ppm"])
-        raw_growth = Decimal(raw["annual_increase_ppm"])
-        page_uncertainty = Decimal(page["uncertainty_ppm"])
-        raw_uncertainty = Decimal(raw["uncertainty_ppm"])
-        growth_difference = page_growth - raw_growth
-        uncertainty_difference = page_uncertainty - raw_uncertainty
-        equal = growth_difference == 0 and uncertainty_difference == 0
-        rows.append({
-            "year": year,
-            "status": "EXACT_MATCH" if equal else "NUMERIC_DIFFERENCE",
-            "page_annual_increase_ppm": page["annual_increase_ppm"],
-            "raw_table_annual_increase_ppm": raw["annual_increase_ppm"],
-            "page_minus_raw_annual_increase_ppm": format(growth_difference, "f"),
-            "page_uncertainty_ppm": page["uncertainty_ppm"],
-            "raw_table_uncertainty_ppm": raw["uncertainty_ppm"],
-            "page_minus_raw_uncertainty_ppm": format(uncertainty_difference, "f"),
-        })
-    if any(row["status"] == "NUMERIC_DIFFERENCE" for row in rows):
-        status = "DIFFERENT"
-    elif any(row["status"] != "EXACT_MATCH" for row in rows):
-        status = "PARTIAL"
-    else:
-        status = "EXACT_MATCH"
-    return {
-        "status": status,
-        "requested_year_count": end_year - start_year + 1,
-        "exact_match_count": sum(row["status"] == "EXACT_MATCH" for row in rows),
-        "numeric_difference_count": sum(row["status"] == "NUMERIC_DIFFERENCE" for row in rows),
-        "missing_year_count": sum(row["status"].startswith("MISSING_") for row in rows),
-        "rows": rows,
-    }
+    return _core._compare(page_records, raw_records, start_year, end_year, PROFILE)
 
 
 def lookup(raw: bytes) -> dict[str, Any]:
-    request = parse_request(raw)
-    page_capture = _fetch(PAGE_URL, PAGE_PATH, "text/html")
-    raw_capture = _fetch(RAW_URL, RAW_PATH, "text/plain")
-    page_parsed = (
-        _parse_page(page_capture["body"], request["start_year"], request["end_year"])
-        if page_capture.get("acquisition_status") == "OK"
-        else {"status": "NOT_RUN", "records": []}
-    )
-    raw_parsed = (
-        _parse_raw_table(raw_capture["body"], request["start_year"], request["end_year"])
-        if raw_capture.get("acquisition_status") == "OK"
-        else {"status": "NOT_RUN", "records": []}
-    )
-    page_receipt = _source_receipt(PAGE_URL, page_capture, page_parsed)
-    raw_receipt = _source_receipt(RAW_URL, raw_capture, raw_parsed)
-    if page_parsed["status"] in {"FOUND", "PARTIAL_DATA", "NO_MATCH"} and raw_parsed["status"] in {
-        "FOUND", "PARTIAL_DATA", "NO_MATCH"
-    }:
-        comparison = _compare(
-            page_parsed["records"], raw_parsed["records"],
-            request["start_year"], request["end_year"],
-        )
-    else:
-        comparison = {
-            "status": "NOT_COMPARED",
-            "requested_year_count": request["end_year"] - request["start_year"] + 1,
-            "exact_match_count": 0,
-            "numeric_difference_count": 0,
-            "missing_year_count": 0,
-            "rows": [],
-        }
-    source_ok = (
-        page_capture.get("acquisition_status") == "OK"
-        and raw_capture.get("acquisition_status") == "OK"
-        and page_parsed["status"] in {"FOUND", "PARTIAL_DATA", "NO_MATCH"}
-        and raw_parsed["status"] in {"FOUND", "PARTIAL_DATA", "NO_MATCH"}
-    )
-    overall_status = (
-        "COMPARED" if source_ok and comparison["status"] in {"EXACT_MATCH", "DIFFERENT", "PARTIAL"}
-        else "SOURCE_UNAVAILABLE"
-    )
-    return {
-        "schema_version": OUTPUT_SCHEMA_VERSION,
-        "tool_id": TOOL_ID,
-        "tool_version": TOOL_VERSION,
-        "status": overall_status,
-        "requested_range": request,
-        "sources": {
-            "provider_page": page_receipt,
-            "fixed_raw_table": raw_receipt,
-        },
-        "comparison": comparison,
-        "claim_ceiling": CLAIM_CEILING,
-        "non_claims": NON_CLAIMS,
-    }
+    return _core.lookup(raw, PROFILE)
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--stdin", action="store_true", required=True)
-    parser.add_argument("--allow-public-network", action="store_true")
-    args = parser.parse_args(argv)
-    if not args.allow_public_network:
-        print("NETWORK_CALL_REQUIRES_ALLOW_PUBLIC_NETWORK", file=sys.stderr)
-        return 2
-    raw = sys.stdin.buffer.read(MAX_INPUT_BYTES + 1)
-    try:
-        result = lookup(raw)
-    except ToolInputError as exc:
-        print("INPUT_ERROR: " + str(exc), file=sys.stderr)
-        return 2
-    result["invocation"] = {
-        "allow_public_network_flag": True,
-        "requests_made": 2,
-    }
-    output = json.dumps(result, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)
-    if len(output.encode("utf-8")) > MAX_RESPONSE_BYTES:
-        print("OUTPUT_TOO_LARGE", file=sys.stderr)
-        return 2
-    print(output)
-    return 0
+    return _core.main(argv, PROFILE)
 
 
 if __name__ == "__main__":

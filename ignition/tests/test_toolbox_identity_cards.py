@@ -369,12 +369,13 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         openalex = next(card for card in candidates if card["tool_id"] == "research.lookup_openalex_work_metadata")
         noaa = next(card for card in candidates if card["tool_id"] == "research.lookup_noaa_global_ch4_annual_growth")
         noaa_co2 = next(card for card in candidates if card["tool_id"] == "research.lookup_noaa_global_co2_annual_growth")
+        noaa_ch4_comparator = next(card for card in candidates if card["tool_id"] == "research.compare_noaa_ch4_source_surfaces")
         updates = next(card for card in candidates if card["tool_id"] == "research.inspect_pubmed_update_links")
         pubmed_composition = next(card for card in candidates if card["tool_id"] == "research.audit_pubmed_updates_from_doi")
         editorial = next(card for card in candidates if card["tool_id"] == "writing.preflight_cognitive_migration_revision")
         europe_pmc = next(card for card in candidates if card["tool_id"] == "research.search_europe_pmc_query")
         europe_pmc_fulltext = next(card for card in candidates if card["tool_id"] == "research.resolve_europe_pmc_fulltext_locations")
-        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], crossref_search["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], "research.search_openalex_query", updates["tool_id"], pubmed_composition["tool_id"], "research.match_pubmed_citation", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "research.compare_noaa_co2_source_surfaces", europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"]})
+        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], crossref_search["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], "research.search_openalex_query", updates["tool_id"], pubmed_composition["tool_id"], "research.match_pubmed_citation", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "research.compare_noaa_co2_source_surfaces", noaa_ch4_comparator["tool_id"], europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"]})
         self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertEqual(crossref_search["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertFalse(crossref_search["router_selectable_by_default"])
@@ -387,6 +388,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertIn("article content", crossref_search["claim_ceiling"])
         self.assertEqual(pubmed["permissions"]["network_hosts"], ["pmc.ncbi.nlm.nih.gov"])
         self.assertEqual(openalex["permissions"]["network_hosts"], ["api.openalex.org"])
+        self.assertEqual(noaa_ch4_comparator["permissions"]["network_hosts"], ["gml.noaa.gov"])
+        self.assertFalse(noaa_ch4_comparator["router_selectable_by_default"])
+        self.assertEqual(noaa_ch4_comparator["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
         self.assertEqual(updates["permissions"]["network_hosts"], ["eutils.ncbi.nlm.nih.gov"])
         citation_matcher = next(card for card in candidates if card["tool_id"] == "research.match_pubmed_citation")
         self.assertEqual(citation_matcher["permissions"]["network_hosts"], ["eutils.ncbi.nlm.nih.gov"])
@@ -604,6 +608,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             openalex["tool_id"],
             noaa["tool_id"],
             noaa_co2["tool_id"],
+            noaa_ch4_comparator["tool_id"],
             "research.compare_noaa_co2_source_surfaces",
             batch["tool_id"],
             "collaboration.verify_handoff_artifact_files",
@@ -630,7 +635,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
-        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "research.compare_noaa_co2_source_surfaces", "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability", "maintenance.compare_toolbox_component_coverage"} for card in candidates))
+        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], noaa_ch4_comparator["tool_id"], "research.compare_noaa_co2_source_surfaces", "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability", "maintenance.compare_toolbox_component_coverage"} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         structural_analogy = next(card for card in candidates if card["tool_id"] == "reasoning.search_structural_analogies")

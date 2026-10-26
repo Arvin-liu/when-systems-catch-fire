@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-evidence-update-snapshot-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T10:26:08Z",
+  "observed_at_utc": "2026-10-26T17:44:00Z",
   "candidate_tool_id": "research.compare_evidence_update_snapshots",
-  "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+  "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
@@ -65,13 +65,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 77,
-        "omitted_rejected_candidate_count": 76,
+        "rejected_candidate_count": 78,
+        "omitted_rejected_candidate_count": 77,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "83a55b8d15e6ec979f161feea086bf0844467d703fd882793b7a60d39f7602b8"
+      "planner_output_sha256": "340306b4882ccad33afb861c2714abe758c80a94ac7f186650e4b2beade26658"
     },
     {
       "scenario": "EXPLICIT_SINGLE_TOOL_ALLOWLIST",
@@ -133,13 +133,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 76,
-        "omitted_rejected_candidate_count": 75,
+        "rejected_candidate_count": 77,
+        "omitted_rejected_candidate_count": 76,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "d75489b81f896b7f6e6a4f91920d5df0084f8e62a3235122fbfd2e2be16a7669"
+      "planner_output_sha256": "7bd8d30e81ee55b98ca1e7d027db355783aa9c93f6099b128d0c08b4aab137bc"
     },
     {
       "scenario": "UNRELATED_AUDIT_TOOL_REJECTED",
@@ -202,13 +202,13 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           }
         ],
-        "rejected_candidate_count": 76,
-        "omitted_rejected_candidate_count": 75,
+        "rejected_candidate_count": 77,
+        "omitted_rejected_candidate_count": 76,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "ac8983e47a73120e3b2b09799675645c884094d1522a96963a3758a6cc4d93b7"
+      "planner_output_sha256": "3dd1579c851570d92dfb0e94eba305e29e330b745233094562ba8acf62b6780c"
     }
   ],
   "summary": {
@@ -226,9 +226,9 @@
   "provider_calls_made": 0,
   "claim_ceiling": "Offline route planning only. The candidate was not invoked, no provider was called, and no permission, Owner approval, scientific validity, or Current promotion is established.",
   "catalog_replay": {
-    "replayed_at_utc": "2026-10-26T16:53:08Z",
-    "previous_candidate_catalog_git_blob_sha1": "b1b1172033047bd3d9b2c8ca1f16f4e670dc2d6f",
-    "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "replayed_at_utc": "2026-10-26T17:44:00Z",
+    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,

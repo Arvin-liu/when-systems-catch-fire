@@ -1,0 +1,203 @@
+{
+  "schema_version": "toolbox-noaa-ch4-source-surface-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
+  "observed_at_utc": "2026-10-26T17:33:47Z",
+  "candidate_tool_id": "research.compare_noaa_ch4_source_surfaces",
+  "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_profile_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-route-profile-r0.json",
+  "route_profile_sha256": "74d3e913a963c12f70874d3f0ac08fe077a4450edcc720d82ab40b680b750848",
+  "route_trials_replayed": 3,
+  "all_expected_decisions_reproduced": true,
+  "route_trials": [
+    {
+      "scenario": "DEFAULT_OFF",
+      "task_profile": {
+        "task_id": "noaa-gml-ch4-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-ch4-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1984–2100 inclusive; no more than 50 inclusive years); arbitrary URL fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "noaa-gml-ch4-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "required_outputs": [
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits.",
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status."
+        ],
+        "relevant_rejections": [
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          }
+        ],
+        "rejected_candidate_count": 78,
+        "omitted_rejected_candidate_count": 77,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "91a6c3a35c898d13ae0ec7460aaeeb73e851b69d7e6d2ebf737774747db51ef9"
+    },
+    {
+      "scenario": "EXPLICIT_EXACT_HOST",
+      "task_profile": {
+        "task_id": "noaa-gml-ch4-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-ch4-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1984–2100 inclusive; no more than 50 inclusive years); arbitrary URL fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_ch4_source_surfaces"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_ch4_source_surfaces"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "noaa-gml-ch4-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.compare_noaa_ch4_source_surfaces"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "required_outputs": [
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "covered_outputs": [
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits.",
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status."
+        ],
+        "unmet_outputs": [],
+        "relevant_rejections": [],
+        "rejected_candidate_count": 77,
+        "omitted_rejected_candidate_count": 77,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "05e0bd33798aa46af10bddbbed614206622197d9fd9328a341060f30545aa154"
+    },
+    {
+      "scenario": "EXPLICIT_MISSING_HOST",
+      "task_profile": {
+        "task_id": "noaa-gml-ch4-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-ch4-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1984–2100 inclusive; no more than 50 inclusive years); arbitrary URL fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_ch4_source_surfaces"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "noaa-gml-ch4-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "required_outputs": [
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits.",
+          "For each requested year, provider-reported annual CH4 growth and uncertainty in ppb from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status."
+        ],
+        "relevant_rejections": [
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          }
+        ],
+        "rejected_candidate_count": 78,
+        "omitted_rejected_candidate_count": 77,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "43eaef4847819342a522363538c098cbd5c1101be5b5fd4cbbe29853ebfad6f4"
+    }
+  ],
+  "summary": {
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "network_calls_made": 0
+  }
+}

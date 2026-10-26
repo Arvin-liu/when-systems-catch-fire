@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-noaa-co2-source-surface-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T16:53:08Z",
+  "observed_at_utc": "2026-10-26T17:33:47Z",
   "candidate_tool_id": "research.compare_noaa_co2_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+  "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-co2-source-surface-route-profile-r0.json",
@@ -66,13 +66,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 77,
-        "omitted_rejected_candidate_count": 76,
+        "rejected_candidate_count": 78,
+        "omitted_rejected_candidate_count": 77,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "bc12a2d0cf7e15ceea8139551bd609f66c2273d86e8531754a167f7321e82bb6"
+      "planner_output_sha256": "e8af44242885d79eaad3321fcd751b0513cdb71029416c1ee8257742204e6ff5"
     },
     {
       "scenario": "EXPLICIT_EXACT_HOST",
@@ -125,13 +125,13 @@
         ],
         "unmet_outputs": [],
         "relevant_rejections": [],
-        "rejected_candidate_count": 76,
-        "omitted_rejected_candidate_count": 76,
+        "rejected_candidate_count": 77,
+        "omitted_rejected_candidate_count": 77,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "8e73ada3eb28fed6346617b5cae5a45218d629bb7423e9fa5db3fcb13513350c"
+      "planner_output_sha256": "e9add805a0bb62aeb3db3d8958a3b5fe127709e2090cb68383278fd5057517ef"
     },
     {
       "scenario": "EXPLICIT_MISSING_HOST",
@@ -186,30 +186,18 @@
             "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
           }
         ],
-        "rejected_candidate_count": 77,
-        "omitted_rejected_candidate_count": 76,
+        "rejected_candidate_count": 78,
+        "omitted_rejected_candidate_count": 77,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "b5a9d8da0bc83b2b78dc76dbdee9527def57da1653f3c9efa0ed39fca8fd61e5"
+      "planner_output_sha256": "ce761ba94147e51f31ddf5fbeba05b2dfc28f594d4f70cfcc263f7df0234a628"
     }
   ],
   "summary": {
-    "default_route": "EXCLUDED",
-    "default_decision": "INCOMPLETE",
-    "explicit_exact_host_decision": "COMPLETE",
-    "missing_host_decision": "INCOMPLETE",
-    "explicit_selected_tool_ids": [
-      "research.compare_noaa_co2_source_surfaces"
-    ],
+    "execution_authorized": false,
     "candidate_invoked": false,
-    "network_calls_made": 0,
-    "router_rule_modified": false,
-    "execution_authorized": false
-  },
-  "candidate_invoked": false,
-  "network_calls_made": 0,
-  "execution_authorized": false,
-  "claim_ceiling": "Offline route planning only. The caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no NOAA request, permission grant, Owner approval, scientific validity, or Current promotion is established."
+    "network_calls_made": 0
+  }
 }

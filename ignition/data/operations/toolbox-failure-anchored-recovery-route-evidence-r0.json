@@ -1,8 +1,8 @@
 {
   "schema_version": "toolbox-failure-anchored-recovery-route-evidence-r0",
   "tool_id": "maintenance.preflight_failure_anchored_recovery",
-  "observed_at_utc": "2026-10-26T15:07:30Z",
-  "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+  "observed_at_utc": "2026-10-26T17:44:00Z",
+  "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_git_blob_sha1": "c1bbdec95c2cf3e0af7ca86816dc3820e81a5fc2",
   "route_profile": {
@@ -24,11 +24,11 @@
       "include_experimental_tool_ids": [],
       "decision": "INCOMPLETE",
       "selected_tool_ids": [],
-      "result_sha256": "0274076f3a764400419f88b4468bd779f4c8cbd31f844d226b5931a9acb738b0",
+      "result_sha256": "a7707525f76cc60ce69611ad8f9e7056a6a6178a25d7d104ddabc1b7bef03000",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "selected_permissions": [],
+      "selected_permissions": null,
       "relevant_rejections": [
         {
           "tool_id": "maintenance.preflight_failure_anchored_recovery",
@@ -45,22 +45,20 @@
       "selected_tool_ids": [
         "maintenance.preflight_failure_anchored_recovery"
       ],
-      "result_sha256": "dec1a25a1f3f1cb36e9b8bb0ad6877321f82dfaec6db190fa0fdffa43ce202bc",
+      "result_sha256": "9a7e39fcc53e3c4bd3346b66a36281caa3efe1965b7d03d4c4b0eb248d3ac296",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "selected_permissions": [
-        {
-          "read_paths": [
-            "ignition/schemas/operations/toolbox-failure-anchored-recovery-input-r0.schema.json"
-          ],
-          "write_paths": [],
-          "network": false,
-          "secrets": false,
-          "billing": false,
-          "external_actions": false
-        }
-      ],
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/schemas/operations/toolbox-failure-anchored-recovery-input-r0.schema.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
       "relevant_rejections": []
     }
   ],
@@ -71,9 +69,9 @@
   "execution_authorized": false,
   "claim_ceiling": "Offline routing proposals only. The candidate was not invoked; no recovery ran, no provider was contacted, and no execution or retry permission was granted.",
   "catalog_replay": {
-    "previous_candidate_catalog_git_blob_sha1": "00361ac0acaa926ad9f621d56d237c723246f4c7",
-    "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "replayed_at_utc": "2026-10-26T16:59:55Z",
+    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+    "replayed_at_utc": "2026-10-26T17:44:00Z",
     "route_trials_replayed": 2,
     "all_expected_decisions_reproduced": true,
     "candidate_invoked": false,
