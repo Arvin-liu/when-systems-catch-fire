@@ -1,0 +1,74 @@
+{
+  "candidate_availability": "EXPERIMENTAL_AVAILABLE_DEFAULT_OFF",
+  "candidate_catalog_git_blob_sha1": "37801b614edb72c4c43009c9f8b0c950d4216834",
+  "candidate_tool_id": "reasoning.search_structural_analogies",
+  "claim_ceiling": "Route planner behavior over the recorded local candidate catalog and profile only; no candidate invocation, provider call, permission grant, or task outcome is implied by route selection.",
+  "schema_version": "toolbox-structural-analogy-search-route-evidence-r0",
+  "task_profile": {
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON stdin object conforming to toolbox-structural-analogy-search-input-r0 with one typed source graph, explicit source-to-target relation-type mappings, and one to eight typed target candidates."
+    ],
+    "required_outputs": [
+      "One bounded JSON result conforming to toolbox-structural-analogy-search-output-r0 with structural ranks, exact directed relation coverage, mapping ties, extra and unmatched edges, and claim ceilings.",
+      "Transfer-hypothesis pairs explicitly marked REQUIRES_TARGET_DOMAIN_VALIDATION; no source authority, target validity, evidence, execution, or authority transfer."
+    ],
+    "task_id": "typed-cross-domain-structure-search"
+  },
+  "trials": [
+    {
+      "candidate_invoked": false,
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "include_experimental_tool_ids": [],
+      "result_sha256": "cf3f2618751e10ab6e94b3b47a5af1faf7b1e397958f11736c82f074b82f91bb",
+      "router_provider_calls": 0,
+      "selected_tool_ids": [],
+      "trial_id": "DEFAULT_OFF"
+    },
+    {
+      "candidate_invoked": false,
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "include_experimental_tool_ids": [
+        "reasoning.search_structural_analogies"
+      ],
+      "result_sha256": "1dd0c00fb151be41f3b17f979b45236d72b8e15398d00b47d18ade0acc1f4631",
+      "router_provider_calls": 0,
+      "selected_tool_ids": [
+        "reasoning.search_structural_analogies"
+      ],
+      "trial_id": "EXPLICIT_NEW_TOOL_ALLOWLIST"
+    },
+    {
+      "candidate_invoked": false,
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "include_experimental_tool_ids": [
+        "research.preflight_grounded_ideation"
+      ],
+      "result_sha256": "aba0672e3ba0d70acb6a6125048692a023ff3e2c6fac171a71150b4db0b3527f",
+      "router_provider_calls": 0,
+      "selected_tool_ids": [],
+      "trial_id": "EXISTING_GROUNDED_PREFLIGHT_ONLY"
+    },
+    {
+      "candidate_invoked": false,
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "include_experimental_tool_ids": [
+        "reasoning.search_structural_analogies",
+        "research.preflight_grounded_ideation"
+      ],
+      "result_sha256": "9f943ae8d7831743a94735e33404b6671063850a8b8b3f6e257ce0ea6131e9d3",
+      "router_provider_calls": 0,
+      "selected_tool_ids": [
+        "reasoning.search_structural_analogies"
+      ],
+      "trial_id": "COMBINED_ALLOWLIST"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "toolbox-structural-analogy-search-source-binding-r0",
+  "candidate_tool_id": "reasoning.search_structural_analogies",
+  "candidate_version": "0.1.0",
+  "owner_toolbox_instruction": {
+    "repository": "Arvin-liu/1111",
+    "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "scope": "Implement distinct, bounded, optional tools; maintain accurate machine-readable cards; default new candidates off; test functionality and failure boundaries without Full Foundation during development."
+  },
+  "owner_c1_update": {
+    "repository": "Arvin-liu/1111",
+    "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "chapter": "C1",
+    "scope": "Retain, specialize, replace, or retire tools based on actual same-task evidence and unique useful coverage; preserve uncertainty and history where comparison is insufficient."
+  },
+  "source_blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "checkout_head": "2f13848f693cd8411329fd92c4bf0735464e3677",
+    "path": "iterations/2026-10-05-thinking-system-reframe.md",
+    "git_blob_sha1": "ffc3b7069c7008f8cd8d2ba317e00e54c3ba7eb6",
+    "section": "AB-18 Structural Analogy Search",
+    "source_status": "NEEDS_GAP_AUDIT",
+    "candidate_chain": ["ProblemStructure", "AnalogyCandidate[]", "RelationMapping", "TransferHypothesis[]", "domain validation"],
+    "relevant_invariants": [
+      "ANALOGY_TRANSFERS_RELATION_NOT_AUTHORITY",
+      "SURFACE_SIMILARITY_IS_NOT_STRUCTURAL_MATCH",
+      "TRANSFERRED_SOLUTION_REQUIRES_TARGET_DOMAIN_VALIDATION",
+      "ANALOGY_DIVERSITY_IS_SEARCH_EXPANSION_NOT_EVIDENCE"
+    ]
+  },
+  "gap_audit": {
+    "current_object_collision_operation": "knowledge.collide_object checks exact/canonical identity collisions among registered current objects; it does not accept caller-supplied relation graphs, enumerate node correspondences, or rank structural overlaps.",
+    "grounded_ideation_preflight": "research.preflight_grounded_ideation checks a caller-supplied sourced ideation packet, relation map, counterevidence, and falsifiers; it does not enumerate candidate graphs or calculate exact directed edge coverage.",
+    "gap": "No inspected Current or optional toolbox entry performs bounded enumeration and ranking of injective role-compatible node mappings across caller-supplied relation graphs under an explicit one-to-one relation-type map.",
+    "claim_ceiling": "This is a repository inventory and interface-gap statement for the inspected toolbox cards/operations; it does not claim that no external library or manual process can perform graph matching."
+  },
+  "implementation_scope": {
+    "does": [
+      "Validate small source and target graphs with controlled role classes and directed relation triples.",
+      "Enumerate injective node maps within an explicit combinatorial budget.",
+      "Rank exact mapped source-edge overlap, minimize extra mapped target edges, and report ties and unmatched edges.",
+      "Emit transfer hypotheses explicitly requiring target-domain validation."
+    ],
+    "does_not": [
+      "Read free text, infer semantic role classes, discover candidate graphs, or infer relation-type mappings.",
+      "Verify source or target authority, establish semantic equivalence, validate a transferred solution, or make a scientific claim.",
+      "Access network, secrets, external providers, or repository writes."
+    ]
+  },
+  "claim_ceiling": "A local bounded structural comparison over caller-supplied typed graphs and caller-declared relation-type mappings; no semantic equivalence, evidence, validity, authority, or real-world transfer is established."
+}

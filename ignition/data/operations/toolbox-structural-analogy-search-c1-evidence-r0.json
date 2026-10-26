@@ -1,0 +1,49 @@
+{
+  "schema_version": "toolbox-structural-analogy-search-c1-evidence-r0",
+  "experiment_id": "C1-20261026-AB18-STRUCTURAL-ANALOGY-SAME-TASK-DIFFERENTIAL",
+  "owner_policy_basis": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682#C1",
+  "candidate_tool_id": "reasoning.search_structural_analogies",
+  "task_question": "Given one bounded typed relation graph and several typed candidate graphs in different declared domains, enumerate and rank role-compatible directed structural correspondences under a caller-declared relation map.",
+  "comparison_method": "Compared the candidate's actual input/output contract and focused real-tool result with the exact declared capabilities of the two nearest existing toolbox entries. The same requested graph-enumeration output is the unit of comparison; an entry that cannot accept the typed graph set or emit ranked node maps is recorded as non-equivalent rather than treated as a failed score.",
+  "compared_entries": [
+    {
+      "tool_id": "knowledge.collide_object",
+      "implementation_refs": [
+        "ignition/tools/operations/evaluate_object_collision_run.py",
+        "ignition/data/operations/ignition-operation-capability-registry-r1.json"
+      ],
+      "observed_task_fit": "The Current operation queries registered object/function/non-function identities for exact or canonical collisions. It does not take arbitrary source and target relation graphs or produce node mappings, relation coverage, or analogy ranks.",
+      "same_task_outcome_score": null,
+      "reason_not_scored": "No shared typed graph-search request/output contract; a numeric score would compare different outputs."
+    },
+    {
+      "tool_id": "research.preflight_grounded_ideation",
+      "implementation_refs": [
+        "ignition/tools/toolbox_grounded_ideation_preflight.py",
+        "ignition/schemas/operations/grounded-ideation-preflight-r0.schema.json"
+      ],
+      "observed_task_fit": "The optional preflight checks a caller-authored, source-backed proposal and explicit relation map, counterevidence, and falsifiers. It does not enumerate node correspondences across a target-candidate set or rank exact directed graph overlap.",
+      "same_task_outcome_score": null,
+      "reason_not_scored": "It checks evidence structure after candidate formulation; the graph enumeration request is outside its declared input/output contract."
+    }
+  ],
+  "candidate_observation": {
+    "evidence_ref": "ignition/tests/fixtures/toolbox-structural-analogy-search/real-task-input-r0.json",
+    "result_ref": "ignition/data/operations/toolbox-structural-analogy-search-real-task-output-r0.json",
+    "outcome": "The exact role- and direction-preserving candidate ranked first; an extra mapped edge lowered target precision; reversed edges produced no mapped overlap. The emitted transfer hypotheses require target-domain validation.",
+    "limitations": [
+      "The graphs are a controlled repository-local toolbox-gap example, not an external scientific or domain-validated analogy.",
+      "No latency or memory advantage over another tool was measured.",
+      "The current and optional neighbors remain useful for their distinct identity-collision and evidence-preflight tasks."
+    ]
+  },
+  "comparison_evidence": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "candidate_disposition": "EXPERIMENTAL_AVAILABLE_DEFAULT_OFF",
+    "unique_remaining_use_case": "Enumerate and rank exact directed structural correspondences across finite caller-supplied graphs before a separate source and target-domain validation step.",
+    "replacement_candidates": [],
+    "retirement_status": "ACTIVE",
+    "basis": "The actual task example demonstrates a bounded, distinct graph-enumeration output. Existing neighbors do not implement the same output contract and retain their own useful identity-collision and evidence-validation roles. This supports coexistence, not a claim of broad superiority or a measured net benefit.",
+    "next_comparison_trigger": "Reassess only when a toolbox entry accepts equivalent typed source/candidate graphs and relation mappings and emits comparable ranked correspondences, or when a real consumer supplies a task where one of the present neighbors can perform the same output."
+  }
+}

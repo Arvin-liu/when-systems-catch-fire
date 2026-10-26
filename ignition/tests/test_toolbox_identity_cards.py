@@ -623,6 +623,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             offline_snapshot_verifier["tool_id"],
             "foundation.read_current_asset_card",
             "research.probe_counterfactual_fragility",
+            "reasoning.search_structural_analogies",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
@@ -630,6 +631,14 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability"} for card in candidates))
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
+        structural_analogy = next(card for card in candidates if card["tool_id"] == "reasoning.search_structural_analogies")
+        self.assertEqual(structural_analogy["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertFalse(structural_analogy["router_selectable_by_default"])
+        self.assertEqual(structural_analogy["permissions"]["write_paths"], [])
+        self.assertFalse(structural_analogy["permissions"]["network"])
+        self.assertEqual(structural_analogy["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(structural_analogy["replacement_candidates"], [])
+        self.assertTrue(structural_analogy["unique_remaining_use_cases"])
         self.assertEqual(batch["execution_mode"], "READ_ONLY_RUN")
         self.assertEqual(batch["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertIn("Python >=3.9 standard library", batch["runtime_dependencies"])

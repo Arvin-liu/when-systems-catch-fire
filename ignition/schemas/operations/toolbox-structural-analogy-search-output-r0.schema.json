@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/operations/toolbox-structural-analogy-search-output-r0.schema.json",
+  "title": "Bounded structural analogy search output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "task_id", "status", "input_sha256", "source_structure", "relation_mappings", "candidate_count", "estimated_node_mappings", "evaluated_node_mappings", "candidates", "ranking_rule", "surface_text_used", "source_authority_verified", "target_domain_validated", "analogy_is_evidence", "authority_transferred", "execution_authorized", "invariants_applied", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "toolbox-structural-analogy-search-output-r0"},
+    "tool_id": {"const": "reasoning.search_structural_analogies"},
+    "tool_version": {"const": "0.1.0"},
+    "task_id": {"$ref": "#/$defs/id"},
+    "status": {"enum": ["STRUCTURAL_OVERLAP_CANDIDATES_FOUND", "NO_STRUCTURAL_OVERLAP_CANDIDATES_FOUND"]},
+    "input_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "source_structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["structure_id", "domain_id", "node_count", "relation_count"],
+      "properties": {
+        "structure_id": {"$ref": "#/$defs/id"},
+        "domain_id": {"$ref": "#/$defs/id"},
+        "node_count": {"type": "integer", "minimum": 2, "maximum": 8},
+        "relation_count": {"type": "integer", "minimum": 1, "maximum": 24}
+      }
+    },
+    "relation_mappings": {"type": "array", "minItems": 1, "maxItems": 24, "items": {"$ref": "#/$defs/relationMapping"}},
+    "candidate_count": {"type": "integer", "minimum": 1, "maximum": 8},
+    "estimated_node_mappings": {"type": "integer", "minimum": 0, "maximum": 200000},
+    "evaluated_node_mappings": {"type": "integer", "minimum": 0, "maximum": 200000},
+    "candidates": {"type": "array", "minItems": 1, "maxItems": 8, "items": {"$ref": "#/$defs/candidate"}},
+    "ranking_rule": {"const": "MAXIMIZE_EXACT_MAPPED_SOURCE_RELATIONS_THEN_MINIMIZE_EXTRA_MAPPED_TARGET_RELATIONS_THEN_CANDIDATE_ID; structural counts only"},
+    "surface_text_used": {"const": false},
+    "source_authority_verified": {"const": false},
+    "target_domain_validated": {"const": false},
+    "analogy_is_evidence": {"const": false},
+    "authority_transferred": {"const": false},
+    "execution_authorized": {"const": false},
+    "invariants_applied": {"type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": {"enum": ["ANALOGY_TRANSFERS_RELATION_NOT_AUTHORITY", "SURFACE_SIMILARITY_IS_NOT_STRUCTURAL_MATCH", "TRANSFERRED_SOLUTION_REQUIRES_TARGET_DOMAIN_VALIDATION", "ANALOGY_DIVERSITY_IS_SEARCH_EXPANSION_NOT_EVIDENCE"]}},
+    "claim_ceiling": {"const": "Enumerates role-compatible node mappings and exact caller-declared relation-type correspondences over the supplied finite graphs. A structural overlap is only a candidate analogy; no source authenticity, semantic equivalence, solution validity, target-domain evidence, causal transfer, scientific truth, or authority is established."}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9._:-]{0,63}$"},
+    "fraction": {"type": ["string", "null"], "pattern": "^(0|[1-9][0-9]*)/[1-9][0-9]*$"},
+    "relationMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_relation_type", "target_relation_type"],
+      "properties": {"source_relation_type": {"$ref": "#/$defs/id"}, "target_relation_type": {"$ref": "#/$defs/id"}}
+    },
+    "nodeMap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_node_id", "target_node_id"],
+      "properties": {"source_node_id": {"$ref": "#/$defs/id"}, "target_node_id": {"$ref": "#/$defs/id"}}
+    },
+    "relationPair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_relation_id", "target_relation_id", "source_relation_type", "target_relation_type", "mapped_subject_id", "mapped_object_id"],
+      "properties": {
+        "source_relation_id": {"$ref": "#/$defs/id"},
+        "target_relation_id": {"$ref": "#/$defs/id"},
+        "source_relation_type": {"$ref": "#/$defs/id"},
+        "target_relation_type": {"$ref": "#/$defs/id"},
+        "mapped_subject_id": {"$ref": "#/$defs/id"},
+        "mapped_object_id": {"$ref": "#/$defs/id"}
+      }
+    },
+    "transfer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_relation_id", "target_relation_id", "status"],
+      "properties": {
+        "source_relation_id": {"$ref": "#/$defs/id"},
+        "target_relation_id": {"$ref": "#/$defs/id"},
+        "status": {"const": "REQUIRES_TARGET_DOMAIN_VALIDATION"}
+      }
+    },
+    "bestMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_to_target_node_map", "matched_relation_pairs", "unmatched_source_relation_ids", "extra_mapped_target_relation_ids", "unmapped_target_relation_ids", "transfer_hypotheses"],
+      "properties": {
+        "source_to_target_node_map": {"type": "array", "minItems": 2, "maxItems": 8, "items": {"$ref": "#/$defs/nodeMap"}},
+        "matched_relation_pairs": {"type": "array", "maxItems": 24, "items": {"$ref": "#/$defs/relationPair"}},
+        "unmatched_source_relation_ids": {"type": "array", "maxItems": 24, "items": {"$ref": "#/$defs/id"}},
+        "extra_mapped_target_relation_ids": {"type": "array", "maxItems": 24, "items": {"$ref": "#/$defs/id"}},
+        "unmapped_target_relation_ids": {"type": "array", "maxItems": 24, "items": {"$ref": "#/$defs/id"}},
+        "transfer_hypotheses": {"type": "array", "maxItems": 24, "items": {"$ref": "#/$defs/transfer"}}
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_id", "structure_id", "domain_id", "status", "evaluated_node_mappings", "matched_source_relation_count", "source_relation_count", "source_relation_coverage_fraction", "matched_mapped_target_relation_count", "extra_mapped_target_relation_count", "unmapped_target_relation_count_range", "mapped_target_relation_precision_fraction", "best_mappings", "best_mapping_tie_count", "best_mapping_ties_truncated", "structural_rank"],
+      "properties": {
+        "candidate_id": {"$ref": "#/$defs/id"},
+        "structure_id": {"$ref": "#/$defs/id"},
+        "domain_id": {"$ref": "#/$defs/id"},
+        "status": {"enum": ["STRUCTURAL_OVERLAP_CANDIDATE", "NO_ROLE_COMPATIBLE_NODE_MAPPING", "NO_MAPPED_RELATION_OVERLAP"]},
+        "evaluated_node_mappings": {"type": "integer", "minimum": 0, "maximum": 200000},
+        "matched_source_relation_count": {"type": "integer", "minimum": 0, "maximum": 24},
+        "source_relation_count": {"type": "integer", "minimum": 1, "maximum": 24},
+        "source_relation_coverage_fraction": {"$ref": "#/$defs/fraction"},
+        "matched_mapped_target_relation_count": {"type": "integer", "minimum": 0, "maximum": 24},
+        "extra_mapped_target_relation_count": {"type": "integer", "minimum": 0, "maximum": 24},
+        "unmapped_target_relation_count_range": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "integer", "minimum": 0, "maximum": 24}},
+        "mapped_target_relation_precision_fraction": {"$ref": "#/$defs/fraction"},
+        "best_mappings": {"type": "array", "maxItems": 8, "items": {"$ref": "#/$defs/bestMapping"}},
+        "best_mapping_tie_count": {"type": "integer", "minimum": 0, "maximum": 200000},
+        "best_mapping_ties_truncated": {"type": "boolean"},
+        "structural_rank": {"type": "integer", "minimum": 1, "maximum": 8}
+      }
+    }
+  }
+}
