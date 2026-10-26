@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-noaa-ch4-source-surface-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T21:59:28Z",
+  "observed_at_utc": "2026-10-26T22:44:00Z",
   "candidate_tool_id": "research.compare_noaa_ch4_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-route-profile-r0.json",
@@ -266,6 +266,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.compare_publication_metadata_snapshots",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -287,6 +291,10 @@
           },
           {
             "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -396,12 +404,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968"
+          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "39b2a448c0535579a9364782630182facc5376857d5b71ff09c3aa046ceb7a23",
+      "planner_output_sha256": "b4f9703a096f673b06d1a8bb34b5a9142d3a2c2b57bf5cb644c0cc3c3a02517b",
       "decision": "INCOMPLETE"
     },
     {
@@ -700,6 +708,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.compare_publication_metadata_snapshots",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -721,6 +733,10 @@
           },
           {
             "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -830,12 +846,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968"
+          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "ed8dd0d416f18f34eb49b7eed9b04995fe1460790e6229322b0f03057190d7c8",
+      "planner_output_sha256": "cb9214b5934435320083ec035feb5b6145d727e09f568e146dde55f245eb24c2",
       "decision": "COMPLETE"
     },
     {
@@ -1091,6 +1107,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.compare_publication_metadata_snapshots",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -1112,6 +1132,10 @@
           },
           {
             "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -1221,12 +1245,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968"
+          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "d3d2c80f7400c457a9393517198b81a57b1621e9f42890cb7bdc10e65855219f",
+      "planner_output_sha256": "960ed9f99f05ea86b5024d48343b996850430f06943c670869e73160af102bee",
       "decision": "INCOMPLETE"
     }
   ],
@@ -1241,17 +1265,25 @@
       "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
       "superseded_observed_at_utc": "2026-10-26T20:20:59Z",
       "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "67de88f8c3cb2fb2f82a6ca1f63b2f1649b341d7",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": "2026-10-26T21:59:28Z",
+      "replayed_at_utc": "2026-10-26T22:44:00Z"
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T21:11:36Z",
+    "replayed_at_utc": "2026-10-26T22:44:00Z",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "candidate_invoked": false,
-    "replay_result_sha256": "96e986f9a0477715b46fc1b76ac69c7ea6d03ef549325d2498ae75e824e1e6fd"
+    "replay_result_sha256": "3651d61c47242feb1f8ead2d891e7ef3d5d563d537d4d4f9e32737c5548f4301",
+    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   }
 }

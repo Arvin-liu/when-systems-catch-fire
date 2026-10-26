@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arvin-liu.github.io/ignition/schemas/operations/toolbox-noaa-n2o-annual-growth-lookup-output-r0.schema.json",
+  "title": "NOAA N2O Annual Growth Lookup Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "status",
+    "requested_range",
+    "units",
+    "source",
+    "source_attribution",
+    "source_caveats",
+    "non_claims",
+    "claim_ceiling",
+    "tool_source_sha256",
+    "request_sha256",
+    "invocation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "toolbox-noaa-n2o-annual-growth-lookup-output-r0"
+    },
+    "tool_id": {
+      "const": "research.lookup_noaa_global_n2o_annual_growth"
+    },
+    "tool_version": {
+      "const": "0.1.0"
+    },
+    "status": {
+      "enum": [
+        "FOUND",
+        "PARTIAL_DATA",
+        "NO_MATCH",
+        "SOURCE_UNAVAILABLE",
+        "INVALID_TEXT_RESPONSE",
+        "INVALID_PROVIDER_RESPONSE"
+      ]
+    },
+    "requested_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start_year",
+        "end_year"
+      ],
+      "properties": {
+        "start_year": {
+          "type": "integer",
+          "minimum": 2001,
+          "maximum": 2100
+        },
+        "end_year": {
+          "type": "integer",
+          "minimum": 2001,
+          "maximum": 2100
+        }
+      }
+    },
+    "units": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "annual_increase",
+        "uncertainty"
+      ],
+      "properties": {
+        "annual_increase": {
+          "const": "ppb"
+        },
+        "uncertainty": {
+          "const": "ppb"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "acquisition_status",
+        "parse_status",
+        "http_status",
+        "etag",
+        "last_modified",
+        "retrieved_at_utc",
+        "response_bytes",
+        "response_sha256",
+        "records",
+        "raw_response_retained"
+      ],
+      "properties": {
+        "url": {
+          "const": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt"
+        },
+        "acquisition_status": {
+          "enum": [
+            "OK",
+            "HTTP_ERROR",
+            "REDIRECT_BLOCKED",
+            "RATE_LIMITED",
+            "NETWORK_ERROR",
+            "NON_TEXT_RESPONSE",
+            "RESPONSE_TIMEOUT",
+            "RESPONSE_TOO_LARGE"
+          ]
+        },
+        "parse_status": {
+          "enum": [
+            "FOUND",
+            "PARTIAL_DATA",
+            "NO_MATCH",
+            "INVALID_TEXT_RESPONSE",
+            "INVALID_PROVIDER_RESPONSE",
+            "NOT_RUN"
+          ]
+        },
+        "http_status": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "etag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "last_modified": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "response_bytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "response_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "year",
+              "annual_increase_ppb",
+              "uncertainty_ppb"
+            ],
+            "properties": {
+              "year": {
+                "type": "integer",
+                "minimum": 2001,
+                "maximum": 2100
+              },
+              "annual_increase_ppb": {
+                "type": "string",
+                "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+              },
+              "uncertainty_ppb": {
+                "type": "string",
+                "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+              }
+            }
+          }
+        },
+        "raw_response_retained": {
+          "const": false
+        }
+      }
+    },
+    "source_attribution": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_caveats": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "non_claims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tool_source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "request_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "invocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allow_public_network_flag",
+        "requests_made"
+      ],
+      "properties": {
+        "allow_public_network_flag": {
+          "const": true
+        },
+        "requests_made": {
+          "const": 1
+        }
+      }
+    }
+  }
+}

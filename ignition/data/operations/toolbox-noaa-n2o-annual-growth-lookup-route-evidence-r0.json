@@ -1,0 +1,214 @@
+{
+  "all_expected_decisions_reproduced": true,
+  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "evidence_type": "REPLAYED_DEFAULT_OFF_EXACT_HOST_AND_TASK_SCOPE_ROUTE_PROPOSALS",
+  "observed_at_utc": "2026-10-26T22:37:52Z",
+  "route_profile_path": "ignition/data/operations/toolbox-noaa-n2o-annual-growth-lookup-route-profile-r0.json",
+  "route_profile_sha256": "e617ce6149cd663abbe6797377e2c869c20d7c447d7c589ec1dd862ccb7798a1",
+  "route_trials": [
+    {
+      "candidate_invoked": false,
+      "expected_decision": "INCOMPLETE",
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+          "tool_id": "research.compare_noaa_n2o_source_surfaces"
+        },
+        {
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth"
+        }
+      ],
+      "expected_selected_tool_ids": [],
+      "include_experimental_tool_ids": [],
+      "network_calls_made": 0,
+      "planner_output_sha256": "ba0ab00e423d490cc630355a5acd87888f4cfeaba82791c1e9d17b6acf458de1",
+      "scenario": "DEFAULT_OFF_RAW_ONLY",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years)."
+        ],
+        "required_outputs": [
+          "Provider-reported annual atmospheric N2O mole-fraction increases and stated uncertainties in ppb from the fixed raw table only, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status.",
+          "One fixed raw-table receipt with retrieval time, HTTP metadata, response byte count and SHA-256, explicit request count, and claim ceiling; raw response is not retained."
+        ],
+        "task_id": "noaa-gml-n2o-raw-table-annual-growth-2023-2025"
+      }
+    },
+    {
+      "candidate_invoked": false,
+      "expected_decision": "COMPLETE",
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "reason": "NO_INPUT_TYPE_MATCH",
+          "tool_id": "research.compare_noaa_n2o_source_surfaces"
+        }
+      ],
+      "expected_selected_tool_ids": [
+        "research.lookup_noaa_global_n2o_annual_growth"
+      ],
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_n2o_annual_growth",
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "network_calls_made": 0,
+      "planner_output_sha256": "02c96d2cee4085ee6a132638f475839d8099a7f2ea159530ace9080e06efa82e",
+      "scenario": "EXPLICIT_RAW_ONLY_EXACT_HOST",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years)."
+        ],
+        "required_outputs": [
+          "Provider-reported annual atmospheric N2O mole-fraction increases and stated uncertainties in ppb from the fixed raw table only, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status.",
+          "One fixed raw-table receipt with retrieval time, HTTP metadata, response byte count and SHA-256, explicit request count, and claim ceiling; raw response is not retained."
+        ],
+        "task_id": "noaa-gml-n2o-raw-table-annual-growth-2023-2025"
+      }
+    },
+    {
+      "candidate_invoked": false,
+      "expected_decision": "INCOMPLETE",
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+          "tool_id": "research.compare_noaa_n2o_source_surfaces"
+        },
+        {
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED",
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth"
+        }
+      ],
+      "expected_selected_tool_ids": [],
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_n2o_annual_growth"
+      ],
+      "network_calls_made": 0,
+      "planner_output_sha256": "6ff1d6bdfa9f8d1acda0b80dca6308994fe934f509e6061b0e023c0dc66d698a",
+      "scenario": "EXPLICIT_RAW_ONLY_HOST_MISSING",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [],
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years)."
+        ],
+        "required_outputs": [
+          "Provider-reported annual atmospheric N2O mole-fraction increases and stated uncertainties in ppb from the fixed raw table only, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status.",
+          "One fixed raw-table receipt with retrieval time, HTTP metadata, response byte count and SHA-256, explicit request count, and claim ceiling; raw response is not retained."
+        ],
+        "task_id": "noaa-gml-n2o-raw-table-annual-growth-2023-2025"
+      }
+    },
+    {
+      "candidate_invoked": false,
+      "expected_decision": "COMPLETE",
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "reason": "NO_INPUT_TYPE_MATCH",
+          "tool_id": "research.compare_noaa_n2o_source_surfaces"
+        }
+      ],
+      "expected_selected_tool_ids": [
+        "research.lookup_noaa_global_n2o_annual_growth"
+      ],
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_n2o_annual_growth",
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "network_calls_made": 0,
+      "planner_output_sha256": "6d14d74415e3bfd3c8d8cda9a93c2920d3b65a2562e9cd15623db42a675a649f",
+      "scenario": "EXPLICIT_RAW_ONLY_OVERBROAD_HOST_LIST",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov",
+          "example.org"
+        ],
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years)."
+        ],
+        "required_outputs": [
+          "Provider-reported annual atmospheric N2O mole-fraction increases and stated uncertainties in ppb from the fixed raw table only, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status.",
+          "One fixed raw-table receipt with retrieval time, HTTP metadata, response byte count and SHA-256, explicit request count, and claim ceiling; raw response is not retained."
+        ],
+        "task_id": "noaa-gml-n2o-raw-table-annual-growth-2023-2025"
+      }
+    },
+    {
+      "candidate_invoked": false,
+      "expected_decision": "COMPLETE",
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "reason": "NO_INPUT_TYPE_MATCH",
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth"
+        }
+      ],
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_n2o_annual_growth",
+        "research.compare_noaa_n2o_source_surfaces"
+      ],
+      "network_calls_made": 0,
+      "planner_output_sha256": "0ad0c7ee3acc2b443fe90a7d984f87f19b73f17f33a17194d533ceb2cf163547",
+      "scenario": "EXPLICIT_TWO_SURFACE_COMPARISON",
+      "task_profile": {
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-source-surface-comparison-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years); caller-supplied URLs and extra keys are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, NOAA-reported annual atmospheric N2O mole-fraction increase and stated uncertainty from both fixed surfaces, exact arithmetic differences, or explicit missing-year status.",
+          "Two fixed source receipts with retrieval timestamps, HTTP metadata, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "task_id": "noaa-gml-n2o-page-to-raw-surface-comparison-2023-2025"
+      }
+    }
+  ],
+  "route_trials_replayed": 5,
+  "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "schema_version": "toolbox-noaa-n2o-annual-growth-lookup-route-evidence-r0",
+  "summary": {
+    "candidate_invoked": false,
+    "default_raw_only_route": "INCOMPLETE_NO_CANDIDATE_SELECTED",
+    "exact_host_raw_only_route": "COMPLETE_SELECTS_ONLY_RAW_N2O_LOOKUP",
+    "execution_authorized": false,
+    "missing_host_route": "INCOMPLETE_NETWORK_HOST_NOT_ALLOWED",
+    "network_calls_made": 0,
+    "overbroad_host_list_route": "COMPLETE_WITH_CANDIDATE_PERMISSION_STILL_FIXED_TO_GML",
+    "two_surface_route": "COMPLETE_SELECTS_ONLY_N2O_COMPARATOR"
+  }
+}

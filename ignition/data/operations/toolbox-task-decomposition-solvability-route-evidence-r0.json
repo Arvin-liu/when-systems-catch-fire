@@ -22,7 +22,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "e3f8eb118e5ee03ab2bac31ea3032355038f9a29122024de7fd446daa3f0e947"
+      "planner_output_projection_sha256": "3ae860653cf2e3d8f0f0994da0be1b6ab7a24128c8a0105d003555a3b83407ce"
     },
     {
       "trial_id": "explicit_allowlist",
@@ -41,7 +41,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "984623ddd9e1bd7345a9ec1a1babca7cfc677f5598597ae764be823a2ef11c38"
+      "planner_output_projection_sha256": "5f0b082f8624a08226f54fde2b39ab46add127e834e052904a1a7e9b124e8cef"
     },
     {
       "trial_id": "with_unrelated_candidate",
@@ -61,7 +61,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "3cba058f9678c6f27d92c71439cb41e236a99147dd00f9b3906c2b0ec955086f"
+      "planner_output_projection_sha256": "3b9a1621cb53d0497a9e720a2970da2dce453221d4226a95cb7ada7f99f5f2eb"
     }
   ],
   "provider_call_count": 0,
@@ -69,19 +69,19 @@
   "execution_authorized": false,
   "interpretation": "Route planner results are proposals only. The default profile excludes the optional tool; an explicit experimental allowlist permits a route proposal. An unrelated read-only experimental candidate is rejected for input mismatch. This evidence does not invoke the candidate or grant task authority. The planner-output digest excludes source_refs to avoid a candidate-catalog/evidence self-reference cycle.",
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T22:04:06Z",
+    "replayed_at_utc": "2026-10-26T22:47:07Z",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
     "candidate_tool_invocation_count": 0,
     "provider_call_count": 0,
     "execution_authorized": false,
-    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
     "provider_calls_made": 0,
     "candidate_invoked": false,
-    "replay_result_sha256": "373bf70a1c93368b7d9eeee50b945f8bdc80daad29843331735f0336dfa48b35",
-    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(',', ':'), ensure_ascii=false) of ordered scenario and full planner output SHA-256 records."
+    "replay_result_sha256": "50bda6bedb2783dcb7a0761dd8b5eac818a8bbc4007c4fab8f5b79861c163f3a",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   },
   "catalog_replay_history": [
     {
@@ -95,6 +95,14 @@
       "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
       "superseded_observed_at_utc": null,
       "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "c16b7a08174d95c52bfc67b5f80bf5f49f3ce4b4",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:47:07Z"
     }
-  ]
+  ],
+  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
 }

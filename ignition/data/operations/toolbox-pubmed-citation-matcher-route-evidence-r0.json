@@ -2,7 +2,7 @@
   "schema_version": "toolbox-pubmed-citation-matcher-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_AND_MINIMUM_SUFFICIENT_ROUTE_EXPERIMENT",
   "tool_id": "research.match_pubmed_citation",
-  "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_path": "ignition/data/operations/toolbox-pubmed-citation-matcher-route-profile-r0.json",
   "route_profile": {
@@ -22,8 +22,15 @@
       "eutils.ncbi.nlm.nih.gov"
     ],
     "route_default": "EXCLUDED",
-    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
-    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "catalog_replay_history": [
+      {
+        "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+        "superseded_profile_git_blob_sha1": "ecab6531f71e93067ca947f130c388f530377985",
+        "replayed_at_utc": "2026-10-26T22:44:00Z"
+      }
+    ]
   },
   "route_trials": [
     {
@@ -58,7 +65,7 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "f047a5bfbeb155160ba7d6cd1808651187b5296ccb48bbc4ba8143747a9c639c"
+      "full_planner_output_sha256": "66762e8375903883f83ecce5516c4f619cfd6ddc8a3d038d4bb36751b21d7c0e"
     },
     {
       "scenario": "explicit_candidate_missing_host",
@@ -91,7 +98,7 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "c5428fd97ef95ffad85de3497f257e7b85ebb5070ededdda458a05cb3ea36c26"
+      "full_planner_output_sha256": "aeb2477eccd8f063eaab1f7a0eb9b8050d5927e94e0958a8a232b88cc8cc41d0"
     },
     {
       "scenario": "explicit_candidate_minimum_sufficient",
@@ -128,7 +135,7 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "b74223dab67b3326a1ff2638e241d4835e3a820a57e104e52fba0778ae4fc92f"
+      "full_planner_output_sha256": "acdc8687e50675350f1b98356ca99a50bd7945353e8358f89f3bafe562fca36a"
     },
     {
       "scenario": "redundant_generic_query_also_allowlisted",
@@ -166,23 +173,23 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls": 0,
-      "full_planner_output_sha256": "6ba68894dbda2fb72345b66b7758768e3988118cefa7bd6b98310cce6084df8c"
+      "full_planner_output_sha256": "268a1a086b91ca7183427c3ca7a304b650d36318a2bb0cb74818f63257715994"
     }
   ],
   "claim_ceiling": "Local route-planner proposal only; selection is default-off, caller host declarations are not authority verified, and no candidate execution is authorized by a route proposal.",
   "catalog_replay": {
-    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T22:04:06Z",
+    "replayed_at_utc": "2026-10-26T22:47:07Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,
     "candidate_invoked": false,
     "provider_calls": 0,
     "execution_authorized": false,
     "provider_calls_made": 0,
-    "replay_result_sha256": "a1afc7ebdc32c4f446d90c2a59ae1dd78408fd8ec712be76017e5d77debb20bf",
-    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(',', ':'), ensure_ascii=false) of ordered scenario and full planner output SHA-256 records."
+    "replay_result_sha256": "5028aad6424297be3e938d29340ff62e249af9f128a84ff8e95e3f5cf5c95e63",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   },
   "catalog_replay_history": [
     {
@@ -196,6 +203,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
       "superseded_observed_at_utc": null,
       "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "cc456f0350b041172a8e107881df30086589384a",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:47:07Z"
     }
   ]
 }

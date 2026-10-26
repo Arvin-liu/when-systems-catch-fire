@@ -375,7 +375,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         editorial = next(card for card in candidates if card["tool_id"] == "writing.preflight_cognitive_migration_revision")
         europe_pmc = next(card for card in candidates if card["tool_id"] == "research.search_europe_pmc_query")
         europe_pmc_fulltext = next(card for card in candidates if card["tool_id"] == "research.resolve_europe_pmc_fulltext_locations")
-        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], crossref_search["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], "research.search_openalex_query", updates["tool_id"], pubmed_composition["tool_id"], "research.match_pubmed_citation", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "research.compare_noaa_co2_source_surfaces", noaa_ch4_comparator["tool_id"], "research.compare_noaa_n2o_source_surfaces", europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"]})
+        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], crossref_search["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], "research.search_openalex_query", updates["tool_id"], pubmed_composition["tool_id"], "research.match_pubmed_citation", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "research.compare_noaa_co2_source_surfaces", noaa_ch4_comparator["tool_id"], "research.compare_noaa_n2o_source_surfaces", "research.lookup_noaa_global_n2o_annual_growth", europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"]})
         self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertEqual(crossref_search["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertFalse(crossref_search["router_selectable_by_default"])
@@ -614,6 +614,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             noaa_ch4_comparator["tool_id"],
             "research.compare_noaa_co2_source_surfaces",
             "research.compare_noaa_n2o_source_surfaces",
+            "research.lookup_noaa_global_n2o_annual_growth",
             batch["tool_id"],
             "collaboration.verify_handoff_artifact_files",
             "research.compare_publication_metadata_snapshots",

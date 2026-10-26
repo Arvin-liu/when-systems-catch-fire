@@ -1,18 +1,18 @@
 {
-  "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true,
-    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "execution_authorized": false,
     "observed_at_utc": "2026-10-26T22:04:06Z",
-    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
     "provider_calls_made": 0,
-    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(',', ':'), ensure_ascii=false) of ordered scenario and full planner output SHA-256 records.",
-    "replay_result_sha256": "c230d62cfb1fd583126efa268e03b77b8784f0c0fd00e3c258b3c74a0e330c1c",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
+    "replay_result_sha256": "1a064d6885b577f6cf58a2f75d6b753f0d96011c37178c25f6ed5571357176e3",
     "route_trials_replayed": 2,
     "candidate_invoked": false,
-    "replayed_at_utc": "2026-10-26T22:04:06Z"
+    "replayed_at_utc": "2026-10-26T22:44:00Z"
   },
   "catalog_replay_history": [
     {
@@ -92,6 +92,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
       "superseded_observed_at_utc": null,
       "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "3e3c7365b1c84aa2de6a70542daa26e252f6faec",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:44:00Z"
     }
   ],
   "claim_ceiling": "Offline planner routing only; the candidate was not invoked, no provider was contacted, and no execution permission was granted.",
@@ -107,7 +113,9 @@
     "required_outputs": [
       "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
     ],
-    "task_id": "paired-execution-candidate-performance-resource-analysis"
+    "task_id": "paired-execution-candidate-performance-resource-analysis",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
     {
@@ -368,6 +376,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.lookup_openalex_work_metadata",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -474,12 +486,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968"
+          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
         }
       },
       "router_provider_calls": 0,
       "scenario": "default_off",
-      "selected_permissions": null,
+      "selected_permissions": [],
       "selected_tool_ids": [],
       "relevant_rejections": [
         {
@@ -785,6 +797,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.lookup_openalex_work_metadata",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -891,21 +907,23 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968"
+          "experimental_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
         }
       },
       "router_provider_calls": 0,
       "scenario": "explicit_allowlist",
-      "selected_permissions": {
-        "read_paths": [
-          "ignition/tools/toolbox_execution_pareto_frontier.py"
-        ],
-        "write_paths": [],
-        "network": false,
-        "secrets": false,
-        "billing": false,
-        "external_actions": false
-      },
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/tools/toolbox_execution_pareto_frontier.py"
+          ],
+          "write_paths": [],
+          "network": false,
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
       "selected_tool_ids": [
         "maintenance.summarize_execution_candidate_pareto_frontier"
       ],

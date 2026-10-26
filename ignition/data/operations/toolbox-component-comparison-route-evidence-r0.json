@@ -1,8 +1,8 @@
 {
   "schema_version": "toolbox-component-comparison-route-evidence-r0",
   "tool_id": "maintenance.compare_toolbox_component_coverage",
-  "observed_at_utc": "2026-10-26T22:04:06Z",
-  "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+  "observed_at_utc": "2026-10-26T22:44:00Z",
+  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile": {
     "task_id": "pr264-toolbox-component-scope-comparison",
@@ -15,7 +15,9 @@
     ],
     "allowed_execution_modes": [
       "READ_ONLY_RUN"
-    ]
+    ],
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
     {
@@ -26,7 +28,7 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "router_provider_calls": 0,
-      "selected_permissions": null,
+      "selected_permissions": [],
       "relevant_rejections": [
         {
           "tool_id": "maintenance.compare_toolbox_component_coverage",
@@ -46,16 +48,18 @@
       "execution_authorized": false,
       "candidate_invoked": false,
       "router_provider_calls": 0,
-      "selected_permissions": {
-        "read_paths": [
-          "ignition/tools/toolbox_component_comparison.py"
-        ],
-        "write_paths": [],
-        "network": false,
-        "secrets": false,
-        "billing": false,
-        "external_actions": false
-      },
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/tools/toolbox_component_comparison.py"
+          ],
+          "write_paths": [],
+          "network": false,
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
       "relevant_rejections": []
     }
   ],
@@ -63,7 +67,7 @@
   "candidate_invoked": false,
   "execution_authorized": false,
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
     "all_expected_decisions_reproduced": true,
     "route_trials_replayed": 2,
     "provider_calls_made": 0,
@@ -71,10 +75,10 @@
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "candidate_invoked": false,
     "observed_at_utc": "2026-10-26T22:04:06Z",
-    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "replay_result_sha256": "2411818222cca2c222e83a73474a9b09cb2641b8d3579374a178f970add5cc01",
-    "replayed_at_utc": "2026-10-26T22:04:06Z",
-    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(',', ':'), ensure_ascii=false) of ordered scenario and full planner output SHA-256 records."
+    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "replay_result_sha256": "e9e704c4aaf9107cba4cd7b8da0cdfd19c066873b12b4211dff13b41585b93e5",
+    "replayed_at_utc": "2026-10-26T22:44:00Z",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   },
   "claim_ceiling": "Offline planner proposal only; the candidate was not invoked, no provider was contacted, no lifecycle was changed, and no execution permission was granted.",
   "catalog_replay_history": [
@@ -89,6 +93,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
       "superseded_observed_at_utc": "2026-10-26T20:20:59Z",
       "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "a2b6790d196e24d154d2040322bb86a7711db85d",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": "2026-10-26T22:04:06Z",
+      "replayed_at_utc": "2026-10-26T22:44:00Z"
     }
   ]
 }

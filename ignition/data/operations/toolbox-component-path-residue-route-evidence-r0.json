@@ -1,18 +1,18 @@
 {
-  "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true,
-    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "execution_authorized": false,
     "observed_at_utc": "2026-10-26T22:04:06Z",
-    "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
     "provider_calls_made": 0,
-    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(',', ':'), ensure_ascii=false) of ordered scenario and full planner output SHA-256 records.",
-    "replay_result_sha256": "df5bd863a28b346ee6a81a7c8586904f4f945f4b77a4900400503654fa1a8de4",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
+    "replay_result_sha256": "2aa8eb43ea642bcd2a462534df3b29e21376a728f18e9a9fdd3280aeb1f55379",
     "route_trials_replayed": 2,
     "candidate_invoked": false,
-    "replayed_at_utc": "2026-10-26T22:04:06Z"
+    "replayed_at_utc": "2026-10-26T22:44:00Z"
   },
   "claim_ceiling": "Route planner proposal only; the candidate was not invoked and execution was not authorized.",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
@@ -32,7 +32,9 @@
     "required_outputs": [
       "Deterministic JSON with input/tool SHA-256 digests, exact parent-directory groups, repeated filename-prefix groups, all uncohorted paths, and explicit empty mapping suggestions."
     ],
-    "task_id": "component-validation-path-residue-triage"
+    "task_id": "component-validation-path-residue-triage",
+    "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
     {
@@ -42,7 +44,7 @@
       "include_experimental_tool_ids": [],
       "router_provider_calls": 0,
       "scenario": "default_off",
-      "selected_permissions": null,
+      "selected_permissions": [],
       "selected_tool_ids": [],
       "relevant_rejections": [
         {
@@ -60,17 +62,19 @@
       ],
       "router_provider_calls": 0,
       "scenario": "explicit_allowlist",
-      "selected_permissions": {
-        "billing": false,
-        "external_actions": false,
-        "network": false,
-        "network_hosts": [],
-        "read_paths": [
-          "ignition/tools/toolbox_component_path_residue.py"
-        ],
-        "secrets": false,
-        "write_paths": []
-      },
+      "selected_permissions": [
+        {
+          "billing": false,
+          "external_actions": false,
+          "network": false,
+          "network_hosts": [],
+          "read_paths": [
+            "ignition/tools/toolbox_component_path_residue.py"
+          ],
+          "secrets": false,
+          "write_paths": []
+        }
+      ],
       "selected_tool_ids": [
         "maintenance.summarize_component_path_residue"
       ],
@@ -118,6 +122,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
       "superseded_observed_at_utc": null,
       "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "8297b72ab3fb9ff763fb6eb18cfd299a2afa4dd6",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:44:00Z"
     }
   ]
 }
