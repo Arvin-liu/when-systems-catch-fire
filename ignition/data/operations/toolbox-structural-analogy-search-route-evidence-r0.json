@@ -1,6 +1,6 @@
 {
   "candidate_availability": "EXPERIMENTAL_AVAILABLE_DEFAULT_OFF",
-  "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+  "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
   "candidate_tool_id": "reasoning.search_structural_analogies",
   "claim_ceiling": "Route planner behavior over the recorded local candidate catalog and profile only; no candidate invocation, provider call, permission grant, or task outcome is implied by route selection.",
   "schema_version": "toolbox-structural-analogy-search-route-evidence-r0",
@@ -24,7 +24,7 @@
       "decision": "INCOMPLETE",
       "execution_authorized": false,
       "include_experimental_tool_ids": [],
-      "result_sha256": "db4c0b2ec8c91285e6d00e465db1961bae927e39dfc042e386d29f1d6b3016d9",
+      "result_sha256": "6406fac792e16254fbe67ea0ca3f32a6823a4a9f3f86f2eabf186e424744cfa2",
       "router_provider_calls": 0,
       "selected_tool_ids": [],
       "trial_id": "DEFAULT_OFF"
@@ -36,7 +36,7 @@
       "include_experimental_tool_ids": [
         "reasoning.search_structural_analogies"
       ],
-      "result_sha256": "d5fa8f9b0de5681969ff06c8dae4ec5c4d2633b82348395dad01aeacef5e9d15",
+      "result_sha256": "ced19805043a2f5633002236ac591b45cec24d3152aa1774894132daf6c556bc",
       "router_provider_calls": 0,
       "selected_tool_ids": [
         "reasoning.search_structural_analogies"
@@ -50,7 +50,7 @@
       "include_experimental_tool_ids": [
         "research.preflight_grounded_ideation"
       ],
-      "result_sha256": "e298947322815128d7ec49d83728c0bb883bb58f802949cb7fee6366d1712ee0",
+      "result_sha256": "0816e7bd17fd7e38ce6ba480c47dce19a65afde9932f7ad8d8e33697dfa99690",
       "router_provider_calls": 0,
       "selected_tool_ids": [],
       "trial_id": "EXISTING_GROUNDED_PREFLIGHT_ONLY"
@@ -63,7 +63,7 @@
         "reasoning.search_structural_analogies",
         "research.preflight_grounded_ideation"
       ],
-      "result_sha256": "fbebe8d00d9d0554f942eb4f1e605e72eb3e2e106d637db592e3c17303bc3394",
+      "result_sha256": "db1fe9d2d98c8b0a1329bbd30e1c2a09541f7df7852505434ace2d1cb074b6f5",
       "router_provider_calls": 0,
       "selected_tool_ids": [
         "reasoning.search_structural_analogies"
@@ -73,15 +73,16 @@
   ],
   "catalog_replay": {
     "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
-    "replayed_at_utc": "2026-10-26T21:11:36Z",
+    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "replayed_at_utc": "2026-10-26T22:04:06Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,
     "candidate_invoked": false,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replay_result_sha256": "0dd9660d133c3d5082fa6efad659418ee1ac07f5bc404aa5e0dbd48ff81ca724"
+    "replay_result_sha256": "f3d7c2f33fc4cef7680e41e51f3c2fae878c1cb6990d8b1a459537ab63c5b18f",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(',', ':'), ensure_ascii=false) of ordered scenario and full planner output SHA-256 records."
   },
   "catalog_replay_history": [
     {
@@ -89,6 +90,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
       "superseded_observed_at_utc": null,
       "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "3bdb8d8c7611ab4cc98a8470d8abcbee56a61c4c",
+      "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:04:06Z"
     }
   ]
 }

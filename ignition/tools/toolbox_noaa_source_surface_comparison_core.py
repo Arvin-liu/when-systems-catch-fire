@@ -129,6 +129,35 @@ CH4_PROFILE = SourceProfile(
         "explain causes, or establish a scientific conclusion."
     ),
 )
+N2O_PROFILE = SourceProfile(
+    tool_id="research.compare_noaa_n2o_source_surfaces",
+    tool_version="0.1.0",
+    input_schema_version="toolbox-noaa-n2o-source-surface-comparison-input-r0",
+    output_schema_version="toolbox-noaa-n2o-source-surface-comparison-output-r0",
+    page_url="https://gml.noaa.gov/ccgg/trends_n2o/",
+    page_path="/ccgg/trends_n2o/",
+    raw_url="https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+    raw_path="/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+    source_host=SOURCE_HOST,
+    source_definition_marker=(
+        "annual n2o mole fraction increase (ppb) from jan 1 through dec 31."
+    ),
+    page_heading_marker=(
+        "annual increase in globally-averaged atmospheric nitrous oxide"
+    ),
+    unit="ppb",
+    annual_field="annual_increase_ppb",
+    uncertainty_field="uncertainty_ppb",
+    min_year=2001,
+    max_year=2100,
+    claim_ceiling=(
+        "Exact selected annual atmospheric N2O mole-fraction increases and stated "
+        "uncertainties from two NOAA GML surfaces at retrieval time, plus their "
+        "arithmetic differences. This does not authenticate NOAA, rank the "
+        "surfaces, validate measurements, estimate N2O emissions, attribute "
+        "sources, explain causes, or establish a scientific conclusion."
+    ),
+)
 
 
 class ToolInputError(ValueError):

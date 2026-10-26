@@ -1,0 +1,120 @@
+{
+  "claim_ceiling": "Exact selected annual atmospheric N2O mole-fraction increases and stated uncertainties from two NOAA GML surfaces at retrieval time, plus their arithmetic differences. This does not authenticate NOAA, rank the surfaces, validate measurements, estimate N2O emissions, attribute sources, explain causes, or establish a scientific conclusion.",
+  "comparison": {
+    "exact_match_count": 3,
+    "missing_year_count": 0,
+    "numeric_difference_count": 0,
+    "requested_year_count": 3,
+    "rows": [
+      {
+        "page_annual_increase_ppb": "1.01",
+        "page_minus_raw_annual_increase_ppb": "0.00",
+        "page_minus_raw_uncertainty_ppb": "0.00",
+        "page_uncertainty_ppb": "0.02",
+        "raw_table_annual_increase_ppb": "1.01",
+        "raw_table_uncertainty_ppb": "0.02",
+        "status": "EXACT_MATCH",
+        "year": 2023
+      },
+      {
+        "page_annual_increase_ppb": "1.02",
+        "page_minus_raw_annual_increase_ppb": "0.00",
+        "page_minus_raw_uncertainty_ppb": "0.00",
+        "page_uncertainty_ppb": "0.01",
+        "raw_table_annual_increase_ppb": "1.02",
+        "raw_table_uncertainty_ppb": "0.01",
+        "status": "EXACT_MATCH",
+        "year": 2024
+      },
+      {
+        "page_annual_increase_ppb": "1.23",
+        "page_minus_raw_annual_increase_ppb": "0.00",
+        "page_minus_raw_uncertainty_ppb": "0.00",
+        "page_uncertainty_ppb": "0.01",
+        "raw_table_annual_increase_ppb": "1.23",
+        "raw_table_uncertainty_ppb": "0.01",
+        "status": "EXACT_MATCH",
+        "year": 2025
+      }
+    ],
+    "status": "EXACT_MATCH"
+  },
+  "invocation": {
+    "allow_public_network_flag": true,
+    "requests_made": 2
+  },
+  "non_claims": [
+    "A response digest binds the received bytes but does not independently authenticate NOAA.",
+    "The comparison reports literal numeric differences and does not judge rounding, statistical significance, or which surface is correct.",
+    "The raw response bodies are not retained; the result is not a reproducible archive or independent scientific validation.",
+    "Annual atmospheric growth values are not an emissions inventory, source attribution, or causal explanation."
+  ],
+  "requested_range": {
+    "end_year": 2025,
+    "start_year": 2023
+  },
+  "schema_version": "toolbox-noaa-n2o-source-surface-comparison-output-r0",
+  "sources": {
+    "fixed_raw_table": {
+      "acquisition_status": "OK",
+      "etag": "\"b5d-65d6d473c6dee\"",
+      "http_status": 200,
+      "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+      "parse_status": "FOUND",
+      "raw_response_retained": false,
+      "records": [
+        {
+          "annual_increase_ppb": "1.01",
+          "uncertainty_ppb": "0.02",
+          "year": 2023
+        },
+        {
+          "annual_increase_ppb": "1.02",
+          "uncertainty_ppb": "0.01",
+          "year": 2024
+        },
+        {
+          "annual_increase_ppb": "1.23",
+          "uncertainty_ppb": "0.01",
+          "year": 2025
+        }
+      ],
+      "response_bytes": 2909,
+      "response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d",
+      "retrieved_at_utc": "2026-10-26T21:54:10Z",
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt"
+    },
+    "provider_page": {
+      "acquisition_status": "OK",
+      "etag": null,
+      "http_status": 200,
+      "last_modified": null,
+      "parse_status": "FOUND",
+      "raw_response_retained": false,
+      "records": [
+        {
+          "annual_increase_ppb": "1.01",
+          "uncertainty_ppb": "0.02",
+          "year": 2023
+        },
+        {
+          "annual_increase_ppb": "1.02",
+          "uncertainty_ppb": "0.01",
+          "year": 2024
+        },
+        {
+          "annual_increase_ppb": "1.23",
+          "uncertainty_ppb": "0.01",
+          "year": 2025
+        }
+      ],
+      "response_bytes": 37383,
+      "response_sha256": "26224346d22b2e37312df032566be078fb8ea3af25092e164ac54cda5885e2db",
+      "retrieved_at_utc": "2026-10-26T21:54:09Z",
+      "url": "https://gml.noaa.gov/ccgg/trends_n2o/"
+    }
+  },
+  "status": "COMPARED",
+  "tool_id": "research.compare_noaa_n2o_source_surfaces",
+  "tool_version": "0.1.0"
+}

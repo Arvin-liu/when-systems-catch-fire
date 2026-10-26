@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-evidence-update-snapshot-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T20:20:59Z",
+  "observed_at_utc": "2026-10-26T22:04:06Z",
   "candidate_tool_id": "research.compare_evidence_update_snapshots",
-  "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+  "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
@@ -65,13 +65,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 81,
-        "omitted_rejected_candidate_count": 80,
+        "rejected_candidate_count": 82,
+        "omitted_rejected_candidate_count": 81,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "d85e0f3acccb48cb70b412a3c4a50ea0e249cd3860a97d257da8289bf8c53387",
+      "planner_output_sha256": "437ce47bdbdca7f901b52a83ac1065ac86d1e0a02bc23385010e17e9f975f7b1",
       "decision": "INCOMPLETE"
     },
     {
@@ -134,13 +134,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 80,
-        "omitted_rejected_candidate_count": 79,
+        "rejected_candidate_count": 81,
+        "omitted_rejected_candidate_count": 80,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "dc4b9828da4a9cdc32f1c153a6317825ffa8a7c73a0bce3830c9192da86cff3e",
+      "planner_output_sha256": "b0f5b105fa46147fc57d9e9064c3311b513724a9e6f573b19cd9d0a71ccb946d",
       "decision": "COMPLETE"
     },
     {
@@ -204,13 +204,13 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           }
         ],
-        "rejected_candidate_count": 80,
-        "omitted_rejected_candidate_count": 79,
+        "rejected_candidate_count": 81,
+        "omitted_rejected_candidate_count": 80,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "74c86c59e72626d69c63b2fb0c39281f2c47f7580ee220d4eb2d2adbba338455",
+      "planner_output_sha256": "4512d9e53a590d3a9efacbefa49b6665834a33f594695cf0db419f4eb1ad9f9f",
       "decision": "COMPLETE"
     }
   ],
@@ -229,9 +229,9 @@
   "provider_calls_made": 0,
   "claim_ceiling": "Offline route planning only. The candidate was not invoked, no provider was called, and no permission, Owner approval, scientific validity, or Current promotion is established.",
   "catalog_replay": {
-    "replayed_at_utc": "2026-10-26T21:11:36Z",
+    "replayed_at_utc": "2026-10-26T22:04:06Z",
     "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+    "candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
@@ -239,7 +239,8 @@
     "provider_calls_made": 0,
     "execution_authorized": false,
     "scope": "Only candidate catalog digest and rejected-candidate counts changed; selected tools, decisions, and permission boundary were reproduced unchanged.",
-    "replay_result_sha256": "3292c0e2e7b851d0ef2cd1d75eeb5f668e8610223b754d48337c532d5aa89697"
+    "replay_result_sha256": "1523a0896f993931b569882b8d40b57027e2196c4f06b496df7ffff4c4400841",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(',', ':'), ensure_ascii=false) of ordered scenario and full planner output SHA-256 records."
   },
   "catalog_replay_history": [
     {
@@ -247,6 +248,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
       "superseded_observed_at_utc": "2026-10-26T20:20:59Z",
       "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "6aa8d3abd95e909819efb49e9ee620a5dda8fd08",
+      "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+      "superseded_observed_at_utc": "2026-10-26T20:20:59Z",
+      "replayed_at_utc": "2026-10-26T22:04:06Z"
     }
   ]
 }
