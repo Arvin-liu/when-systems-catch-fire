@@ -1,11 +1,11 @@
 {
-  "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true,
-    "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+    "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "execution_authorized": false,
-    "observed_at_utc": "2026-10-26T17:44:00Z",
+    "observed_at_utc": "2026-10-26T20:20:59Z",
     "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
     "provider_calls_made": 0,
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
@@ -445,7 +445,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b"
+          "experimental_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2"
         }
       },
       "router_provider_calls": 0,
@@ -846,7 +846,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b"
+          "experimental_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2"
         }
       },
       "router_provider_calls": 0,

@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-noaa-ch4-source-surface-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T17:33:47Z",
+  "observed_at_utc": "2026-10-26T20:20:59Z",
   "candidate_tool_id": "research.compare_noaa_ch4_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-route-profile-r0.json",
@@ -66,13 +66,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 78,
-        "omitted_rejected_candidate_count": 77,
+        "rejected_candidate_count": 80,
+        "omitted_rejected_candidate_count": 79,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "91a6c3a35c898d13ae0ec7460aaeeb73e851b69d7e6d2ebf737774747db51ef9"
+      "planner_output_sha256": "f811ba915aeb624192fb917d0600b257469dfcb8c43a45ae197bc5feca8a63a0"
     },
     {
       "scenario": "EXPLICIT_EXACT_HOST",
@@ -125,13 +125,13 @@
         ],
         "unmet_outputs": [],
         "relevant_rejections": [],
-        "rejected_candidate_count": 77,
-        "omitted_rejected_candidate_count": 77,
+        "rejected_candidate_count": 79,
+        "omitted_rejected_candidate_count": 79,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "05e0bd33798aa46af10bddbbed614206622197d9fd9328a341060f30545aa154"
+      "planner_output_sha256": "c53bb37a05b12a75d71124237017f59077b4832e9fce2a5fd588cdfc7bd92317"
     },
     {
       "scenario": "EXPLICIT_MISSING_HOST",
@@ -186,13 +186,13 @@
             "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
           }
         ],
-        "rejected_candidate_count": 78,
-        "omitted_rejected_candidate_count": 77,
+        "rejected_candidate_count": 80,
+        "omitted_rejected_candidate_count": 79,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "43eaef4847819342a522363538c098cbd5c1101be5b5fd4cbbe29853ebfad6f4"
+      "planner_output_sha256": "5133841c81704ec72c12ae6b5d2373b65a55f5888d1d43eac4155d21efd24b16"
     }
   ],
   "summary": {

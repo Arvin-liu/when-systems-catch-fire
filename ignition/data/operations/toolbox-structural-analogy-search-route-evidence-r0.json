@@ -1,6 +1,6 @@
 {
   "candidate_availability": "EXPERIMENTAL_AVAILABLE_DEFAULT_OFF",
-  "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
   "candidate_tool_id": "reasoning.search_structural_analogies",
   "claim_ceiling": "Route planner behavior over the recorded local candidate catalog and profile only; no candidate invocation, provider call, permission grant, or task outcome is implied by route selection.",
   "schema_version": "toolbox-structural-analogy-search-route-evidence-r0",
@@ -73,8 +73,8 @@
   ],
   "catalog_replay": {
     "previous_candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
-    "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
-    "replayed_at_utc": "2026-10-26T17:44:00Z",
+    "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+    "replayed_at_utc": "2026-10-26T20:20:59Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,
     "candidate_invoked": false,

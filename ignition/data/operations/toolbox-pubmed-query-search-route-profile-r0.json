@@ -16,6 +16,6 @@
     "eutils.ncbi.nlm.nih.gov"
   ],
   "route_default": "EXCLUDED",
-  "candidate_catalog_git_blob_sha1": "ac99334eafbfe6b3b13a57ae78f713c2504b5e6f",
+  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
 }

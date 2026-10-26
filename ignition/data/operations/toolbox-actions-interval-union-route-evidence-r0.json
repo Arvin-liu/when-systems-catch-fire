@@ -78,7 +78,7 @@
   "scenario_result_set_sha256": "74ab7d432ce2df786f2075add7914f0ff63813310217f0a92451749919072fcb",
   "source_refs": {
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "experimental_candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b"
+    "experimental_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2"
   },
   "planner_execution_authorized": false,
   "claim_ceiling": "Route proposal comparison only; no analyzer invocation, network access, billing estimate, execution authorization, CI decision, or release permission."

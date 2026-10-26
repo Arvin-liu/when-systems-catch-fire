@@ -22,7 +22,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "1ba91a4e376ccdafb9fb568f58e852c12352cbc5197489e42da5bb786afe43a1"
+      "planner_output_projection_sha256": "5e127c50e1eff23705d68bcc623af9704434432ba44d66e7b3c0f041c07f61d4"
     },
     {
       "trial_id": "explicit_allowlist",
@@ -41,7 +41,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "acbf86fdcc6d593e9f40c077451e7577bb157c6fbe2feeaacf513e87101b9bdf"
+      "planner_output_projection_sha256": "df93864fdc90e9694d0d1752f77c818e9137f34068b336a0174747e2bb357782"
     },
     {
       "trial_id": "with_unrelated_candidate",
@@ -61,7 +61,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "ca12eaf0ccc6aed3670e1036f22a04480c8b1e1dc9ea53af3df473c076cc7e20"
+      "planner_output_projection_sha256": "64459da577c30cfd5b6901d9c121e5ddd569999ec7394b5db6da6dc9b6cdd112"
     }
   ],
   "provider_call_count": 0,
@@ -69,9 +69,9 @@
   "execution_authorized": false,
   "interpretation": "Route planner results are proposals only. The default profile excludes the optional tool; an explicit experimental allowlist permits a route proposal. An unrelated read-only experimental candidate is rejected for input mismatch. This evidence does not invoke the candidate or grant task authority. The planner-output digest excludes source_refs to avoid a candidate-catalog/evidence self-reference cycle.",
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+    "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T17:44:00Z",
+    "replayed_at_utc": "2026-10-26T20:20:59Z",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
     "candidate_tool_invocation_count": 0,
