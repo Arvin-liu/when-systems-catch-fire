@@ -8881,6 +8881,209 @@
         "Do not route for known DOI verification, exhaustive or bulk retrieval, abstract/full-text review, or when local checked-out evidence already satisfies the task."
       ],
       "claim_ceiling": "At most ten selected Crossref Works metadata rows returned for one caller-supplied query at retrieval time. The search does not establish relevance, exhaustive recall, source authenticity, metadata completeness or correctness, article content, correction/retraction status, scientific support, or scientific quality."
+    },
+    {
+      "tool_id": "research.preflight_grounded_ideation",
+      "display_name": {
+        "zh": "有来源锚点的研究构想预检器",
+        "en": "Grounded Ideation Preflight"
+      },
+      "description": "Check one caller-supplied research-ideation packet for bounded source/anchor structure and falsifiable proposal fields without retrieving sources or judging their meaning.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no scientific or Owner authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_grounded_ideation_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_grounded_ideation_preflight.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-source-binding-r0.json",
+          "role": "PINNED_BLUEPRINT_AND_OWNER_SCOPE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-c1-evidence-r0.json",
+          "role": "C1_ADJACENT_CONTRACT_COMPARISON_AND_UNCERTAINTY"
+        },
+        {
+          "path": "ignition/tools/toolbox_grounded_ideation_preflight.py",
+          "role": "READ_ONLY_BOUNDED_PREFLIGHT_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/schemas/operations/grounded-ideation-preflight-r0.schema.json",
+          "role": "PUBLIC_INPUT_SHAPE"
+        },
+        {
+          "path": "ignition/docs/operations/grounded-ideation-preflight.md",
+          "role": "USER_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-grounded-ideation-preflight/valid-input-r0.json",
+          "role": "SYNTHETIC_INTERFACE_EXAMPLE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_grounded_ideation_preflight.py",
+          "role": "FOCUSED_POSITIVE_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_TEST"
+        },
+        {
+          "path": "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+          "role": "ADJACENT_DIFFERENT_GOAL_AUTHORITY_PREFLIGHT"
+        },
+        {
+          "path": "ignition/tools/toolbox_validate_evidence_program.py",
+          "role": "ADJACENT_FIXED_EVIDENCE_PROGRAM_VALIDATOR"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-route-profile-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_TASK_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_LOCAL_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "IDENTITY_CARD_BOUNDS_AND_EVIDENCE_CHECK"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-smoke-evidence-r0.json",
+          "role": "SYNTHETIC_LOCAL_CLI_SMOKE_RECEIPT"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/grounded-ideation-preflight-r0.schema.json"
+      ],
+      "good_for": [
+        "Checking that each cited evidence anchor resolves to a caller-supplied source marked USED rather than ATTACHED.",
+        "Checking that a quoted string appears exactly inside the caller-supplied excerpt, while leaving source authenticity and semantic support unverified.",
+        "Checking for explicit contrary evidence, a source-to-target relation map, mapping assumptions and boundaries, a closest in-domain alternative, and a falsifiable minimum experiment.",
+        "Returning a bounded structural preflight before a separate human semantic review."
+      ],
+      "not_for": [
+        "Finding research gaps, searching literature, establishing novelty, or ranking ideas.",
+        "Authenticating citations or verifying that an excerpt accurately represents an external source.",
+        "Deciding whether evidence supports or contradicts an interpretation, validating causal transfer, or accepting a scientific finding.",
+        "Performing independent review, running experiments, training a model, dispatching an Agent, or publishing a result."
+      ],
+      "only_if": [
+        "The caller explicitly selects this default-off candidate for one local structural preflight.",
+        "The task packet is non-sensitive and the supplied excerpts may be handled locally under their source-use restrictions.",
+        "The caller understands that quote matching is only a substring check against untrusted supplied text and that a ready status still requires human review."
+      ],
+      "counterindicated_when": [
+        "Current source authenticity, citation validity, literature coverage, semantic support, novelty, or scientific acceptance must be established.",
+        "The input contains secrets, personal information, restricted text, or material that should not be placed in a local tool input.",
+        "The task requires model inference, network retrieval, a provider, experiment execution, external action, or automatic idea selection."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object matching ignition/schemas/operations/grounded-ideation-preflight-r0.schema.json, read from stdin and capped at 262144 bytes."
+      ],
+      "output_types": [
+        "Bounded structural status, reason-coded findings, counts and SHA-256 of the exact input bytes.",
+        "Explicit source-authenticity, semantic-support, independent-review, scientific-acceptance, network, write and execution-authority ceilings; quotes and source excerpts are omitted."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_CALLER_SUPPLIED_STDIN",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads at most 262145 stdin bytes and emits one bounded JSON result on stdout.",
+        "Does not open repository, temporary, provider, or output files and does not make network requests."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No calibrated latency or memory profile has been measured; input and output sizes are bounded."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.preflight_g1_goal_intake",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Checks goal and authority lineage; it does not check proposal evidence anchors, contrary evidence, cross-domain mapping, or falsifier structure."
+        },
+        {
+          "tool_id": "research.validate_evidence_program_snapshot",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Validates a fixed evidence-program tree; this tool accepts one caller-supplied ideation packet and does not validate that tree."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Preflight one caller-supplied ideation packet for source-anchor, gap, transfer-mapping, falsifier, and abstention structure before human review."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "A low-cost input/output contract comparison found adjacent G1 Goal intake and fixed Evidence Program validation tools with different inputs and purposes. No same-task outcome or cost comparison was run.",
+        "compared_tool_ids": [
+          "research.preflight_g1_goal_intake",
+          "research.validate_evidence_program_snapshot"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-grounded-ideation-preflight-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-grounded-ideation-preflight-source-binding-r0.json",
+          "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+          "ignition/tools/toolbox_validate_evidence_program.py"
+        ],
+        "findings": [
+          "The new input contract covers cited gap support and contrary evidence, an explicit mechanism mapping, and falsifiable proposal fields not covered by the adjacent tools.",
+          "The comparison is not evidence of correctness, utility, superiority, scientific benefit, or replacement value; preserve COMPARISON_UNKNOWN and retire no tool."
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+          "ignition/tools/toolbox_validate_evidence_program.py"
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "This is a new optional specialization; no same-task comparison supports retirement or replacement conclusions."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation, schema, workflow, or canonical research state is migrated; invocation remains explicit and optional."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, wrapper, schema, docs, fixture, tests, and evidence, then regenerate identity-card and human toolbox projections; preserve source history and negative-control results."
+        ]
+      },
+      "fallback": "Use a human-authored checklist or existing task-specific validation. If the packet cannot meet the structure, return INCOMPLETE and abstain; do not infer a supported gap or mechanism.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_grounded_ideation_preflight.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Duplicate keys, invalid UTF-8, unknown fields, oversized payloads, invalid source IDs and invalid dates fail closed.",
+          "Quotes absent from caller-supplied excerpts, attached-only sources used as evidence, unresolved source references and post-cutoff evidence do not receive a ready status.",
+          "Missing contrary evidence, transfer boundaries, assumptions, controls or falsifiers remain incomplete.",
+          "Even a structurally ready packet explicitly reports source authenticity, semantic support, independent review, scientific acceptance and execution authorization as unestablished."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Keep excluded unless the caller explicitly allowlists this experimental tool for a local research-proposal structure check.",
+        "The route is proposal-only; it does not search, evaluate ideas, authorize a research task, or establish scientific acceptance.",
+        "Do not select when a current-source, semantic, novelty, independent-review, model, network, or experiment capability is required."
+      ],
+      "claim_ceiling": "Structural consistency and caller-excerpt substring checks on one untrusted packet only. No source authenticity, semantic support, novelty, causal transfer, independent review, experiment, scientific truth, or completion is established."
     }
   ]
 }

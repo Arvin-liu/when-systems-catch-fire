@@ -1,0 +1,36 @@
+{
+  "schema_version": "toolbox-grounded-ideation-preflight-source-binding-r0",
+  "tool_id": "research.preflight_grounded_ideation",
+  "tool_version": "0.1.0",
+  "blueprint_source": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "commit": "9dae5a0d73f66c8b0b6d01c0c6ca14fad34cc03a",
+    "path": "sources/IDEASCIENTIST-RESEARCH-IDEATION-CANDIDATE-R0.json",
+    "blob_sha1": "0abdc502b07fd77cedb129db91f8ae2ce85499a4",
+    "candidate_key": "grounded_cross_domain_ideation",
+    "authority": "WORKBENCH_ONLY_NONCANONICAL"
+  },
+  "owner_direction": {
+    "repository": "Arvin-liu/1111",
+    "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "scope": "Implement eligible existing blueprint components as optional, bounded toolbox candidates; preserve their individual authority, dependency, and evidence limits."
+  },
+  "implementation_scope": {
+    "kind": "OFFLINE_STRUCTURAL_PREFLIGHT",
+    "does_not_implement": [
+      "IdeaScientist model or paper reproduction",
+      "literature discovery or prior-art search",
+      "semantic claim review or independent scientific review",
+      "training, provider integration, experiment execution, or publication"
+    ],
+    "external_code_or_data_imported": false,
+    "network_used": false,
+    "claim_ceiling": "Local structure and quote-substring checks on one untrusted caller-supplied packet only."
+  },
+  "source_constraints": [
+    "The Workbench candidate is noncanonical and requires explicit current authorization before a trial.",
+    "The current Owner toolbox-growth direction authorizes eligible isolated tool work; this implementation is only an offline preflight and does not activate the candidate research workflow.",
+    "The referenced paper and third-party repository were not independently re-evaluated or imported for this implementation."
+  ]
+}

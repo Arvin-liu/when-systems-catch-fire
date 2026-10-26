@@ -720,6 +720,33 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         validator_spec.loader.exec_module(validator)
         self.assertEqual(validator.validate(), [])
 
+    def test_grounded_ideation_card_keeps_quote_and_science_limits_explicit(self) -> None:
+        document = TOOL.build_cards()
+        card = next(item for item in document["cards"] if item["tool_id"] == "research.preflight_grounded_ideation")
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertEqual(card["evidence_level"], "SYNTHETIC_ONLY")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(
+            card["comparison_evidence"]["compared_tool_ids"],
+            ["research.preflight_g1_goal_intake", "research.validate_evidence_program_snapshot"],
+        )
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertTrue(card["unique_remaining_use_cases"])
+        self.assertIn("semantic support", card["claim_ceiling"])
+        self.assertIn("grounded-ideation-preflight-r0.schema.json", " ".join(ref["path"] for ref in card["source_refs_with_hashes"]))
+        self.assertIn(
+            "toolbox-grounded-ideation-preflight-route-evidence-r0.json",
+            " ".join(ref["path"] for ref in card["source_refs_with_hashes"]),
+        )
+
     def test_legacy_candidate_without_c1_fields_defaults_to_unknown(self) -> None:
         validator_path = IGNITION_ROOT / "tools/operations/validate_toolbox_candidates.py"
         validator_spec = importlib.util.spec_from_file_location("validate_toolbox_candidates_legacy", validator_path)

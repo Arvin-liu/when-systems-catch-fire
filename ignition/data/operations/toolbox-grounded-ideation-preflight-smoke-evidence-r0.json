@@ -1,0 +1,26 @@
+{
+  "schema_version": "toolbox-grounded-ideation-preflight-smoke-evidence-r0",
+  "tool_id": "research.preflight_grounded_ideation",
+  "tool_version": "0.1.0",
+  "input_path": "ignition/tests/fixtures/toolbox-grounded-ideation-preflight/valid-input-r0.json",
+  "input_sha256": "efb2cb6786e69ade7a80271ee6805760ef71ee043844686a8c56ab3161b31cdb",
+  "output_sha256": "6aa0fdfd5762e63d41f460625ecdd504c0a3f94ab9eefdcbcade5db522b3f044",
+  "return_code": 0,
+  "status": "PREFLIGHT_READY_FOR_HUMAN_REVIEW",
+  "counts": {
+    "anchors": 3,
+    "attached_sources": 1,
+    "mechanism_mappings": 1,
+    "sources": 2,
+    "used_sources": 1
+  },
+  "source_authenticity": "NOT_ESTABLISHED",
+  "semantic_support": "NOT_VERIFIED",
+  "independent_review": "NOT_PERFORMED",
+  "scientific_acceptance": "NOT_ESTABLISHED",
+  "network_requests": 0,
+  "repository_writes": 0,
+  "execution_authorized": false,
+  "synthetic_only": true,
+  "claim_ceiling": "Deterministic local interface smoke on one synthetic packet; no task utility, semantic correctness, scientific benefit, or real research outcome is established."
+}
