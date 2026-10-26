@@ -4926,6 +4926,233 @@
       }
     },
     {
+      "tool_id": "research.compare_noaa_co2_source_surfaces",
+      "display_name": {
+        "zh": "NOAA CO₂ 双来源表面对照器",
+        "en": "NOAA CO2 Source-Surface Comparator"
+      },
+      "description": "Compare NOAA GML's rendered annual global CO2 growth page with its fixed raw table for a bounded year range, preserving both reported values, uncertainties, retrieval metadata, response digests, and literal differences.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; NOAA GML source-use page requests fair credit for its measurements and data.",
+      "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_compare_noaa_co2_surfaces.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_noaa_co2_surfaces.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_compare_noaa_co2_surfaces.py",
+          "role": "FIXED_ENDPOINT_TWO_SURFACE_READ_ONLY_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-co2-source-surface-comparison-input-r0.schema.json",
+          "role": "BOUNDED_YEAR_RANGE_INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-co2-source-surface-comparison-output-r0.schema.json",
+          "role": "PROVENANCE_AND_COMPARISON_OUTPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-input-r0.json",
+          "role": "REAL_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-output-r0.json",
+          "role": "CAPTURED_REAL_TASK_OUTCOME_NOT_SCIENTIFIC_VALIDATION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-route-profile-r0.json",
+          "role": "MATCHED_TASK_ROUTING_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_EXPLICIT_HOST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-c1-evidence-r0.json",
+          "role": "SAME_TASK_C1_COMPARISON_AND_COEXISTENCE_DISPOSITION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-surface-source-binding-r0.json",
+          "role": "OWNER_INSTRUCTION_IMPLEMENTATION_AND_PRIMARY_SOURCE_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-co2-source-review-r0.json",
+          "role": "HISTORICAL_PAGE_RAW_DIFFERENCE_LEAD_NOT_CURRENT_TRUTH"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-co2-source-surface-comparison.md",
+          "role": "USER_SCOPE_COSTS_LIMITS_AND_FALLBACK"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_compare_noaa_co2_surfaces.py",
+          "role": "MOCKED_SOURCE_CONTRACT_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_compare_noaa_co2_surfaces_routing.py",
+          "role": "DEFAULT_OFF_EXACT_HOST_AND_NO_EXECUTION_ROUTING_TEST"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "GENERATED_IDENTITY_CARD_PROJECTION_TEST"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_DEFAULT_OFF_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "role": "COMPARATOR_RAW_TABLE_ONLY_NOAA_CO2_TOOL"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "role": "RAW_TABLE_ONLY_TOOL_CONTRACT"
+        },
+        {
+          "path": "ignition/tools/toolbox_compare_evidence_update_snapshots.py",
+          "role": "COMPARATOR_TEMPORAL_EVIDENCE_STATE_TOOL"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_evidence_update_snapshot_comparator.py",
+          "role": "TEMPORAL_EVIDENCE_STATE_TOOL_CONTRACT"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Comparing the same requested year range on NOAA GML's rendered CO2 growth page and fixed raw table, including both reported annual increments and uncertainties.",
+        "Detecting literal provider-surface disagreements or missing years while keeping each source's retrieval time, HTTP metadata, and response digest attached.",
+        "A matched real task where the required output includes both the page and raw-table values; a raw-only lookup does not satisfy this cross-surface task."
+      ],
+      "not_for": [
+        "Authenticating NOAA, deciding which surface is correct, explaining a disagreement, validating measurements, or asserting a scientific conclusion.",
+        "Estimating emissions, attributing sources or sectors, or making causal claims from atmospheric growth values.",
+        "Arbitrary URLs, station-level or monthly observations, long-term archival, or a reproducible raw-response archive."
+      ],
+      "only_if": [
+        "The caller has decided that two public NOAA GML requests are appropriate and passes --allow-public-network for this invocation.",
+        "The request contains exactly schema_version, start_year, and end_year; years are exact JSON integers from 1959 through 2100 and the inclusive range is at most 50 years.",
+        "A route explicitly includes this candidate ID and allows the exact gml.noaa.gov host; route planning does not grant network or execution permission."
+      ],
+      "counterindicated_when": [
+        "Public network access is disallowed, or the task does not need a simultaneous rendered-page versus raw-table comparison.",
+        "Only one raw table value is required; the existing NOAA CO2 reader uses one request and retains that valuable lower-request-count scope.",
+        "A pinned historical page response, source authentication, emissions inventory, attribution, causal explanation, or independent scientific validation is required."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with schema_version toolbox-noaa-co2-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1959–2100 inclusive; no more than 50 inclusive years); arbitrary URL fields are rejected."
+      ],
+      "output_types": [
+        "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+        "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_compare_noaa_co2_surfaces.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When separately invoked with --allow-public-network, sends exactly two HTTPS GET requests to the fixed NOAA GML rendered page and raw-table paths; redirects are not followed.",
+        "Writes only a bounded JSON result to stdout and errors to stderr; does not write repository files, retain raw response bodies, or transmit a caller-supplied URL."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The tool makes two fixed public GET requests, one more than the raw-only NOAA CO2 reader. Monetary cost, latency, parser reliability, and service quality have not been comparably measured."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The existing tool provides a valuable raw-table-only CO2 lookup with one GET; it does not retrieve or compare the rendered page surface."
+        },
+        {
+          "tool_id": "research.compare_evidence_update_snapshots",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The existing tool compares predecessor/successor evidence-state records over time; it does not retrieve and compare contemporaneous provider surfaces for one series."
+        }
+      ],
+      "fallback": "If the two-request network comparison is not appropriate, use the raw-only NOAA reader for raw-table-only tasks or consult a suitably pinned source snapshot. If either retrieval fails, report its explicit acquisition status; do not infer a zero, rank the source surfaces, or call a cached observation live.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_compare_noaa_co2_surfaces.py",
+          "ignition/tests/test_toolbox_compare_noaa_co2_surfaces_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Without --allow-public-network, the CLI sends zero requests and emits no comparison result.",
+          "Duplicate JSON keys, Boolean years, extra URL fields, reversed or out-of-range years, and ranges above 50 years are rejected before network access.",
+          "Only the two fixed HTTPS paths on gml.noaa.gov are queried; redirects, wrong content types, oversized or slow bodies, wrong-species markers, malformed rows, and invalid uncertainties fail closed.",
+          "Default routing excludes this candidate; explicit allowlisting requires the exact gml.noaa.gov host and still sets execution_authorized=false; omitting the host rejects the candidate.",
+          "A live exact match does not explain the historical page/raw difference, establish source authenticity, or validate the measurements."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task that requires both same-range NOAA GML rendered-page and raw-table values.",
+        "Require the route profile to include gml.noaa.gov exactly; route planning is not network permission or execution authorization.",
+        "Every actual CLI invocation separately requires --allow-public-network and a task-specific decision to make both public requests.",
+        "Do not select for raw-table-only CO2 lookup, methane observations, emissions inventory, causal analysis, or bibliographic metadata."
+      ],
+      "claim_ceiling": "Provider-reported annual CO2 growth and stated uncertainty values on two fixed NOAA GML surfaces at capture time, with exact arithmetic differences only. This comparison does not authenticate the source, rank the surfaces, explain a difference, validate measurements, estimate emissions, attribute sources, or establish a scientific conclusion.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Detect whether NOAA's rendered global CO2 growth page and fixed raw table report the same annual values and uncertainties for a selected year range at near-contemporaneous retrieval."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Same-task functional comparison against the existing NOAA raw-table-only CO2 reader and temporal evidence-update snapshot comparator, using the matched page-versus-raw real task and current exact-match capture.",
+        "compared_tool_ids": [
+          "research.lookup_noaa_global_co2_annual_growth",
+          "research.compare_evidence_update_snapshots"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_noaa_co2_annual_growth.py",
+          "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
+          "ignition/tools/toolbox_compare_evidence_update_snapshots.py",
+          "ignition/tests/test_toolbox_evidence_update_snapshot_comparator.py",
+          "ignition/tools/toolbox_compare_noaa_co2_surfaces.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-noaa-co2-source-surface-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-co2-source-surface-comparison-real-task-output-r0.json",
+          "ignition/data/operations/toolbox-noaa-co2-source-review-r0.json"
+        ],
+        "findings": [
+          "The new two-request tool adds contemporaneous rendered-page/raw-table disagreement detection. The raw-only CO2 reader remains useful for its one-request lower-cost raw-table task, while the temporal snapshot comparator remains useful for predecessor/successor evidence-state changes.",
+          "The live 2026-10-26 2023–2025 capture matched exactly across both NOAA surfaces; the historical 2023 2.70-versus-2.69 ppm observation remains unexplained.",
+          "Evidence supports coexistence by task scope; it does not establish comparative reliability, service quality, monetary cost, or a reason to retire either incumbent."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Retain as an optional specialized source-surface comparison. C1 evidence shows the raw-only lookup and temporal snapshot comparison still have distinct valuable uses; no incumbent is replaced or retired."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "This is an optional experimental candidate only; no Current registry entry, default route, permission grant, or existing-tool lifecycle change is made.",
+          "Keep the raw-only NOAA CO2 reader for one-source tasks and the temporal evidence comparator for same-claim predecessor/successor comparisons."
+        ],
+        "rollback_steps": [
+          "Remove this candidate catalog entry, implementation, focused tests, route profile/evidence, schemas, source-binding record, and operation note from the isolated branch; regenerate identity cards and TOOLBOX.md.",
+          "Preserve the C1 and historical-source evidence needed to explain the coexistence/retention decision, even if the candidate code is removed."
+        ]
+      }
+    },
+    {
       "tool_id": "research.lookup_openalex_work_metadata",
       "display_name": {
         "zh": "OpenAlex Work 元数据查询器",

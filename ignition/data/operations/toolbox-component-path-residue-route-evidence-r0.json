@@ -1,12 +1,12 @@
 {
-  "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+  "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true,
-    "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+    "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "execution_authorized": false,
-    "observed_at_utc": "2026-10-26T03:18:22Z",
-    "previous_candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+    "observed_at_utc": "2026-10-26T16:59:55Z",
+    "previous_candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
     "provider_calls_made": 0,
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
     "replay_result_sha256": "763e97e9751ac4e15c02e2076e54824500bf845c32243199f1bed18af642c093",
@@ -42,7 +42,13 @@
       "router_provider_calls": 0,
       "scenario": "default_off",
       "selected_permissions": null,
-      "selected_tool_ids": []
+      "selected_tool_ids": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "maintenance.summarize_component_path_residue",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
     },
     {
       "candidate_invoked": false,
@@ -66,7 +72,8 @@
       },
       "selected_tool_ids": [
         "maintenance.summarize_component_path_residue"
-      ]
+      ],
+      "relevant_rejections": []
     }
   ],
   "schema_version": "component-path-residue-route-evidence-r0",
@@ -87,6 +94,17 @@
       "provider_calls_made": 0,
       "replay_result_sha256": "763e97e9751ac4e15c02e2076e54824500bf845c32243199f1bed18af642c093",
       "route_trials_replayed": 2
+    },
+    {
+      "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "observed_at_utc": "2026-10-26T16:59:55Z",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_result_sha256": "763e97e9751ac4e15c02e2076e54824500bf845c32243199f1bed18af642c093"
     }
   ]
 }

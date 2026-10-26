@@ -22,7 +22,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "cff05cd1c1ec628aaf442ca2d5bdd748c09559c86323baef0b25ade7700bd5b1"
+      "planner_output_projection_sha256": "17ac74351a2fe88f23a9159bce9a568f0d58008fb2a3841cef3af00865d881fc"
     },
     {
       "trial_id": "explicit_allowlist",
@@ -41,7 +41,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "1673d382d8534f4d3aeee599ce386478c1d6f8b3679ceaac509d306bbdc59a95"
+      "planner_output_projection_sha256": "5ded3e71b687f7f7f1db67c9b2697166e500eb7d543fd3d84746c5981f14ac43"
     },
     {
       "trial_id": "with_unrelated_candidate",
@@ -61,11 +61,21 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "9d1099f6a64dac6ab277dad8cfad78dc3953fb33163293879002d38c3de05438"
+      "planner_output_projection_sha256": "3f6eb55e808c5dbeb06fc63e382da17222915785682cafbaf81c6e704523d78c"
     }
   ],
   "provider_call_count": 0,
   "candidate_tool_invocation_count": 0,
   "execution_authorized": false,
-  "interpretation": "Route planner results are proposals only. The default profile excludes the optional tool; an explicit experimental allowlist permits a route proposal. An unrelated read-only experimental candidate is rejected for input mismatch. This evidence does not invoke the candidate or grant task authority. The planner-output digest excludes source_refs to avoid a candidate-catalog/evidence self-reference cycle."
+  "interpretation": "Route planner results are proposals only. The default profile excludes the optional tool; an explicit experimental allowlist permits a route proposal. An unrelated read-only experimental candidate is rejected for input mismatch. This evidence does not invoke the candidate or grant task authority. The planner-output digest excludes source_refs to avoid a candidate-catalog/evidence self-reference cycle.",
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-26T17:00:31Z",
+    "route_trials_replayed": 3,
+    "all_expected_decisions_reproduced": true,
+    "candidate_tool_invocation_count": 0,
+    "provider_call_count": 0,
+    "execution_authorized": false
+  }
 }

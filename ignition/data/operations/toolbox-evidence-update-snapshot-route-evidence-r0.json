@@ -3,7 +3,7 @@
   "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
   "observed_at_utc": "2026-10-26T10:26:08Z",
   "candidate_tool_id": "research.compare_evidence_update_snapshots",
-  "candidate_catalog_git_blob_sha1": "b1b1172033047bd3d9b2c8ca1f16f4e670dc2d6f",
+  "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
@@ -65,13 +65,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 71,
-        "omitted_rejected_candidate_count": 70,
+        "rejected_candidate_count": 77,
+        "omitted_rejected_candidate_count": 76,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "2fc39a118cb5cf0a42e8d965ce6a6fe57d272dcbd7f8972a2a0270d3bd20941c"
+      "planner_output_sha256": "83a55b8d15e6ec979f161feea086bf0844467d703fd882793b7a60d39f7602b8"
     },
     {
       "scenario": "EXPLICIT_SINGLE_TOOL_ALLOWLIST",
@@ -133,13 +133,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 70,
-        "omitted_rejected_candidate_count": 69,
+        "rejected_candidate_count": 76,
+        "omitted_rejected_candidate_count": 75,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "0295d85db749f0edb909658048a562df860e2ec87c48a7ddf2e1041d847cc901"
+      "planner_output_sha256": "d75489b81f896b7f6e6a4f91920d5df0084f8e62a3235122fbfd2e2be16a7669"
     },
     {
       "scenario": "UNRELATED_AUDIT_TOOL_REJECTED",
@@ -202,13 +202,13 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           }
         ],
-        "rejected_candidate_count": 70,
-        "omitted_rejected_candidate_count": 69,
+        "rejected_candidate_count": 76,
+        "omitted_rejected_candidate_count": 75,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "cb543fbd25d3f7dbb4da41dc8b03996d9f051de974bc1255f913e02dbebbd985"
+      "planner_output_sha256": "ac8983e47a73120e3b2b09799675645c884094d1522a96963a3758a6cc4d93b7"
     }
   ],
   "summary": {
@@ -224,5 +224,17 @@
   "execution_authorized": false,
   "candidate_invoked": false,
   "provider_calls_made": 0,
-  "claim_ceiling": "Offline route planning only. The candidate was not invoked, no provider was called, and no permission, Owner approval, scientific validity, or Current promotion is established."
+  "claim_ceiling": "Offline route planning only. The candidate was not invoked, no provider was called, and no permission, Owner approval, scientific validity, or Current promotion is established.",
+  "catalog_replay": {
+    "replayed_at_utc": "2026-10-26T16:53:08Z",
+    "previous_candidate_catalog_git_blob_sha1": "b1b1172033047bd3d9b2c8ca1f16f4e670dc2d6f",
+    "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "route_trials_replayed": 3,
+    "all_expected_decisions_reproduced": true,
+    "candidate_invoked": false,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "scope": "Only candidate catalog digest and rejected-candidate counts changed; selected tools, decisions, and permission boundary were reproduced unchanged."
+  }
 }

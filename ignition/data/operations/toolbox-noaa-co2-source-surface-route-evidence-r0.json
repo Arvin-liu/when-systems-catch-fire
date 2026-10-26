@@ -1,0 +1,215 @@
+{
+  "schema_version": "toolbox-noaa-co2-source-surface-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
+  "observed_at_utc": "2026-10-26T16:53:08Z",
+  "candidate_tool_id": "research.compare_noaa_co2_source_surfaces",
+  "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_profile_path": "ignition/data/operations/toolbox-noaa-co2-source-surface-route-profile-r0.json",
+  "route_profile_sha256": "821a9e2f166a49c92010862827fb1612193fee0a01b9037993afbb010878cd1a",
+  "route_trials_replayed": 3,
+  "all_expected_decisions_reproduced": true,
+  "route_trials": [
+    {
+      "scenario": "DEFAULT_OFF",
+      "task_profile": {
+        "task_id": "noaa-gml-co2-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-co2-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1959–2100 inclusive; no more than 50 inclusive years); arbitrary URL fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "noaa-gml-co2-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "required_outputs": [
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits.",
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status."
+        ],
+        "relevant_rejections": [
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          }
+        ],
+        "rejected_candidate_count": 77,
+        "omitted_rejected_candidate_count": 76,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "bc12a2d0cf7e15ceea8139551bd609f66c2273d86e8531754a167f7321e82bb6"
+    },
+    {
+      "scenario": "EXPLICIT_EXACT_HOST",
+      "task_profile": {
+        "task_id": "noaa-gml-co2-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-co2-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1959–2100 inclusive; no more than 50 inclusive years); arbitrary URL fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_co2_source_surfaces"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_co2_source_surfaces"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "noaa-gml-co2-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "COMPLETE",
+        "selected_tool_ids": [
+          "research.compare_noaa_co2_source_surfaces"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+        "required_outputs": [
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "covered_outputs": [
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits.",
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status."
+        ],
+        "unmet_outputs": [],
+        "relevant_rejections": [],
+        "rejected_candidate_count": 76,
+        "omitted_rejected_candidate_count": 76,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "8e73ada3eb28fed6346617b5cae5a45218d629bb7423e9fa5db3fcb13513350c"
+    },
+    {
+      "scenario": "EXPLICIT_MISSING_HOST",
+      "task_profile": {
+        "task_id": "noaa-gml-co2-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-co2-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1959–2100 inclusive; no more than 50 inclusive years); arbitrary URL fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_co2_source_surfaces"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "actual_result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "noaa-gml-co2-page-to-raw-surface-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "decision": "INCOMPLETE",
+        "selected_tool_ids": [],
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "required_outputs": [
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Both fixed source URLs, retrieval timestamps, HTTP status and supplied validators, response SHA-256 digests, request count, and bounded provider-data claim limits.",
+          "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status."
+        ],
+        "relevant_rejections": [
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+          }
+        ],
+        "rejected_candidate_count": 77,
+        "omitted_rejected_candidate_count": 76,
+        "execution_authorized": false
+      },
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "b5a9d8da0bc83b2b78dc76dbdee9527def57da1653f3c9efa0ed39fca8fd61e5"
+    }
+  ],
+  "summary": {
+    "default_route": "EXCLUDED",
+    "default_decision": "INCOMPLETE",
+    "explicit_exact_host_decision": "COMPLETE",
+    "missing_host_decision": "INCOMPLETE",
+    "explicit_selected_tool_ids": [
+      "research.compare_noaa_co2_source_surfaces"
+    ],
+    "candidate_invoked": false,
+    "network_calls_made": 0,
+    "router_rule_modified": false,
+    "execution_authorized": false
+  },
+  "candidate_invoked": false,
+  "network_calls_made": 0,
+  "execution_authorized": false,
+  "claim_ceiling": "Offline route planning only. The caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no NOAA request, permission grant, Owner approval, scientific validity, or Current promotion is established."
+}
