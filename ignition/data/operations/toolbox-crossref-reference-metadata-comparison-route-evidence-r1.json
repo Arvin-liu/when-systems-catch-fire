@@ -2,7 +2,7 @@
   "schema_version": "ignition.toolbox-crossref-reference-metadata-comparison-route-evidence-r1",
   "tool_id": "research.compare_crossref_reference_metadata",
   "task_id": "selected-crossref-reference-doi-metadata-comparison",
-  "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+  "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "network_calls_during_planning": 0,
@@ -18,7 +18,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
       }
     },
     "host_without_tool_allowlist": {
@@ -32,7 +32,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
       }
     },
     "tool_allowlist_without_host": {
@@ -46,7 +46,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
       }
     },
     "exact_host_minimum": {
@@ -74,7 +74,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
       }
     },
     "expanded_allowlist": {
@@ -102,7 +102,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+        "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
       }
     }
   },
@@ -198,6 +198,10 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           },
           {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "knowledge.assemble_context_packet",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -211,6 +215,10 @@
           },
           {
             "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -384,7 +392,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
         }
       }
     },
@@ -484,6 +492,10 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           },
           {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "knowledge.assemble_context_packet",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -497,6 +509,10 @@
           },
           {
             "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -670,7 +686,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
         }
       }
     },
@@ -767,6 +783,10 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           },
           {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "knowledge.assemble_context_packet",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -780,6 +800,10 @@
           },
           {
             "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -953,7 +977,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
         }
       }
     },
@@ -1109,6 +1133,10 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           },
           {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "knowledge.assemble_context_packet",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -1122,6 +1150,10 @@
           },
           {
             "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -1291,7 +1323,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
         }
       }
     },
@@ -1450,6 +1482,10 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           },
           {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "knowledge.assemble_context_packet",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -1463,6 +1499,10 @@
           },
           {
             "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -1632,7 +1672,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
         }
       }
     }
@@ -1640,19 +1680,31 @@
   "execution_authorized": false,
   "source_refs": {
     "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+    "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
     "route_test_path": "ignition/tests/test_toolbox_routing.py"
   },
   "catalog_replay": {
-    "observed_at_utc": "2026-10-26T00:52:07Z",
-    "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
-    "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+    "observed_at_utc": "2026-10-26T01:54:19Z",
+    "previous_candidate_catalog_git_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
+    "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
     "route_trials_replayed": 5,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
-    "replay_result_sha256": "e03174985d472a603dd244db6b2f9041ef6a38793c321831112805ece87ff966"
+    "replay_result_sha256": "7198fed40fbe02492a9cc1b3eb1f01d992db057339d98dedda93d4edd1355f48"
   },
-  "catalog_replay_history": []
+  "catalog_replay_history": [
+    {
+      "observed_at_utc": "2026-10-26T00:52:07Z",
+      "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
+      "route_trials_replayed": 5,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
+      "replay_result_sha256": "e03174985d472a603dd244db6b2f9041ef6a38793c321831112805ece87ff966"
+    }
+  ]
 }

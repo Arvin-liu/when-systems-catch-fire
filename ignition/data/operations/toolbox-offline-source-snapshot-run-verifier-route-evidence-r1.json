@@ -1,7 +1,7 @@
 {
   "schema_version": "toolbox-route-evidence-r1",
   "tool_id": "research.verify_offline_source_snapshot_run",
-  "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+  "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_trials": [
     {
@@ -89,6 +89,10 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           },
           {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "knowledge.assemble_context_packet",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -102,6 +106,10 @@
           },
           {
             "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -275,7 +283,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
         }
       },
       "relevant_rejections": [
@@ -415,6 +423,10 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           },
           {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "knowledge.assemble_context_packet",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -428,6 +440,10 @@
           },
           {
             "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
@@ -597,7 +613,7 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a"
+          "experimental_candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9"
         }
       },
       "relevant_rejections": []
@@ -615,15 +631,15 @@
     "repository_write_paths": []
   },
   "catalog_replay": {
-    "observed_at_utc": "2026-10-26T00:52:07Z",
-    "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
-    "candidate_catalog_git_blob_sha1": "b232f85f8473a3534edc6eb7d71f85f3aeb0967a",
+    "observed_at_utc": "2026-10-26T01:54:19Z",
+    "previous_candidate_catalog_git_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
+    "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
     "route_trials_replayed": 2,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
-    "replay_result_sha256": "df73431e2d3d641220e6e2e3154ebe863e48524913f834fd60074e84795b8c98"
+    "replay_result_sha256": "38dfcdc34d50c61c498d2d170488f9757120018e61b593a2fcc1fe2353d13ef4"
   },
   "catalog_replay_history": [
     {
@@ -691,6 +707,17 @@
       "all_expected_decisions_reproduced": true,
       "provider_calls_made": 0,
       "execution_authorized": false
+    },
+    {
+      "observed_at_utc": "2026-10-26T00:52:07Z",
+      "previous_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "candidate_catalog_git_blob_sha1": "2f4244fd0db0747e953461c100d632195bff50f9",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered scenario/result records.",
+      "replay_result_sha256": "df73431e2d3d641220e6e2e3154ebe863e48524913f834fd60074e84795b8c98"
     }
   ]
 }

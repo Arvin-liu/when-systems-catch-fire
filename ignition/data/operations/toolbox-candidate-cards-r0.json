@@ -6922,6 +6922,202 @@
         "Every actual CLI call requires --allow-public-network and a per-task decision that the supplied public identifier may be sent to Europe PMC."
       ],
       "claim_ceiling": "Reports exact DOI, PMID, or PMCID Europe PMC records and provider-reported fullTextUrlList fields at retrieval time only. It does not request or inspect article URLs/content, verify link availability or licensing, establish lawful reuse, authenticate the source, assess article status, or establish scientific support."
+    },
+    {
+      "tool_id": "knowledge.preflight_reusable_context",
+      "display_name": {
+        "zh": "跨任务上下文复用预检器",
+        "en": "Cross-task reusable context preflight"
+      },
+      "description": "Preflight caller-selected derived context cards against current local source bytes, declared versions, and caller-attested access scope before cross-task reuse; stale or inaccessible cards are withheld.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_reusable_context_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_reusable_context_preflight.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_reusable_context_preflight.py",
+          "role": "READ_ONLY_SOURCE_BOUND_REUSE_PREFLIGHT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_reusable_context_preflight.py",
+          "role": "FOCUSED_STALE_REVOKED_SCOPE_BUDGET_AND_RAW_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_CONTROL"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-reusable-context-preflight.md",
+          "role": "USER_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-reusable-context-preflight-r0.schema.json",
+          "role": "STRICT_VERSIONED_REQUEST_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-reusable-context-preflight-result-r0.schema.json",
+          "role": "STRICT_VERSIONED_RESULT_CONTRACT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-reusable-context-preflight-c1-comparison-r0.json",
+          "role": "C1_OVERLAP_AND_COMPARISON_UNKNOWN_DISPOSITION"
+        },
+        {
+          "path": "ignition/tools/toolbox_context_packet.py",
+          "role": "COMPARATOR_EXACT_LOCAL_CONTEXT_PACKET_ASSEMBLER"
+        },
+        {
+          "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "role": "COMPARATOR_QUERY_CONDITIONED_RAW_NAVIGATOR"
+        },
+        {
+          "path": "ignition/tools/extract_cluster_source_brief.py",
+          "role": "COMPARATOR_DECLARED_CLUSTER_SOURCE_BRIEF"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-reusable-context-preflight-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-reusable-context-preflight-real-task-r0.json",
+          "role": "BOUNDED_REAL_LOCAL_SOURCE_BOUND_CONTEXT_REUSE_OUTCOME"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Checking whether caller-selected task-facing derived context cards still match the exact local source bytes, declared versions, and access-scope identifiers before reuse.",
+        "Withholding stale, revoked, unreadable, unauthorized, mismatched-scope, or over-budget cached context and listing eligible refresh candidates.",
+        "Returning explicit raw-source reopen requirements when the task needs current, freshness-sensitive, full-text, or raw evidence."
+      ],
+      "not_for": [
+        "Discovering sources, creating or persisting derived cards, or ranking semantic relevance.",
+        "Authenticating caller-supplied access grants or source authority.",
+        "Treating derived context as raw evidence or deciding semantic support, completeness, sufficiency, truth, or task completion.",
+        "Reading external sources, accessing a network, modifying repository files, or invoking other tools."
+      ],
+      "only_if": [
+        "The caller selects the exact cached cards, current source records, local source paths, versions, SHA-256 digests, and access-scope identifiers.",
+        "Every source is local under the checked-out ignition/ tree and the caller declares access ACTIVE and authorized; these access fields remain caller-attested.",
+        "The task permits DERIVED_CONTEXT_ONLY and supplies explicit context and source-byte budgets."
+      ],
+      "counterindicated_when": [
+        "The task requires raw, current, freshness-sensitive, or full-text evidence; use the listed authorized raw sources instead.",
+        "A source is revoked, unreadable, missing, outside ignition/, symlinked, changed, or over the declared budget.",
+        "The caller cannot attest current access scope, or the cached summary needs semantic validation."
+      ],
+      "accepted_input_types": [
+        "Exact JSON request with caller-selected derived cache cards, current local source metadata/access state, and explicit context/source-byte budgets."
+      ],
+      "output_types": [
+        "Byte-checked DERIVED_CONTEXT_ONLY cards, per-card reuse/skip/invalidation decisions, accessible refresh candidates, and raw-source reopen requirements."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_LOCAL_SOURCE_DIGEST_CHECK",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads only caller-declared local source files after the caller-declared access state is ACTIVE and authorized; returns selected derived text on stdout; writes no files and makes no external calls."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Source reads are capped at 1,000,000 bytes per file and 5,000,000 bytes per request; context output is capped at 16,384 UTF-8 bytes. Latency and comparative savings are not calibrated."
+      },
+      "alternatives": [
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The packet assembler emits exact caller-selected excerpts and structural obligation gaps for one task; this candidate checks whether prior derived cards remain eligible for cross-task reuse."
+        },
+        {
+          "tool_id": "knowledge.navigate_raw_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The navigator finds candidates and reopens current raw source ranges; this candidate validates a caller-selected derived cache card and directs raw reopen when required."
+        },
+        {
+          "tool_id": "knowledge.cluster_source_brief",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The cluster brief inventories declared article-cluster cards; this candidate checks version and access-scope bindings on task-facing derived context."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Preflight caller-selected cross-task derived context cards against current local source bytes, declared versions, and access-scope identifiers before reuse."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "Contract and implementation boundary review plus local negative controls; no same-task quality comparison or measured relative cost was available.",
+        "compared_tool_ids": [
+          "knowledge.assemble_context_packet",
+          "knowledge.navigate_raw_evidence",
+          "knowledge.cluster_source_brief"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_context_packet.py",
+          "ignition/tools/toolbox_raw_evidence_navigator.py",
+          "ignition/tools/extract_cluster_source_brief.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-reusable-context-preflight-c1-comparison-r0.json"
+        ],
+        "findings": [
+          "The candidate preflights reuse of an explicitly supplied derived card; the existing packet assembler, raw navigator, and cluster brief have different input/output contracts and remain useful for their declared tasks.",
+          "Workbench AB-20 R0 reported one synthetic 24-task workload with baseline-sensitive RBEU results; this is not live quality, permission, or production evidence.",
+          "Relative quality, reliability, and measured cost remain COMPARISON_UNKNOWN. No replacement or retirement is supported."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "New experimental default-off preflight candidate. No same-task comparison establishes replacement value; preserve neighboring tools and revisit by observed use."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No current registry operation, existing packet/navigator/brief behavior, source authority, or persistent store is migrated. Callers may stop using the optional preflight without changing their cache format."
+        ],
+        "rollback_steps": [
+          "Remove this optional card, tool, schemas, tests, docs, and task evidence from the isolated branch; retain prior commits and negative-control history."
+        ]
+      },
+      "fallback": "If access or source identity cannot be verified, withhold the card and reopen an independently authorized raw source or report the gap; do not treat the cached summary as evidence.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_reusable_context_preflight.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Changed source bytes, version, path, or scope prevent reuse and expose only a refresh candidate when caller-declared access remains active and authorized.",
+          "Revoked, unreadable, missing, or unauthorized sources are never read and never returned.",
+          "Raw-source-required tasks skip all derived cards and list authorized sources to reopen.",
+          "Traversal, symlink paths, duplicate JSON keys/IDs, malformed inputs, and source/context budget excess fail closed or skip with an explicit reason.",
+          "The tool never persists cards, grants permission, invokes another tool, or claims semantic relevance or sufficiency."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only caller-selected cards may be checked; explicit experimental allowlisting is required.",
+        "Task input and output contracts match the exact versioned request/result schemas.",
+        "Task permits derived context, current caller-attested access is ACTIVE and authorized, and source/context budgets are explicit.",
+        "Any raw, freshness-sensitive, current-source, full-text, or source-evidence requirement is handled by separately authorized raw-source tools."
+      ],
+      "claim_ceiling": "Exact local byte-digest and caller-declared version/access-scope preflight for caller-selected derived context cards only. No source authority, permission grant, semantic relevance, raw evidence, evidential sufficiency, truth, proof, completion, or scientific acceptance is established."
     }
   ]
 }

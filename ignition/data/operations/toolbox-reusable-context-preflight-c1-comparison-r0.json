@@ -1,0 +1,74 @@
+{
+  "schema_version": "toolbox-reusable-context-preflight-c1-comparison-r0",
+  "tool_id": "knowledge.preflight_reusable_context",
+  "tool_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "replacement_candidates": [],
+  "unique_remaining_use_cases": [
+    "Preflight caller-selected cross-task derived context cards against current local source bytes, version declarations, and caller-declared access scope before reuse."
+  ],
+  "claim_ceiling": "The tool can refuse reuse when exact local source bytes or caller-declared access metadata do not match. It does not generate, persist, rank, or semantically validate derived cards, establish source authority or permission grants, or satisfy raw-evidence requirements.",
+  "blueprint_binding": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 55,
+    "head": "86a6eaf4a76be7745b3fb3be355d0a22a79f907f",
+    "title": "AB-20 R0: bounded reuse evidence",
+    "state_at_review": "OPEN_DRAFT_UNMERGED",
+    "source_paths": [
+      "pilots/ab20-incremental-knowledge-reuse-r0/PREREGISTRATION.md",
+      "pilots/ab20-incremental-knowledge-reuse-r0/RESULTS.md",
+      "pilots/ab20-incremental-knowledge-reuse-r0/HANDOFF.md"
+    ]
+  },
+  "prior_synthetic_evidence": {
+    "tasks_per_arm": 24,
+    "arms": ["A_MINIMAL_ON_DEMAND", "B_STRONG_ON_DEMAND", "C_INCREMENTAL_DERIVED_CONTEXT", "D_STALE_CACHE_DIAGNOSTIC"],
+    "B_and_C_task_states": "24/24",
+    "B_and_C_required_fields": "25/25",
+    "registered_A_B_C_safety_gate_violations": 0,
+    "C_first_lower_than_B_at_task_prefix": 9,
+    "N24_RBEU": {"A": 44947, "B": 61436, "C": 50077},
+    "limits": [
+      "One deterministic synthetic workload; no model, provider, network, private source, or external evaluator.",
+      "RBEU is a byte/read proxy, not money, tokens, or general wall time; process overhead was not captured.",
+      "C was 11.41% above minimal A and had higher local per-task Python timing than A/B.",
+      "Duplicate unavailable-source gaps at h09 and x05 remained in the frozen B/C outputs.",
+      "The diagnostic D arm tests scorer detection; it does not prove real access-control safety."
+    ]
+  },
+  "contract_overlap": [
+    {
+      "tool_id": "knowledge.assemble_context_packet",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "implementation_ref": "ignition/tools/toolbox_context_packet.py",
+      "finding": "Assembles one caller-selected packet of exact local excerpts, task obligations, and explicit gaps. It does not carry a derived card across tasks or preflight access-scope changes for cached context."
+    },
+    {
+      "tool_id": "knowledge.navigate_raw_evidence",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "implementation_ref": "ignition/tools/toolbox_raw_evidence_navigator.py",
+      "finding": "Uses the checked-out search index to find candidates and reopens bounded current raw files. It does not validate a caller-supplied derived cache card for reuse."
+    },
+    {
+      "tool_id": "knowledge.cluster_source_brief",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "implementation_ref": "ignition/tools/extract_cluster_source_brief.py",
+      "finding": "Renders a declared repository article-cluster inventory, not arbitrary task-facing derived context bound to a changing source and access scope."
+    }
+  ],
+  "local_comparison": {
+    "method": "Contract review, exact local implementation review, focused negative controls, and a bounded real local reuse task.",
+    "same_task_quality_comparison": "NOT_RUN",
+    "relative_cost_comparison": "NOT_MEASURED",
+    "findings": [
+      "This candidate only preflights reuse; it does not implement the full AB-20 card-generation or persistence mechanism.",
+      "The candidate hashes only explicit local source paths under ignition/ after caller-declared access is ACTIVE and authorized.",
+      "Source-scope grants, semantic relevance, and cached summary quality remain caller decisions and are not verified by the candidate.",
+      "The existing packet assembler, raw navigator, and cluster brief preserve distinct valuable contracts; no evidence supports their retirement or replacement."
+    ]
+  },
+  "disposition": {
+    "status": "COMPARISON_UNKNOWN",
+    "action": "Keep the candidate optional and default-off; do not retire or replace a neighboring tool. Revisit only with a same-task quality and measured-resource comparison using a naturally occurring cross-task reuse case."
+  }
+}

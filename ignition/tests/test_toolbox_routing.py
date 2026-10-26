@@ -133,6 +133,40 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
 
+    def test_reusable_context_preflight_is_default_off_and_requires_explicit_allowlist(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "knowledge.preflight_reusable_context"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("cross-task-derived-context-preflight", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        allowlisted = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn({"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"}, default["rejected_candidates"])
+        self.assertEqual(allowlisted["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in allowlisted["selected_tools"]], [tool_id])
+        self.assertFalse(allowlisted["execution_authorized"])
+        self.assertFalse(allowlisted["selected_tools"][0]["permissions"]["network"])
+        self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
+
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-reusable-context-preflight-route-evidence-r0.json")
+            .read_text(encoding="utf-8")
+        )
+        self.assertEqual(evidence["tool_id"], tool_id)
+        for trial in evidence["route_trials"]:
+            replay = planner.plan_tool_route(
+                evidence["route_profile"],
+                include_experimental_tool_ids=trial["include_experimental_tool_ids"],
+            )
+            self.assertEqual(replay["decision"], trial["decision"])
+            self.assertEqual([row["tool_id"] for row in replay["selected_tools"]], trial["selected_tool_ids"])
+            self.assertFalse(replay["execution_authorized"])
+            self.assertEqual(trial["router_provider_calls"], 0)
+            self.assertFalse(trial["candidate_invoked"])
+
     def test_context_packet_variant_comparator_is_default_off_and_selects_only_after_allowlisting(self) -> None:
         catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
         tool_id = "maintenance.compare_context_packet_variants"

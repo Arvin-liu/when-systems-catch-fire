@@ -1,0 +1,102 @@
+{
+  "schema_version": "toolbox-reusable-context-preflight-real-task-r0",
+  "tool_id": "knowledge.preflight_reusable_context",
+  "tool_version": "0.1.0",
+  "tool_source_sha256": "d4e67f41b7f5cfe110db12419facb8ba383d515ccd9b8c6363822c86863857c4",
+  "task_id": "real-local-reuse-boundary-handoff",
+  "task_scope": "Carry one reviewed, non-freshness-sensitive scope summary into a later bounded task while checking the exact local source bytes and caller-declared access scope.",
+  "input": {
+    "schema_version": "toolbox-reusable-context-preflight-r0",
+    "task": {
+      "task_id": "real-local-reuse-boundary-handoff",
+      "raw_source_required": false,
+      "max_context_bytes": 1200,
+      "max_source_bytes": 100000
+    },
+    "current_sources": [
+      {
+        "source_id": "reusable-context-preflight-doc",
+        "path": "ignition/docs/operations/toolbox-reusable-context-preflight.md",
+        "version": "candidate-worktree-snapshot",
+        "sha256": "c57a92fcf3a6464e29df79e39fd46b99e3637aa54680f9f95bef0391de0a9ada",
+        "access_scope_id": "local-repository-read",
+        "access_state": "ACTIVE",
+        "authorized": true
+      }
+    ],
+    "cached_cards": [
+      {
+        "card_id": "reusable-context-boundary-summary-v1",
+        "source_bindings": [
+          {
+            "source_id": "reusable-context-preflight-doc",
+            "path": "ignition/docs/operations/toolbox-reusable-context-preflight.md",
+            "version": "candidate-worktree-snapshot",
+            "sha256": "c57a92fcf3a6464e29df79e39fd46b99e3637aa54680f9f95bef0391de0a9ada",
+            "access_scope_id": "local-repository-read"
+          }
+        ],
+        "derived_context": "This optional read-only preflight checks caller-selected derived cards against exact local source bytes and caller-declared version/access scope. It withholds stale or inaccessible cards, labels returned text DERIVED_CONTEXT_ONLY, and requests raw reopening for raw-evidence tasks. It does not create or persist cards."
+      }
+    ]
+  },
+  "output": {
+    "authority_effect": "NONE",
+    "claim_ceiling": "Caller-selected derived context may be reused only after exact local byte-digest and caller-declared access-scope checks. No source authority, permission grant, semantic relevance, raw-evidence support, sufficiency, truth, or task completion is established.",
+    "decision": "CONTEXT_REUSED",
+    "decisions": [
+      {
+        "card_id": "reusable-context-boundary-summary-v1",
+        "context_bytes": 318,
+        "decision": "REUSE",
+        "reason": "SOURCE_BYTES_AND_CALLER_DECLARED_ACCESS_SCOPE_MATCH"
+      }
+    ],
+    "evidential_sufficiency": "NOT_EVALUATED",
+    "execution_authorized": false,
+    "raw_reopen_required": [],
+    "refresh_required": [],
+    "resource_observation": {
+      "context_bytes_returned": 318,
+      "cost_equivalent": "NOT_MEASURED",
+      "latency_ms": "UNKNOWN",
+      "source_bytes_read": 2497,
+      "source_files_hashed": 1
+    },
+    "reused_context_cards": [
+      {
+        "card_id": "reusable-context-boundary-summary-v1",
+        "context_kind": "DERIVED_CONTEXT_ONLY",
+        "derived_context": "This optional read-only preflight checks caller-selected derived cards against exact local source bytes and caller-declared version/access scope. It withholds stale or inaccessible cards, labels returned text DERIVED_CONTEXT_ONLY, and requests raw reopening for raw-evidence tasks. It does not create or persist cards.",
+        "source_bindings": [
+          {
+            "access_scope_id": "local-repository-read",
+            "path": "ignition/docs/operations/toolbox-reusable-context-preflight.md",
+            "sha256": "c57a92fcf3a6464e29df79e39fd46b99e3637aa54680f9f95bef0391de0a9ada",
+            "source_id": "reusable-context-preflight-doc",
+            "version": "candidate-worktree-snapshot"
+          }
+        ]
+      }
+    ],
+    "schema_version": "toolbox-reusable-context-preflight-result-r0",
+    "semantic_relevance": "NOT_EVALUATED",
+    "task_id": "real-local-reuse-boundary-handoff",
+    "tool_id": "knowledge.preflight_reusable_context",
+    "tool_version": "0.1.0"
+  },
+  "checks": {
+    "result_sha256": "810e1606be1e83783600622628cc4d7bff04e337b6a51c37232076580873fa04",
+    "expected_decision": "CONTEXT_REUSED",
+    "observed_decision": "CONTEXT_REUSED",
+    "returned_context_kind": "DERIVED_CONTEXT_ONLY",
+    "source_files_hashed": 1,
+    "source_bytes_read": 2497,
+    "repository_source_unchanged": true,
+    "execution_authorized": false,
+    "authority_effect": "NONE",
+    "semantic_relevance": "NOT_EVALUATED",
+    "evidential_sufficiency": "NOT_EVALUATED"
+  },
+  "claim_ceiling": "One successful local byte-bound reuse preflight for a caller-written summary. This does not establish summary correctness/relevance, external permission state, quality benefit, or general cross-task safety."
+}
