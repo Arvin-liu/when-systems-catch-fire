@@ -9332,6 +9332,223 @@
         "A selected route is a proposal only; it neither calls the tool nor applies or approves the proposed candidate policy."
       ],
       "claim_ceiling": "Exact string-set differences between two caller-supplied declarations only; no snapshot authenticity, effective sandbox, permission semantics, enforcement, security improvement, approval, or authority is established."
+    },
+    {
+      "tool_id": "maintenance.preflight_governed_improvement_transition",
+      "display_name": {
+        "zh": "受治理改进迁移预检器",
+        "en": "Governed Improvement Transition Preflight"
+      },
+      "description": "Summarize one caller-declared predecessor-to-successor transition, checking evaluation-anchor consistency and reporting quality, cost, failure, authority, rollback, and optional next-round R&D deltas without accepting or promoting the successor.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; implementation is an isolated synthetic pilot based on pinned noncanonical Workbench material.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_governed_improvement_transition.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_governed_improvement_transition.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_governed_improvement_transition.py",
+          "role": "READ_ONLY_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/schemas/operations/governed-improvement-transition-r0.schema.json",
+          "role": "STRICT_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/governed-improvement-transition.md",
+          "role": "USER_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-governed-improvement-transition/valid-input-r0.json",
+          "role": "SYNTHETIC_CONTROLLED_INPUT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_governed_improvement_transition.py",
+          "role": "FOCUSED_SEMANTIC_AND_NEGATIVE_TESTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-governed-improvement-transition-provenance-r0.json",
+          "role": "PINNED_OWNER_AND_WORKBENCH_SOURCES"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-governed-improvement-transition-c1-evidence-r0.json",
+          "role": "C1_COMPARISON_AND_UNCERTAINTY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-governed-improvement-transition-smoke-r0.json",
+          "role": "SYNTHETIC_LOCAL_CLI_SMOKE_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-governed-improvement-transition-route-profile-r0.json",
+          "role": "EXACT_TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-governed-improvement-transition-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_REPLAY"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_governed_improvement_transition_routing.py",
+          "role": "ROUTE_REPLAY_AND_NEGATIVE_INPUT_TESTS"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_LOCAL_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tools/operations/validate_toolbox_candidates.py",
+          "role": "CANDIDATE_CARD_VALIDATOR"
+        },
+        {
+          "path": "ignition/tools/operations/build_toolbox_identity_cards.py",
+          "role": "MACHINE_AND_HUMAN_CARD_PROJECTION"
+        },
+        {
+          "path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+          "role": "COMPARED_NEIGHBOR_TOOL_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+          "role": "COMPARED_NEIGHBOR_TOOL_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/tools/toolbox_cognitive_migration_revision.py",
+          "role": "COMPARED_NEIGHBOR_TOOL_IMPLEMENTATION"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/governed-improvement-transition-r0.schema.json"
+      ],
+      "good_for": [
+        "Reviewing one declared predecessor and successor candidate with frozen source digests, declared mechanism changes, preregistration, evaluator/benchmark/held-out bindings, and one or more quality metrics.",
+        "Flagging evaluation-anchor drift, a replay binding that does not match the predecessor anchor, declared cost or failure guardrail breaches, added authority scope, rollback mismatch, and unmeasured or nonpositive next-round R&D gain.",
+        "Producing a bounded machine-readable review packet for a later independent decision."
+      ],
+      "not_for": [
+        "Authenticating code, source refs, evaluators, benchmarks, held-out data, measurements, rollback exercises, identity, or caller declarations.",
+        "Accepting an improvement, granting authority, changing the Iteration lifecycle, selecting or rewriting an evaluator, executing a successor, or starting an autonomous optimization loop.",
+        "General candidate performance/Pareto analysis, producer-consumer static checks, or cognitive-migration text revision."
+      ],
+      "only_if": [
+        "The task asks for a single predecessor-to-successor transition review and accepts caller-declared evidence with an explicit non-authenticating claim ceiling.",
+        "The caller can provide exact evaluator, benchmark, held-out, predecessor, successor, preregistration, rollback, and measurement declarations in the input contract.",
+        "The caller treats REVIEW_REQUIRED as a review aid and preserves execution_authorized=false."
+      ],
+      "counterindicated_when": [
+        "A source or measurement must be independently authenticated, or a claimed frozen replay cannot bind the predecessor evaluator, benchmark, and held-out digests.",
+        "The request expects an automatic lifecycle decision, system promotion, permission increase, self-modification, merge, deployment, or publication.",
+        "The task needs matched real-task performance or cost evidence; this candidate has no such comparative trial."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object matching governed-improvement-transition-r0, maximum 131072 bytes."
+      ],
+      "output_types": [
+        "Bounded REVIEW_REQUIRED transition-delta JSON with evaluation-anchor findings, caller-declared quality/cost/failure/authority deltas, rollback status, and explicit unverified/unauthorized claims."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_STDIN_SINGLE_REQUEST",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded JSON object from stdin and writes one JSON result to stdout; no file, network, subprocess, or external action is used."
+      ],
+      "runtime_dependencies": [
+        "Python >= 3.10; standard library only."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No comparable runtime, memory, or operator-cost trial has been measured; the input is capped at 131072 bytes and uses local deterministic arithmetic."
+      },
+      "alternatives": [
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "relationship": "COMPLEMENTARY_CANDIDATE_OUTCOME_SUMMARY",
+          "reason": "Summarizes paired candidate outcomes and a caller-declared resource metric; it does not bind evaluation drift, rollback, authority, or later-round gain for one system transition."
+        },
+        {
+          "tool_id": "maintenance.preflight_producer_consumer_semantics",
+          "relationship": "DISTINCT_STATIC_CONTRACT_CHECK",
+          "reason": "Checks caller-provided producer and consumer code patterns rather than predecessor-successor measurements."
+        },
+        {
+          "tool_id": "writing.preflight_cognitive_migration_revision",
+          "relationship": "DISTINCT_EDITORIAL_TASK",
+          "reason": "Reviews paragraph-order proposals and declared reader shifts; it does not review system-improvement transition evidence."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "One bounded transition review that needs declared evaluator/benchmark/held-out drift, quality/cost/failure/authority deltas, rollback binding, and optional next-round R&D gain in one review-only output; comparative benefit remains unknown."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "Static declared-input/output and task-contract comparison against three adjacent tools only. Same-task outcome, evidence completeness, runtime, cost, reliability, and maintainability trials were not run.",
+        "compared_tool_ids": [
+          "maintenance.summarize_execution_candidate_pareto_frontier",
+          "maintenance.preflight_producer_consumer_semantics",
+          "writing.preflight_cognitive_migration_revision"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_execution_pareto_frontier.py",
+          "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+          "ignition/tools/toolbox_cognitive_migration_revision.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-governed-improvement-transition-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-governed-improvement-transition-provenance-r0.json",
+          "ignition/tools/toolbox_execution_pareto_frontier.py",
+          "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+          "ignition/tools/toolbox_cognitive_migration_revision.py"
+        ],
+        "findings": [
+          "The compared tools declare different primary inputs and outputs; they appear complementary by task contract, but this does not establish better performance or replacement value.",
+          "Keep all compared tools unchanged and preserve COMPARISON_UNKNOWN; a low-cost matched synthetic comparison is specified for a future task context but has not been run."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "No prior tool has been shown redundant or inferior on matched tasks; this candidate remains experimental and default-off."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "This adds one optional candidate card and does not modify or supersede any Current operation or neighboring tool."
+        ],
+        "rollback_steps": [
+          "Remove this candidate from toolbox-candidate-cards-r0.json, rebuild toolbox-identity-cards-r0.json and TOOLBOX.md, then rerun the focused candidate/card checks; retain source and comparison evidence for history."
+        ]
+      },
+      "fallback": "Use the existing Iteration Method and separately governed preregistration and review; preserve the missing fields and do not infer an improvement.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_governed_improvement_transition.py",
+          "ignition/tests/test_toolbox_governed_improvement_transition_routing.py",
+          "ignition/tools/operations/validate_toolbox_candidates.py",
+          "ignition/tools/operations/build_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Changed evaluator without replay remains incomparable.",
+          "Replay whose declared evaluator, benchmark, or held-out binding differs from the predecessor is not used for a comparable delta.",
+          "Cost/failure guardrail breaches, authority additions, rollback mismatch, and absent/nonpositive next-round gain are surfaced without promotion.",
+          "Malformed, duplicate-key, unknown-field, non-finite, boolean-as-number, wrong-metric, invalid-UTF8, and oversized inputs fail closed.",
+          "Default routing excludes the experimental tool; explicit route selection remains a proposal and never invokes the candidate."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Exclude this experimental tool unless the caller explicitly allowlists its exact tool ID for a governed predecessor-successor transition review.",
+        "Require the declared transition input contract and accept REVIEW_REQUIRED as a non-authoritative output.",
+        "A selected route is a proposal only; it does not invoke the tool, accept a successor, or grant authority."
+      ],
+      "claim_ceiling": "Deterministic input structure and arithmetic over caller-declared transition data only; no source, evaluator, benchmark, measurement, rollback, improvement, generalization, authority, or successor state is authenticated."
     }
   ]
 }

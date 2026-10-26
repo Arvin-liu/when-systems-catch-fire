@@ -1,0 +1,43 @@
+{
+  "schema_version": "toolbox-governed-improvement-transition-provenance-r0",
+  "candidate_tool_id": "maintenance.preflight_governed_improvement_transition",
+  "source_material": [
+    {
+      "repository": "Arvin-liu/1111",
+      "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+      "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+      "blob_sha1": "d0e85f7baeb55ec538189e2657c33e4759d704ef",
+      "role": "OWNER_TOOLBOX_IMPLEMENTATION_AUTHORIZATION"
+    },
+    {
+      "repository": "Arvin-liu/1111",
+      "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+      "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+      "blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e",
+      "role": "OWNER_C1_EVIDENCE_BASED_RETIREMENT_POLICY"
+    },
+    {
+      "repository": "Arvin-liu/ignition-architecture-workbench",
+      "commit": "9a865118dbd0ae84dbed716b8c03accc395e7047",
+      "path": "iterations/2026-10-05-ab19-recursive-improvement-gap-audit.md",
+      "blob_sha1": "d84326160a2793fdf45f1d96efef9ffed8b95f66",
+      "role": "NONCANONICAL_AB19_GAP_AUDIT_NEEDS_SYNTHETIC_PILOT"
+    },
+    {
+      "repository": "Arvin-liu/ignition-architecture-workbench",
+      "commit": "9a865118dbd0ae84dbed716b8c03accc395e7047",
+      "path": "decisions/ADR-0008-recursive-improvement-is-governed-successor-transition-not-autonomous-self-modification.md",
+      "blob_sha1": "ad99bbd5852005ecc070ed9f036276e9499455d2",
+      "role": "NONCANONICAL_ADR_GOVERNED_SUCCESSOR_NOT_AUTONOMOUS"
+    }
+  ],
+  "implementation_boundary": {
+    "relationship": "ISOLATED_SYNTHETIC_PILOT_OF_A_NARROW_TRANSITION_CONTRACT",
+    "canonical_adoption": false,
+    "new_iteration_lifecycle": false,
+    "autonomous_self_modification": false,
+    "authority_expansion": false,
+    "automatic_acceptance_or_promotion": false
+  },
+  "claim_ceiling": "External source commits and blob identifiers are pinned for traceability; this record does not establish canonical adoption, upstream endorsement, scientific validity, or measured real-task benefit."
+}

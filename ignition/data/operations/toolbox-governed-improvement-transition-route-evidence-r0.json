@@ -1,0 +1,46 @@
+{
+  "schema_version": "toolbox-governed-improvement-transition-route-evidence-r0",
+  "candidate_tool_id": "maintenance.preflight_governed_improvement_transition",
+  "observed_at_utc": "2026-10-26T08:03:56Z",
+  "candidate_catalog_git_blob_sha1": "312e600c0cdc62aee8d11ba572894735c1c6d089",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_git_blob_sha1": "46569aabe09f825e4a41ae4bd9167442a4d59982",
+  "route_trials_replayed": 2,
+  "all_expected_decisions_reproduced": true,
+  "route_trials": [
+    {
+      "scenario": "DEFAULT_EXPERIMENTAL_TOOLS_EXCLUDED",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Bounded REVIEW_REQUIRED transition-delta JSON with evaluation-anchor findings, caller-declared quality/cost/failure/authority deltas, rollback status, and explicit unverified/unauthorized claims."
+      ],
+      "target_candidate_rejection": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
+      "result_sha256": "9e376c6cb7151428f9031d583f140ea40ee684acfaa1676cca01129baf285ced",
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    },
+    {
+      "scenario": "EXPLICIT_SINGLE_TOOL_ALLOWLIST",
+      "include_experimental_tool_ids": [
+        "maintenance.preflight_governed_improvement_transition"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.preflight_governed_improvement_transition"
+      ],
+      "unmet_outputs": [],
+      "target_candidate_rejection": null,
+      "result_sha256": "e8f61320003c9784d4aa0f4f3f6ce6aa088185a4eabc1eb63a4783875d586ced",
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    }
+  ],
+  "execution_authorized": false,
+  "candidate_invoked": false,
+  "provider_calls_made": 0,
+  "claim_ceiling": "Offline route planning only; no candidate invocation, provider call, permission grant, Owner approval, scientific validity, or Current promotion is established."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "toolbox-c1-comparison-r0",
+  "candidate_tool_id": "maintenance.preflight_governed_improvement_transition",
+  "owner_rule_ref": {
+    "repository": "Arvin-liu/1111",
+    "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e",
+    "section": "C1"
+  },
+  "source_concept_ref": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "commit": "9a865118dbd0ae84dbed716b8c03accc395e7047",
+    "path": "iterations/2026-10-05-ab19-recursive-improvement-gap-audit.md",
+    "blob_sha1": "d84326160a2793fdf45f1d96efef9ffed8b95f66",
+    "status": "NONCANONICAL_NEEDS_SYNTHETIC_PILOT"
+  },
+  "comparison_method": "Static input, output, and declared-task-contract comparison against the closest existing toolbox neighbors. No matched real-task outcome, latency, cost, or reliability trial was run.",
+  "compared_tools": [
+    {
+      "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+      "implementation_path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+      "declared_scope": "Summarizes paired candidate outcomes and one caller-declared resource metric into pass-rate, cost, dominated, and frontier results.",
+      "difference": "It does not bind a frozen predecessor-successor transition, evaluator drift, held-out replay, permission delta, rollback target, or later-round R&D gain."
+    },
+    {
+      "tool_id": "maintenance.preflight_producer_consumer_semantics",
+      "implementation_path": "ignition/tools/toolbox_producer_consumer_semantic_preflight.py",
+      "declared_scope": "Checks declared producer and consumer text patterns and field matches from caller-provided source excerpts.",
+      "difference": "It checks a static producer-consumer relation and does not compare predecessor-successor improvement evidence."
+    },
+    {
+      "tool_id": "writing.preflight_cognitive_migration_revision",
+      "implementation_path": "ignition/tools/toolbox_cognitive_migration_revision.py",
+      "declared_scope": "Reviews caller-selected paragraph order and declared cognitive migration while preserving source text boundaries.",
+      "difference": "Its input and output concern revision structure, not system-transition measurements, evaluator binding, cost, failures, authority, or rollback."
+    }
+  ],
+  "same_task_trials": {
+    "status": "NOT_RUN",
+    "task_fixture_count": 0,
+    "measured_cost": "UNKNOWN",
+    "matched_quality_results": "UNKNOWN"
+  },
+  "decision": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "replacement_candidates": [],
+    "deprecation_or_retirement_status": "COMPARISON_UNKNOWN",
+    "coexistence_basis": "Declared inputs and required outputs differ. Static contracts support separate task scopes, but no same-task performance or cost evidence supports ranking, replacement, or retirement."
+  },
+  "low_cost_follow_up": {
+    "status": "NOT_RUN",
+    "proposal": "When a multi-successor transition task is available, run one synthetic frozen-transition packet through this preflight and the existing Pareto summary on the same declared outcomes; compare missing-output coverage, operator steps, and local runtime. Keep the contracts separate and all results review-only.",
+    "automatic_replacement_permitted": false
+  },
+  "claim_ceiling": "The comparison establishes declared contract differences only; it does not establish superior quality, lower cost, reliability, or replacement value."
+}
