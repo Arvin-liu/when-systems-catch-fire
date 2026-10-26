@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-execution-effect-receipt-input-r0",
+  "title": "Toolbox Execution Effect Receipt Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_ref", "execution", "observations", "repository_paths"],
+  "properties": {
+    "schema_version": {"const": "toolbox-execution-effect-receipt-input-r0"},
+    "task_ref": {"$ref": "#/$defs/nonblank"},
+    "execution": {"$ref": "#/$defs/execution"},
+    "observations": {"type": "array", "maxItems": 32, "items": {"$ref": "#/$defs/observation"}},
+    "repository_paths": {"type": "array", "maxItems": 32, "items": {"$ref": "#/$defs/repositoryPath"}}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha256OrNull": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "nonblankOrNull": {"type": ["string", "null"], "minLength": 1, "pattern": "\\S"},
+    "timeOrNull": {"type": ["string", "null"], "format": "date-time"},
+    "repositoryPath": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "baseline_state", "baseline_sha256"],
+      "properties": {
+        "path": {"type": "string", "pattern": "^ignition/(?!\\.\\.?(?:$|/))(?!.*?/\\.\\.?(?:$|/))[A-Za-z0-9._/-]+$"},
+        "baseline_state": {"enum": ["PRESENT", "MISSING"]},
+        "baseline_sha256": {"$ref": "#/$defs/sha256OrNull"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"baseline_state": {"const": "PRESENT"}}, "required": ["baseline_state"]},
+          "then": {"properties": {"baseline_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}
+        },
+        {
+          "if": {"properties": {"baseline_state": {"const": "MISSING"}}, "required": ["baseline_state"]},
+          "then": {"properties": {"baseline_sha256": {"const": null}}}
+        }
+      ]
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status", "run_id", "tool_id", "tool_version", "source_sha256", "input_sha256", "output_sha256",
+        "environment_ref", "executor_actor_ref", "started_at_utc", "completed_at_utc", "exit_code"
+      ],
+      "properties": {
+        "status": {"enum": ["NOT_RUN", "STARTED", "COMPLETED", "UNKNOWN"]},
+        "run_id": {"$ref": "#/$defs/nonblankOrNull"},
+        "tool_id": {"$ref": "#/$defs/nonblankOrNull"},
+        "tool_version": {"$ref": "#/$defs/nonblankOrNull"},
+        "source_sha256": {"$ref": "#/$defs/sha256OrNull"},
+        "input_sha256": {"$ref": "#/$defs/sha256OrNull"},
+        "output_sha256": {"$ref": "#/$defs/sha256OrNull"},
+        "environment_ref": {"$ref": "#/$defs/nonblankOrNull"},
+        "executor_actor_ref": {"$ref": "#/$defs/nonblankOrNull"},
+        "started_at_utc": {"$ref": "#/$defs/timeOrNull"},
+        "completed_at_utc": {"$ref": "#/$defs/timeOrNull"},
+        "exit_code": {"type": ["integer", "null"]}
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observation_id", "kind", "run_id", "tool_id", "tool_version", "source_sha256", "input_sha256",
+        "output_sha256", "environment_ref", "observer_actor_ref", "observed_at_utc", "evidence_ref",
+        "evidence_sha256", "effect_state", "failure_record_ref", "failure_record_sha256", "first_failure_preserved"
+      ],
+      "properties": {
+        "observation_id": {"$ref": "#/$defs/nonblank"},
+        "kind": {"enum": ["EFFECT", "FAILURE_RECORD"]},
+        "run_id": {"$ref": "#/$defs/nonblank"},
+        "tool_id": {"$ref": "#/$defs/nonblank"},
+        "tool_version": {"$ref": "#/$defs/nonblank"},
+        "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "output_sha256": {"$ref": "#/$defs/sha256OrNull"},
+        "environment_ref": {"$ref": "#/$defs/nonblank"},
+        "observer_actor_ref": {"$ref": "#/$defs/nonblank"},
+        "observed_at_utc": {"type": "string", "format": "date-time"},
+        "evidence_ref": {"$ref": "#/$defs/nonblank"},
+        "evidence_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "effect_state": {"enum": ["EFFECT_PRESENT", "NO_EFFECT_OBSERVED", "UNKNOWN", null]},
+        "failure_record_ref": {"$ref": "#/$defs/nonblankOrNull"},
+        "failure_record_sha256": {"$ref": "#/$defs/sha256OrNull"},
+        "first_failure_preserved": {"type": ["boolean", "null"]}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"kind": {"const": "EFFECT"}}, "required": ["kind"]},
+          "then": {
+            "properties": {
+              "effect_state": {"enum": ["EFFECT_PRESENT", "NO_EFFECT_OBSERVED", "UNKNOWN"]},
+              "failure_record_ref": {"const": null},
+              "failure_record_sha256": {"const": null},
+              "first_failure_preserved": {"const": null}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"kind": {"const": "FAILURE_RECORD"}}, "required": ["kind"]},
+          "then": {
+            "properties": {
+              "effect_state": {"const": null},
+              "failure_record_ref": {"$ref": "#/$defs/nonblank"},
+              "failure_record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "first_failure_preserved": {"type": "boolean"}
+            }
+          }
+        }
+      ]
+    }
+  }
+}

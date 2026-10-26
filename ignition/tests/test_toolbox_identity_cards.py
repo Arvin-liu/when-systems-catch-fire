@@ -635,6 +635,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "research.probe_counterfactual_fragility",
             "reasoning.search_structural_analogies",
             "maintenance.preflight_failure_anchored_recovery",
+            "maintenance.preflight_execution_effect_receipt",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
@@ -647,6 +648,14 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(validation_target_coverage["unique_remaining_use_cases"])
         self.assertEqual(validation_target_coverage["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
         self.assertEqual(validation_target_coverage["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+        execution_receipt = next(
+            card for card in candidates if card["tool_id"] == "maintenance.preflight_execution_effect_receipt"
+        )
+        self.assertEqual(execution_receipt["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertEqual(execution_receipt["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(execution_receipt["replacement_candidates"], [])
+        self.assertFalse(execution_receipt["router_selectable_by_default"])
+        self.assertIn("ignition/", execution_receipt["permissions"]["read_paths"])
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         structural_analogy = next(card for card in candidates if card["tool_id"] == "reasoning.search_structural_analogies")

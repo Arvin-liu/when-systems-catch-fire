@@ -11923,6 +11923,236 @@
         "A route proposal does not invoke the tool, authenticate inputs, satisfy CI, or grant merge/release authority."
       ],
       "claim_ceiling": "Caller-supplied same-context run snapshots and plans are structurally bound by the existing single-run attribution contract. Artifact hashes are supplied values; receipt outcomes are caller declarations, and missing receipt content is unknown. No source authentication, official CI validation, required-check sufficiency, waste, billing, cost/savings, merge, release, or scientific conclusion is established."
+    },
+    {
+      "tool_id": "maintenance.preflight_execution_effect_receipt",
+      "display_name": {
+        "zh": "工具运行效果回执预检器",
+        "en": "Execution Effect Receipt Preflight"
+      },
+      "description": "Checks caller-declared run, tool/version/source/input/output, environment and later-observation bindings; optionally rereads selected bounded regular files under ignition/ and returns digest-only comparisons to a declared baseline. It never invokes the subject tool.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no Owner, lifecycle, or release authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_execution_effect_receipt.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_execution_effect_receipt.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_execution_effect_receipt.py",
+          "role": "READ_ONLY_RUN_AND_LOCAL_PATH_OBSERVER"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-execution-effect-receipt-input-r0.schema.json",
+          "role": "STRICT_BOUNDED_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-execution-effect-receipt-output-r0.schema.json",
+          "role": "MACHINE_READABLE_RESULT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-execution-effect-receipt.md",
+          "role": "USE_CASE_LIMITS_AND_FALLBACK"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_execution_effect_receipt.py",
+          "role": "FUNCTIONAL_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_execution_effect_receipt_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-execution-effect-receipt/valid-effect-r0.json",
+          "role": "SYNTHETIC_CONTRACT_FIXTURE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-effect-receipt-real-task-r0.json",
+          "role": "LOCAL_REAL_TASK_RUN_AND_STATE_OBSERVATION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-effect-receipt-c1-evidence-r0.json",
+          "role": "OWNER_C1_SCOPE_AND_COMPLEMENTARITY_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-effect-receipt-route-profile-r0.json",
+          "role": "EXACT_DEFAULT_OFF_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-effect-receipt-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_OPTIONAL_CANDIDATE_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tools/toolbox_portable_research_episode.py",
+          "role": "PORTABLE_EPISODE_ADJACENT_TOOL_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_attribution.py",
+          "role": "GITHUB_ACTIONS_SPECIFIC_ADJACENT_TOOL_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_failure_anchored_recovery.py",
+          "role": "FAILURE_RECOVERY_ADJACENT_TOOL_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_verify_offline_source_snapshot_run.py",
+          "role": "OFFLINE_SOURCE_SNAPSHOT_ADJACENT_TOOL_COMPARATOR"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/toolbox-execution-effect-receipt-input-r0.schema.json"
+      ],
+      "good_for": [
+        "Binding a declared completed run to a later observation by exact run ID, tool ID/version/source SHA-256, input/output SHA-256, environment reference and observation time.",
+        "Rereading up to 32 selected regular files under ignition/ without returning file contents, then comparing current SHA-256 or absence with a caller-declared baseline.",
+        "Keeping no-run, started, completed, unknown, contradictory observation and unpreserved nonzero failure states distinct."
+      ],
+      "not_for": [
+        "Authenticating the caller, source, run, environment, actor, observation, or a supplied baseline digest.",
+        "Observing paths outside ignition/, cloud systems, APIs, physical systems, or effects not represented by selected local files.",
+        "Proving that the declared action caused a filesystem difference or that no other effect occurred.",
+        "Executing, retrying, authorizing, publishing, merging, or establishing scientific or production truth."
+      ],
+      "only_if": [
+        "The task needs a bounded consistency check of one execution record and caller-supplied later observation.",
+        "Any requested local state observation is limited to explicit regular files under ignition/ and the caller accepts digest-only output.",
+        "The baseline is preserved separately and is treated as caller-declared unless its provenance is independently checked."
+      ],
+      "counterindicated_when": [
+        "The required effect is outside the local ignition/ checkout or requires an authenticated remote or physical observer.",
+        "The caller expects source hashes, run identity, baseline provenance, actor independence, or action causality to be authenticated.",
+        "A run is missing or incomplete but the task would treat the output as success."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object conforming to toolbox-execution-effect-receipt-input-r0, maximum 131072 bytes."
+      ],
+      "output_types": [
+        "Deterministic JSON with caller-declared binding findings, execution/outcome states, failure preservation, fixed non-authority fields, and optional digest-only observations of selected ignition/ files."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "BOUNDED_STDIN_AND_READ_ONLY_RECHECK_OF_EXPLICIT_IGNITION_PATHS",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_execution_effect_receipt.py",
+          "ignition/schemas/operations/toolbox-execution-effect-receipt-input-r0.schema.json",
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded stdin JSON object, the local schema and source file, and optionally selected ignition/ file bytes for SHA-256 only; emits JSON to stdout or an error to stderr. It writes no files and returns no observed file contents."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "jsonschema >=4.18 with Draft 2020-12 support"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Input is capped at 131072 bytes; local reads are capped at 32 paths, 1 MiB per file and 4 MiB total. No matched latency, operator-time, or monetary-cost comparison was conducted."
+      },
+      "alternatives": [
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Validates versioned research artifact, execution-reference, review, omission and fork-map relations; it does not reread current local file state or bind a generic observation to tool/source/input/output/environment/run fields."
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Validates GitHub Actions plans, runs, artifacts and target receipts for its specific CI contract; this candidate handles generic caller-declared executions and selected local ignition/ file state."
+        },
+        {
+          "tool_id": "maintenance.preflight_failure_anchored_recovery",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Gates a failure diagnosis and retry plan; it does not provide a general post-run local file-state reread."
+        },
+        {
+          "tool_id": "research.verify_offline_source_snapshot_run",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Verifies one bounded offline-source snapshot contract; this candidate reports selected current checkout files and caller-declared execution observations."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Bind a generic completed run and later caller observation across tool/version/source/input/output/environment/run identity and chronology.",
+        "Independently reread selected bounded current ignition/ file state and compare digest/absence with a caller-declared baseline without exposing contents."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Low-cost same-task contract exercise on one real local PR #264 target-coverage replay, plus exact-scope inspection of portable episode, Actions attribution, failure recovery and source snapshot contracts. No same-task performance or cost comparison was conducted.",
+        "compared_tool_ids": [
+          "collaboration.validate_portable_research_episode",
+          "maintenance.attribute_actions_validation_evidence",
+          "maintenance.preflight_failure_anchored_recovery",
+          "research.verify_offline_source_snapshot_run"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_portable_research_episode.py",
+          "ignition/tools/toolbox_actions_validation_attribution.py",
+          "ignition/tools/toolbox_failure_anchored_recovery.py",
+          "ignition/tools/toolbox_verify_offline_source_snapshot_run.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-execution-effect-receipt-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-execution-effect-receipt-real-task-r0.json",
+          "ignition/tests/test_toolbox_execution_effect_receipt.py"
+        ],
+        "findings": [
+          "The selected prior tools have distinct useful contracts and none is retired or replaced by this candidate.",
+          "The candidate accepts a generic run receipt and directly rereads selected current Ignition files; the existing adjacent validators do not produce that combination of outputs.",
+          "The local reread observes current checkout state only. It does not authenticate the prior baseline or prove causal attribution.",
+          "Comparative quality, reliability, latency, operator effort and monetary cost remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "A real PR #264 task replay exercises generic run binding and a bounded current file reread. Existing tools retain their distinct use cases; no replacement or retirement evidence exists."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "Optional experimental card only; Current operation registry and existing routers stay unchanged.",
+          "Use portable episode, Actions attribution, failure recovery or source-snapshot tools for their narrower declared contracts."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, implementation, schemas, docs, fixture, tests, task evidence, comparison evidence, route profile and route evidence, then regenerate identity-card and TOOLBOX projections.",
+          "Preserve the historical task input, observations and comparison record if the runnable candidate is retired."
+        ]
+      },
+      "fallback": "For a task-specific Actions plan/run/artifact receipt use maintenance.attribute_actions_validation_evidence; for research package versions use collaboration.validate_portable_research_episode; for recovery planning use maintenance.preflight_failure_anchored_recovery. If an authenticated effect is required, inspect the authorized source directly and retain its evidence.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_execution_effect_receipt.py",
+          "ignition/tests/test_toolbox_execution_effect_receipt_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tools/operations/validate_toolbox_candidates.py",
+          "ignition/tools/operations/build_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Reject duplicate JSON keys, oversized stdin, invalid schemas, traversal paths, symlinks, non-files, and bounded-read overflow without exposing file contents.",
+          "Report exact run, tool ID/version, source/input/output digest, environment, and chronology mismatches; preserve unknowns rather than labeling them as success.",
+          "Contradictory effect states remain findings; same executor/observer actor reference is labeled self-report.",
+          "A nonzero exit without a matching first-failure record remains incomplete; a preserved failure record never becomes a success claim.",
+          "Default routing excludes the candidate; explicit selection creates only a proposal and never invokes a tool or grants execution authority."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Select only for a task that needs a generic run/observation binding or a bounded current ignition/ file-state reread.",
+        "The caller explicitly allowlists this experimental candidate; default routing stays off.",
+        "Do not route for authenticated remote/physical effects, source verification, action execution, retry, or external authority."
+      ],
+      "claim_ceiling": "Checks caller-declared execution and observation relations, and directly hashes only explicitly selected regular files under the current ignition/ checkout within bounded limits. It does not authenticate references or baseline provenance, prove causality or external effects, execute or authorize an action, or establish scientific or release truth."
     }
   ]
 }

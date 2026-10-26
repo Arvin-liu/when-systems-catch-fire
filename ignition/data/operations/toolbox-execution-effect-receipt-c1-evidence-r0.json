@@ -1,0 +1,66 @@
+{
+  "schema_version": "toolbox-execution-effect-receipt-c1-evidence-r0",
+  "owner_rule": {
+    "repository": "Arvin-liu/1111",
+    "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "section": "C1",
+    "disposition_rule": "Compare real task function, evidence completeness, scope, cost, reliability and risk; retire only with evidence that all valuable uses are covered, preserve uncertainty when comparisons are insufficient."
+  },
+  "task_context": {
+    "task": "Bind one caller-supplied completed tool run to an observation by exact tool/version/source/input/output/environment/run identifiers, retain failed-run evidence, and optionally reread bounded local Ignition file state.",
+    "input_contract": "toolbox-execution-effect-receipt-input-r0",
+    "same_task_comparison": "The exact receipt_input recorded from the local PR #264 target-coverage replay was evaluated by this candidate and checked against the portable episode, Actions attribution and failure-recovery contracts. Existing tools rejected or invalidated that object under their distinct contracts; the source-snapshot verifier was not invoked because its input is a captured E37 run directory."
+  },
+  "comparators": [
+    {
+      "tool_id": "collaboration.validate_portable_research_episode",
+      "implementation": "ignition/tools/toolbox_portable_research_episode.py",
+      "useful_scope": "Versioned research artifacts, run references, reviews, omissions and fork mappings.",
+      "gap_for_this_task": "An EXECUTED entry requires a generic run_ref but this tool does not bind tool version, source/input/output digests, environment, later observation chronology, or current local file state."
+    },
+    {
+      "tool_id": "maintenance.attribute_actions_validation_evidence",
+      "implementation": "ignition/tools/toolbox_actions_validation_attribution.py",
+      "useful_scope": "GitHub Actions validation plans, workflow runs, artifact inventories and optional target receipts.",
+      "gap_for_this_task": "Its specific plan, run, artifact and component-validation receipt contract is not a general local or non-GitHub tool invocation observer."
+    },
+    {
+      "tool_id": "maintenance.preflight_failure_anchored_recovery",
+      "implementation": "ignition/tools/toolbox_failure_anchored_recovery.py",
+      "useful_scope": "Preserved failed-run evidence, diagnosis references and a bounded proposed recovery or retry.",
+      "gap_for_this_task": "It gates a failure recovery proposal; it does not produce a general post-run observation of current repository file state."
+    },
+    {
+      "tool_id": "research.verify_offline_source_snapshot_run",
+      "implementation": "ignition/tools/toolbox_verify_offline_source_snapshot_run.py",
+      "useful_scope": "A specific captured offline source snapshot artifact set.",
+      "gap_for_this_task": "It checks its declared snapshot artifact contract and is not a general tool/version/environment/run outcome binder."
+    }
+  ],
+  "comparison_result": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "replacement_candidates": [],
+    "unique_remaining_use_cases": [
+      "Bind a generic completed tool run and later caller observation across exact identity, source/input/output digest, environment, run ID and chronology.",
+      "Independently reread a caller-selected, bounded regular file under ignition/ and compare its current SHA-256 with a caller-declared baseline without returning file contents."
+    ],
+    "findings": [
+      "The existing validators have useful adjacent scopes and are retained for those tasks.",
+      "The candidate provides a separate generic outcome-reference and bounded local file-state observation contract; it does not replace an existing validator.",
+      "The local reread observes current checkout bytes but cannot authenticate its caller-supplied baseline, identify which action caused a difference, or establish a scientific conclusion.",
+      "No matched quality, reliability, latency, operator-time, or monetary-cost comparison was conducted; those dimensions remain UNKNOWN."
+    ],
+    "disposition": "Coexist for the generic tool-run receipt and bounded current checkout observation use case. Reassess if an existing or future tool proves full valuable-use coverage under comparable permissions, environment and evidence quality."
+  },
+  "claim_ceiling": "This is a bounded functional-scope comparison and low-cost contract exercise. It does not prove comparative performance, cost, broad reliability, scientific validity, or a replacement decision beyond the declared scope.",
+  "same_task_contract_probe": {
+    "input_ref": "ignition/data/operations/toolbox-execution-effect-receipt-real-task-r0.json#receipt_input",
+    "candidate_result": "OUTCOME_RECORDED_CALLER_DECLARATION with NO_DIFFERENCE_FROM_DECLARED_BASELINE_OBSERVED for the selected current source file",
+    "collaboration.validate_portable_research_episode": "EPISODE_MANIFEST_INVALID for the same receipt object under the episode-manifest schema",
+    "maintenance.attribute_actions_validation_evidence": "rejected the same JSON object because it contains unsupported root fields outside its Actions plan/run/artifact contract",
+    "maintenance.preflight_failure_anchored_recovery": "rejected the same object as INPUT_SCHEMA_INVALID under its preserved-failure/recovery-plan contract",
+    "research.verify_offline_source_snapshot_run": "not invoked; its CLI requires a separately captured E37 offline-source snapshot run directory, not this generic execution-receipt object",
+    "interpretation": "The exact same task receipt does not satisfy the adjacent tools input contracts. This demonstrates functional non-equivalence, not quality, reliability, cost, or performance superiority."
+  }
+}

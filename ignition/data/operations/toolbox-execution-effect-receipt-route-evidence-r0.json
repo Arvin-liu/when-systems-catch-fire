@@ -1,0 +1,207 @@
+{
+  "schema_version": "toolbox-execution-effect-receipt-route-evidence-r0",
+  "tool_id": "maintenance.preflight_execution_effect_receipt",
+  "observed_at_utc": "2026-10-26T19:34:17Z",
+  "candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_git_blob_sha1": "627881277a0a90c47b040bca24a6db52851ebe91",
+  "route_profile": {
+    "task_id": "generic-tool-run-effect-receipt-and-local-state-check",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "One UTF-8 JSON object conforming to toolbox-execution-effect-receipt-input-r0, maximum 131072 bytes."
+    ],
+    "required_outputs": [
+      "Deterministic JSON with caller-declared binding findings, execution/outcome states, failure preservation, fixed non-authority fields, and optional digest-only observations of selected ignition/ files."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "task_profile": {
+        "task_id": "generic-tool-run-effect-receipt-and-local-state-check",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One UTF-8 JSON object conforming to toolbox-execution-effect-receipt-input-r0, maximum 131072 bytes."
+        ],
+        "required_outputs": [
+          "Deterministic JSON with caller-declared binding findings, execution/outcome states, failure preservation, fixed non-authority fields, and optional digest-only observations of selected ignition/ files."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "result_sha256": "3c1b3756cdb0ec02d55ee89d214d718aff5a263602b8ed077d6a131cfbe18686",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": null,
+      "relevant_rejections": [
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.preflight_execution_effect_receipt",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.preflight_failure_anchored_recovery",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "task_profile": {
+        "task_id": "generic-tool-run-effect-receipt-and-local-state-check",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One UTF-8 JSON object conforming to toolbox-execution-effect-receipt-input-r0, maximum 131072 bytes."
+        ],
+        "required_outputs": [
+          "Deterministic JSON with caller-declared binding findings, execution/outcome states, failure preservation, fixed non-authority fields, and optional digest-only observations of selected ignition/ files."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "maintenance.preflight_execution_effect_receipt"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.preflight_execution_effect_receipt"
+      ],
+      "result_sha256": "498d0938a1803e24bf614b1d7c0d4d67025fc86bbd2443d0afe8eae3c511ee90",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_execution_effect_receipt.py",
+          "ignition/schemas/operations/toolbox-execution-effect-receipt-input-r0.schema.json",
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "relevant_rejections": [
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.preflight_failure_anchored_recovery",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_overbroad_allowlist",
+      "task_profile": {
+        "task_id": "generic-tool-run-effect-receipt-and-local-state-check",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One UTF-8 JSON object conforming to toolbox-execution-effect-receipt-input-r0, maximum 131072 bytes."
+        ],
+        "required_outputs": [
+          "Deterministic JSON with caller-declared binding findings, execution/outcome states, failure preservation, fixed non-authority fields, and optional digest-only observations of selected ignition/ files."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "maintenance.preflight_execution_effect_receipt",
+        "maintenance.preflight_failure_anchored_recovery",
+        "collaboration.validate_portable_research_episode"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.preflight_execution_effect_receipt"
+      ],
+      "result_sha256": "cca3ec0538de114e80ccc98988bcfd5cee52da47e0587fe4b39869fff2c90431",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_execution_effect_receipt.py",
+          "ignition/schemas/operations/toolbox-execution-effect-receipt-input-r0.schema.json",
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "relevant_rejections": [
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.preflight_failure_anchored_recovery",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_allowlist_unrelated_input",
+      "task_profile": {
+        "task_id": "generic-tool-run-effect-receipt-and-local-state-check",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "ordinary prose"
+        ],
+        "required_outputs": [
+          "Deterministic JSON with caller-declared binding findings, execution/outcome states, failure preservation, fixed non-authority fields, and optional digest-only observations of selected ignition/ files."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "maintenance.preflight_execution_effect_receipt"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "result_sha256": "eea931e0cd8d8092e4a5bb19495291000d7ee47e2751b4f522d566ec37451831",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": null,
+      "relevant_rejections": [
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "maintenance.preflight_execution_effect_receipt",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "maintenance.preflight_failure_anchored_recovery",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    }
+  ],
+  "route_trials_replayed": 4,
+  "all_expected_decisions_reproduced": true,
+  "provider_calls_made": 0,
+  "candidate_invoked": false,
+  "execution_authorized": false,
+  "claim_ceiling": "Local offline route proposals only. The candidate was not invoked by the route planner; no provider was contacted, no repository path was reread by routing, and no execution permission was granted."
+}
