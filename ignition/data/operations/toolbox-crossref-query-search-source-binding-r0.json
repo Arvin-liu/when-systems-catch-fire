@@ -1,0 +1,95 @@
+{
+  "schema_version": "toolbox-crossref-query-search-source-binding-r0",
+  "tool_id": "research.search_crossref_query",
+  "tool_version": "0.1.0",
+  "implementation": {
+    "path": "ignition/tools/toolbox_crossref_query_search.py",
+    "source_sha256": "95d81032c393d54fca161f797e489d0f40694d58721622c054716c17b21f9968",
+    "new_provider_discovery_capability": "An additive explicit topic-query wrapper over Crossref Works v1. Existing Crossref tools only accept known DOI identifiers and return verification/reference projections; this wrapper accepts a public text query and discovers Crossref DOI records.",
+    "runtime": "Python standard library only"
+  },
+  "related_existing_blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 81,
+    "head_sha": "9dae5a0d73f66c8b0b6d01c0c6ca14fad34cc03a",
+    "path": "sources/IDEASCIENTIST-RESEARCH-IDEATION-CANDIDATE-R0.json",
+    "blob_sha": "0abdc502b07fd77cedb129db91f8ae2ce85499a4",
+    "candidate_key": "grounded_cross_domain_ideation",
+    "authority": "WORKBENCH_ONLY_NONCANONICAL",
+    "relationship": "This optional provider adapter supports bounded source discovery for a future caller-defined research task; it does not implement or run the blueprint's ideation pipeline or authorize its separate research trial."
+  },
+  "official_sources": [
+    {
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "retrieved_date": "2026-10-26",
+      "facts_used": [
+        "The REST API exposes metadata deposited by Crossref members and trusted sources through JSON endpoints including /works.",
+        "The Works endpoint supports search and a limited field projection; some deposited abstracts may be copyrighted.",
+        "No sign-up is required for REST API use."
+      ]
+    },
+    {
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/api-versioning/",
+      "retrieved_date": "2026-10-26",
+      "facts_used": [
+        "Crossref recommends explicitly specifying the REST API version; v1 is currently supported.",
+        "The wrapper pins its endpoint to /v1/works."
+      ]
+    },
+    {
+      "url": "https://community.crossref.org/t/refining-rest-api-limits-for-improved-stability-and-reliability/16137",
+      "retrieved_date": "2026-10-26",
+      "facts_used": [
+        "As of 2026-07-21, public-pool list/query requests are limited to one request per second and one concurrent request.",
+        "Crossref recommends checking response codes and x-rate-limit-limit, x-rate-limit-interval, and x-rate-limit-type headers.",
+        "Crossref documents rate limiting by email; this adapter sends no mailto and stays in the public pool."
+      ]
+    }
+  ],
+  "request_contract": {
+    "method": "GET",
+    "endpoint": "https://api.crossref.org/v1/works",
+    "query_parameters": ["query", "rows", "select"],
+    "selected_fields": ["DOI", "title", "author", "issued", "type", "publisher", "container-title", "is-referenced-by-count"],
+    "result_limit": {"minimum": 1, "maximum": 10},
+    "requests_per_invocation": 1,
+    "pagination": false,
+    "credentials": [],
+    "mailto": false,
+    "follow_redirects": false,
+    "retry": false,
+    "max_response_bytes": 524288,
+    "request_timeout_seconds": 5,
+    "response_budget_seconds": 7,
+    "response_projection_excludes": ["abstract", "reference", "link", "URL", "license", "arbitrary provider fields"]
+  },
+  "public_pool_rate_boundary": {
+    "current_list_request_limit": "1 request per second",
+    "current_concurrency_limit": 1,
+    "limit_headers_recorded": ["x-rate-limit-limit", "x-rate-limit-interval", "x-rate-limit-type"],
+    "global_rate_enforcement": "Not enforced across processes; callers must coordinate their own use and stop on HTTP 429."
+  },
+  "prior_art_comparison": {
+    "existing_crossref_known_doi_tool": "research.verify_crossref_metadata",
+    "existing_tool_accepts_topic_query": false,
+    "existing_tool_query_contract": "One to ten known DOI values with caller-provided title and year; not topic discovery.",
+    "new_tool_delta": "Default-off, bounded, metadata-only Crossref topic query with no account email or API key; this exposes a distinct input/task contract without claiming a new provider capability."
+  },
+  "dependencies": {
+    "runtime": "Python standard library",
+    "hardware": "NONE",
+    "network_host": "api.crossref.org",
+    "credential": "NONE",
+    "billing_account": "NONE",
+    "permission_default": "OFF; exact host route and per-invocation caller approval required"
+  },
+  "final_source_smoke": {
+    "evidence_ref": "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+    "source_sha256": "95d81032c393d54fca161f797e489d0f40694d58721622c054716c17b21f9968",
+    "response_sha256": "a12b164045333f04fa4c93496129ffc50ad59b404d06b91ac4feccc39f53512f",
+    "retrieval_timestamp_utc": "2026-10-26T05:30:05.810854Z",
+    "request_count": 1
+  },
+  "c1_evidence_ref": "ignition/data/operations/toolbox-crossref-query-search-c1-evidence-r0.json",
+  "claim_ceiling": "One Crossref response and its selected metadata at retrieval time only; no relevance, exhaustive recall, metadata correctness, source authenticity, article content, scientific support, or scientific validity is established."
+}
