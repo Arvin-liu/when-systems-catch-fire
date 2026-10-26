@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
-    "candidate_count": 58
+    "blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
+    "candidate_count": 59
   },
   "cards": [
     {
@@ -219,7 +219,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -451,7 +451,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -738,7 +738,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1003,7 +1003,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -1027,7 +1027,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1539,7 +1539,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1766,7 +1766,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2102,7 +2102,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2347,7 +2347,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/data/operations/toolbox-declared-permission-delta-smoke-evidence-r0.json",
@@ -2376,7 +2376,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2546,7 +2546,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b"
+          "sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -2570,7 +2570,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3017,11 +3017,11 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b"
+          "sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3222,7 +3222,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3438,7 +3438,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json",
@@ -3447,7 +3447,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3791,7 +3791,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4055,7 +4055,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4998,7 +4998,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5198,7 +5198,358 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
+      "tool_id": "maintenance.compare_actions_validation_target_coverage",
+      "display_name": {
+        "zh": "GitHub Actions 验证目标覆盖比较器",
+        "en": "GitHub Actions validation target coverage comparator"
+      },
+      "description": "Compare component-validation plan target sets and caller-declared target results across 2–20 same-workflow, same-event, same-pull-request, same-base Actions runs.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_actions_validation_target_coverage.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+          "role": "EXISTING_MULTI_RUN_STEP_ANALYSIS_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+          "role": "EXISTING_SINGLE_RUN_REAL_TASK_OUTPUT_FOR_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-c1-evidence-r0.json",
+          "role": "SAME_TASK_TOOLBOX_COMPARISON_AND_REPLACEMENT_DISPOSITION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-real-task-r0.json",
+          "role": "REAL_TASK_OUTPUT_AND_OBSERVED_OUTCOME"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_MINIMUM_SUFFICIENT_AND_SCOPE_NEGATIVE_ROUTE_TRIALS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-route-profile-r0.json",
+          "role": "FROZEN_ROUTE_TASK_CONTRACT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-source-binding-r0.json",
+          "role": "PINNED_GITHUB_ARTIFACT_METADATA_AND_ARCHIVE_HASH_CHECKS"
+        },
+        {
+          "path": "ignition/docs/operations/actions-validation-target-coverage.md",
+          "role": "HUMAN_SCOPE_INPUT_OUTPUT_LIMITS_AND_ROLLBACK"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-actions-validation-target-coverage-input-r0.schema.json",
+          "role": "MACHINE_READABLE_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-actions-validation-target-coverage-output-r0.schema.json",
+          "role": "MACHINE_READABLE_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json",
+          "role": "FOUR_EXACT_PR264_RUN_PLAN_AND_RECEIPT_INPUTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "role": "COMPARED_MULTI_RUN_STEP_ANALYZER_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_validation_attribution.py",
+          "role": "REUSED_SINGLE_RUN_CONTRACT_COMPATIBILITY_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_validation_attribution_routing.py",
+          "role": "EXISTING_SINGLE_RUN_ROUTE_COMPATIBILITY_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_validation_target_coverage.py",
+          "role": "REAL_TASK_AND_ADVERSARIAL_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "role": "COMPARED_MULTI_RUN_STEP_ANALYZER"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_step_timeline.py",
+          "role": "TRANSITIVE_SINGLE_RUN_TIMELINE_VALIDATOR_DEPENDENCY"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_attribution.py",
+          "role": "REUSED_SINGLE_RUN_PLAN_ARTIFACT_AND_RECEIPT_VALIDATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+          "role": "BOUNDED_OFFLINE_MULTI_RUN_TARGET_COVERAGE_COMPARATOR"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_actions_validation_attribution.py",
+        "ignition/tools/toolbox_actions_step_timeline.py"
+      ],
+      "good_for": [
+        "Comparing validation selected-target coverage over 2–20 supplied Actions runs from one workflow/event/PR/base context.",
+        "Finding target additions/removals, repeated coverage signatures, and caller-declared receipt outcome changes.",
+        "Keeping missing receipt evidence distinct from target failure."
+      ],
+      "not_for": [
+        "A one-run plan/artifact/receipt attribution task.",
+        "Authenticating GitHub run or artifact source data.",
+        "Establishing official CI status, required-check sufficiency, or scientific validity.",
+        "Inferring target failures when receipt content is missing.",
+        "Estimating waste, billed minutes, cash cost, or savings.",
+        "Authorizing merge or release."
+      ],
+      "only_if": [
+        "Caller supplies 2–20 complete single-run attribution inputs.",
+        "Every run has the same workflow ID/path, event, PR number, and base SHA.",
+        "The task requires cross-run target coverage or declared-result comparison.",
+        "The user explicitly allowlists this exact experimental candidate for routing."
+      ],
+      "counterindicated_when": [
+        "Only one run is in scope.",
+        "Only job/step timing is needed.",
+        "Different workflow, event, PR, or base contexts are being compared.",
+        "The result depends on official source authentication, CI policy, billing, or merge/release authority."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin envelope schema toolbox-actions-validation-target-coverage-input-r0; 2–20 existing single-run attribution input objects; total at most 2 MiB."
+      ],
+      "output_types": [
+        "Deterministic JSON with per-run plan/run/artifact/receipt bindings, target-set union/intersection, adjacent additions/removals/result deltas, per-target plan and caller-declared result counts, repeated coverage signatures, timestamp anomaly records, and explicit non-claims."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "BOUNDED_OFFLINE_READ_ONLY_STDIN_PROCESS",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_actions_validation_target_coverage.py",
+          "ignition/tools/toolbox_actions_validation_attribution.py",
+          "ignition/tools/toolbox_actions_step_timeline.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads bounded JSON from stdin.",
+        "Writes deterministic JSON to stdout and validation errors to stderr.",
+        "Creates no files and makes no network requests."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library.",
+        "Existing toolbox_actions_validation_attribution.py and toolbox_actions_step_timeline.py."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No general runtime, analyst-time, billing, or cash-cost benchmark was conducted; the tool is local and offline."
+      },
+      "alternatives": [
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Binds and summarizes one run; it does not compare target sets and declared-result history across runs."
+        },
+        {
+          "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Compares repeated job/step names and intervals; it does not read component validation plans, selected target IDs, or receipts."
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_step_timeline",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Summarizes one run job/step timeline; it does not compare validation target coverage across a run history."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Compare selected-target plan coverage and caller-declared receipt outcomes across 2–20 same-context runs in one output while preserving absent receipt as unknown."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Same historical PR #264 target-coverage task evaluated against the existing single-run attribution tool, multi-run repeated-step analyzer, and single-run timeline operation. Functional scope was compared; no performance, cost, billing, reliability, or avoidable-work benchmark was conducted.",
+        "compared_tool_ids": [
+          "maintenance.attribute_actions_validation_evidence",
+          "maintenance.compare_actions_repeated_step_sequences",
+          "maintenance.summarize_actions_step_timeline"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_actions_validation_attribution.py",
+          "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "ignition/tools/toolbox_actions_step_timeline.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+          "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+          "ignition/data/operations/toolbox-actions-validation-target-coverage-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-actions-validation-target-coverage-real-task-r0.json",
+          "ignition/data/operations/toolbox-actions-validation-target-coverage-source-binding-r0.json",
+          "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json"
+        ],
+        "findings": [
+          "Single-run attribution validates one plan, run, artifact list, and optional receipt. Applied independently, it preserves one-run bindings but does not produce cross-run target union/intersection, additions/removals, or per-target history in one output.",
+          "The repeated-step analyzer compares job and step names, outcomes, and timestamps across runs, but it does not read validation plans, selected target IDs, artifact inventories, or component receipts.",
+          "The current single-run timeline operation summarizes one run job/step intervals and does not compare target coverage.",
+          "The new component composes existing per-run attribution and adds target-set and caller-declared-result aggregation. It does not replace any existing tool.",
+          "No matched performance, cash-cost, billing, avoidable-work, or reliability comparison was conducted. Estimated cost and savings remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "A real historical task demonstrates distinct cross-run target-coverage comparison. Existing tools retain their unique scopes; no replacement or retirement is supported."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "Existing tools and Current operations need no migration; use this component only for multi-run target-coverage tasks.",
+          "Preserve source binding, comparison evidence, and historical outputs if it is retired."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card and its identity projection, implementation, schemas, tests, route evidence, and candidate-only source data.",
+          "Regenerate toolbox identity projections with the repository generator.",
+          "Existing attribution, repeated-step, and timeline tools remain independently usable."
+        ]
+      },
+      "fallback": "For one run use maintenance.attribute_actions_validation_evidence. For repeated job/step intervals use maintenance.compare_actions_repeated_step_sequences. For a one-run timeline use maintenance.summarize_actions_step_timeline.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_actions_validation_target_coverage.py",
+          "ignition/tests/test_toolbox_actions_validation_target_coverage_routing.py",
+          "ignition/tests/test_toolbox_actions_validation_attribution.py",
+          "ignition/tests/test_toolbox_actions_validation_attribution_routing.py",
+          "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Mixed workflow/event/PR/base context, duplicate run/attempt, invalid attribution digest, duplicate JSON keys, and input over 2 MiB fail closed.",
+          "A cancelled run without receipt emits NO_TARGET_RESULT_CLAIM for planned targets and does not add target failures.",
+          "Only completed skipped jobs with reversed timestamps have their interval removed and anomaly recorded; executed-job timestamp errors still fail closed.",
+          "Default route excludes this candidate; exact allowlisting can propose it but never authorizes execution."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless this exact candidate ID is explicitly allowlisted for a 2–20 run same-context target-coverage comparison.",
+        "Do not select for a single-run attribution or job/step timing-only task.",
+        "A route proposal does not invoke the tool, authenticate inputs, satisfy CI, or grant merge/release authority."
+      ],
+      "claim_ceiling": "Caller-supplied same-context run snapshots and plans are structurally bound by the existing single-run attribution contract. Artifact hashes are supplied values; receipt outcomes are caller declarations, and missing receipt content is unknown. No source authentication, official CI validation, required-check sufficiency, waste, billing, cost/savings, merge, release, or scientific conclusion is established.",
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "8b771b36fe829940af34835058af915ef9545535",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/data/operations/toolbox-actions-repeated-step-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "ad800f594050d4d12ac9a7b106e772d4bf78fd16"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "a77f190c804c6f2a661e3c866d48a2f7fa119a50"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-c1-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "a36ea29bd53693b6da027731b28e9dd77e0b4be0"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-real-task-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "014b1e19412afade991c053adeea2f75cbcb77c8"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "f334c23a6b1e5ecebf19fd0d3b7ed4be8cfb0ce5"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-route-profile-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "1eb94134cc55fd9535971e603c8351e2dd3ef3a7"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-actions-validation-target-coverage-source-binding-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "9ff5c876e5bd21ec20968256fcbc23eab40d99a8"
+        },
+        {
+          "path": "ignition/docs/operations/actions-validation-target-coverage.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "a82add806fbcb33a90e89fc48c0e036af8f2ddec"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-actions-validation-target-coverage-input-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "b7ad5492c1a953259a6829457d6515038fea0491"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-actions-validation-target-coverage-output-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "520374bf34a38853b02cf18fcc76c071b591e421"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "d5fdbf9a17a47c47c43ecd55c84148d56ddb79c2"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_repeated_step_analysis.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "50fcfba8343d30d57b9ec8644c3752b78e6303e5"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_validation_attribution.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "c8e2c8b42192144ec36a911db730236c5e0f2d2b"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_validation_attribution_routing.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "60dde8613614d3f7d445ad8ec6c0ac3e1d48c59d"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_actions_validation_target_coverage.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "b906477a035575b4402a1be1f063a9c5183c554f"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "7eaaa9f5f8161ae0f590c059875567fb42c1c421"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_step_timeline.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "9c9981755b58dcfff8dd830d6581c330ea02e191"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_attribution.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "4a37bd62415975999c31f07d83cffeb612b35533"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "8b771b36fe829940af34835058af915ef9545535"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5466,7 +5817,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5750,11 +6101,11 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6038,7 +6389,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6315,7 +6666,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6726,7 +7077,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7087,7 +7438,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7352,7 +7703,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/tests/test_toolbox_producer_consumer_semantic_preflight.py",
@@ -7396,7 +7747,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7664,7 +8015,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7868,7 +8219,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8190,7 +8541,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8454,7 +8805,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8887,7 +9238,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9210,7 +9561,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9760,7 +10111,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10043,7 +10394,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b"
+          "sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d"
         },
         {
           "path": "ignition/tools/toolbox_validate_evidence_program.py",
@@ -10067,7 +10418,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10368,7 +10719,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10712,7 +11063,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -10761,7 +11112,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11083,7 +11434,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -11112,7 +11463,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11423,7 +11774,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -11452,7 +11803,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11694,7 +12045,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12065,7 +12416,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12282,7 +12633,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12512,7 +12863,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
@@ -12551,7 +12902,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12773,7 +13124,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
@@ -12792,7 +13143,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -13102,7 +13453,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -13353,7 +13704,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/docs/operations/pubmed-citation-matcher.md",
@@ -13392,7 +13743,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -13612,7 +13963,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -13889,7 +14240,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-smoke-evidence-r0.json",
@@ -13898,7 +14249,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -14243,7 +14594,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -14637,7 +14988,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -14872,7 +15223,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -15171,7 +15522,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/schemas/operations/toolbox-arxiv-query-search-input-r0.schema.json",
@@ -15280,7 +15631,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -15558,7 +15909,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/schemas/operations/toolbox-crossref-query-search-input-r0.schema.json",
@@ -15612,7 +15963,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -16053,7 +16404,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -16384,7 +16735,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/schemas/operations/toolbox-openalex-query-search-input-r0.schema.json",
@@ -16473,7 +16824,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -16740,7 +17091,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
@@ -16759,7 +17110,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -16955,7 +17306,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -17420,7 +17771,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -17637,12 +17988,12 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b"
+          "sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d"
         },
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "0a1c0d4ac6ca7be273f05cf69ade2916083b9024"
+          "sha1": "6213f69485e92b002df3b7752f5d21f7d6d99dff"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -17656,7 +18007,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -17851,7 +18202,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -18043,7 +18394,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -18551,7 +18902,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "401ce343ee5e8cc3aeedd0e4dc580db50858f63b",
+      "candidate_catalog_blob_sha1": "90eea57615568e1964fcfe0f02e88b740ce12e9d",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -18683,6 +19034,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 78,
+  "card_count": 79,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }

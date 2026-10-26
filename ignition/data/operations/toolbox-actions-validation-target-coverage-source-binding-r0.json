@@ -1,0 +1,198 @@
+{
+  "schema_version": "toolbox-actions-validation-target-coverage-source-binding-r0",
+  "repository": "Arvin-liu/when-systems-catch-fire",
+  "source_blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 85,
+    "pull_request_url": "https://github.com/Arvin-liu/ignition-architecture-workbench/pull/85",
+    "head_sha": "77d308ea132a4952d151cab1d81f9f9c9f44f55c",
+    "candidate_id": "G-FOUNDATION-ECONOMICS-R0",
+    "source_files": [
+      {
+        "path": "governance/IGNITION-FOUNDATION-VALIDATION-ECONOMICS-AND-CAUSAL-TRIGGERS-R0.md",
+        "blob_sha": "bf952c00c50fa356b72d2260e4d5197017089b47"
+      },
+      {
+        "path": "sources/HARNESSPRO-AND-FOUNDATION-QUEUE-R0.json",
+        "blob_sha": "9b1c5d551bed694861b9ca71fff62ee8a5242b96"
+      }
+    ],
+    "relation": "Motivation to inspect repeated Foundation target coverage; not evidence that runs were wasteful or CI cost was reduced."
+  },
+  "workflow_context": {
+    "workflow_id": 311987523,
+    "workflow_path": ".github/workflows/foundation-validation.yml",
+    "event": "pull_request",
+    "pull_request_number": 264,
+    "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+  },
+  "github_artifact_api_metadata_observed": true,
+  "archive_sha256_checked_against_api_metadata": true,
+  "runs": [
+    {
+      "input_ordinal": 1,
+      "run_id": 39889835854,
+      "run_attempt": 1,
+      "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+      "workflow_id": 311987523,
+      "artifact_id": 12477173469,
+      "artifact_name": "component-validation-39889835854-1",
+      "artifact_api_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12477173469",
+      "artifact_archive_download_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12477173469/zip",
+      "archive_size_in_bytes_from_api": 32929,
+      "archive_sha256_from_api": "209fabb73b7cf00255aeabb1f5b34c56d215c602d1e35861c2361f2aad93d4ba",
+      "archive_sha256_verified_locally": "209fabb73b7cf00255aeabb1f5b34c56d215c602d1e35861c2361f2aad93d4ba",
+      "archive_sha256_matches_api_metadata": true,
+      "archive_file_sha256": {
+        "component-validation-plan.json": "e12ac836872332267e7c7c434018b2f7bccc9911ae7ecb8b05244cb904ff7dc2",
+        "component-validation-receipt.json": "09c6e53d78c4e0fdf10e7d0437887586e385765970095955dacba9b36757994d"
+      },
+      "archive_entries": [
+        "component-validation-plan.json",
+        "component-validation-receipt.json"
+      ],
+      "source_status": "failure",
+      "plan_sha256": "019d1a9a85249a1f499870b08c1c031a5c60a7b1e207b3c9c5bb2be820c182ed",
+      "validation_map_sha256": "17c7507cef4c6d52cf9cc02ade41696a96e16a52dd0f7c179d852b36424ae122",
+      "selected_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "receipt_sha256": "8b7340eea5b64c3f0faf72bd9f3dcfb0bd71f6d7dc5910b73a9aa4e8b2d9158a",
+      "action_snapshot_sha256": "01a6c72d8b04aa40618caa89367724ff0d3e6ce216ef91fc39e90111913bfa8a"
+    },
+    {
+      "input_ordinal": 2,
+      "run_id": 39899735096,
+      "run_attempt": 1,
+      "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+      "workflow_id": 311987523,
+      "artifact_id": 12480759157,
+      "artifact_name": "component-validation-39899735096-1",
+      "artifact_api_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12480759157",
+      "artifact_archive_download_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12480759157/zip",
+      "archive_size_in_bytes_from_api": 31631,
+      "archive_sha256_from_api": "a5384d19fc3fc3c9ca0050681458e73f4477defee5a5a2e890aa26abac9977ce",
+      "archive_sha256_verified_locally": "a5384d19fc3fc3c9ca0050681458e73f4477defee5a5a2e890aa26abac9977ce",
+      "archive_sha256_matches_api_metadata": true,
+      "archive_file_sha256": {
+        "component-validation-plan.json": "5135916126f147cb9485f5d7a455e90724770057832933af007f26a778771c49",
+        "component-validation-receipt.json": "97869a51d32c75f62f8354cf81f1939dfdcc4ed41e2c19fa9310163af79d0298"
+      },
+      "archive_entries": [
+        "component-validation-plan.json",
+        "component-validation-receipt.json"
+      ],
+      "source_status": "failure",
+      "plan_sha256": "f307e23c17aa103027958d29ccd8085201beaf6a0a50021e67029bb9f62eac58",
+      "validation_map_sha256": "17c7507cef4c6d52cf9cc02ade41696a96e16a52dd0f7c179d852b36424ae122",
+      "selected_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "receipt_sha256": "8d32857119f24f927cc3c1eba46269a5cf235dea04d7163e60f703b9d606411a",
+      "action_snapshot_sha256": "d546af73b0a299f7228bbbfbd3b8bcc4cd2c2aa2d32f9fbdef236d271a0761cc"
+    },
+    {
+      "input_ordinal": 3,
+      "run_id": 39910840268,
+      "run_attempt": 1,
+      "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+      "workflow_id": 311987523,
+      "artifact_id": 12485949787,
+      "artifact_name": "component-validation-39910840268-1",
+      "artifact_api_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12485949787",
+      "artifact_archive_download_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12485949787/zip",
+      "archive_size_in_bytes_from_api": 28088,
+      "archive_sha256_from_api": "2d246ec693e4638001b967a4a49c67b1391758f84779e582b417f77c7867dfaa",
+      "archive_sha256_verified_locally": "2d246ec693e4638001b967a4a49c67b1391758f84779e582b417f77c7867dfaa",
+      "archive_sha256_matches_api_metadata": true,
+      "archive_file_sha256": {
+        "component-validation-plan.json": "74f6e77aa4c571dcf889a972eba9f273541c1d427d97d00d359e3c60ccd78fd4",
+        "component-validation-receipt.json": "6078231167491fc4fdfe6717742dfce4d974b9e5edb48ccd2d4c3a012dd5483b"
+      },
+      "archive_entries": [
+        "component-validation-plan.json",
+        "component-validation-receipt.json"
+      ],
+      "source_status": "success",
+      "plan_sha256": "40bdb0c6432dfc6178ceaeb23b980b0d471c4d39235a95989a742668305157f8",
+      "validation_map_sha256": "17c7507cef4c6d52cf9cc02ade41696a96e16a52dd0f7c179d852b36424ae122",
+      "selected_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "receipt_sha256": "76cd438dd40d98c0a3adeac0cabc0d2dffebd08e88fbacefeae57aa818bea90b",
+      "action_snapshot_sha256": "6f95844c74f1866e7db08eae0c7ec87d4bc5dc5ccfbb4f7a8d157ecfd7dc091e"
+    },
+    {
+      "input_ordinal": 4,
+      "run_id": 40064357026,
+      "run_attempt": 1,
+      "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+      "workflow_id": 311987523,
+      "artifact_id": 12549244084,
+      "artifact_name": "component-validation-40064357026-1",
+      "artifact_api_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12549244084",
+      "artifact_archive_download_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire/actions/artifacts/12549244084/zip",
+      "archive_size_in_bytes_from_api": 8185,
+      "archive_sha256_from_api": "cdbe451766bfbd07ebf26a5103474f4e2064902a1ad7f12627fe2756425dd888",
+      "archive_sha256_verified_locally": "cdbe451766bfbd07ebf26a5103474f4e2064902a1ad7f12627fe2756425dd888",
+      "archive_sha256_matches_api_metadata": true,
+      "archive_file_sha256": {
+        "component-validation-plan.json": "5a8ac939ed79f0ecd2e6caf3a63401a8776574f011890f7c2835577b193dccf2"
+      },
+      "archive_entries": [
+        "component-validation-plan.json"
+      ],
+      "source_status": "cancelled",
+      "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+      "validation_map_sha256": "c5f6bf9905505c9dc7bbd0d7d45675250cf0954c268f3501e076c1ac23248f9c",
+      "selected_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_operating_method_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "receipt_sha256": null,
+      "action_snapshot_sha256": "d9f1e7ccfda1c38b3ae7e3f7ec49432cdae0b7872665dff3b4af70553a556cab"
+    }
+  ],
+  "normalized_fixture": {
+    "path": "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json",
+    "bytes": 835523,
+    "sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372"
+  },
+  "claim_ceiling": "Historical caller-supplied run snapshots and artifacts. Archive digests matched GitHub API metadata. This does not authenticate run contents as official required-check evidence, verify receipts as CI, establish waste/savings/billed cost, or authorize merge/release."
+}

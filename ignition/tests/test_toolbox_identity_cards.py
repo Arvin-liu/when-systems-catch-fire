@@ -597,6 +597,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         offline_snapshot_verifier = next(
             card for card in candidates if card["tool_id"] == "research.verify_offline_source_snapshot_run"
         )
+        validation_target_coverage = next(
+            card for card in candidates if card["tool_id"] == "maintenance.compare_actions_validation_target_coverage"
+        )
         specialized_tool_ids = {
             editorial["tool_id"],
             "maintenance.summarize_actions_step_timeline",
@@ -617,6 +620,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             updates["tool_id"],
             pubmed_composition["tool_id"],
             "maintenance.attribute_actions_validation_evidence",
+            validation_target_coverage["tool_id"],
             "maintenance.inspect_exact_head_check_observations",
             "research.search_europe_pmc_query",
             "research.resolve_europe_pmc_fulltext_locations",
@@ -636,6 +640,13 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
         self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], noaa_ch4_comparator["tool_id"], "research.compare_noaa_co2_source_surfaces", "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability", "maintenance.compare_toolbox_component_coverage"} for card in candidates))
+        self.assertEqual(validation_target_coverage["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertEqual(validation_target_coverage["execution_mode"], "READ_ONLY_RUN")
+        self.assertFalse(validation_target_coverage["router_selectable_by_default"])
+        self.assertEqual(validation_target_coverage["replacement_candidates"], [])
+        self.assertTrue(validation_target_coverage["unique_remaining_use_cases"])
+        self.assertEqual(validation_target_coverage["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(validation_target_coverage["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         self.assertTrue(all(card["source_refs_with_hashes"] for card in candidates))
         self.assertTrue(all(card["explicit_owner_authorization_required"] is False for card in candidates))
         structural_analogy = next(card for card in candidates if card["tool_id"] == "reasoning.search_structural_analogies")

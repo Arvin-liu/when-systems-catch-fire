@@ -1,0 +1,18 @@
+{
+  "schema_version": "toolbox-actions-validation-target-coverage-route-profile-r0",
+  "task_id": "compare-pr-validation-target-coverage-history",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin envelope schema toolbox-actions-validation-target-coverage-input-r0; 2–20 existing single-run attribution input objects; total at most 2 MiB."
+  ],
+  "required_outputs": [
+    "Deterministic JSON with per-run plan/run/artifact/receipt bindings, target-set union/intersection, adjacent additions/removals/result deltas, per-target plan and caller-declared result counts, repeated coverage signatures, timestamp anomaly records, and explicit non-claims."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "task_class": "EXPERIMENTAL_MULTI_RUN_VALIDATION_TARGET_COVERAGE",
+  "required_candidate_tool_id": "maintenance.compare_actions_validation_target_coverage",
+  "default_route_expected": "INCOMPLETE",
+  "owner_allowlist_required": true
+}

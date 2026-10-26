@@ -1,0 +1,1156 @@
+{
+  "schema_version": "toolbox-actions-validation-target-coverage-real-task-r0",
+  "task": {
+    "description": "Compare actual PR #264 validation target coverage and caller-declared target results across four historical Actions runs.",
+    "tool_id": "maintenance.compare_actions_validation_target_coverage",
+    "input_fixture": "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json",
+    "input_bytes": 835523,
+    "input_sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372",
+    "source_binding": "ignition/data/operations/toolbox-actions-validation-target-coverage-source-binding-r0.json"
+  },
+  "invocation": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_actions_validation_target_coverage.py --stdin",
+    "exit_code": 0,
+    "network_used_by_tool": false,
+    "filesystem_writes_by_tool": false,
+    "tool_output_path": "tool_output"
+  },
+  "tool_output": {
+    "adjacent_run_deltas": [
+      {
+        "added_target_ids": [],
+        "from_head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+        "from_input_ordinal": 1,
+        "from_run_id": 39889835854,
+        "removed_target_ids": [],
+        "retained_target_ids": [
+          "g_component_release_controls",
+          "g_current_state_consumers",
+          "g_epistemic_boundary_consumers",
+          "g_federation_boundary_consumers",
+          "g_foundation_argument_consumers",
+          "g_foundation_formal_consumers",
+          "g_human_front_door_consumers",
+          "g_publication_consumers",
+          "g_repository_path_consumers",
+          "o_human_result_consumers"
+        ],
+        "target_result_deltas": [
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": false,
+            "previous_caller_declared_successful": false,
+            "target_id": "g_component_release_controls"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_CHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": false,
+            "target_id": "g_current_state_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_epistemic_boundary_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_federation_boundary_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_CHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": false,
+            "target_id": "g_foundation_argument_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": false,
+            "previous_caller_declared_successful": false,
+            "target_id": "g_foundation_formal_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_human_front_door_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_publication_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_repository_path_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_CHANGED",
+            "current_caller_declared_successful": false,
+            "previous_caller_declared_successful": true,
+            "target_id": "o_human_result_consumers"
+          }
+        ],
+        "to_head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+        "to_input_ordinal": 2,
+        "to_run_id": 39899735096
+      },
+      {
+        "added_target_ids": [],
+        "from_head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+        "from_input_ordinal": 2,
+        "from_run_id": 39899735096,
+        "removed_target_ids": [],
+        "retained_target_ids": [
+          "g_component_release_controls",
+          "g_current_state_consumers",
+          "g_epistemic_boundary_consumers",
+          "g_federation_boundary_consumers",
+          "g_foundation_argument_consumers",
+          "g_foundation_formal_consumers",
+          "g_human_front_door_consumers",
+          "g_publication_consumers",
+          "g_repository_path_consumers",
+          "o_human_result_consumers"
+        ],
+        "target_result_deltas": [
+          {
+            "change": "CALLER_DECLARED_RESULT_CHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": false,
+            "target_id": "g_component_release_controls"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_current_state_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_epistemic_boundary_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_federation_boundary_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_foundation_argument_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_CHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": false,
+            "target_id": "g_foundation_formal_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_human_front_door_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_publication_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_UNCHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_repository_path_consumers"
+          },
+          {
+            "change": "CALLER_DECLARED_RESULT_CHANGED",
+            "current_caller_declared_successful": true,
+            "previous_caller_declared_successful": false,
+            "target_id": "o_human_result_consumers"
+          }
+        ],
+        "to_head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+        "to_input_ordinal": 3,
+        "to_run_id": 39910840268
+      },
+      {
+        "added_target_ids": [
+          "g_operating_method_consumers"
+        ],
+        "from_head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+        "from_input_ordinal": 3,
+        "from_run_id": 39910840268,
+        "removed_target_ids": [],
+        "retained_target_ids": [
+          "g_component_release_controls",
+          "g_current_state_consumers",
+          "g_epistemic_boundary_consumers",
+          "g_federation_boundary_consumers",
+          "g_foundation_argument_consumers",
+          "g_foundation_formal_consumers",
+          "g_human_front_door_consumers",
+          "g_publication_consumers",
+          "g_repository_path_consumers",
+          "o_human_result_consumers"
+        ],
+        "target_result_deltas": [
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_component_release_controls"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_current_state_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_epistemic_boundary_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_federation_boundary_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_foundation_argument_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_foundation_formal_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_human_front_door_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_publication_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "g_repository_path_consumers"
+          },
+          {
+            "change": "NO_COMPARABLE_RESULT_CLAIM",
+            "current_caller_declared_successful": null,
+            "previous_caller_declared_successful": true,
+            "target_id": "o_human_result_consumers"
+          }
+        ],
+        "to_head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "to_input_ordinal": 4,
+        "to_run_id": 40064357026
+      }
+    ],
+    "claim_ceiling": "The tool validates caller-supplied plan, run, artifact-inventory, and optional receipt shapes and bindings using the existing single-run attribution contract, then compares selected target sets and caller-declared receipt values. It does not authenticate GitHub sources, verify official CI, infer target results without receipt content, evaluate required checks, attribute waste or billing, or authorize merge or release.",
+    "input_sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372",
+    "non_claims": {
+      "artifact_archive_bytes_verified_by_this_tool": false,
+      "billable_minutes_cost_or_savings_estimated": false,
+      "component_validation_receipt_officially_verified": false,
+      "github_source_authenticated": false,
+      "merge_or_release_authorized": false,
+      "missing_receipt_means_target_failure": false,
+      "repeated_coverage_means_wasted_or_redundant_work": false,
+      "required_check_sufficiency_or_satisfaction_interpreted": false
+    },
+    "per_target": [
+      {
+        "caller_declared_failure_count": 2,
+        "caller_declared_success_count": 1,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_FAILURE",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_FAILURE",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_component_release_controls"
+      },
+      {
+        "caller_declared_failure_count": 1,
+        "caller_declared_success_count": 2,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_FAILURE",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_current_state_consumers"
+      },
+      {
+        "caller_declared_failure_count": 0,
+        "caller_declared_success_count": 3,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_epistemic_boundary_consumers"
+      },
+      {
+        "caller_declared_failure_count": 0,
+        "caller_declared_success_count": 3,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_federation_boundary_consumers"
+      },
+      {
+        "caller_declared_failure_count": 1,
+        "caller_declared_success_count": 2,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_FAILURE",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_foundation_argument_consumers"
+      },
+      {
+        "caller_declared_failure_count": 2,
+        "caller_declared_success_count": 1,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_FAILURE",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_FAILURE",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_foundation_formal_consumers"
+      },
+      {
+        "caller_declared_failure_count": 0,
+        "caller_declared_success_count": 3,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_human_front_door_consumers"
+      },
+      {
+        "caller_declared_failure_count": 0,
+        "caller_declared_success_count": 0,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 1,
+        "target_id": "g_operating_method_consumers"
+      },
+      {
+        "caller_declared_failure_count": 0,
+        "caller_declared_success_count": 3,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_publication_consumers"
+      },
+      {
+        "caller_declared_failure_count": 0,
+        "caller_declared_success_count": 3,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "g_repository_path_consumers"
+      },
+      {
+        "caller_declared_failure_count": 1,
+        "caller_declared_success_count": 2,
+        "caller_declared_unknown_value_count": 0,
+        "claims_by_run": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39889835854
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "outcome": "CALLER_DECLARED_FAILURE",
+            "run_id": 39899735096
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "outcome": "CALLER_DECLARED_SUCCESS",
+            "run_id": 39910840268
+          },
+          {
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "input_ordinal": 4,
+            "outcome": "NO_TARGET_RESULT_CLAIM",
+            "run_id": 40064357026
+          }
+        ],
+        "no_target_result_claim_count": 1,
+        "plan_presence_count": 4,
+        "target_id": "o_human_result_consumers"
+      }
+    ],
+    "repeated_coverage_signatures": [
+      {
+        "classification": "REPEATED_COVERAGE_SET_NOT_EVIDENCE_OF_REDUNDANCY_OR_WASTE",
+        "runs": [
+          {
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "input_ordinal": 1,
+            "plan_sha256": "019d1a9a85249a1f499870b08c1c031a5c60a7b1e207b3c9c5bb2be820c182ed",
+            "run_id": 39889835854,
+            "selected_target_ids": [
+              "g_component_release_controls",
+              "g_current_state_consumers",
+              "g_epistemic_boundary_consumers",
+              "g_federation_boundary_consumers",
+              "g_foundation_argument_consumers",
+              "g_foundation_formal_consumers",
+              "g_human_front_door_consumers",
+              "g_publication_consumers",
+              "g_repository_path_consumers",
+              "o_human_result_consumers"
+            ]
+          },
+          {
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "input_ordinal": 2,
+            "plan_sha256": "f307e23c17aa103027958d29ccd8085201beaf6a0a50021e67029bb9f62eac58",
+            "run_id": 39899735096,
+            "selected_target_ids": [
+              "g_component_release_controls",
+              "g_current_state_consumers",
+              "g_epistemic_boundary_consumers",
+              "g_federation_boundary_consumers",
+              "g_foundation_argument_consumers",
+              "g_foundation_formal_consumers",
+              "g_human_front_door_consumers",
+              "g_publication_consumers",
+              "g_repository_path_consumers",
+              "o_human_result_consumers"
+            ]
+          },
+          {
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "input_ordinal": 3,
+            "plan_sha256": "40bdb0c6432dfc6178ceaeb23b980b0d471c4d39235a95989a742668305157f8",
+            "run_id": 39910840268,
+            "selected_target_ids": [
+              "g_component_release_controls",
+              "g_current_state_consumers",
+              "g_epistemic_boundary_consumers",
+              "g_federation_boundary_consumers",
+              "g_foundation_argument_consumers",
+              "g_foundation_formal_consumers",
+              "g_human_front_door_consumers",
+              "g_publication_consumers",
+              "g_repository_path_consumers",
+              "o_human_result_consumers"
+            ]
+          }
+        ],
+        "target_set_sha256": "b2fb04a8366b51b870145b88274f6dca34f1d6234fb9b3ccf704476ec3877205"
+      }
+    ],
+    "runs": [
+      {
+        "artifact_inventory": {
+          "archive_sha256_as_supplied_unverified": "209fabb73b7cf00255aeabb1f5b34c56d215c602d1e35861c2361f2aad93d4ba",
+          "artifact_id": 12477173469,
+          "files": [
+            "component-validation-plan.json",
+            "component-validation-receipt.json"
+          ],
+          "files_complete_as_supplied": true,
+          "name": "component-validation-39889835854-1",
+          "run_attempt_bound_to_actions_snapshot": true
+        },
+        "input_ordinal": 1,
+        "normalized_actions_snapshot_sha256": "01a6c72d8b04aa40618caa89367724ff0d3e6ce216ef91fc39e90111913bfa8a",
+        "plan": {
+          "digest_valid_under_single_run_contract": true,
+          "mode": "FULL",
+          "plan_sha256": "019d1a9a85249a1f499870b08c1c031a5c60a7b1e207b3c9c5bb2be820c182ed",
+          "selected_target_ids": [
+            "g_component_release_controls",
+            "g_current_state_consumers",
+            "g_epistemic_boundary_consumers",
+            "g_federation_boundary_consumers",
+            "g_foundation_argument_consumers",
+            "g_foundation_formal_consumers",
+            "g_human_front_door_consumers",
+            "g_publication_consumers",
+            "g_repository_path_consumers",
+            "o_human_result_consumers"
+          ],
+          "target_set_sha256": "b2fb04a8366b51b870145b88274f6dca34f1d6234fb9b3ccf704476ec3877205",
+          "validation_map_sha256": "17c7507cef4c6d52cf9cc02ade41696a96e16a52dd0f7c179d852b36424ae122"
+        },
+        "source_attribution_input_sha256": "847c4cd2e48d5b5247cab71a3a72fcc541469441253c3951a2861e58f64bcf99",
+        "timestamp_anomalies": [],
+        "validation_receipt": {
+          "binding_status": "DIGEST_AND_PLAN_BINDING_MATCH",
+          "declared_target_results": [
+            {
+              "caller_declared_successful": false,
+              "target_id": "g_component_release_controls"
+            },
+            {
+              "caller_declared_successful": false,
+              "target_id": "g_current_state_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_epistemic_boundary_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_federation_boundary_consumers"
+            },
+            {
+              "caller_declared_successful": false,
+              "target_id": "g_foundation_argument_consumers"
+            },
+            {
+              "caller_declared_successful": false,
+              "target_id": "g_foundation_formal_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_human_front_door_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_publication_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_repository_path_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "o_human_result_consumers"
+            }
+          ],
+          "presence": "CONTENT_SUPPLIED_AND_BOUND",
+          "target_result_trust": "CALLER_SUPPLIED_DECLARATIONS_NOT_OFFICIAL_CI_VALIDATION"
+        },
+        "workflow_run": {
+          "conclusion": "failure",
+          "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+          "run_attempt": 1,
+          "run_id": 39889835854,
+          "status": "completed"
+        }
+      },
+      {
+        "artifact_inventory": {
+          "archive_sha256_as_supplied_unverified": "a5384d19fc3fc3c9ca0050681458e73f4477defee5a5a2e890aa26abac9977ce",
+          "artifact_id": 12480759157,
+          "files": [
+            "component-validation-plan.json",
+            "component-validation-receipt.json"
+          ],
+          "files_complete_as_supplied": true,
+          "name": "component-validation-39899735096-1",
+          "run_attempt_bound_to_actions_snapshot": true
+        },
+        "input_ordinal": 2,
+        "normalized_actions_snapshot_sha256": "163c563ecc3e83cab232012f23067994ce5a1f48a6a38b683792c6faa1bfd193",
+        "plan": {
+          "digest_valid_under_single_run_contract": true,
+          "mode": "FULL",
+          "plan_sha256": "f307e23c17aa103027958d29ccd8085201beaf6a0a50021e67029bb9f62eac58",
+          "selected_target_ids": [
+            "g_component_release_controls",
+            "g_current_state_consumers",
+            "g_epistemic_boundary_consumers",
+            "g_federation_boundary_consumers",
+            "g_foundation_argument_consumers",
+            "g_foundation_formal_consumers",
+            "g_human_front_door_consumers",
+            "g_publication_consumers",
+            "g_repository_path_consumers",
+            "o_human_result_consumers"
+          ],
+          "target_set_sha256": "b2fb04a8366b51b870145b88274f6dca34f1d6234fb9b3ccf704476ec3877205",
+          "validation_map_sha256": "17c7507cef4c6d52cf9cc02ade41696a96e16a52dd0f7c179d852b36424ae122"
+        },
+        "source_attribution_input_sha256": "4a9a1963b2bf730e6b488efa52fe23dd8d12d03b46f639a7afa7c5d9ddfa09e8",
+        "timestamp_anomalies": [
+          {
+            "analysis_completed_at": null,
+            "analysis_started_at": null,
+            "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB",
+            "job_id": 120270681927,
+            "job_name": "Final main SHA witness",
+            "original_completed_at": "2026-10-23T06:11:57Z",
+            "original_started_at": "2026-10-23T06:11:58Z",
+            "snapshot_path": "runs[1].actions_snapshot.jobs_response.jobs[3]"
+          }
+        ],
+        "validation_receipt": {
+          "binding_status": "DIGEST_AND_PLAN_BINDING_MATCH",
+          "declared_target_results": [
+            {
+              "caller_declared_successful": false,
+              "target_id": "g_component_release_controls"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_current_state_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_epistemic_boundary_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_federation_boundary_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_foundation_argument_consumers"
+            },
+            {
+              "caller_declared_successful": false,
+              "target_id": "g_foundation_formal_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_human_front_door_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_publication_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_repository_path_consumers"
+            },
+            {
+              "caller_declared_successful": false,
+              "target_id": "o_human_result_consumers"
+            }
+          ],
+          "presence": "CONTENT_SUPPLIED_AND_BOUND",
+          "target_result_trust": "CALLER_SUPPLIED_DECLARATIONS_NOT_OFFICIAL_CI_VALIDATION"
+        },
+        "workflow_run": {
+          "conclusion": "failure",
+          "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+          "run_attempt": 1,
+          "run_id": 39899735096,
+          "status": "completed"
+        }
+      },
+      {
+        "artifact_inventory": {
+          "archive_sha256_as_supplied_unverified": "2d246ec693e4638001b967a4a49c67b1391758f84779e582b417f77c7867dfaa",
+          "artifact_id": 12485949787,
+          "files": [
+            "component-validation-plan.json",
+            "component-validation-receipt.json"
+          ],
+          "files_complete_as_supplied": true,
+          "name": "component-validation-39910840268-1",
+          "run_attempt_bound_to_actions_snapshot": true
+        },
+        "input_ordinal": 3,
+        "normalized_actions_snapshot_sha256": "2eed92aaf88e5a56d28286119aa6a0d8fcfe7160c00baf6e4e5ba71a88bb7a27",
+        "plan": {
+          "digest_valid_under_single_run_contract": true,
+          "mode": "FULL",
+          "plan_sha256": "40bdb0c6432dfc6178ceaeb23b980b0d471c4d39235a95989a742668305157f8",
+          "selected_target_ids": [
+            "g_component_release_controls",
+            "g_current_state_consumers",
+            "g_epistemic_boundary_consumers",
+            "g_federation_boundary_consumers",
+            "g_foundation_argument_consumers",
+            "g_foundation_formal_consumers",
+            "g_human_front_door_consumers",
+            "g_publication_consumers",
+            "g_repository_path_consumers",
+            "o_human_result_consumers"
+          ],
+          "target_set_sha256": "b2fb04a8366b51b870145b88274f6dca34f1d6234fb9b3ccf704476ec3877205",
+          "validation_map_sha256": "17c7507cef4c6d52cf9cc02ade41696a96e16a52dd0f7c179d852b36424ae122"
+        },
+        "source_attribution_input_sha256": "9d73f2dc844a0a75db3da5db6bb92fad728abfa17951c38e64423c5205e3aa32",
+        "timestamp_anomalies": [
+          {
+            "analysis_completed_at": null,
+            "analysis_started_at": null,
+            "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB",
+            "job_id": 120345454366,
+            "job_name": "Final main SHA witness",
+            "original_completed_at": "2026-10-23T09:35:19Z",
+            "original_started_at": "2026-10-23T09:35:20Z",
+            "snapshot_path": "runs[2].actions_snapshot.jobs_response.jobs[3]"
+          }
+        ],
+        "validation_receipt": {
+          "binding_status": "DIGEST_AND_PLAN_BINDING_MATCH",
+          "declared_target_results": [
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_component_release_controls"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_current_state_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_epistemic_boundary_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_federation_boundary_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_foundation_argument_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_foundation_formal_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_human_front_door_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_publication_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "g_repository_path_consumers"
+            },
+            {
+              "caller_declared_successful": true,
+              "target_id": "o_human_result_consumers"
+            }
+          ],
+          "presence": "CONTENT_SUPPLIED_AND_BOUND",
+          "target_result_trust": "CALLER_SUPPLIED_DECLARATIONS_NOT_OFFICIAL_CI_VALIDATION"
+        },
+        "workflow_run": {
+          "conclusion": "success",
+          "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+          "run_attempt": 1,
+          "run_id": 39910840268,
+          "status": "completed"
+        }
+      },
+      {
+        "artifact_inventory": {
+          "archive_sha256_as_supplied_unverified": "cdbe451766bfbd07ebf26a5103474f4e2064902a1ad7f12627fe2756425dd888",
+          "artifact_id": 12549244084,
+          "files": [
+            "component-validation-plan.json"
+          ],
+          "files_complete_as_supplied": true,
+          "name": "component-validation-40064357026-1",
+          "run_attempt_bound_to_actions_snapshot": true
+        },
+        "input_ordinal": 4,
+        "normalized_actions_snapshot_sha256": "d9f1e7ccfda1c38b3ae7e3f7ec49432cdae0b7872665dff3b4af70553a556cab",
+        "plan": {
+          "digest_valid_under_single_run_contract": true,
+          "mode": "FULL",
+          "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+          "selected_target_ids": [
+            "g_component_release_controls",
+            "g_current_state_consumers",
+            "g_epistemic_boundary_consumers",
+            "g_federation_boundary_consumers",
+            "g_foundation_argument_consumers",
+            "g_foundation_formal_consumers",
+            "g_human_front_door_consumers",
+            "g_operating_method_consumers",
+            "g_publication_consumers",
+            "g_repository_path_consumers",
+            "o_human_result_consumers"
+          ],
+          "target_set_sha256": "1966acd1fdf0e8032d531cec50fdff86cd87feda4b3d824ad2ac6c6992913e24",
+          "validation_map_sha256": "c5f6bf9905505c9dc7bbd0d7d45675250cf0954c268f3501e076c1ac23248f9c"
+        },
+        "source_attribution_input_sha256": "136f589ee39f254ae0d5749e8370e5d117cfdfb32c4dd01b92c6b12187abda92",
+        "timestamp_anomalies": [],
+        "validation_receipt": {
+          "binding_status": "NO_RECEIPT_CONTENT",
+          "declared_target_results": [],
+          "presence": "ABSENT_FROM_SUPPLIED_COMPLETE_FILE_LIST",
+          "target_result_trust": "NO_TARGET_RESULT_CLAIM"
+        },
+        "workflow_run": {
+          "conclusion": "cancelled",
+          "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+          "run_attempt": 1,
+          "run_id": 40064357026,
+          "status": "completed"
+        }
+      }
+    ],
+    "schema_version": "toolbox-actions-validation-target-coverage-output-r0",
+    "shared_context": {
+      "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "event": "pull_request",
+      "pull_request_number": 264,
+      "workflow_id": 311987523,
+      "workflow_path": ".github/workflows/foundation-validation.yml"
+    },
+    "single_run_attribution_helper_sha256": "9ac1000a812e5abf3207a361aa5499ed61e080685a527738613fd683581a2558",
+    "source_binding": "CALLER_SUPPLIED_UNAUTHENTICATED_JSON",
+    "summary": {
+      "coverage_intersection_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "coverage_union_target_ids": [
+        "g_component_release_controls",
+        "g_current_state_consumers",
+        "g_epistemic_boundary_consumers",
+        "g_federation_boundary_consumers",
+        "g_foundation_argument_consumers",
+        "g_foundation_formal_consumers",
+        "g_human_front_door_consumers",
+        "g_operating_method_consumers",
+        "g_publication_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "distinct_head_sha_count": 4,
+      "repeated_coverage_signature_count": 1,
+      "run_count": 4,
+      "target_result_claims_are_official_ci_evidence": false
+    },
+    "timestamp_anomalies": [
+      {
+        "analysis_completed_at": null,
+        "analysis_started_at": null,
+        "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB",
+        "job_id": 120270681927,
+        "job_name": "Final main SHA witness",
+        "original_completed_at": "2026-10-23T06:11:57Z",
+        "original_started_at": "2026-10-23T06:11:58Z",
+        "snapshot_path": "runs[1].actions_snapshot.jobs_response.jobs[3]"
+      },
+      {
+        "analysis_completed_at": null,
+        "analysis_started_at": null,
+        "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB",
+        "job_id": 120345454366,
+        "job_name": "Final main SHA witness",
+        "original_completed_at": "2026-10-23T09:35:19Z",
+        "original_started_at": "2026-10-23T09:35:20Z",
+        "snapshot_path": "runs[2].actions_snapshot.jobs_response.jobs[3]"
+      }
+    ],
+    "tool_id": "maintenance.compare_actions_validation_target_coverage",
+    "tool_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636"
+  },
+  "observed_outcome": {
+    "run_conclusions": [
+      "failure",
+      "failure",
+      "success",
+      "cancelled"
+    ],
+    "plan_target_counts": [
+      10,
+      10,
+      10,
+      11
+    ],
+    "caller_declared_target_results": [
+      {
+        "successful": 6,
+        "failed": 4
+      },
+      {
+        "successful": 7,
+        "failed": 3
+      },
+      {
+        "successful": 10,
+        "failed": 0
+      },
+      null
+    ],
+    "target_union_count": 11,
+    "target_intersection_count": 10,
+    "same_target_set_runs": [
+      39889835854,
+      39899735096,
+      39910840268
+    ],
+    "cancelled_run_without_receipt": "NO_TARGET_RESULT_CLAIM for its 11 planned targets, never inferred as failure.",
+    "timestamp_anomalies_preserved": 2,
+    "cost_or_savings_claim": "NONE"
+  },
+  "claim_ceiling": "Deterministic aggregation of supplied history. Target values are caller-declared receipt contents; they are not independently authenticated or upgraded to official CI status."
+}
