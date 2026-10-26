@@ -622,6 +622,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             offline_snapshot_binding["tool_id"],
             offline_snapshot_verifier["tool_id"],
             "foundation.read_current_asset_card",
+            "research.probe_counterfactual_fragility",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))

@@ -10353,6 +10353,237 @@
         "A route proposes a candidate only; task-level authorization and executor/validator invocation remain separate decisions."
       ],
       "claim_ceiling": "Deterministic consistency checks over caller-declared DAG edges, typed inputs/outputs, availability labels, validator contracts, and bounded cost estimates only. It does not establish live availability, actual solvability, execution success, task correctness, calibrated cost, authority, safety, scientific validity, or Owner approval."
+    },
+    {
+      "tool_id": "research.probe_counterfactual_fragility",
+      "display_name": {
+        "zh": "反事实脆弱性探针",
+        "en": "Counterfactual fragility probe"
+      },
+      "description": "Run one bounded Function OS N1-N7 baseline and up to eight independent one-input edits, each bound to a caller-declared load-bearing assumption; report model-conditional stability, expected-direction mismatch, and retained failures.",
+      "version": "toolbox-wrapper-0.1.0; Function OS 0.2.1rc0 candidate",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_counterfactual_probe.py",
+      "entrypoint": "python3.12 -B ignition/tools/toolbox_counterfactual_probe.py --stdin < request.json",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_counterfactual_probe.py",
+          "role": "COUNTERFACTUAL_PROBE_IMPLEMENTATION_AND_IO_CONTRACT"
+        },
+        {
+          "path": "ignition/tools/toolbox_function_os_evaluator.py",
+          "role": "DELEGATED_BOUNDED_N1_N7_EXECUTOR"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/function_os/",
+          "role": "FUNCTION_OS_N1_TO_N7_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+          "role": "UPSTREAM_SCOPE_AND_NON_GOAL_CONTRACT"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/pyproject.toml",
+          "role": "UPSTREAM_VERSION_LICENSE_AND_RUNTIME_METADATA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-counterfactual-probe-input-r0.schema.json",
+          "role": "MACHINE_READABLE_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-counterfactual-probe-output-r0.schema.json",
+          "role": "MACHINE_READABLE_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/counterfactual-fragility-probe.md",
+          "role": "USER_FACING_IDENTITY_LIMITS_AND_ROLLBACK"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_counterfactual_probe.py",
+          "role": "FOCUSED_FUNCTIONAL_NEGATIVE_CONTROL_AND_PAIRED_RESULT_TESTS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_counterfactual_probe_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-counterfactual-probe-source-binding-r0.json",
+          "role": "BLUEPRINT_GAP_AND_IMPLEMENTATION_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-counterfactual-probe-real-task-input-r0.json",
+          "role": "REAL_TASK_MODEL_ONLY_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-counterfactual-probe-real-task-output-r0.json",
+          "role": "REAL_TASK_MODEL_ONLY_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-counterfactual-probe-route-evidence-r0.json",
+          "role": "ROUTING_TRIALS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-counterfactual-probe-c1-evidence-r0.json",
+          "role": "PAIRED_C1_COMPARISON_EVIDENCE"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_EXPERIMENTAL_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tools/operations/validate_toolbox_candidates.py",
+          "role": "OFFICIAL_CANDIDATE_CARD_VALIDATOR"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-candidate-cards-r0.schema.json",
+          "role": "CANDIDATE_CARD_SCHEMA"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_function_os_evaluator.py",
+          "role": "EXISTING_SINGLE_CASE_RUNNER_TESTS"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/function_os/n1_functionspec_parser.py",
+          "role": "FUNCTION_OS_N1_PARSER_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/function-os-candidate/v0.2/function_os/n7_validator.py",
+          "role": "FUNCTION_OS_N7_VALIDATOR_IMPLEMENTATION"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_counterfactual_probe.py",
+        "ignition/tools/toolbox_function_os_evaluator.py",
+        "ignition/function-os-candidate/v0.2/function_os/",
+        "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+        "ignition/function-os-candidate/v0.2/pyproject.toml"
+      ],
+      "good_for": [
+        "Compare one declared model baseline with up to eight independent one-input counterfactual edits tied to explicit load-bearing assumptions.",
+        "See whether the declared model output changes, whether the caller-predicted direction appears, and whether any case failed or remained unassessable.",
+        "Keep every probe conditional on the same unedited baseline, with explicit model-only claim limits and no source-evidence mutation."
+      ],
+      "not_for": [
+        "Establish actual-world evidence, causal identification, scientific truth, model validity, proof, or whether a real-world intervention is admissible.",
+        "Run arbitrary Python, untrusted code, stateful functions, effectful operations, multi-output models, or inputs outside Function OS bounds.",
+        "Replace evidence review, empirical testing, statistical sensitivity analysis, or domain expert judgment."
+      ],
+      "only_if": [
+        "Python 3.10 or newer and the checked-in Function OS evaluator and v0.2 source tree are available and intact.",
+        "The caller supplies a single-output pure numeric or boolean FunctionSpec, exact baseline inputs, explicit input-to-assumption bindings, and one to eight finite scalar edits.",
+        "Each proposed edit changes exactly one declared input from the same baseline and the caller supplies its expected direction and an unverified admissibility note.",
+        "The UTF-8 JSON request is at most 64 KiB and the embedded FunctionSpec is at most 16 KiB."
+      ],
+      "counterindicated_when": [
+        "The question concerns whether a counterfactual is possible or admissible in the actual world, or whether the model itself represents reality.",
+        "The input or expression is adversarial and requires operating-system isolation or a security boundary.",
+        "A task requires multiple simultaneous input edits, external data, network access, persistence, registry writes, or scientific adjudication."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object conforming to toolbox-counterfactual-probe-input-r0: one bounded pure FunctionSpec, exact baseline inputs, declared assumption bindings, and 1 to 8 single-input probes."
+      ],
+      "output_types": [
+        "One baseline plus each independent counterfactual execution status, output, N7 internal consistency result, artifact integrity result, and input/trace digests.",
+        "Per-probe assumption binding, caller-declared expected direction, observed model direction, model-conditional stability, failure/disconfirmation status, and caller-declared admissibility note.",
+        "Explicit execution count, source evidence unchanged, no external actions, and a model-only claim ceiling."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_REPOSITORY_SOURCE_AND_STDIN",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_counterfactual_probe.py",
+          "ignition/tools/toolbox_function_os_evaluator.py",
+          "ignition/function-os-candidate/v0.2/function_os/",
+          "ignition/function-os-candidate/v0.2/v0.2-scope-contract.json",
+          "ignition/function-os-candidate/v0.2/pyproject.toml"
+        ],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Writes one bounded JSON result to stdout; model outputs and traces remain in process memory.",
+        "Does not invoke N9 registry writes, alter source evidence, access the network, or take external actions.",
+        "Disables Python bytecode writes before importing the Function OS evaluator."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.10 standard library; no third-party runtime packages.",
+        "Checked-in Function OS v0.2 Python source tree through the existing bounded N1-N7 evaluator."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "One local baseline plus one evaluation per probe; no portable latency, memory, or cost estimate is established. The paired C1 timings are a single local microbenchmark."
+      },
+      "alternatives": [
+        {
+          "tool_id": "function_os.run_bounded_symbolic_spec",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Runs one FunctionSpec/input pair. It can supply each individual evaluation, but does not accept an assumption-bound probe set or emit the paired baseline, independent-probe, stability, and failure-preservation report."
+        }
+      ],
+      "fallback": "Use the existing function_os.run_bounded_symbolic_spec once per model input and compare outputs manually; preserve the assumption mapping and failures yourself, and do not infer actual-world or scientific conclusions.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_counterfactual_probe.py",
+          "ignition/tests/test_toolbox_counterfactual_probe_routing.py"
+        ],
+        "negative_controls": [
+          "Malformed and duplicate-key JSON, unknown fields, duplicate IDs, no-op edits, and mismatched assumption bindings are rejected before reporting.",
+          "A failed precondition remains present as an unassessable failure and does not rewrite baseline or source evidence.",
+          "Each probe begins from a fresh copy of the baseline; edits are independent and one input at a time.",
+          "The output always marks counterfactuals as not actual-world evidence and matching a predicted direction as non-confirmatory."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Select only after explicit experimental-tool allowlisting when the task supplies a bounded pure FunctionSpec and asks for model-conditional baseline versus assumption-bound one-input probe results.",
+        "A route proposal never invokes the tool; a caller separately supplies the complete validated request to the CLI.",
+        "Never select for empirical evidence, real-world intervention admissibility, causal identification, proof, scientific truth, or autonomous external action."
+      ],
+      "claim_ceiling": "A local comparison of one caller-declared pure symbolic model baseline with independently edited, caller-declared assumptions. It can report model-output stability, instability, expected-direction match or mismatch, and retained failures only; it does not establish actual-world evidence, causal identification, model validity, admissible real-world interventions, scientific truth, proof, or security isolation.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Run one baseline and multiple independent assumption-bound one-input probes in one request, preserving each result, expected-direction mismatch, and model-only claim ceiling."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Same real task compared one wrapper invocation against repeated calls to the existing single-case Function OS runner. Outcomes were paired by baseline and independent probe; timing samples are local and not a portable performance claim.",
+        "compared_tool_ids": [
+          "function_os.run_bounded_symbolic_spec"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_function_os_evaluator.py",
+          "ignition/function-os-candidate/v0.2/function_os/n1_functionspec_parser.py",
+          "ignition/function-os-candidate/v0.2/function_os/n7_validator.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-counterfactual-probe-c1-evidence-r0.json"
+        ],
+        "findings": [
+          "The paired baseline and probe model outputs, execution statuses, N7 outcomes, and artifact-integrity outcomes match between the wrapper and the existing single-case evaluator.",
+          "The existing runner remains useful for one declared model evaluation and is not replaced; the new tool adds explicit assumption binding, independent-from-baseline orchestration, direction comparison, and retained failure reporting.",
+          "The local timing sample is exploratory and too narrow to establish a general cost advantage; no existing capability is deprecated or retired."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "ACTIVE",
+        "basis": "The candidate is an optional specialization with a paired same-task result comparison; the single-case Function OS runner keeps its distinct one-evaluation use."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No automatic migration is inferred. Use this wrapper only when the task asks for a baseline and assumption-bound probe set; keep the direct Function OS runner for one-case evaluations."
+        ],
+        "rollback_steps": [
+          "Remove this candidate entry and wrapper from the isolated toolbox branch, regenerate the machine and human identity-card projections, and retain the source-binding, C1, route, task, and test evidence as historical records."
+        ]
+      }
     }
   ]
 }
