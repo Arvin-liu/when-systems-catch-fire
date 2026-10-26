@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/operations/toolbox-actions-check-observations-input-r0.schema.json",
+  "title": "Exact-head GitHub check-run observation request R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "expected_head_sha",
+    "check_runs_complete",
+    "requested_contexts",
+    "check_runs_snapshot"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-actions-check-observations-input-r0"},
+    "expected_head_sha": {"$ref": "#/$defs/sha40"},
+    "check_runs_complete": {"type": "boolean", "description": "Caller assertion that all pages for this commit's check-runs endpoint are included."},
+    "requested_contexts": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/requestedContext"}
+    },
+    "check_runs_snapshot": {"$ref": "#/$defs/checkRunsSnapshot"}
+  },
+  "$defs": {
+    "sha40": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "requestedContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "app_id"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 300},
+        "app_id": {"type": "integer", "minimum": 1}
+      }
+    },
+    "app": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["id", "slug"],
+      "properties": {
+        "id": {"type": ["integer", "null"], "minimum": 1},
+        "slug": {"type": ["string", "null"], "minLength": 1, "maxLength": 200}
+      }
+    },
+    "checkRun": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "head_sha", "status", "conclusion", "app"],
+      "properties": {
+        "id": {"type": "integer", "minimum": 1},
+        "name": {"type": "string", "minLength": 1, "maxLength": 300},
+        "head_sha": {"$ref": "#/$defs/sha40"},
+        "status": {"enum": ["requested", "queued", "waiting", "pending", "in_progress", "completed"]},
+        "conclusion": {"type": ["string", "null"], "enum": ["action_required", "cancelled", "failure", "neutral", "skipped", "stale", "startup_failure", "success", "timed_out", null]},
+        "app": {"$ref": "#/$defs/app"}
+      }
+    },
+    "checkRunsSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["total_count", "check_runs"],
+      "properties": {
+        "total_count": {"type": "integer", "minimum": 0},
+        "check_runs": {"type": "array", "maxItems": 2000, "items": {"$ref": "#/$defs/checkRun"}}
+      }
+    }
+  }
+}
