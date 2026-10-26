@@ -747,6 +747,27 @@ class ToolboxIdentityCardTests(unittest.TestCase):
                 errors = validator.validate()
         self.assertTrue(any("unknown comparison cannot support deprecation or removal" in error for error in errors))
 
+    def test_c1_portfolio_disposition_uses_overlap_and_complete_coverage(self) -> None:
+        catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
+        candidates = {row["tool_id"]: row for row in catalog["candidates"]}
+        expected = {
+            "collaboration.validate_agent_episode_binding": "compare the smallest directly overlapping real Episode task",
+            "maintenance.summarize_execution_candidate_pareto_frontier": "compare only directly overlapping use cases",
+            "maintenance.summarize_component_path_residue": "compare the smallest directly overlapping route-residue task",
+        }
+        for tool_id, comparison_rule in expected.items():
+            card = candidates[tool_id]
+            findings = " ".join(card["comparison_evidence"]["findings"]).casefold()
+            self.assertIn(comparison_rule.casefold(), findings)
+            complete_coverage = (
+                "all of that incumbent's valuable use cases" in findings
+                or "every valuable incumbent use case" in findings
+            )
+            self.assertTrue(complete_coverage)
+        serialized = json.dumps(candidates, ensure_ascii=False)
+        self.assertNotIn("retain all candidates as separate default-off options", serialized)
+        self.assertNotIn("retain all compared tools and make no retirement claim", serialized)
+
     def test_candidate_schema_rejects_dependency_path_traversal(self) -> None:
         schema = json.loads((IGNITION_ROOT / "schemas/operations/toolbox-candidate-cards-r0.schema.json").read_text(encoding="utf-8"))
         catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))

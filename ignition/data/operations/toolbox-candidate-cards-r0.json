@@ -321,12 +321,12 @@
         ],
         "findings": [
           "The candidate adds cross-record declaration checks beyond shape validation on the tested synthetic cases.",
-          "No replacement, unique-use, retirement, lower-cost, runtime-safety, or real-task outcome conclusion is established; retain it as optional and default-off."
+          "Synthetic-only evidence does not decide portfolio disposition; keep the uncertainty explicit and compare the smallest directly overlapping real Episode task before consolidation. Under C1, retire an incumbent only if this candidate is demonstrably better across all of that incumbent's valuable use cases; otherwise keep the tools scoped to their distinct tasks."
         ]
       },
       "deprecation_or_retirement_status": {
         "status": "ACTIVE",
-        "basis": "A new optional experimental candidate with synthetic-only evidence; C1 comparison is incomplete for competing toolbox tools, so retain uncertainty and do not retire or replace an existing component."
+        "basis": "Synthetic-only evidence does not decide whether this candidate or an overlapping incumbent should be retained. Preserve uncertainty and compare the smallest directly overlapping real Episode task before any consolidation; apply C1 coverage and comparative-value criteria to any retirement decision."
       },
       "migration_and_rollback": {
         "migration_notes": [
@@ -7924,7 +7924,7 @@
         ],
         "findings": [
           "Existing comparators expose different inputs and outputs; a same-task quality/cost comparison remains unrun, so broad non-replacement is unknown.",
-          "No incumbent tool is retired; retain all candidates as separate default-off options until comparable task evidence exists."
+          "The current static comparison supports no blanket retention or retirement decision. Compare only directly overlapping use cases on a small matched task; under C1, retire an incumbent only if the candidate is better and covers every valuable incumbent use case, otherwise coexist by task scope."
         ]
       },
       "deprecation_or_retirement_status": {
@@ -8005,7 +8005,7 @@
           "The exact route task produced nine directory groups and 44 repeated filename-prefix cohorts covering 164 paths; 71 paths remain uncohorted for individual review.",
           "The official route validator remains authoritative; this candidate only organizes caller-supplied residue and never proposes ownership or patterns.",
           "Existing compared tools have different inputs and outputs. No relative analyst time, error rate, reliability, or cost comparison was run.",
-          "Keep this candidate experimental and default-off; retain all compared tools and make no retirement claim."
+          "This single task and static contract comparison do not decide retention or retirement for any comparator. Keep the candidate experimental and default-off; if consolidation is considered, compare the smallest directly overlapping route-residue task, and retire an incumbent only if this candidate is demonstrably better and covers all of that incumbent's valuable use cases; otherwise coexist by task scope."
         ],
         "scope": "Static input/output comparison and one exact 235-path route-residue task. No matched human triage task measured review time or outcome against an existing workflow.",
         "status": "COMPARISON_UNKNOWN"
