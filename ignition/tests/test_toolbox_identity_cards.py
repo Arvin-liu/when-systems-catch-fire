@@ -20,6 +20,31 @@ SPEC.loader.exec_module(TOOL)
 
 
 class ToolboxIdentityCardTests(unittest.TestCase):
+    def test_full_record_reader_is_specialized_by_matched_c1_comparison(self) -> None:
+        document = TOOL.build_cards()
+        cards = {item["tool_id"]: item for item in document["cards"]}
+        reader = cards["foundation.read_current_asset_card"]
+        batch = cards["foundation.batch_resolve_current_asset_references"]
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-current-asset-full-record-c1-comparison-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(evidence["schema_version"], "ignition.toolbox-c1-current-asset-card-comparison-r0")
+        self.assertTrue(evidence["paired_result"]["all_three_record_sha256_values_equal"])
+        self.assertEqual(evidence["paired_result"]["task_contract_satisfied_by"], [reader["tool_id"]])
+        self.assertFalse(evidence["invocations"][0]["result"]["full_record_in_output"])
+        self.assertTrue(evidence["invocations"][2]["result"]["full_record_in_output"])
+        self.assertEqual(reader["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(reader["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+        self.assertEqual(reader["replacement_candidates"], [])
+        self.assertTrue(reader["unique_remaining_use_cases"])
+        self.assertFalse(reader["router_selectable_by_default"])
+        self.assertIn(reader["tool_id"], batch["comparison_evidence"]["compared_tool_ids"])
+        self.assertIn(
+            "toolbox-current-asset-full-record-c1-comparison-r0.json",
+            " ".join(batch["comparison_evidence"]["evidence_refs"]),
+        )
+
     def test_cluster_source_brief_c1_records_implementation_comparator_and_safe_scope(self) -> None:
         document = TOOL.build_cards()
         card = next(item for item in document["cards"] if item["tool_id"] == "knowledge.cluster_source_brief")
@@ -590,6 +615,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "maintenance.summarize_actions_interval_union",
             offline_snapshot_binding["tool_id"],
             offline_snapshot_verifier["tool_id"],
+            "foundation.read_current_asset_card",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))
@@ -603,7 +629,10 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertIn("ambiguous", " ".join(batch["counterindicated_when"]).lower())
         self.assertTrue(any("legacy-mappings.jsonl" in path for path in batch["dependencies"]))
         self.assertEqual(batch["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
-        self.assertEqual(batch["comparison_evidence"]["compared_tool_ids"], ["foundation.resolve_current_asset"])
+        self.assertEqual(
+            set(batch["comparison_evidence"]["compared_tool_ids"]),
+            {"foundation.resolve_current_asset", "foundation.read_current_asset_card"},
+        )
         self.assertEqual(batch["replacement_candidates"], [])
         self.assertTrue(batch["unique_remaining_use_cases"])
         self.assertEqual(offline_snapshot_binding["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
