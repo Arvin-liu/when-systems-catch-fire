@@ -1,5 +1,5 @@
 {
-  "candidate_catalog_git_blob_sha1": "f8fc6c9f8d6ed49c72b5f63c6af5619d2128f848",
+  "candidate_catalog_git_blob_sha1": "8e8d171168e3d267769eb6ecad0a827f37b000e1",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true
   },
@@ -27,6 +27,21 @@
       ]
     }
   ],
+  "real_task_replay": {
+    "task_ref": "agent-runtime-pilot:non-knowledge-manifest-r0",
+    "classification": "REAL_LOCAL_TOOL_TEST_ON_CHECKED_IN_SYNTHETIC_PILOT_RECORD",
+    "input_path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+    "input_sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7",
+    "output_path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+    "output_sha256": "88e33f5db91a163cef87c04e429eba85ae6ff336ed5e770b1470d6f83ffd1816",
+    "default_off_invocations": 0,
+    "sufficient_invocations": 1,
+    "sufficient_status": "PASS",
+    "redundant_replay_invocations": 2,
+    "redundant_outputs_identical": true,
+    "redundant_added_output_bytes": 1318,
+    "execution_authorized": false
+  },
   "schema_version": "toolbox-execution-state-lineage-route-evidence-r0",
   "task_profile_path": "ignition/data/operations/toolbox-execution-state-lineage-route-profile-r0.json",
   "task_profile_sha256": "63938b4654effa159e7398168ecfd07a21bb95fd72693c254b2aaa2f814046ab",

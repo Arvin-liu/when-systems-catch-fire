@@ -15,6 +15,7 @@ from agent_kernel.contracts import Checkpoint, Handoff, ResumeCapsule, validate_
 
 
 FIXTURES = IGNITION_ROOT / "tests/fixtures/toolbox-execution-state-lineage"
+REAL_TASK_INPUT = IGNITION_ROOT / "data/operations/toolbox-execution-state-lineage-real-task-input-r0.json"
 OUTPUT_SCHEMA = json.loads(
     (IGNITION_ROOT / "schemas/operations/toolbox-execution-state-lineage-output-r0.schema.json").read_text(encoding="utf-8")
 )
@@ -76,6 +77,17 @@ class ExecutionStateLineageTests(unittest.TestCase):
         self.assertFalse(output["execution_authorized"])
         self.assertEqual(output["network_calls"], 0)
         self.assertFalse(output["write_effects"])
+        self.assert_output_schema(output)
+
+    def test_checked_in_synthetic_runtime_pilot_checkpoint_and_capsule_are_compatible(self) -> None:
+        output = tool.analyze(REAL_TASK_INPUT.read_bytes())
+
+        self.assertEqual(output["status"], "PASS")
+        self.assertEqual(output["task_ref"], "agent-runtime-pilot:non-knowledge-manifest-r0")
+        self.assertEqual(output["active_path_checkpoint_ids"], ["checkpoint-0001"])
+        self.assertEqual(output["leaf_checkpoint_ids"], ["checkpoint-0001"])
+        self.assertEqual(output["resume_capsule_count"], 1)
+        self.assertFalse(output["checkpoint_state_bytes_read"])
         self.assert_output_schema(output)
 
     def test_unaccounted_inactive_branch_fails_closed(self) -> None:

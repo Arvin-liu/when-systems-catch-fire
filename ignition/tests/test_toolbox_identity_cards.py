@@ -27,6 +27,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         c1 = json.loads(
             (IGNITION_ROOT / "data/operations/toolbox-execution-state-lineage-c1-evidence-r0.json").read_text(encoding="utf-8")
         )
+        real_task = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json").read_text(encoding="utf-8")
+        )
 
         self.assertEqual(card["card_kind"], "OPTIONAL_EXPERIMENTAL_TOOL")
         self.assertEqual(card["version"], "0.1.0")
@@ -42,6 +45,9 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual(card["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
         self.assertEqual(c1["matched_test"]["candidate_finding"], "INACTIVE_TIP_ACCOUNTING_MISMATCH")
         self.assertIn("synthetic", c1["comparison_scope"])
+        self.assertEqual(real_task["classification"], "REAL_LOCAL_TOOL_TEST_ON_CHECKED_IN_SYNTHETIC_PILOT_RECORD")
+        self.assertEqual(real_task["route_comparison"]["sufficient_single_tool"]["output_status"], "PASS")
+        self.assertTrue(real_task["route_comparison"]["redundant_repeat_control"]["outputs_byte_identical"])
         self.assertIn("maintenance.audit_execution_state_lineage", TOOL.render_human(document))
 
     def test_full_record_reader_is_specialized_by_matched_c1_comparison(self) -> None:

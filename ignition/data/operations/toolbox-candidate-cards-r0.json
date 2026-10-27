@@ -14534,6 +14534,30 @@
         {
           "path": "ignition/tools/toolbox_execution_effect_receipt.py",
           "role": "EXECUTION_OBSERVATION_BINDING_COMPARATOR"
+        },
+        {
+          "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/run-state.json",
+          "role": "CHECKED_IN_SYNTHETIC_RUNTIME_PILOT_CHECKPOINT_SOURCE"
+        },
+        {
+          "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/resume-capsule.json",
+          "role": "CHECKED_IN_SYNTHETIC_RUNTIME_PILOT_RESUME_SOURCE"
+        },
+        {
+          "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/pilot-receipt.json",
+          "role": "PILOT_STATUS_AND_CLAIM_CEILING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+          "role": "NORMALIZED_REAL_LOCAL_TOOL_TEST_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+          "role": "ACTUAL_TOOL_OUTPUT_ON_SYNTHETIC_PILOT_RECORD"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json",
+          "role": "DEFAULT_OFF_SUFFICIENT_AND_REDUNDANT_ROUTE_EXPERIMENT"
         }
       ],
       "dependencies": [
@@ -14611,7 +14635,7 @@
       ],
       "comparison_evidence": {
         "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
-        "scope": "Matched synthetic sibling-checkpoint comparison against the Kernel pairwise resume validator, plus contract-scope inspection of the portable research episode and execution effect receipt tools. No same-task performance or cost comparison was run.",
+        "scope": "Matched synthetic sibling-checkpoint comparison against the Kernel pairwise resume validator, plus a real local CLI audit of the repository checked-in offline synthetic runtime pilot checkpoint/resume record. Contract-scope inspection covers the portable research episode and execution effect receipt. No production checkpoint set or same-task performance/cost benchmark was used.",
         "compared_tool_ids": [
           "collaboration.validate_portable_research_episode",
           "maintenance.preflight_execution_effect_receipt"
@@ -14625,13 +14649,16 @@
           "ignition/data/operations/toolbox-execution-state-lineage-c1-evidence-r0.json",
           "ignition/tests/test_toolbox_execution_state_lineage.py",
           "ignition/tests/fixtures/toolbox-execution-state-lineage/valid-two-branch-r0.json",
-          "ignition/tests/fixtures/toolbox-execution-state-lineage/unaccounted-inactive-tip-r0.json"
+          "ignition/tests/fixtures/toolbox-execution-state-lineage/unaccounted-inactive-tip-r0.json",
+          "ignition/data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json",
+          "ignition/data/operations/toolbox-execution-state-lineage-real-task-output-r0.json"
         ],
         "findings": [
           "The Kernel validator accepts each valid checkpoint/resume pair independently; the matched test demonstrates that this does not account for a sibling inactive tip across the graph.",
           "The portable research episode checks versioned artifact and fork relations, while the execution effect receipt checks one run and later observation; neither implements this bounded checkpoint-tip accounting contract.",
           "The candidate remains specialized, offline and default off. Existing tools retain their distinct useful scopes; replacement or retirement is not supported by the current comparison.",
-          "The comparison uses synthetic records and contract inspection only; comparative reliability, latency, operator effort, and monetary cost remain unknown."
+          "The comparison uses synthetic records and contract inspection only; comparative reliability, latency, operator effort, and monetary cost remain unknown.",
+          "On the same checked-in synthetic pilot checkpoint/resume pair, the actual CLI output and Kernel pairwise validator both pass; this verifies local contract compatibility but not production execution or provenance."
         ]
       },
       "deprecation_or_retirement_status": {

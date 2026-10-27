@@ -1,0 +1,71 @@
+{
+  "schema_version": "toolbox-execution-state-lineage-real-task-evidence-r0",
+  "tool_id": "maintenance.audit_execution_state_lineage",
+  "task_ref": "agent-runtime-pilot:non-knowledge-manifest-r0",
+  "classification": "REAL_LOCAL_TOOL_TEST_ON_CHECKED_IN_SYNTHETIC_PILOT_RECORD",
+  "input": {
+    "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+    "bytes": 1131,
+    "sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7"
+  },
+  "source_artifacts": [
+    {
+      "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/run-state.json",
+      "sha256": "bdb482a1c59ce7fdb95e339bbf56c9cdfe2a079e4f0a5ced49a0896e6daea5c0"
+    },
+    {
+      "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/resume-capsule.json",
+      "sha256": "51a9b7b55f08d30b4982504f01cd698a924eac1b8b80d62f998dd4819e3b26f2"
+    },
+    {
+      "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/pilot-receipt.json",
+      "sha256": "f4b67aa19868884c9c51136c8910550f004ec87ffd1474e7aa35f871c51735ea"
+    }
+  ],
+  "route_comparison": {
+    "default_off": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_invocations": 0,
+      "task_status": "NOT_COMPLETED_BY_ROUTE"
+    },
+    "sufficient_single_tool": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.audit_execution_state_lineage"
+      ],
+      "candidate_invocations": 1,
+      "output_status": "PASS",
+      "output_sha256": "b437da15822c93d5db463966ab5ecd5b713105b95c0e937b7ab62e685f65ebb2",
+      "stdout_bytes": 1318,
+      "elapsed_ms": 71.242,
+      "execution_authorized": false
+    },
+    "redundant_repeat_control": {
+      "selected_tool_ids": [
+        "maintenance.audit_execution_state_lineage"
+      ],
+      "candidate_invocations": 2,
+      "each_output_status": [
+        "PASS",
+        "PASS"
+      ],
+      "outputs_byte_identical": true,
+      "distinct_finding_or_field_count": 0,
+      "combined_stdout_bytes": 2636,
+      "combined_elapsed_ms": 137.909,
+      "execution_authorized": false
+    }
+  },
+  "compatibility_check": {
+    "implementation": "ignition/agent_kernel/contracts.py::validate_resume_lineage",
+    "result": "PASS for the same checked-in single checkpoint/resume pair"
+  },
+  "environment": {
+    "python_version": "3.9.6",
+    "network_calls": 0,
+    "write_effects": false,
+    "checkpoint_state_bytes_read_by_candidate": false
+  },
+  "claim_ceiling": "A real local CLI run audited the repository checked-in offline synthetic pilot projection. It confirms only structural agreement of caller-declared checkpoint and resume fields; it does not authenticate the underlying pilot, state bytes, caller, runtime behavior, production use or external effects."
+}

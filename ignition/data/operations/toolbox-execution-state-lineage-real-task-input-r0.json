@@ -1,0 +1,34 @@
+{
+  "schema_version": "toolbox-execution-state-lineage-input-r0",
+  "task_ref": "agent-runtime-pilot:non-knowledge-manifest-r0",
+  "checkpoints": [
+    {
+      "checkpoint_id": "checkpoint-0001",
+      "run_id": "manifest-pilot/run-001",
+      "phase": "STOP",
+      "state_ref": "run-state.json",
+      "state_sha256": "0fada61f751db87e7f42f570d7f2faac2d4569aa68bd30e3cdf03b6a780c35e3",
+      "event_count": 9,
+      "created_by": "executor-alpha",
+      "parent_checkpoint_id": null,
+      "reason_summary": "validated step complete; next step is handed off"
+    }
+  ],
+  "active_checkpoint_id": "checkpoint-0001",
+  "declared_active_path_checkpoint_ids": [
+    "checkpoint-0001"
+  ],
+  "declared_inactive_tip_checkpoint_ids": [],
+  "resume_capsules": [
+    {
+      "capsule_id": "capsule-0001",
+      "run_id": "manifest-pilot/run-001",
+      "checkpoint_id": "checkpoint-0001",
+      "state_ref": "run-state.json",
+      "state_sha256": "0fada61f751db87e7f42f570d7f2faac2d4569aa68bd30e3cdf03b6a780c35e3",
+      "from_executor_id": "executor-alpha",
+      "to_executor_id": "executor-beta"
+    }
+  ],
+  "rollback_records": []
+}

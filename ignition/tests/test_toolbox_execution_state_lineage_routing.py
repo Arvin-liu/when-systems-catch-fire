@@ -13,6 +13,7 @@ import plan_ignition_operation_run as planner  # noqa: E402
 TOOL_ID = 'maintenance.audit_execution_state_lineage'
 PROFILE_PATH = IGNITION_ROOT / 'data/operations/toolbox-execution-state-lineage-route-profile-r0.json'
 EVIDENCE_PATH = IGNITION_ROOT / 'data/operations/toolbox-execution-state-lineage-route-evidence-r0.json'
+REAL_TASK_EVIDENCE_PATH = IGNITION_ROOT / 'data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json'
 
 
 def sha256(data: bytes) -> str:
@@ -23,6 +24,7 @@ class ExecutionStateLineageRoutingTests(unittest.TestCase):
     def test_default_off_and_explicit_allowlist_only_proposes_read_only_tool(self) -> None:
         profile = json.loads(PROFILE_PATH.read_text(encoding='utf-8'))
         evidence = json.loads(EVIDENCE_PATH.read_text(encoding='utf-8'))
+        real_task = json.loads(REAL_TASK_EVIDENCE_PATH.read_text(encoding='utf-8'))
         default = planner.plan_tool_route(profile)
         explicit = planner.plan_tool_route(profile, include_experimental_tool_ids=[TOOL_ID])
 
@@ -45,6 +47,17 @@ class ExecutionStateLineageRoutingTests(unittest.TestCase):
         self.assertEqual(evidence['candidate_catalog_git_blob_sha1'], planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()))
         self.assertEqual(evidence['planner_source_sha256'], sha256(Path(planner.__file__).read_bytes()))
         self.assertTrue(evidence['catalog_replay']['all_expected_decisions_reproduced'])
+        comparison = real_task['route_comparison']
+        self.assertEqual(comparison['default_off']['decision'], 'INCOMPLETE')
+        self.assertEqual(comparison['default_off']['candidate_invocations'], 0)
+        self.assertEqual(comparison['sufficient_single_tool']['output_status'], 'PASS')
+        self.assertEqual(comparison['sufficient_single_tool']['candidate_invocations'], 1)
+        self.assertTrue(comparison['redundant_repeat_control']['outputs_byte_identical'])
+        self.assertEqual(comparison['redundant_repeat_control']['distinct_finding_or_field_count'], 0)
+        self.assertEqual(
+            comparison['redundant_repeat_control']['combined_stdout_bytes'],
+            2 * comparison['sufficient_single_tool']['stdout_bytes'],
+        )
 
 
 if __name__ == '__main__':

@@ -34,5 +34,16 @@
     "Evidence is synthetic and scoped to structural contract behavior.",
     "No same-task reliability, latency, resource, operator-effort or monetary-cost comparison was conducted.",
     "No claim is made about authenticating checkpoint provenance, declaration completeness, branch isolation or actual rollback success."
-  ]
+  ],
+  "actual_pilot_compatibility": {
+    "source_classification": "CHECKED_IN_OFFLINE_SYNTHETIC_RUNTIME_PILOT",
+    "source_refs": [
+      "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/run-state.json",
+      "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/resume-capsule.json",
+      "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/pilot-receipt.json"
+    ],
+    "candidate_result": "PASS: one active leaf and one matching resume capsule; state bytes were not read by the candidate.",
+    "kernel_pairwise_result": "PASS on the same checkpoint/resume values through validate_resume_lineage.",
+    "interpretation": "Actual local integration compatibility over repository-held synthetic pilot data; not production runtime or external-effect evidence."
+  }
 }
