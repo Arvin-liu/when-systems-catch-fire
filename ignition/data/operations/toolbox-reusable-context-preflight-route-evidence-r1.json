@@ -1,0 +1,60 @@
+{
+  "schema_version": "toolbox-reusable-context-preflight-route-evidence-r1",
+  "tool_id": "knowledge.preflight_reusable_context",
+  "tool_version": "0.2.0",
+  "route_profile": {
+    "task_id": "cross-task-derived-context-expiry-preflight-r1",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "R1 exact JSON request with the same fields plus a canonical UTC expires_at_utc on every cached card."
+    ],
+    "required_outputs": [
+      "R1 versioned result with the R0 checks plus evaluated_at_utc and expiry-bound invalidation/reuse decisions."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "selected_permissions": null,
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "knowledge.preflight_reusable_context"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "knowledge.preflight_reusable_context"
+      ],
+      "execution_authorized": false,
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    }
+  ],
+  "candidate_catalog_git_blob_sha1": "5c566fa6b0873ddb3475d47021acea1f2da910f2",
+  "claim_ceiling": "Offline route planner selection only; no cached context was examined, no candidate was invoked, no source was read, no provider call occurred, and no permission grant or task effect was authorized.",
+  "source_refs": {
+    "planner": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "candidate_catalog": "ignition/data/operations/toolbox-candidate-cards-r0.json"
+  }
+}

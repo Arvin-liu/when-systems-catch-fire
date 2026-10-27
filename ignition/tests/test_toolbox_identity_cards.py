@@ -30,6 +30,31 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertIn("COMPARISON_UNKNOWN", rendered)
         self.assertIn("Preserve comparison receipts and historical references", rendered)
 
+    def test_reusable_context_expiry_upgrade_preserves_default_off_and_r0_contract(self) -> None:
+        document = TOOL.build_cards()
+        card = next(
+            item for item in document["cards"]
+            if item["tool_id"] == "knowledge.preflight_reusable_context"
+        )
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-reusable-context-expiry-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(card["version"], "0.2.0")
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], ["ignition/"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertTrue(any("R0 exact JSON request" in item for item in card["accepted_input_types"]))
+        self.assertTrue(any("R1 exact JSON request" in item for item in card["accepted_input_types"]))
+        self.assertIn("toolbox-reusable-context-preflight-r1.schema.json", " ".join(ref["path"] for ref in card["source_refs"]))
+        self.assertTrue(evidence["observations"]["legacy_r0_semantic_parity_after_version_normalization"])
+        self.assertEqual(evidence["observations"]["candidate_v0_2_r1"]["source_bytes_read"], 0)
+
     def test_q38_i1_bundle_validator_card_keeps_contract_scope_c1_and_permissions(self) -> None:
         document = TOOL.build_cards()
         card = next(item for item in document["cards"] if item["tool_id"] == "knowledge.validate_q38_i1_evidence_bundle")
@@ -796,7 +821,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             [ref["path"] for ref in archify_ir["source_refs"]],
         )
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
-        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], crossref_citation["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], noaa_ch4_comparator["tool_id"], "research.compare_noaa_co2_source_surfaces", "research.compare_noaa_n2o_source_surfaces", "research.lookup_noaa_global_n2o_annual_growth", "research.lookup_noaa_global_sf6_annual_growth", "research.compare_noaa_sf6_source_surfaces", "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability", "maintenance.compare_toolbox_component_coverage", "research.pair_noaa_co2_ch4_growth_by_year", "research.lookup_datacite_doi_metadata", "collaboration.select_handoff_advisories", "maintenance.plan_validation_invocation_deduplication", "research.merge_selected_index_search_results"} for card in candidates))
+        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], crossref_citation["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], noaa_ch4_comparator["tool_id"], "research.compare_noaa_co2_source_surfaces", "research.compare_noaa_n2o_source_surfaces", "research.lookup_noaa_global_n2o_annual_growth", "research.lookup_noaa_global_sf6_annual_growth", "research.compare_noaa_sf6_source_surfaces", "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "knowledge.select_jsonl_records", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability", "maintenance.compare_toolbox_component_coverage", "research.pair_noaa_co2_ch4_growth_by_year", "research.lookup_datacite_doi_metadata", "collaboration.select_handoff_advisories", "maintenance.plan_validation_invocation_deduplication", "research.merge_selected_index_search_results"} for card in candidates))
         self.assertEqual(validation_target_coverage["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertEqual(validation_target_coverage["execution_mode"], "READ_ONLY_RUN")
         self.assertFalse(validation_target_coverage["router_selectable_by_default"])

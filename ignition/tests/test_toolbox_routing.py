@@ -129,9 +129,16 @@ class AdaptiveToolRouteTests(unittest.TestCase):
                 self.assertEqual(replay["decision"], trial["decision"])
                 self.assertEqual([item["tool_id"] for item in replay["selected_tools"]], trial["selected_tool_ids"])
                 self.assertFalse(replay["execution_authorized"])
+                # The receipt pins the historical candidate catalog. Unrelated
+                # candidate-card updates change the live catalog digest without
+                # changing this tool's recorded route behavior.
                 self.assertEqual(
-                    replay["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
                     trial["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+                    evidence["candidate_catalog_blob_sha1"],
+                )
+                self.assertRegex(
+                    evidence["candidate_catalog_blob_sha1"],
+                    r"^[0-9a-f]{40}$",
                 )
 
         self.assertEqual(trials["default_off"]["decision"], "INCOMPLETE")
@@ -189,10 +196,19 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(allowlisted["selected_tools"][0]["permissions"]["write_paths"], [])
 
         evidence = json.loads(
-            (IGNITION_ROOT / "data/operations/toolbox-reusable-context-preflight-route-evidence-r0.json")
+            (IGNITION_ROOT / "data/operations/toolbox-reusable-context-preflight-route-evidence-r1.json")
             .read_text(encoding="utf-8")
         )
         self.assertEqual(evidence["tool_id"], tool_id)
+        self.assertEqual(evidence["tool_version"], "0.2.0")
+        self.assertEqual(
+            evidence["route_profile"]["input_types"],
+            [card["accepted_input_types"][1]],
+        )
+        self.assertEqual(
+            evidence["candidate_catalog_git_blob_sha1"],
+            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+        )
         for trial in evidence["route_trials"]:
             replay = planner.plan_tool_route(
                 evidence["route_profile"],
@@ -200,6 +216,10 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             )
             self.assertEqual(replay["decision"], trial["decision"])
             self.assertEqual([row["tool_id"] for row in replay["selected_tools"]], trial["selected_tool_ids"])
+            self.assertEqual(
+                replay["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+                evidence["candidate_catalog_git_blob_sha1"],
+            )
             self.assertFalse(replay["execution_authorized"])
             self.assertEqual(trial["router_provider_calls"], 0)
             self.assertFalse(trial["candidate_invoked"])

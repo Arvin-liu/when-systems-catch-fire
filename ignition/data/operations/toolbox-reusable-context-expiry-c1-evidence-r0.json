@@ -1,0 +1,74 @@
+{
+  "schema_version": "toolbox-reusable-context-expiry-c1-evidence-r0",
+  "tool_id": "knowledge.preflight_reusable_context",
+  "tool_version": "0.2.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "blueprint_binding": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 86,
+    "head": "1c8542328f482f39986a0a79ce1e0514aa14b398",
+    "work_item": "TR26-02"
+  },
+  "baseline": {
+    "tool_version": "0.1.0",
+    "commit": "0edbc87b0e5a6c89fd29e874f14bd3bcf9d8f24c",
+    "source_sha256": "d4e67f41b7f5cfe110db12419facb8ba383d515ccd9b8c6363822c86863857c4",
+    "input_schema": "toolbox-reusable-context-preflight-r0"
+  },
+  "candidate": {
+    "tool_version": "0.2.0",
+    "source_sha256": "b0760c75e550637c2d2d6cddf8813c34223921a7b0d5d56dcea47fbe24acafd0",
+    "input_schema": "toolbox-reusable-context-preflight-r1",
+    "result_schema": "toolbox-reusable-context-preflight-result-r1"
+  },
+  "task": {
+    "task_id": "TR26-02-expired-checkrun-memory-20261027",
+    "source_path": "ignition/data/operations/toolbox-actions-check-observations-real-task-r0.json",
+    "source_observed_at_utc": "2026-10-26T02:33:03Z",
+    "expiry_policy": "caller-declared 4-hour reuse window for this historical CI observation; no global TTL is asserted",
+    "expires_at_utc": "2026-10-26T06:33:03Z",
+    "evaluated_at_utc": "2026-10-27T12:55:59Z",
+    "seconds_past_expiry": 109376
+  },
+  "bindings": {
+    "source_sha256": "bf4648b531c50d2ea64ef96e97f22021b1025ae74afa0e987c3f4fa94d0bd3d6",
+    "source_bytes": 5554,
+    "baseline_input_sha256": "128288a255024771abba24eea96a8d47eccadefa9a2e8472a04e8bf9b2756960",
+    "candidate_input_sha256": "d909313be33797dc055ecf71adef937d1537ca59618a4ccd1e1aa2a9d0179207"
+  },
+  "observations": {
+    "baseline_v0_1": {
+      "output_path": "ignition/data/operations/toolbox-reusable-context-expiry-baseline-output-v0-1.json",
+      "output_sha256": "a46edfdb625fef108a7862981bba0d381d839dcf7542de8ead919b3542501031",
+      "decision": "CONTEXT_REUSED",
+      "card_decision": "REUSE",
+      "reason": "SOURCE_BYTES_AND_CALLER_DECLARED_ACCESS_SCOPE_MATCH",
+      "source_bytes_read": 5554,
+      "context_bytes_returned": 265,
+      "returned_cards": 1
+    },
+    "candidate_v0_2_r0": {
+      "output_path": "ignition/data/operations/toolbox-reusable-context-expiry-backward-output-v0-2-r0.json",
+      "output_sha256": "fc5a9e8d049ff39a6e7d66533462e67d3d1dab6f2376800e51053f13176cc0fb",
+      "decision": "CONTEXT_REUSED",
+      "card_decision": "REUSE",
+      "reason": "SOURCE_BYTES_AND_CALLER_DECLARED_ACCESS_SCOPE_MATCH",
+      "source_bytes_read": 5554,
+      "context_bytes_returned": 265,
+      "returned_cards": 1
+    },
+    "candidate_v0_2_r1": {
+      "output_path": "ignition/data/operations/toolbox-reusable-context-expiry-real-task-output-r1.json",
+      "output_sha256": "1fd79bdc70b202883410beac2f55e5eec51481b2d8601881dec77b5dc40a4582",
+      "decision": "NO_ELIGIBLE_CONTEXT",
+      "card_decision": "INVALIDATE",
+      "reason": "MEMORY_CARD_EXPIRED",
+      "source_bytes_read": 0,
+      "context_bytes_returned": 0,
+      "returned_cards": 0
+    },
+    "legacy_r0_semantic_parity_after_version_normalization": true
+  },
+  "finding": "On the same unchanged historical check-observation source, v0.1 R0 reused the card because its contract had no expiry; v0.2 R1 invalidated the caller-declared expired card before reading source bytes. The v0.2 R0 result matches the v0.1 result after normalizing only tool_version. This is one task-specific expiry outcome, not a general quality, cost, or portfolio replacement conclusion.",
+  "claim_ceiling": "The R1 path rejects this caller-declared expired derived context before reading or returning the cached text. It does not authenticate the source snapshot, expiry policy, caller access declaration, system clock, current external status, or memory truth; cost equivalence and general replacement value remain unknown."
+}

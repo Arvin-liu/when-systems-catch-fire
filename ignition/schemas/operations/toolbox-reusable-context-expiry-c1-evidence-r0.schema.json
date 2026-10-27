@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-reusable-context-expiry-c1-evidence-r0",
+  "title": "Reusable context expiry C1 task comparison evidence R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "comparison_status",
+    "blueprint_binding",
+    "baseline",
+    "candidate",
+    "task",
+    "bindings",
+    "observations",
+    "finding",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-reusable-context-expiry-c1-evidence-r0"},
+    "tool_id": {"const": "knowledge.preflight_reusable_context"},
+    "tool_version": {"const": "0.2.0"},
+    "comparison_status": {"const": "COMPARISON_UNKNOWN"},
+    "blueprint_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "pull_request", "head", "work_item"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/ignition-architecture-workbench"},
+        "pull_request": {"const": 86},
+        "head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "work_item": {"const": "TR26-02"}
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tool_version", "commit", "source_sha256", "input_schema"],
+      "properties": {
+        "tool_version": {"const": "0.1.0"},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "source_sha256": {"$ref": "#/$defs/digest"},
+        "input_schema": {"const": "toolbox-reusable-context-preflight-r0"}
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tool_version", "source_sha256", "input_schema", "result_schema"],
+      "properties": {
+        "tool_version": {"const": "0.2.0"},
+        "source_sha256": {"$ref": "#/$defs/digest"},
+        "input_schema": {"const": "toolbox-reusable-context-preflight-r1"},
+        "result_schema": {"const": "toolbox-reusable-context-preflight-result-r1"}
+      }
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "source_path", "source_observed_at_utc", "expiry_policy", "expires_at_utc", "evaluated_at_utc", "seconds_past_expiry"],
+      "properties": {
+        "task_id": {"type": "string", "minLength": 1},
+        "source_path": {"type": "string", "pattern": "^ignition/"},
+        "source_observed_at_utc": {"$ref": "#/$defs/utcTimestamp"},
+        "expiry_policy": {"type": "string", "minLength": 1},
+        "expires_at_utc": {"$ref": "#/$defs/utcTimestamp"},
+        "evaluated_at_utc": {"$ref": "#/$defs/utcTimestamp"},
+        "seconds_past_expiry": {"type": "integer", "minimum": 0}
+      }
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_sha256", "source_bytes", "baseline_input_sha256", "candidate_input_sha256"],
+      "properties": {
+        "source_sha256": {"$ref": "#/$defs/digest"},
+        "source_bytes": {"type": "integer", "minimum": 0},
+        "baseline_input_sha256": {"$ref": "#/$defs/digest"},
+        "candidate_input_sha256": {"$ref": "#/$defs/digest"}
+      }
+    },
+    "observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseline_v0_1", "candidate_v0_2_r0", "candidate_v0_2_r1", "legacy_r0_semantic_parity_after_version_normalization"],
+      "properties": {
+        "baseline_v0_1": {"$ref": "#/$defs/observation"},
+        "candidate_v0_2_r0": {"$ref": "#/$defs/observation"},
+        "candidate_v0_2_r1": {"$ref": "#/$defs/observation"},
+        "legacy_r0_semantic_parity_after_version_normalization": {"type": "boolean"}
+      }
+    },
+    "finding": {"type": "string", "minLength": 1},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "utcTimestamp": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$", "minLength": 20, "maxLength": 20},
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["output_path", "output_sha256", "decision", "card_decision", "reason", "source_bytes_read", "context_bytes_returned", "returned_cards"],
+      "properties": {
+        "output_path": {"type": "string", "pattern": "^ignition/data/operations/"},
+        "output_sha256": {"$ref": "#/$defs/digest"},
+        "decision": {"enum": ["CONTEXT_REUSED", "NO_ELIGIBLE_CONTEXT"]},
+        "card_decision": {"enum": ["REUSE", "INVALIDATE", "SKIP"]},
+        "reason": {"type": "string", "minLength": 1},
+        "source_bytes_read": {"type": "integer", "minimum": 0},
+        "context_bytes_returned": {"type": "integer", "minimum": 0},
+        "returned_cards": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

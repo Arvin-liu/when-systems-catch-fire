@@ -9,6 +9,7 @@ validate context cards, and it never treats derived context as raw evidence.
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
@@ -21,7 +22,7 @@ sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve()
 REPO_ROOT = HERE.parents[2]
 TOOL_ID = "knowledge.preflight_reusable_context"
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 MAX_REQUEST_BYTES = 128_000
 MAX_SOURCE_BYTES_PER_FILE = 1_000_000
 MAX_TOTAL_SOURCE_BYTES = 5_000_000
@@ -97,10 +98,29 @@ def _repo_file(relative_path: str) -> Path:
     return candidate
 
 
+def _parse_utc_timestamp(value: Any, field: str) -> datetime:
+    if not isinstance(value, str) or not re.fullmatch(
+        r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", value
+    ):
+        raise ReusableContextError(f"{field} must be a UTC timestamp in YYYY-MM-DDTHH:MM:SSZ form")
+    try:
+        parsed = datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    except ValueError as exc:
+        raise ReusableContextError(f"{field} must be a valid UTC timestamp") from exc
+    if parsed.strftime("%Y-%m-%dT%H:%M:%SZ") != value:
+        raise ReusableContextError(f"{field} must be a canonical UTC timestamp")
+    return parsed
+
+
 def _validate_request(request: Any) -> dict[str, Any]:
     request = _exact_keys(request, {"schema_version", "task", "current_sources", "cached_cards"}, "request")
-    if request["schema_version"] != "toolbox-reusable-context-preflight-r0":
+    schema_version = request["schema_version"]
+    if schema_version not in {
+        "toolbox-reusable-context-preflight-r0",
+        "toolbox-reusable-context-preflight-r1",
+    }:
         raise ReusableContextError("unsupported schema_version")
+    expiry_enabled = schema_version == "toolbox-reusable-context-preflight-r1"
 
     task = _exact_keys(request["task"], {"task_id", "raw_source_required", "max_context_bytes", "max_source_bytes"}, "task")
     clean_task = {
@@ -146,9 +166,10 @@ def _validate_request(request: Any) -> dict[str, Any]:
         raise ReusableContextError(f"cached_cards must be an array of at most {MAX_CARDS} entries")
     clean_cards: list[dict[str, Any]] = []
     card_ids: set[str] = set()
-    card_keys = {"card_id", "source_bindings", "derived_context"}
+    base_card_keys = {"card_id", "source_bindings", "derived_context"}
     binding_keys = {"source_id", "path", "version", "sha256", "access_scope_id"}
     for index, raw in enumerate(cached_cards):
+        card_keys = base_card_keys | ({"expires_at_utc"} if expiry_enabled else set())
         card = _exact_keys(raw, card_keys, f"cached_cards[{index}]")
         card_id = _identifier(card["card_id"], "card_id")
         if card_id in card_ids:
@@ -174,10 +195,17 @@ def _validate_request(request: Any) -> dict[str, Any]:
                 "sha256": _sha256(binding["sha256"], "binding sha256"),
                 "access_scope_id": _identifier(binding["access_scope_id"], "binding access_scope_id"),
             })
-        context = _text(card["derived_context"], "derived_context", max_chars=MAX_CONTEXT_CHARS)
-        clean_cards.append({"card_id": card_id, "source_bindings": clean_bindings, "derived_context": context})
+        clean_card = {
+            "card_id": card_id,
+            "source_bindings": clean_bindings,
+            "derived_context": _text(card["derived_context"], "derived_context", max_chars=MAX_CONTEXT_CHARS),
+        }
+        if expiry_enabled:
+            clean_card["expires_at_utc"] = card["expires_at_utc"]
+            clean_card["expires_at"] = _parse_utc_timestamp(card["expires_at_utc"], f"{card_id}.expires_at_utc")
+        clean_cards.append(clean_card)
 
-    return {"task": clean_task, "current_sources": clean_sources, "cached_cards": clean_cards}
+    return {"schema_version": schema_version, "task": clean_task, "current_sources": clean_sources, "cached_cards": clean_cards}
 
 
 def _source_check(source: dict[str, Any], binding: dict[str, str], byte_budget_left: int) -> tuple[str, str | None, int, str | None]:
@@ -209,10 +237,29 @@ def _source_check(source: dict[str, Any], binding: dict[str, str], byte_budget_l
     return "MATCH", observed, size, None
 
 
-def preflight(request: Any) -> dict[str, Any]:
+def _current_utc(now_utc: datetime | None) -> datetime:
+    if now_utc is None:
+        return datetime.now(timezone.utc)
+    if not isinstance(now_utc, datetime) or now_utc.tzinfo is None or now_utc.utcoffset() is None:
+        raise ReusableContextError("now_utc must be a timezone-aware datetime")
+    return now_utc.astimezone(timezone.utc)
+
+
+def _format_utc(value: datetime) -> str:
+    return value.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def preflight(request: Any, now_utc: datetime | None = None) -> dict[str, Any]:
     clean = _validate_request(request)
     task = clean["task"]
     sources = {item["source_id"]: item for item in clean["current_sources"]}
+    expiry_enabled = clean["schema_version"] == "toolbox-reusable-context-preflight-r1"
+    evaluated_at = _current_utc(now_utc) if expiry_enabled else None
+    evaluated_at_utc = _format_utc(evaluated_at) if evaluated_at is not None else None
+    result_schema_version = (
+        "toolbox-reusable-context-preflight-result-r1"
+        if expiry_enabled else "toolbox-reusable-context-preflight-result-r0"
+    )
     decisions: list[dict[str, Any]] = []
     returned: list[dict[str, Any]] = []
     refresh_required: dict[str, dict[str, Any]] = {}
@@ -230,10 +277,38 @@ def preflight(request: Any) -> dict[str, Any]:
                 if source and source["access_state"] == "ACTIVE" and source["authorized"]:
                     raw_reopen[source_id] = {"source_id": source_id, "path": source["path"], "reason": "RAW_SOURCE_REQUIRED"}
             decisions.append({"card_id": card["card_id"], "decision": "SKIP", "reason": "RAW_SOURCE_REQUIRED", "source_ids": source_ids})
-        return _result(task["task_id"], decisions, returned, refresh_required, raw_reopen, source_bytes_read, context_bytes_returned)
+        return _result(
+            task["task_id"], decisions, returned, refresh_required, raw_reopen,
+            source_bytes_read, context_bytes_returned,
+            result_schema_version=result_schema_version,
+            evaluated_at_utc=evaluated_at_utc,
+        )
 
     for card in clean["cached_cards"]:
         context_bytes = len(card["derived_context"].encode("utf-8"))
+        if expiry_enabled and card["expires_at"] <= evaluated_at:
+            source_ids = [binding["source_id"] for binding in card["source_bindings"]]
+            for binding in card["source_bindings"]:
+                source = sources.get(binding["source_id"])
+                if source and source["access_state"] == "ACTIVE" and source["authorized"]:
+                    refresh_required[binding["source_id"]] = {
+                        "source_id": binding["source_id"],
+                        "path": source["path"],
+                        "reason": "MEMORY_CARD_EXPIRED",
+                        "current_version": source["version"],
+                        "declared_current_sha256": source["sha256"],
+                        "expires_at_utc": card["expires_at_utc"],
+                    }
+            decisions.append({
+                "card_id": card["card_id"],
+                "decision": "INVALIDATE",
+                "reason": "MEMORY_CARD_EXPIRED",
+                "source_ids": source_ids,
+                "expires_at_utc": card["expires_at_utc"],
+                "evaluated_at_utc": evaluated_at_utc,
+                "context_bytes": context_bytes,
+            })
+            continue
         if context_bytes_returned + context_bytes > task["max_context_bytes"]:
             decisions.append({"card_id": card["card_id"], "decision": "SKIP", "reason": "CONTEXT_BUDGET_EXCEEDED", "context_bytes": context_bytes})
             continue
@@ -273,14 +348,22 @@ def preflight(request: Any) -> dict[str, Any]:
 
         context_bytes_returned += context_bytes
         decisions.append({"card_id": card["card_id"], "decision": "REUSE", "reason": "SOURCE_BYTES_AND_CALLER_DECLARED_ACCESS_SCOPE_MATCH", "context_bytes": context_bytes})
-        returned.append({
+        returned_card = {
             "card_id": card["card_id"],
             "derived_context": card["derived_context"],
             "context_kind": "DERIVED_CONTEXT_ONLY",
             "source_bindings": card["source_bindings"],
-        })
+        }
+        if expiry_enabled:
+            returned_card["expires_at_utc"] = card["expires_at_utc"]
+        returned.append(returned_card)
 
-    return _result(task["task_id"], decisions, returned, refresh_required, raw_reopen, source_bytes_read, context_bytes_returned, len(hashed_source_keys))
+    return _result(
+        task["task_id"], decisions, returned, refresh_required, raw_reopen,
+        source_bytes_read, context_bytes_returned, len(hashed_source_keys),
+        result_schema_version=result_schema_version,
+        evaluated_at_utc=evaluated_at_utc,
+    )
 
 
 def _result(
@@ -292,9 +375,12 @@ def _result(
     source_bytes_read: int,
     context_bytes_returned: int,
     source_files_hashed: int = 0,
+    *,
+    result_schema_version: str = "toolbox-reusable-context-preflight-result-r0",
+    evaluated_at_utc: str | None = None,
 ) -> dict[str, Any]:
-    return {
-        "schema_version": "toolbox-reusable-context-preflight-result-r0",
+    result = {
+        "schema_version": result_schema_version,
         "tool_id": TOOL_ID,
         "tool_version": TOOL_VERSION,
         "task_id": task_id,
@@ -314,8 +400,15 @@ def _result(
         "authority_effect": "NONE",
         "semantic_relevance": "NOT_EVALUATED",
         "evidential_sufficiency": "NOT_EVALUATED",
-        "claim_ceiling": "Caller-selected derived context may be reused only after exact local byte-digest and caller-declared access-scope checks. No source authority, permission grant, semantic relevance, raw-evidence support, sufficiency, truth, or task completion is established.",
+        "claim_ceiling": (
+            "Caller-selected derived context may be reused only after exact local byte-digest and caller-declared access-scope checks. No source authority, permission grant, semantic relevance, raw-evidence support, sufficiency, truth, or task completion is established."
+            if evaluated_at_utc is None else
+            "R1 checks required caller-declared expiry timestamps against the observed local system clock before reuse, then applies the same local byte-digest and caller-declared access-scope checks. Clock accuracy, source authority, current external truth, permission grant, semantic relevance, raw-evidence support, sufficiency, truth, and task completion are not established."
+        ),
     }
+    if evaluated_at_utc is not None:
+        result["evaluated_at_utc"] = evaluated_at_utc
+    return result
 
 
 def run(stdin: Any, stdout: Any, stderr: Any) -> int:
