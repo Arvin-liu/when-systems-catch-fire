@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/governance/owner-production-brief-r1.schema.json",
+  "title": "Owner production brief protocol",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "status", "authority", "brief_fields", "input_policy", "transition_binding", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "owner-production-brief-r1"},
+    "contract_id": {"const": "OWNER_PRODUCTION_BRIEF_R1"},
+    "status": {"const": "AWAITING_OWNER_PRODUCTION_BRIEF"},
+    "authority": {"const": "OWNER_EXPLICIT_PRODUCTION_BRIEF_REQUIRED"},
+    "brief_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "owner_selected_topic", "owner_selected_direction", "purpose", "audience", "must_use_sources", "must_avoid", "desired_length", "publication_target"],
+      "properties": {
+        "kind": {"type": ["string", "null"], "enum": ["article", "book", null]},
+        "owner_selected_topic": {"type": ["string", "null"]},
+        "owner_selected_direction": {"type": ["string", "null"]},
+        "purpose": {"type": ["string", "null"]},
+        "audience": {"type": ["string", "null"]},
+        "must_use_sources": {"type": ["array", "null"], "items": {"type": "string"}},
+        "must_avoid": {"type": ["array", "null"], "items": {"type": "string"}},
+        "desired_length": {"type": ["string", "null"]},
+        "publication_target": {"type": ["string", "null"]}
+      }
+    },
+    "input_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accepted_forms", "minimum_owner_content", "natural_language_parse_preserves_intent", "missing_brief_action"],
+      "properties": {
+        "accepted_forms": {"const": ["NATURAL_LANGUAGE_OWNER_BRIEF", "STRUCTURED_OWNER_BRIEF"]},
+        "minimum_owner_content": {"const": ["kind", "owner_selected_topic_or_direction", "purpose", "audience"]},
+        "natural_language_parse_preserves_intent": {"const": true},
+        "missing_brief_action": {"const": "AWAIT_OWNER_PRODUCTION_BRIEF"}
+      }
+    },
+    "transition_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_default_production_state", "owner_authority_required_for_activation", "draft_generation_does_not_select", "publication_acceptance_requires_owner_authority"],
+      "properties": {
+        "current_default_production_state": {"const": "CANDIDATE"},
+        "owner_authority_required_for_activation": {"const": true},
+        "draft_generation_does_not_select": {"const": true},
+        "publication_acceptance_requires_owner_authority": {"const": true}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_labels_not_in_packets": true,
+  "control_selected": 160,
+  "control_target": 160,
+  "families_in_hidden_manifest": [
+    "C1_THEORY_FUNCTIONS",
+    "C2_CASES_AND_COLLISIONS",
+    "C3_ORIGINAL_NOTES_AND_LINKED_NOTES",
+    "C4_FAILURES_AND_SELF_CORRECTION",
+    "C5_NONFUNCTION_THEORY_CLAIMS",
+    "C6_TEMPORAL_TRANSITIONS",
+    "C7_ENGINEERING_NEGATIVE_CONTROL"
+  ],
+  "manifest_digest": "cbe28c6586f1ff9b3ab09d11ad5ff03d59fc5af5e38fbc1d2eb19c9917dd4cb1",
+  "packet_digest": "615ce7640754efea1149dde7ef30b961a8dd896f05e3e92cbf2c5f54fbb36ada",
+  "residual_lead_selected": 240,
+  "residual_lead_target": 240,
+  "task161_answer_key_not_loaded": true,
+  "task_id": "IGNITION-20260907-162",
+  "time_slices": [
+    "2026-08",
+    "2026-09"
+  ],
+  "total_selected": 400
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step15-draft-closeout-r1.schema.json",
+  "title": "Task150 Step15 Draft PR Owner review closeout",
+  "description": "Records a Draft-only PR and the stop state for Owner review without merge or activation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "control_previous_commit", "pull_request", "closeout", "explicit_non_intent", "evidence_refs", "scope_freeze", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step15-draft-closeout-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "15"},
+    "record_type": {"const": "DRAFT_PR_OWNER_REVIEW_CLOSEOUT"},
+    "status": {"const": "AWAIT_OWNER_ARCHIFY_BOUNDED_ADMISSION_REVIEW"},
+    "formal_previous_commit": {"const": "dc2dd1aaa6a4a2a957fd68b28767583ad477aecc"},
+    "control_previous_commit": {"const": "0a6da5b731eb219d0845990f21e77736be88ef1b"},
+    "pull_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "number", "url", "title", "state", "is_draft", "base_ref", "base_sha", "head_ref", "head_sha_at_creation", "merged", "merge_commit", "review_decision", "checks_at_creation"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "number": {"const": 200},
+        "url": {"const": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/200"},
+        "title": {"const": "IGNITION-150: Archify bounded visualization admission (Draft)"},
+        "state": {"const": "OPEN"},
+        "is_draft": {"const": true},
+        "base_ref": {"const": "main"},
+        "base_sha": {"const": "d7372c27abe456b5b8c058675630d8038f91b448"},
+        "head_ref": {"const": "codex/ignition-150-archify-bounded-visualization-admission-r1"},
+        "head_sha_at_creation": {"const": "dc2dd1aaa6a4a2a957fd68b28767583ad477aecc"},
+        "merged": {"const": false},
+        "merge_commit": {"type": ["null"]},
+        "review_decision": {"const": "PENDING"},
+        "checks_at_creation": {"const": "QUEUED_NOT_TREATED_AS_PASS"}
+      }
+    },
+    "closeout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "registry_write", "current_capability", "default_renderer", "authenticated_channels", "live_external_invocation", "owner_review_state", "stop_state", "task151", "next_action"],
+      "properties": {
+        "decision": {"const": "DEFER"},
+        "registry_write": {"const": false},
+        "current_capability": {"const": false},
+        "default_renderer": {"const": false},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "owner_review_state": {"const": "PENDING"},
+        "stop_state": {"const": "AWAIT_OWNER_ARCHIFY_BOUNDED_ADMISSION_REVIEW"},
+        "task151": {"const": "FORBIDDEN"},
+        "next_action": {"const": "OWNER_REVIEW_ONLY"}
+      }
+    },
+    "explicit_non_intent": {"const": ["DO_NOT_ACTIVATE_PROVIDER", "DO_NOT_ADD_CURRENT_PROVIDER_CAPABILITY", "DO_NOT_ENABLE_AUTHENTICATED_CHANNELS", "DO_NOT_CHANGE_LIVE_EXTERNAL_INVOCATION", "MERGE_EXPERIMENTAL_EVIDENCE_AND_PROVIDER_NEUTRAL_CONTRACT_ONLY"]},
+    "evidence_refs": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"type": "string", "minLength": 1}},
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "agent_reach_public", "agent_reach_authenticated", "authenticated_channels", "installation", "current_admission", "default_renderer", "provider_homepage", "live_external_invocation", "task151", "successor_task"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "agent_reach_public": {"const": "NO_CHANGE"},
+        "agent_reach_authenticated": {"const": "DEFER"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "provider_homepage": {"const": "NO_CLAIM"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"},
+        "successor_task": {"const": "NOT_CREATED"}
+      }
+    },
+    "claim_ceiling": {"const": "Task150 Step15 proves only that a Draft PR was created and remains bounded for Owner review, with the final formal decision DEFER and all non-intents preserved. It does not prove CI completion, Owner acceptance, Current integration, default-renderer selection, production readiness, architecture truth, external truth, authenticated access, live external completion or merge readiness."}
+  }
+}

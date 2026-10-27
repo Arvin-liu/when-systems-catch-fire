@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260822-134",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "3fc8a329eb4f581d1940688046bdc16f4594417d",
+    "command_path": "agent-commands/IGNITION-20260822-134-residual-debt-projection-hygiene-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "517510aed545ff440c3464536ba2964c94e5f560"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-134-residual-debt-projection-hygiene-r1-20260822",
+  "expected_receipt_branch": "relay/receipts/ignition-134-residual-debt-projection-hygiene-r1-20260822",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260822-134",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "previous_canonical_current_task": "IGNITION-20260822-133",
+    "previous_formal_task": "IGNITION-20260822-133",
+    "release_candidate_task": "IGNITION-20260822-134",
+    "publication_witness_task": "IGNITION-20260822-134"
+  },
+  "claim_ceiling": "Execution and release identity for repository-local Task134 only; it grants no Owner authority, truth authority, production readiness or epistemic acceptance."
+}

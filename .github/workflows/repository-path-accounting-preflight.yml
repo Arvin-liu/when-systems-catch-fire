@@ -19,6 +19,9 @@ concurrency:
   cancel-in-progress: true
 permissions:
   contents: read
+defaults:
+  run:
+    working-directory: ignition
 jobs:
   preflight:
     runs-on: ubuntu-latest

@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-132-step07-task-id-binding-r1",
+  "task_id": "IGNITION-20260822-132",
+  "step": "07",
+  "status": "PASS",
+  "binding": {
+    "publication_witness_task_id": "IGNITION-20260822-132",
+    "formal_result_task_id": "IGNITION-20260822-132",
+    "canonical_current_formal_task_id": "IGNITION-20260822-132",
+    "lifecycle_task_id": "IGNITION-20260822-132",
+    "release_candidate_task_id": "IGNITION-20260822-132",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "exact_match": true
+  },
+  "hard_gate": {
+    "remote_sha_equality_alone_is_insufficient": true,
+    "formal_result_file_observation": "PENDING_STEP_13_FORMAL_RESULT",
+    "witness_repository": "Arvin-liu/1111",
+    "formal_repository_self_witness_commit": false
+  },
+  "negative_fixture": {
+    "path": "ignition/data/operations/iterations/132/fixtures/post-publication-task-binding-negative-fixtures-r1.json",
+    "cases": 5,
+    "remote_sha_match_task_id_mismatch": "FAIL_CLOSED"
+  },
+  "validation": {
+    "targeted_tests": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_publication_witness ignition.tests.test_post_publication_current",
+    "targeted_test_result": "PASS_16_TESTS",
+    "witness_schema": "publication-witness-r1",
+    "claim_ceiling": "Repository-local task identity binding and observation-witness protocol only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+  }
+}

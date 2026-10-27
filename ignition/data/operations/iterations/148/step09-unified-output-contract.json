@@ -1,0 +1,83 @@
+{
+  "schema_version": "ignition-148-step09-unified-output-contract-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "09",
+  "status": "PASS_WITH_DECLARED_STEP12_PROPAGATION_PENDING",
+  "contract_id": "IGNITION_RUN_OUTPUT_CONTRACT_R1",
+  "canonical_contract": "ignition/data/operations/ignition-run-output-contract-r1.json",
+  "machine_audit_schema": "ignition/schemas/operations/ignition-run-output-r1.schema.json",
+  "validator": "ignition/tools/operations/validate_ignition_run_output.py",
+  "fixture_path": "ignition/tests/fixtures/ignition-operating-method/unified-output-r1.json",
+  "profiles": {
+    "machine_audit": "FULL_RECOVERABLE_RECORD",
+    "human_default": "CONCISE_RENDER_WITH_MACHINE_AUDIT_RECOVERY"
+  },
+  "required_semantics": {
+    "count": 15,
+    "fields": [
+      "REQUEST",
+      "RUN_MODE",
+      "OPERATION_PATH",
+      "CURRENT_REF",
+      "INPUT_OBJECT / PROVENANCE",
+      "INPUT_DERIVED_FINDINGS",
+      "EXISTING_CANONICAL_MATCHES",
+      "COLLISION_RELATIONS",
+      "CANDIDATE_DELTAS",
+      "CONTRADICTIONS / GAPS",
+      "EVIDENCE / SOURCES",
+      "UNCERTAINTY",
+      "CLAIM_CEILING",
+      "RESULT",
+      "STOP_REASON / OPTIONAL_NEXT_ACTION"
+    ],
+    "empty_sections_remain_recoverable": true
+  },
+  "anti_confusion_guards": [
+    "INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY",
+    "CANDIDATE_IS_NOT_CANONICAL_ASSET",
+    "REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH",
+    "AGENT_CONSENSUS_IS_NOT_EVIDENCE",
+    "IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE",
+    "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY"
+  ],
+  "integration": {
+    "all_lifecycle_plans_load_output_contract": true,
+    "callable_playbooks_project_output_contract_in_core_reads": true,
+    "status_only_and_unknown_runs_still_receive_output_contract": true,
+    "playbook_human_view_regenerated_deterministically": true
+  },
+  "validation": {
+    "output_contract_validator": "PASS semantics=15 guards=6 fixtures=12",
+    "focused_output_tests": "11/11 PASS",
+    "lifecycle_tests": "8/8 PASS",
+    "operating_method_tests": "15/15 PASS",
+    "operation_playbook_tests": "8/8 PASS",
+    "object_collision_tests": "10/10 PASS",
+    "capability_registry_tests": "8/8 PASS",
+    "canonical_resolution_tests": "7/7 PASS",
+    "mode_router_tests": "6/6 PASS",
+    "combined_focused_regression": "73/73 PASS",
+    "operating_method_validator": "PASS boundaries=30 priority_tiers=6",
+    "capability_registry_validator": "PASS operations=19 pack_capabilities=10 statuses=6",
+    "lifecycle_fixtures": "9/9 PASS stages=14",
+    "contract_sha256": "b9da1636b3de1c1cc174b60087916498afc7fb77d467db75610e8d94d87c5dc5",
+    "schema_sha256": "567ebe5423260e129df847c776e78e437b6f268e9e6ff8c8c28b722b4caea125",
+    "fixture_sha256": "c495c4c0b011d7e1bf2b3b7cabf5ded13cec584e551063b1a706e7fae2772758",
+    "regenerated_playbook_view_sha256": "9ce2752b1d40785020a9a8b9c620a026a564de049535c111911b326d6d0e223a",
+    "deterministic_second_render": "PASS identical SHA-256",
+    "json_schema_and_python_compile": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "declared_step12_projection_residuals": [
+    "CENSUS_OUT_OF_DATE discovery.jsonl census.jsonl audit-queue.jsonl census-summary.json; claim governance 38/39",
+    "NONFUNCTION_CLAIM_OUTPUT_DRIFT over the same governed 12-path projection set recorded at Step07"
+  ],
+  "projection_policy": {
+    "closure_step": "12",
+    "ignore_or_skip_added": false,
+    "validator_weakened": false,
+    "projection_closure_claimed": false
+  },
+  "claim_ceiling": "Task148 candidate output-structure, recoverability and anti-confusion evidence only; validator PASS does not establish input truth, evidence sufficiency, novelty, implementation success, Owner acceptance or epistemic acceptance, projections remain pending Step12, and nothing is Current on main."
+}

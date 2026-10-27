@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/ignition/schemas/operations/ignition-interface-sync-r1.schema.json",
+  "title": "Ignition Operating Method Interface Synchronization R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "input_head",
+    "change_classifications",
+    "source_registry",
+    "surface_decisions",
+    "additional_surface_decisions",
+    "step11_preserved_digests",
+    "validation",
+    "declared_step12_residuals",
+    "historical_evidence_policy",
+    "current_projection_boundary",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "task_id": {"const": "IGNITION-20260829-148"},
+    "step": {"const": "11"},
+    "input_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "change_classifications": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"enum": ["OPERATIONS_METHOD", "INTERFACE_CHANGE", "CAPABILITY_ADDITION"]}
+    },
+    "source_registry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "registry_version", "trigger_classification", "required_surface_count"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/synchronization-surfaces.json"},
+        "registry_version": {"type": "string", "minLength": 1},
+        "trigger_classification": {"const": "OPERATIONS_METHOD"},
+        "required_surface_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "surface_decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/declaredDecision"}
+    },
+    "additional_surface_decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/additionalDecision"}
+    },
+    "step11_preserved_digests": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "validation": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "command", "outcome", "evidence"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "command": {"type": "string", "minLength": 1},
+          "outcome": {"enum": ["PASS", "EXPECTED_STEP12_RESIDUAL"]},
+          "evidence": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "declared_step12_residuals": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 20}
+    },
+    "historical_evidence_policy": {"type": "string", "minLength": 20},
+    "current_projection_boundary": {"type": "string", "minLength": 20},
+    "claim_ceiling": {"type": "string", "minLength": 20}
+  },
+  "$defs": {
+    "declaredDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "locator", "decision", "reason", "evidence_refs"],
+      "properties": {
+        "surface_id": {"type": "string", "minLength": 1},
+        "locator": {"type": "string", "minLength": 1},
+        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+        "reason": {"type": "string", "minLength": 12},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "additionalDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["locator", "decision", "reason", "evidence_refs"],
+      "properties": {
+        "locator": {"type": "string", "minLength": 1},
+        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+        "reason": {"type": "string", "minLength": 12},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

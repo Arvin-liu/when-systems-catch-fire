@@ -1,0 +1,58 @@
+[
+  {
+    "fixture_id": "MODEL_AUTO_TOPIC_SELECTION",
+    "kind": "article",
+    "source_origin": "MODEL_RANKING",
+    "owner_selection": "OWNER_SELECTED",
+    "draft_status": "NOT_GENERATED",
+    "production_state": "OWNER_SELECTED",
+    "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "authority_source": "MODEL_RANKING",
+    "expected_error_code": "MODEL_RANKING_NOT_OWNER_SELECTION"
+  },
+  {
+    "fixture_id": "AUTO_BOOK_INITIATION",
+    "kind": "book",
+    "source_origin": "AUTO_CLUSTER",
+    "owner_selection": "OWNER_SELECTED",
+    "draft_status": "NOT_GENERATED",
+    "production_state": "OWNER_SELECTED",
+    "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "authority_source": "AUTO_CLUSTER",
+    "expected_error_code": "AUTO_CLUSTER_NOT_OWNER_SELECTION"
+  },
+  {
+    "fixture_id": "DRAFT_TO_ACCEPTED",
+    "kind": "article",
+    "source_origin": "DRAFT",
+    "owner_selection": "NOT_REVIEWED",
+    "draft_status": "DRAFT_GENERATED",
+    "production_state": "ACCEPTED",
+    "publication_acceptance": "PUBLICATION_ACCEPTED",
+    "authority_source": "NONE",
+    "expected_error_code": "DRAFT_GENERATED_NOT_PUBLICATION_ACCEPTED"
+  },
+  {
+    "fixture_id": "REGISTRY_ITEM_TO_ACCEPTED",
+    "kind": "article",
+    "source_origin": "RESULT_REGISTRY",
+    "owner_selection": "OWNER_SELECTED",
+    "draft_status": "DRAFT_GENERATED",
+    "production_state": "ACCEPTED",
+    "publication_acceptance": "PUBLICATION_ACCEPTED",
+    "authority_source": "RESULT_REGISTRY",
+    "expected_error_code": "RESULT_REGISTRY_NOT_OWNER_ACCEPTANCE"
+  },
+  {
+    "fixture_id": "FIRE_SEED_SCORE_TO_ACTIVE_PROJECT",
+    "kind": "book",
+    "source_origin": "FIRE_SEED_SCORE",
+    "fire_seed_score": 5,
+    "owner_selection": "OWNER_SELECTED",
+    "draft_status": "NOT_GENERATED",
+    "production_state": "OWNER_SELECTED",
+    "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "authority_source": "FIRE_SEED_SCORE",
+    "expected_error_code": "FIRE_SEED_SCORE_NOT_OWNER_SELECTION"
+  }
+]
