@@ -1,0 +1,726 @@
+{
+  "task_id": "121Q36-OBS-REPAIR-R1",
+  "method_version": "1.3.0",
+  "current_method_version": "1.3.0",
+  "change_classification": [
+    "REPAIR",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE"
+  ],
+  "verified_start": {
+    "main_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+    "source": "local Git history only; remote state NOT_CHECKED_LOCAL_ONLY",
+    "verified_at": "2026-07-22"
+  },
+  "branch_pr": {
+    "base": "repair/121q35-r1-authority-resolution",
+    "base_head": "167f254e637259d57b7ce09623de982dda527f54",
+    "branch": "repair/121q36-obs-r1-evidence-resolution",
+    "draft": true,
+    "pr_number": null,
+    "merged": false,
+    "merge_commit": "e732ebe7e0faf8355f3885d9c98f3f7c70aadaf3"
+  },
+  "head_binding": {
+    "authority": "pull_request_body_and_1111_receipt",
+    "embedded_exact_current_head": false,
+    "explanation": "Local-only build cannot establish a remote PR or final external repair head.",
+    "live_refetch_required": true,
+    "mode": "external_exact_head_attestation",
+    "pr_number": null,
+    "receipt_path": "agent-results/full-repair-train/121q36-obs-repair-r1-receipt.json"
+  },
+  "gap": {
+    "evidence": [
+      "original missing-predecessor/nonexistent-source/zero-digest bundle reproduced GATE_PASS/0",
+      "repair CLI attacks reject missing sources, digest mismatch, wrong heads, ordering drift, target drift and rule mismatch"
+    ],
+    "smallest_material_action": "Resolve every Q36-OBS predecessor and evidence reference to exact repository bytes before semantic evaluation.",
+    "summary": "Q36-OBS repair-r1 closes B04 locally and awaits independent re-review and remote publication."
+  },
+  "claim_ceiling": "candidate_only: Q36-OBS repair-r1 binds Q34/Q35 predecessors, prediction inputs, freeze/reveal records, rule versions and observation sources to repository-contained paths, exact Git commit/blob objects and actual bytes. Local builder evidence only; no independent review, remote check, external action, Accepted, Ready, Merged, Current or real-world authority claim.",
+  "status": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "schemas/observation/observation-prediction-contract.schema.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "tools/observation/validate_observation_prediction_gate.py",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "tests/observation/test_observation_prediction_gate.py",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/pilot-q34-closure-drift-prediction.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/01-frozen-then-independent-outcome.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/18-negative-result-preserved.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/19-abstain-defer-preserved.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/20-retrospective-replay-pilot.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/21-missing-predecessor-nonexistent-source-zero-digest.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/22-missing-source.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/23-source-digest-mismatch.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/24-source-wrong-exact-head.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/25-freeze-reveal-ordering.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/26-target-window-drift.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/observation/fixtures/27-rule-version-mismatch.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "docs/observation/121Q36-OBS-repair-r1-architecture.md",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-OBS-REPAIR-R1-request.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/iterations/121Q36-OBS-REPAIR-R1.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "reports/operations/121Q36-OBS-REPAIR-R1-completion-seal.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-OBS-REPAIR-R1-impact-report.md",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-OBS-REPAIR-R1-system-map-delta.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-OBS-REPAIR-R1-residue.json",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/governance/",
+      "decision": "CHANGE",
+      "reason": "Q36-OBS repair-r1 source or deterministic synchronization surface."
+    }
+  ],
+  "changed_surfaces": [
+    "schemas/observation/observation-prediction-contract.schema.json",
+    "tools/observation/validate_observation_prediction_gate.py",
+    "tests/observation/test_observation_prediction_gate.py",
+    "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
+    "data/observation/pilot-q34-closure-drift-prediction.json",
+    "data/observation/fixtures/01-frozen-then-independent-outcome.json",
+    "data/observation/fixtures/18-negative-result-preserved.json",
+    "data/observation/fixtures/19-abstain-defer-preserved.json",
+    "data/observation/fixtures/20-retrospective-replay-pilot.json",
+    "data/observation/fixtures/21-missing-predecessor-nonexistent-source-zero-digest.json",
+    "data/observation/fixtures/22-missing-source.json",
+    "data/observation/fixtures/23-source-digest-mismatch.json",
+    "data/observation/fixtures/24-source-wrong-exact-head.json",
+    "data/observation/fixtures/25-freeze-reveal-ordering.json",
+    "data/observation/fixtures/26-target-window-drift.json",
+    "data/observation/fixtures/27-rule-version-mismatch.json",
+    "docs/observation/121Q36-OBS-repair-r1-architecture.md",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q36-OBS-REPAIR-R1-request.json",
+    "data/operations/iterations/121Q36-OBS-REPAIR-R1.json",
+    "reports/operations/121Q36-OBS-REPAIR-R1-completion-seal.json",
+    "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json",
+    "data/operations/propagation/121Q36-OBS-REPAIR-R1-impact-report.md",
+    "data/operations/propagation/121Q36-OBS-REPAIR-R1-system-map-delta.json",
+    "data/operations/propagation/121Q36-OBS-REPAIR-R1-residue.json",
+    "data/governance/"
+  ],
+  "validation": {
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    },
+    "local": [
+      {
+        "name": "q36_obs_repair_cli_attacks",
+        "status": "PASS",
+        "evidence": "tests/observation/test_observation_prediction_gate.py"
+      },
+      {
+        "name": "q36_obs_positive_pilot",
+        "status": "PASS",
+        "evidence": "data/observation/pilot-q34-closure-drift-prediction.json"
+      },
+      {
+        "name": "q35_predecessor_regression",
+        "status": "PASS",
+        "evidence": "tests/agent/test_responsibility_gate.py"
+      },
+      {
+        "name": "q34_predecessor_regression",
+        "status": "PASS",
+        "evidence": "tests/discovery/test_commitment_gate.py"
+      },
+      {
+        "name": "repair_propagation",
+        "status": "PASS",
+        "evidence": "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+      }
+    ],
+    "remote": []
+  },
+  "rollback_strategy": "Use a future ordinary revert only; never rewrite original/repair frozen heads, Main, tags or receipts.",
+  "remaining_limitations": [
+    "Builder implemented and tested the repair but did not independently review it.",
+    "Remote branch, Draft PR, CI and 1111 publication are NOT_CHECKED_LOCAL_ONLY and not executed.",
+    "Exact local head and annotated tag are added only after this manifest commit."
+  ],
+  "receipt_location": "agent-results/full-repair-train/121q36-obs-repair-r1-receipt.json",
+  "completion_seal_path": "reports/operations/121Q36-OBS-REPAIR-R1-completion-seal.json",
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "state_transition": {
+    "changed_dimensions": [
+      "governance",
+      "capability",
+      "usage"
+    ],
+    "maximum_claim_boundary": "candidate_only: Q36-OBS repair-r1 binds Q34/Q35 predecessors, prediction inputs, freeze/reveal records, rule versions and observation sources to repository-contained paths, exact Git commit/blob objects and actual bytes. Local builder evidence only; no independent review, remote check, external action, Accepted, Ready, Merged, Current or real-world authority claim.",
+    "prior_state": "original Q36-OBS frozen candidate a8eab57bf2a2465c48d5d624e22681a1ad1bc20c with B04 syntax-only bindings",
+    "proposed_state": "q36_obs_repair_r1_local_candidate_awaiting_publication_and_independent_re_review",
+    "source_refs": [
+      "data/operations/propagation/121Q36-OBS-REPAIR-R1-request.json",
+      "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+    ],
+    "subjects": [
+      "121Q36-OBS-REPAIR-R1"
+    ]
+  },
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.2.0",
+    "surface_decisions": [
+      {
+        "surface_id": "agent.handoff",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not change handoff",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "ai.start",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not change AI start",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "copyright_governance",
+        "decision": "CHANGE",
+        "reason": "Q36-OBS adds observation-prediction calibration governance components to the governance surface",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "method.iteration",
+          "agent.handoff"
+        ]
+      },
+      {
+        "surface_id": "external.pages_homepage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS is a Draft candidate; no production pages change claimed",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "post_merge_external_render_attestation",
+        "derived_from": [
+          "human.readme",
+          "human.pages_source"
+        ]
+      },
+      {
+        "surface_id": "human.ai_guide",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not change AI guide",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.current_state",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not edit docs/project-current-state.md (recorded at Q34; Q36-OBS build is governance-only and does not touch the current-state file)",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.pages_source",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS does not alter pages source",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "human.readme"
+        ]
+      },
+      {
+        "surface_id": "human.readme",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not change README",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.summary",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not edit SUMMARY.md",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.usage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not change usage surface",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "machine.llms",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not change llms.txt",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.iteration",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS uses existing iteration method",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_schema_and_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.result_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS uses existing result template",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.review_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS uses existing review template",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.task_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS uses existing task template",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "release.changelog",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not edit CHANGELOG.md (governance-only build, no release note change in this branch)",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "release.versioning",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-OBS candidate does not change versioning",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      }
+    ],
+    "unresolved_residue": [],
+    "external_attestations": [
+      {
+        "surface_id": "external.pages_homepage",
+        "stage": "post_merge",
+        "status": "pending",
+        "authority": "pull_request_body_and_1111_receipt",
+        "evidence_refs": [
+          "external:live_refetch:NOT_CHECKED_LOCAL_ONLY"
+        ],
+        "live_state_locally_verifiable": false
+      }
+    ],
+    "live_external_surfaces_verified": false,
+    "external_verification_policy": "NOT_CHECKED_LOCAL_ONLY"
+  },
+  "propagation_closure": {
+    "request_path": "data/operations/propagation/121Q36-OBS-REPAIR-R1-request.json",
+    "closure_path": "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json",
+    "impact_report_path": "data/operations/propagation/121Q36-OBS-REPAIR-R1-impact-report.md",
+    "system_map_delta_path": "data/operations/propagation/121Q36-OBS-REPAIR-R1-system-map-delta.json",
+    "residue_path": "data/operations/propagation/121Q36-OBS-REPAIR-R1-residue.json",
+    "closure_hash": "51e01a6d8cd9f1fea310d44498fac380223e9402391ad0b5262d0c3ff2692b5a",
+    "base_identity": "167f254e637259d57b7ce09623de982dda527f54",
+    "head_identity": "external_exact_head_attestation",
+    "seed_paths": [
+      "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
+      "data/observation/fixtures/01-frozen-then-independent-outcome.json",
+      "data/observation/fixtures/18-negative-result-preserved.json",
+      "data/observation/fixtures/19-abstain-defer-preserved.json",
+      "data/observation/fixtures/20-retrospective-replay-pilot.json",
+      "data/observation/fixtures/21-missing-predecessor-nonexistent-source-zero-digest.json",
+      "data/observation/fixtures/22-missing-source.json",
+      "data/observation/fixtures/23-source-digest-mismatch.json",
+      "data/observation/fixtures/24-source-wrong-exact-head.json",
+      "data/observation/fixtures/25-freeze-reveal-ordering.json",
+      "data/observation/fixtures/26-target-window-drift.json",
+      "data/observation/fixtures/27-rule-version-mismatch.json",
+      "data/observation/pilot-q34-closure-drift-prediction.json",
+      "data/operations/iterations/121Q36-OBS-REPAIR-R1.json",
+      "data/operations/project-components.json",
+      "data/operations/propagation/121Q36-OBS-REPAIR-R1-request.json",
+      "docs/observation/121Q36-OBS-repair-r1-architecture.md",
+      "reports/operations/121Q36-OBS-REPAIR-R1-completion-seal.json",
+      "schemas/observation/observation-prediction-contract.schema.json",
+      "tests/observation/test_observation_prediction_gate.py",
+      "tools/observation/validate_observation_prediction_gate.py"
+    ],
+    "seed_components": [
+      "historical_reports",
+      "iteration_manifest_contract",
+      "observation_prediction_contract",
+      "observation_prediction_gate_validator",
+      "observation_prediction_pilot_q34",
+      "project_component_registry",
+      "propagation_calculator"
+    ],
+    "resolved_components": [
+      "historical_reports",
+      "iteration_manifest_contract",
+      "observation_prediction_contract",
+      "observation_prediction_gate_validator",
+      "observation_prediction_pilot_q34",
+      "project_component_registry",
+      "propagation_calculator",
+      "system_map_projection"
+    ],
+    "typed_path_ids": [
+      "registry_generates_projection"
+    ],
+    "component_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "historical_reports",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "incremental_execution",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration_manifest_contract",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "observation_prediction_contract",
+        "reason": "Q36-OBS repair-r1 closes B04 syntax-only predecessor/evidence bindings."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "observation_prediction_gate_validator",
+        "reason": "Q36-OBS repair-r1 closes B04 syntax-only predecessor/evidence bindings."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "observation_prediction_pilot_q34",
+        "reason": "Q36-OBS repair-r1 closes B04 syntax-only predecessor/evidence bindings."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "pages_pipeline",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "project_component_registry",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_calculator",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "readme",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "sync",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_layout",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_projection",
+        "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+      }
+    ],
+    "surface_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent.handoff",
+        "reason": "Q36-OBS candidate does not change handoff"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai.start",
+        "reason": "Q36-OBS candidate does not change AI start"
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "copyright_governance",
+        "reason": "Q36-OBS adds observation-prediction calibration governance components to the governance surface"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external.pages_homepage",
+        "reason": "Q36-OBS is a Draft candidate; no production pages change claimed"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.ai_guide",
+        "reason": "Q36-OBS candidate does not change AI guide"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.current_state",
+        "reason": "Q36-OBS candidate does not edit docs/project-current-state.md (recorded at Q34; Q36-OBS build is governance-only and does not touch the current-state file)"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.pages_source",
+        "reason": "Q36-OBS does not alter pages source"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.readme",
+        "reason": "Q36-OBS candidate does not change README"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.summary",
+        "reason": "Q36-OBS candidate does not edit SUMMARY.md"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.usage",
+        "reason": "Q36-OBS candidate does not change usage surface"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "machine.llms",
+        "reason": "Q36-OBS candidate does not change llms.txt"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.iteration",
+        "reason": "Q36-OBS uses existing iteration method"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.result_template",
+        "reason": "Q36-OBS uses existing result template"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.review_template",
+        "reason": "Q36-OBS uses existing review template"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.task_template",
+        "reason": "Q36-OBS uses existing task template"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.changelog",
+        "reason": "Q36-OBS candidate does not edit CHANGELOG.md (governance-only build, no release note change in this branch)"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.versioning",
+        "reason": "Q36-OBS candidate does not change versioning"
+      }
+    ],
+    "registry_derived_surfaces": [
+      "agent.handoff",
+      "ai.start",
+      "copyright_governance",
+      "external.pages_homepage",
+      "human.ai_guide",
+      "human.current_state",
+      "human.pages_source",
+      "human.readme",
+      "human.summary",
+      "human.usage",
+      "machine.llms",
+      "method.iteration",
+      "release.changelog",
+      "release.versioning"
+    ],
+    "system_map_impact": {
+      "decision": "CHANGE",
+      "reason": "New observation-prediction calibration governance components added to project-component registry and topology",
+      "delta_path": "data/operations/propagation/121Q36-OBS-REPAIR-R1-system-map-delta.json"
+    },
+    "unresolved_residue": [],
+    "closure_complete": true
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

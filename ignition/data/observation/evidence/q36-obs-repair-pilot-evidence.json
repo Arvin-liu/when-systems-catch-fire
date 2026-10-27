@@ -1,0 +1,41 @@
+{
+  "schema_version": "q36-obs-byte-bound-evidence-v1",
+  "prediction_freezes": [
+    {
+      "record_id": "freeze-pred-q34-closure-drift-001",
+      "prediction_id": "pred-q34-closure-drift-001",
+      "issued_at": "2026-07-20T12:00:00Z",
+      "input_cutoff_time": "2026-07-20T23:59:59Z",
+      "normalized_target": "propagation_closure_drift_events::v1",
+      "evaluation_window": {"start": "2026-07-20T00:00:00Z", "end": "2026-07-21T12:00:00Z"},
+      "model_rule_version": "deterministic-rule:closure-drift-heuristic:v1.0.0",
+      "input_snapshot_digest": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+    },
+    {
+      "record_id": "freeze-pred-q34-closure-drift-001-retro",
+      "prediction_id": "pred-q34-closure-drift-001-retro",
+      "issued_at": "2026-07-20T12:00:00Z",
+      "input_cutoff_time": "2026-07-20T23:59:59Z",
+      "normalized_target": "propagation_closure_drift_events::v1",
+      "evaluation_window": {"start": "2026-07-20T00:00:00Z", "end": "2026-07-21T12:00:00Z"},
+      "model_rule_version": "deterministic-rule:closure-drift-heuristic:v1.0.0",
+      "input_snapshot_digest": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+    }
+  ],
+  "outcome_reveals": [
+    {
+      "record_id": "reveal-bind-q34-closure-drift-001",
+      "binding_id": "bind-q34-closure-drift-001",
+      "outcome_observation_id": "obs-q34-closure-drift-001",
+      "outcome_available_at": "2026-07-21T06:00:00Z",
+      "source_digest": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+    },
+    {
+      "record_id": "reveal-bind-q34-closure-drift-001-retro",
+      "binding_id": "bind-q34-closure-drift-001-retro",
+      "outcome_observation_id": "obs-q34-closure-drift-001-retro",
+      "outcome_available_at": "2026-07-21T06:00:00Z",
+      "source_digest": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+    }
+  ]
+}

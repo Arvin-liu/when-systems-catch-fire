@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/discovery/commitment-claim.schema.json",
+  "title": "Q34 Discovery-Commitment Claim Contract",
+  "description": "Repository-native typed contract separating discovery of a candidate claim from commitment of that claim as a current project conclusion. Does not assert real-world truth; enforces evidence binding, non-self-certification, claim ceiling and lifecycle consistency.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "claim_text",
+    "claim_type",
+    "scope",
+    "state",
+    "discovered_by",
+    "evidence",
+    "claim_ceiling",
+    "search_process",
+    "relations",
+    "history"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$",
+      "description": "Stable unique claim identifier."
+    },
+    "claim_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Claim body or normalized summary."
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "repository_fact",
+        "governance_state",
+        "observation",
+        "prediction",
+        "mechanism",
+        "structural_analogy",
+        "interpretation",
+        "external_world"
+      ],
+      "description": "Kind of claim. structural_analogy may never be upgraded to mechanism. external_world requires external attestation and an explicit real-world ceiling."
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Declared applicability scope (e.g. 'repository_main_only', 'representative_projection')."
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "discovered",
+        "hypothesis",
+        "evidence_bound_candidate",
+        "validated_within_scope",
+        "commitment_candidate",
+        "committed_current",
+        "deferred",
+        "rejected",
+        "retracted",
+        "superseded"
+      ],
+      "description": "Lifecycle state. committed_current is the only state that may surface on Current/Accepted."
+    },
+    "discovered_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor", "actor_kind"],
+      "properties": {
+        "actor": {"type": "string"},
+        "actor_kind": {"type": "string", "enum": ["human", "model", "agent", "tool", "process"]}
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 0,
+      "items": {"$ref": "#/$defs/evidence_ref"},
+      "description": "Evidence references. A claim may be discovered with no evidence, but may not be committed without independent, resolvable, exact-head-bound evidence."
+    },
+    "verifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor", "actor_kind"],
+      "properties": {
+        "actor": {"type": "string"},
+        "actor_kind": {"type": "string", "enum": ["human", "model", "agent", "tool", "process", "deterministic_validator"]}
+      },
+      "description": "Review/verification authority. For commitment this must be independent of discovered_by."
+    },
+    "claim_roles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_author", "builder"],
+      "properties": {
+        "claim_author": {"type": "string", "minLength": 1},
+        "builder": {"type": "string", "minLength": 1}
+      },
+      "description": "Canonical actor ids used to prove reviewer independence from author and builder."
+    },
+    "claim_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "SHA-256 over the immutable canonical claim body defined by the Q34 repair contract."
+    },
+    "review_decision": {
+      "$ref": "#/$defs/review_decision",
+      "description": "Binding to a byte-verified independent review decision artifact."
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Upper bound of what this claim asserts. The commitment text must not exceed it, and the gate never widens it."
+    },
+    "search_process": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary", "considered_paths", "rejected_paths"],
+      "properties": {
+        "summary": {"type": "string"},
+        "considered_paths": {"type": "array", "items": {"type": "string"}},
+        "rejected_paths": {"type": "array", "items": {"type": "string"}, "description": "Unselected / eliminated paths retained for non-selective reporting."}
+      },
+      "description": "Search space / selection process. Commitment requires at least one considered path and a non-empty summary."
+    },
+    "relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [],
+      "properties": {
+        "supersedes": {"type": "array", "items": {"type": "string"}},
+        "retracts": {"type": "array", "items": {"type": "string"}},
+        "derived_from": {"type": "array", "items": {"type": "string"}}
+      },
+      "description": "Provenance relations to other claim_ids. Superseded/retracted claims keep history and are never silently overwritten."
+    },
+    "exact_head_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "head"],
+      "properties": {
+        "repo": {"type": "string"},
+        "head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      },
+      "description": "Immutable evidence anchor. Required for evidence_bound_candidate and beyond."
+    },
+    "history": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/history_event"},
+      "description": "Append-only transition history."
+    }
+  },
+  "$defs": {
+    "evidence_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref_id", "kind", "reference", "independence", "produced_by"],
+      "properties": {
+        "ref_id": {"type": "string"},
+        "kind": {
+          "type": "string",
+          "enum": ["deterministic_test", "machine_proof", "ci_run", "external_attestation", "independent_review", "document", "generated_output", "model_output"]
+        },
+        "reference": {"type": "string", "description": "Resolvable pointer (path, run id, commit, artifact id, receipt path)."},
+        "independence": {"type": "string", "enum": ["independent", "same_author", "self"], "description": "self or same_author evidence cannot be the sole basis for commitment."},
+        "produced_by": {"type": "string", "description": "Actor that produced the evidence; used for self-certification detection."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Head the evidence binds to; must equal claim exact_head_binding.head when present."},
+        "artifact_digest": {"type": "string", "description": "Optional sha256:... digest for byte-exact binding."}
+        ,"repository": {"type": "string", "minLength": 1}
+        ,"path": {"type": "string", "minLength": 1}
+        ,"exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        ,"git_blob": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        ,"sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        ,"supports_claim_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        ,"scope": {"type": "string", "minLength": 1}
+      }
+    },
+    "review_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_ref_id",
+        "reviewer_id",
+        "decision",
+        "reviewed_claim_digest",
+        "scope",
+        "claim_ceiling",
+        "subject_head"
+      ],
+      "properties": {
+        "evidence_ref_id": {"type": "string", "minLength": 1},
+        "reviewer_id": {"type": "string", "minLength": 1},
+        "decision": {"type": "string", "minLength": 1},
+        "reviewed_claim_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "scope": {"type": "string", "minLength": 1},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "subject_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "history_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_state", "to_state", "actor", "decision", "rationale", "at"],
+      "properties": {
+        "from_state": {"type": "string"},
+        "to_state": {"type": "string"},
+        "actor": {"type": "string"},
+        "decision": {
+          "type": "string",
+          "enum": ["COMMIT", "DEFER", "REJECT", "DOWNGRADE_SCOPE", "REQUIRE_INDEPENDENT_REVIEW", "RETRACT_OR_SUPERSEDE", "DISCOVER", "BIND_EVIDENCE", "VALIDATE"]
+        },
+        "rationale": {"type": "string"},
+        "at": {"type": "string"}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "state": {"enum": ["commitment_candidate", "committed_current"]}
+        },
+        "required": ["state"]
+      },
+      "then": {
+        "required": ["claim_roles", "claim_digest", "review_decision"]
+      }
+    }
+  ]
+}

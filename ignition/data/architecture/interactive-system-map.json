@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.16.0",
+  "map_version": "0.17.0",
   "historical_map_version": "0.14.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整总架构图",
@@ -10,9 +10,9 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.7.0",
+    "component_registry_version": "2.8.0",
     "topology_version": "1.14.0",
-    "layout_version": "2.0.0"
+    "layout_version": "2.1.0"
   },
   "layout": {
     "columns": 3,
@@ -561,6 +561,30 @@
       "target": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
       "description": "将时间、注意力、资金、维护负荷与锁定风险纳入行动。",
       "lifecycle_status": "current"
+    },
+    {
+      "id": "symbolic_power_perspective_contract",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 合同",
+      "group": "governance",
+      "target": "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 contract with explicit repository reference records binding path, commit, blob, actual-byte SHA-256, record type, declared role and selected typed evidence object. Structured actor, meaning, power, face, distribution, counter-reading and material-evidence semantics replace caller-supplied pass booleans.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "symbolic_power_perspective_gate_validator",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 门禁",
+      "group": "governance",
+      "target": "tools/symbolic/validate_symbolic_power_perspective_gate.py",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 fail-closed CLI resolves local Git commits and tree entries, recomputes blob and SHA-256 integrity, checks actual object roles, and independently validates material objects, actors, meaning projections, allowed power modalities, distinct faces, benefit/cost distribution, counter-reading evidence, material downgrade, truth ceiling and causal ceiling with stable exits 0 and 2-20.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "symbolic_power_perspective_pilot",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 受控试点",
+      "group": "governance",
+      "target": "data/symbolic/pilot-symbolic-sphere-i1.json",
+      "description": "SYMBOLIC-SPHERE-I1 repository-local synthetic pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY. Twenty repair fixtures use ordinary data-integrity names and exercise real Git reference resolution plus task semantics; original manifest fixture paths remain compatibility artifacts. No external action or truth/causal upgrade.",
+      "lifecycle_status": "draft_candidate"
     },
     {
       "id": "external_input",
@@ -1710,8 +1734,8 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 104,
-    "visible_nodes": 87,
+    "registry_components": 107,
+    "visible_nodes": 90,
     "hidden_components": 17,
     "hidden_representatives": {
       "foundation_data": "foundation",

@@ -1,0 +1,20 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "failure_lineage_contract",
+    "failure_lineage_gate_validator",
+    "failure_lineage_pilot"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [
+    "analogy_audit_gate_validator",
+    "evidence_retrieval_gate_validator",
+    "evidence_retrieval_pilot",
+    "intervention_failure_gate_validator"
+  ],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}

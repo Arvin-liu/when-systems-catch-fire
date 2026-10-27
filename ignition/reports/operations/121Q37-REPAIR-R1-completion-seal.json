@@ -1,0 +1,60 @@
+{
+  "task_id": "121Q37-REPAIR-R1",
+  "status": "LOCAL_REPAIR_CANDIDATE_AWAITING_PUBLICATION_AND_INDEPENDENT_RE_REVIEW",
+  "method_version": "1.3.0",
+  "lifecycle": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "phase_b": {
+    "draft_pr": null,
+    "branch": "repair/121q37-r1-final-head-and-source-binding",
+    "base": "repair/121q36-int-r1-content-authority-binding",
+    "base_head": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+    "merge_commit": "186f747efa600c918a51378d8326525192024ee1",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "receipts/121Q37-REPAIR-R1.json",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_only: 121Q37-REPAIR-R1 locally addresses B06 by bind final checkout head, canonical Q34/Q35 claims, Q36 evidence bytes and mapping semantics. Repository-local builder evidence only; no independent review, remote check, external action, Accepted, Ready, Merged, Current or real-world authority claim."
+  },
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.2.0"
+  },
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "pending",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:live_refetch:NOT_CHECKED_LOCAL_ONLY"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
+  "propagation_closure": {
+    "closure_hash": "88296bab4992074a13ea71e8adf3c5ad9ff4901b0b60353332fc1737573b8329",
+    "closure_path": "data/operations/propagation/121Q37-REPAIR-R1-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

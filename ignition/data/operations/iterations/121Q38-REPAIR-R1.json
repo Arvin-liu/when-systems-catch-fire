@@ -1,0 +1,1170 @@
+{
+  "task_id": "121Q38-REPAIR-R1",
+  "method_version": "1.3.0",
+  "current_method_version": "1.3.0",
+  "change_classification": [
+    "REPAIR",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE"
+  ],
+  "verified_start": {
+    "main_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+    "source": "local Git history only; remote state NOT_CHECKED_LOCAL_ONLY",
+    "verified_at": "2026-07-22"
+  },
+  "branch_pr": {
+    "base": "repair/121q37-r1-final-head-and-source-binding",
+    "base_head": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+    "branch": "repair/121q38-r1-retrieved-byte-binding",
+    "draft": true,
+    "pr_number": null,
+    "merged": false,
+    "merge_commit": "64169682b7944a8de4de803caf209838bbe808cf"
+  },
+  "head_binding": {
+    "authority": "pull_request_body_and_1111_receipt",
+    "embedded_exact_current_head": false,
+    "explanation": "Local-only build cannot establish a remote PR or final external repair head.",
+    "live_refetch_required": true,
+    "mode": "external_exact_head_attestation",
+    "pr_number": null,
+    "receipt_path": "receipts/121Q38-REPAIR-R1.json"
+  },
+  "gap": {
+    "evidence": [
+      "original blocker B07 reproduced with the real local CLI",
+      "bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes"
+    ],
+    "smallest_material_action": "bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes",
+    "summary": "121Q38-REPAIR-R1 closes B07 locally and awaits publication and independent re-review."
+  },
+  "claim_ceiling": "candidate_only: 121Q38-REPAIR-R1 locally addresses B07 by bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes. Repository-local builder evidence only; no independent review, remote check, external action, Accepted, Ready, Merged, Current or real-world authority claim.",
+  "status": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "data/governance/",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/iterations/121Q38-REPAIR-R1.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q38-REPAIR-R1-closure.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q38-REPAIR-R1-impact-report.md",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q38-REPAIR-R1-request.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q38-REPAIR-R1-residue.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/operations/propagation/121Q38-REPAIR-R1-system-map-delta.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/01-valid-bounded-repository-pilot.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/02-schema-missing-plan.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/03-unaudited-q37-seed.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/04-support-only-query-plan.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/05-negative-result-deleted.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/06-duplicate-family-counted.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/07-unknown-rights-published.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/08-stale-time-sensitive-evidence.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/09-representativeness-missing.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/10-quantity-vote.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/11-mechanism-upgrade.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/12-stop-condition-rewritten.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/13-selective-negative-exclusion.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/14-claim-ceiling-overreach.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/15-bad-provenance-digest.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/16-selection-log-missing.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/17-q39-export-missing.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/18-counterevidence-overridden.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/19-future-as-of-time.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/20-unbounded-not-stopped.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/21-dangling-selection-evidence-ref.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/22-citation-only-body-publication.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/23-q37-wrong-permission.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/24-case-count-proves-truth.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/25-nonexistent-source-fabricated-head-bypass.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/26-actual-byte-digest-mismatch.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/27-wrong-exact-git-head.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/28-repository-path-traversal.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/29-retrieved-item-null-binding.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/fixtures/30-zero-placeholder-byte-digest.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "docs/retrieval/121Q38-repair-r1-architecture.md",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "reports/operations/121Q38-REPAIR-R1-completion-seal.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "schemas/retrieval/evidence-retrieval-contract.schema.json",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "tests/retrieval/test_evidence_retrieval_gate.py",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "tools/retrieval/build_q38_fixtures.py",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    },
+    {
+      "surface": "tools/retrieval/validate_evidence_retrieval_gate.py",
+      "decision": "CHANGE",
+      "reason": "121Q38-REPAIR-R1 source or deterministic synchronization surface."
+    }
+  ],
+  "changed_surfaces": [
+    "data/governance/",
+    "data/operations/iterations/121Q38-REPAIR-R1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q38-REPAIR-R1-closure.json",
+    "data/operations/propagation/121Q38-REPAIR-R1-impact-report.md",
+    "data/operations/propagation/121Q38-REPAIR-R1-request.json",
+    "data/operations/propagation/121Q38-REPAIR-R1-residue.json",
+    "data/operations/propagation/121Q38-REPAIR-R1-system-map-delta.json",
+    "data/retrieval/fixtures/01-valid-bounded-repository-pilot.json",
+    "data/retrieval/fixtures/02-schema-missing-plan.json",
+    "data/retrieval/fixtures/03-unaudited-q37-seed.json",
+    "data/retrieval/fixtures/04-support-only-query-plan.json",
+    "data/retrieval/fixtures/05-negative-result-deleted.json",
+    "data/retrieval/fixtures/06-duplicate-family-counted.json",
+    "data/retrieval/fixtures/07-unknown-rights-published.json",
+    "data/retrieval/fixtures/08-stale-time-sensitive-evidence.json",
+    "data/retrieval/fixtures/09-representativeness-missing.json",
+    "data/retrieval/fixtures/10-quantity-vote.json",
+    "data/retrieval/fixtures/11-mechanism-upgrade.json",
+    "data/retrieval/fixtures/12-stop-condition-rewritten.json",
+    "data/retrieval/fixtures/13-selective-negative-exclusion.json",
+    "data/retrieval/fixtures/14-claim-ceiling-overreach.json",
+    "data/retrieval/fixtures/15-bad-provenance-digest.json",
+    "data/retrieval/fixtures/16-selection-log-missing.json",
+    "data/retrieval/fixtures/17-q39-export-missing.json",
+    "data/retrieval/fixtures/18-counterevidence-overridden.json",
+    "data/retrieval/fixtures/19-future-as-of-time.json",
+    "data/retrieval/fixtures/20-unbounded-not-stopped.json",
+    "data/retrieval/fixtures/21-dangling-selection-evidence-ref.json",
+    "data/retrieval/fixtures/22-citation-only-body-publication.json",
+    "data/retrieval/fixtures/23-q37-wrong-permission.json",
+    "data/retrieval/fixtures/24-case-count-proves-truth.json",
+    "data/retrieval/fixtures/25-nonexistent-source-fabricated-head-bypass.json",
+    "data/retrieval/fixtures/26-actual-byte-digest-mismatch.json",
+    "data/retrieval/fixtures/27-wrong-exact-git-head.json",
+    "data/retrieval/fixtures/28-repository-path-traversal.json",
+    "data/retrieval/fixtures/29-retrieved-item-null-binding.json",
+    "data/retrieval/fixtures/30-zero-placeholder-byte-digest.json",
+    "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+    "docs/project-current-state.md",
+    "docs/retrieval/121Q38-repair-r1-architecture.md",
+    "reports/operations/121Q38-REPAIR-R1-completion-seal.json",
+    "schemas/retrieval/evidence-retrieval-contract.schema.json",
+    "tests/retrieval/test_evidence_retrieval_gate.py",
+    "tools/retrieval/build_q38_fixtures.py",
+    "tools/retrieval/validate_evidence_retrieval_gate.py"
+  ],
+  "validation": {
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    },
+    "local": [
+      {
+        "name": "repair_capability_and_attack_tests",
+        "status": "PASS",
+        "evidence": "tests/retrieval/test_evidence_retrieval_gate.py: 6 passed across 30 CLI fixtures; Q34-Q38 regression: 172 passed"
+      },
+      {
+        "name": "direct_predecessor_regression",
+        "status": "PASS",
+        "evidence": "local test record in repair receipt"
+      },
+      {
+        "name": "repair_propagation",
+        "status": "PASS",
+        "evidence": "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+      }
+    ],
+    "remote": []
+  },
+  "rollback_strategy": "Use a future ordinary revert only; never rewrite original/repair frozen heads, Main, tags or receipts.",
+  "remaining_limitations": [
+    "Builder implemented and tested the repair but did not independently review it.",
+    "Remote branch, tag, Draft PR, CI and 1111 publication are NOT_CHECKED_LOCAL_ONLY and not executed.",
+    "Exact local head and annotated tag are added only after this manifest commit."
+  ],
+  "receipt_location": "receipts/121Q38-REPAIR-R1.json",
+  "completion_seal_path": "reports/operations/121Q38-REPAIR-R1-completion-seal.json",
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "state_transition": {
+    "changed_dimensions": [
+      "capability",
+      "governance",
+      "usage"
+    ],
+    "maximum_claim_boundary": "candidate_only: 121Q38-REPAIR-R1 locally addresses B07 by bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes. Repository-local builder evidence only; no independent review, remote check, external action, Accepted, Ready, Merged, Current or real-world authority claim.",
+    "prior_state": "original frozen candidate 312a3282381bd0cb6dcc5fa629cbd058eacd9a56 with B07",
+    "proposed_state": "121q38-repair-r1_local_candidate_awaiting_publication_and_independent_re_review",
+    "source_refs": [
+      "data/operations/propagation/121Q38-REPAIR-R1-request.json",
+      "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+    ],
+    "subjects": [
+      "121Q38-REPAIR-R1"
+    ]
+  },
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.2.0",
+    "surface_decisions": [
+      {
+        "surface_id": "agent.handoff",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "ai.start",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "copyright_governance",
+        "decision": "CHANGE",
+        "reason": "Q38-I1 adds evidence-retrieval governance and candidate-state documentation.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "method.iteration",
+          "agent.handoff"
+        ]
+      },
+      {
+        "surface_id": "external.pages_homepage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "post_merge_external_render_attestation",
+        "derived_from": [
+          "human.readme",
+          "human.pages_source"
+        ]
+      },
+      {
+        "surface_id": "human.ai_guide",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.current_state",
+        "decision": "CHANGE",
+        "reason": "Q38-I1 adds evidence-retrieval governance and candidate-state documentation.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.pages_source",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "human.readme"
+        ]
+      },
+      {
+        "surface_id": "human.readme",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.summary",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.usage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "machine.llms",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.iteration",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_schema_and_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.result_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.review_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.task_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "release.changelog",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "release.versioning",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q38-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q38-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      }
+    ],
+    "unresolved_residue": [],
+    "external_attestations": [
+      {
+        "surface_id": "external.pages_homepage",
+        "stage": "post_merge",
+        "status": "pending",
+        "authority": "pull_request_body_and_1111_receipt",
+        "evidence_refs": [
+          "external:live_refetch:NOT_CHECKED_LOCAL_ONLY"
+        ],
+        "live_state_locally_verifiable": false
+      }
+    ],
+    "live_external_surfaces_verified": false,
+    "external_verification_policy": "NOT_CHECKED_LOCAL_ONLY"
+  },
+  "propagation_closure": {
+    "request_path": "data/operations/propagation/121Q38-REPAIR-R1-request.json",
+    "closure_path": "data/operations/propagation/121Q38-REPAIR-R1-closure.json",
+    "impact_report_path": "data/operations/propagation/121Q38-REPAIR-R1-impact-report.md",
+    "system_map_delta_path": "data/operations/propagation/121Q38-REPAIR-R1-system-map-delta.json",
+    "residue_path": "data/operations/propagation/121Q38-REPAIR-R1-residue.json",
+    "closure_hash": "19801bf1b481a3ecd658b68261d29d8ce7faa3610c25048c5bc2365128ec8d86",
+    "base_identity": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+    "head_identity": "external_exact_head_attestation",
+    "seed_paths": [
+      "data/operations/iterations/121Q38-REPAIR-R1.json",
+      "data/operations/project-components.json",
+      "data/operations/propagation/121Q38-REPAIR-R1-request.json",
+      "data/retrieval/fixtures/01-valid-bounded-repository-pilot.json",
+      "data/retrieval/fixtures/02-schema-missing-plan.json",
+      "data/retrieval/fixtures/03-unaudited-q37-seed.json",
+      "data/retrieval/fixtures/04-support-only-query-plan.json",
+      "data/retrieval/fixtures/05-negative-result-deleted.json",
+      "data/retrieval/fixtures/06-duplicate-family-counted.json",
+      "data/retrieval/fixtures/07-unknown-rights-published.json",
+      "data/retrieval/fixtures/08-stale-time-sensitive-evidence.json",
+      "data/retrieval/fixtures/09-representativeness-missing.json",
+      "data/retrieval/fixtures/10-quantity-vote.json",
+      "data/retrieval/fixtures/11-mechanism-upgrade.json",
+      "data/retrieval/fixtures/12-stop-condition-rewritten.json",
+      "data/retrieval/fixtures/13-selective-negative-exclusion.json",
+      "data/retrieval/fixtures/14-claim-ceiling-overreach.json",
+      "data/retrieval/fixtures/15-bad-provenance-digest.json",
+      "data/retrieval/fixtures/16-selection-log-missing.json",
+      "data/retrieval/fixtures/17-q39-export-missing.json",
+      "data/retrieval/fixtures/18-counterevidence-overridden.json",
+      "data/retrieval/fixtures/19-future-as-of-time.json",
+      "data/retrieval/fixtures/20-unbounded-not-stopped.json",
+      "data/retrieval/fixtures/21-dangling-selection-evidence-ref.json",
+      "data/retrieval/fixtures/22-citation-only-body-publication.json",
+      "data/retrieval/fixtures/23-q37-wrong-permission.json",
+      "data/retrieval/fixtures/24-case-count-proves-truth.json",
+      "data/retrieval/fixtures/25-nonexistent-source-fabricated-head-bypass.json",
+      "data/retrieval/fixtures/26-actual-byte-digest-mismatch.json",
+      "data/retrieval/fixtures/27-wrong-exact-git-head.json",
+      "data/retrieval/fixtures/28-repository-path-traversal.json",
+      "data/retrieval/fixtures/29-retrieved-item-null-binding.json",
+      "data/retrieval/fixtures/30-zero-placeholder-byte-digest.json",
+      "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "docs/retrieval/121Q38-repair-r1-architecture.md",
+      "reports/operations/121Q38-REPAIR-R1-completion-seal.json",
+      "schemas/retrieval/evidence-retrieval-contract.schema.json",
+      "tests/retrieval/test_evidence_retrieval_gate.py",
+      "tools/retrieval/build_q38_fixtures.py",
+      "tools/retrieval/validate_evidence_retrieval_gate.py"
+    ],
+    "seed_components": [
+      "evidence_retrieval_contract",
+      "evidence_retrieval_gate_validator",
+      "evidence_retrieval_pilot",
+      "historical_reports",
+      "iteration_manifest_contract",
+      "project_component_registry",
+      "propagation_calculator"
+    ],
+    "resolved_components": [
+      "evidence_retrieval_contract",
+      "evidence_retrieval_gate_validator",
+      "evidence_retrieval_pilot",
+      "historical_reports",
+      "iteration_manifest_contract",
+      "project_component_registry",
+      "propagation_calculator",
+      "system_map_projection"
+    ],
+    "typed_path_ids": [
+      "registry_generates_projection"
+    ],
+    "component_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "accepted_work",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_contract",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_gate_validator",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_pilot_q34",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai_guide",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "analogy_audit_contract",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "analogy_audit_gate_validator",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "analogy_audit_pilot",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "arn",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "candidate_return",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "case_source",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "charter",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_history_remediation",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_jurisdiction_registry",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_material_classification",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_non_republication_principle",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_publication_gate_validator",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_source_rights",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_tests",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "current_state",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_claim_contract",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_gate_validator",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_pilot_q33",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "evidence_retrieval_contract",
+        "reason": "121Q38-REPAIR-R1 closes B07: bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "evidence_retrieval_gate_validator",
+        "reason": "121Q38-REPAIR-R1 closes B07: bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "evidence_retrieval_pilot",
+        "reason": "121Q38-REPAIR-R1 closes B07: bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external_input",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "feedback_routes",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "foundation",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "foundation_data",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "function_os",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "historical_reports",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ignition_increment",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "incremental_execution",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "intervention_failure_contract",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "intervention_failure_gate_validator",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "intervention_failure_pilot",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration_manifest_contract",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l0",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l1",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l2",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l3",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l4",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l5",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l6",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "licensing",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "mcf",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_l7",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_totality_proof",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_truth_upgrade",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_contract",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_gate_validator",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_pilot_q34",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "pages_pipeline",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "point_fire_analysis",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "project_component_registry",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_calculator",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_topology",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "provenance_capture",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "psd",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "public_response",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q12",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q13",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q14",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "readme",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "showcase",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "showcase_registry",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "source_pool",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "summary",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "sustainability",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "sync",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_layout",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "system_map_projection",
+        "reason": "121Q38-REPAIR-R1 closes B07: bind Q37 seed and repository retrieval evidence to contained paths, exact Git objects and actual bytes."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "usage",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "zhiyuan_method",
+        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      }
+    ],
+    "surface_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent.handoff",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai.start",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "copyright_governance",
+        "reason": "Q38-I1 adds evidence-retrieval governance and candidate-state documentation."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external.pages_homepage",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.ai_guide",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.current_state",
+        "reason": "Q38-I1 adds evidence-retrieval governance and candidate-state documentation."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.pages_source",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.readme",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.summary",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.usage",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "machine.llms",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.iteration",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.result_template",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.review_template",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.task_template",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.changelog",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.versioning",
+        "reason": "Q38-I1 does not alter this synchronization surface."
+      }
+    ],
+    "registry_derived_surfaces": [
+      "agent.handoff",
+      "ai.start",
+      "copyright_governance",
+      "external.pages_homepage",
+      "human.ai_guide",
+      "human.current_state",
+      "human.pages_source",
+      "human.readme",
+      "human.summary",
+      "human.usage",
+      "machine.llms",
+      "method.iteration",
+      "release.changelog",
+      "release.versioning"
+    ],
+    "system_map_impact": {
+      "decision": "CHANGE",
+      "reason": "Three Q38 evidence-retrieval governance components are added to registry and layout.",
+      "delta_path": "data/operations/propagation/121Q38-REPAIR-R1-system-map-delta.json"
+    },
+    "unresolved_residue": [],
+    "closure_complete": true
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

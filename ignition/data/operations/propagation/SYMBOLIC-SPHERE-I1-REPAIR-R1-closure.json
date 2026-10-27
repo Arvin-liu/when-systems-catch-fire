@@ -1,0 +1,679 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "accepted_work",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_pilot_q34",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai_guide",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_pilot",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "arn",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "candidate_return",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "case_source",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_history_remediation",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_material_classification",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_non_republication_principle",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_publication_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_source_rights",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_tests",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "current_state",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_claim_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_pilot_q33",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_pilot",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external_input",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_pilot",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "feedback_routes",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation_data",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "function_os",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ignition_increment",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_pilot",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l0",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l1",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l2",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l3",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l4",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l5",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l6",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "licensing",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "mcf",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_l7",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_totality_proof",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_truth_upgrade",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_pilot_q34",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "point_fire_analysis",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_topology",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "provenance_capture",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "psd",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "public_response",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q12",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q13",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q14",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase_registry",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "source_pool",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "summary",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sustainability",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "symbolic_power_perspective_contract",
+      "reason": "SYMBOLIC-SPHERE repair-r1 enforces repository reference integrity and recomputed task semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "symbolic_power_perspective_gate_validator",
+      "reason": "SYMBOLIC-SPHERE repair-r1 enforces repository reference integrity and recomputed task semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "symbolic_power_perspective_pilot",
+      "reason": "SYMBOLIC-SPHERE repair-r1 enforces repository reference integrity and recomputed task semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "system_map_projection",
+      "reason": "SYMBOLIC-SPHERE repair-r1 enforces repository reference integrity and recomputed task semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "usage",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "zhiyuan_method",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this component semantics."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "The original SYMBOLIC-SPHERE candidate surface remains synchronized; repair-r1 changes integrity enforcement without a new capability claim."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "human.current_state",
+      "reason": "The original SYMBOLIC-SPHERE candidate surface remains synchronized; repair-r1 changes integrity enforcement without a new capability claim."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "SYMBOLIC-SPHERE repair-r1 does not alter this synchronization surface."
+    }
+  ],
+  "base_identity": "99ab601a48dd45972b238e468bc8e3002d648c98",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "213d6a5e7fdd94e685e73a6094350e1d77f163817ed8a4cbac3908bb5ff1b5e0",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 1,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "historical_reports",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "symbolic_power_perspective_contract",
+    "symbolic_power_perspective_gate_validator",
+    "symbolic_power_perspective_pilot",
+    "system_map_projection"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "historical_reports",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "symbolic_power_perspective_contract",
+    "symbolic_power_perspective_gate_validator",
+    "symbolic_power_perspective_pilot",
+    "system_map_projection"
+  ],
+  "seed_components": [
+    "historical_reports",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "symbolic_power_perspective_contract",
+    "symbolic_power_perspective_gate_validator",
+    "symbolic_power_perspective_pilot",
+    "system_map_projection"
+  ],
+  "seed_paths": [
+    "data/architecture/interactive-system-map.json",
+    "data/operations/iterations/SYMBOLIC-SPHERE-I1-REPAIR-R1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/SYMBOLIC-SPHERE-I1-REPAIR-R1-request.json",
+    "data/symbolic/fixtures/01-valid-exit00.json",
+    "data/symbolic/fixtures/02-missing_required_record-exit02.json",
+    "data/symbolic/fixtures/02-schema-exit02.json",
+    "data/symbolic/fixtures/03-parent-exit03.json",
+    "data/symbolic/fixtures/03-unresolved_repository_reference-exit04.json",
+    "data/symbolic/fixtures/04-blob_mismatch-exit05.json",
+    "data/symbolic/fixtures/04-evidence-exit04.json",
+    "data/symbolic/fixtures/05-digest_mismatch-exit06.json",
+    "data/symbolic/fixtures/05-rule-material_truth_separate-exit05.json",
+    "data/symbolic/fixtures/06-rule-ownership_not_truth-exit06.json",
+    "data/symbolic/fixtures/06-unsupported_reference_record_type-exit07.json",
+    "data/symbolic/fixtures/07-declared_role_mismatch-exit08.json",
+    "data/symbolic/fixtures/07-rule-popularity_not_truth-exit07.json",
+    "data/symbolic/fixtures/08-rule-institution_not_fact-exit08.json",
+    "data/symbolic/fixtures/08-unsupported_record_type-exit09.json",
+    "data/symbolic/fixtures/09-inconsistent_actor_position-exit10.json",
+    "data/symbolic/fixtures/09-rule-all_actors_present-exit09.json",
+    "data/symbolic/fixtures/10-inconsistent_meaning_projection-exit11.json",
+    "data/symbolic/fixtures/10-rule-costs_visible-exit10.json",
+    "data/symbolic/fixtures/11-rule-intent_effect_separate-exit11.json",
+    "data/symbolic/fixtures/11-unsupported_power_modality-exit12.json",
+    "data/symbolic/fixtures/12-invalid_face_distinction-exit13.json",
+    "data/symbolic/fixtures/12-rule-interpretive_power_not_legitimacy-exit12.json",
+    "data/symbolic/fixtures/13-incomplete_benefit_cost_distribution-exit14.json",
+    "data/symbolic/fixtures/13-rule-no_causal_totalization-exit13.json",
+    "data/symbolic/fixtures/14-invalid_counter_reading-exit15.json",
+    "data/symbolic/fixtures/14-rule-history_append_only-exit14.json",
+    "data/symbolic/fixtures/15-missing_material_evidence-exit16.json",
+    "data/symbolic/fixtures/15-rule-evidence_constrained-exit15.json",
+    "data/symbolic/fixtures/16-rule-claim_ceiling_preserved-exit16.json",
+    "data/symbolic/fixtures/16-truth_upgrade_forbidden-exit17.json",
+    "data/symbolic/fixtures/17-causal_overclaim-exit18.json",
+    "data/symbolic/fixtures/17-rule-material_truth_separate-exit05.json",
+    "data/symbolic/fixtures/18-placeholder_repository_reference-exit04.json",
+    "data/symbolic/fixtures/18-rule-ownership_not_truth-exit06.json",
+    "data/symbolic/fixtures/19-external_action_forbidden-exit19.json",
+    "data/symbolic/fixtures/19-rule-popularity_not_truth-exit07.json",
+    "data/symbolic/fixtures/20-invalid_symbolic_object-exit20.json",
+    "data/symbolic/fixtures/20-rule-institution_not_fact-exit08.json",
+    "data/symbolic/fixtures/21-rule-all_actors_present-exit09.json",
+    "data/symbolic/fixtures/22-rule-costs_visible-exit10.json",
+    "data/symbolic/fixtures/23-ceiling-exit20.json",
+    "data/symbolic/fixtures/24-external-action-exit21.json",
+    "data/symbolic/pilot-symbolic-sphere-i1.json",
+    "data/symbolic/symbolic-evidence-object-registry.json",
+    "docs/symbolic/symbolic-sphere-i1-architecture-decision.md",
+    "docs/symbolic/symbolic-sphere-i1-boundary-matrix.json",
+    "docs/symbolic/symbolic-sphere-i1-interfaces.md",
+    "pages/generated/ignition-system-map.svg",
+    "reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-completion-seal.json",
+    "reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.json",
+    "reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md",
+    "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
+    "tests/symbolic/test_symbolic_power_perspective_gate.py",
+    "tools/symbolic/build_symbolic-sphere-i1_fixtures.py",
+    "tools/symbolic/validate_symbolic_power_perspective_gate.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [
+      "symbolic_power_perspective_contract",
+      "symbolic_power_perspective_gate_validator",
+      "symbolic_power_perspective_pilot"
+    ],
+    "changed_edges": [],
+    "changed_nodes": [
+      "analogy_audit_gate_validator",
+      "evidence_retrieval_gate_validator",
+      "evidence_retrieval_pilot",
+      "failure_lineage_gate_validator",
+      "failure_lineage_pilot",
+      "intervention_failure_gate_validator"
+    ],
+    "decision": "CHANGE",
+    "reason": "Three SYMBOLIC-SPHERE components are present relative to the Q39 repair-r1 base; repair-r1 changes no additional map identity.",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "SYMBOLIC-SPHERE-I1-REPAIR-R1",
+  "typed_paths": [
+    {
+      "claim_ceiling": "deterministic repository derivation",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "registry_generates_projection",
+      "source": "project_component_registry",
+      "target": "system_map_projection"
+    }
+  ]
+}

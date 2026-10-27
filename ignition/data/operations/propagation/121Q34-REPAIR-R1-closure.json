@@ -1,0 +1,253 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "CHANGE",
+      "item_id": "discovery_commitment_claim_contract",
+      "reason": "Contract adds immutable claim digest, actor roles and byte-bound review decision."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "discovery_commitment_gate_validator",
+      "reason": "Validator resolves commit/tree/blob/bytes and canonical actor authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "discovery_commitment_pilot_q33",
+      "reason": "Pilot and attacks bind real Git objects and external review identities."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "Repair seal records the candidate without changing historical report semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "Repair adds an instance but does not alter the manifest contract."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "No Pages behavior change."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "Only existing Q34 component path coverage expands; registry semantics stay unchanged."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "Repair closure is a generated instance; calculator semantics stay unchanged."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "No new visible component or layout change."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_projection",
+      "reason": "Existing Q34 nodes remain the complete visible projection."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "No Current handoff statement changes before independent re-review."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "No Current cold-start statement changes before independent re-review."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "Q34 commitment governance now verifies canonical claim bytes, Git objects, actual bytes and reviewer authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "Draft repair has no production Pages claim."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "No Current AI guide change is justified by a Draft repair."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "Q34 remains a non-Current Draft candidate pending independent re-review."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "Repair does not change Pages source or deploy production."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "Repair remains a Draft candidate and does not change the human front-door capability claim."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "Existing Q34 navigation remains accurate; repair internals do not add a new current capability."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "No current usage contract changes before independent re-review."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "No Current machine front-door change is justified."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "Repair follows but does not alter iteration method 1.3.0."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "No operation template change."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "Independent re-review remains external and no template changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "No operation template change."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "Draft repair history is carried by commits, PR and repair manifest rather than Current release notes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "Repair does not change project versioning."
+    }
+  ],
+  "base_identity": "06749dd118df7ade715b53f360e8177b09cdab49",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "780dccce268ee5cf8a11eee4086d4830703c58f3bb306be30e235fc7ef157a32",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 2,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "discovery_commitment_claim_contract",
+    "discovery_commitment_gate_validator",
+    "discovery_commitment_pilot_q33",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "discovery_commitment_claim_contract",
+    "discovery_commitment_gate_validator",
+    "discovery_commitment_pilot_q33",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "seed_components": [
+    "discovery_commitment_claim_contract",
+    "discovery_commitment_gate_validator",
+    "discovery_commitment_pilot_q33",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator"
+  ],
+  "seed_paths": [
+    "data/discovery/actor-authority-registry.json",
+    "data/discovery/claims/q33-seven-governance-components-current.json",
+    "data/discovery/evidence-resolvable-registry.json",
+    "data/discovery/fixtures/08-retraction-new-positive.json",
+    "data/discovery/fixtures/12-independent-review-bypass-reproduction.json",
+    "data/discovery/review-decisions/q33-current-main-independent-decision.json",
+    "data/operations/iterations/121Q34-REPAIR-R1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q34-REPAIR-R1-request.json",
+    "docs/discovery/121Q34-repair-r1-architecture.md",
+    "reports/operations/121Q34-REPAIR-R1-completion-seal.json",
+    "schemas/discovery/commitment-claim.schema.json",
+    "tests/discovery/test_commitment_gate.py",
+    "tools/discovery/validate_commitment_gate.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [],
+    "changed_edges": [],
+    "changed_nodes": [],
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "Repair changes enforcement inside existing Q34 nodes and adds no visible component.",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "121Q34-REPAIR-R1",
+  "typed_paths": [
+    {
+      "claim_ceiling": "deterministic repository derivation",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "registry_generates_projection",
+      "source": "project_component_registry",
+      "target": "system_map_projection"
+    }
+  ]
+}

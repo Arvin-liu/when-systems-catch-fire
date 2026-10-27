@@ -1,0 +1,101 @@
+{
+  "observations": [
+    {
+      "observation_id": "obs-q34-closure-drift-001",
+      "construct": "propagation_closure_drift_events",
+      "unit": "count",
+      "scale": "count",
+      "target_scope": "repository_main_iteration_q34",
+      "measurement_method": "deterministic validator re-run on frozen exact head",
+      "source_ref": "data/operations/propagation/121Q34-closure.json",
+      "sampling_window": {
+        "start": "2026-07-20T00:00:00Z",
+        "end": "2026-07-21T00:00:00Z"
+      },
+      "missingness_policy": "missing closure files counted as drift events, never dropped",
+      "noise_notes": "none; deterministic recompute",
+      "uncertainty": "deterministic measurement; residual uncertainty limited to validator version drift",
+      "provenance_refs": [
+        "data/operations/propagation/121Q34-closure.json",
+        "reports/operations/121Q34-completion-seal.json"
+      ],
+      "observed_at": "2026-07-21T00:00:00Z",
+      "available_at": "2026-07-21T06:00:00Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:43d53c46f730d38f0de86d0cd10672e77f810d78523942f304dce0f98aa19ea2",
+      "quality_status": "accepted"
+    }
+  ],
+  "predictions": [
+    {
+      "prediction_id": "pred-q34-closure-drift-001",
+      "normalized_target": "propagation_closure_drift_events::v1",
+      "forecast_horizon": "next_iteration_window",
+      "evaluation_window": {
+        "start": "2026-07-20T00:00:00Z",
+        "end": "2026-07-21T12:00:00Z"
+      },
+      "prediction_type": "interval",
+      "prediction_value": {
+        "kind": "interval",
+        "interval_lower": 0,
+        "interval_upper": 2,
+        "interval_confidence": 0.9
+      },
+      "model_rule_version": "deterministic-rule:closure-drift-heuristic:v1.0.0",
+      "input_snapshot_digest": "sha256:79ca843d6a08c69ffdad9ca503d1498052ed794d154ec3d319b7c6a0cf9d66d5",
+      "input_cutoff_time": "2026-07-20T23:59:59Z",
+      "evidence_refs": [
+        "data/operations/propagation/121Q34-closure.json",
+        "tools/operations/compute_change_propagation.py"
+      ],
+      "uncertainty": "interval width reflects limited historical sample; no causal claim",
+      "applicability_scope": "repository_main_iteration_q34 only",
+      "claim_ceiling": "this result establishes universal predictive capability over all repository iterations",
+      "q34_claim_ref": "q33.seven_governance_components.current_in_main",
+      "q35_actor_ref": "agent-b",
+      "q35_grant_ref": "grant-low-1",
+      "q35_trajectory_event_digest": "sha256:bc88d6c82c5086010f30fe1e97750db97de15239a87610d950b4c129040d007e",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:84cbc575f4e7f053250f3bf809bdce913dd959650129994b88ed44fd23842bb9",
+      "issued_at": "2026-07-20T12:00:00Z",
+      "supersession_policy": "post-reveal corrections only via new supersession record preserving this original",
+      "status": "frozen"
+    }
+  ],
+  "outcome_bindings": [
+    {
+      "binding_id": "bind-q34-closure-drift-001",
+      "prediction_id": "pred-q34-closure-drift-001",
+      "outcome_observation_id": "obs-q34-closure-drift-001",
+      "outcome_available_at": "2026-07-21T06:00:00Z",
+      "matching_rule": "normalized_target propagation_closure_drift_events::v1 matches construct propagation_closure_drift_events; evaluation_window intersects sampling_window; scope repository_main_iteration_q34",
+      "inclusion_status": "included",
+      "evaluator_ref": "deterministic:validator-q36-obs",
+      "independent_evidence_status": "independent",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:43d53c46f730d38f0de86d0cd10672e77f810d78523942f304dce0f98aa19ea2"
+    }
+  ],
+  "evaluations": [
+    {
+      "evaluation_id": "eval-q34-closure-drift-001",
+      "binding_id": "bind-q34-closure-drift-001",
+      "metrics": {
+        "interval_coverage": 1.0,
+        "interval_width": 2,
+        "residual_sign": "exact",
+        "residual_magnitude": 0
+      },
+      "sample_size": 1,
+      "scope_summary": "repository_main_iteration_q34 only; single deterministic outcome; no generalization beyond this scope",
+      "baseline_comparison": "naive zero-drift baseline also covers; prediction adds explicit uncertainty statement only",
+      "missing_or_abstained_outcomes": 0,
+      "computed_by": "deterministic:validator-q36-obs",
+      "computation_method": "interval-coverage:v1 (deterministic set membership)",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:84cbc575f4e7f053250f3bf809bdce913dd959650129994b88ed44fd23842bb9"
+    }
+  ],
+  "residuals": []
+}

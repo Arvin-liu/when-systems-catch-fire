@@ -1,0 +1,564 @@
+{
+  "task_id": "121Q39",
+  "request_version": "1.0.0",
+  "base_identity": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+  "head_identity": "external_exact_head_attestation",
+  "change_classifications": [
+    "CAPABILITY_ADDITION",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE"
+  ],
+  "changed_dimensions": [
+    "capability",
+    "governance",
+    "usage"
+  ],
+  "changed_paths": [
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "data/failure/fixtures/01-valid-pilot.json",
+    "data/failure/fixtures/02-schema-missing-sources.json",
+    "data/failure/fixtures/03-hash-chain-broken.json",
+    "data/failure/fixtures/04-history-overwritten.json",
+    "data/failure/fixtures/05-causal-overclaim.json",
+    "data/failure/fixtures/06-unconditional-retry.json",
+    "data/failure/fixtures/07-repair-unapplied.json",
+    "data/failure/fixtures/08-failure-no-plan-effect.json",
+    "data/failure/fixtures/09-retracted-drives-action.json",
+    "data/failure/fixtures/10-environment-as-model.json",
+    "data/failure/fixtures/11-negative-deleted.json",
+    "data/failure/fixtures/12-exact-head-mismatch.json",
+    "data/failure/fixtures/13-supersession-missing.json",
+    "data/failure/fixtures/14-ceiling-overreach.json",
+    "data/failure/fixtures/15-success-overwrites-failure.json",
+    "data/failure/fixtures/16-unknown-cause-proven.json",
+    "data/failure/fixtures/17-repeat-unchanged-action.json",
+    "data/failure/fixtures/18-propagation-target-missing.json",
+    "data/failure/fixtures/19-failure-archived-only.json",
+    "data/failure/fixtures/20-retracted-action-reused.json",
+    "data/failure/fixtures/21-environment-theory-failure.json",
+    "data/failure/fixtures/22-negative-rewritten-missing.json",
+    "data/failure/fixtures/23-source-binding-missing.json",
+    "data/failure/fixtures/24-closed-with-residue.json",
+    "data/failure/pilot-q39-failure-lineage.json",
+    "data/operations/component-execution-profiles.json",
+    "data/operations/iterations/121Q39.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q39-closure.json",
+    "data/operations/propagation/121Q39-impact-report.md",
+    "data/operations/propagation/121Q39-request.json",
+    "data/operations/propagation/121Q39-residue.json",
+    "data/operations/propagation/121Q39-system-map-delta.json",
+    "docs/failure/q39-i1-architecture-decision.md",
+    "docs/failure/q39-interfaces.md",
+    "docs/failure/q39-legacy-lab-salvage-matrix.json",
+    "docs/project-current-state.md",
+    "pages/generated/ignition-system-map.svg",
+    "reports/operations/121Q39-completion-seal.json",
+    "schemas/failure/failure-lineage-contract.schema.json",
+    "tests/failure/test_failure_lineage_gate.py",
+    "tests/test_human_front_door.py",
+    "tools/failure/build_q39_fixtures.py",
+    "tools/failure/validate_failure_lineage_gate.py",
+    "tools/validate_human_front_door.py"
+  ],
+  "state_transition_subjects": [
+    "append-only failure lineage",
+    "repair propagation and prohibited retry",
+    "recurrence and claim-ceiling impact"
+  ],
+  "surface_decisions": [
+    {
+      "item_id": "human.readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.pages_source",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "external.pages_homepage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.current_state",
+      "decision": "CHANGE",
+      "reason": "121Q39-I1 adds append-only failure-lineage governance and candidate-state documentation."
+    },
+    {
+      "item_id": "human.summary",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.usage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.ai_guide",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "ai.start",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "agent.handoff",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "machine.llms",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "release.changelog",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "release.versioning",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.task_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.result_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.review_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "copyright_governance",
+      "decision": "CHANGE",
+      "reason": "121Q39-I1 adds append-only failure-lineage governance and candidate-state documentation."
+    }
+  ],
+  "component_decisions": [
+    {
+      "item_id": "accepted_work",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "ai_guide",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "arn",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "candidate_return",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "case_source",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "charter",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "current_state",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "external_input",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "feedback_routes",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "foundation",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "foundation_data",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "function_os",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "historical_reports",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "ignition_increment",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "incremental_execution",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "iteration_manifest_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "l0",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "l1",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "l2",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "l3",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "l4",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "l5",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "l6",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "licensing",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "mcf",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "no_l7",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "no_totality_proof",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "no_truth_upgrade",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "pages_pipeline",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "point_fire_analysis",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "project_component_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "propagation_calculator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "propagation_topology",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "provenance_capture",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "psd",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "public_response",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "q12",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "q13",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "q14",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "showcase",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "showcase_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "source_pool",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "summary",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "sustainability",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "sync",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "system_map",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "system_map_layout",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "system_map_projection",
+      "decision": "CHANGE",
+      "reason": "121Q39-I1 new or synchronized component: system_map_projection"
+    },
+    {
+      "item_id": "usage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "zhiyuan_method",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_source_rights",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_material_classification",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_history_remediation",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_publication_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_non_republication_principle",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_tests",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "discovery_commitment_claim_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "discovery_commitment_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "discovery_commitment_pilot_q33",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "agent_responsibility_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "agent_responsibility_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "agent_responsibility_pilot_q34",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "observation_prediction_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "observation_prediction_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "observation_prediction_pilot_q34",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "intervention_failure_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "intervention_failure_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "intervention_failure_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "analogy_audit_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "analogy_audit_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "analogy_audit_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "evidence_retrieval_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "evidence_retrieval_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "evidence_retrieval_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "121Q39-I1 failure-lineage governance does not alter this component semantics."
+    },
+    {
+      "item_id": "failure_lineage_contract",
+      "decision": "CHANGE",
+      "reason": "121Q39-I1 new or synchronized component: failure_lineage_contract"
+    },
+    {
+      "item_id": "failure_lineage_gate_validator",
+      "decision": "CHANGE",
+      "reason": "121Q39-I1 new or synchronized component: failure_lineage_gate_validator"
+    },
+    {
+      "item_id": "failure_lineage_pilot",
+      "decision": "CHANGE",
+      "reason": "121Q39-I1 new or synchronized component: failure_lineage_pilot"
+    }
+  ],
+  "system_map_decision": {
+    "decision": "CHANGE",
+    "item_id": "interactive_system_map",
+    "reason": "Three Q39 failure-lineage governance components are added to registry and layout."
+  }
+}

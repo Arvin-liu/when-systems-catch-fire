@@ -1,0 +1,18 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "evidence_retrieval_contract",
+    "evidence_retrieval_gate_validator",
+    "evidence_retrieval_pilot"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [
+    "analogy_audit_gate_validator",
+    "intervention_failure_gate_validator"
+  ],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}

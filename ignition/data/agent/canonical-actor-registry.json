@@ -1,0 +1,12 @@
+{
+  "schema_version": "q35-canonical-actor-registry-v1",
+  "actors": [
+    {"actor_id": "zhiyuan", "actor_kind": "human_principal", "status": "active", "scopes": ["repository"]},
+    {"actor_id": "agent-a", "actor_kind": "builder_agent", "status": "active", "scopes": ["repository"]},
+    {"actor_id": "agent-b", "actor_kind": "executor_agent", "status": "active", "scopes": ["repository"]},
+    {"actor_id": "reviewer-c", "actor_kind": "deterministic_verifier", "status": "active", "scopes": ["repository"]},
+    {"actor_id": "q35-builder", "actor_kind": "builder_agent", "status": "active", "scopes": ["repository"]},
+    {"actor_id": "q35-executor", "actor_kind": "executor_agent", "status": "active", "scopes": ["repository"]},
+    {"actor_id": "q35-verifier", "actor_kind": "deterministic_verifier", "status": "active", "scopes": ["repository"]}
+  ]
+}

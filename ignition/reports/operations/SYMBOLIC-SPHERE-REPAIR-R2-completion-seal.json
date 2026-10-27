@@ -1,0 +1,14 @@
+{
+  "seal_id": "SYMBOLIC-SPHERE-REPAIR-R2-SEAL",
+  "task_id": "SYMBOLIC-SPHERE-R2",
+  "branch": "repair-r2/symbolic-sphere-r2-shared-engine-hardening",
+  "exact_head": "94e0e14a7649e4432528c0e9ae4e51172d1ad0ac",
+  "annotated_tag": "archive/symbolic-sphere-repair-r2-frozen-head",
+  "closure_complete": true,
+  "residue": 0,
+  "validation": "BUILDER_VALIDATION_PASS",
+  "independent_accepted": false,
+  "sealed_at": "2026-07-23T01:13:00+08:00",
+  "sealed_by": "WorkBuddy night-shift main session (云天明)",
+  "statement": "Shared fail-closed engine hardened: path containment, mandatory git-object binding, exact-head resolution, and caller-asserted-semantics recomputation. Propagates to 9 consumers via stacked merges."
+}

@@ -1,0 +1,196 @@
+{
+  "task_id": "121Q34",
+  "request_version": "1.0.0",
+  "base_identity": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+  "head_identity": "external_exact_head_attestation",
+  "change_classifications": [
+    "CAPABILITY_ADDITION",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE"
+  ],
+  "changed_dimensions": [
+    "capability",
+    "governance",
+    "usage"
+  ],
+  "changed_paths": [
+    "schemas/discovery/commitment-claim.schema.json",
+    "tools/discovery/validate_commitment_gate.py",
+    "tools/discovery/validate_commitment_registry.py",
+    "tools/discovery/__init__.py",
+    "tests/discovery/__init__.py",
+    "tests/discovery/test_commitment_gate.py",
+    "data/discovery/claims/q33-seven-governance-components-current.json",
+    "data/discovery/evidence-resolvable-registry.json",
+    "data/discovery/fixtures/01-allow-commit-positive.json",
+    "data/discovery/fixtures/02-premature-no-evidence.json",
+    "data/discovery/fixtures/03-circular-self-proof.json",
+    "data/discovery/fixtures/04-claim-ceiling-breach.json",
+    "data/discovery/fixtures/05-analogy-as-mechanism.json",
+    "data/discovery/fixtures/06-stale-exact-head.json",
+    "data/discovery/fixtures/07-selective-reporting.json",
+    "data/discovery/fixtures/08-retraction-new-positive.json",
+    "data/discovery/fixtures/09-uncommitted-path-deferred.json",
+    "data/discovery/fixtures/10-q33-global-compliance-breach.json",
+    "data/discovery/fixtures/11-external-world-no-attestation.json",
+    "docs/discovery/discovery-commitment-boundary.md",
+    "docs/discovery/discovery-commitment-boundary-architecture.md",
+    "docs/discovery/q34-legacy-lab-salvage-matrix.json",
+    "data/operations/project-components.json",
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "pages/generated/ignition-system-map.svg",
+    "data/operations/iterations/121Q34.json",
+    "reports/operations/121Q34-completion-seal.json",
+    "data/operations/propagation/121Q34-request.json"
+  ],
+  "state_transition_subjects": [
+    "discovery-commitment boundary",
+    "verifiable commitment gate",
+    "Q33 current-state pilot"
+  ],
+  "surface_decisions": [
+    {
+      "item_id": "human.readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "README capability note covers Q34; no separate readme change"
+    },
+    {
+      "item_id": "human.pages_source",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 does not alter pages source"
+    },
+    {
+      "item_id": "external.pages_homepage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 is a Draft candidate; no production pages change claimed"
+    },
+    {
+      "item_id": "human.current_state",
+      "decision": "CHANGE",
+      "reason": "Record Q34 as started candidate (Q33 Current/Closed; Q35-Q40 not started)"
+    },
+    {
+      "item_id": "human.summary",
+      "decision": "CHANGE",
+      "reason": "Record Q34 discovery-commitment capability"
+    },
+    {
+      "item_id": "human.usage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 candidate does not change usage surface"
+    },
+    {
+      "item_id": "human.ai_guide",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 candidate does not change AI guide"
+    },
+    {
+      "item_id": "ai.start",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 candidate does not change AI start"
+    },
+    {
+      "item_id": "agent.handoff",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 candidate does not change handoff"
+    },
+    {
+      "item_id": "machine.llms",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 candidate does not change llms.txt"
+    },
+    {
+      "item_id": "release.changelog",
+      "decision": "CHANGE",
+      "reason": "Record Q34 discovery-commitment boundary candidate"
+    },
+    {
+      "item_id": "release.versioning",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 candidate does not change versioning"
+    },
+    {
+      "item_id": "method.iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 uses existing iteration method"
+    },
+    {
+      "item_id": "method.task_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 uses existing task template"
+    },
+    {
+      "item_id": "method.result_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 uses existing result template"
+    },
+    {
+      "item_id": "method.review_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 uses existing review template"
+    },
+    {
+      "item_id": "copyright_governance",
+      "decision": "CHANGE",
+      "reason": "Q34 adds discovery-commitment governance components to the governance surface"
+    }
+  ],
+  "component_decisions": [
+    {
+      "item_id": "discovery_commitment_claim_contract",
+      "decision": "CHANGE",
+      "reason": "Q34 new governance component: typed claim/proposition contract"
+    },
+    {
+      "item_id": "discovery_commitment_gate_validator",
+      "decision": "CHANGE",
+      "reason": "Q34 new governance component: fail-closed commitment gate validator"
+    },
+    {
+      "item_id": "discovery_commitment_pilot_q33",
+      "decision": "CHANGE",
+      "reason": "Q34 new governance component: Q33 current-state pilot claim"
+    },
+    {
+      "item_id": "historical_reports",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "iteration_manifest_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "pages_pipeline",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "project_component_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "propagation_calculator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "system_map_layout",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "system_map_projection",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    }
+  ],
+  "system_map_decision": {
+    "decision": "CHANGE",
+    "item_id": "interactive_system_map",
+    "reason": "New discovery governance components added to project-component registry and topology"
+  }
+}

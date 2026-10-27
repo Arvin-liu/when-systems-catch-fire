@@ -1,0 +1,524 @@
+{
+  "contract_version": "1.1.0",
+  "task_id": "SYMBOLIC-SPHERE-I1",
+  "capability_id": "symbolic_power_perspective",
+  "parent_binding": {
+    "task_id": "121Q39-REPAIR-R1",
+    "exact_head": "99ab601a48dd45972b238e468bc8e3002d648c98"
+  },
+  "reference_records": [
+    {
+      "reference_id": "ref.community.material_object",
+      "repository_relative_path": "../outside.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "MATERIAL_OBJECT",
+      "object_id": "community_field.material_object"
+    },
+    {
+      "reference_id": "ref.community.actor.council",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "ACTOR",
+      "object_id": "community_field.actor.council"
+    },
+    {
+      "reference_id": "ref.community.actor.players",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "ACTOR",
+      "object_id": "community_field.actor.players"
+    },
+    {
+      "reference_id": "ref.community.actor.neighbours",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "ACTOR",
+      "object_id": "community_field.actor.neighbours"
+    },
+    {
+      "reference_id": "ref.community.material_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "MATERIAL_EVIDENCE",
+      "object_id": "community_field.material_evidence"
+    },
+    {
+      "reference_id": "ref.community.meaning_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "MEANING_EVIDENCE",
+      "object_id": "community_field.meaning_evidence"
+    },
+    {
+      "reference_id": "ref.community.power_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "POWER_EVIDENCE",
+      "object_id": "community_field.power_evidence"
+    },
+    {
+      "reference_id": "ref.community.face_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "FACE_EVIDENCE",
+      "object_id": "community_field.face_evidence"
+    },
+    {
+      "reference_id": "ref.community.distribution_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "DISTRIBUTION_EVIDENCE",
+      "object_id": "community_field.distribution_evidence"
+    },
+    {
+      "reference_id": "ref.community.counter_reading_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "COUNTER_READING_EVIDENCE",
+      "object_id": "community_field.counter_reading_evidence"
+    },
+    {
+      "reference_id": "ref.school.material_object",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "MATERIAL_OBJECT",
+      "object_id": "school_policy.material_object"
+    },
+    {
+      "reference_id": "ref.school.actor.school",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "ACTOR",
+      "object_id": "school_policy.actor.school"
+    },
+    {
+      "reference_id": "ref.school.actor.students",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "ACTOR",
+      "object_id": "school_policy.actor.students"
+    },
+    {
+      "reference_id": "ref.school.actor.families",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "ACTOR",
+      "object_id": "school_policy.actor.families"
+    },
+    {
+      "reference_id": "ref.school.material_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "MATERIAL_EVIDENCE",
+      "object_id": "school_policy.material_evidence"
+    },
+    {
+      "reference_id": "ref.school.meaning_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "MEANING_EVIDENCE",
+      "object_id": "school_policy.meaning_evidence"
+    },
+    {
+      "reference_id": "ref.school.power_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "POWER_EVIDENCE",
+      "object_id": "school_policy.power_evidence"
+    },
+    {
+      "reference_id": "ref.school.face_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "FACE_EVIDENCE",
+      "object_id": "school_policy.face_evidence"
+    },
+    {
+      "reference_id": "ref.school.distribution_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "DISTRIBUTION_EVIDENCE",
+      "object_id": "school_policy.distribution_evidence"
+    },
+    {
+      "reference_id": "ref.school.counter_reading_evidence",
+      "repository_relative_path": "data/symbolic/symbolic-evidence-object-registry.json",
+      "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
+      "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
+      "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
+      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "declared_role": "COUNTER_READING_EVIDENCE",
+      "object_id": "school_policy.counter_reading_evidence"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "analysis.community_field",
+      "record_type": "COMMUNITY_FOOTBALL_FIELD",
+      "symbolic_object_ref": "ref.community.material_object",
+      "actor_positions": [
+        {
+          "position_id": "community.position.council",
+          "actor_ref": "ref.community.actor.council",
+          "stance": "Official stewardship and scheduling",
+          "evidence_refs": [
+            "ref.community.meaning_evidence"
+          ]
+        },
+        {
+          "position_id": "community.position.players",
+          "actor_ref": "ref.community.actor.players",
+          "stance": "Belonging through repeated use",
+          "evidence_refs": [
+            "ref.community.meaning_evidence"
+          ]
+        },
+        {
+          "position_id": "community.position.neighbours",
+          "actor_ref": "ref.community.actor.neighbours",
+          "stance": "Unequal noise and access costs",
+          "evidence_refs": [
+            "ref.community.meaning_evidence"
+          ]
+        }
+      ],
+      "meaning_projections": [
+        {
+          "projection_id": "community.meaning.council",
+          "actor_position_id": "community.position.council",
+          "symbolic_object_ref": "ref.community.material_object",
+          "statement": "The field represents managed community provision.",
+          "evidence_refs": [
+            "ref.community.meaning_evidence"
+          ]
+        },
+        {
+          "projection_id": "community.meaning.players",
+          "actor_position_id": "community.position.players",
+          "symbolic_object_ref": "ref.community.material_object",
+          "statement": "The field represents belonging and shared play.",
+          "evidence_refs": [
+            "ref.community.meaning_evidence"
+          ]
+        },
+        {
+          "projection_id": "community.meaning.neighbours",
+          "actor_position_id": "community.position.neighbours",
+          "symbolic_object_ref": "ref.community.material_object",
+          "statement": "The field represents costs imposed without equal voice.",
+          "evidence_refs": [
+            "ref.community.meaning_evidence"
+          ]
+        }
+      ],
+      "power_modalities": [
+        {
+          "modality": "ACCESS_CONTROL",
+          "actor_position_id": "community.position.council",
+          "statement": "The council controls the booking window.",
+          "evidence_refs": [
+            "ref.community.power_evidence"
+          ]
+        },
+        {
+          "modality": "NAMING_AUTHORITY",
+          "actor_position_id": "community.position.council",
+          "statement": "The council supplies the official community label, which does not establish truth.",
+          "evidence_refs": [
+            "ref.community.power_evidence"
+          ]
+        },
+        {
+          "modality": "POPULARITY",
+          "actor_position_id": "community.position.players",
+          "statement": "Frequent use indicates popularity, not truth or legitimacy.",
+          "evidence_refs": [
+            "ref.community.power_evidence"
+          ]
+        }
+      ],
+      "front_face": {
+        "face_id": "community.face.front",
+        "statement": "A shared field visibly supports community play.",
+        "actor_position_ids": [
+          "community.position.council",
+          "community.position.players"
+        ],
+        "evidence_refs": [
+          "ref.community.face_evidence"
+        ]
+      },
+      "suppressed_face": {
+        "face_id": "community.face.suppressed",
+        "statement": "The same schedule can hide unequal noise and access costs.",
+        "actor_position_ids": [
+          "community.position.neighbours"
+        ],
+        "evidence_refs": [
+          "ref.community.face_evidence"
+        ]
+      },
+      "benefit_cost_distribution": {
+        "beneficiaries": [
+          {
+            "actor_position_id": "community.position.players",
+            "effect": "Receives scheduled access and a public belonging narrative.",
+            "evidence_refs": [
+              "ref.community.distribution_evidence"
+            ]
+          }
+        ],
+        "cost_bearers": [
+          {
+            "actor_position_id": "community.position.neighbours",
+            "effect": "Bears bounded noise and reduced quiet-time access.",
+            "evidence_refs": [
+              "ref.community.distribution_evidence"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ref.community.distribution_evidence"
+        ]
+      },
+      "counter_readings": [
+        {
+          "counter_reading_id": "community.counter.unequal_access",
+          "target_projection_id": "community.meaning.players",
+          "statement": "Belonging for frequent users can coexist with exclusion and shifted costs.",
+          "evidence_refs": [
+            "ref.community.counter_reading_evidence"
+          ]
+        }
+      ],
+      "material_evidence_constraint": {
+        "status": "SATISFIED",
+        "material_evidence_refs": [
+          "ref.community.material_evidence"
+        ],
+        "unmet_requirements": [],
+        "downgrade_claim_ceiling": "INSUFFICIENT_MATERIAL_EVIDENCE"
+      }
+    },
+    {
+      "record_id": "analysis.school_policy",
+      "record_type": "SCHOOL_DATA_POLICY",
+      "symbolic_object_ref": "ref.school.material_object",
+      "actor_positions": [
+        {
+          "position_id": "school.position.school",
+          "actor_ref": "ref.school.actor.school",
+          "stance": "Safety and administrative consistency",
+          "evidence_refs": [
+            "ref.school.meaning_evidence"
+          ]
+        },
+        {
+          "position_id": "school.position.students",
+          "actor_ref": "ref.school.actor.students",
+          "stance": "Classification and loss of agency",
+          "evidence_refs": [
+            "ref.school.meaning_evidence"
+          ]
+        },
+        {
+          "position_id": "school.position.families",
+          "actor_ref": "ref.school.actor.families",
+          "stance": "Oversight and correction burden",
+          "evidence_refs": [
+            "ref.school.meaning_evidence"
+          ]
+        }
+      ],
+      "meaning_projections": [
+        {
+          "projection_id": "school.meaning.school",
+          "actor_position_id": "school.position.school",
+          "symbolic_object_ref": "ref.school.material_object",
+          "statement": "The policy represents safety and consistent administration.",
+          "evidence_refs": [
+            "ref.school.meaning_evidence"
+          ]
+        },
+        {
+          "projection_id": "school.meaning.students",
+          "actor_position_id": "school.position.students",
+          "symbolic_object_ref": "ref.school.material_object",
+          "statement": "The policy represents classification and reduced agency.",
+          "evidence_refs": [
+            "ref.school.meaning_evidence"
+          ]
+        },
+        {
+          "projection_id": "school.meaning.families",
+          "actor_position_id": "school.position.families",
+          "symbolic_object_ref": "ref.school.material_object",
+          "statement": "The policy represents oversight coupled to correction work.",
+          "evidence_refs": [
+            "ref.school.meaning_evidence"
+          ]
+        }
+      ],
+      "power_modalities": [
+        {
+          "modality": "INSTITUTIONAL_AUTHORITY",
+          "actor_position_id": "school.position.school",
+          "statement": "The school can adopt the policy, but institutional adoption does not make classifications factual.",
+          "evidence_refs": [
+            "ref.school.power_evidence"
+          ]
+        },
+        {
+          "modality": "NAMING_AUTHORITY",
+          "actor_position_id": "school.position.school",
+          "statement": "The official safety label does not establish truth.",
+          "evidence_refs": [
+            "ref.school.power_evidence"
+          ]
+        },
+        {
+          "modality": "OWNERSHIP",
+          "actor_position_id": "school.position.school",
+          "statement": "Administrative custody is recorded without treating ownership as truth.",
+          "evidence_refs": [
+            "ref.school.power_evidence"
+          ]
+        }
+      ],
+      "front_face": {
+        "face_id": "school.face.front",
+        "statement": "The policy visibly promises safety and consistency.",
+        "actor_position_ids": [
+          "school.position.school"
+        ],
+        "evidence_refs": [
+          "ref.school.face_evidence"
+        ]
+      },
+      "suppressed_face": {
+        "face_id": "school.face.suppressed",
+        "statement": "The same policy can hide classification errors and correction costs.",
+        "actor_position_ids": [
+          "school.position.students",
+          "school.position.families"
+        ],
+        "evidence_refs": [
+          "ref.school.face_evidence"
+        ]
+      },
+      "benefit_cost_distribution": {
+        "beneficiaries": [
+          {
+            "actor_position_id": "school.position.school",
+            "effect": "Receives a standardized administration and safety narrative.",
+            "evidence_refs": [
+              "ref.school.distribution_evidence"
+            ]
+          }
+        ],
+        "cost_bearers": [
+          {
+            "actor_position_id": "school.position.students",
+            "effect": "Bears classification and access consequences.",
+            "evidence_refs": [
+              "ref.school.distribution_evidence"
+            ]
+          },
+          {
+            "actor_position_id": "school.position.families",
+            "effect": "Bears notice review and correction work.",
+            "evidence_refs": [
+              "ref.school.distribution_evidence"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ref.school.distribution_evidence"
+        ]
+      },
+      "counter_readings": [
+        {
+          "counter_reading_id": "school.counter.proportionality",
+          "target_projection_id": "school.meaning.school",
+          "statement": "A safety label alone does not establish proportionality, accuracy, or truth.",
+          "evidence_refs": [
+            "ref.school.counter_reading_evidence"
+          ]
+        }
+      ],
+      "material_evidence_constraint": {
+        "status": "SATISFIED",
+        "material_evidence_refs": [
+          "ref.school.material_evidence"
+        ],
+        "unmet_requirements": [],
+        "downgrade_claim_ceiling": "INSUFFICIENT_MATERIAL_EVIDENCE"
+      }
+    }
+  ],
+  "conclusion": {
+    "analysis_status": "BOUNDED_INTERPRETATION",
+    "statement": "Repository-bound material objects, explicit actor positions, corresponding meaning projections, allowed power modalities, distinct faces, visible benefit/cost distribution, and independently evidenced counter-readings support a bounded symbolic interpretation only.",
+    "claim_ceiling": "BOUNDED_SYMBOLIC_INTERPRETATION",
+    "truth_status": "NOT_ESTABLISHED",
+    "causal_status": "NOT_ESTABLISHED",
+    "external_action_performed": false
+  }
+}

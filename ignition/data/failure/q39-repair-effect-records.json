@@ -1,0 +1,61 @@
+{
+  "schema_version": "q39-repair-effect-record-v1",
+  "claim_ceiling": "repository plan-effect records only; intervention remains request-only; no target mutation or external action",
+  "effects": [
+    {
+      "effect_id": "effect.target.intervention",
+      "target_id": "target.intervention",
+      "event_ids": ["fail.q36.rollback"],
+      "target_artifact": "data/intervention/pilot-controlled-intervention.json",
+      "plan_effect": "INTERVENE",
+      "authorization": {"actor_id": "q35-builder", "grant_id": "grant-q34-pilot", "action_id": "act-q34-pilot"},
+      "application_status": "REQUEST_ONLY",
+      "high_risk": true,
+      "bounded_change": "request a future repository-local intervention review; do not execute or mutate the target"
+    },
+    {
+      "effect_id": "effect.target.analogy",
+      "target_id": "target.analogy",
+      "event_ids": ["fail.q37.mismatch"],
+      "target_artifact": "data/analogy/pilot-real-repo-analogy-audit.json",
+      "plan_effect": "ANALOGY_AUDIT",
+      "authorization": {"actor_id": "q35-builder", "grant_id": "grant-q34-pilot", "action_id": "act-q34-pilot"},
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "high_risk": false,
+      "bounded_change": "retain the mismatch as a required input to the next repository analogy audit"
+    },
+    {
+      "effect_id": "effect.target.search",
+      "target_id": "target.search",
+      "event_ids": ["fail.q38.counterexample", "repair.q39.plan"],
+      "target_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "plan_effect": "SEARCH",
+      "authorization": {"actor_id": "q35-builder", "grant_id": "grant-q34-pilot", "action_id": "act-q34-pilot"},
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "high_risk": false,
+      "bounded_change": "record changed future search preconditions without performing retrieval"
+    },
+    {
+      "effect_id": "effect.target.ceiling",
+      "target_id": "target.ceiling",
+      "event_ids": ["fail.q38.negative"],
+      "target_artifact": "docs/failure/q39-interfaces.md",
+      "plan_effect": "CLAIM_CEILING_CHANGE",
+      "authorization": {"actor_id": "q35-builder", "grant_id": "grant-q34-pilot", "action_id": "act-q34-pilot"},
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "high_risk": false,
+      "bounded_change": "hold or lower the repository claim ceiling after the negative result"
+    },
+    {
+      "effect_id": "effect.target.defer",
+      "target_id": "target.defer",
+      "event_ids": ["fail.q38.environment"],
+      "target_artifact": "docs/failure/q39-interfaces.md",
+      "plan_effect": "DEFER",
+      "authorization": {"actor_id": "q35-builder", "grant_id": "grant-q34-pilot", "action_id": "act-q34-pilot"},
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "high_risk": false,
+      "bounded_change": "defer external retrieval and preserve it as unperformed"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "task_id": "SYMBOLIC-SPHERE-I1-REPAIR-R1",
+  "parent_id": "121Q39-REPAIR-R1",
+  "reference_record_required_fields": [
+    "repository_relative_path",
+    "commit_sha",
+    "blob_sha",
+    "sha256",
+    "record_type",
+    "declared_role"
+  ],
+  "semantic_checks": [
+    "symbolic_object_resolves_to_material_object",
+    "actor_position_resolves_explicit_actor",
+    "meaning_projection_matches_actor_position_and_symbolic_object",
+    "power_modality_is_allowed",
+    "front_face_and_suppressed_face_are_distinct",
+    "benefit_cost_distribution_retains_beneficiaries_cost_bearers_and_evidence",
+    "counter_reading_binds_own_evidence",
+    "missing_material_evidence_forces_nonzero_and_conclusion_downgrade",
+    "ownership_popularity_and_naming_authority_do_not_establish_truth",
+    "symbolic_analysis_does_not_establish_complete_causality"
+  ],
+  "record_types": [
+    "COMMUNITY_FOOTBALL_FIELD",
+    "SCHOOL_DATA_POLICY"
+  ],
+  "allowed_power_modalities": [
+    "ACCESS_CONTROL",
+    "RESOURCE_ALLOCATION",
+    "INSTITUTIONAL_AUTHORITY",
+    "NAMING_AUTHORITY",
+    "OWNERSHIP",
+    "POPULARITY"
+  ],
+  "claim_ceiling": "BOUNDED_SYMBOLIC_INTERPRETATION",
+  "nonclaims": [
+    "ownership is not truth",
+    "popularity is not truth",
+    "naming authority is not truth",
+    "perspective does not excuse material error",
+    "symbolic analysis is not complete causal proof"
+  ],
+  "next_task": {
+    "task_id": "DECISION-INTEGRITY-I1",
+    "status": "NOT_STARTED"
+  },
+  "remote_state": "NOT_CHECKED_LOCAL_ONLY"
+}

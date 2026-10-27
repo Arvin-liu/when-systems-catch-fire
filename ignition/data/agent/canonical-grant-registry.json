@@ -1,0 +1,23 @@
+{
+  "schema_version": "q35-canonical-grant-registry-v1",
+  "grants": [
+    {
+      "grant_id": "grant-low-1",
+      "binding": {
+        "path": "data/agent/grants/q35-repair-pilot-grants.json",
+        "exact_commit": "333515d8dd692e6d0dea415a8b24f8b5af3a9114",
+        "git_blob": "9f66e2918613850a235f8661789578ed718287df",
+        "sha256": "sha256:1610cc30cb498fd52ca04b895b0af2f9586ad394b9b7123b4201e7d3802ab5af"
+      }
+    },
+    {
+      "grant_id": "grant-q34-pilot",
+      "binding": {
+        "path": "data/agent/grants/q35-repair-pilot-grants.json",
+        "exact_commit": "333515d8dd692e6d0dea415a8b24f8b5af3a9114",
+        "git_blob": "9f66e2918613850a235f8661789578ed718287df",
+        "sha256": "sha256:1610cc30cb498fd52ca04b895b0af2f9586ad394b9b7123b4201e7d3802ab5af"
+      }
+    }
+  ]
+}

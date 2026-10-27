@@ -1,0 +1,41 @@
+{
+  "actors": [
+    {"actor_id": "zhiyuan", "actor_type": "human", "declared_role": "authorizer", "authority_source": "human:zhiyuan", "applicable_scope": "repository", "status": "active"},
+    {"actor_id": "agent-a", "actor_type": "agent", "declared_role": "initiator", "authority_source": "org:maintainer-board", "applicable_scope": "repository", "status": "active"},
+    {"actor_id": "agent-b", "actor_type": "agent", "declared_role": "executor", "authority_source": "org:maintainer-board", "applicable_scope": "repository", "status": "active"},
+    {"actor_id": "reviewer-c", "actor_type": "agent", "declared_role": "verifier", "authority_source": "org:maintainer-board", "applicable_scope": "repository", "status": "active"}
+  ],
+  "grants": [
+    {
+      "grant_id": "grant-fictional-grantor",
+      "grantor": "principal-does-not-exist",
+      "grantee": "agent-b",
+      "allowed_action_types": ["edit_file"],
+      "resource_scope": "repository",
+      "required_commitment_state": "committed_current",
+      "risk_tier": "low",
+      "claim_ceiling": "repository scope only",
+      "delegation": "forbidden",
+      "separation_of_duty": {"initiator_not_authorizer": true, "authorizer_not_executor": true, "executor_not_verifier": true},
+      "status": "active"
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "act-review-bypass",
+      "action_type": "edit_file",
+      "phase": "execution",
+      "initiator": "agent-a",
+      "authorizer": "zhiyuan",
+      "executor": "agent-b",
+      "verifier": "reviewer-c",
+      "target": "docs/x.md",
+      "grant_id": "grant-fictional-grantor",
+      "claim_ref": "claim-does-not-exist",
+      "claim_ceiling": "repository scope only",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "conclusion": "edited"
+    }
+  ],
+  "trajectory": []
+}

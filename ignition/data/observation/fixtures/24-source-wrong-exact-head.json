@@ -1,0 +1,147 @@
+{
+  "observations": [
+    {
+      "observation_id": "obs-q34-closure-drift-001",
+      "construct": "propagation_closure_drift_events",
+      "unit": "count",
+      "scale": "count",
+      "target_scope": "repository_main_iteration_q34",
+      "measurement_method": "deterministic validator re-run on frozen exact head",
+      "source_ref": "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+      "sampling_window": {
+        "start": "2026-07-20T00:00:00Z",
+        "end": "2026-07-21T00:00:00Z"
+      },
+      "missingness_policy": "missing closure files counted as drift events, never dropped",
+      "noise_notes": "none; deterministic recompute",
+      "uncertainty": "deterministic measurement; residual uncertainty limited to validator version drift",
+      "provenance_refs": [
+        "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+      ],
+      "observed_at": "2026-07-21T00:00:00Z",
+      "available_at": "2026-07-21T06:00:00Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7",
+      "quality_status": "accepted",
+      "source_binding": {
+        "path": "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+        "exact_commit": "ffffffffffffffffffffffffffffffffffffffff",
+        "git_blob": "37b3fd3b3ab56661bbff3f067ac813b77069321c",
+        "sha256": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+      }
+    }
+  ],
+  "predictions": [
+    {
+      "prediction_id": "pred-q34-closure-drift-001",
+      "normalized_target": "propagation_closure_drift_events::v1",
+      "forecast_horizon": "next_iteration_window",
+      "evaluation_window": {
+        "start": "2026-07-20T00:00:00Z",
+        "end": "2026-07-21T12:00:00Z"
+      },
+      "prediction_type": "interval",
+      "prediction_value": {
+        "kind": "interval",
+        "interval_lower": 0,
+        "interval_upper": 2,
+        "interval_confidence": 0.9
+      },
+      "model_rule_version": "deterministic-rule:closure-drift-heuristic:v1.0.0",
+      "input_snapshot_digest": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7",
+      "input_cutoff_time": "2026-07-20T23:59:59Z",
+      "evidence_refs": [
+        "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+        "tools/observation/validate_observation_prediction_gate.py"
+      ],
+      "uncertainty": "interval width reflects limited historical sample; no causal claim",
+      "applicability_scope": "repository_main_iteration_q34 only",
+      "claim_ceiling": "repository scope only; finite-sample interval estimate; not a universal predictive capability",
+      "q34_claim_ref": "q33.seven_governance_components.current_in_main",
+      "q35_actor_ref": "q35-executor",
+      "q35_grant_ref": "grant-q34-pilot",
+      "q35_trajectory_event_digest": "sha256:bff647b567d7d8da8460018af0d74409e90457b0a8697cee97282b44f12ebb93",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:84cbc575f4e7f053250f3bf809bdce913dd959650129994b88ed44fd23842bb9",
+      "issued_at": "2026-07-20T12:00:00Z",
+      "supersession_policy": "post-reveal corrections only via new supersession record preserving this original",
+      "status": "frozen",
+      "q34_claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+      "q34_claim_exact_commit": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+      "q35_source_binding": {
+        "path": "data/agent/pilot-q34-pr-controlled-op.json",
+        "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+        "git_blob": "734f711db4dd9a7f788315067f1d3e6bbac236e0",
+        "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
+      },
+      "input_source_binding": {
+        "path": "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+        "exact_commit": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+        "git_blob": "37b3fd3b3ab56661bbff3f067ac813b77069321c",
+        "sha256": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+      },
+      "freeze_record_id": "freeze-pred-q34-closure-drift-001",
+      "freeze_binding": {
+        "path": "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
+        "exact_commit": "7bf33f73dc0d378aebd6873e50392b66a7154521",
+        "git_blob": "d4d7ab594a8db04e79ef697eeaada7b841a19683",
+        "sha256": "sha256:472adaf64a47e693c3aa8ebc265fc554650831bf485e1ac309310adf2f838436"
+      },
+      "rule_binding": {
+        "path": "tools/observation/validate_observation_prediction_gate.py",
+        "exact_commit": "7bf33f73dc0d378aebd6873e50392b66a7154521",
+        "git_blob": "94bf7d4c6ff4a8df30f70c8ece02c44808cb8865",
+        "sha256": "sha256:984170d2ed958162edde5210b05d767d56cf73c704147952f4c40a0890d21872",
+        "declared_rule_version": "deterministic-rule:closure-drift-heuristic:v1.0.0"
+      }
+    }
+  ],
+  "outcome_bindings": [
+    {
+      "binding_id": "bind-q34-closure-drift-001",
+      "prediction_id": "pred-q34-closure-drift-001",
+      "outcome_observation_id": "obs-q34-closure-drift-001",
+      "outcome_available_at": "2026-07-21T06:00:00Z",
+      "matching_rule": "normalized_target propagation_closure_drift_events::v1 matches construct propagation_closure_drift_events; evaluation_window intersects sampling_window; scope repository_main_iteration_q34",
+      "inclusion_status": "included",
+      "evaluator_ref": "deterministic:validator-q36-obs",
+      "independent_evidence_status": "independent",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7",
+      "source_binding": {
+        "path": "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+        "exact_commit": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+        "git_blob": "37b3fd3b3ab56661bbff3f067ac813b77069321c",
+        "sha256": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+      },
+      "reveal_record_id": "reveal-bind-q34-closure-drift-001",
+      "reveal_binding": {
+        "path": "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
+        "exact_commit": "7bf33f73dc0d378aebd6873e50392b66a7154521",
+        "git_blob": "d4d7ab594a8db04e79ef697eeaada7b841a19683",
+        "sha256": "sha256:472adaf64a47e693c3aa8ebc265fc554650831bf485e1ac309310adf2f838436"
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "evaluation_id": "eval-q34-closure-drift-001",
+      "binding_id": "bind-q34-closure-drift-001",
+      "metrics": {
+        "interval_coverage": 1.0,
+        "interval_width": 2,
+        "residual_sign": "exact",
+        "residual_magnitude": 0
+      },
+      "sample_size": 1,
+      "scope_summary": "repository_main_iteration_q34 only; single deterministic outcome; no generalization beyond this scope",
+      "baseline_comparison": "naive zero-drift baseline also covers; prediction adds explicit uncertainty statement only",
+      "missing_or_abstained_outcomes": 0,
+      "computed_by": "deterministic:validator-q36-obs",
+      "computation_method": "interval-coverage:v1 (deterministic set membership)",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "artifact_digest": "sha256:84cbc575f4e7f053250f3bf809bdce913dd959650129994b88ed44fd23842bb9"
+    }
+  ],
+  "residuals": []
+}

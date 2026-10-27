@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SYMBOLIC-SPHERE-I1 repair-r1 repository-bound symbolic analysis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "task_id",
+    "capability_id",
+    "parent_binding",
+    "reference_records",
+    "records",
+    "conclusion"
+  ],
+  "properties": {
+    "contract_version": {"const": "1.1.0"},
+    "task_id": {"const": "SYMBOLIC-SPHERE-I1"},
+    "capability_id": {"const": "symbolic_power_perspective"},
+    "parent_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "exact_head"],
+      "properties": {
+        "task_id": {"type": "string"},
+        "exact_head": {"type": "string"}
+      }
+    },
+    "reference_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/referenceRecord"}
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/analysisRecord"}
+    },
+    "conclusion": {"$ref": "#/$defs/conclusion"}
+  },
+  "$defs": {
+    "refList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "referenceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_id",
+        "repository_relative_path",
+        "commit_sha",
+        "blob_sha",
+        "sha256",
+        "record_type",
+        "declared_role",
+        "object_id"
+      ],
+      "properties": {
+        "reference_id": {"type": "string"},
+        "repository_relative_path": {"type": "string"},
+        "commit_sha": {"type": "string"},
+        "blob_sha": {"type": "string"},
+        "sha256": {"type": "string"},
+        "record_type": {"type": "string"},
+        "declared_role": {"type": "string"},
+        "object_id": {"type": "string"}
+      }
+    },
+    "analysisRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "record_type",
+        "symbolic_object_ref",
+        "actor_positions",
+        "meaning_projections",
+        "power_modalities",
+        "front_face",
+        "suppressed_face",
+        "benefit_cost_distribution",
+        "counter_readings",
+        "material_evidence_constraint"
+      ],
+      "properties": {
+        "record_id": {"type": "string", "minLength": 1},
+        "record_type": {"type": "string", "minLength": 1},
+        "symbolic_object_ref": {"type": "string", "minLength": 1},
+        "actor_positions": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/actorPosition"}
+        },
+        "meaning_projections": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/meaningProjection"}
+        },
+        "power_modalities": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/powerModality"}
+        },
+        "front_face": {"$ref": "#/$defs/face"},
+        "suppressed_face": {"$ref": "#/$defs/face"},
+        "benefit_cost_distribution": {"$ref": "#/$defs/distribution"},
+        "counter_readings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/counterReading"}
+        },
+        "material_evidence_constraint": {"$ref": "#/$defs/materialConstraint"}
+      }
+    },
+    "actorPosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["position_id", "actor_ref", "stance", "evidence_refs"],
+      "properties": {
+        "position_id": {"type": "string", "minLength": 1},
+        "actor_ref": {"type": "string", "minLength": 1},
+        "stance": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "meaningProjection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "projection_id",
+        "actor_position_id",
+        "symbolic_object_ref",
+        "statement",
+        "evidence_refs"
+      ],
+      "properties": {
+        "projection_id": {"type": "string", "minLength": 1},
+        "actor_position_id": {"type": "string", "minLength": 1},
+        "symbolic_object_ref": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "powerModality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modality", "actor_position_id", "statement", "evidence_refs"],
+      "properties": {
+        "modality": {"type": "string", "minLength": 1},
+        "actor_position_id": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "face": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["face_id", "statement", "actor_position_ids", "evidence_refs"],
+      "properties": {
+        "face_id": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "actor_position_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "distributionParty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor_position_id", "effect", "evidence_refs"],
+      "properties": {
+        "actor_position_id": {"type": "string", "minLength": 1},
+        "effect": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["beneficiaries", "cost_bearers", "evidence_refs"],
+      "properties": {
+        "beneficiaries": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/distributionParty"}
+        },
+        "cost_bearers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/distributionParty"}
+        },
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "counterReading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "counter_reading_id",
+        "target_projection_id",
+        "statement",
+        "evidence_refs"
+      ],
+      "properties": {
+        "counter_reading_id": {"type": "string", "minLength": 1},
+        "target_projection_id": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "materialConstraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "material_evidence_refs",
+        "unmet_requirements",
+        "downgrade_claim_ceiling"
+      ],
+      "properties": {
+        "status": {"type": "string", "minLength": 1},
+        "material_evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "unmet_requirements": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "downgrade_claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analysis_status",
+        "statement",
+        "claim_ceiling",
+        "truth_status",
+        "causal_status",
+        "external_action_performed"
+      ],
+      "properties": {
+        "analysis_status": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "truth_status": {"type": "string", "minLength": 1},
+        "causal_status": {"type": "string", "minLength": 1},
+        "external_action_performed": {"type": "boolean"}
+      }
+    }
+  }
+}

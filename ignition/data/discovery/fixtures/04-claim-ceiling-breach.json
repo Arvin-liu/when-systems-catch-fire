@@ -1,0 +1,70 @@
+{
+  "claim_id": "fix.ceiling_breach_global_legal",
+  "claim_text": "Global legal compliance is proven for all jurisdictions worldwide.",
+  "claim_type": "repository_fact",
+  "scope": "repository_main_only",
+  "state": "commitment_candidate",
+  "discovered_by": {
+    "actor": "q34-builder",
+    "actor_kind": "agent"
+  },
+  "evidence": [
+    {
+      "ref_id": "e1",
+      "kind": "deterministic_test",
+      "reference": "data/operations/project-components.json",
+      "independence": "independent",
+      "produced_by": "validator",
+      "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"
+    }
+  ],
+  "verifier": {
+    "actor": "q34-independent-reviewer",
+    "actor_kind": "agent"
+  },
+  "claim_ceiling": "repository in-repo fact only; does not assert real-world truth.",
+  "search_process": {
+    "summary": "checked registry",
+    "considered_paths": [
+      "project-components.json"
+    ],
+    "rejected_paths": [
+      "no real-world claim"
+    ]
+  },
+  "relations": {
+    "supersedes": [],
+    "retracts": [],
+    "derived_from": []
+  },
+  "exact_head_binding": {
+    "repo": "Arvin-liu/when-systems-catch-fire",
+    "head": "81edff4039619b8343a82cb1b84785c8a9f6a990"
+  },
+  "history": [
+    {
+      "from_state": "discovered",
+      "to_state": "discovered",
+      "actor": "q34-builder",
+      "decision": "DISCOVER",
+      "rationale": "d",
+      "at": "2026-07-21T00:00:00Z"
+    },
+    {
+      "from_state": "discovered",
+      "to_state": "evidence_bound_candidate",
+      "actor": "q34-builder",
+      "decision": "BIND_EVIDENCE",
+      "rationale": "b",
+      "at": "2026-07-21T00:00:01Z"
+    },
+    {
+      "from_state": "evidence_bound_candidate",
+      "to_state": "commitment_candidate",
+      "actor": "q34-independent-reviewer",
+      "decision": "REQUIRE_INDEPENDENT_REVIEW",
+      "rationale": "r",
+      "at": "2026-07-21T00:00:02Z"
+    }
+  ]
+}

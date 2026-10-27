@@ -1,0 +1,95 @@
+{
+  "salvage_matrix_id": "q36_obs_i1_legacy_lab_salvage",
+  "task_id": "121Q36-OBS-I1",
+  "legacy_lab": {
+    "branch": "lab/121q36-temporal-causality-night",
+    "head": "0529baaa354a99eae91621f2a70c9b5b53454208",
+    "preserved_as_tag": "archive/lab-121q36-temporal-causality-night",
+    "commit_date": "2026-07-17T14:11:08Z",
+    "self_declared_status": "LAB / SPECULATIVE / NON-AUTHORITATIVE"
+  },
+  "base_assessment": {
+    "branched_from": "pre-Q34 base (its diff vs Q35 head deletes the Q33/Q34/Q35 production gates)",
+    "wholesale_merge_feasible": false,
+    "cherry_pick_feasible": false,
+    "reason": "The LAB predates the Q33/Q34/Q35 production contracts. Its file layout (data/rights, data/agent/duty-contracts, schemas/rights/publication-gate) duplicates and conflicts with the production Q33/Q34/Q35 surfaces that were built later. Only concept-level salvage is viable."
+  },
+  "items": [
+    {
+      "lab_asset": "data/temporal/prediction-records.json (concept)",
+      "lab_concept": "Prediction record with object, mechanism, time_range, trigger_conditions, falsification_conditions, observation_period, expiry_status, claim_ceiling",
+      "disposition": "REIMPLEMENT_SELECTIVELY",
+      "q36_obs_scope_fit": "in_scope",
+      "decision": "The freeze-before-reveal prediction record with explicit falsification conditions and claim_ceiling is the core Q36-OBS concept. Reimplemented as prediction-commitment record with immutable issued_at, input cutoff, outcome window, Q34 commitment ref, Q35 actor ref, exact-head digest binding, and supersession-only correction.",
+      "rejected_elements": [
+        "free-text status field without lifecycle invariants",
+        "mechanism as free text (Q36-OBS does not adjudicate mechanism; it records model/rule/version references)"
+      ]
+    },
+    {
+      "lab_asset": "data/temporal/observation-records.json (concept)",
+      "lab_concept": "Observation record linking to prediction_id with matches_prediction boolean",
+      "disposition": "REIMPLEMENT_SELECTIVELY",
+      "q36_obs_scope_fit": "in_scope",
+      "decision": "Reimplemented as outcome-binding record: prediction id, outcome observation id, outcome availability time, deterministic matching rule, inclusion/exclusion reason, evaluator, independent evidence status, exact-head/digest binding. The bare boolean matches_prediction is replaced by typed evaluation/calibration records with deterministic metrics.",
+      "rejected_elements": [
+        "matches_prediction boolean (non-deterministic, no metric, no residual)"
+      ]
+    },
+    {
+      "lab_asset": "tools/temporal/validate_temporal_causality.py",
+      "lab_concept": "Validator rejecting forbidden causal shortcuts (repository reachability / agent repetition / analogy relation / synchronization obligation as causal proof) and rejecting claim_ceiling containing 'proof'",
+      "disposition": "REIMPLEMENT_SELECTIVELY",
+      "q36_obs_scope_fit": "in_scope",
+      "decision": "The anti-causal-shortcut checks are reimplemented as deterministic validator rules: correlation/fit/accuracy must not be upgraded to causal mechanism (exit code), claim ceiling must not expand finite-scope performance into universal predictive capability. Reimplemented with stable machine-readable exit codes instead of free-text PASS/FAIL.",
+      "rejected_elements": [
+        "free-text report PASS/FAIL (not machine-readable, not fail-closed by exit code)",
+        "hard-coded DATA_DIR with no CLI arguments"
+      ]
+    },
+    {
+      "lab_asset": "schemas/temporal/temporal-causal.schema.json",
+      "lab_concept": "Generic registry wrapper schema (registry_type, version, entries[])",
+      "disposition": "REJECT",
+      "q36_obs_scope_fit": "replaced",
+      "decision": "Too permissive (entries is an untyped array). Replaced by five typed schemas under schemas/observation/ with required fields, enums, formats, and additionalProperties constraints."
+    },
+    {
+      "lab_asset": "data/temporal/intervention-candidates.json + counterfactual checks",
+      "lab_concept": "Intervention candidates with counterfactuals",
+      "disposition": "REJECT",
+      "q36_obs_scope_fit": "out_of_scope_belongs_to_q36_int",
+      "decision": "Intervention execution and counterfactual dynamics belong to Q36-INT. Q36-OBS only exposes read-only residual/anomaly interfaces toward Q36-INT."
+    },
+    {
+      "lab_asset": "data/rights/*, data/agent/duty-contracts.json, schemas/rights/*, schemas/agent/agent-duty.schema.json, schemas/discovery/dual-plane.schema.json and their tests",
+      "lab_concept": "LAB versions of rights/duty/dual-plane contracts",
+      "disposition": "REJECT",
+      "q36_obs_scope_fit": "superseded_by_q33_q34_q35",
+      "decision": "Superseded by the production Q33 rights/publication gate, Q34 commitment boundary, and Q35 responsibility-authority-action trace. The LAB variants duplicate production surfaces with incompatible layouts."
+    },
+    {
+      "lab_asset": "data/temporal/expiry-decisions.json",
+      "lab_concept": "Expiry decisions for predictions",
+      "disposition": "REIMPLEMENT_SELECTIVELY",
+      "q36_obs_scope_fit": "in_scope",
+      "decision": "Reimplemented as the supersession/correction policy on the prediction-commitment record: post-reveal modification is forbidden; corrections are new supersession records preserving the original."
+    }
+  ],
+  "summary": {
+    "reimplemented_concepts": [
+      "freeze-before-reveal prediction record with falsification/evaluation conditions",
+      "observation-to-prediction binding",
+      "deterministic anti-causal-shortcut and anti-overclaim checks",
+      "prediction expiry/supersession as immutable correction records"
+    ],
+    "rejected_assets": [
+      "LAB temporal-causal wrapper schema",
+      "LAB intervention candidates (Q36-INT scope)",
+      "LAB rights/duty/dual-plane contracts (superseded by Q33/Q34/Q35)",
+      "free-text PASS/FAIL reporting"
+    ],
+    "no_wholesale_merge": true,
+    "no_cherry_pick": true
+  }
+}

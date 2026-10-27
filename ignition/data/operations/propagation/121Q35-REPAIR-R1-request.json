@@ -1,0 +1,206 @@
+{
+  "task_id": "121Q35-REPAIR-R1",
+  "request_version": "1.0.0",
+  "base_identity": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+  "head_identity": "external_exact_head_attestation",
+  "change_classifications": [
+    "REPAIR",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE"
+  ],
+  "changed_dimensions": [
+    "governance",
+    "capability",
+    "usage"
+  ],
+  "changed_paths": [
+    "schemas/agent/responsibility-contract.schema.json",
+    "tools/agent/validate_responsibility_gate.py",
+    "tests/agent/test_responsibility_gate.py",
+    "data/agent/q34-claims-registry.json",
+    "data/agent/canonical-actor-registry.json",
+    "data/agent/canonical-grant-registry.json",
+    "data/agent/grants/q35-repair-pilot-grants.json",
+    "data/agent/pilot-q34-pr-controlled-op.json",
+    "data/agent/fixtures/01-legal-low-risk.json",
+    "data/agent/fixtures/17-missing-claim-nonexistent-grantor-bypass.json",
+    "data/agent/fixtures/18-known-claim-nonexistent-grantor.json",
+    "data/agent/fixtures/19-zero-claim-digest.json",
+    "data/agent/fixtures/20-zero-grant-digest.json",
+    "data/agent/fixtures/21-embedded-noncanonical-grant.json",
+    "docs/agent/121Q35-repair-r1-architecture.md",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q35-REPAIR-R1-request.json",
+    "data/operations/iterations/121Q35-REPAIR-R1.json",
+    "reports/operations/121Q35-REPAIR-R1-completion-seal.json"
+  ],
+  "state_transition_subjects": [
+    "canonical Q34 claim resolution",
+    "canonical principal and grant resolution",
+    "actual-byte authority binding"
+  ],
+  "surface_decisions": [
+    {
+      "item_id": "human.readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not change README"
+    },
+    {
+      "item_id": "human.pages_source",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 does not alter pages source"
+    },
+    {
+      "item_id": "external.pages_homepage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 is a Draft candidate; no production pages change claimed"
+    },
+    {
+      "item_id": "human.current_state",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not edit docs/project-current-state.md (recorded at Q34; Q35 build is governance-only and does not touch the current-state file)"
+    },
+    {
+      "item_id": "human.summary",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not edit SUMMARY.md"
+    },
+    {
+      "item_id": "human.usage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not change usage surface"
+    },
+    {
+      "item_id": "human.ai_guide",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not change AI guide"
+    },
+    {
+      "item_id": "ai.start",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not change AI start"
+    },
+    {
+      "item_id": "agent.handoff",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not change handoff"
+    },
+    {
+      "item_id": "machine.llms",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not change llms.txt"
+    },
+    {
+      "item_id": "release.changelog",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not edit CHANGELOG.md (governance-only build, no release note change in this branch)"
+    },
+    {
+      "item_id": "release.versioning",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 candidate does not change versioning"
+    },
+    {
+      "item_id": "method.iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 uses existing iteration method"
+    },
+    {
+      "item_id": "method.task_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 uses existing task template"
+    },
+    {
+      "item_id": "method.result_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 uses existing result template"
+    },
+    {
+      "item_id": "method.review_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 uses existing review template"
+    },
+    {
+      "item_id": "copyright_governance",
+      "decision": "CHANGE",
+      "reason": "Q35 adds responsibility/authority/action-trace governance components to the governance surface"
+    }
+  ],
+  "component_decisions": [
+    {
+      "item_id": "agent_responsibility_contract",
+      "decision": "CHANGE",
+      "reason": "Q35 repair-r1 closes B03 canonical claim/authority resolution paths."
+    },
+    {
+      "item_id": "agent_responsibility_gate_validator",
+      "decision": "CHANGE",
+      "reason": "Q35 repair-r1 closes B03 canonical claim/authority resolution paths."
+    },
+    {
+      "item_id": "agent_responsibility_pilot_q34",
+      "decision": "CHANGE",
+      "reason": "Q35 repair-r1 closes B03 canonical claim/authority resolution paths."
+    },
+    {
+      "item_id": "historical_reports",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "incremental_execution",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "iteration_manifest_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "pages_pipeline",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "project_component_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "propagation_calculator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "sync",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "system_map_layout",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "item_id": "system_map_projection",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    }
+  ],
+  "system_map_decision": {
+    "decision": "CHANGE",
+    "item_id": "interactive_system_map",
+    "reason": "New agent responsibility/authority/action-trace governance components added to project-component registry and topology"
+  }
+}
