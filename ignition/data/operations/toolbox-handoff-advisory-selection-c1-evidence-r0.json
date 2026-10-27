@@ -1,0 +1,65 @@
+{
+  "schema_version": "toolbox-handoff-advisory-selection-c1-evidence-r0",
+  "tool_id": "collaboration.select_handoff_advisories",
+  "tool_version": "0.1.0",
+  "evidence_level": "SYNTHETIC_ONLY",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "scope": "Bounded interface comparison and synthetic CLI smoke only. The exact-duplicate selection interface binds text, ordered source refs, task scope, and caller-declared receiver-state revision; semantic necessity, actual receiver value, safe classification, real token/latency savings, and costs are not measured.",
+  "command": "python3 -B ignition/tools/toolbox_handoff_advisory_selector.py --stdin < ignition/tests/fixtures/toolbox-handoff-advisory-selection/valid-input-r0.json",
+  "fixture_path": "ignition/tests/fixtures/toolbox-handoff-advisory-selection/valid-input-r0.json",
+  "fixture_sha256": "1342c0b407917c41b7ddbab9171386285d1d1d44503b000c4cfb8a0f28be05e7",
+  "stdout_sha256": "866acb5f6ab05958ad5f58e41bdaec807a9aefd3d5bfb5c16cbb6eeab4972127",
+  "exit_code": 0,
+  "observed_result": {
+    "input_messages": 3,
+    "suggested_omission_ids": [
+      "advice-already-seen"
+    ],
+    "retained_message_ids": [
+      "required-witness",
+      "new-advice"
+    ],
+    "suggested_omission_content_utf8_bytes": 58,
+    "semantic_necessity": "NOT_EVALUATED",
+    "handoff_transformed": false,
+    "send_authorized": false,
+    "execution_authorized": false
+  },
+  "compared_tool_ids": [
+    "collaboration.preflight_receiver_handoff",
+    "knowledge.assemble_context_packet",
+    "knowledge.preflight_reusable_context",
+    "maintenance.compare_context_packet_variants"
+  ],
+  "interface_findings": [
+    "The receiver preflight validates receipt-to-bundle projection and receiver preconditions but does not choose advisory message IDs.",
+    "The context packet assembles caller-selected repository excerpts and structural obligation links; it does not select handoff advisories.",
+    "The reusable-context preflight checks caller-selected local derived cards; it does not edit or rank outgoing messages.",
+    "The context-packet comparator compares two built packets; it does not create an outgoing handoff message selection.",
+    "The new tool only proposes exact duplicate advisory omission and does not replace any comparator."
+  ],
+  "negative_controls": [
+    "Exact matching WITNESS retained.",
+    "Unmatched optional advisory retained.",
+    "Caller-marked must-forward advisory retained.",
+    "Same text with changed source refs retained.",
+    "Same content under another task scope retained.",
+    "Repeated pending advisory copies retained.",
+    "Unknown or protected message kinds retained.",
+    "Duplicate JSON keys and oversized stdin rejected.",
+    "Same content under another receiver-state revision retained."
+  ],
+  "real_task_outcome": "NOT_RUN_NO_LIVE_RECEIVER_CONTEXT_BOUND",
+  "limits": [
+    "Caller-declared context digests and receiver_state_ref are not authenticated or observed.",
+    "A caller can mislabel semantically important content as ADVISORY; the output is not auto-applied.",
+    "Content-byte count is not provider-token, latency, quality, or billing savings."
+  ],
+  "retirement_or_replacement": "No existing tool retired or replaced; same-task outcome comparison remains unknown.",
+  "route_experiment": {
+    "receipt_path": "ignition/data/operations/toolbox-handoff-advisory-selection-route-evidence-r0.json",
+    "receipt_sha256": "f3683758cc038982073eb5448415f05c5cd8f2b62aa78365314317e786623e29",
+    "catalog_blob_sha1": "a723c5cd61c491aa2c13c3b45741832e0558adfb",
+    "summary": "Default route INCOMPLETE with no selected tools; explicit exact-ID allowlist yields COMPLETE for this single experimental tool; execution remains unauthorized and invocation was not performed."
+  }
+}

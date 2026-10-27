@@ -169,6 +169,200 @@
       "claim_ceiling": "Canonical self-digest consistency, deterministic receipt-to-handoff projection equality, and existing caller-declared receiver capability/re-observation preconditions only. No receipt authenticity, actual workspace observation, live capability enforcement, takeover authorization, task correctness, science, or safety is established."
     },
     {
+      "tool_id": "collaboration.select_handoff_advisories",
+      "display_name": {
+        "zh": "交接提醒筛选器",
+        "en": "Handoff Advisory Selector"
+      },
+      "description": "Create a review-only suggestion for omitting a unique optional handoff advisory only when exact text, ordered source refs, task scope, and caller-declared receiver-state revision match caller-declared receiver context; never transform or send a handoff.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "SYNTHETIC_ONLY",
+      "source_path": "ignition/tools/toolbox_handoff_advisory_selector.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_handoff_advisory_selector.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_handoff_advisory_selector.py",
+          "role": "OPTIONAL_READ_ONLY_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-handoff-advisory-selection-input-r0.schema.json",
+          "role": "STRICT_BOUNDED_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-handoff-advisory-selection-output-r0.schema.json",
+          "role": "REVIEW_ONLY_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-handoff-advisory-selection/valid-input-r0.json",
+          "role": "SYNTHETIC_BOUNDED_CLI_FIXTURE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_handoff_advisory_selector.py",
+          "role": "FOCUSED_NEGATIVE_AND_CLI_TESTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-advisory-selection-c1-evidence-r0.json",
+          "role": "SYNTHETIC_SMOKE_AND_C1_INTERFACE_COMPARISON"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-handoff-advisory-selection.md",
+          "role": "USER_SCOPE_LIMITS_AND_INVOCATION"
+        },
+        {
+          "path": "ignition/tools/toolbox_receiver_handoff_preflight.py",
+          "role": "COMPARATOR_RECEIVER_PREFLIGHT"
+        },
+        {
+          "path": "ignition/tools/toolbox_context_packet.py",
+          "role": "COMPARATOR_CONTEXT_ASSEMBLY"
+        },
+        {
+          "path": "ignition/tools/toolbox_reusable_context_preflight.py",
+          "role": "COMPARATOR_REUSABLE_CONTEXT_CHECK"
+        },
+        {
+          "path": "ignition/tools/toolbox_context_packet_variant_comparator.py",
+          "role": "COMPARATOR_PACKET_VARIANT_DIFFERENTIAL"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Proposing that an explicitly optional ADVISORY be omitted when exact decoded text, ordered source references, task scope, and the same caller-declared receiver-state revision already match a receiver-context digest.",
+        "Preparing a human-reviewed handoff message list while preserving ACTION, AUTHORITY, OUTCOME, WITNESS, SOURCE, UNKNOWN, must-forward, unmatched, and repeated pending messages.",
+        "Reporting only message IDs, digests, and the UTF-8 text-byte count associated with each omission suggestion."
+      ],
+      "not_for": [
+        "Deciding semantic necessity, compressing prose, ranking messages, choosing source material, refreshing shared state, or escalating a receiver.",
+        "Authenticating sender, receiver, receiver state, message classification, or caller-declared context digests.",
+        "Editing or transmitting a handoff, authorizing actions, proving task completion, or claiming token, latency, quality, or cost savings."
+      ],
+      "only_if": [
+        "The caller supplies one bounded UTF-8 JSON request with task_scope_id, receiver_state_ref, optional receiver-context message digests, and at most 64 typed messages.",
+        "The caller treats message kind, must_forward, source refs, receiver state, and task scope as unverified declarations and independently reviews every suggestion.",
+        "The caller accepts exact text, ordered-reference, task-scope, and receiver-state-revision identity only; no semantic equivalence or necessity decision is made."
+      ],
+      "counterindicated_when": [
+        "The receiver state or its author must be authenticated before any advisory can be omitted.",
+        "The communication runtime requires semantic compression, protocol negotiation, raw-source refresh, message delivery, or receiver escalation.",
+        "A caller cannot reliably distinguish optional ADVISORY content from required authority, action, outcome, witness, source, or unknown content."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object matching handoff-advisory-selection-r0; max 262144 stdin bytes, 64 messages, 128 context digests, 8192 characters per message, and 16 source refs per message."
+      ],
+      "output_types": [
+        "One JSON result with retained message IDs and suggested optional-advisory omission IDs, exact digest basis, and a narrow omitted-content UTF-8 byte count.",
+        "Explicit caller-context-not-authenticated, semantic_necessity=NOT_EVALUATED, handoff_transformed=false, send_authorized=false, and execution_authorized=false."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_STDIN_SELECTION_PROPOSAL",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [],
+        "write_paths": [],
+        "network": false,
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded stdin JSON request and writes one JSON proposal to stdout; it does not read or write files and sends no messages."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9; standard library only."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No real receiver runtime, provider token accounting, stable latency, or cost measurement has been collected."
+      },
+      "alternatives": [
+        {
+          "tool_id": "collaboration.preflight_receiver_handoff",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Checks receipt-to-bundle projection and receiver preconditions; it does not select optional advisory message IDs."
+        },
+        {
+          "tool_id": "knowledge.assemble_context_packet",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Assembles caller-selected local source excerpts and structural obligations; it does not select outgoing handoff messages."
+        },
+        {
+          "tool_id": "knowledge.preflight_reusable_context",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Checks caller-selected derived context freshness and access scope; it does not omit messages from a handoff."
+        },
+        {
+          "tool_id": "maintenance.compare_context_packet_variants",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Compares two already-built ContextPacket outputs; it does not select message IDs or authorize a context change."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Propose retaining all required and novel messages while flagging only a unique exact duplicate optional advisory declared in same-task, same-receiver-revision context."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "The interface and synthetic negative controls were compared with receiver preflight, context assembly, reusable-context checking, and ContextPacket comparison. Their input/output contracts do not select outgoing advisory IDs. No matched real receiver task, semantic necessity, reliable savings, or quality/cost comparison exists.",
+        "compared_tool_ids": [
+          "collaboration.preflight_receiver_handoff",
+          "knowledge.assemble_context_packet",
+          "knowledge.preflight_reusable_context",
+          "maintenance.compare_context_packet_variants"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_receiver_handoff_preflight.py",
+          "ignition/tools/toolbox_context_packet.py",
+          "ignition/tools/toolbox_reusable_context_preflight.py",
+          "ignition/tools/toolbox_context_packet_variant_comparator.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-handoff-advisory-selection-c1-evidence-r0.json",
+          "ignition/tests/test_toolbox_handoff_advisory_selector.py",
+          "ignition/docs/operations/toolbox-handoff-advisory-selection.md"
+        ],
+        "findings": [
+          "The candidate exposes a narrow exact-identity suggestion interface absent from the four compared contracts; this establishes an interface distinction, not net task value.",
+          "No existing tool was replaced or retired. Real receiver utility and same-task outcome evidence remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "ACTIVE",
+        "basis": "Default-off optional implementation with synthetic-only evidence; retain only as an experimental selection proposal until real task evidence supports a stronger disposition."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No existing handoff, Current operation registry, router, or message runtime is migrated or modified. A human caller may independently apply a reviewed suggestion."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, CLI, schemas, fixture, tests, evidence, and documentation; regenerate the human and machine identity projections; preserve prior commits and smoke/negative evidence."
+        ]
+      },
+      "fallback": "If caller-declared receiver context is missing, ambiguous, unauthenticated for the task, or mismatched, retain every message and review it manually. Never auto-apply an omission or treat the suggestion as a handoff decision.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_handoff_advisory_selector.py"
+        ],
+        "negative_controls": [
+          "Exact matching WITNESS and all other non-ADVISORY kinds remain retained.",
+          "Caller-marked must-forward advisories remain retained.",
+          "Different source refs or task scope prevent an exact match.",
+          "Repeated copies in the pending bundle remain retained even if their digest appears in receiver context.",
+          "Duplicate JSON keys, unknown message kinds, duplicate IDs, duplicate refs, and oversized stdin fail closed."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only under an explicit experimental-tool allowlist for a handoff-composition task with caller-supplied scope and receiver-context digest.",
+        "Never for automatic transmission, permission decisions, authorization/witness reduction, semantic compression, or authenticity-sensitive receiver state.",
+        "The route is a proposal; the caller separately authorizes invocation and reviews the result."
+      ],
+      "claim_ceiling": "Deterministic identity equality of caller-supplied task scope, receiver-state revision, decoded UTF-8 message text, and ordered source refs against caller-declared context digests only. It establishes no receiver authenticity/currentness, semantic redundancy, task benefit, message safety, token savings, authorization, delivery, or task outcome."
+    },
+    {
       "tool_id": "collaboration.validate_agent_episode_binding",
       "display_name": {
         "zh": "Agent Episode 绑定预检器",
