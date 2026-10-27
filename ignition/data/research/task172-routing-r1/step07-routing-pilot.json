@@ -1,0 +1,3192 @@
+{
+  "cases": [
+    {
+      "case_id": "gold-structural-analogy",
+      "query": {
+        "asset_kinds": [
+          "FUNCTION_ASSET",
+          "NONFUNCTION_CLAIM"
+        ],
+        "asset_role": [
+          "ANALOGY_SOURCE"
+        ],
+        "case_id": "gold-structural-analogy",
+        "collision_use": [
+          "COMPARE"
+        ],
+        "top_k": 50,
+        "unesco_field_codes": [
+          "55",
+          "62"
+        ]
+      },
+      "result": {
+        "candidate_universe_size": 194,
+        "coverage_warning": null,
+        "derived_query_facets": {
+          "asset_role": [
+            "ANALOGY_SOURCE"
+          ],
+          "collision_use": [
+            "COMPARE"
+          ],
+          "unesco_field_codes": [
+            "55",
+            "62"
+          ]
+        },
+        "exact_validation_status": "ALL_SELECTED_EXACT",
+        "fallback": {
+          "explicit": true,
+          "occurred": false,
+          "reason": null
+        },
+        "invalid_selection_count": 0,
+        "invalid_selections": [],
+        "operation_id": "knowledge.collide_object",
+        "run_mode": "READ_ONLY_RUN",
+        "schema_version": "task172-step07-routing-result-v1",
+        "selected": [
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-84f4dbc5e9a4fbda",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55",
+                "62"
+              ]
+            },
+            "score": 13,
+            "source_record_sha": "f7ec4b1b748e0e459cf50aac82510d42c8b1a580ae7e5c28fb2428449770ed7a"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0106842f9646158b",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "8c094c05b0d0a80ec49de46075dbcfc9064d452a77bc57b071eb7de45767fb5e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-038e96bba3393be9",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "b5b79e937a0d1731761660abc5c2abd39416d86877856b40ecc0ff5937bd51ca"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-055634530d55f03d",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "d9f36c64e29016d4edd9050eac1155f6aefaafd35f25fc39d68a7c8df3a3090a"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-059a4915283b91d8",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "56554cadf6f584e2e591467abad64e248a804ce6c1625acfd71fa4823a0debfc"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-05b6282fd465817d",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "6ec23a1dd76fd762bb9e7ec52b0dfd717faea0ee7bb585bda5671a3be9f9cd82"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06ddf2b643747a14",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "92d3dd8757fb5b701f8d7f3c7765340ff25caa9ac1ef61cedf0be7825d716f97"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06f44c49cd36e774",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "7273a26e2585dc5049e944acaf8344c9b93b19941e792ab4dba7d44b6db9e7fe"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-071da14b6dd63a08",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "dcaa9a18f0dbcf8f92cde0fd23bedf39136941edd71d41833676781f3b8cf96c"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-09f37998eb63761e",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "49cc9e2a0999bbdb91ee0a2f177e884131024a67774547c0694461d67fcc82c6"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0cd66516602c7224",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "7e6155de36f449951639ef2f47cdcd7fa0a717a8315760536bcf8cbe5b3dd28a"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0da8b6cab577c460",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "fbe58f18ec3a91f27505d1355d15802666f5244bfae7b656a6f164d50767bb38"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0e4a88c42cc1fd98",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "5eb3f8b46740aa17cd4059409252bcd8cd67a01c8f2549c34533eaf0d514272e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1213b364ab9f7c38",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "5a650dfc5317d070ae1a1e5fde5f711cb0a52025b4c43bc64f4aad1449f59a4d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-143c82aa34fd886b",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "f4bfeb41a2bde9bdc28a5dd015ad8528205924b517c62192494b6ae9499b5463"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-15836dafeef09ddf",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "d4a6a582a904727cac44ffcde91c6a9c847037aa4428a256f4b2e9fff734b7c9"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-15a7a10c7fdab975",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "82127725e0f2a8cca9888d329992ecde9427cdada69f1a5e38342732ffd6b796"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-16270613f6f1c813",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "ddd9ada8652d11a9771b0e8cfb06d7efaec3c7a2a4123a69910153e13e9448ee"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1826823f8b38bbf2",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "47648c31baa89c6a91639a353155f9f163173dcedf86fc1713018ed5b3b2e21d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1955590d8570684f",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "d4c3c711b7f32831e0e680893f7bf2ddb458b1e9092ea93b22f580e87031e1da"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1ac139e18f5c7007",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "ebcdefe697c3caa267822526304c44ba310fc1c5cd468b9e85c540433543af38"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1af3748307046825",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "85829035c54ebac0760faefb366f2556e7b15aa8390d3ca90dc21d00a262a6de"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1d6a1358a6ef2b97",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "083d5d4cc140c8e6693f323d186702b9677352feb5eae33c0c0372cd3903b4c0"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1d6d404f3a27ec9d",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "8fe701fd94d778e589320ba14d338b404cd7850c74a588f77377cc69379b141e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1e1150e9f16096c5",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "5759ebd81e5d80d3060bf9b330a933dcf1a809256c2fd83e9fe5905368f7df94"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1ec3b9189cecd732",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "d47c6bb0d511b28a2a9bfced1443a858d4ad998dd81d646483a3d67ac5fc767f"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1f0a411c00f197aa",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "fad37dace38fdfe17ff94e05082870bd3c1f0964501be39643694e83e757983b"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1fe986333eab8632",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "60ffa08332b7d94b9eaeaee2f8a992835815425ff6dd4377d44fa19c6abd1d03"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-20359ad2a9b373f8",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "02fc2d9176338e5035a032b0305db2803572a013c2991e41afa2cc55e880f58e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-20a919203126e8ac",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "2a8e0cc83359a2fd51c323b02f42c91980e00d126a557ef151e804af2e79003e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-221d7b8d1d88e492",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "28851d6dfdc973b655694d826f21953a2073a0ca9e94ee2bca036b8c4ce3039e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-23c29a57299d2cb5",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "04ce1371ee925c927cfc5c6df9d0097b9f88954fbd8203ade2ca39b88e698aa0"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-241d9cb5dfabf7ba",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "46bc46e6eb9f387c34d6113e403187b7ad0c6bee8a224e94fdd8b60ac855a2f3"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-27c4979c228128d1",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "e4710ed0cd30dcb792da22c51b76c99fde95f47ea499e4bac102e7df1f1827e4"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-28eaec186367612e",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "b8f313e98e499b7e10e8dc7bcf79bc839bd38bfa0b336dd31d2bec38ad8ec3de"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2a0f8e25ec04f754",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "92d79b7a77480788b8f3af14fa7f9a09b17a905ebfb8737741bf6467da1698ba"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2bf14613547adc3f",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "e6ffae71fda784528a05193f5e20f4b4998260b2905a534b68f9bbb953a1ddc9"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2e1746a92403752a",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "436efc409c6c4437d480b57c77c7f1768a36e4368d917838db8bd0714655c76b"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2efb645f956b6e01",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "5d24dee46d521a415eabd47c7321be1994dea03d6df945543eb207afec288997"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2fb2f570ccd0d836",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "6612236d4d55e7667eaed1b2427acc7cfaae743cd44126aa7e72a2e714aa52a7"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-310d37809c7ed938",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "6387bd91346a33a8890266740d6cd0bdc7d367be6e111680a520a1f198bc7724"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-33e1067f5d29ee00",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "e8867a3679f7f6fa8bf48be3a9cb67cfc964b1a76adc1927ff5ddfb1a12fcb3e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-36956fc6b662a17b",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "c17c4e4dace4f1cffa571e2aea2ce409f98208b4b671cea7522ab10c831b2d3d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3755c76a246121e3",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "3a69bed4397be3a1bb483d797c2a8a29968807bbf75fd0c31ab7b850a3bde020"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-377d9f8488a9471d",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "b58e98db3be0a738fc26c9180df209bba03253c1da0519947015b33e5311a97c"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-37d4cd5e1ea140dc",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "c6ad55fefaa0121c902beb21b931fae0e939ac02174d3c3c145c8bb84139dbe6"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3df3db0092eea1e2",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "9ce82c20abe720e4db14061f1c44d7d1fa11931cd73eb504cf2d92cfa08528c0"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3ec3c75c92838575",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "b49b95f2f1cb4e4409a30c1617fc045ae1ae0f2eca28ecdc17f64ce4663b85b1"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3ee57ca93f6efed4",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "e34732a885f14554761f7cb1410a4240ebefcf98da536991ef5adfbc3dcaaf63"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3f7804552bd81407",
+            "matched_facets": {
+              "asset_role": [
+                "ANALOGY_SOURCE"
+              ],
+              "collision_use": [
+                "COMPARE"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "17c8ceb3700971fe80dc2ee25a3a2efe97a97c6fd1ef0c5abb20b8715e6c5137"
+          }
+        ],
+        "selected_canonical_ids": [
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-84f4dbc5e9a4fbda"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0106842f9646158b"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-038e96bba3393be9"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-055634530d55f03d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-059a4915283b91d8"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-05b6282fd465817d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06ddf2b643747a14"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06f44c49cd36e774"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-071da14b6dd63a08"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-09f37998eb63761e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0cd66516602c7224"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0da8b6cab577c460"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0e4a88c42cc1fd98"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1213b364ab9f7c38"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-143c82aa34fd886b"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-15836dafeef09ddf"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-15a7a10c7fdab975"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-16270613f6f1c813"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1826823f8b38bbf2"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1955590d8570684f"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1ac139e18f5c7007"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1af3748307046825"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1d6a1358a6ef2b97"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1d6d404f3a27ec9d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1e1150e9f16096c5"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1ec3b9189cecd732"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1f0a411c00f197aa"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1fe986333eab8632"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-20359ad2a9b373f8"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-20a919203126e8ac"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-221d7b8d1d88e492"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-23c29a57299d2cb5"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-241d9cb5dfabf7ba"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-27c4979c228128d1"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-28eaec186367612e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2a0f8e25ec04f754"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2bf14613547adc3f"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2e1746a92403752a"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2efb645f956b6e01"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-2fb2f570ccd0d836"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-310d37809c7ed938"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-33e1067f5d29ee00"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-36956fc6b662a17b"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3755c76a246121e3"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-377d9f8488a9471d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-37d4cd5e1ea140dc"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3df3db0092eea1e2"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3ec3c75c92838575"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3ee57ca93f6efed4"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-3f7804552bd81407"
+          }
+        ],
+        "selected_count": 50,
+        "side_effects": {
+          "external_action": false,
+          "registry_write": false,
+          "repository_mutation": false
+        },
+        "top_k": 50
+      }
+    },
+    {
+      "case_id": "xujiu-literary-context",
+      "query": {
+        "asset_kinds": [
+          "FUNCTION_ASSET",
+          "NONFUNCTION_CLAIM"
+        ],
+        "asset_role": [
+          "NARRATIVE_CASE"
+        ],
+        "case_id": "xujiu-literary-context",
+        "collision_use": [
+          "EXPLAIN"
+        ],
+        "top_k": 50,
+        "unesco_field_codes": [
+          "55",
+          "62"
+        ]
+      },
+      "result": {
+        "candidate_universe_size": 223,
+        "coverage_warning": null,
+        "derived_query_facets": {
+          "asset_role": [
+            "NARRATIVE_CASE"
+          ],
+          "collision_use": [
+            "EXPLAIN"
+          ],
+          "unesco_field_codes": [
+            "55",
+            "62"
+          ]
+        },
+        "exact_validation_status": "ALL_SELECTED_EXACT",
+        "fallback": {
+          "explicit": true,
+          "occurred": false,
+          "reason": null
+        },
+        "invalid_selection_count": 0,
+        "invalid_selections": [],
+        "operation_id": "knowledge.collide_object",
+        "run_mode": "READ_ONLY_RUN",
+        "schema_version": "task172-step07-routing-result-v1",
+        "selected": [
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-014e3b2082f1e828",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55",
+                "62"
+              ]
+            },
+            "score": 13,
+            "source_record_sha": "092bcf27f119005c1d5f1b612a29c6a7b3aaf1ea7b522289fd08810272b4f016"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-8fc413fb1235869b",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55",
+                "62"
+              ]
+            },
+            "score": 13,
+            "source_record_sha": "0489b5bbdd3197584616ca67c3cf9f7c78d7a282cf35a9b283e7cb0e30192e59"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-9c2597c389666ff2",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55",
+                "62"
+              ]
+            },
+            "score": 13,
+            "source_record_sha": "bc0f792222b291554cae4d4bd5e2c291b16aa15c93500c349380d132424a3620"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-b00b2ed621056b9c",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55",
+                "62"
+              ]
+            },
+            "score": 13,
+            "source_record_sha": "3d6462fa7fdefddcfe7dec73b9eae722a97b519396825371efefd636526bae25"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-d64a656ae442e99b",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55",
+                "62"
+              ]
+            },
+            "score": 13,
+            "source_record_sha": "6485a7c0eeae0ac91aaffac29cbcdbb18fdd65344a90631977445e14489711b6"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D107",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "610f93246c39847fef28d37031e5fb89dc1abf4864855ef3ff00ffdea218885b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D11",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "6748113bb5f4f2a1161dea07c97c9f3cde57c99e8065802e42cbaba5827c3c11"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D189",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "3ff3e572876e3ce1338b09e1a743bd508a2ae14489c7a7e6bd1ec738d2d94b18"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D190",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "f3c516d736d8bf467d69c8130303d248ada23275ef54db6cec553d09fa7db949"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D225",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "8468cbf3fbd58b3b67a6cec273acc0ce534bbdb8fa964f48522c0b18488e335d"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D260",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "67b9d907d78b0306d6a38fda8d3271519fcc4bbe1c7028a0634a85daebe2c693"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D34",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "98d75a21c59d743315a3bee47413699a3c762f2d5bc36f7c057cd9d02fb2f2e2"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D577",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "f422634d44be3f123c57c602e1e211a0c8437bf260ec72479f9f7f7fe96a290b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D580",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "f0a3f266462048b5c6564b5afcf9acfeca00480c2fa54beb059d5d34f923bf01"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D586",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "c7e3280c0a8ee1f03a37a95c9c98942082c497ad45e72a00a33c43f250102c3f"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D587",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "64db9d39b563eb8997340243e20f799301cd49786a5071d442d9d7db16ab0e84"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D588",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "4b6795e61dea09400a89237dfba39226e642cd229f921e78ed20e2286243a226"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D592",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "bb9e77c9d39cd33b2b757b08209d67297c588b44992e73d505a01f426b3a63fa"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D593",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "7b5447caee7c06f2bf4ba39e1530f1419eff4bad69ea6bbc185eb5ad7aa02a5b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D598",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "25e22e8efa7b2f691a440c1cc13bcc466140b7395b4e104de1c5deb86b202bd6"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D601",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "579781d2f598fd2817d4d1da4e7f34af2496ef8fa5ed88117ba77dd824dc6464"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D602",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "b291749da9367f90a98df119394c72b7f1f6d63683f326ae1edcf18a83a1f813"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D603",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "690fbe03705b6066a2fedc7ea15b34bee070b1557587be55d7d0e9e562e63dbe"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D604",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "ad9ef5f8e5b2dde6ff5477f6ede7e6186002d5a5c02dd55cc29cde3a249a1464"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "T1",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "4ec0b0af6f8f618331412fa99faa522fbf75720cef668a7c0c59ea8f19080c81"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "T11",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "4b3c1349f8aa6abf8edc9f30fd7a0184ea1bcdf66c10332bcad7aa9f80e4b743"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "T16",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "bc2355cb350c04dcbde9c2e5d165edf9773f558b13b2712d0af22aab5d6477e2"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-01310cdbd47cbf9b",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "fb8a07570e6af1e1660c079107387385f327f3e2e1136ba197fa3b1d7a9d882d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-015449c73c27e40f",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "7c0a3949c4f19228d3626ff68cf7896128de957afd689c8bce019fbef26efb17"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-01ec927e633c8ab6",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "d991e361c07cac9b7bc297b124f8fa7110ed289d0702c7401eb5dd53c3533cfa"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-02783621ee181662",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "882359f82fa1991ae57ae516a38921b261dde2a664b8f7acb3d72c582984628c"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-029c04589e4bc7bb",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "bb904437518d09e82ce512d78cda9dc86f64912aa72b452a6e57d51febe13bd1"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-029fee7ec2d002ce",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "804cdd90cf1f5d9c29602c9f7e4e11648b39025547465e60fa5bb38ba99fac3d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-03db2dc6f343d733",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "439b13917eacaaae248e86eaf561993fa87ee25183b8faf8d777de890e90d2f7"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0446920d2988dc15",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "5802f9f719d1ee8f8aae33f39b6c235b986313e0af46dea4234efa6c90d1b746"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0495cb9a528317a7",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "5eed95d74147f5619f5ee6a8795a93531e88a453d0f29c0b24ea60151765fb56"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0545fe4659f737b5",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "9a44d1a8a543d1001d18b6c9d85324423e66cdb0b5dd63474e080e23d4ce21ff"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06bb73ba1af71baa",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "07276d214952686ec4bfafb638c5779d5cbe2bacdf8b5a63b75d9d980044a185"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06e3a8f48150da38",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "fbd7aea68481d0abcc51f304c49cd76629811555b7ee764831be0aa2a636887d"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-07a39ab0958e0eb0",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "828daf2ce3aae8be8f4c4415681b065e30feb44b1a2331453556080446802a64"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-08dd51bd4230ce81",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "c90c40db5552398be4a27f78cd3475d65eb36ed2ba19eb1f600a966a916e1911"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0970661cad19cfd1",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "bcd5a0e075b8cfc801977ae11fd5e898685838c2d4833c84c4a58b0efa6b74d6"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0b449a46733d2d8e",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "26459f25ec5642aedd45c46c2457601797e0cdf022a8df34ddaf7b153da8e7f9"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0b5670fc80a69656",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "e3b11d3307030c295523e38f61f22ece4f62b6211b85c1330b464ee1f62acb30"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0c82434a9f96966e",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "f776b28fc5b95baf89c950a1358492aa9b7c46783b845c2ed179c7a1751135f3"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0d57d9d6e46e5bb5",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "e339b94565d354c3fcbe680bd54b853729bec051c3a2a0cdad01f3c90e0c71b4"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1013abf2c5e34da7",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "a6bb696ed36598852541246f1a8f0f77ec8fc0836b4f0c797fc1b761ee18f1cf"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-118753324af9e79a",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "62"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "13e0a235365835905524c847ccd5530942d526bdc0fe7c2a113957a9d8c036fe"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-11bc029a15a476c8",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "0faf342527d6f0dbdf8ee9c74905e907aea5bf44d6cac77369a12b60d5e9bbad"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-123951096ac5060e",
+            "matched_facets": {
+              "asset_role": [
+                "NARRATIVE_CASE"
+              ],
+              "collision_use": [
+                "EXPLAIN"
+              ],
+              "unesco_field_codes": [
+                "55"
+              ]
+            },
+            "score": 9,
+            "source_record_sha": "0dc6bc2a527f0dc17dd4c822fa2ede6ef77b1a63251a51383213c09c83f52643"
+          }
+        ],
+        "selected_canonical_ids": [
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-014e3b2082f1e828"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-8fc413fb1235869b"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-9c2597c389666ff2"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-b00b2ed621056b9c"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-d64a656ae442e99b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D107"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D11"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D189"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D190"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D225"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D260"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D34"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D577"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D580"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D586"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D587"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D588"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D592"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D593"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D598"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D601"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D602"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D603"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D604"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "T1"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "T11"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "T16"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-01310cdbd47cbf9b"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-015449c73c27e40f"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-01ec927e633c8ab6"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-02783621ee181662"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-029c04589e4bc7bb"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-029fee7ec2d002ce"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-03db2dc6f343d733"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0446920d2988dc15"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0495cb9a528317a7"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0545fe4659f737b5"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06bb73ba1af71baa"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-06e3a8f48150da38"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-07a39ab0958e0eb0"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-08dd51bd4230ce81"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0970661cad19cfd1"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0b449a46733d2d8e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0b5670fc80a69656"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0c82434a9f96966e"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-0d57d9d6e46e5bb5"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-1013abf2c5e34da7"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-118753324af9e79a"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-11bc029a15a476c8"
+          },
+          {
+            "asset_kind": "NONFUNCTION_CLAIM",
+            "canonical_id": "NFC-123951096ac5060e"
+          }
+        ],
+        "selected_count": 50,
+        "side_effects": {
+          "external_action": false,
+          "registry_write": false,
+          "repository_mutation": false
+        },
+        "top_k": 50
+      }
+    },
+    {
+      "case_id": "rest-evidence-boundary",
+      "query": {
+        "asset_kinds": [
+          "FUNCTION_ASSET",
+          "NONFUNCTION_CLAIM"
+        ],
+        "case_id": "rest-evidence-boundary",
+        "collision_use": [
+          "EVIDENCE_CHECK",
+          "MECHANISM_TEST"
+        ],
+        "top_k": 50,
+        "unesco_field_codes": [
+          "61"
+        ]
+      },
+      "result": {
+        "candidate_universe_size": 801,
+        "coverage_warning": null,
+        "derived_query_facets": {
+          "collision_use": [
+            "EVIDENCE_CHECK",
+            "MECHANISM_TEST"
+          ],
+          "unesco_field_codes": [
+            "61"
+          ]
+        },
+        "exact_validation_status": "ALL_SELECTED_EXACT",
+        "fallback": {
+          "explicit": true,
+          "occurred": false,
+          "reason": null
+        },
+        "invalid_selection_count": 0,
+        "invalid_selections": [],
+        "operation_id": "knowledge.collide_object",
+        "run_mode": "READ_ONLY_RUN",
+        "schema_version": "task172-step07-routing-result-v1",
+        "selected": [
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D108",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "909c6647a983cd36c8459b0bb64216c12fa3a40ed68df0b730752a203c0a4f09"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D109",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "297ffca80c2f6f4d334220b5f44b9451eaf96d2c947fdad8fba19b56e2fbaed1"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D110",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "1036b5eedda137b94c893f708cf01aa432c09ff9ee3295f5607d56e0da5b12fc"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D111",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "5a8d25c169409db8e6859ef03650cacc944a81b5696ee93a7db791b8afee73a8"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D112",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "1bbb01f9f599907ae63e63616eaf1216fa51cfea97f42bd36213d37bd3f87518"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D113",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "2ac4f4ccd2825199f4d257fc8f65ecfeab712aa00694570d64da6a3d949982c1"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D117",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "6ae6db1c90948f63c83cda6edba4b835104dbd4bece879037536bdd920b92b64"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D118",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "bc39fec6722a204d53405e7017852deaa5d9db7f6a3ed504587dd03b96712594"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D119",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "d09b78393286f66718becdd04317dfdb5e9c26c1fae9e9092a9c62e2802bd957"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D120",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "d9c0dad7940be9e2d7e3ac2c165f598800aafc220cfc01c6effb10d6b9ced8fe"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D121",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "868e05c8cf2715ac815c59fec8adf9a073b3f39f1151d6d18d6d96482f92b0c0"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D122",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "8f181d9cb817cfd219f61b6a122bced08c4a25af2c7053bf122e60301416510a"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D123",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "e2eab96e2e912f37c2f1fe52b1ba70f03e612a813a4a712d7391bd3358dc8c58"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D124",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "3e370adcd16d5d6d7891fad331037d72264fd1e29377a761efd14d550d1a0a0d"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D125",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "8b7fe27b0eb38059def095766ce381d1a47dc49e8cda9d3c04b6c0c6660f2fc2"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D126",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "dbaa8601d4d09af07c65940f355f8a8fbab5ebb1b1427e164077f886d76bb4ff"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D128",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "61999d8651eacc8754c743d7f0053f177fdc9cf218bf7704d5cddeac39974878"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D138",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "2b965bd05e92abe9621fb9c17ab46c4c54f5f960646872eef047dde6e7400d3e"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D155",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "b1939055d81679c7c24fc469abe83bf5db068a697ecf62bb9cb51e93084f2df8"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D156",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "fa99f53e63f40c7c7376fc4a30f6804ff00f7da103cbc05c9a820c14a4fd2634"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D157",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "25ccf45e564f0920e3a05e17f26eee56145c2ac27f3e8877f6ed1ac14e4e01f4"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D191",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "8788f8d224d66ddd8b4afc7c41197643a22c04dd68a4836782cb6a283871c9f6"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D192",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "7534e3ff51a26b941ab126145f8f585f9b9050902e23d2f5937a060863256d97"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D193",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "696348ef8d1f1dec60e3d5569d879048a2dc8e647685598f3688f9a6a3a6396a"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D194",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "42dd5ece706dc33dea5a7d7c06abe19a1d87b353d3a2a26839a3c2dcb1161a64"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D195",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "1d94dd2ff354631be6b74a5b6212ee535de3792ad488e4af2f150a857037a83c"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D23",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "f92324e893bc3bbea53e29d5fd1851dccea1370b5021bb96236151a2e824225c"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D26",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "604bc65e032586b8623df5940320a39949541b4c126cd9cd5be6b41dbaf9a3c0"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D32",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "f628a9675c8f439c934bf15bf2f36cae205ecb9634f403168142d12d07941faa"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D33",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "2de61b6e651732f52f2cb203c0e9abbdc3975d586b8b38ecb153c5cd2e931a81"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D38",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "8b670e1113cdf54265bd39c22a3a3a1d66da3d61f4cf436bf67f73a564568832"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D39",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "1b196db8c2464ea86ab10347828fba75485cf7aaa398625bbe033ba18b5f730e"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D41",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "db4d27a7638d768e297ea85a1c2cff608242b213970e3ad7a2065508ba7e57ca"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D468",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "cc48a4c32a1660657f810a8e1ebba9b78ddfb780e7f7aa5c564f43dab181c564"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D471",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "41a0d77aacde0323ef60d3fe2b1d3e0f1827effd4acfa92e5871b58f62e46577"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D476",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "5731e74d056b5e64674a3c61a60b240df99a8415ff5b6743cfec7bee7b00948c"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D479",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "33a62210df36148f272877ec5d8cb82a818df2adea5912f119733b246a47f64e"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D480",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "df248c3b3785faa027f9569f79ad458f43c4b44e0fc0b9cf6c0e5eb51c08634a"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D483",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "1ff05a61ef3e4b5cd39ecd7f36a03cdfeab7567bcc5bbaf650ff117d01c6bfd8"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D488",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "2fe49061dc88ec76d486862ce8090999fae7a5dadac8dc4341aaada9bc3f77e5"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D50",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "6a27277f6c92600dfdf4580edbbee4939d327cc579ab96db16b0252784f0f32f"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D506",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "1e36507c6de8dfe199f609cf391b3cf66a4f5fed86737a91c863e7ad0cac4a8b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D555",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "8060714937799154e11c70033eab7d2b10829ad678a718edd4fa0ea2ab75207b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D67",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "e832471cf10aec0a8f7a14701f20eb24345a55fee991d04b8c57d96d260d34e1"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D69",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "4a8ed66edd61515f119c2389c2b2b0223e4370d893316247cc6c66221b5b0b1b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D86",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "960e6ad1561288e8d1e26dd6711a54efcf7f2ccc0cf87d78c6acf08b3411bf23"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D89",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "45e6a0e98a515c2442725a7cfa6bf0861e777de67b04d6852fac1ba7327dc64e"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D93",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "8fbe16fa58aaa4841a250bbac0648169b1a24077e33b62cf1ebcbc3a1a0aae63"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "IMPLICIT-003E23FA42321148",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "b8db9f4eae8f9593f9cc8b9dbe5a110a277c4f8b1c8694d13c6cd94c13937b7b"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "IMPLICIT-014BDB98F6515924",
+            "matched_facets": {
+              "collision_use": [
+                "EVIDENCE_CHECK"
+              ],
+              "unesco_field_codes": [
+                "61"
+              ]
+            },
+            "score": 7,
+            "source_record_sha": "050f3fd867e10f8033df3a3a2fdfe55669b24b0adb4764a68ed355de92a2efef"
+          }
+        ],
+        "selected_canonical_ids": [
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D108"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D109"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D110"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D111"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D112"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D113"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D117"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D118"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D119"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D120"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D121"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D122"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D123"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D124"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D125"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D126"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D128"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D138"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D155"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D156"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D157"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D191"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D192"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D193"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D194"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D195"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D23"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D26"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D32"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D33"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D38"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D39"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D41"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D468"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D471"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D476"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D479"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D480"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D483"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D488"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D50"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D506"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D555"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D67"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D69"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D86"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D89"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "D93"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "IMPLICIT-003E23FA42321148"
+          },
+          {
+            "asset_kind": "FUNCTION_ASSET",
+            "canonical_id": "IMPLICIT-014BDB98F6515924"
+          }
+        ],
+        "selected_count": 50,
+        "side_effects": {
+          "external_action": false,
+          "registry_write": false,
+          "repository_mutation": false
+        },
+        "top_k": 50
+      }
+    }
+  ],
+  "claim_ceiling": "Candidate retrieval and exact authority validation only; no new claim, evidence, truth, causality, novelty or registry admission.",
+  "hard_checks": {
+    "all_selected_exact": true,
+    "fallback_reasons_explicit": true,
+    "invalid_id_count": 0,
+    "max_candidate_universe": 801,
+    "max_selected": 50
+  },
+  "pilot_scope": "bounded routing transparency only; not a replay adjudication",
+  "schema_version": "task172-step07-routing-pilot-v1",
+  "step": "Task172 Step07"
+}

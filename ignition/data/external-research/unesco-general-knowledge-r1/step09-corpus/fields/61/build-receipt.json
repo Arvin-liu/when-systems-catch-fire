@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 15,
+    "global_links_after_field": 1720,
+    "global_physical_records_after_field": 1590,
+    "new_physical_records": 113,
+    "selected_links": 120
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "61",
+  "field_label": "PSYCHOLOGY",
+  "formal_parent_head": "66234e27368edb618886ac5e2b26e2fd890067ed",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "a310a2d885783da6664fa4d59911ca22500a1d65b7abdfcd7c46745c2ddce469",
+    "field_admission": "0c10879c6fa823b7d0f503650068cd0261a36e19b6986211ab447b8d57029512",
+    "manifest": "b0360d41671514ff968a25b6dbbdcdd596bb574fa46eb1b01a614689b1270a26",
+    "operation": "eca30c94bd49a3d3fc6453f49592fa3c48cd11099adecb9d594d17e2e76010a8",
+    "physical_records": "d14d7b3f48f2c38c33541fafd06fb111b67dd2e545ad15fd4a090d25ed5d6da1",
+    "report": "44ae5e55d3e17bd3b105d1e3bd8b6f379977589791145f95cb35822ff5c6b204",
+    "source_freeze": "e89562ccb0e29dfd0e0af07e9f06405e05fd65c309f155196bdfa8dfcdee5a7c"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "e89562ccb0e29dfd0e0af07e9f06405e05fd65c309f155196bdfa8dfcdee5a7c",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

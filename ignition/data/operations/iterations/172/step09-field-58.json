@@ -1,0 +1,38 @@
+{
+  "admission_status": "METADATA_ADMITTED_MANUAL_REVIEW_REQUIRED",
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "counts": {
+    "field_disciplines": 4,
+    "global_links_after_field": 1512,
+    "global_physical_records_after_field": 1396,
+    "new_physical_records": 28,
+    "selected_links": 32
+  },
+  "coverage_status": "READY_FOR_MANUAL_REVIEW",
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "field_code": "58",
+  "field_label": "PEDAGOGY",
+  "formal_parent_head": "594bb7e53c367b7ee9c1e20b43796f4590503967",
+  "iteration": 172,
+  "schema": "task172-step09-field-operation-v1",
+  "source_freeze_sha256": "697c943232b2d9fd708166799cfddbeebe0b5ff2fb6e599fe738f3d26ce8b5d4",
+  "step": "09",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

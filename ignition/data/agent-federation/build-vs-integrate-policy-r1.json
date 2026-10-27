@@ -127,6 +127,62 @@
         "tests/test_task150_step08_provider_failure_fallback.py",
         "tools/validate_task150_step08_provider_failure_fallback.py"
       ]
+    },
+    {
+      "exception_id": "TASK172_GATE_C_SCHOLARLY_POLICY_NO_RUNTIME_AUTHORITY",
+      "capability_scope": "Retain the Task172 Gate C scholarly-admission provider-role policy as metadata-only governance evidence; no provider runtime, retrieval runtime or external-agent authority",
+      "external_options_considered": [
+        "the four declared provider surfaces named by Gate C for bounded future metadata discovery",
+        "the existing Reference Executor as the offline conformance surface",
+        "a custom scholarly provider runtime or authenticated integration"
+      ],
+      "reproduction_steps": [
+        "Run Task172 Gate C policy validation on the existing Draft PR #218 branch.",
+        "Run validate_federation_ownership.py --check-fixtures --scan-git-diff.",
+        "Observe that the provider-roles.json policy filename is rejected by the protected provider-path classifier without a narrow evidence-only allowance."
+      ],
+      "observed_failure": "The unchanged Reference Executor ownership gate classifies the Gate C provider-role policy filename as a protected provider runtime path even though the sidecar performs no live retrieval, stores no scholarly content and grants no runtime authority.",
+      "threshold_or_boundary": "This allowance covers exactly the repository-local Task172 Gate C scholarly-admission policy sidecar directory. It authorizes policy and provenance records only; it grants no provider runtime, network action, credential, session, Current capability, evidence promotion or external-agent execution.",
+      "least_privilege_impact": "No executor, provider, browser, channel, credential, cookie, network, remote-Git, external-action or production authority is added; Gate C remains metadata-only and live scholarly retrieval remains disabled.",
+      "reversibility": "The exact sidecar allowance and its policy-only records can be removed without installation, external configuration, persistent provider state or changes to the Reference Executor.",
+      "owner_review_ref": "IGNITION-20260913-176 direction lock; Task172 Draft PR #218 Owner review remains required before any later provider admission",
+      "decision": "ALLOW_TASK172_GATE_C_POLICY_ONLY_NO_RUNTIME_AUTHORITY",
+      "external_executor_or_adapter": "OpenAlex, Crossref, OpenAIRE and PubMed E-utilities are named as bounded provider-role subjects only; the policy sidecar is carried by Ignition-owned validators and does not integrate a provider runtime",
+      "contract_gap": "The frozen Reference Executor ownership classifier has no policy-only scholarly-provider role for a filename containing provider terminology, while Gate C must retain an auditable metadata-admission policy without adding the capability itself.",
+      "why_adapter_cannot_solve": "No provider capability is being integrated. An adapter cannot change the evidence-only classification of the policy filename; this exact exception records the boundary without bypassing the adapter or runtime freeze.",
+      "minimal_build_scope": "Only the Task172 Gate C policy-only sidecar under data/research/task172-gate-c-scholarly-admission; no provider client, runtime loop, authenticated source, abstract, full text, scan, OCR, corpus row or external action.",
+      "sunset_or_review_condition": "Remove this exact evidence-only exception with the Gate C policy sidecar when no longer needed. It must not become a generic provider runtime bypass; any later provider, credential, authenticated channel or external-action admission requires a separately reviewed task.",
+      "protected_paths": [
+        "data/research/task172-gate-c-scholarly-admission/"
+      ]
+    },
+    {
+      "exception_id": "TASK172_STEP08_METADATA_PILOT_NO_RUNTIME_AUTHORITY",
+      "capability_scope": "Retain the Task172 Step08 bounded scholarly metadata pilot as evidence-only provenance; no provider runtime, retrieval runtime or external-agent authority",
+      "external_options_considered": [
+        "the declared OpenAlex, Crossref, OpenAIRE and PubMed metadata interfaces used by the bounded pilot",
+        "the existing Reference Executor as the offline conformance surface",
+        "a custom scholarly provider runtime or authenticated integration"
+      ],
+      "reproduction_steps": [
+        "Run the Task172 Step08 metadata-only pilot validator on Draft PR #218.",
+        "Run validate_federation_ownership.py --check-fixtures --scan-git-diff.",
+        "Observe that the provider request receipt under the pilot directory is rejected by the protected provider-path classifier without a scoped evidence-only allowance."
+      ],
+      "observed_failure": "The unchanged Reference Executor ownership gate classifies the Step08 provider request receipt as a protected provider runtime path even though the pilot stores only normalized metadata, request hashes and status receipts and grants no runtime authority.",
+      "threshold_or_boundary": "This allowance covers exactly the repository-local Task172 Step08 metadata-only pilot directory. It authorizes provenance, normalized bibliographic metadata, crosswalk and dedupe records only; it grants no provider runtime, network action, credential, session, Current capability, evidence promotion or external-agent execution.",
+      "least_privilege_impact": "No executor, provider, browser, channel, credential, cookie, network, remote-Git, external-action or production authority is added; live provider invocation remains outside the Knowledge operation and the pilot remains metadata-only.",
+      "reversibility": "The exact directory allowance and pilot records can be removed without installation, external configuration, persistent provider state or changes to the Reference Executor.",
+      "owner_review_ref": "IGNITION-20260913-176 direction lock; Task172 Draft PR #218 Owner review remains required before any later scholarly corpus admission",
+      "decision": "ALLOW_TASK172_STEP08_METADATA_PILOT_NO_RUNTIME_AUTHORITY",
+      "external_executor_or_adapter": "OpenAlex, Crossref, OpenAIRE and PubMed E-utilities are provider-role subjects only; the bounded pilot is carried by Ignition-owned metadata normalizers and validators and does not integrate a provider runtime",
+      "contract_gap": "The frozen Reference Executor ownership classifier has no metadata-only scholarly-pilot role for a provider-named receipt path, while Step08 must retain an auditable request/result boundary without adding provider capability.",
+      "why_adapter_cannot_solve": "No provider capability is being integrated. An adapter cannot change the evidence-only classification of the receipt filename; this exact exception records the boundary without bypassing the adapter or runtime freeze.",
+      "minimal_build_scope": "Only the Task172 Step08 normalized metadata, provider request receipt, crosswalk, dedupe ledger, target manifest, source-freeze receipt and validators under data/external-research/unesco-general-knowledge-r1; no provider client, runtime loop, authenticated source, abstract, full text, scan, OCR, corpus evidence or external action.",
+      "sunset_or_review_condition": "Remove this exact evidence-only exception with the Step08 pilot records when no longer needed. It must not become a generic provider runtime bypass; any later provider, credential, authenticated channel or external-action admission requires a separately reviewed task.",
+      "protected_paths": [
+        "data/external-research/unesco-general-knowledge-r1/"
+      ]
     }
   ]
 }

@@ -1,0 +1,58 @@
+{
+  "admission": {
+    "corpus_identities": [
+      "GENERAL_KNOWLEDGE_REFERENCE",
+      "SCHOLARLY_METADATA"
+    ],
+    "mass_formal_ingestion_authorized": false,
+    "mode": "METADATA_ONLY"
+  },
+  "command_source": {
+    "blob_sha": "98fd25bd1886cf8675992413d6c55d1e09b4502f",
+    "path": "agent-commands/IGNITION-20260913-176.md",
+    "ref": "b1fc45fb",
+    "repository": "Arvin-liu/1111"
+  },
+  "decision": "GATE_C_PASS_FOR_SCHOLARLY_ADMISSION_POLICY_AND_PROVIDER_ROLES; METADATA_ONLY; NO_CORPUS_ADMISSION; 24_FIELD_FORMAL_INGESTION_MAY_BEGIN_AFTER_EXACT_HEAD_CI",
+  "gate_r": {
+    "hard_check_violations": 0,
+    "manual_review_required": 750,
+    "precision_pilot_rows": 750,
+    "source_exact_head": "6d704d570827bf8d6ebb65fb65bcdd236056b4d3"
+  },
+  "gate_t": {
+    "discrepancy_ledger_sha256": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
+    "primary_parse_sha256": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a"
+  },
+  "pilot": {
+    "abstract_fulltext_persisted": false,
+    "corpus_admission": false,
+    "domains": 4,
+    "live_retrieval": false,
+    "metadata_rows_admitted": 0,
+    "synthetic_cases": 8,
+    "target_per_domain": 5,
+    "target_range_per_domain": [
+      5,
+      12
+    ]
+  },
+  "policy_hashes": {
+    "admission_policy": "bfee4186f04534a6e77be470997f036782f69f35c9ec02278b2992cdcc17cb32",
+    "correction_retraction_policy": "b99b1a5751b7f1d9a7f0f0850d399382195bedbdba0880c345a2ec311e0cc9b6",
+    "cross_domain_pilot": "9a2094f945c1b9369939d0f47fb6aebe637253e84061bc3b6fde0c51d19e09f8",
+    "dedupe_policy": "e4c5c2b36ae7c770da067684a0b466a240856852503d9acbae27e6412b38a0e8",
+    "provider_roles": "438ff3511f57f972ed2af36443df9f9480ff8210a5f3e94f442a34ea7b5bafdf",
+    "rights_policy": "f05e74123ee29f03cc55de3f7d1a41607313881a6524ab83190a92c6cda5b4fa"
+  },
+  "report_sha256": "04bb5f54bd641d7311123681ce9ceec51a5b3167bc8495272e82e810a29d1155",
+  "schema": "task172-step05-scholarly-gate-v1",
+  "source_exact_head": "998b5654248b41a8982d0674bf0368b400b65eec",
+  "source_freeze_sha256": "0c60b1d453c150087a111dbc5a97bf754c4048678f5c879ebd3ef1b0be3d38d1",
+  "step": "Task172 Step05 / Gate C",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

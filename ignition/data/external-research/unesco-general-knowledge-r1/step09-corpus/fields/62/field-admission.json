@@ -1,0 +1,109 @@
+{
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "coverage": [
+    {
+      "discipline_code": "6201",
+      "discipline_label": "Architecture",
+      "field_code": "62",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 26
+    },
+    {
+      "discipline_code": "6202",
+      "discipline_label": "Literary theory, analysis and criticism",
+      "field_code": "62",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 20
+    },
+    {
+      "discipline_code": "6203",
+      "discipline_label": "Fine arts theory, analysis and criticism",
+      "field_code": "62",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 16
+    },
+    {
+      "discipline_code": "6299",
+      "discipline_label": "Other artistic specialities (specify)",
+      "field_code": "62",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 21
+    }
+  ],
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "evidence_promotion": false,
+  "field_code": "62",
+  "field_label": "SCIENCES OF ARTS & LETTERS",
+  "formal_parent_head": "c0e58f64d07f3fee3389593d4d90426c7ddfe71e",
+  "formal_write": true,
+  "global_physical_record_count_after_field": 1615,
+  "manual_review_required": true,
+  "metadata_only": true,
+  "new_physical_record_count": 25,
+  "physical_record_ids": [
+    "scholarly-metadata-129ba23a68c8077ff60178e0",
+    "scholarly-metadata-12b2b20c0ae3bedf6629c67b",
+    "scholarly-metadata-16745704c500bd00e0e60a0e",
+    "scholarly-metadata-1ac81556b4fff5acdab292ca",
+    "scholarly-metadata-1d7c3781ac91f9fc3c5b7cb1",
+    "scholarly-metadata-240186046aee9d5e058b7e24",
+    "scholarly-metadata-26f7514ae64ec36dba8e9df1",
+    "scholarly-metadata-29e8a0ac7fc391812db2ae19",
+    "scholarly-metadata-2b5a242171a8bb5907747c60",
+    "scholarly-metadata-2c071c4e3abb0575b5686825",
+    "scholarly-metadata-389011c9ad7fd0558d883aff",
+    "scholarly-metadata-40c7b5319719ffd7947fc0db",
+    "scholarly-metadata-4b9777b23a31052d35dc8a55",
+    "scholarly-metadata-5244ca9e33320f00fd8d0dee",
+    "scholarly-metadata-54ec28eb52112ff1bdbef717",
+    "scholarly-metadata-6167d9829192e4329d7725ac",
+    "scholarly-metadata-629cd88009323f32c3cb112c",
+    "scholarly-metadata-64e21e1bbfd2604bf82f5c4e",
+    "scholarly-metadata-6672271585503f27d81301d7",
+    "scholarly-metadata-7498ff4c5d4e401ad97695fb",
+    "scholarly-metadata-87cbba246c65ea5bc9380015",
+    "scholarly-metadata-95ccde9d9e925a1f60b883eb",
+    "scholarly-metadata-a49c0c3aec2e7642114ccd93",
+    "scholarly-metadata-ab1305c9efb50013c71dbe41",
+    "scholarly-metadata-ae5187a65e7739cab89288f8",
+    "scholarly-metadata-bf90a53590e64386fd47418e",
+    "scholarly-metadata-c551b99cb4f5437bb3326a99",
+    "scholarly-metadata-c69685810b6c0f2bc1883452",
+    "scholarly-metadata-d16ef6ba87b23d67b3490124",
+    "scholarly-metadata-e466746807b143d74ebfd6e2",
+    "scholarly-metadata-eaf4bcc60bc40c537ce734ca"
+  ],
+  "policy_ref": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-policy.json",
+  "schema": "task172-step09-field-admission-v1",
+  "selected_link_count": 32,
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

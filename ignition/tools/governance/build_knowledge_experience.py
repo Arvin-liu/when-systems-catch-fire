@@ -775,7 +775,7 @@ def render_search(data: dict, config: dict) -> str:
     for subject in config["subjects"]:
         count = sum(1 for row in data["search"] if row["subjects"][0] == subject["id"])
         lines.append(f"- [{subject['label']}](./indexes/{subject['id'].lower()}.md) — {count} 条主归属记录")
-    lines.extend(["", "## 不确定搜哪个主题", "", "- 先看[知识地图](./MAP.md)的研究问题。", "- 旧结论、旧编号或撤回说法先查[演化与旧称](./EVOLUTION.md)。", "- 完整机器索引位于 [`search-index.jsonl`](../data/governance/knowledge-experience/search-index.jsonl)，可按 title、aliases、status、dependencies、reverse_dependencies 和 history 查询。", "- 函数与断言的全量机器权威仍分别是 identity cards 与 claim registry；搜索层不会覆盖其裁决。", ""])
+    lines.extend(["", "## 不确定搜哪个主题", "", "- 先看[知识地图](./MAP.md)的研究问题。", "- 旧结论、旧编号或撤回说法先查[演化与旧称](./EVOLUTION.md)。", "- 完整机器索引位于 [`search-index.jsonl`](../data/governance/knowledge-experience/search-index.jsonl)，可按 title、aliases、status、dependencies、reverse_dependencies 和 history 查询。", "- Task172 的正交 facet 路由入口见[受控标签说明](./TAGS.md)及其 compact routing index；它只缩小 `knowledge.collide_object` 候选集，不能覆盖 canonical registry 裁决。", "- 函数与断言的全量机器权威仍分别是 identity cards 与 claim registry；搜索层不会覆盖其裁决。", ""])
     return markdown(lines)
 
 

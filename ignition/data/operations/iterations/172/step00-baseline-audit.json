@@ -1,0 +1,401 @@
+{
+  "schema_version": "ignition-172-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260912-172",
+  "step": "00",
+  "status": "PASS_WITH_BASELINE_RESIDUAL",
+  "audit_mode": "CURRENT_ONLY_NO_SOLUTION_DESIGN",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "r1_ref": "e708a471",
+    "r1_commit": "e708a471b2d2bf86697e15f6383193eb3377ad73",
+    "r1_command_path": "agent-commands/IGNITION-20260912-172-R1.md",
+    "r1_command_blob_sha": "d672b0d9c09c7b349274cfaa546715199e89d5da",
+    "original_ref": "b7c27fab",
+    "original_commit": "b7c27fabdded8ba6fb5de2cf840d953ab3a9de03",
+    "original_command_path": "agent-commands/IGNITION-20260912-172.md",
+    "original_command_blob_sha": "50c78515bbfc0a991af5452e716145632cc57dc1"
+  },
+  "formal_remote_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "release_ref": "refs/heads/main",
+    "observed_main_sha": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+    "local_origin_main_sha": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+    "git_ls_remote_main_sha": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+    "exact_baseline": true,
+    "worktree_clean_before_step": true,
+    "existing_task172_branch_search_matches": 0,
+    "existing_task172_pr_search_matches": 0
+  },
+  "task_branch": {
+    "name": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "base_sha": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+    "commits_at_audit": 0,
+    "formal_writes_before_step00": false
+  },
+  "r1_input_provenance": {
+    "local_cache_scan": {
+      "root": "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches",
+      "readable_files_scanned": 41,
+      "exact_sha_match_count_each": 1,
+      "authority": "The named local original attachment bytes, not the relay transport copies."
+    },
+    "inputs": [
+      {
+        "input_id": "got-brain-01-gold",
+        "local_original": "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/黄金与点火概念碰撞-2026年09月12日-来自【得到大脑】.md",
+        "relay_mirror": "agent-inputs/IGNITION-20260912-172/got-brain-01-gold.md",
+        "workbench_copy": "work/provenance-locked-inputs/got-brain-01-gold.md",
+        "sha256": "a783f0ceab5e585b61f4eda0ce4507732e0e090729242437530ef0debd9f83c5",
+        "bytes": 8676,
+        "lines": 118,
+        "final_newline": false,
+        "local_readable": true,
+        "unique_exact_local_hit": true,
+        "copy_byte_match": true,
+        "relay_observed_sha256": "633a28e7a3294d2ff7e7ff9319821419812818cc8f8bdf7dd4890db2aad7bc09",
+        "relay_disposition": "NON_AUTHORITATIVE_TRANSPORT_WHITESPACE_NORMALIZATION_FINAL_NEWLINE_ADDED"
+      },
+      {
+        "input_id": "got-brain-02-xujiu",
+        "local_original": "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/点火操作法碰撞叙旧-2026年09月12日-来自【得到大脑】.md",
+        "relay_mirror": "agent-inputs/IGNITION-20260912-172/got-brain-02-xujiu.md",
+        "workbench_copy": "work/provenance-locked-inputs/got-brain-02-xujiu.md",
+        "sha256": "cd4b6d587bb6b80d53eede8a7f863f710d0430bdcdcf5bb5237422b242b6d905",
+        "bytes": 12545,
+        "lines": 172,
+        "final_newline": false,
+        "local_readable": true,
+        "unique_exact_local_hit": true,
+        "copy_byte_match": true,
+        "relay_observed_sha256": "cccb69192fcdaa0d2a9449ff95806402b46487658a8e36baa8bd0e848a3bba32",
+        "relay_disposition": "NON_AUTHORITATIVE_TRANSPORT_WHITESPACE_NORMALIZATION_FINAL_NEWLINE_ADDED"
+      },
+      {
+        "input_id": "got-brain-03-rest",
+        "local_original": "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/大脑高效休息法碰撞-2026年09月12日-来自【得到大脑】.md",
+        "relay_mirror": "agent-inputs/IGNITION-20260912-172/got-brain-03-rest.md",
+        "workbench_copy": "work/provenance-locked-inputs/got-brain-03-rest.md",
+        "sha256": "6d92ac39669875a0d2a0c5aeb887df319a712d1886313c394da5f50daf4202d1",
+        "bytes": 14540,
+        "lines": 221,
+        "final_newline": false,
+        "local_readable": true,
+        "unique_exact_local_hit": true,
+        "copy_byte_match": true,
+        "relay_observed_sha256": "734ca45c97a0b2864194dd54798ab78c2d946527297666c2638043eca421340f",
+        "relay_disposition": "NON_AUTHORITATIVE_TRANSPORT_WHITESPACE_NORMALIZATION_ONE_BLANK_LINE_AND_FINAL_NEWLINE"
+      }
+    ],
+    "gate": "PASS",
+    "gate_rule": "All three expected hashes have exactly one readable local original hit; each provenance-locked copy rehashes to the declared SHA-256; all three attachments remain data rather than executable instruction."
+  },
+  "current_authority_reads": {
+    "operating_method": "ignition/OPERATING-METHOD.md",
+    "iteration_method": "ignition/ITERATION.md",
+    "agent_start_and_handoff": [
+      "ignition/AI-START-HERE.md",
+      "ignition/AI-HANDOFF.md",
+      "ignition/llms.txt",
+      "ignition/AGENTS.md"
+    ],
+    "operation_authority": [
+      "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "ignition/tools/operations/evaluate_object_collision_run.py",
+      "ignition/schemas/operations/ignition-object-collision-run-r1.schema.json"
+    ],
+    "foundation_authority": [
+      "ignition/data/foundation/function-assets/identity-cards.jsonl",
+      "ignition/data/foundation/function-assets/corrections.jsonl",
+      "ignition/data/foundation/function-assets/closure-summary.json",
+      "ignition/data/foundation/function-assets/dependency-closure.jsonl",
+      "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+      "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "ignition/data/foundation/nonfunction-claims/dependency-graph.jsonl",
+      "ignition/docs/foundation/claim-governance-and-function-identity.md",
+      "ignition/docs/foundation/future-claim-admission-protocol.md"
+    ],
+    "knowledge_authority": [
+      "ignition/data/governance/knowledge-experience/config.json",
+      "ignition/data/governance/knowledge-experience/search-index.jsonl",
+      "ignition/data/governance/knowledge-experience/manifest.json",
+      "ignition/tools/governance/build_knowledge_experience.py",
+      "ignition/docs/governance/knowledge-experience-layer.md",
+      "ignition/KNOWLEDGE/README.md",
+      "ignition/data/foundation/knowledge-corpus-admission-policy.json",
+      "ignition/packs/knowledge/manifest.json"
+    ],
+    "lifecycle_and_accounting": [
+      "ignition/data/operations/current-task-lineage-status.json",
+      "ignition/data/operations/formal-task-lifecycle-r1.json",
+      "ignition/data/operations/current-release-lifecycle-r1.json",
+      "ignition/data/operations/current-path-manifest-contract-r1.json",
+      "ignition/data/operations/generated-output-authority.json",
+      "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+      "ignition/data/architecture/current-facts.json",
+      "ignition/data/operations/current-snapshot-r1.json"
+    ]
+  },
+  "current_identity_snapshot": {
+    "current_formal_task": "IGNITION-20260829-148",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_iteration_boundary": 148,
+    "iteration_method": "1.4.0",
+    "operating_method": "IGNITION_OPERATING_METHOD_R1/1.0.0",
+    "architecture_map": "0.16.0",
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "state": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0,
+    "identity_impact": "PRESENTATION_ONLY",
+    "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade."
+  },
+  "live_counts": {
+    "operation_registry_operations": 20,
+    "operation_registry_knowledge_collision_status": "CURRENT_BOUNDED",
+    "operation_registry_knowledge_collision_mode": "READ_ONLY_RUN",
+    "function_identity_cards": 6151,
+    "function_identity_unique_canonical_ids": 6151,
+    "function_corrections": 12,
+    "function_dependency_rows": 6151,
+    "function_dependency_edges": 1923,
+    "function_registry_closed": true,
+    "function_explicit_quarantine_or_pending": 4999,
+    "nonfunction_claim_registry": 17966,
+    "nonfunction_unique_canonical_ids": 17966,
+    "nonfunction_dependency_rows": 17966,
+    "nonfunction_dependency_edges": 5642,
+    "nonfunction_registry_closed": true,
+    "nonfunction_explicit_quarantine_or_pending": 4993,
+    "nonfunction_candidate_fragments": 31019,
+    "nonfunction_public_surface_records": 466,
+    "nonfunction_public_surface_violations": 0,
+    "nonfunction_conclusion_rebound_candidates": 57,
+    "knowledge_search_records": 24691,
+    "knowledge_human_cards": 653,
+    "knowledge_changes": 548,
+    "knowledge_layered_readings": 574,
+    "knowledge_aliases": 1353,
+    "knowledge_subject_indexes": 60,
+    "knowledge_subjects_preserved": [
+      "MATHEMATICS",
+      "PHYSICS",
+      "SYSTEMS",
+      "COGNITION",
+      "ARCHITECTURE_GOVERNANCE",
+      "WRITING_PUBLICATION",
+      "OPERATIONS_EVIDENCE"
+    ],
+    "repository_path_manifest_rows": 4358,
+    "repository_path_manifest_gates": {
+      "tracked_set_equal_manifest_set": "PASS",
+      "unresolved_zero": "PASS",
+      "stale_zero": "PASS",
+      "duplicate_zero": "PASS",
+      "category_drift_zero": "PASS",
+      "anti_backflow_zero": "PASS"
+    }
+  },
+  "authority_fingerprints_sha256": {
+    "ignition/data/foundation/function-assets/identity-cards.jsonl": "ee77061af46149f6eb92ea80ece4d61f7eac54d65ed63dfcc64adaa193d542b0",
+    "ignition/data/foundation/function-assets/corrections.jsonl": "0eb7866cd20b9e1ee9e7106cca4a51277b3f3e0fa99d09e4adb1a503821c9831",
+    "ignition/data/foundation/function-assets/closure-summary.json": "f30f1908774031a683546d9528e768bd350527c6e4183d135c7889b9bd5d5747",
+    "ignition/data/foundation/function-assets/dependency-closure.jsonl": "59087053198e48619f82fb88a12388be1e0b61a6cfbc896301bc0c84825b336a",
+    "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl": "71db43387ee47d6dca181265791822c2f6f7bb97505989427d748d84d9a53bf4",
+    "ignition/data/foundation/nonfunction-claims/closure-summary.json": "6e6bfabb9ebf73e0a5a66d636b7fc9434220a2f3c77f897e1fe7800e72772ddc",
+    "ignition/data/foundation/nonfunction-claims/dependency-graph.jsonl": "8f8ee536a2d6c0e3085aa459e439f41e8e9d9569d6e0227df53654e336f68e47",
+    "ignition/data/governance/knowledge-experience/config.json": "b10d5fe209ce4f185693571e31917bea63b85d7b4be8d4294fb373117563eca",
+    "ignition/data/governance/knowledge-experience/search-index.jsonl": "c318bc8610079c1157abd93efcb08943c8f40a69bd00403d6ab0a4a73c0e48a7",
+    "ignition/packs/knowledge/manifest.json": "6e5a77f25796ce189e73f02026be1b1544f4c3f736b1a67153134c1fa181bff1",
+    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl": "46eb4448fb3b26a8646615620c5dbb51a38c3f927b647bc78b0d1fc0b0cfd070",
+    "ignition/data/operations/generated-output-authority.json": "8b36fa7c3140bc6589c78ebddeb7de90f6511800dcfe9b71458a41d10e244d0e"
+  },
+  "project_state_projection_drift": {
+    "path": "ignition/data/foundation/project-state.json",
+    "classification": "STALE_PROJECTION_COUNT_DRIFT_OBSERVED_NOT_REPAIRED_IN_STEP_00",
+    "authority_for_current_counts": "Live canonical registries and their closure summaries",
+    "observed_snapshot_counts": {
+      "formal_objects": 622,
+      "function_asset_census_deduplicated_assets": 7371,
+      "function_asset_deep_adjudication_cards": 7371,
+      "nonfunction_claims": 18351,
+      "nonfunction_dependency_edges": 5770,
+      "nonfunction_explicit_quarantine_or_pending": 6084,
+      "nonfunction_conclusion_rebound_candidates": 78,
+      "nonfunction_public_surface_records": 399
+    },
+    "step00_decision": "Record the drift as a baseline residual; do not hand-edit or silently treat the projection as Current canonical truth."
+  },
+  "step00a_scan_input_freeze": {
+    "status": "FROZEN_BEFORE_OFFICIAL_GENERATORS",
+    "recorded_before_official_generators": true,
+    "source_head": "8d4e359a9fdd36e8da136bd4e406aab81f65b803",
+    "worktree_clean_before_freeze": true,
+    "combined_git_file_inventory_count": 4362,
+    "untracked_file_count": 0,
+    "combined_git_file_inventory_sha256": "513d012375682788cba0d378a09784447d7c77f8f0c0017e36be65e64ab829a1",
+    "task172_step00_added_paths": [
+      "ignition/data/operations/iterations/172/execution-contract-r1.json",
+      "ignition/data/operations/iterations/172/progress.jsonl",
+      "ignition/data/operations/iterations/172/step00-baseline-audit.json",
+      "ignition/reports/operations/ignition-172-step00-baseline-audit.md"
+    ],
+    "pre_freeze_records": [
+      "ignition/data/operations/iterations/172/progress.jsonl::STEP-00A-IN_PROGRESS",
+      "ignition/data/operations/iterations/172/step00-baseline-audit.json::step00a_scan_input_freeze"
+    ],
+    "post_freeze_rule": "Do not add or modify any new scan-sensitive Formal path until Step00A generator and fixed-point verification are complete; record final CI only in PR metadata.",
+    "generator_boundary_repair": {
+      "status": "APPLIED_AND_VERIFIED",
+      "reason": "The official generators correctly exposed that this Step00 operation report contains claim-like boundary prose, but Task173 requires operation records to remain provenance-only and not become canonical function or nonfunction assets.",
+      "exact_path": "reports/operations/ignition-172-step00-baseline-audit.md",
+      "function_operation_record_paths": [
+        "data/operations/iterations/172/execution-contract-r1.json",
+        "data/operations/iterations/172/progress.jsonl",
+        "data/operations/iterations/172/step00-baseline-audit.json"
+      ],
+      "function_rule_path": "ignition/tools/foundation/build_function_asset_census.py",
+      "nonfunction_rule_path": "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+      "knowledge_rule_path": "ignition/data/governance/knowledge-experience/config.json",
+      "decision": "Use exact-path exclusions only for the Task172 operation records/report; retain repository path accounting, source-discovery accounting and the human-results ledger, do not broad-exclude reports/operations, and do not edit canonical T2 or CLAIM-T2 records.",
+      "post_fix_expected": "No Task172 operation-record-derived function or nonfunction canonical rows and no Task172 report-derived Knowledge Experience result card; the canonical T2 record remains byte-identical to the base-derived record."
+    }
+  },
+  "step00a_local_acceptance": {
+    "status": "PASS_LOCAL_PENDING_REMOTE_EXACT_HEAD_CI",
+    "formal_head_before_step00a_commit": "8d4e359a9fdd36e8da136bd4e406aab81f65b803",
+    "repository_path_accounting": {
+      "tracked": 4362,
+      "manifest": 4362,
+      "checks_total": 10,
+      "checks_passed": 10,
+      "checks_failed": 0
+    },
+    "foundation_validation": {
+      "checks_total": 63,
+      "checks_passed": 63,
+      "checks_failed": 0,
+      "status": "ALL_FOUNDATION_VALID"
+    },
+    "function_asset_census": {
+      "deduplicated_assets": 6151,
+      "source_occurrence_records": 29559,
+      "deterministic_check": "PASS"
+    },
+    "nonfunction_claim_closure": {
+      "canonical_claims": 17966,
+      "dependency_edges": 5642,
+      "deterministic_check": "PASS"
+    },
+    "knowledge_experience": {
+      "cards": 653,
+      "changes": 548,
+      "layered_reading": 574,
+      "search_records": 24691,
+      "two_pass_determinism": "PASS"
+    },
+    "current_state_sync": {
+      "status": "PASS",
+      "metrics": 16,
+      "impact": "PRESENTATION_ONLY"
+    },
+    "fire_seeds": {
+      "entries": 64,
+      "source_count": 639,
+      "status": "PASS"
+    },
+    "t2_preservation": {
+      "base_identity_card_record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+      "worktree_identity_card_record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+      "identity_card_noncanonical_fields_byte_equal_to_base": true,
+      "operation_record_source_anchors": [],
+      "claim_t2_record_sha256": "a02e5aa6aff35b60f28ca8cdd0beca0f02a0ea887efef594fec17ce8e6a03136",
+      "claim_t2_registry_changed": false
+    },
+    "deferred_residuals": [
+      "The README front-door minimal invocation validator fails identically on base 428d1885d0cb3de40ed492dbf028708ea0129c00 and the current worktree; no README or homepage change is in scope.",
+      "The pre-existing T2 semantic fixture hash drift remains reserved for Step00B; Step00A made no T2 fixture or canonical-record change."
+    ]
+  },
+  "operation_read_only_confirmation": {
+    "operation_id": "knowledge.collide_object",
+    "current_status": "CURRENT_BOUNDED",
+    "default_execution_mode": "READ_ONLY_RUN",
+    "repository_mutation_permission": "FORBIDDEN",
+    "external_action_permission": "FORBIDDEN",
+    "required_current_reads": [
+      "ignition/OPERATING-METHOD.md",
+      "ignition/data/foundation/function-assets/identity-cards.jsonl",
+      "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+      "ignition/docs/foundation/claim-governance-and-function-identity.md",
+      "ignition/docs/foundation/future-claim-admission-protocol.md"
+    ],
+    "evaluator_symbols_observed": [
+      "load_json",
+      "load_jsonl",
+      "_canonical_maps",
+      "validate_run",
+      "render_run",
+      "apply_fixture_mutations",
+      "validate_fixtures",
+      "main"
+    ],
+    "limits_observed": [
+      "Canonical matches establish repository identity and relationship evidence, not truth, proof, external evidence or novelty.",
+      "Input-explicit viewpoints remain SOURCE_DERIVED and cannot be counted as Ignition discoveries.",
+      "CANDIDATE_NEW requires actual nearest canonical matches and never writes a registry automatically.",
+      "Undefined percentages, similarity scores and isomorphism scores are prohibited."
+    ],
+    "confirmation_status": "PASS"
+  },
+  "baseline_validations": [
+    {
+      "command": "python3 ignition/tools/validate_ignition_operation_capability_registry.py --check",
+      "status": "PASS",
+      "observed": "IGNITION_OPERATION_CAPABILITY_REGISTRY_OK operations=20 pack_capabilities=10 statuses=6"
+    },
+    {
+      "command": "python3 ignition/tools/foundation/validate_repository_path_classification.py --check",
+      "status": "PASS",
+      "observed": "REPOSITORY_PATH_CLASSIFICATION_VALID; tracked=4358 manifest=4358; checks=10/10"
+    },
+    {
+      "command": "python3 ignition/tools/governance/validate_knowledge_experience.py",
+      "status": "PASS",
+      "observed": "KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=653 changes=548 layers=574 search=24691 aliases=1353 links=28494 two_click_pages=8"
+    },
+    {
+      "command": "python3 ignition/tools/foundation/validate_claim_governance.py",
+      "status": "PASS",
+      "observed": "CLAIM_GOVERNANCE_VALID; checks=39/39; function census rows=6151; corrections=12"
+    },
+    {
+      "command": "python3 ignition/tools/foundation/validate_function_asset_closure.py",
+      "status": "PASS",
+      "observed": "FUNCTION_ASSET_REGISTRY_CLOSURE_VALID; checks=46/46; cards=6151; dependency_edges=1923; explicit_quarantine_or_pending=4999"
+    },
+    {
+      "command": "python3 ignition/tools/foundation/validate_nonfunction_claim_closure.py",
+      "status": "PASS",
+      "observed": "NONFUNCTION_CLAIM_EVIDENCE_LINEAGE_CLOSURE_VALID; checks=54/54; claims=17966; dependency_edges=5642"
+    },
+    {
+      "command": "PYTHONPATH=. python3 -m unittest ignition.tests.test_ignition_operation_capability_registry ignition.tests.test_ignition_object_collision",
+      "status": "BASELINE_RESIDUAL_FAIL",
+      "observed": "20 tests: 19 passed, 1 failed in test_report_binds_both_current_canonical_registries",
+      "detail": "The existing fixture expects T2 record_sha256 e8aca6e6451d0669f262f840a1ddbb2f83c9420be3ba45fd662f200ac77e470d; current canonical authority returns 29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0.",
+      "introduced_by_step00": false,
+      "step00_action": "Preserve, report and do not silently repair an unrelated pre-existing fixture."
+    }
+  ],
+  "step00_mutation_boundary": {
+    "formal_public_homepage_changed": false,
+    "current_identity_changed": false,
+    "canonical_function_registry_changed": false,
+    "canonical_nonfunction_registry_changed": false,
+    "knowledge_generated_projection_changed": false,
+    "external_action_invoked": false,
+    "network_permission_changed": false,
+    "owner_or_epistemic_authority_changed": false
+  },
+  "next_step": "01",
+  "claim_ceiling": "Task172 repository-local baseline, provenance, Current authority and bounded operation audit only; no external truth, scholarly evidence, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

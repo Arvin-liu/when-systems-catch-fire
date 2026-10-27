@@ -1,0 +1,53 @@
+{
+  "command_sources": [
+    {
+      "path": "agent-commands/IGNITION-20260912-172.md",
+      "ref": "b7c27fab",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-175.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "blob_sha": "98fd25bd1886cf8675992413d6c55d1e09b4502f",
+      "path": "agent-commands/IGNITION-20260913-176.md",
+      "ref": "b1fc45fb",
+      "repository": "Arvin-liu/1111"
+    }
+  ],
+  "content_persistence": false,
+  "counts": {
+    "dedupe_clusters": 310,
+    "manual_review_required": 365,
+    "metadata_admitted": 365,
+    "source_candidates": 365,
+    "target_disciplines": 24,
+    "target_fields": 24
+  },
+  "decision": "STEP08_PILOT_PASS_FOR_METADATA_PIPELINE; NO_DIRECT_PROVIDER_EQUIVALENCE; NO_SCIENTIFIC_EVIDENCE_PROMOTION",
+  "deterministic_derived_closure": true,
+  "evidence_promotion": false,
+  "no_direct_provider_equivalence": true,
+  "outputs": {
+    "crosswalk": "afc2719aeee72ad85e944c8511646a51d3318d0417fb17617c84283389d262bc",
+    "dedupe": "75ff0685716bb66e261f834fef9702b75292b6779ec972d50736a1d723563918",
+    "metadata_admission": "97f044b6a9dd069978b6da2f8d9351c8636232e138369c5f0da597fedcd2c71d",
+    "operation": "78f897847de909d1b33ed3c6f09c4d352ad1b297d8ec6bebf65f0dc39cdf3b84",
+    "provider_request_receipt": "50887b7212364a656f56e72fa75d054d7b6aa51cff82b36b3061322900109ed3",
+    "report": "e4bb96bdf6f86508f331b91d4b89f3b6c49875b848df9e2ccf6583da7cd84cb5",
+    "source_candidates": "e3a9b88735b36ec87fa4febe90704e9e13cbcd2ecda2169b77d11866418448ff",
+    "source_freeze": "5405c79187dd0f9a6c43a080ef0491ad1547f4134d5deb198ba86073e31a9df8",
+    "target_disciplines": "3b8f0cc2568b41ab0f8796f44fe090a0b26fc37be6b7eaa31a7b7a41b4680d56"
+  },
+  "provider_failure_is_not_no_literature": true,
+  "raw_response_persistence": false,
+  "schema": "task172-step08-build-receipt-v1",
+  "source_exact_head": "36a1ed4c0e5b91598b5a4fada4bec1539ccc106b",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

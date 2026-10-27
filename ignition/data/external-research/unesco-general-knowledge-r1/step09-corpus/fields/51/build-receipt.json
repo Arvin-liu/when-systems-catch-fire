@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 4,
+    "global_links_after_field": 1120,
+    "global_physical_records_after_field": 1045,
+    "new_physical_records": 24,
+    "selected_links": 32
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "51",
+  "field_label": "ANTHROPOLOGY",
+  "formal_parent_head": "89e7832cd29691707a76d8347776867a5ad315c3",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "6f26b10c6cac652127edc98c6172e1c05ad91e7598679fefa27e1d5505463be5",
+    "field_admission": "cadcef388b9bdc53120ab428879484d14f78e2c99069fb743e3fd02bbc03bd03",
+    "manifest": "a987900ec10db763d84384a987b248dcd97571df3fa4755d1b7bb44d3cf64e12",
+    "operation": "2f6527d76571ab42c7039d990fba97f4dd5d36592be7992c7722c88065be2432",
+    "physical_records": "630b0995ef757f71ec0e1f741de9bcd14047c195c0adca2b888f0fef074a8fa0",
+    "report": "b070253ef7e8f9c38839dcd6d654f69fad27ae53917fd2c65de68f61ce2da0c3",
+    "source_freeze": "a3a923f138f15681cee4e5b78371ab978eac1ed9f5cde82ce201ac3cfbe238c5"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "a3a923f138f15681cee4e5b78371ab978eac1ed9f5cde82ce201ac3cfbe238c5",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

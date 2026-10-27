@@ -1,0 +1,62 @@
+{
+  "command_sources": [
+    {
+      "path": "agent-commands/IGNITION-20260912-172.md",
+      "ref": "b7c27fab",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-175.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "blob_sha": "98fd25bd1886cf8675992413d6c55d1e09b4502f",
+      "path": "agent-commands/IGNITION-20260913-176.md",
+      "ref": "b1fc45fb",
+      "repository": "Arvin-liu/1111"
+    }
+  ],
+  "crosswalk_sha256": "afc2719aeee72ad85e944c8511646a51d3318d0417fb17617c84283389d262bc",
+  "decision": "STEP08_PILOT_PASS_FOR_METADATA_PIPELINE; NO_DIRECT_PROVIDER_EQUIVALENCE; NO_SCIENTIFIC_EVIDENCE_PROMOTION",
+  "dedupe_sha256": "75ff0685716bb66e261f834fef9702b75292b6779ec972d50736a1d723563918",
+  "gate_c": {
+    "policy_only": true,
+    "policy_receipt_sha256": "9b8c85a5456023a65395f014d353f06280e64d6fac8ba333545415af64d197d6"
+  },
+  "gate_r": {
+    "hard_check_violations": 0,
+    "precision_pilot_rows": 750,
+    "source_exact_head": "6d704d570827bf8d6ebb65fb65bcdd236056b4d3"
+  },
+  "gate_t": {
+    "discrepancy_ledger_sha256": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
+    "primary_parse_sha256": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a"
+  },
+  "pilot": {
+    "content_persistence": false,
+    "evidence_promotion": false,
+    "manual_review_required": 365,
+    "metadata_admitted": 365,
+    "metadata_candidates": 365,
+    "no_direct_provider_equivalence": true,
+    "provider_candidate_counts": {
+      "Crossref": 120,
+      "OpenAIRE": 120,
+      "OpenAlex": 120,
+      "PubMed E-utilities": 5
+    },
+    "target_disciplines": 24,
+    "target_fields": 24
+  },
+  "report_sha256": "e4bb96bdf6f86508f331b91d4b89f3b6c49875b848df9e2ccf6583da7cd84cb5",
+  "schema": "task172-step08-scholarly-pilot-v1",
+  "source_exact_head": "36a1ed4c0e5b91598b5a4fada4bec1539ccc106b",
+  "source_freeze_sha256": "5405c79187dd0f9a6c43a080ef0491ad1547f4134d5deb198ba86073e31a9df8",
+  "step": "Task172 Step08 / UNESCO-modern-index metadata pilot",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "admission_scope": "metadata-only scholarly references; manual review required",
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "correction_retraction_requires_manual_review": true,
+  "cross_field_links_are_not_taxonomy_equivalence": true,
+  "evidence_promotion": false,
+  "no_provider_taxonomy_equivalence": true,
+  "proof_promotion": false,
+  "provider_failure_is_not_no_literature": true,
+  "provider_roles": {
+    "Crossref": "registration and DOI metadata; no content equivalence",
+    "OpenAIRE": "discovery/rights signals; no content equivalence",
+    "OpenAlex": "discovery metadata and stable work identifiers; no content equivalence",
+    "PubMed E-utilities": "biomedical discovery metadata where queried; no content equivalence"
+  },
+  "raw_provider_response_persisted": false,
+  "replication_promotion": false,
+  "same_physical_record_once": true,
+  "schema": "task172-step09-corpus-policy-v1",
+  "selection_policy": "deterministic metadata heuristic only; field/discipline coverage is not scientific relevance validation",
+  "unknown_rights_remain_metadata_only": true
+}

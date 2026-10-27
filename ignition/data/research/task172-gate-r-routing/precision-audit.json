@@ -1,0 +1,35 @@
+{
+  "authority": "Formal pilot sidecar; no canonical mutation and no live retrieval",
+  "decision": "PRECISION_BOUNDARY_READY; ALL_ROWS_RETAIN_MANUAL_REVIEW; NO_FULL_ROUTING_PROMOTION",
+  "deterministic": true,
+  "hard_checks": {
+    "authority_fingerprint_mismatch": 0,
+    "cap_violation": 0,
+    "internal_governance_forced_unesco": 0,
+    "negative_record_positive_use": 0,
+    "orphan_canonical": 0,
+    "out_of_scope_has_domain_code": 0
+  },
+  "manual_review_required": 750,
+  "rows_checked": 750,
+  "sample": {
+    "function_assets": 250,
+    "nonfunction_claims": 500,
+    "total": 750
+  },
+  "schema": "task172-gate-r-precision-audit-v1",
+  "source_exact_head": "6d704d570827bf8d6ebb65fb65bcdd236056b4d3",
+  "state_counts": {
+    "CLASSIFIED": 182,
+    "MULTIDISCIPLINARY": 26,
+    "OUT_OF_UNESCO_SCOPE": 103,
+    "UNRESOLVED": 439
+  },
+  "violations": {
+    "caps": [],
+    "fingerprint": [],
+    "internal": [],
+    "negative": [],
+    "orphan": []
+  }
+}

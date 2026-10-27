@@ -4,6 +4,41 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-1ab0b7265d820f9b"></a>
+## IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit；The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created.；The audit checked the Results Book README, the Task143 portfolio and the Book Project R1 links. All 32 internal links resolve, all 95 registry narrative paths exist, and the six Task143 smoke-test rows retain the exact tuple SMOKETESTOUTPUT / OWNERREVIEWPENDING / PUBLICATIONACCEPTANCENOTGRANTED.；This is entrypoint and link-integrity evidence. It does not turn repository artifacts into Owner-selected production or external publication acceptance.
+- 完整阅读：[reports/operations/ignition-144-step08-publication-entrypoint-audit.md](../../reports/operations/ignition-144-step08-publication-entrypoint-audit.md)
+
+<a id="reading-hr-1bf6463b42d7824f"></a>
+## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：data/operations/merged-iteration-ledger.jsonl 在 main 上呈现： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）；审计对象：data/operations/lifecycle-events.jsonl、data/operations/derived-lifecycle-view.json、data/operations/current-truth-projection.json、tools/propagation/lifecycleevents.py、tagvalidator.py、terminalizationallowlist.py、terminalizationgenerator.py、schemas/operations/lifecycle-event.schema.json；生成方式：tools/propagation/derivedlifecycleview.py（确定性，可重放）；审计时间基准：origin/main = 77352d27bc997ff9418de017f622f0c72dd634e3（任务 107 普通合并）；主题：1. 基线矛盾（任务 108 之前）；data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
+- 完整阅读：[reports/operations/lifecycle-audit-108.md](../../reports/operations/lifecycle-audit-108.md)
+
+<a id="reading-hr-1c328f9ffe6aee1f"></a>
+## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；选择长期极限效用或长期稳定性最大的行动。；'长期极限效用/稳定性'未界定尺度与主体，易退化为维持任何现状（歧义/适用边界）。
+- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/V4.md](../../docs/governance/meta-protocol-reviews/protocols/V4.md)
+
+<a id="reading-hr-1c6a8f5e8b981082"></a>
+## 121B Fulltext Batch Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121B Fulltext Batch Report；主题：Task: IGNITION-20260709-121B；主题：Date: 2026-07-14；主题：Model: qclaw/pool-glm-5.2-night | Thinking: high；主题：Executive Summary；121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure reasons, and 30 provisional reviews were downgraded from FULLT…
+- 完整阅读：[reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)
+
+<a id="reading-hr-1c89ea0a4c2a0aa1"></a>
+## map-epistemic-architecture
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Observer: maintainer and reviewer deciding how claims can move toward publication 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：map-epistemic-architecture；Observer: maintainer and reviewer deciding how claims can move toward publication；Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?；Value recipient / affected subject: readers, maintainers, and subjects affected by claims；Claim ceiling: derivednavigationview；主题：Unmapped Residue
+- 完整阅读：[reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)
+
 <a id="reading-hr-1d52767df2986dd5"></a>
 ## 121Q25D current closeout
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -284,6 +319,13 @@
 - 5 分钟：主题：Object classification；Classification is conservative. Names containing function do not establish totality, single-valuedness, a domain or codomain. Strong labels remain unverified until a proof artifact is linked.
 - 完整阅读：[reports/foundation-architecture/object-classification-20260712.md](../../reports/foundation-architecture/object-classification-20260712.md)
 
+<a id="reading-hr-2f64159284453379"></a>
+## Task172 Step13 — final closeout freeze
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: FINALSCANINPUTFREEZERECORDED 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step13 — final closeout freeze；Status: FINALSCANINPUTFREEZERECORDED；This report records the final scan-sensitive input set for the official derivation chain. The Step10, Step11, and Step12 machine records and reports were present before the freeze. Their hashes, the primary UNESCO parse/discrepancy inputs, the 24-field corpus, and the Step07 routing inputs are recorded in data/operations/iterations/172/step13-final-freeze.js…；The freeze semantics are conservative: 2026-07-30 in Knowledge Experience and 2026-07-29 in Human Results are versioned fixed-epoch/source-history labels, not wall-clock build or evaluation timestamps. Operation/research Markdown is intentionally Human-Result navigation and is also source-scanned by the nonfunction claim closure as bounded source wording; th…；This is the pre-capability-inheritance comparison baseline boundary. It does not authorize Capability Inheritance, MetaRSI, RSI², self-training, or a new control plane.
+- 完整阅读：[reports/operations/ignition-172-20260915-step13-final-freeze.md](../../reports/operations/ignition-172-20260915-step13-final-freeze.md)
+
 <a id="reading-hr-2ffed40e044f68aa"></a>
 ## STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -311,45 +353,3 @@
 - 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q28 肉身锚定的心智层级跃迁写作法审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；repository: Arvin-liu/when-systems-catch-fire；starting origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；isolated branch: docs/121q28-embodied-cognitive-leap-writing-method-20260716；open-work conflict: no open PR or branch targeted the same Q28 method paths at task start; older open publication PRs #17-#21 remain separate historical candidates and were not modified.
 - 完整阅读：[reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md](../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
-
-<a id="reading-hr-3078ad77a2ea0d78"></a>
-## OpenClaw Adapter R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
-- 1 分钟：OpenClawAdapter is a narrow External Agent Federation boundary over the observed public openclaw agent CLI. The Step 00 probe recorded JSON output, UTF-8 message-file input, session-key/session-id pointers, and a bounded timeout. The adapter therefore uses: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：OpenClaw Adapter R1；OpenClawAdapter is a narrow External Agent Federation boundary over the observed public openclaw agent CLI. The Step 00 probe recorded JSON output, UTF-8 message-file input, session-key/session-id pointers, and a bounded timeout. The adapter therefore uses:；The command is assembled as literal argv with shell=False; task text never passes through shell interpolation. Gateway, channel, browser, device, private SQLite/session databases, OpenClaw memory, and the OpenClaw internal plan/tool loop remain OpenClaw-owned and are not copied into the Ignition OS. The adapter reports no progress, cancellation, or native re…；An executor-reported completion becomes COMPLETEDUNVALIDATED progress and a REQUIRESRECONCILIATION receipt until Ignition validators establish evidence. External session IDs are pointer-only references. Step 04 intentionally used captured JSON fixtures and injected runners; LIVESMOKENOTRUN because no external inference, channel action, configuration change,…；Official machine-facing reference: .
-- 完整阅读：[docs/architecture/openclaw-adapter-r1.md](../../docs/architecture/openclaw-adapter-r1.md)
-
-<a id="reading-hr-30fdf00cdb08a566"></a>
-## 休眠问题池与再激活 — IGNITION-20260908-165
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：休眠问题池与再激活 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；休眠池记录数：120。池中每条记录保留来源路径、blob、源行号和原始未解决标记；本任务没有把问题改写成干净的待办或补齐缺失答案。；运行了 full、active-only、休眠相关性排序和休眠低分随机四种消融。结果只报告 L2/L3 结构代理计数，不宣称注意力、记忆或大脑因果。
-- 完整阅读：[docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md](../../docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md)
-
-<a id="reading-hr-314d6d340fda2a7b"></a>
-## IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh
-`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outsid… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh；The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outside the audited set.；The bounded materiality projection was then refreshed for the current registry count (nonfunctionmachine=16240, 48 retained entries, 4 withdrawn entries). Its deterministic check passed, the Human Surface contract passed, and an independent cross-check confirmed that all 11 manifest hashes, source bytes, and human-entry source fingerprints agree.；The five source paths now have these current fingerprints: AI-HANDOFF.md=d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a, ARCHITECTURE.md=bb1861533f57d8e7dd361446ef242dd6dd98dc9c59d03b183bc5f1686ce0e752, docs/project-current-state.md=b8e727cefb42026c834e12de2f495efbd219071b312aff02af04d7d8d9691ad7, llms.txt=4b3f95276294ac47c0ef817853c6acf985…；Claim ceiling: repository-local Human Surface fingerprint and materiality-projection evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md](../../reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md)
-
-<a id="reading-hr-31c369073213a9e3"></a>
-## IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit behavior. No auth content was read, no model or Agent inference was started, no UI action occurred, and no installation, configuration or billing… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection；PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit behavior. No auth content was read, no model or Agent inference was started, no UI action occurred, and no installation, configuration or billing operation occurred.；The scan found 14 candidates: 5 AGENTICEXECUTOR records (4 installed), 4 REASONERRUNTIME records, 3 TOOLONLY records and 2 UI-only records. Installed versions observed include Gemini CLI 0.53.1, Codex CLI 0.144.4, Hermes Agent v0.20.0 (2026.8.3), OpenClaw 2026.7.1-2 (0790d9f), Ollama 0.32.7 and LM Studio CLI commit 6041ae0.；主题：Dynamic selection；Codex CLI is the current selection: Fresh census selects Codex CLI (codex-cli 0.144.4) because it is the only installed AGENTICEXECUTOR with all ten bounded checks true, including Codex public login status exit 0, read-only one-shot transport, structured output, isolated runtime scratch and independent OS validation. This is an admission trace, not a model-q…；Gemini remains blocked because its public auth interface did not provide a bounded status result and auth/home separation plus no-new-billing re-attestation are not proven. Hermes remains blocked by strict structured-result, public-auth and auth-source boundaries. OpenClaw remains blocked by workspace/channel/process-cleanup boundaries. Copilot CLI is not in…
-- 完整阅读：[reports/operations/ignition-140-step09-local-executor-census-and-selection.md](../../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
-
-<a id="reading-hr-321a7bf858f3944f"></a>
-## IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication
-`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication；No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-result/auth gaps, OpenClaw workspace/channel/auth/cleanup/struc…；No new obligation is manufactured, the next eligible action remains RUNDYNAMICEXECUTORADMISSION, and the historical counts remain exactly 6 attempts / 0 validated completions / 0 unreconciled / 2 observation-incomplete. Task141's terminal status remains independent and unchanged.；Machine evidence is ignition/data/operations/iterations/142/step16-obligation-adjudication.json; the canonical registry update is ignition/data/operations/open-obligation-registry-r1.json, validated by ignition/tools/validatetask142obligationadjudication.py and ignition/tools/validateopenobligationregistry.py.；Claim ceiling: independent open-obligation adjudication only; no live completion is claimed.
-- 完整阅读：[reports/operations/ignition-142-step16-obligation-adjudication.md](../../reports/operations/ignition-142-step16-obligation-adjudication.md)
-
-<a id="reading-hr-3254690d89efc00d"></a>
-## Pointfire seven-track external cross-domain replay — repaired governed pass
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Pointfire seven-track external cross-domain replay — repaired governed pass；Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS；This report records the first governed pass of the preregistered external replay. It is a source-scoped research result and not a declaration of universal external validity, causal identification, or epistemic acceptance.；主题：Frozen question and scope；Question: 在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？；The scope is urban or urbanized settings during summer or a comparable warm season. Land-surface temperature, near-surface air temperature, and human heat exposure are kept as separate measurement targets. A source family is an original study, cohort, experiment, or independent official dataset; multiple papers or pages describing the same underlying study d…
-- 完整阅读：[reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md](../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)

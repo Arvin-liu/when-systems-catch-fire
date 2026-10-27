@@ -32,6 +32,13 @@
 - 5 分钟：主题：121Q9 Global Validation；Status: PASS locally for cumulative release candidate Step 003.；Passed locally using .venv-foundation:；tools/foundation/adjudicatecore.py --check；tools/foundation/migratelegacy.py --check；tools/foundation/validatefoundation.py
 - 完整阅读：[reports/release/121Q9-global-validation.md](../../reports/release/121Q9-global-validation.md)
 
+<a id="reading-hr-04914b1570918ae6"></a>
+## Task172 Step09 field 57: LINGUISTICS
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 57: LINGUISTICS；Formal parent freeze: 01201809e8229d770143261c5859e27a89070e3b；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 6；Selected metadata links: 48
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-57.md](../../reports/operations/ignition-172-20260915-step09-field-57.md)
+
 <a id="reading-hr-049665d816ca48a6"></a>
 ## IGNITION-20260824-138 — Step 06 Capability / Auth / Billing Re-attestation
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -46,6 +53,13 @@
 - 5 分钟：主题：101 人类可读知识表面与持续自我纠错引擎；状态：IMPLEMENTEDAWAITINGEXACTHEADREVIEWANDORDINARYMERGE；本报告记录任务 101 在正式仓库中的实现边界。PR、精确 head、CI、普通合并、Pages 仓库设置停用和全新克隆事实由 1111 最终回执在操作完成后绑定；本文件不预先声称这些外部生命周期步骤已经发生。；锁定基线为 428ad50cf4438f027d5b8992d6e362d76037a3bd。基线 README 底部有 4 个承载实质导航的 区块；独立 Pages 产品由 workflow、Jekyll 布局、样式、HTML、生成 SVG 与两组专用测试维护。仓库已有 165 份位于研究、文章、架构、Foundation 与迭代结果根目录的 Markdown 来源，但没有统一的人类结果台账。两张历史总表虽可访问，却不能代表任务 98—100 的当前身份、义务、双成熟度、依赖、处置和证据谱系。；机器审计见 data/governance/human-results/human-entry-audit.json。；根 README 直接显示当前结论、纠正、开放问题、研究与文章结果、函数和断言裁决、自纠链、系统图与项目入口，不再用折叠容器隐藏重要内容。HUMAN-READING.md 给出普通读者与技术读者路线；RESULTS/ 提供最新结果、纠正、开放问题、裁决、研究文章、完整时间台账、Claim Delta、影响分析、证据谱系和审计结果。
 - 完整阅读：[reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md](../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
 
+<a id="reading-hr-04ea1bf3ffc2d56a"></a>
+## Task172 Step09 field 58: PEDAGOGY
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 58: PEDAGOGY；Formal parent freeze: 594bb7e53c367b7ee9c1e20b43796f4590503967；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 4；Selected metadata links: 32
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-58.md](../../reports/operations/ignition-172-20260915-step09-field-58.md)
+
 <a id="reading-hr-052d55fd7ec8bacd"></a>
 ## 独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -59,6 +73,13 @@
 - 1 分钟：任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、 typed topology 和 layout 确定性生成；SVG 源码可以保留指向 canonical 目标的 link metadata， 但不承诺 GitHub 渲染页面提供交互热点；本页是 R0 基础边界的 Human Surface，机器边界以… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：点火从知识治理系统向智能体运行时抽层；任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、 typed topology 和 layout 确定性生成；SVG 源码可以保留指向 canonical 目标的 link metadata， 但不承诺 GitHub 渲染页面提供交互热点；本页是 R0 基础边界的 Human Surface，机器边界以 agentization-boundary-r0.json 和其 schema 为准，R2 总说明见 agent-platf…；Generic Kernel 只提供身份、状态、能力、授权、审计、checkpoint、handoff、resume lineage、记忆事件和不变量契约。；Agent Runtime R0 只编排 Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop，并把领域工作交给可加载的 Domain Pack。；Knowledge Domain Pack 是第一个 Domain Pack：它承载 Foundation、claims、formal/evidence/proof/scope/provenance、M/E、functions/non-functions、Knowledge Experience、Results 和 epistemic correction 等知识对象与验证入口。；REOS vNext LIGHT 仅作为边界清楚的 research Pack；之元写作法与出版面仅作为 writing/publication Pack。R0 不把课程内容或旧知识树物理搬入 Kernel。
 - 完整阅读：[docs/architecture/agentization-boundary-r0.md](../../docs/architecture/agentization-boundary-r0.md)
+
+<a id="reading-hr-05cc949076737494"></a>
+## Task172 Step09 field 61: PSYCHOLOGY
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 61: PSYCHOLOGY；Formal parent freeze: 66234e27368edb618886ac5e2b26e2fd890067ed；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 15；Selected metadata links: 120
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-61.md](../../reports/operations/ignition-172-20260915-step09-field-61.md)
 
 <a id="reading-hr-0701995cf1f17938"></a>
 ## IGNITION-20260828-144 Step 12 — targeted closure regression
@@ -200,6 +221,13 @@
 - 5 分钟：主题：Governance report: IGNITION-20260907-162；主题：Controlling specification and lifecycle；The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-162.md at command commit 8ab1aac0cdedd4874c798f4593614335cdd79e76, blob df58765e5c21cf3b0aba15f804ce461b4b1c542e, complete-content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a. The Formal base is Arvin-liu/when-systems-catch-fire branch work/IGNITION-…；The command was executed as research-only work. The required instructions/CURRENT.md and relay/current pointers were missing in the exact base and remain untouched, recorded as STALECONTROLPOINTER / PREFLIGHTRESIDUAL. No canonical runtime, canonical validator, Current/relay surface, Ready transition, merge, Owner acceptance, production claim, external action…；The result remains RESEARCHONLYDRAFTPENDING.；主题：Formal publication receipt
 - 完整阅读：[reports/governance/task-IGNITION-20260907-162.md](../../reports/governance/task-IGNITION-20260907-162.md)
 
+<a id="reading-hr-0d982954aa1aa3e9"></a>
+## Task172 Step09 field 11: LOGIC
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 11: LOGIC；Formal parent freeze: 05e0278ecab7a0f90952ce5f29e5262a702b8e24；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 6；Selected metadata links: 48
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-11.md](../../reports/operations/ignition-172-20260915-step09-field-11.md)
+
 <a id="reading-hr-0dc8e1b43354e8da"></a>
 ## IGNITION-138 — Step 00 Amendment-01 Local Executor Census
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
@@ -298,6 +326,13 @@
 - 5 分钟：主题：IGNITION-20260822-132 Step 11 — Residual and Regression Audit；Status: PASS WITH CLASSIFIED RESIDUALS；The Current semantic surfaces are clean: task lineage, release lifecycle, Current Facts, Current Snapshot, compiler output, typed semantic checks and Current State sync all pass. No new Task132 Current semantic regression was observed.；The audit keeps residual classes separate:；The Human Surface validator reproduces the same 11 pre-existing source-hash drifts (d127, d182, d190, d260, t2, y1, and five nfc- entries) recorded by Tasks 129–131.；The projection-hygiene gate fails on a clean e04752d20d071bac8f0c4a1e5cff20fb3004dae1 baseline with missing=164; the Task131 receipt had recorded the earlier historical baseline as missing=96. At the Step11 measurement boundary the candidate reported missing=192. The delta was 28 newly added Task132 formal paths; Step12 records the two additional audit artif…
 - 完整阅读：[reports/operations/ignition-132-step11-residual-audit.md](../../reports/operations/ignition-132-step11-residual-audit.md)
 
+<a id="reading-hr-13e9b3b4578e1c4d"></a>
+## Task172 Step09 field 63: SOCIOLOGY
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 63: SOCIOLOGY；Formal parent freeze: 6eebc5337eb8e586c2ba88731eb7c508a5dac24b；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 12；Selected metadata links: 96
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-63.md](../../reports/operations/ignition-172-20260915-step09-field-63.md)
+
 <a id="reading-hr-1437a5c9924f3c9e"></a>
 ## IGNITION-121Q6C 执行结果
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
@@ -318,38 +353,3 @@
 - 1 分钟：PASS: the exact Task138 targeted suite completed naturally with 333 tests, 0 failures, 0 errors, and 0 skips in 128.180s. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-138 Step 13 — Targeted regression and preflight；PASS: the exact Task138 targeted suite completed naturally with 333 tests, 0 failures, 0 errors, and 0 skips in 128.180s.；The suite covered the live bridge and runtime-scratch boundary, Codex and federation dispatch, residual and Current-state gates, release/lifecycle bindings, human-surface and privacy gates, repository path accounting, and Foundation generator reconciliation. No new real Codex child invocation was started in this step. The task still has exactly one real Code…；主题：Deterministic repair trail；The first post-Step12 run exposed four genuine stale-projection/accounting failures. Step12 prose had changed generator inputs, so the canonical nonfunction claim outputs, material human source fingerprints, and repository path manifest were stale or incomplete. The canonical nonfunction adjudicator, human claim browser builder, and repository path classific…；The following run then exposed three Current Facts failures. The regenerated nonfunction registry changed the declared Current Facts inputs. Current Facts, Current Snapshot, and all seven compiler-owned Current Snapshot blocks were regenerated. The final natural run passed all 333 tests.
 - 完整阅读：[reports/operations/ignition-138-step13-targeted-regression.md](../../reports/operations/ignition-138-step13-targeted-regression.md)
-
-<a id="reading-hr-1ab0b7265d820f9b"></a>
-## IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit；The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created.；The audit checked the Results Book README, the Task143 portfolio and the Book Project R1 links. All 32 internal links resolve, all 95 registry narrative paths exist, and the six Task143 smoke-test rows retain the exact tuple SMOKETESTOUTPUT / OWNERREVIEWPENDING / PUBLICATIONACCEPTANCENOTGRANTED.；This is entrypoint and link-integrity evidence. It does not turn repository artifacts into Owner-selected production or external publication acceptance.
-- 完整阅读：[reports/operations/ignition-144-step08-publication-entrypoint-audit.md](../../reports/operations/ignition-144-step08-publication-entrypoint-audit.md)
-
-<a id="reading-hr-1bf6463b42d7824f"></a>
-## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：data/operations/merged-iteration-ledger.jsonl 在 main 上呈现： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）；审计对象：data/operations/lifecycle-events.jsonl、data/operations/derived-lifecycle-view.json、data/operations/current-truth-projection.json、tools/propagation/lifecycleevents.py、tagvalidator.py、terminalizationallowlist.py、terminalizationgenerator.py、schemas/operations/lifecycle-event.schema.json；生成方式：tools/propagation/derivedlifecycleview.py（确定性，可重放）；审计时间基准：origin/main = 77352d27bc997ff9418de017f622f0c72dd634e3（任务 107 普通合并）；主题：1. 基线矛盾（任务 108 之前）；data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
-- 完整阅读：[reports/operations/lifecycle-audit-108.md](../../reports/operations/lifecycle-audit-108.md)
-
-<a id="reading-hr-1c328f9ffe6aee1f"></a>
-## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；选择长期极限效用或长期稳定性最大的行动。；'长期极限效用/稳定性'未界定尺度与主体，易退化为维持任何现状（歧义/适用边界）。
-- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/V4.md](../../docs/governance/meta-protocol-reviews/protocols/V4.md)
-
-<a id="reading-hr-1c6a8f5e8b981082"></a>
-## 121B Fulltext Batch Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121B Fulltext Batch Report；主题：Task: IGNITION-20260709-121B；主题：Date: 2026-07-14；主题：Model: qclaw/pool-glm-5.2-night | Thinking: high；主题：Executive Summary；121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure reasons, and 30 provisional reviews were downgraded from FULLT…
-- 完整阅读：[reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)
-
-<a id="reading-hr-1c89ea0a4c2a0aa1"></a>
-## map-epistemic-architecture
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Observer: maintainer and reviewer deciding how claims can move toward publication 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：map-epistemic-architecture；Observer: maintainer and reviewer deciding how claims can move toward publication；Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?；Value recipient / affected subject: readers, maintainers, and subjects affected by claims；Claim ceiling: derivednavigationview；主题：Unmapped Residue
-- 完整阅读：[reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)
