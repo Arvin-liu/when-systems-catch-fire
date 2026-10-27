@@ -1,8 +1,8 @@
 {
   "schema_version": "toolbox-handoff-artifact-byte-check-route-evidence-r0",
   "candidate_catalog_refresh": {
-    "prior_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96",
-    "current_git_blob_sha1": "f29a0fd8af346fc8548e9469383c8eacde341d45",
+    "prior_git_blob_sha1": "f29a0fd8af346fc8548e9469383c8eacde341d45",
+    "current_git_blob_sha1": "e4f223bab0cb12d471464a07d5866046e1fe45e2",
     "history": [
       "933a349b5d7e34df3a9d46c42896e9ec236a9831",
       "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
@@ -10,9 +10,10 @@
       "00fae5794f52ef3270ede181b5ef0679e83f21dc",
       "5d53a67cfcd3aec453485e93acda87219fd5d600",
       "256eabb87988c6d1032a867f160aba98119dde96",
-      "f29a0fd8af346fc8548e9469383c8eacde341d45"
+      "f29a0fd8af346fc8548e9469383c8eacde341d45",
+      "e4f223bab0cb12d471464a07d5866046e1fe45e2"
     ],
-    "note": "The candidate card now records one local real-task exact permission-declaration comparison and a deliberate synthetic added-write control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting only proposes the read-only tool. The route evidence was replayed after the selected-index search grouper card moved to 0.2.0; default-off behavior and the explicit byte-checker-only route were recomputed against the refreshed candidate catalog."
+    "note": "The candidate card now records one local real-task exact permission-declaration comparison and a deliberate synthetic added-write control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting only proposes the read-only tool. The route evidence was replayed after the selected-index search grouper card moved to 0.2.0; default-off behavior and the explicit byte-checker-only route were recomputed against the refreshed candidate catalog. The route was refreshed after adding the optional portable research episode builder; the default-off and byte-checker-only proposals were recomputed against the exact expanded candidate catalog."
   },
   "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
   "task": {
@@ -62,6 +63,10 @@
       "Per-artifact expected and observed SHA-256 statuses, byte counts, and typed read/path/size failures for bounded regular-file bytes; no file contents are returned."
     ],
     "rejected_candidates": [
+      {
+        "tool_id": "collaboration.build_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
       {
         "tool_id": "collaboration.preflight_receiver_handoff",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
@@ -437,7 +442,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "f29a0fd8af346fc8548e9469383c8eacde341d45"
+      "experimental_candidate_catalog_git_blob_sha1": "e4f223bab0cb12d471464a07d5866046e1fe45e2"
     }
   },
   "route_result": {
@@ -503,6 +508,10 @@
     "unmet_outputs": [],
     "rejected_candidates": [
       {
+        "tool_id": "collaboration.build_portable_research_episode",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "collaboration.preflight_receiver_handoff",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
@@ -873,9 +882,9 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "f29a0fd8af346fc8548e9469383c8eacde341d45"
+      "experimental_candidate_catalog_git_blob_sha1": "e4f223bab0cb12d471464a07d5866046e1fe45e2"
     }
   },
   "execution_authorized": false,
-  "interpretation": "The default route remains INCOMPLETE with no tool selected. Explicitly allowlisting collaboration.verify_handoff_artifact_files produces one sufficient route proposal; it does not invoke the tool, authenticate a receipt, authorize a handoff, or grant permissions."
+  "interpretation": "The default route remains INCOMPLETE with no tool selected. Explicitly allowlisting collaboration.verify_handoff_artifact_files proposes only that bounded byte checker. The refreshed catalog contains additional default-off candidates, including a separate portable-manifest builder; none are selected or invoked here."
 }

@@ -358,6 +358,40 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertEqual([row["tool_id"] for row in route["allowlisted_route_result"]["selected_tools"]], [tool_id])
         self.assertFalse(route["allowlisted_route_result"]["execution_authorized"])
 
+    def test_portable_research_episode_builder_card_keeps_complementary_scope_and_read_only_boundary(self) -> None:
+        document = TOOL.build_cards()
+        tool_id = "collaboration.build_portable_research_episode"
+        card = next(item for item in document["cards"] if item["tool_id"] == tool_id)
+        c1 = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-portable-research-episode-builder-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        real_task = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-portable-research-episode-builder-real-task-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertEqual(card["evidence_level"], "REAL_TASK_OUTCOME")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["read_paths"], ["ignition/"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["estimated_cost"]["status"], "UNKNOWN")
+        self.assertEqual(card["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(set(card["comparison_evidence"]["compared_tool_ids"]), {
+            "collaboration.validate_portable_research_episode",
+            "collaboration.verify_handoff_artifact_files",
+        })
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertTrue(card["unique_remaining_use_cases"])
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+        self.assertEqual(c1["disposition"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(real_task["independent_checks"]["existing_episode_validator"], "EPISODE_MANIFEST_CONSISTENT")
+        self.assertEqual(real_task["independent_checks"]["rechecked_artifact_count"], 11)
+        self.assertEqual(real_task["independent_checks"]["source_authenticity"], "NOT_ESTABLISHED")
+
     def test_producer_consumer_semantic_card_keeps_scope_c1_and_read_only_boundary(self) -> None:
         document = TOOL.build_cards()
         tool_id = "maintenance.preflight_producer_consumer_semantics"
@@ -669,6 +703,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             card for card in candidates if card["tool_id"] == "maintenance.compare_actions_validation_target_coverage"
         )
         specialized_tool_ids = {
+            "collaboration.build_portable_research_episode",
             editorial["tool_id"],
             "research.pair_noaa_co2_ch4_growth_by_year",
             "maintenance.summarize_actions_step_timeline",
@@ -977,7 +1012,11 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         assert validator_spec.loader is not None
         validator_spec.loader.exec_module(validator)
         catalog = json.loads((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_text(encoding="utf-8"))
-        catalog["candidates"][0]["deprecation_or_retirement_status"]["status"] = "DEPRECATED"
+        unknown_candidate = next(
+            row for row in catalog["candidates"]
+            if row.get("comparison_evidence", {}).get("status") == "COMPARISON_UNKNOWN"
+        )
+        unknown_candidate["deprecation_or_retirement_status"]["status"] = "DEPRECATED"
         with tempfile.TemporaryDirectory() as temp_dir:
             candidate_catalog = Path(temp_dir) / "candidate-cards.json"
             candidate_catalog.write_text(json.dumps(catalog, ensure_ascii=False), encoding="utf-8")
