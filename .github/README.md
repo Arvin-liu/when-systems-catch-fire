@@ -52,6 +52,8 @@
 
 [全屏打开交互式架构图](https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1) · [阅读模式](https://arvin-liu.github.io/when-systems-catch-fire/architecture/) · 滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件。
 
+点火工具与身份卡：[工具箱目录](../ignition/TOOLBOX.md) · [机器可读身份卡](../ignition/data/operations/toolbox-identity-cards-r0.json)。
+
 <details>
 <summary>组件导航：核心控制与状态</summary>
 

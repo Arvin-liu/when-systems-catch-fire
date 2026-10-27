@@ -1,0 +1,69 @@
+{
+  "schema_version": "toolbox-execution-state-lineage-real-task-evidence-r1",
+  "tool_id": "maintenance.audit_execution_state_lineage",
+  "task_ref": "agent-runtime-pilot:non-knowledge-manifest-r0",
+  "classification": "REAL_LOCAL_TOOL_TEST_ON_CHECKED_IN_SYNTHETIC_PILOT_RECORD",
+  "source": {
+    "path": "ignition/tools/toolbox_execution_state_lineage.py",
+    "git_blob_sha1": "5daf78fac42bcffcc59af7e1b1ab65ed972daca6",
+    "sha256": "d94d3756efb70bb655b767f1539bf75a33173cfdb2e877d9445992ee8a814cc7",
+    "version": "0.1.0"
+  },
+  "input": {
+    "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-input-r0.json",
+    "bytes": 1131,
+    "sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7"
+  },
+  "source_artifacts": [
+    {
+      "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/run-state.json",
+      "sha256": "bdb482a1c59ce7fdb95e339bbf56c9cdfe2a079e4f0a5ced49a0896e6daea5c0"
+    },
+    {
+      "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/resume-capsule.json",
+      "sha256": "51a9b7b55f08d30b4982504f01cd698a924eac1b8b80d62f998dd4819e3b26f2"
+    },
+    {
+      "path": "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/pilot-receipt.json",
+      "sha256": "f4b67aa19868884c9c51136c8910550f004ec87ffd1474e7aa35f871c51735ea"
+    }
+  ],
+  "invocation": {
+    "argv": [
+      "python3",
+      "-B",
+      "ignition/tools/toolbox_execution_state_lineage.py",
+      "--stdin"
+    ],
+    "exit_code": 0,
+    "stdout_path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-cli-stdout-r1.json",
+    "stdout_bytes": 1318,
+    "stdout_sha256": "b437da15822c93d5db463966ab5ecd5b713105b95c0e937b7ab62e685f65ebb2",
+    "elapsed_ms_single_run": 70.118,
+    "python": "3.9.6",
+    "jsonschema": "4.25.1",
+    "repository_requirements_pin": "jsonschema==4.26.0"
+  },
+  "result": {
+    "status": "PASS",
+    "findings": [],
+    "active_path_checkpoint_ids": [
+      "checkpoint-0001"
+    ],
+    "leaf_checkpoint_ids": [
+      "checkpoint-0001"
+    ],
+    "caller_declarations_authenticated": false,
+    "checkpoint_state_bytes_read": false,
+    "network_calls": 0,
+    "write_effects": false,
+    "execution_authorized": false
+  },
+  "prior_projection_comparison": {
+    "path": "ignition/data/operations/toolbox-execution-state-lineage-real-task-output-r0.json",
+    "parsed_json_equal": true,
+    "raw_bytes_equal": false,
+    "note": "The retained r0 file is pretty-printed; exact CLI stdout is separately preserved above."
+  },
+  "claim_ceiling": "This is one local CLI run over repository-held synthetic pilot records. It checks only supplied structure; it does not authenticate the pilot, source declaration completeness, state bytes, runtime behavior, production use, or external effects."
+}

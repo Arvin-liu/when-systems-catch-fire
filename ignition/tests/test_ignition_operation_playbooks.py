@@ -153,9 +153,11 @@ class IgnitionOperationPlaybooksTests(unittest.TestCase):
         self.assertEqual([row["tool_id"] for row in opted_in_plan["selected_tools"]], [card["tool_id"]])
         self.assertFalse(opted_in_plan["execution_authorized"])
 
-    def test_real_route_experiment_receipt_binds_router_catalog_and_offline_replay(self) -> None:
+    def test_historical_route_catalog_mismatch_is_preserved_and_pairer_replay_remains_repeatable(self) -> None:
         receipt_path = IGNITION_ROOT / "data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json"
         receipt = operation_planner.load_json(receipt_path)
+        audit_path = IGNITION_ROOT / "data/operations/toolbox-noaa-gas-route-catalog-binding-audit-r0.json"
+        audit = operation_planner.load_json(audit_path)
         bindings = receipt["bindings"]
         self.assertEqual(receipt["schema_version"], "ignition-toolbox-route-experiment-r0")
         self.assertEqual(bindings["candidate_count"], 9)
@@ -164,28 +166,17 @@ class IgnitionOperationPlaybooksTests(unittest.TestCase):
             operation_planner.git_blob_sha1((IGNITION_ROOT / "tools/operations/plan_ignition_operation_run.py").read_bytes()),
         )
         self.assertEqual(
-            bindings["candidate_catalog_git_blob_sha1"],
-            operation_planner.git_blob_sha1((IGNITION_ROOT / "data/operations/toolbox-candidate-cards-r0.json").read_bytes()),
-        )
-        self.assertEqual(
             bindings["current_operation_registry_git_blob_sha1"],
             operation_planner.git_blob_sha1((IGNITION_ROOT / "data/operations/ignition-operation-capability-registry-r1.json").read_bytes()),
         )
-        trials = receipt["route_trials"]
-        self.assertEqual(trials["default_no_experimental_opt_in"]["decision"], "INCOMPLETE")
-        self.assertEqual(trials["default_no_experimental_opt_in"]["selected_tool_ids"], [])
-        self.assertEqual(trials["sufficient_pairer_only"]["selected_tool_ids"], ["research.pair_noaa_co2_ch4_growth_by_year"])
-        self.assertEqual(trials["all_nine_allowlisted_with_exact_noaa_host"]["selected_tool_ids"], ["research.pair_noaa_co2_ch4_growth_by_year"])
-        self.assertEqual(
-            trials["unneeded_co2_comparator_skipped"]["skipped_candidates"],
-            [{"tool_id": "research.compare_noaa_co2_source_surfaces", "reason": "NO_REQUIRED_OUTPUT_MATCH"}],
+        self.assertEqual(audit["source_artifact_sha256"], hashlib.sha256(receipt_path.read_bytes()).hexdigest())
+        self.assertEqual(audit["recorded_candidate_catalog_git_blob_sha1"], bindings["candidate_catalog_git_blob_sha1"])
+        self.assertEqual(audit["task_branch_head_sha"], bindings["task_branch_head_sha"])
+        self.assertEqual(audit["binding_status"], "MISMATCH_NOT_ADMISSIBLE_AS_EXACT_CATALOG_ROUTE_EVIDENCE")
+        self.assertNotEqual(
+            audit["recorded_candidate_catalog_git_blob_sha1"],
+            audit["actual_catalog_git_blob_sha1_at_recorded_head"],
         )
-        self.assertEqual(
-            trials["co2_comparator_supplemented_for_extra_required_output"]["selected_tool_ids"],
-            ["research.pair_noaa_co2_ch4_growth_by_year", "research.compare_noaa_co2_source_surfaces"],
-        )
-        self.assertTrue(all(not trial["execution_authorized"] for trial in trials.values()))
-        self.assertTrue(all(trial["cost_estimate"]["status"] == "UNKNOWN" for trial in trials.values()))
 
         replay = receipt["actual_selected_tool_replay"]
         input_bytes = (IGNITION_ROOT / "data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-input-r1.json").read_bytes()

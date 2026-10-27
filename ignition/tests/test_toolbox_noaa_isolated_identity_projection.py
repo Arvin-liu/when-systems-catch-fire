@@ -6,7 +6,7 @@ import unittest
 
 
 IGNITION = Path(__file__).resolve().parents[1]
-EXPECTED = {
+NOAA_EXPECTED = {
     "research.lookup_noaa_global_co2_annual_growth",
     "research.lookup_noaa_global_ch4_annual_growth",
     "research.lookup_noaa_global_n2o_annual_growth",
@@ -17,10 +17,12 @@ EXPECTED = {
     "research.compare_noaa_sf6_source_surfaces",
     "research.pair_noaa_co2_ch4_growth_by_year",
 }
+LINEAGE_AUDITOR = "maintenance.audit_execution_state_lineage"
+EXPECTED = NOAA_EXPECTED | {LINEAGE_AUDITOR}
 
 
 class IsolatedNoaaGasIdentityProjectionTests(unittest.TestCase):
-    def test_nine_candidates_remain_experimental_and_default_off(self) -> None:
+    def test_candidates_remain_experimental_and_default_off(self) -> None:
         identity = json.loads((IGNITION / "data/operations/toolbox-identity-cards-r0.json").read_text())
         registry = json.loads((IGNITION / "data/operations/ignition-operation-capability-registry-r1.json").read_text())
         toolbox = (IGNITION / "TOOLBOX.md").read_text()
@@ -28,8 +30,9 @@ class IsolatedNoaaGasIdentityProjectionTests(unittest.TestCase):
         cards = {row["tool_id"]: row for row in identity["cards"]}
         candidates = {key: row for key, row in cards.items() if row["card_kind"] == "OPTIONAL_EXPERIMENTAL_TOOL"}
 
-        self.assertEqual(identity["candidate_cards"]["candidate_count"], 9)
+        self.assertEqual(identity["candidate_cards"]["candidate_count"], len(EXPECTED))
         self.assertEqual(set(candidates), EXPECTED)
+        self.assertEqual(set(candidates) & NOAA_EXPECTED, NOAA_EXPECTED)
         self.assertEqual(identity["current_registry"]["operation_count"], len(registry["operations"]))
         current_ids = {row["operation_id"] for row in registry["operations"]}
         self.assertTrue(EXPECTED.isdisjoint(current_ids))

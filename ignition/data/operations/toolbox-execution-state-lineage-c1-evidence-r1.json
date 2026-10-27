@@ -1,0 +1,45 @@
+{
+  "schema_version": "ignition.toolbox-execution-state-lineage-c1-evidence-r1",
+  "tool_id": "maintenance.audit_execution_state_lineage",
+  "comparison_scope": "Same synthetic sibling-checkpoint graph and current formal contracts; read-only contract comparison, not production reliability or cost benchmarking.",
+  "current_registry_binding": {
+    "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "current_operation_id": "maintenance.validate_checkpoint"
+  },
+  "comparators": [
+    {
+      "tool_id": "maintenance.validate_checkpoint",
+      "implementation_refs": [
+        "ignition/tools/validate_agent_runtime_boundary.py",
+        "ignition/tools/validate_state_changelog.py"
+      ],
+      "observation": "The Current operation validates the generic runtime boundary and state changelog. Neither validator accepts the caller-declared checkpoint graph, counts graph leaves, or checks rollback ancestry."
+    },
+    {
+      "identity": "Kernel validate_resume_lineage (pairwise function; not an additional toolbox identity)",
+      "implementation_ref": "ignition/agent_kernel/contracts.py",
+      "observation": "Both valid sibling checkpoint/resume pairs pass individually. The pairwise contract does not receive the complete DAG or an inactive-tip accounting declaration."
+    }
+  ],
+  "matched_test": {
+    "fixture": "ignition/tests/fixtures/toolbox-execution-state-lineage/valid-two-branch-r0.json",
+    "negative_variant": "The same valid sibling graph with declared_inactive_tip_checkpoint_ids emptied.",
+    "result": "Both sibling Kernel pairwise checks pass; this auditor reports INACTIVE_TIP_ACCOUNTING_MISMATCH.",
+    "candidate_finding": "INACTIVE_TIP_ACCOUNTING_MISMATCH"
+  },
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "replacement_candidates": [],
+    "unique_use_cases": [
+      "Graph-wide active path and inactive-tip accounting.",
+      "Projected resume bindings and strict rollback ancestry."
+    ],
+    "current_operation_preserved": "maintenance.validate_checkpoint"
+  },
+  "uncertainty": [
+    "Only synthetic graph records and current implementation contracts were compared.",
+    "No production checkpoint dataset, matched latency, memory, operator time, or monetary cost comparison was run.",
+    "No source authentication, declaration completeness, branch isolation, or actual resume/rollback outcome is established."
+  ]
+}

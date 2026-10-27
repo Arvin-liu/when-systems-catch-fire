@@ -1,0 +1,14 @@
+{
+  "schema_version": "ignition.toolbox-route-catalog-binding-audit-r0",
+  "source_artifact_path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+  "source_artifact_sha256": "fd24874eadde4849f718eb27565101d17a39a066ca4d1172a3800d5fedb1bba3",
+  "task_branch_head_sha": "3f5f359650dcba6943e389dffe446afecc33b953",
+  "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+  "recorded_candidate_catalog_git_blob_sha1": "ab53d26cd85b4f5e9c248d2292ffe723fc33bf41",
+  "actual_catalog_git_blob_sha1_at_recorded_head": "f240e2ff9ee960520bcdffdf3c3cfe7743510917",
+  "actual_catalog_bytes_at_recorded_head": 124039,
+  "actual_catalog_sha256_at_recorded_head": "e8e4027dffc224fbbb02610bb6fd0d9153c5c06578cdf94f1d2f2ce6a7a0c05d",
+  "binding_status": "MISMATCH_NOT_ADMISSIBLE_AS_EXACT_CATALOG_ROUTE_EVIDENCE",
+  "effect_on_claims": "Preserve the original route receipt and its trial results as historical data, but do not claim they are bound to the candidate catalog at task_branch_head_sha. Route selection is independently tested against the current planner; a new exact-catalog route experiment is required for the expanded toolbox.",
+  "recomputed_at_current_candidate_head": "e5e4a4c3"
+}
