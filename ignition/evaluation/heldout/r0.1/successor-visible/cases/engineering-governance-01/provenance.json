@@ -1,0 +1,11 @@
+{
+  "case_id": "engineering-governance-01",
+  "source_repository": "Arvin-liu/when-systems-catch-fire",
+  "source_ref": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+  "source_path": "ignition/data/operations/durability/namespace-contract-r1.json",
+  "source_git_blob_sha": "8995de6a995f5e84b985717ca0c29e31e3c8d229",
+  "source_sha256": "574ff4d65923dd956323fbb048c995318c31c7c7ffaafdc641b57f18d0d095fb",
+  "source_bytes": 569,
+  "bounded_extract": {"path": "raw-contract.json", "bytes": 569, "sha256": "574ff4d65923dd956323fbb048c995318c31c7c7ffaafdc641b57f18d0d095fb"},
+  "scope": "Repository-local governance object; its policy status is not independent external truth."
+}

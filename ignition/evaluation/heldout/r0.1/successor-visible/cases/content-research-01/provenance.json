@@ -1,0 +1,11 @@
+{
+  "case_id": "content-research-01",
+  "source_repository": "Arvin-liu/when-systems-catch-fire",
+  "source_ref": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+  "source_path": "ignition/inputs/collisions/20260708-teacher-competition/source.md",
+  "source_git_blob_sha": "1d67b74e971e073f2d330379ce34b2022eefb792",
+  "source_sha256": "dc15a6d6ddd78b72e28d4ae6ebaa129481b783a82da5c473cf5def3a18bfb2b2",
+  "source_bytes": 37777,
+  "bounded_extract": {"path": "raw-source-excerpt.md", "line_start": 9, "line_end": 22, "bytes": 2087, "sha256": "71c41b99518dcfe6feab12a84e7411806b18a9c65f6ab47d4ba012ed74205d9a"},
+  "scope": "Bounded repository-source excerpt only; the source's factual assertions have not been externally verified."
+}

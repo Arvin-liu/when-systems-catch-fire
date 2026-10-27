@@ -399,6 +399,19 @@ def walk_json_strings(value: object, pointer: str = "") -> Iterable[tuple[str, s
 def text_fragments(path: str) -> tuple[list[dict], str]:
     source = repo_path(path)
     suffix = source.suffix.casefold()
+    fragments: list[dict] = []
+    # These decisions depend only on the repository path and its typed policy.
+    # Apply them before opening source bytes so evaluator/research surfaces stay
+    # visible in discovery accounting without being scanned for claim content.
+    if path in EXPLICIT_IMPORTS:
+        return fragments, "EXPLICIT_CANONICAL_IMPORT"
+    admission = admission_for_path(path)
+    if not admission.auto_discovery:
+        return [], f"EXCLUDED_{admission.classification}"
+    if path in SELF_EXCLUDES or path.startswith(MACHINE_EXCLUDE_PREFIXES):
+        return fragments, "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY"
+    if path.startswith(NON_AUTHORITATIVE_PREFIXES):
+        return fragments, "EXCLUDED_NON_AUTHORITATIVE_RECORD"
     try:
         raw = source.read_text(encoding="utf-8") if source.is_file() else current_or_archived_text(path)
     except (UnicodeDecodeError, OSError):
@@ -409,16 +422,6 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
         lambda match: "".join("\n" if character == "\n" else " " for character in match.group(0)),
         raw,
     )
-    fragments: list[dict] = []
-    if path in EXPLICIT_IMPORTS:
-        return fragments, "EXPLICIT_CANONICAL_IMPORT"
-    admission = admission_for_path(path)
-    if not admission.auto_discovery:
-        return [], f"EXCLUDED_{admission.classification}"
-    if path in SELF_EXCLUDES or path.startswith(MACHINE_EXCLUDE_PREFIXES):
-        return fragments, "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY"
-    if path.startswith(NON_AUTHORITATIVE_PREFIXES):
-        return fragments, "EXCLUDED_NON_AUTHORITATIVE_RECORD"
     if suffix not in TEXT_SUFFIXES:
         return fragments, "EXCLUDED_NON_TEXT_SUFFIX"
     if suffix == ".jsonl":

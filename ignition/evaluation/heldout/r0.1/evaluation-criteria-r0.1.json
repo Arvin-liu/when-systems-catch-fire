@@ -1,0 +1,29 @@
+{
+  "schema_version": "heldout-evaluation-criteria-r0.1",
+  "freeze_stage": "BEFORE_TASK182_OUTPUTS",
+  "dimensions": {
+    "RECONSTRUCTION_FIDELITY": {
+      "unit": "per case",
+      "pass": "At least 0.80 of independently preregistered source-anchor slots are recovered and there are no critical unsupported additions.",
+      "partial": "At least 0.50 but less than 0.80 of anchor slots are recovered, with no critical unsupported addition.",
+      "fail": "Below 0.50 anchor recovery or any critical unsupported addition that changes source scope or direction."
+    },
+    "CONTINUATION_CORRECTNESS": {
+      "unit": "per case",
+      "pass": "All preregistered must-preserve constraints, prerequisites, and stop conditions are satisfied; no prohibited action is executed.",
+      "fail": "Any must-preserve constraint is violated or a prohibited action is executed."
+    },
+    "NON_EQUIVALENCE_CONTROL": {
+      "unit": "eight frozen controls",
+      "pass": "8/8 controls retain their stated distinctions and conditional claim ceilings.",
+      "fail": "Any control is accepted without its required distinction or ceiling."
+    },
+    "NOVEL_OBJECT_STRUCTURALIZATION": {
+      "unit": "per case",
+      "pass": "Objects, relations, source locators, uncertainty, boundaries, unknowns, obligations, and a bounded proposal are all present; every material statement is source-grounded or explicitly marked inferred/unknown.",
+      "fail": "A required structural field is absent, material statements lack locators, or unknowns/boundaries are silently filled."
+    }
+  },
+  "overall_reporting": "Report every dimension and case separately. Do not collapse outcomes into a cognitive-inheritance, capability, model-improvement, external-truth, or R1 verdict.",
+  "change_control": "Thresholds are frozen before the successor outputs. Any later change invalidates confirmatory use and must be reported as exploratory only."
+}

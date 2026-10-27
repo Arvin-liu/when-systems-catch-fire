@@ -29,7 +29,8 @@
     "KNOWLEDGE/",
     "data/governance/",
     "data/foundation/nonfunction-claims/",
-    "data/foundation/function-assets/"
+    "data/foundation/function-assets/",
+    "docs/foundation/nonfunction-claim-adjudication-index.md"
   ],
   "public_human_surfaces": [
     "README.md",

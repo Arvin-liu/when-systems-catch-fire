@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "policy_id": "KNOWLEDGE_CORPUS_ADMISSION_R1",
   "default_classification": "KNOWLEDGE_SOURCE_ELIGIBLE",
   "classes": {
@@ -19,6 +19,11 @@
       "auto_discovery": false,
       "meaning": "A deterministic projection is validated by its generator and cannot feed its own rows back into Knowledge."
     },
+    "EVALUATION_EVIDENCE_ONLY": {
+      "auto_discovery": false,
+      "provenance_only": true,
+      "meaning": "Evaluation-plane artifacts remain path-accounted and provenance-visible but cannot become automatic Knowledge or Foundation discovery inputs."
+    },
     "HISTORICAL_PROVENANCE_ONLY": {
       "auto_discovery": true,
       "provenance_only": true,
@@ -33,6 +38,14 @@
     "packs/knowledge/README.md"
   ],
   "rules": [
+    {
+      "classification": "EVALUATION_EVIDENCE_ONLY",
+      "prefixes": [
+        "evaluation/",
+        "reports/evaluations/"
+      ],
+      "exact_paths": []
+    },
     {
       "classification": "PLATFORM_CODE_EXCLUDED",
       "prefixes": [

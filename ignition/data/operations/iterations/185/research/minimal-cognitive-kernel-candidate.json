@@ -1,0 +1,133 @@
+{
+  "schema_version": "task185-minimal-cognitive-method-kernel-candidate-r0",
+  "candidate_id": "MINIMAL_COGNITIVE_METHOD_KERNEL_CANDIDATE_R0",
+  "task_id": "IGNITION-20260918-185",
+  "status": "RESEARCH_ONLY_NONCANONICAL_CANDIDATE",
+  "candidate_scope": "A falsifiable description of observable method records and transition contracts assembled from Step00-Step04 evidence; not a final definition of cognition, capability, inheritance, or the Ignition architecture.",
+  "evidence_basis": {
+    "frozen_research_start": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+    "steps_used": ["Step00 source universe", "Step01 lineage timeline", "Step02 mechanism atlas", "Step03 novelty crosswalk", "Step04 duplication/drift audit"],
+    "analysis_boundary": "Artifacts and observable repository behavior only; no hidden reasoning traces, model-weight assumptions, Task180 verdict, Task182 material, Task186 report, Successor run, or Evaluator run."
+  },
+  "layer_1_representation_phenotype": {
+    "purpose": "Carry observable work and method records; implementation carriers remain replaceable and are not themselves methods or evidence.",
+    "replaceable_carriers": ["model/provider", "prompt", "schema", "registry", "tool/validator", "workflow/runtime", "retrieval/routing overlay", "Git commit/package"],
+    "minimum_boundary": "A carrier's existence, name, schema validity, or successful execution cannot be promoted into a method, capability, truth, or inheritance claim without a separate test.",
+    "state": "ALREADY_PRESENT_AS_DISTINCT_SYSTEM_SURFACES; EXPLICITLY_MAPPED_BY_TASK179",
+    "evidence_refs": ["ignition/agent_runtime/README.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"]
+  },
+  "layer_2_inheritable_method_candidate": [
+    {
+      "method_id": "FRAME_AND_IDENTIFY_OBJECTS",
+      "minimum_observable_contract": "Name the task/question and typed objects, distinguish stable identity from label, and record the boundary of each object.",
+      "state": "EXISTING_IDENTITIES_PLUS_R0_TYPED_COGNITIVE_OBJECT_COMPOSITION",
+      "prior_artifacts": ["ignition/data/foundation/function-assets/identity-cards.jsonl@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-ir-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540"],
+      "gap_or_limit": "The repository has asset identity contracts; a uniform task-to-method object framing behavior is not measured.",
+      "evidence_refs": ["43b3ca8a573ff8d43d49c1f84cb706f47b4fbdb4", "12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "method_id": "RETRIEVE_WITH_PROVENANCE_AND_BIND_EVIDENCE",
+      "minimum_observable_contract": "Retrieve candidate material by source/lineage, link each material claim to evidence refs and preserve evidence kind, version and claim ceiling.",
+      "state": "EXISTING_RETRIEVAL_AND_EVIDENCE_MECHANISMS; METHOD_USE_LINK_PARTIAL",
+      "prior_artifacts": ["ignition/docs/governance/knowledge-experience-layer.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/reports/operations/ignition-172-20260915-step07-routing-index.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/docs/foundation/claim-governance-and-function-identity.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"],
+      "gap_or_limit": "Search/routing identifies and validates assets; no common graph connects a retrieved asset/relation to a method-use event and transfer result.",
+      "evidence_refs": ["10dcceb781a442a9f5eebe1ea9e71fce9152815f", "05e0278ecab7a0f90952ce5f29e5262a702b8e24", "68565f2afb50989d2c2b0d346d774e3388702743"]
+    },
+    {
+      "method_id": "SEPARATE_OBSERVATION_EVIDENCE_ANALOGY_AND_HYPOTHESIS",
+      "minimum_observable_contract": "Keep source observation, evidence status, analogy and mechanism hypothesis in separately typed fields; do not infer proof from structural similarity or a tool report.",
+      "state": "EXISTING_GOVERNANCE_RULES; R0 MAKES THE METHOD SLOT EXPLICIT",
+      "prior_artifacts": ["ignition/docs/foundation/claim-governance-and-function-identity.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"],
+      "gap_or_limit": "Rules and typed surfaces exist, but correct model behavior across unseen contexts is unmeasured.",
+      "evidence_refs": ["178c3b1226deb887b8bf620fac80c15fd97d5fc4", "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "method_id": "PRESERVE_UNCERTAINTY_AND_UNKNOWN",
+      "minimum_observable_contract": "Represent missing, conflicting and unresolved objects/relations explicitly; do not silently fill from conversational context or erase unknowns during migration.",
+      "state": "EXISTING_PENDING/ABSTAIN_PRACTICES; R0 FORMALIZES UNKNOWN_FIELDS",
+      "prior_artifacts": ["ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-ir-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540", "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-transition-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540"],
+      "gap_or_limit": "Schema/fixture preservation is mechanical; it does not measure whether a successor notices uncertainty or abstains appropriately.",
+      "evidence_refs": ["43b3ca8a573ff8d43d49c1f84cb706f47b4fbdb4", "12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "method_id": "EXPOSE_BOUNDARIES_COUNTEREXAMPLES_AND_ALTERNATIVES",
+      "minimum_observable_contract": "State the applicability boundary, strongest alternative mechanism, counterexample/falsifier and what evidence would change the disposition.",
+      "state": "ACTIVE_FOUNDATION_AND_MECHANISM_REVIEW; R0 COMPOSES AS METHOD SLOT",
+      "prior_artifacts": ["ignition/docs/foundation/claim-governance-and-function-identity.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "archive/121q38-structural-retrieval-night@b9dae182da28614f04b0d3c5c124f5ec3b621e9f"],
+      "gap_or_limit": "The availability of gates/tests does not prove alternatives are complete or consistently used.",
+      "evidence_refs": ["b9dae182da28614f04b0d3c5c124f5ec3b621e9f", "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "method_id": "SELECT_A_BOUNDED_ACTION_OR_NEXT_TEST",
+      "minimum_observable_contract": "Choose among explicit alternatives using stakes/affordable loss, expected observation, rollback/exit and a discriminating next test; record why and what is not claimed.",
+      "state": "PARTIAL_DOMAIN_RECORDS; GENERAL_METHOD_SELECTION_UNMEASURED",
+      "prior_artifacts": ["ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/agent_runtime/cognitive_inheritance_r0/packages/complexity-budget-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"],
+      "gap_or_limit": "Task179 records a select-action slot; earlier bounded decisions and runtime budgets do not establish causal-radius-proportional cognition or reliable general selection.",
+      "evidence_refs": ["b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e", "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "method_id": "DETECT_FAILURE_AND_RETAIN_PROVENANCE",
+      "minimum_observable_contract": "Record observed failure/anomaly, recurrence hypothesis, source run, affected method/object, failure boundary and unresolved cause without conflating memory with evidence.",
+      "state": "EXISTING_FAILURE_TAXONOMY_AND_OPERATIONAL_MEMORY; CROSS-LINEAGE_TRANSFER_PARTIAL",
+      "prior_artifacts": ["ignition/docs/failure_typology.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/docs/governance/self-correction-engine.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/agent_runtime/README.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "archive/121q39-failure-memory-night@95d637fcd5a33791e1cf69deec49d36389b9aeb0"],
+      "gap_or_limit": "Storage, recurrence and repository remediation are present in different owners; no common method-use/transfer chain is established.",
+      "evidence_refs": ["95d637fcd5a33791e1cf69deec49d36389b9aeb0", "0753c655080c62dd654f507ff3bcf574593e2a23", "12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "method_id": "REVISE_METHOD_WITH_LINEAGE",
+      "minimum_observable_contract": "On an evidenced inadequacy, preserve predecessor, propose a reframing/new method, compare predicted behavior, record gains/losses and unknowns, then retain rollback/migration lineage.",
+      "state": "NEW_EXPLICIT_TRANSITION_SCHEMA; EFFECTIVENESS_UNMEASURED",
+      "prior_artifacts": ["ignition/docs/governance/self-correction-engine.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/data/operations/iterations/172/step13-final-freeze.json@7cab7541895620d68d5bce2d16c46871ebd03ac0"],
+      "task179_artifact": "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-transition-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540",
+      "gap_or_limit": "The typed record is a new composition; no independent result shows that recorded revisions improve behavior or transfer.",
+      "evidence_refs": ["43b3ca8a573ff8d43d49c1f84cb706f47b4fbdb4", "861e77b1a1d62f7c37a0aa663ea249c1fa210cce", "12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "method_id": "INDEPENDENTLY_TEST_TRANSFER_WITHOUT_PROMOTION",
+      "minimum_observable_contract": "Keep a blind-first evaluator and adjudicator boundary separate from Builder; report reconstruction, continuation, uncertainty and non-equivalence controls; keep unmeasured as unmeasured.",
+      "state": "SPECIFIED_AND_ISOLATED; NOT_RUN_IN_TASK185",
+      "prior_artifacts": ["ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0", "ignition/agent_runtime/cognitive_inheritance_r0/packages/independent-evaluation-package.json@12e133c6d58a5e22437e42bb75fd912607bb4540", "ignition/evaluation/task181-handoff-r0.1.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"],
+      "gap_or_limit": "Task179 metrics remain NOT_YET_MEASURED. This candidate defines no execution authorization and Task185 runs neither successor nor evaluator.",
+      "evidence_refs": ["12e133c6d58a5e22437e42bb75fd912607bb4540", "7cab7541895620d68d5bce2d16c46871ebd03ac0"]
+    }
+  ],
+  "layer_3_metacognitive_evolution_candidate": [
+    {
+      "transition_id": "NOTICE_REPRESENTATION_INADEQUACY",
+      "observable_contract": "Tie an anomaly/failure or unresolved question to the limitation of the previous representation; preserve the observation separately from the interpretation.",
+      "state": "R0_FIELD_FORMALIZED; DETECTION_BEHAVIOR_UNMEASURED",
+      "evidence_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-transition-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540", "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-transition.json@12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "transition_id": "PROPOSE_AND_COMPARE_REFRAMING",
+      "observable_contract": "Record old/new representation and method, expected discriminating observations, retained/lost structure, complexity and known counterexamples.",
+      "state": "PARTIAL_RECORD_CONTRACT; COMPARATIVE_GAIN_LOSS_MEASUREMENT_GAP",
+      "evidence_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-transition-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540", "ignition/agent_runtime/cognitive_inheritance_r0/packages/complexity-budget-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    },
+    {
+      "transition_id": "DISPOSITION_AND_MIGRATE_REVERSIBLY",
+      "observable_contract": "Record ADOPT/REJECT/COEXIST/UNRESOLVED, source refs, backward-readable migration, rollback and retirement conditions without silent overwrite.",
+      "state": "EXPLICIT_R0_CONTRACT; POPULATION_WIDE_MIGRATION_NOT_AUTHORIZED",
+      "evidence_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-transition-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540", "ignition/agent_runtime/cognitive_inheritance_r0/schema/migration-record-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540"]
+    }
+  ],
+  "candidate_invariants": [
+    "No hidden chain-of-thought storage or inference from private reasoning traces.",
+    "No schema, tag, registry, retrieval result, validator PASS, CI status, or workflow success becomes evidence of cognition by itself.",
+    "Foundation/Current canonical authority, claim ceilings and Owner/evaluator roles remain separate.",
+    "Unknowns, source lineage, strongest alternatives and failed/retired methods remain addressable.",
+    "An adoption decision requires evidence beyond package shape and must remain reversible or explicitly bounded."
+  ],
+  "explicit_gaps_for_later_steps": [
+    "No unified asset/relation-to-method-use-to-transfer record is demonstrated.",
+    "No general method-selection or cognitive-budget rule tied to causal reach/reversibility is demonstrated.",
+    "No measured capability rediscovery across model/provider replacement is demonstrated.",
+    "No measured independent transfer or cognitive improvement is claimed."
+  ],
+  "downgrade_or_falsification_conditions": [
+    "If the proposed fields cannot be reconstructed from exact source refs, shrink or split the candidate.",
+    "If field-level ablation shows no distinct consumer or no reconstruction loss, remove or merge the corresponding candidate slot only through an authorized migration.",
+    "If independent tests fail to distinguish method transfer from schema imitation, ordinary context reconstruction or style matching, keep the candidate as an artifact taxonomy rather than a cognitive-method claim."
+  ],
+  "claim_ceiling": "A noncanonical research candidate for an observable cognitive-method record and evolution cycle; not a final definition, canonical claim, proven capability, cognitive inheritance result, model improvement, or authorization to execute R1/MetaRSI/Model-RSI."
+}
