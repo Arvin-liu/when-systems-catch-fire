@@ -1,0 +1,32 @@
+{
+  "schema_version": "evaluation-evidence-r0.1",
+  "artifact_id": "IGNITION-20260917-181-bootstrap-receipt",
+  "artifact_kind": "EVALUATOR_METHOD",
+  "task_id": "IGNITION-20260917-181",
+  "source": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+    "path": "ignition/AI-START-HERE.md",
+    "sha256": "7c28357fb463f8dd1a2756deff28a2daabf3f490e03b88e613beda9a27d7d215",
+    "git_blob_sha": "cdfa121d02b127cf5a1ee6fde5ae05b2aa9a37ca"
+  },
+  "status": "BOOTSTRAP_PREFLIGHT_PASS",
+  "promotion": {"automatic": false, "state": "NO_AUTOMATIC_PROMOTION", "canonicalized": false},
+  "claim_ceiling": "Repository, ancestry, task branch, and author identity checks passed in the verified Formal clone. This receipt does not establish cognitive inheritance, external truth, or Owner acceptance.",
+  "finding_summary": {
+    "command_authority_repository": "Arvin-liu/1111; read-only command retrieval only",
+    "target_repository": "Arvin-liu/when-systems-catch-fire",
+    "requested_workspace_path": "ABSENT",
+    "selected_clone": "/Users/zhiyuan/Documents/Codex/2026-09-17/when-systems-catch-fire-task179-validation",
+    "origin_and_push_url_verified": true,
+    "preflight_head_and_remote_base": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+    "task_branch": "work/IGNITION-20260917-181-cognitive-inheritance-r0-1-isolation-protocol",
+    "author_name": "Arvin-liu",
+    "author_email": "49422864+Arvin-liu@users.noreply.github.com",
+    "global_identity_modified": false,
+    "historical_prs_checked": {
+      "219": {"state": "OPEN", "draft": true, "head": "12e133c6d58a5e22437e42bb75fd912607bb4540", "merge_state": "UNSTABLE"},
+      "220": {"state": "OPEN", "draft": true, "head": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "merge_state": "UNSTABLE"}
+    }
+  }
+}

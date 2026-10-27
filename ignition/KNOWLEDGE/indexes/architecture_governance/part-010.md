@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-40\]\( \) \| \[中国计划生育\]\( \) \| 超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9109ccc879326d3f / \| \[C-40\]\( \) \| \[中国计划生育\]\( \) \| 超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-41\]\( \) \| \[英国NHS\]\( \) \| 公民有真实退出权，NHS认同经退出权验证但应约者逐渐消极 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a534e4036aeadede / \| \[C-41\]\( \) \| \[英国NHS\]\( \) \| 公民有真实退出权，NHS认同经退出权验证但应约者逐渐消极 \|
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-b8ef8d01ec0467ad / 不是社会科学实证模型；
   - 来源：`docs/author_motivation_and_boundary_note.md`
   - 依赖：—；被引用：—
-- [不是自动生成最终结论**：P1 数据只提供索引、提醒、约束与分流信号。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-310aa6caf348c6c6 / 不是自动生成最终结论**：P1 数据只提供索引、提醒、约束与分流信号。
-  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
-  - 依赖：P1；被引用：—

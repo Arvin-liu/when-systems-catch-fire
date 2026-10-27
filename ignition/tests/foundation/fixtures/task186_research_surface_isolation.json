@@ -1,0 +1,10 @@
+{
+  "fixture_id": "TASK186_EXTERNAL_RESEARCH_SURFACE_ISOLATION",
+  "external_research_report_path": "reports/external-research/IGNITION-20260918-186/external-cognitive-architecture-research-report.md",
+  "path_manifest_category": "GENERATED_PROJECTION",
+  "admission_classification": "EXTERNAL_RESEARCH_EVIDENCE_ONLY",
+  "nonfunction_coverage_status": "EXCLUDED_EXTERNAL_RESEARCH_EVIDENCE_ONLY",
+  "evaluation_plane_fixture_path": "reports/evaluations/synthetic-task181-boundary/fixture.md",
+  "evaluation_admission_classification": "EVALUATION_EVIDENCE_ONLY",
+  "evaluation_nonfunction_coverage_status": "EXCLUDED_EVALUATION_EVIDENCE_ONLY"
+}

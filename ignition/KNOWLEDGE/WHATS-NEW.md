@@ -4,6 +4,132 @@
 
 ## 2026
 
+<a id="change-src-hr-f5829cd3b280ed82"></a>
+### 2026-09-18 · Independent evaluation: what the sources do and do not separate
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The MetaRSI paper provides the strongest proposed release architecture in this review: operator write surfaces are separated from an Anchor, held-out task set, release rule, and resource ledger. But for generated-data evaluation, it explicitly uses the same target model for Operator and blind Anc…
+- **来源：** [independent-evaluation-report.md](../reports/external-research/IGNITION-20260918-186/independent-evaluation-report.md)
+- **资产卡：** [HR-F5829CD3B280ED82](./ASSET-CARDS.md#asset-hr-f5829cd3b280ed82)
+
+<a id="change-src-hr-e2a8e3bd4062c2c6"></a>
+### 2026-09-18 · Research questions — IGNITION-20260918-186
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** For each positive claim, record the primary source and the object it actually observes. For each negative claim, bound it to the frozen source paths and explain the search surface. Treat authors’ evaluation and mechanism statements as PAPERCLAIM or DOCCLAIM; treat static implementation details as…
+- **来源：** [research-questions.md](../reports/external-research/IGNITION-20260918-186/research-questions.md)
+- **资产卡：** [HR-E2A8E3BD4062C2C6](./ASSET-CARDS.md#asset-hr-e2a8e3bd4062c2c6)
+
+<a id="change-src-hr-d472a3138013ab9f"></a>
+### 2026-09-18 · Reflexion and Self-Refine crosswalk
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Reflexion converts task feedback into text that conditions later actions without updating model weights. The paper distinguishes recent trajectory context from long-term verbal reflections. It usually bounds the reflection buffer to one to three experiences. Its Evaluator may be exact match, a ha…
+- **来源：** [reflection-family-report.md](../reports/external-research/IGNITION-20260918-186/reflection-family-report.md)
+- **资产卡：** [HR-D472A3138013AB9F](./ASSET-CARDS.md#asset-hr-d472a3138013ab9f)
+
+<a id="change-src-hr-c2139b347da84ab9"></a>
+### 2026-09-18 · Persistent memory: retrieval, storage, and method inheritance
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Generative Agents uses a simulation character's memory stream. The paper describes observations, reflections, and plans as timestamped natural-language records, retrieved with recency, relevance, and importance signals. Reflections summarize prior records and feed later planning. In the pinned co…
+- **来源：** [persistent-memory-report.md](../reports/external-research/IGNITION-20260918-186/persistent-memory-report.md)
+- **资产卡：** [HR-C2139B347DA84AB9](./ASSET-CARDS.md#asset-hr-c2139b347da84ab9)
+
+<a id="change-src-hr-bf5ed91947580a9e"></a>
+### 2026-09-18 · MetaRSI paper/repository cross-check
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The frozen code implements an RSIH/Pi harness with configurable, versionable Genomes. A Genome can describe prompts, skills, tools, MCP integrations, extensions, runtime policies, memory, and settings. The harness-rsi Genome reads user-selected session history through a bounded extension, has the…
+- **来源：** [metarsi-paper-repo-crosscheck.md](../reports/external-research/IGNITION-20260918-186/metarsi-paper-repo-crosscheck.md)
+- **资产卡：** [HR-BF5ED91947580A9E](./ASSET-CARDS.md#asset-hr-bf5ed91947580a9e)
+
+<a id="change-src-hr-b8397bdb03a54b29"></a>
+### 2026-09-18 · MetaRSI primary-source report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The controlling paper is arXiv 2609.06396v2, updated 2026-09-09 and labeled MetaRSI-v1 in the paper. Its formal title, complete author list, arXiv license, official CosmosMind page, RSI-Harness Git commit, and Hugging Face snapshot are recorded in metarsi-source-freeze.json. The public page is un…
+- **来源：** [metarsi-primary-source-report.md](../reports/external-research/IGNITION-20260918-186/metarsi-primary-source-report.md)
+- **资产卡：** [HR-B8397BDB03A54B29](./ASSET-CARDS.md#asset-hr-b8397bdb03a54b29)
+
+<a id="change-src-hr-ae799f48c6336bd8"></a>
+### 2026-09-18 · Inheritance distinctions and evidence ratings
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Capability progress is a measurable change in success on a declared task family under a named model, harness, and evaluator. A higher benchmark score can show performance under that protocol; it does not identify which component changed or prove that an improvement method was inherited.
+- **来源：** [inheritance-distinction-report.md](../reports/external-research/IGNITION-20260918-186/inheritance-distinction-report.md)
+- **资产卡：** [HR-AE799F48C6336BD8](./ASSET-CARDS.md#asset-hr-ae799f48c6336bd8)
+
+<a id="change-src-hr-91034d3772fe1036"></a>
+### 2026-09-18 · Voyager skill inheritance report
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Voyager stores executable JavaScript functions that perform multi-step Minecraft behaviors. It indexes descriptions with embeddings, retrieves up to five relevant skills, and includes those programs with Mineflayer control primitives when generating new code. The automatic curriculum uses current…
+- **来源：** [skill-inheritance-report.md](../reports/external-research/IGNITION-20260918-186/skill-inheritance-report.md)
+- **资产卡：** [HR-91034D3772FE1036](./ASSET-CARDS.md#asset-hr-91034d3772fe1036)
+
+<a id="change-src-hr-8ee247e92588e8a3"></a>
+### 2026-09-18 · Anti-accumulation mechanisms and their limits
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** A size cap limits active storage or prompt growth. Reflexion's last-three-reflections setting, Letta Code's character/depth constraints, Pointfire's budgets, and bounded context capsules are examples. They do not identify which content is true or worth retaining.
+- **来源：** [anti-accumulation-report.md](../reports/external-research/IGNITION-20260918-186/anti-accumulation-report.md)
+- **资产卡：** [HR-8EE247E92588E8A3](./ASSET-CARDS.md#asset-hr-8ee247e92588e8a3)
+
+<a id="change-src-hr-878c653e8befdc32"></a>
+### 2026-09-18 · External cognitive architecture / MetaRSI primary-source research — Task186
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a source-bounded independent research record in the sole Formal repository Arvin-liu/when-systems-catch-fire. The research branch research/IGNITION-20260918-186-external-cognitive-inheritance-metarsi-crosswalk was created from Task181 exact head 7cab7541895620d68d5bce2d16c46871ebd03ac0; i…
+- **来源：** [external-cognitive-architecture-research-report.md](../reports/external-research/IGNITION-20260918-186/external-cognitive-architecture-research-report.md)
+- **资产卡：** [HR-878C653E8BEFDC32](./ASSET-CARDS.md#asset-hr-878c653e8befdc32)
+
+<a id="change-src-hr-81d727f0fb4e0466"></a>
+### 2026-09-18 · External source policy — IGNITION-20260918-186
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Frozen research baseline: 2026-09-18. Formal repository base: Arvin-liu/when-systems-catch-fire at Task181 commit 7cab7541895620d68d5bce2d16c46871ebd03ac0. The separate instruction repository is not a Formal project source.
+- **来源：** [external-source-policy.md](../reports/external-research/IGNITION-20260918-186/external-source-policy.md)
+- **资产卡：** [HR-81D727F0FB4E0466](./ASSET-CARDS.md#asset-hr-81d727f0fb4e0466)
+
+<a id="change-src-hr-3f2f25545922e419"></a>
+### 2026-09-18 · Pointfire crosswalk against external mechanisms
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Pointfire already has several mechanisms that resemble parts of external agent architectures while remaining inside an auditable bounded platform:
+- **来源：** [pointfire-external-crosswalk.md](../reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md)
+- **资产卡：** [HR-3F2F25545922E419](./ASSET-CARDS.md#asset-hr-3f2f25545922e419)
+
+<a id="change-src-hr-3ee6138697704dfd"></a>
+### 2026-09-18 · DSPy and harness/prompt optimization
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** DSPy expresses LM work as signatures and composable modules, then compiles a declared program against user-provided examples and a metric. In the pinned repository, BootstrapFewShot runs a teacher over training examples and accepts traces according to the caller's metric/threshold. MIPROv2 search…
+- **来源：** [dspy-harness-report.md](../reports/external-research/IGNITION-20260918-186/dspy-harness-report.md)
+- **资产卡：** [HR-3EE6138697704DFD](./ASSET-CARDS.md#asset-hr-3ee6138697704dfd)
+
+<a id="change-src-hr-3ecf45675d1ca390"></a>
+### 2026-09-18 · Minimal experiment candidates (proposal only)
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** These five items are research designs, not implementation requests. They are marked RESEARCHONLYNOTIMPLEMENTED; none has been run, and no model weights, external systems, held-out payloads, or successor/evaluator outputs were used in Task186.
+- **来源：** [minimal-experiment-candidates.md](../reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md)
+- **资产卡：** [HR-3ECF45675D1CA390](./ASSET-CARDS.md#asset-hr-3ecf45675d1ca390)
+
 <a id="change-src-hr-ecb9a4b8ee1483ca"></a>
 ### 2026-09-15 · IGNITION-172 Step07 — Knowledge Experience routing index
 

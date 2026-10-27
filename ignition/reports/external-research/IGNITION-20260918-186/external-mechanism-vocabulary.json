@@ -1,0 +1,115 @@
+{
+  "version": "1.0",
+  "purpose": "Shared mechanism vocabulary for a qualitative evidence crosswalk; labels identify mechanism types and do not rank systems.",
+  "cell_states": {
+    "PAPER_CLAIM": "Primary paper states or reports this mechanism; not independently reproduced here.",
+    "CODE_OBSERVED": "Mechanism is directly present in the pinned source paths inspected.",
+    "DOC_CLAIM": "Pinned official documentation describes the mechanism.",
+    "PARTIAL": "A bounded analogue, role, or related mechanism is present but does not establish the full construct.",
+    "NOT_SHOWN": "Not shown in the cited frozen artifacts and inspected scope; absence is scope-limited.",
+    "NOT_APPLICABLE": "The frozen source is a benchmark or artifact for which this mechanism is not an agent behavior."
+  },
+  "mechanisms": [
+    {
+      "id": "EXPERIENCE_CAPTURE",
+      "definition": "Capture task observations, executions, failures, or outcomes for later use."
+    },
+    {
+      "id": "MEMORY_WRITE",
+      "definition": "Persist information so it can affect a later run or trial."
+    },
+    {
+      "id": "MEMORY_RETRIEVAL",
+      "definition": "Select stored information and reintroduce it into later context or action."
+    },
+    {
+      "id": "SKILL_EXTRACTION",
+      "definition": "Turn experience into a reusable executable behavior or skill artifact."
+    },
+    {
+      "id": "SKILL_REUSE",
+      "definition": "Retrieve, invoke, or compose a prior skill in a later task."
+    },
+    {
+      "id": "REFLECTION",
+      "definition": "Synthesize prior experience into a textual or structured learning signal."
+    },
+    {
+      "id": "CRITIQUE",
+      "definition": "Generate feedback about an action, output, or candidate using an explicit critic role or check."
+    },
+    {
+      "id": "HARNESS_MUTATION",
+      "definition": "Change prompts, tools, control flow, or execution configuration as an improvement carrier."
+    },
+    {
+      "id": "DATA_MUTATION",
+      "definition": "Change or generate training/learning data as an improvement carrier."
+    },
+    {
+      "id": "MODEL_MUTATION",
+      "definition": "Change model parameters or weights as an improvement carrier."
+    },
+    {
+      "id": "EVALUATION",
+      "definition": "Measure candidate behavior against a declared metric, environment, or evaluator."
+    },
+    {
+      "id": "HOLDOUT",
+      "definition": "Use a protected evaluation partition or release authority outside candidate write/control surfaces."
+    },
+    {
+      "id": "SELF_MODEL",
+      "definition": "Maintain a representation of the system’s own current capabilities, limits, or competence."
+    },
+    {
+      "id": "CAPABILITY_DISCOVERY",
+      "definition": "Detect or characterize a capability, frontier, or failure mode from observed behavior."
+    },
+    {
+      "id": "ROLLBACK",
+      "definition": "Restore a prior state or candidate when a change fails or is rejected."
+    },
+    {
+      "id": "SUBTRACTION",
+      "definition": "Remove, deactivate, or reduce memory, skill, data, or scaffolding based on evidence."
+    },
+    {
+      "id": "COMPRESSION",
+      "definition": "Reduce stored/context representation while retaining selected information."
+    },
+    {
+      "id": "RETIREMENT",
+      "definition": "Mark an artifact as no longer eligible for use after evidence, drift, or replacement."
+    },
+    {
+      "id": "ROUTING",
+      "definition": "Choose which operator, tool, model, or improvement path acts next."
+    },
+    {
+      "id": "METHOD_REVISION",
+      "definition": "Change the procedure that creates, selects, evaluates, or updates improvements."
+    },
+    {
+      "id": "CROSS_MODEL_TRANSFER",
+      "definition": "Show that a reusable artifact or improvement procedure transfers to a different model/provider."
+    },
+    {
+      "id": "EVIDENCE_FRESHNESS",
+      "definition": "Invalidate or refresh evidence when the system or evaluation target changes."
+    },
+    {
+      "id": "AUTHORITY_SEPARATION",
+      "definition": "Keep evaluation/release authority or protected data outside candidate write surfaces."
+    },
+    {
+      "id": "MEMORY_CONSOLIDATION",
+      "definition": "Deduplicate, merge, generalize, or otherwise consolidate persistent memory."
+    },
+    {
+      "id": "METHOD_PORTABILITY",
+      "definition": "Demonstrate that the improvement procedure, not only its outputs, works across tasks, models, or domains."
+    }
+  ],
+  "matrix_scope": "Cells summarize only the frozen primary papers, official repository snapshots, documentation, and Task181-safe Pointfire source records listed in source-freeze.jsonl. NOT_SHOWN is limited to inspected scope. No external system was run."
+}

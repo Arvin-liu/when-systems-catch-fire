@@ -5,8 +5,8 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → data/external-research/088-external-source-atlas-medium.jsonl
-- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D377 defines a mechanism_model within the point-fire framework. Core: 中文：M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶
-- [第 003 片](./systems/part-003.md)：1001—1500；Object D378 defines a mechanism_model within the point-fire framework. Core: 中文：M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β} → \| \[C-0709\]\( \) \| \[空降CEO失败机制\]\( \) \| 罗恩·约翰逊17个月后销售额暴跌32%，股价腰斩 \|
-- [第 004 片](./systems/part-004.md)：1501—2000；\| \[C-0710\]\( \) \| \[小国君主制保留机制\]\( \) \| 摩纳哥人均GDP 17.8万美元，列支敦士登40万美元 \| → 历史学用于测试因果、材料、边界和叙事结构。
-- [第 005 片](./systems/part-005.md)：2001—2500；历史学界和经济学界通过史料考证、比较研究、跨学科分析等方法研究工业革命起源问题。主流观点认为是多因导致，包括技术积累、制度创新、资源禀赋、文化传统等。 → 社会科学是中等风险领域。社会因果不能写成单因决定论。数据不足、解释争议大、缺乏统计显著性检验时必须 pending。
-- [第 006 片](./systems/part-006.md)：2501—2700；社会科学界通过实证研究、理论分析、比较研究等方法研究社会阶层固化问题。主流观点认为社会阶层固化是由制度、教育、文化等多重因素共同导致。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D372 defines a mechanism_model within the point-fire framework. Core: 中文：M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果
+- [第 003 片](./systems/part-003.md)：1001—1500；Object D373 defines a mechanism_model within the point-fire framework. Core: 中文：M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√ → \| 116 \| GAP-012 因果识别 \| MEDIUM \| 8 \| 2 \|
+- [第 004 片](./systems/part-004.md)：1501—2000；\| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \| → 单方强制排序（非协作，属控制，由其他机制描述）。
+- [第 005 片](./systems/part-005.md)：2001—2500；卢叶观察到一个微妙的筛选机制：会对此感到愧疚的老师，往往走不到那么远；那些能在赛课体系中一路往上冲的老师，学会了把愧疚感压到很深的地方，或者干脆不去想。它更像是一种「系统性的钝化」。 → 目标：兼容旧条目 frontmatter 习惯 + 新条目"机制表达/边界/pending"优点，补齐缺失字段。
+- [第 006 片](./systems/part-006.md)：2501—2707；相关：教育公平/不平等是经典问题，但赛课机制是其下一层「考评制度如何扭曲教育价值」的具体机制，未直接命中其他经典问题。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

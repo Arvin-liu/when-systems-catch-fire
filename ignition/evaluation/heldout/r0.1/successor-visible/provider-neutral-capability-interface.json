@@ -1,0 +1,23 @@
+{
+  "schema_version": "successor-provider-neutral-capability-interface-r0.1",
+  "provider_model_neutral": true,
+  "capabilities": [
+    {
+      "id": "record.serialize",
+      "observable_contract": "Serialize a typed record deterministically while preserving provenance, uncertainty, boundaries, and unknowns.",
+      "claim_ceiling": "Serialization conformance only."
+    },
+    {
+      "id": "record.validate",
+      "observable_contract": "Report structural, provenance, reference, boundary, and prohibited-field conformance as mechanical findings.",
+      "claim_ceiling": "Mechanical validation only; it cannot evaluate hidden competence."
+    },
+    {
+      "id": "task.structuralize",
+      "observable_contract": "Represent a bounded source with cited objects, relations, unknowns, boundaries, obligations, and one proposed continuation.",
+      "claim_ceiling": "A structured output does not establish truth or cognitive inheritance."
+    }
+  ],
+  "provider_binding": "UNBOUND",
+  "calibration": "NOT_MEASURED"
+}

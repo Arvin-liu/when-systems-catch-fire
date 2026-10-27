@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 614 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 628 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -1071,6 +1071,188 @@
 - **问题：** 此来源记录了什么：104 双 088 归并与外部证据层定版报告？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Voyager skill inheritance report](../reports/external-research/IGNITION-20260918-186/skill-inheritance-report.md)
+
+- **结果 ID：** `HR-91034D3772FE1036`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Voyager skill inheritance report？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Voyager stores executable JavaScript functions that perform multi-step Minecraft behaviors. It indexes descriptions with embeddings, retrieves up to five relevant skills, and includes those programs with Mineflayer control primitives when generating new code. The automatic curriculum uses current…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Research questions — IGNITION-20260918-186](../reports/external-research/IGNITION-20260918-186/research-questions.md)
+
+- **结果 ID：** `HR-E2A8E3BD4062C2C6`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Research questions — IGNITION-20260918-186？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** For each positive claim, record the primary source and the object it actually observes. For each negative claim, bound it to the frozen source paths and explain the search surface. Treat authors’ evaluation and mechanism statements as PAPERCLAIM or DOCCLAIM; treat static implementation details as…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Reflexion and Self-Refine crosswalk](../reports/external-research/IGNITION-20260918-186/reflection-family-report.md)
+
+- **结果 ID：** `HR-D472A3138013AB9F`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Reflexion and Self-Refine crosswalk？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Reflexion converts task feedback into text that conditions later actions without updating model weights. The paper distinguishes recent trajectory context from long-term verbal reflections. It usually bounds the reflection buffer to one to three experiences. Its Evaluator may be exact match, a ha…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Pointfire crosswalk against external mechanisms](../reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md)
+
+- **结果 ID：** `HR-3F2F25545922E419`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Pointfire crosswalk against external mechanisms？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Pointfire already has several mechanisms that resemble parts of external agent architectures while remaining inside an auditable bounded platform:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Persistent memory: retrieval, storage, and method inheritance](../reports/external-research/IGNITION-20260918-186/persistent-memory-report.md)
+
+- **结果 ID：** `HR-C2139B347DA84AB9`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Persistent memory: retrieval, storage, and method inheritance？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Generative Agents uses a simulation character's memory stream. The paper describes observations, reflections, and plans as timestamped natural-language records, retrieved with recency, relevance, and importance signals. Reflections summarize prior records and feed later planning. In the pinned co…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Minimal experiment candidates (proposal only)](../reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md)
+
+- **结果 ID：** `HR-3ECF45675D1CA390`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Minimal experiment candidates (proposal only)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** These five items are research designs, not implementation requests. They are marked RESEARCHONLYNOTIMPLEMENTED; none has been run, and no model weights, external systems, held-out payloads, or successor/evaluator outputs were used in Task186.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [MetaRSI primary-source report](../reports/external-research/IGNITION-20260918-186/metarsi-primary-source-report.md)
+
+- **结果 ID：** `HR-B8397BDB03A54B29`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：MetaRSI primary-source report？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The controlling paper is arXiv 2609.06396v2, updated 2026-09-09 and labeled MetaRSI-v1 in the paper. Its formal title, complete author list, arXiv license, official CosmosMind page, RSI-Harness Git commit, and Hugging Face snapshot are recorded in metarsi-source-freeze.json. The public page is un…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [MetaRSI paper/repository cross-check](../reports/external-research/IGNITION-20260918-186/metarsi-paper-repo-crosscheck.md)
+
+- **结果 ID：** `HR-BF5ED91947580A9E`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：MetaRSI paper/repository cross-check？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The frozen code implements an RSIH/Pi harness with configurable, versionable Genomes. A Genome can describe prompts, skills, tools, MCP integrations, extensions, runtime policies, memory, and settings. The harness-rsi Genome reads user-selected session history through a bounded extension, has the…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Inheritance distinctions and evidence ratings](../reports/external-research/IGNITION-20260918-186/inheritance-distinction-report.md)
+
+- **结果 ID：** `HR-AE799F48C6336BD8`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Inheritance distinctions and evidence ratings？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Capability progress is a measurable change in success on a declared task family under a named model, harness, and evaluator. A higher benchmark score can show performance under that protocol; it does not identify which component changed or prove that an improvement method was inherited.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Independent evaluation: what the sources do and do not separate](../reports/external-research/IGNITION-20260918-186/independent-evaluation-report.md)
+
+- **结果 ID：** `HR-F5829CD3B280ED82`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Independent evaluation: what the sources do and do not separate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The MetaRSI paper provides the strongest proposed release architecture in this review: operator write surfaces are separated from an Anchor, held-out task set, release rule, and resource ledger. But for generated-data evaluation, it explicitly uses the same target model for Operator and blind Anc…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [External source policy — IGNITION-20260918-186](../reports/external-research/IGNITION-20260918-186/external-source-policy.md)
+
+- **结果 ID：** `HR-81D727F0FB4E0466`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：External source policy — IGNITION-20260918-186？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Frozen research baseline: 2026-09-18. Formal repository base: Arvin-liu/when-systems-catch-fire at Task181 commit 7cab7541895620d68d5bce2d16c46871ebd03ac0. The separate instruction repository is not a Formal project source.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [External cognitive architecture / MetaRSI primary-source research — Task186](../reports/external-research/IGNITION-20260918-186/external-cognitive-architecture-research-report.md)
+
+- **结果 ID：** `HR-878C653E8BEFDC32`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：External cognitive architecture / MetaRSI primary-source research — Task186？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a source-bounded independent research record in the sole Formal repository Arvin-liu/when-systems-catch-fire. The research branch research/IGNITION-20260918-186-external-cognitive-inheritance-metarsi-crosswalk was created from Task181 exact head 7cab7541895620d68d5bce2d16c46871ebd03ac0; i…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [DSPy and harness/prompt optimization](../reports/external-research/IGNITION-20260918-186/dspy-harness-report.md)
+
+- **结果 ID：** `HR-3EE6138697704DFD`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：DSPy and harness/prompt optimization？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** DSPy expresses LM work as signatures and composable modules, then compiles a declared program against user-provided examples and a metric. In the pinned repository, BootstrapFewShot runs a teacher over training examples and accepts traces according to the caller's metric/threshold. MIPROv2 search…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Anti-accumulation mechanisms and their limits](../reports/external-research/IGNITION-20260918-186/anti-accumulation-report.md)
+
+- **结果 ID：** `HR-8EE247E92588E8A3`
+- **日期：** 2026-09-18
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Anti-accumulation mechanisms and their limits？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** A size cap limits active storage or prompt growth. Reflexion's last-three-reflections setting, Letta Code's character/depth constraints, Pointfire's budgets, and bounded context capsules are examples. They do not identify which content is true or worth retaining.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

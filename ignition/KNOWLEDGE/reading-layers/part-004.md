@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-42c319dffa9ac5fd"></a>
+## 首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）；首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。；本地 Markdown：inputs/collisions/20260708-teacher-competition/source.md（37KB，Get 笔记文章）。；未读取网页链接，未用公众号推广语/图片链接作核心材料。；python3 tools/validatedata.py 输出 ALLP1DATAVALID。；classicproblemsbenchmark：命中 CP-025（教育不平等，pending），作上层锚点。
+- 完整阅读：[outputs/audit/teacher-competition-first-real-collision-audit-20260708.md](../../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
+
+<a id="reading-hr-43bf10109af2485e"></a>
+## External Input Non-Republication Principle
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：本原则适用于所有从项目外部获得的材料，包括但不限于： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：External Input Non-Republication Principle；12026年7月19日（人类纪元；对应公元2026年7月19日）— Q33 正式候选构件；外部输入材料不得被复述、重新发布或再分发。；本原则适用于所有从项目外部获得的材料，包括但不限于：；任何受版权保护且未明确授权本项目使用的原文；来源引用：记录原始来源、作者、时间、渠道和版权状态
+- 完整阅读：[docs/governance/external-input-non-republication-principle.md](../../docs/governance/external-input-non-republication-principle.md)
+
+<a id="reading-hr-4419fea9529c829c"></a>
+## 121Q31T｜交互系统总图与双来源写作素材池合并收口审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q31T｜交互系统总图与双来源写作素材池合并收口审计；PR #60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。；本收口将之元写作法 0.4.0 和系统图 0.1.0 更新为 Current。0.3.0 保留为历史已合并版本；Q29R 和第一条成果 registry 继续绑定真实生成版本 0.3.0。externalinput | ignitionincrement 成为当前素材类型，但内部增量仍不是独立外部证据，不因结构化、模型化或重复 AI 处理提高证据等级。结构对应中的 candidate 继续表示认识论边界。；系统图继续是同一机器 spec 生成的 9 组、41 节点、35 边导航投影，严格保持 L0—L6。README、Pages 和独立交互页共用同一 SVG；图不构成 L7、真值层、因果证明、严格同构或项目完备性证明。Q29R 正文和受限来源均未修改或重发。；final main 的 Foundation、Function OS、Pages 生产部署，以及首页、交互页、SVG、全部 41 节点和 Q29R 线上哈希的无缓存实况证据，由 GitHub Actions 与 1111 结果回执承载。121Q31 候选记录保持原样；本文件和 121Q31T manifest／seal 只追加收口事实。
+- 完整阅读：[reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md](../../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
+
 <a id="reading-hr-448288b011711aef"></a>
 ## 证据制度卡片：数学
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
@@ -332,24 +353,3 @@
 - 1 分钟：IGNITION-121 built a reusable, legal full-text resolver for ignition external-research tasks. The resolver operates on a defined protocol that uses only legitimate open-access channels and records every resolution attempt, hash, and failure. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Legal Full-Text Resolver Report — IGNITION-121；主题：Executive Summary；IGNITION-121 built a reusable, legal full-text resolver for ignition external-research tasks. The resolver operates on a defined protocol that uses only legitimate open-access channels and records every resolution attempt, hash, and failure.；主题：Resolver Components；scripts/external-research/fulltextresolver.py — discovers OA candidate URLs via arXiv, OpenAlex, Crossref, Unpaywall, and direct registry URLs.；scripts/external-research/fulltextfetcher.py — downloads candidate files with curl, records SHA256, content type, page count, and headers.
 - 完整阅读：[reports/external-research/121-legal-fulltext-resolver-report.md](../../reports/external-research/121-legal-fulltext-resolver-report.md)
-
-<a id="reading-hr-55909fc062be1ffa"></a>
-## 赛课机制教师生存困境碰撞批次收口审计
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：赛课机制教师生存困境碰撞批次收口审计；碰撞材料：inputs/collisions/20260708-teacher-competition/source.md；碰撞产物：outputs/collisions/20260708-teacher-competition/（collision-report / new-functions / new-cases / notes / expanded-notes / rejected / source-snapshot）；复核基准：outputs/audit/teacher-competition-backfill-review-20260708.md；收口目标：对照候选清单，逐条确认哪些已正式入表、哪些暂缓、哪些重定向，并核对索引可见性。；git pull --ff-only：Already up to date
-- 完整阅读：[outputs/audit/teacher-competition-batch-closeout-audit-20260708.md](../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
-
-<a id="reading-hr-5598d8ad0154221d"></a>
-## 075 truth audit
-`CANDIDATE_OR_PENDING_SOURCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: PARTIALUNVERIFIEDCOUNTS. Recomputed: 622 formal objects, 806 formal cases, 22 candidate cases, 34 pending claims. The 075 values 608, 546 and 714 were heuristic row hits, not proof results. Verified replayable legacy counterexamples: 0. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：075 truth audit；Status: PARTIALUNVERIFIEDCOUNTS. Recomputed: 622 formal objects, 806 formal cases, 22 candidate cases, 34 pending claims. The 075 values 608, 546 and 714 were heuristic row hits, not proof results. Verified replayable legacy counterexamples: 0.
-- 完整阅读：[reports/foundation-architecture/075-truth-audit-20260712.md](../../reports/foundation-architecture/075-truth-audit-20260712.md)
-
-<a id="reading-hr-55b610ce1cd160c8"></a>
-## IGNITION-20260826-141 Step 15 — Candidate natural full regression
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-141 Step 15 — Candidate natural full regression；The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill. The isolated dependency contract passed with Python 3.14.6, S…；The machine receipt preserves both natural attempts. The first run was not relabeled as green: it completed with 1260 tests, 2 failures, 0 errors and 0 skips. The failures identified two concrete stale bindings: the full regression contract still named Task140, and the system-map geometry contract still named map version 0.14.0 after the Task141 current map…；The captures remain external to the formal repository and are preserved by digest in the machine receipt:；first attempt stdout SHA-256: d0f1d35419064923c62db5d79d4414ba1f54dc7d32b3e446bf7de3e281859d3f;；first attempt stderr SHA-256: 7a67106b8b2053dbc0e7fdc610f6a9c2936a1da9dc8cd3872459ea85a771c807;
-- 完整阅读：[reports/operations/ignition-141-step15-candidate-full-regression.md](../../reports/operations/ignition-141-step15-candidate-full-regression.md)

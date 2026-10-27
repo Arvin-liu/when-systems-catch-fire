@@ -324,6 +324,46 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `v0.2 CP/SB 编号前计数差异诊断`, `v0.2-id-preflight-discrepancy-20260707`
 
+<a id="asset-hr-3ecf45675d1ca390"></a>
+## Minimal experiment candidates (proposal only)
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3ECF45675D1CA390` · [reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md](../../reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md)
+- **为什么产生：** 此来源记录了什么：Minimal experiment candidates (proposal only)？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** These five items are research designs, not implementation requests. They are marked RESEARCHONLYNOTIMPLEMENTED; none has been run, and no model weights, external systems, held-out payloads, or successor/evaluator outputs were used in Task186.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md`, `202`
+- **演化历史：** 2026-09-18: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`
+- **可搜索名称：** `Minimal experiment candidates (proposal only)`, `minimal-experiment-candidates`
+
+<a id="asset-hr-3ee6138697704dfd"></a>
+## DSPy and harness/prompt optimization
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3EE6138697704DFD` · [reports/external-research/IGNITION-20260918-186/dspy-harness-report.md](../../reports/external-research/IGNITION-20260918-186/dspy-harness-report.md)
+- **为什么产生：** 此来源记录了什么：DSPy and harness/prompt optimization？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** DSPy expresses LM work as signatures and composable modules, then compiles a declared program against user-provided examples and a metric. In the pinned repository, BootstrapFewShot runs a teacher over training examples and accepts traces according to the caller's metric/threshold. MIPROv2 search…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/IGNITION-20260918-186/dspy-harness-report.md`, `202`
+- **演化历史：** 2026-09-18: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`
+- **可搜索名称：** `DSPy and harness/prompt optimization`, `dspy-harness-report`
+
 <a id="asset-hr-3ef891412912b7e1"></a>
 ## IGNITION-20260907-162: information volume and logical coherence
 
@@ -343,6 +383,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260907-162: information volume and logical coherence`, `information-volume-and-logical-coherence-experiment-2026-09-07`
+
+<a id="asset-hr-3f2f25545922e419"></a>
+## Pointfire crosswalk against external mechanisms
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3F2F25545922E419` · [reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md](../../reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md)
+- **为什么产生：** 此来源记录了什么：Pointfire crosswalk against external mechanisms？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Pointfire already has several mechanisms that resemble parts of external agent architectures while remaining inside an auditable bounded platform:
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md`, `202`
+- **演化历史：** 2026-09-18: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Pointfire crosswalk against external mechanisms`, `pointfire-external-crosswalk`
 
 <a id="asset-hr-3f9d23d382da2a17"></a>
 ## IGNITION-20260818-126 — Epistemic Structural Induction R0 progress
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `角色—身份碰撞批次路线`, `role-identity-collision-batches-20260712`
-
-<a id="asset-hr-4a7f6b204cdcb0ee"></a>
-## Validation summary
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4A7F6B204CDCB0EE` · [reports/foundation-architecture/validation-summary-20260712.md](../../reports/foundation-architecture/validation-summary-20260712.md)
-- **为什么产生：** 此来源记录了什么：Validation summary？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Expected registry counts: {"benchmarkcounterexamples":2,"candidatecases":22,"formalcases":806,"formalobjects":622,"objecttypes":{"ALGORITHM":1,"ARGUMENTSCHEMA":4,"METRIC":35,"NATURALLANGUAGECANDIDATE":548,"PREDICATE":6,"RELATION":27,"STATETRANSITION":1},"pendingclaims":34,"scopeentities":678,"ver…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/validation-summary-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Validation summary`, `validation-summary-20260712`
-
-<a id="asset-hr-4ac39dba80c596a5"></a>
-## Task172 Step11 — three-input A/B replay
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4AC39DBA80C596A5` · [reports/operations/ignition-172-20260915-step11-ab-replay.md](../../reports/operations/ignition-172-20260915-step11-ab-replay.md)
-- **为什么产生：** 此来源记录了什么：Task172 Step11 — three-input A/B replay？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The three provenance-locked input bytes were available by their recorded SHA-256 values. A is the frozen Step01 relay baseline; B is the current read-only routing overlay plus compact index and exact canonical validation.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-172-20260915-step11-ab-replay.md`, `172-20260915-STEP11-AB-REPLAY`
-- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Task172 Step11 — three-input A/B replay`, `ignition-172-20260915-step11-ab-replay`
-
-<a id="asset-hr-4ad08e43386acc2f"></a>
-## Early-ignition historical replay — Task163
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4AD08E43386ACC2F` · [docs/governance/early-ignition-historical-replay-2026-09-07.md](../../docs/governance/early-ignition-historical-replay-2026-09-07.md)
-- **为什么产生：** 此来源记录了什么：Early-ignition historical replay — Task163？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** This is the Stage A historical qualification record for the research-only R1 operator.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/early-ignition-historical-replay-2026-09-07.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-09-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Early-ignition historical replay — Task163`, `early-ignition-historical-replay-2026-09-07`

@@ -1,0 +1,158 @@
+{
+  "version": "1.0",
+  "framework_name": "Capability, memory, skill, method, and meta-cognitive evolution distinction",
+  "rating_values": [
+    "supported by evidence",
+    "partial",
+    "not shown",
+    "not applicable"
+  ],
+  "rating_policy": {
+    "supported by evidence": "The pinned primary artifact directly demonstrates or reports this dimension in its stated scope. A paper-reported result is not independently reproduced by Task186.",
+    "partial": "A related mechanism or bounded result is present, but the full dimension or transfer claim is not demonstrated.",
+    "not shown": "The reviewed frozen artifacts and inspected scope provide no evidence for the dimension.",
+    "not applicable": "The source is a benchmark or tool that is not itself an agent/inheritance mechanism for this dimension."
+  },
+  "dimensions": {
+    "capability_progress": "A measurable change in task success for a declared task family and setup. Static permission profiles, memory persistence, and benchmark scores without a before/after comparison do not prove progress.",
+    "memory_inheritance": "An experience or memory artifact persists and is retrieved later in a way that conditions behavior; this is not by itself method inheritance.",
+    "skill_inheritance": "A reusable executable or procedural skill is invoked or composed in later tasks; task-domain transfer must be named explicitly.",
+    "method_inheritance": "A later run or successor uses a transferred procedure for selecting, creating, validating, and revising improvements, with transfer measured separately from facts, prompts, skills, and base-model capability.",
+    "meta_cognitive_evolution": "The procedure that monitors capability, selects improvement actions, evaluates candidates, or retires methods itself changes based on evidence under an evaluator it cannot write."
+  },
+  "systems": [
+    {
+      "system": "MetaRSI paper",
+      "ratings": {
+        "capability_progress": "supported by evidence",
+        "memory_inheritance": "partial",
+        "skill_inheritance": "partial",
+        "method_inheritance": "partial",
+        "meta_cognitive_evolution": "partial"
+      },
+      "evidence_summary": "metarsi-primary-source-report.md; primary paper reports benchmark-bound improvement and specifies a scheduler/operator revision architecture; no cross-model inheritance demonstrated."
+    },
+    {
+      "system": "RSI-Harness repository",
+      "ratings": {
+        "capability_progress": "not shown",
+        "memory_inheritance": "partial",
+        "skill_inheritance": "partial",
+        "method_inheritance": "partial",
+        "meta_cognitive_evolution": "not shown"
+      },
+      "evidence_summary": "metarsi-paper-repo-crosscheck.md; versionable Genomes and a user-confirmed history-to-harness authoring workflow; no benchmark, training, or evaluator loop."
+    },
+    {
+      "system": "Reflexion",
+      "ratings": {
+        "capability_progress": "supported by evidence",
+        "memory_inheritance": "supported by evidence",
+        "skill_inheritance": "not shown",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "partial"
+      },
+      "evidence_summary": "reflection-family-report.md; paper-reported improvement across task trials from stored verbal reflections, without a revised method artifact."
+    },
+    {
+      "system": "Self-Refine",
+      "ratings": {
+        "capability_progress": "supported by evidence",
+        "memory_inheritance": "not shown",
+        "skill_inheritance": "not shown",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "not shown"
+      },
+      "evidence_summary": "reflection-family-report.md; paper-reported output quality gains within finite same-model feedback/refinement, without cross-task persistent method."
+    },
+    {
+      "system": "Voyager",
+      "ratings": {
+        "capability_progress": "supported by evidence",
+        "memory_inheritance": "supported by evidence",
+        "skill_inheritance": "supported by evidence",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "partial"
+      },
+      "evidence_summary": "skill-inheritance-report.md; paper-reported novel-task skill reuse in a new Minecraft world, while curriculum/critic procedure remains fixed."
+    },
+    {
+      "system": "DSPy",
+      "ratings": {
+        "capability_progress": "supported by evidence",
+        "memory_inheritance": "partial",
+        "skill_inheritance": "partial",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "not shown"
+      },
+      "evidence_summary": "dspy-harness-report.md; optimizer compiles prompt/demo programs against caller metric/validation data; optimizer method is not itself evolved."
+    },
+    {
+      "system": "Generative Agents",
+      "ratings": {
+        "capability_progress": "partial",
+        "memory_inheritance": "supported by evidence",
+        "skill_inheritance": "not shown",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "not shown"
+      },
+      "evidence_summary": "persistent-memory-report.md; persistent memory stream and reflection inform later behavior inside simulation, not a transferable capability or method."
+    },
+    {
+      "system": "MemGPT paper",
+      "ratings": {
+        "capability_progress": "supported by evidence",
+        "memory_inheritance": "supported by evidence",
+        "skill_inheritance": "not shown",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "partial"
+      },
+      "evidence_summary": "persistent-memory-report.md; paper reports long-context QA/retrieval outcomes and self-directed context edits, but no method revision."
+    },
+    {
+      "system": "Letta Code",
+      "ratings": {
+        "capability_progress": "not shown",
+        "memory_inheritance": "supported by evidence",
+        "skill_inheritance": "partial",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "not shown"
+      },
+      "evidence_summary": "persistent-memory-report.md; pinned code implements persistent versioned memory and user/reminder material, without an evaluation of capability transfer."
+    },
+    {
+      "system": "SWE-agent",
+      "ratings": {
+        "capability_progress": "supported by evidence",
+        "memory_inheritance": "not shown",
+        "skill_inheritance": "not shown",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "not shown"
+      },
+      "evidence_summary": "independent-evaluation-report.md; paper reports benchmark performance with an agent-computer interface; researchers, not the deployed agent, tuned configuration."
+    },
+    {
+      "system": "AgentBench",
+      "ratings": {
+        "capability_progress": "not applicable",
+        "memory_inheritance": "not applicable",
+        "skill_inheritance": "not applicable",
+        "method_inheritance": "not applicable",
+        "meta_cognitive_evolution": "not applicable"
+      },
+      "evidence_summary": "independent-evaluation-report.md; benchmark/framework measures agents and is not itself an inheritance or improvement system."
+    },
+    {
+      "system": "Pointfire Task181 baseline",
+      "ratings": {
+        "capability_progress": "not shown",
+        "memory_inheritance": "supported by evidence",
+        "skill_inheritance": "partial",
+        "method_inheritance": "not shown",
+        "meta_cognitive_evolution": "not shown"
+      },
+      "evidence_summary": "pointfire-external-crosswalk.md; operational memory, profile-scoped Packs, routing, and reversible runs are present, but no capability/method transfer claim is established."
+    }
+  ],
+  "global_scope_ceiling": "No rating establishes general intelligence, consciousness, epistemic acceptance, or cross-model cognitive-method inheritance. In particular, persistence of memory, reuse of skills, task performance, or same-model reflection must not be relabeled as inheritance of the improvement method."
+}

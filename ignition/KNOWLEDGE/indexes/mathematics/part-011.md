@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D312\]\( \) \| \[正反馈噪声放大函数\]\( \) \| F_{D312}\(x\) := M13的正反馈回路放大噪声：δp_max经过k轮](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62d8868969d86c02 / \| \[D312\]\( \) \| \[正反馈噪声放大函数\]\( \) \| F_{D312}\(x\) := M13的正反馈回路放大噪声：δp_max经过k轮
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D274, D295, D312；被引用：—
+- [\| \[D313\]\( \) \| \[共存稳态条件函数\]\( \) \| F_{D313}\(x\) := M14的良性-恶性共存\(D299\)能持续的条件：良性子](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f6ff4f2c7fed2abe / \| \[D313\]\( \) \| \[共存稳态条件函数\]\( \) \| F_{D313}\(x\) := M14的良性-恶性共存\(D299\)能持续的条件：良性子
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D274, D299, D313；被引用：—
+- [\| \[D314\]\( \) \| \[ΔΦ-P传导非线性阈值函数\]\( \) \| F_{D314}\(x\) := M1的ΔΦ通过P_sur](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c2461b17c14ae96 / \| \[D314\]\( \) \| \[ΔΦ-P传导非线性阈值函数\]\( \) \| F_{D314}\(x\) := M1的ΔΦ通过P_sur
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158, D260, D296, D314；被引用：—
 - [\| \[D315\]\( \) \| \[多极小点竞争函数\]\( \) \| F_{D315}\(x\) := M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dc0d8c819914eba1 / \| \[D315\]\( \) \| \[多极小点竞争函数\]\( \) \| F_{D315}\(x\) := M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-069cb4dbae552c62 / 与函数表和案例表碰撞（找同构、缺口、可合并项）。
   - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
-  - 依赖：—；被引用：—
-- [与函数表碰撞（找同构、缺口、可合并项）。](../../../docs/getbrain-operation-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-5f6d517937dc82c1 / 与函数表碰撞（找同构、缺口、可合并项）。
-  - 来源：`docs/getbrain-operation-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [与已知定理不冲突](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a517085fb7973130 / 与已知定理不冲突
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [与已知实验数据不冲突](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f53a592ddedc5f35 / 与已知实验数据不冲突
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

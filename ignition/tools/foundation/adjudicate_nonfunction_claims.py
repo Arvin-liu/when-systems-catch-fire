@@ -397,6 +397,12 @@ def walk_json_strings(value: object, pointer: str = "") -> Iterable[tuple[str, s
 
 
 def text_fragments(path: str) -> tuple[list[dict], str]:
+    if path in EXPLICIT_IMPORTS:
+        return [], "EXPLICIT_CANONICAL_IMPORT"
+    admission = admission_for_path(path)
+    if not admission.auto_discovery:
+        return [], f"EXCLUDED_{admission.classification}"
+
     source = repo_path(path)
     suffix = source.suffix.casefold()
     try:
@@ -410,11 +416,6 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
         raw,
     )
     fragments: list[dict] = []
-    if path in EXPLICIT_IMPORTS:
-        return fragments, "EXPLICIT_CANONICAL_IMPORT"
-    admission = admission_for_path(path)
-    if not admission.auto_discovery:
-        return [], f"EXCLUDED_{admission.classification}"
     if path in SELF_EXCLUDES or path.startswith(MACHINE_EXCLUDE_PREFIXES):
         return fragments, "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY"
     if path.startswith(NON_AUTHORITATIVE_PREFIXES):
