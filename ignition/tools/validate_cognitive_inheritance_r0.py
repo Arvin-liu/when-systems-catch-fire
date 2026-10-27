@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -201,15 +202,40 @@ def validate_changed_paths(root: Path) -> None:
     git_dir = root.parent / ".git"
     if not git_dir.exists() and not (root / ".git").exists():
         return
+    comparison_ref = BASELINE
+    pull_request_base = os.environ.get("GITHUB_BASE_REF", "").strip()
+    if pull_request_base:
+        comparison_ref = f"refs/remotes/origin/{pull_request_base}"
+        resolved = subprocess.run(
+            ["git", "rev-parse", "--verify", f"{comparison_ref}^{{commit}}"],
+            cwd=root.parent,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        require(
+            resolved.returncode == 0,
+            f"cannot resolve current pull-request base {pull_request_base!r}: {resolved.stderr.strip()}",
+        )
+        current_base = resolved.stdout.strip()
+        base_is_ancestor = subprocess.run(
+            ["git", "merge-base", "--is-ancestor", current_base, "HEAD"],
+            cwd=root.parent,
+            capture_output=True,
+            check=False,
+        )
+        require(
+            base_is_ancestor.returncode == 0,
+            f"current pull-request base {pull_request_base!r} is not integrated into the candidate head",
+        )
     result = subprocess.run(
-        ["git", "diff", "--name-only", BASELINE, "HEAD"],
+        ["git", "diff", "--name-only", comparison_ref, "HEAD"],
         cwd=root.parent,
         text=True,
         capture_output=True,
         check=False,
     )
-    if result.returncode != 0:
-        return
+    require(result.returncode == 0, f"cannot enumerate candidate changed paths: {result.stderr.strip()}")
     changed = [line for line in result.stdout.splitlines() if line]
     unexpected = [path for path in changed if not is_allowed_changed_path(path)]
     require(not unexpected, f"R0 changed protected or out-of-scope paths: {unexpected}")
