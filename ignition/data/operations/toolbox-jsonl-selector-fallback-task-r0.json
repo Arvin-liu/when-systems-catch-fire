@@ -1,0 +1,24 @@
+{
+  "schema_version": "toolbox-jsonl-selector-fallback-output-r0",
+  "method": "DIRECT_PYTHON_STDLIB_JSONL_SCAN",
+  "source_path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+  "source_sha256": "4a032548f6a163704e39dfec609a50efe263de8eb0424fafd83cc83dd0c3430c",
+  "source_bytes": 20468038,
+  "lines_scanned": 24695,
+  "selector": {
+    "json_pointer": "/search_id",
+    "equals": "NFC-b39db6e6d352f4f6",
+    "equality": "JSON_SCALAR_VALUE_EXACT"
+  },
+  "selected_record_count": 1,
+  "records": [
+    {
+      "line_number": 1,
+      "start_byte_offset": 0,
+      "end_byte_offset_exclusive": 728,
+      "byte_count": 728,
+      "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
+      "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
+    }
+  ]
+}
