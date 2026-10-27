@@ -4285,6 +4285,22 @@
           "role": "REAL_CLI_NEGATIVE_CONTROLS_AND_SCHEMA_TESTS"
         },
         {
+          "path": "ignition/data/operations/toolbox-source-section-parity-route-profile-r0.json",
+          "role": "DEFAULT_OFF_TASK_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-source-section-parity-route-evidence-r0.json",
+          "role": "REPLAYED_DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_PROPOSALS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-source-section-parity-route-execution-evidence-r0.json",
+          "role": "ROUTER_NONEXECUTION_BOUNDARY"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_source_section_parity_routing.py",
+          "role": "DEFAULT_OFF_ROUTING_AND_NEGATIVE_CONTROLS"
+        },
+        {
           "path": "ignition/tools/operations/validate_toolbox_candidates.py",
           "role": "CANDIDATE_CARD_CONTRACT_VALIDATOR"
         },
@@ -4338,7 +4354,13 @@
       "explicit_owner_authorization_required": false,
       "permissions": {
         "read_paths": [
-          "One caller-selected UTF-8 human document under .github/, docs/, ignition/, or the named root reading documents; exact path is input-bound."
+          ".github/",
+          "docs/",
+          "ignition/",
+          "HUMAN-READING.md",
+          "README.md",
+          "SUMMARY.md",
+          "llms.txt"
         ],
         "write_paths": [],
         "network": false,
@@ -4375,19 +4397,21 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_source_section_parity.py",
+          "ignition/tests/test_toolbox_source_section_parity_routing.py",
           "ignition/tests/test_toolbox_identity_cards.py",
           "ignition/tools/operations/validate_toolbox_candidates.py"
         ],
         "negative_controls": [
           "Reject duplicate JSON keys, unknown authority fields, source digest mismatch, duplicate/missing/reversed markers, source/candidate size overflow, traversal, disallowed paths, symlinks, FIFOs/non-regular files and non-UTF-8 candidate documents.",
           "Source text is not echoed in output; no candidate document content, write, network action or permission grant is produced.",
-          "The default router excludes this candidate; explicit allowlisting only proposes selection and does not invoke the tool or authorize file access."
+          "The default router excludes this candidate. Under the current planner path policy, explicit allowlisting cannot select its .github/, docs/, or named root-document read scope; all route proposals remain non-executable and grant no file access."
         ]
       },
       "router_selectable_by_default": false,
       "router_conditions": [
         "Only consider when the task requires exact byte comparison of one uniquely marker-delimited section between caller-supplied source text and a checked-out human document.",
         "Prefer structural validators when only shape/count is required and whole-file digest checks when entire artifacts should match.",
+        "The current route planner accepts permission paths only under ignition/; this candidate's declared human-document scope also includes .github/, docs/, and named root reading documents, so it is not selectable through that planner unless the path boundary is separately changed.",
         "Source ref and digest are caller-supplied and not authenticated; a matching section does not authorize editing or publication."
       ],
       "claim_ceiling": "Compares exact UTF-8 bytes between caller-declared unique start/end markers in supplied source text and one explicitly selected checked-out human-document file. The caller-supplied source reference and digest are not authenticated; comparison does not establish authorship, approval, semantic equivalence, scientific validity, release authority, or permission to edit or publish.",
