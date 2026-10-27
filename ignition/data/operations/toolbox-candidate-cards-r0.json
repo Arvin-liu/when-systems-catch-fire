@@ -104,6 +104,18 @@
         {
           "path": "ignition/tests/test_ignition_operation_playbooks.py",
           "role": "EXISTING_ROUTE_PLANNER_COMPATIBILITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-route-profile-r0.json",
+          "role": "BOUNDED_READ_ONLY_ROUTE_TASK_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-route-experiment-r0.json",
+          "role": "EXACT_CANDIDATE_ADAPTIVE_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_execution_state_lineage_routing.py",
+          "role": "DEFAULT_OFF_AND_TASK_FIT_ROUTE_NEGATIVE_CONTROLS"
         }
       ],
       "dependencies": [
@@ -220,6 +232,7 @@
           "ignition/tests/test_toolbox_execution_state_lineage.py",
           "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
           "ignition/tests/test_ignition_operation_playbooks.py",
+          "ignition/tests/test_toolbox_execution_state_lineage_routing.py",
           "ignition/tools/operations/validate_toolbox_candidates.py",
           "ignition/tools/operations/build_toolbox_identity_cards.py"
         ],

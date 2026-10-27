@@ -1,0 +1,181 @@
+{
+  "schema_version": "ignition-toolbox-execution-state-lineage-route-experiment-r0",
+  "observed_at_utc": "2026-10-27T08:32:31Z",
+  "scope": "Existing planner route proposals for one bounded checkpoint-lineage audit profile; no tool invocation or external action.",
+  "bindings": {
+    "task_branch_head_sha": "5516c269e82bb4c326f895cb2016a95086a13d92",
+    "current_ref_echoed_by_planner": "refs/heads/codex/noaa-gas-toolbox-integration-20261027@5516c269e82bb4c326f895cb2016a95086a13d92",
+    "current_ref_resolution_by_planner": "NOT_PERFORMED_CALLER_SUPPLIED_ONLY",
+    "planner_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "planner_git_blob_sha1": "5bf6661ed980eb6449af19ea39e3feefbb01baf8",
+    "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "candidate_catalog_git_blob_sha1": "d13ab90e5266fa239ada1f76e3ee0148a1a39647",
+    "current_operation_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "current_operation_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_count": 10,
+    "tool_id": "maintenance.audit_execution_state_lineage",
+    "tool_source_path": "ignition/tools/toolbox_execution_state_lineage.py",
+    "tool_source_git_blob_sha1": "5daf78fac42bcffcc59af7e1b1ab65ed972daca6",
+    "tool_source_sha256": "d94d3756efb70bb655b767f1539bf75a33173cfdb2e877d9445992ee8a814cc7",
+    "route_profile_path": "ignition/data/operations/toolbox-execution-state-lineage-route-profile-r0.json",
+    "route_profile_sha256": "da073d10e1ca1338f75bce6eb646154bc4182661ef0085007b8b00429a5d68c5"
+  },
+  "route_trials": {
+    "default_off": {
+      "task_id": "execution-state-lineage-structural-audit-20261027",
+      "decision": "INCOMPLETE",
+      "allowlist": [],
+      "input_types": [
+        "One UTF-8 JSON object conforming to toolbox-execution-state-lineage-input-r0; maximum 262144 bytes."
+      ],
+      "selected_tool_ids": [],
+      "rejected_target_reasons": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "required_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "planner_source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d13ab90e5266fa239ada1f76e3ee0148a1a39647"
+      },
+      "cli_exit_code": 2,
+      "cli_stdout_sha256": "815c224b0aba41971c6e5c2c826370ab672bd4f23a6512319b03cd3c81afe4a3"
+    },
+    "explicit_tool_only": {
+      "task_id": "execution-state-lineage-structural-audit-20261027",
+      "decision": "COMPLETE",
+      "allowlist": [
+        "maintenance.audit_execution_state_lineage"
+      ],
+      "input_types": [
+        "One UTF-8 JSON object conforming to toolbox-execution-state-lineage-input-r0; maximum 262144 bytes."
+      ],
+      "selected_tool_ids": [
+        "maintenance.audit_execution_state_lineage"
+      ],
+      "rejected_target_reasons": [],
+      "required_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "covered_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "planner_source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d13ab90e5266fa239ada1f76e3ee0148a1a39647"
+      },
+      "cli_exit_code": 0,
+      "cli_stdout_sha256": "cd7129bc709619f3ec258a89a5a29949ff080df0dec41813bde8afe9f1739a90"
+    },
+    "broad_explicit_allowlist": {
+      "task_id": "execution-state-lineage-structural-audit-20261027",
+      "decision": "COMPLETE",
+      "allowlist": [
+        "maintenance.audit_execution_state_lineage",
+        "research.compare_noaa_ch4_source_surfaces",
+        "research.compare_noaa_co2_source_surfaces",
+        "research.compare_noaa_n2o_source_surfaces",
+        "research.compare_noaa_sf6_source_surfaces",
+        "research.lookup_noaa_global_ch4_annual_growth",
+        "research.lookup_noaa_global_co2_annual_growth",
+        "research.lookup_noaa_global_n2o_annual_growth",
+        "research.lookup_noaa_global_sf6_annual_growth",
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "input_types": [
+        "One UTF-8 JSON object conforming to toolbox-execution-state-lineage-input-r0; maximum 262144 bytes."
+      ],
+      "selected_tool_ids": [
+        "maintenance.audit_execution_state_lineage"
+      ],
+      "rejected_target_reasons": [],
+      "required_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "covered_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "planner_source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d13ab90e5266fa239ada1f76e3ee0148a1a39647"
+      },
+      "cli_exit_code": 0,
+      "cli_stdout_sha256": "2789c2df09946741fa0e68ae9b4e7875b44d91310b37438680679e84a9778651"
+    },
+    "unrelated_input_even_when_allowed": {
+      "task_id": "execution-state-lineage-structural-audit-20261027",
+      "decision": "INCOMPLETE",
+      "allowlist": [
+        "maintenance.audit_execution_state_lineage"
+      ],
+      "input_types": [
+        "Unrelated prose document"
+      ],
+      "selected_tool_ids": [],
+      "rejected_target_reasons": [
+        "NO_INPUT_TYPE_MATCH"
+      ],
+      "required_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "planner_source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "d13ab90e5266fa239ada1f76e3ee0148a1a39647"
+      },
+      "cli_exit_code": 2,
+      "cli_stdout_sha256": "d217a63dafc3d9122517ac3aef5e195abf7cb3c59c2a510e9c4c2e59e727a31e"
+    }
+  },
+  "effect_observation": {
+    "planner_invocations": 4,
+    "candidate_tool_invocations": 0,
+    "network_requests": 0,
+    "execution_authorized": false,
+    "filesystem_write_by_planner": false
+  },
+  "nonclaims": [
+    "current_ref is caller supplied and was not resolved by the planner.",
+    "A COMPLETE route is a typed proposal only; it does not call the tool or grant permission.",
+    "The experiment tests selection behavior for one declared task contract, not task accuracy, safety in all contexts, or scientific validity.",
+    "No cost advantage was measured; planner cost estimate remains UNKNOWN."
+  ]
+}

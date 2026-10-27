@@ -1,0 +1,14 @@
+{
+  "task_id": "execution-state-lineage-structural-audit-20261027",
+  "current_ref": "refs/heads/codex/noaa-gas-toolbox-integration-20261027@5516c269e82bb4c326f895cb2016a95086a13d92",
+  "input_types": [
+    "One UTF-8 JSON object conforming to toolbox-execution-state-lineage-input-r0; maximum 262144 bytes."
+  ],
+  "required_outputs": [
+    "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": []
+}
