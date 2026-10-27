@@ -41,15 +41,16 @@
     "command": "PYTHONPATH=.:tests:tools/foundation python3 -m unittest tests.test_toolbox_q38_evidence_bundle -v",
     "working_directory": "ignition",
     "test_methods_passed": 5,
-    "attack_matrix_cases": 21,
+    "attack_matrix_cases": 24,
     "additional_cli_negative_controls": [
       "duplicate_json_key",
       "stdin_over_1000000_bytes",
+      "missing_jsonschema_fails_closed",
       "duplicate_family_canonical_reference_is_order_independent"
     ],
     "missing_jsonschema_fails_closed": true,
     "test_file": "ignition/tests/test_toolbox_q38_evidence_bundle.py",
-    "test_sha256": "3cf67d8baff67cee60dde12d131de440f2fec056b2a7e68e8d6de348d304e9b6"
+    "test_sha256": "7b520dcc8f8cab5eee39c4d3b29bd247cf72103bcdeefb0d840dcd7824bd3b03"
   },
   "evidence_boundary": "A local repository pilot passed the implemented structural and declared-consistency checks. This does not authenticate sources or rights, prove retrieval completeness, establish scientific validity, or prove a mechanism or causal relation.",
   "blueprint_binding": {

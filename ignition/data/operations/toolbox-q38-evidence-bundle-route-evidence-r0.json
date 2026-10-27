@@ -1,7 +1,7 @@
 {
   "schema_version": "toolbox-q38-evidence-bundle-route-evidence-r0",
   "tool_id": "knowledge.validate_q38_i1_evidence_bundle",
-  "candidate_catalog_blob_sha1": "f9c5b8468ea602b9f1ad513ce67bd3ada899d1b3",
+  "candidate_catalog_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5",
   "route_profile": {
     "task_id": "q38-i1-evidence-bundle-validation",
     "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
@@ -37,7 +37,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "f9c5b8468ea602b9f1ad513ce67bd3ada899d1b3"
+        "experimental_candidate_catalog_git_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5"
       },
       "selected_permissions": []
     },
@@ -53,7 +53,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "f9c5b8468ea602b9f1ad513ce67bd3ada899d1b3"
+        "experimental_candidate_catalog_git_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5"
       },
       "selected_permissions": [
         {
@@ -79,7 +79,7 @@
       "execution_authorized": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "f9c5b8468ea602b9f1ad513ce67bd3ada899d1b3"
+        "experimental_candidate_catalog_git_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5"
       },
       "selected_permissions": [
         null

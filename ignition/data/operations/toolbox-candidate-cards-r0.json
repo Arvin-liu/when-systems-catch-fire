@@ -2998,7 +2998,7 @@
         },
         {
           "path": "ignition/tests/test_toolbox_q38_evidence_bundle.py",
-          "role": "PASS_AND_21_ATTACK_CLASS_NEGATIVE_CONTROLS"
+          "role": "PASS_AND_24_REAL_CLI_CONTRACT_CASES"
         },
         {
           "path": "ignition/data/operations/toolbox-q38-evidence-bundle-real-tool-test-r0.json",
@@ -3133,7 +3133,7 @@
           "ignition/tests/test_toolbox_identity_cards.py"
         ],
         "negative_controls": [
-          "Twenty-one mutation cases cover every declared gate exit from schema failure through dangling-reference rejection, including wrong seed head, unbalanced evidence kinds, negative deletion, duplicate-family overcount, unknown-rights publication, stale evidence, representativeness gaps, quantity voting, mechanism overclaim, post-hoc stop rewrite, selective negative exclusion, claim-ceiling increase, digest mismatch, broken selection logs, missing Q39 exports, counterevidence override, future as-of time, unbounded search, and dangling references.",
+          "Twenty-four real-CLI bundle cases cover declared gate exits from schema failure through dangling-reference rejection, including wrong seed head and denied seed permission, unbalanced evidence kinds, negative deletion, duplicate-family overcount, citation-only rights mismatch, stale evidence, representativeness gaps, both quantity-vote phrasings, mechanism overclaim, post-hoc stop rewrite, selective negative exclusion, claim-ceiling increase, digest mismatch, broken selection logs, missing Q39 exports, counterevidence override, future as-of time, unbounded search, and dangling references.",
           "CLI controls reject duplicate JSON keys and stdin above 1,000,000 bytes, and verify that a missing jsonschema dependency fails closed.",
           "A duplicate-family record must reference the included canonical record in that same family, regardless of item order, and reduce the declared independent-family count."
         ]

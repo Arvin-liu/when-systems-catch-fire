@@ -28,6 +28,23 @@ class Q38EvidenceBundleTests(unittest.TestCase):
         self.assertEqual(result["exit_code"], expected_code, result)
         return result
 
+    def assert_cli_gate(self, bundle: dict, expected_code: int) -> dict:
+        raw = json.dumps(bundle, ensure_ascii=False)
+        with tempfile.TemporaryDirectory() as temp:
+            run = subprocess.run(
+                [sys.executable, "-B", str(TOOL_PATH), "--stdin"],
+                input=raw,
+                text=True,
+                capture_output=True,
+                cwd=temp,
+                check=False,
+            )
+            self.assertEqual(run.returncode, expected_code, run.stdout + run.stderr)
+            result = json.loads(run.stdout)
+            self.assertEqual(result["exit_code"], expected_code, result)
+            self.assertEqual(list(Path(temp).iterdir()), [])
+        return result
+
     def test_frozen_repository_pilot_passes_with_limited_claim_ceiling(self) -> None:
         result = self.assert_gate(pilot(), 0)
         self.assertEqual(result["exit_name"], "GATE_PASS")
@@ -127,9 +144,23 @@ class Q38EvidenceBundleTests(unittest.TestCase):
         dangling_ref["conclusion"]["unresolved_gap_refs"].append("gap.missing")
         cases.append(("dangling evidence gap reference", dangling_ref, 21))
 
+        citation_only = pilot()
+        citation_only["evidence_items"][0]["rights_status"] = "CITATION_ONLY"
+        citation_only["evidence_items"][0]["publication_mode"] = "METADATA_AND_SUMMARY"
+        cases.append(("citation-only material published as full text", citation_only, 7))
+
+        denied_seed = pilot()
+        denied_seed["audited_search_seed"]["q38_search_permission"] = "DENIED"
+        cases.append(("Q37 seed permission denied by strict schema", denied_seed, 2))
+
+        alternative_quantity_vote = pilot()
+        alternative_quantity_vote["conclusion"]["statement"] = "More cases therefore true."
+        cases.append(("alternative quantity vote phrasing", alternative_quantity_vote, 10))
+
+        self.assertEqual(len(cases), 24)
         for label, bundle, expected in cases:
             with self.subTest(case=label):
-                self.assert_gate(bundle, expected)
+                self.assert_cli_gate(bundle, expected)
 
     def test_valid_duplicate_family_must_bind_to_an_included_canonical_record(self) -> None:
         bundle = pilot()
@@ -141,6 +172,7 @@ class Q38EvidenceBundleTests(unittest.TestCase):
         bundle["evidence_items"].insert(0, duplicate)
         bundle["stop_assessment"]["independent_source_family_count"] = 3
         self.assert_gate(bundle, 0)
+        self.assert_cli_gate(bundle, 0)
 
     def test_missing_jsonschema_dependency_fails_closed(self) -> None:
         real_import = builtins.__import__
