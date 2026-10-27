@@ -112,6 +112,10 @@ GENERATED_EXACT_PATHS = {
     "tools/governance/validate_human_surface_contract.py",
     "tests/test_overall_architecture.py",
     "tests/test_fire_seeds.py",
+    # The declarative G-domain validation map is included by the policy's
+    # automatic text discovery, but is operational mapping data rather than a
+    # mathematical function-asset source.
+    "data/operations/component-validation-map-r1.json",
     "data/architecture/overall-architecture.json",
     "data/foundation/project-state.json",
     "data/foundation/registry-manifest.json",

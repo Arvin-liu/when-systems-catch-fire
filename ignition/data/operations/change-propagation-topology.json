@@ -1,5 +1,5 @@
 {
-  "topology_version": "1.13.0",
+  "topology_version": "1.14.0",
   "purpose": "Typed declared relations for repository change propagation and map projection. Substantive causal candidates remain informational unless separately evidenced in MCF.",
   "relation_classes": [
     "derives",
@@ -359,7 +359,7 @@
       "residue": []
     },
     {
-      "relation_id": "map_current_state_no_totality",
+      "relation_id": "map_projection_current_state_no_totality",
       "source": "system_map",
       "target": "current_state",
       "relation_class": "constraint",
@@ -442,7 +442,7 @@
       "residue": []
     },
     {
-      "relation_id": "map_foundation_no_truth",
+      "relation_id": "map_projection_foundation_no_truth",
       "source": "system_map",
       "target": "foundation_data",
       "relation_class": "constraint",
@@ -2134,6 +2134,40 @@
       "label": "REOS LIGHT 作为 research Pack",
       "declaration_source": "docs/architecture/reos-vnext-light.md",
       "claim_ceiling": "bounded research coordination only; not Kernel definition",
+      "residue": []
+    },
+    {
+      "relation_id": "openalex_adapter_consumed_by_research_workflow_slot",
+      "source": "openalex_adapter_r1",
+      "target": "research_workflow_slot",
+      "relation_class": "lifecycle_depends_on",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [],
+      "trigger_classifications": [],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "OpenAlex adapter is dynamically loaded and consumed by the live research CLI",
+      "declaration_source": "research_workflow/cli.py:39,837-860 in PR #259",
+      "claim_ceiling": "declared source-to-consumer repository dependency only",
+      "residue": []
+    },
+    {
+      "relation_id": "crossref_verifier_consumed_by_research_workflow_slot",
+      "source": "crossref_verifier_r1",
+      "target": "research_workflow_slot",
+      "relation_class": "lifecycle_depends_on",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [],
+      "trigger_classifications": [],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "Crossref verifier is dynamically loaded and consumed by the live research CLI",
+      "declaration_source": "research_workflow/cli.py:40-42,168-237,837-838 in PR #259",
+      "claim_ceiling": "declared source-to-consumer repository dependency only",
       "residue": []
     },
     {

@@ -8,13 +8,13 @@
   "facts": {
     "architecture": {
       "current_map_version": "0.16.0",
-      "hidden_components": 13,
+      "hidden_components": 17,
       "historical_map_version": "0.14.0",
       "layout_version": "2.0.0",
-      "registry_components": 100,
+      "registry_components": 104,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
-      "typed_topology_relations": 140,
+      "typed_topology_relations": 142,
       "visible_map_nodes": 87,
       "visible_typed_edges": 92
     },
@@ -61,7 +61,7 @@
     },
     "fire_seeds": {
       "seed_count": 64,
-      "source_census_count": 678
+      "source_census_count": 639
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
@@ -117,10 +117,10 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6158,
-      "function_quarantine_or_pending": 5006,
-      "nonfunction_claims": 18003,
-      "nonfunction_quarantine_or_pending": 4996
+      "function_identity_cards": 6151,
+      "function_quarantine_or_pending": 4999,
+      "nonfunction_claims": 17966,
+      "nonfunction_quarantine_or_pending": 4993
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -155,11 +155,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 1429,
-      "cards": 691,
-      "changes": 586,
-      "layered_readings": 612,
-      "search_records": 24773
+      "aliases": 1353,
+      "cards": 653,
+      "changes": 548,
+      "layered_readings": 574,
+      "search_records": 24691
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -237,11 +237,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "74ac407ef08ec60772a89b1122a78cf2d98d1c53240ad183d459dbcbb04b9302"
+      "sha256": "f30f1908774031a683546d9528e768bd350527c6e4183d135c7889b9bd5d5747"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "620648a1ec84cacb95166f9db12cb2216146ff8deb15494c06c5faa5575b6ffb"
+      "sha256": "00eb76c2d6e8d5520f359656bac88b6143ebe0bce47a3932e5c5922fb8c0101e"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -249,15 +249,15 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "7af3369a17e2f76865376295c1e6fc46ab935e26f9c91a2a425c8a5ddb855b45"
+      "sha256": "07e18ee690254d12cc097a981603c5ce172d3ba4caeda2774634c35258882318"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "488a779ac98711c543b1a8ce5234628c286c687d00c371bdaa128a192ab946c8"
+      "sha256": "9f4336bc6050e0386a02542b9dc115504ff0d3ad83f2d1099a583da6c039776d"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "efde6fb6d29caee917cd3e6a723b66dad2c63fe9e123b18753270b710b9e8085"
+      "sha256": "d8b0d00fae55b525694b0d05bcddf3828ca2436bd4fd6c65d111e75b5b2752dc"
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "bab5e0ea70a7b6636d310994116803eea352c554a22a33daa19fc55e4374f8a8"
+      "sha256": "d378775bc2aa2f30d369680021322a37e88f5c2907114d3be54bbc312b5a925d"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "f8d2117832d4a57f22dbbd27b49c935917e37ab051209990ab8f8b9739bc415a"
+      "sha256": "1cb9e4397d0d8e09c809deb30ce538012eef1e6c3f69b4ad0b748cf9b6235bef"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
