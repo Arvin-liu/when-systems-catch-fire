@@ -1,0 +1,41 @@
+{
+  "frozen_before_blind_run": true,
+  "gate_id": "CREATIVE_DISCONTINUITY_GATE_V1",
+  "high_gate_minimum": {
+    "c3_better_than_c0_c1_c2": true,
+    "c4_decline_or_nonnecessity": true,
+    "domains": 3,
+    "holdout": true,
+    "independent_items": 12,
+    "threads": 4,
+    "v2_l5_is_support_only": true,
+    "v2_levels": [
+      "L2",
+      "L3",
+      "L4",
+      "L6"
+    ]
+  },
+  "kill_if": [
+    "only a longer answer or nearest retrieval",
+    "random condition is equivalent",
+    "no holdout transfer",
+    "no new failure mode",
+    "no deletion loss",
+    "same operation already exists under another name",
+    "candidate depends on target leakage"
+  ],
+  "required_items": [
+    "non-natural extension",
+    "ability increment",
+    "new problem language",
+    "new failure or antifalsification path",
+    "migration across three substantial domains",
+    "not conservatively compilable to an existing system operation",
+    "deletion loss",
+    "not random pretty words",
+    "not more tokens, model size, or retrieval volume",
+    "explicit kill condition"
+  ],
+  "task_id": "IGNITION-20260908-165"
+}

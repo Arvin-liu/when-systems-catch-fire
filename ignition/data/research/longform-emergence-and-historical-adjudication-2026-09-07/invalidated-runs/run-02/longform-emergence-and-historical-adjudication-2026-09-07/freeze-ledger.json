@@ -1,0 +1,33 @@
+{
+  "command_source": {
+    "blob": "df58765e5c21cf3b0aba15f804ce461b4b1c542e",
+    "commit": "8ab1aac0cdedd4874c798f4593614335cdd79e76",
+    "content_sha256": "e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a",
+    "path": "agent-commands/IGNITION-20260907-162.md",
+    "repository": "Arvin-liu/1111"
+  },
+  "control_pointers": {
+    "instructions/CURRENT.md": "missing; preserve and record STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL",
+    "relay/current": "missing; preserve and record STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL"
+  },
+  "external_track_frozen": true,
+  "forbidden_actions_taken": [],
+  "formal_base": {
+    "ref": "work/IGNITION-20260907-161",
+    "sha": "5ccb15d45cec259d5397f1843278fd98011105aa"
+  },
+  "formal_pr_preflight": {
+    "base": "work/IGNITION-20260907-160",
+    "draft": true,
+    "head": "5ccb15d45cec259d5397f1843278fd98011105aa",
+    "number": 211,
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "state": "open"
+  },
+  "history_track_frozen": true,
+  "hypotheses_frozen_before_source_discovery": true,
+  "source_selection_frozen_before_source_discovery": true,
+  "status": "RESEARCH_ONLY_DRAFT_PENDING",
+  "task161_answer_key_loaded_only_after_history_freeze": true,
+  "task_id": "IGNITION-20260907-162"
+}
