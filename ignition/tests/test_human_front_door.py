@@ -13,7 +13,10 @@ from tools.validate_human_front_door import (
     CAPABILITIES,
     CURRENT_STATE,
     GUIDE,
+    HUMAN_CURRENT_HEADING,
+    HUMAN_IDENTITY_HEADING,
     HUMAN_READING,
+    HUMAN_VALUES_HEADING,
     LLMS,
     MINIMAL_INVOCATION,
     OPERATING_METHOD_LINK,
@@ -47,19 +50,36 @@ class HumanFrontDoorTests(unittest.TestCase):
         spec = json.loads((CURRENT_STATE.parent.parent / "data/architecture/interactive-system-map.json").read_text(encoding="utf-8"))
         self.assertEqual(result["system_map_source_link_nodes"], len(spec["nodes"]))
 
-    def test_visible_project_and_charter_blocks_are_first_and_machine_state_is_absent(self):
+    def test_visible_identity_and_values_blocks_are_first_and_machine_state_is_absent(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)
-        self.assertLess(self.readme.index("### 项目现状"), self.readme.index("### 价值宪章"))
-        self.assertLess(self.readme.index("### 价值宪章"), self.readme.index(f"## {AI_FIRST_USE_HEADING}"))
+        self.assertLess(self.readme.index(HUMAN_IDENTITY_HEADING), self.readme.index(HUMAN_VALUES_HEADING))
+        self.assertLess(self.readme.index(HUMAN_VALUES_HEADING), self.readme.index(HUMAN_CURRENT_HEADING))
+        self.assertLess(self.readme.index(HUMAN_CURRENT_HEADING), self.readme.index(f"## {AI_FIRST_USE_HEADING}"))
         self.assertIn("<details", self.readme.lower())
         self.assertIn("组件导航：核心控制与状态", self.readme)
         self.assertNotIn("CURRENT-SNAPSHOT", self.readme)
         self.assertNotIn("architecture_counts", self.readme)
 
     def test_project_identity_is_the_owner_provided_text(self):
-        start = self.readme.index("### 项目现状") + len("### 项目现状")
-        end = self.readme.index("### 价值宪章")
-        self.assertEqual(self.readme[start:end].strip(), PROJECT_IDENTITY_TEXT)
+        start = self.readme.index(HUMAN_IDENTITY_HEADING) + len(HUMAN_IDENTITY_HEADING)
+        end = self.readme.index(HUMAN_VALUES_HEADING)
+        identity_block = self.readme[start:end]
+        self.assertIn(f"**{PROJECT_IDENTITY_TEXT}**", identity_block)
+
+    def test_identity_applies_self_examination_to_the_whole_system(self):
+        start = self.readme.index(HUMAN_IDENTITY_HEADING) + len(HUMAN_IDENTITY_HEADING)
+        end = self.readme.index(HUMAN_VALUES_HEADING)
+        identity_block = self.readme[start:end]
+        for phrase in (
+            "点火既是持续认识和改造对象的过程，也是这个过程本身可以被重新认识和改造的对象",
+            "点火的整体架构乃至我们对「点火是什么」的表述也如此",
+            "它们的价值不取决于新旧、名义或过去投入了多少",
+            "新方法确实更好，就可以替换旧方法",
+            "旧方法仍有独特作用，就保留其适用位置",
+            "证据不足，就承认尚不能判断",
+            "我们既不为了变化而变化，也不因为曾经有效就拒绝改变",
+        ):
+            self.assertIn(phrase, identity_block)
 
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
@@ -96,22 +116,24 @@ class HumanFrontDoorTests(unittest.TestCase):
         for case in fixture["cases"]:
             with self.subTest(case=case["id"]):
                 mutated = self.readme
-                if case["mutation"] == "insert-before-current":
-                    mutated = mutated.replace("### 项目现状", "> 首页导语\n\n### 项目现状", 1)
-                elif case["mutation"] == "duplicate-project-current":
-                    mutated = mutated.replace("### 项目现状", "### 项目现状\n\n### 项目现状", 1)
-                elif case["mutation"] == "duplicate-value-charter":
-                    mutated = mutated.replace("### 价值宪章", "### 价值宪章\n\n### 价值宪章", 1)
+                if case["mutation"] == "insert-before-identity":
+                    mutated = mutated.replace(HUMAN_IDENTITY_HEADING, f"> 首页导语\n\n{HUMAN_IDENTITY_HEADING}", 1)
+                elif case["mutation"] == "duplicate-identity":
+                    mutated = mutated.replace(HUMAN_IDENTITY_HEADING, f"{HUMAN_IDENTITY_HEADING}\n\n{HUMAN_IDENTITY_HEADING}", 1)
+                elif case["mutation"] == "duplicate-values":
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"{HUMAN_VALUES_HEADING}\n\n{HUMAN_VALUES_HEADING}", 1)
                 elif case["mutation"] == "insert-snapshot":
-                    mutated = mutated.replace("### 价值宪章", "<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->\nlegacy\n<!-- CURRENT-SNAPSHOT:END -->\n\n### 价值宪章", 1)
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->\nlegacy\n<!-- CURRENT-SNAPSHOT:END -->\n\n{HUMAN_VALUES_HEADING}", 1)
                 elif case["mutation"] == "insert-details":
-                    mutated = mutated.replace("### 价值宪章", "<details>\n### 价值宪章\n</details>", 1)
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"<details>\n{HUMAN_VALUES_HEADING}\n</details>", 1)
                 elif case["mutation"] == "remove-charter-link":
-                    mutated = mutated.replace("[完整《生命共同体价值宪章》](../ignition/docs/governance/life-community-value-charter.md)", "完整《生命共同体价值宪章》", 1)
+                    mutated = mutated.replace("[《生命共同体价值宪章》](../ignition/docs/governance/life-community-value-charter.md)", "《生命共同体价值宪章》", 1)
                 elif case["mutation"] == "insert-machine-count":
-                    mutated = mutated.replace("### 价值宪章", "architecture_counts=99\n\n### 价值宪章", 1)
+                    mutated = mutated.replace(HUMAN_VALUES_HEADING, f"architecture_counts=99\n\n{HUMAN_VALUES_HEADING}", 1)
                 elif case["mutation"] == "drift-project-identity":
-                    mutated = mutated.replace("点火是一个面向长期研究", "点火是一个面向短期研究", 1)
+                    mutated = mutated.replace("点火首先是一种面对未知的精神", "点火首先是一种面对短期的精神", 1)
+                elif case["mutation"] == "drift-whole-system-self-examination":
+                    mutated = mutated.replace("点火的整体架构乃至我们对「点火是什么」的表述也如此", "点火的整体架构不需要重新审视", 1)
                 elif case["mutation"] == "insert-raw-svg-link":
                     entry = f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL}) · [阅读模式]({ARCHITECTURE_PAGES_URL}) · {ARCHITECTURE_INTERACTION_HINT}。\n\n"
                     mutated = mutated.replace(entry, "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n" + entry, 1)

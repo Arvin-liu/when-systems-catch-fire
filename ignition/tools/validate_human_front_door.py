@@ -47,10 +47,11 @@ VERSION_FACTS = {
     "historical_map": "0.14.0",
     "earlier_historical_map": "0.13.0",
 }
-HUMAN_CURRENT_HEADING = "### 项目现状"
-HUMAN_CHARTER_HEADING = "### 价值宪章"
+HUMAN_IDENTITY_HEADING = "### 点火是什么"
+HUMAN_VALUES_HEADING = "### 价值方向"
+HUMAN_CURRENT_HEADING = "### 现在做到哪里"
 CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
-PROJECT_IDENTITY_TEXT = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
+PROJECT_IDENTITY_TEXT = "点火首先是一种面对未知的精神：不把已有的认识当作世界的终点，不把尚未理解的事物简单排除，也不因为一个解释足够漂亮，就停止追问它是否成立。"
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
 ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
@@ -223,33 +224,56 @@ def validate_readme_structure(readme: str) -> None:
     section_one = readme[section_one_start:section_two_start]
     h3_matches = list(re.finditer(r"^### (?!#)(.+?)\s*$", section_one, re.MULTILINE))
     h3_titles = [match.group(1).strip() for match in h3_matches]
-    require(h3_titles == ["项目现状", "价值宪章"], "README 项目与价值 must contain exactly 项目现状 then 价值宪章")
-    require(section_one[section_one.find("\n") + 1 : h3_matches[0].start()].strip() == "", "README 项目现状 must be the first block under 项目与价值")
-    require("<details" not in section_one.casefold() and "</details" not in section_one.casefold(), "README 项目与价值 must not contain a nested component or machine details block")
+    require(
+        h3_titles == ["点火是什么", "价值方向", "现在做到哪里"],
+        "README 项目与价值 must contain 点火是什么、价值方向、现在做到哪里 in order",
+    )
+    require(
+        section_one[section_one.find("\n") + 1 : h3_matches[0].start()].strip() == "",
+        "README 点火是什么 must be the first block under 项目与价值",
+    )
+    require(
+        "<details" not in section_one.casefold() and "</details" not in section_one.casefold(),
+        "README 项目与价值 must not contain a nested component or machine details block",
+    )
 
-    current_text = section_one[h3_matches[0].end() : h3_matches[1].start()].strip()
-    charter_text = section_one[h3_matches[1].end() :]
-    require(current_text == PROJECT_IDENTITY_TEXT, "README 项目现状 must match the Owner-provided identity text exactly")
+    identity_text = section_one[h3_matches[0].end() : h3_matches[1].start()]
+    values_text = section_one[h3_matches[1].end() : h3_matches[2].start()]
+    current_text = section_one[h3_matches[2].end() :]
+    require(PROJECT_IDENTITY_TEXT in identity_text, "README 点火是什么 lacks the canonical project identity sentence")
+    for phrase, label in (
+        ("不能因此占有最后的解释权", "bounded explanatory authority"),
+        ("容纳反例、承认未知、允许修订与重新开始", "revision and counterexample principle"),
+        ("不是某一套固定代码", "non-code identity boundary"),
+        ("留下别人能够继续检验和修正的路径", "inspectable continuation path"),
+        ("点火既是持续认识和改造对象的过程，也是这个过程本身可以被重新认识和改造的对象", "whole-system self-examination"),
+        ("点火的整体架构乃至我们对「点火是什么」的表述也如此", "system-definition revision scope"),
+        ("它们的价值不取决于新旧、名义或过去投入了多少", "evidence-based retention"),
+        ("新方法确实更好，就可以替换旧方法", "evidence-based replacement"),
+        ("旧方法仍有独特作用，就保留其适用位置", "use-case-specific coexistence"),
+        ("证据不足，就承认尚不能判断", "preserved uncertainty"),
+        ("我们既不为了变化而变化，也不因为曾经有效就拒绝改变", "non-mechanical change"),
+    ):
+        require(phrase in identity_text, f"README 点火是什么 lacks {label}")
     for phrase, label in (
         ("长瞻一宇同叩月", "poetic source"),
-        ("生命共同体", "life-community scope"),
-        ("未来世代", "future generations"),
-        ("非人类生命", "non-human life"),
-        ("沉默主体", "silent subjects"),
-        ("新型智能", "new intelligences"),
-        ("不可逆", "irreversible harm boundary"),
-        ("不可补偿", "non-compensable harm boundary"),
-        ("非自愿", "non-consensual harm boundary"),
-        ("纠错", "correction"),
-        ("退出", "exit"),
-        ("恢复", "recovery"),
-        ("未来选择空间", "future choice space"),
-        ("预防原则", "precautionary principle"),
-        ("规范性价值", "normative value boundary"),
-        ("不是经验事实、数学证明或外部真值来源", "non-epistemic charter boundary"),
+        ("更长的时间", "long-term value direction"),
+        ("更广阔的生命", "broad life-community value"),
+        ("尚未被理解的主体", "unrecognized subjects"),
+        ("眼前真实存在的人及其选择", "present people and their choices"),
+        ("谁会受益、谁承担代价、能否纠错以及能否退出", "consequence and reversibility boundary"),
+        ("规范性立场，不是科学事实、数学证明或对任何智能体道德地位的预先判定", "normative and epistemic boundary"),
     ):
-        require(phrase in charter_text, f"README value charter lacks {label}")
-    require(CHARTER_LINK in charter_text, "README value charter link is missing or not canonical")
+        require(phrase in values_text, f"README 价值方向 lacks {label}")
+    for phrase, label in (
+        ("可审计的仓库工程、知识与证据记录、研究和写作入口", "current repository capability statement"),
+        ("有些能力只有离线测试证据", "offline-only capability boundary"),
+        ("真实外部执行和独立科学认可也不能从一次测试或合并自动推得", "external execution and scientific review boundary"),
+        ("当前工程事实", "current facts route"),
+        ("尚未完成的工作", "open-work boundary"),
+    ):
+        require(phrase in current_text, f"README 现在做到哪里 lacks {label}")
+    require(CHARTER_LINK in values_text, "README value charter link is missing or not canonical")
     require("点火是一个仓库原生" not in readme, "README must not retain the superseded project definition")
     validate_ai_first_use_section(readme)
     lowered = readme.casefold()
