@@ -4,96 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Claim ceiling: this step makes timeout evidence auditable and fail closed. It](../../../reports/operations/ignition-137-step02-timeout-process-closeout-r2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a1e90464ebce4c3 / Claim ceiling: this step makes timeout evidence auditable and fail closed. It
-  - 来源：`reports/operations/ignition-137-step02-timeout-process-closeout-r2.md`
-  - 依赖：—；被引用：—
-- [Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I](../../ASSET-CARDS.md#asset-nfc-d12a007686070f3d)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `WITHDRAWN_UNSUPPORTED`
-  - 可搜索名称：NFC-d12a007686070f3d / Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I / Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. It cannot establish a new physics theory, solve four-force unification, validate the physics clouds, or prove grand unification possible or impossible.
-  - 来源：`reports/foundation-architecture/098-remote-truth-and-gap.md`
-  - 依赖：—；被引用：—
-- [claim ceilings but is not a second truth source.](../../../docs/architecture/os-control-plane-r2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ddbedc86496b4613 / claim ceilings but is not a second truth source.
-  - 来源：`docs/architecture/os-control-plane-r2.md`
-  - 依赖：—；被引用：—
-- [Claim:** every `crossref_verified: true` record resolves via Crossref with a](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f97b1bcca8bd510f / Claim:** every `crossref_verified: true` record resolves via Crossref with a
-  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
-  - 依赖：—；被引用：—
-- [claim_candidates: tuple\[Mapping\[str, Any\], ...\] = field\(default_factory=tuple\)](../../../reos_vnext/contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f727dc9e7f11a78d / claim_candidates: tuple\[Mapping\[str, Any\], ...\] = field\(default_factory=tuple\)
-  - 来源：`reos_vnext/contract.py`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local AI-first Operating Method identity, interface, deterministic projection and validation e](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-74ea9ef9c6632dc5 / claim_ceiling: repository-local AI-first Operating Method identity, interface, deterministic projection and validation e
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local architecture, dispatch-boundary and observation-time evidence only; no external truth, p](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7629799c8ea31880 / claim_ceiling: repository-local architecture, dispatch-boundary and observation-time evidence only; no external truth, p
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local engineering closure and Owner production-handoff evidence only; no external truth, produ](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4e09fba67a523f1f / claim_ceiling: repository-local engineering closure and Owner production-handoff evidence only; no external truth, produ
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local engineering phase closure and Owner production-handoff evidence only; no external truth,](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3a41bb2648e61ce9 / claim_ceiling: repository-local engineering phase closure and Owner production-handoff evidence only; no external truth,
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Human Front Door folding, wording, validator, targeted regression and release-ready term](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-00691e6638f51af0 / claim_ceiling: repository-local Human Front Door folding, wording, validator, targeted regression and release-ready term
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capa](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d8cb1636b49fdb47 / claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capa
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bf1bc9243324afd1 / claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local phase parking and publication-production evidence only; no external truth, production re](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e8034b37155ad1e4 / claim_ceiling: repository-local phase parking and publication-production evidence only; no external truth, production re
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local README information architecture, Current-surface contract decoupling and targeted regres](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d63e1abce77221e5 / claim_ceiling: repository-local README information architecture, Current-surface contract decoupling and targeted regres
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-60deb9780a4e83e4 / claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-43f1c6ef54a37ba8 / claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task146 Human Front Door simplification, Current-surface contract decoupling, determinis](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-be7108240d0b1ef1 / claim_ceiling: repository-local Task146 Human Front Door simplification, Current-surface contract decoupling, determinis
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization and bou](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d30fb0c9849dd998 / claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization and bou
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
 - [claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization, target](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ae3089d399ee5018 / claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization, target
@@ -343,6 +253,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-12181b6c4cd590e5 / contradicting_artifact_ids: tuple\[str, ...\] = \(\)
   - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
+- [CONTRADICTORY_PREDICTION_BURDEN: prediction/expectation language with contradiction or inconsistency](../../../docs/governance/basis-pressure-sensor-qualification-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-969b69e77a726d6f / CONTRADICTORY_PREDICTION_BURDEN: prediction/expectation language with contradiction or inconsistency
+  - 来源：`docs/governance/basis-pressure-sensor-qualification-2026-09-07.md`
   - 依赖：—；被引用：—
 - [Control-plane + report fact repair: 121q6c-correction-overlay.json \(PR#42=10 commits/HEAD 33f453a\), run-state non-null v](../../../data/external-research/121-fulltext-resolver/121q6d/121q6d-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -853,6 +768,86 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f3452f0585844d52 / data/foundation/nonfunction-claims/ is the task-100 authority for discovered non-function claims, thirteen-gate adjudica
   - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A0004 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / A0004 / A0036
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A0036 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / A0036 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A0047 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / A0047 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A0057 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / A0057 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A0107 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / A0107 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0013 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0013 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0028 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0028 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0169 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0169 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0176 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0176 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0253 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0253 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0266 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0266 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0484 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0484 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0485 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0485 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T0553 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl / T0553 / A0004
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A14 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl / A14 / P3
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：P3 / data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl / P3 / A14
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl`
   - 依赖：—；被引用：—
 - [data/schemas/evidence_regimes.schema.json](../../../docs/machine_readable_data_plan.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2503,4 +2498,9 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B668580B899C6746 / def _summary\(text: str\) -> str: / IMPLICIT-B668580B899C6746
   - 来源：`agent_federation/live_adapters.py`
+  - 依赖：—；被引用：—
+- [def _task137_accounting_policy\(\) -> AccountingPolicy:](../../../agent_federation/live_task137.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1A21A9B63FD8B00B / def _task137_accounting_policy\(\) -> AccountingPolicy: / IMPLICIT-1A21A9B63FD8B00B
+  - 来源：`agent_federation/live_task137.py`
   - 依赖：—；被引用：—

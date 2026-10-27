@@ -74,6 +74,7 @@ EXPECTED_EDGE_IDS = {f"canonical-edge-{index:02d}" for index in range(1, 25)}
 README_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 README_HTML_TARGET = "../ignition/docs/generated/ignition-system-architecture.html"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
+ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
 README_INTERACTION_HINT = "滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件"
 STANDALONE_SVG_CSS = b"""<style>
   :root {
@@ -359,9 +360,22 @@ def _validate_homepage_routes(root: Path) -> None:
     section = text[architecture.start() : architecture.end() + (next_heading.start() if next_heading else len(text))]
     images = re.findall(r"!\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)", section)
     require(images == [README_IMAGE_TARGET], "homepage does not embed the stable architecture SVG path")
-    linked_image = f"[![点火整体架构图]({README_IMAGE_TARGET})]({ARCHITECTURE_PAGES_URL})"
-    require(section.count(linked_image) == 1, "homepage architecture image must link to the live Pages viewer")
-    require(section.count(ARCHITECTURE_PAGES_URL) == 2, "homepage must expose exactly two Pages viewer entrypoints")
+    linked_image = f"[![点火整体架构图]({README_IMAGE_TARGET})]({ARCHITECTURE_PAGES_PRESENTATION_URL})"
+    require(section.count(linked_image) == 1, "homepage architecture image must link to the live Pages presentation viewer")
+    viewer_links = re.findall(
+        r"\]\((https://arvin-liu\.github\.io/when-systems-catch-fire/architecture/(?:\?present=1)?)\)",
+        section,
+    )
+    require(viewer_links.count(ARCHITECTURE_PAGES_PRESENTATION_URL) == 2, "homepage must expose exactly two Pages presentation entrypoints")
+    require(viewer_links.count(ARCHITECTURE_PAGES_URL) == 1, "homepage must expose exactly one Pages reading-mode entrypoint")
+    require(
+        section.count(f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL})") == 1,
+        "homepage must expose the exact Pages presentation entrypoint",
+    )
+    require(
+        section.count(f"[阅读模式]({ARCHITECTURE_PAGES_URL})") == 1,
+        "homepage must expose the exact Pages reading-mode entrypoint",
+    )
     require(README_HTML_TARGET not in section, "homepage must not link to the repository HTML blob as the viewer")
     require("raw.githack.com" not in section and "htmlpreview.github.io" not in section, "homepage must not use third-party HTML preview proxies")
     require(README_INTERACTION_HINT in section, "homepage must expose the short interaction hint")

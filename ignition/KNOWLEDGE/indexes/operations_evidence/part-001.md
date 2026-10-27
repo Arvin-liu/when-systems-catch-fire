@@ -949,16 +949,6 @@
   - 可搜索名称：IMPLICIT-884F414124CA3B71 / # 121Q6D 最终报告：修复 Function OS CI + 真实资产 E2E 语义 + 封印 / IMPLICIT-884F414124CA3B71
   - 来源：`data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md`
   - 依赖：—；被引用：—
-- [# 153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-89D659EB49682F4B / # 153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力 / IMPLICIT-89D659EB49682F4B
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [# 153 反证轮：通过消融后的最小模型](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-853BF845E10B5012 / # 153 反证轮：通过消融后的最小模型 / IMPLICIT-853BF845E10B5012
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [# 17. 对抗审查、反模型与证伪条件](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B057A1CC26CE8F3E / # 17. 对抗审查、反模型与证伪条件 / IMPLICIT-B057A1CC26CE8F3E
@@ -1139,11 +1129,6 @@
   - 可搜索名称：IMPLICIT-31A2FA637782B1E3 / # IGNITION-20260828-144 Step 15 — engineering closure gate / IMPLICIT-31A2FA637782B1E3
   - 来源：`reports/operations/ignition-144-step15-engineering-closure-gate.md`
   - 依赖：—；被引用：—
-- [# IGNITION-20260904-154 任务报告：153 反证轮与最小模型](../../../reports/governance/task-IGNITION-20260904-154.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-77BAD74E9DC621E7 / # IGNITION-20260904-154 任务报告：153 反证轮与最小模型 / IMPLICIT-77BAD74E9DC621E7
-  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
-  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ED434DF2C7C50934 / # IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report / IMPLICIT-ED434DF2C7C50934
@@ -1244,6 +1229,11 @@
   - 可搜索名称：IMPLICIT-1BE19931DF65DE05 / # Task150 Step20 — Functional visual admission versus aesthetic endorsement / IMPLICIT-1BE19931DF65DE05
   - 来源：`data/operations/iterations/150/step20-functional-versus-aesthetic-boundary.md`
   - 依赖：—；被引用：—
+- [# 下一步认识论能力评估 — IGNITION-20260908-165](../../../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-999B4497F0FF68C8 / # 下一步认识论能力评估 — IGNITION-20260908-165 / IMPLICIT-999B4497F0FF68C8
+  - 来源：`docs/governance/next-epistemic-capability-assessment-2026-09-08.md`
+  - 依赖：—；被引用：—
 - [# 元协议生成层（Meta-Protocol Generation Layer）](../../../docs/meta-protocols/README.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-028A32EBE119EED2 / # 元协议生成层（Meta-Protocol Generation Layer） / IMPLICIT-028A32EBE119EED2
@@ -1334,11 +1324,6 @@
   - 可搜索名称：IMPLICIT-0F225055DE434E33 / ## 2. Protocol 与 Function 的边界 / IMPLICIT-0F225055DE434E33
   - 来源：`docs/protocols/protocol-architecture.md`
   - 依赖：—；被引用：—
-- [## 2. 最小模型的判定规则](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1A734DA11961E2A6 / ## 2. 最小模型的判定规则 / IMPLICIT-1A734DA11961E2A6
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [## 2026-07-16 · PR #56 iteration method merged and current-state closeout](../../../CHANGELOG.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-37504BC1EE962868 / ## 2026-07-16 · PR #56 iteration method merged and current-state closeout / IMPLICIT-37504BC1EE962868
@@ -1373,11 +1358,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BAF019A0F0A0451E / ## 3. Status Model / IMPLICIT-BAF019A0F0A0451E
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [## 3. 候选模型比较](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C71DF4F4F335561 / ## 3. 候选模型比较 / IMPLICIT-0C71DF4F4F335561
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
   - 依赖：—；被引用：—
 - [## 4. Internal Function Asset Inventory](../../../reports/external-research/120-function-paradigm-atlas-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1418,11 +1398,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-90E1EE8B89E1F9FC / ## 6. Hard Gates / IMPLICIT-90E1EE8B89E1F9FC
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [## 6. R4：五个候选诊断的承载力](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ED077F73133C03D2 / ## 6. R4：五个候选诊断的承载力 / IMPLICIT-ED077F73133C03D2
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [## 6. Review, generate and propagate](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1494,6 +1469,11 @@
   - 可搜索名称：IMPLICIT-78E9B3BE305CB70B / ## Calibration Source Separation / IMPLICIT-78E9B3BE305CB70B
   - 来源：`docs/governance/non-sycophancy-output-protocol.md`
   - 依赖：—；被引用：—
+- [## Candidate generation](../../../docs/governance/basis-free-longform-induction-2026-09-07.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-77CE01F8C6C360A7 / ## Candidate generation / IMPLICIT-77CE01F8C6C360A7
+  - 来源：`docs/governance/basis-free-longform-induction-2026-09-07.md`
+  - 依赖：—；被引用：—
 - [## Candidate Model](../../../docs/governance/licensing-model-candidate.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-15C42255B1353C73 / ## Candidate Model / IMPLICIT-15C42255B1353C73
@@ -1518,6 +1498,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6EDB5ED2DD72EFCA / ## Driver Console R3 integration / IMPLICIT-6EDB5ED2DD72EFCA
   - 来源：`docs/architecture/os-steering-intent-r1.md`
+  - 依赖：—；被引用：—
+- [## Frozen operator boundary](../../../docs/governance/mutable-basis-learning-operator-2026-09-07.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-605BBB62119DE80D / ## Frozen operator boundary / IMPLICIT-605BBB62119DE80D
+  - 来源：`docs/governance/mutable-basis-learning-operator-2026-09-07.md`
   - 依赖：—；被引用：—
 - [## Function OS](../../../reports/release/121Q9-global-validation.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1699,6 +1684,11 @@
   - 可搜索名称：IMPLICIT-450DF8C5163A6219 / ## Phase 5: Function OS Nine Nodes / IMPLICIT-450DF8C5163A6219
   - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
   - 依赖：—；被引用：—
+- [## Pre-generation diagnosis](../../../agent-results/IGNITION-20260908-168-result.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A5ECF577E5729FEE / ## Pre-generation diagnosis / IMPLICIT-A5ECF577E5729FEE
+  - 来源：`agent-results/IGNITION-20260908-168-result.md`
+  - 依赖：—；被引用：—
 - [## Priority and arbitration](../../../docs/architecture/os-steering-intent-r1.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C8B3BF4C07A2894F / ## Priority and arbitration / IMPLICIT-C8B3BF4C07A2894F
@@ -1784,6 +1774,11 @@
   - 可搜索名称：IMPLICIT-B3A81D3E4965B556 / ## Temporal Model Rule / IMPLICIT-B3A81D3E4965B556
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
+- [## V2 gate](../../../docs/governance/state-vs-transition-semantics-competition-2026-09-07.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E0F30235D70F6CE6 / ## V2 gate / IMPLICIT-E0F30235D70F6CE6
+  - 来源：`docs/governance/state-vs-transition-semantics-competition-2026-09-07.md`
+  - 依赖：—；被引用：—
 - [## V2（黄色协议）— 全成本效率度量待验证](../../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1E2EA04E13677A55 / ## V2（黄色协议）— 全成本效率度量待验证 / IMPLICIT-1E2EA04E13677A55
@@ -1803,16 +1798,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FD410FCA908A4C68 / ## 与 Ψ₀ / Function / Case 的关系 / IMPLICIT-FD410FCA908A4C68
   - 来源：`docs/protocols/protocol-index.md`
-  - 依赖：—；被引用：—
-- [## 仓库能力](../../../RESULTS/LATEST.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-642A793BDA9438D8 / ## 仓库能力 / IMPLICIT-642A793BDA9438D8
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [## 任务 104 与 105（编辑叙事层与 Function OS 有界基准）](../../../RESULTS/LATEST.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9296EA8B17C9D9B / ## 任务 104 与 105（编辑叙事层与 Function OS 有界基准） / IMPLICIT-C9296EA8B17C9D9B
-  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [## 任务 104—105（编辑叙事层与 Function OS 有界基准）](../../../docs/project-current-state.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2254,16 +2239,6 @@
   - 可搜索名称：IMPLICIT-330F7B57409065B5 / ### 3. Cross-Model Acceptance Queue / IMPLICIT-330F7B57409065B5
   - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
   - 依赖：—；被引用：—
-- [### 3.1 模型定义](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-407B3D259167C797 / ### 3.1 模型定义 / IMPLICIT-407B3D259167C797
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [### 3.3 最小模型的分层结果](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3178EA3AF74415F1 / ### 3.3 最小模型的分层结果 / IMPLICIT-3178EA3AF74415F1
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [### 4. 它不知道 Function OS 能否离开小世界](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1F41909AB41A1E5E / ### 4. 它不知道 Function OS 能否离开小世界 / IMPLICIT-1F41909AB41A1E5E
@@ -2273,11 +2248,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0F3E42BBB415259B / ### 5.2 七个最小压力案例 / IMPLICIT-0F3E42BBB415259B
   - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [### 5.2 四象限 synthetic countermodel](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5E885E488D932084 / ### 5.2 四象限 synthetic countermodel / IMPLICIT-5E885E488D932084
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [### 8.3 `RESOLVE_OPERATION` 与 `CHECK_CAPABILITY_STATUS`](../../../OPERATING-METHOD.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2502,5 +2472,35 @@
 - [### \[#461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建\]\(docs/zh/cases/items/C-0461.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5C00C6A87848E846 / ### \[#461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建\]\(docs/zh/cases/items/C-0461.md\) / IMPLICIT-5C00C6A87848E846
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### \[#473｜符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能\]\(docs/zh/cases/items/C-0473.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-03DCFE9711AC595C / ### \[#473｜符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能\]\(docs/zh/cases/items/C-0473.md\) / IMPLICIT-03DCFE9711AC595C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### \[#474｜神经网络进入exp\[-ln²\] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp\[-ln²\] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能\]\(docs/zh/cases/items/C-0474.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BF1FFEDD2B1360ED / ### \[#474｜神经网络进入exp\[-ln²\] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp\[-ln²\] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能\]\(docs/zh/cases/items/C-0474.md\) / IMPLICIT-BF1FFEDD2B1360ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\]\(docs/zh/cases/items/C-0475.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3BE6596D4A101525 / ### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\]\(docs/zh/cases/items/C-0475.md\) / IMPLICIT-3BE6596D4A101525
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-55F97A2C54803449 / ### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\) / IMPLICIT-55F97A2C54803449
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\]\(docs/zh/cases/items/C-0489.m](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D3DF479A75624C0D / ### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\]\(docs/zh/cases/items/C-0489.m / IMPLICIT-D3DF479A75624C0D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\]\(docs/zh/cases/items/C-0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AD2EE0C6AA9CAD49 / ### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\]\(docs/zh/cases/items/C-0 / IMPLICIT-AD2EE0C6AA9CAD49
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

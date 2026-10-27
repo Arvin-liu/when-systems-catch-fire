@@ -1,0 +1,29 @@
+{
+  "basis_level_families": [
+    "transition_over_state",
+    "generator_projection_feedback"
+  ],
+  "caution": "A residual family is a research review lens; it is not a canonical failure class or schema.",
+  "cross_cutting_families": [
+    "evidence_and_authority_cross_cut",
+    "provenance_as_external_parameter",
+    "cross_object_binding"
+  ],
+  "family_counts": {
+    "cross_object_binding": 1,
+    "evidence_and_authority_cross_cut": 1,
+    "exception_overload": 1,
+    "generator_projection_feedback": 1,
+    "provenance_as_external_parameter": 1,
+    "transition_over_state": 1
+  },
+  "repeated_families": [
+    "cross_object_binding",
+    "evidence_and_authority_cross_cut",
+    "exception_overload",
+    "generator_projection_feedback",
+    "provenance_as_external_parameter",
+    "transition_over_state"
+  ],
+  "task_id": "IGNITION-20260906-158"
+}

@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [同构判定：**函数总表「价值感/努力/认可」轴空白**。判定为 **真新候选 / 边界扩展**（与 M2 互补，M2 是内化规训，M8 是价值解耦；本轮作为 M2 的补充扩展候选，不单独占 5 名额，进 candidates/）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1fe60c32ee0df09d / 同构判定：**函数总表「价值感/努力/认可」轴空白**。判定为 **真新候选 / 边界扩展**（与 M2 互补，M2 是内化规训，M8 是价值解耦；本轮作为 M2 的补充扩展候选，不单独占 5 名额，进 candidates/）。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
-  - 依赖：—；被引用：—
 - [同构判定：**函数总表「支持/托举/兜底/父母」轴 grep 零命中；EXIT 族描述退出权但非「支持→控制退化」结构**。判定为 **真新候选函数**（边界扩展 EXIT 族，新增「正向支持退化为路径控制」原语）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6c904594943a5c97 / 同构判定：**函数总表「支持/托举/兜底/父母」轴 grep 零命中；EXIT 族描述退出权但非「支持→控制退化」结构**。判定为 **真新候选函数**（边界扩展 EXIT 族，新增「正向支持退化为路径控制」原语）。
@@ -243,11 +238,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f158349fae9de903 / 回填规则**：所有新增函数、案例、注释、扩展注释，必须回填到点火主仓库（新增文件进 `已迁移的历史函数来源/`、`已迁移的历史案例来源/`，结构化数据进 `data/` 并补 schema 校验）。
   - 来源：`docs/getbrain-handoff-20260708.md`
-  - 依赖：—；被引用：—
-- [回归的工程证据，不证明外部 provider、普适安全、现实因果、生产自治、通用智能、](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-6f5d01ab422395aa / 回归的工程证据，不证明外部 provider、普适安全、现实因果、生产自治、通用智能、
-  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [因果光锥统一函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -744,11 +734,6 @@
   - 可搜索名称：D537 / 完成-完美函数 / D537
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D1, D39, D451, D541；被引用：NFC-648088c6d96b54e0, NFC-ad9123a2ba97eb07, NFC-c0d3c29464d92ac9
-- [完整 trace 只能证明记录完整，是否有 accountability sink 取决于另一张 registry 或发布合同；](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-9ccc56b3581a37ce / 完整 trace 只能证明记录完整，是否有 accountability sink 取决于另一张 registry 或发布合同；
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [完整图是当前结构投影，不是永久总图或理论完备性证明。](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-10c94d37ba223bc9 / 完整图是当前结构投影，不是永久总图或理论完备性证明。
@@ -2504,3 +2489,18 @@
   - 可搜索名称：NFC-3a35afa36f64fecc / 数学表达 / Expression: `F_{D253}\(x\) := 生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ d_opt时维护成本超过容斥收益→系统臃肿→Φ因维
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D253；被引用：—
+- [数学表达 / Expression: `F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e0e56103f6b43d3 / 数学表达 / Expression: `F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D254, D256；被引用：—
+- [数学表达 / Expression: `F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6281960bf2ad6a6a / 数学表达 / Expression: `F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D261；被引用：—
+- [数学表达 / Expression: `F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-29a919b20c1b6952 / 数学表达 / Expression: `F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D267；被引用：—

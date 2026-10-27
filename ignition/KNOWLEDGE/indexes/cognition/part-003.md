@@ -4,6 +4,146 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-95b5ede727be431b / This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
+- [This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr](../../../agent-results/IGNITION-20260821-130-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a7acbc9ab3d78202 / This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr
+  - 来源：`agent-results/IGNITION-20260821-130-result.md`
+  - 依赖：—；被引用：—
+- [This result proves repository-local implementation, deterministic projection, semantic consistency, bounded regression e](../../../agent-results/IGNITION-20260822-132-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67b05f00232825f7 / This result proves repository-local implementation, deterministic projection, semantic consistency, bounded regression e
+  - 来源：`agent-results/IGNITION-20260822-132-result.md`
+  - 依赖：—；被引用：—
+- [This result proves repository-local residual non-growth, projection hygiene, deterministic rendering, bounded regression](../../../agent-results/IGNITION-20260822-134-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-891d0b182aab3ee5 / This result proves repository-local residual non-growth, projection hygiene, deterministic rendering, bounded regression
+  - 来源：`agent-results/IGNITION-20260822-134-result.md`
+  - 依赖：—；被引用：—
+- [This result proves repository-local semantic implementation, deterministic projection, bounded regression evidence and c](../../../agent-results/IGNITION-20260822-133-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-afc4d38bbd59403f / This result proves repository-local semantic implementation, deterministic projection, bounded regression evidence and c
+  - 来源：`agent-results/IGNITION-20260822-133-result.md`
+  - 依赖：—；被引用：—
+- [title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-34C556C9FFC62BCE / title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用" / IMPLICIT-34C556C9FFC62BCE
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B00AD01AD1BE4FE8 / title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)" / IMPLICIT-B00AD01AD1BE4FE8
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-48ef5f5f1fa5e0cb / title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "大脑容量空间验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-234438bbee984ba0 / title: "大脑容量空间验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "电力级联失效×认知平方衰减×AI共震——跨域同构"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-39BC40E04E0979F1 / title: "电力级联失效×认知平方衰减×AI共震——跨域同构" / IMPLICIT-39BC40E04E0979F1
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "电力级联失效×认知平方衰减×AI共震——跨域同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b834eca381c438b6 / title: "电力级联失效×认知平方衰减×AI共震——跨域同构"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "糖域实验×认知螺旋"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9c369cf1db765e44 / title: "糖域实验×认知螺旋"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定\(n_l](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4fb29ac8772547e9 / title: "认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定\(n_l
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4273da11a606e196 / title: "认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e87de069c3c000d1 / title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-786e1a83cd47b2c0 / title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-89853AEF150F6DBC / title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）" / IMPLICIT-89853AEF150F6DBC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7aa712b7abac888b / title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏\(1-σ\)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5a420550fc0c408f / title: "认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏\(1-σ\)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ba67d301067f78b4 / title: "路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D118；被引用：—
+- [title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1\(轨道逐步关闭\), H从0.2 -> 0.6 -> 0.9\(组织规范obscuration增强\), τ_decoherence从50 -](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53480F5B54FF30A4 / title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1\(轨道逐步关闭\), H从0.2 -> 0.6 -> 0.9\(组织规范obscuration增强\), τ_decoherence从50 - / IMPLICIT-53480F5B54FF30A4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8725C345FC0FA5E6 / title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle" / IMPLICIT-8725C345FC0FA5E6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-634a6cd7a8d04b1c / title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "高维认知必然多轨"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5540325757863ba9 / title: "高维认知必然多轨"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [Transition residual casebook](../../ASSET-CARDS.md#asset-hr-6c25b5c1573d9f0b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Transition residual casebook / transition-residual-casebook-2026-09-07
+  - 来源：`docs/governance/transition-residual-casebook-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [Transition semantic irreducibility and compile-away](../../ASSET-CARDS.md#asset-hr-cebe69c6d8db2c70)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Transition semantic irreducibility and compile-away / transition-semantic-irreducibility-and-compile-away-2026-09-07
+  - 来源：`docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [transport_evidence = _transport_evidence\(observation.process, observed_at=observed_at, timeout_seconds=envelope.timeout_](../../../agent_federation/live_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-05c1bd16a8c51715 / transport_evidence = _transport_evidence\(observation.process, observed_at=observed_at, timeout_seconds=envelope.timeout_
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
+- [transport_evidence,](../../../agent_federation/live_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d420fcc2ca17de16 / transport_evidence,
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
 - [transport_evidence: Mapping\[str, Any\],](../../../agent_federation/live_task137.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-d154dcbdb886fa41 / transport_evidence: Mapping\[str, Any\],
@@ -18,6 +158,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d747b5e7294c2974 / trusts an executor's PASS as completion and never invokes a provider.
   - 来源：`agent_federation/task142_first_completion_validator.py`
+  - 依赖：—；被引用：—
+- [truth, grant Owner acceptance, or authorize a material run.](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-29343b8a62b83d29 / truth, grant Owner acceptance, or authorize a material run.
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [truth, production readiness, Owner acceptance, publication acceptance,](../../../agent-results/IGNITION-20260828-144-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -223,6 +368,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-42dc7fa7c7e2da82 / values\["artifact_refs"\] = tuple\(ArtifactRef.from_dict\(item\) for item in values\["artifact_refs"\]\)
   - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [Verdict: `INFORMATION_VOLUME_EFFECT_ONLY`; historical result `HISTORICAL_UNDERDETERMINED`; basis result `NO_BASIS_ESCAPE](../../../agent-results/IGNITION-20260907-162-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a200a0cdd4a3e16e / Verdict: `INFORMATION_VOLUME_EFFECT_ONLY`; historical result `HISTORICAL_UNDERDETERMINED`; basis result `NO_BASIS_ESCAPE
+  - 来源：`agent-results/IGNITION-20260907-162-result.md`
   - 依赖：—；被引用：—
 - [Weights are not truth probabilities unless separately justified. They are local decision aids under recorded context.](../../../docs/architecture/distribution-collapse-control-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -619,11 +769,6 @@
   - 可搜索名称：NFC-202361688ad4583d / \|Auditor\|检查来源、规则、依赖、边界、独立性、差异和反弹。\|审计通过不等于现实真理或法律结论。\|
   - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
-- [\|authority source\|Owner Intent、Charter、Approval decision 的显式来源\|识别谁在什么范围内可以批准、拒绝或暂停。\|不能推出事实正确、理解全部后果或对所有受影响者有同一价值判断。\|](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cbcd26703470fd7c / \|authority source\|Owner Intent、Charter、Approval decision 的显式来源\|识别谁在什么范围内可以批准、拒绝或暂停。\|不能推出事实正确、理解全部后果或对所有受影响者有同一价值判断。\|
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [\|Consequence visibility\|风险承担者、沉默主体、维护者或未来选项受到影响时。\|Charter Gate 的 beneficiaries / risk bearers / silent subjects / residu](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-60d52af1db449344 / \|Consequence visibility\|风险承担者、沉默主体、维护者或未来选项受到影响时。\|Charter Gate 的 beneficiaries / risk bearers / silent subjects / residu
@@ -994,11 +1139,6 @@
   - 可搜索名称：NFC-47beffc3f8ced634 / 中文：高维认知必然多轨 English: Rule-based English rendering pending human review.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [为什么现在不行动，具体阻塞是哪一个证据、权限、后果或状态条件？](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-08642f281099fb71 / 为什么现在不行动，具体阻塞是哪一个证据、权限、后果或状态条件？
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5d1a5085976f30b9 / 人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。
@@ -1299,6 +1439,11 @@
   - 可搜索名称：NFC-473f6de91a0a5776 / 在 Agent Platform 之下，点火 OS 通过统一 executor contract 连接可替换的
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
+- [基线 projection preflight 保留既有失败，副作用为 false；本分支没有改 Current、canonical、生产、validator 或 STATE-CHANGELOG。](../../../agent-results/IGNITION-20260908-165-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e02562cf79e44773 / 基线 projection preflight 保留既有失败，副作用为 false；本分支没有改 Current、canonical、生产、validator 或 STATE-CHANGELOG。
+  - 来源：`agent-results/IGNITION-20260908-165-result.md`
+  - 依赖：—；被引用：—
 - [处理：**已有覆盖**；本材料作为 D598/D597 跨域补强证据（家庭轴），不新增编号。反向通道：多元评价+真实退出权可破内化规训。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9ac91b506dd5b19d / 处理：**已有覆盖**；本材料作为 D598/D597 跨域补强证据（家庭轴），不新增编号。反向通道：多元评价+真实退出权可破内化规训。
@@ -1353,11 +1498,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-686b383dc793a86d / 已完成且不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。
   - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [当前 `approval-decision-r1` 明确支持第 1 项的一部分；Stage Snapshot 支持特定发布场景的第 2 项；第 3–5 项没有一个通用 joined predicate。由于本轮没有实际 high-conse](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f0f434d1e2845540 / 当前 `approval-decision-r1` 明确支持第 1 项的一部分；Stage Snapshot 支持特定发布场景的第 2 项；第 3–5 项没有一个通用 joined predicate。由于本轮没有实际 high-conse
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [当前角色与实体证据](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1483,6 +1623,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ef6d8385f7cb632a / 最大的真实缺口不是“少了一个层”，而是若干 cross-product 情形没有被一个现有字段同时表达：例如“名义 Owner + 不可争议的 Agent 判断”、“预算内但不可接受的伤害”、“证据完整但没有可承担责任的人”。
   - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [本包把“许多不相关问题共存并发生弱、远、休眠碰撞”作为待检验研究假设，不把它写成大脑事实。线程字段固定为 18 个跨域来源；休眠问题池不做清理，只保留来源行、blob、行号和未解决标记。](../../../docs/governance/cross-thread-cognitive-collision-2026-09-08.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-822a9fada992d4cf / 本包把“许多不相关问题共存并发生弱、远、休眠碰撞”作为待检验研究假设，不把它写成大脑事实。线程字段固定为 18 个跨域来源；休眠问题池不做清理，只保留来源行、blob、行号和未解决标记。
+  - 来源：`docs/governance/cross-thread-cognitive-collision-2026-09-08.md`
   - 依赖：—；被引用：—
 - [本收口只改变 121Q30 的生命周期表述：README、ARCHITECTURE、项目现状、导航、使用、AI/Agent/机器入口、版本记录和机器 registry 将成果展示描述为当前 L6 presentation/provenanc](../../../reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

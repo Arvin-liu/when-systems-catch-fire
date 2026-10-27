@@ -4,6 +4,76 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [本文件为蓝图，待阶段4真实文献落地并经你授权后，方可注入 088 正式补丁库。](../../../data/external-research/088-patch-blueprint.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f22b3e037fe87a45 / 本文件为蓝图，待阶段4真实文献落地并经你授权后，方可注入 088 正式补丁库。
+  - 来源：`data/external-research/088-patch-blueprint.md`
+  - 依赖：—；被引用：—
+- [本文定义点火项目 P1 阶段的机器可读化数据结构。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a186ee3dd5b69a79 / 本文定义点火项目 P1 阶段的机器可读化数据结构。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：P1；被引用：—
+- [本文档定义「P1 机器数据接入碰撞工作流」的管线设计、目录约定、模板与执行步骤。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72fbca876dd355df / 本文档定义「P1 机器数据接入碰撞工作流」的管线设计、目录约定、模板与执行步骤。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：P1；被引用：—
+- [本文记录点火项目 v0.2 阶段的证据制度库。](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c16e87addbb692ac / 本文记录点火项目 v0.2 阶段的证据制度库。
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。](../../../docs/foundation/historical-correction-log.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ed73832fe6d7aad5 / 本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。
+  - 来源：`docs/foundation/historical-correction-log.md`
+  - 依赖：—；被引用：—
+- [本条收敛至 D220，保留为热寂终态的同构入口。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-61800d34b9271002 / 本条收敛至 D220，保留为热寂终态的同构入口。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D220；被引用：—
+- [本模型冻结 12 个协议统一字段。每个字段定义见 `canonical/data/canonical-field-registry.json`。](../../../canonical/docs/canonical-protocol-data-model.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9b0a9fb341e863cd / 本模型冻结 12 个协议统一字段。每个字段定义见 `canonical/data/canonical-field-registry.json`。
+  - 来源：`canonical/docs/canonical-protocol-data-model.md`
+  - 依赖：—；被引用：—
+- [本模板为 additive 文档规范，不修改任何现有数据文件。](../../../templates/protocol-entry-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-36b6c4b6c0d55043 / 本模板为 additive 文档规范，不修改任何现有数据文件。
+  - 来源：`templates/protocol-entry-template.md`
+  - 依赖：—；被引用：—
+- [本次只完成文档化、数据化、导航化、模板化，不修改正式两张表编号体系。](../../../docs/meta-protocols/version-iteration-note-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c541841aa7faeb2f / 本次只完成文档化、数据化、导航化、模板化，不修改正式两张表编号体系。
+  - 来源：`docs/meta-protocols/version-iteration-note-20260709.md`
+  - 依赖：—；被引用：—
+- [本次试跑用于验证“学科理论核卡片”模板是否可用于后续学科深跑。](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-47dc4afcba20ff44 / 本次试跑用于验证“学科理论核卡片”模板是否可用于后续学科深跑。
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [本登记表不替代外部学科证据；](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5720edfa9588488f / 本登记表不替代外部学科证据；
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [本目录是 22 本书籍验证案例的**候选暂存**，不直接进入历史案例来源。](../../../outputs/book-collisions/20260709-22-book-validation/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd5880b4ac4a470b / 本目录是 22 本书籍验证案例的**候选暂存**，不直接进入历史案例来源。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/README.md`
+  - 依赖：—；被引用：—
+- [本目录是 IGNITION-20260709-047 的真实中间分析与验证产物，由 IGNITION-20260709-049 补齐进 PR #11 证据链。](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e665ec0206421d21 / 本目录是 IGNITION-20260709-047 的真实中间分析与验证产物，由 IGNITION-20260709-049 补齐进 PR #11 证据链。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONAL_ACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。](../../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-46a6280972c86b4c / 本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONAL_ACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。
+  - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
+  - 依赖：—；被引用：—
 - [本轮不问“哪种语言最有代表性”，只问：中文和英文配置之外，哪两种配置能以足够可靠的参考语法与研究证据暴露未覆盖的结构风险？裁定为日语与土耳其语；没有增加第五种语言，因为当前十二维已获得新的压力覆盖，继续扩张会降低研究深度。](../../../docs/language-thought/profile-source-review.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4068707daf9717be / 本轮不问“哪种语言最有代表性”，只问：中文和英文配置之外，哪两种配置能以足够可靠的参考语法与研究证据暴露未覆盖的结构风险？裁定为日语与土耳其语；没有增加第五种语言，因为当前十二维已获得新的压力覆盖，继续扩张会降低研究深度。
@@ -568,11 +638,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c1cfc2482883311e / 点火主仓库已完成元协议生成层的文档/数据/模板/导航/审计升级；Ψ₀ 与两张表未改动，12 元协议作为 P_meta 展开进入第0层候选结构。
   - 来源：`outputs/audit/meta-protocol-version-iteration-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [点火同时是这套工程的 OS / orchestration-governance layer 与 driver；OpenClaw、](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1340e0c7e2990ae9 / 点火同时是这套工程的 OS / orchestration-governance layer 与 driver；OpenClaw、
-  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [点火增量层：结构材料，不是第二份证据](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1394,11 +1459,6 @@
   - 可搜索名称：NFC-aff8352ec769114b / 结论仅限材料内成立；普遍性主张全部 `pending_external_evidence`。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
   - 依赖：—；被引用：—
-- [结论先行与证据等级](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-bba3b2ad2fa9ebf2 / 结论先行与证据等级
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [结论：本文输出中所有普遍性判断须 REVISE 降级并标注 pending。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d97d2be7af2ca391 / 结论：本文输出中所有普遍性判断须 REVISE 降级并标注 pending。
@@ -1769,11 +1829,6 @@
   - 可搜索名称：NFC-585a02a9042a1452 / 覆盖面包括 function/nonfunction canonical projections、function adjudication/closure、Knowledge Experience、Fire Seeds census 与
   - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
   - 依赖：—；被引用：—
-- [见 \[证据档案\]\(../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md\)、\[target 审计\]\(../data/operations/iterations/111](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-5d6af947b4ca7c9c / 见 \[证据档案\]\(../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md\)、\[target 审计\]\(../data/operations/iterations/111
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
 - [观看情境证据不足](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-643f4b1bae9a0ec3 / 观看情境证据不足
@@ -2079,11 +2134,6 @@
   - 可搜索名称：NFC-f8027b2d255cf868 / 证据来源不可省。
   - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
   - 依赖：—；被引用：—
-- [证据标记](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-47d91d6d5b8514b8 / 证据标记
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [证据状态更新：已从「单篇教育领域材料」扩展为「单篇教育材料 + 跨域 smoke test 三领域复现（社会学邻里积分制、自然科学高通量 p 值考核、历史学修志数字化积分）」。跨行业普遍性仍需真实外部材料继续验证，pending 保持但强度](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-68a160517afd3f81 / 证据状态更新：已从「单篇教育领域材料」扩展为「单篇教育材料 + 跨域 smoke test 三领域复现（社会学邻里积分制、自然科学高通量 p 值考核、历史学修志数字化积分）」。跨行业普遍性仍需真实外部材料继续验证，pending 保持但强度
@@ -2174,11 +2224,6 @@
   - 可搜索名称：NFC-7100d3ad53a8fbae / 证据缺口被忽略。
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—
-- [证据试点（Task 103，首个预注册可证伪验证）](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-522277bf0a74860d / 证据试点（Task 103，首个预注册可证伪验证）
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
 - [证据路径可在仓库/草案指向](../../../inputs/021/protocols-draft.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-ee958925d89cc1d5 / 证据路径可在仓库/草案指向
@@ -2203,11 +2248,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-4d8f7ea2a2a38023 / 识别是材料错误、边界错误、尺度错误还是证据问题；
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [诊断词出现于本文不等于当前仓库已经有对应 failure record、validator、schema 字段或生产缺陷。](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b31a65a982e81596 / 诊断词出现于本文不等于当前仓库已经有对应 failure record、validator、schema 字段或生产缺陷。
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [词汇空间验证](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d17a95dea0f38048 / 跨学科 smoke test — 社会学材料
   - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/social.md`
-  - 依赖：—；被引用：—
-- [跨学科不是必要条件，领域数量也不是层级数量。同一生活材料内部可以跨越技术、经济、时间、身份、审美、宇宙和伦理层。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-43f3e8eaafb9a874 / 跨学科不是必要条件，领域数量也不是层级数量。同一生活材料内部可以跨越技术、经济、时间、身份、审美、宇宙和伦理层。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [跨数据集关联键](../../../docs/p1-data-index-map-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d218ae07b3717afb / 跨数据集关联键
-  - 来源：`docs/p1-data-index-map-20260708.md`
-  - 依赖：—；被引用：—
-- [跨文本验证（与其他文本的比较）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e0fc91e8a1d72000 / 跨文本验证（与其他文本的比较）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [跨语言比较需要一个共同参照，却不能假装存在完全中性的语言外中介。本项目使用 `normalized_meaning_candidate`：它是一条有 provenance、有版本、可被反驳的比较候选。新证据或母语审校者可以修改它，旧版本仍保](../../../docs/language-thought/translation-and-residue.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a4766ee42204efbe / 跨语言比较需要一个共同参照，却不能假装存在完全中性的语言外中介。本项目使用 `normalized_meaning_candidate`：它是一条有 provenance、有版本、可被反驳的比较候选。新证据或母语审校者可以修改它，旧版本仍保
-  - 来源：`docs/language-thought/translation-and-residue.md`
-  - 依赖：—；被引用：—
-- [路径依赖分化验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2aa9ee7b66e1aad7 / 路径依赖分化验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [身体社会学补充线可继续扩到 Crossley 等作者，但需要逐本拆分后再入表。](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-06f2381d0a2114b2 / 身体社会学补充线可继续扩到 Crossley 等作者，但需要逐本拆分后再入表。
-  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
-  - 依赖：—；被引用：—
-- [输入基线由 `data/governance/self-correction/config.json` 锁定。生成器读取当前工作树、任务 100 claim registry/dependency graph/evidence lineag](../../../docs/governance/self-correction-engine.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b9500dedb71f7ab9 / 输入基线由 `data/governance/self-correction/config.json` 锁定。生成器读取当前工作树、任务 100 claim registry/dependency graph/evidence lineag
-  - 来源：`docs/governance/self-correction-engine.md`
-  - 依赖：—；被引用：—
-- [输入材料：`inputs/collisions/20260708-cross-domain-smoke-test/{social,science,history}.md`](../../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e0d91fd81e9816fe / 输入材料：`inputs/collisions/20260708-cross-domain-smoke-test/{social,science,history}.md`
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`
   - 依赖：—；被引用：—

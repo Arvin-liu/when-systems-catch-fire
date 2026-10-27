@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [def _task137_accounting_policy\(\) -> AccountingPolicy:](../../../agent_federation/live_task137.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1A21A9B63FD8B00B / def _task137_accounting_policy\(\) -> AccountingPolicy: / IMPLICIT-1A21A9B63FD8B00B
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
 - [def _task_prompt\(self, envelope: FederatedTaskEnvelope\) -> str:](../../../agent_federation/adapters/codex.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3C4DE833424EB621 / def _task_prompt\(self, envelope: FederatedTaskEnvelope\) -> str: / IMPLICIT-3C4DE833424EB621 / IMPLICIT-EC3EFADB10EF2053
@@ -2503,4 +2498,9 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-7C16CEB171457CD9 / def setUp\(self\): / IMPLICIT-7C16CEB171457CD9 / IMPLICIT-13559FC49E4C7AEF
   - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
+  - 依赖：—；被引用：—
+- [def setUp\(self\):](../../../function-os-candidate/v0.2/tests/test_n4_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9F46B1DCFA946ABA / def setUp\(self\): / IMPLICIT-9F46B1DCFA946ABA / IMPLICIT-13559FC49E4C7AEF
+  - 来源：`function-os-candidate/v0.2/tests/test_n4_robust.py`
   - 依赖：—；被引用：—

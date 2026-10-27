@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2cdc9226a7e7b1d1 / 不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [不把故事化、碰撞或单材料结论写成证明。](../../../docs/math-foundation/06-audit-and-correction-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7fc6a1955b4ab9dd / 不把故事化、碰撞或单材料结论写成证明。
+  - 来源：`docs/math-foundation/06-audit-and-correction-protocol.md`
+  - 依赖：—；被引用：—
+- [不把规训语言偷换成因果证明](../../../outputs/research/role-identity-collision-batches-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b0eeba1ed0b94691 / 不把规训语言偷换成因果证明
+  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
+  - 依赖：—；被引用：—
+- [不新增第 13 个元协议、L7、meta-meta protocol 或统一价值函数；](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6ea8dfa3fd29d8e0 / 不新增第 13 个元协议、L7、meta-meta protocol 或统一价值函数；
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [不是产品成熟度、市场唯一性、AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-5f8f060ff3f34c51 / 不是产品成熟度、市场唯一性、AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。
@@ -33,11 +53,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-06680ddfb6dee556 / 不能在不暴露真实登录域的前提下证明合规的 read-only reference，因此按硬门禁禁止。Hermes
   - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [不能推出所有已登记资产都定义良好、已证明或有外部证据。](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0e0cffa5c2d19c78 / 不能推出所有已登记资产都定义良好、已证明或有外部证据。
-  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [不讨论或判断 AI 是否有意识、人格、感受、道德地位或法律主体资格；](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2223,21 +2238,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e328920036c75002 / 五个可检验实验方案： **实验1：退出选项引入实验** - 设计：两组AI，实验组被赋予"可以不回答"选项，对照组必须回答 - 测量：引入退出选项前后的校准曲线、拒绝一致性、探索行为 - 预言：实验组在首次成功拒绝后，三个指标显著变化；对照
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [五个诊断均不进入 current registry。`NEW_FAILURE` 本轮没有得到支持：没有一个诊断被独立运行 fixture 证明为超出已有 contract 的新错误类。](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6db9ff9abc208966 / 五个诊断均不进入 current registry。`NEW_FAILURE` 本轮没有得到支持：没有一个诊断被独立运行 fixture 证明为超出已有 contract 的新错误类。
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [五个诊断词可以指出合同交界处的审计问题，但尚未被独立 fixture、稳定 predicate 或重复测试证明为新的 failure class。](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bbfaf6feb71910e4 / 五个诊断词可以指出合同交界处的审计问题，但尚未被独立 fixture、稳定 predicate 或重复测试证明为新的 failure class。
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [五源 loop：是角色和记录边界图，不是新生命周期或统一主体模型。](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-36b8ae5401ae049f / 五源 loop：是角色和记录边界图，不是新生命周期或统一主体模型。
-  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
   - 依赖：—；被引用：—
 - [交叉验证：PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

@@ -4,16 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [已迁移的历史函数来源/0286-D250-自我模型相变的验证标准.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-2dd304c44c3ee174 / 已迁移的历史函数来源/0286-D250-自我模型相变的验证标准.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D250；被引用：—
-- [已迁移的历史函数来源/0287-D251-维度-容斥稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e8d01af5ef59f9e9 / 已迁移的历史函数来源/0287-D251-维度-容斥稳定性函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D251；被引用：—
 - [已迁移的历史函数来源/0288-D252-社会学容斥加速函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-daf7131ac2db4521 / 已迁移的历史函数来源/0288-D252-社会学容斥加速函数.md
@@ -2174,11 +2164,6 @@
   - 可搜索名称：NFC-d78b1d52b99e2452 / 若任务需要全项目导航，读取\[完整总架构图说明\]\(./architecture/interactive-system-map.md\)及机器 spec。图中节点和连线是当前结构阅读或受约束信息流；SVG link metadata 不等同于客户
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [若后续确有 Owner 指令继续，最小下一步应是针对一个具体现有合同的 `RESEARCH_TO_CONTRACT` review：冻结一个 junction case，给出输入字段、预期 stop/review、独立 reviewer、反](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-4f928bcf8ae1509f / 若后续确有 Owner 指令继续，最小下一步应是针对一个具体现有合同的 `RESEARCH_TO_CONTRACT` review：冻结一个 junction case，给出输入字段、预期 stop/review、独立 reviewer、反
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
 - [若声称外部定理或实证成立，必须给出外部证据状态。](../../../docs/math-foundation/04-proof-obligations.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-6f5389c2a8ad37f3 / 若声称外部定理或实证成立，必须给出外部证据状态。
@@ -2503,4 +2488,19 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4945cdb8d13fa064 / 证明未被多次独立验证
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [证明某一 primitive 只是另一个局部字段的同义别名，删除它不会丢失任何独立 failure mode；](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d793032e930db50e / 证明某一 primitive 只是另一个局部字段的同义别名，删除它不会丢失任何独立 failure mode；
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [证明的验证和确认](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-acd405789b5fe6cd / 证明的验证和确认
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证明苹果砸中 Newton、单一直接因果，或整则故事必然虚构。](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-c5671b30bdd50f54 / 证明苹果砸中 Newton、单一直接因果，或整则故事必然虚构。
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—

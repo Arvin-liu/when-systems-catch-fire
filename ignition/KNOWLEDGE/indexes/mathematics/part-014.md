@@ -1344,11 +1344,6 @@
   - 可搜索名称：NFC-bb7129d2cec55486 / 任何重大函数、协议、工具、商业部署或治理决定，至少应记录以下 Charter Gate 字段：
   - 来源：`docs/governance/life-community-value-charter.md`
   - 依赖：—；被引用：—
-- [任务 100：把治理扩展到全语料非函数断言，闭合证据谱系并阻断结构性回弹。](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4bffdeb0ab79df8e / 任务 100：把治理扩展到全语料非函数断言，闭合证据谱系并阻断结构性回弹。
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
 - [任务 110 保留任务 109 的原始排序，新增基于 candidate/claim/run/task/lifecycle](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-89fc9a713c7980f0 / 任务 110 保留任务 109 的原始排序，新增基于 candidate/claim/run/task/lifecycle
@@ -1358,11 +1353,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-037598111338be3f / 任务 110 关闭的是候选生命周期缺口，不是开放科学问题。`C-01` 的 Crossref 义务和
   - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—
-- [任务 111 没有预设“牛顿苹果案例”已经证明系统存在缺陷。三个 `case_failures` 文件的](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-13e33c8ff28e8039 / 任务 111 没有预设“牛顿苹果案例”已经证明系统存在缺陷。三个 `case_failures` 文件的
-  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [任务 113 发布了\[《当天意有了接口：宋徽宗与会自我证明的皇权》\]\(./publication/works/when-an-emperor-manufactures-heaven.md\)，并以历史／来源、反方／解释和编辑／文学三重审查守住](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1394,11 +1384,6 @@
   - 可搜索名称：NFC-76333be52839438c / 任务 98 对 formal main 的全部 Git 跟踪文本源执行了确定性扫描。扫描范围包含函数与案例表、Foundation、theory kernels、投影矩阵、元函数、执行器、README/SUMMARY/USAGE、代码以及
   - 来源：`docs/foundation/historical-function-census.md`
   - 依赖：—；被引用：—
-- [任务 98：建立断言治理、函数身份、M/E 双轴，并纠偏物理强断言。](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-602e70118fb27e6b / 任务 98：建立断言治理、函数身份、M/E 双轴，并纠偏物理强断言。
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
 - [任务 99 已完成第一轮全量身份卡与处置闭合。未定义、未证明或未建立现实映射的资产不再留在无状态队列，而是逐项进入 `unresolved-quarantine.jsonl`，并带 `resume_key`、失败/未决 gate、证明义务、](../../../docs/foundation/function-audit-roadmap.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cc2828136c40b906 / 任务 99 已完成第一轮全量身份卡与处置闭合。未定义、未证明或未建立现实映射的资产不再留在无状态队列，而是逐项进入 `unresolved-quarantine.jsonl`，并带 `resume_key`、失败/未决 gate、证明义务、
@@ -1428,6 +1413,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-1f5f9dcef2f93225 / 任务分支：`codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820`
   - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [休眠问题池与再激活 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-30fdf00cdb08a566)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：休眠问题池与再激活 — IGNITION-20260908-165 / dormant-question-pool-and-reactivation-2026-09-08
+  - 来源：`docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md`
   - 依赖：—；被引用：—
 - [传染临界-不可逆线一致性函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2503,4 +2493,14 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5237bef9d834f889 / 单案例不能证明普遍定理。
   - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [历史 Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-443563b4afe90f86 / 历史 Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [历史 Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6d5b7c96834f6f33 / 历史 Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、
+  - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—

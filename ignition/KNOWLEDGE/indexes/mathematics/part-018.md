@@ -4,16 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [热寂-完全统一同构定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-eca32407f53b3e77 / 热寂-完全统一同构定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [熵增门槛碾压函数](../../ASSET-CARDS.md#asset-d184)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_TOY_MODEL`
-  - 可搜索名称：D184 / 熵增门槛碾压函数
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：D181, D211, D220, D270；被引用：CLAIM-D222, NFC-09ce6af80c057b01, NFC-1741ea043f4d8ddb, NFC-19216b87ec69d357
 - [版本升级必须改变项目本体或权威数据契约，并同步更新入口、架构、schema、工具、测试、CI、报告和兼容策略。普通候选增量不构成架构版本升级。](../../../docs/VERSIONING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6b573e1f3e330846 / 版本升级必须改变项目本体或权威数据契约，并同步更新入口、架构、schema、工具、测试、CI、报告和兼容策略。普通候选增量不构成架构版本升级。
@@ -674,11 +664,6 @@
   - 可搜索名称：D98 / 符号-语义带宽 / D98
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D180, D91；被引用：NFC-1d2e793c40b7035c, NFC-7d707b593a8a024e, NFC-c49ee2ee99ffbe37
-- [第一个大型 Domain Pack，而不是整个系统本体。R2 将 Kernel、R1 本地行动层、](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3e2731dada5cce5b / 第一个大型 Domain Pack，而不是整个系统本体。R2 将 Kernel、R1 本地行动层、
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
 - [第一个大型 Domain Pack，而不是整个系统本体。它是 OS / orchestration-governance](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-578c5eca49192ce6 / 第一个大型 Domain Pack，而不是整个系统本体。它是 OS / orchestration-governance
@@ -953,6 +938,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-936c29152fd9be75 / 结构表达：`C_{C-0799}\(s\)=SelfOrg\(life_origin\)`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [结论：NO_VALIDATED_CREATIVE_DISCONTINUITY_FOUND。本次没有证明跨线程操作器，也没有发现达到高门槛的候选。公共先例搜索没有被触发，因为没有候选越过高门槛；这不等于不存在先例。](../../../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d08efa164143909b / 结论：NO_VALIDATED_CREATIVE_DISCONTINUITY_FOUND。本次没有证明跨线程操作器，也没有发现达到高门槛的候选。公共先例搜索没有被触发，因为没有候选越过高门槛；这不等于不存在先例。
+  - 来源：`docs/governance/next-epistemic-capability-assessment-2026-09-08.md`
   - 依赖：—；被引用：—
 - [结论：三个完全不同领域命中同一个核心函数 D597，证明框架的跨域同构识别能力通过 smoke test。**](../../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2504,3 +2494,13 @@
   - 可搜索名称：NFC-7aefc18de16fc4f8 / 已迁移的历史函数来源/0285-D249-自我模型相变实验方案.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D249；被引用：—
+- [已迁移的历史函数来源/0286-D250-自我模型相变的验证标准.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-2dd304c44c3ee174 / 已迁移的历史函数来源/0286-D250-自我模型相变的验证标准.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D250；被引用：—
+- [已迁移的历史函数来源/0287-D251-维度-容斥稳定性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e8d01af5ef59f9e9 / 已迁移的历史函数来源/0287-D251-维度-容斥稳定性函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D251；被引用：—

@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [证明某一 primitive 只是另一个局部字段的同义别名，删除它不会丢失任何独立 failure mode；](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d793032e930db50e / 证明某一 primitive 只是另一个局部字段的同义别名，删除它不会丢失任何独立 failure mode；
-  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [证明的验证和确认](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-acd405789b5fe6cd / 证明的验证和确认
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证明苹果砸中 Newton、一个瞬间直接造成完整理论，或整则故事必然虚构。Function OS](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0d0708efec4a8376 / 证明苹果砸中 Newton、一个瞬间直接造成完整理论，或整则故事必然虚构。Function OS
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [证明苹果砸中 Newton、单一直接因果，或整则故事必然虚构。](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c5671b30bdd50f54 / 证明苹果砸中 Newton、单一直接因果，或整则故事必然虚构。
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—
 - [证明被多次独立验证](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-7f82212017f71ffa / 证明被多次独立验证
@@ -454,6 +434,11 @@
   - 可搜索名称：NFC-d65348fe4bd9bedf / 跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件,数学结构完全等价,差异仅在ηinterface参数值
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—
+- [跨线程认知碰撞协议 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-86f21d4ffffb5629)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：跨线程认知碰撞协议 — IGNITION-20260908-165 / cross-thread-cognitive-collision-2026-09-08
+  - 来源：`docs/governance/cross-thread-cognitive-collision-2026-09-08.md`
+  - 依赖：—；被引用：—
 - [路径：`已迁移的历史函数来源/0400-D364-实际不可逆判据函数.md`](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-dbd1762ccbfc98c2 / 路径：`已迁移的历史函数来源/0400-D364-实际不可逆判据函数.md`
@@ -608,11 +593,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ab547e17eb32f482 / 这说明肉身锚定可以强力参与跃迁，不证明每篇文章都必须以身体为入口或回返处。它与价值宪章共享宇宙尺度、主体位置、物理隔绝和伦理共在的来源，但诗的生成运动不等于 Charter 的规范权威。
   - 来源：`docs/publication/zhiyuan-writing-examples.md`
-  - 依赖：—；被引用：—
-- [这里的 `CROSS_CONTRACT_LENS` 不是 `NEW_FAILURE` 的替代性断言：它表示当前材料足以说明“应将几张既有表面一起复核”，但没有独立复现证明该名字对应一个新的、稳定的错误类。](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-536dcd41ad3ebb1a / 这里的 `CROSS_CONTRACT_LENS` 不是 `NEW_FAILURE` 的替代性断言：它表示当前材料足以说明“应将几张既有表面一起复核”，但没有独立复现证明该名字对应一个新的、稳定的错误类。
-  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [这里的“逻辑”不是另一套真假规则。它指人在准备说出、抽取或翻译一个意思时，语言反复要求或倾向要求他怎样安排话题与主语、显露行为者、划定事件边界、标记知识来源、恢复省略成分、连接分句和组织已知／新信息。数学命题和经验证据不会因为换一种语言而改](../../../docs/architecture/language-thought-logic-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1179,6 +1159,11 @@
   - 可搜索名称：NFC-b7070e5469d6dbbb / 问题**：部分判定函数（如 D67、D69、D70）被标记为案例函数（C-201、C-172、C-173），导致函数总数虚高。
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：D67, D69, D70；被引用：—
+- [问题空间重写消融 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-844a2312fd98066e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：问题空间重写消融 — IGNITION-20260908-165 / problem-space-rewrite-ablation-2026-09-08
+  - 来源：`docs/governance/problem-space-rewrite-ablation-2026-09-08.md`
+  - 依赖：—；被引用：—
 - [阅读 \[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\) 与 \[Charter System R1 治理系统\]\(./governance/charter-system-r1.m](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e7d65f737c4790fc / 阅读 \[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\) 与 \[Charter System R1 治理系统\]\(./governance/charter-system-r1.m

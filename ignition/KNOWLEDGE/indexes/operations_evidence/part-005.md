@@ -6,46 +6,6 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5021309751 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5021309751 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5021702524 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5021702524 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5024008062 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5024008062 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5027185097 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5027185097 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5033291050 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5033291050 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5033570072 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5033570072 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5034334189 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5034334189 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5034759778 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5034759778 / A5001316926
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5034801064 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5034801064 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -604,6 +564,61 @@
   - 可搜索名称：T13690 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json / T13690 / A5061251386
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP014-M43.json`
   - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T01 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T01 / T02
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T02 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T02 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T03 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T03 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T04 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T04 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T05 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T05 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T06 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T06 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T07 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T07 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T08 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T08 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T09 / data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl / T09 / T01
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/state-vs-transition-semantics-2026-09-07/answer-key.jsonl](../../../data/research/state-vs-transition-semantics-2026-09-07/answer-key.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T00 / data/research/state-vs-transition-semantics-2026-09-07/answer-key.jsonl / T00
+  - 来源：`data/research/state-vs-transition-semantics-2026-09-07/answer-key.jsonl`
+  - 依赖：—；被引用：—
+- [data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl](../../../data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T160 / data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl / T160
+  - 来源：`data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl`
+  - 依赖：—；被引用：—
 - [def build\(\):](../../../formal/sage/function_asset_task99_checks.sage)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-90D25659E0C448D9 / def build\(\): / IMPLICIT-90D25659E0C448D9
@@ -714,11 +729,6 @@
   - 可搜索名称：D09 / docs/language-thought/dimensional-basis.md / D09 / D01
   - 来源：`docs/language-thought/dimensional-basis.md`
   - 依赖：—；被引用：NFC-b14a0f89d72d5468
-- [docs/structural_gap_audit.md](../../../docs/structural_gap_audit.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P3 / docs/structural_gap_audit.md / P3
-  - 来源：`docs/structural_gap_audit.md`
-  - 依赖：—；被引用：—
 - [dP_exit/dΩ = 0 ↔ dΦ/dμ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2EA513D4B04E01DB / dP_exit/dΩ = 0 ↔ dΦ/dμ = 0 / IMPLICIT-2EA513D4B04E01DB
@@ -2424,11 +2434,6 @@
   - 可搜索名称：NFC-6639c6be08d8960a / Outcome**: Did the prediction hold? If not, what failed?
   - 来源：`docs/falsifiability/README.md`
   - 依赖：—；被引用：—
-- [outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md](../../../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A14 / outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md / A14
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md`
-  - 依赖：—；被引用：—
 - [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D570 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / D570 / T100
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-7422eb4bb760e86a / O₁₄\(x,y\) := D179-phase\(相变同构\)**
   - 来源：`docs/phi_meta_law.md`
   - 依赖：D179；被引用：—
-- [O₄\(x,y\) := Θ-Y1统一同构**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6d0c3f0ad475f22f / O₄\(x,y\) := Θ-Y1统一同构**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：Y1；被引用：—

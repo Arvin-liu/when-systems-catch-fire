@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [数学表达 / Expression: `F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e0e56103f6b43d3 / 数学表达 / Expression: `F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D254, D256；被引用：—
-- [数学表达 / Expression: `F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6281960bf2ad6a6a / 数学表达 / Expression: `F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D261；被引用：—
-- [数学表达 / Expression: `F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29a919b20c1b6952 / 数学表达 / Expression: `F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D267；被引用：—
 - [数学表达 / Expression: `F_{D269}\(x\) := M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d5ea9cc3260b10ce / 数学表达 / Expression: `F_{D269}\(x\) := M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。`
@@ -1159,11 +1144,6 @@
   - 可搜索名称：NFC-9dddc621ce11ffd4 / 更新函数索引表**：根据合并和修正结果，更新统一函数索引表
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：—；被引用：—
-- [更新时间：2026-07-30。状态范围：任务 98—101 已合入；任务 102 在 PR 普通合并并通过 `main` 与全新克隆验证后成为 Current。科学和数学义务按项保持开放。](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cf4e002e73ebf320 / 更新时间：2026-07-30。状态范围：任务 98—101 已合入；任务 102 在 PR 普通合并并通过 `main` 与全新克隆验证后成为 Current。科学和数学义务按项保持开放。
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
 - [最优化问题×跨域统一定理验证](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b19021e30c2a04ff / 最优化问题×跨域统一定理验证
@@ -1453,6 +1433,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-297f7ea73995709a / 本契约把“所有 Human Surface 必须经过之元写作法”变成长期制度。它不是第二套写作方法，也不是事实、证明、外部证据或 Owner 授权。它只规定：机器记录如何被翻译成面向人的入口，以及这次翻译必须留下哪些边界。
   - 来源：`docs/governance/human-surface-editorial-contract.md`
+  - 依赖：—；被引用：—
+- [本实现是可复现的结构代理：它只统计冻结文本中的六个碰撞问题、结构操作签名和删除损失，不能证明一个新的认知操作已经产生。](../../../docs/governance/cross-thread-cognitive-collision-2026-09-08.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6dbacf94cfb967db / 本实现是可复现的结构代理：它只统计冻结文本中的六个碰撞问题、结构操作签名和删除损失，不能证明一个新的认知操作已经产生。
+  - 来源：`docs/governance/cross-thread-cognitive-collision-2026-09-08.md`
   - 依赖：—；被引用：—
 - [本宪章所说的生命共同体，不局限于地球或地球生物圈，其范围明确如下：](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2059,6 +2044,11 @@
   - 可搜索名称：NFC-4d272b77d1797b33 / 没有对应函数的案例只能作为候选案例或 pending 案例**，不得直接入正式案例表。
   - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
   - 依赖：—；被引用：—
+- [治理报告：IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-4ec1ffa8540c9ee2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：治理报告：IGNITION-20260908-165 / task-IGNITION-20260908-165
+  - 来源：`reports/governance/task-IGNITION-20260908-165.md`
+  - 依赖：—；被引用：—
 - [法条净效应函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D20 / 法条净效应函数 / D20
@@ -2504,3 +2494,13 @@
   - 可搜索名称：D221 / 热寂-完全统一同构定理 / D221
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D181, D220, D270；被引用：D223, CLAIM-D223, NFC-15b20d64f1e3a3cf, NFC-2902907aa03e4e28
+- [热寂-完全统一同构定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-eca32407f53b3e77 / 热寂-完全统一同构定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [熵增门槛碾压函数](../../ASSET-CARDS.md#asset-d184)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_TOY_MODEL`
+  - 可搜索名称：D184 / 熵增门槛碾压函数
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：D181, D211, D220, D270；被引用：CLAIM-D222, NFC-09ce6af80c057b01, NFC-1741ea043f4d8ddb, NFC-19216b87ec69d357

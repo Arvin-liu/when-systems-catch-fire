@@ -4,16 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [历史 Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-443563b4afe90f86 / 历史 Task 127 将 Durability / Lifecycle R3 登记为同一 OS 控制脊柱内的当前构件：它保存
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [历史 Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、](../../../AI-START-HERE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-6d5b7c96834f6f33 / 历史 Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、
-  - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
 - [历史函数后续证明与实证路线图](../../ASSET-CARDS.md#asset-hr-8538af7205a1c2d1)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：历史函数后续证明与实证路线图 / function-audit-roadmap
@@ -33,6 +23,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：历史函数资产深度裁决与注册表闭合 R1 / historical-function-deep-adjudication-20260729
   - 来源：`docs/foundation/historical-function-deep-adjudication-20260729.md`
+  - 依赖：—；被引用：—
+- [历史创造性不连续性回放 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-aebc74306f6c98e0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：历史创造性不连续性回放 — IGNITION-20260908-165 / historical-creative-discontinuity-replay-2026-09-08
+  - 来源：`docs/governance/historical-creative-discontinuity-replay-2026-09-08.md`
   - 依赖：—；被引用：—
 - [历史因果如何成立？**（单因 vs 多因）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-da4581a6f33c8bd0 / 同构判定：**与 EXIT 族 / D595\(绩效绑定裹挟\) 实质同构**——约束来源都是权力方的管理成本，退出权被架空。判定为 **已有函数边界扩展**（命中点火 V1「维持关系何时阻止退出」）。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
   - 依赖：D595；被引用：—
+- [同构判定：**函数总表「价值感/努力/认可」轴空白**。判定为 **真新候选 / 边界扩展**（与 M2 互补，M2 是内化规训，M8 是价值解耦；本轮作为 M2 的补充扩展候选，不单独占 5 名额，进 candidates/）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1fe60c32ee0df09d / 同构判定：**函数总表「价值感/努力/认可」轴空白**。判定为 **真新候选 / 边界扩展**（与 M2 互补，M2 是内化规训，M8 是价值解耦；本轮作为 M2 的补充扩展候选，不单独占 5 名额，进 candidates/）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
