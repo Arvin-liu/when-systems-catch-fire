@@ -1,0 +1,42 @@
+{
+  "packet_id": "pkt-001",
+  "episode_id": "ep-001",
+  "target_repo": "Arvin-liu/when-systems-catch-fire",
+  "target_ref": "runtime/task115-agent-agnostic-research-runtime-intake-r1-20260804",
+  "target_ref_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "requested_capabilities": [
+    {
+      "capability": "WRITE_FILE",
+      "scope": "schemas/deep-research/*.json",
+      "permission": "ALLOWED"
+    }
+  ],
+  "allowed_reads": [
+    "schemas/deep-research/*",
+    "tools/deep_research/*"
+  ],
+  "allowed_writes": [
+    "schemas/deep-research/*.json"
+  ],
+  "allowed_network": [],
+  "output_schema_ref": "deep-research/0.1/execution-validation-result",
+  "validation_commands": [
+    {
+      "command": "python3 -m unittest tests.test_deep_research_round1",
+      "expected_exit_code": 0,
+      "timeout_seconds": 900
+    }
+  ],
+  "stop_states": [
+    "SUCCESS",
+    "FAILED_WITH_EVIDENCE",
+    "WAITING_HUMAN_APPROVAL"
+  ],
+  "forbidden_actions": [
+    "PUSH_CHANGES",
+    "DELETE_REPO"
+  ],
+  "model_telemetry_hint": {
+    "family": "generic-instruct"
+  }
+}

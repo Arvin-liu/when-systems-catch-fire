@@ -1,0 +1,11 @@
+{
+  "decision_id": "suff-002",
+  "episode_id": "ep-SLEEP-TIMING",
+  "decision": "CONTINUE_RESEARCH",
+  "hard_gates_passed": false,
+  "failed_hard_gates": [
+    "ADVERSARIAL_CLAIM"
+  ],
+  "deterministic_inputs": true,
+  "model_proposed": false
+}

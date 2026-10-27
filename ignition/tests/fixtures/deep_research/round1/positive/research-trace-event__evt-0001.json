@@ -1,0 +1,9 @@
+{
+  "event_id": "evt-0001",
+  "timestamp": "2026-02-01T00:00:00Z",
+  "type": "ACTION_DISPATCH",
+  "actor": "kernel",
+  "payload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "round": 1,
+  "phase": "evidence_gathering"
+}

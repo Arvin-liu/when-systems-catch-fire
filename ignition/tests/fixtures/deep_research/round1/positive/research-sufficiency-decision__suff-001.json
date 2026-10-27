@@ -1,0 +1,14 @@
+{
+  "decision_id": "suff-001",
+  "episode_id": "ep-SLEEP-TIMING",
+  "decision": "STOP_SUFFICIENT_CANDIDATE",
+  "hard_gates_passed": true,
+  "failed_hard_gates": [],
+  "sufficiency_vector": {
+    "source_provenance": 1.0,
+    "adversarial_claim": 0.9
+  },
+  "rationale": "all HIGH obligations satisfied, gates passed",
+  "deterministic_inputs": true,
+  "model_proposed": false
+}

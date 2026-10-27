@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/resume-capsule",
+  "title": "ResumeCapsule",
+  "description": "Self-contained handoff so a DIFFERENT executor (with no chat history) can resume. Needs are expressed as capability tokens, not brand names; includes a precise resume-point sha256.",
+  "type": "object",
+  "required": [
+    "capsule_id",
+    "episode_id",
+    "objective",
+    "frozen_brief_ref",
+    "completed_summary",
+    "pending_tasks",
+    "known_blockers",
+    "required_capabilities",
+    "resume_point_sha256",
+    "validation_state"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "capsule_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "frozen_brief_ref": {
+      "type": "string"
+    },
+    "completed_summary": {
+      "type": "string"
+    },
+    "pending_tasks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "READ_FILE",
+          "WRITE_FILE",
+          "RUN_SHELL",
+          "FETCH_URL",
+          "CALL_TOOL",
+          "COMPUTE_NUMERIC",
+          "GENERATE_TEXT",
+          "PARSE_DOCUMENT",
+          "RUN_TEST",
+          "CLONE_REPO",
+          "COMMIT_CHANGES",
+          "PUSH_CHANGES",
+          "QUERY_API",
+          "EMBED_TEXT",
+          "SEARCH_INDEX",
+          "READ_ENV",
+          "WRITE_ENV"
+        ]
+      }
+    },
+    "resume_point_ref": {
+      "type": "string"
+    },
+    "resume_point_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "validation_state": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "model_telemetry": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "required_provider": {
+      "type": "null"
+    },
+    "required_model": {
+      "type": "null"
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "required_provider"
+            ]
+          },
+          {
+            "required": [
+              "required_model"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

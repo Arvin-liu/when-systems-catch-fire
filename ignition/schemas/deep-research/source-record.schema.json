@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/source-record",
+  "title": "SourceRecord",
+  "description": "Distinguishes source DISCOVERY, OPENING, actual inspected scope and derived inference. Fails closed: source_id + access_level required; if opened, inspected_scope required.",
+  "type": "object",
+  "required": [
+    "source_id",
+    "access_level"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "type": "string"
+    },
+    "source_family": {
+      "type": "string"
+    },
+    "discovery_method": {
+      "type": "string"
+    },
+    "opened": {
+      "type": "boolean"
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "DISCOVERED",
+        "OPENED",
+        "FULL_TEXT",
+        "METHODS_ONLY",
+        "ABSTRACT_ONLY",
+        "METADATA_ONLY",
+        "COMPUTED",
+        "NONE"
+      ]
+    },
+    "inspected_scope": {
+      "type": "string"
+    },
+    "claimed_vs_actual_scope": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "opened_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "independence_group": {
+      "type": "string"
+    },
+    "trust_flags": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "opened"
+        ],
+        "properties": {
+          "opened": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "inspected_scope"
+        ]
+      }
+    }
+  ]
+}

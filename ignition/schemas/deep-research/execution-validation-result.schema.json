@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/execution-validation-result",
+  "title": "ExecutionValidationResult",
+  "description": "Evidence from running the packet's validation commands. The validator may NOT self-approve; model/provider are telemetry only.",
+  "type": "object",
+  "required": [
+    "result_id",
+    "packet_id",
+    "checks",
+    "all_passed"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "result_id": {
+      "type": "string"
+    },
+    "packet_id": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "command",
+          "exit_code",
+          "passed"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "command": {
+            "type": "string"
+          },
+          "exit_code": {
+            "type": "integer"
+          },
+          "passed": {
+            "type": "boolean"
+          },
+          "output_sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "all_passed": {
+      "type": "boolean"
+    },
+    "validated_by": {
+      "type": "string"
+    },
+    "model_telemetry": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "validated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "self_approved": {
+      "type": "null"
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "self_approved"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/executor-capability-declaration",
+  "title": "ExecutorCapabilityDeclaration",
+  "description": "Neutral declaration of what an executor is capable of, expressed ONLY via capability tokens + permission scopes. Provider/model brand names may appear ONLY as telemetry and must never become a required action dependency.",
+  "type": "object",
+  "required": [
+    "declaration_id",
+    "executor_id",
+    "declared_capabilities"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "declaration_id": {
+      "type": "string"
+    },
+    "executor_id": {
+      "type": "string"
+    },
+    "declared_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "capability",
+          "permission"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "capability": {
+            "type": "string",
+            "enum": [
+              "READ_FILE",
+              "WRITE_FILE",
+              "RUN_SHELL",
+              "FETCH_URL",
+              "CALL_TOOL",
+              "COMPUTE_NUMERIC",
+              "GENERATE_TEXT",
+              "PARSE_DOCUMENT",
+              "RUN_TEST",
+              "CLONE_REPO",
+              "COMMIT_CHANGES",
+              "PUSH_CHANGES",
+              "QUERY_API",
+              "EMBED_TEXT",
+              "SEARCH_INDEX",
+              "READ_ENV",
+              "WRITE_ENV"
+            ]
+          },
+          "scope": {
+            "type": "string"
+          },
+          "permission": {
+            "type": "string",
+            "enum": [
+              "ALLOWED",
+              "DENIED",
+              "CONDITIONAL"
+            ]
+          },
+          "conditions": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "capability_proof": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "model_telemetry": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "provider_telemetry": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "declared_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "required_provider": {
+      "type": "null"
+    },
+    "required_model": {
+      "type": "null"
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "required_provider"
+            ]
+          },
+          {
+            "required": [
+              "required_model"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

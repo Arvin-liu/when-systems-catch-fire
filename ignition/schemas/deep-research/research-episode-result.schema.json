@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-episode-result",
+  "title": "ResearchEpisodeResult",
+  "description": "Ingested result of one completed (or blocked) episode for queue continuation.",
+  "type": "object",
+  "required": [
+    "result_id",
+    "episode_id",
+    "final_state"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "result_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "brief_id": {
+      "type": "string"
+    },
+    "final_state": {
+      "type": "string",
+      "enum": [
+        "INTAKE",
+        "QUESTION_FROZEN",
+        "EVIDENCE_GATHERING",
+        "ANALYSIS",
+        "CHALLENGE",
+        "REVISION",
+        "CANDIDATE_COMPLETE",
+        "BLOCKED",
+        "INSUFFICIENT_EVIDENCE_COMPLETE",
+        "ESCALATED_TO_GPT_OWNER",
+        "PAUSED_RESUMABLE",
+        "REOPENED"
+      ]
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "source_records": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "obligations_status": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "sufficiency_decision": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "report_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "machine_trace_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

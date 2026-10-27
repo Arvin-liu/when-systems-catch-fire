@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arvin-liu.github.io/when-systems-catch-fire/schemas/research-os/episode-state.schema.json",
+  "title": "Research Episode State Kernel (draft)",
+  "description": "Draft schema for a resumable Research Episode state record. The executable kernel is built in Checkpoint B; this schema fixes the field contract from Task 115 §5.1 and the state enum from data/research-os/episode-states.json. A report file or elapsed time MUST NEVER alone cause a terminal transition.",
+  "type": "object",
+  "required": ["episode_id", "question_version", "research_type", "strategy_pack", "state", "state_lineage", "created_at", "event_log"],
+  "properties": {
+    "episode_id": {"type": "string", "description": "Globally unique episode identity."},
+    "question_version": {"type": "string", "description": "Frozen research question version reference."},
+    "research_type": {"type": "string"},
+    "strategy_pack": {
+      "type": "string",
+      "enum": ["QUANTITATIVE_DATA_RECONCILIATION", "RANDOMIZED_CLINICAL_EVIDENCE", "OBSERVATIONAL_CAUSALITY", "POLICY_EFFECT_EVALUATION", "ENGINEERING_BENCHMARK", "SYSTEMATIC_EVIDENCE_SYNTHESIS", "HISTORICAL_SOURCE_ADJUDICATION", "PUBLIC_CLAIM_FACT_CHECK"]
+    },
+    "state": {
+      "type": "string",
+      "enum": ["INTAKE", "QUESTION_FROZEN", "EVIDENCE_GATHERING", "ANALYSIS", "CHALLENGE", "REVISION", "CANDIDATE_COMPLETE", "BLOCKED", "INSUFFICIENT_EVIDENCE_COMPLETE", "ESCALATED_TO_GPT_OWNER", "PAUSED_RESUMABLE", "REOPENED"]
+    },
+    "state_lineage": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Ordered prior states; proves previous-state lineage."
+    },
+    "candidate_claims": {"type": "array", "items": {"type": "object"}, "description": "Candidate claims and their claim ceilings."},
+    "evidence_obligations": {"type": "array", "items": {"type": "object"}, "description": "Obligation graph entries (see obligation-graph.schema.json)."},
+    "source_identities": {"type": "array", "items": {"type": "object"}},
+    "independence_groups": {"type": "array", "items": {"type": "string"}},
+    "access_levels": {"type": "array", "items": {"type": "string"}},
+    "calculations_required": {"type": "array", "items": {"type": "string"}},
+    "calculations_completed": {"type": "array", "items": {"type": "string"}},
+    "competing_explanations": {"type": "array", "items": {"type": "object"}},
+    "negative_evidence_search_state": {"type": "object"},
+    "unresolved_residues": {"type": "array", "items": {"type": "string"}},
+    "blockers": {"type": "array", "items": {"type": "object"}},
+    "budgets": {
+      "type": "object",
+      "properties": {
+        "time": {"type": "string"},
+        "compute": {"type": "string"},
+        "tool": {"type": "string"},
+        "human_attention": {"type": "string"}
+      }
+    },
+    "current_diagnosis": {"type": "object", "description": "Output of the gap diagnosis engine (see gap-codes.schema.json)."},
+    "candidate_next_actions": {"type": "array", "items": {"type": "object"}},
+    "selected_action": {"type": "object", "description": "Selected action plus selection rationale."},
+    "observations": {"type": "array", "items": {"type": "object"}, "description": "Observations returned by the executor."},
+    "information_delta": {
+      "type": "object",
+      "description": "Q13 IterationDelta-compatible record.",
+      "properties": {
+        "delta_status": {"type": "string", "enum": ["INFORMATION_GAIN", "NO_INFORMATION_GAIN", "ATTRACTOR_LOOP", "RUMINATION_RISK", "PARTIAL_DELTA"]},
+        "required_response": {"type": "string", "enum": ["continue", "stop", "branch_question", "seek_external_evidence", "run_discriminating_test", "preserve_residue", "downgrade_claim_ceiling"]}
+      }
+    },
+    "stop_conditions": {"type": "object"},
+    "branch_conditions": {"type": "object"},
+    "rollback_conditions": {"type": "object"},
+    "escalation_conditions": {"type": "object"},
+    "provenance": {"type": "object"},
+    "versions": {"type": "object"},
+    "event_log": {
+      "type": "array",
+      "description": "Append-only immutable event history. Each event appends on every transition and every executor return.",
+      "items": {
+        "type": "object",
+        "required": ["event_id", "timestamp", "type", "payload_sha256"],
+        "properties": {
+          "event_id": {"type": "string"},
+          "timestamp": {"type": "string"},
+          "type": {"type": "string", "enum": ["state_transition", "observe", "diagnose", "plan", "dispatch", "record_result", "review", "pause", "resume", "stop", "reopen", "replay"]},
+          "actor": {"type": "string"},
+          "payload_sha256": {"type": "string"}
+        }
+      }
+    }
+  }
+}

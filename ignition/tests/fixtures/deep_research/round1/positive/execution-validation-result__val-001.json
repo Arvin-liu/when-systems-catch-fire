@@ -1,0 +1,18 @@
+{
+  "result_id": "val-001",
+  "packet_id": "pkt-001",
+  "checks": [
+    {
+      "command": "python3 -m unittest tests.test_deep_research_round1",
+      "exit_code": 0,
+      "passed": true,
+      "output_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    }
+  ],
+  "all_passed": true,
+  "validated_by": "exec-generic-001",
+  "model_telemetry": {
+    "family": "generic-instruct"
+  },
+  "validated_at": "2026-08-01T00:00:00Z"
+}

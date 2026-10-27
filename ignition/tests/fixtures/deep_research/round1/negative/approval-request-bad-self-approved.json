@@ -1,0 +1,10 @@
+{
+  "_record": "approval-request",
+  "_expect": "self_approved is a prohibited key",
+  "request_id": "req-X",
+  "episode_id": "ep-X",
+  "requested_by": "exec-X",
+  "action_code": "ESCALATE_TO_GPT_OWNER",
+  "reason": "need decision",
+  "self_approved": true
+}

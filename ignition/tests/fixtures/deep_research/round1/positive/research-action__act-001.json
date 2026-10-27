@@ -1,0 +1,8 @@
+{
+  "action_id": "act-001",
+  "action_code": "SEARCH_PRIMARY_SOURCE",
+  "objective": "locate primary RCTs on sleep timing",
+  "prohibited_claims": [
+    "do not assert effect size"
+  ]
+}

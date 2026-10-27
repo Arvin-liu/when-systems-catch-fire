@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arvin-liu.github.io/when-systems-catch-fire/schemas/research-os/gap-codes.schema.json",
+  "title": "Epistemic Gap Diagnosis",
+  "description": "Validates the deterministic diagnosis output of the gap diagnosis engine. Each finding cites a gap code from data/research-os/gap-codes.json, supplies evidence, severity, the affected claim/obligation, and candidate correcting actions. The engine must not rely on regex-only classification of free prose as its primary capability.",
+  "type": "object",
+  "required": ["episode_id", "findings"],
+  "properties": {
+    "episode_id": {"type": "string"},
+    "engine_version": {"type": "string"},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gap_code", "severity", "evidence", "affected", "correcting_actions"],
+        "properties": {
+          "gap_code": {
+            "type": "string",
+            "enum": ["PRIMARY_SOURCE_MISSING", "FULL_TEXT_MISSING", "METHODS_OR_SUPPLEMENT_MISSING", "SOURCE_DEPENDENCE_HIGH", "ACCESS_SCOPE_UNVERIFIED", "READING_TIME_SCOPE_INCONSISTENT", "NUMERIC_CLAIM_NOT_RECOMPUTED", "RAW_DATA_OR_CODE_MISSING", "OUTCOME_DEFINITION_CONFLICT", "OBJECT_OR_DENOMINATOR_MISMATCH", "POPULATION_SCOPE_MISMATCH", "TEMPORAL_SCOPE_MISMATCH", "CAUSAL_IDENTIFICATION_MISSING", "MECHANISM_ALTERNATIVES_UNTESTED", "NEGATIVE_EVIDENCE_NOT_SEARCHED", "REPLICATION_STATUS_UNKNOWN", "ADVERSARIAL_REVIEW_MISSING", "CLAIM_EXCEEDS_EVIDENCE", "NO_INFORMATION_GAIN", "ATTRACTOR_LOOP_RISK", "PREMATURE_COMPLETION", "UNAUTHORIZED_EARLY_CLOSEOUT", "HUMAN_JUDGMENT_REQUIRED", "TIMESTAMP_BATCH_NOT_PROOF_OF_READING"]
+          },
+          "severity": {"type": "string", "enum": ["INFO", "LOW", "MEDIUM", "HIGH", "CRITICAL"]},
+          "evidence": {"type": "string", "description": "Concrete evidence for the finding; not a regex match alone."},
+          "affected": {"type": "string", "description": "Affected claim id, obligation id or episode."},
+          "correcting_actions": {"type": "array", "items": {"type": "string"}, "description": "Action codes from the action vocabulary."},
+          "detection_method": {"type": "string", "description": "How the gap was detected (structured inspection, not free-text regex)."}
+        }
+      }
+    }
+  }
+}

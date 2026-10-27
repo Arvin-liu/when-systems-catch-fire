@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/claim-evidence-record",
+  "title": "ClaimEvidenceRecord",
+  "description": "A material claim and its supporting evidence relation. Fails closed: claim_text + claim_ceiling + source_relations required; ceiling must be a valid Research OS ceiling.",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "claim_text",
+    "claim_ceiling",
+    "source_relations"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "claim_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "enum": [
+        "SPECULATIVE",
+        "TENTATIVE",
+        "QUALIFIED",
+        "BOUNDED_STRONG",
+        "NOT_ASSERTED"
+      ]
+    },
+    "supporting_obligations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_relations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "entailed_by_source": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "faithfulness": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "groundedness": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "CANDIDATE",
+        "UNDER_REVIEW",
+        "ACCEPTED",
+        "REJECTED"
+      ]
+    }
+  }
+}

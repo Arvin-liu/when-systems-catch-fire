@@ -1,0 +1,18 @@
+{
+  "claim_id": "claim-1",
+  "claim_text": "Later sleep midpoint is associated with slower same-day cognitive recovery in adults.",
+  "claim_ceiling": "QUALIFIED",
+  "source_relations": [
+    {
+      "source_id": "src-RCT-001",
+      "supports": true
+    }
+  ],
+  "supporting_obligations": [
+    "obl-PRIMARY"
+  ],
+  "entailed_by_source": true,
+  "faithfulness": 0.8,
+  "groundedness": 0.75,
+  "status": "UNDER_REVIEW"
+}

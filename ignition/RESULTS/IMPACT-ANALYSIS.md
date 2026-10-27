@@ -77,6 +77,10 @@
 |`docs/classic_problem_ids.md`|3|0|否|
 |`docs/classic_problems_benchmark.md`|7|0|否|
 |`docs/data_integration.md`|13|0|否|
+|`docs/deep-research/ARCHITECTURE.md`|12|0|否|
+|`docs/deep-research/EVALUATION.md`|8|0|否|
+|`docs/deep-research/OPERATOR-GUIDE.md`|4|0|否|
+|`docs/deep-research/STOP-ALGORITHM.md`|18|0|否|
 |`docs/discipline_kernel_pilot.md`|18|0|否|
 |`docs/editorial/MANIFEST.md`|0|0|是|
 |`docs/editorial/QUALITY-REPORT.md`|0|0|是|
@@ -324,6 +328,14 @@
 |`docs/publication/zhiyuan-writing-method.md`|65|0|否|
 |`docs/publication/zhiyuan-writing-showcase.md`|8|0|否|
 |`docs/publication_risk_checklist.md`|56|0|否|
+|`docs/research-os/EXISTING-CAPABILITY-MAP.md`|13|0|否|
+|`docs/research-os/GPT-OWNER-REVIEW-PACKET.md`|6|0|否|
+|`docs/research-os/OPERATING-GUIDE.md`|14|0|否|
+|`docs/research-os/R1-INCIDENT-REPLAY.md`|16|0|否|
+|`docs/research-os/R2-AI-CODING-LOOP.md`|14|0|否|
+|`docs/research-os/RESEARCH-OS-ARCHITECTURE.md`|28|0|否|
+|`docs/research-os/REVIEW-GATES.md`|14|0|否|
+|`docs/research-os/queue-runtime/ROUND-0-CHECKPOINT.md`|15|0|否|
 |`docs/roadmap_v0.2.md`|10|0|否|
 |`docs/storytelling_backlog_ids.md`|12|0|否|
 |`docs/storytelling_case_backlog.md`|8|0|否|

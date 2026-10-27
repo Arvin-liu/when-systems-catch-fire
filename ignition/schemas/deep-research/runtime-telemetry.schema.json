@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/runtime-telemetry",
+  "title": "RuntimeTelemetry",
+  "description": "Telemetry-only record. Model/provider names appear here as telemetry ONLY and must never be interpreted as a control input or required dependency.",
+  "type": "object",
+  "required": [
+    "telemetry_id",
+    "episode_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "telemetry_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "model_telemetry": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "provider_telemetry": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "duration_ms": {
+      "type": "number"
+    },
+    "token_counts": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "step_count": {
+      "type": "integer"
+    },
+    "captured_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "result_id": "res-001",
+  "episode_id": "ep-SLEEP-TIMING",
+  "final_state": "CANDIDATE_COMPLETE",
+  "brief_id": "brief-SLEEP-TIMING",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "claim_ceiling": "QUALIFIED"
+    }
+  ],
+  "source_records": [
+    {
+      "source_id": "src-RCT-001"
+    }
+  ],
+  "obligations_status": {
+    "SATISFIED": 1,
+    "OPEN": 0
+  },
+  "sufficiency_decision": {
+    "decision": "STOP_SUFFICIENT_CANDIDATE"
+  },
+  "report_ref": "reports/.../sleep-timing.md",
+  "machine_trace_ref": "data/.../sleep-timing-trace.jsonl"
+}

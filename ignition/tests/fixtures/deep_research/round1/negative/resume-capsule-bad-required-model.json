@@ -1,0 +1,19 @@
+{
+  "_record": "resume-capsule",
+  "_expect": "required_model is a prohibited brand-name dependency",
+  "capsule_id": "cap-X",
+  "episode_id": "ep-X",
+  "objective": "resume",
+  "frozen_brief_ref": "brief-X",
+  "completed_summary": "done",
+  "pending_tasks": [
+    "t1"
+  ],
+  "known_blockers": [],
+  "required_capabilities": [
+    "READ_FILE"
+  ],
+  "resume_point_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "validation_state": {},
+  "required_model": "claude-opus"
+}

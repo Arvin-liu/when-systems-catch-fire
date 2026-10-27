@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-sufficiency-decision",
+  "title": "ResearchSufficiencyDecision",
+  "description": "Transparent stopping decision. Fails closed: decision required; if STOP_SUFFICIENT_CANDIDATE, hard_gates_passed must be true.",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "episode_id",
+    "decision"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "decision_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "hard_gates_passed": {
+      "type": "boolean"
+    },
+    "failed_hard_gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sufficiency_vector": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "CONTINUE_RESEARCH",
+        "STOP_SUFFICIENT_CANDIDATE",
+        "STOP_INSUFFICIENT_EVIDENCE",
+        "PAUSE_BUDGET_RESUMABLE",
+        "BLOCKED_WITH_EVIDENCE",
+        "ESCALATE_GPT_OWNER"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "deterministic_inputs": {
+      "type": "boolean"
+    },
+    "model_proposed": {
+      "type": "boolean"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "decision"
+        ],
+        "properties": {
+          "decision": {
+            "const": "STOP_SUFFICIENT_CANDIDATE"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "hard_gates_passed"
+        ],
+        "properties": {
+          "hard_gates_passed": {
+            "const": true
+          }
+        }
+      }
+    }
+  ]
+}

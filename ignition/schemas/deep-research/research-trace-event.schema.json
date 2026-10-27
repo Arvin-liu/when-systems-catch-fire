@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/research-trace-event",
+  "title": "ResearchTraceEvent",
+  "description": "Append-only, SHA-256 identified event extending the Research OS kernel event log.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp",
+    "type",
+    "actor",
+    "payload_sha256"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "actor": {
+      "type": "string"
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "round": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "phase": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

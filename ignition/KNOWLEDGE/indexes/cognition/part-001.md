@@ -2214,6 +2214,11 @@
   - 可搜索名称：NFC-36cdb9b494e8a7a1 / elif validated_completion is None:
   - 来源：`agent_federation/live_state_dimensions.py`
   - 依赖：—；被引用：—
+- [Episode decision distribution:** CONTINUE_RESEARCH 9, STOP_SUFFICIENT_](../../../docs/deep-research/EVALUATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef8dcc24a98a760e / Episode decision distribution:** CONTINUE_RESEARCH 9, STOP_SUFFICIENT_
+  - 来源：`docs/deep-research/EVALUATION.md`
+  - 依赖：—；被引用：—
 - [errors.append\("stop-on-first-validated-completion policy is missing"\)](../../../agent_federation/executor_admission_contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-842f61ce7997cd98 / errors.append\("stop-on-first-validated-completion policy is missing"\)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9c90ab69168e7c90 / G_δ：跨代际普遍性不可判定（E2 pending）。保留 pending。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：—；被引用：—
-- [Gateway, inspect OpenClaw state, copy OpenClaw memory, or expose OpenClaw's](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8767559c777a088a / Gateway, inspect OpenClaw state, copy OpenClaw memory, or expose OpenClaw's
-  - 来源：`agent_federation/adapters/openclaw.py`
   - 依赖：—；被引用：—

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deep-research/0.1/executor-observation",
+  "title": "ExecutorObservation",
+  "description": "Executor return under contract. Reuses the Research OS executor-return contract: required fields plus prohibition of self_approved / mark_episode_complete / claim_ceiling / owner_acceptance / round_complete. An executor may never self-approve, mark an episode/round complete, raise a claim ceiling, or assert owner acceptance.",
+  "type": "object",
+  "required": [
+    "observation_id",
+    "action_id",
+    "observations",
+    "source_identities",
+    "access_level",
+    "provenance",
+    "timestamps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "observation_id": {
+      "type": "string"
+    },
+    "action_id": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "source_identities": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "DISCOVERED",
+        "OPENED",
+        "FULL_TEXT",
+        "METHODS_ONLY",
+        "ABSTRACT_ONLY",
+        "METADATA_ONLY",
+        "COMPUTED",
+        "NONE"
+      ]
+    },
+    "calculation_result": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "timestamps": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "self_approved": {
+      "type": "null"
+    },
+    "mark_episode_complete": {
+      "type": "null"
+    },
+    "claim_ceiling": {
+      "type": "null"
+    },
+    "owner_acceptance": {
+      "type": "null"
+    },
+    "round_complete": {
+      "type": "null"
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "self_approved"
+            ]
+          },
+          {
+            "required": [
+              "mark_episode_complete"
+            ]
+          },
+          {
+            "required": [
+              "claim_ceiling"
+            ]
+          },
+          {
+            "required": [
+              "owner_acceptance"
+            ]
+          },
+          {
+            "required": [
+              "round_complete"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

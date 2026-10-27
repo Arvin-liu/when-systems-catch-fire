@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://arvin-liu.github.io/when-systems-catch-fire/schemas/research-os/obligation-graph.schema.json",
+  "title": "Claim and Evidence Obligation Graph",
+  "description": "Validates the claim/evidence obligation graph. Each material claim carries obligations drawn from the classes in data/research-os/obligation-classes.json. An obligation status of WAIVED_WITH_REASON can NEVER raise a claim ceiling.",
+  "type": "object",
+  "required": ["episode_id", "claims", "obligations"],
+  "properties": {
+    "episode_id": {"type": "string"},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_id", "text", "claim_ceiling"],
+        "properties": {
+          "claim_id": {"type": "string"},
+          "text": {"type": "string"},
+          "claim_ceiling": {"type": "string", "enum": ["SPECULATIVE", "TENTATIVE", "QUALIFIED", "BOUNDED_STRONG", "NOT_ASSERTED"]},
+          "source_layer": {"type": "string", "description": "L0-L6 anchor."}
+        }
+      }
+    },
+    "obligations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["obligation_id", "claim_id", "class", "status"],
+        "properties": {
+          "obligation_id": {"type": "string"},
+          "claim_id": {"type": "string"},
+          "class": {
+            "type": "string",
+            "enum": ["PRIMARY_SOURCE", "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT", "DATA_OR_TABLE_ACCESS", "NUMERIC_RECOMPUTATION", "CONSTRUCT_AND_OUTCOME_DEFINITION", "SOURCE_INDEPENDENCE_CHECK", "REPLICATION_NULL_CONTRADICTORY", "CAUSAL_IDENTIFICATION", "POPULATION_JURISDICTION_TIME_SCOPE", "MECHANISM_ALTERNATIVE", "ADVERSE_EFFECT_COST_HARMED", "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"]
+          },
+          "status": {"type": "string", "enum": ["OPEN", "PARTIAL", "SATISFIED", "WAIVED_WITH_REASON", "BLOCKED_WITH_EVIDENCE", "NOT_APPLICABLE"]},
+          "waived_reason": {"type": "string", "description": "Required when status is WAIVED_WITH_REASON; a waiver cannot raise claim_ceiling."},
+          "evidence_refs": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

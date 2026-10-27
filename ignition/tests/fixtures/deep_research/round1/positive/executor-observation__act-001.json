@@ -1,0 +1,26 @@
+{
+  "observation_id": "obs-001",
+  "action_id": "act-001",
+  "observations": [
+    "found 3 RCTs matching criteria"
+  ],
+  "source_identities": [
+    {
+      "source_id": "src-RCT-001",
+      "access_level": "FULL_TEXT"
+    }
+  ],
+  "access_level": "FULL_TEXT",
+  "calculation_result": null,
+  "errors": [],
+  "provenance": [
+    {
+      "step": "search",
+      "tool": "web"
+    }
+  ],
+  "timestamps": {
+    "started": "2026-02-01T00:00:00Z",
+    "ended": "2026-02-01T00:05:00Z"
+  }
+}
