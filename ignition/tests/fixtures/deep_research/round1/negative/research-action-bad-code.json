@@ -1,0 +1,6 @@
+{
+  "_record": "research-action",
+  "_expect": "action_code must be a valid kernel action code enum",
+  "action_id": "act-X",
+  "action_code": "FLY_TO_MOON"
+}

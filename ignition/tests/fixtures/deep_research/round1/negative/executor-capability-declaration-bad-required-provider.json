@@ -1,0 +1,14 @@
+{
+  "_record": "executor-capability-declaration",
+  "_expect": "required_provider is a prohibited brand-name dependency",
+  "declaration_id": "decl-X",
+  "executor_id": "exec-X",
+  "declared_capabilities": [
+    {
+      "capability": "READ_FILE",
+      "scope": "*",
+      "permission": "ALLOWED"
+    }
+  ],
+  "required_provider": "OpenAI"
+}

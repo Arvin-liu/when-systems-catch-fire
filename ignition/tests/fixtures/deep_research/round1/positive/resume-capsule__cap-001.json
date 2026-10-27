@@ -1,0 +1,28 @@
+{
+  "capsule_id": "cap-001",
+  "episode_id": "ep-001",
+  "objective": "Determine whether provider-agnostic runtime lowers claim-ceiling error rate.",
+  "frozen_brief_ref": "brief-001",
+  "completed_summary": "Froze question, gathered 12 primary sources, ran numeric recomputation on 3 outcomes.",
+  "pending_tasks": [
+    "challenge claim with null/contradictory results",
+    "draft candidate packet"
+  ],
+  "known_blockers": [
+    "awaiting owner decision on ceiling for meta-claim"
+  ],
+  "required_capabilities": [
+    "READ_FILE",
+    "COMPUTE_NUMERIC",
+    "RUN_TEST"
+  ],
+  "resume_point_ref": "runtime/task115-agent-agnostic-research-runtime-intake-r1-20260804",
+  "resume_point_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "validation_state": {
+    "last_passed": true,
+    "failed_hard_gates": []
+  },
+  "model_telemetry": {
+    "family": "generic-instruct"
+  }
+}

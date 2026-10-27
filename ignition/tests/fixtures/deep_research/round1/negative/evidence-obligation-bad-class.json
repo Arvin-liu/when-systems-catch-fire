@@ -1,0 +1,8 @@
+{
+  "_record": "evidence-obligation",
+  "_expect": "obligation_class must be a valid Research OS obligation class enum",
+  "obligation_id": "obl-X",
+  "claim_id": "claim-X",
+  "obligation_class": "NONSENSE",
+  "status": "OPEN"
+}

@@ -1,0 +1,37 @@
+{
+  "campaign": {
+    "stop_conditions": {
+      "queue_empty_stops": true
+    }
+  },
+  "items": [
+    {
+      "queue_item_id": "cand-A",
+      "status": "ACTIVE",
+      "topic_candidate": {
+        "candidate_id": "cand-A",
+        "proposed_question": "Q",
+        "source_of_seed": "PROJECT_GAP",
+        "proposed_strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+        "status": "CANDIDATE"
+      },
+      "episode_id": "ep-A",
+      "lease": {
+        "owner": "workbuddy",
+        "expiry": "2020-01-01T00:00:00Z"
+      },
+      "checkpoint_commit": "trace-ep-A"
+    }
+  ],
+  "now_iso": "2026-01-01T00:00:00Z",
+  "expect": {
+    "op": "recover",
+    "recovered_ids": [
+      "cand-A"
+    ],
+    "preserves_checkpoint": true
+  },
+  "id": "r5-017-crash-resume",
+  "kind": "queue",
+  "description": "ACTIVE item with an expired lease must resume to QUEUED, preserving checkpoint."
+}

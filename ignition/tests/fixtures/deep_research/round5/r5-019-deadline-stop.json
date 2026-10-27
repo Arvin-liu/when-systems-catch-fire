@@ -1,0 +1,29 @@
+{
+  "campaign": {
+    "stop_conditions": {
+      "deadline": "2020-01-01T00:00:00Z"
+    }
+  },
+  "items": [
+    {
+      "queue_item_id": "cand-A",
+      "status": "COMPLETED",
+      "topic_candidate": {
+        "candidate_id": "cand-A",
+        "proposed_question": "Q",
+        "source_of_seed": "PROJECT_GAP",
+        "proposed_strategy_pack": "SYSTEMATIC_EVIDENCE_SYNTHESIS",
+        "status": "CANDIDATE"
+      }
+    }
+  ],
+  "now_iso": "2026-01-01T00:00:00Z",
+  "expect": {
+    "op": "should_stop",
+    "stopped": true,
+    "reason": "DEADLINE"
+  },
+  "id": "r5-019-deadline-stop",
+  "kind": "queue",
+  "description": "A past deadline stops the campaign."
+}

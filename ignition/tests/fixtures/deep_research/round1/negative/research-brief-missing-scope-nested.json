@@ -1,0 +1,14 @@
+{
+  "_record": "research-brief",
+  "_expect": "scope requires population/object/timeframe/outcomes",
+  "brief_id": "brief-X",
+  "question_version": "v1",
+  "question": "q",
+  "scope": {
+    "population": "p",
+    "object": "o",
+    "timeframe": "t"
+  },
+  "strategy_pack": "sp",
+  "frozen": true
+}

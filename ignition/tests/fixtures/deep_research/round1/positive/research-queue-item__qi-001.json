@@ -1,0 +1,17 @@
+{
+  "queue_item_id": "qi-001",
+  "status": "ACTIVE",
+  "topic_candidate": {
+    "candidate_id": "cand-SLEEP-TIMING"
+  },
+  "episode_id": "ep-SLEEP-TIMING",
+  "lease": {
+    "owner": "workbuddy",
+    "expiry": "2026-02-02T00:00:00Z",
+    "claim_id": "lease-001"
+  },
+  "checkpoint_commit": "abc123",
+  "priority_factors": {
+    "materiality": 0.8
+  }
+}
