@@ -1,0 +1,207 @@
+{
+  "atlas_id": "PUB-ATLAS-20260712",
+  "generated_from": "bottom-up scan of functions, cases, protocols, stories, collisions, book traces, and research artifacts",
+  "scope_note": "This atlas is intentionally non-exhaustive in a closed sense: it enumerates independently bounded publication directions observed in the current corpus, but does not claim the direction space is finished.",
+  "licenses": {
+    "content_default": "CC BY-NC-SA 4.0",
+    "software_scope": "separate software license scope for scripts and frontend code",
+    "root_license_changed": false
+  },
+  "story_57": {
+    "note_id": "1915380359740162928",
+    "title": "第57期故事｜当一个名字变成接口",
+    "republish": false,
+    "verification": "existing Get note published and read back; not republished in 069"
+  },
+  "directions": [
+    {
+      "id": "PUB-01",
+      "title": "退出权与认同验证",
+      "forms": ["series", "longform", "book"],
+      "boundary": "Only covers exit rights, acceptance, lock-in, and identity validation.",
+      "evidence": [
+        "统一案例总表/C-1",
+        "统一案例总表/C-11",
+        "统一案例总表/C-20",
+        "统一案例总表/C-38",
+        "统一案例总表/C-50",
+        "统一案例总表/C-70"
+      ]
+    },
+    {
+      "id": "PUB-02",
+      "title": "门槛、遮蔽与不可逆退化",
+      "forms": ["monograph", "method"],
+      "boundary": "Only covers threshold, shading, collapse, decoherence, and irreversibility.",
+      "evidence": [
+        "统一函数总表/D-31",
+        "统一函数总表/D-33",
+        "统一函数总表/D-41",
+        "统一函数总表/D-118",
+        "统一函数总表/D-120",
+        "统一函数总表/D-128"
+      ]
+    },
+    {
+      "id": "PUB-03",
+      "title": "AI、认知与自主意识",
+      "forms": ["series", "future-facing book"],
+      "boundary": "Only covers AI, ε installation, multi-track cognition, autonomy, and dispatch.",
+      "evidence": [
+        "统一案例总表/C-186",
+        "统一案例总表/C-189",
+        "统一案例总表/C-191",
+        "统一函数总表/D-95",
+        "统一函数总表/D-125",
+        "统一函数总表/D-130"
+      ]
+    },
+    {
+      "id": "PUB-04",
+      "title": "历史制度与文明转型",
+      "forms": ["book", "essay series"],
+      "boundary": "Only covers concrete historical transitions and institutional validation.",
+      "evidence": [
+        "统一案例总表/C-19",
+        "统一案例总表/C-26",
+        "统一案例总表/C-32",
+        "统一案例总表/C-44",
+        "统一案例总表/C-54",
+        "统一案例总表/C-68"
+      ]
+    },
+    {
+      "id": "PUB-05",
+      "title": "经济、财富与决策",
+      "forms": ["applied theory", "reader guide"],
+      "boundary": "Only covers wealth, Kelly, risk, and exit-cost decision systems.",
+      "evidence": [
+        "统一函数总表/D-109",
+        "统一函数总表/D-126",
+        "统一函数总表/D-160",
+        "统一函数总表/D-169",
+        "统一案例总表/C-162",
+        "统一案例总表/C-184"
+      ]
+    },
+    {
+      "id": "PUB-06",
+      "title": "函数族与元协议",
+      "forms": ["research manual", "governance"],
+      "boundary": "Only covers functions, protocols, layers, and writing standards.",
+      "evidence": [
+        "统一函数总表/T1",
+        "统一函数总表/T23",
+        "统一函数总表/D-114",
+        "统一函数总表/D-141",
+        "统一函数总表/D-149",
+        "docs/README.md"
+      ]
+    },
+    {
+      "id": "PUB-07",
+      "title": "语言、叙事与故事化转写",
+      "forms": ["story collection", "long talk script"],
+      "boundary": "Only covers narrative transformation and story transfer, not the original proof work.",
+      "evidence": [
+        "新故事/INDEX.md",
+        "outputs/stories",
+        "data/narrative-output-layer.schema.json"
+      ]
+    },
+    {
+      "id": "PUB-08",
+      "title": "书稿验证与碰撞审定",
+      "forms": ["review log", "book list"],
+      "boundary": "Only covers book-candidate review, collision, and audit artifacts.",
+      "evidence": [
+        "outputs/book-collisions",
+        "data/meta-protocols/book-validation-cases-20260709.json"
+      ]
+    },
+    {
+      "id": "PUB-09",
+      "title": "具体机制案例库",
+      "forms": ["case collection"],
+      "boundary": "Only covers readable mechanism cases, not the full theory stack.",
+      "evidence": [
+        "统一案例总表/C-120",
+        "统一案例总表/C-131",
+        "统一案例总表/C-145",
+        "统一案例总表/C-175",
+        "统一案例总表/C-203"
+      ]
+    },
+    {
+      "id": "PUB-10",
+      "title": "物理、数学与统一路径",
+      "forms": ["specialized research book"],
+      "boundary": "Only covers physics, mathematics, and unification / proof-oriented entries.",
+      "evidence": [
+        "统一函数总表/T17",
+        "统一函数总表/T34",
+        "统一函数总表/T39",
+        "统一函数总表/D-173",
+        "统一函数总表/D-175",
+        "统一函数总表/D-179"
+      ]
+    },
+    {
+      "id": "PUB-11",
+      "title": "社会结构与治理边界",
+      "forms": ["social theory", "policy"],
+      "boundary": "Only covers organizations, power, institutions, governance, and information gates.",
+      "evidence": [
+        "统一函数总表/D-25",
+        "统一函数总表/D-38",
+        "统一函数总表/D-142",
+        "统一函数总表/D-146",
+        "统一函数总表/D-148",
+        "统一案例总表/C-40"
+      ]
+    },
+    {
+      "id": "PUB-12",
+      "title": "碰撞成果与验证链路",
+      "forms": ["evidence map", "research report"],
+      "boundary": "Only covers collision outputs, validation routes, and confidence traces.",
+      "evidence": [
+        "outputs/collisions",
+        "outputs/book-collisions",
+        "outputs/research"
+      ]
+    },
+    {
+      "id": "PUB-13",
+      "title": "读者入口与检索前端",
+      "forms": ["static frontend", "MVP"],
+      "boundary": "Only covers browsing, filtering, and evidence linking.",
+      "evidence": [
+        "data/narrative-output-layer.schema.json",
+        "data/publication-atlas-20260712.json"
+      ]
+    },
+    {
+      "id": "PUB-14",
+      "title": "《铸华夏》专题方向",
+      "forms": ["single-direction book", "subseries"],
+      "boundary": "Must stay one direction among many, not the center of the atlas.",
+      "evidence": [
+        "统一案例总表/C-68",
+        "统一案例总表/C-70",
+        "统一案例总表/C-71",
+        "统一案例总表/C-19",
+        "统一案例总表/C-26"
+      ]
+    },
+    {
+      "id": "PUB-15",
+      "title": "Get 笔记发布与回读",
+      "forms": ["publication log"],
+      "boundary": "Only records existing publication facts; no republish in 069.",
+      "evidence": [
+        "note_id 1915380359740162928"
+      ]
+    }
+  ]
+}
