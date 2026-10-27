@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-noaa-n2o-source-surface-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_MINIMUM_SUFFICIENT_ROUTING_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T22:37:52Z",
+  "observed_at_utc": "2026-10-27T00:26:58Z",
   "candidate_tool_id": "research.compare_noaa_n2o_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-route-profile-r0.json",
@@ -42,7 +42,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "59af0baeb5a79c3795b6f586548335538ee1439cbeeeadea79a99b438be3c5a4"
+      "planner_output_sha256": "7a1b9193c31b3ad79e784c42cabca9aaad424678fc970d99b5ef01a008cf9efd"
     },
     {
       "scenario": "EXPLICIT_EXACT_HOST",
@@ -74,7 +74,7 @@
       "expected_rejections": [],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "624a8ab8034658f73b1d2a2dbcbe605dccbbb094270f0948ea1638ab854ca5d5"
+      "planner_output_sha256": "f01deb4c30a823e7170070f5d7ae19aa30e2eeb7db079493175d27caa59db1ca"
     },
     {
       "scenario": "EXPLICIT_HOST_MISSING",
@@ -107,7 +107,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "7f389f6f2ba818a76316edb5e669b422fec5c7e5f4997e45fd65da3cd6568c34"
+      "planner_output_sha256": "61b4a0be2923571d7eed083487e52577849d56b77c684d238857c0a99da692d6"
     },
     {
       "scenario": "OVERBROAD_ALLOWLIST",
@@ -142,7 +142,7 @@
       "expected_rejections": [],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "6b1a963d674e43ad0c1e01e21f6f3e117c327633560051a211facae6c66a30c4"
+      "planner_output_sha256": "c4e6d553ef504fd95c9f391e918910f958b33dd12a7e3c3c7a449a79b53fa588"
     }
   ],
   "summary": {

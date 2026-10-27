@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-noaa-ch4-source-surface-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T22:44:00Z",
+  "observed_at_utc": "2026-10-27T00:26:58Z",
   "candidate_tool_id": "research.compare_noaa_ch4_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-route-profile-r0.json",
@@ -298,6 +298,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.lookup_openalex_work_metadata",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -404,12 +408,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+          "experimental_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "10eba35b97f5ab041938571f3110ee9d58b25caac6de7dc0d5065f3c935ecf7c",
+      "planner_output_sha256": "f3909cae038e4b33ba77686f9dd1cfe5202b1d582348709d6b065127e5569679",
       "decision": "INCOMPLETE"
     },
     {
@@ -740,6 +744,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.lookup_openalex_work_metadata",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -846,12 +854,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+          "experimental_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "e1ee3f3230c5db6f5638910eb14d2d102b4ecbe6f54b460e28daac6eaff947ce",
+      "planner_output_sha256": "918db2e361b7cb6fbbb65eba169e07f119dba2fdad12243c79d1f6d2295b5889",
       "decision": "COMPLETE"
     },
     {
@@ -1139,6 +1147,10 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
           {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
             "tool_id": "research.lookup_openalex_work_metadata",
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           },
@@ -1245,12 +1257,12 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+          "experimental_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38"
         }
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "1a0f120390fb89c114274a82bcb12d24898bddee796d8659ec40ff26e17b86ed",
+      "planner_output_sha256": "3c6f1992b84388436f6953b0a69bdd53ed271d7ee3a21c62742be307411a6b86",
       "decision": "INCOMPLETE"
     }
   ],
@@ -1271,19 +1283,25 @@
       "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
       "superseded_observed_at_utc": "2026-10-26T21:59:28Z",
       "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "cd534a2b406dfc02b69c3c955e6453a9849b7ad7",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
+      "replayed_at_utc": "2026-10-27T00:26:58Z"
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T22:44:00Z",
+    "replayed_at_utc": "2026-10-27T00:26:58Z",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "candidate_invoked": false,
-    "replay_result_sha256": "3651d61c47242feb1f8ead2d891e7ef3d5d563d537d4d4f9e32737c5548f4301",
-    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+    "replay_result_sha256": "295f310005061c18432dfcebc4636ba63269a95a48d96dd85bfac29fdb9ed27d",
+    "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   }
 }
