@@ -1,0 +1,14 @@
+{
+  "task_id": "merge-bounded-multi-index-topic-search-results-with-title-doi-review",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+  ],
+  "required_outputs": [
+    "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+    "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

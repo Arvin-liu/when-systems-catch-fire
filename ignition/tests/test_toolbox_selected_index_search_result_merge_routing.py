@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 import unittest
 
 
@@ -106,14 +107,16 @@ class SelectedIndexSearchResultMergeRoutingTests(unittest.TestCase):
         self.assertEqual([row["tool_id"] for row in selected_plan["selected_tools"]], [TOOL_ID])
         self.assertFalse(evidence["selected_execution"]["execution_authorized_by_route_planner"])
 
-        source_path = IGNITION_ROOT / "tools/toolbox_merge_selected_index_search_results.py"
-        process = subprocess.run(
-            [sys.executable, "-B", str(source_path), "--stdin"],
-            input=ROUTED_INPUT_PATH.read_bytes(),
-            capture_output=True,
-            cwd=REPO_ROOT,
-            check=False,
-        )
+        with tempfile.TemporaryDirectory(prefix="ignition-merge-r0-") as temporary_dir:
+            historical_source_path = Path(temporary_dir) / "toolbox_merge_selected_index_search_results.py"
+            historical_source_path.write_bytes(historical_tool)
+            process = subprocess.run(
+                [sys.executable, "-B", str(historical_source_path), "--stdin"],
+                input=historical_input,
+                capture_output=True,
+                cwd=REPO_ROOT,
+                check=False,
+            )
         self.assertEqual(process.returncode, evidence["selected_execution"]["exit_code"])
         self.assertEqual(hashlib.sha256(process.stdout).hexdigest(), evidence["selected_execution"]["output_sha256"])
         self.assertEqual(

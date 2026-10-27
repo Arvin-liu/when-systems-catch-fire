@@ -6,13 +6,14 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 
 TOOL_ID = "research.merge_selected_index_search_results"
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 MAX_INPUT_BYTES = 1_600_000
 MAX_RESULTS_PER_PROVIDER = 10
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+\Z", re.IGNORECASE)
@@ -39,8 +40,9 @@ PROVIDERS = {
 }
 CLAIM_CEILING = (
     "This offline tool summarizes caller-supplied bounded Crossref, OpenAlex, and Europe PMC search receipts. "
-    "Provider query languages, corpora, ranking, timestamps, and hit counts are not comparable. Only exact normalized "
-    "DOI equality creates a cross-index group; title similarity is never used. Results do not establish relevance, "
+    "Only exact normalized DOI equality creates a cross-index group. Identical normalized titles with distinct normalized "
+    "DOIs are surfaced as review-only candidates and are never merged. Title similarity is not used. Provider query "
+    "languages, corpora, ranking, timestamps, and hit counts are not comparable. Results do not establish relevance, "
     "completeness, source authenticity, article status, scientific support, or scientific validity."
 )
 
@@ -85,6 +87,13 @@ def _normalize_doi(value: Any) -> str | None:
     if not DOI_RE.fullmatch(candidate):
         return None
     return candidate.casefold()
+
+
+def _normalize_title(value: Any) -> str | None:
+    if not isinstance(value, str) or len(value) > 4096:
+        return None
+    normalized = " ".join(unicodedata.normalize("NFKC", value).casefold().split())
+    return normalized or None
 
 
 def _year(value: Any) -> int | None:
@@ -226,10 +235,14 @@ def merge(raw: bytes) -> dict[str, Any]:
     sources, exact_input = parse_request(raw)
     records = [record for source in sources for record in source["records"]]
     by_doi: dict[str, list[dict[str, Any]]] = {}
+    by_title_and_doi: dict[str, dict[str, list[dict[str, Any]]]] = {}
     for record in records:
         normalized = record["normalized_doi"]
         if normalized is not None:
             by_doi.setdefault(normalized, []).append(record)
+            normalized_title = _normalize_title(record["title"])
+            if normalized_title is not None:
+                by_title_and_doi.setdefault(normalized_title, {}).setdefault(normalized, []).append(record)
     clusters = []
     clustered: set[tuple[str, int]] = set()
     for doi in sorted(by_doi):
@@ -241,10 +254,32 @@ def merge(raw: bytes) -> dict[str, Any]:
             "members": [{"provider": row["provider"], "record_index": row["record_index"], "provider_record_id": row["provider_record_id"]} for row in members],
         })
         clustered.update((row["provider"], row["record_index"]) for row in members)
+    title_review_candidates = []
+    for normalized_title in sorted(by_title_and_doi):
+        doi_groups = by_title_and_doi[normalized_title]
+        if len(doi_groups) < 2:
+            continue
+        members = [
+            {
+                "provider": row["provider"],
+                "record_index": row["record_index"],
+                "provider_record_id": row["provider_record_id"],
+                "normalized_doi": doi,
+            }
+            for doi, rows in doi_groups.items()
+            for row in rows
+        ]
+        members.sort(key=lambda row: (list(PROVIDERS).index(row["provider"]), row["record_index"], row["normalized_doi"]))
+        title_review_candidates.append({
+            "normalized_title": normalized_title,
+            "normalized_dois": sorted(doi_groups),
+            "members": members,
+            "classification": "REVIEW_ONLY_NOT_MERGED",
+        })
     successful = sum(source["acquisition_status"] == "OK" for source in sources)
     status = "COMPLETE" if successful == len(sources) else ("PARTIAL" if successful else "FAILED")
     return {
-        "schema_version": "ignition.selected-index-search-result-merge-r0",
+        "schema_version": "ignition.selected-index-search-result-merge-r1",
         "tool_id": TOOL_ID,
         "tool_version": TOOL_VERSION,
         "status": status,
@@ -253,6 +288,8 @@ def merge(raw: bytes) -> dict[str, Any]:
         "exact_normalized_doi_clusters": clusters,
         "unclustered_record_count": len(records) - len(clustered),
         "match_basis": "EXACT_NORMALIZED_DOI_ONLY",
+        "review_warning_basis": "EXACT_NORMALIZED_TITLE_WITH_MULTIPLE_DOIS_NO_GROUPING",
+        "exact_title_different_doi_review_candidates": title_review_candidates,
         "input_sha256": hashlib.sha256(exact_input).hexdigest(),
         "claim_ceiling": CLAIM_CEILING,
     }

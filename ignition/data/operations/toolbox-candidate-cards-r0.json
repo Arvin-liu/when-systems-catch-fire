@@ -14228,8 +14228,8 @@
         "en": "Selected-index DOI result grouper",
         "zh": "多索引检索结果 DOI 聚组器"
       },
-      "description": "Merge two or three already captured Crossref, OpenAlex, or Europe PMC topic-search receipts offline. Preserve provider summaries and group records only by exact normalized DOI.",
-      "version": "0.1.0",
+      "description": "Merge bounded Crossref, OpenAlex, or Europe PMC topic-search receipts offline. Group only exact normalized DOI matches and flag identical normalized titles with multiple distinct DOIs for human review without merging them.",
+      "version": "0.2.0",
       "license": "BUSL-1.1",
       "maintainer": "Ignition repository maintainers; this field grants no provider, Owner, scientific, or publication authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
@@ -14240,14 +14240,14 @@
       "source_refs": [
         {
           "path": "ignition/tools/toolbox_merge_selected_index_search_results.py",
-          "role": "BOUNDED_OFFLINE_DOI_GROUPER"
+          "role": "OFFLINE_EXACT_DOI_GROUPER_AND_TITLE_DOI_REVIEW"
         },
         {
           "path": "ignition/schemas/operations/toolbox-selected-index-search-result-merge-input-r0.schema.json",
           "role": "INPUT_CONTRACT"
         },
         {
-          "path": "ignition/schemas/operations/toolbox-selected-index-search-result-merge-output-r0.schema.json",
+          "path": "ignition/schemas/operations/toolbox-selected-index-search-result-merge-output-r1.schema.json",
           "role": "OUTPUT_CONTRACT"
         },
         {
@@ -14279,11 +14279,11 @@
           "role": "REAL_CROSSREF_OPENALEX_RECEIPTS"
         },
         {
-          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r1.json",
           "role": "OFFLINE_REAL_TASK_OUTPUT"
         },
         {
-          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r0.json",
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r1.json",
           "role": "REAL_TASK_RECEIPT"
         },
         {
@@ -14291,16 +14291,12 @@
           "role": "INPUT_OUTPUT_SOURCE_BINDING"
         },
         {
-          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-c1-evidence-r0.json",
-          "role": "C1_FUNCTIONAL_SCOPE_AND_RETIREMENT_COMPARISON"
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-c1-evidence-r1.json",
+          "role": "C1_SAME_INPUT_EXTENSION_AND_RETIREMENT_COMPARISON"
         },
         {
-          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-profile-r0.json",
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-profile-r2.json",
           "role": "ROUTE_TASK_PROFILE"
-        },
-        {
-          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-evidence-r0.json",
-          "role": "DEFAULT_OFF_AND_ALLOWLIST_ROUTE_RESULTS"
         },
         {
           "path": "ignition/tools/toolbox_crossref_query_search.py",
@@ -14345,34 +14341,60 @@
         {
           "path": "ignition/schemas/operations/publication-metadata-comparison-output-r0.schema.json",
           "role": "KNOWN_DOI_COMPARATOR_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+          "role": "PRIOR_VERSION_REAL_TASK_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r0.json",
+          "role": "PRIOR_VERSION_REAL_TASK_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-profile-r0.json",
+          "role": "PRIOR_VERSION_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-evidence-r0.json",
+          "role": "PRIOR_VERSION_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r1.json",
+          "role": "PRIOR_VERSION_ROUTE_EXECUTION_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-routed-real-task-profile-r1.json",
+          "role": "PRIOR_VERSION_ROUTED_REAL_TASK_PROFILE"
         }
       ],
       "dependencies": [],
       "good_for": [
         "Grouping exact DOI matches across two or three already collected bounded Crossref, OpenAlex, or Europe PMC topic-search receipts.",
-        "Preserving each provider’s status, endpoint, query hash, response hash, count, retrieval time, and bounded source rows in an offline result.",
-        "Keeping DOI-less records unclustered and surfacing cross-provider overlap without treating it as relevance or scientific support."
+        "Preserving provider-specific status, endpoint, query hash, response hash, count, retrieval time, and bounded source rows in an offline result.",
+        "Surfacing records with an identical normalized title and multiple distinct normalized DOIs for human review while leaving all records unmerged."
       ],
       "not_for": [
         "Searching a provider, making network requests, retrieving abstracts or full text, or expanding a source result set.",
         "Systematic-review completeness, provider ranking comparison, fuzzy title matching, citation correctness, or evidence synthesis.",
-        "Treating an exact DOI group as source authentication, a publication-status check, or scientific support."
+        "Treating an exact DOI group as source authentication, a publication-status check, or scientific support.",
+        "Treating an exact-title/multiple-DOI review candidate as a duplicate, related version, or reason to merge records."
       ],
       "only_if": [
-        "The task explicitly needs two or more provider search result sets compared or grouped.",
+        "The task explicitly needs two or more provider topic-search result sets grouped or needs exact-title/different-DOI cases surfaced for review.",
         "Every input is a bounded receipt from one of the supported fixed-endpoint adapters and preserves its query and response fingerprints.",
         "A single provider adapter is insufficient for the requested cross-index view."
       ],
       "counterindicated_when": [
         "One source is sufficient or the task is a known-DOI metadata comparison.",
         "Inputs are raw, unbounded, malformed, from unsupported providers, or do not preserve source identity and hashes.",
-        "The task needs relevance ranking across providers, complete recall, title-based record matching, or scientific conclusions."
+        "The task needs relevance ranking across providers, complete recall, fuzzy identity resolution, or scientific conclusions."
       ],
       "accepted_input_types": [
         "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
       ],
       "output_types": [
-        "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+        "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged.",
+        "Exact normalized-title records with multiple distinct valid DOIs surfaced as review-only candidates; warnings never create identity groups."
       ],
       "execution_mode": "READ_ONLY_RUN",
       "permission_mode": "BOUNDED_OFFLINE_STDIN_PROCESS",
@@ -14415,7 +14437,7 @@
           "tool_id": "research.search_europe_pmc_query"
         },
         {
-          "reason": "Compares selected metadata fields for a supplied known DOI pair; this tool groups matching DOI identifiers across bounded topic-search result sets.",
+          "reason": "Compares selected metadata fields for a supplied known DOI pair; this tool groups matching DOI identifiers across topic-search result sets and reports title/DOI variants without resolving them.",
           "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
           "tool_id": "research.compare_publication_metadata_snapshots"
         }
@@ -14423,14 +14445,16 @@
       "replacement_candidates": [],
       "unique_remaining_use_cases": [
         "Offline union and exact normalized DOI grouping of already captured bounded topic-search receipts from two or three selected provider indexes.",
-        "Preserve cross-index identifier overlap separately from each provider-specific ranking and metadata record without title-based identity inference."
+        "Preserve cross-index identifier overlap separately from each provider-specific ranking and metadata record without title-based identity inference.",
+        "Flag identical normalized titles with multiple distinct normalized DOIs as human-review candidates while leaving DOI-group results unchanged."
       ],
       "comparison_evidence": {
         "compared_implementation_refs": [
           "ignition/tools/toolbox_crossref_query_search.py",
           "ignition/tools/toolbox_openalex_query_search.py",
           "ignition/tools/toolbox_europe_pmc_query_search.py",
-          "ignition/tools/toolbox_compare_publication_metadata.py"
+          "ignition/tools/toolbox_compare_publication_metadata.py",
+          "ignition/tools/toolbox_merge_selected_index_search_results.py"
         ],
         "compared_tool_ids": [
           "research.search_crossref_query",
@@ -14439,21 +14463,23 @@
           "research.compare_publication_metadata_snapshots"
         ],
         "evidence_refs": [
-          "ignition/data/operations/toolbox-selected-index-search-result-merge-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-selected-index-search-result-merge-c1-evidence-r1.json",
           "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r0.json",
+          "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r1.json",
           "ignition/data/operations/toolbox-selected-index-search-result-merge-input-r0.json",
-          "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r0.json"
+          "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+          "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r1.json"
         ],
         "findings": [
-          "The tool adds offline exact-DOI grouping across already collected topic-search result sets; no compared tool provides the same bounded input/output contract.",
-          "Provider-specific retrieval and the known-DOI field comparator retain distinct uses; no replacement or retirement is supported.",
-          "One captured top-five pair yielded no shared DOI; this single observation does not establish source coverage, recall, relevance, correctness, or general provider overlap."
+          "The 0.2.0 same-input replay preserves the 0.1.0 exact DOI cluster result (zero groups and ten unclustered rows) and adds one review-only warning for four records sharing an identical normalized title but carrying four distinct DOI values.",
+          "The warning does not merge records or change unclustered counts. It adds a task-specific human review cue; it does not establish duplication, version relations, bibliographic correctness, or net value in other tasks.",
+          "Provider adapters and the known-DOI comparator retain distinct functions. No replacement or retirement is supported."
         ],
-        "scope": "One real offline task on matched-query Crossref and OpenAlex receipt snapshots, plus functional-contract comparison against each single-provider query adapter and the known-DOI metadata comparator. No same-task retrieval, accuracy, latency, analyst-time, or cost benchmark.",
+        "scope": "One paired offline replay on the same ten-row captured Crossref/OpenAlex input, comparing the preserved 0.1.0 output with 0.2.0, plus contract comparison against the provider adapters and known-DOI comparator. No same-task human decision-quality, broad reliability, time, or cost benchmark.",
         "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED"
       },
       "deprecation_or_retirement_status": {
-        "basis": "A bounded real task demonstrates the offline aggregation output over existing provider receipts. Comparisons do not establish replacement or retirement of any provider adapter or known-DOI comparator.",
+        "basis": "This is an in-place optional extension of the exact-DOI grouper. The same-input comparison preserves prior grouping and adds a review-only title/DOI ambiguity signal. Provider adapters and the known-DOI comparator are not replaced.",
         "status": "SPECIALIZED"
       },
       "migration_and_rollback": {
@@ -14465,27 +14491,29 @@
           "Preserve source receipts and task evidence as history if the executable candidate is retired."
         ]
       },
-      "fallback": "For one-source tasks, use that provider adapter and skip this tool. If a receipt fails validation or lacks exact DOI identifiers, preserve the source outputs separately for manual review.",
+      "fallback": "For one-source tasks, use that provider adapter and skip this tool. If receipts fail validation or lack exact DOI identifiers, preserve source outputs separately; treat exact-title/multiple-DOI candidates as unresolved until independently reviewed.",
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_selected_index_search_result_merge.py",
           "ignition/tests/test_toolbox_selected_index_search_result_merge_routing.py",
           "ignition/tests/test_toolbox_identity_cards.py",
-          "ignition/tools/operations/validate_toolbox_candidates.py"
+          "ignition/tools/operations/validate_toolbox_candidates.py",
+          "ignition/schemas/operations/toolbox-selected-index-search-result-merge-output-r1.schema.json"
         ],
         "negative_controls": [
           "Reject duplicate JSON keys, unsupported/mixed provider identities, duplicate providers, wrong schema version/endpoint, invalid hashes, count mismatches, invalid timestamps, and oversized inputs.",
-          "Normalize only valid exact DOI identifiers; same-title or same-year rows without a DOI never form a group.",
+          "Normalize only valid exact DOI identifiers for groups; same-title or same-year rows without multiple distinct valid DOIs never create groups or title/DOI review warnings.",
+          "An exact normalized title with multiple distinct valid DOIs emits a review-only candidate; similar but nonidentical titles do not, and the warning never changes DOI clusters or unclustered counts.",
           "Preserve provider acquisition failures as PARTIAL or FAILED and retain successful source rows.",
           "The experimental route is default-off; explicit allowlisting only proposes the offline operation and does not invoke or authorize it."
         ]
       },
       "router_selectable_by_default": false,
       "router_conditions": [
-        "Only when the declared task requires two or more provider topic-search results to be grouped.",
+        "Only when the declared task requires two or more provider topic-search results to be grouped or checked for exact-title/different-DOI cases.",
         "Caller supplies all source receipts explicitly; the router does not retrieve provider results or grant network permission."
       ],
-      "claim_ceiling": "This deterministic offline result grouper reports exact normalized DOI overlap among caller-supplied bounded provider receipts. It does not establish query equivalence, source authenticity, relevance, completeness, bibliographic correctness, article status, scientific support, or scientific validity."
+      "claim_ceiling": "This deterministic offline tool reports exact normalized DOI overlap among caller-supplied bounded provider receipts and flags identical normalized titles carrying multiple distinct DOI values for human review without merging them. It does not establish query equivalence, source authenticity, relevance, completeness, bibliographic correctness, duplicate identity, article status, scientific support, or scientific validity."
     },
     {
       "tool_id": "maintenance.audit_execution_state_lineage",

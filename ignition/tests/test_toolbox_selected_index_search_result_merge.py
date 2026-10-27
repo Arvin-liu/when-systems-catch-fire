@@ -1,6 +1,9 @@
 import hashlib
 import json
+from pathlib import Path
 import unittest
+
+from jsonschema import Draft202012Validator
 
 from ignition.tools import toolbox_merge_selected_index_search_results as tool
 
@@ -46,6 +49,60 @@ class SelectedIndexSearchResultMergeTests(unittest.TestCase):
         self.assertEqual(result["exact_normalized_doi_clusters"][0]["normalized_doi"], "10.1234/abc.1")
         self.assertEqual(result["unclustered_record_count"], 2)
         self.assertEqual([row["provider"] for row in result["source_results"]], ["crossref", "openalex"])
+
+    def test_same_normalized_title_with_distinct_dois_is_review_only(self):
+        crossref = receipt("crossref", [
+            {"doi": "10.1234/first", "title": "Shared   Title", "publication_year": 2022},
+            {"doi": "10.1234/second", "title": " shared title ", "publication_year": 2022},
+        ])
+        openalex = receipt("openalex", [])
+        result = tool.merge(request(crossref, openalex))
+        self.assertEqual(result["exact_normalized_doi_clusters"], [])
+        self.assertEqual(result["unclustered_record_count"], 2)
+        self.assertEqual(result["review_warning_basis"], "EXACT_NORMALIZED_TITLE_WITH_MULTIPLE_DOIS_NO_GROUPING")
+        candidates = result["exact_title_different_doi_review_candidates"]
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0]["normalized_title"], "shared title")
+        self.assertEqual(candidates[0]["normalized_dois"], ["10.1234/first", "10.1234/second"])
+        self.assertEqual(candidates[0]["classification"], "REVIEW_ONLY_NOT_MERGED")
+        self.assertEqual(len(candidates[0]["members"]), 2)
+
+    def test_similar_titles_and_title_only_rows_do_not_create_review_candidates(self):
+        crossref = receipt("crossref", [
+            {"doi": "10.1234/one", "title": "Shared title", "publication_year": 2022},
+            {"doi": "10.1234/two", "title": "Shared title: an extension", "publication_year": 2022},
+            {"doi": None, "title": "Shared title", "publication_year": 2022},
+        ])
+        openalex = receipt("openalex", [])
+        result = tool.merge(request(crossref, openalex))
+        self.assertEqual(result["exact_title_different_doi_review_candidates"], [])
+
+    def test_real_task_fixture_surfaces_the_four_exact_title_doi_variants(self):
+        ignition_root = Path(__file__).resolve().parents[1]
+        input_path = ignition_root / "data/operations/toolbox-selected-index-search-result-merge-input-r0.json"
+        result = tool.merge(input_path.read_bytes())
+        self.assertEqual(result["record_count_total"], 10)
+        self.assertEqual(result["exact_normalized_doi_clusters"], [])
+        self.assertEqual(result["unclustered_record_count"], 10)
+        self.assertEqual(len(result["exact_title_different_doi_review_candidates"]), 1)
+        candidate = result["exact_title_different_doi_review_candidates"][0]
+        self.assertEqual(candidate["normalized_title"], "transforming healthcare: the role of artificial intelligence in revolutionising patient care")
+        self.assertEqual(candidate["normalized_dois"], [
+            "10.62830/mmj1-04-6",
+            "10.62830/mmj1-04-6a",
+            "10.62830/mmj1-04-6b",
+            "10.62830/mmj1-4-1a",
+        ])
+        self.assertEqual([member["record_index"] for member in candidate["members"]], [0, 1, 2, 4])
+
+    def test_r1_output_matches_closed_schema(self):
+        crossref = receipt("crossref", [{"doi": "10.1234/one", "title": "Shared title"}])
+        openalex = receipt("openalex", [{"doi": "https://doi.org/10.1234/one", "title": "Other title"}])
+        result = tool.merge(request(crossref, openalex))
+        schema_path = Path(__file__).resolve().parents[1] / "schemas/operations/toolbox-selected-index-search-result-merge-output-r1.schema.json"
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        Draft202012Validator.check_schema(schema)
+        Draft202012Validator(schema).validate(result)
 
     def test_two_or_three_distinct_source_receipts_are_required(self):
         c = receipt("crossref", [])
