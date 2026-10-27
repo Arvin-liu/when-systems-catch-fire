@@ -13318,6 +13318,219 @@
           "Keep the shared NOAA comparison core while other gas comparators import it."
         ]
       }
+    },
+    {
+      "tool_id": "research.lookup_datacite_doi_metadata",
+      "display_name": {
+        "zh": "DataCite DOI 元数据查询器",
+        "en": "DataCite DOI metadata lookup"
+      },
+      "description": "Retrieve one exact-DOI-matched DataCite Public API record projection with provider-specific resource types, rights, related identifiers, schema version, and state.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1. Provider-returned metadata and rights fields are not a grant or legal reuse determination; honor the record and applicable terms.",
+      "maintainer": "Ignition repository maintainers; this field grants no Owner, provider, scientific, or legal authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_datacite_doi_metadata.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_datacite_doi_metadata.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_datacite_doi_metadata.py",
+          "role": "BOUNDED_FIXED_HOST_SINGLE_DOI_PUBLIC_GET"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_datacite_doi_metadata.py",
+          "role": "FOCUSED_MOCKED_NETWORK_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_EXPLICIT_SELECTION_AND_EXACT_HOST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-datacite-doi-metadata-input-r0.schema.json",
+          "role": "MACHINE_READABLE_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-datacite-doi-metadata-output-r0.schema.json",
+          "role": "MACHINE_READABLE_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/datacite-doi-metadata.md",
+          "role": "USER_FACING_SCOPE_PERMISSIONS_AND_LIMITS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-datacite-doi-metadata-c1-comparison-r0.json",
+          "role": "LIVE_MATCHED_DOI_C1_PROVIDER_SCOPE_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-datacite-doi-metadata-route-profile-r0.json",
+          "role": "TYPED_DEFAULT_OFF_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-datacite-doi-metadata-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXACT_HOST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/tools/toolbox_openalex_work_metadata.py",
+          "role": "SAME_DOI_PROVIDER_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "role": "SAME_DOI_PROVIDER_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-datacite-doi-metadata-source-binding-r0.json",
+          "role": "OFFICIAL_PUBLIC_API_SOURCE_BINDING_AND_STATE_LIMITS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-publication-metadata-cross-source-real-task-r0.json",
+          "role": "EXISTING_CROSS_PROVIDER_SOURCE_RECORD_CONSUMER_CONTEXT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-publication-metadata-cross-source-c1-evidence-r0.json",
+          "role": "EXISTING_CROSS_PROVIDER_METADATA_COMPARISON_BLUEPRINT_CONTEXT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "IDENTITY_CARD_CATALOG_AND_PROJECTION_VALIDATION"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Retrieving one caller-known DOI’s DataCite state, schema version, publisher, year, resourceTypeGeneral, and resourceType from the DataCite Public API.",
+        "Returning bounded DataCite titles/creators, rights fields, related identifiers, alternate identifiers, and dates while distinguishing unreported, reported-empty, and malformed fields.",
+        "Recording one response SHA-256, byte count, HTTP status, retrieval time, and an explicit no-findable-record or acquisition failure outcome.",
+        "Adding DataCite-source provenance fields when the task requires the DataCite registration schema alongside OpenAlex, Crossref, or another provider."
+      ],
+      "not_for": [
+        "Discovering DOIs from a topic, searching or harvesting multiple records, authenticated access to Registered or Draft records, or bulk metadata export.",
+        "Retrieving landing pages, dataset contents, article text, content URLs, or arbitrary URLs; returned URLs are not emitted or requested.",
+        "Establishing DOI nonexistence from a public API 404, complete provider coverage, source authenticity, scientific truth, data availability, or legal reuse permission.",
+        "Treating DataCite resource types, rights fields, dates, or related identifiers as a quality score, access grant, or verified relationship."
+      ],
+      "only_if": [
+        "The caller has exactly one known bare DOI and specifically needs DataCite provider fields not supplied by a local snapshot.",
+        "The caller explicitly permits transmission of that DOI to the unauthenticated public DataCite API for this invocation and passes --allow-public-network.",
+        "The invocation uses only api.datacite.org, one HTTPS GET, and a response of at most 128 KiB; redirects are blocked.",
+        "A route proposal explicitly includes this candidate and allowed_network_hosts contains api.datacite.org; routing itself does not authorize execution."
+      ],
+      "counterindicated_when": [
+        "No DOI is known, a local source snapshot is sufficient, or the task asks for systematic discovery or bulk collection.",
+        "The task requires private Registered/Draft metadata, content retrieval, licensing advice, scientific appraisal, or proof that a DOI does not exist.",
+        "The caller has not separately approved the public network request or the exact host is not allowed."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with exactly one bare DOI identifier string"
+      ],
+      "output_types": [
+        "One exact DOI-matched DataCite Public API metadata projection with state, schema version, resourceTypeGeneral/resourceType, publisher/year, bounded rights/related-identifier fields, per-field presence/counts, response hash, and explicit acquisition outcome."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "ROUTER_GATED_EXPLICIT_SELECTION_AND_PER_CALL_PUBLIC_NETWORK_OPT_IN",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_datacite_doi_metadata.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.datacite.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked, sends exactly one HTTPS GET to https://api.datacite.org/dois/{percent-encoded-doi}, transmitting only the supplied DOI; it uses no credential, API key, query string, arbitrary host, or secondary URL.",
+        "Keeps at most 128 KiB of response bytes in memory long enough to parse/hash, then emits only the bounded projection and digest to stdout; it writes no repository or provider state.",
+        "Blocks redirects; uses a 5-second request timeout, a 7-second bounded body read, 8 KiB read chunks, and explicit oversized, timeout, malformed, HTTP, 404, and network outcomes.",
+        "Does not request the record URL, any content URL, or any related identifier; no data or article content is retrieved."
+      ],
+      "runtime_dependencies": [
+        "Python standard library only; no third-party runtime dependency"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "The single observed public GET used no authentication or billed account. Per-request provider fees and environment egress costs were not established."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.lookup_openalex_work_metadata",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "OpenAlex supplies its own Work identity, metadata, retraction signal, and location fields. A same-DOI direct endpoint returned an OpenAlex dataset record, but the existing DOI-filter wrapper returned no result on one retry; neither supplies the DataCite schema projection."
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "relationship": "ALTERNATE_PROVIDER_DIFFERENT_PROVENANCE",
+          "reason": "Crossref compares caller-supplied title/year against a Crossref Work record and can expose Crossref relations/references; its same-DOI 404 does not establish DOI nonexistence and does not replace DataCite registration fields."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Return DataCite-registered state, schemaVersion, resourceTypeGeneral/resourceType, and bounded rightsList/relatedIdentifiers fields for one caller-known DOI."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One purposively selected live dataset DOI comparison across the new DataCite adapter, the existing OpenAlex DOI-filter wrapper plus direct DOI endpoint, and the Crossref verifier. It supports provider-specific scope only; broader performance and quality remain unknown.",
+        "compared_tool_ids": [
+          "research.lookup_openalex_work_metadata",
+          "research.verify_crossref_metadata"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_openalex_work_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-datacite-doi-metadata-c1-comparison-r0.json"
+        ],
+        "findings": [
+          "DataCite and the OpenAlex direct DOI endpoint returned the same dataset title and year for DOI 10.25491/3v3x-tj13 using provider-specific projections.",
+          "The DataCite adapter returned DataCite schema version, state, resourceTypeGeneral/resourceType, and rights/related-identifier field status; OpenAlex supplies its own Work ID and OpenAlex-specific fields.",
+          "The existing OpenAlex DOI-filter wrapper first returned NETWORK_ERROR and then HTTP 200 with NO_RESULT_FOR_FILTER, while a direct OpenAlex DOI endpoint request returned the exact Work; record the route-specific difference without inferring absence.",
+          "Crossref returned HTTP 404 for this one DOI. This does not establish that the DOI or work does not exist.",
+          "One DOI does not establish provider ranking, coverage, quality, reliability, latency, cost, or a broad replacement case; retain provider-specific tools and preserve uncertainty outside this task."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Retain as a default-off adapter for the DataCite DOI registration schema and provider-specific fields; the compared tools keep distinct useful outputs and no replacement is supported."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current operation is changed and no provider is selected by default. Use DataCite only when its registration fields are explicitly requested; keep OpenAlex Work/location and Crossref title/relation outputs for their separate tasks."
+        ],
+        "rollback_steps": [
+          "Remove this optional candidate and wrapper from the isolated branch, regenerate identity cards and ignition/TOOLBOX.md, and rerun focused tests. Preserve the matched DOI comparison and route receipts as historical evidence."
+        ]
+      },
+      "fallback": "If the Public API returns no findable record or an explicit acquisition failure, report that outcome without inferring DOI nonexistence; use another provider only when its own fields satisfy the requested task.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_datacite_doi_metadata.py",
+          "ignition/tests/test_toolbox_routing.py",
+          "ignition/schemas/operations/toolbox-datacite-doi-metadata-input-r0.schema.json",
+          "ignition/schemas/operations/toolbox-datacite-doi-metadata-output-r0.schema.json",
+          "ignition/data/operations/toolbox-datacite-doi-metadata-c1-comparison-r0.json",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "No network request occurs without the per-call --allow-public-network flag.",
+          "Reject DOI URLs, malformed values, duplicate JSON keys, whitespace-padded identifiers, and oversized input before network access.",
+          "Wrong DOI responses, malformed or duplicate-key JSON, redirects, HTTP errors, 404, rate limiting, network failures, non-JSON responses, timeouts, response-read errors, and oversized responses remain explicit outcomes.",
+          "Only api.datacite.org is contacted; returned landing/content URLs and related identifiers are never followed.",
+          "Each list projection is capped and retains reported, omitted, and invalid counts; absent fields remain NOT_REPORTED and malformed fields remain MALFORMED.",
+          "No raw provider response, credentials, content, or repository writes are emitted or persisted."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the candidate ID is explicitly allowlisted and the caller-supplied typed route profile explicitly allows api.datacite.org.",
+        "Only select when the task needs DataCite registration-specific fields for one caller-known DOI and local captured data do not satisfy the request.",
+        "Actual invocation separately requires task-specific caller consent and --allow-public-network; a route plan never grants execution authorization."
+      ],
+      "claim_ceiling": "One exact DOI-matched record returned by the DataCite Public API at retrieval time. The public API exposes Findable records only; no record does not establish DOI nonexistence. Returned metadata does not establish scientific truth, source authenticity, complete coverage, content availability, or legal reuse permission."
     }
   ]
 }

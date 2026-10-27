@@ -789,6 +789,70 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(paired["execution_authorized"])
         self.assertEqual(paired["cost_estimate"]["status"], "UNKNOWN")
 
+    def test_datacite_doi_metadata_is_default_off_and_source_scope_specific(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == "research.lookup_datacite_doi_metadata")
+        route_profile = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-datacite-doi-metadata-route-profile-r0.json").read_text(encoding="utf-8")
+        )
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-datacite-doi-metadata-route-evidence-r0.json").read_text(encoding="utf-8")
+        )
+        task = profile(route_profile["task_id"], route_profile["input_types"], route_profile["required_outputs"])
+
+        default = planner.plan_tool_route(task)
+        no_host = planner.plan_tool_route(task, include_experimental_tool_ids=[card["tool_id"]])
+        selected = planner.plan_tool_route(
+            profile(
+                route_profile["task_id"],
+                route_profile["input_types"],
+                route_profile["required_outputs"],
+                allowed_network_hosts=["api.datacite.org"],
+            ),
+            include_experimental_tool_ids=[card["tool_id"]],
+        )
+        wrong_host = planner.plan_tool_route(
+            profile(
+                route_profile["task_id"],
+                route_profile["input_types"],
+                route_profile["required_outputs"],
+                allowed_network_hosts=["api.openalex.org"],
+            ),
+            include_experimental_tool_ids=[card["tool_id"]],
+        )
+
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertEqual(no_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": card["tool_id"], "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            no_host["rejected_candidates"],
+        )
+        self.assertEqual(selected["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in selected["selected_tools"]], [card["tool_id"]])
+        self.assertEqual(selected["selected_tools"][0]["permissions"]["network_hosts"], ["api.datacite.org"])
+        self.assertFalse(selected["execution_authorized"])
+        self.assertEqual(wrong_host["decision"], "INCOMPLETE")
+        self.assertIn(
+            {"tool_id": card["tool_id"], "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"},
+            wrong_host["rejected_candidates"],
+        )
+        self.assertEqual(evidence["routing"]["default_off"]["decision"], default["decision"])
+        self.assertEqual(evidence["routing"]["no_host"]["decision"], no_host["decision"])
+        self.assertEqual(evidence["routing"]["explicit_datacite_host"]["decision"], selected["decision"])
+        self.assertEqual(evidence["routing"]["explicit_datacite_host"]["selected_tool_ids"], [card["tool_id"]])
+        self.assertFalse(evidence["routing"]["explicit_datacite_host"]["execution_authorized"])
+        self.assertEqual(evidence["routing"]["wrong_host"]["decision"], wrong_host["decision"])
+        candidate_source = IGNITION_ROOT / "tools/toolbox_datacite_doi_metadata.py"
+        self.assertEqual(evidence["candidate_source_sha256"], hashlib.sha256(candidate_source.read_bytes()).hexdigest())
+        self.assertEqual(evidence["route_planner_sha256"], hashlib.sha256(Path(planner.__file__).read_bytes()).hexdigest())
+        self.assertFalse(card["router_selectable_by_default"])
+        comparison = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-datacite-doi-metadata-c1-comparison-r0.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(comparison["c1_disposition"]["status"], card["comparison_evidence"]["status"])
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+
     def test_arxiv_metadata_lookup_requires_candidate_and_exact_host_allowlists(self) -> None:
         arxiv_input = "UTF-8 JSON stdin object with exactly one modern arXiv ID (YYMM.NNNN[N], optionally vN)"
         arxiv_outputs = [
