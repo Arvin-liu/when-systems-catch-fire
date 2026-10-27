@@ -4,13 +4,17 @@ on:
   push:
     branches: ["main", "agent/**"]
     paths:
-      - "evidence-program/**"
+      - "ignition/evidence-program/**"
       - ".github/workflows/evidence-program-validation.yml"
   pull_request:
     branches: ["main"]
     paths:
-      - "evidence-program/**"
+      - "ignition/evidence-program/**"
       - ".github/workflows/evidence-program-validation.yml"
+
+defaults:
+  run:
+    working-directory: ignition
 
 jobs:
   evidence-program:

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "status",
+    "inventory_source",
+    "inventory_ids",
+    "terminal_state_enum",
+    "forbidden_ambiguous_states",
+    "dependency_environment",
+    "results",
+    "closure",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-135-step09-task134-observation-closure-r1"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "step": {"const": "09"},
+    "status": {"const": "PASS"},
+    "inventory_source": {"const": "ignition/data/operations/iterations/135/step00-failure-inventory.json"},
+    "inventory_ids": {
+      "const": ["E01", "E02", "E03", "F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12"]
+    },
+    "terminal_state_enum": {
+      "const": [
+        "BLOCKED_WITH_EVIDENCE",
+        "ENVIRONMENT_CONTRACT_FIXED",
+        "FIXED_CURRENT_DEFECT",
+        "FIXED_STALE_TEST",
+        "RUNNER_BOUNDARY_FIXED",
+        "SEALED_RESIDUAL_ASSERTED"
+      ]
+    },
+    "forbidden_ambiguous_states": {"const": ["CLASSIFIED_AND_MOVE_ON"]},
+    "dependency_environment": {
+      "type": "object",
+      "required": ["metadata", "interpreter", "preflight", "path_prepend_contract"],
+      "properties": {
+        "metadata": {"type": "object", "required": ["mode", "install_performed", "path_persisted"], "properties": {"mode": {"const": "provisioned_temporary_foundation_venv"}, "install_performed": {"const": true}, "path_persisted": {"const": false}, "bootstrap_python": {"type": "string"}}, "additionalProperties": false},
+        "interpreter": {"type": "object", "required": ["executable", "prefix", "base_prefix", "version", "path", "isolated"], "properties": {"executable": {"type": "string"}, "prefix": {"type": "string"}, "base_prefix": {"type": "string"}, "version": {"type": "string"}, "path": {"type": "string"}, "isolated": {"const": true}}, "additionalProperties": false},
+        "preflight": {"type": "object", "required": ["status", "requirements", "errors", "isolated", "isolated_environment_required"], "properties": {"status": {"const": "PASS"}, "requirements": {"type": "array", "minItems": 3}, "errors": {"const": []}, "isolated": {"const": true}, "isolated_environment_required": {"const": true}, "requirements_file": {"type": "string"}, "python_executable": {"type": "string"}, "install_performed": {"const": false}}, "additionalProperties": false},
+        "path_prepend_contract": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "results": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "required": ["id", "test_id", "terminal_state", "command", "working_directory", "returncode", "runtime_seconds", "status", "tests_run", "failures", "errors", "skipped", "summary", "stdout_sha256", "stderr_sha256", "stdout_bytes", "stderr_bytes"],
+        "properties": {
+          "id": {"type": "string"},
+          "test_id": {"type": "string"},
+          "terminal_state": {"enum": ["FIXED_CURRENT_DEFECT", "FIXED_STALE_TEST", "SEALED_RESIDUAL_ASSERTED", "ENVIRONMENT_CONTRACT_FIXED", "RUNNER_BOUNDARY_FIXED", "BLOCKED_WITH_EVIDENCE"]},
+          "command": {"type": "array", "items": {"type": "string"}},
+          "working_directory": {"const": "formal-repository/ignition"},
+          "returncode": {"const": 0},
+          "runtime_seconds": {"type": "number", "minimum": 0},
+          "status": {"const": "PASS"},
+          "tests_run": {"type": "integer", "minimum": 1},
+          "failures": {"const": 0},
+          "errors": {"const": 0},
+          "skipped": {"const": 0},
+          "summary": {"type": "string", "minLength": 1},
+          "stdout_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "stderr_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "stdout_bytes": {"type": "integer", "minimum": 0},
+          "stderr_bytes": {"type": "integer", "minimum": 0}
+        },
+        "additionalProperties": false
+      }
+    },
+    "closure": {
+      "type": "object",
+      "required": ["inventory_count", "closed_count", "blocked_count", "current_failure_semantics_closed", "worktree_unchanged_by_targeted_runs"],
+      "properties": {
+        "inventory_count": {"const": 15},
+        "closed_count": {"const": 15},
+        "blocked_count": {"const": 0},
+        "current_failure_semantics_closed": {"const": true},
+        "worktree_unchanged_by_targeted_runs": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

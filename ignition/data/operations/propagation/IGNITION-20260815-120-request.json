@@ -1,0 +1,641 @@
+{
+  "base_identity": "834fce29afdadb47adda08a95631303ad0d94fc7",
+  "change_classifications": [
+    "CAPABILITY_ADDITION",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE",
+    "RELEASE_OR_CURRENT_STATE_SYNC"
+  ],
+  "changed_dimensions": [
+    "capability",
+    "identity",
+    "usage",
+    "handoff",
+    "lifecycle_current_state",
+    "governance",
+    "deployment_rendering",
+    "operations_method"
+  ],
+  "changed_paths": [
+    "KNOWLEDGE/COVERAGE.md",
+    "KNOWLEDGE/MAP.md",
+    "KNOWLEDGE/README.md",
+    "KNOWLEDGE/SEARCH.md",
+    "KNOWLEDGE/indexes/architecture_governance.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-002.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-003.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-004.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-005.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-006.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-007.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-008.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-009.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-010.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-011.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-012.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-013.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-014.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-015.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-016.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-017.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-018.md",
+    "KNOWLEDGE/indexes/cognition.md",
+    "KNOWLEDGE/indexes/cognition/part-001.md",
+    "KNOWLEDGE/indexes/cognition/part-002.md",
+    "KNOWLEDGE/indexes/mathematics.md",
+    "KNOWLEDGE/indexes/mathematics/part-003.md",
+    "KNOWLEDGE/indexes/mathematics/part-004.md",
+    "KNOWLEDGE/indexes/mathematics/part-005.md",
+    "KNOWLEDGE/indexes/mathematics/part-006.md",
+    "KNOWLEDGE/indexes/mathematics/part-007.md",
+    "KNOWLEDGE/indexes/mathematics/part-008.md",
+    "KNOWLEDGE/indexes/mathematics/part-009.md",
+    "KNOWLEDGE/indexes/mathematics/part-010.md",
+    "KNOWLEDGE/indexes/mathematics/part-011.md",
+    "KNOWLEDGE/indexes/mathematics/part-012.md",
+    "KNOWLEDGE/indexes/mathematics/part-013.md",
+    "KNOWLEDGE/indexes/mathematics/part-014.md",
+    "KNOWLEDGE/indexes/mathematics/part-015.md",
+    "KNOWLEDGE/indexes/mathematics/part-016.md",
+    "KNOWLEDGE/indexes/mathematics/part-017.md",
+    "KNOWLEDGE/indexes/mathematics/part-018.md",
+    "KNOWLEDGE/indexes/mathematics/part-019.md",
+    "KNOWLEDGE/indexes/mathematics/part-020.md",
+    "KNOWLEDGE/indexes/mathematics/part-021.md",
+    "KNOWLEDGE/indexes/operations_evidence.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-001.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-002.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-003.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-004.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-005.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-006.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-007.md",
+    "KNOWLEDGE/indexes/systems.md",
+    "KNOWLEDGE/indexes/systems/part-001.md",
+    "KNOWLEDGE/indexes/systems/part-002.md",
+    "KNOWLEDGE/indexes/systems/part-003.md",
+    "KNOWLEDGE/indexes/systems/part-004.md",
+    "KNOWLEDGE/indexes/systems/part-005.md",
+    "KNOWLEDGE/indexes/systems/part-006.md",
+    "KNOWLEDGE/indexes/writing_publication.md",
+    "KNOWLEDGE/indexes/writing_publication/part-001.md",
+    "STATE-CHANGELOG.md",
+    "agent_kernel/contracts.py",
+    "agent_runtime/README.md",
+    "agent_runtime/__init__.py",
+    "agent_runtime/__main__.py",
+    "agent_runtime/actions.py",
+    "agent_runtime/cli.py",
+    "agent_runtime/control.py",
+    "agent_runtime/pilots/r1_real_local.py",
+    "agent_runtime/r1_runtime.py",
+    "agent_runtime/transport.py",
+    "data/agent-runtime/pilots/r1-real-local/pilot-a-receipt.json",
+    "data/agent-runtime/pilots/r1-real-local/pilot-b-receipt.json",
+    "data/architecture/interactive-system-map.json",
+    "data/foundation/function-assets/adjudication-ledger.jsonl",
+    "data/foundation/function-assets/asset-inventory.csv",
+    "data/foundation/function-assets/audit-queue.jsonl",
+    "data/foundation/function-assets/census-summary.json",
+    "data/foundation/function-assets/census.jsonl",
+    "data/foundation/function-assets/closure-summary.json",
+    "data/foundation/function-assets/dependency-closure.jsonl",
+    "data/foundation/function-assets/discovery-coverage.json",
+    "data/foundation/function-assets/discovery.jsonl",
+    "data/foundation/function-assets/identity-cards.jsonl",
+    "data/foundation/function-assets/proof-empirical-obligations.jsonl",
+    "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
+    "data/foundation/nonfunction-claims/claim-inventory.csv",
+    "data/foundation/nonfunction-claims/claim-registry.jsonl",
+    "data/foundation/nonfunction-claims/closure-summary.json",
+    "data/foundation/nonfunction-claims/dependency-graph.jsonl",
+    "data/foundation/nonfunction-claims/discovery-coverage.json",
+    "data/foundation/nonfunction-claims/evidence-lineage.jsonl",
+    "data/foundation/nonfunction-claims/inference-risk-report.jsonl",
+    "data/foundation/nonfunction-claims/source-discovery.jsonl",
+    "data/foundation/nonfunction-claims/supersession-lineage.jsonl",
+    "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "data/governance/knowledge-experience/asset-cards.jsonl",
+    "data/governance/knowledge-experience/coverage.json",
+    "data/governance/knowledge-experience/layered-reading.jsonl",
+    "data/governance/knowledge-experience/manifest.json",
+    "data/governance/knowledge-experience/search-index.jsonl",
+    "data/operations/change-propagation-topology.json",
+    "data/operations/component-execution-profiles.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/IGNITION-20260815-120-closure.json",
+    "data/operations/propagation/IGNITION-20260815-120-request.json",
+    "data/operations/propagation/IGNITION-20260815-120-residue.json",
+    "data/operations/propagation/IGNITION-20260815-120-system-map-delta.json",
+    "data/publication/fire-seeds/seed-census.json",
+    "docs/architecture/agent-runtime-r1.md",
+    "docs/foundation/nonfunction-claim-adjudication-index.md",
+    "docs/generated/ignition-system-architecture.svg",
+    "reports/operations/IGNITION-20260815-120-change-propagation-impact.md",
+    "schemas/agent-runtime/action-packet-r1.schema.json",
+    "schemas/agent-runtime/approval-decision-r1.schema.json",
+    "schemas/agent-runtime/approval-request-r1.schema.json",
+    "schemas/agent-runtime/execution-lease-r1.schema.json",
+    "schemas/agent-runtime/r1-run-spec.schema.json",
+    "schemas/agent-runtime/r1-run-state.schema.json",
+    "schemas/agent-runtime/reasoner-transport-r1.schema.json",
+    "schemas/agent-runtime/workspace-policy-r1.schema.json",
+    "tests/test_agent_runtime_r1.py",
+    "tests/test_overall_architecture.py",
+    "tools/operations/compute_change_propagation.py"
+  ],
+  "component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "accepted_work",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai_guide",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "arn",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "candidate_return",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "case_source",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "current_state",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external_input",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "feedback_routes",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation_data",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "function_os",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ignition_increment",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "stage_snapshot_publication",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l0",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l1",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l2",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l3",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l4",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l5",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l6",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "language_thought_plane",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "licensing",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "mcf",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_l7",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_totality_proof",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_truth_upgrade",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human_knowledge_surfaces",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "point_fire_analysis",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "propagation_topology",
+      "reason": "R1 local action-plane change is declared in this task; unaffected components retain their current authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "provenance_capture",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "psd",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "public_response",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q12",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q13",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q14",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase_registry",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "source_pool",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "summary",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sustainability",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "system_map_projection",
+      "reason": "R1 local action-plane change is declared in this task; unaffected components retain their current authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "usage",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "zhiyuan_method",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_source_rights",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_material_classification",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_history_remediation",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_publication_gate_validator",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_non_republication_principle",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_tests",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter_system_r1",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "epistemic_governance_kernel",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "owner_human",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "agentization_boundary_r0",
+      "reason": "R1 local action-plane change is declared in this task; unaffected components retain their current authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "agent_kernel_r0",
+      "reason": "R1 local action-plane change is declared in this task; unaffected components retain their current authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "agent_runtime_r0",
+      "reason": "R1 local action-plane change is declared in this task; unaffected components retain their current authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_profile_r0",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "runtime_environment",
+      "reason": "R1 local action-plane change is declared in this task; unaffected components retain their current authority."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "runtime_memory_loop",
+      "reason": "R1 local action-plane change is declared in this task; unaffected components retain their current authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "domain_pack_contract",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "knowledge_domain_pack",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "research_pack_reos_light",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "writing_pack",
+      "reason": "R1 does not alter this component semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "nonknowledge_pilot",
+      "reason": "R1 does not alter this component semantic authority."
+    }
+  ],
+  "head_identity": "working-tree-r1-20260815",
+  "request_version": "1.0.0",
+  "state_transition_subjects": [
+    "Agent Runtime R1 local action boundary",
+    "execution lease and approval control",
+    "bounded local rollback",
+    "current runtime registry projection"
+  ],
+  "surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.reading",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.results",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.knowledge_experience",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.state_changelog",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.stage_snapshots",
+      "reason": "R1 runtime engineering does not change this human or machine surface semantic authority."
+    }
+  ],
+  "system_map_decision": {
+    "decision": "CHANGE",
+    "item_id": "system_map_projection",
+    "reason": "Runtime R1 is reflected in the registry-derived current map and architecture projection."
+  },
+  "task_id": "IGNITION-20260815-120"
+}

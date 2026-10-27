@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/agent-federation/executor-inventory-r1.schema.json",
+  "title": "Ignition External Executor Inventory R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "inventory_id",
+    "task_id",
+    "accessed_at",
+    "formal_baseline",
+    "repository_audit",
+    "executors",
+    "official_sources",
+    "safety_notes"
+  ],
+  "properties": {
+    "schema_version": { "const": "executor-inventory-r1" },
+    "inventory_id": { "type": "string", "minLength": 1 },
+    "task_id": { "const": "IGNITION-20260816-122" },
+    "accessed_at": { "type": "string", "format": "date-time" },
+    "formal_baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "origin_main_sha", "task_branch", "worktree", "clean", "main_divergence"],
+      "properties": {
+        "repository": { "const": "Arvin-liu/when-systems-catch-fire" },
+        "origin_main_sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "task_branch": { "type": "string", "minLength": 1 },
+        "worktree": { "type": "string", "minLength": 1 },
+        "clean": { "type": "boolean" },
+        "main_divergence": { "type": "boolean" }
+      }
+    },
+    "repository_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prior_task", "components", "reference_executor", "surfaces", "residuals", "generator_state"],
+      "properties": {
+        "prior_task": { "type": "object" },
+        "components": { "type": "array", "items": { "type": "object" } },
+        "reference_executor": { "type": "object" },
+        "surfaces": { "type": "object" },
+        "residuals": { "type": "array", "items": { "type": "string" } },
+        "generator_state": { "type": "object" }
+      }
+    },
+    "executors": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "executor_id",
+          "family",
+          "status",
+          "binary_path",
+          "version",
+          "help_surface",
+          "help_sha256",
+          "transport_kinds",
+          "interfaces",
+          "config_presence",
+          "live_smoke"
+        ],
+        "properties": {
+          "executor_id": { "type": "string", "minLength": 1 },
+          "family": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["AVAILABLE", "UNAVAILABLE_NOT_INSTALLED", "UNKNOWN"] },
+          "binary_path": { "type": ["string", "null"] },
+          "version": { "type": ["string", "null"] },
+          "help_surface": { "type": ["string", "null"] },
+          "help_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+          "transport_kinds": { "type": "array", "items": { "type": "string" } },
+          "interfaces": { "type": "object" },
+          "config_presence": { "type": "object" },
+          "live_smoke": { "type": "object" }
+        }
+      }
+    },
+    "official_sources": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "project", "url", "source_type", "observed_ref", "commit", "accessed_at", "notes"],
+        "properties": {
+          "source_id": { "type": "string", "minLength": 1 },
+          "project": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "source_type": { "enum": ["OFFICIAL_REPOSITORY", "OFFICIAL_DOCUMENTATION"] },
+          "observed_ref": { "type": "string", "minLength": 1 },
+          "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+          "accessed_at": { "type": "string", "format": "date-time" },
+          "notes": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "safety_notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["secret_content_read", "external_configuration_changed", "install_or_upgrade_performed", "live_smoke_performed"],
+      "properties": {
+        "secret_content_read": { "const": false },
+        "external_configuration_changed": { "const": false },
+        "install_or_upgrade_performed": { "const": false },
+        "live_smoke_performed": { "const": false }
+      }
+    }
+  }
+}

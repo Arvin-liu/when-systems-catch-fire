@@ -1,0 +1,1415 @@
+{
+  "ok": true,
+  "diagram_type": "architecture",
+  "layout": {
+    "mode": "free"
+  },
+  "viewBox": [
+    1650,
+    420
+  ],
+  "components": [
+    {
+      "id": "source-functions",
+      "type": "external",
+      "label": "函数/案例来源",
+      "x": 260,
+      "y": 258,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        260,
+        258
+      ]
+    },
+    {
+      "id": "source-evidence",
+      "type": "external",
+      "label": "Evidence Program",
+      "x": 260,
+      "y": 145,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        260,
+        145
+      ]
+    },
+    {
+      "id": "source-history",
+      "type": "external",
+      "label": "历史案例与失败",
+      "x": 300,
+      "y": 218,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        300,
+        218
+      ]
+    },
+    {
+      "id": "claim-foundation",
+      "type": "backend",
+      "label": "Foundation 对象",
+      "x": 40,
+      "y": 80,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        40,
+        80
+      ]
+    },
+    {
+      "id": "claim-functions",
+      "type": "backend",
+      "label": "函数资产 registry",
+      "x": 40,
+      "y": 286,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        40,
+        286
+      ]
+    },
+    {
+      "id": "claim-nonfunctions",
+      "type": "backend",
+      "label": "非函数断言 registry",
+      "x": 560,
+      "y": 223,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        560,
+        223
+      ]
+    },
+    {
+      "id": "governance-charter",
+      "type": "security",
+      "label": "价值宪章",
+      "x": 300,
+      "y": 102,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        300,
+        102
+      ]
+    },
+    {
+      "id": "governance-k13",
+      "type": "security",
+      "label": "K13 非断言晋级",
+      "x": 260,
+      "y": 60,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        260,
+        60
+      ]
+    },
+    {
+      "id": "governance-state",
+      "type": "security",
+      "label": "状态增量日志",
+      "x": 740,
+      "y": 328,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        740,
+        328
+      ]
+    },
+    {
+      "id": "execution-iteration",
+      "type": "backend",
+      "label": "迭代操作法 1.4.0",
+      "x": 520,
+      "y": 60,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        520,
+        60
+      ]
+    },
+    {
+      "id": "execution-reos",
+      "type": "backend",
+      "label": "REOS vNext LIGHT",
+      "x": 900,
+      "y": 93,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        900,
+        93
+      ]
+    },
+    {
+      "id": "execution-obligations",
+      "type": "backend",
+      "label": "开放义务与传播",
+      "x": 780,
+      "y": 36,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        780,
+        36
+      ]
+    },
+    {
+      "id": "validation-proof",
+      "type": "backend",
+      "label": "proof 与数学验证",
+      "x": 40,
+      "y": 180,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        40,
+        180
+      ]
+    },
+    {
+      "id": "validation-evidence",
+      "type": "backend",
+      "label": "evidence 与复现",
+      "x": 500,
+      "y": 117,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        500,
+        117
+      ]
+    },
+    {
+      "id": "validation-provenance",
+      "type": "backend",
+      "label": "provenance 与自纠错",
+      "x": 1110,
+      "y": 77,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        1110,
+        77
+      ]
+    },
+    {
+      "id": "human-ai",
+      "type": "frontend",
+      "label": "AI 冷启动与状态恢复",
+      "x": 520,
+      "y": 356,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        520,
+        356
+      ]
+    },
+    {
+      "id": "human-route",
+      "type": "frontend",
+      "label": "十分钟人类阅读",
+      "x": 850,
+      "y": 240,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        850,
+        240
+      ]
+    },
+    {
+      "id": "human-browsers",
+      "type": "frontend",
+      "label": "函数/断言浏览器",
+      "x": 260,
+      "y": 356,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        260,
+        356
+      ]
+    },
+    {
+      "id": "publication-book",
+      "type": "external",
+      "label": "点火成果册",
+      "x": 1110,
+      "y": 180,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        1110,
+        180
+      ]
+    },
+    {
+      "id": "publication-seeds",
+      "type": "external",
+      "label": "《火种》",
+      "x": 850,
+      "y": 152,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        850,
+        152
+      ]
+    },
+    {
+      "id": "publication-writing",
+      "type": "external",
+      "label": "之元写作法",
+      "x": 1050,
+      "y": 240,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        1050,
+        240
+      ]
+    },
+    {
+      "id": "navigation-map",
+      "type": "frontend",
+      "label": "详细技术系统图",
+      "x": 1050,
+      "y": 366,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        1050,
+        366
+      ]
+    },
+    {
+      "id": "navigation-overall",
+      "type": "frontend",
+      "label": "本概念整体架构",
+      "x": 1110,
+      "y": 286,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        1110,
+        286
+      ]
+    },
+    {
+      "id": "navigation-machine",
+      "type": "frontend",
+      "label": "llms.txt 与 canonical 入口",
+      "x": 740,
+      "y": 282,
+      "width": 190,
+      "height": 28,
+      "pos": [
+        740,
+        282
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "来源与证据",
+      "x": 236,
+      "y": 36,
+      "width": 278,
+      "height": 270,
+      "wraps": [
+        "source-functions",
+        "source-evidence",
+        "source-history"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "命题与状态",
+      "x": 16,
+      "y": 54,
+      "width": 758,
+      "height": 280,
+      "wraps": [
+        "claim-foundation",
+        "claim-functions",
+        "claim-nonfunctions"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "价值与认识论治理",
+      "x": 236,
+      "y": 16,
+      "width": 718,
+      "height": 360,
+      "wraps": [
+        "governance-charter",
+        "governance-k13",
+        "governance-state"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "迭代与执行",
+      "x": 496,
+      "y": 10,
+      "width": 618,
+      "height": 131,
+      "wraps": [
+        "execution-iteration",
+        "execution-reos",
+        "execution-obligations"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "验证与谱系",
+      "x": 16,
+      "y": 34,
+      "width": 1308,
+      "height": 194,
+      "wraps": [
+        "validation-proof",
+        "validation-evidence",
+        "validation-provenance"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "人类与机器阅读",
+      "x": 236,
+      "y": 194,
+      "width": 828,
+      "height": 210,
+      "wraps": [
+        "human-ai",
+        "human-route",
+        "human-browsers"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "写作与出版",
+      "x": 826,
+      "y": 126,
+      "width": 498,
+      "height": 162,
+      "wraps": [
+        "publication-book",
+        "publication-seeds",
+        "publication-writing"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "导航与系统投影",
+      "x": 716,
+      "y": 256,
+      "width": 608,
+      "height": 158,
+      "wraps": [
+        "navigation-map",
+        "navigation-overall",
+        "navigation-machine"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "source-functions",
+      "to": "claim-functions",
+      "label": "登记/裁决",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          260,
+          272
+        ],
+        [
+          245,
+          272
+        ],
+        [
+          245,
+          300
+        ],
+        [
+          230,
+          300
+        ]
+      ],
+      "labelAt": [
+        320,
+        312
+      ]
+    },
+    {
+      "from": "source-evidence",
+      "to": "validation-evidence",
+      "label": "可回放证据",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          450,
+          159
+        ],
+        [
+          706,
+          159
+        ],
+        [
+          706,
+          131
+        ],
+        [
+          690,
+          131
+        ]
+      ],
+      "labelAt": [
+        475,
+        190
+      ]
+    },
+    {
+      "from": "source-history",
+      "to": "claim-nonfunctions",
+      "label": "历史与开放",
+      "variant": "default",
+      "route": "straight",
+      "points": [
+        [
+          395,
+          218
+        ],
+        [
+          395,
+          198
+        ],
+        [
+          520,
+          198
+        ],
+        [
+          520,
+          237
+        ],
+        [
+          560,
+          237
+        ]
+      ],
+      "labelAt": [
+        455,
+        205
+      ]
+    },
+    {
+      "from": "claim-foundation",
+      "to": "governance-k13",
+      "label": "受上限约束",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          230,
+          94
+        ],
+        [
+          245,
+          94
+        ],
+        [
+          245,
+          74
+        ],
+        [
+          260,
+          74
+        ]
+      ],
+      "labelAt": [
+        200,
+        61
+      ]
+    },
+    {
+      "from": "claim-functions",
+      "to": "validation-proof",
+      "label": "证明义务",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "points": [
+        [
+          135,
+          286
+        ],
+        [
+          135,
+          247
+        ],
+        [
+          135,
+          247
+        ],
+        [
+          135,
+          208
+        ]
+      ],
+      "labelAt": [
+        200,
+        216
+      ]
+    },
+    {
+      "from": "claim-nonfunctions",
+      "to": "validation-provenance",
+      "label": "谱系与处置",
+      "variant": "default",
+      "route": "auto",
+      "points": [
+        [
+          655,
+          251
+        ],
+        [
+          655,
+          275
+        ],
+        [
+          720,
+          275
+        ],
+        [
+          720,
+          130
+        ],
+        [
+          1100,
+          130
+        ],
+        [
+          1100,
+          91
+        ],
+        [
+          1110,
+          91
+        ]
+      ],
+      "labelAt": [
+        687,
+        276
+      ]
+    },
+    {
+      "from": "governance-charter",
+      "to": "governance-k13",
+      "label": "规范边界",
+      "variant": "default",
+      "route": "auto",
+      "points": [
+        [
+          395,
+          102
+        ],
+        [
+          395,
+          78
+        ],
+        [
+          355,
+          78
+        ],
+        [
+          355,
+          104
+        ],
+        [
+          355,
+          88
+        ]
+      ],
+      "labelAt": [
+        430,
+        52
+      ]
+    },
+    {
+      "from": "governance-k13",
+      "to": "execution-iteration",
+      "label": "常驻约束",
+      "variant": "default",
+      "route": "straight",
+      "points": [
+        [
+          450,
+          74
+        ],
+        [
+          520,
+          74
+        ]
+      ],
+      "labelAt": [
+        485,
+        65
+      ]
+    },
+    {
+      "from": "governance-state",
+      "to": "human-ai",
+      "label": "恢复最近 delta",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          740,
+          342
+        ],
+        [
+          725,
+          342
+        ],
+        [
+          725,
+          370
+        ],
+        [
+          710,
+          370
+        ]
+      ],
+      "labelAt": [
+        680,
+        320
+      ]
+    },
+    {
+      "from": "execution-iteration",
+      "to": "execution-obligations",
+      "label": "传播与回执",
+      "variant": "default",
+      "route": "auto",
+      "points": [
+        [
+          710,
+          74
+        ],
+        [
+          745,
+          74
+        ],
+        [
+          745,
+          50
+        ],
+        [
+          780,
+          50
+        ]
+      ],
+      "labelAt": [
+        745,
+        65
+      ]
+    },
+    {
+      "from": "execution-reos",
+      "to": "execution-obligations",
+      "label": "协调义务",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "points": [
+        [
+          900,
+          107
+        ],
+        [
+          900,
+          79
+        ],
+        [
+          970,
+          79
+        ],
+        [
+          970,
+          50
+        ]
+      ],
+      "labelAt": [
+        1040,
+        145
+      ]
+    },
+    {
+      "from": "execution-obligations",
+      "to": "validation-provenance",
+      "label": "留下记录",
+      "variant": "default",
+      "route": "auto",
+      "points": [
+        [
+          970,
+          50
+        ],
+        [
+          1095,
+          50
+        ],
+        [
+          1095,
+          91
+        ],
+        [
+          1110,
+          91
+        ]
+      ],
+      "labelAt": [
+        1160,
+        118
+      ]
+    },
+    {
+      "from": "validation-proof",
+      "to": "claim-foundation",
+      "label": "回写受控状态",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "points": [
+        [
+          135,
+          180
+        ],
+        [
+          135,
+          144
+        ],
+        [
+          135,
+          144
+        ],
+        [
+          135,
+          108
+        ]
+      ],
+      "labelAt": [
+        160,
+        138
+      ]
+    },
+    {
+      "from": "validation-evidence",
+      "to": "claim-nonfunctions",
+      "label": "限制公开上限",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "points": [
+        [
+          690,
+          131
+        ],
+        [
+          710,
+          131
+        ],
+        [
+          710,
+          207
+        ],
+        [
+          655,
+          207
+        ],
+        [
+          655,
+          223
+        ]
+      ],
+      "labelAt": [
+        620,
+        109
+      ]
+    },
+    {
+      "from": "validation-provenance",
+      "to": "publication-book",
+      "label": "安全整合",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "points": [
+        [
+          1205,
+          105
+        ],
+        [
+          1205,
+          143
+        ],
+        [
+          1205,
+          143
+        ],
+        [
+          1205,
+          180
+        ]
+      ],
+      "labelAt": [
+        1270,
+        138
+      ]
+    },
+    {
+      "from": "human-ai",
+      "to": "human-browsers",
+      "label": "进入 canonical 浏览",
+      "variant": "default",
+      "route": "straight",
+      "points": [
+        [
+          520,
+          370
+        ],
+        [
+          450,
+          370
+        ]
+      ],
+      "labelAt": [
+        485,
+        339
+      ]
+    },
+    {
+      "from": "human-route",
+      "to": "publication-book",
+      "label": "按目的阅读",
+      "variant": "default",
+      "route": "auto",
+      "points": [
+        [
+          945,
+          268
+        ],
+        [
+          945,
+          292
+        ],
+        [
+          945,
+          400
+        ],
+        [
+          1340,
+          400
+        ],
+        [
+          1340,
+          194
+        ],
+        [
+          1300,
+          194
+        ]
+      ],
+      "labelAt": [
+        1142,
+        276
+      ]
+    },
+    {
+      "from": "human-browsers",
+      "to": "claim-functions",
+      "label": "投影而不取代",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          260,
+          370
+        ],
+        [
+          245,
+          370
+        ],
+        [
+          245,
+          300
+        ],
+        [
+          230,
+          300
+        ]
+      ],
+      "labelAt": [
+        350,
+        328
+      ]
+    },
+    {
+      "from": "publication-book",
+      "to": "publication-seeds",
+      "label": "继续追踪问题",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          1110,
+          194
+        ],
+        [
+          1075,
+          194
+        ],
+        [
+          1075,
+          166
+        ],
+        [
+          1040,
+          166
+        ]
+      ],
+      "labelAt": [
+        1080,
+        177
+      ]
+    },
+    {
+      "from": "publication-writing",
+      "to": "publication-seeds",
+      "label": "写作种子",
+      "variant": "default",
+      "route": "auto",
+      "points": [
+        [
+          1145,
+          240
+        ],
+        [
+          1145,
+          230
+        ],
+        [
+          800,
+          230
+        ],
+        [
+          800,
+          166
+        ],
+        [
+          850,
+          166
+        ]
+      ],
+      "labelAt": [
+        1000,
+        212
+      ]
+    },
+    {
+      "from": "publication-seeds",
+      "to": "human-route",
+      "label": "返回人类入口",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "points": [
+        [
+          945,
+          180
+        ],
+        [
+          945,
+          210
+        ],
+        [
+          945,
+          210
+        ],
+        [
+          945,
+          240
+        ]
+      ],
+      "labelAt": [
+        1000,
+        202
+      ]
+    },
+    {
+      "from": "navigation-map",
+      "to": "navigation-overall",
+      "label": "详细图/概念图",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          1240,
+          380
+        ],
+        [
+          1175,
+          380
+        ],
+        [
+          1175,
+          300
+        ],
+        [
+          1110,
+          300
+        ]
+      ],
+      "labelAt": [
+        1060,
+        339
+      ]
+    },
+    {
+      "from": "navigation-machine",
+      "to": "human-ai",
+      "label": "机器恢复入口",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "points": [
+        [
+          740,
+          296
+        ],
+        [
+          725,
+          296
+        ],
+        [
+          725,
+          370
+        ],
+        [
+          710,
+          370
+        ]
+      ],
+      "labelAt": [
+        740,
+        324
+      ]
+    },
+    {
+      "from": "navigation-overall",
+      "to": "publication-book",
+      "label": "点击到权威资产",
+      "variant": "default",
+      "route": "auto",
+      "points": [
+        [
+          1300,
+          300
+        ],
+        [
+          1340,
+          300
+        ],
+        [
+          1340,
+          194
+        ],
+        [
+          1300,
+          194
+        ]
+      ],
+      "labelAt": [
+        1280,
+        240
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "text": "登记/裁决",
+      "x": 293,
+      "y": 302,
+      "width": 53,
+      "height": 14,
+      "labelAt": [
+        320,
+        312
+      ]
+    },
+    {
+      "text": "可回放证据",
+      "x": 446,
+      "y": 180,
+      "width": 58,
+      "height": 14,
+      "labelAt": [
+        475,
+        190
+      ]
+    },
+    {
+      "text": "历史与开放",
+      "x": 426,
+      "y": 195,
+      "width": 58,
+      "height": 14,
+      "labelAt": [
+        455,
+        205
+      ]
+    },
+    {
+      "text": "受上限约束",
+      "x": 171,
+      "y": 51,
+      "width": 58,
+      "height": 14,
+      "labelAt": [
+        200,
+        61
+      ]
+    },
+    {
+      "text": "证明义务",
+      "x": 176,
+      "y": 206,
+      "width": 48,
+      "height": 14,
+      "labelAt": [
+        200,
+        216
+      ]
+    },
+    {
+      "text": "谱系与处置",
+      "x": 658,
+      "y": 266,
+      "width": 58,
+      "height": 14,
+      "labelAt": [
+        687,
+        276
+      ]
+    },
+    {
+      "text": "规范边界",
+      "x": 406,
+      "y": 42,
+      "width": 48,
+      "height": 14,
+      "labelAt": [
+        430,
+        52
+      ]
+    },
+    {
+      "text": "常驻约束",
+      "x": 461,
+      "y": 55,
+      "width": 48,
+      "height": 14,
+      "labelAt": [
+        485,
+        65
+      ]
+    },
+    {
+      "text": "恢复最近 delta",
+      "x": 641,
+      "y": 310,
+      "width": 77,
+      "height": 14,
+      "labelAt": [
+        680,
+        320
+      ]
+    },
+    {
+      "text": "传播与回执",
+      "x": 716,
+      "y": 55,
+      "width": 58,
+      "height": 14,
+      "labelAt": [
+        745,
+        65
+      ]
+    },
+    {
+      "text": "协调义务",
+      "x": 1016,
+      "y": 135,
+      "width": 48,
+      "height": 14,
+      "labelAt": [
+        1040,
+        145
+      ]
+    },
+    {
+      "text": "留下记录",
+      "x": 1136,
+      "y": 108,
+      "width": 48,
+      "height": 14,
+      "labelAt": [
+        1160,
+        118
+      ]
+    },
+    {
+      "text": "回写受控状态",
+      "x": 126,
+      "y": 128,
+      "width": 68,
+      "height": 14,
+      "labelAt": [
+        160,
+        138
+      ]
+    },
+    {
+      "text": "限制公开上限",
+      "x": 586,
+      "y": 99,
+      "width": 68,
+      "height": 14,
+      "labelAt": [
+        620,
+        109
+      ]
+    },
+    {
+      "text": "安全整合",
+      "x": 1246,
+      "y": 128,
+      "width": 48,
+      "height": 14,
+      "labelAt": [
+        1270,
+        138
+      ]
+    },
+    {
+      "text": "进入 canonical 浏览",
+      "x": 434,
+      "y": 329,
+      "width": 101,
+      "height": 14,
+      "labelAt": [
+        485,
+        339
+      ]
+    },
+    {
+      "text": "按目的阅读",
+      "x": 1113,
+      "y": 266,
+      "width": 58,
+      "height": 14,
+      "labelAt": [
+        1142,
+        276
+      ]
+    },
+    {
+      "text": "投影而不取代",
+      "x": 316,
+      "y": 318,
+      "width": 68,
+      "height": 14,
+      "labelAt": [
+        350,
+        328
+      ]
+    },
+    {
+      "text": "继续追踪问题",
+      "x": 1046,
+      "y": 167,
+      "width": 68,
+      "height": 14,
+      "labelAt": [
+        1080,
+        177
+      ]
+    },
+    {
+      "text": "写作种子",
+      "x": 976,
+      "y": 202,
+      "width": 48,
+      "height": 14,
+      "labelAt": [
+        1000,
+        212
+      ]
+    },
+    {
+      "text": "返回人类入口",
+      "x": 966,
+      "y": 192,
+      "width": 68,
+      "height": 14,
+      "labelAt": [
+        1000,
+        202
+      ]
+    },
+    {
+      "text": "详细图/概念图",
+      "x": 1024,
+      "y": 329,
+      "width": 72,
+      "height": 14,
+      "labelAt": [
+        1060,
+        339
+      ]
+    },
+    {
+      "text": "机器恢复入口",
+      "x": 706,
+      "y": 314,
+      "width": 68,
+      "height": 14,
+      "labelAt": [
+        740,
+        324
+      ]
+    },
+    {
+      "text": "点击到权威资产",
+      "x": 1241,
+      "y": 230,
+      "width": 77,
+      "height": 14,
+      "labelAt": [
+        1280,
+        240
+      ]
+    }
+  ]
+}

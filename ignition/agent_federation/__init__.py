@@ -1,0 +1,109 @@
+"""External Agent Federation R1: vendor-neutral OS/executor contracts."""
+
+from .contracts import (
+    ApprovalPolicy,
+    ArtifactRef,
+    BudgetContract,
+    ExecutorDescriptor,
+    ExecutorHealth,
+    ExternalSessionRef,
+    FederatedExecutor,
+    FederatedHandoffBundle,
+    FederatedProgressEvent,
+    FederatedResultReceipt,
+    FederatedTaskEnvelope,
+    FederationContractError,
+    HandoffEligibility,
+    HandoffPolicy,
+    OutputContract,
+    UnsupportedExecutorOperation,
+    ValidationContract,
+    canonical_digest,
+)
+from .router import (
+    CandidateEvaluation,
+    ExecutorRoutingProfile,
+    FederationRouter,
+    RoutingDecision,
+    RoutingError,
+    RoutingPolicy,
+    RoutingRequest,
+    load_routing_policy,
+)
+from .approval_handoff import (
+    ApprovalBridge,
+    ApprovalBridgeDecision,
+    ApprovalHandoffError,
+    ExternalApprovalObservation,
+    FailoverContext,
+    FailoverDecision,
+    HandoffTakeoverDecision,
+    accept_handoff,
+    build_handoff_bundle,
+    decide_failover,
+)
+from .convergence import (
+    AbsorptionResult,
+    ConvergenceError,
+    FederationConvergence,
+    FederationMemoryAbsorber,
+    MemoryProjection,
+    ProgressIngestResult,
+    ProgressLedger,
+    ReceiptIngestResult,
+    ReceiptRegistry,
+    project_approval,
+    project_progress,
+    project_receipt,
+    project_recovery,
+)
+from .pilots import (
+    FIXTURE_VERSION,
+    LIVE_NOT_RUN,
+    PILOT_ID,
+    ReferenceExecutorAdapter,
+    run_federation_pilots,
+    validate_federation_pilot_report,
+    write_federation_pilot_report,
+)
+from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope, LiveDispatchStateMachine, LiveExecutorReceipt, LiveTransitionError
+from .live_transport import LiveProcessResult, LiveProcessTransport, LiveTransportError, interface_digest, parse_bounded_jsonl
+from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAdapter
+from .live_admission import LiveAdmissionDecision, LiveAdmissionError, LiveCapabilityAdmission
+from .live_orchestration import LiveDispatchCoordinator, LiveDispatchPlan, LiveOrchestrationError, LiveSteeringBinding
+from .live_privacy import LivePrivacyError, SanitizedLiveResult, sanitize_live_result, sanitize_public_summary
+from .live_pilot import DisposableLiveFixture, LivePilotError, LivePilotExpectation, LivePilotValidator, LiveValidationReport, tree_digest
+from .live_preflight import LivePreflightEntry, LivePreflightReport, run_live_preflight
+from .live_execution import LiveAttemptResult, LiveExecutionError, execute_bounded_attempt
+from .structured_result_contract import StructuredResultContractError, StructuredResultEvidence, extract_synthetic_result, validate_synthetic_result
+from .live_fault_matrix import CASE_SPECS, FaultCaseResult, run_fault_matrix
+from .live_failover import LiveFailoverDecision, decide_bounded_failover
+
+__all__ = [
+    "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
+    "ExternalSessionRef", "FederatedExecutor", "FederatedHandoffBundle", "FederatedProgressEvent",
+    "FederatedResultReceipt", "FederatedTaskEnvelope", "FederationContractError", "HandoffEligibility",
+    "HandoffPolicy", "OutputContract", "UnsupportedExecutorOperation", "ValidationContract", "canonical_digest",
+    "CandidateEvaluation", "ExecutorRoutingProfile", "FederationRouter", "RoutingDecision", "RoutingError",
+    "RoutingPolicy", "RoutingRequest", "load_routing_policy",
+    "ApprovalBridge", "ApprovalBridgeDecision", "ApprovalHandoffError", "ExternalApprovalObservation",
+    "FailoverContext", "FailoverDecision", "HandoffTakeoverDecision", "accept_handoff",
+    "build_handoff_bundle", "decide_failover",
+    "AbsorptionResult", "ConvergenceError", "FederationConvergence", "FederationMemoryAbsorber", "MemoryProjection",
+    "ProgressIngestResult", "ProgressLedger", "ReceiptIngestResult", "ReceiptRegistry", "project_approval",
+    "project_progress", "project_receipt", "project_recovery",
+    "FIXTURE_VERSION", "LIVE_NOT_RUN", "PILOT_ID", "ReferenceExecutorAdapter",
+    "run_federation_pilots", "validate_federation_pilot_report", "write_federation_pilot_report",
+    "LiveCapabilityLease", "LiveDispatchEnvelope", "LiveDispatchStateMachine", "LiveExecutorReceipt", "LiveTransitionError",
+    "LiveProcessResult", "LiveProcessTransport", "LiveTransportError", "interface_digest", "parse_bounded_jsonl",
+    "LiveAdapterError", "LiveAdapterObservation", "LiveCodexAdapter", "LiveHermesAdapter", "LiveOpenClawAdapter",
+    "LiveAdmissionDecision", "LiveAdmissionError", "LiveCapabilityAdmission",
+    "LiveDispatchCoordinator", "LiveDispatchPlan", "LiveOrchestrationError", "LiveSteeringBinding",
+    "LivePrivacyError", "SanitizedLiveResult", "sanitize_live_result", "sanitize_public_summary",
+    "DisposableLiveFixture", "LivePilotError", "LivePilotExpectation", "LivePilotValidator", "LiveValidationReport", "tree_digest",
+    "LivePreflightEntry", "LivePreflightReport", "run_live_preflight",
+    "LiveAttemptResult", "LiveExecutionError", "execute_bounded_attempt",
+    "StructuredResultContractError", "StructuredResultEvidence", "extract_synthetic_result", "validate_synthetic_result",
+    "CASE_SPECS", "FaultCaseResult", "run_fault_matrix",
+    "LiveFailoverDecision", "decide_bounded_failover",
+]

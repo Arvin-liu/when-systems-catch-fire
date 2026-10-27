@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-capture-capsule-r1.schema.json",
+  "title": "Ignition Live Capture Capsule R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "capture_id", "task_id", "dispatch_id", "attempt_id",
+    "executor_id", "adapter_id", "spool_ref", "spool_initialized_at",
+    "capture_finalized_at", "process_observation", "stdout", "stderr",
+    "public_events", "structured_result", "context_projection",
+    "capture_completeness", "output_truncated", "finalization_state",
+    "spool_cleanup_status", "secret_scan_status", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": { "const": "live-capture-capsule-r1" },
+    "capture_id": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+$", "minLength": 1 },
+    "task_id": { "type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]+$" },
+    "dispatch_id": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+$", "minLength": 1 },
+    "attempt_id": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+$", "minLength": 1 },
+    "executor_id": { "type": "string", "minLength": 1 },
+    "adapter_id": { "type": "string", "minLength": 1 },
+    "spool_ref": { "type": "string", "pattern": "^capture://[A-Za-z0-9_.-]+$" },
+    "spool_initialized_at": { "type": "string", "format": "date-time" },
+    "capture_finalized_at": { "type": ["string", "null"], "format": "date-time" },
+    "process_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pid_ref", "process_group_ref", "process_group_status", "return_code", "signal", "timed_out"],
+      "properties": {
+        "pid_ref": { "enum": ["REDACTED", "UNAVAILABLE"] },
+        "process_group_ref": { "enum": ["REDACTED", "UNAVAILABLE"] },
+        "process_group_status": { "enum": ["CONFIRMED_GONE", "CHILD_LEFT_BEHIND", "UNKNOWN", "NOT_OBSERVED"] },
+        "return_code": { "type": ["integer", "null"] },
+        "signal": { "type": ["string", "null"] },
+        "timed_out": { "type": "boolean" }
+      }
+    },
+    "stdout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["byte_count", "digest"],
+      "properties": {
+        "byte_count": { "type": "integer", "minimum": 0 },
+        "digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "stderr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["byte_count", "digest"],
+      "properties": {
+        "byte_count": { "type": "integer", "minimum": 0 },
+        "digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "public_events": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sequence_start", "sequence_end", "count", "digest"],
+      "properties": {
+        "sequence_start": { "type": ["integer", "null"], "minimum": 0 },
+        "sequence_end": { "type": ["integer", "null"], "minimum": 0 },
+        "count": { "type": "integer", "minimum": 0 },
+        "digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "structured_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["present", "ref", "digest"],
+      "properties": {
+        "present": { "type": "boolean" },
+        "ref": { "type": ["string", "null"] },
+        "digest": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "context_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary_ref", "summary_digest", "summary_byte_count"],
+      "properties": {
+        "summary_ref": { "type": ["string", "null"] },
+        "summary_digest": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+        "summary_byte_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "capture_completeness": { "enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"] },
+    "output_truncated": { "type": "boolean" },
+    "finalization_state": { "enum": ["OPEN", "FINALIZED", "ABORTED", "RECOVERY_REQUIRED"] },
+    "spool_cleanup_status": { "enum": ["PENDING", "CLEANED", "FAILED", "REQUIRES_RECONCILIATION", "NOT_REQUIRED"] },
+    "secret_scan_status": { "enum": ["PASS", "FAIL", "NOT_RUN", "REDACTED"] },
+    "claim_ceiling": { "type": "string", "minLength": 1 }
+  }
+}

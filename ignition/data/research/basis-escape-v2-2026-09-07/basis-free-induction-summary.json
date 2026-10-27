@@ -1,0 +1,65 @@
+{
+  "anonymous_factors": [
+    "BF-X01",
+    "BF-X02",
+    "BF-X03",
+    "BF-X04",
+    "BF-X05",
+    "BF-X06"
+  ],
+  "cognitive_independence": false,
+  "cross_pass_support": {
+    "BF-X01": 6,
+    "BF-X02": 6,
+    "BF-X03": 6,
+    "BF-X04": 6,
+    "BF-X05": 6,
+    "BF-X06": 6
+  },
+  "factor_support_across_packets": {
+    "BF-X01": 467,
+    "BF-X02": 687,
+    "BF-X03": 917,
+    "BF-X04": 1013,
+    "BF-X05": 574,
+    "BF-X06": 861
+  },
+  "factor_time_slice_count": {
+    "BF-X01": 2,
+    "BF-X02": 2,
+    "BF-X03": 2,
+    "BF-X04": 2,
+    "BF-X05": 2,
+    "BF-X06": 2
+  },
+  "factor_time_slices": {
+    "BF-X01": [
+      "2026-08",
+      "2026-09"
+    ],
+    "BF-X02": [
+      "2026-08",
+      "2026-09"
+    ],
+    "BF-X03": [
+      "2026-08",
+      "2026-09"
+    ],
+    "BF-X04": [
+      "2026-08",
+      "2026-09"
+    ],
+    "BF-X05": [
+      "2026-08",
+      "2026-09"
+    ],
+    "BF-X06": [
+      "2026-08",
+      "2026-09"
+    ]
+  },
+  "independent_corpus_family_count": 6,
+  "independent_pass_count": 6,
+  "interpretation": "Three factors recur as existing directional/relational/change lenses; evidence, authority and generation recur as cross-cutting metadata candidates. No independent semantic increment is established at discovery stage.",
+  "task_id": "IGNITION-20260907-160"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "os-steering-intent-obligation-r1.completion-fixtures",
+  "contract": {
+    "contract_id": "contract-completion-r1",
+    "acceptance_predicates": ["independent_validator_receipt_present"],
+    "required_evidence_types": ["VALIDATOR_RECEIPT"],
+    "completion_authority": "VALIDATOR",
+    "forbidden_shortcuts": ["run_pass", "tests_green"]
+  },
+  "cases": [
+    {"id": "run-pass-only", "expected_outcome": "UNVERIFIABLE"},
+    {"id": "missing-predicate", "expected_outcome": "PARTIAL"},
+    {"id": "forbidden-shortcut", "expected_outcome": "REJECTED"},
+    {"id": "independent-validator", "expected_outcome": "SATISFIED"}
+  ]
+}

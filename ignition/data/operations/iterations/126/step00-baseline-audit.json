@@ -1,0 +1,81 @@
+{
+  "schema_version": "ignition-126-step00-baseline-r1",
+  "task_id": "IGNITION-20260818-126",
+  "step": "00",
+  "status": "COMPLETED",
+  "baseline": {
+    "formal_origin_main": "42dfc19cb17d439c9e150caf2dd5e75e3db938bd",
+    "task_branch": "codex/ignition-126-epistemic-structural-induction-r0-20260818",
+    "task_control_tip": "1aa40da9622b3d603bd008014ecf6828bf1f4202",
+    "task_control_path": "origin/relay/current"
+  },
+  "task_relationship": {
+    "task126": "CURRENT",
+    "task125": "DEFERRED_PENDING_REBASE",
+    "task125_executed": false,
+    "task125_deliverables_included": false,
+    "post_126_handoff": "Re-audit and rewrite Durability/Lifecycle from the final formal main; preserve Structural Governance Surface state and SOFT_GOVERNANCE_NON_AUTHORITY_INVARIANT."
+  },
+  "inventory": {
+    "epistemic_governance": [
+      "ignition/data/governance/epistemic-governance-relationships.json",
+      "ignition/schemas/governance/epistemic-governance-relationships.schema.json",
+      "ignition/tools/validate_epistemic_governance_relationships.py",
+      "ignition/docs/foundation/claim-governance-and-function-identity.md",
+      "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md"
+    ],
+    "current_state_and_front_doors": [
+      "ignition/data/architecture/current-system-identity.json",
+      "ignition/data/architecture/current-facts.json",
+      "ignition/docs/project-current-state.md",
+      "ignition/AI-START-HERE.md",
+      "ignition/AI-HANDOFF.md",
+      ".github/README.md",
+      "ignition/STATE-CHANGELOG.md"
+    ],
+    "architecture_projection": [
+      "ignition/data/operations/project-components.json",
+      "ignition/data/operations/change-propagation-topology.json",
+      "ignition/data/architecture/interactive-system-map-layout.json",
+      "ignition/data/architecture/interactive-system-map.json",
+      "ignition/tools/generate_interactive_system_map.py"
+    ],
+    "agent_and_executor_boundaries": [
+      "ignition/docs/architecture/agent-platform-r2.md",
+      "ignition/docs/architecture/external-agent-federation-r1.md",
+      "ignition/data/agent-federation/",
+      "ignition/agent_federation/",
+      "ignition/AI-START-HERE.md"
+    ],
+    "human_surface_and_publication": [
+      "ignition/docs/human/function-assets/README.md",
+      "ignition/docs/human/nonfunction-assets/README.md",
+      "ignition/tools/validate_human_front_door.py",
+      "ignition/tools/governance/validate_human_surface_contract.py",
+      "ignition/PUBLICATIONS/README.md"
+    ]
+  },
+  "candidate_signal_classes": [
+    "engineering completion versus external truth",
+    "publication completion versus truth",
+    "consensus versus authority",
+    "M and E independence",
+    "unknown retention",
+    "withdrawal/quarantine rebound blocking",
+    "Owner-only authority",
+    "evidence-level ceiling",
+    "runtime success versus epistemic acceptance",
+    "local fixture versus production/generalization",
+    "missing provenance degradation",
+    "permission intersection narrowing"
+  ],
+  "targeted_gates": {
+    "current_state_sync": "PASS_AT_BASELINE",
+    "system_map_projection": "PASS_AT_BASELINE",
+    "epistemic_relationship_validator": "PASS_AT_BASELINE",
+    "formal_main_remote_exact": "PASS",
+    "private_material_in_public_tree": "NOT_INTRODUCED"
+  },
+  "claim_ceiling": "Fresh repository baseline and source inventory only; no ESI effect, authority, truth, Owner acceptance or epistemic acceptance is established.",
+  "next_step": "01"
+}

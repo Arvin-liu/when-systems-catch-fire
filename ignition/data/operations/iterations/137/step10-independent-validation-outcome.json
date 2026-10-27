@@ -1,0 +1,50 @@
+{
+  "schema_version": "ignition-137-step10-independent-validation-outcome-r1",
+  "task_id": "IGNITION-20260824-137",
+  "source_attempt": {
+    "dispatch_id": "live-dispatch-137",
+    "attempt_id": "live-attempt-137",
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r2",
+    "executor_receipt_digest": "125c385e5d38ab7c922128ec015423797b6875bb98f8ca4359ee6336a163d83d",
+    "state": "MALFORMED_RESULT",
+    "exit_code": 1,
+    "structured_result_present": false
+  },
+  "independent_validation": {
+    "status": "NOT_RUN_NO_EXACT_PUBLIC_RESULT",
+    "validator_receipt": null,
+    "reason": "The Codex process failed before emitting an exact Task137 public result; there is no answer for the deterministic validator to validate.",
+    "promotion_to_completed_validated": false,
+    "goal_completion_inference": false,
+    "production_readiness_inference": false,
+    "owner_acceptance_inference": false,
+    "epistemic_acceptance_inference": false
+  },
+  "binding_observations": {
+    "task_dispatch_attempt_executor_adapter": "EXACT_IN_EXECUTOR_RECEIPT",
+    "capability_lease_digest": "7ac9789eccd546945aa61def248b9900089e0c838172b3fdb7651a1b7e6d7158",
+    "workspace_before_digest": "a4993a9ba29920bacecee2575c544053a499c57e906cd5d2189536ed493910f7",
+    "workspace_after_digest": "a4993a9ba29920bacecee2575c544053a499c57e906cd5d2189536ed493910f7",
+    "workspace_unchanged": true,
+    "child_depth": 1,
+    "reconciliation_status": "NOT_REQUIRED",
+    "process_group_status": "CONFIRMED_GONE"
+  },
+  "obligation": {
+    "LIVE_EXTERNAL_INVOCATION": "OPEN_NO_VALIDATED_COMPLETION",
+    "claim_ceiling": "A real bounded external attempt was observed, but no independent validation or completion was established."
+  },
+  "verification": {
+    "receipt_roundtrip": "PASS",
+    "promotion_gate": "DENIED",
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_task137 ignition.tests.test_live_validation ignition.tests.test_live_bridge_contracts ignition.tests.test_live_execution ignition.tests.test_live_preflight ignition.tests.test_live_child_guard ignition.tests.test_live_codex_adapter -v",
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS",
+    "live_inference": "NOT_RUN"
+  },
+  "retry": "NOT_RUN_NO_BLIND_RETRY"
+}

@@ -1,0 +1,261 @@
+{
+  "current_map_version": "0.16.0",
+  "geometry": {
+    "columns": 3,
+    "group_gap": 28,
+    "group_header_height": 92,
+    "group_width": 560,
+    "node_gap": 12,
+    "node_height": 54,
+    "outer_padding": 32,
+    "packing_algorithm": "deterministic-scc-ranked-column-packing-r1",
+    "top_offset": 122,
+    "vertical_gap": 28
+  },
+  "groups": [
+    {
+      "color": "#2563eb",
+      "column": 0,
+      "description": "人类、AI 与机器进入项目的当前入口",
+      "id": "front_doors",
+      "label": "前门 / 导航",
+      "row": 0
+    },
+    {
+      "color": "#7c3aed",
+      "column": 1,
+      "description": "来源到解释出版的认识权限链；不存在 L7",
+      "id": "layers",
+      "label": "L0—L6 七层主架构",
+      "row": 0
+    },
+    {
+      "color": "#0f766e",
+      "column": 2,
+      "description": "权威数据、形式门禁与可执行函数接口",
+      "id": "core",
+      "label": "基础核心",
+      "row": 0
+    },
+    {
+      "color": "#0891b2",
+      "column": 0,
+      "description": "多尺度、概率动力学与自适应关系的候选表示",
+      "id": "models",
+      "label": "模型与投影",
+      "row": 1
+    },
+    {
+      "color": "#d97706",
+      "column": 1,
+      "description": "行动、注意力、地图、迭代与类型化传播闭包",
+      "id": "operations",
+      "label": "控制 / 操作层",
+      "row": 1
+    },
+    {
+      "color": "#be123c",
+      "column": 2,
+      "description": "价值、权利许可与维护者可持续性边界",
+      "id": "governance",
+      "label": "规范与约束",
+      "row": 1
+    },
+    {
+      "color": "#9333ea",
+      "column": 0,
+      "description": "双来源素材池、公共表达与可追溯成果",
+      "id": "writing",
+      "label": "之元写作法与成果链",
+      "row": 2
+    },
+    {
+      "color": "#15803d",
+      "column": 1,
+      "description": "作品响应经来源登记后返回适用点火流程",
+      "id": "feedback",
+      "label": "现实反馈环",
+      "row": 2
+    },
+    {
+      "color": "#475569",
+      "column": 2,
+      "description": "这是一张导航接口，不是完整性、因果或理论证明",
+      "id": "boundaries",
+      "label": "图的解释边界",
+      "row": 2
+    },
+    {
+      "color": "#0369a1",
+      "column": 0,
+      "description": "横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7",
+      "id": "language_thought",
+      "label": "语言—思维逻辑平面",
+      "row": 3
+    },
+    {
+      "color": "#1d4ed8",
+      "column": 1,
+      "description": "Owner/Human、Profile、Kernel、Runtime、Control Plane、Task Lifecycle、Obligation、Durability、Steering 和 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
+      "id": "os_spine",
+      "label": "Ignition OS / 控制脊柱",
+      "row": 0
+    },
+    {
+      "color": "#6d28d9",
+      "column": 0,
+      "description": "通过统一 Pack Contract 加载 Knowledge、Research、Writing 与非知识 pilot；Pack 不获得通用 authority",
+      "id": "domain_packs",
+      "label": "Domain / Skill Packs",
+      "row": 1
+    },
+    {
+      "color": "#ea580c",
+      "column": 2,
+      "description": "Federation、provider-neutral admission 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
+      "id": "federation",
+      "label": "Federation / 外部手脚",
+      "row": 1
+    }
+  ],
+  "historical_map_version": "0.14.0",
+  "layout_version": "2.0.0",
+  "node_order": {
+    "boundaries": [
+      "no_l7",
+      "no_truth_upgrade",
+      "no_totality_proof"
+    ],
+    "core": [
+      "foundation",
+      "function_os"
+    ],
+    "feedback": [
+      "public_response",
+      "provenance_capture",
+      "candidate_return",
+      "feedback_routes"
+    ],
+    "front_doors": [
+      "readme",
+      "human_knowledge_surfaces",
+      "summary",
+      "usage",
+      "ai_guide",
+      "current_state"
+    ],
+    "governance": [
+      "charter",
+      "charter_system_r1",
+      "epistemic_governance_kernel",
+      "structural_governance_surface",
+      "copyright_governance_history_remediation",
+      "copyright_governance_jurisdiction_registry",
+      "copyright_governance_material_classification",
+      "copyright_governance_non_republication_principle",
+      "copyright_governance_publication_gate_validator",
+      "copyright_governance_source_rights",
+      "copyright_governance_tests",
+      "licensing",
+      "sustainability"
+    ],
+    "layers": [
+      "l0",
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6"
+    ],
+    "language_thought": [
+      "language_thought_plane"
+    ],
+    "domain_packs": [
+      "domain_pack_contract",
+      "knowledge_domain_pack",
+      "research_pack_reos_light",
+      "writing_pack",
+      "nonknowledge_pilot"
+    ],
+    "federation": [
+      "external_agent_federation",
+      "openclaw_adapter",
+      "hermes_adapter",
+      "codex_adapter",
+      "reference_executor",
+      "future_executors",
+      "runtime_environment",
+      "executor_admission_r1",
+      "live_executor_bridge_r1",
+      "live_observation_reconciliation_plane_r1"
+    ],
+    "os_spine": [
+      "owner_human",
+      "agentization_boundary_r0",
+      "agent_kernel_r0",
+      "agent_runtime_r0",
+      "agent_profile_r0",
+      "runtime_memory_loop",
+      "event_ledger_r1",
+      "policy_compiler_r1",
+      "resource_arbitration_r1",
+      "bounded_scheduler_r1",
+      "executor_health_lease_r1",
+      "queue_control_r1",
+      "durable_dispatch_r1",
+      "concurrent_operational_memory_r2",
+      "durability_lifecycle_r3",
+      "steering_intent_obligation_r1",
+      "formal_task_lifecycle_r1",
+      "open_obligation_registry_r1",
+      "driver_console_r1"
+    ],
+    "models": [
+      "mcf",
+      "psd",
+      "arn"
+    ],
+    "operations": [
+      "q12",
+      "q13",
+      "q14",
+      "iteration",
+      "sync"
+    ],
+    "writing": [
+      "external_input",
+      "ignition_increment",
+      "source_pool",
+      "zhiyuan_method",
+      "case_source",
+      "point_fire_analysis",
+      "accepted_work",
+      "showcase",
+      "showcase_registry"
+    ]
+  },
+  "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
+  "semantic_trunk": {
+    "schema_version": "semantic-trunk-r1",
+    "mode": "bounded_reading_path",
+    "label": "Current semantic trunk：OS 在中间，外部执行器是可替换手脚",
+    "route": [
+      {"id":"authority","label":"Owner / Value Charter","node_ids":["owner_human","charter"],"relation_ids":["map_owner_human_agent_profile","map_charter_agent_profile"]},
+      {"id":"os_control","label":"Ignition OS control / governance spine with independent task terminality, obligations, durable lifecycle and explainable steering","node_ids":["agentization_boundary_r0","agent_profile_r0","agent_kernel_r0","agent_runtime_r0","event_ledger_r1","policy_compiler_r1","resource_arbitration_r1","bounded_scheduler_r1","executor_health_lease_r1","queue_control_r1","durable_dispatch_r1","concurrent_operational_memory_r2","durability_lifecycle_r3","steering_intent_obligation_r1","formal_task_lifecycle_r1","open_obligation_registry_r1","driver_console_r1","runtime_memory_loop"],"relation_ids":["map_profile_agent_kernel","map_kernel_agent_runtime","map_runtime_event_ledger","map_event_ledger_scheduler","map_scheduler_health","map_scheduler_queue","map_scheduler_dispatch","map_runtime_concurrent_memory","map_runtime_durability_lifecycle","map_runtime_steering_intent","map_steering_driver_console","map_durability_driver_console","map_memory_console","map_runtime_memory","formal_task_lifecycle_links_open_obligation"]},
+      {"id":"pack_federation_routing","label":"Pack / Federation routing","node_ids":["domain_pack_contract","external_agent_federation"],"relation_ids":["map_runtime_pack_contract","map_runtime_external_agent_federation","federation_projects_executor_admission"]},
+      {"id":"live_bridge","label":"OS-owned bounded live bridge, admission and observation plane","node_ids":["executor_admission_r1","live_executor_bridge_r1","live_observation_reconciliation_plane_r1"],"relation_ids":["federation_projects_live_executor_bridge","live_bridge_projects_observation_reconciliation_plane","executor_admission_governs_live_executor_bridge"]},
+      {"id":"external_executors","label":"External replaceable executors","node_ids":["openclaw_adapter","hermes_adapter","codex_adapter","future_executors"],"relation_ids":["map_federation_openclaw","map_federation_hermes","map_federation_codex","map_federation_future_executors"]},
+      {"id":"actions_receipts","label":"Actions / observations / receipts","node_ids":["reference_executor","function_os","sync"],"relation_ids":["map_federation_reference_executor","map_function_q12","map_iteration_sync"]},
+      {"id":"validation_feedback","label":"Validation / provenance / state update / feedback / advisory structure","node_ids":["foundation","provenance_capture","feedback_routes","candidate_return","structural_governance_surface"],"relation_ids":["map_foundation_no_truth","map_provenance_return","map_return_routes","map_routes_increment","map_epistemic_kernel_structural_surface"]}
+    ],
+    "loop_target": "os_control",
+    "non_claims": [
+      "This is a bounded navigation reading path, not a new causal edge or completeness proof.",
+      "External executor completion does not establish Ignition OS acceptance.",
+      "External executors do not own Owner, truth, permission or vendor-runtime authority."
+    ]
+  },
+  "subtitle": "唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling & Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "title": "点火唯一完整总架构图"
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step14-final-defer-decision-r1.schema.json",
+  "title": "Task150 Step14 final bounded admission DEFER",
+  "description": "Records the final Task150 decision without registering or activating the Archify candidate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "control_previous_commit", "decision", "owner_decision_context", "gate_summary", "blocking_evidence", "reopen_conditions", "scope_freeze", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step14-final-defer-decision-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "14"},
+    "record_type": {"const": "FINAL_BOUNDED_ADMISSION_DECISION"},
+    "status": {"const": "DEFER"},
+    "formal_previous_commit": {"const": "bb4072fc30e09111f0bc3bb2e21f573f4c017778"},
+    "control_previous_commit": {"const": "2f7e602127293d03494a3b80aa2c5bae941e7806"},
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["outcome", "reason_code", "candidate_status", "current_capability", "default_renderer", "registry_write", "ready_or_merge_authorization", "live_external_invocation"],
+      "properties": {
+        "outcome": {"const": "DEFER"},
+        "reason_code": {"const": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER_AND_OWNER_VISUAL_ACCEPTANCE_PENDING"},
+        "candidate_status": {"const": "EXPERIMENTAL_CANDIDATE_NOT_REGISTERED"},
+        "current_capability": {"const": false},
+        "default_renderer": {"const": false},
+        "registry_write": {"const": false},
+        "ready_or_merge_authorization": {"const": false},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"}
+      }
+    },
+    "owner_decision_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["archify", "agent_reach_public", "agent_reach_authenticated"],
+      "properties": {
+        "archify": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["fit", "continuation", "current_admission", "limits"],
+          "properties": {
+            "fit": {"const": "FIT_WITH_LIMITS"},
+            "continuation": {"const": "CONTINUE_EXPERIMENT"},
+            "current_admission": {"const": "NOT_ADMITTED"},
+            "limits": {"const": ["derived visualization only", "no architecture truth", "no default renderer", "Delta wrapper blocker unresolved", "Owner visual acceptance pending"]}
+          }
+        },
+        "agent_reach_public": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["fit", "continuation", "task150_change"],
+          "properties": {
+            "fit": {"const": "FIT_WITH_LIMITS"},
+            "continuation": {"const": "CONTINUE_EXPERIMENT"},
+            "task150_change": {"const": "NO_CHANGE"}
+          }
+        },
+        "agent_reach_authenticated": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["decision", "authenticated_channel_admission", "task150_change"],
+          "properties": {
+            "decision": {"const": "DEFER"},
+            "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_ADMISSION"},
+            "task150_change": {"const": "NO_CHANGE"}
+          }
+        }
+      }
+    },
+    "gate_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["no_current_provider_activation", "no_draft_exception_survives_ready", "experimental_contract_not_runtime_authority", "no_authenticated_admission", "no_provider_homepage_claim", "live_external_invocation_unchanged", "nonfunction_claim_materiality_clean", "zero_background_current_claim", "delta_viewport_containment_zero_failure", "owner_visual_acceptance"],
+      "properties": {
+        "no_current_provider_activation": {"const": "PASS"},
+        "no_draft_exception_survives_ready": {"const": "PASS"},
+        "experimental_contract_not_runtime_authority": {"const": "PASS"},
+        "no_authenticated_admission": {"const": "PASS"},
+        "no_provider_homepage_claim": {"const": "PASS"},
+        "live_external_invocation_unchanged": {"const": "PASS"},
+        "nonfunction_claim_materiality_clean": {"const": "PASS"},
+        "zero_background_current_claim": {"const": "PASS"},
+        "delta_viewport_containment_zero_failure": {"const": "FAIL"},
+        "owner_visual_acceptance": {"const": "PENDING"}
+      }
+    },
+    "blocking_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step04_artifact", "delta_diagnostic_code", "delta_diagnostics", "failed_viewports", "standalone_containment", "delta_semantic_compare", "visual_review", "owner_aesthetic_acceptance"],
+      "properties": {
+        "step04_artifact": {"const": "ignition/data/operations/iterations/150/step04-viewport-residual-repair.json"},
+        "delta_diagnostic_code": {"const": "viewer/viewport-overflow"},
+        "delta_diagnostics": {"const": 3},
+        "failed_viewports": {"const": ["light/1440x900", "light/1600x1000", "dark/1440x900"]},
+        "standalone_containment": {"const": "PASS"},
+        "delta_semantic_compare": {"const": "PASS_28_OF_28"},
+        "visual_review": {"const": "PENDING_PERCEPTUAL_REVIEW"},
+        "owner_aesthetic_acceptance": {"const": "PENDING"}
+      }
+    },
+    "reopen_conditions": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "string", "minLength": 1}},
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "agent_reach_public", "agent_reach_authenticated", "authenticated_channels", "installation", "current_admission", "default_renderer", "provider_homepage", "live_external_invocation", "task151", "successor_task"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "agent_reach_public": {"const": "NO_CHANGE"},
+        "agent_reach_authenticated": {"const": "DEFER"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "provider_homepage": {"const": "NO_CLAIM"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"},
+        "successor_task": {"const": "NOT_CREATED"}
+      }
+    },
+    "claim_ceiling": {"const": "Task150 Step14 establishes only a formal bounded-experiment DEFER decision because the Delta viewport blocker remains and Owner visual acceptance is pending. It preserves Archify as a fit-with-limits experiment candidate and does not register, activate, authorize or promote a provider; it does not establish Current status, a default renderer, architecture truth, external truth, production readiness, authenticated access, Owner acceptance or live external completion."}
+  }
+}

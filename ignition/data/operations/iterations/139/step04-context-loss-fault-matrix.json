@@ -1,0 +1,33 @@
+{
+  "schema_version": "ignition-139-step04-context-loss-fault-matrix-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "04",
+  "matrix_schema": "ignition-139-live-capture-fault-matrix-r1",
+  "case_count": 16,
+  "all_fail_closed": true,
+  "cases": [
+    {"id": "small_output", "status": "PASS"},
+    {"id": "oversized_output", "status": "PASS"},
+    {"id": "outer_consumer_exception", "status": "PASS"},
+    {"id": "malformed_jsonl", "status": "PASS"},
+    {"id": "capture_cap_reached", "status": "PASS"},
+    {"id": "exit_before_first_event", "status": "PASS"},
+    {"id": "timeout_process_group_cleanup", "status": "PASS"},
+    {"id": "signal_termination", "status": "PASS"},
+    {"id": "spool_write_failure", "status": "PASS"},
+    {"id": "spool_deleted_early", "status": "PASS"},
+    {"id": "secret_marker_output", "status": "PASS"},
+    {"id": "hidden_reasoning_event", "status": "PASS"},
+    {"id": "result_before_trailing_logs", "status": "PASS"},
+    {"id": "duplicate_finalize", "status": "PASS"},
+    {"id": "context_unavailable_capsule_complete", "status": "PASS"},
+    {"id": "context_unavailable_capsule_incomplete", "status": "PASS"}
+  ],
+  "recovery_rule": {
+    "capsule_complete": "RECOVERABLE_FROM_DURABLE_CAPTURE",
+    "capsule_incomplete": "OBSERVATION_INCOMPLETE_REQUIRES_RECONCILIATION",
+    "executor_exit_zero_without_validator": "NEVER_VALIDATED_COMPLETION",
+    "raw_private_output": "REJECT_AND_REDACT_MODEL_FACING_VIEW"
+  },
+  "claim_ceiling": "Deterministic host-side capture fault evidence only; no live external completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

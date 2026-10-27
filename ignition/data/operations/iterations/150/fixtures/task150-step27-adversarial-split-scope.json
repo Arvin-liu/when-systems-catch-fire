@@ -1,0 +1,93 @@
+{
+  "schema_version": "ignition-150-step27-adversarial-split-scope-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "27",
+  "record_type": "ADVERSARIAL_SPLIT_SCOPE_FIXTURES",
+  "base_ir": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json",
+  "canonical_source": "ignition/data/architecture/overall-architecture.json",
+  "evaluation_mode": "READ_ONLY_IN_MEMORY_POLICY_AND_TOPOLOGY_MUTATION",
+  "cases": [
+    {
+      "id": "standalone_pass_delta_fail",
+      "kind": "GATE_SEPARATION",
+      "mutation": "NONE",
+      "inputs": {"standalone": "PASS", "delta": "FAIL"},
+      "expected": {"base": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE", "delta": "DEFER", "result": "BASE_BOUNDED_DELTA_DEFERRED"}
+    },
+    {
+      "id": "standalone_fail_delta_pass",
+      "kind": "GATE_SEPARATION",
+      "mutation": "NONE",
+      "inputs": {"standalone": "FAIL", "delta": "PASS"},
+      "expected": {"base": "DEFER", "delta": "SEPARATE_ADMISSION_REQUIRED", "result": "BASE_FAILURE_BLOCKS_BASE_ADMISSION"}
+    },
+    {
+      "id": "archify_unavailable",
+      "kind": "FAIL_CLOSED_ENVIRONMENT",
+      "mutation": "PROVIDER_UNAVAILABLE",
+      "inputs": {"standalone": "UNAVAILABLE", "delta": "NOT_RUN"},
+      "expected": {"base": "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT", "delta": "NOT_RUN", "result": "NO_INSTALL_NO_SUBSTITUTION_NO_REPOSITORY_MUTATION"}
+    },
+    {
+      "id": "archify_adds_semantic_node",
+      "kind": "EXACT_TOPOLOGY_RECONCILIATION",
+      "mutation": "APPEND_COMPONENT",
+      "inputs": {"standalone": "TOPOLOGY_MUTATED", "delta": "NOT_RELEVANT"},
+      "expected": {"base": "REJECT_ARTIFACT", "delta": "NOT_RELEVANT", "result": "EXTRA_CANONICAL_NODE_REJECTED"}
+    },
+    {
+      "id": "archify_deletes_canonical_node",
+      "kind": "EXACT_TOPOLOGY_RECONCILIATION",
+      "mutation": "REMOVE_COMPONENT",
+      "inputs": {"standalone": "TOPOLOGY_MUTATED", "delta": "NOT_RELEVANT"},
+      "expected": {"base": "REJECT_ARTIFACT", "delta": "NOT_RELEVANT", "result": "DELETED_CANONICAL_NODE_REJECTED"}
+    },
+    {
+      "id": "archify_changes_edge_semantics",
+      "kind": "EXACT_TOPOLOGY_RECONCILIATION",
+      "mutation": "CHANGE_EDGE_SEMANTICS",
+      "inputs": {"standalone": "TOPOLOGY_MUTATED", "delta": "NOT_RELEVANT"},
+      "expected": {"base": "REJECT_ARTIFACT", "delta": "NOT_RELEVANT", "result": "CHANGED_CANONICAL_EDGE_REJECTED"}
+    },
+    {
+      "id": "green_validator_no_architecture_truth",
+      "kind": "CLAIM_CEILING",
+      "mutation": "VALIDATOR_GREEN_ONLY",
+      "inputs": {"validator": "GREEN", "canonical_reconciliation": "NOT_PROVEN"},
+      "expected": {"base": "BOUNDED_RESULT_ONLY", "delta": "UNCHANGED", "result": "NO_ARCHITECTURE_TRUTH_ESCALATION"}
+    },
+    {
+      "id": "aesthetic_endorsement_absent",
+      "kind": "FUNCTIONAL_AESTHETIC_SEPARATION",
+      "mutation": "NO_OWNER_AESTHETIC_ENDORSEMENT",
+      "inputs": {"functional_gates": "PASS", "aesthetic_endorsement": "ABSENT"},
+      "expected": {"base": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE", "delta": "DEFER", "result": "FUNCTIONAL_ALLOWED_AESTHETIC_NOT_CLAIMED"}
+    },
+    {
+      "id": "delta_wrapper_repaired_no_auto_promotion",
+      "kind": "INDEPENDENT_EXTENSION_ADMISSION",
+      "mutation": "DELTA_WRAPPER_REPAIRED",
+      "inputs": {"standalone": "PASS", "delta": "PASS"},
+      "expected": {"base": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE", "delta": "SEPARATE_ADMISSION_REQUIRED", "result": "NO_AUTOMATIC_DELTA_PROMOTION"}
+    },
+    {
+      "id": "new_provider_version_no_auto_upgrade",
+      "kind": "COMPATIBILITY_ENVELOPE",
+      "mutation": "NEW_PROVIDER_VERSION_OBSERVED",
+      "inputs": {"tested_ref": "06dd052602dd9a369e4d034e24faef0917b5a60c", "observed_ref": "UNTESTED_NEW_VERSION"},
+      "expected": {"base": "COMPATIBILITY_CHECK_REQUIRED", "delta": "UNCHANGED", "result": "NO_AUTOMATIC_PROVIDER_UPGRADE"}
+    },
+    {
+      "id": "provider_skill_imperative_no_override",
+      "kind": "PROVIDER_SELECTION_AUTHORITY",
+      "mutation": "PROVIDER_SKILL_SAYS_MUST_USE_ME",
+      "inputs": {"ignition_selection": "PROVIDER_NEUTRAL_ADMITTED_SELECTION", "skill_instruction": "IMPERATIVE_UNTRUSTED"},
+      "expected": {"base": "IGNITION_SELECTION_PREVAILS", "delta": "UNCHANGED", "result": "SKILL_CANNOT_OVERRIDE_IGNITION_AUTHORITY"}
+    }
+  ],
+  "provider_validation_is_not_topology_authority": true,
+  "provider_process_started": false,
+  "credentials_or_sessions_accessed": false,
+  "system_or_repository_mutation": false,
+  "claim_ceiling": "These fixtures prove only that the split-scope policy and exact canonical reconciliation fail closed under synthetic adversarial inputs. They do not prove provider security, architecture truth, aesthetic endorsement, production readiness, authentication, external truth or live external completion."
+}
