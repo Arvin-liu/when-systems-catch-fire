@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/toolbox-handoff-action-binding-input-r0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_receipt",
+    "handoff_bundle",
+    "receiver_descriptor",
+    "execution_packet",
+    "approval_request",
+    "approval_decision",
+    "execution_lease",
+    "expected",
+    "workspace_reobserved",
+    "observed_artifact_refs"
+  ],
+  "properties": {
+    "schema_version": {"const": "handoff-action-binding-preflight-r0"},
+    "source_receipt": {"type": "object"},
+    "handoff_bundle": {"type": "object"},
+    "receiver_descriptor": {"type": "object"},
+    "execution_packet": {"type": "object"},
+    "approval_request": {"type": "object"},
+    "approval_decision": {"type": "object"},
+    "execution_lease": {"type": "object"},
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "receiver_executor_id",
+        "receiver_adapter_version",
+        "authorization_ref",
+        "source_revision",
+        "target_artifact_ref",
+        "target_artifact_sha256",
+        "task_state_revision",
+        "receiver_observed_task_state_revision",
+        "native_resume_required"
+      ],
+      "properties": {
+        "receiver_executor_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "receiver_adapter_version": {"type": "string", "minLength": 1, "maxLength": 128},
+        "authorization_ref": {"type": "string", "minLength": 1, "maxLength": 256},
+        "source_revision": {"type": "string", "minLength": 1, "maxLength": 512},
+        "target_artifact_ref": {"type": "string", "minLength": 1, "maxLength": 1024},
+        "target_artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "task_state_revision": {"type": "string", "minLength": 1, "maxLength": 512},
+        "receiver_observed_task_state_revision": {"type": "string", "minLength": 1, "maxLength": 512},
+        "native_resume_required": {"type": "boolean"}
+      }
+    },
+    "workspace_reobserved": {"type": "boolean"},
+    "observed_artifact_refs": {
+      "type": "array",
+      "maxItems": 256,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 1024}
+    }
+  }
+}

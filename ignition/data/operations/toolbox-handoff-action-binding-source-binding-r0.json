@@ -1,0 +1,26 @@
+{
+  "schema_version": "toolbox-handoff-action-binding-source-binding-r0",
+  "owner_authority": {
+    "repository": "Arvin-liu/1111",
+    "instruction_commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "instruction_path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "lifecycle_addendum_commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "lifecycle_addendum_scope": "C1 replaces prior tool-retention guidance: compare useful task scope and evidence; retire only when replacement coverage and comparative evidence support it; otherwise coexist or preserve uncertainty."
+  },
+  "blueprint_source": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 84,
+    "head_commit": "9d14ec7b3a95f0494e2f5069719b0da1c49ad0bd",
+    "source_path": "sources/NEURIPS26-RECEIVER-COMPATIBLE-MULTIAGENT-HANDOFF-DELTA-R0.md",
+    "source_blob": "8918ddbb1d268489fc6dc8d25820e795f187267b",
+    "source_url": "https://github.com/Arvin-liu/ignition-architecture-workbench/blob/9d14ec7b3a95f0494e2f5069719b0da1c49ad0bd/sources/NEURIPS26-RECEIVER-COMPATIBLE-MULTIAGENT-HANDOFF-DELTA-R0.md",
+    "admission_scope": "H1 only: add a thin optional diagnostic over existing contracts when a local code-gap audit supports it. Do not add a universal handoff schema or claim empirical receiver compatibility."
+  },
+  "local_gap_observation": {
+    "existing_receiver_preflight": "Checks caller-supplied source-receipt digest/projection, receiver capability declaration, workspace re-observation declaration, and observed artifact references.",
+    "existing_execution_effect_receipt": "Checks caller-declared run/tool/version/source/input/output/environment and later observation; it is not bound to the Federation handoff action, approval decision, lease and receiver interface as one packet.",
+    "existing_producer_consumer_preflight": "Checks bounded literal producer-consumer text semantics; it does not bind action authorization or receiver version.",
+    "narrow_delta": "Verify that one exact pending action and its source revision, task-state revision, target artifact digest, approval record reference, packet digest, active lease, receiver ID/interface version, native-resume requirement, and external-session-reference kinds agree across existing caller-supplied records."
+  },
+  "claim_ceiling": "Pinned source and local-code gap mapping only. It does not demonstrate real-task benefit, authenticated authority, live state, accepted handoff, executable resume, or scientific validity."
+}

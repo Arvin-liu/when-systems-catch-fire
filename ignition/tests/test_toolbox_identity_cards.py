@@ -795,6 +795,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "planning.compare_task_decomposition_solvability",
             "maintenance.compare_context_packet_variants",
             "maintenance.compare_audit_findings",
+            "collaboration.preflight_handoff_action_binding",
             "maintenance.summarize_actions_interval_union",
             offline_snapshot_binding["tool_id"],
             offline_snapshot_verifier["tool_id"],

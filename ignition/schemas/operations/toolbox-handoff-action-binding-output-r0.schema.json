@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/toolbox-handoff-action-binding-output-r0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "status",
+    "checks",
+    "source_handoff_preflight",
+    "findings",
+    "authorization_record_authenticity",
+    "receipt_authenticity",
+    "task_state_observation",
+    "handoff_accepted",
+    "execution_authorized",
+    "runtime_invoked",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "handoff-action-binding-preflight-result-r0"},
+    "tool_id": {"const": "collaboration.preflight_handoff_action_binding"},
+    "tool_version": {"const": "0.1.0"},
+    "status": {"enum": ["DECLARED_BINDINGS_MATCH_NO_AUTHORITY", "BLOCKED_OR_INCOMPLETE", "INPUT_INVALID"]},
+    "checks": {"type": "object", "additionalProperties": {"type": "string"}},
+    "source_handoff_preflight": {"type": "object"},
+    "findings": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "path"],
+        "properties": {
+          "code": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "authorization_record_authenticity": {"const": "NOT_AUTHENTICATED_CALLER_SUPPLIED_RECORDS"},
+    "receipt_authenticity": {"const": "NOT_ESTABLISHED_UNKEYED_DIGEST"},
+    "task_state_observation": {"const": "CALLER_DECLARED_REVISION_COMPARISON_ONLY"},
+    "handoff_accepted": {"const": false},
+    "execution_authorized": {"const": false},
+    "runtime_invoked": {"const": false},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}
