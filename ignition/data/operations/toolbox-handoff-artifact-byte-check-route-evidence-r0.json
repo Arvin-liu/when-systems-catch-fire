@@ -1,15 +1,16 @@
 {
   "schema_version": "toolbox-handoff-artifact-byte-check-route-evidence-r0",
   "candidate_catalog_refresh": {
-    "prior_git_blob_sha1": "86e0372a292afe58e65d7641fb07cc61776ec8a8",
-    "current_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc",
+    "prior_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc",
+    "current_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600",
     "history": [
       "933a349b5d7e34df3a9d46c42896e9ec236a9831",
       "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
       "86e0372a292afe58e65d7641fb07cc61776ec8a8",
-      "00fae5794f52ef3270ede181b5ef0679e83f21dc"
+      "00fae5794f52ef3270ede181b5ef0679e83f21dc",
+      "5d53a67cfcd3aec453485e93acda87219fd5d600"
     ],
-    "note": "A new optional portable-episode candidate was added default-off. Existing handoff route was re-evaluated under the current catalog; its task, permissions and selected tool remain unchanged."
+    "note": "The candidate identity now cites one local real-task byte-check and a deliberate digest-mismatch control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting still only proposes the read-only tool."
   },
   "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
   "task": {
@@ -25,7 +26,7 @@
   },
   "route_profile": {
     "task_id": "handoff-artifact-local-digest-check",
-    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@bef6bf467320ec1b6613ad94976d4623f3d51623",
     "input_types": [
       "One UTF-8 JSON object with schema_version handoff-artifact-byte-check-r0 and a valid FederatedResultReceipt containing artifact refs, plus a separately supplied workspace-root CLI argument under ignition/; stdin is capped at 262144 bytes."
     ],
@@ -43,7 +44,7 @@
   "default_route_result": {
     "schema_version": "ignition-tool-route-plan-r0",
     "task_id": "handoff-artifact-local-digest-check",
-    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@bef6bf467320ec1b6613ad94976d4623f3d51623",
     "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
     "allowed_network_hosts": [],
     "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
@@ -61,6 +62,10 @@
     "rejected_candidates": [
       {
         "tool_id": "collaboration.preflight_receiver_handoff",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "collaboration.select_handoff_advisories",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -100,12 +105,20 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "governance.preflight_declared_permission_delta",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "ignition.adaptive_toolbox_route_planner",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "ignition.recover_current_state",
         "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "ignition.select_bounded_thinking_operation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "knowledge.assemble_context_packet",
@@ -121,6 +134,10 @@
       },
       {
         "tool_id": "knowledge.navigate_raw_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.preflight_reusable_context",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -148,7 +165,31 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "maintenance.audit_execution_state_lineage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_validation_target_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_audit_findings",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_context_packet_variants",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_toolbox_component_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_exact_head_check_observations",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -156,12 +197,52 @@
         "reason": "NO_INPUT_TYPE_MATCH"
       },
       {
+        "tool_id": "maintenance.plan_validation_invocation_deduplication",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_execution_effect_receipt",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_failure_anchored_recovery",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_governed_improvement_transition",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_producer_consumer_semantics",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_interval_union",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "maintenance.summarize_actions_step_timeline",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_component_path_residue",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "maintenance.validate_checkpoint",
         "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "planning.compare_task_decomposition_solvability",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "reasoning.search_structural_analogies",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "repository.apply_iteration_method",
@@ -170,6 +251,38 @@
       {
         "tool_id": "repository.apply_iteration_method_1_3",
         "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.audit_pubmed_updates_from_doi",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.bind_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_crossref_reference_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_evidence_update_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_ch4_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_co2_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_n2o_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_sf6_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "research.compare_publication_metadata_snapshots",
@@ -188,6 +301,10 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "research.lookup_datacite_doi_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
@@ -196,7 +313,31 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.lookup_openalex_work_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_crossref_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_pubmed_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.merge_selected_index_search_results",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -204,11 +345,43 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "research.preflight_grounded_ideation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.probe_counterfactual_fragility",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.reos_full",
         "reason": "NOT_CURRENT_CALLABLE"
       },
       {
+        "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.resolve_pubmed_identifiers",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_arxiv_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_crossref_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_europe_pmc_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_openalex_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_pubmed_query",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -221,6 +394,10 @@
       },
       {
         "tool_id": "research.verify_crossref_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.verify_offline_source_snapshot_run",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -258,13 +435,13 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
+      "experimental_candidate_catalog_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600"
     }
   },
   "route_result": {
     "schema_version": "ignition-tool-route-plan-r0",
     "task_id": "handoff-artifact-local-digest-check",
-    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@bef6bf467320ec1b6613ad94976d4623f3d51623",
     "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
     "allowed_network_hosts": [],
     "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
@@ -328,6 +505,10 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "collaboration.select_handoff_advisories",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "collaboration.validate_agent_episode_binding",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
@@ -360,12 +541,20 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "governance.preflight_declared_permission_delta",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "ignition.adaptive_toolbox_route_planner",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "ignition.recover_current_state",
         "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "ignition.select_bounded_thinking_operation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "knowledge.assemble_context_packet",
@@ -381,6 +570,10 @@
       },
       {
         "tool_id": "knowledge.navigate_raw_evidence",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "knowledge.preflight_reusable_context",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -408,7 +601,31 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "maintenance.audit_execution_state_lineage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_actions_validation_target_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_audit_findings",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_context_packet_variants",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.compare_toolbox_component_coverage",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.inspect_exact_head_check_observations",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -416,12 +633,52 @@
         "reason": "NO_INPUT_TYPE_MATCH"
       },
       {
+        "tool_id": "maintenance.plan_validation_invocation_deduplication",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_execution_effect_receipt",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_failure_anchored_recovery",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_governed_improvement_transition",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.preflight_producer_consumer_semantics",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_actions_interval_union",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "maintenance.summarize_actions_step_timeline",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_component_path_residue",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "maintenance.validate_checkpoint",
         "reason": "NO_INPUT_TYPE_MATCH"
+      },
+      {
+        "tool_id": "planning.compare_task_decomposition_solvability",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "reasoning.search_structural_analogies",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "repository.apply_iteration_method",
@@ -430,6 +687,38 @@
       {
         "tool_id": "repository.apply_iteration_method_1_3",
         "reason": "NOT_CURRENT_CALLABLE"
+      },
+      {
+        "tool_id": "research.audit_pubmed_updates_from_doi",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.bind_offline_source_snapshot_run",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_crossref_reference_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_evidence_update_snapshots",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_ch4_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_co2_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_n2o_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.compare_noaa_sf6_source_surfaces",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
         "tool_id": "research.compare_publication_metadata_snapshots",
@@ -448,6 +737,10 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "research.lookup_datacite_doi_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
@@ -456,7 +749,31 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.lookup_openalex_work_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_crossref_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.match_pubmed_citation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.merge_selected_index_search_results",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -464,11 +781,43 @@
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
+        "tool_id": "research.preflight_grounded_ideation",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.probe_counterfactual_fragility",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.reos_full",
         "reason": "NOT_CURRENT_CALLABLE"
       },
       {
+        "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
         "tool_id": "research.resolve_pubmed_identifiers",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_arxiv_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_crossref_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_europe_pmc_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_openalex_query",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.search_pubmed_query",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -481,6 +830,10 @@
       },
       {
         "tool_id": "research.verify_crossref_metadata",
+        "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      },
+      {
+        "tool_id": "research.verify_offline_source_snapshot_run",
         "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
       },
       {
@@ -518,9 +871,9 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc"
+      "experimental_candidate_catalog_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600"
     }
   },
   "execution_authorized": false,
-  "interpretation": "The route proposal does not invoke the candidate or grant read authority; a separate task-level invocation decision remains required."
+  "interpretation": "The default route remains INCOMPLETE with no tool selected. Explicitly allowlisting collaboration.verify_handoff_artifact_files produces one sufficient route proposal; it does not invoke the tool, authenticate a receipt, authorize a handoff, or grant permissions."
 }

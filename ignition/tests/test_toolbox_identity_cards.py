@@ -287,10 +287,13 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             item for item in document["cards"]
             if item["tool_id"] == "collaboration.verify_handoff_artifact_files"
         )
+        real_task = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-handoff-artifact-byte-check-real-task-evidence-r0.json").read_text(encoding="utf-8")
+        )
 
         self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
         self.assertEqual(card["version"], "0.1.0")
-        self.assertEqual(card["evidence_level"], "SYNTHETIC_ONLY")
+        self.assertEqual(card["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertFalse(card["router_selectable_by_default"])
         self.assertEqual(card["permissions"]["read_paths"], ["ignition/"])
         self.assertEqual(card["permissions"]["write_paths"], [])
@@ -313,6 +316,10 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         )
         self.assertEqual(route["default_route_result"]["decision"], "INCOMPLETE")
         self.assertEqual(route["route_result"]["decision"], "COMPLETE")
+        self.assertEqual(real_task["output"]["status"], "ALL_DIGESTS_MATCH")
+        self.assertEqual(real_task["negative_control"]["status"], "DIGEST_MISMATCH")
+        self.assertEqual(real_task["tool_boundary"]["receipt_authenticity"], "NOT_ESTABLISHED_UNKEYED_DIGEST")
+        self.assertFalse(real_task["tool_boundary"]["execution_authorized"])
         self.assertFalse(route["route_result"]["execution_authorized"])
 
     def test_portable_research_episode_card_keeps_c1_uncertainty_and_nonexecution_boundary(self) -> None:

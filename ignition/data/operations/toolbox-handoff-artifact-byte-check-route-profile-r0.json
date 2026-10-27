@@ -1,6 +1,6 @@
 {
   "task_id": "handoff-artifact-local-digest-check",
-  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "current_ref": "refs/heads/codex/toolbox-growth-20261025@bef6bf467320ec1b6613ad94976d4623f3d51623",
   "input_types": [
     "One UTF-8 JSON object with schema_version handoff-artifact-byte-check-r0 and a valid FederatedResultReceipt containing artifact refs, plus a separately supplied workspace-root CLI argument under ignition/; stdin is capped at 262144 bytes."
   ],

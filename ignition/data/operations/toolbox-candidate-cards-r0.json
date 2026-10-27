@@ -747,7 +747,7 @@
       "maintainer": "Ignition repository maintainers; this field does not grant Owner or scientific authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "SYNTHETIC_ONLY",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_verify_handoff_artifact_files.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_verify_handoff_artifact_files.py --stdin --workspace-root <path-under-ignition>",
       "source_refs": [
@@ -760,12 +760,32 @@
           "role": "SYNTHETIC_MATCHED_COMPARISON_AND_C1_DISPOSITION"
         },
         {
-          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-route-profile-r0.json",
-          "role": "EXPLICIT_LOCAL_ROUTE_PROFILE"
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-negative-control-input-r0.json",
+          "role": "NEGATIVE_CONTROL_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-negative-control-output-r0.json",
+          "role": "NEGATIVE_CONTROL_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-real-task-evidence-r0.json",
+          "role": "REAL_TASK_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-real-task-input-r0.json",
+          "role": "REAL_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-real-task-output-r0.json",
+          "role": "EXACT_CLI_OUTPUT"
         },
         {
           "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-route-evidence-r0.json",
           "role": "DEFAULT_OFF_AND_ALLOWLISTED_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-handoff-artifact-byte-check-route-profile-r0.json",
+          "role": "EXPLICIT_LOCAL_ROUTE_PROFILE"
         },
         {
           "path": "ignition/docs/operations/toolbox-handoff-artifact-byte-check.md",

@@ -1372,8 +1372,12 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
         )
-        self.assertNotEqual(
+        self.assertEqual(
             receipt["candidate_catalog_refresh"]["current_git_blob_sha1"],
+            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+        )
+        self.assertEqual(
+            receipt["candidate_catalog_refresh"]["history"][-1],
             opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
         )
 
