@@ -2,7 +2,7 @@
   "schema_version": "toolbox-counterfactual-probe-route-evidence-r0",
   "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
   "candidate_tool_id": "research.probe_counterfactual_fragility",
-  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "task_profile": {
     "task_id": "counterfactual-model-sensitivity-probe-route",
     "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
@@ -40,7 +40,7 @@
       "candidate_invoked": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+        "experimental_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2"
       },
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
     },
@@ -122,7 +122,7 @@
       "candidate_invoked": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+        "experimental_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2"
       },
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
     },
@@ -149,7 +149,7 @@
       "candidate_invoked": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+        "experimental_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2"
       },
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
     },
@@ -232,7 +232,7 @@
       "candidate_invoked": false,
       "source_refs": {
         "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-        "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+        "experimental_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2"
       },
       "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established."
     }
@@ -264,20 +264,26 @@
       "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
       "superseded_observed_at_utc": null,
       "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "706c70ee6eeccd144bac443a9f8c356988a8854f",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
+      "replayed_at_utc": "2026-10-27T01:22:31Z"
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T22:44:00Z",
+    "replayed_at_utc": "2026-10-27T01:22:31Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "candidate_invoked": false,
-    "replay_result_sha256": "8ef22039aeec94ffbbb21d42e7b85ac15fa99e8b850b54b0d4e4fa0e82f003fd",
+    "replay_result_sha256": "0f7cc685af2e0f11e808dd31886749aba764aa3d193d0600453637ddc282ed04",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
-    "previous_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b"
+    "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
   },
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
 }

@@ -78,7 +78,7 @@
   "scenario_result_set_sha256": "74ab7d432ce2df786f2075add7914f0ff63813310217f0a92451749919072fcb",
   "source_refs": {
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "experimental_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
+    "experimental_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2"
   },
   "planner_execution_authorized": false,
   "claim_ceiling": "Route proposal comparison only; no analyzer invocation, network access, billing estimate, execution authorization, CI decision, or release permission.",
@@ -100,21 +100,27 @@
       "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
       "superseded_observed_at_utc": null,
       "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "f1f5e4b02c9488ed7123e227edd4dedbce42fb4e",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
+      "replayed_at_utc": "2026-10-27T01:22:31Z"
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T22:44:00Z",
+    "replayed_at_utc": "2026-10-27T01:22:31Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "candidate_invoked": false,
-    "replay_result_sha256": "3caca690f9c116dab84787abd0397d3ed41563429a85e6d8296ff0fbeca1006b",
+    "replay_result_sha256": "b065303f994508a83c0515402587042c9014f6b6148274e80579735f9e612a48",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
-    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968"
+    "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
   },
-  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
 }

@@ -1,8 +1,8 @@
 {
   "schema_version": "toolbox-execution-effect-receipt-route-evidence-r0",
   "tool_id": "maintenance.preflight_execution_effect_receipt",
-  "observed_at_utc": "2026-10-26T22:44:00Z",
-  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "observed_at_utc": "2026-10-27T01:22:31Z",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_git_blob_sha1": "627881277a0a90c47b040bca24a6db52851ebe91",
   "route_profile": {
@@ -17,7 +17,7 @@
     "allowed_execution_modes": [
       "READ_ONLY_RUN"
     ],
-    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
@@ -39,7 +39,7 @@
       "include_experimental_tool_ids": [],
       "decision": "INCOMPLETE",
       "selected_tool_ids": [],
-      "result_sha256": "8d41b16483ba86766397e11886799c2aa8cf504c80cd7f974feb57949f691009",
+      "result_sha256": "21b3c1fda1c9a2beb5189b013674fcb288516289ff8cdb0ddb83e47056ca72ee",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -81,7 +81,7 @@
       "selected_tool_ids": [
         "maintenance.preflight_execution_effect_receipt"
       ],
-      "result_sha256": "660b6bd65c24e44b489ccb7992b99515c0d9a0d9f4f928e0a21345955bc8b248",
+      "result_sha256": "314140535ddf624a7acdd81240887684989c78d09114f7455fb0eaf5696769d1",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -134,7 +134,7 @@
       "selected_tool_ids": [
         "maintenance.preflight_execution_effect_receipt"
       ],
-      "result_sha256": "478a39490fcaaafa1932e520b725cbdd17f51058f79d4310dda89e20fd6ef067",
+      "result_sha256": "f3c33a40eb8609ba7ebb44376553f6b96e0e4e33480fb107bd78df420cd473f3",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -183,7 +183,7 @@
       ],
       "decision": "INCOMPLETE",
       "selected_tool_ids": [],
-      "result_sha256": "fd8fa251a25eea58df7b936842b487104919dfdfcec7e0d28e96d243386b6175",
+      "result_sha256": "1e879e437dfcda2d71daba3dab05428ac067a2501cc2f3f346b9e25f3ef781b5",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -228,19 +228,25 @@
       "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
       "superseded_observed_at_utc": "2026-10-26T22:04:06Z",
       "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "f46f8bdf1e6419f0eace5507f6c2580c431f8352",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
+      "replayed_at_utc": "2026-10-27T01:22:31Z"
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T22:44:00Z",
+    "replayed_at_utc": "2026-10-27T01:22:31Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "candidate_invoked": false,
-    "replay_result_sha256": "ee07a1874de4c1092fd4a8b3eb3e9ac2de8ff82fd5b7da0d52737ef9af6a7b5c",
+    "replay_result_sha256": "e600272eef9cc66b3bb33d61f4102fd7fe5af388488642d5527fd11dccab39d4",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
-    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968"
+    "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02"
   }
 }

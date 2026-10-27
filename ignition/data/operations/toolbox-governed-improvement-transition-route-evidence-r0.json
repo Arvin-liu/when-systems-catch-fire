@@ -1,8 +1,8 @@
 {
   "schema_version": "toolbox-governed-improvement-transition-route-evidence-r0",
   "candidate_tool_id": "maintenance.preflight_governed_improvement_transition",
-  "observed_at_utc": "2026-10-26T22:47:07Z",
-  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "observed_at_utc": "2026-10-27T01:22:51Z",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_git_blob_sha1": "46569aabe09f825e4a41ae4bd9167442a4d59982",
   "route_trials_replayed": 2,
@@ -17,7 +17,7 @@
         "Bounded REVIEW_REQUIRED transition-delta JSON with evaluation-anchor findings, caller-declared quality/cost/failure/authority deltas, rollback status, and explicit unverified/unauthorized claims."
       ],
       "target_candidate_rejection": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
-      "result_sha256": "63f074321fe5b2f8437d728876024c92233538e18c076ead310e9982365b34a7",
+      "result_sha256": "4b04dd5998003d819051adc728603b1333301ef58b89984255a0439d858beb59",
       "candidate_invoked": false,
       "provider_calls_made": 0,
       "execution_authorized": false
@@ -33,7 +33,7 @@
       ],
       "unmet_outputs": [],
       "target_candidate_rejection": null,
-      "result_sha256": "33e1e1932035d127a590e8d5808fa9483e120b6aed5c8ac1fe9e47d322b21165",
+      "result_sha256": "7959c434a8dd038bbbdc9ef5607f2941f1d292f8bc4234dd6f251f23f033cb6c",
       "candidate_invoked": false,
       "provider_calls_made": 0,
       "execution_authorized": false
@@ -44,16 +44,16 @@
   "provider_calls_made": 0,
   "claim_ceiling": "Offline route planning only; no candidate invocation, provider call, permission grant, Owner approval, scientific validity, or Current promotion is established.",
   "catalog_replay": {
-    "previous_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
-    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-26T22:47:07Z",
+    "replayed_at_utc": "2026-10-27T01:22:51Z",
     "route_trials_replayed": 2,
     "all_expected_decisions_reproduced": true,
     "candidate_invoked": false,
     "provider_calls_made": 0,
     "execution_authorized": false,
-    "replay_result_sha256": "07b465c0e4aa643c6ac8590bcdc0e543be35c92f04d2a81caef48d7f8fb24480",
+    "replay_result_sha256": "8c7075d247ffb5cce025d313582d99ea0fcd9cd1568f6d15b8f9b68115f7877f",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   },
   "catalog_replay_history": [
@@ -74,6 +74,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
       "superseded_observed_at_utc": "2026-10-26T22:04:06Z",
       "replayed_at_utc": "2026-10-26T22:46:17Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "7658d9c029ef93976482536d218fd7a69dae478c",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:47:07Z",
+      "replayed_at_utc": "2026-10-27T01:22:51Z"
     }
   ]
 }

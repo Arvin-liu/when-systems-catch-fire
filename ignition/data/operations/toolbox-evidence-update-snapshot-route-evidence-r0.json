@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-evidence-update-snapshot-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
-  "observed_at_utc": "2026-10-26T22:44:00Z",
+  "observed_at_utc": "2026-10-27T01:22:31Z",
   "candidate_tool_id": "research.compare_evidence_update_snapshots",
-  "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
@@ -65,13 +65,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 83,
-        "omitted_rejected_candidate_count": 82,
+        "rejected_candidate_count": 85,
+        "omitted_rejected_candidate_count": 84,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "1b10a4e6a11b1058f9c68061b4fef0c82e3962d537c25d8f3e78cc5c69a6903e",
+      "planner_output_sha256": "f87c6a12d1c46217fa23b01fc4630536e7d27fd6a23bb33b6cafbf29fa1c349b",
       "decision": "INCOMPLETE"
     },
     {
@@ -134,13 +134,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 82,
-        "omitted_rejected_candidate_count": 81,
+        "rejected_candidate_count": 84,
+        "omitted_rejected_candidate_count": 83,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "a11189185efee0496c19e9513e0ef884fee2d8e34e1918f4553d7c0a33525939",
+      "planner_output_sha256": "4ae7af4237a164bc2653510dc28535f1d3a2f9356ed5d60c75e6cb185f2a2018",
       "decision": "COMPLETE"
     },
     {
@@ -204,13 +204,13 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           }
         ],
-        "rejected_candidate_count": 82,
-        "omitted_rejected_candidate_count": 81,
+        "rejected_candidate_count": 84,
+        "omitted_rejected_candidate_count": 83,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "f6ef85a9b312ef1d2074324d16041e6e290a9dc9ac9dd1d56ccce5729678fd08",
+      "planner_output_sha256": "7a646a95ac5bc993d519a63ce109517ad6c72a19523c24c2e63a661234079320",
       "decision": "COMPLETE"
     }
   ],
@@ -229,9 +229,9 @@
   "provider_calls_made": 0,
   "claim_ceiling": "Offline route planning only. The candidate was not invoked, no provider was called, and no permission, Owner approval, scientific validity, or Current promotion is established.",
   "catalog_replay": {
-    "replayed_at_utc": "2026-10-26T22:47:07Z",
-    "previous_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
-    "candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "replayed_at_utc": "2026-10-27T01:22:31Z",
+    "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
@@ -239,7 +239,7 @@
     "provider_calls_made": 0,
     "execution_authorized": false,
     "scope": "Only candidate catalog digest and rejected-candidate counts changed; selected tools, decisions, and permission boundary were reproduced unchanged.",
-    "replay_result_sha256": "cbcae2cb0148d1b134afd38362943c55725e3abc9b3c6462df510c7e0f6af9d6",
+    "replay_result_sha256": "d6828018cc155b0879f8e8db1f24c97ea7cc00b594f95de83287ecbeeecddec8",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   },
   "catalog_replay_history": [
@@ -260,6 +260,12 @@
       "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
       "superseded_observed_at_utc": "2026-10-26T22:04:06Z",
       "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "ca093b7141b0974bba7533fb18303ff8f090e787",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
+      "replayed_at_utc": "2026-10-27T01:22:31Z"
     }
   ]
 }

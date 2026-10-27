@@ -16,7 +16,7 @@
     "eutils.ncbi.nlm.nih.gov"
   ],
   "route_default": "EXCLUDED",
-  "candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "catalog_replay_history": [
     {
@@ -27,6 +27,11 @@
       "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
       "superseded_profile_git_blob_sha1": "10db980f9497b199fde01f52deaba992c83aaa78",
       "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_candidate_catalog_git_blob_sha1": "2612f0498963b2f24d86dc7ddd9b4a3439ccba3b",
+      "superseded_profile_git_blob_sha1": "f602277d77242c70b1fba2d9bacb2a761302773b",
+      "replayed_at_utc": "2026-10-27T01:22:26Z"
     }
   ]
 }
