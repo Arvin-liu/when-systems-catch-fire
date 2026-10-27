@@ -20,6 +20,30 @@ SPEC.loader.exec_module(TOOL)
 
 
 class ToolboxIdentityCardTests(unittest.TestCase):
+    def test_execution_state_lineage_card_preserves_c1_scope_permissions_and_entrypoint(self) -> None:
+        document = TOOL.build_cards()
+        cards = {item["tool_id"]: item for item in document["cards"]}
+        card = cards["maintenance.audit_execution_state_lineage"]
+        c1 = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-execution-state-lineage-c1-evidence-r0.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(card["card_kind"], "OPTIONAL_EXPERIMENTAL_TOOL")
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertEqual(card["evidence_level"], "REAL_TOOL_TEST")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertEqual(card["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "SPECIALIZED")
+        self.assertEqual(c1["matched_test"]["candidate_finding"], "INACTIVE_TIP_ACCOUNTING_MISMATCH")
+        self.assertIn("synthetic", c1["comparison_scope"])
+        self.assertIn("maintenance.audit_execution_state_lineage", TOOL.render_human(document))
+
     def test_full_record_reader_is_specialized_by_matched_c1_comparison(self) -> None:
         document = TOOL.build_cards()
         cards = {item["tool_id"]: item for item in document["cards"]}
@@ -677,6 +701,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "research.lookup_datacite_doi_metadata",
             "maintenance.plan_validation_invocation_deduplication",
             "research.merge_selected_index_search_results",
+            "maintenance.audit_execution_state_lineage",
         }
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in candidates if card["tool_id"] not in specialized_tool_ids))
         self.assertTrue(all(card["comparison_evidence"]["status"] == "COMPARISON_UNKNOWN" for card in current))

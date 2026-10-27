@@ -1,0 +1,34 @@
+{
+  "candidate_catalog_git_blob_sha1": "f8fc6c9f8d6ed49c72b5f63c6af5619d2128f848",
+  "catalog_replay": {
+    "all_expected_decisions_reproduced": true
+  },
+  "claim_ceiling": "Route proposal only. It does not invoke the candidate or authorize execution, checkpoint resume, or rollback.",
+  "planner_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+  "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_trials": [
+    {
+      "candidate_invoked": false,
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "network_calls_made": 0,
+      "scenario": "default_off",
+      "selected_tool_ids": []
+    },
+    {
+      "candidate_invoked": false,
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "network_calls_made": 0,
+      "network_permission_required": false,
+      "scenario": "explicit_allowlist",
+      "selected_tool_ids": [
+        "maintenance.audit_execution_state_lineage"
+      ]
+    }
+  ],
+  "schema_version": "toolbox-execution-state-lineage-route-evidence-r0",
+  "task_profile_path": "ignition/data/operations/toolbox-execution-state-lineage-route-profile-r0.json",
+  "task_profile_sha256": "63938b4654effa159e7398168ecfd07a21bb95fd72693c254b2aaa2f814046ab",
+  "tool_id": "maintenance.audit_execution_state_lineage"
+}

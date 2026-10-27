@@ -14446,6 +14446,230 @@
         "Caller supplies all source receipts explicitly; the router does not retrieve provider results or grant network permission."
       ],
       "claim_ceiling": "This deterministic offline result grouper reports exact normalized DOI overlap among caller-supplied bounded provider receipts. It does not establish query equivalence, source authenticity, relevance, completeness, bibliographic correctness, article status, scientific support, or scientific validity."
+    },
+    {
+      "tool_id": "maintenance.audit_execution_state_lineage",
+      "display_name": {
+        "zh": "执行状态谱系审计器",
+        "en": "Execution State Lineage Auditor"
+      },
+      "description": "Audit a bounded caller-supplied checkpoint DAG, selected active tip, accounting for every inactive leaf, resume-capsule bindings and strict rollback ancestry. Read-only, offline and default off.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no Owner, execution, recovery, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_execution_state_lineage.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_execution_state_lineage.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_execution_state_lineage.py",
+          "role": "BOUNDED_READ_ONLY_LINEAGE_AUDITOR"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-execution-state-lineage-input-r0.schema.json",
+          "role": "STRICT_BOUNDED_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-execution-state-lineage-output-r0.schema.json",
+          "role": "MACHINE_READABLE_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_execution_state_lineage.py",
+          "role": "STRUCTURAL_NEGATIVE_CONTROLS_AND_MATCHED_KERNEL_COMPARISON"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_execution_state_lineage_routing.py",
+          "role": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTING_TEST"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-execution-state-lineage/valid-two-branch-r0.json",
+          "role": "SYNTHETIC_VALID_BRANCH_FIXTURE"
+        },
+        {
+          "path": "ignition/tests/fixtures/toolbox-execution-state-lineage/unaccounted-inactive-tip-r0.json",
+          "role": "SYNTHETIC_UNACCOUNTED_TIP_NEGATIVE_FIXTURE"
+        },
+        {
+          "path": "ignition/docs/operations/execution-state-lineage-audit.md",
+          "role": "TASK_FIT_LIMITS_AND_INVOCATION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-c1-evidence-r0.json",
+          "role": "C1_SCOPE_AND_REPLACEMENT_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-route-profile-r0.json",
+          "role": "EXACT_DEFAULT_OFF_TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-state-lineage-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_DEFAULT_OFF_OPTIONAL_ROUTE_PLANNER"
+        },
+        {
+          "path": "ignition/tools/operations/validate_toolbox_candidates.py",
+          "role": "CANDIDATE_CARD_POLICY_VALIDATOR"
+        },
+        {
+          "path": "ignition/tools/operations/build_toolbox_identity_cards.py",
+          "role": "GENERATED_IDENTITY_CARD_BUILDER"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "GENERATED_IDENTITY_CARD_REGRESSION_SUITE"
+        },
+        {
+          "path": "ignition/agent_kernel/contracts.py",
+          "role": "PAIRWISE_CHECKPOINT_AND_RESUME_LINEAGE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_portable_research_episode.py",
+          "role": "PORTABLE_ARTIFACT_LINEAGE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_execution_effect_receipt.py",
+          "role": "EXECUTION_OBSERVATION_BINDING_COMPARATOR"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/toolbox-execution-state-lineage-input-r0.schema.json"
+      ],
+      "good_for": [
+        "Reconstructing the ancestor path for one caller-declared active checkpoint in a bounded checkpoint DAG.",
+        "Finding unknown parents, cycles, duplicate IDs, cross-run parent links, non-leaf active checkpoints, and unaccounted inactive leaf tips.",
+        "Checking caller-declared resume capsule run/checkpoint/state-reference/digest binding and changed executor identity.",
+        "Checking that a rollback target is a strict ancestor of its declared source checkpoint."
+      ],
+      "not_for": [
+        "Authenticating checkpoint records, callers, digests, state bytes, actors, or completeness/currentness of caller declarations.",
+        "Persisting or compressing memory, assessing semantic quality or branch isolation, executing resume/rollback, or authorizing an action.",
+        "Inspecting files or state referenced by input values, making network requests, or proving scientific or release truth."
+      ],
+      "only_if": [
+        "The task explicitly needs structural accounting of a bounded caller-supplied checkpoint DAG with one declared active tip.",
+        "The caller can provide the complete checkpoint projection and accepts that no supplied declaration is authenticated.",
+        "Input is at most 262144 UTF-8 JSON bytes and conforms to toolbox-execution-state-lineage-input-r0."
+      ],
+      "counterindicated_when": [
+        "Checkpoint source authenticity, complete/current source retrieval, or state-byte inspection is required.",
+        "The task requires semantic branch isolation, memory compression quality, causal rollback effects, or actual execution.",
+        "A single checkpoint/resume pair, versioned research artifact package, or post-run effect observation is the whole task."
+      ],
+      "accepted_input_types": [
+        "One UTF-8 JSON object conforming to toolbox-execution-state-lineage-input-r0; maximum 262144 bytes."
+      ],
+      "output_types": [
+        "Deterministic checkpoint DAG projection with active path, all leaf tips, inactive-tip accounting, resume-binding and rollback-ancestry findings; no checkpoint state bytes are read."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "BOUNDED_OFFLINE_STDIN_PROCESS",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_execution_state_lineage.py",
+          "ignition/schemas/operations/toolbox-execution-state-lineage-input-r0.schema.json"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads one bounded stdin JSON value plus its local input schema and source file for schema validation and source fingerprinting; writes deterministic JSON to stdout only. No checkpoint state bytes, network, or files are accessed or changed."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "jsonschema with Draft 2020-12 support; installed version is environment-supplied and not pinned by this candidate."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Input bounds cap checkpoints and resume capsules at 256 each and rollback records at 128. No matched latency, memory, operator-time, or monetary-cost benchmark was run."
+      },
+      "alternatives": [
+        {
+          "tool_id": "collaboration.validate_portable_research_episode",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Validates versioned research artifacts, execution references, reviews, omissions, and fork maps; it does not account for checkpoint DAG tips or rollback ancestry."
+        },
+        {
+          "tool_id": "maintenance.preflight_execution_effect_receipt",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Binds one declared run to later caller observation and selected local file digests; it does not account for multi-checkpoint active/inactive branches."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Account for all leaves in a caller-supplied checkpoint graph while identifying exactly one declared active tip and its ancestor path.",
+        "Check resume-capsule bindings and strict rollback ancestor relations across a bounded checkpoint projection without reading checkpoint state."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Matched synthetic sibling-checkpoint comparison against the Kernel pairwise resume validator, plus contract-scope inspection of the portable research episode and execution effect receipt tools. No same-task performance or cost comparison was run.",
+        "compared_tool_ids": [
+          "collaboration.validate_portable_research_episode",
+          "maintenance.preflight_execution_effect_receipt"
+        ],
+        "compared_implementation_refs": [
+          "ignition/agent_kernel/contracts.py",
+          "ignition/tools/toolbox_portable_research_episode.py",
+          "ignition/tools/toolbox_execution_effect_receipt.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-execution-state-lineage-c1-evidence-r0.json",
+          "ignition/tests/test_toolbox_execution_state_lineage.py",
+          "ignition/tests/fixtures/toolbox-execution-state-lineage/valid-two-branch-r0.json",
+          "ignition/tests/fixtures/toolbox-execution-state-lineage/unaccounted-inactive-tip-r0.json"
+        ],
+        "findings": [
+          "The Kernel validator accepts each valid checkpoint/resume pair independently; the matched test demonstrates that this does not account for a sibling inactive tip across the graph.",
+          "The portable research episode checks versioned artifact and fork relations, while the execution effect receipt checks one run and later observation; neither implements this bounded checkpoint-tip accounting contract.",
+          "The candidate remains specialized, offline and default off. Existing tools retain their distinct useful scopes; replacement or retirement is not supported by the current comparison.",
+          "The comparison uses synthetic records and contract inspection only; comparative reliability, latency, operator effort, and monetary cost remain unknown."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "A matched negative-control test demonstrates a graph-level inactive-tip check not performed by the compared pairwise or adjacent-scope tools. Comparison is narrow and synthetic; no replacement or retirement of existing tools is supported."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "Optional experimental tool only; callers must explicitly allowlist it. Keep the Kernel pairwise resume validator and the two compared tools for their distinct contracts.",
+          "Do not treat PASS as authentication, checkpoint completeness, branch isolation, authorization, or successful rollback."
+        ],
+        "rollback_steps": [
+          "Remove the candidate card, implementation, schemas, docs, fixtures, focused and route tests, C1 and route evidence, then regenerate identity cards and TOOLBOX.md.",
+          "Preserve the comparison and test evidence as historical records if the executable candidate is retired."
+        ]
+      },
+      "fallback": "Use the Kernel pairwise validator for one checkpoint/resume pair; use the portable episode validator for research artifact version/fork relations; use the execution effect receipt for a bounded run/observation check. If source authenticity or actual state must be established, inspect the authorized source through its independently governed path.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_execution_state_lineage.py",
+          "ignition/tests/test_toolbox_execution_state_lineage_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tools/operations/validate_toolbox_candidates.py",
+          "ignition/tools/operations/build_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Reject duplicate JSON keys, malformed or oversized input, unknown schema fields, duplicate IDs, unknown parents, cycles, cross-run parent links, non-leaf active checkpoints and incomplete inactive-tip accounting.",
+          "Reject mismatched resume run/state/digest bindings, unchanged executor identity, and rollback targets that are not strict ancestors.",
+          "Default routing selects no optional candidate; explicit allowlisting proposes this offline tool only and grants no execution authorization."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Only for tasks explicitly requiring structural audit of a complete bounded caller-supplied checkpoint DAG, one active leaf, inactive-tip accounting, resume bindings, or rollback ancestry.",
+        "The caller explicitly allowlists this experimental candidate; default routing remains off.",
+        "Do not route when source authentication, state-byte review, semantic isolation/compression evaluation, or actual resume/rollback execution is required."
+      ],
+      "claim_ceiling": "Checks only the structure of caller-declared checkpoint parent links, active and inactive leaf accounting, resume-capsule identity bindings, and rollback ancestor references. It does not authenticate callers, records, digests, state bytes, branch isolation, compression quality, execution, or external effects; it reads no checkpoint state and grants no permission."
     }
   ]
 }
