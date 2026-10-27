@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "semantic_agreement_rate_min": 0.99,
+    "false_accept_rate_max": 0.0,
+    "false_reject_rate_max": 0.01,
+    "precondition_enforcement_rate_min": 1.0,
+    "postcondition_enforcement_rate_min": 1.0,
+    "registry_contamination_count_max": 0,
+    "mutation_detection_rate_min": 1.0,
+    "revision_history_consistency_rate_min": 1.0,
+    "rollback_restoration_rate_min": 1.0,
+    "sequential_composition_correctness_rate_min": 1.0,
+    "failure_propagation_correctness_rate_min": 1.0,
+    "crash_rate_max": 0.0
+  },
+  "critical_conditions": [
+    "false_accept_rate > 0 — a forbidden/unsupported construct was silently executed instead of rejected (FAIL_CLOSED_LANGUAGE_BOUNDARY)",
+    "successful_registry_contamination_count > 0 — a precondition/postcondition failure entered the successful registry (CONTRACT_ENFORCEMENT)",
+    "mutation_detection_rate < 1.0 — an artifact or trace mutation was not detected by the validation chain (ARTIFACT_AND_TRACE_INTEGRITY)"
+  ],
+  "verdicts": [
+    "SUPPORTED_WITHIN_BOUNDED_DOMAIN",
+    "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES",
+    "NULL_OR_INCONCLUSIVE",
+    "CONTRADICTED_WITHIN_BOUNDED_DOMAIN",
+    "TEST_INVALID_OR_ABORTED"
+  ]
+}

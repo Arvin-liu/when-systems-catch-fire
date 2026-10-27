@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step18-scope-split-admission-objects-r1.schema.json",
+  "title": "Task150 Step18 scope-split admission objects",
+  "description": "Provider-neutral base-operation candidate separated from the deferred Architecture Delta extension.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "record_type",
+    "status",
+    "formal_previous_commit",
+    "owner_review",
+    "historical_preservation",
+    "canonical_source",
+    "base_operation",
+    "delta_extension",
+    "aesthetic_boundary",
+    "gate_topology",
+    "registry_boundary",
+    "scope_freeze",
+    "result",
+    "next_step",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step18-scope-split-admission-objects-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "18"},
+    "record_type": {"const": "SCOPE_SPLIT_ADMISSION_OBJECTS"},
+    "status": {"const": "ADMISSION_OBJECTS_DECOMPOSED_BASE_CANDIDATE_DELTA_DEFERRED"},
+    "formal_previous_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "owner_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "amendment_path", "historical_step14_defer_valid", "historical_step15_closeout_preserved", "no_evidence_rewritten"],
+      "properties": {
+        "decision": {"const": "REOPEN_TASK150_WITH_SCOPE_SPLIT"},
+        "amendment_path": {"const": "agent-commands/IGNITION-20260902-150-owner-reopen-scope-split-r1.md"},
+        "historical_step14_defer_valid": {"const": true},
+        "historical_step15_closeout_preserved": {"const": true},
+        "no_evidence_rewritten": {"const": true}
+      }
+    },
+    "historical_preservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step14_result", "step14_reason", "step15_result", "step15_formal_head", "historical_receipts_immutable"],
+      "properties": {
+        "step14_result": {"const": "DEFER"},
+        "step14_reason": {"const": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER_AND_OWNER_VISUAL_ACCEPTANCE_PENDING"},
+        "step15_result": {"const": "TASK150_STEP15_DRAFT_PR_OWNER_REVIEW_STOP"},
+        "step15_formal_head": {"const": "03203326defd862dc24352080722dadb94dc6721"},
+        "historical_receipts_immutable": {"const": true}
+      }
+    },
+    "canonical_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "role", "source_revision", "sha256", "nodes", "edges", "authority"],
+      "properties": {
+        "path": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "role": {"const": "CURRENT_CANONICAL_ARCHITECTURE_SOURCE"},
+        "source_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "nodes": {"const": 24},
+        "edges": {"const": 24},
+        "authority": {"const": "IGNITION_CANONICAL_AUTHORED_SOURCE"}
+      }
+    },
+    "base_operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["admission_object", "operation_id", "status", "ownership", "operation_class", "input_types", "output_types", "canonical_scope", "provider_class", "provider_binding", "execution_boundary", "gate_family", "gates", "claim_ceiling"],
+      "properties": {
+        "admission_object": {"const": "BASE_OPERATION"},
+        "operation_id": {"const": "visualization.render_derived_system_view"},
+        "status": {"const": "CURRENT_BOUNDED_CANDIDATE"},
+        "ownership": {"const": "IGNITION"},
+        "operation_class": {"const": "VALIDATION_AUDIT"},
+        "input_types": {"const": ["CURRENT_CANONICAL_ARCHITECTURE_SOURCE", "AUTHORED_ARCHITECTURE_SOURCE"]},
+        "output_types": {"const": ["DERIVED_VISUALIZATION_ARTIFACT"]},
+        "canonical_scope": {"const": "CANONICAL/AUTHORED_SOURCE -> ARCHIFY_COMPATIBLE_PROVIDER_ADAPTER -> STANDALONE_DERIVED_VISUALIZATION_ARTIFACT"},
+        "provider_class": {"const": "DERIVED_VISUALIZATION_PROVIDER"},
+        "provider_binding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["provider_id", "role", "tested_observation_ref", "compatibility_status", "operation_definition_is_provider_neutral"],
+          "properties": {
+            "provider_id": {"const": "archify"},
+            "role": {"const": "TESTED_OPTIONAL_PROVIDER_IMPLEMENTATION"},
+            "tested_observation_ref": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+            "compatibility_status": {"const": "REQUIRES_STEP22_FRESH_IMMUTABLE_COMPATIBILITY_CHECK"},
+            "operation_definition_is_provider_neutral": {"const": true}
+          }
+        },
+        "execution_boundary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode", "repository_mutation", "unrelated_external_action", "automatic_installation", "canonical_write_back", "default_renderer"],
+          "properties": {
+            "mode": {"const": "READ_ONLY_RUN"},
+            "repository_mutation": {"const": "FORBIDDEN"},
+            "unrelated_external_action": {"const": "FORBIDDEN"},
+            "automatic_installation": {"const": false},
+            "canonical_write_back": {"const": false},
+            "default_renderer": {"const": "NOT_SELECTED"}
+          }
+        },
+        "gate_family": {"const": "BASE_OPERATION_GATES"},
+        "gates": {
+          "type": "array",
+          "minItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "result"],
+            "properties": {
+              "id": {"type": "string"},
+              "result": {"type": "string"}
+            }
+          }
+        },
+        "claim_ceiling": {"type": "string"}
+      }
+    },
+    "delta_extension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["admission_object", "extension_id", "status", "operation_registry_status", "gate_family", "gate", "retained_evidence", "promotion_guard", "claim_ceiling"],
+      "properties": {
+        "admission_object": {"const": "EXPERIMENTAL_EXTENSION"},
+        "extension_id": {"const": "architecture_delta.before_delta_after"},
+        "status": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "operation_registry_status": {"const": "NOT_A_CURRENT_OPERATION"},
+        "gate_family": {"const": "DELTA_EXTENSION_GATES"},
+        "gate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "result", "diagnostic_code", "diagnostics", "source"],
+          "properties": {
+            "id": {"const": "delta_viewport_containment_zero_failure"},
+            "result": {"const": "FAIL_DEFERRED"},
+            "diagnostic_code": {"const": "viewer/viewport-overflow"},
+            "diagnostics": {"const": 3},
+            "source": {"const": "ignition/data/operations/iterations/150/step04-viewport-residual-repair.json"}
+          }
+        },
+        "retained_evidence": {"type": "object"},
+        "promotion_guard": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["delta_failure_can_pollute_base", "base_pass_promotes_delta", "delta_requires_separate_admission", "registered_in_current_registry"],
+          "properties": {
+            "delta_failure_can_pollute_base": {"const": false},
+            "base_pass_promotes_delta": {"const": false},
+            "delta_requires_separate_admission": {"const": true},
+            "registered_in_current_registry": {"const": false}
+          }
+        },
+        "claim_ceiling": {"type": "string"}
+      }
+    },
+    "aesthetic_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["functional_visual_admission", "owner_aesthetic_endorsement", "owner_aesthetic_endorsement_required_for_base", "owner_rejected_visual", "owner_visual_accepted", "future_branded_or_publication_use_requires_separate_gate"],
+      "properties": {
+        "functional_visual_admission": {"const": "ALLOWED_TO_PROCEED_TO_FRESH_BASE_GATE_REVALIDATION"},
+        "owner_aesthetic_endorsement": {"const": "NOT_GRANTED"},
+        "owner_aesthetic_endorsement_required_for_base": {"const": false},
+        "owner_rejected_visual": {"const": false},
+        "owner_visual_accepted": {"const": false},
+        "future_branded_or_publication_use_requires_separate_gate": {"const": true}
+      }
+    },
+    "gate_topology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base_gate_ids", "delta_gate_ids", "base_operation_admission_requires_all_base_gates", "delta_failure_cannot_pollute_base", "base_pass_cannot_promote_delta", "combined_gate_removed_as_admission_model"],
+      "properties": {
+        "base_gate_ids": {"type": "array", "minItems": 12, "uniqueItems": true, "items": {"type": "string"}},
+        "delta_gate_ids": {"const": ["delta_viewport_containment_zero_failure"]},
+        "base_operation_admission_requires_all_base_gates": {"const": true},
+        "delta_failure_cannot_pollute_base": {"const": true},
+        "base_pass_cannot_promote_delta": {"const": true},
+        "combined_gate_removed_as_admission_model": {"const": true}
+      }
+    },
+    "registry_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "operation_count_before", "operation_count_after", "operation_present", "registry_write_in_step18", "registry_write_step", "delta_registered", "provider_specific_operation_id_registered"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+        "operation_count_before": {"const": 19},
+        "operation_count_after": {"const": 19},
+        "operation_present": {"const": false},
+        "registry_write_in_step18": {"const": false},
+        "registry_write_step": {"const": "23_AFTER_STEPS18_22"},
+        "delta_registered": {"const": false},
+        "provider_specific_operation_id_registered": {"const": false}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "agent_reach_admission", "agent_reach_install", "agent_reach_auth", "authenticated_channel_admission", "live_external_invocation", "default_renderer", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "agent_reach_admission": {"const": "NO_ADMISSION"},
+        "agent_reach_install": {"const": "NO_INSTALL"},
+        "agent_reach_auth": {"const": "NO_AUTH"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP18_SCOPE_SPLIT_ADMISSION_OBJECTS_RECORDED"},
+    "next_step": {"const": "TASK150_STEP19_GATE_TOPOLOGY_REGRESSION"},
+    "claim_ceiling": {"type": "string"}
+  }
+}

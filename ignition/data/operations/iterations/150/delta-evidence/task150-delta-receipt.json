@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "compare",
+  "type": "architecture",
+  "comparatorVersion": 1,
+  "canonicalVersion": 1,
+  "completeness": "complete",
+  "proofLevel": "revision-pinned",
+  "base": {
+    "title": "点火整体架构：从来源到可读结果",
+    "rawSha256": "68b01b63b4c36b5cc30ddf8526a8cc3c16164c783010dc4b0fd2b2027afe6ea7",
+    "semanticSha256": "209fd50634d3305d17eca87d3a08c21b668d42dd5a72383fa20bc218b72c3638",
+    "bytes": 19250,
+    "revision": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf"
+  },
+  "head": {
+    "title": "点火整体架构：从来源到可读结果",
+    "rawSha256": "447a4ecf69096c9c388772e906960accb41f03486c24a9efee89cfbc28703bb5",
+    "semanticSha256": "a411a8698a664a4a7376d0f33a366cc03c3762a5e87319acbf4ce28f5f206e34",
+    "bytes": 19250,
+    "revision": "14c2595d796494286caf31378173fd9dd027edcf"
+  },
+  "summary": {
+    "components": {
+      "added": 0,
+      "changed": 0,
+      "evidenceChanged": 0,
+      "removed": 0,
+      "moved": 0
+    },
+    "connections": {
+      "added": 0,
+      "changed": 0,
+      "removed": 0,
+      "rerouted": 0
+    },
+    "boundaries": {
+      "added": 0,
+      "changed": 0,
+      "removed": 0,
+      "geometryChanged": 0
+    },
+    "presentationChanged": false,
+    "provenanceChanged": true
+  },
+  "changes": {
+    "components": [],
+    "connections": [],
+    "boundaries": []
+  },
+  "identity": {
+    "components": "components[].id",
+    "connections": "connections[].id (required)",
+    "boundaries": "boundaries[].kind + boundaries[].label (derived)"
+  },
+  "view": {
+    "visualPreset": "classic"
+  },
+  "limitations": [
+    "Authored Architecture IR only; no runtime impact, causality, risk, or mergeability is inferred.",
+    "Boundary identity is conservatively derived from kind + label."
+  ],
+  "artifact": {
+    "sha256": "0c03203600ea496e2d7b015c181b673f9e9e489b6c4141878c56551d3999390a",
+    "bytes": 2157340
+  },
+  "validation": {
+    "checksPassed": 28,
+    "checkCount": 28,
+    "baseComposition": "pass",
+    "headComposition": "pass"
+  }
+}

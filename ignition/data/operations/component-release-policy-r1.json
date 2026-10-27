@@ -1,0 +1,21 @@
+{
+  "schema_version": "component-release-policy-r1",
+  "purpose": "Declarative file closure for independently versioned repository component artifacts.",
+  "claim_ceiling": "A prepared bundle establishes its exact source bytes and test receipt; it does not establish publication, activation, external source access, or research claim validity.",
+  "components": [
+    {
+      "component_id": "research_workflow_slot",
+      "versioning": "semver",
+      "bundle_components": [
+        "research_workflow_slot",
+        "openalex_adapter_r1",
+        "crossref_verifier_r1"
+      ],
+      "validation_target_ids": [
+        "r_research_slot_consumers"
+      ],
+      "release_tag_template": "components/research_workflow_slot/v{version}",
+      "evidence": "The #259 live research workflow dynamically loads the OpenAlex and Crossref provider files. Bundling their registered component paths with the workflow preserves the exact source tree required by those imports."
+    }
+  ]
+}

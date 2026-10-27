@@ -1,0 +1,36 @@
+{
+  "claim_ceiling": "Deterministic repository projection equality only; no authority, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "output_count": 12,
+  "pass_1_sha256": {
+    ".github/README.md": "329f0461edc1c14705eb6bccff2686e50f9acc6b839af8d8c20376a2ec866ab5",
+    "ignition/AI-HANDOFF.md": "7a324e077ba7a95f8ef2034e985d0976cb2bee1304e392c1ba9fd22cce503854",
+    "ignition/AI-START-HERE.md": "af39507b5fba548fad5669faeee30af7373f790d9ab9cd6f33014602fb9d4d41",
+    "ignition/ARCHITECTURE.md": "e2c57e3af480b9995301b996f93ddd8cbf012122d2f71ad5aec67b4ae1cbd073",
+    "ignition/STATE-CHANGELOG.md": "7b6bdf159b2b9164261dfd4d4d87aff9f4dee5528149bf679418d8f7ce3b3038",
+    "ignition/data/architecture/current-facts.json": "a1b251fa4362f837cdad3c64c3fffdabf150689ca28a662fb33717ee6c336cd8",
+    "ignition/data/operations/current-release-lifecycle-r1.json": "1874f7155449215cf10ba05e9d56fecd81d2533313ce53b02a22da3f46c1920c",
+    "ignition/data/operations/current-snapshot-r1.json": "c08a6a5a34e09775e3bda61f5260ed1a95f0a8ece43585369ac6d68ddee8b576",
+    "ignition/data/operations/current-task-lineage-status.json": "6c67082eb59d4e793da04d5bf7c061b346562951cdb13edb7a622811e35e9a5d",
+    "ignition/docs/architecture/current-facts.md": "4dee5083c70d070c99d66596fd7bc2a68d2db7cdaecad03a229292bf99da6521",
+    "ignition/docs/project-current-state.md": "c477ad79d718f4211d1831ec6c0b47b59f23636ab0af3917185137150b5df23f",
+    "ignition/llms.txt": "22066ecc53aca46906b5b942ef397544e7274e4638f6eb40f328881b5da8ca1d"
+  },
+  "pass_2_sha256": {
+    ".github/README.md": "329f0461edc1c14705eb6bccff2686e50f9acc6b839af8d8c20376a2ec866ab5",
+    "ignition/AI-HANDOFF.md": "7a324e077ba7a95f8ef2034e985d0976cb2bee1304e392c1ba9fd22cce503854",
+    "ignition/AI-START-HERE.md": "af39507b5fba548fad5669faeee30af7373f790d9ab9cd6f33014602fb9d4d41",
+    "ignition/ARCHITECTURE.md": "e2c57e3af480b9995301b996f93ddd8cbf012122d2f71ad5aec67b4ae1cbd073",
+    "ignition/STATE-CHANGELOG.md": "7b6bdf159b2b9164261dfd4d4d87aff9f4dee5528149bf679418d8f7ce3b3038",
+    "ignition/data/architecture/current-facts.json": "a1b251fa4362f837cdad3c64c3fffdabf150689ca28a662fb33717ee6c336cd8",
+    "ignition/data/operations/current-release-lifecycle-r1.json": "1874f7155449215cf10ba05e9d56fecd81d2533313ce53b02a22da3f46c1920c",
+    "ignition/data/operations/current-snapshot-r1.json": "c08a6a5a34e09775e3bda61f5260ed1a95f0a8ece43585369ac6d68ddee8b576",
+    "ignition/data/operations/current-task-lineage-status.json": "6c67082eb59d4e793da04d5bf7c061b346562951cdb13edb7a622811e35e9a5d",
+    "ignition/docs/architecture/current-facts.md": "4dee5083c70d070c99d66596fd7bc2a68d2db7cdaecad03a229292bf99da6521",
+    "ignition/docs/project-current-state.md": "c477ad79d718f4211d1831ec6c0b47b59f23636ab0af3917185137150b5df23f",
+    "ignition/llms.txt": "22066ecc53aca46906b5b942ef397544e7274e4638f6eb40f328881b5da8ca1d"
+  },
+  "passes_equal": true,
+  "result": "PASS",
+  "schema_version": "step12-deterministic-closure-r1",
+  "task_id": "IGNITION-20260821-130"
+}

@@ -1,0 +1,10 @@
+{
+  "claim_ceiling": "Lifecycle validation is repository-local coordination evidence only; it is not publication, external truth or epistemic acceptance.",
+  "current_phase": "RUNNING",
+  "errors": [],
+  "lifecycle_sha256": "132ef57386e4a6c8d3500ad096aaae6c850e6ac256407494f17fc3c68754d8c5",
+  "publication_state": "NOT_PUBLISHED",
+  "result": "PASS",
+  "schema_version": "current-release-lifecycle-audit-r1",
+  "task_id": "IGNITION-20260821-130"
+}

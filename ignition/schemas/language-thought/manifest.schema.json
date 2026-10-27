@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.example/schemas/language-thought/manifest.schema.json",
+  "title": "Language-Thought Logic Plane Manifest",
+  "type": "object",
+  "required": ["schema_version", "plane_id", "plane_version", "status", "architecture_decision", "claim_ceiling", "dimension_registry", "evidence_registry", "profiles", "cross_layer_coverage", "required_dimensions", "validator"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "plane_id": {"const": "language-thought-logic-plane"},
+    "architecture_decision": {"const": "ORTHOGONAL_PLANE_ACROSS_L0_L6_NOT_L7"},
+    "profiles": {"type": "array", "minItems": 4, "items": {"type": "object", "required": ["profile_id", "path", "coverage", "publication_authority"]}},
+    "cross_layer_coverage": {"const": ["L0", "L1", "L2", "L3", "L4", "L5", "L6"]},
+    "required_dimensions": {"type": "array", "minItems": 12, "uniqueItems": true}
+  },
+  "additionalProperties": true
+}

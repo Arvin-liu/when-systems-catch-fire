@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task142-step19-publication-and-terminality-r1.schema.json",
+  "title": "Task142 terminality and publication transaction contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "terminality", "obligation_boundary", "publication_boundary", "verification_boundary", "safety", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "task142-step19-publication-and-terminality-r1"},
+    "task_id": {"const": "IGNITION-20260827-142"},
+    "step": {"const": "19"},
+    "status": {"const": "PASS"},
+    "terminality": {"$ref": "#/$defs/terminality"},
+    "obligation_boundary": {"$ref": "#/$defs/obligationBoundary"},
+    "publication_boundary": {"$ref": "#/$defs/publicationBoundary"},
+    "verification_boundary": {"$ref": "#/$defs/verificationBoundary"},
+    "safety": {"$ref": "#/$defs/safety"},
+    "claim_ceiling": {"const": "Task142 repository-local terminality and publication-contract evidence only; the exact release SHA, remote-ref observation, fresh-clone regression and 1111 witness remain separate observations, with no validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance inferred."}
+  },
+  "$defs": {
+    "terminality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formal_task_status", "terminal", "scope_complete", "basis", "source", "independence_rule"],
+      "properties": {
+        "formal_task_status": {"const": "COMPLETED_WITH_OPEN_OBLIGATIONS"},
+        "terminal": {"const": true},
+        "scope_complete": {"const": true},
+        "basis": {"type": "string", "minLength": 1},
+        "source": {"const": "ignition/data/operations/formal-task-lifecycle-r1.json"},
+        "independence_rule": {"const": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"}
+      }
+    },
+    "obligationBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["obligation_id", "status", "validated_completion_count", "attempt_count", "unreconciled_count", "observation_incomplete_count", "next_eligible_action", "source"],
+      "properties": {
+        "obligation_id": {"const": "LIVE_EXTERNAL_INVOCATION"},
+        "status": {"const": "OPEN"},
+        "validated_completion_count": {"const": 0},
+        "attempt_count": {"const": 6},
+        "unreconciled_count": {"const": 0},
+        "observation_incomplete_count": {"const": 2},
+        "next_eligible_action": {"const": "RUN_DYNAMIC_EXECUTOR_ADMISSION"},
+        "source": {"const": "ignition/data/operations/open-obligation-registry-r1.json"}
+      }
+    },
+    "publicationBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_ref", "authority", "ordinary_fast_forward_only", "formal_self_witness_commit", "independent_witness_repository", "independent_witness_status"],
+      "properties": {
+        "required_ref": {"const": "refs/heads/main"},
+        "authority": {"const": "REMOTE_REF_OBSERVATION"},
+        "ordinary_fast_forward_only": {"const": true},
+        "formal_self_witness_commit": {"const": false},
+        "independent_witness_repository": {"const": "Arvin-liu/1111"},
+        "independent_witness_status": {"const": "REQUIRED_ON_RECEIPT_BRANCH"}
+      }
+    },
+    "verificationBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targeted_regression", "projection_preflight", "candidate_full_suite", "fresh_clone_full_suite", "sha_equality", "evidence_authority"],
+      "properties": {
+        "targeted_regression": {"const": "RECORDED_BY_SEPARATE_RECEIPT"},
+        "projection_preflight": {"const": "RECORDED_BY_SEPARATE_RECEIPT"},
+        "candidate_full_suite": {"const": "RECORDED_BY_SEPARATE_RECEIPT"},
+        "fresh_clone_full_suite": {"const": "RECORDED_BY_SEPARATE_RECEIPT"},
+        "sha_equality": {"const": "RECORDED_BY_SEPARATE_RECEIPT"},
+        "evidence_authority": {"const": "1111_CONTROL_REPOSITORY_RECEIPT"}
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["live_process_started", "secret_content_read", "configuration_changed", "billing_changed", "install_or_upgrade_performed", "external_side_effect", "second_system_map_added"],
+      "properties": {
+        "live_process_started": {"const": false},
+        "secret_content_read": {"const": false},
+        "configuration_changed": {"const": false},
+        "billing_changed": {"const": false},
+        "install_or_upgrade_performed": {"const": false},
+        "external_side_effect": {"const": false},
+        "second_system_map_added": {"const": false}
+      }
+    }
+  }
+}

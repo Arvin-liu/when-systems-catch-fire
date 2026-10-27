@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/challenge-matrix-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "matrix_id", "exposure_arms", "challenge_arms"],
+  "properties": {
+    "schema_version": {"const": "challenge-matrix-r0"},
+    "matrix_id": {"const": "ESI-CHALLENGE-R0"},
+    "exposure_arms": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "material", "relation_preserved", "terminology_present", "style_matched"],
+        "properties": {
+          "id": {"pattern": "^E[0-6]_[A-Z0-9_]+$", "type": "string"},
+          "label": {"type": "string"},
+          "material": {"type": "string", "minLength": 20},
+          "relation_preserved": {"type": "boolean"},
+          "terminology_present": {"type": "boolean"},
+          "style_matched": {"type": "boolean"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "challenge_arms": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "prompt", "targeted_failure_mode", "expected_boundary_behavior", "scoring_focus"],
+        "properties": {
+          "id": {"pattern": "^C[0-6]_[A-Z0-9_]+$", "type": "string"},
+          "label": {"type": "string"},
+          "prompt": {"type": "string", "minLength": 20},
+          "targeted_failure_mode": {"type": "string", "minLength": 20},
+          "expected_boundary_behavior": {"type": "string", "minLength": 20},
+          "scoring_focus": {"type": "array", "minItems": 2, "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

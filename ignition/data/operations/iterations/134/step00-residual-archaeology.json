@@ -1,0 +1,105 @@
+{
+  "schema_version": "ignition-134-step00-residual-archaeology-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "00",
+  "status": "BASELINE_REPRODUCED",
+  "control": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "3fc8a329eb4f581d1940688046bdc16f4594417d",
+    "command_path": "agent-commands/IGNITION-20260822-134-residual-debt-projection-hygiene-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "517510aed545ff440c3464536ba2964c94e5f560",
+    "clean_isolated_worktree": true
+  },
+  "path_classification": {
+    "manifest_role": "CURRENT_GENERATED_SNAPSHOT_OF_LIVE_ENGINE_OUTPUT",
+    "source_validator": "ignition/tools/foundation/validate_repository_path_classification.py",
+    "contract_evidence": [
+      "The validator docstring calls classification-manifest.jsonl a generated snapshot of the deterministic live engine.",
+      "--check compares the live Git path set with the committed manifest path set and fails on missing paths.",
+      "Historical manifests remain recoverable through Git history; the Current manifest is not an immutable historical snapshot."
+    ],
+    "tracked_count": 2958,
+    "manifest_count": 2720,
+    "missing_count": 238,
+    "missing_object_set_sha256": "23b63fe8caa68223c6eeea99eb6c4cfb800e6f7408ac189a68890ea7ca54027c",
+    "stale_count": 0,
+    "unresolved_count": 0,
+    "duplicate_count": 0,
+    "category_changed_count": 0,
+    "anti_backflow_violation_count": 0,
+    "representative_missing_paths": [
+      "ignition/agent-results/IGNITION-20260821-129-machine-receipt.json",
+      "ignition/agent-results/IGNITION-20260821-129-result.md",
+      "ignition/agent-results/IGNITION-20260821-130-machine-receipt.json",
+      "ignition/agent-results/IGNITION-20260821-130-result.md",
+      "ignition/agent-results/IGNITION-20260822-132-machine-receipt.json"
+    ],
+    "validator_result": "FAIL_ONLY_ON_ALL_TRACKED_ACCOUNTED"
+  },
+  "human_surface_hash_drift": {
+    "count": 11,
+    "ids": [
+      "D127",
+      "D182",
+      "D190",
+      "D260",
+      "T2",
+      "Y1",
+      "NFC-015cfd6ba387c9b1",
+      "NFC-02f68962a6f13abc",
+      "NFC-0331afe8d84f2538",
+      "NFC-14866124cc1a2cae",
+      "NFC-154bdc1ff37c47f6"
+    ],
+    "status": "PENDING_STEP06_SEMANTIC_AUDIT",
+    "validator_result": "FAIL_WITH_EXACTLY_THE_11_PRE_EXISTING_SOURCE_HASH_DRIFTS"
+  },
+  "historical_residuals": [
+    {
+      "residual_id": "PROPAGATION_TASK104_106",
+      "origin_task": "IGNITION-20260713-104-106",
+      "classification": "SEALED_HISTORICAL",
+      "count": 9,
+      "failure_dimensions": ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"],
+      "source_validator": "ignition/tools/propagation/validate_reconciliation.py"
+    },
+    {
+      "residual_id": "T16_SYMPY_COUNTEREXAMPLE",
+      "origin_task": "IGNITION-20260816-121",
+      "classification": "ENVIRONMENTAL",
+      "count": 1,
+      "failure_dimensions": ["SYMPY_UNAVAILABLE"],
+      "observed_probe": "python3 ignition/tools/foundation/verify_core_claims.py --check",
+      "observed_failure": "ModuleNotFoundError"
+    }
+  ],
+  "full_unittest_discovery": {
+    "command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+    "task133_observation": "TIMEOUT_CLASSIFIED_AT_30_SECONDS",
+    "task133_receipt": "ignition/agent-results/IGNITION-20260822-133-result.md",
+    "task134_policy": "RUN_WITH_LONG_WINDOW_AND_RECORD_REAL_TERMINAL_STATE_OR_LOCATED_BLOCKER",
+    "no_full_pass_claimed": true
+  },
+  "historical_receipts": [
+    "ignition/agent-results/IGNITION-20260821-129-result.md",
+    "ignition/agent-results/IGNITION-20260821-130-result.md",
+    "ignition/agent-results/IGNITION-20260822-132-result.md",
+    "ignition/agent-results/IGNITION-20260822-133-result.md"
+  ],
+  "historical_observation_summary": {
+    "task129_path_manifest_missing": 96,
+    "task132_path_manifest_missing": 194,
+    "task133_reported_clean_baseline_missing": 198,
+    "task133_reported_candidate_missing": 232,
+    "task133_current_delta_explained_as_new_paths": 34,
+    "task129_to_133_human_drift_count": 11,
+    "task104_106_propagation_mismatch_count": 9,
+    "sympy_residual_count": 1
+  },
+  "claim_ceiling": "Repository-local baseline archaeology and residual observation only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

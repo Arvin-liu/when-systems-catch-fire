@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/stage-snapshot-request.schema.json",
+  "title": "Agent stage snapshot request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_version", "task_id", "result_object", "source_head", "evidence_entries", "lifecycle_state", "claim_ceiling", "homepage_summary", "limitations_and_incomplete", "responsibility", "recommendation", "agent_claims_published_to_main"],
+  "properties": {
+    "request_version": {"const": "1.2.0"},
+    "task_id": {"type": "string", "minLength": 1},
+    "result_object": {"type": "string", "minLength": 1},
+    "source_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "evidence_entries": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^https://"}},
+    "lifecycle_state": {"type": "string", "minLength": 1},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "homepage_summary": {"type": "string", "minLength": 1},
+    "limitations_and_incomplete": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "responsibility": {
+      "type": "object", "additionalProperties": false,
+      "required": ["responsible_actor", "proposed_publisher_actor", "execution_agents", "automation_workflows", "founder_responsibility_inferred", "upstream_responsibility_inferred"],
+      "properties": {
+        "responsible_actor": {"$ref": "#/$defs/accountableActorRef"},
+        "proposed_publisher_actor": {"$ref": "#/$defs/accountableActorRef"},
+        "execution_agents": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
+        "automation_workflows": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
+        "founder_responsibility_inferred": {"const": false},
+        "upstream_responsibility_inferred": {"const": false}
+      }
+    },
+    "recommendation": {"enum": ["PUBLISH", "REVISE", "WITHDRAW", "DO_NOT_PUBLISH"]},
+    "agent_claims_published_to_main": {"const": false}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "accountableActorRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor_ref"],
+      "properties": {
+        "actor_ref": {
+          "enum": [
+            "org:github/arvin-liu/when-systems-catch-fire",
+            "person:github/arvin-liu"
+          ]
+        }
+      }
+    },
+    "technicalActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "role", "evidence_reference"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonblank"},
+        "role": {"$ref": "#/$defs/nonblank"},
+        "evidence_reference": {"type": "string", "format": "uri", "pattern": "^https://"}
+      }
+    }
+  }
+}

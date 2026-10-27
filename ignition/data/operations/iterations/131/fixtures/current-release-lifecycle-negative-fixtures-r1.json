@@ -1,0 +1,41 @@
+{
+  "schema_version": "current-release-lifecycle-negative-fixtures-r1",
+  "task_id": "IGNITION-20260821-131",
+  "purpose": "Reject legacy or self-referential publication fields from the static Current lifecycle contract.",
+  "fixtures": [
+    {
+      "fixture_id": "legacy-not-published-fields",
+      "overrides": {
+        "publication_state": "NOT_PUBLISHED",
+        "post_publication_remote_check_status": "PENDING"
+      },
+      "expected_status": "FAIL",
+      "reason": "Legacy pre-publication hints must not remain Current publication truth."
+    },
+    {
+      "fixture_id": "forged-published-field",
+      "overrides": {
+        "publication_state": "PUBLISHED"
+      },
+      "expected_status": "FAIL",
+      "reason": "A static formal commit cannot self-assert remote publication."
+    },
+    {
+      "fixture_id": "embedded-current-head",
+      "overrides": {
+        "current_head_sha": "11e5ed0f8f16f7f315179b540f08018c2e6e45d1"
+      },
+      "expected_status": "FAIL",
+      "reason": "A release self-SHA would create a self-referential publication assertion."
+    },
+    {
+      "fixture_id": "wrong-publication-authority",
+      "overrides": {
+        "publication_authority": "FORMAL_COMMIT_CONTENT"
+      },
+      "expected_status": "FAIL",
+      "reason": "Remote publication authority belongs to runtime ref observation."
+    }
+  ],
+  "claim_ceiling": "Fixture outcomes are schema and contract-boundary evidence only; they do not prove publication or acceptance."
+}

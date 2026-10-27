@@ -1,0 +1,324 @@
+{
+  "schema_version": "current-task-lineage-status-r1",
+  "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
+  "current_task": {
+    "task_id": "IGNITION-20260829-148",
+    "scope": "Formal task IGNITION-20260829-148 Current advancement",
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
+    "identity_impact": "PRESENTATION_ONLY"
+  },
+  "current_state": {
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "obligation_registry": {
+    "authority": "OPEN_OBLIGATION_REGISTRY",
+    "source_path": "ignition/data/operations/open-obligation-registry-r1.json",
+    "schema_path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
+    "validator_path": "ignition/tools/validate_open_obligation_registry.py",
+    "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
+  },
+  "current_surface_status_requirements": {
+    "required_status_tokens": [
+      "HISTORICAL_UNEXECUTED",
+      "REBASED_INTO_127",
+      "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "COMPLETED_WITH_OPEN_OBLIGATIONS"
+    ],
+    "forbidden_status_tokens": [
+      "DEFERRED_PENDING_REBASE"
+    ],
+    "append_only_current_path": "ignition/STATE-CHANGELOG.md"
+  },
+  "lineages": [
+    {
+      "lineage_id": "IGNITION-125->IGNITION-127",
+      "predecessor": {
+        "task_id": "IGNITION-125",
+        "task_file_status": "HISTORICAL_UNEXECUTED",
+        "requirement_lineage_status": "REBASED_INTO_127",
+        "canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
+        "successor_task_id": "IGNITION-127"
+      },
+      "successor": {
+        "task_id": "IGNITION-127",
+        "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+        "new_regressions": 0,
+        "current_obligation": false
+      },
+      "current_surface_rule": {
+        "predecessor_rendering": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
+        "successor_rendering": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+        "forbidden_status_tokens": [
+          "DEFERRED_PENDING_REBASE",
+          "DEFERRED"
+        ]
+      },
+      "provenance": [
+        {
+          "kind": "TASK126_AMENDMENT",
+          "repository": "Arvin-liu/1111",
+          "path": "agent-commands/IGNITION-20260818-126-AMENDMENT-01-task125-deferred-not-superseded.md",
+          "classification": "CONTROL_RECORD",
+          "commit": "880fff35d49b14823e53dbcee2beccfe975dd73b"
+        },
+        {
+          "kind": "TASK127_REBASE_MATRIX",
+          "repository": "Arvin-liu/when-systems-catch-fire",
+          "path": "ignition/data/operations/iterations/127/step00-rebase-matrix.json",
+          "classification": "HISTORICAL_RECORD",
+          "commit": "681f86d79b1112af3c07e0f8091335860c237ef2"
+        },
+        {
+          "kind": "TASK127_RECEIPT",
+          "repository": "Arvin-liu/when-systems-catch-fire",
+          "path": "ignition/agent-results/IGNITION-20260820-127-machine-receipt.json",
+          "classification": "HISTORICAL_RECORD",
+          "commit": "681f86d79b1112af3c07e0f8091335860c237ef2"
+        }
+      ]
+    }
+  ],
+  "protected_historical_paths": [
+    "ignition/reports/operations/ignition-126-progress.md",
+    "ignition/data/operations/iterations/126/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/126/step00-baseline-audit.json",
+    "ignition/data/operations/iterations/126/progress.jsonl",
+    "ignition/data/operations/iterations/127/step00-rebase-matrix.json",
+    "ignition/data/operations/iterations/127/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/127/progress.jsonl",
+    "ignition/agent-results/IGNITION-20260820-127-machine-receipt.json"
+  ],
+  "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
+  "task_identity": {
+    "schema_version": "task-identity-state-r1",
+    "current_formal_task": "IGNITION-20260829-148",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "release_candidate_task": "IGNITION-20260829-148",
+    "publication_witness_task": "IGNITION-20260829-148",
+    "previous_canonical_current_task": "IGNITION-20260828-147",
+    "previous_formal_task": "IGNITION-20260828-147",
+    "historical_lineage": [
+      {
+        "predecessor_task_id": "IGNITION-20260821-129",
+        "successor_task_id": "IGNITION-20260821-130",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260821-130",
+        "successor_task_id": "IGNITION-20260821-131",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260821-131",
+        "successor_task_id": "IGNITION-20260822-132",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-132",
+        "successor_task_id": "IGNITION-20260822-133",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-132",
+        "successor_task_id": "IGNITION-20260822-133",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-133",
+        "successor_task_id": "IGNITION-20260822-134",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-133",
+        "successor_task_id": "IGNITION-20260822-134",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "COMPLETED_HISTORICAL"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-134",
+        "successor_task_id": "IGNITION-20260822-135",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-134",
+        "successor_task_id": "IGNITION-20260822-135",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-135",
+        "successor_task_id": "IGNITION-20260823-136",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260822-135",
+        "successor_task_id": "IGNITION-20260823-136",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260823-136",
+        "successor_task_id": "IGNITION-20260824-137",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260823-136",
+        "successor_task_id": "IGNITION-20260824-137",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260824-137",
+        "successor_task_id": "IGNITION-20260824-138",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260824-137",
+        "successor_task_id": "IGNITION-20260824-138",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260824-138",
+        "successor_task_id": "IGNITION-20260825-139",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260824-138",
+        "successor_task_id": "IGNITION-20260825-139",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260825-139",
+        "successor_task_id": "IGNITION-20260826-140",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260825-139",
+        "successor_task_id": "IGNITION-20260826-140",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260826-140",
+        "successor_task_id": "IGNITION-20260826-141",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260826-140",
+        "successor_task_id": "IGNITION-20260826-141",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260826-141",
+        "successor_task_id": "IGNITION-20260827-142",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260826-141",
+        "successor_task_id": "IGNITION-20260827-142",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260827-142",
+        "successor_task_id": "IGNITION-20260827-143",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260827-142",
+        "successor_task_id": "IGNITION-20260827-143",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260827-143",
+        "successor_task_id": "IGNITION-20260828-144",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260827-143",
+        "successor_task_id": "IGNITION-20260828-144",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-144",
+        "successor_task_id": "IGNITION-20260828-145",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-144",
+        "successor_task_id": "IGNITION-20260828-145",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-145",
+        "successor_task_id": "IGNITION-20260828-146",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-145",
+        "successor_task_id": "IGNITION-20260828-146",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-146",
+        "successor_task_id": "IGNITION-20260828-147",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-146",
+        "successor_task_id": "IGNITION-20260828-147",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-147",
+        "successor_task_id": "IGNITION-20260829-148",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-147",
+        "successor_task_id": "IGNITION-20260829-148",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
+      }
+    ],
+    "advancement": {
+      "from_task_id": "IGNITION-20260828-147",
+      "to_task_id": "IGNITION-20260829-148",
+      "transition_reason": "IGNITION-20260829-148 advances canonical Current from terminal IGNITION-20260828-147 while preserving the prior task as historical provenance and keeping the formal task separate from the latest architecture-changing task.",
+      "prior_source_sha256": "58a01efdef5e969fd4be64f75e0cdc05b7d93a086fe512ebfdba1613610f6649",
+      "execution_contract_path": "ignition/data/operations/iterations/148/execution-contract-r1.json",
+      "idempotency_key": "IGNITION-20260829-148"
+    },
+    "claim_ceiling": "Canonical repository-local task advancement only; this record does not grant authority, prove external truth, establish production readiness or set epistemic acceptance."
+  }
+}

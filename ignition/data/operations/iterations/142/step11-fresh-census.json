@@ -1,0 +1,84 @@
+{
+  "capability_selection": {
+    "capability_selected_executor_id": "external.codex",
+    "excluded": [
+      {
+        "executor_id": "external.gemini",
+        "reason": "AUTH_SOURCE_HOME_NOT_SEPARABLE; POINTFIRE_ADAPTER_NOT_ATTESTED; PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE"
+      },
+      {
+        "executor_id": "external.codex",
+        "reason": "TASK140_ROOT_CAUSE_NOT_CONFIRMED_SAME_FAMILY_RETRY_FORBIDDEN"
+      },
+      {
+        "executor_id": "external.hermes",
+        "reason": "AUTH_SOURCE_SEPARATION_NOT_PROVEN; PUBLIC_AUTH_STATUS_NOT_REATTESTED; STRUCTURED_RESULT_BOUNDARY_NOT_STRICT"
+      },
+      {
+        "executor_id": "external.openclaw",
+        "reason": "AUTH_SOURCE_SEPARATION_NOT_PROVEN; PROCESS_CLEANUP_NOT_REATTESTED; STRUCTURED_RESULT_BOUNDARY_NOT_STRICT; WORKSPACE_AND_CHANNEL_BOUNDARY_NOT_PROVEN"
+      },
+      {
+        "executor_id": "external.github-copilot-cli",
+        "reason": "NOT_INSTALLED_NO_DOWNLOAD_OR_BILLING_AUTHORITY"
+      }
+    ],
+    "live_selectable_executor_ids": [],
+    "live_selection_status": "NO_AUTHORIZED_FAMILY",
+    "policy_excluded_executor_ids": [
+      "external.codex"
+    ],
+    "ranking": [
+      "external.codex",
+      "external.gemini",
+      "external.hermes",
+      "external.openclaw",
+      "external.github-copilot-cli"
+    ],
+    "selected_executor_id": "external.codex",
+    "selected_family": "Codex",
+    "status": "SELECTED",
+    "why_executor": "Deterministic ranking counts only the ten provider-neutral admission checks, then breaks ties by family and executor ID. Codex is technically admitted but policy-excluded by the unchanged Task140 same-family blind-retry prohibition; no other agentic candidate passes every check, so live selection is NO_AUTHORIZED_FAMILY."
+  },
+  "census_path": "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+  "claim_ceiling": "Fresh repository-local observation-time executor census, class separation, admission checks, policy exclusion and deterministic why-executor trace only; no live inference, validated completion, model-quality ranking, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.",
+  "control_tip": "d2c092ce8961e51835249d345eab44d8216026f0",
+  "counts": {
+    "admitted_agentic_executors": 1,
+    "agentic_executors": 5,
+    "candidates": 14,
+    "installed_agentic_executors": 4,
+    "live_selectable_executors": 0,
+    "policy_excluded_admitted_executors": 1,
+    "reasoner_runtimes": 4,
+    "tools": 3,
+    "ui_only": 2
+  },
+  "formal_candidate_sha": "08fcd9a2d51e75504ddc0281d158a5abc8d3adbc",
+  "observations": {
+    "agent_version_help_read": true,
+    "public_auth_content_read": false,
+    "reasoner_models_invoked": false,
+    "ui_action_performed": false
+  },
+  "policy": {
+    "codex_same_family_retry": "FORBIDDEN_BLIND_RETRY",
+    "live_selection_status": "NO_AUTHORIZED_FAMILY",
+    "policy_excluded_executor_ids": [
+      "external.codex"
+    ]
+  },
+  "safety": {
+    "auth_content_copied": false,
+    "billing_changed": false,
+    "configuration_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_inference_started": false,
+    "secret_content_read": false,
+    "workspace_modified": false
+  },
+  "schema_version": "ignition-142-step11-fresh-census-r1",
+  "status": "PASS",
+  "step": "11",
+  "task_id": "IGNITION-20260827-142"
+}
