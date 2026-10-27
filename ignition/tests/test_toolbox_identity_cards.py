@@ -20,6 +20,16 @@ SPEC.loader.exec_module(TOOL)
 
 
 class ToolboxIdentityCardTests(unittest.TestCase):
+    def test_human_toolbox_presents_owner_c1_lifecycle_policy(self) -> None:
+        document = TOOL.build_cards()
+        rendered = TOOL.render_human(document)
+
+        self.assertIn("## Evidence-based lifecycle (Owner C1)", rendered)
+        self.assertIn("same task with matched permissions, environment, and evidence quality", rendered)
+        self.assertIn("covers every valuable incumbent use case", rendered)
+        self.assertIn("COMPARISON_UNKNOWN", rendered)
+        self.assertIn("Preserve comparison receipts and historical references", rendered)
+
     def test_execution_state_lineage_card_preserves_c1_scope_permissions_and_entrypoint(self) -> None:
         document = TOOL.build_cards()
         cards = {item["tool_id"]: item for item in document["cards"]}

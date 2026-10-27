@@ -1615,7 +1615,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -3009,7 +3009,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -4095,7 +4095,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json",
@@ -5980,12 +5980,12 @@
         {
           "path": "ignition/tools/operations/build_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "fc24f956423beda11ff33de2a26e31f893e27eaf"
+          "sha1": "72ab01f02f157de8af465d014192d0859c664459"
         },
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/agent_kernel/contracts.py",
@@ -7137,7 +7137,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
@@ -9405,7 +9405,7 @@
         {
           "path": "ignition/tools/operations/build_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "fc24f956423beda11ff33de2a26e31f893e27eaf"
+          "sha1": "72ab01f02f157de8af465d014192d0859c664459"
         },
         {
           "path": "ignition/tools/toolbox_execution_pareto_frontier.py",
@@ -9714,7 +9714,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tests/test_toolbox_producer_consumer_semantic_preflight.py",
@@ -11595,7 +11595,7 @@
         {
           "path": "ignition/tools/operations/build_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "fc24f956423beda11ff33de2a26e31f893e27eaf"
+          "sha1": "72ab01f02f157de8af465d014192d0859c664459"
         },
         {
           "path": "ignition/tools/operations/validate_toolbox_candidates.py",
@@ -13131,7 +13131,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -13502,7 +13502,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -13842,7 +13842,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -14390,7 +14390,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-route-profile-r0.json",
@@ -15561,7 +15561,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
@@ -15795,7 +15795,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
@@ -16056,7 +16056,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
@@ -16634,7 +16634,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-profile-r0.json",
@@ -17482,7 +17482,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/docs/operations/pubmed-citation-matcher.md",
@@ -17860,7 +17860,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tools/operations/validate_toolbox_candidates.py",
@@ -18986,7 +18986,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-smoke-evidence-r0.json",
@@ -20268,7 +20268,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/schemas/operations/toolbox-arxiv-query-search-input-r0.schema.json",
@@ -20655,7 +20655,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/schemas/operations/toolbox-crossref-query-search-input-r0.schema.json",
@@ -21481,7 +21481,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/schemas/operations/toolbox-openalex-query-search-input-r0.schema.json",
@@ -21837,7 +21837,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
@@ -22739,7 +22739,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "aaeac699b5ccc41213c0dbf6f8ad1c545a06642a"
+          "sha1": "96bc970f9cd0d49cf4879606f4ddb93d509e6ed0"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",

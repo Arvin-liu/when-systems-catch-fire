@@ -4,6 +4,10 @@
 >
 > Current operation entries are registered capabilities; the registry does not prove that every entry is a standalone executable in this environment. Experimental tools are opt-in and default off.
 
+## Evidence-based lifecycle (Owner C1)
+
+Compare tools on the same task with matched permissions, environment, and evidence quality. Compare correctness, evidence completeness, coverage, actual cost, reliability, maintainability, risk, and rollback. Retire an old callable tool when a new tool has shown better performance, or equivalent performance with clearly lower cost or risk, and covers every valuable incumbent use case with no evidenced unique scenario left. Keep or specialize tools with evidenced unique use cases. When the evidence cannot decide, mark `COMPARISON_UNKNOWN` or `EXPERIMENTAL` and use a low-cost, controlled comparison that can disconfirm the replacement hypothesis. Preserve comparison receipts and historical references even when retired runtime code has no remaining value.
+
 Current operation registry: 20 entries · `blob 21fe1bfcdb0d9762edd60339aca14f1040393fc7`.
 Optional experimental tools: 73 · `blob 5537e5f08ddf0d9bdda0a1f492a34730fa1dcd84`.
 
