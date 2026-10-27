@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/heldout/r0.2/successor-visible/successor-read-ledger-r0.2.schema.json",
+  "title": "Successor Read Ledger R0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "allowed_manifest_sha256", "entries", "summary", "trial_disposition"],
+  "properties": {
+    "schema_version": {"const": "successor-read-ledger-r0.2"},
+    "task_id": {"const": "IGNITION-20260918-182-R2"},
+    "allowed_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "component_id", "action_kind", "purpose", "content_exposure", "case_specific_information_exposed", "digest", "observed_status_code", "contamination_disposition"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "component_id": {"type": ["string", "null"]},
+          "action_kind": {"enum": ["COGNITIVE_READ", "OPERATIONAL_EXECUTION", "OPERATIONAL_STATUS_OBSERVED", "PROHIBITED_COGNITIVE_READ"]},
+          "purpose": {"type": "string", "minLength": 1},
+          "content_exposure": {"enum": ["YES", "NO"]},
+          "case_specific_information_exposed": {"type": "boolean"},
+          "digest": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"type": "null"}]},
+          "observed_status_code": {
+            "oneOf": [
+              {"enum": ["PASS_BRANCH_AUTHORIZED", "FAIL_TASK_BRANCH_MISMATCH", "FAIL_WRONG_REPOSITORY", "FAIL_WRONG_REMOTE", "FAIL_BRANCH_UNAUTHORIZED", "FAIL_BASE_ANCESTRY", "FAIL_AUTHOR_IDENTITY", "FAIL_PUSH_DESTINATION", "FAIL_FORCE_PUSH", "FAIL_HOOK_CONFIGURATION", "FAIL_UNEXPLAINED_WORKTREE", "FAIL_AUTHORIZATION_RECEIPT", "PASS_READ_LEDGER_CLEAN", "FAIL_READ_LEDGER_CONTAMINATED", "FAIL_READ_LEDGER_INVALID"]},
+              {"type": "null"}
+            ]
+          },
+          "contamination_disposition": {"enum": ["CLEAN", "CONTAMINATED"]}
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cognitive_reads", "operational_executions", "operational_status_observations", "prohibited_cognitive_reads", "contaminated_entries"],
+      "properties": {
+        "cognitive_reads": {"type": "integer", "minimum": 0},
+        "operational_executions": {"type": "integer", "minimum": 0},
+        "operational_status_observations": {"type": "integer", "minimum": 0},
+        "prohibited_cognitive_reads": {"type": "integer", "minimum": 0},
+        "contaminated_entries": {"type": "integer", "minimum": 0}
+      }
+    },
+    "trial_disposition": {"enum": ["CLEAN", "PROTOCOL_CONTAMINATED"]}
+  }
+}

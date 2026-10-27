@@ -1,0 +1,26 @@
+{
+  "case_id": "harbor-export-policy-r02-01",
+  "locators": [
+    {
+      "id": "scope",
+      "locator": "$.scope"
+    },
+    {
+      "id": "requirements",
+      "locator": "$.requirements[*]"
+    },
+    {
+      "id": "unspecified",
+      "locator": "$.explicitly_unspecified[*]"
+    }
+  ],
+  "schema_version": "heldout-case-provenance-r0.2",
+  "source_bytes": 1373,
+  "source_identity": {
+    "record_id": "HARBOR-ARCHIVE-EXPORT-PROCEDURE-HA17-REV-B",
+    "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+    "source_path": "ignition/evaluation/heldout/r0.2/successor-visible/cases/harbor-export-policy-r02-01/raw-contract.json"
+  },
+  "source_scope": "A short synthetic governance procedure for one export batch. The source states a finite set of requirements and expressly lists open policy details.",
+  "source_sha256": "ded7bdbd0aa0e1cf56021785bd5f83dc6833694ffbce90f5390ed23e67731b77"
+}

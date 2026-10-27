@@ -1,20 +1,29 @@
-# Evaluation Evidence Plane R0.1
+# Evaluation Evidence Plane
 
-`EVALUATION_EVIDENCE` is an auditable repository object class. The shared
-repository path classifier accounts for it; the shared Knowledge admission
-policy retains provenance while excluding it from function and nonfunction
-semantic discovery. Nonfunction source-discovery continues to emit explicit
-exclusion rows. The self-correction path selector uses this shared admission
-policy too, so evaluator reports under `reports/` cannot re-enter its
-Knowledge-oriented scan. No new canonical registry or provenance subsystem is
-added.
+R0.1 remains a frozen historical protocol and evidence plane. R0.2 keeps the
+existing typed EVALUATION_EVIDENCE classification and promotion boundary,
+while correcting the held-out trial model.
 
-The promotion helper is a pure validator: evidence stays in
-`EVALUATION_EVIDENCE` by default. A well-formed, explicitly authorized
-transition may create an `ADJUDICATION_CANDIDATE_ONLY` state; this helper has
-no filesystem writes and never canonicalizes. Existing Foundation/Knowledge
-admission gates still apply after a separate adjudication.
+The R0.2 successor packet explicitly separates:
 
-Task180 artifacts remain at their historical Task180 commit. Task181 records
-their hashes as a frozen adjudication input and does not amend those artifacts
-or claim to have run the evaluator.
+- COGNITIVE_EVIDENCE_SURFACE: the manifest-listed task/method contracts,
+  capability interface, output and ledger schemas, provenance, and two new
+  bounded synthetic sources. These paths may be read and must be ledgered.
+- OPERATIONAL_CONTROL_SURFACE: hooks, task branch guard, and read-ledger
+  status tool. These may execute and return finite status codes; their source
+  and authorization receipt may not be opened or interpreted.
+
+The R0.2 typed read ledger mechanically distinguishes cognitive reads,
+operational executions, status observations, and prohibited cognitive reads.
+Only actual exposure of unlisted content, operational source, or
+case-specific/gold/evaluator information through an operational result
+contaminates a trial. A status-only hook execution is not a cognitive read.
+
+The two R0.2 cases are newly authored and are unrelated to the earlier
+successor-visible payloads. The evaluator-sealed path is a sibling of the
+successor-visible packet and is excluded from its manifest. No R0.2 answer
+key or evaluation criteria are authored by the Builder.
+
+Evaluation evidence remains noncanonical by default. This work does not
+promote any evaluation record to a Foundation claim or asset, and makes no
+general cognitive-inheritance claim.
