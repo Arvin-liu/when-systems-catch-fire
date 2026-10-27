@@ -495,6 +495,10 @@
         {
           "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
           "role": "SHARED_BOUNDED_FETCH_PARSE_AND_COMPARE_ENGINE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-n2o-isolated-live-comparison-r0.json",
+          "role": "SAME_RANGE_LIVE_TOOL_AND_ALTERNATIVE_COMPARISON"
         }
       ],
       "dependencies": [
@@ -608,7 +612,8 @@
         "evidence_refs": [
           "ignition/data/operations/toolbox-noaa-n2o-source-surface-c1-evidence-r0.json",
           "ignition/data/operations/toolbox-noaa-n2o-source-surface-real-task-evidence-r0.json",
-          "ignition/data/operations/toolbox-noaa-n2o-source-surface-source-binding-r0.json"
+          "ignition/data/operations/toolbox-noaa-n2o-source-surface-source-binding-r0.json",
+          "ignition/data/operations/toolbox-noaa-n2o-isolated-live-comparison-r0.json"
         ],
         "findings": [
           "The N2O comparator fetches the rendered page and raw table to report literal differences; the same-gas raw-only lookup remains the one-request choice when only provider raw values are needed.",
@@ -1048,6 +1053,10 @@
         {
           "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
           "role": "SHARED_BOUNDED_N2O_FETCH_AND_RAW_TABLE_PARSER"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-n2o-isolated-live-comparison-r0.json",
+          "role": "SAME_RANGE_LIVE_TOOL_AND_ALTERNATIVE_COMPARISON"
         }
       ],
       "dependencies": [
@@ -1166,7 +1175,8 @@
           "ignition/data/operations/toolbox-noaa-n2o-annual-growth-lookup-source-binding-r0.json",
           "ignition/data/operations/toolbox-noaa-n2o-annual-growth-lookup-c1-evidence-r0.json",
           "ignition/docs/operations/noaa-n2o-annual-growth-lookup.md",
-          "ignition/tests/test_toolbox_noaa_n2o_annual_growth_lookup.py"
+          "ignition/tests/test_toolbox_noaa_n2o_annual_growth_lookup.py",
+          "ignition/data/operations/toolbox-noaa-n2o-isolated-live-comparison-r0.json"
         ],
         "findings": [
           "The N2O lookup returns values and uncertainty from its species-specific NOAA table and units; the other gas readers cover different endpoints and cannot satisfy this task contract.",

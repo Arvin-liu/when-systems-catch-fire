@@ -1,0 +1,100 @@
+{
+  "schema_version": "toolbox-noaa-n2o-isolated-live-comparison-r0",
+  "evidence_type": "SAME_RANGE_LIVE_RAW_LOOKUP_AND_TWO_SURFACE_COMPARATOR",
+  "observed_at_utc": "2026-10-27T07:13:36Z",
+  "source_commit": "2e642df77b9453673c79b03a8bfba680ea56933c",
+  "base_commit": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input": {
+    "start_year": 2023,
+    "end_year": 2025
+  },
+  "invocations": [
+    {
+      "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+      "command": "python3 -B ignition/tools/toolbox_noaa_n2o_annual_growth_lookup.py --stdin --allow-public-network",
+      "status": "FOUND",
+      "request_count": 1,
+      "source": {
+        "url": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+        "http_status": 200,
+        "retrieved_at_utc": "2026-10-27T07:13:36Z",
+        "response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d"
+      },
+      "records": [
+        {
+          "year": 2023,
+          "annual_increase_ppb": "1.01",
+          "uncertainty_ppb": "0.02"
+        },
+        {
+          "year": 2024,
+          "annual_increase_ppb": "1.02",
+          "uncertainty_ppb": "0.01"
+        },
+        {
+          "year": 2025,
+          "annual_increase_ppb": "1.23",
+          "uncertainty_ppb": "0.01"
+        }
+      ]
+    },
+    {
+      "tool_id": "research.compare_noaa_n2o_source_surfaces",
+      "command": "python3 -B ignition/tools/toolbox_compare_noaa_n2o_surfaces.py --stdin --allow-public-network",
+      "status": "COMPARED",
+      "comparison_status": "EXACT_MATCH",
+      "request_count": 2,
+      "exact_match_count": 3,
+      "numeric_difference_count": 0,
+      "missing_year_count": 0,
+      "sources": {
+        "provider_page": {
+          "url": "https://gml.noaa.gov/ccgg/trends_n2o/",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-27T07:13:35Z",
+          "response_sha256": "26224346d22b2e37312df032566be078fb8ea3af25092e164ac54cda5885e2db"
+        },
+        "fixed_raw_table": {
+          "url": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-27T07:13:36Z",
+          "response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d"
+        }
+      },
+      "records": [
+        {
+          "year": 2023,
+          "page_ppb": "1.01",
+          "page_uncertainty_ppb": "0.02",
+          "raw_ppb": "1.01",
+          "raw_uncertainty_ppb": "0.02",
+          "status": "EXACT_MATCH"
+        },
+        {
+          "year": 2024,
+          "page_ppb": "1.02",
+          "page_uncertainty_ppb": "0.01",
+          "raw_ppb": "1.02",
+          "raw_uncertainty_ppb": "0.01",
+          "status": "EXACT_MATCH"
+        },
+        {
+          "year": 2025,
+          "page_ppb": "1.23",
+          "page_uncertainty_ppb": "0.01",
+          "raw_ppb": "1.23",
+          "raw_uncertainty_ppb": "0.01",
+          "status": "EXACT_MATCH"
+        }
+      ]
+    }
+  ],
+  "implementation_sha256": {
+    "raw_lookup": "4163298a9709dd82c0956c4882091dd541a895194a74b472718593f74ac5629b",
+    "two_surface_comparator": "831c032a70c57c417892da2784cab40faf86b874b45fea86bc73c506bb375d26",
+    "shared_core": "a15650c0e38a84adbe8f0d68de15e9c005379a7461d46a7c07f08892d240abe7"
+  },
+  "comparison_disposition": "COEXIST_BY_TASK_SCOPE",
+  "interpretation_limit": "One contemporaneous NOAA GML observation for 2023-2025. Matching values do not establish long-run agreement, source authenticity, measurement validity, or a scientific conclusion. The response bodies were not retained; digests bind the received bytes only.",
+  "raw_response_bodies_retained": false
+}
