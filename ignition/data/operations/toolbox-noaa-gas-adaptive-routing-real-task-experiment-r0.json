@@ -1,0 +1,415 @@
+{
+  "schema_version": "ignition-toolbox-route-experiment-r0",
+  "observed_at_utc": "2026-10-27T07:55:02Z",
+  "scope": "One captured NOAA three-gas year-pairing task routed by the existing operation planner; route proposals only, with a local offline replay of the selected pairer.",
+  "bindings": {
+    "task_branch_head_sha": "3f5f359650dcba6943e389dffe446afecc33b953",
+    "current_ref_echoed_by_planner": "refs/heads/codex/noaa-gas-toolbox-integration-20261027@3f5f359650dcba6943e389dffe446afecc33b953",
+    "current_ref_resolution_by_planner": "NOT_PERFORMED_CALLER_SUPPLIED_ONLY",
+    "planner_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "planner_git_blob_sha1": "5bf6661ed980eb6449af19ea39e3feefbb01baf8",
+    "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "candidate_catalog_git_blob_sha1": "ab53d26cd85b4f5e9c248d2292ffe723fc33bf41",
+    "current_operation_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "current_operation_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_count": 9
+  },
+  "route_trials": {
+    "default_no_experimental_opt_in": {
+      "task_id": "noaa-three-gas-year-pairing-20261027",
+      "decision": "INCOMPLETE",
+      "allowlist": [],
+      "eligible_candidate_ids": [],
+      "selected_tool_ids": [],
+      "skipped_candidates": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "required_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "covered_outputs": [],
+      "unmet_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "ab53d26cd85b4f5e9c248d2292ffe723fc33bf41"
+      }
+    },
+    "sufficient_pairer_only": {
+      "task_id": "noaa-three-gas-year-pairing-20261027",
+      "decision": "COMPLETE",
+      "allowlist": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "eligible_candidate_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "skipped_candidates": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "required_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "covered_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "ab53d26cd85b4f5e9c248d2292ffe723fc33bf41"
+      }
+    },
+    "all_nine_allowlisted_with_exact_noaa_host": {
+      "task_id": "noaa-three-gas-year-pairing-with-broad-opt-in",
+      "decision": "COMPLETE",
+      "allowlist": [
+        "research.compare_noaa_ch4_source_surfaces",
+        "research.compare_noaa_co2_source_surfaces",
+        "research.compare_noaa_n2o_source_surfaces",
+        "research.compare_noaa_sf6_source_surfaces",
+        "research.lookup_noaa_global_ch4_annual_growth",
+        "research.lookup_noaa_global_co2_annual_growth",
+        "research.lookup_noaa_global_n2o_annual_growth",
+        "research.lookup_noaa_global_sf6_annual_growth",
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "eligible_candidate_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "skipped_candidates": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "required_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "covered_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [
+        "gml.noaa.gov"
+      ],
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "ab53d26cd85b4f5e9c248d2292ffe723fc33bf41"
+      }
+    },
+    "unneeded_co2_comparator_skipped": {
+      "task_id": "noaa-pairing-with-co2-detail-available-but-unneeded",
+      "decision": "COMPLETE",
+      "allowlist": [
+        "research.pair_noaa_co2_ch4_growth_by_year",
+        "research.compare_noaa_co2_source_surfaces"
+      ],
+      "eligible_candidate_ids": [
+        "research.compare_noaa_co2_source_surfaces",
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "skipped_candidates": [
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "reason": "NO_REQUIRED_OUTPUT_MATCH"
+        }
+      ],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "required_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "covered_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [
+        "gml.noaa.gov"
+      ],
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "ab53d26cd85b4f5e9c248d2292ffe723fc33bf41"
+      }
+    },
+    "co2_comparator_supplemented_for_extra_required_output": {
+      "task_id": "noaa-pairing-plus-detailed-co2-surface-comparison",
+      "decision": "COMPLETE",
+      "allowlist": [
+        "research.pair_noaa_co2_ch4_growth_by_year",
+        "research.compare_noaa_co2_source_surfaces"
+      ],
+      "eligible_candidate_ids": [
+        "research.compare_noaa_co2_source_surfaces",
+        "research.pair_noaa_co2_ch4_growth_by_year"
+      ],
+      "selected_tool_ids": [
+        "research.pair_noaa_co2_ch4_growth_by_year",
+        "research.compare_noaa_co2_source_surfaces"
+      ],
+      "skipped_candidates": [],
+      "rejected_candidates": [
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "required_outputs": [
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim.",
+        "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status."
+      ],
+      "covered_outputs": [
+        "For each requested year, provider-reported annual CO2 growth and uncertainty from the NOAA rendered page and fixed raw table, literal differences, or an explicit missing-year status.",
+        "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim."
+      ],
+      "unmet_outputs": [],
+      "allowed_network_hosts": [
+        "gml.noaa.gov"
+      ],
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "ab53d26cd85b4f5e9c248d2292ffe723fc33bf41"
+      }
+    }
+  },
+  "local_route_planner_wall_ms": {
+    "default_no_experimental_opt_in": 29.778,
+    "sufficient_pairer_only": 28.877,
+    "all_nine_allowlisted_with_exact_noaa_host": 32.891,
+    "unneeded_co2_comparator_skipped": 30.297,
+    "co2_comparator_supplemented_for_extra_required_output": 29.245
+  },
+  "actual_selected_tool_replay": {
+    "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+    "tool_version": "0.2.0",
+    "route_trial": "sufficient_pairer_only",
+    "invocations": 1,
+    "input_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-input-r1.json",
+    "input_bytes": 13469,
+    "input_sha256": "271126562877358bba1209b1b6ac80f3fa29ef41d64d4da4c60d69fd9231e444",
+    "expected_output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-output-r1.json",
+    "expected_output_bytes": 10960,
+    "expected_output_sha256": "d836df37ddc4c7bf4028f2ba622d70a25192cd9ab914bf72ac4ec1034a611c36",
+    "actual_output_bytes": 10960,
+    "actual_output_sha256": "d836df37ddc4c7bf4028f2ba622d70a25192cd9ab914bf72ac4ec1034a611c36",
+    "all_replays_byte_identical_to_captured_output": true,
+    "row_count": 3,
+    "pairing_claim_limits": {
+      "join_key": "year",
+      "co2_unit": "ppm",
+      "ch4_unit": "ppb",
+      "cross_gas_arithmetic_performed": false,
+      "simultaneous_capture_claimed": false,
+      "n2o_unit": "ppb"
+    },
+    "network_permission": false,
+    "network_calls": 0,
+    "files_written_by_pairer": false,
+    "local_wall_ms": [
+      27.478
+    ],
+    "cash_cost": "UNKNOWN"
+  },
+  "nonclaims": [
+    "The route planner echoes but does not resolve or authenticate current_ref.",
+    "Caller-allowed network hosts are not an authority grant; the supplemental comparator route was not invoked.",
+    "The route planner does not execute selected tools or authorize execution.",
+    "The local replay confirms deterministic transformation of this captured input only; it does not authenticate NOAA sources or establish scientific validity.",
+    "Local wall time is not a monetary or hosted service cost estimate."
+  ]
+}

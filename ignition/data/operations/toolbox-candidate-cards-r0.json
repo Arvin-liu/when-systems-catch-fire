@@ -88,6 +88,14 @@
         {
           "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
           "role": "SHARED_BOUNDED_FETCH_PARSE_AND_COMPARE_ENGINE"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -166,14 +174,16 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_compare_noaa_ch4_surfaces.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Without --allow-public-network, the CLI sends zero requests and emits no comparison result.",
           "Duplicate JSON keys, Boolean years, extra URL fields, reversed/out-of-range years, and ranges above 50 years are rejected before network access.",
           "Only the two fixed HTTPS paths on gml.noaa.gov are queried; redirects, wrong content types, oversized or slow bodies, wrong-species markers, malformed rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
           "A live exact match does not establish long-run source agreement, source authenticity, measurement validity, emissions, or causation.",
-          "The identity projection keeps this optional candidate non-selectable by automatic routing; this isolated integration changes no router."
+          "The existing operation router leaves this candidate out by default; it considers it only after exact-ID opt-in, input/output fit and permission-bound checks, and only returns a proposal without invoking the tool or granting authority.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -301,6 +311,14 @@
         {
           "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
           "role": "SHARED_BOUNDED_FETCH_PARSE_AND_COMPARE_ENGINE"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -379,14 +397,16 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_compare_noaa_co2_surfaces.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Without --allow-public-network, the CLI sends zero requests and emits no comparison result.",
           "Duplicate JSON keys, Boolean years, extra URL fields, reversed or out-of-range years, and ranges above 50 years are rejected before network access.",
           "Only the two fixed HTTPS paths on gml.noaa.gov are queried; redirects, wrong content types, oversized or slow bodies, wrong-species markers, malformed rows, and invalid uncertainties fail closed.",
           "A live exact match does not explain the historical page/raw difference, establish source authenticity, or validate the measurements.",
-          "The identity projection keeps this optional candidate non-selectable by automatic routing; this isolated integration changes no router."
+          "The existing operation router leaves this candidate out by default; it considers it only after exact-ID opt-in, input/output fit and permission-bound checks, and only returns a proposal without invoking the tool or granting authority.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -499,6 +519,14 @@
         {
           "path": "ignition/data/operations/toolbox-noaa-n2o-isolated-live-comparison-r0.json",
           "role": "SAME_RANGE_LIVE_TOOL_AND_ALTERNATIVE_COMPARISON"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [
@@ -579,14 +607,16 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_compare_noaa_n2o_surfaces.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Without --allow-public-network, the CLI sends zero requests and produces no comparison result.",
           "Duplicate JSON keys, Boolean years, extra URL fields, reversed/out-of-range years, and ranges above 50 years fail before network access.",
           "Only the two fixed HTTPS paths on gml.noaa.gov are queried; redirects, wrong content types, oversized or slow bodies, wrong-species markers, malformed rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
           "A changed source page value is reported as a literal difference; neither source is ranked or described as more accurate.",
-          "The identity projection keeps this optional candidate non-selectable by automatic routing; this isolated integration changes no router."
+          "The existing operation router leaves this candidate out by default; it considers it only after exact-ID opt-in, input/output fit and permission-bound checks, and only returns a proposal without invoking the tool or granting authority.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -705,6 +735,14 @@
         {
           "path": "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
           "role": "ISOLATED_DEFAULT_OFF_IDENTITY_PROJECTION_CONTROL"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [
@@ -794,7 +832,8 @@
         "focused_checks": [
           "ignition/tests/test_toolbox_compare_noaa_sf6_surfaces.py",
           "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Without --allow-public-network, the CLI sends zero requests and produces no comparison result.",
@@ -802,7 +841,8 @@
           "Only the two fixed HTTPS paths on gml.noaa.gov are queried; redirects, non-text content, oversized or slow bodies, wrong-species markers, malformed rows, and invalid uncertainties fail closed.",
           "The default route excludes the candidate; explicit route admission requires gml.noaa.gov and still leaves execution_authorized=false.",
           "A page/raw uncertainty difference is reported literally without ranking either surface; missing years are not filled with zero.",
-          "For a raw-table-only task, the SF6 one-request lookup remains sufficient and this two-request comparator is counterindicated."
+          "For a raw-table-only task, the SF6 one-request lookup remains sufficient and this two-request comparator is counterindicated.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -903,6 +943,14 @@
         {
           "path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
           "role": "COMPLEMENTARY_CO2_CONTRACT_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -975,14 +1023,16 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_noaa_ch4_annual_growth.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Missing --allow-public-network makes no request and emits no result.",
           "Reject arbitrary URL keys, duplicate JSON keys, Boolean years, reversed/out-of-range bounds, and ranges over 50 years before network access.",
           "Only gml.noaa.gov and its fixed HTTPS path are contacted; redirects, non-text, oversized/slow data, malformed table rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
           "Missing source years remain PARTIAL_DATA or NO_MATCH; no emission estimate or scientific claim is produced.",
-          "The identity projection keeps this optional candidate non-selectable by automatic routing; this isolated integration changes no router."
+          "The existing operation router leaves this candidate out by default; it considers it only after exact-ID opt-in, input/output fit and permission-bound checks, and only returns a proposal without invoking the tool or granting authority.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -1073,6 +1123,14 @@
         {
           "path": "ignition/tools/toolbox_noaa_co2_annual_growth.py",
           "role": "BOUNDED_FIXED_HOST_CO2_DATA_LOOKUP"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -1145,14 +1203,16 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_noaa_co2_annual_growth.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Missing --allow-public-network makes no request and emits no result.",
           "Reject arbitrary URL keys, duplicate JSON keys, Boolean years, reversed/out-of-range bounds, and ranges over 50 years before network access.",
           "Only gml.noaa.gov and the fixed CO2 HTTPS path are contacted; redirects, non-text, oversized/slow data, malformed table rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
           "A CH4-only task or candidate cannot satisfy the CO2/ppm contract; missing source years remain PARTIAL_DATA or NO_MATCH.",
-          "The identity projection keeps this optional candidate non-selectable by automatic routing; this isolated integration changes no router."
+          "The existing operation router leaves this candidate out by default; it considers it only after exact-ID opt-in, input/output fit and permission-bound checks, and only returns a proposal without invoking the tool or granting authority.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -1275,6 +1335,14 @@
         {
           "path": "ignition/data/operations/toolbox-noaa-n2o-isolated-live-comparison-r0.json",
           "role": "SAME_RANGE_LIVE_TOOL_AND_ALTERNATIVE_COMPARISON"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [
@@ -1357,14 +1425,16 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_noaa_n2o_annual_growth_lookup.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Missing --allow-public-network makes no request and emits no result.",
           "Reject arbitrary URL keys, duplicate JSON keys, Boolean years, wrong schema versions, reversed/out-of-range bounds, and ranges over 50 years before network access.",
           "Only gml.noaa.gov and the fixed HTTPS raw-table path are contacted; redirects, non-text, oversized/slow data, wrong-species markers, malformed rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
           "Missing source years remain PARTIAL_DATA or NO_MATCH; no emissions estimate or scientific claim is produced.",
-          "The identity projection keeps this optional candidate non-selectable by automatic routing; this isolated integration changes no router."
+          "The existing operation router leaves this candidate out by default; it considers it only after exact-ID opt-in, input/output fit and permission-bound checks, and only returns a proposal without invoking the tool or granting authority.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -1479,6 +1549,14 @@
         {
           "path": "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
           "role": "ISOLATED_DEFAULT_OFF_IDENTITY_PROJECTION_CONTROL"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [
@@ -1564,7 +1642,8 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Missing --allow-public-network makes no request and emits no result.",
@@ -1572,7 +1651,8 @@
           "Only gml.noaa.gov and the fixed SF6 HTTPS raw-table path are contacted; redirects, non-text, oversized/slow data, wrong-species markers, malformed rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
           "Default routing excludes the candidate; explicit selection requires the exact gml.noaa.gov host, and route planning keeps execution_authorized=false.",
           "Missing source years remain PARTIAL_DATA or NO_MATCH; a rounded raw uncertainty of 0.00 is preserved with an explicit warning, not converted to exact zero.",
-          "Existing NOAA CO2, CH4, and N2O adapters remain available because their species, fixed source paths, and units are different."
+          "Existing NOAA CO2, CH4, and N2O adapters remain available because their species, fixed source paths, and units are different.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
@@ -1757,6 +1837,14 @@
         {
           "path": "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
           "role": "ISOLATED_DEFAULT_OFF_IDENTITY_PROJECTION_CONTROL"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_ROUTER_DEFAULT_OFF_EXPLICIT_ALLOWLIST_PROPOSAL_ONLY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-gas-adaptive-routing-real-task-experiment-r0.json",
+          "role": "REAL_TASK_ROUTE_SELECTION_SKIP_SUPPLEMENT_AND_REPLAY_EVIDENCE"
         }
       ],
       "dependencies": [],
@@ -1830,14 +1918,16 @@
         "focused_checks": [
           "ignition/tests/test_toolbox_pair_noaa_co2_ch4_growth_by_year.py",
           "ignition/tools/operations/validate_toolbox_candidates.py",
-          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py"
+          "ignition/tests/test_toolbox_noaa_isolated_identity_projection.py",
+          "ignition/tests/test_ignition_operation_playbooks.py"
         ],
         "negative_controls": [
           "Reject duplicate JSON keys, non-standard numeric constants, oversized stdin, unknown envelope keys and arbitrary URL/path fields before producing output.",
           "Reject unsupported comparator identity/schema/version, unavailable output, mismatched range, wrong N2O endpoint, incomplete or duplicate years, invalid timestamp/digest, and disagreement between source receipts and comparison rows.",
           "Keep missing gas years explicit; do not fill them with zero or derive values across gases.",
           "On the captured 2023-2025 task, preserve exact two-gas output semantics and add three N2O rows; record separate units, no arithmetic, no simultaneity claim and zero pairer network calls.",
-          "Route planning remains default-off; explicit allowlisting only proposes the read-only candidate and does not invoke it or grant execution authority."
+          "Route planning remains default-off; explicit allowlisting only proposes the read-only candidate and does not invoke it or grant execution authority.",
+          "Route negative controls cover default-off candidates, exact caller-supplied network hosts, wrong input types, skipped outputs, and supplemental selection; route proposals do not authorize execution or independently verify caller-supplied refs/hosts."
         ]
       },
       "router_selectable_by_default": false,
