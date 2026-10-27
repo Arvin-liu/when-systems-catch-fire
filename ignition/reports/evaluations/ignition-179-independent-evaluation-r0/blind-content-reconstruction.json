@@ -1,0 +1,281 @@
+{
+  "artifact": "blind-content-reconstruction.json",
+  "phase": "BLIND_RECONSTRUCTION",
+  "case_id": "CONTENT-REST-01",
+  "inputs": [
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-content-rest.json",
+      "blob_sha": "f50c939cf5f4605f8c7b4f606d3a68e522e871ef"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json",
+      "blob_sha": "f145eacdb546c714b818f5765c570b6df5e10d83"
+    }
+  ],
+  "reconstructed_objects": [
+    {
+      "id": "ir:a:model:relay-candidate",
+      "type": "COGNITIVE_MODEL",
+      "label": "Task172 relay candidate frame",
+      "salient_content": "Candidate dispositions without comparable executable retrieval metrics.",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step01-disposition-ledger.json",
+        "ignition/data/operations/iterations/172/step11-ab-replay.json"
+      ],
+      "uncertainty": "INCONCLUSIVE",
+      "lifecycle": "SUPERSEDED"
+    },
+    {
+      "id": "ir:a:object:rest-fixture",
+      "type": "OBJECT",
+      "label": "Rest evidence boundary fixture",
+      "salient_content": {
+        "fixture_kind": "REAL_CONTENT_RESEARCH",
+        "source_body_republished": false
+      },
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/172/step11-ab-replay.json"
+      ],
+      "uncertainty": "OBSERVED",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:a:observation:source-provenance",
+      "type": "OBSERVATION",
+      "label": "Provenance-locked rest input",
+      "salient_content": {
+        "input_id": "got-brain-03-rest",
+        "sha256": "6d92ac39669875a0d2a0c5aeb887df319a712d1886313c394da5f50daf4202d1",
+        "bytes": 14540,
+        "lines": 221,
+        "final_newline": false,
+        "unique_exact_local_hit": true,
+        "copy_byte_match": true
+      },
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step00-baseline-audit.json#r1_input_provenance.inputs[2]"
+      ],
+      "uncertainty": "KNOWN",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:a:observation:exact-retrieval",
+      "type": "OBSERVATION",
+      "label": "Exact canonical retrieval observation",
+      "salient_content": {
+        "case_id": "rest-evidence-boundary",
+        "candidate_count": 801,
+        "selected_count": 50,
+        "valid_canonical_ids": 50,
+        "invalid_or_orphan_ids": 0,
+        "fallback": false,
+        "duplicate_candidate_rate": 0,
+        "exact_validation_rate": 1,
+        "unresolved_rate": 0,
+        "retrieval_time_ms": 939.995,
+        "peak_memory_bytes_approx": 986054656,
+        "a_metrics": "NOT_MEASURED",
+        "disposition": "INCONCLUSIVE"
+      },
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step11-ab-replay.json#b_current_path.cases[case_id=rest-evidence-boundary]"
+      ],
+      "uncertainty": "INCONCLUSIVE",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:a:evidence:repository-record",
+      "type": "EVIDENCE",
+      "label": "Task172 repository record evidence",
+      "salient_content": {
+        "supports_only": [
+          "provenance",
+          "reported mechanical observations"
+        ]
+      },
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/172/step11-ab-replay.json"
+      ],
+      "uncertainty": "SUPPORTED",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:a:method:separate-correctness-from-comparison",
+      "type": "METHOD",
+      "label": "Separate exact validation from performance comparison",
+      "salient_content": {
+        "steps": [
+          "bind source hash",
+          "validate canonical IDs",
+          "retain missing comparison metrics",
+          "emit inconclusive disposition"
+        ]
+      },
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step11-ab-replay.json"
+      ],
+      "uncertainty": "OBSERVED",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:a:boundary:no-performance-claim",
+      "type": "BOUNDARY",
+      "label": "No A/B performance claim",
+      "salient_content": "A metrics are NOT_MEASURED; B is bounded exact retrieval; comparative performance remains INCONCLUSIVE.",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step11-ab-replay.json#boundary_findings"
+      ],
+      "uncertainty": "KNOWN",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:a:unknown:successor-continuation",
+      "type": "UNKNOWN",
+      "label": "Successor continuation is unknown",
+      "salient_content": "Whether an independent successor can reconstruct and continue the method without builder context.",
+      "source_refs": [
+        "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json"
+      ],
+      "uncertainty": "UNKNOWN",
+      "lifecycle": "UNRESOLVED"
+    }
+  ],
+  "reconstructed_relations": [
+    {
+      "id": "ir:a:rel:source-derived-observation",
+      "type": "DERIVED_FROM",
+      "from": "ir:a:observation:source-provenance",
+      "to": "ir:a:evidence:repository-record",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step00-baseline-audit.json"
+      ]
+    },
+    {
+      "id": "ir:a:rel:retrieval-tested-by-method",
+      "type": "TESTED_BY",
+      "from": "ir:a:observation:exact-retrieval",
+      "to": "ir:a:method:separate-correctness-from-comparison",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step11-ab-replay.json"
+      ]
+    },
+    {
+      "id": "ir:a:rel:retrieval-bounded",
+      "type": "BOUNDED_BY",
+      "from": "ir:a:observation:exact-retrieval",
+      "to": "ir:a:boundary:no-performance-claim",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step11-ab-replay.json#boundary_findings"
+      ]
+    },
+    {
+      "id": "ir:a:rel:continuation-unknown",
+      "type": "UNKNOWN_RELATION",
+      "from": "ir:a:unknown:successor-continuation",
+      "to": "ir:a:method:separate-correctness-from-comparison",
+      "source_refs": [
+        "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json"
+      ]
+    }
+  ],
+  "reconstructed_provenance": {
+    "fixture_binding": {
+      "label": "《大脑高效休息法》",
+      "source_record": "ignition/data/operations/iterations/172/step00-baseline-audit.json",
+      "source_pointer": "r1_input_provenance.inputs[input_id=got-brain-03-rest]",
+      "relay_mirror": "agent-inputs/IGNITION-20260912-172/got-brain-03-rest.md",
+      "workbench_copy": "work/provenance-locked-inputs/got-brain-03-rest.md",
+      "sha256": "6d92ac39669875a0d2a0c5aeb887df319a712d1886313c394da5f50daf4202d1",
+      "bytes": 14540,
+      "lines": 221,
+      "body_republished": false
+    },
+    "provenance_map": [
+      {
+        "source": "ignition/data/operations/iterations/172/step00-baseline-audit.json",
+        "fields": [
+          "source hash",
+          "byte count",
+          "line count",
+          "local exact-hit status"
+        ],
+        "authority": "repository provenance record"
+      },
+      {
+        "source": "ignition/data/operations/iterations/172/step11-ab-replay.json",
+        "fields": [
+          "candidate count",
+          "canonical validation",
+          "fallback",
+          "comparability disposition"
+        ],
+        "authority": "repository replay record"
+      }
+    ],
+    "verification_status": "References and source identity are carried from the packet; underlying Task172 records and source body were not opened in the blind phase."
+  },
+  "claim_ceiling": {
+    "authority_status": "PLATFORM_PROVENANCE",
+    "allowed_claims": [
+      "repository-grounded typed representation of a bounded retrieval observation"
+    ],
+    "forbidden_inferences": [
+      "cognitive inheritance",
+      "comparative performance gain",
+      "external validity",
+      "epistemic acceptance"
+    ]
+  },
+  "explicit_unknowns": [
+    "A-path executable comparison metrics are NOT_MEASURED.",
+    "The source body and its substantive claims are not in the blind packet.",
+    "Whether an independent successor can reconstruct and continue without Builder context.",
+    "External validity, truth, capability improvement and Owner acceptance."
+  ],
+  "forbidden_inferences": [
+    "Do not claim A/B speed or performance improvement.",
+    "Do not infer book content or scientific truth from metadata.",
+    "Do not infer cognition or transfer from a structured package or exact-ID validation.",
+    "Do not treat the package READY status as an independent verdict."
+  ],
+  "reconstructed_method_action_sequence": [
+    "bind the recorded source hash",
+    "validate canonical IDs",
+    "retain absent A comparison metrics as unknown",
+    "emit an inconclusive disposition"
+  ],
+  "counterexample_or_overclaim_trap": {
+    "trap": "Exact validation of 50/50 IDs with zero orphans and no fallback can be misread as proof of better retrieval, source truth, or transferred cognition.",
+    "bounded_response": "It supports only the recorded bounded validation observation. A metrics remain unmeasured; source body and external review are absent."
+  },
+  "unresolved_obligations": [
+    "Run a new bounded continuation.",
+    "Resolve whether the method can be applied without Builder context.",
+    "Keep missing A comparison metrics unresolved.",
+    "Verify underlying source references only after the blind checkpoint."
+  ],
+  "source_fields_used": [
+    "schema_version",
+    "package_id",
+    "package_kind",
+    "reconstruction_contract",
+    "open_obligations",
+    "claim_ceiling",
+    "real_source_binding",
+    "provenance_map",
+    "retrieval_observation",
+    "ir_package.objects",
+    "ir_package.relations",
+    "ir_package.provenance",
+    "ir_package.claim_ceiling"
+  ],
+  "fields_not_recoverable": [
+    "Source body bytes/content and substantive book claims.",
+    "Comparable A executable metrics or denominator.",
+    "Independent external evidence review.",
+    "Whether this representation reflects cognitive transfer rather than field copying."
+  ],
+  "direct_packet_disclosure": "The fixture itself embeds the complete typed IR object and relation lists, method steps, source references, unknowns and claim boundaries. Those fields above are extracted directly; their presence cannot establish independent reconstruction."
+}

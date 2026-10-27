@@ -1,0 +1,181 @@
+{
+  "checkpoint_id": "E0_REMOTE_AND_EVALUATOR_FREEZE",
+  "task_id": "IGNITION-20260917-180",
+  "recorded_at_utc": "2026-09-17 05:59:26 UTC",
+  "evaluator_role": "INDEPENDENT_EVALUATOR",
+  "owner_adjudication": "NOT_YET_RUN",
+  "hidden_chain_of_thought": "not requested or recorded",
+  "task_only": {
+    "repo": "Arvin-liu/1111",
+    "path": "agent-commands/IGNITION-20260916-179.md",
+    "ref": "d3fc657df8ab312ef15a644cd28096b5e8924a5e",
+    "blob_sha": "ac153f5e7656221df4612a5e1a5701691bea5edd"
+  },
+  "task180_command": {
+    "repo": "Arvin-liu/1111",
+    "path": "agent-commands/IGNITION-20260917-180.md",
+    "ref": "d3fc657df8ab312ef15a644cd28096b5e8924a5e",
+    "blob_sha": "aa37aa99ceacdbd927a66cafc99962e4ac24935b"
+  },
+  "remote": {
+    "repo": "Arvin-liu/when-systems-catch-fire",
+    "task172_baseline": "68565f2afb50989d2c2b0d346d774e3388702743",
+    "pr218": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "head_ref": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+      "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+      "base_ref": "main",
+      "base_sha": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+      "required_workflows": [
+        {
+          "workflow": "foundation-validation",
+          "run_id": 35072438208,
+          "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "repository-path-accounting-preflight",
+          "run_id": 35072438199,
+          "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "q33-governance-validation",
+          "run_id": 35072438216,
+          "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "current-state-sync-validation",
+          "run_id": 35072438207,
+          "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "iteration-lifecycle-validation",
+          "run_id": 35072438251,
+          "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "architecture-pages",
+          "run_id": 35072438222,
+          "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "iteration-planner-ci",
+          "run_id": 35072438232,
+          "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "pr219": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "head_ref": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+      "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+      "base_ref": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+      "base_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+      "required_workflows": [
+        {
+          "workflow": "repository-path-accounting-preflight",
+          "run_id": 35171705623,
+          "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "architecture-pages",
+          "run_id": 35171705560,
+          "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "foundation-validation",
+          "run_id": 35171705394,
+          "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "q33-governance-validation",
+          "run_id": 35171705438,
+          "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "iteration-planner-ci",
+          "run_id": 35171705439,
+          "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "current-state-sync-validation",
+          "run_id": 35171705660,
+          "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+          "conclusion": "success"
+        },
+        {
+          "workflow": "iteration-lifecycle-validation",
+          "run_id": 35171705670,
+          "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "remote_state_divergence": "NONE"
+  },
+  "evaluator_branch": "eval/IGNITION-20260917-180-cognitive-inheritance-r0-independent-evaluation",
+  "branch_start_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+  "draft_pr": {
+    "number": 220,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/220",
+    "state": "OPEN",
+    "draft": true,
+    "merged": false,
+    "base": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "base_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+    "head": "eval/IGNITION-20260917-180-cognitive-inheritance-r0-independent-evaluation",
+    "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+  },
+  "blind_inputs": [
+    [
+      "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-content-rest.json",
+      "f50c939cf5f4605f8c7b4f606d3a68e522e871ef"
+    ],
+    [
+      "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json",
+      "f145eacdb546c714b818f5765c570b6df5e10d83"
+    ],
+    [
+      "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-engineering-baseline.json",
+      "8d9ae3f0e1bbeca06de6624629a49a1b41f8bdd4"
+    ],
+    [
+      "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json",
+      "634411e50d8ede0616965c04e15616b00e1d2a8d"
+    ]
+  ],
+  "scope": {
+    "report_root": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/",
+    "builder_mutation": "NONE",
+    "frozen_criteria_mutation": "NONE",
+    "pr218_or_pr219_mutation": "NONE",
+    "model_rsi_or_weight_training": "NOT_STARTED",
+    "private_email_used": false,
+    "commit_email": "49422864+Arvin-liu@users.noreply.github.com (per-commit only)"
+  },
+  "blinding_contamination": {
+    "status": "BLINDING_CONTAMINATION",
+    "scope": "LIMITED_NON_TARGET_HISTORICAL_PR_TEXT",
+    "event": "A wrong-repository Arvin-liu/1111 pull-list response exposed unrelated historical PR bodies, including #115 (Task168 receipt), #114 (Task167 receipt), and a partial item around #16; response was truncated.",
+    "task179_builder_narrative_exposed": false,
+    "task179_transition_or_human_files_exposed": false,
+    "task179_historical_commit_explanations_exposed": false,
+    "source_body_exposed": false,
+    "effect": "Do not claim a perfectly uncontaminated cold start; no case-specific unblind artifact was exposed."
+  }
+}

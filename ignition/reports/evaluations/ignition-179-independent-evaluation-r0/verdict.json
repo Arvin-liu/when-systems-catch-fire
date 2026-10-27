@@ -1,0 +1,180 @@
+{
+  "artifact": "verdict.json",
+  "task_id": "IGNITION-20260917-180",
+  "role": "INDEPENDENT_EVALUATOR",
+  "conversation_independence_declaration": {
+    "separate_from_builder_authoring_context": true,
+    "builder_narrative_read_before_blind_checkpoint": false,
+    "builder_narrative_exposed_after_e2": true,
+    "builder_narrative_used_as_evaluation_evidence": false,
+    "basis": "The E1 blind results used the ordered packet; the E2 verdict used the authorized unblind materials and frozen Task180 evidence.",
+    "qualification": "Two contamination events are disclosed below. The later PR-body exposure occurred after E2 was committed, was not used as evidence, and further qualifies this evaluator session."
+  },
+  "evaluated_repository": "Arvin-liu/when-systems-catch-fire",
+  "evaluated_head": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+  "task172_baseline_head": "68565f2afb50989d2c2b0d346d774e3388702743",
+  "evaluator_branch": "eval/IGNITION-20260917-180-cognitive-inheritance-r0-independent-evaluation",
+  "evaluator_pr": 220,
+  "blind_checkpoint": {
+    "commit": "cf37d6d33707870514c3e62249ac3b8cbebf2526",
+    "message": "task180 blind: freeze independent reconstructions before unblinding",
+    "remote_push_verified_before_unblind": true
+  },
+  "blinding_contamination": {
+    "status": "BLINDING_CONTAMINATION",
+    "scope": "LIMITED_NON_TARGET_HISTORICAL_PR_TEXT",
+    "task179_builder_narrative_exposed_before_blind_checkpoint": false,
+    "events": [
+      {
+        "id": "BC-01",
+        "timing": "BEFORE_E1_BLIND_CHECKPOINT",
+        "exposure": "A wrong-repository pull-list response displayed unrelated old PR bodies (#115 Task168 receipt, #114 Task167 receipt, partial #16 and truncated surrounding entries).",
+        "task179_builder_narrative_exposed": false,
+        "transition_or_human_files_exposed": false,
+        "case_specific_unblind_material_exposed": false,
+        "used_as_evaluation_evidence": false
+      },
+      {
+        "id": "BC-02",
+        "timing": "AFTER_E2_VERDICT_COMMIT",
+        "exposure": "A GitHub PR metadata read returned the full PR #219 Builder body and PR #218 Task172 handoff body along with status fields.",
+        "task179_builder_narrative_exposed": true,
+        "task172_handoff_exposed": true,
+        "used_to_revise_blind_or_unblind_evidence": false,
+        "used_to_resolve_existing_unknowns": false,
+        "impact": "The E1 blind records and E2 evaluation result predate this exposure. No body-derived claim was imported; session-level independence is further qualified."
+      }
+    ],
+    "impact": "Cold-start independence is qualified; no claim of perfect blinding."
+  },
+  "frozen_criterion_dispositions": [
+    {
+      "criterion_id": "RECONSTRUCTION_FIDELITY",
+      "disposition": "PARTIAL",
+      "evidence": [
+        "Blind records identify all 15/15 object ID/type/label entries (content 8/8 and engineering 7/7) and all 8/8 relation ID/type/endpoint entries.",
+        "The unblind comparison classifies 7 fields EXACT, 9 SEMANTICALLY_EQUIVALENT, 4 PARTIAL and 5 MISSING across 25 compared fields.",
+        "Both allowed source fixtures directly contain complete ir_package object and relation graphs, provenance references, methods, unknowns and claim ceilings; successor packages also describe reconstruction steps and forbidden assumptions."
+      ],
+      "limitations": [
+        "Most matches can result from direct extraction and do not discriminate reconstruction from copying.",
+        "Provenance and per-object uncertainty detail are partial; content and engineering transition framing and migration lineage were not in the blind packet.",
+        "The engineering fixture's historical clean_clone_verified assertion remains unresolved from the authorized metadata-only evidence."
+      ]
+    },
+    {
+      "criterion_id": "CONTINUATION_CORRECTNESS",
+      "disposition": "PASS",
+      "scope": "Only CONTENT-CONT-01 and ENGINEERING-CONT-01 as specified by Task180.",
+      "evidence": [
+        "The content continuation reports the bounded 50/50 exact-ID observation, 0 orphans, no fallback and 710 ms for that observation only; it rejects A-speedup, truth and capability claims.",
+        "The engineering continuation preserves baseline identity and historical 7/7 evidence while reporting the current round as six successes plus one unavailable Foundation workflow; it does not mutate or regenerate the baseline.",
+        "Both records retain unknowns, forbidden inferences, provenance, a claim ceiling, an overclaim counterexample and unresolved obligations."
+      ],
+      "limitations": [
+        "One evaluator generated and judged both bounded records; no second-rater agreement is available.",
+        "These supplied cases do not test broad transfer or generalization."
+      ]
+    },
+    {
+      "criterion_id": "NON_EQUIVALENCE_CONTROL",
+      "disposition": "PASS",
+      "scope": "The eight frozen negative-control claims in this task.",
+      "evidence": [
+        "All 8/8 controls are rejected with reasons and conditional claim boundaries.",
+        "The verdict distinguishes schema, CI, package parsing, provenance, fixed-point closure, frozen criteria, missing information, cognitive inheritance, capability, external truth and Owner acceptance."
+      ],
+      "limitations": [
+        "This is one evaluator's boundary handling in this protocol, not evidence of general model capability."
+      ]
+    }
+  ],
+  "overall_evaluator_verdict": "R0_INHERITANCE_EVIDENCE_PARTIAL",
+  "overall_basis": "The two bounded continuations and non-equivalence controls show task-local method and boundary use. Reconstruction fidelity is weakened by a self-revealing packet, partial provenance and missing fields; therefore the evidence supports only a narrow repository-local R0 observation, not a clean demonstration that structure was independently reconstructed.",
+  "strongest_positive_evidence": [
+    "Both continuations apply the recorded bounded method to new observations while preserving uncertainty and rejecting the specified overclaims.",
+    "The evaluator correctly separates the historical baseline's recorded 7/7 success from a current Foundation workflow that is unavailable.",
+    "All eight negative controls are rejected, and the R0 validator plus 16 R0/ownership tests pass on the exact Task179 head."
+  ],
+  "strongest_negative_evidence": [
+    "The blind fixtures expose the full IR object/relation graph and the package repeats method and boundary instructions, so exact recovery mostly tests extraction.",
+    "The content body was not available for substantive review; source truth and external validity were not tested.",
+    "The blind records omit per-object details, several provenance details, transition framing, migration lineage and the engineering scan-input hash enumeration.",
+    "Historical clean-clone evidence asserted by the engineering fixture is not independently resolved by the inspected Task172 freeze files and PR metadata.",
+    "The limited blinding contamination and single-evaluator design reduce confidence in cold-start and scoring independence."
+  ],
+  "protocol_defects": [
+    {
+      "id": "PD-01",
+      "finding": "Both permitted source fixtures disclose complete object and relation representations, source references, methods, unknowns and claim ceilings; the successor packages also state reconstruction steps and forbidden assumptions.",
+      "impact": "RECONSTRUCTION_FIDELITY is PARTIAL because the protocol cannot distinguish independent reconstruction from direct copying."
+    },
+    {
+      "id": "PD-02",
+      "finding": "The frozen criterion questions and evidence lists do not specify a field-level scoring rubric or decision threshold, and this round has one evaluator.",
+      "impact": "Qualitative dispositions remain auditable but cannot be treated as inter-rater validated or a calibrated score; no numeric threshold was added."
+    },
+    {
+      "id": "PD-03",
+      "finding": "The engineering fixture asserts clean_clone_verified=true, but the authorized inspected freeze evidence and metadata-only PR state do not provide an independently resolvable clean-clone receipt.",
+      "impact": "Preserve this historical assertion as unresolved; do not call it false or verified."
+    },
+    {
+      "id": "PD-04",
+      "finding": "An earlier wrong-repository pull-list response exposed unrelated historical PR narrative text before the blind checkpoint.",
+      "impact": "The evaluation records limited blinding contamination; Task179 Builder narrative and case-specific unblind artifacts were not exposed."
+    },
+    {
+      "id": "PD-05",
+      "finding": "After E2, a metadata-oriented PR retrieval unexpectedly included the full PR #219 Builder narrative and PR #218 handoff body.",
+      "impact": "This did not inform the frozen E1 or E2 findings, but it further qualifies session-level independence and is recorded in the post-E2 addendum."
+    },
+    {
+      "id": "PD-06",
+      "finding": "The repository path-accounting gate does not classify the evaluator-only report and tool files allowed by this task; the E2 exact-head preflight reported 12 missing tracked paths.",
+      "impact": "The repository-path-accounting-preflight and lifecycle-validation workflow failed at the same manifest check. The generated Foundation path-classification snapshot was left unchanged under the evaluator write boundary; lifecycle checks after Layer A did not run in that workflow."
+    }
+  ],
+  "post_e2_execution_correction": {
+    "initial_pr220_base_recorded_at_e0": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "required_pr220_base": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+    "corrected_after_e2": true,
+    "evaluator_head_unchanged_by_base_correction": "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a",
+    "pr218_or_pr219_modified": false
+  },
+  "e2_exact_head_workflow_snapshot": {
+    "head": "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a",
+    "runs": [
+      {"workflow": "foundation-validation", "run_id": 35190529632, "status_at_snapshot": "IN_PROGRESS"},
+      {"workflow": "architecture-pages", "run_id": 35190529609, "conclusion": "SUCCESS"},
+      {"workflow": "current-state-sync-validation", "run_id": 35190529740, "conclusion": "SUCCESS"},
+      {"workflow": "iteration-lifecycle-validation", "run_id": 35190529688, "conclusion": "FAILURE"},
+      {"workflow": "repository-path-accounting-preflight", "run_id": 35190529625, "conclusion": "FAILURE"},
+      {"workflow": "q33-governance-validation", "run_id": 35190529716, "conclusion": "SUCCESS"},
+      {"workflow": "iteration-planner-ci", "run_id": 35190529603, "conclusion": "SUCCESS"}
+    ],
+    "shared_failure": "Path-accounting manifest:all-tracked-accounted; tracked=4614, manifest=4602, missing=12. The lifecycle job stopped at its Layer A preflight before lifecycle tests.",
+    "generated_manifest_left_unchanged": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
+  },
+  "unknowns": [
+    "Whether the R0 package enables reconstruction beyond direct field extraction.",
+    "Whether the bounded methods transfer to broader content or engineering tasks.",
+    "Whether any successor exhibits general cognitive inheritance or model capability improvement.",
+    "Substantive content truth and external evidence validity for the content case.",
+    "Independent resolution of the historical engineering clean-clone assertion.",
+    "Second-evaluator agreement and governance overhead.",
+    "Owner/GPT epistemic acceptance."
+  ],
+  "external_validity_boundary": "Repository-local R0 artifacts, two supplied bounded continuations, and the enumerated mechanical tests only. No general cognition, model improvement, external truth, external validity, Model-RSI success, weight change, Owner acceptance, or next-generation architecture is established.",
+  "builder_and_canonical_mutations": {
+    "task179_r0_artifacts": "NONE",
+    "foundation_canonical": "NONE",
+    "current_canonical": "NONE",
+    "knowledge_experience_canonical_or_projection_semantics": "NONE",
+    "fire_seeds_canonical_semantics": "NONE",
+    "bulk_asset_rewrite": "NONE",
+    "model_rsi_or_weight_training": "NONE"
+  },
+  "owner_gpt_adjudication": "NOT_YET_RUN",
+  "evaluation_lifecycle": "E2_RESULT_RETAINED_WITH_POST_E2_CONTAMINATION_AND_BASE_CORRECTION_ADDENDUM_PENDING_FINAL_VALIDATION"
+}

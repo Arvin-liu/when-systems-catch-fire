@@ -1,0 +1,274 @@
+{
+  "artifact": "blind-engineering-reconstruction.json",
+  "phase": "BLIND_RECONSTRUCTION",
+  "case_id": "ENGINEERING-BASELINE-01",
+  "inputs": [
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-engineering-baseline.json",
+      "blob_sha": "8d9ae3f0e1bbeca06de6624629a49a1b41f8bdd4"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json",
+      "blob_sha": "634411e50d8ede0616965c04e15616b00e1d2a8d"
+    }
+  ],
+  "reconstructed_objects": [
+    {
+      "id": "ir:b:model:task172-freeze",
+      "type": "COGNITIVE_MODEL",
+      "label": "Task172 operational freeze frame",
+      "salient_content": "Dependency-ordered repository derivation with scan-input freeze and exact-head acceptance.",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step13-final-freeze.json",
+        "ignition/reports/operations/ignition-172-20260915-step13-final-freeze.md"
+      ],
+      "uncertainty": "SUPPORTED",
+      "lifecycle": "SUPERSEDED"
+    },
+    {
+      "id": "ir:b:failure:future-capability-boundary",
+      "type": "FAILURE",
+      "label": "Future capability work lacks an independent evaluation boundary",
+      "salient_content": "A repository freeze can show structural closure without specifying how an independent evaluator tests successor reconstruction or continuation.",
+      "source_refs": [
+        "ignition/reports/operations/ignition-172-20260915-step13-final-freeze.md",
+        "https://github.com/Arvin-liu/when-systems-catch-fire/pull/218"
+      ],
+      "uncertainty": "OBSERVED",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:b:observation:scan-freeze",
+      "type": "OBSERVATION",
+      "label": "Scan-sensitive inputs were frozen before official generators",
+      "salient_content": {
+        "freeze_status": "FINAL_SCAN_INPUT_FREEZE_RECORDED",
+        "business_source_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+        "next_generation_work_started": false
+      },
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step13-final-freeze.json",
+        "ignition/data/operations/iterations/172/step00-baseline-audit.json#step00a_scan_input_freeze"
+      ],
+      "uncertainty": "KNOWN",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:b:method:dependency-ordered-fixed-point",
+      "type": "METHOD",
+      "label": "Dependency-ordered fixed-point closure",
+      "salient_content": {
+        "steps": [
+          "freeze scan inputs",
+          "run official dependency-ordered generators",
+          "rerun to second-run no diff",
+          "verify exact-head CI",
+          "verify clean clone"
+        ],
+        "replayable": true
+      },
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step13-final-freeze.json",
+        "ignition/ITERATION.md"
+      ],
+      "uncertainty": "OBSERVED",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:b:evidence:exact-head-ci",
+      "type": "EVIDENCE",
+      "label": "Exact-head CI and clean-clone evidence",
+      "salient_content": {
+        "baseline_exact_head": "68565f2afb50989d2c2b0d346d774e3388702743",
+        "workflows": 7,
+        "all_success": true,
+        "clean_clone": true,
+        "fixed_point": true,
+        "run_ids": [
+          35072438208,
+          35072438199,
+          35072438216,
+          35072438207,
+          35072438251,
+          35072438222,
+          35072438232
+        ]
+      },
+      "source_refs": [
+        "https://github.com/Arvin-liu/when-systems-catch-fire/pull/218",
+        "ignition/data/operations/iterations/172/step13-final-freeze.json"
+      ],
+      "uncertainty": "SUPPORTED",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:b:boundary:no-capability-inheritance",
+      "type": "BOUNDARY",
+      "label": "Pre-capability-inheritance ceiling",
+      "salient_content": "Frozen pre-capability-inheritance repository comparison baseline only; no capability inheritance, RSI, MetaRSI, self-training, truth, evidence, or epistemic acceptance is asserted.",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step13-final-freeze.json",
+        "ignition/reports/operations/ignition-172-20260915-step13-final-freeze.md"
+      ],
+      "uncertainty": "KNOWN",
+      "lifecycle": "CURRENT_R0"
+    },
+    {
+      "id": "ir:b:unknown:cognitive-transfer",
+      "type": "UNKNOWN",
+      "label": "Cognitive transfer from baseline is unknown",
+      "salient_content": "Whether a successor can select and apply the frozen method in a new bounded task without hidden Builder context.",
+      "source_refs": [
+        "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json"
+      ],
+      "uncertainty": "UNKNOWN",
+      "lifecycle": "UNRESOLVED"
+    }
+  ],
+  "reconstructed_relations": [
+    {
+      "id": "ir:b:rel:failure-triggered-transition",
+      "type": "TRIGGERED_TRANSITION",
+      "from": "ir:b:failure:future-capability-boundary",
+      "to": "ir:b:method:dependency-ordered-fixed-point",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step13-final-freeze.json"
+      ]
+    },
+    {
+      "id": "ir:b:rel:method-tested-by-evidence",
+      "type": "TESTED_BY",
+      "from": "ir:b:method:dependency-ordered-fixed-point",
+      "to": "ir:b:evidence:exact-head-ci",
+      "source_refs": [
+        "https://github.com/Arvin-liu/when-systems-catch-fire/pull/218"
+      ]
+    },
+    {
+      "id": "ir:b:rel:baseline-bounded",
+      "type": "BOUNDED_BY",
+      "from": "ir:b:model:task172-freeze",
+      "to": "ir:b:boundary:no-capability-inheritance",
+      "source_refs": [
+        "ignition/data/operations/iterations/172/step13-final-freeze.json"
+      ]
+    },
+    {
+      "id": "ir:b:rel:transfer-unknown",
+      "type": "UNKNOWN_RELATION",
+      "from": "ir:b:unknown:cognitive-transfer",
+      "to": "ir:b:model:task172-freeze",
+      "source_refs": [
+        "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json"
+      ]
+    }
+  ],
+  "reconstructed_provenance": {
+    "baseline": {
+      "identifier": "PRE_CAPABILITY_INHERITANCE_BASELINE",
+      "exact_head": "68565f2afb50989d2c2b0d346d774e3388702743",
+      "pr": 218,
+      "pr_lifecycle_at_freeze": "OPEN + DRAFT + unmerged",
+      "fixed_point_second_run_no_diff": true,
+      "clean_clone_verified": true,
+      "new_generation_started": false
+    },
+    "freeze_record": "ignition/data/operations/iterations/172/step13-final-freeze.json",
+    "ci_evidence": [
+      [
+        "foundation-validation",
+        35072438208
+      ],
+      [
+        "repository-path-accounting-preflight",
+        35072438199
+      ],
+      [
+        "q33-governance-validation",
+        35072438216
+      ],
+      [
+        "current-state-sync-validation",
+        35072438207
+      ],
+      [
+        "iteration-lifecycle-validation",
+        35072438251
+      ],
+      [
+        "architecture-pages",
+        35072438222
+      ],
+      [
+        "iteration-planner-ci",
+        35072438232
+      ]
+    ],
+    "live_preflight_crosscheck": {
+      "pr218_head": "68565f2afb50989d2c2b0d346d774e3388702743",
+      "current_pr_lifecycle": "OPEN + DRAFT + unmerged",
+      "current_exact_head_workflows": "7/7 completed success"
+    },
+    "verification_status": "The current PR/head/workflow values were independently checked remotely; the historic freeze record and fixed-point/clean-clone source records were not opened during blind phase."
+  },
+  "claim_ceiling": {
+    "authority_status": "PLATFORM_PROVENANCE",
+    "allowed_claims": [
+      "repository-grounded representation of an engineering transition"
+    ],
+    "forbidden_inferences": [
+      "cognitive inheritance",
+      "model improvement",
+      "independent evaluator acceptance"
+    ]
+  },
+  "explicit_unknowns": [
+    "Whether the successor can select/apply the method in a new bounded task.",
+    "Whether fixed-point closure transfers beyond replaying repository commands.",
+    "The current Foundation workflow status on the new continuation is not relevant yet; only freeze-time and preflight head are verified."
+  ],
+  "forbidden_inferences": [
+    "Green CI does not prove successor cognition or model improvement.",
+    "A fixed point is not truth, external validity or epistemic acceptance.",
+    "The frozen baseline does not authorize RSI, Model-RSI or weight training.",
+    "Do not claim the current PR/head facts prove independent transfer."
+  ],
+  "reconstructed_method_action_sequence": [
+    "verify exact baseline identity",
+    "freeze scan-sensitive inputs",
+    "run official dependency-ordered generators in bounded scope",
+    "rerun and verify second-run no diff",
+    "verify exact-head CI",
+    "verify clean clone",
+    "keep structural evidence distinct from transfer evidence",
+    "hand off for independent evaluation"
+  ],
+  "counterexample_or_overclaim_trap": {
+    "trap": "Historical 7/7 success plus a later 6/7 current rerun with Foundation unavailable might be collapsed into either 'baseline invalid' or 'current 7/7 green'.",
+    "bounded_response": "Preserve historical freeze evidence and report current re-verification as incomplete if a required workflow is unavailable; do not mutate baseline contents because of runner availability alone."
+  },
+  "unresolved_obligations": [
+    "Test a new bounded continuation, not just the original freeze replay.",
+    "Do not treat structural closure as inheritance.",
+    "Keep the no-model/no-weight boundary."
+  ],
+  "source_fields_used": [
+    "package reconstruction_contract",
+    "package forbidden_assumptions",
+    "fixture real_source_binding",
+    "fixture provenance_map",
+    "fixture ci_evidence",
+    "ir_package.objects",
+    "ir_package.relations",
+    "ir_package.provenance",
+    "ir_package.claim_ceiling",
+    "live PR/workflow preflight"
+  ],
+  "fields_not_recoverable": [
+    "The full historical freeze record contents and actual fixed-point output diff.",
+    "The exact clean-clone transcript and local worktree state at freeze.",
+    "Whether the method is transferable cognitive behavior rather than executable procedure copying.",
+    "Any external truth or Model-RSI outcome."
+  ],
+  "direct_packet_disclosure": "The source fixture embeds the baseline identity, seven run IDs, method sequence, object/relation graph, unknown transfer field and claim ceiling. These fields are direct extraction, not independent derivation."
+}

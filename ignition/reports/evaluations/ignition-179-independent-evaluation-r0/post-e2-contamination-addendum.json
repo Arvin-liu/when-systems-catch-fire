@@ -1,0 +1,45 @@
+{
+  "artifact": "post-e2-contamination-addendum.json",
+  "task_id": "IGNITION-20260917-180",
+  "records_commit": "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a",
+  "event": {
+    "id": "BC-02",
+    "timing": "AFTER_E2_VERDICT_COMMIT",
+    "operation_intended": "Read PR #218, #219 and #220 metadata fields only.",
+    "observed_tool_behavior": "The metadata response included full PR descriptions for #218 and #219.",
+    "exposed_material": [
+      "PR #219 Task179 Builder narrative and final handoff body",
+      "PR #218 Task172 handoff body"
+    ],
+    "not_exposed_before_e1": true,
+    "e1_blind_checkpoint_changed": false,
+    "e2_frozen_blind_and_unblind_records_changed_by_exposure": false,
+    "body_claims_used_to_resolve_unknowns": false,
+    "body_claims_used_to_change_evaluator_dispositions": false,
+    "required_response": "Record the exposure; do not treat body-only claims as independently verified evidence."
+  },
+  "execution_correction": {
+    "pr220_initial_base": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "required_base": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+    "corrected_via_base_update": true,
+    "correction_preserved_evaluator_head": "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a",
+    "final_lifecycle_at_correction": "OPEN + DRAFT + unmerged",
+    "pr218_modified": false,
+    "pr219_modified": false
+  },
+  "e2_exact_head_workflow_snapshot": {
+    "head": "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a",
+    "runs": [
+      {"workflow": "foundation-validation", "run_id": 35190529632, "status_at_snapshot": "IN_PROGRESS"},
+      {"workflow": "architecture-pages", "run_id": 35190529609, "conclusion": "SUCCESS"},
+      {"workflow": "current-state-sync-validation", "run_id": 35190529740, "conclusion": "SUCCESS"},
+      {"workflow": "iteration-lifecycle-validation", "run_id": 35190529688, "conclusion": "FAILURE"},
+      {"workflow": "repository-path-accounting-preflight", "run_id": 35190529625, "conclusion": "FAILURE"},
+      {"workflow": "q33-governance-validation", "run_id": 35190529716, "conclusion": "SUCCESS"},
+      {"workflow": "iteration-planner-ci", "run_id": 35190529603, "conclusion": "SUCCESS"}
+    ],
+    "shared_failure": "Path-accounting manifest:all-tracked-accounted; tracked=4614, manifest=4602, missing=12. The lifecycle job stopped at its Layer A preflight before lifecycle tests.",
+    "generated_manifest_left_unchanged": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
+  },
+  "interpretation": "E2 criterion findings remain frozen on evidence collected before the post-E2 body exposure. The overall session-level independence claim is qualified, and Owner/GPT adjudication should consider this addendum."
+}
