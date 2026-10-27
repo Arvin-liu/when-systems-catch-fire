@@ -1,0 +1,36 @@
+{
+  "candidate_catalog_git_blob_sha1": "7112ccc706fb9ea437139ed5b0feddbcb3ccb218",
+  "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+  "catalog_replay": {
+    "all_expected_decisions_reproduced": true
+  },
+  "claim_ceiling": "Route proposal only. It does not invoke the merger, change router defaults, authenticate source receipts, or establish scientific evidence.",
+  "planner_path": "ignition/tools/operations/plan_ignition_operation_run.py",
+  "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_trials": [
+    {
+      "candidate_invoked": false,
+      "decision": "INCOMPLETE",
+      "execution_authorized": false,
+      "network_calls_made": 0,
+      "scenario": "default_off",
+      "selected_tool_ids": []
+    },
+    {
+      "candidate_invoked": false,
+      "decision": "COMPLETE",
+      "execution_authorized": false,
+      "network_calls_made": 0,
+      "network_hosts": [],
+      "network_permission_required": false,
+      "scenario": "explicit_allowlist",
+      "selected_tool_ids": [
+        "research.merge_selected_index_search_results"
+      ]
+    }
+  ],
+  "schema_version": "toolbox-selected-index-search-result-merge-route-evidence-r0",
+  "task_profile_path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-profile-r0.json",
+  "task_profile_sha256": "479b9d44316847b7988eaaac9dcb54b960a53a4b634f1377e330ae8964410ec5",
+  "tool_id": "research.merge_selected_index_search_results"
+}

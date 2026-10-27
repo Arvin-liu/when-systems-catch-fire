@@ -1,0 +1,28 @@
+{
+  "claim_ceiling": "This binds the local source and two retained provider receipts for the recorded input/output. It does not authenticate the provider, establish semantic relevance, or make the offline merge a literature review.",
+  "input_path": "ignition/data/operations/toolbox-selected-index-search-result-merge-input-r0.json",
+  "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+  "output_path": "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+  "output_sha256": "d717d8ab414cc2acdb60d0316988b0ea8ae599301daad70ab0248ead44a5300a",
+  "schema_version": "toolbox-selected-index-search-result-merge-source-binding-r0",
+  "tool_id": "research.merge_selected_index_search_results",
+  "tool_source_path": "ignition/tools/toolbox_merge_selected_index_search_results.py",
+  "tool_source_sha256": "23500d976e0c60b5e0760421880864a1fe5573f68c5129792170d729f0885ea0",
+  "tool_version": "0.1.0",
+  "upstream_source_receipts": [
+    {
+      "path": "ignition/data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+      "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+      "response_sha256": "a12b164045333f04fa4c93496129ffc50ad59b404d06b91ac4feccc39f53512f",
+      "retrieval_timestamp_utc": "2026-10-26T05:30:05.810854Z",
+      "returned_count": 5
+    },
+    {
+      "path": "ignition/data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json",
+      "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+      "response_sha256": "6f79220fec231f3d27f18ca0f1716cb1f7b6c8e1afbbee49d7f5555e777a8648",
+      "retrieval_timestamp_utc": "2026-10-26T05:11:51.127704Z",
+      "returned_count": 5
+    }
+  ]
+}
