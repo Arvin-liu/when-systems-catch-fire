@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [allowlisting and negative novelty/proof checks.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-04f37cbce3aa8c41 / allowlisting and negative novelty/proof checks.
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [Almost-sure convergence is argued under assumptions, but proof presentation gaps, no mechanization, no rates and no empi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c9807d6a9c8dd93d / Almost-sure convergence is argued under assumptions, but proof presentation gaps, no mechanization, no rates and no empi
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [an AI review is presented as independent proof without source separation;](../../../docs/governance/non-sycophancy-output-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-43be1441ffcaf882 / an AI review is presented as independent proof without source separation;
+  - 来源：`docs/governance/non-sycophancy-output-protocol.md`
+  - 依赖：—；被引用：—
+- [an isomorphism claim needs objects, a bijection and structure-preservation proof;](../../../docs/foundation/future-claim-admission-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-28a040ac06ecb179 / an isomorphism claim needs objects, a bijection and structure-preservation proof;
+  - 来源：`docs/foundation/future-claim-admission-protocol.md`
+  - 依赖：—；被引用：—
+- [An iteration is a repository state transition, not merely a local file edit. A change to capability, identity, usage, ha](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac4f709e81a9252f / An iteration is a repository state transition, not merely a local file edit. A change to capability, identity, usage, ha
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [An iterative NP lifecycle and library learning are explicit, but artifact identity, provenance, versions, approvals, dep](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-496c6570c58ef110 / An iterative NP lifecycle and library learning are explicit, but artifact identity, provenance, versions, approvals, dep
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [APPROVAL_DECISION_STATES = frozenset\({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI](../../../agent_federation/approval_handoff.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-f30d1b3ac74f5dfd / APPROVAL_DECISION_STATES = frozenset\({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI
@@ -418,6 +448,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Claim argument evidence audit / claim-argument-evidence-audit-20260712
   - 来源：`reports/foundation-architecture/claim-argument-evidence-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling and lifecycle](../../../agent-results/IGNITION-20260904-154-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d806dd48a928c0a9 / Claim ceiling and lifecycle
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
   - 依赖：—；被引用：—
 - [claim ceiling 由 scope、evidence、proof、logic 等真实记录的最窄适用上限决定，而不是由最新叙事决定。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2467,40 +2502,5 @@
 - [F_intelligence_boundary := ∫\(mathematical_constraint · godel_incompleteness · system_limitation\) / boundary_threshold](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-98D5BBC8B0D12DD9 / F_intelligence_boundary := ∫\(mathematical_constraint · godel_incompleteness · system_limitation\) / boundary_threshold / IMPLICIT-98D5BBC8B0D12DD9 / IMPLICIT-3A857E735EDCF3FE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [F_intelligence_boundary := ∫\(mathematical_constraint · godel_incompleteness · system_limitation\) / boundary_threshold](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9b1f28c6555337d5 / F_intelligence_boundary := ∫\(mathematical_constraint · godel_incompleteness · system_limitation\) / boundary_threshold
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [F_plant_consciousness := ∫\(subjective_experience × self_awareness × meta_cognition\) / neural_complexity（值≈0）](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c876794188f86659 / F_plant_consciousness := ∫\(subjective_experience × self_awareness × meta_cognition\) / neural_complexity（值≈0）
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [F_plant_ethics := ∫\(moral_status × intrinsic_value × ethical_consideration\) / consciousness_threshold](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a39311f586135069 / F_plant_ethics := ∫\(moral_status × intrinsic_value × ethical_consideration\) / consciousness_threshold
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a5726d147af15127 / F_plant_godel := ∫\(axiom_system × provable_propositions × unprovable_propositions\) / incompleteness_threshold
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化）](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-10497A555E2B5236 / F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化） / IMPLICIT-10497A555E2B5236 / IMPLICIT-8E145983C8B6179D
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化）](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8E145983C8B6179D / F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化） / IMPLICIT-8E145983C8B6179D / IMPLICIT-10497A555E2B5236
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化）](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A66B3A73A49C3CE1 / F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化） / IMPLICIT-A66B3A73A49C3CE1 / IMPLICIT-10497A555E2B5236
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

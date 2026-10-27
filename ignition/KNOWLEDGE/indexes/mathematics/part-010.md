@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 应约者退出的成本 is adjudicated as METRIC: 应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-A5 / Within the source-defined scope, 应约者退出的成本 is adjudicated as METRIC: 应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 延迟-噪声频谱函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D368 / Within the source-defined scope, 延迟-噪声频谱函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D354；被引用：—
+- [Within the source-defined scope, 延迟临界-不可逆点统一函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的D382与D295在参数空间形成两条不可逆线。](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D396 / Within the source-defined scope, 延迟临界-不可逆点统一函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的D382与D295在参数空间形成两条不可逆线。
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D295, D382；被引用：—
+- [Within the source-defined scope, 引力B型必要性定理 is adjudicated as FORMAL_PROPOSITION: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-D225 / Within the source-defined scope, 引力B型必要性定理 is adjudicated as FORMAL_PROPOSITION: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：T33；被引用：—
+- [Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D360 / Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D310；被引用：—
+- [Within the source-defined scope, 弱容斥窗口-逃逸速度联合函数 is adjudicated as METRIC: M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导\)·\(1-f](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D374 / Within the source-defined scope, 弱容斥窗口-逃逸速度联合函数 is adjudicated as METRIC: M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导\)·\(1-f
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D289, D332；被引用：—
+- [Within the source-defined scope, 弱混合角-容斥约束函数 is adjudicated as RELATION: M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D304 / Within the source-defined scope, 弱混合角-容斥约束函数 is adjudicated as RELATION: M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D283, D297；被引用：—
+- [Within the source-defined scope, 弹性-弱度偏离函数 is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D113 / Within the source-defined scope, 弹性-弱度偏离函数 is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 强干预-去容斥等价函数 is adjudicated as RELATION: M7的有效β = min\(β_intended, β_max\)，β_max∝√n/K。去容斥需](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D418 / Within the source-defined scope, 强干预-去容斥等价函数 is adjudicated as RELATION: M7的有效β = min\(β_intended, β_max\)，β_max∝√n/K。去容斥需
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 强相互作用门控函数 is adjudicated as RELATION: 强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `REJECTED_FALSE_OR_INVALID`
+  - 可搜索名称：CLAIM-D188 / Within the source-defined scope, 强相互作用门控函数 is adjudicated as RELATION: 强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 形式系统外推边界函数 is adjudicated as MECHANISM_MODEL: classify_A\(p\) in {provable, refutable, in](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D475 / Within the source-defined scope, 形式系统外推边界函数 is adjudicated as MECHANISM_MODEL: classify_A\(p\) in {provable, refutable, in
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 恐惧锁定稳态函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D64 / Within the source-defined scope, 恐惧锁定稳态函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control
@@ -2449,58 +2504,3 @@
   - 可搜索名称：NFC-dc0d8c819914eba1 / \| \[D315\]\( \) \| \[多极小点竞争函数\]\( \) \| F_{D315}\(x\) := M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D315；被引用：—
-- [\| \[D316\]\( \) \| \[容斥时间权重演化函数\]\( \) \| F_{D316}\(x\) := M3的dΦ/dt=Σᵢ αᵢ/\(1-pᵢ\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ccd6649944b78c71 / \| \[D316\]\( \) \| \[容斥时间权重演化函数\]\( \) \| F_{D316}\(x\) := M3的dΦ/dt=Σᵢ αᵢ/\(1-pᵢ\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D316；被引用：—
-- [\| \[D318\]\( \) \| \[容斥主导尺度函数\]\( \) \| F_{D318}\(x\) := M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ff6c2ab3c17106cc / \| \[D318\]\( \) \| \[容斥主导尺度函数\]\( \) \| F_{D318}\(x\) := M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D293, D318；被引用：—
-- [\| \[D320\]\( \) \| \[容斥加速跨域标度函数\]\( \) \| F_{D320}\(x\) := M7的容斥加速度a_excl∝n²·σ²·](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-52f0595f79f3b82f / \| \[D320\]\( \) \| \[容斥加速跨域标度函数\]\( \) \| F_{D320}\(x\) := M7的容斥加速度a_excl∝n²·σ²·
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D320；被引用：—
-- [\| \[D321\]\( \) \| \[d_opt-σ_opt联合演化函数\]\( \) \| F_{D321}\(x\) :=](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-abd235269731d33b / \| \[D321\]\( \) \| \[d_opt-σ_opt联合演化函数\]\( \) \| F_{D321}\(x\) :=
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D321；被引用：—
-- [\| \[D324\]\( \) \| \[阶段2宽度标度函数\]\( \) \| F_{D324}\(x\) := M11的w₂∝\(√n-1\)/\(n·ḡ\)。n→∞时](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e7020f956020b845 / \| \[D324\]\( \) \| \[阶段2宽度标度函数\]\( \) \| F_{D324}\(x\) := M11的w₂∝\(√n-1\)/\(n·ḡ\)。n→∞时
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D324；被引用：—
-- [\| \[D325\]\( \) \| \[僵尸态自修复函数\]\( \) \| F_{D325}\(x\) := M12的僵尸态中自发涨落δg_eff∝√\(kT_eff](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6d471c87d89b2347 / \| \[D325\]\( \) \| \[僵尸态自修复函数\]\( \) \| F_{D325}\(x\) := M12的僵尸态中自发涨落δg_eff∝√\(kT_eff
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D325；被引用：—
-- [\| \[D326\]\( \) \| \[正反馈饱和函数\]\( \) \| F_{D326}\(x\) := M13的正反馈K^k饱和来自p_max的物理下界p_min>](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-236dd81c6fcaceea / \| \[D326\]\( \) \| \[正反馈饱和函数\]\( \) \| F_{D326}\(x\) := M13的正反馈K^k饱和来自p_max的物理下界p_min>
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D242, D312, D326；被引用：—
-- [\| \[D327\]\( \) \| \[共存震荡函数\]\( \) \| F_{D327}\(x\) := M14的K_benign≈α_exclusion时良性恶性周期震荡](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29e205ae1d439380 / \| \[D327\]\( \) \| \[共存震荡函数\]\( \) \| F_{D327}\(x\) := M14的K_benign≈α_exclusion时良性恶性周期震荡
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D327；被引用：—
-- [\| \[D328\]\( \) \| \[ΔΦ空间异质性叠加函数\]\( \) \| F_{D328}\(x\) := M1的不同门控面ΔΦᵢ差异大时，总Δ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9b32140a7976d1ee / \| \[D328\]\( \) \| \[ΔΦ空间异质性叠加函数\]\( \) \| F_{D328}\(x\) := M1的不同门控面ΔΦᵢ差异大时，总Δ
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D280, D328；被引用：—
-- [\| \[D329\]\( \) \| \[极小点合并函数\]\( \) \| F_{D329}\(x\) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-89b100ab7960cef1 / \| \[D329\]\( \) \| \[极小点合并函数\]\( \) \| F_{D329}\(x\) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D315, D329；被引用：—
-- [\| \[D32\]\( \) \| \[认知-群体犹豫域统一映射函数\]\( \) \| F_{D32}\(x\) := ε_group = ⟨π⟩](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3398a3173227ab95 / \| \[D32\]\( \) \| \[认知-群体犹豫域统一映射函数\]\( \) \| F_{D32}\(x\) := ε_group = ⟨π⟩
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D32；被引用：—

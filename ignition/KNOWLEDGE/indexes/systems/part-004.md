@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| 088-B \| `IGNITION-20260709-088-external-literature-gap-source-atlas-and-campaign-router.md` \| `records/ignition-088-ex](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1400a90139a9f0c8 / \| 088-B \| `IGNITION-20260709-088-external-literature-gap-source-atlas-and-campaign-router.md` \| `records/ignition-088-ex
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [\| 10 \| COMPLETED \| pending closure \| pending closure \| Public-safe Owner observation seed with explicit non-replication/](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cbd2e528a2964f1e / \| 10 \| COMPLETED \| pending closure \| pending closure \| Public-safe Owner observation seed with explicit non-replication/
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [\| 116 \| GAP-012 因果识别 \| MEDIUM \| 8 \| 2 \|](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-194ca7d3d7d07416 / \| 116 \| GAP-012 因果识别 \| MEDIUM \| 8 \| 2 \|
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [\| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \|](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e53ed29fb44c9f67 / \| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \|
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
+- [\| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-830c947db8c4ca4b / \| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aaaacf8046a27d5e / \| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
@@ -599,6 +624,11 @@
   - 可搜索名称：NFC-29b2b18b291d860b / \| Cones/horizons \| partial \| no validator preventing reachability from becoming actual causality \|
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
   - 依赖：—；被引用：—
+- [\| Core-claims system interpreter \| `ENVIRONMENTAL_RESIDUAL` \| Four of five configured interpreters completed; the SymPy-](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c599d37b562d103f / \| Core-claims system interpreter \| `ENVIRONMENTAL_RESIDUAL` \| Four of five configured interpreters completed; the SymPy-
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
+  - 依赖：—；被引用：—
 - [\| Cross-domain mechanism essay \| `docs/publication/works/when-an-army-believes-its-own-back.md` \| second text type for a](../../../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4f23be634c261c7c / \| Cross-domain mechanism essay \| `docs/publication/works/when-an-army-believes-its-own-back.md` \| second text type for a
@@ -1149,10 +1179,25 @@
   - 可搜索名称：NFC-acea26f532e6a18e / \|8. CI appears to decide but has no subjecthood\|CI output、schema、test fixture 和 exact input。\|CI 只拥有机械 gate；Owner/Charter
   - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
+- [\|`COMPLETE_RECORD_WITHOUT_ACCOUNTABILITY`\|Trace event 必须有技术 `actor_id`、summary、refs；Stage Snapshot 在发布场景要求 accountable `](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-18b8c00b70daaafe / \|`COMPLETE_RECORD_WITHOUT_ACCOUNTABILITY`\|Trace event 必须有技术 `actor_id`、summary、refs；Stage Snapshot 在发布场景要求 accountable `
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [\|Automation / runtime\|scheduler、dispatcher、executor、observer、reconciler、recorder\|可在 bounded DAG、lease、budget、policy 和 ti](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d679c3c6954a4b37 / \|Automation / runtime\|scheduler、dispatcher、executor、observer、reconciler、recorder\|可在 bounded DAG、lease、budget、policy 和 ti
   - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [\|contest / revocation\|review、dissent、withdraw、pause、rollback、reconciliation 现有路径\|让决定可以被质疑、撤回、停止或重新审查。\|有日志或回滚字段不等于真实存在可用的](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a7ef89dff559f46c / \|contest / revocation\|review、dissent、withdraw、pause、rollback、reconciliation 现有路径\|让决定可以被质疑、撤回、停止或重新审查。\|有日志或回滚字段不等于真实存在可用的
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [\|contestability/rollback relies on O\|有争议的决定需要保留拒绝、暂停、回滚、重审或未来选择；没有 option path，contest 只是记录。\|Runtime rollback/reconcilia](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2c2429c2c0eabed2 / \|contestability/rollback relies on O\|有争议的决定需要保留拒绝、暂停、回滚、重审或未来选择；没有 option path，contest 只是记录。\|Runtime rollback/reconcilia
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [\|Contestability\|决定会改变他人选择、公开表述、资源或未来路径时。\|dissent、independent reviewer `ABSTAIN`、DecisionTrace、human review、公开理由。\|可逆且无第三方](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1168,6 +1213,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fb4e2e1d3559486e / \|Evidence vs continuity\|低风险、可逆、可承受损失的 action 可以用较低 certainty 进入 Action Threshold；Claim Threshold 和 Scale Threshold 仍更高。\|
   - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [\|Evidence vs window\|Claim ceiling、evidence lineage 与 Steering deadline/why-next 分开。\|`P` 能收窄措辞；`O` 能要求 pause；不能单独决定“窗口关闭前](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0ad6a792901324e9 / \|Evidence vs window\|Claim ceiling、evidence lineage 与 Steering deadline/why-next 分开。\|`P` 能收窄措辞；`O` 能要求 pause；不能单独决定“窗口关闭前
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [\|Human Owner\(s\)\|decision authority / signer；可能是 claim proposer、review participant、observer、stop/rollback authority、respo](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1213,6 +1263,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-db89e04469b5ba7b / \|Service account\|operational executor、recorder、limited observer\|可以使用被授予的 credential scope 执行技术动作、读写对象和产生日志。\|只有显式 delegat
   - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [\|source / claim ceiling\|P 解释清楚\|P 解释清楚\|P 解释清楚\|直接指向 Claim/Kernel\|已有完整局部机制\|](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-38c502e2f06a0703 / \|source / claim ceiling\|P 解释清楚\|P 解释清楚\|P 解释清楚\|直接指向 Claim/Kernel\|已有完整局部机制\|
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
   - 依赖：—；被引用：—
 - [\|Uncertainty / Claim Ceiling\|`P`\|`O`\|先把 claim 限在证据范围，再决定是继续取证、降低动作强度还是停下。\|不确定性不能单独决定风险权重。\|](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1398,6 +1453,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fd0ec41ee64fabce / 不编造引语、动机或单线因果。
   - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [不能从 pause/abstain 自动决定等待是否造成可避免损害。](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-387e4d6143082503 / 不能从 pause/abstain 自动决定等待是否造成可避免损害。
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [不能从 source completeness 自动决定某个时间窗口内的最佳行动。](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-812d3c99f1630349 / 不能从 source completeness 自动决定某个时间窗口内的最佳行动。
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
   - 依赖：—；被引用：—
 - [与 C-0807 边界：C-0807 承载 NF-004/NF-005（系统性钝化 + 避风港），NC-001 承载 NF-001（绩效绑定裹挟）。机制焦点不同，不重复。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-de0d425dbf979d80 / 元协议跨系统验证整体结论
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [元协议跨系统验证（详尽补全版）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cfc494e550de870f / 元协议跨系统验证（详尽补全版）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [元层结构（Meta）：能否上收为一般机制](../../../docs/getnote-collision-workflow-final-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2846c67807f4873a / 元层结构（Meta）：能否上收为一般机制
-  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
-  - 依赖：—；被引用：—
-- [全表搜「指标」：仅 D596 避风港（指标化作侵蚀源引用）、D277 统一健康指标、D386 容斥集中性指标、Ψ₀ 收敛检测用「指标」一词——均**非**「指标替代价值」机制。](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d0b927c20db37db6 / 全表搜「指标」：仅 D596 避风港（指标化作侵蚀源引用）、D277 统一健康指标、D386 容斥集中性指标、Ψ₀ 收敛检测用「指标」一词——均**非**「指标替代价值」机制。
-  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
-  - 依赖：D277, D386, D596；被引用：—
-- [公司灵魂（内容价值）由李丹阳创造，但决策权结构未与之对齐：丈夫主张做线上母婴 Costco + 教育平台，李丹阳坚持内容主业；她一度主动放弃董事长头衔、只任首席内容官，导致价值来源与决策权错配。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f50c14ec22f12a93 / 公司灵魂（内容价值）由李丹阳创造，但决策权结构未与之对齐：丈夫主张做线上母婴 Costco + 教育平台，李丹阳坚持内容主业；她一度主动放弃董事长头衔、只任首席内容官，导致价值来源与决策权错配。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：Q-0002 将下一代机制解释为从当前适应死锁中逃逸的随机重采样。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b1e4a856d09809da / 关键发现：Q-0002 将下一代机制解释为从当前适应死锁中逃逸的随机重采样。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：Q-0007 给出民族、国家、物种差异的路径分叉机制。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ae6ec8ea003a087 / 关键发现：Q-0007 给出民族、国家、物种差异的路径分叉机制。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：Q-0026 提供内源输出再输入导致系统完备性下降的案例化机制。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3f487c3dc054cc3a / 关键发现：Q-0026 提供内源输出再输入导致系统完备性下降的案例化机制。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：σ偏离最优导致P_exit下降](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a1dca5570bc536e2 / 关键发现：σ偏离最优导致P_exit下降
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：人体运动系统存在与 σ_opt=√e 同构的最优点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6373a2bd9de42830 / 关键发现：人体运动系统存在与 σ_opt=√e 同构的最优点
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ed2667c01badd0c9 / 关键发现：如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-135d229af950bd9f / 关键发现：费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：钱荒本质是退出权空间压缩和门控面单一化导致的系统锁定](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c144752c4bcf8a81 / 关键发现：钱荒本质是退出权空间压缩和门控面单一化导致的系统锁定
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键词命中但**机制不成立**（反向语境误触发，如材料「批判刷分」被判为刷分博弈）](../../../docs/getnote-collision-workflow-final-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cfe8f9a314eb2047 / 关键词命中但**机制不成立**（反向语境误触发，如材料「批判刷分」被判为刷分博弈）
-  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
   - 依赖：—；被引用：—

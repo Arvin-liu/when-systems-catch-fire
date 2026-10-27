@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D135 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1b1560afe6159f3f / Object D135 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D135；被引用：—
+- [Object D136 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7e1adf014978e238 / Object D136 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D136；被引用：—
+- [Object D137 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-792752afc789c0de / Object D137 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D137；被引用：—
+- [Object D149 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2041370237e9f3a1 / Object D149 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation:
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D149；被引用：—
+- [Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。. Annotation: 倒U](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d6f434661b21d0a9 / Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。. Annotation: 倒U
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D150, T16；被引用：—
+- [Object D177 defines a mechanism_model within the point-fire framework. Core: 中文：不同系统在参数空间映射到点火框架后，展现相同的数学结构。深层同构不是现象相似，而](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f3e745d402b5372c / Object D177 defines a mechanism_model within the point-fire framework. Core: 中文：不同系统在参数空间映射到点火框架后，展现相同的数学结构。深层同构不是现象相似，而
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D177；被引用：—
+- [Object D179 defines a mechanism_model within the point-fire framework. Core: 中文：. Annotation: 因果光锥统一函数，信息传播速度限制导致的因果约束在物](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-37a0d1ebf793d0fb / Object D179 defines a mechanism_model within the point-fire framework. Core: 中文：. Annotation: 因果光锥统一函数，信息传播速度限制导致的因果约束在物
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D13, D179；被引用：—
+- [Object D182 defines a mechanism_model within the point-fire framework. Core: 中文：Classical\(μ, Λ\) = lim_{μ/Λ→∞} 1/ln\(μ/Λ\)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-37f7481b0d6e1ca3 / Object D182 defines a mechanism_model within the point-fire framework. Core: 中文：Classical\(μ, Λ\) = lim_{μ/Λ→∞} 1/ln\(μ/Λ\)
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D182；被引用：—
 - [Object D183 defines a mechanism_model within the point-fire framework. Core: 中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/l](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-27b9f32b94ba8431 / Object D183 defines a mechanism_model within the point-fire framework. Core: 中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/l
@@ -1324,6 +1364,11 @@
   - 可搜索名称：NFC-7e7636b50177caa4 / Runtime contexts and Criterion measurements give limited observability; uncertainty, receipts, lineage health and lifecy
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [Runtime 的 stop summary 能保存原因，Steering 能保存 deadline/unknowns，Stage Snapshot 能保存责任主体；它们尚未构成对所有对象的统一 joined record。若没有实际用例证](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d38e32e64ddfc74e / Runtime 的 stop summary 能保存原因，Steering 能保存 deadline/unknowns，Stage Snapshot 能保存责任主体；它们尚未构成对所有对象的统一 joined record。若没有实际用例证
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [s conjecture verified via gate threshold.    数学推导过程 / Mathematical Derivation  - 对象 / Object:](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6ece82f52c34b4d9 / s conjecture verified via gate threshold.    数学推导过程 / Mathematical Derivation  - 对象 / Object:
@@ -2289,6 +2334,11 @@
   - 可搜索名称：NFC-5dd5cdb39446ce18 / The controlling summary is `verdict.json`; the final V2 gate is `v2-final-gate.json`; exact command, base, pointer, and
   - 来源：`docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md`
   - 依赖：—；被引用：—
+- [The current identity, formal task lifecycle, open obligation, V/S/E protocol status, Charter, Kernel, Owner/Executor bou](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9264dc95fde82010 / The current identity, formal task lifecycle, open obligation, V/S/E protocol status, Charter, Kernel, Owner/Executor bou
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
+  - 依赖：—；被引用：—
 - [The Current semantic surfaces are clean: task lineage, release lifecycle, Current Facts, Current Snapshot, compiler outp](../../../reports/operations/ignition-132-step11-residual-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-28230a7acdeabe35 / The Current semantic surfaces are clean: task lineage, release lifecycle, Current Facts, Current Snapshot, compiler outp
@@ -2353,6 +2403,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-42ee3e5413c7df8d / The final task-branch commit must be freshly cloned and replayed before formal `main` is moved. Then verify local, track
   - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [The formal candidate remains Draft and review-pending. The next eligible action is independent review of this adversaria](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7ad08aa59cc8d3b / The formal candidate remains Draft and review-pending. The next eligible action is independent review of this adversaria
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
   - 依赖：—；被引用：—
 - [The formal PLoT hypothesis identifies reusable concepts with stochastic functions in a universal PPL, combining probabil](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2448,59 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c99e9f1af6e35839 / The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, p
   - 来源：`reports/operations/ignition-142-step18-adversarial-matrix.md`
-  - 依赖：—；被引用：—
-- [The Mechanism Adjudication Plane constrains what the project may say after an action, test, failure, or external respons](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-506b15d3475b0fee / The Mechanism Adjudication Plane constrains what the project may say after an action, test, failure, or external respons
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
-  - 依赖：—；被引用：—
-- [The merge recipe is machine-operational but lacks typed callable, effect and lifecycle contracts.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-c2c562d9bb01f690 / The merge recipe is machine-operational but lacks typed callable, effect and lifecycle contracts.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [The multi-stage checkpoint-to-latent-to-generated-LoRA lifecycle makes provenance necessary, but the paper provides only](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-adeb4ef16a5192ad / The multi-stage checkpoint-to-latent-to-generated-LoRA lifecycle makes provenance necessary, but the paper provides only
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [The Multiscale Causal Fabric \(MCF\) is a versioned modeling and navigation structure across the existing L0-L6 architectu](../../../docs/architecture/multiscale-causal-fabric.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c79ecbb5b2b26435 / The Multiscale Causal Fabric \(MCF\) is a versioned modeling and navigation structure across the existing L0-L6 architectu
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [The numerical merge recipe and checkpoint compatibility premise are explicit, while identity, precision, semantics, fail](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-560b67e51fa3337c / The numerical merge recipe and checkpoint compatibility premise are explicit, while identity, precision, semantics, fail
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [The observed source revisions are limited to the generated Current projection changes in `AI-HANDOFF.md`, `ARCHITECTURE.](../../../reports/operations/ignition-134-step13-human-surface-semantic-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a92d2b61a4f29cad / The observed source revisions are limited to the generated Current projection changes in `AI-HANDOFF.md`, `ARCHITECTURE.
-  - 来源：`reports/operations/ignition-134-step13-human-surface-semantic-audit.md`
-  - 依赖：—；被引用：—
-- [The op-lax inclusion, strict example and conditional maximality theorem validate core finite semantics, bounded by conci](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-389c19a46fde2a0f / The op-lax inclusion, strict example and conditional maximality theorem validate core finite semantics, bounded by conci
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [The ordered section state retained local definitions, unresolved premises, concept-term sets, causal/constraint edges, r](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-611e2d7d6555d643 / The ordered section state retained local definitions, unresolved premises, concept-term sets, causal/constraint edges, r
-  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
-  - 依赖：—；被引用：—
-- [The OS continues to route bounded work to replaceable executors through an external executor adapter boundary; the `Refe](../../../docs/architecture/os-steering-intent-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-e468959bf32efba8 / The OS continues to route bounded work to replaceable executors through an external executor adapter boundary; the `Refe
-  - 来源：`docs/architecture/os-steering-intent-r1.md`
-  - 依赖：—；被引用：—
-- [The paper defines no versioned registry or lifecycle policy, and its two code links do not preserve a complete immutable](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8b73f65e56e3b919 / The paper defines no versioned registry or lifecycle policy, and its two code links do not preserve a complete immutable
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [The paper directly distinguishes semi-formal descriptions, dependency graphs/SCCs, candidate implementations, constraint](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c92e3550dc9b8eef / The paper directly distinguishes semi-formal descriptions, dependency graphs/SCCs, candidate implementations, constraint
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

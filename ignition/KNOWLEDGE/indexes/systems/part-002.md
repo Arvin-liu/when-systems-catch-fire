@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [D598 系统性钝化索引可见性验证](../../../outputs/audit/d598-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8dee280ba8b232e1 / D598 系统性钝化索引可见性验证
+  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
+  - 依赖：D598；被引用：—
+- [D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cd8822eecdb329b1 / D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep
+  - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
+  - 依赖：D598；被引用：—
 - [D598｜系统性钝化](../../../data/foundation/claims/claims.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：CLAIM-D598 / D598｜系统性钝化
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-5f8e2811ec1b4a3d / Object D369 defines a mechanism_model within the point-fire framework. Core: 中文：M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D369；被引用：—
-- [Object D370 defines a mechanism_model within the point-fire framework. Core: 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-459838fc6725511f / Object D370 defines a mechanism_model within the point-fire framework. Core: 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D342, D370；被引用：—
-- [Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8a5036bd060c7786 / Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D264, D371；被引用：—

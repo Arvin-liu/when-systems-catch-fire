@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T70 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T70 / D570
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T71 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T71 / D570
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T80 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T80 / D570
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T81 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T81 / D570
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [overlay projection digest](../../../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2c599b58a5bd055e / overlay projection digest
+  - 来源：`reports/operations/ignition-140-step07-canonical-reconciliation-events.md`
+  - 依赖：—；被引用：—
+- [O₁\(x,y\) := D177\(参数空间同构\)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-018252cbca715f7b / O₁\(x,y\) := D177\(参数空间同构\)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D177；被引用：—
+- [O₁₀\(x,y\) := D179-energy\(能量尺度同构\)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d190df70147d8208 / O₁₀\(x,y\) := D179-energy\(能量尺度同构\)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D179；被引用：—
+- [O₁₁\(x,y\) := D179-info\(信息尺度同构\)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0c916667739dd129 / O₁₁\(x,y\) := D179-info\(信息尺度同构\)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D179；被引用：—
+- [O₁₂\(x,y\) := D179-dynamics\(动力学同构\)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-7ac11efda8095c56 / O₁₂\(x,y\) := D179-dynamics\(动力学同构\)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D179；被引用：—
+- [O₁₃\(x,y\) := D179-scaling\(尺度律同构\)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-7bca4233d64f5e3d / O₁₃\(x,y\) := D179-scaling\(尺度律同构\)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D179；被引用：—
+- [O₁₄\(x,y\) := D179-phase\(相变同构\)**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-7422eb4bb760e86a / O₁₄\(x,y\) := D179-phase\(相变同构\)**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：D179；被引用：—
 - [O₄\(x,y\) := Θ-Y1统一同构**](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6d0c3f0ad475f22f / O₄\(x,y\) := Θ-Y1统一同构**
@@ -2447,60 +2502,5 @@
 - [中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-80C4CA8ED525C020 / 中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ / IMPLICIT-80C4CA8ED525C020
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-57E4B558EB78D577 / 中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) / IMPLICIT-57E4B558EB78D577 / IMPLICIT-F3383A2BBF7459EC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F3383A2BBF7459EC / 中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) / IMPLICIT-F3383A2BBF7459EC / IMPLICIT-57E4B558EB78D577
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4AAC30FBEABFC46C / 中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt / IMPLICIT-4AAC30FBEABFC46C / IMPLICIT-63D758A66FFD78EF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63D758A66FFD78EF / 中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt / IMPLICIT-63D758A66FFD78EF / IMPLICIT-4AAC30FBEABFC46C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F11B1904A633D87F / 中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt / IMPLICIT-F11B1904A633D87F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BE6D82E6E5ED2FB7 / 中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\) / IMPLICIT-BE6D82E6E5ED2FB7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DF5F4AA4482FBEEF / 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ / IMPLICIT-DF5F4AA4482FBEEF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3E813E681FA10CA1 / 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-3E813E681FA10CA1
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D2F752E1B7D42E5 / 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。 / IMPLICIT-2D2F752E1B7D42E5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：相变序参量φ=门控面Λ的序参量。](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FCE597834442D685 / 中文：相变序参量φ=门控面Λ的序参量。 / IMPLICIT-FCE597834442D685
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [中文：该案例围绕 =0不导致Ψ=0 展开。](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3ECE357BD54366BB / 中文：该案例围绕 =0不导致Ψ=0 展开。 / IMPLICIT-3ECE357BD54366BB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
