@@ -6,21 +6,21 @@
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""A tiny read-only workspace whose lifecycle is explicit and disposable.""" → ## 纯数学函数与推导 / Pure Mathematical Function and Derivation
 - [第 002 片](./mathematics/part-002.md)：501—1000；## 纯数学函数与推导 / Pure Mathematical Function and Derivation → PRIVATE_PROVENANCE_WITHHELD
-- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
-- [第 004 片](./mathematics/part-004.md)：1501—2000；attempt-specific scratch lifecycle. → Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
-- [第 005 片](./mathematics/part-005.md)：2001—2500；Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness → If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.
-- [第 006 片](./mathematics/part-006.md)：2501—3000；If upstream objects D_{D52} exist, compose F_{D52}=N\(⊕_{g∈D_{D52}} g\); otherwise treat F_{D52} as an axiom seed. → Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ
-- [第 007 片](./mathematics/part-007.md)：3001—3500；Object D40 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - \(1-D_immune\) × \(1-R_pe → The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati
-- [第 008 片](./mathematics/part-008.md)：3501—4000；The source says “任一因子=0→乘积=0” and applies it to the point-fire framework product. It does not declare `Nat`, restrict th → title: "自我模型-ε_aware连接定理"
-- [第 009 片](./mathematics/part-009.md)：4001—4500；title: "自我模型函数" → Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成
-- [第 010 片](./mathematics/part-010.md)：4501—5000；Within the source-defined scope, 智慧干预效力函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control → \| \[D389\]\( \) \| \[不归点-吸引域边界统一函数\]\( \) \| F_{D389}\(x\) := M6的δ_c恰好是D29
-- [第 011 片](./mathematics/part-011.md)：5001—5500；\| \[D393\]\( \) \| \[溢出-传染通道统一函数\]\( \) \| F_{D393}\(x\) := M10的溢出是传染的物理通道。统一传 → 中文：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs…
-- [第 012 片](./mathematics/part-012.md)：5501—6000；中文：AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件。核心函数：D79 → 从原文看，投资相关函数，定投天然具备结构保守性，是巴菲特模式的精确实现。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-- [第 013 片](./mathematics/part-013.md)：6001—6500；从原文看，投资相关函数，炒股遮蔽会跨域放大，炒股存在临界资金Kcritical，普通人炒股长期负期望。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-- [第 014 片](./mathematics/part-014.md)：6501—7000；从这条案例看，中文：案例说明：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 原始命题: 地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。
-- [第 015 片](./mathematics/part-015.md)：7001—7500；原始命题: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三个门控面Λ_EM、Λ_W、Λ_QCD分离,Φ = 1/ln\(μ/Λ_EM\) + 1/ln\(μ/Λ_W\) + 1/ln\(μ/ → 因果链须能对应到具体函数的机制步骤。
-- [第 016 片](./mathematics/part-016.md)：7501—8000；因果闭包自举函数 → 数学表达 / Expression: `F_{D421}\(x\) := M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。`
-- [第 017 片](./mathematics/part-017.md)：8001—8500；数学表达 / Expression: `F_{D463}\(x\) := D412修正后，完美风暴条件a_excl·τ=1/\(4·ln2\)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \\cdot \\ta → 生命共同体宪章链接有效 ✅
-- [第 018 片](./mathematics/part-018.md)：8501—9000；生命周期门禁按 registry 中每个表面的 `blocks` 计算。任务 101 后，人类阅读层以仓库 Markdown、确定性生成结果、exact-head CI、main 复验和全新克隆为门；任何未来新增外部表面仍必须单独登记和证明 → 已迁移的历史函数来源/0347-D311-僵尸态函数.md
-- [第 019 片](./mathematics/part-019.md)：9001—9500；已迁移的历史函数来源/0348-D312-正反馈噪声放大函数.md → 距离衰减统一函数
-- [第 020 片](./mathematics/part-020.md)：9501—9737；距离衰减统一函数，关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化。 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → An iterative NP lifecycle and library learning are explicit, but artifact identity, provenance, versions, approvals, dep
+- [第 004 片](./mathematics/part-004.md)：1501—2000；APPROVAL_DECISION_STATES = frozenset\({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI → F_plant_math := lim\(n→∞\)\(F_{n-1}/F_n\)→φ（斐波那契螺旋优化）
+- [第 005 片](./mathematics/part-005.md)：2001—2500；F_plant_stress := ∫\(stress_perception × physiological_response × gene_regulation\) / stress_tolerance → If upstream objects D_{D466} exist, compose F_{D466}=N\(⊕_{g∈D_{D466}} g\); otherwise treat F_{D466} as an axiom seed.
+- [第 006 片](./mathematics/part-006.md)：2501—3000；If upstream objects D_{D467} exist, compose F_{D467}=N\(⊕_{g∈D_{D467}} g\); otherwise treat F_{D467} as an axiom seed. → Object D182 defines a mechanism_model within the point-fire framework. Core: 中文：Classical\(μ, Λ\) = lim_{μ/Λ→∞} 1/ln\(μ/Λ\)
+- [第 007 片](./mathematics/part-007.md)：3001—3500；Object D183 defines a mechanism_model within the point-fire framework. Core: 中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/l → The paper directly distinguishes semi-formal descriptions, dependency graphs/SCCs, candidate implementations, constraint
+- [第 008 片](./mathematics/part-008.md)：3501—4000；The paper distinguishes theorem-scoped approximation and discretization properties from finite benchmark validation and → title: "缓冲峰值余量函数"
+- [第 009 片](./mathematics/part-009.md)：4001—4500；title: "缓冲消耗速度函数" → Within the source-defined scope, 形式系统外推边界函数 is adjudicated as MECHANISM_MODEL: classify_A\(p\) in {provable, refutable, in
+- [第 010 片](./mathematics/part-010.md)：4501—5000；Within the source-defined scope, 恐惧锁定稳态函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control → \| \[D32\]\( \) \| \[认知-群体犹豫域统一映射函数\]\( \) \| F_{D32}\(x\) := ε_group = ⟨π⟩
+- [第 011 片](./mathematics/part-011.md)：5001—5500；\| \[D331\]\( \) \| \[p*涨落函数\]\( \) \| F_{D331}\(x\) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大 → 不得把地图坐标、视觉邻近、演进阶段或依赖关系写成事实证明、同构或机制因果。地图不能替代 registry、矩阵、schema、测试或来源工件。
+- [第 012 片](./mathematics/part-012.md)：5501—6000；不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。 → 从原文看，乘法临界漂移统一，∂θ_critical/∂xᵢ = -θ_critical × \(∂lnfᵢ/∂xᵢ\)/Σⱼ\(∂lnfⱼ/∂xⱼ\)。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+- [第 013 片](./mathematics/part-013.md)：6001—6500；从原文看，乘法临界漂移统一，脆弱点在最接近零的因子。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是距离变了是临界距离变了。核心函数：\[D77\]\(… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+- [第 014 片](./mathematics/part-014.md)：6501—7000；从这条案例看，中文：案例说明：异族可来可走，认同经退出权验证但建在外部，安史之乱后转向 关键发现：第5步跑通但留隐患 English: Rule-bas… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 历史 Task 127 的 Durability / Lifecycle R3 仍属于同一 OS / driver：snapshot plus tail、
+- [第 015 片](./mathematics/part-015.md)：7001—7500；历史函数后续证明与实证路线图 → 同构判定：**函数总表「价值感/努力/认可」轴空白**。判定为 **真新候选 / 边界扩展**（与 M2 互补，M2 是内化规训，M8 是价值解耦；本轮作为 M2 的补充扩展候选，不单独占 5 名额，进 candidates/）。
+- [第 016 片](./mathematics/part-016.md)：7501—8000；同构判定：**函数总表「支持/托举/兜底/父母」轴 grep 零命中；EXIT 族描述退出权但非「支持→控制退化」结构**。判定为 **真新候选函数**（边界扩展 EXIT 族，新增「正向支持退化为路径控制」原语）。 → 数学表达 / Expression: `F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是
+- [第 017 片](./mathematics/part-017.md)：8001—8500；数学表达 / Expression: `F_{D269}\(x\) := M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\|d³Φ/dμ³\|，阶段2→3∝\|d²g_eff/dt²\|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。` → 熵增门槛碾压函数
+- [第 018 片](./mathematics/part-018.md)：8501—9000；版本升级必须改变项目本体或权威数据契约，并同步更新入口、架构、schema、工具、测试、CI、报告和兼容策略。普通候选增量不构成架构版本升级。 → 已迁移的历史函数来源/0287-D251-维度-容斥稳定性函数.md
+- [第 019 片](./mathematics/part-019.md)：9001—9500；已迁移的历史函数来源/0288-D252-社会学容斥加速函数.md → 证明苹果砸中 Newton、单一直接因果，或整则故事必然虚构。
+- [第 020 片](./mathematics/part-020.md)：9501—9801；证明被多次独立验证 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）

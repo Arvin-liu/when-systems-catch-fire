@@ -19,6 +19,7 @@
     "agent-results/IGNITION-20260828-146-result.md": "2026-08-28",
     "agent-results/IGNITION-20260828-147-result.md": "2026-08-28",
     "agent-results/IGNITION-20260829-148-result.md": "2026-09-01",
+    "agent-results/IGNITION-20260904-153-result.md": "2026-09-04",
     "agent-results/IGNITION-20260906-158-result.md": "2026-09-06",
     "agent-results/IGNITION-20260907-159-result.md": "2026-09-07",
     "agent-results/IGNITION-20260907-160-progress.md": "2026-09-07",
@@ -95,6 +96,7 @@
     "docs/foundation/strong-claim-gates.md": "2026-07-13",
     "docs/foundation/task-107-incident-report.md": "2026-07-31",
     "docs/governance/README.md": "2026-07-15",
+    "docs/governance/accountable-cognition-boundary-map-2026-09-04.md": "2026-09-04",
     "docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md": "2026-09-06",
     "docs/governance/basis-escape-v2-2026-09-07.md": "2026-09-07",
     "docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md": "2026-09-07",
@@ -140,6 +142,7 @@
     "docs/governance/meta-protocol-reviews/protocols/V2.md": "2026-07-11",
     "docs/governance/meta-protocol-reviews/protocols/V3.md": "2026-07-11",
     "docs/governance/meta-protocol-reviews/protocols/V4.md": "2026-07-11",
+    "docs/governance/more-meta-foundations-synthesis-2026-09-04.md": "2026-09-04",
     "docs/governance/mutable-basis-learning-operator-2026-09-07.md": "2026-09-07",
     "docs/governance/next-basis-assessment-2026-09-07.md": "2026-09-07",
     "docs/governance/next-basis-learning-assessment-2026-09-07.md": "2026-09-08",
@@ -154,6 +157,7 @@
     "docs/governance/state-vs-transition-semantics-competition-2026-09-07.md": "2026-09-07",
     "docs/governance/transition-residual-casebook-2026-09-07.md": "2026-09-07",
     "docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md": "2026-09-07",
+    "docs/governance/value-epistemology-derivation-audit-2026-09-04.md": "2026-09-04",
     "docs/operations/ignition-operation-playbooks-r1.md": "2026-08-29",
     "docs/operations/lifecycle-readme.md": "2026-08-01",
     "docs/operations/stage-snapshot-publication.md": "2026-07-26",
@@ -360,6 +364,7 @@
     "reports/foundation-architecture/unresolved-obligations-20260712.md": "2026-07-13",
     "reports/foundation-architecture/validation-summary-20260712.md": "2026-07-13",
     "reports/governance/121Q8-final-report.md": "2026-07-15",
+    "reports/governance/task-IGNITION-20260904-153.md": "2026-09-04",
     "reports/governance/task-IGNITION-20260906-158.md": "2026-09-06",
     "reports/governance/task-IGNITION-20260907-159.md": "2026-09-07",
     "reports/governance/task-IGNITION-20260907-160.md": "2026-09-07",
@@ -577,7 +582,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 575,
+  "entry_count": 580,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

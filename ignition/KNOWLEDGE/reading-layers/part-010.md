@@ -4,12 +4,26 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-c32095e69516906c"></a>
+## V2 规范性审核 - 效率性协议 (Efficiency Protocol)
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：选择产出/投入效率最大（单位资源产出最高）的行动。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：V2 规范性审核 - 效率性协议 (Efficiency Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；选择产出/投入效率最大（单位资源产出最高）的行动。；未定义成本的边界，默认只算直接投入，容易把生命、生态、代际与主体性代价排除在外（歧义）。
+- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/V2.md](../../docs/governance/meta-protocol-reviews/protocols/V2.md)
+
 <a id="reading-hr-c322de3c7799a555"></a>
 ## Distribution And Decision Collapse Control Plane
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Status: 121Q13CONTROLOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Distribution And Decision Collapse Control Plane；Status: 121Q13CONTROLOVERLAY；This control plane treats AI and human judgments on open-ended questions as context-conditioned samples, not as final answers or fact evidence.；model and model version when available;；prompt and context hashes;；sampling conditions such as role, memory state, temperature, and ordering when available;
 - 完整阅读：[docs/architecture/distribution-collapse-control-plane.md](../../docs/architecture/distribution-collapse-control-plane.md)
+
+<a id="reading-hr-c55e8fbd08caa1b8"></a>
+## 价值—认识论推导审计：六类元协议前提
+`CANDIDATE_OR_PENDING_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: RESEARCHRECORD / CANDIDATEAUDIT / NONCANONICAL 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：价值—认识论推导审计：六类元协议前提；Status: RESEARCHRECORD / CANDIDATEAUDIT / NONCANONICAL；Task: IGNITION-20260904-153 Baseline: when-systems-catch-fire main@212322d41db79bce2dbd116166d3f1ad226291f3 Scope: 仅审计仓库内现有规范、协议、治理和运行边界；不修改运行时、CI、gate、policy 或 canonical protocol。；本审计回答一个开放问题：当前围绕 Evidence、Uncertainty / Claim Ceiling、Negative Capability、Ownership、Failure Budget、Degradation 的六类治理语汇，是否能够从更小的价值—认识论基础推导出来；如果不能，缺口在哪里，哪些部分只是事后命名或跨层拼接。；六类是本任务的审计对象，不预设它们已经是六个 canonical protocol，也不预设“更底层”一定意味着新增一层。全文使用三种标签：；OBSERVATION：直接来自当前仓库文件、结构或可复核的词项检索；
+- 完整阅读：[docs/governance/value-epistemology-derivation-audit-2026-09-04.md](../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
 
 <a id="reading-hr-c56dd758323901b9"></a>
 ## IGNITION-20260821-130 — Terminal Result
@@ -305,6 +319,13 @@
 - 5 分钟：workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 是相互独立的枚举轴。schema 与验证器禁止将 CLOSED、CONVERGED、MULTICASE、MACHINECHECKEDPROOF 等单轴状态传播成其他轴的成功。；formal 支持 UNFORMALIZED、FORMALIZATIONINCOMPLETE、WELLTYPED、TYPEERROR、SEMANTICALLYUNDEFINED、DIMENSIONERROR、COUNTEREXAMPLEFOUND、FORMALLYREFUTED。logic 支持 NOTASSESSED、VALIDDEDUCTION、INVALIDINFERENCE、DEFEASIBLESUPPORT、COUNTERMODELFOUND、HIDDENPREMISE、CIRCULAR、INCONSISTENTPREMISES、NOTAPPLICABLE。proof 与 evidence 的完整建议枚举见任务命令和 schema 演进记录。；分类状态另行使用 PROVISIONAL / ADJUDICATED / CONTESTED，不得与九轴混算。迁移覆盖率的分母是 622 个 legacy registry 对象；语义审定覆盖率只计算 ADJUDICATED，当前为 621/622。
 - 完整阅读：[docs/foundation/status-system.md](../../docs/foundation/status-system.md)
 
+<a id="reading-hr-d78b5bc05fef6fa7"></a>
+## 更元基础综合：价值—认识论与可追责认知的双基础审计
+`CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: RESEARCHRECORD / CANDIDATESYNTHESIS / NONCANONICAL 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：更元基础综合：价值—认识论与可追责认知的双基础审计；Status: RESEARCHRECORD / CANDIDATESYNTHESIS / NONCANONICAL；Task: IGNITION-20260904-153 Baseline: when-systems-catch-fire main@212322d41db79bce2dbd116166d3f1ad226291f3 Inputs: 六类价值—认识论推导审计；可追责认知边界图；本文件只在 A 审计和 B 审计独立完成后作综合。问题不是“再加一个更高的层是否更完整”，而是：；六类 Evidence、Uncertainty / Claim Ceiling、Negative Capability、Ownership、Failure Budget、Degradation 是否真的是更小基础的不同投影；；价值—认识论约束与 authority–execution–accountability topology 是否需要同一个新层；
+- 完整阅读：[docs/governance/more-meta-foundations-synthesis-2026-09-04.md](../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+
 <a id="reading-hr-d790a75d59747779"></a>
 ## IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q9 Final Release Candidate；Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved.；Main base SHA: 771349da3e241cdff29eaf3cf880ae2ce158549f；PR #45 content head: 5a9a860dc7fc0c0d4536586f5ff27f5180838e52；Step 003 content head: 0b0b821239cb93bacf70bbc54c0dc157e4d8d0cf；Final seal commit will follow this report as Step 004.
 - 完整阅读：[reports/release/121Q9-final-release-candidate.md](../../reports/release/121Q9-final-release-candidate.md)
-
-<a id="reading-hr-d8277885e64bf9e8"></a>
-## IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure
-`HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Canonical Current now advances from terminal Task133 to non-terminal Task134, while the latest architecture-changing task remains Task129 and currentiterationboundary=134 remains only the deprecated compatibility alias of the formal ordinal. Task133 receipts, schemas, fixtures, residual provenanc… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure；Canonical Current now advances from terminal Task133 to non-terminal Task134, while the latest architecture-changing task remains Task129 and currentiterationboundary=134 remains only the deprecated compatibility alias of the formal ordinal. Task133 receipts, schemas, fixtures, residual provenance, and changelog history remain preserved as historical evidenc…；The active identity, lifecycle, ordinal, Current Facts, Current Snapshot, Current Surface semantic, Current-State sync, compatibility, and path-manifest gates pass. The live path manifest is exact at tracked=3010, manifest=3010, missing=0, stale=0, unresolved=0, categorychanged=0, and antibackflow=0. The five-entry residual ledger remains RESIDUALLEDGEROK wi…；All 11 Human Surface source-hash drifts were re-audited individually. They are all semantically valid source revisions and only fingerprint refreshes were approved. No human prose, disposition, claim ceiling, historical hash, ignore, or skip was used to manufacture a green result. The targeted identity/projection tests ran 35 tests with zero failures and zer…；The exact full unittest discovery remains a Step 14 obligation. Its prior 45m30.121s run ended naturally at 1008 tests with 22 failures and 4 errors; the next run must use the requested long window and report a concrete blocker if it does not complete.；Claim ceiling: repository-local Task134 migration and hygiene evidence only; no external truth, production readiness, Owner acceptance, live executor completion, publication, or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md](../../reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md)
-
-<a id="reading-hr-d882bcf095baaddd"></a>
-## IGNITION-20260822-134 Step 03 — Current path manifest contract audit
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The contract audit selects方案 A: classification-manifest.jsonl remains the sole Current generated snapshot of the live path-classification engine. This is supported by the validator's source contract and by its --check behavior, which compares the live tracked set to the committed manifest and rep… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 03 — Current path manifest contract audit；The contract audit selects方案 A: classification-manifest.jsonl remains the sole Current generated snapshot of the live path-classification engine. This is supported by the validator's source contract and by its --check behavior, which compares the live tracked set to the committed manifest and reports missing/stale paths.；The old manifest is therefore not reinterpreted as an immutable historical snapshot. Historical observations remain intact in Git commits and Task127–133 receipts. The Current release gate instead requires tracked-set equality, unresolved/stale/duplicate/category-drift zero, and zero anti-backflow violations. An explicit machine contract now records this cho…；No authoritative allowlist is expanded in this step. Path coverage and anti-backflow are audited separately in Step 04; regeneration occurs only in Step 05.；Claim ceiling: repository-local Current path-manifest contract evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-134-step03-path-manifest-contract-audit.md](../../reports/operations/ignition-134-step03-path-manifest-contract-audit.md)
-
-<a id="reading-hr-d88fd2b435abc1cd"></a>
-## Generator Plasticity Audit — IGNITION-20260906-158
-`HISTORICAL_OR_SUPERSEDED_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: research-only audit. The phrase GENERATORLOCKINSUPPORTEDASRESEARCHFINDING is retained inside the bounded machine audit, but it is not a validated causal verdict because the historical detector failed its pre-registered negative holdout. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Generator Plasticity Audit — IGNITION-20260906-158；Status: research-only audit. The phrase GENERATORLOCKINSUPPORTEDASRESEARCHFINDING is retained inside the bounded machine audit, but it is not a validated causal verdict because the historical detector failed its pre-registered negative holdout.；主题：Current observed pipeline；The inspected default path is:；source → classify → evidence/claim → registry → validation → projection → publication/governance；The main evidence paths were:
-- 完整阅读：[docs/governance/ignition-generator-plasticity-audit-2026-09-06.md](../../docs/governance/ignition-generator-plasticity-audit-2026-09-06.md)

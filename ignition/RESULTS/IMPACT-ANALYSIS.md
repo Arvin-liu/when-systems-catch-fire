@@ -135,7 +135,8 @@
 |`docs/getbrain-operation-guide-20260708.docx`|0|0|是|
 |`docs/getbrain-operation-guide-20260708.md`|26|0|否|
 |`docs/getnote-collision-workflow-final-20260708.md`|30|0|否|
-|`docs/governance/README.md`|4|0|否|
+|`docs/governance/README.md`|5|0|否|
+|`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`|71|0|否|
 |`docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md`|0|0|是|
 |`docs/governance/basis-escape-v2-2026-09-07.md`|0|0|是|
 |`docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md`|0|0|是|
@@ -183,6 +184,7 @@
 |`docs/governance/meta-protocol-reviews/protocols/V2.md`|14|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V3.md`|11|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V4.md`|10|0|否|
+|`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`|51|0|否|
 |`docs/governance/mutable-basis-learning-operator-2026-09-07.md`|4|0|否|
 |`docs/governance/next-basis-assessment-2026-09-07.md`|1|0|否|
 |`docs/governance/next-basis-learning-assessment-2026-09-07.md`|2|0|否|
@@ -197,6 +199,7 @@
 |`docs/governance/state-vs-transition-semantics-competition-2026-09-07.md`|4|0|否|
 |`docs/governance/transition-residual-casebook-2026-09-07.md`|1|0|否|
 |`docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md`|2|0|否|
+|`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`|57|0|否|
 |`docs/human/function-assets/README.md`|0|0|是|
 |`docs/human/function-assets/bulk-explanation.md`|0|0|是|
 |`docs/human/function-assets/entries/a0.md`|0|0|是|
@@ -447,6 +450,7 @@
 |`reports/foundation-architecture/unresolved-obligations-20260712.md`|2|0|否|
 |`reports/foundation-architecture/validation-summary-20260712.md`|1|0|否|
 |`reports/governance/121Q8-final-report.md`|6|0|否|
+|`reports/governance/task-IGNITION-20260904-153.md`|37|0|否|
 |`reports/governance/task-IGNITION-20260906-158.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260907-159.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260907-160.md`|0|0|是|
