@@ -112,6 +112,42 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertFalse(included["selected_tools"][0]["permissions"]["network"])
         self.assertEqual(included["selected_tools"][0]["permissions"]["write_paths"], [])
 
+    def test_q38_bundle_validator_is_default_off_and_opt_in_is_not_execution(self) -> None:
+        tool_id = "knowledge.validate_q38_i1_evidence_bundle"
+        evidence = json.loads(
+            (IGNITION_ROOT / "data/operations/toolbox-q38-evidence-bundle-route-evidence-r0.json")
+            .read_text(encoding="utf-8")
+        )
+        trials = {row["trial"]: row for row in evidence["trials"]}
+
+        for name, trial in trials.items():
+            with self.subTest(trial=name):
+                replay = planner.plan_tool_route(
+                    trial.get("route_profile", evidence.get("route_profile") if name != "ordinary_current_state_read" else evidence["ordinary_task_control"]),
+                    include_experimental_tool_ids=trial["allowlisted_tool_ids"],
+                )
+                self.assertEqual(replay["decision"], trial["decision"])
+                self.assertEqual([item["tool_id"] for item in replay["selected_tools"]], trial["selected_tool_ids"])
+                self.assertFalse(replay["execution_authorized"])
+                self.assertEqual(
+                    replay["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+                    trial["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
+                )
+
+        self.assertEqual(trials["default_off"]["decision"], "INCOMPLETE")
+        self.assertEqual(trials["default_off"]["selected_tool_ids"], [])
+        self.assertEqual(trials["explicit_allowlist"]["decision"], "COMPLETE")
+        self.assertEqual(trials["explicit_allowlist"]["selected_tool_ids"], [tool_id])
+        self.assertEqual(
+            trials["explicit_allowlist"]["selected_permissions"][0]["read_paths"],
+            ["ignition/schemas/operations/toolbox-q38-evidence-bundle-r0.schema.json"],
+        )
+        self.assertEqual(trials["explicit_allowlist"]["selected_permissions"][0]["write_paths"], [])
+        self.assertFalse(trials["explicit_allowlist"]["selected_permissions"][0]["network"])
+        self.assertNotIn(tool_id, trials["ordinary_current_state_read"]["selected_tool_ids"])
+        self.assertEqual(evidence["router_execution_count"], 0)
+        self.assertFalse(evidence["candidate_execution_authorized_by_planner"])
+
     def test_context_packet_assembler_is_default_off_and_requires_explicit_allowlist(self) -> None:
         catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
         card = next(row for row in catalog["candidates"] if row["tool_id"] == "knowledge.assemble_context_packet")
@@ -1369,16 +1405,17 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             receipt["candidate_catalog_refresh"]["current_git_blob_sha1"],
         )
         self.assertEqual(
+            receipt["candidate_catalog_refresh"]["history"][-1],
+            receipt["candidate_catalog_refresh"]["current_git_blob_sha1"],
+        )
+        self.assertEqual(receipt["route_result"]["decision"], opt_in["decision"])
+        self.assertEqual(
+            [row["tool_id"] for row in receipt["route_result"]["selected_tools"]],
+            [row["tool_id"] for row in opt_in["selected_tools"]],
+        )
+        self.assertEqual(
             opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
             planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
-        )
-        self.assertEqual(
-            receipt["candidate_catalog_refresh"]["current_git_blob_sha1"],
-            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
-        )
-        self.assertEqual(
-            receipt["candidate_catalog_refresh"]["history"][-1],
-            opt_in["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
         )
 
     def test_cross_source_metadata_comparator_is_default_off_and_opt_in(self) -> None:

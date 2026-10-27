@@ -1,0 +1,61 @@
+{
+  "schema_version": "toolbox-q38-evidence-bundle-real-tool-test-r0",
+  "status": "PASS_BOUNDED_REPOSITORY_PILOT",
+  "tool": {
+    "tool_id": "knowledge.validate_q38_i1_evidence_bundle",
+    "version": "0.1.0",
+    "source_path": "ignition/tools/toolbox_validate_q38_evidence_bundle.py",
+    "source_sha256": "526068bd5b0b4ad7d8cda0beb511df59f19c0f673eb6d00705ea4f09cef4c554"
+  },
+  "input": {
+    "path": "ignition/tests/fixtures/toolbox-q38/pilot-q38-i1.json",
+    "bytes": 17426,
+    "sha256": "22ef7f43ecfe9e07e076ae03731021684e5a52bb105d7c29a454f3993bdcc448",
+    "task_id": "121Q38-I1",
+    "evidence_items": 5,
+    "q39_failure_exports": 3
+  },
+  "schema": {
+    "path": "ignition/schemas/operations/toolbox-q38-evidence-bundle-r0.schema.json",
+    "sha256": "0de540d84879ad64389f886d57a82e0895e4fc6755eea8dbb138c635cf636528"
+  },
+  "output": {
+    "result": {
+      "tool_id": "knowledge.validate_q38_i1_evidence_bundle",
+      "tool_version": "0.1.0",
+      "gate": "q38_i1_evidence_retrieval_gate",
+      "exit_code": 0,
+      "exit_name": "GATE_PASS",
+      "errors": [],
+      "boundary": "repository retrieval governance only; no mechanism or causal proof"
+    },
+    "stdout_sha256": "9b4651d237aa182087ba5acb9eae607e47b11b11a7c855cdcee9616e4e644fc6"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "jsonschema": "4.25.1",
+    "network_requests": 0,
+    "filesystem_writes_by_tool": 0
+  },
+  "focused_test": {
+    "command": "PYTHONPATH=.:tests:tools/foundation python3 -m unittest tests.test_toolbox_q38_evidence_bundle -v",
+    "working_directory": "ignition",
+    "test_methods_passed": 5,
+    "attack_matrix_cases": 21,
+    "additional_cli_negative_controls": [
+      "duplicate_json_key",
+      "stdin_over_1000000_bytes",
+      "duplicate_family_canonical_reference_is_order_independent"
+    ],
+    "missing_jsonschema_fails_closed": true,
+    "test_file": "ignition/tests/test_toolbox_q38_evidence_bundle.py",
+    "test_sha256": "3cf67d8baff67cee60dde12d131de440f2fec056b2a7e68e8d6de348d304e9b6"
+  },
+  "evidence_boundary": "A local repository pilot passed the implemented structural and declared-consistency checks. This does not authenticate sources or rights, prove retrieval completeness, establish scientific validity, or prove a mechanism or causal relation.",
+  "blueprint_binding": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "pull_request": 70,
+    "head_sha": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+    "salvage_disposition": "selectively reimplemented strict typed Q38-I1 bundle validation; upstream permissive global validator was not imported"
+  }
+}

@@ -30,6 +30,28 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         self.assertIn("COMPARISON_UNKNOWN", rendered)
         self.assertIn("Preserve comparison receipts and historical references", rendered)
 
+    def test_q38_i1_bundle_validator_card_keeps_contract_scope_c1_and_permissions(self) -> None:
+        document = TOOL.build_cards()
+        card = next(item for item in document["cards"] if item["tool_id"] == "knowledge.validate_q38_i1_evidence_bundle")
+
+        self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
+        self.assertEqual(card["lifecycle"], "EXPERIMENTAL")
+        self.assertEqual(card["version"], "0.1.0")
+        self.assertEqual(card["evidence_level"], "REAL_TOOL_TEST")
+        self.assertFalse(card["router_selectable_by_default"])
+        self.assertEqual(card["permissions"]["write_paths"], [])
+        self.assertFalse(card["permissions"]["network"])
+        self.assertFalse(card["permissions"]["secrets"])
+        self.assertFalse(card["permissions"]["billing"])
+        self.assertFalse(card["permissions"]["external_actions"])
+        self.assertIn("121Q38-I1", card["description"])
+        self.assertTrue(any("retrieving evidence" in item for item in card["not_for"]))
+        self.assertEqual(card["comparison_evidence"]["status"], "COMPARISON_UNKNOWN")
+        self.assertEqual(card["replacement_candidates"], [])
+        self.assertEqual(card["deprecation_or_retirement_status"]["status"], "COMPARISON_UNKNOWN")
+        self.assertIn("jsonschema>=4,<5", " ".join(card["runtime_dependencies"]))
+        self.assertIn("toolbox-q38-evidence-bundle-real-tool-test-r0.json", " ".join(row["path"] for row in card["source_refs"]))
+
     def test_execution_state_lineage_card_preserves_c1_scope_permissions_and_entrypoint(self) -> None:
         document = TOOL.build_cards()
         cards = {item["tool_id"]: item for item in document["cards"]}
