@@ -9,13 +9,13 @@
 - [第 003 片](./architecture_governance/part-003.md)：1001—1500；classic_problems_benchmark（34 条）— 无标题命中，验证未命中正常输出 → def _tree_digest\(root: Path\) -> str:
 - [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _tree_has_symlink\(path: Path\) -> bool: → def sha256_text\(text: str\) -> str:
 - [第 005 片](./architecture_governance/part-005.md)：2001—2500；def spool_ref\(self\) -> str: → Exact-final-HEAD CI remains mandatory. After the final commit is pushed and both required workflows finish, the mutable
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf → link: "已迁移的历史案例来源/0787-C-0792-青蒿素从《肘后备急方》提炼.md"
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；link: "已迁移的历史案例来源/0788-C-0793-《写作是门手艺》段落控制≤10行.md" → Repository objects cannot self-claim Accepted, Merged or Current or cite their own current HEAD as their validity premis
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Repository-local candidate state is `CURRENT` for all four capability names and boundaries across README, the expanded g → Three public trial libraries contain 51, 52 and 55 active executable skill artifacts plus retained replacement files.
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；tiers = Counter\(s.get\("evidence_tier"\) for s in sources\) → \| \[C-50\]\( \) \| \[华为员工持股\]\( \) \| 员工可辞职且行业有下家，"华为人"认同经退出权验证 \|
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-510\]\( \) \| \[三阶段=曲率穿越验证 — 创业者路 → 个数据集（classic_problems_benchmark、pending_claims、storytelling_backlog）可自动抽取，基础行完整；4 个数据集（publication_risk_rules、failure_ty
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；个案经验上升为普遍法则； → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 吴军财富规划笔记碰撞验证
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；周公制礼\(dim=2\)→八百年；#3秦统一\(dim=2\)→15年亡\(但通过H压制犹豫域\)。 → 案例不能从单一材料推出普遍结论（边界条件强制约束）。
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；案例范围默认全量**（即 `已迁移的历史案例来源/` 全部条目）；除非任务明确限定。 → 须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `已迁移的历史案例来源/` 并更新 INDEX。本轮（第三步）未做此步。
-- [第 015 片](./architecture_governance/part-015.md)：7001—7111；预测命题（如：某个教育现象的预测） → （证据不足、需外部验证、待人工复核）
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf → link: "已迁移的历史案例来源/0785-C-0790-快闪阅读反算法.md"
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；link: "已迁移的历史案例来源/0786-C-0791-逛书店发现惊喜.md" → Repair: canonical generator `validate_repository_path_classification.py --generate` \(no hand edits\). Now 3593 paths, 0 u
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Repair: canonical generators re-run in dependency order \(census → deep adjudication → nonfunction adjudication → migrati → This review was executed with **model=qclaw/pool-kimi-k2.7-code-highspeed, thinking=adaptive**. The task file originally
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；This separates the cheap, always-on path-accounting guarantee \(Layer A\) from the expensive deterministic → \| \[C-473\]\( \) \| \[符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能\]\( \) \| 符号AI卡在1/ln
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-47\]\( \) \| \[庇隆主义\]\( \) \| 工会+国家机器事实上锁定退出通道，认同建在个人权威上 \| → 与历史案例来源建立双向链接。
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；与证据制度库的关系 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 同一断言被更多文档重复引用，不增加其证据等级或独立 source family。
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；同构对：`D311 ≅ D312` → 来源类别、版本／下层事实与点火派生结构：
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；来源记录**：仅保存来源元数据，不复制原文 → 量化竞赛转化**：专业成长 → 可量化指标（磨课轮数、获奖等级、AI 课堂分析数据）。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7139；量词膨胀：局部结果是否被写成所有、任何、必然、唯一； → （证据不足、需外部验证、待人工复核）

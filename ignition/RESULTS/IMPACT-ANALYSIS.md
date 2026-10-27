@@ -313,6 +313,9 @@
 |`docs/protocols/README.md`|6|0|否|
 |`docs/protocols/protocol-architecture.md`|10|0|否|
 |`docs/protocols/protocol-index.md`|3|0|否|
+|`docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md`|14|0|否|
+|`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`|19|0|否|
+|`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md`|18|0|否|
 |`docs/publication/cases/jin-rise-case-source.md`|5|0|否|
 |`docs/publication/cases/song-huizong-taoism-1117-source.md`|8|0|否|
 |`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`|5|0|否|
@@ -321,7 +324,7 @@
 |`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`|7|0|否|
 |`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`|13|0|否|
 |`docs/publication/zhiyuan-writing-examples.md`|28|0|否|
-|`docs/publication/zhiyuan-writing-method.md`|65|0|否|
+|`docs/publication/zhiyuan-writing-method.md`|70|0|否|
 |`docs/publication/zhiyuan-writing-showcase.md`|8|0|否|
 |`docs/publication_risk_checklist.md`|56|0|否|
 |`docs/roadmap_v0.2.md`|10|0|否|
@@ -666,7 +669,9 @@
 |`reports/operations/ignition-144-step18-formal-main-publication.md`|0|0|是|
 |`reports/operations/ignition-144-step19-terminality.md`|1|0|否|
 |`reports/operations/lifecycle-audit-108.md`|0|0|是|
+|`reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`|12|0|否|
 |`reports/publication/jin-rise-point-fire-analysis.md`|67|0|否|
+|`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`|18|0|否|
 |`reports/publication/song-huizong-taoism-point-fire-analysis.md`|33|0|否|
 |`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`|7|0|否|
 |`reports/readme/121Q19-readme-frontdoor-validation.md`|6|0|否|

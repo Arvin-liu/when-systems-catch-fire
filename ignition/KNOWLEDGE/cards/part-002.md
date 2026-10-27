@@ -584,6 +584,26 @@
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-fa7f908615d24682`, `公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。`, `- 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。`
 
+<a id="asset-hr-001d6f16c232f9bf"></a>
+## 方法来源记录：认知迁移编辑修订子模块
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-001D6F16C232F9BF` · [docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md](../../docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md)
+- **为什么产生：** 此来源记录了什么：方法来源记录：认知迁移编辑修订子模块？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-03: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `方法来源记录：认知迁移编辑修订子模块`, `cognitive-migration-editorial-revision-source`
+
 <a id="asset-hr-004ccfbca43a4293"></a>
 ## External Agent Interface Audit R1
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Codespace 救援两张表差异审计`, `codespace-rescue-two-tables-diff-audit-20260708`
-
-<a id="asset-hr-094a86ef6aa2a143"></a>
-## 任务 114 项目级语言—思维风险审计
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-094A86EF6AA2A143` · [reports/operations/114-language-thought-project-audit.md](../../reports/operations/114-language-thought-project-audit.md)
-- **为什么产生：** 此来源记录了什么：任务 114 项目级语言—思维风险审计？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻结范围之外的仓库文件没有因为“文风统一”而被批量重写。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/114-language-thought-project-audit.md`, `114-LANGUAGE-THOUGHT-PROJECT-AUDIT`
-- **演化历史：** 2026-08-02: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `任务 114 项目级语言—思维风险审计`, `114-language-thought-project-audit`
