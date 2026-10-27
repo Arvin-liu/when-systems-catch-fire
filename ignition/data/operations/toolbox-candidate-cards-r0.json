@@ -38,6 +38,18 @@
           "role": "EXACT_BUILDER_OUTPUT"
         },
         {
+          "path": "ignition/data/operations/toolbox-portable-research-episode-builder-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-portable-research-episode-builder-route-execution-evidence-r0.json",
+          "role": "EXACT_FEATURE_HEAD_LOCAL_REPLAY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-portable-research-episode-builder-route-profile-r0.json",
+          "role": "EXPLICIT_READ_ONLY_ROUTE_TASK_PROFILE"
+        },
+        {
           "path": "ignition/docs/operations/toolbox-portable-research-episode-builder.md",
           "role": "USER_SCOPE_AND_LIMITS"
         },
@@ -60,6 +72,10 @@
         {
           "path": "ignition/tests/test_toolbox_portable_research_episode_builder.py",
           "role": "FOCUSED_BUILDER_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_portable_research_episode_builder_routing.py",
+          "role": "EXACT_HEAD_ROUTE_AND_REPLAY_TESTS"
         },
         {
           "path": "ignition/tools/operations/validate_toolbox_candidates.py",
@@ -144,15 +160,17 @@
       "fallback": "Keep the original files and caller declarations; if only manifest consistency is needed, run collaboration.validate_portable_research_episode. Use the handoff verifier only when the input is a FederatedResultReceipt. Stop on any unsafe path or byte-limit failure.",
       "validation": {
         "focused_checks": [
-          "ignition/tests/test_toolbox_portable_research_episode_builder.py",
-          "ignition/tests/test_toolbox_portable_research_episode.py",
           "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tests/test_toolbox_portable_research_episode.py",
+          "ignition/tests/test_toolbox_portable_research_episode_builder.py",
+          "ignition/tests/test_toolbox_portable_research_episode_builder_routing.py",
           "ignition/tools/operations/validate_toolbox_candidates.py"
         ],
         "negative_controls": [
           "Reject duplicate JSON keys, schema-invalid/authority-bearing inputs, unresolved artifact-version refs, traversal, URI paths, symlinks, outside roots, non-regular files, and per-file or total byte-limit violations without authorizing reads beyond the declared root.",
           "Successful receipts are independently recomputed in a bounded real task and then checked by the existing episode validator; those checks remain repository-local and do not authenticate provenance.",
-          "The default router excludes this candidate. Explicit allowlisting only proposes selection; it does not invoke the tool or authorize execution."
+          "The default router excludes this candidate. Explicit allowlisting only proposes selection; it does not invoke the tool or authorize execution.",
+          "Exact-head route experiments cover default-off, builder-only allowlisting, broad allowlisting, other-candidates-only, and unrelated inputs; every proposal remains execution_authorized=false."
         ]
       },
       "router_selectable_by_default": false,

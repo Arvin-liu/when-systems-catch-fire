@@ -1,0 +1,15 @@
+{
+  "task_id": "portable-research-episode-build-from-local-artifacts",
+  "current_ref": "refs/heads/codex/toolbox-growth-20261025@0b261e82712a705c27cd00b74374a2f97c25240d",
+  "input_types": [
+    "One UTF-8 JSON object conforming to toolbox-portable-research-episode-builder-input-r0 on stdin, capped at 262144 bytes, plus a separately supplied explicit workspace-root CLI argument under ignition/."
+  ],
+  "required_outputs": [
+    "One bounded deterministic JSON envelope containing a portable-research-episode-r0 manifest, computed SHA-256 and byte-count receipts, typed findings, total artifact bytes read, and explicit non-authorization/non-write/non-authenticity fields.",
+    "On invalid input or unsafe reads, a typed failure result with no manifest; successful assembly alone does not assert manifest validity."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": []
+}

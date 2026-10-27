@@ -1,0 +1,71 @@
+{
+  "schema_version": "toolbox-portable-research-episode-builder-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_PROPOSALS",
+  "candidate_tool_id": "collaboration.build_portable_research_episode",
+  "tool_version": "0.1.0",
+  "candidate_head": "0b261e82712a705c27cd00b74374a2f97c25240d",
+  "current_ref": "refs/heads/codex/toolbox-growth-20261025@0b261e82712a705c27cd00b74374a2f97c25240d",
+  "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_PLANNER; candidate catalog is separately bound by its git blob SHA-1.",
+  "candidate_count": 72,
+  "feature_commit_candidate_count": 72,
+  "candidate_catalog_git_blob_sha1": "5aff6a5c629231a5778f61424eea770b9f6b067c",
+  "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_profile_sha256": "95894d66be315c42fbfc15bd23a2b9e787d277f1cea5dfdd953cd0e3889b2a16",
+  "route_test_source_sha256": "e5add5eb8bbf339ac359dfb9ec578c55db70a6d79ae4dd3ae9af907440bde0a3",
+  "tool_source_sha256": "049d4ef755763d1e46ec2494c4170b7024fcf337bf52d6ed58d1fb382d99f542",
+  "input_sha256": "d7ca203356db71b9d3fe95161cc297567bc8785e572efdacec9203a0e542602f",
+  "expected_output_sha256": "ccc494331076974e2fe892b7fc218753c2ef1b18d884838a714ba80aa88cb1e4",
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "plan_sha256": "747b6b96b7ddd0a0da6ee31ff96fa753a9a47a664bb6602dffcd7d1b1a95d0dc"
+    },
+    {
+      "scenario": "tool_only",
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "collaboration.build_portable_research_episode"
+      ],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "plan_sha256": "12b62bc548b47f7cdbdb9fa484f11bd08ea82bb496ff657b3069c90b0b4ce7e5"
+    },
+    {
+      "scenario": "broad_allowlist",
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "collaboration.build_portable_research_episode"
+      ],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "plan_sha256": "353b69afed104a00134705812af19232a84a773a8a08c8714d03a28f04212ee3"
+    },
+    {
+      "scenario": "other_candidates_only",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "plan_sha256": "7a3e5fefeb07fafc18f86b55b03370d80dfe99d50e473286e4a2c824a30d6b33"
+    },
+    {
+      "scenario": "unrelated_input",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "plan_sha256": "97decb9918addfa37592e528c6a87e564a37bb8c5e5bc3fc0ce03df74300bd4a"
+    }
+  ],
+  "safety_boundary": {
+    "execution_authorized": false,
+    "tool_invocations_by_planner": 0,
+    "network_hosts_allowed": [],
+    "effect": "PROPOSAL_ONLY"
+  },
+  "claim_ceiling": "Five repository-local route proposals against one exact optional-tool catalog: default-off, tool-only, broad allowlist, other candidates only, and unrelated input. This demonstrates declared route boundaries only; it does not establish tool quality, execution authorization, source authenticity, or scientific validity."
+}
