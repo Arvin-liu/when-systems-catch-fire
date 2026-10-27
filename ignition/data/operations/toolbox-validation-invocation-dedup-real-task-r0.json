@@ -1,0 +1,71 @@
+{
+  "schema_version": "toolbox-validation-invocation-dedup-real-task-r0",
+  "tool_id": "maintenance.plan_validation_invocation_deduplication",
+  "tool_version": "0.1.0",
+  "task_ref": "Workbench-85-P0-profile-invocation-deduplication-on-current-Formal-candidate",
+  "source_ref": "Arvin-liu/when-systems-catch-fire@64d26f9387eb2b63611e6eb1d4336a83382f84b5",
+  "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+  "profile_manifest_path": "ignition/data/operations/component-execution-profiles.json",
+  "profile_manifest_sha256": "c17bbd243cbf4afb2bbac484cb59cff57d924ad1a582abcccbc64c9df5255bb4",
+  "tool_invocation": {
+    "argv": ["python3", "-B", "ignition/tools/toolbox_validation_invocation_deduplication.py", "--stdin"],
+    "input_path": "ignition/data/operations/toolbox-validation-invocation-dedup-input-r0.json",
+    "input_sha256": "68b000adecc79c8fbe6f0386d0c03a4a9418a6fd276de7c7e6b762d13d10df82",
+    "output_path": "ignition/data/operations/toolbox-validation-invocation-dedup-output-r0.json",
+    "output_sha256": "2dbfa6ec4972aaefb3af708bd5a86a4fad0f04abcec61fab037bc2f904b77d1b",
+    "tool_sha256": "d477a66642ca8986be398d26c5fc9bca11ebb8b16990acd58957bef82469d00e",
+    "exit_code": 0,
+    "network_calls": 0,
+    "writes_by_tool": false
+  },
+  "analysis_result": {
+    "profiles_analyzed": 8,
+    "unique_invocation_groups": 5,
+    "source_reviewed_read_only_reuse_candidate_groups": 2,
+    "potential_duplicate_invocations": 3,
+    "group_profile_ids": [
+      ["foundation_data"],
+      ["human_knowledge_surfaces"],
+      ["no_l7", "no_totality_proof", "no_truth_upgrade"],
+      ["propagation_calculator"],
+      ["system_map", "system_map_projection"]
+    ],
+    "execution_authorized": false,
+    "duplicate_processes_actually_saved": 0
+  },
+  "unique_command_smokes": [
+    {
+      "argv": ["python3", "tools/validate_human_front_door.py"],
+      "profile_ids": ["no_l7", "no_totality_proof", "no_truth_upgrade"],
+      "runs": 1,
+      "exit_code": 0,
+      "observed_result": {
+        "status": "PASS",
+        "human_entries": 48,
+        "machine_components": 105,
+        "typed_graph_edges": 92,
+        "visible_graph_nodes": 87,
+        "human_surfaces": 25,
+        "machine_human_pairs": 14,
+        "two_click_destinations": 20,
+        "external_truth_verified": false
+      },
+      "network_calls": 0,
+      "repository_worktree_clean_after_run": true
+    },
+    {
+      "argv": ["python3", "tools/generate_interactive_system_map.py", "--check"],
+      "profile_ids": ["system_map", "system_map_projection"],
+      "runs": 1,
+      "exit_code": 0,
+      "observed_result": "SYSTEM_MAP_DERIVED_OK nodes=87 edges=92 homepage_projection=PASS",
+      "network_calls": 0,
+      "repository_worktree_clean_after_run": true
+    }
+  ],
+  "limitations": [
+    "The planner groups caller-supplied identity and source-review declarations; it does not authenticate them or invoke validators.",
+    "The two smoke commands were each run once in a clean detached exact-tree worktree. No eight-profile dispatch or duplicate-call comparison was performed.",
+    "Three potential duplicate invocations are a profile-count arithmetic result, not an observed three-process saving, elapsed-time improvement, billing reduction, or CI gate equivalence."
+  ]
+}

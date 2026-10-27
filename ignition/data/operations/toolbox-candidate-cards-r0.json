@@ -13942,6 +13942,245 @@
           "Remove this experimental card, adapter, tests, fixture, schemas, documentation, and dedicated evidence from the isolated candidate; regenerate identity projections. Preserve the C1 result and historical commit as evidence."
         ]
       }
+    },
+    {
+      "tool_id": "maintenance.plan_validation_invocation_deduplication",
+      "display_name": {
+        "zh": "验证调用去重计划器",
+        "en": "Validation invocation deduplication planner"
+      },
+      "description": "Group caller-supplied validation profiles by exact argv, working directory, source tree, runtime and environment fingerprints, and result contract; mark a duplicate as a potential read-only reuse candidate only when all records declare source-reviewed read-only effects.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no CI, Owner, or release authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_validation_invocation_deduplication.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_validation_invocation_deduplication.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/data/operations/component-execution-profiles.json",
+          "role": "SOURCE_PROFILE_REGISTRY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-validation-invocation-dedup-c1-evidence-r0.json",
+          "role": "C1_FUNCTIONAL_SCOPE_AND_RETIREMENT_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-validation-invocation-dedup-input-r0.json",
+          "role": "REAL_EIGHT_PROFILE_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-validation-invocation-dedup-output-r0.json",
+          "role": "REAL_TASK_ANALYSIS_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-validation-invocation-dedup-real-task-r0.json",
+          "role": "EXACT_TREE_TOOL_AND_VALIDATOR_SMOKE_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-validation-invocation-dedup-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-validation-invocation-dedup-route-profile-r0.json",
+          "role": "TASK_DEMAND_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-validation-invocation-dedup-source-binding-r0.json",
+          "role": "WORKBENCH_85_AND_CURRENT_SOURCE_BINDING"
+        },
+        {
+          "path": "ignition/docs/operations/toolbox-validation-invocation-deduplication.md",
+          "role": "USE_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-validation-invocation-dedup-input-r0.schema.json",
+          "role": "STRICT_INPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-validation-invocation-dedup-output-r0.schema.json",
+          "role": "MACHINE_READABLE_OUTPUT_CONTRACT"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_validation_invocation_deduplication.py",
+          "role": "FUNCTIONAL_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_validation_invocation_deduplication_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_TEST"
+        },
+        {
+          "path": "ignition/tools/generate_interactive_system_map.py",
+          "role": "CHECK_MODE_READ_ONLY_DUPLICATE_GROUP"
+        },
+        {
+          "path": "ignition/tools/operations/plan_ignition_operation_run.py",
+          "role": "EXISTING_DEFAULT_OFF_CANDIDATE_ROUTER"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_interval_union.py",
+          "role": "C1_FUNCTIONAL_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_attribution.py",
+          "role": "C1_FUNCTIONAL_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+          "role": "C1_FUNCTIONAL_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+          "role": "C1_FUNCTIONAL_SCOPE_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_validation_invocation_deduplication.py",
+          "role": "BOUNDED_OFFLINE_EXACT_SIGNATURE_GROUPER"
+        },
+        {
+          "path": "ignition/tools/validate_human_front_door.py",
+          "role": "SOURCE_REVIEWED_READ_ONLY_DUPLICATE_GROUP"
+        }
+      ],
+      "dependencies": [],
+      "good_for": [
+        "Group 1–32 validation profile records that declare exactly the same argument vector, cwd, source tree, runtime/environment fingerprints, and result contract.",
+        "Identify potential duplicate calls only when all records in a duplicate group declare source-reviewed read-only effects.",
+        "Keep per-profile results, effect review, and eligibility boundaries visible before a separate executor considers any reuse."
+      ],
+      "not_for": [
+        "Executing a validator, sharing results, skipping a required check, or modifying CI or routing policy.",
+        "Authenticating caller-supplied source, runtime/environment fingerprints, effect reviews, or output contracts.",
+        "Proving semantic equivalence, check sufficiency, process launches saved, latency improvement, billing reduction, or monetary savings."
+      ],
+      "only_if": [
+        "The task compares multiple validation profiles with caller-supplied exact argv and execution-context fingerprints.",
+        "A candidate reuse group has one declared result contract and every profile provides a source-review reference for read-only effects.",
+        "The user or authorized executor separately decides whether a proposed group may share an observed result."
+      ],
+      "counterindicated_when": [
+        "Any command, working directory, source tree, runtime/environment fingerprint, or result contract differs.",
+        "A profile has unknown or effectful behavior, or a source review is absent.",
+        "The task requires authoritative CI status, required-check policy, billing, execution, merge, release, or external truth."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON conforming to validation-invocation-dedup-input-r0; 1–32 profile records; maximum 262144 bytes; command arguments are arrays and are never interpreted by a shell."
+      ],
+      "output_types": [
+        "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "BOUNDED_OFFLINE_STDIN_PROCESS",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_validation_invocation_deduplication.py"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads bounded stdin JSON and writes deterministic JSON to stdout or an error to stderr; creates no files and makes no network requests."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library; no third-party runtime packages."
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "No matched latency, memory, analyst-time, or monetary benchmark was run; the tool analyzes at most 32 records locally."
+      },
+      "alternatives": [
+        {
+          "tool_id": "maintenance.compare_actions_validation_target_coverage",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Compares target-set coverage and caller-declared outcomes across runs; it does not group exact validator invocation signatures across profiles."
+        },
+        {
+          "tool_id": "maintenance.summarize_actions_interval_union",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Summarizes observed job intervals; it does not establish command identity or reusability."
+        },
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Compares caller-declared candidate outcomes and a resource metric; it does not group validation profile invocations."
+        },
+        {
+          "tool_id": "maintenance.attribute_actions_validation_evidence",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Binds one run plan, artifacts, and optional receipt; it does not compare exact command signatures across component profiles."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Find exact repeated validation command and execution-context signatures across multiple component profiles without executing commands or changing a workflow."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Functional contract comparison against Actions target coverage, Actions interval union, execution Pareto, and single-run attribution. The new input unit and exact-signature output are distinct; no same-task performance, reliability, time, cost, or billing benchmark was conducted.",
+        "compared_tool_ids": [
+          "maintenance.compare_actions_validation_target_coverage",
+          "maintenance.summarize_actions_interval_union",
+          "maintenance.summarize_execution_candidate_pareto_frontier",
+          "maintenance.attribute_actions_validation_evidence"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_actions_validation_target_coverage.py",
+          "ignition/tools/toolbox_actions_interval_union.py",
+          "ignition/tools/toolbox_execution_pareto_frontier.py",
+          "ignition/tools/toolbox_actions_validation_attribution.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-validation-invocation-dedup-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-validation-invocation-dedup-real-task-r0.json"
+        ],
+        "findings": [
+          "Exact validator invocation grouping is not provided by the compared tools.",
+          "All compared tools retain their existing task scope; no replacement or retirement is supported.",
+          "The output is a review candidate only and does not authorize process-result reuse."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "A real eight-profile task produced two read-only exact-signature reuse candidates. Existing tools retain distinct scopes; no replacement evidence exists."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "Optional default-off candidate only; Current operation registry, CI profiles, workflows, and required-check rules remain unchanged."
+        ],
+        "rollback_steps": [
+          "Remove this candidate card, implementation, schemas, documentation, tests, task/source/C1/route evidence, and generated identity projection; regenerate the toolbox projection.",
+          "Preserve the input, output, and source binding as historical evidence if the executable candidate is retired."
+        ]
+      },
+      "fallback": "Manually group exact argv and execution contexts, inspect each validator source, and preserve separate profile assertions. Do not reuse a process result unless the applicable executor contract independently permits it.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_validation_invocation_deduplication.py",
+          "ignition/tests/test_toolbox_validation_invocation_deduplication_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py",
+          "ignition/tools/operations/validate_toolbox_candidates.py"
+        ],
+        "negative_controls": [
+          "Different argv, cwd, source tree, runtime/environment fingerprint, or result contract split into separate signature groups.",
+          "Unknown/effectful side effects or absent source review never yield a reusable group.",
+          "Duplicate profile IDs, duplicate JSON keys, malformed hashes, parent-directory cwd, and over-limit inputs are rejected.",
+          "Default routing excludes the experimental tool; explicit allowlisting proposes it but never executes it or authorizes reuse."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task comparing validation profiles.",
+        "Do not select when commands or execution contexts differ, side effects are unknown, or a profile-specific output contract is required.",
+        "A route proposal does not execute validators, share results, satisfy required checks, or grant CI/merge/release authority."
+      ],
+      "claim_ceiling": "Groups caller-supplied exact command and execution-context signatures. Source hashes, environment fingerprints, result contracts, side-effect declarations, and review evidence are not authenticated. The tool does not execute commands, authorize result reuse, change CI, establish check sufficiency, or prove process/time/cost savings."
     }
   ]
 }

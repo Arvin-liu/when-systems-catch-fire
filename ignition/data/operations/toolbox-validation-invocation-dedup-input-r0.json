@@ -1,0 +1,135 @@
+{
+  "schema_version": "validation-invocation-dedup-input-r0",
+  "evaluation_context": {
+    "evaluation_id": "workbench85-profile-dedup-64d26f9",
+    "source_ref": "Arvin-liu/when-systems-catch-fire@64d26f9387eb2b63611e6eb1d4336a83382f84b5:ignition/data/operations/component-execution-profiles.json",
+    "analysis_purpose": "Find exact same-tree, same-runtime, same-environment, same-cwd read-only validation invocation groups in the eight current execution profiles; identify proposals only."
+  },
+  "profiles": [
+    {
+      "profile_id": "foundation_data",
+      "argv": [
+        "python3",
+        "tools/foundation/validate_foundation.py"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "EFFECTFUL_OR_UNKNOWN",
+      "review_status": "NOT_REVIEWED",
+      "evidence_ref": "ignition/data/operations/component-execution-profiles.json#sha256=c17bbd243cbf4afb2bbac484cb59cff57d924ad1a582abcccbc64c9df5255bb4; invocation not reviewed for reuse"
+    },
+    {
+      "profile_id": "human_knowledge_surfaces",
+      "argv": [
+        "python3",
+        "tools/governance/validate_human_visibility.py"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "EFFECTFUL_OR_UNKNOWN",
+      "review_status": "NOT_REVIEWED",
+      "evidence_ref": "ignition/data/operations/component-execution-profiles.json#sha256=c17bbd243cbf4afb2bbac484cb59cff57d924ad1a582abcccbc64c9df5255bb4; invocation not reviewed for reuse"
+    },
+    {
+      "profile_id": "no_l7",
+      "argv": [
+        "python3",
+        "tools/validate_human_front_door.py"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "READ_ONLY_VALIDATION",
+      "review_status": "SOURCE_REVIEWED_READ_ONLY",
+      "evidence_ref": "ignition/tools/validate_human_front_door.py#sha256=4f986b8150fb9b57dc68a27413c8c0d62b7432bd2d327050c8c7bab5f750c691; invocation contract from Workbench-85 profile audit"
+    },
+    {
+      "profile_id": "no_totality_proof",
+      "argv": [
+        "python3",
+        "tools/validate_human_front_door.py"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "READ_ONLY_VALIDATION",
+      "review_status": "SOURCE_REVIEWED_READ_ONLY",
+      "evidence_ref": "ignition/tools/validate_human_front_door.py#sha256=4f986b8150fb9b57dc68a27413c8c0d62b7432bd2d327050c8c7bab5f750c691; invocation contract from Workbench-85 profile audit"
+    },
+    {
+      "profile_id": "no_truth_upgrade",
+      "argv": [
+        "python3",
+        "tools/validate_human_front_door.py"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "READ_ONLY_VALIDATION",
+      "review_status": "SOURCE_REVIEWED_READ_ONLY",
+      "evidence_ref": "ignition/tools/validate_human_front_door.py#sha256=4f986b8150fb9b57dc68a27413c8c0d62b7432bd2d327050c8c7bab5f750c691; invocation contract from Workbench-85 profile audit"
+    },
+    {
+      "profile_id": "propagation_calculator",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "tests.test_change_propagation",
+        "tests.test_diff_coverage_gate"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "EFFECTFUL_OR_UNKNOWN",
+      "review_status": "NOT_REVIEWED",
+      "evidence_ref": "ignition/data/operations/component-execution-profiles.json#sha256=c17bbd243cbf4afb2bbac484cb59cff57d924ad1a582abcccbc64c9df5255bb4; invocation not reviewed for reuse"
+    },
+    {
+      "profile_id": "system_map",
+      "argv": [
+        "python3",
+        "tools/generate_interactive_system_map.py",
+        "--check"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "READ_ONLY_VALIDATION",
+      "review_status": "SOURCE_REVIEWED_READ_ONLY",
+      "evidence_ref": "ignition/tools/generate_interactive_system_map.py#sha256=122e95dd185714174ea67c7b4c4616d0582d3d1484a70bfe239bbb6992b5d7eb; --check returns before write branch"
+    },
+    {
+      "profile_id": "system_map_projection",
+      "argv": [
+        "python3",
+        "tools/generate_interactive_system_map.py",
+        "--check"
+      ],
+      "working_directory": ".",
+      "source_tree_git_sha1": "ec41aa9c5077377123bf5097c7853cf8db657aa1",
+      "runtime_fingerprint_sha256": "df451d0b32120e88ad7608a4b86b6eddbed509bbad85bf6497fe271c20d4db8b",
+      "environment_fingerprint_sha256": "f4c5ac81ba2286208b1e33bd19e7f7cb0c3530ac915aa72e951c8a84f8ad7111",
+      "result_contract_id": "exit-code-zero-only",
+      "side_effect_class": "READ_ONLY_VALIDATION",
+      "review_status": "SOURCE_REVIEWED_READ_ONLY",
+      "evidence_ref": "ignition/tools/generate_interactive_system_map.py#sha256=122e95dd185714174ea67c7b4c4616d0582d3d1484a70bfe239bbb6992b5d7eb; --check returns before write branch"
+    }
+  ]
+}
