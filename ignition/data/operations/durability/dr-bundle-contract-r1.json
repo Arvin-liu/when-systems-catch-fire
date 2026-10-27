@@ -1,0 +1,9 @@
+{
+  "schema_version": "ignition-durability-dr-bundle-r1",
+  "bundle_epoch": "dr-bundle-epoch-1",
+  "required_chunks": ["trusted-snapshot", "tail-event-lineage", "schema-migration", "namespace-registry", "pack-lifecycle", "executor-admission", "capability-revocation", "accounting", "reconciliation", "memory-integrity", "soft-governance", "operator-checkpoint"],
+  "manifest_fields": ["namespace_id", "schema_epoch", "source_ledger_head_hash", "chunks", "unresolved_reconciliation_refs", "external_reexecution", "manifest_sha256"],
+  "restore_rules": "VERIFY_HASHES_NAMESPACE_SCHEMA_AND_MANIFEST_BEFORE_LOCAL_RESTORE_NO_EXTERNAL_RERUN",
+  "negative_cases": ["missing_chunk", "corrupt_chunk", "wrong_namespace", "stale_bundle_head", "wrong_schema_epoch", "tampered_pack_state", "soft_to_hard_authority_injection"],
+  "claim_ceiling": "DISPOSABLE_LOCAL_RECOVERY_EVIDENCE_ONLY_NO_AUTOMATIC_EXTERNAL_SIDE_EFFECT_REEXECUTION"
+}

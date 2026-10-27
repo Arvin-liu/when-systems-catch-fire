@@ -1,0 +1,49 @@
+{
+  "claim_ceiling": "Independent repository-local exact-binding and typed live-process validation only; the malformed process result is not a validated completion, and no external effect, production readiness, Owner acceptance or epistemic upgrade is inferred.",
+  "completion_claim": false,
+  "counts": {
+    "complete_evidence_count": 4,
+    "incomplete_evidence_count": 2,
+    "observation_incomplete_count": 2,
+    "total_attempts": 6,
+    "unreconciled_count": 0,
+    "validated_completion_count": 0
+  },
+  "exact_binding": {
+    "attempt_id": "attempt-140-live-01",
+    "capability_lease_digest": "b621398f7f6b453e7d4120bd82cdb75390d9adbb5f69955c635739d4942a04b8",
+    "dispatch_id": "dispatch-140-live-01",
+    "executor_id": "external.codex",
+    "task_id": "IGNITION-20260826-140"
+  },
+  "independent_executor_result_validator": "NOT_RUN_NO_EXACT_PUBLIC_RESULT",
+  "ledger_head_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+  "live_process_boundary": {
+    "capture_completeness": "COMPLETE",
+    "live_process_return_code": 1,
+    "probe_return_code": 0,
+    "structured_result_present": false,
+    "transport_return_code": 0,
+    "validator_status": "NOT_RUN"
+  },
+  "next_eligible_action": {
+    "action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "blocker_summary": "No validated completion is present and no historical attempt is available to close the obligation.",
+    "status": "ADMISSION_REQUIRED"
+  },
+  "obligation": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "reason": "Ledger-derived live state: 0 unreconciled attempt(s), 0 validated completion(s), 2 observation-incomplete attempt(s).",
+    "state": "OPEN",
+    "unreconciled_attempt_ids": []
+  },
+  "observation_event_head_hash": "55827f5e878203922e24af279282f52e9212b19877501597ace86f269d20b649",
+  "projection_digest": "b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3",
+  "record_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+  "record_sequence": 5,
+  "retry": "NOT_AUTHORIZED_SAME_FAMILY",
+  "schema_version": "ignition-140-step12-independent-validation-r1",
+  "second_family_admission": "NO_SAFE_CANDIDATE_IN_FRESH_CENSUS",
+  "status": "PASS_FAIL_CLOSED",
+  "task_id": "IGNITION-20260826-140"
+}

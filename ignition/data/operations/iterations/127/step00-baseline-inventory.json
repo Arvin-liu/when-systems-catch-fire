@@ -1,0 +1,67 @@
+{
+  "schema_version": "ignition-127-step00-baseline-inventory-r1",
+  "task_id": "IGNITION-20260820-127",
+  "step": "00",
+  "status": "COMPLETED",
+  "recorded_at": "2026-08-20T00:00:00Z",
+  "baseline": {
+    "formal_origin_main": "c5cec3a212dbf42564985b71c0fcec3b1fb1e564",
+    "formal_task_branch": "codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820",
+    "task_control_ref": "origin/relay/current",
+    "task_control_tip": "cfd50804",
+    "task_control_task_file": "agent-commands/IGNITION-20260820-127-os-durability-lifecycle-r3-rebased.md",
+    "execution_boundary": "fresh isolated worktree from formal origin/main; relay checkout remains read-only"
+  },
+  "task_relationship": {
+    "task126": "COMPLETED_PUBLISHED_AT_BASELINE",
+    "task125": "DEFERRED_PENDING_REBASE",
+    "task125_executed": false,
+    "task125_disposition": "DEFERRED_REBASED_INTO_127",
+    "task125_file_executed": false,
+    "rebase_rule": "requirements were re-audited against 126 final main; no 125 implementation or receipt was reused as execution authority"
+  },
+  "inventory": {
+    "canonical_event_ledger": {
+      "paths": ["ignition/agent_runtime/event_ledger.py", "ignition/tools/validate_event_ledger.py"],
+      "present": ["append-only JSONL", "per-aggregate CAS", "sequence and hash-chain validation", "genesis replay", "bounded public payload scan", "basic snapshot prefix replay"],
+      "gaps": ["no versioned durability state taxonomy", "snapshot lacks namespace/pack/soft-context/migration metadata", "no retention/archive contract", "no snapshot chain or disaster bundle"]
+    },
+    "control_plane": {
+      "paths": ["ignition/agent_runtime/scheduler.py", "ignition/agent_runtime/resource_arbitration.py", "ignition/agent_runtime/queue_control.py", "ignition/agent_runtime/dispatch_reconciliation.py"],
+      "present": ["bounded concurrent scheduling", "resource arbitration", "queue/backpressure/deadline/cancel", "durable dispatch and reconciliation"],
+      "gaps": ["budgets are scheduler-local rather than one replayable OS accounting plane", "recovery orchestration is not end-to-end", "uncertain external effects need durable bundle/recovery semantics"]
+    },
+    "operational_memory": {
+      "paths": ["ignition/agent_runtime/memory.py", "ignition/agent_runtime/concurrent_memory.py", "ignition/tools/validate_operational_memory.py"],
+      "present": ["typed entries", "integrity digests", "supersede/tombstone/compact", "bounded context capsule", "CAS generation"],
+      "gaps": ["no canonical namespace/principal binding", "no schema-epoch migration contract", "no crash/recovery orchestration binding", "no explicit soft-context advisory pointer semantics"]
+    },
+    "packs": {
+      "paths": ["ignition/agent_runtime/pack_registry.py", "ignition/packs/*/manifest.json"],
+      "present": ["four manifest discovery", "declarative validation", "load/unload guard", "capability routing", "authority/network ceiling checks"],
+      "gaps": ["no transactional lifecycle state machine", "no atomic activation/rollback receipt", "no version-pinned run semantics", "no drain/quarantine contract"]
+    },
+    "federation_and_executors": {
+      "paths": ["ignition/agent_federation/", "ignition/agent_runtime/executor_health.py", "ignition/tools/validate_executor_inventory.py"],
+      "present": ["provider-neutral adapter contracts", "capability/health leases", "workspace/privacy routing", "Reference Executor freeze", "handoff/reconciliation boundaries"],
+      "gaps": ["no durable admission epoch", "no explicit revocation event semantics across queued/in-flight work", "no recovery bundle admission state"]
+    },
+    "soft_governance_and_esi": {
+      "paths": ["ignition/data/epistemic-governance/", "ignition/data/agent-federation/soft-context-exposure-contract-r0.json", "ignition/tools/validate_soft_governance_authority.py"],
+      "present": ["CANDIDATE_ESI_SIGNAL", "ADVISORY_ONLY contract", "transition grammar", "runtime source scan", "negative authority fixtures"],
+      "gaps": ["no snapshot/migration/recovery persistence contract", "no explicit soft-field downgrade/withdrawal replay tests", "no recovery-time soft-to-hard injection gate"]
+    },
+    "current_state_and_projection": {
+      "paths": ["ignition/data/architecture/current-system-identity.json", "ignition/data/architecture/current-facts.json", "ignition/data/operations/project-components.json", "ignition/data/operations/change-propagation-topology.json", "ignition/tools/generate_interactive_system_map.py", "ignition/STATE-CHANGELOG.md"],
+      "present": ["CURRENT_STATE_SYNC_INVARIANT", "identity epoch os-control-plane-r2-esi-r0", "Current map 0.10.0", "deterministic facts/map projections", "append-only state delta"],
+      "gaps": ["127 durability/lifecycle component and current surfaces are not yet represented", "no 127 sync receipt or current identity transition"]
+    },
+    "historical_residuals": {
+      "paths": ["ignition/data/operations/iterations/126/step16-closure-r1.json", "ignition/data/foundation/unresolved-obligations.json"],
+      "must_remain_sealed": ["FOUNDATION_FUNCTION_CENSUS_DRIFT", "FOUNDATION_NONFUNCTION_CLAIM_OUTPUT_DRIFT", "T16_SYMPY_COUNTEREXAMPLE / FOUNDATION_SYMPY_UNAVAILABLE as recorded by 126 closure", "PROPAGATION_RECONCILIATION_104_106"],
+      "rule": "127 may add a current reconciliation record, but may not rewrite historical records or claim residual closure without independent evidence"
+    }
+  },
+  "claim_ceiling": "Repository-local baseline inventory and 125-to-127 rebase audit only; no durability production readiness, external truth, Owner acceptance, safety guarantee or epistemic acceptance is established.",
+  "next_step": "01"
+}

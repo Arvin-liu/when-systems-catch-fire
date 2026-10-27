@@ -1,0 +1,481 @@
+{
+  "request_version": "1.0.0",
+  "task_id": "IGNITION-20260829-148",
+  "base_identity": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+  "head_identity": "task148-step12-candidate",
+  "changed_paths": [
+    "AI-HANDOFF.md",
+    "AI-START-HERE.md",
+    "ARCHITECTURE.md",
+    "KNOWLEDGE/COVERAGE.md",
+    "KNOWLEDGE/MAP.md",
+    "KNOWLEDGE/READING-LAYERS.md",
+    "KNOWLEDGE/README.md",
+    "KNOWLEDGE/SEARCH.md",
+    "KNOWLEDGE/cards/part-001.md",
+    "KNOWLEDGE/indexes/architecture_governance.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-001.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-002.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-003.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-004.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-005.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-006.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-007.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-008.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-009.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-010.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-011.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-012.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-013.md",
+    "KNOWLEDGE/indexes/architecture_governance/part-014.md",
+    "KNOWLEDGE/indexes/cognition.md",
+    "KNOWLEDGE/indexes/cognition/part-001.md",
+    "KNOWLEDGE/indexes/cognition/part-002.md",
+    "KNOWLEDGE/indexes/cognition/part-003.md",
+    "KNOWLEDGE/indexes/mathematics.md",
+    "KNOWLEDGE/indexes/mathematics/part-003.md",
+    "KNOWLEDGE/indexes/mathematics/part-004.md",
+    "KNOWLEDGE/indexes/mathematics/part-005.md",
+    "KNOWLEDGE/indexes/mathematics/part-006.md",
+    "KNOWLEDGE/indexes/mathematics/part-007.md",
+    "KNOWLEDGE/indexes/mathematics/part-008.md",
+    "KNOWLEDGE/indexes/mathematics/part-009.md",
+    "KNOWLEDGE/indexes/mathematics/part-010.md",
+    "KNOWLEDGE/indexes/mathematics/part-011.md",
+    "KNOWLEDGE/indexes/mathematics/part-012.md",
+    "KNOWLEDGE/indexes/mathematics/part-013.md",
+    "KNOWLEDGE/indexes/mathematics/part-014.md",
+    "KNOWLEDGE/indexes/mathematics/part-015.md",
+    "KNOWLEDGE/indexes/mathematics/part-016.md",
+    "KNOWLEDGE/indexes/mathematics/part-017.md",
+    "KNOWLEDGE/indexes/mathematics/part-018.md",
+    "KNOWLEDGE/indexes/mathematics/part-019.md",
+    "KNOWLEDGE/indexes/mathematics/part-020.md",
+    "KNOWLEDGE/indexes/operations_evidence.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-001.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-002.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-003.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-004.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-005.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-006.md",
+    "KNOWLEDGE/indexes/operations_evidence/part-007.md",
+    "KNOWLEDGE/indexes/physics/part-001.md",
+    "KNOWLEDGE/indexes/systems.md",
+    "KNOWLEDGE/indexes/systems/part-001.md",
+    "KNOWLEDGE/indexes/systems/part-002.md",
+    "KNOWLEDGE/indexes/systems/part-003.md",
+    "KNOWLEDGE/indexes/systems/part-004.md",
+    "KNOWLEDGE/indexes/systems/part-005.md",
+    "KNOWLEDGE/indexes/systems/part-006.md",
+    "OPERATING-METHOD.md",
+    "STATE-CHANGELOG.md",
+    "data/architecture/current-facts.json",
+    "data/architecture/current-system-identity.json",
+    "data/architecture/interactive-system-map.json",
+    "data/foundation/function-assets/adjudication-ledger.jsonl",
+    "data/foundation/function-assets/asset-inventory.csv",
+    "data/foundation/function-assets/audit-queue.jsonl",
+    "data/foundation/function-assets/census-summary.json",
+    "data/foundation/function-assets/census.jsonl",
+    "data/foundation/function-assets/closure-summary.json",
+    "data/foundation/function-assets/counterexample-registry.jsonl",
+    "data/foundation/function-assets/dependency-closure.jsonl",
+    "data/foundation/function-assets/discovery-coverage.json",
+    "data/foundation/function-assets/discovery.jsonl",
+    "data/foundation/function-assets/identity-cards.jsonl",
+    "data/foundation/function-assets/proof-empirical-obligations.jsonl",
+    "data/foundation/function-assets/unresolved-quarantine.jsonl",
+    "data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
+    "data/foundation/nonfunction-claims/claim-inventory.csv",
+    "data/foundation/nonfunction-claims/claim-registry.jsonl",
+    "data/foundation/nonfunction-claims/closure-summary.json",
+    "data/foundation/nonfunction-claims/dependency-graph.jsonl",
+    "data/foundation/nonfunction-claims/discovery-coverage.json",
+    "data/foundation/nonfunction-claims/evidence-lineage.jsonl",
+    "data/foundation/nonfunction-claims/inference-risk-report.jsonl",
+    "data/foundation/nonfunction-claims/public-surface-report.jsonl",
+    "data/foundation/nonfunction-claims/source-discovery.jsonl",
+    "data/foundation/nonfunction-claims/supersession-lineage.jsonl",
+    "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+    "data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "data/governance/human-surface/materiality-manifest.json",
+    "data/governance/knowledge-experience/asset-cards.jsonl",
+    "data/governance/knowledge-experience/coverage.json",
+    "data/governance/knowledge-experience/layered-reading.jsonl",
+    "data/governance/knowledge-experience/manifest.json",
+    "data/governance/knowledge-experience/search-index.jsonl",
+    "data/operations/current-release-lifecycle-r1.json",
+    "data/operations/current-snapshot-r1.json",
+    "data/operations/current-task-lineage-status.json",
+    "data/operations/current-volatile-fact-registry-r1.json",
+    "data/operations/formal-task-lifecycle-r1.json",
+    "data/operations/ignition-operation-capability-registry-r1.json",
+    "data/operations/iterations/148/current-state-sync-receipt.json",
+    "data/operations/iterations/148/execution-contract-r1.json",
+    "data/operations/iterations/148/progress.jsonl",
+    "data/operations/iterations/148/step12-current-version-propagation-closure.json",
+    "data/operations/open-obligation-registry-r1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121-agent-platform-r2-blast-radius-report.json",
+    "data/operations/propagation/IGNITION-20260829-148-closure.json",
+    "data/operations/propagation/IGNITION-20260829-148-request.json",
+    "data/operations/propagation/IGNITION-20260829-148-residue.json",
+    "data/operations/propagation/IGNITION-20260829-148-system-map-delta.json",
+    "data/operations/state-changelog-profile-r1.json",
+    "data/operations/task-identity-model-r1.json",
+    "data/publication/fire-seeds/seed-census.json",
+    "docs/VERSIONING.md",
+    "docs/architecture/current-facts.md",
+    "docs/foundation/nonfunction-claim-adjudication-index.md",
+    "docs/human/function-assets/README.md",
+    "docs/human/function-assets/bulk-explanation.md",
+    "docs/human/function-assets/entries/d127.md",
+    "docs/human/function-assets/entries/d260.md",
+    "docs/human/function-assets/entries/t2.md",
+    "docs/human/nonfunction-assets/README.md",
+    "docs/human/nonfunction-assets/bulk-explanation.md",
+    "docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
+    "docs/human/nonfunction-assets/entries/nfc-02f68962a6f13abc.md",
+    "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
+    "docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md",
+    "docs/human/nonfunction-assets/entries/nfc-35e28dd86a8149d0.md",
+    "docs/human/nonfunction-assets/entries/nfc-5fa7bfc55bf73096.md",
+    "docs/human/nonfunction-assets/themes/governance-and-norms.md",
+    "docs/project-current-state.md",
+    "llms.txt",
+    "reports/operations/IGNITION-20260829-148-change-propagation-impact.md",
+    "schemas/architecture/current-facts.schema.json",
+    "schemas/architecture/current-system-identity.schema.json",
+    "schemas/operations/current-snapshot-r1.schema.json",
+    "schemas/operations/execution-contract-r1.schema.json",
+    "tests/fixtures/ignition-operating-method/canonical-resolution-r1.json",
+    "tests/fixtures/ignition-operating-method/unified-output-r1.json",
+    "tests/test_change_propagation.py",
+    "tests/test_current_state_sync.py",
+    "tests/test_current_surface_compiler.py",
+    "tests/test_ignition_interface_sync.py",
+    "tests/test_ignition_object_collision.py",
+    "tests/test_ignition_run_output.py",
+    "tests/test_state_changelog.py",
+    "tools/build_current_snapshot.py",
+    "tools/current_surface_compiler.py",
+    "tools/generate_current_facts.py",
+    "tools/operations/validate_ignition_interface_sync.py",
+    "tools/validate_agent_platform_human_surface.py",
+    "tools/validate_current_state_sync.py",
+    "tools/validate_state_changelog.py"
+  ],
+  "state_transition_subjects": [
+    "IGNITION-20260829-148",
+    "IGNITION_OPERATING_METHOD_R1",
+    "CURRENT_STATE",
+    "OPEN_OBLIGATION_REGISTRY_R1"
+  ],
+  "changed_dimensions": [
+    "capability",
+    "identity",
+    "usage",
+    "handoff",
+    "lifecycle_current_state",
+    "governance",
+    "deployment_rendering",
+    "operations_method"
+  ],
+  "change_classifications": [
+    "CAPABILITY_ADDITION",
+    "INTERFACE_CHANGE",
+    "EVIDENCE_UPDATE",
+    "GOVERNANCE_CHANGE",
+    "RELEASE_OR_CURRENT_STATE_SYNC",
+    "OPERATIONS_METHOD"
+  ],
+  "component_decisions": [
+    {
+      "item_id": "ai_guide",
+      "decision": "CHANGE",
+      "reason": "Cold-start and handoff Current blocks changed so agents receive Task148 and the independently versioned Operating Method."
+    },
+    {
+      "item_id": "codex_adapter",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Codex remains an executor adapter only; Task148 changes the use-layer operating contract, not adapter translation semantics."
+    },
+    {
+      "item_id": "current_state",
+      "decision": "CHANGE",
+      "reason": "Canonical identity, lifecycle, volatile facts, snapshot, compiler inputs and human Current projections now carry Task148 and Operating Method 1.0.0 independently from Iteration Method 1.4.0."
+    },
+    {
+      "item_id": "epistemic_governance_kernel",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task148 preserves the epistemic relationship kernel and only applies its existing non-upgrade boundaries."
+    },
+    {
+      "item_id": "executor_admission_r1",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No executor admission, lease, safety, authorization or result-binding gate changed."
+    },
+    {
+      "item_id": "external_agent_federation",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The general Operating Method can route to execution, but Task148 does not change federation protocols or provider boundaries."
+    },
+    {
+      "item_id": "formal_task_lifecycle_r1",
+      "decision": "CHANGE",
+      "reason": "The canonical lifecycle now records Task148 IN_PROGRESS and the execution-contract schema permits the Draft-only and Owner-authorization control fields used by this task."
+    },
+    {
+      "item_id": "foundation",
+      "decision": "CHANGE",
+      "reason": "The exact natural function census and nonfunction adjudication projections were rebuilt after the new method and Current sources entered the repository."
+    },
+    {
+      "item_id": "future_executors",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Provider-neutral future-executor contracts remain unchanged and continue to be governed by existing admission gates."
+    },
+    {
+      "item_id": "hermes_adapter",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Hermes adapter translation semantics and tests are unchanged."
+    },
+    {
+      "item_id": "historical_reports",
+      "decision": "CHANGE",
+      "reason": "A new Task148 declared-relation propagation impact report is generated as durable evidence."
+    },
+    {
+      "item_id": "human_knowledge_surfaces",
+      "decision": "CHANGE",
+      "reason": "Human asset browsers, materiality fingerprints and the knowledge-experience cards, indexes, layers and search projection were naturally regenerated."
+    },
+    {
+      "item_id": "ignition_operating_method",
+      "decision": "CHANGE",
+      "reason": "IGNITION_OPERATING_METHOD_R1 is assigned independent version 1.0.0 and CURRENT_CANDIDATE_ON_DRAFT status without replacing the Iteration Method."
+    },
+    {
+      "item_id": "iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task148 invokes the repository-change sub-protocol but does not alter Iteration Method 1.4.0 semantics, identity or source."
+    },
+    {
+      "item_id": "iteration_manifest_contract",
+      "decision": "CHANGE",
+      "reason": "Task148 execution, current-state, propagation and progress receipts are added under the iteration evidence contract."
+    },
+    {
+      "item_id": "l2",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No formal-object layer source changed; it is reached through declared foundation propagation only."
+    },
+    {
+      "item_id": "l3",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No argument-layer source changed; it is reached through declared foundation propagation only."
+    },
+    {
+      "item_id": "l4",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No formalization or mathematical-foundation source changed; it is reached through declared foundation propagation only."
+    },
+    {
+      "item_id": "l5",
+      "decision": "CHANGE",
+      "reason": "Foundation resolver and validation behavior is exercised against the new canonical Current identities, with its generated census consequences recorded."
+    },
+    {
+      "item_id": "l6",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No publication seed, publication report or publication-layer authority changed."
+    },
+    {
+      "item_id": "live_executor_bridge_r1",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task148 does not execute or retry a live external attempt and changes no bridge protocol."
+    },
+    {
+      "item_id": "live_observation_reconciliation_plane_r1",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No live attempt observation, reconciliation ledger or Current projection binding changed."
+    },
+    {
+      "item_id": "no_l7",
+      "decision": "CHANGE",
+      "reason": "The generated Current block in ARCHITECTURE.md changes while the explicit no-L7 architecture ceiling remains intact."
+    },
+    {
+      "item_id": "no_totality_proof",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The propagation and census outputs are repository accounting only and do not add a totality proof."
+    },
+    {
+      "item_id": "no_truth_upgrade",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No repository evidence is upgraded into external truth, production readiness or Owner acceptance."
+    },
+    {
+      "item_id": "open_obligation_registry_r1",
+      "decision": "CHANGE",
+      "reason": "The inherited live-executor obligation is carried forward to Task148 as OPEN and OWNER_DEFERRED without a live attempt."
+    },
+    {
+      "item_id": "openclaw_adapter",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "OpenClaw adapter translation semantics and tests are unchanged."
+    },
+    {
+      "item_id": "project_component_registry",
+      "decision": "CHANGE",
+      "reason": "Registry 2.5.0 adds the hidden use-layer Operating Method component and exact Current-source mappings while preserving visible topology."
+    },
+    {
+      "item_id": "propagation_calculator",
+      "decision": "CHANGE",
+      "reason": "A new canonical Task148 propagation request and reproducible closure, residue and map-delta product set are added; calculator semantics are unchanged."
+    },
+    {
+      "item_id": "readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The homepage AI-first entry was completed in Step10 and needs no Step12 rewrite for version archaeology."
+    },
+    {
+      "item_id": "reference_executor",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The reference executor implementation remains unchanged; Task148 only preserves its routing and admission boundary."
+    },
+    {
+      "item_id": "runtime_environment",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No runtime environment protocol or workspace policy changed."
+    },
+    {
+      "item_id": "structural_governance_surface",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The structural governance schemas and authorities are unchanged; existing claim ceilings govern the new method."
+    },
+    {
+      "item_id": "sync",
+      "decision": "CHANGE",
+      "reason": "All registry-triggered Current, human, machine, method and release surfaces are explicitly adjudicated and their changed projections synchronized."
+    },
+    {
+      "item_id": "system_map_projection",
+      "decision": "CHANGE",
+      "reason": "The generated map provenance follows project-components 2.5.0 while the hidden component causes no visible node or edge delta."
+    }
+  ],
+  "surface_decisions": [
+    {
+      "item_id": "agent.handoff",
+      "decision": "CHANGE",
+      "reason": "The generated Current block now hands off Task148 and Operating Method 1.0.0 separately from Iteration Method 1.4.0."
+    },
+    {
+      "item_id": "ai.start",
+      "decision": "CHANGE",
+      "reason": "The generated cold-start Current block now exposes Task148 and the independent Operating Method identity and status."
+    },
+    {
+      "item_id": "copyright_governance",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task148 introduces no copyrighted source ingestion, rights classification, remediation or publication-rights transition."
+    },
+    {
+      "item_id": "human.ai_guide",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step11 already synchronized the long-form AI usage guide; Step12 version archaeology adds no further instruction there."
+    },
+    {
+      "item_id": "human.current_state",
+      "decision": "CHANGE",
+      "reason": "Current-state prose and generated facts distinguish Operating Method 1.0.0 from Iteration Method 1.4.0 and identify Task148 as Draft candidate work."
+    },
+    {
+      "item_id": "human.knowledge_experience",
+      "decision": "CHANGE",
+      "reason": "The deterministic knowledge experience was naturally rebuilt from the changed repository corpus and Current surfaces."
+    },
+    {
+      "item_id": "human.reading",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step11 already added the Operating Method reading route and Step12 does not alter that navigation."
+    },
+    {
+      "item_id": "human.readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The Step10 homepage entry remains accurate; Draft-candidate version details stay in canonical Current and version surfaces."
+    },
+    {
+      "item_id": "human.results",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task148 has no accepted substantive result or correction for the Results Book at this in-progress Draft stage."
+    },
+    {
+      "item_id": "human.summary",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step11 already registered Operating Method in the authority summary; Step12 does not change its navigation role."
+    },
+    {
+      "item_id": "human.usage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step11 already synchronized ordinary-run usage and repository-change escalation instructions."
+    },
+    {
+      "item_id": "machine.llms",
+      "decision": "CHANGE",
+      "reason": "The generated machine Current block now carries Task148 and both method identities without conflation."
+    },
+    {
+      "item_id": "machine.stage_snapshots",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No stage-snapshot request, publication transition or Accepted/Current/Activated state is created."
+    },
+    {
+      "item_id": "method.iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "ITERATION.md remains byte-stable at Current 1.4.0 and continues only as the repository-change sub-protocol."
+    },
+    {
+      "item_id": "method.operating",
+      "decision": "CHANGE",
+      "reason": "OPERATING-METHOD.md now declares IGNITION_OPERATING_METHOD_R1, version 1.0.0 and CURRENT_CANDIDATE_ON_DRAFT."
+    },
+    {
+      "item_id": "method.result_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step11 already synchronized the repository-change result template; version archaeology changes no template semantics."
+    },
+    {
+      "item_id": "method.review_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step11 already synchronized the independent-review template and its REPOSITORY_CHANGE_RUN gate."
+    },
+    {
+      "item_id": "method.task_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step11 already synchronized the task-command eligibility gate; Step12 changes no template semantics."
+    },
+    {
+      "item_id": "release.changelog",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "CHANGELOG records released history; Task148 is unmerged Draft candidate work and must not be presented as released."
+    },
+    {
+      "item_id": "release.state_changelog",
+      "decision": "CHANGE",
+      "reason": "An append-only Task148 in-progress Current-candidate delta records method identity, propagation, map and open-obligation boundaries."
+    },
+    {
+      "item_id": "release.versioning",
+      "decision": "CHANGE",
+      "reason": "Versioning now explicitly assigns independent Operating Method 1.0.0 while preserving Iteration Method current_method 1.4.0."
+    }
+  ],
+  "system_map_decision": {
+    "item_id": "interactive_system_map",
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "IGNITION_OPERATING_METHOD_R1 is intentionally hidden from the visible architecture projection; map version 0.16.0 has no node or edge delta."
+  }
+}

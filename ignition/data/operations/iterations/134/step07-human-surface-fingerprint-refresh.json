@@ -1,0 +1,46 @@
+{
+  "schema_version": "ignition-134-step07-human-surface-fingerprint-refresh-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "07",
+  "status": "PASS",
+  "decision_source": "ignition/data/operations/iterations/134/step06-human-surface-semantic-audit.json",
+  "refreshed_entry_count": 11,
+  "refreshed_machine_ids": [
+    "D127", "D182", "D190", "D260", "T2", "Y1",
+    "NFC-015cfd6ba387c9b1", "NFC-02f68962a6f13abc", "NFC-0331afe8d84f2538",
+    "NFC-14866124cc1a2cae", "NFC-154bdc1ff37c47f6"
+  ],
+  "change_policy": {
+    "source_sha256_refreshed_only_after_semantic_audit": true,
+    "human_prose_rewritten": false,
+    "machine_record_fingerprints_rewritten": false,
+    "claim_ceilings_changed": false,
+    "unreviewed_hash_recomputation": false
+  },
+  "observed_source_revisions": {
+    "AI-HANDOFF.md": "d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a",
+    "ARCHITECTURE.md": "bb1861533f57d8e7dd361446ef242dd6dd98dc9c59d03b183bc5f1686ce0e752",
+    "docs/project-current-state.md": "b8e727cefb42026c834e12de2f495efbd219071b312aff02af04d7d8d9691ad7",
+    "llms.txt": "4b3f95276294ac47c0ef817853c6acf98525368c7780d268909ab2bb35cf8aee",
+    "AI-START-HERE.md": "8ed26bad1f0cf3f3e754685e26c051efaffd7b8fc341ede15837cd81d8f6b017"
+  },
+  "materiality_projection": {
+    "entries": 48,
+    "withdrawn_entries": 4,
+    "nonfunction_machine_records": 16240,
+    "deterministic_check": "PASS"
+  },
+  "current_path_manifest": {
+    "tracked": 2984,
+    "manifest": 2984,
+    "missing": 0,
+    "stale": 0,
+    "unresolved": 0
+  },
+  "validators": {
+    "human_surface_materiality": "HUMAN_SURFACE_MATERIALITY_DETERMINISTIC",
+    "human_surface_contract": "HUMAN_SURFACE_CONTRACT_OK",
+    "source_fingerprint_cross_check": "HUMAN_SOURCE_FINGERPRINTS_OK entries=11"
+  },
+  "claim_ceiling": "Repository-local Human Surface fingerprint refresh after an itemized semantic audit only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

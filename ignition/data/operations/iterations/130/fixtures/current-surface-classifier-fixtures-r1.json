@@ -1,0 +1,43 @@
+{
+  "schema_version": "current-surface-classifier-fixtures-r1",
+  "task_id": "IGNITION-20260821-130",
+  "fixtures": [
+    {
+      "id": "historical-old-map-task",
+      "kind": "positive",
+      "text": "## Historical task record\nTask 128 used map 0.11.0 Historical.",
+      "expected_classification": "HISTORICAL"
+    },
+    {
+      "id": "example-old-map-task",
+      "kind": "positive",
+      "text": "## Example fixture\nTask 128 and map 0.11.0 are only sample values.",
+      "expected_classification": "EXAMPLE"
+    },
+    {
+      "id": "quoted-old-text",
+      "kind": "positive",
+      "text": "> Historical wording: Task 128 used map 0.11.0.",
+      "expected_classification": "QUOTED_OLD_TEXT"
+    },
+    {
+      "id": "generated-current",
+      "kind": "positive",
+      "text": "<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->\n- current_map: 0.12.0 Current\n<!-- CURRENT-SNAPSHOT:END -->",
+      "expected_classification": "GENERATED_CURRENT"
+    },
+    {
+      "id": "unmanaged-current-assertion",
+      "kind": "negative",
+      "text": "当前地图是 0.11.0 Current。",
+      "expected_classification": "CURRENT_ASSERTION"
+    },
+        {
+            "id": "unclassified-volatile",
+            "kind": "negative",
+            "text": "This sentence mentions Task 128 without a lifecycle label.",
+            "expected_classification": "UNCLASSIFIED_VOLATILE"
+        }
+  ],
+  "claim_ceiling": "Fixtures test classification boundaries only; they do not establish task or map truth."
+}

@@ -1,0 +1,280 @@
+{
+  "schema_version": "ignition-148-step01-remote-truth-audit-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "01",
+  "status": "PASS",
+  "audit_mode": "CURRENT_ONLY_NO_SOLUTION_DESIGN",
+  "formal_remote_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "observed_sha": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+    "candidate_base": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+    "remote_ref_verified": true,
+    "clean_isolated_worktree": true,
+    "existing_task148_pull_request_count": 0
+  },
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "refs/heads/relay/current",
+    "observed_sha": "0ff4bf2e3065a05c848a380aad55d0832de3727c",
+    "command_record_commit": "080915807c03135eb396a7a2ee9b4bb0e3be9525"
+  },
+  "current_identity": {
+    "current_formal_task": "IGNITION-20260828-147",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "current_iteration_method": "1.4.0",
+    "current_map": "0.16.0",
+    "current_state": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0,
+    "formal_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS"
+  },
+  "capability_status_census": [
+    {
+      "status": "CURRENT",
+      "capability_family": "AI cold start and Current state recovery",
+      "declared_by": [
+        "ignition/AI-START-HERE.md",
+        "ignition/AI-HANDOFF.md",
+        "ignition/llms.txt",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/operations/current-snapshot-r1.json"
+      ],
+      "observed_boundary": "Restores repository identity, current state, read order, task lineage and claim ceilings; it does not classify a user task into an execution mode or run an input object."
+    },
+    {
+      "status": "CURRENT",
+      "capability_family": "Ignition Iteration Method 1.4.0",
+      "declared_by": [
+        "ignition/ITERATION.md",
+        "ignition/data/architecture/current-system-identity.json"
+      ],
+      "observed_boundary": "Canonical repository operation method for how Ignition changes itself; it does not define how an external user or Agent uses Ignition on an input object."
+    },
+    {
+      "status": "CURRENT",
+      "capability_family": "Foundation identity, claim and evidence governance",
+      "declared_by": [
+        "ignition/FOUNDATION.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/data/foundation/function-assets/closure-summary.json",
+        "ignition/data/foundation/nonfunction-claims/closure-summary.json"
+      ],
+      "observed_boundary": "Provides canonical registries, status and governance checks; registry closure, quarantine and automated validation do not prove truth or external validity."
+    },
+    {
+      "status": "CURRENT",
+      "capability_family": "Zhiyuan Writing Method 0.5.0",
+      "declared_by": [
+        "ignition/docs/publication/zhiyuan-writing-method.md",
+        "ignition/packs/writing/manifest.json"
+      ],
+      "observed_boundary": "Current merged L6 writing and publication capability with source, provenance and claim-ceiling constraints; literary quality cannot upgrade facts, causality or evidence."
+    },
+    {
+      "status": "CURRENT",
+      "capability_family": "Language-Thought Logic Plane",
+      "declared_by": [
+        "ignition/docs/architecture/language-thought-logic-plane.md",
+        "ignition/docs/publication/zhiyuan-writing-method.md"
+      ],
+      "observed_boundary": "Current cross-layer control plane for bounded translation, proposition and target-language work; human language-quality gates remain required and language profiles are not strong determinism claims."
+    },
+    {
+      "status": "CURRENT_BOUNDED",
+      "capability_family": "Kernel, runtime, OS control plane and four Domain Packs",
+      "declared_by": [
+        "ignition/agent_kernel/README.md",
+        "ignition/agent_runtime/README.md",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/packs/research/manifest.json",
+        "ignition/packs/writing/manifest.json",
+        "ignition/packs/maintenance/manifest.json"
+      ],
+      "observed_boundary": "Kernel is CURRENT_BOUNDED_R0. The four manifests declare ten bounded routes and offline/provider-neutral permissions. Manifest presence does not grant generic runtime, truth, Owner, network or remote-Git authority."
+    },
+    {
+      "status": "CURRENT_BOUNDED",
+      "capability_family": "Knowledge navigation, registry reading and declared validation",
+      "declared_by": [
+        "ignition/KNOWLEDGE/README.md",
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/data/governance/knowledge-experience/manifest.json"
+      ],
+      "observed_boundary": "Supports Current navigation, declared reads, claim/evidence validation and result projection. Search, aliases and summaries are discovery aids and cannot replace canonical asset identity or adjudication."
+    },
+    {
+      "status": "CURRENT_BOUNDED",
+      "capability_family": "REOS LIGHT research control",
+      "declared_by": [
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/packs/research/manifest.json"
+      ],
+      "observed_boundary": "Status OWNER_ACCEPTED_WITH_EXPLICIT_RESIDUALS and runtime disposition KEEP_LIGHT_ONLY. It coordinates bounded research obligations and validation; no REOS_FULL runtime exists and REOS does not decide truth."
+    },
+    {
+      "status": "CURRENT_BOUNDED",
+      "capability_family": "Offline repository inspection and checkpoint validation",
+      "declared_by": [
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/agent_runtime/README.md"
+      ],
+      "observed_boundary": "Read-only Git and validator classes are declared. Network and remote Git mutation are prohibited; repository mutation remains governed separately by the Iteration Method and explicit authority."
+    },
+    {
+      "status": "OWNER_DEFERRED",
+      "capability_family": "LIVE_EXTERNAL_INVOCATION",
+      "declared_by": [
+        "ignition/data/operations/open-obligation-registry-r1.json",
+        "ignition/data/architecture/current-facts.json"
+      ],
+      "observed_boundary": "OPEN with zero validated completions. No automatic resume is allowed; the next eligible action requires explicit Owner reopening plus a prepared, installed and attested local environment."
+    },
+    {
+      "status": "REFERENCE_ONLY",
+      "capability_family": "Reference Executor",
+      "declared_by": [
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/agent_runtime/README.md"
+      ],
+      "observed_boundary": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL only; it is not the default production executor and cannot grant execution, truth or Owner authority."
+    },
+    {
+      "status": "HISTORICAL",
+      "capability_family": "Superseded methods, maps, writing versions and legacy identities",
+      "declared_by": [
+        "ignition/ITERATION.md",
+        "ignition/AI-START-HERE.md",
+        "ignition/docs/publication/zhiyuan-writing-method.md",
+        "ignition/docs/foundation/migration.md",
+        "ignition/KNOWLEDGE/EVOLUTION.md"
+      ],
+      "observed_boundary": "Iteration methods before 1.4.0, historical map versions, writing 0.4.0/0.3.0 and legacy labels remain provenance or migration inputs only; they do not override Current identity."
+    }
+  ],
+  "declaration_model": {
+    "machine_current_authorities": [
+      "ignition/data/architecture/current-system-identity.json",
+      "ignition/data/architecture/current-facts.json",
+      "ignition/data/operations/current-snapshot-r1.json",
+      "ignition/data/operations/current-task-lineage-status.json",
+      "ignition/data/operations/formal-task-lifecycle-r1.json",
+      "ignition/data/operations/open-obligation-registry-r1.json",
+      "ignition/data/operations/current-release-lifecycle-r1.json"
+    ],
+    "capability_declarations": [
+      "ignition/packs/knowledge/manifest.json",
+      "ignition/packs/research/manifest.json",
+      "ignition/packs/writing/manifest.json",
+      "ignition/packs/maintenance/manifest.json",
+      "ignition/agent_kernel/README.md",
+      "ignition/agent_runtime/README.md"
+    ],
+    "domain_authorities": [
+      "ignition/FOUNDATION.md",
+      "ignition/KNOWLEDGE/README.md",
+      "ignition/docs/architecture/reos-vnext-light.md",
+      "ignition/docs/publication/zhiyuan-writing-method.md",
+      "ignition/docs/architecture/language-thought-logic-plane.md",
+      "ignition/ITERATION.md"
+    ],
+    "historical_resolution_entrances": [
+      "ignition/docs/foundation/migration.md",
+      "ignition/KNOWLEDGE/EVOLUTION.md",
+      "ignition/data/governance/knowledge-experience/manifest.json"
+    ],
+    "observation": "Capability status is currently distributed across Current projections, manifests and domain authorities. There is no single canonical AI-facing operation registry that binds public operation, inputs, outputs, authority, mode, status, validator and claim ceiling."
+  },
+  "required_questions": {
+    "q1_current_bounded_deferred_reference_historical": "The census above preserves Current, Current-bounded, Owner-deferred, reference-only and historical states without promoting implementation or past tests into public capability.",
+    "q2_where_declared": "Machine Current authorities establish identity and lifecycle; Pack manifests and runtime surfaces declare bounded routes and permissions; domain documents establish operation-specific semantics; migration and evolution surfaces resolve historical provenance.",
+    "q3_existing_ai_cold_start_scope": "The cold start restores what Ignition is, its Current state and boundaries, what to read, and where special authority lives. It does not define the default meaning of a repository URL plus user object, select an execution mode, resolve a public operation or specify a common result contract.",
+    "q4_existing_iteration_scope": "ITERATION.md governs state-changing work on Ignition itself: remote truth, gap and claim ceiling, propagation, synchronization, validation, review, merge and Current receipts. It is not the general protocol for using Ignition on external input.",
+    "q5_missing_link_plus_object_protocol": [
+      "No authoritative default says a repository URL is an operating-method source rather than repository-mutation authorization.",
+      "No authoritative default classifies an attached Markdown, PDF, note, webpage or code artifact as INPUT_OBJECT rather than executable instruction.",
+      "No common mode gate distinguishes read-only use, repository change and externally authorized action before tools are selected.",
+      "No canonical operation registry binds accepted inputs, outputs, Current status, minimal reads, authority, mutation permission, validator and claim ceiling.",
+      "No common lifecycle connects request acceptance, Current freeze, operation resolution, canonical collision or evidence checks, adversarial review and bounded rendering.",
+      "No common output contract separates source content, existing canonical assets, new increment, conflicts, unknowns and candidates."
+    ],
+    "q6_authority_collision_check": {
+      "canonical_operating_method_found": false,
+      "canonical_usage_protocol_found": false,
+      "canonical_task_execution_protocol_found": false,
+      "reviewed_nearby_surfaces": [
+        {
+          "path": "ignition/docs/ai-assistant-usage-reference.md",
+          "classification": "HUMAN_AI_READING_AND_PROMPT_GUIDE",
+          "not_equivalent_reason": "Guides a human to ask an AI to read the repository; it does not govern an Agent run over an arbitrary input object."
+        },
+        {
+          "path": "ignition/docs/USAGE.md",
+          "classification": "HUMAN_REPOSITORY_USAGE_GUIDE",
+          "not_equivalent_reason": "Explains navigation, layers, governance and change propagation; it does not expose a mode classifier, operation registry or common run contract."
+        },
+        {
+          "path": "ignition/SUMMARY.md",
+          "classification": "HUMAN_READING_NAVIGATION",
+          "not_equivalent_reason": "Lists reading entrances and authorities; it is not an execution protocol."
+        },
+        {
+          "path": "ignition/ITERATION.md",
+          "classification": "CANONICAL_REPOSITORY_SELF_CHANGE_METHOD",
+          "not_equivalent_reason": "Its explicit scope is how Ignition changes itself."
+        }
+      ],
+      "conclusion": "No duplicate canonical authority was found. The missing use-layer protocol must remain distinct from the Iteration Method and must reuse, not replace, Current machine and domain authorities."
+    }
+  },
+  "source_fingerprints": [
+    {"path": ".github/README.md", "sha256": "f59b15aea8df7112043285165da198b9dc6d69c3fe2c47a9996e762a719ffba6"},
+    {"path": "ignition/AI-START-HERE.md", "sha256": "c5cc31d4ea93cea28ea4bb5a5a1bcac447ed3fddcccf59463f8ef85286e3d967"},
+    {"path": "ignition/AI-HANDOFF.md", "sha256": "bb2adc62c62aa14721b1f824117e5cd1d3041e1da7c3157db1d3022915a0df3c"},
+    {"path": "ignition/ITERATION.md", "sha256": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca"},
+    {"path": "ignition/llms.txt", "sha256": "f340d04806949a4b169035686fae589b455638bdd8f54e0bbf0ee5d103abb7db"},
+    {"path": "ignition/STATE-CHANGELOG.md", "sha256": "c6732e51b0a884d1ebef7c8b4e25058e205f0b98c3d91fb172625aacebf061ee"},
+    {"path": "ignition/docs/project-current-state.md", "sha256": "e6df0930e57340b1ee4677a483b20ee0cb009b7456d2bc96867375859fac1413"},
+    {"path": "ignition/ARCHITECTURE.md", "sha256": "79ff6b5c55ab48c68937019a41e4a83523c9a1bcbe96811fd48c00d6801edcfb"},
+    {"path": "ignition/FOUNDATION.md", "sha256": "750bac229d67d841eccb1428b238488634613cfa5f4240513db90d59865e6608"},
+    {"path": "ignition/data/architecture/current-system-identity.json", "sha256": "9f63194f99469129ae2af4a3dee138b804150b1a3470eadebe2abbc4baae095c"},
+    {"path": "ignition/data/architecture/current-facts.json", "sha256": "e9a0d5d07ea30397f99139030e99b6ca04c666ef2df779f2117caf9572d3442d"},
+    {"path": "ignition/data/operations/current-snapshot-r1.json", "sha256": "54adb553d0689b0478793c0749dfdf721cd87d193c788ce36d5c5f4369f147f7"},
+    {"path": "ignition/data/operations/current-task-lineage-status.json", "sha256": "58a01efdef5e969fd4be64f75e0cdc05b7d93a086fe512ebfdba1613610f6649"},
+    {"path": "ignition/data/operations/formal-task-lifecycle-r1.json", "sha256": "36368a1427e4254b51222926621594a97565e8a3261bfe9c0e6da8f59669adf9"},
+    {"path": "ignition/data/operations/open-obligation-registry-r1.json", "sha256": "9c89b9aa69bce6d4d20dd8102cd73b4ce11c84cbceb541ac638b02f6e9cad474"},
+    {"path": "ignition/data/operations/current-release-lifecycle-r1.json", "sha256": "4fe60f8806f9ea0b2742dc740423d313b1448bc5dd10956dc5b066a2e6f0c318"},
+    {"path": "ignition/agent_kernel/README.md", "sha256": "ef71dc7693ecd772fd4dd6a2db623ea68a139143cf3c466413c5ab70bdcb14c6"},
+    {"path": "ignition/agent_runtime/README.md", "sha256": "cc9954f200708328e4b75e87adb8d1dc45d29bfc00b58653e808b36ce52dd3ea"},
+    {"path": "ignition/packs/knowledge/manifest.json", "sha256": "6e5a77f25796ce189e73f02026be1b1544f4c3f736b1a67153134c1fa181bff1"},
+    {"path": "ignition/packs/research/manifest.json", "sha256": "73f6f1e8f4c4c552ca88388294b5b5c3a5079403161e2ec848aaa58bac174875"},
+    {"path": "ignition/packs/writing/manifest.json", "sha256": "e4a751104a42b2ee72fdff660b2bf9b84fddd3016dae65e6ea4c49d40ba46d43"},
+    {"path": "ignition/packs/maintenance/manifest.json", "sha256": "a4cc420eb74a773fd0f85e7d8e883b756e1ebdd8f2980a45524832235725e9e7"},
+    {"path": "ignition/KNOWLEDGE/README.md", "sha256": "40c93cd228f2866e77d0f9db45a1ee15bc269f340d7b61a8971e158a87d3ac96"},
+    {"path": "ignition/packs/knowledge/README.md", "sha256": "69d0d1344b90ef5b680aea99ed611e013914029569d18ddde9a6e7d42d753cd8"},
+    {"path": "ignition/packs/research/README.md", "sha256": "9d4f8915b82d92da34ab27e3e4bd188e10fe63cd5bfb17c86fbb240969cd2c7c"},
+    {"path": "ignition/packs/writing/README.md", "sha256": "6c0938a91bb6e04b26010328b3d2bec9bda0eff4498ac5b3c24f513d0dacd3a3"},
+    {"path": "ignition/packs/maintenance/README.md", "sha256": "4264ae118f0d1fbcf7bdf1f6980e548772c1464e3fb2634818c17f0a01a5711a"},
+    {"path": "ignition/docs/architecture/reos-vnext-light.md", "sha256": "679f7836c682da7edd5401721b7bbdb80f2ab59b6cb53671a5c2baa7552b0b1b"},
+    {"path": "ignition/docs/publication/zhiyuan-writing-method.md", "sha256": "615b049dca357f4c00e3baeb38a3edd649a3bfadfa3a292928ab8d9ed8867e4d"},
+    {"path": "ignition/docs/architecture/language-thought-logic-plane.md", "sha256": "db17e0592d2ed1a2300d56c8dfa903b6199de03de73b3a53e9e857e905d86476"},
+    {"path": "ignition/data/foundation/function-assets/closure-summary.json", "sha256": "60dd901ca1c4d0288c7a18726fd00b87271abc78a638ab5efc333e42ccabb2db"},
+    {"path": "ignition/data/foundation/nonfunction-claims/closure-summary.json", "sha256": "06e34e45bece27d34e084058563ca85db72eb146c54dbd43a26458907c70cafe"},
+    {"path": "ignition/docs/foundation/claim-governance-and-function-identity.md", "sha256": "2d1ac70b85fc1f7a401128239160a4102436c739d0231fb5ce0b7d55be1e9a7e"},
+    {"path": "ignition/docs/foundation/future-claim-admission-protocol.md", "sha256": "81fed916f76f6373c5152ad13e2c6090d52a6a91b7721df5e4cde6a3d2a4b3c6"},
+    {"path": "ignition/docs/foundation/migration.md", "sha256": "a7c818bc0ca8a6ffcf0326365a1ca55dfab438adc83873eba1b1afe5ac564c25"},
+    {"path": "ignition/KNOWLEDGE/EVOLUTION.md", "sha256": "ba9debdc4413a5b7e9f460f9f81a8f717e90e5fa6ee90a2cd055c4ba471e4f07"},
+    {"path": "ignition/data/governance/knowledge-experience/manifest.json", "sha256": "b58af495b54805648a459acd8316662fd7bd426f3b7ecf2823ad1a0a8af945fb"},
+    {"path": "ignition/docs/ai-assistant-usage-reference.md", "sha256": "dc84e4f3238f1c38fd6097d4701b8f20f31d8c055c2ad8df90d17c97b4b7055c"},
+    {"path": "ignition/docs/USAGE.md", "sha256": "31b2dc8c281bb390b064dd43616614b5acf8aadda505c55574be88609d4863ec"},
+    {"path": "ignition/SUMMARY.md", "sha256": "e964e16925df7d0c583f462a4ab6536573d1e567badc3116189d6677e1b0dff8"}
+  ],
+  "prohibited_inferences": [
+    "No implementation, historical case, merged file or passing test is promoted to a Current public operation solely by presence.",
+    "No Pack manifest grants generic runtime, network, remote Git, Owner, truth or epistemic authority.",
+    "No live external process is authorized or started by this audit.",
+    "No new architecture component, layer or operating-method design is established by this audit."
+  ],
+  "claim_ceiling": "Repository-local Current recovery and authority-overlap audit at formal main a1a1d102c3cd2fa12fc962b648b0eea62d8097cf only; this audit does not create the operating method, register a new capability, grant mutation or external-action authority, prove external truth, establish production readiness, record Owner acceptance, claim publication acceptance, validate live completion or set epistemic acceptance."
+}

@@ -1,0 +1,20 @@
+{
+  "book_monograph_or_thesis_scale_count": 18,
+  "candidate_count": 10,
+  "eligible_domains": [
+    "cognition_psychology",
+    "computer_science_distributed_protocols",
+    "ecology_complex_systems",
+    "economics_institutions_organization",
+    "engineering_safety_control",
+    "history_social_systems",
+    "mathematics_formal_systems",
+    "natural_sciences_biology_evolution",
+    "philosophy_logic_science"
+  ],
+  "eligible_words": 4474674,
+  "eligible_work_count": 22,
+  "source_split_digest": "275843f2600b91b6295b0c79a3b365a84f5149a89d913e3d1ec70a3c24e1a27a",
+  "status": "EXTERNAL_TRACK_FROZEN",
+  "task_id": "IGNITION-20260907-162"
+}

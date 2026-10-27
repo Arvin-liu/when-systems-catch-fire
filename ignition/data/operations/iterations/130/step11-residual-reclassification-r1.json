@@ -1,0 +1,47 @@
+{
+    "schema_version": "step11-residual-reclassification-r1",
+    "task_id": "IGNITION-20260821-130",
+    "source_task_id": "IGNITION-20260821-129",
+    "source_receipt": "ignition/agent-results/IGNITION-20260821-129-machine-receipt.json",
+    "new_regressions": 0,
+    "residuals": [
+        {
+            "residual_id": "HUMAN_SURFACE_SOURCE_HASH_DRIFT_11",
+            "classification": "PRE_EXISTING_SOURCE_HASH_DRIFT",
+            "count": 11,
+            "entries": ["d127", "d182", "d190", "d260", "t2", "y1", "nfc-015cfd6ba387c9b1", "nfc-02f68962a6f13abc", "nfc-0331afe8d84f2538", "nfc-14866124cc1a2cae", "nfc-154bdc1ff37c47f6"],
+            "evidence": "validate_human_front_door.py and IGNITION-129 result/receipt reproduce the same 11 pre-existing source-hash drifts.",
+            "action": "RETAIN_AND_DO_NOT_REWRITE"
+        },
+        {
+            "residual_id": "TASK127_PROJECTION_MANIFEST_MISSING_96",
+            "classification": "HISTORICAL_PROJECTION_RESIDUAL",
+            "count": 96,
+            "evidence": "IGNITION-129 result records the historical Task 127 projection-hygiene manifest missing=96; the historical manifest was not rewritten.",
+            "action": "RETAIN_HISTORICAL_PROVENANCE"
+        },
+        {
+            "residual_id": "PRODUCTION_EXECUTION_AUTHORITY_SHORT_WINDOW",
+            "classification": "ENVIRONMENTAL_TIMEOUT",
+            "count": 1,
+            "evidence": "IGNITION-129 result records interruption after approximately three minutes while an existing full local-validator subprocess was running; no new Steering assertion failure was observed.",
+            "action": "CLASSIFY_NOT_PASS"
+        },
+        {
+            "residual_id": "KNOWLEDGE_EXPERIENCE_TWO_PASS_SHORT_WINDOW",
+            "classification": "ENVIRONMENTAL_TIMEOUT",
+            "count": 1,
+            "evidence": "IGNITION-129 result records interruption after approximately five minutes during the existing heavy first generator pass; no deterministic PASS is claimed.",
+            "action": "CLASSIFY_NOT_PASS"
+        },
+        {
+            "residual_id": "FULL_DISCOVERY_LONG_RUNNING_BOUNDARY",
+            "classification": "ENVIRONMENTAL_LONG_RUNNING_BASELINE",
+            "count": 1,
+            "evidence": "IGNITION-129 Step 20/21 records existing Foundation and Phase-E long-running discovery boundaries.",
+            "action": "RETAIN_CLASSIFIED_BOUNDARY"
+        }
+    ],
+    "current_130_rule": "These historical/environmental records are not Current Surface semantic failures, are not new regressions, and must not be rewritten to manufacture a green full-regression claim.",
+    "claim_ceiling": "Residual classification is repository-local test and provenance bookkeeping only; it does not establish production readiness, external truth, Owner acceptance or epistemic acceptance."
+}

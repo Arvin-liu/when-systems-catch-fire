@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-priority-policy-r1.schema.json",
+  "title": "OS Steering Priority Policy R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "policy", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.priority-fixtures"},
+    "policy": {"const": "LEXICOGRAPHIC_RULES_R1"},
+    "cases": {"type": "array", "minItems": 3, "items": {"type": "object", "required": ["goal_id", "owner_rank", "commitment_status", "risk_level", "resource_available", "blocked", "permission_eligible", "fairness_age", "deadline_state", "approval_required"], "properties": {"goal_id": {"type": "string"}, "owner_rank": {"type": ["integer", "null"]}, "commitment_status": {"type": "string"}, "risk_level": {"type": "string"}, "resource_available": {"type": "boolean"}, "blocked": {"type": "boolean"}, "permission_eligible": {"type": "boolean"}, "fairness_age": {"type": "integer"}, "deadline_state": {"type": "string"}, "approval_required": {"type": "boolean"}, "dependency_criticality": {"type": "integer"}}}}
+  }
+}
