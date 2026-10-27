@@ -1,0 +1,74 @@
+{
+  "schema_version": "ignition-138-step08-first-codex-dispatch-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "08",
+  "status": "PASS_STARTUP_FAILURE_CLASSIFIED",
+  "dispatch": {
+    "dispatch_id": "dispatch-138-live-01",
+    "attempt_id": "attempt-138-live-01",
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r3",
+    "capability_lease_ref": "lease-ignition-138-live-01-repaired",
+    "capability_lease_digest": "47c20ea0bbf8cc5250bd8d202d7261ee3a2db7bc52b86f82a041f4926941b25b",
+    "timeout_seconds": 300,
+    "retry_policy": "NO_BLIND_RETRY",
+    "budget_authority": "NO_NEW_BILLING_AUTHORITY",
+    "permission_ceiling": ["repo.read"]
+  },
+  "process": {
+    "returncode": 1,
+    "duration_ms": 61.166,
+    "monotonic_elapsed_ms": 61.166,
+    "first_public_event_latency_ms": 57.43,
+    "timed_out": false,
+    "output_truncated": false,
+    "process_group_status": "CONFIRMED_GONE",
+    "process_group_cleaned": true,
+    "stdout_bytes": 0,
+    "stderr_bytes": 521,
+    "stdout_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_digest": "79bf39ba628c787ae5baf83ed84bff92b2a4f36583dd820f3b64c1698e0120f3"
+  },
+  "result": {
+    "parsed": false,
+    "structured_result_present": false,
+    "session_pointer_present": false,
+    "response_digest": null,
+    "classification": "CODEX_RUNTIME_PATH_PRE_INFERENCE_STARTUP_FAILURE"
+  },
+  "workspace": {
+    "before_digest": "40ab9b327e6bf1044e3f57e00aaf483fe6d7f2f77a3bcddc4c414d1825556fba",
+    "after_digest": "40ab9b327e6bf1044e3f57e00aaf483fe6d7f2f77a3bcddc4c414d1825556fba",
+    "unchanged": true,
+    "read_only_guard": true
+  },
+  "runtime_scratch": {
+    "digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "digest_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cleanup_status": "CLEANED",
+    "content_persisted": false,
+    "parent_empty_after_dispatch": true
+  },
+  "causal_probe": {
+    "probe_kind": "PUBLIC_NON_INFERENCE_LOGIN_STATUS_UNDER_IDENTICAL_RUNTIME_ENV",
+    "returncode": 1,
+    "classification": "CODEX_RUNTIME_PATH_PRE_INFERENCE_STARTUP_FAILURE",
+    "public_error": "Error loading configuration: CODEX_HOME points to an attempt scratch child path that does not exist",
+    "model_inference_started": false,
+    "secret_read": false,
+    "config_mutation": false,
+    "billing_mutation": false
+  },
+  "second_attempt_gate": {
+    "process_group_confirmed_gone": true,
+    "no_session_pointer": true,
+    "no_structured_result": true,
+    "no_timeout_or_effect_unknown": true,
+    "workspace_unchanged": true,
+    "external_side_effect_observed": false,
+    "specific_repair": "PRECREATE_DECLARED_RUNTIME_SUBDIRECTORIES_INSIDE_SCRATCH",
+    "gate_status": "ELIGIBLE_ONLY_AFTER_STEP09_REPAIR_AND_TARGETED_REGRESSION"
+  },
+  "real_inference_invocation_count": 1,
+  "claim_ceiling": "One bounded Codex startup failure and its machine-observed known-no-effect pre-inference classification only; no validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

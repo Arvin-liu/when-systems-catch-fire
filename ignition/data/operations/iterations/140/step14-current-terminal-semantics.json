@@ -1,0 +1,35 @@
+{
+  "claim_ceiling": "Task140 repository-local terminal task and open live-obligation transition only; no validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "current_state_ceiling": {
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "historical_lineage_guard": {
+    "task125_file_status": "HISTORICAL_UNEXECUTED",
+    "task125_requirement_lineage_status": "REBASED_INTO_127"
+  },
+  "identity": {
+    "current_formal_task": "IGNITION-20260826-140",
+    "current_formal_task_ordinal": 140,
+    "latest_architecture_changing_task": "IGNITION-20260826-140"
+  },
+  "live_obligation_transition": {
+    "live_obligation_state": "OPEN",
+    "next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "observation_incomplete_count": 2,
+    "reason_source": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
+    "task_terminalization": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "unreconciled_count": 0,
+    "validated_completion_count": 0
+  },
+  "projection_digest": "b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3",
+  "schema_version": "ignition-140-step14-current-terminal-semantics-r1",
+  "status": "PASS",
+  "task_id": "IGNITION-20260826-140",
+  "task_terminal": {
+    "content_phase": "RELEASE_READY",
+    "current_task_terminal": true,
+    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "terminal": true
+  }
+}

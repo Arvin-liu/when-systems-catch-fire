@@ -1,0 +1,18 @@
+{
+  "clean_clone": {
+    "clean_before_run": true,
+    "clone_head": "76e44213904928f9f0be8ba131b86529e44e7682",
+    "clone_source": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+    "post_run_status": "",
+    "run1_run2_byte_identical": true,
+    "run1_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+    "run2_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb"
+  },
+  "historical_positive_consistency": true,
+  "n02_n03_preserved_non_leap": true,
+  "source_head": "76e44213904928f9f0be8ba131b86529e44e7682",
+  "status": "V2_REPLAY_STABLE",
+  "task159_local_run1_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+  "task159_local_run2_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+  "task_id": "IGNITION-20260907-160"
+}

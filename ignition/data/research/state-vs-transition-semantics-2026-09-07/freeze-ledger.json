@@ -1,0 +1,31 @@
+{
+  "answer_key_digest": "172b335d0d57fb85185ad12f11e85a0a7ba04a77fe835388f6a87ce5740e0f0e",
+  "blind_packet_digest": "5357bae67ea065cfd82e8017b35b6e092a19e646d5814e7a12d3b85d74fb4005",
+  "command_source": {
+    "blob": "610febea27a1e4cb62d9c32da4b19a9113a243ec",
+    "commit": "59003ae23c56a2f0c4ac6389d5235c938cd5f5fd",
+    "content_sha256": "9f1df434d39aa379fac5eb2254b250530720e994176526da3c971ee0e84d06de",
+    "path": "agent-commands/IGNITION-20260907-161.md",
+    "repository": "Arvin-liu/1111"
+  },
+  "corpus_digest": "aa0f37147326b738de47a8576072e9f306c875a706761f4b1bd96f1fbb52da57",
+  "fixture_manifest_digest": "9a0887f3fea0d2f71de01bb10990f3315ebb2e257051513c4cbda29a93ed4c87",
+  "formal_base": {
+    "ref": "work/IGNITION-20260907-160",
+    "sha": "9ceb4c4eb84203bee2b62dcdbe0d5c1c09707438"
+  },
+  "freeze_order": [
+    "hypotheses",
+    "corpus universe",
+    "fixture generator",
+    "model definitions",
+    "split",
+    "blind packets",
+    "answer key sealed separately"
+  ],
+  "immutable_after_freeze": true,
+  "model_digest": "ea12f8da31d343ef3bfc4d3da88542fcab55de46ecfbb452672d923ceb519999",
+  "preflight_digest": "9bae1a5457665d8b9d4828634bb941af14e2ab1a7ef5b65535d2776fbb6e4545",
+  "split_digest": "31784a8ac333c38138091755cd31990dda0695a50438c91167ede51806bf6938",
+  "status": "FROZEN"
+}

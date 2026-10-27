@@ -1,0 +1,104 @@
+{
+  "schema_version": "ignition-144-step16-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "16",
+  "status": "PASS",
+  "candidate_head_sha": "0b65a7e7e5a53580178c9b260733b788b7ad9579",
+  "projection_preflight": {
+    "command": "PYTHONPATH=ignition python3 ignition/tools/run_projection_preflight.py --check --require-clean",
+    "status": "PASS",
+    "check_count": 25,
+    "failed_checks": [],
+    "clean_before": true,
+    "clean_after": true,
+    "side_effect_detected": false,
+    "stdout_stderr_sha256": "7287dea283d9236331273235142f06904426f27ddd9b492327f77be6586b6ed0"
+  },
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "natural_window": {
+    "minimum_supported_seconds": 14400,
+    "watchdog_used": false,
+    "arbitrary_timeout_used": false,
+    "process_killed": false,
+    "completed_naturally": true
+  },
+  "environment": {
+    "isolated": true,
+    "python_version": "3.14.6",
+    "dependency_preflight": "PASS",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "execution_python": "temporary isolated foundation venv outside repository"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate_head_sha": "39746bbe3f72e23c933f6dbf76f2231fd9b96433",
+      "capture": "/private/tmp/ignition-144-step16-candidate-regression.ycvS7p",
+      "runtime_seconds": 3041.737,
+      "exit_code": 1,
+      "tests_run": 1278,
+      "failures": 2,
+      "errors": 0,
+      "skips": 0,
+      "status": "FAIL_TASK144_CONTRACT_BINDING_REPAIR_REQUIRED",
+      "failure": "Natural full discovery completed with two deterministic failures: the execution-contract validator did not recognize the Task144 baseline receipt field, and the full-regression runner contract document retained the superseded Task143 identity.",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "watchdog_used": false,
+      "stdout_sha256": "247a2a569b36906598218527311a6a51ca17ee490c8d41a920fdf358a9b8416d",
+      "stderr_sha256": "7c343edb87e032e628ae6407d84a37d23f5b8e1ff48fa463df09c17f4c3e800c",
+      "preserved_by": "ignition/data/operations/iterations/144/step16-repair-cycle-c.json"
+    },
+    {
+      "attempt": 2,
+      "candidate_head_sha": "0b65a7e7e5a53580178c9b260733b788b7ad9579",
+      "capture": "/private/tmp/ignition-144-step16-candidate2-regression.thtIRb",
+      "runtime_seconds": 3039.523,
+      "elapsed_seconds": 3040.553,
+      "exit_code": 0,
+      "tests_run": 1278,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "watchdog_used": false,
+      "stdout_bytes": 5893,
+      "stderr_bytes": 1726,
+      "stdout_sha256": "6ffcbc9c54ec25e5e2e90c1953cd09cf9d7aac1fff13ea9917e9389d99efbd11",
+      "stderr_sha256": "04159c9df1ca9103cc1fa77b2d575b5165ab1455eb867a5e1dbe7eb75d4f87fd"
+    }
+  ],
+  "repair_cycles": {
+    "A": "USED",
+    "B": "USED",
+    "C": "USED",
+    "used": 3,
+    "remaining": 0,
+    "scope": "Three bounded deterministic repository-local repairs only; no capability or governance expansion."
+  },
+  "safety": {
+    "new_live_invocations": 0,
+    "new_external_inference": 0,
+    "new_executor_qualification": 0,
+    "new_article_or_book_body": false,
+    "historical_failure_preserved": true,
+    "green_laundering": {
+      "skip_added": false,
+      "xfail_added": false,
+      "ignore_added": false,
+      "expected_failure_added": false,
+      "residual_expanded": false
+    }
+  },
+  "next_step": "17",
+  "claim_ceiling": "Exact repository-local candidate natural offline full-suite evidence for tested head 0b65a7e7e5a53580178c9b260733b788b7ad9579, including the preserved 1278/2/0/0 failed attempt and bounded repairs; no fresh-clone, formal-main publication, validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

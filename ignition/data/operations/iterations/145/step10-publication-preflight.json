@@ -1,0 +1,57 @@
+{
+  "schema_version": "ignition-145-step10-publication-preflight-r1",
+  "task_id": "IGNITION-20260828-145",
+  "step": "10",
+  "status": "PASS",
+  "formal_main_before_publication": {
+    "ref": "refs/heads/main",
+    "tracking_sha": "74cc83b26e5903c074c2b213c3f46afac1104856",
+    "remote_sha": "74cc83b26e5903c074c2b213c3f46afac1104856",
+    "matches_execution_contract_baseline": true
+  },
+  "task_branch_preflight": {
+    "branch": "codex/ignition-145-readme-human-front-door-cleanup-r1-20260828",
+    "preflight_head_sha": "a74dc13d9ec330f50cc16900ba1d70930887f9f7",
+    "task_branch_remote_sha_before_step10_commit": "a74dc13d9ec330f50cc16900ba1d70930887f9f7",
+    "candidate_descends_from_formal_main": true,
+    "ordinary_fast_forward_only": true,
+    "force_push": false
+  },
+  "prepublication_gates": {
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_surface_compiler_all_surfaces": "PASS",
+    "current_state_sync": "PASS",
+    "current_task_lineage": "PASS",
+    "formal_task_lifecycle": "PASS terminal=true",
+    "current_release_lifecycle": "PASS content_phase=RELEASE_READY",
+    "release_candidate_task_identity": "PASS",
+    "human_front_door": "PASS",
+    "human_visibility": "PASS",
+    "human_surface_contract": "PASS",
+    "current_projection_determinism": "PASS passes=2 outputs=10",
+    "current_surface_determinism": "PASS passes=2",
+    "current_surface_semantics": "PASS",
+    "open_obligation_registry": "PASS open=1",
+    "system_map_source_spec_svg": "PASS nodes=87 edges=92",
+    "related_unit_tests": "PASS 34 tests, 0 failures, 0 errors, 0 skips",
+    "generated_output_drift": []
+  },
+  "publication_transaction": {
+    "required_ref": "refs/heads/main",
+    "method": "ORDINARY_FAST_FORWARD_ONLY",
+    "final_candidate_sha": "RECORDED_BY_POST_PUSH_OBSERVATION",
+    "remote_main_sha": "PENDING_SEPARATE_OBSERVATION",
+    "fresh_remote_main_clone": "PENDING_SEPARATE_OBSERVATION",
+    "independent_1111_witness": "PENDING_SEPARATE_OBSERVATION",
+    "formal_repository_self_sha": false
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "task143_article_or_book_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task146_created_or_started": false
+  },
+  "claim_ceiling": "Repository-local ordinary-fast-forward preflight and observation-boundary evidence only; exact final remote SHA, fresh-clone equality, external truth, production readiness, Owner acceptance, publication acceptance, validated live completion and epistemic acceptance remain separate or unclaimed."
+}

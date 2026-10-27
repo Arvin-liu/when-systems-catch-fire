@@ -1,8 +1,0 @@
-{
-  "_record": "claim-evidence-record",
-  "_expect": "claim_ceiling must be a valid Research OS ceiling enum",
-  "claim_id": "claim-X",
-  "claim_text": "c",
-  "claim_ceiling": "SUPER_SURE",
-  "source_relations": []
-}

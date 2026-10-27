@@ -1,0 +1,41 @@
+{
+  "schema_version": "executor-conformance-matrix-r1",
+  "contract_id": "OFFLINE_EXECUTOR_CONFORMANCE_MATRIX",
+  "case_order": [
+    "exact_valid",
+    "malformed_json",
+    "extra_field",
+    "wrong_result",
+    "nonzero_exit",
+    "timeout",
+    "child_cleanup_failure",
+    "workspace_mutation",
+    "runtime_scratch_leak",
+    "capture_incomplete",
+    "redaction_failure"
+  ],
+  "cases": [
+    {"case_id": "exact_valid", "decision": "CONFORMANCE_PASS", "validated_completion": true, "reasons": [], "structured_result_digest": "80e258a3c5ae33568b203fa36053770c8ebe40c077646bd29ebda7aae88176b4", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "malformed_json", "decision": "REJECTED", "validated_completion": false, "reasons": ["JSON_NOT_EXACT"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "extra_field", "decision": "REJECTED", "validated_completion": false, "reasons": ["EXTRA_FIELDS"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "wrong_result", "decision": "REJECTED", "validated_completion": false, "reasons": ["STRUCTURED_RESULT_SEMANTIC_MISMATCH"], "structured_result_digest": "6a951c87f1a256707ec57dcfc4d1a310cd6af1955b106faf3a09aaa6abd5d8f8", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "nonzero_exit", "decision": "REJECTED", "validated_completion": false, "reasons": ["PROCESS_EXIT_NONZERO"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "timeout", "decision": "REJECTED", "validated_completion": false, "reasons": ["TIMEOUT_EFFECT_UNKNOWN"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "child_cleanup_failure", "decision": "REJECTED", "validated_completion": false, "reasons": ["CHILD_CLEANUP_FAILED"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "workspace_mutation", "decision": "REJECTED", "validated_completion": false, "reasons": ["WORKSPACE_MUTATED"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "runtime_scratch_leak", "decision": "REJECTED", "validated_completion": false, "reasons": ["RUNTIME_SCRATCH_LEAK"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "capture_incomplete", "decision": "REJECTED", "validated_completion": false, "reasons": ["CAPTURE_INCOMPLETE"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."},
+    {"case_id": "redaction_failure", "decision": "REJECTED", "validated_completion": false, "reasons": ["REDACTION_GATE_FAILED"], "structured_result_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a", "claim_ceiling": "Offline synthetic conformance behavior only; no external process, executor capability or live completion is claimed."}
+  ],
+  "summary": {
+    "case_count": 11,
+    "accepted_count": 1,
+    "rejected_count": 10,
+    "expected_rejection_count": 10,
+    "live_process_started": false,
+    "child_processes_left": 0,
+    "formal_workspace_mutated": false,
+    "runtime_scratch_leaked": false
+  },
+  "claim_ceiling": "Offline synthetic conformance behavior only; all rejected cases remain rejected and no result is promoted to live completion."
+}

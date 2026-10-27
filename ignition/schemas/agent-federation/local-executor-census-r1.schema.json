@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/agent-federation/local-executor-census-r1.schema.json",
+  "title": "Ignition Local Executor Census R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "census_id",
+    "task_id",
+    "step",
+    "observed_at",
+    "control",
+    "formal_candidate",
+    "scope",
+    "candidates",
+    "selection",
+    "safety",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": { "const": "local-executor-census-r1" },
+    "census_id": { "type": "string", "minLength": 1 },
+    "task_id": { "const": "IGNITION-20260824-138" },
+    "step": { "const": "00" },
+    "observed_at": { "type": "string", "format": "date-time" },
+    "control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "ref", "tip"],
+      "properties": {
+        "repository": { "const": "Arvin-liu/1111" },
+        "ref": { "const": "origin/relay/current" },
+        "tip": { "type": "string", "pattern": "^[0-9a-f]{40}$" }
+      }
+    },
+    "formal_candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "sha", "branch"],
+      "properties": {
+        "repository": { "const": "Arvin-liu/when-systems-catch-fire" },
+        "sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "branch": { "type": "string", "minLength": 1 }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["search_domains", "explicit_names", "install_sources", "observation_policy"],
+      "properties": {
+        "search_domains": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+        "explicit_names": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+        "install_sources": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+        "observation_policy": { "const": "PATH_VERSION_HELP_PUBLIC_AUTH_PRESENCE_ONLY_NO_SECRET_NO_INFERENCE" }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "executor_id", "family", "installed", "kind", "path_ref", "version",
+          "public_interface", "binary_sha256", "help_sha256", "install_sources",
+          "auth", "admission_checks", "admission_status", "blockers", "live"
+        ],
+        "properties": {
+          "executor_id": { "type": "string", "minLength": 1 },
+          "family": { "type": "string", "minLength": 1 },
+          "installed": { "type": "boolean" },
+          "kind": { "enum": ["AGENTIC_EXECUTOR", "REASONER_RUNTIME", "TOOL_ONLY", "UI_OR_NONAUTOMATABLE"] },
+          "path_ref": { "type": ["string", "null"] },
+          "version": { "type": ["string", "null"] },
+          "public_interface": { "type": "object" },
+          "binary_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+          "help_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+          "install_sources": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "auth": { "type": "object" },
+          "admission_checks": { "type": "object" },
+          "admission_status": { "enum": ["ADMITTED", "BLOCKED", "NOT_APPLICABLE"] },
+          "blockers": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "live": { "type": "object" }
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "selected_executor_id", "selected_family", "ranking", "why_executor", "excluded"],
+      "properties": {
+        "status": { "enum": ["SELECTED", "NO_SAFE_CANDIDATE"] },
+        "selected_executor_id": { "type": ["string", "null"] },
+        "selected_family": { "type": ["string", "null"] },
+        "ranking": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "why_executor": { "type": "string", "minLength": 1 },
+        "excluded": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["secret_content_read", "auth_content_copied", "configuration_changed", "billing_changed", "install_or_upgrade_performed", "live_inference_started", "workspace_modified"],
+      "properties": {
+        "secret_content_read": { "const": false },
+        "auth_content_copied": { "const": false },
+        "configuration_changed": { "const": false },
+        "billing_changed": { "const": false },
+        "install_or_upgrade_performed": { "const": false },
+        "live_inference_started": { "const": false },
+        "workspace_modified": { "const": false }
+      }
+    },
+    "claim_ceiling": { "type": "string", "minLength": 1 }
+  }
+}

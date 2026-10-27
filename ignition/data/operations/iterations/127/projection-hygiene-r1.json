@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-durability-projection-hygiene-r1",
+  "task_id": "IGNITION-20260820-127",
+  "step": "17",
+  "required_checks": [
+    "current_facts_generation_order",
+    "foundation_runtime_exclusion",
+    "knowledge_experience_no_backflow",
+    "human_surface_no_machine_dump",
+    "fire_seeds_no_artifact_discovery",
+    "propagation_104_106_historical_residual",
+    "sympy_environmental_residual",
+    "function_nonfunction_derived_drift",
+    "generated_feedback_loop",
+    "current_state_sync_baseline"
+  ],
+  "expected": {
+    "new_path_count": 5,
+    "knowledge_backflow_count": 0,
+    "human_machine_dump_count": 0,
+    "fire_seed_backflow_count": 0,
+    "historical_tasks": [104, 105, 106],
+    "historical_mismatch_dimensions": ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"],
+    "sympy_residual_count": 1,
+    "function_nonfunction_drift_classification": "DERIVED_RECOMPUTED_FROM_CANONICAL_CLOSURES_NOT_TRUTH_SOURCE"
+  },
+  "claim_ceiling": "PROJECTION_HYGIENE_AND_HISTORICAL_RESIDUAL_CLASSIFICATION_ONLY"
+}

@@ -1,0 +1,142 @@
+{
+  "schema_version": "ignition-139-step13-targeted-regression-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "13",
+  "status": "PASS",
+  "candidate_head_before_step13_commit": "80556d968ce6b53054c778a02fd74166dd9ab805",
+  "first_candidate_natural_full_regression": {
+    "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "watchdog_used": false,
+    "arbitrary_timeout_used": false,
+    "minimum_window_seconds": 14400,
+    "runtime_seconds": 3033.542,
+    "exit_code": 1,
+    "tests_run": 1202,
+    "failures": 31,
+    "errors": 0,
+    "skipped": 0,
+    "status": "FAIL_GENERATED_PROJECTION_REPAIR_REQUIRED",
+    "clean_before": true,
+    "clean_after": false,
+    "post_run_residual": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl.lock",
+    "stdout_sha256": "a94d4eceeda9c23aee18d234e443d90d2efe1b85b972036aa625700fff760f79",
+    "stderr_sha256": "3df863058f92a3bcba8f7b975fc6845e6bd7bf711f0098919f03a8b7f551fa1e",
+    "failure_clusters": [
+      "function census, deep adjudication and nonfunction projections stale after Task139 files",
+      "repository path classification manifest missing Task139 paths",
+      "Current Facts, Current Snapshot, compiler-owned Current blocks and live projection expectations stale",
+      "State Changelog profile sealed the pre-139 entry count and ordinal set",
+      "Task139 execution-contract baseline selector did not recognize formal_origin_main_expected",
+      "Task identity and full-regression runner contract still referenced Task138",
+      "Human Surface and Knowledge Experience source hashes stale after the Task139 surfaces",
+      "direct Current projection determinism test exposed an import-path boundary",
+      "canonical ledger test lock was not isolated from the repository"
+    ]
+  },
+  "deterministic_repairs": [
+    {
+      "observation": "Task139 outputs changed the source set and generated projections",
+      "repair": "Rebuilt Function Census, Function Adjudication, Nonfunction Claims, Human Surface, Knowledge Experience, repository path classification, Current Facts, Current Snapshot and all seven Current Snapshot compiler blocks"
+    },
+    {
+      "observation": "Generated Current Snapshot blocks re-entered nonfunction claim discovery",
+      "repair": "Added an explicit compiler-owned Current Snapshot exclusion boundary that preserves source line positions without treating generated Current text as canonical claims"
+    },
+    {
+      "observation": "Task139 identity and lifecycle validators retained Task138 bindings",
+      "repair": "Updated the baseline selector, state-changelog profile, task identity model, full-regression runner contract and Task139 progress ledger"
+    },
+    {
+      "observation": "Direct execution of Current projection determinism failed without inherited PYTHONPATH",
+      "repair": "Made check_current_projection_determinism.py insert its resolved ignition root before importing tools and agent_federation"
+    },
+    {
+      "observation": "Live projection tests left the canonical ledger lock behind",
+      "repair": "Copied the ledger to a temporary test directory and bound the test projection to that copy; the canonical append-only ledger remains unchanged"
+    }
+  ],
+  "targeted_regression": {
+    "natural_completion": true,
+    "suites": [
+      {
+        "name": "Task139 live/current/identity/surface/privacy/execution targeted modules",
+        "tests": 51,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0,
+        "duration_seconds": 182.902,
+        "status": "PASS"
+      },
+      {
+        "name": "Foundation claim, closure, reconciliation and path-classification modules",
+        "tests": 32,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0,
+        "duration_seconds": 1513.465,
+        "status": "PASS",
+        "execution_environment": "temporary isolated venv with requirements-foundation.txt exact versions"
+      }
+    ],
+    "total_tests": 83,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "environment_contrast": {
+    "default_interpreter_foundation_run": {
+      "tests": 32,
+      "failures": 1,
+      "errors": 0,
+      "skips": 0,
+      "status": "ENVIRONMENT_BLOCKED",
+      "failure": "T16_SYMPY_COUNTEREXAMPLE SYMPY_UNAVAILABLE:ModuleNotFoundError",
+      "not_counted_as_repository_pass": true
+    },
+    "formal_dependency_contract": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    }
+  },
+  "preflight": {
+    "ledger": "PASS records=5 dispatches=5 attempts=5 head=8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+    "live_current_projection": "PASS attempts=5 unreconciled=3 incomplete=2 digest=2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73",
+    "exact_binding": "PASS task=IGNITION-20260825-139 dispatch=dispatch-139-live-02 attempt=attempt-139-live-02 executor=external.codex lease=289b13ca527feb3f8ef88a1614e43b21885e979ad9c6f8210517c99b642c317b",
+    "independent_executor_result_validator": "NOT_RUN_NO_EXACT_PUBLIC_RESULT",
+    "obligation": "OPEN",
+    "retry": "NOT_AUTHORIZED",
+    "observation_semantic_gate": "PASS cases=12",
+    "current_state_sync": "PASS identity_epoch=os-control-plane-r5-live-executor-federation-r2 metrics=16 impact=PRESENTATION_ONLY",
+    "current_facts": "PASS deterministic",
+    "current_snapshot": "PASS deterministic",
+    "current_projection_determinism": "PASS passes=2 outputs=10",
+    "human_assets": "PASS function_machine=5911 function_human=24 nonfunction_machine=17023 nonfunction_human=24",
+    "knowledge_experience": "PASS cards=414 changes=315 layered=332 search=23266",
+    "repository_path_classification": "PASS tracked=3295 manifest=3295 checks=10/10",
+    "execution_contract": "PASS task_id=IGNITION-20260825-139",
+    "release_candidate_task_identity": "PASS task_id=IGNITION-20260825-139",
+    "git_diff_check": "PASS",
+    "canonical_ledger_lock": "ABSENT"
+  },
+  "live_boundary": {
+    "new_live_invocations_in_step13": 0,
+    "total_task139_live_dispatch_calls": 0,
+    "validated_completion_count": 0,
+    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION",
+    "next_action": "RECONCILE_UNRECOVERED_ATTEMPTS"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false,
+    "historical_ledger_rewritten": false
+  },
+  "next_step": "14",
+  "claim_ceiling": "Targeted repository-local regression and deterministic projection/preflight evidence only; the first natural candidate full run remains an explicit 1202-test failure until the post-commit candidate run proves otherwise. No validated live completion, external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred."
+}

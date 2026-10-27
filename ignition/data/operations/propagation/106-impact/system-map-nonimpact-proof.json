@@ -1,0 +1,18 @@
+{
+  "changed_sources": [],
+  "current_hashes": {
+    "data/architecture/interactive-system-map-layout.json": "de90effb976558e9eb185fda17b7f2e354a428df17f678d95f087a804efa846c",
+    "data/operations/change-propagation-topology.json": "909bca99eeca3d1cb52437135bc45df989180337c892be5888b45b3cf16fd683",
+    "data/operations/project-components.json": "25298001041235dd9e32cdb5bab411058b846a2399ca9f5146578f4b755fb5c8",
+    "tools/generate_interactive_system_map.py": "f52c31a9f2fa1e68b4e96a15fd4fa8ba53395a3fe47d26121e4f087d2e40fa06"
+  },
+  "decision": "NO_IMPACT_JUSTIFIED",
+  "explanation": "Function OS v0.2 benchmark/evidence is not represented in mapped node metadata; the three governed map sources and generator are byte-identical to the merge baseline, so the homepage system map is unaffected.",
+  "governed_sources": [
+    "data/operations/project-components.json",
+    "data/operations/change-propagation-topology.json",
+    "data/architecture/interactive-system-map-layout.json",
+    "tools/generate_interactive_system_map.py"
+  ],
+  "map_includes_function_os_evidence": true
+}

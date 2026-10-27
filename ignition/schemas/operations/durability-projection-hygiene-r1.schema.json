@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-projection-hygiene-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "task_id", "step", "required_checks", "expected", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-projection-hygiene-r1"},
+    "task_id": {"const": "IGNITION-20260820-127"},
+    "step": {"const": "17"},
+    "required_checks": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"type": "string"}},
+    "expected": {
+      "type": "object",
+      "required": ["new_path_count", "knowledge_backflow_count", "human_machine_dump_count", "fire_seed_backflow_count", "historical_tasks", "historical_mismatch_dimensions", "sympy_residual_count", "function_nonfunction_drift_classification"],
+      "properties": {
+        "new_path_count": {"const": 5},
+        "knowledge_backflow_count": {"const": 0},
+        "human_machine_dump_count": {"const": 0},
+        "fire_seed_backflow_count": {"const": 0},
+        "historical_tasks": {"const": [104, 105, 106]},
+        "historical_mismatch_dimensions": {"const": ["MACHINE_RECORD_IMPACT", "PROJECT_STATE_IMPACT", "SYSTEM_MAP_IMPACT"]},
+        "sympy_residual_count": {"const": 1},
+        "function_nonfunction_drift_classification": {"const": "DERIVED_RECOMPUTED_FROM_CANONICAL_CLOSURES_NOT_TRUTH_SOURCE"}
+      },
+      "additionalProperties": false
+    },
+    "claim_ceiling": {"const": "PROJECTION_HYGIENE_AND_HISTORICAL_RESIDUAL_CLASSIFICATION_ONLY"}
+  },
+  "additionalProperties": false
+}

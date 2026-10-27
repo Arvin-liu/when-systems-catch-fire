@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260822-135",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "43459ecaf9952163d4638c0bf9c76da99ff73b13",
+    "command_path": "agent-commands/IGNITION-20260822-135-full-regression-closure-test-environment-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "421a41462e26f8323c7b811e61d47f26232d61b5"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-135-full-regression-closure-test-environment-r1-20260822",
+  "expected_receipt_branch": "relay/receipts/ignition-135-full-regression-closure-test-environment-r1-20260822",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260822-135",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "previous_canonical_current_task": "IGNITION-20260822-134",
+    "previous_formal_task": "IGNITION-20260822-134",
+    "release_candidate_task": "IGNITION-20260822-135",
+    "publication_witness_task": "IGNITION-20260822-135"
+  },
+  "claim_ceiling": "Execution and release identity for repository-local Task135 only; it grants no Owner authority, truth authority, production readiness or epistemic acceptance."
+}

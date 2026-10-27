@@ -1,0 +1,93 @@
+{
+  "schema_version": "ignition-138-step02-filesystem-reproduction-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "02",
+  "status": "PASS",
+  "harness": "ignition/agent_federation/live_filesystem_harness.py",
+  "model_invocation_started": false,
+  "matrix": [
+    {
+      "case_id": "readonly_home_and_tmpdir",
+      "expected": "FAIL_PRE_INFERENCE_PERMISSION_DENIED",
+      "returncode": 1,
+      "structured_result": false,
+      "helper_write_succeeded": false,
+      "workspace_unchanged": true,
+      "scratch_changed": false,
+      "scratch_cleanup": true,
+      "failure_stage": "PRE_INFERENCE_STARTUP"
+    },
+    {
+      "case_id": "isolated_writable_runtime_scratch",
+      "expected": "PASS_WORKSPACE_READONLY_SCRATCH_WRITABLE",
+      "returncode": 0,
+      "structured_result": true,
+      "helper_write_succeeded": true,
+      "workspace_unchanged": true,
+      "scratch_changed": true,
+      "scratch_cleanup": true,
+      "failure_stage": "NONE"
+    },
+    {
+      "case_id": "codex_home_workspace_collision",
+      "expected": "FAIL_PRE_INFERENCE_CODEX_HOME_COLLISION",
+      "returncode": 1,
+      "structured_result": false,
+      "helper_write_succeeded": false,
+      "workspace_unchanged": true,
+      "scratch_changed": false,
+      "scratch_cleanup": true,
+      "failure_stage": "PRE_INFERENCE_STARTUP"
+    },
+    {
+      "case_id": "tmpdir_workspace_collision",
+      "expected": "FAIL_PRE_INFERENCE_TMPDIR_COLLISION",
+      "returncode": 1,
+      "structured_result": false,
+      "helper_write_succeeded": true,
+      "workspace_unchanged": true,
+      "scratch_changed": true,
+      "scratch_cleanup": true,
+      "failure_stage": "PRE_INFERENCE_STARTUP"
+    },
+    {
+      "case_id": "runtime_scratch_permission_mismatch",
+      "expected": "FAIL_PRE_INFERENCE_SCRATCH_NOT_WRITABLE",
+      "returncode": 1,
+      "structured_result": false,
+      "helper_write_succeeded": false,
+      "workspace_unchanged": true,
+      "scratch_changed": false,
+      "scratch_cleanup": true,
+      "failure_stage": "PRE_INFERENCE_STARTUP"
+    },
+    {
+      "case_id": "isolated_runtime_after_permission_repair",
+      "expected": "PASS_WORKSPACE_READONLY_SCRATCH_WRITABLE",
+      "returncode": 0,
+      "structured_result": true,
+      "helper_write_succeeded": true,
+      "workspace_unchanged": true,
+      "scratch_changed": true,
+      "scratch_cleanup": true,
+      "failure_stage": "NONE"
+    }
+  ],
+  "parent_environment_allowlist": {
+    "probe_completed": true,
+    "parent_marker_present": false
+  },
+  "validator_negative_matrix": [
+    "workspace_accidentally_writable",
+    "scratch_inside_workspace",
+    "scratch_inside_formal_repo",
+    "scratch_inside_1111",
+    "scratch_inside_persistent_user_document_tree",
+    "scratch_symlink_escape",
+    "auth_source_writable",
+    "secret_like_environment_name",
+    "undeclared_scratch_persistence",
+    "unknown_filesystem_domain"
+  ],
+  "claim_ceiling": "Deterministic subprocess filesystem-startup reproduction and domain-validator evidence only; no model inference, validated live completion, external truth, production readiness, Owner acceptance, or epistemic acceptance is inferred."
+}
