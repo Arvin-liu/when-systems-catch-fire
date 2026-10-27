@@ -704,6 +704,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         )
         specialized_tool_ids = {
             "collaboration.build_portable_research_episode",
+            "maintenance.compare_source_section_bytes",
             editorial["tool_id"],
             "research.pair_noaa_co2_ch4_growth_by_year",
             "maintenance.summarize_actions_step_timeline",

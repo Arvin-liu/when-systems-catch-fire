@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "toolbox-source-section-parity-input-r0.schema.json",
+  "title": "Source Section Byte Parity Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "source_ref",
+    "source_document_text",
+    "source_document_sha256",
+    "candidate_path",
+    "start_marker",
+    "end_marker"
+  ],
+  "properties": {
+    "schema_version": {"const": "toolbox-source-section-parity-input-r0"},
+    "task_id": {"type": "string", "minLength": 1, "maxLength": 256},
+    "source_ref": {"type": "string", "minLength": 1, "maxLength": 4096},
+    "source_document_text": {"type": "string", "maxLength": 384000},
+    "source_document_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "candidate_path": {"type": "string", "minLength": 1, "maxLength": 4096},
+    "start_marker": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "end_marker": {"type": "string", "minLength": 1, "maxLength": 1024}
+  }
+}

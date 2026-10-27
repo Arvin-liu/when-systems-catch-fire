@@ -1,0 +1,39 @@
+{
+  "byte_identical": true,
+  "candidate_file": {
+    "byte_count": 10168,
+    "relative_path": ".github/README.md",
+    "sha256": "27c8cfac9390a071c8dd51d0584729ccd0ab4f86aaaa12eec7c3ccee84248886"
+  },
+  "candidate_section": {
+    "byte_count": 2403,
+    "end_offset_bytes": 2462,
+    "sha256": "b5661299531477f7442d25467c0a6f6407b077c2afbf62655435ebc896312d9b",
+    "start_offset_bytes": 59
+  },
+  "claim_ceiling": "Compares exact UTF-8 bytes between caller-declared unique start and end markers in supplied source text and one explicitly selected checked-out human-document file. The caller-supplied source reference and digest are not authenticated; the comparison does not establish authorship, approval, semantic equivalence, scientific validity, release authority, or permission to edit or publish.",
+  "effects": {
+    "candidate_file_accessed": true,
+    "execution_authorized": false,
+    "files_written": false,
+    "network": false
+  },
+  "findings": [],
+  "schema_version": "toolbox-source-section-parity-result-r0",
+  "source_document": {
+    "byte_count": 10028,
+    "sha256": "f1a5feba5d5fcfebb66e98af28024dae04e4f2f88905dd1742f2ef628984cb53"
+  },
+  "source_ref": "Arvin-liu/1111@4e1e3ae8cade11f1932d10169f546abf7317ece0:instructions/goal-mode/IGNITION-2026-10-24-HOMEPAGE-FIVE-COMPONENTS-CHAT-AUTHORED-COPY-R0.md",
+  "source_ref_authenticated": false,
+  "source_section": {
+    "byte_count": 2403,
+    "end_offset_bytes": 2462,
+    "sha256": "b5661299531477f7442d25467c0a6f6407b077c2afbf62655435ebc896312d9b",
+    "start_offset_bytes": 59
+  },
+  "status": "BYTE_IDENTICAL",
+  "task_id": "IGNITION-20261027-homepage-first-component-source-parity",
+  "tool_id": "maintenance.compare_source_section_bytes",
+  "tool_version": "0.1.0"
+}
