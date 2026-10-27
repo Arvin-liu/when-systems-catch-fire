@@ -1884,9 +1884,9 @@
   - 可搜索名称：NFC-c53931629cf8aa25 / \|OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）\|候选算子是否在精选基线上复现参考数值。\|**已完成（有界 v0.2 基准）**：任务 105 先预注册、再对抗验证，在精选基线上复现参考数值；原始目标
   - 来源：`RESULTS/OPEN-QUESTIONS.md`
   - 依赖：—；被引用：—
-- [\|让点火处理一篇笔记、网页、PDF、代码或其它对象\|\[点火操作法\]\(./OPERATING-METHOD.md\)\|\[Capability Registry\]\(./data/operations/ignition-operation-capa](../../../HUMAN-READING.md)
+- [\|让点火处理一篇笔记、网页、PDF、代码或其它对象\|\[点火操作法（OPERATING-METHOD.md）\]\(./OPERATING-METHOD.md\)\|\[Capability Registry（ignition-operation-ca](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3f9526b70ce9888b / \|让点火处理一篇笔记、网页、PDF、代码或其它对象\|\[点火操作法\]\(./OPERATING-METHOD.md\)\|\[Capability Registry\]\(./data/operations/ignition-operation-capa
+  - 可搜索名称：NFC-1a3c425c2ac11323 / \|让点火处理一篇笔记、网页、PDF、代码或其它对象\|\[点火操作法（OPERATING-METHOD.md）\]\(./OPERATING-METHOD.md\)\|\[Capability Registry（ignition-operation-ca
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
 - [\|问题\|当前缺口\|需要的下一类证据\|停止或降级条件\|](../../../RESULTS/OPEN-QUESTIONS.md)
