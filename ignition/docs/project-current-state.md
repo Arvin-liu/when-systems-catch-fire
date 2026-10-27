@@ -331,3 +331,7 @@ guard 的 `REPRODUCED_IMPLEMENTATION_DEFECT`。三项历史案例仍可检索，
 ## 更新规则
 
 未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 `.github/README.md`、`HUMAN-READING.md`、`KNOWLEDGE/`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage、知识体验 manifest 和历史记录。历史证据不删除，Git 历史不改写。
+
+### SCIENTIFIC-METACOGNITION-I1 Scientific Metacognition & Epistemic-State Control Plane (stacked Draft candidate)
+
+Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: model self-rating is not evidence; non-identifiable is not solved; dominant discourse is not fact; planning is not external execution.

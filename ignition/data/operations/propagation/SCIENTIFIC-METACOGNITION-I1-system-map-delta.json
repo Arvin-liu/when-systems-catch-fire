@@ -1,0 +1,25 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "epistemic_state_control_plane_contract",
+    "epistemic_state_control_plane_gate_validator",
+    "epistemic_state_control_plane_pilot"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [
+    "analogy_audit_gate_validator",
+    "evidence_retrieval_gate_validator",
+    "evidence_retrieval_pilot",
+    "failure_lineage_gate_validator",
+    "failure_lineage_pilot",
+    "intervention_failure_gate_validator",
+    "symbolic_power_perspective_contract",
+    "symbolic_power_perspective_gate_validator",
+    "symbolic_power_perspective_pilot"
+  ],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}
