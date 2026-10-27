@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D370 defines a mechanism_model within the point-fire framework. Core: 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-459838fc6725511f / Object D370 defines a mechanism_model within the point-fire framework. Core: 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D342, D370；被引用：—
+- [Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a5036bd060c7786 / Object D371 defines a mechanism_model within the point-fire framework. Core: 中文：M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D264, D371；被引用：—
 - [Object D372 defines a mechanism_model within the point-fire framework. Core: 中文：M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-097d93ea06e55486 / Object D372 defines a mechanism_model within the point-fire framework. Core: 中文：M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果
@@ -1224,6 +1234,11 @@
   - 可搜索名称：NFC-d019784acfa45ccc / Shared provenance is not identity/causality/science: PASS; prohibited claims are explicit.
   - 来源：`reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md`
   - 依赖：—；被引用：—
+- [signer 在作决定前能看到该 action 的影响摘要、risk bearers、不可逆性、证据/ceiling 和预计后果；](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5d55ce01a66cc4ec / signer 在作决定前能看到该 action 的影响摘要、risk bearers、不可逆性、证据/ceiling 和预计后果；
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [Sixteen tasks, full-data and few-shot target adaptation, multiple baselines and targeted ablations validate the bounded](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-e17b40a3fb8fe9b1 / Sixteen tasks, full-data and few-shot target adaptation, multiple baselines and targeted ablations validate the bounded
@@ -1484,6 +1499,11 @@
   - 可搜索名称：NFC-f0fbd7e1d2911bd1 / The atlas does not replace matrices or registries. It does not create a second canonical truth source. It does not creat
   - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
   - 依赖：—；被引用：—
+- [The authored source change is docs-only: two adversarial governance records, one task report, one task result, and one g](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1fbfee10453cb8ee / The authored source change is docs-only: two adversarial governance records, one task report, one task result, and one g
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
+  - 依赖：—；被引用：—
 - [The available evidence did not identify a universal city-scale causal effect. Observational studies retained confounding](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-68e36279c2b0ca95 / The available evidence did not identify a universal city-scale causal effect. Observational studies retained confounding
@@ -1598,6 +1618,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6ccac697f8b7d49c / The final candidate SHA, remote-ref equality and CI observations belong in the external Draft PR receipt and independent
   - 来源：`agent-results/IGNITION-20260904-153-result.md`
+  - 依赖：—；被引用：—
+- [The final candidate SHA, remote-ref equality, PR observation and CI result are external evidence planes. They are intent](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d67fa4f70540e270 / The final candidate SHA, remote-ref equality, PR observation and CI result are external evidence planes. They are intent
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
   - 依赖：—；被引用：—
 - [The final eligible corpus contains 22 works, 4,368,310 extracted words, 8,083 ordered sections, 3,194 PDF pages where ap](../../../docs/governance/external-longform-corpus-selection-2026-09-07.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b5302a823e105146 / \| 088-A \| `IGNITION-20260709-088-external-frontier-evidence-atlas-and-gap-applicability-audit.md` \| 无 \| 无 \| 否 \| 无（未执行） \|
   - 来源：`reports/external-research/104-dual-088-reconciliation.md`
-  - 依赖：—；被引用：—
-- [\| 088-B \| `IGNITION-20260709-088-external-literature-gap-source-atlas-and-campaign-router.md` \| `records/ignition-088-ex](../../../reports/external-research/104-dual-088-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1400a90139a9f0c8 / \| 088-B \| `IGNITION-20260709-088-external-literature-gap-source-atlas-and-campaign-router.md` \| `records/ignition-088-ex
-  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
-  - 依赖：—；被引用：—
-- [\| 10 \| COMPLETED \| pending closure \| pending closure \| Public-safe Owner observation seed with explicit non-replication/](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cbd2e528a2964f1e / \| 10 \| COMPLETED \| pending closure \| pending closure \| Public-safe Owner observation seed with explicit non-replication/
-  - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [\| 116 \| GAP-012 因果识别 \| MEDIUM \| 8 \| 2 \|](../../../reports/external-research/104-dual-088-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-194ca7d3d7d07416 / \| 116 \| GAP-012 因果识别 \| MEDIUM \| 8 \| 2 \|
-  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
-  - 依赖：—；被引用：—
-- [\| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \|](../../../data/external-research/088-PROGRESS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-e53ed29fb44c9f67 / \| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \|
-  - 来源：`data/external-research/088-PROGRESS.md`
-  - 依赖：—；被引用：—
-- [\| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-830c947db8c4ca4b / \| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

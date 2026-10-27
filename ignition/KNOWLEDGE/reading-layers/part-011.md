@@ -4,6 +4,34 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d790a75d59747779"></a>
+## IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：PASS for the branch-local Current projection. Task138 is now the canonical Current formal task with PRESENTATIONONLY identity impact. Task136 remains the latest architecture-changing task; identity epoch and map 0.13.0 remain unchanged. The lifecycle is RUNNING because Steps13–15 are still open. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync；PASS for the branch-local Current projection. Task138 is now the canonical Current formal task with PRESENTATIONONLY identity impact. Task136 remains the latest architecture-changing task; identity epoch and map 0.13.0 remain unchanged. The lifecycle is RUNNING because Steps13–15 are still open.；The live ceiling remains LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED. The first repaired Codex dispatch produced a known no-effect pre-inference startup failure with no structured result; the synthetic workspace was unchanged and runtime scratch cleanup was confirmed. The second invocation was forbidden by the auth-source read-only gate. Hermes reconci…；主题：Domain and claim boundaries；TASKWORKSPACE remains DISPOSABLEREADONLY.；EXECUTORRUNTIMESCRATCH is ATTEMPTEPHEMERALWRITABLE only, isolated and noncanonical.
+- 完整阅读：[reports/operations/ignition-138-step12-current-state-sync.md](../../reports/operations/ignition-138-step12-current-state-sync.md)
+
+<a id="reading-hr-d7c4ca0bba65194f"></a>
+## IGNITION-20260816-123 架构真相同步 R1 夜班进度
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：任务分支：codex/ignition-123-current-state-sync-compact-map-federation-r2-20260816 正式基线：d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e 控制面：1111 origin/relay/current = 7a1cfff8 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260816-123 架构真相同步 R1 夜班进度；任务分支：codex/ignition-123-current-state-sync-compact-map-federation-r2-20260816 正式基线：d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e 控制面：1111 origin/relay/current = 7a1cfff8；本报告是机器 ledger 的紧凑人读入口；逐步命令、哈希、schema 和回归输出以同目录 nightshift-progress.jsonl、本迭代 artifacts 与最终 machine receipt 为准。所有结果 都是仓库工程证据，不是外部真值、Owner acceptance、生产安全或 EPISTEMICALLYACCEPTED。；主题：Step 00 — COMPLETE；从 live origin/main 建立隔离工作树并完成只读基线审计。确认 Current State 旧数量、 首页重复 identity、map 版本/历史语义和 row-max 布局残余；建立 current-state drift 与 geometry baseline fixtures。未读 secret、未改外部配置、未做 live external invocation。；主题：Step 01 — COMPLETE
+- 完整阅读：[reports/operations/ignition-123-nightshift-progress.md](../../reports/operations/ignition-123-nightshift-progress.md)
+
+<a id="reading-hr-d7cc969a8b1b7ce4"></a>
+## External Agent Federation R1 — ownership boundary
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：点火是 OS，不是另一个 OpenClaw、Hermes 或 Codex。它维护目标、价值、 任务契约、权限、长期状态、Pack、记忆、验证、handoff、provenance 和结果 吸收；外部智能体是可替换执行器。适配器只翻译可观察边界，不复制外部 Agent 的运行时。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：External Agent Federation R1 — ownership boundary；点火是 OS，不是另一个 OpenClaw、Hermes 或 Codex。它维护目标、价值、 任务契约、权限、长期状态、Pack、记忆、验证、handoff、provenance 和结果 吸收；外部智能体是可替换执行器。适配器只翻译可观察边界，不复制外部 Agent 的运行时。；本页与 CURRENTSTATESYNCINVARIANT 的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge 是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本 0.16.0（0.14.0 Historical、0.13.0 及之前为更早 Historical）和 live ceiling 以 current-facts.json 为准；真实 live invocation 仍可在安全边界无法满足时明确 SKIPPED。；Task 126 的 Structural Governance Surface 是 Federation 可选择读取的 advisory cross-cutting overlay。它只暴露声明的 claim ceiling、unknowns、source pointers 和实验臂元数据；它不改变 capability、permission、authorization、truth、Owner 状态或 EPISTEMICALLYACCEPTED。完整边界见 soft-context-exposure-contract-r0.json。；Task 127 的 Durability / Lifecycle R3 仍由 Ignition OS / driver 持有：Federation 只接收声明的 workspace、policy、capability 和 reconciliation 边界，不拥有 snapshot、 migration、namespace、Pack lifecycle、revocation、accounting、recovery 或 DR authority。 若 external dispatch 不确定，OS 只记录 REQUIRESRECONCILIATION，禁止通过任何 adapter 自动重放；repository-local continuity pilot 不是 live executor success、p…；Task 129 的 Steering / Intent / Goal / Obligation R1 只向 Federation 发放经过边界收窄的 IntentCapsule：capsule 携带成功标准、权限上限、blocker、时间引用、report contract 和 最小 context 引用，不携带 canonical registry 写权限。外部 executor 的 report、telemetry 或 PASS 不能写回 canonical Intent，也不能推断 Goal completion；独立 Completion Contract 和 OS reconciliation 仍是必要条件。
+- 完整阅读：[docs/architecture/external-agent-federation-r1.md](../../docs/architecture/external-agent-federation-r1.md)
+
+<a id="reading-hr-d821031f6e382fd7"></a>
+## 121Q9 Final Release Candidate
+`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q9 Final Release Candidate；Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved.；Main base SHA: 771349da3e241cdff29eaf3cf880ae2ce158549f；PR #45 content head: 5a9a860dc7fc0c0d4536586f5ff27f5180838e52；Step 003 content head: 0b0b821239cb93bacf70bbc54c0dc157e4d8d0cf；Final seal commit will follow this report as Step 004.
+- 完整阅读：[reports/release/121Q9-final-release-candidate.md](../../reports/release/121Q9-final-release-candidate.md)
+
 <a id="reading-hr-d8277885e64bf9e8"></a>
 ## IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure
 `HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -325,31 +353,3 @@
 - 1 分钟：The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix；The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated:；a complete host capsule with a bounded/truncated model-facing view is；independently recoverable; and；an incomplete capsule (durable cap, spool failure, or privacy rejection)；must remain OBSERVATIONINCOMPLETE and require reconciliation.
 - 完整阅读：[reports/operations/ignition-139-step04-context-loss-fault-matrix.md](../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
-
-<a id="reading-hr-ea8833ef83822509"></a>
-## IGNITION-20260828-144 Step 11 — cross-surface split-brain audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respe… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 11 — cross-surface split-brain audit；The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respective boundaries.；Seven Current Snapshot surfaces were checked. None exposes the historical RUNDYNAMICEXECUTORADMISSION value as a current pointer; historical occurrences remain preserved as historical evidence. The Results Book has one registry and one canonical README entrypoint. All six Task143 registry rows and the three article manifest entries retain the smoke-test/non-…；Step 11 therefore records no deterministic closure blocker. The remaining LIVEEXTERNALINVOCATION obligation is open but independently Owner-deferred, not a Task144 engineering blocker.
-- 完整阅读：[reports/operations/ignition-144-step11-cross-surface-audit.md](../../reports/operations/ignition-144-step11-cross-surface-audit.md)
-
-<a id="reading-hr-eabed7bd3564479d"></a>
-## IGNITION-20260829-148 typed change-propagation impact report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260829-148 typed change-propagation impact report；Closure complete: true；Closure hash: fc273554be492455c273b17cc8011a4906de6354c5294495bd089aab1c28b3fa；Fixpoint iterations: 2；Seeds: aiguide, currentstate, formaltasklifecycler1, foundation, historicalreports, humanknowledgesurfaces, ignitionoperatingmethod, iterationmanifestcontract, l6, nol7, openobligationregistryr1, projectcomponentregistry, propagationcalculator, systemmapprojection；Resolved components: 35
-- 完整阅读：[reports/operations/IGNITION-20260829-148-change-propagation-impact.md](../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
-
-<a id="reading-hr-ebcda7ca000d3bac"></a>
-## 121Q2R Final Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Generated: 2026-07-14T17:04:01Z 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q2R Final Report；主题：STATUS: COMPLETE — FORCED STOP per Step 017；Generated: 2026-07-14T17:04:01Z；主题：1. Execution Identity；Actual model: qclaw/pool-glm-5.2-night；Reasoning level: high (adaptive, but operating at high for this task)
-- 完整阅读：[reports/external-research/121Q2R-final-report.md](../../reports/external-research/121Q2R-final-report.md)
-
-<a id="reading-hr-ebd5091c3be06f0a"></a>
-## 121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation；Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT；Before ARN operational hardening: 1f3815538cf56d0f35cc06c6b2396fadf33a34a2；After ARN path-state and reference closure: recorded in data/architecture/adaptive-relational-network/real-history/deterministic-replay.json；before-projection.json；after-projection.json
-- 完整阅读：[reports/architecture/121Q23C-operational-arn-real-history-validation.md](../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)

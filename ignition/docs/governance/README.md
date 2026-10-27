@@ -21,6 +21,12 @@ Task `IGNITION-20260904-153` 对价值—认识论推导与 Human–Agent–Syst
 - [`more-meta-foundations-synthesis-2026-09-04.md`](./more-meta-foundations-synthesis-2026-09-04.md) — 两条独立审计的 synthesis gate；选择 `ORTHOGONAL_DUAL_FOUNDATION / NO_NEW_CANONICAL_LAYER`，保留候选诊断但不制度化。
 - 任务报告见 [`reports/governance/task-IGNITION-20260904-153.md`](../../reports/governance/task-IGNITION-20260904-153.md)。
 
+Task `IGNITION-20260904-154` 是对上述综合的反证轮，仍为 `CANDIDATE / NON_CANONICAL`：
+
+- [`more-meta-foundations-adversarial-audit-2026-09-04.md`](./more-meta-foundations-adversarial-audit-2026-09-04.md) — P/O/N/A 消融、A 的五种归属假设、四象限正交性反例、五个诊断的承载力与冲突仲裁残余；主判定为 `FALSIFIED`（仅否定强双基础命题）。
+- [`more-meta-foundations-minimal-model-2026-09-04.md`](./more-meta-foundations-minimal-model-2026-09-04.md) — 比较 `M4`、`M3a`、`M3b`、`M2+T` 与 `Existing-only`，保留“现有联邦合同 + 交叉复核视图”作为最小研究表示，不新增 canonical layer。
+- 任务报告见 [`reports/governance/task-IGNITION-20260904-154.md`](../../reports/governance/task-IGNITION-20260904-154.md)，结果见 [`agent-results/IGNITION-20260904-154-result.md`](../../agent-results/IGNITION-20260904-154-result.md)。
+
 ### 治理与宪章文档目录
 
 | 文档 | 角色 |

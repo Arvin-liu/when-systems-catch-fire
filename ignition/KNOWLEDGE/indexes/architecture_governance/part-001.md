@@ -1084,6 +1084,16 @@
   - 可搜索名称：121Q8 Final Report / 121Q8-final-report
   - 来源：`reports/governance/121Q8-final-report.md`
   - 依赖：—；被引用：—
+- [153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力](../../ASSET-CARDS.md#asset-hr-203efd4a1e416db5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力 / more-meta-foundations-adversarial-audit-2026-09-04
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [153 反证轮：通过消融后的最小模型](../../ASSET-CARDS.md#asset-hr-22bc98cea22051c8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：153 反证轮：通过消融后的最小模型 / more-meta-foundations-minimal-model-2026-09-04
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [: 084 Truth Status Correction](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4a134af09f7b5dc9 / : 084 Truth Status Correction
@@ -2259,6 +2269,11 @@
   - 可搜索名称：NFC-2bfd3d6558e55084 / \[C-0806｜AI 作者性与生成艺术\]\(../已迁移的历史案例来源/0801-C-0806-AI 作者性与生成艺术.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [\[Claim Governance and Function Identity\]\(../../docs/foundation/claim-governance-and-function-identity.md\) and \[Non-Sycop](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11e5f96bd8f81186 / \[Claim Governance and Function Identity\]\(../../docs/foundation/claim-governance-and-function-identity.md\) and \[Non-Sycop
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
+  - 依赖：—；被引用：—
 - [\[Claim Governance and Function Identity\]\(../../docs/foundation/claim-governance-and-function-identity.md\) and \[Non-Sycop](../../../reports/governance/task-IGNITION-20260904-153.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e3ebe1f8568d3456 / \[Claim Governance and Function Identity\]\(../../docs/foundation/claim-governance-and-function-identity.md\) and \[Non-Sycop
@@ -2319,6 +2334,11 @@
   - 可搜索名称：NFC-ca79153d5f1764cb / \[D96｜三层结构必然性\]\(docs/zh/functions/items/D96.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D96；被引用：—
+- [\[Epistemic Governance Kernel and Federated Planes\]\(../../docs/architecture/epistemic-governance-kernel-and-federated-pla](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5d0a5d9d58e10a28 / \[Epistemic Governance Kernel and Federated Planes\]\(../../docs/architecture/epistemic-governance-kernel-and-federated-pla
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
+  - 依赖：—；被引用：—
 - [\[Epistemic Governance Kernel and Federated Planes\]\(../../docs/architecture/epistemic-governance-kernel-and-federated-pla](../../../reports/governance/task-IGNITION-20260904-153.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f80b53dba09bf8e6 / \[Epistemic Governance Kernel and Federated Planes\]\(../../docs/architecture/epistemic-governance-kernel-and-federated-pla
@@ -2482,25 +2502,5 @@
 - [_issue\(issues, "DUPLICATE_ID", f"{item_path}.request_id", "evidence request id is not unique"\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d1ce245ba8ffd68b / _issue\(issues, "DUPLICATE_ID", f"{item_path}.request_id", "evidence request id is not unique"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "EVIDENCE_STATE", f"{item_path}.retrieval_state", "unknown retrieval state"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-1b73abb05a90ff2d / _issue\(issues, "EVIDENCE_STATE", f"{item_path}.retrieval_state", "unknown retrieval state"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "UNKNOWN_REF", f"$.case.artifact_refs\[{index}\].derivation_refs", "derivation artifact reference is unknow](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c2209c88a8f26688 / _issue\(issues, "UNKNOWN_REF", f"$.case.artifact_refs\[{index}\].derivation_refs", "derivation artifact reference is unknow
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "UNKNOWN_REF", f"$.case.obligations\[{index}\].output_artifact_refs", "output artifact reference is unknown](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7a18c046a4997243 / _issue\(issues, "UNKNOWN_REF", f"$.case.obligations\[{index}\].output_artifact_refs", "output artifact reference is unknown
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "UNKNOWN_REF", f"{item_path}.obligation_id", "evidence request obligation is unknown"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ae6c2a98734b9bd8 / _issue\(issues, "UNKNOWN_REF", f"{item_path}.obligation_id", "evidence request obligation is unknown"\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

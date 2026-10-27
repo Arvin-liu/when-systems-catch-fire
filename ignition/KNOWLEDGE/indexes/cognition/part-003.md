@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion.](../../../reports/operations/ignition-137-step11-hermes-retry-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96d6a3a8fcd7a6c7 / This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion.
+  - 来源：`reports/operations/ignition-137-step11-hermes-retry-decision.md`
+  - 依赖：—；被引用：—
+- [This receipt proves repository-local deterministic Steering / Intent / Goal / Commitment modeling, authority and non-inf](../../../agent-results/IGNITION-20260821-129-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-28552119c09a7b23 / This receipt proves repository-local deterministic Steering / Intent / Goal / Commitment modeling, authority and non-inf
+  - 来源：`agent-results/IGNITION-20260821-129-result.md`
+  - 依赖：—；被引用：—
+- [This result is finalized before the final full-repository derivation. Final generator fixed-point, exact-head, clean-clo](../../../agent-results/IGNITION-20260910-169-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8ad6957d603ee55f / This result is finalized before the final full-repository derivation. Final generator fixed-point, exact-head, clean-clo
+  - 来源：`agent-results/IGNITION-20260910-169-result.md`
+  - 依赖：—；被引用：—
+- [This result proves only a repository-local adversarial reading of the 153 candidate at the named baseline and predecesso](../../../agent-results/IGNITION-20260904-154-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6f64e98ddcd22797 / This result proves only a repository-local adversarial reading of the 153 candidate at the named baseline and predecesso
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
+  - 依赖：—；被引用：—
+- [This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e35e12e0bb8bea3d / This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
 - [This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic](../../../agent-results/IGNITION-20260823-136-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-95b5ede727be431b / This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic
@@ -769,6 +794,11 @@
   - 可搜索名称：NFC-202361688ad4583d / \|Auditor\|检查来源、规则、依赖、边界、独立性、差异和反弹。\|审计通过不等于现实真理或法律结论。\|
   - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
+- [\|authority source\|Owner Intent、Charter、Approval decision 的显式来源\|识别谁在什么范围内可以批准、拒绝或暂停。\|不能推出事实正确、理解全部后果或对所有受影响者有同一价值判断。\|](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cbcd26703470fd7c / \|authority source\|Owner Intent、Charter、Approval decision 的显式来源\|识别谁在什么范围内可以批准、拒绝或暂停。\|不能推出事实正确、理解全部后果或对所有受影响者有同一价值判断。\|
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [\|Consequence visibility\|风险承担者、沉默主体、维护者或未来选项受到影响时。\|Charter Gate 的 beneficiaries / risk bearers / silent subjects / residu](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-60d52af1db449344 / \|Consequence visibility\|风险承担者、沉默主体、维护者或未来选项受到影响时。\|Charter Gate 的 beneficiaries / risk bearers / silent subjects / residu
@@ -1139,6 +1169,11 @@
   - 可搜索名称：NFC-47beffc3f8ced634 / 中文：高维认知必然多轨 English: Rule-based English rendering pending human review.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [为什么现在不行动，具体阻塞是哪一个证据、权限、后果或状态条件？](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-08642f281099fb71 / 为什么现在不行动，具体阻塞是哪一个证据、权限、后果或状态条件？
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5d1a5085976f30b9 / 人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。
@@ -1498,6 +1533,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-686b383dc793a86d / 已完成且不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [当前 `approval-decision-r1` 明确支持第 1 项的一部分；Stage Snapshot 支持特定发布场景的第 2 项；第 3–5 项没有一个通用 joined predicate。由于本轮没有实际 high-conse](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f0f434d1e2845540 / 当前 `approval-decision-r1` 明确支持第 1 项的一部分；Stage Snapshot 支持特定发布场景的第 2 项；第 3–5 项没有一个通用 joined predicate。由于本轮没有实际 high-conse
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [当前角色与实体证据](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`

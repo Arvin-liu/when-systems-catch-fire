@@ -1304,6 +1304,11 @@
   - 可搜索名称：NFC-a9d6376815eab15a / `os_spine`、`federation` 与 `domain_packs` 三个 overlay 分别表达 Owner/Human、Generic Kernel/Runtime/Memory，External Agent Federa
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
+- [`P` is redundant as a new primitive because existing Claim Governance, Kernel, M/E, source lineage and claim-ceiling rul](../../../agent-results/IGNITION-20260904-154-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5e1e8a5d5fbffc85 / `P` is redundant as a new primitive because existing Claim Governance, Kernel, M/E, source lineage and claim-ceiling rul
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
+  - 依赖：—；被引用：—
 - [`pairwise-hyperrelation-projection.json`](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-57cf9875492cdcf3 / `pairwise-hyperrelation-projection.json`
@@ -1358,6 +1363,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-39c4b2f7d73f5602 / `PROPOSAL`：供后续 Owner / reviewer 决定的候选模型，不进入当前规范栈。
   - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [`PROVENANCE_WITHOUT_CEILING`, `ABSTENTION_AS_AVOIDANCE`, `SIGNATURE_WITHOUT_CONTESTABILITY` and `COMPLETE_RECORD_WITHOUT](../../../reports/governance/task-IGNITION-20260904-154.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c7833b6c4d30b8f / `PROVENANCE_WITHOUT_CEILING`, `ABSTENTION_AS_AVOIDANCE`, `SIGNATURE_WITHOUT_CONTESTABILITY` and `COMPLETE_RECORD_WITHOUT
+  - 来源：`reports/governance/task-IGNITION-20260904-154.md`
   - 依赖：—；被引用：—
 - [`Psi0`、元协议、Function OS、MCF、PSD、ARN 是被治理对象或局部 capability，不是总 truth authority。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2494,13 +2504,3 @@
   - 可搜索名称：D598 系统性钝化索引可见性验证 / d598-index-visibility-check-20260708
   - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
   - 依赖：—；被引用：—
-- [D598 系统性钝化索引可见性验证](../../../outputs/audit/d598-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8dee280ba8b232e1 / D598 系统性钝化索引可见性验证
-  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
-  - 依赖：D598；被引用：—
-- [D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cd8822eecdb329b1 / D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep
-  - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
-  - 依赖：D598；被引用：—

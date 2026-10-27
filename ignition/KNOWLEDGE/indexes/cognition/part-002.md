@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",](../../../agent_federation/approval_handoff.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9a09fb98abc5709d / for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",
+  - 来源：`agent_federation/approval_handoff.py`
+  - 依赖：—；被引用：—
+- [for item in raw_artifacts:](../../../agent_federation/adapters/openclaw.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dc21cfca1ca3d67e / for item in raw_artifacts:
+  - 来源：`agent_federation/adapters/openclaw.py`
+  - 依赖：—；被引用：—
+- [Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a](../../../agent-results/IGNITION-20260821-129-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ef3c0f8ec633ad75 / Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a
+  - 来源：`agent-results/IGNITION-20260821-129-result.md`
+  - 依赖：—；被引用：—
 - [from .adapters.openclaw import OpenClawAdapter](../../../agent_federation/pilots.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e505f07dd0615462 / from .adapters.openclaw import OpenClawAdapter
@@ -568,6 +583,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
   - 可搜索名称：IGNITION-20260904-153 任务报告：价值—认识论推导审计与可追责认知边界 / task-IGNITION-20260904-153
   - 来源：`reports/governance/task-IGNITION-20260904-153.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260904-154 result](../../ASSET-CARDS.md#asset-hr-829a141e1a4a0574)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260904-154 result / IGNITION-20260904-154-result
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
   - 依赖：—；被引用：—
 - [IGNITION-20260907-160 progress](../../ASSET-CARDS.md#asset-hr-f03c0e16cbb5b9f8)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b48995e7ab4b6a36 / This ledger is a correction/provenance overlay. It never rewrites the older
   - 来源：`agent_federation/live_inference_observation_events.py`
-  - 依赖：—；被引用：—
-- [This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion.](../../../reports/operations/ignition-137-step11-hermes-retry-decision.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96d6a3a8fcd7a6c7 / This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion.
-  - 来源：`reports/operations/ignition-137-step11-hermes-retry-decision.md`
-  - 依赖：—；被引用：—
-- [This receipt proves repository-local deterministic Steering / Intent / Goal / Commitment modeling, authority and non-inf](../../../agent-results/IGNITION-20260821-129-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-28552119c09a7b23 / This receipt proves repository-local deterministic Steering / Intent / Goal / Commitment modeling, authority and non-inf
-  - 来源：`agent-results/IGNITION-20260821-129-result.md`
-  - 依赖：—；被引用：—
-- [This result is finalized before the final full-repository derivation. Final generator fixed-point, exact-head, clean-clo](../../../agent-results/IGNITION-20260910-169-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8ad6957d603ee55f / This result is finalized before the final full-repository derivation. Final generator fixed-point, exact-head, clean-clo
-  - 来源：`agent-results/IGNITION-20260910-169-result.md`
-  - 依赖：—；被引用：—
-- [This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-](../../../agent-results/IGNITION-20260822-135-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e35e12e0bb8bea3d / This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-
-  - 来源：`agent-results/IGNITION-20260822-135-result.md`
   - 依赖：—；被引用：—

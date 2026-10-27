@@ -1144,6 +1144,11 @@
   - 可搜索名称：NFC-d92ad0aae84300e5 / `COMPLETED_VALIDATED`, Goal completion or external truth.
   - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
+- [`COUNTERMODEL`：对一个没有外部后果、可随时撤销的本地格式化动作，立即行动和短暂 pause 都不改变风险或未来选项。此域中没有必要引入 `O` 才能做安全选择。反例不否认高后果动作需要 stop/rollback，只否认“所有](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5bd6601935b1aa75 / `COUNTERMODEL`：对一个没有外部后果、可随时撤销的本地格式化动作，立即行动和短暂 pause 都不改变风险或未来选项。此域中没有必要引入 `O` 才能做安全选择。反例不否认高后果动作需要 stop/rollback，只否认“所有
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`data/collisions/20260711-disobedience-subjectivity.json`（命令点名）→ 047 既有 `outputs/candidates/json/candidates-decision.jso](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4648c07387ff28dd / `data/collisions/20260711-disobedience-subjectivity.json`（命令点名）→ 047 既有 `outputs/candidates/json/candidates-decision.jso
@@ -1198,6 +1203,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fff9c3364217c4d8 / `LIVE_READONLY_VALIDATED_COMPLETION`. A reasoner runtime or ordinary tool is
   - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [`N` remains a Charter-originated value boundary that cannot be derived from evidence or topology, but is not proven as a](../../../agent-results/IGNITION-20260904-154-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a4de5241ab4582c0 / `N` remains a Charter-originated value boundary that cannot be derived from evidence or topology, but is not proven as a
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
   - 依赖：—；被引用：—
 - [`NO_CHANGE_WITH_REASON` decisions and evidence:](../../../templates/operations/task-command-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1558,6 +1568,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F74294207589ACB3 / APP不Agent化必死：d_relative\(t\)=d_得到大脑\(t\)/d_竞品\(t\)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f\(P_infra\)≈0的乘法归零 / IMPLICIT-F74294207589ACB3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Arbitration gaps remain object-specific and context-dependent; no universal precedence or new meta-arbitration layer is](../../../agent-results/IGNITION-20260904-154-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c67065ecbac0de49 / Arbitration gaps remain object-specific and context-dependent; no universal precedence or new meta-arbitration layer is
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
   - 依赖：—；被引用：—
 - [are recovery accelerators and never a second truth source.](../../../agent-results/IGNITION-20260820-127-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-179ca46127ef3832 / for field in \("validated_completed_work", "pending_work", "allowed_capabilities", "workspace_refs", "acceptance_criteria
   - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a09fb98abc5709d / for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [for item in raw_artifacts:](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dc21cfca1ca3d67e / for item in raw_artifacts:
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a](../../../agent-results/IGNITION-20260821-129-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ef3c0f8ec633ad75 / Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a
-  - 来源：`agent-results/IGNITION-20260821-129-result.md`
   - 依赖：—；被引用：—

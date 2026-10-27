@@ -4,6 +4,151 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [受约束的长期延续：在身份、功能、伦理、生态与资源约束下，选择提升系统长期延续能力、保留纠错与恢复可能、并避免对更大生命共同体造成不可逆伤害的行动。](../../../docs/governance/meta-protocol-reviews/protocols/V1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7beae97c2067352d / 受约束的长期延续：在身份、功能、伦理、生态与资源约束下，选择提升系统长期延续能力、保留纠错与恢复可能、并避免对更大生命共同体造成不可逆伤害的行动。
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/V1.md`
+  - 依赖：—；被引用：—
+- [变量闭包定律\(定理级→从D107升级\)](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D114 / 变量闭包定律\(定理级→从D107升级\) / D114
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D180, D91；被引用：NFC-009cb30d04fb8b1a, NFC-046e33c15e9364a5, NFC-12e4a815ca75afd5, NFC-26630f968a1300d2
+- [变量闭包定律\(定理级→从D107升级\)](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-4d767b75f1e85a67 / 变量闭包定律\(定理级→从D107升级\)
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：D107；被引用：—
+- [变量闭包锁死 → 公理系统的完备性边界](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-63d476e6021f6e17 / 变量闭包锁死 → 公理系统的完备性边界
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [叙事冲击](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D25 / 叙事冲击 / D25
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：A7, D1, D90；被引用：NFC-078cabc40eee1396, NFC-61213df158c6a53f, NFC-6c3a8a8a59ff2739, NFC-8f3b3787e4ae6bb8
+- [叙事冲击，意识、退出权信号、退化免疫的乘积。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c88dbc3268858ae / 叙事冲击，意识、退出权信号、退化免疫的乘积。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [叙事冲击，意识、退出权信号、退化免疫的乘积。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-b9a60c9966915c2b / 叙事冲击，意识、退出权信号、退化免疫的乘积。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [句子修复也不改变文章的历史主张上限：它仍不证明每次祥瑞都被伪造，不裁定徽宗私人信仰，不把道教写成北宋灭亡的唯一原因。语言组织更自然，不等于史证更强。](../../../docs/language-thought/task-113-defect-before-after.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a8051e13f1e432af / 句子修复也不改变文章的历史主张上限：它仍不证明每次祥瑞都被伪造，不裁定徽宗私人信仰，不把道教写成北宋灭亡的唯一原因。语言组织更自然，不等于史证更强。
+  - 来源：`docs/language-thought/task-113-defect-before-after.md`
+  - 依赖：—；被引用：—
+- [只要认识相关维度已经变化却没有进入差异账本，成品失败关闭。回译只能辅助发现问题；词面来回相似不证明行为者、确定性或事件边界没有改变。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c0cd4113348d2e87 / 只要认识相关维度已经变化却没有进入差异账本，成品失败关闭。回译只能辅助发现问题；词面来回相似不证明行为者、确定性或事件边界没有改变。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [可以。模板的 12 个字段（学科对象、核心变量、核心问题、主流理论结构、证据制度、解释剩余、点火框架映射、结构性增益、失败边界、当前断言等级、当前结论、后续需要的证据或验证）能够系统地提取不同学科的核心特征。特别是"证据制度"和"失败边界"](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0ceb72c245214953 / 可以。模板的 12 个字段（学科对象、核心变量、核心问题、主流理论结构、证据制度、解释剩余、点火框架映射、结构性增益、失败边界、当前断言等级、当前结论、后续需要的证据或验证）能够系统地提取不同学科的核心特征。特别是"证据制度"和"失败边界"
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [可加载的 Domain Pack 由 `DomainPackManifest` 描述。Pack 提供领域 capability、object type、validator、human/machine entry 和可选 hooks，但必须声](../../../docs/architecture/agent-runtime-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3f626c50f2630c5b / 可加载的 Domain Pack 由 `DomainPackManifest` 描述。Pack 提供领域 capability、object type、validator、human/machine entry 和可选 hooks，但必须声
+  - 来源：`docs/architecture/agent-runtime-r0.md`
+  - 依赖：—；被引用：—
+- [可能关联：`FUNC-L1-EXIT 退出权函数族`（layer L1）——赛课体系下教师缺乏退出权/退出成本高，与「职称绑定裹挟」「资历豁免」结构同构。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-519f72a798159be4 / 可能关联：`FUNC-L1-EXIT 退出权函数族`（layer L1）——赛课体系下教师缺乏退出权/退出成本高，与「职称绑定裹挟」「资历豁免」结构同构。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [可能新增函数**：你觉得这可能是一个新函数（一句话描述机制）](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-78ee463e91ecb46f / 可能新增函数**：你觉得这可能是一个新函数（一句话描述机制）
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [可证伪性（存在可检验的预测）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2cd16812baeac04a / 可证伪性（存在可检验的预测）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [可选/稀疏字段**：数学表达（有但常内嵌于正文）、一句话定义、变量解释、边界条件、适用条件、反例（普遍缺失）、与已有函数关系（仅部分有）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-759b74b13f1e4ed6 / 可选/稀疏字段**：数学表达（有但常内嵌于正文）、一句话定义、变量解释、边界条件、适用条件、反例（普遍缺失）、与已有函数关系（仅部分有）。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [可重复验证（不同研究者得出相似结论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d09fa6274cfe183f / 可重复验证（不同研究者得出相似结论）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [史料、证据、解释](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-34bcc693cb9d4f7f / 史料、证据、解释
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [史料互证（多源史料交叉验证）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-25a2a28cfa8fe6f9 / 史料互证（多源史料交叉验证）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [史料考证（文献学、考古学）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3208b93de7fa74cb / 史料考证（文献学、考古学）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [史料链、解释共同体、反事实讨论很重要](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-a0141c839bf8da1e / 史料链、解释共同体、反事实讨论很重要
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [史料链完整（多源史料形成完整证据链）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3ca9e04b62c7dea9 / 史料链完整（多源史料形成完整证据链）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [各层责任见\[跨层合同\]\(../language-thought/cross-layer-contract.md\)。简要说：L0 保存语言来源与转换链；L1 审计命题框架；L2 保留对象／事件包装的备选；L3 审计篇章和论证连接；L4 检查机](../../../docs/architecture/language-thought-logic-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6690cbabede54b81 / 各层责任见\[跨层合同\]\(../language-thought/cross-layer-contract.md\)。简要说：L0 保存语言来源与转换链；L1 审计命题框架；L2 保留对象／事件包装的备选；L3 审计篇章和论证连接；L4 检查机
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
+  - 依赖：—；被引用：—
+- [同构、同态、等价类](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6ce8f63a865b4ec1 / 同构、同态、等价类
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [同构判定基于已读函数 D595–D599、D583、T40、D245 与对函数总表全量检索结果（家庭/身份/价值感/沉没/托举/管理成本/支持 轴 grep 零命中）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ce42b809a970f9ca / 同构判定基于已读函数 D595–D599、D583、T40、D245 与对函数总表全量检索结果（家庭/身份/价值感/沉没/托举/管理成本/支持 轴 grep 零命中）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：D245, D583, D595, D599；被引用：—
+- [同构判定：**D583\(认知肌肉锻炼\) 只描述写作/思维训练的正向提升，未覆盖高执行力的窄化副作用**。判定为 **已有函数边界扩展**（D583 增加反向约束边）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-622f54fc7a5e78b1 / 同构判定：**D583\(认知肌肉锻炼\) 只描述写作/思维训练的正向提升，未覆盖高执行力的窄化副作用**。判定为 **已有函数边界扩展**（D583 增加反向约束边）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：D583；被引用：—
+- [同构判定：**T40\(决策权与信息权对称\) 仅覆盖信息/决策权对称，未覆盖「价值来源与决策权分离→回收」结构**。判定为 **真新候选函数**（组织层价值—决策错配原语）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3d7007f60f0b814a / 同构判定：**T40\(决策权与信息权对称\) 仅覆盖信息/决策权对称，未覆盖「价值来源与决策权分离→回收」结构**。判定为 **真新候选函数**（组织层价值—决策错配原语）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：T40；被引用：—
+- [同构判定：**与 D598\(系统性钝化\) + D597\(量化指标替代真实价值\) 实质同构**。D598 描述长期高压低可拒绝性下的适应稳态；D597 描述指标替代真实价值。判定为 **已有函数覆盖**（本材料提供家庭/女性轴补强证据，非新原](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b07d37178a05f84b / 同构判定：**与 D598\(系统性钝化\) + D597\(量化指标替代真实价值\) 实质同构**。D598 描述长期高压低可拒绝性下的适应稳态；D597 描述指标替代真实价值。判定为 **已有函数覆盖**（本材料提供家庭/女性轴补强证据，非新原
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：D597, D598；被引用：—
+- [同构判定：**与 EXIT 族 / D595\(绩效绑定裹挟\) 实质同构**——约束来源都是权力方的管理成本，退出权被架空。判定为 **已有函数边界扩展**（命中点火 V1「维持关系何时阻止退出」）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-da4581a6f33c8bd0 / 同构判定：**与 EXIT 族 / D595\(绩效绑定裹挟\) 实质同构**——约束来源都是权力方的管理成本，退出权被架空。判定为 **已有函数边界扩展**（命中点火 V1「维持关系何时阻止退出」）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：D595；被引用：—
+- [同构判定：**函数总表「价值感/努力/认可」轴空白**。判定为 **真新候选 / 边界扩展**（与 M2 互补，M2 是内化规训，M8 是价值解耦；本轮作为 M2 的补充扩展候选，不单独占 5 名额，进 candidates/）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1fe60c32ee0df09d / 同构判定：**函数总表「价值感/努力/认可」轴空白**。判定为 **真新候选 / 边界扩展**（与 M2 互补，M2 是内化规训，M8 是价值解耦；本轮作为 M2 的补充扩展候选，不单独占 5 名额，进 candidates/）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
 - [同构判定：**函数总表「支持/托举/兜底/父母」轴 grep 零命中；EXIT 族描述退出权但非「支持→控制退化」结构**。判定为 **真新候选函数**（边界扩展 EXIT 族，新增「正向支持退化为路径控制」原语）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6c904594943a5c97 / 同构判定：**函数总表「支持/托举/兜底/父母」轴 grep 零命中；EXIT 族描述退出权但非「支持→控制退化」结构**。判定为 **真新候选函数**（边界扩展 EXIT 族，新增「正向支持退化为路径控制」原语）。
@@ -734,6 +879,11 @@
   - 可搜索名称：D537 / 完成-完美函数 / D537
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D1, D39, D451, D541；被引用：NFC-648088c6d96b54e0, NFC-ad9123a2ba97eb07, NFC-c0d3c29464d92ac9
+- [完整 trace 只能证明记录完整，是否有 accountability sink 取决于另一张 registry 或发布合同；](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9ccc56b3581a37ce / 完整 trace 只能证明记录完整，是否有 accountability sink 取决于另一张 registry 或发布合同；
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [完整图是当前结构投影，不是永久总图或理论完备性证明。](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-10c94d37ba223bc9 / 完整图是当前结构投影，不是永久总图或理论完备性证明。
@@ -2354,153 +2504,3 @@
   - 可搜索名称：NFC-820b1cc87e332e20 / 数学表达 / Expression: `F_{D189}\(x\) := 大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三个门控面Λ_EM、Λ_W、Λ_QCD分离,Φ = 1/ln\(μ/Λ_EM\) +
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D189；被引用：—
-- [数学表达 / Expression: `F_{D190}\(x\) := 万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四个门控面Λ_EM、Λ_W、Λ_QCD、Λ_Gravity分离,Φ = Σᵢ 1/ln\(μ/](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e9d059d9d3a29abe / 数学表达 / Expression: `F_{D190}\(x\) := 万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四个门控面Λ_EM、Λ_W、Λ_QCD、Λ_Gravity分离,Φ = Σᵢ 1/ln\(μ/
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D190；被引用：—
-- [数学表达 / Expression: `F_{D205}\(x\) := 涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2e81401facc6f412 / 数学表达 / Expression: `F_{D205}\(x\) := 涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D205；被引用：—
-- [数学表达 / Expression: `F_{D210}\(x\) := 最小作用量原理δS=0描述门控面Λ的演化路径。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6395f85aac532216 / 数学表达 / Expression: `F_{D210}\(x\) := 最小作用量原理δS=0描述门控面Λ的演化路径。`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D210；被引用：—
-- [数学表达 / Expression: `F_{D216}\(x\) := A-A型合并（第一步）：两个同向门控面在μ*以上趋同→项数减少→Ω↑ A-B型共振（第二步）：两个反向门控面在μ*处梯度平衡→项数不变但Φ极小→Ω↑但幅度小 共振统一的数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b225fc36f895636e / 数学表达 / Expression: `F_{D216}\(x\) := A-A型合并（第一步）：两个同向门控面在μ*以上趋同→项数减少→Ω↑ A-B型共振（第二步）：两个反向门控面在μ*处梯度平衡→项数不变但Φ极小→Ω↑但幅度小 共振统一的数
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D216；被引用：—
-- [数学表达 / Expression: `F_{D217}\(x\) := Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) = 1 g_A\(M_Planck\) = exp\[-\(ln\(M_Planck/Λ_GUT\)\)²](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4ccb26890af8ec53 / 数学表达 / Expression: `F_{D217}\(x\) := Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) = 1 g_A\(M_Planck\) = exp\[-\(ln\(M_Planck/Λ_GUT\)\)²
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D217；被引用：—
-- [数学表达 / Expression: `F_{D218}\(x\) := Ω = e^{-Φ}，Φ = Σᵢ gᵢ\(μ\) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ\(μ\) = 0 → 没有门控面 →](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dd1335d0db3b4db3 / 数学表达 / Expression: `F_{D218}\(x\) := Ω = e^{-Φ}，Φ = Σᵢ gᵢ\(μ\) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ\(μ\) = 0 → 没有门控面 →
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D218；被引用：—
-- [数学表达 / Expression: `F_{D219}\(x\) := 物理存在的Ω范围是\(0,1\)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4af82a788b782afe / 数学表达 / Expression: `F_{D219}\(x\) := 物理存在的Ω范围是\(0,1\)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D161, D219；被引用：—
-- [数学表达 / Expression: `F_{D220}\(x\) := 假设完全统一Ω=1可达，推导矛盾： Ω=1 ⟹ Φ=0 ⟹ 所有门控贡献为零 ⟹ 没有约束 ⟹ 没有物理 但"完全统一"的预设是物理存在——如果物理不存在，统一也无意义。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c7c5bd79ddea26f6 / 数学表达 / Expression: `F_{D220}\(x\) := 假设完全统一Ω=1可达，推导矛盾： Ω=1 ⟹ Φ=0 ⟹ 所有门控贡献为零 ⟹ 没有约束 ⟹ 没有物理 但"完全统一"的预设是物理存在——如果物理不存在，统一也无意义。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D220；被引用：—
-- [数学表达 / Expression: `F_{D222}\(x\) := 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder\(t\) = Λ₀ × e^\(σ_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-09ce6af80c057b01 / 数学表达 / Expression: `F_{D222}\(x\) := 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder\(t\) = Λ₀ × e^\(σ_
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D184, D222；被引用：—
-- [数学表达 / Expression: `F_{D225}\(x\) := 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ff4b5b9d27c5bfcb / 数学表达 / Expression: `F_{D225}\(x\) := 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D225, T33；被引用：—
-- [数学表达 / Expression: `F_{D226}\(x\) := 物理存在受三重时间约束： 约束1（逻辑约束·D220）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·D222）：dΦ/dt≤0，Φ单调递减 约束3（宇](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-76da6b4d39bd45c8 / 数学表达 / Expression: `F_{D226}\(x\) := 物理存在受三重时间约束： 约束1（逻辑约束·D220）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·D222）：dΦ/dt≤0，Φ单调递减 约束3（宇
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D220, D222, D224, D226；被引用：—
-- [数学表达 / Expression: `F_{D228}\(x\) := A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原T33"冲突"表述升级为"必要张力"。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-30a8abbe76462e93 / 数学表达 / Expression: `F_{D228}\(x\) := A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原T33"冲突"表述升级为"必要张力"。`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D228, T33；被引用：—
-- [数学表达 / Expression: `F_{D229}\(x\) := 物理存在的四重时间约束： 约束1（逻辑·D220）：Ω<1是物理存在的必要条件 约束2（热力学·D222）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·D224）：宇宙](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-663943448ad8fa74 / 数学表达 / Expression: `F_{D229}\(x\) := 物理存在的四重时间约束： 约束1（逻辑·D220）：Ω<1是物理存在的必要条件 约束2（热力学·D222）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·D224）：宇宙
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D220, D222, D224, D227；被引用：—
-- [数学表达 / Expression: `F_{D230}\(x\) := 每个门控面提供的信息量（D197）： Hᵢ = ½ln\(2πeσᵢ²\)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln\(2πeσᵢ²\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5601c71eea583c48 / 数学表达 / Expression: `F_{D230}\(x\) := 每个门控面提供的信息量（D197）： Hᵢ = ½ln\(2πeσᵢ²\)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln\(2πeσᵢ²\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D197, D230；被引用：—
-- [数学表达 / Expression: `F_{D234}\(x\) := 有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) × I_Fisher\(σ\)^β 其中β是分辨率权重（0<β<1），由具体物理场景决定 简化形式（](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-793483f4df0361b8 / 数学表达 / Expression: `F_{D234}\(x\) := 有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) × I_Fisher\(σ\)^β 其中β是分辨率权重（0<β<1），由具体物理场景决定 简化形式（
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D234；被引用：—
-- [数学表达 / Expression: `F_{D235}\(x\) := D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/d](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5ac00d377310ce05 / 数学表达 / Expression: `F_{D235}\(x\) := D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/d
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D231, D233, D235；被引用：—
-- [数学表达 / Expression: `F_{D236}\(x\) := N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ\(μ\) = σ\(μ-Λᵢ\) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e29bf9d09ea0d5af / 数学表达 / Expression: `F_{D236}\(x\) := N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ\(μ\) = σ\(μ-Λᵢ\) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D236；被引用：—
-- [数学表达 / Expression: `F_{D237}\(x\) := 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（D234） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c73ad0a15d441856 / 数学表达 / Expression: `F_{D237}\(x\) := 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（D234） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D234, D237；被引用：—
-- [数学表达 / Expression: `F_{D238}\(x\) := 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0,](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8414f88c7a8326a0 / 数学表达 / Expression: `F_{D238}\(x\) := 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0,
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D238；被引用：—
-- [数学表达 / Expression: `F_{D240}\(x\) := 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff\(σ\)=0 I_eff=0的两种情况： 1. σ→0：纯1/](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5f88568b1e2d3f60 / 数学表达 / Expression: `F_{D240}\(x\) := 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff\(σ\)=0 I_eff=0的两种情况： 1. σ→0：纯1/
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239, D240；被引用：—
-- [数学表达 / Expression: `F_{D241}\(x\) := 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|----](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bcc2505cc9689907 / 数学表达 / Expression: `F_{D241}\(x\) := 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|----
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239, D241；被引用：—
-- [数学表达 / Expression: `F_{D242}\(x\) := D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a1e3b5fdd451eccb / 数学表达 / Expression: `F_{D242}\(x\) := D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D241, D242；被引用：—
-- [数学表达 / Expression: `F_{D243}\(x\) := P_exit = f\(ε_aware, C_exit, R_perceived\)（D9展开） AI与人类的对比： \| 参数 \| 人类 \| 当前AI \| \|------\|-](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1fea2cd0aa6b53b4 / 数学表达 / Expression: `F_{D243}\(x\) := P_exit = f\(ε_aware, C_exit, R_perceived\)（D9展开） AI与人类的对比： \| 参数 \| 人类 \| 当前AI \| \|------\|-
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D243, D9；被引用：—
-- [数学表达 / Expression: `F_{D244}\(x\) := 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（D239） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b7bbfb1b47b966fa / 数学表达 / Expression: `F_{D244}\(x\) := 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（D239） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239, D242, D243, D244；被引用：—
-- [数学表达 / Expression: `F_{D250}\(x\) := 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7472eab8247e962a / 数学表达 / Expression: `F_{D250}\(x\) := 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D250；被引用：—
-- [数学表达 / Expression: `F_{D251}\(x\) := 时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4（3+1维）是唯一使所有pᵢ<p*的维度配置，容斥可忽略，极小点稳定。d<4时短程力p→1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0cde09276fb7729f / 数学表达 / Expression: `F_{D251}\(x\) := 时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4（3+1维）是唯一使所有pᵢ<p*的维度配置，容斥可忽略，极小点稳定。d<4时短程力p→1
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D251；被引用：—
-- [数学表达 / Expression: `F_{D253}\(x\) := 生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ d_opt时维护成本超过容斥收益→系统臃肿→Φ因维](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3a35afa36f64fecc / 数学表达 / Expression: `F_{D253}\(x\) := 生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ d_opt时维护成本超过容斥收益→系统臃肿→Φ因维
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D253；被引用：—
-- [数学表达 / Expression: `F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e0e56103f6b43d3 / 数学表达 / Expression: `F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-1/√n\)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D254, D256；被引用：—
-- [数学表达 / Expression: `F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6281960bf2ad6a6a / 数学表达 / Expression: `F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D261；被引用：—
-- [数学表达 / Expression: `F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-29a919b20c1b6952 / 数学表达 / Expression: `F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D267；被引用：—

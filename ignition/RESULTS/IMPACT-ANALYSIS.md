@@ -184,6 +184,8 @@
 |`docs/governance/meta-protocol-reviews/protocols/V2.md`|14|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V3.md`|11|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V4.md`|10|0|否|
+|`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`|57|0|否|
+|`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`|29|0|否|
 |`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`|51|0|否|
 |`docs/governance/mutable-basis-learning-operator-2026-09-07.md`|4|0|否|
 |`docs/governance/next-basis-assessment-2026-09-07.md`|1|0|否|
@@ -451,6 +453,7 @@
 |`reports/foundation-architecture/validation-summary-20260712.md`|1|0|否|
 |`reports/governance/121Q8-final-report.md`|6|0|否|
 |`reports/governance/task-IGNITION-20260904-153.md`|37|0|否|
+|`reports/governance/task-IGNITION-20260904-154.md`|24|0|否|
 |`reports/governance/task-IGNITION-20260906-158.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260907-159.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260907-160.md`|0|0|是|

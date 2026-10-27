@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [点火框架提供了跨域同构识别、元协议分析、因果链分析、自举合法性分析、元层面收敛分析和门控分析，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析和解释共同体共识。现代艺术成立的制度分析、具体作品价值判定、审美判断客观性必须 `pend](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d8d143c7372b2906 / 点火框架提供了跨域同构识别、元协议分析、因果链分析、自举合法性分析、元层面收敛分析和门控分析，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析和解释共同体共识。现代艺术成立的制度分析、具体作品价值判定、审美判断客观性必须 `pend
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [点火框架统一约束，乘法系统中任一因子为零则整体归零。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-574b7cf840f90b01 / 点火框架统一约束，乘法系统中任一因子为零则整体归零。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [点火风险：** L1 命题主体改变，L4 因果责任被虚构或抹除。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-87783df0bf2e4a51 / 点火风险：** L1 命题主体改变，L4 因果责任被虚构或抹除。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [点火风险：** L2 对象类型和 L4 机制终点变化，L5 验证窗口错位。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-024444b59961df53 / 点火风险：** L2 对象类型和 L4 机制终点变化，L5 验证窗口错位。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [点火风险：** L3 发明因果或隐藏前提，L4 把共现误写成机制。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-8525c865c7596601 / 点火风险：** L3 发明因果或隐藏前提，L4 把共现误写成机制。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [版本事实从 `data/operations/current-snapshot-r1.json` 与 `data/architecture/current-facts.json` 恢复，不在本页复制易漂移的系统图版本。当前 Iteratio](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98e4b06ff7d1d337 / 版本事实从 `data/operations/current-snapshot-r1.json` 与 `data/architecture/current-facts.json` 恢复，不在本页复制易漂移的系统图版本。当前 Iteratio
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`](../../../docs/architecture/agentization-boundary-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fbc942d0532d5b91 / 状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`
+  - 来源：`docs/architecture/agentization-boundary-r0.md`
+  - 依赖：—；被引用：—
+- [状态：首页使用 Task150 已验证的 standalone derived visualization 作为公共架构投影；机器可读的 `0.16.0` Current registry-derived structural projec](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e4a45a7c81011746 / 状态：首页使用 Task150 已验证的 standalone derived visualization 作为公共架构投影；机器可读的 `0.16.0` Current registry-derived structural projec
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-feaf102c8d9d916a / 现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、External Agent Federation R1、Foundation registries、Function OS 候选、](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-7409fb17e6b92bbe / 现行组织包括 L0—L6 架构、横穿其间的语言—思维逻辑平面、Agent Platform R2 工程脊柱、External Agent Federation R1、Foundation registries、Function OS 候选、
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [理论”等更强命题。当前仓库的 Function OS v0.1/v0.2 没有历史因果 target，因此苹果案例](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-96d26c3839f1036c / 理论”等更强命题。当前仓库的 Function OS v0.1/v0.2 没有历史因果 target，因此苹果案例
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [理论族：因果推断, 实验设计, 控制理论, 决策理论, 强化学习, 政策评估, 系统辨识](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-04da48bff1e3b727 / 理论族：因果推断, 实验设计, 控制理论, 决策理论, 强化学习, 政策评估, 系统辨识
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [理论族：多目标优化, Pareto 前沿, 运筹学, 机制设计, 进化权衡, 资源配置, 鲁棒优化](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d1f4a095405752a2 / 理论族：多目标优化, Pareto 前沿, 运筹学, 机制设计, 进化权衡, 资源配置, 鲁棒优化
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
 - [理论族：潜在结果, 结构因果模型, 工具变量, 自然实验, 因果发现, 运输性, 外部效度](../../../data/external-research/089-external-source-atlas.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-0d7cdc34bda71629 / 理论族：潜在结果, 结构因果模型, 工具变量, 自然实验, 因果发现, 运输性, 外部效度
@@ -198,6 +263,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-97bbeaea4390bc0c / 竞争机制：A 基层凝聚中心；B 后勤/机动/地理中心；C 辽中枢和内部叛乱中心；D 投附/联盟/制度吸收中心；E 多因素交互、无单一主因。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [等待是否真的保留了 future option，还是只把决定移出可见范围？](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a9478f0fd1256bd4 / 等待是否真的保留了 future option，还是只把决定移出可见范围？
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。](../../../docs/publication/zhiyuan-writing-showcase.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

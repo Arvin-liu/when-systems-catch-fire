@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "维度回复非线性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-771E863CC6E190AC / title: "维度回复非线性函数" / IMPLICIT-771E863CC6E190AC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度坐标化边界函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5CE937404A223125 / title: "维度坐标化边界函数" / IMPLICIT-5CE937404A223125
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度最优吸引域函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E094F240DAD7A118 / title: "维度最优吸引域函数" / IMPLICIT-E094F240DAD7A118
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度最优平衡函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D62D2DADEBBE39C / title: "维度最优平衡函数" / IMPLICIT-6D62D2DADEBBE39C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度最优漂移函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-858DB201D1DF5D3F / title: "维度最优漂移函数" / IMPLICIT-858DB201D1DF5D3F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度稳定性裕度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-335B880B93E4005D / title: "维度稳定性裕度函数" / IMPLICIT-335B880B93E4005D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度饥渴感知函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FEDC911A9FF442CA / title: "维度饥渴感知函数" / IMPLICIT-FEDC911A9FF442CA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "缓冲关联结构函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-679C92156B721BBB / title: "缓冲关联结构函数" / IMPLICIT-679C92156B721BBB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "缓冲可重建性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-65C5C26768AA40F7 / title: "缓冲可重建性函数" / IMPLICIT-65C5C26768AA40F7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "缓冲容量峰值函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8491C68506F65D45 / title: "缓冲容量峰值函数" / IMPLICIT-8491C68506F65D45
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "缓冲峰值余量函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E9390C11A2538865 / title: "缓冲峰值余量函数" / IMPLICIT-E9390C11A2538865
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "缓冲消耗速度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B5ED0B920231AF7F / title: "缓冲消耗速度函数" / IMPLICIT-B5ED0B920231AF7F
@@ -2449,58 +2504,3 @@
   - 可搜索名称：CLAIM-D470 / Within the source-defined scope, 幽灵跳变阻尼函数 is adjudicated as RELATION: \[D469\]\(docs/zh/functions/items/D469.md\)×D464深入碰撞——
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D464, D469；被引用：—
-- [Within the source-defined scope, 应约者退出的成本 is adjudicated as METRIC: 应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-A5 / Within the source-defined scope, 应约者退出的成本 is adjudicated as METRIC: 应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 延迟-噪声频谱函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D368 / Within the source-defined scope, 延迟-噪声频谱函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D354；被引用：—
-- [Within the source-defined scope, 延迟临界-不可逆点统一函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的D382与D295在参数空间形成两条不可逆线。](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D396 / Within the source-defined scope, 延迟临界-不可逆点统一函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M13的D382与D295在参数空间形成两条不可逆线。
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D295, D382；被引用：—
-- [Within the source-defined scope, 引力B型必要性定理 is adjudicated as FORMAL_PROPOSITION: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D225 / Within the source-defined scope, 引力B型必要性定理 is adjudicated as FORMAL_PROPOSITION: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：T33；被引用：—
-- [Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D360 / Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D310；被引用：—
-- [Within the source-defined scope, 弱容斥窗口-逃逸速度联合函数 is adjudicated as METRIC: M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导\)·\(1-f](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D374 / Within the source-defined scope, 弱容斥窗口-逃逸速度联合函数 is adjudicated as METRIC: M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导\)·\(1-f
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D289, D332；被引用：—
-- [Within the source-defined scope, 弱混合角-容斥约束函数 is adjudicated as RELATION: M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D304 / Within the source-defined scope, 弱混合角-容斥约束函数 is adjudicated as RELATION: M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D283, D297；被引用：—
-- [Within the source-defined scope, 弹性-弱度偏离函数 is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D113 / Within the source-defined scope, 弹性-弱度偏离函数 is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-internal
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 强干预-去容斥等价函数 is adjudicated as RELATION: M7的有效β = min\(β_intended, β_max\)，β_max∝√n/K。去容斥需](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D418 / Within the source-defined scope, 强干预-去容斥等价函数 is adjudicated as RELATION: M7的有效β = min\(β_intended, β_max\)，β_max∝√n/K。去容斥需
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 强相互作用门控函数 is adjudicated as RELATION: 强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `REJECTED_FALSE_OR_INVALID`
-  - 可搜索名称：CLAIM-D188 / Within the source-defined scope, 强相互作用门控函数 is adjudicated as RELATION: 强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 形式系统外推边界函数 is adjudicated as MECHANISM_MODEL: classify_A\(p\) in {provable, refutable, in](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D475 / Within the source-defined scope, 形式系统外推边界函数 is adjudicated as MECHANISM_MODEL: classify_A\(p\) in {provable, refutable, in
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—

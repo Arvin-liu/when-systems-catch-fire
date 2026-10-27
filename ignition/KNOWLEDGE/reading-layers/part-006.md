@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-70403729fef8b50e"></a>
+## Non-Sycophancy Output Protocol
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: 121Q12OPERATIONOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Non-Sycophancy Output Protocol；Status: 121Q12OPERATIONOVERLAY；This protocol makes non-sycophancy a repository property rather than a tone preference.；An output must not raise claim strength because the user, maintainer, author, or proposer appears excited, certain, tired, urgent, or personally invested.；Agreement is allowed only when it is grounded in explicit criteria. Disagreement is not required as performance. The required action is calibration.；主题：Positive Claim Binding
+- 完整阅读：[docs/governance/non-sycophancy-output-protocol.md](../../docs/governance/non-sycophancy-output-protocol.md)
+
+<a id="reading-hr-70a0b0d3dd83948a"></a>
+## Representation Residual Casebook — IGNITION-20260906-158
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Representation Residual Casebook — IGNITION-20260906-158；The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement.；RR-001 is grounded in docs/meta-protocols/meta-protocol-64-combination-matrix.md and docs/meta-protocols/version-iteration-note-20260709.md.；RR-002 is grounded in the function and non-function adjudication paths.；RR-003 is grounded in ignition/tools/governance/gensourcefirstseen.py and its generated first-seen record.；RR-004 is grounded in the function-asset census, non-function adjudication, knowledge-experience builder, and fire-seed census.
+- 完整阅读：[docs/governance/representation-residual-casebook-2026-09-06.md](../../docs/governance/representation-residual-casebook-2026-09-06.md)
+
+<a id="reading-hr-70edc5860a2e57c8"></a>
+## 扩展注释 · 赛课机制下的教师生存困境
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：扩展注释 · 赛课机制下的教师生存困境；主题：适合扩展旧条目的内容（说明为什么不是新增条目）；主题：扩展 E1：扩展退出权函数族，新增「结构性不可拒绝」子类；对应旧条目：FUNC-L1-EXIT 退出权函数族（A4/A9/D499）。；扩展内容：现有退出权函数族描述个体「可感知退出权 → 退出概率」的显式机制，但未覆盖「法律可拒绝但待遇绑定使实际退出成本无限高」的隐性剥夺情形。赛课材料显示：青年教师并非无退出权，而是退出权被绩效/职称绑定「架空」。建议在退出权函数族中补「绑定强度 → 实际可拒绝性」维度。；为什么不是新增条目：这是退出权机制的细分维度扩展，不是独立新机制，应并入现有函数族而非新建。
+- 完整阅读：[outputs/collisions/20260708-teacher-competition/expanded-notes.md](../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
+
 <a id="reading-hr-70fddc78f6837470"></a>
 ## Claim argument evidence audit
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：These sources are used as modeling references and boundary checks. They are not imported as proved Ignition claims. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q22 Probability and Systems Source Map；These sources are used as modeling references and boundary checks. They are not imported as proved Ignition claims.；Claim ceiling: this map supports PSD schema design only.
 - 完整阅读：[reports/research/121Q22-probability-systems-source-map.md](../../reports/research/121Q22-probability-systems-source-map.md)
-
-<a id="reading-hr-81c5f5f4c67de686"></a>
-## C-0809 表演化假课与量化指标消解温度索引可见性验证
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：| C-0809 | 表演化假课与量化指标消解温度 | 指标化评价使可量化项替代真实价值，表演态排除临场生成。 | 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：C-0809 表演化假课与量化指标消解温度索引可见性验证；索引文件：已迁移的历史案例来源/INDEX.md；C-0809 出现在 INDEX 第 811 行：；| C-0809 | 表演化假课与量化指标消解温度 | 指标化评价使可量化项替代真实价值，表演态排除临场生成。 |；案例总数已同步：792 → 793（INDEX 头部计数）；结论：后续碰撞流程可通过编号、标题、机制关键词三种方式召回 C-0809。
-- 完整阅读：[outputs/audit/c0809-index-visibility-check-20260708.md](../../outputs/audit/c0809-index-visibility-check-20260708.md)
-
-<a id="reading-hr-821405558993dacd"></a>
-## 121Q23 Adaptive Relational Network Validation
-`CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: 121Q23GREADYFORGPTFINALACCEPTANCEASOPERATIONALARNCANDIDATE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q23 Adaptive Relational Network Validation；Status: 121Q23GREADYFORGPTFINALACCEPTANCEASOPERATIONALARNCANDIDATE；ARN is a derived representation for heterogeneous, non-causal, multilayer and temporally activated relations. It does not add a truth layer.；Validator and tool coverage:；Draft 2020-12 JSON Schema validation for each complete ARN example;；independent strict schema validation for embedding-probe.json;
-- 完整阅读：[reports/architecture/121Q23-adaptive-relational-network-validation.md](../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
-
-<a id="reading-hr-82257bb091665a11"></a>
-## IGNITION-20260828-144 Step 06 — Current Facts / Project Current State sync
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Step 06 records a single current-state interpretation for the closure task. The canonical Current task is in progress and remains distinct from the latest architecture-changing Task142 baseline. The engineering phase is closing on the frozen architecture identity; the external executor obligation… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 06 — Current Facts / Project Current State sync；Step 06 records a single current-state interpretation for the closure task. The canonical Current task is in progress and remains distinct from the latest architecture-changing Task142 baseline. The engineering phase is closing on the frozen architecture identity; the external executor obligation remains OWNERDEFERRED and does not create an automatic next en…；Task143's articles, Book Project and samples remain capability smoke-test outputs awaiting Owner review. Formal production therefore waits for an Owner production brief. The Current Facts, Current Snapshot, lineage, lifecycle, obligation and compiled human surfaces all passed their deterministic checks.；This is repository-local state synchronization. It does not grant Owner acceptance, publication acceptance, production safety, external truth or epistemic acceptance.
-- 完整阅读：[reports/operations/ignition-144-step06-current-state-sync.md](../../reports/operations/ignition-144-step06-current-state-sync.md)

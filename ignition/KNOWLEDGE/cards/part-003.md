@@ -684,6 +684,26 @@
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `Task 98 claim-governance implementation record`, `098-claim-governance-implementation`
 
+<a id="asset-hr-203efd4a1e416db5"></a>
+## 153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-203EFD4A1E416DB5` · [docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md](../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+- **为什么产生：** 此来源记录了什么：153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** Status: RESEARCHRECORD / ADVERSARIALAUDIT / NONCANONICAL
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-09-04: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力`, `more-meta-foundations-adversarial-audit-2026-09-04`
+
 <a id="asset-hr-2048d95801ce57ed"></a>
 ## Task163 mutable basis-learning operator
 
@@ -763,6 +783,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`
 - **可搜索名称：** `IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1`, `IGNITION-20260822-134-result`
+
+<a id="asset-hr-22bc98cea22051c8"></a>
+## 153 反证轮：通过消融后的最小模型
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-22BC98CEA22051C8` · [docs/governance/more-meta-foundations-minimal-model-2026-09-04.md](../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+- **为什么产生：** 此来源记录了什么：153 反证轮：通过消融后的最小模型？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** Status: RESEARCHRECORD / MINIMALMODEL / NONCANONICAL
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-09-04: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `153 反证轮：通过消融后的最小模型`, `more-meta-foundations-minimal-model-2026-09-04`
 
 <a id="asset-hr-232c314acdd088b8"></a>
 ## Task160｜Basis Escape V2
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `两张表版本同步维护审计（2026-07-09 00:30）`, `two-tables-version-sync-audit-20260708`
-
-<a id="asset-hr-26d1f225ef8a1e1e"></a>
-## IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-26D1F225EF8A1E1E` · [reports/operations/ignition-144-step02-owner-editorial-authority.md](../../reports/operations/ignition-144-step02-owner-editorial-authority.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Step 02 passes with a deliberately small machine boundary in data/governance/owner-editorial-authority-r1.json and its validator. The contract keeps DRAFTGENERATED, OWNERSELECTED and PUBLICATIONACCEPTED as separate fields/states. Only OWNEREXPLICITPRODUCTIONBRIEF or OWNEREXPLICITSELECTION can sup…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-144-step02-owner-editorial-authority.md`, `144-STEP02-OWNER-EDITORIAL-AUTHORITY`
-- **演化历史：** 2026-08-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1`, `ignition-144-step02-owner-editorial-authority`
-
-<a id="asset-hr-26db9e2e52f3d7c9"></a>
-## IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-26DB9E2E52F3D7C9` · [reports/operations/ignition-138-step08-first-codex-dispatch.md](../../reports/operations/ignition-138-step08-first-codex-dispatch.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document ro…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-138-step08-first-codex-dispatch.md`, `138-STEP08-FIRST-CODEX-DISPATCH`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch`, `ignition-138-step08-first-codex-dispatch`
