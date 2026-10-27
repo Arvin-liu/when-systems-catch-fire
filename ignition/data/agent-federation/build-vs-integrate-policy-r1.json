@@ -183,6 +183,34 @@
       "protected_paths": [
         "data/external-research/unesco-general-knowledge-r1/"
       ]
+    },
+    {
+      "exception_id": "TASK179_R0_COGNITIVE_ARCHITECTURE_NO_RUNTIME_AUTHORITY",
+      "capability_scope": "Retain only the repository-local Cognitive Inheritance & Evolution Architecture R0 contracts, schemas, fixtures, and evaluation packages; no executable model, provider runtime, or external-agent authority",
+      "external_options_considered": [
+        "Existing Current, Foundation, Knowledge Experience, task lifecycle, and federation contracts",
+        "Existing validators, CI, and human-reviewed evaluation workflows",
+        "A future external model binding, explicitly left unbound in this R0 task"
+      ],
+      "reproduction_steps": [
+        "Run the owner-authorized IGNITION-20260916-179 task from baseline 68565f2afb50989d2c2b0d346d774e3388702743.",
+        "Run validate_federation_ownership.py --check-fixtures --scan-git-diff.",
+        "Observe that the protected model-path classifier rejects the passive CURRENT_SELF_MODEL_R0 artifact under agent_runtime/cognitive_inheritance_r0/ despite the absence of a runtime capability."
+      ],
+      "observed_failure": "The unchanged protected-path classifier treats the R0 self-model artifact path as a model-runtime addition; the R0 subtree contains architecture data and contracts only, not a model client, execution loop, training path, or provider integration.",
+      "threshold_or_boundary": "This allowance covers exactly ignition/agent_runtime/cognitive_inheritance_r0/. It classifies passive R0 architecture artifacts only and grants no model inference, model weights, provider binding, network action, credential, session, Current capability, or external-agent execution authority.",
+      "least_privilege_impact": "No executor, model, provider, browser, channel, credential, cookie, network, remote-Git, external-action, or production authority is added; the Capability Interface provider/model binding remains UNBOUND.",
+      "reversibility": "The exact path-scoped exception and R0 artifacts can be removed together without installation, external configuration, persistent provider state, or changes to the Reference Executor.",
+      "owner_review_ref": "Owner-authorized task scope: Arvin-liu/1111@main:agent-commands/IGNITION-20260916-179.md blob ac153f5e7656221df4612a5e1a5701691bea5edd; this is not authorization for a runtime capability.",
+      "decision": "ALLOW_TASK179_R0_ARCHITECTURE_ARTIFACTS_ONLY_NO_RUNTIME_AUTHORITY",
+      "external_executor_or_adapter": "No external executor or adapter is integrated; models remain abstract interchangeable providers and this R0 contract binds none.",
+      "contract_gap": "The existing path classifier has no explicit classification for passive cognitive-architecture artifacts under agent_runtime, so CURRENT_SELF_MODEL_R0 is rejected by filename/path despite adding no executable capability.",
+      "why_adapter_cannot_solve": "No runtime integration is requested. An adapter cannot reclassify passive architecture records without a scoped policy entry; this allowance does not bypass the adapter boundary or authorize execution.",
+      "minimal_build_scope": "Only the static R0 architecture contracts, schemas, fixture packages, and evaluation handoff data under agent_runtime/cognitive_inheritance_r0/; no model client, runtime loop, weight training, authenticated integration, or external action.",
+      "sunset_or_review_condition": "Remove this exact exception with the R0 artifact subtree when it is retired. Any future runtime, model/provider binding, training, credential, or external-action capability requires a separate formally reviewed task and is not covered here.",
+      "protected_paths": [
+        "agent_runtime/cognitive_inheritance_r0/"
+      ]
     }
   ]
 }

@@ -1,0 +1,64 @@
+{
+  "schema_version": "capability-interface-r0",
+  "interface_id": "cognitive-capability-interface-r0",
+  "provider_model_neutral": true,
+  "capabilities": [
+    {
+      "capability_id": "cognitive-ir.serialize",
+      "operation": "SERIALIZE",
+      "observable_contract": "Given a typed R0 object graph, emit deterministic canonical JSON without dropping provenance, uncertainty, boundaries or unknowns.",
+      "inputs": ["Cognitive IR object graph"],
+      "outputs": ["canonical JSON bytes", "serialization receipt"],
+      "required_tools": ["JSON serializer"],
+      "context_assumptions": ["schema version is known", "source references are supplied"],
+      "validation_fixture": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json",
+      "known_limitations": ["serialization does not establish truth", "serialization does not evaluate cognition"],
+      "provider_model_binding": {"provider": "UNBOUND", "model": "UNBOUND", "binding_status": "NOT_BOUND_IN_R0"},
+      "calibration": {"status": "NOT_YET_MEASURED", "evidence_refs": [], "measured_at": null},
+      "rediscovery": {"trigger_conditions": ["schema version changes", "serializer implementation changes", "source provenance changes"], "reprobe_required": true, "expiry_policy": "Reprobe before reusing a prior serialization result after any trigger."}
+    },
+    {
+      "capability_id": "cognitive-ir.validate",
+      "operation": "VALIDATE",
+      "observable_contract": "Given an R0 package, report schema, provenance, reference, boundary and prohibited-field conformance as mechanical findings.",
+      "inputs": ["Cognitive IR package", "R0 schemas"],
+      "outputs": ["validation findings", "deterministic pass/fail receipt"],
+      "required_tools": ["JSON Schema validator", "repository file reader"],
+      "context_assumptions": ["repository root is fixed", "schema files are available"],
+      "validation_fixture": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json",
+      "known_limitations": ["mechanical validation is not independent evaluation", "validation cannot infer hidden competence"],
+      "provider_model_binding": {"provider": "UNBOUND", "model": "UNBOUND", "binding_status": "NOT_BOUND_IN_R0"},
+      "calibration": {"status": "MECHANICAL_ONLY", "evidence_refs": ["ignition/tools/validate_cognitive_inheritance_r0.py"], "measured_at": null},
+      "rediscovery": {"trigger_conditions": ["schema changes", "validator changes", "new fixture family"], "reprobe_required": true, "expiry_policy": "Reprobe on every R0 schema or validator change."}
+    },
+    {
+      "capability_id": "cognitive-transition.record",
+      "operation": "RECORD_TRANSITION",
+      "observable_contract": "Given an anomaly and a proposed reframing, record predecessor, representation, method, disposition, lineage, unknowns and independent-evaluation status.",
+      "inputs": ["previous model reference", "anomaly reference", "new representation", "new method"],
+      "outputs": ["Cognitive Transition Record"],
+      "required_tools": ["R0 transition schema"],
+      "context_assumptions": ["anomaly is provenance-bound", "unknowns may remain unresolved"],
+      "validation_fixture": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-transition.json",
+      "known_limitations": ["a transition record is not proof of evolution", "Builder cannot issue final evaluation"],
+      "provider_model_binding": {"provider": "UNBOUND", "model": "UNBOUND", "binding_status": "NOT_BOUND_IN_R0"},
+      "calibration": {"status": "NOT_YET_MEASURED", "evidence_refs": [], "measured_at": null},
+      "rediscovery": {"trigger_conditions": ["transition schema changes", "new disposition vocabulary", "evaluator policy changes"], "reprobe_required": true, "expiry_policy": "Reprobe before accepting a transition under a changed vocabulary."}
+    },
+    {
+      "capability_id": "successor.reconstruct",
+      "operation": "RECONSTRUCT_SUCCESSOR",
+      "observable_contract": "Given a successor package and frozen evaluator packet, reconstruct a bounded task representation and expose deviations, unknowns and prohibited assumptions.",
+      "inputs": ["successor package", "frozen evaluation packet", "bounded task"],
+      "outputs": ["independent reconstruction record", "continuation result", "uncertainty record"],
+      "required_tools": ["independent evaluator conversation", "sealed criteria"],
+      "context_assumptions": ["evaluator starts without Builder chat history", "criteria remain frozen"],
+      "validation_fixture": "ignition/agent_runtime/cognitive_inheritance_r0/packages/independent-evaluation-package.json",
+      "known_limitations": ["not run by current Builder", "no calibration or capability claim in R0"],
+      "provider_model_binding": {"provider": "UNBOUND", "model": "UNBOUND", "binding_status": "NOT_BOUND_IN_R0"},
+      "calibration": {"status": "NOT_YET_MEASURED", "evidence_refs": [], "measured_at": null},
+      "rediscovery": {"trigger_conditions": ["evaluator policy changes", "successor package changes", "bounded task changes"], "reprobe_required": true, "expiry_policy": "Run a fresh independent evaluation after any trigger; do not reuse a prior verdict."}
+    }
+  ],
+  "claim_ceiling": {"status": "INTERFACE_ONLY", "text": "The interface describes observable contracts and rediscovery triggers; it does not bind a provider, model, weight update, capability result or cognitive inheritance verdict."}
+}

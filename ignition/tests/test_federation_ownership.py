@@ -49,8 +49,10 @@ class FederationOwnershipTests(unittest.TestCase):
     def test_task149_exception_is_removable_evidence_classification(self) -> None:
         policy = load("build-vs-integrate-policy-r1.json")
         exceptions = policy["exceptions"]
-        self.assertEqual(len(exceptions), 2)
-        exception = exceptions[0]
+        exception = next(
+            item for item in exceptions
+            if item["exception_id"] == "HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY"
+        )
         self.assertEqual(exception["exception_id"], "HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY")
         self.assertEqual(exception["decision"], "ALLOW_HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY")
         self.assertIn("no provider runtime", exception["capability_scope"])
@@ -68,6 +70,25 @@ class FederationOwnershipTests(unittest.TestCase):
         self.assertIn("generic runtime bypass", exception["sunset_or_review_condition"])
         self.assertEqual(len(exception["protected_paths"]), 4)
         validate_contracts(changed_paths=["data/operations/iterations/150/step08-provider-failure-fallback.json"])
+
+    def test_task179_r0_architecture_artifacts_do_not_authorize_runtime(self) -> None:
+        policy = load("build-vs-integrate-policy-r1.json")
+        exception = next(
+            item for item in policy["exceptions"]
+            if item["exception_id"] == "TASK179_R0_COGNITIVE_ARCHITECTURE_NO_RUNTIME_AUTHORITY"
+        )
+        self.assertEqual(
+            exception["decision"],
+            "ALLOW_TASK179_R0_ARCHITECTURE_ARTIFACTS_ONLY_NO_RUNTIME_AUTHORITY",
+        )
+        self.assertEqual(exception["protected_paths"], ["agent_runtime/cognitive_inheritance_r0/"])
+        self.assertIn("UNBOUND", exception["least_privilege_impact"])
+        self.assertIn("no model client", exception["minimal_build_scope"])
+        validate_contracts(
+            changed_paths=[
+                "agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json"
+            ]
+        )
 
     def test_expired_task149_draft_exception_is_rejected(self) -> None:
         ownership = load("os-executor-ownership-r1.json")

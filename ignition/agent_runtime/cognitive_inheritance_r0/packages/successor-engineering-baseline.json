@@ -1,0 +1,30 @@
+{
+  "schema_version": "successor-package-r0",
+  "package_id": "successor-engineering-baseline-r0",
+  "task_id": "IGNITION-20260916-179",
+  "package_kind": "ENGINEERING_GOVERNANCE_SUCCESSOR",
+  "status": "READY_FOR_INDEPENDENT_EVALUATION",
+  "source_transition_ref": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-transition.json",
+  "source_fixture_ref": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json",
+  "baseline_ref": "PRE_CAPABILITY_INHERITANCE_BASELINE@68565f2afb50989d2c2b0d346d774e3388702743",
+  "reconstruction_contract": {
+    "start_without_chat_history": true,
+    "required_inputs": ["Task172 Step13 freeze record", "exact baseline head", "seven workflow run records", "fixed-point and clean-clone evidence", "pre-capability claim ceiling"],
+    "steps": ["verify baseline identity", "reconstruct frozen scan inputs", "replay the dependency order in a bounded scratch surface", "keep structural result distinct from transfer result", "emit evaluator handoff"],
+    "output_requirements": ["exact-head references", "fixed-point observation", "clean-clone observation", "unknown cognitive-transfer field", "no model or weight operation"],
+    "forbidden_assumptions": ["green CI is cognitive evaluation", "fixed-point closure is model improvement", "baseline freeze authorizes Model-RSI", "Builder can adjudicate successor capability"]
+  },
+  "open_obligations": [
+    "Independent evaluator must attempt reconstruction without Builder context.",
+    "Independent evaluator must test a bounded continuation that is not the original freeze replay.",
+    "Owner/GPT must open a separate evaluator conversation before any verdict is recorded."
+  ],
+  "capability_interface_ref": "ignition/agent_runtime/cognitive_inheritance_r0/packages/capability-interface-r0.json",
+  "handoff": {
+    "builder_status": "MECHANICAL_PACKAGE_COMPLETE",
+    "builder_final_verdict": "NOT_EVALUATED_BY_BUILDER",
+    "independent_evaluator_required": true,
+    "stop_condition": "READY_FOR_INDEPENDENT_EVALUATION"
+  },
+  "claim_ceiling": "The package carries a repository method and its limits; it does not assert cognitive transfer, inheritance, model improvement, truth, or external validity."
+}

@@ -24,6 +24,9 @@ on:
       - 'ignition/tests/test_human_front_door.py'
       - 'ignition/tests/test_pr_front_door_audit.py'
       - 'ignition/tests/test_q33_fail_closed_fixtures.py'
+      - 'ignition/agent_runtime/cognitive_inheritance_r0/**'
+      - 'ignition/tools/validate_cognitive_inheritance_r0.py'
+      - 'ignition/tests/test_cognitive_inheritance_r0.py'
   push:
     branches:
       - 'agent/121q33-global-copyright-risk-and-rights-governance'

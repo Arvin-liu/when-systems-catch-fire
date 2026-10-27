@@ -1,0 +1,59 @@
+{
+  "schema_version": "complexity-budget-r0",
+  "budget_id": "cognitive-inheritance-complexity-r0",
+  "task_id": "IGNITION-20260916-179",
+  "budget_units": {"new_schema_families": 6, "new_runtime_dependencies": 0, "new_persistent_authorities": 0, "new_provider_bindings": 0},
+  "entries": [
+    {
+      "budget_entry_id": "ir-substrate",
+      "consumer": "Cognitive IR and transition fixtures",
+      "why_needed": "Make observable objects, relations, uncertainty, boundaries and lineage explicit without duplicating Foundation authority.",
+      "replaces_or_absorbs": ["ad hoc transition prose", "untyped fixture assertions"],
+      "downgrade_merge_delete_conditions": ["Merge object types when independent evaluation shows no distinct consumer.", "Delete a field only after a migration fixture proves it is not needed for reconstruction."],
+      "replay_validation": ["validate both real fixtures", "re-run canonical serialization", "preserve unknown relation"],
+      "owner_or_retirement_condition": "Owner or independent evaluator may retire a type after recording replacement and lineage.",
+      "status": "R0_BOUNDED"
+    },
+    {
+      "budget_entry_id": "transition-record",
+      "consumer": "Successor handoff and evolution history",
+      "why_needed": "A code diff alone cannot show anomaly, reframing, disposition or unresolved questions.",
+      "replaces_or_absorbs": ["implicit change narrative", "unstructured handoff context"],
+      "downgrade_merge_delete_conditions": ["Merge fields only when the evaluator can recover them from a smaller record.", "Delete only with a backward-readable adapter."],
+      "replay_validation": ["validate two transition records", "check builder verdict ceiling", "check final state"],
+      "owner_or_retirement_condition": "Retire only when the formal lifecycle gains an equivalent non-destructive transition authority.",
+      "status": "R0_BOUNDED"
+    },
+    {
+      "budget_entry_id": "evaluation-plane",
+      "consumer": "Independent evaluator package",
+      "why_needed": "Keep acceptance criteria and final verdict outside the Builder write surface.",
+      "replaces_or_absorbs": ["builder self-assessment", "ambiguous success language"],
+      "downgrade_merge_delete_conditions": ["Never merge the evaluator role into the Builder role.", "Narrow criteria only between sealed rounds with Owner authority."],
+      "replay_validation": ["check blind-first flag", "check builder cannot issue verdict", "check metrics remain not measured"],
+      "owner_or_retirement_condition": "Only Owner/GPT may assign an independent evaluator or retire the plane.",
+      "status": "R0_BOUNDED"
+    },
+    {
+      "budget_entry_id": "capability-interface",
+      "consumer": "Provider-neutral capability descriptions",
+      "why_needed": "Expose a minimal observable contract without binding a model, provider or weight mechanism.",
+      "replaces_or_absorbs": ["provider-specific capability assumptions"],
+      "downgrade_merge_delete_conditions": ["Merge duplicate operations after fixture-backed comparison.", "Delete an operation if no successor or evaluator consumes it."],
+      "replay_validation": ["validate UNBOUND provider/model fields", "check calibration status", "check rediscovery triggers"],
+      "owner_or_retirement_condition": "Retire an operation only after its consumer and replacement are recorded.",
+      "status": "R0_BOUNDED"
+    },
+    {
+      "budget_entry_id": "migration-adapter",
+      "consumer": "R0a to R0b fixture and future compatibility",
+      "why_needed": "Permit explicit evolution without silently deleting unknown relations or source provenance.",
+      "replaces_or_absorbs": ["implicit schema rewrite"],
+      "downgrade_merge_delete_conditions": ["Remove only after all R0a records have an auditable archival replacement.", "Never drop unknown relations during migration."],
+      "replay_validation": ["compare adapter output to expected fixture", "check top-level keys preserved", "check destructive_rewrite=false"],
+      "owner_or_retirement_condition": "Retire after a separately authorized migration closes the R0a population and records rollback.",
+      "status": "R0_OPTIONAL"
+    }
+  ],
+  "claim_ceiling": {"status": "COMPLEXITY_ACCOUNTING_ONLY", "text": "The budget limits R0 surface area and records retirement conditions; it does not establish capability, cognition, inheritance or performance."}
+}

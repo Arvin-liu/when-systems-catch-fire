@@ -1,0 +1,70 @@
+{
+  "schema_version": "independent-evaluation-package-r0",
+  "package_id": "independent-evaluation-package-r0",
+  "task_id": "IGNITION-20260916-179",
+  "experiment_status": "READY_FOR_INDEPENDENT_EVALUATION",
+  "roles": {
+    "builder": {"role_id": "BUILDER", "may_write": ["ignition/agent_runtime/cognitive_inheritance_r0/"], "may_issue_final_verdict": false, "assignment_status": "CURRENT_BUILDER"},
+    "evaluator": {"role_id": "INDEPENDENT_EVALUATOR", "may_write": ["independent evaluator result outside Builder package"], "may_issue_final_verdict": true, "assignment_status": "WAITING_FOR_OWNER_ASSIGNMENT"},
+    "adjudicator": {"role_id": "ADJUDICATOR", "may_write": ["adjudication record after evaluator result"], "may_issue_final_verdict": true, "assignment_status": "UNASSIGNED"}
+  },
+  "frozen_objective": "Test whether an independently launched successor can reconstruct the explicit representation, boundaries and methods from the R0 packages and continue a bounded task without treating structural conformance as cognitive inheritance.",
+  "frozen_criteria": [
+    {"criterion_id": "RECONSTRUCTION_FIDELITY", "name": "Reconstruction fidelity", "observable_question": "Can the successor recover the objects, relations, provenance and claim ceilings without hidden Builder context?", "evidence_required": ["blind-first reconstruction packet", "field-level provenance comparison"], "status": "FROZEN_NOT_YET_MEASURED"},
+    {"criterion_id": "CONTINUATION_CORRECTNESS", "name": "Continuation correctness", "observable_question": "Can the successor apply the recorded method to a bounded continuation while retaining unknowns and forbidden inferences?", "evidence_required": ["new bounded task output", "counterexample and boundary record"], "status": "FROZEN_NOT_YET_MEASURED"},
+    {"criterion_id": "NON_EQUIVALENCE_CONTROL", "name": "Non-equivalence control", "observable_question": "Does the evaluator distinguish mechanical package success from cognitive inheritance, model improvement or external validity?", "evidence_required": ["negative control", "independent verdict rationale"], "status": "FROZEN_NOT_YET_MEASURED"}
+  ],
+  "baseline": {
+    "identifier": "PRE_CAPABILITY_INHERITANCE_BASELINE",
+    "exact_head": "68565f2afb50989d2c2b0d346d774e3388702743",
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "claim_ceiling": "Repository-local architecture and mechanical conformance only; no cognitive inheritance, model improvement, external validity, Owner acceptance or epistemic acceptance."
+  },
+  "fixture_refs": [
+    "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json",
+    "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json"
+  ],
+  "blind_first": {
+    "required": true,
+    "packet_order": "TASK_ONLY_THEN_FIXTURE_THEN_BASELINE",
+    "unblind_authority": "INDEPENDENT_EVALUATOR",
+    "sealed_inputs": ["frozen objective", "frozen criteria", "fixture hashes", "baseline exact head"]
+  },
+  "builder_write_surface": [
+    "R0 schemas and repository-local fixtures",
+    "mechanical validator output",
+    "migration adapter test output"
+  ],
+  "evaluator_write_surface": [
+    "independent reconstruction record",
+    "continuation task output",
+    "independent verdict and uncertainty record"
+  ],
+  "metrics": [
+    {"metric_id": "reconstruction_fidelity", "name": "Reconstruction fidelity", "unit": "frozen evaluator score", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "continuation_correctness", "name": "Continuation correctness", "unit": "frozen evaluator result", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "provenance_resolution_rate", "name": "Provenance resolution rate", "unit": "fraction of references resolved", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "structural_compression_ratio", "name": "Structural compression ratio", "unit": "package size / source context size", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "inheritance_lag", "name": "Inheritance lag", "unit": "steps or time to executable state", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "migration_cost", "name": "Migration cost", "unit": "changed contracts, code and data", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "regression_retention", "name": "Regression retention", "unit": "retained bounded behaviors", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "governance_overhead", "name": "Governance overhead", "unit": "evaluation cost / effective task cost", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "evaluator_disagreement", "name": "Evaluator disagreement", "unit": "disagreement between evaluators", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "schema_pressure", "name": "Schema pressure", "unit": "unknown or migration requests / artifacts", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "boundary_retention", "name": "Boundary and unknown retention", "unit": "frozen evaluator result", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false}
+  ],
+  "prohibited_shortcuts": [
+    "Do not count JSON schema validity as cognitive inheritance.",
+    "Do not use the Builder's own verdict as independent evaluation.",
+    "Do not substitute CI green for continuation correctness.",
+    "Do not infer model improvement or weight change.",
+    "Do not silently fill unknowns from chat history.",
+    "Do not rewrite the sealed criteria after observing a result."
+  ],
+  "final_verdict": {
+    "cognitive_inheritance_verdict": "NOT_EVALUATED_BY_BUILDER",
+    "structured_conformance_status": "MECHANICALLY_VALIDATED",
+    "external_validity_status": "UNKNOWN",
+    "owner_acceptance": "NOT_REQUESTED"
+  }
+}
