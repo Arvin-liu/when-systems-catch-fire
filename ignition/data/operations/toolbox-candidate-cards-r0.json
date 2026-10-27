@@ -13086,6 +13086,238 @@
           "Remove this optional catalog entry, wrapper, schema, docs, fixtures, tests, route/source/C1 evidence, and real-task output from the isolated branch; regenerate identity cards and TOOLBOX.md; preserve source digests and the precision limitation evidence if useful."
         ]
       }
+    },
+    {
+      "tool_id": "research.compare_noaa_sf6_source_surfaces",
+      "display_name": {
+        "zh": "NOAA SF6 双表面比较器",
+        "en": "NOAA SF6 Source-Surface Comparator"
+      },
+      "description": "Compare NOAA GML’s fixed rendered annual global SF6 growth page with its fixed raw table over a bounded year range, preserving both reported values, uncertainties in ppt, retrieval metadata, response digests, and literal differences.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; NOAA GML source-use page requests fair credit for its measurements and data.",
+      "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_compare_noaa_sf6_surfaces.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_compare_noaa_sf6_surfaces.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_compare_noaa_sf6_surfaces.py",
+          "role": "FIXED_SF6_ENDPOINT_READ_ONLY_WRAPPER"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
+          "role": "SHARED_BOUNDED_FETCH_PARSE_AND_COMPARE_ENGINE"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-source-surface-comparison-input-r0.schema.json",
+          "role": "BOUNDED_SF6_YEAR_RANGE_INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-source-surface-comparison-output-r0.schema.json",
+          "role": "SF6_PROVENANCE_AND_COMPARISON_OUTPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_compare_noaa_sf6_surfaces.py",
+          "role": "CAPTURED_SF6_SOURCE_FIXTURE_AND_MOCKED_NETWORK_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_compare_noaa_sf6_surfaces_routing.py",
+          "role": "DEFAULT_OFF_AND_TASK_SCOPE_ROUTE_REPLAY"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_READABLE_IDENTITY_CARD_PROJECTION_TEST"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-route-profile-r0.json",
+          "role": "TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-route-evidence-r0.json",
+          "role": "CANDIDATE_ROUTE_EXPERIMENT_NOT_EXECUTION_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-input-r0.json",
+          "role": "REAL_BOUNDED_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-output-r0.json",
+          "role": "REAL_TWO_SURFACE_TASK_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-evidence-r0.json",
+          "role": "REAL_TASK_OUTCOME_WITH_TWO_RESPONSE_DIGESTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-source-binding-r0.json",
+          "role": "FIXED_SOURCE_AND_CLAIM_LIMIT_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-c1-evidence-r0.json",
+          "role": "C1_RAW_ONLY_VS_PAIRED_SURFACE_COMPARISON"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-route-choice-real-task-evidence-r0.json",
+          "role": "REAL_TASK_ROUTE_WIDTH_AND_REDUNDANCY_OBSERVATION"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-sf6-source-surface-comparison.md",
+          "role": "USAGE_LIMITS_AND_TASK_FIT"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+      ],
+      "good_for": [
+        "Comparing the same bounded year range on NOAA GML’s rendered annual SF6 growth page and fixed raw table, including both growth values and stated uncertainties in ppt.",
+        "Detecting literal page/raw differences, missing years, and uncertainty precision differences while retaining each retrieval time, HTTP metadata, and response digest.",
+        "Tasks whose contract explicitly requires both contemporary SF6 source surfaces; the raw-only SF6 reader cannot provide the page or paired comparison."
+      ],
+      "not_for": [
+        "Authenticating NOAA, deciding which surface is correct, explaining a difference, validating measurements, or asserting a scientific conclusion.",
+        "Estimating SF6 emissions, attributing sources or sectors, or making causal claims from atmospheric growth.",
+        "Arbitrary URLs, station-level/monthly observations, retained raw-response archives, or pinned historical comparisons.",
+        "Raw-table-only tasks for which the one-request SF6 lookup is sufficient."
+      ],
+      "only_if": [
+        "The caller has decided two public NOAA GML requests are appropriate and passes --allow-public-network for this invocation.",
+        "The request contains exactly schema_version, start_year, and end_year; years are JSON integers from 1998 through 2100 and the inclusive range is at most 50 years.",
+        "A route explicitly includes this candidate ID and allows exactly gml.noaa.gov; route planning does not grant network or execution permission."
+      ],
+      "counterindicated_when": [
+        "Public network access is disallowed or the task does not need a contemporaneous rendered-page/raw-table comparison.",
+        "A pinned historical response, source authentication, emissions inventory, attribution, causal explanation, or independent scientific validation is required.",
+        "The task requests another species, station data, monthly data, or only a raw-table series where one fixed GET is sufficient."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+      ],
+      "output_types": [
+        "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+        "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_compare_noaa_sf6_surfaces.py",
+          "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When separately invoked with --allow-public-network, sends exactly two HTTPS GET requests to NOAA GML’s fixed SF6 page and raw-table paths; redirects are not followed.",
+        "Writes only a bounded JSON result to stdout and errors to stderr; it does not write repository files, retain raw response bodies, or transmit caller-supplied URLs."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Exactly two fixed public HTTPS GET requests are attempted. Monetary cost, stable latency, long-run source availability, and parser reliability have not been compared."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The SF6 raw-only reader uses one fixed GET and is sufficient for raw-table-only tasks; it cannot return the rendered-page values, page uncertainty precision, or literal page/raw differences."
+        },
+        {
+          "tool_id": "research.compare_noaa_co2_source_surfaces",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CO2 comparator has fixed CO2 endpoints and ppm fields; it cannot retrieve or report SF6."
+        },
+        {
+          "tool_id": "research.compare_noaa_ch4_source_surfaces",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CH4 comparator has fixed methane endpoints and ppb fields; it cannot retrieve or report SF6."
+        },
+        {
+          "tool_id": "research.compare_noaa_n2o_source_surfaces",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The N2O comparator has fixed N2O endpoints and ppb fields; it cannot retrieve or report SF6."
+        }
+      ],
+      "fallback": "If only raw-table values are needed, use the fixed SF6 raw-only reader with its separate per-call network decision. If either surface is unavailable or malformed, retain the explicit acquisition/parse status and do not infer agreement or prefer the other surface.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_compare_noaa_sf6_surfaces.py",
+          "ignition/tests/test_toolbox_compare_noaa_sf6_surfaces_routing.py",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Without --allow-public-network, the CLI sends zero requests and produces no comparison result.",
+          "Duplicate JSON keys, Boolean years, extra URL fields, reversed/out-of-range years, and ranges over 50 inclusive years fail before network access.",
+          "Only the two fixed HTTPS paths on gml.noaa.gov are queried; redirects, non-text content, oversized or slow bodies, wrong-species markers, malformed rows, and invalid uncertainties fail closed.",
+          "The default route excludes the candidate; explicit route admission requires gml.noaa.gov and still leaves execution_authorized=false.",
+          "A page/raw uncertainty difference is reported literally without ranking either surface; missing years are not filled with zero.",
+          "For a raw-table-only task, the SF6 one-request lookup remains sufficient and this two-request comparator is counterindicated."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task requiring both NOAA GML SF6 annual-growth surfaces.",
+        "Require the task route to list gml.noaa.gov exactly; route planning is neither network permission nor execution authorization.",
+        "Every actual invocation separately requires --allow-public-network and a task-level decision to make both requests.",
+        "Do not select for raw-table-only tasks, other gases, station/monthly data, emissions, attribution, causal analysis, or pinned historical comparisons."
+      ],
+      "claim_ceiling": "Exact selected annual atmospheric SF6 mole-fraction increases and stated uncertainties from two NOAA GML surfaces at retrieval time, plus arithmetic differences. This does not authenticate NOAA, rank the surfaces, validate measurements, estimate SF6 emissions, attribute sources, explain causes, or establish a scientific conclusion.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Compare the NOAA GML SF6 rendered annual-growth page with its fixed raw table for a bounded year range and report both provider values, uncertainties, exact differences, missing years, and separate retrieval receipts."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "One live matched 2023–2025 SF6 page/raw comparison plus a same-range live raw-only lookup with identical raw response digest. The page and raw growth values match in this observation while the raw uncertainty is rounded to 0.00 ppt and the page reports 0.004 ppt. The raw-only lookup needs one request and is sufficient for raw-only tasks; the paired comparator makes a second fixed request to provide the rendered values and arithmetic difference. No overall accuracy, reliability, availability, latency, or monetary-cost ranking is supported.",
+        "compared_tool_ids": [
+          "research.lookup_noaa_global_sf6_annual_growth",
+          "research.compare_noaa_co2_source_surfaces",
+          "research.compare_noaa_ch4_source_surfaces",
+          "research.compare_noaa_n2o_source_surfaces"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-source-binding-r0.json",
+          "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-sf6-route-choice-real-task-evidence-r0.json"
+        ],
+        "findings": [
+          "The rendered page and raw table returned the same 2023–2025 annual growth values in this live observation; the raw table uncertainty text is rounded and loses the page’s 0.004 ppt precision.",
+          "The existing SF6 raw-only reader uses one request and remains preferable for a raw-only contract; this comparator uses two requests and is appropriate when both surfaces and their difference are required.",
+          "Combining the raw-only reader with the comparator caused a third request in the observed matched evidence and returned no new field for the paired-comparison contract. No quality gain or source ranking is established.",
+          "The existing fixed CO2, CH4, and N2O comparators cannot supply SF6 values; no incumbent is retired."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Optional default-off SF6 paired-source comparator with one live task outcome and focused negative controls; the raw-only SF6 reader retains a distinct one-request use case, and other-gas comparators retain their distinct fixed endpoints."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry entry, default route, permission grant, or incumbent lifecycle change is made.",
+          "The SF6 wrapper reuses the shared bounded comparison engine while keeping distinct fixed URLs, species markers, year bounds, schemas, source receipts, and identity-card scope.",
+          "Use the existing SF6 raw-only reader when the task contract asks only for raw-table values; do not run both tools just to increase tool count."
+        ],
+        "rollback_steps": [
+          "Remove the optional SF6 comparator card, wrapper, schemas, documentation, fixtures, tests, source/C1/route/task-choice evidence, and real-task output from the isolated branch; regenerate identity cards and TOOLBOX.md.",
+          "Preserve source response digests, the observed precision difference, and the C1 disposition as history if the implementation is retired.",
+          "Keep the shared NOAA comparison core while other gas comparators import it."
+        ]
+      }
     }
   ]
 }

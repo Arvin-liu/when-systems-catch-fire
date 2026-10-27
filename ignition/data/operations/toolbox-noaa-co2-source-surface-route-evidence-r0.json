@@ -1,9 +1,9 @@
 {
   "schema_version": "toolbox-noaa-co2-source-surface-route-evidence-r0",
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_ROUTING_EXPERIMENT",
-  "observed_at_utc": "2026-10-27T00:26:58Z",
+  "observed_at_utc": "2026-10-27T00:44:31Z",
   "candidate_tool_id": "research.compare_noaa_co2_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-co2-source-surface-route-profile-r0.json",
@@ -413,7 +413,7 @@
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "d2f0dc7bee88ab6cab68f61840bcdea88c78478dcd71dbd85bd595101314393b",
+      "planner_output_sha256": "34b4579cda3a9ffcb4ff611e1b27c196cc0e7b5e35dc77b85ce7d502af030d26",
       "decision": "INCOMPLETE"
     },
     {
@@ -859,7 +859,7 @@
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "ccfc39c1525cd83a17c7b9d6383bf561153832bcf0cea29d059003dacc56c962",
+      "planner_output_sha256": "13ecd04929ef12f5fa66c4c485a56376ee6a2a6348da220cca89285b600b5007",
       "decision": "COMPLETE"
     },
     {
@@ -1262,7 +1262,7 @@
       },
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "70a084776bf302e9eaa198eee7ceb8c1740ad48bbfb6967e342b29aa156a3377",
+      "planner_output_sha256": "a0cdf29630a9400b79ac549c5b3736d9792e9e71838194a71cbb00801b3932fc",
       "decision": "INCOMPLETE"
     }
   ],
@@ -1289,19 +1289,25 @@
       "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
       "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
       "replayed_at_utc": "2026-10-27T00:26:58Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "4a741e8a70972ceede8637e243effea3ee528c63",
+      "superseded_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+      "superseded_observed_at_utc": "2026-10-27T00:26:58Z",
+      "replayed_at_utc": "2026-10-27T00:44:31Z"
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-27T00:26:58Z",
+    "replayed_at_utc": "2026-10-27T00:44:31Z",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "candidate_invoked": false,
-    "replay_result_sha256": "aa22f5f44c63c31723a9e5845ecb7040ce6ee90112ee37176c59a30b21a38ed0",
-    "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+    "replay_result_sha256": "954bc240ee6eaa7737c5700366749a2b25d420d201b814238066c8c9023a7132",
+    "previous_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   }
 }

@@ -4,7 +4,7 @@
   "observed_on": "2026-10-27",
   "candidate_tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
   "candidate_tool_version": "0.2.0",
-  "candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profiles": [
@@ -61,7 +61,7 @@
         "Four fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span.",
         "Same-year separate NOAA GML CO2 (ppm) and CH4 (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic."
       ],
-      "planner_output_sha256": "115775bec9cf202c08dd60025b1d4e2b9018dc1f3f10a9f35e92c5a34f436580",
+      "planner_output_sha256": "c9cc5de8562cada4858509d18f9906f062f7ba0f182b49aff305b379233fd17b",
       "candidate_invoked": false,
       "network_calls_made": 0
     },
@@ -97,7 +97,7 @@
       ],
       "actual_candidate_rejections": [],
       "actual_unmet_outputs": [],
-      "planner_output_sha256": "6e662260a04fc493bb6625aabf94fdf1b262f6dfabb51b7ea46bb95bb8cf1a33",
+      "planner_output_sha256": "48c1662825c0eadca1e360d841f570afb5d259ae1081a50add194e1482f0ec50",
       "candidate_invoked": false,
       "network_calls_made": 0
     },
@@ -140,7 +140,7 @@
         "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim.",
         "Six fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
       ],
-      "planner_output_sha256": "4c33e8a1f93b9378908bac364bffb94a8f44021174cb335789b422037492572b",
+      "planner_output_sha256": "978f5c702202e507fbbab9126b661e555945e7f7ab83ee4b6c276ba71a4536dc",
       "candidate_invoked": false,
       "network_calls_made": 0
     },
@@ -176,7 +176,7 @@
       ],
       "actual_candidate_rejections": [],
       "actual_unmet_outputs": [],
-      "planner_output_sha256": "f32928c1986e51975aa8e7c1dcc93614d230202cedac9d3bee9dc8561ff50c2a",
+      "planner_output_sha256": "a96bf9f6545a9450ed284c5cb4d19bedc57b153cea96e1d60a4f70fba8e82c68",
       "candidate_invoked": false,
       "network_calls_made": 0
     },
@@ -219,7 +219,7 @@
       "actual_unmet_outputs": [
         "Single-gas annual N2O source comparison only; no year alignment with CO2 or CH4 is required."
       ],
-      "planner_output_sha256": "51f1440672625f1c6c2014ce458bae0b314b35cee6a21bc6ec811f38600e2bb6",
+      "planner_output_sha256": "ef5bd7f9c4baa54434bd8902ba53ebcf0c13a3e20d2c6a56206806495c5ba03b",
       "candidate_invoked": false,
       "network_calls_made": 0
     }
@@ -233,5 +233,26 @@
     "execution_authorized": false,
     "candidate_invoked": false,
     "network_calls_made": 0
+  },
+  "catalog_replay_history": [
+    {
+      "superseded_evidence_git_blob_sha1": "05d46cb9aac7c1361a5114e740c23730eb6124df",
+      "superseded_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+      "superseded_observed_at_utc": "2026-10-27",
+      "replayed_at_utc": "2026-10-27T00:44:31Z"
+    }
+  ],
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "replayed_at_utc": "2026-10-27T00:44:31Z",
+    "route_trials_replayed": 5,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "replay_result_sha256": "1097e9f04fcda4170e10e1d7b332a3518ec9d53eea80b3c2c7e924f0fbe77c90",
+    "previous_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   }
 }

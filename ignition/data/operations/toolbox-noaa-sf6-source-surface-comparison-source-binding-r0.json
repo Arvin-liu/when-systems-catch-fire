@@ -1,0 +1,98 @@
+{
+  "schema_version": "toolbox-noaa-sf6-source-surface-comparison-source-binding-r0",
+  "observed_at_utc": "2026-10-27T00:33:11Z",
+  "provider": "NOAA Global Monitoring Laboratory",
+  "source_page": {
+    "url": "https://gml.noaa.gov/ccgg/trends_sf6/",
+    "path": "/ccgg/trends_sf6/",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_at_utc": "2026-10-27T00:33:10Z",
+    "response_bytes": 37699,
+    "response_sha256": "5e396c8a1a8a6609c5af5253f412e696404410d89041e98152749706c4fffcf4",
+    "records": [
+      {
+        "annual_increase_ppt": "0.41",
+        "uncertainty_ppt": "0.004",
+        "year": 2023
+      },
+      {
+        "annual_increase_ppt": "0.40",
+        "uncertainty_ppt": "0.004",
+        "year": 2024
+      },
+      {
+        "annual_increase_ppt": "0.48",
+        "uncertainty_ppt": "0.004",
+        "year": 2025
+      }
+    ],
+    "raw_response_retained": false
+  },
+  "source_raw_table": {
+    "url": "https://gml.noaa.gov/webdata/ccgg/trends/sf6/sf6_gr_gl.txt",
+    "path": "/webdata/ccgg/trends/sf6/sf6_gr_gl.txt",
+    "http_status": 200,
+    "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+    "retrieved_at_utc": "2026-10-27T00:33:11Z",
+    "response_bytes": 3002,
+    "response_sha256": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927",
+    "records": [
+      {
+        "annual_increase_ppt": "0.41",
+        "uncertainty_ppt": "0.00",
+        "year": 2023
+      },
+      {
+        "annual_increase_ppt": "0.40",
+        "uncertainty_ppt": "0.00",
+        "year": 2024
+      },
+      {
+        "annual_increase_ppt": "0.48",
+        "uncertainty_ppt": "0.00",
+        "year": 2025
+      }
+    ],
+    "raw_response_retained": false
+  },
+  "comparison_output": {
+    "path": "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-output-r0.json",
+    "sha256": "97936f7731c16b3749f4d87e8f0312202203d6eda465f99ed1417099b57deaa4",
+    "tool_source_sha256": "c340fffc227b057d007e320e38bb64b61bc9e9a301526f127066e8091458450d",
+    "comparison_status": "DIFFERENT",
+    "rows": [
+      {
+        "page_annual_increase_ppt": "0.41",
+        "page_minus_raw_annual_increase_ppt": "0.00",
+        "page_minus_raw_uncertainty_ppt": "0.004",
+        "page_uncertainty_ppt": "0.004",
+        "raw_table_annual_increase_ppt": "0.41",
+        "raw_table_uncertainty_ppt": "0.00",
+        "status": "NUMERIC_DIFFERENCE",
+        "year": 2023
+      },
+      {
+        "page_annual_increase_ppt": "0.40",
+        "page_minus_raw_annual_increase_ppt": "0.00",
+        "page_minus_raw_uncertainty_ppt": "0.004",
+        "page_uncertainty_ppt": "0.004",
+        "raw_table_annual_increase_ppt": "0.40",
+        "raw_table_uncertainty_ppt": "0.00",
+        "status": "NUMERIC_DIFFERENCE",
+        "year": 2024
+      },
+      {
+        "page_annual_increase_ppt": "0.48",
+        "page_minus_raw_annual_increase_ppt": "0.00",
+        "page_minus_raw_uncertainty_ppt": "0.004",
+        "page_uncertainty_ppt": "0.004",
+        "raw_table_annual_increase_ppt": "0.48",
+        "raw_table_uncertainty_ppt": "0.00",
+        "status": "NUMERIC_DIFFERENCE",
+        "year": 2025
+      }
+    ]
+  },
+  "binding_limit": "This binds two fixed NOAA response digests and the parser output at their individual retrieval times; it is not an atomic paired snapshot, source authentication, measurement validation, or scientific conclusion."
+}
