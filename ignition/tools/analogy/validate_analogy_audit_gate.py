@@ -65,6 +65,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+REPOSITORY_ROOT = ROOT.parent
 sys.path.insert(0, str(ROOT))
 from tools.observation.validate_observation_prediction_gate import _verify_git_binding
 SCHEMA_PATH = ROOT / "schemas" / "analogy" / "analogy-audit-contract.schema.json"
@@ -181,10 +182,10 @@ def check_runtime_current_head(bundle, current_head):
     errs = []
     if not current_head or not HEAD_RE.fullmatch(str(current_head)):
         return ["--current-head must supply an exact 40-hex commit"]
-    kind = subprocess.run(["git", "cat-file", "-t", current_head], cwd=ROOT, capture_output=True, text=True)
+    kind = subprocess.run(["git", "cat-file", "-t", current_head], cwd=REPOSITORY_ROOT, capture_output=True, text=True)
     if kind.returncode or kind.stdout.strip() != "commit":
         return [f"--current-head {current_head} is not an existing commit object"]
-    actual = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True)
+    actual = subprocess.run(["git", "rev-parse", "HEAD"], cwd=REPOSITORY_ROOT, capture_output=True, text=True)
     if actual.returncode or actual.stdout.strip() != current_head:
         errs.append(f"--current-head {current_head} does not equal checked-out HEAD {actual.stdout.strip()}")
     return errs

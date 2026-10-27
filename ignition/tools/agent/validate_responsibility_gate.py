@@ -37,6 +37,7 @@ import sys
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+REPOSITORY_ROOT = ROOT.parent
 
 GATE_PASS = 0
 SCHEMA_ERROR = 2
@@ -105,7 +106,9 @@ def _repo_relative_path(raw):
 
 
 def _git(*args):
-    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, check=False)
+    # Evidence paths are repository-relative; the project code now lives under
+    # ignition/, so Git tree pathspecs must be evaluated from the repository root.
+    return subprocess.run(["git", *args], cwd=REPOSITORY_ROOT, capture_output=True, check=False)
 
 
 def _read_git_blob(binding):

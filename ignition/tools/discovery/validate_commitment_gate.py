@@ -38,6 +38,7 @@ import sys
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+REPOSITORY_ROOT = ROOT.parent
 SCHEMA_PATH = ROOT / "schemas" / "discovery" / "commitment-claim.schema.json"
 
 # Exit codes
@@ -177,7 +178,7 @@ def _repo_relative_path(raw):
 
 def _git_bytes(*args):
     return subprocess.run(
-        ["git", *args], cwd=ROOT, capture_output=True, check=False
+        ["git", *args], cwd=REPOSITORY_ROOT, capture_output=True, check=False
     )
 
 

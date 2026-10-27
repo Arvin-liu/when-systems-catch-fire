@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.16.0",
+  "current_map_version": "0.17.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -119,7 +119,7 @@
     }
   ],
   "historical_map_version": "0.14.0",
-  "layout_version": "2.0.0",
+  "layout_version": "2.1.0",
   "node_order": {
     "boundaries": [
       "no_l7",
@@ -157,7 +157,11 @@
       "copyright_governance_source_rights",
       "copyright_governance_tests",
       "licensing",
-      "sustainability"
+      "sustainability",
+      "symbolic_power_perspective_contract",
+      "symbolic_power_perspective_gate_validator",
+      "symbolic_power_perspective_pilot"
+
     ],
     "layers": [
       "l0",

@@ -44,6 +44,7 @@ from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+REPOSITORY_ROOT = ROOT.parent
 SCHEMA_PATH = ROOT / "schemas" / "observation" / "observation-prediction-contract.schema.json"
 
 GATE_PASS = 0
@@ -121,7 +122,7 @@ def _repo_relative_path(raw):
 
 
 def _git(*args):
-    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, check=False)
+    return subprocess.run(["git", *args], cwd=REPOSITORY_ROOT, capture_output=True, check=False)
 
 
 def _verify_git_binding(binding):

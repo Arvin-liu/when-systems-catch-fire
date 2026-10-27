@@ -4,6 +4,7 @@ import copy, hashlib, json, subprocess
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT=ROOT.parent
 OUT=ROOT/"data/failure/fixtures"
 PILOT=ROOT/"data/failure/pilot-q39-failure-lineage.json"
 HEADS={"q36":"e4ca5350a3c68e61031e3205eaca9f2665799a08","q37":"7a01b1958c3f6b6eff559be85ec5e47eecff313c","q38":"d5cf0f0846206d3c47463f66697d2d8bf7d4aca3","q39":"824ff7f713303b18bca94b05de3f4b6530ffff51"}
@@ -17,8 +18,8 @@ def digest(value):
     return "sha256:"+hashlib.sha256(raw).hexdigest()
 
 def git_binding(path,head):
-    raw=subprocess.check_output(["git","show",f"{head}:{path}"],cwd=ROOT)
-    blob=subprocess.check_output(["git","rev-parse",f"{head}:{path}"],cwd=ROOT,text=True).strip()
+    raw=subprocess.check_output(["git","show",f"{head}:{path}"],cwd=REPOSITORY_ROOT)
+    blob=subprocess.check_output(["git","rev-parse",f"{head}:{path}"],cwd=REPOSITORY_ROOT,text=True).strip()
     return {"path":path,"exact_commit":head,"git_blob":blob,"sha256":"sha256:"+hashlib.sha256(raw).hexdigest()}
 
 def source(sid,task,path,head):

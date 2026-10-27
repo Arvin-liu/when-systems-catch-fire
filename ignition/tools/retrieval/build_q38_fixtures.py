@@ -7,6 +7,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT = ROOT.parent
 OUT = ROOT / "data/retrieval"
 FX = OUT / "fixtures"
 Q37 = "7a01b1958c3f6b6eff559be85ec5e47eecff313c"
@@ -20,8 +21,8 @@ def digest(text):
 
 
 def git_binding(path, commit=Q37):
-    raw = subprocess.check_output(["git", "show", f"{commit}:{path}"], cwd=ROOT)
-    blob = subprocess.check_output(["git", "rev-parse", f"{commit}:{path}"], cwd=ROOT, text=True).strip()
+    raw = subprocess.check_output(["git", "show", f"{commit}:{path}"], cwd=REPOSITORY_ROOT)
+    blob = subprocess.check_output(["git", "rev-parse", f"{commit}:{path}"], cwd=REPOSITORY_ROOT, text=True).strip()
     return {"path": path, "exact_commit": commit, "git_blob": blob,
             "sha256": "sha256:" + hashlib.sha256(raw).hexdigest()}
 
