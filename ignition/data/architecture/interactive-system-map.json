@@ -10,8 +10,8 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.6.0",
-    "topology_version": "1.13.0",
+    "component_registry_version": "2.7.0",
+    "topology_version": "1.14.0",
     "layout_version": "2.0.0"
   },
   "layout": {
@@ -1710,9 +1710,9 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 100,
+    "registry_components": 104,
     "visible_nodes": 87,
-    "hidden_components": 13,
+    "hidden_components": 17,
     "hidden_representatives": {
       "foundation_data": "foundation",
       "historical_reports": "current_state",
@@ -1726,7 +1726,11 @@
       "system_map": "current_state",
       "system_map_layout": "sync",
       "system_map_projection": "sync",
-      "maintenance_pack": "domain_pack_contract"
+      "maintenance_pack": "domain_pack_contract",
+      "openalex_adapter_r1": "research_pack_reos_light",
+      "research_workflow_slot": "research_pack_reos_light",
+      "crossref_verifier_r1": "research_pack_reos_light",
+      "component_validation_router": "iteration"
     },
     "orphan_components": []
   }

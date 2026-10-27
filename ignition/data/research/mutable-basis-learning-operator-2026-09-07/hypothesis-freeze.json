@@ -1,0 +1,11 @@
+{
+  "H0": "OPERATOR_RECONSTRUCTION_FAILS",
+  "H1": "MUTABLE_OPERATOR_VALID / CURRENT_BASIS_STABLE",
+  "H2": "GENERATOR_LOCK_IN_CAUSAL_SUPPORT",
+  "H3": "LOGICAL_CONTINUITY_MATTERS_FOR_BASIS_LEARNING",
+  "H4": "BASIS_ESCAPE_CANDIDATE",
+  "H5": "UNDERDETERMINED",
+  "definitions_immutable_after_freeze": true,
+  "frozen_before_blind_run": true,
+  "task_id": "IGNITION-20260907-163"
+}
