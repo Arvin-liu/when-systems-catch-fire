@@ -13,6 +13,7 @@ import sys
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT = ROOT.parent
 SCHEMA = ROOT / "schemas/symbolic/symbolic_power_perspective-contract.schema.json"
 PARENT_TASK = "121Q39-REPAIR-R1"
 PARENT_HEAD = "99ab601a48dd45972b238e468bc8e3002d648c98"
@@ -94,7 +95,9 @@ def repository_relative_path(raw):
 
 
 def git(*args):
-    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, check=False)
+    # Evidence paths are repository-relative, while this tool is nested under
+    # ignition/; resolve historical tree entries from the repository root.
+    return subprocess.run(["git", *args], cwd=REPOSITORY_ROOT, capture_output=True, check=False)
 
 
 def schema_errors(bundle):

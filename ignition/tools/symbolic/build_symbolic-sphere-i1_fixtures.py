@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT = ROOT.parent
 PILOT = ROOT / "data/symbolic/pilot-symbolic-sphere-i1.json"
 FIXTURES = ROOT / "data/symbolic/fixtures"
 EVIDENCE_COMMIT = "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb"
@@ -17,7 +18,9 @@ Q39_REPAIR_HEAD = "99ab601a48dd45972b238e468bc8e3002d648c98"
 
 
 def git(*args):
-    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, check=True)
+    # Repository-relative paths in evidence records bind to Git's repository
+    # tree, even though this tool and its data now live under ignition/.
+    return subprocess.run(["git", *args], cwd=REPOSITORY_ROOT, capture_output=True, check=True)
 
 
 def repository_binding():
