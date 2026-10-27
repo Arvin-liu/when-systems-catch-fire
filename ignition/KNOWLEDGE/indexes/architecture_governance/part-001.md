@@ -1904,6 +1904,11 @@
   - 可搜索名称：NFC-e3842c0326328618 / \[22 本书验证案例候选\]\(book-validation-22-cases-20260709.md\)
   - 来源：`docs/meta-protocols/README.md`
   - 依赖：—；被引用：—
+- [\[`cross-contract-failure-casebook-2026-09-05.md`\]\(./cross-contract-failure-casebook-2026-09-05.md\) — 逐案 pre-outcome 与 un](../../../docs/governance/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ce5b5e084c3e3145 / \[`cross-contract-failure-casebook-2026-09-05.md`\]\(./cross-contract-failure-casebook-2026-09-05.md\) — 逐案 pre-outcome 与 un
+  - 来源：`docs/governance/README.md`
+  - 依赖：—；被引用：—
 - [\[`current-facts.json`\]\(data/architecture/current-facts.json\) 为准：点火是 OS /](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e85572a856471dd2 / \[`current-facts.json`\]\(data/architecture/current-facts.json\) 为准：点火是 OS /
@@ -2497,10 +2502,5 @@
 - [_issue\(issues, "DUPLICATE_ID", f"{item_path}.artifact_id", "artifact id is not unique"\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9ed0757543b7dace / _issue\(issues, "DUPLICATE_ID", f"{item_path}.artifact_id", "artifact id is not unique"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "DUPLICATE_ID", f"{item_path}.request_id", "evidence request id is not unique"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d1ce245ba8ffd68b / _issue\(issues, "DUPLICATE_ID", f"{item_path}.request_id", "evidence request id is not unique"\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-257\]\( \) \| \[预测编码回路自生成\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3923efdb15a20232 / \| \[C-257\]\( \) \| \[预测编码回路自生成\]\( \) \| 暂无内容 / No content \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-263\]\( \) \| \[缓存倒U型验证\]\( \) \| 暂无内容 / No content \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ab458bef405241c1 / \| \[C-263\]\( \) \| \[缓存倒U型验证\]\( \) \| 暂无内容 / No content \|
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ee201115bd359062 / –12 ledger. It records repository evidence and bounded claims only. The
   - 来源：`reports/operations/ignition-124-progress.md`
-  - 依赖：—；被引用：—
-- [— IGNITION-20260824-137-VALIDATED-LIVE-COMPLETION-RECONCILIATION-R1 — Current continuation](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ac36586fba5e05a9 / — IGNITION-20260824-137-VALIDATED-LIVE-COMPLETION-RECONCILIATION-R1 — Current continuation
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

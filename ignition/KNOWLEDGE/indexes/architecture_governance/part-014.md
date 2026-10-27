@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [是否有 pending**：是（普遍性 pending）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ca2163ac9bc5c5d3 / 是否有 pending**：是（普遍性 pending）。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
 - [是否有候选进入高门槛？** 没有。高门槛 CD-X 数为 0，所有 exploratory candidate 均保持未验证上限。](../../../reports/governance/task-IGNITION-20260908-165.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-26688d535419bb30 / 是否有候选进入高门槛？** 没有。高门槛 CD-X 数为 0，所有 exploratory candidate 均保持未验证上限。
@@ -2497,10 +2502,5 @@
 - [证据状态：** 语篇描述充分；“意合／形合”只能作为梯度，不是二分本质。](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2847851f320dc8cd / 证据状态：** 语篇描述充分；“意合／形合”只能作为梯度，不是二分本质。
-  - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [证据状态：** 语音、加工和文体证据存在；文学质量不能由标点统计推出。](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5e84381cac241b56 / 证据状态：** 语音、加工和文体证据存在；文学质量不能由标点统计推出。
   - 来源：`docs/language-thought/dimensional-basis.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [record = _mapping\(artifact, item_path, issues\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ffc9d1939ed361e6 / record = _mapping\(artifact, item_path, issues\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - [Record claim events and unknown retention rather than using tone, repeated vocabulary, or an LLM judge as a truth score.](../../../docs/architecture/esi-literature-boundary-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ea3c6df79a06762f / Record claim events and unknown retention rather than using tone, repeated vocabulary, or an LLM judge as a truth score.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-463726833bf6ac71 / The volume ladder rises from a mean of 9.545455 factors at 10% to 9.954545 at 50%, then remains at 9.954545 through 100%
   - 来源：`docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md`
-  - 依赖：—；被引用：—
-- [The work distinguishes prompt identity, context equality and intended tail-resumptive correspondence but supplies no gen](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1f5fb160fb67c001 / The work distinguishes prompt identity, context equality and intended tail-resumptive correspondence but supplies no gen
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

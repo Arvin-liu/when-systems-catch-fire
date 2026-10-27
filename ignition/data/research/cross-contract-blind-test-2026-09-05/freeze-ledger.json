@@ -1,0 +1,77 @@
+{
+  "schema_version": "research-only/cross-contract-freeze-ledger-r1",
+  "task_id": "IGNITION-20260905-155",
+  "status": "UNBLINDED_RESULTS_RECORDED",
+  "hash_algorithm": "SHA-256",
+  "frozen_at": "2026-09-05T00:00:00+08:00",
+  "formal_baseline": {
+    "task154_exact_head": "56e57906ef6e54c3721499430aaec8da1182c322",
+    "branch": "work/IGNITION-20260905-155",
+    "base_branch": "work/IGNITION-20260904-154",
+    "task153_lifecycle_preserved": true,
+    "task154_lifecycle_preserved": true
+  },
+  "corpus_freeze": {
+    "manifest_path": "case-manifest.json",
+    "manifest_sha256": "05b74d11e07aeaf9f454de07af323ff5f4f7a82ae9f3c5a7a03962475d5c1a04",
+    "exclusion_ledger_path": "exclusion-ledger.json",
+    "exclusion_ledger_sha256": "4af7831e53bf8b08e8af5ee1b75071d63d3106becb20b81cb24b5c234528f12d",
+    "case_count": 27,
+    "discovery_count": 20,
+    "holdout_count": 7,
+    "selection_cutoff": "2026-09-04T00:00:00+08:00",
+    "task153_and_task154_excluded": true,
+    "purposeful_sampling_cannot_estimate_population_rate": true
+  },
+  "criteria_freeze": {
+    "criteria_path": "criteria.json",
+    "criteria_sha256": "15d08c6f754cf102e2258f16e7b1a8ab2f69f028593d2f0474dc8a6e196f8f43",
+    "edge_questions_frozen": ["claim", "authority", "consequence"],
+    "diagnostic_minimum_observable_criteria_frozen": true,
+    "redundancy_incremental_false_positive_undecidable_rules_frozen": true,
+    "holdout_review_allowed_after_this_record": true
+  },
+  "blind_input_freeze": {
+    "packets_path": "blind-packets.jsonl",
+    "packets_sha256": "b7ce6f59dae65002e5fc4bb5e124087f07ec68927ff9e942aaf53c493a545a92",
+    "outputs_path": "blind-outputs.jsonl",
+    "outputs_sha256": "1c7449424a42b7eadd80bb989f598097e0caa71a4d918fc4c82807a6baafbeaa",
+    "records_each": 27,
+    "later_outcome_payload_in_blind_inputs": false,
+    "cognitive_independence": false,
+    "temporal_blinding_only": true
+  },
+  "blind_phase_commit": "6618f0b8d5dee9a63e2970c470da95eefc59f4f4",
+  "unblind_phase": {
+    "results_path": "results.jsonl",
+    "results_sha256": "e4c028646685db1a4d66551c65b033e6eadfc81df42562102b1b84d8f6ff9b66",
+    "casebook_path": "../../../docs/governance/cross-contract-failure-casebook-2026-09-05.md",
+    "outcome_sources_read_after_blind_commit": true,
+    "classification_counts": {
+      "INCREMENTAL_TRUE_POSITIVE": 2,
+      "REDUNDANT_TRUE_POSITIVE": 9,
+      "FALSE_POSITIVE": 2,
+      "TRUE_NEGATIVE_CONTROL_PASS": 10,
+      "MISS_FALSE_NEGATIVE": 1,
+      "UNDECIDABLE": 3
+    },
+    "holdout_incremental_cases": ["CC-012", "CC-026"],
+    "holdout_incremental_count": 2,
+    "unblind_note": "The authoring agent had repository-history access during corpus construction; this remains a temporal/data-level blind test rather than an independent cognitive replication."
+  },
+  "preflight_residuals": [
+    {
+      "surface": "1111/instructions/CURRENT.md",
+      "observed_ref": "1111/main@b75ad68925178ef4cc7ab97c53fa63cfe9965902",
+      "observed_state": "points to stale task 121Q37-I1 rather than Task155",
+      "disposition": "PRESERVED_UNCHANGED_PER_OWNER_CONFIRMATION"
+    },
+    {
+      "surface": "1111/relay/current",
+      "observed_ref": "1111/origin/relay/current@7d6d369bc2b8add8eeaa0c076f13bcda994f1dc6",
+      "observed_state": "points to an older task and does not contain the Task155 command",
+      "disposition": "PRESERVED_UNCHANGED_PER_OWNER_CONFIRMATION"
+    }
+  ],
+  "unblind_gate": "No outcome_ref, resolution_ref, later repair text, current projection or postmortem may be read into blind outputs. Outcome scoring begins only after this ledger is committed and pushed."
+}

@@ -27,6 +27,12 @@ Task `IGNITION-20260904-154` 是对上述综合的反证轮，仍为 `CANDIDATE 
 - [`more-meta-foundations-minimal-model-2026-09-04.md`](./more-meta-foundations-minimal-model-2026-09-04.md) — 比较 `M4`、`M3a`、`M3b`、`M2+T` 与 `Existing-only`，保留“现有联邦合同 + 交叉复核视图”作为最小研究表示，不新增 canonical layer。
 - 任务报告见 [`reports/governance/task-IGNITION-20260904-154.md`](../../reports/governance/task-IGNITION-20260904-154.md)，结果见 [`agent-results/IGNITION-20260904-154-result.md`](../../agent-results/IGNITION-20260904-154-result.md)。
 
+Task `IGNITION-20260905-155` 是对交叉合同复核图的历史盲测，仍为 `CANDIDATE / NON_CANONICAL`：
+
+- [`cross-contract-historical-blind-test-2026-09-05.md`](./cross-contract-historical-blind-test-2026-09-05.md) — 27 个 Task153 之前的真实历史 case，含 discovery/holdout 冻结、existing-contract-only 与 cross-contract 两套审查、逐案解盲、误报/漏报/不可判定与五类诊断裁决；结果为 `PARTIAL_INCREMENT`，仅保留研究 lens，不新增 canonical failure class、layer、gate、schema、registry 或 authority。
+- [`cross-contract-failure-casebook-2026-09-05.md`](./cross-contract-failure-casebook-2026-09-05.md) — 逐案 pre-outcome 与 unblinded evidence cards；机器冻结与结果数据位于 `data/research/cross-contract-blind-test-2026-09-05/`。
+- 任务报告见 [`reports/governance/task-IGNITION-20260905-155.md`](../../reports/governance/task-IGNITION-20260905-155.md)，结果见 [`agent-results/IGNITION-20260905-155-result.md`](../../agent-results/IGNITION-20260905-155-result.md)。
+
 ### 治理与宪章文档目录
 
 | 文档 | 角色 |

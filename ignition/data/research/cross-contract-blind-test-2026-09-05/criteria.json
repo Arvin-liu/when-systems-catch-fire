@@ -1,0 +1,73 @@
+{
+  "schema_version": "research-only/cross-contract-review-criteria-r1",
+  "task_id": "IGNITION-20260905-155",
+  "status": "FROZEN_BEFORE_HOLDOUT_REVIEW",
+  "scope": "Repository-local historical review only. The review map is a lens over existing federated contracts, not a new protocol, failure class, validator, gate, schema, registry or authority.",
+  "temporal_rule": "Score only material present in the case pre_outcome_ref at or before cutoff. Later outcome, repair, current projection and postmortem text are prohibited until unblinding.",
+  "edge_questions": {
+    "claim": "At the cutoff, do source/evidence/provenance and their M-E or claim ceiling align with the public wording, decision reason and chosen action, or does one contract permit a scope/action jump beyond the evidence ceiling?",
+    "authority": "At the cutoff, are proposer, approver, refuser, revoker and accountable human/role distinct and visible, or does approval/signature/capability evidence omit a necessary authority or contest boundary?",
+    "consequence": "At the cutoff, are execution, observation, consequence ownership and stop/rollback/reconciliation paths connected, or can a complete trace coexist with an unowned or non-reconcilable effect?"
+  },
+  "edge_scoring": {
+    "FLAG": "A concrete junction break is visible before outcome, with a named local contract on each side, an actionable warning, and an expected consequence if ignored.",
+    "NO_FLAG": "The pre-outcome packet shows aligned contracts or a local contract already sufficient to express the concern; no non-equivalent junction warning is warranted.",
+    "UNDECIDABLE": "The cutoff packet cannot establish the relevant source, actor, consequence or temporal relation without importing later information.",
+    "actionable_warning_requirement": "A flag must say what should stop, be reviewed, be narrowed, be reconciled or be refused before outcome. A post-hoc label alone is not a flag."
+  },
+  "diagnostic_minimum_observable_criteria": {
+    "PROVENANCE_WITHOUT_CEILING": [
+      "A source, evidence or provenance record is present and locally valid.",
+      "The proposed wording, decision or action reaches beyond the recorded scope, M-E, uncertainty or claim ceiling.",
+      "The mismatch is visible before outcome and is not merely a missing current projection."
+    ],
+    "ABSTENTION_AS_AVOIDANCE": [
+      "A refusal, skip, unavailable or abstention state is recorded.",
+      "The packet also shows a bounded, safe and authorized next action or review path that was avoidably left unused.",
+      "The resulting cost or residual is material enough to require a decision, not only a theoretical opportunity."
+    ],
+    "BUDGET_AS_HARM_LICENSE": [
+      "A time, resource, risk or action budget is explicitly used as a reason for a choice.",
+      "The choice would externalize, conceal or accept residual harm beyond the budget contract's technical scope.",
+      "A Charter, policy, approval or stop boundary is implicated before outcome."
+    ],
+    "SIGNATURE_WITHOUT_CONTESTABILITY": [
+      "An actor, signer, approval event or actor_ref is present.",
+      "The packet lacks a visible refusal, dissent, revocation, rollback, scope or consequence-contest route.",
+      "The later historical result shows that the missing contest/consequence path mattered, rather than being a purely theoretical concern."
+    ],
+    "COMPLETE_RECORD_WITHOUT_ACCOUNTABILITY": [
+      "The record or trace is materially complete under its local schema.",
+      "No named actor or contract is responsible for observing, stopping, reconciling or owning the consequence.",
+      "The missing accountability could have changed the pre-outcome action or disposition."
+    ]
+  },
+  "redundancy_rule": "Mark a flag redundant when an existing local contract, validator or gate visible at cutoff already states the same predicate and would have caused the same stop, review, repair or refusal. A shared vocabulary or later projection does not count as equivalent capture.",
+  "incremental_rule": "Mark incremental only when the existing-contract-only pass is NO, PARTIAL or UNKNOWN for the junction, the frozen cross-contract flag is specific and actionable before outcome, and unblinding independently supports that junction as material. A later explanation, renamed local failure or current validator pass is insufficient.",
+  "false_positive_rule": "Mark false positive when the frozen flag is specific enough to test, the historical outcome supplies no supporting problem, and evidence is sufficient to exclude undecidability. General concern language is not a positive.",
+  "undecidable_rule": "Use UNDECIDABLE when pre-outcome or outcome evidence cannot establish the relevant predicate, ordering, actor, consequence or independent support. Do not force a binary label.",
+  "holdout_rule": "Holdout cases are scored with this exact file after criteria freeze. Discovery wording may not be changed after any holdout packet is reviewed.",
+  "classification_vocabulary": [
+    "INCREMENTAL_TRUE_POSITIVE",
+    "REDUNDANT_TRUE_POSITIVE",
+    "FALSE_POSITIVE",
+    "TRUE_NEGATIVE_CONTROL_PASS",
+    "MISS_FALSE_NEGATIVE",
+    "UNDECIDABLE"
+  ],
+  "diagnostic_disposition_vocabulary": [
+    "REPEATED_INCREMENTAL_SUPPORT",
+    "SINGLE_CASE_SIGNAL",
+    "REDUNDANT_WITH_EXISTING_CONTRACTS",
+    "FALSE_POSITIVE_PRONE",
+    "NO_HISTORICAL_SUPPORT",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "frozen_inputs": {
+    "manifest": "case-manifest.json",
+    "exclusion_ledger": "exclusion-ledger.json",
+    "baseline_task154": "56e57906ef6e54c3721499430aaec8da1182c322",
+    "selection_cutoff": "2026-09-04T00:00:00+08:00",
+    "cognitive_independence": false
+  }
+}

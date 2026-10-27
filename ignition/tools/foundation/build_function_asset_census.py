@@ -66,6 +66,9 @@ GENERATED_PREFIXES = (
     "PUBLICATIONS/",
     "docs/human/",
     "data/publication/fire-seeds/",
+    # Task155 research-only blind-test corpus is evidence for a non-canonical
+    # study and must not feed the function-asset census.
+    "data/research/cross-contract-blind-test-2026-09-05/",
     # Durability/lifecycle contracts and receipts are OS machine records; they
     # must remain provenance-only and cannot feed Foundation discovery.
     "data/operations/durability/",
@@ -200,6 +203,11 @@ GENERATED_EXACT_PATHS = {
     "data/foundation/knowledge-corpus-admission-policy.json",
     "reports/architecture/agent-platform-r2-gap-audit.md",
     "reports/operations/ignition-121-nightshift-progress.md",
+    # Task155 research-only narrative records are not function-asset sources.
+    "docs/governance/cross-contract-failure-casebook-2026-09-05.md",
+    "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
+    "reports/governance/task-IGNITION-20260905-155.md",
+    "agent-results/IGNITION-20260905-155-result.md",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

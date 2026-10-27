@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [— IGNITION-20260824-137-VALIDATED-LIVE-COMPLETION-RECONCILIATION-R1 — Current continuation](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac36586fba5e05a9 / — IGNITION-20260824-137-VALIDATED-LIVE-COMPLETION-RECONCILIATION-R1 — Current continuation
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [— Pointfire seven-track evidence evolution R1 Owner-accepted publication](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-bf414f13a7fcc028 / — Pointfire seven-track evidence evolution R1 Owner-accepted publication
@@ -2497,10 +2502,5 @@
 - [关键发现：智能分流验证倒U型最优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4415f8176eea839d / 关键发现：智能分流验证倒U型最优
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [关键发现：最弱项瓶颈验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a1d590588bfc5d00 / 关键发现：最弱项瓶颈验证
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
