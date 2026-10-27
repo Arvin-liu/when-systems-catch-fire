@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:crossref-citation-matcher-input-r0",
+  "title": "Crossref Citation Matcher Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["citation"],
+  "properties": {
+    "citation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2048,
+      "pattern": "\\S",
+      "description": "One public, non-sensitive bibliographic citation. This exact string is transmitted to Crossref when the caller explicitly enables the network."
+    }
+  }
+}

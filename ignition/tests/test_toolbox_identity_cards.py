@@ -391,6 +391,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             self.assertTrue(card["migration_and_rollback"]["rollback_steps"])
         crossref = next(card for card in candidates if card["tool_id"] == "research.verify_crossref_metadata")
         crossref_search = next(card for card in candidates if card["tool_id"] == "research.search_crossref_query")
+        crossref_citation = next(card for card in candidates if card["tool_id"] == "research.match_crossref_citation")
         pubmed = next(card for card in candidates if card["tool_id"] == "research.resolve_pubmed_identifiers")
         pubmed_search = next(card for card in candidates if card["tool_id"] == "research.search_pubmed_query")
         openalex = next(card for card in candidates if card["tool_id"] == "research.lookup_openalex_work_metadata")
@@ -402,9 +403,12 @@ class ToolboxIdentityCardTests(unittest.TestCase):
         editorial = next(card for card in candidates if card["tool_id"] == "writing.preflight_cognitive_migration_revision")
         europe_pmc = next(card for card in candidates if card["tool_id"] == "research.search_europe_pmc_query")
         europe_pmc_fulltext = next(card for card in candidates if card["tool_id"] == "research.resolve_europe_pmc_fulltext_locations")
-        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], crossref_search["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], "research.search_openalex_query", updates["tool_id"], pubmed_composition["tool_id"], "research.match_pubmed_citation", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "research.compare_noaa_co2_source_surfaces", noaa_ch4_comparator["tool_id"], "research.compare_noaa_n2o_source_surfaces", "research.lookup_noaa_global_n2o_annual_growth", "research.lookup_noaa_global_sf6_annual_growth", "research.compare_noaa_sf6_source_surfaces", europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"], "research.lookup_datacite_doi_metadata"})
+        self.assertEqual({card["tool_id"] for card in candidates if card["permissions"]["network"]}, {crossref["tool_id"], crossref_search["tool_id"], crossref_citation["tool_id"], "research.compare_crossref_reference_metadata", pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], "research.search_openalex_query", updates["tool_id"], pubmed_composition["tool_id"], "research.match_pubmed_citation", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], "research.compare_noaa_co2_source_surfaces", noaa_ch4_comparator["tool_id"], "research.compare_noaa_n2o_source_surfaces", "research.lookup_noaa_global_n2o_annual_growth", "research.lookup_noaa_global_sf6_annual_growth", "research.compare_noaa_sf6_source_surfaces", europe_pmc["tool_id"], europe_pmc_fulltext["tool_id"], "research.lookup_datacite_doi_metadata"})
         self.assertEqual(crossref["permissions"]["network_hosts"], ["api.crossref.org"])
         self.assertEqual(crossref_search["permissions"]["network_hosts"], ["api.crossref.org"])
+        self.assertEqual(crossref_citation["permissions"]["network_hosts"], ["api.crossref.org"])
+        self.assertFalse(crossref_citation["router_selectable_by_default"])
+        self.assertEqual(crossref_citation["comparison_evidence"]["status"], "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED")
         self.assertFalse(crossref_search["router_selectable_by_default"])
         self.assertFalse(crossref_search["permissions"]["billing"])
         self.assertFalse(crossref_search["permissions"]["secrets"])
@@ -636,6 +640,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             "research.search_arxiv_query",
             "research.search_openalex_query",
             crossref_search["tool_id"],
+            crossref_citation["tool_id"],
             openalex["tool_id"],
             noaa["tool_id"],
             noaa_co2["tool_id"],
@@ -683,7 +688,7 @@ class ToolboxIdentityCardTests(unittest.TestCase):
             [ref["path"] for ref in archify_ir["source_refs"]],
         )
         self.assertTrue(all(card["permissions"]["write_paths"] == [] for card in candidates))
-        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], noaa_ch4_comparator["tool_id"], "research.compare_noaa_co2_source_surfaces", "research.compare_noaa_n2o_source_surfaces", "research.lookup_noaa_global_n2o_annual_growth", "research.lookup_noaa_global_sf6_annual_growth", "research.compare_noaa_sf6_source_surfaces", "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability", "maintenance.compare_toolbox_component_coverage", "research.pair_noaa_co2_ch4_growth_by_year", "research.lookup_datacite_doi_metadata", "collaboration.select_handoff_advisories"} for card in candidates))
+        self.assertTrue(all(card["dependencies"] or card["tool_id"] in {pubmed["tool_id"], pubmed_search["tool_id"], openalex["tool_id"], crossref_search["tool_id"], crossref_citation["tool_id"], updates["tool_id"], "research.match_pubmed_citation", "maintenance.summarize_actions_step_timeline", "research.lookup_arxiv_paper_metadata", "research.search_arxiv_query", noaa["tool_id"], noaa_co2["tool_id"], noaa_ch4_comparator["tool_id"], "research.compare_noaa_co2_source_surfaces", "research.compare_noaa_n2o_source_surfaces", "research.lookup_noaa_global_n2o_annual_growth", "research.lookup_noaa_global_sf6_annual_growth", "research.compare_noaa_sf6_source_surfaces", "knowledge.assemble_context_packet", "research.compare_publication_metadata_snapshots", "research.search_europe_pmc_query", "research.resolve_europe_pmc_fulltext_locations", "maintenance.compare_context_packet_variants", "maintenance.compare_audit_findings", "knowledge.preflight_reusable_context", "maintenance.inspect_exact_head_check_observations", "maintenance.summarize_execution_candidate_pareto_frontier", "maintenance.summarize_component_path_residue", "research.compare_evidence_update_snapshots", "planning.compare_task_decomposition_solvability", "maintenance.compare_toolbox_component_coverage", "research.pair_noaa_co2_ch4_growth_by_year", "research.lookup_datacite_doi_metadata", "collaboration.select_handoff_advisories"} for card in candidates))
         self.assertEqual(validation_target_coverage["evidence_level"], "REAL_TASK_OUTCOME")
         self.assertEqual(validation_target_coverage["execution_mode"], "READ_ONLY_RUN")
         self.assertFalse(validation_target_coverage["router_selectable_by_default"])

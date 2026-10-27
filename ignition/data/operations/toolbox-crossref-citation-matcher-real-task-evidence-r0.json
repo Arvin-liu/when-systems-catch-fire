@@ -1,0 +1,59 @@
+{
+  "schema_version": "toolbox-crossref-citation-matcher-real-task-evidence-r0",
+  "observed_on_utc_date": "2026-10-27",
+  "task_id": "GAP001-01-crossref-citation-matcher-c1-01",
+  "citation_sha256": "c804ccd14758e61ed1ebfe7bc7e0f19181f1110db435220635ebef55d314bba9",
+  "citation_text_retained_in_evidence": false,
+  "query_contains_known_doi": false,
+  "reference_record": {
+    "path": "ignition/evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl",
+    "source_id": "GAP001-01",
+    "previously_recorded_doi": "10.1007/s10489-024-05338-9",
+    "basis_note": "The DOI/title/year are a prior source-manifest record used as the comparison target; this C1 experiment does not independently authenticate that record or paper."
+  },
+  "input_sha256": "358549fe4b7e318b3e7a1e7dec3da63220bed41d1d19181db19e49b22c807ba0",
+  "source_code_sha256": "34b8e27f3f184b73b5d35e7ee71d82a5824c4150bd276df9e07ada4ff4381ac1",
+  "response_bodies_retained": false,
+  "provider_authenticity_verified": false,
+  "claim_ceiling": "One live Crossref interface comparison for one public citation only. Provider rows and hashes do not establish citation correctness generally, source authenticity, article content, scientific support, recall, reliability, latency distribution, or cost.",
+  "tool_invocation": {
+    "tool_id": "research.match_crossref_citation",
+    "tool_version": "0.1.0",
+    "status": "CANDIDATES_REPORTED",
+    "acquisition_status": "OK",
+    "http_status": 200,
+    "request_sha256": "f7f212a810cee54c274e6dcff111402e914d876270d79530757c57dbef08bbf1",
+    "response_sha256": "2d3cdeeb876323e023edd4243b59a7831c3d6e51d0b7ed29eb14e7d18b64ec7c",
+    "response_bytes": 2208,
+    "provider_reported_total_results": 13841880,
+    "returned_count": 2,
+    "usage_headers": {
+      "x-rate-limit-limit": "1",
+      "x-rate-limit-interval": "1s"
+    },
+    "candidates": [
+      {
+        "provider_rank": 1,
+        "doi": "10.1007/s10489-024-05338-9",
+        "title": "Causal inference in the medical domain: a survey",
+        "publication_year": 2024,
+        "crossref_relevance_score": null
+      },
+      {
+        "provider_rank": 2,
+        "doi": "10.1093/oxfordhb/9780190213299.013.4",
+        "title": "Causal Inference with Complex Survey Designs",
+        "publication_year": 2016,
+        "crossref_relevance_score": null
+      }
+    ]
+  },
+  "explicit_invocation_flags": [
+    "--stdin",
+    "--allow-public-network"
+  ],
+  "network_host": "api.crossref.org",
+  "request_count": 1,
+  "raw_request_or_response_saved": false,
+  "observation": "The provider reported the prior source-manifest DOI/title at rank 1 and one different candidate at rank 2. The adapter did not select or verify a DOI."
+}
