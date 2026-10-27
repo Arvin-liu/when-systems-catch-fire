@@ -1,0 +1,27 @@
+{
+  "schema_version": "ignition-136-step03-live-process-transport-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "03",
+  "implementation": "ignition/agent_federation/live_transport.py",
+  "boundary": {
+    "argv": "typed literal argv only; shell=false; shell syntax rejected",
+    "cwd": "required existing absolute directory",
+    "environment": "explicit non-secret allowlist only; secret-like names rejected",
+    "input": "bounded UTF-8 stdin; no arbitrary shell string",
+    "output": "selector-drained bounded stdout/stderr with replacement decoding",
+    "timeout": "process-group TERM then KILL with observed timed_out flag",
+    "background_processes": "start_new_session plus process-group cleanup",
+    "parser": "bounded JSONL object parser with event and line caps",
+    "forbidden": ["generic tool loop", "provider SDK", "browser", "message gateway", "remote Git mutation", "autonomous subagent manager"]
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_transport ignition.tests.test_live_bridge_contracts -v",
+    "tests": 12,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "cases": ["partial/malformed JSONL", "huge output", "malformed UTF-8", "timeout", "process death", "wrong cwd", "environment leakage", "shell syntax", "bounded input"],
+    "status": "PASS"
+  },
+  "claim_ceiling": "Provider-neutral process boundary evidence only; no executor live completion or external effect guarantee is inferred."
+}

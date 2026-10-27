@@ -1,0 +1,15 @@
+{
+  "acceptance_rule": "a mutation must reduce residual/exception burden or add independently adjudicated question/falsifier/predictive capability enough to exceed its added cost",
+  "cost_units": {
+    "falsifier": 2,
+    "local_exception": 2,
+    "operator": 2,
+    "primitive": 1,
+    "question_form": 2,
+    "relation_type": 1,
+    "scope_assumption": 1
+  },
+  "frozen_before_blind_run": true,
+  "rename_or_schema_migration_is_not_benefit": true,
+  "task_id": "IGNITION-20260907-163"
+}

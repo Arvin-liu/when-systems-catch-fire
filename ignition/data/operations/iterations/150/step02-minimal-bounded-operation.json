@@ -1,0 +1,109 @@
+{
+  "schema_version": "ignition-150-step02-minimal-bounded-operation-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "02",
+  "record_type": "MINIMAL_BOUNDED_OPERATION_CONTRACT",
+  "status": "CANDIDATE_OPERATION_CONTRACT_ESTABLISHED",
+  "formal_baseline": {
+    "ref": "refs/heads/main",
+    "sha": "d7372c27abe456b5b8c058675630d8038f91b448",
+    "role": "TASK149_ORDINARY_MERGE_MAIN_BASELINE",
+    "self_witness": "NOT_EMBEDDED_BY_DESIGN"
+  },
+  "operation": {
+    "operation_id": "visualization.render_derived_system_view",
+    "public_name": {
+      "zh": "生成派生系统视图",
+      "en": "Render a derived system view"
+    },
+    "operation_class": "VALIDATION_AUDIT",
+    "ownership": "IGNITION",
+    "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+    "input_types": [
+      "CURRENT_CANONICAL_ARCHITECTURE_SOURCE",
+      "AUTHORED_ARCHITECTURE_SOURCE"
+    ],
+    "output_types": ["DERIVED_VISUALIZATION_ARTIFACT"],
+    "allowed_flow": "CANONICAL_SOURCE -> PROVIDER_ADAPTER -> DERIVED_ARTIFACT",
+    "reverse_flow_forbidden": true,
+    "current_status": "CANDIDATE_NOT_CURRENT",
+    "registry_entry_status": "NOT_YET_REGISTERED_PENDING_STEP11",
+    "default_execution_mode": "READ_ONLY_RUN",
+    "repository_mutation": {
+      "permission": "FORBIDDEN",
+      "derived_artifact_persistence": "SEPARATE_EXPLICIT_REPOSITORY_CHANGE_TASK_ONLY"
+    },
+    "provider_invocation": {
+      "scope": "BOUNDED_PROVIDER_INVOCATION_FOR_DERIVED_ARTIFACT_ONLY",
+      "unrelated_external_action": "FORBIDDEN",
+      "credentials": "FORBIDDEN",
+      "session_bearing_channels": "FORBIDDEN",
+      "provider_selection_owner": "IGNITION",
+      "provider_local_policy_inheritance": "FORBIDDEN"
+    },
+    "claim_ceiling": "Visual representation of authored topology only."
+  },
+  "provider_selection": {
+    "owner": "IGNITION",
+    "provider_binding": "UNBOUND_PROVIDER_SLOT_AT_STEP02",
+    "future_provider_compatibility": true,
+    "selection_is_not_permission": true
+  },
+  "provenance": {
+    "required_per_node_and_edge": [
+      "source_path",
+      "canonical_or_source_id",
+      "source_revision",
+      "provenance_digest"
+    ],
+    "artifact_receipt_fields": [
+      "canonical_source_digest",
+      "provider_id",
+      "provider_revision",
+      "adapter_version",
+      "derived_artifact_digest"
+    ],
+    "missing_provenance_result": "REJECT_AS_UNVALIDATED"
+  },
+  "failure_and_fallback": {
+    "canonical_source_remains_usable": true,
+    "last_known_canonical_map_remains_usable": true,
+    "provider_unavailable_result": "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT",
+    "provider_failure_result": "BOUNDED_PROVIDER_FAILURE",
+    "fallback_policy_owner": "IGNITION",
+    "no_implicit_substitution": true
+  },
+  "installation_boundary": {
+    "provider_installation_required": false,
+    "automatic_system_install": false,
+    "skill_install_requires_explicit_request": true
+  },
+  "authority_boundary": {
+    "canonical_source_is_authority": true,
+    "derived_artifact_can_update_canonical_source": false,
+    "provider_can_add_topology": false,
+    "provider_can_delete_topology": false,
+    "provider_can_change_semantic_relationships": false,
+    "provider_can_decide_geometry_route_theme_layout": true,
+    "provider_can_decide_architecture_truth": false,
+    "provider_can_decide_runtime_behavior": false,
+    "provider_can_decide_impact_risk_correctness": false,
+    "provider_output_is_external_truth": false,
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"
+  },
+  "validation": {
+    "schema_path": "ignition/schemas/operations/task150-step02-minimal-bounded-operation-r1.schema.json",
+    "validator_path": "ignition/tools/validate_task150_step02_minimal_bounded_operation.py",
+    "test_path": "ignition/tests/test_task150_step02_minimal_bounded_operation.py",
+    "required_checks": [
+      "operation id uses existing dotted taxonomy",
+      "canonical source to adapter to derived artifact is one-way",
+      "read-only and no repository mutation are explicit",
+      "provider invocation is bounded and does not grant general external action",
+      "candidate status is not Current and provider slot is unbound",
+      "topology and architecture authority remain with authored source"
+    ]
+  },
+  "claim_ceiling": "Task150 Step02 establishes a repository-local, provider-neutral candidate operation contract for visual representation of authored topology only. It does not establish a Current capability, provider binding, default renderer, architecture authority, external truth, production readiness, authenticated channel admission or live external completion."
+}

@@ -1,0 +1,21 @@
+{
+  "contract_version": "1.0.0",
+  "purpose": "Explicit source/output contracts for R2 deterministic projection generators. A source contract narrows what a generator may read and write; it grants no execution, truth, Owner, network, or remote mutation authority.",
+  "generators": [
+    {
+      "generator_id": "agent_platform_r2_blast_radius",
+      "canonical_tool": "tools/propagation/agent_platform_blast_radius.py",
+      "source_authorities": [
+        "data/operations/propagation/agent-platform-r2-propagation-contract.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/project-components.json",
+        "tools/propagation/impact_contract.py"
+      ],
+      "output_paths": [
+        "data/operations/propagation/121-agent-platform-r2-blast-radius-report.json"
+      ],
+      "freshness_mode": "byte_level_recompute",
+      "claim_ceiling": "deterministic declared blast-radius fixture report only"
+    }
+  ]
+}

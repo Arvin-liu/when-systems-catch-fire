@@ -1,0 +1,217 @@
+{
+  "claim_ceiling": "research-only pressure qualification; pressure is not a semantic-leap or canonical-basis conclusion",
+  "event_results": [
+    {
+      "blind_epoch_id": "epoch-001",
+      "boundary_status": "BOUNDARY_RECONSTRUCTED_FROM_FIRST_PARENT_HISTORY",
+      "event_id": "P01_FUNCTION_CASE_REFRAME",
+      "first_signal_checkpoint": 8,
+      "kind": "positive",
+      "pre_boundary_pressure_signal": true,
+      "signal_dimensions": [
+        "DUPLICATED_STRUCTURE_PRESSURE",
+        "LOCAL_PATCH_BURDEN",
+        "QUESTION_LANGUAGE_DEFICIT"
+      ],
+      "signal_source_families": [
+        "raw_notes",
+        "root_surface"
+      ],
+      "split": "calibration"
+    },
+    {
+      "blind_epoch_id": "epoch-002",
+      "boundary_status": "BOUNDARY_RECONSTRUCTED_FROM_FIRST_PARENT_HISTORY",
+      "event_id": "P02_SECTION_ZERO_BOOTSTRAP",
+      "first_signal_checkpoint": null,
+      "kind": "positive",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-003",
+      "boundary_status": "EPOCH_BOUNDARY_UNDERDETERMINED",
+      "event_id": "P03_DUAL_CHANNEL_BOOTSTRAP",
+      "first_signal_checkpoint": null,
+      "kind": "positive",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-004",
+      "boundary_status": "BOUNDARY_RECONSTRUCTED_FROM_FIRST_PARENT_HISTORY",
+      "event_id": "P04_META_PROTOCOL_64",
+      "first_signal_checkpoint": 1,
+      "kind": "positive",
+      "pre_boundary_pressure_signal": true,
+      "signal_dimensions": [
+        "CONTRADICTORY_PREDICTION_BURDEN",
+        "QUESTION_LANGUAGE_DEFICIT",
+        "REINTERPRETATION_CHURN"
+      ],
+      "signal_source_families": [
+        "raw_notes",
+        "root_surface"
+      ],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-005",
+      "boundary_status": "EPOCH_BOUNDARY_UNDERDETERMINED",
+      "event_id": "N02_INCREMENTAL_REGISTRY",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "calibration"
+    },
+    {
+      "blind_epoch_id": "epoch-006",
+      "boundary_status": "BOUNDARY_RECONSTRUCTED_FROM_FIRST_PARENT_HISTORY",
+      "event_id": "N03_CANONICAL_PROTOCOL_MIGRATION",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-007",
+      "boundary_status": "EPOCH_BOUNDARY_UNDERDETERMINED",
+      "event_id": "N04_PAGES_PROJECTION",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-008",
+      "boundary_status": "BOUNDARY_RECONSTRUCTED_FROM_FIRST_PARENT_HISTORY",
+      "event_id": "N05_VALIDATOR_EXPANSION",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-009",
+      "boundary_status": "EPOCH_BOUNDARY_UNDERDETERMINED",
+      "event_id": "N06_KNOWLEDGE_PROJECTION_REFRESH",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-010",
+      "boundary_status": "EPOCH_BOUNDARY_UNDERDETERMINED",
+      "event_id": "N07_PROVIDER_ADAPTER_REFACTOR",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-011",
+      "boundary_status": "EPOCH_BOUNDARY_UNDERDETERMINED",
+      "event_id": "N08_GENERATED_PROJECTION_REFRESH",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    },
+    {
+      "blind_epoch_id": "epoch-012",
+      "boundary_status": "BOUNDARY_RECONSTRUCTED_FROM_FIRST_PARENT_HISTORY",
+      "event_id": "N09_KNOWLEDGE_MATERIALIZATION",
+      "first_signal_checkpoint": 6,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": true,
+      "signal_dimensions": [
+        "CONTRADICTORY_PREDICTION_BURDEN",
+        "CROSS_SOURCE_COLLISION",
+        "DUPLICATED_STRUCTURE_PRESSURE",
+        "LOCAL_PATCH_BURDEN",
+        "QUESTION_LANGUAGE_DEFICIT",
+        "REINTERPRETATION_CHURN",
+        "UNRESOLVED_RESIDUAL_BURDEN"
+      ],
+      "signal_source_families": [
+        "ignition_surface",
+        "knowledge",
+        "root_surface"
+      ],
+      "split": "holdout"
+    }
+  ],
+  "failed_gates": [
+    "true_leap_pre_boundary_at_least_3_of_4",
+    "p02_p03_p04_pre_boundary_at_least_2_of_3",
+    "every_positive_boundary_reconstructed",
+    "remove_largest_source_family_keeps_two_true_signals",
+    "null_proxy_not_equivalent"
+  ],
+  "gate_results": {
+    "at_least_one_true_holdout_hit": true,
+    "at_least_two_dimensions_and_two_source_families": true,
+    "every_positive_boundary_reconstructed": false,
+    "n02_n03_not_high": true,
+    "null_proxy_not_equivalent": false,
+    "p02_p03_p04_pre_boundary_at_least_2_of_3": false,
+    "remove_largest_source_family_keeps_two_true_signals": false,
+    "strong_negative_false_positive_zero": true,
+    "thresholds_frozen_before_holdout_unblind": true,
+    "true_leap_pre_boundary_at_least_3_of_4": false,
+    "two_blind_outputs_byte_identical": true
+  },
+  "n02_n03_results": [
+    {
+      "blind_epoch_id": "epoch-005",
+      "boundary_status": "EPOCH_BOUNDARY_UNDERDETERMINED",
+      "event_id": "N02_INCREMENTAL_REGISTRY",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "calibration"
+    },
+    {
+      "blind_epoch_id": "epoch-006",
+      "boundary_status": "BOUNDARY_RECONSTRUCTED_FROM_FIRST_PARENT_HISTORY",
+      "event_id": "N03_CANONICAL_PROTOCOL_MIGRATION",
+      "first_signal_checkpoint": null,
+      "kind": "negative",
+      "pre_boundary_pressure_signal": false,
+      "signal_dimensions": [],
+      "signal_source_families": [],
+      "split": "holdout"
+    }
+  ],
+  "null_proxy_match": true,
+  "positive_epoch_count": 4,
+  "positive_holdout_hits": 1,
+  "source_family_ablation_count": 12,
+  "stage": "Stage A / Historical Basis Pressure Sensor Qualification",
+  "stage_a_pass": false,
+  "status": "FAIL",
+  "strong_negative_false_positive_count": 0,
+  "task_id": "IGNITION-20260907-164",
+  "true_leap_pre_boundary_hits": 2
+}

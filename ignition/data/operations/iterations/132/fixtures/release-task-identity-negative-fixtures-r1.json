@@ -1,0 +1,105 @@
+{
+  "schema_version": "release-task-identity-negative-fixtures-r1",
+  "task_id": "IGNITION-20260822-132",
+  "claim_ceiling": "Adversarial fixtures exercise repository-local release identity and evidence gates only; they do not establish external truth, authority, production readiness or epistemic acceptance.",
+  "cases": [
+    {
+      "case_id": "formal-132-current-source-131",
+      "kind": "candidate_gate",
+      "mutation": "lineage_current_task_131",
+      "expected_status": "FAIL",
+      "reason_code": "TASK_IDENTITY_MISMATCH:lineage.current_task.task_id"
+    },
+    {
+      "case_id": "current-132-lifecycle-131",
+      "kind": "candidate_gate",
+      "mutation": "lifecycle_task_131",
+      "expected_status": "FAIL",
+      "reason_code": "TASK_IDENTITY_MISMATCH:lifecycle.task_id"
+    },
+    {
+      "case_id": "current-132-snapshot-forged-131",
+      "kind": "candidate_gate",
+      "mutation": "snapshot_current_task_131",
+      "expected_status": "FAIL",
+      "reason_code": "TASK_IDENTITY_MISMATCH:snapshot.current_task.task_id"
+    },
+    {
+      "case_id": "architecture-129-promoted-to-current",
+      "kind": "candidate_gate",
+      "mutation": "lifecycle_architecture_task_132",
+      "expected_status": "FAIL",
+      "reason_code": "TASK_IDENTITY_MISMATCH:lifecycle.latest_architecture_changing_task"
+    },
+    {
+      "case_id": "witness-131-sha-132-candidate",
+      "kind": "witness_document",
+      "mutation": "witness_task_131",
+      "expected_status": "FAIL",
+      "reason_code": "$.task_binding.formal_result_task_id"
+    },
+    {
+      "case_id": "remote-sha-match-task-identity-mismatch",
+      "kind": "post_publication",
+      "mutation": "expected_task_131_with_matching_sha",
+      "expected_status": "FAIL",
+      "reason_code": "TASK_ID_BINDING_MISMATCH"
+    },
+    {
+      "case_id": "task-id-rollback",
+      "kind": "advancement",
+      "mutation": "backward_contract_to_131",
+      "expected_status": "FAIL",
+      "reason_code": "ADVANCEMENT_BACKWARD_REJECTED"
+    },
+    {
+      "case_id": "unknown-task-without-contract",
+      "kind": "advancement",
+      "mutation": "unknown_contract_999",
+      "expected_status": "FAIL",
+      "reason_code": "ADVANCEMENT_UNKNOWN_CONTRACT_REJECTED"
+    },
+    {
+      "case_id": "stale-compiler-output",
+      "kind": "candidate_gate",
+      "mutation": "replace_current_task_in_surface",
+      "expected_status": "FAIL",
+      "reason_code": "COMPILER_SURFACE_STALE"
+    },
+    {
+      "case_id": "historical-task-131-document-is-legal",
+      "kind": "historical_document",
+      "mutation": "read_historical_task_131_receipt",
+      "expected_status": "PASS",
+      "reason_code": "HISTORICAL_TASK_ID_ALLOWED"
+    },
+    {
+      "case_id": "publication-ref-unreachable",
+      "kind": "post_publication",
+      "mutation": "fetch_and_ls_remote_unavailable",
+      "expected_status": "BLOCKED_WITH_EVIDENCE",
+      "reason_code": "PUBLICATION_REF_UNREACHABLE"
+    },
+    {
+      "case_id": "publication-witness-missing",
+      "kind": "witness_presence",
+      "mutation": "formal_witness_not_yet_present",
+      "expected_status": "FAIL",
+      "reason_code": "PUBLICATION_WITNESS_MISSING"
+    },
+    {
+      "case_id": "owner-epistemic-authority-promotion",
+      "kind": "lineage_gate",
+      "mutation": "set_epistemically_accepted_1",
+      "expected_status": "FAIL",
+      "reason_code": "$.current_state.epistemically_accepted: 0 was expected"
+    },
+    {
+      "case_id": "same-task-advancement-rerun",
+      "kind": "advancement",
+      "mutation": "rerun_task_132_contract",
+      "expected_status": "PASS",
+      "reason_code": "ADVANCEMENT_IDEMPOTENT"
+    }
+  ]
+}

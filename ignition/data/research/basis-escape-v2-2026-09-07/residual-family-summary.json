@@ -1,0 +1,42 @@
+{
+  "caution": "Residual families are research review lenses, not canonical failure classes, truth states or schema additions.",
+  "family_counts": {
+    "cross-object-binding": 121,
+    "evidence-authority-cross-cut": 179,
+    "generator-projection-feedback": 16,
+    "transition-over-state": 650,
+    "unexplained-by-current-factor-lens": 34
+  },
+  "item_count": 1015,
+  "task_id": "IGNITION-20260907-160",
+  "top_findings": [
+    {
+      "count": 650,
+      "family": "transition-over-state"
+    },
+    {
+      "count": 179,
+      "family": "evidence-authority-cross-cut"
+    },
+    {
+      "count": 121,
+      "family": "cross-object-binding"
+    },
+    {
+      "count": 34,
+      "family": "unexplained-by-current-factor-lens"
+    },
+    {
+      "count": 16,
+      "family": "generator-projection-feedback"
+    }
+  ],
+  "type_counts": {
+    "EXTERNAL_PARAMETER_DEPENDENCY": 179,
+    "GENERATOR_NOT_EXPRESSIBLE": 16,
+    "LOSSLESS": 15,
+    "LOSSY_MAPPING": 34,
+    "REFERENCE_BINDING_RESIDUAL": 121,
+    "TRANSITION_DOMINATES_STATE": 650
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/agent-federation/soft-context-exposure-contract-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "contract_id", "task_id", "status", "purpose", "exposure_event", "handoff_capsule", "invariants", "forbidden_promotions", "allowed_consumers"],
+  "properties": {
+    "schema_version": {"const": "soft-context-exposure-contract-r0"},
+    "contract_id": {"const": "SOFT_CONTEXT_EXPOSURE_R0"},
+    "task_id": {"const": "IGNITION-20260818-126"},
+    "status": {"const": "ADVISORY_ONLY"},
+    "purpose": {"type": "string", "minLength": 80},
+    "exposure_event": {
+      "type": "object",
+      "required": ["event_name", "source_surface", "exposure_mode", "permitted_fields", "prohibited_fields", "expiry", "receipt_boundary"],
+      "properties": {
+        "event_name": {"const": "soft_context_exposure"},
+        "source_surface": {"const": "structural_governance_surface"},
+        "exposure_mode": {"const": "OPTIONAL_READ_BEFORE_ACT"},
+        "permitted_fields": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+        "prohibited_fields": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+        "expiry": {"const": "REQUEST_LOCAL_NO_DURABLE_AUTHORITY"},
+        "receipt_boundary": {"const": "OBSERVABLE_METADATA_ONLY_NO_HIDDEN_REASONING_OR_VENDOR_SESSION"}
+      },
+      "additionalProperties": false
+    },
+    "handoff_capsule": {
+      "type": "object",
+      "required": ["context_role", "capability_delta", "permission_delta", "authorization_delta", "truth_status_delta", "owner_status_delta", "epistemic_acceptance_delta", "external_side_effect_delta", "hard_gate_refs"],
+      "properties": {
+        "context_role": {"const": "ADVISORY_ONLY"},
+        "capability_delta": {"const": "NONE"},
+        "permission_delta": {"const": "NONE"},
+        "authorization_delta": {"const": "NONE"},
+        "truth_status_delta": {"const": "NONE"},
+        "owner_status_delta": {"const": "NONE"},
+        "epistemic_acceptance_delta": {"const": "NONE"},
+        "external_side_effect_delta": {"const": "NONE"},
+        "hard_gate_refs": {"type": "array", "minItems": 4, "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "invariants": {"type": "array", "minItems": 6, "items": {"type": "string", "minLength": 30}},
+    "forbidden_promotions": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+    "allowed_consumers": {"type": "array", "minItems": 3, "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
