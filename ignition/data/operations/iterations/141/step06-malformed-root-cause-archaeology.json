@@ -1,0 +1,69 @@
+{
+  "schema_version": "ignition-141-step06-malformed-root-cause-archaeology-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "06",
+  "status": "PASS",
+  "public_probe": {
+    "executable": "/Users/zhiyuan/.local/bin/codex",
+    "version": "codex-cli 0.144.4",
+    "version_exit_code": 0,
+    "exec_help_exit_code": 0,
+    "exec_help_sha256": "2623cfaf78083b7e0b74354c969c2c02812e91ef7d5db342271ff05b98ccccbd",
+    "live_inference_started": false,
+    "secret_or_auth_content_read": false,
+    "configuration_changed": false,
+    "required_public_flags": [
+      "--json",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "--cd",
+      "--output-schema"
+    ],
+    "required_public_flags_present": true
+  },
+  "task140_static_evidence": {
+    "adapter_argv_shape": [
+      "codex",
+      "exec",
+      "--json",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "read-only",
+      "--output-schema",
+      "absolute_schema_path",
+      "--cd",
+      "disposable_read_only_workspace",
+      "synthetic_prompt"
+    ],
+    "adapter_rejects_unsafe_flags": true,
+    "historical_exit_code": 1,
+    "historical_stdout_bytes": 0,
+    "historical_stderr_bytes": 271,
+    "historical_stderr_digest": "6d46bfcaa7d4f3de9fc53fb6e533252b0f7b6a7d70b4e48ea286905a68e13453",
+    "historical_raw_spool": "CLEANED",
+    "historical_structured_result": false
+  },
+  "root_cause": {
+    "status": "ROOT_CAUSE_NARROWED_NOT_CONFIRMED",
+    "confirmed_findings": [
+      "The public Codex CLI exposes every required Task140 option.",
+      "The checked-in adapter constructs a read-only ephemeral JSONL invocation and rejects widened flags.",
+      "Task140 proves process start, nonzero exit and absent structured result, but retains no diagnostic text."
+    ],
+    "remaining_unknowns": [
+      "The 271-byte stderr content was not durably retained, so the runtime failure class cannot be identified.",
+      "Formal evidence cannot distinguish authentication, runtime configuration, transport, parser or other startup failure."
+    ],
+    "root_cause_confirmed": false,
+    "repair_applied": false,
+    "same_family_retry": "FORBIDDEN_BLIND_RETRY",
+    "selection_consequence": "external.codex is excluded unless a later public-evidence audit confirms and repairs the concrete failure."
+  },
+  "claim_ceiling": "Public CLI/help and checked-in invocation-shape archaeology only; no private inference, precise Task140 runtime root cause, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

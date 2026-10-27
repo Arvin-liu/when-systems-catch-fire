@@ -1,0 +1,178 @@
+{
+  "schema_version": "formal-task-lifecycle-r1",
+  "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
+  "authority": "FORMAL_TASK_LIFECYCLE",
+  "current_task_id": "IGNITION-20260829-148",
+  "obligation_registry": {
+    "authority": "OPEN_OBLIGATION_REGISTRY",
+    "path": "ignition/data/operations/open-obligation-registry-r1.json",
+    "schema_path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
+    "validator_path": "ignition/tools/validate_open_obligation_registry.py",
+    "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
+  },
+  "tasks": [
+    {
+      "task_id": "IGNITION-20260829-148",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task148 Steps 00-14 complete the bounded repository-local AI-first Ignition Operating Method R1, independent method identity, capability and output contracts, Current synchronization, declared propagation closure, stranger-Agent regression and terminal candidate sealing. The exact-head natural full regression, Draft PR observation and independent 1111 receipt bind the sealed formal candidate externally; LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/148/execution-contract-r1.json",
+        "ignition/data/operations/iterations/148/step01-remote-truth-audit.json",
+        "ignition/data/operations/iterations/148/step11-interface-surface-sync.json",
+        "ignition/data/operations/iterations/148/current-state-sync-receipt.json",
+        "ignition/data/operations/iterations/148/step13-stranger-agent-adversarial-regression.json",
+        "ignition/data/operations/iterations/148/step14-exact-head-draft-release.json"
+      ],
+      "claim_ceiling": "Task148 repository-local Operating Method, capability registry, interface, deterministic projection, regression, ordinary-merge and post-merge Current-synchronization evidence only; the method is Current on formal main while no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
+    {
+      "task_id": "IGNITION-20260828-147",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task147 completes the bounded repository-local README project-identity and architecture-navigation repair, Human Front Door validation, deterministic Current synchronization and publication-ready evidence; the deferred live obligation remains independent and is not reopened.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/147/execution-contract-r1.json",
+        "ignition/data/operations/iterations/147/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/147/step02-current-state-sync.json",
+        "ignition/data/operations/iterations/147/step06-targeted-human-surface-validation.json",
+        "ignition/data/operations/iterations/147/step07-first-visit-readme-audit.json",
+        "ignition/data/operations/iterations/147/step08-regression-scope-audit.json",
+        "ignition/data/operations/iterations/147/step09-current-minimal-sync.json",
+        "ignition/data/operations/iterations/147/step15-deterministic-current-surface-r1.json",
+        "ignition/data/operations/iterations/147/step15-current-surface-semantic-gate-r1.json",
+        "ignition/data/operations/iterations/147/step15-ordinal-binding-gate-r1.json",
+        "ignition/data/operations/iterations/147/step15-release-lifecycle-audit.json",
+        "ignition/data/operations/iterations/147/step10-publication-preflight.json",
+        "ignition/agent-results/IGNITION-20260828-147-result.md",
+        "ignition/agent-results/IGNITION-20260828-147-machine-receipt.json"
+      ],
+      "claim_ceiling": "Task147 repository-local project identity wording, human architecture navigation, validator and deterministic regression evidence only; architecture semantics and geometry remain frozen, Owner authority remains required for production, production awaits the Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
+    {
+      "task_id": "IGNITION-20260828-146",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task146 completes the repository-local Human Front Door simplification and generated Current surface decoupling scope; the deferred live obligation remains independent and is not reopened.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/146/execution-contract-r1.json",
+        "ignition/data/operations/iterations/146/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/146/step06-targeted-human-surface-validation.json",
+        "ignition/data/operations/iterations/146/step07-first-visit-readme-audit.json",
+        "ignition/data/operations/iterations/146/step08-regression-scope-audit.json",
+        "ignition/data/operations/iterations/146/step09-current-minimal-sync.json",
+        "ignition/data/operations/iterations/146/step15-deterministic-current-surface-r1.json",
+        "ignition/agent-results/IGNITION-20260828-146-result.md",
+        "ignition/agent-results/IGNITION-20260828-146-machine-receipt.json"
+      ],
+      "claim_ceiling": "Task146 repository-local Human Front Door simplification, Current-surface decoupling, targeted regression and release-ready terminality evidence only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
+    {
+      "task_id": "IGNITION-20260828-145",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task145 Steps 00-09 complete the repository-local Human Front Door cleanup, compiler folding, validator repair, architecture naming correction, deterministic Current projection, targeted regression, first-visit audit, scope check and release-ready terminal candidate. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/145/execution-contract-r1.json",
+        "ignition/data/operations/iterations/145/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/145/step06-targeted-human-surface-validation.json",
+        "ignition/data/operations/iterations/145/step07-first-visit-readme-audit.json",
+        "ignition/data/operations/iterations/145/step08-regression-scope-audit.json",
+        "ignition/data/operations/iterations/145/step09-current-minimal-sync.json",
+        "ignition/agent-results/IGNITION-20260828-145-result.md",
+        "ignition/agent-results/IGNITION-20260828-145-machine-receipt.json"
+      ],
+      "claim_ceiling": "Task145 repository-local Human Front Door maintenance, targeted regression and release-ready terminality evidence only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
+    {
+      "task_id": "IGNITION-20260828-144",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task144 Steps 00-19 complete the engineering phase closure, Owner production handoff, exact candidate and fresh-task-clone regression, formal release candidate sealing and terminal lifecycle state. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/144/execution-contract-r1.json",
+        "ignition/data/operations/iterations/144/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/144/phase-closure-state-r1.json",
+        "ignition/data/operations/iterations/144/step15-engineering-closure-gate.json",
+        "ignition/data/operations/iterations/144/step16-candidate-full-regression.json",
+        "ignition/data/operations/iterations/144/step17-fresh-task-full-regression.json",
+        "ignition/data/operations/iterations/144/step18-formal-main-publication.json",
+        "ignition/data/operations/iterations/144/step19-terminality.json"
+      ],
+      "claim_ceiling": "Task144 repository-local engineering closure, Owner production handoff, regression and formal terminality evidence only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+    },
+    {
+      "task_id": "IGNITION-20260827-143",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task143 Steps 00-19 complete the phase parking, publication production, canonical integration, Current sync, natural regression and terminal release scope. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/143/execution-contract-r1.json",
+        "ignition/data/operations/iterations/143/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
+        "ignition/data/operations/iterations/143/step01-phase-closure.json",
+        "ignition/data/operations/iterations/143/step18-full-regression.json",
+        "ignition/data/operations/iterations/143/step19-terminality.json",
+        "ignition/agent-results/IGNITION-20260827-143-result.md"
+      ],
+      "claim_ceiling": "Task143 active publication-production and phase-parking scope only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+    },
+    {
+      "task_id": "IGNITION-20260827-142",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "ARCHITECTURE_CHANGED",
+      "terminal_basis": "Task142 Steps 00-19 complete the lifecycle decoupling, obligation carry-forward, provider-neutral admission, fresh executor census, adversarial matrix, exact candidate and fresh-clone regression, formal publication transaction and independent witness contract; LIVE_EXTERNAL_INVOCATION remains independently OPEN because no exact-bound validated completion occurred.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/execution-contract-r1.json",
+        "ignition/data/operations/iterations/142/step02-obligation-registry.json",
+        "ignition/data/operations/iterations/142/step18-adversarial-matrix.json",
+        "ignition/data/operations/iterations/142/step19-publication-and-terminality.json",
+        "ignition/STATE-CHANGELOG.md"
+      ],
+      "claim_ceiling": "Task142 formal scope is terminal on repository-local lifecycle, admission, regression and publication-contract evidence; LIVE_EXTERNAL_INVOCATION remains independently open, and no live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+    },
+    {
+      "task_id": "IGNITION-20260826-141",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "ARCHITECTURE_CHANGED",
+      "terminal_basis": "Task141 Step00-16 completed and formal publication closed; the validated-completion obligation is tracked independently and does not keep the formal task alive.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/141/step16-fresh-clone-publication.json",
+        "ignition/agent-results/IGNITION-20260826-141-machine-receipt.json",
+        "ignition/STATE-CHANGELOG.md"
+      ],
+      "claim_ceiling": "Formal task terminality is repository-local scope and publication evidence only; the open obligation remains independently unresolved and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+    }
+  ],
+  "claim_ceiling": "Independent repository-local formal task lifecycle authority; task terminality never closes or proves an open obligation and does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

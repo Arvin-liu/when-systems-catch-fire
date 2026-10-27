@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/architecture/current-facts.schema.json",
+  "title": "Ignition deterministic current facts projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "identity_epoch", "current_formal_task_id", "current_formal_task_ordinal", "latest_architecture_changing_task_id", "latest_architecture_task_ordinal", "current_iteration_boundary", "current_iteration_boundary_semantics", "facts", "source_fingerprints", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "current-facts-r1"},
+    "contract_id": {"const": "CURRENT_STATE_SYNC_INVARIANT"},
+    "identity_epoch": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+    "current_formal_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+    "current_formal_task_ordinal": {"type": "integer", "minimum": 1},
+    "latest_architecture_changing_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+    "latest_architecture_task_ordinal": {"type": "integer", "minimum": 1},
+    "current_iteration_boundary": {"type": "integer", "minimum": 1},
+    "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"},
+    "facts": {"$ref": "#/$defs/facts"},
+    "source_fingerprints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1, "pattern": "\\S"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "terminalTask": {"type": "object", "additionalProperties": false, "required": ["task_id", "execution_status", "terminal"], "properties": {"task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"}, "execution_status": {"type": "string", "minLength": 1}, "terminal": {"const": true}}},
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "operating_method", "task_lineage", "formal_task_lifecycle", "open_obligations", "steering", "environmental_residuals"],
+      "properties": {
+        "architecture": {
+          "type": "object", "additionalProperties": false,
+          "required": ["registry_components", "visible_map_nodes", "hidden_components", "typed_topology_relations", "visible_typed_edges", "current_map_version", "historical_map_version", "layout_version", "semantic_trunk_version", "semantic_trunk_route_steps"],
+          "properties": {
+            "registry_components": {"type": "integer", "minimum": 0},
+            "visible_map_nodes": {"type": "integer", "minimum": 0},
+            "hidden_components": {"type": "integer", "minimum": 0},
+            "typed_topology_relations": {"type": "integer", "minimum": 0},
+            "visible_typed_edges": {"type": "integer", "minimum": 0},
+            "current_map_version": {"$ref": "#/$defs/nonblank"},
+            "historical_map_version": {"$ref": "#/$defs/nonblank"},
+            "layout_version": {"$ref": "#/$defs/nonblank"},
+            "semantic_trunk_version": {"const": "semantic-trunk-r1"},
+            "semantic_trunk_route_steps": {"type": "integer", "minimum": 6}
+          }
+        },
+        "packs": {
+          "type": "object", "additionalProperties": false,
+          "required": ["count", "capability_route_count", "pack_ids"],
+          "properties": {"count": {"type": "integer", "minimum": 0}, "capability_route_count": {"type": "integer", "minimum": 0}, "pack_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}}
+        },
+        "federation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["adapter_inventory_count", "adapter_ids", "live_status_by_executor", "live_invocation_ceiling", "live_state_dimensions", "live_attempt_projection", "reference_executor_identity"],
+          "properties": {
+            "adapter_inventory_count": {"type": "integer", "minimum": 0},
+            "adapter_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "live_status_by_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/nonblank"}},
+            "live_invocation_ceiling": {"$ref": "#/$defs/nonblank"},
+            "live_state_dimensions": {"$ref": "#/$defs/liveStateDimensions"},
+            "live_attempt_projection": {
+              "type": "object", "additionalProperties": false,
+              "required": ["source_path", "projection_digest", "total_attempts", "validated_completion_count", "unreconciled_count", "observation_incomplete_count", "current_live_ceiling", "obligation_state", "unreconciled_attempt_ids", "next_action_status", "next_action"],
+              "properties": {
+                "source_path": {"$ref": "#/$defs/nonblank"},
+                "projection_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                "total_attempts": {"type": "integer", "minimum": 0},
+                "validated_completion_count": {"type": "integer", "minimum": 0},
+                "unreconciled_count": {"type": "integer", "minimum": 0},
+                "observation_incomplete_count": {"type": "integer", "minimum": 0},
+                "current_live_ceiling": {"$ref": "#/$defs/nonblank"},
+                "obligation_state": {"enum": ["OPEN", "CLOSED"]},
+                "unreconciled_attempt_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
+                "next_action_status": {"$ref": "#/$defs/nonblank"},
+                "next_action": {"$ref": "#/$defs/nonblank"}
+              }
+            },
+            "reference_executor_identity": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "foundation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["function_identity_cards", "function_quarantine_or_pending", "nonfunction_claims", "nonfunction_quarantine_or_pending"],
+          "properties": {
+            "function_identity_cards": {"type": "integer", "minimum": 0},
+            "function_quarantine_or_pending": {"type": "integer", "minimum": 0},
+            "nonfunction_claims": {"type": "integer", "minimum": 0},
+            "nonfunction_quarantine_or_pending": {"type": "integer", "minimum": 0}
+          }
+        },
+        "knowledge_experience": {
+          "type": "object", "additionalProperties": false,
+          "required": ["cards", "changes", "layered_readings", "search_records", "aliases"],
+          "properties": {"cards": {"type": "integer", "minimum": 0}, "changes": {"type": "integer", "minimum": 0}, "layered_readings": {"type": "integer", "minimum": 0}, "search_records": {"type": "integer", "minimum": 0}, "aliases": {"type": "integer", "minimum": 0}}
+        },
+        "fire_seeds": {
+          "type": "object", "additionalProperties": false,
+          "required": ["seed_count", "source_census_count"],
+          "properties": {"seed_count": {"type": "integer", "minimum": 0}, "source_census_count": {"type": "integer", "minimum": 0}}
+        },
+        "human_surface": {
+          "type": "object", "additionalProperties": false,
+          "required": ["materiality_entries", "function_human_entries", "nonfunction_human_entries", "registered_synchronization_surfaces", "machine_human_pairs", "surface_role_counts"],
+          "properties": {
+            "materiality_entries": {"type": "integer", "minimum": 0},
+            "function_human_entries": {"type": "integer", "minimum": 0},
+            "nonfunction_human_entries": {"type": "integer", "minimum": 0},
+            "registered_synchronization_surfaces": {"type": "integer", "minimum": 0},
+            "machine_human_pairs": {"type": "integer", "minimum": 0},
+            "surface_role_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}}
+          }
+        },
+        "iteration": {
+          "type": "object", "additionalProperties": false,
+          "required": ["current_formal_task_id", "current_formal_task_ordinal", "latest_architecture_changing_task_id", "latest_architecture_task_ordinal", "current_iteration_boundary", "current_iteration_boundary_semantics", "method_version", "method_status", "current_map_version"],
+          "properties": {
+            "current_formal_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "current_formal_task_ordinal": {"type": "integer", "minimum": 1},
+            "latest_architecture_changing_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "latest_architecture_task_ordinal": {"type": "integer", "minimum": 1},
+            "current_iteration_boundary": {"type": "integer", "minimum": 1},
+            "current_iteration_boundary_semantics": {"const": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"},
+            "method_version": {"$ref": "#/$defs/nonblank"},
+            "method_status": {"const": "Current"},
+            "current_map_version": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "operating_method": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["identity", "version", "status", "source_path"],
+          "properties": {
+            "identity": {"const": "IGNITION_OPERATING_METHOD_R1"},
+            "version": {"const": "1.0.0"},
+            "status": {"const": "CURRENT"},
+            "source_path": {"const": "ignition/OPERATING-METHOD.md"}
+          }
+        },
+        "task_lineage": {
+          "type": "object", "additionalProperties": false,
+          "required": ["current_task_id", "current_task_status", "task125_file_status", "task125_requirement_lineage_status", "task125_canonical_status", "task127_status"],
+          "properties": {
+            "current_task_id": {"pattern": "^IGNITION-[0-9A-Z-]+$"},
+            "current_task_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS", "COMPLETED_WITH_OPEN_OBLIGATIONS"]},
+            "task125_file_status": {"const": "HISTORICAL_UNEXECUTED"},
+            "task125_requirement_lineage_status": {"const": "REBASED_INTO_127"},
+            "task125_canonical_status": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
+            "task127_status": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"}
+          }
+        },
+        "formal_task_lifecycle": {
+          "type": "object", "additionalProperties": false,
+          "required": ["authority", "source_path", "current_task_id", "current_task_status", "current_task_terminal", "scope_complete", "open_obligation_ids", "terminal_task_history"],
+          "properties": {
+            "authority": {"const": "FORMAL_TASK_LIFECYCLE"},
+            "source_path": {"$ref": "#/$defs/nonblank"},
+            "current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "current_task_status": {"$ref": "#/$defs/nonblank"},
+            "current_task_terminal": {"type": "boolean"},
+            "scope_complete": {"type": "boolean"},
+            "open_obligation_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "terminal_task_history": {"type": "array", "items": {"$ref": "#/$defs/terminalTask"}, "uniqueItems": true}
+          }
+        },
+        "open_obligations": {
+          "type": "object", "additionalProperties": false,
+          "required": ["authority", "source_path", "current_task_id", "open_count", "open_obligation_ids", "next_eligible_actions"],
+          "properties": {
+            "authority": {"const": "OPEN_OBLIGATION_REGISTRY"},
+            "source_path": {"$ref": "#/$defs/nonblank"},
+            "current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "open_count": {"type": "integer", "minimum": 0},
+            "open_obligation_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "next_eligible_actions": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+          }
+        },
+        "steering": {
+          "type": "object", "additionalProperties": false,
+          "required": ["current_status", "invariant_ids", "module_count", "integration_surface_count", "pilot_status", "completion_boundary"],
+          "properties": {
+            "current_status": {"const": "REPOSITORY_LOCAL_CURRENT"},
+            "invariant_ids": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "module_count": {"type": "integer", "minimum": 1},
+            "integration_surface_count": {"type": "integer", "minimum": 1},
+            "pilot_status": {"const": "OFFLINE_SYNTHETIC_ONLY"},
+            "completion_boundary": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "environmental_residuals": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}}
+      }
+    },
+    "liveStateDimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "live_dispatch_observation_status", "live_process_observation_status", "inference_observation_status", "validated_completion_status", "reconciliation_blocker_status", "next_eligible_action"],
+      "properties": {
+        "schema_version": {"const": "live-state-dimensions-r1"},
+        "live_dispatch_observation_status": {"$ref": "#/$defs/nonblank"},
+        "live_process_observation_status": {"$ref": "#/$defs/nonblank"},
+        "inference_observation_status": {"$ref": "#/$defs/nonblank"},
+        "validated_completion_status": {"$ref": "#/$defs/nonblank"},
+        "reconciliation_blocker_status": {"$ref": "#/$defs/nonblank"},
+        "next_eligible_action": {"$ref": "#/$defs/nonblank"}
+      }
+    }
+  }
+}

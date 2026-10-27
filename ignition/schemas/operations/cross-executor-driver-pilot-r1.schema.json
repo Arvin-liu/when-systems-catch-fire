@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/operations/cross-executor-driver-pilot-r1.schema.json",
+  "title": "Cross-Executor Driver Pilot R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "recorded_at", "workspace_policy", "formal_repository_used_as_live_target", "external_observations", "driver", "episode", "convergence", "adversarial", "claim_ceiling"],
+  "properties": {
+    "schema_version": { "const": "cross-executor-driver-pilot-r1" },
+    "task_id": { "const": "IGNITION-20260816-123" },
+    "step": { "const": "10" },
+    "recorded_at": { "type": "string", "format": "date-time" },
+    "workspace_policy": { "const": "disposable_temp_workspace_only" },
+    "formal_repository_used_as_live_target": { "const": false },
+    "external_observations": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["executor_id", "observed_version", "live_invocation", "outcome", "classification", "attempted_bounded_smoke", "skip_reason", "source_receipt"],
+        "properties": {
+          "executor_id": { "enum": ["external.openclaw", "external.hermes", "external.codex"] },
+          "observed_version": { "type": "string", "minLength": 1 },
+          "live_invocation": { "const": "SKIPPED_UNSAFE_OR_UNAVAILABLE" },
+          "outcome": { "const": "SKIPPED_UNSAFE_OR_UNAVAILABLE" },
+          "classification": { "enum": ["UNSAFE_SURFACE", "TIMEOUT", "UNAVAILABLE"] },
+          "attempted_bounded_smoke": { "type": "boolean" },
+          "skip_reason": { "type": "string", "minLength": 1 },
+          "source_receipt": { "const": "ignition/data/operations/iterations/123/external-conformance-smoke-r1.json" }
+        }
+      }
+    },
+    "driver": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_state_owner", "task_envelope_digest", "required_capabilities", "allowed_effects", "initial_route", "fallback_route", "external_dispatch_policy", "approval", "failover", "failover_safety_evidence"],
+      "properties": {
+        "canonical_state_owner": { "const": "ignition" },
+        "task_envelope_digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "required_capabilities": { "const": ["repo.read"] },
+        "allowed_effects": { "const": ["read disposable fixture"] },
+        "initial_route": { "type": "object", "required": ["status", "selected_executor_id"], "properties": { "status": { "const": "SELECTED" }, "selected_executor_id": { "const": "external.hermes" } } },
+        "fallback_route": { "type": "object", "required": ["status", "selected_executor_id"], "properties": { "status": { "const": "SELECTED" }, "selected_executor_id": { "const": "reference.executor" } } },
+        "external_dispatch_policy": { "const": "NOT_REPEATED_AFTER_STEP09" },
+        "approval": { "type": "object", "required": ["status"], "properties": { "status": { "const": "APPROVED" } } },
+        "failover": { "type": "object", "required": ["status", "source_executor_id", "target_executor_id", "failover_reason", "automatic"], "properties": { "status": { "const": "AUTO_FAILOVER_ELIGIBLE" }, "source_executor_id": { "const": "external.hermes" }, "target_executor_id": { "const": "reference.executor" }, "failover_reason": { "const": "EXECUTOR_TIMEOUT" }, "automatic": { "const": true } } },
+        "failover_safety_evidence": { "type": "string", "minLength": 1 }
+      }
+    },
+    "episode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "source_executor", "source_event", "source_os_validator", "source_receipt", "handoff", "recovery_executor", "recovery_event", "recovery_os_validator", "recovery_receipt", "os_acceptance"],
+      "properties": {
+        "task_id": { "const": "step10-driver-001" },
+        "source_executor": { "const": "reference.executor" },
+        "source_event": { "type": "object", "required": ["state"], "properties": { "state": { "const": "COMPLETED_UNVALIDATED" } } },
+        "source_os_validator": { "$ref": "#/$defs/fixtureAudit" },
+        "source_receipt": { "$ref": "#/$defs/receiptSummary" },
+        "handoff": { "type": "object", "required": ["handoff_id", "source_executor_id", "target_executor_id", "pending_work", "allowed_capabilities", "workspace_refs", "takeover"], "properties": { "handoff_id": { "const": "step10-handoff-001" }, "source_executor_id": { "const": "reference.executor" }, "target_executor_id": { "const": "reference.executor.recovery" }, "pending_work": { "type": "array", "minItems": 1 }, "allowed_capabilities": { "const": ["repo.read"] }, "workspace_refs": { "const": ["disposable-fixture/"] }, "takeover": { "type": "object", "required": ["status"], "properties": { "status": { "const": "ACCEPTED" } } } } },
+        "recovery_executor": { "const": "reference.executor.recovery" },
+        "recovery_event": { "type": "object", "required": ["state"], "properties": { "state": { "const": "COMPLETED_UNVALIDATED" } } },
+        "recovery_os_validator": { "$ref": "#/$defs/fixtureAudit" },
+        "recovery_receipt": { "$ref": "#/$defs/receiptSummary" },
+        "os_acceptance": { "const": "COMPLETED_VALIDATED_AFTER_INDEPENDENT_OS_VALIDATION" }
+      }
+    },
+    "convergence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_state_owner", "progress_ingest", "receipt_ingest", "coordinator_audit", "bounded_memory_audit", "private_vendor_history_absorbed"],
+      "properties": {
+        "canonical_state_owner": { "const": "ignition" },
+        "progress_ingest": { "type": "array", "minItems": 2 },
+        "receipt_ingest": { "type": "array", "minItems": 3 },
+        "coordinator_audit": { "type": "object", "required": ["status", "memory_enabled"], "properties": { "status": { "const": "PASS" }, "memory_enabled": { "const": true } } },
+        "bounded_memory_audit": { "type": "object", "required": ["status", "entry_count"], "properties": { "status": { "const": "PASS" }, "entry_count": { "const": 7 } } },
+        "private_vendor_history_absorbed": { "const": false }
+      }
+    },
+    "adversarial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["external_claim", "actual_issue_count", "validator_outcome", "os_acceptance", "receipt_ingest"],
+      "properties": {
+        "external_claim": { "type": "object", "required": ["executor_id", "terminal_state", "claimed_issue_count", "validation_refs"], "properties": { "executor_id": { "const": "external.codex" }, "terminal_state": { "const": "REQUIRES_RECONCILIATION" }, "claimed_issue_count": { "const": 0 }, "validation_refs": { "const": [] } } },
+        "actual_issue_count": { "const": 2 },
+        "validator_outcome": { "const": "REJECTED_FAILED_VALIDATION" },
+        "os_acceptance": { "const": "REJECTED" },
+        "receipt_ingest": { "type": "object", "required": ["status", "terminal_state", "validation_refs"], "properties": { "status": { "const": "UNVERIFIED" }, "terminal_state": { "const": "REQUIRES_RECONCILIATION" }, "validation_refs": { "const": [] } } }
+      }
+    },
+    "claim_ceiling": { "type": "string", "minLength": 1 }
+  },
+  "$defs": {
+    "fixtureAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fixture_version", "issue_count", "issues", "manifest_sha256", "source_sha256"],
+      "properties": {
+        "fixture_version": { "const": "disposable-federation-fixture-r1" },
+        "issue_count": { "const": 2 },
+        "issues": { "const": ["manifest hash mismatch: README.md", "broken link: docs/guide.md"] },
+        "manifest_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "receiptSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["executor_id", "federation_task_id", "terminal_state", "receipt_digest", "validation_refs", "artifact_refs", "handoff_eligible"],
+      "properties": {
+        "executor_id": { "type": "string", "minLength": 1 },
+        "federation_task_id": { "const": "step10-driver-001" },
+        "terminal_state": { "const": "COMPLETED_VALIDATED" },
+        "receipt_digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "validation_refs": { "const": ["validator/federation-pilot-fixture-r1"] },
+        "artifact_refs": { "const": ["disposable-fixture/manifest.json"] },
+        "handoff_eligible": { "const": true }
+      }
+    }
+  }
+}

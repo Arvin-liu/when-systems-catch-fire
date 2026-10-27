@@ -1,0 +1,124 @@
+{
+  "schema_version": "ignition-150-step19-gate-topology-regression-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "19",
+  "record_type": "SPLIT_GATE_TOPOLOGY_REGRESSION",
+  "status": "SPLIT_GATE_TOPOLOGY_PASS_DELTA_REMAINS_DEFERRED",
+  "formal_previous_commit": "1ca874d5994372713b0745ae1ccc699da862c9a3",
+  "historical_step11": {
+    "path": "ignition/data/operations/iterations/150/step11-capability-registry-candidate-gate.json",
+    "artifact_sha256": "fee253fd361c0e312f401762d370cfa333f34ced946aad178aa81888bb9b9866",
+    "combined_model_result": "NOT_REGISTERED",
+    "historical_delta_gate": "delta_viewport_containment_zero_failure = FAIL",
+    "retained_as_historical": true,
+    "rewritten": false
+  },
+  "gate_topology": {
+    "base_operation": {
+      "operation_id": "visualization.render_derived_system_view",
+      "gate_family": "BASE_OPERATION_GATES",
+      "gate_ids": [
+        "canonical_source_provenance_complete",
+        "node_edge_semantic_fidelity",
+        "provider_topology_unchanged",
+        "standalone_viewport_containment_zero_failure",
+        "provider_failure_fail_closed",
+        "canonical_source_unaffected",
+        "environment_admission_no_auto_install",
+        "immutable_tested_compatibility_envelope",
+        "artifact_digest_and_provenance_receipt",
+        "provider_local_policy_isolation",
+        "no_default_renderer",
+        "no_architecture_truth_escalation"
+      ],
+      "all_gates_required": true,
+      "standalone_viewport_gate_is_independent": true,
+      "delta_gate_included": false,
+      "owner_aesthetic_gate_included": false,
+      "base_failure_result": "DEFER",
+      "base_pass_result": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE"
+    },
+    "delta_extension": {
+      "extension_id": "architecture_delta.before_delta_after",
+      "gate_family": "DELTA_EXTENSION_GATES",
+      "gate_ids": ["delta_viewport_containment_zero_failure"],
+      "current_result": "FAIL_DEFERRED",
+      "failure_result": "DEFER",
+      "separate_admission_required": true,
+      "base_gate_included": false,
+      "base_pass_promotes_delta": false
+    },
+    "aesthetic_boundary": {
+      "owner_aesthetic_endorsement_gate_in_base": false,
+      "owner_aesthetic_endorsement": "NOT_GRANTED",
+      "functional_visual_admission_can_proceed_to_base_gates": true
+    },
+    "combined_gate_model": {
+      "used_for_current_admission": false,
+      "historical_failure_preserved": true,
+      "replacement": "INDEPENDENT_BASE_AND_DELTA_GATE_FAMILIES"
+    }
+  },
+  "regression_cases": [
+    {
+      "id": "standalone_pass_delta_fail",
+      "kind": "POLICY_REGRESSION_FIXTURE",
+      "base_gate_results": {"all_base_gates": "PASS", "standalone_viewport_containment_zero_failure": "PASS"},
+      "delta_gate_result": "FAIL",
+      "expected_base_admission": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE",
+      "expected_delta_admission": "DEFER",
+      "expected_registry_write": "BASE_ONLY_AFTER_LATER_LIFECYCLE",
+      "expected_current_operation_count": 20,
+      "live_evidence": false
+    },
+    {
+      "id": "standalone_fail_delta_pass",
+      "kind": "POLICY_REGRESSION_FIXTURE",
+      "base_gate_results": {"all_base_gates": "FAIL", "standalone_viewport_containment_zero_failure": "FAIL"},
+      "delta_gate_result": "PASS",
+      "expected_base_admission": "DEFER",
+      "expected_delta_admission": "SEPARATE_ADMISSION_REQUIRED",
+      "expected_registry_write": "NONE",
+      "expected_current_operation_count": 19,
+      "live_evidence": false
+    },
+    {
+      "id": "delta_repaired_base_pass",
+      "kind": "POLICY_REGRESSION_FIXTURE",
+      "base_gate_results": {"all_base_gates": "PASS", "standalone_viewport_containment_zero_failure": "PASS"},
+      "delta_gate_result": "PASS",
+      "expected_base_admission": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE",
+      "expected_delta_admission": "SEPARATE_ADMISSION_REQUIRED",
+      "expected_registry_write": "BASE_ONLY_AFTER_LATER_LIFECYCLE",
+      "expected_current_operation_count": 20,
+      "live_evidence": false
+    },
+    {
+      "id": "aesthetic_endorsement_absent",
+      "kind": "POLICY_REGRESSION_FIXTURE",
+      "base_gate_results": {"all_base_gates": "PASS", "standalone_viewport_containment_zero_failure": "PASS"},
+      "delta_gate_result": "FAIL",
+      "owner_aesthetic_endorsement": "ABSENT_NOT_GRANTED",
+      "expected_base_admission": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE",
+      "expected_delta_admission": "DEFER",
+      "expected_aesthetic_claim": "NOT_CLAIMED",
+      "expected_registry_write": "BASE_ONLY_AFTER_LATER_LIFECYCLE",
+      "expected_current_operation_count": 20,
+      "live_evidence": false
+    }
+  ],
+  "current_state": {
+    "registry_operation_count": 19,
+    "registry_write_in_step19": false,
+    "base_operation_current": false,
+    "delta_current": false,
+    "default_renderer": "NOT_SELECTED",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "result": "TASK150_STEP19_GATE_TOPOLOGY_REGRESSION_PASS",
+  "next_step": "TASK150_STEP20_FUNCTIONAL_VERSUS_AESTHETIC_BOUNDARY",
+  "claim_ceiling": "Step19 proves only that the repository-local admission policy separates base and Delta gate families in synthetic fail-closed regressions. It does not prove fresh standalone visual evidence, provider compatibility, Current integration, Ready, merge, aesthetic endorsement, architecture truth, production readiness, authentication, external truth or live external completion."
+}

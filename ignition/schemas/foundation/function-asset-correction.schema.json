@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ignition Authoritative Function Asset Correction",
+  "type": "object",
+  "required": [
+    "correction_id", "formal_identity", "legacy_identity_conflict",
+    "original_claim", "corrected_claim", "retained_mathematics", "rejected_inference",
+    "domain", "singularities", "counterexample", "mathematical_maturity",
+    "external_evidence", "claim_ceiling", "allowed_uses", "forbidden_uses",
+    "disposition", "dependency_action", "source_paths", "audit_gates", "authority"
+  ],
+  "properties": {
+    "correction_id": {"type": "string", "pattern": "^CORR-98-"},
+    "stable_id": {"type": "string"},
+    "formal_identity": {"enum": ["STRICT_MATHEMATICAL_FUNCTION", "PARAMETRIC_MODEL", "SCORE_OR_INDEX", "GATE_OR_DECISION_RULE", "ALGORITHM_OR_WORKFLOW", "RELATION_OR_CONSTRAINT", "HEURISTIC", "STRUCTURAL_METAPHOR", "CONJECTURE_OR_PENDING_CLAIM", "INVALID_OR_PSEUDO_FUNCTION"]},
+    "legacy_identity_conflict": {"type": ["string", "null"]},
+    "mathematical_maturity": {"type": "string", "pattern": "^M[0-7]$"},
+    "external_evidence": {"type": "string", "pattern": "^E[0-7]$"},
+    "disposition": {"enum": ["KEEP", "REWRITE", "DOWNGRADE", "SPLIT", "RETIRE"]},
+    "authority": {"const": "HUMAN_ADJUDICATED_TASK98"}
+  },
+  "additionalProperties": true
+}

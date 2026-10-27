@@ -1,0 +1,57 @@
+{
+  "schema_version": "ignition-134-step08-residual-sealing-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "08",
+  "status": "PASS",
+  "ledger_path": "ignition/data/operations/residual-ledger-r1.json",
+  "builder_change": {
+    "baseline_source": "prior ledger baseline tuple only",
+    "current_source": "live validator observations",
+    "current_observation_reused_as_baseline": false,
+    "baseline_reset_to_zero_after_repair": false
+  },
+  "residuals": [
+    {
+      "residual_id": "CURRENT_PATH_MANIFEST_UNACCOUNTED",
+      "baseline_count": 245,
+      "current_count": 0,
+      "status": "RESOLVED_CURRENT",
+      "release_impact": "NON_BLOCKING_RESOLVED"
+    },
+    {
+      "residual_id": "HUMAN_SURFACE_SOURCE_HASH_DRIFT",
+      "baseline_count": 11,
+      "current_count": 0,
+      "status": "RESOLVED_CURRENT",
+      "release_impact": "NON_BLOCKING_RESOLVED"
+    },
+    {
+      "residual_id": "PROPAGATION_TASK104_106_MISMATCH",
+      "baseline_count": 27,
+      "current_count": 27,
+      "status": "SEALED_HISTORICAL",
+      "release_impact": "HISTORICAL_ONLY"
+    },
+    {
+      "residual_id": "T16_SYMPY_COUNTEREXAMPLE",
+      "baseline_count": 1,
+      "current_count": 1,
+      "status": "ENVIRONMENTAL",
+      "release_impact": "ENVIRONMENTAL_ONLY"
+    },
+    {
+      "residual_id": "FULL_UNITTEST_DISCOVERY_TERMINAL_STATE",
+      "baseline_count": 1,
+      "current_count": 1,
+      "status": "OPEN_INHERITED",
+      "release_impact": "NON_BLOCKING_IF_UNCHANGED"
+    }
+  ],
+  "delta_gate": {
+    "new_objects": 0,
+    "new_failure_dimensions": 0,
+    "residual_object_growth": false,
+    "ledger_validation": "RESIDUAL_LEDGER_OK entries=5 inherited_unchanged=3 resolved=2"
+  },
+  "claim_ceiling": "Repository-local residual sealing and non-growth evidence only; historical and environmental labels do not assert current correctness, and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

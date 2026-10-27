@@ -1,0 +1,240 @@
+{
+  "claim_ceiling": "Repository-local targeted negative-fixture semantics only; no whole-project full-suite PASS, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "contract": {
+    "fixture_rejection_is_asserted_inside_test": true,
+    "negative_fixture_unittest_errors_allowed": 0,
+    "negative_fixture_unittest_failures_allowed": 0,
+    "negative_fixture_unittest_skips_allowed": 0,
+    "subprocess_negative_cli_policy": "check=False plus explicit returncode and structured output assertions",
+    "uncaught_fixture_exception_is_not_an_expected_result": true
+  },
+  "failed_targets": [],
+  "schema_version": "ignition-135-step08-negative-fixture-semantics-r1",
+  "status": "PASS",
+  "step": "08",
+  "target_count": 11,
+  "targets": [
+    {
+      "assertion_contract": "mutated source is passed to validate(path) and expected diagnostics are asserted; sealed legacy PASS remains explicit",
+      "case_id": "state-changelog",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.069,
+      "semantic_kind": "validator_diagnostics",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 102,
+      "stderr_sha256": "d433b8a8ba5d21fdd5ce4eab62c113007be06002431e8d50baa3610427ae0a8c",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_state_changelog.StateChangelogTests"
+      ],
+      "tests_run": 4
+    },
+    {
+      "assertion_contract": "exact residual PASS and added/removed/mutated fixture cases fail closed inside unittest",
+      "case_id": "sealed-propagation-residual",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.02,
+      "semantic_kind": "validator_diagnostics",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 100,
+      "stderr_sha256": "41919cc1849a5baca889b145de1b4eb93cc6286c4e6b996e80ebf7981eee9f1c",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_propagation_reconciliation.TestSealedResidualContract"
+      ],
+      "tests_run": 2
+    },
+    {
+      "assertion_contract": "each fixture must produce a non-empty validator issue list",
+      "case_id": "current-surface-semantic",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.005,
+      "semantic_kind": "validator_diagnostics",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 98,
+      "stderr_sha256": "c3dc4ce80790d0a5a68dcff2d3009be59564c24dfe01144e0f6b50051e539cc3",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_current_surface_semantics.CurrentSurfaceSemanticGateTests.test_ten_negative_fixtures_fail_closed"
+      ],
+      "tests_run": 1
+    },
+    {
+      "assertion_contract": "stale projection rejection is caught by assertRaises and does not escape the test method",
+      "case_id": "derived-architecture-projection",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.006,
+      "semantic_kind": "caught_typed_rejection",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 98,
+      "stderr_sha256": "46df4f0edcf4a6f9a32504da3478dd3a1a7db82b7890d0c616cbb1a0a9b16b2a",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_overall_architecture.OverallArchitectureTest.test_unsynchronized_projection_fixture_fails_closed"
+      ],
+      "tests_run": 1
+    },
+    {
+      "assertion_contract": "stale fixture produces structured gate failure and release_admission=false",
+      "case_id": "projection-preflight-gate",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.0,
+      "semantic_kind": "structured_gate_result",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 98,
+      "stderr_sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_projection_preflight.ProjectionPreflightTests.test_stale_fixture_cannot_enter_release_gate"
+      ],
+      "tests_run": 1
+    },
+    {
+      "assertion_contract": "negative registry/request fixtures assert schema diagnostics or caught ContractError",
+      "case_id": "stage-snapshot-contract",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.243,
+      "semantic_kind": "caught_typed_rejection_and_schema_diagnostics",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 133,
+      "stderr_sha256": "519c3457782b9b4147909f3222cba78e965d5f1fc24d3505f056e8d578b282d5",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_stage_snapshot_publication.StageSnapshotPublicationTests"
+      ],
+      "tests_run": 34
+    },
+    {
+      "assertion_contract": "validator subprocess uses check=False and asserts non-zero return plus stable rejection text",
+      "case_id": "generated-output-authority",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.758,
+      "semantic_kind": "nonzero_cli_result",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 107,
+      "stderr_sha256": "c26c7e30f34d2099f60c117ae45c22b92854086c001e34bb3087a1fda20c950f",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_generated_output_authority_negative.GeneratedOutputAuthorityNegativeTests"
+      ],
+      "tests_run": 9
+    },
+    {
+      "assertion_contract": "mutated plans assert structured error codes; CLI rejection uses check=False and parses JSON",
+      "case_id": "incremental-execution-validator",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.254,
+      "semantic_kind": "structured_validator_result_and_nonzero_cli_result",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 117,
+      "stderr_sha256": "9855159aac08592159a75495f59f05567b68771b24feba3c832df3b757df37d0",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_incremental_execution_validator.UnifiedIncrementalValidatorAcceptance"
+      ],
+      "tests_run": 18
+    },
+    {
+      "assertion_contract": "injected path violations assert validator return code 1 and expected diagnostic text",
+      "case_id": "path-classification",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.111,
+      "semantic_kind": "validator_return_code_and_diagnostics",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 102,
+      "stderr_sha256": "04a3ba0eb1deb1cc4046427a4a131abbb0286628007dd92f3e9baa0c6cdcb807",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "foundation.test_repository_path_classification.NegativeClassificationTest"
+      ],
+      "tests_run": 4
+    },
+    {
+      "assertion_contract": "forged decisions assert success=false and the intended error dimension",
+      "case_id": "publication-gate",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.032,
+      "semantic_kind": "structured_gate_result",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 107,
+      "stderr_sha256": "ac8b06dea51b5113d82503d86fca79b85930a43fe6e2f945b781c6dd1f26fe08",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_publication_gate_fail_closed.PublicationGateFailClosedTests"
+      ],
+      "tests_run": 9
+    },
+    {
+      "assertion_contract": "forged report is run with check=False and its structured error code is asserted",
+      "case_id": "phase-d-cli-rejection",
+      "errors": 0,
+      "failures": 0,
+      "returncode": 0,
+      "runtime_seconds": 0.39,
+      "semantic_kind": "nonzero_cli_result",
+      "skipped": 0,
+      "status": "PASS",
+      "stderr_bytes": 98,
+      "stderr_sha256": "a8cf0f4285bb8ff163ccd3e44e677873569bc995191e2ce700e708b8ac14970b",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": "OK",
+      "tests": [
+        "tests.test_phase_d_closeout.PhaseD4CloseoutValidation.test_d4_20_cli_check_success_and_stable_failure"
+      ],
+      "tests_run": 1
+    }
+  ],
+  "task_id": "IGNITION-20260822-135",
+  "tests_run": 84
+}

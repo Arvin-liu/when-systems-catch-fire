@@ -1,0 +1,33 @@
+{
+  "schema": "os-steering-intent-obligation-r1.goal-registry",
+  "contracts": [
+    {
+      "schema": "os-steering-intent-obligation-r1.completion-contract",
+      "contract_id": "contract-synthetic-brief",
+      "acceptance_predicates": ["independent_validator_receipt_present"],
+      "required_evidence_types": ["VALIDATOR_RECEIPT"],
+      "completion_authority": "VALIDATOR",
+      "forbidden_shortcuts": ["run_pass", "tests_green"],
+      "review_window_ref": null
+    }
+  ],
+  "goals": [
+    {
+      "schema": "os-steering-intent-obligation-r1.goal",
+      "goal_id": "goal-synthetic-brief",
+      "intent_id": "intent-synthetic-research",
+      "statement": "Produce a bounded research brief.",
+      "namespace": "fixture.public",
+      "completion_contract_id": "contract-synthetic-brief",
+      "provenance": {"source_type": "OWNER_DECLARED", "actor_ref": "owner.synthetic", "authority_id": "auth-goal-001", "reason": "synthetic fixture", "evidence_refs": [], "authorized": true},
+      "status": "PROPOSED",
+      "version": 1,
+      "parent_goal_id": null,
+      "supersedes_goal_id": null,
+      "created_at": "2026-08-21T12:00:00+08:00",
+      "updated_at": "2026-08-21T12:00:00+08:00"
+    }
+  ],
+  "events": [],
+  "goal_count": 1
+}

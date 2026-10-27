@@ -1,0 +1,133 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260828-146",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "current_formal_task_id": "IGNITION-20260828-146",
+  "current_formal_task_ordinal": 146,
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "current_iteration_boundary": 146,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "surface_decisions": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "decision": "CHANGE",
+      "reason": "README now has exactly two human blocks under 项目与价值: current project status first and the canonical value-charter summary second; the old machine Current surface is removed.",
+      "evidence": "Task146 human front-door validator and static homepage compiler check."
+    },
+    {
+      "surface_id": "project-current-state",
+      "path": "ignition/docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "The generated Current block carries Task146 identity and lifecycle state after README machine content is removed.",
+      "evidence": "Task146 Current Surface Compiler output and determinism report."
+    },
+    {
+      "surface_id": "ai-cold-start",
+      "path": "ignition/AI-START-HERE.md",
+      "decision": "CHANGE",
+      "reason": "The generated AI Current block follows canonical Task146 identity while preserving the machine recovery route.",
+      "evidence": "Task146 Current Surface Compiler output and determinism report."
+    },
+    {
+      "surface_id": "ai-agents-handoff",
+      "path": "ignition/AI-HANDOFF.md",
+      "decision": "CHANGE",
+      "reason": "The generated handoff Current block follows canonical Task146 identity; detailed machine state remains outside the public homepage.",
+      "evidence": "Task146 Current Surface Compiler output and determinism report."
+    },
+    {
+      "surface_id": "architecture",
+      "path": "ignition/ARCHITECTURE.md",
+      "decision": "CHANGE",
+      "reason": "The generated architecture Current block records the presentation-only Task146 transition while architecture identity and map geometry remain frozen.",
+      "evidence": "Task146 Current Surface Compiler output and frozen Task142 architecture state."
+    },
+    {
+      "surface_id": "steering-doc",
+      "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task146 changes the homepage boundary and Current compiler registration, not Steering, Intent, Goal or Obligation semantics.",
+      "evidence": "Task146 execution contract identity_impact=PRESENTATION_ONLY."
+    },
+    {
+      "surface_id": "machine-entry",
+      "path": "ignition/llms.txt",
+      "decision": "CHANGE",
+      "reason": "The machine entry's generated block carries Task146 Current facts, lineage and release lifecycle values.",
+      "evidence": "Task146 Current Surface Compiler output and determinism report."
+    },
+    {
+      "surface_id": "system-map-doc",
+      "path": "ignition/docs/architecture/interactive-system-map.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No component, typed relation, layout or map version changed; the architecture graph remains a source-link projection without a rendered-clickability promise.",
+      "evidence": "Task146 execution contract and system-map source/spec/SVG checks."
+    },
+    {
+      "surface_id": "federation-doc",
+      "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The external Agent contract remains Owner-deferred and no live executor or qualification scope is reopened.",
+      "evidence": "Task146 scope guards and carried LIVE_EXTERNAL_INVOCATION obligation."
+    },
+    {
+      "surface_id": "system-map-json",
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task146 is presentation-only and introduces no registry object, typed topology relation, layout change or map-version change.",
+      "evidence": "Task146 system-map source/spec/SVG equality check."
+    },
+    {
+      "surface_id": "state-changelog",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "decision": "CHANGE",
+      "reason": "The append-only Task146 delta records the homepage static-summary boundary and keeps Current machine state in its linked surfaces.",
+      "evidence": "Task146 append-only changelog delta and Current Surface Compiler output."
+    }
+  ],
+  "system_map_sync": {
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "The Task142 architecture identity, map geometry and typed relation set remain unchanged by this presentation-only task.",
+    "evidence": "Task146 system-map source/spec/SVG equality check."
+  },
+  "state_changelog_delta": {
+    "decision": "CHANGE",
+    "reason": "The append-only log records why README is now a static human front door and where machine Current state remains authoritative.",
+    "evidence": "Task146 STATE-CHANGELOG entry."
+  },
+  "changed_paths": [
+    ".github/README.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/current-surface-block-contract-r1.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/data/operations/iterations/146/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/146/execution-contract-r1.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/operations/projection-preflight-r1.json",
+    "ignition/data/operations/task-identity-model-r1.json",
+    "ignition/docs/architecture/current-facts.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/llms.txt",
+    "ignition/schemas/operations/current-surface-block-contract-r1.schema.json",
+    "ignition/tools/current_surface_compiler.py",
+    "ignition/tools/record_current_surface_determinism.py",
+    "ignition/tools/validate_current_task_lineage.py",
+    "ignition/tools/validate_human_front_door.py"
+  ],
+  "identity_contract_changed": false,
+  "surface_sync_complete": false,
+  "claim_ceiling": "Task146 repository-local Current State synchronization evidence only; architecture identity and map geometry remain frozen, production awaits the Owner brief, LIVE_EXTERNAL_INVOCATION remains OPEN/Owner-deferred, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

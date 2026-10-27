@@ -1,0 +1,153 @@
+{
+  "candidate_vocabulary_is_hidden_during_discovery": true,
+  "candidate_vocabulary_is_not_used_as_a_target": true,
+  "fixed_feature_taxonomy_not_used_as_primary_generator": true,
+  "initial_representation": {
+    "allowed_operators": [
+      "add",
+      "revise",
+      "link",
+      "check",
+      "materialize"
+    ],
+    "complexity_cost": 0,
+    "composition_grammar": "ordered_relational_composition",
+    "falsifiers": [
+      "missing_support",
+      "ordering_inconsistency",
+      "scope_leak",
+      "unresolved_contradiction"
+    ],
+    "generation": 0,
+    "identity_scope_assumptions": [
+      "local_object_identity",
+      "explicit_scope_boundary"
+    ],
+    "primitives": [
+      "object",
+      "claim",
+      "evidence_item",
+      "operation",
+      "question",
+      "failure"
+    ],
+    "question_language": [
+      "what",
+      "why",
+      "under_which_condition",
+      "what_failed"
+    ],
+    "relation_types": [
+      "supports",
+      "depends_on",
+      "contradicts",
+      "precedes",
+      "scopes"
+    ],
+    "unresolved_residual_set": []
+  },
+  "input_method": "pre-event open structural extraction over claims, reasons, evidence, constraints, exceptions, revisions, contradictions, questions, and later-dependency markers",
+  "mutation_operations": [
+    "ADD_PRIMITIVE",
+    "RETIRE_PRIMITIVE",
+    "SPLIT_PRIMITIVE",
+    "MERGE_PRIMITIVES",
+    "RETYPE_RELATION",
+    "CHANGE_RELATION_ARITY",
+    "ADD_OR_RETIRE_OPERATOR",
+    "CHANGE_COMPOSITION_GRAMMAR",
+    "REPLACE_PRODUCT_WITH_OTHER_COMPOSITION",
+    "CHANGE_OBJECT_LANGUAGE",
+    "ADD_NEW_QUESTION_FORM",
+    "ADD_NEW_FALSIFIER"
+  ],
+  "mutation_trials": [
+    {
+      "operation": "ADD_PRIMITIVE",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "4049516e1e2799824ec0155634fee996ae355c5c3d38d3e9fdbb62b065cc8ea0"
+    },
+    {
+      "operation": "RETIRE_PRIMITIVE",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "382d370669d36184893c8640e78c6adfcd41dc591d05c7cef89f1f9e61be27d4"
+    },
+    {
+      "operation": "SPLIT_PRIMITIVE",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "d09c75e4d44aa009e5ca45620ebb6fb2bd8f074a49b5eb43fd732c40a2079e15"
+    },
+    {
+      "operation": "MERGE_PRIMITIVES",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "1600f335467f8eb0107af8ccb890ff77c8d07143150f046f6e671f1c41a7403e"
+    },
+    {
+      "operation": "RETYPE_RELATION",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "3340cb9516bc39153cceead23890bc3ccea507d1160239f1a0f5ed11eac251cf"
+    },
+    {
+      "operation": "CHANGE_RELATION_ARITY",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "b15eef679cde6acfd77e57062c17d6c106b1b4a2fee95548c4655f846b94eeef"
+    },
+    {
+      "operation": "ADD_OR_RETIRE_OPERATOR",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "8d08be910d737a9dd4c18884062ac3f6f489674497c964334ddf6f564001808d"
+    },
+    {
+      "operation": "CHANGE_COMPOSITION_GRAMMAR",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "3a5839613bef37df3cf1f5968535578b628fe319d84b746c0189f228845c85d7"
+    },
+    {
+      "operation": "REPLACE_PRODUCT_WITH_OTHER_COMPOSITION",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "b45905887a0269f95941267701a594ced0f3e8d1f9184e00df4e41a9d3e26312"
+    },
+    {
+      "operation": "CHANGE_OBJECT_LANGUAGE",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "b6824a8c961e5a9c84ac73fa9d52d05569ce434b366597215dbc44e7e4ae0aa8"
+    },
+    {
+      "operation": "ADD_NEW_QUESTION_FORM",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "208d2ce8a1db330ed35528cfb519c2a610924d083533ce811b21a2249805db39"
+    },
+    {
+      "operation": "ADD_NEW_FALSIFIER",
+      "semantic_claim": "NONE",
+      "status": "TRIAL_APPLIED",
+      "trial_state_sha256": "b798a3a0c9ff35220ff469b11ccd9ddf8b36c37136aa4fd353237bcd702bbfb9"
+    }
+  ],
+  "operator_id": "R1",
+  "representation_state_fields": [
+    "primitives_or_object_kinds",
+    "relation_types_and_arity",
+    "composition_grammar",
+    "allowed_operators",
+    "question_language",
+    "falsifiers",
+    "identity_scope_lifecycle_assumptions",
+    "unresolved_residual_set",
+    "complexity_cost"
+  ],
+  "semantic_adjudication": "not available inside blind run; capability equivalence is evaluated only after the separate answer key is opened",
+  "status": "RESEARCH_ONLY / FROZEN_BEFORE_STAGE_A",
+  "task_id": "IGNITION-20260907-163"
+}

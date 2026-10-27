@@ -1,0 +1,49 @@
+{
+  "schema_version": "post-publication-task-binding-negative-fixtures-r1",
+  "task_id": "IGNITION-20260822-132",
+  "claim_ceiling": "Negative fixtures test repository-local task identity binding only; they do not assert external truth or publication.",
+  "cases": [
+    {
+      "case_id": "remote_sha_match_task_id_mismatch",
+      "kind": "remote_sha_and_task_id",
+      "candidate_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "remote_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_task_id": "IGNITION-20260821-131",
+      "formal_result_task_id": "IGNITION-20260821-131",
+      "expected_status": "FAIL",
+      "required_error": "TASK_ID_BINDING_MISMATCH"
+    },
+    {
+      "case_id": "formal_result_task_id_mismatch",
+      "kind": "document_binding",
+      "field": "formal_result_task_id",
+      "value": "IGNITION-20260821-131",
+      "expected_status": "FAIL",
+      "required_error": "formal_result.task_id"
+    },
+    {
+      "case_id": "canonical_current_formal_task_mismatch",
+      "kind": "document_binding",
+      "field": "canonical_current_formal_task_id",
+      "value": "IGNITION-20260821-131",
+      "expected_status": "FAIL",
+      "required_error": "lineage.task_identity.current_formal_task"
+    },
+    {
+      "case_id": "lifecycle_task_id_mismatch",
+      "kind": "document_binding",
+      "field": "lifecycle_task_id",
+      "value": "IGNITION-20260821-131",
+      "expected_status": "FAIL",
+      "required_error": "lifecycle.task_id"
+    },
+    {
+      "case_id": "architecture_task_promoted",
+      "kind": "document_binding",
+      "field": "latest_architecture_changing_task",
+      "value": "IGNITION-20260822-132",
+      "expected_status": "FAIL",
+      "required_error": "ARCHITECTURE_TASK_PROMOTED_TO_FORMAL_TASK"
+    }
+  ]
+}
