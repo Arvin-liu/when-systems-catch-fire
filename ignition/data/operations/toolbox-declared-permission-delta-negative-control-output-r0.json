@@ -1,0 +1,41 @@
+{
+  "baseline_binding": {
+    "policy_id": "candidate-card-declared-permissions",
+    "policy_revision": "bef6bf46",
+    "snapshot_id": "bef6bf46",
+    "subject_id": "collaboration.verify_handoff_artifact_files"
+  },
+  "candidate_binding": {
+    "policy_id": "candidate-card-declared-permissions",
+    "policy_revision": "6bb27e93",
+    "snapshot_id": "negative-control",
+    "subject_id": "collaboration.verify_handoff_artifact_files"
+  },
+  "claim_ceiling": "Exact string-set differences between two caller-supplied grant lists only. The tool does not resolve inheritance, wildcard or path containment semantics, authenticate snapshots, inspect an effective sandbox, enforce policy, or grant authority.",
+  "counts": {
+    "baseline_grants": 1,
+    "candidate_grants": 2,
+    "declared_additions": 1,
+    "declared_removals": 0
+  },
+  "declared_additions": [
+    {
+      "capability": "filesystem.write",
+      "scope": "ignition/TOOLBOX.md"
+    }
+  ],
+  "declared_removals": [],
+  "effective_policy_resolved": false,
+  "findings": [],
+  "input_sha256": "34232c159e13e291d459fd102e9f16c0427c02b11268e6dd5417159392d9cb73",
+  "network_requests": 0,
+  "owner_authorization_granted": false,
+  "permission_granted": false,
+  "repository_writes": 0,
+  "sandbox_enforced": false,
+  "schema_version": "declared-permission-delta-result-r0",
+  "snapshot_authenticity": "NOT_ESTABLISHED",
+  "status": "DECLARED_ADDITIONS_REVIEW_REQUIRED",
+  "tool_id": "governance.preflight_declared_permission_delta",
+  "tool_version": "0.1.0"
+}

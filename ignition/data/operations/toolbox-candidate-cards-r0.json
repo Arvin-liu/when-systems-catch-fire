@@ -10232,29 +10232,57 @@
       "maintainer": "Ignition repository maintainers; this field grants no Owner or security authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "SYNTHETIC_ONLY",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_declared_permission_delta_preflight.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_declared_permission_delta_preflight.py --stdin",
       "source_refs": [
-        {
-          "path": "ignition/data/operations/toolbox-declared-permission-delta-source-binding-r0.json",
-          "role": "PINNED_WORKBENCH_BLUEPRINT_AND_OWNER_SCOPE"
-        },
         {
           "path": "ignition/data/operations/toolbox-declared-permission-delta-c1-evidence-r0.json",
           "role": "C1_ADJACENT_CONTRACT_COMPARISON_AND_UNCERTAINTY"
         },
         {
-          "path": "ignition/tools/toolbox_declared_permission_delta_preflight.py",
-          "role": "READ_ONLY_BOUNDED_EXACT_DECLARATION_SET_COMPARATOR"
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-negative-control-input-r0.json",
+          "role": "NEGATIVE_CONTROL_INPUT"
         },
         {
-          "path": "ignition/schemas/operations/declared-permission-delta-r0.schema.json",
-          "role": "STRICT_VERSIONED_INPUT_CONTRACT"
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-negative-control-output-r0.json",
+          "role": "NEGATIVE_CONTROL_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-real-task-evidence-r0.json",
+          "role": "REAL_TASK_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-real-task-input-r0.json",
+          "role": "REAL_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-real-task-output-r0.json",
+          "role": "EXACT_CLI_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-route-profile-r0.json",
+          "role": "EXACT_TYPE_CONTRACT_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-smoke-evidence-r0.json",
+          "role": "SYNTHETIC_LOCAL_CLI_SMOKE_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-declared-permission-delta-source-binding-r0.json",
+          "role": "PINNED_WORKBENCH_BLUEPRINT_AND_OWNER_SCOPE"
         },
         {
           "path": "ignition/docs/operations/declared-permission-delta-preflight.md",
           "role": "USER_SCOPE_AND_CLAIM_CEILING"
+        },
+        {
+          "path": "ignition/schemas/operations/declared-permission-delta-r0.schema.json",
+          "role": "STRICT_VERSIONED_INPUT_CONTRACT"
         },
         {
           "path": "ignition/tests/fixtures/toolbox-declared-permission-delta/valid-input-r0.json",
@@ -10265,24 +10293,12 @@
           "role": "FOCUSED_POSITIVE_AND_NEGATIVE_CONTROLS"
         },
         {
-          "path": "ignition/tests/test_toolbox_routing.py",
-          "role": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT"
-        },
-        {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "role": "MACHINE_CARD_AND_PROJECTION_CHECK"
         },
         {
-          "path": "ignition/data/operations/toolbox-declared-permission-delta-smoke-evidence-r0.json",
-          "role": "SYNTHETIC_LOCAL_CLI_SMOKE_RECEIPT"
-        },
-        {
-          "path": "ignition/data/operations/toolbox-declared-permission-delta-route-profile-r0.json",
-          "role": "EXACT_TYPE_CONTRACT_ROUTE_PROFILE"
-        },
-        {
-          "path": "ignition/data/operations/toolbox-declared-permission-delta-route-evidence-r0.json",
-          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT"
+          "path": "ignition/tests/test_toolbox_routing.py",
+          "role": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -10291,6 +10307,10 @@
         {
           "path": "ignition/tools/toolbox_audit_finding_comparator.py",
           "role": "ADJACENT_DIFFERENT_AUDIT_RECORD_COMPARATOR"
+        },
+        {
+          "path": "ignition/tools/toolbox_declared_permission_delta_preflight.py",
+          "role": "READ_ONLY_BOUNDED_EXACT_DECLARATION_SET_COMPARATOR"
         }
       ],
       "dependencies": [

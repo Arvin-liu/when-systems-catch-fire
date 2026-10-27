@@ -1,16 +1,17 @@
 {
   "schema_version": "toolbox-handoff-artifact-byte-check-route-evidence-r0",
   "candidate_catalog_refresh": {
-    "prior_git_blob_sha1": "00fae5794f52ef3270ede181b5ef0679e83f21dc",
-    "current_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600",
+    "prior_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600",
+    "current_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96",
     "history": [
       "933a349b5d7e34df3a9d46c42896e9ec236a9831",
       "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
       "86e0372a292afe58e65d7641fb07cc61776ec8a8",
       "00fae5794f52ef3270ede181b5ef0679e83f21dc",
-      "5d53a67cfcd3aec453485e93acda87219fd5d600"
+      "5d53a67cfcd3aec453485e93acda87219fd5d600",
+      "256eabb87988c6d1032a867f160aba98119dde96"
     ],
-    "note": "The candidate identity now cites one local real-task byte-check and a deliberate digest-mismatch control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting still only proposes the read-only tool."
+    "note": "The candidate card now records one local real-task exact permission-declaration comparison and a deliberate synthetic added-write control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting only proposes the read-only tool."
   },
   "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
   "task": {
@@ -435,7 +436,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600"
+      "experimental_candidate_catalog_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96"
     }
   },
   "route_result": {
@@ -871,7 +872,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600"
+      "experimental_candidate_catalog_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96"
     }
   },
   "execution_authorized": false,

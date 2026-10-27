@@ -916,7 +916,16 @@ class ToolboxIdentityCardTests(unittest.TestCase):
 
         self.assertEqual(card["availability"], "EXPERIMENTAL_AVAILABLE")
         self.assertEqual(card["version"], "0.1.0")
-        self.assertEqual(card["evidence_level"], "SYNTHETIC_ONLY")
+        self.assertEqual(card["evidence_level"], "REAL_TASK_OUTCOME")
+        source_paths = {ref["path"] for ref in card["source_refs_with_hashes"]}
+        self.assertIn(
+            "ignition/data/operations/toolbox-declared-permission-delta-real-task-evidence-r0.json",
+            source_paths,
+        )
+        self.assertIn(
+            "ignition/data/operations/toolbox-declared-permission-delta-negative-control-output-r0.json",
+            source_paths,
+        )
         self.assertFalse(card["router_selectable_by_default"])
         self.assertEqual(card["permissions"]["read_paths"], [])
         self.assertEqual(card["permissions"]["write_paths"], [])
