@@ -1,0 +1,22 @@
+{
+  "schema_version": "research-os/0.1",
+  "registry": "obligation-classes",
+  "generated_by": "Checkpoint A draft",
+  "description": "Claim/evidence obligation classes for the Research OS obligation graph. Each material claim carries obligations from these classes. Obligation statuses are shared across classes. A WAIVED_WITH_REASON obligation can NEVER raise a claim ceiling.",
+  "status_enum": ["OPEN", "PARTIAL", "SATISFIED", "WAIVED_WITH_REASON", "BLOCKED_WITH_EVIDENCE", "NOT_APPLICABLE"],
+  "cannot_raise_ceiling": true,
+  "classes": [
+    {"code": "PRIMARY_SOURCE", "description": "The primary source documenting the claim must be located and identified.", "typical_for_packs": ["*"], "maps_to_gap": "PRIMARY_SOURCE_MISSING"},
+    {"code": "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT", "description": "Full text, methods or supplementary material must be accessible to verify constructs and procedures.", "typical_for_packs": ["*"], "maps_to_gap": "FULL_TEXT_MISSING"},
+    {"code": "DATA_OR_TABLE_ACCESS", "description": "Underlying data tables or repositories must be accessible for recomputation.", "typical_for_packs": ["QUANTITATIVE_DATA_RECONCILIATION", "ENGINEERING_BENCHMARK", "RANDOMIZED_CLINICAL_EVIDENCE"], "maps_to_gap": "RAW_DATA_OR_CODE_MISSING"},
+    {"code": "NUMERIC_RECOMPUTATION", "description": "Numeric claims must be independently recomputed where feasible.", "typical_for_packs": ["QUANTITATIVE_DATA_RECONCILIATION", "ENGINEERING_BENCHMARK", "POLICY_EFFECT_EVALUATION"], "maps_to_gap": "NUMERIC_CLAIM_NOT_RECOMPUTED"},
+    {"code": "CONSTRUCT_AND_OUTCOME_DEFINITION", "description": "Constructs, outcomes and denominators must be explicitly defined and crosswalked.", "typical_for_packs": ["*"], "maps_to_gap": "OUTCOME_DEFINITION_CONFLICT"},
+    {"code": "SOURCE_INDEPENDENCE_CHECK", "description": "Source-chain independence must be verified; single-chain dependence is flagged.", "typical_for_packs": ["PUBLIC_CLAIM_FACT_CHECK", "SYSTEMATIC_EVIDENCE_SYNTHESIS"], "maps_to_gap": "SOURCE_DEPENDENCE_HIGH"},
+    {"code": "REPLICATION_NULL_CONTRADICTORY", "description": "Replication, null and contradictory evidence must be sought.", "typical_for_packs": ["RANDOMIZED_CLINICAL_EVIDENCE", "OBSERVATIONAL_CAUSALITY", "SYSTEMATIC_EVIDENCE_SYNTHESIS"], "maps_to_gap": "REPLICATION_STATUS_UNKNOWN"},
+    {"code": "CAUSAL_IDENTIFICATION", "description": "Causal identification strategy must be specified where a causal claim is made.", "typical_for_packs": ["OBSERVATIONAL_CAUSALITY", "POLICY_EFFECT_EVALUATION"], "maps_to_gap": "CAUSAL_IDENTIFICATION_MISSING"},
+    {"code": "POPULATION_JURISDICTION_TIME_SCOPE", "description": "Population, jurisdiction and temporal scope must be verified against the claim.", "typical_for_packs": ["*"], "maps_to_gap": "POPULATION_SCOPE_MISMATCH"},
+    {"code": "MECHANISM_ALTERNATIVE", "description": "Alternative mechanisms must be considered where a mechanism claim is made.", "typical_for_packs": ["OBSERVATIONAL_CAUSALITY", "HISTORICAL_SOURCE_ADJUDICATION"], "maps_to_gap": "MECHANISM_ALTERNATIVES_UNTESTED"},
+    {"code": "ADVERSE_EFFECT_COST_HARMED", "description": "Adverse effects, costs or harmed-subject evidence must be present when applicable.", "typical_for_packs": ["RANDOMIZED_CLINICAL_EVIDENCE", "POLICY_EFFECT_EVALUATION"], "maps_to_gap": "ADVERSARIAL_REVIEW_MISSING"},
+    {"code": "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW", "description": "External human or domain review is required before high-stakes or publication claims.", "typical_for_packs": ["*"], "maps_to_gap": "HUMAN_JUDGMENT_REQUIRED"}
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "research-os/0.1",
+  "registry": "strategy-pack",
+  "code": "OBSERVATIONAL_CAUSALITY",
+  "title": "Observational Causality",
+  "description": "Evaluate observational causal claims: require an explicit causal identification strategy, test alternative mechanisms, verify source independence and search for contradictory evidence. Observational design caps the ceiling at TENTATIVE.",
+  "required_obligations": [
+    "PRIMARY_SOURCE",
+    "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+    "CONSTRUCT_AND_OUTCOME_DEFINITION",
+    "CAUSAL_IDENTIFICATION",
+    "MECHANISM_ALTERNATIVE",
+    "REPLICATION_NULL_CONTRADICTORY",
+    "POPULATION_JURISDICTION_TIME_SCOPE",
+    "SOURCE_INDEPENDENCE_CHECK",
+    "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"
+  ],
+  "typical_gaps": [
+    "PRIMARY_SOURCE_MISSING",
+    "CAUSAL_IDENTIFICATION_MISSING",
+    "MECHANISM_ALTERNATIVES_UNTESTED",
+    "SOURCE_DEPENDENCE_HIGH",
+    "NEGATIVE_EVIDENCE_NOT_SEARCHED",
+    "REPLICATION_STATUS_UNKNOWN",
+    "POPULATION_SCOPE_MISMATCH",
+    "CLAIM_EXCEEDS_EVIDENCE"
+  ],
+  "mandatory_calculations": [
+    "RECOMPUTE_RESULT"
+  ],
+  "common_failure_modes": [
+    {"gap_code": "CAUSAL_IDENTIFICATION_MISSING", "note": "Association asserted as causation without an identification strategy."},
+    {"gap_code": "MECHANISM_ALTERNATIVES_UNTESTED", "note": "Single mechanism assumed; alternatives not tested."},
+    {"gap_code": "SOURCE_DEPENDENCE_HIGH", "note": "Observational datasets share a common primary chain."},
+    {"gap_code": "CLAIM_EXCEEDS_EVIDENCE", "note": "Tentative evidence phrased as a strong causal claim."}
+  ],
+  "max_claim_ceiling": "TENTATIVE",
+  "escalation_conditions": [
+    {"when": "candidate claim ceiling would exceed TENTATIVE", "trigger_gap": "CLAIM_EXCEEDS_EVIDENCE", "escalate_to": "GPT_OWNER"},
+    {"when": "causal identification missing or contested", "trigger_gap": "CAUSAL_IDENTIFICATION_MISSING", "escalate_to": "GPT_OWNER"},
+    {"when": "high-stakes or publication claim", "trigger_gap": "HUMAN_JUDGMENT_REQUIRED", "escalate_to": "GPT_OWNER"}
+  ],
+  "stop_criteria": [
+    {"condition": "identification strategy specified, alternatives tested, contradictory evidence searched, obligations satisfied", "terminal_state": "CANDIDATE_COMPLETE", "note": "Tentative ceiling only; never assertive."},
+    {"condition": "no primary source or identification infeasible after search", "terminal_state": "INSUFFICIENT_EVIDENCE_COMPLETE", "note": "Honest null/insufficient conclusion."},
+    {"condition": "contradictory evidence never searched", "terminal_state": "EVIDENCE_GATHERING", "note": "Must run SEEK_NULL_OR_CONTRADICTORY_RESULT before completion."}
+  ]
+}

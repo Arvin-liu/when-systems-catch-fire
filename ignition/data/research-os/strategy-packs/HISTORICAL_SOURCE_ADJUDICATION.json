@@ -1,0 +1,45 @@
+{
+  "schema_version": "research-os/0.1",
+  "registry": "strategy-pack",
+  "code": "HISTORICAL_SOURCE_ADJUDICATION",
+  "title": "Historical Source Adjudication",
+  "description": "Adjudicate historical/archive claims: locate primary archival sources, verify temporal scope, test alternative mechanistic or interpretive accounts, and confirm source independence before a qualified claim.",
+  "required_obligations": [
+    "PRIMARY_SOURCE",
+    "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+    "CONSTRUCT_AND_OUTCOME_DEFINITION",
+    "MECHANISM_ALTERNATIVE",
+    "POPULATION_JURISDICTION_TIME_SCOPE",
+    "SOURCE_INDEPENDENCE_CHECK",
+    "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"
+  ],
+  "typical_gaps": [
+    "PRIMARY_SOURCE_MISSING",
+    "FULL_TEXT_MISSING",
+    "METHODS_OR_SUPPLEMENT_MISSING",
+    "MECHANISM_ALTERNATIVES_UNTESTED",
+    "SOURCE_DEPENDENCE_HIGH",
+    "POPULATION_SCOPE_MISMATCH",
+    "TEMPORAL_SCOPE_MISMATCH",
+    "HUMAN_JUDGMENT_REQUIRED"
+  ],
+  "mandatory_calculations": [
+    "RECOMPUTE_RESULT"
+  ],
+  "common_failure_modes": [
+    {"gap_code": "SOURCE_DEPENDENCE_HIGH", "note": "Multiple 'independent' historical accounts derive from one chronicle."},
+    {"gap_code": "MECHANISM_ALTERNATIVES_UNTESTED", "note": "Single interpretive account assumed without alternatives."},
+    {"gap_code": "TEMPORAL_SCOPE_MISMATCH", "note": "Claimed temporal scope incompatible with sourced period."}
+  ],
+  "max_claim_ceiling": "QUALIFIED",
+  "escalation_conditions": [
+    {"when": "candidate claim ceiling would exceed QUALIFIED", "trigger_gap": "CLAIM_EXCEEDS_EVIDENCE", "escalate_to": "GPT_OWNER"},
+    {"when": "interpretive or high-stakes adjudication", "trigger_gap": "HUMAN_JUDGMENT_REQUIRED", "escalate_to": "GPT_OWNER"},
+    {"when": "temporal scope inconsistent with sourced record", "trigger_gap": "TEMPORAL_SCOPE_MISMATCH", "escalate_to": "GPT_OWNER"}
+  ],
+  "stop_criteria": [
+    {"condition": "primary sources located, alternatives tested, temporal scope verified, obligations satisfied", "terminal_state": "CANDIDATE_COMPLETE", "note": "Qualified ceiling only after external review."},
+    {"condition": "no primary source located after search", "terminal_state": "INSUFFICIENT_EVIDENCE_COMPLETE", "note": "Honest insufficient-evidence conclusion."},
+    {"condition": "temporal/interpretive scope never verified", "terminal_state": "EVIDENCE_GATHERING", "note": "Must run FREEZE_OR_NARROW_QUESTION / TEST_ALTERNATIVE_MECHANISM."}
+  ]
+}

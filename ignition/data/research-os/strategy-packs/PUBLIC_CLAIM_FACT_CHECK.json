@@ -1,0 +1,44 @@
+{
+  "schema_version": "research-os/0.1",
+  "registry": "strategy-pack",
+  "code": "PUBLIC_CLAIM_FACT_CHECK",
+  "title": "Public Claim Fact-Check",
+  "description": "Fact-check a public/secondary claim: locate the primary source, verify source independence, recompute any quoted number, check population/scope and run adversarial review. Integrity failures (batch timestamps) escalate immediately. Fact-check caps at TENTATIVE.",
+  "required_obligations": [
+    "PRIMARY_SOURCE",
+    "FULL_TEXT_OR_METHODS_OR_SUPPLEMENT",
+    "SOURCE_INDEPENDENCE_CHECK",
+    "CONSTRUCT_AND_OUTCOME_DEFINITION",
+    "POPULATION_JURISDICTION_TIME_SCOPE",
+    "EXTERNAL_HUMAN_OR_DOMAIN_REVIEW"
+  ],
+  "typical_gaps": [
+    "PRIMARY_SOURCE_MISSING",
+    "SOURCE_DEPENDENCE_HIGH",
+    "CLAIM_EXCEEDS_EVIDENCE",
+    "POPULATION_SCOPE_MISMATCH",
+    "OUTCOME_DEFINITION_CONFLICT",
+    "ADVERSARIAL_REVIEW_MISSING",
+    "HUMAN_JUDGMENT_REQUIRED",
+    "TIMESTAMP_BATCH_NOT_PROOF_OF_READING"
+  ],
+  "mandatory_calculations": [
+    "RECOMPUTE_RESULT"
+  ],
+  "common_failure_modes": [
+    {"gap_code": "SOURCE_DEPENDENCE_HIGH", "note": "Claim traced to a secondary summary, not an independent primary."},
+    {"gap_code": "CLAIM_EXCEEDS_EVIDENCE", "note": "Quoted figure or conclusion exceeds what the primary supports."},
+    {"gap_code": "TIMESTAMP_BATCH_NOT_PROOF_OF_READING", "note": "Identical/batch timestamps presented as proof of reading the source."}
+  ],
+  "max_claim_ceiling": "TENTATIVE",
+  "escalation_conditions": [
+    {"when": "candidate claim ceiling would exceed TENTATIVE", "trigger_gap": "CLAIM_EXCEEDS_EVIDENCE", "escalate_to": "GPT_OWNER"},
+    {"when": "source-integrity failure (batch timestamps cannot prove reading)", "trigger_gap": "TIMESTAMP_BATCH_NOT_PROOF_OF_READING", "escalate_to": "GPT_OWNER"},
+    {"when": "high-stakes or publication claim", "trigger_gap": "HUMAN_JUDGMENT_REQUIRED", "escalate_to": "GPT_OWNER"}
+  ],
+  "stop_criteria": [
+    {"condition": "primary located, independence verified, number recomputed, obligations satisfied", "terminal_state": "CANDIDATE_COMPLETE", "note": "Tentative ceiling only; may confirm/refute but not over-assert."},
+    {"condition": "no primary source located after search", "terminal_state": "INSUFFICIENT_EVIDENCE_COMPLETE", "note": "Reliable insufficient-evidence conclusion."},
+    {"condition": "adversarial review never run or integrity failure unaddressed", "terminal_state": "EVIDENCE_GATHERING", "note": "Must run RUN_ADVERSARIAL_REVIEW / CHECK_SOURCE_DEPENDENCE."}
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "research-os/executor-return/0.1",
+  "title": "Research OS Executor Return Contract",
+  "description": "Formal, tool-agnostic return schema for any executor (Codex, WorkBuddy, script, human) acting on a Research OS dispatch spec. The executor returns only observations with explicit provenance. It may NOT self-approve, may NOT mark the episode complete, and may NOT raise any claim ceiling. The OS diagnoses the returned state; returning 'success' never changes episode status on its own.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "observations",
+    "source_identities",
+    "access_level",
+    "calculation_result",
+    "errors",
+    "provenance",
+    "timestamps"
+  ],
+  "properties": {
+    "observations": {
+      "type": "array",
+      "description": "Raw observations the executor gathered. Each entry is a plain string or object; the OS decides what (if anything) it supports.",
+      "items": {
+        "type": ["string", "object"]
+      }
+    },
+    "source_identities": {
+      "type": "array",
+      "description": "Exact, resolvable identity of every source actually consulted (doi, url, file path, record id). Vague references are not acceptable.",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string" },
+          "accessed_at": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "access_level": {
+      "type": "string",
+      "description": "What the executor actually accessed, not what it claims to have read.",
+      "enum": ["FULL_TEXT", "METHODS_ONLY", "ABSTRACT_ONLY", "METADATA_ONLY", "COMPUTED", "NONE"]
+    },
+    "calculation_result": {
+      "description": "Structured result of any numeric recomputation or derivation. Null if none was performed.",
+      "oneOf": [
+        { "type": "object", "additionalProperties": true },
+        { "type": "null" }
+      ]
+    },
+    "errors": {
+      "type": "array",
+      "description": "Every blocker, exception, or denied access encountered.",
+      "items": { "type": ["string", "object"] }
+    },
+    "provenance": {
+      "type": "array",
+      "description": "Append-only provenance records: tool used, command, inputs, outputs, hashes where relevant.",
+      "items": { "type": "object", "additionalProperties": true }
+    },
+    "timestamps": {
+      "type": "object",
+      "description": "Exact clock times for access and return. Batch-identical accessed_at values are NOT proof of reading and are flagged by the OS.",
+      "additionalProperties": true,
+      "properties": {
+        "dispatched_at": { "type": ["string", "null"] },
+        "returned_at": { "type": ["string", "null"] }
+      }
+    },
+    "self_approved": {
+      "type": "null",
+      "description": "PROHIBITED. An executor must never assert self-approval. Presence of this key is rejected by the OS."
+    },
+    "mark_episode_complete": {
+      "type": "null",
+      "description": "PROHIBITED. An executor must never mark the episode complete. Presence of this key is rejected by the OS."
+    },
+    "claim_ceiling": {
+      "type": "null",
+      "description": "PROHIBITED. An executor must never raise or assert a claim ceiling. That is an OS/gate decision."
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "anyOf": [
+          { "required": ["self_approved"] },
+          { "required": ["mark_episode_complete"] },
+          { "required": ["claim_ceiling"] }
+        ]
+      }
+    }
+  ]
+}
