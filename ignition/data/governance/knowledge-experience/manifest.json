@@ -14,7 +14,7 @@
     "KNOWLEDGE/ASSET-CARDS.md": "f9929d95ff9c10fec0a00201504871407ce8d8270088ceed45d95763be398b88",
     "KNOWLEDGE/COVERAGE.md": "ff4ab67e425510010b2f0fddef0daa48190841a484b2926039585584ba9f88a1",
     "KNOWLEDGE/EVOLUTION.md": "ba9debdc4413a5b7e9f460f9f81a8f717e90e5fa6ee90a2cd055c4ba471e4f07",
-    "KNOWLEDGE/MAP.md": "99929cd80fc4c0e41754c611dc53f9f7e1f7888f2f892592b2014b4050daa7cb",
+    "KNOWLEDGE/MAP.md": "dcdff3e7da84255533dd120b15975bea8ed11841439c14c8ec8df6869a033b4a",
     "KNOWLEDGE/READING-LAYERS.md": "2db84509d05e4f84544ab4fc383cf3cd847384088c2ac430959f6cba6ea69a31",
     "KNOWLEDGE/README.md": "d6dfb68b5c13c68850bd15583f5c0e67cb0f9b10f6345e0730f3af6638eb5e7c",
     "KNOWLEDGE/SEARCH.md": "3b8fd5dfb2bcc416037532475fd3bbf6c0658c65a7295b5d6fd150a39497c0fe",
@@ -43,7 +43,7 @@
     "KNOWLEDGE/indexes/architecture_governance/part-007.md": "f9a1303d738e8489eb8ddcc1d6255ddf8fc6ec819c3ed5e6e21397dfb23db651",
     "KNOWLEDGE/indexes/architecture_governance/part-008.md": "5354cebd57c0d15c86ec0e9fe5ed438f1ce71a23aea5bafb502747ece6866e4f",
     "KNOWLEDGE/indexes/architecture_governance/part-009.md": "6308a94d588fd531b3899b83d124b640b85947e47b1ff4f8e07a201abd6ab14e",
-    "KNOWLEDGE/indexes/architecture_governance/part-010.md": "c398be8cc1251f4c74cbd1c089123928d2508e8409cbb9bf022b7c1984fdf177",
+    "KNOWLEDGE/indexes/architecture_governance/part-010.md": "15db8d4dbaa9b07584b70ab31aa5384ff29b96f2376929f642ee6f5fe362819f",
     "KNOWLEDGE/indexes/architecture_governance/part-011.md": "636570d8cb66c607110332e191e46db6f0d812f082839138775d5fbdb7d4f547",
     "KNOWLEDGE/indexes/architecture_governance/part-012.md": "04cc0695e7631019d4cea301deacc9a17b3640b5e532e6d1dab678fc2f1c5454",
     "KNOWLEDGE/indexes/architecture_governance/part-013.md": "239e1873fa1e84f02f6be9015f3287e167d8403b946a423c2340ba112abd8523",
@@ -56,7 +56,7 @@
     "KNOWLEDGE/indexes/mathematics.md": "fb7903d006f1c5fa574e5d65120ee7ee4ea54c407837376ce5d105e0bc9e4b1e",
     "KNOWLEDGE/indexes/mathematics/part-001.md": "6ffb2f3531d478d5a5a6a08ef90e2bec63fb4c553445c3613d787c0ec26047fc",
     "KNOWLEDGE/indexes/mathematics/part-002.md": "246c20fa87ecb023af120b56827f01ed98fdb2a243086859b5714c1d811ce57b",
-    "KNOWLEDGE/indexes/mathematics/part-003.md": "0c5d8c78fc5dd310d8623edec5deb82ac73ddcab497cc3e4f86a68a65bb535c5",
+    "KNOWLEDGE/indexes/mathematics/part-003.md": "df11da5f58521bbfe5137fd2659d52c7a21c9275b3daeb0abe34ddcd9b432daa",
     "KNOWLEDGE/indexes/mathematics/part-004.md": "a2a16eb5355ee8e9300e75b165a41d26ae6ff2bef00b76e17ba0937a7905ef56",
     "KNOWLEDGE/indexes/mathematics/part-005.md": "9997f0c650407dd8d859b12396c2625639bba420358717077cc5dea7fecc5c56",
     "KNOWLEDGE/indexes/mathematics/part-006.md": "230da6cbbf8a4c839c1940fdab1076f6f884d048baa9286cfc2d58b3292086e4",
@@ -107,11 +107,11 @@
     "KNOWLEDGE/reading-layers/part-012.md": "e9f81bbaf9c65135b982cb00af213a5cb44e38ebf97cb949333deba6f8057ad7",
     "KNOWLEDGE/reading-layers/part-013.md": "6ecc69b2f4a0c1bdb2fa62d94b68719cfe67decd2e6d24065dc75fc5195ddebd",
     "data/governance/knowledge-experience/alias-index.jsonl": "a974170ff14d0008bb835b4be1d8d37ebac58ef83032a894aa726c42bba36f6e",
-    "data/governance/knowledge-experience/asset-cards.jsonl": "726f17dc3cf0b3cf68311407cd7c59c7820449802d323e556b17867ffb48cfb7",
+    "data/governance/knowledge-experience/asset-cards.jsonl": "93d453352820d50b7e204df548eb963b622a40196cfe4f171ffed16ec5daa66b",
     "data/governance/knowledge-experience/changes.jsonl": "eaa22953677cfb7b38fe0365d9cfd9308eb69f81002bfeb3ad2b589780b1621f",
     "data/governance/knowledge-experience/coverage.json": "f58c0ad504a830f8d5bf0543bf95f31d68faf94ca92f8842c24501b222743b7d",
-    "data/governance/knowledge-experience/layered-reading.jsonl": "33d9f7c96d812e1d03f8c38aa3a361fd32018e9078b9ff3d760145778f4221f5",
-    "data/governance/knowledge-experience/search-index.jsonl": "eb141ca91c9535cd146ceb5b23d89d965c9b0d6e0136ebf362b1f7dc342e081a"
+    "data/governance/knowledge-experience/layered-reading.jsonl": "70de08507a37d6104b405c9c5427f645e378ad851823f0a22730143273f67e07",
+    "data/governance/knowledge-experience/search-index.jsonl": "1d0895be70cfd0e40a9752f12807ff40dc4d815cc9fa88cfe64dc08c767f91cb"
   },
   "machine_human_pairs": [
     {
@@ -143,7 +143,7 @@
   "snapshot_date": "2026-07-30",
   "source_inputs": {
     "data/foundation/function-assets/identity-cards.jsonl": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16",
-    "data/foundation/nonfunction-claims/claim-registry.jsonl": "b8d9f009553729f97cf82bf70771795f3ba912259e866808cb99341a00a077ed",
+    "data/foundation/nonfunction-claims/claim-registry.jsonl": "ed3e2b251ca285d597928fbcbd358132e1b4d9d552d1578da32bcfd0555ff3df",
     "data/governance/human-results/result-ledger.jsonl": "ec0532276dca52857c7b14de882f56035cb632b349c0144b95cc13e0bfc3a295",
     "data/governance/knowledge-experience/config.json": "adae2adb4283bd190767111dbcf5033ae1f7877099c1cf1526554b381df775c1",
     "data/governance/knowledge-experience/source-first-seen.json": "5c04f11b7e80a6d1dea9364083a15f6526631d5826556a2b9768b768ad5c9c93"
