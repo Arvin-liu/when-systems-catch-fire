@@ -2460,6 +2460,51 @@
 - **来源：** [epistemic-governance-kernel-and-federated-planes.md](../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
 - **资产卡：** [HR-077438A238642315](./ASSET-CARDS.md#asset-hr-077438a238642315)
 
+<a id="change-src-hr-e89916496e4e60c0"></a>
+### 2026-08-03 · 编辑修订 before/after 范例
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** English: Editorial-Revision Before/After Micro-Cases
+- **来源：** [zhiyuan-writing-cognitive-migration-editorial-revision-examples.md](../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+- **资产卡：** [HR-E89916496E4E60C0](./ASSET-CARDS.md#asset-hr-e89916496e4e60c0)
+
+<a id="change-src-hr-e2be1a0c85b07db2"></a>
+### 2026-08-03 · PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: STACKED DRAFT CANDIDATE targeting workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803. DO NOT MERGE either PR. Reviewer: independent campaign executor (not the PR author agent).
+- **来源：** [pr189-independent-review-and-ci-repair-r1-20260803.md](../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+- **资产卡：** [HR-E2BE1A0C85B07DB2](./ASSET-CARDS.md#asset-hr-e2be1a0c85b07db2)
+
+<a id="change-src-hr-9c8e9e67e8007b61"></a>
+### 2026-08-03 · 认知迁移编辑修订子模块
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** English: Cognitive-Migration Editorial Revision Module
+- **来源：** [zhiyuan-writing-cognitive-migration-editorial-revision.md](../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+- **资产卡：** [HR-9C8E9E67E8007B61](./ASSET-CARDS.md#asset-hr-9c8e9e67e8007b61)
+
+<a id="change-src-hr-3e994e495ad7c8f4"></a>
+### 2026-08-03 · 认知迁移编辑修订子模块 — 审查笔记
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** English: Review Note — Cognitive-Migration Editorial Revision Module
+- **来源：** [zhiyuan-writing-cognitive-migration-editorial-revision-review.md](../reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+- **资产卡：** [HR-3E994E495AD7C8F4](./ASSET-CARDS.md#asset-hr-3e994e495ad7c8f4)
+
+<a id="change-src-hr-001d6f16c232f9bf"></a>
+### 2026-08-03 · 方法来源记录：认知迁移编辑修订子模块
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module
+- **来源：** [cognitive-migration-editorial-revision-source.md](../docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md)
+- **资产卡：** [HR-001D6F16C232F9BF](./ASSET-CARDS.md#asset-hr-001d6f16c232f9bf)
+
 <a id="change-src-hr-d6dc7edfc015e4c7"></a>
 ### 2026-08-02 · 《公元1117年：宋徽宗为什么崇信道教？》来源与边界
 

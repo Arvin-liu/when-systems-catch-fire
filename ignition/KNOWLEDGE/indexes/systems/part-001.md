@@ -1579,6 +1579,26 @@
   - 可搜索名称：NFC-57404675f3498599 / After RUN-1 \(captured in commit 0e9844d55\) found 5 crossref_year gaps and 1 intra-registry duplicate DOI, the 5 in-tier
   - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/deviation-log.json`
   - 依赖：—；被引用：—
+- [After（具体锚定，机制 E）**](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3e91c1724fb1db49 / After（具体锚定，机制 E）**
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [After（程度加深，机制 C）**](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a087d8c94f9e39f1 / After（程度加深，机制 C）**
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [After（视角切换，机制 C）**](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ebc32bdc703f5064 / After（视角切换，机制 C）**
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [After（递归追问，机制 C）**](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0e29d27bddc21e85 / After（递归追问，机制 C）**
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [Agent Platform R2 — 点火工程脊柱与边界](../../ASSET-CARDS.md#asset-hr-c893a4870d083875)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：Agent Platform R2 — 点火工程脊柱与边界 / agent-platform-r2
@@ -2304,6 +2324,16 @@
   - 可搜索名称：NFC-4cd178972131e1a0 / Claim ceiling: Task140 repository-local admission, capability-lease, filesystem-domain and validator-freeze evidence onl
   - 来源：`reports/operations/ignition-140-step10-live-admission.md`
   - 依赖：—；被引用：—
+- [claim 边界**：不能越过的事实、因果与强术语上限；](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4a3a485354713006 / claim 边界**：不能越过的事实、因果与强术语上限；
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [claim 边界（不可越过的事实／因果／强术语）：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4825157e76c6aac5 / claim 边界（不可越过的事实／因果／强术语）：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: "mechanism_plausible / causal_identification_pending / external_historical_verification_required"](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e12e385c3a4518d1 / claim_ceiling: "mechanism_plausible / causal_identification_pending / external_historical_verification_required"
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-4f1f0654f56c5125 / D599 编号、标题、机制式可召回（grep 全局命中）；
   - 来源：`outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`
   - 依赖：D599；被引用：—
-- [D601 的上游形成机制](../../../outputs/research/role-identity-collision-batches-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-763fd616a8219b41 / D601 的上游形成机制
-  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
-  - 依赖：D601；被引用：—
-- [d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41e2ddeece668586 / d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M01 / data/external-research/088-external-source-atlas-medium.jsonl / M01 / M02
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M02 / data/external-research/088-external-source-atlas-medium.jsonl / M02 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M03 / data/external-research/088-external-source-atlas-medium.jsonl / M03 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M04 / data/external-research/088-external-source-atlas-medium.jsonl / M04 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—

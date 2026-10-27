@@ -4,6 +4,176 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [理论族：潜在结果, 结构因果模型, 工具变量, 自然实验, 因果发现, 运输性, 外部效度](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0d7cdc34bda71629 / 理论族：潜在结果, 结构因果模型, 工具变量, 自然实验, 因果发现, 运输性, 外部效度
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [理论族：科学哲学, 证据层级, 元研究, 可重复性, 证据综合, 领域特异成立标准](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ec1b9d8a3fa3631e / 理论族：科学哲学, 证据层级, 元研究, 可重复性, 证据综合, 领域特异成立标准
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：交流、迁移、知识传播、资源互助与系统适应，是共同体活力与适应的关键。条件：仅当在承载力与风险可控范围内，且保护隐私与弱势成员时才有价值。伤害：当无限开放导致污染扩散、隐私消失、承载突破或强者掠夺时，会伤害共同](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d3e59871fe2497c9 / 生命共同体价值投影：** 价值：交流、迁移、知识传播、资源互助与系统适应，是共同体活力与适应的关键。条件：仅当在承载力与风险可控范围内，且保护隐私与弱势成员时才有价值。伤害：当无限开放导致污染扩散、隐私消失、承载突破或强者掠夺时，会伤害共同
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1b8dd692276f8a64 / 生命共同体价值投影：** 价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef981b8e8862e988 / 生命共同体价值投影：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5da0a2414b117f23 / 生命共同体价值投影：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-680991c086d04dbb / 生命共同体价值投影：** 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cea131ea4bf6275a / 生命共同体价值投影：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72e106ec787cfccd / 生命共同体价值投影：** 价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值投影：** 价值：隔离风险、保护脆弱系统、守护隐私、孵化新结构、防止污染或入侵，是有价值的情境工具。条件：仅当目标正当（隔离风险/保护脆弱/隐私/孵化/防污染）且设有时限与退出权时才有价值。伤害：当变成永久封锁、排斥异己、信息](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b0fd7dd1d45482e7 / 生命共同体价值投影：** 价值：隔离风险、保护脆弱系统、守护隐私、孵化新结构、防止污染或入侵，是有价值的情境工具。条件：仅当目标正当（隔离风险/保护脆弱/隐私/孵化/防污染）且设有时限与退出权时才有价值。伤害：当变成永久封锁、排斥异己、信息
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [生命共同体的边界不能只由当前人类已经命名、测量或制度承认的主体决定。对于尚未被发现、尚未被理解、无法按人类语言表达，或道德地位仍不确定但可能具备感受、主体性、持续身份、独立利益或可受损性的存在者，点火项目采用开放性与谨慎义务。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-47dce0a7c6347def / 生命共同体的边界不能只由当前人类已经命名、测量或制度承认的主体决定。对于尚未被发现、尚未被理解、无法按人类语言表达，或道德地位仍不确定但可能具备感受、主体性、持续身份、独立利益或可受损性的存在者，点火项目采用开放性与谨慎义务。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [生成时间 2026-07-13T19:51:34。8 HIGH 来源族待外部文献支撑，6 MEDIUM 已 partial 待增强。](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-36871059b8d0649f / 生成时间 2026-07-13T19:51:34。8 HIGH 来源族待外部文献支撑，6 MEDIUM 已 partial 待增强。
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [生成机制纠正](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-65e50db8e8067e82 / 生成机制纠正
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [生活决定、记忆或关系事件；](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-67405e657e8a6926 / 生活决定、记忆或关系事件；
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ d_opt时维护成本超过容斥收益→系统臃肿→Φ因维护负担而增长。衰老过程是d从d_opt向d<d_opt漂移（信息丢失→](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b9d198dfb91d4d70 / 生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ d_opt时维护成本超过容斥收益→系统臃肿→Φ因维护负担而增长。衰老过程是d从d_opt向d<d_opt漂移（信息丢失→
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [用信息增益决定继续或停止；是否压缩结尾另行决定。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e45732051023481b / 用信息增益决定继续或停止；是否压缩结尾另行决定。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [用证据制度、失败类型、pending 机制约束自己。](../../../docs/author_motivation_and_boundary_note.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-00af8df3d18959a2 / 用证据制度、失败类型、pending 机制约束自己。
+  - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
+- [由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4c0c223e084e9f12 / 由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [由适用组件决定下一行动并生成新的可追溯增量。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-fdf34b03c3bdb697 / 由适用组件决定下一行动并生成新的可追溯增量。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [申诉/退出机制在层级中的有效性待实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-fc2b443c67c172e5 / 申诉/退出机制在层级中的有效性待实证
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深,更稳定](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ab18738ea61cd10f / 癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深,更稳定
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [的 353 条记录 **100% 由 `process_084_batch.py` 的确定性规则代码分支生成**，具体机制：](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-57e026a1dc224e1e / 的 353 条记录 **100% 由 `process_084_batch.py` 的确定性规则代码分支生成**，具体机制：
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [目标：兼容旧条目 frontmatter 习惯 + 新条目"机制表达/边界/pending"优点，补齐缺失字段。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a56349bb226b5105 / 目标：兼容旧条目 frontmatter 习惯 + 新条目"机制表达/边界/pending"优点，补齐缺失字段。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [相关：教育公平/不平等是经典问题，但赛课机制是其下一层「考评制度如何扭曲教育价值」的具体机制，未直接命中其他经典问题。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c221338643119dfe / 相关：教育公平/不平等是经典问题，但赛课机制是其下一层「考评制度如何扭曲教育价值」的具体机制，未直接命中其他经典问题。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [真诚信仰、政治利用和制度化并不互相排斥；把它们硬切成纯真或纯假会丢失机制。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f2462ec1f6f8e14c / 真诚信仰、政治利用和制度化并不互相排斥；把它们硬切成纯真或纯假会丢失机制。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [研究只能支持“在哪些维度需要检查”，不能直接判定一条历史因果或一篇文章的意义。机器配置中的每条 tendency 都要回链证据 ID，并附 `claim_ceiling`。研究有冲突时，配置把该维度标为 `mixed` 或 `open`，而](../../../docs/language-thought/research-boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e8af973f3ba4801e / 研究只能支持“在哪些维度需要检查”，不能直接判定一条历史因果或一篇文章的意义。机器配置中的每条 tendency 都要回链证据 ID，并附 `claim_ceiling`。研究有冲突时，配置把该维度标为 `mixed` 或 `open`，而
+  - 来源：`docs/language-thought/research-boundary.md`
+  - 依赖：—；被引用：—
+- [社会信任形成的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6145fa2f0724806f / 社会信任形成的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学因果判定；](../../../docs/v0.2_summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-75f11fff3c6448fe / 社会科学因果判定；
+  - 来源：`docs/v0.2_summary.md`
+  - 依赖：—；被引用：—
+- [社会科学因果判定；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-919acc5904af88df / 社会科学因果判定；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [社会科学是中等风险领域。社会因果不能写成单因决定论。数据不足、解释争议大、缺乏统计显著性检验时必须 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8017de0e1a02dc61 / 社会科学是中等风险领域。社会因果不能写成单因决定论。数据不足、解释争议大、缺乏统计显著性检验时必须 pending。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学界通过实证研究、理论分析、比较研究等方法研究社会阶层固化问题。主流观点认为社会阶层固化是由制度、教育、文化等多重因素共同导致。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e00c88e5b96f2bcb / 社会科学界通过实证研究、理论分析、比较研究等方法研究社会阶层固化问题。主流观点认为社会阶层固化是由制度、教育、文化等多重因素共同导致。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学：所有社会因果的具体判定](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1ea101a0b4342e0e / 社会科学：所有社会因果的具体判定
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会系统：邻里积分制中的拍照打卡；](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f66a0a47380f1e5 / 社会系统：邻里积分制中的拍照打卡；
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [社会系统：邻里积分制中的荣誉阶层；](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6be07a00f7ce42cb / 社会系统：邻里积分制中的荣誉阶层；
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e0b21330a981ed20 / 社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
@@ -28,6 +198,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-97bbeaea4390bc0c / 竞争机制：A 基层凝聚中心；B 后勤/机动/地理中心；C 辽中枢和内部叛乱中心；D 投附/联盟/制度吸收中心；E 多因素交互、无单一主因。
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [笔记是**输入与来源**，不是之元写作法自动权威的扩展。本子模块对其机制做了转化、测试、限定与体系化整合，而非整篇照抄。进入 Draft PR 的只有：有边界的来源记录、经过实质转化的方法文本、以及少量必要的分析性短引。](../../../docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fcf1d3218816f75d / 笔记是**输入与来源**，不是之元写作法自动权威的扩展。本子模块对其机制做了转化、测试、限定与体系化整合，而非整篇照抄。进入 Draft PR 的只有：有边界的来源记录、经过实质转化的方法文本、以及少量必要的分析性短引。
+  - 来源：`docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md`
   - 依赖：—；被引用：—
 - [简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。](../../../docs/publication/zhiyuan-writing-showcase.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -148,6 +323,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-31780817f50495f4 / 结构命题（如：某个制度导致某个结果）
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [结构性可操作。机制 B 要求先把迁移写成一句可检验的“读者读完有何不同”，并分开记录起始理解、修订后理解、claim 边界、低层现实；机制 C 给出三种可组合的结构承载及其与现有概念的对应；机制 D 要求段落重建时保留反方与受损主体。迁移不](../../../reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5ad49a90ec7d5c50 / 结构性可操作。机制 B 要求先把迁移写成一句可检验的“读者读完有何不同”，并分开记录起始理解、修订后理解、claim 边界、低层现实；机制 C 给出三种可组合的结构承载及其与现有概念的对应；机制 D 要求段落重建时保留反方与受损主体。迁移不
+  - 来源：`reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
   - 依赖：—；被引用：—
 - [结构缺漏审计机制；](../../../docs/v0.2_summary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -354,6 +534,11 @@
   - 可搜索名称：NFC-697d4a07c912390f / 评价端也在发生变化。林麂所在的区，最近出台了一套新的赛课评课标准——用AI做课堂分析。老师上传两节不同课的录像，系统会自动统计出一组数据：老师讲了多久，学生说了多久，自主学习的时间占多少等。数据表生成后，教研员和领导据此打分。课堂里那些最鲜
   - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
   - 依赖：—；被引用：—
+- [诊断决定压力，不决定成品表面结构；不得将四类变成准入门槛。](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-339896f68b331b21 / 诊断决定压力，不决定成品表面结构；不得将四类变成准入门槛。
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [译者增加 `therefore`，回译又得到 `因此`，制造出来源没有的因果。](../../../docs/language-thought/translation-and-residue.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-2482492124ab857c / 译者增加 `therefore`，回译又得到 `因此`，制造出来源没有的因果。
@@ -383,6 +568,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-5f285e355a366258 / 误导后续机制生成。
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [说明：本文件仅以有边界的短句引用现行作品 `docs/publication/works/when-an-emperor-manufactures-heaven.md`（宋徽宗文），**不修改该作品**，仅作方法机制演示。](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0c08e66e4748de29 / 说明：本文件仅以有边界的短句引用现行作品 `docs/publication/works/when-an-emperor-manufactures-heaven.md`（宋徽宗文），**不修改该作品**，仅作方法机制演示。
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [说明：机制抽取、全文读取与两张表碰撞均基于 Markdown 整理稿；PDF 仅作会话展示载体，已降为 transport hash，不声称与文本逐字节一致。](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -679,6 +869,11 @@
   - 可搜索名称：NFC-47356d5cf5a81843 / 遗漏候选：材料中「努力羞耻/紧绷美学」（M8 已列）、「非标准化抗 AI 替代」（E4 外部层，非材料内机制原语）无新增遗漏机制。六候选 + D595/D583 边界 + 两案例已穷尽本材料可机制化内容。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
   - 依赖：D583, D595；被引用：—
+- [避免。机制 F 明确不实行禁词令，并把“机械重复的远不止”与“雷同设问”同样列为脚手架外露症状。案例 5 演示精确对比句应保留；模块文档反模式列明“每段都用远不止，变成新套路”。三种承载要求组合而非逐段轮换。](../../../reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-323d3b1eb5dec3bf / 避免。机制 F 明确不实行禁词令，并把“机械重复的远不止”与“雷同设问”同样列为脚手架外露症状。案例 5 演示精确对比句应保留；模块文档反模式列明“每段都用远不止，变成新套路”。三种承载要求组合而非逐段轮换。
+  - 来源：`reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
+  - 依赖：—；被引用：—
 - [避风港机制**：教室成为逃离会议/材料/赛课的形式主义空间，具体师生联结消解内耗。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-38388ba98edf2b16 / 避风港机制**：教室成为逃离会议/材料/赛课的形式主义空间，具体师生联结消解内耗。

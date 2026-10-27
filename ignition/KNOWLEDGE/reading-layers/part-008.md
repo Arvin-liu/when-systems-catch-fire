@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-97478cb8dceeba3a"></a>
+## IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix
+`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The Step 08 matrix contains 14 explicit fixtures. It covers stale canonical Current source, stale lifecycle, forged Snapshot, architecture-task promotion, witness/task mismatch, matching SHA with mismatched task identity, rollback, unknown-task-without-contract, stale compiler output, legal histo… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix；The Step 08 matrix contains 14 explicit fixtures. It covers stale canonical Current source, stale lifecycle, forged Snapshot, architecture-task promotion, witness/task mismatch, matching SHA with mismatched task identity, rollback, unknown-task-without-contract, stale compiler output, legal historical Task131 documents, unreachable publication refs, missing…；Expected results and reason codes are recorded in ignition/data/operations/iterations/132/fixtures/release-task-identity-negative-fixtures-r1.json. The matrix keeps the historical Task131 receipt legal while rejecting its use as the current formal identity. It also treats the absence of the Task132 publication witness before final publication as a fail-close…；Validation: PYTHONPATH=ignition python3 -m unittest ignition.tests.testtaskidentityadversarialfixtures.；Claim ceiling: repository-local adversarial release identity and evidence-gate validation only; no external truth, authority, production readiness, Owner acceptance, or epistemic acceptance is inferred.
+- 完整阅读：[reports/operations/ignition-132-step08-adversarial-matrix.md](../../reports/operations/ignition-132-step08-adversarial-matrix.md)
+
+<a id="reading-hr-97dacc897de7d3d3"></a>
+## IGNITION-20260816-121 night-shift progress
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Experience validation, and determinism checks: PASS. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260816-121 night-shift progress；主题：Step 00 — COMPLETE；Baseline: origin/main = 2becca3ffd93d6ca1e147a75c159e476f4686f5d.；Task branch: codex/ignition-121-agent-platform-r2-nightshift-20260816.；Formal worktree was clean before and after the audit.；R0/R1 runtime tests: 16/16 PASS.
+- 完整阅读：[reports/operations/ignition-121-nightshift-progress.md](../../reports/operations/ignition-121-nightshift-progress.md)
+
 <a id="reading-hr-98aee959a458b641"></a>
 ## 104 补丁证据就绪报告
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
@@ -94,6 +108,13 @@
 - 1 分钟：The final machine verdict is: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260907-162: convergence and next-leap assessment；主题：Combined decision；The final machine verdict is:；input regime: INFORMATIONVOLUMEEFFECTONLY;；historical track: HISTORICALUNDERDETERMINED;；basis/semantic verdict: NOBASISESCAPEDETECTED;
 - 完整阅读：[docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md](../../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
+
+<a id="reading-hr-9c8e9e67e8007b61"></a>
+## 认知迁移编辑修订子模块
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：English: Cognitive-Migration Editorial Revision Module 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：Candidate archive: original PR #189 proposal (0.6.0-candidate), preserved for review. The current formal-main module is the separate optional 0.1.0 module at ../../zhiyuan-writing-cognitive-migration-editorial-revision.md; this archived proposal has not been accepted into the current writing method.；English: Cognitive-Migration Editorial Revision Module；候选版本：0.6.0-candidate 状态：DRAFTPRAWAITINGGPTOWNERREVIEW 操作位置：L6 公共表达／修订（位于生成纪律之后） 来源边界：见方法来源记录；本子模块不是之元写作法 0.5.0 的生成内核，而是生成之后的一次编辑修订动作。它不重写历史版本、不新增层、不提高 L0—L5 claim，也不声称已被接受进入之元写作法。；之元写作法描述作品的生成纪律：从起始承载点出发，受下一层牵引，因不可容纳的残余而跃迁，借隐形连续性突然发生，回照增义，潜题生长，信息增益停止。这是一篇作品如何获得其内部运动。；本子模块处理的是另一个问题：草稿已经生成、事实边界与概念运动已稳定之后，怎样重组这次运动在公共读者那里的可见方式，使读者自己经历认知迁移，而不是由作者逐句机械宣布每个转折。
+- 完整阅读：[docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md](../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
 
 <a id="reading-hr-9ce0dfb3a119bc53"></a>
 ## S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)
@@ -281,7 +302,7 @@
 ## 之元写作法
 `CURRENT_SCOPED_SOURCE` · `WRITING_PUBLICATION`
 - 1 分钟：English: Zhiyuan Writing Method 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：English: Zhiyuan Writing Method；Version: 0.5.0 current; 0.4.0 and 0.3.0 remain historical merged versions.；Status: CURRENTMERGEDL6CAPABILITY；Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.；本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。；“之元写作法”是方法名称；“心智层级跃迁”是其自 0.3.0 起的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
+- 5 分钟：English: Zhiyuan Writing Method；Version: 0.5.0 current; 0.4.0 and 0.3.0 remain historical merged versions.；Status: CURRENTMERGEDL6CAPABILITY；候选增补（Draft PR，尚未合并接受）：分支 workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803，状态 DRAFTPRAWAITINGGPTOWNERREVIEW。新增 L6 编辑修订子模块 cognitive-migration editorial revision，候选版本 0.6.0-candidate；不改写 0.5.0 历史版本，不新增层，不提高 L0—L5 claim。详见认知迁移编辑修订子模块。；Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.；本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。
 - 完整阅读：[docs/publication/zhiyuan-writing-method.md](../../docs/publication/zhiyuan-writing-method.md)
 
 <a id="reading-hr-a960756efab9d50a"></a>
@@ -332,24 +353,3 @@
 - 1 分钟：Step 00 passes. A fresh relay/current clone resolved Task144 at 597fe7b745d35a05c5c6b396985eab530cc5dae5. The Task143 final publication witness was independently fetched from relay/receipts/ignition-143-phase-closure-publication-r1-20260827 at dc7d51377bc8fe549707dc0448e2e7ab12a6f727. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260828-144 Step 00 — Task143 final baseline；Step 00 passes. A fresh relay/current clone resolved Task144 at 597fe7b745d35a05c5c6b396985eab530cc5dae5. The Task143 final publication witness was independently fetched from relay/receipts/ignition-143-phase-closure-publication-r1-20260827 at dc7d51377bc8fe549707dc0448e2e7ab12a6f727.；That witness binds Task143's final formal main, task branch, fresh task clone and fresh remote-main clone to exactly 75c06887f59fa94868101707acc4b8386f41fe13. It records terminal COMPLETEDWITHOPENOBLIGATIONS, content RELEASEREADY, the preserved LIVEEXTERNALINVOCATION obligation as OWNERDEFERRED, three natural 1272 / 0 / 0 / 0 regressions and a passing public…；Task144 is presentation/closure scope only. No external executor qualification, live attempt, new architecture layer or new publication body is authorized.
 - 完整阅读：[reports/operations/ignition-144-step00-baseline-audit.md](../../reports/operations/ignition-144-step00-baseline-audit.md)
-
-<a id="reading-hr-ab7862b612e34394"></a>
-## 元协议版本迭代维护审计 2026-07-09
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：点火主仓库已完成元协议生成层的文档/数据/模板/导航/审计升级；Ψ₀ 与两张表未改动，12 元协议作为 Pmeta 展开进入第0层候选结构。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：元协议版本迭代维护审计 2026-07-09；本轮为第二步：在第一步蓝图（1111/reports/ignition-version-iteration-blueprint-20260709.md）基础上，对点火主仓库做文档层/数据层/模板层/导航层/审计层升级。；1111/2026-07-09 1735（141 篇）；1111/2026-07-09 1902（41 篇，含 12 元协议 ×64 全矩阵、三维度映射、22 案例清单、22 本最终收敛报告）；1111/reports/ignition-version-iteration-blueprint-20260709.md（commit ef38505e）；点火主仓库 HEAD 1defe3d3（branch version/meta-protocols-20260709）
-- 完整阅读：[outputs/audit/meta-protocol-version-iteration-audit-20260709.md](../../outputs/audit/meta-protocol-version-iteration-audit-20260709.md)
-
-<a id="reading-hr-abbbd65bf096449d"></a>
-## Iteration Identity Model R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：ITERATIONBOUNDARYSEMANTICSINVARIANT gives every Current iteration field one machine-checkable meaning. The canonical task identity source is ignition/data/operations/current-task-lineage-status.json; ordinals are parsed from its task IDs by the deterministic parser introduced in Step 02. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Iteration Identity Model R1；ITERATIONBOUNDARYSEMANTICSINVARIANT gives every Current iteration field one machine-checkable meaning. The canonical task identity source is ignition/data/operations/current-task-lineage-status.json; ordinals are parsed from its task IDs by the deterministic parser introduced in Step 02.；The old field is therefore not an architecture boundary and not a free-standing iteration counter. In a valid Current state, currentiterationboundary equals currentformaltaskordinal. Historical receipts keep their captured values and are interpreted only under their historical labels; they are not rewritten to fit the Current alias.；The formal and architecture roles are deliberately independent. “Latest formal Task133; latest architecture Task129” is valid. A validator must reject stale or manually widened ordinals, but must not reject a difference between the two roles merely because they differ.；The machine-readable contract is iteration-boundary-semantics-r1.json, validated by validateiterationboundarysemantics.py.；Claim ceiling: this is repository-local identity and compatibility governance only. It does not establish external truth, production readiness, Owner acceptance or epistemic acceptance.
-- 完整阅读：[docs/architecture/iteration-boundary-semantics-r1.md](../../docs/architecture/iteration-boundary-semantics-r1.md)
-
-<a id="reading-hr-ac9e178219fcc8d0"></a>
-## IGNITION-084 Max Adjudication Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：P4 裁决要点：绝大多数 P4 声明未同时提供两个明确结构、双射、被保持运算和双向验证，因此无法保留"严格同构"标签。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-084 Max Adjudication Report；任务 ID: IGNITION-20260709-084；模型: qclaw/pool-glm-5.2；开始时间: 2026-07-13T16:18:00+08:00；完成时间: 2026-07-13T16:25:00+08:00；状态: MAXADJUDICATIONCOMPLETEARCHITECTURETRUTHFREEZECANDIDATE
-- 完整阅读：[reports/foundation-architecture/084-max-adjudication-report.md](../../reports/foundation-architecture/084-max-adjudication-report.md)

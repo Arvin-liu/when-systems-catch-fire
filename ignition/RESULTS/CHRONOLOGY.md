@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 575 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 580 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -606,6 +606,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [认知迁移编辑修订子模块 — 审查笔记](../reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+
+- **结果 ID：** `HR-3E994E495AD7C8F4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：认知迁移编辑修订子模块 — 审查笔记？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Review Note — Cognitive-Migration Editorial Revision Module
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [之元写作法成果](../docs/publication/zhiyuan-writing-showcase.md)
 
 - **结果 ID：** `HR-D328AE24912155E2`
@@ -731,6 +744,58 @@
 - **问题：** 此来源记录了什么：起始案例来源链｜公元1115年：金朝崛起为什么这么快？？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [认知迁移编辑修订子模块](../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+
+- **结果 ID：** `HR-9C8E9E67E8007B61`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：认知迁移编辑修订子模块？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Cognitive-Migration Editorial Revision Module
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [编辑修订 before/after 范例](../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+
+- **结果 ID：** `HR-E89916496E4E60C0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：编辑修订 before/after 范例？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Editorial-Revision Before/After Micro-Cases
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [方法来源记录：认知迁移编辑修订子模块](../docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md)
+
+- **结果 ID：** `HR-001D6F16C232F9BF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：方法来源记录：认知迁移编辑修订子模块？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)](../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+
+- **结果 ID：** `HR-E2BE1A0C85B07DB2`
+- **日期：** 2026-08-03
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：PR 189 Independent Method Review and CI Repair — Line B (Qwen 3.8 Max campaign)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: STACKED DRAFT CANDIDATE targeting workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803. DO NOT MERGE either PR. Reviewer: independent campaign executor (not the PR author agent).
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-001d6f16c232f9bf"></a>
+## 方法来源记录：认知迁移编辑修订子模块
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：方法来源记录：认知迁移编辑修订子模块；English: Source & Provenance Note — Cognitive-Migration Editorial Revision Module；状态：DRAFTPRAWAITINGGPTOWNERREVIEW 关联候选版本：0.6.0-candidate；本文是认知迁移编辑修订子模块的来源与版权边界记录。原始笔记不进入正式仓库，此处只保留可审计的来源指纹、经过实质转化的方法机制，以及分析所必需的最小引用。；上传标题：之元写作法·得到体改写操作手册 v0.1 2026年8月3日13:40；SHA-256：e1fa1c38e1403035f69d8384d7e4981fa91f008bb6bb0643e75a769c86a1544e
+- 完整阅读：[docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md](../../docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md)
+
 <a id="reading-hr-004ccfbca43a4293"></a>
 ## External Agent Interface Audit R1
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121B Fulltext Batch Report；主题：Task: IGNITION-20260709-121B；主题：Date: 2026-07-14；主题：Model: qclaw/pool-glm-5.2-night | Thinking: high；主题：Executive Summary；121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure reasons, and 30 provisional reviews were downgraded from FULLT…
 - 完整阅读：[reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)
-
-<a id="reading-hr-1c89ea0a4c2a0aa1"></a>
-## map-epistemic-architecture
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Observer: maintainer and reviewer deciding how claims can move toward publication 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：map-epistemic-architecture；Observer: maintainer and reviewer deciding how claims can move toward publication；Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?；Value recipient / affected subject: readers, maintainers, and subjects affected by claims；Claim ceiling: derivednavigationview；主题：Unmapped Residue
-- 完整阅读：[reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)

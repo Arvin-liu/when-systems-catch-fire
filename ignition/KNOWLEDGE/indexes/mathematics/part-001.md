@@ -814,6 +814,11 @@
   - 可搜索名称：IMPLICIT-94BEA1FF86F1D6B7 / ## d260 — 偏差敏感度阈值函数 / IMPLICIT-94BEA1FF86F1D6B7
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
   - 依赖：—；被引用：—
+- [## F. 去公式化对比](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D891BE7CD7ADCBB8 / ## F. 去公式化对比 / IMPLICIT-D891BE7CD7ADCBB8
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [## Formal task terminality and open-obligation separation R1](../../../docs/architecture/os-control-plane-r2.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0C1C225D3C9A2ACD / ## Formal task terminality and open-obligation separation R1 / IMPLICIT-0C1C225D3C9A2ACD
@@ -1874,6 +1879,11 @@
   - 可搜索名称：IMPLICIT-ED819435C53B712B / ## 查重结果（全函数表 618 条） / IMPLICIT-ED819435C53B712B
   - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
   - 依赖：—；被引用：—
+- [## 案例 1：公式化直接对比 → 递归追问](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-249A17407E7E9F80 / ## 案例 1：公式化直接对比 → 递归追问 / IMPLICIT-249A17407E7E9F80
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [## 相关函数](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2D6BA0459AC1C0DE / ## 相关函数 / IMPLICIT-2D6BA0459AC1C0DE / IMPLICIT-3C5CC2DFFAA88B55
@@ -2492,15 +2502,5 @@
 - [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E2C7E822443419AA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E2C7E822443419AA / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E64B495E169582CD / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E64B495E169582CD / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EB7B89E8311DE6C7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-EB7B89E8311DE6C7 / IMPLICIT-003191F281FA43ED
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

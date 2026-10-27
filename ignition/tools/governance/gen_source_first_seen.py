@@ -18,6 +18,7 @@ produce wrong dates.
 from __future__ import annotations
 
 import json
+import argparse
 import re
 import subprocess
 import sys
@@ -30,24 +31,25 @@ DATE_RE = re.compile(r"20\d{2}-\d{2}-\d{2}")
 
 
 def require_full_history() -> None:
-    if (ROOT / ".git").is_dir():
-        proc = subprocess.run(
-            ["git", "rev-parse", "--is-shallow-repository"],
-            cwd=ROOT,
-            text=True,
-            capture_output=True,
-            check=False,
+    proc = subprocess.run(
+        ["git", "rev-parse", "--is-shallow-repository"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if proc.returncode != 0:
+        sys.exit("REFUSE: source-first-seen.json must be generated inside a FULL git clone.")
+    if proc.stdout.strip() == "true":
+        sys.exit(
+            "REFUSE: source-first-seen.json must be generated from a FULL clone. "
+            "Run `git fetch --unshallow` first."
         )
-        if proc.stdout.strip() == "true":
-            sys.exit(
-                "REFUSE: source-first-seen.json must be generated from a FULL clone. "
-                "Run `git fetch --unshallow` first."
-            )
 
 
 def first_seen(path: str) -> str | None:
     proc = subprocess.run(
-        ["git", "log", "--follow", "--diff-filter=A", "--format=%ad", "--date=short", "--", path],
+        ["git", "log", "-m", "--follow", "--diff-filter=A", "--format=%ad", "--date=short", "--", path],
         cwd=ROOT,
         text=True,
         capture_output=True,
@@ -59,14 +61,35 @@ def first_seen(path: str) -> str | None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--incremental",
+        action="store_true",
+        help="preserve existing full-history entries and compute only sources not yet registered",
+    )
+    args = parser.parse_args()
     require_full_history()
     if not LEDGER.is_file():
         sys.exit(f"missing ledger: {LEDGER}")
     rows = [json.loads(line) for line in LEDGER.read_text(encoding="utf-8").splitlines() if line.strip()]
     sources = sorted({row["source"] for row in rows})
+    existing_entries: dict[str, str] = {}
+    if args.incremental and OUT.is_file():
+        existing = json.loads(OUT.read_text(encoding="utf-8"))
+        if existing.get("schema_version") != "1.0.0" or existing.get("history_requirement") != "FULL":
+            sys.exit("REFUSE: incremental generation requires an existing schema 1.0.0 FULL-history map.")
+        existing_entries = existing.get("entries", {})
+        if not isinstance(existing_entries, dict) or any(
+            not isinstance(path, str) or not DATE_RE.fullmatch(str(date))
+            for path, date in existing_entries.items()
+        ):
+            sys.exit("REFUSE: existing source-first-seen entries are malformed.")
     entries: dict[str, str] = {}
     missing = []
     for source in sources:
+        if source in existing_entries:
+            entries[source] = existing_entries[source]
+            continue
         date = first_seen(source)
         if date:
             entries[source] = date
@@ -83,13 +106,13 @@ def main() -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "schema_version": "1.0.0",
-        "computed_from": "git log --follow --diff-filter=A --format=%ad --date=short",
+        "computed_from": "git log -m --follow --diff-filter=A --format=%ad --date=short",
         "history_requirement": "FULL",
         "entry_count": len(entries),
         "entries": entries,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(f"SOURCE_FIRST_SEEN_WRITTEN entries={len(entries)} -> {OUT.relative_to(ROOT)}")
+    print(f"SOURCE_FIRST_SEEN_WRITTEN entries={len(entries)} incremental={args.incremental} -> {OUT.relative_to(ROOT)}")
     return 0
 
 

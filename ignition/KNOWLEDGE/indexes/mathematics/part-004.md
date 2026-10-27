@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3adda23bcde2d3b9 / Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8930fc0f9a1044e0 / Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [attempt-specific scratch lifecycle.](../../../reports/operations/ignition-138-step02-filesystem-reproduction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f2c7030a5cd50e13 / attempt-specific scratch lifecycle.
@@ -2439,6 +2454,11 @@
   - 可搜索名称：NFC-26e95f29ada730bd / F_退出权验证 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
+- [Failed workflows at head: `repository-path-accounting-preflight` \(run 30789071701\), `iteration-lifecycle-validation` \(ru](../../../reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2cc32133e0711b83 / Failed workflows at head: `repository-path-accounting-preflight` \(run 30789071701\), `iteration-lifecycle-validation` \(ru
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
 - [federation dispatch, residual and Current-state gates, release/lifecycle](../../../reports/operations/ignition-138-step13-targeted-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-744440975fd78bda / federation dispatch, residual and Current-state gates, release/lifecycle
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-47d992082ea260f0 / Five constrained tool lifecycle operations and cascading skill updates allow tool-level defects to be repaired while avo
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [For all a,b in Nat, if a=0 or b=0, then a*b=0.](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT`
-  - 可搜索名称：CLAIM-T2 / For all a,b in Nat, if a=0 or b=0, then a*b=0.
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [For any function, model, theorem, formula, law, decision rule or cross-domain claim, apply `docs/foundation/claim-govern](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3b7070d6f0e4e4ae / For any function, model, theorem, formula, law, decision rule or cross-domain claim, apply `docs/foundation/claim-govern
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [for field in \("capability_lease_digest", "workspace_digest_before", "workspace_digest_after", "runtime_scratch_lifecycle](../../../agent_federation/live_attempt_ledger.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-937b78086b20a094 / for field in \("capability_lease_digest", "workspace_digest_before", "workspace_digest_after", "runtime_scratch_lifecycle
-  - 来源：`agent_federation/live_attempt_ledger.py`
-  - 依赖：—；被引用：—
-- [Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s](../../../agent-results/IGNITION-20260822-133-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-300eb09a94965b6e / Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
-  - 来源：`agent-results/IGNITION-20260822-133-result.md`
   - 依赖：—；被引用：—

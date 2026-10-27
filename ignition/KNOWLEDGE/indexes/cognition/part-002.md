@@ -994,6 +994,11 @@
   - 可搜索名称：NFC-8be11e01b0e9287b / Positive claims must still be tied to evidence, version, test scope, and boundary conditions. Negative feedback is not t
   - 来源：`.github/SUPPORT.md`
   - 依赖：—；被引用：—
+- [PR 189 Independent Method Review and CI Repair — Line B \(Qwen 3.8 Max campaign\)](../../ASSET-CARDS.md#asset-hr-e2be1a0c85b07db2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：PR 189 Independent Method Review and CI Repair — Line B \(Qwen 3.8 Max campaign\) / pr189-independent-review-and-ci-repair-r1-20260803
+  - 来源：`reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md`
+  - 依赖：—；被引用：—
 - [preserved as evidence. This result does not self-witness a publication SHA:](../../../agent-results/IGNITION-20260828-144-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0fa7cd3a99d71f29 / preserved as evidence. This result does not self-witness a publication SHA:
@@ -2497,10 +2502,5 @@
 - [title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e87de069c3c000d1 / title: "认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-786e1a83cd47b2c0 / title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

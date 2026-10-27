@@ -1,5 +1,5 @@
 {
-  "computed_from": "git log --follow --diff-filter=A --format=%ad --date=short",
+  "computed_from": "git log -m --follow --diff-filter=A --format=%ad --date=short",
   "entries": {
     "agent-results/IGNITION-121Q6C-result.md": "2026-07-15",
     "agent-results/IGNITION-20260820-127-result.md": "2026-08-21",
@@ -157,6 +157,9 @@
     "docs/operations/ignition-operation-playbooks-r1.md": "2026-08-29",
     "docs/operations/lifecycle-readme.md": "2026-08-01",
     "docs/operations/stage-snapshot-publication.md": "2026-07-26",
+    "docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md": "2026-08-03",
+    "docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md": "2026-08-03",
+    "docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md": "2026-08-03",
     "docs/publication/cases/jin-rise-case-source.md": "2026-07-16",
     "docs/publication/cases/song-huizong-taoism-1117-source.md": "2026-08-02",
     "docs/publication/method-sources/cognitive-migration-editorial-revision-source.md": "2026-08-14",
@@ -560,7 +563,9 @@
     "reports/operations/ignition-144-step18-formal-main-publication.md": "2026-08-28",
     "reports/operations/ignition-144-step19-terminality.md": "2026-08-28",
     "reports/operations/lifecycle-audit-108.md": "2026-08-01",
+    "reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md": "2026-08-03",
     "reports/publication/jin-rise-point-fire-analysis.md": "2026-07-16",
+    "reports/publication/pr189-independent-review-and-ci-repair-r1-20260803.md": "2026-08-03",
     "reports/publication/song-huizong-taoism-point-fire-analysis.md": "2026-08-02",
     "reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md": "2026-08-14",
     "reports/reality/121Q16-action-selection.md": "2026-07-15",
@@ -577,7 +582,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 575,
+  "entry_count": 580,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-786e1a83cd47b2c0 / title: "认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-89853AEF150F6DBC / title: "认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）" / IMPLICIT-89853AEF150F6DBC
@@ -599,6 +604,11 @@
   - 可搜索名称：NFC-79e0e59a82461d99 / \| 事件词汇化 \| 方式、路径、结果通过动词、复合和附加结构组织。 \| 当前证据不足以给出一般认知效应。 \|
   - 来源：`docs/language-thought/profiles/ja.md`
   - 依赖：—；被引用：—
+- [\| 史料／编年密集草稿 \| 事实多、观点隐、按时间线平铺 \| 重切分，找出认知迁移点 \|](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6664a7e289072d87 / \| 史料／编年密集草稿 \| 事实多、观点隐、按时间线平铺 \| 重切分，找出认知迁移点 \|
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [\| 数据集 \| 编号 \| 用途 \|](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1fbdbad2dad67cbd / \| 数据集 \| 编号 \| 用途 \|
@@ -678,6 +688,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-40a6d86540047fe7 / 三阶段操作协议验证 — 个人职业转型-阶段1\(ε-θC,不满但没行动力,β小,可以探索各种方向\);阶段2\(ε≈θC,积累到临界点,β大,必须
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [下列六个微案例对应\[认知迁移编辑修订子模块\]\(./zhiyuan-writing-cognitive-migration-editorial-revision.md\)的审查要求：至少四类“外露脚手架 → 结构认知迁移”转换，至少一例保留精确](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3179c876fd41986e / 下列六个微案例对应\[认知迁移编辑修订子模块\]\(./zhiyuan-writing-cognitive-migration-editorial-revision.md\)的审查要求：至少四类“外露脚手架 → 结构认知迁移”转换，至少一例保留精确
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [不是任何具体学科的替代品；现实结论必须连接外部证据。](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -948,6 +963,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-15149ae435592760 / 六、外部证据 pending
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md`
+  - 依赖：—；被引用：—
+- [六个案例共同说明：本子模块处理的是**认知迁移的可见性**，不是真值再论证。脚手架外露的句子（案例 1–4）通过结构承载被转化；精确且承担证据边界的否定（案例 5）被保留；夸大且压平论证的金句（案例 6）被驳回。四类转换 + 一保留 + 一](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f01c2da880688700 / 六个案例共同说明：本子模块处理的是**认知迁移的可见性**，不是真值再论证。脚手架外露的句子（案例 1–4）通过结构承载被转化；精确且承担证据边界的否定（案例 5）被保留；夸大且压平论证的金句（案例 6）被驳回。四类转换 + 一保留 + 一
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
   - 依赖：—；被引用：—
 - [关键发现：A1-A3=认知空间投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1244,6 +1264,11 @@
   - 可搜索名称：NFC-7243e9abe3faa13c / 对应条目：D244 自主意识涌现临界条件（量化相关）、D173 显态粘性（表演化固化）。
   - 来源：`outputs/collisions/20260708-teacher-competition/notes.md`
   - 依赖：D173, D244；被引用：—
+- [对比案例 1 中被转换的句子，区别在于：案例 1 的“不是……而是……”把整个认知迁移一次性宣布完毕；本句的“并不是说……没有足够依据”是在划清论证边界，二者功能不同，不能机械统一处理。](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ba90026fe2a1dde / 对比案例 1 中被转换的句子，区别在于：案例 1 的“不是……而是……”把整个认知迁移一次性宣布完毕；本句的“并不是说……没有足够依据”是在划清论证边界，二者功能不同，不能机械统一处理。
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
 - [已完成且不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-686b383dc793a86d / 已完成且不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。
@@ -1349,6 +1374,11 @@
   - 可搜索名称：NFC-5be529ef5a4a35ae / 新 Agent 进入正式仓库时，先读项目的 \[`STATE-CHANGELOG.md`\]\(../STATE-CHANGELOG.md\) baseline 与最近若干条 delta，再按其中的 `next_read` 回到 `docs/pro
   - 来源：`docs/GET-BRAIN-WORKFLOW.md`
   - 依赖：—；被引用：—
+- [方法来源记录：认知迁移编辑修订子模块](../../ASSET-CARDS.md#asset-hr-001d6f16c232f9bf)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：方法来源记录：认知迁移编辑修订子模块 / cognitive-migration-editorial-revision-source
+  - 来源：`docs/publication/candidates/pr-189/cognitive-migration-editorial-revision-source.md`
+  - 依赖：—；被引用：—
 - [更新必要索引；](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ddcfe279a5dd0ad8 / 更新必要索引；
@@ -1359,6 +1389,11 @@
   - 可搜索名称：NFC-822a9fada992d4cf / 本包把“许多不相关问题共存并发生弱、远、休眠碰撞”作为待检验研究假设，不把它写成大脑事实。线程字段固定为 18 个跨域来源；休眠问题池不做清理，只保留来源行、blob、行号和未解决标记。
   - 来源：`docs/governance/cross-thread-cognitive-collision-2026-09-08.md`
   - 依赖：—；被引用：—
+- [本子模块处理的是另一个问题：草稿已经生成、事实边界与概念运动已稳定之后，怎样**重组这次运动在公共读者那里的可见方式**，使读者自己经历认知迁移，而不是由作者逐句机械宣布每个转折。](../../../docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-03a74f6731af16a4 / 本子模块处理的是另一个问题：草稿已经生成、事实边界与概念运动已稳定之后，怎样**重组这次运动在公共读者那里的可见方式**，使读者自己经历认知迁移，而不是由作者逐句机械宣布每个转折。
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
 - [本收口只改变 121Q30 的生命周期表述：README、ARCHITECTURE、项目现状、导航、使用、AI/Agent/机器入口、版本记录和机器 registry 将成果展示描述为当前 L6 presentation/provenanc](../../../reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-093756c25746815b / 本收口只改变 121Q30 的生命周期表述：README、ARCHITECTURE、项目现状、导航、使用、AI/Agent/机器入口、版本记录和机器 registry 将成果展示描述为当前 L6 presentation/provenanc
@@ -1368,6 +1403,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-649b9397abfdce53 / 本次公开作品没有复制原笔记，也没有沿用其“自我神化—政治用途—祥瑞景观—民间道教—行动主义—富兰克林”的排列。原文中无法在本轮独立定位、且不是成稿所必需的细节，例如“千道会”赏钱、人工驯鹤、九鼎与祥瑞目录、符箓步骤、安慰剂比例及富兰克林类比
   - 来源：`docs/publication/cases/song-huizong-taoism-1117-source.md`
+  - 依赖：—；被引用：—
+- [本段仅在草稿已有稳定事实边界、claim ceiling 与概念运动后启用，用于重组认知迁移的公共可见性。**可选、非强制**，长反思文、学术说明或文学随笔可整段留空或只取部分。字段顺序不是执行顺序。](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-82ce4c718268ef01 / 本段仅在草稿已有稳定事实边界、claim ceiling 与概念运动后启用，用于重组认知迁移的公共可见性。**可选、非强制**，长反思文、学术说明或文学随笔可整段留空或只取部分。字段顺序不是执行顺序。
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
   - 依赖：—；被引用：—
 - [某个具体叙事一定会改变某个人的理解：`pending`（需要个体认知实验）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1498,6 +1538,16 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：认知迁移编辑修订 / zhiyuan-writing-cognitive-migration-editorial-revision
   - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订子模块](../../ASSET-CARDS.md#asset-hr-9c8e9e67e8007b61)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：认知迁移编辑修订子模块 / zhiyuan-writing-cognitive-migration-editorial-revision
+  - 来源：`docs/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订子模块 — 审查笔记](../../ASSET-CARDS.md#asset-hr-3e994e495ad7c8f4)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：认知迁移编辑修订子模块 — 审查笔记 / zhiyuan-writing-cognitive-migration-editorial-revision-review
+  - 来源：`reports/publication/candidates/pr-189/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
   - 依赖：—；被引用：—
 - [认知迁移编辑修订：Owner 决定与独立审查入口](../../ASSET-CARDS.md#asset-hr-deb3e834ad440e87)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
