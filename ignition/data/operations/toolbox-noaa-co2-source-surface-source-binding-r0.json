@@ -1,0 +1,39 @@
+{
+  "schema_version": "ignition.toolbox-noaa-co2-source-surface-source-binding-r0",
+  "tool_id": "research.compare_noaa_co2_source_surfaces",
+  "tool_version": "0.1.0",
+  "implementation": {
+    "path": "ignition/tools/toolbox_compare_noaa_co2_surfaces.py",
+    "sha256": "2e6b031fde7e7a1b83b78862b23c60d49f198b3d8faf4c33969b28397bab3700"
+  },
+  "design_basis": {
+    "owner_instruction_ref": "Arvin-liu/1111@9c9c3c3ffd799c81fa28e5a3df9aad57251daae1",
+    "owner_instruction_path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "component_origin": "The stored NOAA CO2 source review identified a page-versus-raw-table value difference for 2023 and recorded the raw-only adapter as NOT_RUN. The component compares those source surfaces while preserving both values and their source digests.",
+    "owner_c1_amendment_ref": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "owner_c1_amendment_path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "owner_c1_amendment_file_blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e",
+    "c1_rule_applied": "Compare same-task ability, evidence completeness, coverage, real cost, reliability, maintainability, risk, and rollback. Retire only when the replacement covers every valuable use; otherwise preserve distinct value or uncertainty."
+  },
+  "fixed_sources": [
+    {
+      "surface_id": "NOAA_GML_RENDERED_GLOBAL_CO2_GROWTH_PAGE",
+      "url": "https://gml.noaa.gov/ccgg/trends/gl_gr.html",
+      "sha256_of_review_record": "f109270b0d043c9706565057208412eccbce85e94b5515e3c7ee29cb51c724fc"
+    },
+    {
+      "surface_id": "NOAA_GML_FIXED_GLOBAL_CO2_RAW_TABLE",
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_gr_gl.txt"
+    }
+  ],
+  "runtime_boundary": {
+    "network_requests": 2,
+    "network_host_allowlist": [
+      "gml.noaa.gov"
+    ],
+    "write_paths": [],
+    "raw_response_bodies_retained": false,
+    "source_authentication_claimed": false
+  },
+  "claim_ceiling": "Provider-reported annual CO2 growth and stated uncertainty values on two fixed NOAA GML surfaces at capture time, with exact arithmetic differences only."
+}

@@ -1,0 +1,20 @@
+{
+  "fixed_host": "gml.noaa.gov",
+  "fixed_path": "/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+  "http_status": 200,
+  "limits": [
+    "The source may be revised as new samples and quality-control updates enter NOAA GML processing.",
+    "The response digest binds received bytes but does not authenticate NOAA or measurement validity.",
+    "Annual atmospheric mole-fraction growth does not identify emissions, source sectors, or causal mechanisms."
+  ],
+  "provider": "NOAA Global Monitoring Laboratory",
+  "raw_response_retained": false,
+  "raw_table_url": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+  "response_bytes": 2909,
+  "response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d",
+  "retrieval_observation_utc": "2026-10-26T22:30:45Z",
+  "schema_version": "toolbox-noaa-n2o-annual-growth-lookup-source-binding-r0",
+  "source_definition": "Annual N2O mole-fraction increase in ppb from Jan 1 through Dec 31.",
+  "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+  "tool_version": "0.1.0"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "toolbox-noaa-n2o-source-surface-c1-evidence-r0",
+  "tool_id": "research.compare_noaa_n2o_source_surfaces",
+  "tool_version": "0.1.0",
+  "observed_at_utc": "2026-10-26T21:54:10Z",
+  "comparison_method": "LIVE_MATCHED_N2O_SOURCE_TASK_AND_FIXED_INTERFACE_SCOPE_REVIEW",
+  "task": {
+    "task_id": "noaa-gml-n2o-page-to-raw-surface-comparison-2023-2025",
+    "input_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-comparison-real-task-input-r0.json",
+    "output_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-comparison-real-task-output-r0.json",
+    "range": {
+      "start_year": 2023,
+      "end_year": 2025
+    }
+  },
+  "same_task_outcomes": {
+    "new_n2o_two_surface_comparator": {
+      "tool_id": "research.compare_noaa_n2o_source_surfaces",
+      "output_sha256": "4c83937fc5a0265493f51971a7f0644f8808473299dc385d1142c80289538aef",
+      "requests_made": 2,
+      "status": "COMPARED",
+      "comparison_status": "EXACT_MATCH",
+      "page_values_ppb": [
+        "1.01",
+        "1.02",
+        "1.23"
+      ],
+      "raw_values_ppb": [
+        "1.01",
+        "1.02",
+        "1.23"
+      ],
+      "page_and_raw_uncertainties_ppb": [
+        [
+          "0.02",
+          "0.02"
+        ],
+        [
+          "0.01",
+          "0.01"
+        ],
+        [
+          "0.01",
+          "0.01"
+        ]
+      ],
+      "page_response_sha256": "26224346d22b2e37312df032566be078fb8ea3af25092e164ac54cda5885e2db",
+      "raw_response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d",
+      "retrieval_times_utc": [
+        "2026-10-26T21:54:09Z",
+        "2026-10-26T21:54:10Z"
+      ]
+    },
+    "existing_species_comparators": {
+      "co2_tool_id": "research.compare_noaa_co2_source_surfaces",
+      "ch4_tool_id": "research.compare_noaa_ch4_source_surfaces",
+      "same_task_result": "NOT_COMPARABLE_FIXED_DIFFERENT_SPECIES_ENDPOINTS_AND_IDENTITIES",
+      "reason": "Both existing tools have fixed CO2 or CH4 URLs and field contracts; neither can be redirected or asked to report N2O."
+    },
+    "pre_admission_inventory": {
+      "current_operation_registry_count": 20,
+      "n2o_tool_ids_found": [],
+      "evidence": "The Current operation registry, 61-card candidate catalog, and toolbox directory had no N2O tool before this candidate was added."
+    }
+  },
+  "functional_findings": [
+    "The exact requested capability is a fixed NOAA GML N2O page/raw comparison; existing CO2 and CH4 comparators cannot satisfy it because their species-specific URLs, units, schemas, and output identities are fixed.",
+    "A live 2023–2025 request returned matching page and raw values (1.01, 1.02, 1.23 ppb) with matching stated uncertainties; this proves the implementation can retrieve and parse both surfaces for this one observation, not a persistent discrepancy or accuracy advantage.",
+    "A matched synthetic negative control changes the page 2023 growth value by +0.01 ppb and the comparator reports the literal difference without selecting a preferred surface.",
+    "The new wrapper reuses the existing bounded NOAA comparison core; it adds a distinct gas-specific task surface, not a new general comparison algorithm."
+  ],
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "decision": "COEXIST_BY_TASK_SCOPE",
+    "retired_tools": [],
+    "uncertainties": [
+      "There is no same-task incumbent N2O toolbox tool, so replacement quality is not measurable; the CO2 and CH4 tools remain useful for their distinct species.",
+      "One exact live match does not establish long-run agreement, service reliability, or measurement validity.",
+      "Latency, monetary cost, source authenticity, statistical significance, and scientific validity were not compared."
+    ]
+  },
+  "execution_boundary": {
+    "default_route_selectable": false,
+    "route_planning_authorizes_execution": false,
+    "actual_invocation_requires_flag": "--allow-public-network",
+    "raw_response_bodies_retained": false
+  }
+}

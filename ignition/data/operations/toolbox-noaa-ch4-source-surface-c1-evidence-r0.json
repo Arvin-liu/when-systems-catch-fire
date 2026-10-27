@@ -1,0 +1,61 @@
+{
+  "schema_version": "toolbox-noaa-ch4-source-surface-c1-evidence-r0",
+  "tool_id": "research.compare_noaa_ch4_source_surfaces",
+  "tool_version": "0.1.0",
+  "observed_at_utc": "2026-10-26T17:30:09Z",
+  "comparison_method": "MATCHED_2023_2025_NOAA_REQUESTS_AND_TYPED_CONTRACT_REVIEW",
+  "task": {
+    "task_id": "noaa-gml-ch4-page-to-raw-surface-comparison-2023-2025",
+    "input_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-comparison-real-task-input-r0.json",
+    "range": {
+      "start_year": 2023,
+      "end_year": 2025
+    }
+  },
+  "same_task_outcomes": {
+    "two_surface_comparator": {
+      "tool_id": "research.compare_noaa_ch4_source_surfaces",
+      "output_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-comparison-real-task-output-r0.json",
+      "requests_made": 2,
+      "status": "COMPARED",
+      "comparison_status": "EXACT_MATCH",
+      "page_values_ppb": ["8.29", "8.04", "4.77"],
+      "raw_values_ppb": ["8.29", "8.04", "4.77"],
+      "page_and_raw_uncertainties_ppb": [["0.82", "0.82"], ["0.43", "0.43"], ["0.43", "0.43"]],
+      "page_response_sha256": "096f0c1f0d436809fa5491e6284ec3ab6345a4fbbb38cc545fd445d5a5a319b9",
+      "raw_response_sha256": "0501e15f5ffea518f8dfb90477ad28a7dbcdb26285c2792118f49b3a71e076eb",
+      "retrieval_times_utc": ["2026-10-26T17:29:36Z", "2026-10-26T17:29:37Z"]
+    },
+    "raw_table_only_comparator": {
+      "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+      "output_path": "ignition/data/operations/toolbox-noaa-ch4-source-surface-c1-raw-only-output-r0.json",
+      "requests_made": 1,
+      "status": "FOUND",
+      "raw_values_ppb": [8.29, 8.04, 4.77],
+      "raw_uncertainties_ppb": [0.82, 0.43, 0.43],
+      "raw_response_sha256": "0501e15f5ffea518f8dfb90477ad28a7dbcdb26285c2792118f49b3a71e076eb",
+      "retrieved_at_utc": "2026-10-26T17:30:09Z"
+    }
+  },
+  "functional_findings": [
+    "The raw-table-only NOAA CH4 reader returned the same selected raw values and digest with one GET; retain it for lower-request-count raw-only tasks and when the rendered page is unavailable or not needed.",
+    "The new comparator adds the rendered-page values and a direct contemporaneous page-versus-raw comparison, so the raw-only result cannot satisfy a task requiring both surfaces or detect a page/raw disagreement.",
+    "A mocked negative control changes the page's 2023 value from 8.29 to 8.30 ppb; the comparator reports a literal +0.01 ppb difference without ranking either surface.",
+    "The existing CO2 surface comparator addresses a different species and ppm contract; it cannot satisfy the methane/ppb task."
+  ],
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "decision": "COEXIST_BY_TASK_SCOPE",
+    "retired_tools": [],
+    "uncertainties": [
+      "This one live matched capture showed exact agreement; it does not establish long-run page/raw agreement or comparative reliability.",
+      "Latency, service quality, monetary cost, statistical significance, source authenticity, and scientific validity were not compared."
+    ]
+  },
+  "execution_boundary": {
+    "default_route_selectable": false,
+    "route_planning_authorizes_execution": false,
+    "actual_invocation_requires_flag": "--allow-public-network",
+    "raw_response_bodies_retained": false
+  }
+}
