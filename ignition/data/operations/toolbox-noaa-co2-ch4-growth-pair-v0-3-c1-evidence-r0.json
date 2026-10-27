@@ -1,0 +1,69 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-growth-pair-v0-3-c1-evidence-r0",
+  "evidence_type": "C1_SAME_TASK_COMPATIBILITY_AND_CAPABILITY_EXTENSION",
+  "observed_on": "2026-10-27",
+  "candidate_tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+  "prior_tool_version": "0.2.0",
+  "candidate_tool_version": "0.3.0",
+  "disposition": "SAME_TOOL_ID_VERSION_UPGRADE_SUPPORTED",
+  "two_gas_same_task": {
+    "prior_output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-2-real-task-output-r1.json",
+    "candidate_output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-3-two-gas-real-task-output-r2.json",
+    "prior_output_canonical_sha256": "0ea2bf38ee9421185633ed8d2b7810760c4d74d1658a5c2ca41cf879c5025871",
+    "candidate_output_canonical_sha256": "0356ac5135e698f8ef33061add1bc3369a12dbd254e8a340dbf512ce8c8065cc",
+    "comparison": "EXACT_SEMANTIC_PARITY_AFTER_NORMALIZING_ONLY_SCHEMA_VERSION_AND_TOOL_VERSION",
+    "input_payload_sha256_preserved": true
+  },
+  "three_gas_same_task": {
+    "prior_output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-output-r1.json",
+    "candidate_output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-3-n2o-extension-real-task-output-r2.json",
+    "prior_output_canonical_sha256": "8f9963a69c0faa666771d12236da5f56c69986b63f0d4fbc0bf0e18bd9e2dc91",
+    "candidate_output_canonical_sha256": "8fe21b5d26e3219e33ad2d3795e01a498088e4d353c7c9659302d10aadb3646a",
+    "comparison": "EXACT_SEMANTIC_PARITY_AFTER_NORMALIZING_ONLY_SCHEMA_VERSION_AND_TOOL_VERSION",
+    "input_payload_sha256_preserved": true
+  },
+  "four_gas_extension": {
+    "input_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-sf6-extension-real-task-input-r2.json",
+    "output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-sf6-extension-real-task-output-r2.json",
+    "evidence_path": "ignition/data/operations/toolbox-noaa-co2-ch4-n2o-sf6-pair-real-task-evidence-r2.json",
+    "species": [
+      "co2",
+      "ch4",
+      "n2o",
+      "sf6"
+    ],
+    "units": {
+      "co2": "ppm",
+      "ch4": "ppb",
+      "n2o": "ppb",
+      "sf6": "ppt"
+    },
+    "aligned_years": 3,
+    "all_four_species_with_both_source_surfaces": 3,
+    "eight_source_receipts_retained": 8,
+    "sf6_literal_uncertainty_differences_ppt": [
+      "0.004",
+      "0.004",
+      "0.004"
+    ],
+    "cross_gas_arithmetic_performed": false,
+    "simultaneous_capture_claimed": false,
+    "pairer_network_calls_made": 0
+  },
+  "comparison_and_lifecycle": {
+    "prior_same_tool_version_remains_useful_for_two_and_three_gas_tasks": "YES; candidate retains both legacy input contracts and exact normalized task output semantics.",
+    "separate_pairing_implementation_needed": "NO; extending the incumbent with optional SF6 preserves old scope and adds the four-gas task capability.",
+    "other_comparators_retired": false,
+    "incumbent_0_2_0_lifecycle": "SUPERSEDED_BY_SAME_TOOL_ID_VERSION; prior inputs, outputs, C1 evidence, and route evidence remain preserved.",
+    "automatic_route_activation": false,
+    "current_registry_or_permissions_changed": false
+  },
+  "limits": [
+    "This is a bounded capability and backward-compatibility comparison, not a CPU, latency, analyst-time, or broad scientific-utility benchmark.",
+    "Captured comparator inputs do not authenticate NOAA or validate measurements; the pairer performs no source retrieval.",
+    "Separate ppm, ppb, and ppt fields are not converted, combined, ranked, or interpreted across gases."
+  ],
+  "implementation_sha256": "92fc1ba09083174515f17aa5d2e5cf65a7ce8b95af30c17f1a2751e8c5d72c83",
+  "input_schema_sha256": "1a101750de22bfed52380e9072d34af74875515bc69e3afedfb4b78e4bdcf5a3",
+  "output_schema_sha256": "e9d83e616126f9c3f8a09a0d8bd1e782b7a106ee752a3db0051ed6dad14b7584"
+}

@@ -3,8 +3,8 @@
   "evidence_type": "DEFAULT_OFF_TWO_AND_THREE_GAS_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
   "observed_on": "2026-10-27",
   "candidate_tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
-  "candidate_tool_version": "0.2.0",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_tool_version": "0.3.0",
+  "candidate_catalog_git_blob_sha1": "0a3f25a5e256495b4e043b39b8dcef2ea475f31a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profiles": [
@@ -61,9 +61,10 @@
         "Four fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span.",
         "Same-year separate NOAA GML CO2 (ppm) and CH4 (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic."
       ],
-      "planner_output_sha256": "c9cc5de8562cada4858509d18f9906f062f7ba0f182b49aff305b379233fd17b",
+      "planner_output_sha256": "75d5ee0ceba6c49d2c8ccabae0edcc702f3f9a288f49a84733f826ca0078d77a",
       "candidate_invoked": false,
-      "network_calls_made": 0
+      "network_calls_made": 0,
+      "actual_execution_authorized": false
     },
     {
       "scenario": "TWO_GAS_EXPLICIT",
@@ -97,9 +98,10 @@
       ],
       "actual_candidate_rejections": [],
       "actual_unmet_outputs": [],
-      "planner_output_sha256": "48c1662825c0eadca1e360d841f570afb5d259ae1081a50add194e1482f0ec50",
+      "planner_output_sha256": "7854cfdb82a38926f20ef163af45f70f86d88cf436bc287e33827a8917e8f20b",
       "candidate_invoked": false,
-      "network_calls_made": 0
+      "network_calls_made": 0,
+      "actual_execution_authorized": false
     },
     {
       "scenario": "THREE_GAS_DEFAULT_OFF",
@@ -140,9 +142,10 @@
         "Same-year separate NOAA GML CO2 (ppm), CH4 (ppb) and N2O (ppb) source-surface comparison rows with per-gas statuses; no cross-gas arithmetic or simultaneity claim.",
         "Six fixed-source receipts, retrieval timestamps, response digests, upstream request counts, comparator-output digests and combined capture-time span."
       ],
-      "planner_output_sha256": "978f5c702202e507fbbab9126b661e555945e7f7ab83ee4b6c276ba71a4536dc",
+      "planner_output_sha256": "69914521d6c26a6025065360ddd834191cdfb87cf3057b6d6b27c61da1035083",
       "candidate_invoked": false,
-      "network_calls_made": 0
+      "network_calls_made": 0,
+      "actual_execution_authorized": false
     },
     {
       "scenario": "THREE_GAS_EXPLICIT",
@@ -176,9 +179,10 @@
       ],
       "actual_candidate_rejections": [],
       "actual_unmet_outputs": [],
-      "planner_output_sha256": "a96bf9f6545a9450ed284c5cb4d19bedc57b153cea96e1d60a4f70fba8e82c68",
+      "planner_output_sha256": "f37bbeb7b5390b0801ed50092bdb2c3669f8b3372987d38fc6daec489158de0c",
       "candidate_invoked": false,
-      "network_calls_made": 0
+      "network_calls_made": 0,
+      "actual_execution_authorized": false
     },
     {
       "scenario": "SINGLE_N2O_REJECTION",
@@ -219,9 +223,10 @@
       "actual_unmet_outputs": [
         "Single-gas annual N2O source comparison only; no year alignment with CO2 or CH4 is required."
       ],
-      "planner_output_sha256": "ef5bd7f9c4baa54434bd8902ba53ebcf0c13a3e20d2c6a56206806495c5ba03b",
+      "planner_output_sha256": "01b57785c34d59407c68bdf7d249e99b780d133ae3d40d59f21d7eef9c313819",
       "candidate_invoked": false,
-      "network_calls_made": 0
+      "network_calls_made": 0,
+      "actual_execution_authorized": false
     }
   ],
   "summary": {
@@ -240,19 +245,25 @@
       "superseded_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "superseded_observed_at_utc": "2026-10-27",
       "replayed_at_utc": "2026-10-27T00:44:31Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "10031d0393c2992e7f2f468533f3f7efeac1e244",
+      "superseded_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+      "superseded_observed_at_utc": "2026-10-27T00:44:31Z",
+      "replayed_at_utc": "2026-10-27T12:03:02Z"
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "0a3f25a5e256495b4e043b39b8dcef2ea475f31a",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-    "replayed_at_utc": "2026-10-27T00:44:31Z",
+    "replayed_at_utc": "2026-10-27T12:03:02Z",
     "route_trials_replayed": 5,
     "all_expected_decisions_reproduced": true,
     "provider_calls_made": 0,
     "execution_authorized": false,
     "candidate_invoked": false,
-    "replay_result_sha256": "1097e9f04fcda4170e10e1d7b332a3518ec9d53eea80b3c2c7e924f0fbe77c90",
-    "previous_candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+    "replay_result_sha256": "b79a76eb50eb598183fa6108c5015190329ba99a099fb1e0a371ded078df180d",
+    "previous_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
     "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays."
   }
 }

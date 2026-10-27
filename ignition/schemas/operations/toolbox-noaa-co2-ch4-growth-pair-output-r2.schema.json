@@ -1,0 +1,616 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arvin-liu.github.io/ignition/schemas/operations/toolbox-noaa-co2-ch4-growth-pair-output-r2.schema.json",
+  "title": "NOAA Greenhouse Gas Growth Year Pair Output (four-gas extension)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "status",
+    "requested_range",
+    "input_payload_sha256",
+    "pairing",
+    "metrics",
+    "source_captures",
+    "cohort_capture_span_seconds",
+    "rows",
+    "claim_ceiling",
+    "non_claims"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "toolbox-noaa-co2-ch4-growth-pair-output-r2"
+    },
+    "tool_id": {
+      "const": "research.pair_noaa_co2_ch4_growth_by_year"
+    },
+    "tool_version": {
+      "const": "0.3.0"
+    },
+    "status": {
+      "const": "PAIRED"
+    },
+    "requested_range": {
+      "$ref": "#/$defs/yearRange"
+    },
+    "input_payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "pairing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "join_key",
+        "co2_unit",
+        "ch4_unit",
+        "cross_gas_arithmetic_performed",
+        "simultaneous_capture_claimed"
+      ],
+      "properties": {
+        "join_key": {
+          "const": "year"
+        },
+        "co2_unit": {
+          "const": "ppm"
+        },
+        "ch4_unit": {
+          "const": "ppb"
+        },
+        "n2o_unit": {
+          "const": "ppb"
+        },
+        "cross_gas_arithmetic_performed": {
+          "const": false
+        },
+        "simultaneous_capture_claimed": {
+          "const": false
+        },
+        "sf6_unit": {
+          "const": "ppt"
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "paired_year_count",
+        "co2_rows_with_two_surface_values",
+        "ch4_rows_with_two_surface_values",
+        "years_with_two_surface_values_for_both_gases",
+        "years_with_a_missing_surface_value"
+      ],
+      "properties": {
+        "paired_year_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "co2_rows_with_two_surface_values": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "ch4_rows_with_two_surface_values": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "years_with_two_surface_values_for_both_gases": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "years_with_a_missing_surface_value": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "n2o_rows_with_two_surface_values": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "years_with_two_surface_values_for_all_three_gases": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "years_with_a_missing_surface_value_for_any_gas": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "sf6_rows_with_two_surface_values": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "years_with_two_surface_values_for_all_four_gases": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        }
+      }
+    },
+    "source_captures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "co2",
+        "ch4"
+      ],
+      "properties": {
+        "co2": {
+          "$ref": "#/$defs/sourceCapture"
+        },
+        "ch4": {
+          "$ref": "#/$defs/sourceCapture"
+        },
+        "n2o": {
+          "$ref": "#/$defs/sourceCapture"
+        },
+        "sf6": {
+          "$ref": "#/$defs/sourceCapture"
+        }
+      }
+    },
+    "cohort_capture_span_seconds": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 50,
+      "items": {
+        "$ref": "#/$defs/pairedRow"
+      }
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "minLength": 1
+    },
+    "non_claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "yearRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start_year",
+        "end_year"
+      ],
+      "properties": {
+        "start_year": {
+          "type": "integer",
+          "minimum": 1984,
+          "maximum": 2100
+        },
+        "end_year": {
+          "type": "integer",
+          "minimum": 1984,
+          "maximum": 2100
+        }
+      }
+    },
+    "sourceReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "acquisition_status",
+        "parse_status",
+        "http_status",
+        "etag",
+        "last_modified",
+        "retrieved_at_utc",
+        "response_bytes",
+        "response_sha256",
+        "raw_response_retained"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "acquisition_status": {
+          "const": "OK"
+        },
+        "parse_status": {
+          "enum": [
+            "FOUND",
+            "PARTIAL_DATA",
+            "NO_MATCH"
+          ]
+        },
+        "http_status": {
+          "const": 200
+        },
+        "etag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "last_modified": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "response_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "response_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "raw_response_retained": {
+          "const": false
+        }
+      }
+    },
+    "comparisonCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requested_year_count",
+        "exact_match_count",
+        "numeric_difference_count",
+        "missing_year_count"
+      ],
+      "properties": {
+        "requested_year_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "exact_match_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "numeric_difference_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "missing_year_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        }
+      }
+    },
+    "sourceCapture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_tool_id",
+        "source_tool_version",
+        "source_schema_version",
+        "source_output_canonical_sha256",
+        "requested_range",
+        "upstream_invocation",
+        "comparison_status",
+        "comparison_counts",
+        "capture_span_seconds",
+        "source_receipts"
+      ],
+      "properties": {
+        "source_tool_id": {
+          "type": "string"
+        },
+        "source_tool_version": {
+          "const": "0.1.0"
+        },
+        "source_schema_version": {
+          "type": "string"
+        },
+        "source_output_canonical_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "requested_range": {
+          "$ref": "#/$defs/yearRange"
+        },
+        "upstream_invocation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "allow_public_network_flag",
+            "requests_made"
+          ],
+          "properties": {
+            "allow_public_network_flag": {
+              "const": true
+            },
+            "requests_made": {
+              "const": 2
+            }
+          }
+        },
+        "comparison_status": {
+          "enum": [
+            "EXACT_MATCH",
+            "DIFFERENT",
+            "PARTIAL"
+          ]
+        },
+        "comparison_counts": {
+          "$ref": "#/$defs/comparisonCounts"
+        },
+        "capture_span_seconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_receipts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "provider_page",
+            "fixed_raw_table"
+          ],
+          "properties": {
+            "provider_page": {
+              "$ref": "#/$defs/sourceReceipt"
+            },
+            "fixed_raw_table": {
+              "$ref": "#/$defs/sourceReceipt"
+            }
+          }
+        }
+      }
+    },
+    "comparisonRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "year",
+        "status"
+      ],
+      "properties": {
+        "year": {
+          "type": "integer",
+          "minimum": 1984,
+          "maximum": 2100
+        },
+        "status": {
+          "enum": [
+            "EXACT_MATCH",
+            "NUMERIC_DIFFERENCE",
+            "MISSING_FROM_PAGE",
+            "MISSING_FROM_RAW_TABLE",
+            "MISSING_FROM_BOTH"
+          ]
+        },
+        "page": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "year"
+          ],
+          "properties": {
+            "year": {
+              "type": "integer"
+            },
+            "annual_increase_ppm": {
+              "type": "string"
+            },
+            "uncertainty_ppm": {
+              "type": "string"
+            },
+            "annual_increase_ppb": {
+              "type": "string"
+            },
+            "uncertainty_ppb": {
+              "type": "string"
+            },
+            "annual_increase_ppt": {
+              "type": "string",
+              "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+            },
+            "uncertainty_ppt": {
+              "type": "string",
+              "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+            }
+          },
+          "oneOf": [
+            {
+              "required": [
+                "annual_increase_ppm",
+                "uncertainty_ppm"
+              ]
+            },
+            {
+              "required": [
+                "annual_increase_ppb",
+                "uncertainty_ppb"
+              ]
+            },
+            {
+              "required": [
+                "annual_increase_ppt",
+                "uncertainty_ppt"
+              ]
+            }
+          ]
+        },
+        "raw_table": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "year"
+          ],
+          "properties": {
+            "year": {
+              "type": "integer"
+            },
+            "annual_increase_ppm": {
+              "type": "string"
+            },
+            "uncertainty_ppm": {
+              "type": "string"
+            },
+            "annual_increase_ppb": {
+              "type": "string"
+            },
+            "uncertainty_ppb": {
+              "type": "string"
+            },
+            "annual_increase_ppt": {
+              "type": "string",
+              "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+            },
+            "uncertainty_ppt": {
+              "type": "string",
+              "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+            }
+          },
+          "oneOf": [
+            {
+              "required": [
+                "annual_increase_ppm",
+                "uncertainty_ppm"
+              ]
+            },
+            {
+              "required": [
+                "annual_increase_ppb",
+                "uncertainty_ppb"
+              ]
+            },
+            {
+              "required": [
+                "annual_increase_ppt",
+                "uncertainty_ppt"
+              ]
+            }
+          ]
+        },
+        "page_annual_increase_ppm": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "raw_table_annual_increase_ppm": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_minus_raw_annual_increase_ppm": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_uncertainty_ppm": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "raw_table_uncertainty_ppm": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_minus_raw_uncertainty_ppm": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_annual_increase_ppb": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "raw_table_annual_increase_ppb": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_minus_raw_annual_increase_ppb": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_uncertainty_ppb": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "raw_table_uncertainty_ppb": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_minus_raw_uncertainty_ppb": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
+        },
+        "page_annual_increase_ppt": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$",
+          "description": "SF6 provider-page annual increase in ppt"
+        },
+        "raw_table_annual_increase_ppt": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$",
+          "description": "SF6 raw-table annual increase in ppt"
+        },
+        "page_minus_raw_annual_increase_ppt": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$",
+          "description": "SF6 page-minus-raw annual increase in ppt"
+        },
+        "page_uncertainty_ppt": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$",
+          "description": "SF6 provider-page uncertainty in ppt"
+        },
+        "raw_table_uncertainty_ppt": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$",
+          "description": "SF6 raw-table uncertainty in ppt"
+        },
+        "page_minus_raw_uncertainty_ppt": {
+          "type": "string",
+          "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)$",
+          "description": "SF6 page-minus-raw uncertainty in ppt"
+        }
+      }
+    },
+    "pairedRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "year",
+        "co2",
+        "ch4"
+      ],
+      "properties": {
+        "year": {
+          "type": "integer",
+          "minimum": 1984,
+          "maximum": 2100
+        },
+        "co2": {
+          "$ref": "#/$defs/comparisonRow"
+        },
+        "ch4": {
+          "$ref": "#/$defs/comparisonRow"
+        },
+        "n2o": {
+          "$ref": "#/$defs/comparisonRow"
+        },
+        "sf6": {
+          "$ref": "#/$defs/comparisonRow"
+        }
+      }
+    }
+  }
+}

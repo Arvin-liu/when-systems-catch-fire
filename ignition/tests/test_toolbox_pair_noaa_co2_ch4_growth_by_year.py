@@ -23,6 +23,8 @@ OPERATIONS = IGNITION_ROOT / "data/operations"
 INPUT_SCHEMA = IGNITION_ROOT / "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r1.schema.json"
 LEGACY_INPUT_SCHEMA = IGNITION_ROOT / "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r0.schema.json"
 OUTPUT_SCHEMA = IGNITION_ROOT / "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-output-r1.schema.json"
+FOUR_GAS_INPUT_SCHEMA = IGNITION_ROOT / "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r2.schema.json"
+FOUR_GAS_OUTPUT_SCHEMA = IGNITION_ROOT / "schemas/operations/toolbox-noaa-co2-ch4-growth-pair-output-r2.schema.json"
 
 
 class FakeStdin:
@@ -40,15 +42,32 @@ def captured_n2o_output() -> dict:
     return json.loads((OPERATIONS / "toolbox-noaa-n2o-source-surface-comparison-real-task-output-r0.json").read_text(encoding="utf-8"))
 
 
-def request_bytes(co2: Optional[dict] = None, ch4: Optional[dict] = None, n2o: Optional[dict] = None, schema_version: Optional[str] = None) -> bytes:
+def captured_sf6_output() -> dict:
+    return json.loads((OPERATIONS / "toolbox-noaa-sf6-source-surface-comparison-real-task-output-r0.json").read_text(encoding="utf-8"))
+
+
+def request_bytes(
+    co2: Optional[dict] = None,
+    ch4: Optional[dict] = None,
+    n2o: Optional[dict] = None,
+    sf6: Optional[dict] = None,
+    schema_version: Optional[str] = None,
+) -> bytes:
     real_co2, real_ch4 = captured_outputs()
+    selected_schema = schema_version or (
+        TOOL.INPUT_SCHEMA_VERSION if sf6 is not None
+        else TOOL.INPUT_SCHEMA_R1_VERSION if n2o is not None
+        else TOOL.LEGACY_INPUT_SCHEMA_VERSION
+    )
     envelope = {
-        "schema_version": schema_version or (TOOL.INPUT_SCHEMA_VERSION if n2o is not None else TOOL.LEGACY_INPUT_SCHEMA_VERSION),
+        "schema_version": selected_schema,
         "co2_output": deepcopy(co2 if co2 is not None else real_co2),
         "ch4_output": deepcopy(ch4 if ch4 is not None else real_ch4),
     }
     if n2o is not None:
         envelope["n2o_output"] = deepcopy(n2o)
+    if sf6 is not None:
+        envelope["sf6_output"] = deepcopy(sf6)
     return json.dumps(envelope, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
 
 
@@ -81,7 +100,7 @@ class NoaaCo2Ch4YearPairingTests(unittest.TestCase):
         parsed, input_sha = TOOL.parse_request(raw)
         result = TOOL.pair_outputs(parsed, input_sha)
         self.assertEqual(result["tool_id"], TOOL.TOOL_ID)
-        self.assertEqual(result["tool_version"], "0.2.0")
+        self.assertEqual(result["tool_version"], "0.3.0")
         self.assertEqual(result["status"], "PAIRED")
         self.assertEqual([row["year"] for row in result["rows"]], [2023, 2024, 2025])
         self.assertEqual(result["pairing"], {
@@ -111,7 +130,7 @@ class NoaaCo2Ch4YearPairingTests(unittest.TestCase):
         parsed, input_sha = TOOL.parse_request(raw)
         result = TOOL.pair_outputs(parsed, input_sha)
         self.assertEqual(result["schema_version"], TOOL.OUTPUT_SCHEMA_VERSION)
-        self.assertEqual(result["tool_version"], "0.2.0")
+        self.assertEqual(result["tool_version"], "0.3.0")
         self.assertEqual([row["year"] for row in result["rows"]], [2023, 2024, 2025])
         self.assertEqual(result["rows"][0]["n2o"]["page_annual_increase_ppb"], "1.01")
         self.assertEqual(result["rows"][1]["n2o"]["page_annual_increase_ppb"], "1.02")
@@ -124,23 +143,102 @@ class NoaaCo2Ch4YearPairingTests(unittest.TestCase):
         self.assertEqual(result["pairing"]["simultaneous_capture_claimed"], False)
 
     def test_output_schema_accepts_real_task_result(self) -> None:
-        schema = json.loads(OUTPUT_SCHEMA.read_text(encoding="utf-8"))
+        schema = json.loads(FOUR_GAS_OUTPUT_SCHEMA.read_text(encoding="utf-8"))
         for raw in (request_bytes(), request_bytes(n2o=captured_n2o_output())):
             parsed, input_sha = TOOL.parse_request(raw)
             result = TOOL.pair_outputs(parsed, input_sha)
             errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(result))
             self.assertEqual(errors, [])
 
+    def test_four_gas_real_task_preserves_units_statuses_and_capture_receipts(self) -> None:
+        raw = (OPERATIONS / "toolbox-noaa-co2-ch4-growth-pair-n2o-sf6-extension-real-task-input-r2.json").read_bytes()
+        parsed, input_sha = TOOL.parse_request(raw)
+        result = TOOL.pair_outputs(parsed, input_sha)
+        self.assertEqual(result["tool_version"], "0.3.0")
+        self.assertEqual(result["schema_version"], "toolbox-noaa-co2-ch4-growth-pair-output-r2")
+        self.assertEqual(result["pairing"]["sf6_unit"], "ppt")
+        self.assertEqual(result["rows"][0]["sf6"]["page_annual_increase_ppt"], "0.41")
+        self.assertEqual(result["rows"][0]["sf6"]["page_minus_raw_uncertainty_ppt"], "0.004")
+        self.assertEqual(result["rows"][0]["sf6"]["status"], "NUMERIC_DIFFERENCE")
+        self.assertEqual(result["metrics"]["years_with_two_surface_values_for_all_four_gases"], 3)
+        self.assertEqual(result["metrics"]["years_with_a_missing_surface_value_for_any_gas"], 0)
+        self.assertEqual(result["source_captures"]["sf6"]["source_tool_id"], "research.compare_noaa_sf6_source_surfaces")
+        self.assertEqual(len(result["source_captures"]["sf6"]["source_receipts"]), 2)
+        self.assertFalse(result["pairing"]["cross_gas_arithmetic_performed"])
+        self.assertFalse(result["pairing"]["simultaneous_capture_claimed"])
+        self.assertIn("ppt values directly comparable", " ".join(result["non_claims"]))
+
+        schema = json.loads(FOUR_GAS_OUTPUT_SCHEMA.read_text(encoding="utf-8"))
+        errors = list(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(result))
+        self.assertEqual(errors, [])
+
+    def test_four_gas_input_schema_accepts_captured_outputs_and_r1_rejects_sf6(self) -> None:
+        schema = json.loads(FOUR_GAS_INPUT_SCHEMA.read_text(encoding="utf-8"))
+        four_gas = json.loads(request_bytes(n2o=captured_n2o_output(), sf6=captured_sf6_output()))
+        self.assertEqual(list(Draft202012Validator(schema).iter_errors(four_gas)), [])
+        three_gas_r1 = json.loads(request_bytes(n2o=captured_n2o_output()))
+        self.assertEqual(three_gas_r1["schema_version"], TOOL.INPUT_SCHEMA_R1_VERSION)
+        three_gas_r1["sf6_output"] = captured_sf6_output()
+        with self.assertRaises(TOOL.PairingInputError):
+            TOOL.parse_request(json.dumps(three_gas_r1).encode("utf-8"))
+
+    def test_four_gas_cli_is_offline_and_rejects_wrong_sf6_source(self) -> None:
+        raw = request_bytes(n2o=captured_n2o_output(), sf6=captured_sf6_output())
+        with patch.object(sys, "stdin", FakeStdin(raw)), patch.object(socket, "create_connection", side_effect=AssertionError("network use")) as connect:
+            stdout, stderr = io.StringIO(), io.StringIO()
+            with patch.object(sys, "stdout", stdout), patch.object(sys, "stderr", stderr):
+                code = TOOL.main(["--stdin"])
+        self.assertEqual(code, 0, stderr.getvalue())
+        connect.assert_not_called()
+        result = json.loads(stdout.getvalue())
+        self.assertIn("sf6", result["rows"][-1])
+        self.assertEqual(result["pairing"]["sf6_unit"], "ppt")
+
+        altered_sf6 = captured_sf6_output()
+        altered_sf6["sources"]["provider_page"]["url"] = "https://example.invalid/sf6"
+        with self.assertRaises(TOOL.PairingInputError):
+            TOOL.parse_request(request_bytes(n2o=captured_n2o_output(), sf6=altered_sf6))
+
+    def test_four_gas_rejects_mismatched_range_and_keeps_missing_sf6_explicit(self) -> None:
+        with self.assertRaises(TOOL.PairingInputError):
+            TOOL.parse_request(request_bytes(n2o=captured_n2o_output(), sf6=subset_output(captured_sf6_output(), 2024, 2025)))
+
+        sf6 = captured_sf6_output()
+        sf6["sources"]["provider_page"]["records"] = [
+            record for record in sf6["sources"]["provider_page"]["records"] if record["year"] != 2025
+        ]
+        sf6["sources"]["provider_page"]["parse_status"] = "PARTIAL_DATA"
+        raw_record = next(record for record in sf6["sources"]["fixed_raw_table"]["records"] if record["year"] == 2025)
+        sf6["comparison"]["rows"][-1] = {"year": 2025, "status": "MISSING_FROM_PAGE", "raw_table": raw_record}
+        sf6["comparison"].update({
+            "status": "DIFFERENT",
+            "exact_match_count": 0,
+            "numeric_difference_count": 2,
+            "missing_year_count": 1,
+        })
+        parsed, input_sha = TOOL.parse_request(request_bytes(n2o=captured_n2o_output(), sf6=sf6))
+        result = TOOL.pair_outputs(parsed, input_sha)
+        last_sf6 = result["rows"][-1]["sf6"]
+        self.assertEqual(last_sf6["status"], "MISSING_FROM_PAGE")
+        self.assertNotIn("page_annual_increase_ppt", last_sf6)
+        self.assertEqual(result["metrics"]["sf6_rows_with_two_surface_values"], 2)
+        self.assertEqual(result["metrics"]["years_with_two_surface_values_for_all_four_gases"], 2)
+        self.assertEqual(result["metrics"]["years_with_a_missing_surface_value_for_any_gas"], 1)
+
     def test_input_schemas_accept_legacy_pair_and_versioned_optional_n2o(self) -> None:
         legacy_schema = json.loads(LEGACY_INPUT_SCHEMA.read_text(encoding="utf-8"))
-        current_schema = json.loads(INPUT_SCHEMA.read_text(encoding="utf-8"))
+        three_gas_schema = json.loads(INPUT_SCHEMA.read_text(encoding="utf-8"))
+        current_schema = json.loads(FOUR_GAS_INPUT_SCHEMA.read_text(encoding="utf-8"))
         legacy = json.loads(request_bytes())
-        two_gas_r1 = json.loads(request_bytes(schema_version=TOOL.INPUT_SCHEMA_VERSION))
+        two_gas_r1 = json.loads(request_bytes(schema_version=TOOL.INPUT_SCHEMA_R1_VERSION))
         three_gas_r1 = json.loads(request_bytes(n2o=captured_n2o_output()))
+        four_gas_r2 = json.loads(request_bytes(n2o=captured_n2o_output(), sf6=captured_sf6_output()))
         self.assertEqual(list(Draft202012Validator(legacy_schema).iter_errors(legacy)), [])
-        validator = Draft202012Validator(current_schema)
-        self.assertEqual(list(validator.iter_errors(two_gas_r1)), [])
-        self.assertEqual(list(validator.iter_errors(three_gas_r1)), [])
+        old_validator = Draft202012Validator(three_gas_schema)
+        self.assertEqual(list(old_validator.iter_errors(two_gas_r1)), [])
+        self.assertEqual(list(old_validator.iter_errors(three_gas_r1)), [])
+        current_validator = Draft202012Validator(current_schema)
+        self.assertEqual(list(current_validator.iter_errors(four_gas_r2)), [])
 
     def test_pairing_is_deterministic_for_the_same_input_payload(self) -> None:
         raw = request_bytes()

@@ -14,10 +14,11 @@ from typing import Any, Optional
 
 
 TOOL_ID = "research.pair_noaa_co2_ch4_growth_by_year"
-TOOL_VERSION = "0.2.0"
+TOOL_VERSION = "0.3.0"
 LEGACY_INPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-input-r0"
-INPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-input-r1"
-OUTPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-output-r1"
+INPUT_SCHEMA_R1_VERSION = "toolbox-noaa-co2-ch4-growth-pair-input-r1"
+INPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-input-r2"
+OUTPUT_SCHEMA_VERSION = "toolbox-noaa-co2-ch4-growth-pair-output-r2"
 MAX_INPUT_BYTES = 256 * 1024
 MAX_RANGE_YEARS = 50
 DECIMAL_RE = re.compile(r"^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$")
@@ -108,6 +109,25 @@ UNIT_FIELDS = {
         "tool_id": "research.compare_noaa_n2o_source_surfaces",
         "input_schema_version": "toolbox-noaa-n2o-source-surface-comparison-output-r0",
     },
+    "sf6": {
+        "annual": "annual_increase_ppt",
+        "uncertainty": "uncertainty_ppt",
+        "row_fields": {
+            "page_annual_increase_ppt",
+            "raw_table_annual_increase_ppt",
+            "page_minus_raw_annual_increase_ppt",
+            "page_uncertainty_ppt",
+            "raw_table_uncertainty_ppt",
+            "page_minus_raw_uncertainty_ppt",
+        },
+        "min_year": 1998,
+        "tool_id": "research.compare_noaa_sf6_source_surfaces",
+        "input_schema_version": "toolbox-noaa-sf6-source-surface-comparison-output-r0",
+    },
+}
+SOURCE_URLS["sf6"] = {
+    "provider_page": "https://gml.noaa.gov/ccgg/trends_sf6/",
+    "fixed_raw_table": "https://gml.noaa.gov/webdata/ccgg/trends/sf6/sf6_gr_gl.txt",
 }
 OUTPUT_ROW_FIELDS = {
     "year",
@@ -130,6 +150,15 @@ CLAIM_CEILING = (
     "measurement, physical comparability, emissions, attribution, causation, source "
     "authenticity, measurement validity, or a scientific conclusion."
 )
+SF6_CLAIM_CEILING = (
+    "Year-key alignment of caller-supplied, already captured NOAA GML CO2, CH4, "
+    "optionally N2O, and SF6 source-surface comparison outputs, preserving each "
+    "gas's original unit, comparison status, retrieval metadata, and response "
+    "digests. It performs no network retrieval or cross-gas arithmetic and does "
+    "not establish simultaneous measurement, physical comparability, emissions, "
+    "attribution, causation, source authenticity, measurement validity, or a "
+    "scientific conclusion."
+)
 LEGACY_NON_CLAIMS = [
     "Pairing rows by the same integer year does not make CO2 ppm and CH4 ppb values directly comparable or commensurate.",
     "The tool performs no unit conversion, ratio, sum, weighting, trend ranking, interpolation, or causal analysis across gases.",
@@ -138,6 +167,12 @@ LEGACY_NON_CLAIMS = [
 ]
 NON_CLAIMS = [
     "Pairing rows by the same integer year does not make CO2 ppm, CH4 ppb, and N2O ppb values directly comparable or commensurate.",
+    "The tool performs no unit conversion, ratio, sum, weighting, trend ranking, interpolation, or causal analysis across gases.",
+    "Source timestamps and response digests are inherited from caller-supplied comparator outputs; they do not authenticate NOAA or make the captures simultaneous.",
+    "The tool does not retrieve current data, validate measurements, estimate emissions, attribute sources, or establish scientific truth.",
+]
+SF6_NON_CLAIMS = [
+    "Pairing rows by the same integer year does not make CO2 ppm, CH4/N2O ppb, and SF6 ppt values directly comparable or commensurate.",
     "The tool performs no unit conversion, ratio, sum, weighting, trend ranking, interpolation, or causal analysis across gases.",
     "Source timestamps and response digests are inherited from caller-supplied comparator outputs; they do not authenticate NOAA or make the captures simultaneous.",
     "The tool does not retrieve current data, validate measurements, estimate emissions, attribute sources, or establish scientific truth.",
@@ -414,18 +449,26 @@ def parse_request(raw: bytes) -> tuple[dict[str, Any], str]:
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise PairingInputError("request must be valid UTF-8 JSON with unique keys") from exc
     required_keys = {"schema_version", "co2_output", "ch4_output"}
-    allowed_keys = required_keys | {"n2o_output"}
+    allowed_keys = required_keys | {"n2o_output", "sf6_output"}
     if not isinstance(envelope, dict) or not required_keys <= set(envelope) <= allowed_keys:
-        raise PairingInputError(f"request must contain exactly {sorted(required_keys)} with optional n2o_output")
-    if envelope["schema_version"] not in {LEGACY_INPUT_SCHEMA_VERSION, INPUT_SCHEMA_VERSION}:
+        raise PairingInputError(f"request must contain {sorted(required_keys)} and only optional n2o_output/sf6_output")
+    if envelope["schema_version"] not in {
+        LEGACY_INPUT_SCHEMA_VERSION,
+        INPUT_SCHEMA_R1_VERSION,
+        INPUT_SCHEMA_VERSION,
+    }:
         raise PairingInputError("unsupported schema_version")
-    if envelope["schema_version"] == LEGACY_INPUT_SCHEMA_VERSION and "n2o_output" in envelope:
-        raise PairingInputError("legacy input schema does not accept n2o_output")
+    if envelope["schema_version"] == LEGACY_INPUT_SCHEMA_VERSION and {"n2o_output", "sf6_output"} & set(envelope):
+        raise PairingInputError("legacy input schema does not accept optional gas outputs")
+    if envelope["schema_version"] == INPUT_SCHEMA_R1_VERSION and "sf6_output" in envelope:
+        raise PairingInputError("schema r1 does not accept sf6_output")
     co2 = _validate_comparison_output(envelope["co2_output"], "co2")
     ch4 = _validate_comparison_output(envelope["ch4_output"], "ch4")
     parsed = {"co2": co2, "ch4": ch4}
     if "n2o_output" in envelope:
         parsed["n2o"] = _validate_comparison_output(envelope["n2o_output"], "n2o")
+    if "sf6_output" in envelope:
+        parsed["sf6"] = _validate_comparison_output(envelope["sf6_output"], "sf6")
     ranges = {gas: result["range"] for gas, result in parsed.items()}
     if any(year_range != co2["range"] for year_range in ranges.values()):
         raise PairingInputError("all supplied gas comparison outputs must request the same year range")
@@ -495,9 +538,19 @@ def pair_outputs(parsed: dict[str, Any], input_payload_sha256: str) -> dict[str,
     }
     if "n2o" in parsed:
         pairing["n2o_unit"] = "ppb"
+    if "sf6" in parsed:
+        pairing["sf6_unit"] = "ppt"
+    if "n2o" in parsed or "sf6" in parsed:
         metrics.update({
-            "n2o_rows_with_two_surface_values": sum(values_by_gas["n2o"]),
-            "years_with_two_surface_values_for_all_three_gases": sum(all_values_for_year),
+            f"{gas}_rows_with_two_surface_values": sum(values_by_gas[gas])
+            for gas in ("n2o", "sf6") if gas in parsed
+        })
+        gas_count = len(parsed)
+        suffix = {3: "three", 4: "four"}.get(gas_count)
+        if suffix is None:
+            raise PairingInputError("the paired gas set has an unsupported size")
+        metrics.update({
+            f"years_with_two_surface_values_for_all_{suffix}_gases": sum(all_values_for_year),
             "years_with_a_missing_surface_value_for_any_gas": sum(not value for value in all_values_for_year),
         })
     result = {
@@ -513,7 +566,10 @@ def pair_outputs(parsed: dict[str, Any], input_payload_sha256: str) -> dict[str,
         "cohort_capture_span_seconds": int((max(all_capture_times) - min(all_capture_times)).total_seconds()),
         "rows": rows,
     }
-    if "n2o" in parsed:
+    if "sf6" in parsed:
+        result["claim_ceiling"] = SF6_CLAIM_CEILING
+        result["non_claims"] = list(SF6_NON_CLAIMS)
+    elif "n2o" in parsed:
         result["claim_ceiling"] = CLAIM_CEILING
         result["non_claims"] = list(NON_CLAIMS)
     else:

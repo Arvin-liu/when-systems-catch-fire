@@ -19,6 +19,8 @@ PROFILE_PATHS = {
     "TWO_GAS": OPERATIONS / "toolbox-noaa-co2-ch4-growth-pair-route-profile-r1.json",
     "THREE_GAS": OPERATIONS / "toolbox-noaa-co2-ch4-n2o-growth-pair-route-profile-r1.json",
 }
+FOUR_GAS_EVIDENCE_PATH = OPERATIONS / "toolbox-noaa-co2-ch4-growth-pair-route-evidence-r2.json"
+FOUR_GAS_PROFILE_PATH = OPERATIONS / "toolbox-noaa-co2-ch4-n2o-sf6-growth-pair-route-profile-r2.json"
 
 
 class NoaaGrowthPairRoutingTests(unittest.TestCase):
@@ -26,7 +28,7 @@ class NoaaGrowthPairRoutingTests(unittest.TestCase):
         evidence = json.loads(EVIDENCE_PATH.read_text(encoding="utf-8"))
         profiles = {key: json.loads(path.read_text(encoding="utf-8")) for key, path in PROFILE_PATHS.items()}
         self.assertEqual(evidence["candidate_tool_id"], TOOL_ID)
-        self.assertEqual(evidence["candidate_tool_version"], "0.2.0")
+        self.assertEqual(evidence["candidate_tool_version"], "0.3.0")
         self.assertEqual(evidence["candidate_catalog_git_blob_sha1"], planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()))
         self.assertEqual(evidence["current_registry_git_blob_sha1"], planner.git_blob_sha1(planner.REGISTRY_PATH.read_bytes()))
         self.assertEqual(evidence["routing_contract_sha256"], hashlib.sha256(Path(planner.__file__).read_bytes()).hexdigest())
@@ -70,6 +72,47 @@ class NoaaGrowthPairRoutingTests(unittest.TestCase):
         self.assertEqual(evidence["summary"]["network_calls_made"], 0)
         self.assertEqual(evidence["summary"]["three_gas_explicit_allowlist"], "COMPLETE_ONE_CANDIDATE_PROPOSED")
         self.assertEqual(evidence["summary"]["single_n2o_explicit_allowlist"], "INCOMPLETE_NO_INPUT_TYPE_MATCH")
+
+    def test_four_gas_route_is_default_off_and_allowlist_only_proposes_candidate(self) -> None:
+        evidence = json.loads(FOUR_GAS_EVIDENCE_PATH.read_text(encoding="utf-8"))
+        profile = json.loads(FOUR_GAS_PROFILE_PATH.read_text(encoding="utf-8"))
+        self.assertEqual(evidence["candidate_tool_id"], TOOL_ID)
+        self.assertEqual(evidence["candidate_tool_version"], "0.3.0")
+        self.assertEqual(evidence["candidate_catalog_git_blob_sha1"], planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()))
+        self.assertEqual(evidence["current_registry_git_blob_sha1"], planner.git_blob_sha1(planner.REGISTRY_PATH.read_bytes()))
+        self.assertEqual(evidence["routing_contract_sha256"], hashlib.sha256(Path(planner.__file__).read_bytes()).hexdigest())
+        self.assertEqual(evidence["route_profiles"], [{
+            "id": "FOUR_GAS",
+            "path": "ignition/data/operations/toolbox-noaa-co2-ch4-n2o-sf6-growth-pair-route-profile-r2.json",
+            "sha256": hashlib.sha256(FOUR_GAS_PROFILE_PATH.read_bytes()).hexdigest(),
+        }])
+        self.assertEqual(evidence["route_trials_replayed"], 2)
+        self.assertTrue(evidence["all_expected_decisions_reproduced"])
+
+        for trial in evidence["route_trials"]:
+            with self.subTest(scenario=trial["scenario"]):
+                self.assertEqual(trial["task_profile"], profile)
+                actual = planner.plan_tool_route(
+                    profile,
+                    include_experimental_tool_ids=trial["include_experimental_tool_ids"],
+                )
+                canonical = json.dumps(actual, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+                self.assertEqual(hashlib.sha256(canonical).hexdigest(), trial["planner_output_sha256"])
+                self.assertEqual(actual["decision"], trial["expected_decision"])
+                self.assertEqual([row["tool_id"] for row in actual["selected_tools"]], trial["expected_selected_tool_ids"])
+                self.assertFalse(actual["execution_authorized"])
+                self.assertFalse(trial["candidate_invoked"])
+                self.assertEqual(trial["network_calls_made"], 0)
+                self.assertEqual(
+                    [row for row in actual["rejected_candidates"] if row["tool_id"] == TOOL_ID],
+                    trial["actual_candidate_rejections"],
+                )
+
+        self.assertEqual(evidence["summary"]["four_gas_default_off"], "INCOMPLETE_EXPERIMENTAL_CANDIDATE_NOT_INCLUDED")
+        self.assertEqual(evidence["summary"]["four_gas_explicit_allowlist"], "COMPLETE_ONE_CANDIDATE_PROPOSED")
+        self.assertFalse(evidence["summary"]["execution_authorized"])
+        self.assertFalse(evidence["summary"]["candidate_invoked"])
+        self.assertEqual(evidence["summary"]["network_calls_made"], 0)
 
 
 if __name__ == "__main__":
