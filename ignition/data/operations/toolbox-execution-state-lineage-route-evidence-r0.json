@@ -1,5 +1,5 @@
 {
-  "candidate_catalog_git_blob_sha1": "8e8d171168e3d267769eb6ecad0a827f37b000e1",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true
   },

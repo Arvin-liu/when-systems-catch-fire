@@ -15702,6 +15702,221 @@
           "Remove this candidate entry and wrapper from the isolated toolbox branch, rebuild the identity-card and human-directory projections, and retain this comparison evidence and source refs."
         ]
       }
+    },
+    {
+      "tool_id": "knowledge.preflight_executed_experience_reuse",
+      "display_name": {
+        "zh": "已执行经验复用预检器",
+        "en": "Executed Experience Reuse Preflight"
+      },
+      "description": "Check caller-selected prior execution receipts against exact task family, environment, source scope, tool/source identity, outcome label, local artifact bytes, and expiry before showing any entry as an optional reference.",
+      "version": "0.1.0",
+      "license": "BUSL-1.1",
+      "maintainer": "Ignition repository maintainers; this field grants no Owner, scientific, or execution authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TOOL_TEST",
+      "source_path": "ignition/tools/toolbox_executed_experience_preflight.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_executed_experience_preflight.py --stdin",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_executed_experience_preflight.py",
+          "role": "READ_ONLY_SCOPE_AND_OUTCOME_PREFLIGHT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-executed-experience-preflight-r0.schema.json",
+          "role": "STRICT_REQUEST_CONTRACT"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-executed-experience-result-r0.schema.json",
+          "role": "MACHINE_READABLE_RESULT_CONTRACT"
+        },
+        {
+          "path": "ignition/docs/operations/executed-experience-reuse-preflight.md",
+          "role": "USER_SCOPE_AND_LIMITS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_executed_experience_preflight.py",
+          "role": "FUNCTIONAL_AND_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_executed_experience_routing.py",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ROUTE_EXPERIMENT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-executed-experience-real-task-input-r0.json",
+          "role": "REAL_PR264_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-executed-experience-real-task-output-r0.json",
+          "role": "REAL_PR264_TASK_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-executed-experience-provenance-r0.json",
+          "role": "PINNED_ROBOSKILL_BLUEPRINT_AND_SCOPE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-executed-experience-c1-comparison-r0.json",
+          "role": "C1_OVERLAP_COMPARISON_AND_UNKNOWN_DISPOSITION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-executed-experience-route-profile-r0.json",
+          "role": "EXACT_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-executed-experience-route-evidence-r0.json",
+          "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/tools/toolbox_execution_effect_receipt.py",
+          "role": "COMPLEMENTARY_EFFECT_RECEIPT_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/tools/toolbox_reusable_context_preflight.py",
+          "role": "COMPLEMENTARY_DERIVED_CONTEXT_IMPLEMENTATION"
+        },
+        {
+          "path": "ignition/tools/toolbox_failure_anchored_recovery.py",
+          "role": "COMPLEMENTARY_FAILURE_RECOVERY_IMPLEMENTATION"
+        }
+      ],
+      "dependencies": [
+        "ignition/schemas/operations/toolbox-executed-experience-preflight-r0.schema.json",
+        "ignition/schemas/operations/toolbox-executed-experience-result-r0.schema.json"
+      ],
+      "good_for": [
+        "Checking caller-selected run receipts for exact task-family, environment, and source-scope compatibility before presenting them as optional references.",
+        "Keeping a preserved negative effect as a counterexample and requiring review when a prior experience would cross task, environment, or source scope.",
+        "Withholding expired, byte-mismatched, malformed, or identity-mismatched receipt artifacts before any reuse suggestion."
+      ],
+      "not_for": [
+        "Proving that an earlier tool run succeeded, caused an effect, or produced a true result.",
+        "Discovering procedures, ranking tool quality, generating or persisting skills, or authorizing reuse or execution.",
+        "Authenticating actors, environments, source authority, permissions, clocks, or caller-declared scope."
+      ],
+      "only_if": [
+        "The caller supplies an exact task family, environment reference, source-scope identifier, and expiry for each candidate experience.",
+        "Every non-expired receipt artifact is a bounded local JSON file under ignition/ with a caller-supplied SHA-256 digest.",
+        "The consumer treats positive output only as an optional reference and separately evaluates its evidence and permissions."
+      ],
+      "counterindicated_when": [
+        "The task requires current raw scientific evidence, source truth, production authorization, or a direct tool execution decision.",
+        "A receipt is expired, missing, symlinked, over budget, byte-mismatched, identity-mismatched, or has an unknown or unpreserved outcome.",
+        "Task family, environment, or source scope differs; the result is REVIEW_REQUIRED and must not be silently transferred."
+      ],
+      "accepted_input_types": [
+        "One bounded JSON request conforming to toolbox-executed-experience-preflight-r0 with a task scope and 1–32 caller-selected experience receipts."
+      ],
+      "output_types": [
+        "One deterministic JSON result conforming to toolbox-executed-experience-result-r0; per-entry optional reference, counterexample, review-required, or withhold decisions."
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_BOUNDED_LOCAL_RECEIPT_CHECK",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "Reads only a non-expired receipt artifact after exact caller-declared task scope matches.",
+        "Writes no files, makes no network calls, invokes no other tools, and emits a JSON result on stdout."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.9 standard library",
+        "jsonschema >=4"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "At most 32 candidate entries are examined and each eligible entry reads at most one 1 MiB local JSON artifact. Runtime and comparative operational cost are not calibrated."
+      },
+      "alternatives": [
+        {
+          "tool_id": "maintenance.preflight_execution_effect_receipt",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Validates one caller-declared run/effect receipt and can reread selected repository files; this candidate checks whether that receipt can be shown as an optional reference for an exactly matching later task."
+        },
+        {
+          "tool_id": "knowledge.preflight_reusable_context",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Validates derived-context source bytes, access-scope declarations, and expiry; this candidate classifies execution outcomes and task-scope transfer for prior run receipts."
+        },
+        {
+          "tool_id": "maintenance.preflight_failure_anchored_recovery",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "Checks a caller-authored recovery proposal against a failed run; this candidate preserves prior run experience as optional reference, counterexample, or review-only context."
+        }
+      ],
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Receipt-bound, exact-scope reuse preflight for prior execution experience, with explicit preservation of negative outcomes and no silent cross-environment transfer."
+      ],
+      "comparison_evidence": {
+        "status": "COMPARISON_UNKNOWN",
+        "scope": "One real PR264 receipt artifact and focused negative controls show scope-sensitive filtering. The neighboring receipt, derived-context, and recovery tools consume different objects and answer adjacent questions; no matched task-quality, reliability, cost, or maintenance trial exists.",
+        "compared_tool_ids": [
+          "maintenance.preflight_execution_effect_receipt",
+          "knowledge.preflight_reusable_context",
+          "maintenance.preflight_failure_anchored_recovery"
+        ],
+        "compared_implementation_refs": [
+          "ignition/tools/toolbox_execution_effect_receipt.py",
+          "ignition/tools/toolbox_reusable_context_preflight.py",
+          "ignition/tools/toolbox_failure_anchored_recovery.py"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-executed-experience-c1-comparison-r0.json",
+          "ignition/data/operations/toolbox-executed-experience-real-task-input-r0.json",
+          "ignition/data/operations/toolbox-executed-experience-real-task-output-r0.json"
+        ],
+        "findings": [
+          "The new tool checks later-task applicability and preserves negative receipts; neighboring tools answer distinct receipt-validation, derived-context freshness, and recovery-proposal questions.",
+          "All branches preserve uncertainty; no tool is replaced or removed and no route default changes."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "COMPARISON_UNKNOWN",
+        "basis": "No replacement is established. The candidate covers receipt-to-later-task applicability and preserves counterexamples; adjacent tools retain distinct receipt-validation, derived-context freshness, and failure-recovery uses."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No neighboring input schema, registry operation, persistent store, route default, permission, or lifecycle state is changed.",
+          "Callers opt in to this tool only for exact-scope receipt review; all other work continues to use existing tools or raw evidence."
+        ],
+        "rollback_steps": [
+          "Remove this candidate ID from the isolated candidate catalog and regenerate identity projections.",
+          "Retain the source, test, receipt, route and comparison artifacts as historical evidence; no existing candidate depends on this tool."
+        ]
+      },
+      "fallback": "Withhold the experience or mark it review-only; reopen the original evidence or rerun an independently authorized task. Do not infer success from an API call or from EFFECT_PRESENT.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_executed_experience_preflight.py",
+          "ignition/tests/test_toolbox_executed_experience_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Expired experiences are withheld before evidence reads.",
+          "Byte digest, receipt identity, tool/version/source, and effect-label mismatches are withheld.",
+          "Preserved negative outcomes remain counterexamples; unpreserved failures require review.",
+          "Task-family, environment, or source-scope mismatch requires review.",
+          "Traversal and malformed JSON fail closed.",
+          "All decisions set can_execute=false and can_authorize=false."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "The task explicitly requests receipt-bound reuse review and has exact family, environment and source-scope inputs.",
+        "The caller explicitly allowlists this experimental tool ID.",
+        "The required output is an optional-reference/withhold decision; source truth, execution permission, or task completion is decided elsewhere."
+      ],
+      "claim_ceiling": "Checks local receipt-artifact bytes, structural links, caller-declared task scope, outcome label and expiry. Does not authenticate the prior run, actor, environment, effect, source authority, permission, or outcome truth; does not execute or authorize any procedure, persist a skill, or establish transferable performance."
     }
   ]
 }

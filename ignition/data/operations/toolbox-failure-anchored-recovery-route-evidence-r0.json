@@ -2,7 +2,7 @@
   "schema_version": "toolbox-failure-anchored-recovery-route-evidence-r0",
   "tool_id": "maintenance.preflight_failure_anchored_recovery",
   "observed_at_utc": "2026-10-27T01:22:31Z",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_git_blob_sha1": "c1bbdec95c2cf3e0af7ca86816dc3820e81a5fc2",
   "route_profile": {
@@ -17,7 +17,7 @@
     "allowed_execution_modes": [
       "READ_ONLY_RUN"
     ],
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
@@ -26,7 +26,7 @@
       "include_experimental_tool_ids": [],
       "decision": "INCOMPLETE",
       "selected_tool_ids": [],
-      "result_sha256": "4bdd8b69a895e35df5e67b09224db50b584df26bfbcd9fdbea2161b939a05f2f",
+      "result_sha256": "daacc7ee9a9af7cbf5fcad2eccf4c0ff9398f9816ec65b722d94d3dd69f7afc6",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -47,7 +47,7 @@
       "selected_tool_ids": [
         "maintenance.preflight_failure_anchored_recovery"
       ],
-      "result_sha256": "d72afc040784412d593c70628f2e14c64ef15b170233e20928466c18e63b3bfb",
+      "result_sha256": "0f1154f2c62e9d716f7456c32ae267ff41f990f1e902fc06f39e8b6197ee2056",
       "execution_authorized": false,
       "candidate_invoked": false,
       "provider_calls_made": 0,
@@ -74,7 +74,7 @@
   "claim_ceiling": "Offline routing proposals only. The candidate was not invoked; no recovery ran, no provider was contacted, and no execution or retry permission was granted.",
   "catalog_replay": {
     "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "replayed_at_utc": "2026-10-27T01:22:31Z",
     "route_trials_replayed": 2,
     "all_expected_decisions_reproduced": true,

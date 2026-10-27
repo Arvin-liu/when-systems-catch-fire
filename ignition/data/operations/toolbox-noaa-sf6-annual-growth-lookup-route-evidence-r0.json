@@ -2,7 +2,7 @@
   "schema_version": "toolbox-noaa-sf6-annual-growth-lookup-route-evidence-r0",
   "evidence_type": "REPLAYED_DEFAULT_OFF_EXACT_HOST_AND_TASK_SCOPE_ROUTE_PROPOSALS",
   "candidate_tool_id": "research.lookup_noaa_global_sf6_annual_growth",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-profile-r0.json",
@@ -40,7 +40,7 @@
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         }
       ],
-      "planner_output_sha256": "1b12864d6f6d810005da05716081cbd8cd5973ea971f7879e7cc2e5f57db9d5a"
+      "planner_output_sha256": "2afa49b0784c5afdd57595f0b115bebc4f5d6a44145ccf01695372ed9e2e9575"
     },
     {
       "scenario": "EXPLICIT_RAW_ONLY_EXACT_HOST",
@@ -72,7 +72,7 @@
       ],
       "expected_execution_authorized": false,
       "expected_rejections": [],
-      "planner_output_sha256": "7e949e87010a1bc1a5fd041ea08d596e0ebabfdf58f2e2631c0241569ffb0c79"
+      "planner_output_sha256": "142ff7a9169c21b1d5954982a5160ef5d4f3ab19655d1863ed138f27c3b6871b"
     },
     {
       "scenario": "EXPLICIT_RAW_ONLY_HOST_MISSING",
@@ -105,7 +105,7 @@
           "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
         }
       ],
-      "planner_output_sha256": "3eb27b1ac93167fa2a2d5e66f515e0dba26b7915c2cd240d355a64743a86f7b0"
+      "planner_output_sha256": "9b118dd31a41ca6374c93633ca9136e057788030ef9ad53727a36ef97c3dda54"
     },
     {
       "scenario": "EXPLICIT_RAW_ONLY_OVERBROAD_HOST_LIST",
@@ -138,7 +138,7 @@
       ],
       "expected_execution_authorized": false,
       "expected_rejections": [],
-      "planner_output_sha256": "586aa2f56328664d469d24c7520ab1418d796ca25893146e0ccf2772da826964"
+      "planner_output_sha256": "47dfb556b0addbd66c5c1c3fd34e355647e8bea2de5c1d275eedc5f77624d36c"
     },
     {
       "scenario": "OTHER_GAS_ONLY",
@@ -176,7 +176,7 @@
           "reason": "NO_INPUT_TYPE_MATCH"
         }
       ],
-      "planner_output_sha256": "13a3d9f94b17575f9a88326462c9fed12a9164a9faebec18cb1452e75139f1ed"
+      "planner_output_sha256": "a546343f660220d2ba2ed3e0cdec512ed5a2e9f81adca8e98c80258781945f0b"
     }
   ],
   "route_trials_replayed": 5,
@@ -200,7 +200,7 @@
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "replayed_at_utc": "2026-10-27T00:44:31Z",
     "route_trials_replayed": 5,

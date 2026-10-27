@@ -22,7 +22,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "e08ea86d8c5fbc13172e7aa703da0c727c6807bfe3658e70330782427a246b7b"
+      "planner_output_projection_sha256": "da56c6072d9969f5bb07e855571c1f258623458daf5427319724e7801be84626"
     },
     {
       "trial_id": "explicit_allowlist",
@@ -41,7 +41,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "e15da6c9900e76d22a9146bd0d8cf8b520bd4c000a9fb7d7d0d578367349d61b"
+      "planner_output_projection_sha256": "0fc2351dda92c7453582ba6250b970965d2e9c43dc5360a377a66c9543b166e2"
     },
     {
       "trial_id": "with_unrelated_candidate",
@@ -61,7 +61,7 @@
       ],
       "execution_authorized": false,
       "candidate_tool_invocation_count": 0,
-      "planner_output_projection_sha256": "da16395c4c809778e4ff87e8fbdf77eccc0c698a7f0d336199d99bdb1f235526"
+      "planner_output_projection_sha256": "ddb219d113c7724cab92a2b4f461df872ce9c565092788231879148da2d56941"
     }
   ],
   "provider_call_count": 0,
@@ -109,6 +109,6 @@
       "replayed_at_utc": "2026-10-27T01:23:02Z"
     }
   ],
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
 }

@@ -6,9 +6,9 @@
   "candidate_head": "ac2a5df1a925e3d2b52d33f79e1e415fff908cb6",
   "current_ref": "refs/heads/codex/toolbox-growth-20261025@ac2a5df1a925e3d2b52d33f79e1e415fff908cb6",
   "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_PLANNER; candidate catalog is separately bound by its git blob SHA-1.",
-  "candidate_count": 73,
+  "candidate_count": 76,
   "feature_commit_candidate_count": 73,
-  "candidate_catalog_git_blob_sha1": "5537e5f08ddf0d9bdda0a1f492a34730fa1dcd84",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_sha256": "75c3ec19eaa56a99d5ad139ab87b9677508b3c65767a1d0eeccac5c691348389",
   "route_test_source_sha256": "5f2b95ee3de672f23a9cf5c8e5ae14120d87c45f0ebb9f601ab1f7792d3af7b6",
@@ -42,7 +42,7 @@
       ],
       "allowed_network_hosts": [],
       "execution_authorized": false,
-      "plan_sha256": "09379f1f5195e2a094f55b28cb2a46c9c37afd7d19bd83d856cbbc88ca225654"
+      "plan_sha256": "2ba2e0800601ad3e3d9e87b24a425d0aeb1fa30a42f3b647f6e7ef0f5448362b"
     },
     {
       "scenario": "tool_only",
@@ -57,7 +57,7 @@
       ],
       "allowed_network_hosts": [],
       "execution_authorized": false,
-      "plan_sha256": "2d8b920cdb6596a5e68b686110f05635ef78c95f377a757a97c926f788bacbe7"
+      "plan_sha256": "9df56c7cfb352667b2a0e0c4deb9e921f2dfda8712281994687011697c80c241"
     },
     {
       "scenario": "broad_allowlist",
@@ -77,7 +77,10 @@
         "knowledge.assemble_context_packet",
         "knowledge.cluster_source_brief",
         "knowledge.navigate_raw_evidence",
+        "knowledge.preflight_executed_experience_reuse",
         "knowledge.preflight_reusable_context",
+        "knowledge.select_jsonl_records",
+        "knowledge.validate_q38_i1_evidence_bundle",
         "maintenance.attribute_actions_validation_evidence",
         "maintenance.audit_execution_state_lineage",
         "maintenance.compare_actions_repeated_step_sequences",
@@ -144,7 +147,7 @@
       ],
       "allowed_network_hosts": [],
       "execution_authorized": false,
-      "plan_sha256": "1a9c7702b0125ee9b82377a44bd8689b607a106b34ccc2e50ea2ebbfbbd09847"
+      "plan_sha256": "ebe4a8002211c7c8278f6e34f221d0bdf917830a63b4dd8848bc7b687876448c"
     },
     {
       "scenario": "other_candidates_only",
@@ -164,7 +167,10 @@
         "knowledge.assemble_context_packet",
         "knowledge.cluster_source_brief",
         "knowledge.navigate_raw_evidence",
+        "knowledge.preflight_executed_experience_reuse",
         "knowledge.preflight_reusable_context",
+        "knowledge.select_jsonl_records",
+        "knowledge.validate_q38_i1_evidence_bundle",
         "maintenance.attribute_actions_validation_evidence",
         "maintenance.audit_execution_state_lineage",
         "maintenance.compare_actions_repeated_step_sequences",
@@ -230,7 +236,7 @@
       ],
       "allowed_network_hosts": [],
       "execution_authorized": false,
-      "plan_sha256": "a6bbe358b3757e5995ec6a13336067b1a13d2b4aa605c1e4913858d6857a8db1"
+      "plan_sha256": "1001127447774a0d1698478516829e3a91c8a644e35cf32a7e2f2a2f368e6ea1"
     },
     {
       "scenario": "unrelated_input",
@@ -245,7 +251,7 @@
       ],
       "allowed_network_hosts": [],
       "execution_authorized": false,
-      "plan_sha256": "2d8b920cdb6596a5e68b686110f05635ef78c95f377a757a97c926f788bacbe7"
+      "plan_sha256": "9df56c7cfb352667b2a0e0c4deb9e921f2dfda8712281994687011697c80c241"
     }
   ],
   "safety_boundary": {

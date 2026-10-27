@@ -3,7 +3,7 @@
   "evidence_type": "DEFAULT_OFF_EXPLICIT_ALLOWLIST_ROUTE_EXPERIMENT",
   "observed_at_utc": "2026-10-27T01:22:31Z",
   "candidate_tool_id": "research.compare_evidence_update_snapshots",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-evidence-update-snapshot-route-profile-r0.json",
@@ -65,13 +65,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 85,
-        "omitted_rejected_candidate_count": 84,
+        "rejected_candidate_count": 96,
+        "omitted_rejected_candidate_count": 95,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "f87c6a12d1c46217fa23b01fc4630536e7d27fd6a23bb33b6cafbf29fa1c349b",
+      "planner_output_sha256": "0d2b6dc365128485237d3a9ba78bbb5eefc24a264f16e539e2c02e87c6574f84",
       "decision": "INCOMPLETE"
     },
     {
@@ -134,13 +134,13 @@
             "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
           }
         ],
-        "rejected_candidate_count": 84,
-        "omitted_rejected_candidate_count": 83,
+        "rejected_candidate_count": 95,
+        "omitted_rejected_candidate_count": 94,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "4ae7af4237a164bc2653510dc28535f1d3a2f9356ed5d60c75e6cb185f2a2018",
+      "planner_output_sha256": "a4260da35ce49a5bf144f3f6bf6c069deca7cc494fd05d54e9ce649b03da8467",
       "decision": "COMPLETE"
     },
     {
@@ -204,13 +204,13 @@
             "reason": "NO_INPUT_TYPE_MATCH"
           }
         ],
-        "rejected_candidate_count": 84,
-        "omitted_rejected_candidate_count": 83,
+        "rejected_candidate_count": 95,
+        "omitted_rejected_candidate_count": 94,
         "execution_authorized": false
       },
       "candidate_invoked": false,
       "provider_calls_made": 0,
-      "planner_output_sha256": "7a646a95ac5bc993d519a63ce109517ad6c72a19523c24c2e63a661234079320",
+      "planner_output_sha256": "2f01091898cb092dc0682434c578403f960c4c70c84ce3e40caebcb76cdfcff8",
       "decision": "COMPLETE"
     }
   ],
@@ -231,7 +231,7 @@
   "catalog_replay": {
     "replayed_at_utc": "2026-10-27T01:22:31Z",
     "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "route_trials_replayed": 3,
     "all_expected_decisions_reproduced": true,

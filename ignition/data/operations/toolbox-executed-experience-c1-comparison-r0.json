@@ -1,0 +1,68 @@
+{
+  "schema_version": "toolbox-executed-experience-c1-comparison-r0",
+  "tool_id": "knowledge.preflight_executed_experience_reuse",
+  "tool_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "replacement_candidates": [],
+  "unique_remaining_use_cases": [
+    "Check whether a caller-selected execution receipt is byte-bound, unexpired, and exactly scoped to a later task before exposing it as an optional reference; preserve a negative execution as a counterexample and require review for transfer."
+  ],
+  "blueprint_binding": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 87,
+    "head": "d4edff701a41aec1bd224def9c8ee54af70e63d5",
+    "work_item": "AB-19-ROBOSKILL-R0 / RS-C"
+  },
+  "comparators": [
+    {
+      "tool_id": "maintenance.preflight_execution_effect_receipt",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "exact_task_finding": "Its preserved PR264 receipt output reports EFFECT_PRESENT, findings=[], but outcome_truth=NOT_ESTABLISHED and source_authentication=NOT_PERFORMED. It checks an individual receipt; it does not compare the run scope with a later task."
+    },
+    {
+      "tool_id": "knowledge.preflight_reusable_context",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "exact_task_finding": "Its object is a derived context card with source/version/access/expiry bindings; it does not consume an execution receipt or preserve failed execution as a counterexample."
+    },
+    {
+      "tool_id": "maintenance.preflight_failure_anchored_recovery",
+      "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+      "exact_task_finding": "It evaluates a proposed recovery after a failure, not whether an earlier experience can be referenced in a later task."
+    }
+  ],
+  "same_task_evidence": {
+    "source_task": "pr264:four-run-target-coverage-local-replay",
+    "source_artifact": "ignition/data/operations/toolbox-execution-effect-receipt-real-task-r0.json",
+    "source_artifact_sha256": "16c7120654937385e1c624976488f4b8d20e65d72f98391d2b5bf601550d9940",
+    "candidate_input": "ignition/data/operations/toolbox-executed-experience-real-task-input-r0.json",
+    "candidate_input_sha256": "c44743c376bd414659656e31660a1f3ac8df901a9fe7b6729eccde9ae95cb193",
+    "candidate_output": "ignition/data/operations/toolbox-executed-experience-real-task-output-r0.json",
+    "candidate_output_sha256": "5951b834a7878a258d967fef3c85846002e9098e0b66d53e2bc2a0260dc4334a",
+    "observed_decision": "OPTIONAL_REFERENCE_ONLY",
+    "scope_matches": {
+      "task_family": true,
+      "environment": true,
+      "source_scope": true
+    },
+    "execution_authorized": false,
+    "reuse_authorized": false,
+    "candidate_source": "ignition/tools/toolbox_executed_experience_preflight.py",
+    "candidate_source_sha256": "e707bfc703b0fb76a7753634873dca0bc64dae842b6295323fbd670a7171eb86"
+  },
+  "findings": [
+    "The candidate binds the exact local receipt artifact bytes, checks the receipt structure and caller-declared task/environment/source-scope identity, and withholds expired records before reading their evidence bytes.",
+    "A declared EFFECT_PRESENT can produce only OPTIONAL_REFERENCE_ONLY; a preserved EFFECT_ABSENT is COUNTEREXAMPLE_ONLY; mismatched task scope requires review. No outcome truth, actual tool quality, causal effect, or transferable skill is inferred.",
+    "The existing effect-receipt and reusable-context tools cover distinct adjacent checks and remain available. This evidence does not justify replacing or retiring either.",
+    "Comparison remains COMPARISON_UNKNOWN: no matched task-completion, cost, reliability, or maintenance trial estimates portfolio-wide benefit."
+  ],
+  "negative_controls": [
+    "expired receipt withheld before file read",
+    "artifact digest mismatch withheld",
+    "receipt identity mismatch withheld",
+    "negative outcome without preserved failure requires review",
+    "task/environment/source-scope mismatch requires review",
+    "path traversal rejected",
+    "execution_authorized=false and reuse_authorized=false in all results"
+  ],
+  "claim_ceiling": "One exact local PR264 receipt replay and focused negative controls show byte-bound, scope-sensitive optional-reference filtering. This is not evidence of source/run authenticity, true task success, broad skill-transfer performance, or portfolio-wide net benefit."
+}

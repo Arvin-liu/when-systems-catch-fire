@@ -2,7 +2,7 @@
   "schema_version": "toolbox-governed-improvement-transition-route-evidence-r0",
   "candidate_tool_id": "maintenance.preflight_governed_improvement_transition",
   "observed_at_utc": "2026-10-27T01:22:51Z",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "route_profile_git_blob_sha1": "46569aabe09f825e4a41ae4bd9167442a4d59982",
   "route_trials_replayed": 2,
@@ -17,7 +17,7 @@
         "Bounded REVIEW_REQUIRED transition-delta JSON with evaluation-anchor findings, caller-declared quality/cost/failure/authority deltas, rollback status, and explicit unverified/unauthorized claims."
       ],
       "target_candidate_rejection": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED",
-      "result_sha256": "4b04dd5998003d819051adc728603b1333301ef58b89984255a0439d858beb59",
+      "result_sha256": "404ae37f6cfa8ec6454bead66114bbb851472c5fb3fb147584f7412428f5623d",
       "candidate_invoked": false,
       "provider_calls_made": 0,
       "execution_authorized": false
@@ -33,7 +33,7 @@
       ],
       "unmet_outputs": [],
       "target_candidate_rejection": null,
-      "result_sha256": "7959c434a8dd038bbbdc9ef5607f2941f1d292f8bc4234dd6f251f23f033cb6c",
+      "result_sha256": "9ed99092cae2d5b4f344fbd6eaa74e5f744db616d052d484642393f998db29fd",
       "candidate_invoked": false,
       "provider_calls_made": 0,
       "execution_authorized": false
@@ -45,7 +45,7 @@
   "claim_ceiling": "Offline route planning only; no candidate invocation, provider call, permission grant, Owner approval, scientific validity, or Current promotion is established.",
   "catalog_replay": {
     "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "replayed_at_utc": "2026-10-27T01:22:51Z",
     "route_trials_replayed": 2,

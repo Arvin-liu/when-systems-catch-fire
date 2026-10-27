@@ -4,7 +4,7 @@
   "observed_on": "2026-10-27",
   "candidate_tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
   "candidate_tool_version": "0.3.0",
-  "candidate_catalog_git_blob_sha1": "0a3f25a5e256495b4e043b39b8dcef2ea475f31a",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profiles": [
@@ -44,7 +44,7 @@
           "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
         }
       ],
-      "planner_output_sha256": "6a691137eaf0c886cf658d9d3d32f3f578e7d53b45e4d6a093c68fd51ec1bbb1",
+      "planner_output_sha256": "a7da6744b0ff7afc61700553630a606d16f3db48dffbc40d4f6281b88770b090",
       "actual_decision": "INCOMPLETE",
       "actual_selected_tool_ids": [],
       "actual_execution_authorized": false,
@@ -87,7 +87,7 @@
       ],
       "expected_execution_authorized": false,
       "expected_rejections": [],
-      "planner_output_sha256": "5ffbb60924e230064a460cd2a907510a6006f7785afdbd4f59e306aedda0cc9b",
+      "planner_output_sha256": "fe89ab2bf84ae20e7fc1603bf6793376d61280c00708adeedcb7a61b80a150bc",
       "actual_decision": "COMPLETE",
       "actual_selected_tool_ids": [
         "research.pair_noaa_co2_ch4_growth_by_year"

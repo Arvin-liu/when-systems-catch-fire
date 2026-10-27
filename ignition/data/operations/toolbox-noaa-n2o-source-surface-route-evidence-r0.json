@@ -3,7 +3,7 @@
   "evidence_type": "DEFAULT_OFF_EXPLICIT_EXACT_HOST_MINIMUM_SUFFICIENT_ROUTING_EXPERIMENT",
   "observed_at_utc": "2026-10-27T00:44:31Z",
   "candidate_tool_id": "research.compare_noaa_n2o_source_surfaces",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-route-profile-r0.json",
@@ -42,7 +42,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "82e865e827c228fdc6b940c3c3755707947fb4abf64fa1a0d3cebd7351658d14"
+      "planner_output_sha256": "9e7abc2d1dc7e1cb33876d0e26d6b606ffaab6879500d468358405a0bfc09859"
     },
     {
       "scenario": "EXPLICIT_EXACT_HOST",
@@ -74,7 +74,7 @@
       "expected_rejections": [],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "9ce4c4a16ac9f1965d701c7bdb0e381199333f4203eeb73bfd0aa353eef393b5"
+      "planner_output_sha256": "424bcd59c520e31ac699d9b1513c5b792039ef82d7677a14e5540bcf9477500f"
     },
     {
       "scenario": "EXPLICIT_HOST_MISSING",
@@ -107,7 +107,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "b8c4c82272329f36b0ae18a7bcc71ed2276488be5ccd0b18e7d3bfb12bb78b69"
+      "planner_output_sha256": "36bf55ef296e0ddc620d7218dad67f071b02871c312544945480f1f11fd7f021"
     },
     {
       "scenario": "OVERBROAD_ALLOWLIST",
@@ -142,7 +142,7 @@
       "expected_rejections": [],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "554f3aad0020cf4db807f1e10d0c31b2f68b922f5157f2e1f33aad807286a533"
+      "planner_output_sha256": "d0284bc8b967211ad85961971a656b59b49ee74b9eacbe83bee66d7be2bdf99a"
     }
   ],
   "summary": {
@@ -163,7 +163,7 @@
     }
   ],
   "catalog_replay": {
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "replayed_at_utc": "2026-10-27T00:44:31Z",
     "route_trials_replayed": 4,

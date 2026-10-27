@@ -4,7 +4,7 @@
   "observed_at_utc": "2026-10-27T00:43:30Z",
   "candidate_tool_id": "research.compare_noaa_sf6_source_surfaces",
   "compared_existing_tool_id": "research.lookup_noaa_global_sf6_annual_growth",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
   "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
   "route_profile_path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-route-profile-r0.json",
@@ -47,7 +47,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "20f21fb8a9f463b5f4e3c1487d41a1b4b42c3857ac08f3a79b2d46c8d99fe8ad"
+      "planner_output_sha256": "454fc74ef92b3f33decbc4e735cc8c39ca91f73df659736a958eda2e61ebd274"
     },
     {
       "scenario": "EXPLICIT_COMPARATOR_EXACT_HOST",
@@ -84,7 +84,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "ab04cb78395864115c96e6ea2b79c030825bb9781e864439631222e49c63884c"
+      "planner_output_sha256": "b4ecbb746730516197c64b4c5540bec1b78498636b1e1076e8314f5d6ca78c46"
     },
     {
       "scenario": "COMPARATOR_HOST_MISSING",
@@ -121,7 +121,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "d61a9823996f715dd6591d9ec0ef7b6ed2d7b209d5eb958f20bf01ec56ffab68"
+      "planner_output_sha256": "fb804b8ba58285c9297e1d2c034198bff2b753621fc57705ac3703f964f5139d"
     },
     {
       "scenario": "COMPARATOR_OVERBROAD_HOSTS",
@@ -159,7 +159,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "c9081f993322b034d5cc7321b2123ab65de0eb959c33f6915ec6766d5c3bbae2"
+      "planner_output_sha256": "fef6ae92dcaa963b8a069085527b11c0a08f1f1340436e03aee955f9c96c8ba1"
     },
     {
       "scenario": "COMPARATOR_WITH_RAW_LOOKUP",
@@ -197,7 +197,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "3b2771460abedc1b4c412b73b30a46adb736ea3cc1b1438c592ec98dc6e5e90f"
+      "planner_output_sha256": "0e4d9993064e1e105a59f11588403e408d275faee9008add5b4047a09dbcc2fa"
     },
     {
       "scenario": "RAW_ONLY_LOOKUP",
@@ -234,7 +234,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "7e949e87010a1bc1a5fd041ea08d596e0ebabfdf58f2e2631c0241569ffb0c79"
+      "planner_output_sha256": "142ff7a9169c21b1d5954982a5160ef5d4f3ab19655d1863ed138f27c3b6871b"
     },
     {
       "scenario": "RAW_ONLY_WITH_COMPARATOR",
@@ -272,7 +272,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "789a03d0a31fffd498f96f087c52ca7e4d73a4784f970a2f50f276d5069a6004"
+      "planner_output_sha256": "9c6b4f4a2c4a1c803746dba4eee2c9f5ea14e2f332b216345bcd4259a1f8b693"
     },
     {
       "scenario": "COMPARATOR_TASK_LOOKUP_ONLY",
@@ -311,7 +311,7 @@
       ],
       "candidate_invoked": false,
       "network_calls_made": 0,
-      "planner_output_sha256": "83f1c28e2c0650301b78144bf4fd8df84aa3e426bd31e6b014dd8417e60c9cab"
+      "planner_output_sha256": "0399d64e719b8216c4f6c38f2715ae88a860f1b2505d1f4c3ceb69d8edfd87f3"
     }
   ],
   "summary": {

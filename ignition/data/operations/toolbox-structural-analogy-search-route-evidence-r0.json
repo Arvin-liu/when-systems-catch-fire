@@ -1,6 +1,6 @@
 {
   "candidate_availability": "EXPERIMENTAL_AVAILABLE_DEFAULT_OFF",
-  "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "candidate_tool_id": "reasoning.search_structural_analogies",
   "claim_ceiling": "Route planner behavior over the recorded local candidate catalog and profile only; no candidate invocation, provider call, permission grant, or task outcome is implied by route selection.",
   "schema_version": "toolbox-structural-analogy-search-route-evidence-r0",
@@ -24,7 +24,7 @@
       "decision": "INCOMPLETE",
       "execution_authorized": false,
       "include_experimental_tool_ids": [],
-      "result_sha256": "01ecaac4969e389772eda4243e37e948353c3c46cfde3d1ca31b029632ac29a1",
+      "result_sha256": "725b148e018120d572009df50e7fb995fb7c5f6fe25138216bb79a7bf9985d44",
       "router_provider_calls": 0,
       "selected_tool_ids": [],
       "trial_id": "DEFAULT_OFF"
@@ -36,7 +36,7 @@
       "include_experimental_tool_ids": [
         "reasoning.search_structural_analogies"
       ],
-      "result_sha256": "ecb7e5e469c5c967eec04bfe8c2d69157fc78492ff838828fd8121691d5ec6c1",
+      "result_sha256": "c5a8c23a9028bfb501a059211e32763df970ad186f7980be9e159fe423aee494",
       "router_provider_calls": 0,
       "selected_tool_ids": [
         "reasoning.search_structural_analogies"
@@ -50,7 +50,7 @@
       "include_experimental_tool_ids": [
         "research.preflight_grounded_ideation"
       ],
-      "result_sha256": "ad5a4c3a772c63dfc062917c5c6dccc9d86da401e3a3ef0644d4731cac5df05e",
+      "result_sha256": "5a3be259444fdcc44079fa1e37f4cefd24b1c27c76e95cb6cfd8a4d624d100a1",
       "router_provider_calls": 0,
       "selected_tool_ids": [],
       "trial_id": "EXISTING_GROUNDED_PREFLIGHT_ONLY"
@@ -63,7 +63,7 @@
         "reasoning.search_structural_analogies",
         "research.preflight_grounded_ideation"
       ],
-      "result_sha256": "108e7a4f090e050ff25052772a3e882ffa228e9d75a5ff2d68db8e3b0f0d69e2",
+      "result_sha256": "83bcfe65cd06a6bad4973651b4d0450e7dd1d0c7b3519e09ad857aeb1cbed4ac",
       "router_provider_calls": 0,
       "selected_tool_ids": [
         "reasoning.search_structural_analogies"
@@ -73,7 +73,7 @@
   ],
   "catalog_replay": {
     "previous_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "replayed_at_utc": "2026-10-27T01:23:02Z",
     "route_trials_replayed": 4,
     "all_expected_decisions_reproduced": true,

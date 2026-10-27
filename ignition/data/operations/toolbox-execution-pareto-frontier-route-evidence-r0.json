@@ -1,8 +1,8 @@
 {
-  "candidate_catalog_git_blob_sha1": "51cdb8c1d5de773c3554e3c9af0b4149b9f88374",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "catalog_replay": {
     "all_expected_decisions_reproduced": true,
-    "candidate_catalog_git_blob_sha1": "51cdb8c1d5de773c3554e3c9af0b4149b9f88374",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "previous_candidate_catalog_git_blob_sha1": "33d620970f8bffa4cd95f838b8e505cf46546ebb",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
     "observed_at_utc": "2026-10-27T04:03:13Z",
@@ -148,7 +148,7 @@
       "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
     ],
     "task_id": "paired-execution-candidate-performance-resource-analysis",
-    "candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+    "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
     "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
   },
   "route_trials": [
@@ -550,10 +550,10 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "51cdb8c1d5de773c3554e3c9af0b4149b9f88374"
+          "experimental_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a"
         }
       },
-      "planner_output_sha256": "e956b0f83308337b51646aeaacbeaa1be315e0792d2096c96789dea797316887"
+      "planner_output_sha256": "3c68d9edfe69587d6151a8739bb7c191ffd6db298e944e385b1b10beb5ec8ef5"
     },
     {
       "scenario": "explicit_allowlist",
@@ -1003,10 +1003,10 @@
         "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
         "source_refs": {
           "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-          "experimental_candidate_catalog_git_blob_sha1": "51cdb8c1d5de773c3554e3c9af0b4149b9f88374"
+          "experimental_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a"
         }
       },
-      "planner_output_sha256": "e136ea41ab7f0ef485dc6cdf090066fca2f4b3c202727a754e7614f92206c370"
+      "planner_output_sha256": "384b13659093499deb8abe0e6daefd84337dcdcf2fd576537feab6259e280551"
     }
   ],
   "schema_version": "execution-candidate-pareto-route-evidence-r0",

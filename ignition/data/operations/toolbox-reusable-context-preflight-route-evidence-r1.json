@@ -51,7 +51,7 @@
       "candidate_invoked": false
     }
   ],
-  "candidate_catalog_git_blob_sha1": "5c566fa6b0873ddb3475d47021acea1f2da910f2",
+  "candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
   "claim_ceiling": "Offline route planner selection only; no cached context was examined, no candidate was invoked, no source was read, no provider call occurred, and no permission grant or task effect was authorized.",
   "source_refs": {
     "planner": "ignition/tools/operations/plan_ignition_operation_run.py",

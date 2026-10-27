@@ -1,0 +1,28 @@
+{
+  "schema_version": "toolbox-executed-experience-preflight-r0",
+  "evaluated_at_utc": "2026-10-27T13:21:48Z",
+  "task": {
+    "task_id": "pr264-four-run-target-coverage-experience-reuse",
+    "task_family": "validation-target-coverage",
+    "environment_ref": "macOS 27.0.1 arm64; Python 3.9.6; isolated formal-toolbox-growth worktree",
+    "source_scope_id": "repo:Arvin-liu/when-systems-catch-fire/ignition"
+  },
+  "experiences": [
+    {
+      "experience_id": "pr264-target-coverage-replay-20261026",
+      "task_family": "validation-target-coverage",
+      "environment_ref": "macOS 27.0.1 arm64; Python 3.9.6; isolated formal-toolbox-growth worktree",
+      "source_scope_id": "repo:Arvin-liu/when-systems-catch-fire/ignition",
+      "task_ref": "pr264:four-run-target-coverage-local-replay",
+      "tool_id": "maintenance.compare_actions_validation_target_coverage",
+      "tool_version": "0.1.0",
+      "source_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636",
+      "outcome_claim": "EFFECT_PRESENT",
+      "expires_at_utc": "2026-10-28T19:31:02Z",
+      "evidence_artifact": {
+        "path": "ignition/data/operations/toolbox-execution-effect-receipt-real-task-r0.json",
+        "sha256": "16c7120654937385e1c624976488f4b8d20e65d72f98391d2b5bf601550d9940"
+      }
+    }
+  ]
+}
