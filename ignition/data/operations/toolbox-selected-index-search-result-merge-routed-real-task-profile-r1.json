@@ -1,0 +1,13 @@
+{
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "current_ref": "refs/heads/codex/toolbox-growth-20261025@9ec3b12403a0b97ff4fd042c588a3e055eba343e",
+  "input_types": [
+    "UTF-8 JSON object containing two or three complete bounded Crossref, OpenAlex, or Europe PMC topic-search receipts; each retains provider identity, endpoint, query/response hashes, bounded records, and counts."
+  ],
+  "required_outputs": [
+    "Offline normalized source summaries and exact normalized DOI cross-index groups; same-title or same-year records are never merged."
+  ],
+  "task_id": "merge-bounded-multi-index-topic-search-results"
+}
