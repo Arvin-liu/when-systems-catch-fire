@@ -2,7 +2,7 @@
 
 ## 1. 从哪里进入
 
-如果目标是让点火处理一篇笔记、网页、PDF、代码或其它用户对象，先读[点火操作法](../OPERATING-METHOD.md)，再由[机器可读 Capability Registry](../data/operations/ignition-operation-capability-registry-r1.json)选择状态和权限都允许的 operation。仓库链接默认只是操作法来源，附件默认是 `INPUT_OBJECT`；没有明确升级依据时使用 `READ_ONLY_RUN`，不创建 branch、worktree、commit 或 PR。只有当前请求明确要求修改点火自身时，才进入 `REPOSITORY_CHANGE_RUN` 并调用[点火迭代操作法](../ITERATION.md)；外部动作还必须有明示授权和 Current admission。
+如果目标是让点火处理一篇笔记、网页、PDF、代码或其它用户对象，先读[点火操作法（OPERATING-METHOD.md）](../OPERATING-METHOD.md)，再由[机器可读 Capability Registry](../data/operations/ignition-operation-capability-registry-r1.json)选择状态和权限都允许的 operation。仓库链接默认只是操作法来源，附件默认是 `INPUT_OBJECT`；没有明确升级依据时使用 `READ_ONLY_RUN`，不创建 branch、worktree、commit 或 PR。只有当前请求明确要求修改点火自身时，才进入 `REPOSITORY_CHANGE_RUN` 并调用[点火迭代操作法](../ITERATION.md)；外部动作还必须有明示授权和 Current admission。
 
 最小调用可以直接写：
 

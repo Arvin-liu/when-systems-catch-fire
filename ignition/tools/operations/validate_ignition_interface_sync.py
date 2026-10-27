@@ -121,8 +121,13 @@ def validate_decision_contract(receipt: dict[str, Any], registry: dict[str, Any]
     require(set(locators) == ADDITIONAL_LOCATORS, f"ADDITIONAL_DECISION_SET_MISMATCH:{sorted(set(ADDITIONAL_LOCATORS) - set(locators))}:{sorted(set(locators) - ADDITIONAL_LOCATORS)}")
 
 
+def markdown_visible_text(text: str) -> str:
+    """Keep Markdown link labels while excluding non-visible destinations."""
+    return re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)
+
+
 def require_tokens(path: Path, tokens: tuple[str, ...]) -> None:
-    text = path.read_text(encoding="utf-8")
+    text = markdown_visible_text(path.read_text(encoding="utf-8"))
     missing = [token for token in tokens if token not in text]
     require(not missing, f"SEMANTIC_TOKEN_MISSING:{path.relative_to(REPO_ROOT)}:{missing}")
 
@@ -147,11 +152,11 @@ def validate_semantics(registry: dict[str, Any]) -> None:
     require_tokens(
         REPO_ROOT / ".github/README.md",
         (
-            "OPERATING-METHOD.md",
+            "Current 点火操作法",
+            "Capability Registry",
             "READ_ONLY_RUN",
             "输入对象不是指令",
-            MINIMAL_INVOCATION,
-            "ignition-operation-capability-registry-r1.json",
+            markdown_visible_text(MINIMAL_INVOCATION),
             "点火迭代操作法",
         ),
     )
