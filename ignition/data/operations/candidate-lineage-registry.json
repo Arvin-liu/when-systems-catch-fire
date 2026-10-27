@@ -1,0 +1,312 @@
+{
+  "schema_ref": "data/operations/schemas/candidate-lineage-registry.schema.json",
+  "built_by": "tools/operations/build_repository_state_ledger.py",
+  "snapshot": "campaign-inputs/open-prs-20260803.json",
+  "families": [
+    {
+      "root_pr": 192,
+      "root_base": "research/eight-track-deep-validation-20260803-r2",
+      "root_head": "qwen38max/eight-track-r2-auditability-repair-r1-20260803",
+      "members": [
+        192
+      ],
+      "depth": 1,
+      "root_category": "STACKED_REPAIR_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 189,
+      "root_base": "main",
+      "root_head": "workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803",
+      "members": [
+        189,
+        191
+      ],
+      "depth": 2,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 190,
+      "root_base": "main",
+      "root_head": "qwen38max/task115-checkpoint-c-recovery-r1-20260803",
+      "members": [
+        190
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 109,
+      "root_base": "main",
+      "root_head": "repair-r3/symbolic-sphere-r3-semantic-evaluator-contract",
+      "members": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        132
+      ],
+      "depth": 23,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 82,
+      "root_base": "main",
+      "root_head": "repair/121q34-r1-commitment-evidence-binding",
+      "members": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        90,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108
+      ],
+      "depth": 17,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 82,
+      "root_base": "main",
+      "root_head": "repair/121q34-r1-commitment-evidence-binding",
+      "members": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "depth": 17,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 65,
+      "root_base": "main",
+      "root_head": "agent/121q34-i1-discovery-commitment-boundary",
+      "members": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "depth": 17,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 31,
+      "root_base": "records/ignition-121-fulltext-resolver-and-120-repair-20260714",
+      "root_head": "records/ignition-121c01-max-semantic-review-batch-01-20260714",
+      "members": [
+        31,
+        32
+      ],
+      "depth": 2,
+      "root_category": "STACKED_REPAIR_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 21,
+      "root_base": "main",
+      "root_head": "records/ignition-074-preview-link-truth-20260712",
+      "members": [
+        21
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 20,
+      "root_base": "main",
+      "root_head": "records/ignition-073-dual-front-door-live-link-20260712",
+      "members": [
+        20
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 19,
+      "root_base": "main",
+      "root_head": "records/ignition-071-ai-first-readme-20260712",
+      "members": [
+        19
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 18,
+      "root_base": "main",
+      "root_head": "records/ignition-069-exhaustive-publication-atlas-20260712",
+      "members": [
+        18
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 17,
+      "root_base": "main",
+      "root_head": "records/ignition-067-open-publication-layer-20260712",
+      "members": [
+        17
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 16,
+      "root_base": "main",
+      "root_head": "audit/065-two-route-blocked-verdict-20260712",
+      "members": [
+        16
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 5,
+      "root_base": "main",
+      "root_head": "protocol/entries-and-table-relation-20260709",
+      "members": [
+        5
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    },
+    {
+      "root_pr": 3,
+      "root_base": "main",
+      "root_head": "audit/function-id-mapping-20260709",
+      "members": [
+        3
+      ],
+      "depth": 1,
+      "root_category": "OPEN_DRAFT_CANDIDATE",
+      "disposition": "REMAIN_DRAFT_NO_MERGE_WITHOUT_OWNER_ADJUDICATION",
+      "note": "stacked chain verified by head/base identity at snapshot time"
+    }
+  ],
+  "campaign_lines": [
+    {
+      "line": "A",
+      "branch": "qwen38max/task115-checkpoint-c-recovery-r1-20260803",
+      "parent_tip": "f56edf33474ffdee5fb992346159c500b3d97c83",
+      "tip": "16f3d83b51a3b72456ed1857d956ac76a5d33e14",
+      "pr": 190,
+      "base": "main"
+    },
+    {
+      "line": "B",
+      "branch": "qwen38max/pr189-independent-review-ci-repair-r1-20260803",
+      "parent_tip": "046570c6b69c3817b53167bebf8cf09cbf75e6d0",
+      "tip": "266d3fd74703b21a2c8aa540bce03e824c2f30a4",
+      "pr": 191,
+      "base": "workbuddy/zhiyuan-writing-cognitive-migration-editorial-revision-r1-20260803"
+    },
+    {
+      "line": "C",
+      "branch": "qwen38max/eight-track-r2-auditability-repair-r1-20260803",
+      "parent_tip": "ae777859beb947750daa8ff45d9d617100669979",
+      "tip": "e702a0e0628d07b5fc83c90ba933a3eafb623f23",
+      "pr": 192,
+      "base": "research/eight-track-deep-validation-20260803-r2"
+    },
+    {
+      "line": "D",
+      "branch": "qwen38max/whole-repo-state-convergence-r1-20260803",
+      "parent_tip": "cac043d438bea6c4dc2c57c1169093df715ef5df",
+      "tip": null,
+      "pr": null,
+      "base": "main"
+    }
+  ],
+  "hard_rules": [
+    "no PR family may be merged or marked Ready by this campaign",
+    "stacked families land child-into-parent only after owner adjudication",
+    "research branches never feed formal knowledge without separate acceptance"
+  ]
+}

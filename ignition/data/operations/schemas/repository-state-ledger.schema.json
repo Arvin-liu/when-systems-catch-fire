@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "repository-state-ledger.schema.json",
+  "title": "Repository State Ledger",
+  "type": "object",
+  "required": [
+    "baselines",
+    "counts",
+    "accepted_current",
+    "accepted_iterations",
+    "open_draft_candidates",
+    "stacked_repair_candidates",
+    "research_candidate_not_formal_knowledge",
+    "unknown_requires_owner_adjudication"
+  ],
+  "properties": {
+    "baselines": {
+      "type": "object",
+      "required": [
+        "formal_main_at_build",
+        "locked_tips"
+      ]
+    },
+    "counts": {
+      "type": "object"
+    },
+    "accepted_current": {
+      "type": "object",
+      "required": [
+        "iteration",
+        "source"
+      ]
+    },
+    "accepted_iterations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "iteration",
+          "terminalized",
+          "state_category"
+        ]
+      }
+    },
+    "open_draft_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pr_number",
+          "base",
+          "head",
+          "state_category"
+        ]
+      }
+    },
+    "stacked_repair_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pr_number",
+          "base",
+          "head",
+          "state_category"
+        ]
+      }
+    },
+    "research_candidate_not_formal_knowledge": {
+      "type": "array"
+    },
+    "unknown_requires_owner_adjudication": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "candidate-lineage-registry.schema.json",
+  "title": "Candidate Lineage Registry",
+  "type": "object",
+  "required": [
+    "families",
+    "campaign_lines",
+    "hard_rules"
+  ],
+  "properties": {
+    "families": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "root_pr",
+          "members",
+          "depth",
+          "disposition"
+        ]
+      }
+    },
+    "campaign_lines": {
+      "type": "array"
+    },
+    "hard_rules": {
+      "type": "array"
+    }
+  }
+}
