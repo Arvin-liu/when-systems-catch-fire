@@ -1,0 +1,63 @@
+{
+  "schema_version": "toolbox-noaa-sf6-annual-growth-lookup-c1-evidence-r0",
+  "evidence_type": "BOUNDED_FUNCTION_AND_SOURCE_SURFACE_COMPARISON",
+  "candidate_tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+  "observed_at_utc": "2026-10-27T00:18:50Z",
+  "comparison": {
+    "task": "Retrieve the NOAA GML global annual SF6 raw-table values for 2023-2025 and preserve the exact source response receipt.",
+    "candidate": {
+      "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+      "requests_made": 1,
+      "output_path": "data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-output-r0.json",
+      "result_status": "FOUND"
+    },
+    "same_species_surface_observation": {
+      "page_url": "https://gml.noaa.gov/ccgg/trends_sf6/",
+      "raw_url": "https://gml.noaa.gov/webdata/ccgg/trends/sf6/sf6_gr_gl.txt",
+      "year": 2025,
+      "page": {
+        "annual_increase_ppt": "0.48",
+        "uncertainty_ppt": "0.004"
+      },
+      "raw": {
+        "annual_increase_ppt": "0.48",
+        "uncertainty_ppt": "0.00",
+        "response_sha256": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927"
+      },
+      "finding": "Growth matches for this observation; the raw uncertainty is rounded to two decimals and loses precision shown on the page."
+    },
+    "existing_tool_comparisons": [
+      {
+        "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+        "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+        "reason": "Different species, fixed source table, and ppm units."
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+        "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+        "reason": "Different species, fixed source table, and ppb units."
+      },
+      {
+        "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+        "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+        "reason": "Different species, fixed source table, and ppb units."
+      }
+    ],
+    "measurements": {
+      "candidate_http_requests": 1,
+      "page_observation_http_request_count": null,
+      "candidate_elapsed_latency": "NOT_COMPARABLE",
+      "monetary_cost": "UNKNOWN"
+    }
+  },
+  "portfolio_disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "replacement_candidates": [],
+    "unique_remaining_use_cases": [
+      "One bounded SF6-specific raw-table request with a typed output, exact selected records, response digest, and fixed-host safeguards."
+    ],
+    "retired_tools": [],
+    "coexistence_reason": "The CO2, CH4, and N2O tools cannot return SF6 values. The page observation preserves finer uncertainty precision and is the counterindicated alternative when that precision is needed.",
+    "uncertainty": "No reliability, measurement accuracy, scientific validity, long-run source behavior, latency, or monetary-cost ranking is established."
+  }
+}

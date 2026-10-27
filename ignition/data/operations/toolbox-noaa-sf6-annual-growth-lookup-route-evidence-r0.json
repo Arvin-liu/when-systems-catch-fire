@@ -1,0 +1,194 @@
+{
+  "schema_version": "toolbox-noaa-sf6-annual-growth-lookup-route-evidence-r0",
+  "evidence_type": "REPLAYED_DEFAULT_OFF_EXACT_HOST_AND_TASK_SCOPE_ROUTE_PROPOSALS",
+  "candidate_tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+  "candidate_catalog_git_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "routing_contract_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "route_profile_path": "data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-profile-r0.json",
+  "route_profile_sha256": "8db5178bfe768ef34b62482c20296dd43b3db6db857235301ee0554e165f0dd1",
+  "observed_at_utc": "2026-10-27T00:18:50Z",
+  "route_trials": [
+    {
+      "scenario": "DEFAULT_OFF_RAW_ONLY",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-raw-table-annual-growth-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+        ],
+        "required_outputs": [
+          "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "planner_output_sha256": "2e357da0b57555871637771974deab84f9dc98d7af5048fc7dc6657482cb5798"
+    },
+    {
+      "scenario": "EXPLICIT_RAW_ONLY_EXACT_HOST",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-raw-table-annual-growth-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+        ],
+        "required_outputs": [
+          "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "planner_output_sha256": "977ec28478e73a1afbc1aeb89230104333e94db5bde072364de3d86d2e298022"
+    },
+    {
+      "scenario": "EXPLICIT_RAW_ONLY_HOST_MISSING",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-raw-table-annual-growth-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+        ],
+        "required_outputs": [
+          "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "planner_output_sha256": "3e38ea9f5590fd9e8c33933f4002d3272df35da8b910e21ef99667ddb1e7a434"
+    },
+    {
+      "scenario": "EXPLICIT_RAW_ONLY_OVERBROAD_HOST_LIST",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-raw-table-annual-growth-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+        ],
+        "required_outputs": [
+          "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov",
+          "example.org"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [],
+      "planner_output_sha256": "6d5457ecae97634ac47d64f56fe3f9f9dc973d79e9adad9107f2ced91c2539e6"
+    },
+    {
+      "scenario": "OTHER_GAS_ONLY",
+      "task_profile": {
+        "task_id": "noaa-gml-n2o-raw-table-annual-growth-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-n2o-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (2001–2100 inclusive; at most 50 years)."
+        ],
+        "required_outputs": [
+          "Provider-reported annual atmospheric N2O mole-fraction increases and stated uncertainties in ppb from the fixed raw table only, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status.",
+          "One fixed raw-table receipt with retrieval time, HTTP metadata, response byte count and SHA-256, explicit request count, and claim ceiling; raw response is not retained."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth",
+        "research.lookup_noaa_global_n2o_annual_growth"
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.lookup_noaa_global_n2o_annual_growth"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "planner_output_sha256": "0385ca0f6713149c6c10c23b2153c7aa30d2cda43e7ab701bae72dd3aa25b7a6"
+    }
+  ],
+  "route_trials_replayed": 5,
+  "all_expected_decisions_reproduced": true,
+  "summary": {
+    "default_raw_only_route": "INCOMPLETE_NO_CANDIDATE_SELECTED",
+    "exact_host_raw_only_route": "COMPLETE_SELECTS_ONLY_SF6_RAW_LOOKUP",
+    "missing_host_route": "INCOMPLETE_NETWORK_HOST_NOT_ALLOWED",
+    "overbroad_host_route": "COMPLETE_CANDIDATE_PERMISSION_STAYS_FIXED_TO_GML",
+    "other_gas_route": "COMPLETE_SELECTS_ONLY_N2O_LOOKUP",
+    "candidate_invoked": false,
+    "execution_authorized": false,
+    "network_calls_made": 0
+  }
+}

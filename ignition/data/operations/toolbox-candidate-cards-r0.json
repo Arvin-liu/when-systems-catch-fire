@@ -12866,6 +12866,226 @@
           "Remove the optional catalog entry, wrapper, schemas, docs, fixtures, tests, route/source/C1 evidence, and real-task outputs from the isolated branch; regenerate identity cards and TOOLBOX.md. Preserve the historical source digests and comparison rationale if still useful."
         ]
       }
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+      "display_name": {
+        "zh": "NOAA 全球六氟化硫年度增量读取器",
+        "en": "NOAA global sulfur hexafluoride annual growth lookup"
+      },
+      "description": "Retrieve a bounded year range from NOAA GML’s fixed raw global annual atmospheric SF6 mole-fraction increase table, including the raw table’s provider-reported uncertainty precision.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; NOAA GML source-use page requests fair credit for its measurements and data.",
+      "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+          "role": "BOUNDED_FIXED_HOST_DATA_LOOKUP"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
+          "role": "BOUNDED_NOAA_TABLE_PARSER_AND_FIXED_HOST_FETCHER"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-input-r0.schema.json",
+          "role": "INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-output-r0.schema.json",
+          "role": "OUTPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "role": "CAPTURED_SOURCE_FIXTURE_AND_MOCKED_NETWORK_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py",
+          "role": "DEFAULT_OFF_AND_EXACT_HOST_ROUTE_REPLAY"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_READABLE_IDENTITY_CARD_PROJECTION_TEST"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-profile-r0.json",
+          "role": "TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-evidence-r0.json",
+          "role": "CANDIDATE_ROUTE_EXPERIMENT_NOT_EXECUTION_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-input-r0.json",
+          "role": "REAL_BOUNDED_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-output-r0.json",
+          "role": "REAL_BOUNDED_TASK_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-evidence-r0.json",
+          "role": "REAL_TASK_OUTCOME_WITH_NO_RAW_RESPONSE_RETENTION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-source-binding-r0.json",
+          "role": "OFFICIAL_SOURCE_AND_CAPTURE_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-c1-evidence-r0.json",
+          "role": "C1_FUNCTION_AND_SOURCE_SURFACE_COMPARISON"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-sf6-annual-growth-lookup.md",
+          "role": "SOURCE_SCOPE_CAVEATS_AND_C1_COMPARISON"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+      ],
+      "good_for": [
+        "Retrieving NOAA GML global annual atmospheric SF6 mole-fraction increase and raw-table uncertainty for an explicit bounded year range.",
+        "Recording one fixed raw-table response digest, retrieval time, HTTP metadata, and explicit missing-year or acquisition status.",
+        "Returning the raw table’s stated uncertainty text without interpreting a rounded 0.00 as exact zero uncertainty."
+      ],
+      "not_for": [
+        "Comparing NOAA’s rendered page against its raw table; this tool reads only the raw table.",
+        "Estimating SF6 emissions, identifying emitting sectors, attributing causes, or making a scientific conclusion.",
+        "Arbitrary URLs, station-level or monthly observations, article content, or unrestricted date ranges.",
+        "Treating a missing year as zero or the raw table’s rounded 0.00 uncertainty as no uncertainty."
+      ],
+      "only_if": [
+        "The caller has decided that one public NOAA GML raw-table request is appropriate and passes --allow-public-network for this invocation.",
+        "The request contains exactly integer start_year and end_year values from 1998 through 2100, with no more than 50 inclusive years.",
+        "A proposed route explicitly includes this candidate ID and allowed_network_hosts contains exactly gml.noaa.gov; route planning is not execution authorization."
+      ],
+      "counterindicated_when": [
+        "Public network access is disallowed or the caller must not contact NOAA GML.",
+        "The task requires higher precision for uncertainty than NOAA’s raw table reports; consult the rendered NOAA page or a separately validated source.",
+        "The task needs an emissions inventory, source attribution, causal explanation, station data, or another gas species.",
+        "The requested range exceeds the tool’s bounds, or a precise historical snapshot is required and the live response is not archived."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+      ],
+      "output_types": [
+        "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+        "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+          "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked with --allow-public-network, sends exactly one HTTPS GET to the fixed NOAA GML SF6 raw-table URL; year bounds are applied locally and no caller URL or private identifier is transmitted.",
+        "Writes a bounded selected-record JSON receipt to stdout and errors to stderr; does not retain the raw response or write repository files.",
+        "Rejects redirects, non-text content, oversized or slow responses, malformed headers/tables, duplicate/out-of-order years, and invalid numeric rows as explicit outcomes."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.10 standard library",
+        "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Exactly one fixed public HTTPS GET is attempted per explicitly opted-in invocation. Monetary cost, stable latency, long-run availability, and parser reliability are not measured."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The N2O adapter reads a different NOAA gas table and reports ppb; it cannot provide SF6 values or their ppt units."
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CH4 adapter reads a different NOAA gas table and reports ppb; it cannot provide SF6 values."
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CO2 adapter reads a different NOAA gas table and reports ppm; it cannot provide SF6 values."
+        }
+      ],
+      "fallback": "If public network use is not approved or retrieval fails, report the explicit NOT_RUN or acquisition status and consult an appropriately pinned NOAA snapshot. Never label a cached snapshot as a live check, treat missing rows as zero, or interpret rounded 0.00 uncertainty as zero uncertainty.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network makes no request and emits no result.",
+          "Reject arbitrary URL keys, duplicate JSON keys, Boolean years, reversed/out-of-range bounds, and ranges over 50 years before network access.",
+          "Only gml.noaa.gov and the fixed SF6 HTTPS raw-table path are contacted; redirects, non-text, oversized/slow data, wrong-species markers, malformed rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
+          "Default routing excludes the candidate; explicit selection requires the exact gml.noaa.gov host, and route planning keeps execution_authorized=false.",
+          "Missing source years remain PARTIAL_DATA or NO_MATCH; a rounded raw uncertainty of 0.00 is preserved with an explicit warning, not converted to exact zero.",
+          "Existing NOAA CO2, CH4, and N2O adapters remain available because their species, fixed source paths, and units are different."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task requesting NOAA GML global annual atmospheric SF6 values from the fixed raw table only.",
+        "Require the typed route profile to list gml.noaa.gov explicitly; route planning does not grant network or execution permission.",
+        "Every actual CLI call separately requires --allow-public-network and a task-specific decision to make this public request.",
+        "Do not select this adapter for page/raw comparison, emissions inventories, causal analysis, other gas species, or tasks requiring more precise uncertainty."
+      ],
+      "claim_ceiling": "Provider-reported NOAA GML global annual atmospheric SF6 mole-fraction increase and raw-table uncertainty text for selected years from the fixed raw table only; not emissions, attribution, causal analysis, source authentication, measurement validity, exact-zero uncertainty, or scientific validation.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Retrieve an SF6-specific annual-growth series and its exactly published raw-table precision with one fixed GET; CO2, CH4, and N2O tools cannot satisfy the distinct species and unit contract."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Same-species NOAA page/raw values were compared for 2025, and the SF6 raw-table adapter was compared by function and output contract with existing NOAA CO2, CH4, and N2O adapters. Page and raw surfaces report the same 2025 growth (0.48 ppt), while the raw uncertainty is rounded to 0.00 ppt and the page reports 0.004 ppt. This is a precision limitation, not evidence that either surface is superior. Other-gas tools are not substitutes. No overall accuracy, reliability, latency, or monetary-cost ranking is claimed.",
+        "compared_tool_ids": [
+          "research.lookup_noaa_global_co2_annual_growth",
+          "research.lookup_noaa_global_ch4_annual_growth",
+          "research.lookup_noaa_global_n2o_annual_growth"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-source-binding-r0.json",
+          "ignition/docs/operations/noaa-sf6-annual-growth-lookup.md",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py"
+        ],
+        "findings": [
+          "The candidate adds an SF6-specific species and fixed raw-table endpoint absent from the current candidate catalog; the CO2, CH4, and N2O tools cannot return the same gas or its ppt values.",
+          "One live matched observation returned 2025 growth 0.48 ppt from both NOAA page and raw table. The raw table’s 0.00 ppt uncertainty is rounded; the page reported 0.004 ppt. Neither tool treats the latter value as independent validation.",
+          "The candidate makes one fixed request for the raw-only task. Current metadata does not establish comparative source reliability, accuracy, long-run availability, latency, or monetary cost.",
+          "No incumbent is retired. The gas-specific tools coexist by distinct source, unit, and task contract; no new tool is router-selectable by default."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Retain as a separate optional default-off SF6 raw-table reader. Existing CO2, CH4, and N2O tools remain for their distinct species and units. No incumbent is retired."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry or default route migration is made. Explicit selection is required only for an SF6 raw-table request; page/raw comparison and higher precision uncertainty tasks remain counterindicated."
+        ],
+        "rollback_steps": [
+          "Remove this optional catalog entry, wrapper, schema, docs, fixtures, tests, route/source/C1 evidence, and real-task output from the isolated branch; regenerate identity cards and TOOLBOX.md; preserve source digests and the precision limitation evidence if useful."
+        ]
+      }
     }
   ]
 }

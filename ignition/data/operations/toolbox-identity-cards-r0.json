@@ -8,8 +8,8 @@
   },
   "candidate_cards": {
     "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-    "blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
-    "candidate_count": 63
+    "blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+    "candidate_count": 64
   },
   "cards": [
     {
@@ -219,7 +219,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -451,7 +451,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -738,7 +738,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1003,7 +1003,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -1027,7 +1027,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1539,7 +1539,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -1766,7 +1766,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2102,7 +2102,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2347,7 +2347,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/data/operations/toolbox-declared-permission-delta-smoke-evidence-r0.json",
@@ -2376,7 +2376,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -2546,7 +2546,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0"
+          "sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38"
         },
         {
           "path": "ignition/tools/operations/classify_ignition_run_mode.py",
@@ -2570,7 +2570,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3017,11 +3017,11 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0"
+          "sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3222,7 +3222,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3438,7 +3438,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json",
@@ -3447,7 +3447,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -3791,7 +3791,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4055,7 +4055,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -4998,7 +4998,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5198,7 +5198,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5549,7 +5549,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -5817,7 +5817,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6101,11 +6101,11 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6389,7 +6389,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -6666,7 +6666,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7112,7 +7112,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7395,7 +7395,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -7756,7 +7756,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8021,7 +8021,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/tests/test_toolbox_producer_consumer_semantic_preflight.py",
@@ -8065,7 +8065,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8333,7 +8333,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8537,7 +8537,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -8859,7 +8859,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9123,7 +9123,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9556,7 +9556,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -9879,7 +9879,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10429,7 +10429,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -10712,7 +10712,7 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0"
+          "sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38"
         },
         {
           "path": "ignition/tools/toolbox_validate_evidence_program.py",
@@ -10736,7 +10736,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11037,7 +11037,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11381,7 +11381,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -11430,7 +11430,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -11752,7 +11752,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -11781,7 +11781,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12092,7 +12092,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/tools/operations/plan_ignition_operation_run.py",
@@ -12121,7 +12121,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12369,7 +12369,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12611,7 +12611,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -12982,7 +12982,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -13199,7 +13199,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -13429,7 +13429,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/docs/operations/noaa-ch4-annual-growth-lookup.md",
@@ -13468,7 +13468,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -13690,7 +13690,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/docs/operations/noaa-co2-annual-growth-lookup.md",
@@ -13709,7 +13709,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -14009,7 +14009,310 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
+      "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+      "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+    },
+    {
+      "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+      "display_name": {
+        "zh": "NOAA 全球六氟化硫年度增量读取器",
+        "en": "NOAA global sulfur hexafluoride annual growth lookup"
+      },
+      "description": "Retrieve a bounded year range from NOAA GML’s fixed raw global annual atmospheric SF6 mole-fraction increase table, including the raw table’s provider-reported uncertainty precision.",
+      "version": "0.1.0",
+      "license": "Wrapper BUSL-1.1; NOAA GML source-use page requests fair credit for its measurements and data.",
+      "maintainer": "Ignition repository maintainers; this field confers no NOAA, Owner, emissions-accounting, or scientific authority.",
+      "availability": "EXPERIMENTAL_AVAILABLE",
+      "lifecycle": "EXPERIMENTAL",
+      "evidence_level": "REAL_TASK_OUTCOME",
+      "source_path": "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+      "entrypoint": "python3 -B ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py --stdin --allow-public-network",
+      "source_refs": [
+        {
+          "path": "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+          "role": "BOUNDED_FIXED_HOST_DATA_LOOKUP"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
+          "role": "BOUNDED_NOAA_TABLE_PARSER_AND_FIXED_HOST_FETCHER"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-input-r0.schema.json",
+          "role": "INPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-output-r0.schema.json",
+          "role": "OUTPUT_SCHEMA"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "role": "CAPTURED_SOURCE_FIXTURE_AND_MOCKED_NETWORK_NEGATIVE_CONTROLS"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py",
+          "role": "DEFAULT_OFF_AND_EXACT_HOST_ROUTE_REPLAY"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "role": "MACHINE_READABLE_IDENTITY_CARD_PROJECTION_TEST"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-profile-r0.json",
+          "role": "TASK_ROUTE_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-evidence-r0.json",
+          "role": "CANDIDATE_ROUTE_EXPERIMENT_NOT_EXECUTION_AUTHORITY"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-input-r0.json",
+          "role": "REAL_BOUNDED_TASK_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-output-r0.json",
+          "role": "REAL_BOUNDED_TASK_OUTPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-evidence-r0.json",
+          "role": "REAL_TASK_OUTCOME_WITH_NO_RAW_RESPONSE_RETENTION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-source-binding-r0.json",
+          "role": "OFFICIAL_SOURCE_AND_CAPTURE_BINDING"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-c1-evidence-r0.json",
+          "role": "C1_FUNCTION_AND_SOURCE_SURFACE_COMPARISON"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-sf6-annual-growth-lookup.md",
+          "role": "SOURCE_SCOPE_CAVEATS_AND_C1_COMPARISON"
+        }
+      ],
+      "dependencies": [
+        "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+      ],
+      "good_for": [
+        "Retrieving NOAA GML global annual atmospheric SF6 mole-fraction increase and raw-table uncertainty for an explicit bounded year range.",
+        "Recording one fixed raw-table response digest, retrieval time, HTTP metadata, and explicit missing-year or acquisition status.",
+        "Returning the raw table’s stated uncertainty text without interpreting a rounded 0.00 as exact zero uncertainty."
+      ],
+      "not_for": [
+        "Comparing NOAA’s rendered page against its raw table; this tool reads only the raw table.",
+        "Estimating SF6 emissions, identifying emitting sectors, attributing causes, or making a scientific conclusion.",
+        "Arbitrary URLs, station-level or monthly observations, article content, or unrestricted date ranges.",
+        "Treating a missing year as zero or the raw table’s rounded 0.00 uncertainty as no uncertainty."
+      ],
+      "only_if": [
+        "The caller has decided that one public NOAA GML raw-table request is appropriate and passes --allow-public-network for this invocation.",
+        "The request contains exactly integer start_year and end_year values from 1998 through 2100, with no more than 50 inclusive years.",
+        "A proposed route explicitly includes this candidate ID and allowed_network_hosts contains exactly gml.noaa.gov; route planning is not execution authorization."
+      ],
+      "counterindicated_when": [
+        "Public network access is disallowed or the caller must not contact NOAA GML.",
+        "The task requires higher precision for uncertainty than NOAA’s raw table reports; consult the rendered NOAA page or a separately validated source.",
+        "The task needs an emissions inventory, source attribution, causal explanation, station data, or another gas species.",
+        "The requested range exceeds the tool’s bounds, or a precise historical snapshot is required and the live response is not archived."
+      ],
+      "accepted_input_types": [
+        "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+      ],
+      "output_types": [
+        "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+        "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+      ],
+      "execution_mode": "READ_ONLY_RUN",
+      "permission_mode": "READ_ONLY_FIXED_HOST_NETWORK_QUERY",
+      "explicit_owner_authorization_required": false,
+      "permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+          "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "gml.noaa.gov"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "side_effects": [
+        "When explicitly invoked with --allow-public-network, sends exactly one HTTPS GET to the fixed NOAA GML SF6 raw-table URL; year bounds are applied locally and no caller URL or private identifier is transmitted.",
+        "Writes a bounded selected-record JSON receipt to stdout and errors to stderr; does not retain the raw response or write repository files.",
+        "Rejects redirects, non-text content, oversized or slow responses, malformed headers/tables, duplicate/out-of-order years, and invalid numeric rows as explicit outcomes."
+      ],
+      "runtime_dependencies": [
+        "Python >=3.10 standard library",
+        "ignition/tools/toolbox_noaa_source_surface_comparison_core.py"
+      ],
+      "estimated_cost": {
+        "status": "UNKNOWN",
+        "basis": "Exactly one fixed public HTTPS GET is attempted per explicitly opted-in invocation. Monetary cost, stable latency, long-run availability, and parser reliability are not measured."
+      },
+      "alternatives": [
+        {
+          "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The N2O adapter reads a different NOAA gas table and reports ppb; it cannot provide SF6 values or their ppt units."
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CH4 adapter reads a different NOAA gas table and reports ppb; it cannot provide SF6 values."
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+          "relationship": "COMPLEMENTARY_NOT_EQUIVALENT",
+          "reason": "The CO2 adapter reads a different NOAA gas table and reports ppm; it cannot provide SF6 values."
+        }
+      ],
+      "fallback": "If public network use is not approved or retrieval fails, report the explicit NOT_RUN or acquisition status and consult an appropriately pinned NOAA snapshot. Never label a cached snapshot as a live check, treat missing rows as zero, or interpret rounded 0.00 uncertainty as zero uncertainty.",
+      "validation": {
+        "focused_checks": [
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py",
+          "ignition/tests/test_toolbox_identity_cards.py"
+        ],
+        "negative_controls": [
+          "Missing --allow-public-network makes no request and emits no result.",
+          "Reject arbitrary URL keys, duplicate JSON keys, Boolean years, reversed/out-of-range bounds, and ranges over 50 years before network access.",
+          "Only gml.noaa.gov and the fixed SF6 HTTPS raw-table path are contacted; redirects, non-text, oversized/slow data, wrong-species markers, malformed rows, duplicate/out-of-order years, and invalid uncertainties fail closed.",
+          "Default routing excludes the candidate; explicit selection requires the exact gml.noaa.gov host, and route planning keeps execution_authorized=false.",
+          "Missing source years remain PARTIAL_DATA or NO_MATCH; a rounded raw uncertainty of 0.00 is preserved with an explicit warning, not converted to exact zero.",
+          "Existing NOAA CO2, CH4, and N2O adapters remain available because their species, fixed source paths, and units are different."
+        ]
+      },
+      "router_selectable_by_default": false,
+      "router_conditions": [
+        "Remain excluded unless the exact candidate ID is explicitly allowlisted for a task requesting NOAA GML global annual atmospheric SF6 values from the fixed raw table only.",
+        "Require the typed route profile to list gml.noaa.gov explicitly; route planning does not grant network or execution permission.",
+        "Every actual CLI call separately requires --allow-public-network and a task-specific decision to make this public request.",
+        "Do not select this adapter for page/raw comparison, emissions inventories, causal analysis, other gas species, or tasks requiring more precise uncertainty."
+      ],
+      "claim_ceiling": "Provider-reported NOAA GML global annual atmospheric SF6 mole-fraction increase and raw-table uncertainty text for selected years from the fixed raw table only; not emissions, attribution, causal analysis, source authentication, measurement validity, exact-zero uncertainty, or scientific validation.",
+      "replacement_candidates": [],
+      "unique_remaining_use_cases": [
+        "Retrieve an SF6-specific annual-growth series and its exactly published raw-table precision with one fixed GET; CO2, CH4, and N2O tools cannot satisfy the distinct species and unit contract."
+      ],
+      "comparison_evidence": {
+        "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+        "scope": "Same-species NOAA page/raw values were compared for 2025, and the SF6 raw-table adapter was compared by function and output contract with existing NOAA CO2, CH4, and N2O adapters. Page and raw surfaces report the same 2025 growth (0.48 ppt), while the raw uncertainty is rounded to 0.00 ppt and the page reports 0.004 ppt. This is a precision limitation, not evidence that either surface is superior. Other-gas tools are not substitutes. No overall accuracy, reliability, latency, or monetary-cost ranking is claimed.",
+        "compared_tool_ids": [
+          "research.lookup_noaa_global_co2_annual_growth",
+          "research.lookup_noaa_global_ch4_annual_growth",
+          "research.lookup_noaa_global_n2o_annual_growth"
+        ],
+        "evidence_refs": [
+          "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-c1-evidence-r0.json",
+          "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-source-binding-r0.json",
+          "ignition/docs/operations/noaa-sf6-annual-growth-lookup.md",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py"
+        ],
+        "findings": [
+          "The candidate adds an SF6-specific species and fixed raw-table endpoint absent from the current candidate catalog; the CO2, CH4, and N2O tools cannot return the same gas or its ppt values.",
+          "One live matched observation returned 2025 growth 0.48 ppt from both NOAA page and raw table. The raw table’s 0.00 ppt uncertainty is rounded; the page reported 0.004 ppt. Neither tool treats the latter value as independent validation.",
+          "The candidate makes one fixed request for the raw-only task. Current metadata does not establish comparative source reliability, accuracy, long-run availability, latency, or monetary cost.",
+          "No incumbent is retired. The gas-specific tools coexist by distinct source, unit, and task contract; no new tool is router-selectable by default."
+        ]
+      },
+      "deprecation_or_retirement_status": {
+        "status": "SPECIALIZED",
+        "basis": "Retain as a separate optional default-off SF6 raw-table reader. Existing CO2, CH4, and N2O tools remain for their distinct species and units. No incumbent is retired."
+      },
+      "migration_and_rollback": {
+        "migration_notes": [
+          "No Current registry or default route migration is made. Explicit selection is required only for an SF6 raw-table request; page/raw comparison and higher precision uncertainty tasks remain counterindicated."
+        ],
+        "rollback_steps": [
+          "Remove this optional catalog entry, wrapper, schema, docs, fixtures, tests, route/source/C1 evidence, and real-task output from the isolated branch; regenerate identity cards and TOOLBOX.md; preserve source digests and the precision limitation evidence if useful."
+        ]
+      },
+      "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
+      "source_blob_sha1": "34e5d057fdc6fab3afb5a33c69121ab7cd07a198",
+      "source_refs_with_hashes": [
+        {
+          "path": "ignition/tools/toolbox_noaa_sf6_annual_growth_lookup.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "34e5d057fdc6fab3afb5a33c69121ab7cd07a198"
+        },
+        {
+          "path": "ignition/tools/toolbox_noaa_source_surface_comparison_core.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "69a95faa3ae9f9434c5e1f7d449c47ce7199c8e9"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-input-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "6adb48efc890f9339e52ac9c5380db01afe44b8f"
+        },
+        {
+          "path": "ignition/schemas/operations/toolbox-noaa-sf6-annual-growth-lookup-output-r0.schema.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "098a6024232e8e765a41801a5533bd6cb1a7f733"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "0fadc6f42fe064896701c4333185ee4c15820678"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_noaa_sf6_annual_growth_lookup_routing.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "32ba79148a345ac7f1ccdc214a3046f19e4555e4"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_identity_cards.py",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-profile-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "565e72296d874c7887ac33d21c4a060db3de8e44"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-route-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "4d18dc917ef448ef90697b86046f29e2f68cdfa2"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-input-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "9e2c616b78c1d398f71874249d1dd066bba05b7f"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-output-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "924d6cf5424c5a753729047dfad34328ce1fa3ef"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "b501741349acad8f7f7500d6cd2a2763539e99f4"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-source-binding-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "aeea6b6f19607a26ecfa9eb1db39a745e2d972e0"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-noaa-sf6-annual-growth-lookup-c1-evidence-r0.json",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "211775e0074debc1fea60f678cc02573eeead0e1"
+        },
+        {
+          "path": "ignition/docs/operations/noaa-sf6-annual-growth-lookup.md",
+          "hash_kind": "GIT_BLOB_SHA1",
+          "sha1": "13f58682f42aeb0cf0906546ced236580b5d6d06"
+        }
+      ],
+      "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -14319,7 +14622,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -14570,7 +14873,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/docs/operations/pubmed-citation-matcher.md",
@@ -14609,7 +14912,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -15089,7 +15392,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -15309,7 +15612,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -15586,7 +15889,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/data/operations/toolbox-grounded-ideation-preflight-smoke-evidence-r0.json",
@@ -15595,7 +15898,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -15940,7 +16243,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -16334,7 +16637,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -16569,7 +16872,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -16868,7 +17171,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/schemas/operations/toolbox-arxiv-query-search-input-r0.schema.json",
@@ -16977,7 +17280,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -17255,7 +17558,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/schemas/operations/toolbox-crossref-query-search-input-r0.schema.json",
@@ -17309,7 +17612,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -17750,7 +18053,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -18081,7 +18384,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/schemas/operations/toolbox-openalex-query-search-input-r0.schema.json",
@@ -18170,7 +18473,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -18437,7 +18740,7 @@
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/data/operations/toolbox-europe-pmc-query-search-evidence-r0.json",
@@ -18456,7 +18759,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -18652,7 +18955,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -19117,7 +19420,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -19334,12 +19637,12 @@
         {
           "path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0"
+          "sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38"
         },
         {
           "path": "ignition/tests/test_toolbox_identity_cards.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ad0be9b747eee29fd6e67d24c2a39b7bf7031648"
+          "sha1": "883c6be6ffd093c28dda9b847848130833573ee1"
         },
         {
           "path": "ignition/tests/test_toolbox_routing.py",
@@ -19353,7 +19656,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -19548,7 +19851,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -19759,7 +20062,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -20267,7 +20570,7 @@
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
-      "candidate_catalog_blob_sha1": "86354181437fc3fb69b0c1cf41d4cf0e16b746c0",
+      "candidate_catalog_blob_sha1": "71473505accf3c08c3f6918b2fdda29b1ad59a38",
       "current_registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
       "current_registry_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
     },
@@ -20399,6 +20702,6 @@
       "router_selectable_by_default": true
     }
   ],
-  "card_count": 83,
+  "card_count": 84,
   "claim_ceiling": "Discovery metadata only; registry declarations and experimental availability do not imply that a task should invoke a tool, that an operation ran, or that any result is true."
 }
