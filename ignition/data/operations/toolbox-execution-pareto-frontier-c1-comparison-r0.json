@@ -2,7 +2,7 @@
   "schema_version": "execution-candidate-pareto-c1-comparison-r0",
   "candidate_tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
   "status": "COMPARISON_UNKNOWN",
-  "comparison_scope": "Static input/output contract comparison only. No matched real task has yet supplied paired outcome and resource measurements to this candidate and an existing comparator.",
+  "comparison_scope": "Static input/output contract comparison against three existing analyzers plus one real task analyzed by this candidate across route variants. No apples-to-apples task has been run through this candidate and an existing comparator.",
   "compared_tool_ids": [
     "maintenance.compare_actions_repeated_step_sequences",
     "maintenance.attribute_actions_validation_evidence",
@@ -25,18 +25,23 @@
       "difference": "Does not consume execution outcomes or measured resource observations."
     }
   ],
-  "paired_real_task_comparison": "NOT_RUN_NO_MATCHED_CANDIDATE_DATA",
+  "paired_real_task_comparison": "NOT_RUN_FOR_EXISTING_COMPARATORS; one captured Crossref route task was analyzed by this tool, but the task did not exercise the three existing comparator implementations.",
   "disposition": "KEEP_NEW_TOOL_EXPERIMENTAL_AND_DEFAULT_OFF; KEEP_EXISTING_COMPARATORS; RETIRE_NO_TOOL",
   "findings": [
-    "The candidate's bounded contract is distinct from the three inspected implementations, but static scope comparison does not establish relative task quality, cost, reliability, or broad non-replacement.",
+    "One captured Crossref task supplied paired route outcomes and request counts to this candidate, but the compared candidates were route variants rather than competing analyzer tools.",
+    "The candidate's bounded contract is distinct from the three inspected implementations; no apples-to-apples comparator result establishes relative task quality, cost, reliability, or broad non-replacement.",
     "Do not claim the HarnessPro paper's benchmark gains for this implementation.",
-    "Collect a low-cost same-task paired comparison before changing any tool's lifecycle or route eligibility."
+    "Compare only directly overlapping use cases. Retire an incumbent only if a newer candidate is better and covers every valuable incumbent use case; otherwise keep task-specific coexistence."
   ],
   "evidence_refs": [
     "ignition/docs/operations/execution-candidate-pareto-frontier.md",
     "ignition/tools/toolbox_execution_pareto_frontier.py",
     "ignition/tools/toolbox_actions_repeated_step_analysis.py",
     "ignition/tools/toolbox_actions_validation_attribution.py",
-    "ignition/tools/toolbox_context_packet_variant_comparator.py"
+    "ignition/tools/toolbox_context_packet_variant_comparator.py",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-evaluator-r0.json",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-input-r0.json",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-output-r0.json",
+    "ignition/data/operations/toolbox-execution-pareto-crossref-route-evidence-r0.json"
   ]
 }

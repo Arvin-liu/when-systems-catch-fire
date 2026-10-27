@@ -8828,7 +8828,7 @@
       "maintainer": "Ignition repository maintainers; this field grants no execution, CI, Owner, or release authority.",
       "availability": "EXPERIMENTAL_AVAILABLE",
       "lifecycle": "EXPERIMENTAL",
-      "evidence_level": "SYNTHETIC_ONLY",
+      "evidence_level": "REAL_TASK_OUTCOME",
       "source_path": "ignition/tools/toolbox_execution_pareto_frontier.py",
       "entrypoint": "python3 -B ignition/tools/toolbox_execution_pareto_frontier.py --stdin",
       "source_refs": [
@@ -8871,6 +8871,30 @@
         {
           "path": "ignition/data/operations/toolbox-execution-pareto-frontier-route-evidence-r0.json",
           "role": "DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_ROUTE_RESULTS"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-crossref-evaluator-r0.json",
+          "role": "REAL_TASK_OUTCOME_EVALUATOR_CONTRACT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-crossref-input-r0.json",
+          "role": "REAL_TASK_PAIRED_ROUTE_INPUT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-crossref-output-r0.json",
+          "role": "REAL_TASK_ANALYSIS_RECEIPT"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-crossref-route-profile-r0.json",
+          "role": "REAL_TASK_ROUTE_DEMAND_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-execution-pareto-crossref-route-evidence-r0.json",
+          "role": "REAL_TASK_DEFAULT_OFF_AND_EXPLICIT_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/tests/test_toolbox_execution_pareto_frontier_real_task.py",
+          "role": "REAL_TASK_EVIDENCE_AND_ROUTE_REPLAY_TEST"
         },
         {
           "path": "ignition/tools/toolbox_actions_repeated_step_analysis.py",
@@ -8955,7 +8979,7 @@
       ],
       "comparison_evidence": {
         "status": "COMPARISON_UNKNOWN",
-        "scope": "Static functional-contract comparison with three existing offline analyzers; no matched real task has supplied paired outcome/resource measurements to both the new tool and any comparator.",
+        "scope": "Static functional-contract comparison with three existing offline analyzers plus one real Crossref route-variant analysis. The real task did not exercise those incumbent comparator implementations.",
         "compared_tool_ids": [
           "maintenance.compare_actions_repeated_step_sequences",
           "maintenance.attribute_actions_validation_evidence",
@@ -8968,11 +8992,13 @@
         ],
         "evidence_refs": [
           "ignition/data/operations/toolbox-execution-pareto-frontier-c1-comparison-r0.json",
-          "ignition/docs/operations/execution-candidate-pareto-frontier.md"
+          "ignition/docs/operations/execution-candidate-pareto-frontier.md",
+          "ignition/data/operations/toolbox-execution-pareto-crossref-output-r0.json",
+          "ignition/data/operations/toolbox-execution-pareto-crossref-route-evidence-r0.json"
         ],
         "findings": [
-          "Existing comparators expose different inputs and outputs; a same-task quality/cost comparison remains unrun, so broad non-replacement is unknown.",
-          "The current static comparison supports no blanket retention or retirement decision. Compare only directly overlapping use cases on a small matched task; under C1, retire an incumbent only if the candidate is better and covers every valuable incumbent use case, otherwise coexist by task scope."
+          "One captured Crossref route task was analyzed; the route variants were not competing analyzer tools, and the existing comparators have different input/output contracts.",
+          "C1 lifecycle comparison remains unknown. Compare only directly overlapping use cases; retire an incumbent only if a newer candidate is better and covers every valuable incumbent use case, otherwise coexist by task scope."
         ]
       },
       "deprecation_or_retirement_status": {
@@ -8991,7 +9017,8 @@
       "validation": {
         "focused_checks": [
           "ignition/tests/test_toolbox_execution_pareto_frontier.py",
-          "ignition/tests/test_toolbox_execution_pareto_frontier_routing.py"
+          "ignition/tests/test_toolbox_execution_pareto_frontier_routing.py",
+          "ignition/tests/test_toolbox_execution_pareto_frontier_real_task.py"
         ],
         "negative_controls": [
           "Reject duplicate JSON keys, duplicate candidate IDs, bool costs, unknown outcomes, unpaired case/trial sets, and oversized input.",

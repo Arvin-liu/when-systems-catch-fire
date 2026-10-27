@@ -24,7 +24,15 @@ The input schema is `ignition/schemas/operations/execution-candidate-pareto-inpu
 
 This is a small deterministic analysis primitive inspired by Workbench #85's separate HarnessPro candidate-selection item. It implements only matched-input outcome/resource aggregation and Pareto-dominance reporting. It does not implement HarnessPro's agents, trajectory diagnosis, generated tests, candidate editing, recursion, benchmark claims, or deployment choices. The paper treats task success and cost as joint objectives, requires a performance floor, and keeps latency auxiliary; this tool follows only the bounded aggregate/frontier portion and does not reproduce the paper's experiments.
 
-The existing GitHub Actions tools analyze per-run checks, CI target attribution, or repeated job/step intervals. `maintenance.compare_context_packet_variants` compares packet structure and declared obligations. Those tools do not accept paired task outcome/resource rows or compute a candidate frontier. Their distinct functions remain available. No real paired task comparison with this candidate tool has yet been recorded, so replacement value remains `COMPARISON_UNKNOWN` and no existing tool is retired.
+The existing GitHub Actions tools analyze per-run checks, CI target attribution, or repeated job/step intervals. `maintenance.compare_context_packet_variants` compares packet structure and declared obligations. Those tools do not accept paired task outcome/resource rows or compute a candidate frontier. Their distinct functions remain available.
+
+## Limited real task replay
+
+On 2026-10-27 the tool analyzed one previously captured Crossref citation lookup task. The evaluator asks whether the prior source-manifest DOI appears in the provider's top-two rows and counts only observed HTTP GET requests. The captured variants were generic-only (FAIL, 1 GET), specialized-only (PASS, 1 GET), specialized plus generic (PASS, 2 GETs), and specialized plus the identical generic recheck (PASS, 3 GETs). For this one case and trial, the tool reports `specialized_only` as the observed frontier and the other variants as dominated.
+
+This is a retrospective analysis of captured results, not four randomized live trials. The source-manifest DOI is a comparison target, not independently authenticated truth. Provider authenticity, general precision/recall, scientific support, reliability, latency, bandwidth, and monetary cost remain unverified or unmeasured. The adaptive planner stayed default-off and selected this tool only after explicit experimental allowlisting; its proposal did not authorize execution. The caller separately invoked the analyzer offline on the captured evidence.
+
+This task demonstrates the candidate analyzer on real task data; it does not compare the analyzer itself against the three scope-specific incumbent tools. Their contracts still do not overlap on this task, so replacement value remains `COMPARISON_UNKNOWN`, the candidate remains experimental/default-off, and no existing tool is retired. Under C1, a future incumbent comparison must use directly overlapping tasks; retire an incumbent only if a newer tool is better and covers every valuable incumbent use case.
 
 ## Source and license
 
