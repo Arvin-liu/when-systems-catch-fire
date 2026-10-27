@@ -328,26 +328,6 @@ guard 的 `REPRODUCED_IMPLEMENTATION_DEFECT`。三项历史案例仍可检索，
 - 证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。原始与修复判定保持区分，不合并为单一结论。
 - 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的当前真相可确定性传播并在矛盾时 fail closed。
 
-### SYMBOLIC-SPHERE-I1 Symbolic Object, Power & Multi-Perspective Governance (stacked Draft candidate)
-
-The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: ownership is not truth; popularity is not truth; perspective does not excuse material error; symbolic analysis is not complete causal proof.
-
-### DECISION-INTEGRITY-I1 Principle Lock, Process Quality & Outcome-Bias Governance (stacked Draft candidate)
-
-Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: success does not prove process quality; failure does not disprove a good process; no investment advice; information intake is not integration.
-
 ## 更新规则
 
 未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 `.github/README.md`、`HUMAN-READING.md`、`KNOWLEDGE/`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage、知识体验 manifest 和历史记录。历史证据不删除，Git 历史不改写。
-
-## 更新规则
-
-未来工作只要改变能力、状态、结论、纠正、开放问题、证据或公开表述，就必须同步 `.github/README.md`、`HUMAN-READING.md`、`KNOWLEDGE/`、相应 `RESULTS/` 页面、机器 Delta/impact/lineage、知识体验 manifest 和历史记录。历史证据不删除，Git 历史不改写。
-
-### SYMBOLIC-SPHERE-I1 Symbolic Object, Power & Multi-Perspective Governance (stacked Draft candidate)
-
-The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: ownership is not truth; popularity is not truth; perspective does not excuse material error; symbolic analysis is not complete causal proof.
-
-### DECISION-INTEGRITY-I1 Principle Lock, Process Quality & Outcome-Bias Governance (stacked Draft candidate)
-
-Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: success does not prove process quality; failure does not disprove a good process; no investment advice; information intake is not integration.
