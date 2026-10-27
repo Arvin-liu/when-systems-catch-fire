@@ -1,0 +1,121 @@
+{
+  "schema_version": "ignition-136-step00-live-executor-audit-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "00",
+  "observed_at": "2026-08-23T16:03:06Z",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "4fd8bc536a0d2b5d90e8ef837621dfb28b9ffb11",
+    "command_path": "agent-commands/IGNITION-20260823-136-live-external-executor-bridge-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "expected_sha": "3acf15ea4c1b1c27eb6e8b9cadbc4f0526bdfddb",
+    "observed_remote_sha": "3acf15ea4c1b1c27eb6e8b9cadbc4f0526bdfddb",
+    "task_branch": "codex/ignition-136-live-external-executor-bridge-r1-20260823",
+    "worktree": "when-systems-catch-fire-136",
+    "clean": true,
+    "main_divergence": false
+  },
+  "prior_task135_regression": {
+    "source": "IGNITION-135 exact candidate and fresh remote-main evidence",
+    "candidate_sha": "3acf15ea4c1b1c27eb6e8b9cadbc4f0526bdfddb",
+    "task_checkout": {"tests": 1082, "failures": 0, "errors": 0, "skips": 0, "natural_terminal": true},
+    "fresh_clone": {"tests": 1082, "failures": 0, "errors": 0, "skips": 0, "natural_terminal": true},
+    "default_suite_live_inference": false
+  },
+  "repository_audit": {
+    "external_federation_contract": "ignition/agent_federation/contracts.py",
+    "external_federation_adapters": [
+      "ignition/agent_federation/adapters/codex.py",
+      "ignition/agent_federation/adapters/hermes.py",
+      "ignition/agent_federation/adapters/openclaw.py"
+    ],
+    "routing_policy": "ignition/data/agent-federation/federation-routing-policy-r1.json",
+    "executor_inventory": "ignition/data/agent-federation/executor-inventory-r1.json",
+    "durability_admission_contract": "ignition/data/operations/durability/executor-admission-contract-r1.json",
+    "prior_live_smoke_status": "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+    "drift_summary": {
+      "inventory_is_historical_task122_snapshot": true,
+      "current_public_interfaces_reobserved": true,
+      "openclaw_help_and_version_changed_since_task122_inventory": true,
+      "hermes_help_and_version_changed_since_task122_inventory": true,
+      "codex_help_and_version_changed_since_task122_inventory": true,
+      "legacy_inventory_is_not_overwritten": true
+    }
+  },
+  "executor_observations": [
+    {
+      "executor_id": "external.openclaw",
+      "family": "OpenClaw",
+      "binary_path": "/Users/zhiyuan/.local/bin/openclaw",
+      "version": "OpenClaw 2026.7.1-2 (0790d9f)",
+      "help_surface": "openclaw agent --help",
+      "help_sha256": "b436caaa7b5712b3f596a4f7cd8c3f0f327edee2d240323cf7c7a532b09fc1f8",
+      "nonsecret_presence": ["/Users/zhiyuan/.openclaw/openclaw.json", "loopback gateway 127.0.0.1:18789", "gateway RPC probe ok"],
+      "observed_capabilities": ["message_file", "json_result", "agent_timeout", "gateway_or_local_agent_turn"],
+      "workspace_binding": "not_proven_disposable_from_public agent help",
+      "read_only_capability": "not_proven",
+      "structured_result": "JSON surface advertised",
+      "timeout_cancel_resume": {"timeout": "advertised", "cancel": "not_observed", "resume": "not_observed"},
+      "side_effect_risk": ["gateway-owned workspace", "configured channels/session routing", "message command surface"],
+      "billing_auth": "config presence only; secret content not read",
+      "step11_candidate": "SKIPPED_UNSAFE_WORKSPACE_OR_CHANNEL_BOUNDARY",
+      "live_probe": "NOT_RUN_STEP_00"
+    },
+    {
+      "executor_id": "external.hermes",
+      "family": "Hermes Agent",
+      "binary_path": "/Users/zhiyuan/.local/bin/hermes",
+      "version": "Hermes Agent v0.20.0 (2026.8.3)",
+      "help_surface": "hermes --help",
+      "help_sha256": "0fdcfd5b047316e2fbef3873d90dd59c22f06e91fdfa5ae5bae088d83bb2094b",
+      "nonsecret_presence": ["/Users/zhiyuan/.hermes/auth.json", "/Users/zhiyuan/.hermes/.env", "launchd gateway running"],
+      "observed_capabilities": ["oneshot_text", "safe_mode", "ignore_user_config", "ignore_rules", "no_restore_cwd"],
+      "workspace_binding": "cwd controllable; public CLI has no explicit read-only flag",
+      "read_only_capability": "candidate only; requires disposable read-only filesystem preflight",
+      "structured_result": "text final response; usage JSON is optional and not used",
+      "timeout_cancel_resume": {"timeout": "not advertised", "cancel": "not advertised", "resume": "advertised but forbidden for pilot"},
+      "side_effect_risk": ["Hermes-owned tool/terminal boundary unless safe mode and filesystem guard hold", "private session/config state"],
+      "billing_auth": "existing OpenAI Codex auth presence observed; secret content not read; no provider mutation",
+      "step11_candidate": "ELIGIBLE_CANDIDATE_REQUIRES_READ_ONLY_FILESYSTEM_GUARD",
+      "live_probe": "NOT_RUN_STEP_00"
+    },
+    {
+      "executor_id": "external.codex",
+      "family": "Codex CLI",
+      "binary_path": "/Users/zhiyuan/.local/bin/codex",
+      "version": "codex-cli 0.144.4",
+      "help_surface": "codex exec --help",
+      "help_sha256": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+      "nonsecret_presence": ["codex login status: logged in using ChatGPT"],
+      "observed_capabilities": ["sandbox=read-only", "ephemeral", "cd", "jsonl", "output-schema", "bounded public exec surface"],
+      "workspace_binding": "explicit disposable cwd supported",
+      "read_only_capability": "explicit public read-only sandbox advertised",
+      "structured_result": "JSONL events and output schema advertised",
+      "timeout_cancel_resume": {"timeout": "adapter bounded", "cancel": "process boundary", "resume": "public command exists but forbidden for pilot"},
+      "side_effect_risk": ["model-generated commands remain executor-owned; read-only sandbox is required"],
+      "billing_auth": "login status only; secret content not read; no provider mutation",
+      "step11_candidate": "ELIGIBLE_CANDIDATE_REQUIRES_FINAL_PREFLIGHT",
+      "live_probe": "NOT_RUN_STEP_00"
+    }
+  ],
+  "verification": {
+    "git_status": "CLEAN",
+    "remote_main_sha_equal_expected": true,
+    "targeted_preflight": {
+      "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_full_regression_runner -v",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS"
+    },
+    "real_inference_triggered": false,
+    "formal_repository_or_1111_mutated": false
+  },
+  "next_step": "01",
+  "claim_ceiling": "Repository-local Task136 Step00 inventory and safety-preflight evidence only; no live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

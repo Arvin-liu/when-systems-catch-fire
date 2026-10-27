@@ -1,0 +1,29 @@
+{
+  "schema_version": "ignition-132-step08-adversarial-matrix-r1",
+  "task_id": "IGNITION-20260822-132",
+  "step": "08",
+  "fixture_path": "ignition/data/operations/iterations/132/fixtures/release-task-identity-negative-fixtures-r1.json",
+  "case_count": 14,
+  "status": "PASS",
+  "required_paths_covered": [
+    "formal-132-current-source-131",
+    "current-132-lifecycle-131",
+    "current-132-snapshot-forged-131",
+    "architecture-129-promoted-to-current",
+    "witness-131-sha-132-candidate",
+    "remote-sha-match-task-identity-mismatch",
+    "task-id-rollback",
+    "unknown-task-without-contract",
+    "stale-compiler-output",
+    "historical-task-131-document-is-legal",
+    "publication-ref-unreachable",
+    "publication-witness-missing",
+    "owner-epistemic-authority-promotion",
+    "same-task-advancement-rerun"
+  ],
+  "validation": {
+    "test_command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_task_identity_adversarial_fixtures",
+    "expected_behavior": "All negative cases fail closed with their declared reason code; historical Task131 and idempotent Task132 rerun pass.",
+    "claim_ceiling": "Adversarial release identity and evidence-gate validation only; no external truth, authority, production readiness, Owner acceptance or epistemic acceptance is inferred."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "durability-state-taxonomy-r1",
+  "taxonomy_id": "OS_DURABILITY_STATE_TAXONOMY_R1",
+  "authority_model": {
+    "canonical_sources": [
+      "append-only Event Ledger and its replayable event lineage",
+      "Owner/operator authority records where the existing contract explicitly permits them"
+    ],
+    "derived_projections": [
+      "snapshot state digest and replay checkpoint",
+      "current-facts, Human Surface and Current system map",
+      "queue, budget, memory and Driver recovery projections"
+    ],
+    "non_authority_classes": [
+      "DERIVED_REBUILDABLE",
+      "ADVISORY_SOFT_CONTEXT",
+      "EXTERNAL_POINTER_ONLY",
+      "HISTORICAL_SEALED",
+      "EPHEMERAL_PROCESS_LOCAL"
+    ]
+  },
+  "classes": [
+    {
+      "class_id": "CANONICAL_EVENT_SOURCED",
+      "meaning": "State whose authority comes from append-only, integrity-checked operational events and replay, not from a generated projection.",
+      "snapshot": "FULL_STATE",
+      "migration": "REPLAY_WITH_ADAPTER",
+      "discard": "NO",
+      "cross_namespace": "EXPLICIT_DELEGATION_ONLY",
+      "can_be_authority": false,
+      "examples": ["event lineage", "replayable lifecycle transition", "recorded revocation event", "accounting event"]
+    },
+    {
+      "class_id": "DERIVED_REBUILDABLE",
+      "meaning": "A deterministic view or cache that can be discarded and rebuilt from canonical events and declared registries.",
+      "snapshot": "FULL_STATE",
+      "migration": "FORMAT_ONLY",
+      "discard": "DERIVED_REBUILD",
+      "cross_namespace": "SCOPED_REFERENCE_ONLY",
+      "can_be_authority": false,
+      "examples": ["queue index", "memory index", "current-facts projection", "system-map projection"]
+    },
+    {
+      "class_id": "ADVISORY_SOFT_CONTEXT",
+      "meaning": "Versioned experimental or structural context that may inform bounded display but can never authorize, establish truth, or raise a claim ceiling.",
+      "snapshot": "VERSIONED_ADVISORY_POINTER",
+      "migration": "FORMAT_ONLY",
+      "discard": "DERIVED_REBUILD",
+      "cross_namespace": "EXPLICIT_DELEGATION_ONLY",
+      "can_be_authority": false,
+      "examples": ["ESI score", "Structural Governance Surface", "soft exposure receipt", "candidate experiment state"]
+    },
+    {
+      "class_id": "EXTERNAL_POINTER_ONLY",
+      "meaning": "A bounded reference to an external or private state whose contents are not imported into canonical state or public artifacts.",
+      "snapshot": "DIGEST_AND_POINTER",
+      "migration": "OPAQUE_POINTER_ONLY",
+      "discard": "EXPIRED_POINTER_ONLY",
+      "cross_namespace": "NO",
+      "can_be_authority": false,
+      "examples": ["vendor session reference", "unknown external side-effect reference", "private execution handle digest"]
+    },
+    {
+      "class_id": "HISTORICAL_SEALED",
+      "meaning": "A retained historical record that preserves lineage and prior conclusions without being rewritten to satisfy a current gate.",
+      "snapshot": "LINEAGE_REFERENCE",
+      "migration": "HISTORICAL_NO_REWRITE",
+      "discard": "NO",
+      "cross_namespace": "NO",
+      "can_be_authority": false,
+      "examples": ["126 sealed residual", "withdrawn event", "failed validation receipt", "historical propagation record"]
+    },
+    {
+      "class_id": "EPHEMERAL_PROCESS_LOCAL",
+      "meaning": "Transient process memory that is not durable, not replayable, and must not be mistaken for canonical operational state.",
+      "snapshot": "NOT_INCLUDED",
+      "migration": "NOT_MIGRATED",
+      "discard": "YES",
+      "cross_namespace": "NO",
+      "can_be_authority": false,
+      "examples": ["in-process lock", "thread handle", "temporary probe output", "uncommitted work buffer"]
+    }
+  ],
+  "hard_invariants": [
+    "Event Ledger remains the sole canonical operational authority; a snapshot is a recovery accelerator.",
+    "Generated current-facts, Human Surface and system-map projections never re-enter authoritative discovery.",
+    "ESI and Structural Governance Surface remain ADVISORY_ONLY after snapshot, migration and restore.",
+    "External secrets, tokens, hidden reasoning, prompts and vendor session contents never enter a canonical snapshot.",
+    "Historical event lineage, rejection, withdrawal and reconciliation records are never deleted by compaction.",
+    "Namespace scope is preserved by snapshot, migration, restore and cross-reference operations.",
+    "Unknown or newer schema epochs fail closed; no implicit coercion is allowed.",
+    "A derived projection cannot grant permission, truth authority, Owner acceptance, safety authority or epistemic acceptance."
+  ]
+}

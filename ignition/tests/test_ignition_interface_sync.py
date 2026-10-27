@@ -1,0 +1,102 @@
+import copy
+import unittest
+
+from tools.operations.validate_ignition_interface_sync import (
+    ADDITIONAL_LOCATORS,
+    InterfaceSyncError,
+    RECEIPT_PATH,
+    REGISTRY_PATH,
+    historical_rewrite_violations,
+    load_json,
+    markdown_visible_text,
+    operation_method_surfaces,
+    step11_introduction_commit,
+    validate,
+    validate_decision_contract,
+    validate_preserved_digests,
+    validate_semantics,
+)
+
+
+class IgnitionInterfaceSyncTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.receipt = load_json(RECEIPT_PATH)
+        cls.registry = load_json(REGISTRY_PATH)
+
+    def test_repository_interface_sync_is_valid(self):
+        report = validate()
+        self.assertEqual(report["declared_surfaces"], 20)
+        self.assertEqual(report["changed"], 12)
+        self.assertEqual(report["no_change_with_reason"], 8)
+        self.assertEqual(report["additional_surfaces"], 9)
+        self.assertEqual(report["historical_rewrites"], 0)
+
+    def test_every_registry_triggered_surface_has_exactly_one_decision(self):
+        required = operation_method_surfaces(self.registry)
+        actual = {item["surface_id"] for item in self.receipt["surface_decisions"]}
+        self.assertEqual(actual, set(required))
+        self.assertEqual(
+            {item["locator"] for item in self.receipt["additional_surface_decisions"]},
+            ADDITIONAL_LOCATORS,
+        )
+
+    def test_missing_registry_surface_fails_closed(self):
+        broken = copy.deepcopy(self.receipt)
+        broken["surface_decisions"].pop()
+        with self.assertRaisesRegex(InterfaceSyncError, "SURFACE_DECISION_SET_MISMATCH"):
+            validate_decision_contract(broken, self.registry)
+
+    def test_disallowed_surface_decision_fails_closed(self):
+        broken = copy.deepcopy(self.receipt)
+        target = next(item for item in broken["surface_decisions"] if item["surface_id"] == "method.iteration")
+        target["decision"] = "NOT_APPLICABLE"
+        with self.assertRaisesRegex(InterfaceSyncError, "DECISION_NOT_ALLOWED:method.iteration"):
+            validate_decision_contract(broken, self.registry)
+
+    def test_operating_method_precedes_iteration_in_interface_semantics(self):
+        validate_semantics(self.registry)
+        surfaces = {item["surface_id"]: item for item in self.registry["surfaces"]}
+        self.assertIn("method.operating", surfaces["method.iteration"]["derived_from"])
+
+    def test_markdown_tokens_use_visible_link_labels_not_destinations(self):
+        source = "请从[这个仓库](https://example.invalid/hidden-token)获取 Current。"
+        visible = markdown_visible_text(source)
+        self.assertIn("请从这个仓库获取", visible)
+        self.assertNotIn("hidden-token", visible)
+
+    def test_step11_no_change_digests_are_exact(self):
+        validate_preserved_digests(
+            self.receipt,
+            revision=step11_introduction_commit(),
+        )
+
+    def test_successor_iteration_additions_are_not_historical_rewrites(self):
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/149/new-evidence.json\n"
+            ),
+            [],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "M\tignition/data/operations/iterations/149/existing-evidence.json\n"
+            ),
+            ["ignition/data/operations/iterations/149/existing-evidence.json"],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/147/new-evidence.json\n"
+            ),
+            ["ignition/data/operations/iterations/147/new-evidence.json"],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/149/historical/new.json\n"
+            ),
+            ["ignition/data/operations/iterations/149/historical/new.json"],
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()

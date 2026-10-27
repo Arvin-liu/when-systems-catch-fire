@@ -1,0 +1,1453 @@
+{
+  "calibration_pair_count": 48,
+  "digest": "0c90e2e22e2e23337903ea9057ab7680df270a32664cb496ee4ac93e7f8f023f",
+  "in_family_holdout_pair_count": 48,
+  "instance_count": 288,
+  "pair_count": 144,
+  "pair_members_stay_together": true,
+  "rows": [
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-001-A",
+        "P-001-B"
+      ],
+      "pair_id": "P-001",
+      "split": "calibration",
+      "template_key": "F1-T00"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-002-A",
+        "P-002-B"
+      ],
+      "pair_id": "P-002",
+      "split": "calibration",
+      "template_key": "F1-T01"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-003-A",
+        "P-003-B"
+      ],
+      "pair_id": "P-003",
+      "split": "calibration",
+      "template_key": "F1-T02"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-004-A",
+        "P-004-B"
+      ],
+      "pair_id": "P-004",
+      "split": "calibration",
+      "template_key": "F1-T03"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-005-A",
+        "P-005-B"
+      ],
+      "pair_id": "P-005",
+      "split": "in_family_holdout",
+      "template_key": "F1-T04"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-006-A",
+        "P-006-B"
+      ],
+      "pair_id": "P-006",
+      "split": "in_family_holdout",
+      "template_key": "F1-T05"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-007-A",
+        "P-007-B"
+      ],
+      "pair_id": "P-007",
+      "split": "in_family_holdout",
+      "template_key": "F1-T06"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-008-A",
+        "P-008-B"
+      ],
+      "pair_id": "P-008",
+      "split": "in_family_holdout",
+      "template_key": "F1-T07"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-009-A",
+        "P-009-B"
+      ],
+      "pair_id": "P-009",
+      "split": "transfer_holdout",
+      "template_key": "F1-T08"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-010-A",
+        "P-010-B"
+      ],
+      "pair_id": "P-010",
+      "split": "transfer_holdout",
+      "template_key": "F1-T09"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-011-A",
+        "P-011-B"
+      ],
+      "pair_id": "P-011",
+      "split": "transfer_holdout",
+      "template_key": "F1-T10"
+    },
+    {
+      "family_id": "F1",
+      "instance_ids": [
+        "P-012-A",
+        "P-012-B"
+      ],
+      "pair_id": "P-012",
+      "split": "transfer_holdout",
+      "template_key": "F1-T11"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-013-A",
+        "P-013-B"
+      ],
+      "pair_id": "P-013",
+      "split": "calibration",
+      "template_key": "F2-T00"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-014-A",
+        "P-014-B"
+      ],
+      "pair_id": "P-014",
+      "split": "calibration",
+      "template_key": "F2-T01"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-015-A",
+        "P-015-B"
+      ],
+      "pair_id": "P-015",
+      "split": "calibration",
+      "template_key": "F2-T02"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-016-A",
+        "P-016-B"
+      ],
+      "pair_id": "P-016",
+      "split": "calibration",
+      "template_key": "F2-T03"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-017-A",
+        "P-017-B"
+      ],
+      "pair_id": "P-017",
+      "split": "in_family_holdout",
+      "template_key": "F2-T04"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-018-A",
+        "P-018-B"
+      ],
+      "pair_id": "P-018",
+      "split": "in_family_holdout",
+      "template_key": "F2-T05"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-019-A",
+        "P-019-B"
+      ],
+      "pair_id": "P-019",
+      "split": "in_family_holdout",
+      "template_key": "F2-T06"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-020-A",
+        "P-020-B"
+      ],
+      "pair_id": "P-020",
+      "split": "in_family_holdout",
+      "template_key": "F2-T07"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-021-A",
+        "P-021-B"
+      ],
+      "pair_id": "P-021",
+      "split": "transfer_holdout",
+      "template_key": "F2-T08"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-022-A",
+        "P-022-B"
+      ],
+      "pair_id": "P-022",
+      "split": "transfer_holdout",
+      "template_key": "F2-T09"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-023-A",
+        "P-023-B"
+      ],
+      "pair_id": "P-023",
+      "split": "transfer_holdout",
+      "template_key": "F2-T10"
+    },
+    {
+      "family_id": "F2",
+      "instance_ids": [
+        "P-024-A",
+        "P-024-B"
+      ],
+      "pair_id": "P-024",
+      "split": "transfer_holdout",
+      "template_key": "F2-T11"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-025-A",
+        "P-025-B"
+      ],
+      "pair_id": "P-025",
+      "split": "calibration",
+      "template_key": "F3-T00"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-026-A",
+        "P-026-B"
+      ],
+      "pair_id": "P-026",
+      "split": "calibration",
+      "template_key": "F3-T01"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-027-A",
+        "P-027-B"
+      ],
+      "pair_id": "P-027",
+      "split": "calibration",
+      "template_key": "F3-T02"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-028-A",
+        "P-028-B"
+      ],
+      "pair_id": "P-028",
+      "split": "calibration",
+      "template_key": "F3-T03"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-029-A",
+        "P-029-B"
+      ],
+      "pair_id": "P-029",
+      "split": "in_family_holdout",
+      "template_key": "F3-T04"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-030-A",
+        "P-030-B"
+      ],
+      "pair_id": "P-030",
+      "split": "in_family_holdout",
+      "template_key": "F3-T05"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-031-A",
+        "P-031-B"
+      ],
+      "pair_id": "P-031",
+      "split": "in_family_holdout",
+      "template_key": "F3-T06"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-032-A",
+        "P-032-B"
+      ],
+      "pair_id": "P-032",
+      "split": "in_family_holdout",
+      "template_key": "F3-T07"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-033-A",
+        "P-033-B"
+      ],
+      "pair_id": "P-033",
+      "split": "transfer_holdout",
+      "template_key": "F3-T08"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-034-A",
+        "P-034-B"
+      ],
+      "pair_id": "P-034",
+      "split": "transfer_holdout",
+      "template_key": "F3-T09"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-035-A",
+        "P-035-B"
+      ],
+      "pair_id": "P-035",
+      "split": "transfer_holdout",
+      "template_key": "F3-T10"
+    },
+    {
+      "family_id": "F3",
+      "instance_ids": [
+        "P-036-A",
+        "P-036-B"
+      ],
+      "pair_id": "P-036",
+      "split": "transfer_holdout",
+      "template_key": "F3-T11"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-037-A",
+        "P-037-B"
+      ],
+      "pair_id": "P-037",
+      "split": "calibration",
+      "template_key": "F4-T00"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-038-A",
+        "P-038-B"
+      ],
+      "pair_id": "P-038",
+      "split": "calibration",
+      "template_key": "F4-T01"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-039-A",
+        "P-039-B"
+      ],
+      "pair_id": "P-039",
+      "split": "calibration",
+      "template_key": "F4-T02"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-040-A",
+        "P-040-B"
+      ],
+      "pair_id": "P-040",
+      "split": "calibration",
+      "template_key": "F4-T03"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-041-A",
+        "P-041-B"
+      ],
+      "pair_id": "P-041",
+      "split": "in_family_holdout",
+      "template_key": "F4-T04"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-042-A",
+        "P-042-B"
+      ],
+      "pair_id": "P-042",
+      "split": "in_family_holdout",
+      "template_key": "F4-T05"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-043-A",
+        "P-043-B"
+      ],
+      "pair_id": "P-043",
+      "split": "in_family_holdout",
+      "template_key": "F4-T06"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-044-A",
+        "P-044-B"
+      ],
+      "pair_id": "P-044",
+      "split": "in_family_holdout",
+      "template_key": "F4-T07"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-045-A",
+        "P-045-B"
+      ],
+      "pair_id": "P-045",
+      "split": "transfer_holdout",
+      "template_key": "F4-T08"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-046-A",
+        "P-046-B"
+      ],
+      "pair_id": "P-046",
+      "split": "transfer_holdout",
+      "template_key": "F4-T09"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-047-A",
+        "P-047-B"
+      ],
+      "pair_id": "P-047",
+      "split": "transfer_holdout",
+      "template_key": "F4-T10"
+    },
+    {
+      "family_id": "F4",
+      "instance_ids": [
+        "P-048-A",
+        "P-048-B"
+      ],
+      "pair_id": "P-048",
+      "split": "transfer_holdout",
+      "template_key": "F4-T11"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-049-A",
+        "P-049-B"
+      ],
+      "pair_id": "P-049",
+      "split": "calibration",
+      "template_key": "F5-T00"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-050-A",
+        "P-050-B"
+      ],
+      "pair_id": "P-050",
+      "split": "calibration",
+      "template_key": "F5-T01"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-051-A",
+        "P-051-B"
+      ],
+      "pair_id": "P-051",
+      "split": "calibration",
+      "template_key": "F5-T02"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-052-A",
+        "P-052-B"
+      ],
+      "pair_id": "P-052",
+      "split": "calibration",
+      "template_key": "F5-T03"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-053-A",
+        "P-053-B"
+      ],
+      "pair_id": "P-053",
+      "split": "in_family_holdout",
+      "template_key": "F5-T04"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-054-A",
+        "P-054-B"
+      ],
+      "pair_id": "P-054",
+      "split": "in_family_holdout",
+      "template_key": "F5-T05"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-055-A",
+        "P-055-B"
+      ],
+      "pair_id": "P-055",
+      "split": "in_family_holdout",
+      "template_key": "F5-T06"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-056-A",
+        "P-056-B"
+      ],
+      "pair_id": "P-056",
+      "split": "in_family_holdout",
+      "template_key": "F5-T07"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-057-A",
+        "P-057-B"
+      ],
+      "pair_id": "P-057",
+      "split": "transfer_holdout",
+      "template_key": "F5-T08"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-058-A",
+        "P-058-B"
+      ],
+      "pair_id": "P-058",
+      "split": "transfer_holdout",
+      "template_key": "F5-T09"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-059-A",
+        "P-059-B"
+      ],
+      "pair_id": "P-059",
+      "split": "transfer_holdout",
+      "template_key": "F5-T10"
+    },
+    {
+      "family_id": "F5",
+      "instance_ids": [
+        "P-060-A",
+        "P-060-B"
+      ],
+      "pair_id": "P-060",
+      "split": "transfer_holdout",
+      "template_key": "F5-T11"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-061-A",
+        "P-061-B"
+      ],
+      "pair_id": "P-061",
+      "split": "calibration",
+      "template_key": "F6-T00"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-062-A",
+        "P-062-B"
+      ],
+      "pair_id": "P-062",
+      "split": "calibration",
+      "template_key": "F6-T01"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-063-A",
+        "P-063-B"
+      ],
+      "pair_id": "P-063",
+      "split": "calibration",
+      "template_key": "F6-T02"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-064-A",
+        "P-064-B"
+      ],
+      "pair_id": "P-064",
+      "split": "calibration",
+      "template_key": "F6-T03"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-065-A",
+        "P-065-B"
+      ],
+      "pair_id": "P-065",
+      "split": "in_family_holdout",
+      "template_key": "F6-T04"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-066-A",
+        "P-066-B"
+      ],
+      "pair_id": "P-066",
+      "split": "in_family_holdout",
+      "template_key": "F6-T05"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-067-A",
+        "P-067-B"
+      ],
+      "pair_id": "P-067",
+      "split": "in_family_holdout",
+      "template_key": "F6-T06"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-068-A",
+        "P-068-B"
+      ],
+      "pair_id": "P-068",
+      "split": "in_family_holdout",
+      "template_key": "F6-T07"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-069-A",
+        "P-069-B"
+      ],
+      "pair_id": "P-069",
+      "split": "transfer_holdout",
+      "template_key": "F6-T08"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-070-A",
+        "P-070-B"
+      ],
+      "pair_id": "P-070",
+      "split": "transfer_holdout",
+      "template_key": "F6-T09"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-071-A",
+        "P-071-B"
+      ],
+      "pair_id": "P-071",
+      "split": "transfer_holdout",
+      "template_key": "F6-T10"
+    },
+    {
+      "family_id": "F6",
+      "instance_ids": [
+        "P-072-A",
+        "P-072-B"
+      ],
+      "pair_id": "P-072",
+      "split": "transfer_holdout",
+      "template_key": "F6-T11"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-073-A",
+        "P-073-B"
+      ],
+      "pair_id": "P-073",
+      "split": "calibration",
+      "template_key": "F7-T00"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-074-A",
+        "P-074-B"
+      ],
+      "pair_id": "P-074",
+      "split": "calibration",
+      "template_key": "F7-T01"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-075-A",
+        "P-075-B"
+      ],
+      "pair_id": "P-075",
+      "split": "calibration",
+      "template_key": "F7-T02"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-076-A",
+        "P-076-B"
+      ],
+      "pair_id": "P-076",
+      "split": "calibration",
+      "template_key": "F7-T03"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-077-A",
+        "P-077-B"
+      ],
+      "pair_id": "P-077",
+      "split": "in_family_holdout",
+      "template_key": "F7-T04"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-078-A",
+        "P-078-B"
+      ],
+      "pair_id": "P-078",
+      "split": "in_family_holdout",
+      "template_key": "F7-T05"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-079-A",
+        "P-079-B"
+      ],
+      "pair_id": "P-079",
+      "split": "in_family_holdout",
+      "template_key": "F7-T06"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-080-A",
+        "P-080-B"
+      ],
+      "pair_id": "P-080",
+      "split": "in_family_holdout",
+      "template_key": "F7-T07"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-081-A",
+        "P-081-B"
+      ],
+      "pair_id": "P-081",
+      "split": "transfer_holdout",
+      "template_key": "F7-T08"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-082-A",
+        "P-082-B"
+      ],
+      "pair_id": "P-082",
+      "split": "transfer_holdout",
+      "template_key": "F7-T09"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-083-A",
+        "P-083-B"
+      ],
+      "pair_id": "P-083",
+      "split": "transfer_holdout",
+      "template_key": "F7-T10"
+    },
+    {
+      "family_id": "F7",
+      "instance_ids": [
+        "P-084-A",
+        "P-084-B"
+      ],
+      "pair_id": "P-084",
+      "split": "transfer_holdout",
+      "template_key": "F7-T11"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-085-A",
+        "P-085-B"
+      ],
+      "pair_id": "P-085",
+      "split": "calibration",
+      "template_key": "F8-T00"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-086-A",
+        "P-086-B"
+      ],
+      "pair_id": "P-086",
+      "split": "calibration",
+      "template_key": "F8-T01"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-087-A",
+        "P-087-B"
+      ],
+      "pair_id": "P-087",
+      "split": "calibration",
+      "template_key": "F8-T02"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-088-A",
+        "P-088-B"
+      ],
+      "pair_id": "P-088",
+      "split": "calibration",
+      "template_key": "F8-T03"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-089-A",
+        "P-089-B"
+      ],
+      "pair_id": "P-089",
+      "split": "in_family_holdout",
+      "template_key": "F8-T04"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-090-A",
+        "P-090-B"
+      ],
+      "pair_id": "P-090",
+      "split": "in_family_holdout",
+      "template_key": "F8-T05"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-091-A",
+        "P-091-B"
+      ],
+      "pair_id": "P-091",
+      "split": "in_family_holdout",
+      "template_key": "F8-T06"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-092-A",
+        "P-092-B"
+      ],
+      "pair_id": "P-092",
+      "split": "in_family_holdout",
+      "template_key": "F8-T07"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-093-A",
+        "P-093-B"
+      ],
+      "pair_id": "P-093",
+      "split": "transfer_holdout",
+      "template_key": "F8-T08"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-094-A",
+        "P-094-B"
+      ],
+      "pair_id": "P-094",
+      "split": "transfer_holdout",
+      "template_key": "F8-T09"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-095-A",
+        "P-095-B"
+      ],
+      "pair_id": "P-095",
+      "split": "transfer_holdout",
+      "template_key": "F8-T10"
+    },
+    {
+      "family_id": "F8",
+      "instance_ids": [
+        "P-096-A",
+        "P-096-B"
+      ],
+      "pair_id": "P-096",
+      "split": "transfer_holdout",
+      "template_key": "F8-T11"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-097-A",
+        "P-097-B"
+      ],
+      "pair_id": "P-097",
+      "split": "calibration",
+      "template_key": "F9-T00"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-098-A",
+        "P-098-B"
+      ],
+      "pair_id": "P-098",
+      "split": "calibration",
+      "template_key": "F9-T01"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-099-A",
+        "P-099-B"
+      ],
+      "pair_id": "P-099",
+      "split": "calibration",
+      "template_key": "F9-T02"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-100-A",
+        "P-100-B"
+      ],
+      "pair_id": "P-100",
+      "split": "calibration",
+      "template_key": "F9-T03"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-101-A",
+        "P-101-B"
+      ],
+      "pair_id": "P-101",
+      "split": "in_family_holdout",
+      "template_key": "F9-T04"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-102-A",
+        "P-102-B"
+      ],
+      "pair_id": "P-102",
+      "split": "in_family_holdout",
+      "template_key": "F9-T05"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-103-A",
+        "P-103-B"
+      ],
+      "pair_id": "P-103",
+      "split": "in_family_holdout",
+      "template_key": "F9-T06"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-104-A",
+        "P-104-B"
+      ],
+      "pair_id": "P-104",
+      "split": "in_family_holdout",
+      "template_key": "F9-T07"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-105-A",
+        "P-105-B"
+      ],
+      "pair_id": "P-105",
+      "split": "transfer_holdout",
+      "template_key": "F9-T08"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-106-A",
+        "P-106-B"
+      ],
+      "pair_id": "P-106",
+      "split": "transfer_holdout",
+      "template_key": "F9-T09"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-107-A",
+        "P-107-B"
+      ],
+      "pair_id": "P-107",
+      "split": "transfer_holdout",
+      "template_key": "F9-T10"
+    },
+    {
+      "family_id": "F9",
+      "instance_ids": [
+        "P-108-A",
+        "P-108-B"
+      ],
+      "pair_id": "P-108",
+      "split": "transfer_holdout",
+      "template_key": "F9-T11"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-109-A",
+        "P-109-B"
+      ],
+      "pair_id": "P-109",
+      "split": "calibration",
+      "template_key": "F10-T00"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-110-A",
+        "P-110-B"
+      ],
+      "pair_id": "P-110",
+      "split": "calibration",
+      "template_key": "F10-T01"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-111-A",
+        "P-111-B"
+      ],
+      "pair_id": "P-111",
+      "split": "calibration",
+      "template_key": "F10-T02"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-112-A",
+        "P-112-B"
+      ],
+      "pair_id": "P-112",
+      "split": "calibration",
+      "template_key": "F10-T03"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-113-A",
+        "P-113-B"
+      ],
+      "pair_id": "P-113",
+      "split": "in_family_holdout",
+      "template_key": "F10-T04"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-114-A",
+        "P-114-B"
+      ],
+      "pair_id": "P-114",
+      "split": "in_family_holdout",
+      "template_key": "F10-T05"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-115-A",
+        "P-115-B"
+      ],
+      "pair_id": "P-115",
+      "split": "in_family_holdout",
+      "template_key": "F10-T06"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-116-A",
+        "P-116-B"
+      ],
+      "pair_id": "P-116",
+      "split": "in_family_holdout",
+      "template_key": "F10-T07"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-117-A",
+        "P-117-B"
+      ],
+      "pair_id": "P-117",
+      "split": "transfer_holdout",
+      "template_key": "F10-T08"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-118-A",
+        "P-118-B"
+      ],
+      "pair_id": "P-118",
+      "split": "transfer_holdout",
+      "template_key": "F10-T09"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-119-A",
+        "P-119-B"
+      ],
+      "pair_id": "P-119",
+      "split": "transfer_holdout",
+      "template_key": "F10-T10"
+    },
+    {
+      "family_id": "F10",
+      "instance_ids": [
+        "P-120-A",
+        "P-120-B"
+      ],
+      "pair_id": "P-120",
+      "split": "transfer_holdout",
+      "template_key": "F10-T11"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-121-A",
+        "P-121-B"
+      ],
+      "pair_id": "P-121",
+      "split": "calibration",
+      "template_key": "F11-T00"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-122-A",
+        "P-122-B"
+      ],
+      "pair_id": "P-122",
+      "split": "calibration",
+      "template_key": "F11-T01"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-123-A",
+        "P-123-B"
+      ],
+      "pair_id": "P-123",
+      "split": "calibration",
+      "template_key": "F11-T02"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-124-A",
+        "P-124-B"
+      ],
+      "pair_id": "P-124",
+      "split": "calibration",
+      "template_key": "F11-T03"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-125-A",
+        "P-125-B"
+      ],
+      "pair_id": "P-125",
+      "split": "in_family_holdout",
+      "template_key": "F11-T04"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-126-A",
+        "P-126-B"
+      ],
+      "pair_id": "P-126",
+      "split": "in_family_holdout",
+      "template_key": "F11-T05"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-127-A",
+        "P-127-B"
+      ],
+      "pair_id": "P-127",
+      "split": "in_family_holdout",
+      "template_key": "F11-T06"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-128-A",
+        "P-128-B"
+      ],
+      "pair_id": "P-128",
+      "split": "in_family_holdout",
+      "template_key": "F11-T07"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-129-A",
+        "P-129-B"
+      ],
+      "pair_id": "P-129",
+      "split": "transfer_holdout",
+      "template_key": "F11-T08"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-130-A",
+        "P-130-B"
+      ],
+      "pair_id": "P-130",
+      "split": "transfer_holdout",
+      "template_key": "F11-T09"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-131-A",
+        "P-131-B"
+      ],
+      "pair_id": "P-131",
+      "split": "transfer_holdout",
+      "template_key": "F11-T10"
+    },
+    {
+      "family_id": "F11",
+      "instance_ids": [
+        "P-132-A",
+        "P-132-B"
+      ],
+      "pair_id": "P-132",
+      "split": "transfer_holdout",
+      "template_key": "F11-T11"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-133-A",
+        "P-133-B"
+      ],
+      "pair_id": "P-133",
+      "split": "calibration",
+      "template_key": "F12-T00"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-134-A",
+        "P-134-B"
+      ],
+      "pair_id": "P-134",
+      "split": "calibration",
+      "template_key": "F12-T01"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-135-A",
+        "P-135-B"
+      ],
+      "pair_id": "P-135",
+      "split": "calibration",
+      "template_key": "F12-T02"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-136-A",
+        "P-136-B"
+      ],
+      "pair_id": "P-136",
+      "split": "calibration",
+      "template_key": "F12-T03"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-137-A",
+        "P-137-B"
+      ],
+      "pair_id": "P-137",
+      "split": "in_family_holdout",
+      "template_key": "F12-T04"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-138-A",
+        "P-138-B"
+      ],
+      "pair_id": "P-138",
+      "split": "in_family_holdout",
+      "template_key": "F12-T05"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-139-A",
+        "P-139-B"
+      ],
+      "pair_id": "P-139",
+      "split": "in_family_holdout",
+      "template_key": "F12-T06"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-140-A",
+        "P-140-B"
+      ],
+      "pair_id": "P-140",
+      "split": "in_family_holdout",
+      "template_key": "F12-T07"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-141-A",
+        "P-141-B"
+      ],
+      "pair_id": "P-141",
+      "split": "transfer_holdout",
+      "template_key": "F12-T08"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-142-A",
+        "P-142-B"
+      ],
+      "pair_id": "P-142",
+      "split": "transfer_holdout",
+      "template_key": "F12-T09"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-143-A",
+        "P-143-B"
+      ],
+      "pair_id": "P-143",
+      "split": "transfer_holdout",
+      "template_key": "F12-T10"
+    },
+    {
+      "family_id": "F12",
+      "instance_ids": [
+        "P-144-A",
+        "P-144-B"
+      ],
+      "pair_id": "P-144",
+      "split": "transfer_holdout",
+      "template_key": "F12-T11"
+    }
+  ],
+  "rule": "variants 00-03 calibration, 04-07 in-family holdout, 08-11 transfer holdout",
+  "transfer_holdout_pair_count": 48,
+  "transfer_unseen_family_template_combinations": 12
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "ignition-150-step28-owner-adjudication-scope-split-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "28",
+  "record_type": "OWNER_ADJUDICATION_SCOPE_SPLIT",
+  "status": "OWNER_ADJUDICATION_SCOPE_SPLIT_PASS",
+  "formal_previous_commit": "d08ec65c03ea2fdf334e71649ab22dd4aec84f04",
+  "historical_timeline": {
+    "step14_receipt": "ignition/data/operations/iterations/150/step14-final-defer-decision.json",
+    "step14_sha256": "ef6465cdc824e9865cf3a2e4b8e366684877a672e0f0e9a5fb791b7cbf8a1482",
+    "step14_status": "DEFER",
+    "step14_basis": "STEP14_DEFER_WAS_VALID_UNDER_COMBINED_SCOPE",
+    "step14_combined_scope_gate": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER_AND_OWNER_VISUAL_ACCEPTANCE_PENDING",
+    "step15_receipt": "ignition/data/operations/iterations/150/step15-draft-closeout.json",
+    "step15_sha256": "13894ad61b0b28b0fbcba96d2f562208fd7f2d3f5d83212687dd959c7be4b4c3",
+    "step15_status": "AWAIT_OWNER_ARCHIFY_BOUNDED_ADMISSION_REVIEW",
+    "step15_stop_state": "TASK150_STEP15_DRAFT_PR_OWNER_REVIEW_STOP",
+    "owner_scope_split_timing": "OWNER_SCOPE_SPLIT_OCCURRED_AFTER_STEP15",
+    "historical_files_unchanged": true,
+    "no_evidence_rewritten": true
+  },
+  "adjudication": {
+    "owner_review_decision": "REOPEN_TASK150_WITH_SCOPE_SPLIT",
+    "base_standalone": {
+      "decision": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE",
+      "operation_id": "visualization.render_derived_system_view",
+      "scope": "CANONICAL_AUTHORED_SOURCE_TO_COMPATIBLE_PROVIDER_ADAPTER_TO_STANDALONE_DERIVED_VISUALIZATION_ARTIFACT",
+      "delta_is_required": false,
+      "aesthetic_is_required": false
+    },
+    "architecture_delta": {
+      "decision": "DEFER",
+      "status": "EXPERIMENTAL_EXTENSION_DEFERRED",
+      "independent_admission_required": true,
+      "base_pass_promotes_delta": false,
+      "wrapper_blocker": "UPSTREAM_COMPARE_WRAPPER_VIEWPORT_CONTAINMENT"
+    },
+    "aesthetic_endorsement": {
+      "decision": "NOT_CLAIMED",
+      "required_for_functional_admission": false,
+      "homepage_or_brand_claim": "FORBIDDEN"
+    },
+    "default_renderer": "NOT_SELECTED",
+    "archify_architecture_authority": false,
+    "architecture_authority_source": "IGNITION_CANONICAL_SOURCE",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "base_gate_failure_fallback": "OVERALL_DEFER",
+    "task151": "FORBIDDEN"
+  },
+  "prerequisites": {
+    "step27": "PASS_11_CASES_3_TOPOLOGY_MUTATIONS_REJECTED",
+    "base_gate_families": "ALL_BASE_GATES_REQUIRED_AND_DELTA_EXCLUDED",
+    "registry_operation": "ONE_PROVIDER_NEUTRAL_BASE_ENTRY_AT_OPERATION_COUNT_20",
+    "standalone_evidence": "PASS_ZERO_STANDALONE_CONTAINMENT_FAILURES",
+    "compatibility_envelope": "PASS_ARCHIFY_EXACT_IMMUTABLE_REF_06dd0526",
+    "front_door": "PASS_PROVIDER_NEUTRAL_NO_BRAND_PROMOTION",
+    "delta_evidence": "PASS_SEMANTIC_28_OF_28_PROVENANCE_ONLY_BUT_VISUAL_FAIL_3"
+  },
+  "lifecycle_boundary": {
+    "registry_operation_count": 20,
+    "registry_entry_status": "CURRENT_BOUNDED_CANDIDATE",
+    "formal_ready": false,
+    "merged_to_main": false,
+    "current_on_main": false,
+    "pr_state": "OPEN",
+    "pr_is_draft": true,
+    "ready_transition_authorized_by_step28": false,
+    "default_renderer": "NOT_SELECTED",
+    "delta_operation_registered": false
+  },
+  "validation": {
+    "historical_step14_hash": "PASS",
+    "historical_step15_hash": "PASS",
+    "step27_validator": "PASS",
+    "registry_validator": "PASS operations=20",
+    "base_operation_lookup": "PASS_PROVIDER_NEUTRAL_CURRENT_BOUNDED",
+    "delta_not_registered": "PASS",
+    "scope_split_decision": "PASS_BASE_ADMIT_CANDIDATE_DELTA_DEFER",
+    "aesthetic_boundary": "PASS_NOT_REQUIRED_NOT_CLAIMED",
+    "live_and_auth_boundary": "PASS_UNCHANGED",
+    "ready_boundary": "PASS_DRAFT_PRE_READY",
+    "successor_boundary": "PASS_TASK151_FORBIDDEN"
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "base_operation": "CURRENT_BOUNDED_CANDIDATE",
+    "architecture_delta": "EXPERIMENTAL_EXTENSION_DEFERRED",
+    "owner_aesthetic_endorsement": "NOT_GRANTED_NOT_CLAIMED",
+    "default_renderer": "NOT_SELECTED",
+    "architecture_authority": false,
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "result": "TASK150_STEP28_OWNER_ADJUDICATION_SCOPE_SPLIT_PASS",
+  "next_step": "TASK150_STEP29_EXACT_HEAD_READY_GATE",
+  "self_witness": "NOT_EMBEDDED_BY_DESIGN",
+  "claim_ceiling": "Step28 records the Owner's post-review decomposition: Step14's DEFER remains valid under the then-combined gate, while the independently evidenced standalone base may proceed as a CURRENT_BOUNDED candidate and Delta remains deferred. It does not make the candidate Current on main, authorize Ready or merge, claim aesthetic endorsement, make Archify an authority, authorize authentication or live action, establish architecture or external truth, or create Task151."
+}

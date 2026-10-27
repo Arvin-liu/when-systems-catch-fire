@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-146-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260828-146",
+  "step": "00",
+  "status": "PASS",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "refs/heads/relay/current",
+    "observed_sha": "1fa65cdc397442ccc442f4a1f45be0eb8316850b",
+    "command_path": "agent-commands/IGNITION-20260828-146-readme-human-front-door-simplification-r2.md"
+  },
+  "formal_remote_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "observed_sha": "b95ed581ee3ca77599246041f3f39f0909452e74",
+    "fetch_command": "git fetch --prune origin",
+    "remote_ref_command": "git ls-remote origin refs/heads/main"
+  },
+  "owner_delta_observations": [
+    "README 的项目与价值区仍以旧的基础设施原型定义和机器 Current 内容建立第一印象。",
+    "homepage-identity 仍注册为 generated Current surface，后续 regeneration 会重新注入机器快照。",
+    "Task146 要求项目现状与价值宪章成为项目与价值下的两个人类块，机器状态转由既有 AI/current/architecture/changelog/snapshot 入口承载。",
+    "Current Snapshot、task lineage、live/architecture counts、Current trunk explanation、Reference/Conformance/Fallback 与 Kernel/Runtime/Federation 等内容不得继续留在 README。",
+    "架构图只保留 source-link metadata 语义，不将 SVG href 描述为 GitHub 页面可点击热点。"
+  ],
+  "root_causes": [
+    "current-surface-block-contract-r1.json 将 homepage-identity 与六个机器/AI Current 面放在同一 generated surface 集合。",
+    "current_surface_compiler.py 对 homepage-identity 负责插入和折叠 Current Snapshot，validator 与回归夹具因此固化了旧首页形态。"
+  ],
+  "scope_decision": {
+    "identity_impact": "PRESENTATION_ONLY",
+    "engineering_phase": "CLOSED_CURRENT_SCOPE",
+    "architecture_change": false,
+    "map_redraw": false,
+    "external_live_process": false,
+    "task143_body_change": false,
+    "automatic_task147": false
+  },
+  "claim_ceiling": "Repository-local baseline and Owner-delta evidence only; no external truth, production safety, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

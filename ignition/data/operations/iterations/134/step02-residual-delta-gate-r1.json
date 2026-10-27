@@ -1,0 +1,18 @@
+{
+  "schema_version": "ignition-134-step02-residual-delta-gate-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "02",
+  "status": "PASS",
+  "fixture_path": "ignition/data/operations/iterations/134/fixtures/residual-delta-negative-fixtures-r1.json",
+  "test_path": "ignition/tests/test_residual_delta_gate.py",
+  "cases": 8,
+  "fail_closed_reasons": [
+    "RESIDUAL_GROWTH_UNCLASSIFIED",
+    "CURRENT_FINGERPRINT_FORGED",
+    "NEW_RESIDUAL_REQUIRES_CLASSIFICATION",
+    "NEW_REGRESSION_RELEASE_BLOCKING",
+    "SOURCE_COMMAND_CHANGED_WITHOUT_MIGRATION"
+  ],
+  "allowed_transitions": ["UNCHANGED_INHERITED", "RESOLVED_CURRENT"],
+  "claim_ceiling": "Repository-local residual delta gate evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

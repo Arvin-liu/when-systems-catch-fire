@@ -1,0 +1,42 @@
+{
+  "schema_version": "ignition-141-step15-projection-preflight-repair-audit-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "15",
+  "status": "REPAIRED_BEFORE_FINAL_PREFLIGHT",
+  "command": "PYTHONPATH=ignition python3 ignition/tools/run_projection_preflight.py --check --record --output ignition/data/operations/iterations/141/step15-projection-preflight.json",
+  "observations": [
+    {
+      "attempt": 1,
+      "result": "FAIL",
+      "failed_checks": [
+        "function_asset_census",
+        "function_asset_deep_adjudication",
+        "nonfunction_claim_projection",
+        "knowledge_experience_projection",
+        "knowledge_experience_validator",
+        "fire_seeds_census",
+        "fire_seeds_validator",
+        "human_surface_contract",
+        "durability_projection_hygiene",
+        "repository_path_manifest"
+      ],
+      "side_effect_detected": false,
+      "diagnosis": "141 architecture/source changes and newly added operation records made deterministic projections and path accounting stale; the preflight contract also still carried Task140 before the current-task correction."
+    },
+    {
+      "attempt": 2,
+      "result": "FAIL",
+      "failed_checks": ["fire_seeds_census"],
+      "side_effect_detected": false,
+      "diagnosis": "Fire-seed census required one final explicit rebuild after Current Surface regeneration; its validator already passed."
+    }
+  ],
+  "repair_actions": [
+    "currentize the projection-preflight contract to Task141",
+    "exclude Task141 operation receipts from Foundation discovery backflow",
+    "regenerate Foundation, Knowledge Experience, Human Surface, Fire Seeds and repository path projections",
+    "regenerate Current Facts, Current Snapshot and all compiler-owned Current surfaces",
+    "rebuild Fire Seeds after the final Current Surface pass"
+  ],
+  "claim_ceiling": "Repository-local preflight failure and deterministic repair evidence only; no external truth, live completion, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
