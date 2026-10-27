@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 import sys
 import unittest
 
@@ -11,6 +12,7 @@ sys.path.insert(0, str(IGNITION_ROOT / 'tools/operations'))
 import plan_ignition_operation_run as planner  # noqa: E402
 
 TOOL_ID = 'maintenance.audit_execution_state_lineage'
+HISTORICAL_ROUTE_COMMIT = '3faa2b3af9747ac5aa85e80c88df9467b0aad0d2'
 PROFILE_PATH = IGNITION_ROOT / 'data/operations/toolbox-execution-state-lineage-route-profile-r0.json'
 EVIDENCE_PATH = IGNITION_ROOT / 'data/operations/toolbox-execution-state-lineage-route-evidence-r0.json'
 REAL_TASK_EVIDENCE_PATH = IGNITION_ROOT / 'data/operations/toolbox-execution-state-lineage-real-task-evidence-r0.json'
@@ -44,8 +46,16 @@ class ExecutionStateLineageRoutingTests(unittest.TestCase):
         self.assertFalse(trials['explicit_allowlist']['candidate_invoked'])
         self.assertFalse(trials['explicit_allowlist']['execution_authorized'])
         self.assertEqual(evidence['task_profile_sha256'], sha256(PROFILE_PATH.read_bytes()))
-        self.assertEqual(evidence['candidate_catalog_git_blob_sha1'], planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()))
-        self.assertEqual(evidence['planner_source_sha256'], sha256(Path(planner.__file__).read_bytes()))
+        historical_catalog = subprocess.check_output(
+            ['git', 'show', f'{HISTORICAL_ROUTE_COMMIT}:ignition/data/operations/toolbox-candidate-cards-r0.json'],
+            cwd=IGNITION_ROOT.parent,
+        )
+        self.assertEqual(evidence['candidate_catalog_git_blob_sha1'], planner.git_blob_sha1(historical_catalog))
+        historical_planner = subprocess.check_output(
+            ['git', 'show', f'{HISTORICAL_ROUTE_COMMIT}:ignition/tools/operations/plan_ignition_operation_run.py'],
+            cwd=IGNITION_ROOT.parent,
+        )
+        self.assertEqual(evidence['planner_source_sha256'], sha256(historical_planner))
         self.assertTrue(evidence['catalog_replay']['all_expected_decisions_reproduced'])
         comparison = real_task['route_comparison']
         self.assertEqual(comparison['default_off']['decision'], 'INCOMPLETE')

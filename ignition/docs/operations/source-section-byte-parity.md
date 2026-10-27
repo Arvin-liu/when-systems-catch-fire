@@ -4,7 +4,9 @@
 
 The request must supply the exact source text, a source reference, and the source document SHA-256. The digest is checked against the supplied text but the tool does not fetch or authenticate the source reference. The source text is accepted from bounded stdin and is not stored by the tool.
 
-The candidate must be one regular UTF-8 `.md`, `.txt`, `.rst`, `.html` or `.xml` file under `.github/`, `docs/` or `ignition/`, or one of the root reading documents `README.md`, `SUMMARY.md`, `HUMAN-READING.md` or `llms.txt`. File access uses no-follow descriptor opens. Symlinks, traversal, unsupported files, non-unique markers, reversed markers and oversized inputs fail closed.
+The executable accepts one regular UTF-8 `.md`, `.txt`, `.rst`, `.html` or `.xml` file under `.github/`, `docs/` or `ignition/`, or one of the root reading documents `README.md`, `SUMMARY.md`, `HUMAN-READING.md` or `llms.txt`, when that path exists. File access uses no-follow descriptor opens. Symlinks, traversal, unsupported files, non-unique markers, reversed markers and oversized inputs fail closed.
+
+The current route card narrows its declared read scope to the existing `.github/` and `ignition/` roots. The adaptive router leaves the candidate out by default. An explicit tool-ID allowlist and matching task input/output types can propose it; the route proposal does not invoke the tool or grant file access.
 
 The selected byte range starts at the unique start marker and ends immediately before the unique end marker. Bytes are compared without newline, Unicode or whitespace normalization. The tool does not check semantic equivalence, authorship, approval, source authenticity, or whether editing or publishing is authorized. Use the existing homepage structure validator separately for component shape and the authorized source for provenance.
 

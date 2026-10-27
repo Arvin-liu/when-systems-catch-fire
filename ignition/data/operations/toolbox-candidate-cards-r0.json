@@ -4959,6 +4959,10 @@
           "role": "REPLAYED_DEFAULT_OFF_AND_EXPLICIT_ALLOWLIST_PROPOSALS"
         },
         {
+          "path": "ignition/data/operations/toolbox-source-section-parity-route-evidence-r1.json",
+          "role": "CURRENT_BOUNDED_DOCUMENT_ROUTE_POLICY_TRIALS"
+        },
+        {
           "path": "ignition/data/operations/toolbox-source-section-parity-route-execution-evidence-r0.json",
           "role": "ROUTER_NONEXECUTION_BOUNDARY"
         },
@@ -5021,12 +5025,7 @@
       "permissions": {
         "read_paths": [
           ".github/",
-          "docs/",
-          "ignition/",
-          "HUMAN-READING.md",
-          "README.md",
-          "SUMMARY.md",
-          "llms.txt"
+          "ignition/"
         ],
         "write_paths": [],
         "network": false,
@@ -5070,14 +5069,14 @@
         "negative_controls": [
           "Reject duplicate JSON keys, unknown authority fields, source digest mismatch, duplicate/missing/reversed markers, source/candidate size overflow, traversal, disallowed paths, symlinks, FIFOs/non-regular files and non-UTF-8 candidate documents.",
           "Source text is not echoed in output; no candidate document content, write, network action or permission grant is produced.",
-          "The default router excludes this candidate. Under the current planner path policy, explicit allowlisting cannot select its .github/, docs/, or named root-document read scope; all route proposals remain non-executable and grant no file access."
+          "The default router excludes this candidate. Its route card grants only the existing .github/ and ignition/ roots; explicit allowlisting may propose it only for matching typed inputs and outputs. Route proposals do not invoke the tool, authorize execution, or grant file access."
         ]
       },
       "router_selectable_by_default": false,
       "router_conditions": [
         "Only consider when the task requires exact byte comparison of one uniquely marker-delimited section between caller-supplied source text and a checked-out human document.",
         "Prefer structural validators when only shape/count is required and whole-file digest checks when entire artifacts should match.",
-        "The current route planner accepts permission paths only under ignition/; this candidate's declared human-document scope also includes .github/, docs/, and named root reading documents, so it is not selectable through that planner unless the path boundary is separately changed.",
+        "The route card limits this candidate to the existing .github/ and ignition/ roots. The planner may propose it only when its exact ID is explicitly allowlisted and task input/output types match.",
         "Source ref and digest are caller-supplied and not authenticated; a matching section does not authorize editing or publication."
       ],
       "claim_ceiling": "Compares exact UTF-8 bytes between caller-declared unique start/end markers in supplied source text and one explicitly selected checked-out human-document file. The caller-supplied source reference and digest are not authenticated; comparison does not establish authorship, approval, semantic equivalence, scientific validity, release authority, or permission to edit or publish.",

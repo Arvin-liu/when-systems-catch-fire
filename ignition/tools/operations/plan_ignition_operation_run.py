@@ -49,6 +49,9 @@ LIFECYCLE_STAGES = (
 )
 NETWORK_HOST_RE = re.compile(r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\Z")
 MAX_NETWORK_HOSTS = 16
+ROUTE_HUMAN_DOCUMENT_ROOTS = {".github", "docs"}
+ROUTE_HUMAN_DOCUMENT_SUFFIXES = {".md", ".txt", ".rst", ".html", ".xml"}
+ROUTE_ROOT_DOCUMENTS = {"HUMAN-READING.md", "README.md", "SUMMARY.md", "llms.txt"}
 STATUS_DECISIONS = {
     "CURRENT": ("PROCEED", None),
     "CURRENT_BOUNDED": ("PROCEED_BOUNDED", None),
@@ -65,19 +68,43 @@ def git_blob_sha1(data: bytes) -> str:
 
 
 def route_source_path_is_safe(relative_path: str) -> bool:
-    """Accept only existing, non-symlink repository paths used by an opt-in card."""
-    if not isinstance(relative_path, str) or not relative_path.startswith("ignition/"):
+    """Accept existing source paths and bounded human-document roots used by opt-in cards."""
+    if (
+        not isinstance(relative_path, str)
+        or not relative_path
+        or relative_path.startswith("/")
+        or "\\" in relative_path
+        or "\x00" in relative_path
+    ):
         return False
-    parts = Path(relative_path).parts
-    if any(part in {".", ".."} for part in parts):
+    has_trailing_slash = relative_path.endswith("/")
+    normalized = relative_path[:-1] if has_trailing_slash else relative_path
+    raw_parts = normalized.split("/")
+    if any(not part or part in {".", ".."} for part in raw_parts):
         return False
+    root = raw_parts[0]
+    if root == "ignition":
+        pass
+    elif root in ROUTE_HUMAN_DOCUMENT_ROOTS:
+        if len(raw_parts) == 1:
+            if not has_trailing_slash:
+                return False
+        elif Path(raw_parts[-1]).suffix.lower() not in ROUTE_HUMAN_DOCUMENT_SUFFIXES:
+            return False
+    elif len(raw_parts) == 1 and normalized in ROUTE_ROOT_DOCUMENTS:
+        pass
+    else:
+        return False
+
     repo_root = ROOT.parent.resolve()
     candidate = repo_root
-    for part in parts:
+    for part in raw_parts:
         candidate = candidate / part
         if candidate.is_symlink():
             return False
     if not candidate.exists():
+        return False
+    if has_trailing_slash and not candidate.is_dir():
         return False
     if candidate.is_dir():
         for item in candidate.rglob("*"):

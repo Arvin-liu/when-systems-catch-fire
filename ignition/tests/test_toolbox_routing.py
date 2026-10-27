@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import sys
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -10,8 +11,13 @@ from unittest.mock import patch
 
 
 IGNITION_ROOT = Path(__file__).resolve().parents[1]
+HISTORICAL_ROUTE_COMMIT = "3faa2b3af9747ac5aa85e80c88df9467b0aad0d2"
 sys.path.insert(0, str(IGNITION_ROOT / "tools/operations"))
 import plan_ignition_operation_run as planner  # noqa: E402
+
+
+def historical_bytes(path: str) -> bytes:
+    return subprocess.check_output(["git", "show", f"{HISTORICAL_ROUTE_COMMIT}:{path}"], cwd=IGNITION_ROOT.parent)
 
 
 def profile(task_id: str, inputs: list[str], outputs: list[str], *, allowed_network_hosts: list[str] | None = None) -> dict:
@@ -31,6 +37,53 @@ class AdaptiveToolRouteTests(unittest.TestCase):
     def test_candidate_path_escape_is_rejected(self) -> None:
         self.assertFalse(planner.route_source_path_is_safe("ignition/../outside.py"))
         self.assertFalse(planner.route_source_path_is_safe("ignition/tools/../../outside.py"))
+
+    def test_human_document_paths_are_bounded_and_existing(self) -> None:
+        self.assertTrue(planner.route_source_path_is_safe(".github/"))
+        self.assertTrue(planner.route_source_path_is_safe(".github/README.md"))
+        self.assertTrue(planner.route_source_path_is_safe("ignition/HUMAN-READING.md"))
+        self.assertFalse(planner.route_source_path_is_safe("docs/"))
+        self.assertFalse(planner.route_source_path_is_safe("README.md"))
+        self.assertFalse(planner.route_source_path_is_safe(".github/workflows/foundation-validation.yml"))
+        self.assertFalse(planner.route_source_path_is_safe("docs/../ignition/README.md"))
+        self.assertFalse(planner.route_source_path_is_safe("/README.md"))
+        self.assertFalse(planner.route_source_path_is_safe("README.json"))
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            (root / "ignition").mkdir()
+            (root / "outside").mkdir()
+            (root / ".github").symlink_to(root / "outside", target_is_directory=True)
+            with patch.object(planner, "ROOT", root / "ignition"):
+                self.assertFalse(planner.route_source_path_is_safe(".github/"))
+
+    def test_human_document_tool_stays_default_off_and_is_selected_only_for_matching_explicit_task(self) -> None:
+        catalog = json.loads(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_text(encoding="utf-8"))
+        tool_id = "maintenance.compare_source_section_bytes"
+        card = next(row for row in catalog["candidates"] if row["tool_id"] == tool_id)
+        task = profile("homepage-copy-parity", card["accepted_input_types"], card["output_types"])
+
+        default = planner.plan_tool_route(task)
+        self.assertEqual(default["decision"], "INCOMPLETE")
+        self.assertEqual(default["selected_tools"], [])
+        self.assertIn(
+            {"tool_id": tool_id, "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"},
+            default["rejected_candidates"],
+        )
+
+        opted_in = planner.plan_tool_route(task, include_experimental_tool_ids=[tool_id])
+        self.assertEqual(opted_in["decision"], "COMPLETE")
+        self.assertEqual([row["tool_id"] for row in opted_in["selected_tools"]], [tool_id])
+        self.assertEqual(opted_in["selected_tools"][0]["permissions"]["read_paths"], card["permissions"]["read_paths"])
+        self.assertFalse(opted_in["execution_authorized"])
+
+        unrelated_task = dict(task)
+        unrelated_task["task_id"] = "unrelated-prose"
+        unrelated_task["input_types"] = ["plain article prose"]
+        unrelated = planner.plan_tool_route(unrelated_task, include_experimental_tool_ids=[tool_id])
+        self.assertEqual(unrelated["decision"], "INCOMPLETE")
+        self.assertEqual(unrelated["selected_tools"], [])
+        self.assertIn({"tool_id": tool_id, "reason": "NO_INPUT_TYPE_MATCH"}, unrelated["rejected_candidates"])
+        self.assertFalse(unrelated["execution_authorized"])
 
     def test_simple_task_selects_one_matching_registered_operation(self) -> None:
         result = planner.plan_tool_route(profile(
@@ -207,7 +260,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         )
         self.assertEqual(
             evidence["candidate_catalog_git_blob_sha1"],
-            planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
+            planner.git_blob_sha1(historical_bytes("ignition/data/operations/toolbox-candidate-cards-r0.json")),
         )
         for trial in evidence["route_trials"]:
             replay = planner.plan_tool_route(
@@ -218,7 +271,7 @@ class AdaptiveToolRouteTests(unittest.TestCase):
             self.assertEqual([row["tool_id"] for row in replay["selected_tools"]], trial["selected_tool_ids"])
             self.assertEqual(
                 replay["source_refs"]["experimental_candidate_catalog_git_blob_sha1"],
-                evidence["candidate_catalog_git_blob_sha1"],
+                planner.git_blob_sha1(planner.EXPERIMENTAL_TOOL_CARDS_PATH.read_bytes()),
             )
             self.assertFalse(replay["execution_authorized"])
             self.assertEqual(trial["router_provider_calls"], 0)
@@ -901,7 +954,8 @@ class AdaptiveToolRouteTests(unittest.TestCase):
         self.assertEqual(evidence["routing"]["wrong_host"]["decision"], wrong_host["decision"])
         candidate_source = IGNITION_ROOT / "tools/toolbox_datacite_doi_metadata.py"
         self.assertEqual(evidence["candidate_source_sha256"], hashlib.sha256(candidate_source.read_bytes()).hexdigest())
-        self.assertEqual(evidence["route_planner_sha256"], hashlib.sha256(Path(planner.__file__).read_bytes()).hexdigest())
+        historical_planner = historical_bytes("ignition/tools/operations/plan_ignition_operation_run.py")
+        self.assertEqual(evidence["route_planner_sha256"], hashlib.sha256(historical_planner).hexdigest())
         self.assertFalse(card["router_selectable_by_default"])
         comparison = json.loads(
             (IGNITION_ROOT / "data/operations/toolbox-datacite-doi-metadata-c1-comparison-r0.json").read_text(encoding="utf-8")
