@@ -1,0 +1,202 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-growth-pair-output-r0",
+  "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+  "tool_version": "0.1.0",
+  "status": "PAIRED",
+  "requested_range": {
+    "start_year": 2023,
+    "end_year": 2025
+  },
+  "input_payload_sha256": "650452979fe4daa701e0d7b5b78eb7ff57b5633a025add5283fa8febf3231a3c",
+  "pairing": {
+    "join_key": "year",
+    "co2_unit": "ppm",
+    "ch4_unit": "ppb",
+    "cross_gas_arithmetic_performed": false,
+    "simultaneous_capture_claimed": false
+  },
+  "metrics": {
+    "paired_year_count": 3,
+    "co2_rows_with_two_surface_values": 3,
+    "ch4_rows_with_two_surface_values": 3,
+    "years_with_two_surface_values_for_both_gases": 3,
+    "years_with_a_missing_surface_value": 0
+  },
+  "source_captures": {
+    "co2": {
+      "source_tool_id": "research.compare_noaa_co2_source_surfaces",
+      "source_tool_version": "0.1.0",
+      "source_schema_version": "toolbox-noaa-co2-source-surface-comparison-output-r0",
+      "source_output_canonical_sha256": "bc6ea133ebae7394ba79118d4a3aa6a052570d10fdffbd4d7dc08c34a26844b4",
+      "requested_range": {
+        "start_year": 2023,
+        "end_year": 2025
+      },
+      "upstream_invocation": {
+        "allow_public_network_flag": true,
+        "requests_made": 2
+      },
+      "comparison_status": "EXACT_MATCH",
+      "comparison_counts": {
+        "requested_year_count": 3,
+        "exact_match_count": 3,
+        "numeric_difference_count": 0,
+        "missing_year_count": 0
+      },
+      "capture_span_seconds": 1,
+      "source_receipts": {
+        "provider_page": {
+          "acquisition_status": "OK",
+          "etag": null,
+          "http_status": 200,
+          "last_modified": null,
+          "parse_status": "FOUND",
+          "raw_response_retained": false,
+          "response_bytes": 36602,
+          "response_sha256": "f49b93b1a2893d5681aefd80a88927594b500a39ff604c9e5b6cbedd7b7f09a8",
+          "retrieved_at_utc": "2026-10-26T16:29:02Z",
+          "url": "https://gml.noaa.gov/ccgg/trends/gl_gr.html"
+        },
+        "fixed_raw_table": {
+          "acquisition_status": "OK",
+          "etag": "\"107f-65d6d47347626\"",
+          "http_status": 200,
+          "last_modified": "Fri, 09 Oct 2026 19:23:07 GMT",
+          "parse_status": "FOUND",
+          "raw_response_retained": false,
+          "response_bytes": 4223,
+          "response_sha256": "7436b8f62038f4e9a19e8ef5e2e83e4151dd282f6ac46e19c9886892ab815960",
+          "retrieved_at_utc": "2026-10-26T16:29:03Z",
+          "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_gr_gl.txt"
+        }
+      }
+    },
+    "ch4": {
+      "source_tool_id": "research.compare_noaa_ch4_source_surfaces",
+      "source_tool_version": "0.1.0",
+      "source_schema_version": "toolbox-noaa-ch4-source-surface-comparison-output-r0",
+      "source_output_canonical_sha256": "3fcae576c29cda7180a54b6fdda04a557513912b71d8fb7527dff13b96fbe305",
+      "requested_range": {
+        "start_year": 2023,
+        "end_year": 2025
+      },
+      "upstream_invocation": {
+        "allow_public_network_flag": true,
+        "requests_made": 2
+      },
+      "comparison_status": "EXACT_MATCH",
+      "comparison_counts": {
+        "requested_year_count": 3,
+        "exact_match_count": 3,
+        "numeric_difference_count": 0,
+        "missing_year_count": 0
+      },
+      "capture_span_seconds": 1,
+      "source_receipts": {
+        "provider_page": {
+          "acquisition_status": "OK",
+          "etag": null,
+          "http_status": 200,
+          "last_modified": null,
+          "parse_status": "FOUND",
+          "raw_response_retained": false,
+          "response_bytes": 38583,
+          "response_sha256": "096f0c1f0d436809fa5491e6284ec3ab6345a4fbbb38cc545fd445d5a5a319b9",
+          "retrieved_at_utc": "2026-10-26T17:29:36Z",
+          "url": "https://gml.noaa.gov/ccgg/trends_ch4/"
+        },
+        "fixed_raw_table": {
+          "acquisition_status": "OK",
+          "etag": "\"d6c-65d6d473a0edb\"",
+          "http_status": 200,
+          "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+          "parse_status": "FOUND",
+          "raw_response_retained": false,
+          "response_bytes": 3436,
+          "response_sha256": "0501e15f5ffea518f8dfb90477ad28a7dbcdb26285c2792118f49b3a71e076eb",
+          "retrieved_at_utc": "2026-10-26T17:29:37Z",
+          "url": "https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4_gr_gl.txt"
+        }
+      }
+    }
+  },
+  "cohort_capture_span_seconds": 3635,
+  "rows": [
+    {
+      "year": 2023,
+      "co2": {
+        "page_annual_increase_ppm": "2.69",
+        "page_minus_raw_annual_increase_ppm": "0.00",
+        "page_minus_raw_uncertainty_ppm": "0.00",
+        "page_uncertainty_ppm": "0.13",
+        "raw_table_annual_increase_ppm": "2.69",
+        "raw_table_uncertainty_ppm": "0.13",
+        "status": "EXACT_MATCH",
+        "year": 2023
+      },
+      "ch4": {
+        "page_annual_increase_ppb": "8.29",
+        "page_minus_raw_annual_increase_ppb": "0.00",
+        "page_minus_raw_uncertainty_ppb": "0.00",
+        "page_uncertainty_ppb": "0.82",
+        "raw_table_annual_increase_ppb": "8.29",
+        "raw_table_uncertainty_ppb": "0.82",
+        "status": "EXACT_MATCH",
+        "year": 2023
+      }
+    },
+    {
+      "year": 2024,
+      "co2": {
+        "page_annual_increase_ppm": "3.76",
+        "page_minus_raw_annual_increase_ppm": "0.00",
+        "page_minus_raw_uncertainty_ppm": "0.00",
+        "page_uncertainty_ppm": "0.11",
+        "raw_table_annual_increase_ppm": "3.76",
+        "raw_table_uncertainty_ppm": "0.11",
+        "status": "EXACT_MATCH",
+        "year": 2024
+      },
+      "ch4": {
+        "page_annual_increase_ppb": "8.04",
+        "page_minus_raw_annual_increase_ppb": "0.00",
+        "page_minus_raw_uncertainty_ppb": "0.00",
+        "page_uncertainty_ppb": "0.43",
+        "raw_table_annual_increase_ppb": "8.04",
+        "raw_table_uncertainty_ppb": "0.43",
+        "status": "EXACT_MATCH",
+        "year": 2024
+      }
+    },
+    {
+      "year": 2025,
+      "co2": {
+        "page_annual_increase_ppm": "2.06",
+        "page_minus_raw_annual_increase_ppm": "0.00",
+        "page_minus_raw_uncertainty_ppm": "0.00",
+        "page_uncertainty_ppm": "0.08",
+        "raw_table_annual_increase_ppm": "2.06",
+        "raw_table_uncertainty_ppm": "0.08",
+        "status": "EXACT_MATCH",
+        "year": 2025
+      },
+      "ch4": {
+        "page_annual_increase_ppb": "4.77",
+        "page_minus_raw_annual_increase_ppb": "0.00",
+        "page_minus_raw_uncertainty_ppb": "0.00",
+        "page_uncertainty_ppb": "0.43",
+        "raw_table_annual_increase_ppb": "4.77",
+        "raw_table_uncertainty_ppb": "0.43",
+        "status": "EXACT_MATCH",
+        "year": 2025
+      }
+    }
+  ],
+  "claim_ceiling": "Year-key alignment of caller-supplied, already captured NOAA GML CO2 and CH4 source-surface comparison outputs, preserving each gas's original unit, comparison status, retrieval metadata, and response digests. It performs no network retrieval or cross-gas arithmetic and does not establish simultaneous measurement, physical comparability, emissions, attribution, causation, source authenticity, measurement validity, or a scientific conclusion.",
+  "non_claims": [
+    "Pairing rows by the same integer year does not make CO2 ppm and CH4 ppb values directly comparable or commensurate.",
+    "The tool performs no unit conversion, ratio, sum, weighting, trend ranking, interpolation, or causal analysis across gases.",
+    "Source timestamps and response digests are inherited from caller-supplied comparator outputs; they do not authenticate NOAA or make the captures simultaneous.",
+    "The tool does not retrieve current data, validate measurements, estimate emissions, attribute sources, or establish scientific truth."
+  ]
+}

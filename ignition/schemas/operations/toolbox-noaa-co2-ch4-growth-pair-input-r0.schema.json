@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arvin-liu.github.io/ignition/schemas/operations/toolbox-noaa-co2-ch4-growth-pair-input-r0.schema.json",
+  "title": "NOAA CO2 CH4 Growth Pair Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "co2_output", "ch4_output"],
+  "properties": {
+    "schema_version": {"const": "toolbox-noaa-co2-ch4-growth-pair-input-r0"},
+    "co2_output": {"$ref": "#/$defs/capturedComparatorOutput"},
+    "ch4_output": {"$ref": "#/$defs/capturedComparatorOutput"}
+  },
+  "$defs": {
+    "capturedComparatorOutput": {
+      "type": "object",
+      "required": ["schema_version", "tool_id", "tool_version", "status", "requested_range", "invocation", "sources", "comparison"],
+      "properties": {
+        "schema_version": {"type": "string"},
+        "tool_id": {"type": "string"},
+        "tool_version": {"const": "0.1.0"},
+        "status": {"const": "COMPARED"},
+        "requested_range": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["start_year", "end_year"],
+          "properties": {"start_year": {"type": "integer"}, "end_year": {"type": "integer"}}
+        },
+        "invocation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["allow_public_network_flag", "requests_made"],
+          "properties": {"allow_public_network_flag": {"const": true}, "requests_made": {"const": 2}}
+        },
+        "sources": {"type": "object"},
+        "comparison": {"type": "object"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "description": "The executable additionally validates each species-specific comparator contract, exact fixed NOAA source URLs, identical ranges, UTC receipt timestamps, response digests, and complete year-key rows. No source bodies or arbitrary URLs are accepted as alternate source authority."
+}

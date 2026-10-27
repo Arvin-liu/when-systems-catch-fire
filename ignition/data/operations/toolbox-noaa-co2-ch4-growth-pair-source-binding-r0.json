@@ -1,0 +1,17 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-growth-pair-source-binding-r0",
+  "owner_instruction": {
+    "repository": "Arvin-liu/1111",
+    "commit": "9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "blob_sha1": "d0e85f7baeb55ec538189e2657c33e4759d704ef"
+  },
+  "c1_amendment": {
+    "repository": "Arvin-liu/1111",
+    "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e"
+  },
+  "scope": "One optional offline read-only transformer over caller-supplied captured outputs. It does not modify the Current operation registry, grant network access, change default routing, or establish scientific validity.",
+  "evidence_ceiling": "Binding evidence records which Owner instructions governed this candidate; it is not a signature, R2 exception, release authorization, or scientific validation."
+}
