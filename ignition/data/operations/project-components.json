@@ -1388,7 +1388,8 @@
       },
       "path_patterns": [
         "data/architecture/interactive-system-map-layout.json",
-        "schemas/architecture/interactive-system-map-layout.schema.json"
+        "schemas/architecture/interactive-system-map-layout.schema.json",
+        "data/architecture/system-map-geometry-quality-r1.json"
       ]
     },
     {
@@ -2291,7 +2292,8 @@
       },
       "path_patterns": [
         "schemas/decision/decision_integrity-contract.schema.json",
-        "docs/decision/"
+        "docs/decision/",
+        "docs/repair-r3/decision-integrity-freeze.md"
       ]
     },
     {
@@ -2312,7 +2314,11 @@
       },
       "path_patterns": [
         "tools/decision/",
-        "tests/decision/"
+        "tests/decision/",
+        "tests/r3_evaluator_testlib.py",
+        "tests/repro_rb09_capability.py",
+        "tests/repro_rb09_decision_integrity_r2_evidence.txt",
+        "tests/test_r3_decision_integrity.py"
       ]
     },
     {
@@ -2333,10 +2339,12 @@
       },
       "path_patterns": [
         "data/decision/pilot-decision-integrity-i1.json",
-        "data/decision/fixtures/"
+        "data/decision/fixtures/",
+        "data/decision/repair-r2-controlled-reproduction.json",
+        "data/decision/repro/"
       ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.0"
+  "registry_version": "2.9.1"
 }
