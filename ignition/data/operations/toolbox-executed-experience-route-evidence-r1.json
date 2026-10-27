@@ -1,0 +1,57 @@
+{
+  "schema_version": "toolbox-executed-experience-route-evidence-r1",
+  "tool_id": "knowledge.preflight_executed_experience_reuse",
+  "tool_version": "0.2.0",
+  "candidate_catalog_git_blob_sha1": "c926d467bf0268750b0c155df984a1f8f756b618",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_git_blob_sha1": "cc07d9170dd94c65a6aeb419ac1b1e240cc989e1",
+  "route_profile": {
+    "task_id": "pr264-four-run-target-coverage-experience-reuse-r1",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "R0: one bounded JSON request with a task scope and 1–32 caller-selected execution receipts.",
+      "R1: the same scope with 1–32 receipts plus local source/input/output paths and SHA-256 bindings; preserved negative outcomes also bind failure bytes."
+    ],
+    "required_outputs": [
+      "R0: deterministic result with optional-reference, counterexample, review-required, or withhold decisions.",
+      "R1: the same decisions plus per-artifact binding status and an aggregate read-byte count bounded to 8 MiB."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "scenario_results": {
+    "default_off": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "cost_status": "UNKNOWN"
+    },
+    "exact_allowlist": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "knowledge.preflight_executed_experience_reuse"
+      ],
+      "execution_authorized": false,
+      "cost_status": "UNKNOWN"
+    },
+    "adjacent_receipt_tool_only": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "cost_status": "UNKNOWN"
+    },
+    "both_allowlisted": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "knowledge.preflight_executed_experience_reuse"
+      ],
+      "execution_authorized": false,
+      "cost_status": "UNKNOWN"
+    }
+  },
+  "router_provider_calls": 0,
+  "candidate_invoked": false,
+  "execution_authorized": false,
+  "claim_ceiling": "Offline route proposal only. R0 and R1 requests remain selectable only through explicit experimental allowlisting; route planning read no receipt/artifact bytes and invoked no tool."
+}

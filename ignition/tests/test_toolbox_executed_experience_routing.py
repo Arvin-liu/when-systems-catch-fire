@@ -19,10 +19,10 @@ class ExecutedExperienceRoutingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.profile = json.loads(
-            (IGNITION_ROOT / "data/operations/toolbox-executed-experience-route-profile-r0.json").read_text(encoding="utf-8")
+            (IGNITION_ROOT / "data/operations/toolbox-executed-experience-route-profile-r1.json").read_text(encoding="utf-8")
         )
         cls.evidence = json.loads(
-            (IGNITION_ROOT / "data/operations/toolbox-executed-experience-route-evidence-r0.json").read_text(encoding="utf-8")
+            (IGNITION_ROOT / "data/operations/toolbox-executed-experience-route-evidence-r1.json").read_text(encoding="utf-8")
         )
 
     def test_default_off_explicit_allowlist_and_minimum_sufficient_route(self):
