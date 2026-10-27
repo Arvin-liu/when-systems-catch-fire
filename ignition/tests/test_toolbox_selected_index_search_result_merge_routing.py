@@ -22,6 +22,10 @@ ROUTED_PROFILE_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-se
 ROUTED_EVIDENCE_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r1.json"
 ROUTED_INPUT_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-search-result-merge-input-r0.json"
 ROUTED_EXPECTED_OUTPUT_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-search-result-merge-output-r0.json"
+R2_PROFILE_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-search-result-merge-route-profile-r2.json"
+R2_ROUTE_EVIDENCE_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-search-result-merge-route-evidence-r1.json"
+R2_ROUTED_PROFILE_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-search-result-merge-routed-real-task-profile-r2.json"
+R2_EXECUTION_EVIDENCE_PATH = IGNITION_ROOT / "data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r2.json"
 
 
 class SelectedIndexSearchResultMergeRoutingTests(unittest.TestCase):
@@ -126,6 +130,90 @@ class SelectedIndexSearchResultMergeRoutingTests(unittest.TestCase):
         self.assertEqual(process.stderr, b"")
         self.assertEqual(evidence["selected_execution"]["cost_observation"]["network_calls"], 0)
         self.assertEqual(evidence["selected_execution"]["cost_observation"]["filesystem_writes_by_tool"], 0)
+
+    def test_r2_route_and_real_task_replay_bind_exact_feature_commit(self) -> None:
+        candidate_head = "0420927e5eb7fea1b6ae952d604917e50c2d3cef"
+        current_ref = f"refs/heads/codex/toolbox-growth-20261025@{candidate_head}"
+        profile_bytes = R2_PROFILE_PATH.read_bytes()
+        profile = json.loads(profile_bytes)
+        route_evidence = json.loads(R2_ROUTE_EVIDENCE_PATH.read_text(encoding="utf-8"))
+        routed_profile = json.loads(R2_ROUTED_PROFILE_PATH.read_text(encoding="utf-8"))
+        execution = json.loads(R2_EXECUTION_EVIDENCE_PATH.read_text(encoding="utf-8"))
+
+        def historical_bytes(path: str) -> bytes:
+            return subprocess.check_output(["git", "show", f"{candidate_head}:{path}"], cwd=REPO_ROOT)
+
+        self.assertEqual(profile["current_ref"], current_ref)
+        self.assertEqual(route_evidence["current_ref"], current_ref)
+        self.assertEqual(execution["current_ref"], current_ref)
+        self.assertEqual(routed_profile["current_ref"], current_ref)
+        self.assertEqual(hashlib.sha256(profile_bytes).hexdigest(), route_evidence["route_profile_sha256"])
+        self.assertEqual(route_evidence["route_profile_sha256"], routed_profile["route_profile_sha256"])
+
+        historical_catalog = historical_bytes("ignition/data/operations/toolbox-candidate-cards-r0.json")
+        historical_planner = historical_bytes("ignition/tools/operations/plan_ignition_operation_run.py")
+        historical_source = historical_bytes("ignition/tools/toolbox_merge_selected_index_search_results.py")
+        historical_input = historical_bytes("ignition/data/operations/toolbox-selected-index-search-result-merge-input-r0.json")
+        historical_output = historical_bytes("ignition/data/operations/toolbox-selected-index-search-result-merge-output-r1.json")
+        self.assertEqual(planner.git_blob_sha1(historical_catalog), route_evidence["candidate_catalog_git_blob_sha1"])
+        self.assertEqual(hashlib.sha256(historical_planner).hexdigest(), route_evidence["planner_source_sha256"])
+        self.assertEqual(hashlib.sha256(historical_source).hexdigest(), route_evidence["tool_source_sha256"])
+        self.assertEqual(hashlib.sha256(historical_input).hexdigest(), route_evidence["input_sha256"])
+        self.assertEqual(hashlib.sha256(historical_output).hexdigest(), route_evidence["expected_output_sha256"])
+        self.assertEqual(route_evidence["candidate_count"], 71)
+        self.assertEqual(hashlib.sha256(historical_source).hexdigest(), execution["source_sha256"])
+        self.assertEqual(hashlib.sha256(historical_input).hexdigest(), execution["input_sha256"])
+        self.assertEqual(hashlib.sha256(historical_output).hexdigest(), execution["expected_output_sha256"])
+        self.assertEqual(hashlib.sha256(historical_output).hexdigest(), execution["observed_stdout_sha256"])
+
+        scenarios = {row["scenario"]: row for row in route_evidence["scenarios"]}
+        expected = {
+            "default_off": ("INCOMPLETE", []),
+            "tool_only": ("COMPLETE", [TOOL_ID]),
+            "broad_allowlist": ("COMPLETE", [TOOL_ID]),
+            "other_candidates_only": ("INCOMPLETE", []),
+            "unrelated_input": ("INCOMPLETE", []),
+        }
+        self.assertEqual(set(scenarios), set(expected))
+        for name, (decision, selected_ids) in expected.items():
+            row = scenarios[name]
+            plan = row["plan"]
+            self.assertEqual(plan["decision"], decision, name)
+            self.assertEqual([item["tool_id"] for item in plan["selected_tools"]], selected_ids, name)
+            self.assertFalse(plan["execution_authorized"], name)
+            self.assertEqual(plan["allowed_network_hosts"], [], name)
+            canonical = json.dumps(plan, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+            self.assertEqual(hashlib.sha256(canonical).hexdigest(), row["plan_sha256"], name)
+        self.assertFalse(route_evidence["safety_boundary"]["execution_authorized"])
+        self.assertEqual(route_evidence["safety_boundary"]["tool_invocations_by_planner"], 0)
+        self.assertEqual(route_evidence["route_profile_sha256"], hashlib.sha256(profile_bytes).hexdigest())
+        self.assertEqual(routed_profile["route_evidence_sha256"], hashlib.sha256(R2_ROUTE_EVIDENCE_PATH.read_bytes()).hexdigest())
+
+        self.assertEqual(routed_profile["input_sha256"], execution["input_sha256"])
+        self.assertEqual(routed_profile["expected_output_sha256"], execution["expected_output_sha256"])
+        self.assertEqual(execution["returncode"], 0)
+        self.assertTrue(execution["observed_stdout_matches_saved_output"])
+        self.assertEqual(execution["network_calls"], 0)
+        self.assertEqual(execution["tool_file_writes"], 0)
+        self.assertFalse(execution["execution_authorized_by_route_planner"])
+        self.assertEqual(execution["route_profile_sha256"], route_evidence["route_profile_sha256"])
+        self.assertEqual(execution["route_evidence_sha256"], hashlib.sha256(R2_ROUTE_EVIDENCE_PATH.read_bytes()).hexdigest())
+        self.assertEqual(execution["routed_profile_sha256"], hashlib.sha256(R2_ROUTED_PROFILE_PATH.read_bytes()).hexdigest())
+
+        with tempfile.TemporaryDirectory(prefix="ignition-merge-r2-") as temporary_dir:
+            historical_source_path = Path(temporary_dir) / "toolbox_merge_selected_index_search_results.py"
+            historical_source_path.write_bytes(historical_source)
+            process = subprocess.run(
+                [sys.executable, "-B", str(historical_source_path), "--stdin"],
+                input=historical_input,
+                capture_output=True,
+                cwd=REPO_ROOT,
+                check=False,
+            )
+        self.assertEqual(process.returncode, execution["returncode"])
+        self.assertEqual(process.stdout, historical_output)
+        self.assertEqual(hashlib.sha256(process.stdout).hexdigest(), execution["observed_stdout_sha256"])
+        self.assertEqual(process.stderr, b"")
 
 
 if __name__ == "__main__":

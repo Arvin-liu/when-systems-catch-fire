@@ -1,17 +1,18 @@
 {
   "schema_version": "toolbox-handoff-artifact-byte-check-route-evidence-r0",
   "candidate_catalog_refresh": {
-    "prior_git_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600",
-    "current_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96",
+    "prior_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96",
+    "current_git_blob_sha1": "f29a0fd8af346fc8548e9469383c8eacde341d45",
     "history": [
       "933a349b5d7e34df3a9d46c42896e9ec236a9831",
       "7e381aafb5b8f150744d8b02a9eb82ced7004e3e",
       "86e0372a292afe58e65d7641fb07cc61776ec8a8",
       "00fae5794f52ef3270ede181b5ef0679e83f21dc",
       "5d53a67cfcd3aec453485e93acda87219fd5d600",
-      "256eabb87988c6d1032a867f160aba98119dde96"
+      "256eabb87988c6d1032a867f160aba98119dde96",
+      "f29a0fd8af346fc8548e9469383c8eacde341d45"
     ],
-    "note": "The candidate card now records one local real-task exact permission-declaration comparison and a deliberate synthetic added-write control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting only proposes the read-only tool."
+    "note": "The candidate card now records one local real-task exact permission-declaration comparison and a deliberate synthetic added-write control. The same task route was rerun against this exact catalog; routing remains default-off and explicit allowlisting only proposes the read-only tool. The route evidence was replayed after the selected-index search grouper card moved to 0.2.0; default-off behavior and the explicit byte-checker-only route were recomputed against the refreshed candidate catalog."
   },
   "catalog_status": "CANDIDATE_ONLY_ROUTING_EXPERIMENT",
   "task": {
@@ -27,7 +28,7 @@
   },
   "route_profile": {
     "task_id": "handoff-artifact-local-digest-check",
-    "current_ref": "refs/heads/codex/toolbox-growth-20261025@bef6bf467320ec1b6613ad94976d4623f3d51623",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
     "input_types": [
       "One UTF-8 JSON object with schema_version handoff-artifact-byte-check-r0 and a valid FederatedResultReceipt containing artifact refs, plus a separately supplied workspace-root CLI argument under ignition/; stdin is capped at 262144 bytes."
     ],
@@ -45,7 +46,7 @@
   "default_route_result": {
     "schema_version": "ignition-tool-route-plan-r0",
     "task_id": "handoff-artifact-local-digest-check",
-    "current_ref": "refs/heads/codex/toolbox-growth-20261025@bef6bf467320ec1b6613ad94976d4623f3d51623",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
     "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
     "allowed_network_hosts": [],
     "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
@@ -436,13 +437,13 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96"
+      "experimental_candidate_catalog_git_blob_sha1": "f29a0fd8af346fc8548e9469383c8eacde341d45"
     }
   },
   "route_result": {
     "schema_version": "ignition-tool-route-plan-r0",
     "task_id": "handoff-artifact-local-digest-check",
-    "current_ref": "refs/heads/codex/toolbox-growth-20261025@bef6bf467320ec1b6613ad94976d4623f3d51623",
+    "current_ref": "refs/heads/codex/toolbox-growth-20261025@0420927e5eb7fea1b6ae952d604917e50c2d3cef",
     "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
     "allowed_network_hosts": [],
     "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
@@ -872,7 +873,7 @@
     "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
     "source_refs": {
       "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
-      "experimental_candidate_catalog_git_blob_sha1": "256eabb87988c6d1032a867f160aba98119dde96"
+      "experimental_candidate_catalog_git_blob_sha1": "f29a0fd8af346fc8548e9469383c8eacde341d45"
     }
   },
   "execution_authorized": false,

@@ -14365,6 +14365,18 @@
         {
           "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-routed-real-task-profile-r1.json",
           "role": "PRIOR_VERSION_ROUTED_REAL_TASK_PROFILE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-evidence-r1.json",
+          "role": "FIVE_SCENARIO_DEFAULT_OFF_ADAPTIVE_ROUTE_EVIDENCE"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r2.json",
+          "role": "SEPARATELY_AUTHORIZED_OFFLINE_REAL_TASK_EXECUTION"
+        },
+        {
+          "path": "ignition/data/operations/toolbox-selected-index-search-result-merge-routed-real-task-profile-r2.json",
+          "role": "EXACT_COMMIT_ROUTED_REAL_TASK_PROFILE"
         }
       ],
       "dependencies": [],
