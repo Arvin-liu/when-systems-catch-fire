@@ -4,9 +4,9 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → data/external-research/088-external-source-atlas-medium.jsonl
-- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个
-- [第 003 片](./systems/part-003.md)：1001—1500；Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio → \| \[C-457\]\( \) \| \[乘法系统Shannon熵反常 — 3维乘法系统
-- [第 004 片](./systems/part-004.md)：1501—2000；\| \[C-459\]\( \) \| \[加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_ → 华为员工持股，员工既是劳动者也是所有者，华为以股权绑定长期认同。员工不只是打工者，同时也是公司的所有者。这种共享机制，让员工在决策时不再只考虑短期利益，而是关切公司长远发展。
-- [第 005 片](./systems/part-005.md)：2001—2500；单方强制排序（非协作，属控制，由其他机制描述）。 → 申诉/退出机制在层级中的有效性待实证
-- [第 006 片](./systems/part-006.md)：2501—2710；癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深,更稳定 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → D598 系统性钝化索引可见性验证
+- [第 002 片](./systems/part-002.md)：501—1000；D598 系统性钝化索引可见性验证 → Object D369 defines a mechanism_model within the point-fire framework. Core: 中文：M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但
+- [第 003 片](./systems/part-003.md)：1001—1500；Object D370 defines a mechanism_model within the point-fire framework. Core: 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→ → \| 088-A \| `IGNITION-20260709-088-external-frontier-evidence-atlas-and-gap-applicability-audit.md` \| 无 \| 无 \| 否 \| 无（未执行） \|
+- [第 004 片](./systems/part-004.md)：1501—2000；\| 088-B \| `IGNITION-20260709-088-external-literature-gap-source-atlas-and-campaign-router.md` \| `records/ignition-088-ex → 元协议跨系统验证整体结论
+- [第 005 片](./systems/part-005.md)：2001—2500；元协议跨系统验证（详尽补全版） → 点火框架提供了因果链分析、跨域同构识别和意义结构收敛，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体共识。艺术作品意义生成的具体判定必须 pending。
+- [第 006 片](./systems/part-006.md)：2501—2744；点火框架提供了跨域同构识别、元协议分析、因果链分析、自举合法性分析、元层面收敛分析和门控分析，但不能替代形式分析、媒介分析、观看情境分析、历史语境分析和解释共同体共识。现代艺术成立的制度分析、具体作品价值判定、审美判断客观性必须 `pend → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

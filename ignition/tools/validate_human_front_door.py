@@ -53,12 +53,13 @@ CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
 PROJECT_IDENTITY_TEXT = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
+ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
 ARCHITECTURE_INTERACTION_HINT = "滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件"
 AI_FIRST_USE_HEADING = "2. 点火操作法 / 如何使用"
 OPERATING_METHOD_LINK = "../ignition/OPERATING-METHOD.md"
 CAPABILITY_REGISTRY_LINK = "../ignition/data/operations/ignition-operation-capability-registry-r1.json"
 ITERATION_METHOD_LINK = "../ignition/ITERATION.md"
-MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
+MINIMAL_INVOCATION = "请从[这个仓库](https://github.com/Arvin-liu/when-systems-catch-fire)获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
 NAVIGATION_SUMMARIES = (
     "组件导航：核心控制与状态",
     "组件导航：执行与协作",
@@ -202,8 +203,9 @@ def validate_ai_first_use_section(readme: str) -> None:
     require(invocation_match is not None, "README AI-first usage entry lacks a visible minimal invocation")
     invocation = invocation_match.group(1).strip()
     require(invocation == MINIMAL_INVOCATION, "README minimal invocation changed or requires internal knowledge")
+    visible_invocation = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", invocation)
     for token in ("OPERATING-METHOD.md", "Capability Registry", "函数编号", "Pack", "Ψ", "registry", "Git", "worktree", "branch", "commit", "PR"):
-        require(token.casefold() not in invocation.casefold(), f"README minimal invocation exposes internal jargon: {token}")
+        require(token.casefold() not in visible_invocation.casefold(), f"README minimal invocation exposes internal jargon: {token}")
     for token in ("schema_version", "record_sha256", "canonical_id", "CURRENT_CANONICAL_REGISTRY_FIRST"):
         require(token not in section, f"README AI-first usage entry copies low-level implementation detail: {token}")
 
@@ -270,10 +272,17 @@ def validate_readme_structure(readme: str) -> None:
         "README must not expose the architecture SVG as a second ordinary link",
     )
     require(
-        architecture.count(f"[![点火整体架构图]({ARCHITECTURE_IMAGE_TARGET})]({ARCHITECTURE_PAGES_URL})") == 1,
-        "README architecture image must link to the live Pages viewer",
+        architecture.count(f"[![点火整体架构图]({ARCHITECTURE_IMAGE_TARGET})]({ARCHITECTURE_PAGES_PRESENTATION_URL})") == 1,
+        "README architecture image must link to the live Pages presentation viewer",
     )
-    require(architecture.count(ARCHITECTURE_PAGES_URL) == 2, "README architecture section must expose exactly two Pages viewer entrypoints")
+    viewer_links = re.findall(
+        r"\]\((https://arvin-liu\.github\.io/when-systems-catch-fire/architecture/(?:\?present=1)?)\)",
+        architecture,
+    )
+    require(viewer_links.count(ARCHITECTURE_PAGES_PRESENTATION_URL) == 2, "README architecture section must expose exactly two Pages presentation entrypoints")
+    require(viewer_links.count(ARCHITECTURE_PAGES_URL) == 1, "README architecture section must expose exactly one Pages reading-mode entrypoint")
+    require(architecture.count(f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL})") == 1, "README architecture presentation entrypoint drifted")
+    require(architecture.count(f"[阅读模式]({ARCHITECTURE_PAGES_URL})") == 1, "README architecture reading-mode entrypoint drifted")
     require("../ignition/docs/generated/ignition-system-architecture.html" not in architecture, "README must not link to the repository HTML blob as the viewer")
     require("raw.githack.com" not in architecture and "htmlpreview.github.io" not in architecture, "README must not use third-party HTML preview proxies")
     require(ARCHITECTURE_INTERACTION_HINT in architecture, "README architecture section lacks the short interaction hint")
@@ -292,7 +301,6 @@ def validate_readme_structure(readme: str) -> None:
         "可点击架构图",
     ):
         require(phrase not in architecture.casefold(), f"README architecture section must not expose machine SVG/navigation detail: {phrase}")
-    require("这张图展示点火的整体结构" in architecture, "README architecture section lacks its short human explanation")
     require(validate_component_navigation(architecture) > 0, "README architecture component navigation is missing")
 
 

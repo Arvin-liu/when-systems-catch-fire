@@ -145,15 +145,6 @@ SELF_EXCLUDES = {
     "reports/operations/ignition-141-step15-targeted-regression.md",
     "reports/operations/ignition-141-step15-candidate-full-regression.md",
     "reports/operations/ignition-141-step16-fresh-clone-publication.md",
-    # Task156 research harness and its narrative records are bounded evidence,
-    # not authoritative claim sources.
-    "tools/research/cross_contract_prospective_experiment.py",
-    "tests/test_cross_contract_prospective_experiment.py",
-    "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
-    "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
-    "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
-    "reports/governance/task-IGNITION-20260905-156.md",
-    "agent-results/IGNITION-20260905-156-result.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -175,19 +166,21 @@ MACHINE_EXCLUDE_PREFIXES = (
     # source discovery as excluded paths so repository accounting remains
     # complete without feeding their labels into the claim registry.
     "data/research/cross-contract-blind-test-2026-09-05/",
-    "data/research/cross-contract-prospective-fixtures-2026-09-05/",
-    # Task157 junction-vs-local-predicates corpus is bounded research-only
-    # evidence, not an authoritative claim source.
-    "data/research/junction-vs-local-predicates-2026-09-06/",
     "docs/governance/cross-contract-failure-casebook-2026-09-05.md",
     "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-155.md",
     "agent-results/IGNITION-20260905-155-result.md",
+    # Task156 prospective fixture records are bounded research evidence, not
+    # authoritative claim sources; keep source accounting without admission.
+    "data/research/cross-contract-prospective-fixtures-2026-09-05/",
     "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
     "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
     "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-156.md",
     "agent-results/IGNITION-20260905-156-result.md",
+    # Task157 research corpus and narrative outputs stay in source accounting
+    # while remaining excluded from authoritative claim admission.
+    "data/research/junction-vs-local-predicates-2026-09-06/",
     "tools/research/junction_vs_local_predicates_task157.py",
     "tests/test_junction_vs_local_predicates_task157.py",
     "docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md",
@@ -195,6 +188,23 @@ MACHINE_EXCLUDE_PREFIXES = (
     "docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md",
     "reports/governance/task-IGNITION-20260906-157.md",
     "agent-results/IGNITION-20260906-157-result.md",
+    # Task158 research-only basis-escape records are evidence for a
+    # non-canonical study, not authoritative claim sources. Keep them in
+    # source discovery accounting while excluding them from claim admission.
+    "data/research/basis-escape-meta-plasticity-2026-09-06/",
+    # Task160 research-only basis-escape V2 records follow the same boundary:
+    # source-discovery accounting is retained, but claim admission is excluded.
+    "data/research/basis-escape-v2-2026-09-07/",
+    # Task159 semantic-detector research records are comparison inputs only;
+    # preserve source accounting while excluding claim admission.
+    "data/research/semantic-leap-detector-v2-2026-09-07/",
+    "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",
+    "docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md",
+    "docs/governance/representation-residual-casebook-2026-09-06.md",
+    "docs/governance/ignition-generator-plasticity-audit-2026-09-06.md",
+    "docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-158.md",
+    "agent-results/IGNITION-20260906-158-result.md",
 )
 # Task 107 (R1 20260731) generator-input boundary: these prefixes are governed
 # records, narrative/reference surfaces, benchmark candidate data/code or analysis
@@ -219,6 +229,23 @@ NON_AUTHORITATIVE_PREFIXES = (
     # auditable without feeding its own claims back into the Foundation
     # discovery registry.
     "PUBLICATIONS/",
+    "tools/research/task160_basis_escape_v2.py",
+    "tests/test_task160_basis_escape_v2.py",
+    "docs/governance/basis-escape-v2-2026-09-07.md",
+    "docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md",
+    "docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md",
+    "docs/governance/generator-meta-plasticity-v2-2026-09-07.md",
+    "docs/governance/next-semantic-leap-assessment-2026-09-07.md",
+    "reports/governance/task-IGNITION-20260907-160.md",
+    "agent-results/IGNITION-20260907-160-result.md",
+    "agent-results/IGNITION-20260907-160-progress.md",
+    "agent-results/IGNITION-20260907-160-run-state.json",
+    "agent-results/IGNITION-20260907-160-step-ledger.json",
+    "tools/research/task159_semantic_leap_detector.py",
+    "tests/test_semantic_leap_detector_task159.py",
+    "docs/governance/semantic-leap-detector-v2-2026-09-07.md",
+    "reports/governance/task-IGNITION-20260907-159.md",
+    "agent-results/IGNITION-20260907-159-result.md",
 )
 EXPLICIT_IMPORTS = {
     "data/foundation/claims/claims.jsonl",

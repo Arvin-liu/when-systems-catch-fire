@@ -4,6 +4,146 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [认知能力门控函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D488 / 认知能力门控函数 / D488
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：A5, A9, D451, D476；被引用：NFC-3c91450dd5c3d4ad, NFC-72626982eb47cfdf, NFC-accb8037ae07524f
+- [认知规范破缺函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D158 / 认知规范破缺函数 / D158 / D191
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：D117, D180, D91；被引用：CLAIM-D276, CLAIM-D291, CLAIM-D314, NFC-00c45d89b4a76e72
+- [认知规范破缺函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D191 / 认知规范破缺函数 / D191 / D158
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-43d1e759b8c75e09, NFC-4a043bb3f278c5f1, NFC-704d227b1e96474d, NFC-ce7efd548b67fcb1
+- [认知规范破缺函数案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f44e4959b3ea19ec / 认知规范破缺函数案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [认知路径积分函数](../../ASSET-CARDS.md#asset-d127)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：D127 / 认知路径积分函数
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：D180, D91；被引用：D123, NFC-057ecb2af9dc4696, NFC-076f9a738199bc4e, NFC-12c4da38b88fcf6a
+- [认知黑洞函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D194 / 认知黑洞函数 / D194
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：D473, CLAIM-D473, NFC-482c0d72d642c094, NFC-87cdedd96c03e9e5
+- [让读者先看见当事人如何解释自己，再让读者意识到这个解释已经被外部角色预先组织。](../../../docs/narrative-story-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-841e3054d64fd3b7 / 让读者先看见当事人如何解释自己，再让读者意识到这个解释已经被外部角色预先组织。
+  - 来源：`docs/narrative-story-template.md`
+  - 依赖：—；被引用：—
+- [记忆-智能边界函数](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-644d359b7a3873dd / 记忆-智能边界函数
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [记忆-智能边界函数 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-388197f60e174a9c / 记忆-智能边界函数 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [证据制度卡片：数学](../../ASSET-CARDS.md#asset-hr-448288b011711aef)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：证据制度卡片：数学 / evidence-regime-library-draft-20260706
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度卡片：数学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-095810093e812b78 / 证据制度卡片：数学
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度守门函数](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e38dda38a81669d6 / 证据制度守门函数
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [证据制度守门函数族](../../../data/function_dependency.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-592c11d980f9ffe8 / 证据制度守门函数族
+  - 来源：`data/function_dependency.csv`
+  - 依赖：—；被引用：—
+- [证据制度库是点火框架的"边界守门员"。没有证据制度库，点火框架很容易把 L1-L2 的结构性推论误写成 L4-L5 的外部证明或实证验证。证据制度库明确了不同学科的命题成立标准，为点火框架的输出提供了边界和约束。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-552ab58103ace019 / 证据制度库是点火框架的"边界守门员"。没有证据制度库，点火框架很容易把 L1-L2 的结构性推论误写成 L4-L5 的外部证明或实证验证。证据制度库明确了不同学科的命题成立标准，为点火框架的输出提供了边界和约束。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据只支持观察或推论，却被写成证明、实证结论或专业定论。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7b06f5f962d0ecf8 / 证据只支持观察或推论，却被写成证明、实证结论或专业定论。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [证据等级**：每条候选仅 1 篇「最终收敛报告」来源，`author: pending_human_review`，属单材料，须 pending。](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e255541767049559 / 证据等级**：每条候选仅 1 篇「最终收敛报告」来源，`author: pending_human_review`，属单材料，须 pending。
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [证据边界：文章保留结构对应的不可映射差异与历史限制；作品被接受不等于其历史机制已经被因果识别，也不证明之元写作法普遍有效。](../../../docs/publication/zhiyuan-writing-showcase.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bda18308abde7b68 / 证据边界：文章保留结构对应的不可映射差异与历史限制；作品被接受不等于其历史机制已经被因果识别，也不证明之元写作法普遍有效。
+  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
+  - 依赖：—；被引用：—
+- [证据：全目录扫描无 `Ψ₀:=` 改写、无 `新增函数编号`、无 `candidate_formalized`；8 个 NEW 补丁均带 `redline_preserved` 标记。](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-cc71cf13efdc63ca / 证据：全目录扫描无 `Ψ₀:=` 改写、无 `新增函数编号`、无 `candidate_formalized`；8 个 NEW 补丁均带 `redline_preserved` 标记。
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [证明、反证、构造、归纳](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8f924679b3b6639b / 证明、反证、构造、归纳
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [证明与证据义务](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-463e8b5755dc9282 / 证明与证据义务
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [证明义务 / Proof obligations:](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9bcfc747a5fd9e8e / 证明义务 / Proof obligations:
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [证明义务**：记录目标、理论、依赖、后端、工件、复现命令、结果与审阅状态。](../../../docs/foundation/mathematics/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7093199d96753eb3 / 证明义务**：记录目标、理论、依赖、后端、工件、复现命令、结果与审阅状态。
+  - 来源：`docs/foundation/mathematics/README.md`
+  - 依赖：—；被引用：—
+- [证明义务列明可检查的推导步骤或外部依赖。](../../../docs/math-foundation/04-proof-obligations.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9fd018e325c1d498 / 证明义务列明可检查的推导步骤或外部依赖。
+  - 来源：`docs/math-foundation/04-proof-obligations.md`
+  - 依赖：—；被引用：—
+- [证明义务：强数学词是否缺对象、假设或证明边界；](../../../docs/governance/self-correction-engine.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-21d61a1cafae09f2 / 证明义务：强数学词是否缺对象、假设或证明边界；
+  - 来源：`docs/governance/self-correction-engine.md`
+  - 依赖：—；被引用：—
+- [证明命题（如：哥德尔不完备定理）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5e8a7b46c534ad8f / 证明命题（如：哥德尔不完备定理）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证明未完成或有漏洞](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1126247f2229c241 / 证明未完成或有漏洞
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [证明未被同行审查通过](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a14cce8402a8e1f4 / 证明未被同行审查通过
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [证明未被多次独立验证](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4945cdb8d13fa064 / 证明未被多次独立验证
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [证明某一 primitive 只是另一个局部字段的同义别名，删除它不会丢失任何独立 failure mode；](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d793032e930db50e / 证明某一 primitive 只是另一个局部字段的同义别名，删除它不会丢失任何独立 failure mode；
@@ -13,11 +153,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-acd405789b5fe6cd / 证明的验证和确认
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证明苹果砸中 Newton、一个瞬间直接造成完整理论，或整则故事必然虚构。Function OS](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0d0708efec4a8376 / 证明苹果砸中 Newton、一个瞬间直接造成完整理论，或整则故事必然虚构。Function OS
-  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
 - [证明苹果砸中 Newton、单一直接因果，或整则故事必然虚构。](../../../RESULTS/OPEN-QUESTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -453,6 +588,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d65348fe4bd9bedf / 跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件,数学结构完全等价,差异仅在ηinterface参数值
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [跨线程认知碰撞协议 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-86f21d4ffffb5629)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：跨线程认知碰撞协议 — IGNITION-20260908-165 / cross-thread-cognitive-collision-2026-09-08
+  - 来源：`docs/governance/cross-thread-cognitive-collision-2026-09-08.md`
   - 依赖：—；被引用：—
 - [路径：`已迁移的历史函数来源/0400-D364-实际不可逆判据函数.md`](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1179,6 +1319,11 @@
   - 可搜索名称：NFC-b7070e5469d6dbbb / 问题**：部分判定函数（如 D67、D69、D70）被标记为案例函数（C-201、C-172、C-173），导致函数总数虚高。
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：D67, D69, D70；被引用：—
+- [问题空间重写消融 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-844a2312fd98066e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：问题空间重写消融 — IGNITION-20260908-165 / problem-space-rewrite-ablation-2026-09-08
+  - 来源：`docs/governance/problem-space-rewrite-ablation-2026-09-08.md`
+  - 依赖：—；被引用：—
 - [阅读 \[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\) 与 \[Charter System R1 治理系统\]\(./governance/charter-system-r1.m](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e7d65f737c4790fc / 阅读 \[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\) 与 \[Charter System R1 治理系统\]\(./governance/charter-system-r1.m
