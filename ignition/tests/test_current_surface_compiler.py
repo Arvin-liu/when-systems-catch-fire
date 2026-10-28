@@ -77,7 +77,7 @@ class CurrentSurfaceCompilerTests(unittest.TestCase):
         surface = next(row for row in self.contract["non_generated_surfaces"] if row["surface_id"] == "homepage-identity")
         compiled = compiler.compile_surface(source, surface, self.snapshot)
         self.assertEqual(compiled, source)
-        self.assertIn("点火是一个面向长期研究、判断与创作的认知—行动工作系统", compiled)
+        self.assertIn("点火首先是一种面对未知的精神", compiled)
         self.assertIn("组件导航：核心控制与状态", compiled)
 
 
