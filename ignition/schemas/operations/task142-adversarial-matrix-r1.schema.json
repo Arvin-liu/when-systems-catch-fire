@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task142-adversarial-matrix-r1.schema.json",
+  "title": "Task142 offline adversarial rejection matrix",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "case_count", "negative_case_count", "live_process_started", "cases", "safety", "canonical_sources", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "task142-adversarial-matrix-r1"},
+    "task_id": {"const": "IGNITION-20260827-142"},
+    "step": {"const": "18"},
+    "status": {"const": "PASS"},
+    "case_count": {"const": 15},
+    "negative_case_count": {"const": 15},
+    "live_process_started": {"const": false},
+    "cases": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "expected_action", "observed_action", "expected_code", "observed_code", "guard", "detail", "status"],
+        "properties": {
+          "case_id": {"type": "string", "minLength": 1},
+          "expected_action": {"const": "REJECT"},
+          "observed_action": {"const": "REJECT"},
+          "expected_code": {"type": "string", "minLength": 1},
+          "observed_code": {"type": "string", "minLength": 1},
+          "guard": {"type": "string", "minLength": 1},
+          "detail": {"type": "string", "minLength": 1},
+          "status": {"const": "PASS"}
+        }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["secret_content_read", "configuration_changed", "billing_changed", "install_or_upgrade_performed", "live_process_started", "live_inference_started", "workspace_modified"],
+      "properties": {
+        "secret_content_read": {"const": false},
+        "configuration_changed": {"const": false},
+        "billing_changed": {"const": false},
+        "install_or_upgrade_performed": {"const": false},
+        "live_process_started": {"const": false},
+        "live_inference_started": {"const": false},
+        "workspace_modified": {"const": false}
+      }
+    },
+    "canonical_sources": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  }
+}

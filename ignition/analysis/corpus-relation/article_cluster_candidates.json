@@ -1,0 +1,3988 @@
+{
+  "cluster_count": 15,
+  "clusters": [
+    {
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 7,
+      "dominant_ratio": 0.806,
+      "dominant_topic": "MATHEMATICS",
+      "edge_types": [
+        "alias_or_correction",
+        "depends_on",
+        "identity_correction",
+        "related",
+        "reverse_depends"
+      ],
+      "has_correction": true,
+      "has_dependency": true,
+      "id": "C000",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d127",
+          "status": "KEEP_AS_STRUCTURAL_METAPHOR",
+          "title": "认知路径积分函数",
+          "topics": [
+            "MATHEMATICS",
+            "COGNITION"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d182",
+          "status": "KEEP_AS_TOY_MODEL",
+          "title": "经典确定性函数",
+          "topics": [
+            "MATHEMATICS"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d183",
+          "status": "REWRITE_AND_RETEST",
+          "title": "门控面合并统一函数",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d184",
+          "status": "KEEP_AS_TOY_MODEL",
+          "title": "熵增门槛碾压函数",
+          "topics": [
+            "MATHEMATICS"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d185",
+          "status": "KEEP_AS_STRUCTURAL_METAPHOR",
+          "title": "相对论门槛函数",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d186",
+          "status": "KEEP_AS_STRUCTURAL_METAPHOR",
+          "title": "量子力学门槛聚集函数",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d187",
+          "status": "KEEP_AS_STRUCTURAL_METAPHOR",
+          "title": "电弱统一规范破缺函数",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d188",
+          "status": "REJECT_AS_INVALID",
+          "title": "强相互作用门控函数",
+          "topics": [
+            "MATHEMATICS"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d189",
+          "status": "DOWNGRADE_TO_CONJECTURE",
+          "title": "大统一门槛函数",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d190",
+          "status": "DOWNGRADE_TO_CONJECTURE",
+          "title": "万有理论门槛函数",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "d260",
+          "status": "KEEP_AS_TESTED_INDEX_OR_CLASSIFIER",
+          "title": "偏差敏感度阈值函数",
+          "topics": [
+            "MATHEMATICS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-03bc02f942aee639",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Full Object Inventory",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1fc7367092e0045c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Task 98 claim-governance implementation record",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-279683b750652ac6",
+          "status": "CURRENT_CORRECTION_RECORD",
+          "title": "首批物理资产纠偏（2026-07-29）",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2bf3c3a1ac552110",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "历史函数资产深度裁决与注册表闭合 R1",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3785d4850d94b77e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-48569bcf01c7f27f",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Core kernel adjudication",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-677152f467e106d4",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "强断言门禁",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-75b56a91c97f20be",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Future non-function claim admission protocol",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7a5aa67ff65f918e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Core proof and countermodel report",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7b285d9f5fad1e01",
+          "status": "CURRENT_CORRECTION_RECORD",
+          "title": "历史纠偏日志",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-91f57f34641602bd",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Task 98 remote truth and gap lock",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-990891f8efa72ff7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Task 98 dependency impact",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9fad496317a3b73c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Semantic adjudication verification",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9fe0a1492c44c9b3",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "知识体验入口与探索层",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d4b5c8e581f06e23",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Pilot Formal Audit",
+          "topics": [
+            "MATHEMATICS",
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e4827916294ebf56",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "T2 proof-equivalence audit",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-0b7defaef4efab24",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-3c841b1210f8e63e",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "区分历史物理笔记对 `D260` 的使用与正式资产：正式 `D260` 是 `p/(1-p)` 偏差敏感度评分，不是大一统不可能命题。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-71e297ca6132aac6",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "FUNCTION_ASSET",
+          "id": "t2",
+          "status": "KEEP_AS_ESTABLISHED_MATH",
+          "title": "乘法归零律",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "这里发生了什么纠正、撤回或回弹？当前的断言上限是什么？",
+      "rationale": "",
+      "size": 31,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 19,
+        "COGNITION": 2,
+        "MATHEMATICS": 25,
+        "OPERATIONS_EVIDENCE": 11,
+        "PHYSICS": 9,
+        "SYSTEMS": 2,
+        "WRITING_PUBLICATION": 4
+      }
+    },
+    {
+      "cluster_basis": "map_subject:subject-architecture-governance",
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 6,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "ARCHITECTURE_GOVERNANCE",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C001",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-00b4be17fb8dc706",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-156313cd333787a2",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "知识体验层的人类结果、搜索与 Claim Delta 投影；",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-187e985133669a56",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-2843222a849fe77e",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-2b7304f480da70c2",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-390d533e6aa565c0",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-3d9ffb2206406fcc",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-3f2e05f213dea1ef",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "使用 0.4.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；发布反馈必须登记 provenance 后才能成为候选",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-517a9b6de3674e2a",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-51f85a6892787610",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-6122e6f96efe210e",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-61546854af53780b",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-6ca935ca1a4f2a8e",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-70a1ec2c42864627",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "“物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-777640d03f719f40",
+          "status": "HISTORICAL_ONLY",
+          "title": "原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从\"冲突\"升级为\"必要张力\"。 **扩展注释 / Extended Annotation**",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？",
+      "rationale": "",
+      "size": 15,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 15,
+        "MATHEMATICS": 5,
+        "OPERATIONS_EVIDENCE": 5,
+        "PHYSICS": 6,
+        "SYSTEMS": 1,
+        "WRITING_PUBLICATION": 3
+      }
+    },
+    {
+      "cluster_basis": "map_subject:subject-cognition",
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 5,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "COGNITION",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C002",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1437a5c9924f3c9e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION-121Q6C 执行结果",
+          "topics": [
+            "COGNITION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-252ed61cfaf40f35",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Agent 碰撞阶段收口审计（2026-07-08 23:55）",
+          "topics": [
+            "COGNITION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4021615f6416219a",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q10 Emergent Current State and License Text Finalization",
+          "topics": [
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-46d4e1a9e463a4a0",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "候选决策摘要（candidate-decision-summary）",
+          "topics": [
+            "MATHEMATICS",
+            "COGNITION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-6585a5fc88149fff",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "V1 规范性审核 - 延续性协议 (Continuity Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-6d4c8f2164bcd7cb",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Local source and recovery audit",
+          "topics": [
+            "MATHEMATICS",
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-771c2981fcc20396",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q13 Attention, Distribution, And Compression Report",
+          "topics": [
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8079a8712f2b03bc",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Ψ₀ 判定矩阵（psi0-decision-matrix）",
+          "topics": [
+            "COGNITION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8c7e1c2721f6e7fd",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "map-agent-delivery-operations",
+          "topics": [
+            "SYSTEMS",
+            "COGNITION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8d592a920b9edd0e",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "12 元协议规范性审核（外部治理记录）",
+          "topics": [
+            "SYSTEMS",
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8faeed857e0f9416",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "点火项目整体认知初始化 — Agent 认知报告",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "COGNITION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-933d6ba7d34f8014",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121C01: First Batch GLM-5.2 Max Semantic Review Report",
+          "topics": [
+            "COGNITION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9be719cb6ef0fd88",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Attention And Attractor Control Plane",
+          "topics": [
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9bf38326d66a104a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "两张表条目模板固化审计",
+          "topics": [
+            "MATHEMATICS",
+            "COGNITION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-aa71cb6d79bb27ed",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "AI entrypoint audit",
+          "topics": [
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c0254716ff47346d",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "得到大脑输出索引",
+          "topics": [
+            "COGNITION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c32095e69516906c",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "V2 规范性审核 - 效率性协议 (Efficiency Protocol)",
+          "topics": [
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "认知类比、行动选择和现实反馈怎样保留边界与失败条件？",
+      "rationale": "",
+      "size": 17,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 8,
+        "COGNITION": 17,
+        "MATHEMATICS": 4,
+        "OPERATIONS_EVIDENCE": 11,
+        "SYSTEMS": 4
+      }
+    },
+    {
+      "cluster_basis": "map_subject:subject-mathematics",
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 4,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "MATHEMATICS",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C003",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-00b4be17fb8dc706",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-390d533e6aa565c0",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-3d9ffb2206406fcc",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-61546854af53780b",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "对象、运算、定义域、证明和反例究竟完成到哪一步？",
+      "rationale": "",
+      "size": 4,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 4,
+        "MATHEMATICS": 4,
+        "PHYSICS": 2,
+        "WRITING_PUBLICATION": 1
+      }
+    },
+    {
+      "cluster_basis": "map_subject:subject-operations-evidence",
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 6,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "OPERATIONS_EVIDENCE",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C004",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0450dd379222f5ba",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q9 Global Validation",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-04e3c04b5c9de706",
+          "status": "CURRENT_CORRECTION_RECORD",
+          "title": "101 人类可读知识表面与持续自我纠错引擎",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-052d55fd7ec8bacd",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-081b7e1fafaa5756",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "104 双 088 归并与外部证据层定版报告",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-2b7304f480da70c2",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-2f6931fff5a6554c",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "人类可见性门禁：检查机器结果的人类对应物、两步可达导航、过期状态、默认隐藏的重要内容和断链；",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-6122e6f96efe210e",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-6ca935ca1a4f2a8e",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-70a1ec2c42864627",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "“物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-777640d03f719f40",
+          "status": "HISTORICAL_ONLY",
+          "title": "原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从\"冲突\"升级为\"必要张力\"。 **扩展注释 / Extended Annotation**",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-996c4e8631d40356",
+          "status": "HISTORICAL_ONLY",
+          "title": "D220 完全统一不可能定理",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-a5870d6c2e430817",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-a6b80fca608c8c8f",
+          "status": "HISTORICAL_ONLY",
+          "title": "This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-c15234f1546c00ea",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "任务边界：1111 中对应的 IGNITION command、progress 与 result",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-c349fbdc470b50ab",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "候选、验证、合并和 Current 怎样分离并留下可复算证据？",
+      "rationale": "",
+      "size": 15,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 10,
+        "MATHEMATICS": 2,
+        "OPERATIONS_EVIDENCE": 15,
+        "PHYSICS": 3,
+        "SYSTEMS": 1,
+        "WRITING_PUBLICATION": 1
+      }
+    },
+    {
+      "cluster_basis": "map_subject:subject-physics",
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 6,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "PHYSICS",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C005",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-00b4be17fb8dc706",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-51f85a6892787610",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-61546854af53780b",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-6ca935ca1a4f2a8e",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-70a1ec2c42864627",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "“物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-777640d03f719f40",
+          "status": "HISTORICAL_ONLY",
+          "title": "原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从\"冲突\"升级为\"必要张力\"。 **扩展注释 / Extended Annotation**",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-7ba5ae6b5efe40a7",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-7f34ff08b3193964",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "关于“物理大一统不可能”",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-82ebe95def5bfab1",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-9d5698768267468e",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-b3044ed3734222fb",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。",
+          "topics": [
+            "PHYSICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "门控模型能支持什么有界物理投影，哪些统一与观测义务仍未完成？",
+      "rationale": "",
+      "size": 11,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 11,
+        "MATHEMATICS": 4,
+        "OPERATIONS_EVIDENCE": 3,
+        "PHYSICS": 11,
+        "SYSTEMS": 1,
+        "WRITING_PUBLICATION": 1
+      }
+    },
+    {
+      "cluster_basis": "map_subject:subject-systems",
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 6,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "SYSTEMS",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C006",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-09324a8008a3bd3d",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Codespace 救援两张表差异审计",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0dd59e3bbd5eeb55",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "NF-004 系统性钝化回填审计",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0e7b7e2d16e773be",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "NF-002 量化指标替代真实价值回填审计",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0ef2189bb50603b7",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q22 Probabilistic System Dynamics Validation",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0ef7472961a343e5",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Mechanism Adjudication Plane",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0fe03d4a4ca70a91",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "赛课机制第一批回填索引可见性验证",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1c328f9ffe6aee1f",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "V4 规范性审核 - 可持续性协议 (Sustainability Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1c89ea0a4c2a0aa1",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "map-epistemic-architecture",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1d52767df2986dd5",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q25D current closeout",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1ee77928279485fa",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "Multiscale Causal Fabric / 多尺度因果织体",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1faefff9c300160f",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "S4 规范性审核 - 网络协议 (Network Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2e400b8fd7cc6b10",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "D598 系统性钝化索引可见性验证",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3ad9b4c8053ea959",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q23 Network Theory Source Map",
+          "topics": [
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3d02f20fb6692a0c",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q31｜完整可点击系统图与双来源写作素材池审计",
+          "topics": [
+            "SYSTEMS",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-1e10227f1b51e4d0",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so",
+          "topics": [
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-2b7304f480da70c2",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "Iteration method 1.3.0 and system map 0.2.0, 0.3.0 are Historical; method 1.2.0 and map 0.1.0 are earlier Historical, no",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-b3044ed3734222fb",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。",
+          "topics": [
+            "PHYSICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-b424983d09c9a88d",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `d",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？",
+      "rationale": "",
+      "size": 18,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 10,
+        "MATHEMATICS": 3,
+        "OPERATIONS_EVIDENCE": 11,
+        "PHYSICS": 1,
+        "SYSTEMS": 18,
+        "WRITING_PUBLICATION": 2
+      }
+    },
+    {
+      "cluster_basis": "map_subject:subject-writing-publication",
+      "disposition": "ARTICLE_CANDIDATE",
+      "distinct_domains": 6,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "WRITING_PUBLICATION",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C007",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1c89ea0a4c2a0aa1",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "map-epistemic-architecture",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-25ccad6cef81cbea",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "当一支军队开始相信自己的背影",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3069e59a51d869c3",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q28 肉身锚定的心智层级跃迁写作法审计",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3b5e72d7f1cdfb5b",
+          "status": "CURRENT_SCOPED_SOURCE",
+          "title": "之元写作法：内部范例与反例",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3d02f20fb6692a0c",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q31｜完整可点击系统图与双来源写作素材池审计",
+          "topics": [
+            "SYSTEMS",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3d6271e0ba81267e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域 smoke test — 历史学碰撞报告",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-43bf10109af2485e",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "External Input Non-Republication Principle",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4419fea9529c829c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q31T｜交互系统总图与双来源写作素材池合并收口审计",
+          "topics": [
+            "SYSTEMS",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-44a1c398c470bbf4",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q28S 之元写作法 0.3.0 全项目整合审计",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-45480c716d721c81",
+          "status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
+          "title": "121Q25B Whole-Project Synchronization Contract",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-460ef60e3cf27dca",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "元协议规范性审核发布审计 — IGNITION-20260709-043",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-3d9ffb2206406fcc",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-517a9b6de3674e2a",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-6122e6f96efe210e",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "Current: iteration method 1.4.0 (Continuous Stage Snapshot Publication). Read data/operations/stage-snapshots.json and d",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-82ebe95def5bfab1",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-97dbfc72d7ef8b40",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "Q31T 已将 L6 `之元写作法` `0.4.0` 双来源素材池收口为当前能力；`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ceilin",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        }
+      ],
+      "proposed_central_question": "研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？",
+      "rationale": "",
+      "size": 16,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 8,
+        "MATHEMATICS": 1,
+        "OPERATIONS_EVIDENCE": 9,
+        "PHYSICS": 1,
+        "SYSTEMS": 3,
+        "WRITING_PUBLICATION": 16
+      }
+    },
+    {
+      "cluster_basis": "topic:ARCHITECTURE_GOVERNANCE",
+      "disposition": "REFERENCE_TAXONOMIC",
+      "distinct_domains": 3,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "ARCHITECTURE_GOVERNANCE",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C008",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-08f0792e76d0f0cb",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Core strong-claim audit",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0a1370d6fff72a4c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION-106: 下一任务交接",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0a190293ca8a50ae",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "迁移与回滚",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0dcc5422ea65d2e4",
+          "status": "HISTORICAL_COMPLETION_RECORD",
+          "title": "076 adversarial acceptance audit",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-23602e485d46c33b",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "080 Highest Model Escalation Summary",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-259784cecbb2dc49",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q13 Baseline And Overlap Audit",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2dd772b06269e251",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Architecture Structure Freeze v1",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-400134632a22a714",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Schema and integrity audit",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-52173a553c421e11",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "跨协议一致性红队（外部治理记录）",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-52a1b14648bb866b",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Remaining content work queue",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-57b8850420df5865",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Migration and rollback",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-590a8629163938ec",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "083 Quality Window Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-5b54a4719d10bbc2",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q8 Final Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-5de7359175082aca",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "082 Independent Acceptance Audit Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-62de12643e577ef4",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "084 Architecture Truth Freeze Readiness Assessment",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-654ae58eec903c53",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "E3 规范性审核 - 循环演化协议 (Cyclic-Evolution Protocol)",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-69ae0aeb92225add",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "088 阶段1：087 计数与分母审计",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-70146813777bcdb5",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "078 truth audit",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-70403729fef8b50e",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Non-Sycophancy Output Protocol",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7142e033279e204a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "083 Max Queue Readiness Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7178d1b582275868",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q30｜首页架构与之元写作法成果展示审计",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7b29778a2b189cd1",
+          "status": "CURRENT_CORRECTION_RECORD",
+          "title": "IGNITION-106: 105 证据纠错报告",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-851dd1b125828bfd",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "083 GLM High Repair Summary",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-86ad7c707a8b70d8",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "080 Full Semantic Adjudication Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8b3081462a058d1a",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Effectual Action Plane",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-92fc8f7bd633607c",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "公共断言上限指南",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-930fdb2770ec5121",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Legacy compatibility report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-98aee959a458b641",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "104 补丁证据就绪报告",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-996b1e97820089e9",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "v0.2 P0 收口复核审计",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a492aafc18415614",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q28T｜之元写作法 0.3.0 Current 收口",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a7b229336e1604ab",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "审计：生命共同体价值宪章 README 入口",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ac9e178219fcc8d0",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION-084 Max Adjudication Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-aefff65e1fe80eef",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "起始案例来源链｜公元1115年：金朝崛起为什么这么快？",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c936ceda8bbc6085",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "Licensing Rights Inventory",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d27de59030e9f44a",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Compression Integrity Gate",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d3835bd97f147a42",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "V3 规范性审核 - 创新性协议 (Innovation Protocol)",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e14552c4c0658b5a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "083 Escalation Routing Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e1d441f85e9b4b63",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "085: Architecture Structure Freeze Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e31b1dff732ad215",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "120 — Function OS Architecture Candidate Report",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ef6e1d0860ae3fef",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "事实 Pending 总表（外部治理记录）",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-f29753586c28f9ec",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Governance License Scope",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-fcbaa498cbeb783c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "080 Resume Instructions",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-7d491e8a66bfebe6",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "不可能性/普遍断言 699；",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-bd6c757f496eff1d",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "`RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-d12a007686070f3d",
+          "status": "WITHDRAWN_UNSUPPORTED",
+          "title": "Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-f31cd02c40b70cc7",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "跨域对应 2,178；",
+          "topics": [
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "架构、治理与自我纠错机制如何保证仓库主张不被悄悄升级？",
+      "rationale": "簇过大(46 卡)且缺乏卡间依赖/纠正主轴，仅由研究问题中枢或主题聚合，按来源族/研究问题拆分以防止\"按主题标签\"式笼统成篇。（按来源族/研究问题尝试拆分，但来源族未分化，无法进一步细分；保留为参考，待编辑界定子问题。）",
+      "size": 46,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 46,
+        "OPERATIONS_EVIDENCE": 19,
+        "WRITING_PUBLICATION": 4
+      }
+    },
+    {
+      "cluster_basis": "topic:COGNITION",
+      "disposition": "REFERENCE_TAXONOMIC",
+      "distinct_domains": 3,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "COGNITION",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C009",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c322de3c7799a555",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Distribution And Decision Collapse Control Plane",
+          "topics": [
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-f58d1b491fb96c27",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "Licensing Model Candidate",
+          "topics": [
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "关于认知、Agent 与行动的断言，哪些越过了事实边界？",
+      "rationale": "仅按主题标签聚合(COGNITION)、无研究问题中枢或卡间结构；保留为参考集合，文章须先由编辑界定连贯问题。",
+      "size": 2,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 2,
+        "COGNITION": 2,
+        "OPERATIONS_EVIDENCE": 2
+      }
+    },
+    {
+      "cluster_basis": "topic:MATHEMATICS",
+      "disposition": "REFERENCE_TAXONOMIC",
+      "distinct_domains": 6,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "MATHEMATICS",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C010",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-07eaa526c5114401",
+          "status": "CURRENT_CORRECTION_RECORD",
+          "title": "持续自我纠错引擎",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1255e91e43370b8e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "085: Backlog Prioritization",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-191c775bce185353",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "T16 counterexample-equivalence audit",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-20d143d91797ccdc",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Forty proof-obligation dossiers",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-25db71123fa1cbc7",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "元协议规范性审核（外部治理记录）",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-290e2cb3b336dd6a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Count reconciliation",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-29d94a1a94170774",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "NC-002 表演化假课与量化指标消解温度回填审计",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2df668dbdc482ed7",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "注册表契约",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2e47aae701252c3e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Object classification",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-32eebb16db448f9c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "D597 量化指标替代真实价值索引可见性验证",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3611a9bf0615b4e7",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Foundation documentation",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3842ff66e7acfebf",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "新增函数候选 · P1 接入烟雾测试",
+          "topics": [
+            "MATHEMATICS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3da265b74da19421",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "函数资产作者指南",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4172fa0da3a40b1e",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "断言治理与函数身份规范",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-448288b011711aef",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "证据制度卡片：数学",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4a7f6b204cdcb0ee",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Validation summary",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-5598d8ad0154221d",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "075 truth audit",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-565a18c0c443c350",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "新增函数候选 · 赛课机制下的教师生存困境",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-617b14d24b6c52be",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "22 本书验证候选案例 · 正式案例表入表审计 2026-07-09",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-64c5f9f425889534",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Strong claim gate audit",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-699df907d9234853",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域候选函数批次收口审计",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-70fddc78f6837470",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Claim argument evidence audit",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-71ceb8486b492bc9",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Provenance Audit",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-728439cfb210ca75",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "NC-001 职称硬门槛裹挟青年教师回填审计",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-72e8a74d5d2cba68",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Logic validation report",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-741abc37fd9e4409",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Formalization roadmap",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7491533b5a81fa71",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "历史函数资产全量登记",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-75acdd1f73f32af7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Full migration coverage",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-773e495bc5720013",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Core system reclassification",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-782e1e02d09b5cb2",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "赛课机制第一批小批量回填审计",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7b3bc86f58f00477",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Unresolved obligations",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7bd95d9ed567d84b",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Math proof backend report",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8538af7205a1c2d1",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "历史函数后续证明与实证路线图",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-853faf13207f1d67",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Blockers",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-86779b6cdb3209b8",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "22 本书验证候选案例 · 正式案例表入表 crosswalk",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-87a808ae0e53a33b",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "点火项目总体定位更新",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-95f4d0b3d4dd2b7d",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "逻辑地基规则",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-996ef89e3a670484",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "函数资产注册表迁移 R2",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9ba686d027762485",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Architecture rebuild summary",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a2f6b1bf53bb9239",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Local Note Sync Report",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a53421dea2f6cdca",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "099 Function Asset Registry Closure",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a5759af803aebc01",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "数学地基规则",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-addcb11c670ad242",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "全语料非函数型断言裁决索引",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b03fab6963dcb9e5",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域候选函数复核",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b3910e7a27e481ac",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "生命共同体价值宪章",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b7cf68ed12ba8b82",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "两张表单条条目结构审计与统一模板草案",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b9ed64291673acbc",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "MF-0001~0005 补入审计记录（2026-07-08）",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-cc88abdd459a3602",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Strong-term audit",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-cdbd2a8dabea0396",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Canonical Protocol Validation Results",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d1fa676bb432b571",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域候选函数小批量回填审计",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d77d1e13245bc9a4",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "九轴状态系统",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-dc0c745159dd31db",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "比刀剑更持久的，是共享观念",
+          "topics": [
+            "MATHEMATICS",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-de9bf5c4104738d3",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "v0.2 函数依赖图初稿",
+          "topics": [
+            "MATHEMATICS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e628768805f5eb1d",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Counterexample replay audit",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ea120e5d0d0fa5ff",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "MF-0001~0005 Codespace 救援复核",
+          "topics": [
+            "MATHEMATICS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ebd5091c3be06f0a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation",
+          "topics": [
+            "MATHEMATICS",
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-fd9206bee6e7782d",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "学科理论核卡片：物理学",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-85688f0030875f4e",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。",
+          "topics": [
+            "MATHEMATICS"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-921e43a466f461f8",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-9379ce5377b8455f",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The",
+          "topics": [
+            "MATHEMATICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-fa7f908615d24682",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。",
+          "topics": [
+            "MATHEMATICS",
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "对象、运算、定义域、证明与反例在数学上究竟完成到哪一步？",
+      "rationale": "簇过大(61 卡)且缺乏卡间依赖/纠正主轴，仅由研究问题中枢或主题聚合，按来源族/研究问题拆分以防止\"按主题标签\"式笼统成篇。（按来源族/研究问题尝试拆分，但来源族未分化，无法进一步细分；保留为参考，待编辑界定子问题。）",
+      "size": 61,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 42,
+        "MATHEMATICS": 61,
+        "OPERATIONS_EVIDENCE": 36,
+        "PHYSICS": 2,
+        "SYSTEMS": 10,
+        "WRITING_PUBLICATION": 4
+      }
+    },
+    {
+      "cluster_basis": "topic:OPERATIONS_EVIDENCE",
+      "disposition": "REFERENCE_TAXONOMIC",
+      "distinct_domains": 1,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "OPERATIONS_EVIDENCE",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C011",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-0b2df1f7b457cbe6",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q2 Night Progress Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-104843eaeaebb434",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "新增案例候选 · P1 接入烟雾测试",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-12a0a75721794540",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "P1 机器可读数据完整性审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-1c6a8f5e8b981082",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121B Fulltext Batch Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-215773989a96f879",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121A Night Recovery Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-241b716d50942efc",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "12 元协议投影（12-meta-protocol-projection）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2605b1957ccb9e09",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "两张表版本同步维护审计（2026-07-09 00:30）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-27badcb5d09c98af",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "22 本书籍验证案例候选（可读版）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2ad47297310f2b9a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q16 Action Selection",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-2cf0c16a60d1a3af",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "104 来源质量审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-369f261001c4ece1",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q25 Human Front-Door Audit",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-37c1dabc2f087f11",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "来源清单",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3a14f1ddbf2ed824",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "角色—身份—主体性补全书单（2026-07）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3c8e2580116a3cd7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726 typed change-propagation impact report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-3dfbbb5a261064e9",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "v0.2 CP/SB 编号前计数差异诊断",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-40912baa99eefd4a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION 059 UNESCO coverage ledger",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4597e4725744281a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "新增注释 · P1 接入烟雾测试",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-47da75ea2c43ef63",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Function-Paradigm Full-Text Review Report — IGNITION-121",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-49dd491e1cd0cf42",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "角色—身份碰撞批次路线",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-52502d2b9c02b338",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域 smoke test 审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-53733a2aa5cf5dd7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "碰撞输出报告 · P1 接入烟雾测试",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-552359b3880c984a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Legal Full-Text Resolver Report — IGNITION-121",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-57b4f559431d6912",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q32 typed change-propagation impact report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-5cd1aa1e1cf5e7f8",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121B → 121C Handoff",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-5e32e96b5ac7b371",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q16 Sustainability Signal Pilot",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-6106e26409ecfa79",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域 smoke test — 社会学碰撞报告",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-628b84a2327f5c52",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "碰撞证据链：不听话的人 × 点火两张表（20260711）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-655695609bf38d4a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "v0.2 CP/SB 编号前计数审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-6750bcffe399a4fb",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q2R Canonical Reconciliation Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-6ff393d82ba46184",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "输入材料快照 · P1 接入烟雾测试",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-771c575b7e09f8bd",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q32I Phase D integrated validation closeout",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-799941ede8ca07cb",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "验证报告：047 证据链补齐与 PR 11 合并前复核（IGNITION-20260709-049）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7d4413587f58d270",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "扩展注释 · P1 接入烟雾测试",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7dfd6b8ed7333b2a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域 smoke test — 自然科学碰撞报告",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-7e921a02c565cb43",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q3 Night Progress Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-81c5f5f4c67de686",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "C-0809 表演化假课与量化指标消解温度索引可见性验证",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-833d1c5e553562bc",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q5 Final Report — Canonical Function OS v0.2",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-850e9cc7f0805b92",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "P1 机器可读化抽取可行性审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8ace59cddddfe0a2",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8f3c2449dfb9208b",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q25C Lifecycle-Gate Deadlock Repair",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9516507750851228",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION-106: GAP-001 接口就绪度评估",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9a0447fe84ecbc5f",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "22 本书籍验证案例候选 · 暂存层",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9a37e04e46e43cf2",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9e39d8c09bf33c74",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q9 Cumulative Baseline",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9e4e9fae33d82afe",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q2W Final Consistency Seal Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a3102269fa5cb3fd",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "不采纳项 · P1 接入烟雾测试",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a598ace26626a803",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "C-0808 职称硬门槛裹挟青年教师索引可见性验证",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a8550987d2a41dab",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "经典问题 benchmark 卡片：黎曼猜想",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-aab6acea79423520",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "120 — Source Quality and Template Risk Audit",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ab7862b612e34394",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "元协议版本迭代维护审计 2026-07-09",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ad59534793e1d1d7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "新故事索引表（2026年07月06日03时06分，故事总数 1）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-aee11399d5cfd399",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "跨域 smoke test — 跨域同构汇总",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b16fc8b1ad9d6b20",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "v0.2 结构缺漏审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b1aad6dbbdf235c8",
+          "status": "HISTORICAL_COMPLETION_RECORD",
+          "title": "121Q24 Current-State Reconciliation",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b543950ddea47bd7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q32I typed change-propagation impact report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b72bf8b27748c5e3",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "D583 可移植来源引用清理审计报告（IGNITION-20260709-055）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-bbf31ff3f05d22fe",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "两张表全量碰撞报告（two-tables-full-collision-report）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-bcc48ae7649ea4fe",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "材料分层图（source-layer-map）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-bd43dc0d8b91689f",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "回填计划 · P1 接入烟雾测试",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-bda837b6080acf95",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-bfe8f79290fb0e20",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q15 Q12-Q14 Cumulative Preflight",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c190ac76ad5f8440",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q3 Night Final Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c629630ad15b68cb",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "任务 102 知识体验层缺口与覆盖审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d2f7959438110a91",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "经典问题 benchmark 卡片：叙事为什么能改变人的理解",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d5166569c3ff6750",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "抽取审计",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d6bbd09179294577",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "失败类型学初稿",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d821031f6e382fd7",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q9 Final Release Candidate",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d8efce2dacaa135f",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "v0.2 阶段定位",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e815f8ad25cfc77e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION 059 next collision roadmap",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ebcda7ca000d3bac",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q2R Final Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-f8c21cd0cd6a1f34",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "生命共同体价值审查（life-community-value-audit）",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-f92361487a1aad76",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "项目本体版本升级审计 2026-07-09",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-fb9a21e0eb12989e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q2V Verification Repair Report",
+          "topics": [
+            "OPERATIONS_EVIDENCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "迭代、验证与证据工程如何使结论可复现、可 adjudicate？",
+      "rationale": "簇过大(73 卡)且缺乏卡间依赖/纠正主轴，仅由研究问题中枢或主题聚合，按来源族/研究问题拆分以防止\"按主题标签\"式笼统成篇。（按来源族/研究问题尝试拆分，但来源族未分化，无法进一步细分；保留为参考，待编辑界定子问题。）",
+      "size": 73,
+      "topic_distribution": {
+        "OPERATIONS_EVIDENCE": 73
+      }
+    },
+    {
+      "cluster_basis": "topic:PHYSICS",
+      "disposition": "REFERENCE_TAXONOMIC",
+      "distinct_domains": 3,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "PHYSICS",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C012",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8abef15d00fa6899",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "D220 countermodel-equivalence audit",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-d30b79cb6b607ade",
+          "status": "ACCEPTED_AS_DEFINITION",
+          "title": "撤回“已经证明物理大一统不可能”，禁止通过“结构性定理”“框架判定”或内部定义回弹。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-fcd82f719963c928",
+          "status": "RETAINED_AS_STRUCTURAL_METAPHOR",
+          "title": "四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？",
+          "topics": [
+            "PHYSICS"
+          ]
+        },
+        {
+          "asset_type": "NONFUNCTION_CLAIM",
+          "id": "nfc-ffa78acc808beedc",
+          "status": "QUARANTINED_AMBIGUOUS",
+          "title": "不能推出四力统一或物理学大一统不可能。",
+          "topics": [
+            "PHYSICS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "门控模型能支持什么有界物理投影，哪些统一与观测义务仍未完成？",
+      "rationale": "仅按主题标签聚合(PHYSICS)、无研究问题中枢或卡间结构；保留为参考集合，文章须先由编辑界定连贯问题。",
+      "size": 4,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 3,
+        "OPERATIONS_EVIDENCE": 1,
+        "PHYSICS": 4
+      }
+    },
+    {
+      "cluster_basis": "topic:SYSTEMS",
+      "disposition": "REFERENCE_TAXONOMIC",
+      "distinct_domains": 5,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "SYSTEMS",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C013",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-42c319dffa9ac5fd",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-47abfc6ad84da18c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "map-maintainer-sustainability-economics",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-48973e3aa76b6fae",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q22 Probability and System Dynamics Gap Audit",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4910d221a74d1112",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4b5539f6a578f48d",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "输入材料快照 · 赛课机制下的教师生存困境",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4e500eb8be311cb7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "机制抽取（mechanism-extraction）",
+          "topics": [
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-537499c7917fee41",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-53d09798ed596327",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-54b0858dd7fe1388",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "1. 标题与机器可读前言",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-55909fc062be1ffa",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "赛课机制教师生存困境碰撞批次收口审计",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-70edc5860a2e57c8",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "扩展注释 · 赛课机制下的教师生存困境",
+          "topics": [
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-715f3951a2b86789",
+          "status": "CURRENT_SCOPED_SOURCE",
+          "title": "Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-814cd0e9847c82e3",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q22 Probability and Systems Source Map",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-821405558993dacd",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q23 Adaptive Relational Network Validation",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8f6026df1ef643fe",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-94decfed90ce354c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "赛课机制碰撞候选回填复核",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9ce0dfb3a119bc53",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-9cf03227a0396b4c",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q12 Baseline Audit",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a9a90af4c17ea1f8",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "赛课机制下的教师生存困境碰撞报告",
+          "topics": [
+            "SYSTEMS",
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-aafe3d04b9390110",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q32 类型化变更传播与自更新系统图审计",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-adeed1d734c70a83",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "D598 final adjudication",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ae709c73eb8cce73",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "S3 规范性审核 - 层级协议 (Hierarchy Protocol)",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b3dbb7f4c3f52857",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "新增注释 · 赛课机制下的教师生存困境",
+          "topics": [
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c023e21ce9a8a6d4",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "Probabilistic System Dynamics / 概率—系统动力学",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c0e9f4990481c808",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q21R Causal Asset Audit",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c5a76b2115839837",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q23 Relational Network Gap Audit",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-c7aaddf58550aae5",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "120 — Function Paradigm Atlas Report",
+          "topics": [
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-ca887c40042191e7",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "新增案例候选 · 赛课机制下的教师生存困境",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d0d9de18fd9e9bde",
+          "status": "CURRENT_CORRECTION_RECORD",
+          "title": "085: 084 Truth Status Correction",
+          "topics": [
+            "SYSTEMS",
+            "COGNITION",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d1de2bd2a70dc6c1",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "Adaptive Relational Network / 自适应关系网络",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d660dc784cc90282",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Incremental Execution and Selective Materialization",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-da202c53b7387f68",
+          "status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
+          "title": "类型化变更传播闭包 / Typed Change-Propagation Closure",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-daf1cb45ccd7b5b6",
+          "status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
+          "title": "点火仓库原生系统图",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e46a02fee84ab9b4",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q14 Dynamic Atlas Report",
+          "topics": [
+            "SYSTEMS"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e5b132f83f5707d0",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q21R Multiscale Causal Fabric Validation",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e5c82087cc19191e",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q14 Baseline And Latent Map Audit",
+          "topics": [
+            "SYSTEMS",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-f664e539ab663124",
+          "status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
+          "title": "Ignition Atlas",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-f9fe7eee273643e9",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q12 Effectual-Mechanism Dual-Loop Report",
+          "topics": [
+            "SYSTEMS",
+            "ARCHITECTURE_GOVERNANCE"
+          ]
+        }
+      ],
+      "proposed_central_question": "系统论与机制建模在何处提供了可检验的机制，而非仅命名？",
+      "rationale": "仅按主题标签聚合(SYSTEMS)、无研究问题中枢或卡间结构；保留为参考集合，文章须先由编辑界定连贯问题。",
+      "size": 38,
+      "topic_distribution": {
+        "ARCHITECTURE_GOVERNANCE": 25,
+        "COGNITION": 1,
+        "OPERATIONS_EVIDENCE": 21,
+        "SYSTEMS": 38,
+        "WRITING_PUBLICATION": 2
+      }
+    },
+    {
+      "cluster_basis": "topic:WRITING_PUBLICATION",
+      "disposition": "REFERENCE_TAXONOMIC",
+      "distinct_domains": 2,
+      "dominant_ratio": 1.0,
+      "dominant_topic": "WRITING_PUBLICATION",
+      "edge_types": [],
+      "has_correction": false,
+      "has_dependency": false,
+      "id": "C014",
+      "map_subjects": [],
+      "members": [
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-4f3c4ff4a7ab0e3a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "Current Main vs 1.4 Candidate Homepage Comparison",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-5a6642209467ff3a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-67cc7f2c07c67bd9",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "121Q30T｜首页与之元写作法成果展示合并收口审计",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-8e4b48d6273130f9",
+          "status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
+          "title": "阶段成果持续快照与分层发布制度",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a932eb17267d9709",
+          "status": "CURRENT_SCOPED_SOURCE",
+          "title": "之元写作法",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-a960756efab9d50a",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "第57期故事验收报告",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b42fdd29bfb492b0",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "故事化评分维度",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-b55587d4d61d4426",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "第57期故事结构图",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-d328ae24912155e2",
+          "status": "HISTORICAL_COMPLETION_RECORD",
+          "title": "之元写作法成果",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-de57c4f1ec87eada",
+          "status": "CANDIDATE_OR_PENDING_SOURCE",
+          "title": "121Q28R 之元写作法 0.2.0 修订审计",
+          "topics": [
+            "WRITING_PUBLICATION",
+            "OPERATIONS_EVIDENCE"
+          ]
+        },
+        {
+          "asset_type": "RESULT_OR_ARTICLE",
+          "id": "hr-e7a557e011cab937",
+          "status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+          "title": "第57期故事样稿｜当一个名字变成接口",
+          "topics": [
+            "WRITING_PUBLICATION"
+          ]
+        }
+      ],
+      "proposed_central_question": "面向公众的表达如何在可读与不越界之间取得平衡？",
+      "rationale": "仅按主题标签聚合(WRITING_PUBLICATION)、无研究问题中枢或卡间结构；保留为参考集合，文章须先由编辑界定连贯问题。",
+      "size": 11,
+      "topic_distribution": {
+        "OPERATIONS_EVIDENCE": 6,
+        "WRITING_PUBLICATION": 11
+      }
+    }
+  ],
+  "disposition_summary": {
+    "ARTICLE_CANDIDATE": 8,
+    "REFERENCE_TAXONOMIC": 7
+  },
+  "singleton_count": 0
+}

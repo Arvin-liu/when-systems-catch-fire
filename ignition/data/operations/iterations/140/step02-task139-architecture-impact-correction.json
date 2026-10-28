@@ -1,0 +1,45 @@
+{
+  "schema_version": "ignition-140-task139-architecture-impact-correction-r1",
+  "task_id": "IGNITION-20260826-140",
+  "step": "02",
+  "provenance_kind": "CORRECTION_PROVENANCE_WITHOUT_HISTORICAL_REWRITE",
+  "subject_task": {
+    "task_id": "IGNITION-20260825-139",
+    "historical_identity_impact": "PRESENTATION_ONLY",
+    "historical_latest_architecture_changing_task": "IGNITION-20260823-136",
+    "historical_records_unchanged": true,
+    "source_digests": {
+      "ignition/agent-results/IGNITION-20260825-139-result.md": "1036d3a1171a922d7dd19f88a1e3f5bc449bb865d1066c2c6edbf05546aeeb18",
+      "ignition/agent-results/IGNITION-20260825-139-machine-receipt.json": "22f197c4f23f40cfd435dc224c7457d2707fac6b7f4fcbd26a0272e5672e3083",
+      "ignition/data/operations/iterations/139/current-state-sync-receipt.json": "70ffc31631c36673a8c0a97e419c89d8b19c0a916a05028d722c969e0c160644",
+      "ignition/data/operations/iterations/139/execution-contract-r1.json": "b471e03ead5c6b6d8e5ea3b43f0c6f6792693999b0bb1e06db2a974f22b4af7c"
+    }
+  },
+  "audit": {
+    "semantic_classification": "BEHAVIORAL_CONTROL_PLANE_CHANGE",
+    "legacy_identity_impact_projection": "ARCHITECTURE_CHANGED",
+    "changed_semantics": [
+      "canonical_state_source",
+      "observation_capture",
+      "process_transport",
+      "reconciliation_state_machine"
+    ],
+    "evidence": [
+      "ignition/agent_federation/live_capture.py",
+      "ignition/agent_federation/live_attempt_ledger.py",
+      "ignition/agent_federation/live_current_projection.py",
+      "ignition/reports/operations/ignition-139-step03-durable-capture-transport.md",
+      "ignition/reports/operations/ignition-139-step06-live-current-projection.md"
+    ],
+    "finding": "Task139 changed bounded OS control-plane behavior and canonical observation authority; PRESENTATION_ONLY was under-classified."
+  },
+  "current_lineage_correction": {
+    "effective_task": "IGNITION-20260826-140",
+    "latest_architecture_changing_task": "IGNITION-20260826-140",
+    "latest_architecture_task_ordinal": 140,
+    "task139_historical_result_rewrite": false,
+    "task140_registration_is_architecture_changing": true,
+    "source_of_truth": "Task140 architecture-impact correction/provenance plus Task140 canonical Current advancement"
+  },
+  "claim_ceiling": "Repository-local correction provenance and architecture-impact interpretation only; historical Task139 records remain immutable and no external truth, Owner authority or epistemic upgrade is inferred."
+}

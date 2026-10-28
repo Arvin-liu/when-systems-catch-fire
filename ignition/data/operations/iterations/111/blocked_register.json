@@ -1,0 +1,20 @@
+[
+  {
+    "canonical_id": "CF-apple_gravity_failure",
+    "class": "IMPLEMENTATION_DEFECT",
+    "reason": "UNRESOLVED_PREREQUISITE",
+    "title": "牛顿苹果故事的误读与重构"
+  },
+  {
+    "canonical_id": "CF-cross_domain_synergy_risk",
+    "class": "IMPLEMENTATION_DEFECT",
+    "reason": "UNRESOLVED_PREREQUISITE",
+    "title": "跨领域协同不一定带来正面效应"
+  },
+  {
+    "canonical_id": "CF-technology_economic_growth_failure",
+    "class": "IMPLEMENTATION_DEFECT",
+    "reason": "UNRESOLVED_PREREQUISITE",
+    "title": "技术创新一定带来经济增长吗？"
+  }
+]

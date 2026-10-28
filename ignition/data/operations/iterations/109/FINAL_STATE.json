@@ -1,0 +1,49 @@
+{
+  "task_number": 109,
+  "task_id": "IGNITION-AUTONOMOUS-ITERATION-PLANNER-AND-EVIDENCE-DRIVEN-BACKLOG-GOVERNANCE-R1-20260801",
+  "control_commit": "871f6a52c5f57a728815ac1295115dfa90116ded",
+  "closeout_task_file": "relay/tasks/109-REMOTE-CLOSEOUT.md",
+  "success_token": "IGNITION_AUTONOMOUS_ITERATION_PLANNER_ESTABLISHED_EVIDENCE_DRIVEN_BACKLOG_GOVERNED_NEXT_SUBSTANTIVE_ITERATION_PROPOSED_109_TERMINALIZED",
+  "terminal_tag": "ignition/iterations/109/terminal-r1",
+  "content_pr": 169,
+  "content_head": "04989fe685e8166f98ce8ed6621dff42a1083dc4",
+  "terminalization_pr": 170,
+  "terminalization_commit": "f2709b965f3b5ebf97c3ac2473a37b1467ed4ccb",
+  "predecessor": {
+    "task": 108,
+    "verified_terminal_state": "TERMINAL_SUCCESS",
+    "verified_independently": true,
+    "success_token_match": "IGNITION_TWO_PHASE_ITERATION_TERMINALIZATION_ESTABLISHED_106_107_RECONCILED_108_SELF_CLOSED_AND_MERGED"
+  },
+  "recommended_next_iteration": "C-01",
+  "reserves": ["CF-apple_gravity_failure", "CF-cross_domain_synergy_risk"],
+  "auto_created_task_110": false,
+  "resolver_verification": {
+    "resolved_109": "TERMINAL_SUCCESS",
+    "errors": {},
+    "determinism": "PASS (planner output reproducible across two runs; fixed salted-hash OQ ids with hashlib md5)",
+    "adversarial_tests": "12/12 PASS",
+    "substantive_work_ratio_top10": 1.0,
+    "predecessor_gate": "PASS (task 108 independently verified terminal from remote truth)",
+    "known_limitation": "foundation-validation job (NONFUNCTION_CLAIM_OUTPUT_DRIFT) is RED on origin/main itself (verified on clean checkout) and is latent, pre-existing, orthogonal to task 109; main has no required-status-check branch protection, so it does not block the ordinary merges."
+  },
+  "success_criteria": {
+    "1_predecessor_terminal": "PASS",
+    "2_real_backlog_no_feedback": "PASS (ingested real governed sources; generated output not fed back as discovery)",
+    "3_factors_fixed_before_ranking": "PASS (priority_model.json committed before ranking)",
+    "4_ranking_explainable_uncertainty_aware": "PASS (factor vectors + missing_fields recorded)",
+    "5_meta_work_cannot_dominate": "PASS (substantive ratio top-10 = 1.0 >= 0.70; meta gaps capped)",
+    "6_real_next_plus_two_reserves": "PASS (C-01 + 2 reserves; >=5 not-selected reasons)",
+    "7_no_task_110": "PASS (recommended_is_auto_task_110 = false; no task 110 created/executed)",
+    "8_surfaces_reconciled": "PASS (article + recommendation + backlog; NO_MAP_IMPACT for system-map; Foundation unchanged)",
+    "9_content_and_terminalization_merged": "PASS (PR #169 ordinarily merged by Agent per closeout 109-REMOTE-CLOSEOUT.md step 4; PR #170 ordinarily merged per step 9; no squash/rebase/amend/force-push/rewrite)",
+    "10_fresh_clone_resolver": "PASS (clean-clone resolver: determinism + 12/12 adversarial + FINAL_STATE token/resolved_109 verified)"
+  },
+  "merge_verification": {
+    "note": "Closeout relay/tasks/109-REMOTE-CLOSEOUT.md (control_commit 871f6a52) explicitly authorizes the Agent to ordinary-merge PR #169 (step 4) and PR #170 (step 9). Both merges executed as ordinary merge commits (no squash/rebase/amend/force-push/rewrite). Content PR #169 merged as 04989fe6; terminalization PR #170 merged as the final terminal commit. Annotated terminal tag ignition/iterations/109/terminal-r1 remains non-forced and immutable, bound to FINAL_STATE.json. Clean-clone resolver re-run as final §12 gate.",
+    "content_pr": 169,
+    "content_merge": "04989fe685e8166f98ce8ed6621dff42a1083dc4",
+    "terminalization_pr": 170
+  },
+  "agent_terminal_chat_line": "109 已执行完成，请 GPT 查证。"
+}

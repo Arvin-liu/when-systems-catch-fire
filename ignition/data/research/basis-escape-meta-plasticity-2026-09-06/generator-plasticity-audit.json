@@ -1,0 +1,86 @@
+{
+  "basis_mutation_operations": {
+    "create_new_object_class": {
+      "default_route": "candidate/registry and validator",
+      "path_exists": true
+    },
+    "distinguish_new_object_from_object_language_change": {
+      "default_route": "not in default generator path",
+      "path_exists": "research-only"
+    },
+    "invalidate_canonical_representation": {
+      "default_route": "archive/migration plus manual review",
+      "path_exists": "partial"
+    },
+    "merge_axes": {
+      "default_route": "new combination or projection",
+      "path_exists": false
+    },
+    "preserve_identity_while_changing_ontology": {
+      "default_route": "migration/source lineage",
+      "path_exists": "partial"
+    },
+    "replace_cartesian_with_relation": {
+      "default_route": "research overlay only",
+      "path_exists": false
+    },
+    "rerun_old_corpus_under_competing_basis": {
+      "default_route": "ordinary regeneration under current basis",
+      "path_exists": false
+    },
+    "retire_basis_axis": {
+      "default_route": "new local rule / exclusion",
+      "path_exists": false
+    },
+    "split_basis_axis": {
+      "default_route": "new field or object",
+      "path_exists": false
+    }
+  },
+  "current_pipeline": [
+    "source",
+    "classify",
+    "evidence/claim",
+    "registry",
+    "validation",
+    "projection",
+    "publication/governance"
+  ],
+  "current_pipeline_evidence": [
+    "ignition/tools/foundation/build_function_asset_census.py",
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+    "ignition/tools/governance/build_knowledge_experience.py",
+    "ignition/tools/publication/build_fire_seed_census.py"
+  ],
+  "generator_lock_in_test": {
+    "basis_change_destination": "absent from default production workflow",
+    "default_destinations_observed": [
+      "new local rule",
+      "new validator",
+      "new schema field",
+      "candidate object"
+    ],
+    "scenarios": [
+      "repeated representation residual",
+      "ordinary local fixes keep working",
+      "basis mutation explains with fewer rules"
+    ],
+    "verdict": "GENERATOR_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING"
+  },
+  "historical_evidence_refs": [
+    "a1295d737e290105069f915c577105c0cf5ff26f",
+    "0a04b42a1e7d21549593dc38ef5993e1503cdc5e",
+    "9d924fe140f0c99f1f2a4952ea48dedc80dd348b",
+    "974b121e36145d6ed35b214619312001f97b21f8"
+  ],
+  "historical_pipeline": [
+    "new material",
+    "collision",
+    "case rerun",
+    "residual",
+    "function/schema mutation",
+    "full rerun",
+    "consolidation"
+  ],
+  "task_id": "IGNITION-20260906-158"
+}

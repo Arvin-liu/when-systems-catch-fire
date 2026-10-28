@@ -1,0 +1,160 @@
+{
+  "schema_version": "ignition-136-step17-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "17",
+  "run_number": 6,
+  "status": "PASS",
+  "candidate_head_sha": "62f0d6d7ba3b8a7c012d212b1c80f67652770bf0",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "runtime_seconds": 2929.202,
+  "elapsed_seconds": 2930.255,
+  "long_window": {
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "arbitrary_timeout_used": false,
+    "minimum_window_seconds": 14400,
+    "actual_run_completed_before_window": true
+  },
+  "environment_contract": {
+    "isolated": true,
+    "dependency_preflight": "PASS",
+    "python_version": "3.14.6",
+    "execution_python": "temporary isolated foundation venv outside repository",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "path_prepend_contract": "execution interpreter directory precedes inherited PATH for portable python3 child validators"
+  },
+  "result": {
+    "exit_code": 0,
+    "process_returncode": 0,
+    "tests_run": 1131,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "OK",
+    "status": "PASS"
+  },
+  "side_effect_observation": {
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_mutations": [],
+    "generated_output_drift": [],
+    "before_status": [],
+    "after_status": []
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "check_count": 24,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "clean_tree_gate_pass": true,
+    "side_effect_detected": false,
+    "tracked_path_count": 3137,
+    "asset_card_count": 5741,
+    "dependency_edge_count": 1923,
+    "knowledge_experience_search_records": 22715,
+    "fire_seed_source_records": 393,
+    "human_surface": {
+      "entries": 48,
+      "machine_components": 95,
+      "visible_graph_nodes": 83,
+      "typed_graph_edges": 88
+    },
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_surface_determinism": "PASS",
+    "durability_projection_hygiene": "PASS historical_residuals=9 sympy_residuals=1"
+  },
+  "capture": {
+    "location": "external temporary directory; not part of the formal repository",
+    "stdout_bytes": 5587,
+    "stdout_sha256": "7f278aabeaf0185468e8cf731fcc2d6a0306a8edb5831ee6561e08d1d6f879be",
+    "stderr_bytes": 1579,
+    "stderr_sha256": "7b020c0a356f828598708d7b45c9d8eea8899e9935375a0b216bd603ff888343"
+  },
+  "attempt_history": [
+    {
+      "run_number": 1,
+      "candidate_head_sha": "58f99603907ad0df1cb9292f17ba0966b57d03e4",
+      "tests_run": 1103,
+      "failures": 41,
+      "errors": 7,
+      "skipped": 0,
+      "runtime_seconds": 3036.514,
+      "status": "FAIL_PROJECTION_AND_TASK_BOUNDARY_REPAIR_REQUIRED",
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "stdout_sha256": "280576b37184ff4b33cd7faf1150b82c00107fcaa56e500f9ca26f4309bf6574",
+      "stderr_sha256": "c3de93b1806a2f6d754cabb30289348895c049c40d9358a3ddf748ded1e1cd36"
+    },
+    {
+      "run_number": 2,
+      "candidate_head_sha": "f2da40e13687d232b8db83e576eeebc394a2275e",
+      "tests_run": 1131,
+      "failures": 4,
+      "errors": 0,
+      "skipped": 0,
+      "runtime_seconds": 2915.083,
+      "status": "FAIL_DEEP_PROJECTION_REPAIR_REQUIRED",
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "stdout_sha256": "d984fd0402b9af76601455bad7615dbbf241cedbe5e8d198df52f17841d3b9b2",
+      "stderr_sha256": "09d7d0af90aa63ed7c369a0e3c07c9e22dd39e2d0ac9637b7b9bd91d81490eb5"
+    },
+    {
+      "run_number": 3,
+      "candidate_head_sha": "a8d6da61c4ac3ebd79517f29693af26f3988e9a3",
+      "tests_run": 1131,
+      "failures": 4,
+      "errors": 0,
+      "skipped": 0,
+      "runtime_seconds": 2918.907,
+      "status": "FAIL_CURRENT_PROJECTION_REPAIR_REQUIRED",
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "stdout_sha256": "039c871b5d7f472276f336e6cd9c4ab23be542956baad56497c0c213c2880492",
+      "stderr_sha256": "8c4f615190513ddda869ac5073c859ece990d9becafaf6b17d12461ce305f8ff"
+    },
+    {
+      "run_number": 4,
+      "candidate_head_sha": "2ce54ad1c3379fade38aca6727dc14f47f228308",
+      "tests_run": 1131,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "runtime_seconds": 2925.256,
+      "status": "FAIL_KNOWLEDGE_PROJECTION_REPAIR_REQUIRED",
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "stdout_sha256": "0f9844fed2d458d27661a4fff1a395334e7ca62d4de0224f226618050172456a",
+      "stderr_sha256": "f9470505dd44440be25c820ddeb22abd5de18a90dda48a6135ecc92822dbc588"
+    },
+    {
+      "run_number": 5,
+      "candidate_head_sha": "82c39738b06336084eaba5820e5a5a57733d9e0d",
+      "tests_run": 1131,
+      "failures": 5,
+      "errors": 0,
+      "skipped": 0,
+      "runtime_seconds": 2926.519,
+      "status": "FAIL_CENSUS_SELF_REFERENCE_REPAIR_REQUIRED",
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "stdout_sha256": "73aab8d08f4d18b8b138eb8c1b8bad944567aada51e9f609c8db82bf5081c0af",
+      "stderr_sha256": "7aa03a8508ba54563decb44f4c1e099cb58a840e16e235416a410c2d6c7d2698"
+    }
+  ],
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Exact repository-local candidate full-suite #6 terminal evidence on the exact candidate SHA; no whole-project correctness, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

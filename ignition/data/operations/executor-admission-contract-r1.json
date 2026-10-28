@@ -1,0 +1,46 @@
+{
+  "schema_version": "executor-admission-contract-r1",
+  "contract_id": "EXECUTOR_ADMISSION_PROVIDER_NEUTRAL_R1",
+  "authority": "OS_EXECUTOR_ADMISSION",
+  "candidate_taxonomy": ["AGENTIC_EXECUTOR", "REASONER_RUNTIME", "TOOL", "UI_SURFACE"],
+  "required_gates": ["public_auth", "auth_separation", "argv_contract", "structured_result", "workspace", "capture", "validator_binding", "cleanup", "permission_ceiling", "exact_binding", "no_effect_scope"],
+  "result_binding": {
+    "required_fields": ["task_id", "dispatch_id", "attempt_id", "executor_id", "family", "lease_id", "workspace_digest_before", "workspace_digest_after", "capture_ref", "structured_result_ref", "validator_ref"],
+    "validator_rule": "ALL_REQUIRED_FIELDS_MUST_MATCH_ONE_DISPATCH_ATTEMPT_AND_EXACT_VALIDATOR_INPUT",
+    "mismatch_policy": "REJECT_COMPLETION_AND_DO_NOT_INFER_MISSING_FACTS"
+  },
+  "live_policy": {
+    "eligible_families": ["AGENTIC_EXECUTOR"],
+    "max_attempts_total": 2,
+    "max_attempts_per_family": 1,
+    "stop_on_first_validated_completion": true,
+    "child_spawn": "DENY",
+    "side_effect_scope": "SYNTHETIC_READ_ONLY_NO_CHANNEL_BROWSER_REMOTE_GIT_CONFIG_OR_BILLING",
+    "workspace_mode": "DISPOSABLE_READ_ONLY_FIXTURE"
+  },
+  "candidates": [
+    {
+      "executor_id": "candidate.placeholder",
+      "family": "AGENTIC_EXECUTOR",
+      "provider_neutral_family": "agentic-executor",
+      "observed_version": "NOT_OBSERVED",
+      "public_auth": "NOT_OBSERVED",
+      "auth_separation": "UNPROVEN",
+      "argv_contract": "NOT_OBSERVED",
+      "structured_result": "NOT_OBSERVED",
+      "workspace": "UNPROVEN",
+      "capture": "UNPROVEN",
+      "validator_binding": "UNPROVEN",
+      "cleanup": "UNPROVEN",
+      "permission_ceiling": "UNPROVEN",
+      "exact_binding": "UNPROVEN",
+      "no_effect_scope": "UNPROVEN",
+      "live_eligibility": "NOT_OBSERVED",
+      "blockers": ["CONTRACT_ONLY_NO_CANDIDATE_ADMITTED"],
+      "evidence_refs": ["ignition/data/operations/iterations/142/step04-admission-contract.json"],
+      "class_separation": "AGENTIC_EXECUTOR",
+      "claim_ceiling": "Contract placeholder only; not an installed, authenticated or live-selectable executor."
+    }
+  ],
+  "claim_ceiling": "Provider-neutral repository-local admission contract only; this source grants no executor capability, permission, external validity, production safety, exact-once behavior, Owner authority or epistemic acceptance."
+}

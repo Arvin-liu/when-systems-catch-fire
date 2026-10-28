@@ -1,0 +1,169 @@
+{
+  "schema_version": "ignition-149-step02-upstream-freeze-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "02",
+  "status": "PASS_WITH_PINNED_UPSTREAMS",
+  "observed_at": "2026-09-01T07:09:15+08:00",
+  "agent_reach_backend": "GitHub via git ls-remote and gh CLI public metadata",
+  "formal_previous_commit": "e60acb82fc92fe2378ae605f0f8a59b0aa120d7e",
+  "ephemeral_checkout_root": "/tmp/ignition149-upstreams.outU7e",
+  "fresh_fetch_policy": {
+    "repository_ref": "refs/heads/main",
+    "pin_to_observed_sha": true,
+    "starting_clues_are_authority": false,
+    "source_copied_into_ignition": false,
+    "system_install_performed": false,
+    "credential_or_cookie_operation_performed": false
+  },
+  "upstreams": [
+    {
+      "provider_candidate_id": "archify",
+      "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+      "repository": "tt-a1i/archify",
+      "repository_url": "https://github.com/tt-a1i/archify",
+      "observed_ref": "refs/heads/main",
+      "observed_main_sha": "2bfb47132c057195d8dddb3e25ae966dd7c7a72e",
+      "starting_clue_sha": "5de7275fe87a66a19d52a4d9b0b3a4f2a5a90115",
+      "starting_clue_matches_observed": false,
+      "upstream_checkout": {
+        "relative_path": "archify",
+        "clean": true,
+        "non_shallow": true,
+        "fsck_passed": true
+      },
+      "declared_version": "2.16.0",
+      "public_metadata": {
+        "default_branch": "main",
+        "visibility": "public",
+        "archived": false,
+        "github_license_spdx": "MIT"
+      },
+      "read_surfaces": [
+        {"path": "README.md", "sha256": "0e0c937ef9291adebbaea1522023aebabb8675ea8405304e38d211c6da7ad006", "role": "product_and_scope"},
+        {"path": "archify/SKILL.md", "sha256": "5bf0cac8cfb50608941f3a0ff66a5e76837662e2dd05ce406297f8c59a740e6a", "role": "authoring_and_usage_contract"},
+        {"path": "archify/schemas/architecture.schema.json", "sha256": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c", "role": "typed_architecture_ir_schema"},
+        {"path": "archify/schemas/common.schema.json", "sha256": "2630c958314eeebb92e0f6f6330475f1a2bc48f8c1b53201ba3b58889b319c80", "role": "shared_ir_schema"},
+        {"path": "archify/bin/archify.mjs", "sha256": "a9e02fa9e359ff853e4852c4fa378e438e50e85c63614a4a860bf369c14be640", "role": "cli_dispatch_and_delivery"},
+        {"path": "archify/references/delivery-contract.md", "sha256": "c0af94e227c5617c7c290065a0404d0fc769b7e4ef26f187f51a19e3640fa176", "role": "delivery_receipt_and_visual_evidence_contract"},
+        {"path": "archify/package.json", "sha256": "9be6428bb21d030eaf04ba685796d3a69d09a9aeeb031f6570cd11440dc89723", "role": "runtime_and_dependency_metadata"},
+        {"path": "LICENSE", "sha256": "2f724fa953b4eaa8ec75fa56919ce474b57adce54d2456a3791510bc53735cbd", "role": "license_evidence"}
+      ],
+      "license": {
+        "declared": "MIT",
+        "license_file": "LICENSE",
+        "license_sha256": "2f724fa953b4eaa8ec75fa56919ce474b57adce54d2456a3791510bc53735cbd",
+        "attribution_requirements": [
+          "Retain the Archify copyright notice in copies or substantial portions of copied software.",
+          "Retain the Cocoon AI copyright notice for the acknowledged original architecture-diagram-generator material.",
+          "Do not copy or vendor upstream source merely because the license permits it."
+        ],
+        "rights_decision": "EXTERNAL_DEPENDENCY_ADAPTER_PREFERRED_NO_SOURCE_COPY"
+      },
+      "observed_contract": {
+        "input": "typed JSON IR with diagram_type and schema-backed components/connections",
+        "output": "self-contained HTML with inline SVG; optional export and browser evidence paths",
+        "accepted_abstract_operations": ["render_derived_visualization", "validate_derived_artifact", "deliver_derived_artifact"],
+        "side_effect_observed": "DERIVED_ARTIFACT_ONLY",
+        "network_notes": "Optional update-manifest GET is documented; no update/install occurs through the rendering contract.",
+        "authority_boundary": "Archify layout/rendering and validation do not authorize or define Ignition architecture truth."
+      },
+      "health": {
+        "method": "node archify/bin/archify.mjs doctor",
+        "status": "PASS",
+        "checks_passed": 15,
+        "checks_failed": 0,
+        "environment_observation": "Node.js v22.23.0 satisfies the declared >=18 requirement; all bundled doctor checks reported ok.",
+        "credential_content_access": "NONE"
+      }
+    },
+    {
+      "provider_candidate_id": "agent-reach",
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "repository": "Panniantong/Agent-Reach",
+      "repository_url": "https://github.com/Panniantong/Agent-Reach",
+      "observed_ref": "refs/heads/main",
+      "observed_main_sha": "06c202b03400a7d31886bf4399213706da1a0324",
+      "starting_clue_sha": "06c202b03400a7d31886bf4399213706da1a0324",
+      "starting_clue_matches_observed": true,
+      "upstream_checkout": {
+        "relative_path": "agent-reach",
+        "clean": true,
+        "non_shallow": true,
+        "fsck_passed": true
+      },
+      "declared_version": "1.5.0",
+      "public_metadata": {
+        "default_branch": "main",
+        "visibility": "public",
+        "archived": false,
+        "github_license_spdx": "MIT"
+      },
+      "read_surfaces": [
+        {"path": "README.md", "sha256": "04b5a71e1bf5c910a8344a08a53f457bc6fb9654852805b5e5b1c7dc575ad4d4", "role": "product_and_channel_scope"},
+        {"path": "agent_reach/skill/SKILL.md", "sha256": "621796ede32bbac680dcbc9f15110cdb9b569ebffc3de27ed9aafda9e0f9fbcf", "role": "provider_local_routing_and_safety_contract"},
+        {"path": "docs/install.md", "sha256": "7b5bcfd72bf14c119be554e7653d9274105e9a1714a3eceed54460dd8b1f0981", "role": "installation_and_credential_boundaries"},
+        {"path": "agent_reach/doctor.py", "sha256": "84bb212880e138eb404576162dffd4f2ced442d60a75694ed272e2fa750db851", "role": "health_collection"},
+        {"path": "agent_reach/core.py", "sha256": "5ad4744d62276cb63a7ab0a678c2b2b1a4bb56a56b57bba18da5015f43f27d79", "role": "core_health_api"},
+        {"path": "agent_reach/cli.py", "sha256": "21888f38d4dd1bf6b9ff4863ff2e9352304771430abeeccb7898bc8a71025bed", "role": "installer_and_cli_dispatch"},
+        {"path": "agent_reach/channels/__init__.py", "sha256": "484430b142f8cfab92a240246fe49f914762bbfab7d24d206fa26567fd88778f", "role": "channel_registry"},
+        {"path": "pyproject.toml", "sha256": "b74f8bcb8442e5386028f1aebb091861d6b230058fbed0d7000860ccc847534d", "role": "runtime_and_dependency_metadata"},
+        {"path": "LICENSE", "sha256": "e94c131ac1c2f78cfd8f7e69da354c0ff58e4e54071697703d56856c036de402", "role": "license_evidence"}
+      ],
+      "license": {
+        "declared": "MIT",
+        "license_file": "LICENSE",
+        "license_sha256": "e94c131ac1c2f78cfd8f7e69da354c0ff58e4e54071697703d56856c036de402",
+        "attribution_requirements": [
+          "Retain the Agent Reach MIT notice and Copyright (c) 2025 Agent Eyes notice in copied software portions.",
+          "Keep attribution for separately selected upstream tools; Agent Reach documents that it routes to them rather than wrapping them.",
+          "Do not copy or vendor Agent Reach source merely because the license permits it."
+        ],
+        "rights_decision": "EXTERNAL_DEPENDENCY_ADAPTER_PREFERRED_NO_SOURCE_COPY"
+      },
+      "observed_contract": {
+        "input": "platform/source query and explicit read-only research intent",
+        "output": "selected upstream tool output plus channel/backend status; output requires Ignition provenance capture before absorption",
+        "accepted_abstract_operations": ["discover_read_only_source", "read_public_source", "resolve_provider_health"],
+        "side_effect_observed": "READ_ONLY_NETWORK_OR_AUTHENTICATED_CHANNEL_DEPENDENT",
+        "network_notes": "The project routes across 15 platform channels and may select tools, browser sessions, cookies, MCP or APIs according to its local policy.",
+        "authority_boundary": "Agent Reach local routing, install, channel and credential rules are not Ignition global policy or permission authority."
+      },
+      "health": {
+        "pinned_source_method": "PYTHONPATH=<ephemeral_checkout>/agent-reach python3 -m agent_reach.cli doctor --json",
+        "pinned_source_status": "BLOCKED_DEPENDENCY",
+        "pinned_source_blocker": "ModuleNotFoundError: No module named 'yaml'",
+        "pinned_source_install_performed": false,
+        "current_executable_method": "agent-reach doctor --json",
+        "current_executable_version": "1.5.0",
+        "current_executable_status": "OBSERVED",
+        "current_executable_credential_content_access": "NONE_REPORTED",
+        "current_executable_channel_matrix": [
+          {"channel": "github", "status": "warn", "active_backend": null},
+          {"channel": "twitter", "status": "warn", "active_backend": null},
+          {"channel": "youtube", "status": "ok", "active_backend": "yt-dlp"},
+          {"channel": "reddit", "status": "off", "active_backend": null},
+          {"channel": "facebook", "status": "off", "active_backend": null},
+          {"channel": "instagram", "status": "off", "active_backend": null},
+          {"channel": "bilibili", "status": "ok", "active_backend": "B站搜索 API"},
+          {"channel": "xiaohongshu", "status": "off", "active_backend": null},
+          {"channel": "linkedin", "status": "off", "active_backend": null},
+          {"channel": "xiaoyuzhou", "status": "off", "active_backend": null},
+          {"channel": "v2ex", "status": "ok", "active_backend": "V2EX API (public)"},
+          {"channel": "xueqiu", "status": "warn", "active_backend": null},
+          {"channel": "rss", "status": "ok", "active_backend": "feedparser"},
+          {"channel": "exa_search", "status": "warn", "active_backend": null},
+          {"channel": "web", "status": "ok", "active_backend": "Jina Reader"}
+        ]
+      }
+    }
+  ],
+  "selection_and_admission_boundary": {
+    "provider_selection_owner": "Ignition contract (Step04 policy), not either upstream",
+    "provider_local_policy_inheritance": "FORBIDDEN",
+    "authenticated_channel_admission": "NOT_GRANTED",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED",
+    "future_version_compatibility": "UNPROVEN",
+    "current_capability_status": "NOT_CURRENT_INTEGRATION"
+  },
+  "claim_ceiling": "Fresh public upstream revision, license/attribution evidence and specified-environment health observations only; no compatibility beyond the pinned revisions, provider quality, external truth, production readiness, authenticated-channel admission, Current integration or live external Agent invocation is inferred."
+}

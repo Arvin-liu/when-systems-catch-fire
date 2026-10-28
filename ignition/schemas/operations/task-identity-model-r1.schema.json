@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task-identity-model-r1.schema.json",
+  "title": "Ignition formal task identity model",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "role_bindings", "historical_lineage_source", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "task-identity-model-r1"},
+    "contract_id": {"const": "FORMAL_TASK_VS_ARCHITECTURE_TASK_SEPARATION_INVARIANT"},
+    "role_bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_formal_task", "latest_architecture_changing_task", "release_candidate_task", "publication_witness_task"],
+      "properties": {
+        "current_formal_task": {"$ref": "#/$defs/binding"},
+        "latest_architecture_changing_task": {"$ref": "#/$defs/binding"},
+        "release_candidate_task": {"$ref": "#/$defs/binding"},
+        "publication_witness_task": {"$ref": "#/$defs/witnessBinding"}
+      }
+    },
+    "historical_lineage_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_path", "json_pointer", "preserve_history"],
+      "properties": {
+        "source_path": {"$ref": "#/$defs/nonblank"},
+        "json_pointer": {"pattern": "^/"},
+        "preserve_history": {"const": true}
+      }
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "source_path", "json_pointer", "semantic"],
+      "properties": {
+        "role": {"$ref": "#/$defs/nonblank"},
+        "source_path": {"$ref": "#/$defs/nonblank"},
+        "json_pointer": {"pattern": "^/"},
+        "semantic": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "witnessBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "source_path", "json_pointer", "authority", "semantic"],
+      "properties": {
+        "role": {"$ref": "#/$defs/nonblank"},
+        "source_path": {"$ref": "#/$defs/nonblank"},
+        "json_pointer": {"pattern": "^/"},
+        "authority": {"const": "CONTROL_REPOSITORY_RECEIPT"},
+        "semantic": {"$ref": "#/$defs/nonblank"}
+      }
+    }
+  }
+}

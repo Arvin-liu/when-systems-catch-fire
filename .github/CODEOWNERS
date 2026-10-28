@@ -1,0 +1,17 @@
+# Impact routing, evidence gates, main witnesses, and component publication
+# authority change the shared release boundary and remain Owner-reviewed.
+/.github/CODEOWNERS @Arvin-liu
+/.github/workflows/foundation-validation.yml @Arvin-liu
+/.github/workflows/component-release.yml @Arvin-liu
+/ignition/data/operations/project-components.json @Arvin-liu
+/ignition/data/operations/change-propagation-topology.json @Arvin-liu
+/ignition/data/operations/component-validation-map-r1.json @Arvin-liu
+/ignition/data/operations/component-release-policy-r1.json @Arvin-liu
+/ignition/schemas/operations/component-validation-map-r1.schema.json @Arvin-liu
+/ignition/schemas/operations/component-release-policy-r1.schema.json @Arvin-liu
+/ignition/schemas/operations/component-release-manifest-r1.schema.json @Arvin-liu
+/ignition/tools/operations/route_component_validation.py @Arvin-liu
+/ignition/tools/operations/run_component_validation_targets.py @Arvin-liu
+/ignition/tools/operations/verify_component_validation_evidence.py @Arvin-liu
+/ignition/tools/operations/write_final_main_witness.py @Arvin-liu
+/ignition/tools/operations/prepare_component_release.py @Arvin-liu

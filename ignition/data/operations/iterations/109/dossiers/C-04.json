@@ -1,0 +1,45 @@
+{
+  "canonical_id": "C-04",
+  "title": "A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.",
+  "class": "CORE_CAPABILITY_VALIDATION",
+  "is_meta": false,
+  "current_status": "DEFERRED",
+  "provenance": {
+    "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+    "canonical_id": "C-04",
+    "upstream_source": "function-os-candidate/v0.2/",
+    "claim_id": "FUNCTION-OS-V02-CORRECTNESS"
+  },
+  "dependencies": [
+    "FUNCTION-OS-V02-CORRECTNESS"
+  ],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "evidence-program",
+    "claims-registry"
+  ],
+  "evidence_needs": [
+    "preregistration",
+    "independent replication",
+    "oracle/baseline"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "Implementation correctness on fixture only.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 64.8,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.6,
+    "dependency_centrality": 0.7,
+    "falsifiability": 0.7,
+    "data_oracle_availability": 0.6,
+    "expected_information_gain": 0.7,
+    "effort_evidence_cost": 0.5,
+    "reversibility_risk": 0.7,
+    "maturity_gap": 0.6,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.95
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

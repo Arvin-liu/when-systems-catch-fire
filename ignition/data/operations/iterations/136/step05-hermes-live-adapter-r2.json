@@ -1,0 +1,27 @@
+{
+  "schema_version": "ignition-136-step05-hermes-live-adapter-r2",
+  "task_id": "IGNITION-20260823-136",
+  "step": "05",
+  "adapter": {
+    "source": "ignition/agent_federation/live_adapters.py::LiveHermesAdapter",
+    "executor_id": "external.hermes",
+    "public_surface": "hermes -z / --oneshot",
+    "observed_version": "Hermes Agent v0.20.0 (2026.8.3)",
+    "observed_help_sha256": "0fdcfd5b047316e2fbef3873d90dd59c22f06e91fdfa5ae5bae088d83bb2094b",
+    "required_flags": ["-z", "--safe-mode", "--ignore-user-config", "--ignore-rules", "--no-restore-cwd"],
+    "workspace_guard": "external read-only disposable filesystem observation is required before eligibility",
+    "output_contract": "exactly one bounded JSON object; text that is merely plausible is MALFORMED_RESULT",
+    "session_policy": "no resume/continue/worktree; no session pointer persisted for pilot",
+    "channel_policy": "no gateway/send/channel/browser/terminal flags",
+    "live_inference": "NOT_RUN_STEP_05"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_hermes_adapter ignition.tests.test_live_codex_adapter ignition.tests.test_live_transport ignition.tests.test_live_bridge_contracts -v",
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Hermes public one-shot adapter and strict text parser evidence only; no live completion or Hermes-owned private-state transfer is inferred."
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ignition Function Asset Census Record",
+  "type": "object",
+  "required": [
+    "stable_id", "title", "discovery_kind", "source_evidence",
+    "identity", "identity_authority", "mathematical_maturity",
+    "external_evidence", "definition", "mathematical_properties",
+    "status", "claim_ceiling", "allowed_uses", "forbidden_uses",
+    "disposition", "audit_gates", "dependencies", "review"
+  ],
+  "properties": {
+    "stable_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "discovery_kind": {"enum": ["REGISTERED_ASSET", "UNDEFINED_EXPLICIT_ID", "IMPLICIT_NAMED_ASSET"]},
+    "source_evidence": {
+      "type": "object",
+      "required": ["definition_paths", "occurrence_count", "occurrence_paths", "content_sha256"],
+      "properties": {
+        "definition_paths": {"type": "array", "items": {"type": "string"}},
+        "occurrence_count": {"type": "integer", "minimum": 1},
+        "occurrence_paths": {"type": "array", "items": {"type": "string"}},
+        "content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": false
+    },
+    "identity": {
+      "enum": [
+        "STRICT_MATHEMATICAL_FUNCTION", "PARAMETRIC_MODEL", "SCORE_OR_INDEX",
+        "GATE_OR_DECISION_RULE", "ALGORITHM_OR_WORKFLOW", "RELATION_OR_CONSTRAINT",
+        "HEURISTIC", "STRUCTURAL_METAPHOR", "CONJECTURE_OR_PENDING_CLAIM",
+        "INVALID_OR_PSEUDO_FUNCTION"
+      ]
+    },
+    "identity_authority": {"enum": ["AUTO_CANDIDATE", "HUMAN_ADJUDICATED_TASK98"]},
+    "mathematical_maturity": {"type": "string", "pattern": "^M[0-7]$"},
+    "external_evidence": {"type": "string", "pattern": "^E[0-7]$"},
+    "definition": {
+      "type": "object",
+      "required": ["original_text", "original_formula", "inputs", "output", "domain", "codomain", "parameters", "units", "carrier", "operation"],
+      "additionalProperties": true
+    },
+    "mathematical_properties": {
+      "type": "object",
+      "required": ["boundaries", "singularities", "continuity", "differentiability", "monotonicity", "computability", "counterexamples", "failure_modes"],
+      "properties": {
+        "boundaries": {"type": "array"},
+        "singularities": {"type": "array"},
+        "continuity": {"type": "string"},
+        "differentiability": {"type": "string"},
+        "monotonicity": {"type": "string"},
+        "computability": {"type": "string"},
+        "counterexamples": {"type": "array"},
+        "failure_modes": {"type": "array"}
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "type": "object",
+      "required": ["mathematical", "logical", "dimensional", "numerical", "internal_model", "external_reality"],
+      "properties": {
+        "mathematical": {"type": "string"},
+        "logical": {"type": "string"},
+        "dimensional": {"type": "string"},
+        "numerical": {"type": "string"},
+        "internal_model": {"type": "string"},
+        "external_reality": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "allowed_uses": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "forbidden_uses": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "disposition": {"enum": ["KEEP", "REWRITE", "DOWNGRADE", "SPLIT", "RETIRE"]},
+    "audit_gates": {
+      "type": "object",
+      "required": [
+        "definition_gate", "dimension_and_type_gate", "counterexample_gate",
+        "circular_reasoning_gate", "claim_layer_gate", "claim_ceiling_gate",
+        "cross_domain_isomorphism_gate", "universal_quantifier_gate",
+        "internal_test_truth_gate", "dependency_impact_gate"
+      ],
+      "additionalProperties": {"enum": ["PASS", "FAIL", "REQUIRES_HUMAN_REVIEW", "NOT_APPLICABLE"]}
+    },
+    "dependencies": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "review": {
+      "type": "object",
+      "required": ["state", "version", "reviewed_at", "reviewer"],
+      "properties": {
+        "state": {"enum": ["QUEUED", "ADJUDICATED", "CONTESTED"]},
+        "version": {"type": "string"},
+        "reviewed_at": {"type": ["string", "null"]},
+        "reviewer": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

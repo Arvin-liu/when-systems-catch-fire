@@ -1,0 +1,23 @@
+{
+  "schema_version": "ignition-durability-accounting-r1",
+  "dimensions": ["principal", "namespace", "workspace", "episode", "pack", "executor"],
+  "cost_fields": ["action_count", "wall_clock_seconds", "output_bytes", "event_volume", "memory_bytes", "retry_cost", "failover_cost", "reconciliation_cost"],
+  "reservation_rules": {
+    "reserve_before_attempt": "REQUIRED",
+    "retry_and_failover": "EACH_ATTEMPT_MUST_RESERVE_AND_ACCOUNT_ITS_COST_CLASS",
+    "cancel_release": "RELEASE_UNUSED_ONLY",
+    "occurred_cost": "NEVER_ROLLED_BACK",
+    "replay": "EVENT_CHAIN_REBUILDS_SPENT_RESERVED_AND_RESERVATIONS"
+  },
+  "fairness_rules": {"max_consecutive_per_principal": 2, "aging": "BOUNDED_AGING_SCORE", "priority_ceiling": 1000, "starvation": "OTHER_PRINCIPAL_FORCED_AFTER_CONSECUTIVE_BOUND"},
+  "namespace_boundary": {"workspace_namespace_binding": "EXACT_POLICY_MAPPING", "mismatch": "FAIL_CLOSED"},
+  "fixture_limits": [
+    {"key": "principal:principal-fixture", "limit": {"action_count": 4, "wall_clock_seconds": 60, "output_bytes": 4000, "event_volume": 40, "memory_bytes": 4000, "retry_cost": 4, "failover_cost": 4, "reconciliation_cost": 4}},
+    {"key": "namespace:namespace-fixture", "limit": {"action_count": 4, "wall_clock_seconds": 60, "output_bytes": 4000, "event_volume": 40, "memory_bytes": 4000, "retry_cost": 4, "failover_cost": 4, "reconciliation_cost": 4}},
+    {"key": "workspace:workspace-fixture", "limit": {"action_count": 4, "wall_clock_seconds": 60, "output_bytes": 4000, "event_volume": 40, "memory_bytes": 4000, "retry_cost": 4, "failover_cost": 4, "reconciliation_cost": 4}},
+    {"key": "episode:episode-fixture", "limit": {"action_count": 4, "wall_clock_seconds": 60, "output_bytes": 4000, "event_volume": 40, "memory_bytes": 4000, "retry_cost": 4, "failover_cost": 4, "reconciliation_cost": 4}},
+    {"key": "pack:pack-fixture", "limit": {"action_count": 4, "wall_clock_seconds": 60, "output_bytes": 4000, "event_volume": 40, "memory_bytes": 4000, "retry_cost": 4, "failover_cost": 4, "reconciliation_cost": 4}},
+    {"key": "executor:executor-fixture", "limit": {"action_count": 4, "wall_clock_seconds": 60, "output_bytes": 4000, "event_volume": 40, "memory_bytes": 4000, "retry_cost": 4, "failover_cost": 4, "reconciliation_cost": 4}}
+  ],
+  "claim_ceiling": "REPLAYABLE_LOCAL_ACCOUNTING_AND_BOUNDED_FAIRNESS_ONLY_NO_PRODUCTION_QUOTA_OR_OWNER_AUTHORITY"
+}

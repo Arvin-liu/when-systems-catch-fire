@@ -1,0 +1,110 @@
+{
+  "candidate_digest": "d16f203d7dd694ce3ef56e03d392f329217d66af4af1a08538086206b888e61b",
+  "candidates": [
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X01",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 36.287253,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "01",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X02",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 32.881814,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "02",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X03",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 48.897253,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "03",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X04",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 14.514644,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "04",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X05",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 6.381036,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "05",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X06",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 10.699421,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "06",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X07",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 43.121271,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "07",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X08",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 24.129161,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "08",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X09",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 4.057868,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "09",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    },
+    {
+      "anonymous_only": true,
+      "candidate_id": "EL-X10",
+      "deletion_condition": "remove the feature extractor and the observed recurrence/transfer record disappears",
+      "density_threshold_per_10000_words": 7.6847,
+      "discovery_domain_recurrence": 7,
+      "discovery_work_recurrence": 16,
+      "feature_key": "10",
+      "selection_rule": "pre-frozen recurrence >=4 works and >=4 domains; no candidate vocabulary"
+    }
+  ],
+  "cognitive_independence": "not established; same Codex procedural separation only",
+  "frozen_after_per_work_results": true,
+  "source_split_digest": "03ba1a94ada28574ef4c5e1c563707dc4b26fd2767eaed680cdecb373e61c359",
+  "status": "FROZEN",
+  "task_id": "IGNITION-20260907-162"
+}

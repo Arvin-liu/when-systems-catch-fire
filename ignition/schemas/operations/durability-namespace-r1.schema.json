@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-namespace-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "default_policy", "binding_fields", "principal_types", "cross_namespace_rule", "prohibited_capabilities"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-namespace-r1"},
+    "default_policy": {"const": "DENY_CROSS_NAMESPACE"},
+    "binding_fields": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"type": "string"}},
+    "principal_types": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"enum": ["OWNER", "OPERATOR", "SYSTEM", "EXECUTOR"]}},
+    "cross_namespace_rule": {"const": "EXPLICIT_DELEGATION_WITH_SCOPE_EXPIRY_ISSUER_APPROVAL_POLICY_DIGEST"},
+    "prohibited_capabilities": {"type": "array", "minItems": 3, "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "task-identity-parser-fixtures-r1",
+  "task_id": "IGNITION-20260822-133",
+  "positive": [
+    {"case_id": "valid-129", "task_id": "IGNITION-20260821-129", "expected_date": "2026-08-21", "expected_ordinal": 129},
+    {"case_id": "valid-130", "task_id": "IGNITION-20260821-130", "expected_date": "2026-08-21", "expected_ordinal": 130},
+    {"case_id": "valid-131", "task_id": "IGNITION-20260821-131", "expected_date": "2026-08-21", "expected_ordinal": 131},
+    {"case_id": "valid-132", "task_id": "IGNITION-20260822-132", "expected_date": "2026-08-22", "expected_ordinal": 132},
+    {"case_id": "valid-133", "task_id": "IGNITION-20260822-133", "expected_date": "2026-08-22", "expected_ordinal": 133}
+  ],
+  "negative": [
+    {"case_id": "malformed-undated", "task_id": "IGNITION-133", "error_contains": "YYYYMMDD"},
+    {"case_id": "malformed-wide-ordinal", "task_id": "IGNITION-20260822-1333", "error_contains": "YYYYMMDD"},
+    {"case_id": "invalid-calendar-date", "task_id": "IGNITION-20260230-133", "error_contains": "calendar date"},
+    {"case_id": "mismatched-date-and-ordinal-assertion", "task_id": "IGNITION-20260822-133", "declared_date": "20260821", "declared_ordinal": 133, "error_contains": "declared date"},
+    {"case_id": "stale-manual-ordinal-assertion", "task_id": "IGNITION-20260822-133", "declared_ordinal": 130, "error_contains": "declared ordinal"},
+    {"case_id": "ambiguous-suffix", "task_id": "IGNITION-20260822-133-copy", "error_contains": "YYYYMMDD"}
+  ],
+  "binding_cases": [
+    {
+      "case_id": "formal-lifecycle-mismatch",
+      "records": [
+        {"role_id": "current_formal_task", "task_id": "IGNITION-20260822-133"},
+        {"role_id": "lifecycle_task", "task_id": "IGNITION-20260822-132"}
+      ],
+      "expected": "FAIL",
+      "error_contains": "identical"
+    },
+    {
+      "case_id": "formal-and-architecture-separation-is-legal",
+      "records": [
+        {"role_id": "current_formal_task", "task_id": "IGNITION-20260822-133"},
+        {"role_id": "lifecycle_task", "task_id": "IGNITION-20260822-133"},
+        {"role_id": "architecture_task", "task_id": "IGNITION-20260821-129"}
+      ],
+      "expected": "PASS"
+    },
+    {
+      "case_id": "duplicate-role-is-ambiguous",
+      "records": [
+        {"role_id": "current_formal_task", "task_id": "IGNITION-20260822-133"},
+        {"role_id": "current_formal_task", "task_id": "IGNITION-20260822-132"}
+      ],
+      "expected": "FAIL",
+      "error_contains": "duplicate binding role"
+    }
+  ],
+  "claim_ceiling": "Deterministic repository-local task identity parsing and negative fixtures only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

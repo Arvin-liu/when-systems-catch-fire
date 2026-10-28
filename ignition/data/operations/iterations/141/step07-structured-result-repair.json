@@ -1,0 +1,36 @@
+{
+  "schema_version": "ignition-141-step07-structured-result-repair-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "07",
+  "status": "PASS",
+  "contract": {
+    "schema": "structured-result-contract-r1",
+    "required_keys": ["nonce", "line_count", "field_value", "checksum_prefix"],
+    "additional_properties": false,
+    "validation_order": "strict_object_contract_before_privacy_sanitization",
+    "ambiguous_distinct_results": "REJECTED",
+    "non_exact_json_text": "REJECTED"
+  },
+  "fake_executor_conformance": {
+    "targeted_test_command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_structured_result_contract ignition.tests.test_live_execution",
+    "tests_run": 12,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "cases": [
+      {"case": "exact_result", "terminal_state": "COMPLETED_VALIDATED", "diagnostic_class": "NONE"},
+      {"case": "semantically_wrong_but_schema_valid", "terminal_state": "VALIDATION_FAILED", "diagnostic_class": "UNKNOWN_UNCLASSIFIED"},
+      {"case": "extra_field", "terminal_state": "MALFORMED_RESULT", "diagnostic_class": "STRUCTURED_RESULT_SCHEMA_FAILURE"},
+      {"case": "malformed_json", "terminal_state": "MALFORMED_RESULT", "diagnostic_class": "STRUCTURED_RESULT_PARSE_FAILURE"},
+      {"case": "nonzero_without_structured_result", "terminal_state": "MALFORMED_RESULT", "diagnostic_class": "PROCESS_EXIT_NONZERO_NO_STRUCTURED_RESULT"},
+      {"case": "timeout", "terminal_state": "TIMED_OUT_EFFECT_UNKNOWN", "diagnostic_class": "OBSERVATION_INCOMPLETE"}
+    ]
+  },
+  "repair_effect": {
+    "unknown_top_level_fields_are_not_silently_stripped": true,
+    "schema_and_parser_failure_classes_are_durable": true,
+    "failure_forensics_precedes_raw_spool_disposition": true,
+    "fake_executor_is_not_a_live_success_claim": true
+  },
+  "claim_ceiling": "Provider-neutral structured-result contract and synthetic fake-executor conformance only; no external inference, provider success, validated external task completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "112.r0-source-lock.v1",
+  "lock_status": "IMMUTABLE_INTAKE_LOCKED",
+  "task_number": 112,
+  "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
+  "r0_workspace": "/Users/zhiyuan/WorkBuddy/Claw/ignition-publication-preproduction-r0",
+  "r0_branch": "publication-preproduction-r0",
+  "r0_final_commit": "84fdcf68f2bd3fde8ed543b0ec6b51a538ea9597",
+  "r0_stage_seven_commit": "68302f968f109afc4b15988b46d3c99cc8c9fa33",
+  "fixed_source_baseline": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+  "final_is_descendant_of_stage_seven": true,
+  "r0_worktree_status": "",
+  "source_fetch_url": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+  "source_push_url": "DISABLED-LOCAL-ONLY",
+  "r0_formal_remote_modified": false,
+  "r0_1111_modified": false,
+  "intake_root": "data/operations/iterations/112/publication/r0-original/",
+  "manifest_path": "data/operations/iterations/112/publication/R0_FILE_MANIFEST.json",
+  "manifest_sha256": "22fb99851928af42ee365fc8e9a8066a86f8bdef427a6464930b18ab2cf98b9d",
+  "source_manifest_sha256_at_r0_final": "93a62ba867b7cad0222952459873443b9573492be6c3623d2a4460707bdc79d6",
+  "original_files_are_preserved_without_revision": true,
+  "notes": [
+    "Counts in the R0 SOURCE-MANIFEST remain intake claims until the independent audit is complete.",
+    "The snapshot is the tracked delta from the fixed baseline, not a second copy of the formal repository."
+  ]
+}

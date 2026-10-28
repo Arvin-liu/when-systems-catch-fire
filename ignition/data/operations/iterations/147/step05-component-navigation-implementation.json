@@ -1,0 +1,19 @@
+{
+  "schema_version": "ignition-147-step05-component-navigation-implementation-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "05",
+  "status": "PASS",
+  "implementation": {
+    "path": ".github/README.md",
+    "details_groups": 5,
+    "details_default_collapsed": true,
+    "component_navigation_links": 22,
+    "all_targets_exist": true,
+    "architecture_image_count": 1,
+    "short_human_caption": true,
+    "permanent_svg_secondary_menu": false,
+    "javascript_or_pages_layer": false
+  },
+  "interaction_boundary": "看图了解整体结构；展开人类组件组；逐个进入 canonical 文档。",
+  "claim_ceiling": "Repository-local README component-navigation implementation evidence only; the menu supplements the visual overview and does not claim that the SVG itself is interactive."
+}
