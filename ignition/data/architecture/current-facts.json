@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "7270bedb67562c92f2ee9df64717e3062f91ae6dd6460026496d5ee5fbe953ab"
+      "sha256": "b10900664d7700e12b33277859771f1a498569655569c4ec2f172ef9a4047891"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "ccde8193089dda8136bd9551a7b6cbf401a4917070a27aeae06d23c70350f175"
+      "sha256": "d8043dbc958569b8f5b2b2841f49ada092013370cfa724bc73b2740ceae149f7"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
