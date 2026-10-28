@@ -106,6 +106,17 @@
       "reason": "ARR owns this exact R2 completion seal as component-specific evidence; historical_reports retains generic reports/operations/ archival ownership. The narrow overlap lets both focused validations account for the file without transferring ownership of other operations reports."
     },
     {
+      "authority_source": "data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json",
+      "component_ids": [
+        "arr_runtime",
+        "propagation_calculator"
+      ],
+      "path_patterns": [
+        "data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json"
+      ],
+      "reason": "The R3 system-map delta is ARR-specific validation evidence while propagation_calculator retains the generic propagation/ directory. This exact-file overlap preserves both route closures without transferring ownership of other propagation records."
+    },
+    {
       "authority_source": "HUMAN-READING.md",
       "component_ids": [
         "human_knowledge_surfaces",
@@ -3316,5 +3327,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.18"
+  "registry_version": "2.9.19"
 }

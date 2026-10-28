@@ -237,9 +237,18 @@ class ComponentValidationRoutingTest(unittest.TestCase):
             "ignition/tools/adaptive_relational_runtime/corpus/runner.py",
             "ignition/docs/R3-CORPUS-RUNTIME.md",
             "ignition/data/r3-corpus-scale/public-aggregate.json",
+            "ignition/data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json",
         ])
-        self.assertEqual(runtime_result["seed_components"], ["arr_runtime"])
+        self.assertIn("arr_runtime", runtime_result["seed_components"])
         self.assertIn("g_arr_runtime", runtime_result["selected_target_ids"])
+        delta_evidence = next(
+            item for item in runtime_result["path_component_evidence"]
+            if item["path"].endswith("R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json")
+        )
+        self.assertEqual(
+            delta_evidence["authorized_overlap"]["component_ids"],
+            ["arr_runtime", "propagation_calculator"],
+        )
 
         test_result = self.plan(["ignition/tests/test_r3_corpus_inventory.py"])
         self.assertEqual(test_result["mode"], "FULL")
