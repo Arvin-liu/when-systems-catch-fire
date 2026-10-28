@@ -54,6 +54,7 @@ jobs:
         run: python3 -m pytest tests/ignition_runtime -q
 
       - name: Foundation front-door validators (must stay green)
+        working-directory: ignition
         run: |
           python3 tools/validate_human_front_door.py
           python3 -m unittest tests.test_human_front_door
