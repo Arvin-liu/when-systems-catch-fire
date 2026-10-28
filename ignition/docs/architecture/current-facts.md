@@ -2,8 +2,8 @@
 # Current Facts（机器推导事实）
 
 - Iteration identity: current formal task `IGNITION-20260829-148` (ordinal `148`)；latest architecture-changing task `IGNITION-20260827-142` (ordinal `142`)；`current_iteration_boundary` `148` is a deprecated compatibility alias of the formal ordinal。
-- Architecture registry: `116` components；`99` visible map nodes；`17` hidden represented components；`142` typed relations；`92` visible typed edges。
-- Map/method: map `0.19.0` Current（historical `0.14.0`）；layout `2.3.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；Iteration Method `1.4.0` `Current`；Ignition Operating Method `IGNITION_OPERATING_METHOD_R1` / `1.0.0` `CURRENT`。
+- Architecture registry: `119` components；`102` visible map nodes；`17` hidden represented components；`142` typed relations；`92` visible typed edges。
+- Map/method: map `0.20.0` Current（historical `0.14.0`）；layout `2.4.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；Iteration Method `1.4.0` `Current`；Ignition Operating Method `IGNITION_OPERATING_METHOD_R1` / `1.0.0` `CURRENT`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live state dimensions: dispatch `OBSERVED`；process `OBSERVED`；inference `NOT_OBSERVED`；validated completion `NOT_VALIDATED`；reconciliation blocker `NONE`；next eligible action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`。

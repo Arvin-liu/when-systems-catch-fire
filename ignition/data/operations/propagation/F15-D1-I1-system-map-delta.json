@@ -1,0 +1,15 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "latent_system_identifiability_contract",
+    "latent_system_identifiability_gate_validator",
+    "latent_system_identifiability_pilot"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}

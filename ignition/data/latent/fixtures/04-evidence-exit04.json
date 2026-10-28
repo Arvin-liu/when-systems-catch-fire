@@ -1,0 +1,278 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "F15-D1-I1",
+  "capability_id": "latent_system_identifiability",
+  "parent_binding": {
+    "task_id": "Q41-I1",
+    "exact_head": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/anomaly/pilot-q41-i1.json",
+      "exact_head": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558",
+      "artifact_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/metacognition/pilot-scientific-metacognition-i1.json",
+      "exact_head": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558",
+      "artifact_digest": "sha256:a6ec0da30eaa114e052670878c2dd2f006cfa53e9edb223ccacd7f97ba99cda4",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "IDENTIFIABLE_CANDIDATE",
+      "latent_system_candidate": {
+        "status": "RECORDED",
+        "value": "bounded latent_system_candidate for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "cross_system_ancestor_graph": {
+        "status": "RECORDED",
+        "value": "bounded cross_system_ancestor_graph for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "missing_system_search_plan": {
+        "status": "RECORDED",
+        "value": "bounded missing_system_search_plan for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "identifiability_gate": {
+        "status": "RECORDED",
+        "value": "bounded identifiability_gate for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "observational_signature": {
+        "status": "RECORDED",
+        "value": "bounded observational_signature for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "equivalent_decompositions": {
+        "status": "RECORDED",
+        "value": "bounded equivalent_decompositions for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "distinguishing_evidence_request": {
+        "status": "RECORDED",
+        "value": "bounded distinguishing_evidence_request for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "candidate_status": {
+        "status": "RECORDED",
+        "value": "bounded candidate_status for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "contradictions": {
+        "status": "RECORDED",
+        "value": "bounded contradictions for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "unsupported_elements": {
+        "status": "RECORDED",
+        "value": "bounded unsupported_elements for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for IDENTIFIABLE_CANDIDATE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "NON_IDENTIFIABLE_EQUIVALENCE_SET",
+      "latent_system_candidate": {
+        "status": "RECORDED",
+        "value": "bounded latent_system_candidate for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "cross_system_ancestor_graph": {
+        "status": "RECORDED",
+        "value": "bounded cross_system_ancestor_graph for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "missing_system_search_plan": {
+        "status": "RECORDED",
+        "value": "bounded missing_system_search_plan for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "identifiability_gate": {
+        "status": "RECORDED",
+        "value": "bounded identifiability_gate for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "observational_signature": {
+        "status": "RECORDED",
+        "value": "bounded observational_signature for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "equivalent_decompositions": {
+        "status": "RECORDED",
+        "value": "bounded equivalent_decompositions for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "distinguishing_evidence_request": {
+        "status": "RECORDED",
+        "value": "bounded distinguishing_evidence_request for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "candidate_status": {
+        "status": "RECORDED",
+        "value": "bounded candidate_status for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "contradictions": {
+        "status": "RECORDED",
+        "value": "bounded contradictions for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "unsupported_elements": {
+        "status": "RECORDED",
+        "value": "bounded unsupported_elements for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for NON_IDENTIFIABLE_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "residual_not_entity": true,
+    "pattern_not_common_cause": true,
+    "equivalent_decompositions_preserved": true,
+    "distinguishing_evidence_required": true,
+    "non_identifiable_stays_unresolved": true,
+    "contradictions_preserved": true,
+    "unsupported_not_promoted": true,
+    "claim_ceiling_preserved": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "residual_not_entity",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "pattern_not_common_cause",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "equivalent_decompositions_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "distinguishing_evidence_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "non_identifiable_stays_unresolved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "contradictions_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "unsupported_not_promoted",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "claim_ceiling_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "Latent-system candidates and equivalent decompositions can remain candidate objects until distinguishing evidence passes an explicit identifiability gate.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}
