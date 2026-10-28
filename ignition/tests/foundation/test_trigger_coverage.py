@@ -136,6 +136,26 @@ class LayerBTriggerTest(unittest.TestCase):
             "would omit the authoritative CJK-table directories (contract §3.4)",
         )
 
+    def test_final_main_witness_script_path_matches_working_directory(self) -> None:
+        text = self._on_block()
+        self.assertIn("working-directory: ignition", text)
+        self.assertIn("python3 tools/operations/write_final_main_witness.py", text)
+        self.assertNotIn("python3 ignition/tools/operations/write_final_main_witness.py", text)
+        self.assertTrue((ROOT / "tools/operations/write_final_main_witness.py").is_file())
+
+    def test_final_main_witness_installs_dependencies_in_its_own_job(self) -> None:
+        workflow = self._on_block()
+        parts = workflow.split("\n  final_main_witness:\n", 1)
+        self.assertEqual(len(parts), 2, "final-main witness job is missing")
+        witness = parts[1]
+        install = "python3 -m pip install -r requirements-foundation.txt"
+        invoke = "python3 tools/operations/write_final_main_witness.py"
+        self.assertIn("actions/setup-python@v5", witness)
+        self.assertIn(install, witness, "the witness job must install its own dependencies")
+        self.assertIn(invoke, witness)
+        self.assertLess(witness.index(install), witness.index(invoke))
+        self.assertIn("jsonschema==4.26.0", (ROOT / "requirements-foundation.txt").read_text(encoding="utf-8"))
+
 
 class FoundationCiRunnerTest(unittest.TestCase):
     def test_suite_inventory_is_unique_and_sequential(self) -> None:

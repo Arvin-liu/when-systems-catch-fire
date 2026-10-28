@@ -337,6 +337,8 @@
 |`docs/v0.2_next_tasks.md`|14|0|否|
 |`docs/v0.2_summary.md`|27|0|否|
 |`docs/versions/2026-07-09-meta-protocol-generation-layer.md`|4|0|否|
+|`docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md`|13|0|否|
+|`docs/what-is-ignition/README.md`|3|0|否|
 |`llms.txt`|55|0|否|
 |`reports/architecture-calibration/STEP08-PREREGISTRATION.md`|6|0|否|
 |`reports/architecture-calibration/STEP09-EXECUTION.md`|8|0|否|

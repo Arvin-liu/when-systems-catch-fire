@@ -63,13 +63,13 @@
   ],
   "architecture_counts": {
     "current_map_version": "0.16.0",
-    "hidden_components": 13,
+    "hidden_components": 17,
     "historical_map_version": "0.14.0",
     "layout_version": "2.0.0",
-    "registry_components": 100,
+    "registry_components": 104,
     "semantic_trunk_route_steps": 7,
     "semantic_trunk_version": "semantic-trunk-r1",
-    "typed_topology_relations": 140,
+    "typed_topology_relations": 142,
     "visible_map_nodes": 87,
     "visible_typed_edges": 92
   },
@@ -146,7 +146,7 @@
       }
     ]
   },
-  "generated_from_source_digest": "4e271ba3cbf267ab637cd0d1808fe64dc67eb05cc62a229f341b1165f1c6e6ed",
+  "generated_from_source_digest": "9758e10eeede497193e2f1c1fd11b4bd5605f2d79c06bf7b420864e674d387c7",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",

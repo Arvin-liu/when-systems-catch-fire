@@ -3,14 +3,14 @@
     "function_human": 24,
     "function_machine": 6151,
     "nonfunction_human": 24,
-    "nonfunction_machine": 17965
+    "nonfunction_machine": 17981
   },
   "entries": [
     {
       "asset_kind": "FUNCTION_ASSET",
       "human_path": "docs/human/function-assets/entries/a0.md",
       "machine_id": "A0",
-      "machine_record_sha256": "499e14b025e410ac76d73841c98afb5467013fc48225d4d7dc205cd9e278eb51",
+      "machine_record_sha256": "557c9bca4e0a35ca8a8f1898e543a4fb374b9221f89a8bd92e9853681e1ef2c1",
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "analysis/corpus-relation/cluster_source_briefs/C000.md",

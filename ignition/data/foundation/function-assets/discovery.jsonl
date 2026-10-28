@@ -20,6 +20,7 @@
 {"first_line":82,"last_line":113,"mention_count":2,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"A0"}
 {"first_line":2321,"last_line":2321,"mention_count":1,"path":"data/research/state-vs-transition-semantics-2026-09-07/corpus-universe.jsonl","role":"REFERENCE","stable_id":"A0"}
 {"first_line":1532,"last_line":1532,"mention_count":1,"path":"data/research/state-vs-transition-semantics-2026-09-07/historical-non-transition-controls.jsonl","role":"REFERENCE","stable_id":"A0"}
+{"first_line":17,"last_line":17,"mention_count":1,"path":"docs/what-is-ignition/README.md","role":"REFERENCE","stable_id":"A0"}
 {"first_line":3025,"last_line":3025,"mention_count":1,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"REFERENCE","stable_id":"A0004"}
 {"first_line":2957,"last_line":2957,"mention_count":1,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"REFERENCE","stable_id":"A0004"}
 {"first_line":3025,"last_line":3025,"mention_count":1,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"REFERENCE","stable_id":"A0004"}
