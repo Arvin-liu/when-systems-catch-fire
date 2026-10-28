@@ -1,0 +1,97 @@
+{
+  "schema_version": "ignition-139-step10-live-admission-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "10",
+  "status": "PASS",
+  "control_tip": "e80d7c4aeb70ae44edbd340fc2f341c7a6a737d4",
+  "formal_candidate_sha": "12205be8ad94916a39253e0eba2106bf5da9da12",
+  "census": {
+    "candidate_count": 14,
+    "agentic_executor_count": 5,
+    "admitted_executor_count": 1,
+    "selected_executor_id": "external.codex",
+    "selection_status": "SELECTED"
+  },
+  "current_projection": {
+    "projection_digest": "0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a",
+    "ledger_head_hash": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e",
+    "total_attempts": 4,
+    "validated_completion_count": 0,
+    "unreconciled_count": 2,
+    "observation_incomplete_count": 1,
+    "obligation_state": "OPEN",
+    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION"
+  },
+  "lease": {
+    "lease_id": "lease-ignition-139-codex-live-01",
+    "executor_id": "external.codex",
+    "executor_version": "codex-cli 0.144.4",
+    "observed_at": "2026-08-25T05:47:52Z",
+    "expires_at": "2026-08-25T06:02:52Z",
+    "ttl_seconds": 900,
+    "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "lease_digest": "7ce3e1a679c6310393d6c740e797be20611a25cde995add4c1baf1cab0bf24ae",
+    "live_eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+    "observed_capabilities": ["repo.read", "structured_progress"],
+    "forbidden_capabilities": ["repo.write", "repo.test", "terminal.run", "browser.read", "browser.act", "web.read", "messaging.send", "subagents", "scheduler"],
+    "source": "codex-public-cli-probe-r3-runtime-scratch"
+  },
+  "admission": {
+    "status": "ADMITTED",
+    "effective_capabilities": ["repo.read"],
+    "reason": "fresh lease and strict capability intersection admitted"
+  },
+  "dispatch_freeze": {
+    "dispatch_id": "dispatch-139-live-01",
+    "attempt_id": "attempt-139-live-01",
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r3",
+    "capability_lease_ref": "lease-ignition-139-codex-live-01",
+    "workspace_mode": "DISPOSABLE_SYNTHETIC_READ_ONLY",
+    "permission_ceiling": ["repo.read"],
+    "side_effect_class": "READ_ONLY_SYNTHETIC",
+    "network_class": "INFERENCE_TRANSPORT_ONLY",
+    "timeout_seconds": 90,
+    "retry_policy": "NO_BLIND_RETRY",
+    "reconciliation_policy": "REQUIRE_ON_TIMEOUT_OR_UNKNOWN_EFFECT",
+    "budget_authority": "NO_NEW_BILLING_AUTHORITY",
+    "required_argv_flags": ["--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--skip-git-repo-check", "--sandbox", "read-only", "--output-schema", "--cd"],
+    "forbidden_argv_tokens": ["--add-dir", "workspace-write", "dangerously-bypass-approvals-and-sandbox"],
+    "inference_started": false
+  },
+  "boundary_checks": {
+    "public_probe_calls": 2,
+    "public_probe_argv": [["<CODEX>", "--version"], ["<CODEX>", "exec", "--help"]],
+    "child_depth_guard": "PASS_ONE_LEVEL_ONLY",
+    "task_workspace_mode": "DISPOSABLE_READ_ONLY",
+    "runtime_scratch_mode": "ATTEMPT_EPHEMERAL_WRITABLE",
+    "capture_mode": "HOST_DURABLE_SPOOL_DEFERRED_CLEANUP",
+    "runtime_parent_separate_from_capture_parent": true,
+    "workspace_read_only_guard": true,
+    "auth_source_mode": "READ_ONLY_REFERENCE",
+    "auth_source_content_read": false,
+    "auth_source_copied": false,
+    "config_mutation_allowed": false,
+    "durable_capture_support": true,
+    "runtime_scratch_support": true
+  },
+  "validator_freeze": {
+    "status": "PASS",
+    "task_id": "IGNITION-20260825-139",
+    "dispatch_id": "dispatch-139-live-01",
+    "attempt_id": "attempt-139-live-01",
+    "executor_id": "external.codex",
+    "schema_fields": ["nonce", "line_count", "field_value", "checksum_prefix"],
+    "self_test_is_not_live_result": true
+  },
+  "safety": {
+    "secret_content_read": false,
+    "auth_content_copied": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "live_inference_started": false,
+    "formal_or_control_workspace_used_as_child_workspace": false
+  },
+  "claim_ceiling": "Task139 repository-local live admission, capability lease, synthetic fixture and independent validator freeze evidence only; no external process inference, live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

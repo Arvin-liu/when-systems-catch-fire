@@ -1,0 +1,12 @@
+{
+  "schema_version": "ignition-durability-schema-migration-r1",
+  "supported_epochs": ["state-epoch-1", "state-epoch-2", "state-epoch-3"],
+  "compatibility_matrix": [
+    {"from_epoch":"state-epoch-1","to_epoch":"state-epoch-2","classification":"SAFE","operation":"ADD_LIFECYCLE_METADATA","rationale":"Adds an explicitly rebuildable lifecycle envelope without changing historical event bytes."},
+    {"from_epoch":"state-epoch-2","to_epoch":"state-epoch-3","classification":"SAFE","operation":"ADD_ADVISORY_POINTER","rationale":"Adds a bounded advisory pointer with an explicit non-authority ceiling."},
+    {"from_epoch":"state-epoch-2","to_epoch":"state-epoch-1","classification":"LOSSY_REQUIRES_APPROVAL","operation":"REMOVE_ADVISORY_POINTER_LOSSY","rationale":"Older consumers cannot represent the advisory pointer and require explicit approval before loss."},
+    {"from_epoch":"state-epoch-3","to_epoch":"state-epoch-2","classification":"LOSSY_REQUIRES_APPROVAL","operation":"REMOVE_ADVISORY_POINTER_LOSSY","rationale":"Downgrading drops a versioned advisory field and therefore cannot be implicit."},
+    {"from_epoch":"state-epoch-3","to_epoch":"state-epoch-1","classification":"FORBIDDEN","operation":"FORBIDDEN_LEGACY_REWRITE","rationale":"Direct downgrade would collapse lifecycle and advisory semantics into an unbounded legacy shape."}
+  ],
+  "historical_event_rule": "EVENT_ORIGINAL_BYTES_ARE_IMMUTABLE; migration uses adapters during replay"
+}

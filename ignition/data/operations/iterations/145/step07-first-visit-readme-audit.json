@@ -1,0 +1,38 @@
+{
+  "schema_version": "ignition-145-step07-first-visit-readme-audit-r1",
+  "task_id": "IGNITION-20260828-145",
+  "step": "07",
+  "status": "PASS",
+  "first_visit_surface": {
+    "visible_h2_order": [
+      "1. 项目与价值",
+      "2. 如何使用",
+      "3. 结果与火种",
+      "4. 整体架构",
+      "5. 致谢"
+    ],
+    "visible_current_state_heading_count": 1,
+    "visible_current_state_is_single_latest_human_summary": true,
+    "machine_detail_container_count": 1,
+    "machine_detail_container_balanced": true,
+    "machine_detail_default_collapsed": true,
+    "machine_detail_summary": "机器状态与工程细节（展开查看）",
+    "current_snapshot_inside_machine_detail": true,
+    "task_lineage_and_live_counts_inside_machine_detail": true,
+    "architecture_counts_inside_machine_detail": true,
+    "detailed_engineering_explanation_inside_machine_detail": true,
+    "essential_front_door_content_outside_machine_detail": true,
+    "clickability_claim_terms_outside_or_inside_readme": [],
+    "architecture_link_semantics": "complete architecture SVG with source-link metadata; rendered GitHub clickability is not promised",
+    "rendering_dependency": "GitHub Markdown and native SVG only",
+    "js_pages_implementation_detected": false
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "task143_article_or_book_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task146_created_or_started": false
+  },
+  "claim_ceiling": "Repository-local first-visit README information architecture and wording audit only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

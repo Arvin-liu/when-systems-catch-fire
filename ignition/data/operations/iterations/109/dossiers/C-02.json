@@ -1,0 +1,45 @@
+{
+  "canonical_id": "C-02",
+  "title": "Named historical events and figures cited as anchors in the case tables resolve to real, independently identifiable Wiki",
+  "class": "CORE_CAPABILITY_VALIDATION",
+  "is_meta": false,
+  "current_status": "RESERVE",
+  "provenance": {
+    "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+    "canonical_id": "C-02",
+    "upstream_source": "统一案例总表/",
+    "claim_id": "CASE-TABLE-HISTORICAL-ANCHORS"
+  },
+  "dependencies": [
+    "CASE-TABLE-HISTORICAL-ANCHORS"
+  ],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "evidence-program",
+    "claims-registry"
+  ],
+  "evidence_needs": [
+    "preregistration",
+    "independent replication",
+    "oracle/baseline"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "Historical-anchor existence only; not a claim about causal interpretation.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 63.3,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.25,
+    "dependency_centrality": 0.3,
+    "falsifiability": 0.8,
+    "data_oracle_availability": 0.9,
+    "expected_information_gain": 0.7,
+    "effort_evidence_cost": 0.8,
+    "reversibility_risk": 0.7,
+    "maturity_gap": 0.8,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.95
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

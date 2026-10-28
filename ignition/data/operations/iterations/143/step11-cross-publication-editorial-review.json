@@ -1,0 +1,44 @@
+{
+  "schema_version": "ignition-143-step11-cross-publication-editorial-review-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "11",
+  "status": "PASS",
+  "articles": [
+    {
+      "article_id": "011-terminal-task-open-obligation",
+      "path": "docs/editorial/articles/011-terminal-task-open-obligation.md",
+      "editorial_status": "REVIEWED_CURRENT_R1",
+      "central_job": "Explain independent task terminality and open-obligation liveness using Task142.",
+      "result": "PASS"
+    },
+    {
+      "article_id": "012-support-becomes-path-control",
+      "path": "docs/editorial/articles/012-support-becomes-path-control.md",
+      "editorial_status": "REVIEWED_CURRENT_R1",
+      "central_job": "Present D600/M3 as a substantive internal candidate model with counterexamples.",
+      "result": "PASS"
+    },
+    {
+      "article_id": "013-tree-canopy-temperature-causality",
+      "path": "docs/editorial/articles/013-tree-canopy-temperature-causality.md",
+      "editorial_status": "REVIEWED_CURRENT_R1",
+      "central_job": "Show how a public-source bounded association survives while a broader causal claim is refused.",
+      "result": "PASS"
+    }
+  ],
+  "cross_article_audit": {
+    "distinct_reader_questions": true,
+    "duplicate_anecdotes_removed": true,
+    "duplicate_thesis_paragraphs_removed": true,
+    "shared_boundary_language_is_necessary": true,
+    "article_003_005_008_009_reuse_as_new_center": false,
+    "private_material_reproduced": false,
+    "machine_dump_in_body": false
+  },
+  "revisions": [
+    "Narrowed Article A's opening from an unsupported plural generalization to a single project scenario.",
+    "Clarified Article C's source-layer wording so reported source relations are not silently upgraded by the article.",
+    "Retained independent source notes and claim ceilings for all three manuscripts."
+  ],
+  "claim_ceiling": "Three editorially reviewed repository/public-source manuscripts only; no substantive external truth, causal validation, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

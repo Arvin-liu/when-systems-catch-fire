@@ -1,0 +1,100 @@
+{
+  "schema_version": "ignition-143-step00-baseline-owner-override-audit-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "00",
+  "status": "PASS",
+  "control_baseline": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "control_sha": "867c6d8373f39f03367f9c81aab60ebd74589428",
+    "task_definition_commit": "629a05e1951151dc215c7666640aeab9e3152c9d",
+    "readme_path": "README.md",
+    "task_path": "agent-commands/IGNITION-20260827-143-phase-closure-publication-production-r1.md",
+    "superseded_task_path": "agent-commands/IGNITION-20260827-143-executor-qualification-campaign-first-validated-completion-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "expected_main_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "origin_main_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "fresh_clone_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "fresh_clone_path": "/private/tmp/ignition-143-step00-task142-final.qjhWNY",
+    "fresh_clone_branch": "codex/ignition-142-task-lifecycle-admission-r1-20260827",
+    "fresh_clone_clean": true,
+    "formal_worktree": "/Users/zhiyuan/Agent 工作区/when-systems-catch-fire-143-publication",
+    "formal_branch": "codex/ignition-143-phase-closure-publication-r1-20260827",
+    "formal_worktree_clean_before_step": true,
+    "supplied_rollout_directory_is_git": false
+  },
+  "owner_override": {
+    "prior_task_id": "IGNITION-20260827-143-EXECUTOR-QUALIFICATION-CAMPAIGN-R1",
+    "prior_task_status": "SUPERSEDED_BY_OWNER_BEFORE_AUTHORIZED_FORMAL_EXECUTION",
+    "superseding_control_commit": "629a05e1951151dc215c7666640aeab9e3152c9d",
+    "new_task_scope": "PHASE_CLOSURE_AND_PUBLICATION_PRODUCTION",
+    "qualification_allowed_in_task143": false,
+    "live_attempt_allowed_in_task143": false,
+    "resume_condition": "Owner explicitly reopens external-Agent qualification and the local environment is deliberately prepared, installed and attested first.",
+    "deferred_is_not_failed": true,
+    "old_qualification_branch_used_as_formal_baseline": false
+  },
+  "task142_state_read": {
+    "formal_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "formal_task_terminal": true,
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0,
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "architecture_map_version": "0.16.0",
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "live_attempts_total": 6,
+    "live_validated_completion_count": 0,
+    "live_unreconciled_count": 0,
+    "live_observation_incomplete_count": 2,
+    "live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
+    "live_task143_attempts_started": 0,
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "obligation_status": "OPEN",
+    "obligation_next_action_before_closure": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "obligation_next_action_after_owner_override": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION"
+  },
+  "publication_sources_read": [
+    "ignition/PUBLICATIONS/README.md",
+    "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+    "ignition/PUBLICATIONS/pointfire-results-book/PUBLICATION-BOUNDARY.md",
+    "ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
+    "ignition/data/publication/fire-seeds/seed-census.json",
+    "ignition/data/publication/fire-seeds/UPDATE-PROTOCOL.md",
+    "ignition/docs/publication/zhiyuan-writing-method.md",
+    "ignition/docs/publication/zhiyuan-writing-showcase.md",
+    "ignition/docs/publication_risk_checklist.md",
+    "ignition/docs/editorial/README.md",
+    "ignition/RESULTS/LATEST.md",
+    "ignition/RESULTS/RESEARCH-AND-ARTICLES.md",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/iterations/142/step19-publication-and-terminality.json"
+  ],
+  "writing_method": {
+    "name": "之元写作法",
+    "current_version": "0.5.0",
+    "status": "CURRENT_MERGED_L6_CAPABILITY",
+    "usable_material_classes": ["external_input", "ignition_increment"],
+    "hard_boundaries": [
+      "writing material is not automatically external evidence",
+      "structural homology is not identity, causality or truth",
+      "target-language prose must preserve actors, event boundaries, framing deltas and residue",
+      "reader response is feedback only after provenance capture"
+    ]
+  },
+  "safety": {
+    "task143_external_agent_live_process_started": false,
+    "task143_live_inference_started": false,
+    "task143_new_live_attempt_record_created": false,
+    "secret_content_read": false,
+    "auth_config_billing_changed": false,
+    "executor_installed_or_upgraded": false,
+    "external_channel_browser_remote_git_used": false,
+    "formal_baseline_changed": false
+  },
+  "claim_ceiling": "Repository-local Step00 baseline, source-reading and Owner-scope evidence only; the deferred obligation remains unresolved, and publication production cannot upgrade external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

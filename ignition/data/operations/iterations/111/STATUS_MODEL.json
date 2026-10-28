@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "task_number": 111,
+  "dimensions": {
+    "external_evidence": [
+      "EVIDENCE_NOT_REVIEWED",
+      "EVIDENCE_SUPPORTED_WITHIN_SCOPE",
+      "EVIDENCE_PARTIAL_OR_DISPUTED",
+      "EVIDENCE_CONTRADICTED",
+      "EVIDENCE_INCONCLUSIVE",
+      "EVIDENCE_INVALID"
+    ],
+    "executable_target": [
+      "TARGET_NOT_SEARCHED",
+      "TARGET_FOUND_AND_FROZEN",
+      "TARGET_AMBIGUOUS",
+      "EXECUTABLE_TARGET_ABSENT",
+      "TARGET_OUT_OF_SCOPE"
+    ],
+    "formalization": [
+      "FORMALIZATION_NOT_ATTEMPTED",
+      "FORMALIZATION_FAITHFUL_WITHIN_SCOPE",
+      "FORMALIZATION_PARTIAL",
+      "FORMALIZATION_UNDERSPECIFIED",
+      "FORMALIZATION_INVALID"
+    ],
+    "reproduction": [
+      "REPRODUCTION_NOT_RUN",
+      "REPRODUCED_IMPLEMENTATION_DEFECT",
+      "NOT_REPRODUCED",
+      "TEST_INVALID_OR_ABORTED",
+      "NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET",
+      "REGRESSION_GUARD_ESTABLISHED"
+    ]
+  },
+  "aggregate_rules": {
+    "non_collapsible": true,
+    "directory_membership_never_assigns_defect": true,
+    "reproduced_implementation_defect_requires": [
+      "executable_target_identity",
+      "frozen_target_commit",
+      "exact_input_or_specification",
+      "actual_output",
+      "raw_trace_or_run_record",
+      "repeatable_failure",
+      "oracle_or_adjudication_basis",
+      "claim_ceiling",
+      "preserved_first_failure",
+      "regression_state"
+    ],
+    "missing_required_field_result": "REPRODUCTION_NOT_RUN_OR_NO_REPRODUCTION_POSSIBLE_WITH_CURRENT_TARGET"
+  },
+  "allowed_case_labels": [
+    "NARRATIVE_HYPOTHESIS",
+    "EVIDENCE_SUPPORTED_COUNTEREXAMPLE",
+    "REPRODUCTION_PENDING",
+    "INVALID_OR_UNDERSPECIFIED_CASE",
+    "REPRODUCED_IMPLEMENTATION_DEFECT",
+    "NOT_REPRODUCED",
+    "EXECUTABLE_TARGET_ABSENT",
+    "EVIDENCE_INCONCLUSIVE"
+  ]
+}

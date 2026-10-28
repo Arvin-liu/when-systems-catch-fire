@@ -1,0 +1,46 @@
+{
+  "schema_version": "ignition-134-step12-residual-adversarial-matrix-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "12",
+  "status": "PASS",
+  "fixture_path": "ignition/data/operations/iterations/134/fixtures/residual-delta-adversarial-matrix-r1.json",
+  "validator": "ignition/tools/validate_residual_adversarial_matrix.py",
+  "case_count": 18,
+  "passed": 18,
+  "current_path_manifest": {
+    "tracked": 2997,
+    "manifest": 2997,
+    "missing": 0,
+    "stale": 0,
+    "unresolved": 0,
+    "category_changed": 0,
+    "anti_backflow": 0
+  },
+  "cases": [
+    {"case_id": "inherited-unchanged", "expected": "PASS", "observed": "PASS"},
+    {"case_id": "count-growth", "expected": "FAIL", "observed": "RESIDUAL_GROWTH_UNCLASSIFIED"},
+    {"case_id": "same-count-object-replacement", "expected": "FAIL", "observed": "RESIDUAL_GROWTH_UNCLASSIFIED"},
+    {"case_id": "failure-dimension-growth", "expected": "FAIL", "observed": "RESIDUAL_GROWTH_UNCLASSIFIED"},
+    {"case_id": "baseline-count-object-set-mismatch", "expected": "FAIL", "observed": "BASELINE_COUNT_OBJECT_SET_MISMATCH"},
+    {"case_id": "current-count-object-set-mismatch", "expected": "FAIL", "observed": "CURRENT_COUNT_OBJECT_SET_MISMATCH"},
+    {"case_id": "forged-baseline-fingerprint", "expected": "FAIL", "observed": "BASELINE_FINGERPRINT_FORGED"},
+    {"case_id": "forged-current-fingerprint", "expected": "FAIL", "observed": "CURRENT_FINGERPRINT_FORGED"},
+    {"case_id": "new-residual-unclassified", "expected": "FAIL", "observed": ["RESIDUAL_GROWTH_UNCLASSIFIED", "NEW_RESIDUAL_REQUIRES_CLASSIFICATION"]},
+    {"case_id": "new-regression-declared", "expected": "FAIL", "observed": ["RESIDUAL_GROWTH_UNCLASSIFIED", "NEW_REGRESSION_RELEASE_BLOCKING"]},
+    {"case_id": "new-regression-wrong-origin", "expected": "FAIL", "observed": ["RESIDUAL_GROWTH_UNCLASSIFIED", "NEW_RESIDUAL_REQUIRES_CLASSIFICATION"]},
+    {"case_id": "source-command-without-migration", "expected": "FAIL", "observed": "SOURCE_COMMAND_CHANGED_WITHOUT_MIGRATION"},
+    {"case_id": "source-command-valid-migration", "expected": "PASS", "observed": "PASS"},
+    {"case_id": "source-command-invalid-migration", "expected": "FAIL", "observed": "MIGRATION_SOURCE_COMMAND_MISMATCH"},
+    {"case_id": "resolved-current", "expected": "PASS", "observed": "PASS"},
+    {"case_id": "resolved-status-with-live-object", "expected": "FAIL", "observed": "RESOLVED_STATUS_WITH_LIVE_OBJECTS"},
+    {"case_id": "shrink-requires-partial-status", "expected": "FAIL", "observed": "RESIDUAL_SHRINK_STATUS_UNCLASSIFIED"},
+    {"case_id": "duplicate-residual-id", "expected": "FAIL", "observed": "DUPLICATE_RESIDUAL_ID"}
+  ],
+  "gate_hardening": [
+    "Source command migration must declare matching from/to commands and current Task134 task_id.",
+    "A non-empty shrink must be explicitly PARTIALLY_RESOLVED; OPEN_INHERITED cannot silently absorb a changed tuple.",
+    "Duplicate residual IDs remain a fail-closed ledger error."
+  ],
+  "live_ledger_check": "RESIDUAL_LEDGER_OK entries=5 inherited_unchanged=3 resolved=2",
+  "claim_ceiling": "Repository-local residual delta adversarial evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

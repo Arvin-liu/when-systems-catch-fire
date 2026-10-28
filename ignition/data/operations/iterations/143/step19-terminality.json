@@ -1,0 +1,65 @@
+{
+  "schema_version": "ignition-143-step19-terminality-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "19",
+  "status": "PASS",
+  "terminality": {
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
+    "scope_complete": true,
+    "identity_impact": "PRESENTATION_ONLY",
+    "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+    "obligation_independence": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
+  },
+  "phase_closure": {
+    "architecture_executor_phase": "CLOSED_OWNER_DEFERRED",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "qualification_or_live_attempts_started_by_task143": 0
+  },
+  "publication_production": {
+    "phase": "RELEASE_READY",
+    "canonical_entrypoint": "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+    "complete_articles": [
+      "ignition/docs/editorial/articles/011-terminal-task-open-obligation.md",
+      "ignition/docs/editorial/articles/012-support-becomes-path-control.md",
+      "ignition/docs/editorial/articles/013-tree-canopy-temperature-causality.md"
+    ],
+    "book_project": "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+    "polished_book_samples": [
+      "ignition/PUBLICATIONS/pointfire-results-book/book-project-r1/01-第一章-先别急着宣布完成.md",
+      "ignition/PUBLICATIONS/pointfire-results-book/book-project-r1/03-第三章-退出不是按钮.md"
+    ],
+    "canonical_integration": "EXISTING_RESULTS_BOOK_ENTRYPOINT_AND_PUBLICATION_REGISTRY"
+  },
+  "regression": {
+    "step18_candidate_sha": "0a25989dd895af6326447e1a8741df1db5101211",
+    "natural_full_suite": {
+      "tests_run": 1272,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "completed_naturally": true,
+      "clean_before_after": true
+    },
+    "historical_attempts_preserved": 4
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "historical_attempt_count": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "future_resume": "OWNER_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARED_INSTALLED_AND_ATTESTED"
+  },
+  "publication_boundary": {
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "required_ref": "refs/heads/main",
+    "formal_repository_self_sha": "NOT_EMBEDDED",
+    "fresh_clone_and_remote_main_observation": "PENDING_SEPARATE_GATE",
+    "independent_1111_witness": "PENDING_SEPARATE_GATE"
+  },
+  "claim_ceiling": "Repository-local Task143 terminality, publication-production and release-ready candidate evidence only; the open live obligation remains unresolved, and no external truth, production readiness, Owner acceptance, validated live completion or epistemic acceptance is inferred."
+}

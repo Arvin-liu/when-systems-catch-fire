@@ -1,0 +1,43 @@
+{
+  "schema_version": "ignition-137-step01-hermes-timeout-reconciliation-r1",
+  "task_id": "IGNITION-20260824-137",
+  "step": "01",
+  "source_attempt": {
+    "task_id": "IGNITION-20260823-136",
+    "dispatch_id": "live-hermes-136",
+    "attempt_id": "live-hermes-136-initial",
+    "executor_id": "external.hermes",
+    "adapter_id": "hermes-live-r2",
+    "state": "TIMED_OUT_EFFECT_UNKNOWN",
+    "reconciliation_status_before": "OPEN",
+    "workspace_before_digest": "b332258f3d80b01109747a434ba2ed857d8071a3cb9400b5d6da2f6533d58fa2",
+    "workspace_after_digest": "b332258f3d80b01109747a434ba2ed857d8071a3cb9400b5d6da2f6533d58fa2",
+    "cancel_state": "UNKNOWN",
+    "session_pointer": null,
+    "event_count": 0,
+    "raw_output_persisted": false
+  },
+  "read_only_forensics": {
+    "process_pid_or_pgid_in_source_receipt": false,
+    "attempt_process_identity": "NOT_BINDABLE_FROM_TASK136_RECEIPT",
+    "current_hermes_process_observation": "UNBOUND_LONG_LIVED_HERMES_SERVICE_PRESENT",
+    "exact_attempt_process_or_group_status": "UNKNOWN",
+    "fixture_path_persisted": false,
+    "fixture_digest_reobserved": false,
+    "historical_fixture_evidence": "TASK136_RECORDED_BEFORE_AFTER_EQUAL",
+    "public_session_or_thread_pointer": "NONE_OBSERVED",
+    "captured_public_output": "NONE_OBSERVED",
+    "matching_adapter_or_temp_artifact": "NONE_FOUND_IN_BOUNDED_PUBLIC_SEARCH",
+    "private_session_db_or_provider_telemetry_read": false,
+    "resume_continue_or_channel_action": false
+  },
+  "reconciliation": {
+    "result": "RECONCILIATION_REMAINS_OPEN",
+    "reason": "The old receipt has no attempt PID/PGID or durable disposable-workspace path, so current process absence or historical digest equality cannot prove that the timed-out external effect was absent.",
+    "old_receipt_rewritten": false,
+    "new_dispatch_created": false,
+    "blind_retry_authorized": false,
+    "safe_for_codex_separate_lineage": true
+  },
+  "claim_ceiling": "Read-only reconciliation evidence only; the Hermes timeout remains unresolved and does not imply completion, no effect, cancellation or retry permission."
+}

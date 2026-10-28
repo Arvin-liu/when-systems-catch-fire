@@ -1,0 +1,115 @@
+{
+  "schema_version": "ignition-149-owner-adjudication-r1",
+  "task_id": "IGNITION-20260831-149",
+  "review_task_id": "IGNITION-20260901-149",
+  "record_type": "owner_adjudication",
+  "status": "OWNER_ADJUDICATION_RECORDED",
+  "recorded_at": "2026-09-01",
+  "owner_review_ref": "1111:agent-results/IGNITION-20260901-149-owner-review.json",
+  "formal_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "base_main_sha": "14c2595d796494286caf31378173fd9dd027edcf",
+    "pr_number": 199,
+    "pr_state": "OPEN",
+    "pr_is_draft": true,
+    "reviewed_formal_head_before_record": "04cba7fe60ac73a13116b5b2acec5251c03cb308",
+    "historical_step16_next_action_preserved": "AWAIT_OWNER_PROVIDER_ADAPTER_REVIEW"
+  },
+  "owner_decision": {
+    "archify": {
+      "fit": "FIT_WITH_LIMITS",
+      "decision": "CONTINUE_EXPERIMENT"
+    },
+    "agent_reach_public": {
+      "fit": "FIT_WITH_LIMITS",
+      "decision": "CONTINUE_EXPERIMENT"
+    },
+    "agent_reach_authenticated": {
+      "decision": "DEFER"
+    }
+  },
+  "merge_intent": "MERGE_EXPERIMENTAL_EVIDENCE_AND_PROVIDER_NEUTRAL_CONTRACT_ONLY",
+  "explicit_non_intent": [
+    "DO_NOT_ACTIVATE_PROVIDER",
+    "DO_NOT_ADD_CURRENT_PROVIDER_CAPABILITY",
+    "DO_NOT_ENABLE_AUTHENTICATED_CHANNELS",
+    "DO_NOT_CHANGE_LIVE_EXTERNAL_INVOCATION"
+  ],
+  "retained_evidence_and_residuals": {
+    "archify": {
+      "validation": "PASS 9/9",
+      "decision": "FIT_WITH_LIMITS / CONTINUE_EXPERIMENT",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/149/step06-archify-validation-receipt.json",
+        "ignition/data/operations/iterations/149/step07-archify-delta-receipt.json",
+        "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"
+      ],
+      "residuals": [
+        "six Delta viewer viewport-overflow residuals",
+        "upstream visualReview pending",
+        "HTML artifact remains NOT_COMMITTED",
+        "derived output is not architecture authority"
+      ]
+    },
+    "agent_reach_public": {
+      "decision": "FIT_WITH_LIMITS / CONTINUE_EXPERIMENT",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/149/step09-agent-reach-channel-capability-matrix-r0.json",
+        "ignition/data/operations/iterations/149/step12-zero-auth-acquisition-smoke-r0.json",
+        "ignition/data/operations/iterations/149/step13-native-agent-reach-routing-r0.json",
+        "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"
+      ],
+      "residuals": [
+        "provider swap PARTIAL",
+        "GitHub AUTH_REQUIRED",
+        "Exa environment missing",
+        "pinned source PyYAML blocker",
+        "backend/network drift",
+        "higher maintenance burden than native path"
+      ]
+    },
+    "agent_reach_authenticated": {
+      "decision": "DEFER",
+      "authenticated_calls": 0,
+      "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+      "automatic_admission_queue": false,
+      "residuals": [
+        "authenticated/session-bearing channels remain deferred and no admission queue exists"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/149/step14-authenticated-channel-fail-closed-r0.json",
+        "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"
+      ]
+    }
+  },
+  "authority_boundary": {
+    "current_formal_task_id": "IGNITION-20260829-148",
+    "current_provider_capability_added": false,
+    "current_operation_registry_changed": false,
+    "provider_output_is_external_truth": false,
+    "provider_local_policy_is_ignition_global_policy": false,
+    "adapter_spike_pass_is_current_capability": false,
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "authenticated_calls": 0,
+    "live_external_invocation": "OPEN_OWNER_DEFERRED_NOT_RUN",
+    "owner_decision_is_not_general_current_acceptance": true
+  },
+  "lifecycle_boundary": {
+    "ready_transition": "CONDITIONAL_ON_A6_ALL_GATES_PASS",
+    "ready_authorized_by_this_record": false,
+    "merge_transition": "CONDITIONAL_ON_A6_AND_A7_EXACT_HEAD_PROOF",
+    "merge_executed_by_this_record": false,
+    "task150_creation": "BLOCKED_UNTIL_A8_FRESH_MAIN_CLOSEOUT",
+    "task150_scope_if_a8_passes": "ARCHIFY_ONLY",
+    "task150_final_stop": "AWAIT_OWNER_ARCHIFY_BOUNDED_ADMISSION_REVIEW",
+    "phase_a_next_action": "RUN_TASK149_READY_GATES"
+  },
+  "evidence_hashes": {
+    "provider_contract_sha256": "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649",
+    "final_report_json_sha256": "921b9c53068825d0e212e1c522ec89a0bd74a44e2f7327e573cc7347439ee0ff",
+    "final_report_human_sha256": "d22fbb9ae30003ac68a15f5a83e6b0bfa082411a3cc37296fe9965eff9f86bae",
+    "archify_validation_receipt_sha256": "bcafdcb8437d33a67e1697f58bfb033bdf533d20da2489a7abf84bd8d85308a9",
+    "agent_reach_acquisition_receipt_sha256": "5709944e678e7ecbc07fff3473a963cd59c7e99b0957696ed83df41c9355dc52"
+  },
+  "claim_ceiling": "This record captures the explicit Owner decision and conditional release gate for repository-local Task149 evidence. It does not establish a Current provider capability, permission, authenticated-channel admission, production readiness, external truth, generalized Owner acceptance or live external completion."
+}
