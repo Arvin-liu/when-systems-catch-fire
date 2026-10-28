@@ -1,0 +1,13 @@
+{
+  "answer_key_loaded": true,
+  "boundary": "Research-only synthetic fixture evidence; no production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "freeze_validation": "REQUIRED_SEPARATE_COMMAND",
+  "frozen_model_hash": "0fbdced20181897d3faefea04b9f0ea9da933723606f8c21fe7428db8f42ce71",
+  "frozen_threshold_hash": "2e509a21b354947fd36193d941d4e318fe37b61210495e7fb58da7b88e3d90f7",
+  "invalid_fixtures": 0,
+  "metamorphic_tests": 192,
+  "metamorphic_violations": 57,
+  "scoring_passes": 2,
+  "scoring_passes_identical": true,
+  "task_id": "IGNITION-20260905-156"
+}

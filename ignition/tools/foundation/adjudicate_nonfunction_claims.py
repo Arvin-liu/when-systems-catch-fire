@@ -170,6 +170,14 @@ MACHINE_EXCLUDE_PREFIXES = (
     "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-155.md",
     "agent-results/IGNITION-20260905-155-result.md",
+    # Task156 prospective fixture records are bounded research evidence, not
+    # authoritative claim sources; keep source accounting without admission.
+    "data/research/cross-contract-prospective-fixtures-2026-09-05/",
+    "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
+    "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
+    "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
+    "reports/governance/task-IGNITION-20260905-156.md",
+    "agent-results/IGNITION-20260905-156-result.md",
     # Task158 research-only basis-escape records are evidence for a
     # non-canonical study, not authoritative claim sources. Keep them in
     # source discovery accounting while excluding them from claim admission.

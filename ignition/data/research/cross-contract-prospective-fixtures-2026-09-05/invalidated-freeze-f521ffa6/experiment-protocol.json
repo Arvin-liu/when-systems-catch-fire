@@ -1,0 +1,184 @@
+{
+  "actual_pairs": 48,
+  "anti_overfitting": {
+    "historical_records_replayed": false,
+    "legitimate_incomplete_and_non_authoritative_controls": true,
+    "minimum_cross_object_family_pairs": 16,
+    "minimum_distractor_pairs": 16,
+    "minimum_novel_recombination_pairs": 16
+  },
+  "base_commit": "9bed8e42ee824fc0c0a10717b6163fe7052423e8",
+  "blind_input_contract": [
+    "blind fixture packet",
+    "frozen model definition",
+    "existing contract references needed for M0"
+  ],
+  "boundary": "Research-only synthetic fixture evidence; no production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "corpus_type": "prospective_synthetic_but_repository_shaped",
+  "families": [
+    {
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "id": "F1",
+      "object_families": [
+        "execution_receipt",
+        "observation",
+        "reconciliation_obligation"
+      ],
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ]
+    },
+    {
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "id": "F2",
+      "object_families": [
+        "base_admission",
+        "delta_admission",
+        "provider_capability",
+        "current_authority"
+      ],
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ]
+    },
+    {
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "id": "F3",
+      "object_families": [
+        "source_identity",
+        "release_projection",
+        "public_surface",
+        "lifecycle_status"
+      ],
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ]
+    },
+    {
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "id": "F4",
+      "object_families": [
+        "claim",
+        "evidence",
+        "action_packet",
+        "decision_reason"
+      ],
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ]
+    },
+    {
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "id": "F5",
+      "object_families": [
+        "effect",
+        "preimage",
+        "rollback_control",
+        "stop_path"
+      ],
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ]
+    },
+    {
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "id": "F6",
+      "object_families": [
+        "signer",
+        "approval",
+        "scope",
+        "consequence_visibility"
+      ],
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ]
+    }
+  ],
+  "forbidden_scorer_inputs": [
+    "answer-key.jsonl",
+    "historical outcome labels",
+    "defect/control labels",
+    "post-outcome evidence"
+  ],
+  "freeze_before_scoring": true,
+  "instances_per_pair": 2,
+  "live_external_effects": false,
+  "metamorphic_properties": [
+    {
+      "expectation": "A model that flags a declared single-field defect must return NO_FLAG for its matched repair; models without that predicate are recorded as not applicable.",
+      "id": "repair_exact_missing_junction"
+    },
+    {
+      "expectation": "Breaking a locally valid cross-object binding may flip only models whose frozen predicate covers that binding subtype.",
+      "id": "binding_coverage_locality"
+    },
+    {
+      "expectation": "Adding irrelevant evidence volume does not change claim scope, predicates or result.",
+      "id": "irrelevant_evidence_no_scope_upgrade"
+    },
+    {
+      "expectation": "Adding a valid signature does not remove an unrelated consequence/accountability finding.",
+      "id": "signature_does_not_repair_consequence"
+    },
+    {
+      "expectation": "Adding a rollback label cannot turn an irreversible-effect finding into NO_FLAG.",
+      "id": "rollback_label_does_not_repair_irreversible_effect"
+    },
+    {
+      "expectation": "A safe authorized alternative may change an unavailable-route result; deadline passage alone cannot create a new failure.",
+      "id": "safe_authorized_alternative_and_deadline"
+    }
+  ],
+  "minimum_pairs": 48,
+  "protocol_amendment": {
+    "archived_invalidated_run": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-e942fb84/",
+    "id": "TASK156-AMENDMENT-01",
+    "invalidates_freeze_commit": "e942fb8482adbca5f4dd29eb9377b2aef0218f73",
+    "reason": "The first unblind run counted non-applicable model coverage as metamorphic violations and had not yet implemented the full predeclared metamorphic property suite.",
+    "restart_from_new_freeze": true
+  },
+  "question": "Can a frozen executable answer-key-separated fixture experiment reproduce non-redundant cross-contract detection beyond existing local contracts while controlling false positives, and can CC-020-like binding defects be caught by sharpening three edges without inventing a fourth?",
+  "schema_version": "1.0.0",
+  "scoring": {
+    "answer_key_read_after_scoring_only": true,
+    "deterministic_output_identity_required": true,
+    "models": [
+      "M0",
+      "M3",
+      "M3R",
+      "M4B"
+    ],
+    "passes_required": 2,
+    "semantic_adjudication": "NONE; all primary predicates are deterministic"
+  },
+  "split": {
+    "algorithm": "SHA256(pair_id).first_byte mod 3; 0/1 calibration, 2 holdout",
+    "pair_members_stay_together": true,
+    "refinement_before_holdout": true
+  },
+  "task_id": "IGNITION-20260905-156"
+}

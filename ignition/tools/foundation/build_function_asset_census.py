@@ -69,6 +69,9 @@ GENERATED_PREFIXES = (
     # Task155 research-only blind-test corpus is evidence for a non-canonical
     # study and must not feed the function-asset census.
     "data/research/cross-contract-blind-test-2026-09-05/",
+    # Task156 prospective fixtures are bounded research inputs, not function
+    # asset sources.
+    "data/research/cross-contract-prospective-fixtures-2026-09-05/",
     # Durability/lifecycle contracts and receipts are OS machine records; they
     # must remain provenance-only and cannot feed Foundation discovery.
     "data/operations/durability/",
@@ -208,6 +211,15 @@ GENERATED_EXACT_PATHS = {
     "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-155.md",
     "agent-results/IGNITION-20260905-155-result.md",
+    # Task156 research harness, tests, narrative and result are evidence, not
+    # function-asset discovery sources.
+    "tools/research/cross_contract_prospective_experiment.py",
+    "tests/test_cross_contract_prospective_experiment.py",
+    "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
+    "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
+    "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
+    "reports/governance/task-IGNITION-20260905-156.md",
+    "agent-results/IGNITION-20260905-156-result.md",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

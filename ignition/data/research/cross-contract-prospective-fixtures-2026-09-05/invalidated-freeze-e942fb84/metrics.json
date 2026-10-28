@@ -1,0 +1,485 @@
+{
+  "diagnostic_annotations": {
+    "COMPLETE_RECORD_WITHOUT_ACCOUNTABILITY": {
+      "ambiguous_flags_by_model": {
+        "M0": 0,
+        "M3": 0,
+        "M3R": 0,
+        "M4B": 0
+      },
+      "ambiguous_stress": 0,
+      "instances": 32,
+      "m0_flags": 6,
+      "m3r_incremental_flags": 10,
+      "primary_defects": 16
+    },
+    "PROVENANCE_WITHOUT_CEILING": {
+      "ambiguous_flags_by_model": {
+        "M0": 0,
+        "M3": 0,
+        "M3R": 0,
+        "M4B": 0
+      },
+      "ambiguous_stress": 0,
+      "instances": 48,
+      "m0_flags": 6,
+      "m3r_incremental_flags": 11,
+      "primary_defects": 24
+    },
+    "SIGNATURE_WITHOUT_CONTESTABILITY": {
+      "ambiguous_flags_by_model": {
+        "M0": 0,
+        "M3": 0,
+        "M3R": 0,
+        "M4B": 0
+      },
+      "ambiguous_stress": 2,
+      "instances": 16,
+      "m0_flags": 1,
+      "m3r_incremental_flags": 2,
+      "primary_defects": 6
+    }
+  },
+  "family_metrics": {
+    "F1": {
+      "M0": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.375,
+        "specificity_descriptive": 1.0
+      },
+      "M3": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      },
+      "M3R": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      },
+      "M4B": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      }
+    },
+    "F2": {
+      "M0": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.25,
+        "specificity_descriptive": 1.0
+      },
+      "M3": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.875,
+        "specificity_descriptive": 1.0
+      },
+      "M3R": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.875,
+        "specificity_descriptive": 1.0
+      },
+      "M4B": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      }
+    },
+    "F3": {
+      "M0": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.0,
+        "specificity_descriptive": 1.0
+      },
+      "M3": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.0,
+        "specificity_descriptive": 1.0
+      },
+      "M3R": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.5,
+        "specificity_descriptive": 1.0
+      },
+      "M4B": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      }
+    },
+    "F4": {
+      "M0": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.5,
+        "specificity_descriptive": 1.0
+      },
+      "M3": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.75,
+        "specificity_descriptive": 1.0
+      },
+      "M3R": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.75,
+        "specificity_descriptive": 1.0
+      },
+      "M4B": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      }
+    },
+    "F5": {
+      "M0": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 0.375,
+        "specificity_descriptive": 1.0
+      },
+      "M3": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      },
+      "M3R": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      },
+      "M4B": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 8,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      }
+    },
+    "F6": {
+      "M0": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 6,
+        "sensitivity_descriptive": 0.166667,
+        "specificity_descriptive": 1.0
+      },
+      "M3": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 6,
+        "sensitivity_descriptive": 0.5,
+        "specificity_descriptive": 1.0
+      },
+      "M3R": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 6,
+        "sensitivity_descriptive": 0.5,
+        "specificity_descriptive": 1.0
+      },
+      "M4B": {
+        "control_false_positives": 0,
+        "controls": 8,
+        "defects": 6,
+        "sensitivity_descriptive": 1.0,
+        "specificity_descriptive": 1.0
+      }
+    }
+  },
+  "holdout_survival": {
+    "M3R_incremental_defects_beyond_m0": 8,
+    "M3R_incremental_families": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "M3_incremental_defects": 6,
+    "M4B_additional_binding_subtypes": [
+      "approval_action_object",
+      "claim_action_object",
+      "lifecycle_epoch"
+    ],
+    "M4B_additional_control_false_positives_vs_m3r": 0,
+    "M4B_additional_defects_beyond_m3r": 4,
+    "any_cross_contract_signal_survives": true,
+    "binding_challenger_survives": true,
+    "thresholds_source": "thresholds.json"
+  },
+  "models": {
+    "M0": {
+      "all": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 48,
+        "defects": 46,
+        "detected_defects": 13,
+        "false_negatives": 33,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 96,
+        "incremental_defects_beyond_m0": 0,
+        "incremental_exact_actionability_rate": null,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.270833,
+        "matched_pair_flips": 13,
+        "redundant_detections": 0,
+        "undecidable_outputs": 0
+      },
+      "calibration": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 36,
+        "defects": 34,
+        "detected_defects": 13,
+        "false_negatives": 21,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 72,
+        "incremental_defects_beyond_m0": 0,
+        "incremental_exact_actionability_rate": null,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.361111,
+        "matched_pair_flips": 13,
+        "redundant_detections": 0,
+        "undecidable_outputs": 0
+      },
+      "holdout": {
+        "ambiguous_stress": 0,
+        "ambiguous_stress_flags": 0,
+        "controls": 12,
+        "defects": 12,
+        "detected_defects": 0,
+        "false_negatives": 12,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 24,
+        "incremental_defects_beyond_m0": 0,
+        "incremental_exact_actionability_rate": null,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 0,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.0,
+        "matched_pair_flips": 0,
+        "redundant_detections": 0,
+        "undecidable_outputs": 0
+      }
+    },
+    "M3": {
+      "all": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 48,
+        "defects": 46,
+        "detected_defects": 32,
+        "false_negatives": 14,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 96,
+        "incremental_defects_beyond_m0": 19,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.666667,
+        "matched_pair_flips": 32,
+        "redundant_detections": 13,
+        "undecidable_outputs": 0
+      },
+      "calibration": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 36,
+        "defects": 34,
+        "detected_defects": 26,
+        "false_negatives": 8,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 72,
+        "incremental_defects_beyond_m0": 13,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.722222,
+        "matched_pair_flips": 26,
+        "redundant_detections": 13,
+        "undecidable_outputs": 0
+      },
+      "holdout": {
+        "ambiguous_stress": 0,
+        "ambiguous_stress_flags": 0,
+        "controls": 12,
+        "defects": 12,
+        "detected_defects": 6,
+        "false_negatives": 6,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 24,
+        "incremental_defects_beyond_m0": 6,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 0,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.5,
+        "matched_pair_flips": 6,
+        "redundant_detections": 0,
+        "undecidable_outputs": 0
+      }
+    },
+    "M3R": {
+      "all": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 48,
+        "defects": 46,
+        "detected_defects": 36,
+        "false_negatives": 10,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 96,
+        "incremental_defects_beyond_m0": 23,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.75,
+        "matched_pair_flips": 36,
+        "redundant_detections": 13,
+        "undecidable_outputs": 0
+      },
+      "calibration": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 36,
+        "defects": 34,
+        "detected_defects": 28,
+        "false_negatives": 6,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 72,
+        "incremental_defects_beyond_m0": 15,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.777778,
+        "matched_pair_flips": 28,
+        "redundant_detections": 13,
+        "undecidable_outputs": 0
+      },
+      "holdout": {
+        "ambiguous_stress": 0,
+        "ambiguous_stress_flags": 0,
+        "controls": 12,
+        "defects": 12,
+        "detected_defects": 8,
+        "false_negatives": 4,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 24,
+        "incremental_defects_beyond_m0": 8,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 0,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.666667,
+        "matched_pair_flips": 8,
+        "redundant_detections": 0,
+        "undecidable_outputs": 0
+      }
+    },
+    "M4B": {
+      "all": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 48,
+        "defects": 46,
+        "detected_defects": 46,
+        "false_negatives": 0,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 96,
+        "incremental_defects_beyond_m0": 33,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.958333,
+        "matched_pair_flips": 46,
+        "redundant_detections": 13,
+        "undecidable_outputs": 0
+      },
+      "calibration": {
+        "ambiguous_stress": 2,
+        "ambiguous_stress_flags": 0,
+        "controls": 36,
+        "defects": 34,
+        "detected_defects": 34,
+        "false_negatives": 0,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 72,
+        "incremental_defects_beyond_m0": 21,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 13,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 0.944444,
+        "matched_pair_flips": 34,
+        "redundant_detections": 13,
+        "undecidable_outputs": 0
+      },
+      "holdout": {
+        "ambiguous_stress": 0,
+        "ambiguous_stress_flags": 0,
+        "controls": 12,
+        "defects": 12,
+        "detected_defects": 12,
+        "false_negatives": 0,
+        "false_positives_on_matched_controls": 0,
+        "fixture_instances": 24,
+        "incremental_defects_beyond_m0": 12,
+        "incremental_exact_actionability_rate": 1.0,
+        "invalid_fixtures": 0,
+        "m0_defects_detected": 0,
+        "matched_control_false_positive_rate": 0.0,
+        "matched_pair_flip_accuracy": 1.0,
+        "matched_pair_flips": 12,
+        "redundant_detections": 0,
+        "undecidable_outputs": 0
+      }
+    }
+  }
+}

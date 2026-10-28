@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 690 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 694 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -1054,7 +1054,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-F29753586C28F9EC`
-- 关联断言：['NFC-2c87b81f18aa4929', 'NFC-8fa71c6c67c6c449', 'NFC-c3f93d8d30a6615a', 'NFC-ce5b5e084c3e3145', 'NFC-d6438ba169ea4479', 'NFC-f1eed00833aaf221']
+- 关联断言：['NFC-2c87b81f18aa4929', 'NFC-6ad8ed2ad32a8905', 'NFC-8fa71c6c67c6c449', 'NFC-aa96bdc3259293b9', 'NFC-c3f93d8d30a6615a', 'NFC-ce5b5e084c3e3145', 'NFC-d6438ba169ea4479', 'NFC-f1eed00833aaf221']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -1142,6 +1142,22 @@
 
 - 状态：`ADDED`
 - Delta：`CD-F66948587186B587`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/cross-contract-prospective-casebook-2026-09-05.md`
+
+- 状态：`ADDED`
+- Delta：`CD-00DA966FFE3E0A06`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md`
+
+- 状态：`ADDED`
+- Delta：`CD-67B6FA26D8F075E8`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
@@ -1271,6 +1287,14 @@
 - 状态：`ADDED`
 - Delta：`CD-3EF891412912B7E1`
 - 关联断言：['NFC-1d21ee1e5506429b', 'NFC-3f5667059a89f9ce', 'NFC-59920a9c7f220156', 'NFC-611e2d7d6555d643', 'NFC-c970efa25ea281f3', 'NFC-d728b8564f272414', 'NFC-f65dc6a9215bad08', 'NFC-f91bb07e8af305a1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/junction-invariant-candidate-assessment-2026-09-05.md`
+
+- 状态：`ADDED`
+- Delta：`CD-50F536B540C5DE3C`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -3622,6 +3646,14 @@
 
 - 状态：`ADDED`
 - Delta：`CD-05A2F9197127A521`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/governance/task-IGNITION-20260905-156.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3F5B2483D9080AF0`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
