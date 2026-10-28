@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "edf57056b2d1454fb17832988999af881ac76f4e9ff9e2fbcc3d21971cae6c34",
+      "source_sha256": "0da0ee9972d309107c280df3b299a27b106787eb59f32053110ff35c48f02f77",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "b27a3fc00e69a8995329bbb041b70da8d1660488f4a0b250fa14ea64db5337b9",
+      "source_sha256": "efe38916a0037e8bafc0301025afdc8a0f28b7ce8d42dba395c8dad0d0081fd5",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2373,7 +2373,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "b5fcc8e2ca43474f37d2e2b935f99cf777857b18cc2c38b1cede1d86b4a447cc",
+      "source_sha256": "7c02f172c1fe0910a2bbf72f8a5042ff1a3681cb1d2ae4a5e99ca8ae7750b9b0",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2415,7 +2415,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "2ba80206605ad95571f1dd9d28a363315ab158b19655a23d526cc91290bf19bd",
+      "source_sha256": "248d47367d609b3341c754464f4d00ab9120b8684571f5211238e4c35010a61c",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2767,7 +2767,7 @@
       "title": "EVIDENCE-LINEAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "db2b86a54513b0bf93f5436207015bc0c96e5886d1059fcb489a47f35a4c94f3",
+      "source_sha256": "6ba2ad205d16ee46c19de323f18943ffc411131f8e6259adbb8c3b61742e0add",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2873,7 +2873,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ed721cb6338f5f36b24295961bbb827ec925cf122e6db252398f1dfb52bb85d1",
+      "source_sha256": "ab80d4c1644ea977282d3ca6c8e963885642d2f387708a0b67f93b4080d33420",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
