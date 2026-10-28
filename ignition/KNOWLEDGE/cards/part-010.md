@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-9e6a888145f934b6"></a>
+## IGNITION-130 Step 11 — residual reclassification
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9E6A888145F934B6` · [reports/operations/ignition-130-step11-residual-reclassification.md](../../reports/operations/ignition-130-step11-residual-reclassification.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-130 Step 11 — residual reclassification？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Task 129’s terminal receipt remains the source record. The following items are retained as historical or environmental residuals; none is a new Task 130 Current Surface regression.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-130-step11-residual-reclassification.md`, `130-STEP11-RESIDUAL-RECLASSIFICATION`
+- **演化历史：** 2026-08-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-130 Step 11 — residual reclassification`, `ignition-130-step11-residual-reclassification`
+
+<a id="asset-hr-9e9cc07c265f9ae3"></a>
+## IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9E9CC07C265F9AE3` · [reports/operations/ignition-134-step08-residual-sealing-r1.md](../../reports/operations/ignition-134-step08-residual-sealing-r1.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation？
+- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
+- **当前结果：** The residual builder was corrected so a current repair does not erase the debt it repaired. It now reads only the prior ledger's baseline tuple—objects, failure dimensions and baseline command—while recomputing the current tuple from live validators. The current observation is never reused as the…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-134-step08-residual-sealing-r1.md`, `134-STEP08-RESIDUAL-SEALING-R1`
+- **演化历史：** 2026-08-22: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation`, `ignition-134-step08-residual-sealing-r1`
+
+<a id="asset-hr-9e9fe4af5f59921c"></a>
+## IGNITION-20260828-144 Step 15 — engineering closure gate
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9E9FE4AF5F59921C` · [reports/operations/ignition-144-step15-engineering-closure-gate.md](../../reports/operations/ignition-144-step15-engineering-closure-gate.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260828-144 Step 15 — engineering closure gate？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The engineering phase is now closed for the current scope. The canonical phase state records ENGINEERINGPHASECLOSEDCURRENTSCOPE=true, the architecture identity remains frozen at Task142 / map 0.16.0, and the current-scope prose across the AI and publication entrypoints now says to wait for an Own…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-144-step15-engineering-closure-gate.md`, `144-STEP15-ENGINEERING-CLOSURE-GATE`
+- **演化历史：** 2026-08-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260828-144 Step 15 — engineering closure gate`, `ignition-144-step15-engineering-closure-gate`
+
 <a id="asset-hr-9fad496317a3b73c"></a>
 ## Semantic adjudication verification
 
@@ -676,7 +736,7 @@
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D221`, `NFC-32099ff811b71c26`, `NFC-337b55cb63f246c6`, `NFC-55194adf28f8ddc1`, `NFC-5f340945465877b1`, `NFC-64a6c2658ad0505c`, `NFC-76333be52839438c`, `NFC-85a7b6430641f130`, `NFC-9cb55dfba48f8bef`, `NFC-a74c4c9a3f0087b9`, `NFC-ae6a4cd8d714e912`, `NFC-b6681cf731203727`, `NFC-bc9024ed08373c7b`, `NFC-c0213a52f7f0a783`, `NFC-eb733cbefff9a20d`, `NFC-ef8d291285631441`, `NFC-f6c4efaad6805567`, `NFC-fc04c5c513ec9600`, `NFC-1c7f3913376c1331`, `NFC-4048ec4549fe9a44`, `NFC-4cd91a6775bc509f`, `NFC-592c63c69895ddc2`, `NFC-74dcd1d655b37df4`, `NFC-750c64bd558fa492`, `NFC-76673a6ab38923ee`, `NFC-94ee4c7c2d853985`, `NFC-a28cf179711d33b6`, `NFC-c8a16b1d2280f62a`, `NFC-c99e9f1af6e35839`, `NFC-cfaa96c8533444b1`, `NFC-db570a0984372582`, `D186`, `D190`, `D217`, `D220`, `T16`, `NFC-00242edb2cd91eae`, `NFC-008ba13844b17af6`, `NFC-0235b89d6c767e2c`, `NFC-029fee7ec2d002ce`, `… and 40 more; inspect the canonical machine record`
+- **相关文章/资产：** `D221`, `NFC-32099ff811b71c26`, `NFC-337b55cb63f246c6`, `NFC-43c63c0ed4c16b60`, `NFC-55194adf28f8ddc1`, `NFC-5f340945465877b1`, `NFC-64a6c2658ad0505c`, `NFC-712f0f6c74155068`, `NFC-76333be52839438c`, `NFC-85a7b6430641f130`, `NFC-9cb55dfba48f8bef`, `NFC-a74c4c9a3f0087b9`, `NFC-ae6a4cd8d714e912`, `NFC-b6681cf731203727`, `NFC-bc9024ed08373c7b`, `NFC-c0213a52f7f0a783`, `NFC-eb733cbefff9a20d`, `NFC-ef8d291285631441`, `NFC-f01615a4241520a5`, `NFC-f6c4efaad6805567`, `NFC-fc04c5c513ec9600`, `NFC-1c7f3913376c1331`, `NFC-27360f24f7aa298f`, `NFC-4048ec4549fe9a44`, `NFC-4cd91a6775bc509f`, `NFC-592c63c69895ddc2`, `NFC-74dcd1d655b37df4`, `NFC-750c64bd558fa492`, `NFC-76673a6ab38923ee`, `NFC-885ea12d506173bb`, `NFC-94ee4c7c2d853985`, `NFC-a28cf179711d33b6`, `NFC-a5b45012b0801080`, `NFC-c8a16b1d2280f62a`, `NFC-c99e9f1af6e35839`, `NFC-cfaa96c8533444b1`, `NFC-db570a0984372582`, `D186`, `D190`, `D217`, `… and 40 more; inspect the canonical machine record`
 - **来源与证据：** `docs/foundation/nonfunction-claim-adjudication-index.md`, `REPOSITORY_HISTORY_SOURCE`
 - **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt`, `ignition-137-step09-live-codex-attempt`
-
-<a id="asset-hr-b2797cd81f454a5f"></a>
-## IGNITION-20260824-138 — Step 10 Independent OS Validation Gate
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B2797CD81F454A5F` · [reports/operations/ignition-138-step10-independent-validation-gate.md](../../reports/operations/ignition-138-step10-independent-validation-gate.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260824-138 — Step 10 Independent OS Validation Gate？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** No new attempt returned a structured public result. The first Codex attempt was a bounded pre-inference startup failure; the second invocation was forbidden by the auth-source boundary. Consequently the Task138 independent fixture validator was not run against a live result, and no RETURNEDUNVALI…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-138-step10-independent-validation-gate.md`, `138-STEP10-INDEPENDENT-VALIDATION-GATE`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260824-138 — Step 10 Independent OS Validation Gate`, `ignition-138-step10-independent-validation-gate`
-
-<a id="asset-hr-b3910e7a27e481ac"></a>
-## 生命共同体价值宪章
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B3910E7A27E481AC` · [docs/governance/life-community-value-charter.md](../../docs/governance/life-community-value-charter.md)
-- **为什么产生：** 此来源记录了什么：生命共同体价值宪章？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 本宪章是点火项目的规范性价值前提，用于约束元协议、函数、案例和理论生成结果的价值方向。它不构成经验性证据，不替代数学证明、实验验证、案例核验、外部学科审查或治理批准。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/life-community-value-charter.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `生命共同体价值宪章`, `life-community-value-charter`
-
-<a id="asset-hr-b3dbb7f4c3f52857"></a>
-## 新增注释 · 赛课机制下的教师生存困境
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B3DBB7F4C3F52857` · [outputs/collisions/20260708-teacher-competition/notes.md](../../outputs/collisions/20260708-teacher-competition/notes.md)
-- **为什么产生：** 此来源记录了什么：新增注释 · 赛课机制下的教师生存困境？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D499`, `D244`, `D173`, `D364`, `D423`
-- **来源与证据：** `outputs/collisions/20260708-teacher-competition/notes.md`, `202`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`
-- **可搜索名称：** `新增注释 · 赛课机制下的教师生存困境`, `notes`

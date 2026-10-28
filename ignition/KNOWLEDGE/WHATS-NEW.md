@@ -2817,6 +2817,33 @@
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
 
+<a id="change-src-hr-55571c37dc8b05e5"></a>
+### 2026-07-23 · DECISION-INTEGRITY repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** stale pre-repair i1 head 213dced90f1e9b1f1992a148ee10fc0844917490 to the real SYMBOLIC-SPHERE repair-r2 head 68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID…
+- **来源：** [DECISION-INTEGRITY-REPAIR-R2-freeze.md](../reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-55571C37DC8B05E5](./ASSET-CARDS.md#asset-hr-55571c37dc8b05e5)
+
+<a id="change-src-hr-444a463e9e52df40"></a>
+### 2026-07-23 · SYMBOLIC-SPHERE repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** RB09-DIRECT-PREDECESSOR-BINDING is closed at DECISION-INTEGRITY / SCIENTIFIC-METACOGNITION checkpoints.
+- **来源：** [SYMBOLIC-SPHERE-REPAIR-R2-freeze.md](../reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-444A463E9E52DF40](./ASSET-CARDS.md#asset-hr-444a463e9e52df40)
+
+<a id="change-src-hr-578f793e0ef4f0f6"></a>
+### 2026-07-22 · SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md](../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
+- **资产卡：** [HR-578F793E0EF4F0F6](./ASSET-CARDS.md#asset-hr-578f793e0ef4f0f6)
+
 <a id="change-src-hr-43bf10109af2485e"></a>
 ### 2026-07-19 · External Input Non-Republication Principle
 

@@ -195,6 +195,19 @@
         "ignition/research_workflow"
       ],
       "evidence": "PR #259 candidate package tests: test_research_workflow.py covers the live CLI with OpenAlex and Crossref; test_pluggable_slot.py covers the independent offline/source-binding slot. The output receipts do not enter the canonical O human-knowledge surfaces."
+    },
+    {
+      "target_id": "g_decision_integrity",
+      "domain": "G",
+      "modules": [
+        "tests.decision.test_decision_integrity_gate",
+        "tests.decision.test_decision_integrity_repair_r2",
+        "tests.test_r3_decision_integrity"
+      ],
+      "evidence": "The existing decision-integrity contract, gate, R2 reproduction and R3 evaluator consumer tests validate evidence binding and fail-closed semantic evaluation for the registered decision components.",
+      "import_roots": [
+        "ignition"
+      ]
     }
   ],
   "components": [
@@ -642,6 +655,92 @@
       ],
       "requires_full_regression": true,
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "decision_integrity_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_decision_integrity"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "decision_integrity_contract is a registered decision-integrity governance component; the focused consumer target exercises its contract and fail-closed decision semantics."
+    },
+    {
+      "component_id": "decision_integrity_gate_validator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_decision_integrity"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "decision_integrity_gate_validator is a registered decision-integrity governance component; the focused consumer target exercises its contract and fail-closed decision semantics."
+    },
+    {
+      "component_id": "decision_integrity_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_decision_integrity"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "decision_integrity_pilot is a registered decision-integrity governance component; the focused consumer target exercises its contract and fail-closed decision semantics."
+    },
+    {
+      "component_id": "system_map_layout",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "requires_full_regression": true,
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The system-map layout and geometry-quality projection affect both governance-owned map structure and human-visible result rendering; retain the existing full-regression requirement for map/layout changes."
+    },
+    {
+      "component_id": "historical_reports",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "HISTORICAL_ONLY"
+      ],
+      "evidence": "Historical operational reports are retained as evidence artifacts; the existing iteration and publication consumers validate their repository-bound seal and iteration interfaces without elevating the reports into current authority."
+    },
+    {
+      "component_id": "iteration_manifest_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The iteration manifest defines publication and completion-seal bindings; the existing iteration synchronization and publication consumer tests validate those boundaries."
     }
   ]
 }

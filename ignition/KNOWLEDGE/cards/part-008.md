@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-75c11de1d71e9e27"></a>
+## IGNITION-20260826-140 Step 15 — Candidate natural full regression
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-75C11DE1D71E9E27` · [reports/operations/ignition-140-step15-candidate-full-regression.md](../../reports/operations/ignition-140-step15-candidate-full-regression.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260826-140 Step 15 — Candidate natural full regression？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The exact Task140 candidate head 86a188e4fc86037086f8d1ba7de0fd9130cd5249 completed the natural isolated full regression with 1227 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 3070.464s runtime / 3071.522s elapsed, with no watchdog, arbitrary timeout or process kill.…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-140-step15-candidate-full-regression.md`, `140-STEP15-CANDIDATE-FULL-REGRESSION`
+- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260826-140 Step 15 — Candidate natural full regression`, `ignition-140-step15-candidate-full-regression`
+
+<a id="asset-hr-76c6925c9fcdf852"></a>
+## Human Surface 编辑契约
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-76C6925C9FCDF852` · [docs/governance/human-surface-editorial-contract.md](../../docs/governance/human-surface-editorial-contract.md)
+- **为什么产生：** 此来源记录了什么：Human Surface 编辑契约？
+- **当前状态：** `CURRENT_SCOPED_SOURCE`
+- **当前结果：** 状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/human-surface-editorial-contract.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- **可搜索名称：** `Human Surface 编辑契约`, `human-surface-editorial-contract`
+
+<a id="asset-hr-771c2981fcc20396"></a>
+## 121Q13 Attention, Distribution, And Compression Report
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-771C2981FCC20396` · [reports/architecture/121Q13-attention-distribution-compression.md](../../reports/architecture/121Q13-attention-distribution-compression.md)
+- **为什么产生：** 此来源记录了什么：121Q13 Attention, Distribution, And Compression Report？
+- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **当前结果：** Status: READYASATTENTIONDISTRIBUTIONCONTROLCANDIDATE
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/architecture/121Q13-attention-distribution-compression.md`, `121Q13-ATTENTION-DISTRIBUTION-COMPRESSION`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `121Q13 Attention, Distribution, And Compression Report`, `121Q13-attention-distribution-compression`
+
 <a id="asset-hr-771c575b7e09f8bd"></a>
 ## 121Q32I Phase D integrated validation closeout
 
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `D220 countermodel-equivalence audit`, `D220-countermodel-equivalence-audit-20260713`
-
-<a id="asset-hr-8ace59cddddfe0a2"></a>
-## P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-8ACE59CDDDDFE0A2` · [outputs/audit/p1-collision-workflow-smoke-test-20260708.md](../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
-- **为什么产生：** 此来源记录了什么：P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** inputs/collisions/20260708-smoke-test/
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/audit/p1-collision-workflow-smoke-test-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）`, `p1-collision-workflow-smoke-test-20260708`
-
-<a id="asset-hr-8b3081462a058d1a"></a>
-## Effectual Action Plane
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-8B3081462A058D1A` · [docs/architecture/effectual-action-plane.md](../../docs/architecture/effectual-action-plane.md)
-- **为什么产生：** 此来源记录了什么：Effectual Action Plane？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** Status: 121Q12OPERATIONOVERLAY
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/effectual-action-plane.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Effectual Action Plane`, `effectual-action-plane`
-
-<a id="asset-hr-8b777f70fc22bb69"></a>
-## Owner observation seed: OWNER-OBS-ESI-001
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-8B777F70FC22BB69` · [docs/architecture/owner-observation-esi-001.md](../../docs/architecture/owner-observation-esi-001.md)
-- **为什么产生：** 此来源记录了什么：Owner observation seed: OWNER-OBS-ESI-001？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 公共仓库只保留一个去身份化的摘要：一个外部模型在阅读公开架构和治理材料 后，曾在后续回答中主动把工程判断与真值判断分开、保留部分未知并抵抗没有 证据支持的升级。这里没有私人正文、截图、聊天上下文、平台内容、账号或本机 路径。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/owner-observation-esi-001.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-20: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Owner observation seed: OWNER-OBS-ESI-001`, `owner-observation-esi-001`

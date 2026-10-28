@@ -1454,6 +1454,11 @@
   - 可搜索名称：NFC-56e1db09bf71b0a6 / `BC-20260709-022` 《混沌》: SOURCE_NOT_FOUND; missing=direct source artifact unresolved
   - 来源：`reports/math-foundation/provenance-audit-20260712.md`
   - 依赖：—；被引用：—
+- [`candidate_only: deterministic repository-local evidence-retrieval governance and replay; no case-count voting, no mecha](../../../docs/retrieval/q38-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cec66a2b659b7c34 / `candidate_only: deterministic repository-local evidence-retrieval governance and replay; no case-count voting, no mecha
+  - 来源：`docs/retrieval/q38-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [`change request -> propagation closure -> component profiles -> deterministic planner -> NonImpactProof / rebuild decisi](../../../docs/architecture/incremental-execution.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-17827704d5575a85 / `change request -> propagation closure -> component profiles -> deterministic planner -> NonImpactProof / rebuild decisi
@@ -1744,6 +1749,11 @@
   - 可搜索名称：NFC-ee4c004c53b5dfd2 / `FAIL`: evidence clearly shows the condition is not satisfied.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
+- [`failure_not_process_disproof`](../../../docs/decision/decision-integrity-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7856f3cb737440f1 / `failure_not_process_disproof`
+  - 来源：`docs/decision/decision-integrity-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [`false`：框架内判定为假，或外部证明 / 实证已否定；](../../../outputs/getbrain/project-position-update-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-8a57e7752baf268b / `false`：框架内判定为假，或外部证明 / 实证已否定；
@@ -1773,6 +1783,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-b349796fc3e5a587 / `G_δ`：是否存在当前材料无法闭合的证明缺口。
   - 来源：`docs/agent-trigger-phrases-20260708.md`
+  - 依赖：—；被引用：—
+- [`GATE_PASS` means repository-local reference integrity and the bounded symbolic semantics passed. It is not truth, legit](../../../docs/symbolic/symbolic-sphere-i1-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-70aba8fb9aae7fa9 / `GATE_PASS` means repository-local reference integrity and the bounded symbolic semantics passed. It is not truth, legit
+  - 来源：`docs/symbolic/symbolic-sphere-i1-interfaces.md`
   - 依赖：—；被引用：—
 - [`git ls-remote origin refs/heads/main`. The lifecycle schema/validator also treats](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2004,6 +2019,11 @@
   - 可搜索名称：NFC-ead8868c2aa4f1b2 / `STRUCTURALLY_VALID`**: the projection satisfied a structural/formal condition. Structure does not establish empirical s
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
+- [`success_not_process_proof`](../../../docs/decision/decision-integrity-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-22762684e67a431d / `success_not_process_proof`
+  - 来源：`docs/decision/decision-integrity-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [`SymPy unavailable` residual. This audit does not alter any proof, claim,](../../../reports/architecture/external-agent-interface-audit-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f0f293e1ddb31697 / `SymPy unavailable` residual. This audit does not alter any proof, claim,
@@ -2088,6 +2108,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-a5f172357c079e54 / A candidate structural-correspondence relation; strict isomorphism is rejected until a bijection, inverse and preservati
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [A claim may **not** be committed by the same model/agent that generated it \(no self-approval\). Deterministic proof/tests](../../../docs/discovery/discovery-commitment-boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cba7a50e2d6e10c7 / A claim may **not** be committed by the same model/agent that generated it \(no self-approval\). Deterministic proof/tests
+  - 来源：`docs/discovery/discovery-commitment-boundary.md`
   - 依赖：—；被引用：—
 - [A future study would need independently frozen semantic adjudication, fresh negative controls, a complete canonical vali](../../../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c08a433fd28b72df / ArXiv versions the manuscript, not expert-function artifacts; no provenance-complete registry, compatibility model or ro
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [asset bridge audit: IMPORTABLE_NOW=7 \(meta_function/psi0_definition\), NEEDS_MANUAL_SPEC=19 \(theorem_function\), OUT_OF_SC](../../../data/external-research/121-fulltext-resolver/121q6c/121q6c-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-0b888ca73ad0ef6b / asset bridge audit: IMPORTABLE_NOW=7 \(meta_function/psi0_definition\), NEEDS_MANUAL_SPEC=19 \(theorem_function\), OUT_OF_SC
-  - 来源：`data/external-research/121-fulltext-resolver/121q6c/121q6c-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e630927b348c301c / Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3adda23bcde2d3b9 / Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle proven
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-8930fc0f9a1044e0 / Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
-  - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—

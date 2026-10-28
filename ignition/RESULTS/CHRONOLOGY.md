@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 575 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 578 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -4148,6 +4148,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [SYMBOLIC-SPHERE repair-r2 — R4 freeze](../reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-444A463E9E52DF40`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：SYMBOLIC-SPHERE repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** RB09-DIRECT-PREDECESSOR-BINDING is closed at DECISION-INTEGRITY / SCIENTIFIC-METACOGNITION checkpoints.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt](../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
+
+- **结果 ID：** `HR-578F793E0EF4F0F6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Current Main vs 1.4 Candidate Homepage Comparison](../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
 
 - **结果 ID：** `HR-4F3C4FF4A7AB0E3A`
@@ -4169,6 +4195,19 @@
 - **问题：** 此来源记录了什么：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [DECISION-INTEGRITY repair-r2 — R4 freeze](../reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-55571C37DC8B05E5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：DECISION-INTEGRITY repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** stale pre-repair i1 head 213dced90f1e9b1f1992a148ee10fc0844917490 to the real SYMBOLIC-SPHERE repair-r2 head 68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
