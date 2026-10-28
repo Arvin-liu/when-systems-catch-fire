@@ -2269,9 +2269,9 @@
   - 可搜索名称：Agent result: IGNITION-20260908-165 / IGNITION-20260908-165-result
   - 来源：`agent-results/IGNITION-20260908-165-result.md`
   - 依赖：—；被引用：—
-- [AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。最终结果按\[统一输出契约\]\(../data/operations/ignition](../../../docs/AI-USAGE.md)
+- [AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。最终结果按\[统一输出契约（ignition-run-output-contract](../../../docs/AI-USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dfc593b29cc5c47c / AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。最终结果按\[统一输出契约\]\(../data/operations/ignition
+  - 可搜索名称：NFC-6cfc2e953a5fd897 / AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。最终结果按\[统一输出契约（ignition-run-output-contract
   - 来源：`docs/AI-USAGE.md`
   - 依赖：—；被引用：—
 - [AI 或人工生命道德地位不确定时的审慎边界；](../../../docs/governance/life-community-value-charter.md)

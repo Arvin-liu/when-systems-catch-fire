@@ -15,7 +15,102 @@ defaults:
   run:
     working-directory: ignition
 jobs:
-  validate:
+  route:
+    runs-on: ubuntu-latest
+    outputs:
+      mode: ${{ steps.plan.outputs.mode }}
+      has_targets: ${{ steps.plan.outputs.has_targets }}
+      uses_lean: ${{ steps.plan.outputs.uses_lean }}
+      receipt_verified: ${{ steps.verify_receipt.outputs.verified || steps.full_fallback.outputs.verified }}
+    defaults:
+      run:
+        working-directory: ignition
+    env:
+      PYTHONPATH: ${{ github.workspace }}/ignition:${{ github.workspace }}/ignition/tests:${{ github.workspace }}/ignition/tools/foundation
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # For pull_request events github.sha is the exact synthetic merge
+          # commit: test the base+candidate tree that GitHub would merge.
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-foundation.txt
+      - name: Resolve exact component and consumer closure
+        id: plan
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          VALIDATION_SHA: ${{ github.sha }}
+          PLAN_FILE: ${{ runner.temp }}/component-validation-plan.json
+        run: |
+          if [ -z "$BASE_SHA" ] || ! printf '%s' "$BASE_SHA" | grep -Eq '^[0-9a-f]{40}$'; then
+            printf 'mode=FULL\n' >> "$GITHUB_OUTPUT"
+            printf 'has_targets=false\n' >> "$GITHUB_OUTPUT"
+            printf '%s\n' 'No exact event base SHA is available; run the complete Foundation regression.'
+          else
+            python3 tools/operations/route_component_validation.py \
+              --repo-root "$GITHUB_WORKSPACE" \
+              --base-sha "$BASE_SHA" \
+              --head-sha "$HEAD_SHA" \
+              --validation-sha "$VALIDATION_SHA" \
+              --output "$PLAN_FILE" \
+              --github-output "$GITHUB_OUTPUT"
+          fi
+      - name: Set up Lean for selected proof consumers
+        if: steps.plan.outputs.uses_lean == 'true'
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: ignition/formal/lean
+          use-mathlib-cache: false
+          use-github-cache: false
+      - name: Run selected component and consumer tests
+        if: steps.plan.outputs.has_targets == 'true'
+        env:
+          PLAN_FILE: ${{ runner.temp }}/component-validation-plan.json
+          RECEIPT_FILE: ${{ runner.temp }}/component-validation-receipt.json
+        run: |
+          python3 tools/operations/run_component_validation_targets.py \
+          --repo-root "$GITHUB_WORKSPACE" \
+          --plan "$PLAN_FILE" \
+          --receipt "$RECEIPT_FILE"
+      - name: Verify exact plan and selected-target receipt
+        id: verify_receipt
+        if: always() && steps.plan.outputs.has_targets == 'true'
+        env:
+          PLAN_FILE: ${{ runner.temp }}/component-validation-plan.json
+          RECEIPT_FILE: ${{ runner.temp }}/component-validation-receipt.json
+          VALIDATION_SHA: ${{ github.sha }}
+          VALIDATION_MODE: ${{ steps.plan.outputs.mode }}
+        run: |
+          python3 tools/operations/verify_component_validation_evidence.py \
+            --plan "$PLAN_FILE" \
+            --receipt "$RECEIPT_FILE" \
+            --expected-validation-sha "$VALIDATION_SHA" \
+            --expected-mode "$VALIDATION_MODE"
+          printf 'verified=true\n' >> "$GITHUB_OUTPUT"
+      - name: Record exact full-regression fallback when no target closure is available
+        id: full_fallback
+        if: always() && steps.plan.outputs.mode == 'FULL' && steps.plan.outputs.has_targets != 'true'
+        run: |
+          printf 'verified=true\n' >> "$GITHUB_OUTPUT"
+          printf '%s\n' 'No exact impact base was available; the combined gate requires the full Foundation regression.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve exact plan and selected-test receipt
+        id: preserve
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: component-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/component-validation-*.json
+          if-no-files-found: ignore
+
+  full_regression:
+    name: Full Foundation regression
+    if: always() && needs.route.outputs.mode == 'FULL'
+    needs: route
     runs-on: ubuntu-latest
     timeout-minutes: 240
     # Keep direct unittest module loads on the same explicit roots as the
@@ -27,14 +122,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # Generated human-result products are bound to the exact source
-          # commit. A pull_request merge SHA has the same tree here but a
-          # synthetic identity, so validate the published candidate head.
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python3 -m pip install -r requirements-foundation.txt
+      - name: Bind full regression to the exact validation commit
+        env:
+          VALIDATION_SHA: ${{ github.sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$VALIDATION_SHA"
+          test -z "$(git status --porcelain --untracked-files=all)"
+          printf 'validation_sha=%s\n' "$VALIDATION_SHA" >> "$GITHUB_STEP_SUMMARY"
       - uses: leanprover/lean-action@v1
         with:
           auto-config: false
@@ -51,3 +150,104 @@ jobs:
           path: ${{ runner.temp }}/foundation-ci-evidence/
           if-no-files-found: warn
           retention-days: 30
+
+  validate:
+    name: validate
+    if: always()
+    needs: [route, full_regression]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enforce the selected or full validation result
+        env:
+          ROUTE_RESULT: ${{ needs.route.result }}
+          VALIDATION_MODE: ${{ needs.route.outputs.mode }}
+          HAS_TARGETS: ${{ needs.route.outputs.has_targets }}
+          RECEIPT_VERIFIED: ${{ needs.route.outputs.receipt_verified }}
+          FULL_RESULT: ${{ needs.full_regression.result }}
+        run: |
+          if [ "$ROUTE_RESULT" != "success" ]; then
+            printf 'component impact or selected validation failed: %s\n' "$ROUTE_RESULT"
+            exit 1
+          fi
+          case "$VALIDATION_MODE" in
+            FULL)
+              if [ "$RECEIPT_VERIFIED" != "true" ]; then
+                printf 'full mode has no verified plan/receipt or explicit full-regression fallback\n'
+                exit 1
+              fi
+              if [ "$FULL_RESULT" != "success" ]; then
+                printf 'full Foundation regression did not pass: %s\n' "$FULL_RESULT"
+                exit 1
+              fi
+              ;;
+            TARGETED)
+              if [ "$HAS_TARGETS" != "true" ] || [ "$RECEIPT_VERIFIED" != "true" ]; then
+                printf 'targeted mode requires a nonempty exact plan and verified complete receipt\n'
+                exit 1
+              fi
+              printf '%s\n' 'Selected component and consumer validation passed.'
+              ;;
+            *)
+              printf 'unexpected or absent validation mode: %s\n' "$VALIDATION_MODE"
+              exit 1
+              ;;
+          esac
+
+  final_main_witness:
+    name: Final main SHA witness
+    if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.validate.result == 'success'
+    needs: [route, full_regression, validate]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install final-main witness dependencies
+        run: python3 -m pip install -r requirements-foundation.txt
+      - name: Download exact validation evidence
+        if: needs.route.outputs.has_targets == 'true' || github.event.before != '0000000000000000000000000000000000000000'
+        uses: actions/download-artifact@v4
+        with:
+          name: component-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/main-validation-evidence
+      - name: Bind evidence to the final protected-main SHA
+        env:
+          EVENT_BEFORE: ${{ github.event.before }}
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_REF: ${{ github.ref }}
+          EXPECTED_SHA: ${{ github.sha }}
+          VALIDATION_MODE: ${{ needs.route.outputs.mode }}
+          ROUTE_RESULT: ${{ needs.route.result }}
+          VALIDATE_RESULT: ${{ needs.validate.result }}
+          FULL_RESULT: ${{ needs.full_regression.result }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          EVIDENCE_DIR: ${{ runner.temp }}/main-validation-evidence
+          OUTPUT_DIR: ${{ runner.temp }}/final-main-witness
+        run: |
+          python3 tools/operations/write_final_main_witness.py \
+            --repo-root "$GITHUB_WORKSPACE" \
+            --evidence-dir "$EVIDENCE_DIR" \
+            --output-dir "$OUTPUT_DIR" \
+            --expected-sha "$EXPECTED_SHA" \
+            --event-before "$EVENT_BEFORE" \
+            --event-name "$EVENT_NAME" \
+            --event-ref "$EVENT_REF" \
+            --mode "$VALIDATION_MODE" \
+            --route-result "$ROUTE_RESULT" \
+            --validate-result "$VALIDATE_RESULT" \
+            --full-result "$FULL_RESULT" \
+            --run-id "$RUN_ID" \
+            --run-attempt "$RUN_ATTEMPT"
+          sha256sum "$OUTPUT_DIR/final-main-witness.json" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Preserve exact final-main witness and validation evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-main-witness-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/final-main-witness/
+          if-no-files-found: error

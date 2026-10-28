@@ -1,0 +1,325 @@
+name: component-release
+on:
+  workflow_dispatch:
+    inputs:
+      component_id:
+        description: Registered component release policy entry
+        required: true
+        type: choice
+        options: [research_workflow_slot]
+      version:
+        description: New semantic version, for example 1.0.0
+        required: true
+        type: string
+      validation_run_id:
+        description: Successful foundation-validation run on the exact main SHA
+        required: true
+        type: string
+      validation_run_attempt:
+        description: Attempt number for that successful run
+        required: true
+        type: string
+      authorization_pr_number:
+        description: Merged component PR with an independent approval on its exact final head
+        required: true
+        type: string
+      previous_release_tag:
+        description: Most recent earlier release tag, or none for the first component release
+        required: true
+        default: none
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+  pull-requests: read
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require Owner release dispatch
+        env:
+          DISPATCH_ACTOR: ${{ github.actor }}
+          TRIGGERING_ACTOR: ${{ github.triggering_actor || github.actor }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: |
+          python3 - <<'PY'
+          import os
+          owner = os.environ["REPOSITORY_OWNER"].casefold()
+          if os.environ["DISPATCH_ACTOR"].casefold() != owner:
+              raise SystemExit("component releases may only be dispatched by the repository Owner")
+          if os.environ["TRIGGERING_ACTOR"].casefold() != owner:
+              raise SystemExit("component release reruns may only be triggered by the repository Owner")
+          PY
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r ignition/requirements-foundation.txt
+      - name: Bind release source to the current protected main tip
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
+          test "$(git ls-remote origin refs/heads/main | awk '{print $1}')" = "$EXPECTED_SHA"
+          test -z "$(git status --porcelain --untracked-files=all)"
+      - name: Verify exact successful main validation run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VALIDATION_RUN_ID: ${{ inputs.validation_run_id }}
+          VALIDATION_RUN_ATTEMPT: ${{ inputs.validation_run_attempt }}
+          EXPECTED_SHA: ${{ github.sha }}
+          OUTPUT_FILE: ${{ runner.temp }}/validation-run.json
+        run: |
+          gh run view "$VALIDATION_RUN_ID" --attempt "$VALIDATION_RUN_ATTEMPT" --repo "$GITHUB_REPOSITORY" --json headSha,headBranch,workflowName,status,conclusion > "$OUTPUT_FILE"
+          python3 - "$OUTPUT_FILE" "$EXPECTED_SHA" <<'PY'
+          import json, sys
+          run = json.load(open(sys.argv[1], encoding="utf-8"))
+          expected_sha = sys.argv[2]
+          if run.get("headSha") != expected_sha or run.get("headBranch") != "main":
+              raise SystemExit("validation run does not match the exact current main SHA")
+          if run.get("workflowName") != "foundation-validation" or run.get("conclusion") != "success":
+              raise SystemExit("foundation-validation must have a successful conclusion")
+          PY
+      - name: Download the exact main plan and selected-target receipt
+        uses: actions/download-artifact@v4
+        with:
+          name: component-validation-${{ inputs.validation_run_id }}-${{ inputs.validation_run_attempt }}
+          run-id: ${{ inputs.validation_run_id }}
+          repository: ${{ github.repository }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/component-validation
+      - name: Download final-main witness for the same validation run
+        uses: actions/download-artifact@v4
+        with:
+          name: final-main-witness-${{ inputs.validation_run_id }}-${{ inputs.validation_run_attempt }}
+          run-id: ${{ inputs.validation_run_id }}
+          repository: ${{ github.repository }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/main-witness
+      - name: Verify independently reviewed merged component PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTHORIZATION_PR: ${{ inputs.authorization_pr_number }}
+          EXPECTED_SHA: ${{ github.sha }}
+          PR_FILE: ${{ runner.temp }}/authorization-pr.json
+          REVIEWS_FILE: ${{ runner.temp }}/authorization-reviews.jsonl
+          FILES_FILE: ${{ runner.temp }}/authorization-files.jsonl
+          AUTHORIZATION_EVIDENCE_FILE: ${{ runner.temp }}/component-authorization.json
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/pulls/$AUTHORIZATION_PR" > "$PR_FILE"
+          gh api --paginate --jq '.[]' "repos/$GITHUB_REPOSITORY/pulls/$AUTHORIZATION_PR/reviews" > "$REVIEWS_FILE"
+          gh api --paginate --jq '.[]' "repos/$GITHUB_REPOSITORY/pulls/$AUTHORIZATION_PR/files" > "$FILES_FILE"
+          python3 - "$PR_FILE" "$REVIEWS_FILE" "$FILES_FILE" <<'PY'
+          import json, os, pathlib, subprocess, sys
+          pr = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
+          reviews = [json.loads(line) for line in pathlib.Path(sys.argv[2]).read_text(encoding="utf-8").splitlines() if line.strip()]
+          files = [json.loads(line) for line in pathlib.Path(sys.argv[3]).read_text(encoding="utf-8").splitlines() if line.strip()]
+          if pr.get("state") != "closed" or not pr.get("merged_at") or pr.get("base", {}).get("ref") != "main":
+              raise SystemExit("authorization PR must be merged to main")
+          head_sha = pr.get("head", {}).get("sha")
+          merge_sha = pr.get("merge_commit_sha")
+          if not head_sha or not merge_sha:
+              raise SystemExit("authorization PR is missing its exact head or merge commit")
+          sys.path.insert(0, str(pathlib.Path("ignition/tools/operations").resolve()))
+          from release_authorization import current_independent_approvals
+          independent_approvals = current_independent_approvals(
+              reviews, pr.get("user", {}).get("login", ""), head_sha, pr.get("merged_at")
+          )
+          if not independent_approvals:
+              raise SystemExit("authorization PR requires a non-author approval bound to its final head SHA")
+          if not any(item.get("filename", "").startswith("ignition/research_workflow/") for item in files):
+              raise SystemExit("authorization PR does not contain the research workflow component source")
+          subprocess.run(["git", "merge-base", "--is-ancestor", merge_sha, os.environ["EXPECTED_SHA"]], check=True)
+          registry = json.loads(pathlib.Path("ignition/data/operations/project-components.json").read_text(encoding="utf-8"))
+          policy = json.loads(pathlib.Path("ignition/data/operations/component-release-policy-r1.json").read_text(encoding="utf-8"))
+          release_policy = next(item for item in policy["components"] if item["component_id"] == "research_workflow_slot")
+          components = {item["component_id"]: item for item in registry["components"]}
+          source_paths = sorted({
+              "ignition/" + pattern.rstrip("/")
+              for component_id in release_policy["bundle_components"]
+              for pattern in components[component_id]["path_patterns"]
+          })
+          subprocess.run(["git", "diff", "--quiet", merge_sha, os.environ["EXPECTED_SHA"], "--", *source_paths], check=True)
+          authorization = {
+              "schema_version": "component-release-authorization-r1",
+              "authorization_pr_number": pr["number"],
+              "authorization_pr_head_sha": head_sha,
+              "authorization_pr_merge_commit_sha": merge_sha,
+              "authorization_pr_merged_at": pr["merged_at"],
+              "source_main_sha": os.environ["EXPECTED_SHA"],
+              "independent_approvals": [
+                  {"review_id": review["id"], "reviewer": review["user"]["login"], "reviewed_head_sha": review["commit_id"], "submitted_at": review["submitted_at"], "state": review["state"]}
+                  for review in independent_approvals
+              ],
+          }
+          pathlib.Path(os.environ["AUTHORIZATION_EVIDENCE_FILE"]).write_text(json.dumps(authorization, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+          PY
+      - name: Verify exact plan and receipt for this main SHA
+        env:
+          PLAN_FILE: ${{ runner.temp }}/component-validation/component-validation-plan.json
+          RECEIPT_FILE: ${{ runner.temp }}/component-validation/component-validation-receipt.json
+          WITNESS_FILE: ${{ runner.temp }}/main-witness/final-main-witness.json
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          MODE="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["mode"])' "$PLAN_FILE")"
+          python3 ignition/tools/operations/verify_component_validation_evidence.py \
+            --plan "$PLAN_FILE" \
+            --receipt "$RECEIPT_FILE" \
+            --expected-validation-sha "$EXPECTED_SHA" \
+            --expected-mode "$MODE"
+          python3 - "$WITNESS_FILE" "$PLAN_FILE" "$RECEIPT_FILE" "$EXPECTED_SHA" <<'PY'
+          import json, os, pathlib, sys
+          witness, plan, receipt = [json.loads(pathlib.Path(path).read_text(encoding="utf-8")) for path in sys.argv[1:4]]
+          expected_sha = sys.argv[4]
+          if witness.get("final_main_sha") != expected_sha or witness.get("remote_main_sha") != expected_sha:
+              raise SystemExit("final-main witness is not bound to the exact current main SHA")
+          if witness.get("event_name") != "push" or witness.get("event_ref") != "refs/heads/main":
+              raise SystemExit("validation artifact is not a protected-main push witness")
+          evidence = witness.get("validation_evidence") or {}
+          if evidence.get("plan_sha256") != plan.get("plan_sha256") or evidence.get("receipt_sha256") != receipt.get("receipt_sha256"):
+              raise SystemExit("final-main witness does not bind the downloaded plan and receipt")
+          PY
+      - name: Prepare and validate deterministic component artifact
+        env:
+          COMPONENT_ID: ${{ inputs.component_id }}
+          COMPONENT_VERSION: ${{ inputs.version }}
+          PREVIOUS_RELEASE_TAG: ${{ inputs.previous_release_tag }}
+          SOURCE_SHA: ${{ github.sha }}
+          PLAN_FILE: ${{ runner.temp }}/component-validation/component-validation-plan.json
+          RECEIPT_FILE: ${{ runner.temp }}/component-validation/component-validation-receipt.json
+          OUTPUT_DIR: ${{ runner.temp }}/component-release
+        run: |
+          PREVIOUS_TAGS_FILE="$RUNNER_TEMP/component-release-tags.txt"
+          gh api --paginate --jq '.[].tag_name' "repos/$GITHUB_REPOSITORY/releases?per_page=100" > "$PREVIOUS_TAGS_FILE"
+          python3 - "$PREVIOUS_TAGS_FILE" "$COMPONENT_ID" "$PREVIOUS_RELEASE_TAG" <<'PY'
+          import pathlib, re, sys
+          tags = [line for line in pathlib.Path(sys.argv[1]).read_text(encoding="utf-8").splitlines() if line]
+          component, supplied = sys.argv[2:4]
+          prefix = f"components/{component}/v"
+          versions = []
+          for tag in tags:
+              if not tag.startswith(prefix):
+                  continue
+              version = tag[len(prefix):]
+              if not re.fullmatch(r"(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)", version):
+                  raise SystemExit(f"component release tag has a non-semantic version: {tag}")
+              versions.append((tuple(map(int, version.split("."))), tag))
+          latest = max(versions)[1] if versions else "none"
+          if supplied != latest:
+              raise SystemExit(f"previous_release_tag must identify the latest component release: {latest}")
+          PY
+          PREVIOUS_DIR="$RUNNER_TEMP/previous-component-release"
+          EXTRA_ARGS=()
+          if [ "$PREVIOUS_RELEASE_TAG" != "none" ]; then
+            mkdir -p "$PREVIOUS_DIR"
+            gh release download "$PREVIOUS_RELEASE_TAG" \
+              --repo "$GITHUB_REPOSITORY" \
+              --pattern component-release-manifest.json \
+              --pattern "$COMPONENT_ID-*.zip" \
+              --dir "$PREVIOUS_DIR"
+            PREVIOUS_ARCHIVE="$(python3 -c 'import json,pathlib,sys; print(json.loads(pathlib.Path(sys.argv[1]).read_text())["artifact_file"])' "$PREVIOUS_DIR/component-release-manifest.json")"
+            EXTRA_ARGS+=(--previous-manifest "$PREVIOUS_DIR/component-release-manifest.json" --previous-archive "$PREVIOUS_DIR/$PREVIOUS_ARCHIVE")
+          fi
+          python3 ignition/tools/operations/prepare_component_release.py prepare \
+            --repo-root "$GITHUB_WORKSPACE" \
+            --component-id "$COMPONENT_ID" \
+            --version "$COMPONENT_VERSION" \
+            --source-sha "$SOURCE_SHA" \
+            --source-repository "$GITHUB_REPOSITORY" \
+            --plan "$PLAN_FILE" \
+            --receipt "$RECEIPT_FILE" \
+            --output-dir "$OUTPUT_DIR" \
+            "${EXTRA_ARGS[@]}"
+          python3 ignition/tools/operations/prepare_component_release.py validate \
+            --repo-root "$GITHUB_WORKSPACE" \
+            --manifest "$OUTPUT_DIR/component-release-manifest.json" \
+            --archive "$OUTPUT_DIR/$COMPONENT_ID-$COMPONENT_VERSION.zip"
+      - name: Reject an existing release tag and publish the verified artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMPONENT_ID: ${{ inputs.component_id }}
+          COMPONENT_VERSION: ${{ inputs.version }}
+          PREVIOUS_RELEASE_TAG: ${{ inputs.previous_release_tag }}
+          SOURCE_SHA: ${{ github.sha }}
+          AUTHORIZATION_PR: ${{ inputs.authorization_pr_number }}
+          AUTHORIZATION_ACTOR: ${{ github.actor }}
+          AUTHORIZATION_TRIGGERING_ACTOR: ${{ github.triggering_actor || github.actor }}
+          AUTHORIZATION_RUN_ID: ${{ github.run_id }}
+          AUTHORIZATION_RUN_ATTEMPT: ${{ github.run_attempt }}
+          AUTHORIZATION_EVIDENCE_FILE: ${{ runner.temp }}/component-authorization.json
+          VALIDATION_RUN_ID: ${{ inputs.validation_run_id }}
+          VALIDATION_RUN_ATTEMPT: ${{ inputs.validation_run_attempt }}
+          OUTPUT_DIR: ${{ runner.temp }}/component-release
+        run: |
+          TAG="components/$COMPONENT_ID/v$COMPONENT_VERSION"
+          test "$(git ls-remote origin refs/heads/main | awk '{print $1}')" = "$SOURCE_SHA"
+          if git ls-remote --exit-code origin "refs/tags/$TAG" >/dev/null 2>&1; then
+            printf 'release tag already exists and will not be replaced: %s\n' "$TAG"
+            exit 1
+          fi
+          printf 'Versioned component release for %s at %s. The attached manifest and archive are content-addressed; publication does not activate a runtime.\n' "$COMPONENT_ID" "$SOURCE_SHA" > "$RUNNER_TEMP/release-notes.md"
+          gh release create "$TAG" \
+            "$OUTPUT_DIR/$COMPONENT_ID-$COMPONENT_VERSION.zip" \
+            "$OUTPUT_DIR/component-release-manifest.json" \
+            "$OUTPUT_DIR/component-validation-plan.json" \
+            "$OUTPUT_DIR/component-validation-receipt.json" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$SOURCE_SHA" \
+            --title "$COMPONENT_ID $COMPONENT_VERSION" \
+            --notes-file "$RUNNER_TEMP/release-notes.md"
+          TAG_TARGET="$(git ls-remote origin "refs/tags/$TAG" "refs/tags/$TAG^{}" | awk -v ref="refs/tags/$TAG" '$2 == ref {tag=$1} $2 == ref"^{}" {peeled=$1} END {print peeled ? peeled : tag}')"
+          test "$TAG_TARGET" = "$SOURCE_SHA"
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json tagName,isDraft,url > "$RUNNER_TEMP/published-release.json"
+          python3 - "$RUNNER_TEMP/published-release.json" "$OUTPUT_DIR/component-release-manifest.json" <<'PY'
+          import json, os, pathlib, sys
+          release = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
+          manifest = json.loads(pathlib.Path(sys.argv[2]).read_text(encoding="utf-8"))
+          authorization = json.loads(pathlib.Path(os.environ["AUTHORIZATION_EVIDENCE_FILE"]).read_text(encoding="utf-8"))
+          if release.get("tagName") != manifest.get("release_tag") or release.get("isDraft") is not False or not release.get("url"):
+              raise SystemExit("GitHub release metadata does not match the prepared component release")
+          if authorization.get("authorization_pr_number") != int(os.environ["AUTHORIZATION_PR"]):
+              raise SystemExit("release authorization evidence names a different component PR")
+          if authorization.get("source_main_sha") != os.environ["SOURCE_SHA"] or not authorization.get("independent_approvals"):
+              raise SystemExit("release authorization evidence is incomplete or bound to another main SHA")
+          receipt = {
+              "schema_version": "component-publication-witness-r1",
+              "release_status": "PUBLISHED",
+              "component_id": manifest["component_id"],
+              "version": manifest["version"],
+              "release_tag": release["tagName"],
+              "release_url": release["url"],
+              "source_main_sha": os.environ["SOURCE_SHA"],
+              "artifact_sha256": manifest["artifact_sha256"],
+              "manifest_sha256": __import__("hashlib").sha256(pathlib.Path(sys.argv[2]).read_bytes()).hexdigest(),
+              "validation_plan_sha256": manifest["validation"]["plan_sha256"],
+              "validation_receipt_sha256": manifest["validation"]["receipt_sha256"],
+              "authorization_pr_number": int(os.environ["AUTHORIZATION_PR"]),
+              "authorization_pr_head_sha": authorization["authorization_pr_head_sha"],
+              "authorization_pr_merge_commit_sha": authorization["authorization_pr_merge_commit_sha"],
+              "authorization_pr_merged_at": authorization["authorization_pr_merged_at"],
+              "authorization_independent_approvals": authorization["independent_approvals"],
+              "authorization_source_main_sha": authorization["source_main_sha"],
+              "authorization_actor": os.environ["AUTHORIZATION_ACTOR"],
+              "authorization_triggering_actor": os.environ["AUTHORIZATION_TRIGGERING_ACTOR"],
+              "authorization_run_id": os.environ["AUTHORIZATION_RUN_ID"],
+              "authorization_run_attempt": os.environ["AUTHORIZATION_RUN_ATTEMPT"],
+              "validation_run_id": os.environ["VALIDATION_RUN_ID"],
+              "validation_run_attempt": os.environ["VALIDATION_RUN_ATTEMPT"],
+              "claim_ceiling": "GitHub Release exists for this exact content-addressed artifact; runtime activation is not established",
+          }
+          pathlib.Path(sys.argv[2]).parent.joinpath("publication-receipt.json").write_text(json.dumps(receipt, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+          print(json.dumps(receipt, ensure_ascii=False, sort_keys=True))
+          PY
+          cat "$OUTPUT_DIR/publication-receipt.json" >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve release package and publication evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-component-${{ inputs.component_id }}-${{ inputs.version }}-${{ github.run_id }}
+          path: ${{ runner.temp }}/component-release/
+          if-no-files-found: error
