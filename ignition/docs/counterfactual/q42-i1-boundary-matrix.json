@@ -1,0 +1,37 @@
+{
+  "task_id": "Q42-I1",
+  "parent_id": "D2-I1",
+  "fields": [
+    "counterfactuals",
+    "alternative_decompositions",
+    "unrealized_paths",
+    "speculative_narratives",
+    "intervention_differences",
+    "identifiability_status",
+    "observable_portion",
+    "unobservable_portion",
+    "evidence",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "types_separated",
+    "identifiability_gate_required",
+    "unobservable_not_promoted",
+    "evidence_required",
+    "intervention_difference_explicit",
+    "speculation_labeled",
+    "no_if_then_causal_upgrade",
+    "claim_ceiling_preserved"
+  ],
+  "record_types": [
+    "IDENTIFIABLE_COUNTERFACTUAL",
+    "SPECULATIVE_UNREALIZED_PATH"
+  ],
+  "nonclaims": [
+    "if-then story is not causal fact",
+    "unobservable portion remains unobservable",
+    "alternative decomposition is not counterfactual proof",
+    "no external intervention"
+  ],
+  "next_task": "Q43-I1"
+}

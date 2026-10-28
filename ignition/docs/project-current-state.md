@@ -335,3 +335,7 @@ guard 的 `REPRODUCED_IMPLEMENTATION_DEFECT`。三项历史案例仍可检索，
 ### SCIENTIFIC-METACOGNITION-I1 Scientific Metacognition & Epistemic-State Control Plane (stacked Draft candidate)
 
 Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: model self-rating is not evidence; non-identifiable is not solved; dominant discourse is not fact; planning is not external execution.
+
+### Q42-I1 Counterfactual & Unrealized-Path Ledger (stacked Draft candidate)
+
+Counterfactuals, alternative decompositions, unrealized paths and speculative narratives can be kept distinct, and only identifiable portions receive bounded counterfactual status. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: if-then story is not causal fact; unobservable portion remains unobservable; alternative decomposition is not counterfactual proof; no external intervention.

@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.9.4",
+    "component_registry_version": "2.9.5",
     "topology_version": "1.14.0",
     "layout_version": "2.4.0"
   },
@@ -680,6 +680,30 @@
       "group": "governance",
       "target": "data/latent/pilot-f15-d1-i1.json",
       "description": "F15-D1-I1 self-authored bounded repository pilot covering IDENTIFIABLE_CANDIDATE and NON_IDENTIFIABLE_EQUIVALENCE_SET; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "counterfactual_unrealized_path_contract",
+      "label": "Counterfactual & Unrealized-Path Ledger 合同",
+      "group": "governance",
+      "target": "schemas/counterfactual/counterfactual_unrealized_path-contract.schema.json",
+      "description": "Q42-I1 typed evidence-bound contract. Counterfactuals, alternative decompositions, unrealized paths and speculative narratives can be kept distinct, and only identifiable portions receive bounded counterfactual status.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "counterfactual_unrealized_path_gate_validator",
+      "label": "Counterfactual & Unrealized-Path Ledger 门禁",
+      "group": "governance",
+      "target": "tools/counterfactual/validate_counterfactual_unrealized_path_gate.py",
+      "description": "Q42-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "counterfactual_unrealized_path_pilot",
+      "label": "Counterfactual & Unrealized-Path Ledger 受控试点",
+      "group": "governance",
+      "target": "data/counterfactual/pilot-q42-i1.json",
+      "description": "Q42-I1 self-authored bounded repository pilot covering IDENTIFIABLE_COUNTERFACTUAL and SPECULATIVE_UNREALIZED_PATH; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {
@@ -1830,8 +1854,8 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 119,
-    "visible_nodes": 102,
+    "registry_components": 122,
+    "visible_nodes": 105,
     "hidden_components": 17,
     "hidden_representatives": {
       "foundation_data": "foundation",

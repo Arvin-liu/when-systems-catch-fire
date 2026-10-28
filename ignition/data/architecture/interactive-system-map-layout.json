@@ -172,7 +172,10 @@
       "world_feedback_anomaly_pilot",
       "latent_system_identifiability_contract",
       "latent_system_identifiability_gate_validator",
-      "latent_system_identifiability_pilot"
+      "latent_system_identifiability_pilot",
+      "counterfactual_unrealized_path_contract",
+      "counterfactual_unrealized_path_gate_validator",
+      "counterfactual_unrealized_path_pilot"
     ],
     "layers": [
       "l0",

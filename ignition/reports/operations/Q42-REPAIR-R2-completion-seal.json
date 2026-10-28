@@ -1,0 +1,13 @@
+{
+  "seal_id": "Q42-REPAIR-R2-SEAL",
+  "task_id": "Q42-R2",
+  "branch": "repair-r2/q42-r2-counterfactual-semantics",
+  "annotated_tag": "archive/q42-repair-r2-frozen-head",
+  "closure_complete": true,
+  "residue": 0,
+  "validation": "BUILDER_VALIDATION_PASS",
+  "independent_accepted": false,
+  "sealed_at": "2026-07-23T02:14:20+0800",
+  "sealed_by": "WorkBuddy night-shift main session (\u4e91\u5929\u660e)",
+  "statement": "RB09-DIRECT-PREDECESSOR-BINDING closed: Q42 now binds its direct predecessor to the real repair-r2 head ea447ed7f6331f8ed5e58526f4c2341d3a41d6a6. The fail-closed shared engine (4 engine blockers) is inherited unchanged via the stacked merge; pilot evidence upgraded to the fail-closed schema."
+}
