@@ -1,0 +1,31 @@
+{
+  "bad_output_absent": true,
+  "executor_history": [
+    "local-workspace-executor-instance-1",
+    "local-workspace-executor-v2-instance-2"
+  ],
+  "final_state": "FAILED_VALIDATION_ROLLED_BACK",
+  "first_output_sha256": "328508571eca06beed6b56db40dffa325a248c770955272299979114e23165ac",
+  "hidden_reasoning_persisted": false,
+  "journal": [
+    {
+      "action_id": "action-first",
+      "status": "RECONCILED"
+    },
+    {
+      "action_id": "action-second",
+      "status": "ROLLBACK_SUCCEEDED"
+    }
+  ],
+  "knowledge_paths_visible": false,
+  "lease_records": [
+    "COMPLETED",
+    "COMPLETED"
+  ],
+  "live_model_pilot": "LIVE_MODEL_PILOT_NOT_RUN",
+  "network_allowed": false,
+  "pilot": "B",
+  "remote_mutation": false,
+  "source_state_sha256": "37499243ec3d802f9dac202b70ace97f567d5525980904057ae257580571f68f",
+  "state_sha256": "505ab768c5e95b43bf5399b8adefa6f47d737b5c7580e38ff046c3e913d09ee3"
+}

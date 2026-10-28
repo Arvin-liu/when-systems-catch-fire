@@ -1,0 +1,63 @@
+{
+  "schema_version": "ignition-137-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260824-137",
+  "step": "00",
+  "control_repository": "Arvin-liu/1111",
+  "control_ref": "origin/relay/current",
+  "control_tip": "e5529e107e2fbed9bddf7b9e0b621fae477727cb",
+  "task_material_commit": "fc0ad277",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "formal_branch": "codex/ignition-137-validated-live-completion-reconciliation-r1-20260824",
+  "baseline": {
+    "origin_main_sha": "a1766ec1b96f59eaca45c013cda574cd5224b78f",
+    "expected_task136_formal_tip": "a1766ec1b96f59eaca45c013cda574cd5224b78f",
+    "formal_head_sha": "a1766ec1b96f59eaca45c013cda574cd5224b78f",
+    "main_drift_from_task136_machine_receipt": {
+      "task136_embedded_baseline_sha": "3acf15ea4c1b1c27eb6e8b9cadbc4f0526bdfddb",
+      "observed_current_main_sha": "a1766ec1b96f59eaca45c013cda574cd5224b78f",
+      "handling": "OBSERVED_PUBLICATION_DRIFT_NO_REWIND"
+    },
+    "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
+    "map_current": "0.13.0",
+    "current_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "task136_evidence": {
+    "formal_result": "ignition/agent-results/IGNITION-20260823-136-result.md",
+    "machine_receipt": "ignition/agent-results/IGNITION-20260823-136-machine-receipt.json",
+    "preflight_receipt": "ignition/data/operations/iterations/136/step11-live-preflight.json",
+    "execution_receipt": "ignition/data/operations/iterations/136/step13-live-execution-receipt.json",
+    "live_status": {
+      "hermes": "TIMED_OUT_EFFECT_UNKNOWN",
+      "hermes_reconciliation": "OPEN",
+      "hermes_workspace_unchanged": true,
+      "openclaw": "SKIPPED_UNSAFE_WORKSPACE_OR_CHANNEL_BOUNDARY",
+      "codex": "ELIGIBLE_FOR_LIVE_READONLY",
+      "validated_completion_observed": false,
+      "open_obligation": "LIVE_EXTERNAL_INVOCATION"
+    },
+    "regression_baseline": {
+      "candidate_tested_head": "62f0d6d7ba3b8a7c012d212b1c80f67652770bf0",
+      "fresh_clone_tested_head": "f16422d405c8f7740c1a81473bf2d528065f22c9",
+      "natural": true,
+      "tests": 1131,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS"
+    }
+  },
+  "closure_targets": [
+    "HERMES_TIMEOUT_RECONCILIATION",
+    "FIRST_INDEPENDENTLY_VALIDATED_LIVE_READONLY_COMPLETION"
+  ],
+  "invariants": [
+    "LIVE_RECONCILIATION_BEFORE_RETRY_INVARIANT",
+    "LIVE_COMPLETION_EXACT_BINDING_INVARIANT",
+    "LIVE_EXECUTOR_REENTRANCY_GUARD_INVARIANT",
+    "LIVE_TIMEOUT_EVIDENCE_INVARIANT",
+    "NO_NEW_BILLING_AUTHORITY_INVARIANT",
+    "LIVE_RESULT_VALIDATION_BEFORE_COMPLETION_INVARIANT"
+  ],
+  "claim_ceiling": "Baseline and prior repository-local evidence only; no validated live completion or external truth is inferred."
+}

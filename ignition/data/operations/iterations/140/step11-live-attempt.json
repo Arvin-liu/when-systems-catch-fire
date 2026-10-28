@@ -1,0 +1,59 @@
+{
+  "bounded_attempt_policy": {
+    "blind_retry": "FORBIDDEN",
+    "max_attempts_per_executor_family": 1,
+    "max_distinct_executor_families": 2,
+    "stop_on_first_live_readonly_validated_completion": true
+  },
+  "claim_ceiling": "Task140 canonical repository-local live-process observation and durable attempt record only; independent validation and Current projection are separate gates, and no external truth or completion upgrade is inferred.",
+  "result": {
+    "adapter_id": "codex-live-r3",
+    "attempt_id": "attempt-140-live-01",
+    "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "capture_completeness": "COMPLETE",
+    "capture_parent_separate_from_runtime": true,
+    "capture_ref": "capture://capture-attempt-140-live-01",
+    "capture_retention": "RAW_SPOOL_CLEANED_AFTER_DURABLE_RECEIPT",
+    "claim_ceiling": "One canonical Task140 host observation was durably appended; independent Current projection and validator interpretation remain Step12 evidence, with no external truth or completion upgrade inferred.",
+    "current_before_attempt": {
+      "projection_digest": "9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2",
+      "total_attempts": 5,
+      "unreconciled_count": 0,
+      "validated_completion_count": 0
+    },
+    "dispatch_id": "dispatch-140-live-01",
+    "evidence_completeness": "COMPLETE",
+    "executor_id": "external.codex",
+    "executor_version": "codex-cli 0.144.4",
+    "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "lease_digest": "b621398f7f6b453e7d4120bd82cdb75390d9adbb5f69955c635739d4942a04b8",
+    "lease_id": "lease-ignition-140-codex-live-01",
+    "ledger": {
+      "previous_record_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+      "record_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+      "sequence": 5
+    },
+    "live_dispatch_calls": 1,
+    "live_inference_started": true,
+    "observation_error_class": null,
+    "process": {
+      "elapsed_seconds": 0.05828,
+      "output_truncated": false,
+      "process_group_status": "CONFIRMED_GONE",
+      "return_code": 1,
+      "timed_out": false
+    },
+    "public_probe_calls": 2,
+    "receipt_digest": "fa7c1b35d10d39532fd2ea3d1e367ea4e4e9fb468d59a9ce95750b7d7aef8387",
+    "state": "MALFORMED_RESULT",
+    "status": "ATTEMPT_RECORDED",
+    "structured_result": null,
+    "success": false,
+    "task_id": "IGNITION-20260826-140",
+    "validator_status": "UNKNOWN"
+  },
+  "schema_version": "ignition-140-step11-live-attempt-r1",
+  "status": "ATTEMPT_RECORDED",
+  "step": "11",
+  "task_id": "IGNITION-20260826-140"
+}

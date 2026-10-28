@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step17-limited-propagation-r0.schema.json",
+  "title": "Task149 Step17 limited propagation and front-door NonImpactProof",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "status",
+    "observed_at",
+    "formal_main_baseline",
+    "formal_previous_commit",
+    "branch_state",
+    "changed_subjects",
+    "surface_decisions",
+    "front_door_nonimpact_proof",
+    "state_changelog_delta",
+    "protected_surface_fingerprints",
+    "changed_evidence_paths",
+    "supporting_registry_delta",
+    "task_state_boundary",
+    "safety_boundary",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step17-limited-propagation-r0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "step": {"const": "17"},
+    "status": {"const": "LIMITED_PROPAGATION_PASS"},
+    "observed_at": {"type": "string", "minLength": 1},
+    "formal_main_baseline": {"$ref": "#/$defs/sha"},
+    "formal_previous_commit": {"$ref": "#/$defs/sha"},
+    "branch_state": {"const": "DRAFT_ONLY_NOT_MAIN"},
+    "changed_subjects": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "surface_decisions": {"type": "array", "minItems": 21, "maxItems": 21, "items": {"$ref": "#/$defs/surface_decision"}},
+    "front_door_nonimpact_proof": {"$ref": "#/$defs/front_door_proof"},
+    "state_changelog_delta": {"$ref": "#/$defs/state_changelog_delta"},
+    "protected_surface_fingerprints": {"type": "array", "minItems": 20, "items": {"$ref": "#/$defs/fingerprint"}},
+    "changed_evidence_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "supporting_registry_delta": {"$ref": "#/$defs/supporting_registry_delta"},
+    "task_state_boundary": {"$ref": "#/$defs/task_state_boundary"},
+    "safety_boundary": {"$ref": "#/$defs/safety_boundary"},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "surface_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "locator", "decision", "reason", "evidence_refs"],
+      "properties": {
+        "surface_id": {"type": "string", "minLength": 1},
+        "locator": {"type": "string", "minLength": 1},
+        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+        "reason": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "front_door_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_path", "surface_id", "decision", "scope", "revalidation_boundary", "forbidden_claims"],
+      "properties": {
+        "registry_path": {"const": "ignition/data/operations/front-door-nonimpact-proofs.json"},
+        "surface_id": {"const": "human.readme"},
+        "decision": {"const": "NO_CHANGE_WITH_REASON"},
+        "scope": {"const": "DRAFT_BRANCH_ONLY"},
+        "revalidation_boundary": {"type": "string", "minLength": 1},
+        "forbidden_claims": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "state_changelog_delta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "ordinal", "label", "profile", "section_sha256", "whole_file_before_sha256", "whole_file_after_sha256"],
+      "properties": {
+        "path": {"const": "ignition/STATE-CHANGELOG.md"},
+        "ordinal": {"const": 55},
+        "label": {"const": "IGNITION-20260831-149 — External Capability Provider Adapter Spikes R0 Draft propagation delta"},
+        "profile": {"const": "historical-current-r0"},
+        "section_sha256": {"$ref": "#/$defs/sha256"},
+        "whole_file_before_sha256": {"$ref": "#/$defs/sha256"},
+        "whole_file_after_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "fingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "before_sha256", "after_sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "before_sha256": {"$ref": "#/$defs/sha256"},
+        "after_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "supporting_registry_delta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "before_sha256", "after_sha256"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/front-door-nonimpact-proofs.json"},
+        "before_sha256": {"$ref": "#/$defs/sha256"},
+        "after_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "task_state_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_formal_task_id", "current_operating_method_status", "current_identity_changed", "provider_spike_is_current_capability", "provider_admission_status", "formal_task_state", "unique_next_action"],
+      "properties": {
+        "current_formal_task_id": {"const": "IGNITION-20260829-148"},
+        "current_operating_method_status": {"const": "CURRENT"},
+        "current_identity_changed": {"const": false},
+        "provider_spike_is_current_capability": {"const": false},
+        "provider_admission_status": {"const": "PROVIDER_ADMISSION_CANDIDATE"},
+        "formal_task_state": {"const": "DRAFT_ONLY_NOT_MAIN"},
+        "unique_next_action": {"const": "AWAIT_OWNER_PROVIDER_ADAPTER_REVIEW"}
+      }
+    },
+    "safety_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authenticated_channel_admission", "live_external_invocation", "system_mutation", "secret_or_cookie_access", "login", "provider_vendoring", "automatic_task150"],
+      "properties": {
+        "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"},
+        "live_external_invocation": {"const": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"},
+        "system_mutation": {"const": false},
+        "secret_or_cookie_access": {"const": false},
+        "login": {"const": false},
+        "provider_vendoring": {"const": false},
+        "automatic_task150": {"const": false}
+      }
+    }
+  }
+}

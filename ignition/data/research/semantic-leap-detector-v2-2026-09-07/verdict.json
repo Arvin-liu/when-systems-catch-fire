@@ -1,0 +1,9 @@
+{
+  "claim_ceiling": "research replay only; no canonical or lifecycle change",
+  "primary_verdict": "SEMANTIC_LEAP_DETECTOR_V2_VALIDATED_FOR_RESEARCH_REPLAY",
+  "secondary_findings": [
+    "SEMANTIC_CONSERVATIVE_MIGRATION_TEST_SUPPORTED",
+    "GENERATOR_CHANGE_NOT_SUFFICIENT",
+    "BACKWARD_COMPRESSION_SUPPORTIVE_ONLY"
+  ]
+}

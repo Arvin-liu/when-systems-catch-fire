@@ -1,0 +1,24 @@
+{
+  "order": [
+    "adjudicate_core.py",
+    "migrate_legacy.py",
+    "build_function_asset_census.py",
+    "adjudicate_function_assets.py",
+    "adjudicate_nonfunction_claims.py",
+    "migrate_legacy.py"
+  ],
+  "fixed_point_evidence": {
+    "generator_check_exit_codes": {
+      "adjudicate_core.py": 0,
+      "migrate_legacy.py": 0,
+      "build_function_asset_census.py": 0,
+      "adjudicate_function_assets.py": 0,
+      "adjudicate_nonfunction_claims.py": 0
+    },
+    "closure": {
+      "function_asset": true,
+      "nonfunction": true
+    }
+  },
+  "note": "migrate_legacy MUST run last so project-state/registry-manifest/migration-summary reflect finalised registries."
+}

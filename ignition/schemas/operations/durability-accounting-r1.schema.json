@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-accounting-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "dimensions", "cost_fields", "reservation_rules", "fairness_rules", "namespace_boundary", "fixture_limits", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-accounting-r1"},
+    "dimensions": {"const": ["principal", "namespace", "workspace", "episode", "pack", "executor"]},
+    "cost_fields": {"const": ["action_count", "wall_clock_seconds", "output_bytes", "event_volume", "memory_bytes", "retry_cost", "failover_cost", "reconciliation_cost"]},
+    "reservation_rules": {
+      "type": "object",
+      "required": ["reserve_before_attempt", "retry_and_failover", "cancel_release", "occurred_cost", "replay"],
+      "properties": {
+        "reserve_before_attempt": {"const": "REQUIRED"},
+        "retry_and_failover": {"const": "EACH_ATTEMPT_MUST_RESERVE_AND_ACCOUNT_ITS_COST_CLASS"},
+        "cancel_release": {"const": "RELEASE_UNUSED_ONLY"},
+        "occurred_cost": {"const": "NEVER_ROLLED_BACK"},
+        "replay": {"const": "EVENT_CHAIN_REBUILDS_SPENT_RESERVED_AND_RESERVATIONS"}
+      },
+      "additionalProperties": false
+    },
+    "fairness_rules": {
+      "type": "object",
+      "required": ["max_consecutive_per_principal", "aging", "priority_ceiling", "starvation"],
+      "properties": {
+        "max_consecutive_per_principal": {"type": "integer", "minimum": 1},
+        "aging": {"const": "BOUNDED_AGING_SCORE"},
+        "priority_ceiling": {"const": 1000},
+        "starvation": {"const": "OTHER_PRINCIPAL_FORCED_AFTER_CONSECUTIVE_BOUND"}
+      },
+      "additionalProperties": false
+    },
+    "namespace_boundary": {
+      "type": "object",
+      "required": ["workspace_namespace_binding", "mismatch"],
+      "properties": {"workspace_namespace_binding": {"const": "EXACT_POLICY_MAPPING"}, "mismatch": {"const": "FAIL_CLOSED"}},
+      "additionalProperties": false
+    },
+    "fixture_limits": {"type": "array", "minItems": 6, "items": {"type": "object", "required": ["key", "limit"], "properties": {"key": {"type": "string"}, "limit": {"type": "object", "required": ["action_count", "wall_clock_seconds", "output_bytes", "event_volume", "memory_bytes", "retry_cost", "failover_cost", "reconciliation_cost"], "properties": {"action_count": {"type": "integer", "minimum": 0}, "wall_clock_seconds": {"type": "number", "minimum": 0}, "output_bytes": {"type": "integer", "minimum": 0}, "event_volume": {"type": "integer", "minimum": 0}, "memory_bytes": {"type": "integer", "minimum": 0}, "retry_cost": {"type": "integer", "minimum": 0}, "failover_cost": {"type": "integer", "minimum": 0}, "reconciliation_cost": {"type": "integer", "minimum": 0}}, "additionalProperties": false}}, "additionalProperties": false}},
+    "claim_ceiling": {"const": "REPLAYABLE_LOCAL_ACCOUNTING_AND_BOUNDED_FAIRNESS_ONLY_NO_PRODUCTION_QUOTA_OR_OWNER_AUTHORITY"}
+  },
+  "additionalProperties": false
+}

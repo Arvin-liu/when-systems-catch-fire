@@ -1,0 +1,64 @@
+{
+  "command_provenance": {
+    "commit": "73cde2ab84d829bb0990f63d957e2152b1a330e4",
+    "content_sha256": "f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1",
+    "git_blob_sha": "521d468829425a210cc763df72456f2c28753d02",
+    "path": "agent-commands/IGNITION-20260907-163.md",
+    "repository": "Arvin-liu/1111",
+    "url": "https://github.com/Arvin-liu/1111/blob/73cde2ab84d829bb0990f63d957e2152b1a330e4/agent-commands/IGNITION-20260907-163.md"
+  },
+  "formal_base": {
+    "ref": "work/IGNITION-20260907-162",
+    "sha_at_freeze": "5c66ac502ca331d72c1362000ff5231503dde7ea"
+  },
+  "formal_preflight": {
+    "base_ref": "work/IGNITION-20260907-161",
+    "current_pointer_residual": "STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL",
+    "draft": true,
+    "head_sha": "5c66ac502ca331d72c1362000ff5231503dde7ea",
+    "instructions_current": "absent_and_preserved",
+    "pr_number": 212,
+    "relay_current": "absent_and_preserved",
+    "state": "open"
+  },
+  "freeze_order": [
+    "command_freeze",
+    "historical_event_universe_and_temporal_cutoffs",
+    "operator_specification",
+    "mutation_triggers_complexity_penalty_stop_rules",
+    "stage_a_split",
+    "stage_a_blind_run_1",
+    "stage_a_blind_run_2",
+    "stage_a_unblind_evaluation",
+    "stage_b_only_if_stage_a_passes"
+  ],
+  "input_policy": {
+    "candidate_names_included": false,
+    "historical_operator_does_not_read": [
+      "historical-answer-key.jsonl",
+      "historical-unblind-evaluation.jsonl",
+      "Task159 final scores",
+      "Task162 per-work induction results",
+      "Task162 external V2 scores"
+    ],
+    "historical_operator_reads": [
+      "historical-temporal-packets.jsonl",
+      "operator-spec-freeze.json",
+      "mutation-gate-freeze.json",
+      "complexity-penalty-freeze.json"
+    ],
+    "labels_included": false,
+    "post_event_material_included": false
+  },
+  "mode": "MUTABLE_BASIS_LEARNING / EARLY_IGNITION_REPLAY / LONGFORM_CAUSAL_CHAIN / REPRESENTATION_MUTATION / COMPETING_BASIS / RESEARCH_ONLY",
+  "no_canonical_semantic_change": true,
+  "no_external_write": true,
+  "no_production_mutation": true,
+  "research_only": true,
+  "stage_b_policy": {
+    "discovery_corpus": "Task162 source manifest may be reused only after Stage A pass; Task162 induction results are excluded",
+    "fresh_holdout": "must be selected only after operator and gates are frozen",
+    "status_at_freeze": "NOT_AUTHORIZED_UNTIL_STAGE_A_PASS"
+  },
+  "task_id": "IGNITION-20260907-163"
+}

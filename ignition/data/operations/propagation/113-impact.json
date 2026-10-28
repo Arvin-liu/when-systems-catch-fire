@@ -1,0 +1,52 @@
+{
+  "schema_version": "113.zhiyuan-writing-publication-propagation-impact.v1",
+  "task_number": 113,
+  "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+  "source_commit": "1b3545a252c542129424a240d3c7eb3b5af808af",
+  "predecessor": {
+    "task_number": 112,
+    "terminal_state": "TERMINAL_SUCCESS",
+    "terminal_tag": "ignition/iterations/112/terminal-r1",
+    "terminal_tag_target": "a7b16d0781ed8f804d0015a5485d14c9afca4ecf"
+  },
+  "impact_dimensions": {
+    "MACHINE_RECORD_IMPACT": "IMPACT_REQUIRED",
+    "REFERENCE_SURFACE_IMPACT": "IMPACT_REQUIRED",
+    "EDITORIAL_ARTICLE_IMPACT": "IMPACT_REQUIRED",
+    "SYSTEM_MAP_IMPACT": "NO_IMPACT_JUSTIFIED",
+    "CURRENT_PUBLIC_WORDING_IMPACT": "IMPACT_REQUIRED",
+    "OPEN_QUESTION_IMPACT": "NO_IMPACT_JUSTIFIED",
+    "PROJECT_STATE_IMPACT": "NO_IMPACT_JUSTIFIED",
+    "EVIDENCE_PROGRAM_IMPACT": "NO_IMPACT_JUSTIFIED",
+    "MATURITY_OR_DISPOSITION_IMPACT": "NO_IMPACT_JUSTIFIED"
+  },
+  "changed_surfaces": [
+    "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+    "docs/publication/cases/song-huizong-taoism-1117-source.md",
+    "reports/publication/song-huizong-taoism-point-fire-analysis.md",
+    "data/operations/iterations/113/publication/",
+    "PUBLICATIONS/README.md",
+    "docs/publication/zhiyuan-writing-showcase.md",
+    "data/publication/zhiyuan-writing-showcase.json",
+    "RESULTS/RESEARCH-AND-ARTICLES.md",
+    "KNOWLEDGE/",
+    "data/governance/human-results/",
+    "data/governance/knowledge-experience/",
+    "data/governance/self-correction/",
+    "data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "data/foundation/function-assets/",
+    "data/foundation/nonfunction-claims/",
+    "docs/foundation/nonfunction-claim-adjudication-index.md",
+    "data/operations/lifecycle-events.jsonl"
+  ],
+  "unchanged_by_justification": [
+    "system map: the writing work adds a human-readable publication and does not alter repository topology",
+    "open questions: no open-question verdict is closed by this bounded historical interpretation",
+    "project state: the current-state narrative is not rewritten by this single publication",
+    "Evidence Program: no new external experiment or result-bearing query is executed",
+    "maturity and disposition: source claims remain explicitly scoped and do not promote repository claims"
+  ],
+  "claim_ceiling": "A source-bounded historical interpretation and writing-method publication; no private-belief proof, unique causality, hindsight moral verdict, or external scientific claim is inferred.",
+  "lifecycle_state": "READY_FOR_CONTENT_MERGE",
+  "note": "This is a propagation accounting record, not terminal evidence. The local source note is not copied into the repository; the public work, source provenance, analysis and review packet are the governed outputs."
+}

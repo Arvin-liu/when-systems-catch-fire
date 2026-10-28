@@ -1,0 +1,63 @@
+{
+  "schema_version": "federation-routing-policy-r1",
+  "policy_id": "external-agent-federation-routing-r1",
+  "allow_degraded": false,
+  "profiles": [
+    {
+      "executor_id": "external.codex",
+      "enabled": true,
+      "task_types": ["read_only", "repo_coding"],
+      "privacy_classes": ["LOCAL_FIXTURE", "LOCAL_INTERNAL", "PUBLIC"],
+      "workspace_localities": ["LOCAL"],
+      "permission_ceiling": ["repo.read", "repo.write", "repo.test", "structured_progress"],
+      "allowed_effects": ["read", "write", "test"],
+      "approval_required_effects": ["write", "test"],
+      "default_preference_rank": 20,
+      "task_type_preferences": {"read_only": 20, "repo_coding": 0},
+      "requires_external_approval": false,
+      "sandbox_semantics": "CODEX_SANDBOX_INTERSECTION"
+    },
+    {
+      "executor_id": "external.hermes",
+      "enabled": true,
+      "task_types": ["read_only", "summary"],
+      "privacy_classes": ["LOCAL_FIXTURE", "LOCAL_INTERNAL", "PUBLIC"],
+      "workspace_localities": ["LOCAL"],
+      "permission_ceiling": ["repo.read"],
+      "allowed_effects": ["read"],
+      "approval_required_effects": [],
+      "default_preference_rank": 10,
+      "task_type_preferences": {"read_only": 0, "summary": 0},
+      "requires_external_approval": false,
+      "sandbox_semantics": "HERMES_SAFE_MODE_READ_ONLY_BRIDGE"
+    },
+    {
+      "executor_id": "external.openclaw",
+      "enabled": true,
+      "task_types": ["read_only", "long_task"],
+      "privacy_classes": ["LOCAL_FIXTURE", "LOCAL_INTERNAL", "PUBLIC"],
+      "workspace_localities": ["LOCAL"],
+      "permission_ceiling": ["long_task"],
+      "allowed_effects": ["read", "long_task"],
+      "approval_required_effects": ["long_task"],
+      "default_preference_rank": 30,
+      "task_type_preferences": {"read_only": 30, "long_task": 0},
+      "requires_external_approval": false,
+      "sandbox_semantics": "OPENCLAW_EXTERNAL_POLICY_INTERSECTION"
+    },
+    {
+      "executor_id": "reference.executor",
+      "enabled": true,
+      "task_types": ["read_only", "repo_coding"],
+      "privacy_classes": ["LOCAL_FIXTURE", "LOCAL_INTERNAL"],
+      "workspace_localities": ["LOCAL"],
+      "permission_ceiling": ["repo.read", "repo.write", "repo.test", "terminal.run"],
+      "allowed_effects": ["read", "write", "test"],
+      "approval_required_effects": ["write", "test"],
+      "default_preference_rank": 90,
+      "task_type_preferences": {"read_only": 90, "repo_coding": 90},
+      "requires_external_approval": false,
+      "sandbox_semantics": "REFERENCE_EXECUTOR_BOUNDED_LOCAL_POLICY"
+    }
+  ]
+}

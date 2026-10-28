@@ -1,0 +1,101 @@
+{
+  "task_number": 113,
+  "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+  "control_commit": "d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef",
+  "success_token": "IGNITION_LATEST_POINTFIRE_RAN_ON_1117_SONG_HUIZONG_TAOISM_NOTE_ZHIYUAN_WRITING_METHOD_WORK_AUDITED_REWRITTEN_PUBLISHED_AND_113_TERMINALIZED",
+  "terminal_state": "TERMINAL_SUCCESS",
+  "terminal_tag": "ignition/iterations/113/terminal-r1",
+  "terminal_tag_object_sha": "284d8c3a63968065e1c7070d0537118e880f1f51",
+  "terminal_tag_target": "828e1ac5c6c069d34cadc78219b8754e881b893e",
+  "terminal_tag_message_sha256": "46dede42ab393a19aa4b777333154da7576cd3c24797d526d1e2a6d6c616e6cb",
+  "core_receipt_sha256": "83f0de925f68ea5cec3c97e077baff3ac9c8a8667790f23b3a6d9aec4ea1c502",
+  "predecessor": {
+    "task_number": 112,
+    "terminal_state": "TERMINAL_SUCCESS",
+    "terminal_tag": "ignition/iterations/112/terminal-r1",
+    "terminal_tag_object_sha": "8edeadd20a2e07825127ae677bd9fb917b5169b1",
+    "terminal_tag_target": "a7b16d0781ed8f804d0015a5485d14c9afca4ecf",
+    "core_receipt_sha256": "b877093e827853f4f69e468f035a5a15b0c296d8ca4092ef9ffb19b837a078d4",
+    "independently_verified_before_start": true
+  },
+  "content_phase": {
+    "pr_number": 183,
+    "exact_reviewed_head": "9379aee3df73477b6f3ac6b15eed08e027124c58",
+    "ordinary_merge_commit": "687591cd28aa3bad8e9a9fcb71efc2862eaca91e",
+    "merged_at": "2026-08-02T11:03:41Z",
+    "ordinary_merge": true,
+    "force_push": false
+  },
+  "terminalization_phase": {
+    "pr_number": 184,
+    "exact_reviewed_head": "a3436a5d4dd30e89d398ca3c5d5aee1dad47a32d",
+    "ordinary_merge_commit": "828e1ac5c6c069d34cadc78219b8754e881b893e",
+    "merged_at": "2026-08-02T11:32:02Z",
+    "ordinary_merge": true,
+    "force_push": false
+  },
+  "publication": {
+    "status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS",
+    "review_state": "COMPLETE",
+    "shelf": "PUBLICATIONS/README.md",
+    "root_to_shelf_clicks": 1,
+    "root_to_work_clicks": 2,
+    "work": {
+      "path": "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+      "sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+      "characters": 6875,
+      "han_characters_main_body": 5306
+    },
+    "source": {
+      "mode": "FULL_LOCAL_NOTE_HASH_MATCH",
+      "bytes": 41601,
+      "sha256": "506904a3923bf5aac9f65c8311c512d2ba70b4c1073802b02647ce294fab433f",
+      "repository_policy": "LOCAL_ONLY_SOURCE_NOT_REPUBLISHED"
+    },
+    "review_hashes": {
+      "r0_sha256": "09e7b476303f74d9851a8ed227d5432f7bcc15b307c3e0607125723f61d35489",
+      "final_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+      "roles": 3,
+      "substantive_rewrite": true
+    },
+    "audit_packet": "data/operations/iterations/113/publication/"
+  },
+  "resolver_verification": {
+    "resolved_113": "TERMINAL_SUCCESS",
+    "errors": {},
+    "terminal_tasks": [104, 105, 106, 107, 108, 110, 111, 112, 113],
+    "current_accepted_iteration": 113,
+    "tag_validator": "TAG_OK",
+    "tag_is_annotated": true,
+    "tag_target_matches_terminalization_merge": true,
+    "core_hash_matches_tag_and_file": true,
+    "publication_validator": "PASS",
+    "lifecycle_events": "PASS"
+  },
+  "fresh_clone_verification": {
+    "full_clone_required": true,
+    "full_clone_verified": true,
+    "shallow": false,
+    "working_tree_clean": true,
+    "resolver": "TERMINAL_SUCCESS",
+    "current_accepted_iteration": 113,
+    "errors": {},
+    "publication_shelf_reachable": true,
+    "primary_works_reachable": true,
+    "task_114_absent": true,
+    "verification_scope": "final evidence branch and post-merge main; exact clone receipts are recorded in the 1111 receipt"
+  },
+  "remote_verification": {
+    "content_pr_183_merged_ordinary": true,
+    "terminalization_pr_184_merged_ordinary": true,
+    "terminal_tag_pushed_without_force": true,
+    "no_task_114_created_or_executed": true
+  },
+  "safety_boundary": {
+    "task_112_modified": false,
+    "relay_current_modified": false,
+    "task_113_control_file_modified": false,
+    "prohibited_history_rewrite_used": false,
+    "raw_source_committed": false
+  }
+}

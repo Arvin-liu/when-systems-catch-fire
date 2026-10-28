@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-durability-continuity-pilot-r1",
+  "task_id": "IGNITION-20260820-127",
+  "step": "16",
+  "recorded_at": "2026-08-20T00:00:00Z",
+  "mode": "OFFLINE_DISPOSABLE_REPOSITORY_WORKSPACES_ONLY",
+  "required_gates": [
+    "two_namespaces_started",
+    "snapshot_plus_tail_replay_equivalent",
+    "cross_namespace_default_deny",
+    "explicit_delegation_scoped",
+    "old_run_pinned_v1",
+    "revoked_executor_not_routed",
+    "cancel_before_dispatch",
+    "safe_task_continued",
+    "external_side_effect_not_reexecuted",
+    "pack_v2_only_new_run",
+    "memory_snapshot_restore",
+    "soft_governance_non_authority",
+    "dr_fresh_restore",
+    "canonical_component_match",
+    "crash_restart_replay"
+  ],
+  "expected": {
+    "status": "PASS",
+    "namespace_count": 2,
+    "workspace_count": 2,
+    "snapshot_captured_events": 3,
+    "minimum_tail_events": 1,
+    "recovery_phase_count": 11,
+    "dr_bundle_chunks": 12,
+    "unresolved_dispatch_ref": "dispatch-a",
+    "external_invocation": "NOT_RUN",
+    "external_reexecution": "FORBIDDEN",
+    "soft_status": "ADVISORY_ONLY",
+    "canonical_digest": "a8a9030761f52b9b098e4d62690c3fbae5217389a1588a847b881a8dd38e54d7"
+  },
+  "external_rule": "NO_REAL_EXTERNAL_SIDE_EFFECTS_OR_AUTOMATIC_REEXECUTION",
+  "claim_ceiling": "REPOSITORY_LOCAL_CONTINUITY_ONLY_NO_PRODUCTION_OWNER_OR_EPISTEMIC_ACCEPTANCE"
+}

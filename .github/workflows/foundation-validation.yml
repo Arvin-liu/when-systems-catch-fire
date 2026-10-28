@@ -1,109 +1,167 @@
 name: foundation-validation
 on:
   pull_request:
-    paths:
-      - '.github/workflows/foundation-validation.yml'
-      - 'requirements-foundation.txt'
-      - 'formal/lean/**'
-      - 'tools/foundation/**'
-      - 'tests/foundation/**'
-      - 'data/foundation/**'
-      - 'data/foundation-architecture/**'
-      - 'data/math-foundation/**'
-      - 'data/pending_claims.json'
-      - 'views/**'
-      - 'schemas/foundation/**'
-      - 'schemas/operations/**'
-      - 'schemas/architecture/**'
-      - 'reports/foundation-architecture/**'
-      - 'reports/operations/**'
-      - 'data/operations/**'
-      - 'data/architecture/**'
-      - 'tools/operations/**'
-      - 'tools/generate_interactive_system_map.py'
-      - 'tests/test_change_propagation.py'
-      - 'tools/validate_iteration_sync.py'
-      - 'tests/test_iteration_sync.py'
-      - 'tools/validate_human_front_door.py'
-      - 'tests/test_human_front_door.py'
-      - 'tests/test_pages_deploy_gate.py'
-      - '.github/workflows/pages.yml'
-      - 'docs/ai-assistant-usage-reference.md'
-      - 'ITERATION.md'
-      - 'README.md'
-      - 'docs/project-current-state.md'
-      - 'AI-HANDOFF.md'
-      - 'AGENTS.md'
-      - 'AI-START-HERE.md'
-      - 'llms.txt'
-      - 'SUMMARY.md'
-      - 'CHANGELOG.md'
   push:
     branches: [main]
-    paths:
-      - '.github/workflows/foundation-validation.yml'
-      - 'requirements-foundation.txt'
-      - 'formal/lean/**'
-      - 'tools/foundation/**'
-      - 'tests/foundation/**'
-      - 'data/foundation/**'
-      - 'data/foundation-architecture/**'
-      - 'data/math-foundation/**'
-      - 'data/pending_claims.json'
-      - 'views/**'
-      - 'schemas/foundation/**'
-      - 'schemas/operations/**'
-      - 'schemas/architecture/**'
-      - 'reports/foundation-architecture/**'
-      - 'reports/operations/**'
-      - 'data/operations/**'
-      - 'data/architecture/**'
-      - 'tools/operations/**'
-      - 'tools/generate_interactive_system_map.py'
-      - 'tests/test_change_propagation.py'
-      - 'tools/validate_iteration_sync.py'
-      - 'tests/test_iteration_sync.py'
-      - 'tools/validate_human_front_door.py'
-      - 'tests/test_human_front_door.py'
-      - 'tests/test_pages_deploy_gate.py'
-      - '.github/workflows/pages.yml'
-      - 'docs/ai-assistant-usage-reference.md'
-      - 'ITERATION.md'
-      - 'README.md'
-      - 'docs/project-current-state.md'
-      - 'AI-HANDOFF.md'
-      - 'AGENTS.md'
-      - 'AI-START-HERE.md'
-      - 'llms.txt'
-      - 'SUMMARY.md'
-      - 'CHANGELOG.md'
   workflow_dispatch:
+
+
 concurrency:
   group: foundation-validation-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 permissions:
   contents: read
+defaults:
+  run:
+    working-directory: ignition
 jobs:
-  validate:
+  route:
     runs-on: ubuntu-latest
+    outputs:
+      mode: ${{ steps.plan.outputs.mode }}
+      has_targets: ${{ steps.plan.outputs.has_targets }}
+      uses_lean: ${{ steps.plan.outputs.uses_lean }}
+      receipt_verified: ${{ steps.verify_receipt.outputs.verified || steps.full_fallback.outputs.verified }}
+    defaults:
+      run:
+        working-directory: ignition
+    env:
+      PYTHONPATH: ${{ github.workspace }}/ignition:${{ github.workspace }}/ignition/tests:${{ github.workspace }}/ignition/tools/foundation
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          # For pull_request events github.sha is the exact synthetic merge
+          # commit: test the base+candidate tree that GitHub would merge.
+          ref: ${{ github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python3 -m pip install -r requirements-foundation.txt
+      - name: Resolve exact component and consumer closure
+        id: plan
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          VALIDATION_SHA: ${{ github.sha }}
+          PLAN_FILE: ${{ runner.temp }}/component-validation-plan.json
+        run: |
+          if [ -z "$BASE_SHA" ] || ! printf '%s' "$BASE_SHA" | grep -Eq '^[0-9a-f]{40}$'; then
+            printf 'mode=FULL\n' >> "$GITHUB_OUTPUT"
+            printf 'has_targets=false\n' >> "$GITHUB_OUTPUT"
+            printf '%s\n' 'No exact event base SHA is available; run the complete Foundation regression.'
+          else
+            python3 tools/operations/route_component_validation.py \
+              --repo-root "$GITHUB_WORKSPACE" \
+              --base-sha "$BASE_SHA" \
+              --head-sha "$HEAD_SHA" \
+              --validation-sha "$VALIDATION_SHA" \
+              --output "$PLAN_FILE" \
+              --github-output "$GITHUB_OUTPUT"
+          fi
+      - name: Set up Lean for selected proof consumers
+        if: steps.plan.outputs.uses_lean == 'true'
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: ignition/formal/lean
+          use-mathlib-cache: false
+          use-github-cache: false
+      - name: Run selected component and consumer tests
+        if: steps.plan.outputs.has_targets == 'true'
+        env:
+          PLAN_FILE: ${{ runner.temp }}/component-validation-plan.json
+          RECEIPT_FILE: ${{ runner.temp }}/component-validation-receipt.json
+        run: |
+          python3 tools/operations/run_component_validation_targets.py \
+          --repo-root "$GITHUB_WORKSPACE" \
+          --plan "$PLAN_FILE" \
+          --receipt "$RECEIPT_FILE"
+      - name: Verify exact plan and selected-target receipt
+        id: verify_receipt
+        if: always() && steps.plan.outputs.has_targets == 'true'
+        env:
+          PLAN_FILE: ${{ runner.temp }}/component-validation-plan.json
+          RECEIPT_FILE: ${{ runner.temp }}/component-validation-receipt.json
+          VALIDATION_SHA: ${{ github.sha }}
+          VALIDATION_MODE: ${{ steps.plan.outputs.mode }}
+        run: |
+          python3 tools/operations/verify_component_validation_evidence.py \
+            --plan "$PLAN_FILE" \
+            --receipt "$RECEIPT_FILE" \
+            --expected-validation-sha "$VALIDATION_SHA" \
+            --expected-mode "$VALIDATION_MODE"
+          printf 'verified=true\n' >> "$GITHUB_OUTPUT"
+      - name: Record exact full-regression fallback when no target closure is available
+        id: full_fallback
+        if: always() && steps.plan.outputs.mode == 'FULL' && steps.plan.outputs.has_targets != 'true'
+        run: |
+          printf 'verified=true\n' >> "$GITHUB_OUTPUT"
+          printf '%s\n' 'No exact impact base was available; the combined gate requires the full Foundation regression.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve exact plan and selected-test receipt
+        id: preserve
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: component-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/component-validation-*.json
+          if-no-files-found: ignore
+
+  full_regression:
+    name: Full Foundation regression
+    if: always() && needs.route.outputs.mode == 'FULL'
+    needs: route
+    runs-on: ubuntu-latest
+    # Keep direct unittest module loads on the same explicit roots as the
+    # canonical full-regression runner.  Script execution adds its own
+    # directory to sys.path; importlib-based tests do not.
+    env:
+      PYTHONPATH: ${{ github.workspace }}/ignition:${{ github.workspace }}/ignition/tests:${{ github.workspace }}/ignition/tools/foundation
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-foundation.txt
+      - name: Bind full regression to the exact validation commit
+        env:
+          VALIDATION_SHA: ${{ github.sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$VALIDATION_SHA"
+          test -z "$(git status --porcelain --untracked-files=all)"
+          printf 'validation_sha=%s\n' "$VALIDATION_SHA" >> "$GITHUB_STEP_SUMMARY"
       - uses: leanprover/lean-action@v1
         with:
           auto-config: false
-          lake-package-directory: formal/lean
+          lake-package-directory: ignition/formal/lean
           use-mathlib-cache: false
           use-github-cache: false
       - run: cd formal/lean && lake env lean Foundation.lean
       - run: python3 tools/foundation/adjudicate_core.py --check
       - run: python3 tools/foundation/migrate_legacy.py --check
       - run: python3 tools/foundation/validate_foundation.py
+      - run: python3 tools/foundation/build_function_asset_census.py --check
+      - run: python3 tools/foundation/adjudicate_function_assets.py --check
+      - run: python3 tools/foundation/validate_claim_governance.py
+      - run: python3 tools/foundation/validate_function_asset_closure.py
+      - run: python3 tools/foundation/run_function_asset_math_checks.py --check
+      - run: python3 tools/foundation/adjudicate_nonfunction_claims.py --check
+      - run: python3 tools/foundation/validate_nonfunction_claim_closure.py
+      - name: Validate human result census and self-correction products
+        run: |
+          python3 tools/governance/build_human_results.py --check
+          python3 tools/governance/run_self_correction.py --check
+          python3 tools/governance/build_knowledge_experience.py --check
+          python3 tools/governance/validate_human_visibility.py
+          python3 tools/governance/validate_knowledge_experience.py
+          python3 tools/publication/validate_fire_seeds.py --check
+          python3 tools/governance/build_claim_browsers.py --check
+          python3 tools/generate_overall_architecture.py --check
+      - name: Regression — knowledge-experience clone-independence (task 102)
+        run: python3 tools/governance/check_knowledge_experience_determinism.py
       - run: python3 tools/foundation/verify_core_claims.py --check
       - run: python3 tools/foundation/verify_079.py --check
       - run: python3 tools/foundation/validate_080_adjudications.py
@@ -126,15 +184,184 @@ jobs:
             --residue data/operations/propagation/121Q32I-residue.json \
             --era-ref 0a13c246172c0338bf8dda5dc08db5a574a8b23f \
             --check
+          # The three method-1.4 products below were jointly regenerated and
+          # sealed at f59b9f35. Validate their inputs and map at that era so a
+          # later governed surface retirement does not rewrite closed evidence.
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json \
+            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-closure.json \
+            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md \
+            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-system-map-delta.json \
+            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-residue.json \
+            --era-ref f59b9f359ea16a346e07e9621049468417b66423 \
+            --head-ref f59b9f359ea16a346e07e9621049468417b66423 \
+            --check
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-request.json \
+            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-closure.json \
+            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md \
+            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-system-map-delta.json \
+            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-residue.json \
+            --era-ref f59b9f359ea16a346e07e9621049468417b66423 \
+            --head-ref f59b9f359ea16a346e07e9621049468417b66423 \
+            --check
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-request.json \
+            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-closure.json \
+            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md \
+            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-system-map-delta.json \
+            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-residue.json \
+            --era-ref f59b9f359ea16a346e07e9621049468417b66423 \
+            --head-ref f59b9f359ea16a346e07e9621049468417b66423 \
+            --check
       - name: Validate Q32I Phase E candidate
         run: python3 tools/operations/validate_phase_e_candidate.py --check
       - name: Validate registry-derived system map
         run: python3 tools/generate_interactive_system_map.py --check
+      - name: Validate homepage architecture projection provenance
+        run: python3 tools/validate_homepage_architecture_projection.py --check
+      - name: Validate stage snapshot registry and deterministic homepage projection
+        run: |
+          python3 tools/operations/generate_stage_snapshot_actor_contract.py --check
+          python3 tools/operations/validate_stage_snapshots.py --check
+      - name: Run instance-level stage snapshot responsibility actor cases
+        run: python3 tools/operations/run_stage_snapshot_responsibility_cases.py
       - run: python3 tools/validate_human_front_door.py
+      - name: Validate Language-Thought Logic Plane
+        run: |
+          python3 tools/language_thought/validate_language_thought.py
+          python3 -m unittest tests.test_language_thought_plane
+      - name: Validate epistemic governance referential kernel
+        run: |
+          python3 tools/validate_epistemic_governance_relationships.py data/governance/epistemic-governance-relationships.json --repo-root .
+          python3 -m unittest tests.test_epistemic_governance_relationships -v
+      - name: Validate AI-first project state delta log
+        run: |
+          python3 tools/validate_state_changelog.py
+          python3 -m unittest tests.test_state_changelog -v
       - run: python3 -m unittest tests.foundation.test_foundation
+      - run: python3 -m unittest tests.foundation.test_claim_governance
+      - run: python3 -m unittest tests.foundation.test_function_asset_closure
+      - run: python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
       - run: python3 -m unittest tests.test_change_propagation -v
-      - run: python3 -m unittest tests.test_pages_deploy_gate -v
+      - run: python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v
+      - run: python3 -m unittest tests.test_stage_snapshot_publication -v
+      - run: python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v
       - run: python3 -m unittest tests.test_phase_e_candidate -v
+      - run: python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v
       - run: python3 -m unittest tests.test_production_execution_authority -v
+      - name: "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)"
+        run: python3 -m unittest tests.foundation.test_generator_reconciliation_staleness -v
+      - name: "Task 106 — fail-closed propagation reconciliation"
+        run: |
+          python3 -m unittest tests.test_propagation_reconciliation -v
+          python3 tools/propagation/validate_reconciliation.py --check
+      - name: Confirm full regression source remained unchanged
+        env:
+          VALIDATION_SHA: ${{ github.sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$VALIDATION_SHA"
+          test -z "$(git status --porcelain --untracked-files=all)"
+
+  validate:
+    name: validate
+    if: always()
+    needs: [route, full_regression]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enforce the selected or full validation result
+        env:
+          ROUTE_RESULT: ${{ needs.route.result }}
+          VALIDATION_MODE: ${{ needs.route.outputs.mode }}
+          HAS_TARGETS: ${{ needs.route.outputs.has_targets }}
+          RECEIPT_VERIFIED: ${{ needs.route.outputs.receipt_verified }}
+          FULL_RESULT: ${{ needs.full_regression.result }}
+        run: |
+          if [ "$ROUTE_RESULT" != "success" ]; then
+            printf 'component impact or selected validation failed: %s\n' "$ROUTE_RESULT"
+            exit 1
+          fi
+          case "$VALIDATION_MODE" in
+            FULL)
+              if [ "$RECEIPT_VERIFIED" != "true" ]; then
+                printf 'full mode has no verified plan/receipt or explicit full-regression fallback\n'
+                exit 1
+              fi
+              if [ "$FULL_RESULT" != "success" ]; then
+                printf 'full Foundation regression did not pass: %s\n' "$FULL_RESULT"
+                exit 1
+              fi
+              ;;
+            TARGETED)
+              if [ "$HAS_TARGETS" != "true" ] || [ "$RECEIPT_VERIFIED" != "true" ]; then
+                printf 'targeted mode requires a nonempty exact plan and verified complete receipt\n'
+                exit 1
+              fi
+              printf '%s\n' 'Selected component and consumer validation passed.'
+              ;;
+            *)
+              printf 'unexpected or absent validation mode: %s\n' "$VALIDATION_MODE"
+              exit 1
+              ;;
+          esac
+
+  final_main_witness:
+    name: Final main SHA witness
+    if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.validate.result == 'success'
+    needs: [route, full_regression, validate]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install final-main witness dependencies
+        run: python3 -m pip install -r requirements-foundation.txt
+      - name: Download exact validation evidence
+        if: needs.route.outputs.has_targets == 'true' || github.event.before != '0000000000000000000000000000000000000000'
+        uses: actions/download-artifact@v4
+        with:
+          name: component-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/main-validation-evidence
+      - name: Bind evidence to the final protected-main SHA
+        env:
+          EVENT_BEFORE: ${{ github.event.before }}
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_REF: ${{ github.ref }}
+          EXPECTED_SHA: ${{ github.sha }}
+          VALIDATION_MODE: ${{ needs.route.outputs.mode }}
+          ROUTE_RESULT: ${{ needs.route.result }}
+          VALIDATE_RESULT: ${{ needs.validate.result }}
+          FULL_RESULT: ${{ needs.full_regression.result }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          EVIDENCE_DIR: ${{ runner.temp }}/main-validation-evidence
+          OUTPUT_DIR: ${{ runner.temp }}/final-main-witness
+        run: |
+          python3 tools/operations/write_final_main_witness.py \
+            --repo-root "$GITHUB_WORKSPACE" \
+            --evidence-dir "$EVIDENCE_DIR" \
+            --output-dir "$OUTPUT_DIR" \
+            --expected-sha "$EXPECTED_SHA" \
+            --event-before "$EVENT_BEFORE" \
+            --event-name "$EVENT_NAME" \
+            --event-ref "$EVENT_REF" \
+            --mode "$VALIDATION_MODE" \
+            --route-result "$ROUTE_RESULT" \
+            --validate-result "$VALIDATE_RESULT" \
+            --full-result "$FULL_RESULT" \
+            --run-id "$RUN_ID" \
+            --run-attempt "$RUN_ATTEMPT"
+          sha256sum "$OUTPUT_DIR/final-main-witness.json" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Preserve exact final-main witness and validation evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-main-witness-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/final-main-witness/
+          if-no-files-found: error

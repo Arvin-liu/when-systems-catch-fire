@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/execution-lease-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lease_id", "run_id", "action_id", "idempotency_key", "packet_digest", "executor_class_id", "executor_instance_id", "issued_at", "expires_at", "status"],
+  "properties": {
+    "lease_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "action_id": {"type": "string", "minLength": 1},
+    "idempotency_key": {"type": "string", "minLength": 1},
+    "packet_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "executor_class_id": {"type": "string", "minLength": 1},
+    "executor_instance_id": {"type": "string", "minLength": 1},
+    "issued_at": {"type": "number"},
+    "expires_at": {"type": "number"},
+    "status": {"enum": ["ACTIVE", "COMPLETED", "RELEASED", "EXPIRED"]}
+  }
+}
