@@ -3264,7 +3264,8 @@
         "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
         "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
         "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
-        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/"
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
+        "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/"
       ],
       "authority": "declarative",
       "layer_or_overlay": "overlay",
@@ -3301,5 +3302,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.17"
+  "registry_version": "2.9.18"
 }
