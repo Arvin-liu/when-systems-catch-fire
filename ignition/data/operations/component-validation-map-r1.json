@@ -104,7 +104,7 @@
       "target_id": "g_human_front_door_consumers",
       "domain": "G",
       "modules": [
-        "tests.test_human_front_door",
+        "ignition.tests.test_human_front_door",
         "tests.test_overall_architecture",
         "tests.test_generated_output_authority"
       ],
