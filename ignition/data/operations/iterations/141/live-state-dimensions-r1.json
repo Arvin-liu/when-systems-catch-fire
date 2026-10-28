@@ -1,0 +1,60 @@
+{
+  "schema_version": "ignition-141-live-state-dimensions-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "01",
+  "status": "PASS",
+  "contract_id": "LIVE_STATE_DIMENSIONALITY_INVARIANT",
+  "dimensions": {
+    "live_dispatch_observation_status": {
+      "source_authority": "typed observation outcome live_dispatch_calls and live_dispatch_started",
+      "derivation": "Positive dispatch count plus explicit start is OBSERVED; zero plus explicit false is NOT_OBSERVED; otherwise UNKNOWN",
+      "allowed_values": ["OBSERVED", "NOT_OBSERVED", "UNKNOWN"],
+      "unknown_semantics": "The public record does not establish whether the live dispatch boundary was crossed",
+      "historical_compatibility": "Legacy return_code fields never establish dispatch observation"
+    },
+    "live_process_observation_status": {
+      "source_authority": "typed observation outcome live_process_started and live_process_return_code",
+      "derivation": "Explicit process start is OBSERVED; explicit false is NOT_OBSERVED; missing lifecycle evidence is UNKNOWN",
+      "allowed_values": ["OBSERVED", "NOT_OBSERVED", "UNKNOWN"],
+      "unknown_semantics": "Process lifecycle evidence was not recoverably captured",
+      "historical_compatibility": "Raw historical process fields remain provenance until typed scope is bound"
+    },
+    "inference_observation_status": {
+      "source_authority": "Independent public machine-verifiable inference marker",
+      "derivation": "Only an accepted marker yields OBSERVED; no marker after process observation is NOT_OBSERVED; pre-process is NOT_APPLICABLE_PRE_PROCESS",
+      "allowed_values": ["OBSERVED", "NOT_OBSERVED", "UNKNOWN", "NOT_APPLICABLE_PRE_PROCESS"],
+      "unknown_semantics": "Inference cannot be classified from the available public observation; no private inference claim is made",
+      "historical_compatibility": "Task140 live_inference_started is historical provenance, never canonical inference evidence"
+    },
+    "validated_completion_status": {
+      "source_authority": "Pointfire independent validator exact-binding result",
+      "derivation": "VALIDATED only after all task, executor, lease, workspace, capture, result and validator bindings pass",
+      "allowed_values": ["VALIDATED", "NOT_VALIDATED", "UNKNOWN"],
+      "unknown_semantics": "Validation was not run or exact binding cannot be established",
+      "historical_compatibility": "Exit code, result presence or Agent self-report is insufficient"
+    },
+    "reconciliation_blocker_status": {
+      "source_authority": "Canonical reconciliation event ledger and typed attempt status",
+      "derivation": "OPEN for unresolved attempts; NONE for known terminal/non-required states; UNKNOWN for missing or unrecognized status",
+      "allowed_values": ["NONE", "OPEN", "UNKNOWN"],
+      "unknown_semantics": "A new live attempt is not authorized until reconciliation is repaired or explicitly closed",
+      "historical_compatibility": "Repository evidence closure does not erase UNKNOWN external effect"
+    },
+    "next_eligible_action": {
+      "source_authority": "Pointfire policy projection over all other dimensions",
+      "derivation": "Action is selected only after reconciliation, completion and admission gates remain separate",
+      "allowed_values": ["RECONCILE_UNRECOVERED_ATTEMPTS", "RUN_DYNAMIC_EXECUTOR_ADMISSION", "REPAIR_EXECUTOR_CONTRACT", "STOP_LIVE_INVOCATION", "NO_ACTION", "UNKNOWN"],
+      "unknown_semantics": "No safe next action can be authorized from current evidence",
+      "historical_compatibility": "current_live_ceiling is a deprecated compatibility projection"
+    }
+  },
+  "task140_sequence5_expected_dimensions": {
+    "live_dispatch_observation_status": "OBSERVED",
+    "live_process_observation_status": "OBSERVED",
+    "inference_observation_status": "NOT_OBSERVED",
+    "validated_completion_status": "NOT_VALIDATED",
+    "reconciliation_blocker_status": "NONE",
+    "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION"
+  },
+  "claim_ceiling": "Machine-readable repository-local state dimensions and derivation contract only; no inference, validated completion, external truth, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}

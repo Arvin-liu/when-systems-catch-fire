@@ -1,0 +1,48 @@
+{
+  "schema_version": "ignition-137-step05-synthetic-readonly-fixture-r1",
+  "task_id": "IGNITION-20260824-137",
+  "step": "05",
+  "fixture": {
+    "implementation": "ignition/agent_federation/live_pilot.py::DisposableLiveCompletionFixture",
+    "files": ["README.txt", "nonce.txt", "table.json"],
+    "workspace_mode": "DISPOSABLE_SYNTHETIC_READ_ONLY",
+    "nonce": "PER_ATTEMPT_SYNTHETIC_24_LOWERCASE_HEX",
+    "table_rule": {
+      "eligible": true,
+      "minimum_score": 50,
+      "sort": ["score", "id"]
+    },
+    "expected_fixture_rows": [
+      {"id": "row-c", "eligible": true, "score": 70},
+      {"id": "row-a", "eligible": true, "score": 50},
+      {"id": "row-b", "eligible": false, "score": 99},
+      {"id": "row-d", "eligible": true, "score": 50},
+      {"id": "row-e", "eligible": true, "score": 20}
+    ],
+    "expected_answer_shape": {
+      "exact_keys": ["nonce", "selected_ids", "count", "workspace_digest_claim"],
+      "selected_ids": ["row-a", "row-d", "row-c"],
+      "count": 3,
+      "workspace_digest_claim": "path-independent tree digest before dispatch"
+    }
+  },
+  "validator": {
+    "implementation": "ignition/agent_federation/live_pilot.py::LiveCompletionValidator",
+    "recomputes_nonce_from": "nonce.txt",
+    "recomputes_selection_from": "table.json",
+    "recomputes_digest_from": "before_dispatch workspace tree",
+    "model_self_report_is_authoritative": false,
+    "extra_output_keys": "FAIL",
+    "workspace_mutation": "FAIL"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_pilot ignition.tests.test_live_execution ignition.tests.test_live_child_guard -v",
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS",
+    "live_inference": "NOT_RUN"
+  },
+  "claim_ceiling": "Deterministic synthetic fixture and independent validator contract only; no external executor result or completion is inferred."
+}

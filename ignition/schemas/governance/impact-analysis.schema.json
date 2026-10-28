@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/governance/impact-analysis.schema.json",
+  "title": "Knowledge asset impact analysis",
+  "type": "object",
+  "required": ["impact_id", "delta_id", "path", "direct_claim_ids", "transitively_affected_claim_ids", "direct_claim_count", "transitive_claim_count", "propagation_basis", "unresolved_if_empty", "claim_ceiling"],
+  "properties": {
+    "impact_id": {"type": "string"},
+    "delta_id": {"type": "string"},
+    "path": {"type": "string"},
+    "direct_claim_ids": {"type": "array", "items": {"type": "string"}},
+    "transitively_affected_claim_ids": {"type": "array", "items": {"type": "string"}},
+    "direct_claim_count": {"type": "integer", "minimum": 0},
+    "transitive_claim_count": {"type": "integer", "minimum": 0},
+    "propagation_basis": {"type": "string"},
+    "unresolved_if_empty": {"type": "boolean"},
+    "claim_ceiling": {"type": "string"}
+  },
+  "additionalProperties": false
+}

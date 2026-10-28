@@ -1,0 +1,124 @@
+{
+  "schema_version": "ignition-138-step06-amendment-01-dynamic-admission-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "06-AMENDMENT-01",
+  "status": "PASS_CODEX_DYNAMICALLY_ADMITTED",
+  "census_ref": "ignition/data/operations/iterations/138/local-executor-census-r1.json",
+  "census_selection_before_reattestation": "NO_SAFE_CANDIDATE",
+  "reattestation_scope": {
+    "mode": "READ_ONLY_PUBLIC_SURFACE_AND_AUTH_PRESENCE",
+    "inference_started": false,
+    "secret_content_read": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "install_or_upgrade_performed": false,
+    "gemini_checked": true,
+    "github_cli_checked": true,
+    "other_agent_families_checked": ["Codex CLI", "Hermes Agent", "OpenClaw", "GitHub Copilot CLI"],
+    "reasoner_runtimes_not_promoted": ["Ollama", "LM Studio", "MLX DSpark", "llama.cpp bundled by Ollama"]
+  },
+  "candidate_reattestations": [
+    {
+      "executor_id": "external.codex",
+      "family": "Codex CLI",
+      "status": "ADMITTED",
+      "version": "codex-cli 0.144.4",
+      "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+      "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+      "public_login_status": "Logged in using ChatGPT",
+      "capabilities": ["repo.read", "structured_progress"],
+      "safe_surface": [
+        "codex exec --json",
+        "--output-schema",
+        "--ephemeral",
+        "--sandbox read-only",
+        "--ignore-user-config",
+        "--ignore-rules",
+        "explicit disposable --cd",
+        "attempt-specific runtime scratch",
+        "one-level child guard",
+        "bounded timeout and process-group cleanup"
+      ],
+      "auth_source": {
+        "mode": "READ_ONLY_REFERENCE",
+        "ref": "auth://codex-login-status",
+        "path_class": "~/.codex",
+        "metadata_digest": "e7d332f3268f18708119a93ce385c418f3ec4026e11277b4cafdb4e983eb5e98",
+        "content_read": false,
+        "copied": false,
+        "config_mutation_allowed": false
+      },
+      "eligibility_blockers": []
+    },
+    {
+      "executor_id": "external.gemini",
+      "family": "Gemini CLI",
+      "status": "BLOCKED",
+      "version": "0.53.1",
+      "eligibility_blockers": [
+        "PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE",
+        "AUTH_SOURCE_HOME_NOT_SEPARABLE_BY_CURRENT_PUBLIC_INTERFACE",
+        "PERSISTENT_GEMINI_HOME_WRITE_BOUNDARY_NOT_PROVEN",
+        "NO_NEW_BILLING_AUTHORITY_NOT_REATTESTED"
+      ]
+    },
+    {
+      "executor_id": "external.hermes",
+      "family": "Hermes Agent",
+      "status": "BLOCKED",
+      "eligibility_blockers": ["HERMES_RECONCILIATION_OPEN", "TEXT_ONLY_FINAL_SURFACE", "AUTH_AND_PROVIDER_BILLING_NOT_REATTESTED"]
+    },
+    {
+      "executor_id": "external.openclaw",
+      "family": "OpenClaw",
+      "status": "BLOCKED",
+      "eligibility_blockers": ["DISPOSABLE_WORKSPACE_BINDING_NOT_PUBLICLY_PROVEN", "CHANNEL_GATEWAY_BOUNDARY_NOT_PUBLICLY_PROVEN", "EXPLICIT_READONLY_CEILING_NOT_PUBLICLY_PROVEN"]
+    },
+    {
+      "executor_id": "external.github-copilot-cli",
+      "family": "GitHub Copilot CLI",
+      "status": "BLOCKED_NOT_INSTALLED",
+      "eligibility_blockers": ["NOT_INSTALLED", "DOWNLOAD_WOULD_MUTATE_LOCAL_STATE", "AUTH_AND_BILLING_BOUNDARY_NOT_REATTESTED"]
+    }
+  ],
+  "selection": {
+    "selected_executor_id": "external.codex",
+    "selected_family": "Codex CLI",
+    "selection_rule": "DYNAMIC_EXECUTOR_ADMISSION_INVARIANT",
+    "why_executor": "Codex is the only currently re-attested AGENTIC_EXECUTOR with public auth status, strict read-only/ephemeral/structured surfaces, a provider-neutral attempt scratch contract, bounded cleanup, and an independent OS validator. Gemini ranks next by surface quality but remains blocked by its unsplittable persistent home/auth boundary; Hermes, OpenClaw and Copilot retain explicit blockers. This is an engineering admission decision, not a model or brand ranking.",
+    "prior_codex_attempt_exception": {
+      "prior_attempt": "attempt-138-live-01",
+      "classification": "KNOWN_NO_EFFECT_PRE_INFERENCE_STARTUP_FAILURE",
+      "process_group_confirmed_gone": true,
+      "workspace_unchanged": true,
+      "structured_result_present": false,
+      "timeout_or_effect_unknown": false,
+      "specific_repair": "AUTH_SOURCE_READONLY_REFERENCE_BOUND_SEPARATELY_FROM_RUNTIME_SCRATCH",
+      "blind_retry": false,
+      "same_family_retry_authorized": true
+    }
+  },
+  "live_budget": {
+    "task138_max_real_external_invocations": 3,
+    "prior_real_invocations": 1,
+    "next_invocation_ordinal": 2,
+    "executor_family_default_limit": 1,
+    "remaining_invocation_budget": 2,
+    "stop_after_first_validated_success": true
+  },
+  "lease": {
+    "lease_id": "lease-ignition-138-dynamic-codex-r4",
+    "executor_id": "external.codex",
+    "executor_version": "codex-cli 0.144.4",
+    "observed_at": "2026-08-24T19:20:21Z",
+    "expires_at": "2026-08-24T19:35:21Z",
+    "ttl_seconds": 900,
+    "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "lease_digest": "25a203b4a578f8e57860e1f4a0d08b43cf1e91b0265b6b93b69f9fc061dd29bf",
+    "live_eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+    "source": "codex-public-cli-probe-r3-runtime-scratch",
+    "inference_started": false
+  },
+  "claim_ceiling": "Repository-local dynamic executor admission and capability lease evidence only; no live result, validated completion, production readiness, model ranking, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

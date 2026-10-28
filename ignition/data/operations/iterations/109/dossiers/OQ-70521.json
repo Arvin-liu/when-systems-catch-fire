@@ -1,0 +1,43 @@
+{
+  "canonical_id": "OQ-70521",
+  "title": "OQ-103-1：回填/修正 `crossref_year` ✅已解决",
+  "class": "SCIENTIFIC_EVIDENCE",
+  "is_meta": false,
+  "current_status": "OPEN_QUESTION",
+  "provenance": {
+    "source_file": "RESULTS/OPEN-QUESTIONS.md",
+    "canonical_id": "OQ-70521"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "articles",
+    "research-program"
+  ],
+  "evidence_needs": [
+    "已复跑 Crossref 试点并校验 year_match = 117/117（全部一致）。"
+  ],
+  "stop_conditions": [
+    "—"
+  ],
+  "claim_ceiling": "Open research question; not a promised roadmap item.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 54.14,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.6,
+    "dependency_centrality": 0.5,
+    "falsifiability": 0.5,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.6,
+    "effort_evidence_cost": 0.4,
+    "reversibility_risk": 0.5,
+    "maturity_gap": 0.6,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.92
+  },
+  "missing_fields": [
+    "dependency_centrality"
+  ],
+  "blocked_reason": null
+}

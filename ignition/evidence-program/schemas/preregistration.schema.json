@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evidence-program/schemas/preregistration.schema.json",
+  "title": "Preregistration",
+  "description": "Immutable preregistration committed BEFORE outcome-bearing analysis (Task 103 §5).",
+  "type": "object",
+  "required": [
+    "preregistration_id", "pilot_id", "claim", "null_or_comparison", "scope", "exclusions",
+    "dataset", "source_acquisition", "baseline", "metrics", "uncertainty", "success_conditions",
+    "partial_support_conditions", "null_conditions", "contradiction_conditions", "invalid_test_conditions",
+    "stopping_rule", "e_axis_mapping", "committed_at_utc", "committed_commit"
+  ],
+  "properties": {
+    "preregistration_id": {"type": "string"},
+    "pilot_id": {"type": "string"},
+    "claim": {"type": "string"},
+    "null_or_comparison": {"type": "string"},
+    "scope": {"type": "string"},
+    "exclusions": {"type": "string"},
+    "dataset": {
+      "type": "object",
+      "required": ["source_path", "record_count", "doi_field", "identifier_format"],
+      "properties": {
+        "source_path": {"type": "string"},
+        "record_count": {"type": "integer"},
+        "doi_field": {"type": "string"},
+        "identifier_format": {"type": "string", "description": "e.g. https://doi.org/<doi>"}
+      }
+    },
+    "source_acquisition": {
+      "type": "object",
+      "required": ["oracle", "endpoint_template", "user_agent", "licence", "retrieval_window_utc", "redistribution_allowed"],
+      "properties": {
+        "oracle": {"type": "string", "description": "Independent external authority, e.g. Crossref REST API."},
+        "endpoint_template": {"type": "string"},
+        "user_agent": {"type": "string"},
+        "licence": {"type": "string", "description": "Rights/licence of the oracle metadata."},
+        "retrieval_window_utc": {"type": "string"},
+        "redistribution_allowed": {"type": "boolean"}
+      }
+    },
+    "baseline": {"type": "string", "description": "Registry's own crossref_verified assertion."},
+    "metrics": {
+      "type": "object",
+      "required": ["primary_metric", "secondary_metrics"],
+      "properties": {
+        "primary_metric": {"type": "string"},
+        "secondary_metrics": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "uncertainty": {"type": "string"},
+    "success_conditions": {"type": "object", "description": "Thresholds. Must be byte-identical to what result-adjudication uses (post-hoc check)."},
+    "partial_support_conditions": {"type": "object"},
+    "null_conditions": {"type": "object"},
+    "contradiction_conditions": {"type": "object"},
+    "invalid_test_conditions": {"type": "object"},
+    "stopping_rule": {"type": "string"},
+    "e_axis_mapping": {
+      "type": "object",
+      "required": ["on_supported", "on_partial", "on_null", "on_contradicted", "on_invalid"],
+      "properties": {
+        "on_supported": {"type": "string"},
+        "on_partial": {"type": "string"},
+        "on_null": {"type": "string"},
+        "on_contradicted": {"type": "string"},
+        "on_invalid": {"type": "string"}
+      }
+    },
+    "committed_at_utc": {"type": "string"},
+    "committed_commit": {"type": "string", "description": "git SHA of this preregistration commit."}
+  }
+}

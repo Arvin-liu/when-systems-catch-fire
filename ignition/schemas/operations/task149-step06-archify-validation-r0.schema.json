@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step06-archify-validation-r0.schema.json",
+  "title": "Task149 Step06 Archify validation and delivery receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "provider_id", "provider_class", "formal_branch", "formal_commit", "formal_baseline_sha", "source_inputs", "upstream", "typed_ir", "commands", "artifact", "boundaries", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step06-archify-validation-r0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "step": {"const": "06"},
+    "status": {"const": "VALIDATED_WITHIN_RECORDED_ENVIRONMENT"},
+    "provider_id": {"const": "archify"},
+    "provider_class": {"const": "DERIVED_VISUALIZATION_PROVIDER"},
+    "formal_branch": {"const": "codex/ignition-149-external-capability-provider-adapter-spikes-r0-20260831"},
+    "formal_commit": {"$ref": "#/$defs/sha"},
+    "formal_baseline_sha": {"const": "14c2595d796494286caf31378173fd9dd027edcf"},
+    "source_inputs": {
+      "type": "array", "const": [
+        {"path": "ignition/data/architecture/overall-architecture.json", "role": "canonical_architecture_source", "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13", "status": "CURRENT_CANONICAL_SOURCE"},
+        {"path": "ignition/data/architecture/interactive-system-map.json", "role": "current_system_map_context", "sha256": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313", "status": "CURRENT_CANONICAL_SOURCE"}
+      ]
+    },
+    "upstream": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "ref", "revision", "checkout_root", "checkout_clean", "non_shallow", "fsck_full", "node_version", "license", "attribution_recorded", "source_copied_or_vendored", "global_install"],
+      "properties": {
+        "repository": {"const": "tt-a1i/archify"},
+        "ref": {"const": "refs/heads/main"},
+        "revision": {"const": "2bfb47132c057195d8dddb3e25ae966dd7c7a72e"},
+        "checkout_root": {"$ref": "#/$defs/nonblank"},
+        "checkout_clean": {"const": true},
+        "non_shallow": {"const": true},
+        "fsck_full": {"const": "PASS"},
+        "node_version": {"const": "v22.23.0"},
+        "license": {"const": "MIT"},
+        "attribution_recorded": {"const": true},
+        "source_copied_or_vendored": {"const": false},
+        "global_install": {"const": false}
+      }
+    },
+    "typed_ir": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "bytes", "component_count", "connection_count", "boundary_count"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/149/archify-typed-ir-r0.json"},
+        "sha256": {"const": "fe2cb5f2c886b9e75cb5f9612f98416c7837afc3ce12d3433882ff2646a6e52f"},
+        "bytes": {"const": 18908},
+        "component_count": {"const": 24},
+        "connection_count": {"const": 24},
+        "boundary_count": {"const": 8}
+      }
+    },
+    "commands": {
+      "type": "object", "additionalProperties": false,
+      "required": ["validate", "deliver", "visual_check"],
+      "properties": {
+        "validate": {
+          "type": "object", "additionalProperties": false,
+          "required": ["command", "exit_code", "result_sha256", "status", "schema_validation", "showcase_validation", "checks_passed", "check_count", "composition_profile", "composition_status", "errors", "warnings", "metrics"],
+          "properties": {
+            "command": {"$ref": "#/$defs/nonblank"}, "exit_code": {"const": 0}, "result_sha256": {"const": "7e1b5d2942fe5ca9cad131e0f39a8370d56757f4c64523a3c895c81d30557aab"}, "status": {"const": "PASS"}, "schema_validation": {"const": "PASS_INCLUDED_IN_VALIDATE"}, "showcase_validation": {"const": "PASS"}, "checks_passed": {"const": 9}, "check_count": {"const": 9}, "composition_profile": {"const": "showcase"}, "composition_status": {"const": "pass"}, "errors": {"const": 0}, "warnings": {"const": 0},
+            "metrics": {
+              "type": "object", "additionalProperties": false,
+              "required": ["proper_crossings", "ambiguous_corridors", "container_border_runs", "label_route_clearance_issues", "min_label_route_clearance", "desktop_readability_issues", "max_bends", "routes_over_suggested_bends", "max_stretch", "routes_over_suggested_stretch", "min_segment_px", "min_interior_segment_px", "short_segment_count", "short_endpoint_segment_count", "short_interior_segment_count", "micro_segment_count"],
+              "properties": {
+                "proper_crossings": {"const": 0}, "ambiguous_corridors": {"const": 0}, "container_border_runs": {"const": 0}, "label_route_clearance_issues": {"const": 0}, "min_label_route_clearance": {"const": 6.4}, "desktop_readability_issues": {"const": 0}, "max_bends": {"const": 3}, "routes_over_suggested_bends": {"const": 5}, "max_stretch": {"const": 1.821}, "routes_over_suggested_stretch": {"const": 1}, "min_segment_px": {"const": 10}, "min_interior_segment_px": {"const": 40}, "short_segment_count": {"const": 9}, "short_endpoint_segment_count": {"const": 9}, "short_interior_segment_count": {"const": 0}, "micro_segment_count": {"const": 0}
+              }
+            }
+          }
+        },
+        "deliver": {
+          "type": "object", "additionalProperties": false,
+          "required": ["command", "exit_code", "result_sha256", "status", "specification_sha256", "artifact_sha256", "artifact_bytes", "checks_passed", "check_count", "composition_profile", "composition_status", "errors", "warnings", "repository_evidence_verified", "repository_evidence_reference_count", "repository_evidence_revision"],
+          "properties": {
+            "command": {"$ref": "#/$defs/nonblank"}, "exit_code": {"const": 0}, "result_sha256": {"const": "b44cba55530c2f5996dc9b0e17a591510fe28427a900dcdddc18660cf3f8ac4e"}, "status": {"const": "PASS"}, "specification_sha256": {"const": "fe2cb5f2c886b9e75cb5f9612f98416c7837afc3ce12d3433882ff2646a6e52f"}, "artifact_sha256": {"const": "978008823b3941622a8ba21e751913f37d8c87310e28b46c5bca6f17db913017"}, "artifact_bytes": {"const": 753375}, "checks_passed": {"const": 9}, "check_count": {"const": 9}, "composition_profile": {"const": "showcase"}, "composition_status": {"const": "pass"}, "errors": {"const": 0}, "warnings": {"const": 0}, "repository_evidence_verified": {"const": true}, "repository_evidence_reference_count": {"const": 19}, "repository_evidence_revision": {"const": "14c2595d796494286caf31378173fd9dd027edcf"}
+          }
+        },
+        "visual_check": {
+          "type": "object", "additionalProperties": false,
+          "required": ["command", "exit_code", "result_sha256", "status", "diagnostics_count", "containment_status", "readability_status", "viewer_chrome_status", "captures_status", "browser_status", "upstream_visual_review_field", "local_screenshot_inspection", "light_containment_viewports", "dark_capture_viewports", "screenshots"],
+          "properties": {
+            "command": {"$ref": "#/$defs/nonblank"}, "exit_code": {"const": 0}, "result_sha256": {"const": "1d69f37fdd6b52f3da1d38cd63bcfdb422650833890826e842ee0dd3044d3a4d"}, "status": {"const": "PASS"}, "diagnostics_count": {"const": 0}, "containment_status": {"const": "pass"}, "readability_status": {"const": "pass"}, "viewer_chrome_status": {"const": "pass"}, "captures_status": {"const": "pass"}, "browser_status": {"const": "AVAILABLE"}, "upstream_visual_review_field": {"const": "pending"}, "local_screenshot_inspection": {"const": "PERFORMED"},
+            "light_containment_viewports": {"$ref": "#/$defs/viewport_observations"},
+            "dark_capture_viewports": {"$ref": "#/$defs/viewport_observations"},
+            "screenshots": {
+              "type": "array", "minItems": 4, "maxItems": 4,
+              "items": {"type": "object", "additionalProperties": false, "required": ["file", "sha256"], "properties": {"file": {"$ref": "#/$defs/nonblank"}, "sha256": {"$ref": "#/$defs/sha256"}}}
+            }
+          }
+        }
+      }
+    },
+    "artifact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "bytes", "status", "reason", "source_copied_or_vendored"],
+      "properties": {
+        "path": {"$ref": "#/$defs/nonblank"}, "sha256": {"const": "978008823b3941622a8ba21e751913f37d8c87310e28b46c5bca6f17db913017"}, "bytes": {"const": 753375}, "status": {"const": "NOT_COMMITTED"}, "reason": {"$ref": "#/$defs/nonblank"}, "source_copied_or_vendored": {"const": false}
+      }
+    },
+    "boundaries": {
+      "type": "object", "additionalProperties": false,
+      "required": ["flow", "provider_output_can_update_canonical_truth", "architecture_truth_claim", "current_integration", "production_readiness", "provider_permission_granted", "authenticated_channel_admission", "live_external_invocation"],
+      "properties": {
+        "flow": {"const": "IGNITION_CANONICAL_DATA -> ADAPTER -> ARCHIFY_TYPED_IR -> DERIVED_ARTIFACT"}, "provider_output_can_update_canonical_truth": {"const": false}, "architecture_truth_claim": {"const": "NOT_CLAIMED"}, "current_integration": {"const": "NOT_CURRENT_INTEGRATION"}, "production_readiness": {"const": "NOT_PRODUCTION_READY"}, "provider_permission_granted": {"const": false}, "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"}, "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED"}
+      }
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "viewport_observations": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["width", "height", "theme", "ok", "scroll_height", "inner_height", "minimum_projected_node_text_px", "dock_stage_gap"],
+        "properties": {
+          "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1}, "theme": {"enum": ["light", "dark"]}, "ok": {"const": true}, "scroll_height": {"type": "integer", "minimum": 1}, "inner_height": {"type": "integer", "minimum": 1}, "minimum_projected_node_text_px": {"type": "number", "minimum": 6}, "dock_stage_gap": {"type": "number", "minimum": 10}
+        }
+      }
+    }
+  }
+}

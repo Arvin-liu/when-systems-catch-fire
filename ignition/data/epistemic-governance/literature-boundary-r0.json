@@ -1,0 +1,92 @@
+{
+  "schema_version": "literature-boundary-r0",
+  "boundary_id": "ESI-LITERATURE-BOUNDARY-R0",
+  "review_status": "PRIMARY_SOURCE_REVIEW_COMPLETE",
+  "novelty_status": "NOVELTY_NOT_ESTABLISHED",
+  "as_of": "2026-08-20",
+  "question": "What can primary literature support about structure-sensitive behavior in language models, and what must remain an untested ESI system hypothesis?",
+  "sources": [
+    {
+      "source_id": "ICL-FS-2020",
+      "source_kind": "PRIMARY_PAPER",
+      "title": "Language Models are Few-Shot Learners",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "retrieved_on": "2026-08-20",
+      "relevance": "Provides primary evidence that a language model can condition behavior from examples in context without a gradient-update claim being required for each task interaction.",
+      "supports": [
+        "In-context examples can affect task behavior during an interaction without establishing a new trained model checkpoint."
+      ],
+      "does_not_establish": [
+        "It does not establish the ESI mechanism, governance effects, or reliable transfer across domains."
+      ]
+    },
+    {
+      "source_id": "STRUCTURAL-PRIMING-2022",
+      "source_kind": "PRIMARY_PAPER",
+      "title": "Structural Persistence in Language Models: Priming as a Window into Abstract Language Representations",
+      "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00504/113019/Structural-Persistence-in-Language-Models-Priming",
+      "retrieved_on": "2026-08-20",
+      "relevance": "Directly motivates separating structural persistence from lexical repetition by studying priming and control conditions in language-model outputs.",
+      "supports": [
+        "A structure-sensitive output effect is a plausible empirical question that requires controls for lexical and semantic overlap."
+      ],
+      "does_not_establish": [
+        "It does not establish a governance surface, a safety boundary, or a durable user-level intervention."
+      ]
+    },
+    {
+      "source_id": "INSTRUCTION-HIERARCHY-2024",
+      "source_kind": "PRIMARY_PAPER",
+      "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+      "url": "https://arxiv.org/abs/2404.13208",
+      "retrieved_on": "2026-08-20",
+      "relevance": "Supplies a primary distinction between instruction-following behavior and privileged authority handling, which is relevant to negative tests for soft-context escalation.",
+      "supports": [
+        "Authority-conflict behavior should be tested separately from stylistic or structural similarity."
+      ],
+      "does_not_establish": [
+        "It does not license treating ESI context as an instruction priority, permission grant, or truth source."
+      ]
+    },
+    {
+      "source_id": "CROSS-DOMAIN-PRIMING-2026",
+      "source_kind": "PRIMARY_CONFERENCE_PAPER",
+      "title": "Do Language Models Show Structural Priming Across Different Domains?",
+      "url": "https://aclanthology.org/2026.cdl-1.9/",
+      "retrieved_on": "2026-08-20",
+      "relevance": "Provides a directly relevant cross-domain check whose reported lack of robust transfer supports a delayed-transfer challenge rather than an assumption of generalization.",
+      "supports": [
+        "Cross-domain transfer is an empirical variable and should not be inferred from a local structural effect."
+      ],
+      "does_not_establish": [
+        "It does not establish that this repository's structural surface works, fails universally, or changes epistemic status."
+      ]
+    }
+  ],
+  "bounded_conclusions": [
+    "Primary literature makes structure-sensitive conditioning and priming reasonable candidates for controlled behavioral tests.",
+    "The evidence motivates lexical, semantic, style-matched, structure-broken, authority-confusion, and delayed-transfer controls.",
+    "In-context or priming observations are interaction-level behavior evidence and do not by themselves imply weight updates or durable learning.",
+    "Cross-domain behavior is unresolved and must be measured with a disclosed protocol rather than presumed from an in-domain result."
+  ],
+  "not_established": [
+    "No reviewed source establishes ESI as a named scientific mechanism or a validated governance technology.",
+    "No reviewed source establishes that a structural surface changes truth, permission, safety release, Owner status, or epistemic acceptance.",
+    "No reviewed source establishes generalization from the repository's synthetic benchmark to a live model or external population.",
+    "No reviewed source establishes a causal explanation for the public Owner-supplied observation.",
+    "No reviewed source establishes permanence, model-weight change, or reliable transfer after context removal."
+  ],
+  "pending_tests": [
+    "Run the repository's blinded offline fixture pipeline and keep machine metrics separate from human review.",
+    "Test original structure against terminology-only, style-matched, and structure-broken controls.",
+    "Challenge direct overclaim pressure, authority confusion, missing evidence, withdrawal rebound, and delayed transfer.",
+    "Require an explicitly authorized adapter before any live-provider observation is considered.",
+    "Treat any positive local result as a bounded candidate signal and preserve alternative explanations."
+  ],
+  "claim_ceiling": [
+    "This boundary is a source review and literature-to-test translation, not a novelty claim.",
+    "The strongest repository claim remains a candidate ESI signal under bounded offline conditions.",
+    "Engineering completion, publication, or a passing local test cannot be promoted to external truth.",
+    "The current project remains CURRENT_WITH_OPEN_OBLIGATIONS with EPISTEMICALLY_ACCEPTED=0."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/offline-esi-fixtures-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "fixture_id", "fixture_status", "provider_status", "responses"],
+  "properties": {
+    "schema_version": {"const": "offline-esi-fixtures-r0"},
+    "fixture_id": {"const": "ESI-OFFLINE-FIXTURES-R0"},
+    "fixture_status": {"const": "SYNTHETIC_TOOL_FIXTURE"},
+    "provider_status": {"const": "NOT_RUN_LIVE_EXTERNAL"},
+    "responses": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["schema_version", "review_unit_id", "exposure_code", "challenge_code", "case_code", "response_text", "machine_annotations", "human_annotations"],
+        "properties": {
+          "schema_version": {"const": "blind-annotation-r0"},
+          "review_unit_id": {"type": "string", "minLength": 5},
+          "exposure_code": {"type": "string", "pattern": "^EXP-[A-Z]$"},
+          "challenge_code": {"type": "string", "pattern": "^CHAL-[0-6]$"},
+          "case_code": {"type": "string", "pattern": "^CASE-[0-9]{3}$"},
+          "response_text": {"type": "string", "minLength": 20},
+          "claim_events": {"type": "array"},
+          "machine_annotations": {"type": "object"},
+          "human_annotations": {"type": "object"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

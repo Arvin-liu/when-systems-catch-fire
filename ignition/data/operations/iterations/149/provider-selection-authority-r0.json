@@ -1,0 +1,163 @@
+{
+  "schema_version": "ignition-149-step04-provider-selection-authority-r0",
+  "policy_id": "IGNITION_PROVIDER_SELECTION_AUTHORITY_R0",
+  "task_id": "IGNITION-20260831-149",
+  "status": "SELECTION_AUTHORITY_ESTABLISHED",
+  "research_scope": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY",
+  "runtime_interface_status": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE",
+  "formal_baseline_sha": "c9c385dc713e866fbc8b61823a893a09e3f9f71b",
+  "contract_artifact": {
+    "path": "ignition/data/operations/iterations/149/provider-adapter-contract-r0.json",
+    "sha256": "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649"
+  },
+  "authority_statement": "Ignition selects provider. Provider does not select Ignition behavior.",
+  "owner": "IGNITION",
+  "provider_neutral": true,
+  "selection_inputs": [
+    {
+      "key": "explicit_user_provider",
+      "required_consideration": true,
+      "evaluation_role": "A_VALID_EXPLICIT_REQUEST_CONSTRAINS_THE_CANDIDATE_SET_BUT_CANNOT_GRANT_ADMISSION_OR_PERMISSION",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "current_capability_and_admission",
+      "required_consideration": true,
+      "evaluation_role": "REJECT_CANDIDATES_THAT_ARE_NOT_ADMITTED_FOR_THE_REQUESTED_SCOPE; SPIKE_ONLY_IS_NOT_CURRENT",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "current_environment_availability",
+      "required_consideration": true,
+      "evaluation_role": "REQUIRE_OBSERVED_RUNTIME_AND_CHANNEL_AVAILABILITY_FOR_THIS_OPERATION_AND_ATTEMPT",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "operation_fit",
+      "required_consideration": true,
+      "evaluation_role": "REQUIRE_ABSTRACT_OPERATION_AND_INPUT_OUTPUT_TYPES_TO_MATCH",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "least_privilege",
+      "required_consideration": true,
+      "evaluation_role": "PREFER_THE_CANDIDATE_REQUIRING_THE_NARROWEST_AUTHORITY_AND_PERMISSION_SCOPE",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "least_side_effect",
+      "required_consideration": true,
+      "evaluation_role": "PREFER_THE_CANDIDATE_WITH_THE_NARROWEST_SIDE_EFFECT_CLASS_FOR_THE_OPERATION",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "credential_requirement",
+      "required_consideration": true,
+      "evaluation_role": "PREFER_NO_CREDENTIALS_AND_REJECT_UNADMITTED_AUTHENTICATED_CHANNELS",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "provenance_and_validation",
+      "required_consideration": true,
+      "evaluation_role": "REQUIRE_CAPTURE_BINDING_PROVIDER_REVISION_INPUT_OUTPUT_VALIDATOR_AND_ENVIRONMENT",
+      "ordering": "CONTEXT_DEPENDENT"
+    },
+    {
+      "key": "fallback_allowed",
+      "required_consideration": true,
+      "evaluation_role": "USE_ONLY_IF_THE_REQUESTED_OPERATION_PERMITS_FALLBACK_AND_THE_ALTERNATIVE_PASSES_THE_SAME_GATES",
+      "ordering": "CONTEXT_DEPENDENT"
+    }
+  ],
+  "precedence_constraints": [
+    "Explicit user provider preference cannot override operation fit, admission, permission, authentication or provenance gates.",
+    "A provider health result cannot create a Current capability or a permission.",
+    "A provider cannot widen, rewrite or select the Ignition operation being requested.",
+    "Provider-local routing, install, cookie/browser/session and fallback rules are evidence about that provider only and cannot become Ignition policy.",
+    "If no candidate passes the operation/environment gates, return UNAVAILABLE_NO_SAFE_PROVIDER or an explicitly allowed fallback; do not force a provider."
+  ],
+  "selection_procedure": {
+    "total_order_hardcoded_by_task": false,
+    "steps": [
+      "Normalize the requested abstract operation, input types, output types, side-effect ceiling, network/auth ceiling and provenance requirement.",
+      "Build the candidate set from provider records and any separately observed native/bounded candidates; provider IDs are not exhaustive.",
+      "Apply hard gates for contract validity, operation fit, environment availability, permission/authentication ceiling, side-effect ceiling and required provenance/validator receipt.",
+      "Apply an explicit user provider constraint if present; an invalid or unavailable explicit request fails closed rather than bypassing a gate.",
+      "Rank surviving candidates using the operation's declared policy over the nine selection inputs; there is no universal provider-name or provider-local ordering.",
+      "Select only a candidate whose result can be captured and validated; otherwise return no safe provider or an allowed fallback with a reason."
+    ],
+    "selection_result_states": [
+      "SELECTED_FOR_RECORDED_SPIKE",
+      "CONDITIONAL_CANDIDATE",
+      "REJECTED_OPERATION_MISMATCH",
+      "REJECTED_UNAVAILABLE",
+      "REJECTED_AUTHENTICATION_NOT_ADMITTED",
+      "REJECTED_PROVENANCE_OR_VALIDATION",
+      "REJECTED_PROVIDER_LOCAL_POLICY",
+      "UNAVAILABLE_NO_SAFE_PROVIDER"
+    ]
+  },
+  "provider_local_policy_test": {
+    "fixture": "Agent Reach skill-level instruction that the skill must be used for listed platform access",
+    "observed_scope": "AGENT_REACH_LOCAL_USAGE_CONVENTION",
+    "ignition_interpretation": "NOT_A_GLOBAL_SELECTION_RULE",
+    "global_inheritance": false,
+    "allowed_alternatives": ["NATIVE_HOST_TOOL", "ANOTHER_BOUNDED_PROVIDER", "AGENT_REACH", "UNAVAILABLE"],
+    "decision": "REJECTED_PROVIDER_LOCAL_POLICY"
+  },
+  "candidate_decisions": [
+    {
+      "provider_id": "archify",
+      "operation": "render_derived_visualization",
+      "selection_result": "CONDITIONAL_CANDIDATE",
+      "reason": "The Contract R0 record and pinned health observation fit a derived-artifact spike, subject to Step05 input/IR/receipt validation.",
+      "current_capability": false,
+      "permission_granted": false,
+      "authenticated_channel_admitted": false
+    },
+    {
+      "provider_id": "agent-reach",
+      "operation": "read_public_source",
+      "selection_result": "CONDITIONAL_CANDIDATE",
+      "reason": "Only a public read-only channel with a separately captured result may proceed; pinned-source health remains dependency-blocked and the installed executable observation is not source admission.",
+      "current_capability": false,
+      "permission_granted": false,
+      "authenticated_channel_admitted": false
+    },
+    {
+      "provider_id": "agent-reach",
+      "operation": "read_authenticated_source",
+      "selection_result": "REJECTED_AUTHENTICATION_NOT_ADMITTED",
+      "reason": "Task149 does not grant authenticated-channel admission, regardless of provider-local capability or local credentials.",
+      "current_capability": false,
+      "permission_granted": false,
+      "authenticated_channel_admitted": false
+    }
+  ],
+  "output_contract": {
+    "required_fields": [
+      "requested_operation",
+      "input_and_output_types",
+      "candidate_provider_id",
+      "selection_inputs_and_operation_policy",
+      "admission_and_permission_state",
+      "network_and_authentication_state",
+      "provenance_and_validator_binding",
+      "selection_result",
+      "fallback_or_unavailable_reason"
+    ],
+    "provider_output_is_not_external_truth": true,
+    "provider_output_is_not_ignition_architecture_truth": true,
+    "selection_receipt_is_not_a_current_promotion": true
+  },
+  "current_impact": {
+    "new_operation_registry_entry": false,
+    "pack_permission_change": false,
+    "architecture_identity_change": false,
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED",
+    "authenticated_channel_admission": "NOT_GRANTED",
+    "production_readiness": "NOT_PRODUCTION_READY",
+    "integration_status": "NOT_CURRENT_INTEGRATION"
+  },
+  "claim_ceiling": "Experimental provider-admission research policy only: Ignition-owned provider-selection authority and bounded candidate-selection rules. This policy is not a Current runtime provider interface and does not prove provider quality, Current integration, production readiness, authenticated-channel admission, external truth, Owner acceptance or live external invocation."
+}

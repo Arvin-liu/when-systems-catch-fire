@@ -1,0 +1,960 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "点火整体架构：从来源到可读结果",
+    "locale": "zh-CN",
+    "subtitle": "Derived visualization from Ignition canonical architecture and current interactive map; not architecture truth.",
+    "output": "task149-archify-delta-derived",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire",
+      "revision": "14c2595d796494286caf31378173fd9dd027edcf"
+    },
+    "viewBox": [
+      1400,
+      800
+    ]
+  },
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "来源与证据",
+      "wraps": [
+        "source-functions",
+        "source-evidence",
+        "source-history"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "命题与状态",
+      "wraps": [
+        "claim-foundation",
+        "claim-functions",
+        "claim-nonfunctions"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "价值与认识论治理",
+      "wraps": [
+        "governance-charter",
+        "governance-k13",
+        "governance-state"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "迭代与执行",
+      "wraps": [
+        "execution-iteration",
+        "execution-reos",
+        "execution-obligations"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "验证与谱系",
+      "wraps": [
+        "validation-proof",
+        "validation-evidence",
+        "validation-provenance"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "人类与机器阅读",
+      "wraps": [
+        "human-ai",
+        "human-route",
+        "human-browsers"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "写作与出版",
+      "wraps": [
+        "publication-book",
+        "publication-seeds",
+        "publication-writing"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "导航与系统投影",
+      "wraps": [
+        "navigation-map",
+        "navigation-overall",
+        "navigation-machine"
+      ],
+      "pad": 24
+    }
+  ],
+  "components": [
+    {
+      "id": "source-functions",
+      "type": "external",
+      "label": "函数/案例来源",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        260,
+        455
+      ],
+      "size": [
+        190,
+        48
+      ]
+    },
+    {
+      "id": "source-evidence",
+      "type": "external",
+      "label": "Evidence Program",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        260,
+        195
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/evidence-program/README.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "source-history",
+      "type": "external",
+      "label": "历史案例与失败",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        300,
+        390
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/RESULTS/OPEN-QUESTIONS.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "claim-foundation",
+      "type": "backend",
+      "label": "Foundation 对象",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        40,
+        117
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/FOUNDATION.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "claim-functions",
+      "type": "backend",
+      "label": "函数资产 registry",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        40,
+        507
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/data/foundation/function-assets/README.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "claim-nonfunctions",
+      "type": "backend",
+      "label": "非函数断言 registry",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        560,
+        390
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "governance-charter",
+      "type": "security",
+      "label": "价值宪章",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        300,
+        104
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/docs/governance/life-community-value-charter.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "governance-k13",
+      "type": "security",
+      "label": "K13 非断言晋级",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        260,
+        26
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "governance-state",
+      "type": "security",
+      "label": "状态增量日志",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        780,
+        585
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/STATE-CHANGELOG.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "execution-iteration",
+      "type": "backend",
+      "label": "迭代操作法 1.4.0",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        520,
+        26
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/ITERATION.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "execution-reos",
+      "type": "backend",
+      "label": "REOS vNext LIGHT",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        900,
+        91
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/docs/architecture/reos-vnext-light.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "execution-obligations",
+      "type": "backend",
+      "label": "开放义务与传播",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        780,
+        26
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/data/operations/synchronization-surfaces.json",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "validation-proof",
+      "type": "backend",
+      "label": "proof 与数学验证",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        40,
+        312
+      ],
+      "size": [
+        190,
+        48
+      ]
+    },
+    {
+      "id": "validation-evidence",
+      "type": "backend",
+      "label": "evidence 与复现",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        500,
+        195
+      ],
+      "size": [
+        190,
+        48
+      ]
+    },
+    {
+      "id": "validation-provenance",
+      "type": "backend",
+      "label": "provenance 与自纠错",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        1110,
+        120
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/RESULTS/EVIDENCE-LINEAGE.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "human-ai",
+      "type": "frontend",
+      "label": "AI 冷启动与状态恢复",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        520,
+        637
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/AI-START-HERE.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "human-route",
+      "type": "frontend",
+      "label": "十分钟人类阅读",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        850,
+        423
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/HUMAN-READING.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "human-browsers",
+      "type": "frontend",
+      "label": "函数/断言浏览器",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        260,
+        637
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/docs/human/function-assets/README.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "publication-book",
+      "type": "external",
+      "label": "点火成果册",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        1110,
+        312
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "publication-seeds",
+      "type": "external",
+      "label": "《火种》",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        850,
+        260
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "publication-writing",
+      "type": "external",
+      "label": "之元写作法",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        1050,
+        423
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/docs/publication/zhiyuan-writing-method.md",
+          "label": "canonical target"
+        }
+      ]
+    },
+    {
+      "id": "navigation-map",
+      "type": "frontend",
+      "label": "详细技术系统图",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        780,
+        641
+      ],
+      "size": [
+        190,
+        48
+      ]
+    },
+    {
+      "id": "navigation-overall",
+      "type": "frontend",
+      "label": "本概念整体架构",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        1110,
+        507
+      ],
+      "size": [
+        190,
+        48
+      ]
+    },
+    {
+      "id": "navigation-machine",
+      "type": "frontend",
+      "label": "llms.txt 与 canonical 入口",
+      "tag": "CANONICAL_DERIVED_PROJECTION",
+      "pos": [
+        780,
+        525
+      ],
+      "size": [
+        190,
+        48
+      ],
+      "sources": [
+        {
+          "path": "ignition/llms.txt",
+          "label": "canonical target"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "canonical-edge-01",
+      "from": "source-functions",
+      "to": "claim-functions",
+      "label": "登记/裁决",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "labelAt": [
+        320,
+        514
+      ]
+    },
+    {
+      "id": "canonical-edge-02",
+      "from": "source-evidence",
+      "to": "validation-evidence",
+      "label": "可回放证据",
+      "variant": "default",
+      "route": "straight",
+      "labelAt": [
+        475,
+        182
+      ]
+    },
+    {
+      "id": "canonical-edge-03",
+      "from": "source-history",
+      "to": "claim-nonfunctions",
+      "label": "历史与开放",
+      "variant": "default",
+      "route": "straight",
+      "fromSide": "top",
+      "toSide": "left",
+      "via": [
+        [
+          395,
+          371
+        ],
+        [
+          520,
+          371
+        ],
+        [
+          520,
+          414
+        ]
+      ],
+      "labelAt": [
+        455,
+        358
+      ]
+    },
+    {
+      "id": "canonical-edge-04",
+      "from": "claim-foundation",
+      "to": "governance-k13",
+      "label": "受上限约束",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "labelAt": [
+        200,
+        91
+      ]
+    },
+    {
+      "id": "canonical-edge-05",
+      "from": "claim-functions",
+      "to": "validation-proof",
+      "label": "证明义务",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "labelAt": [
+        200,
+        377
+      ]
+    },
+    {
+      "id": "canonical-edge-06",
+      "from": "claim-nonfunctions",
+      "to": "validation-provenance",
+      "label": "谱系与处置",
+      "variant": "default",
+      "route": "auto",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "via": [
+        [
+          655,
+          455
+        ],
+        [
+          720,
+          455
+        ],
+        [
+          720,
+          144
+        ],
+        [
+          1080,
+          144
+        ]
+      ],
+      "labelAt": [
+        687,
+        488
+      ]
+    },
+    {
+      "id": "canonical-edge-07",
+      "from": "governance-charter",
+      "to": "governance-k13",
+      "label": "规范边界",
+      "variant": "default",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "via": [
+        [
+          395,
+          90
+        ],
+        [
+          355,
+          90
+        ]
+      ],
+      "labelAt": [
+        480,
+        85
+      ]
+    },
+    {
+      "id": "canonical-edge-08",
+      "from": "governance-k13",
+      "to": "execution-iteration",
+      "label": "常驻约束",
+      "variant": "default",
+      "route": "straight",
+      "labelAt": [
+        485,
+        98
+      ]
+    },
+    {
+      "id": "canonical-edge-09",
+      "from": "governance-state",
+      "to": "human-ai",
+      "label": "恢复最近 delta",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "labelAt": [
+        700,
+        624
+      ]
+    },
+    {
+      "id": "canonical-edge-10",
+      "from": "execution-iteration",
+      "to": "execution-obligations",
+      "label": "传播与回执",
+      "variant": "default",
+      "route": "straight",
+      "labelAt": [
+        745,
+        98
+      ]
+    },
+    {
+      "id": "canonical-edge-11",
+      "from": "execution-reos",
+      "to": "execution-obligations",
+      "label": "协调义务",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "labelAt": [
+        935,
+        88
+      ]
+    },
+    {
+      "id": "canonical-edge-12",
+      "from": "execution-obligations",
+      "to": "validation-provenance",
+      "label": "留下记录",
+      "variant": "default",
+      "route": "auto",
+      "via": [
+        [
+          1095,
+          50
+        ],
+        [
+          1095,
+          144
+        ]
+      ],
+      "labelAt": [
+        1120,
+        182
+      ]
+    },
+    {
+      "id": "canonical-edge-13",
+      "from": "validation-proof",
+      "to": "claim-foundation",
+      "label": "回写受控状态",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "labelAt": [
+        160,
+        234
+      ]
+    },
+    {
+      "id": "canonical-edge-14",
+      "from": "validation-evidence",
+      "to": "claim-nonfunctions",
+      "label": "限制公开上限",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "fromSide": "right",
+      "toSide": "top",
+      "via": [
+        [
+          700,
+          219
+        ],
+        [
+          700,
+          338
+        ],
+        [
+          655,
+          338
+        ]
+      ],
+      "labelAt": [
+        620,
+        267
+      ]
+    },
+    {
+      "id": "canonical-edge-15",
+      "from": "validation-provenance",
+      "to": "publication-book",
+      "label": "安全整合",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "labelAt": [
+        1270,
+        234
+      ]
+    },
+    {
+      "id": "canonical-edge-16",
+      "from": "human-ai",
+      "to": "human-browsers",
+      "label": "进入 canonical 浏览",
+      "variant": "default",
+      "route": "straight",
+      "labelAt": [
+        485,
+        605
+      ]
+    },
+    {
+      "id": "canonical-edge-17",
+      "from": "human-route",
+      "to": "publication-book",
+      "label": "按目的阅读",
+      "variant": "default",
+      "route": "auto",
+      "fromSide": "bottom",
+      "toSide": "right",
+      "via": [
+        [
+          945,
+          494
+        ],
+        [
+          1340,
+          494
+        ],
+        [
+          1340,
+          336
+        ]
+      ],
+      "labelAt": [
+        1142,
+        488
+      ]
+    },
+    {
+      "id": "canonical-edge-18",
+      "from": "human-browsers",
+      "to": "claim-functions",
+      "label": "投影而不取代",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "labelAt": [
+        350,
+        585
+      ]
+    },
+    {
+      "id": "canonical-edge-19",
+      "from": "publication-book",
+      "to": "publication-seeds",
+      "label": "继续追踪问题",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "labelAt": [
+        1080,
+        306
+      ]
+    },
+    {
+      "id": "canonical-edge-20",
+      "from": "publication-writing",
+      "to": "publication-seeds",
+      "label": "写作种子",
+      "variant": "default",
+      "route": "auto",
+      "fromSide": "top",
+      "toSide": "left",
+      "via": [
+        [
+          1145,
+          390
+        ],
+        [
+          800,
+          390
+        ],
+        [
+          800,
+          284
+        ]
+      ],
+      "labelAt": [
+        1000,
+        371
+      ]
+    },
+    {
+      "id": "canonical-edge-21",
+      "from": "publication-seeds",
+      "to": "human-route",
+      "label": "返回人类入口",
+      "variant": "default",
+      "route": "orthogonal-v",
+      "labelAt": [
+        1000,
+        351
+      ]
+    },
+    {
+      "id": "canonical-edge-22",
+      "from": "navigation-map",
+      "to": "navigation-overall",
+      "label": "详细图/概念图",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "labelAt": [
+        1060,
+        605
+      ]
+    },
+    {
+      "id": "canonical-edge-23",
+      "from": "navigation-machine",
+      "to": "human-ai",
+      "label": "机器恢复入口",
+      "variant": "default",
+      "route": "orthogonal-h",
+      "labelAt": [
+        740,
+        700
+      ]
+    },
+    {
+      "id": "canonical-edge-24",
+      "from": "navigation-overall",
+      "to": "publication-book",
+      "label": "点击到权威资产",
+      "variant": "default",
+      "route": "auto",
+      "fromSide": "right",
+      "toSide": "right",
+      "via": [
+        [
+          1380,
+          531
+        ],
+        [
+          1380,
+          336
+        ]
+      ],
+      "labelAt": [
+        1280,
+        423
+      ]
+    }
+  ]
+}

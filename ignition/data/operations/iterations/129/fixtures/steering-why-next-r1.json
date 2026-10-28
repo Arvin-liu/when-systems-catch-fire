@@ -1,0 +1,33 @@
+{
+  "schema": "os-steering-intent-obligation-r1.why-next-fixtures",
+  "cases": [
+    {
+      "trace_id": "trace-owner-next",
+      "conflict_type": "OVERRIDE_VS_AUTOMATION",
+      "candidates": [
+        {"priority": {"goal_id": "goal-owner-next", "owner_rank": 50, "commitment_status": "ACTIVE", "dependency_criticality": 4, "risk_level": "MEDIUM", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 2, "deadline_state": "DUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false, "pack_ref": "pack-research", "executor_ref": "executor-synthetic", "budget_available": true, "blockers": [], "unknowns": ["owner_rank_context"]},
+        {"priority": {"goal_id": "goal-auto-skipped", "owner_rank": 0, "commitment_status": "DUE", "dependency_criticality": 8, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 20, "deadline_state": "OVERDUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false, "pack_ref": "pack-background", "executor_ref": "executor-synthetic", "budget_available": true, "blockers": ["owner_override_precedence"], "unknowns": []}
+      ],
+      "expected_selected_goal_id": "goal-owner-next",
+      "expected_owner_override_ref": "override-why-next"
+    },
+    {
+      "trace_id": "trace-permission-blocked",
+      "conflict_type": "PERMISSION_VS_DEADLINE",
+      "candidates": [
+        {"priority": {"goal_id": "goal-blocked-next", "owner_rank": 0, "commitment_status": "DUE", "dependency_criticality": 10, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": false, "fairness_age": 9, "deadline_state": "OVERDUE", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false, "pack_ref": null, "executor_ref": null, "budget_available": true, "blockers": ["permission_missing"], "unknowns": ["permission_scope"]}
+      ],
+      "expected_selected_goal_id": null,
+      "expected_owner_override_ref": null
+    },
+    {
+      "trace_id": "trace-budget-reconcile",
+      "conflict_type": "RESOURCE_CONTENTION",
+      "candidates": [
+        {"priority": {"goal_id": "goal-budget-missing", "owner_rank": 1, "commitment_status": "ACTIVE", "dependency_criticality": 2, "risk_level": "LOW", "resource_available": true, "blocked": false, "permission_eligible": true, "fairness_age": 3, "deadline_state": "ACTIVE_WINDOW", "approval_required": false}, "intent_status": "ACTIVE", "mutually_exclusive_group": null, "executor_available": true, "stale": false, "superseded": false, "safety_critical": false, "pack_ref": "pack-budgeted", "executor_ref": "executor-synthetic", "budget_available": false, "blockers": ["budget_unavailable"], "unknowns": []}
+      ],
+      "expected_selected_goal_id": null,
+      "expected_owner_override_ref": null
+    }
+  ]
+}

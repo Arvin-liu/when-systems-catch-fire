@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-139-step09-local-executor-census-and-selection-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "09",
+  "status": "PASS",
+  "census_path": "ignition/data/operations/iterations/139/local-executor-census-r1.json",
+  "control_tip": "e80d7c4aeb70ae44edbd340fc2f341c7a6a737d4",
+  "formal_candidate_sha": "12205be8ad94916a39253e0eba2106bf5da9da12",
+  "counts": {"candidates": 14, "agentic_executors": 5, "installed_agentic_executors": 4, "reasoner_runtimes": 4, "tools": 3, "ui_only": 2, "admitted_agentic_executors": 1},
+  "selection": {
+    "selected_executor_id": "external.codex",
+    "selected_family": "Codex CLI",
+    "selection_status": "SELECTED",
+    "ranking": ["external.codex", "external.gemini", "external.hermes", "external.openclaw", "external.github-copilot-cli"],
+    "why_executor": "Codex is currently the only installed AGENTIC_EXECUTOR with all ten census admission checks true after R3 runtime-scratch/auth-source separation and public login-status exit 0."
+  },
+  "observations": {
+    "codex_login_status": "EXIT_0_PRESENCE_ONLY",
+    "agent_version_help_read": true,
+    "reasoner_models_invoked": false,
+    "ui_action_performed": false,
+    "missing_cli_candidates": ["Aider", "Goose", "Qwen Code", "Cursor/agent CLI"],
+    "plain_gh_kind": "TOOL_ONLY",
+    "reasoner_runtime_kind": "REASONER_RUNTIME"
+  },
+  "safety": {"secret_content_read": false, "auth_content_copied": false, "configuration_changed": false, "billing_changed": false, "install_or_upgrade_performed": false, "live_inference_started": false, "workspace_modified": false},
+  "claim_ceiling": "Fresh repository-local observation-time census, executor-kind classification, admission checks and why-executor trace only; no inference, validated completion, model-quality ranking, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

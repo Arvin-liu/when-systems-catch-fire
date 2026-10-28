@@ -1,0 +1,72 @@
+{
+  "schema_version": "ignition-138-step13-targeted-regression-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "13",
+  "status": "PASS",
+  "candidate_head_before_step13_commit": "672ad1c96449cd08822b80bc000150f089f1f90b",
+  "live_invocation": {
+    "new_real_codex_invocations": 0,
+    "total_real_codex_invocations_for_task": 1,
+    "second_invocation": "FORBIDDEN_BY_AUTH_SOURCE_READ_ONLY_BOUNDARY",
+    "structured_result_observed": false,
+    "validated_completion": false,
+    "live_external_invocation_obligation": "OPEN",
+    "claim_ceiling": "No new inference was started; the existing first startup failure remains the only live Codex attempt."
+  },
+  "targeted_regression": {
+    "suite": "Task138 live bridge/runtime scratch, Codex/federation/dispatch, residual/current/release, human/privacy/path, and foundation generator reconciliation tests",
+    "command_family": "PYTHONPATH=ignition python3 -m unittest <exact Task138 targeted module set>",
+    "natural_completion": true,
+    "duration_seconds": 128.180,
+    "tests": 333,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "deterministic_repairs_before_final_run": [
+    {
+      "observation": "Four projection/accounting failures after the first targeted run",
+      "root_cause": "Step12 Current prose changed generator inputs; generated human-source hashes, nonfunction claim outputs, and path manifest were stale or incomplete",
+      "repair": "Ran the canonical nonfunction adjudicator, human claim browser builder, and repository path classification generator"
+    },
+    {
+      "observation": "Three Current Facts failures on the next targeted run",
+      "root_cause": "The regenerated nonfunction registry changed the declared canonical inputs of Current Facts",
+      "repair": "Regenerated Current Facts, Current Snapshot, and all seven compiler-owned Current Snapshot blocks"
+    }
+  ],
+  "standalone_preflight": {
+    "current_volatile_fact_registry": "PASS facts=19 surfaces=7",
+    "dispatch_reconciliation": "PASS durable_dispatch_r1 ack_loss_side_effect=COMPLETED_VALIDATED receipt_before_validation=PASS validated_terminal=PASS",
+    "residual_ledger": "PASS entries=6 inherited_unchanged=3 resolved=3",
+    "residual_adversarial_matrix": "PASS cases=18 passed=18",
+    "durability_projection_hygiene": "PASS new_paths=5 foundation_knowledge_backflow=0 human_machine_dump=0 fire_seed_backflow=0 historical_residuals=9 sympy_residuals=1",
+    "repository_path_classification": "PASS tracked=3225 manifest=3225 checks=10/10",
+    "current_state_sync": "PASS identity_epoch=os-control-plane-r5-live-executor-federation-r2 metrics=16 impact=PRESENTATION_ONLY",
+    "current_surface_semantics": "PASS",
+    "state_changelog": "PASS current=6 historical=26 legacy_profiles=6",
+    "execution_contract": "PASS task_id=IGNITION-20260824-138",
+    "current_release_lifecycle": "PASS content_phase=RUNNING publication_authority=REMOTE_REF_OBSERVATION embedded_publication_assertion=NONE",
+    "current_task_lineage": "PASS",
+    "owner_observation_privacy": "PASS public_safe=true private_content=false",
+    "agent_platform_human_surface": "PASS",
+    "human_front_door": "PASS human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "human_surface_contract": "PASS human_entries=48 machine_components=95 visible_graph_nodes=83 typed_graph_edges=88",
+    "current_facts": "PASS deterministic",
+    "current_snapshot": "PASS deterministic",
+    "current_projection_determinism": "PASS passes=2 outputs=10",
+    "git_diff_check": "PASS"
+  },
+  "boundary_evidence": {
+    "task_workspace": "DISPOSABLE_READ_ONLY",
+    "executor_runtime_scratch": "ATTEMPT_EPHEMERAL_WRITABLE",
+    "auth_or_config_source": "READ_ONLY_REFERENCE",
+    "workspace_digest_before_after": "40ab9b327e6bf1044e3f57e00aaf483fe6d7f2f77a3bcddc4c414d1825556fba",
+    "secret_materialized": false,
+    "config_mutated": false,
+    "billing_mutated": false
+  },
+  "next_step": "14",
+  "claim_ceiling": "Targeted repository-local regression and deterministic preflight evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication, or epistemic acceptance is inferred."
+}

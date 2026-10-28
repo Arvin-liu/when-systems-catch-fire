@@ -1,0 +1,74 @@
+{
+  "schema_version": "ignition-139-step11-live-attempt-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "11",
+  "status": "RECORDED_FAIL_CLOSED",
+  "control_tip": "e80d7c4aeb70ae44edbd340fc2f341c7a6a737d4",
+  "formal_candidate_sha": "12205be8ad94916a39253e0eba2106bf5da9da12",
+  "fresh_selection": {
+    "selected_executor_id": "external.codex",
+    "selection_status": "SELECTED",
+    "lease_id": "lease-ignition-139-codex-live-02",
+    "lease_digest": "289b13ca527feb3f8ef88a1614e43b21885e979ad9c6f8210517c99b642c317b",
+    "executor_version": "codex-cli 0.144.4",
+    "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "admission_status": "ADMITTED",
+    "effective_capabilities": ["repo.read"]
+  },
+  "single_boundary": {
+    "dispatch_id": "dispatch-139-live-02",
+    "attempt_id": "attempt-139-live-02",
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r3",
+    "os_coordinator_started": true,
+    "public_probe_calls": 2,
+    "live_dispatch_calls": 0,
+    "live_inference_started": false,
+    "retry": "NOT_RUN_NO_BLIND_RETRY",
+    "observation_error_class": "LiveAdapterError",
+    "failure_stage": "ADAPTER_RUNTIME_FILESYSTEM_PREFLIGHT_BEFORE_CAPTURE_AND_PROCESS",
+    "failure_reason": "filesystem domain contract contains a symlink/path escape"
+  },
+  "filesystem_observation": {
+    "task_workspace_mode": "DISPOSABLE_READ_ONLY",
+    "runtime_scratch_mode": "ATTEMPT_EPHEMERAL_WRITABLE",
+    "capture_parent_separate_from_runtime_parent": true,
+    "capture_capsule_initialized": false,
+    "auth_source_content_read": false,
+    "workspace_unchanged": true,
+    "failure_source": "broad persistent user-document tree contained an unrelated symlinked tool environment",
+    "post_attempt_code_repair": "future admission now uses a bounded symlink-free note root and validates the filesystem domain contract before eligibility"
+  },
+  "ledger": {
+    "sequence": 4,
+    "previous_record_hash": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e",
+    "record_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+    "receipt_digest": "8637fcc501dc56b4fe12bb812c21289d2e9699ea5aa7fbddfc3cd8990c7e735e",
+    "state": "OBSERVATION_INCOMPLETE",
+    "evidence_completeness": "INCOMPLETE",
+    "capture_completeness": "INCOMPLETE",
+    "capture_ref": "UNRECOVERED",
+    "structured_result_present": false,
+    "validator_status": "UNKNOWN",
+    "reconciliation_status": "REQUIRES_RECONCILIATION",
+    "raw_record_return_code": 0,
+    "raw_record_return_code_claim": "not accepted as a live-process result because live_dispatch_calls=0; it is the last public probe transport value preserved by the first runner"
+  },
+  "current_before_attempt": {
+    "projection_digest": "0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a",
+    "total_attempts": 4,
+    "validated_completion_count": 0,
+    "unreconciled_count": 2
+  },
+  "safety": {
+    "secret_content_read": false,
+    "auth_content_copied": false,
+    "formal_or_control_workspace_modified": false,
+    "workspace_modified": false,
+    "billing_changed": false,
+    "installation_changed": false,
+    "blind_retry_started": false
+  },
+  "claim_ceiling": "Canonical repository-local fact: the selected Codex lease and OS dispatch preparation were admitted, but the adapter failed closed before a live executor process was launched; no live result, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

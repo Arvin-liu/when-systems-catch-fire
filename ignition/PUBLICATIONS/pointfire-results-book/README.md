@@ -1,0 +1,58 @@
+# 《点火成果册》
+
+这是正式公开仓库唯一 canonical 的《点火成果册》入口。
+
+本册是当前证据、计算资源、模型和研究方法条件下的当前最佳综合，不是终极真理。任何成果单元都可以在新证据出现后被升级、降级、修订、拆分、合并、替代或撤回。公共出版只发布可以安全公开的人类可读综合；不能为了“完整”暴露私有来源正文、私有路径或机器审计原件。
+
+Task144 已按当前边界关闭工程阶段。Task143 的文章、Book Project 与样章继续作为 `SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED` 保留在本 canonical 入口，等待 Owner production brief；本入口不替 Owner 选题、立书或接受出版。
+
+## 按目的阅读
+
+先看[《火种：点火跑出来的发现、问题与写作种子》](12-火种：点火跑出来的发现、问题与写作种子.md)，快速知道这一个多月真正读过、撞过、跑过、写过和失败过的内容。它先给出内容火种，再给出关于点火自身的方法论火种，是人类出版层的导航与写作种子，不是新的 claim registry，也不增加外部新颖性。
+
+然后按目的进入：
+
+| 目的 | 入口 |
+| --- | --- |
+| 想知道点火从哪里来、问题怎样变形 | [起源与思想谱系](01-起源与思想谱系.md) · [思想核心长读](02-思想核心-长读.md) |
+| 想看函数、案例和 GetNote 主题 | [函数族深读](03-函数族深读.md) · [案例比较卡](04-案例比较卡.md) · [GetNote 主题成果](05-GetNote主题成果.md) |
+| 想看当前科学、方法和负结果 | [当前科学与 WAIC](06-当前科学与WAIC.md) · [方法、系统与负结果](07-方法系统与负结果.md) |
+| 想看写作与公开作品 | [之元写作法与公开作品](08-之元写作法与公开作品.md) |
+| 想核对正式仓库的最新状态 | [正式仓库的最新成果](09-正式仓库最新成果.md) · [七轨证据演化](10-七轨证据演化-契约修复.md) |
+| 想理解公共入口与维护边界 | [公共入口保留与维护](11-公共入口保留与关系.md) |
+
+普通读者不需要打开 JSONL。需要核对可独立修订的成果单元时，再看[公开 registry](RESULT-REGISTRY.jsonl)；需要了解私有来源如何被处理时，看[公共出版边界](PUBLICATION-BOUNDARY.md)。
+
+## IGNITION-143 R1：新出版成果
+
+本轮把当前工程阶段封存后，执行了一次成果生产能力 smoke test。以下成果已经接回本册这一条 canonical 出版入口，但不因此成为 Owner 已选择或已接受的正式作品：
+
+> **统一状态：** `SMOKE_TEST_OUTPUT` · `OWNER_REVIEW_PENDING` · `PUBLICATION_ACCEPTANCE_NOT_GRANTED`。`repository publication artifact != external publication acceptance`。
+
+- [出版组合 R1](13-出版组合-R1.md)：三篇文章与书籍项目的选择、排序和舍弃项。
+- [Article 011：一个系统如何在停止时仍然诚实](../../docs/editorial/articles/011-terminal-task-open-obligation.md)：从 Task142 的两只生命周期时钟写任务 terminality 与开放义务。
+- [Article 012：资源托举为什么会变成路径控制](../../docs/editorial/articles/012-support-becomes-path-control.md)：把 D600/M3 保持为带反例的内部候选模型。
+- [Article 013：树冠会降温吗](../../docs/editorial/articles/013-tree-canopy-temperature-causality.md)：用公开来源拆开树冠、温度对象和因果范围。
+- [Book Project R1：《还没有被证明的世界》](14-书籍项目-R1-还没有被证明的世界.md)：书名方向、读者承诺、目录、素材映射与证据策略。
+- 成熟书稿样章：[第一章](book-project-r1/01-第一章-先别急着宣布完成.md) · [第三章](book-project-r1/03-第三章-退出不是按钮.md)。
+
+这些是可继续人工编辑的 smoke-test 输出，不是 Owner 已选择的正式生产项目，不是整本书完成、外部真值、生产就绪或 `EPISTEMICALLY_ACCEPTED`。新成果的机器登记与 claim ceiling 见[公开 registry](RESULT-REGISTRY.jsonl)；旧的 `LIVE_EXTERNAL_INVOCATION` 仍由 obligation registry 独立保留为 Owner-deferred，不在本轮被伪装成已解决。
+
+## 这本书收录什么
+
+- 早期“转身”问题如何逐步压缩为“点火”、应约、退出权、决策、事件和时间窗口；
+- 协作系统与认同系统、搭房与点火、服从与应约之间的可反驳区分；
+- 516 个旧函数进一步整理成 9 个函数族，并为每族保留现实问题、变量、反例、测量和证据边界；
+- 12 个可比较案例卡，显式记录提议者、应约者、退出权、结果、替代解释和证据等级；
+- GetNote 1329 条机器结果经过聚类、去重、冲突识别、主题化、叙述化和证据边界表达后的具体命题；
+- 当前科学、WAIC、Foundation、Function OS、MCF、PSD、ARN、语言—思维逻辑平面、REOS vNext LIGHT 和正式仓库最新结果；
+- 之元写作法与正式仓库已经公开的代表作品；
+- 方法、软件与系统工程、失败、缺陷、反例、撤回和未解决问题。
+
+## 公开边界
+
+私有来源只以安全的综合、稳定的公开 provenance 标记或 `PRIVATE_PROVENANCE_WITHHELD` 出现。GetNote 原始正文、私有 note body、私有审计库存、私有本机路径、凭据和执行元数据不属于本书。正式仓库现有公开文档仍是自己的来源；本书通过链接和关系登记整合它们，不覆盖或降低其较新的公开结果。
+
+## 维护承诺
+
+今后的点火成果继续进入这一个成果册：先登记来源和证据上限，再去重、识别冲突、主题化、写成人类正文、接受独立 public-safety 与 editorial/epistemic review，最后更新 registry。计数、文件数、模型通过或内部回执都不能单独升级现实真值。

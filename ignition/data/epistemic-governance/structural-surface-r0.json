@@ -1,0 +1,234 @@
+{
+  "schema_version": "structural-surface-r0",
+  "surface_id": "STRUCTURAL_GOVERNANCE_SURFACE_R0",
+  "projection_type": "ORIGINAL_STRUCTURE",
+  "surface_role": "ADVISORY_READING_SURFACE_NOT_PROMPT",
+  "generated_from": {
+    "transition_grammar": "ignition/data/epistemic-governance/transition-grammar-r0.json",
+    "non_authority_contract": "ignition/data/epistemic-governance/soft-governance-non-authority-invariant-r0.json",
+    "current_identity": "ignition/data/architecture/current-system-identity.json"
+  },
+  "authority_ceiling": "Soft structural governance may affect advisory context, telemetry, experimental routing preference and human explanation only. A soft observation, score, exposure flag or surface similarity cannot authorize an action, change truth or M/E status, widen a claim ceiling, establish Owner or epistemic acceptance, authorize an external side effect or release a safety gate. Current State remains CURRENT_WITH_OPEN_OBLIGATIONS and EPISTEMICALLY_ACCEPTED=0.",
+  "current_state": {
+    "status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "items": [
+    {
+      "stable_id": "CONSENSUS_NOT_AUTHORITY",
+      "domain": "agent",
+      "label": "模型或 Agent 共识不产生 authority",
+      "relation": {
+        "antecedent": "One or more models, Agents, reviewers or executors produce matching judgments or receipts.",
+        "candidate_transition": "The record may note agreement as bounded observation or review evidence."
+      },
+      "blocked_transitions": [
+        "Do not convert agreement into Owner authority, truth or permission."
+      ],
+      "needed_for_stronger_transition": [
+        "Bind each judgment to its role, source, scope and independent validation path."
+      ],
+      "licensed_weaker_conclusion": "The named participants agreed within the recorded task and evidence boundary.",
+      "unknown_behavior": "Whether the agreed proposition is true or externally valid remains unresolved without its own evidence.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "ENGINEERING_COMPLETION_NOT_EXTERNAL_TRUTH",
+      "domain": "engineering",
+      "label": "工程完成不等于外部真值",
+      "relation": {
+        "antecedent": "A repository implementation, validator, CI run or bounded pilot reaches its declared local completion state.",
+        "candidate_transition": "The local record may transition to a repository-scoped engineering completion state."
+      },
+      "blocked_transitions": [
+        "Do not infer external truth, production safety or universal validity."
+      ],
+      "needed_for_stronger_transition": [
+        "Use the declared repository validator and retain its scope and residuals."
+      ],
+      "licensed_weaker_conclusion": "The bounded implementation or fixture passed the named repository checks.",
+      "unknown_behavior": "If external evidence is absent, external truth remains unknown rather than false or true.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "EVIDENCE_LEVEL_CEILING",
+      "domain": "knowledge",
+      "label": "证据级别不能自动越级",
+      "relation": {
+        "antecedent": "A source, fixture, review or observation supports a conclusion at a bounded evidence level.",
+        "candidate_transition": "The conclusion may be stated only up to the licensed level and scope."
+      },
+      "blocked_transitions": [
+        "Do not widen scope, quantifier, causal force or generality without a new gate."
+      ],
+      "needed_for_stronger_transition": [
+        "Use the claim ceiling, provenance and relevant adjudication or replication requirement."
+      ],
+      "licensed_weaker_conclusion": "The source supports the strongest explicitly licensed conclusion and no more.",
+      "unknown_behavior": "The next stronger claim remains unknown or pending its named obligation.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "LOCAL_FIXTURE_NOT_GENERALIZATION",
+      "domain": "engineering",
+      "label": "local fixture 不等于 production 或 generalization",
+      "relation": {
+        "antecedent": "A disposable fixture or offline pilot produces a reproducible observation.",
+        "candidate_transition": "The fixture may support a repository-scoped compatibility or coordination statement."
+      },
+      "blocked_transitions": [
+        "Do not generalize the result to production, all models, all providers or the external world."
+      ],
+      "needed_for_stronger_transition": [
+        "Name the fixture, environment, provider status and untested dimensions."
+      ],
+      "licensed_weaker_conclusion": "The behavior was observed in the specified disposable local fixture.",
+      "unknown_behavior": "Production behavior and cross-environment transfer remain unknown.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "MISSING_PROVENANCE_DEGRADES",
+      "domain": "cross-cutting",
+      "label": "来源或 provenance 缺失时降级",
+      "relation": {
+        "antecedent": "A proposed claim, observation or publication lacks recoverable source, rights or provenance binding.",
+        "candidate_transition": "The item may remain private, pending, non-republished or bounded as an observation."
+      },
+      "blocked_transitions": [
+        "Do not treat a summary, path, hash or confidence score as a substitute for missing source bytes."
+      ],
+      "needed_for_stronger_transition": [
+        "Recover the required source and rights binding or preserve the restrictive disposition."
+      ],
+      "licensed_weaker_conclusion": "A source-bounded note records that the material could not yet be admitted at a stronger level.",
+      "unknown_behavior": "The unsupported proposition remains unknown and cannot enter a stronger public claim path.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "M_E_ORTHOGONAL",
+      "domain": "knowledge",
+      "label": "M 与 E 独立",
+      "relation": {
+        "antecedent": "A mathematical maturity, formalization or engineering-quality observation changes on one axis.",
+        "candidate_transition": "Only the named axis and its evidence-bound record may change."
+      },
+      "blocked_transitions": [
+        "Do not infer an automatic M-to-E or E-to-M upgrade."
+      ],
+      "needed_for_stronger_transition": [
+        "Use the independent axis gate and preserve the other axis as recorded."
+      ],
+      "licensed_weaker_conclusion": "The specified maturity or evidence dimension has the recorded local status.",
+      "unknown_behavior": "The unaltered axis remains at its prior or unknown status.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "OWNER_ONLY_AUTHORITY",
+      "domain": "owner",
+      "label": "Owner authority 不能由 Agent 自赋",
+      "relation": {
+        "antecedent": "An Agent, model, receipt or local workflow proposes an Owner-level acceptance or permission decision.",
+        "candidate_transition": "The proposal may be recorded for Owner review without changing Owner state."
+      },
+      "blocked_transitions": [
+        "Do not self-assign Owner acceptance, Owner authority or an Owner gate result."
+      ],
+      "needed_for_stronger_transition": [
+        "Require the explicit Owner-controlled gate and its auditable record."
+      ],
+      "licensed_weaker_conclusion": "A bounded proposal or review packet is ready for the authorized Owner decision.",
+      "unknown_behavior": "Owner acceptance remains pending when the Owner gate is absent.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "PERMISSION_INTERSECTION_ONLY_NARROWS",
+      "domain": "agent",
+      "label": "权限交集只能收窄",
+      "relation": {
+        "antecedent": "Task, profile, pack, executor and approval scopes are composed for a proposed action.",
+        "candidate_transition": "The effective capability is the validated intersection of declared scopes."
+      },
+      "blocked_transitions": [
+        "Do not widen permission because a model is cautious, a surface was read or an ESI score is high."
+      ],
+      "needed_for_stronger_transition": [
+        "Use the canonical policy/permission intersection and explicit approval contract."
+      ],
+      "licensed_weaker_conclusion": "The action is permitted only within the smallest declared intersection, or is denied.",
+      "unknown_behavior": "An unproven capability or permission remains unavailable rather than implicitly granted.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "PUBLICATION_COMPLETION_NOT_TRUTH",
+      "domain": "publication",
+      "label": "写作或出版完成不等于真值成立",
+      "relation": {
+        "antecedent": "A report, Results Book entry or public-safe explanation has passed its publication and privacy gates.",
+        "candidate_transition": "The material may become a bounded public projection with its claim ceiling preserved."
+      },
+      "blocked_transitions": [
+        "Do not infer that publication proves the represented proposition."
+      ],
+      "needed_for_stronger_transition": [
+        "Preserve source, provenance, privacy, disposition and claim ceiling."
+      ],
+      "licensed_weaker_conclusion": "The text is a public-safe, source-bounded representation of a recorded result or open question.",
+      "unknown_behavior": "Unresolved truth and replication remain unknown after publication.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "RUNTIME_NOT_EPISTEMIC_ACCEPTANCE",
+      "domain": "agent",
+      "label": "runtime 成功不等于 epistemic acceptance",
+      "relation": {
+        "antecedent": "A local runtime, executor adapter, pilot, receipt or recovery path reaches a terminal success state.",
+        "candidate_transition": "The local operational record may transition to its declared bounded completion status."
+      },
+      "blocked_transitions": [
+        "Do not set EPISTEMICALLY_ACCEPTED or claim external success from the runtime state."
+      ],
+      "needed_for_stronger_transition": [
+        "Preserve the explicit runtime claim ceiling and separate epistemic/Owner gates."
+      ],
+      "licensed_weaker_conclusion": "The named local run or contract completed under its bounded conditions.",
+      "unknown_behavior": "Epistemic acceptance remains 0 and external validity remains unresolved.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "UNKNOWN_MUST_REMAIN_UNKNOWN",
+      "domain": "cross-cutting",
+      "label": "未知必须保留为未知",
+      "relation": {
+        "antecedent": "The evidence packet, provenance or gate does not license a stronger conclusion.",
+        "candidate_transition": "The record may retain UNKNOWN, conditional or pending status."
+      },
+      "blocked_transitions": [
+        "Do not fill an evidence gap with a plausible story, consensus or formatting cue."
+      ],
+      "needed_for_stronger_transition": [
+        "Name the missing evidence or authority required for a future transition."
+      ],
+      "licensed_weaker_conclusion": "The proposition is unresolved within the specified scope and evidence boundary.",
+      "unknown_behavior": "Unknown is a valid terminal or holding state until new qualifying evidence arrives.",
+      "status": "CURRENT"
+    },
+    {
+      "stable_id": "WITHDRAWN_NO_REBOUND",
+      "domain": "knowledge",
+      "label": "撤回或隔离不得改名回弹",
+      "relation": {
+        "antecedent": "A claim or result is withdrawn, quarantined, downgraded or marked historical.",
+        "candidate_transition": "It remains in append-only lineage with the restrictive disposition."
+      },
+      "blocked_transitions": [
+        "Do not revive it by changing its title, identifier, wording or projection surface."
+      ],
+      "needed_for_stronger_transition": [
+        "Require a governed successor with new provenance and independently reviewed evidence."
+      ],
+      "licensed_weaker_conclusion": "The older record is historical or withdrawn and may explain why it is not currently usable.",
+      "unknown_behavior": "The successor remains unknown or bounded until its own gates pass.",
+      "status": "CURRENT"
+    }
+  ]
+}

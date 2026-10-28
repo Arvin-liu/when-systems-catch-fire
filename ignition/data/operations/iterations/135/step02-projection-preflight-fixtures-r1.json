@@ -1,0 +1,26 @@
+{
+  "schema_version": "ignition-135-step02-projection-preflight-fixtures-r1",
+  "task_id": "IGNITION-20260822-135",
+  "fixture_contract": "STALE_PROJECTION_CANNOT_ENTER_FULL_SUITE_RELEASE_GATE",
+  "cases": [
+    {
+      "case_id": "stale-function-census",
+      "check_id": "function_asset_census",
+      "simulated_returncode": 1,
+      "simulated_status": "FAIL",
+      "simulated_stdout": "CENSUS_OUT_OF_DATE ignition/data/foundation/function-assets/census.jsonl",
+      "expected_projection_checks_pass": false,
+      "expected_release_admission": false
+    },
+    {
+      "case_id": "stale-path-manifest",
+      "check_id": "repository_path_manifest",
+      "simulated_returncode": 1,
+      "simulated_status": "FAIL",
+      "simulated_stdout": "FAIL manifest:all-tracked-accounted missing=1",
+      "expected_projection_checks_pass": false,
+      "expected_release_admission": false
+    }
+  ],
+  "claim_ceiling": "Negative fixture behavior only; it does not assert an external or epistemic result."
+}

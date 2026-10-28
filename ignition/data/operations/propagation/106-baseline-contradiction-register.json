@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "task_number": 106,
+  "purpose": "Baseline contradiction register required by contract §3. Records every stale or contradictory public surface found BEFORE repair, preserving pre-repair wording. Historical stale wording is preserved through Git history and this register; current surfaces were corrected, not erased.",
+  "predicate_merged_truth": {
+    "task_104": "PR #160 merged at 16f64004 (narrative synthesis / editorial layer + relation analysis)",
+    "task_105": "PR #161 merged at 9b5b4b9b, exact head 9d7d5ab5 (Function OS v0.2 bounded benchmark; original PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES, repaired SUPPORTED_WITHIN_BOUNDED_DOMAIN)"
+  },
+  "findings": [
+    {
+      "stable_finding_id": "CTR-106-01",
+      "merged_source_fact": "Task 105 (PR #161) merged; Function OS v0.2 benchmark executed with original/repaired verdicts.",
+      "source_commit_pr_receipt": "merge 9b5b4b9b; exact head 9d7d5ab5; receipt relay/receipts/ignition-function-os-core-capability-benchmark-adversarial-validation-r1-20260730",
+      "stale_surface": "README.md",
+      "exact_stale_wording": "Pre-repair README presented no current result for task 105 and did not contain either verdict string (PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES / SUPPORTED_WITHIN_BOUNDED_DOMAIN).",
+      "contradiction_type": "CURRENT_PUBLIC_WORDING_LAG",
+      "public_consequence": "A reader of the homepage could not see the merged 105 benchmark conclusion and might assume it was never executed.",
+      "required_correction": "Add §任务 104 与 105 with both verdicts and explicit non-claims.",
+      "ci_should_have_caught": true,
+      "why_it_did_not": "No fail-closed assertion tied 'merged iteration must appear in public current wording' to CI before task 106.",
+      "resolved": true
+    },
+    {
+      "stable_finding_id": "CTR-106-02",
+      "merged_source_fact": "Tasks 104 and 105 merged and human-readable counterparts were produced.",
+      "source_commit_pr_receipt": "PR #160 (16f64004), PR #161 (9b5b4b9b)",
+      "stale_surface": "docs/project-current-state.md",
+      "exact_stale_wording": "Pre-repair header read '更新时间：2026-07-30。当前状态包含任务 98—100 ... 任务 102 ...' and the latest section was '## 证据程序（Task 103）'; tasks 104/105 were absent.",
+      "contradiction_type": "PROJECT_STATE_LAG",
+      "public_consequence": "Project current-state stopped before the later accepted iterations 104/105.",
+      "required_correction": "Add §任务 104—105 and update the header date/coverage.",
+      "ci_should_have_caught": true,
+      "why_it_did_not": "No ledger-driven assertion that project-current-state must not stop before a later TERMINAL_SUCCESS iteration.",
+      "resolved": true
+    },
+    {
+      "stable_finding_id": "CTR-106-03",
+      "merged_source_fact": "Task 105 executed the Function OS v0.2 correctness benchmark (bounded).",
+      "source_commit_pr_receipt": "PR #161; article 007; evidence-program pilot C-4",
+      "stale_surface": "RESULTS/OPEN-QUESTIONS.md",
+      "exact_stale_wording": "Pre-repair row: 'OQ-103-5：Function OS v0.2 正确性 | ... | 计算正确性试点（候选 C-4），需先构建参考 oracle。| 无参考 oracle 时不强行推进。' — presented as an untouched future test.",
+      "contradiction_type": "OPEN_QUESTION_LAG",
+      "public_consequence": "An already-completed bounded benchmark was still presented as a pending future candidate.",
+      "required_correction": "Mark OQ-103-5 completed (bounded); record original defect, repair and evidence ceiling; add narrower OQ-103-6.",
+      "ci_should_have_caught": true,
+      "why_it_did_not": "No assertion that a resolved benchmark question must not remain worded as pending.",
+      "resolved": true
+    },
+    {
+      "stable_finding_id": "CTR-106-04",
+      "merged_source_fact": "Tasks 104 and 105 produced current results (editorial layer; bounded benchmark).",
+      "source_commit_pr_receipt": "PR #160, PR #161",
+      "stale_surface": "RESULTS/LATEST.md",
+      "exact_stale_wording": "Pre-repair '最近变化' section stopped at task 103 ('任务 103：建立最小可用 Evidence Program ...'); no 104/105 rows.",
+      "contradiction_type": "CURRENT_PUBLIC_WORDING_LAG",
+      "public_consequence": "Current results page omitted the two most recent merged iterations.",
+      "required_correction": "Add §任务 104 与 105 with both verdicts and non-claims.",
+      "ci_should_have_caught": true,
+      "why_it_did_not": "Same missing fail-closed current-wording assertion.",
+      "resolved": true
+    },
+    {
+      "stable_finding_id": "CTR-106-05",
+      "merged_source_fact": "Tasks 104/105 merged and current.",
+      "source_commit_pr_receipt": "PR #160, PR #161",
+      "stale_surface": "HUMAN-READING.md",
+      "exact_stale_wording": "Pre-repair '当前权威层次' listed '2. 任务 98—100 的现行函数与非函数裁决；' — omitted 104/105.",
+      "contradiction_type": "CURRENT_PUBLIC_WORDING_LAG",
+      "public_consequence": "Ten-minute reading route understated the current authoritative scope.",
+      "required_correction": "Extend the authority hierarchy to tasks 98—105.",
+      "ci_should_have_caught": false,
+      "why_it_did_not": "HUMAN-READING is narrative navigation; no automated currency assertion existed.",
+      "resolved": true
+    },
+    {
+      "stable_finding_id": "CTR-106-06",
+      "merged_source_fact": "Tasks 104/105 merged.",
+      "source_commit_pr_receipt": "PR #160, PR #161",
+      "stale_surface": "KNOWLEDGE/WHATS-NEW.md",
+      "exact_stale_wording": "Pre-repair timeline had no entries for tasks 104/105 (latest was 2026-07-29 task 100/101).",
+      "contradiction_type": "CURRENT_PUBLIC_WORDING_LAG",
+      "public_consequence": "Knowledge-experience 'what changed' timeline omitted the two latest iterations.",
+      "required_correction": "Append 104/105 change entries.",
+      "ci_should_have_caught": false,
+      "why_it_did_not": "Timeline is manually curated; no automated currency assertion.",
+      "resolved": true
+    },
+    {
+      "stable_finding_id": "CTR-106-07",
+      "merged_source_fact": "Task 105 executed the Function OS v0.2 correctness pilot (candidate C-4).",
+      "source_commit_pr_receipt": "PR #161; evidence-program",
+      "stale_surface": "evidence-program/README.md",
+      "exact_stale_wording": "Pre-repair portfolio state described only the task-103 Crossref pilot; no mention of the completed 105 bounded pilot.",
+      "contradiction_type": "EVIDENCE_PROGRAM_LAG",
+      "public_consequence": "Evidence Program portfolio understated its completed pilots.",
+      "required_correction": "Add 'Pilot portfolio state' noting the completed bounded 105 pilot and OQ-103-6.",
+      "ci_should_have_caught": false,
+      "why_it_did_not": "Portfolio description is manually maintained.",
+      "resolved": true
+    },
+    {
+      "stable_finding_id": "CTR-106-08",
+      "merged_source_fact": "Task 106 added explanatory article 008.",
+      "source_commit_pr_receipt": "task 106",
+      "stale_surface": "docs/editorial/source-manifest.json + MANIFEST.md",
+      "exact_stale_wording": "Pre-repair machine source-manifest existed (task 106 created it) but omitted article 008; planning MANIFEST omitted 008.",
+      "contradiction_type": "EDITORIAL_MANIFEST_LAG",
+      "public_consequence": "Article 008 would lack a machine-readable source record / planning entry.",
+      "required_correction": "Add 008 to source-manifest and planning MANIFEST.",
+      "ci_should_have_caught": false,
+      "why_it_did_not": "Manifest is generated by task 106's own tool; 008 added to the generator.",
+      "resolved": true
+    }
+  ]
+}

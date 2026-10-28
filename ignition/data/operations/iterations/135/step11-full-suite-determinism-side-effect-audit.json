@@ -1,0 +1,94 @@
+{
+  "schema_version": "ignition-135-step11-full-suite-determinism-side-effect-audit-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "11",
+  "status": "PASS",
+  "candidate_head_sha": "5d99b6863fd3d2bec0fe1d0b4e6151606d850b8b",
+  "full_suite_receipt": "ignition/data/operations/iterations/135/step10-candidate-full-regression-2.json",
+  "full_suite_result": {
+    "tests_run": 1082,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "natural_terminal_state": true,
+    "watchdog_used": false,
+    "clean_before": true,
+    "clean_after": true,
+    "generated_output_drift": []
+  },
+  "clean_gated_projection_preflight": {
+    "status": "PASS",
+    "require_clean": true,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "side_effect_detected": false,
+    "clean_tree_gate_pass": true,
+    "worktree_before_clean": true,
+    "worktree_after_clean": true,
+    "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_content_sha256": "9db8e0c9aba587d3d5d32a8f63542caded6d315fe29c57efae43b71cb492655c",
+    "tracked_path_count": 3065
+  },
+  "residual_non_growth": {
+    "residual_ledger_path": "ignition/data/operations/residual-ledger-r1.json",
+    "residual_ledger_sha256": "3dc7291912b53e6042c1ca7d65afc842616e7b2a6a80b558defd8e7520bb1783",
+    "residual_ledger_check": "RESIDUAL_LEDGER_OK entries=6 inherited_unchanged=3 resolved=3",
+    "entries": 6,
+    "inherited_unchanged": 3,
+    "resolved": 3,
+    "durability_historical_residual_count": 9,
+    "durability_sympy_environment_residual_count": 1,
+    "ledger_incremented_by_suite": false,
+    "residual_expanded": false
+  },
+  "path_manifest": {
+    "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "sha256": "2a99bbc55c95f89c0f160f754b6a0df66ed506255bab047bc929e82fd575d28c",
+    "tracked": 3065,
+    "manifest": 3065,
+    "missing": 0,
+    "stale": 0,
+    "unresolved": 0,
+    "duplicate": 0,
+    "category_drift": 0,
+    "anti_backflow": 0
+  },
+  "human_surface": {
+    "contract": "PASS",
+    "entries": 48,
+    "machine_components": 94,
+    "visible_graph_nodes": 82,
+    "typed_graph_edges": 87,
+    "source_hash_drift": 0,
+    "materiality_manifest_sha256": "eab9436725669042a6b363e4e166c48ab818680e9865067ec48a31f0e6421d7e"
+  },
+  "current_projection_determinism": {
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "surface_compiler": "PASS",
+    "current_surface_semantics": "PASS",
+    "two_pass_projection_check": "PASS passes=2 outputs=10"
+  },
+  "discovery_inventory": {
+    "runs": 2,
+    "inventory_equal": true,
+    "test_file_count": 172,
+    "test_file_sha256": "ee557f36361483aab3e7089f2591352cbee1a8a4e7087862ce9abe48cf8fca3b",
+    "test_case_count": 1082,
+    "test_id_sha256": "28fbc92c4a3c93b1add49e46286b97569e170c9c1cad24278d4a14f60407b3a8",
+    "loader_errors": 0,
+    "dynamic_test_set_detected": false,
+    "silent_skip_detected": false,
+    "import_side_effect_scope": "external temporary canonical migration directory only; no repository path mutation"
+  },
+  "prohibited_green_laundering": {
+    "full_suite_skipped": 0,
+    "added_skip_constructs_since_task134_baseline": 0,
+    "added_xfail_constructs_since_task134_baseline": 0,
+    "added_expected_failure_constructs_since_task134_baseline": 0,
+    "added_ignore_constructs_since_task134_baseline": 0,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Repository-local determinism, clean-tree, discovery-inventory and residual non-growth evidence for the exact candidate only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

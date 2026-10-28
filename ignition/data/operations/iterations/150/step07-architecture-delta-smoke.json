@@ -1,0 +1,69 @@
+{
+  "schema_version": "ignition-150-step07-architecture-delta-smoke-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "07",
+  "record_type": "ARCHITECTURE_DELTA_SMOKE",
+  "status": "ARCHITECTURE_DELTA_SMOKE_PASS_WITH_PROVENANCE_ONLY_AND_UPSTREAM_VISUAL_BLOCKER",
+  "formal_previous_commit": "2ce2e098d421256ff976a535ca3e0962f182ae72",
+  "lineage": {
+    "before": {"source_path":"ignition/data/operations/iterations/149/step07-archify-before-r0.json","source_sha256":"0ee0e9fad3b39c2da95da7e4941bc86f387bf1867bec76c02fa116dfd125e9e1","source_revision":"a1a1d102c3cd2fa12fc962b648b0eea62d8097cf","role":"FORMAL_TASK149_LINEAGE_SNAPSHOT","nodes":24,"edges":24},
+    "after": {"source_path":"ignition/data/operations/iterations/149/step07-archify-after-r0.json","source_sha256":"b3415845a682c9d8162a056da6402622505ce91f2c6658bf3f199fd9e6653049","source_revision":"14c2595d796494286caf31378173fd9dd027edcf","role":"FORMAL_TASK149_LINEAGE_SNAPSHOT","nodes":24,"edges":24},
+    "relationship":"FORMAL_TASK149_LINEAGE_PROVENANCE_ONLY_TOPOLOGY_SAME"
+  },
+  "provider": {"id":"archify","revision":"7a16d30322f5bd09c832386faa95d8c9a933f0c0","package_version":"2.17.0-dev.0","role":"DERIVED_ARTIFACT_PROVIDER_NOT_AUTHORITY"},
+  "comparison": {
+    "before": {"typed_path":"ignition/data/operations/iterations/150/delta-evidence/task150-before.json","typed_sha256":"68b01b63b4c36b5cc30ddf8526a8cc3c16164c783010dc4b0fd2b2027afe6ea7","html_path":"ignition/data/operations/iterations/150/delta-evidence/task150-before.html","html_sha256":"e99c5bbb0f819883e1dc5003389cd9bec0c097f3ba895e88ef0750a642b1bfe5","html_bytes":751906,"validate":"PASS","deliver":"PASS","visual_check":"PASS","visual_review":"pending"},
+    "delta": {"typed_path":"ignition/data/operations/iterations/150/delta-evidence/task150-delta-receipt.json","typed_sha256":"a41f4486eb88454da4dd37adb6d85593a07146a39179c5760a9b6f4b5007f7b1","html_path":"ignition/data/operations/iterations/150/delta-evidence/task150-delta.html","html_sha256":"0c03203600ea496e2d7b015c181b673f9e9e489b6c4141878c56551d3999390a","html_bytes":2157340,"validate":"PASS","deliver":"PASS","visual_check":"FAIL_UPSTREAM_WRAPPER","visual_review":"pending"},
+    "after": {"typed_path":"ignition/data/operations/iterations/150/delta-evidence/task150-after.json","typed_sha256":"447a4ecf69096c9c388772e906960accb41f03486c24a9efee89cfbc28703bb5","html_path":"ignition/data/operations/iterations/150/delta-evidence/task150-after.html","html_sha256":"a3f9ce3252b80c8818960c6352c9a767db81969093660c542b3a976edb6bd686","html_bytes":751906,"validate":"PASS","deliver":"PASS","visual_check":"PASS","visual_review":"pending"},
+    "semantic_classification": {
+      "complete": true,
+      "proof_level": "revision-pinned",
+      "component_changes": {"added":0,"changed":0,"evidenceChanged":0,"removed":0,"moved":0},
+      "connection_changes": {"added":0,"changed":0,"removed":0,"rerouted":0},
+      "boundary_changes": {"added":0,"changed":0,"removed":0,"geometryChanged":0},
+      "presentation_changed": false,
+      "provenance_changed": true,
+      "checks_passed": 28,
+      "check_count": 28
+    },
+    "delta_visual": {
+      "status":"FAIL_UPSTREAM_WRAPPER",
+      "diagnostics":3,
+      "diagnostic_code":"viewer/viewport-overflow",
+      "required_observations": [
+        {"theme":"light","viewport":"1440x900","scroll_height":1050,"ok":false},
+        {"theme":"light","viewport":"1600x1000","scroll_height":1074,"ok":false},
+        {"theme":"light","viewport":"1920x1080","scroll_height":1080,"ok":true},
+        {"theme":"light","viewport":"2048x1320","scroll_height":1320,"ok":true},
+        {"theme":"dark","viewport":"1440x900","scroll_height":1050,"ok":false},
+        {"theme":"dark","viewport":"2048x1320","scroll_height":1320,"ok":true}
+      ]
+    }
+  },
+  "fixtures": {
+    "manifest":"ignition/data/operations/iterations/150/fixtures/task150-step07-fail-closed.json",
+    "results": [
+      {"id":"extra-node","expected":"FAIL_TOPOLOGY_DRIFT"},
+      {"id":"extra-edge","expected":"FAIL_TOPOLOGY_DRIFT"},
+      {"id":"geometry-moved","expected":"PASS_TOPOLOGY_UNCHANGED_NOT_ARCHITECTURE_CHANGE"},
+      {"id":"provenance-only","expected":"PASS_PROVENANCE_ONLY"}
+    ]
+  },
+  "evidence_files": [
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-after-deliver.json","sha256":"3758e56e448f955bf97e043c1779e4a9ef0efd7c3bfa1be1f150e154f526bb57","bytes":835,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-after-validate.json","sha256":"a468db87834928f459f2709540770c7ebeb735514bb88d0d4bae8edcb3f90172","bytes":22838,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-after-visual-check.json","sha256":"f8e9621031045c3d46098ba325310af8b48ff82d15b46b1ca61b87cb6354a0ab","bytes":17162,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-after.html","sha256":"a3f9ce3252b80c8818960c6352c9a767db81969093660c542b3a976edb6bd686","bytes":751906,"kind":"html"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-after.json","sha256":"447a4ecf69096c9c388772e906960accb41f03486c24a9efee89cfbc28703bb5","bytes":19250,"kind":"typed_snapshot"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-before-deliver.json","sha256":"dee4e73de330e48a152b69e1ea95902bdd70d93ace1a6b716f74ca7850e73221","bytes":837,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-before-validate.json","sha256":"a468db87834928f459f2709540770c7ebeb735514bb88d0d4bae8edcb3f90172","bytes":22838,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-before-visual-check.json","sha256":"ee7005deb1ccb5bc817d84472a47c446354793cb8c97f88dd8ae5c27f00b5564","bytes":17170,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-before.html","sha256":"e99c5bbb0f819883e1dc5003389cd9bec0c097f3ba895e88ef0750a642b1bfe5","bytes":751906,"kind":"html"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-before.json","sha256":"68b01b63b4c36b5cc30ddf8526a8cc3c16164c783010dc4b0fd2b2027afe6ea7","bytes":19250,"kind":"typed_snapshot"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-delta-receipt.json","sha256":"a41f4486eb88454da4dd37adb6d85593a07146a39179c5760a9b6f4b5007f7b1","bytes":2063,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-delta-visual-check.json","sha256":"f5d96d9bd6f19c06f517804783cefdaddddaae55fa8d3316c5159ef586ba0d50","bytes":18621,"kind":"machine_receipt_json"},
+    {"path":"ignition/data/operations/iterations/150/delta-evidence/task150-delta.html","sha256":"0c03203600ea496e2d7b015c181b673f9e9e489b6c4141878c56551d3999390a","bytes":2157340,"kind":"html"}
+  ],
+  "scope_freeze": {"task150_scope":"ARCHIFY_ONLY","agent_reach":"NO_CHANGE","authenticated_channels":"NO_AUTHENTICATED_ADMISSION","installation":"NO_INSTALL_OR_AUTO_UPGRADE","live_external_invocation":"UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN","current_admission":"NOT_ADMITTED","step04_blocker":"INHERITED_UPSTREAM_WRAPPER_BLOCKER"},
+  "claim_ceiling": "Task150 Step07 proves only a Before/Delta/After smoke over two formal provenance-only lineage snapshots, exact topology guard fixtures and a revision-pinned semantic comparison. It does not claim architecture change from geometry or provenance movement, resolve the Step04 Delta-shell blocker, establish Current integration, a default renderer, architecture truth, runtime impact, Owner acceptance, production readiness, authenticated access, external truth or live external completion."
+}
