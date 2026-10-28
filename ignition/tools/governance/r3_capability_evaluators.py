@@ -249,7 +249,7 @@ CAPABILITY_SPECS = {
             "compatibility_fail_closed": "compatibility_policy",
             "sensitive_local_first": "sensitive_data_network_local_first",
             "hardware_request_only": "experiment_hardware_request_result",
-            "no_ecosystem_overclaim": "capability_negotiation",
+            "no_ecosystem_overclaim": "claim_ceiling",
             "stop_rollback_present": "stop_rollback",
         },
     },

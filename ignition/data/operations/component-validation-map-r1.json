@@ -221,6 +221,19 @@
       "import_roots": [
         "ignition"
       ]
+    },
+    {
+      "target_id": "g_open_scientific_context_protocol",
+      "domain": "G",
+      "modules": [
+        "tests.context_protocol.test_open_scientific_context_protocol_gate",
+        "tests.context_protocol.test_scientific_context_protocol_repair_r2",
+        "tests.test_r3_open_scientific_context_protocol"
+      ],
+      "evidence": "Existing Q45 direct gate, R2 evidence-binding, and R3 semantic-evaluator tests cover the declared context protocol contract, pilot, and validator paths.",
+      "import_roots": [
+        "ignition"
+      ]
     }
   ],
   "components": [
@@ -798,6 +811,53 @@
         "EVIDENCE_UPDATE"
       ],
       "evidence": "Q43 pilot, reproduction records, and fail-closed fixture cases."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 protocol contract schema, architecture decision, and frozen semantic boundary."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_gate_validator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 fail-closed CLI, R2 evidence-binding record, and R3 semantic evaluator with focused negative controls."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 repository-local pilot, controlled R2 reproduction, and versioned protocol examples."
     }
   ]
 }

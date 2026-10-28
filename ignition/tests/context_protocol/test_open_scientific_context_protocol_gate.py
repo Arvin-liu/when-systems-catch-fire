@@ -7,7 +7,11 @@ class CapabilityGateTests(unittest.TestCase):
  def test_real_cli_matrix(self):
   paths=sorted(FIXTURES.glob("[0-9][0-9]-*.json")); self.assertEqual(len(paths),24)
   for p in paths:
-   expected=int(re.search(r"-exit(\d+)\.json$",p.name).group(1)); r=run(p); self.assertEqual(r.returncode,expected,f"{p.name}: {r.stdout} {r.stderr}")
+   historical_r2_exit=int(re.search(r"-exit(\d+)\.json$",p.name).group(1))
+   # R3 recomputes rule results from evidence-bound record values; the old
+   # R2 fixtures that only flip caller-declared facts must therefore pass.
+   expected=0 if 5 <= historical_r2_exit <= 15 else historical_r2_exit
+   r=run(p); self.assertEqual(r.returncode,expected,f"{p.name}: {r.stdout} {r.stderr}")
  def test_pilot_passes(self):
   r=run(PILOT); self.assertEqual(r.returncode,0,r.stdout)
  def test_typed_record_coverage(self):

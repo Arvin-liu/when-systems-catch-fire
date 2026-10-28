@@ -1419,7 +1419,8 @@
         "tests/test_human_front_door.py",
         "tests/test_overall_architecture.py",
         "tests/test_generated_output_authority.py",
-        "docs/architecture/interactive-system-map.md"
+        "docs/architecture/interactive-system-map.md",
+        "pages/generated/ignition-system-map.svg"
       ]
     },
     {
@@ -3153,7 +3154,8 @@
       },
       "path_patterns": [
         "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
-        "docs/context_protocol/"
+        "docs/context_protocol/",
+        "docs/repair-r3/repair-r3/open_scientific_context_protocol-freeze.md"
       ]
     },
     {
@@ -3174,7 +3176,9 @@
       },
       "path_patterns": [
         "tools/context_protocol/",
-        "tests/context_protocol/"
+        "tests/context_protocol/",
+        "tests/repro_rb09_open_scientific_context_protocol_r2_evidence.txt",
+        "tests/test_r3_open_scientific_context_protocol.py"
       ]
     },
     {
@@ -3195,7 +3199,10 @@
       },
       "path_patterns": [
         "data/context_protocol/pilot-scientific-context-protocol-i1.json",
-        "data/context_protocol/fixtures/"
+        "data/context_protocol/fixtures/",
+        "data/context_protocol/repair-r2-controlled-reproduction.json",
+        "data/context_protocol/repro/original-evidence-binding-failure.json",
+        "data/context_protocol/repro/scp-r0-context-protocol-sample.json"
       ]
     }
   ],

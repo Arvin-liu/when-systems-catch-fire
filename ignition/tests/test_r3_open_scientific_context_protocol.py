@@ -55,6 +55,9 @@ class OpenScientificContextProtocolR3Tests(unittest.TestCase):
     def _bundle(self):
         return build_bundle(self.config, self.matrix, self.rule_fields)
 
+    def test_no_ecosystem_rule_uses_claim_ceiling_field(self):
+        self.assertEqual(self.rule_fields["no_ecosystem_overclaim"], "claim_ceiling")
+
     def test_positive_pilot_passes(self):
         b = self._bundle()
         p = write_bundle(b)
