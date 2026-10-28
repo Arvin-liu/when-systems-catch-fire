@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.2.0",
+  "method_candidate": "Ignition Iteration Method 1.4.0 Candidate — Continuous Stage Snapshot Publication",
+  "authority": "data/operations/stage-snapshots.json",
+  "registry_state": {
+    "candidate": false,
+    "accepted": true,
+    "current": true,
+    "merged_to_main": true
+  },
+  "projection_limit": 5,
+  "axis_invariants": [
+    "PUBLISHED_SNAPSHOT != ACCEPTED",
+    "PUBLISHED_SNAPSHOT != CURRENT",
+    "PUBLISHED_SNAPSHOT != ACTIVATED",
+    "SNAPSHOT_MERGED_TO_MAIN != CANDIDATE_PAYLOAD_MERGED_TO_MAIN",
+    "HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE"
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "STAGE-R5A-20260726-001",
+      "title": "R5-A 两轮窄修复已验收，阶段快照已发布",
+      "summary": "PR #130 的两轮具体仓库合同修复已分别独立验收并普通合并到来源分支；R5-A 堆叠候选本身仍为 Draft，尚未完整验收。",
+      "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1",
+      "produced_at": "2026-07-26T14:45:43+08:00",
+      "responsibility": {
+        "responsible_actor": {
+          "actor_ref": "org:github/arvin-liu/when-systems-catch-fire"
+        },
+        "publisher_actor": {
+          "actor_ref": "org:github/arvin-liu/when-systems-catch-fire"
+        },
+        "execution_agents": [
+          {
+            "name": "Codex agents",
+            "role": "Implementation and evidence collection tools",
+            "evidence_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/130"
+          }
+        ],
+        "automation_workflows": [
+          {
+            "name": "GitHub Actions",
+            "role": "Candidate validation automation",
+            "evidence_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/actions"
+          }
+        ],
+        "responsibility_record": {
+          "record_id": "RESP-STAGE-R5A-20260726-001",
+          "effective_at": "2026-07-26T14:45:43+08:00",
+          "supersedes_record_id": null,
+          "change_reason": "Initial accountable actor record for this snapshot candidate.",
+          "actor_change_requires_new_snapshot_revision": true
+        },
+        "founder_responsibility_inferred": false,
+        "upstream_responsibility_inferred": false
+      },
+      "source": {
+        "repository": "Arvin-liu/when-systems-catch-fire",
+        "pull_request": 134,
+        "pull_request_url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
+        "branch": "agent/iteration-method-1-4-continuous-stage-snapshot-publication-r1-20260726",
+        "exact_head": "48f87616e01e0ec200c75509241b7df64634c5ab",
+        "candidate_payload_merged_to_main": false,
+        "snapshot_record_merged_to_main": true
+      },
+      "evidence": {
+        "relay_repository": "Arvin-liu/1111",
+        "relay_pull_request": 42,
+        "relay_pull_request_url": "https://github.com/Arvin-liu/1111/pull/42",
+        "relay_exact_head": "8a5bc8edc9d0b8175f73311dced8078e1cf24397",
+        "entries": [
+          "https://github.com/Arvin-liu/when-systems-catch-fire/pull/130",
+          "https://github.com/Arvin-liu/when-systems-catch-fire/pull/131",
+          "https://github.com/Arvin-liu/when-systems-catch-fire/pull/133",
+          "https://github.com/Arvin-liu/1111/pull/42"
+        ]
+      },
+      "lifecycle_state": "IMPLEMENTED_PENDING_REVIEW",
+      "publication_status": "PUBLISHED_SNAPSHOT",
+      "result_type": "REPAIR",
+      "outcome": "PARTIAL",
+      "completed": [
+        "两轮具体仓库合同修复分别获得独立 exact-head 验收并进入 PR #130 来源分支",
+        "第一轮窄修复接受头 a2fd355fe6a3e55627c812ed3abd51ff41b8a008 经 PR #131 普通合并为 062f223f5da536d698d070481edd2acb0687b9c6",
+        "最新 11-case 窄修复接受头为 c4576972047a47045e95b1c794570597f58e6c9a",
+        "PR #133 以普通 merge 产生 ff158ba0351d68918a135ec3446f4f68ddf9387b",
+        "R5-A 阶段快照记录经 PR #134 合并入 Main，并经受控同步 R1-20260726 由 PR_VISIBLE 升为 PUBLISHED_SNAPSHOT（仍非 Accepted/Current/Activated）",
+        "R5-A 已发布阶段快照精确头 48f87616e01e0ec200c75509241b7df64634c5ab 经独立 exact-head 验收（validate_stage_snapshots.py --verify-remotes 实时重取 GitHub：remote_verified=true，status=PASS），与实时 PR #134 头一致；phase-B 受控同步提交 c5236e27 经独立 exact-head 验收为 Main 当前头"
+      ],
+      "incomplete": [
+        "R5-A 宪章 PR #130 仍为 OPEN / DRAFT，其候选整体仍待独立 exact-head 验收",
+        "R5-A 候选载荷仍未合并入 Main，未 Accepted/Current/Activated",
+        "R5-B、R5-C 与 R6 未启动"
+      ],
+      "claim_ceiling": "仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。",
+      "known_limitations_and_blockers": [
+        "R5-A 已发布阶段快照的精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）；但 R5-A 候选（宪章 PR #130）仍 OPEN / DRAFT，其整体精确头验收仍待账号所有者独立执行",
+        "R5-A 宪章来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收（候选层面，非本已发布快照层面）",
+        "本快照只公开可审计摘要和证据入口，不发布或激活候选载荷；R5-A 仍为 PUBLISHED_SNAPSHOT，accepted/current/activated 仍 false（PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED 不变）"
+      ],
+      "accepted": false,
+      "current": false,
+      "activated": false,
+      "affects_formal_capability": false,
+      "practical_application_allowed": false,
+      "privacy": {
+        "public_only": true,
+        "sensitive_material_included": false,
+        "secrets_included": false
+      },
+      "relationships": {
+        "predecessors": [],
+        "successors": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "recovery": {
+        "revision_path": "Submit a successor snapshot that names this snapshot as predecessor and declares the changed facts.",
+        "withdrawal_path": "Set publication_status to WITHDRAWN_SNAPSHOT, outcome to WITHDRAWN, preserve this ID, and record the reason.",
+        "rollback_path": "Revert only the registry record and deterministic homepage projection; never merge or rewrite the R5-A candidate payload as a side effect."
+      },
+      "homepage": {
+        "visible": true,
+        "priority": 100,
+        "sort_time": "2026-07-26T14:45:43+08:00",
+        "summary": "11-case 窄修复已验收并合入来源分支；R5-A 阶段快照记录已合并入 Main 并经受控同步发布为 PUBLISHED_SNAPSHOT；其精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）。R5-A 候选整体仍非 Accepted/Current/Activated，宪章 PR #130 仍 OPEN/DRAFT。"
+      },
+      "remote_attestation": {
+        "verified_at": "2026-07-26T21:26:30+08:00",
+        "verifier": "WorkBuddy exact-head acceptance live GitHub refetch (R1-20260726)",
+        "verification_scope": "github_remote_identity_and_exact_head_at_recorded_time",
+        "source_pr_state": "MERGED",
+        "source_pr_draft": false,
+        "source_branch": "agent/iteration-method-1-4-continuous-stage-snapshot-publication-r1-20260726",
+        "source_head": "48f87616e01e0ec200c75509241b7df64634c5ab",
+        "relay_pr_state": "OPEN",
+        "relay_pr_draft": true,
+        "relay_head": "8a5bc8edc9d0b8175f73311dced8078e1cf24397"
+      }
+    }
+  ]
+}

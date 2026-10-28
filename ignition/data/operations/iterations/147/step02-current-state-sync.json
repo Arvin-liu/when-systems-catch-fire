@@ -1,0 +1,70 @@
+{
+  "schema_version": "ignition-147-step02-current-state-sync-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "02",
+  "status": "PASS",
+  "current_sync": {
+    "identity_impact": "PRESENTATION_ONLY",
+    "architecture_frozen": true,
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "current_task": "IGNITION-20260828-147",
+    "current_task_status": "IN_PROGRESS",
+    "current_task_terminal": false,
+    "current_release_phase": "RUNNING",
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "projection": {
+    "current_facts_json": "PASS",
+    "current_facts_markdown": "PASS",
+    "current_snapshot": "PASS",
+    "machine_surfaces": [
+      "project-current-state",
+      "ai-cold-start",
+      "ai-agents-handoff",
+      "machine-entry",
+      "architecture",
+      "state-changelog"
+    ],
+    "homepage_identity_surface": "UNCHANGED_BY_GENERATOR"
+  },
+  "validation": {
+    "current_state_sync": "PASS",
+    "current_task_lineage": "PASS",
+    "formal_task_lifecycle": "PASS",
+    "open_obligation_registry": "PASS",
+    "current_release_lifecycle": "PASS",
+    "current_volatile_fact_registry": "PASS",
+    "iteration_boundary_compatibility": "PASS",
+    "release_candidate_task_identity": "PASS",
+    "human_front_door_and_compiler_tests": {
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS"
+    }
+  },
+  "production_handoff": {
+    "next_action": "AWAIT_OWNER_PRODUCTION_BRIEF",
+    "automatic_next_engineering_task": false,
+    "automatic_new_article_or_book_body": false
+  },
+  "open_obligation": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "status": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "new_live_invocations": 0,
+    "retry": "NOT_AUTHORIZED"
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "new_registry_or_typed_relation": false,
+    "external_live_process_started": false,
+    "automatic_task148_created_or_started": false,
+    "self_witness_formal_commit_created": false
+  },
+  "claim_ceiling": "Repository-local Task147 Current synchronization and bounded Human Front Door compiler evidence only; architecture identity and map geometry remain frozen, the open live obligation remains Owner-deferred, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

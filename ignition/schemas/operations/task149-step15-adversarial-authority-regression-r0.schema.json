@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step15-adversarial-authority-regression-r0.schema.json",
+  "title": "Task149 Step15 adversarial provider authority regression",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "observed_at", "formal_previous_commit", "fixture_only", "external_calls", "automated_regression", "fixtures", "regression_invariants", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step15-adversarial-authority-regression-r0"}, "task_id": {"const": "IGNITION-20260831-149"}, "step": {"const": "15"}, "status": {"const": "ADVERSARIAL_AUTHORITY_REGRESSION_PASS"}, "observed_at": {"type": "string", "minLength": 1}, "formal_previous_commit": {"$ref": "#/$defs/sha"}, "fixture_only": {"const": true}, "external_calls": {"const": 0}, "automated_regression": {"const": true},
+    "fixtures": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"$ref": "#/$defs/fixture"}},
+    "regression_invariants": {"type": "object", "additionalProperties": false, "required": ["provider_local_policy_is_ignition_global_policy", "provider_output_is_external_truth", "provider_health_is_user_task_success", "derived_artifact_is_canonical_architecture", "backend_presence_is_credential_authorization", "provider_readme_is_ignition_current", "all_escalations_blocked", "authenticated_channel_admission", "current_integration", "production_readiness", "live_external_invocation"], "properties": {"provider_local_policy_is_ignition_global_policy": {"const": false}, "provider_output_is_external_truth": {"const": false}, "provider_health_is_user_task_success": {"const": false}, "derived_artifact_is_canonical_architecture": {"const": false}, "backend_presence_is_credential_authorization": {"const": false}, "provider_readme_is_ignition_current": {"const": false}, "all_escalations_blocked": {"const": true}, "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"}, "current_integration": {"const": "NOT_CURRENT_INTEGRATION"}, "production_readiness": {"const": "NOT_PRODUCTION_READY"}, "live_external_invocation": {"const": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"}}},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "fixture": {"type": "object", "additionalProperties": false, "required": ["fixture_id", "provider_id", "input_claim", "threatened_boundary", "expected_decision", "actual_decision", "escalation_blocked", "external_truth_claimed", "current_capability_promoted", "diagnostic"], "properties": {"fixture_id": {"type": "string", "minLength": 1}, "provider_id": {"enum": ["archify", "agent-reach"]}, "input_claim": {"type": "string", "minLength": 1}, "threatened_boundary": {"type": "string", "minLength": 1}, "expected_decision": {"enum": ["PROVIDER_LOCAL_POLICY", "REJECT_UNPROVEN_EXTERNAL_TRUTH", "REJECT_HEALTH_AS_SUCCESS", "REJECT_MISSING_CANONICAL_PROVENANCE", "AUTH_REQUIRED", "REJECT_CLAIM_CEILING"]}, "actual_decision": {"type": "string", "minLength": 1}, "escalation_blocked": {"const": true}, "external_truth_claimed": {"const": false}, "current_capability_promoted": {"const": false}, "diagnostic": {"type": "string", "minLength": 1}}}
+  }
+}

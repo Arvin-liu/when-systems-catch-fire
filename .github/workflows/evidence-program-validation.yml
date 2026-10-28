@@ -1,0 +1,36 @@
+name: evidence-program-validation
+
+on:
+  push:
+    branches: ["main", "agent/**"]
+    paths:
+      - "ignition/evidence-program/**"
+      - ".github/workflows/evidence-program-validation.yml"
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "ignition/evidence-program/**"
+      - ".github/workflows/evidence-program-validation.yml"
+
+defaults:
+  run:
+    working-directory: ignition
+
+jobs:
+  evidence-program:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for ancestry checks)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pytest
+        run: python -m pip install --quiet pytest
+      - name: Validate Evidence Program (schema + preregistration-before-result + post-hoc + provenance + leakage)
+        run: python evidence-program/tools/validate_evidence_program.py --root evidence-program
+      - name: Run regression fixtures
+        run: python -m pytest evidence-program/tests/ -q

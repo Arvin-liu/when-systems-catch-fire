@@ -1,0 +1,8 @@
+{
+  "schema_version": "ignition-durability-namespace-r1",
+  "default_policy": "DENY_CROSS_NAMESPACE",
+  "binding_fields": ["principal_id", "workspace_id", "episode_id", "run_id", "memory_scope", "pack_activation_scope", "executor_lease_scope", "snapshot_scope", "soft_context_scope", "namespace_id"],
+  "principal_types": ["OWNER", "OPERATOR", "SYSTEM", "EXECUTOR"],
+  "cross_namespace_rule": "EXPLICIT_DELEGATION_WITH_SCOPE_EXPIRY_ISSUER_APPROVAL_POLICY_DIGEST",
+  "prohibited_capabilities": ["oauth", "sso", "account_provisioning", "implicit_cross_namespace_read"]
+}

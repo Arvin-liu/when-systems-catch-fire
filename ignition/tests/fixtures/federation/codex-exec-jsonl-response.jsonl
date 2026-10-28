@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"fixture-codex-thread-001"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"type":"agent_message","text":"Read-only disposable fixture response"},"progress_fraction":0.75}
+{"type":"turn.completed","usage":{"input_tokens":3,"output_tokens":5}}

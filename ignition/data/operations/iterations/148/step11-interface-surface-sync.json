@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-20260829-148",
+  "step": "11",
+  "input_head": "c3bc30e2f742ce9024ca34f8587a85503e3340dd",
+  "change_classifications": [
+    "OPERATIONS_METHOD",
+    "INTERFACE_CHANGE",
+    "CAPABILITY_ADDITION"
+  ],
+  "source_registry": {
+    "path": "ignition/data/operations/synchronization-surfaces.json",
+    "registry_version": "1.7.0",
+    "trigger_classification": "OPERATIONS_METHOD",
+    "required_surface_count": 20
+  },
+  "surface_decisions": [
+    {
+      "surface_id": "human.readme",
+      "locator": ".github/README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step 10 already installed and validated the complete AI-first homepage entry, three modes, input-object guard and minimal invocation; duplicating it in Step 11 would create drift.",
+      "evidence_refs": ["ignition/data/operations/iterations/148/step10-homepage-ai-first-entry.json", ".github/README.md#2-点火操作法--如何使用"]
+    },
+    {
+      "surface_id": "human.reading",
+      "locator": "HUMAN-READING.md",
+      "decision": "CHANGE",
+      "reason": "The purpose table must offer the Operating Method rather than only repository-reading routes when a person wants Ignition to process an object.",
+      "evidence_refs": ["ignition/HUMAN-READING.md", "ignition/OPERATING-METHOD.md"]
+    },
+    {
+      "surface_id": "human.results",
+      "locator": "RESULTS/README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The interface change creates no substantive result, correction, evidence or Results Book entry; the results index remains source-faithful and unchanged.",
+      "evidence_refs": ["ignition/RESULTS/README.md", "ignition/data/operations/iterations/148/step11-interface-surface-sync.json"]
+    },
+    {
+      "surface_id": "human.knowledge_experience",
+      "locator": "KNOWLEDGE/README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The generated knowledge-experience entry indexes knowledge assets, not operation invocation; no source card, alias, dependency or reading-layer input changed in Step 11.",
+      "evidence_refs": ["ignition/KNOWLEDGE/README.md", "ignition/data/governance/knowledge-experience/manifest.json"]
+    },
+    {
+      "surface_id": "human.current_state",
+      "locator": "docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Current-state prose must separate the ordinary-task Operating Method from the repository-change Iteration Method without occupying the Iteration version field.",
+      "evidence_refs": ["ignition/docs/project-current-state.md#当前操作法", "ignition/OPERATING-METHOD.md"]
+    },
+    {
+      "surface_id": "human.summary",
+      "locator": "SUMMARY.md",
+      "decision": "CHANGE",
+      "reason": "The authority navigation must expose both the Operating Method and its machine capability registry before the subordinate Iteration Method.",
+      "evidence_refs": ["ignition/SUMMARY.md#现行权威", "ignition/data/operations/ignition-operation-capability-registry-r1.json"]
+    },
+    {
+      "surface_id": "human.usage",
+      "locator": "docs/USAGE.md",
+      "decision": "CHANGE",
+      "reason": "Usage must tell a zero-background user how to supply a repository link and input object, preserve READ_ONLY_RUN and reach the minimal invocation.",
+      "evidence_refs": ["ignition/docs/USAGE.md#from-where", "ignition/OPERATING-METHOD.md"]
+    },
+    {
+      "surface_id": "human.ai_guide",
+      "locator": "docs/ai-assistant-usage-reference.md",
+      "decision": "CHANGE",
+      "reason": "The long-form AI guide previously routed first-time use through repository reading and Iteration; it now needs the general Operating Method and capability gate.",
+      "evidence_refs": ["ignition/docs/ai-assistant-usage-reference.md", "ignition/data/operations/ignition-operation-capability-registry-r1.json"]
+    },
+    {
+      "surface_id": "ai.start",
+      "locator": "AI-START-HERE.md",
+      "decision": "CHANGE",
+      "reason": "Cold start must default ordinary tasks to Operating Method and READ_ONLY_RUN and reserve Iteration Method for explicit Ignition self-modification.",
+      "evidence_refs": ["ignition/AI-START-HERE.md#先判定使用点火还是修改点火", "ignition/OPERATING-METHOD.md"]
+    },
+    {
+      "surface_id": "agent.handoff",
+      "locator": "AI-HANDOFF.md",
+      "decision": "CHANGE",
+      "reason": "Handoff must preserve run mode, input-object status and Current operation authority instead of requiring Iteration Method for every new Agent.",
+      "evidence_refs": ["ignition/AI-HANDOFF.md#权威链", "ignition/data/operations/ignition-run-output-contract-r1.json"]
+    },
+    {
+      "surface_id": "machine.llms",
+      "locator": "llms.txt",
+      "decision": "CHANGE",
+      "reason": "The machine entrance must identify Operating Method as the primary user-task authority and Iteration Method as an explicit repository-change sub-protocol.",
+      "evidence_refs": ["ignition/llms.txt", "ignition/data/operations/ignition-operation-capability-registry-r1.json"]
+    },
+    {
+      "surface_id": "release.changelog",
+      "locator": "CHANGELOG.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "This Draft candidate has not been accepted or merged; released-history prose must not record it as a Main release. The command requires the append-only state delta in Step 12 instead.",
+      "evidence_refs": ["ignition/CHANGELOG.md", "ignition/data/operations/iterations/148/step11-interface-surface-sync.json"]
+    },
+    {
+      "surface_id": "release.state_changelog",
+      "locator": "STATE-CHANGELOG.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The command explicitly reserves the Task148 state delta for Step 12 after independent Operating Method identity, version and propagation closure are established.",
+      "evidence_refs": ["ignition/STATE-CHANGELOG.md", "ignition/data/operations/iterations/148/step11-interface-surface-sync.json"]
+    },
+    {
+      "surface_id": "release.versioning",
+      "locator": "docs/VERSIONING.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Operating Method version archaeology and its independent 1.0.0 identity are command-mandated Step 12 work; Step 11 must not reuse or overwrite current_method 1.4.0.",
+      "evidence_refs": ["ignition/docs/VERSIONING.md", "ignition/data/operations/current-snapshot-r1.json"]
+    },
+    {
+      "surface_id": "method.operating",
+      "locator": "OPERATING-METHOD.md",
+      "decision": "CHANGE",
+      "reason": "The new canonical use-layer method and its interface role are registered as an independently blocking synchronization surface.",
+      "evidence_refs": ["ignition/OPERATING-METHOD.md", "ignition/data/operations/synchronization-surfaces.json"]
+    },
+    {
+      "surface_id": "method.iteration",
+      "locator": "ITERATION.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The Iteration Method semantics remain intact; the synchronization registry and entry surfaces now correctly make it subordinate only for REPOSITORY_CHANGE_RUN.",
+      "evidence_refs": ["ignition/ITERATION.md", "ignition/data/operations/synchronization-surfaces.json"]
+    },
+    {
+      "surface_id": "method.task_template",
+      "locator": "templates/operations/task-command-template.md",
+      "decision": "CHANGE",
+      "reason": "The mutation command template needs an eligibility gate proving Operating Method classified REPOSITORY_CHANGE_RUN before the template can be used.",
+      "evidence_refs": ["ignition/templates/operations/task-command-template.md", "ignition/OPERATING-METHOD.md"]
+    },
+    {
+      "surface_id": "method.result_template",
+      "locator": "templates/operations/execution-result-template.md",
+      "decision": "CHANGE",
+      "reason": "The repository-change result template must distinguish itself from ordinary-run unified output and align its Iteration Method reference with Current 1.4.0.",
+      "evidence_refs": ["ignition/templates/operations/execution-result-template.md", "ignition/data/operations/ignition-run-output-contract-r1.json"]
+    },
+    {
+      "surface_id": "method.review_template",
+      "locator": "templates/operations/independent-review-template.md",
+      "decision": "CHANGE",
+      "reason": "The repository-change review template must be gated by REPOSITORY_CHANGE_RUN and align its Iteration Method reference with Current 1.4.0.",
+      "evidence_refs": ["ignition/templates/operations/independent-review-template.md", "ignition/OPERATING-METHOD.md"]
+    },
+    {
+      "surface_id": "machine.stage_snapshots",
+      "locator": "data/operations/stage-snapshots.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Step 11 creates no stage-snapshot request or publication transition; interface synchronization must not manufacture Accepted, Current, Activated or homepage visibility facts.",
+      "evidence_refs": ["ignition/data/operations/stage-snapshots.json", "ignition/docs/operations/stage-snapshot-publication.md"]
+    }
+  ],
+  "additional_surface_decisions": [
+    {
+      "locator": "docs/AI-USAGE.md",
+      "decision": "CHANGE",
+      "reason": "The concise AI usage page now routes ordinary tasks through Operating Method and the unified output contract.",
+      "evidence_refs": ["ignition/docs/AI-USAGE.md"]
+    },
+    {
+      "locator": "docs/AI-PROMPT-TEMPLATES.md",
+      "decision": "CHANGE",
+      "reason": "The prompt collection now includes the minimal object-run invocation and a Current-first cold-start template.",
+      "evidence_refs": ["ignition/docs/AI-PROMPT-TEMPLATES.md"]
+    },
+    {
+      "locator": "data/operations/synchronization-surfaces.json",
+      "decision": "CHANGE",
+      "reason": "Registry 1.7.0 declares method.operating and makes method.iteration explicitly derived from that use-layer route.",
+      "evidence_refs": ["ignition/data/operations/synchronization-surfaces.json"]
+    },
+    {
+      "locator": "data/operations/project-components.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component identity, version and hidden/map disposition belong to the Step 12 version archaeology and propagation closure, not this interface-only step.",
+      "evidence_refs": ["ignition/data/operations/project-components.json"]
+    },
+    {
+      "locator": "data/architecture/current-facts.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Current facts remain compiler-owned; Step 12 will add any independent Operating Method fact through canonical derivation rather than hand editing this projection.",
+      "evidence_refs": ["ignition/data/architecture/current-facts.json", "ignition/tools/current_surface_compiler.py"]
+    },
+    {
+      "locator": "data/operations/current-snapshot-r1.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The generated snapshot remains untouched until Step 12 updates canonical lifecycle/version sources and recompiles all declared Current surfaces.",
+      "evidence_refs": ["ignition/data/operations/current-snapshot-r1.json", "ignition/tools/current_surface_compiler.py"]
+    },
+    {
+      "locator": "data/governance/knowledge-experience/manifest.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No knowledge-experience source input changed; rewriting the generated manifest would create unrelated churn and a false knowledge delta.",
+      "evidence_refs": ["ignition/data/governance/knowledge-experience/manifest.json", "ignition/KNOWLEDGE/README.md"]
+    },
+    {
+      "locator": "data/governance/human-surface/materiality-manifest.json",
+      "decision": "CHANGE",
+      "reason": "Selected Human Surface records preserve source fingerprints, so the deterministic manifest must refresh after AI handoff, cold-start, machine-entry and current-state prose changes.",
+      "evidence_refs": ["ignition/data/governance/human-surface/materiality-manifest.json", "ignition/tools/governance/build_claim_browsers.py"]
+    },
+    {
+      "locator": "docs/human/function-assets/entries/*.md + docs/human/nonfunction-assets/entries/*.md",
+      "decision": "CHANGE",
+      "reason": "Thirteen selected human records are deterministic provenance projections of the changed interface sources; their source fingerprints refresh without changing claim content or status.",
+      "evidence_refs": ["ignition/docs/human/function-assets/entries/", "ignition/docs/human/nonfunction-assets/entries/", "ignition/tools/governance/build_claim_browsers.py"]
+    }
+  ],
+  "step11_preserved_digests": {
+    "CHANGELOG.md": "27e2dd3b82e719071400c04bbfd2a4b7c4ce9d0de8b3d65b0cfe9f7706575600",
+    "ITERATION.md": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca",
+    "KNOWLEDGE/README.md": "40c93cd228f2866e77d0f9db45a1ee15bc269f340d7b61a8971e158a87d3ac96",
+    "RESULTS/README.md": "31f02481625673b3da272795d913748883b5c655150b66b8e18600bbbe1c905b",
+    "STATE-CHANGELOG.md": "c6732e51b0a884d1ebef7c8b4e25058e205f0b98c3d91fb172625aacebf061ee",
+    "data/architecture/current-facts.json": "e9a0d5d07ea30397f99139030e99b6ca04c666ef2df779f2117caf9572d3442d",
+    "data/governance/knowledge-experience/manifest.json": "b58af495b54805648a459acd8316662fd7bd426f3b7ecf2823ad1a0a8af945fb",
+    "data/operations/current-snapshot-r1.json": "54adb553d0689b0478793c0749dfdf721cd87d193c788ce36d5c5f4369f147f7",
+    "data/operations/project-components.json": "6068445f1cc3886f8854d0f568a8eb3241118dd5493e0568d3eff19ee6a35589",
+    "data/operations/stage-snapshots.json": "50dda5d00c06305a357476bc153ce03289cda260b29e90a42a0edb335cfd8746",
+    "docs/VERSIONING.md": "a15faebdeacc60e4cd6832a3a96b7adecfdaebe82f8396f8de685a00e21a6967"
+  },
+  "validation": [
+    {
+      "name": "interface-sync-contract",
+      "command": "python3 tools/operations/validate_ignition_interface_sync.py --enforce-step11-preserved-digests",
+      "outcome": "PASS",
+      "evidence": "declared=20 change=12 no_change=8 additional=9 preserved=11 historical_rewrites=0"
+    },
+    {
+      "name": "operating-method-registry-playbooks-output",
+      "command": "python3 tools/validate_ignition_operating_method.py --check && python3 tools/validate_ignition_operation_capability_registry.py --check && python3 tools/operations/validate_ignition_operation_playbooks.py --check && python3 tools/operations/validate_ignition_run_output.py --check",
+      "outcome": "PASS",
+      "evidence": "boundaries=30 priority_tiers=6; operations=19 packs=10 statuses=6; playbooks=15 excluded=4 categories=11; semantics=15 guards=6 fixtures=12"
+    },
+    {
+      "name": "focused-interface-regression",
+      "command": "python3 -m unittest tests.test_ignition_interface_sync tests.test_ignition_operating_method tests.test_ignition_operation_capability_registry tests.test_ignition_operation_playbooks tests.test_ignition_operation_lifecycle tests.test_ignition_run_output tests.test_human_front_door",
+      "outcome": "PASS",
+      "evidence": "69 tests passed"
+    },
+    {
+      "name": "iteration-synchronization-registry",
+      "command": "python3 tools/validate_iteration_sync.py",
+      "outcome": "PASS",
+      "evidence": "16 manifests checked; implementation consistency and repository synchronization closure PASS"
+    },
+    {
+      "name": "human-surface-and-front-door",
+      "command": "python3 tools/governance/build_claim_browsers.py --check && python3 tools/governance/validate_human_surface_contract.py && python3 tools/validate_human_front_door.py",
+      "outcome": "PASS",
+      "evidence": "function_machine=6030 function_human=24 nonfunction_machine=17635 nonfunction_human=24; human_entries=48; human_surfaces=25; two_click_destinations=20"
+    },
+    {
+      "name": "repository-data-and-visibility",
+      "command": "python3 tools/validate_data.py && python3 tools/governance/validate_human_visibility.py && python3 tools/governance/refresh_human_surface_materiality.py --check",
+      "outcome": "PASS",
+      "evidence": "ALL_P1_DATA_VALID; human_surfaces=25 machine_human_pairs=14 two_click_destinations=20; materiality entries=48 withdrawn=4"
+    },
+    {
+      "name": "function-claim-governance-projection",
+      "command": "python3 tools/foundation/validate_claim_governance.py",
+      "outcome": "EXPECTED_STEP12_RESIDUAL",
+      "evidence": "38/39 PASS; only generator:deterministic failed with CENSUS_OUT_OF_DATE discovery.jsonl census.jsonl audit-queue.jsonl census-summary.json"
+    },
+    {
+      "name": "nonfunction-claim-projection",
+      "command": "python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+      "outcome": "EXPECTED_STEP12_RESIDUAL",
+      "evidence": "NONFUNCTION_CLAIM_OUTPUT_DRIFT over exactly 12 declared paths; no ignore, skip or validator weakening"
+    }
+  ],
+  "declared_step12_residuals": [
+    "CENSUS_OUT_OF_DATE discovery.jsonl census.jsonl audit-queue.jsonl census-summary.json",
+    "NONFUNCTION_CLAIM_OUTPUT_DRIFT data/foundation/nonfunction-claims/claim-registry.jsonl data/foundation/nonfunction-claims/source-discovery.jsonl data/foundation/nonfunction-claims/adjudication-ledger.jsonl data/foundation/nonfunction-claims/evidence-lineage.jsonl data/foundation/nonfunction-claims/dependency-graph.jsonl data/foundation/nonfunction-claims/inference-risk-report.jsonl data/foundation/nonfunction-claims/public-surface-report.jsonl data/foundation/nonfunction-claims/unresolved-quarantine.jsonl data/foundation/nonfunction-claims/closure-summary.json data/foundation/nonfunction-claims/discovery-coverage.json data/foundation/nonfunction-claims/claim-inventory.csv docs/foundation/nonfunction-claim-adjudication-index.md"
+  ],
+  "historical_evidence_policy": "No Historical task evidence, archived object, prior iteration record or Git history is rewritten; Task148 may only append under data/operations/iterations/148.",
+  "current_projection_boundary": "Step 11 synchronizes stable interfaces only. Step 12 owns independent Operating Method identity/version, canonical source registration, generated Current facts/snapshot, STATE-CHANGELOG and propagation closure.",
+  "claim_ceiling": "Task148 Step11 repository-local interface synchronization evidence only; no Main merge, Current promotion, external action authority, Owner acceptance, external truth, production readiness or epistemic acceptance is established."
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "ignition-143-step17-current-state-sync-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "17",
+  "status": "PASS",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity": {
+    "current_formal_task_id": "IGNITION-20260827-143",
+    "current_formal_task_ordinal": 143,
+    "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+    "latest_architecture_task_ordinal": 142,
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "current_map_version": "0.16.0",
+    "current_iteration_boundary": 143
+  },
+  "receipt": "ignition/data/operations/iterations/143/current-state-sync-receipt.json",
+  "surface_sync_complete": false,
+  "system_map_changed": false,
+  "state_changelog_delta": "CHANGE",
+  "current_obligation": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "status": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "historical_attempts": 6,
+    "validated_completions": 0,
+    "unreconciled": 0,
+    "observation_incomplete": 2,
+    "current_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
+    "historical_action_preserved": "RUN_DYNAMIC_EXECUTOR_ADMISSION"
+  },
+  "external_execution": {
+    "task143_live_process_started": false,
+    "task143_live_inference_started": false,
+    "qualification_attempts": 0,
+    "install_or_upgrade_performed": false,
+    "configuration_auth_billing_or_environment_surgery": false
+  },
+  "checks": {
+    "current_state_sync": "PASS",
+    "task143_phase_closure": "PASS",
+    "current_task_lineage": "PASS",
+    "current_release_lifecycle": "PASS",
+    "identity_epoch_unchanged": true,
+    "map_identity_unchanged": true
+  },
+  "claim_ceiling": "Repository-local Current State synchronization and presentation-only evidence; no architecture-content change, publication acceptance, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

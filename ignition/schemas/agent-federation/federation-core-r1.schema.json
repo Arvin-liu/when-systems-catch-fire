@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/agent-federation/federation-core-r1.schema.json",
+  "title": "Federation Core R1 Record Envelope",
+  "description": "The Python typed records are the strict construction authority; this schema documents the public record families and forbids hidden reasoning fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "not": { "anyOf": [{ "required": ["prompt"] }, { "required": ["chain_of_thought"] }, { "required": ["token"] }, { "required": ["api_key"] }, { "required": ["authorization"] }] },
+  "properties": {
+    "federation_task_id": { "type": "string", "minLength": 1 },
+    "executor_id": { "type": "string", "minLength": 1 },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "public_summary": { "type": "string", "minLength": 1 },
+    "receipt_digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "terminal_state": { "type": "string", "minLength": 1 }
+  },
+  "anyOf": [
+    { "required": ["federation_task_id", "executor_id", "sequence", "public_summary"] },
+    { "required": ["federation_task_id", "executor_id", "receipt_digest", "terminal_state"] }
+  ]
+}

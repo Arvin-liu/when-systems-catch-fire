@@ -1,0 +1,116 @@
+{
+  "schema_version": "ignition-135-step04-cwd-path-resolution-r1",
+  "task_id": "IGNITION-20260822-135",
+  "step": "04",
+  "status": "PASS",
+  "root_contract": {
+    "application_root": "Path(__file__).resolve().parents[1]",
+    "formal_repository_root": "application_root.parent",
+    "subprocess_cwd": "explicit per case",
+    "import_path": "explicit PYTHONPATH=application_root",
+    "global_chdir": false
+  },
+  "target_count_per_case": 5,
+  "cases": [
+    {
+      "case_id": "repository-root",
+      "working_directory_kind": "repository-root",
+      "application_root_kind": "formal-repository/ignition",
+      "repository_root_kind": "formal-repository",
+      "command": [
+        "/Users/zhiyuan/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "tests.test_change_propagation.ChangePropagationTests.test_a_method_version_change_reaches_front_doors_and_map",
+        "tests.test_change_propagation.ChangePropagationTests.test_g_q29r_historical_acceptance_is_frozen_while_task114_revision_is_current",
+        "tests.test_change_propagation.ChangePropagationTests.test_g4_symlink_escape_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_missing_required_field_is_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_broken_repository_link_is_rejected"
+      ],
+      "tests_run": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d3af1228c6860c466dd95f3eb589a807ae584d6272b300069b4f9834d768a4d2"
+    },
+    {
+      "case_id": "ignition-root",
+      "working_directory_kind": "ignition-root",
+      "application_root_kind": "formal-repository/ignition",
+      "repository_root_kind": "formal-repository",
+      "command": [
+        "/Users/zhiyuan/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "tests.test_change_propagation.ChangePropagationTests.test_a_method_version_change_reaches_front_doors_and_map",
+        "tests.test_change_propagation.ChangePropagationTests.test_g_q29r_historical_acceptance_is_frozen_while_task114_revision_is_current",
+        "tests.test_change_propagation.ChangePropagationTests.test_g4_symlink_escape_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_missing_required_field_is_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_broken_repository_link_is_rejected"
+      ],
+      "tests_run": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "43fb5f62fa519671222840aa1de329b3fbbd595dad0e1af62d81cceb9fe21aee"
+    },
+    {
+      "case_id": "temporary-cwd",
+      "working_directory_kind": "temporary-cwd",
+      "application_root_kind": "formal-repository/ignition",
+      "repository_root_kind": "formal-repository",
+      "command": [
+        "/Users/zhiyuan/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "tests.test_change_propagation.ChangePropagationTests.test_a_method_version_change_reaches_front_doors_and_map",
+        "tests.test_change_propagation.ChangePropagationTests.test_g_q29r_historical_acceptance_is_frozen_while_task114_revision_is_current",
+        "tests.test_change_propagation.ChangePropagationTests.test_g4_symlink_escape_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_missing_required_field_is_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_broken_repository_link_is_rejected"
+      ],
+      "tests_run": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "127bc694aa2a26fcf5167ffd385ee89f2c1e9f6a9857e0261ac145c0986c23f1"
+    },
+    {
+      "case_id": "fresh-clone",
+      "working_directory_kind": "fresh-clone",
+      "application_root_kind": "fresh-clone/ignition",
+      "repository_root_kind": "fresh-clone",
+      "command": [
+        "/Users/zhiyuan/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "tests.test_change_propagation.ChangePropagationTests.test_a_method_version_change_reaches_front_doors_and_map",
+        "tests.test_change_propagation.ChangePropagationTests.test_g_q29r_historical_acceptance_is_frozen_while_task114_revision_is_current",
+        "tests.test_change_propagation.ChangePropagationTests.test_g4_symlink_escape_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_missing_required_field_is_rejected",
+        "tests.test_state_changelog.StateChangelogTests.test_broken_repository_link_is_rejected"
+      ],
+      "tests_run": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e11562b54c0e98c365566b02b31e6b9c766ad7dd54fed553bf579e80bf12feb0",
+      "source_head_sha": "b00bbeb98e35cf4ef1eefff8b7ff82ea4b46d763",
+      "clone_head_sha": "b00bbeb98e35cf4ef1eefff8b7ff82ea4b46d763",
+      "head_match": true
+    }
+  ],
+  "claim_ceiling": "Repository-local fixture and runner cwd/path resolution only; no external truth, production readiness, Owner acceptance or epistemic upgrade."
+}
