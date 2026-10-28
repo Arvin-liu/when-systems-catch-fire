@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-138-step05-runtime-scratch-adversarial-matrix-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "05",
+  "status": "PASS",
+  "matrix": {
+    "workspace_accidentally_writable": "FAIL_CLOSED",
+    "scratch_inside_task_workspace": "FAIL_CLOSED",
+    "scratch_inside_formal_repo": "FAIL_CLOSED",
+    "scratch_inside_control_repo": "FAIL_CLOSED",
+    "scratch_symlink_escape": "FAIL_CLOSED",
+    "auth_source_mutation_requested": "FAIL_CLOSED",
+    "secret_copy_requested": "FAIL_CLOSED",
+    "parent_runtime_env_unexpectedly_inherited": "FAIL_CLOSED",
+    "scratch_helper_write_only": "PASS",
+    "workspace_unchanged_scratch_transiently_changed": "PASS",
+    "scratch_cleanup_success": "PASS_CLEANED",
+    "scratch_cleanup_failure": "REQUIRES_RECONCILIATION_FAIL_CLOSED",
+    "dangerous_bypass_flag": "FAIL_CLOSED",
+    "child_depth_greater_than_one": "FAIL_CLOSED",
+    "scratch_writable_task_permission_repo_read": "PASS"
+  },
+  "targeted_tests": {
+    "live_bridge_tests": 88,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "live_inference_started": false,
+  "claim_ceiling": "Adversarial filesystem/permission policy and deterministic adapter/transport evidence only; no real Codex inference, validated live completion, production readiness, external truth, Owner acceptance, or epistemic acceptance is inferred."
+}

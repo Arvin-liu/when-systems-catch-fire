@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/durability-schema-migration-r1.schema.json",
+  "type": "object",
+  "required": ["schema_version", "supported_epochs", "compatibility_matrix", "historical_event_rule"],
+  "properties": {
+    "schema_version": {"const": "ignition-durability-schema-migration-r1"},
+    "supported_epochs": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "compatibility_matrix": {"type": "array", "minItems": 4, "items": {"type": "object", "required": ["from_epoch", "to_epoch", "classification", "operation", "rationale"], "additionalProperties": false, "properties": {
+      "from_epoch": {"type": "string"}, "to_epoch": {"type": "string"},
+      "classification": {"enum": ["SAFE", "LOSSY_REQUIRES_APPROVAL", "FORBIDDEN"]},
+      "operation": {"type": "string", "minLength": 1}, "rationale": {"type": "string", "minLength": 10}
+    }}},
+    "historical_event_rule": {"const": "EVENT_ORIGINAL_BYTES_ARE_IMMUTABLE; migration uses adapters during replay"}
+  },
+  "additionalProperties": false
+}

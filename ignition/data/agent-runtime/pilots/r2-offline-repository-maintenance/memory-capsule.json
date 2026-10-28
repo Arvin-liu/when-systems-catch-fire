@@ -1,0 +1,42 @@
+{
+  "bounded": true,
+  "capsule_sha256": "ee864f54d208517caa430881dd8c2a756091f7ff238acc7a233b4fe1d82ea48d",
+  "char_count": 815,
+  "claim_ceiling": "Operational recall only; not knowledge truth, evidence, proof, or permission authority.",
+  "entries": [
+    {
+      "integrity_sha256": "5ba8016e332398808a489571e047a80c2557d15cac9e7653db12278ccf5390d0",
+      "memory_id": "r2-episode-completed",
+      "memory_type": "EPISODIC",
+      "provenance_refs": [
+        "pilot-receipt.json",
+        "adversarial-receipt.json"
+      ],
+      "source_run_id": "r2-offline-repository-maintenance",
+      "summary": "A/B/C offline repository maintenance episode completed after approval, crash recovery and executor-instance handoff",
+      "tags": [
+        "r2",
+        "episode",
+        "offline"
+      ]
+    },
+    {
+      "integrity_sha256": "5145096512d9a3f27714862ca504a6137ddd64ee78bb03b483432a9784158f18",
+      "memory_id": "r2-episode-failure-repair-crash",
+      "memory_type": "FAILURE",
+      "provenance_refs": [
+        "pilot-receipt.json"
+      ],
+      "source_run_id": "repair",
+      "summary": "repair child crashed after a declared patch execute and before journal persistence",
+      "tags": [
+        "r2",
+        "checkpoint",
+        "offline"
+      ]
+    }
+  ],
+  "entry_count": 2,
+  "schema": "operational-memory-context-capsule-r1",
+  "source": "operational-memory"
+}

@@ -1,0 +1,15 @@
+{
+  "command_source_sha256": "9f1df434d39aa379fac5eb2254b250530720e994176526da3c971ee0e84d06de",
+  "frozen_before_holdout": true,
+  "frozen_before_scoring": true,
+  "hypotheses": {
+    "H0": "state-local semantics are sufficient",
+    "H1": "first-class transition semantics add irreducible capability",
+    "H2": "the useful transition layer is reducible to local patchwork",
+    "H3": "the missing semantics are path/non-Cartesian rather than a binary relation"
+  },
+  "primary_question": "Does a first-class transition relation add independently useful semantics beyond the strongest fair state-local patchwork?",
+  "task160_conclusion": "MIXED_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING",
+  "task160_residual_is": "discovery lead, not ground truth or positive label",
+  "task_id": "IGNITION-20260907-161"
+}

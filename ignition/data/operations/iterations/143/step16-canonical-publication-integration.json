@@ -1,0 +1,43 @@
+{
+  "schema_version": "ignition-143-step16-canonical-publication-integration-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "16",
+  "status": "PASS",
+  "canonical_entrypoint": "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+  "parallel_publication_system_created": false,
+  "updated_surfaces": [
+    "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+    "ignition/PUBLICATIONS/pointfire-results-book/CHANGELOG.md",
+    "ignition/PUBLICATIONS/pointfire-results-book/RESULT-REGISTRY.jsonl",
+    "ignition/docs/editorial/README.md",
+    "ignition/docs/editorial/source-manifest.json"
+  ],
+  "registered_outputs": [
+    "R1-IGNITION-143-ARTICLE-A",
+    "R1-IGNITION-143-ARTICLE-B",
+    "R1-IGNITION-143-ARTICLE-C",
+    "R1-IGNITION-143-BOOK-PROJECT",
+    "R1-IGNITION-143-BOOK-SAMPLE-01",
+    "R1-IGNITION-143-BOOK-SAMPLE-03"
+  ],
+  "registry_line_count": {
+    "before": 89,
+    "after": 95,
+    "added": 6
+  },
+  "source_manifest": {
+    "article_count": 13,
+    "new_article_count": 3,
+    "new_source_path_count": 17,
+    "new_articles_editorial_status": "REVIEWED_CURRENT",
+    "lifecycle_result": "EDITORIAL_OK articles=13"
+  },
+  "checks": {
+    "json_parse": "PASS",
+    "canonical_links": "PASS",
+    "paths_exist": "PASS",
+    "git_diff_check": "PASS",
+    "private_path_secret_scan": "PASS"
+  },
+  "claim_ceiling": "Canonical publication integration and editorial source-manifest bookkeeping only; no publication acceptance, external truth, production readiness, causal validation or epistemic acceptance is inferred, and the open executor obligation remains Owner-deferred."
+}

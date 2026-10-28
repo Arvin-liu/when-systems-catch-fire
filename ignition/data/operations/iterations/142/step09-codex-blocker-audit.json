@@ -1,0 +1,64 @@
+{
+  "schema_version": "task142-public-executor-audit-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "09",
+  "status": "PASS",
+  "observed_at": "2026-08-26T17:09:20Z",
+  "executor_id": "external.codex",
+  "family": "AGENTIC_EXECUTOR",
+  "observation_policy": "PATH_VERSION_HELP_PUBLIC_AUTH_PRESENCE_ONLY_NO_SECRET_NO_INFERENCE",
+  "public_probe": {
+    "path_ref": "PATH_ENTRY:codex",
+    "version": "codex-cli 0.144.4",
+    "version_code": 0,
+    "help_code": 0,
+    "binary_sha256": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "help_sha256": "da7f8d58749fb3084723cded1620d133235a090ebe5ee412ef404f171415d434",
+    "relevant_flags": ["--ephemeral", "--ignore-rules", "--ignore-user-config", "--json", "--output-schema", "--sandbox", "--strict-config"]
+  },
+  "auth": {
+    "public_status": "PASS",
+    "public_status_exit": 0,
+    "presence_ref": "AUTH_STATE_PRESENCE:external.codex",
+    "present": true,
+    "content_read": false
+  },
+  "gates": {
+    "public_auth": "PASS",
+    "auth_separation": "PROVEN",
+    "argv_contract": "STRICT",
+    "structured_result": "STRICT",
+    "workspace": "PROVEN",
+    "capture": "PROVEN",
+    "validator_binding": "PROVEN",
+    "cleanup": "PROVEN",
+    "permission_ceiling": "PROVEN",
+    "exact_binding": "PROVEN",
+    "no_effect_scope": "PROVEN"
+  },
+  "admission": {
+    "technical_status": "ADMITTED",
+    "live_eligibility": "BLOCKED",
+    "blockers": [],
+    "policy_blockers": ["TASK140_ROOT_CAUSE_NOT_CONFIRMED_SAME_FAMILY_RETRY_FORBIDDEN"],
+    "why_executor": "Codex remains technically admitted: its public login-status exit is 0, the public CLI exposes JSON/output-schema/ephemeral/read-only/config-isolation controls, and the existing adapter plus offline conformance and filesystem-domain evidence cover the remaining technical gates. It is not live-selectable because Task140's malformed-result instance has no confirmed exact root-cause closure for a new same-family attempt; the no-blind-retry policy therefore remains active."
+  },
+  "adapter": {
+    "status": "ATTESTED",
+    "adapter_ref": "ignition/agent_federation/adapters/codex.py",
+    "translation_only": true,
+    "agent_loop_added": false
+  },
+  "safety": {
+    "secret_content_read": false,
+    "auth_content_copied": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_process_started": false,
+    "live_inference_started": false,
+    "workspace_modified": false,
+    "ui_action_performed": false
+  },
+  "claim_ceiling": "Fresh public Codex metadata, existing adapter/conformance evidence and explicit same-family policy blocker only; no new Codex process, inference, validated completion, production readiness, external truth or executor interchangeability is claimed."
+}

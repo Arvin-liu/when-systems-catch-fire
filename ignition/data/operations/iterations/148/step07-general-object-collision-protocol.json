@@ -1,0 +1,72 @@
+{
+  "schema_version": "ignition-148-step07-general-object-collision-protocol-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "07",
+  "status": "PASS_WITH_DECLARED_STEP12_PROPAGATION_PENDING",
+  "operation_id": "knowledge.collide_object",
+  "operation_status": "CURRENT_BOUNDED",
+  "execution_mode": "READ_ONLY_RUN",
+  "input_categories": [
+    "SOURCE_FACT",
+    "SOURCE_CLAIM",
+    "INTERPRETATION",
+    "MECHANISM",
+    "QUESTION"
+  ],
+  "relationship_vocabulary": [
+    "DUPLICATE_OF",
+    "EXTENSION_OF",
+    "COMBINATION_OF",
+    "CONFLICT_WITH",
+    "SOURCE_DERIVED",
+    "CANDIDATE_NEW",
+    "UNRESOLVED"
+  ],
+  "canonical_search_authorities": [
+    "ignition/data/foundation/function-assets/identity-cards.jsonl",
+    "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+  ],
+  "schema": "ignition/schemas/operations/ignition-object-collision-run-r1.schema.json",
+  "evaluator": "ignition/tools/operations/evaluate_object_collision_run.py",
+  "fixture_path": "ignition/tests/fixtures/ignition-operating-method/object-collision-r1.json",
+  "hard_guards": {
+    "provenance_preserved": true,
+    "source_explicit_content_is_input_derived": true,
+    "candidate_new_requires_actual_canonical_matches": true,
+    "candidate_source_overlap_review_required": true,
+    "candidate_auto_registry_write": false,
+    "undefined_pseudo_quantification_allowed": false,
+    "repository_mutation_allowed": false,
+    "external_action_allowed": false
+  },
+  "validation": {
+    "collision_fixtures": "12/12 PASS",
+    "focused_collision_tests": "10/10 PASS",
+    "capability_registry_tests": "8/8 PASS",
+    "operating_method_tests": "10/10 PASS",
+    "collision_schema": "PASS",
+    "collision_fixture_json": "PASS",
+    "capability_registry_validator": "PASS operations=19 pack_capabilities=10 statuses=6",
+    "operating_method_validator": "PASS boundaries=21 priority_tiers=6",
+    "git_diff_check": "PASS"
+  },
+  "declared_propagation_residuals": [
+    {
+      "classification": "INHERITED_AND_EXPANDED_TASK148_FUNCTION_SOURCE_DISCOVERY_DELTA",
+      "exact_result": "CENSUS_OUT_OF_DATE discovery.jsonl census.jsonl audit-queue.jsonl census-summary.json",
+      "closure_step": "12"
+    },
+    {
+      "classification": "TASK148_NONFUNCTION_SOURCE_DISCOVERY_DELTA",
+      "exact_result": "NONFUNCTION_CLAIM_OUTPUT_DRIFT data/foundation/nonfunction-claims/claim-registry.jsonl data/foundation/nonfunction-claims/source-discovery.jsonl data/foundation/nonfunction-claims/adjudication-ledger.jsonl data/foundation/nonfunction-claims/evidence-lineage.jsonl data/foundation/nonfunction-claims/dependency-graph.jsonl data/foundation/nonfunction-claims/inference-risk-report.jsonl data/foundation/nonfunction-claims/public-surface-report.jsonl data/foundation/nonfunction-claims/unresolved-quarantine.jsonl data/foundation/nonfunction-claims/closure-summary.json data/foundation/nonfunction-claims/discovery-coverage.json data/foundation/nonfunction-claims/claim-inventory.csv docs/foundation/nonfunction-claim-adjudication-index.md",
+      "closure_step": "12"
+    }
+  ],
+  "projection_policy": {
+    "reason_for_deferred_rebuild": "The command reserves Current/version/changelog and all triggered propagation closure for Step12; remaining Steps08-11 still add governed source surfaces, so deterministic projections will be rebuilt once from the complete source set.",
+    "ignore_or_skip_added": false,
+    "validator_weakened": false,
+    "projection_closure_claimed": false
+  },
+  "claim_ceiling": "Task148 candidate read-only object decomposition, canonical collision binding and offline protocol validation only; matches do not establish truth or novelty, candidate-new is not registered, deterministic Foundation projections remain pending Step12, and the operation is not Current on main."
+}

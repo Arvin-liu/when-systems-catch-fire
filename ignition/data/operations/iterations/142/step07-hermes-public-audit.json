@@ -1,0 +1,64 @@
+{
+  "schema_version": "task142-public-executor-audit-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "07",
+  "status": "PASS",
+  "observed_at": "2026-08-26T17:07:21Z",
+  "executor_id": "external.hermes",
+  "family": "AGENTIC_EXECUTOR",
+  "observation_policy": "PATH_VERSION_HELP_PUBLIC_AUTH_PRESENCE_ONLY_NO_SECRET_NO_INFERENCE",
+  "public_probe": {
+    "path_ref": "PATH_ENTRY:hermes",
+    "version": "Hermes Agent v0.20.0 (2026.8.3)",
+    "version_code": 0,
+    "help_code": 0,
+    "binary_sha256": "6eed0de072756645ce086cc379eb58fae17023c8935c4e55a3cd9117df8b4df9",
+    "help_sha256": "521ad7c6d77e535cac195cf6ce7355cf8a781fc59e1ec02c06c8d561f1458e67",
+    "relevant_flags": ["--ignore-rules", "--ignore-user-config", "--no-restore-cwd", "--oneshot", "--safe-mode", "--usage-file"]
+  },
+  "auth": {
+    "public_status": "NOT_OBSERVED",
+    "public_status_exit": null,
+    "presence_ref": "AUTH_STATE_PRESENCE:external.hermes",
+    "present": true,
+    "content_read": false
+  },
+  "gates": {
+    "public_auth": "NOT_OBSERVED",
+    "auth_separation": "UNPROVEN",
+    "argv_contract": "STRICT",
+    "structured_result": "REJECTED",
+    "workspace": "UNPROVEN",
+    "capture": "UNPROVEN",
+    "validator_binding": "UNPROVEN",
+    "cleanup": "UNPROVEN",
+    "permission_ceiling": "UNPROVEN",
+    "exact_binding": "UNPROVEN",
+    "no_effect_scope": "UNPROVEN"
+  },
+  "admission": {
+    "technical_status": "BLOCKED",
+    "live_eligibility": "BLOCKED",
+    "blockers": ["AUTH_SOURCE_SEPARATION_NOT_PROVEN", "PUBLIC_AUTH_STATUS_NOT_REATTESTED", "STRUCTURED_RESULT_BOUNDARY_NOT_STRICT"],
+    "policy_blockers": [],
+    "why_executor": "Hermes has a healthy public version/help surface and a one-shot safe-mode path, but its public final output is text-only in the existing thin bridge, public auth status is not re-attested, and auth-source separation is not proven. A text response cannot satisfy the exact structured-result binding required by this task."
+  },
+  "adapter": {
+    "status": "ATTESTED",
+    "adapter_ref": "ignition/agent_federation/adapters/hermes.py",
+    "translation_only": true,
+    "agent_loop_added": false
+  },
+  "safety": {
+    "secret_content_read": false,
+    "auth_content_copied": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_process_started": false,
+    "live_inference_started": false,
+    "workspace_modified": false,
+    "ui_action_performed": false
+  },
+  "claim_ceiling": "Fresh public Hermes metadata, existing adapter boundary and explicit gate observations only; no auth validity, inference, live process, validated completion, production readiness, external truth or executor interchangeability is claimed."
+}

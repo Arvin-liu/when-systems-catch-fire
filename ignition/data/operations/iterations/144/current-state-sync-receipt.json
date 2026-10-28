@@ -1,0 +1,126 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260828-144",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "current_formal_task_id": "IGNITION-20260828-144",
+  "current_formal_task_ordinal": 144,
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "current_iteration_boundary": 144,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "surface_decisions": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "decision": "CHANGE",
+      "reason": "The front door now states that the engineering phase is closing, Task143 outputs await Owner review, and production waits for an Owner brief.",
+      "evidence": "Task144 Step06 stable-prose update and generated Current Snapshot."
+    },
+    {
+      "surface_id": "project-current-state",
+      "path": "ignition/docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Current State now separates engineering closure from Owner-driven production and keeps the external obligation deferred.",
+      "evidence": "Task144 Step06 stable-prose update and current-facts projection."
+    },
+    {
+      "surface_id": "ai-cold-start",
+      "path": "ignition/AI-START-HERE.md",
+      "decision": "CHANGE",
+      "reason": "The generated Current block follows canonical Task144 identity; the stable Task143 paragraph remains a Step07 handoff item.",
+      "evidence": "Task144 Step05 Current Surface Compiler output."
+    },
+    {
+      "surface_id": "ai-agents-handoff",
+      "path": "ignition/AI-HANDOFF.md",
+      "decision": "CHANGE",
+      "reason": "The generated Current block follows canonical Task144 identity; detailed cold-start handoff wording is scheduled for Step07.",
+      "evidence": "Task144 Step05 Current Surface Compiler output."
+    },
+    {
+      "surface_id": "architecture",
+      "path": "ignition/ARCHITECTURE.md",
+      "decision": "CHANGE",
+      "reason": "The generated Current block records the presentation-only Task144 transition while leaving the architecture identity frozen.",
+      "evidence": "Task144 Step05 Current Surface Compiler output and frozen Task142 architecture state."
+    },
+    {
+      "surface_id": "steering-doc",
+      "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task144 introduces no Steering, Intent, Goal or Memory contract change.",
+      "evidence": "Task144 execution contract identity_impact=PRESENTATION_ONLY."
+    },
+    {
+      "surface_id": "machine-entry",
+      "path": "ignition/llms.txt",
+      "decision": "CHANGE",
+      "reason": "The machine entry's generated block records Task144, the frozen architecture task and the Owner-brief next action.",
+      "evidence": "Task144 Step05 Current Surface Compiler output."
+    },
+    {
+      "surface_id": "system-map-doc",
+      "path": "ignition/docs/architecture/interactive-system-map.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No component, typed relation, layout or map version changed.",
+      "evidence": "Task144 phase-closure state keeps the Task142 map baseline frozen."
+    },
+    {
+      "surface_id": "federation-doc",
+      "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The external Agent contract is not reopened or extended; its obligation is parked Owner-deferred.",
+      "evidence": "Task144 deferred backlog and resume capsule."
+    },
+    {
+      "surface_id": "system-map-json",
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task144 adds no persistent architecture object or typed topology relation.",
+      "evidence": "Task144 phase-closure state architecture_mode=FROZEN_TASK142_BASELINE."
+    },
+    {
+      "surface_id": "state-changelog",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "decision": "CHANGE",
+      "reason": "The append-only Current entry records the closure boundary, Owner authority and production wait state.",
+      "evidence": "Task144 Step05 phase-closure entry and sealed state-changelog profile."
+    }
+  ],
+  "system_map_sync": {
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "The Task142 sole map and architecture identity remain unchanged by this presentation-only closure task.",
+    "evidence": "Task144 phase-closure state and current-system-identity contract."
+  },
+  "state_changelog_delta": {
+    "decision": "CHANGE",
+    "reason": "The append-only log records Task144's Current transition and preserves the open deferred obligation.",
+    "evidence": "Task144 State Changelog entry and open-obligation registry."
+  },
+  "changed_paths": [
+    ".github/README.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/data/operations/iterations/144/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/144/phase-closure-state-r1.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/docs/architecture/current-facts.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/llms.txt",
+    "ignition/tools/advance_current_task.py"
+  ],
+  "identity_contract_changed": false,
+  "surface_sync_complete": false,
+  "claim_ceiling": "Task144 repository-local Current State synchronization evidence only; no architecture-content change, external truth, publication acceptance, production readiness, Owner acceptance or epistemic acceptance is inferred, and LIVE_EXTERNAL_INVOCATION remains OPEN/Owner-deferred."
+}

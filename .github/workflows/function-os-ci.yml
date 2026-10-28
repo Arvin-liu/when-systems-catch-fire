@@ -10,11 +10,11 @@ on:
       - main
       - 'records/ignition-121q6c-hy3-completion-merge-readiness-2026**'
     paths:
-      - 'function-os-candidate/v0.2/**'
+      - 'ignition/function-os-candidate/v0.2/**'
       - '.github/workflows/function-os-ci.yml'
   pull_request:
     paths:
-      - 'function-os-candidate/v0.2/**'
+      - 'ignition/function-os-candidate/v0.2/**'
       - '.github/workflows/function-os-ci.yml'
   workflow_dispatch:
 
@@ -24,6 +24,9 @@ concurrency:
 
 permissions:
   contents: read
+defaults:
+  run:
+    working-directory: ignition
 
 jobs:
   function-os-matrix:
@@ -50,15 +53,15 @@ jobs:
           python -m pip install "pytest>=7.4,<9"
 
       - name: Run unittest suite
-        working-directory: function-os-candidate/v0.2
+        working-directory: ignition/function-os-candidate/v0.2
         run: python -m unittest discover -s tests -v
 
       - name: Run pytest suite
-        working-directory: function-os-candidate/v0.2
+        working-directory: ignition/function-os-candidate/v0.2
         run: python -m pytest -q
 
       - name: Scan forbidden dynamic execution in runtime code
-        working-directory: function-os-candidate/v0.2
+        working-directory: ignition/function-os-candidate/v0.2
         run: |
           echo "Scanning function_os/ for eval( / exec( (forbidden at runtime)..."
           if grep -rnE '\b(eval|exec)\s*\(' function_os/ ; then
@@ -71,7 +74,7 @@ jobs:
         run: |
           echo "Scanning TRACKED files for __pycache__ / *.pyc / .pytest_cache / .coverage ..."
           # Only consider git-tracked files (build/test caches are gitignored).
-          mapfile -t hits < <(git ls-files 'function-os-candidate/v0.2' | grep -E '__pycache__/|\.pyc$|\.pytest_cache/|\.coverage$|\.egg-info/' || true)
+          mapfile -t hits < <(git ls-files 'ignition/function-os-candidate/v0.2' | grep -E '__pycache__/|\.pyc$|\.pytest_cache/|\.coverage$|\.egg-info/' || true)
           if [ "${#hits[@]}" -gt 0 ]; then
             echo "FORBIDDEN: tracked cache/coverage artifacts present:"; printf '%s\n' "${hits[@]}"
             exit 1

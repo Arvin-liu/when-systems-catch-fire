@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/approval-decision-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision_id", "request_id", "run_id", "action_digest", "decision", "authority_id", "authority_type", "decided_at", "reason_summary"],
+  "properties": {
+    "decision_id": {"type": "string", "minLength": 1},
+    "request_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "action_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "decision": {"enum": ["ALLOW", "DENY"]},
+    "authority_id": {"type": "string", "minLength": 1},
+    "authority_type": {"enum": ["human", "operator", "synthetic_pilot", "cli"]},
+    "decided_at": {"type": "string", "minLength": 1},
+    "reason_summary": {"type": "string", "minLength": 1}
+  }
+}
