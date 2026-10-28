@@ -1,0 +1,1372 @@
+{
+  "task_id": "Q44-I1",
+  "method_version": "1.3.0",
+  "current_method_version": "1.3.0",
+  "change_classification": [
+    "GOVERNANCE_CHANGE",
+    "CAPABILITY_ADDITION",
+    "INTERFACE_CHANGE"
+  ],
+  "verified_start": {
+    "main_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+    "source": "live-refetched trusted Main; Q39 stacks on Q37 frozen exact head",
+    "verified_at": "2026-07-22"
+  },
+  "branch_pr": {
+    "base": "repair/q43-r1-escalation-authority-binding",
+    "base_head": "5efbce81e96d90d5ebd246891e4762928365d6b8",
+    "branch": "repair/q44-r1-coaching-consent-binding",
+    "draft": true,
+    "pr_number": 97,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": 97,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "agent-results/remaining-repair-train/Q44-I1-receipt.json",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "PR #97 and 1111 bind final exact head and CI; repository object does not self-attest."
+  },
+  "gap": {
+    "summary": "Coaching / Commitment Subcapability lacked a typed evidence-bound fail-closed repository capability.",
+    "evidence": [
+      "24 real-CLI fixtures",
+      "two-record self-authored pilot",
+      "9 explicit rules"
+    ],
+    "smallest_material_action": "Build the typed contract, fail-closed CLI, fixture matrix, pilot and project closure."
+  },
+  "claim_ceiling": "candidate_only_repository_governance: A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights. No external action, L7, truth-layer or universal-causal upgrade.",
+  "status": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "data/architecture/interactive-system-map-layout.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/01-valid-exit00.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/02-schema-exit02.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/03-parent-exit03.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/04-evidence-exit04.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/05-rule-goal_user_declared-exit05.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/06-rule-commitment_informed-exit06.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/07-rule-consent_reversible-exit07.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/08-rule-no_goal_substitution-exit08.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/09-rule-no_shame_pressure-exit09.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/10-rule-multiple_narratives_preserved-exit10.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/11-rule-process_outcome_separate-exit11.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/12-rule-support_not_control-exit12.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/13-rule-escalation_boundary_enforced-exit13.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/14-rule-goal_user_declared-exit05.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/15-rule-commitment_informed-exit06.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/16-rule-consent_reversible-exit07.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/17-rule-no_goal_substitution-exit08.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/18-rule-no_shame_pressure-exit09.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/19-rule-multiple_narratives_preserved-exit10.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/20-rule-process_outcome_separate-exit11.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/21-rule-support_not_control-exit12.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/22-rule-escalation_boundary_enforced-exit13.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/23-ceiling-exit20.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/fixtures/24-external-action-exit21.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/coaching/pilot-q44-i1.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/component-execution-profiles.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/iterations/Q44-I1.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/propagation/Q44-I1-closure.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/propagation/Q44-I1-impact-report.md",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/propagation/Q44-I1-request.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/propagation/Q44-I1-residue.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "data/operations/propagation/Q44-I1-system-map-delta.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "docs/coaching/q44-i1-architecture-decision.md",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "docs/coaching/q44-i1-boundary-matrix.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "docs/coaching/q44-i1-interfaces.md",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "pages/generated/ignition-system-map.svg",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "reports/operations/Q44-I1-completion-seal.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "schemas/coaching/coaching_commitment_subcapability-contract.schema.json",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "tests/coaching/test_coaching_commitment_subcapability_gate.py",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "tests/test_human_front_door.py",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "tools/coaching/build_q44-i1_fixtures.py",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "tools/coaching/validate_coaching_commitment_subcapability_gate.py",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    },
+    {
+      "surface": "tools/validate_human_front_door.py",
+      "decision": "CHANGE",
+      "reason": "Q44-I1 capability or synchronized artifact."
+    }
+  ],
+  "changed_surfaces": [
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "data/coaching/fixtures/01-valid-exit00.json",
+    "data/coaching/fixtures/02-schema-exit02.json",
+    "data/coaching/fixtures/03-parent-exit03.json",
+    "data/coaching/fixtures/04-evidence-exit04.json",
+    "data/coaching/fixtures/05-rule-goal_user_declared-exit05.json",
+    "data/coaching/fixtures/06-rule-commitment_informed-exit06.json",
+    "data/coaching/fixtures/07-rule-consent_reversible-exit07.json",
+    "data/coaching/fixtures/08-rule-no_goal_substitution-exit08.json",
+    "data/coaching/fixtures/09-rule-no_shame_pressure-exit09.json",
+    "data/coaching/fixtures/10-rule-multiple_narratives_preserved-exit10.json",
+    "data/coaching/fixtures/11-rule-process_outcome_separate-exit11.json",
+    "data/coaching/fixtures/12-rule-support_not_control-exit12.json",
+    "data/coaching/fixtures/13-rule-escalation_boundary_enforced-exit13.json",
+    "data/coaching/fixtures/14-rule-goal_user_declared-exit05.json",
+    "data/coaching/fixtures/15-rule-commitment_informed-exit06.json",
+    "data/coaching/fixtures/16-rule-consent_reversible-exit07.json",
+    "data/coaching/fixtures/17-rule-no_goal_substitution-exit08.json",
+    "data/coaching/fixtures/18-rule-no_shame_pressure-exit09.json",
+    "data/coaching/fixtures/19-rule-multiple_narratives_preserved-exit10.json",
+    "data/coaching/fixtures/20-rule-process_outcome_separate-exit11.json",
+    "data/coaching/fixtures/21-rule-support_not_control-exit12.json",
+    "data/coaching/fixtures/22-rule-escalation_boundary_enforced-exit13.json",
+    "data/coaching/fixtures/23-ceiling-exit20.json",
+    "data/coaching/fixtures/24-external-action-exit21.json",
+    "data/coaching/pilot-q44-i1.json",
+    "data/operations/component-execution-profiles.json",
+    "data/operations/iterations/Q44-I1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/Q44-I1-closure.json",
+    "data/operations/propagation/Q44-I1-impact-report.md",
+    "data/operations/propagation/Q44-I1-request.json",
+    "data/operations/propagation/Q44-I1-residue.json",
+    "data/operations/propagation/Q44-I1-system-map-delta.json",
+    "docs/coaching/q44-i1-architecture-decision.md",
+    "docs/coaching/q44-i1-boundary-matrix.json",
+    "docs/coaching/q44-i1-interfaces.md",
+    "docs/project-current-state.md",
+    "pages/generated/ignition-system-map.svg",
+    "reports/operations/Q44-I1-completion-seal.json",
+    "schemas/coaching/coaching_commitment_subcapability-contract.schema.json",
+    "tests/coaching/test_coaching_commitment_subcapability_gate.py",
+    "tests/test_human_front_door.py",
+    "tools/coaching/build_q44-i1_fixtures.py",
+    "tools/coaching/validate_coaching_commitment_subcapability_gate.py",
+    "tools/validate_human_front_door.py",
+    "data/governance/"
+  ],
+  "validation": {
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    },
+    "local": [
+      {
+        "name": "capability_gate_fixture_matrix",
+        "status": "PASS",
+        "evidence": "24 fixtures drive the real task CLI"
+      },
+      {
+        "name": "repository_pilot",
+        "status": "PASS",
+        "evidence": "two typed records GATE_PASS"
+      },
+      {
+        "name": "change_propagation",
+        "status": "PASS",
+        "evidence": "closure_complete=true residue=0"
+      },
+      {
+        "name": "system_map",
+        "status": "PASS",
+        "evidence": "96 nodes, 42 edges"
+      },
+      {
+        "name": "baseline_debt",
+        "status": "INHERITED",
+        "evidence": "Exact-parent parity confirmed: 121Q33 era resolver 2 failures and generated-output authority 3 failures/errors are unchanged; production execution authority 18/18 PASS."
+      },
+      {
+        "name": "predecessor_regression",
+        "status": "PASS",
+        "evidence": "Q43-I1 capability suite 4/4 PASS"
+      },
+      {
+        "name": "human_front_door",
+        "status": "PASS",
+        "evidence": "15/15 PASS with 96-node generated map"
+      }
+    ],
+    "remote": []
+  },
+  "rollback_strategy": "Draft branch only; ordinary revert/delete; never rewrite Q43-I1 or Main.",
+  "remaining_limitations": [
+    "Repository-only self-authored pilot",
+    "No external action or real-world validation",
+    "Inherited baseline debts remain",
+    "Draft candidate unreviewed/unready/unmerged/not Current"
+  ],
+  "receipt_location": "agent-results/remaining-repair-train/Q44-I1-receipt.json",
+  "completion_seal_path": "reports/operations/Q44-I1-completion-seal.json",
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "state_transition": {
+    "changed_dimensions": [
+      "governance",
+      "capability",
+      "usage"
+    ],
+    "maximum_claim_boundary": "candidate_only_repository_governance: A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights. No external action, L7, truth-layer or universal-causal upgrade.",
+    "prior_state": "Q43-I1 frozen candidate; Q44-I1 not built",
+    "proposed_state": "coaching_commitment_subcapability_candidate",
+    "source_refs": [
+      "data/operations/propagation/Q44-I1-request.json",
+      "data/operations/propagation/Q44-I1-closure.json"
+    ],
+    "subjects": [
+      "Q44-I1"
+    ]
+  },
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.2.0",
+    "surface_decisions": [
+      {
+        "surface_id": "agent.handoff",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "ai.start",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "copyright_governance",
+        "decision": "CHANGE",
+        "reason": "Q44-I1 adds synchronized candidate governance.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "method.iteration",
+          "agent.handoff"
+        ]
+      },
+      {
+        "surface_id": "external.pages_homepage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "post_merge_external_render_attestation",
+        "derived_from": [
+          "human.readme",
+          "human.pages_source"
+        ]
+      },
+      {
+        "surface_id": "human.ai_guide",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.current_state",
+        "decision": "CHANGE",
+        "reason": "Q44-I1 adds synchronized candidate governance.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.pages_source",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "human.readme"
+        ]
+      },
+      {
+        "surface_id": "human.readme",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.summary",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.usage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "machine.llms",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.iteration",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_schema_and_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.result_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.review_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.task_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "release.changelog",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "release.versioning",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q44-I1 does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/Q44-I1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      }
+    ],
+    "external_attestations": [
+      {
+        "surface_id": "external.pages_homepage",
+        "stage": "post_merge",
+        "status": "pending",
+        "authority": "pull_request_body_and_1111_receipt",
+        "evidence_refs": [
+          "external:pr_body:external.pages_homepage"
+        ],
+        "live_state_locally_verifiable": false
+      }
+    ],
+    "unresolved_residue": [],
+    "external_verification_policy": "not_applicable_governance_only",
+    "live_external_surfaces_verified": false
+  },
+  "propagation_closure": {
+    "request_path": "data/operations/propagation/Q44-I1-request.json",
+    "closure_path": "data/operations/propagation/Q44-I1-closure.json",
+    "impact_report_path": "data/operations/propagation/Q44-I1-impact-report.md",
+    "system_map_delta_path": "data/operations/propagation/Q44-I1-system-map-delta.json",
+    "residue_path": "data/operations/propagation/Q44-I1-residue.json",
+    "closure_hash": "071864ac62dd2daeeb88ad3ae8f958bf883a560d50f25a9771e7ca1d0de84ef8",
+    "base_identity": "5efbce81e96d90d5ebd246891e4762928365d6b8",
+    "head_identity": "external_exact_head_attestation",
+    "seed_paths": [
+      "data/architecture/interactive-system-map-layout.json",
+      "data/architecture/interactive-system-map.json",
+      "data/coaching/fixtures/01-valid-exit00.json",
+      "data/coaching/fixtures/02-schema-exit02.json",
+      "data/coaching/fixtures/03-parent-exit03.json",
+      "data/coaching/fixtures/04-evidence-exit04.json",
+      "data/coaching/fixtures/05-rule-goal_user_declared-exit05.json",
+      "data/coaching/fixtures/06-rule-commitment_informed-exit06.json",
+      "data/coaching/fixtures/07-rule-consent_reversible-exit07.json",
+      "data/coaching/fixtures/08-rule-no_goal_substitution-exit08.json",
+      "data/coaching/fixtures/09-rule-no_shame_pressure-exit09.json",
+      "data/coaching/fixtures/10-rule-multiple_narratives_preserved-exit10.json",
+      "data/coaching/fixtures/11-rule-process_outcome_separate-exit11.json",
+      "data/coaching/fixtures/12-rule-support_not_control-exit12.json",
+      "data/coaching/fixtures/13-rule-escalation_boundary_enforced-exit13.json",
+      "data/coaching/fixtures/14-rule-goal_user_declared-exit05.json",
+      "data/coaching/fixtures/15-rule-commitment_informed-exit06.json",
+      "data/coaching/fixtures/16-rule-consent_reversible-exit07.json",
+      "data/coaching/fixtures/17-rule-no_goal_substitution-exit08.json",
+      "data/coaching/fixtures/18-rule-no_shame_pressure-exit09.json",
+      "data/coaching/fixtures/19-rule-multiple_narratives_preserved-exit10.json",
+      "data/coaching/fixtures/20-rule-process_outcome_separate-exit11.json",
+      "data/coaching/fixtures/21-rule-support_not_control-exit12.json",
+      "data/coaching/fixtures/22-rule-escalation_boundary_enforced-exit13.json",
+      "data/coaching/fixtures/23-ceiling-exit20.json",
+      "data/coaching/fixtures/24-external-action-exit21.json",
+      "data/coaching/pilot-q44-i1.json",
+      "data/operations/component-execution-profiles.json",
+      "data/operations/iterations/Q44-I1.json",
+      "data/operations/project-components.json",
+      "data/operations/propagation/Q44-I1-closure.json",
+      "data/operations/propagation/Q44-I1-impact-report.md",
+      "data/operations/propagation/Q44-I1-request.json",
+      "data/operations/propagation/Q44-I1-residue.json",
+      "data/operations/propagation/Q44-I1-system-map-delta.json",
+      "docs/coaching/q44-i1-architecture-decision.md",
+      "docs/coaching/q44-i1-boundary-matrix.json",
+      "docs/coaching/q44-i1-interfaces.md",
+      "docs/project-current-state.md",
+      "pages/generated/ignition-system-map.svg",
+      "reports/operations/Q44-I1-completion-seal.json",
+      "schemas/coaching/coaching_commitment_subcapability-contract.schema.json",
+      "tests/coaching/test_coaching_commitment_subcapability_gate.py",
+      "tests/test_human_front_door.py",
+      "tools/coaching/build_q44-i1_fixtures.py",
+      "tools/coaching/validate_coaching_commitment_subcapability_gate.py",
+      "tools/validate_human_front_door.py"
+    ],
+    "seed_components": [
+      "coaching_commitment_subcapability_contract",
+      "coaching_commitment_subcapability_gate_validator",
+      "coaching_commitment_subcapability_pilot",
+      "current_state",
+      "historical_reports",
+      "incremental_execution",
+      "iteration_manifest_contract",
+      "pages_pipeline",
+      "project_component_registry",
+      "propagation_calculator",
+      "system_map_layout",
+      "system_map_projection"
+    ],
+    "resolved_components": [
+      "coaching_commitment_subcapability_contract",
+      "coaching_commitment_subcapability_gate_validator",
+      "coaching_commitment_subcapability_pilot",
+      "current_state",
+      "historical_reports",
+      "incremental_execution",
+      "iteration",
+      "iteration_manifest_contract",
+      "pages_pipeline",
+      "project_component_registry",
+      "propagation_calculator",
+      "readme",
+      "sync",
+      "system_map_layout",
+      "system_map_projection"
+    ],
+    "typed_path_ids": [
+      "incremental_builds_pages",
+      "incremental_materializes_iteration",
+      "incremental_projects_map",
+      "incremental_requires_sync",
+      "registry_generates_projection",
+      "sync_requires_readme"
+    ],
+    "component_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "accepted_work",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_pilot_q34",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai_guide",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "analogy_audit_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "analogy_audit_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "analogy_audit_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "arn",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "candidate_return",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "case_source",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "charter",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "coaching_commitment_subcapability_contract",
+        "reason": "Q44-I1 new or synchronized component: coaching_commitment_subcapability_contract"
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "coaching_commitment_subcapability_gate_validator",
+        "reason": "Q44-I1 new or synchronized component: coaching_commitment_subcapability_gate_validator"
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "coaching_commitment_subcapability_pilot",
+        "reason": "Q44-I1 new or synchronized component: coaching_commitment_subcapability_pilot"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_history_remediation",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_jurisdiction_registry",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_material_classification",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_non_republication_principle",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_publication_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_source_rights",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_tests",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "counterfactual_unrealized_path_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "counterfactual_unrealized_path_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "counterfactual_unrealized_path_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "current_state",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "decision_integrity_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "decision_integrity_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "decision_integrity_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_claim_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_pilot_q33",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "epistemic_state_control_plane_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "epistemic_state_control_plane_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "epistemic_state_control_plane_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "evidence_retrieval_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "evidence_retrieval_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "evidence_retrieval_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external_input",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "failure_lineage_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "failure_lineage_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "failure_lineage_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "feedback_routes",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "foundation",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "foundation_data",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "function_os",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "graded_intervention_escalation_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "graded_intervention_escalation_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "graded_intervention_escalation_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "historical_reports",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ignition_increment",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "incremental_execution",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "intervention_failure_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "intervention_failure_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "intervention_failure_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration_manifest_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l0",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l1",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l2",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l3",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l4",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l5",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l6",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "latent_system_identifiability_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "latent_system_identifiability_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "latent_system_identifiability_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "licensing",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "mcf",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "multi_history_world_projection_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "multi_history_world_projection_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "multi_history_world_projection_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_l7",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_totality_proof",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_truth_upgrade",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_pilot_q34",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "pages_pipeline",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "point_fire_analysis",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "project_component_registry",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_calculator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_topology",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "provenance_capture",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "psd",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "public_response",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q12",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q13",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q14",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "readme",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "showcase",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "showcase_registry",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "source_pool",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "summary",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "sustainability",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "symbolic_power_perspective_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "symbolic_power_perspective_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "symbolic_power_perspective_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "sync",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_layout",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "system_map_projection",
+        "reason": "Q44-I1 new or synchronized component: system_map_projection"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "usage",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "world_feedback_anomaly_contract",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "world_feedback_anomaly_gate_validator",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "world_feedback_anomaly_pilot",
+        "reason": "Q44-I1 does not alter this component semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "zhiyuan_method",
+        "reason": "Q44-I1 does not alter this component semantics."
+      }
+    ],
+    "surface_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent.handoff",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai.start",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "copyright_governance",
+        "reason": "Q44-I1 adds candidate governance and synchronized current-state documentation."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external.pages_homepage",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.ai_guide",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.current_state",
+        "reason": "Q44-I1 adds candidate governance and synchronized current-state documentation."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.pages_source",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.readme",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.summary",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.usage",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "machine.llms",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.iteration",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.result_template",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.review_template",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.task_template",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.changelog",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.versioning",
+        "reason": "Q44-I1 does not alter this synchronization surface."
+      }
+    ],
+    "registry_derived_surfaces": [
+      "agent.handoff",
+      "ai.start",
+      "copyright_governance",
+      "external.pages_homepage",
+      "human.ai_guide",
+      "human.current_state",
+      "human.pages_source",
+      "human.readme",
+      "human.summary",
+      "human.usage",
+      "machine.llms",
+      "method.iteration",
+      "release.changelog",
+      "release.versioning"
+    ],
+    "system_map_impact": {
+      "decision": "CHANGE",
+      "reason": "Three Q44-I1 components are added to registry and layout.",
+      "delta_path": "data/operations/propagation/Q44-I1-system-map-delta.json"
+    },
+    "unresolved_residue": [],
+    "closure_complete": true
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}
