@@ -1,0 +1,45 @@
+{
+  "canonical_id": "C-07",
+  "title": "Open-question registry claims can each be tied to an externally falsifiable test.",
+  "class": "CORE_CAPABILITY_VALIDATION",
+  "is_meta": false,
+  "current_status": "DEFERRED",
+  "provenance": {
+    "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+    "canonical_id": "C-07",
+    "upstream_source": "RESULTS/OPEN-QUESTIONS.md (to be created)",
+    "claim_id": "OPEN-QUESTIONS-REGISTRY-CLAIMS"
+  },
+  "dependencies": [
+    "OPEN-QUESTIONS-REGISTRY-CLAIMS"
+  ],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "evidence-program",
+    "claims-registry"
+  ],
+  "evidence_needs": [
+    "preregistration",
+    "independent replication",
+    "oracle/baseline"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "Registry governance.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 51.6,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.3,
+    "dependency_centrality": 0.4,
+    "falsifiability": 0.5,
+    "data_oracle_availability": 0.4,
+    "expected_information_gain": 0.7,
+    "effort_evidence_cost": 0.6,
+    "reversibility_risk": 0.7,
+    "maturity_gap": 0.8,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.95
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

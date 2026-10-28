@@ -1,0 +1,36 @@
+{
+  "freeze_type": "SOURCE_SELECTION_PROTOCOL_BEFORE_DISCOVERY",
+  "frozen_at": "2026-09-07T13:56:33+08:00",
+  "manifest_digest_after_selection": "f3f926c13adcfefc0f45fcb9f0453a19cea91be1884d3c9702233e403b1e31b4",
+  "no_answer_guided_selection": true,
+  "quota_audit": {
+    "selected_work_count": 22,
+    "selected_word_count": 4368310,
+    "selected_domain_count": 9,
+    "selected_book_monograph_or_thesis_scale_count": 18,
+    "maximum_works_per_domain": 4,
+    "maximum_selected_works_per_author": 2,
+    "quota_pass": true,
+    "replacement_audit": "The Darwin Voyage source was excluded after the preserved pre-discovery audit because it would have made three Darwin works; GUT-27513 was selected for the same frozen ecology slot before final induction."
+  },
+  "notes": [
+    "Manifest and search-ledger digests were filled after source discovery; no placeholder remains in the final run.",
+    "No external candidate, Task161 answer key, or Task159-161 score was used to choose sources.",
+    "Invalidated run-01 and run-02 outputs are preserved under the task-local restart ledger and are not evidence."
+  ],
+  "protocol_file": "source-search-protocol.json",
+  "search_result_digest_after_selection": "3f100a7fd39a4e3ec3dfc0a325eb4ddf316a489d28cb5c25eefeeebdc9dd5de4",
+  "selected_word_count": 4368310,
+  "selected_work_count": 22,
+  "selection_completed_at": "2026-09-07",
+  "selection_exclusions_are_logged": true,
+  "selection_order": [
+    "domain_bucket_order from protocol",
+    "fixed source order from protocol",
+    "catalog result order by canonical URL",
+    "first eligible source per unfilled quota slot"
+  ],
+  "selection_status": "FROZEN_BEFORE_SOURCE_DISCOVERY",
+  "source_order_is_deterministic": true,
+  "task_id": "IGNITION-20260907-162"
+}

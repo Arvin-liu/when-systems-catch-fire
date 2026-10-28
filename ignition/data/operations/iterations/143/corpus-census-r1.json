@@ -1,0 +1,272 @@
+{
+  "schema_version": "ignition-143-corpus-census-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "04",
+  "status": "PASS",
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "b359580fe31866bc04eeb24911011e0baba9b66d"
+  },
+  "reading_contract": {
+    "current_writing_method": "docs/publication/zhiyuan-writing-method.md",
+    "current_writing_method_version": "0.5.0",
+    "canonical_human_entrypoint": "PUBLICATIONS/pointfire-results-book/README.md",
+    "title_only_selection": false,
+    "source_first_rule": true,
+    "publication_boundary": "Human prose is an editorial projection; registries, source records and claim ceilings remain authoritative.",
+    "epistemic_ceiling": "CURRENT_WITH_OPEN_OBLIGATIONS"
+  },
+  "corpus_inventory": {
+    "canonical_results_book_chapters": 12,
+    "existing_editorial_articles": 10,
+    "fire_seed_total": 64,
+    "fire_seed_content": 40,
+    "fire_seed_methodology": 24,
+    "fire_seed_conflicts": 8,
+    "public_tree_canopy_source_families": 7,
+    "collision_mechanism_candidates": 9,
+    "historical_live_attempts_retained_but_not_publication_material": 6
+  },
+  "source_groups": [
+    {
+      "group_id": "G1",
+      "label": "Canonical Results Book and current public results",
+      "read_paths": [
+        "PUBLICATIONS/pointfire-results-book/README.md",
+        "PUBLICATIONS/pointfire-results-book/07-方法系统与负结果.md",
+        "PUBLICATIONS/pointfire-results-book/08-之元写作法与公开作品.md",
+        "PUBLICATIONS/pointfire-results-book/09-正式仓库最新成果.md",
+        "PUBLICATIONS/pointfire-results-book/10-七轨证据演化-契约修复.md",
+        "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
+        "PUBLICATIONS/pointfire-results-book/RESULT-REGISTRY.jsonl"
+      ],
+      "observed_value": "The book already contains the project's strongest bounded method, negative-result and public replay material, but its current shape is a results atlas rather than three reader-specific essays or a single through-line book proposal.",
+      "boundary": "Existing result units keep their current statuses and claim ceilings; this census does not re-adjudicate them."
+    },
+    {
+      "group_id": "G2",
+      "label": "Fire Seeds and unresolved content questions",
+      "read_paths": [
+        "data/publication/fire-seeds/seed-census.json",
+        "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md"
+      ],
+      "observed_value": "The content seeds expose reader-sized tensions: support versus control, real versus perceived exit, representation versus proof, AI ability versus evaluation capacity, and receipts versus reality.",
+      "boundary": "A seed is a writing or research entry, not a theorem, external fact or causal mechanism."
+    },
+    {
+      "group_id": "G3",
+      "label": "Existing editorial articles and publication method",
+      "read_paths": [
+        "docs/editorial/README.md",
+        "docs/editorial/MANIFEST.md",
+        "docs/editorial/QUALITY-REPORT.md",
+        "docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md",
+        "docs/editorial/articles/002-two-surfaces-one-truth-registry-and-human-layer.md",
+        "docs/editorial/articles/003-from-candidate-to-current-evidence-chain.md",
+        "docs/editorial/articles/004-gated-model-bounded-projection-open-unification.md",
+        "docs/editorial/articles/005-description-is-not-proof-systems-representations.md",
+        "docs/editorial/articles/006-readable-works-with-boundaries.md",
+        "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md",
+        "docs/editorial/articles/008-merged-but-stale-public-truth.md",
+        "docs/editorial/articles/009-system-completion-state-and-independent-replication.md",
+        "docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md",
+        "docs/publication/zhiyuan-writing-method.md"
+      ],
+      "observed_value": "The existing ten articles already cover correction, surfaces, evidence chains, bounded models, representation limits, Function OS, stale truth, replication and failure gates; new work must add a distinct argument rather than rename those pieces.",
+      "boundary": "Article prose is explanatory and not a replacement for the registry or source material."
+    },
+    {
+      "group_id": "G4",
+      "label": "Substantive model and collision material",
+      "read_paths": [
+        "outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/validation-report.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md",
+        "reports/math-foundation/pilot-formal-audit-20260712.md",
+        "reports/math-foundation/provenance-audit-20260712.md"
+      ],
+      "observed_value": "The collision records a substantive candidate: resources offered as support can become path control when access, a prescribed route and the cost of dissent become coupled. D600 remains indirect-source-only and incomplete as formalization; the collision materials retain counterexamples and pending external evidence.",
+      "boundary": "The candidate is safe to write as an internal model/problem with explicit counterexamples, not as a universal law, measured causal effect or externally validated novelty claim."
+    },
+    {
+      "group_id": "G5",
+      "label": "Bounded external replay with public sources",
+      "read_paths": [
+        "PUBLICATIONS/pointfire-results-book/10-七轨证据演化-契约修复.md",
+        "PUBLICATIONS/pointfire-results-book/06-当前科学与WAIC.md"
+      ],
+      "observed_value": "The tree-canopy replay supports a bounded association between canopy and lower local summer near-ground air-temperature exposure in the named observational materials, while separating surface temperature, air temperature and human heat exposure and declining a city-wide causal tree-planting claim.",
+      "boundary": "The public chapter is the safe source for the essay; direct human heat-stress evidence was not recovered and the replay is not external validation of Pointfire."
+    },
+    {
+      "group_id": "G6",
+      "label": "Task142 lifecycle repair and current phase closure",
+      "read_paths": [
+        "data/operations/iterations/142/step01-terminality-semantics.json",
+        "data/operations/iterations/142/step16-obligation-adjudication.json",
+        "data/operations/iterations/142/step19-publication-and-terminality.json",
+        "reports/operations/ignition-142-step19-publication-and-terminality.md",
+        "data/operations/formal-task-lifecycle-r1.json",
+        "data/operations/open-obligation-registry-r1.json"
+      ],
+      "observed_value": "Task terminality and obligation liveness are now separate repository concepts: a formal task can terminate while a long-lived live obligation stays OPEN, preserving counts and next action without pinning the task to RUNNING.",
+      "boundary": "This is a repository-local lifecycle result, not a claim that an external executor completed or that the overall system is production-ready."
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": "C1",
+      "title": "完成不是只有一个开关",
+      "reader_question": "一个工作项怎样在仍有未来义务时诚实地结束？",
+      "source_groups": ["G1", "G3", "G6"],
+      "fire_seeds": ["CF-39", "CF-40", "CF-38"],
+      "distinctive_material": "Task142's terminal-with-open-obligation repair gives a concrete lifecycle case rather than a general warning about receipts.",
+      "candidate_use": "Method/system article and possible book opening",
+      "overlap_risk": "High with existing articles 003, 008 and 009; the new angle must center the two independent liveness clocks, not publication drift or replication alone."
+    },
+    {
+      "cluster_id": "C2",
+      "title": "善意如何改写成路径",
+      "reader_question": "什么时候资源支持仍是支持，什么时候它开始决定你只能往哪里走？",
+      "source_groups": ["G2", "G4"],
+      "fire_seeds": ["CF-03", "CF-04", "CF-07", "CF-11", "CF-16"],
+      "distinctive_material": "D600/M3 states a positive-support-to-control transition and names counterexamples that prevent support from being treated as control by default.",
+      "candidate_use": "Substantive non-meta article",
+      "overlap_risk": "Medium with exit-right seeds; preserve support/path coupling as the main object and leave perceived exit as a boundary/counterexample."
+    },
+    {
+      "cluster_id": "C3",
+      "title": "同一个温度问题其实有三层",
+      "reader_question": "树冠、地表温度、近地面空气和人的热暴露，为什么不能在一句话里互换？",
+      "source_groups": ["G1", "G2", "G5"],
+      "fire_seeds": ["CF-27", "CF-31", "CF-39"],
+      "distinctive_material": "The replay is a concrete public-source case in which a useful bounded association survives while a stronger causal sentence is refused.",
+      "candidate_use": "Reader-value article",
+      "overlap_risk": "Medium with existing articles 004 and 005; use the heat/measurement distinction as the narrative, not a general essay on representation."
+    },
+    {
+      "cluster_id": "C4",
+      "title": "退出、角色与决策权",
+      "reader_question": "共同工作、亲密关系或组织合作中，谁仍然保有方向和退出的决定权？",
+      "source_groups": ["G1", "G2", "G4"],
+      "fire_seeds": ["CF-03", "CF-04", "CF-12", "CF-13", "CF-14"],
+      "distinctive_material": "The corpus keeps formal exit, perceived exit, post-exit livability and interpretation rights as separate variables.",
+      "candidate_use": "Book backbone or future article backlog",
+      "overlap_risk": "High if combined with C2; retain as a book thread or future article unless the selected article needs a focused exit case."
+    },
+    {
+      "cluster_id": "C5",
+      "title": "表示、能力与证据边界",
+      "reader_question": "系统会画图、跑测试或给出回执，究竟增加了哪一种知道？",
+      "source_groups": ["G1", "G2", "G3"],
+      "fire_seeds": ["CF-21", "CF-22", "CF-23", "CF-27", "CF-32"],
+      "distinctive_material": "This is already well represented by articles 005, 007 and 010, so it is a comparison cluster and not a leading new-article choice.",
+      "candidate_use": "Book evidence strategy and rejection/backlog",
+      "overlap_risk": "Very high; avoid reproducing the existing representation/proof or Function OS essays."
+    }
+  ],
+  "candidate_topics": [
+    {
+      "candidate_id": "A",
+      "working_title": "一个系统如何在停止时仍然诚实：把开放义务从任务生命周期里拆出来",
+      "kind": "METHOD_SYSTEM",
+      "cluster_id": "C1",
+      "sources": ["G1", "G3", "G6"],
+      "reader_promise": "用一个真实的工程生命周期修复说明‘完成’、‘仍有义务’和‘还没有被外部验证’为什么必须分开。",
+      "maturity": "HIGH_REPOSITORY_ENGINEERING_EVIDENCE",
+      "substantive_enough": true,
+      "main_claim_ceiling": "Repository-local lifecycle design and evidence semantics only; no external executor success or production readiness.",
+      "status": "SHORTLIST_CANDIDATE"
+    },
+    {
+      "candidate_id": "B",
+      "working_title": "资源托举为什么会变成路径控制",
+      "kind": "SUBSTANTIVE_INTERNAL_MODEL",
+      "cluster_id": "C2",
+      "sources": ["G2", "G4"],
+      "reader_promise": "从‘为你好’的具体转折出发，检查资源、唯一认可的路径、退出成本和决定权如何被绑在一起。",
+      "maturity": "INTERNAL_MATERIAL_CANDIDATE_WITH_PENDING_EXTERNAL_EVIDENCE",
+      "substantive_enough": true,
+      "main_claim_ceiling": "A Pointfire-originated candidate model and writing problem; not an externally established causal law or measured prevalence claim.",
+      "status": "SHORTLIST_CANDIDATE"
+    },
+    {
+      "candidate_id": "C",
+      "working_title": "树冠会降温吗：一个好问题如何被证据层拆开",
+      "kind": "BOUNDED_EXTERNAL_REPLAY_READER_VALUE",
+      "cluster_id": "C3",
+      "sources": ["G1", "G5"],
+      "reader_promise": "跟着一个城市热暴露问题，看见相关、测量对象和因果结论如何逐层变窄，却仍然留下有用结果。",
+      "maturity": "PUBLIC_SOURCE_BOUNDED_REPLAY_WITH_EXPLICIT_RESIDUALS",
+      "substantive_enough": true,
+      "main_claim_ceiling": "Named observational materials support a bounded association only; no universal causal tree-planting claim and no recovered direct human heat-stress evidence.",
+      "status": "SHORTLIST_CANDIDATE"
+    },
+    {
+      "candidate_id": "D",
+      "working_title": "退出不是按钮",
+      "kind": "CONTENT_FIRE_SEED",
+      "cluster_id": "C4",
+      "sources": ["G1", "G2", "G4"],
+      "reader_promise": "把制度出口、感知出口、退出成本和退出后的可持续生活放回同一张但不压平的图。",
+      "maturity": "INTERNAL_CANDIDATE_REQUIRING_OPERATIONALIZATION",
+      "substantive_enough": true,
+      "main_claim_ceiling": "Internal conceptual distinction; no measurement of real exit probability or universal social law.",
+      "status": "FUTURE_BACKLOG_HIGH_VALUE"
+    },
+    {
+      "candidate_id": "E",
+      "working_title": "描述不是证明",
+      "kind": "EXISTING_ARTICLE_REUSE_RISK",
+      "cluster_id": "C5",
+      "sources": ["G1", "G3"],
+      "reader_promise": "Explain why diagrams and formal representations have useful but bounded jobs.",
+      "maturity": "ALREADY_PUBLISHED_AS_ARTICLE_005",
+      "substantive_enough": true,
+      "main_claim_ceiling": "Existing article's current ceiling.",
+      "status": "DO_NOT_DUPLICATE_IN_R1"
+    },
+    {
+      "candidate_id": "F",
+      "working_title": "收据不能冒充现实",
+      "kind": "EXISTING_ARTICLE_REUSE_RISK",
+      "cluster_id": "C1",
+      "sources": ["G1", "G3"],
+      "reader_promise": "Explain the distinction between engineering receipts and reality.",
+      "maturity": "ALREADY_PRESENT_IN_ARTICLES_006_007_009_AND_RESULTS_BOOK",
+      "main_claim_ceiling": "Existing public boundary.",
+      "status": "USE_AS_BOUNDARY_NOT_AS_NEW_STANDALONE_ARTICLE"
+    }
+  ],
+  "book_through_lines": [
+    {
+      "through_line_id": "T1",
+      "title": "未完成的诚实",
+      "strength": "Connects terminality, sources, exit, substantive models, bounded replay and publication without claiming a single theory.",
+      "risk": "Can become another meta-book unless concrete cases carry every chapter."
+    },
+    {
+      "through_line_id": "T2",
+      "title": "还没有被证明的世界",
+      "strength": "Reader-facing title can hold evidence, choice and uncertainty while allowing substantive chapters.",
+      "risk": "Needs a precise promise so uncertainty does not become a vague virtue."
+    },
+    {
+      "through_line_id": "T3",
+      "title": "退出、证据与共同对象",
+      "strength": "Strong ethical and organizational arc from support/path control to exit and interpretation rights.",
+      "risk": "Would underuse the concrete tree-canopy replay and lifecycle repair unless deliberately braided."
+    }
+  ],
+  "step04_decision": {
+    "read_before_selecting": true,
+    "leading_article_candidates": ["A", "B", "C"],
+    "book_candidates": ["T1", "T2", "T3"],
+    "selection_deferred_to_step": "05",
+    "reason": "The corpus supports three distinct pieces, but final ranking must explicitly score reader value, overlap, readiness and claim risk in the next step."
+  },
+  "claim_ceiling": "Repository-local corpus reading and editorial candidate mapping only; no external truth, causal validation, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

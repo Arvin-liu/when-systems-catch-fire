@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.example/schemas/language-thought/audit-finding.schema.json",
+  "title": "Language-Thought Project Audit Finding",
+  "type": "object",
+  "required": ["finding_id", "population_item_id", "path", "scope_locator", "classification", "dimensions", "finding", "action", "status", "historical_preservation"],
+  "properties": {
+    "classification": {"enum": ["meaning_or_claim_changed", "agency_or_causality_changed", "uncertainty_changed", "discourse_logic_changed", "naturalness_or_style_only", "allowed_marked_syntax", "no_action"]},
+    "status": {"enum": ["REPAIRED", "RETAINED", "NO_ACTION", "OPEN_WITH_BOUNDARY"]},
+    "dimensions": {"type": "array", "items": {"pattern": "^d(0[1-9]|1[0-2])$"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260822-133",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "721627a94bd2fdf7b15e9ecd647d2b7d0d15332d",
+    "command_path": "agent-commands/IGNITION-20260822-133-iteration-boundary-semantics-current-ordinal-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "5ed99d148dfb49e6c2ff729a345d2499d4b76021"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-133-iteration-boundary-semantics-current-ordinal-r1-20260822",
+  "expected_receipt_branch": "relay/receipts/ignition-133-iteration-boundary-semantics-current-ordinal-r1-20260822",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260822-133",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "previous_canonical_current_task": "IGNITION-20260822-132",
+    "previous_formal_task": "IGNITION-20260822-132",
+    "release_candidate_task": "IGNITION-20260822-133",
+    "publication_witness_task": "IGNITION-20260822-133"
+  },
+  "claim_ceiling": "Execution and release identity for repository-local Task133 only; it grants no Owner authority, truth authority, production readiness or epistemic acceptance."
+}

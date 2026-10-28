@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/release-state-model-r1.schema.json",
+  "title": "Release Witness and ref-derived publication state model",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "model_kind", "state_domains", "authority_rules", "transition_rules", "forbidden_transitions", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "release-state-model-r1"},
+    "contract_id": {"const": "RELEASE_WITNESS_REF_DERIVED_PUBLICATION_R1"},
+    "model_kind": {"const": "STATIC_PROTOCOL_STATE_MODEL"},
+    "state_domains": {"$ref": "#/$defs/stateDomains"},
+    "authority_rules": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/authorityRule"}},
+    "transition_rules": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/transitionRule"}},
+    "forbidden_transitions": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"$ref": "#/$defs/forbiddenTransition"}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "stateDomain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority_class", "states", "current_value_policy", "runtime_observation_required"],
+      "properties": {
+        "authority_class": {"type": "string", "minLength": 1},
+        "states": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]+$"}},
+        "current_value_policy": {"type": "string", "minLength": 1},
+        "runtime_observation_required": {"type": "boolean"},
+        "required_fields": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "stateDomains": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["content_owned", "ref_observed_publication", "publication_witness"],
+      "properties": {
+        "content_owned": {"$ref": "#/$defs/stateDomain"},
+        "ref_observed_publication": {"$ref": "#/$defs/stateDomain"},
+        "publication_witness": {"$ref": "#/$defs/stateDomain"}
+      }
+    },
+    "authorityRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "authority_class", "can_assert", "cannot_assert"],
+      "properties": {
+        "domain": {"enum": ["content_owned", "ref_observed_publication", "publication_witness"]},
+        "authority_class": {"type": "string", "minLength": 1},
+        "can_assert": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "cannot_assert": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "transitionRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transition_id", "from_domain", "from_state", "to_domain", "to_state", "allowed_when", "authority_class", "creates_formal_commit"],
+      "properties": {
+        "transition_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"},
+        "from_domain": {"enum": ["content_owned", "ref_observed_publication", "publication_witness"]},
+        "from_state": {"type": "string", "minLength": 1},
+        "to_domain": {"enum": ["content_owned", "ref_observed_publication", "publication_witness"]},
+        "to_state": {"type": "string", "minLength": 1},
+        "allowed_when": {"type": "string", "minLength": 1},
+        "authority_class": {"type": "string", "minLength": 1},
+        "creates_formal_commit": {"type": "boolean"}
+      }
+    },
+    "forbiddenTransition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transition_id", "reason"],
+      "properties": {
+        "transition_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

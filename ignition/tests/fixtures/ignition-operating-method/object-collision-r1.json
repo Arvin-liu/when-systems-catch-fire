@@ -1,0 +1,283 @@
+{
+  "schema_version": "ignition-object-collision-fixtures-r1",
+  "authority": "TEST_FIXTURES_NOT_COLLISION_OR_IDENTITY_AUTHORITY",
+  "base_run": {
+    "schema_version": "ignition-object-collision-run-r1",
+    "run_id": "fixture-object-collision-base",
+    "current_ref": "refs/heads/main@example-current",
+    "operation_id": "knowledge.collide_object",
+    "run_mode": "READ_ONLY_RUN",
+    "input_object": {
+      "object_id": "INPUT-NOTE-001",
+      "object_type": "NOTE",
+      "provenance": {
+        "source_kind": "USER_PASTED",
+        "source_locator": "request.input_objects[0]",
+        "supplied_by": "CURRENT_USER",
+        "content_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "version_or_captured_at": "fixture-v1"
+      }
+    },
+    "normalized_units": [
+      {
+        "unit_id": "U1",
+        "category": "SOURCE_CLAIM",
+        "text": "输入原文已经提出：乘法归零律可以直接解释现实中的不可替代性。",
+        "source_locator": "paragraph:1",
+        "input_origin": "SOURCE_EXPLICIT"
+      },
+      {
+        "unit_id": "U2",
+        "category": "QUESTION",
+        "text": "这种解释是否超过点火 Current 资产的边界？",
+        "source_locator": "paragraph:2",
+        "input_origin": "SOURCE_EXPLICIT"
+      }
+    ],
+    "canonical_search": {
+      "registries_searched": [
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+      ],
+      "matches": [
+        {
+          "match_id": "M1",
+          "registry_kind": "FUNCTION_ASSET",
+          "canonical_id": "T2",
+          "query_reference": "T2",
+          "match_basis": "EXACT_ID",
+          "unit_ids": ["U1", "U2"],
+          "collision_evidence": "The input names the multiplication-zero law; Current function identity T2 is the exact canonical asset."
+        },
+        {
+          "match_id": "M2",
+          "registry_kind": "NONFUNCTION_CLAIM",
+          "canonical_id": "CLAIM-T2",
+          "query_reference": "CLAIM-T2",
+          "match_basis": "EXACT_ID",
+          "unit_ids": ["U1", "U2"],
+          "collision_evidence": "The Current non-function registry contains the scoped carrier-specific proposition associated with T2."
+        }
+      ]
+    },
+    "findings": [
+      {
+        "finding_id": "F1",
+        "statement": "输入原文已经提出：乘法归零律可以直接解释现实中的不可替代性。",
+        "relationship": "SOURCE_DERIVED",
+        "unit_ids": ["U1"],
+        "canonical_match_ids": ["M1", "M2"],
+        "post_collision_increment": false
+      },
+      {
+        "finding_id": "F2",
+        "statement": "Current T2 与 CLAIM-T2 都把结论限制在有类型的代数载体中，因此输入的现实解释超过其 claim ceiling。",
+        "relationship": "CONFLICT_WITH",
+        "unit_ids": ["U1", "U2"],
+        "canonical_match_ids": ["M1", "M2"],
+        "post_collision_increment": true
+      }
+    ],
+    "candidate_new": [],
+    "quantitative_assessments": [],
+    "side_effects": {
+      "repository_mutation": false,
+      "external_action": false,
+      "registry_write": false
+    }
+  },
+  "cases": [
+    {
+      "case_id": "valid_source_derived_and_conflict_report",
+      "mutations": [],
+      "expected_valid": true,
+      "expected_result": {
+        "result_status": "COLLISION_PROTOCOL_VALID",
+        "candidate_registry_action": "NONE",
+        "side_effects_authorized": false
+      }
+    },
+    {
+      "case_id": "valid_candidate_new_requires_actual_nearest_matches",
+      "mutations": [
+        {
+          "op": "append",
+          "path": "/candidate_new",
+          "value": {
+            "candidate_id": "CANDIDATE-LOCAL-1",
+            "statement": "从有类型乘法到现实不可替代性之间缺少的桥接，可被保留为待操作化的研究缺口。",
+            "relationship": "CANDIDATE_NEW",
+            "derived_from_unit_ids": ["U1", "U2"],
+            "nearest_canonical_match_ids": ["M1", "M2"],
+            "collision_delta": "The candidate is the missing bridge obligation exposed only after comparing the input with both Current canonical records.",
+            "not_verbatim_from_input": true,
+            "source_explicit_overlap_review": {
+              "reviewed_unit_ids": ["U1", "U2"],
+              "decision": "NOT_SOURCE_EXPLICIT",
+              "method": "Exact statement comparison plus source-role review",
+              "rationale": "The input asserts the interpretation and asks whether it exceeds Current boundaries; it does not state the missing bridge as an operational research obligation."
+            },
+            "registry_action": "NONE"
+          }
+        }
+      ],
+      "expected_valid": true,
+      "expected_result": {
+        "candidate_registry_action": "NONE",
+        "side_effects_authorized": false
+      }
+    },
+    {
+      "case_id": "valid_unresolved_after_both_registry_searches",
+      "mutations": [
+        {"op": "set", "path": "/canonical_search/matches", "value": []},
+        {
+          "op": "set",
+          "path": "/findings",
+          "value": [
+            {
+              "finding_id": "F-UNRESOLVED",
+              "statement": "当前精确查询没有形成可审定关系。",
+              "relationship": "UNRESOLVED",
+              "unit_ids": ["U2"],
+              "canonical_match_ids": [],
+              "post_collision_increment": false
+            }
+          ]
+        }
+      ],
+      "expected_valid": true,
+      "expected_result": {
+        "candidate_registry_action": "NONE",
+        "side_effects_authorized": false
+      }
+    },
+    {
+      "case_id": "candidate_new_without_collision_evidence_fails_closed",
+      "mutations": [
+        {
+          "op": "append",
+          "path": "/candidate_new",
+          "value": {
+            "candidate_id": "CANDIDATE-NO-EVIDENCE",
+            "statement": "模型想起了一个新规律。",
+            "relationship": "CANDIDATE_NEW",
+            "derived_from_unit_ids": ["U1"],
+            "nearest_canonical_match_ids": [],
+            "collision_delta": "No actual collision was performed.",
+            "not_verbatim_from_input": true,
+            "source_explicit_overlap_review": {
+              "reviewed_unit_ids": ["U1"],
+              "decision": "NOT_SOURCE_EXPLICIT",
+              "method": "Synthetic negative fixture",
+              "rationale": "This review cannot substitute for missing canonical evidence."
+            },
+            "registry_action": "NONE"
+          }
+        }
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["nearest_canonical_match_ids"]
+    },
+    {
+      "case_id": "input_viewpoint_cannot_be_relabelled_as_increment",
+      "mutations": [
+        {"op": "set", "path": "/findings/0/relationship", "value": "EXTENSION_OF"},
+        {"op": "set", "path": "/findings/0/post_collision_increment", "value": true}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["input-explicit viewpoint must remain SOURCE_DERIVED"]
+    },
+    {
+      "case_id": "unknown_canonical_id_fails_closed",
+      "mutations": [
+        {"op": "set", "path": "/canonical_search/matches/0/canonical_id", "value": "D999999"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["canonical ID not present in Current FUNCTION_ASSET registry"]
+    },
+    {
+      "case_id": "both_current_registries_are_mandatory",
+      "mutations": [
+        {
+          "op": "set",
+          "path": "/canonical_search/registries_searched",
+          "value": ["ignition/data/foundation/function-assets/identity-cards.jsonl"]
+        }
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["registries_searched", "too short"]
+    },
+    {
+      "case_id": "pseudo_quantification_without_metric_definition_is_rejected",
+      "mutations": [
+        {
+          "op": "append",
+          "path": "/quantitative_assessments",
+          "value": {
+            "metric_id": "UNDEFINED-ISOMORPHISM",
+            "metric_name": "同构度",
+            "metric_value": 75
+          }
+        }
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["metric_definition"]
+    },
+    {
+      "case_id": "candidate_cannot_request_registry_write",
+      "mutations": [
+        {
+          "op": "append",
+          "path": "/candidate_new",
+          "value": {
+            "candidate_id": "CANDIDATE-WRITE",
+            "statement": "碰撞后候选仍只是候选。",
+            "relationship": "CANDIDATE_NEW",
+            "derived_from_unit_ids": ["U1"],
+            "nearest_canonical_match_ids": ["M1"],
+            "collision_delta": "A bounded post-collision gap.",
+            "not_verbatim_from_input": true,
+            "source_explicit_overlap_review": {
+              "reviewed_unit_ids": ["U1"],
+              "decision": "NOT_SOURCE_EXPLICIT",
+              "method": "Exact statement comparison plus source-role review",
+              "rationale": "The candidate wording is not an input-explicit statement."
+            },
+            "registry_action": "ADD"
+          }
+        }
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["registry_action"]
+    },
+    {
+      "case_id": "read_only_collision_cannot_authorize_side_effects",
+      "mutations": [
+        {"op": "set", "path": "/side_effects/registry_write", "value": true}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["registry_write"]
+    },
+    {
+      "case_id": "current_alias_must_resolve_through_step06_guard",
+      "mutations": [
+        {"op": "set", "path": "/canonical_search/matches/0/query_reference", "value": "乘法归零律"},
+        {"op": "set", "path": "/canonical_search/matches/0/match_basis", "value": "CURRENT_ALIAS"}
+      ],
+      "expected_valid": true,
+      "expected_result": {
+        "candidate_registry_action": "NONE",
+        "side_effects_authorized": false
+      }
+    },
+    {
+      "case_id": "reviewed_mapping_requires_explicit_review_record",
+      "mutations": [
+        {"op": "set", "path": "/canonical_search/matches/0/match_basis", "value": "REVIEWED_MAPPING"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["REVIEWED_MAPPING requires"]
+    }
+  ]
+}

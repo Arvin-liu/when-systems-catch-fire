@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "task_id", "step", "status", "validator", "profiles", "negative_fixtures", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-135-step05-state-changelog-versioned-validation-r1"},
+    "task_id": {"const": "IGNITION-20260822-135"},
+    "step": {"const": "05"},
+    "status": {"enum": ["PASS", "FAIL"]},
+    "validator": {
+      "type": "object",
+      "required": ["command", "result", "current_entries", "historical_entries", "legacy_profiles", "historical_fingerprint_enforced"],
+      "properties": {
+        "command": {"type": "string"},
+        "result": {"const": "STATE_CHANGELOG_VERSIONED_VALID"},
+        "current_entries": {"const": 2},
+        "historical_entries": {"const": 24},
+        "legacy_profiles": {"const": 6},
+        "historical_fingerprint_enforced": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "profiles": {
+      "type": "object",
+      "required": ["current", "historical_strict", "historical_legacy", "unknown_profile_fail_closed"],
+      "properties": {
+        "current": {"const": "current-r1"},
+        "historical_strict": {"const": "historical-current-r0"},
+        "historical_legacy": {"const": "historical-legacy-r0"},
+        "unknown_profile_fail_closed": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "negative_fixtures": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["case_id", "expected_status", "observed_status"],
+        "properties": {
+          "case_id": {"type": "string"},
+          "expected_status": {"enum": ["PASS", "FAIL"]},
+          "observed_status": {"enum": ["PASS", "FAIL"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "claim_ceiling": {"type": "string"}
+  },
+  "additionalProperties": false
+}

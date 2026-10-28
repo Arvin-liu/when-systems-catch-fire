@@ -1,0 +1,10 @@
+{
+  "generated_from": [
+    "verdict.json",
+    "freeze-ledger.json",
+    "v2-replay-summary.json",
+    "basis-free-induction-summary.json"
+  ],
+  "source_sha256": "3a12e7b9a54b3c9e3ff6eb1259a9773e01600738e7599fed8f81bdd3a6b4cc2b",
+  "task_id": "IGNITION-20260907-160"
+}

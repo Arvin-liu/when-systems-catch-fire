@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step11-capability-registry-candidate-gate-r1.schema.json",
+  "title": "Task150 Step11 Capability Registry candidate gate",
+  "description": "Records a fail-closed candidate admission review without writing the Current Capability Registry.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "control_previous_commit", "candidate", "gates", "admission_decision", "scope_freeze", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step11-capability-registry-candidate-gate-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "11"},
+    "record_type": {"const": "CAPABILITY_REGISTRY_CANDIDATE_GATE"},
+    "status": {"const": "CANDIDATE_NOT_ADMITTED_UPSTREAM_BLOCKER"},
+    "formal_previous_commit": {"const": "4b8b6351c9757fc858b59b4e3642c040ed8afc02"},
+    "control_previous_commit": {"const": "9917b65491519c4352279cf354ff9a8752e9f60a"},
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_id", "candidate_operation_id", "candidate_status", "registry_path", "registry_sha256_before", "registry_sha256_after", "operation_count_before", "operation_count_after", "registry_write_performed", "operation_present_after"],
+      "properties": {
+        "provider_id": {"const": "archify"},
+        "candidate_operation_id": {"const": "visualization.archify_bounded_derived_candidate"},
+        "candidate_status": {"const": "EXPERIMENTAL_CANDIDATE_NOT_WRITTEN"},
+        "registry_path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+        "registry_sha256_before": {"const": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22"},
+        "registry_sha256_after": {"const": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22"},
+        "operation_count_before": {"const": 19},
+        "operation_count_after": {"const": 19},
+        "registry_write_performed": {"const": false},
+        "operation_present_after": {"const": false}
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "result", "evidence"],
+        "properties": {
+          "id": {"enum": ["no_current_provider_activation", "no_draft_exception_survives_ready", "experimental_contract_not_runtime_authority", "no_authenticated_admission", "no_provider_homepage_claim", "live_external_invocation_unchanged", "nonfunction_claim_materiality_clean", "zero_background_current_claim", "delta_viewport_containment_zero_failure", "owner_visual_acceptance"]},
+          "result": {"enum": ["PASS", "FAIL", "PENDING"]},
+          "evidence": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "admission_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "reason", "candidate_registry_write", "ready_or_merge_authorization", "next_admissible_state"],
+      "properties": {
+        "decision": {"const": "NOT_REGISTERED"},
+        "reason": {"const": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER"},
+        "candidate_registry_write": {"const": "NOT_PERFORMED"},
+        "ready_or_merge_authorization": {"const": "NOT_GRANTED"},
+        "next_admissible_state": {"const": "OWNER_OR_UPSTREAM_WRAPPER_FIX_AND_FRESH_REVIEW_REQUIRED"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "authenticated_channels", "installation", "default_renderer", "current_admission", "live_external_invocation", "provider_homepage", "successor_task"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "provider_homepage": {"const": "NO_CLAIM"},
+        "successor_task": {"const": "NOT_CREATED"}
+      }
+    },
+    "claim_ceiling": {"const": "Task150 Step11 proves only that the Archify-derived visualization candidate was evaluated against the registry-admission gates and deliberately not written because the Delta viewport blocker and Owner visual acceptance remain unresolved. It does not register a capability, establish Current status, select a default renderer, grant permission, admit authentication, change Agent Reach, prove architecture truth, prove external truth or authorize live external invocation."}
+  }
+}

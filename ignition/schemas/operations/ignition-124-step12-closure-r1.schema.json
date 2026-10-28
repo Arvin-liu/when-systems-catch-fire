@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/operations/ignition-124-step12-closure-r1.schema.json",
+  "title": "IGNITION-20260817-124 Step 12 Closure R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "recorded_at",
+    "baseline",
+    "step_commit_chain",
+    "projection_rebuild",
+    "full_discovery",
+    "targeted_gates",
+    "residual_classification",
+    "privacy_and_external_boundary",
+    "fresh_clone_replay",
+    "formal_main",
+    "claim_ceiling",
+    "closure_binding",
+    "next_step"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-124-step12-closure-r1"},
+    "task_id": {"const": "IGNITION-20260817-124"},
+    "step": {"const": "12"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formal_main_before_step12", "prior_step_commit", "task_branch"],
+      "properties": {
+        "formal_main_before_step12": {"const": "266426d7110af9ee921a020a46c3a0347aa364e9"},
+        "prior_step_commit": {"const": "9a665eb8f48620611fdf27bce7a5d14d550819fe"},
+        "task_branch": {"const": "codex/ignition-124-os-control-plane-r2-20260817"}
+      }
+    },
+    "step_commit_chain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy", "commits"],
+      "properties": {
+        "policy": {"type": "string", "minLength": 1},
+        "commits": {
+          "type": "array",
+          "minItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["step", "commit_sha", "remote_sha"],
+            "properties": {
+              "step": {"pattern": "^(0[0-9]|1[0-2])$"},
+              "commit_sha": {"pattern": "^[0-9a-f]{40}$"},
+              "remote_sha": {"pattern": "^[0-9a-f]{40}$"}
+            }
+          }
+        }
+      }
+    },
+    "projection_rebuild": {"type": "object", "additionalProperties": true},
+    "full_discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["command", "tests", "failures", "errors", "skipped", "status", "failures_by_class", "failure_entries"],
+      "properties": {
+        "command": {"type": "string", "minLength": 1},
+        "tests": {"const": 780},
+        "failures": {"const": 4},
+        "errors": {"const": 0},
+        "skipped": {"const": 1},
+        "duration_seconds": {"type": "number", "exclusiveMinimum": 0},
+        "status": {"const": "PASS_WITH_CLASSIFIED_RESIDUALS"},
+        "failures_by_class": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["NEW_REGRESSION", "PREEXISTING", "ENVIRONMENTAL", "HISTORICAL_SEALED", "TIMEOUT"],
+          "properties": {
+            "NEW_REGRESSION": {"const": 0},
+            "PREEXISTING": {"const": 0},
+            "ENVIRONMENTAL": {"const": 1},
+            "HISTORICAL_SEALED": {"const": 3},
+            "TIMEOUT": {"const": 0}
+          }
+        },
+        "failure_entries": {"type": "array", "minItems": 4}
+      }
+    },
+    "targeted_gates": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string"}},
+    "residual_classification": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "classification", "status", "evidence", "boundary"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "classification": {"enum": ["NEW_REGRESSION", "PREEXISTING", "ENVIRONMENTAL", "HISTORICAL_SEALED", "TIMEOUT"]},
+          "status": {"type": "string", "minLength": 1},
+          "evidence": {"type": "string", "minLength": 1},
+          "boundary": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "privacy_and_external_boundary": {"type": "object", "additionalProperties": true},
+    "fresh_clone_replay": {"type": "object", "additionalProperties": true},
+    "formal_main": {"type": "object", "additionalProperties": true},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "closure_binding": {"type": "string", "minLength": 1},
+    "next_step": {"const": "FINAL_FAST_FORWARD_AND_RELAY"}
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260828-147",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "current_formal_task_id": "IGNITION-20260828-147",
+  "current_formal_task_ordinal": 147,
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "current_iteration_boundary": 147,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "surface_decisions": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "decision": "CHANGE",
+      "reason": "README now uses the exact Owner-supplied project identity and replaces the raw SVG secondary entry and machine architecture explanation with one short caption and five default-collapsed human component groups.",
+      "evidence": "Task147 Human Front Door validator, canonical component-path audit and first-visit README audit."
+    },
+    {
+      "surface_id": "project-current-state",
+      "path": "ignition/docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "The generated Current block carries Task147 identity and in-progress lifecycle state while remaining outside the static homepage identity.",
+      "evidence": "Task147 Current Surface Compiler output and deterministic projection check."
+    },
+    {
+      "surface_id": "ai-cold-start",
+      "path": "ignition/AI-START-HERE.md",
+      "decision": "CHANGE",
+      "reason": "The generated AI Current block follows canonical Task147 identity and preserves the machine recovery route.",
+      "evidence": "Task147 Current Surface Compiler output and deterministic projection check."
+    },
+    {
+      "surface_id": "ai-agents-handoff",
+      "path": "ignition/AI-HANDOFF.md",
+      "decision": "CHANGE",
+      "reason": "The generated handoff Current block follows canonical Task147 identity; no external Agent execution is started or qualified.",
+      "evidence": "Task147 Current Surface Compiler output and scope guard."
+    },
+    {
+      "surface_id": "architecture",
+      "path": "ignition/ARCHITECTURE.md",
+      "decision": "CHANGE",
+      "reason": "The generated architecture Current block carries the presentation-only Task147 transition while the Task142 architecture identity and map geometry remain frozen.",
+      "evidence": "Task147 Current Surface Compiler output and frozen architecture identity/map checks."
+    },
+    {
+      "surface_id": "steering-doc",
+      "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task147 changes the README identity and navigation boundary, not Steering, Intent, Goal or Obligation semantics.",
+      "evidence": "Task147 execution contract identity_impact=PRESENTATION_ONLY."
+    },
+    {
+      "surface_id": "machine-entry",
+      "path": "ignition/llms.txt",
+      "decision": "CHANGE",
+      "reason": "The generated machine entry carries the canonical Task147 Current facts, lineage and release lifecycle values.",
+      "evidence": "Task147 Current Surface Compiler output and current-facts projection."
+    },
+    {
+      "surface_id": "system-map-doc",
+      "path": "ignition/docs/architecture/interactive-system-map.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No component, typed relation, layout, map version or rendered-clickability promise changes in this presentation-only task.",
+      "evidence": "Task147 system-map source/spec/SVG equality and canonical navigation audit."
+    },
+    {
+      "surface_id": "federation-doc",
+      "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The external Agent contract remains Owner-deferred and no live executor or qualification scope is reopened.",
+      "evidence": "Task147 scope guards and carried LIVE_EXTERNAL_INVOCATION obligation."
+    },
+    {
+      "surface_id": "system-map-json",
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task147 introduces no registry object, typed topology relation, layout change or map-version change.",
+      "evidence": "Task147 frozen system-map source/spec/SVG equality check."
+    },
+    {
+      "surface_id": "state-changelog",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "decision": "CHANGE",
+      "reason": "The append-only log records the exact project-identity correction, human navigation boundary and preservation of frozen architecture semantics.",
+      "evidence": "Task147 append-only changelog delta and Current Surface Compiler output."
+    }
+  ],
+  "system_map_sync": {
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "The Task142 architecture identity, map geometry, registry and typed relation set remain unchanged by this presentation-only task.",
+    "evidence": "Task147 system-map source/spec/SVG equality check."
+  },
+  "state_changelog_delta": {
+    "decision": "CHANGE",
+    "reason": "The append-only log records why the README is a static project-identity front door with collapsed canonical component navigation.",
+    "evidence": "Task147 STATE-CHANGELOG entry."
+  },
+  "changed_paths": [
+    ".github/README.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/data/operations/iterations/147/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/147/execution-contract-r1.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/docs/architecture/current-facts.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/llms.txt"
+  ],
+  "identity_contract_changed": false,
+  "surface_sync_complete": false,
+  "claim_ceiling": "Task147 repository-local Current State synchronization evidence only; architecture identity and map geometry remain frozen, production awaits the Owner brief, LIVE_EXTERNAL_INVOCATION remains OPEN/Owner-deferred, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

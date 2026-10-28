@@ -1,0 +1,111 @@
+{
+  "schema_version": "ignition-140-step15-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260826-140",
+  "step": "15",
+  "status": "PASS",
+  "candidate_head_sha": "86a188e4fc86037086f8d1ba7de0fd9130cd5249",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "natural_window": {
+    "minimum_supported_seconds": 14400,
+    "watchdog_used": false,
+    "arbitrary_timeout_used": false,
+    "process_killed": false,
+    "completed_naturally": true
+  },
+  "environment": {
+    "isolated": true,
+    "python_version": "3.14.6",
+    "dependency_preflight": "PASS",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "execution_python": "temporary isolated foundation venv outside repository"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate_head_sha": "c1f896fdf78e7f6e11a2d85ec0af9b92b7c9d70c",
+      "capture": "<external-temporary-capture>",
+      "runtime_seconds": 2990.002,
+      "elapsed_seconds": 2991.067,
+      "exit_code": 1,
+      "tests_run": 1201,
+      "failures": 19,
+      "errors": 1,
+      "skips": 0,
+      "status": "FAIL_PROFILE_PROJECTION_REPAIR_REQUIRED",
+      "failure": "Component profile identity and policy digests were stale after the canonical registry overlap repair; the D3 defensive profile gate also stopped on the stale profile projection.",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "1a0df3d9aac239c9716737a9df42dc55dcbbc2c25a7e9c5e9b1d6984af3f1b4d",
+      "stderr_sha256": "fdbc87d0a4044b10b891ede3aec439ff80782abe51800d4bf0dfd59bcbbe5199"
+    },
+    {
+      "attempt": 2,
+      "candidate_head_sha": "86a188e4fc86037086f8d1ba7de0fd9130cd5249",
+      "capture": "<external-temporary-capture>",
+      "runtime_seconds": 3070.464,
+      "elapsed_seconds": 3071.522,
+      "exit_code": 0,
+      "tests_run": 1227,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "447c8fc9507588ab4eeb13077bbcdf408820fbc00ace54050da628e460c64124",
+      "stderr_sha256": "f9b5f13dc70dc9c38421298bd5316682b79ee584bda8020c4788982a27fe8f8e"
+    }
+  ],
+  "repair": {
+    "cause": "The canonical component registry changed during the Task140 overlap admission repair, but the generated component-execution-profiles.json projection still carried the prior registry and policy digests.",
+    "action": "Regenerated canonical component execution profiles, verified the 45-profile targeted closure, refreshed the deterministic Current projections and reran the full natural suite.",
+    "validation": "45 tests / 0 failures / 0 errors / 0 skips; the second natural full regression then passed 1227 / 1227."
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "receipt": "ignition/data/operations/iterations/140/step15-projection-preflight.json",
+    "check_count": 25,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "side_effect_detected": false,
+    "clean_tree": true,
+    "tracked_path_count": 3370,
+    "function_assets": 5944,
+    "nonfunction_claims": 17181,
+    "knowledge_cards": 414,
+    "knowledge_changes": 315,
+    "knowledge_layered_readings": 332,
+    "knowledge_search_records": 23457,
+    "fire_seeds": 64,
+    "fire_seed_sources": 393,
+    "current_surface_outputs": 15,
+    "deterministic_current_surface": "PASS"
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "validated_completion_count": 0,
+    "attempt_count": 6,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "retry": "NOT_AUTHORIZED",
+    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "next_step": "16",
+  "claim_ceiling": "Exact repository-local candidate natural offline full-suite evidence for tested head 86a188e4fc86037086f8d1ba7de0fd9130cd5249, including the preserved prior failure and repair; no fresh-clone, formal-main publication, validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
