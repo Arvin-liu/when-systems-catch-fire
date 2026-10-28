@@ -7,15 +7,15 @@
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
-      "current_map_version": "0.16.0",
+      "current_map_version": "0.19.0",
       "hidden_components": 17,
       "historical_map_version": "0.14.0",
-      "layout_version": "2.0.0",
-      "registry_components": 104,
+      "layout_version": "2.3.0",
+      "registry_components": 116,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
       "typed_topology_relations": 142,
-      "visible_map_nodes": 87,
+      "visible_map_nodes": 99,
       "visible_typed_edges": 92
     },
     "environmental_residuals": [
@@ -148,7 +148,7 @@
       "current_formal_task_ordinal": 148,
       "current_iteration_boundary": 148,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-      "current_map_version": "0.16.0",
+      "current_map_version": "0.19.0",
       "latest_architecture_changing_task_id": "IGNITION-20260827-142",
       "latest_architecture_task_ordinal": 142,
       "method_status": "Current",
@@ -233,7 +233,7 @@
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "b165f48433adddc7a8f298253bfb18d0da5df185c68e3958bc83c4ca79d54ac5"
+      "sha256": "5c82603e82c8f9a02f2d8adb2199b98d5609b4a50b761d0941e33bc60794f507"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "d378775bc2aa2f30d369680021322a37e88f5c2907114d3be54bbc312b5a925d"
+      "sha256": "68fd5f5818ac0b8ab0cab308ad97d8be6c28ff7ffd28921ba992161bda6f343e"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",

@@ -1,0 +1,5 @@
+=== R0 RB09-CALLER-ASSERTED-SEMANTICS reproduction (authentic r2 engine) :: world_feedback_anomaly ===
+r2_engine_commit=e92e7d3eadbb67da288077052f635e3c052bd3a1
+gate=tools/anomaly/validate_world_feedback_anomaly_gate.py exit=0
+stdout={"boundary": "repository candidate only; no external action or truth-layer upgrade", "errors": [], "exit_code": 0, "exit_name": "GATE_PASS", "gate": "world_feedback_anomaly"}
+DEFECT REPRODUCED: r2 engine returned GATE_PASS (exit 0) for a schema-valid but SEMANTICALLY-FALSE bundle (record values contradict the rules; the engine only verified evidence registration/reference and trusted the caller-asserted PASS). RB09-CALLER-ASSERTED-SEMANTICS not closed in r2.

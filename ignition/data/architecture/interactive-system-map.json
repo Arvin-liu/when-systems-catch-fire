@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.18.0",
+  "map_version": "0.19.0",
   "historical_map_version": "0.14.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整总架构图",
@@ -10,9 +10,9 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.9.2",
+    "component_registry_version": "2.9.3",
     "topology_version": "1.14.0",
-    "layout_version": "2.2.0"
+    "layout_version": "2.3.0"
   },
   "layout": {
     "columns": 3,
@@ -632,6 +632,30 @@
       "group": "governance",
       "target": "data/metacognition/pilot-scientific-metacognition-i1.json",
       "description": "SCIENTIFIC-METACOGNITION-I1 self-authored bounded repository pilot covering REAL_TRAIN_UNKNOWN_LEDGER and NON_IDENTIFIABLE_UNKNOWN; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "world_feedback_anomaly_contract",
+      "label": "World-Feedback Anomaly Trigger & Governance 合同",
+      "group": "governance",
+      "target": "schemas/anomaly/world_feedback_anomaly-contract.schema.json",
+      "description": "Q41-I1 typed evidence-bound contract. Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "world_feedback_anomaly_gate_validator",
+      "label": "World-Feedback Anomaly Trigger & Governance 门禁",
+      "group": "governance",
+      "target": "tools/anomaly/validate_world_feedback_anomaly_gate.py",
+      "description": "Q41-I1 fail-closed real CLI enforcing evidence binding, exact parent, 10 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "world_feedback_anomaly_pilot",
+      "label": "World-Feedback Anomaly Trigger & Governance 受控试点",
+      "group": "governance",
+      "target": "data/anomaly/pilot-q41-i1.json",
+      "description": "Q41-I1 self-authored bounded repository pilot covering RECURRING_REPOSITORY_DIVERGENCE and SINGLE_DEVIATION_NEGATIVE_CONTROL; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {
@@ -1782,8 +1806,8 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 113,
-    "visible_nodes": 96,
+    "registry_components": 116,
+    "visible_nodes": 99,
     "hidden_components": 17,
     "hidden_representatives": {
       "foundation_data": "foundation",
