@@ -1,0 +1,121 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "evidence_kind": "CROSS_CASE_METHOD_TRANSFER",
+  "task_id": "IGNITION-20260919-189-R0.4",
+  "stage": "STEP03_CROSS_CASE_METHOD_TRANSFER",
+  "method_transfer_evidence": "PARTIAL_IN_TWO_R0_4_HELD_OUT_CASES",
+  "general_claim_ceiling": "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+  "r1_authorization": "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "owner_gpt_adjudication": "NOT_RUN",
+  "comparison_scope": {
+    "cases": [
+      "IGNITION-20260919-188-EXP-01",
+      "IGNITION-20260919-188-GOV-01"
+    ],
+    "source_scope": "R0.4 case sources/provenance, method contract, capability interface, and frozen Successor output only",
+    "blind_checkpoint": "02889bfd1dd5f201b70a7084f48769ca87a290d5"
+  },
+  "dimensions": [
+    {
+      "dimension": "SOURCE_BOUNDEDNESS",
+      "result": "SUPPORTED",
+      "evidence": [
+        "EXP-01 observations preserve counts, missingness, positions, and aggregate limits; interpretations do not assert causation.",
+        "GOV-01 observations preserve schema facts, dry-run counts, status, rollback-note limits, and ordering gap; interpretations do not assert migration correctness."
+      ],
+      "locators": [
+        "blind-case-evaluation.jsonl:EXP-01/SOURCE_FIDELITY",
+        "blind-case-evaluation.jsonl:GOV-01/SOURCE_FIDELITY"
+      ]
+    },
+    {
+      "dimension": "OBSERVATION_INTERPRETATION_SEPARATION",
+      "result": "SUPPORTED",
+      "evidence": [
+        "EXP-01 separates recorded event counts/timing from descriptive association and possible factors.",
+        "GOV-01 separates artifact contents/status flags from correctness, rollback, and ordering interpretations."
+      ],
+      "locators": [
+        "blind-case-evaluation.jsonl:EXP-01/OBSERVATION_INTERPRETATION_SEPARATION",
+        "blind-case-evaluation.jsonl:GOV-01/OBSERVATION_INTERPRETATION_SEPARATION"
+      ]
+    },
+    {
+      "dimension": "UNCERTAINTY_HANDLING",
+      "result": "SUPPORTED",
+      "evidence": [
+        "EXP-01 keeps maintenance missingness, absent reasons, ordering, linkage, and causal identification unresolved.",
+        "GOV-01 keeps review disposition, rollback execution/restoration, ordering behavior, and independent audit linkage unresolved."
+      ],
+      "locators": [
+        "blind-case-evaluation.jsonl:EXP-01/UNKNOWN_PRESERVATION",
+        "blind-case-evaluation.jsonl:GOV-01/UNKNOWN_PRESERVATION"
+      ]
+    },
+    {
+      "dimension": "STRONGER_CLAIM_EVIDENCE_REQUESTS",
+      "result": "SUPPORTED",
+      "evidence": [
+        "EXP-01 requests complete capture, counterbalanced wording/position variation, direct usability evidence, and instrumentation/baseline checks.",
+        "GOV-01 requests record reconciliation, controlled rollback evidence, ordering specification/checks, and independent audit linkage."
+      ],
+      "locators": [
+        "blind-case-evaluation.jsonl:EXP-01/EVIDENCE_ESCALATION",
+        "blind-case-evaluation.jsonl:GOV-01/EVIDENCE_ESCALATION"
+      ]
+    },
+    {
+      "dimension": "CASE_SPECIFIC_FAILURE",
+      "result": "PRESENT_IN_GOV_01_ONLY",
+      "evidence": [
+        "EXP-01/MULTIPLE_INTERPRETATION_PRESERVATION is PASS.",
+        "GOV-01/MULTIPLE_INTERPRETATION_PRESERVATION is PARTIAL because ambiguity is kept open but multiple plausible review-queue or ordering explanations are not explicitly enumerated."
+      ],
+      "locators": [
+        "blind-case-evaluation.jsonl:EXP-01/MULTIPLE_INTERPRETATION_PRESERVATION",
+        "blind-case-evaluation.jsonl:GOV-01/MULTIPLE_INTERPRETATION_PRESERVATION"
+      ]
+    },
+    {
+      "dimension": "MECHANICAL_CONTENT_ISOMORPHY",
+      "result": "NOT_TRIGGERED",
+      "evidence": [
+        "The two responses use the schema-required four fields but contain zero exact shared sentences across observations, interpretations, uncertainties, and additional_evidence_needed.",
+        "The substantive evidence requests and unresolved questions differ with the kiosk/event-stream object versus the migration/audit-log object."
+      ],
+      "locators": [
+        "frozen-successor-evidence/successor-output-r0.4.json:case_responses[0..1]",
+        "blind-case-evaluation.jsonl:EXP-01/EVIDENCE_ESCALATION",
+        "blind-case-evaluation.jsonl:GOV-01/EVIDENCE_ESCALATION"
+      ]
+    },
+    {
+      "dimension": "OBJECT_SPECIFIC_METHOD_CONCRETIZATION",
+      "result": "SUPPORTED",
+      "evidence": [
+        "EXP-01 concretizes method limits around missing event capture, label wording/position, visitor explanations, and session linkage.",
+        "GOV-01 concretizes method limits around field reconciliation, manual review, rollback restoration, deployment-window ordering, and immutable audit linkage."
+      ],
+      "locators": [
+        "blind-case-evaluation.jsonl:EXP-01/UNKNOWN_PRESERVATION",
+        "blind-case-evaluation.jsonl:GOV-01/UNKNOWN_PRESERVATION",
+        "blind-case-evaluation.jsonl:EXP-01/EVIDENCE_ESCALATION",
+        "blind-case-evaluation.jsonl:GOV-01/EVIDENCE_ESCALATION"
+      ]
+    }
+  ],
+  "interpretation": "The R0.4 method discipline is evidenced in both held-out cases, but the GOV-01 partial criterion limits the bounded transfer result to PARTIAL rather than full support.",
+  "non_claims": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "Evaluator does not perform Owner acceptance.",
+    "Evaluator does not promote evaluation evidence to canonical surfaces.",
+    "Evaluator does not compare external MetaRSI or historical evaluator material."
+  ],
+  "provenance": {
+    "source_paths_visible_in_artifact": true,
+    "derived_from_blind_checkpoint": true,
+    "evaluator_sealed_surface_read": false
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "schema_version": "successor-read-ledger-r0.4",
+  "task_id": "IGNITION-20260919-188-R0.4",
+  "manifest_path": "ignition/evaluation/heldout/r0.4/successor-visible/packet-manifest-r0.4.json",
+  "manifest_sha256": "bc702b24b546997c40182246cc6b890fe321d661692fb6e13aa3a0410adfbbea",
+  "ledger_state": "PRE_FINAL_VALIDATION_CLOSED",
+  "entries": [
+    {
+      "path": "ignition/evaluation/tools/task_branch_guard_r0_3.py",
+      "component_id": "task-branch-guard-r0.3",
+      "action_kind": "OPERATIONAL_EXECUTION",
+      "purpose": "Install the task-scoped branch authorization through the manifest-authorized guard.",
+      "content_exposure": "NO",
+      "case_specific_information_exposed": false,
+      "digest": null,
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/tools/task_branch_guard_r0_3.py",
+      "component_id": "task-branch-guard-r0.3",
+      "action_kind": "OPERATIONAL_STATUS_OBSERVED",
+      "purpose": "Observe the finite branch-authorization result after installation.",
+      "content_exposure": "NO",
+      "case_specific_information_exposed": false,
+      "digest": null,
+      "observed_status_code": "PASS_BRANCH_AUTHORIZED",
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/packet-manifest-r0.4.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read and verify the exact R0.4 packet boundary manifest and its evidence surfaces.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "bc702b24b546997c40182246cc6b890fe321d661692fb6e13aa3a0410adfbbea",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/README.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the R0.4 packet scope and case-exposure boundary.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "535d873f5a73679e88e5f8548747653869c2428b7d9025bcdf8eda2731861665",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/task-contract-r0.4.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the R0.4 task work and stop conditions.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "3f0764cdfe413021891d5d668cf09327bf71771b823b1df81aeb9f372d9dba59",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/method-contract-r0.4.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the required observation, interpretation, uncertainty, and evidence method.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "9ea33050c3ad3402be7d3483d0a8124b68925bdfb967b753721e050c96dbb457",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/capability-interface-r0.4.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the provider-neutral response interface and operational boundary.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "b7292b7c96b7748432ea16a56ba13d99921688468fbdf3338d69f5f696ecc17b",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/successor-output-r0.4.schema.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the successor output schema before constructing the two-case response.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "06f1261f915071fb6e5af85f7463da0c92a6983c0c72eaee0a7bfe74df9d3a2f",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/successor-read-ledger-r0.4.schema.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the open and closed ledger schema before recording evidence.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "02d2d504f4a5f2e5d5f333546e8bcd0c47c7b9a1e0f898e7610f270e4e65328e",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/successor-ledger-validation-receipt-r0.4.schema.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the independent final-attestation receipt interface without reading any receipt.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "d03a5f268eb758b5fbd6c051dfe6a86b5619794fb5b5b73658f68dac1567b17d",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases-manifest-r0.4.schema.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the schema defining the two synthetic held-out cases and provenance pins.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "5b586be3e9c3fda7be04eecf8f30f7bebcc2f8fa40240b3d5c3a78005d745272",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/packet-manifest-r0.4.schema.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the schema defining the R0.4 cognitive, operational, and sealed surfaces.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "1ebadaaa4a07e8b67bf0f43e57b1547d11c9f8eadcc646e601f92482c0d2e1a5",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases-manifest-r0.4.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read and verify the case IDs, source paths, provenance paths, and pinned digests.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "4e96ad3b10a365f71194cb882d82ead928788f93594a49a8a6e2ed093e966e14",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases-manifest-r0.4.sha256",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the pinned SHA256 sidecar for the case manifest.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "245212c1565e35aa9fe78af1cf15c4ee53628f3f0ad097f13634375a47d71fc0",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/r0.4-ledger-closure-protocol.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read R0.4 frozen-ledger and channel-contamination closure semantics.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "121f3ccd203a3f6f03f39598d1b3a446d7ff616ef8cf7e3e1bf680c7207fba2e",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/operational-control/r0.4/README.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the R0.4 status-only operational-control boundary.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": false,
+      "digest": "47d208a1b8d269fb4a48fdfb6f4138cdef67e853e9472db8442b026a9fb4f1a6",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/IGNITION-20260919-188-EXP-01.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the allowlisted EXP-01 synthetic case source.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": true,
+      "digest": "2c444ab7cf43e5b19991f0205ef77b64469327da875c9034c01acdedbcf1fb58",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/provenance/IGNITION-20260919-188-EXP-01.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the allowlisted EXP-01 provenance record and verify its source pin.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": true,
+      "digest": "bda4bf3674e0d8889c0deaa08ebc08c332457423e811e9fc182d5c404cb3b157",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/IGNITION-20260919-188-GOV-01.md",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the allowlisted GOV-01 synthetic case source.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": true,
+      "digest": "1509c3c52169b2be051fec9f3356726c2e5fb33b4d1e08d4db26b51a4afbdcc6",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/provenance/IGNITION-20260919-188-GOV-01.json",
+      "component_id": null,
+      "action_kind": "COGNITIVE_READ",
+      "purpose": "Read the allowlisted GOV-01 provenance record and verify its source pin.",
+      "content_exposure": "YES",
+      "case_specific_information_exposed": true,
+      "digest": "1a911701e2e83631c42384d3be564bea42fa79c2335c281a19d3e6635e7d4383",
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/bootstrap-r0.4.sh",
+      "component_id": "successor-bootstrap-r0.4",
+      "action_kind": "OPERATIONAL_EXECUTION",
+      "purpose": "Run the manifest-authorized pre-closure bootstrap branch guard against the staged output and ledger.",
+      "content_exposure": "NO",
+      "case_specific_information_exposed": false,
+      "digest": null,
+      "observed_status_code": null,
+      "contamination_disposition": "CLEAN"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/bootstrap-r0.4.sh",
+      "component_id": "successor-bootstrap-r0.4",
+      "action_kind": "OPERATIONAL_STATUS_OBSERVED",
+      "purpose": "Observe the finite pre-closure bootstrap result only.",
+      "content_exposure": "NO",
+      "case_specific_information_exposed": false,
+      "digest": null,
+      "observed_status_code": "PASS_BRANCH_AUTHORIZED",
+      "contamination_disposition": "CLEAN"
+    }
+  ],
+  "summary": {
+    "cognitive_reads": 18,
+    "operational_executions": 2,
+    "operational_status_observations": 2,
+    "prohibited_cognitive_reads": 0,
+    "contaminated_entries": 0
+  },
+  "trial_disposition": "CLEAN",
+  "closure": {
+    "closure_kind": "PRE_FINAL_VALIDATION_CLOSED",
+    "closed_entry_count": 22,
+    "closed_summary": {
+      "cognitive_reads": 18,
+      "operational_executions": 2,
+      "operational_status_observations": 2,
+      "prohibited_cognitive_reads": 0,
+      "contaminated_entries": 0
+    },
+    "manifest_sha256": "bc702b24b546997c40182246cc6b890fe321d661692fb6e13aa3a0410adfbbea"
+  }
+}

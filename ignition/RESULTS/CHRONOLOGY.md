@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 619 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 628 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,123 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.4 protocol integrity](../reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md)
+
+- **结果 ID：** `HR-B139478A5176F244`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `189-R0-4-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：R0.4 protocol integrity？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step01, before semantic evaluation
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Negative-control audit](../reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md)
+
+- **结果 ID：** `HR-E40D8F942099B046`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `189-R0-4-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Negative-control audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step04
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.4 independent evaluator disposition](../reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md)
+
+- **结果 ID：** `HR-10B604A45EBE510B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `189-R0-4-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：R0.4 independent evaluator disposition？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Role: R0.4INDEPENDENTEVALUATOR
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Cross-case R0.4 method transfer](../reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md)
+
+- **结果 ID：** `HR-D112271F2699F37A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `189-R0-4-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Cross-case R0.4 method transfer？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step03, after the blind semantic checkpoint 02889bfd1dd5f201b70a7084f48769ca87a290d5
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Blind R0.4 case evaluation](../reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md)
+
+- **结果 ID：** `HR-A32E39DFA1A9EE8F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `189-R0-4-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Blind R0.4 case evaluation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step02, blind semantic checkpoint
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task182-R3 minimum failure facts for R0.4 repair](../reports/evaluations/ignition-188-r0-4-protocol-repair/task182-r3-minimum-failure-facts-r0.4.md)
+
+- **结果 ID：** `HR-4EC8247705875807`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `188-R0-4-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：Task182-R3 minimum failure facts for R0.4 repair？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a Builder-side disclosure created only from the Owner/GPT minimum failure summary. It does not read, copy, inspect, or infer any Task182-R3 private successor output, read ledger, or final receipt.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.3 case-exposure semantic defect reproduction](../reports/evaluations/ignition-188-r0-4-protocol-repair/r0-3-case-exposure-defect.md)
+
+- **结果 ID：** `HR-3D597219D5817F5E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `188-R0-4-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：R0.3 case-exposure semantic defect reproduction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This report uses only a new synthetic manifest and synthetic ledger rows. It does not read or infer any Task182-R3 private successor output, read ledger, or final receipt.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.4 Evaluation-Plane / Foundation Isolation Closure](../reports/evaluations/ignition-188-r0-4-protocol-repair/evaluation-plane-isolation-fixed-point.md)
+
+- **结果 ID：** `HR-7CA4F527FB9266E0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `188-R0-4-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：R0.4 Evaluation-Plane / Foundation Isolation Closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** R0.4 reuses the existing Task181/186/187 typed evaluation boundary. It does not create a parallel admission or promotion framework.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.4 Complexity / Retirement Budget](../reports/evaluations/ignition-188-r0-4-protocol-repair/complexity-budget-r0.4.md)
+
+- **结果 ID：** `HR-AC31F06AF92BF6E4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `188-R0-4-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：R0.4 Complexity / Retirement Budget？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a Builder-side maintenance budget for the evaluation protocol. It does not run a Successor or Evaluator, does not promote a claim, and does not retire forensic history.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

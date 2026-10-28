@@ -1,0 +1,40 @@
+{
+  "schema_version": "heldout-successor-case-manifest-r0.4",
+  "authoring_task_id": "IGNITION-20260919-188",
+  "successor_trial_task_id": "IGNITION-20260919-188-R0.4",
+  "case_set_id": "IGNITION-20260919-188-R0.4-HELDOUT-CASES",
+  "provenance_policy": "Original synthetic bounded cases; source and provenance bytes are pinned by SHA-256; no gold answer, expected relation, expected continuation, evaluator answer, or real personal data.",
+  "case_count": 2,
+  "cases": [
+    {
+      "case_id": "IGNITION-20260919-188-EXP-01",
+      "category": "CONTENT_EXPERIENCE_RESEARCH",
+      "source_path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/IGNITION-20260919-188-EXP-01.md",
+      "source_sha256": "2c444ab7cf43e5b19991f0205ef77b64469327da875c9034c01acdedbcf1fb58",
+      "provenance_path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/provenance/IGNITION-20260919-188-EXP-01.json",
+      "provenance_sha256": "bda4bf3674e0d8889c0deaa08ebc08c332457423e811e9fc182d5c404cb3b157",
+      "source_kind": "ORIGINAL_SYNTHETIC_AUTHORING",
+      "synthetic": true,
+      "real_personal_data_used": false,
+      "contains_gold_ir": false,
+      "contains_expected_relations": false,
+      "contains_expected_continuation": false,
+      "contains_evaluator_answer": false
+    },
+    {
+      "case_id": "IGNITION-20260919-188-GOV-01",
+      "category": "ENGINEERING_GOVERNANCE",
+      "source_path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/IGNITION-20260919-188-GOV-01.md",
+      "source_sha256": "1509c3c52169b2be051fec9f3356726c2e5fb33b4d1e08d4db26b51a4afbdcc6",
+      "provenance_path": "ignition/evaluation/heldout/r0.4/successor-visible/cases/provenance/IGNITION-20260919-188-GOV-01.json",
+      "provenance_sha256": "1a911701e2e83631c42384d3be564bea42fa79c2335c281a19d3e6635e7d4383",
+      "source_kind": "ORIGINAL_SYNTHETIC_AUTHORING",
+      "synthetic": true,
+      "real_personal_data_used": false,
+      "contains_gold_ir": false,
+      "contains_expected_relations": false,
+      "contains_expected_continuation": false,
+      "contains_evaluator_answer": false
+    }
+  ]
+}

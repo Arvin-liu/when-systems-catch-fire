@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/heldout/r0.4/successor-visible/packet-manifest-r0.4.schema.json",
+  "title": "R0.4 Held-Out Successor Packet Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "manifest_path", "task_id", "case_set_id", "cases_manifest_path", "cases_manifest_sha256", "cognitive_evidence_surface", "operational_control_surface", "sealed_evidence_surface"],
+  "properties": {
+    "schema_version": {"const": "heldout-successor-packet-manifest-r0.4"},
+    "manifest_path": {"const": "ignition/evaluation/heldout/r0.4/successor-visible/packet-manifest-r0.4.json"},
+    "task_id": {"const": "IGNITION-20260919-188-R0.4"},
+    "case_set_id": {"const": "IGNITION-20260919-188-R0.4-HELDOUT-CASES"},
+    "cases_manifest_path": {"const": "ignition/evaluation/heldout/r0.4/successor-visible/cases-manifest-r0.4.json"},
+    "cases_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "cognitive_evidence_surface": {"$ref": "#/$defs/cognitive_surface"},
+    "operational_control_surface": {"$ref": "#/$defs/operational_surface"},
+    "sealed_evidence_surface": {"$ref": "#/$defs/sealed_surface"}
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "cognitive_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "files"],
+      "properties": {
+        "surface_id": {"const": "COGNITIVE_EVIDENCE_SURFACE"},
+        "files": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/file"}, "uniqueItems": true}
+      }
+    },
+    "operational_component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component_id", "path", "source_sha256", "evidence_scope", "successor_access", "permitted_actions", "allowed_status_codes"],
+      "properties": {
+        "component_id": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "evidence_scope": {"enum": ["CERTIFIED_LEDGER_SCOPE", "FINAL_ATTESTATION_SURFACE"]},
+        "successor_access": {"const": "EXECUTE_STATUS_ONLY"},
+        "permitted_actions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["EXECUTE", "OBSERVE_STATUS"]}},
+        "allowed_status_codes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "operational_resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["resource_id", "path", "sha256", "successor_access"],
+      "properties": {
+        "resource_id": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "successor_access": {"const": "GUARD_INTERNAL_ONLY"}
+      }
+    },
+    "operational_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "components", "resources"],
+      "properties": {
+        "surface_id": {"const": "OPERATIONAL_CONTROL_SURFACE"},
+        "components": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/operational_component"}, "uniqueItems": true},
+        "resources": {"type": "array", "items": {"$ref": "#/$defs/operational_resource"}, "uniqueItems": true}
+      }
+    },
+    "sealed_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "successor_access", "excluded_path_prefixes"],
+      "properties": {
+        "surface_id": {"const": "EVALUATOR_SEALED_SURFACE"},
+        "successor_access": {"const": "PROHIBITED"},
+        "excluded_path_prefixes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}

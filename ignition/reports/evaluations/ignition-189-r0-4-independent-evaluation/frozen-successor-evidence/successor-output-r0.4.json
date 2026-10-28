@@ -1,0 +1,63 @@
+{
+  "schema_version": "successor-output-r0.4",
+  "task_id": "IGNITION-20260919-188-R0.4",
+  "case_responses": [
+    {
+      "case_id": "IGNITION-20260919-188-EXP-01",
+      "observations": [
+        "The synthetic kiosk pilot was observed across three weekday sessions and offered two navigation labels for the same service: 'start a request' and 'begin service'.",
+        "The visible event stream records 24 completed sessions and 7 abandoned sessions.",
+        "Eleven completed sessions and five abandoned sessions displayed both navigation labels before the recorded outcome.",
+        "The median pause between the first label display and the next recorded event was 18 seconds.",
+        "No event records a visitor's reason for pausing or abandoning, and one maintenance interval has no collected label-display events.",
+        "The labels were shown in different interface positions; the aggregate data do not identify individual sessions beyond the stated event categories, and the observer did not interview visitors or infer unrecorded intent."
+      ],
+      "interpretations": [
+        "Within the recorded stream, the share of sessions displaying both labels differs between completed sessions and abandoned sessions, but this is a descriptive association rather than evidence that wording or label exposure caused an outcome.",
+        "The 18-second median describes recorded timing; it does not establish confusion, hesitation, comprehension, or intent.",
+        "Wording, position, device familiarity, missing maintenance-interval events, or another unmeasured factor could account for part or all of the observed difference."
+      ],
+      "uncertainties": [
+        "The missing maintenance interval may change the observed exposure counts and outcome proportions.",
+        "The event stream does not reveal why visitors paused or abandoned, whether the two labels were encountered in a consistent order, or whether individual visitor and device characteristics differed across sessions.",
+        "Because wording and position changed together and there is no randomized or controlled comparison, their separate effects are unresolved.",
+        "The aggregate categories do not provide enough session-level linkage to test alternative explanations or establish a causal relationship."
+      ],
+      "additional_evidence_needed": [
+        "Complete and quality-audited event capture for the maintenance interval, with session-level records that link label exposure, order, position, timing, and outcome while preserving privacy.",
+        "A randomized or counterbalanced comparison that varies wording and position separately, with pre-specified completion and abandonment measures.",
+        "Direct usability evidence such as interviews, surveys, or moderated testing about pauses, label interpretation, and abandonment reasons.",
+        "Independent checks of the event instrumentation and a comparison with an appropriate baseline or control cohort."
+      ]
+    },
+    {
+      "case_id": "IGNITION-20260919-188-GOV-01",
+      "observations": [
+        "The synthetic migration moved an audit log from audit-ledger-v1 to audit-ledger-v2 and provides a field map, dry-run report, rollback note, and post-deploy status snapshot.",
+        "actor_ref and event_kind are required in both versions; context_blob is optional in v1 and required in v2 only when event_kind is configuration.",
+        "The dry run processed 412 synthetic records and reported 3 records needing manual review.",
+        "The rollback note states that deployment can be reverted, but it does not record whether the three records were restored.",
+        "The status snapshot reports migration_complete=true and review_queue=3.",
+        "The field map has no entry describing event ordering during the deployment window, and the artifacts contain no person, credential, production-customer, or private operational data."
+      ],
+      "interpretations": [
+        "The listed field requirements describe part of the schema transition, but they do not by themselves establish that every record was migrated correctly or that all behavioral invariants were preserved.",
+        "The dry-run result and review queue indicate records requiring attention; the completion flag reports a status, not independent proof that those records were resolved or that migration correctness was verified.",
+        "The rollback note documents a stated capability to revert, not evidence that rollback was exercised or that restoration was complete.",
+        "The missing deployment-window ordering rule leaves chronological integrity as an unresolved governance and auditability question."
+      ],
+      "uncertainties": [
+        "It is unknown why each of the three records entered manual review, whether its v1-to-v2 values were reconciled, and whether any records remained unresolved.",
+        "It is unknown whether the rollback path was tested and whether it restored the reviewed records and related audit history.",
+        "The artifacts do not establish how events written during deployment are ordered, whether ordering is preserved across the transition, or which invariant would be used to verify it.",
+        "The post-deploy status snapshot is not independently tied to a record-level reconciliation or an immutable audit trail."
+      ],
+      "additional_evidence_needed": [
+        "A record-level reconciliation for all 412 records, including the three manual-review cases, before-and-after values, exception disposition, and independent sign-off.",
+        "A controlled rollback exercise with logs showing what was restored, followed by a comparison against the pre-migration audit state.",
+        "An explicit deployment-window ordering specification plus representative event samples, sequence or timestamp checks, and evidence that the invariant holds across the transition.",
+        "An independently verifiable audit trail or replay/digest comparison that connects the status snapshot to the underlying records and preserves provenance for the reported queue."
+      ]
+    }
+  ]
+}

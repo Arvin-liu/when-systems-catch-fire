@@ -1,0 +1,21 @@
+{
+  "schema_version": "ignition-188-r0.4-minimum-failure-facts",
+  "source_scope": "OWNER_GPT_MINIMUM_FAILURE_SUMMARY_ONLY",
+  "observed_finalizer_status": "FAIL_READ_LEDGER_INVALID",
+  "trial_stopped_immediately": true,
+  "no_retry": true,
+  "no_receipt_read": true,
+  "no_post_failure_ledger_modification": true,
+  "no_commit_push_or_pr_after_failure": true,
+  "generic_case_exposure_defect": {
+    "classification": "R0_3_CASE_EXPOSURE_SEMANTIC_DEFECT_CONFIRMED",
+    "confirmed_by_step00_synthetic_fixture": true,
+    "asserted_as_private_r0_3_root_cause": false
+  },
+  "private_root_cause": "UNRESOLVED_WITHOUT_PRIVATE_LEDGER",
+  "inheritance_evidence_admitted": false,
+  "declaration": "NO_INHERITANCE_EVIDENCE_ADMITTED_FROM_FAILED_R0_3_TRIAL",
+  "private_task182_r3_output_read": false,
+  "private_task182_r3_read_ledger_read": false,
+  "private_task182_r3_final_receipt_read": false
+}
