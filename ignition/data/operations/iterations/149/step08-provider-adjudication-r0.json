@@ -1,0 +1,242 @@
+{
+  "schema_version": "ignition-149-step08-provider-adjudication-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "08",
+  "status": "ADJUDICATION_COMPLETE",
+  "observed_at": "2026-09-01T09:06:18+08:00",
+  "formal_previous_commit": "e9194e9bfe858712a8b07620604684e4b98eca2b",
+  "agent_reach_runtime": {
+    "version": "1.5.0",
+    "doctor_command": "agent-reach doctor --json",
+    "doctor_result_sha256": "1bd983b684c4c567958278ff218321274c91bc437a6ec9ce4eb354da5861b6f3",
+    "doctor_status": "RECORDED_WITH_GITHUB_AUTH_WARNING",
+    "github_channel": {"declared_backend": "gh CLI", "detected_backend": "gh CLI", "health": "warn", "active_backend": null, "reason": "No explicit GH authentication in isolated HOME; doctor does not auto-read gh auth status."},
+    "web_channel": {"declared_backend": "Jina Reader", "detected_backend": "Jina Reader", "health": "ok", "active_backend": "Jina Reader"},
+    "check_update_command": "agent-reach check-update",
+    "check_update_result_sha256": "a38043ddf8ca4adb7c33a1d696f44e802782eadc226b1e3f029c6af0ffb4209a",
+    "check_update_status": "CURRENT_SILENT_OR_CURRENT_TEXT",
+    "isolated_runtime": {"home": "REAL_PATH_EPHEMERAL", "xdg_config": "REAL_PATH_EPHEMERAL", "xdg_cache": "REAL_PATH_EPHEMERAL", "system_install": false, "persistent_agent_reach_config_written": false}
+  },
+  "provider_comparisons": [
+    {
+      "abstract_operation": "read_public_github_repository",
+      "request_target": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire",
+      "native_provider": {
+        "provider_id": "native-github-http",
+        "backend": "curl",
+        "permission_scope": "PUBLIC_READ_ONLY",
+        "command": "curl -fsSL --max-time 30 https://api.github.com/repos/Arvin-liu/when-systems-catch-fire",
+        "exit_code": 0,
+        "http_status": 200,
+        "result_count": 1,
+        "raw_bytes": 6409,
+        "raw_output_sha256": "d78a461203481cb863d20be05387ceb60451fa7fae51e7e24dd61b55e68234a3",
+        "normalized_result": {"full_name": "Arvin-liu/when-systems-catch-fire", "private": false, "archived": false, "default_branch": "main", "html_url": "https://github.com/Arvin-liu/when-systems-catch-fire"},
+        "provenance": {"source_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire", "provider": "native-github-http", "backend": "curl", "raw_output_bound": true}
+      },
+      "agent_reach_routed_provider": {
+        "provider_id": "agent-reach-github",
+        "channel": "github",
+        "declared_backend": "gh CLI",
+        "detected_backend": "gh CLI",
+        "permission_scope": "PUBLIC_READ_REQUESTED_BUT_AUTH_REQUIRED_BY_SELECTED_BACKEND",
+        "command": "gh api repos/Arvin-liu/when-systems-catch-fire",
+        "isolated_home": true,
+        "exit_code": 4,
+        "http_status": null,
+        "status": "AUTH_REQUIRED",
+        "result_count": 0,
+        "raw_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "69f5519080eaf4c3a8900ff6c94fe8295d61829c17161fb23806005b55bc84b9",
+        "failure_reason": "gh CLI requires explicit authentication in this isolated environment; no token was supplied and no login was attempted.",
+        "provenance": {"source_url": "https://api.github.com/repos/Arvin-liu/when-systems-catch-fire", "provider": "agent-reach-github", "backend": "gh CLI", "raw_output_bound": true}
+      },
+      "normalization": {"schema": "PROVIDER_NEUTRAL_SOURCE_RESULT_R0", "native_status": "NORMALIZED", "agent_reach_status": "FAILURE_NORMALIZED_AS_AUTH_REQUIRED", "implementation_detail_leaks_upward": false}
+    },
+    {
+      "abstract_operation": "search_public_github_repositories",
+      "request_target": "https://api.github.com/search/repositories?q=archify",
+      "native_provider": {
+        "provider_id": "native-github-http",
+        "backend": "curl",
+        "permission_scope": "PUBLIC_READ_ONLY",
+        "command": "curl -fsSL --max-time 30 https://api.github.com/search/repositories?q=archify",
+        "exit_code": 0,
+        "http_status": 200,
+        "result_count": 30,
+        "total_count": 144,
+        "raw_bytes": 186645,
+        "raw_output_sha256": "f969cbd4ad985f1473963a25ce183fe63a7e2031a4ed22b390de43ad65035373",
+        "normalized_result": {"query": "archify", "total_count": 144, "incomplete_results": false, "returned_count": 30},
+        "provenance": {"source_url": "https://api.github.com/search/repositories?q=archify", "provider": "native-github-http", "backend": "curl", "raw_output_bound": true}
+      },
+      "agent_reach_routed_provider": {
+        "provider_id": "agent-reach-github",
+        "channel": "github",
+        "declared_backend": "gh CLI",
+        "detected_backend": "gh CLI",
+        "permission_scope": "PUBLIC_READ_REQUESTED_BUT_AUTH_REQUIRED_BY_SELECTED_BACKEND",
+        "command": "gh search repos archify --limit 5 --json fullName,nameWithOwner,url,description",
+        "isolated_home": true,
+        "exit_code": 4,
+        "http_status": null,
+        "status": "AUTH_REQUIRED",
+        "result_count": 0,
+        "raw_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "69f5519080eaf4c3a8900ff6c94fe8295d61829c17161fb23806005b55bc84b9",
+        "failure_reason": "gh CLI requires explicit authentication in this isolated environment; no token was supplied and no login was attempted.",
+        "provenance": {"source_url": "https://api.github.com/search/repositories?q=archify", "provider": "agent-reach-github", "backend": "gh CLI", "raw_output_bound": true}
+      },
+      "normalization": {"schema": "PROVIDER_NEUTRAL_SOURCE_RESULT_R0", "native_status": "NORMALIZED", "agent_reach_status": "FAILURE_NORMALIZED_AS_AUTH_REQUIRED", "implementation_detail_leaks_upward": false}
+    },
+    {
+      "abstract_operation": "read_public_web_page",
+      "request_target": "https://example.com",
+      "native_provider": {
+        "provider_id": "native-web-http",
+        "backend": "curl",
+        "permission_scope": "PUBLIC_READ_ONLY",
+        "command": "curl -fsSL --max-time 30 https://example.com",
+        "exit_code": 0,
+        "http_status": 200,
+        "result_count": 1,
+        "raw_bytes": 559,
+        "raw_output_sha256": "ff67a9d764d6a2367a187734e697f6a53217db9a21c101d410a113ca871a299d",
+        "normalized_result": {"title": "Example Domain", "canonical_url": "https://example.com", "content_capture": "HTML_BODY_BOUND_BY_RAW_HASH"},
+        "provenance": {"source_url": "https://example.com", "provider": "native-web-http", "backend": "curl", "raw_output_bound": true}
+      },
+      "agent_reach_routed_provider": {
+        "provider_id": "agent-reach-web",
+        "channel": "web",
+        "declared_backend": "Jina Reader",
+        "detected_backend": "Jina Reader",
+        "permission_scope": "PUBLIC_READ_ONLY",
+        "command": "curl -fsSL --max-time 30 https://r.jina.ai/http://example.com",
+        "isolated_home": true,
+        "exit_code": 0,
+        "http_status": 200,
+        "status": "AVAILABLE_READ_ONLY",
+        "result_count": 1,
+        "raw_bytes": 452,
+        "raw_output_sha256": "09f0431b8690ed626713d4a9ddb7520c2d7d233302bbe76595945bcc22cbc8bf",
+        "normalized_result": {"title": "Example Domain", "canonical_url": "http://example.com/", "content_capture": "MARKDOWN_BODY_BOUND_BY_RAW_HASH"},
+        "provenance": {"source_url": "http://example.com/", "provider": "agent-reach-web", "backend": "Jina Reader", "raw_output_bound": true}
+      },
+      "normalization": {"schema": "PROVIDER_NEUTRAL_SOURCE_RESULT_R0", "native_status": "NORMALIZED", "agent_reach_status": "NORMALIZED", "content_hashes_equal": false, "title_equal": true, "implementation_detail_leaks_upward": false}
+    }
+  ],
+  "provider_switching_experiment": {
+    "same_abstract_operations": true,
+    "upper_workflow_change": false,
+    "provider_swap_result": "PARTIAL",
+    "passed_paths": ["read_public_web_page native-web-http -> agent-reach-web"],
+    "blocked_paths": ["read_public_github_repository agent-reach-github -> AUTH_REQUIRED", "search_public_github_repositories agent-reach-github -> AUTH_REQUIRED"],
+    "output_normalization_required": true,
+    "provenance_required": true,
+    "failure_semantics_preserved": true,
+    "health_state_preserved": true,
+    "permission_difference_observed": true,
+    "dependency_difference_observed": true,
+    "provider_switching_leaks_implementation_details_upward": false,
+    "agent_reach_is_router_not_reading_wrapper": true,
+    "native_provider_redundancy": "Existing native curl/HTTP and gh/git paths remain sufficient for the tested public reads; Agent Reach adds selection and health reporting but its GitHub route reuses gh and has an explicit-auth boundary in this environment."
+  },
+  "adjudications": [
+    {
+      "provider_id": "archify",
+      "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+      "decision": "FIT_WITH_LIMITS",
+      "dimensions": {
+        "semantic_fidelity": "PASS_FOR_CANONICAL_DERIVED_IR",
+        "deterministic_reproducibility": "PASS_WITH_PINNED_GEOMETRY_AND_REVISION",
+        "validation_quality": "PASS_FOR_SNAPSHOT_AND_DELTA_COMPOSITION; DELTA_VIEWER_CONTAINMENT_RESIDUAL",
+        "provenance_preservation": "PASS_WITH_SOURCE_AND_REVISION_HASHES",
+        "artifact_usefulness": "USEFUL_DERIVED_SURFACE_WITH_THREE_PANEL_VIEWER_LIMIT",
+        "maintenance_burden": "BOUNDED_EXTERNAL_CLI_ADAPTER",
+        "dependency_weight": "NODE_RUNTIME_AND_EXTERNAL_VIEWER_BUNDLE",
+        "install_burden": "NO_INSTALL_PERFORMED; PINNED_CHECKOUT_SUFFICED",
+        "license_compatibility": "MIT_WITH_ATTRIBUTION; NO_SOURCE_COPY",
+        "derived_surface_capability": "PASS",
+        "existing_ignition_renderer_redundancy": "PARTIAL; EXISTING_CANONICAL_SURFACES_REMAIN_AUTHORITY"
+      },
+      "best_role": "DERIVED_VISUALIZATION_PROVIDER",
+      "must_not_assume": ["architecture truth", "runtime impact", "correctness", "merge readiness", "Current capability", "production readiness"],
+      "known_limits": ["Delta viewer fails viewport containment in recorded six viewports", "HTML artifacts are large and remain NOT_COMMITTED", "visualReview field remains pending in upstream receipt"]
+    },
+    {
+      "provider_id": "agent-reach-public",
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "decision": "FIT_WITH_LIMITS",
+      "dimensions": {
+        "semantic_fidelity": "PARTIAL; WEB TITLE NORMALIZED, RAW REPRESENTATIONS DIFFER",
+        "deterministic_reproducibility": "BOUNDED_BY_SELECTED_BACKEND_AND_NETWORK_RESPONSE",
+        "validation_quality": "DOCTOR_AND_BOUNDED_RESULT_HASHES; DOCTOR_IS_NOT_ACQUISITION_SUCCESS",
+        "provenance_preservation": "MUST_BE_CAPTURED_BY_IGNITION",
+        "artifact_usefulness": "SOURCE_ACQUISITION_OUTPUT_ONLY; NO_CANONICAL_ABSORPTION",
+        "maintenance_burden": "HIGHER_THAN_DIRECT_NATIVE_TOOL_BECAUSE_ROUTER_AND_BACKENDS_DRIFT",
+        "dependency_weight": "MULTI_BACKEND_OPTIONAL_DEPENDENCIES; PINNED_SOURCE_BLOCKED_ON_PYYAML",
+        "install_burden": "NO_INSTALL_PERFORMED; SYSTEM_INSTALL_FORBIDDEN",
+        "license_compatibility": "MIT_WITH_ATTRIBUTION; NO_SOURCE_COPY",
+        "derived_surface_capability": "PASS_ONLY_AFTER_NORMALIZATION_AND_PROVENANCE",
+        "existing_ignition_renderer_redundancy": "PUBLIC_WEB_HAS_NATIVE_CURL_OVERLAP; GITHUB_ROUTE ADDS HEALTH/SELECTION BUT REUSES GH"
+      },
+      "best_role": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER_FOR_PUBLIC_CHANNELS",
+      "must_not_assume": ["global Internet authority", "external truth", "credentials", "authenticated availability", "Current capability", "permission"],
+      "known_limits": ["GitHub route AUTH_REQUIRED in isolated no-token environment", "Exa search inactive", "pinned source doctor blocked by missing yaml", "provider-local routing/install/cookie rules are not Ignition policy"]
+    },
+    {
+      "provider_id": "agent-reach-authenticated",
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "decision": "DEFER",
+      "dimensions": {
+        "semantic_fidelity": "NOT_TESTED",
+        "deterministic_reproducibility": "NOT_ESTABLISHED",
+        "validation_quality": "NO_AUTHENTICATED_ACQUISITION_RUN",
+        "provenance_preservation": "REQUIRES_EXPLICIT_OWNER_AND_CHANNEL_EVIDENCE",
+        "artifact_usefulness": "NOT_ADMITTED",
+        "maintenance_burden": "UNASSESSED",
+        "dependency_weight": "SESSION_OR_COOKIE_BACKENDS_NOT_ADMITTED",
+        "install_burden": "NOT_PERFORMED",
+        "license_compatibility": "NOT_DECISIVE_WITHOUT_AUTH_ADMISSION",
+        "derived_surface_capability": "NOT_ESTABLISHED",
+        "existing_ignition_renderer_redundancy": "NOT_APPLICABLE"
+      },
+      "best_role": "NONE_UNTIL_EXPLICIT_CHANNEL_ADMISSION",
+      "must_not_assume": ["installed Agent Reach means authenticated capability", "existing browser state means permission", "backend health means user authorization"],
+      "known_limits": ["No cookies, sessions, login, or authenticated calls were used or admitted"]
+    }
+  ],
+  "admission_recommendation": {
+    "archify": "FIT_WITH_LIMITS",
+    "agent_reach_public": "FIT_WITH_LIMITS",
+    "agent_reach_authenticated": "DEFER",
+    "future_candidate_only": true,
+    "not_current_integration": true,
+    "not_production_ready": true
+  },
+  "side_effect_boundary": {
+    "network_scope": "READ_ONLY_PUBLIC_REQUESTS_ONLY",
+    "system_install": false,
+    "system_configuration": false,
+    "firewall_or_security_change": false,
+    "browser_login": false,
+    "cookie_or_session_read": false,
+    "external_write": false,
+    "private_repository_write": false,
+    "upstream_source_copied_or_vendored": false,
+    "isolated_directories_contained_no_persistent_files": true
+  },
+  "boundaries": {
+    "external_provider_is_ignition_authority": false,
+    "provider_capability_is_permission": false,
+    "provider_output_is_external_truth": false,
+    "provider_local_policy_is_ignition_global_policy": false,
+    "adapter_spike_pass_is_current_capability": false,
+    "current_integration": "NOT_CURRENT_INTEGRATION",
+    "production_readiness": "NOT_PRODUCTION_READY",
+    "provider_permission_granted": false,
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"
+  },
+  "claim_ceiling": "Step08 records a bounded native-versus-Agent-Reach-routed provider experiment and evidence-backed adjudication. It proves only the recorded public read observations, explicit GitHub auth failure semantics, normalization/provenance requirements, Archify derived-surface limits and provider-candidate recommendations. It does not establish external truth, global Internet authority, authenticated credentials, permission, Current capability, production readiness, Owner acceptance or live external invocation."
+}

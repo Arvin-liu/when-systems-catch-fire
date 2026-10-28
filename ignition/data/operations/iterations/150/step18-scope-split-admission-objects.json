@@ -1,0 +1,157 @@
+{
+  "schema_version": "ignition-150-step18-scope-split-admission-objects-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "18",
+  "record_type": "SCOPE_SPLIT_ADMISSION_OBJECTS",
+  "status": "ADMISSION_OBJECTS_DECOMPOSED_BASE_CANDIDATE_DELTA_DEFERRED",
+  "formal_previous_commit": "c28314f9ede8e10690f937b00b9bb10e6bc226be",
+  "owner_review": {
+    "decision": "REOPEN_TASK150_WITH_SCOPE_SPLIT",
+    "amendment_path": "agent-commands/IGNITION-20260902-150-owner-reopen-scope-split-r1.md",
+    "historical_step14_defer_valid": true,
+    "historical_step15_closeout_preserved": true,
+    "no_evidence_rewritten": true
+  },
+  "historical_preservation": {
+    "step14_result": "DEFER",
+    "step14_reason": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER_AND_OWNER_VISUAL_ACCEPTANCE_PENDING",
+    "step15_result": "TASK150_STEP15_DRAFT_PR_OWNER_REVIEW_STOP",
+    "step15_formal_head": "03203326defd862dc24352080722dadb94dc6721",
+    "historical_receipts_immutable": true
+  },
+  "canonical_source": {
+    "path": "ignition/data/architecture/overall-architecture.json",
+    "role": "CURRENT_CANONICAL_ARCHITECTURE_SOURCE",
+    "source_revision": "d7372c27abe456b5b8c058675630d8038f91b448",
+    "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "nodes": 24,
+    "edges": 24,
+    "authority": "IGNITION_CANONICAL_AUTHORED_SOURCE"
+  },
+  "base_operation": {
+    "admission_object": "BASE_OPERATION",
+    "operation_id": "visualization.render_derived_system_view",
+    "status": "CURRENT_BOUNDED_CANDIDATE",
+    "ownership": "IGNITION",
+    "operation_class": "VALIDATION_AUDIT",
+    "input_types": [
+      "CURRENT_CANONICAL_ARCHITECTURE_SOURCE",
+      "AUTHORED_ARCHITECTURE_SOURCE"
+    ],
+    "output_types": ["DERIVED_VISUALIZATION_ARTIFACT"],
+    "canonical_scope": "CANONICAL/AUTHORED_SOURCE -> ARCHIFY_COMPATIBLE_PROVIDER_ADAPTER -> STANDALONE_DERIVED_VISUALIZATION_ARTIFACT",
+    "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+    "provider_binding": {
+      "provider_id": "archify",
+      "role": "TESTED_OPTIONAL_PROVIDER_IMPLEMENTATION",
+      "tested_observation_ref": "06dd052602dd9a369e4d034e24faef0917b5a60c",
+      "compatibility_status": "REQUIRES_STEP22_FRESH_IMMUTABLE_COMPATIBILITY_CHECK",
+      "operation_definition_is_provider_neutral": true
+    },
+    "execution_boundary": {
+      "mode": "READ_ONLY_RUN",
+      "repository_mutation": "FORBIDDEN",
+      "unrelated_external_action": "FORBIDDEN",
+      "automatic_installation": false,
+      "canonical_write_back": false,
+      "default_renderer": "NOT_SELECTED"
+    },
+    "gate_family": "BASE_OPERATION_GATES",
+    "gates": [
+      {"id": "canonical_source_provenance_complete", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "node_edge_semantic_fidelity", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "provider_topology_unchanged", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "standalone_viewport_containment_zero_failure", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "provider_failure_fail_closed", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "canonical_source_unaffected", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "environment_admission_no_auto_install", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "immutable_tested_compatibility_envelope", "result": "PENDING_STEP22_REVALIDATION"},
+      {"id": "artifact_digest_and_provenance_receipt", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "provider_local_policy_isolation", "result": "PENDING_STEP21_REVALIDATION"},
+      {"id": "no_default_renderer", "result": "PASS_SCOPE_LOCKED"},
+      {"id": "no_architecture_truth_escalation", "result": "PASS_SCOPE_LOCKED"}
+    ],
+    "claim_ceiling": "Visual representation of authored topology only; no architecture truth, runtime behavior, impact/risk, correctness, permission, production or external-truth claim."
+  },
+  "delta_extension": {
+    "admission_object": "EXPERIMENTAL_EXTENSION",
+    "extension_id": "architecture_delta.before_delta_after",
+    "status": "EXPERIMENTAL_EXTENSION_DEFERRED",
+    "operation_registry_status": "NOT_A_CURRENT_OPERATION",
+    "gate_family": "DELTA_EXTENSION_GATES",
+    "gate": {
+      "id": "delta_viewport_containment_zero_failure",
+      "result": "FAIL_DEFERRED",
+      "diagnostic_code": "viewer/viewport-overflow",
+      "diagnostics": 3,
+      "source": "ignition/data/operations/iterations/150/step04-viewport-residual-repair.json"
+    },
+    "retained_evidence": {
+      "semantic_delta_checks": {"total": 28, "passed": 28},
+      "standalone_containment": "PASS",
+      "upstream_wrapper_viewport_failures": 3,
+      "light_dark_capture_anomaly": "RETAINED_FROM_PRIOR_EVIDENCE",
+      "provenance_only_change": "RETAINED_FROM_PRIOR_EVIDENCE"
+    },
+    "promotion_guard": {
+      "delta_failure_can_pollute_base": false,
+      "base_pass_promotes_delta": false,
+      "delta_requires_separate_admission": true,
+      "registered_in_current_registry": false
+    },
+    "claim_ceiling": "Revision-pinned experimental Delta comparison only; not a Current operation, architecture truth, runtime/impact/correctness evidence or Owner aesthetic acceptance."
+  },
+  "aesthetic_boundary": {
+    "functional_visual_admission": "ALLOWED_TO_PROCEED_TO_FRESH_BASE_GATE_REVALIDATION",
+    "owner_aesthetic_endorsement": "NOT_GRANTED",
+    "owner_aesthetic_endorsement_required_for_base": false,
+    "owner_rejected_visual": false,
+    "owner_visual_accepted": false,
+    "future_branded_or_publication_use_requires_separate_gate": true
+  },
+  "gate_topology": {
+    "base_gate_ids": [
+      "canonical_source_provenance_complete",
+      "node_edge_semantic_fidelity",
+      "provider_topology_unchanged",
+      "standalone_viewport_containment_zero_failure",
+      "provider_failure_fail_closed",
+      "canonical_source_unaffected",
+      "environment_admission_no_auto_install",
+      "immutable_tested_compatibility_envelope",
+      "artifact_digest_and_provenance_receipt",
+      "provider_local_policy_isolation",
+      "no_default_renderer",
+      "no_architecture_truth_escalation"
+    ],
+    "delta_gate_ids": ["delta_viewport_containment_zero_failure"],
+    "base_operation_admission_requires_all_base_gates": true,
+    "delta_failure_cannot_pollute_base": true,
+    "base_pass_cannot_promote_delta": true,
+    "combined_gate_removed_as_admission_model": true
+  },
+  "registry_boundary": {
+    "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "operation_count_before": 19,
+    "operation_count_after": 19,
+    "operation_present": false,
+    "registry_write_in_step18": false,
+    "registry_write_step": "23_AFTER_STEPS18_22",
+    "delta_registered": false,
+    "provider_specific_operation_id_registered": false
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "agent_reach_admission": "NO_ADMISSION",
+    "agent_reach_install": "NO_INSTALL",
+    "agent_reach_auth": "NO_AUTH",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "default_renderer": "NOT_SELECTED",
+    "task151": "FORBIDDEN"
+  },
+  "result": "TASK150_STEP18_SCOPE_SPLIT_ADMISSION_OBJECTS_RECORDED",
+  "next_step": "TASK150_STEP19_GATE_TOPOLOGY_REGRESSION",
+  "claim_ceiling": "Step18 formally decomposes the base operation and Delta extension without registry admission. It preserves historical Step14/15 evidence and does not prove standalone admission, compatibility, Current integration, Ready, merge, aesthetic endorsement, architecture truth, authentication, external truth or live external completion."
+}

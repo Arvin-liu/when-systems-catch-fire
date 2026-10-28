@@ -1,0 +1,8 @@
+{
+  "schema_version": "ignition-durability-pack-lifecycle-r1",
+  "states": ["DISCOVERED", "STAGED", "VALIDATED", "ACTIVATED", "DRAINING", "DEACTIVATED", "ROLLED_BACK", "QUARANTINED"],
+  "transition_rule": "ATOMIC_VALIDATE_THEN_ACTIVATE_WITH_LAST_KNOWN_GOOD_ROLLBACK",
+  "run_rule": "ACTIVE_RUNS_ARE_VERSION_PINNED; NEW_RUNS_SEE_NEW_VERSION",
+  "authority_rule": "PACK_SCOPE_ONLY_NO_GENERIC_PERMISSION_TRUTH_OWNER_OR_EPISTEMIC_AUTHORITY",
+  "fixture_packs": ["knowledge.r0", "research.reos-light", "writing.zhiyuan", "maintenance.repository"]
+}

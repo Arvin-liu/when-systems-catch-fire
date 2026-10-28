@@ -1,0 +1,53 @@
+{
+  "claim_ceiling": "Typed repository-local semantic consistency only; no authority, external truth, production readiness, Owner acceptance or epistemic upgrade.",
+  "issue_count": 0,
+  "issues": [],
+  "result": "VALID",
+  "schema_version": "current-surface-semantic-gate-r1",
+  "snapshot_source_digest": "100c1dd6ef20e1d16cd00a27a63dfe98b28ab514c0a4356fd0e29a0363554168",
+  "surfaces": [
+    {
+      "generated_block_count": 1,
+      "issue_count": 0,
+      "path": "ignition/docs/project-current-state.md",
+      "profile": "human",
+      "surface_id": "project-current-state"
+    },
+    {
+      "generated_block_count": 1,
+      "issue_count": 0,
+      "path": "ignition/AI-START-HERE.md",
+      "profile": "ai",
+      "surface_id": "ai-cold-start"
+    },
+    {
+      "generated_block_count": 1,
+      "issue_count": 0,
+      "path": "ignition/AI-HANDOFF.md",
+      "profile": "ai",
+      "surface_id": "ai-agents-handoff"
+    },
+    {
+      "generated_block_count": 1,
+      "issue_count": 0,
+      "path": "ignition/llms.txt",
+      "profile": "machine",
+      "surface_id": "machine-entry"
+    },
+    {
+      "generated_block_count": 1,
+      "issue_count": 0,
+      "path": "ignition/ARCHITECTURE.md",
+      "profile": "human",
+      "surface_id": "architecture"
+    },
+    {
+      "generated_block_count": 1,
+      "issue_count": 0,
+      "path": "ignition/STATE-CHANGELOG.md",
+      "profile": "ai",
+      "surface_id": "state-changelog"
+    }
+  ],
+  "task_id": "IGNITION-20260828-147"
+}

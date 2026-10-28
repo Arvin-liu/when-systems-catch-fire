@@ -1,0 +1,33 @@
+{
+  "task_id": "IGNITION-20260826-140",
+  "step": "05",
+  "status": "PASS",
+  "schema": "live-reconciliation-state-r1",
+  "states": [
+    "OPEN_REQUIRES_EVIDENCE",
+    "TERMINAL_UNRECOVERABLE_EFFECT_UNKNOWN",
+    "TERMINAL_UNRECOVERABLE_OBSERVATION_INCOMPLETE",
+    "CLOSED_NO_LIVE_DISPATCH",
+    "CLOSED_RECONCILED"
+  ],
+  "invariants": [
+    "Every terminal state requires evidence_recovery_status=EXHAUSTED unless the boundary is CONCLUSIVE.",
+    "external_effect_knowledge is always UNKNOWN in this contract.",
+    "validated_completion_eligible is always false in reconciliation state.",
+    "CLOSED_NO_LIVE_DISPATCH means no live process was observed, not that external effect is known absent.",
+    "Historical attempt records remain immutable; reconciliation is an append-only overlay."
+  ],
+  "negative_gates": [
+    "Known external effect cannot replace UNKNOWN.",
+    "Terminal state cannot be marked validated-completion eligible.",
+    "Recoverable evidence cannot be terminalized."
+  ],
+  "tests": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_reconciliation",
+    "tests_run": 5,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "claim_ceiling": "Repository-local reconciliation state machine only; no external success, failure, no-effect, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}

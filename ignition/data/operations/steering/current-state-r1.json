@@ -1,0 +1,36 @@
+{
+  "schema_version": "os-steering-intent-obligation-r1.current-state",
+  "task_id": "IGNITION-20260821-129",
+  "current_status": "REPOSITORY_LOCAL_CURRENT",
+  "identity_invariants": [
+    "INTENT_AUTHORITY_INVARIANT",
+    "GOAL_COMPLETION_NON_INFERENCE_INVARIANT",
+    "STEERING_EXPLAINABILITY_INVARIANT"
+  ],
+  "modules": [
+    "intent_registry",
+    "goal_lifecycle_registry",
+    "completion_contracts",
+    "commitment_obligation_ledger",
+    "temporal_semantics",
+    "goal_dependency_graph",
+    "priority_policy",
+    "conflict_arbitration",
+    "decision_trace_why_next",
+    "episode_goal_binding",
+    "drift_handoff_guard",
+    "memory_profile_boundary",
+    "durability_adapter",
+    "namespace_delegation_guard",
+    "intent_capsule"
+  ],
+  "integration_surfaces": [
+    "event_ledger",
+    "driver_console_r3",
+    "offline_portfolio_pilot",
+    "adversarial_matrix"
+  ],
+  "pilot_status": "OFFLINE_SYNTHETIC_ONLY",
+  "completion_boundary": "run_pass_is_not_goal_completion; independent completion contract and validator evidence remain required",
+  "claim_ceiling": "Repository-local deterministic steering and obligation modeling only; no real Owner intent, external truth, production readiness, live executor completion or epistemic upgrade."
+}

@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step02-minimal-bounded-operation-r1.schema.json",
+  "title": "Task150 Step02 minimal bounded derived-visualization operation",
+  "description": "Task-local provider-neutral operation contract. It is a candidate contract, not a Current runtime provider interface or registry admission.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "record_type",
+    "status",
+    "formal_baseline",
+    "operation",
+    "provider_selection",
+    "provenance",
+    "failure_and_fallback",
+    "installation_boundary",
+    "authority_boundary",
+    "validation",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step02-minimal-bounded-operation-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "02"},
+    "record_type": {"const": "MINIMAL_BOUNDED_OPERATION_CONTRACT"},
+    "status": {"const": "CANDIDATE_OPERATION_CONTRACT_ESTABLISHED"},
+    "formal_baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref", "sha", "role", "self_witness"],
+      "properties": {
+        "ref": {"const": "refs/heads/main"},
+        "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "role": {"const": "TASK149_ORDINARY_MERGE_MAIN_BASELINE"},
+        "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"}
+      }
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "public_name",
+        "operation_class",
+        "ownership",
+        "provider_class",
+        "input_types",
+        "output_types",
+        "allowed_flow",
+        "reverse_flow_forbidden",
+        "current_status",
+        "registry_entry_status",
+        "default_execution_mode",
+        "repository_mutation",
+        "provider_invocation",
+        "claim_ceiling"
+      ],
+      "properties": {
+        "operation_id": {"const": "visualization.render_derived_system_view"},
+        "public_name": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["zh", "en"],
+          "properties": {
+            "zh": {"const": "生成派生系统视图"},
+            "en": {"const": "Render a derived system view"}
+          }
+        },
+        "operation_class": {"const": "VALIDATION_AUDIT"},
+        "ownership": {"const": "IGNITION"},
+        "provider_class": {"const": "DERIVED_VISUALIZATION_PROVIDER"},
+        "input_types": {
+          "const": ["CURRENT_CANONICAL_ARCHITECTURE_SOURCE", "AUTHORED_ARCHITECTURE_SOURCE"]
+        },
+        "output_types": {"const": ["DERIVED_VISUALIZATION_ARTIFACT"]},
+        "allowed_flow": {"const": "CANONICAL_SOURCE -> PROVIDER_ADAPTER -> DERIVED_ARTIFACT"},
+        "reverse_flow_forbidden": {"const": true},
+        "current_status": {"const": "CANDIDATE_NOT_CURRENT"},
+        "registry_entry_status": {"const": "NOT_YET_REGISTERED_PENDING_STEP11"},
+        "default_execution_mode": {"const": "READ_ONLY_RUN"},
+        "repository_mutation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["permission", "derived_artifact_persistence"],
+          "properties": {
+            "permission": {"const": "FORBIDDEN"},
+            "derived_artifact_persistence": {"const": "SEPARATE_EXPLICIT_REPOSITORY_CHANGE_TASK_ONLY"}
+          }
+        },
+        "provider_invocation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scope",
+            "unrelated_external_action",
+            "credentials",
+            "session_bearing_channels",
+            "provider_selection_owner",
+            "provider_local_policy_inheritance"
+          ],
+          "properties": {
+            "scope": {"const": "BOUNDED_PROVIDER_INVOCATION_FOR_DERIVED_ARTIFACT_ONLY"},
+            "unrelated_external_action": {"const": "FORBIDDEN"},
+            "credentials": {"const": "FORBIDDEN"},
+            "session_bearing_channels": {"const": "FORBIDDEN"},
+            "provider_selection_owner": {"const": "IGNITION"},
+            "provider_local_policy_inheritance": {"const": "FORBIDDEN"}
+          }
+        },
+        "claim_ceiling": {"const": "Visual representation of authored topology only."}
+      }
+    },
+    "provider_selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner", "provider_binding", "future_provider_compatibility", "selection_is_not_permission"],
+      "properties": {
+        "owner": {"const": "IGNITION"},
+        "provider_binding": {"const": "UNBOUND_PROVIDER_SLOT_AT_STEP02"},
+        "future_provider_compatibility": {"const": true},
+        "selection_is_not_permission": {"const": true}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_per_node_and_edge", "artifact_receipt_fields", "missing_provenance_result"],
+      "properties": {
+        "required_per_node_and_edge": {
+          "const": ["source_path", "canonical_or_source_id", "source_revision", "provenance_digest"]
+        },
+        "artifact_receipt_fields": {
+          "const": ["canonical_source_digest", "provider_id", "provider_revision", "adapter_version", "derived_artifact_digest"]
+        },
+        "missing_provenance_result": {"const": "REJECT_AS_UNVALIDATED"}
+      }
+    },
+    "failure_and_fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_source_remains_usable",
+        "last_known_canonical_map_remains_usable",
+        "provider_unavailable_result",
+        "provider_failure_result",
+        "fallback_policy_owner",
+        "no_implicit_substitution"
+      ],
+      "properties": {
+        "canonical_source_remains_usable": {"const": true},
+        "last_known_canonical_map_remains_usable": {"const": true},
+        "provider_unavailable_result": {"const": "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT"},
+        "provider_failure_result": {"const": "BOUNDED_PROVIDER_FAILURE"},
+        "fallback_policy_owner": {"const": "IGNITION"},
+        "no_implicit_substitution": {"const": true}
+      }
+    },
+    "installation_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_installation_required", "automatic_system_install", "skill_install_requires_explicit_request"],
+      "properties": {
+        "provider_installation_required": {"const": false},
+        "automatic_system_install": {"const": false},
+        "skill_install_requires_explicit_request": {"const": true}
+      }
+    },
+    "authority_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_source_is_authority",
+        "derived_artifact_can_update_canonical_source",
+        "provider_can_add_topology",
+        "provider_can_delete_topology",
+        "provider_can_change_semantic_relationships",
+        "provider_can_decide_geometry_route_theme_layout",
+        "provider_can_decide_architecture_truth",
+        "provider_can_decide_runtime_behavior",
+        "provider_can_decide_impact_risk_correctness",
+        "provider_output_is_external_truth",
+        "authenticated_channel_admission",
+        "live_external_invocation"
+      ],
+      "properties": {
+        "canonical_source_is_authority": {"const": true},
+        "derived_artifact_can_update_canonical_source": {"const": false},
+        "provider_can_add_topology": {"const": false},
+        "provider_can_delete_topology": {"const": false},
+        "provider_can_change_semantic_relationships": {"const": false},
+        "provider_can_decide_geometry_route_theme_layout": {"const": true},
+        "provider_can_decide_architecture_truth": {"const": false},
+        "provider_can_decide_runtime_behavior": {"const": false},
+        "provider_can_decide_impact_risk_correctness": {"const": false},
+        "provider_output_is_external_truth": {"const": false},
+        "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_path", "validator_path", "test_path", "required_checks"],
+      "properties": {
+        "schema_path": {"const": "ignition/schemas/operations/task150-step02-minimal-bounded-operation-r1.schema.json"},
+        "validator_path": {"const": "ignition/tools/validate_task150_step02_minimal_bounded_operation.py"},
+        "test_path": {"const": "ignition/tests/test_task150_step02_minimal_bounded_operation.py"},
+        "required_checks": {
+          "const": [
+            "operation id uses existing dotted taxonomy",
+            "canonical source to adapter to derived artifact is one-way",
+            "read-only and no repository mutation are explicit",
+            "provider invocation is bounded and does not grant general external action",
+            "candidate status is not Current and provider slot is unbound",
+            "topology and architecture authority remain with authored source"
+          ]
+        }
+      }
+    },
+    "claim_ceiling": {
+      "const": "Task150 Step02 establishes a repository-local, provider-neutral candidate operation contract for visual representation of authored topology only. It does not establish a Current capability, provider binding, default renderer, architecture authority, external truth, production readiness, authenticated channel admission or live external completion."
+    }
+  }
+}

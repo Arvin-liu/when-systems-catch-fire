@@ -1,0 +1,55 @@
+{
+  "binding_chain": [
+    {
+      "architecture_task_id": "IGNITION-20260821-129",
+      "role_id": "execution_contract_task",
+      "task_id": "IGNITION-20260822-133"
+    },
+    {
+      "architecture_task_id": "IGNITION-20260821-129",
+      "role_id": "current_formal_task",
+      "task_id": "IGNITION-20260822-133"
+    },
+    {
+      "architecture_ordinal": 129,
+      "architecture_task_id": "IGNITION-20260821-129",
+      "current_iteration_boundary": 133,
+      "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+      "declared_ordinal": 133,
+      "role_id": "lifecycle_task",
+      "task_id": "IGNITION-20260822-133"
+    },
+    {
+      "architecture_ordinal": 129,
+      "architecture_task_id": "IGNITION-20260821-129",
+      "current_iteration_boundary": 133,
+      "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+      "declared_ordinal": 133,
+      "role_id": "snapshot_task",
+      "task_id": "IGNITION-20260822-133"
+    },
+    {
+      "declared_ordinal": 129,
+      "role_id": "architecture_task",
+      "task_id": "IGNITION-20260821-129"
+    },
+    {
+      "role_id": "release_candidate_task",
+      "task_id": "IGNITION-20260822-133"
+    }
+  ],
+  "claim_ceiling": "Repository-local ordinal binding evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "current_iteration_boundary": 133,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "errors": [],
+  "formal_task_ordinal": 133,
+  "latest_architecture_task_ordinal": 129,
+  "pending_terminal_roles": [
+    "formal_result_task",
+    "publication_witness_task"
+  ],
+  "result": "PASS_WITH_PENDING_TERMINAL_EVIDENCE",
+  "schema_version": "ignition-133-step06-ordinal-binding-gate-r1",
+  "step": "06",
+  "task_id": "IGNITION-20260822-133"
+}

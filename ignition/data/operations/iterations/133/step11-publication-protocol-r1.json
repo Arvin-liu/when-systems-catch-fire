@@ -1,0 +1,34 @@
+{
+  "schema_version": "ignition-133-step11-publication-protocol-r1",
+  "task_id": "IGNITION-20260822-133",
+  "step": "11",
+  "status": "PROTOCOL_READY_FOR_INDEPENDENT_PUBLICATION_WITNESS",
+  "formal_main_baseline": {
+    "expected_sha": "5ed99d148dfb49e6c2ff729a345d2499d4b76021",
+    "origin_tracking_sha_verified": true,
+    "remote_ls_remote_sha_verified": true,
+    "ordinary_fast_forward_required": true
+  },
+  "task_branch": {
+    "branch": "codex/ignition-133-iteration-boundary-semantics-current-ordinal-r1-20260822",
+    "tip_before_step11_commit": "2cfad7749d6e69d906beabab6d45e828700c78dc",
+    "step11_commit_sha": "RECORDED_AFTER_STEP11_COMMIT_BY_INDEPENDENT_RECEIPT",
+    "formal_result_self_publication_sha": false
+  },
+  "required_publication_checks": [
+    "verify origin/main and git ls-remote main remain the Task132 baseline before merge",
+    "ordinary git merge --ff-only task tip into a clean publication worktree",
+    "push exactly the fast-forward to refs/heads/main",
+    "observe remote main SHA and require local/remote/fresh-clone equality",
+    "run fresh remote-main current lineage, lifecycle, facts, snapshot, state-sync, ordinal and post-publication checks",
+    "bind execution contract, canonical Current source, lifecycle, Snapshot, formal result, release candidate and publication witness task IDs",
+    "bind formal ordinal 133, architecture ordinal 129 and compatibility alias 133",
+    "write the independent 1111 receipt branch without adding a formal-repository self-witness commit"
+  ],
+  "publication_sha_fields": {
+    "candidate_sha": "DEFERRED_TO_REMOTE_OBSERVATION",
+    "remote_main_sha": "DEFERRED_TO_REMOTE_OBSERVATION",
+    "fresh_clone_sha": "DEFERRED_TO_REMOTE_OBSERVATION"
+  },
+  "claim_ceiling": "Step11 protocol records repository-local publication gates and preserves the independent witness boundary; final SHA, remote publication observation and Owner acceptance are not asserted in this formal artifact."
+}

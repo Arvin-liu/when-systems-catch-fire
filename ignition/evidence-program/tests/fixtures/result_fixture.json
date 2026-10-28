@@ -1,0 +1,19 @@
+{
+  "run_id": "FIX-RUN",
+  "pilot_id": "FIX-PILOT",
+  "preregistration_ref": "FIX-PREREG",
+  "outcome": "SUPPORTED_WITHIN_SCOPE",
+  "metrics_observed": {"m": 1.0, "a": 1.0, "b": 1.0},
+  "thresholds_used": {
+    "success_conditions": {"rate_min": 0.95, "bad_max": 0},
+    "partial_support_conditions": {"rate_range": [0.8, 0.95]},
+    "null_conditions": {"description": "n"},
+    "contradiction_conditions": {"description": "c"},
+    "invalid_test_conditions": {"description": "i"}
+  },
+  "uncertainty_output": "fixture",
+  "adjudication_basis": "fixture",
+  "e_axis_decision": {"decision": "confirm", "changed": false, "from_level": "E1", "to_level": "E1"},
+  "propagated_surfaces": ["x"],
+  "human_readable_ref": "x"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "pack_id": "writing.zhiyuan",
+  "version": "1.0.0",
+  "display_name": "之元 Writing and Publication Pack",
+  "domain": "writing",
+  "compatibility": {
+    "kernel_api": "r0",
+    "runtime_api": "r1",
+    "schema": "1.0.0"
+  },
+  "capabilities_provided": [
+    "writing.apply_editorial_method",
+    "writing.validate_publication_surface"
+  ],
+  "required_kernel_capabilities": [
+    "read_declared",
+    "run_validator"
+  ],
+  "required_runtime_capabilities": [
+    "runtime.pack_registry",
+    "runtime.pack_bus"
+  ],
+  "object_types": [
+    "editorial_source",
+    "publication_draft",
+    "publication_review",
+    "human_surface_entry"
+  ],
+  "validator_entrypoints": [
+    "tools/publication/validate_fire_seeds.py",
+    "tools/governance/validate_human_surface_contract.py"
+  ],
+  "action_hooks": [
+    "writing.render_declared_surface",
+    "writing.record_editorial_review"
+  ],
+  "planning_hooks": [
+    "writing.plan_source_bounded_revision"
+  ],
+  "human_entries": [
+    "docs/publication/zhiyuan-writing-method.md",
+    "PUBLICATIONS/README.md",
+    "packs/writing/README.md"
+  ],
+  "machine_entries": [
+    "docs/publication",
+    "data/publication",
+    "data/governance/human-surface"
+  ],
+  "permissions_requested": {
+    "read_paths": [
+      "docs/publication",
+      "PUBLICATIONS",
+      "data/publication"
+    ],
+    "write_paths": [
+      "PUBLICATIONS",
+      "data/publication"
+    ],
+    "command_classes": [
+      "read-only-validator"
+    ],
+    "tool_classes": [
+      "declared-publication-validator"
+    ],
+    "network": false
+  },
+  "prohibited_authority_upgrades": [
+    "agent_lifecycle",
+    "executor_selection",
+    "generic_permission",
+    "checkpoint_resume",
+    "owner_acceptance",
+    "kernel_definition",
+    "truth_authority",
+    "epistemic_upgrade",
+    "charter_mutation"
+  ],
+  "load_policy": "DECLARATIVE_METADATA_ONLY",
+  "unload_policy": "SAFE_IF_NO_ACTIVE_RUNS",
+  "optional_dependencies": [],
+  "health_check": {
+    "kind": "DECLARATIVE_MANIFEST",
+    "expected": "PASS",
+    "side_effects": false
+  }
+}
