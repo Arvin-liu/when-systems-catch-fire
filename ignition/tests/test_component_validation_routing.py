@@ -86,6 +86,31 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["domains"], ["O"])
         self.assertEqual(result["selected_target_ids"], ["o_human_result_consumers"])
 
+    def test_historical_what_is_ignition_sources_route_to_existing_readme_consumers(self):
+        paths = [
+            "docs/what-is-ignition/README.md",
+            "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md",
+        ]
+        for path in paths:
+            with self.subTest(path=path):
+                result = self.plan([path])
+                self.assertEqual(result["mode"], "FULL")
+                self.assertEqual(result["domains"], ["G", "O"])
+                self.assertEqual(result["seed_components"], ["readme"])
+                self.assertIn("current_state", result["affected_component_closure"])
+                self.assertEqual(
+                    result["selected_target_ids"],
+                    [
+                        "g_current_state_consumers",
+                        "g_human_front_door_consumers",
+                        "o_human_result_consumers",
+                    ],
+                )
+                self.assertIn(
+                    {"kind": "component_requires_full_regression", "component_id": "current_state"},
+                    result["full_regression_reasons"],
+                )
+
     def test_ai_usage_guide_routes_to_its_registered_o_component(self):
         result = self.plan(["ignition/docs/AI-USAGE.md"])
         self.assertEqual(result["mode"], "TARGETED")
