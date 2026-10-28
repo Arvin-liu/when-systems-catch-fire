@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "7c28357fb463f8dd1a2756deff28a2daabf3f490e03b88e613beda9a27d7d215",
+      "source_sha256": "f5e6c43fb45bcd6ca357cb5ff8f83c99917d069284426bd671e4985cfc32ba37",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "50364f9859c5212181dc63855e8f151b5cb393ef46e13db68d185cf22dc2c059",
+      "source_sha256": "2cf88d4c751e009136db6ff28bbd5f40e36036753dc59063ce7288736db65707",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2301,7 +2301,7 @@
       "title": "HUMAN-READING",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "fc27ad68d0f7efef80b20de5fe81e2223e5ed80c2be4cda186edb5a2669a827c",
+      "source_sha256": "90395c4d974b66892f386d99881e7926676b78a3cd542d02f2f80633aca04916",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-10",
@@ -2373,7 +2373,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "99929cd80fc4c0e41754c611dc53f9f7e1f7888f2f892592b2014b4050daa7cb",
+      "source_sha256": "dcdff3e7da84255533dd120b15975bea8ed11841439c14c8ec8df6869a033b4a",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2750,7 +2750,7 @@
       "title": "CLAIM-DELTA",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "70848847f7201f75fd32a30103e11d88164a1f018549486c35e1316ff12d17a3",
+      "source_sha256": "d30d12df29ea90a9948680e37b2b128e7e12ee4a45c4463a0557d2db7c9c0905",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2780,7 +2780,7 @@
       "title": "EVIDENCE-LINEAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "e74329f8312a9abb1a13226e4567c03765df7f56e9ed1cab595fe6cdfb9aa0c9",
+      "source_sha256": "d6037c02b5647d08e80d46505b538678223865976dbfb4a9bafc656c6e613286",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2886,7 +2886,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "39aba7c33fb4af3053ef158b9c76801b963ac887db8f138186a4a18c7a19a6c1",
+      "source_sha256": "fcdab8ac65bb8f2112de158736719a4d36099c3baadba4b0fbd0eb3201dec34a",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -3334,7 +3334,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "0db13181e05cbf952491268227e01aac3780ad056ab760b9fa8a79d69bf11bef",
+      "source_sha256": "a5313c1a33c3f42bcf97947a451557d5213367de807f2a07e50ac4707aac5424",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4271,7 +4271,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "cc42c3d9958d8feef7114856b3368d9aa41022e29b9522372eadd02437c068d0",
+      "source_sha256": "f9860e90df7c7670ea808feefd77f7ba7c36373742e0bb005e7289c7af9a85d3",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

@@ -203,7 +203,7 @@ def validate_ai_first_use_section(readme: str) -> None:
     require(invocation_match is not None, "README AI-first usage entry lacks a visible minimal invocation")
     invocation = invocation_match.group(1).strip()
     require(invocation == MINIMAL_INVOCATION, "README minimal invocation changed or requires internal knowledge")
-    visible_invocation = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", invocation)
+    visible_invocation = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", invocation)
     for token in ("OPERATING-METHOD.md", "Capability Registry", "函数编号", "Pack", "Ψ", "registry", "Git", "worktree", "branch", "commit", "PR"):
         require(token.casefold() not in visible_invocation.casefold(), f"README minimal invocation exposes internal jargon: {token}")
     for token in ("schema_version", "record_sha256", "canonical_id", "CURRENT_CANONICAL_REGISTRY_FIRST"):

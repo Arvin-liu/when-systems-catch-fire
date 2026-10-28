@@ -11,7 +11,7 @@
         "canonical_title": "锁定强度函数",
         "match_kind": "CANONICAL_ID",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "7c5dc3b5c49bd7f06be2448f8e56b0191a0572ba2f563b1bd7e15d6924991db6"
+        "record_sha256": "658940f9ec70531fdffc3f2610d825adc0047547960ed7621e8f5ca43119941f"
       }
     },
     {
@@ -21,7 +21,7 @@
         "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
         "canonical_id": "D2",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "f2b7a78059833ff5368834445597b00aa572627996ab68d62304b89f126d94e3"
+        "record_sha256": "3cac2d48ecefcc8b415d3d7ee482cb5dec52ca19382a2c72b88057ce4ceb33f8"
       }
     },
     {
@@ -41,7 +41,7 @@
         "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
         "canonical_id": "T7",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "fa64db20590e8aaf9594da5e5b9512a5b8545fe0c8ed78daf3594464fd51c1d3"
+        "record_sha256": "e3e0eb47391c480b3801d3b0d077c6491af151f174548f30eb61a22889d3d7ca"
       }
     },
     {
@@ -51,7 +51,7 @@
         "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
         "canonical_id": "A5",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "d1633369c273379fc7740ecf71c3f1cb65c5f746eb16519e276cc417ca8354fc"
+        "record_sha256": "98ef9c1c39187b8ddfbc92199d06e3353e662423fcfacec1c93d64cdf3ca8d74"
       }
     },
     {
@@ -63,7 +63,7 @@
         "canonical_title": "认知路径积分函数",
         "primary_identity": "STRUCTURAL_METAPHOR",
         "final_disposition": "KEEP_AS_STRUCTURAL_METAPHOR",
-        "record_sha256": "3fc286ebdf0f7124d2119a1a2d4bf8d9209796d08f0725fdcf75400cee15383d"
+        "record_sha256": "c78876c133d5091baefda22632c67b9558b001847991d34128022335313d754c"
       }
     },
     {
@@ -121,7 +121,7 @@
         "canonical_title": "偏差敏感度阈值函数",
         "match_kind": "IDENTITY_CORRECTED_ALIAS",
         "final_disposition": "KEEP_AS_TESTED_INDEX_OR_CLASSIFIER",
-        "record_sha256": "ed0425ecaf25c6523d4ee5f560e25664962d767a9bf4bbc3b6f6633a10c53100"
+        "record_sha256": "67b9d907d78b0306d6a38fda8d3271519fcc4bbe1c7028a0634a85daebe2c693"
       }
     },
     {
