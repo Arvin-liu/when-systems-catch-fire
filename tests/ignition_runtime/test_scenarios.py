@@ -39,7 +39,7 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = "23b2ee71bb04188ee78beacc179d4c5485ec0242"
+PR_BASE = "e68be5d06b942aae21e1e8d4e3c4c8990c0ea9a8"
 
 
 def new_store():
@@ -714,6 +714,7 @@ def test_s43_diff_scope():
         ".github/workflows/ignition-production-validation.yml",
         "docs/project-current-state.md",
         "reports/ignition-rpe/",
+        "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():
