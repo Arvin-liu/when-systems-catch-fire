@@ -108,7 +108,7 @@ def run_modules(
             repo_root, module, import_roots, validation_sha=validation_sha,
         )
 
-    search_paths: list[str] = [str(repo_root.resolve())]
+    search_paths: list[str] = []
     for relative in import_roots or []:
         candidate = _path_without_symlink_components(
             repo_root, repo_root / relative, f"test import root {relative}"
@@ -116,6 +116,10 @@ def run_modules(
         if not candidate.is_dir():
             raise RoutingBlocked(f"selected test import root is missing: {relative}")
         search_paths.append(str(candidate))
+    # Declared roots identify the component checkout whose indirect imports
+    # the registered tests are meant to exercise. Keep them ahead of the
+    # repository root so a sibling legacy package cannot shadow those imports.
+    search_paths.append(str(repo_root.resolve()))
 
     loader = unittest.defaultTestLoader
     previous_path = list(sys.path)
@@ -159,7 +163,7 @@ def collect_registered_test_ids(
         module: _module_file(repo_root, module, import_roots, validation_sha=validation_sha)
         for module in modules
     }
-    search_paths = [str(repo_root.resolve())]
+    search_paths: list[str] = []
     for relative in import_roots or []:
         candidate = _path_without_symlink_components(
             repo_root, repo_root / relative, f"test import root {relative}"
@@ -167,6 +171,7 @@ def collect_registered_test_ids(
         if not candidate.is_dir():
             raise RoutingBlocked(f"selected test import root is missing: {relative}")
         search_paths.append(str(candidate))
+    search_paths.append(str(repo_root.resolve()))
 
     previous_path = list(sys.path)
     module_prefixes = {module.split(".", 1)[0] for module in modules}

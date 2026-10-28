@@ -1958,9 +1958,9 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 133,
+    "registry_components": 134,
     "visible_nodes": 115,
-    "hidden_components": 18,
+    "hidden_components": 19,
     "hidden_representatives": {
       "foundation_data": "foundation",
       "historical_reports": "current_state",
@@ -1979,6 +1979,7 @@
       "research_workflow_slot": "research_pack_reos_light",
       "crossref_verifier_r1": "research_pack_reos_light",
       "component_validation_router": "iteration",
+      "ignition_runtime_r1": "agent_runtime_r0",
       "arr_runtime": "arr"
     },
     "orphan_components": []

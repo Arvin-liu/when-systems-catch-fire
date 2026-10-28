@@ -3207,6 +3207,33 @@
       ]
     },
     {
+      "component_id": "ignition_runtime_r1",
+      "label": "点火运行时 R1 / Ignition Runtime R1",
+      "description": "Draft repository-local RUN/PROMOTE/EVOLVE runtime with schema-bound materials, authorization records, immutable generation receipts, and recovery. Its checks establish repository behavior only; registration grants no production authority and does not promote claims to formal or scientific knowledge.",
+      "component_type": "operation_control",
+      "canonical_target": "docs/ignition-runtime/ARCHITECTURE.md",
+      "path_patterns": [
+        ".github/workflows/ignition-production-validation.yml",
+        "docs/ignition-runtime/",
+        "reports/ignition-rpe/",
+        "schemas/ignition_runtime/",
+        "tests/ignition_runtime/",
+        "tools/ignition_runtime/"
+      ],
+      "authority": "canonical",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "status": "draft_candidate",
+        "version": "R1",
+        "source": "docs/ignition-runtime/ARCHITECTURE.md"
+      },
+      "map_projection": {
+        "visible": false,
+        "represented_by": "agent_runtime_r0",
+        "no_change_reason": "This R1 runtime remains a draft candidate registered for path ownership and validation. It is represented within the existing runtime spine until separate architecture review; registration does not activate production capability."
+      }
+    },
+    {
       "component_id": "arr",
       "label": "ARR 自适应关系运行时 (R1 Scaffold)",
       "description": "候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。",

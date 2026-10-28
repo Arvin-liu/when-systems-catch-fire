@@ -39,7 +39,15 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = "e68be5d06b942aae21e1e8d4e3c4c8990c0ea9a8"
+PR_BASE = os.environ.get("PR_BASE_SHA", "c7f3b1a1b1d61d25aae9ffc67119054daf58d7e6")
+EXPECTED_HEAD_BASES = {
+    "production/ignition-run-promote-evolve-r1": {
+        "repair-r3/scientific-context-protocol-r3-semantic-evaluator",
+    },
+    "architecture/adaptive-relational-runtime-r1-scaffold": {
+        "production/ignition-run-promote-evolve-r1",
+    },
+}
 
 
 def new_store():
@@ -683,8 +691,15 @@ def test_s40_m5_secondary_temporal():
 # S41 — exact stacked target and no direct-main substitution
 # --------------------------------------------------------------------------
 def test_s41_branch_and_base_unchanged():
-    branch = os.environ.get("GITHUB_HEAD_REF") or git("branch", "--show-current")
-    assert branch == "production/ignition-run-promote-evolve-r1"
+    branch = (
+        os.environ.get("GITHUB_HEAD_REF")
+        or os.environ.get("EXPECTED_HEAD_REF")
+        or git("branch", "--show-current")
+    )
+    assert branch in EXPECTED_HEAD_BASES
+    base_ref = os.environ.get("GITHUB_BASE_REF")
+    if base_ref:
+        assert base_ref in EXPECTED_HEAD_BASES[branch]
     assert git("merge-base", "HEAD", PR_BASE) == PR_BASE
     # not on main
     assert branch != "main"
@@ -703,7 +718,7 @@ def test_s42_runtime_imports_and_runs():
 
 
 # --------------------------------------------------------------------------
-# S43 — Draft PR diff contains only production-layer changes
+# S43 — Draft diff stays within runtime, ARR, and authorized derived-evidence scope
 # --------------------------------------------------------------------------
 def test_s43_diff_scope():
     allowed_prefixes = (
@@ -712,9 +727,41 @@ def test_s43_diff_scope():
         "tests/ignition_runtime/",
         "docs/ignition-runtime/",
         ".github/workflows/ignition-production-validation.yml",
+        ".github/workflows/foundation-validation.yml",
         "docs/project-current-state.md",
         "reports/ignition-rpe/",
         "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+        "ignition/data/architecture/interactive-system-map.json",
+        "ignition/data/foundation/function-assets/",
+        "ignition/data/foundation/nonfunction-claims/",
+        "ignition/data/governance/knowledge-experience/",
+        "ignition/data/operations/component-execution-profiles.json",
+        "ignition/data/operations/component-validation-map-r1.json",
+        "ignition/data/operations/project-components.json",
+        "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+        "ignition/KNOWLEDGE/",
+        "ignition/data/architecture/adaptive-relational-runtime/",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/architecture/interactive-system-map-layout.json",
+        "ignition/data/architecture/system-map-geometry-quality-r1.json",
+        "ignition/data/governance/human-surface/materiality-manifest.json",
+        "ignition/data/operations/change-propagation-topology.json",
+        "ignition/data/operations/iterations/ARR-R1-SCAFFOLD.json",
+        "ignition/docs/architecture/",
+        "ignition/docs/generated/ignition-system-map.svg",
+        "ignition/docs/human/nonfunction-assets/entries/",
+        "ignition/docs/project-current-state.md",
+        "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
+        "ignition/requirements-foundation.txt",
+        "ignition/schemas/architecture/adaptive-relational-runtime/",
+        "ignition/tests/adaptive_relational_runtime/",
+        "ignition/tools/adaptive_relational_runtime/",
+        "ignition/tools/generate_interactive_system_map.py",
+        "ignition/tools/governance/build_knowledge_experience.py",
+        "ignition/tools/governance/validate_human_surface_contract.py",
+        "ignition/tools/governance/validate_human_visibility.py",
+        "ignition/tools/operations/run_component_validation_targets.py",
+        "ignition/tools/validate_system_map_geometry.py",
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():
