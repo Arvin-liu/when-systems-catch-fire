@@ -58,6 +58,12 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/multihistory/d2-i1-repair-architecture.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/multihistory/d2-i1-repair-r1-summary.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/project-current-state.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/CI_FAILURE_REPRODUCTION.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/FIX_VERIFICATION.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/LOCAL_DETACHED_HEAD_REPRODUCTION.txt"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/NARROW_REPAIR_CONTRACT.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/REMOTE_CI_JOB_LOG_89638042800.txt"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/ROLE_MATRIX_A_F.md"}
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/ADAPTER_PROTOCOL_MATRIX.json"}
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/ATTACK_MATRIX_REPAIR_64.md"}
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/BEFORE_AFTER_COMPARISON.json"}

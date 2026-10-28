@@ -68,7 +68,7 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     # 6. Generated projections / outputs / reports.
     ("GENERATED_PROJECTION", ("outputs/", "reports/", "pages/generated/")),
     # 7. Evidence / benchmark results.
-    ("EVIDENCE_OR_BENCHMARK", ("evidence-program/", "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/", "case_failures/")),
+    ("EVIDENCE_OR_BENCHMARK", ("evidence-program/", "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/", "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/", "case_failures/")),
     # 8. Candidate (non-authoritative) claims -- must NOT be authoritative.
     ("CANDIDATE_NONAUTHORITATIVE_RECORD", ("function-os-candidate/",)),
     # 9. Reference surfaces / knowledge / templates / views / inputs / canonical / formal.
