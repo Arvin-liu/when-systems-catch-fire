@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-observation-outcome-r1.schema.json",
+  "title": "Ignition typed live observation outcome R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "observation_outcome_type", "probe_return_code",
+    "transport_return_code", "public_probe_calls", "live_dispatch_calls",
+    "live_dispatch_started", "live_process_started", "live_process_return_code",
+    "capture_initialized", "structured_result_present", "validator_status",
+    "legacy_record_return_code_preserved", "legacy_return_code_scope"
+  ],
+  "properties": {
+    "schema_version": {"const": "live-observation-outcome-r1"},
+    "observation_outcome_type": {"enum": ["PRE_INFERENCE_NO_LIVE_PROCESS", "LIVE_PROCESS_OBSERVED", "LIVE_PROCESS_UNOBSERVED", "LEGACY_SCOPE_UNRECOVERED"]},
+    "probe_return_code": {"type": ["integer", "null"]},
+    "transport_return_code": {"type": ["integer", "null"]},
+    "public_probe_calls": {"type": ["integer", "null"], "minimum": 0},
+    "live_dispatch_calls": {"type": ["integer", "null"], "minimum": 0},
+    "live_dispatch_started": {"type": ["boolean", "null"]},
+    "live_process_started": {"type": ["boolean", "null"]},
+    "live_process_return_code": {"type": ["integer", "null"]},
+    "capture_initialized": {"type": ["boolean", "null"]},
+    "structured_result_present": {"type": "boolean"},
+    "validator_status": {"type": "string", "minLength": 1},
+    "legacy_record_return_code_preserved": {"type": ["integer", "null"]},
+    "legacy_return_code_scope": {"type": "string", "minLength": 1}
+  }
+}

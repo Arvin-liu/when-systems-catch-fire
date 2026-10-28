@@ -1,0 +1,11 @@
+{
+  "claim_ceiling": "Lifecycle validation is repository-local content-readiness evidence only; it is not remote publication, external truth, Owner acceptance or epistemic acceptance.",
+  "content_phase": "RUNNING",
+  "embedded_publication_assertion": "NONE",
+  "errors": [],
+  "lifecycle_sha256": "95e3ed7de90e87e199b127cb4d158fb7f68ebe068eb13a340009fb2e13b44884",
+  "publication_authority": "REMOTE_REF_OBSERVATION",
+  "result": "PASS",
+  "schema_version": "current-release-lifecycle-audit-r1",
+  "task_id": "IGNITION-20260823-136"
+}

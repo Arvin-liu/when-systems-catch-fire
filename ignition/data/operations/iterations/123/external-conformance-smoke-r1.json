@@ -1,0 +1,100 @@
+{
+  "schema_version": "external-conformance-smoke-r1",
+  "task_id": "IGNITION-20260816-123",
+  "step": "09",
+  "recorded_at": "2026-08-16T17:41:05Z",
+  "workspace_policy": "disposable_temp_workspace_only",
+  "formal_repository_used_as_live_target": false,
+  "smoke_policy": "one_bounded_attempt_per_executor; no_retry; no_install_or_configuration_change",
+  "independent_os_validator": {
+    "status": "PASS",
+    "issue_count": 0,
+    "files": ["README.md", "docs/guide.md"],
+    "manifest_sha256": "a80100004070a1a5b724030764c1cd42cd8a4a4f5a54f9aa1603bc4fef370855",
+    "readme_sha256": "ee45e29642e33b2d37590aa56555a25ada53f7899a446b6b18c1c7553fb9172a"
+  },
+  "executors": [
+    {
+      "executor_id": "external.openclaw",
+      "probe": {
+        "family": "OpenClaw",
+        "observed_version": "OpenClaw 2026.7.1-2 (0790d9f)",
+        "help_sha256": "b436caaa7b5712b3f596a4f7cd8c3f0f327edee2d240323cf7c7a532b09fc1f8",
+        "transport_kind": ["CLI_JSON"],
+        "availability": "AVAILABLE",
+        "health_status": "HEALTHY",
+        "capability_tokens": ["long_task"],
+        "structured_output_support": true,
+        "progress_support": false,
+        "cancel_support": false,
+        "workspace_semantics": "UNKNOWN_UNPROBED"
+      },
+      "attempted_bounded_smoke": false,
+      "live_invocation": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "outcome": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "classification": "UNSAFE_SURFACE",
+      "skip_reason": "Observed agent CLI has no disposable workspace binding; default Gateway session/channel state is outside the safe boundary, while --local requires provider credentials and is not isolated by observed flags.",
+      "task_envelope_translation": "NOT_ATTEMPTED_AFTER_SAFE_PROBE",
+      "external_state": "NOT_OBSERVED",
+      "terminal_translation": "NOT_ATTEMPTED_AFTER_SAFE_PROBE",
+      "os_receipt_terminal_state": "NOT_EMITTED",
+      "os_validation": "INDEPENDENT_VALIDATOR_PASS; no vendor completion accepted",
+      "timeout_cancel_behavior": "adapter_cancel_unsupported; no live dispatch attempted"
+    },
+    {
+      "executor_id": "external.hermes",
+      "probe": {
+        "family": "Hermes Agent",
+        "observed_version": "Hermes Agent v0.20.0 (2026.8.3)",
+        "help_sha256": "0fdcfd5b047316e2fbef3873d90dd59c22f06e91fdfa5ae5bae088d83bb2094b",
+        "transport_kind": ["CLI_TEXT_ONESHOT"],
+        "availability": "AVAILABLE",
+        "health_status": "HEALTHY",
+        "capability_tokens": ["repo.read"],
+        "structured_output_support": false,
+        "progress_support": false,
+        "cancel_support": false,
+        "workspace_semantics": "INHERITS_CWD_WITHOUT_HERMES_WORKTREE"
+      },
+      "attempted_bounded_smoke": true,
+      "live_invocation": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "outcome": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "classification": "TIMEOUT",
+      "task_envelope_digest": "f8829c55dd5b2e8b44b0602e55ce7f08bd66adf6d74fef775afdef38a2a784a2",
+      "task_envelope_translation": "CLI_TEXT_ONESHOT_SAFE_MODE_CONFIG_RULE_ISOLATED",
+      "external_state": "NOT_OBSERVED",
+      "skip_reason": "bounded_timeout",
+      "os_receipt_terminal_state": "NOT_EMITTED",
+      "os_validation": "INDEPENDENT_VALIDATOR_PASS; no vendor completion accepted",
+      "timeout_cancel_behavior": "ProcessTimeout; cancel probe not reached"
+    },
+    {
+      "executor_id": "external.codex",
+      "probe": {
+        "family": "Codex CLI",
+        "observed_version": "codex-cli 0.144.4",
+        "help_sha256": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+        "transport_kind": ["CLI_JSONL"],
+        "availability": "AVAILABLE",
+        "health_status": "HEALTHY",
+        "capability_tokens": ["repo.read", "structured_progress"],
+        "structured_output_support": true,
+        "progress_support": true,
+        "cancel_support": false,
+        "workspace_semantics": "EXPLICIT_CD_SCOPE_ONLY"
+      },
+      "attempted_bounded_smoke": true,
+      "live_invocation": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "outcome": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "classification": "TIMEOUT",
+      "task_envelope_digest": "f8829c55dd5b2e8b44b0602e55ce7f08bd66adf6d74fef775afdef38a2a784a2",
+      "task_envelope_translation": "CLI_JSONL_EPHEMERAL_CONFIG_RULE_ISOLATED_READ_ONLY_CD",
+      "external_state": "NOT_OBSERVED",
+      "skip_reason": "bounded_timeout",
+      "os_receipt_terminal_state": "NOT_EMITTED",
+      "os_validation": "INDEPENDENT_VALIDATOR_PASS; no vendor completion accepted",
+      "timeout_cancel_behavior": "ProcessTimeout; cancel probe not reached"
+    }
+  ],
+  "claim_ceiling": "Fresh public CLI probes and bounded disposable-workspace smoke attempts only; explicit skips and timeout classifications do not establish live provider success, external validity, production readiness, Owner acceptance or epistemic acceptance."
+}

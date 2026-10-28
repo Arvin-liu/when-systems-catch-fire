@@ -1,0 +1,167 @@
+{
+  "schema_version": "ignition-133-step09-regression-closure-r1",
+  "task_id": "IGNITION-20260822-133",
+  "step": "09",
+  "status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+  "baseline": {
+    "formal_main_sha": "5ed99d148dfb49e6c2ff729a345d2499d4b76021",
+    "formal_main_sha_verified": true,
+    "clean_baseline_path_manifest_missing": 198,
+    "prior_task132_receipt_manifest_missing": 194
+  },
+  "targeted_regression": {
+    "current_identity_semantics_and_release": {
+      "status": "PASS",
+      "tests_run": 44,
+      "tests_passed": 44,
+      "test_groups": [
+        "task_identity_parser",
+        "task_identity_model",
+        "iteration_boundary_semantics",
+        "iteration_boundary_compatibility",
+        "iteration_ordinal_binding",
+        "iteration_ordinal_matrix",
+        "execution_contract",
+        "current_surface_compiler",
+        "current_surface_semantics",
+        "current_release_lifecycle",
+        "publication_witness",
+        "release_candidate_task_identity"
+      ]
+    },
+    "current_task_lineage": {
+      "status": "PENDING_STEP10_APPEND_ONLY_CHANGELOG",
+      "command": "python3 ignition/tools/validate_current_task_lineage.py --check",
+      "observed": "TASK_LINEAGE_CURRENT_APPEND_MISSING:ignition/STATE-CHANGELOG.md",
+      "semantic_regressions": 0
+    },
+    "current_release_lifecycle": {
+      "status": "PASS_PRE_TERMINAL",
+      "observed": "CURRENT_RELEASE_LIFECYCLE_OK content_phase=RUNNING publication_authority=REMOTE_REF_OBSERVATION embedded_publication_assertion=NONE",
+      "step10_action": "Transition Task133 to terminal COMPLETED_WITH_CLASSIFIED_RESIDUALS and RELEASE_READY after the append-only changelog entry."
+    },
+    "current_facts": {
+      "status": "PASS",
+      "observed": "CURRENT_FACTS_DETERMINISTIC_OK"
+    },
+    "current_snapshot": {
+      "status": "PASS",
+      "observed": "CURRENT_SNAPSHOT_DETERMINISTIC_OK"
+    },
+    "current_surface_semantics": {
+      "status": "PASS",
+      "observed": "CURRENT_SURFACE_SEMANTIC_GATE_OK"
+    },
+    "current_surface_determinism": {
+      "status": "PENDING_STEP10_REBUILD",
+      "observed": "current output hashes differ from recorded pass 2",
+      "reason": "Task133 compiler output was intentionally changed in Step05; the Task133 two-pass determinism record is a Step10 closure output."
+    },
+    "current_state_sync": {
+      "status": "PENDING_STEP10_APPEND_ONLY_CHANGELOG",
+      "observed": "CURRENT_STATE_SYNC_INVALID TASK_LINEAGE_CURRENT_APPEND_MISSING:ignition/STATE-CHANGELOG.md",
+      "fixtures": "No independent Current semantic failure observed."
+    },
+    "release_candidate_identity": {
+      "status": "PASS",
+      "observed": "RELEASE_CANDIDATE_TASK_IDENTITY_OK task_id=IGNITION-20260822-133",
+      "ordinal_binding": "formal=133 architecture=129 compatibility_alias=133"
+    },
+    "release_transaction": {
+      "status": "PASS",
+      "observed": "RELEASE_TRANSACTION_PROTOCOL_OK steps=10; RELEASE_FAULT_MATRIX_OK cases=13"
+    },
+    "map_geometry": {
+      "status": "PASS",
+      "observed": "SYSTEM_MAP_GEOMETRY_OK height=2912.0 blank_reduction=0.8741007194 crossing=188",
+      "fixtures": "PASS"
+    },
+    "steering_authority_and_non_inference": {
+      "status": "PASS",
+      "scope": "capsule, intents, goals, console, conflicts, durability, adversarial, completion, commitments, drift, graph, priority, namespace, temporal, why-next and memory-profile validators"
+    },
+    "durability": {
+      "status": "PASS_WITH_CLASSIFIED_RESIDUALS",
+      "core_bounded_validators": "PASS",
+      "projection_hygiene": {
+        "status": "FAIL_WITH_CLASSIFIED_RESIDUALS",
+        "current_state_sync_baseline": "false only because Task133 changelog append is pending",
+        "generated_feedback_loop": "false only because all-tracked-accounted path manifest is missing 232 paths",
+        "historical_propagation_mismatch_count": 9,
+        "sympy_environmental_residual_count": 1,
+        "human_machine_dump_count": 0,
+        "knowledge_backflow_count": 0,
+        "fire_seed_backflow_count": 0,
+        "function_nonfunction_derived_drift": "PASS"
+      }
+    },
+    "federation_and_reference_freeze": {
+      "status": "PASS",
+      "fixtures": "PASS"
+    },
+    "privacy_and_secret_boundary": {
+      "status": "PASS",
+      "owner_observation": "OWNER_OBSERVATION_PRIVACY_OK",
+      "secret_scan": "PASS_0_MATCHES",
+      "local_path_scan": "PASS_0_MATCHES"
+    },
+    "repository_path_classification": {
+      "status": "FAIL_WITH_CLASSIFIED_PROJECTION_RESIDUAL",
+      "all_tracked_accounted_missing": 232,
+      "clean_formal_main_baseline_missing": 198,
+      "candidate_delta": 34,
+      "classification": "CURRENT_TASK133_TRACKED_PROJECTION_AND_RECEIPT_PATHS; historical manifest is not rewritten"
+    }
+  },
+  "full_unittest_discovery": {
+    "command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+    "status": "TIMEOUT_CLASSIFIED",
+    "timeout_seconds": 30,
+    "last_observation": "migrated 12 records -> temporary protocols-canonical.json",
+    "claim": "No full-discovery PASS is claimed."
+  },
+  "residual_classification": [
+    {
+      "residual_id": "TASK133_CURRENT_CHANGELOG_APPEND_PENDING",
+      "classification": "DIRECT_STEP10_OBLIGATION",
+      "handling": "Append-only Task133 record and re-run current lineage/state-sync gates; do not rewrite historical entries."
+    },
+    {
+      "residual_id": "TASK133_CURRENT_SURFACE_DETERMINISM_RECORD_PENDING",
+      "classification": "DIRECT_STEP10_REBUILD_OBLIGATION",
+      "handling": "Regenerate the Task133 two-pass current-surface determinism receipt after terminal projections are final."
+    },
+    {
+      "residual_id": "HUMAN_SURFACE_SOURCE_HASH_DRIFT_11",
+      "classification": "PRE_EXISTING_SOURCE_HASH_DRIFT",
+      "observed_paths": ["d127", "d182", "d190", "d260", "t2", "y1", "nfc-015cfd6ba387c9b1", "nfc-02f68962a6f13abc", "nfc-0331afe8d84f2538", "nfc-14866124cc1a2cae", "nfc-154bdc1ff37c47f6"],
+      "handling": "Preserved; no residual-owned human entry was changed by Task133."
+    },
+    {
+      "residual_id": "PROJECTION_MANIFEST_ALL_TRACKED_ACCOUNTED_232",
+      "classification": "HISTORICAL_ENVIRONMENTAL_BASELINE_PLUS_CURRENT_TASK_PATHS",
+      "evidence": "Clean formal main at 5ed99d14 reports missing=198; current Task133 candidate reports missing=232. The 34-path delta is recorded as current Task133 tracked projection/receipt work, while the manifest and validator remain unchanged."
+    },
+    {
+      "residual_id": "HISTORICAL_PROPAGATION_104_106",
+      "classification": "HISTORICAL_RESIDUAL_PRESERVED",
+      "mismatch_count": 9,
+      "tasks": [104, 105, 106],
+      "handling": "Historical declarations remain append-only and are not upgraded into a Task133 semantic regression."
+    },
+    {
+      "residual_id": "T16_SYMPY_COUNTEREXAMPLE",
+      "classification": "ENVIRONMENTAL_SYMPY_UNAVAILABLE_RESIDUAL",
+      "count": 1,
+      "handling": "Preserved as the existing explicit environmental classification."
+    },
+    {
+      "residual_id": "FULL_DISCOVERY_LONG_RUNNING_BOUNDARY",
+      "classification": "ENVIRONMENTAL_LONG_RUNNING_BASELINE",
+      "handling": "The bounded 30-second run timed out; no whole-suite PASS is asserted."
+    }
+  ],
+  "new_current_semantic_regressions": 0,
+  "next_step": "10",
+  "claim_ceiling": "Step09 proves bounded repository-local regression evidence and explicit residual classification only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

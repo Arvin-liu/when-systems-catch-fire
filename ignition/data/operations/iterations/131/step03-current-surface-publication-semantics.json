@@ -1,0 +1,26 @@
+{
+  "schema_version": "ignition-131-step03-current-surface-publication-semantics-r1",
+  "task_id": "IGNITION-20260821-131",
+  "compiler": "ignition/tools/current_surface_compiler.py",
+  "source_snapshot": "ignition/data/operations/current-snapshot-r1.json",
+  "surfaces": [
+    "homepage-identity",
+    "project-current-state",
+    "ai-cold-start",
+    "ai-agents-handoff",
+    "machine-entry",
+    "architecture",
+    "state-changelog"
+  ],
+  "publication_projection": {
+    "content_phase": "RELEASE_READY",
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "embedded_publication_assertion": "NONE",
+    "required_publication_ref": "refs/heads/main",
+    "post_publication_check_required": true,
+    "static_publication_state_tokens": []
+  },
+  "human_instruction": "This content can establish terminal/release-ready status only; whether the formal commit is formal main must be verified from the remote ref.",
+  "ai_instruction": "Run ref-derived verification against refs/heads/main; do not infer publication from embedded Current content.",
+  "claim_ceiling": "Compiler output is deterministic repository-local projection only; it does not establish publication, external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

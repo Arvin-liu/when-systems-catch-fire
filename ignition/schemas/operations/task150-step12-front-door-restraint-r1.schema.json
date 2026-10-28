@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step12-front-door-restraint-r1.schema.json",
+  "title": "Task150 Step12 front-door restraint",
+  "description": "Records that the bounded visualization experiment adds no Provider homepage or Current capability claim.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "control_previous_commit", "formal_observation", "upstream_observation", "claim_scan", "scope_freeze", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step12-front-door-restraint-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "12"},
+    "record_type": {"const": "FRONT_DOOR_RESTRAINT"},
+    "status": {"const": "FRONT_DOOR_RESTRAINT_PASS_NO_HOMEPAGE_CLAIM"},
+    "formal_previous_commit": {"const": "8194581147f0541488735de9a3a4ca139f60aa3a"},
+    "control_previous_commit": {"const": "c6abebfb78a4d6766121646f53f9ad13202c7f5b"},
+    "formal_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseline_ref", "task150_front_door_changed_paths", "task150_root_readme_added", "task150_readme_en_added", "task150_product_added", "checked_formal_front_doors"],
+      "properties": {
+        "baseline_ref": {"const": "d7372c27abe456b5b8c058675630d8038f91b448"},
+        "task150_front_door_changed_paths": {"const": []},
+        "task150_root_readme_added": {"const": false},
+        "task150_readme_en_added": {"const": false},
+        "task150_product_added": {"const": false},
+        "checked_formal_front_doors": {
+          "const": [
+            {"path": ".github/README.md", "sha256": "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0", "baseline_unchanged": true},
+            {"path": "ignition/AI-START-HERE.md", "sha256": "fc7b1f713a17711c81f484241db912a96e7a745a69a072a977e2fe494da711dd", "baseline_unchanged": true},
+            {"path": "ignition/OPERATING-METHOD.md", "sha256": "fe517924b0bdfee4a1b20d8ff58f03e12e1f315f3d3b440e4369a285d52f2f2c", "baseline_unchanged": true},
+            {"path": "ignition/formal/README.md", "sha256": "6380363b2dae3c1cb3bc2d4634ea49479a32c9222abd2a3e9f94c29701384402", "baseline_unchanged": true}
+          ]
+        }
+      }
+    },
+    "upstream_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "revision", "checkout", "worktree", "front_doors"],
+      "properties": {
+        "repository": {"const": "tt-a1i/archify"},
+        "revision": {"const": "7a16d30322f5bd09c832386faa95d8c9a933f0c0"},
+        "checkout": {"const": "FRESH_FULL_CLONE_EXACT_MAIN_HEAD"},
+        "worktree": {"const": "CLEAN"},
+        "front_doors": {
+          "const": [
+            {"path": "README.md", "sha256": "6bd30006f63414b1083d3d86f3898f696e98d2ba3a10b772c93e160e4ed340d0", "modified_by_task150": false},
+            {"path": "README_EN.md", "sha256": "6bd30006f63414b1083d3d86f3898f696e98d2ba3a10b772c93e160e4ed340d0", "modified_by_task150": false},
+            {"path": "PRODUCT.md", "sha256": "a7aa3e4c06ab2000e400af6688a5e60593f0fd72abf7f49dda2cf72dcff43e43", "modified_by_task150": false}
+          ]
+        }
+      }
+    },
+    "claim_scan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_added_provider_homepage_claim", "task150_added_current_provider_claim", "task150_added_default_renderer_claim", "task150_added_public_capability_claim", "human_front_door_acceptance"],
+      "properties": {
+        "task150_added_provider_homepage_claim": {"const": false},
+        "task150_added_current_provider_claim": {"const": false},
+        "task150_added_default_renderer_claim": {"const": false},
+        "task150_added_public_capability_claim": {"const": false},
+        "human_front_door_acceptance": {"const": "NOT_INFERRED"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "authenticated_channels", "current_admission", "default_renderer", "provider_homepage", "live_external_invocation", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "provider_homepage": {"const": "NO_CLAIM"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "claim_ceiling": {"const": "Task150 Step12 proves only that the formal and pinned upstream front-door surfaces were left unchanged and that Task150 added no Provider homepage, Current capability, default-renderer or public-availability claim. Existing general governance prose is not reclassified by this scan. It does not prove Owner acceptance, Current integration, production readiness, architecture truth, external truth or live external completion."}
+  }
+}

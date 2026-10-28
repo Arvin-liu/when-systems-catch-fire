@@ -1,0 +1,29 @@
+{
+  "approval_request_ids": [
+    "approval-action-write",
+    "approval-action-check"
+  ],
+  "command_validation": {
+    "action_id": "action-check",
+    "checks": [
+      "execution_status_recorded",
+      "command_exit_zero"
+    ],
+    "passed": true,
+    "run_id": "pilot-a",
+    "summary": "action passed bounded validator checks",
+    "validation_id": "validation-action-check"
+  },
+  "executor_history": [
+    "local-workspace-executor-instance-1"
+  ],
+  "final_state": "COMPLETED_VALIDATED",
+  "hidden_reasoning_persisted": false,
+  "knowledge_paths_visible": false,
+  "live_model_pilot": "LIVE_MODEL_PILOT_NOT_RUN",
+  "network_allowed": false,
+  "output_sha256": "a8df6d6d62ca2d1ed3eae73b5fbc632570ccfbb69f22277eab82564ee7d5dc5f",
+  "pilot": "A",
+  "remote_mutation": false,
+  "state_sha256": "d704b52275e8948a9f04c7684964eeca29a758f1756a5f0d8c2bcfec78493a54"
+}

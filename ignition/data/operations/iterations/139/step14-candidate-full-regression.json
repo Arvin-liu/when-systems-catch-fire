@@ -1,0 +1,103 @@
+{
+  "schema_version": "ignition-139-step14-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "14",
+  "status": "PASS",
+  "candidate_head_sha": "9a3b4a5561cf389b4f8af91274391096f39f65c2",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "natural_window": {
+    "minimum_supported_seconds": 14400,
+    "watchdog_used": false,
+    "arbitrary_timeout_used": false,
+    "process_killed": false,
+    "completed_naturally": true
+  },
+  "environment": {
+    "isolated": true,
+    "python_version": "3.14.6",
+    "dependency_preflight": "PASS",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "execution_python": "temporary isolated foundation venv outside repository"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate_head_sha": "a71f661bbdfcc43155b0ed0b2b27f96fac53ea7b",
+      "capture": "<external-temporary-capture>",
+      "runtime_seconds": 2868.307,
+      "elapsed_seconds": 2869.319,
+      "exit_code": 1,
+      "tests_run": 1202,
+      "failures": 1,
+      "errors": 0,
+      "skips": 0,
+      "status": "FAIL_GENERATED_PROJECTION_REPAIR_REQUIRED",
+      "failure": "test_fire_seeds.FireSeedsTest.test_human_layer_and_census_are_closed: source hash drift: docs/foundation/nonfunction-claim-adjudication-index.md",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "1413ddc4e36b678e64e41c798f8bd2d3c460aa66b6a0fd8a6876303a991145c5",
+      "stderr_sha256": "8be4a4f5860729d3b4012c4a20fd5aa30acbfb56f383079f20a933cb8aa4a085"
+    },
+    {
+      "attempt": 2,
+      "candidate_head_sha": "9a3b4a5561cf389b4f8af91274391096f39f65c2",
+      "capture": "<external-temporary-capture>",
+      "runtime_seconds": 2863.285,
+      "elapsed_seconds": 2864.371,
+      "exit_code": 0,
+      "tests_run": 1202,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "a791b035cec182ef33e59bb808b3fc17ca041ed30557acd9da735240ce2c88a6",
+      "stderr_sha256": "12dcd547a922b7837cfd23e892be4a144f7c905f663b3b8d32c8d27a7935e678"
+    }
+  ],
+  "repair": {
+    "cause": "Fire Seeds retained the pre-repair source hash for the regenerated nonfunction adjudication index.",
+    "action": "Rebuilt the canonical Fire Seeds census, then regenerated Current Facts, Current Snapshot and all seven compiler-owned Current blocks to fixed point.",
+    "validation": "FIRE_SEEDS_VALID entries=64 clusters=64 content_seed_count=40 methodology_seed_count=24 source_count=393 changelog_records=2; DURABILITY_PROJECTION_HYGIENE status=PASS"
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "clean_tree_after_full_run": true,
+    "current_facts": "PASS deterministic",
+    "current_snapshot": "PASS deterministic",
+    "current_projection_determinism": "PASS passes=2 outputs=10",
+    "fire_seeds": "PASS entries=64 source_count=393",
+    "durability_projection_hygiene": "PASS",
+    "function_assets": 5911,
+    "nonfunction_claims": 17023,
+    "knowledge_cards": 414,
+    "knowledge_changes": 315,
+    "knowledge_layered_readings": 332,
+    "knowledge_search_records": 23266,
+    "repository_paths": "3297 tracked=3297 manifest"
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "validated_completion_count": 0,
+    "obligation": "OPEN",
+    "retry": "NOT_AUTHORIZED",
+    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "next_step": "15",
+  "claim_ceiling": "Exact repository-local candidate natural offline full-suite evidence for candidate head 9a3b4a5561cf389b4f8af91274391096f39f65c2 and explicit repair evidence for the prior failed run only; no fresh-clone, publication, validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

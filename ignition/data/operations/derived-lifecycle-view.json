@@ -1,0 +1,99 @@
+{
+  "current_accepted_iteration": 114,
+  "derived_from": "lifecycle-events.jsonl + annotated terminal tags",
+  "errors": {},
+  "non_terminal_tasks": [],
+  "resolved": {
+    "104": "TERMINAL_SUCCESS",
+    "105": "TERMINAL_SUCCESS",
+    "106": "TERMINAL_SUCCESS",
+    "107": "TERMINAL_SUCCESS",
+    "108": "TERMINAL_SUCCESS",
+    "110": "TERMINAL_SUCCESS",
+    "111": "TERMINAL_SUCCESS",
+    "112": "TERMINAL_SUCCESS",
+    "113": "TERMINAL_SUCCESS",
+    "114": "TERMINAL_SUCCESS"
+  },
+  "schema_version": "1.0.0",
+  "tag_audit": {
+    "111": {
+      "original": {
+        "name": "ignition/iterations/111/terminal-r1",
+        "object_sha": "91de7433db0cef4800bb64a59b703a6305bc30ce",
+        "status": "INVALID_TERMINAL_ATTESTATION_PRESERVED",
+        "target": "9b15d359c54694d851c38df6ab3c7ae42544a51b"
+      },
+      "selected_recovery": {
+        "name": "ignition/iterations/111/terminal-r1-recovery-1",
+        "object_sha": "67c9dd380d0beed66808dc86134d7c9738984c0c",
+        "status": "VALID_RECOVERY_TERMINAL_ATTESTATION",
+        "target": "9b15d359c54694d851c38df6ab3c7ae42544a51b"
+      }
+    }
+  },
+  "task_summary": [
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-NARRATIVE-SYNTHESIS-AND-LIVE-SYSTEM-MAP-R1-20260730",
+      "task_number": 104
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-FUNCTION-OS-CORE-CAPABILITY-BENCHMARK-ADVERSARIAL-VALIDATION-R1-20260730",
+      "task_number": 105
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-CONTINUOUS-ITERATION-PROPAGATION-CLOSURE-AND-CURRENT-TRUTH-RECONCILIATION-R1-20260731",
+      "task_number": 106
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731",
+      "task_number": 107
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-TWO-PHASE-ITERATION-TERMINALIZATION-AND-SELF-CLOSING-CURRENT-TRUTH-R1-20260801",
+      "task_number": 108
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-PLANNER-COMPLETION-STATE-RECONCILIATION-AND-OPENALEX-INDEPENDENT-REPLICATION-PILOT-R1-20260801",
+      "task_number": 110
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801",
+      "task_number": 111
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
+      "task_number": 112
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+      "task_number": 113
+    },
+    {
+      "resolved_state": "TERMINAL_SUCCESS",
+      "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+      "task_number": 114
+    }
+  ],
+  "terminal_tasks": [
+    104,
+    105,
+    106,
+    107,
+    108,
+    110,
+    111,
+    112,
+    113,
+    114
+  ]
+}

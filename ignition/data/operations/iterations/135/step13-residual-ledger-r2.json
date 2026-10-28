@@ -1,0 +1,122 @@
+{
+  "schema_version": "residual-ledger-r2",
+  "task_id": "IGNITION-20260822-135",
+  "step": "13",
+  "historical_ledger": {
+    "path": "ignition/data/operations/residual-ledger-r1.json",
+    "sha256": "3dc7291912b53e6042c1ca7d65afc842616e7b2a6a80b558defd8e7520bb1783",
+    "task_id": "IGNITION-20260822-134",
+    "entry_count": 6
+  },
+  "residuals": [
+    {
+      "residual_id": "CURRENT_PATH_MANIFEST_UNACCOUNTED",
+      "historical_status": "RESOLVED_CURRENT",
+      "historical_classification": "CURRENT_PROJECTION_RESIDUAL",
+      "semantic_classification": "RESOLVED_CURRENT_RESIDUAL",
+      "status": "RESOLVED",
+      "baseline_count": 245,
+      "historical_current_count": 0,
+      "baseline_fingerprint": "707db14eb360f3c338f1ae8c82a702f258d72bfbe7c1b54de7d625eb628fed67",
+      "historical_current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "observed_current_count": 0,
+      "observed_current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "current_blocker": false,
+      "non_growth": "PASS"
+    },
+    {
+      "residual_id": "HUMAN_SURFACE_SOURCE_HASH_DRIFT",
+      "historical_status": "RESOLVED_CURRENT",
+      "historical_classification": "CURRENT_HUMAN_SURFACE_PROJECTION_RESIDUAL",
+      "semantic_classification": "RESOLVED_CURRENT_RESIDUAL",
+      "status": "RESOLVED",
+      "baseline_count": 11,
+      "historical_current_count": 0,
+      "baseline_fingerprint": "789786b0c45b9156ebf85538cdf39566f200389abe30fd053d93a3cec2f64313",
+      "historical_current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "observed_current_count": 0,
+      "observed_current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "current_blocker": false,
+      "non_growth": "PASS"
+    },
+    {
+      "residual_id": "PROPAGATION_TASK104_106_MISMATCH",
+      "historical_status": "SEALED_HISTORICAL",
+      "historical_classification": "SEALED_HISTORICAL",
+      "semantic_classification": "SEALED_HISTORICAL_RESIDUAL_ASSERTED",
+      "status": "SEALED_HISTORICAL",
+      "baseline_count": 27,
+      "historical_current_count": 27,
+      "baseline_fingerprint": "e6904502753987540abcfb8653c0b53627e435455e10a34f1b22bf4417a289ac",
+      "historical_current_fingerprint": "e6904502753987540abcfb8653c0b53627e435455e10a34f1b22bf4417a289ac",
+      "observed_current_count": 27,
+      "observed_current_fingerprint": "e6904502753987540abcfb8653c0b53627e435455e10a34f1b22bf4417a289ac",
+      "current_blocker": false,
+      "non_growth": "PASS"
+    },
+    {
+      "residual_id": "T16_SYMPY_COUNTEREXAMPLE",
+      "historical_status": "ENVIRONMENTAL",
+      "historical_classification": "ENVIRONMENTAL",
+      "semantic_classification": "OBSERVATION_ONLY",
+      "status": "HISTORICAL_OBSERVATION",
+      "baseline_count": 1,
+      "historical_current_count": 1,
+      "baseline_fingerprint": "3b78be31c06ad48b2cb24c50b9af34137d5c4dd13dc06ea30bbff1a472c00d8d",
+      "historical_current_fingerprint": "3b78be31c06ad48b2cb24c50b9af34137d5c4dd13dc06ea30bbff1a472c00d8d",
+      "observed_current_count": 1,
+      "observed_current_fingerprint": "3b78be31c06ad48b2cb24c50b9af34137d5c4dd13dc06ea30bbff1a472c00d8d",
+      "current_blocker": false,
+      "environment_requirement": "ENVIRONMENT_REQUIREMENT",
+      "non_growth": "PASS"
+    },
+    {
+      "residual_id": "FULL_UNITTEST_DISCOVERY_TERMINAL_STATE",
+      "historical_status": "RESOLVED_CURRENT",
+      "historical_classification": "FULL_DISCOVERY_EXECUTION_STATE",
+      "semantic_classification": "RESOLVED_CURRENT_RESIDUAL",
+      "status": "RESOLVED",
+      "baseline_count": 1,
+      "historical_current_count": 0,
+      "baseline_fingerprint": "149e9f7b985385b72d2eba3860abb2fe0985c38852bcbf098a714c4a8579c803",
+      "historical_current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "observed_current_count": 0,
+      "observed_current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "current_blocker": false,
+      "non_growth": "PASS"
+    },
+    {
+      "residual_id": "FULL_UNITTEST_DISCOVERY_TERMINAL_FAILURES",
+      "historical_status": "OPEN_INHERITED",
+      "historical_classification": "FULL_DISCOVERY_TERMINAL_RESULT",
+      "semantic_classification": "RESOLVED_CURRENT_RESIDUAL",
+      "status": "RESOLVED",
+      "baseline_count": 1,
+      "historical_current_count": 1,
+      "baseline_fingerprint": "b6f273fd4b8f421ff0c8992256ce0623fe76220628be9b7c58ae9637a430fe52",
+      "historical_current_fingerprint": "b6f273fd4b8f421ff0c8992256ce0623fe76220628be9b7c58ae9637a430fe52",
+      "observed_current_count": 0,
+      "observed_current_fingerprint": "04d9f07e4f115bda1851e07bd02455df651a8e26a38a03dcd119ab83a731f587",
+      "current_blocker": false,
+      "non_growth": "PASS"
+    }
+  ],
+  "summary": {
+    "entry_count": 6,
+    "sealed_historical_count": 1,
+    "environment_observation_count": 1,
+    "resolved_current_count": 4,
+    "current_failure_count": 0,
+    "environment_blocker_count": 0,
+    "residual_non_growth": "PASS"
+  },
+  "checks": {
+    "historical_ledger_unchanged": true,
+    "sealed_historical_exact_fingerprint": true,
+    "sympy_environment_observation_non_blocking": true,
+    "current_failure_count_zero": true,
+    "no_residual_growth": true,
+    "validator": "ignition/tools/validate_residual_ledger_r2.py --check"
+  },
+  "claim_ceiling": "CURRENT_RESIDUAL_SEMANTICS_AND_NON_GROWTH_ONLY"
+}

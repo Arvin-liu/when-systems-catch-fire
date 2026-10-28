@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "audit_id": "task-114-language-thought-bounded-project-audit-r1",
+  "status": "FROZEN_BOUNDED_POPULATION",
+  "frozen_against_formal_base": "8812b93e7aaaffd5d68ca4cf36b01857d0712026",
+  "frozen_at": "2026-08-02T00:00:00+08:00",
+  "selection_rule": "Current public/front-door, architecture/current-state, language-sensitive method, two current works, publication shelf/registry and generated human-reading surfaces. Historical reports and unrelated implementation files are excluded unless deterministic projection requires regeneration.",
+  "not_a_claim_of": ["exhaustive repository sentence review", "all-language coverage", "automatic naturalness detection", "historical asset rewrite"],
+  "frozen_work_hashes": {
+    "docs/publication/works/when-an-army-believes-its-own-back.md": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+    "docs/publication/works/when-an-emperor-manufactures-heaven.md": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4"
+  },
+  "items": [
+    {"population_item_id":"pop-readme","path":"README.md","reason":"primary human front door","review_scope":"current architecture visibility and no-L7 boundary"},
+    {"population_item_id":"pop-architecture","path":"ARCHITECTURE.md","reason":"authoritative architecture surface","review_scope":"orthogonal plane placement and truth boundary"},
+    {"population_item_id":"pop-current-state","path":"docs/project-current-state.md","reason":"current accepted capability state","review_scope":"version and lifecycle wording"},
+    {"population_item_id":"pop-ai-start","path":"AI-START-HERE.md","reason":"AI cold-start entry","review_scope":"required navigation and language-sensitive transformation boundary"},
+    {"population_item_id":"pop-ai-usage","path":"docs/ai-assistant-usage-reference.md","reason":"AI operating guidance","review_scope":"source/target/residue contract"},
+    {"population_item_id":"pop-system-map","path":"docs/architecture/interactive-system-map.md","reason":"human system topology","review_scope":"new overlay without L7 or causal overclaim"},
+    {"population_item_id":"pop-method","path":"docs/publication/zhiyuan-writing-method.md","reason":"L6 consumer of the plane","review_scope":"0.5.0 direct target-language realization and anti-cloning"},
+    {"population_item_id":"pop-army","path":"docs/publication/works/when-an-army-believes-its-own-back.md","reason":"current Zhiyuan public work","review_scope":"full-context language-thought audit"},
+    {"population_item_id":"pop-emperor","path":"docs/publication/works/when-an-emperor-manufactures-heaven.md","reason":"Task 113 current public work and defect location","review_scope":"full-context language-thought audit including owner defect"},
+    {"population_item_id":"pop-showcase-human","path":"docs/publication/zhiyuan-writing-showcase.md","reason":"public outcome shelf","review_scope":"current revision wording and preserved historical lineage"},
+    {"population_item_id":"pop-showcase-machine","path":"data/publication/zhiyuan-writing-showcase.json","reason":"machine publication registry","review_scope":"historical accepted hash plus current revision fields"},
+    {"population_item_id":"pop-system-map-generated","path":"docs/generated/ignition-system-map.svg","reason":"generated human navigation surface","review_scope":"deterministic projection only"},
+    {"population_item_id":"pop-human-reading","path":"HUMAN-READING.md","reason":"generated human-readable inventory","review_scope":"deterministic regeneration and current capability discoverability"},
+    {"population_item_id":"pop-knowledge","path":"KNOWLEDGE.md","reason":"generated knowledge surface","review_scope":"deterministic regeneration only; never hand edit"}
+  ]
+}
