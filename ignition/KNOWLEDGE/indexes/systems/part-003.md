@@ -1721,7 +1721,7 @@
   - 依赖：—；被引用：—
 - [The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure](../../../data/architecture/current-system-identity.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e1150e9f16096c5 / The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure
+  - 可搜索名称：NFC-e24c2087f295f2bb / The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure
   - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [The provider-neutral offline harness accepts exactly one strict synthetic result and rejects ten negative cases: malform](../../../reports/operations/ignition-142-step05-offline-conformance.md)

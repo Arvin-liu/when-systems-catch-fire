@@ -909,6 +909,11 @@
   - 可搜索名称：Validation summary / validation-summary-20260712
   - 来源：`reports/foundation-architecture/validation-summary-20260712.md`
   - 依赖：—；被引用：—
+- [validation_boundary: reuse the exact registered and live-read formal main baseline; do not restart S0 or rerun the multi](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-81051b38a142ddf5 / validation_boundary: reuse the exact registered and live-read formal main baseline; do not restart S0 or rerun the multi
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Validator output never equals formal approval.](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-63a76d5bc526bac1 / Validator output never equals formal approval.
@@ -2497,10 +2502,5 @@
 - [Within the source-defined scope, 时间尺度同构函数 is adjudicated as RELATION: 时间尺度同构函数，不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D178 / Within the source-defined scope, 时间尺度同构函数 is adjudicated as RELATION: 时间尺度同构函数，不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D173 / Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

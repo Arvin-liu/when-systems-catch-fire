@@ -70,6 +70,33 @@ class ReleaseCandidateTaskIdentityTests(unittest.TestCase):
         errors = self.check(result_task_id=None, machine_receipt_task_id=None, require_result=True)
         self.assertTrue(any("FORMAL_RESULT_TASK_ID_MISSING" in error for error in errors))
 
+    def test_pull_request_head_branch_is_resolved_from_github_metadata(self) -> None:
+        branch = gate.resolve_observed_branch({
+            "GITHUB_EVENT_NAME": "pull_request",
+            "GITHUB_HEAD_REF": self.contract["expected_task_branch"],
+            "GITHUB_REF": "refs/pull/264/merge",
+            "GITHUB_REF_NAME": "264/merge",
+        })
+        self.assertEqual(branch, self.contract["expected_task_branch"])
+        self.assertEqual(self.check(observed_branch=branch), [])
+
+    def test_pull_request_without_head_ref_fails_closed(self) -> None:
+        branch = gate.resolve_observed_branch({
+            "GITHUB_EVENT_NAME": "pull_request",
+            "GITHUB_REF": "refs/pull/264/merge",
+            "GITHUB_REF_NAME": "264/merge",
+        })
+        self.assertEqual(branch, "")
+        errors = self.check(observed_branch=branch)
+        self.assertTrue(any(error.startswith("TASK_BRANCH_METADATA_MISMATCH:") for error in errors))
+
+    def test_push_branch_is_resolved_from_github_ref(self) -> None:
+        branch = gate.resolve_observed_branch({
+            "GITHUB_EVENT_NAME": "push",
+            "GITHUB_REF": "refs/heads/codex/r3-forward-20261022",
+        })
+        self.assertEqual(branch, self.contract["expected_task_branch"])
+
 
 if __name__ == "__main__":
     unittest.main()

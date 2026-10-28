@@ -2449,6 +2449,11 @@
   - 可搜索名称：NFC-44ffb4c3a459c26f / claim_ceiling: repository-local Task148 post-merge Current synchronization, deterministic projections and publication-co
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task20 verifier and identity-source repair plus focused validation only; no external tru](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb4dd79ed3c9c56f / claim_ceiling: repository-local Task20 verifier and identity-source repair plus focused validation only; no external tru
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bb586cd973539003 / claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
   - 来源：`reos_vnext/contract.py`
-  - 依赖：—；被引用：—
-- [Classic Problems Benchmark Dataset](../../../data/schemas/classic_problems_benchmark.schema.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2d5cf18b4ed756c1 / Classic Problems Benchmark Dataset
-  - 来源：`data/schemas/classic_problems_benchmark.schema.json`
   - 依赖：—；被引用：—

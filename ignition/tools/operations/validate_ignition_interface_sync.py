@@ -36,6 +36,27 @@ ADDITIONAL_LOCATORS = {
 MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
 ITERATION_PATH_RE = re.compile(r"^data/operations/iterations/(?P<number>\d+)(?:/|$)")
 
+# Task20 is the one Owner-registered successor whose unique formal ordinal is
+# lower than the prior current ordinal.  Pin the signed registration facts so
+# the historical-evidence guard can distinguish this newly registered
+# successor from an attempt to backfill an arbitrary old iteration directory.
+REGISTERED_SUCCESSOR_BINDINGS = {
+    20: {
+        "task_id": "IGNITION-20261024-020",
+        "expected_task_branch": "codex/r3-forward-20261022",
+        "expected_receipt_branch": "relay/receipts/IGNITION-20261024-020-r3-transition",
+        "previous_formal_task": "IGNITION-20260829-148",
+        "formal_base_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "registration_commit_sha": "2709651e63238ee6e1bd812e3f7bc692c10f0acc",
+        "registration_file_sha256": "7a20c9cbabfd1b7a673a6e1f9b1ea8ad44bc9479639be34cb10c8b94c4520dc8",
+        "registration_nonce": "b07011542e8c8104c35c5104a5464c7c",
+        "registration_parent_shas": [
+            "d451305c4c606460665a30ffb523db59edd58e5d",
+            "538ebc673b13fd8d376a704ab3bb2b8fc325d86c",
+        ],
+    }
+}
+
 
 class InterfaceSyncError(ValueError):
     """A deterministic interface synchronization invariant failed."""
@@ -174,16 +195,55 @@ def validate_semantics(registry: dict[str, Any]) -> None:
     require(start_text.index("OPERATING-METHOD.md") < start_text.index("ITERATION.md"), "COLD_START_ORDER_REVERSED")
 
 
+def _registered_successor_contract_matches(contract: dict[str, Any], ordinal: int) -> bool:
+    expected = REGISTERED_SUCCESSOR_BINDINGS.get(ordinal)
+    if expected is None:
+        return False
+    registration = contract.get("successor_registration")
+    expectations = contract.get("identity_expectations")
+    baseline = contract.get("formal_baseline")
+    if not isinstance(registration, dict) or not isinstance(expectations, dict) or not isinstance(baseline, dict):
+        return False
+    return (
+        contract.get("task_id") == expected["task_id"]
+        and contract.get("formal_ordinal") == ordinal
+        and contract.get("expected_task_branch") == expected["expected_task_branch"]
+        and contract.get("expected_receipt_branch") == expected["expected_receipt_branch"]
+        and expectations.get("previous_formal_task") == expected["previous_formal_task"]
+        and baseline.get("sha") == expected["formal_base_main_sha"]
+        and registration.get("commit_sha") == expected["registration_commit_sha"]
+        and registration.get("file_sha256") == expected["registration_file_sha256"]
+        and registration.get("registration_nonce") == expected["registration_nonce"]
+        and registration.get("parent_shas") == expected["registration_parent_shas"]
+    )
+
+
+def _registered_successor_ordinals() -> set[int]:
+    ordinals: set[int] = set()
+    for ordinal in REGISTERED_SUCCESSOR_BINDINGS:
+        contract_path = ROOT / f"data/operations/iterations/{ordinal:03d}/execution-contract-r1.json"
+        try:
+            contract = load_json(contract_path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        if _registered_successor_contract_matches(contract, ordinal):
+            ordinals.add(ordinal)
+    return ordinals
+
+
 def historical_rewrite_violations(diff_output: str) -> list[str]:
     """Return changed paths that rewrite historical evidence.
 
-    A successor iteration is allowed to add its own new evidence files.  The
-    guard still rejects modifications, deletions, renames, or copies in a
-    successor iteration, as well as every historical/archive path.  This
-    keeps the Task148 preservation check meaningful when a later task is
-    reviewed from the same baseline.
+    A successor iteration is allowed to add its own new evidence files.  A
+    lower formal ordinal is accepted only when its exact execution contract
+    matches the pinned Owner-registered successor record.  The guard still
+    rejects modifications, deletions, renames, or copies in a successor
+    iteration, as well as every historical/archive path.  This keeps the
+    Task148 preservation check meaningful when a later task is reviewed from
+    the same baseline.
     """
     violations: list[str] = []
+    registered_successors = _registered_successor_ordinals()
     for line in diff_output.splitlines():
         fields = line.split("\t")
         if len(fields) < 2:
@@ -201,7 +261,12 @@ def historical_rewrite_violations(diff_output: str) -> list[str]:
             iteration_number = int(match.group("number"))
             if iteration_number == 148:
                 continue
-            successor_addition = iteration_number > 148 and status_code == "A"
+            registered_successor_addition = (
+                iteration_number in registered_successors
+                and match.group("number") == f"{iteration_number:03d}"
+                and status_code == "A"
+            )
+            successor_addition = (iteration_number > 148 or registered_successor_addition) and status_code == "A"
             if not successor_addition:
                 violations.append(raw_path)
     return violations

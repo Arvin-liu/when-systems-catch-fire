@@ -1,8 +1,8 @@
 {
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
-    "DESCRIPTIVE": 438,
-    "EMPIRICAL": 4641,
+    "DESCRIPTIVE": 439,
+    "EMPIRICAL": 4642,
     "INTERPRETIVE": 2937,
     "MATHEMATICAL": 2395,
     "METAPHYSICAL": 822,
@@ -10,12 +10,12 @@
     "UNRESOLVED": 6558
   },
   "blocked_conclusion_rebounds": 1,
-  "candidate_fragments": 31023,
-  "canonical_claims": 17970,
+  "candidate_fragments": 31025,
+  "canonical_claims": 17972,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2482,
-    "DESCRIPTIVE_REPOSITORY_CLAIM": 438,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2219,
+    "DESCRIPTIVE_REPOSITORY_CLAIM": 439,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2220,
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 750,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 455,
     "LAW_OR_PRINCIPLE_CLAIM": 196,
@@ -30,7 +30,7 @@
   "conclusion_rebound_candidates": 57,
   "dependency_edges": 5642,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3781,
+    "ACCEPTED_AS_DEFINITION": 3783,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 7440,
     "PENDING_EMPIRICAL_TEST": 889,
@@ -49,11 +49,11 @@
   "explicit_quarantine_or_pending": 4993,
   "explicitly_unresolved_dependency_edges": 50,
   "external_evidence_distribution": {
-    "E0": 10524,
+    "E0": 10526,
     "E1": 7446
   },
   "mathematical_maturity_distribution": {
-    "M0": 15327,
+    "M0": 15329,
     "M1": 2638,
     "M3": 1,
     "M4": 3,
@@ -68,7 +68,7 @@
     "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 269,
     "EXCLUDED_KNOWLEDGE_SOURCE_EXPLICIT_ONLY": 7,
     "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE": 16,
-    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 1118,
+    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 1124,
     "EXCLUDED_NON_TEXT_SUFFIX": 5,
     "EXCLUDED_PLATFORM_CODE_EXCLUDED": 1077,
     "EXPLICIT_CANONICAL_IMPORT": 1,
@@ -76,5 +76,5 @@
     "SCANNED_REGISTERED": 2461
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 5813
+  "tracked_files_accounted": 5819
 }
