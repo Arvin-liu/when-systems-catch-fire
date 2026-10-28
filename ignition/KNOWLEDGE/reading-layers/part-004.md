@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-46cd997d4826e649"></a>
+## IGNITION-140 Step 06 — Evidence Exhaustion Audit
+`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-140 Step 06 — Evidence Exhaustion Audit；The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read.；Hermes136 has no attempt PID/PGID, durable disposable workspace, session pointer, raw public output, or matching public artifact in the bounded search. Its state is therefore terminalized as TERMINALUNRECOVERABLEEFFECTUNKNOWN; this does not prove cancellation, success, failure, or no external effect.；Codex138 second is a confirmed started attempt, but the durable evidence path contains no capture, return code, session pointer, structured result, lease receipt, or validator result. It is terminalized as TERMINALUNRECOVERABLEOBSERVATIONINCOMPLETE, while effect knowledge stays UNKNOWN.；Task139 is different: its public transport record is conclusive for the process boundary. It has two public probes, zero live dispatch calls, no live inference start, and no capture capsule because Pointfire failed closed before process start. It is closed as CLOSEDNOLIVEDISPATCH; that label is not a claim that an external effect was observed absent, and its…；No historical record was rewritten and no retry was started. The next step may append canonical reconciliation events and then perform fresh dynamic executor admission.
+- 完整阅读：[reports/operations/ignition-140-step06-evidence-exhaustion-audit.md](../../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)
+
 <a id="reading-hr-46d4e1a9e463a4a0"></a>
 ## 候选决策摘要（candidate-decision-summary）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`, `OPERATIONS_EVIDENCE`
@@ -249,6 +256,13 @@
 - 5 分钟：主题：Legal Full-Text Resolver Report — IGNITION-121；主题：Executive Summary；IGNITION-121 built a reusable, legal full-text resolver for ignition external-research tasks. The resolver operates on a defined protocol that uses only legitimate open-access channels and records every resolution attempt, hash, and failure.；主题：Resolver Components；scripts/external-research/fulltextresolver.py — discovers OA candidate URLs via arXiv, OpenAlex, Crossref, Unpaywall, and direct registry URLs.；scripts/external-research/fulltextfetcher.py — downloads candidate files with curl, records SHA256, content type, page count, and headers.
 - 完整阅读：[reports/external-research/121-legal-fulltext-resolver-report.md](../../reports/external-research/121-legal-fulltext-resolver-report.md)
 
+<a id="reading-hr-55571c37dc8b05e5"></a>
+## DECISION-INTEGRITY repair-r2 — R4 freeze
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：stale pre-repair i1 head 213dced90f1e9b1f1992a148ee10fc0844917490 to the real SYMBOLIC-SPHERE repair-r2 head 68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：DECISION-INTEGRITY repair-r2 — R4 freeze；branch: repair-r2/decision-integrity-r2-parent-and-semantics；annotatedtag: archive/decision-integrity-repair-r2-frozen-head；base: DECISION-INTEGRITY repair-r1 head 25bd2ca3e14a2693e3c9fac49a2547e1aa7ca9a8；direct predecessor: SYMBOLIC-SPHERE repair-r2 head 68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04 (inherited via --no-ff merge)；PR base: repair-r2/symbolic-sphere-r2-shared-engine-hardening (prior repair-r2 branch)
+- 完整阅读：[reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md](../../reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md)
+
 <a id="reading-hr-55909fc062be1ffa"></a>
 ## 赛课机制教师生存困境碰撞批次收口审计
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
@@ -291,6 +305,13 @@
 - 5 分钟：主题：External Agent Federation Core R1；The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public ordered progress; FederatedResultReceipt carries claims plus indepen…；ExternalSessionRef is always pointeronly. An executor's internal history, prompt, hidden reasoning, token usage, memory database or session UI is not canonical Ignition state. Receipt digests cover the unsigned public record and are checked during construction and replay.；The typed records live in agentfederation/contracts.py. The public record schema is federation-core-r1.schema.json. The FederatedExecutor protocol only asks for probe, describe, dispatch, status, cancel and optional-capability resume; it does not prescribe an internal agent loop.
 - 完整阅读：[docs/architecture/federation-core-r1.md](../../docs/architecture/federation-core-r1.md)
 
+<a id="reading-hr-578f793e0ef4f0f6"></a>
+## SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt；Status: SYMBOLICSPHEREREPAIRR1LOCALCOMPLETE；Branch: repair/symbolic-sphere-r1-reference-integrity；Original SYMBOLIC frozen head: 213dced90f1e9b1f1992a148ee10fc0844917490；Q39 repair-r1 frozen head: 99ab601a48dd45972b238e468bc8e3002d648c98；Merge propagation commit: 05976a00a8e86b9dd8fe4d638e791b372ad0af62
+- 完整阅读：[reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md](../../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
+
 <a id="reading-hr-57b4f559431d6912"></a>
 ## 121Q32 typed change-propagation impact report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：The one authorized Step11 boundary was attempted and durably appended as ledger sequence 4 (8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d). The fresh public Codex lease and strict OS capability intersection were admitted, and the OS coordinator prepared/accepted the dispatch. T… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt；The one authorized Step11 boundary was attempted and durably appended as ledger sequence 4 (8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d). The fresh public Codex lease and strict OS capability intersection were admitted, and the OS coordinator prepared/accepted the dispatch. The adapter then failed closed during its runtime filesystem-dom…；The host receipt therefore records OBSERVATIONINCOMPLETE, incomplete evidence, no structured result, validator UNKNOWN, and REQUIRESRECONCILIATION. The transport call ledger shows exactly two public probes and zero live dispatch calls. No blind retry was made.；The failure was reproduced read-only with the same adapter setup: the broad persistent user-document root contained an unrelated symlinked tool environment, so the filesystem contract rejected the attempt with filesystem domain contains a symlink/path escape. The candidate has since been tightened for future admission to use a bounded symlink-free note root…；One important epistemic boundary is preserved in the machine artifact: the first runner's fallback low-level returncode: 0 is not treated as a live process result because livedispatchcalls=0; it is the last public-probe transport value retained while closing the incomplete host observation. No capture capsule or structured result was initialized, so no exter…；Machine evidence: step11-live-attempt.json, the append-only live-attempt-ledger.jsonl, and runtask139singleliveattempt.py.
 - 完整阅读：[reports/operations/ignition-139-step11-live-attempt.md](../../reports/operations/ignition-139-step11-live-attempt.md)
-
-<a id="reading-hr-5a6642209467ff3a"></a>
-## IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report；Closure complete: true；Closure hash: 3332a4e7b8ed9e69b9c2ecfcbd6984d75ee4a8bae2aa77da2ddead4ba4d550d0；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, incrementalexecution, iteration, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, stagesnapshotpublication, summary, sync, systemmapprojection, usage；Resolved components: 16
-- 完整阅读：[reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md](../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
-
-<a id="reading-hr-5af412f645a35de0"></a>
-## IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable rea… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission；The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable read-only workspace, durable capture, exact validator binding, cle…；The live policy is explicit: at most two total synthetic/read-only attempts, at most one per family, child spawning denied, all channels/browser/remote-Git/configuration/billing effects denied, and immediate stop after the first exact validated completion. The result-binding contract requires task, dispatch, attempt, executor, family, lease, workspace, captu…；Step 04 contains only the contract and a blocked placeholder. It performs no executor probe or invocation. The contract and validator are ignition/data/operations/executor-admission-contract-r1.json and ignition/tools/validateexecutoradmissioncontract.py.
-- 完整阅读：[reports/operations/ignition-142-step04-admission-contract.md](../../reports/operations/ignition-142-step04-admission-contract.md)
-
-<a id="reading-hr-5b54a4719d10bbc2"></a>
-## 121Q8 Final Report
-`CANDIDATE_OR_PENDING_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q8 Final Report；Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.；Branch: governance/121q8-charter-sustainability-licensing-20260715；Base: ops/121q7-foundation-ci-mail-storm-repair-20260715；Base PR: #44, left OPEN / DRAFT / UNMERGED；Step commits before seal: 15 (000 through 014)
-- 完整阅读：[reports/governance/121Q8-final-report.md](../../reports/governance/121Q8-final-report.md)

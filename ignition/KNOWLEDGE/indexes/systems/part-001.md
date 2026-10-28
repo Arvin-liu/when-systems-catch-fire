@@ -46,13 +46,43 @@
   - 依赖：—；被引用：—
 - ["name": "system_map_generation",](../../../data/operations/iterations/121Q33.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-00F61C8282029100 / "name": "system_map_generation", / IMPLICIT-00F61C8282029100
+  - 可搜索名称：IMPLICIT-00F61C8282029100 / "name": "system_map_generation", / IMPLICIT-00F61C8282029100 / IMPLICIT-5E640AD1FE6B0269
   - 来源：`data/operations/iterations/121Q33.json`
+  - 依赖：—；被引用：—
+- ["name": "system_map_generation",](../../../data/operations/iterations/121Q34.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5E640AD1FE6B0269 / "name": "system_map_generation", / IMPLICIT-5E640AD1FE6B0269 / IMPLICIT-00F61C8282029100
+  - 来源：`data/operations/iterations/121Q34.json`
+  - 依赖：—；被引用：—
+- ["name": "system_map_generation",](../../../data/operations/iterations/121Q36-INT.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C49E2B573FFE3561 / "name": "system_map_generation", / IMPLICIT-C49E2B573FFE3561 / IMPLICIT-00F61C8282029100
+  - 来源：`data/operations/iterations/121Q36-INT.json`
+  - 依赖：—；被引用：—
+- ["name": "system_map_generation",](../../../data/operations/iterations/121Q37.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D771322A26471D2F / "name": "system_map_generation", / IMPLICIT-D771322A26471D2F / IMPLICIT-00F61C8282029100
+  - 来源：`data/operations/iterations/121Q37.json`
+  - 依赖：—；被引用：—
+- ["name": "system_map_generation",](../../../data/operations/iterations/121Q36-OBS.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FBAC0F721C4CB1EB / "name": "system_map_generation", / IMPLICIT-FBAC0F721C4CB1EB / IMPLICIT-00F61C8282029100
+  - 来源：`data/operations/iterations/121Q36-OBS.json`
+  - 依赖：—；被引用：—
+- ["name": "system_map_generation",](../../../data/operations/iterations/121Q35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FE067944D3D5A156 / "name": "system_map_generation", / IMPLICIT-FE067944D3D5A156 / IMPLICIT-00F61C8282029100
+  - 来源：`data/operations/iterations/121Q35.json`
   - 依赖：—；被引用：—
 - ["name": "把历史叙事误写成因果定律",](../../../data/failure_typology.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-815031B4E04FC55D / "name": "把历史叙事误写成因果定律", / IMPLICIT-815031B4E04FC55D
   - 来源：`data/failure_typology.json`
+  - 依赖：—；被引用：—
+- ["provenance": "real-repo pilot: deterministic repo-local replay of the Q34 committed claim fix.analogy_as_mechanism \(data/discovery/fixtures/05-analogy-as-mechanism.json; Q34 lifecycle state=commitment_candidate, treated by Q37 as a committ](../../../data/analogy/fixtures/31-intermediate-head-candidate-fictional-source-bypass.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E2FEA37943912FE4 / "provenance": "real-repo pilot: deterministic repo-local replay of the Q34 committed claim fix.analogy_as_mechanism \(data/discovery/fixtures/05-analogy-as-mechanism.json; Q34 lifecycle state=commitment_candidate, treated by Q37 as a committ / IMPLICIT-E2FEA37943912FE4
+  - 来源：`data/analogy/fixtures/31-intermediate-head-candidate-fictional-source-bypass.json`
   - 依赖：—；被引用：—
 - ["read_reasoning": f"Full {'PDF' if fetch.get\('ext'\)=='.pdf' else 'HTML'} obtained \({fetch.get\('page_count'\)} pages, {fet](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -468,6 +498,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-929F456ACB7F6F9B / # Probabilistic System Dynamics / 概率—系统动力学 / IMPLICIT-929F456ACB7F6F9B
   - 来源：`docs/architecture/probabilistic-system-dynamics.md`
+  - 依赖：—；被引用：—
+- [# Q37-I1 Architecture Decision — Analogy Audit, Mechanism Boundary & Transportability Gate](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-98E86C4BA1E638C4 / # Q37-I1 Architecture Decision — Analogy Audit, Mechanism Boundary & Transportability Gate / IMPLICIT-98E86C4BA1E638C4
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
   - 依赖：—；被引用：—
 - [# STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1059,10 +1094,25 @@
   - 可搜索名称：NFC-5ba0c5e970b0bfbe / `agency_or_causality_changed`
   - 来源：`docs/language-thought/validation-and-audit.md`
   - 依赖：—；被引用：—
+- [`ALTERNATIVE_EXPLANATIONS_REMAIN`}, and a hard `do_not_overclaim_causality` marker.](../../../docs/intervention/q36-int-typed-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1621309f495d3706 / `ALTERNATIVE_EXPLANATIONS_REMAIN`}, and a hard `do_not_overclaim_causality` marker.
+  - 来源：`docs/intervention/q36-int-typed-contract.md`
+  - 依赖：—；被引用：—
+- [`archive/lab-121q36-temporal-causality-night` by Q36-OBS-I1 \(it diverges from the Q34/Q35/Q36-OBS](../../../docs/intervention/q36-int-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-eab8f4357face1b3 / `archive/lab-121q36-temporal-causality-night` by Q36-OBS-I1 \(it diverges from the Q34/Q35/Q36-OBS
+  - 来源：`docs/intervention/q36-int-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [`ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。](../../ASSET-CARDS.md#asset-nfc-62c0ef5e2c8b99f2)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-62c0ef5e2c8b99f2 / `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。 / - `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。
   - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [`audit_decisions` — classification, mapping consistency, mechanism-evidence sufficiency, transportability status, counte](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-26933e46a13a134a / `audit_decisions` — classification, mapping consistency, mechanism-evidence sufficiency, transportability status, counte
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
   - 依赖：—；被引用：—
 - [`BASIS_LEARNING_OPERATOR_NOT_VALIDATED`,](../../../agent-results/IGNITION-20260908-167-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1129,6 +1179,11 @@
   - 可搜索名称：NFC-d3ad062793783315 / `current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
+- [`data/analogy/fixtures/24-real-repo-pilot-q34-analogy-as-mechanism.json` audits the existing](../../../docs/analogy/q37-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-9e2e6550e1b231f4 / `data/analogy/fixtures/24-real-repo-pilot-q34-analogy-as-mechanism.json` audits the existing
+  - 来源：`docs/analogy/q37-interfaces.md`
+  - 依赖：—；被引用：—
 - [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-b9d014e3e8f859c8 / `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`
@@ -1138,6 +1193,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1eadcc47c77d0a5d / `data/architecture/current-system-identity.json`、`data/architecture/current-facts.json` 与
   - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [`data/discovery/fixtures/05-analogy-as-mechanism.json` \(Q34's `ANALOGY_AS_MECHANISM` attack](../../../docs/analogy/q37-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d295fe27d258dee2 / `data/discovery/fixtures/05-analogy-as-mechanism.json` \(Q34's `ANALOGY_AS_MECHANISM` attack
+  - 来源：`docs/analogy/q37-interfaces.md`
   - 依赖：—；被引用：—
 - [`diff.py` compares nodes, relations, attributes, hyper-relations, temporal activations, integration responses, embedding](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1229,10 +1289,25 @@
   - 可搜索名称：NFC-95b5357dd8f85785 / `map-agent-delivery-operations`: shows user request, 1111 command bus, Codex execution, artifacts, local validation, rem
   - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
   - 依赖：—；被引用：—
+- [`MECHANISM_CANDIDATE` stays a candidate **unless** there is independent mechanism evidence \(`INDEPENDENT_MECHANISM_EVIDE](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f477c126eb32a07f / `MECHANISM_CANDIDATE` stays a candidate **unless** there is independent mechanism evidence \(`INDEPENDENT_MECHANISM_EVIDE
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [`mechanism_discriminated`](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-962d6efa73e7c36a / `mechanism_discriminated`
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [`MECHANISM_EQUIVALENCE_PROVEN` and `UNIVERSAL_LAW_PROVEN` are **deliberately absent** from the `candidate_type` enum; an](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4559dcd23796ccc4 / `MECHANISM_EQUIVALENCE_PROVEN` and `UNIVERSAL_LAW_PROVEN` are **deliberately absent** from the `candidate_type` enum; an
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
+- [`mechanism_evidence` — `evidence_kind`, `status`, prohibited promotions, no self-circular evidence.](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9a807c889e35b769 / `mechanism_evidence` — `evidence_kind`, `status`, prohibited promotions, no self-circular evidence.
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
   - 依赖：—；被引用：—
 - [`mechanism_plausible`](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1349,6 +1424,11 @@
   - 可搜索名称：NFC-a14f483170f68036 / `standalone derived system view artifact`
   - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—
+- [`STRUCTURAL_ANALOGY` ≠ `MECHANISM_EQUIVALENCE`.](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-afd1a751af5e46b0 / `STRUCTURAL_ANALOGY` ≠ `MECHANISM_EQUIVALENCE`.
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [`structural_causal_model_edge`](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4f78e846f0b64104 / `structural_causal_model_edge`
@@ -1398,6 +1478,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-766a3b38f5e108d9 / `TransitionLaw`: deterministic, stochastic, or hybrid dynamics; update equation; transition kernel; generator; time sema
   - 来源：`docs/architecture/probabilistic-system-dynamics.md`
+  - 依赖：—；被引用：—
+- [`transportability_assessments` — populations, required invariances, covariate/concept/mechanism/scale-time-regime shifts](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-cf25f3ed8206ba65 / `transportability_assessments` — populations, required invariances, covariate/concept/mechanism/scale-time-regime shifts
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
   - 依赖：—；被引用：—
 - [`UnmappedRelationalResidue`: relation uncertainty, boundary ambiguity, higher-order loss, missing bridge or unverified i](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1449,6 +1534,11 @@
   - 可搜索名称：NFC-dda2a17b8eaabc17 / A paired ‘越…越…’ construction makes visibility and self-confirmation sound more deterministic than the bounded mechanism
   - 来源：`data/language-thought/audit-findings.jsonl`
   - 依赖：—；被引用：—
+- [A Q36-OBS residual / anomaly may trigger an analogy candidate or a counteranalogy search, but it **cannot** prove a shar](../../../docs/analogy/q37-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0378fde556e4868d / A Q36-OBS residual / anomaly may trigger an analogy candidate or a counteranalogy search, but it **cannot** prove a shar
+  - 来源：`docs/analogy/q37-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [A Reflection on the Impact of Misspecifying Unidentifiable Causal Inference Models](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f663a489abf4ebde / A Reflection on the Impact of Misspecifying Unidentifiable Causal Inference Models
@@ -1483,6 +1573,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0ad457f06f80ede9 / A standard network forward pass or cosine classifier is an execution mechanism, not an interpreter for a function langua
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [A structurally tempting analogy fails when treated as a mechanism.](../../../data/retrieval/fixtures/01-valid-bounded-repository-pilot.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6f86f6b9e4adac10 / A structurally tempting analogy fails when treated as a mechanism.
+  - 来源：`data/retrieval/fixtures/01-valid-bounded-repository-pilot.json`
   - 依赖：—；被引用：—
 - [A universal city-scale causal effect of increasing canopy is identified](../../../data/external-research/pointfire-seven-track-replay-r1/claim-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1644,10 +1739,25 @@
   - 可搜索名称：NFC-70c5179dc9f8883e / An output must not raise claim strength because the user, maintainer, author, or proposer appears excited, certain, tire
   - 来源：`docs/governance/non-sycophancy-output-protocol.md`
   - 依赖：—；被引用：—
+- [An unsatisfied material-evidence constraint returns a stable nonzero result. The bundle must also downgrade its conclusi](../../../docs/symbolic/symbolic-sphere-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d556013d757f25b9 / An unsatisfied material-evidence constraint returns a stable nonzero result. The bundle must also downgrade its conclusi
+  - 来源：`docs/symbolic/symbolic-sphere-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [analogy only](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0e73682d381aae96 / analogy only
   - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
+  - 依赖：—；被引用：—
+- [Analogy-as-mechanism** — a `STRUCTURAL_ANALOGY` rewritten as a causal mechanism.](../../../docs/discovery/discovery-commitment-boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-43c700cb9ee297e1 / Analogy-as-mechanism** — a `STRUCTURAL_ANALOGY` rewritten as a causal mechanism.
+  - 来源：`docs/discovery/discovery-commitment-boundary.md`
+  - 依赖：—；被引用：—
+- [ANALOGY_AS_MECHANISM; commitment_candidate, not committed_current\)`. Q34's own gate rejects the](../../../docs/analogy/q37-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1e654076f061f2a7 / ANALOGY_AS_MECHANISM; commitment_candidate, not committed_current\)`. Q34's own gate rejects the
+  - 来源：`docs/analogy/q37-interfaces.md`
   - 依赖：—；被引用：—
 - [Answer: no. The repository contains many local causal components, downgrade gates, map boundaries, mechanism adjudicatio](../../../reports/architecture/121Q21R-causal-asset-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1708,6 +1818,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-c7c5c1d70c5dec44 / artifact;
   - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [At the original frozen head, the real CLI runs the checked-in pilot against `927cae48f3c65d3c23543dac4b9262704fabb6f1` a](../../../docs/analogy/121Q37-repair-r1-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1d10caf7be2c2493 / At the original frozen head, the real CLI runs the checked-in pilot against `927cae48f3c65d3c23543dac4b9262704fabb6f1` a
+  - 来源：`docs/analogy/121Q37-repair-r1-architecture.md`
   - 依赖：—；被引用：—
 - [Atlas explicitly records not_causality=true and says map position, visual proximity, stage, and dependency do not prove](../../../data/architecture/causal-asset-inventory.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2039,6 +2154,16 @@
   - 可搜索名称：NFC-5a0e1b41361af023 / calibration projection
   - 来源：`data/architecture/multiscale-causal-fabric/examples/ai-deployment.json`
   - 依赖：—；被引用：—
+- [Calibration/residual is **not** causal identification. Repository consistency is **not** real-world validity. No L7, no](../../../docs/observation/q36-obs-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d714fb46fd4b258c / Calibration/residual is **not** causal identification. Repository consistency is **not** real-world validity. No L7, no
+  - 来源：`docs/observation/q36-obs-architecture-decision.md`
+  - 依赖：—；被引用：—
+- [candidate claims shared restoring-force mechanism; downgraded by audit](../../../data/analogy/fixtures/10-mechanism-downgrade-pass.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-40e3ab7772b7e2ca / candidate claims shared restoring-force mechanism; downgraded by audit
+  - 来源：`data/analogy/fixtures/10-mechanism-downgrade-pass.json`
+  - 依赖：—；被引用：—
 - [Candidate coarse-graining example; does not claim macro always beats micro.](../../../data/architecture/probabilistic-system-dynamics/examples/coarse-graining-emergence.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b4c682552c46add1 / Candidate coarse-graining example; does not claim macro always beats micro.
@@ -2048,6 +2173,31 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b3c0d89dde8bd56c / candidate mechanism paths;
   - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [candidate_only: a single controlled, repository-local, deterministic replay of one fixture; does not assert the project](../../../data/intervention/fixtures/24-placeholder-digests-self-declared-authority.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7ce957b5f3077bf9 / candidate_only: a single controlled, repository-local, deterministic replay of one fixture; does not assert the project
+  - 来源：`data/intervention/fixtures/24-placeholder-digests-self-declared-authority.json`
+  - 依赖：—；被引用：—
+- [candidate_only: repository-native, evidence-bound, deterministically verifiable discovery-commitment boundary that separ](../../../reports/operations/121Q34-completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-021017fdb241c9cc / candidate_only: repository-native, evidence-bound, deterministically verifiable discovery-commitment boundary that separ
+  - 来源：`reports/operations/121Q34-completion-seal.json`
+  - 依赖：—；被引用：—
+- [candidate_only: repository-native, evidence-bound, deterministically verifiable observation-prediction calibration bound](../../../reports/operations/121Q36-OBS-completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-283e9c10021789e9 / candidate_only: repository-native, evidence-bound, deterministically verifiable observation-prediction calibration bound
+  - 来源：`reports/operations/121Q36-OBS-completion-seal.json`
+  - 依赖：—；被引用：—
+- [candidate_only: single controlled repo-local replay; no real-world causal claim](../../../data/intervention/fixtures/01-legal-controlled-dry-run.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7f1579cb13df11d / candidate_only: single controlled repo-local replay; no real-world causal claim
+  - 来源：`data/intervention/fixtures/01-legal-controlled-dry-run.json`
+  - 依赖：—；被引用：—
+- [candidate_only_repository_governance: The same object can be represented as separate material fact, actor position, mean](../../../reports/operations/SYMBOLIC-SPHERE-I1-completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3714f33640fb9bae / candidate_only_repository_governance: The same object can be represented as separate material fact, actor position, mean
+  - 来源：`reports/operations/SYMBOLIC-SPHERE-I1-completion-seal.json`
   - 依赖：—；被引用：—
 - [captured JSON fixtures and injected runners; `LIVE_SMOKE_NOT_RUN` because no](../../../docs/architecture/openclaw-adapter-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2309,6 +2459,11 @@
   - 可搜索名称：NFC-e12e385c3a4518d1 / claim_ceiling: "mechanism_plausible / causal_identification_pending / external_historical_verification_required"
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [claims a shared computational mechanism](../../../data/analogy/fixtures/07-mechanism-evidence-insufficient.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-73a72f0ff5d8d917 / claims a shared computational mechanism
+  - 来源：`data/analogy/fixtures/07-mechanism-evidence-insufficient.json`
+  - 依赖：—；被引用：—
 - [Claims that a mechanism is supported require discriminating evidence, alternative mechanism review, and a bounded claim](../../../docs/architecture/distribution-collapse-control-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ef0e3415b7f237cc / Claims that a mechanism is supported require discriminating evidence, alternative mechanism review, and a bounded claim
@@ -2348,159 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-e97dc1f7e46e966c / concurrent operational memory 和 Driver Console 先决定是否可 admission、路由、
   - 来源：`docs/architecture/external-agent-federation-r1.md`
-  - 依赖：—；被引用：—
-- [Conflicting causal models without adjudicating evidence.](../../../reports/architecture/121Q21R-causal-asset-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a66e90fd4ea81f7 / Conflicting causal models without adjudicating evidence.
-  - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
-  - 依赖：—；被引用：—
-- [Constraint execution and benchmark tests are explicit behavioral acceptance mechanisms, with clear evidence that their e](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-29b1be7c394af0fc / Constraint execution and benchmark tests are explicit behavioral acceptance mechanisms, with clear evidence that their e
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Corrected the Step 88 acceptance record before downstream use because the prior GLM card's legacy GAP meanings do not ma](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c39be51e74b6dfeb / Corrected the Step 88 acceptance record before downstream use because the prior GLM card's legacy GAP meanings do not ma
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [counterfactuals;](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ace68c445c0fcea9 / counterfactuals;
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
-  - 依赖：—；被引用：—
-- [D15 种子爆发后退出权信号的恢复（认知/恢复机制）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5fa1478b98c43c1e / D15 种子爆发后退出权信号的恢复（认知/恢复机制）
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D15；被引用：—
-- [D158是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-050b2d767dd0a4ee / D158是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158, D467, D468；被引用：—
-- [D173 显态粘性（`μ = R_retreat / C_exit`）描述撤退/退出成本粘性，机制不同。](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-17930fe535861fe7 / D173 显态粘性（`μ = R_retreat / C_exit`）描述撤退/退出成本粘性，机制不同。
-  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
-  - 依赖：D173；被引用：—
-- [D191是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a043bb3f278c5f1 / D191是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D191, D467, D468；被引用：—
-- [D2 锁定-遮蔽耦合（耦合机制）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4088ee508709a718 / D2 锁定-遮蔽耦合（耦合机制）
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D2；被引用：—
-- [D25 叙事冲击（社会机制，案例关联多）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-61213df158c6a53f / D25 叙事冲击（社会机制，案例关联多）
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D25；被引用：—
-- [D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（\[D258\]\(docs/zh/functions/items/D258.md](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-46aaaaf0e5dca8e6 / D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（\[D258\]\(docs/zh/functions/items/D258.md
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D258, D259；被引用：—
-- [D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\\Delta\\Phi_{ghost}\(t\) = \\Delta\\Phi_{max} \\cdot \\exp\\left\(-\\kappa \\cdot \\left\[\\i](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-16ef6e4352aaafa2 / D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\\Delta\\Phi_{ghost}\(t\) = \\Delta\\Phi_{max} \\cdot \\exp\\left\(-\\kappa \\cdot \\left\[\\i
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D384, P17；被引用：—
-- [D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓](../../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5ca2b6c0aaa532c6 / D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓
-  - 来源：`outputs/audit/teacher-competition-index-visibility-check-20260708.md`
-  - 依赖：D595；被引用：—
-- [D595：不声称所有绩效制度都导致裹挟，只描述关键待遇强绑定时形式退出权被削弱。](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-89b8cf34afccd5de / D595：不声称所有绩效制度都导致裹挟，只描述关键待遇强绑定时形式退出权被削弱。
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：D595；被引用：—
-- [D596 避风港关联「形式主义」为侵蚀源，但未定义「指标替代价值」机制。](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-22f66a89d25faa35 / D596 避风港关联「形式主义」为侵蚀源，但未定义「指标替代价值」机制。
-  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
-  - 依赖：D596；被引用：—
-- [D597 = 基底机制（价值替代结构）；](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-753efa97680df871 / D597 = 基底机制（价值替代结构）；
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D597；被引用：—
-- [D597 索引可见性通过。再决定是否处理 NF-004 或 NC-001/NC-002。](../../../outputs/audit/d597-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4dcb45e8582d8072 / D597 索引可见性通过。再决定是否处理 NF-004 或 NC-001/NC-002。
-  - 来源：`outputs/audit/d597-index-visibility-check-20260708.md`
-  - 依赖：D597；被引用：—
-- [D598 = 组织压力下群体形成的**适应性钝化稳态**（社会心理层、群体级）](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-01362bacf26aecff / D598 = 组织压力下群体形成的**适应性钝化稳态**（社会心理层、群体级）
-  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
-  - 依赖：D598；被引用：—
-- [D598 final adjudication](../../ASSET-CARDS.md#asset-hr-adeed1d734c70a83)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：D598 final adjudication / D598-final-adjudication-20260713
-  - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
-  - 依赖：—；被引用：—
-- [D598 系统性钝化**：组织压力下群体形成的**适应性钝化稳态**——社会心理层、群体级结构（长期高压使主体压低愧疚/抵抗感，异常状态日常化，群体形成低敏感/低反抗/低修复稳态）。](../../../outputs/audit/d598-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ef6ad9042ce7ca00 / D598 系统性钝化**：组织压力下群体形成的**适应性钝化稳态**——社会心理层、群体级结构（长期高压使主体压低愧疚/抵抗感，异常状态日常化，群体形成低敏感/低反抗/低修复稳态）。
-  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
-  - 依赖：D598；被引用：—
-- [D598 系统性钝化索引可见性验证](../../ASSET-CARDS.md#asset-hr-2e400b8fd7cc6b10)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：D598 系统性钝化索引可见性验证 / d598-index-visibility-check-20260708
-  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
-  - 依赖：—；被引用：—
-- [D598 系统性钝化索引可见性验证](../../../outputs/audit/d598-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8dee280ba8b232e1 / D598 系统性钝化索引可见性验证
-  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
-  - 依赖：D598；被引用：—
-- [D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cd8822eecdb329b1 / D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep
-  - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
-  - 依赖：D598；被引用：—
-- [D598｜系统性钝化](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D598 / D598｜系统性钝化
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：D598；被引用：—
-- [D599 编号、标题、机制式可召回（grep 全局命中）；](../../../outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4f1f0654f56c5125 / D599 编号、标题、机制式可召回（grep 全局命中）；
-  - 来源：`outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`
-  - 依赖：D599；被引用：—
-- [D601 的上游形成机制](../../../outputs/research/role-identity-collision-batches-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-763fd616a8219b41 / D601 的上游形成机制
-  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
-  - 依赖：D601；被引用：—
-- [d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41e2ddeece668586 / d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M01 / data/external-research/088-external-source-atlas-medium.jsonl / M01 / M02
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M02 / data/external-research/088-external-source-atlas-medium.jsonl / M02 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M03 / data/external-research/088-external-source-atlas-medium.jsonl / M03 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M04 / data/external-research/088-external-source-atlas-medium.jsonl / M04 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-b2797cd81f454a5f"></a>
+## IGNITION-20260824-138 — Step 10 Independent OS Validation Gate
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B2797CD81F454A5F` · [reports/operations/ignition-138-step10-independent-validation-gate.md](../../reports/operations/ignition-138-step10-independent-validation-gate.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260824-138 — Step 10 Independent OS Validation Gate？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** No new attempt returned a structured public result. The first Codex attempt was a bounded pre-inference startup failure; the second invocation was forbidden by the auth-source boundary. Consequently the Task138 independent fixture validator was not run against a live result, and no RETURNEDUNVALI…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-138-step10-independent-validation-gate.md`, `138-STEP10-INDEPENDENT-VALIDATION-GATE`
+- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260824-138 — Step 10 Independent OS Validation Gate`, `ignition-138-step10-independent-validation-gate`
+
+<a id="asset-hr-b3910e7a27e481ac"></a>
+## 生命共同体价值宪章
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B3910E7A27E481AC` · [docs/governance/life-community-value-charter.md](../../docs/governance/life-community-value-charter.md)
+- **为什么产生：** 此来源记录了什么：生命共同体价值宪章？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 本宪章是点火项目的规范性价值前提，用于约束元协议、函数、案例和理论生成结果的价值方向。它不构成经验性证据，不替代数学证明、实验验证、案例核验、外部学科审查或治理批准。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/life-community-value-charter.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `生命共同体价值宪章`, `life-community-value-charter`
+
+<a id="asset-hr-b3dbb7f4c3f52857"></a>
+## 新增注释 · 赛课机制下的教师生存困境
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B3DBB7F4C3F52857` · [outputs/collisions/20260708-teacher-competition/notes.md](../../outputs/collisions/20260708-teacher-competition/notes.md)
+- **为什么产生：** 此来源记录了什么：新增注释 · 赛课机制下的教师生存困境？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D499`, `D244`, `D173`, `D364`, `D423`
+- **来源与证据：** `outputs/collisions/20260708-teacher-competition/notes.md`, `202`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`
+- **可搜索名称：** `新增注释 · 赛课机制下的教师生存困境`, `notes`
+
 <a id="asset-hr-b42fdd29bfb492b0"></a>
 ## 故事化评分维度
 
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `IGNITION-20260907-159`, `task-IGNITION-20260907-159`
-
-<a id="asset-hr-cdbd2a8dabea0396"></a>
-## Canonical Protocol Validation Results
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CDBD2A8DABEA0396` · [outputs/protocol-canonical-validation-results.md](../../outputs/protocol-canonical-validation-results.md)
-- **为什么产生：** 此来源记录了什么：Canonical Protocol Validation Results？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** generatedat: 2026-07-10T20:50:00+08:00 ｜ count: 12
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/protocol-canonical-validation-results.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-17: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Canonical Protocol Validation Results`, `protocol-canonical-validation-results`
-
-<a id="asset-hr-cebe69c6d8db2c70"></a>
-## Transition semantic irreducibility and compile-away
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CEBE69C6D8DB2C70` · [docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md](../../docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md)
-- **为什么产生：** 此来源记录了什么：Transition semantic irreducibility and compile-away？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-09-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Transition semantic irreducibility and compile-away`, `transition-semantic-irreducibility-and-compile-away-2026-09-07`
-
-<a id="asset-hr-cf1f447fcd9c2e4b"></a>
-## IGNITION-20260827-143 Step 09 — Article B 对抗性编辑
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CF1F447FCD9C2E4B` · [reports/operations/ignition-143-step09-article-b-editorial-review.md](../../reports/operations/ignition-143-step09-article-b-editorial-review.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260827-143 Step 09 — Article B 对抗性编辑？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Article B 通过编辑复核并修订为 REVIEWEDCURRENTR1。它保留了实质性非 meta 文章的身份：正文讨论的是点火碰撞提出的“支持如何变成路径控制”问题，而不是介绍点火仓库如何工作。D600 仍被明确写成内部候选模型，不能被文章的完成度抬升为外部因果结论。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D600`
-- **来源与证据：** `reports/operations/ignition-143-step09-article-b-editorial-review.md`, `143-STEP09-ARTICLE-B-EDITORIAL-REVIEW`
-- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260827-143 Step 09 — Article B 对抗性编辑`, `ignition-143-step09-article-b-editorial-review`

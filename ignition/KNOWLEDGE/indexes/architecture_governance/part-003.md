@@ -4,6 +4,191 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Claim ceiling: this audit records repository-local baseline evidence only. It](../../../reports/operations/ignition-137-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9ad103c39a99509d / Claim ceiling: this audit records repository-local baseline evidence only. It
+  - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: this capsule is repository-local continuity and resume evidence only. It does not establish production re](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fc8dfae9e3db196e / Claim ceiling: this capsule is repository-local continuity and resume evidence only. It does not establish production re
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: this is bounded read-only reconciliation evidence. It does not](../../../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aa76b1085a2beffe / Claim ceiling: this is bounded read-only reconciliation evidence. It does not
+  - 来源：`reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: this step makes timeout evidence auditable and fail closed. It](../../../reports/operations/ignition-137-step02-timeout-process-closeout-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a1e90464ebce4c3 / Claim ceiling: this step makes timeout evidence auditable and fail closed. It
+  - 来源：`reports/operations/ignition-137-step02-timeout-process-closeout-r2.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I](../../ASSET-CARDS.md#asset-nfc-d12a007686070f3d)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `WITHDRAWN_UNSUPPORTED`
+  - 可搜索名称：NFC-d12a007686070f3d / Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. I / Claim ceiling: this task may establish repository governance, inventory and corrections to the current Ignition model. It cannot establish a new physics theory, solve four-force unification, validate the physics clouds, or prove grand unification possible or impossible.
+  - 来源：`reports/foundation-architecture/098-remote-truth-and-gap.md`
+  - 依赖：—；被引用：—
+- [claim ceilings but is not a second truth source.](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ddbedc86496b4613 / claim ceilings but is not a second truth source.
+  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
+- [Claim-ceiling breach** — e.g. "repository governance verified" inflated into "global legal compliance proven".](../../../docs/discovery/discovery-commitment-boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9d0b74041b3a3e73 / Claim-ceiling breach** — e.g. "repository governance verified" inflated into "global legal compliance proven".
+  - 来源：`docs/discovery/discovery-commitment-boundary.md`
+  - 依赖：—；被引用：—
+- [Claim:** every `crossref_verified: true` record resolves via Crossref with a](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f97b1bcca8bd510f / Claim:** every `crossref_verified: true` record resolves via Crossref with a
+  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
+  - 依赖：—；被引用：—
+- [claim_candidates: tuple\[Mapping\[str, Any\], ...\] = field\(default_factory=tuple\)](../../../reos_vnext/contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f727dc9e7f11a78d / claim_candidates: tuple\[Mapping\[str, Any\], ...\] = field\(default_factory=tuple\)
+  - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local AI-first Operating Method identity, interface, deterministic projection and validation e](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-74ea9ef9c6632dc5 / claim_ceiling: repository-local AI-first Operating Method identity, interface, deterministic projection and validation e
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local architecture, dispatch-boundary and observation-time evidence only; no external truth, p](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7629799c8ea31880 / claim_ceiling: repository-local architecture, dispatch-boundary and observation-time evidence only; no external truth, p
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local engineering closure and Owner production-handoff evidence only; no external truth, produ](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4e09fba67a523f1f / claim_ceiling: repository-local engineering closure and Owner production-handoff evidence only; no external truth, produ
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local engineering phase closure and Owner production-handoff evidence only; no external truth,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3a41bb2648e61ce9 / claim_ceiling: repository-local engineering phase closure and Owner production-handoff evidence only; no external truth,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Human Front Door folding, wording, validator, targeted regression and release-ready term](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-00691e6638f51af0 / claim_ceiling: repository-local Human Front Door folding, wording, validator, targeted regression and release-ready term
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capa](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d8cb1636b49fdb47 / claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capa
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bf1bc9243324afd1 / claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local phase parking and publication-production evidence only; no external truth, production re](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e8034b37155ad1e4 / claim_ceiling: repository-local phase parking and publication-production evidence only; no external truth, production re
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local README information architecture, Current-surface contract decoupling and targeted regres](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d63e1abce77221e5 / claim_ceiling: repository-local README information architecture, Current-surface contract decoupling and targeted regres
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-60deb9780a4e83e4 / claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-43f1c6ef54a37ba8 / claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task146 Human Front Door simplification, Current-surface contract decoupling, determinis](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-be7108240d0b1ef1 / claim_ceiling: repository-local Task146 Human Front Door simplification, Current-surface contract decoupling, determinis
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization and bou](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d30fb0c9849dd998 / claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization and bou
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization, target](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ae3089d399ee5018 / claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization, target
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task148 implementation, deterministic Current projection, declared-relation closure, off](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-425d1ee39ae0be4d / claim_ceiling: repository-local Task148 implementation, deterministic Current projection, declared-relation closure, off
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task148 post-merge Current synchronization, deterministic projections and publication-co](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-44ffb4c3a459c26f / claim_ceiling: repository-local Task148 post-merge Current synchronization, deterministic projections and publication-co
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bb586cd973539003 / claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: Task140 repository-local architecture registration, typed observation, reconciliation and bounded live-ad](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-108fd04a680ba380 / claim_ceiling: Task140 repository-local architecture registration, typed observation, reconciliation and bounded live-ad
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a0c1dd9cb95e8996 / claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-87ee9905723e8c1b / claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd7cc4e938e6b72a / claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ids = _validate_claims\(case.get\("claim_candidates"\), artifact_ids, "$.case.claim_candidates", issues\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-836bb32c0a071020 / claim_ids = _validate_claims\(case.get\("claim_candidates"\), artifact_ids, "$.case.claim_candidates", issues\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [claimed = r.get\("crossref_verified", False\)](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-39b5204e4ced9cdc / claimed = r.get\("crossref_verified", False\)
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [claimed_n = sum\(1 for r in records if r.get\("crossref_verified"\)\)](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e55270e73de42d54 / claimed_n = sum\(1 for r in records if r.get\("crossref_verified"\)\)
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
+  - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
+- [class EvidenceRequest:](../../../reos_vnext/contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
+  - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
+- [Classic Problems Benchmark Dataset](../../../data/schemas/classic_problems_benchmark.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2d5cf18b4ed756c1 / Classic Problems Benchmark Dataset
+  - 来源：`data/schemas/classic_problems_benchmark.schema.json`
+  - 依赖：—；被引用：—
+- [classic_problems_benchmark 数据结构](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cdf4220868dbb8d3 / classic_problems_benchmark 数据结构
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
 - [classic_problems_benchmark（34 条）— 无标题命中，验证未命中正常输出](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cb4845f9b43cac05 / classic_problems_benchmark（34 条）— 无标题命中，验证未命中正常输出
@@ -59,6 +244,11 @@
   - 可搜索名称：NFC-bb087ad668cf8452 / Commercial support does not promise features, delivery dates, endorsements, findings, governance power, or return on inv
   - 来源：`.github/SUPPORT.md`
   - 依赖：—；被引用：—
+- [commitment-candidate concept is absorbed; legacy example marks an entry 'committed' without current evidence re-verifica](../../../docs/discovery/q34-legacy-lab-salvage-matrix.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6ed9bc8cb4407541 / commitment-candidate concept is absorbed; legacy example marks an entry 'committed' without current evidence re-verifica
+  - 来源：`docs/discovery/q34-legacy-lab-salvage-matrix.json`
+  - 依赖：—；被引用：—
 - [compatibility and bounded failure behavior do not establish intelligence,](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f53b825e754a8478 / compatibility and bounded failure behavior do not establish intelligence,
@@ -103,6 +293,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ee8aa913f4bf869c / Compression must not hide missing evidence.
   - 来源：`docs/architecture/compression-integrity-gate.md`
+  - 依赖：—；被引用：—
+- [Compute a canonical claim-body SHA-256 from immutable semantic fields and exclude review attestations, evidence, state t](../../../docs/discovery/121Q34-repair-r1-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e2f3e1d8c306128d / Compute a canonical claim-body SHA-256 from immutable semantic fields and exclude review attestations, evidence, state t
+  - 来源：`docs/discovery/121Q34-repair-r1-architecture.md`
   - 依赖：—；被引用：—
 - [Concept definitions plus query/evidence expressions provide a concrete compositional stochastic-function specification.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2308,199 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C776FE4A99829C94 / def _sha256\(data: bytes\) -> str: / IMPLICIT-C776FE4A99829C94
   - 来源：`scripts/external-research/121_fetch_one.py`
-  - 依赖：—；被引用：—
-- [def _sha256\(path: Path\) -> str:](../../../scripts/external-research/fulltext_fetcher.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A97DE5A07AD23870 / def _sha256\(path: Path\) -> str: / IMPLICIT-A97DE5A07AD23870 / IMPLICIT-40B6290FB15D8275
-  - 来源：`scripts/external-research/fulltext_fetcher.py`
-  - 依赖：—；被引用：—
-- [def _sha256\(path: Path\) -> str:](../../../data/external-research/121-fulltext-resolver/121-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FA0CE7597470D981 / def _sha256\(path: Path\) -> str: / IMPLICIT-FA0CE7597470D981 / IMPLICIT-40B6290FB15D8275
-  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
-  - 依赖：—；被引用：—
-- [def _sha256\(value: Any, field: str\) -> str:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2F49FF8D1E6A7D0F / def _sha256\(value: Any, field: str\) -> str: / IMPLICIT-2F49FF8D1E6A7D0F
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _sha256_bytes\(value: bytes\) -> str:](../../../agent_federation/pilots.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1E786BFD70AC681B / def _sha256_bytes\(value: bytes\) -> str: / IMPLICIT-1E786BFD70AC681B / IMPLICIT-5EFFA036988D8E9C
-  - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [def _sha40\(value: Any, field: str\) -> None:](../../../agent_federation/local_executor_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3BBB68998FCE7F67 / def _sha40\(value: Any, field: str\) -> None: / IMPLICIT-3BBB68998FCE7F67
-  - 来源：`agent_federation/local_executor_census.py`
-  - 依赖：—；被引用：—
-- [def _shape\(argv: tuple\[str, ...\], workspace: Path\) -> tuple\[str, ...\]:](../../../agent_federation/live_preflight.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B7F0AC26402A2F0B / def _shape\(argv: tuple\[str, ...\], workspace: Path\) -> tuple\[str, ...\]: / IMPLICIT-B7F0AC26402A2F0B
-  - 来源：`agent_federation/live_preflight.py`
-  - 依赖：—；被引用：—
-- [def _source_hash\(text: str\) -> str:](../../../function-os-candidate/v0.2/function_os/importer/legacy_asset_importer.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-091EA6D38C429D58 / def _source_hash\(text: str\) -> str: / IMPLICIT-091EA6D38C429D58
-  - 来源：`function-os-candidate/v0.2/function_os/importer/legacy_asset_importer.py`
-  - 依赖：—；被引用：—
-- [def _stages_completed\(self, event_types: dict\) -> list:](../../../function-os-candidate/v0.1/function_os/n6_validation_feedback.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-88D23EB768AB2D6A / def _stages_completed\(self, event_types: dict\) -> list: / IMPLICIT-88D23EB768AB2D6A
-  - 来源：`function-os-candidate/v0.1/function_os/n6_validation_feedback.py`
-  - 依赖：—；被引用：—
-- [def _status_from_count\(calls: Any, started: Any\) -> str:](../../../agent_federation/live_state_dimensions.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BC672FEF9BD31E67 / def _status_from_count\(calls: Any, started: Any\) -> str: / IMPLICIT-BC672FEF9BD31E67
-  - 来源：`agent_federation/live_state_dimensions.py`
-  - 依赖：—；被引用：—
-- [def _strict\(data: Mapping\[str, Any\], keys: set\[str\], name: str\) -> None:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3FDBEB63F591FAF8 / def _strict\(data: Mapping\[str, Any\], keys: set\[str\], name: str\) -> None: / IMPLICIT-3FDBEB63F591FAF8 / IMPLICIT-7CDA1A534FC9D5FA
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _strict\(data: Mapping\[str, Any\], keys: set\[str\], name: str\) -> None:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7CDA1A534FC9D5FA / def _strict\(data: Mapping\[str, Any\], keys: set\[str\], name: str\) -> None: / IMPLICIT-7CDA1A534FC9D5FA / IMPLICIT-3FDBEB63F591FAF8
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def _string_sequence\(value: Any, path: str\) -> tuple\[str, ...\]:](../../../reos_vnext/kernel.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9F184BD636C48002 / def _string_sequence\(value: Any, path: str\) -> tuple\[str, ...\]: / IMPLICIT-9F184BD636C48002
-  - 来源：`reos_vnext/kernel.py`
-  - 依赖：—；被引用：—
-- [def _strings\(value: Any, field: str, *, nonempty: bool = False\) -> list\[str\]:](../../../agent_federation/local_executor_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BE8FA4F37168EAA9 / def _strings\(value: Any, field: str, *, nonempty: bool = False\) -> list\[str\]: / IMPLICIT-BE8FA4F37168EAA9
-  - 来源：`agent_federation/local_executor_census.py`
-  - 依赖：—；被引用：—
-- [def _strings\(value: Any, field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/router.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-71DC9BF9900E5463 / def _strings\(value: Any, field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-71DC9BF9900E5463 / IMPLICIT-8E03DE89FEB209DC
-  - 来源：`agent_federation/router.py`
-  - 依赖：—；被引用：—
-- [def _strings\(value: Any, field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8E03DE89FEB209DC / def _strings\(value: Any, field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-8E03DE89FEB209DC / IMPLICIT-71DC9BF9900E5463
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [def _strings\(value: Any, path: str, issues: list\[ValidationIssue\]\) -> None:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4C6DD63FD61A59E6 / def _strings\(value: Any, path: str, issues: list\[ValidationIssue\]\) -> None: / IMPLICIT-4C6DD63FD61A59E6
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [def _strings\(values: Sequence\[str\], field: str\) -> tuple\[str, ...\]:](../../../agent_federation/convergence.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A690AEC87491F0F2 / def _strings\(values: Sequence\[str\], field: str\) -> tuple\[str, ...\]: / IMPLICIT-A690AEC87491F0F2
-  - 来源：`agent_federation/convergence.py`
-  - 依赖：—；被引用：—
-- [def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-13A16F3F80BC03CB / def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-13A16F3F80BC03CB / IMPLICIT-4203A5B6669F05B9
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4203A5B6669F05B9 / def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-4203A5B6669F05B9 / IMPLICIT-13A16F3F80BC03CB
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/live_filesystem.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4C90342117EEA2B3 / def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-4C90342117EEA2B3 / IMPLICIT-13A16F3F80BC03CB
-  - 来源：`agent_federation/live_filesystem.py`
-  - 依赖：—；被引用：—
-- [def _summary\(text: str\) -> str:](../../../agent_federation/live_adapters.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B668580B899C6746 / def _summary\(text: str\) -> str: / IMPLICIT-B668580B899C6746
-  - 来源：`agent_federation/live_adapters.py`
-  - 依赖：—；被引用：—
-- [def _task137_accounting_policy\(\) -> AccountingPolicy:](../../../agent_federation/live_task137.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1A21A9B63FD8B00B / def _task137_accounting_policy\(\) -> AccountingPolicy: / IMPLICIT-1A21A9B63FD8B00B
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [def _task_prompt\(self, envelope: FederatedTaskEnvelope\) -> str:](../../../agent_federation/adapters/codex.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3C4DE833424EB621 / def _task_prompt\(self, envelope: FederatedTaskEnvelope\) -> str: / IMPLICIT-3C4DE833424EB621 / IMPLICIT-EC3EFADB10EF2053
-  - 来源：`agent_federation/adapters/codex.py`
-  - 依赖：—；被引用：—
-- [def _task_prompt\(self, envelope: FederatedTaskEnvelope\) -> str:](../../../agent_federation/adapters/hermes.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EC3EFADB10EF2053 / def _task_prompt\(self, envelope: FederatedTaskEnvelope\) -> str: / IMPLICIT-EC3EFADB10EF2053 / IMPLICIT-3C4DE833424EB621
-  - 来源：`agent_federation/adapters/hermes.py`
-  - 依赖：—；被引用：—
-- [def _telemetry\(value: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A8E3AABAD62245DA / def _telemetry\(value: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-A8E3AABAD62245DA
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _terminate_group\(](../../../agent_federation/live_transport.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CD8C59BD7BC626F2 / def _terminate_group\( / IMPLICIT-CD8C59BD7BC626F2
-  - 来源：`agent_federation/live_transport.py`
-  - 依赖：—；被引用：—
-- [def _text\(value: Any, field: str\) -> str:](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-09C3BE22EECB730B / def _text\(value: Any, field: str\) -> str: / IMPLICIT-09C3BE22EECB730B / IMPLICIT-0F199531E8C79F91
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [def _text\(value: Any, field: str\) -> str:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0F199531E8C79F91 / def _text\(value: Any, field: str\) -> str: / IMPLICIT-0F199531E8C79F91 / IMPLICIT-09C3BE22EECB730B
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def _text\(value: Any, field: str\) -> str:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B49F79523868467E / def _text\(value: Any, field: str\) -> str: / IMPLICIT-B49F79523868467E / IMPLICIT-09C3BE22EECB730B
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _text\(value: Any, field: str\) -> str:](../../../agent_federation/router.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D706BA9F4CC7FFC1 / def _text\(value: Any, field: str\) -> str: / IMPLICIT-D706BA9F4CC7FFC1 / IMPLICIT-09C3BE22EECB730B
-  - 来源：`agent_federation/router.py`
-  - 依赖：—；被引用：—
-- [def _text\(value: Any, field: str\) -> str:](../../../agent_federation/live_filesystem.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EC825BCC90442F78 / def _text\(value: Any, field: str\) -> str: / IMPLICIT-EC825BCC90442F78 / IMPLICIT-09C3BE22EECB730B
-  - 来源：`agent_federation/live_filesystem.py`
-  - 依赖：—；被引用：—
-- [def _thread_id\(events: Sequence\[Mapping\[str, Any\]\]\) -> str \| None:](../../../agent_federation/adapters/codex.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-20C3B1966F0DC87B / def _thread_id\(events: Sequence\[Mapping\[str, Any\]\]\) -> str \| None: / IMPLICIT-20C3B1966F0DC87B
-  - 来源：`agent_federation/adapters/codex.py`
-  - 依赖：—；被引用：—
-- [def _time\(value: str\) -> datetime:](../../../agent_federation/live_admission.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3CF01DEBE7FA71FB / def _time\(value: str\) -> datetime: / IMPLICIT-3CF01DEBE7FA71FB
-  - 来源：`agent_federation/live_admission.py`
-  - 依赖：—；被引用：—
-- [def _timestamp\(value: Any, field: str, *, allow_null: bool = False\) -> None:](../../../agent_federation/live_capture.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F1E929DCBF93086B / def _timestamp\(value: Any, field: str, *, allow_null: bool = False\) -> None: / IMPLICIT-F1E929DCBF93086B
-  - 来源：`agent_federation/live_capture.py`
-  - 依赖：—；被引用：—
-- [def _timestamp_or_marker\(value: Any, field: str, *, allow_not_applicable: bool = False\) -> None:](../../../agent_federation/live_attempt_ledger.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-BCC4972518EE8F84 / def _timestamp_or_marker\(value: Any, field: str, *, allow_not_applicable: bool = False\) -> None: / IMPLICIT-BCC4972518EE8F84
-  - 来源：`agent_federation/live_attempt_ledger.py`
-  - 依赖：—；被引用：—
-- [def _trace\(self, inputs\):](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FD7F21DC1210DE34 / def _trace\(self, inputs\): / IMPLICIT-FD7F21DC1210DE34
-  - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
-  - 依赖：—；被引用：—
-- [def _transport\(**kwargs: Any\) -> LiveProcessTransport:](../../../agent_federation/live_capture_fault_matrix.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2A731F1265E6D4D3 / def _transport\(**kwargs: Any\) -> LiveProcessTransport: / IMPLICIT-2A731F1265E6D4D3
-  - 来源：`agent_federation/live_capture_fault_matrix.py`
-  - 依赖：—；被引用：—
-- [def _transport_evidence\(process: Any, *, observed_at: str, timeout_seconds: float\) -> dict\[str, Any\]:](../../../agent_federation/live_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7F91AEB86D9109DB / def _transport_evidence\(process: Any, *, observed_at: str, timeout_seconds: float\) -> dict\[str, Any\]: / IMPLICIT-7F91AEB86D9109DB
-  - 来源：`agent_federation/live_execution.py`
-  - 依赖：—；被引用：—
-- [def _tree_digest\(root: Path\) -> str:](../../../agent_federation/live_filesystem_harness.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B6E96D46D3A396D8 / def _tree_digest\(root: Path\) -> str: / IMPLICIT-B6E96D46D3A396D8
-  - 来源：`agent_federation/live_filesystem_harness.py`
   - 依赖：—；被引用：—

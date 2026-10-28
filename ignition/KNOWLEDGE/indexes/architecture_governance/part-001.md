@@ -929,6 +929,11 @@
   - 可搜索名称：NFC-07758e408de84c68 / \("record-evidence-request", "append an evidence retrieval request"\),
   - 来源：`reos_vnext/cli.py`
   - 依赖：—；被引用：—
+- [\(`Q38_START_FORBIDDEN`, 19\). Q37 never performs Q38 case retrieval.](../../../docs/analogy/q37-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-424b46e2e7fb81d2 / \(`Q38_START_FORBIDDEN`, 19\). Q37 never performs Q38 case retrieval.
+  - 来源：`docs/analogy/q37-interfaces.md`
+  - 依赖：—；被引用：—
 - [\(EVIDENCE_DIR / f"{sid}.json"\).write_text\(](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-88f4bfffcb0a86b2 / \(EVIDENCE_DIR / f"{sid}.json"\).write_text\(
@@ -2497,10 +2502,5 @@
 - [_issue\(issues, "UNKNOWN_REF", f"{item_path}.{name}", "claim artifact reference is unknown"\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-34d09f657f7a446a / _issue\(issues, "UNKNOWN_REF", f"{item_path}.{name}", "claim artifact reference is unknown"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3e436859091f4829 / _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

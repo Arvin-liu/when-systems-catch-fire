@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-5a6642209467ff3a"></a>
+## IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report；Closure complete: true；Closure hash: 3332a4e7b8ed9e69b9c2ecfcbd6984d75ee4a8bae2aa77da2ddead4ba4d550d0；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, incrementalexecution, iteration, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, stagesnapshotpublication, summary, sync, systemmapprojection, usage；Resolved components: 16
+- 完整阅读：[reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md](../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
+
+<a id="reading-hr-5af412f645a35de0"></a>
+## IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable rea… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission；The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable read-only workspace, durable capture, exact validator binding, cle…；The live policy is explicit: at most two total synthetic/read-only attempts, at most one per family, child spawning denied, all channels/browser/remote-Git/configuration/billing effects denied, and immediate stop after the first exact validated completion. The result-binding contract requires task, dispatch, attempt, executor, family, lease, workspace, captu…；Step 04 contains only the contract and a blocked placeholder. It performs no executor probe or invocation. The contract and validator are ignition/data/operations/executor-admission-contract-r1.json and ignition/tools/validateexecutoradmissioncontract.py.
+- 完整阅读：[reports/operations/ignition-142-step04-admission-contract.md](../../reports/operations/ignition-142-step04-admission-contract.md)
+
+<a id="reading-hr-5b54a4719d10bbc2"></a>
+## 121Q8 Final Report
+`CANDIDATE_OR_PENDING_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q8 Final Report；Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.；Branch: governance/121q8-charter-sustainability-licensing-20260715；Base: ops/121q7-foundation-ci-mail-storm-repair-20260715；Base PR: #44, left OPEN / DRAFT / UNMERGED；Step commits before seal: 15 (000 through 014)
+- 完整阅读：[reports/governance/121Q8-final-report.md](../../reports/governance/121Q8-final-report.md)
+
 <a id="reading-hr-5bdd4bcb216b40fe"></a>
 ## ESI R0 experiment protocol
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
@@ -332,24 +353,3 @@
 - 1 分钟：PARTIALSEMANTICADJUDICATION. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：078 truth audit；PARTIALSEMANTICADJUDICATION.；The 078 621/622 number is not an independently verified semantic-review rate. Code inspection of adjudicatecore.py shows that all 622 registry classifications pass through one generator: 74 IDs use explicit dictionaries/branches and 548 use title, expression, keyword, or default regex branches. The resulting records then describe themselves as source-text re…；079 therefore records:；migration coverage: 622/622;；preclassification coverage: 622/622;
 - 完整阅读：[reports/foundation-architecture/078-truth-audit-20260713.md](../../reports/foundation-architecture/078-truth-audit-20260713.md)
-
-<a id="reading-hr-70403729fef8b50e"></a>
-## Non-Sycophancy Output Protocol
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: 121Q12OPERATIONOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Non-Sycophancy Output Protocol；Status: 121Q12OPERATIONOVERLAY；This protocol makes non-sycophancy a repository property rather than a tone preference.；An output must not raise claim strength because the user, maintainer, author, or proposer appears excited, certain, tired, urgent, or personally invested.；Agreement is allowed only when it is grounded in explicit criteria. Disagreement is not required as performance. The required action is calibration.；主题：Positive Claim Binding
-- 完整阅读：[docs/governance/non-sycophancy-output-protocol.md](../../docs/governance/non-sycophancy-output-protocol.md)
-
-<a id="reading-hr-70a0b0d3dd83948a"></a>
-## Representation Residual Casebook — IGNITION-20260906-158
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Representation Residual Casebook — IGNITION-20260906-158；The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement.；RR-001 is grounded in docs/meta-protocols/meta-protocol-64-combination-matrix.md and docs/meta-protocols/version-iteration-note-20260709.md.；RR-002 is grounded in the function and non-function adjudication paths.；RR-003 is grounded in ignition/tools/governance/gensourcefirstseen.py and its generated first-seen record.；RR-004 is grounded in the function-asset census, non-function adjudication, knowledge-experience builder, and fire-seed census.
-- 完整阅读：[docs/governance/representation-residual-casebook-2026-09-06.md](../../docs/governance/representation-residual-casebook-2026-09-06.md)
-
-<a id="reading-hr-70edc5860a2e57c8"></a>
-## 扩展注释 · 赛课机制下的教师生存困境
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：扩展注释 · 赛课机制下的教师生存困境；主题：适合扩展旧条目的内容（说明为什么不是新增条目）；主题：扩展 E1：扩展退出权函数族，新增「结构性不可拒绝」子类；对应旧条目：FUNC-L1-EXIT 退出权函数族（A4/A9/D499）。；扩展内容：现有退出权函数族描述个体「可感知退出权 → 退出概率」的显式机制，但未覆盖「法律可拒绝但待遇绑定使实际退出成本无限高」的隐性剥夺情形。赛课材料显示：青年教师并非无退出权，而是退出权被绩效/职称绑定「架空」。建议在退出权函数族中补「绑定强度 → 实际可拒绝性」维度。；为什么不是新增条目：这是退出权机制的细分维度扩展，不是独立新机制，应并入现有函数族而非新建。
-- 完整阅读：[outputs/collisions/20260708-teacher-competition/expanded-notes.md](../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
