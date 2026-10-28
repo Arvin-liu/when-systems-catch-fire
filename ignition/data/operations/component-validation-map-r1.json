@@ -64,20 +64,6 @@
       ]
     },
     {
-      "target_id": "g_foundation_formal_consumers",
-      "domain": "G",
-      "modules": [
-        "tests.foundation.test_foundation"
-      ],
-      "command_ids": [
-        "validate_l4_lean_foundation"
-      ],
-      "evidence": "The existing Foundation test suite consumes formal-object records and schemas, while the canonical Lean Foundation proof command validates the formal proof consumer boundary. One execution covers both registered consumers.",
-      "import_roots": [
-        "ignition"
-      ]
-    },
-    {
       "target_id": "g_foundation_argument_consumers",
       "domain": "G",
       "modules": [
@@ -90,6 +76,20 @@
         "ignition/tools/foundation"
       ],
       "evidence": "Existing Foundation claim-governance, nonfunction-closure, and corpus-admission tests validate L3 argument, claim, and source-admission boundaries."
+    },
+    {
+      "target_id": "g_foundation_formal_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.foundation.test_foundation"
+      ],
+      "command_ids": [
+        "validate_l4_lean_foundation"
+      ],
+      "evidence": "The existing Foundation test suite consumes formal-object records and schemas, while the canonical Lean Foundation proof command validates the formal proof consumer boundary. One execution covers both registered consumers.",
+      "import_roots": [
+        "ignition"
+      ]
     },
     {
       "target_id": "g_history_remediation_contract",
@@ -136,13 +136,113 @@
       ]
     },
     {
+      "target_id": "g_owner_agent_contract_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_agent_profile_r1",
+        "tests.test_agent_runtime_r0",
+        "tests.test_agent_runtime_r1",
+        "tests.test_pack_aware_routing",
+        "tests.test_pack_registry",
+        "tests.test_knowledge_corpus_admission",
+        "tests.test_knowledge_experience"
+      ],
+      "evidence": "Existing profile, runtime, pack-routing, pack-registry, corpus-admission, and Knowledge Experience consumer tests cover the Owner-to-agent boundary, domain-pack interface, and declared knowledge-pack surfaces.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_owner_external_executor_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_codex_adapter",
+        "tests.test_hermes_adapter",
+        "tests.test_openclaw_adapter",
+        "tests.test_federation_core",
+        "tests.test_federation_ownership",
+        "tests.test_federation_pilots",
+        "tests.test_federation_step12_adversarial",
+        "tests.test_executor_conformance",
+        "tests.test_live_admission",
+        "tests.test_live_bridge_contracts",
+        "tests.test_live_capture",
+        "tests.test_live_capture_fault_matrix",
+        "tests.test_live_codex_adapter",
+        "tests.test_live_hermes_adapter",
+        "tests.test_live_openclaw_adapter",
+        "tests.test_live_transport"
+      ],
+      "evidence": "Existing provider-neutral adapter, federation ownership, executor conformance, admission, live transport, and capture tests cover the declared executor and adapter boundaries without granting provider or remote-write authority.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_owner_lifecycle_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_durability_accounting",
+        "tests.test_durability_adversarial",
+        "tests.test_durability_compaction",
+        "tests.test_durability_continuity_pilot",
+        "tests.test_durability_dr_bundle",
+        "tests.test_durability_executor_admission",
+        "tests.test_durability_memory",
+        "tests.test_durability_migration",
+        "tests.test_durability_namespace",
+        "tests.test_durability_pack_lifecycle",
+        "tests.test_durability_projection_hygiene",
+        "tests.test_durability_recovery",
+        "tests.test_durability_revocation",
+        "tests.test_durability_snapshot",
+        "tests.test_durability_soft_governance",
+        "tests.test_durability_taxonomy",
+        "tests.test_event_ledger",
+        "tests.test_live_attempt_ledger",
+        "tests.test_live_current_projection",
+        "tests.test_live_observation_events",
+        "tests.test_live_observation_plane",
+        "tests.test_live_observation_semantics",
+        "tests.test_live_reconciliation",
+        "tests.test_live_reconciliation_events",
+        "tests.test_resource_arbitration",
+        "tests.test_steering_adversarial",
+        "tests.test_steering_capsule",
+        "tests.test_steering_commitments",
+        "tests.test_steering_completion",
+        "tests.test_steering_conflicts",
+        "tests.test_steering_console",
+        "tests.test_steering_drift",
+        "tests.test_steering_durability",
+        "tests.test_steering_episode_binding",
+        "tests.test_steering_goal_lifecycle",
+        "tests.test_steering_graph",
+        "tests.test_steering_intent_registry",
+        "tests.test_steering_memory_profile",
+        "tests.test_steering_namespace",
+        "tests.test_steering_ontology",
+        "tests.test_steering_pilot",
+        "tests.test_steering_priority",
+        "tests.test_steering_temporal",
+        "tests.test_steering_why_next"
+      ],
+      "evidence": "Existing durability, event-ledger, resource-arbitration, steering, live-observation, and reconciliation consumer tests validate the transitive lifecycle and obligation boundaries declared by the Owner-to-agent topology.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
       "target_id": "g_publication_consumers",
       "domain": "G",
       "modules": [
-        "tests.test_stage_snapshot_publication",
-        "tests.test_iteration_sync"
+        "tests.test_iteration_sync",
+        "tests.test_publication_gate_fail_closed",
+        "tests.test_publication_provenance_attack",
+        "tests.test_publication_witness",
+        "tests.test_stage_snapshot_publication"
       ],
-      "evidence": "These existing publication and synchronization consumer tests cover L6/iteration publication constraints.",
+      "evidence": "These existing publication and synchronization consumer tests cover L6/iteration publication constraints. Existing publication-gate, provenance-attack, and witness tests cover the writing/publication pack boundary.",
       "import_roots": [
         "ignition"
       ]
@@ -181,6 +281,17 @@
         "build_claim_browsers_check",
         "generate_overall_architecture_check"
       ],
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "r_owner_research_pack_consumers",
+      "domain": "R",
+      "modules": [
+        "tests.test_reos_vnext_minimal_kernel"
+      ],
+      "evidence": "The existing REOS vNext minimal-kernel test validates the bounded research-pack interface without activating an external research provider.",
       "import_roots": [
         "ignition"
       ]
@@ -600,6 +711,25 @@
       "evidence": "The registry assigns .github/README.md as the current-state and usage entry; typed relations connect the front door to current_state and knowledge surfaces, covered by the existing G front-door and O result-consumer suites."
     },
     {
+      "component_id": "owner_human",
+      "domains": [
+        "G",
+        "O",
+        "R"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers",
+        "r_owner_research_pack_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The homepage Owner/Human definition now states the system-wide self-check and self-revision principle. Its declared topology reaches agent identity, runtime, packs, lifecycle, and executor consumers; the effect spans governance, operations, and research, so the existing complete Foundation regression is required. This assignment controls validation only and grants no content, execution, or publication authority.",
+      "requires_full_regression": true
+    },
+    {
       "component_id": "research_workflow_slot",
       "domains": [
         "R"
@@ -661,6 +791,335 @@
       ],
       "requires_full_regression": true,
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "agent_kernel_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The Owner-to-profile topology reaches the generic identity/permission kernel; the existing agent profile/runtime consumer suite validates those boundaries."
+    },
+    {
+      "component_id": "agent_profile_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The Owner-to-profile relation directly affects identity and capability boundaries; existing profile and runtime tests validate the contract."
+    },
+    {
+      "component_id": "agent_runtime_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The runtime is the declared consumer of the generic agent kernel; existing R0/R1 runtime and pack-routing tests cover its boundaries."
+    },
+    {
+      "component_id": "codex_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_external_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The provider-neutral Codex adapter is downstream of the Owner/profile/runtime boundary; the existing adapter and federation consumer tests validate its restrictions."
+    },
+    {
+      "component_id": "domain_pack_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The Domain Pack manifest contract is downstream of the generic runtime boundary; existing pack registry and routing tests validate the no-escalation interface."
+    },
+    {
+      "component_id": "durability_lifecycle_r3",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_lifecycle_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The declared runtime lifecycle closure reaches durability; existing lifecycle, migration, recovery, revocation, and accounting tests validate that consumer."
+    },
+    {
+      "component_id": "event_ledger_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_lifecycle_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The declared runtime lifecycle closure reaches the append-only event ledger; its replay, integrity, and snapshot-tail tests validate this consumer."
+    },
+    {
+      "component_id": "executor_admission_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_external_executor_consumers",
+        "g_owner_lifecycle_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The declared executor closure reaches admission; existing admission, conformance, durability-admission, and live bridge tests validate the permission boundary."
+    },
+    {
+      "component_id": "hermes_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_external_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The provider-neutral Hermes adapter is downstream of the Owner/profile/runtime boundary; its typed-text and federation consumer tests validate the restriction."
+    },
+    {
+      "component_id": "knowledge_domain_pack",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The first knowledge pack is downstream of the Domain Pack contract; pack/routing tests and existing knowledge corpus and user-surface tests validate its interface and output."
+    },
+    {
+      "component_id": "live_executor_bridge_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_external_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The declared executor closure reaches the bounded live bridge; existing admission, transport, capture, and federation tests validate its authority ceiling."
+    },
+    {
+      "component_id": "live_observation_reconciliation_plane_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_external_executor_consumers",
+        "g_owner_lifecycle_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The live bridge closure reaches observation and reconciliation; existing live-observation and reconciliation tests validate unknown-effect and no-rerun boundaries."
+    },
+    {
+      "component_id": "maintenance_pack",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The maintenance pack is a Domain Pack consumer; existing pack-registry and routing tests validate its declared capabilities and no-escalation boundary."
+    },
+    {
+      "component_id": "nonknowledge_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The non-knowledge pilot is a runtime conformance consumer; the existing R0 runtime and pack-routing tests validate the domain-free boundary."
+    },
+    {
+      "component_id": "openclaw_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_external_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The provider-neutral OpenClaw adapter is downstream of the Owner/profile/runtime boundary; existing adapter and federation tests validate its constrained envelope."
+    },
+    {
+      "component_id": "reference_executor",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_external_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The frozen reference executor is the conformance/fallback consumer for federation; existing pilot and executor conformance tests validate the boundary."
+    },
+    {
+      "component_id": "research_pack_reos_light",
+      "domains": [
+        "R"
+      ],
+      "validation_targets": [
+        "r_owner_research_pack_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The REOS vNext LIGHT pack is a bounded research consumer; the existing minimal-kernel test validates its research-pack interface."
+    },
+    {
+      "component_id": "resource_arbitration_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_lifecycle_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The runtime lifecycle closure reaches resource arbitration; existing atomic acquire-many, lease, and conservative unknown-effect tests validate the consumer."
+    },
+    {
+      "component_id": "runtime_environment",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_agent_contract_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The runtime environment defines the tool and executor boundary consumed by the agent runtime; existing runtime and profile tests validate it."
+    },
+    {
+      "component_id": "steering_intent_obligation_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_owner_lifecycle_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The declared Owner/profile/runtime closure reaches steering and obligations; existing steering lifecycle, conflict, commitment, and provenance tests validate these boundaries."
+    },
+    {
+      "component_id": "writing_pack",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The writing method is a bounded publication pack; existing publication gate, provenance, witness, stage-publication, and iteration-sync tests validate its output boundary."
     }
   ]
 }
