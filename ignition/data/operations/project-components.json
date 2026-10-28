@@ -2207,8 +2207,38 @@
             "tests/test_component_release_authorization.py",
             "tests/test_history_remediation_contract.py"
         ]
+    },
+    {
+      "authority": "historical",
+      "canonical_target": "data/research/junction-vs-local-predicates-2026-09-06/verdict.json",
+      "component_id": "junction_vs_local_predicates_task157",
+      "component_type": "historical_asset",
+      "description": "Frozen Task157 repository-local comparison over synthetic fixtures; retains its bounded result and provenance without creating a current capability, canonical contract, authority, or external-validity claim.",
+      "label": "Task157 Junction Comparison",
+      "layer_or_overlay": "boundary",
+      "lifecycle": {
+        "source": "reports/governance/task-IGNITION-20260906-157.md",
+        "status": "historical",
+        "version": "Task157"
+      },
+      "map_projection": {
+        "no_change_reason": "The frozen historical experiment adds no current capability, system identity, lifecycle, navigation, or visible architecture node.",
+        "represented_by": "current_state",
+        "visible": false
+      },
+      "path_patterns": [
+        "agent-results/IGNITION-20260906-157-result.md",
+        "data/research/junction-vs-local-predicates-2026-09-06/",
+        "docs/governance/README.md",
+        "docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md",
+        "docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md",
+        "docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md",
+        "reports/governance/task-IGNITION-20260906-157.md",
+        "tests/test_junction_vs_local_predicates_task157.py",
+        "tools/research/junction_vs_local_predicates_task157.py"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.7.0"
+  "registry_version": "2.8.0"
 }

@@ -195,6 +195,17 @@
         "ignition/research_workflow"
       ],
       "evidence": "PR #259 candidate package tests: test_research_workflow.py covers the live CLI with OpenAlex and Crossref; test_pluggable_slot.py covers the independent offline/source-binding slot. The output receipts do not enter the canonical O human-knowledge surfaces."
+    },
+    {
+      "target_id": "r_task157_experiment_consumers",
+      "domain": "R",
+      "modules": [
+        "tests.test_junction_vs_local_predicates_task157"
+      ],
+      "import_roots": [
+        "ignition"
+      ],
+      "evidence": "The existing Task157 repository test checks the frozen synthetic corpus, deterministic scoring, negative controls, and metamorphic consistency; it does not establish external validity or a canonical contract."
     }
   ],
   "components": [
@@ -642,6 +653,20 @@
       ],
       "requires_full_regression": true,
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "junction_vs_local_predicates_task157",
+      "domains": [
+        "R"
+      ],
+      "validation_targets": [
+        "r_task157_experiment_consumers"
+      ],
+      "evidence": "The mapped paths belong to Task157's frozen historical comparison and repository receipts; this R-domain target validates those repository artifacts without routing them through the live PR #259 workflow or promoting the research verdict.",
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "HISTORICAL_ONLY"
+      ]
     }
   ]
 }
