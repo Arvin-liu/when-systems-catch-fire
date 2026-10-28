@@ -10,12 +10,12 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.9.10",
-    "topology_version": "1.14.1",
-    "layout_version": "2.5.0"
+    "component_registry_version": "2.9.11",
+    "topology_version": "1.14.2",
+    "layout_version": "2.6.0"
   },
   "layout": {
-    "columns": 3,
+    "columns": 4,
     "group_gap": 28,
     "group_header_height": 92,
     "group_width": 560,
@@ -45,7 +45,7 @@
     },
     {
       "color": "#0f766e",
-      "column": 2,
+      "column": 3,
       "description": "权威数据、形式门禁与可执行函数接口",
       "id": "core",
       "label": "基础核心",
@@ -93,7 +93,7 @@
     },
     {
       "color": "#475569",
-      "column": 2,
+      "column": 3,
       "description": "这是一张导航接口，不是完整性、因果或理论证明",
       "id": "boundaries",
       "label": "图的解释边界",
@@ -125,7 +125,7 @@
     },
     {
       "color": "#ea580c",
-      "column": 2,
+      "column": 3,
       "description": "Federation、provider-neutral admission 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
       "id": "federation",
       "label": "Federation / 外部手脚",

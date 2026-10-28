@@ -92,7 +92,7 @@
     {
       "surface": "data/architecture/interactive-system-map-layout.json",
       "decision": "CHANGE",
-      "reason": "arr added to models node_order; layout_version 1.1.0 -> 1.1.1."
+      "reason": "ARR node included; deterministic four-column repack isolates the dense governance group and moves layout_version 2.5.0 -> 2.6.0 while preserving the 0.22.0 map identity."
     },
     {
       "surface": "data/architecture/interactive-system-map.json",
@@ -100,9 +100,9 @@
       "reason": "Materialized map regenerated with arr node."
     },
     {
-      "surface": "docs/generated/ignition-system-architecture.svg",
+      "surface": "docs/generated/ignition-system-map.svg",
       "decision": "CHANGE",
-      "reason": "SVG regenerated with arr node."
+      "reason": "The registry-derived full system-map SVG is generated at its own path; SHA-256 2bc5f48af6b08d17b120213c1ab6ee09deea4361eb25265b47f7e32fd229a3f8. Task150 homepage SVG/HTML remain a separate byte-pinned pair."
     },
     {
       "surface": "data/operations/component-execution-profiles.json",
@@ -128,6 +128,106 @@
       "surface": "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
       "decision": "CHANGE",
       "reason": "Commit-5 evidence and known-limitations document added."
+    },
+    {
+      "surface": "docs/generated/ignition-system-architecture.svg",
+      "decision": "CHANGE",
+      "reason": "Restored the exact Task150-pinned homepage projection after separating the current registry-derived full map; published SVG SHA-256 remains a6261459164c2f1f8e0be289149197f81e7da4ae346db99b4c67e9dda6ce7c4b."
+    },
+    {
+      "surface": "docs/architecture/interactive-system-map.md",
+      "decision": "CHANGE",
+      "reason": "Documents the distinct Task150 homepage pair and current registry-derived full-map SVG, with generator and evidence boundaries."
+    },
+    {
+      "surface": "tools/generate_interactive_system_map.py",
+      "decision": "CHANGE",
+      "reason": "Generator writes the registry-derived full map to ignition-system-map.svg and checks the fixed homepage SVG/HTML pair independently."
+    },
+    {
+      "surface": "tools/validate_system_map_geometry.py",
+      "decision": "CHANGE",
+      "reason": "Geometry validation now names the registry-derived full-map SVG path; geometry report refreshed for the 115-node, 95-edge map."
+    },
+    {
+      "surface": "data/architecture/system-map-geometry-quality-r1.json",
+      "decision": "CHANGE",
+      "reason": "Deterministic geometry report regenerated; PASS at height=3044, blank-area reduction=0.8866906475, crossings=176, mobile viewports=2."
+    },
+    {
+      "surface": "tools/governance/validate_human_surface_contract.py",
+      "decision": "CHANGE",
+      "reason": "Human-surface contract validates the current full-map artifact while separately checking the Task150 homepage projection."
+    },
+    {
+      "surface": "tools/governance/validate_human_visibility.py",
+      "decision": "CHANGE",
+      "reason": "Repository full-map SVG is allowed as a current surface; retired Pages routes and deployment assets remain prohibited."
+    },
+    {
+      "surface": "tools/governance/build_knowledge_experience.py",
+      "decision": "CHANGE",
+      "reason": "Removed legacy rewrite that redirected a valid current full-map link to the distinct homepage projection."
+    },
+    {
+      "surface": "data/architecture/current-facts.json",
+      "decision": "CHANGE",
+      "reason": "Current facts regenerated from the updated component, topology, and layout authorities."
+    },
+    {
+      "surface": "docs/architecture/current-facts.md",
+      "decision": "CHANGE",
+      "reason": "Generated current-facts prose refreshed from canonical registries and the current layout version."
+    },
+    {
+      "surface": "data/governance/human-surface/materiality-manifest.json",
+      "decision": "CHANGE",
+      "reason": "Human-surface source fingerprints refreshed after the project-current-state summary update."
+    },
+    {
+      "surface": "docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
+      "decision": "CHANGE",
+      "reason": "Regenerated source fingerprint for the updated project-current-state summary."
+    },
+    {
+      "surface": "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
+      "decision": "CHANGE",
+      "reason": "Regenerated source fingerprint for the updated project-current-state summary."
+    },
+    {
+      "surface": "docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md",
+      "decision": "CHANGE",
+      "reason": "Regenerated source fingerprint for the updated project-current-state summary."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/asset-cards.jsonl",
+      "decision": "CHANGE",
+      "reason": "Knowledge Experience cards regenerated through the official builder after recognizing the separate current full-map link and updated summary provenance."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/layered-reading.jsonl",
+      "decision": "CHANGE",
+      "reason": "Layered-reading outputs regenerated through the official Knowledge Experience builder."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/search-index.jsonl",
+      "decision": "CHANGE",
+      "reason": "Search index regenerated through the official Knowledge Experience builder."
+    },
+    {
+      "surface": "data/governance/knowledge-experience/manifest.json",
+      "decision": "CHANGE",
+      "reason": "Knowledge Experience manifest regenerated from canonical sources and current human-surface fingerprints."
+    },
+    {
+      "surface": "KNOWLEDGE/reading-layers/part-011.md",
+      "decision": "CHANGE",
+      "reason": "Human reading-layer shard regenerated from the current Knowledge Experience projection."
+    },
+    {
+      "surface": "data/foundation/repository-path-classification/classification-manifest.jsonl",
+      "decision": "CHANGE",
+      "reason": "Repository-path classification manifest regenerated from the 5411-file live tree; all 10 checks pass and no path is unresolved."
     }
   ],
   "changed_surfaces": [
@@ -136,18 +236,38 @@
     "data/operations/change-propagation-topology.json",
     "data/architecture/interactive-system-map-layout.json",
     "data/architecture/interactive-system-map.json",
-    "docs/generated/ignition-system-architecture.svg",
+    "docs/generated/ignition-system-map.svg",
     "data/operations/component-execution-profiles.json",
     "tools/validate_human_front_door.py",
     ".github/workflows/foundation-validation.yml",
-    "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md"
+    "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
+    "docs/generated/ignition-system-architecture.svg",
+    "docs/architecture/interactive-system-map.md",
+    "tools/generate_interactive_system_map.py",
+    "tools/validate_system_map_geometry.py",
+    "data/architecture/system-map-geometry-quality-r1.json",
+    "tools/governance/validate_human_surface_contract.py",
+    "tools/governance/validate_human_visibility.py",
+    "tools/governance/build_knowledge_experience.py",
+    "data/architecture/current-facts.json",
+    "docs/architecture/current-facts.md",
+    "data/governance/human-surface/materiality-manifest.json",
+    "docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
+    "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
+    "docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md",
+    "data/governance/knowledge-experience/asset-cards.jsonl",
+    "data/governance/knowledge-experience/layered-reading.jsonl",
+    "data/governance/knowledge-experience/search-index.jsonl",
+    "data/governance/knowledge-experience/manifest.json",
+    "KNOWLEDGE/reading-layers/part-011.md",
+    "data/foundation/repository-path-classification/classification-manifest.jsonl"
   ],
   "validation": {
     "local": [
       {
         "name": "arr_r1_scaffold_sync",
         "status": "PASS",
-        "evidence": "repo-native validators (front-door, iteration_sync, system-map --check) pass after map/registry/CI sync"
+        "evidence": "repo-native checks pass: 149 focused pytest cases plus 42 subtests; system map has 115 nodes/95 typed edges at SHA-256 2bc5f48af6b08d17b120213c1ab6ee09deea4361eb25265b47f7e32fd229a3f8; geometry PASS (height=3044, blank-area reduction=0.8866906475, crossings=176, both mobile viewports fit); Task150 homepage SVG SHA-256 a6261459164c2f1f8e0be289149197f81e7da4ae346db99b4c67e9dda6ce7c4b and paired HTML SHA-256 da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45 remain byte-pinned; path classification covers 5411 paths with zero unresolved; human-surface contract, visibility, and front-door checks pass."
       }
     ],
     "remote": [],

@@ -1,5 +1,5 @@
 {
-  "topology_version": "1.14.1",
+  "topology_version": "1.14.2",
   "purpose": "Typed declared relations for repository change propagation and map projection. Substantive causal candidates remain informational unless separately evidenced in MCF.",
   "relation_classes": [
     "derives",
@@ -2909,7 +2909,7 @@
         "human_knowledge_surfaces"
       ],
       "path_patterns": [
-        "docs/generated/ignition-system-architecture.svg"
+        "docs/generated/ignition-system-map.svg"
       ],
       "rationale": "The generated repository SVG is both a human-readable navigation asset and a system-map projection product."
     },

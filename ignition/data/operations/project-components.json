@@ -101,9 +101,9 @@
         "system_map_projection"
       ],
       "path_patterns": [
-        "docs/generated/ignition-system-architecture.svg"
+        "docs/generated/ignition-system-map.svg"
       ],
-      "reason": "human_knowledge_surfaces owns readable repository navigation while system_map_projection owns the generated SVG under docs/generated/."
+      "reason": "human_knowledge_surfaces owns the readable navigation asset while system_map_projection owns the registry-derived full-map SVG."
     },
     {
       "authority_source": "FOUNDATION.md",
@@ -961,6 +961,7 @@
         "data/governance/knowledge-experience/",
         "data/governance/self-correction/",
         "docs/generated/ignition-system-architecture.svg",
+        "docs/generated/ignition-system-map.svg",
         "docs/governance/human-surface-editorial-contract.md",
         "docs/human/function-assets/",
         "docs/human/nonfunction-assets/",
@@ -1397,23 +1398,22 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map_projection",
       "component_type": "repository_infrastructure",
-      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.5.0 是当前唯一完整总架构图，0.4.0 与 0.3.0 为 Historical 权威链。",
-      "label": "系统图 0.5 唯一完整投影派生基础设施",
+      "description": "由 component registry、topology 与 layout overlay 确定性派生的完整机器系统图；与 Task150 验证的首页高层架构图分开发布。",
+      "label": "当前系统图投影派生基础设施",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "tools/generate_interactive_system_map.py",
         "status": "current",
-        "version": "0.5.0"
+        "version": "0.22.0"
       },
       "map_projection": {
-        "no_change_reason": "完整 SVG 自身是全图投影，不应再作为图中的自指节点。",
+        "no_change_reason": "完整系统图 SVG 是派生全图，不应再作为图中的自指节点。",
         "represented_by": "sync",
         "visible": false
       },
       "path_patterns": [
         "data/architecture/interactive-system-map.json",
-        "docs/generated/ignition-system-architecture.svg",
-        "docs/generated/ignition-system-architecture.html",
+        "docs/generated/ignition-system-map.svg",
         "tools/generate_interactive_system_map.py",
         "tools/validate_human_front_door.py",
         "tests/test_human_front_door.py",
@@ -3256,5 +3256,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.10"
+  "registry_version": "2.9.11"
 }

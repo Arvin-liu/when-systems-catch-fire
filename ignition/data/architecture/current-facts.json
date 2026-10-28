@@ -10,7 +10,7 @@
       "current_map_version": "0.22.0",
       "hidden_components": 18,
       "historical_map_version": "0.14.0",
-      "layout_version": "2.5.0",
+      "layout_version": "2.6.0",
       "registry_components": 133,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
@@ -233,7 +233,7 @@
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "8c42c67c2e68fa70f964ff6f62c731502462c88b70ae2f5364235de5e8ba9cf9"
+      "sha256": "1b3421ccb9f54b17b6e34b53e9c6830ed7e3b1163ae0987e25e3dea315431de1"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -257,7 +257,7 @@
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "b099e7f869cd9711b028d0de9d995a9d1afade5c96c5ce7abb8cf3124f782884"
+      "sha256": "de6740369db1397e724bb2d61d1f2152ecd977704a41312f0ffd159d9df4f5a8"
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "82d814c5dc15cdc1997a702603a38dfe569dfdce1cd2291c0f4dabe57b0fee2f"
+      "sha256": "3513f2f5954a134c9c2752f8b8ad328c5a41bb6720536ac6d05ed54b3c2f33d0"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
