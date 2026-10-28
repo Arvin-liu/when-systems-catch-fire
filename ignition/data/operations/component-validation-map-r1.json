@@ -105,8 +105,8 @@
       "domain": "G",
       "modules": [
         "ignition.tests.test_human_front_door",
-        "tests.test_overall_architecture",
-        "tests.test_generated_output_authority"
+        "ignition.tests.test_overall_architecture",
+        "ignition.tests.test_generated_output_authority"
       ],
       "evidence": "These existing tests cover the registered no-L7 and system-map/front-door projection constraints.",
       "import_roots": [
