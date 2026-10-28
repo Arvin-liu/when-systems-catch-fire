@@ -13,13 +13,14 @@
         "tests.test_component_release_authorization",
         "tests.test_release_transaction_protocol",
         "tests.test_release_transaction_protocol_r3",
+        "tests.test_release_candidate_task_identity",
         "tests.test_component_profiles",
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
         "tests.test_production_execution_authority",
         "tests.foundation.test_trigger_coverage"
       ],
-      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
+      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence. The release-candidate task-identity test binds the candidate task, lineage, lifecycle, snapshot and PR branch metadata to the same G release-control boundary.",
       "import_roots": [
         "ignition"
       ]

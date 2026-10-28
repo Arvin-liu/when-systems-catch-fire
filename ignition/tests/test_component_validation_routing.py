@@ -179,6 +179,14 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         reason = next(x for x in result["full_regression_reasons"] if x["kind"] == "validation_target_changed")
         self.assertEqual(reason["paths"], ["research_workflow/test_pluggable_slot.py"])
 
+    def test_release_candidate_task_identity_test_routes_to_release_controls(self):
+        result = self.plan(["tests/test_release_candidate_task_identity.py"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], [])
+        self.assertEqual(result["selected_target_ids"], ["g_component_release_controls"])
+        self.assertEqual(result["changed_validation_test_targets"], ["g_component_release_controls"])
+        self.assertEqual(result["domains"], ["G"])
+
     def test_registered_consumer_test_alone_routes_to_full_without_unknown_path(self):
         result = self.plan(["research_workflow/test_research_workflow.py"])
         self.assertEqual(result["mode"], "FULL")
