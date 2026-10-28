@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/heldout/r0.3/successor-visible/successor-output-r0.3.schema.json",
+  "title": "R0.3 Successor Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "case_responses"],
+  "properties": {
+    "schema_version": {"const": "successor-output-r0.3"},
+    "task_id": {"const": "IGNITION-20260918-182-R3"},
+    "case_responses": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/case_response"},
+      "allOf": [
+        {
+          "contains": {"properties": {"case_id": {"const": "IGNITION-20260918-187-EXP-01"}}, "required": ["case_id"]},
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {"properties": {"case_id": {"const": "IGNITION-20260918-187-GOV-01"}}, "required": ["case_id"]},
+          "minContains": 1,
+          "maxContains": 1
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "case_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_id", "account", "uncertainties", "additional_evidence_needed"],
+      "properties": {
+        "case_id": {"enum": ["IGNITION-20260918-187-EXP-01", "IGNITION-20260918-187-GOV-01"]},
+        "account": {"type": "string", "minLength": 1},
+        "uncertainties": {"type": "array", "items": {"type": "string"}},
+        "additional_evidence_needed": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

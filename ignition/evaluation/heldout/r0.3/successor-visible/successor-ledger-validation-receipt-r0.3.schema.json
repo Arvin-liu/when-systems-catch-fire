@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/heldout/r0.3/successor-visible/successor-ledger-validation-receipt-r0.3.schema.json",
+  "title": "Successor Ledger Validation Receipt R0.3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "protocol_version",
+    "receipt_kind",
+    "evidence_scope",
+    "final_validator_scope",
+    "ledger_state",
+    "ledger_sha256",
+    "manifest_sha256",
+    "closed_entry_count",
+    "closed_summary",
+    "validator_component_id",
+    "validator_source_sha256",
+    "read_ledger_schema_sha256",
+    "validator_status",
+    "receipt_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "successor-ledger-validation-receipt-r0.3"},
+    "task_id": {"const": "IGNITION-20260918-182-R3"},
+    "protocol_version": {"const": "r0.3"},
+    "receipt_kind": {"const": "DETERMINISTIC_LOCAL_ATTESTATION_NOT_SIGNATURE"},
+    "evidence_scope": {"const": "CERTIFIED_LEDGER_SCOPE"},
+    "final_validator_scope": {"const": "FINAL_VALIDATOR_OUTSIDE_CERTIFIED_LEDGER_SCOPE"},
+    "ledger_state": {"const": "PRE_FINAL_VALIDATION_CLOSED"},
+    "ledger_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "closed_entry_count": {"type": "integer", "minimum": 0},
+    "closed_summary": {"$ref": "#/$defs/summary"},
+    "validator_component_id": {"const": "final-read-ledger-validator-r0.3"},
+    "validator_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "read_ledger_schema_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "validator_status": {"enum": ["PASS_READ_LEDGER_CLEAN", "FAIL_READ_LEDGER_CONTAMINATED"]},
+    "receipt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cognitive_reads",
+        "operational_executions",
+        "operational_status_observations",
+        "prohibited_cognitive_reads",
+        "contaminated_entries"
+      ],
+      "properties": {
+        "cognitive_reads": {"type": "integer", "minimum": 0},
+        "operational_executions": {"type": "integer", "minimum": 0},
+        "operational_status_observations": {"type": "integer", "minimum": 0},
+        "prohibited_cognitive_reads": {"type": "integer", "minimum": 0},
+        "contaminated_entries": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

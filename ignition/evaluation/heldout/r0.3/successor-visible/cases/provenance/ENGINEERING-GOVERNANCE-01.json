@@ -1,0 +1,18 @@
+{
+  "schema_version": "synthetic-case-provenance-r0.3",
+  "task_id": "IGNITION-20260918-187",
+  "case_id": "IGNITION-20260918-187-GOV-01",
+  "category": "ENGINEERING_GOVERNANCE",
+  "source_kind": "ORIGINAL_SYNTHETIC_AUTHORING",
+  "synthetic": true,
+  "external_sources_used": false,
+  "real_personal_data_used": false,
+  "derived_from": [],
+  "source_path": "ignition/evaluation/heldout/r0.3/successor-visible/cases/ENGINEERING-GOVERNANCE-01.md",
+  "source_sha256": "5d30785684bbc86a112b6d5b2fea2d7bcfc1e8b9765f6547aa4d4c0b4d11eaf1",
+  "contains_gold_ir": false,
+  "contains_expected_relations": false,
+  "contains_expected_continuation": false,
+  "contains_evaluator_answer": false,
+  "authoring_note": "Independently written bounded fictional relay-change notes; no real systems, people, records, or external material were used."
+}

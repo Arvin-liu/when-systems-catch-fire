@@ -1,0 +1,18 @@
+{
+  "schema_version": "synthetic-case-provenance-r0.3",
+  "task_id": "IGNITION-20260918-187",
+  "case_id": "IGNITION-20260918-187-EXP-01",
+  "category": "CONTENT_EXPERIENCE_RESEARCH",
+  "source_kind": "ORIGINAL_SYNTHETIC_AUTHORING",
+  "synthetic": true,
+  "external_sources_used": false,
+  "real_personal_data_used": false,
+  "derived_from": [],
+  "source_path": "ignition/evaluation/heldout/r0.3/successor-visible/cases/EXPERIENCE-RESEARCH-01.md",
+  "source_sha256": "f420e4c0062155f028e27cfcbebb2078cbed92161b855bb03038f6fccb9413a9",
+  "contains_gold_ir": false,
+  "contains_expected_relations": false,
+  "contains_expected_continuation": false,
+  "contains_evaluator_answer": false,
+  "authoring_note": "Independently written bounded fictional room-experience notes; no real people, personal records, or external material were used."
+}

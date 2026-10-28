@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 614 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 619 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,71 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task182-R2 R0.2 Failure Receipt](../reports/evaluations/ignition-187-r0-3-protocol-repair/task182-r2-failure-receipt-r0.2.md)
+
+- **结果 ID：** `HR-0977D97975796683`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `187-R0-3-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：Task182-R2 R0.2 Failure Receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This receipt records only the Owner/GPT minimum failure summary embedded in Arvin-liu/1111/agent-commands/IGNITION-20260918-187.md at main, blob 92d0719c2c9d25f4d51c97f62fecd4fa87c37a6c. It does not use or reproduce Task182-R2's local case records, read ledger, packet manifest, or case contents.…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260918-187 R0.3 Trial Handoff](../reports/evaluations/ignition-187-r0-3-protocol-repair/r0-3-trial-handoff.md)
+
+- **结果 ID：** `HR-B08E573848450D5E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `187-R0-3-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：IGNITION-20260918-187 R0.3 Trial Handoff？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Synthetic, schema-valid ledgers reproduce several independent causes of FAILREADLEDGERINVALID, including summary, disposition, and manifest mismatches. A separate synthetic closure sequence reproduces a protocol self-reference if the final validator invocation and returned status must be written…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.2 FAILREADLEDGERINVALID: synthetic reproduction](../reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.md)
+
+- **结果 ID：** `HR-0D8A5D60D9DA673E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `187-R0-3-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：R0.2 FAILREADLEDGERINVALID: synthetic reproduction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source checkout: Arvin-liu/when-systems-catch-fire@047fb0ef0b4a734e42efb4a29b4e70b831ef0be4.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.3 Evaluation-Plane Isolation and Fixed Point](../reports/evaluations/ignition-187-r0-3-protocol-repair/evaluation-plane-isolation-fixed-point.md)
+
+- **结果 ID：** `HR-BAD37D033AE6FB78`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `187-R0-3-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：R0.3 Evaluation-Plane Isolation and Fixed Point？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task187 reuses the existing Task181/182-R1 repository path-classification engine and Knowledge admission policy. It creates no parallel candidate or promotion framework.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R0.3 Complexity Budget](../reports/evaluations/ignition-187-r0-3-protocol-repair/complexity-budget.md)
+
+- **结果 ID：** `HR-D764D86A60A2D43A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `187-R0-3-PROTOCOL-REPAIR`
+- **问题：** 此来源记录了什么：R0.3 Complexity Budget？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Compared with the stable Task182-R1 starting head, the Task187 branch contains 37 changed paths and 3,456 added lines. The line count includes the required new successor packet, two synthetic case sources and provenance files, five Task187 test modules, protocol and control documentation, and syn…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -27,3 +27,17 @@ key or evaluation criteria are authored by the Builder.
 Evaluation evidence remains noncanonical by default. This work does not
 promote any evaluation record to a Foundation claim or asset, and makes no
 general cognitive-inheritance claim.
+
+## R0.3 ledger closure
+
+R0.3 supersedes R0.2 only for final read-ledger closure. The R0.3 contract
+separates `CERTIFIED_LEDGER_SCOPE` from `FINAL_ATTESTATION_SURFACE`, freezes
+ledger bytes at `PRE_FINAL_VALIDATION_CLOSED`, and binds the final validator
+status in a deterministic receipt outside the ledger. R0.2 artifacts remain
+historical. See `r0.3-ledger-closure-protocol.md`, the R0.3 packet schemas,
+and `tools/finalize_successor_read_ledger_r0_3.py`.
+
+R0.3 uses a versioned task authorization schema, branch guard, and hook path
+for the new held-out trial. Its source and finite status vocabulary are
+operational controls, not cognitive evidence; see
+`operational-control/r0.3/README.md`.

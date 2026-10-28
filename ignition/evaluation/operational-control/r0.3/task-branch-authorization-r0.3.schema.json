@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/operational-control/r0.3/task-branch-authorization-r0.3.schema.json",
+  "title": "Task-Scoped Branch Authorization Receipt R0.3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authority",
+    "repository_full_name",
+    "task_id",
+    "authorized_base_head",
+    "authorized_branch",
+    "expected_push_remote",
+    "expected_push_url",
+    "public_noreply_identity",
+    "allowed_operation_class"
+  ],
+  "properties": {
+    "schema_version": {"const": "task-branch-authorization-r0.3"},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_kind", "command_repository_full_name", "command_path", "command_ref", "command_blob_sha"],
+      "properties": {
+        "source_kind": {"enum": ["USER_AUTHORIZED_TASK_COMMAND", "TEST_FIXTURE"]},
+        "command_repository_full_name": {"type": "string", "minLength": 1},
+        "command_path": {"type": "string", "minLength": 1},
+        "command_ref": {"type": "string", "pattern": "^[0-9a-f]{40,64}$"},
+        "command_blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40,64}$"}
+      }
+    },
+    "repository_full_name": {"const": "Arvin-liu/when-systems-catch-fire"},
+    "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}-R[0-9]+$"},
+    "authorized_base_head": {"type": "string", "pattern": "^[0-9a-f]{40,64}$"},
+    "authorized_branch": {"type": "string", "pattern": "^work/IGNITION-[0-9]{8}-[0-9]{3}-r[0-9]+-[a-z0-9-]+$"},
+    "expected_push_remote": {"const": "origin"},
+    "expected_push_url": {"type": "string", "pattern": "^(https://github\\.com/Arvin-liu/when-systems-catch-fire\\.git|git@github\\.com:Arvin-liu/when-systems-catch-fire\\.git)$"},
+    "public_noreply_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["login", "email"],
+      "properties": {
+        "login": {"type": "string", "pattern": "^[A-Za-z0-9-]+$"},
+        "email": {"type": "string", "pattern": "^[0-9]+\\+[^@]+@users\\.noreply\\.github\\.com$"}
+      }
+    },
+    "allowed_operation_class": {"const": "TASK_BRANCH_COMMIT_AND_PUSH"}
+  }
+}

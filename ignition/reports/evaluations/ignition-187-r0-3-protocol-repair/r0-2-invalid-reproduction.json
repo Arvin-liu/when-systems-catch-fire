@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "expected_status": "FAIL_READ_LEDGER_INVALID",
+      "fixture_id": "schema-valid-summary-mismatch",
+      "observed_status": "FAIL_READ_LEDGER_INVALID",
+      "schema_valid": true,
+      "synthetic": true
+    },
+    {
+      "expected_status": "FAIL_READ_LEDGER_INVALID",
+      "fixture_id": "schema-valid-trial-disposition-mismatch",
+      "observed_status": "FAIL_READ_LEDGER_INVALID",
+      "schema_valid": true,
+      "synthetic": true
+    },
+    {
+      "expected_status": "FAIL_READ_LEDGER_INVALID",
+      "fixture_id": "schema-valid-row-disposition-mismatch",
+      "observed_status": "FAIL_READ_LEDGER_INVALID",
+      "schema_valid": true,
+      "synthetic": true
+    },
+    {
+      "expected_status": "FAIL_READ_LEDGER_INVALID",
+      "fixture_id": "manifest-digest-mismatch",
+      "observed_status": "FAIL_READ_LEDGER_INVALID",
+      "schema_valid": true,
+      "synthetic": true
+    },
+    {
+      "expected_status": "FAIL_READ_LEDGER_INVALID",
+      "fixture_id": "manifest-path-mismatch",
+      "observed_status": "FAIL_READ_LEDGER_INVALID",
+      "schema_valid": true,
+      "synthetic": true
+    },
+    {
+      "expected_status": "FAIL_READ_LEDGER_CONTAMINATED",
+      "fixture_id": "unknown-operational-component",
+      "observed_status": "FAIL_READ_LEDGER_CONTAMINATED",
+      "schema_valid": true,
+      "synthetic": true
+    },
+    {
+      "expected_status": "FAIL_READ_LEDGER_CONTAMINATED",
+      "fixture_id": "case-specific-information-in-operational-status",
+      "observed_status": "FAIL_READ_LEDGER_CONTAMINATED",
+      "schema_valid": true,
+      "synthetic": true
+    },
+    {
+      "expected_status": "PASS_READ_LEDGER_CLEAN",
+      "fixture_id": "legal-operational-execution-and-status",
+      "observed_status": "PASS_READ_LEDGER_CLEAN",
+      "schema_valid": true,
+      "synthetic": true
+    }
+  ],
+  "commit_guard_staging_lifecycle": {
+    "cognitive_disposition_before_and_after": "CLEAN",
+    "new_status_record_staged_status": "PASS_BRANCH_AUTHORIZED",
+    "new_status_record_unstaged_status": "FAIL_UNEXPLAINED_WORKTREE",
+    "staged_evidence_status": "PASS_BRANCH_AUTHORIZED",
+    "untracked_evidence_status": "FAIL_UNEXPLAINED_WORKTREE"
+  },
+  "evidence_scope": "Synthetic fixtures only. No Task182-R2 local case record, read ledger, or packet manifest was opened.",
+  "root_cause_classification": {
+    "R0_2_IMPLEMENTATION_BUG": "NOT_DEMONSTRATED_BY_SYNTHETIC_REPRODUCTION",
+    "R0_2_PROTOCOL_SELF_REFERENCE": "REPRODUCED_CONDITIONALLY_IF_FINAL_VALIDATOR_INVOCATION_AND_STATUS_MUST_BE_IN_CERTIFIED_LEDGER",
+    "SUCCESSOR_BOOKKEEPING_ERROR": "NOT_ESTABLISHED_WITHOUT_PRIVATE_LEDGER",
+    "UNRESOLVED_WITHOUT_PRIVATE_LEDGER": "RETAINED_FOR_THE_ACTUAL_TASK182_R2_INVALID_RESULT"
+  },
+  "schema_version": "ignition-187-r0-2-synthetic-reproduction-r0.1",
+  "source_commit": "047fb0ef0b4a734e42efb4a29b4e70b831ef0be4",
+  "source_sha256": {
+    "authorization_schema": "f4d79a5c0b14350373203569dc287b9e15ca68831390c82ca93a424d8df05c8c",
+    "branch_guard": "3a706d73328e81492ce8ad715ab46a5c025ab113f398f49488043ebae30f73b5",
+    "read_ledger_schema": "347203df938ec4a9e7a65964e2d74010744b32ce74ed8ced2154e45826cf58ac",
+    "validator": "1ef7f9ded85e4ec6bb56d511f1cea4d9dc22a23b6579a63d17a94edeb5d56f25"
+  },
+  "task_id": "IGNITION-20260918-187",
+  "validator_self_reference": {
+    "all_invocations_return_clean": true,
+    "each_recording_changes_the_certified_ledger": true,
+    "entry_counts_after_recording_each_invocation": [
+      2,
+      4,
+      6
+    ],
+    "finite_fixed_point": false,
+    "runs": [
+      {
+        "input_entry_count": 0,
+        "input_ledger_sha256": "7dfc7152b73d724c61ac112f597b8d63274bc067bd31041d8e73b3b15ee53afb",
+        "invocation": 1,
+        "status": "PASS_READ_LEDGER_CLEAN"
+      },
+      {
+        "input_entry_count": 2,
+        "input_ledger_sha256": "4ace212a95c60de5633168547de17392c1ccad0743f33b4108b6dde561b6b44b",
+        "invocation": 2,
+        "status": "PASS_READ_LEDGER_CLEAN"
+      },
+      {
+        "input_entry_count": 4,
+        "input_ledger_sha256": "e2647d011929630af8a8cdae548c0bc01acd13d956e4e7548fb97e8775645a10",
+        "invocation": 3,
+        "status": "PASS_READ_LEDGER_CLEAN"
+      }
+    ]
+  }
+}

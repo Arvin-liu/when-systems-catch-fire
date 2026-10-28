@@ -1,0 +1,213 @@
+{
+  "case_set_id": "IGNITION-20260918-187-R0.3-HELDOUT-CASES",
+  "cases_manifest_path": "ignition/evaluation/heldout/r0.3/successor-visible/cases-manifest-r0.3.json",
+  "cases_manifest_sha256": "7d76008c8cb7fc73497ff70e0c947ddd474da5b0835ca1f9efb1bf7da106c109",
+  "cognitive_evidence_surface": {
+    "files": [
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/README.md",
+        "sha256": "4792543ab15db9be8f5cefef8458e11528ee9eb6cd8f57bd72f8ca637d1faf33"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/task-contract-r0.3.md",
+        "sha256": "c6c0160324cf2a96c9937a1bed7dcf15baa95a65048edc988ed3ecac6c21d028"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/method-contract-r0.3.md",
+        "sha256": "c80356ad17fc4e00235722c60160320e6623721123886ffb5ce7b0caef3471e0"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/capability-interface-r0.3.md",
+        "sha256": "2ad304fd1a4532bbcd7b97f31dcdfdaeb103ff00ae26585e1ceaf46b4a9d72f3"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/successor-output-r0.3.schema.json",
+        "sha256": "2e008524b541eed385077a0a52de03cdb94260811c4382d29510477c49702101"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/successor-read-ledger-r0.3.schema.json",
+        "sha256": "631cff04fef5e912ca9e85275e4c0b9b1393505aac651d024043b1f3b6f1c838"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/successor-ledger-validation-receipt-r0.3.schema.json",
+        "sha256": "12aeef60aea56af25eaf46058bd33788c9e07d97a022ba7acff9ff045cbc4a78"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/cases-manifest-r0.3.schema.json",
+        "sha256": "bfa40e21494173c2c565b20403aa003acdc6de82d72c55e894233f9339e1c5e8"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/packet-manifest-r0.3.schema.json",
+        "sha256": "030a3792513486c81b86d70c870dab105a964e856406c09a20c69e1d21d3fe31"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/cases-manifest-r0.3.json",
+        "sha256": "7d76008c8cb7fc73497ff70e0c947ddd474da5b0835ca1f9efb1bf7da106c109"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/cases-manifest-r0.3.sha256",
+        "sha256": "bf99e55662b0debd19bf34c247a7dd742f614b5efb84d32f4df2fcc94de0304f"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/cases/EXPERIENCE-RESEARCH-01.md",
+        "sha256": "f420e4c0062155f028e27cfcbebb2078cbed92161b855bb03038f6fccb9413a9"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/cases/ENGINEERING-GOVERNANCE-01.md",
+        "sha256": "5d30785684bbc86a112b6d5b2fea2d7bcfc1e8b9765f6547aa4d4c0b4d11eaf1"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/cases/provenance/EXPERIENCE-RESEARCH-01.json",
+        "sha256": "1e7cb9ef604491a85cff4144fdde2468878fbd02c0fca56f865085ed5aadf979"
+      },
+      {
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/cases/provenance/ENGINEERING-GOVERNANCE-01.json",
+        "sha256": "d7907d6cb23cd9c502b448fa9762a09cbcb05b0b9e6e244b3ddcb6a8fd48db33"
+      },
+      {
+        "path": "ignition/evaluation/r0.3-ledger-closure-protocol.md",
+        "sha256": "b00632ee35199c09f11732e8ca727f008777d2bd0fbc3255c57094422cac3f23"
+      },
+      {
+        "path": "ignition/evaluation/operational-control/r0.3/README.md",
+        "sha256": "772714871138d4358f46b32793645e228eb6473a1a4998efac9586802fe2a892"
+      }
+    ],
+    "surface_id": "COGNITIVE_EVIDENCE_SURFACE"
+  },
+  "manifest_path": "ignition/evaluation/heldout/r0.3/successor-visible/packet-manifest-r0.3.json",
+  "operational_control_surface": {
+    "components": [
+      {
+        "allowed_status_codes": [
+          "PASS_BRANCH_AUTHORIZED",
+          "FAIL_WRONG_REPOSITORY",
+          "FAIL_WRONG_REMOTE",
+          "FAIL_BRANCH_UNAUTHORIZED",
+          "FAIL_BASE_ANCESTRY",
+          "FAIL_AUTHOR_IDENTITY",
+          "FAIL_PUSH_DESTINATION",
+          "FAIL_FORCE_PUSH",
+          "FAIL_HOOK_CONFIGURATION",
+          "FAIL_UNEXPLAINED_WORKTREE",
+          "FAIL_AUTHORIZATION_RECEIPT"
+        ],
+        "component_id": "task-branch-guard-r0.3",
+        "evidence_scope": "CERTIFIED_LEDGER_SCOPE",
+        "path": "ignition/evaluation/tools/task_branch_guard_r0_3.py",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "source_sha256": "fc7e02f3b44182b9611dcd2082aa04ccd11714b51176253844fe473b27c7c5df",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [
+          "PASS_BRANCH_AUTHORIZED",
+          "FAIL_WRONG_REPOSITORY",
+          "FAIL_WRONG_REMOTE",
+          "FAIL_BRANCH_UNAUTHORIZED",
+          "FAIL_BASE_ANCESTRY",
+          "FAIL_AUTHOR_IDENTITY",
+          "FAIL_PUSH_DESTINATION",
+          "FAIL_FORCE_PUSH",
+          "FAIL_HOOK_CONFIGURATION",
+          "FAIL_UNEXPLAINED_WORKTREE",
+          "FAIL_AUTHORIZATION_RECEIPT"
+        ],
+        "component_id": "pre-commit-hook-r0.3",
+        "evidence_scope": "CERTIFIED_LEDGER_SCOPE",
+        "path": "ignition/evaluation/hooks/r0.3/pre-commit",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "source_sha256": "0a0a038d9623476d93b1f32d3a9c1b049c11f99af13e49e051396dec35d8b9ad",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [
+          "PASS_BRANCH_AUTHORIZED",
+          "FAIL_WRONG_REPOSITORY",
+          "FAIL_WRONG_REMOTE",
+          "FAIL_BRANCH_UNAUTHORIZED",
+          "FAIL_BASE_ANCESTRY",
+          "FAIL_AUTHOR_IDENTITY",
+          "FAIL_PUSH_DESTINATION",
+          "FAIL_FORCE_PUSH",
+          "FAIL_HOOK_CONFIGURATION",
+          "FAIL_UNEXPLAINED_WORKTREE",
+          "FAIL_AUTHORIZATION_RECEIPT"
+        ],
+        "component_id": "pre-push-hook-r0.3",
+        "evidence_scope": "CERTIFIED_LEDGER_SCOPE",
+        "path": "ignition/evaluation/hooks/r0.3/pre-push",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "source_sha256": "c67d01205ac9704c3bed8c9a745cf0e93eeae7231b2d8406d2eaf0a67ebd0f64",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [
+          "PASS_BRANCH_AUTHORIZED",
+          "FAIL_WRONG_REPOSITORY",
+          "FAIL_WRONG_REMOTE",
+          "FAIL_BRANCH_UNAUTHORIZED",
+          "FAIL_BASE_ANCESTRY",
+          "FAIL_AUTHOR_IDENTITY",
+          "FAIL_PUSH_DESTINATION",
+          "FAIL_FORCE_PUSH",
+          "FAIL_HOOK_CONFIGURATION",
+          "FAIL_UNEXPLAINED_WORKTREE",
+          "FAIL_AUTHORIZATION_RECEIPT"
+        ],
+        "component_id": "successor-bootstrap-r0.3",
+        "evidence_scope": "CERTIFIED_LEDGER_SCOPE",
+        "path": "ignition/evaluation/heldout/r0.3/successor-visible/bootstrap-r0.3.sh",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "source_sha256": "95d896c70ed3ad5278968bb39853dcf331985fd75b7ffef34c11aae1e5da35ae",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [
+          "PASS_READ_LEDGER_CLEAN",
+          "FAIL_READ_LEDGER_CONTAMINATED",
+          "FAIL_READ_LEDGER_INVALID"
+        ],
+        "component_id": "final-read-ledger-validator-r0.3",
+        "evidence_scope": "FINAL_ATTESTATION_SURFACE",
+        "path": "ignition/evaluation/tools/finalize_successor_read_ledger_r0_3.py",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "source_sha256": "bee960afe71e50cc9f00d9c0df1a6a592de1e0c63bd226f5a57ddb903859a2d3",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      }
+    ],
+    "resources": [
+      {
+        "path": "ignition/evaluation/operational-control/r0.3/task-branch-authorization-r0.3.schema.json",
+        "resource_id": "task-branch-authorization-schema-r0.3",
+        "sha256": "c37c8202223b6f6af1ada1068aeb2cb60a8da83d200f096dfdeaedeb196a3869",
+        "successor_access": "GUARD_INTERNAL_ONLY"
+      }
+    ],
+    "surface_id": "OPERATIONAL_CONTROL_SURFACE"
+  },
+  "schema_version": "heldout-successor-packet-manifest-r0.3",
+  "sealed_evidence_surface": {
+    "excluded_path_prefixes": [
+      "ignition/evaluation/heldout/r0.3/evaluator-sealed/"
+    ],
+    "successor_access": "PROHIBITED",
+    "surface_id": "EVALUATOR_SEALED_SURFACE"
+  },
+  "task_id": "IGNITION-20260918-182-R3"
+}
