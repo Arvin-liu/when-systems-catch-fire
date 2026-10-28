@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.20.0",
+  "map_version": "0.21.0",
   "historical_map_version": "0.14.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整总架构图",
@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.9.8",
+    "component_registry_version": "2.9.9",
     "topology_version": "1.14.0",
     "layout_version": "2.4.0"
   },
@@ -752,6 +752,30 @@
       "group": "governance",
       "target": "data/coaching/pilot-q44-i1.json",
       "description": "Q44-I1 self-authored bounded repository pilot covering USER_LED_COMMITMENT and PAUSE_OR_REVISE_PATH; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_contract",
+      "label": "Open Scientific Context Protocol 合同",
+      "group": "governance",
+      "target": "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed evidence-bound contract. A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_gate_validator",
+      "label": "Open Scientific Context Protocol 门禁",
+      "group": "governance",
+      "target": "tools/context_protocol/validate_open_scientific_context_protocol_gate.py",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 fail-closed real CLI enforcing evidence binding, exact parent, 11 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_pilot",
+      "label": "Open Scientific Context Protocol 受控试点",
+      "group": "governance",
+      "target": "data/context_protocol/pilot-scientific-context-protocol-i1.json",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 self-authored bounded repository pilot covering LOCAL_MOCK_REQUEST and LOCAL_MOCK_RESPONSE; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {
@@ -1902,8 +1926,8 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 128,
-    "visible_nodes": 111,
+    "registry_components": 131,
+    "visible_nodes": 114,
     "hidden_components": 17,
     "hidden_representatives": {
       "foundation_data": "foundation",
