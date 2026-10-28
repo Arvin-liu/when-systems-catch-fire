@@ -771,6 +771,19 @@ def test_s43_diff_scope():
         "ignition/tools/governance/validate_human_visibility.py",
         "ignition/tools/operations/run_component_validation_targets.py",
         "ignition/tools/validate_system_map_geometry.py",
+        'tests/rpe_ci/',
+        'ignition/reports/ignition-rpe/',
+        'ignition/AI-HANDOFF.md',
+        'ignition/AI-START-HERE.md',
+        'ignition/RESULTS/',
+        'ignition/data/governance/human-results/',
+        'ignition/data/governance/human-surface/',
+        'ignition/data/governance/self-correction/',
+        'ignition/data/operations/current-snapshot-r1.json',
+        'ignition/data/publication/fire-seeds/',
+        'ignition/docs/architecture/current-facts.md',
+        'ignition/tools/governance/gen_source_first_seen.py',
+        'ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md',
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():
