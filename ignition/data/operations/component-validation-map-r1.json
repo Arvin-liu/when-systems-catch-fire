@@ -234,6 +234,18 @@
       "import_roots": [
         "ignition"
       ]
+    },
+    {
+      "target_id": "o_ignition_runtime_r1_consumers",
+      "domain": "O",
+      "modules": [
+        "ignition_runtime.test_fix_regressions",
+        "ignition_runtime.test_scenarios"
+      ],
+      "import_roots": [
+        "tests"
+      ],
+      "evidence": "The existing runtime regression and scenario modules cover schema and receipt integrity, fail-closed authorization, RUN/PROMOTE/EVOLVE boundaries, recovery, and crash-safe publication. The evidence is repository-local and grants no production or scientific authority."
     }
   ],
   "components": [
@@ -858,6 +870,21 @@
       ],
       "requires_full_regression": false,
       "evidence": "Q45 repository-local pilot, controlled R2 reproduction, and versioned protocol examples."
+    },
+    {
+      "component_id": "ignition_runtime_r1",
+      "domains": [
+        "O"
+      ],
+      "validation_targets": [
+        "o_ignition_runtime_r1_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The runtime code, schemas, workflow, architecture, and evidence reports are assigned to the existing R1 regression/scenario tests; component registration only selects validation and does not activate the candidate."
     }
   ]
 }
