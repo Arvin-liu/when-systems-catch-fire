@@ -7,7 +7,12 @@ class CapabilityGateTests(unittest.TestCase):
  def test_real_cli_matrix(self):
   paths=sorted(FIXTURES.glob("[0-9][0-9]-*.json")); self.assertEqual(len(paths),24)
   for p in paths:
-   expected=int(re.search(r"-exit(\d+)\.json$",p.name).group(1)); r=run(p); self.assertEqual(r.returncode,expected,f"{p.name}: {r.stdout} {r.stderr}")
+   legacy=int(re.search(r"-exit(\d+)\.json$",p.name).group(1)); expected=30 + (legacy - 5) if 5 <= legacy <= 13 else legacy
+   r=run(p); self.assertEqual(r.returncode,expected,f"{p.name}: {r.stdout} {r.stderr}")
+   rule=re.search(r"-rule-(.+)-exit\d+\.json$",p.name)
+   if rule:
+    rule_id=rule.group(1).replace("-","_")
+    self.assertIn(f"{rule_id}:",r.stdout,f"{p.name}: wrong semantic negative control: {r.stdout}")
  def test_pilot_passes(self):
   r=run(PILOT); self.assertEqual(r.returncode,0,r.stdout)
  def test_typed_record_coverage(self):
