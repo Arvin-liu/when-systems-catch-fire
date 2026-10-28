@@ -1,0 +1,45 @@
+{
+  "schema_version": "ignition-148-step06-current-canonical-resolution-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "06",
+  "status": "PASS_WITH_DECLARED_STEP12_PROPAGATION_PENDING",
+  "guard": "LEGACY_REFERENCE_MUST_RESOLVE_CURRENT_CANONICAL_IDENTITY",
+  "unresolved_status": "UNRESOLVED_LEGACY_REFERENCE",
+  "ambiguous_status": "AMBIGUOUS_CANONICAL_REFERENCE",
+  "canonical_identity_authority": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+  "supporting_authorities": [
+    "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+    "ignition/data/foundation/function-assets/corrections.jsonl",
+    "ignition/data/foundation/mappings/legacy-mappings.jsonl"
+  ],
+  "resolver": "ignition/tools/foundation/resolve_current_canonical_asset.py",
+  "fixture_path": "ignition/tests/fixtures/ignition-operating-method/canonical-resolution-r1.json",
+  "regression_cases": {
+    "total": 12,
+    "exposed_legacy_labels": ["D1", "D2", "D5", "T7", "A5"],
+    "identity_correction": "D127 乘法归零律 -> T2; bare D127 -> D127",
+    "historical_path_is_identity": false,
+    "memory_or_fuzzy_fallback": false,
+    "quarantine_and_claim_ceiling_preserved": true
+  },
+  "validation": {
+    "canonical_resolution_fixtures": "12/12 PASS",
+    "focused_resolution_tests": "7/7 PASS",
+    "operating_method_tests": "8/8 PASS",
+    "operating_method_validator": "PASS",
+    "claim_governance_validator": "38/39 PASS; deterministic census projection reports CENSUS_OUT_OF_DATE after Task148 candidate source additions",
+    "function_asset_closure_validator": "46/46 PASS against the pre-propagation Current census",
+    "capability_registry_validator": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "declared_propagation_residual": {
+    "classification": "EXPECTED_TASK148_SOURCE_DISCOVERY_DELTA",
+    "detected_by": "ignition/tools/foundation/validate_claim_governance.py",
+    "exact_result": "CENSUS_OUT_OF_DATE discovery.jsonl census.jsonl audit-queue.jsonl census-summary.json",
+    "reason": "The governed scanner includes tracked and untracked candidate source files; Task148 operating-method, router, planner, resolver and test sources must enter the deterministic Foundation projection together after the remaining source-writing steps.",
+    "closure_step": "12",
+    "ignore_or_skip_added": false,
+    "validator_weakened": false
+  },
+  "claim_ceiling": "Task148 candidate exact Current identity resolution and repository-local fail-closed regression evidence only; resolution preserves disposition and claim ceiling, does not turn a historical file or model memory into identity, does not establish external truth, and is not Current on main."
+}

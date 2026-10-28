@@ -1,0 +1,39 @@
+{
+  "$schema_note": "Schema of benchmark/RESULTS.json emitted by run.py (normal run).",
+  "top_level_keys": {
+    "task": "string — fixed '105'",
+    "environment": {
+      "python": "string",
+      "platform": "string",
+      "function_os_versions": "object — n1/n5/n7/n9 VERSION strings",
+      "git_head": "string — current HEAD of the formal repo",
+      "target_commit": "string — fixed 16f64004... (original FOS target)",
+      "prereg_commit": "string — commit that first added benchmark/PREREGISTRATION.md",
+      "prereg_ancestor_of_head": "boolean — ancestry_ok(prereg_commit, HEAD)",
+      "generated_at": "string — ISO8601 UTC",
+      "oracle_allowed_nodes": "array<string>"
+    },
+    "thresholds": "object — copied from THRESHOLDS.json (frozen)",
+    "total_cases": "integer",
+    "metrics": "object — computed aggregate metrics keyed by metric name",
+    "overall_verdict": "enum — one of the 5 preregistered overall verdicts",
+    "critical_violations": "integer — count of critical fail-open overrides hit",
+    "claim_verdicts": "object — per-claim verdict string",
+    "results": "array<object> — one record per case (preserved, incl. failures)"
+  },
+  "per_case_record_keys": {
+    "case_id": "string",
+    "test_kind": "string — e.g. s1_reference, s2_forbidden, s3_registry, n8_sequential, trace",
+    "claim": "string — one of the 6 corpus claim labels",
+    "fos_status": "string — FOS pipeline status (OK / ERROR / REJECTED / ...)",
+    "category": "string — harness classification (e.g. correct, blocked_not_executed, critical_fail_open, composition_failure, lifecycle_failure, false_reject, false_accept, harness_error)",
+    "critical_violation": "boolean",
+    "result_sha": "string — deterministic content hash for replay verification",
+    "error": "string|null — present only when category == harness_error"
+  },
+  "invariants": [
+    "prereg_ancestor_of_head must be true for a valid preregistered run",
+    "critical_violations > 0 forces a fail-open override regardless of aggregate metrics",
+    "result_sha enables deterministic replay via run.py --replay-from"
+  ]
+}

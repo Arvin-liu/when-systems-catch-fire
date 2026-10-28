@@ -1,0 +1,20 @@
+{
+  "capsule_id": "capsule-0001",
+  "run_id": "manifest-pilot/run-001",
+  "checkpoint_id": "checkpoint-0001",
+  "state_ref": "run-state.json",
+  "state_sha256": "0fada61f751db87e7f42f570d7f2faac2d4569aa68bd30e3cdf03b6a780c35e3",
+  "pending_action_ids": [
+    "action-write-manifest"
+  ],
+  "required_capabilities": [
+    "write.manifest"
+  ],
+  "created_by": "executor-alpha",
+  "handoff": {
+    "from_executor_id": "executor-alpha",
+    "to_executor_id": "executor-beta",
+    "reason_summary": "continue the bounded plan after verifying the persisted state digest",
+    "resume_ref": "run-state.json"
+  }
+}

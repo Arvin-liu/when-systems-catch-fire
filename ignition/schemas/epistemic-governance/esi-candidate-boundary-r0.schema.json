@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/esi-candidate-boundary-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "candidate_id", "definition", "scope", "alternative_explanations", "claim_ceiling", "falsification_criteria", "downgrade_state"],
+  "properties": {
+    "schema_version": {"const": "esi-candidate-boundary-r0"},
+    "candidate_id": {"const": "ESI-R0"},
+    "definition": {"type": "string", "minLength": 80},
+    "scope": {
+      "type": "object",
+      "required": ["time_scale", "mechanism_status", "not_weight_update", "not_hard_authority"],
+      "properties": {
+        "time_scale": {"enum": ["INFERENCE_TIME_CONTEXTUAL"]},
+        "mechanism_status": {"enum": ["CANDIDATE_PHENOMENON"]},
+        "not_weight_update": {"const": true},
+        "not_hard_authority": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "description", "disambiguation_test"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+          "label": {"type": "string", "minLength": 2},
+          "description": {"type": "string", "minLength": 20},
+          "disambiguation_test": {"type": "string", "minLength": 20}
+        },
+        "additionalProperties": false
+      }
+    },
+    "claim_ceiling": {"type": "array", "minItems": 5, "items": {"type": "string", "minLength": 20}},
+    "falsification_criteria": {"type": "array", "minItems": 5, "items": {"type": "string", "minLength": 20}},
+    "downgrade_state": {"const": "ANECDOTE_OR_OPEN_QUESTION"},
+    "current_status": {"const": "CANDIDATE_ESI_SIGNAL"}
+  },
+  "additionalProperties": false
+}

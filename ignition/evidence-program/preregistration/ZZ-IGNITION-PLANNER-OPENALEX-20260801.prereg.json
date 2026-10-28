@@ -1,0 +1,76 @@
+{
+  "baseline": "Crossref/task-103 registry fields at main 0bbd31a82406e1922509aa052885d214b6efff85; crossref_title and crossref_year are the governed comparison fields.",
+  "claim": "The governed 117 DOI population has cross-source bibliographic metadata consistent between the registry/Crossref baseline and the OpenAlex Works oracle under the formal task-110 protocol.",
+  "committed_at_utc": "2026-08-01T07:17:14+00:00",
+  "committed_commit": "a830664c1add6a26b2b516a13769cdd71412eda2",
+  "contradiction_conditions": {
+    "class": "CONTRADICTED_WITHIN_SCOPE",
+    "rule": "canonical_id_match AND (title_ratio < 0.75 OR abs(year_delta) > 1 OR retraction mismatch)"
+  },
+  "dataset": {
+    "doi_field": "doi_normalized",
+    "identifier_format": "bare normalized DOI",
+    "record_count": 117,
+    "source_path": "data/operations/iterations/110/openalex/population-manifest.jsonl"
+  },
+  "e_axis_mapping": {
+    "on_contradicted": "Retain E1 ceiling and isolate contradiction; no scientific inference.",
+    "on_invalid": "No E-axis change; quarantine the invalid run.",
+    "on_null": "Retain E1 ceiling without promotion; record null/ambiguity limitation.",
+    "on_partial": "Retain E1 metadata-consistency ceiling and record itemized mismatches.",
+    "on_supported": "Retain metadata-consistency E1 ceiling; no promotion beyond the preregistered claim."
+  },
+  "exclusions": "No paper-content validity, scientific truth, Pointfire physics, MCF, PSD, ARN, causal validity or maturity/disposition promotion.",
+  "invalid_test_conditions": {
+    "class": "TEST_INVALID_OR_ABORTED",
+    "rule": "HTTP/network acquisition failure after preregistered retries; never counted as support"
+  },
+  "metrics": {
+    "primary_metric": "primary_support_rate = supported_or_partial / non_duplicate_records",
+    "secondary_metrics": [
+      "population_records",
+      "primary_denominator",
+      "supported_count",
+      "partial_count",
+      "contradicted_count",
+      "null_count",
+      "invalid_count",
+      "duplicate_count",
+      "unique_exact_match_count",
+      "multiple_exact_doi_count",
+      "no_exact_doi_count",
+      "http_200_count",
+      "primary_support_rate"
+    ]
+  },
+  "null_conditions": {
+    "class": "NULL_OR_INCONCLUSIVE",
+    "rule": "no unique exact normalized DOI match, missing required metadata, or unrecognized registry retraction status"
+  },
+  "null_or_comparison": "NULL_OR_INCONCLUSIVE is assigned when no unique exact DOI-equal OpenAlex work or required metadata is available; duplicates are retained but excluded from the primary denominator.",
+  "partial_support_conditions": {
+    "class": "PARTIALLY_SUPPORTED_WITH_IDENTIFIED_MISMATCHES",
+    "rule": "canonical_id_match AND no hard contradiction AND (year_delta == 1 OR 0.75 <= title_ratio < 0.92)"
+  },
+  "pilot_id": "DOI-OPENALEX-CROSS-CHECK",
+  "preregistration_id": "IGNITION-PLANNER-OPENALEX-PREREG-R1-20260801",
+  "scope": "Cross-source bibliographic metadata consistency only; no paper-content, scientific-truth, Pointfire-physics, MCF, PSD or ARN validation.",
+  "source_acquisition": {
+    "endpoint_template": "https://api.openalex.org/works?filter=doi:<doi>&mailto=<runtime-redacted>",
+    "licence": "OpenAlex API metadata; audit retention only",
+    "oracle": "OpenAlex Works API",
+    "redistribution_allowed": false,
+    "retrieval_window_utc": "2026-08-01T07:19:28+00:00/2026-08-01T07:21:03+00:00",
+    "user_agent": "ignition-task-110-openalex-census/1.0"
+  },
+  "stopping_rule": "Complete all 117 records; abort as a systemic blocker only if TEST_INVALID_OR_ABORTED exceeds 50 percent.",
+  "success_conditions": {
+    "contradicted": "canonical_id_match AND (title_ratio < 0.75 OR abs(year_delta) > 1 OR retraction mismatch)",
+    "duplicate_denominator": "is_duplicate_doi=true records remain visible but are excluded from primary rates",
+    "invalid": "HTTP/network acquisition failure after preregistered retries; never counted as support",
+    "null": "no unique exact normalized DOI match, missing required metadata, or unrecognized registry retraction status",
+    "partial": "canonical_id_match AND no hard contradiction AND (year_delta == 1 OR 0.75 <= title_ratio < 0.92)",
+    "supported": "canonical_id_match AND title_ratio >= 0.92 AND abs(year_delta) <= 1 AND retraction_match"
+  },
+  "uncertainty": "This is a full census of the locked population, not a sample estimate. Report exact counts and denominator; null/ambiguous records are not averaged into support."
+}

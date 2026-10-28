@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/execution-trace-event.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "run_id", "sequence", "phase", "event_type", "actor_id", "summary", "refs"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "sequence": {"type": "integer", "minimum": 0},
+    "phase": {"enum": ["OBSERVE", "FRAME", "PLAN", "AUTHORIZE", "ACT", "VALIDATE", "REMEMBER", "CONTINUE", "STOP"]},
+    "event_type": {"type": "string", "minLength": 1},
+    "actor_id": {"type": "string", "minLength": 1},
+    "summary": {"type": "string", "minLength": 1},
+    "refs": {"type": "array", "items": {"type": "string"}}
+  }
+}

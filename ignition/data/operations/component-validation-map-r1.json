@@ -1,0 +1,944 @@
+{
+  "schema_version": "1.1.0",
+  "purpose": "Versioned, evidence-backed mapping from registered components and their declared consumers to repository test targets for R/O/G pull-request validation.",
+  "claim_ceiling": "This map selects repository validation only. It does not establish real-world causal effects, grant execution or publication authority, or replace required shared security, permission, evidence, review, or release checks.",
+  "targets": [
+    {
+      "target_id": "g_component_release_controls",
+      "domain": "G",
+      "modules": [
+        "tests.test_component_validation_routing",
+        "tests.test_component_validation_evidence",
+        "tests.test_component_release_preparation",
+        "tests.test_component_release_authorization",
+        "tests.test_component_profiles",
+        "tests.test_incremental_planner",
+        "tests.test_incremental_execution_defensive_rejections",
+        "tests.test_production_execution_authority",
+        "tests.foundation.test_trigger_coverage"
+      ],
+      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_current_state_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_current_state_sync",
+        "tests.test_current_surface_compiler",
+        "tests.test_state_changelog"
+      ],
+      "evidence": "Existing current-state sync, surface compilation and state-change tests exercise the affected declared consumers.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_epistemic_boundary_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_epistemic_governance_relationships",
+        "tests.test_esi_human_surface",
+        "tests.test_soft_governance_authority",
+        "tests.test_durability_soft_governance"
+      ],
+      "evidence": "Existing epistemic relationship, ESI human-surface, soft-governance authority, and durability tests exercise the declared G boundary consumers without granting truth or permission authority.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_federation_boundary_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_federation_core",
+        "tests.test_federation_ownership",
+        "tests.test_federation_step12_adversarial"
+      ],
+      "evidence": "Existing federation contract, ownership, and adversarial tests exercise the declared executor and future-slot permission, interface, and evidence boundaries.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_foundation_formal_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.foundation.test_foundation"
+      ],
+      "command_ids": [
+        "validate_l4_lean_foundation"
+      ],
+      "evidence": "The existing Foundation test suite consumes formal-object records and schemas, while the canonical Lean Foundation proof command validates the formal proof consumer boundary. One execution covers both registered consumers.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_foundation_argument_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.foundation.test_claim_governance",
+        "tests.foundation.test_nonfunction_claim_closure"
+      ],
+      "import_roots": [
+        "ignition",
+        "ignition/tools/foundation"
+      ],
+      "evidence": "Existing Foundation claim-governance and nonfunction-closure consumers validate L3 argument and claim relationships."
+    },
+    {
+      "target_id": "g_history_remediation_contract",
+      "domain": "G",
+      "modules": [
+        "tests.test_history_remediation_contract"
+      ],
+      "evidence": "A focused test validates the existing historical rights-remediation register against its schema and reconciles its declared summary from the register entries without rewriting historical records.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_human_front_door_consumers",
+      "domain": "G",
+      "modules": [
+        "ignition.tests.test_human_front_door",
+        "ignition.tests.test_overall_architecture",
+        "ignition.tests.test_generated_output_authority"
+      ],
+      "evidence": "These existing tests cover the registered no-L7 and system-map/front-door projection constraints.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_operating_method_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_current_canonical_resolution",
+        "tests.test_ignition_interface_sync",
+        "tests.test_ignition_object_collision",
+        "tests.test_ignition_operating_method",
+        "tests.test_ignition_operating_mode_router",
+        "tests.test_ignition_operation_capability_registry",
+        "tests.test_ignition_operation_lifecycle",
+        "tests.test_ignition_operation_playbooks",
+        "tests.test_ignition_run_output",
+        "tests.test_ignition_stranger_agent_regression"
+      ],
+      "evidence": "These test modules are the existing registered consumers of Ignition Operating Method and its run-mode, capability, lifecycle, output and stranger-agent boundaries.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_publication_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_stage_snapshot_publication",
+        "tests.test_iteration_sync"
+      ],
+      "evidence": "These existing publication and synchronization consumer tests cover L6/iteration publication constraints.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_repository_path_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.foundation.test_repository_path_classification",
+        "tests.test_change_propagation",
+        "tests.test_diff_coverage_gate",
+        "tests.test_era_resolver_generalization"
+      ],
+      "evidence": "These existing consumers validate Foundation path classification and the propagation/era-resolution contracts affected by the L5 classification source.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "o_human_result_consumers",
+      "domain": "O",
+      "modules": [
+        "tests.test_human_visibility_gate",
+        "tests.test_knowledge_experience",
+        "tests.test_self_correction_engine"
+      ],
+      "evidence": "Existing human-result and knowledge-experience validators and tests cover the registered human_knowledge_surfaces outputs and their derived consumers.",
+      "command_ids": [
+        "build_human_results_check",
+        "run_self_correction_check",
+        "build_knowledge_experience_check",
+        "validate_human_visibility",
+        "validate_knowledge_experience",
+        "validate_human_front_door",
+        "validate_fire_seeds_check",
+        "build_claim_browsers_check",
+        "generate_overall_architecture_check"
+      ],
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "r_research_slot_consumers",
+      "domain": "R",
+      "modules": [
+        "research_workflow.test_pluggable_slot",
+        "research_workflow.test_research_workflow"
+      ],
+      "import_roots": [
+        "ignition",
+        "ignition/research_workflow"
+      ],
+      "evidence": "PR #259 candidate package tests: test_research_workflow.py covers the live CLI with OpenAlex and Crossref; test_pluggable_slot.py covers the independent offline/source-binding slot. The output receipts do not enter the canonical O human-knowledge surfaces."
+    },
+    {
+      "target_id": "g_decision_integrity",
+      "domain": "G",
+      "modules": [
+        "tests.decision.test_decision_integrity_gate",
+        "tests.decision.test_decision_integrity_repair_r2",
+        "tests.test_r3_decision_integrity"
+      ],
+      "evidence": "The existing decision-integrity contract, gate, R2 reproduction and R3 evaluator consumer tests validate evidence binding and fail-closed semantic evaluation for the registered decision components.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_q43_intervention_escalation",
+      "domain": "G",
+      "modules": [
+        "tests.escalation.test_graded_intervention_escalation_gate",
+        "tests.escalation.test_q43_repair_r2",
+        "tests.test_r3_graded_intervention_escalation"
+      ],
+      "evidence": "Existing Q43 real-CLI, direct-predecessor, semantic positive, false-value, and evidence-laundering tests cover the contract, pilot, and validator paths.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_open_scientific_context_protocol",
+      "domain": "G",
+      "modules": [
+        "tests.context_protocol.test_open_scientific_context_protocol_gate",
+        "tests.context_protocol.test_scientific_context_protocol_repair_r2",
+        "tests.test_r3_open_scientific_context_protocol"
+      ],
+      "evidence": "Existing Q45 direct gate, R2 evidence-binding, and R3 semantic-evaluator tests cover the declared context protocol contract, pilot, and validator paths.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "o_ignition_runtime_r1_consumers",
+      "domain": "O",
+      "modules": [
+        "ignition_runtime.test_fix_regressions",
+        "ignition_runtime.test_scenarios"
+      ],
+      "import_roots": [
+        "tests"
+      ],
+      "evidence": "The existing runtime regression and scenario modules cover schema and receipt integrity, fail-closed authorization, RUN/PROMOTE/EVOLVE boundaries, recovery, and crash-safe publication. The evidence is repository-local and grants no production or scientific authority."
+    },
+    {
+      "target_id": "g_arr_runtime",
+      "domain": "G",
+      "modules": [
+        "tests.test_component_validation_routing",
+        "tests.test_r3_corpus_acceptance",
+        "tests.test_r3_corpus_analysis",
+        "tests.test_r3_corpus_boundary",
+        "tests.test_r3_corpus_crash",
+        "tests.test_r3_corpus_inventory",
+        "tests.test_r3_corpus_semantic"
+      ],
+      "import_roots": [
+        "ignition"
+      ],
+      "command_ids": [
+        "arr_runtime_static_gate",
+        "arr_runtime_pytest"
+      ],
+      "evidence": "The registered ARR static gate and focused pytest suite exercise adapter-only boundaries, fixtures, schemas, and growth-ceiling controls; existing router tests preserve exact target and fail-closed routing behavior. The six synthetic R3 corpus modules cover inventory, semantic analysis, checkpoint/resume, privacy boundaries, aggregation, and acceptance without loading the private WAIC corpus or enabling PROMOTE/EVOLVE."
+    }
+  ],
+  "components": [
+    {
+      "component_id": "ai_guide",
+      "domains": [
+        "O"
+      ],
+      "validation_targets": [
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The PR changes AI-facing entry and handoff guides; these are human-facing output surfaces and use the O surface consumer target."
+    },
+    {
+      "component_id": "usage",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_operating_method_consumers"
+      ],
+      "change_classifications": [
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The registry assigns docs/USAGE.md as the human usage entry; its operating-method links and READ_ONLY_RUN boundary are checked by the registered G operating-method consumers."
+    },
+    {
+      "component_id": "component_validation_router",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, and target runner; changes also match the full-regression authority paths.",
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ]
+    },
+    {
+      "component_id": "copyright_governance_history_remediation",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_history_remediation_contract"
+      ],
+      "evidence": "The existing component is a rights-governance history register; its outgoing current-state and historical-report relations are explicitly informational-only, and the focused validator preserves rather than rewrites those records.",
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "HISTORICAL_ONLY"
+      ]
+    },
+    {
+      "component_id": "current_state",
+      "domains": [
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "requires_full_regression": true,
+      "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
+    },
+    {
+      "component_id": "epistemic_governance_kernel",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_epistemic_boundary_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The typed Foundation-to-kernel relation reaches this existing governance validator and its epistemic and soft-authority consumer tests."
+    },
+    {
+      "component_id": "external_agent_federation",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The typed advisory-governance relation reaches the existing federation contract, ownership, and adversarial consumer tests; the mapping does not claim that PR #259 invokes a live executor."
+    },
+    {
+      "component_id": "foundation",
+      "domains": [
+        "R",
+        "O",
+        "G"
+      ],
+      "validation_targets": [],
+      "requires_full_regression": true,
+      "evidence": "Foundation spans all layers and shared claims; its current required consumers are the complete foundation-validation workflow.",
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "HISTORICAL_ONLY",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ]
+    },
+    {
+      "component_id": "future_executors",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_boundary_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The declared deferred executor slot inherits the existing federation contract and ownership checks; this is a protocol-boundary validation, not an active executor or permission grant."
+    },
+    {
+      "component_id": "human_knowledge_surfaces",
+      "domains": [
+        "O"
+      ],
+      "validation_targets": [
+        "o_human_result_consumers"
+      ],
+      "evidence": "Existing registry ownership of generated human results, knowledge-experience projections, and visibility surfaces; the mapped test modules exercise these consumers.",
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ]
+    },
+    {
+      "component_id": "ignition_operating_method",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_operating_method_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The changed operation-method fixture and its registered validators/tests define G-domain behavior and run-mode constraints."
+    },
+    {
+      "component_id": "incremental_execution",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "evidence": "Existing registry ownership of the component planner, profiles, validators, and defensive authority checks.",
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ]
+    },
+    {
+      "component_id": "l2",
+      "domains": [
+        "R",
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_foundation_formal_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": true,
+      "evidence": "L2 formal objects are shared Foundation inputs to R, O, and G. The existing typed Foundation-to-L2 relation therefore requires all three domain checks and the canonical Foundation regression."
+    },
+    {
+      "component_id": "l3",
+      "domains": [
+        "R",
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_foundation_argument_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": true,
+      "evidence": "L3 arguments and claims are shared Foundation inputs to R, O, and G. The existing L2-to-L3 relation requires all three domain checks and the canonical Foundation regression."
+    },
+    {
+      "component_id": "l4",
+      "domains": [
+        "R",
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_foundation_formal_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": true,
+      "evidence": "L4 models and proofs are shared Foundation constraints for R, O, and G. The existing L3-to-L4 relation requires all three domain checks and the canonical Foundation regression."
+    },
+    {
+      "component_id": "l5",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_repository_path_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The PR changes repository path classification and its manifest; the L5 registry paths identify classification methodology and its declared tests."
+    },
+    {
+      "component_id": "l6",
+      "domains": [
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "requires_full_regression": true,
+      "evidence": "The PR changes the publication fire-seed census and its governing validation; O output and G publication/synchronization consumers run, and the cross-domain effect requires Foundation regression."
+    },
+    {
+      "component_id": "no_l7",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The changed ARCHITECTURE.md states the no-L7 governance boundary; registered front-door and projection tests are its concrete consumers."
+    },
+    {
+      "component_id": "no_totality_proof",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The current-state and no-truth relations reach the interpretation boundary; existing front-door, architecture-projection, and generated-output consumers validate those repository surfaces without claiming theoretical completeness."
+    },
+    {
+      "component_id": "no_truth_upgrade",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_epistemic_boundary_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The typed Foundation, no-L7, and epistemic-kernel constraints reach the existing epistemic and soft-governance tests, which assert non-authority boundaries."
+    },
+    {
+      "component_id": "openalex_adapter_r1",
+      "domains": [
+        "R"
+      ],
+      "validation_targets": [
+        "r_research_slot_consumers"
+      ],
+      "evidence": "PR #259 call chain: research_workflow/cli.py dynamically loads scripts/external-research/openalex_client.py for live searches; the package consumer tests cover raw response and normalization behavior.",
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ]
+    },
+    {
+      "component_id": "crossref_verifier_r1",
+      "domains": [
+        "R"
+      ],
+      "validation_targets": [
+        "r_research_slot_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The PR #259 live CLI dynamically loads this existing verifier for DOI and bibliographic metadata checks; the mapped research workflow tests cover match, mismatch, transport failure, and unexpected content cases."
+    },
+    {
+      "component_id": "propagation_calculator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_repository_path_consumers"
+      ],
+      "change_classifications": [
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The existing allowed overlap explicitly covers tests/fixtures/ignition-operating-method/ for both the Operating Method and propagation calculator; its registered operations_method effect is exercised by the existing change-propagation and diff-coverage consumers."
+    },
+    {
+      "component_id": "readme",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registry assigns .github/README.md as the current-state and usage entry; typed relations connect the front door to current_state and knowledge surfaces, covered by the existing G front-door and O result-consumer suites."
+    },
+    {
+      "component_id": "research_workflow_slot",
+      "domains": [
+        "R"
+      ],
+      "validation_targets": [
+        "r_research_slot_consumers"
+      ],
+      "evidence": "PR #259 source and tests: research_workflow/slot.py and cli.py are the real consumer boundary for the pluggable research adapter.",
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ]
+    },
+    {
+      "component_id": "structural_governance_surface",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_epistemic_boundary_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The existing kernel-to-structural-surface and structural-surface-to-federation relations are checked by the ESI, soft-authority, durability, and federation consumer tests; the surface remains advisory."
+    },
+    {
+      "component_id": "sync",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "change_classifications": [
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registered calculator_projects_sync and sync_requires_readme relations define the repository synchronization closure; the component router, incremental planner, execution-authority and defensive-rejection consumers validate this governance operation."
+    },
+    {
+      "component_id": "system_map_projection",
+      "domains": [
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "requires_full_regression": true,
+      "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "decision_integrity_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_decision_integrity"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "decision_integrity_contract is a registered decision-integrity governance component; the focused consumer target exercises its contract and fail-closed decision semantics."
+    },
+    {
+      "component_id": "decision_integrity_gate_validator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_decision_integrity"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "decision_integrity_gate_validator is a registered decision-integrity governance component; the focused consumer target exercises its contract and fail-closed decision semantics."
+    },
+    {
+      "component_id": "decision_integrity_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_decision_integrity"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "decision_integrity_pilot is a registered decision-integrity governance component; the focused consumer target exercises its contract and fail-closed decision semantics."
+    },
+    {
+      "component_id": "system_map_layout",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "requires_full_regression": true,
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The system-map layout and geometry-quality projection affect both governance-owned map structure and human-visible result rendering; retain the existing full-regression requirement for map/layout changes."
+    },
+    {
+      "component_id": "historical_reports",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "HISTORICAL_ONLY"
+      ],
+      "evidence": "Historical operational reports are retained as evidence artifacts; the existing iteration and publication consumers validate their repository-bound seal and iteration interfaces without elevating the reports into current authority."
+    },
+    {
+      "component_id": "iteration_manifest_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The iteration manifest defines publication and completion-seal bindings; the existing iteration synchronization and publication consumer tests validate those boundaries."
+    },
+    {
+      "component_id": "graded_intervention_escalation_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_q43_intervention_escalation"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "Q43 contract schema and governing boundary surfaces."
+    },
+    {
+      "component_id": "graded_intervention_escalation_gate_validator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_q43_intervention_escalation"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "Q43 fail-closed validator and its current regression tests."
+    },
+    {
+      "component_id": "graded_intervention_escalation_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_q43_intervention_escalation"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE"
+      ],
+      "evidence": "Q43 pilot, reproduction records, and fail-closed fixture cases."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 protocol contract schema, architecture decision, and frozen semantic boundary."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_gate_validator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 fail-closed CLI, R2 evidence-binding record, and R3 semantic evaluator with focused negative controls."
+    },
+    {
+      "component_id": "open_scientific_context_protocol_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_open_scientific_context_protocol"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE"
+      ],
+      "requires_full_regression": false,
+      "evidence": "Q45 repository-local pilot, controlled R2 reproduction, and versioned protocol examples."
+    },
+    {
+      "component_id": "ignition_runtime_r1",
+      "domains": [
+        "O"
+      ],
+      "validation_targets": [
+        "o_ignition_runtime_r1_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The runtime code, schemas, workflow, architecture, and evidence reports are assigned to the existing R1 regression/scenario tests; component registration only selects validation and does not activate the candidate."
+    },
+    {
+      "component_id": "arr",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_arr_runtime",
+        "g_human_front_door_consumers",
+        "g_repository_path_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "ARR registry, schemas, architecture, and map projection changes are checked by the existing human front-door and human-result consumers plus the registered ARR static gate and focused pytest suite. Q33 era-resolver repair evidence also routes through g_repository_path_consumers, including the existing era-resolver regression module."
+    },
+    {
+      "component_id": "arr_runtime",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_arr_runtime"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "ARR adapter implementation and tests are checked by the registered anti-second-executor static gate and focused pytest suite; this adapter does not create external execution authority."
+    }
+  ]
+}

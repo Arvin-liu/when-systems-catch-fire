@@ -1,0 +1,30 @@
+{
+  "schema_version": "ignition-145-step06-targeted-human-surface-validation-r1",
+  "task_id": "IGNITION-20260828-145",
+  "step": "06",
+  "status": "PASS",
+  "commands": {
+    "human_front_door": "PASS system_map_source_link_nodes=87 human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "human_surface_contract": "PASS human_entries=48 machine_components=99 visible_graph_nodes=87 typed_graph_edges=92",
+    "human_visibility": "PASS human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_projection_determinism": "PASS passes=2 outputs=10",
+    "current_surface_determinism": "PASS passes=2",
+    "current_surface_semantics": "PASS",
+    "system_map_source_spec_svg": "PASS nodes=87 edges=92",
+    "volatile_fact_registry": "PASS facts=19 surfaces=7",
+    "execution_and_identity": "PASS task_id=IGNITION-20260828-145",
+    "current_release_lifecycle": "PASS content_phase=RUNNING",
+    "formal_task_lifecycle": "PASS task=IGNITION-20260828-145 terminal=false",
+    "related_unit_tests": "PASS 27 tests, 0 failures, 0 errors, 0 skips"
+  },
+  "scope_guards": {
+    "architecture_identity_changed": false,
+    "map_geometry_redrawn": false,
+    "task143_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task146_created_or_started": false
+  },
+  "claim_ceiling": "Repository-local targeted Human Front Door, source-link metadata and deterministic projection validation only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "ignition-124-step12-closure-r1",
+  "task_id": "IGNITION-20260817-124",
+  "step": "12",
+  "recorded_at": "2026-08-17T15:45:00Z",
+  "baseline": {
+    "formal_main_before_step12": "266426d7110af9ee921a020a46c3a0347aa364e9",
+    "prior_step_commit": "9a665eb8f48620611fdf27bce7a5d14d550819fe",
+    "task_branch": "codex/ignition-124-os-control-plane-r2-20260817"
+  },
+  "step_commit_chain": {
+    "policy": "Each Step 00-12 has one independent commit and push; no amend, squash, force push or historical rewrite is permitted.",
+    "commits": [
+      {"step": "00", "commit_sha": "0775bf0944858b9384ee5a67216d088406c4872c", "remote_sha": "0775bf0944858b9384ee5a67216d088406c4872c"},
+      {"step": "01", "commit_sha": "2f7c1efddf1c9e8e1ad4c17519241d428972c18d", "remote_sha": "2f7c1efddf1c9e8e1ad4c17519241d428972c18d"},
+      {"step": "02", "commit_sha": "0419815e06b30c584950bf9975da7d22de1de348", "remote_sha": "0419815e06b30c584950bf9975da7d22de1de348"},
+      {"step": "03", "commit_sha": "8565a31895fc8722af46f96041bd816f7371059e", "remote_sha": "8565a31895fc8722af46f96041bd816f7371059e"},
+      {"step": "04", "commit_sha": "c094eb7cfe6292115de0456d0200a854e15bd9bb", "remote_sha": "c094eb7cfe6292115de0456d0200a854e15bd9bb"},
+      {"step": "05", "commit_sha": "9f9fb6c33e5849799a8474f4084a7be2bc5aa20e", "remote_sha": "9f9fb6c33e5849799a8474f4084a7be2bc5aa20e"},
+      {"step": "06", "commit_sha": "4c6a6f2feb8e92edf2931fa67e02aa758925672d", "remote_sha": "4c6a6f2feb8e92edf2931fa67e02aa758925672d"},
+      {"step": "07", "commit_sha": "9e33b856185b2e5b3921ae2e7f6bbb4d113e1b96", "remote_sha": "9e33b856185b2e5b3921ae2e7f6bbb4d113e1b96"},
+      {"step": "08", "commit_sha": "dff3a2b9a3c337e25191cb78c1b50ebb83aca0ad", "remote_sha": "dff3a2b9a3c337e25191cb78c1b50ebb83aca0ad"},
+      {"step": "09", "commit_sha": "f475e0024f85e177d6927d2360734991c4f9aee6", "remote_sha": "f475e0024f85e177d6927d2360734991c4f9aee6"},
+      {"step": "10", "commit_sha": "49273a9d655451f5310b06341ab599570df543f8", "remote_sha": "49273a9d655451f5310b06341ab599570df543f8"},
+      {"step": "11", "commit_sha": "9a665eb8f48620611fdf27bce7a5d14d550819fe", "remote_sha": "9a665eb8f48620611fdf27bce7a5d14d550819fe"}
+    ]
+  },
+  "projection_rebuild": {
+    "root_cause": "Step 11 changed architecture, map, Current Facts and validator contracts; deterministic downstream foundation, human, Knowledge, path, blast-radius and publication projections therefore required a full rebuild before final replay.",
+    "historical_records_rewritten": false,
+    "function_assets": {"canonical_assets": 5607, "closure_checks": "46/46", "status": "PASS"},
+    "nonfunction_claims": {"canonical_claims": 16041, "closure_checks": "54/54", "status": "PASS"},
+    "human_surface": {"function_machine": 5607, "function_human": 24, "nonfunction_machine": 16041, "nonfunction_human": 24, "status": "PASS"},
+    "knowledge_experience": {"cards": 404, "changes": 315, "layered_readings": 332, "search_records": 21980, "aliases": 854, "status": "PASS"},
+    "fire_seeds": {"seeds": 64, "content_seeds": 40, "methodology_seeds": 24, "sources": 393, "status": "PASS"},
+    "repository_path_classification": {"paths": 2551, "checks": "9/9", "status": "PASS"},
+    "blast_radius": {"fixtures": 4, "status": "PASS"}
+  },
+  "full_discovery": {
+    "command": "PYTHONPATH=. python3 -m unittest discover -s tests -q",
+    "tests": 780,
+    "failures": 4,
+    "errors": 0,
+    "skipped": 1,
+    "duration_seconds": 2650.525,
+    "status": "PASS_WITH_CLASSIFIED_RESIDUALS",
+    "failures_by_class": {"NEW_REGRESSION": 0, "PREEXISTING": 0, "ENVIRONMENTAL": 1, "HISTORICAL_SEALED": 3, "TIMEOUT": 0},
+    "failure_entries": [
+      {"test": "foundation.test_foundation.FoundationTests.test_core_claims", "classification": "ENVIRONMENTAL", "reason": "T16_SYMPY_COUNTEREXAMPLE reports SYMPY_UNAVAILABLE:ModuleNotFoundError; the other four core checks pass."},
+      {"test": "foundation.test_generator_reconciliation_staleness.Task106ReconciliationStalenessTest.test_propagation_reconciliation_check", "classification": "HISTORICAL_SEALED", "reason": "Historical 104-106 NO_IMPACT_JUSTIFIED records remain inconsistent with derived impact."},
+      {"test": "foundation.test_generator_reconciliation_staleness.Task106ReconciliationStalenessTest.test_propagation_reconciliation_unit", "classification": "HISTORICAL_SEALED", "reason": "Wrapper failure over the same append-only 104-106 residual set."},
+      {"test": "test_propagation_reconciliation.TestRemediatedRepository.test_run_check_clean", "classification": "HISTORICAL_SEALED", "reason": "Direct failure over the same 18 historical 104-106 residual messages; current Task 124 changes are not the source."}
+    ]
+  },
+  "targeted_gates": {
+    "control_plane_module_focus": "PASS (49 tests)",
+    "architecture_human_knowledge_production_focus": "PASS (29 tests)",
+    "event_policy_resource_scheduler_health_queue_dispatch_memory_console": "PASS",
+    "five_child_adversarial_pilot": "PASS (8/8 adversarial cases; max_concurrent_observed=2)",
+    "current_state_sync": "PASS (10/10 required surfaces; ARCHITECTURE_CHANGED)",
+    "current_facts_determinism": "PASS",
+    "system_map_and_geometry": "PASS (79 nodes/84 edges; crossing=187; blank_reduction=0.8741007194)",
+    "component_profiles": "PASS",
+    "phase_e_candidate": "PASS (no nested-CWD warnings)",
+    "reconciliation": "EXPECTED_HISTORICAL_RESIDUAL (104-106 only)",
+    "git_diff_check": "PASS"
+  },
+  "residual_classification": [
+    {
+      "id": "SYMPY-UNAVAILABLE",
+      "classification": "ENVIRONMENTAL",
+      "status": "PREEXISTING_ENVIRONMENT_LIMIT",
+      "evidence": "Full discovery reports ModuleNotFoundError for SymPy in T16 only; T2 Z3, D220 Z3, T2 Lean and T23 pending checks pass.",
+      "boundary": "No dependency installation or external environment mutation was authorized; this is not an R2 implementation regression."
+    },
+    {
+      "id": "PROPAGATION-104-106",
+      "classification": "HISTORICAL_SEALED",
+      "status": "REQUIRES_REVIEW",
+      "evidence": "The same 18 messages are emitted by direct and wrapper tests: MACHINE_RECORD_IMPACT, SYSTEM_MAP_IMPACT and PROJECT_STATE_IMPACT are declared NO_IMPACT_JUSTIFIED while derived paths require impact.",
+      "boundary": "Records 104-106 remain append-only historical evidence; Task 124 does not rewrite, waive or upgrade them."
+    }
+  ],
+  "privacy_and_external_boundary": {
+    "external_live_invocation": "NOT_RUN",
+    "external_agent_install_or_upgrade": false,
+    "external_configuration_changed": false,
+    "secret_content_read": false,
+    "private_provider_telemetry_retained": false,
+    "formal_repository_used_as_live_target": false,
+    "claim_ceiling": "Local repository evidence only; no live executor, provider, external-side-effect, production, Owner or epistemic acceptance is established."
+  },
+  "fresh_clone_replay": {
+    "status": "PENDING_STEP12_COMMIT",
+    "required": ["fetch task branch exact SHA", "replay Step 00-12 ledger and validators", "rebuild/check deterministic projections", "verify clean tree and exact SHA"],
+    "source_of_truth": "The final Step 12 commit and its pushed task-branch SHA; this artifact intentionally contains no self-referential final SHA."
+  },
+  "formal_main": {
+    "expected_before_fast_forward": "266426d7110af9ee921a020a46c3a0347aa364e9",
+    "merge_mode": "FAST_FORWARD_ONLY",
+    "final_task_branch_sha": null,
+    "final_main_sha": null,
+    "local_tracking_ls_remote_fresh_fetch_equality": "PENDING_STEP12_COMMIT",
+    "independent_1111_receipt": "PENDING_FINAL_FAST_FORWARD",
+    "final_tip_binding": "Bind exact Step 12 commit, task-branch remote SHA, main local/tracking/ls-remote/fresh-fetch SHA and the independent 1111 receipt after this non-amended commit."
+  },
+  "claim_ceiling": "Repository-scoped OS Control Plane implementation, deterministic projection, adversarial offline coordination and classified validation evidence only; no external truth, Owner acceptance, production readiness or epistemic upgrade is inferred.",
+  "closure_binding": "After this single Step 12 commit and push, perform fresh-clone replay, fast-forward-only formal main, exact local/tracking/ls-remote/fresh-fetch verification, then publish the independent 1111 receipt branch and Draft PR without auto-merge.",
+  "next_step": "FINAL_FAST_FORWARD_AND_RELAY"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/reasoner-transport-r1.schema.json",
+  "oneOf": [
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["phase", "run_id", "goal_summary", "environment_summary", "capability_catalog", "memory_summaries", "previous_summaries"],
+      "properties": {
+        "phase": {"enum": ["FRAME", "PLAN"]}, "run_id": {"type": "string"},
+        "goal_summary": {"type": "string"}, "environment_summary": {"type": "string"},
+        "capability_catalog": {"type": "array", "items": {"type": "string"}},
+        "memory_summaries": {"type": "array", "items": {"type": "string"}},
+        "previous_summaries": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["phase", "frame_summary", "packets", "status", "block_summary"],
+      "properties": {
+        "phase": {"enum": ["FRAME", "PLAN"]}, "frame_summary": {"type": ["string", "null"]},
+        "packets": {"type": "array", "items": {"$ref": "action-packet-r1.schema.json"}},
+        "status": {"enum": ["CONTINUE", "STOP", "WAITING_FOR_INPUT"]}, "block_summary": {"type": ["string", "null"]}
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "task_id": "IGNITION-20260907-162",
+  "run_01": {
+    "status": "INVALIDATED",
+    "reason": "post-selection quota audit found three Charles Darwin works, violating the frozen maximum of two works per author",
+    "source_manifest_sha256": "766f57ed92b917cdf11fc6d394be1a5c0466b2ece86048e64d54f6476a631d3c",
+    "candidate_freeze_sha256": "ea9f1b9a344c145bf818ae3a55b429c9839829d35e05826de73ca68207c4af54",
+    "external_summary_sha256": "7deeb8d04a0fe189e951aa477018636dbff2d9964c969b07c93d199dc9a6fbe7",
+    "preserved_copy": "invalidated-runs/run-01/"
+  },
+  "run_02": {
+    "status": "INVALIDATED_AFTER_TOKEN_COVERAGE_AUDIT",
+    "replacement": "GUT-27513 The Book of the National Parks by Robert Sterling Yard",
+    "replacement_rule": "same frozen ecology_complex_systems slot; first eligible catalog candidate after author-quota audit; decision independent of induction results",
+    "selection_rule_unchanged": true,
+    "answer_guided_reselection": false,
+    "source_manifest_sha256": "115fe8b8df1daf3e954a66576789e33c97528f3e1bff75b2af780ba34bf05245",
+    "coherence_ablation_sha256": "17cb69e434305147790c7486c19b0079b2f3e9193677717aaf2b2d32f35646a0",
+    "reason": "two PDF segment maps dropped short intervals, so shuffle and fragment variants did not preserve the original token count",
+    "preserved_copy": "invalidated-runs/run-02/"
+  },
+  "run_03": {
+    "status": "COMPLETED_VALID_FINAL_RUN",
+    "repair": "retain every positive-length segment so O/S/F cover the complete token stream",
+    "answer_guided_reselection": false,
+    "source_manifest_sha256": "59494657ae3055e9d6e7f50ee73088c894e6755e27f1797b3403c77b511d077b",
+    "external_track_summary_sha256": "d7201419d9112b1374461c55af9232e2b07175bb2b7cafc87c919c857224ade8",
+    "coherence_ablation_sha256": "c046e67522affb8b7a9e9a23d3b8eeef10037e397cd33a2f66da279ad678d437",
+    "v2_gate_sha256": "da38510a10789161acbf7041207a012129d2435fda1ebe32df506ef636a453b9",
+    "verdict_sha256": "8a3afe397cf71d6900248dbca630fc02757a9dbaf38bcdae2541bdf1dfb65646",
+    "final_outputs": "task root; invalidated-runs/run-01 and invalidated-runs/run-02 remain preserved"
+  }
+}

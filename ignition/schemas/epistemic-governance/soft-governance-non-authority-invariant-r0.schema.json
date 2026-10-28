@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/soft-governance-non-authority-invariant-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "invariant_id", "status", "soft_inputs", "allowed_effects", "forbidden_authority_effects", "hard_authority_sources", "contract_text"],
+  "properties": {
+    "schema_version": {"const": "soft-governance-non-authority-invariant-r0"},
+    "invariant_id": {"const": "SOFT_GOVERNANCE_NON_AUTHORITY_INVARIANT"},
+    "status": {"const": "MACHINE_ENFORCED"},
+    "soft_inputs": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"type": "string"}},
+    "allowed_effects": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"type": "string"}},
+    "forbidden_authority_effects": {"type": "array", "minItems": 8, "uniqueItems": true, "items": {"type": "string"}},
+    "hard_authority_sources": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"type": "string"}},
+    "contract_text": {"type": "string", "minLength": 120},
+    "escalation_rule": {"type": "string", "minLength": 40}
+  },
+  "additionalProperties": false
+}

@@ -150,10 +150,6 @@ Latent-system candidates and equivalent decompositions can remain candidate obje
 
 Multiple evidence-constrained history/world candidates can preserve shared evidence, branch assumptions, indistinguishable sets and falsifiers without forcing a unique story or unjustified probability. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: generated possibility is not real probability; indistinguishable paths are not ranked facts; no evidence-free story; no forced unique narrative.
 
-### Q42-I1 Counterfactual & Unrealized-Path Ledger (stacked Draft candidate)
-
-Counterfactuals, alternative decompositions, unrealized paths and speculative narratives can be kept distinct, and only identifiable portions receive bounded counterfactual status. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: if-then story is not causal fact; unobservable portion remains unobservable; alternative decomposition is not counterfactual proof; no external intervention.
-
 ### Q43-I1 Graded Intervention & Professional Escalation (stacked Draft candidate)
 
 Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no legal action; no medical action; no financial action; no safety-critical external action.
@@ -176,11 +172,14 @@ A draft production execution layer (`tools/ignition_runtime`) commits every
 authoritative state change as a new immutable generation for the repair-r3
 scientific-context-protocol material set. It remains evidence-bound,
 repository-local, unreviewed, unready, unmerged and not Current. Explicit
-non-claims: it does not change the iteration method `1.3.0`, the seven-layer
-epistemic architecture, or any frozen formal protocol; it does not auto-promote
-candidates to formal knowledge and does not auto-trigger engineering evolution;
-an ordinary RUN never imports or calls PROMOTE/EVOLVE. Verified only by its own
-45-scenario adversarial suite; pending independent review, merge and final-main CI.
+non-claims: the original frozen build was developed against iteration method
+`1.3.0`; this review branch inherits method `1.4.0` from PR #118, and the runtime
+has not been reviewed or revalidated under `1.4.0`. The runtime does not itself
+change the current method, seven-layer epistemic architecture, or any frozen
+formal protocol; it does not auto-promote candidates to formal knowledge and
+does not auto-trigger engineering evolution; an ordinary RUN never imports or
+calls PROMOTE/EVOLVE. Its original 45-scenario suite was authored against the
+frozen `1.3.0` base; exact-parent regression is pending.
 
 ### ARR-R1 Adaptive Relational Runtime Scaffold (stacked Draft candidate)
 

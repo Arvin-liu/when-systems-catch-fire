@@ -1,0 +1,182 @@
+{
+  "canonical_sources": [
+    "ignition/tools/architecture_impact.py",
+    "ignition/agent_federation/live_observation_plane.py",
+    "ignition/agent_federation/live_attempt_ledger.py",
+    "ignition/agent_federation/live_reconciliation.py",
+    "ignition/agent_federation/live_current_projection.py",
+    "ignition/agent_federation/local_executor_census.py",
+    "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "ignition/data/operations/iterations/140/live-current-projection-r2.json"
+  ],
+  "case_count": 20,
+  "cases": [
+    {
+      "case_id": "task139-process-transport-presentation-only",
+      "detail": "ArchitectureImpactError: declared classification 'PRESENTATION_ONLY' disagrees with semantic classification 'BEHAVIORAL_CONTROL_PLANE_CHANGE'",
+      "expected_action": "REJECT",
+      "guard": "ARCHITECTURE_IMPACT_CLASSIFIER",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "probe-zero-masquerades-live-zero",
+      "detail": "LiveObservationOutcomeError: live_process_return_code must be null when live_process_started is false",
+      "expected_action": "REJECT",
+      "guard": "TYPED_OBSERVATION_PROCESS_SCOPE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "no-live-dispatch-marked-completed",
+      "detail": "MatrixGuardError: COMPLETION_REQUIRES_OBSERVED_LIVE_DISPATCH",
+      "expected_action": "REJECT",
+      "guard": "COMPLETION_REQUIRES_LIVE_DISPATCH",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "terminal-unknown-upgraded-to-success",
+      "detail": "LiveReconciliationError: reconciliation schema violation at external_effect_knowledge: 'UNKNOWN' was expected",
+      "expected_action": "REJECT",
+      "guard": "RECONCILIATION_UNKNOWN_CEILING",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "terminal-unknown-preserved",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "RECONCILIATION_UNKNOWN_PRESERVATION",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    },
+    {
+      "case_id": "open-reconciliation-allows-new-dispatch",
+      "detail": "MatrixGuardError: NEW_DISPATCH_BLOCKED_UNTIL_RECONCILIATION",
+      "expected_action": "REJECT",
+      "guard": "RETRY_REQUIRES_RECONCILIATION_CLOSURE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "terminalized-unknown-allows-fresh-identity",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "FRESH_ATTEMPT_IDENTITY_AFTER_TERMINALIZATION",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    },
+    {
+      "case_id": "exit-zero-without-structured-result",
+      "detail": "MatrixGuardError: COMPLETION_REQUIRES_COMPLETED_VALIDATED_PROCESS_STATE",
+      "expected_action": "REJECT",
+      "guard": "COMPLETION_RESULT_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "structured-result-without-validator",
+      "detail": "MatrixGuardError: COMPLETION_REQUIRES_COMPLETED_VALIDATED_PROCESS_STATE",
+      "expected_action": "REJECT",
+      "guard": "COMPLETION_VALIDATOR_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "wrong-validator-binding",
+      "detail": "MatrixGuardError: COMPLETION_REQUIRES_EXACT_RESULT_VALIDATOR_BINDING",
+      "expected_action": "REJECT",
+      "guard": "EXACT_RESULT_VALIDATOR_BINDING",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "workspace-modified-completion",
+      "detail": "MatrixGuardError: COMPLETION_REQUIRES_UNCHANGED_READ_ONLY_WORKSPACE",
+      "expected_action": "REJECT",
+      "guard": "READ_ONLY_WORKSPACE_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "incomplete-capture-completion",
+      "detail": "MatrixGuardError: COMPLETION_REQUIRES_COMPLETED_VALIDATED_PROCESS_STATE",
+      "expected_action": "REJECT",
+      "guard": "DURABLE_CAPTURE_COMPLETENESS_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "private-output-in-ledger",
+      "detail": "LiveAttemptLedgerError: record.claim_ceiling contains private or hidden material",
+      "expected_action": "REJECT",
+      "guard": "PUBLIC_LEDGER_CONTENT_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "plain-gh-promoted-to-agent",
+      "detail": "LocalExecutorCensusError: candidates[5].admission_status does not match safety checks",
+      "expected_action": "REJECT",
+      "guard": "EXECUTOR_KIND_ADMISSION_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "reasoner-runtime-closes-agent-obligation",
+      "detail": "LocalExecutorCensusError: candidates[6].non-agentic candidate must be NOT_APPLICABLE",
+      "expected_action": "REJECT",
+      "guard": "EXECUTOR_KIND_ADMISSION_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "same-family-blind-retry",
+      "detail": "MatrixGuardError: SAME_EXECUTOR_FAMILY_RETRY_REJECTED",
+      "expected_action": "REJECT",
+      "guard": "ONE_ATTEMPT_PER_EXECUTOR_FAMILY",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "validated-completion-then-probe",
+      "detail": "MatrixGuardError: POST_VALIDATED_PROBE_REJECTED",
+      "expected_action": "REJECT",
+      "guard": "STOP_AFTER_FIRST_VALIDATED_COMPLETION",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "task125-marked-executed",
+      "detail": "MatrixGuardError: TASK125_EXECUTED_MUTATION_REJECTED: $.lineages[0].predecessor.task_file_status: 'HISTORICAL_UNEXECUTED' was expected",
+      "expected_action": "REJECT",
+      "guard": "HISTORICAL_TASK125_LINEAGE_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "authority-inflation",
+      "detail": "MatrixGuardError: AUTHORITY_INFLATION_REJECTED",
+      "expected_action": "REJECT",
+      "guard": "SOFT_GOVERNANCE_AUTHORITY_CEILING",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "projection-reconciliation-replay-idempotent",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "APPEND_ONLY_DETERMINISTIC_REPLAY",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    }
+  ],
+  "claim_ceiling": "Task140 repository-local adversarial Observation/Reconciliation boundary evidence only; no live process was started by this matrix and no external truth, validated completion, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "live_processes_started": 0,
+  "negative_case_count": 17,
+  "positive_case_count": 3,
+  "schema_version": "ignition-140-step13-adversarial-matrix-r1",
+  "status": "PASS",
+  "task_id": "IGNITION-20260826-140"
+}
