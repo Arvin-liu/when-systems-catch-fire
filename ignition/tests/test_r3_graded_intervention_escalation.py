@@ -3,7 +3,7 @@
 
 Builds a valid positive bundle from REAL Git objects, runs the wired graded_intervention_escalation gate,
 and asserts:
-  * positive pilot                       -> exit 0
+  * synthetic conformance bundle         -> exit 0
   * semantically-false (flipped value)   -> exit 30 (EVALUATOR_RULE_FAILED, 30+index)
   * unrelated-valid-evidence laundering  -> nonzero
 
@@ -55,11 +55,11 @@ class GradedInterventionEscalationR3Tests(unittest.TestCase):
     def _bundle(self):
         return build_bundle(self.config, self.matrix, self.rule_fields)
 
-    def test_positive_pilot_passes(self):
+    def test_synthetic_conformance_bundle_passes(self):
         b = self._bundle()
         p = write_bundle(b)
         rc, out, err = run_gate(GATE, p)
-        self.assertEqual(rc, 0, f"positive bundle should pass; stderr={err}; out={out}")
+        self.assertEqual(rc, 0, f"synthetic conformance bundle should pass; stderr={err}; out={out}")
 
     def test_semantically_false_but_git_valid_fails(self):
         b = self._bundle()

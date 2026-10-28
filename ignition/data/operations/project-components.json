@@ -3021,7 +3021,8 @@
       },
       "path_patterns": [
         "schemas/escalation/graded_intervention_escalation-contract.schema.json",
-        "docs/escalation/"
+        "docs/escalation/",
+        "docs/repair-r3/repair-r3/graded_intervention_escalation-freeze.md"
       ]
     },
     {
@@ -3042,7 +3043,9 @@
       },
       "path_patterns": [
         "tools/escalation/",
-        "tests/escalation/"
+        "tests/escalation/",
+        "tests/repro_rb09_graded_intervention_escalation_r2_evidence.txt",
+        "tests/test_r3_graded_intervention_escalation.py"
       ]
     },
     {
@@ -3063,10 +3066,13 @@
       },
       "path_patterns": [
         "data/escalation/pilot-q43-i1.json",
-        "data/escalation/fixtures/"
+        "data/escalation/fixtures/",
+        "data/escalation/repair-r2-controlled-reproduction.json",
+        "data/escalation/repro/original-evidence-binding-failure.json",
+        "data/escalation/repro/q43-r0-escalation-sample.json"
       ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.6"
+  "registry_version": "2.9.7"
 }

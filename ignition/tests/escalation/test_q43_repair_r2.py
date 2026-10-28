@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Q43 repair-r2 contract test (RB09-DIRECT-PREDECESSOR-BINDING + inherited engine)."""
+"""Q43 R2 parent-binding contract and preserved legacy-sample test."""
 import json, subprocess, sys, tempfile, unittest
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
@@ -17,9 +17,11 @@ class RepairR2Tests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp()
         self.pilot = json.loads(PILOT.read_text())
-    def test_pilot_bound_to_real_r2_head_passes(self):
+    def test_pilot_binds_current_r2_parent_but_legacy_sample_is_not_r3_pass(self):
+        self.assertEqual(self.pilot["parent_binding"]["exact_head"], CORRECT_HEAD)
         code, out = _run(self.pilot, self.tmp)
-        self.assertEqual(code, 0, out)
+        self.assertEqual(code, 30, out)
+        self.assertIn("RISK_CLASS", out)
     def test_wrong_predecessor_head_rejected(self):
         b = json.loads(PILOT.read_text())
         b["parent_binding"]["exact_head"] = "0" * 40

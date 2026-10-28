@@ -18,7 +18,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-MANAGED_PY = "/Users/zhiyuan/.workbuddy/binaries/python/envs/default/bin/python"
+MANAGED_PY = sys.executable
 
 REPO_ROOT = Path(
     subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True
