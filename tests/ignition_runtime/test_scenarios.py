@@ -775,6 +775,8 @@ def test_s43_diff_scope():
         'ignition/reports/ignition-rpe/',
         'ignition/AI-HANDOFF.md',
         'ignition/AI-START-HERE.md',
+        'ignition/tools/validate_human_front_door.py',
+        'ignition/llms.txt',
         'ignition/RESULTS/',
         'ignition/data/governance/human-results/',
         'ignition/data/governance/human-surface/',

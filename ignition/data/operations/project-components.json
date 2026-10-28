@@ -3220,6 +3220,7 @@
         "reports/ignition-rpe/",
         "schemas/ignition_runtime/",
         "tests/ignition_runtime/",
+        "tests/rpe_ci/",
         "tools/ignition_runtime/"
       ],
       "authority": "canonical",
