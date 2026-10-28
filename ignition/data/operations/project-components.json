@@ -95,6 +95,17 @@
       "reason": "historical_reports and iteration_manifest_contract share reports/operations/ for historical ops and 121Q32 reports."
     },
     {
+      "authority_source": "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
+      "component_ids": [
+        "arr",
+        "historical_reports"
+      ],
+      "path_patterns": [
+        "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json"
+      ],
+      "reason": "ARR owns this exact R2 completion seal as component-specific evidence; historical_reports retains generic reports/operations/ archival ownership. The narrow overlap lets both focused validations account for the file without transferring ownership of other operations reports."
+    },
+    {
       "authority_source": "HUMAN-READING.md",
       "component_ids": [
         "human_knowledge_surfaces",
@@ -3287,5 +3298,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.14"
+  "registry_version": "2.9.15"
 }
