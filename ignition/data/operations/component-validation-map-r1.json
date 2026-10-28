@@ -15,9 +15,10 @@
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
         "tests.test_production_execution_authority",
-        "tests.foundation.test_trigger_coverage"
+        "tests.foundation.test_trigger_coverage",
+        "tests.test_q33_governance_infrastructure"
       ],
-      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
+      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, final-main-witness workflow-path, and Q33 governance-infrastructure coverage fixtures exercise component closure and fail-closed release evidence.",
       "import_roots": [
         "ignition"
       ]
@@ -81,13 +82,14 @@
       "domain": "G",
       "modules": [
         "tests.foundation.test_claim_governance",
-        "tests.foundation.test_nonfunction_claim_closure"
+        "tests.foundation.test_nonfunction_claim_closure",
+        "tests.test_knowledge_corpus_admission"
       ],
       "import_roots": [
         "ignition",
         "ignition/tools/foundation"
       ],
-      "evidence": "Existing Foundation claim-governance and nonfunction-closure consumers validate L3 argument and claim relationships."
+      "evidence": "Existing Foundation claim-governance, nonfunction-closure, and corpus-admission tests validate L3 argument, claim, and source-admission boundaries."
     },
     {
       "target_id": "g_history_remediation_contract",
@@ -256,6 +258,20 @@
       ]
     },
     {
+      "component_id": "copyright_governance_tests",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Q33 workflow/dependency changes and their existing infrastructure tests route through the current governance-control suite; this target assignment does not independently widen regression scope."
+    },
+    {
       "component_id": "current_state",
       "domains": [
         "O",
@@ -263,6 +279,7 @@
       ],
       "validation_targets": [
         "g_current_state_consumers",
+        "g_human_front_door_consumers",
         "o_human_result_consumers"
       ],
       "change_classifications": [
@@ -310,9 +327,11 @@
         "O",
         "G"
       ],
-      "validation_targets": [],
+      "validation_targets": [
+        "g_foundation_argument_consumers"
+      ],
       "requires_full_regression": true,
-      "evidence": "Foundation spans all layers and shared claims; its current required consumers are the complete foundation-validation workflow.",
+      "evidence": "Foundation spans all layers and shared claims; corpus-admission changes also select the existing argument consumers and require the complete Foundation regression.",
       "change_classifications": [
         "CAPABILITY_ADDITION",
         "EVIDENCE_UPDATE",
