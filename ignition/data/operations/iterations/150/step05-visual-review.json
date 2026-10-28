@@ -1,0 +1,59 @@
+{
+  "schema_version": "ignition-150-step05-visual-review-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "05",
+  "record_type": "VISUAL_REVIEW_EVIDENCE",
+  "status": "AGENT_VISUAL_INSPECTION_RECORDED_OWNER_PENDING",
+  "formal_previous_commit": "e6d29c57ea54817bdebc39f0d83e5c362e6caf46",
+  "automated_review": {
+    "standalone_visual_check": "PASS",
+    "standalone_visual_review": "pending",
+    "delta_visual_check": "FAIL_UPSTREAM_WRAPPER",
+    "delta_visual_review": "pending"
+  },
+  "agent_visual_inspection": {
+    "status": "STANDALONE_PASS_WITH_LIMITS_DELTA_BLOCKED",
+    "method": "LOCAL_PNG_INSPECTION_AFTER_BROWSER_FILE_URL_POLICY_BLOCK",
+    "browser_observation": "IN_APP_BROWSER_REJECTED_LOCAL_FILE_URL; NO_POLICY_BYPASS",
+    "checks": {
+      "main_path": "PASS_WITH_LIMITS",
+      "component_crowding": "PASS_WITH_LIMITS",
+      "label_occlusion": "NO_OBVIOUS_OCCLUSION_IN_STANDALONE",
+      "edge_visual_signal": "NO_OBVIOUS_FALSE_DIRECTIONAL_SIGNAL",
+      "dark_light_readability": "PASS_WITH_LIMITS_STANDALONE",
+      "viewport_hierarchy": "PASS_STANDALONE_FAIL_DELTA_WRAPPER",
+      "delta_three_panel_readability": "NOT_ACCEPTED_UPSTREAM_WRAPPER_OVERFLOW_AND_THEME_RESOLUTION"
+    },
+    "notes": [
+      "The standalone light and dark captures show the authored path and boundaries without an obvious node or label collision.",
+      "At 1440px width the diagram remains legible but labels are small and the composition is dense; this is a bounded experiment, not an aesthetic acceptance claim.",
+      "The 2048px captures preserve hierarchy with more breathing room.",
+      "The Delta capture is not accepted as a readable three-panel review: the upstream shell overflows at required small viewports and the 1440px light-labelled capture resolves to the same dark artifact as the dark capture.",
+      "Semantic direction and architecture meaning remain bound to the authored source and Step03 provenance contract, not to visual impression."
+    ]
+  },
+  "owner_visual_acceptance": "OWNER_VISUAL_ACCEPTANCE_PENDING",
+  "evidence_files": [
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/architecture.visual-check.1440x900.dark.png","kind":"png","sha256":"d0f7271d25c9a6f06fb9f3c6baef83eae474ab2ca47f32f1ec2eaa59b9a74f73","bytes":168942},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/architecture.visual-check.1440x900.light.png","kind":"png","sha256":"ce6978a204ae7595f7a057115c61a38fd393786a07239ff07c5821b449344eb0","bytes":170815},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/architecture.visual-check.2048x1320.dark.png","kind":"png","sha256":"7a0fbc32dbd337fc4665e836feb8f9db4d527aa419d3ab901b683c7c57174560","bytes":214895},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/architecture.visual-check.2048x1320.light.png","kind":"png","sha256":"36ceb3505d2c90f1997d0b1f5fad447136099afe0f95365bf8b356f3b66aceeb","bytes":217188},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/architecture.visual-check.html","kind":"contact_sheet_html","sha256":"ff68109bcd17d3636dfc5d71e4b5bd5c0569805dce07ec9704d8762c306645d0","bytes":1916},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/architecture.visual-check.json","kind":"machine_receipt_json","sha256":"ba7e39540aa6f23cbd939a470442245b75683e4db1ba6769bdf5b6357372d8f4","bytes":17221},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/delta.visual-check.1440x900.dark.png","kind":"png","sha256":"059b253345e26310489810b52a42e9f4a872efdcd35c3483425342fc8452cd2b","bytes":196294},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/delta.visual-check.1440x900.light.png","kind":"png","sha256":"059b253345e26310489810b52a42e9f4a872efdcd35c3483425342fc8452cd2b","bytes":196294},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/delta.visual-check.2048x1320.dark.png","kind":"png","sha256":"10b42d55b34913f1da58544107b5ce7ec2512ba9387ecc1cedfe3cb14e7851c8","bytes":246320},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/delta.visual-check.2048x1320.light.png","kind":"png","sha256":"10b42d55b34913f1da58544107b5ce7ec2512ba9387ecc1cedfe3cb14e7851c8","bytes":246320},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/delta.visual-check.html","kind":"contact_sheet_html","sha256":"8514764707d3fd839102ad6f3d8fe95fd5fd1dacaa1e12185973907026ec8ccd","bytes":1874},
+    {"path":"ignition/data/operations/iterations/150/visual-evidence/delta.visual-check.json","kind":"machine_receipt_json","sha256":"75192256bade029bb36f01bfd31edf05cb83c136c91605eac50fe9cfcd7cd63d","bytes":18633}
+  ],
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channels": "NO_AUTHENTICATED_ADMISSION",
+    "installation": "NO_INSTALL_OR_AUTO_UPGRADE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "current_admission": "NOT_ADMITTED"
+  },
+  "claim_ceiling": "Task150 Step05 records automated visual evidence and a bounded agent inspection of standalone screenshots while retaining the upstream Delta-shell blocker and Owner visual acceptance pending. It does not establish perceptual quality, Owner acceptance, Current integration, a default renderer, architecture truth, production readiness, authenticated access, external truth or live external completion."
+}

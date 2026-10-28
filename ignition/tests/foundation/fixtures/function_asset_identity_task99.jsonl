@@ -1,0 +1,12 @@
+{"primary_identity":"STRICT_MATHEMATICAL_FUNCTION","example":"f: R -> R with a single-valued rule"}
+{"primary_identity":"PARAMETRIC_MATHEMATICAL_MODEL","example":"a parameter-indexed model family"}
+{"primary_identity":"SCORING_OR_INDEX_FUNCTION","example":"a calibrated scalar score"}
+{"primary_identity":"GATE_OR_CLASSIFIER","example":"a Boolean threshold predicate"}
+{"primary_identity":"OPERATOR_OR_TRANSFORM","example":"a declared source-to-target-space transform"}
+{"primary_identity":"RELATION_OR_CONSTRAINT","example":"a possibly multivalued relation"}
+{"primary_identity":"ALGORITHM_OR_WORKFLOW","example":"an executable sequence with state"}
+{"primary_identity":"HEURISTIC","example":"a defeasible rule of thumb"}
+{"primary_identity":"STRUCTURAL_METAPHOR","example":"an analogy without structure-preservation proof"}
+{"primary_identity":"CONJECTURE_OR_RESEARCH_CANDIDATE","example":"an open proposition"}
+{"primary_identity":"INVALID_OR_PSEUDO_FUNCTION","example":"a circular or type-inconsistent pseudo-function"}
+{"primary_identity":"UNRESOLVED_IDENTITY","example":"a named candidate without enough source semantics"}

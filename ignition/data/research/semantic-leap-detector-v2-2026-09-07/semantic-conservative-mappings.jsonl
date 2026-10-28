@@ -1,0 +1,14 @@
+{"event_id":"N01_KB_116_NOTE_SYNC","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N02_INCREMENTAL_REGISTRY","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N03_CANONICAL_PROTOCOL_MIGRATION","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N04_PAGES_PROJECTION","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N05_SOURCE_FIRST_SEEN","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N06_HUMAN_CLAIM_BROWSER","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N07_TASK157_PROJECTIONS","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N08_TASK156_RESULTS","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N09_CURRENT_FACTS","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N10_NONFUNCTION_REFRESH","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N11_ARCHIFY_ADAPT","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"N12_VALIDATOR_ADD","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"B01_CURRENT_SYNC","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}
+{"event_id":"B02_PROVIDER_FALLBACK","mapping":{"from":"OldBasis","new_reachable_states":false,"preserves":["objects","operations","questions"],"to":"NewRepresentation"}}

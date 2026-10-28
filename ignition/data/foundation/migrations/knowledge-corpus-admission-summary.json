@@ -1,0 +1,62 @@
+{
+  "after_counts": {
+    "fire_seed_candidate_entries": 64,
+    "fire_seed_source_records": 370,
+    "function_census_records": 5401,
+    "function_tracked_text_files_scanned": 3163,
+    "knowledge_experience_search_records": 21175,
+    "nonfunction_claim_records": 15466,
+    "nonfunction_tracked_files_accounted": 3812
+  },
+  "baseline_commit": "8cc9291c0af9d3df686628bfd7dbae365523e327",
+  "before_counts": {
+    "fire_seed_candidate_entries": 64,
+    "fire_seed_source_records": 369,
+    "function_census_records": 7588,
+    "function_tracked_text_files_scanned": 3484,
+    "knowledge_experience_search_records": 26372,
+    "nonfunction_claim_records": 18476,
+    "nonfunction_tracked_files_accounted": 3802
+  },
+  "claim_ceiling_changes": 0,
+  "deletion": "none; current projection withdrawal only",
+  "function_rows": 2187,
+  "migration_status": "PROVENANCE_PRESERVED",
+  "nonfunction_rows": 3015,
+  "platform_only_withdrawals": {
+    "function_rows": 2187,
+    "nonfunction_rows": 3015
+  },
+  "policy": {
+    "classes": [
+      "GENERATED_PROJECTION_EXCLUDED",
+      "HISTORICAL_PROVENANCE_ONLY",
+      "KNOWLEDGE_SOURCE_ELIGIBLE",
+      "KNOWLEDGE_SOURCE_EXPLICIT_ONLY",
+      "PLATFORM_CODE_EXCLUDED"
+    ],
+    "explicit_allowlist": [
+      "docs/architecture/agent-platform-r2.md",
+      "docs/architecture/agent-runtime-r0.md",
+      "docs/architecture/agent-runtime-r1.md",
+      "docs/architecture/agentization-boundary-r0.md",
+      "packs/knowledge/README.md"
+    ],
+    "policy_id": "KNOWLEDGE_CORPUS_ADMISSION_R1",
+    "rule_count": 4,
+    "schema_version": "1.0.0"
+  },
+  "projection_delta": {
+    "fire_seed_candidate_entries": 0,
+    "fire_seed_source_records": 1,
+    "function_census_records": -2187,
+    "function_tracked_text_files_scanned": -321,
+    "knowledge_experience_search_records": -5197,
+    "nonfunction_claim_records": -3010,
+    "nonfunction_tracked_files_accounted": 10
+  },
+  "row_count": 5202,
+  "source_hashes_present": 5202,
+  "source_of_truth": "This append-only migration report plus the original baseline commit.",
+  "task_id": "IGNITION-20260816-121"
+}

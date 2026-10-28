@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step07-architecture-delta-smoke-r1.schema.json",
+  "title": "Task150 Step07 architecture Delta smoke",
+  "description": "Binds two formal lineage snapshots to Before/Delta/After output and fail-closed topology fixtures.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "lineage", "provider", "comparison", "fixtures", "evidence_files", "scope_freeze", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step07-architecture-delta-smoke-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "07"},
+    "record_type": {"const": "ARCHITECTURE_DELTA_SMOKE"},
+    "status": {"const": "ARCHITECTURE_DELTA_SMOKE_PASS_WITH_PROVENANCE_ONLY_AND_UPSTREAM_VISUAL_BLOCKER"},
+    "formal_previous_commit": {"const": "2ce2e098d421256ff976a535ca3e0962f182ae72"},
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["before", "after", "relationship"],
+      "properties": {
+        "before": {"$ref": "#/$defs/lineageState"},
+        "after": {"$ref": "#/$defs/lineageState"},
+        "relationship": {"const": "FORMAL_TASK149_LINEAGE_PROVENANCE_ONLY_TOPOLOGY_SAME"}
+      }
+    },
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "revision", "package_version", "role"],
+      "properties": {
+        "id": {"const": "archify"},
+        "revision": {"const": "7a16d30322f5bd09c832386faa95d8c9a933f0c0"},
+        "package_version": {"const": "2.17.0-dev.0"},
+        "role": {"const": "DERIVED_ARTIFACT_PROVIDER_NOT_AUTHORITY"}
+      }
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["before", "delta", "after", "semantic_classification", "delta_visual"],
+      "properties": {
+        "before": {"$ref": "#/$defs/outputState"},
+        "delta": {"$ref": "#/$defs/outputState"},
+        "after": {"$ref": "#/$defs/outputState"},
+        "semantic_classification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["complete", "proof_level", "component_changes", "connection_changes", "boundary_changes", "presentation_changed", "provenance_changed", "checks_passed", "check_count"],
+          "properties": {
+            "complete": {"const": true},
+            "proof_level": {"const": "revision-pinned"},
+            "component_changes": {"const": {"added":0,"changed":0,"evidenceChanged":0,"removed":0,"moved":0}},
+            "connection_changes": {"const": {"added":0,"changed":0,"removed":0,"rerouted":0}},
+            "boundary_changes": {"const": {"added":0,"changed":0,"removed":0,"geometryChanged":0}},
+            "presentation_changed": {"const": false},
+            "provenance_changed": {"const": true},
+            "checks_passed": {"const": 28},
+            "check_count": {"const": 28}
+          }
+        },
+        "delta_visual": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "diagnostics", "diagnostic_code", "required_observations"],
+          "properties": {
+            "status": {"const": "FAIL_UPSTREAM_WRAPPER"},
+            "diagnostics": {"const": 3},
+            "diagnostic_code": {"const": "viewer/viewport-overflow"},
+            "required_observations": {
+              "const": [
+                {"theme":"light","viewport":"1440x900","scroll_height":1050,"ok":false},
+                {"theme":"light","viewport":"1600x1000","scroll_height":1074,"ok":false},
+                {"theme":"light","viewport":"1920x1080","scroll_height":1080,"ok":true},
+                {"theme":"light","viewport":"2048x1320","scroll_height":1320,"ok":true},
+                {"theme":"dark","viewport":"1440x900","scroll_height":1050,"ok":false},
+                {"theme":"dark","viewport":"2048x1320","scroll_height":1320,"ok":true}
+              ]
+            }
+          }
+        }
+      }
+    },
+    "fixtures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest", "results"],
+      "properties": {
+        "manifest": {"const": "ignition/data/operations/iterations/150/fixtures/task150-step07-fail-closed.json"},
+        "results": {
+          "const": [
+            {"id":"extra-node","expected":"FAIL_TOPOLOGY_DRIFT"},
+            {"id":"extra-edge","expected":"FAIL_TOPOLOGY_DRIFT"},
+            {"id":"geometry-moved","expected":"PASS_TOPOLOGY_UNCHANGED_NOT_ARCHITECTURE_CHANGE"},
+            {"id":"provenance-only","expected":"PASS_PROVENANCE_ONLY"}
+          ]
+        }
+      }
+    },
+    "evidence_files": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "items": {"$ref": "#/$defs/evidenceFile"}
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "authenticated_channels", "installation", "live_external_invocation", "current_admission", "step04_blocker"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "step04_blocker": {"const": "INHERITED_UPSTREAM_WRAPPER_BLOCKER"}
+      }
+    },
+    "claim_ceiling": {"const": "Task150 Step07 proves only a Before/Delta/After smoke over two formal provenance-only lineage snapshots, exact topology guard fixtures and a revision-pinned semantic comparison. It does not claim architecture change from geometry or provenance movement, resolve the Step04 Delta-shell blocker, establish Current integration, a default renderer, architecture truth, runtime impact, Owner acceptance, production readiness, authenticated access, external truth or live external completion."}
+  },
+  "$defs": {
+    "lineageState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_path", "source_sha256", "source_revision", "role", "nodes", "edges"],
+      "properties": {
+        "source_path": {"enum": ["ignition/data/operations/iterations/149/step07-archify-before-r0.json", "ignition/data/operations/iterations/149/step07-archify-after-r0.json"]},
+        "source_sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "source_revision": {"pattern": "^[0-9a-f]{40}$"},
+        "role": {"const": "FORMAL_TASK149_LINEAGE_SNAPSHOT"},
+        "nodes": {"const": 24},
+        "edges": {"const": 24}
+      }
+    },
+    "outputState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["typed_path", "typed_sha256", "html_path", "html_sha256", "html_bytes", "validate", "deliver", "visual_check", "visual_review"],
+      "properties": {
+        "typed_path": {"pattern": "^ignition/data/operations/iterations/150/delta-evidence/"},
+        "typed_sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "html_path": {"pattern": "^ignition/data/operations/iterations/150/delta-evidence/"},
+        "html_sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "html_bytes": {"type": "integer", "minimum": 1},
+        "validate": {"const": "PASS"},
+        "deliver": {"const": "PASS"},
+        "visual_check": {"enum": ["PASS", "FAIL_UPSTREAM_WRAPPER"]},
+        "visual_review": {"const": "pending"}
+      }
+    },
+    "evidenceFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "bytes", "kind"],
+      "properties": {
+        "path": {"pattern": "^ignition/data/operations/iterations/150/delta-evidence/"},
+        "sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "bytes": {"type": "integer", "minimum": 1},
+        "kind": {"enum": ["typed_snapshot", "html", "machine_receipt_json"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "schema_version": "post-publication-current-check-spec-r1",
+    "task_id": "IGNITION-20260821-130",
+    "required_fresh_clone": true,
+    "post_publication_command": "python3 ignition/tools/validate_post_publication_current.py --post-publication --expected-sha <published-main-sha>",
+    "checks": [
+        "release_lifecycle",
+        "current_facts",
+        "current_snapshot",
+        "current_surface_compiler",
+        "typed_semantic_gate",
+        "task_lineage",
+        "current_state_sync",
+        "clean_worktree",
+        "remote-main-HEAD-equals-published-SHA"
+    ],
+    "publication_boundary": "The command is only acceptable after an ordinary fast-forward of formal main; a task-branch pass is readiness evidence, not publication evidence.",
+    "claim_ceiling": "This check specifies repository-local fresh-remote Current consistency only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

@@ -1,0 +1,43 @@
+{
+  "canonical_id": "OQ-09468",
+  "title": "OQ-103-5：Function OS v0.2 正确性（**已完成 · 有界**）",
+  "class": "SCIENTIFIC_EVIDENCE",
+  "is_meta": false,
+  "current_status": "OPEN_QUESTION",
+  "provenance": {
+    "source_file": "RESULTS/OPEN-QUESTIONS.md",
+    "canonical_id": "OQ-09468"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "articles",
+    "research-program"
+  ],
+  "evidence_needs": [
+    "**已完成（有界 v0.2 基准）**：任务 105 先预注册、再对抗验证，在精选基线上复现参考数值；原始目标判定 `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`（25 个 false_reject，源自 N2 嵌套相等提取缺陷 `split('==')`→`split('==',1)`），有界修复后目标判定 `SUPPORTED_WITHIN_BOUNDED_DOMAIN`。证据上限限定于有界域。"
+  ],
+  "stop_conditions": [
+    "不声称完整沙箱化、生产就绪或普遍正确；更宽表达式覆盖、敌对环境安全、生产可靠性与真实效用见 OQ-103-6。"
+  ],
+  "claim_ceiling": "Open research question; not a promised roadmap item.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 54.14,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.6,
+    "dependency_centrality": 0.5,
+    "falsifiability": 0.5,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.6,
+    "effort_evidence_cost": 0.4,
+    "reversibility_risk": 0.5,
+    "maturity_gap": 0.6,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.92
+  },
+  "missing_fields": [
+    "dependency_centrality"
+  ],
+  "blocked_reason": null
+}

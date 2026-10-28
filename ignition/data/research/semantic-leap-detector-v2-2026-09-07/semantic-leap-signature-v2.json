@@ -1,0 +1,9 @@
+{
+  "L1": "NO when a semantic-conservative OldBasis -> NewRepresentation mapping preserves states, operations and questions",
+  "L2": "YES only for a previously unproducible object/operator class",
+  "L3": "YES only with a pre-leap unaskable to post-leap representable question",
+  "L4": "YES only for a failure mode passing all old checks",
+  "L5": "supportive only; requires two independent pre-existing families",
+  "L6": "YES only if removing the new semantic primitive loses capability",
+  "challenger_priority": "any complete challenger plus no independent L2/L3/L4/L6 increment is NON_LEAP"
+}

@@ -1,0 +1,39 @@
+{
+  "boolean_grid": [
+    true,
+    false
+  ],
+  "claim_counts": {
+    "ARTIFACT_AND_TRACE_INTEGRITY": 11,
+    "BOUNDED_SEQUENTIAL_COMPOSITION": 8,
+    "CONTRACT_ENFORCEMENT": 30,
+    "FAIL_CLOSED_LANGUAGE_BOUNDARY": 24,
+    "REGISTRY_REVISION_AND_ROLLBACK_INTEGRITY": 8,
+    "SUPPORTED_SEMANTIC_FIDELITY": 398
+  },
+  "created_at": "2026-07-30T00:00:00Z",
+  "determinism": "exhaustive bounded enumeration; no case content depends on RNG",
+  "generator": "generate_corpus.py",
+  "generator_version": "1.0.0-preregistered",
+  "grid": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "grid3": [
+    -1,
+    0,
+    1
+  ],
+  "notes": "POSTCONDITION_FAILED cases use >=2 inconsistent postconditions; fidelity compares FOS computed value to independent oracle value.",
+  "seed": 20260730,
+  "strata_counts": {
+    "S1_reference_semantic": 398,
+    "S2_boundary_adversarial": 62,
+    "S3_stateful_lifecycle": 19
+  },
+  "target_commit": "16f640045b3dc9d411f015a51e45de07299d31fc",
+  "total_cases": 479
+}

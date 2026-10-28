@@ -1,0 +1,14 @@
+{
+  "external_source_selection_frozen": false,
+  "failed_gates": [
+    "true_leap_signal_at_least_3_of_4",
+    "p02_p03_p04_signal_at_least_2_of_3",
+    "at_least_one_true_holdout_hit"
+  ],
+  "fresh_holdout_selected": false,
+  "no_external_fulltext_acquired": true,
+  "reason": "The command requires immediate termination of the basis-escape main experiment when Stage A does not qualify the operator.",
+  "stage_a_status": "FAIL",
+  "status": "NOT_RUN_STAGE_A_STOP",
+  "task_id": "IGNITION-20260907-163"
+}

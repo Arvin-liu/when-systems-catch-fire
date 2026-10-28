@@ -1,0 +1,24 @@
+{
+  "purpose": "Front-door NonImpactProof registry. When an iteration assesses that a change has NO impact on the human front door, an explicit proof with a corroborating evidence_pr exempts that surface from the staleness assertions enforced by tools/validate_human_front_door.py. Silent omission is not permitted: only explicitly filed proofs exempt a surface. An empty exemptions array means every front-door surface is still in scope and must be verified current.",
+  "recognized_surfaces": [
+    "human.readme",
+    "human.current_state",
+    "ai.start",
+    "agent.handoff",
+    "machine.llms"
+  ],
+  "exemptions": [
+    {
+      "surface_id": "human.readme",
+      "iteration_id": "IGNITION-20260831-149",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "scope": "DRAFT_BRANCH_ONLY",
+      "reason": "Task149 is a provider adapter spike and not a capability activation. No supported Archify or Agent Reach capability, platform count, usage route, permission, Current integration or production claim is added to the human front door.",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/149/step17-limited-propagation-r0.json",
+        "ignition/data/operations/iterations/149/External Capability Provider Adapter Spikes R0.md"
+      ],
+      "claim_ceiling": "Repository-local Draft provider-spike evidence only; this proof does not exempt a future Ready, merged or Current review from re-adjudicating the homepage."
+    }
+  ]
+}

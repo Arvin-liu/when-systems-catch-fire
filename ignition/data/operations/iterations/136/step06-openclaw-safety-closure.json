@@ -1,0 +1,34 @@
+{
+  "schema_version": "ignition-136-step06-openclaw-safety-closure-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "06",
+  "adapter": {
+    "source": "ignition/agent_federation/live_adapters.py::LiveOpenClawAdapter",
+    "executor_id": "external.openclaw",
+    "observed_version": "OpenClaw 2026.7.1-2 (0790d9f)",
+    "observed_help_sha256": "b436caaa7b5712b3f596a4f7cd8c3f0f327edee2d240323cf7c7a532b09fc1f8",
+    "json_result": "advertised",
+    "disposable_workspace": "not publicly provable from agent help",
+    "noninteractive_one_shot": "agent turn exists but gateway/local session ownership remains",
+    "channel_effect_off": "not publicly provable; channel/deliver/message options are present",
+    "read_only_permission": "not explicitly exposed by agent surface",
+    "daemon_persistence": "gateway is running and owned outside this adapter",
+    "status": "SKIPPED_UNSAFE_WORKSPACE_OR_CHANNEL_BOUNDARY",
+    "live_invocation": "NOT_ATTEMPTED",
+    "concrete_blockers": [
+      "MISSING_PUBLIC_DISPOSABLE_WORKSPACE_BINDING",
+      "GATEWAY_OR_LOCAL_AGENT_SESSION_SURFACE_NOT_CHANNEL_OFF_PROVABLE",
+      "NO_EXPLICIT_READ_ONLY_PERMISSION_CEILING",
+      "MESSAGE_AND_CHANNEL_OPTIONS_PRESENT_IN_PUBLIC_AGENT_SURFACE"
+    ]
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_openclaw_adapter ignition.tests.test_live_hermes_adapter ignition.tests.test_live_codex_adapter ignition.tests.test_live_transport ignition.tests.test_live_bridge_contracts -v",
+    "tests": 23,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "OpenClaw public-surface safety observation only; OpenClaw live completion, channel safety, production readiness and external truth are not claimed."
+}

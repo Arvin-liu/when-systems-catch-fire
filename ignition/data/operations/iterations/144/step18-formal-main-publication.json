@@ -1,0 +1,30 @@
+{
+  "schema_version": "ignition-144-step18-formal-main-publication-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "18",
+  "status": "PASS",
+  "release_ready": true,
+  "formal_task_branch": "codex/ignition-144-engineering-phase-final-closure-production-handoff-r1-20260828",
+  "pre_publication_candidate_sha": "405b60662879690fc9d13831aee20897facc0078",
+  "formal_main_before_publication": {
+    "ref": "refs/heads/main",
+    "sha": "75c06887f59fa94868101707acc4b8386f41fe13"
+  },
+  "publication_transaction": {
+    "required_ref": "refs/heads/main",
+    "method": "ORDINARY_FAST_FORWARD_ONLY",
+    "force_push": false,
+    "self_witness": false,
+    "remote_main_observation": "PENDING_SEPARATE_REMOTE_REF_GATE",
+    "final_sha": "NOT_EMBEDDED"
+  },
+  "gates_before_publication": {
+    "candidate_natural_full_regression": "PASS_1278_0_0_0",
+    "fresh_task_clone_natural_full_regression": "PASS_1278_0_0_0",
+    "candidate_and_fresh_task_sha_binding": "PASS",
+    "engineering_closure_gate": "PASS",
+    "owner_production_brief": "EMPTY_AWAITING_OWNER",
+    "external_live_obligation": "OPEN_OWNER_DEFERRED"
+  },
+  "claim_ceiling": "Formal repository release-ready and ordinary-fast-forward publication transaction evidence only; the exact post-push remote main SHA and fresh remote-main clone remain separate observations, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

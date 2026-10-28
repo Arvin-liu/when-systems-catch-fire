@@ -1,0 +1,18 @@
+{
+  "task_id": "IGNITION-20260907-162",
+  "run_01": {
+    "status": "INVALIDATED",
+    "reason": "post-selection quota audit found three Charles Darwin works, violating the frozen maximum of two works per author",
+    "source_manifest_sha256": "766f57ed92b917cdf11fc6d394be1a5c0466b2ece86048e64d54f6476a631d3c",
+    "candidate_freeze_sha256": "ea9f1b9a344c145bf818ae3a55b429c9839829d35e05826de73ca68207c4af54",
+    "external_summary_sha256": "7deeb8d04a0fe189e951aa477018636dbff2d9964c969b07c93d199dc9a6fbe7",
+    "preserved_copy": "work/task162-invalidated-run-01/"
+  },
+  "run_02": {
+    "status": "RESTARTED_WITH_DETERMINISTIC_QUOTA_CORRECTION",
+    "replacement": "GUT-27513 The Book of the National Parks by Robert Sterling Yard",
+    "replacement_rule": "same frozen ecology_complex_systems slot; first eligible catalog candidate after author-quota audit; decision independent of induction results",
+    "selection_rule_unchanged": true,
+    "answer_guided_reselection": false
+  }
+}

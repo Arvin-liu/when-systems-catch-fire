@@ -1,0 +1,178 @@
+{
+  "schema_version": "ignition-150-step21-fresh-standalone-evidence-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "21",
+  "record_type": "FRESH_STANDALONE_EVIDENCE",
+  "status": "STANDALONE_EVIDENCE_PASS_COMPATIBILITY_PENDING",
+  "formal_previous_commit": "68d5d30bda0d8eb9c715ac346ce6476a55c0e288",
+  "canonical_source": {
+    "path": "ignition/data/architecture/overall-architecture.json",
+    "formal_source_revision": "68d5d30bda0d8eb9c715ac346ce6476a55c0e288",
+    "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "nodes": 24,
+    "edges": 24,
+    "read_before_and_after_hash_equal": true,
+    "authority": "IGNITION_CANONICAL_AUTHORED_SOURCE"
+  },
+  "provider": {
+    "provider_id": "archify",
+    "repository": "tt-a1i/archify",
+    "immutable_revision": "06dd052602dd9a369e4d034e24faef0917b5a60c",
+    "package_version": "2.17.0-dev.1",
+    "schema_path": "archify/schemas/architecture.schema.json",
+    "schema_sha256": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c",
+    "doctor": "PASS",
+    "provider_role": "TESTED_OPTIONAL_PROVIDER_IMPLEMENTATION",
+    "architecture_authority": false,
+    "compatibility_envelope": "PENDING_STEP22_FRESH_IMMUTABLE_COMPATIBILITY_CHECK",
+    "automatic_update": false
+  },
+  "adapter": {
+    "version": "task150-bounded-visualization-adapter-r1",
+    "path": "ignition/tools/run_task150_bounded_visualization_adapter.py",
+    "sha256": "20f45aafe13ac43328f02627ecf3f49f74fe60cf24f0c907c1b315025760603e",
+    "system_map_path": "ignition/data/architecture/interactive-system-map.json",
+    "system_map_sha256": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313",
+    "geometry_repair_only": true,
+    "source_scan": false,
+    "canonical_write_back": false,
+    "provider_output_can_change_topology": false
+  },
+  "typed_ir": {
+    "path": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json",
+    "sha256": "2788796b4d329251cc67e502b6081b77542388b7f25f99470e400bf6722575ed",
+    "bytes": 19250,
+    "formal_source_revision": "68d5d30bda0d8eb9c715ac346ce6476a55c0e288",
+    "provider_id": "archify",
+    "components": 24,
+    "connections": 24,
+    "viewBox": [1650, 420]
+  },
+  "typed_ir_validation": {
+    "command": "node archify/bin/archify.mjs validate architecture task150-archify-typed-ir-r1.json --quality showcase --json --repo-root <formal-repository>",
+    "status": "PASS",
+    "checks_passed": 9,
+    "checks_total": 9,
+    "composition_status": "pass",
+    "composition_errors": 0,
+    "composition_warnings": 0
+  },
+  "node_edge_equality": {
+    "status": "PASS",
+    "node_id_order_equal": true,
+    "node_label_order_equal": true,
+    "edge_id_order_equal": true,
+    "edge_endpoint_order_equal": true,
+    "edge_label_order_equal": true,
+    "canonical_node_count": 24,
+    "derived_node_count": 24,
+    "canonical_edge_count": 24,
+    "derived_edge_count": 24,
+    "semantic_relationships_unchanged": true
+  },
+  "delivery": {
+    "status": "PASS",
+    "command": "node archify/bin/archify.mjs deliver architecture task150-archify-typed-ir-r1.json task150-step21-standalone.html --quality showcase --json --repo-root <formal-repository>",
+    "path": "ignition/data/operations/iterations/150/standalone-evidence/task150-step21-standalone.html",
+    "artifact_sha256": "da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45",
+    "artifact_bytes": 751906,
+    "specification_sha256": "2788796b4d329251cc67e502b6081b77542388b7f25f99470e400bf6722575ed",
+    "specification_bytes": 19250,
+    "checks_passed": 9,
+    "checks_total": 9,
+    "composition_status": "pass",
+    "source_evidence_verified": true,
+    "source_evidence_revision": "68d5d30bda0d8eb9c715ac346ce6476a55c0e288",
+    "source_evidence_references": 19
+  },
+  "standalone_visual_check": {
+    "status": "PASS",
+    "visual_review": "PENDING_PERCEPTUAL_REVIEW",
+    "chrome": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "receipt_path": "ignition/data/operations/iterations/150/standalone-evidence/task150-step21-standalone.visual-check.json",
+    "receipt_sha256": "28d0e94c32a962f588c103e58c1f6c83bd23229de6a71f3c1850b70f4ea315dd",
+    "contact_sheet_path": "ignition/data/operations/iterations/150/standalone-evidence/task150-step21-standalone.visual-check.html",
+    "contact_sheet_sha256": "e442948b73502bee0139a4a8a01308475cfed6b3798963fe80a63fd219902eb2",
+    "containment_failures": 0,
+    "readability_failures": 0,
+    "viewer_chrome_failures": 0,
+    "required_viewport_observations": [
+      {"width": 1440, "height": 900, "theme": "light", "scrollWidth": 1440, "scrollHeight": 900, "ok": true, "minimumProjectedNodeTextPx": 8.683871783499512, "dockStageIntersectionArea": 0, "dockStageGap": 10.21875, "requiredDockStageGap": 10, "viewerChromeOk": true},
+      {"width": 1600, "height": 1000, "theme": "light", "scrollWidth": 1600, "scrollHeight": 1000, "ok": true, "minimumProjectedNodeTextPx": 9.716129944985338, "dockStageIntersectionArea": 0, "dockStageGap": 10.21875, "requiredDockStageGap": 10, "viewerChromeOk": true},
+      {"width": 1920, "height": 1080, "theme": "light", "scrollWidth": 1920, "scrollHeight": 1080, "ok": true, "minimumProjectedNodeTextPx": 10.645162290322581, "dockStageIntersectionArea": 0, "dockStageGap": 10.21875, "requiredDockStageGap": 10, "viewerChromeOk": true},
+      {"width": 2048, "height": 1320, "theme": "light", "scrollWidth": 2048, "scrollHeight": 1320, "ok": true, "minimumProjectedNodeTextPx": 10.645162290322581, "dockStageIntersectionArea": 0, "dockStageGap": 10.21875, "requiredDockStageGap": 10, "viewerChromeOk": true},
+      {"width": 1440, "height": 900, "theme": "dark", "scrollWidth": 1440, "scrollHeight": 900, "ok": true, "minimumProjectedNodeTextPx": 8.683871783499512, "dockStageIntersectionArea": 0, "dockStageGap": 10.21875, "requiredDockStageGap": 10, "viewerChromeOk": true},
+      {"width": 2048, "height": 1320, "theme": "dark", "scrollWidth": 2048, "scrollHeight": 1320, "ok": true, "minimumProjectedNodeTextPx": 10.645162290322581, "dockStageIntersectionArea": 0, "dockStageGap": 10.21875, "requiredDockStageGap": 10, "viewerChromeOk": true}
+    ]
+  },
+  "provenance": {
+    "source_revision_bound": true,
+    "canonical_source_sha_bound": true,
+    "provider_id_bound": true,
+    "provider_immutable_revision_bound": true,
+    "adapter_version_bound": true,
+    "typed_ir_sha_bound": true,
+    "artifact_sha_bound": true,
+    "artifact_is_derived_only": true,
+    "architecture_truth_escalation": false
+  },
+  "repeatability": {
+    "mode": "TWO_FRESH_READ_ONLY_RUNS_SAME_FORMAL_HEAD_AND_PROVIDER_REF",
+    "adapter_ir_first_sha256": "2788796b4d329251cc67e502b6081b77542388b7f25f99470e400bf6722575ed",
+    "adapter_ir_second_sha256": "2788796b4d329251cc67e502b6081b77542388b7f25f99470e400bf6722575ed",
+    "delivery_artifact_first_sha256": "da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45",
+    "delivery_artifact_second_sha256": "da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45",
+    "ir_identical": true,
+    "artifact_identical": true,
+    "provider_revision_identical": true,
+    "formal_source_revision_identical": true
+  },
+  "adversarial_fixtures": {
+    "path": "ignition/data/operations/iterations/150/fixtures/task150-step21-topology-extra-deleted.json",
+    "mode": "READ_ONLY_IN_MEMORY_MUTATION",
+    "provider_process_started": false,
+    "credentials_or_sessions_accessed": false,
+    "system_or_repository_mutation": false,
+    "provider_validation_is_not_topology_authority": true,
+    "cases": [
+      {"id": "extra_node", "mutation": {"action": "APPEND_COMPONENT", "component_id": "adversarial-extra-node"}, "expected": "EXACT_NODE_SET_REJECTED", "observed": "REJECTED", "rejection": "exact canonical node set mismatch"},
+      {"id": "deleted_node", "mutation": {"action": "REMOVE_COMPONENT", "component_id": "navigation-machine"}, "expected": "EXACT_NODE_SET_REJECTED", "observed": "REJECTED", "rejection": "exact canonical node set mismatch and dangling edge/boundary"}
+    ]
+  },
+  "base_gate_results": {
+    "canonical_source_provenance_complete": "PASS_FRESH",
+    "node_edge_semantic_fidelity": "PASS_FRESH",
+    "provider_topology_unchanged": "PASS_FRESH",
+    "standalone_viewport_containment_zero_failure": "PASS_FRESH_ZERO_FAILURE",
+    "provider_failure_fail_closed": "PASS_RETAINED_STEP08",
+    "canonical_source_unaffected": "PASS_FRESH",
+    "environment_admission_no_auto_install": "PASS_FRESH_NO_INSTALL",
+    "immutable_tested_compatibility_envelope": "PENDING_STEP22",
+    "artifact_digest_and_provenance_receipt": "PASS_FRESH",
+    "provider_local_policy_isolation": "PASS_RETAINED_STEP03_STEP19",
+    "no_default_renderer": "PASS_SCOPE_LOCKED",
+    "no_architecture_truth_escalation": "PASS_FRESH_SCOPE_BOUND"
+  },
+  "admission_decision": {
+    "standalone_visual_evidence": "PASS",
+    "new_base_blocker": false,
+    "base_operation_status": "CURRENT_BOUNDED_CANDIDATE_PENDING_STEP22",
+    "current_capability": false,
+    "registry_write": false,
+    "delta_extension": "EXPERIMENTAL_EXTENSION_DEFERRED",
+    "delta_gate": "FAIL_DEFERRED",
+    "owner_aesthetic_endorsement": "NOT_GRANTED_NOT_CLAIMED",
+    "default_renderer": "NOT_SELECTED",
+    "next_required_gate": "STEP22_IMMUTABLE_COMPATIBILITY_ENVELOPE"
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "result": "TASK150_STEP21_FRESH_STANDALONE_EVIDENCE_PASS_COMPATIBILITY_PENDING",
+  "next_step": "TASK150_STEP22_IMMUTABLE_COMPATIBILITY_ENVELOPE",
+  "claim_ceiling": "Step21 proves a fresh exact-head standalone derived-artifact validation, delivery and zero-failure automated viewport evidence at the tested immutable Archify observation, plus exact node/edge and repeatability checks. It does not complete the Step22 compatibility envelope, admit a Current capability, write the Registry, establish aesthetic endorsement, architecture truth, production readiness, authentication, external truth or live external completion."
+}

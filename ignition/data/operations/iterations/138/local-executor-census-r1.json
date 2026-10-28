@@ -1,0 +1,155 @@
+{
+  "schema_version": "local-executor-census-r1",
+  "census_id": "ignition-138-local-executor-census-r1-20260825",
+  "task_id": "IGNITION-20260824-138",
+  "step": "00",
+  "observed_at": "2026-08-24T19:05:00Z",
+  "control": {"repository": "Arvin-liu/1111", "ref": "origin/relay/current", "tip": "4ab09c3d6595f254577739ec1d87e64144c61803"},
+  "formal_candidate": {"repository": "Arvin-liu/when-systems-catch-fire", "sha": "99389c846b6766ca8b373812ece4191660b6474f", "branch": "codex/ignition-138-executor-runtime-scratch-live-codex-r1-20260824"},
+  "scope": {
+    "search_domains": ["PATH", "~/.local/bin", "Homebrew prefix and formulae", "npm global root and binaries", "pipx tool registry", "uv tool registry", "Cargo install registry", "AI application bundles with machine-facing binaries"],
+    "explicit_names": ["Gemini CLI", "GitHub CLI", "Codex CLI", "Hermes", "OpenClaw", "Claude Code", "Aider", "Goose", "Qwen Code", "Cursor/agent CLI", "Ollama", "LM Studio", "llama.cpp"],
+    "install_sources": ["PATH command resolution", "npm global package list", "Homebrew formula list", "uv tool list", "pipx list", "cargo install --list", "selected /Applications bundles"],
+    "observation_policy": "PATH_VERSION_HELP_PUBLIC_AUTH_PRESENCE_ONLY_NO_SECRET_NO_INFERENCE"
+  },
+  "candidates": [
+    {
+      "executor_id": "external.gemini", "family": "Gemini CLI", "installed": true, "kind": "AGENTIC_EXECUTOR", "path_ref": "~/.local/bin/gemini", "version": "0.53.1",
+      "public_interface": {"version": "gemini --version", "help": "gemini --help", "noninteractive": "-p/--prompt", "structured_output": "--output-format json|stream-json", "read_only": "--approval-mode plan", "sandbox": "--sandbox", "workspace": "cwd and --include-directories", "side_effect_default": "MCP/extensions not admitted by census"},
+      "binary_sha256": "a193db41b0b2c9e35a8c5aafcb2c810947ee41a311757bb4ee4d6b015bc3bfb5", "help_sha256": "b5c6e1af180f48adb3700982e7b06e905f29d2965f047eaeebd0b5c4f676b632", "install_sources": ["PATH", "npm_global:@google/gemini-cli@0.53.1"],
+      "auth": {"public_status": "NOT_EXPOSED_BY_CURRENT_PUBLIC_HELP", "presence_observed": "~/.gemini/oauth_creds.json mode=0600; content not read", "source_ref": "~/.gemini/oauth_creds.json", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": true, "explicit_read_only_ceiling": true, "noninteractive_one_shot": true, "structured_result": true, "public_auth_status": false, "no_new_billing": false, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": false},
+      "admission_status": "BLOCKED", "blockers": ["PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE", "AUTH_SOURCE_HOME_NOT_SEPARABLE_BY_CURRENT_PUBLIC_INTERFACE", "PERSISTENT_GEMINI_HOME_WRITE_BOUNDARY_NOT_PROVEN", "NO_NEW_BILLING_AUTHORITY_NOT_REATTESTED"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "Help/version and metadata presence only."}
+    },
+    {
+      "executor_id": "external.codex", "family": "Codex CLI", "installed": true, "kind": "AGENTIC_EXECUTOR", "path_ref": "~/.local/bin/codex", "version": "codex-cli 0.144.4",
+      "public_interface": {"version": "codex --version", "help": "codex exec --help", "noninteractive": "codex exec", "structured_output": "--json and --output-schema", "read_only": "--sandbox read-only", "runtime_scratch": "R3 attempt scratch for HOME/TMP/XDG", "auth": "--ignore-user-config retains CODEX_HOME auth"},
+      "binary_sha256": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477", "help_sha256": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19", "install_sources": ["PATH", "npm_global:@openai/codex@0.144.4", "ChatGPT.app bundle"],
+      "auth": {"public_status": "AUTHENTICATED_PUBLIC_STATUS_OBSERVED", "presence_observed": "~/.codex/auth.json mode=0600; content not read", "source_ref": "~/.codex/auth.json", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": true, "explicit_read_only_ceiling": true, "noninteractive_one_shot": true, "structured_result": true, "public_auth_status": true, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": false},
+      "admission_status": "BLOCKED", "blockers": ["CURRENT_R3_ADAPTER_BINDS_CODEX_HOME_TO_RUNTIME_SCRATCH", "AUTH_SOURCE_READONLY_REFERENCE_NOT_YET_BOUND_TO_CHILD_ENV"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No census probe consumed another Codex attempt."}
+    },
+    {
+      "executor_id": "external.hermes", "family": "Hermes Agent", "installed": true, "kind": "AGENTIC_EXECUTOR", "path_ref": "~/.local/bin/hermes", "version": "Hermes Agent v0.20.0 (2026.8.3)",
+      "public_interface": {"version": "hermes --version", "help": "hermes --help", "noninteractive": "-z/--oneshot", "structured_output": "text-only final response; no strict JSON output flag", "read_only": "--safe-mode", "workspace": "--worktree exists but is not a read-only contract"},
+      "binary_sha256": "6eed0de072756645ce086cc379eb58fae17023c8935c4e55a3cd9117df8b4df9", "help_sha256": "0fdcfd5b047316e2fbef3873d90dd59c22f06e91fdfa5ae5bae088d83bb2094b", "install_sources": ["PATH", "~/.local/bin"],
+      "auth": {"public_status": "NOT_REATTESTED", "presence_observed": "~/.hermes/auth.json exists; content not read", "source_ref": "~/.hermes/auth.json", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": true, "explicit_read_only_ceiling": true, "noninteractive_one_shot": true, "structured_result": false, "public_auth_status": false, "no_new_billing": false, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": false, "independent_os_validation": true, "auth_source_separation": false},
+      "admission_status": "BLOCKED", "blockers": ["HERMES_RECONCILIATION_OPEN", "TEXT_ONLY_FINAL_SURFACE", "AUTH_AND_PROVIDER_BILLING_NOT_REATTESTED", "CHANNEL_AND_TOOL_SURFACE_REQUIRES_SEPARATE_BOUNDARY"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "Existing Hermes reconciliation remains open; census did not retry."}
+    },
+    {
+      "executor_id": "external.openclaw", "family": "OpenClaw", "installed": true, "kind": "AGENTIC_EXECUTOR", "path_ref": "~/.local/bin/openclaw", "version": "OpenClaw 2026.7.1-2 (0790d9f)",
+      "public_interface": {"version": "openclaw --version", "help": "openclaw agent --help", "noninteractive": "agent command surface observed", "structured_output": "JSON result surface in prior inventory", "workspace": "not independently proven by current public help", "channels": "gateway/channel surfaces present"},
+      "binary_sha256": "f643b005d6db233a0b45204e8d8e943256874ccc6897b8a6e0cf42a9b376a188", "help_sha256": "b436caaa7b5712b3f596a4f7cd8c3f0f327edee2d240323cf7c7a532b09fc1f8", "install_sources": ["PATH", "npm_global:openclaw@2026.7.1-2", "OpenClaw.app bundle"],
+      "auth": {"public_status": "NOT_REATTESTED", "presence_observed": "~/.openclaw/credentials directory exists; content not read", "source_ref": "~/.openclaw/credentials", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": true, "structured_result": true, "public_auth_status": false, "no_new_billing": false, "timeout_and_process_cleanup": false, "no_channel_browser_side_effect": false, "independent_os_validation": true, "auth_source_separation": false},
+      "admission_status": "BLOCKED", "blockers": ["DISPOSABLE_WORKSPACE_BINDING_NOT_PUBLICLY_PROVEN", "CHANNEL_GATEWAY_BOUNDARY_NOT_PUBLICLY_PROVEN", "EXPLICIT_READONLY_CEILING_NOT_PUBLICLY_PROVEN"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "OpenClaw safety blocker remains from prior reconciliation."}
+    },
+    {
+      "executor_id": "external.github-copilot-cli", "family": "GitHub Copilot CLI", "installed": false, "kind": "AGENTIC_EXECUTOR", "path_ref": null, "version": null,
+      "public_interface": {"help": "gh copilot --help", "download_behavior": "would download when absent", "one_shot": "not observed without installation"},
+      "binary_sha256": null, "help_sha256": "bd72eaeb0c65074a126856d5d4f1c82cd85658d9d5e2e79328161febe140a1ce", "install_sources": ["gh command help only"],
+      "auth": {"public_status": "NOT_REATTESTED", "presence_observed": "plain gh login status only; Copilot CLI not installed", "source_ref": "auth://github-copilot-not-installed", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": false, "structured_result": false, "public_auth_status": false, "no_new_billing": false, "timeout_and_process_cleanup": false, "no_channel_browser_side_effect": false, "independent_os_validation": false, "auth_source_separation": false},
+      "admission_status": "BLOCKED", "blockers": ["NOT_INSTALLED", "DOWNLOAD_WOULD_MUTATE_LOCAL_STATE", "AUTH_AND_BILLING_BOUNDARY_NOT_REATTESTED"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "Help was inspected without invoking the download path."}
+    },
+    {
+      "executor_id": "tool.github-cli", "family": "GitHub CLI", "installed": true, "kind": "TOOL_ONLY", "path_ref": "Homebrew gh 2.96.0", "version": "gh version 2.96.0 (2026-07-02)",
+      "public_interface": {"help": "gh --help", "auth_status": "public login status observed", "agent_semantics": "plain gh is not an Agent", "copilot": "separate not-installed candidate"},
+      "binary_sha256": "02d2d4a85241c6a8c0b77ebb1ec76fc723caf7fb128e00915b306b968847cba1", "help_sha256": "5665cc62dabe5ed7be4d26714e79e4ebc645c1ca6bf56bd81499bf68bd94b474", "install_sources": ["PATH", "Homebrew formula gh"],
+      "auth": {"public_status": "AUTHENTICATED_PUBLIC_STATUS_OBSERVED", "presence_observed": "keyring-backed status only", "source_ref": "auth://github-public-status", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": false, "structured_result": false, "public_auth_status": false, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": false, "independent_os_validation": false, "auth_source_separation": true},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["TOOL_ONLY_NOT_EXTERNAL_AGENT"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No Agent inference semantics."}
+    },
+    {
+      "executor_id": "runtime.ollama", "family": "Ollama", "installed": true, "kind": "REASONER_RUNTIME", "path_ref": "/Applications/Ollama.app/Contents/Resources/ollama", "version": "local runtime; public --help observed",
+      "public_interface": {"help": "ollama --help", "server_status": "server not running", "local_models": "3 models observed", "agent_loop": false},
+      "binary_sha256": "da3e797f075ffce71303fc482fc539d52d047a916c7d63973c778231e68625aa", "help_sha256": "09e2f2d03dea98ef17527c2855f5a0effae1cece18c6170a721fcee8920aea7e", "install_sources": ["PATH via Ollama.app"],
+      "auth": {"public_status": "NOT_APPLICABLE_LOCAL", "presence_observed": "local only", "source_ref": "auth://local-runtime", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": true, "structured_result": true, "public_auth_status": true, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": true},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No model probe was run."}
+    },
+    {
+      "executor_id": "runtime.lm-studio", "family": "LM Studio", "installed": true, "kind": "REASONER_RUNTIME", "path_ref": "~/.lmstudio/bin/lms", "version": "CLI commit 6041ae0",
+      "public_interface": {"help": "lms --help", "server_status": "OFF", "local_models": "4 models observed", "agent_loop": false},
+      "binary_sha256": "55df775235e919191954f505cb885a6977fb9699ef2b791934a98e131369dd5f", "help_sha256": "5b195232216c6d4e81516e1ee0bd61a078a65171f1d61f546023bfa85fb13b75", "install_sources": ["PATH", "LM Studio bundle"],
+      "auth": {"public_status": "NOT_APPLICABLE_LOCAL", "presence_observed": "local only", "source_ref": "auth://local-runtime", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": true, "structured_result": true, "public_auth_status": true, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": true},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No model probe was run."}
+    },
+    {
+      "executor_id": "runtime.mlx-dspark", "family": "MLX DSpark", "installed": true, "kind": "REASONER_RUNTIME", "path_ref": "~/.local/bin/mlx-dspark", "version": "mlx-dspark v0.1.0",
+      "public_interface": {"help": "mlx-dspark --help", "generate": true, "agent_loop": false},
+      "binary_sha256": "1f208c0490f873a2b7355930a0993482957051801fb7d943e30a599a8fc13817", "help_sha256": "313e76909029c98d881581bf50b0f2725899bc0a4252c2dbae3f93413e6d0afc", "install_sources": ["PATH", "uv tool: mlx-dspark v0.1.0"],
+      "auth": {"public_status": "NOT_APPLICABLE_LOCAL", "presence_observed": "local model tool", "source_ref": "auth://local-runtime", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": true, "structured_result": true, "public_auth_status": true, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": true},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No model probe was run."}
+    },
+    {
+      "executor_id": "runtime.llama-server-bundled", "family": "llama.cpp bundled by Ollama", "installed": true, "kind": "REASONER_RUNTIME", "path_ref": "/Applications/Ollama.app/Contents/Resources/llama-server", "version": null,
+      "public_interface": {"source": "Ollama application bundle", "agent_loop": false, "version_help": "not invoked"},
+      "binary_sha256": null, "help_sha256": null, "install_sources": ["Ollama.app bundle"],
+      "auth": {"public_status": "NOT_APPLICABLE_LOCAL", "presence_observed": "bundle binary presence only", "source_ref": "auth://local-runtime", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": true, "structured_result": true, "public_auth_status": true, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": true},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "Bundle presence only; no process started."}
+    },
+    {
+      "executor_id": "ui.claude-desktop", "family": "Claude Desktop", "installed": true, "kind": "UI_OR_NONAUTOMATABLE", "path_ref": "/Applications/Claude.app", "version": null,
+      "public_interface": {"desktop_bundle": true, "stable_cli": false},
+      "binary_sha256": null, "help_sha256": null, "install_sources": ["Applications bundle"],
+      "auth": {"public_status": "UI_ONLY_NOT_OBSERVED", "presence_observed": "app bundle only", "source_ref": "auth://ui-only", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": false, "structured_result": false, "public_auth_status": false, "no_new_billing": false, "timeout_and_process_cleanup": false, "no_channel_browser_side_effect": false, "independent_os_validation": false, "auth_source_separation": false},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["UI_OR_NONAUTOMATABLE_NO_STABLE_MACHINE_BOUNDARY"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No UI action was performed."}
+    },
+    {
+      "executor_id": "ui.qwenworkcn", "family": "QwenWorkCN Desktop", "installed": true, "kind": "UI_OR_NONAUTOMATABLE", "path_ref": "/Applications/QwenWorkCN.app", "version": null,
+      "public_interface": {"desktop_bundle": true, "bundled_helpers": true, "stable_public_agent_cli": false},
+      "binary_sha256": null, "help_sha256": null, "install_sources": ["Applications bundle"],
+      "auth": {"public_status": "UI_ONLY_NOT_OBSERVED", "presence_observed": "app bundle only", "source_ref": "auth://ui-only", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": false, "structured_result": false, "public_auth_status": false, "no_new_billing": false, "timeout_and_process_cleanup": false, "no_channel_browser_side_effect": false, "independent_os_validation": false, "auth_source_separation": false},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["UI_OR_NONAUTOMATABLE_NO_STABLE_MACHINE_BOUNDARY"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No UI action was performed."}
+    },
+    {
+      "executor_id": "tool.git", "family": "Git", "installed": true, "kind": "TOOL_ONLY", "path_ref": "/usr/bin/git", "version": "git version 2.50.1 (Apple Git-155)",
+      "public_interface": {"tool_only": true}, "binary_sha256": null, "help_sha256": null, "install_sources": ["system PATH"],
+      "auth": {"public_status": "NOT_APPLICABLE", "presence_observed": "not an Agent", "source_ref": "auth://not-applicable", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": false, "structured_result": false, "public_auth_status": false, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": true},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["TOOL_ONLY_NOT_EXTERNAL_AGENT"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No Agent inference semantics."}
+    },
+    {
+      "executor_id": "tool.jq", "family": "jq", "installed": true, "kind": "TOOL_ONLY", "path_ref": "/usr/bin/jq", "version": "jq-1.7.1-apple",
+      "public_interface": {"tool_only": true}, "binary_sha256": null, "help_sha256": null, "install_sources": ["system PATH"],
+      "auth": {"public_status": "NOT_APPLICABLE", "presence_observed": "not an Agent", "source_ref": "auth://not-applicable", "content_read": false, "copied": false, "mutated": false},
+      "admission_checks": {"disposable_workspace": false, "explicit_read_only_ceiling": false, "noninteractive_one_shot": false, "structured_result": false, "public_auth_status": false, "no_new_billing": true, "timeout_and_process_cleanup": true, "no_channel_browser_side_effect": true, "independent_os_validation": true, "auth_source_separation": true},
+      "admission_status": "NOT_APPLICABLE", "blockers": ["TOOL_ONLY_NOT_EXTERNAL_AGENT"],
+      "live": {"status": "NOT_RUN_CENSUS", "inference_started": false, "reason": "No Agent inference semantics."}
+    }
+  ],
+  "selection": {
+    "status": "NO_SAFE_CANDIDATE", "selected_executor_id": null, "selected_family": null,
+    "ranking": ["external.codex", "external.gemini", "external.hermes", "external.openclaw", "external.github-copilot-cli"],
+    "why_executor": "No candidate is admitted at the census boundary. Codex ranks first for re-attestation because it has public auth status, strict read-only/JSON/ephemeral flags, and the R3 scratch repair, but its auth source is not yet bound as a read-only reference separate from runtime scratch. Gemini has a strong plan/JSON/headless surface, but its current public interface does not expose a separate auth source or ephemeral home and its OAuth source is only presence-observed. Hermes, OpenClaw and the not-installed Copilot CLI retain explicit safety, structured-result, reconciliation, or installation blockers.",
+    "excluded": [
+      {"executor_id": "external.gemini", "reason": "auth and persistent-home write boundary not reattested"},
+      {"executor_id": "external.codex", "reason": "auth source separation repair still pending"},
+      {"executor_id": "external.hermes", "reason": "structured result/auth/channel boundary blockers"},
+      {"executor_id": "external.openclaw", "reason": "workspace/channel/read-only boundary blockers"},
+      {"executor_id": "external.github-copilot-cli", "reason": "not installed; download and billing boundary not authorized"}
+    ]
+  },
+  "safety": {"secret_content_read": false, "auth_content_copied": false, "configuration_changed": false, "billing_changed": false, "install_or_upgrade_performed": false, "live_inference_started": false, "workspace_modified": false},
+  "claim_ceiling": "Repository-local, observation-time census and executor-kind/admission evidence only; no live inference, validated completion, model ranking, production readiness, external truth, Owner acceptance, or epistemic acceptance is inferred."
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "ignition-131-step11-final-publication-contract-r1",
+  "task_id": "IGNITION-20260821-131",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "receipt_repository": "Arvin-liu/1111",
+  "formal_candidate": {
+    "content_owned_state": "RELEASE_READY",
+    "publication_assertion_in_formal_content": "NONE",
+    "candidate_sha_source": "the Step 11 formal commit SHA observed after commit and task-branch push",
+    "remote_publication_ref": "refs/heads/main",
+    "remote_ref_authority": "REMOTE_GIT_REF_OBSERVATION"
+  },
+  "publication_sequence": [
+    "run pre-publication Current, lifecycle, lineage, semantic, deterministic and scoped regression gates",
+    "push the Step 11 candidate task branch and verify its exact remote SHA",
+    "ordinary fast-forward formal refs/heads/main to the exact candidate SHA",
+    "fresh-fetch origin and create a clean main checkout",
+    "require expected candidate SHA == git ls-remote origin refs/heads/main == fresh checkout HEAD",
+    "run post-publication semantic validation on that fresh checkout",
+    "write the exact publication witness and result only to the 1111 receipt branch"
+  ],
+  "forbidden_shortcuts": [
+    "formal commit that embeds its own published claim",
+    "formal post-publication self-witness commit",
+    "local-branch-only publication proof",
+    "force push, history rewrite or squash"
+  ],
+  "receipt_witness_requirements": {
+    "required": true,
+    "authority": "CONTROL_REPOSITORY_RECEIPT",
+    "required_equalities": [
+      "expected candidate SHA == remote refs/heads/main SHA",
+      "remote refs/heads/main SHA == fresh main checkout HEAD"
+    ],
+    "required_result": "POST_PUBLICATION_EXACT_REMOTE_REF_WITNESS",
+    "formal_main_must_remain_unchanged_after_receipt": true
+  },
+  "claim_ceiling": "This contract defines repository-local publication sequencing and witness boundaries only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

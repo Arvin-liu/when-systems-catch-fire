@@ -1,0 +1,17 @@
+{
+  "top10_ratio": 1.0,
+  "threshold": 0.7,
+  "meets_threshold": true,
+  "top10_classes": {
+    "arn-gap-001": "MATHEMATICAL_FORMALIZATION",
+    "arn-gap-002": "MATHEMATICAL_FORMALIZATION",
+    "arn-gap-003": "MATHEMATICAL_FORMALIZATION",
+    "mcf-gap-001": "MATHEMATICAL_FORMALIZATION",
+    "mcf-gap-002": "MATHEMATICAL_FORMALIZATION",
+    "psd-gap-001": "MATHEMATICAL_FORMALIZATION",
+    "psd-gap-002": "MATHEMATICAL_FORMALIZATION",
+    "psd-gap-003": "MATHEMATICAL_FORMALIZATION",
+    "psd-gap-004": "MATHEMATICAL_FORMALIZATION",
+    "C-02": "CORE_CAPABILITY_VALIDATION"
+  }
+}

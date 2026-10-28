@@ -1,0 +1,24 @@
+{
+  "commands": [
+    "python3 data/operations/iterations/110/openalex/run_first_census.py",
+    "python3 data/operations/iterations/110/openalex/adjudicate_first_run.py",
+    "python3 tools/emit_evidence_program_openalex.py"
+  ],
+  "deviations_ref": "evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/deviation-log.json",
+  "environment": {
+    "network_access": "OpenAlex live API; sequential requests; no persistent cache",
+    "os": "macOS; Apple Silicon local runtime",
+    "python_version": "3.14.6"
+  },
+  "pilot_id": "DOI-OPENALEX-CROSS-CHECK",
+  "preregistration_commit": "a830664c1add6a26b2b516a13769cdd71412eda2",
+  "preregistration_commit_timestamp": "2026-08-01T07:17:14+00:00",
+  "preregistration_ref": "data/operations/iterations/110/openalex/PREREGISTRATION.md",
+  "reproduction": {
+    "command": "git clone <formal-repo>; git checkout <run-containing-head>; python3 data/operations/iterations/110/openalex/adjudicate_first_run.py",
+    "from_clean_environment": true
+  },
+  "results_generated_at_utc": "2026-08-01T07:23:06+00:00",
+  "run_id": "IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801",
+  "seeds": {}
+}

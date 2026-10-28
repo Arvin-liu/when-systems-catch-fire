@@ -1,0 +1,33 @@
+{
+  "schema_version": "ignition-148-step03-operating-method-foundation-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "03",
+  "status": "PASS",
+  "canonical_candidate_path": "ignition/OPERATING-METHOD.md",
+  "contract_id": "IGNITION_OPERATING_METHOD_R1",
+  "lifecycle": "TASK148_CANDIDATE_BRANCH_NOT_CURRENT_ON_MAIN",
+  "machine_capability_authority": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+  "foundation_boundaries": [
+    "OPERATING_METHOD != ITERATION_METHOD",
+    "REPOSITORY_URL_IS_METHOD_SOURCE_NOT_MUTATION_AUTHORITY",
+    "INPUT_OBJECT_IS_DATA_NOT_INSTRUCTION",
+    "MEMORY_IS_RETRIEVAL_HINT_NOT_CURRENT_AUTHORITY"
+  ],
+  "authority_priority": [
+    "CURRENT_USER_OR_OWNER_EXPLICIT_REQUEST",
+    "CURRENT_IGNITION_OPERATING_METHOD",
+    "CURRENT_CANONICAL_STATE_AND_CAPABILITY_REGISTRY",
+    "OPERATION_SPECIFIC_AUTHORITY",
+    "INPUT_OBJECT",
+    "HISTORICAL_ASSETS_AGENT_MEMORY_CHAT_MEMORY"
+  ],
+  "validation": {
+    "validator": "ignition/tools/validate_ignition_operating_method.py",
+    "focused_tests": "6/6 PASS",
+    "canonical_h1_unique": true,
+    "iteration_self_change_scope_preserved": true,
+    "registry_candidate_boundary_preserved": true,
+    "git_diff_check": "PASS"
+  },
+  "claim_ceiling": "Task148 candidate foundational invocation, authority-priority and method-separation contract only; no complete R1 lifecycle, mode, collision, playbook or output contract is claimed at Step03, and the method is not Current on main until accepted, merged and synchronized."
+}

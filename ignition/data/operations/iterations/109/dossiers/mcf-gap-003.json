@@ -1,0 +1,40 @@
+{
+  "canonical_id": "mcf-gap-003",
+  "title": "Existing assets contain temporal windows, persistence, irreversibility, and feedback locally but not a shared representation for delay, deca",
+  "class": "MATHEMATICAL_FORMALIZATION",
+  "is_meta": false,
+  "current_status": "DECLARED_GAP",
+  "provenance": {
+    "source_file": "data/architecture/causal-gap-ledger.json",
+    "canonical_id": "mcf-gap-003"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "architecture",
+    "system-map"
+  ],
+  "evidence_needs": [
+    "architectural representation",
+    "validator/diff tooling"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "This audit establishes an architectural representation gap only; it does not prove any new causal relation.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 60.1,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.7,
+    "dependency_centrality": 0.5,
+    "falsifiability": 0.6,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.7,
+    "effort_evidence_cost": 0.5,
+    "reversibility_risk": 0.6,
+    "maturity_gap": 0.7,
+    "owner_relevance": 0.6,
+    "duplication_prior_failure": 0.5,
+    "substantive_vs_meta": 0.7
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

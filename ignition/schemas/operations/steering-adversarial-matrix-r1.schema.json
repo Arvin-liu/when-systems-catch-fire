@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-adversarial-matrix-r1.schema.json",
+  "title": "OS Steering Adversarial Matrix R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "cases"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.adversarial-fixture"},
+    "cases": {
+      "type": "array",
+      "minItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "expected_outcome"],
+        "properties": {
+          "case_id": {"type": "string"},
+          "expected_outcome": {"enum": ["FAIL_CLOSED", "RECONCILIATION_REQUIRED", "HUMAN_REVIEW", "PAUSE_RECONCILE", "PASS_GUARD"]}
+        }
+      }
+    }
+  }
+}
