@@ -100,7 +100,7 @@
       "reason": "Materialized map regenerated with arr node."
     },
     {
-      "surface": "pages/generated/ignition-system-map.svg",
+      "surface": "docs/generated/ignition-system-architecture.svg",
       "decision": "CHANGE",
       "reason": "SVG regenerated with arr node."
     },
@@ -136,7 +136,7 @@
     "data/operations/change-propagation-topology.json",
     "data/architecture/interactive-system-map-layout.json",
     "data/architecture/interactive-system-map.json",
-    "pages/generated/ignition-system-map.svg",
+    "docs/generated/ignition-system-architecture.svg",
     "data/operations/component-execution-profiles.json",
     "tools/validate_human_front_door.py",
     ".github/workflows/foundation-validation.yml",

@@ -21,8 +21,17 @@ executor and performs NO real-world action, network call, or external write.
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 from typing import Any
+
+# ARR lives under ``ignition/`` while its approved predecessor modules remain
+# at the repository root.  Resolve that shared package from this checkout so
+# callers using the documented ``ignition`` working directory need no global
+# PYTHONPATH widening.
+CHECKOUT_ROOT = Path(__file__).resolve().parents[3]
+if str(CHECKOUT_ROOT) not in sys.path:
+    sys.path.insert(0, str(CHECKOUT_ROOT))
 
 from tools.ignition_runtime.schemas_loader import Draft202012Validator
 

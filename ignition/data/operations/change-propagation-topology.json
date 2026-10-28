@@ -2766,40 +2766,6 @@
       "residue": []
     },
     {
-      "relation_id": "executor_admission_governs_live_executor_bridge",
-      "source": "executor_admission_r1",
-      "target": "live_executor_bridge_r1",
-      "relation_class": "governance_constrains",
-      "relation_domain": "repository_dependency",
-      "trigger_dimensions": ["capability", "identity", "handoff", "lifecycle_current_state"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC"],
-      "propagation_mode": "required_assessment",
-      "required_evaluation": true,
-      "creates_sync_obligation": true,
-      "map_visible": true,
-      "label": "Admission gate 先于 bounded live dispatch",
-      "declaration_source": "data/operations/executor-admission-contract-r1.json",
-      "claim_ceiling": "pre-live admission and policy boundary only; it does not grant live success or external authority",
-      "residue": []
-    },
-    {
-      "relation_id": "executor_admission_requires_observation_plane",
-      "source": "executor_admission_r1",
-      "target": "live_observation_reconciliation_plane_r1",
-      "relation_class": "validates",
-      "relation_domain": "repository_dependency",
-      "trigger_dimensions": ["capability", "identity", "handoff"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE"],
-      "propagation_mode": "required_assessment",
-      "required_evaluation": true,
-      "creates_sync_obligation": true,
-      "map_visible": false,
-      "label": "Admission 必须绑定 durable capture 与独立 observation/validation",
-      "declaration_source": "data/operations/executor-admission-contract-r1.json",
-      "claim_ceiling": "capture and validator compatibility admission evidence only; no validated completion is inferred",
-      "residue": []
-    },
-    {
       "relation_id": "arr_documents_arn",
       "source": "arr",
       "target": "arn",
@@ -2890,6 +2856,40 @@
       "residue": [
         "arr_runtime is an adapter, not a second executor."
       ]
+    },
+    {
+      "relation_id": "executor_admission_governs_live_executor_bridge",
+      "source": "executor_admission_r1",
+      "target": "live_executor_bridge_r1",
+      "relation_class": "governance_constrains",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": ["capability", "identity", "handoff", "lifecycle_current_state"],
+      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC"],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "Admission gate 先于 bounded live dispatch",
+      "declaration_source": "data/operations/executor-admission-contract-r1.json",
+      "claim_ceiling": "pre-live admission and policy boundary only; it does not grant live success or external authority",
+      "residue": []
+    },
+    {
+      "relation_id": "executor_admission_requires_observation_plane",
+      "source": "executor_admission_r1",
+      "target": "live_observation_reconciliation_plane_r1",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": ["capability", "identity", "handoff"],
+      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE"],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "Admission 必须绑定 durable capture 与独立 observation/validation",
+      "declaration_source": "data/operations/executor-admission-contract-r1.json",
+      "claim_ceiling": "capture and validator compatibility admission evidence only; no validated completion is inferred",
+      "residue": []
     }
   ],
   "allowed_path_overlaps": [

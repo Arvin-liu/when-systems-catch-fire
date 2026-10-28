@@ -47,7 +47,7 @@ COMMANDS: dict[str, tuple[str, ...]] = {
     "build_claim_browsers_check": ("tools/governance/build_claim_browsers.py", "--check"),
     "generate_overall_architecture_check": ("tools/generate_overall_architecture.py", "--check"),
     "arr_runtime_static_gate": ("tools/adaptive_relational_runtime/static_gate.py",),
-    "arr_runtime_pytest": ("tools/adaptive_relational_runtime/run_pytest_suite.py",),
+    "arr_runtime_pytest": ("tests/adaptive_relational_runtime/run_pytest_suite.py",),
 }
 
 NATIVE_COMMANDS: dict[str, dict[str, Any]] = {

@@ -1925,14 +1925,6 @@
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "executor_admission_governs_live_executor_bridge",
-      "source": "executor_admission_r1",
-      "target": "live_executor_bridge_r1",
-      "label": "Admission gate 先于 bounded live dispatch",
-      "relation_class": "governance_constrains",
-      "relation_domain": "repository_dependency"
-    },
-    {
       "id": "arr_documents_arn",
       "source": "arr",
       "target": "arn",
@@ -1955,6 +1947,14 @@
       "label": "随机/状态语义参照",
       "relation_class": "mechanism_hypothesis",
       "relation_domain": "substantive_causal_candidate"
+    },
+    {
+      "id": "executor_admission_governs_live_executor_bridge",
+      "source": "executor_admission_r1",
+      "target": "live_executor_bridge_r1",
+      "label": "Admission gate 先于 bounded live dispatch",
+      "relation_class": "governance_constrains",
+      "relation_domain": "repository_dependency"
     }
   ],
   "component_coverage": {
