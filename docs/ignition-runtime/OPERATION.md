@@ -3,8 +3,11 @@
 This document describes how to operate the `tools/ignition_runtime` production
 layer. It is a **draft build** on branch
 `production/ignition-run-promote-evolve-r1`; it is not merged, not accepted and
-not current project capability. It does not change the seven-layer epistemic
-architecture, the iteration method `1.3.0`, or any frozen formal protocol.
+not current project capability. The original frozen build was developed against
+iteration method `1.3.0`; the updated review branch now inherits method `1.4.0`
+from PR #118. The runtime has not been reviewed or revalidated under `1.4.0`.
+It does not itself change the current method, the seven-layer epistemic
+architecture, or any frozen formal protocol.
 
 ## 0. Hard boundaries (RUN / PROMOTE / EVOLVE)
 

@@ -1,0 +1,17 @@
+{
+  "schema_version": "current-path-manifest-contract-r1",
+  "contract_id": "CURRENT_PATH_MANIFEST_IS_CURRENT_INVARIANT",
+  "manifest_path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+  "source_kind": "CURRENT_GENERATED_SNAPSHOT_OF_LIVE_ENGINE_OUTPUT",
+  "validator_path": "ignition/tools/foundation/validate_repository_path_classification.py",
+  "historical_policy": "GIT_HISTORY_AND_TASK_RECEIPTS_PRESERVE_HISTORICAL_OBSERVATIONS;_CURRENT_MANIFEST_IS_REGENERATED",
+  "required_gates": [
+    "tracked_set_equal_manifest_set",
+    "unresolved_zero",
+    "stale_zero",
+    "duplicate_zero",
+    "category_drift_zero",
+    "anti_backflow_zero"
+  ],
+  "claim_ceiling": "Current repository path accounting contract only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

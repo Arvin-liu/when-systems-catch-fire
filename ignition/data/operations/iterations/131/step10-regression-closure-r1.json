@@ -1,0 +1,78 @@
+{
+  "schema_version": "ignition-131-step10-regression-closure-r1",
+  "task_id": "IGNITION-20260821-131",
+  "scope": "release-witness-ref-derived-publication",
+  "release_regression": {
+    "status": "PASS",
+    "test_count": 105,
+    "test_groups": [
+      "release_state_model",
+      "current_release_lifecycle",
+      "current_surface_compiler",
+      "current_surface_determinism",
+      "current_surface_semantics",
+      "current_state_sync",
+      "current_task_lineage",
+      "post_publication_current",
+      "publication_witness",
+      "release_transaction_protocol",
+      "release_fault_matrix",
+      "publication_gate_fail_closed",
+      "publication_provenance_attack",
+      "stage_snapshot_publication"
+    ]
+  },
+  "durability_federation_soft_governance_regression": {
+    "status": "PASS",
+    "test_count": 93,
+    "test_groups": [
+      "durability_accounting",
+      "durability_adversarial",
+      "durability_compaction",
+      "durability_continuity_pilot",
+      "durability_dr_bundle",
+      "durability_executor_admission",
+      "durability_memory",
+      "durability_migration",
+      "durability_namespace",
+      "durability_pack_lifecycle",
+      "durability_recovery",
+      "durability_revocation",
+      "durability_snapshot",
+      "durability_soft_governance",
+      "durability_taxonomy",
+      "federation_core",
+      "federation_ownership",
+      "federation_pilots",
+      "federation_router",
+      "federation_step12_adversarial",
+      "soft_context_exposure",
+      "soft_governance_authority"
+    ]
+  },
+  "known_residuals": [
+    {
+      "residual_id": "DURABILITY_PROJECTION_MANIFEST_HISTORICAL_RECEIPTS",
+      "classification": "BASELINE_HISTORICAL_ENVIRONMENTAL",
+      "candidate_result": "FAIL",
+      "baseline_result": "FAIL",
+      "evidence": "test_durability_projection_hygiene reports the pre-existing manifest all-tracked-accounted failure; baseline was run from the fresh Task130 origin/main clone and failed the same gate with the same historical Task129 receipt example.",
+      "action": "PRESERVED_AND_CLASSIFIED",
+      "claim_ceiling": "This residual is not evidence of a 131 release-witness defect and no validator was weakened."
+    }
+  ],
+  "determinism": {
+    "status": "PASS",
+    "record_current_surface_determinism": "CURRENT_SURFACE_DETERMINISM_OK passes=2",
+    "current_surface_semantics": "CURRENT_SURFACE_SEMANTIC_GATE_OK",
+    "current_state_sync": "CURRENT_STATE_SYNC_OK"
+  },
+  "privacy_and_boundary_checks": {
+    "status": "PASS",
+    "changed_file_secret_or_local_path_matches": 0,
+    "current_snapshot_legacy_publication_tokens": 0,
+    "identity_or_map_files_changed": 0,
+    "formal_post_publication_witness_present": false
+  },
+  "claim_ceiling": "Step 10 proves repository-local regression, determinism, privacy, authority separation and residual classification only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

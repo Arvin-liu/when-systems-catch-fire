@@ -1,0 +1,516 @@
+{
+  "schema_version": "cross-executor-driver-pilot-r1",
+  "task_id": "IGNITION-20260816-123",
+  "step": "10",
+  "recorded_at": "2026-08-16T18:00:41Z",
+  "workspace_policy": "disposable_temp_workspace_only",
+  "formal_repository_used_as_live_target": false,
+  "external_observations": [
+    {
+      "executor_id": "external.openclaw",
+      "observed_version": "OpenClaw 2026.7.1-2 (0790d9f)",
+      "live_invocation": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "outcome": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "classification": "UNSAFE_SURFACE",
+      "attempted_bounded_smoke": false,
+      "skip_reason": "Observed agent CLI has no disposable workspace binding; default Gateway session/channel state is outside the safe boundary, while --local requires provider credentials and is not isolated by observed flags.",
+      "source_receipt": "ignition/data/operations/iterations/123/external-conformance-smoke-r1.json"
+    },
+    {
+      "executor_id": "external.hermes",
+      "observed_version": "Hermes Agent v0.20.0 (2026.8.3)",
+      "live_invocation": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "outcome": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "classification": "TIMEOUT",
+      "attempted_bounded_smoke": true,
+      "skip_reason": "bounded_timeout",
+      "source_receipt": "ignition/data/operations/iterations/123/external-conformance-smoke-r1.json"
+    },
+    {
+      "executor_id": "external.codex",
+      "observed_version": "codex-cli 0.144.4",
+      "live_invocation": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "outcome": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+      "classification": "TIMEOUT",
+      "attempted_bounded_smoke": true,
+      "skip_reason": "bounded_timeout",
+      "source_receipt": "ignition/data/operations/iterations/123/external-conformance-smoke-r1.json"
+    }
+  ],
+  "driver": {
+    "canonical_state_owner": "ignition",
+    "task_envelope_digest": "2bf8db0fd2ea4766ccde83e52810ef079a0da136221fff7912aa8101370a531c",
+    "required_capabilities": [
+      "repo.read"
+    ],
+    "allowed_effects": [
+      "read disposable fixture"
+    ],
+    "initial_route": {
+      "federation_task_id": "step10-driver-001",
+      "status": "SELECTED",
+      "selected_executor_id": "external.hermes",
+      "selected_instance_id": "external.hermes.instance-1",
+      "selection_reason": "selected healthy/compatible executor by configured preference, least privilege and stable executor-id tie-break",
+      "effective_permission": {
+        "capabilities": [
+          "repo.read"
+        ],
+        "effects": [
+          "read"
+        ],
+        "approval_mode": "AUTO",
+        "external_approval_allowed": false,
+        "executor_permission_ceiling": [
+          "repo.read"
+        ],
+        "sandbox_semantics": "HERMES_SAFE_MODE_READ_ONLY_BRIDGE",
+        "descriptor_health": "HEALTHY"
+      },
+      "fallback_order": [
+        "external.codex",
+        "reference.executor"
+      ],
+      "candidates": [
+        {
+          "executor_id": "external.hermes",
+          "instance_id": "external.hermes.instance-1",
+          "eligible": true,
+          "rejection_reasons": [],
+          "ranking_key": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            "external.hermes",
+            "external.hermes.instance-1"
+          ],
+          "health_status": "HEALTHY",
+          "declared_capabilities": [
+            "repo.read"
+          ]
+        },
+        {
+          "executor_id": "external.codex",
+          "instance_id": "external.codex.instance-1",
+          "eligible": true,
+          "rejection_reasons": [],
+          "ranking_key": [
+            1,
+            0,
+            20,
+            1,
+            3,
+            "external.codex",
+            "external.codex.instance-1"
+          ],
+          "health_status": "HEALTHY",
+          "declared_capabilities": [
+            "repo.read",
+            "structured_progress"
+          ]
+        },
+        {
+          "executor_id": "external.openclaw",
+          "instance_id": "external.openclaw.instance-1",
+          "eligible": false,
+          "rejection_reasons": [
+            "CAPABILITY_MISMATCH:repo.read",
+            "PERMISSION_CEILING_MISMATCH:repo.read"
+          ],
+          "ranking_key": [
+            1,
+            0,
+            30,
+            1,
+            1,
+            "external.openclaw",
+            "external.openclaw.instance-1"
+          ],
+          "health_status": "HEALTHY",
+          "declared_capabilities": [
+            "long_task"
+          ]
+        },
+        {
+          "executor_id": "reference.executor",
+          "instance_id": "reference.executor.instance-1",
+          "eligible": true,
+          "rejection_reasons": [],
+          "ranking_key": [
+            1,
+            0,
+            90,
+            1,
+            3,
+            "reference.executor",
+            "reference.executor.instance-1"
+          ],
+          "health_status": "HEALTHY",
+          "declared_capabilities": [
+            "repo.read",
+            "structured_progress"
+          ]
+        }
+      ],
+      "policy_id": "external-agent-federation-routing-r1"
+    },
+    "fallback_route": {
+      "federation_task_id": "step10-driver-001",
+      "status": "SELECTED",
+      "selected_executor_id": "reference.executor",
+      "selected_instance_id": "reference.executor.instance-1",
+      "selection_reason": "selected healthy/compatible executor by configured preference, least privilege and stable executor-id tie-break",
+      "effective_permission": {
+        "capabilities": [
+          "repo.read"
+        ],
+        "effects": [
+          "read"
+        ],
+        "approval_mode": "AUTO",
+        "external_approval_allowed": false,
+        "executor_permission_ceiling": [
+          "repo.read",
+          "repo.write",
+          "repo.test",
+          "terminal.run"
+        ],
+        "sandbox_semantics": "REFERENCE_EXECUTOR_BOUNDED_LOCAL_POLICY",
+        "descriptor_health": "HEALTHY"
+      },
+      "fallback_order": [],
+      "candidates": [
+        {
+          "executor_id": "external.hermes",
+          "instance_id": "external.hermes.instance-1",
+          "eligible": false,
+          "rejection_reasons": [
+            "EXECUTOR_UNAVAILABLE"
+          ],
+          "ranking_key": [
+            1,
+            99,
+            0,
+            0,
+            0,
+            "external.hermes",
+            "external.hermes.instance-1"
+          ],
+          "health_status": "UNAVAILABLE",
+          "declared_capabilities": [
+            "repo.read"
+          ]
+        },
+        {
+          "executor_id": "external.codex",
+          "instance_id": "external.codex.instance-1",
+          "eligible": false,
+          "rejection_reasons": [
+            "EXECUTOR_UNAVAILABLE"
+          ],
+          "ranking_key": [
+            1,
+            99,
+            20,
+            1,
+            3,
+            "external.codex",
+            "external.codex.instance-1"
+          ],
+          "health_status": "UNAVAILABLE",
+          "declared_capabilities": [
+            "repo.read",
+            "structured_progress"
+          ]
+        },
+        {
+          "executor_id": "external.openclaw",
+          "instance_id": "external.openclaw.instance-1",
+          "eligible": false,
+          "rejection_reasons": [
+            "CAPABILITY_MISMATCH:repo.read",
+            "PERMISSION_CEILING_MISMATCH:repo.read",
+            "EXECUTOR_UNAVAILABLE"
+          ],
+          "ranking_key": [
+            1,
+            99,
+            30,
+            1,
+            1,
+            "external.openclaw",
+            "external.openclaw.instance-1"
+          ],
+          "health_status": "UNAVAILABLE",
+          "declared_capabilities": [
+            "long_task"
+          ]
+        },
+        {
+          "executor_id": "reference.executor",
+          "instance_id": "reference.executor.instance-1",
+          "eligible": true,
+          "rejection_reasons": [],
+          "ranking_key": [
+            1,
+            0,
+            90,
+            1,
+            3,
+            "reference.executor",
+            "reference.executor.instance-1"
+          ],
+          "health_status": "HEALTHY",
+          "declared_capabilities": [
+            "repo.read",
+            "structured_progress"
+          ]
+        }
+      ],
+      "policy_id": "external-agent-federation-routing-r1"
+    },
+    "external_dispatch_policy": "NOT_REPEATED_AFTER_STEP09",
+    "approval": {
+      "status": "APPROVED",
+      "reason": "OS approval and any required external gate intersect without widening capability",
+      "effective_capabilities": [
+        "repo.read"
+      ],
+      "owner_decision": null,
+      "external_observation": {
+        "status": "NOT_REQUESTED",
+        "observation_ref": null,
+        "summary": "external approval state observed at adapter boundary"
+      },
+      "external_authority_effect": "EXTERNAL_SELF_APPROVAL_NEVER_REPLACES_OS_AUTHORITY"
+    },
+    "failover": {
+      "status": "AUTO_FAILOVER_ELIGIBLE",
+      "reason": "task is read-only or its side effects are validated/replayable and the target has the same capability ceiling",
+      "source_executor_id": "external.hermes",
+      "target_executor_id": "reference.executor",
+      "failover_reason": "EXECUTOR_TIMEOUT",
+      "effective_capabilities": [
+        "repo.read"
+      ],
+      "automatic": true
+    },
+    "failover_safety_evidence": "read-only envelope; Step 09 timeout/skip boundary verified; no accepted vendor completion"
+  },
+  "episode": {
+    "task_id": "step10-driver-001",
+    "source_executor": "reference.executor",
+    "source_event": {
+      "federation_task_id": "step10-driver-001",
+      "executor_id": "reference.executor",
+      "sequence": 1,
+      "state": "COMPLETED_UNVALIDATED",
+      "public_summary": "Reference Executor read disposable fixture; found 2 deterministic issue(s).",
+      "refs": [
+        "fixture:manifest.json",
+        "fixture:README.md"
+      ],
+      "progress_fraction": 1.0
+    },
+    "source_os_validator": {
+      "fixture_version": "disposable-federation-fixture-r1",
+      "issue_count": 2,
+      "issues": [
+        "manifest hash mismatch: README.md",
+        "broken link: docs/guide.md"
+      ],
+      "manifest_sha256": "21dca432fb172a046b8998508ec21485669d693a8294fd01739abd86e4fd9376",
+      "source_sha256": "a3757217201d1569a9ca290b38b9a576890acd7683fc286b26a1f292c6f118f8"
+    },
+    "source_receipt": {
+      "executor_id": "reference.executor",
+      "federation_task_id": "step10-driver-001",
+      "terminal_state": "COMPLETED_VALIDATED",
+      "receipt_digest": "631f659e56bc1fc768242125e31891b9be8f30b5cdefddedf0ade4989224d86e",
+      "validation_refs": [
+        "validator/federation-pilot-fixture-r1"
+      ],
+      "artifact_refs": [
+        "disposable-fixture/manifest.json"
+      ],
+      "handoff_eligible": true
+    },
+    "handoff": {
+      "handoff_id": "step10-handoff-001",
+      "source_executor_id": "reference.executor",
+      "target_executor_id": "reference.executor.recovery",
+      "pending_work": [
+        "re-observe the disposable fixture and preserve the OS-owned acceptance record"
+      ],
+      "allowed_capabilities": [
+        "repo.read"
+      ],
+      "workspace_refs": [
+        "disposable-fixture/"
+      ],
+      "takeover": {
+        "status": "ACCEPTED",
+        "source_executor_id": "reference.executor",
+        "target_executor_id": "reference.executor.recovery",
+        "reason": "target re-observed the workspace and verified the public source receipt before takeover",
+        "effective_capabilities": [
+          "repo.read"
+        ],
+        "observed_artifact_refs": [
+          "disposable-fixture/manifest.json"
+        ]
+      }
+    },
+    "recovery_executor": "reference.executor.recovery",
+    "recovery_event": {
+      "federation_task_id": "step10-driver-001",
+      "executor_id": "reference.executor.recovery",
+      "sequence": 1,
+      "state": "COMPLETED_UNVALIDATED",
+      "public_summary": "Reference Executor read disposable fixture; found 2 deterministic issue(s).",
+      "refs": [
+        "fixture:manifest.json",
+        "fixture:README.md"
+      ],
+      "progress_fraction": 1.0
+    },
+    "recovery_os_validator": {
+      "fixture_version": "disposable-federation-fixture-r1",
+      "issue_count": 2,
+      "issues": [
+        "manifest hash mismatch: README.md",
+        "broken link: docs/guide.md"
+      ],
+      "manifest_sha256": "21dca432fb172a046b8998508ec21485669d693a8294fd01739abd86e4fd9376",
+      "source_sha256": "a3757217201d1569a9ca290b38b9a576890acd7683fc286b26a1f292c6f118f8"
+    },
+    "recovery_receipt": {
+      "executor_id": "reference.executor.recovery",
+      "federation_task_id": "step10-driver-001",
+      "terminal_state": "COMPLETED_VALIDATED",
+      "receipt_digest": "2f4e840ea9d67000401899f58d24b30606f8d0aec10a97d54e04c7c6471705bd",
+      "validation_refs": [
+        "validator/federation-pilot-fixture-r1"
+      ],
+      "artifact_refs": [
+        "disposable-fixture/manifest.json"
+      ],
+      "handoff_eligible": true
+    },
+    "os_acceptance": "COMPLETED_VALIDATED_AFTER_INDEPENDENT_OS_VALIDATION"
+  },
+  "convergence": {
+    "canonical_state_owner": "ignition",
+    "progress_ingest": [
+      {
+        "status": "NEW",
+        "event_key": "step10-progress-source-001",
+        "event": {
+          "federation_task_id": "step10-driver-001",
+          "executor_id": "reference.executor",
+          "sequence": 1,
+          "state": "COMPLETED_UNVALIDATED",
+          "public_summary": "Reference Executor read disposable fixture; found 2 deterministic issue(s).",
+          "refs": [
+            "fixture:manifest.json",
+            "fixture:README.md"
+          ],
+          "progress_fraction": 1.0
+        },
+        "highest_sequence_before": -1
+      },
+      {
+        "status": "NEW",
+        "event_key": "step10-progress-recovery-001",
+        "event": {
+          "federation_task_id": "step10-driver-001",
+          "executor_id": "reference.executor.recovery",
+          "sequence": 1,
+          "state": "COMPLETED_UNVALIDATED",
+          "public_summary": "Reference Executor read disposable fixture; found 2 deterministic issue(s).",
+          "refs": [
+            "fixture:manifest.json",
+            "fixture:README.md"
+          ],
+          "progress_fraction": 1.0
+        },
+        "highest_sequence_before": 1
+      }
+    ],
+    "receipt_ingest": [
+      {
+        "status": "VERIFIED",
+        "receipt_digest": "631f659e56bc1fc768242125e31891b9be8f30b5cdefddedf0ade4989224d86e",
+        "federation_task_id": "step10-driver-001",
+        "terminal_state": "COMPLETED_VALIDATED",
+        "validation_refs": [
+          "validator/federation-pilot-fixture-r1"
+        ],
+        "artifact_refs": [
+          "disposable-fixture/manifest.json"
+        ]
+      },
+      {
+        "status": "VERIFIED",
+        "receipt_digest": "2f4e840ea9d67000401899f58d24b30606f8d0aec10a97d54e04c7c6471705bd",
+        "federation_task_id": "step10-driver-001",
+        "terminal_state": "COMPLETED_VALIDATED",
+        "validation_refs": [
+          "validator/federation-pilot-fixture-r1"
+        ],
+        "artifact_refs": [
+          "disposable-fixture/manifest.json"
+        ]
+      },
+      {
+        "status": "UNVERIFIED",
+        "receipt_digest": "495e7ce656ef12c96026668e977474f801adf8ef875341e2b3470ab8cf268e6b",
+        "federation_task_id": "step10-adversarial-001",
+        "terminal_state": "REQUIRES_RECONCILIATION",
+        "validation_refs": [],
+        "artifact_refs": []
+      }
+    ],
+    "coordinator_audit": {
+      "status": "PASS",
+      "progress": {
+        "status": "PASS",
+        "task_count": 1,
+        "event_count": 2,
+        "deduplicated_event_keys": 2
+      },
+      "receipt_count": 2,
+      "memory_enabled": true
+    },
+    "bounded_memory_audit": {
+      "status": "PASS",
+      "schema": "operational-memory-r1",
+      "entry_count": 7,
+      "tombstone_count": 0,
+      "active_count": 7
+    },
+    "private_vendor_history_absorbed": false
+  },
+  "adversarial": {
+    "external_claim": {
+      "executor_id": "external.codex",
+      "terminal_state": "REQUIRES_RECONCILIATION",
+      "claimed_issue_count": 0,
+      "validation_refs": []
+    },
+    "actual_issue_count": 2,
+    "validator_outcome": "REJECTED_FAILED_VALIDATION",
+    "os_acceptance": "REJECTED",
+    "receipt_ingest": {
+      "status": "UNVERIFIED",
+      "receipt_digest": "495e7ce656ef12c96026668e977474f801adf8ef875341e2b3470ab8cf268e6b",
+      "federation_task_id": "step10-adversarial-001",
+      "terminal_state": "REQUIRES_RECONCILIATION",
+      "validation_refs": [],
+      "artifact_refs": []
+    }
+  },
+  "claim_ceiling": "Bounded Ignition routing, failover, handoff, independent fixture validation and public operational-memory evidence only; no live provider success, general Agent capability, production reliability, external validity, Owner acceptance or epistemic acceptance is inferred."
+}

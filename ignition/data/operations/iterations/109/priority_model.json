@@ -1,0 +1,124 @@
+{
+  "model_id": "IGNITION-ITERATION-PLANNER-PRIORITY-MODEL-R1",
+  "version": "1.0.0",
+  "frozen_at_commit": "pre-ranking (committed before viewing final ranking per contract §6)",
+  "scale": "all factors normalized to [0,1]; aggregate score normalized to [0,100]",
+  "direction_legend": {
+    "higher_better": "larger value => more priority-worthy",
+    "lower_better": "smaller value => more priority-worthy (cost/risk penalty)"
+  },
+  "hard_gates": {
+    "description": "No scalar may erase a veto. If any hard gate triggers, candidate is forced to BLOCKED regardless of aggregate score.",
+    "rules": [
+      {"id": "missing_authority", "trigger": "authority == null or authority == 'MISSING'", "effect": "BLOCKED"},
+      {"id": "unresolved_prerequisite", "trigger": "prerequisite_unresolved == true", "effect": "BLOCKED"},
+      {"id": "unacceptable_risk", "trigger": "risk == 'UNACCEPTABLE'", "effect": "BLOCKED"},
+      {"id": "do_not_schedule", "trigger": "class == 'DO_NOT_SCHEDULE'", "effect": "BLOCKED"},
+      {"id": "owner_decision_required", "trigger": "class == 'OWNER_DECISION_REQUIRED'", "effect": "HELD (not auto-ranked into execution queue; surfaced to owner)"}
+    ]
+  },
+  "factors": [
+    {
+      "key": "consequence_of_being_wrong",
+      "source_field": "harm_if_wrong",
+      "direction": "higher_better",
+      "weight": 0.18,
+      "missing_value": 0.5,
+      "missing_flag": "harm_if_wrong unknown; neutral prior applied; uncertainty recorded"
+    },
+    {
+      "key": "dependency_centrality",
+      "source_field": "dependency_centrality",
+      "direction": "higher_better",
+      "weight": 0.12,
+      "missing_value": 0.5,
+      "missing_flag": "dependency_centrality unknown; neutral prior applied"
+    },
+    {
+      "key": "falsifiability",
+      "source_field": "falsifiability",
+      "direction": "higher_better",
+      "weight": 0.16,
+      "missing_value": 0.30,
+      "missing_flag": "falsifiability absent; treated as untestable-until-shown (0.30) and flagged"
+    },
+    {
+      "key": "data_oracle_availability",
+      "source_field": "data_availability",
+      "direction": "higher_better",
+      "weight": 0.14,
+      "missing_value": 0.30,
+      "missing_flag": "data/oracle availability unknown; treated as not-yet-executable (0.30) and flagged"
+    },
+    {
+      "key": "expected_information_gain",
+      "source_field": "expected_information_gain",
+      "direction": "higher_better",
+      "weight": 0.14,
+      "missing_value": 0.5,
+      "missing_flag": "information gain unknown; neutral prior applied"
+    },
+    {
+      "key": "effort_evidence_cost",
+      "source_field": "evidence_cost",
+      "direction": "lower_better",
+      "weight": 0.10,
+      "missing_value": 0.5,
+      "missing_flag": "evidence cost unknown; neutral prior applied"
+    },
+    {
+      "key": "reversibility_risk",
+      "source_field": "risk_inverted",
+      "direction": "higher_better",
+      "weight": 0.06,
+      "missing_value": 0.5,
+      "missing_flag": "risk/reversibility unknown; neutral prior applied"
+    },
+    {
+      "key": "maturity_gap",
+      "source_field": "maturity_gap",
+      "direction": "higher_better",
+      "weight": 0.04,
+      "missing_value": 0.5,
+      "missing_flag": "maturity gap unknown; neutral prior applied"
+    },
+    {
+      "key": "owner_relevance",
+      "source_field": "owner_relevance",
+      "direction": "higher_better",
+      "weight": 0.03,
+      "missing_value": 0.5,
+      "missing_flag": "owner relevance unknown; neutral prior applied"
+    },
+    {
+      "key": "duplication_prior_failure",
+      "source_field": "duplication_inverted",
+      "direction": "higher_better",
+      "weight": 0.01,
+      "missing_value": 0.5,
+      "missing_flag": "duplication/prior-failure unknown; neutral prior applied"
+    },
+    {
+      "key": "substantive_vs_meta",
+      "source_field": "substantive_score",
+      "direction": "higher_better",
+      "weight": 0.02,
+      "missing_value": 0.5,
+      "missing_flag": "substance/meta unknown; neutral prior applied"
+    }
+  ],
+  "weights_sum_check": 1.00,
+  "tie_breaking": "deterministic: sort by (aggregate_score desc, canonical_id asc lexicographic). No randomness, no timestamp, no file-order dependence.",
+  "missing_data_behavior": {
+    "policy": "explicit neutral priors; never silently optimized away",
+    "neutral_prior_default": 0.5,
+    "untestable_prior": 0.30,
+    "not_executable_prior": 0.30,
+    "record_per_candidate": "missing_fields[] listed in each candidate's dossier and in dependency/evidence readiness output",
+    "no_scalar_erases_veto": true
+  },
+  "anti_meta_rule": {
+    "description": "Candidates whose primary output is another planner/registry/dashboard/protocol/governance layer must show a concrete unresolved failure not addressable by existing systems, else their substantive_vs_meta factor is capped at 0.20.",
+    "cap_value": 0.20
+  }
+}

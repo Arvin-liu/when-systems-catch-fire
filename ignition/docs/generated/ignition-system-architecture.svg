@@ -1,0 +1,1251 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 4364" width="1800" height="4364" role="img" preserveAspectRatio="xMidYMin meet" aria-labelledby="map-title map-description">
+  <title id="map-title">点火唯一完整总架构图</title>
+  <desc id="map-description">唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling &amp; Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
+  <style>
+      .map-bg{fill:#f8fafc}.map-title{font:700 30px system-ui,sans-serif;fill:#0f172a}
+      .map-subtitle{font:400 15px system-ui,sans-serif;fill:#475569}
+      .cluster{fill:#fff;stroke-width:2}.cluster-title{font:700 20px system-ui,sans-serif}
+      .cluster-desc{font:400 13px system-ui,sans-serif;fill:#64748b}
+      .node{fill:#fff;stroke:#cbd5e1;stroke-width:1.5;filter:url(#shadow)}
+      .node-label{font:600 14px system-ui,sans-serif;fill:#0f172a;pointer-events:none}
+      .semantic-trunk-band{fill:#ecfeff;stroke:#0f766e;stroke-width:1}.semantic-trunk-label{font:600 11px system-ui,sans-serif;fill:#115e59}
+      .node-link:hover .node,.node-link:focus .node{stroke-width:3;stroke:#0f172a}
+      .edge{fill:none;stroke:#64748b;stroke-width:1.5;stroke-opacity:.34;marker-end:url(#arrow)}
+      .boundary-note{font:600 12px system-ui,sans-serif;fill:#334155}
+    </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" fill-opacity=".55" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity=".10" />
+    </filter>
+  </defs>
+  <rect class="map-bg" x="0" y="0" width="1800" height="4364" />
+  <text class="map-title" x="32" y="42">点火唯一完整总架构图</text>
+  <text class="map-subtitle" x="32" y="72">唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling &amp; Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</text>
+  <text class="boundary-note" x="32" y="98">每个构件保留指向 canonical 目标的 link metadata；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
+  <g class="semantic-trunk" aria-label="Current semantic trunk：OS 在中间，外部执行器是可替换手脚" data-mode="bounded_reading_path" data-loop-target="os_control">
+    <rect class="semantic-trunk-band" x="32" y="103" width="1736" height="18" rx="9" />
+    <text class="semantic-trunk-label" x="44" y="116">主干：Owner / Value Charter → Ignition OS control / governance spine with independent task terminality, obligations, durable lifecycle and explainable steering → Pack / Federation routing → OS-owned bounded live bridge, admission and observation plane → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback / advisory structure → OS</text>
+  </g>
+  <rect class="cluster" data-group="front_doors" x="32" y="1984" width="560" height="520" rx="16" stroke="#2563eb" />
+  <text class="cluster-title" x="54" y="2016" fill="#2563eb">前门 / 导航</text>
+  <text class="cluster-desc" x="54" y="2042">
+    <tspan x="54" dy="0">人类、AI 与机器进入项目的当前入口</tspan>
+  </text>
+  <rect class="cluster" data-group="layers" x="620" y="2426" width="560" height="586" rx="16" stroke="#7c3aed" />
+  <text class="cluster-title" x="642" y="2458" fill="#7c3aed">L0—L6 七层主架构</text>
+  <text class="cluster-desc" x="642" y="2484">
+    <tspan x="642" dy="0">来源到解释出版的认识权限链；不存在 L7</tspan>
+  </text>
+  <rect class="cluster" data-group="core" x="1208" y="122" width="560" height="256" rx="16" stroke="#0f766e" />
+  <text class="cluster-title" x="1230" y="154" fill="#0f766e">基础核心</text>
+  <text class="cluster-desc" x="1230" y="180">
+    <tspan x="1230" dy="0">权威数据、形式门禁与可执行函数接口</tspan>
+  </text>
+  <rect class="cluster" data-group="models" x="32" y="122" width="560" height="388" rx="16" stroke="#0891b2" />
+  <text class="cluster-title" x="54" y="154" fill="#0891b2">模型与投影</text>
+  <text class="cluster-desc" x="54" y="180">
+    <tspan x="54" dy="0">多尺度、概率动力学与自适应关系的候选表示</tspan>
+  </text>
+  <rect class="cluster" data-group="operations" x="620" y="1528" width="560" height="454" rx="16" stroke="#d97706" />
+  <text class="cluster-title" x="642" y="1560" fill="#d97706">控制 / 操作层</text>
+  <text class="cluster-desc" x="642" y="1586">
+    <tspan x="642" dy="0">行动、注意力、地图、迭代与类型化传播闭包</tspan>
+  </text>
+  <rect class="cluster" data-group="governance" x="1208" y="406" width="560" height="2764" rx="16" stroke="#be123c" />
+  <text class="cluster-title" x="1230" y="438" fill="#be123c">规范与约束</text>
+  <text class="cluster-desc" x="1230" y="464">
+    <tspan x="1230" dy="0">价值、权利许可与维护者可持续性边界</tspan>
+  </text>
+  <rect class="cluster" data-group="writing" x="32" y="756" width="560" height="718" rx="16" stroke="#9333ea" />
+  <text class="cluster-title" x="54" y="788" fill="#9333ea">之元写作法与成果链</text>
+  <text class="cluster-desc" x="54" y="814">
+    <tspan x="54" dy="0">双来源素材池、公共表达与可追溯成果</tspan>
+  </text>
+  <rect class="cluster" data-group="feedback" x="620" y="2010" width="560" height="388" rx="16" stroke="#15803d" />
+  <text class="cluster-title" x="642" y="2042" fill="#15803d">现实反馈环</text>
+  <text class="cluster-desc" x="642" y="2068">
+    <tspan x="642" dy="0">作品响应经来源登记后返回适用点火流程</tspan>
+  </text>
+  <rect class="cluster" data-group="boundaries" x="1208" y="4010" width="560" height="322" rx="16" stroke="#475569" />
+  <text class="cluster-title" x="1230" y="4042" fill="#475569">图的解释边界</text>
+  <text class="cluster-desc" x="1230" y="4068">
+    <tspan x="1230" dy="0">这是一张导航接口，不是完整性、因果或理论证明</tspan>
+  </text>
+  <rect class="cluster" data-group="language_thought" x="32" y="538" width="560" height="190" rx="16" stroke="#0369a1" />
+  <text class="cluster-title" x="54" y="570" fill="#0369a1">语言—思维逻辑平面</text>
+  <text class="cluster-desc" x="54" y="596">
+    <tspan x="54" dy="0">横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7</tspan>
+  </text>
+  <rect class="cluster" data-group="os_spine" x="620" y="122" width="560" height="1378" rx="16" stroke="#1d4ed8" />
+  <text class="cluster-title" x="642" y="154" fill="#1d4ed8">Ignition OS / 控制脊柱</text>
+  <text class="cluster-desc" x="642" y="180">
+    <tspan x="642" dy="0">Owner/Human、Profile、Kernel、Runtime、Control</tspan>
+    <tspan x="642" dy="16">Plane、Task Lifecycle、Obligation、Durability、Steering</tspan>
+  </text>
+  <rect class="cluster" data-group="domain_packs" x="32" y="1502" width="560" height="454" rx="16" stroke="#6d28d9" />
+  <text class="cluster-title" x="54" y="1534" fill="#6d28d9">Domain / Skill Packs</text>
+  <text class="cluster-desc" x="54" y="1560">
+    <tspan x="54" dy="0">通过统一 Pack Contract 加载 Knowledge、Research、Writing</tspan>
+    <tspan x="54" dy="16">与非知识 pilot；Pack 不获得通用 authority</tspan>
+  </text>
+  <rect class="cluster" data-group="federation" x="1208" y="3198" width="560" height="784" rx="16" stroke="#ea580c" />
+  <text class="cluster-title" x="1230" y="3230" fill="#ea580c">Federation / 外部手脚</text>
+  <text class="cluster-desc" x="1230" y="3256">
+    <tspan x="1230" dy="0">Federation、provider-neutral admission 与</tspan>
+    <tspan x="1230" dy="16">OpenClaw、Hermes、Codex、Reference/Future Executors</tspan>
+  </text>
+  <g aria-label="system relations">
+    <path class="edge" d="M 312.0 1232.0 C 312.0 1073.0, 312.0 1073.0, 312.0 914.0" data-source="point_fire_analysis" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>point_fire_analysis → ignition_increment: 增量输出 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 466.0 C 312.0 373.0, 312.0 373.0, 312.0 280.0" data-source="arn" data-target-node="mcf" data-relation-class="mechanism_hypothesis" data-relation-domain="substantive_causal_candidate">
+      <title>arn → mcf: 因果审查委托 [substantive_causal_candidate]</title>
+    </path>
+    <path class="edge" d="M 312.0 1166.0 C 312.0 1172.0, 312.0 1172.0, 312.0 1178.0" data-source="case_source" data-target-node="point_fire_analysis" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>case_source → point_fire_analysis: 点火处理 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 591.0 C 1194.0 591.0, 1194.0 1845.0, 900.0 1845.0" data-source="charter_system_r1" data-target-node="iteration" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>charter_system_r1 → iteration: 宪章门控迭代 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 2433.0 C 900.0 2433.0, 900.0 4261.0, 1488.0 4261.0" data-source="current_state" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>current_state → no_totality_proof: 完整性边界 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 902.0 C 312.0 941.0, 312.0 941.0, 312.0 980.0" data-source="external_input" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>external_input → source_pool: 外部材料 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 241.0 C 1194.0 241.0, 1194.0 2677.0, 900.0 2677.0" data-source="foundation" data-target-node="l2" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>foundation → l2: 权威对象 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 241.0 C 1488.0 241.0, 1488.0 4195.0, 1488.0 4195.0" data-source="foundation" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>foundation → no_truth_upgrade: 真值边界 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 307.0 C 1194.0 307.0, 1194.0 1647.0, 900.0 1647.0" data-source="function_os" data-target-node="q12" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+      <title>function_os → q12: 执行动作 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 968.0 C 312.0 974.0, 312.0 974.0, 312.0 980.0" data-source="ignition_increment" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>ignition_increment → source_pool: 点火增量 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1872.0 C 900.0 1878.0, 900.0 1878.0, 900.0 1884.0" data-source="iteration" data-target-node="sync" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>iteration → sync: 传播闭包 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 606.0 657.0, 606.0 2545.0, 900.0 2545.0" data-source="language_thought_plane" data-target-node="l0" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l0: 来源语言与转换链 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 606.0 657.0, 606.0 2611.0, 900.0 2611.0" data-source="language_thought_plane" data-target-node="l1" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l1: 命题框架差异 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 606.0 657.0, 606.0 2677.0, 900.0 2677.0" data-source="language_thought_plane" data-target-node="l2" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l2: 对象与事件包装 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 606.0 657.0, 606.0 2743.0, 900.0 2743.0" data-source="language_thought_plane" data-target-node="l3" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l3: 篇章与连接审计 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 606.0 657.0, 606.0 2809.0, 900.0 2809.0" data-source="language_thought_plane" data-target-node="l4" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l4: 机制主体与终点 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 606.0 657.0, 606.0 2875.0, 900.0 2875.0" data-source="language_thought_plane" data-target-node="l5" data-relation-class="validates" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l5: 框架差异与残余门 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 606.0 657.0, 606.0 2941.0, 900.0 2941.0" data-source="language_thought_plane" data-target-node="l6" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → l6: 目标语言实现 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 312.0 657.0, 312.0 1073.0, 312.0 1073.0" data-source="language_thought_plane" data-target-node="zhiyuan_method" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → zhiyuan_method: 中文直接成句与残余 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 900.0 2572.0 C 900.0 2578.0, 900.0 2578.0, 900.0 2584.0" data-source="l0" data-target-node="l1" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l0 → l1: 受控语义 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2638.0 C 900.0 2644.0, 900.0 2644.0, 900.0 2650.0" data-source="l1" data-target-node="l2" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l1 → l2: 形式化 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2704.0 C 900.0 2710.0, 900.0 2710.0, 900.0 2716.0" data-source="l2" data-target-node="l3" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l2 → l3: 论证 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2770.0 C 900.0 2776.0, 900.0 2776.0, 900.0 2782.0" data-source="l3" data-target-node="l4" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l3 → l4: 模型与证明 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2836.0 C 900.0 2842.0, 900.0 2842.0, 900.0 2848.0" data-source="l4" data-target-node="l5" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>l4 → l5: 验证 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2902.0 C 900.0 2908.0, 900.0 2908.0, 900.0 2914.0" data-source="l5" data-target-node="l6" data-relation-class="publishes" data-relation-domain="repository_dependency">
+      <title>l5 → l6: 受约束发布 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 1251.0 C 1194.0 1251.0, 1194.0 2941.0, 900.0 2941.0" data-source="licensing" data-target-node="l6" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>licensing → l6: 发布权利边界 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 334.0 C 312.0 340.0, 312.0 340.0, 312.0 346.0" data-source="mcf" data-target-node="psd" data-relation-class="enabling_condition" data-relation-domain="substantive_causal_candidate">
+      <title>mcf → psd: 概率动力学补充 [substantive_causal_candidate]</title>
+    </path>
+    <path class="edge" d="M 312.0 1100.0 C 312.0 1172.0, 312.0 1172.0, 312.0 1244.0" data-source="zhiyuan_method" data-target-node="accepted_work" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>zhiyuan_method → accepted_work: 公共表达 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 4156.0 C 1488.0 4162.0, 1488.0 4162.0, 1488.0 4168.0" data-source="no_l7" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>no_l7 → no_truth_upgrade: 边界 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 4222.0 C 1488.0 4228.0, 1488.0 4228.0, 1488.0 4234.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>no_truth_upgrade → no_totality_proof: 边界 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 1034.0 C 312.0 1040.0, 312.0 1040.0, 312.0 1046.0" data-source="source_pool" data-target-node="zhiyuan_method" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+      <title>source_pool → zhiyuan_method: 选材与边界 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2222.0 C 900.0 2228.0, 900.0 2228.0, 900.0 2234.0" data-source="provenance_capture" data-target-node="candidate_return" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>provenance_capture → candidate_return: 范围审查 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1674.0 C 900.0 1680.0, 900.0 1680.0, 900.0 1686.0" data-source="q12" data-target-node="q13" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>q12 → q13: 增量与吸引子控制 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1740.0 C 900.0 1746.0, 900.0 1746.0, 900.0 1752.0" data-source="q13" data-target-node="q14" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>q13 → q14: 版本化导航 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1806.0 C 900.0 1812.0, 900.0 1812.0, 900.0 1818.0" data-source="q14" data-target-node="iteration" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>q14 → iteration: 行动与修订 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 2130.0 C 312.0 2268.0, 312.0 2268.0, 312.0 2406.0" data-source="readme" data-target-node="current_state" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>readme → current_state: 展开当前状态 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 2103.0 C 606.0 2103.0, 606.0 2545.0, 900.0 2545.0" data-source="readme" data-target-node="l0" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>readme → l0: 进入架构 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2156.0 C 900.0 2162.0, 900.0 2162.0, 900.0 2168.0" data-source="public_response" data-target-node="provenance_capture" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>public_response → provenance_capture: 登记 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 900.0 2261.0 C 606.0 2261.0, 606.0 1007.0, 312.0 1007.0" data-source="candidate_return" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>candidate_return → source_pool: 可继续写作 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2288.0 C 900.0 2294.0, 900.0 2294.0, 900.0 2300.0" data-source="candidate_return" data-target-node="feedback_routes" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>candidate_return → feedback_routes: 分派 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 2327.0 C 606.0 2327.0, 606.0 941.0, 312.0 941.0" data-source="feedback_routes" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>feedback_routes → ignition_increment: 新增量 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 1317.0 C 1194.0 1317.0, 1194.0 1845.0, 900.0 1845.0" data-source="sustainability" data-target-node="iteration" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>sustainability → iteration: 可承受行动 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 312.0 1298.0 C 312.0 1337.0, 312.0 1337.0, 312.0 1376.0" data-source="accepted_work" data-target-node="showcase_registry" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>accepted_work → showcase_registry: 机器登记 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 1271.0 C 606.0 1271.0, 606.0 2129.0, 900.0 2129.0" data-source="accepted_work" data-target-node="public_response" data-relation-class="publishes" data-relation-domain="repository_dependency">
+      <title>accepted_work → public_response: 现实暴露 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 1298.0 C 312.0 1304.0, 312.0 1304.0, 312.0 1310.0" data-source="accepted_work" data-target-node="showcase" data-relation-class="publishes" data-relation-domain="repository_dependency">
+      <title>accepted_work → showcase: 人类索引 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 882.0 C 1488.0 690.0, 1488.0 690.0, 1488.0 498.0" data-source="copyright_governance_jurisdiction_registry" data-target-node="charter" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>copyright_governance_jurisdiction_registry → charter: 法域约束 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 1119.0 C 900.0 1119.0, 900.0 875.0, 312.0 875.0" data-source="copyright_governance_source_rights" data-target-node="external_input" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>copyright_governance_source_rights → external_input: 来源权利约束 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 1053.0 C 900.0 1053.0, 900.0 2433.0, 312.0 2433.0" data-source="copyright_governance_publication_gate_validator" data-target-node="current_state" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>copyright_governance_publication_gate_validator → current_state: 出版门禁验证 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 987.0 C 900.0 987.0, 900.0 1271.0, 312.0 1271.0" data-source="copyright_governance_non_republication_principle" data-target-node="accepted_work" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>copyright_governance_non_republication_principle → accepted_work: 不重新发布约束 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 921.0 C 900.0 921.0, 900.0 1007.0, 312.0 1007.0" data-source="copyright_governance_material_classification" data-target-node="source_pool" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>copyright_governance_material_classification → source_pool: 材料分类 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 241.0 C 1488.0 241.0, 1488.0 657.0, 1488.0 657.0" data-source="foundation" data-target-node="epistemic_governance_kernel" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>foundation → epistemic_governance_kernel: 局部 authority 引用 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 657.0 C 900.0 657.0, 900.0 657.0, 1488.0 657.0" data-source="language_thought_plane" data-target-node="epistemic_governance_kernel" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>language_thought_plane → epistemic_governance_kernel: framing / provenance handoff [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 552.0 C 1488.0 591.0, 1488.0 591.0, 1488.0 630.0" data-source="charter" data-target-node="epistemic_governance_kernel" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>charter → epistemic_governance_kernel: 行动许可边界 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 657.0 C 1194.0 657.0, 1194.0 2941.0, 900.0 2941.0" data-source="epistemic_governance_kernel" data-target-node="l6" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>epistemic_governance_kernel → l6: ceiling / provenance / withdrawal route [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 657.0 C 1488.0 657.0, 1488.0 4195.0, 1488.0 4195.0" data-source="epistemic_governance_kernel" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>epistemic_governance_kernel → no_truth_upgrade: 联邦内核不制造真值 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 684.0 C 1488.0 690.0, 1488.0 690.0, 1488.0 696.0" data-source="epistemic_governance_kernel" data-target-node="structural_governance_surface" data-relation-class="projects" data-relation-domain="synchronization_obligation">
+      <title>epistemic_governance_kernel → structural_governance_surface: 候选结构投影 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 900.0 268.0 C 900.0 373.0, 900.0 373.0, 900.0 478.0" data-source="owner_human" data-target-node="agent_profile_r0" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>owner_human → agent_profile_r0: Owner 定义 Profile 边界 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 1488.0 525.0 C 1194.0 525.0, 1194.0 505.0, 900.0 505.0" data-source="charter" data-target-node="agent_profile_r0" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>charter → agent_profile_r0: Value Charter 约束 Profile [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 900.0 532.0 C 900.0 439.0, 900.0 439.0, 900.0 346.0" data-source="agent_profile_r0" data-target-node="agent_kernel_r0" data-relation-class="governance_constrains" data-relation-domain="repository_dependency">
+      <title>agent_profile_r0 → agent_kernel_r0: Profile 进入通用 Kernel 契约 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 400.0 C 900.0 406.0, 900.0 406.0, 900.0 412.0" data-source="agent_kernel_r0" data-target-node="agent_runtime_r0" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+      <title>agent_kernel_r0 → agent_runtime_r0: Kernel 提供授权与 lineage 契约 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 439.0 C 1194.0 439.0, 1194.0 3713.0, 1488.0 3713.0" data-source="agent_runtime_r0" data-target-node="runtime_environment" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → runtime_environment: Runtime 读取声明环境 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 439.0 C 1194.0 439.0, 1194.0 3317.0, 1488.0 3317.0" data-source="agent_runtime_r0" data-target-node="external_agent_federation" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → external_agent_federation: Runtime 通过统一协议连接可替换执行器 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3350.0, 1488.0 3350.0, 1488.0 3356.0" data-source="external_agent_federation" data-target-node="openclaw_adapter" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → openclaw_adapter: Federation 约束 OpenClaw public adapter [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3383.0, 1488.0 3383.0, 1488.0 3422.0" data-source="external_agent_federation" data-target-node="hermes_adapter" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → hermes_adapter: Federation 约束 Hermes text bridge [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3416.0, 1488.0 3416.0, 1488.0 3488.0" data-source="external_agent_federation" data-target-node="codex_adapter" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → codex_adapter: Federation 约束 Codex JSONL adapter [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3449.0, 1488.0 3449.0, 1488.0 3554.0" data-source="external_agent_federation" data-target-node="reference_executor" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → reference_executor: Federation 以 Reference Executor 做 conformance [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3482.0, 1488.0 3482.0, 1488.0 3620.0" data-source="external_agent_federation" data-target-node="future_executors" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → future_executors: 未来执行器必须先满足统一 contract [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3515.0, 1488.0 3515.0, 1488.0 3686.0" data-source="external_agent_federation" data-target-node="runtime_environment" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → runtime_environment: Federation 受 Runtime 工具/环境边界约束 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 466.0 C 900.0 505.0, 900.0 505.0, 900.0 544.0" data-source="agent_runtime_r0" data-target-node="runtime_memory_loop" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → runtime_memory_loop: Runtime 记录结构化记忆事件 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 439.0 C 606.0 439.0, 606.0 1621.0, 312.0 1621.0" data-source="agent_runtime_r0" data-target-node="domain_pack_contract" data-relation-class="lifecycle_depends_on" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → domain_pack_contract: Runtime 通过 Pack 契约加载领域能力 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 1648.0 C 312.0 1654.0, 312.0 1654.0, 312.0 1660.0" data-source="domain_pack_contract" data-target-node="knowledge_domain_pack" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>domain_pack_contract → knowledge_domain_pack: 知识系统作为第一个 Domain Pack [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 1648.0 C 312.0 1687.0, 312.0 1687.0, 312.0 1726.0" data-source="domain_pack_contract" data-target-node="research_pack_reos_light" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>domain_pack_contract → research_pack_reos_light: REOS LIGHT 作为 research Pack [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 1648.0 C 312.0 1720.0, 312.0 1720.0, 312.0 1792.0" data-source="domain_pack_contract" data-target-node="writing_pack" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>domain_pack_contract → writing_pack: 写作与出版作为 writing Pack [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 1687.0 C 312.0 1687.0, 312.0 2169.0, 312.0 2169.0" data-source="knowledge_domain_pack" data-target-node="human_knowledge_surfaces" data-relation-class="publishes" data-relation-domain="repository_dependency">
+      <title>knowledge_domain_pack → human_knowledge_surfaces: 知识 Pack 仍通过 Human Surface 表达 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 439.0 C 606.0 439.0, 606.0 1885.0, 312.0 1885.0" data-source="agent_runtime_r0" data-target-node="nonknowledge_pilot" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → nonknowledge_pilot: 非知识闭环验证 Runtime 隔离 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 373.0 C 1194.0 373.0, 1194.0 4195.0, 1488.0 4195.0" data-source="agent_kernel_r0" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>agent_kernel_r0 → no_truth_upgrade: 通用 Kernel 不升级真值或 Owner 权限 [synchronization_obligation]</title>
+    </path>
+    <path class="edge" d="M 900.0 466.0 C 900.0 538.0, 900.0 538.0, 900.0 610.0" data-source="agent_runtime_r0" data-target-node="event_ledger_r1" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → event_ledger_r1: Runtime 写入可重放 Event Ledger [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 664.0 C 900.0 736.0, 900.0 736.0, 900.0 808.0" data-source="event_ledger_r1" data-target-node="bounded_scheduler_r1" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>event_ledger_r1 → bounded_scheduler_r1: 确定性事件重放支撑 Scheduler 状态 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 862.0 C 900.0 868.0, 900.0 868.0, 900.0 874.0" data-source="bounded_scheduler_r1" data-target-node="executor_health_lease_r1" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>bounded_scheduler_r1 → executor_health_lease_r1: Scheduler 路由受健康租约约束 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 862.0 C 900.0 901.0, 900.0 901.0, 900.0 940.0" data-source="bounded_scheduler_r1" data-target-node="queue_control_r1" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>bounded_scheduler_r1 → queue_control_r1: Scheduler 消费有界队列 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 862.0 C 900.0 934.0, 900.0 934.0, 900.0 1006.0" data-source="bounded_scheduler_r1" data-target-node="durable_dispatch_r1" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>bounded_scheduler_r1 → durable_dispatch_r1: Scheduler 产生可协调的 Dispatch envelope [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 466.0 C 900.0 769.0, 900.0 769.0, 900.0 1072.0" data-source="agent_runtime_r0" data-target-node="concurrent_operational_memory_r2" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → concurrent_operational_memory_r2: Runtime 吸收并发 Operational Memory 事件 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1126.0 C 900.0 1264.0, 900.0 1264.0, 900.0 1402.0" data-source="concurrent_operational_memory_r2" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>concurrent_operational_memory_r2 → driver_console_r1: Memory 生成 Driver Console 的恢复提示 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 466.0 C 900.0 802.0, 900.0 802.0, 900.0 1138.0" data-source="agent_runtime_r0" data-target-node="durability_lifecycle_r3" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → durability_lifecycle_r3: Runtime 生成有界 Durability / Lifecycle 记录 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1192.0 C 900.0 1297.0, 900.0 1297.0, 900.0 1402.0" data-source="durability_lifecycle_r3" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>durability_lifecycle_r3 → driver_console_r1: Durability 状态进入 Driver Console 恢复视图 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 466.0 C 900.0 835.0, 900.0 835.0, 900.0 1204.0" data-source="agent_runtime_r0" data-target-node="steering_intent_obligation_r1" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>agent_runtime_r0 → steering_intent_obligation_r1: Runtime 生成有界 Steering / Intent / Goal / Obligation 记录 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1258.0 C 900.0 1330.0, 900.0 1330.0, 900.0 1402.0" data-source="steering_intent_obligation_r1" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>steering_intent_obligation_r1 → driver_console_r1: Steering why-next 与 obligation 状态进入 Driver Console [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3581.0, 1488.0 3581.0, 1488.0 3818.0" data-source="external_agent_federation" data-target-node="live_executor_bridge_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → live_executor_bridge_r1: Federation 将 bounded live dispatch 交给 OS Bridge [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3872.0 C 1488.0 3878.0, 1488.0 3878.0, 1488.0 3884.0" data-source="live_executor_bridge_r1" data-target-node="live_observation_reconciliation_plane_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>live_executor_bridge_r1 → live_observation_reconciliation_plane_r1: Live Bridge 将 process evidence 交给 Observation / Reconciliation Plane [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1324.0 C 900.0 1330.0, 900.0 1330.0, 900.0 1336.0" data-source="formal_task_lifecycle_r1" data-target-node="open_obligation_registry_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>formal_task_lifecycle_r1 → open_obligation_registry_r1: Formal task 引用可 carry-forward obligation，但不继承其 liveness [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3344.0 C 1488.0 3548.0, 1488.0 3548.0, 1488.0 3752.0" data-source="external_agent_federation" data-target-node="executor_admission_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → executor_admission_r1: Federation 进入 provider-neutral executor admission [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 3806.0 C 1488.0 3812.0, 1488.0 3812.0, 1488.0 3818.0" data-source="executor_admission_r1" data-target-node="live_executor_bridge_r1" data-relation-class="governance_constrains" data-relation-domain="repository_dependency">
+      <title>executor_admission_r1 → live_executor_bridge_r1: Admission gate 先于 bounded live dispatch [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 268.0 C 312.0 340.0, 312.0 340.0, 312.0 412.0" data-source="arr" data-target-node="arn" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>arr → arn: 关系网络参照 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 268.0 C 312.0 274.0, 312.0 274.0, 312.0 280.0" data-source="arr" data-target-node="mcf" data-relation-class="mechanism_hypothesis" data-relation-domain="substantive_causal_candidate">
+      <title>arr → mcf: 因果审查委托 [substantive_causal_candidate]</title>
+    </path>
+    <path class="edge" d="M 312.0 268.0 C 312.0 307.0, 312.0 307.0, 312.0 346.0" data-source="arr" data-target-node="psd" data-relation-class="mechanism_hypothesis" data-relation-domain="substantive_causal_candidate">
+      <title>arr → psd: 随机/状态语义参照 [substantive_causal_candidate]</title>
+    </path>
+  </g>
+  <g aria-label="system components with source links">
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/.github/README.md" target="_top" data-node-id="readme" data-group="front_doors" data-target=".github/README.md" aria-label="README 首页：项目现状、成果、价值约束、完整系统图与使用入口。">
+      <title>README 首页 — 项目现状、成果、价值约束、完整系统图与使用入口。</title>
+      <rect class="node" x="54.0" y="2076.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2109.0">
+        <tspan x="70.0" dy="0">README 首页</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/KNOWLEDGE/README.md" target="_top" data-node-id="human_knowledge_surfaces" data-group="front_doors" data-target="KNOWLEDGE/README.md" aria-label="知识体验入口与人类可读表面：机器记录与人类结果成对生成，并通过统一入口、What's New、主题地图、资产卡、分层阅读、全量搜索、别名与双向依赖在两步内可达。">
+      <title>知识体验入口与人类可读表面 — 机器记录与人类结果成对生成，并通过统一入口、What's New、主题地图、资产卡、分层阅读、全量搜索、别名与双向依赖在两步内可达。</title>
+      <rect class="node" x="54.0" y="2142.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2175.0">
+        <tspan x="70.0" dy="0">知识体验入口与人类可读表面</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/SUMMARY.md" target="_top" data-node-id="summary" data-group="front_doors" data-target="SUMMARY.md" aria-label="SUMMARY 导航：按主题进入正式资产。">
+      <title>SUMMARY 导航 — 按主题进入正式资产。</title>
+      <rect class="node" x="54.0" y="2208.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2241.0">
+        <tspan x="70.0" dy="0">SUMMARY 导航</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/USAGE.md" target="_top" data-node-id="usage" data-group="front_doors" data-target="docs/USAGE.md" aria-label="人类使用说明：从材料到受约束输出的最小使用流程。">
+      <title>人类使用说明 — 从材料到受约束输出的最小使用流程。</title>
+      <rect class="node" x="54.0" y="2274.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2307.0">
+        <tspan x="70.0" dy="0">人类使用说明</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/ai-assistant-usage-reference.md" target="_top" data-node-id="ai_guide" data-group="front_doors" data-target="docs/ai-assistant-usage-reference.md" aria-label="AI 助手使用参考：AI 首次阅读、边界与回链要求。">
+      <title>AI 助手使用参考 — AI 首次阅读、边界与回链要求。</title>
+      <rect class="node" x="54.0" y="2340.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2373.0">
+        <tspan x="70.0" dy="0">AI 助手使用参考</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/project-current-state.md" target="_top" data-node-id="current_state" data-group="front_doors" data-target="docs/project-current-state.md" aria-label="完整项目现状：当前版本化能力、限制与非永久身份。">
+      <title>完整项目现状 — 当前版本化能力、限制与非永久身份。</title>
+      <rect class="node" x="54.0" y="2406.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2439.0">
+        <tspan x="70.0" dy="0">完整项目现状</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l0" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L0 来源与证据：保存来源事实、版本、范围与证据边界。">
+      <title>L0 来源与证据 — 保存来源事实、版本、范围与证据边界。</title>
+      <rect class="node" x="642.0" y="2518.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2551.0">
+        <tspan x="658.0" dy="0">L0 来源与证据</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l1" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L1 受控语义命题：声明主体、条件、量词、范围与失败边界。">
+      <title>L1 受控语义命题 — 声明主体、条件、量词、范围与失败边界。</title>
+      <rect class="node" x="642.0" y="2584.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2617.0">
+        <tspan x="658.0" dy="0">L1 受控语义命题</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l2" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L2 形式对象：选择可审计的对象类型与规范表示。">
+      <title>L2 形式对象 — 选择可审计的对象类型与规范表示。</title>
+      <rect class="node" x="642.0" y="2650.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2683.0">
+        <tspan x="658.0" dy="0">L2 形式对象</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l3" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L3 逻辑论证：保存前提、规则、结论、反例与未决义务。">
+      <title>L3 逻辑论证 — 保存前提、规则、结论、反例与未决义务。</title>
+      <rect class="node" x="642.0" y="2716.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2749.0">
+        <tspan x="658.0" dy="0">L3 逻辑论证</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l4" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L4 数学模型与证明：保存模型、证明义务、证明和反例工件。">
+      <title>L4 数学模型与证明 — 保存模型、证明义务、证明和反例工件。</title>
+      <rect class="node" x="642.0" y="2782.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2815.0">
+        <tspan x="658.0" dy="0">L4 数学模型与证明</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l5" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L5 验证与有效性：分开评估形式、逻辑、数学、经验、范围与来源。">
+      <title>L5 验证与有效性 — 分开评估形式、逻辑、数学、经验、范围与来源。</title>
+      <rect class="node" x="642.0" y="2848.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2881.0">
+        <tspan x="658.0" dy="0">L5 验证与有效性</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l6" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L6 解释、应用与出版：在不提高下层 claim 的前提下阐释、应用与发布。">
+      <title>L6 解释、应用与出版 — 在不提高下层 claim 的前提下阐释、应用与发布。</title>
+      <rect class="node" x="642.0" y="2914.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2947.0">
+        <tspan x="658.0" dy="0">L6 解释、应用与出版</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/FOUNDATION.md" target="_top" data-node-id="foundation" data-group="core" data-target="FOUNDATION.md" aria-label="Foundation：权威注册表、迁移、证明义务、验证与兼容视图。">
+      <title>Foundation — 权威注册表、迁移、证明义务、验证与兼容视图。</title>
+      <rect class="node" x="1230.0" y="214.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="247.0">
+        <tspan x="1246.0" dy="0">Foundation</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/function-os-candidate/v0.2/README.md" target="_top" data-node-id="function_os" data-group="core" data-target="function-os-candidate/v0.2/README.md" aria-label="Function OS：执行受约束的函数动作，不决定真值或价值。">
+      <title>Function OS — 执行受约束的函数动作，不决定真值或价值。</title>
+      <rect class="node" x="1230.0" y="280.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="313.0">
+        <tspan x="1246.0" dy="0">Function OS</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/adaptive-relational-runtime.md" target="_top" data-node-id="arr" data-group="models" data-target="docs/architecture/adaptive-relational-runtime.md" aria-label="ARR 自适应关系运行时 (R1 Scaffold)：候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。">
+      <title>ARR 自适应关系运行时 (R1 Scaffold) — 候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。</title>
+      <rect class="node" x="54.0" y="214.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="236.0">
+        <tspan x="70.0" dy="0">ARR 自适应关系运行时 (R1</tspan>
+        <tspan x="70.0" dy="18">Scaffold)</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/multiscale-causal-fabric.md" target="_top" data-node-id="mcf" data-group="models" data-target="docs/architecture/multiscale-causal-fabric.md" aria-label="MCF 多尺度因果织体：组织带因果类型、边界和残余的跨尺度候选投影。">
+      <title>MCF 多尺度因果织体 — 组织带因果类型、边界和残余的跨尺度候选投影。</title>
+      <rect class="node" x="54.0" y="280.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="313.0">
+        <tspan x="70.0" dy="0">MCF 多尺度因果织体</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/probabilistic-system-dynamics.md" target="_top" data-node-id="psd" data-group="models" data-target="docs/architecture/probabilistic-system-dynamics.md" aria-label="PSD 概率系统动力学：补充随机演化、状态、边界与干预语义。">
+      <title>PSD 概率系统动力学 — 补充随机演化、状态、边界与干预语义。</title>
+      <rect class="node" x="54.0" y="346.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="379.0">
+        <tspan x="70.0" dy="0">PSD 概率系统动力学</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/adaptive-relational-network.md" target="_top" data-node-id="arn" data-group="models" data-target="docs/architecture/adaptive-relational-network.md" aria-label="ARN 自适应关系网络：处理异质、时序与自适应关系，并把因果主张交回 MCF。">
+      <title>ARN 自适应关系网络 — 处理异质、时序与自适应关系，并把因果主张交回 MCF。</title>
+      <rect class="node" x="54.0" y="412.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="445.0">
+        <tspan x="70.0" dy="0">ARN 自适应关系网络</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/effectual-action-plane.md" target="_top" data-node-id="q12" data-group="operations" data-target="docs/architecture/effectual-action-plane.md" aria-label="Q12 行动 / 机制双环：从最小状态改变到行动后机制裁决。">
+      <title>Q12 行动 / 机制双环 — 从最小状态改变到行动后机制裁决。</title>
+      <rect class="node" x="642.0" y="1620.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1642.0">
+        <tspan x="658.0" dy="0">Q12 行动 /</tspan>
+        <tspan x="658.0" dy="18">机制双环</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/attention-attractor-control-plane.md" target="_top" data-node-id="q13" data-group="operations" data-target="docs/architecture/attention-attractor-control-plane.md" aria-label="Q13 注意力 / 分布 / 压缩：控制吸引子、采样分布、决策坍缩与压缩完整性。">
+      <title>Q13 注意力 / 分布 / 压缩 — 控制吸引子、采样分布、决策坍缩与压缩完整性。</title>
+      <rect class="node" x="642.0" y="1686.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1708.0">
+        <tspan x="658.0" dy="0">Q13 注意力 /</tspan>
+        <tspan x="658.0" dy="18">分布 / 压缩</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/ignition-atlas.md" target="_top" data-node-id="q14" data-group="operations" data-target="docs/architecture/ignition-atlas.md" aria-label="Q14 点火地图集：提供版本化、多视角、可回溯的结构投影。">
+      <title>Q14 点火地图集 — 提供版本化、多视角、可回溯的结构投影。</title>
+      <rect class="node" x="642.0" y="1752.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1785.0">
+        <tspan x="658.0" dy="0">Q14 点火地图集</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ITERATION.md" target="_top" data-node-id="iteration" data-group="operations" data-target="ITERATION.md" aria-label="点火迭代操作法：1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。">
+      <title>点火迭代操作法 — 1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。</title>
+      <rect class="node" x="642.0" y="1818.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1851.0">
+        <tspan x="658.0" dy="0">点火迭代操作法</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/operations/synchronization-surfaces.json" target="_top" data-node-id="sync" data-group="operations" data-target="data/operations/synchronization-surfaces.json" aria-label="同步表面 / 类型传播 / 增量执行：1.2 Current 传播闭包与 1.3 Draft 选择性物化联合工作；关键权威变更仍强制 full rebuild。">
+      <title>同步表面 / 类型传播 / 增量执行 — 1.2 Current 传播闭包与 1.3 Draft 选择性物化联合工作；关键权威变更仍强制 full rebuild。</title>
+      <rect class="node" x="642.0" y="1884.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1906.0">
+        <tspan x="658.0" dy="0">同步表面 /</tspan>
+        <tspan x="658.0" dy="18">类型传播 / 增量执行</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/governance/life-community-value-charter.md" target="_top" data-node-id="charter" data-group="governance" data-target="docs/governance/life-community-value-charter.md" aria-label="生命共同体价值宪章：约束谁受益、谁承担成本以及何时拒绝、暂停或回滚。">
+      <title>生命共同体价值宪章 — 约束谁受益、谁承担成本以及何时拒绝、暂停或回滚。</title>
+      <rect class="node" x="1230.0" y="498.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="531.0">
+        <tspan x="1246.0" dy="0">生命共同体价值宪章</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/governance/charter-system-r1.md" target="_top" data-node-id="charter_system_r1" data-group="governance" data-target="docs/governance/charter-system-r1.md" aria-label="Charter System R1（宪章系统 R1）治理系统：治理系统 R1：已 Accepted/Current 但 activated=false、publication_status=UNPUBLISHED；其状态边界须作为前门同步义务传播到 README 与项目现状页。">
+      <title>Charter System R1（宪章系统 R1）治理系统 — 治理系统 R1：已 Accepted/Current 但 activated=false、publication_status=UNPUBLISHED；其状态边界须作为前门同步义务传播到 README 与项目现状页。</title>
+      <rect class="node" x="1230.0" y="564.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="586.0">
+        <tspan x="1246.0" dy="0">Charter System R1（宪章系统</tspan>
+        <tspan x="1246.0" dy="18">R1）治理系统</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md" target="_top" data-node-id="epistemic_governance_kernel" data-group="governance" data-target="docs/architecture/epistemic-governance-kernel-and-federated-planes.md" aria-label="认识论治理内核与联邦平面：引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。">
+      <title>认识论治理内核与联邦平面 — 引用既有 authority、类型化 handoff 与禁止升级边；不复制局部状态，不是 L7 或统一真值层。</title>
+      <rect class="node" x="1230.0" y="630.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="663.0">
+        <tspan x="1246.0" dy="0">认识论治理内核与联邦平面</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/esi-human-surface-r0.md" target="_top" data-node-id="structural_governance_surface" data-group="governance" data-target="docs/architecture/esi-human-surface-r0.md" aria-label="Structural Governance Surface (advisory)：由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。">
+      <title>Structural Governance Surface (advisory) — 由候选 ESI、过渡语法与不越权合同投影出的 advisory reading surface；不增加 L7，不改变 capability、permission 或 epistemic status。</title>
+      <rect class="node" x="1230.0" y="696.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="718.0">
+        <tspan x="1246.0" dy="0">Structural Governance</tspan>
+        <tspan x="1246.0" dy="18">Surface (advisory)</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/governance/history-remediation-register.json" target="_top" data-node-id="copyright_governance_history_remediation" data-group="governance" data-target="data/governance/history-remediation-register.json" aria-label="版权治理-历史整改注册表：History remediation register for past copyright/rights boundary violations.">
+      <title>版权治理-历史整改注册表 — History remediation register for past copyright/rights boundary violations.</title>
+      <rect class="node" x="1230.0" y="762.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="795.0">
+        <tspan x="1246.0" dy="0">版权治理-历史整改注册表</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/governance/jurisdiction-rule-registry.json" target="_top" data-node-id="copyright_governance_jurisdiction_registry" data-group="governance" data-target="data/governance/jurisdiction-rule-registry.json" aria-label="版权治理-法域规则注册表：Representative multi-jurisdiction copyright rule registry for Q33 risk projection. Covers WIPO treaties, US, EU, UK, CA, AU, JP, SG, IN.">
+      <title>版权治理-法域规则注册表 — Representative multi-jurisdiction copyright rule registry for Q33 risk projection. Covers WIPO treaties, US, EU, UK, CA, AU, JP, SG, IN.</title>
+      <rect class="node" x="1230.0" y="828.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="861.0">
+        <tspan x="1246.0" dy="0">版权治理-法域规则注册表</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/governance/material-classification.json" target="_top" data-node-id="copyright_governance_material_classification" data-group="governance" data-target="data/governance/material-classification.json" aria-label="版权治理-材料分类系统：Material classification system L0-L6 for publication gate decisions.">
+      <title>版权治理-材料分类系统 — Material classification system L0-L6 for publication gate decisions.</title>
+      <rect class="node" x="1230.0" y="894.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="927.0">
+        <tspan x="1246.0" dy="0">版权治理-材料分类系统</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/governance/external-input-non-republication-principle.md" target="_top" data-node-id="copyright_governance_non_republication_principle" data-group="governance" data-target="docs/governance/external-input-non-republication-principle.md" aria-label="版权治理-外部输入不重新发布原则：External Input Non-Republication Principle — prohibits republication of third-party copyrighted material.">
+      <title>版权治理-外部输入不重新发布原则 — External Input Non-Republication Principle — prohibits republication of third-party copyrighted material.</title>
+      <rect class="node" x="1230.0" y="960.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="993.0">
+        <tspan x="1246.0" dy="0">版权治理-外部输入不重新发布原则</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/governance/fail_closed_publication_gate.py" target="_top" data-node-id="copyright_governance_publication_gate_validator" data-group="governance" data-target="tools/governance/fail_closed_publication_gate.py" aria-label="版权治理-发布门禁验证器：Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle.">
+      <title>版权治理-发布门禁验证器 — Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle.</title>
+      <rect class="node" x="1230.0" y="1026.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1059.0">
+        <tspan x="1246.0" dy="0">版权治理-发布门禁验证器</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/governance/source-rights-registry.json" target="_top" data-node-id="copyright_governance_source_rights" data-group="governance" data-target="data/governance/source-rights-registry.json" aria-label="版权治理-来源权利注册表：Source rights registry categorizing materials by rights status and required governance actions.">
+      <title>版权治理-来源权利注册表 — Source rights registry categorizing materials by rights status and required governance actions.</title>
+      <rect class="node" x="1230.0" y="1092.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1125.0">
+        <tspan x="1246.0" dy="0">版权治理-来源权利注册表</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tests/test_q33_governance_infrastructure.py" target="_top" data-node-id="copyright_governance_tests" data-group="governance" data-target="tests/test_q33_governance_infrastructure.py" aria-label="版权治理-测试套件：Production tests for Q33 governance infrastructure: registries, schemas, validator, mutation detection.">
+      <title>版权治理-测试套件 — Production tests for Q33 governance infrastructure: registries, schemas, validator, mutation detection.</title>
+      <rect class="node" x="1230.0" y="1158.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1191.0">
+        <tspan x="1246.0" dy="0">版权治理-测试套件</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/governance/licensing-rights-inventory.md" target="_top" data-node-id="licensing" data-group="governance" data-target="docs/governance/licensing-rights-inventory.md" aria-label="许可 / 权利边界：区分自有、第三方、可公开与受限材料。">
+      <title>许可 / 权利边界 — 区分自有、第三方、可公开与受限材料。</title>
+      <rect class="node" x="1230.0" y="1224.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1246.0">
+        <tspan x="1246.0" dy="0">许可 /</tspan>
+        <tspan x="1246.0" dy="18">权利边界</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/reports/atlas/maps/map-maintainer-sustainability-economics.md" target="_top" data-node-id="sustainability" data-group="governance" data-target="reports/atlas/maps/map-maintainer-sustainability-economics.md" aria-label="维护者可持续性边界：将时间、注意力、资金、维护负荷与锁定风险纳入行动。">
+      <title>维护者可持续性边界 — 将时间、注意力、资金、维护负荷与锁定风险纳入行动。</title>
+      <rect class="node" x="1230.0" y="1290.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1323.0">
+        <tspan x="1246.0" dy="0">维护者可持续性边界</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/symbolic/symbolic_power_perspective-contract.schema.json" target="_top" data-node-id="symbolic_power_perspective_contract" data-group="governance" data-target="schemas/symbolic/symbolic_power_perspective-contract.schema.json" aria-label="Symbolic Object, Power &amp; Multi-Perspective Governance 合同：SYMBOLIC-SPHERE-I1 repair-r1 contract with explicit repository reference records binding path, commit, blob, actual-byte SHA-256, record type, declared role and selected typed evidence object. Structured actor, meaning, power, face, distribution, counter-reading and material-evidence semantics replace caller-supplied pass booleans.">
+      <title>Symbolic Object, Power &amp; Multi-Perspective Governance 合同 — SYMBOLIC-SPHERE-I1 repair-r1 contract with explicit repository reference records binding path, commit, blob, actual-byte SHA-256, record type, declared role and selected typed evidence object. Structured actor, meaning, power, face, distribution, counter-reading and material-evidence semantics replace caller-supplied pass booleans.</title>
+      <rect class="node" x="1230.0" y="1356.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1378.0">
+        <tspan x="1246.0" dy="0">Symbolic Object, Power &amp;</tspan>
+        <tspan x="1246.0" dy="18">Multi-Perspective</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/symbolic/validate_symbolic_power_perspective_gate.py" target="_top" data-node-id="symbolic_power_perspective_gate_validator" data-group="governance" data-target="tools/symbolic/validate_symbolic_power_perspective_gate.py" aria-label="Symbolic Object, Power &amp; Multi-Perspective Governance 门禁：SYMBOLIC-SPHERE-I1 repair-r1 fail-closed CLI resolves local Git commits and tree entries, recomputes blob and SHA-256 integrity, checks actual object roles, and independently validates material objects, actors, meaning projections, allowed power modalities, distinct faces, benefit/cost distribution, counter-reading evidence, material downgrade, truth ceiling and causal ceiling with stable exits 0 and 2-20.">
+      <title>Symbolic Object, Power &amp; Multi-Perspective Governance 门禁 — SYMBOLIC-SPHERE-I1 repair-r1 fail-closed CLI resolves local Git commits and tree entries, recomputes blob and SHA-256 integrity, checks actual object roles, and independently validates material objects, actors, meaning projections, allowed power modalities, distinct faces, benefit/cost distribution, counter-reading evidence, material downgrade, truth ceiling and causal ceiling with stable exits 0 and 2-20.</title>
+      <rect class="node" x="1230.0" y="1422.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1444.0">
+        <tspan x="1246.0" dy="0">Symbolic Object, Power &amp;</tspan>
+        <tspan x="1246.0" dy="18">Multi-Perspective</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/symbolic/pilot-symbolic-sphere-i1.json" target="_top" data-node-id="symbolic_power_perspective_pilot" data-group="governance" data-target="data/symbolic/pilot-symbolic-sphere-i1.json" aria-label="Symbolic Object, Power &amp; Multi-Perspective Governance 受控试点：SYMBOLIC-SPHERE-I1 repository-local synthetic pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY. Twenty repair fixtures use ordinary data-integrity names and exercise real Git reference resolution plus task semantics; original manifest fixture paths remain compatibility artifacts. No external action or truth/causal upgrade.">
+      <title>Symbolic Object, Power &amp; Multi-Perspective Governance 受控试点 — SYMBOLIC-SPHERE-I1 repository-local synthetic pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY. Twenty repair fixtures use ordinary data-integrity names and exercise real Git reference resolution plus task semantics; original manifest fixture paths remain compatibility artifacts. No external action or truth/causal upgrade.</title>
+      <rect class="node" x="1230.0" y="1488.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1510.0">
+        <tspan x="1246.0" dy="0">Symbolic Object, Power &amp;</tspan>
+        <tspan x="1246.0" dy="18">Multi-Perspective</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/decision/decision_integrity-contract.schema.json" target="_top" data-node-id="decision_integrity_contract" data-group="governance" data-target="schemas/decision/decision_integrity-contract.schema.json" aria-label="Principle Lock, Process Quality &amp; Outcome-Bias Governance 合同：DECISION-INTEGRITY-I1 typed evidence-bound contract. Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear.">
+      <title>Principle Lock, Process Quality &amp; Outcome-Bias Governance 合同 — DECISION-INTEGRITY-I1 typed evidence-bound contract. Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear.</title>
+      <rect class="node" x="1230.0" y="1554.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1576.0">
+        <tspan x="1246.0" dy="0">Principle Lock, Process</tspan>
+        <tspan x="1246.0" dy="18">Quality &amp; Outcome-Bias</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/decision/validate_decision_integrity_gate.py" target="_top" data-node-id="decision_integrity_gate_validator" data-group="governance" data-target="tools/decision/validate_decision_integrity_gate.py" aria-label="Principle Lock, Process Quality &amp; Outcome-Bias Governance 门禁：DECISION-INTEGRITY-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.">
+      <title>Principle Lock, Process Quality &amp; Outcome-Bias Governance 门禁 — DECISION-INTEGRITY-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="1620.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1642.0">
+        <tspan x="1246.0" dy="0">Principle Lock, Process</tspan>
+        <tspan x="1246.0" dy="18">Quality &amp; Outcome-Bias</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/decision/pilot-decision-integrity-i1.json" target="_top" data-node-id="decision_integrity_pilot" data-group="governance" data-target="data/decision/pilot-decision-integrity-i1.json" aria-label="Principle Lock, Process Quality &amp; Outcome-Bias Governance 受控试点：DECISION-INTEGRITY-I1 self-authored bounded repository pilot covering BAD_PROCESS_GOOD_OUTCOME and GOOD_PROCESS_BAD_OUTCOME; 24 fixtures drive the real CLI; no external action.">
+      <title>Principle Lock, Process Quality &amp; Outcome-Bias Governance 受控试点 — DECISION-INTEGRITY-I1 self-authored bounded repository pilot covering BAD_PROCESS_GOOD_OUTCOME and GOOD_PROCESS_BAD_OUTCOME; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="1686.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1708.0">
+        <tspan x="1246.0" dy="0">Principle Lock, Process</tspan>
+        <tspan x="1246.0" dy="18">Quality &amp; Outcome-Bias</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/metacognition/epistemic_state_control_plane-contract.schema.json" target="_top" data-node-id="epistemic_state_control_plane_contract" data-group="governance" data-target="schemas/metacognition/epistemic_state_control_plane-contract.schema.json" aria-label="Scientific Metacognition &amp; Epistemic-State Control Plane 合同：SCIENTIFIC-METACOGNITION-I1 typed evidence-bound contract. Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning.">
+      <title>Scientific Metacognition &amp; Epistemic-State Control Plane 合同 — SCIENTIFIC-METACOGNITION-I1 typed evidence-bound contract. Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning.</title>
+      <rect class="node" x="1230.0" y="1752.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1774.0">
+        <tspan x="1246.0" dy="0">Scientific Metacognition</tspan>
+        <tspan x="1246.0" dy="18">&amp; Epistemic-State</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/metacognition/validate_epistemic_state_control_plane_gate.py" target="_top" data-node-id="epistemic_state_control_plane_gate_validator" data-group="governance" data-target="tools/metacognition/validate_epistemic_state_control_plane_gate.py" aria-label="Scientific Metacognition &amp; Epistemic-State Control Plane 门禁：SCIENTIFIC-METACOGNITION-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.">
+      <title>Scientific Metacognition &amp; Epistemic-State Control Plane 门禁 — SCIENTIFIC-METACOGNITION-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="1818.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1840.0">
+        <tspan x="1246.0" dy="0">Scientific Metacognition</tspan>
+        <tspan x="1246.0" dy="18">&amp; Epistemic-State</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/metacognition/pilot-scientific-metacognition-i1.json" target="_top" data-node-id="epistemic_state_control_plane_pilot" data-group="governance" data-target="data/metacognition/pilot-scientific-metacognition-i1.json" aria-label="Scientific Metacognition &amp; Epistemic-State Control Plane 受控试点：SCIENTIFIC-METACOGNITION-I1 self-authored bounded repository pilot covering REAL_TRAIN_UNKNOWN_LEDGER and NON_IDENTIFIABLE_UNKNOWN; 24 fixtures drive the real CLI; no external action.">
+      <title>Scientific Metacognition &amp; Epistemic-State Control Plane 受控试点 — SCIENTIFIC-METACOGNITION-I1 self-authored bounded repository pilot covering REAL_TRAIN_UNKNOWN_LEDGER and NON_IDENTIFIABLE_UNKNOWN; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="1884.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1906.0">
+        <tspan x="1246.0" dy="0">Scientific Metacognition</tspan>
+        <tspan x="1246.0" dy="18">&amp; Epistemic-State</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/anomaly/world_feedback_anomaly-contract.schema.json" target="_top" data-node-id="world_feedback_anomaly_contract" data-group="governance" data-target="schemas/anomaly/world_feedback_anomaly-contract.schema.json" aria-label="World-Feedback Anomaly Trigger &amp; Governance 合同：Q41-I1 typed evidence-bound contract. Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system.">
+      <title>World-Feedback Anomaly Trigger &amp; Governance 合同 — Q41-I1 typed evidence-bound contract. Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system.</title>
+      <rect class="node" x="1230.0" y="1950.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="1972.0">
+        <tspan x="1246.0" dy="0">World-Feedback Anomaly</tspan>
+        <tspan x="1246.0" dy="18">Trigger &amp; Governance 合同</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/anomaly/validate_world_feedback_anomaly_gate.py" target="_top" data-node-id="world_feedback_anomaly_gate_validator" data-group="governance" data-target="tools/anomaly/validate_world_feedback_anomaly_gate.py" aria-label="World-Feedback Anomaly Trigger &amp; Governance 门禁：Q41-I1 fail-closed real CLI enforcing evidence binding, exact parent, 10 task rules, candidate ceiling and no external action.">
+      <title>World-Feedback Anomaly Trigger &amp; Governance 门禁 — Q41-I1 fail-closed real CLI enforcing evidence binding, exact parent, 10 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="2016.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2038.0">
+        <tspan x="1246.0" dy="0">World-Feedback Anomaly</tspan>
+        <tspan x="1246.0" dy="18">Trigger &amp; Governance 门禁</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/anomaly/pilot-q41-i1.json" target="_top" data-node-id="world_feedback_anomaly_pilot" data-group="governance" data-target="data/anomaly/pilot-q41-i1.json" aria-label="World-Feedback Anomaly Trigger &amp; Governance 受控试点：Q41-I1 self-authored bounded repository pilot covering RECURRING_REPOSITORY_DIVERGENCE and SINGLE_DEVIATION_NEGATIVE_CONTROL; 24 fixtures drive the real CLI; no external action.">
+      <title>World-Feedback Anomaly Trigger &amp; Governance 受控试点 — Q41-I1 self-authored bounded repository pilot covering RECURRING_REPOSITORY_DIVERGENCE and SINGLE_DEVIATION_NEGATIVE_CONTROL; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="2082.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2104.0">
+        <tspan x="1246.0" dy="0">World-Feedback Anomaly</tspan>
+        <tspan x="1246.0" dy="18">Trigger &amp; Governance</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/latent/latent_system_identifiability-contract.schema.json" target="_top" data-node-id="latent_system_identifiability_contract" data-group="governance" data-target="schemas/latent/latent_system_identifiability-contract.schema.json" aria-label="Latent-System Discovery &amp; Identifiability Gate 合同：F15-D1-I1 typed evidence-bound contract. Latent-system candidates and equivalent decompositions can remain candidate objects until distinguishing evidence passes an explicit identifiability gate.">
+      <title>Latent-System Discovery &amp; Identifiability Gate 合同 — F15-D1-I1 typed evidence-bound contract. Latent-system candidates and equivalent decompositions can remain candidate objects until distinguishing evidence passes an explicit identifiability gate.</title>
+      <rect class="node" x="1230.0" y="2148.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2170.0">
+        <tspan x="1246.0" dy="0">Latent-System Discovery</tspan>
+        <tspan x="1246.0" dy="18">&amp; Identifiability Gate</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/latent/validate_latent_system_identifiability_gate.py" target="_top" data-node-id="latent_system_identifiability_gate_validator" data-group="governance" data-target="tools/latent/validate_latent_system_identifiability_gate.py" aria-label="Latent-System Discovery &amp; Identifiability Gate 门禁：F15-D1-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.">
+      <title>Latent-System Discovery &amp; Identifiability Gate 门禁 — F15-D1-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="2214.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2236.0">
+        <tspan x="1246.0" dy="0">Latent-System Discovery</tspan>
+        <tspan x="1246.0" dy="18">&amp; Identifiability Gate</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/latent/pilot-f15-d1-i1.json" target="_top" data-node-id="latent_system_identifiability_pilot" data-group="governance" data-target="data/latent/pilot-f15-d1-i1.json" aria-label="Latent-System Discovery &amp; Identifiability Gate 受控试点：F15-D1-I1 self-authored bounded repository pilot covering IDENTIFIABLE_CANDIDATE and NON_IDENTIFIABLE_EQUIVALENCE_SET; 24 fixtures drive the real CLI; no external action.">
+      <title>Latent-System Discovery &amp; Identifiability Gate 受控试点 — F15-D1-I1 self-authored bounded repository pilot covering IDENTIFIABLE_CANDIDATE and NON_IDENTIFIABLE_EQUIVALENCE_SET; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="2280.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2302.0">
+        <tspan x="1246.0" dy="0">Latent-System Discovery</tspan>
+        <tspan x="1246.0" dy="18">&amp; Identifiability Gate</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/counterfactual/counterfactual_unrealized_path-contract.schema.json" target="_top" data-node-id="counterfactual_unrealized_path_contract" data-group="governance" data-target="schemas/counterfactual/counterfactual_unrealized_path-contract.schema.json" aria-label="Counterfactual &amp; Unrealized-Path Ledger 合同：Q42-I1 typed evidence-bound contract. Counterfactuals, alternative decompositions, unrealized paths and speculative narratives can be kept distinct, and only identifiable portions receive bounded counterfactual status.">
+      <title>Counterfactual &amp; Unrealized-Path Ledger 合同 — Q42-I1 typed evidence-bound contract. Counterfactuals, alternative decompositions, unrealized paths and speculative narratives can be kept distinct, and only identifiable portions receive bounded counterfactual status.</title>
+      <rect class="node" x="1230.0" y="2346.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2368.0">
+        <tspan x="1246.0" dy="0">Counterfactual &amp;</tspan>
+        <tspan x="1246.0" dy="18">Unrealized-Path Ledger</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/counterfactual/validate_counterfactual_unrealized_path_gate.py" target="_top" data-node-id="counterfactual_unrealized_path_gate_validator" data-group="governance" data-target="tools/counterfactual/validate_counterfactual_unrealized_path_gate.py" aria-label="Counterfactual &amp; Unrealized-Path Ledger 门禁：Q42-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.">
+      <title>Counterfactual &amp; Unrealized-Path Ledger 门禁 — Q42-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="2412.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2434.0">
+        <tspan x="1246.0" dy="0">Counterfactual &amp;</tspan>
+        <tspan x="1246.0" dy="18">Unrealized-Path Ledger</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/counterfactual/pilot-q42-i1.json" target="_top" data-node-id="counterfactual_unrealized_path_pilot" data-group="governance" data-target="data/counterfactual/pilot-q42-i1.json" aria-label="Counterfactual &amp; Unrealized-Path Ledger 受控试点：Q42-I1 self-authored bounded repository pilot covering IDENTIFIABLE_COUNTERFACTUAL and SPECULATIVE_UNREALIZED_PATH; 24 fixtures drive the real CLI; no external action.">
+      <title>Counterfactual &amp; Unrealized-Path Ledger 受控试点 — Q42-I1 self-authored bounded repository pilot covering IDENTIFIABLE_COUNTERFACTUAL and SPECULATIVE_UNREALIZED_PATH; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="2478.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2500.0">
+        <tspan x="1246.0" dy="0">Counterfactual &amp;</tspan>
+        <tspan x="1246.0" dy="18">Unrealized-Path Ledger</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/escalation/graded_intervention_escalation-contract.schema.json" target="_top" data-node-id="graded_intervention_escalation_contract" data-group="governance" data-target="schemas/escalation/graded_intervention_escalation-contract.schema.json" aria-label="Graded Intervention &amp; Professional Escalation 合同：Q43-I1 typed evidence-bound contract. Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations.">
+      <title>Graded Intervention &amp; Professional Escalation 合同 — Q43-I1 typed evidence-bound contract. Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations.</title>
+      <rect class="node" x="1230.0" y="2544.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2566.0">
+        <tspan x="1246.0" dy="0">Graded Intervention &amp;</tspan>
+        <tspan x="1246.0" dy="18">Professional Escalation</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/escalation/validate_graded_intervention_escalation_gate.py" target="_top" data-node-id="graded_intervention_escalation_gate_validator" data-group="governance" data-target="tools/escalation/validate_graded_intervention_escalation_gate.py" aria-label="Graded Intervention &amp; Professional Escalation 门禁：Q43-I1 fail-closed real CLI enforcing evidence binding, exact parent, 10 task rules, candidate ceiling and no external action.">
+      <title>Graded Intervention &amp; Professional Escalation 门禁 — Q43-I1 fail-closed real CLI enforcing evidence binding, exact parent, 10 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="2610.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2632.0">
+        <tspan x="1246.0" dy="0">Graded Intervention &amp;</tspan>
+        <tspan x="1246.0" dy="18">Professional Escalation</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/escalation/pilot-q43-i1.json" target="_top" data-node-id="graded_intervention_escalation_pilot" data-group="governance" data-target="data/escalation/pilot-q43-i1.json" aria-label="Graded Intervention &amp; Professional Escalation 受控试点：Q43-I1 self-authored bounded repository pilot covering REPOSITORY_LOCAL_REVERSIBLE and HIGH_RISK_REQUEST_ONLY; 24 fixtures drive the real CLI; no external action.">
+      <title>Graded Intervention &amp; Professional Escalation 受控试点 — Q43-I1 self-authored bounded repository pilot covering REPOSITORY_LOCAL_REVERSIBLE and HIGH_RISK_REQUEST_ONLY; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="2676.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2698.0">
+        <tspan x="1246.0" dy="0">Graded Intervention &amp;</tspan>
+        <tspan x="1246.0" dy="18">Professional Escalation</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/coaching/coaching_commitment_subcapability-contract.schema.json" target="_top" data-node-id="coaching_commitment_subcapability_contract" data-group="governance" data-target="schemas/coaching/coaching_commitment_subcapability-contract.schema.json" aria-label="Coaching / Commitment Subcapability 合同：Q44-I1 typed evidence-bound contract. A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights.">
+      <title>Coaching / Commitment Subcapability 合同 — Q44-I1 typed evidence-bound contract. A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights.</title>
+      <rect class="node" x="1230.0" y="2742.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2764.0">
+        <tspan x="1246.0" dy="0">Coaching /</tspan>
+        <tspan x="1246.0" dy="18">Commitment Subcapability 合同</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/coaching/validate_coaching_commitment_subcapability_gate.py" target="_top" data-node-id="coaching_commitment_subcapability_gate_validator" data-group="governance" data-target="tools/coaching/validate_coaching_commitment_subcapability_gate.py" aria-label="Coaching / Commitment Subcapability 门禁：Q44-I1 fail-closed real CLI enforcing evidence binding, exact parent, 9 task rules, candidate ceiling and no external action.">
+      <title>Coaching / Commitment Subcapability 门禁 — Q44-I1 fail-closed real CLI enforcing evidence binding, exact parent, 9 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="2808.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2830.0">
+        <tspan x="1246.0" dy="0">Coaching /</tspan>
+        <tspan x="1246.0" dy="18">Commitment Subcapability 门禁</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/coaching/pilot-q44-i1.json" target="_top" data-node-id="coaching_commitment_subcapability_pilot" data-group="governance" data-target="data/coaching/pilot-q44-i1.json" aria-label="Coaching / Commitment Subcapability 受控试点：Q44-I1 self-authored bounded repository pilot covering USER_LED_COMMITMENT and PAUSE_OR_REVISE_PATH; 24 fixtures drive the real CLI; no external action.">
+      <title>Coaching / Commitment Subcapability 受控试点 — Q44-I1 self-authored bounded repository pilot covering USER_LED_COMMITMENT and PAUSE_OR_REVISE_PATH; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="2874.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2896.0">
+        <tspan x="1246.0" dy="0">Coaching /</tspan>
+        <tspan x="1246.0" dy="18">Commitment Subcapability 受控试点</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/schemas/context_protocol/open_scientific_context_protocol-contract.schema.json" target="_top" data-node-id="open_scientific_context_protocol_contract" data-group="governance" data-target="schemas/context_protocol/open_scientific_context_protocol-contract.schema.json" aria-label="Open Scientific Context Protocol 合同：SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed evidence-bound contract. A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.">
+      <title>Open Scientific Context Protocol 合同 — SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed evidence-bound contract. A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.</title>
+      <rect class="node" x="1230.0" y="2940.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2962.0">
+        <tspan x="1246.0" dy="0">Open Scientific Context</tspan>
+        <tspan x="1246.0" dy="18">Protocol 合同</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/tools/context_protocol/validate_open_scientific_context_protocol_gate.py" target="_top" data-node-id="open_scientific_context_protocol_gate_validator" data-group="governance" data-target="tools/context_protocol/validate_open_scientific_context_protocol_gate.py" aria-label="Open Scientific Context Protocol 门禁：SCIENTIFIC-CONTEXT-PROTOCOL-I1 fail-closed real CLI enforcing evidence binding, exact parent, 11 task rules, candidate ceiling and no external action.">
+      <title>Open Scientific Context Protocol 门禁 — SCIENTIFIC-CONTEXT-PROTOCOL-I1 fail-closed real CLI enforcing evidence binding, exact parent, 11 task rules, candidate ceiling and no external action.</title>
+      <rect class="node" x="1230.0" y="3006.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3028.0">
+        <tspan x="1246.0" dy="0">Open Scientific Context</tspan>
+        <tspan x="1246.0" dy="18">Protocol 门禁</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/context_protocol/pilot-scientific-context-protocol-i1.json" target="_top" data-node-id="open_scientific_context_protocol_pilot" data-group="governance" data-target="data/context_protocol/pilot-scientific-context-protocol-i1.json" aria-label="Open Scientific Context Protocol 受控试点：SCIENTIFIC-CONTEXT-PROTOCOL-I1 self-authored bounded repository pilot covering LOCAL_MOCK_REQUEST and LOCAL_MOCK_RESPONSE; 24 fixtures drive the real CLI; no external action.">
+      <title>Open Scientific Context Protocol 受控试点 — SCIENTIFIC-CONTEXT-PROTOCOL-I1 self-authored bounded repository pilot covering LOCAL_MOCK_REQUEST and LOCAL_MOCK_RESPONSE; 24 fixtures drive the real CLI; no external action.</title>
+      <rect class="node" x="1230.0" y="3072.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3094.0">
+        <tspan x="1246.0" dy="0">Open Scientific Context</tspan>
+        <tspan x="1246.0" dy="18">Protocol 受控试点</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E5%8F%8C%E6%9D%A5%E6%BA%90%E5%86%99%E4%BD%9C%E7%B4%A0%E6%9D%90%E6%B1%A0" target="_top" data-node-id="external_input" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md#双来源写作素材池" aria-label="外部输入源：笔记、新闻、文章、案例、记忆、现实事件等可追溯外部材料。">
+      <title>外部输入源 — 笔记、新闻、文章、案例、记忆、现实事件等可追溯外部材料。</title>
+      <rect class="node" x="54.0" y="848.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="881.0">
+        <tspan x="70.0" dy="0">外部输入源</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E5%8F%8C%E6%9D%A5%E6%BA%90%E5%86%99%E4%BD%9C%E7%B4%A0%E6%9D%90%E6%B1%A0" target="_top" data-node-id="ignition_increment" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md#双来源写作素材池" aria-label="点火增量输出源：claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。">
+      <title>点火增量输出源 — claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。</title>
+      <rect class="node" x="54.0" y="914.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="947.0">
+        <tspan x="70.0" dy="0">点火增量输出源</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/templates/publication/zhiyuan-writing-spec.md#%E5%8F%8C%E6%9D%A5%E6%BA%90%E7%B4%A0%E6%9D%90%E6%B1%A0" target="_top" data-node-id="source_pool" data-group="writing" data-target="templates/publication/zhiyuan-writing-spec.md#双来源素材池" aria-label="写作素材池：同时接收外部输入与已登记的点火增量输出，保存来源类型和 claim ceiling。">
+      <title>写作素材池 — 同时接收外部输入与已登记的点火增量输出，保存来源类型和 claim ceiling。</title>
+      <rect class="node" x="54.0" y="980.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1013.0">
+        <tspan x="70.0" dy="0">写作素材池</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md" target="_top" data-node-id="zhiyuan_method" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md" aria-label="之元写作法 0.5.0 Current：以双来源素材池、心智层级跃迁和目标语言直接实现驱动 L6 公共表达。">
+      <title>之元写作法 0.5.0 Current — 以双来源素材池、心智层级跃迁和目标语言直接实现驱动 L6 公共表达。</title>
+      <rect class="node" x="54.0" y="1046.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1079.0">
+        <tspan x="70.0" dy="0">之元写作法 0.5.0 Current</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/cases/jin-rise-case-source.md" target="_top" data-node-id="case_source" data-group="writing" data-target="docs/publication/cases/jin-rise-case-source.md" aria-label="Case source provenance：起始案例的公开来源链与版权边界。">
+      <title>Case source provenance — 起始案例的公开来源链与版权边界。</title>
+      <rect class="node" x="54.0" y="1112.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1145.0">
+        <tspan x="70.0" dy="0">Case source provenance</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/reports/publication/jin-rise-point-fire-analysis.md" target="_top" data-node-id="point_fire_analysis" data-group="writing" data-target="reports/publication/jin-rise-point-fire-analysis.md" aria-label="Point-fire analysis：点火对案例生成的可追溯增量结构，也可进入写作素材池。">
+      <title>Point-fire analysis — 点火对案例生成的可追溯增量结构，也可进入写作素材池。</title>
+      <rect class="node" x="54.0" y="1178.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1211.0">
+        <tspan x="70.0" dy="0">Point-fire analysis</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/works/when-an-army-believes-its-own-back.md" target="_top" data-node-id="accepted_work" data-group="writing" data-target="docs/publication/works/when-an-army-believes-its-own-back.md" aria-label="Accepted work：经审查接受且保持来源与证据边界的公共作品。">
+      <title>Accepted work — 经审查接受且保持来源与证据边界的公共作品。</title>
+      <rect class="node" x="54.0" y="1244.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1277.0">
+        <tspan x="70.0" dy="0">Accepted work</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-showcase.md" target="_top" data-node-id="showcase" data-group="writing" data-target="docs/publication/zhiyuan-writing-showcase.md" aria-label="成果索引：人类可读的完整成果导航。">
+      <title>成果索引 — 人类可读的完整成果导航。</title>
+      <rect class="node" x="54.0" y="1310.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1343.0">
+        <tspan x="70.0" dy="0">成果索引</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/publication/zhiyuan-writing-showcase.json" target="_top" data-node-id="showcase_registry" data-group="writing" data-target="data/publication/zhiyuan-writing-showcase.json" aria-label="成果 registry：机器可读的排序、路径、哈希、review 与 claim ceiling。">
+      <title>成果 registry — 机器可读的排序、路径、哈希、review 与 claim ceiling。</title>
+      <rect class="node" x="54.0" y="1376.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1409.0">
+        <tspan x="70.0" dy="0">成果 registry</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="public_response" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Public work / response：作品、读者响应、作者修订与现实反例。">
+      <title>Public work / response — 作品、读者响应、作者修订与现实反例。</title>
+      <rect class="node" x="642.0" y="2102.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2124.0">
+        <tspan x="658.0" dy="0">Public work /</tspan>
+        <tspan x="658.0" dy="18">response</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="provenance_capture" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Provenance capture：登记主体、渠道、时间、原文范围、版本和解释限制。">
+      <title>Provenance capture — 登记主体、渠道、时间、原文范围、版本和解释限制。</title>
+      <rect class="node" x="642.0" y="2168.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2201.0">
+        <tspan x="658.0" dy="0">Provenance capture</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="candidate_return" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Candidate source / gap / reality feedback：合格反馈只成为候选来源、缺口或现实反馈，不直接升级真值。">
+      <title>Candidate source / gap / reality feedback — 合格反馈只成为候选来源、缺口或现实反馈，不直接升级真值。</title>
+      <rect class="node" x="642.0" y="2234.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2256.0">
+        <tspan x="658.0" dy="0">Candidate source /</tspan>
+        <tspan x="658.0" dy="18">gap / reality feedback</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="feedback_routes" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="返回 Q12 / Q13 / MCF / PSD / ARN / iteration：由适用组件决定下一行动并生成新的可追溯增量。">
+      <title>返回 Q12 / Q13 / MCF / PSD / ARN / iteration — 由适用组件决定下一行动并生成新的可追溯增量。</title>
+      <rect class="node" x="642.0" y="2300.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2322.0">
+        <tspan x="658.0" dy="0">返回 Q12 /</tspan>
+        <tspan x="658.0" dy="18">Q13 / MCF / PSD / ARN / iteration</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="no_l7" data-group="boundaries" data-target="ARCHITECTURE.md#七层关系" aria-label="不增加 L7：系统图和写作素材池都在现有 L0—L6 与 overlay 内工作。">
+      <title>不增加 L7 — 系统图和写作素材池都在现有 L0—L6 与 overlay 内工作。</title>
+      <rect class="node" x="1230.0" y="4102.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="4135.0">
+        <tspan x="1246.0" dy="0">不增加 L7</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/FOUNDATION.md" target="_top" data-node-id="no_truth_upgrade" data-group="boundaries" data-target="FOUNDATION.md" aria-label="不自动升级真值：节点、连线、生成结果、测试与点击量都不能制造事实或因果。">
+      <title>不自动升级真值 — 节点、连线、生成结果、测试与点击量都不能制造事实或因果。</title>
+      <rect class="node" x="1230.0" y="4168.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="4201.0">
+        <tspan x="1246.0" dy="0">不自动升级真值</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/project-current-state.md" target="_top" data-node-id="no_totality_proof" data-group="boundaries" data-target="docs/project-current-state.md" aria-label="不证明理论完整：完整图是当前结构投影，不是永久总图或理论完备性证明。">
+      <title>不证明理论完整 — 完整图是当前结构投影，不是永久总图或理论完备性证明。</title>
+      <rect class="node" x="1230.0" y="4234.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="4267.0">
+        <tspan x="1246.0" dy="0">不证明理论完整</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/language-thought-logic-plane.md" target="_top" data-node-id="language_thought_plane" data-group="language_thought" data-target="docs/architecture/language-thought-logic-plane.md" aria-label="语言—思维逻辑平面 0.1.0：横穿 L0—L6 记录语言条件化的框架差异、转换残余与目标语言实现；不是 L7 或真值层。">
+      <title>语言—思维逻辑平面 0.1.0 — 横穿 L0—L6 记录语言条件化的框架差异、转换残余与目标语言实现；不是 L7 或真值层。</title>
+      <rect class="node" x="54.0" y="630.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="663.0">
+        <tspan x="70.0" dy="0">语言—思维逻辑平面 0.1.0</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/.github/README.md#1.%20%E9%A1%B9%E7%9B%AE%E4%B8%8E%E4%BB%B7%E5%80%BC" target="_top" data-node-id="owner_human" data-group="os_spine" data-target=".github/README.md#1. 项目与价值" aria-label="Owner / Human：Owner / Human 入口：保留价值、权限和停止边界，不被 Agent 自行改写。">
+      <title>Owner / Human — Owner / Human 入口：保留价值、权限和停止边界，不被 Agent 自行改写。</title>
+      <rect class="node" x="642.0" y="214.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="236.0">
+        <tspan x="658.0" dy="0">Owner /</tspan>
+        <tspan x="658.0" dy="18">Human</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/agentization-boundary-r0.md" target="_top" data-node-id="agentization_boundary_r0" data-group="os_spine" data-target="docs/architecture/agentization-boundary-r0.md" aria-label="智能体化边界 R0：Agentization Boundary R0 的领域切割、依赖方向与不迁移处置。">
+      <title>智能体化边界 R0 — Agentization Boundary R0 的领域切割、依赖方向与不迁移处置。</title>
+      <rect class="node" x="642.0" y="280.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="313.0">
+        <tspan x="658.0" dy="0">智能体化边界 R0</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_kernel/README.md" target="_top" data-node-id="agent_kernel_r0" data-group="os_spine" data-target="agent_kernel/README.md" aria-label="Ignition Generic Kernel R0：领域无关的身份、权限、状态、审计、checkpoint、handoff 和不变量契约。">
+      <title>Ignition Generic Kernel R0 — 领域无关的身份、权限、状态、审计、checkpoint、handoff 和不变量契约。</title>
+      <rect class="node" x="642.0" y="346.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="368.0">
+        <tspan x="658.0" dy="0">Ignition Generic Kernel</tspan>
+        <tspan x="658.0" dy="18">R0</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/README.md" target="_top" data-node-id="agent_runtime_r0" data-group="os_spine" data-target="agent_runtime/README.md" aria-label="Agent Runtime R2 (R0 base)：R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。">
+      <title>Agent Runtime R2 (R0 base) — R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。</title>
+      <rect class="node" x="642.0" y="412.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="434.0">
+        <tspan x="658.0" dy="0">Agent Runtime R2 (R0</tspan>
+        <tspan x="658.0" dy="18">base)</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/agent-runtime/agent-profile-r0.json" target="_top" data-node-id="agent_profile_r0" data-group="os_spine" data-target="data/agent-runtime/agent-profile-r0.json" aria-label="Agent Profile R0：可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。">
+      <title>Agent Profile R0 — 可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。</title>
+      <rect class="node" x="642.0" y="478.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="511.0">
+        <tspan x="658.0" dy="0">Agent Profile R0</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/README.md#Memory%20R0" target="_top" data-node-id="runtime_memory_loop" data-group="os_spine" data-target="agent_runtime/README.md#Memory R0" aria-label="Feedback / Memory / Correction Loop：Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。">
+      <title>Feedback / Memory / Correction Loop — Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。</title>
+      <rect class="node" x="642.0" y="544.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="566.0">
+        <tspan x="658.0" dy="0">Feedback /</tspan>
+        <tspan x="658.0" dy="18">Memory / Correction Loop</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Event%20Ledger%20R1" target="_top" data-node-id="event_ledger_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Event Ledger R1" aria-label="Event Ledger R1：Append-only typed event ledger with aggregate CAS, hash-chain integrity, deterministic replay and snapshot-tail recovery.">
+      <title>Event Ledger R1 — Append-only typed event ledger with aggregate CAS, hash-chain integrity, deterministic replay and snapshot-tail recovery.</title>
+      <rect class="node" x="642.0" y="610.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="643.0">
+        <tspan x="658.0" dy="0">Event Ledger R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Monotonic%20Policy%20Compiler%20R1" target="_top" data-node-id="policy_compiler_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Monotonic Policy Compiler R1" aria-label="Monotonic Policy Compiler R1：Digest-bound effective-policy compiler whose intersections, minima, expiry and prohibitions can only narrow authority.">
+      <title>Monotonic Policy Compiler R1 — Digest-bound effective-policy compiler whose intersections, minima, expiry and prohibitions can only narrow authority.</title>
+      <rect class="node" x="642.0" y="676.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="698.0">
+        <tspan x="658.0" dy="0">Monotonic Policy</tspan>
+        <tspan x="658.0" dy="18">Compiler R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Resource%20Arbitration%20R1" target="_top" data-node-id="resource_arbitration_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Resource Arbitration R1" aria-label="Resource Arbitration R1：Hierarchical typed resource-intent arbitration with atomic acquire-many, expiring leases and conservative unknown-side-effect serialization.">
+      <title>Resource Arbitration R1 — Hierarchical typed resource-intent arbitration with atomic acquire-many, expiring leases and conservative unknown-side-effect serialization.</title>
+      <rect class="node" x="642.0" y="742.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="775.0">
+        <tspan x="658.0" dy="0">Resource Arbitration R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Bounded%20Concurrent%20Scheduler%20R1" target="_top" data-node-id="bounded_scheduler_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Bounded Concurrent Scheduler R1" aria-label="Bounded Concurrent Scheduler R1：Bounded concurrent dependency-DAG scheduler with deterministic readiness, resource leases, budgets, cancellation, deadlines and checkpoint/resume.">
+      <title>Bounded Concurrent Scheduler R1 — Bounded concurrent dependency-DAG scheduler with deterministic readiness, resource leases, budgets, cancellation, deadlines and checkpoint/resume.</title>
+      <rect class="node" x="642.0" y="808.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="830.0">
+        <tspan x="658.0" dy="0">Bounded Concurrent</tspan>
+        <tspan x="658.0" dy="18">Scheduler R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Executor%20Health%20Lease%20R1" target="_top" data-node-id="executor_health_lease_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Executor Health Lease R1" aria-label="Executor Health Lease R1：Digest-bound executor capability and health lease with expiry, cooldown, stale rejection and deterministic route candidates.">
+      <title>Executor Health Lease R1 — Digest-bound executor capability and health lease with expiry, cooldown, stale rejection and deterministic route candidates.</title>
+      <rect class="node" x="642.0" y="874.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="907.0">
+        <tspan x="658.0" dy="0">Executor Health Lease R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Queue%20and%20Backpressure%20R1" target="_top" data-node-id="queue_control_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Queue and Backpressure R1" aria-label="Queue and Backpressure R1：Durable bounded queue with quota/backpressure, priority and aging, deadline, pause and cancellation boundaries.">
+      <title>Queue and Backpressure R1 — Durable bounded queue with quota/backpressure, priority and aging, deadline, pause and cancellation boundaries.</title>
+      <rect class="node" x="642.0" y="940.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="962.0">
+        <tspan x="658.0" dy="0">Queue and Backpressure</tspan>
+        <tspan x="658.0" dy="18">R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Durable%20Dispatch%20and%20Reconciliation%20R1" target="_top" data-node-id="durable_dispatch_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Durable Dispatch and Reconciliation R1" aria-label="Durable Dispatch and Reconciliation R1：Durable external dispatch, idempotent acknowledgement/progress and conservative receipt reconciliation with forged-record rejection.">
+      <title>Durable Dispatch and Reconciliation R1 — Durable external dispatch, idempotent acknowledgement/progress and conservative receipt reconciliation with forged-record rejection.</title>
+      <rect class="node" x="642.0" y="1006.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1028.0">
+        <tspan x="658.0" dy="0">Durable Dispatch and</tspan>
+        <tspan x="658.0" dy="18">Reconciliation R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Concurrent%20Operational%20Memory%20R2" target="_top" data-node-id="concurrent_operational_memory_r2" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Concurrent Operational Memory R2" aria-label="Concurrent Operational Memory R2：Concurrent operational memory with generation CAS, duplicate suppression, supersession/tombstones, stale capsules and deterministic compaction.">
+      <title>Concurrent Operational Memory R2 — Concurrent operational memory with generation CAS, duplicate suppression, supersession/tombstones, stale capsules and deterministic compaction.</title>
+      <rect class="node" x="642.0" y="1072.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1094.0">
+        <tspan x="658.0" dy="0">Concurrent Operational</tspan>
+        <tspan x="658.0" dy="18">Memory R2</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Durability%20and%20Lifecycle%20R3" target="_top" data-node-id="durability_lifecycle_r3" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Durability and Lifecycle R3" aria-label="Durability / Lifecycle R3：Repository-local durability and lifecycle spine for snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and disaster-recovery bundles; uncertain external effects stop at reconciliation and are never rerun automatically.">
+      <title>Durability / Lifecycle R3 — Repository-local durability and lifecycle spine for snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and disaster-recovery bundles; uncertain external effects stop at reconciliation and are never rerun automatically.</title>
+      <rect class="node" x="642.0" y="1138.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1160.0">
+        <tspan x="658.0" dy="0">Durability /</tspan>
+        <tspan x="658.0" dy="18">Lifecycle R3</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-steering-intent-r1.md#OS%20Steering%2C%20Intent%2C%20and%20Obligation%20R1" target="_top" data-node-id="steering_intent_obligation_r1" data-group="os_spine" data-target="docs/architecture/os-steering-intent-r1.md#OS Steering, Intent, and Obligation R1" aria-label="Steering / Intent / Goal / Obligation R1：Repository-local steering spine for provenance-aware intents, goal lifecycle, independent completion contracts, commitments, temporal windows, dependency-aware priority, conflict arbitration, explainable why-next traces, drift guards, memory/profile boundaries, namespace isolation and federation capsules; it cannot infer Owner intent or completion.">
+      <title>Steering / Intent / Goal / Obligation R1 — Repository-local steering spine for provenance-aware intents, goal lifecycle, independent completion contracts, commitments, temporal windows, dependency-aware priority, conflict arbitration, explainable why-next traces, drift guards, memory/profile boundaries, namespace isolation and federation capsules; it cannot infer Owner intent or completion.</title>
+      <rect class="node" x="642.0" y="1204.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1226.0">
+        <tspan x="658.0" dy="0">Steering /</tspan>
+        <tspan x="658.0" dy="18">Intent / Goal / Obligation R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/operations/formal-task-lifecycle-r1.json" target="_top" data-node-id="formal_task_lifecycle_r1" data-group="os_spine" data-target="data/operations/formal-task-lifecycle-r1.json" aria-label="Formal Task Lifecycle R1：Independent formal-task terminality authority: scope, steps, publication and witness determine task terminality; an open long-term obligation may be referenced and carried forward but cannot keep a completed task running.">
+      <title>Formal Task Lifecycle R1 — Independent formal-task terminality authority: scope, steps, publication and witness determine task terminality; an open long-term obligation may be referenced and carried forward but cannot keep a completed task running.</title>
+      <rect class="node" x="642.0" y="1270.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1303.0">
+        <tspan x="658.0" dy="0">Formal Task Lifecycle R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/operations/open-obligation-registry-r1.json" target="_top" data-node-id="open_obligation_registry_r1" data-group="os_spine" data-target="data/operations/open-obligation-registry-r1.json" aria-label="Open Obligation Registry R1：Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence and carry-forward lineage; obligation closure is not formal-task liveness.">
+      <title>Open Obligation Registry R1 — Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence and carry-forward lineage; obligation closure is not formal-task liveness.</title>
+      <rect class="node" x="642.0" y="1336.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1358.0">
+        <tspan x="658.0" dy="0">Open Obligation Registry</tspan>
+        <tspan x="658.0" dy="18">R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Driver%20Console%20R1" target="_top" data-node-id="driver_console_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Driver Console R1" aria-label="Driver Console R1：Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.">
+      <title>Driver Console R1 — Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.</title>
+      <rect class="node" x="642.0" y="1402.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1435.0">
+        <tspan x="658.0" dy="0">Driver Console R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_kernel/domain_pack.py" target="_top" data-node-id="domain_pack_contract" data-group="domain_packs" data-target="agent_kernel/domain_pack.py" aria-label="Domain Pack Contract：Domain Pack manifest 与禁止权力升级的挂接契约。">
+      <title>Domain Pack Contract — Domain Pack manifest 与禁止权力升级的挂接契约。</title>
+      <rect class="node" x="54.0" y="1594.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1627.0">
+        <tspan x="70.0" dy="0">Domain Pack Contract</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/packs/knowledge/manifest.json" target="_top" data-node-id="knowledge_domain_pack" data-group="domain_packs" data-target="packs/knowledge/manifest.json" aria-label="Knowledge Domain Pack：现有 Foundation、claims、Evidence、函数/非函数资产、Results 与知识体验的第一个 Domain Pack 引用面。">
+      <title>Knowledge Domain Pack — 现有 Foundation、claims、Evidence、函数/非函数资产、Results 与知识体验的第一个 Domain Pack 引用面。</title>
+      <rect class="node" x="54.0" y="1660.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1693.0">
+        <tspan x="70.0" dy="0">Knowledge Domain Pack</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/reos-vnext-light.md#Navigation%20boundary" target="_top" data-node-id="research_pack_reos_light" data-group="domain_packs" data-target="docs/architecture/reos-vnext-light.md#Navigation boundary" aria-label="Research Pack / REOS LIGHT：REOS vNext LIGHT 作为有界 research pack 消费 Runtime，不定义 Runtime、权限或 Owner authority。">
+      <title>Research Pack / REOS LIGHT — REOS vNext LIGHT 作为有界 research pack 消费 Runtime，不定义 Runtime、权限或 Owner authority。</title>
+      <rect class="node" x="54.0" y="1726.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1748.0">
+        <tspan x="70.0" dy="0">Research Pack /</tspan>
+        <tspan x="70.0" dy="18">REOS LIGHT</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E5%8F%8C%E5%90%91%E6%8E%A5%E5%8F%A3%E5%A5%91%E7%BA%A6" target="_top" data-node-id="writing_pack" data-group="domain_packs" data-target="docs/publication/zhiyuan-writing-method.md#双向接口契约" aria-label="Writing Pack / 之元写作法：之元写作法作为 L6 writing/publication pack，不进入 Generic Kernel 或提高 Runtime 权限。">
+      <title>Writing Pack / 之元写作法 — 之元写作法作为 L6 writing/publication pack，不进入 Generic Kernel 或提高 Runtime 权限。</title>
+      <rect class="node" x="54.0" y="1792.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1814.0">
+        <tspan x="70.0" dy="0">Writing Pack /</tspan>
+        <tspan x="70.0" dy="18">之元写作法</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/agent_runtime/pilots/non_knowledge_manifest.py" target="_top" data-node-id="nonknowledge_pilot" data-group="domain_packs" data-target="agent_runtime/pilots/non_knowledge_manifest.py" aria-label="Non-knowledge Runtime Pilot：不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。">
+      <title>Non-knowledge Runtime Pilot — 不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。</title>
+      <rect class="node" x="54.0" y="1858.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1880.0">
+        <tspan x="70.0" dy="0">Non-knowledge Runtime</tspan>
+        <tspan x="70.0" dy="18">Pilot</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Architecture%20hierarchy" target="_top" data-node-id="external_agent_federation" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Architecture hierarchy" aria-label="External Agent Federation R1：点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。">
+      <title>External Agent Federation R1 — 点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。</title>
+      <rect class="node" x="1230.0" y="3290.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3312.0">
+        <tspan x="1246.0" dy="0">External Agent</tspan>
+        <tspan x="1246.0" dy="18">Federation R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#OpenClaw%20adapter%20boundary" target="_top" data-node-id="openclaw_adapter" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary" aria-label="OpenClaw Adapter：OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。">
+      <title>OpenClaw Adapter — OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。</title>
+      <rect class="node" x="1230.0" y="3356.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3389.0">
+        <tspan x="1246.0" dy="0">OpenClaw Adapter</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Hermes%20adapter%20boundary" target="_top" data-node-id="hermes_adapter" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Hermes adapter boundary" aria-label="Hermes Adapter：Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。">
+      <title>Hermes Adapter — Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。</title>
+      <rect class="node" x="1230.0" y="3422.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3455.0">
+        <tspan x="1246.0" dy="0">Hermes Adapter</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Codex%20adapter%20boundary" target="_top" data-node-id="codex_adapter" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Codex adapter boundary" aria-label="Codex Adapter：Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。">
+      <title>Codex Adapter — Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。</title>
+      <rect class="node" x="1230.0" y="3488.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3521.0">
+        <tspan x="1246.0" dy="0">Codex Adapter</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Reference%20Executor%20freeze" target="_top" data-node-id="reference_executor" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Reference Executor freeze" aria-label="Reference Executor：现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。">
+      <title>Reference Executor — 现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。</title>
+      <rect class="node" x="1230.0" y="3554.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3587.0">
+        <tspan x="1246.0" dy="0">Reference Executor</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Future%20executors" target="_top" data-node-id="future_executors" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Future executors" aria-label="Future Executors：未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。">
+      <title>Future Executors — 未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。</title>
+      <rect class="node" x="1230.0" y="3620.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3653.0">
+        <tspan x="1246.0" dy="0">Future Executors</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/agent-runtime-r0.md" target="_top" data-node-id="runtime_environment" data-group="federation" data-target="docs/architecture/agent-runtime-r0.md" aria-label="Environment / Tools / Executors：Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。">
+      <title>Environment / Tools / Executors — Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。</title>
+      <rect class="node" x="1230.0" y="3686.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3708.0">
+        <tspan x="1246.0" dy="0">Environment /</tspan>
+        <tspan x="1246.0" dy="18">Tools / Executors</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Provider-neutral%20executor%20admission" target="_top" data-node-id="executor_admission_r1" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Provider-neutral executor admission" aria-label="Executor Admission R1：Provider-neutral admission gate for installed agentic executors: public attestation, bounded interface, auth and billing policy, workspace/scratch isolation, structured result, capture, cleanup, validator and side-effect constraints are evaluated before live dispatch.">
+      <title>Executor Admission R1 — Provider-neutral admission gate for installed agentic executors: public attestation, bounded interface, auth and billing policy, workspace/scratch isolation, structured result, capture, cleanup, validator and side-effect constraints are evaluated before live dispatch.</title>
+      <rect class="node" x="1230.0" y="3752.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3785.0">
+        <tspan x="1246.0" dy="0">Executor Admission R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Live%20External%20Executor%20Bridge%20R1" target="_top" data-node-id="live_executor_bridge_r1" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1" aria-label="Live External Executor Bridge R1：OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.">
+      <title>Live External Executor Bridge R1 — OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.</title>
+      <rect class="node" x="1230.0" y="3818.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3840.0">
+        <tspan x="1246.0" dy="0">Live External Executor</tspan>
+        <tspan x="1246.0" dy="18">Bridge R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Live%20Observation%20%2F%20Reconciliation%20Plane%20R1" target="_top" data-node-id="live_observation_reconciliation_plane_r1" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Live Observation / Reconciliation Plane R1" aria-label="Live Observation / Reconciliation Plane R1：OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.">
+      <title>Live Observation / Reconciliation Plane R1 — OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.</title>
+      <rect class="node" x="1230.0" y="3884.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="3906.0">
+        <tspan x="1246.0" dy="0">Live Observation /</tspan>
+        <tspan x="1246.0" dy="18">Reconciliation Plane R1</tspan>
+      </text>
+    </a>
+  </g>
+</svg>

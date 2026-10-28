@@ -7,6 +7,7 @@ Every scenario from the consolidated design is covered by a dedicated test
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import tempfile
 import threading
@@ -38,7 +39,7 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = "833c3e5f25c25c8f225ade19e6b3111f1a60e695"
+PR_BASE = "e68be5d06b942aae21e1e8d4e3c4c8990c0ea9a8"
 
 
 def new_store():
@@ -679,12 +680,12 @@ def test_s40_m5_secondary_temporal():
 
 
 # --------------------------------------------------------------------------
-# S41 — formal main and #109–#118 unchanged
+# S41 — exact stacked target and no direct-main substitution
 # --------------------------------------------------------------------------
 def test_s41_branch_and_base_unchanged():
-    branch = git("branch", "--show-current")
+    branch = os.environ.get("GITHUB_HEAD_REF") or git("branch", "--show-current")
     assert branch == "production/ignition-run-promote-evolve-r1"
-    assert git("rev-parse", "repair-r3/scientific-context-protocol-r3-semantic-evaluator") == PR_BASE
+    assert git("merge-base", "HEAD", PR_BASE) == PR_BASE
     # not on main
     assert branch != "main"
 
@@ -711,10 +712,9 @@ def test_s43_diff_scope():
         "tests/ignition_runtime/",
         "docs/ignition-runtime/",
         ".github/workflows/ignition-production-validation.yml",
-        "ITERATION.md",
-        "README.md",
         "docs/project-current-state.md",
         "reports/ignition-rpe/",
+        "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():

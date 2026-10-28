@@ -1,0 +1,151 @@
+{
+  "schema_version": "ignition-148-step12-current-version-propagation-closure-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "12",
+  "status": "PASS",
+  "method_identities": {
+    "operating_method": {
+      "identity": "IGNITION_OPERATING_METHOD_R1",
+      "version": "1.0.0",
+      "lifecycle": "CURRENT_CANDIDATE_ON_DRAFT",
+      "source": "ignition/OPERATING-METHOD.md",
+      "version_marker": "Candidate: `1.0.0`"
+    },
+    "iteration_method": {
+      "identity": "ITERATION_METHOD",
+      "version": "1.4.0",
+      "lifecycle": "Current",
+      "source": "ignition/ITERATION.md"
+    },
+    "boundary": "Operating Method governs use; Iteration Method governs explicitly authorized self-change. Their identities, versions and authorities neither merge nor overwrite."
+  },
+  "current_state": {
+    "current_formal_task": "IGNITION-20260829-148",
+    "current_formal_task_ordinal": 148,
+    "execution_status": "IN_PROGRESS",
+    "terminal": false,
+    "identity_impact": "PRESENTATION_ONLY",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "latest_architecture_task_ordinal": 142,
+    "canonical_identity": "ignition/data/architecture/current-system-identity.json",
+    "derived_facts": "ignition/data/architecture/current-facts.json",
+    "derived_snapshot": "ignition/data/operations/current-snapshot-r1.json"
+  },
+  "state_changelog": {
+    "delta_ordinal": 52,
+    "profile": "ignition/data/operations/state-changelog-profile-r1.json",
+    "sealed_entries": 52,
+    "active_current_entries": 26,
+    "historical_entries": 26,
+    "legacy_profiles": 6,
+    "inherited_gap_repair": "Task145-147 sections remain byte-unchanged; exact versioned profiles close the inherited Task144-era seal lag. Task148 uses strict current-r1 fields and exact base SHA."
+  },
+  "propagation": {
+    "request": "ignition/data/operations/propagation/IGNITION-20260829-148-request.json",
+    "closure": "ignition/data/operations/propagation/IGNITION-20260829-148-closure.json",
+    "report": "ignition/reports/operations/IGNITION-20260829-148-change-propagation-impact.md",
+    "residue": "ignition/data/operations/propagation/IGNITION-20260829-148-residue.json",
+    "map_delta": "ignition/data/operations/propagation/IGNITION-20260829-148-system-map-delta.json",
+    "closure_hash": "fc273554be492455c273b17cc8011a4906de6354c5294495bd089aab1c28b3fa",
+    "closure_complete": true,
+    "resolved_components": 35,
+    "required_surfaces": 21,
+    "fixpoint_iterations": 2,
+    "unresolved_residue": [],
+    "system_map_decision": "NO_CHANGE_WITH_REASON",
+    "visible_map_delta": {
+      "nodes_added": 0,
+      "nodes_removed": 0,
+      "nodes_changed": 0,
+      "edges_added": 0,
+      "edges_removed": 0,
+      "edges_changed": 0
+    },
+    "claim_scope": "Declared repository relation closure only; not substantive causal proof."
+  },
+  "first_natural_projection_observation": {
+    "boundary": "After canonical Task148 sources and before final staged-set sealing.",
+    "function_assets": {
+      "deduplicated_assets": 6041,
+      "source_mentions": 63448,
+      "tracked_text_files_scanned": 3869,
+      "queued_for_human_review": 6029
+    },
+    "nonfunction_claims": {
+      "canonical_claims": 17819,
+      "explicit_quarantine_or_pending": 4991,
+      "registry_closed": true
+    },
+    "knowledge_experience": {
+      "cards": 413,
+      "changes": 315,
+      "layered_readings": 332,
+      "search_records": 24181
+    },
+    "human_surface": {
+      "function_machine": 6041,
+      "function_human": 24,
+      "nonfunction_machine": 17819,
+      "nonfunction_human": 24,
+      "withdrawn": 4
+    },
+    "interpretation": "Repository accounting and deterministic projection only; not external truth, totality proof or epistemic acceptance."
+  },
+  "environment_observations": {
+    "default_system_python_math_check": {
+      "command": "python3 tools/foundation/run_function_asset_math_checks.py --check",
+      "outcome": "FAIL_ENVIRONMENT_MISSING_DECLARED_DEPENDENCY",
+      "exception": "ModuleNotFoundError: No module named 'sympy'",
+      "interpretation": "Observed host-environment dependency absence; this invocation is not reported as a repository validation PASS."
+    },
+    "canonical_isolated_environment_math_check": {
+      "environment": "provisioned temporary foundation venv outside the formal repository; path not persisted",
+      "requirements": "requirements-foundation.txt exact declared versions",
+      "command": "<isolated-python> tools/foundation/run_function_asset_math_checks.py --check",
+      "outcome": "PASS",
+      "checks_passed": 7,
+      "checks_total": 7
+    }
+  },
+  "validation": [
+    {
+      "gate": "method-capability-output",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "current-lifecycle-identity",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "current-projection-and-surfaces",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "human-knowledge-link-schema-governance",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "function-and-nonfunction-projections",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "declared-propagation-and-map",
+      "outcome": "PASS"
+    },
+    {
+      "gate": "focused-regression",
+      "outcome": "PASS"
+    }
+  ],
+  "step12_residuals": [],
+  "open_obligations": [
+    {
+      "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+      "status": "OPEN",
+      "operational_state": "OWNER_DEFERRED",
+      "task148_action": "NOT_RUN_NO_AUTHORITY"
+    }
+  ],
+  "next_step": "13",
+  "claim_ceiling": "Repository-local Task148 Current-candidate identity, version archaeology, append-only state delta, deterministic projection and declared propagation evidence only; no formal-main publication, external truth, production readiness, Owner acceptance, validated live completion or epistemic acceptance is inferred."
+}

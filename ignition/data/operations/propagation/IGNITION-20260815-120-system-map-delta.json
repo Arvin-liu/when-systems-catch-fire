@@ -1,0 +1,13 @@
+{
+  "added_edges": [],
+  "added_nodes": [],
+  "base_map_version": "0.6.0",
+  "candidate_map_version": "0.6.0",
+  "changed_edges": [],
+  "changed_nodes": [
+    "agent_runtime_r0"
+  ],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}

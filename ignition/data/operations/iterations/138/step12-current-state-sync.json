@@ -1,0 +1,58 @@
+{
+  "schema_version": "ignition-138-step12-current-state-sync-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "12",
+  "status": "PASS",
+  "current_projection": {
+    "current_formal_task": "IGNITION-20260824-138",
+    "current_formal_task_ordinal": 138,
+    "latest_architecture_changing_task": "IGNITION-20260823-136",
+    "latest_architecture_changing_task_ordinal": 136,
+    "current_iteration_boundary": 138,
+    "identity_impact": "PRESENTATION_ONLY",
+    "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
+    "current_map_version": "0.13.0",
+    "current_task_status": "IN_PROGRESS",
+    "current_task_terminal": false,
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0,
+    "live_external_ceiling": "LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED"
+  },
+  "filesystem_domains": {
+    "task_workspace": "DISPOSABLE_READ_ONLY",
+    "executor_runtime_scratch": "ATTEMPT_EPHEMERAL_WRITABLE",
+    "auth_config_source": "READ_ONLY_REFERENCE"
+  },
+  "live_observation": {
+    "real_codex_invocations_in_task138": 1,
+    "first_attempt": "KNOWN_NO_EFFECT_PRE_INFERENCE_STARTUP_FAILURE",
+    "second_attempt": "FORBIDDEN_AUTH_SOURCE_BOUNDARY",
+    "validated_live_completion": false,
+    "independent_validation": "NOT_REACHED_NO_STRUCTURED_RESULT",
+    "hermes_reconciliation": "OPEN",
+    "workspace_unchanged": true,
+    "runtime_scratch_cleanup": "CLEANED"
+  },
+  "surface_sync_receipt": "ignition/data/operations/iterations/138/current-state-sync-receipt.json",
+  "generated_surfaces": [
+    ".github/README.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/llms.txt",
+    "ignition/STATE-CHANGELOG.md"
+  ],
+  "projection_gates": {
+    "execution_contract": "PASS",
+    "canonical_current_advancement": "PASS",
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_surface_compiler_two_pass": "PASS",
+    "current_release_lifecycle": "PASS",
+    "identity_impact": "PASS_PRESENTATION_ONLY",
+    "system_map_sync": "PASS_NO_CHANGE_WITH_REASON",
+    "publication_authority": "REMOTE_REF_OBSERVATION"
+  },
+  "claim_ceiling": "Task138 repository-local Current/Human/AI projection and bounded runtime-scratch/live-failure synchronization evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred."
+}

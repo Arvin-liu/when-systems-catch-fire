@@ -1,0 +1,29 @@
+{
+  "c0_material_policy": "four current-packet source references; no external thread material",
+  "c1_material_policy": "four nearest fixed-manifest thread references by token overlap",
+  "c2_material_policy": "four deterministic random fixed-manifest references",
+  "c3_material_policy": "near, medium, remote, and dormant/random fixed-ratio references",
+  "c4_material_policy": "byte-identical C3 material selection with problem rewrite permission removed",
+  "candidate_output_budget": 1,
+  "conditions": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "equalized": true,
+  "historical_packets": 13,
+  "materials_per_condition": 4,
+  "negative_packets": 8,
+  "normalization": "same six binary questions, same source count, same rounds; structural proxy score divided by six",
+  "positive_packets": 5,
+  "rounds_per_packet_condition": 3,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "status": "FROZEN_BEFORE_RUN",
+  "task_id": "IGNITION-20260908-165"
+}

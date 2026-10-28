@@ -1,0 +1,24 @@
+{
+  "schema_version": "ignition-134-step01-residual-ledger-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "01",
+  "status": "PASS",
+  "ledger_path": "ignition/data/operations/residual-ledger-r1.json",
+  "ledger_schema": "ignition/schemas/operations/residual-ledger-r1.schema.json",
+  "validator": "ignition/tools/validate_residual_ledger.py",
+  "entry_count": 5,
+  "residual_ids": [
+    "CURRENT_PATH_MANIFEST_UNACCOUNTED",
+    "HUMAN_SURFACE_SOURCE_HASH_DRIFT",
+    "PROPAGATION_TASK104_106_MISMATCH",
+    "T16_SYMPY_COUNTEREXAMPLE",
+    "FULL_UNITTEST_DISCOVERY_TERMINAL_STATE"
+  ],
+  "invariants": [
+    "RESIDUAL_NON_GROWTH_INVARIANT",
+    "RESIDUAL_NO_LAUNDERING_INVARIANT",
+    "RELEASE_GATE_RESIDUAL_DELTA_INVARIANT"
+  ],
+  "source_policy": "Each entry points to an actual repository validator or recorded execution observation; the ledger does not authoritatively generate failure facts.",
+  "claim_ceiling": "Repository-local residual ledger identity and provenance only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
