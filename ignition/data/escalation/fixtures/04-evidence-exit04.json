@@ -1,0 +1,324 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "Q43-I1",
+  "capability_id": "graded_intervention_escalation",
+  "parent_binding": {
+    "task_id": "Q42-I1",
+    "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/counterfactual/pilot-q42-i1.json",
+      "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
+      "artifact_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/intervention/pilot-controlled-intervention.json",
+      "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
+      "artifact_digest": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "REPOSITORY_LOCAL_REVERSIBLE",
+      "action_risk_class": {
+        "status": "RECORDED",
+        "value": "bounded action_risk_class for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "reversibility": {
+        "status": "RECORDED",
+        "value": "bounded reversibility for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "evidence_grade": {
+        "status": "RECORDED",
+        "value": "bounded evidence_grade for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "authority": {
+        "status": "RECORDED",
+        "value": "bounded authority for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "expertise_requirement": {
+        "status": "RECORDED",
+        "value": "bounded expertise_requirement for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "automatic_repository_local_action": {
+        "status": "RECORDED",
+        "value": "bounded automatic_repository_local_action for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "user_confirmation_required": {
+        "status": "RECORDED",
+        "value": "bounded user_confirmation_required for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "expert_escalation": {
+        "status": "RECORDED",
+        "value": "bounded expert_escalation for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "institutional_approval": {
+        "status": "RECORDED",
+        "value": "bounded institutional_approval for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "prohibited_action": {
+        "status": "RECORDED",
+        "value": "bounded prohibited_action for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "request_only_external_action": {
+        "status": "RECORDED",
+        "value": "bounded request_only_external_action for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "stop_rollback_result_return": {
+        "status": "RECORDED",
+        "value": "bounded stop_rollback_result_return for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for REPOSITORY_LOCAL_REVERSIBLE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "HIGH_RISK_REQUEST_ONLY",
+      "action_risk_class": {
+        "status": "RECORDED",
+        "value": "bounded action_risk_class for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "reversibility": {
+        "status": "RECORDED",
+        "value": "bounded reversibility for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "evidence_grade": {
+        "status": "RECORDED",
+        "value": "bounded evidence_grade for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "authority": {
+        "status": "RECORDED",
+        "value": "bounded authority for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "expertise_requirement": {
+        "status": "RECORDED",
+        "value": "bounded expertise_requirement for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "automatic_repository_local_action": {
+        "status": "RECORDED",
+        "value": "bounded automatic_repository_local_action for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "user_confirmation_required": {
+        "status": "RECORDED",
+        "value": "bounded user_confirmation_required for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "expert_escalation": {
+        "status": "RECORDED",
+        "value": "bounded expert_escalation for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "institutional_approval": {
+        "status": "RECORDED",
+        "value": "bounded institutional_approval for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "prohibited_action": {
+        "status": "RECORDED",
+        "value": "bounded prohibited_action for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "request_only_external_action": {
+        "status": "RECORDED",
+        "value": "bounded request_only_external_action for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "stop_rollback_result_return": {
+        "status": "RECORDED",
+        "value": "bounded stop_rollback_result_return for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for HIGH_RISK_REQUEST_ONLY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "risk_class_required": true,
+    "reversibility_required": true,
+    "evidence_grade_required": true,
+    "authority_required": true,
+    "expertise_boundary_enforced": true,
+    "automatic_only_repository_local": true,
+    "confirmation_for_external": true,
+    "high_risk_request_only": true,
+    "prohibited_never_executed": true,
+    "stop_rollback_return_present": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "risk_class_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "reversibility_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "evidence_grade_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "authority_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "expertise_boundary_enforced",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "automatic_only_repository_local",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "confirmation_for_external",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "high_risk_request_only",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "prohibited_never_executed",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "stop_rollback_return_present",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}

@@ -104,7 +104,7 @@
       "target_id": "g_human_front_door_consumers",
       "domain": "G",
       "modules": [
-        "tests.test_human_front_door",
+        "ignition.tests.test_human_front_door",
         "tests.test_overall_architecture",
         "tests.test_generated_output_authority"
       ],
@@ -205,6 +205,19 @@
         "tests.test_r3_decision_integrity"
       ],
       "evidence": "The existing decision-integrity contract, gate, R2 reproduction and R3 evaluator consumer tests validate evidence binding and fail-closed semantic evaluation for the registered decision components.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_q43_intervention_escalation",
+      "domain": "G",
+      "modules": [
+        "tests.escalation.test_graded_intervention_escalation_gate",
+        "tests.escalation.test_q43_repair_r2",
+        "tests.test_r3_graded_intervention_escalation"
+      ],
+      "evidence": "Existing Q43 real-CLI, direct-predecessor, semantic positive, false-value, and evidence-laundering tests cover the contract, pilot, and validator paths.",
       "import_roots": [
         "ignition"
       ]
@@ -741,6 +754,50 @@
         "INTERFACE_CHANGE"
       ],
       "evidence": "The iteration manifest defines publication and completion-seal bindings; the existing iteration synchronization and publication consumer tests validate those boundaries."
+    },
+    {
+      "component_id": "graded_intervention_escalation_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_q43_intervention_escalation"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "Q43 contract schema and governing boundary surfaces."
+    },
+    {
+      "component_id": "graded_intervention_escalation_gate_validator",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_q43_intervention_escalation"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "Q43 fail-closed validator and its current regression tests."
+    },
+    {
+      "component_id": "graded_intervention_escalation_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_q43_intervention_escalation"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE"
+      ],
+      "evidence": "Q43 pilot, reproduction records, and fail-closed fixture cases."
     }
   ]
 }

@@ -1,0 +1,5 @@
+=== R0 RB09-CALLER-ASSERTED-SEMANTICS reproduction (authentic r2 engine) :: graded_intervention_escalation ===
+r2_engine_commit=e5181c83efba68f847b55e13c7b5a1ee1fd6888e
+gate=tools/escalation/validate_graded_intervention_escalation_gate.py exit=0
+stdout={"boundary": "repository candidate only; no external action or truth-layer upgrade", "errors": [], "exit_code": 0, "exit_name": "GATE_PASS", "gate": "graded_intervention_escalation"}
+DEFECT REPRODUCED: r2 engine returned GATE_PASS (exit 0) for a schema-valid but SEMANTICALLY-FALSE bundle (record values contradict the rules; the engine only verified evidence registration/reference and trusted the caller-asserted PASS). RB09-CALLER-ASSERTED-SEMANTICS not closed in r2.

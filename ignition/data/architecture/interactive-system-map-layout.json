@@ -175,7 +175,10 @@
       "latent_system_identifiability_pilot",
       "counterfactual_unrealized_path_contract",
       "counterfactual_unrealized_path_gate_validator",
-      "counterfactual_unrealized_path_pilot"
+      "counterfactual_unrealized_path_pilot",
+      "graded_intervention_escalation_contract",
+      "graded_intervention_escalation_gate_validator",
+      "graded_intervention_escalation_pilot"
     ],
     "layers": [
       "l0",

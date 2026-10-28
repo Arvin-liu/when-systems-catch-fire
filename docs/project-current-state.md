@@ -149,3 +149,7 @@ Latent-system candidates and equivalent decompositions can remain candidate obje
 ### D2-I1 Evidence-Constrained Multi-History / Multi-World Projection (stacked Draft candidate)
 
 Multiple evidence-constrained history/world candidates can preserve shared evidence, branch assumptions, indistinguishable sets and falsifiers without forcing a unique story or unjustified probability. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: generated possibility is not real probability; indistinguishable paths are not ranked facts; no evidence-free story; no forced unique narrative.
+
+### Q43-I1 Graded Intervention & Professional Escalation (stacked Draft candidate)
+
+Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no legal action; no medical action; no financial action; no safety-critical external action.
