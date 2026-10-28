@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.invalid/schemas/operations/executor-filesystem-domains-r1.schema.json",
+  "title": "Executor filesystem domains R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "task_workspace_ref", "task_workspace_mode", "task_workspace_digest_before",
+    "task_workspace_digest_after", "runtime_scratch_ref", "runtime_scratch_mode", "runtime_scratch_owner",
+    "runtime_scratch_ttl", "runtime_scratch_cleanup_policy", "runtime_scratch_digest_before",
+    "runtime_scratch_digest_after", "auth_source_ref", "auth_source_mode", "auth_source_content_read",
+    "config_mutation_allowed", "runtime_env_allowlist", "runtime_env_redaction_policy",
+    "path_non_overlap_assertions", "permission_non_escalation_assertion", "runtime_scratch_persistence_declared",
+    "secret_materialization", "unknown_filesystem_domains", "formal_repo_ref", "control_repo_ref",
+    "persistent_user_document_roots"
+  ],
+  "properties": {
+    "schema_version": {"const": "executor-filesystem-domains-r1"},
+    "task_workspace_ref": {"type": "string", "minLength": 1},
+    "task_workspace_mode": {"const": "DISPOSABLE_READ_ONLY"},
+    "task_workspace_digest_before": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "task_workspace_digest_after": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "runtime_scratch_ref": {"type": "string", "minLength": 1},
+    "runtime_scratch_mode": {"const": "ATTEMPT_EPHEMERAL_WRITABLE"},
+    "runtime_scratch_owner": {"type": "string", "minLength": 1},
+    "runtime_scratch_ttl": {"type": "number", "exclusiveMinimum": 0, "maximum": 3600},
+    "runtime_scratch_cleanup_policy": {"const": "CLEANUP_FINALLY_FAIL_CLOSED"},
+    "runtime_scratch_digest_before": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "runtime_scratch_digest_after": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "auth_source_ref": {"type": "string", "minLength": 1},
+    "auth_source_mode": {"const": "READ_ONLY_REFERENCE"},
+    "auth_source_content_read": {"const": false},
+    "config_mutation_allowed": {"const": false},
+    "runtime_env_allowlist": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "runtime_env_redaction_policy": {"const": "PRESENCE_ONLY_REDACT_PATHS_NO_VALUES"},
+    "path_non_overlap_assertions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_workspace_vs_runtime_scratch", "task_workspace_vs_formal_repo", "task_workspace_vs_control_repo",
+        "task_workspace_vs_persistent_user_document_tree", "runtime_scratch_vs_formal_repo",
+        "runtime_scratch_vs_control_repo", "runtime_scratch_vs_persistent_user_document_tree",
+        "auth_source_vs_task_workspace", "auth_source_vs_runtime_scratch"
+      ],
+      "properties": {
+        "task_workspace_vs_runtime_scratch": {"const": true},
+        "task_workspace_vs_formal_repo": {"const": true},
+        "task_workspace_vs_control_repo": {"const": true},
+        "task_workspace_vs_persistent_user_document_tree": {"const": true},
+        "runtime_scratch_vs_formal_repo": {"const": true},
+        "runtime_scratch_vs_control_repo": {"const": true},
+        "runtime_scratch_vs_persistent_user_document_tree": {"const": true},
+        "auth_source_vs_task_workspace": {"const": true},
+        "auth_source_vs_runtime_scratch": {"const": true}
+      }
+    },
+    "permission_non_escalation_assertion": {"const": true},
+    "runtime_scratch_persistence_declared": {"const": true},
+    "secret_materialization": {"const": false},
+    "unknown_filesystem_domains": {"type": "array", "maxItems": 0},
+    "formal_repo_ref": {"type": "string", "minLength": 1},
+    "control_repo_ref": {"type": "string", "minLength": 1},
+    "persistent_user_document_roots": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  }
+}

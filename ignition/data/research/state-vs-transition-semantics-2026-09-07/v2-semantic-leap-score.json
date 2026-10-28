@@ -1,0 +1,123 @@
+{
+  "control_fp": 0,
+  "epistemic_validity": {
+    "answer_key_provenance": "same task-scoped generator family as the prospective fixtures; not an independent human or external adjudication",
+    "canonical_validator_complete": false,
+    "independent_adjudication_observed": false,
+    "labels_or_signature_co_design_residual": true,
+    "primary_claim_cap": "UNDERDETERMINED",
+    "reason": "Passing a deterministic targeted replay and synthetic controls is not independent validation.",
+    "remote_full_ci_observed": false,
+    "status": "DETECTOR_NOT_VALIDATED"
+  },
+  "gate": "V2_SEMANTIC_LEAP_GATE",
+  "holdout_support": {
+    "in_family": {
+      "instances": 48,
+      "pairs": 24,
+      "unseen_family_template_combinations": 48
+    },
+    "in_family_families": [
+      "F1",
+      "F10",
+      "F11",
+      "F12",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "transfer": {
+      "instances": 72,
+      "pairs": 36,
+      "unseen_family_template_combinations": 48
+    },
+    "transfer_families": [
+      "F1",
+      "F10",
+      "F11",
+      "F12",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ]
+  },
+  "metamorphic_violations": 0,
+  "primary_verdict": "UNDERDETERMINED",
+  "research_candidate_verdict": "FIRST_CLASS_TRANSITION_SEMANTICS_SUPPORTED_AS_RESEARCH_CANDIDATE",
+  "research_claim_ceiling": "research candidate only; not canonical, not Current, not production validated",
+  "secondary_verdicts": {
+    "historical_residuals": "DISCOVERY_LEADS_ONLY",
+    "non_cartesian_path_semantics": "NOT_SEPARATELY_SUPPORTED_BY_THIS_BINARY-RELATION SUITE",
+    "state_local_sufficiency": "NOT_SUPPORTED_FOR_ALL_TRANSITION_QUESTIONS"
+  },
+  "signature_results": {
+    "L1": {
+      "definition": "NO when a semantic-conservative OldBasis -> NewRepresentation mapping preserves states, operations and questions",
+      "evidence": "the complete compile-away mapping does not preserve every transition question or falsifier",
+      "result": "NO"
+    },
+    "L2": {
+      "definition": "YES only for a previously unproducible object/operator class",
+      "evidence": "first-class transition relation and binding constraint are not represented as one local object",
+      "result": "YES"
+    },
+    "L3": {
+      "definition": "YES only with a pre-leap unaskable to post-leap representable question",
+      "evidence": "Q2-Q6 become representable in MT while MS remains endpoint/local only",
+      "result": "YES"
+    },
+    "L4": {
+      "definition": "YES only for a failure mode passing all old checks",
+      "evidence": "120 fresh endpoint-valid holdout instances fail MT while all old checks pass",
+      "result": "YES"
+    },
+    "L5": {
+      "definition": "supportive only; requires two independent pre-existing families",
+      "evidence": "pre-existing Task160 residual families: ['C1_THEORY_FUNCTIONS', 'C2_CASES_AND_COLLISIONS', 'C3_ORIGINAL_NOTES_AND_LINKED_NOTES', 'C4_FAILURES_AND_SELF_CORRECTION', 'C5_NONFUNCTION_THEORY_CLAIMS', 'C6_TEMPORAL_TRANSITIONS']",
+      "result": "YES"
+    },
+    "L6": {
+      "definition": "YES only if removing the new semantic primitive loses capability",
+      "evidence": "transition ablations lose detections and compile-away is not complete",
+      "result": "YES"
+    },
+    "challenger_priority": {
+      "definition": "any complete challenger plus no independent L2/L3/L4/L6 increment is NON_LEAP",
+      "result": "LEAP_CANDIDATE_WITH_INDEPENDENT_L2_L3_L4_L6_INCREMENT"
+    }
+  },
+  "task159_signature": {
+    "L1": "NO when a semantic-conservative OldBasis -> NewRepresentation mapping preserves states, operations and questions",
+    "L2": "YES only for a previously unproducible object/operator class",
+    "L3": "YES only with a pre-leap unaskable to post-leap representable question",
+    "L4": "YES only for a failure mode passing all old checks",
+    "L5": "supportive only; requires two independent pre-existing families",
+    "L6": "YES only if removing the new semantic primitive loses capability",
+    "challenger_priority": "any complete challenger plus no independent L2/L3/L4/L6 increment is NON_LEAP"
+  },
+  "task_id": "IGNITION-20260907-161",
+  "thresholds": {
+    "at_least_one_fresh_holdout_l4": true,
+    "byte_identical_clean_clone": true,
+    "compile_away_not_complete": true,
+    "historical_leads_not_used_as_positive_labels": true,
+    "in_family_incremental_across_at_least_4_families": true,
+    "in_family_incremental_tp_at_least_12": true,
+    "metamorphic_violations_zero": true,
+    "new_control_fp_zero": true,
+    "no_mt_only_facts": true,
+    "transfer_incremental_across_at_least_2_unseen_families": true,
+    "transfer_incremental_tp_at_least_6": true
+  },
+  "thresholds_pass": true
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.invalid/schemas/agent-federation/federation-routing-policy-r1.schema.json",
+  "title": "External Agent Federation Routing Policy R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "policy_id", "allow_degraded", "profiles"],
+  "properties": {
+    "schema_version": {"const": "federation-routing-policy-r1"},
+    "policy_id": {"type": "string", "minLength": 1},
+    "allow_degraded": {"type": "boolean"},
+    "profiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["executor_id", "enabled", "task_types", "privacy_classes", "workspace_localities", "permission_ceiling", "allowed_effects", "approval_required_effects", "default_preference_rank", "task_type_preferences", "requires_external_approval", "sandbox_semantics"],
+        "properties": {
+          "executor_id": {"type": "string", "minLength": 1},
+          "enabled": {"type": "boolean"},
+          "task_types": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "privacy_classes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "workspace_localities": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "permission_ceiling": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "allowed_effects": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "approval_required_effects": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "default_preference_rank": {"type": "integer", "minimum": 0},
+          "task_type_preferences": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+          "requires_external_approval": {"type": "boolean"},
+          "sandbox_semantics": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "c3_capability_equivalent_hit_denominator": 4,
+  "c3_capability_equivalent_hits": 0,
+  "c3_vs_c4_metric_delta": 0.5,
+  "condition_metrics": {
+    "C0": 0.6666666666666666,
+    "C1": 1.0,
+    "C2": 1.0,
+    "C3": 1.0,
+    "C4": 0.5
+  },
+  "equivalence_counts_by_condition": {
+    "C1": 1,
+    "C2": 0,
+    "C3": 0
+  },
+  "failed_gates": [
+    "three_of_five_scoreable_positive_hits",
+    "two_of_three_holdout_positive_hits",
+    "c3_beats_c0_c1_c2_by_net_two",
+    "no_l3_false_positive_n02_n03_n09",
+    "all_strong_negative_l3_fp_le_one",
+    "random_collision_not_equivalent",
+    "p00_boundary_scoreable"
+  ],
+  "gates": {
+    "all_strong_negative_l3_fp_le_one": false,
+    "c3_beats_c0_c1_c2_by_net_two": false,
+    "c4_observable_decline": true,
+    "equal_budgets": true,
+    "no_l3_false_positive_n02_n03_n09": false,
+    "p00_boundary_scoreable": false,
+    "random_collision_not_equivalent": false,
+    "three_of_five_scoreable_positive_hits": false,
+    "two_of_three_holdout_positive_hits": false
+  },
+  "holdout_capability_equivalent_hits": 0,
+  "holdout_denominator": 3,
+  "net_c3_vs_nulls": {
+    "C0": 12,
+    "C1": 0,
+    "C2": 0
+  },
+  "procedural_separation": "PROCEDURAL_SEPARATION_ONLY / NOT_COGNITIVE_INDEPENDENCE",
+  "qualitative_positive_boundary_gap": "P00 retained as HISTORICAL_BOUNDARY_GAP and excluded from numeric hit denominator",
+  "scoreable_positive_denominator": 4,
+  "scoring_model": "unblind capability-equivalence after deterministic blind proxy; not word matching",
+  "stage_a_pass": false,
+  "status": "UNDERDETERMINED",
+  "strong_negative_l3_false_positives": 3,
+  "task_id": "IGNITION-20260908-165"
+}

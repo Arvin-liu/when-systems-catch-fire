@@ -1,0 +1,27 @@
+{
+    "schema_version": "step12-closure-r1",
+    "task_id": "IGNITION-20260821-130",
+    "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "current_task_terminal": true,
+    "release_lifecycle": "PREPARED_FOR_RELEASE",
+    "publication_state": "NOT_PUBLISHED",
+    "deterministic_two_pass": "PASS",
+    "targeted_gates": {
+        "current_volatile_fact_registry": "PASS",
+        "current_facts": "PASS",
+        "current_snapshot": "PASS",
+        "current_surface_compiler": "PASS_7_SURFACES",
+        "current_surface_classifier": "PASS",
+        "current_surface_semantic_gate": "PASS_10_NEGATIVE_FIXTURES_FAIL_CLOSED",
+        "current_release_lifecycle": "PASS",
+        "current_task_lineage": "PASS",
+        "current_state_sync": "PASS_PRESENTATION_ONLY",
+        "system_map": "PASS_NODES_82_EDGES_87",
+        "system_map_geometry": "PASS_HEIGHT_2912_CROSSING_188",
+        "focused_tests": "PASS_33",
+        "human_front_door": "CLASSIFIED_PRE_EXISTING_SOURCE_HASH_DRIFT_11",
+        "full_regression": "CLASSIFIED_LONG_RUNNING_OR_HISTORICAL_RESIDUALS"
+    },
+    "fresh_clone_and_main_publication": "OPEN_STEP13",
+    "claim_ceiling": "Task 130 closure is repository-local projection, deterministic validation and release-candidate evidence only; it does not establish external truth, production readiness, Owner acceptance, live executor completion or epistemic acceptance."
+}

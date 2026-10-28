@@ -1,0 +1,45 @@
+{
+  "canonical_id": "C-06",
+  "title": "Pointfire unifies the four fundamental forces / quantum gravity.",
+  "class": "CORE_CAPABILITY_VALIDATION",
+  "is_meta": false,
+  "current_status": "DEFERRED",
+  "provenance": {
+    "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+    "canonical_id": "C-06",
+    "upstream_source": "uniform function tables / narrative docs",
+    "claim_id": "FOUR-FORCE-UNIFICATION"
+  },
+  "dependencies": [
+    "FOUR-FORCE-UNIFICATION"
+  ],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "evidence-program",
+    "claims-registry"
+  ],
+  "evidence_needs": [
+    "preregistration",
+    "independent replication",
+    "oracle/baseline"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "NARRATIVE ONLY — explicitly not a verified claim in the corpus.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 34.7,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.3,
+    "dependency_centrality": 0.2,
+    "falsifiability": 0.2,
+    "data_oracle_availability": 0.1,
+    "expected_information_gain": 0.7,
+    "effort_evidence_cost": 0.05,
+    "reversibility_risk": 0.7,
+    "maturity_gap": 0.8,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.95
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

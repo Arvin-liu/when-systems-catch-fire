@@ -1,0 +1,26 @@
+{
+  "schema": "os-steering-intent-obligation-r1.commitment-ledger",
+  "commitments": [
+    {
+      "schema": "os-steering-intent-obligation-r1.commitment",
+      "commitment_id": "commitment-synthetic-deadline",
+      "goal_id": "goal-synthetic-brief",
+      "issuer_ref": "owner.synthetic",
+      "beneficiary_ref": "portfolio.synthetic",
+      "namespace": "fixture.public",
+      "scope": {"domain": "research", "synthetic": true},
+      "fulfillment_contract_id": "contract-synthetic-brief",
+      "provenance": {"source_type": "SYSTEM_DERIVED_PROPOSAL", "actor_ref": "system.fixture", "authority_id": "proposal-commitment-001", "reason": "synthetic proposed obligation", "evidence_refs": [], "authorized": false},
+      "status": "PROPOSED",
+      "due_at": "2026-08-25T17:00:00+08:00",
+      "not_before": "2026-08-21T12:00:00+08:00",
+      "review_after": "2026-08-22T12:00:00+08:00",
+      "version": 1,
+      "supersedes_commitment_id": null,
+      "created_at": "2026-08-21T12:00:00+08:00",
+      "updated_at": "2026-08-21T12:00:00+08:00"
+    }
+  ],
+  "events": [],
+  "commitment_count": 1
+}

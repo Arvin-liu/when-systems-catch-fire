@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.example/schemas/language-thought/language-profile.schema.json",
+  "title": "Bounded Language Profile",
+  "type": "object",
+  "required": ["schema_version", "profile_id", "language_tag", "language_name", "bounded_scope", "coverage", "status", "nonessentialist_limit", "calibration_strata", "dimensions", "inbound_outbound_summary"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "coverage": {"enum": ["FULL", "BOUNDED_PRELIMINARY"]},
+    "calibration_strata": {
+      "type": "object",
+      "required": ["descriptive_grammar_typology", "ordinary_discourse", "literary_calibration"]
+    },
+    "dimensions": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["dimension_id", "obligation_strength", "grammar_or_convention", "ordinary_realizations", "transformation_risks", "counterexamples_and_variation", "evidence_ids", "open_questions"],
+        "properties": {
+          "obligation_strength": {"enum": ["grammatically_required", "strong_default", "productive_option", "marked_option", "context_dependent", "not_profiled"]}
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

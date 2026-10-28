@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-137-step06-codex-exact-output-contract-r2",
+  "task_id": "IGNITION-20260824-137",
+  "step": "06",
+  "implementation": {
+    "adapter": "ignition/agent_federation/live_adapters.py::LiveCodexAdapter",
+    "schema_template": "ignition/schemas/operations/live-completion-output-r1.schema.json",
+    "strict_mode": "output_contract.strict_output_schema=true"
+  },
+  "argv_contract": {
+    "literal_argv": true,
+    "flags": ["exec", "--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox", "read-only", "--output-schema", "--cd"],
+    "schema_path": "DISPOSABLE_OUTPUT_SCHEMA_ONLY",
+    "workspace": "DISPOSABLE_FIXTURE_ROOT",
+    "shell_interpolation": false,
+    "remote_git": false,
+    "browser": false,
+    "message_or_channel": false,
+    "output_last_message_file": false,
+    "dangerous_bypass_flags": false
+  },
+  "schema_contract": {
+    "additional_properties": false,
+    "required_fields": ["nonce", "selected_ids", "count", "workspace_digest_claim"],
+    "schema_file_must_exist": true,
+    "schema_file_must_be_read_only": true,
+    "schema_file_must_be_outside_fixture": true,
+    "schema_file_is_not_formal_repo_runtime_input": true
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_codex_adapter ignition.tests.test_live_child_guard ignition.tests.test_live_execution ignition.tests.test_live_preflight -v",
+    "tests": 15,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS",
+    "live_inference": "NOT_RUN"
+  },
+  "claim_ceiling": "Exact bounded Codex argv and output-schema admission only; executor output remains RETURNED_UNVALIDATED until independent OS validation."
+}

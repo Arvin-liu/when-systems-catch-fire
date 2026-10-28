@@ -1,0 +1,80 @@
+{
+  "schema_version": "ignition-150-step14-final-defer-decision-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "14",
+  "record_type": "FINAL_BOUNDED_ADMISSION_DECISION",
+  "status": "DEFER",
+  "formal_previous_commit": "bb4072fc30e09111f0bc3bb2e21f573f4c017778",
+  "control_previous_commit": "2f7e602127293d03494a3b80aa2c5bae941e7806",
+  "decision": {
+    "outcome": "DEFER",
+    "reason_code": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER_AND_OWNER_VISUAL_ACCEPTANCE_PENDING",
+    "candidate_status": "EXPERIMENTAL_CANDIDATE_NOT_REGISTERED",
+    "current_capability": false,
+    "default_renderer": false,
+    "registry_write": false,
+    "ready_or_merge_authorization": false,
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"
+  },
+  "owner_decision_context": {
+    "archify": {
+      "fit": "FIT_WITH_LIMITS",
+      "continuation": "CONTINUE_EXPERIMENT",
+      "current_admission": "NOT_ADMITTED",
+      "limits": ["derived visualization only", "no architecture truth", "no default renderer", "Delta wrapper blocker unresolved", "Owner visual acceptance pending"]
+    },
+    "agent_reach_public": {
+      "fit": "FIT_WITH_LIMITS",
+      "continuation": "CONTINUE_EXPERIMENT",
+      "task150_change": "NO_CHANGE"
+    },
+    "agent_reach_authenticated": {
+      "decision": "DEFER",
+      "authenticated_channel_admission": "NO_AUTHENTICATED_ADMISSION",
+      "task150_change": "NO_CHANGE"
+    }
+  },
+  "gate_summary": {
+    "no_current_provider_activation": "PASS",
+    "no_draft_exception_survives_ready": "PASS",
+    "experimental_contract_not_runtime_authority": "PASS",
+    "no_authenticated_admission": "PASS",
+    "no_provider_homepage_claim": "PASS",
+    "live_external_invocation_unchanged": "PASS",
+    "nonfunction_claim_materiality_clean": "PASS",
+    "zero_background_current_claim": "PASS",
+    "delta_viewport_containment_zero_failure": "FAIL",
+    "owner_visual_acceptance": "PENDING"
+  },
+  "blocking_evidence": {
+    "step04_artifact": "ignition/data/operations/iterations/150/step04-viewport-residual-repair.json",
+    "delta_diagnostic_code": "viewer/viewport-overflow",
+    "delta_diagnostics": 3,
+    "failed_viewports": ["light/1440x900", "light/1600x1000", "dark/1440x900"],
+    "standalone_containment": "PASS",
+    "delta_semantic_compare": "PASS_28_OF_28",
+    "visual_review": "PENDING_PERCEPTUAL_REVIEW",
+    "owner_aesthetic_acceptance": "PENDING"
+  },
+  "reopen_conditions": [
+    "Resolve or obtain a separately governed upstream wrapper fix and re-run the exact Delta viewport matrix.",
+    "Complete manual perceptual review and receive explicit Owner aesthetic acceptance.",
+    "Re-run the registry candidate gate from a fresh exact formal head; do not infer admission from this receipt.",
+    "Preserve the five provider/authority invariants and all authentication/live-invocation boundaries."
+  ],
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "agent_reach_public": "NO_CHANGE",
+    "agent_reach_authenticated": "DEFER",
+    "authenticated_channels": "NO_AUTHENTICATED_ADMISSION",
+    "installation": "NO_INSTALL_OR_AUTO_UPGRADE",
+    "current_admission": "NOT_ADMITTED",
+    "default_renderer": "NOT_SELECTED",
+    "provider_homepage": "NO_CLAIM",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN",
+    "successor_task": "NOT_CREATED"
+  },
+  "claim_ceiling": "Task150 Step14 establishes only a formal bounded-experiment DEFER decision because the Delta viewport blocker remains and Owner visual acceptance is pending. It preserves Archify as a fit-with-limits experiment candidate and does not register, activate, authorize or promote a provider; it does not establish Current status, a default renderer, architecture truth, external truth, production readiness, authenticated access, Owner acceptance or live external completion."
+}

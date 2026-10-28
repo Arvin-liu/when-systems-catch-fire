@@ -1,0 +1,81 @@
+{
+  "schema_version": "ignition-144-step16-repair-cycle-b-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "16",
+  "status": "PASS",
+  "repair_cycle": "B",
+  "candidate_head_before_repair": "e1eb95a7dad0266b0988a00bdd65750017a3511d",
+  "root_cause": "Step15 changed the canonical Current surfaces and added Task144 closure records after the earlier deterministic projection closure. Existing Foundation, deep-adjudication, Knowledge Experience, Fire Seeds, Human Surface, Current Facts and repository-path projections had not yet been regenerated against that source state.",
+  "pre_repair_evidence": {
+    "first_projection_preflight_result": "FAIL",
+    "first_failed_checks": [
+      "function_asset_census",
+      "nonfunction_claim_projection",
+      "knowledge_experience_projection",
+      "knowledge_experience_validator",
+      "fire_seeds_census",
+      "human_surface_contract",
+      "durability_projection_hygiene",
+      "repository_path_manifest"
+    ],
+    "first_preflight_stdout_stderr_sha256": "9d8bc99ed7e8bae5baa736ef549c4f9eb3709311cc5bf3e60adfd8b3bc03f59a",
+    "post_projection_refresh_failed_checks": [
+      "function_asset_deep_adjudication"
+    ],
+    "post_projection_refresh_preflight_stdout_stderr_sha256": "b140a8b56d9c8a698183579b992dd1cd58c06e7d049948e65fc2a97a1eb3fe3f",
+    "side_effect_detected_by_preflight": false,
+    "historical_residuals_rewritten": false
+  },
+  "repair_applied": {
+    "deterministic_generators": [
+      "tools/foundation/build_function_asset_census.py",
+      "tools/foundation/adjudicate_function_assets.py",
+      "tools/foundation/adjudicate_nonfunction_claims.py",
+      "tools/governance/build_knowledge_experience.py",
+      "tools/governance/build_claim_browsers.py",
+      "tools/governance/refresh_human_surface_materiality.py",
+      "tools/publication/build_fire_seed_census.py",
+      "tools/foundation/validate_repository_path_classification.py --generate"
+    ],
+    "current_surface_refresh": [
+      "tools/generate_current_facts.py --write",
+      "tools/build_current_snapshot.py --write",
+      "tools/current_surface_compiler.py --write"
+    ],
+    "change": "Rebuilt existing deterministic projections in dependency order, including the previously omitted Task99 deep-adjudication outputs, then revalidated their checks. No validator relaxation, residual deletion, capability, adapter, executor, external inference or live process was introduced."
+  },
+  "post_repair_checks": {
+    "function_asset_census": "PASS",
+    "function_asset_deep_adjudication": "PASS",
+    "nonfunction_claim_projection": "PASS",
+    "knowledge_experience_projection": "PASS",
+    "human_surface_contract": "PASS",
+    "fire_seeds_census": "PASS",
+    "current_facts_and_snapshot": "PASS",
+    "durability_projection_hygiene": "PASS",
+    "repository_path_manifest": "PASS",
+    "projection_preflight": {
+      "check_count": 25,
+      "failed_checks": [],
+      "projection_checks_pass": true,
+      "side_effect_detected": false,
+      "require_clean": false,
+      "stdout_stderr_sha256": "f47c49c9446f6d2abeb98e078bdf0a9c3c5cc53ad58ddd56367eb50118138e46"
+    }
+  },
+  "safety": {
+    "new_live_invocations": 0,
+    "new_external_inference": 0,
+    "new_executor_qualification": 0,
+    "new_capability": false,
+    "green_laundering": {
+      "skip_added": false,
+      "xfail_added": false,
+      "ignore_added": false,
+      "expected_failure_added": false,
+      "residual_expanded": false
+    }
+  },
+  "remaining_repair_budget": 1,
+  "claim_ceiling": "Repository-local deterministic projection repair evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

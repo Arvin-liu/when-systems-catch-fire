@@ -1,0 +1,29 @@
+{
+  "schema_version": "ignition-141-step02-current-live-compatibility-migration-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "02",
+  "status": "PASS",
+  "canonical_projection": {
+    "schema_version": "live-current-projection-r3",
+    "new_fields": [
+      "live_state_dimensions",
+      "obligation.closure_condition",
+      "compatibility_projection"
+    ],
+    "closure_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION"
+  },
+  "historical_compatibility": {
+    "accepted_schema_versions": ["live-current-projection-r1", "live-current-projection-r2", "live-current-projection-r3"],
+    "task140_materialized_projection_rewritten": false,
+    "current_live_ceiling_status": "DEPRECATED_COMPATIBILITY_ALIAS",
+    "canonical_process_observed_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION"
+  },
+  "task140_sequence5_projection": {
+    "live_process_observation_status": "OBSERVED",
+    "validated_completion_status": "NOT_VALIDATED",
+    "reconciliation_blocker_status": "NONE",
+    "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
+    "old_not_observed_ceiling_rejected": true
+  },
+  "claim_ceiling": "Repository-local Current projection compatibility migration only; no validated live completion, external truth, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}

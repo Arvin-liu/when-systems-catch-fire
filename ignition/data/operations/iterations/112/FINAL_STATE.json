@@ -1,0 +1,122 @@
+{
+  "task_number": 112,
+  "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
+  "control_commit": "03cab63ba4d82b47072a76f87fdc10273a2bf736",
+  "success_token": "IGNITION_RESEARCH_OUTPUT_PUBLICATION_LAYER_ESTABLISHED_HUNDRED_ITERATION_KNOWLEDGE_HARVEST_AUDITED_REVISED_PUBLISHED_AND_112_TERMINALIZED",
+  "terminal_state": "TERMINAL_SUCCESS",
+  "terminal_tag": "ignition/iterations/112/terminal-r1",
+  "terminal_tag_object_sha": "8edeadd20a2e07825127ae677bd9fb917b5169b1",
+  "terminal_tag_target": "a7b16d0781ed8f804d0015a5485d14c9afca4ecf",
+  "terminal_tag_message_sha256": "f081fcffae27e59c356ff8b8f7069ac12b31e150fc0fd7e97dc78bebcb0b172a",
+  "core_receipt_sha256": "b877093e827853f4f69e468f035a5a15b0c296d8ca4092ef9ffb19b837a078d4",
+  "predecessor": {
+    "task_number": 111,
+    "terminal_state": "TERMINAL_SUCCESS",
+    "terminal_tag": "ignition/iterations/111/terminal-r1-recovery-1",
+    "terminal_tag_target": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+    "core_receipt_sha256": "c83da06b3663443224e9cd4f6d121b69ce92663382a5b4d86be527f8e61ef042",
+    "independently_verified_before_start": true
+  },
+  "content_phase": {
+    "pr_number": 178,
+    "exact_reviewed_head": "2e6ca101ac82d1bd8af413fbdafaaea024a9af8b",
+    "ordinary_merge_commit": "24c7002477f75608b828f764fba60ebb633f88e8",
+    "merged_at": "2026-08-02T04:32:38Z",
+    "ordinary_merge": true,
+    "force_push": false
+  },
+  "terminalization_phase": {
+    "pr_number": 179,
+    "exact_reviewed_head": "e8fd20b6ef9113120cf6fe734b4633af6e871e49",
+    "ordinary_merge_commit": "a7b16d0781ed8f804d0015a5485d14c9afca4ecf",
+    "merged_at": "2026-08-02T05:09:55Z",
+    "ordinary_merge": true,
+    "force_push": false
+  },
+  "publication": {
+    "status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS",
+    "review_state": "COMPLETE",
+    "shelf": "PUBLICATIONS/README.md",
+    "volume": {
+      "path": "PUBLICATIONS/volumes/001-pointfire-after-one-hundred-iterations.md",
+      "sha256": "2a3668cdfe901cf0e28705906286aa061d995849e7d42535e4ca92ad0cebcb4b",
+      "characters": 38775,
+      "han_characters": 30226
+    },
+    "notes": {
+      "path": "PUBLICATIONS/notes/001-pointfire-research-notes.md",
+      "sha256": "f4a3a6dd31705750ed7c3053a4cbe688aae000a7ac10bbb99cb952377a9da0a5",
+      "characters": 24503,
+      "count": 60
+    },
+    "panorama": {
+      "path": "PUBLICATIONS/what-pointfire-knows-now.md",
+      "sha256": "8cd4781d87bde988cc627c16c2df5987ac28e04cd6af75af30c74b8ece105e31",
+      "characters": 5724,
+      "supported": 20,
+      "corrected": 20,
+      "unresolved": 20,
+      "future_directions": 10
+    },
+    "ledger": {
+      "path": "PUBLICATIONS/hundred-iteration-achievement-ledger.md",
+      "sha256": "b2a46a4933095810d491f6c98c7378e84de1468ddb553d9f24ec561a2bada298",
+      "characters": 44180,
+      "records": 80
+    },
+    "audit_packet": "data/operations/iterations/112/publication/",
+    "review_findings": {
+      "factual": 15,
+      "adversarial": 18,
+      "editorial": 15,
+      "total": 48
+    }
+  },
+  "resolver_verification": {
+    "resolved_112": "TERMINAL_SUCCESS",
+    "errors": {},
+    "terminal_tasks": [
+      104,
+      105,
+      106,
+      107,
+      108,
+      110,
+      111,
+      112
+    ],
+    "current_accepted_iteration": 112,
+    "tag_validator": "TAG_OK",
+    "tag_is_annotated": true,
+    "tag_target_matches_terminalization_merge": true,
+    "core_hash_matches_tag_and_file": true,
+    "publication_validator": "PASS",
+    "lifecycle_events": "PASS"
+  },
+  "fresh_clone_verification": {
+    "full_clone_required": true,
+    "full_clone_verified": true,
+    "shallow": false,
+    "working_tree_clean": true,
+    "resolver": "TERMINAL_SUCCESS",
+    "current_accepted_iteration": 112,
+    "errors": {},
+    "publication_shelf_reachable": true,
+    "primary_works_reachable": true,
+    "task_113_absent": true,
+    "verification_scope": "final evidence branch and post-merge main; exact clone receipts are recorded in the 1111 receipt"
+  },
+  "remote_verification": {
+    "content_pr_178_merged_ordinary": true,
+    "terminalization_pr_179_merged_ordinary": true,
+    "terminal_tag_pushed_without_force": true,
+    "no_task_113_created_or_executed": true
+  },
+  "safety_boundary": {
+    "task_111_modified": false,
+    "relay_current_modified": false,
+    "task_112_control_file_modified": false,
+    "prohibited_history_rewrite_used": false
+  }
+}
+

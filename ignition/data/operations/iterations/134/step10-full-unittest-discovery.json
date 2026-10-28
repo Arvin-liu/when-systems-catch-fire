@@ -1,0 +1,87 @@
+{
+  "schema_version": "ignition-134-step10-full-unittest-discovery-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "10",
+  "status": "TERMINAL_FAILURES_RECORDED",
+  "command": "PYTHONPATH=ignition python3 -m unittest discover -s ignition/tests -p 'test*.py'",
+  "working_directory": "formal-repository-root",
+  "runtime_seconds": 2730.121,
+  "long_window": {
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "arbitrary_timeout_used": false,
+    "minimum_window_seconds": 14400,
+    "actual_run_completed_before_window": true
+  },
+  "result": {
+    "exit_code": 1,
+    "tests_run": 1008,
+    "failures": 22,
+    "errors": 4,
+    "skipped": 0,
+    "summary": "FAILED (failures=22, errors=4)"
+  },
+  "observed_execution_chain": [
+    "tools/foundation/validate_claim_governance.py",
+    "tools/foundation/validate_foundation.py",
+    "tools/foundation/validate_function_asset_closure.py",
+    "tools/foundation/validate_nonfunction_claim_closure.py",
+    "tools/foundation/adjudicate_nonfunction_claims.py --check",
+    "git rename/diff checks"
+  ],
+  "failure_classification": [
+    {
+      "class": "CURRENT_PROJECTION_DRIFT",
+      "release_action": "REPAIR_IN_STEP_11",
+      "evidence": [
+        "function asset generated outputs: discovery.jsonl, census.jsonl, audit-queue.jsonl, census-summary.json",
+        "nonfunction claim generated outputs: claim-registry.jsonl, source-discovery.jsonl, adjudication-ledger.jsonl, evidence-lineage.jsonl, dependency-graph.jsonl, inference-risk-report.jsonl, public-surface-report.jsonl, unresolved-quarantine.jsonl, supersession-lineage.jsonl, closure-summary.json, discovery-coverage.json, claim-inventory.csv, docs/foundation/nonfunction-claim-adjudication-index.md",
+        "nonfunction discovery coverage reported listed=4151 tracked=4419"
+      ],
+      "classification_reason": "Task134 formal/progress/report artifacts changed the live source set; deterministic downstream projections must be regenerated and rechecked rather than ignored."
+    },
+    {
+      "class": "ENVIRONMENTAL_SYMPY_DEFAULT_INTERPRETER",
+      "release_action": "PRESERVE_EXPLICIT_RESIDUAL",
+      "evidence": ["T16_SYMPY_COUNTEREXAMPLE: SYMPY_UNAVAILABLE:ModuleNotFoundError"],
+      "classification_reason": "The default interpreter lacks SymPy; Step09 independently proved the declared isolated dependency environment and did not mutate global configuration."
+    },
+    {
+      "class": "SEALED_HISTORICAL_PROPAGATION_104_106",
+      "release_action": "PRESERVE_EXPLICIT_RESIDUAL",
+      "evidence": ["18 reconciliation diagnostics across Task104–106 dimensions"],
+      "classification_reason": "The mismatch is in historical records and was not created by the Task134 code path; it remains separately sealed."
+    },
+    {
+      "class": "HISTORICAL_STATE_CHANGELOG_CONTRACT",
+      "release_action": "AUDIT_ONLY",
+      "evidence": [
+        "test_current_log_is_valid reports legacy entries missing stale_knowledge, authority_changes, delta and obligations fields",
+        "the source was not changed by Task134"
+      ],
+      "classification_reason": "Existing historical changelog records do not satisfy the current validator contract; no blanket skip or validator weakening is authorized."
+    },
+    {
+      "class": "COMMAND_CWD_ASSUMPTION",
+      "release_action": "REPORT_RUNNER_BOUNDARY",
+      "evidence": [
+        "test_change_propagation import could not resolve data/operations/propagation/121Q32-request.json from the repository-root command",
+        "two State Changelog fixture tests could not resolve STATE-CHANGELOG.md from the repository root"
+      ],
+      "classification_reason": "The exact requested command completed from the repository root, exposing tests that assume ignition as cwd; this is recorded as an execution-boundary error, not converted to PASS."
+    },
+    {
+      "class": "CURRENT_TASK_IDENTITY_BINDING",
+      "release_action": "REPAIR_IN_STEP_11_AND_STEP_13",
+      "evidence": ["historical witness-131-sha-132-candidate fixture observed formal result task IGNITION-20260822-133"],
+      "classification_reason": "Active witness tooling still contains Task133-specific binding while historical fixtures exercise older task identity; the migration must become ordinal-aware without rewriting historical fixtures."
+    }
+  ],
+  "delta_gate": {
+    "status": "RELEASE_BLOCKED_PENDING_STEP_11",
+    "new_current_projection_repair_required": true,
+    "residual_expansion_used_to_make_green": false,
+    "skip_or_ignore_added": false
+  },
+  "claim_ceiling": "Exact repository-local full-discovery terminal evidence and failure classification only; no whole-project correctness, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

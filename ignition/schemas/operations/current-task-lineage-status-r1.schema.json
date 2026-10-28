@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/current-task-lineage-status-r1.schema.json",
+  "title": "Ignition current task lineage and lifecycle status",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "current_task", "current_state", "obligation_registry", "lineages", "current_surface_status_requirements", "protected_historical_paths", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "current-task-lineage-status-r1"},
+    "contract_id": {"const": "CURRENT_TASK_LINEAGE_STATUS"},
+    "current_task": {"$ref": "#/$defs/currentTask"},
+    "task_identity": {"$ref": "#/$defs/taskIdentityState"},
+    "current_state": {"$ref": "#/$defs/currentState"},
+    "obligation_registry": {"$ref": "#/$defs/obligationRegistryRef"},
+    "lineages": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/lineage"}},
+    "current_surface_status_requirements": {"$ref": "#/$defs/surfaceRequirements"},
+    "protected_historical_paths": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "currentTask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "scope", "execution_status", "terminal", "identity_impact"],
+            "properties": {
+                "task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "scope": {"$ref": "#/$defs/nonblank"},
+        "execution_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS", "COMPLETED_WITH_OPEN_OBLIGATIONS"]},
+        "terminal": {"type": "boolean"},
+                "identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]}
+      }
+    },
+    "currentState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_state_status", "epistemically_accepted"],
+      "properties": {
+        "current_state_status": {"const": "CURRENT_WITH_OPEN_OBLIGATIONS"},
+        "epistemically_accepted": {"const": 0}
+      }
+    },
+    "obligationRegistryRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority", "source_path", "schema_path", "validator_path", "independence_rule"],
+      "properties": {
+        "authority": {"const": "OPEN_OBLIGATION_REGISTRY"},
+        "source_path": {"const": "ignition/data/operations/open-obligation-registry-r1.json"},
+        "schema_path": {"const": "ignition/schemas/operations/open-obligation-registry-r1.schema.json"},
+        "validator_path": {"const": "ignition/tools/validate_open_obligation_registry.py"},
+        "independence_rule": {"const": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"}
+      }
+    },
+    "surfaceRequirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_status_tokens", "forbidden_status_tokens", "append_only_current_path"],
+      "properties": {
+        "required_status_tokens": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+        "forbidden_status_tokens": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+        "append_only_current_path": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "repository", "path", "classification", "commit"],
+      "properties": {
+        "kind": {"$ref": "#/$defs/nonblank"},
+        "repository": {"$ref": "#/$defs/nonblank"},
+        "path": {"$ref": "#/$defs/nonblank"},
+        "classification": {"enum": ["HISTORICAL_RECORD", "CONTROL_RECORD"]},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{8,64}$"}
+      }
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lineage_id", "predecessor", "successor", "current_surface_rule", "provenance"],
+      "properties": {
+        "lineage_id": {"const": "IGNITION-125->IGNITION-127"},
+        "predecessor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["task_id", "task_file_status", "requirement_lineage_status", "canonical_status", "successor_task_id"],
+          "properties": {
+            "task_id": {"const": "IGNITION-125"},
+            "task_file_status": {"const": "HISTORICAL_UNEXECUTED"},
+            "requirement_lineage_status": {"const": "REBASED_INTO_127"},
+            "canonical_status": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
+            "successor_task_id": {"const": "IGNITION-127"}
+          }
+        },
+        "successor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["task_id", "execution_status", "new_regressions", "current_obligation"],
+          "properties": {
+            "task_id": {"const": "IGNITION-127"},
+            "execution_status": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"},
+            "new_regressions": {"const": 0},
+            "current_obligation": {"const": false}
+          }
+        },
+        "current_surface_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["predecessor_rendering", "successor_rendering", "forbidden_status_tokens"],
+          "properties": {
+            "predecessor_rendering": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
+            "successor_rendering": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"},
+            "forbidden_status_tokens": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+          }
+        },
+        "provenance": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/provenance"}}
+      }
+    },
+    "taskIdentityState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "current_formal_task", "latest_architecture_changing_task", "release_candidate_task", "publication_witness_task", "previous_canonical_current_task", "previous_formal_task", "historical_lineage", "advancement", "claim_ceiling"],
+      "properties": {
+        "schema_version": {"const": "task-identity-state-r1"},
+        "current_formal_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "latest_architecture_changing_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "release_candidate_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "publication_witness_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "previous_canonical_current_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "previous_formal_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "historical_lineage": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/taskIdentityEdge"}},
+        "advancement": {"$ref": "#/$defs/taskIdentityAdvancement"},
+        "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "taskIdentityEdge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["predecessor_task_id", "successor_task_id", "relation", "status"],
+      "properties": {
+        "predecessor_task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "successor_task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "relation": {"enum": ["FORMAL_TASK_SUCCESSOR", "CANONICAL_SOURCE_ADVANCEMENT", "ARCHITECTURE_TASK_REFERENCE", "REBASED_REQUIREMENT_LINEAGE"]},
+        "status": {"enum": ["COMPLETED_HISTORICAL", "CURRENT_ADVANCEMENT"]}
+      }
+    },
+    "taskIdentityAdvancement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_task_id", "to_task_id", "transition_reason", "prior_source_sha256", "execution_contract_path", "idempotency_key"],
+      "properties": {
+        "from_task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "to_task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+        "transition_reason": {"$ref": "#/$defs/nonblank"},
+        "prior_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "execution_contract_path": {"$ref": "#/$defs/nonblank"},
+        "idempotency_key": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}
+      }
+    }
+  }
+}

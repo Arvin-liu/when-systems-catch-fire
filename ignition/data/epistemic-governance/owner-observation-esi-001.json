@@ -1,0 +1,28 @@
+{
+  "schema_version": "owner-observation-r0",
+  "observation_id": "OWNER-OBS-ESI-001",
+  "public_safe": true,
+  "source_class": "OWNER_SUPPLIED_OBSERVATION",
+  "summary": "An external model was observed, after reading public architecture and governance material, to add clearer boundaries between engineering judgments and truth claims, retain some unknowns, and resist unsupported upgrades in a later response. This is a de-identified public-safe summary, not a reproduction of the underlying observation.",
+  "status": ["OWNER_SUPPLIED", "NOT_INDEPENDENTLY_REPLICATED", "NOT_CAUSAL_PROOF", "CANDIDATE_ESI_SIGNAL"],
+  "alternative_explanations": [
+    "in-context learning or task inference",
+    "structural priming or demonstration effects",
+    "terminology or style imitation",
+    "default calibrated-answer preference",
+    "contextual mimicry or evaluator inference"
+  ],
+  "privacy": {
+    "private_source_content_included": false,
+    "screenshots_included": false,
+    "private_paths_included": false,
+    "user_identifiers_included": false,
+    "platform_content_reproduced": false
+  },
+  "claim_ceiling": [
+    "The observation is a source-classed seed for a public research protocol, not an independent replication.",
+    "It does not establish that ESI caused the later wording or decision boundary.",
+    "It does not establish a permanent model change, a new law, novelty or general transfer.",
+    "It cannot grant permission, truth, M/E, Owner acceptance, epistemic acceptance or safety authority."
+  ]
+}

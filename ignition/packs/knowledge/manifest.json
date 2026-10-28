@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "pack_id": "knowledge.r0",
+  "version": "1.0.0",
+  "display_name": "Knowledge Domain Pack R0",
+  "domain": "knowledge",
+  "compatibility": {
+    "kernel_api": "r0",
+    "runtime_api": "r1",
+    "schema": "1.0.0"
+  },
+  "capabilities_provided": [
+    "knowledge.read_foundation",
+    "knowledge.validate_claim",
+    "knowledge.validate_evidence_link",
+    "knowledge.project_results"
+  ],
+  "required_kernel_capabilities": [
+    "read_declared",
+    "run_validator",
+    "write_declared"
+  ],
+  "required_runtime_capabilities": [
+    "runtime.pack_registry",
+    "runtime.pack_bus"
+  ],
+  "object_types": [
+    "foundation_object",
+    "claim",
+    "evidence_link",
+    "proof_obligation",
+    "function_asset",
+    "nonfunction_assertion",
+    "result_record",
+    "epistemic_correction"
+  ],
+  "validator_entrypoints": [
+    "tools/validate_knowledge_corpus_admission.py",
+    "tools/governance/validate_knowledge_experience.py",
+    "tools/validate_epistemic_governance_relationships.py"
+  ],
+  "action_hooks": [
+    "knowledge.read_declared",
+    "knowledge.project_declared"
+  ],
+  "planning_hooks": [
+    "knowledge.plan_validation"
+  ],
+  "human_entries": [
+    "FOUNDATION.md",
+    "KNOWLEDGE/README.md",
+    "RESULTS/README.md",
+    "packs/knowledge/README.md"
+  ],
+  "machine_entries": [
+    "data/foundation",
+    "data/governance/knowledge-experience",
+    "data/publication/fire-seeds",
+    "data/foundation/knowledge-corpus-admission-policy.json"
+  ],
+  "permissions_requested": {
+    "read_paths": [
+      "FOUNDATION.md",
+      "KNOWLEDGE",
+      "data/foundation",
+      "data/governance/knowledge-experience"
+    ],
+    "write_paths": [
+      "data/governance/knowledge-experience"
+    ],
+    "command_classes": [
+      "read-only-validator"
+    ],
+    "tool_classes": [
+      "declared-knowledge-validator"
+    ],
+    "network": false
+  },
+  "prohibited_authority_upgrades": [
+    "agent_lifecycle",
+    "executor_selection",
+    "generic_permission",
+    "checkpoint_resume",
+    "owner_acceptance",
+    "kernel_definition",
+    "truth_authority",
+    "epistemic_upgrade",
+    "charter_mutation"
+  ],
+  "load_policy": "DECLARATIVE_METADATA_ONLY",
+  "unload_policy": "SAFE_IF_NO_ACTIVE_RUNS",
+  "optional_dependencies": [],
+  "health_check": {
+    "kind": "DECLARATIVE_MANIFEST",
+    "expected": "PASS",
+    "side_effects": false
+  }
+}

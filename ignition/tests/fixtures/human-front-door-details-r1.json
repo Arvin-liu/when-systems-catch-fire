@@ -1,0 +1,12 @@
+{
+  "schema_version": "human-front-door-details-fixtures-r1",
+  "cases": [
+    {"id": "folded-machine-state", "mutation": "none", "expected": "PASS"},
+    {"id": "folded-project-definition", "mutation": "fold-project-definition", "expected": "FAIL"},
+    {"id": "folded-value-charter", "mutation": "fold-value-charter", "expected": "FAIL"},
+    {"id": "folded-project-current", "mutation": "fold-project-current", "expected": "FAIL"},
+    {"id": "folded-results-entry", "mutation": "fold-results-entry", "expected": "FAIL"},
+    {"id": "folded-architecture-entry", "mutation": "fold-architecture-entry", "expected": "FAIL"},
+    {"id": "duplicate-project-current", "mutation": "duplicate-project-current", "expected": "FAIL"}
+  ]
+}
