@@ -1,0 +1,52 @@
+{
+  "schema_version": "ignition-138-step09-second-gate-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "09",
+  "status": "PASS_NO_SECOND_INVOCATION_AUTH_BOUNDARY",
+  "repair": {
+    "specific_defect": "CODEX_HOME_AND_XDG_DECLARED_RUNTIME_DIRECTORIES_MUST_EXIST",
+    "implementation": "RuntimeScratchLease.prepare_runtime_paths",
+    "paths_created": ["CODEX_HOME", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR"],
+    "creation_domain": "ATTEMPT_RUNTIME_SCRATCH_ONLY",
+    "workspace_widened": false,
+    "auth_copied": false,
+    "config_mutated": false,
+    "billing_changed": false
+  },
+  "targeted_tests": {
+    "focused_tests": 30,
+    "live_bridge_tests": 91,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "step08_gate_predicates": {
+    "process_group_confirmed_gone": true,
+    "no_session_pointer": true,
+    "no_structured_result": true,
+    "no_timeout_or_effect_unknown": true,
+    "workspace_unchanged": true,
+    "external_side_effect_observed": false,
+    "specific_repair": true
+  },
+  "auth_boundary": {
+    "prepared_scratch_login_status": "NOT_LOGGED_IN",
+    "public_separate_read_only_auth_source_option": false,
+    "existing_auth_source": "READ_ONLY_REFERENCE_ONLY",
+    "copy_secret": false,
+    "symlink_escape": false,
+    "secret_env_token": false,
+    "relogin_or_config_change": false,
+    "block_reason": "ISOLATED_RUNTIME_CANNOT_PUBLICLY_REFERENCE_EXISTING_AUTH_WITHOUT_REUSING_WRITABLE_CODEX_HOME"
+  },
+  "second_dispatch": {
+    "invoked": false,
+    "status": "FORBIDDEN_AUTH_SOURCE_BOUNDARY",
+    "new_dispatch_id_created": false,
+    "new_attempt_id_created": false
+  },
+  "real_inference_invocation_count": 1,
+  "live_completion_observed": false,
+  "claim_ceiling": "Specific scratch-path repair, hard-gate evaluation and auth-source safety block only; no validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

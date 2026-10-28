@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/agent-profile-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "stable_agent_id", "owner_ref", "authority_refs", "charter_refs", "role",
+    "allowed_capability_classes", "mutable_preference_refs", "update_policy",
+    "memory_policy", "prohibited_self_escalation", "allowed_packs",
+    "preferred_tool_classes", "forbidden_tool_classes", "approval_thresholds",
+    "budget_defaults", "update_authority", "prohibited_authority_upgrades"
+  ],
+  "properties": {
+    "stable_agent_id": {"type": "string", "minLength": 1},
+    "owner_ref": {"type": "string", "minLength": 1},
+    "authority_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "charter_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "role": {"type": "string", "minLength": 1},
+    "allowed_capability_classes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "mutable_preference_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "update_policy": {"type": "string", "minLength": 1},
+    "memory_policy": {"type": "string", "minLength": 1},
+    "prohibited_self_escalation": {"const": true},
+    "allowed_packs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "preferred_tool_classes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "forbidden_tool_classes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "approval_thresholds": {"type": "object", "additionalProperties": {"enum": ["AUTO_ALLOWED_SAFE", "BOUNDED_WRITE_REQUIRES_APPROVAL", "COMMAND_REQUIRES_APPROVAL"]}},
+    "budget_defaults": {"type": "object", "additionalProperties": {"type": "number", "exclusiveMinimum": 0}},
+    "update_authority": {"type": "string", "minLength": 1},
+    "prohibited_authority_upgrades": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  }
+}

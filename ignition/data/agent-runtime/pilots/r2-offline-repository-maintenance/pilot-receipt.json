@@ -1,0 +1,204 @@
+{
+  "adversarial_receipt": "adversarial-receipt.json",
+  "claim_ceiling": "OFFLINE_REPOSITORY_PILOT_OBSERVED_ONLY_NOT_GENERAL_INTELLIGENCE",
+  "episode": {
+    "approval_events": [
+      {
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-audit-findings",
+        "run_id": "audit",
+        "status": "PENDING"
+      },
+      {
+        "authority_type": "synthetic_pilot",
+        "decision": "ALLOW",
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-audit-findings",
+        "run_id": "audit"
+      },
+      {
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-repair-manifest",
+        "run_id": "repair",
+        "status": "PENDING"
+      },
+      {
+        "authority_type": "synthetic_pilot",
+        "decision": "ALLOW",
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-repair-manifest",
+        "run_id": "repair",
+        "status": "CHECKPOINTED_RESUMABLE"
+      },
+      {
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-repair-receipt",
+        "run_id": "repair",
+        "status": "PENDING"
+      },
+      {
+        "authority_type": "synthetic_pilot",
+        "decision": "ALLOW",
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-repair-receipt",
+        "run_id": "repair"
+      },
+      {
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-validate-repository",
+        "run_id": "validate",
+        "status": "PENDING"
+      },
+      {
+        "authority_type": "synthetic_pilot",
+        "decision": "ALLOW",
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "request_id": "approval-validate-repository",
+        "run_id": "validate"
+      }
+    ],
+    "budget_usage": {
+      "actions": 4,
+      "elapsed_seconds": 0.108353,
+      "output_bytes": 246
+    },
+    "checkpoint_count": 1,
+    "children": [
+      {
+        "attempt": 0,
+        "executor_class_id": "local-workspace-executor",
+        "executor_instance_id": "instance-1",
+        "history": [
+          {
+            "attempt": 0,
+            "recorded_at": "2026-08-15T20:24:19Z",
+            "run_dir": "children/audit-8855233a0eba/attempt-0",
+            "state_sha256": "669b0f9cd9395747b53b8bab5f9a260c79e2c4d3de61996b0c519031f17a476a",
+            "status": "WAITING_FOR_APPROVAL",
+            "summary": "a typed external approval is required before this action",
+            "terminal_state": "WAITING_FOR_APPROVAL"
+          }
+        ],
+        "retry_count": 0,
+        "run_id": "audit",
+        "status": "COMPLETED_VALIDATED",
+        "terminal_state": "COMPLETED_VALIDATED"
+      },
+      {
+        "attempt": 0,
+        "executor_class_id": "local-workspace-executor",
+        "executor_instance_id": "repair-executor-instance-2",
+        "history": [
+          {
+            "attempt": 0,
+            "recorded_at": "2026-08-15T20:24:19Z",
+            "run_dir": "children/repair-15b490ee176b/attempt-0",
+            "state_sha256": "5dfba80270255137eac0322c8ee7bc11865f10a68f36b3a2d9f1fc34100a8be3",
+            "status": "WAITING_FOR_APPROVAL",
+            "summary": "a typed external approval is required before this action",
+            "terminal_state": "WAITING_FOR_APPROVAL"
+          },
+          {
+            "attempt": 0,
+            "recorded_at": "2026-08-15T20:24:19Z",
+            "run_dir": "children/repair-15b490ee176b/attempt-0",
+            "state_sha256": "5dfba80270255137eac0322c8ee7bc11865f10a68f36b3a2d9f1fc34100a8be3",
+            "status": "CHECKPOINTED_RESUMABLE",
+            "summary": "child approval path crashed after bounded execution and left a durable checkpoint",
+            "terminal_state": "CHECKPOINTED_RESUMABLE"
+          },
+          {
+            "attempt": 0,
+            "recorded_at": "2026-08-15T20:24:19Z",
+            "run_dir": "children/repair-15b490ee176b/attempt-0",
+            "state_sha256": "a4401d4418cac68e6935426ca53dc025510f057e020260c3a5af2f822565476b",
+            "status": "WAITING_FOR_APPROVAL",
+            "summary": "a typed external approval is required before this action",
+            "terminal_state": "WAITING_FOR_APPROVAL"
+          }
+        ],
+        "retry_count": 0,
+        "run_id": "repair",
+        "status": "COMPLETED_VALIDATED",
+        "terminal_state": "COMPLETED_VALIDATED"
+      },
+      {
+        "attempt": 0,
+        "executor_class_id": "local-workspace-executor",
+        "executor_instance_id": "instance-1",
+        "history": [
+          {
+            "attempt": 0,
+            "recorded_at": "2026-08-15T20:24:19Z",
+            "run_dir": "children/validate-2c9877104bf1/attempt-0",
+            "state_sha256": "aedc31d650cb86bbede2226d3814ba910490c7c7a822fea0d53e75fd30f5c179",
+            "status": "WAITING_FOR_APPROVAL",
+            "summary": "a typed external approval is required before this action",
+            "terminal_state": "WAITING_FOR_APPROVAL"
+          }
+        ],
+        "retry_count": 0,
+        "run_id": "validate",
+        "status": "COMPLETED_VALIDATED",
+        "terminal_state": "COMPLETED_VALIDATED"
+      }
+    ],
+    "handoffs": [
+      {
+        "executor_class_id": "local-workspace-executor",
+        "from_executor_instance_id": "instance-1",
+        "recorded_at": "2026-08-15T20:24:19Z",
+        "run_id": "repair",
+        "to_executor_instance_id": "repair-executor-instance-2"
+      }
+    ],
+    "terminal": {
+      "child_states": {
+        "audit": "COMPLETED_VALIDATED",
+        "repair": "COMPLETED_VALIDATED",
+        "validate": "COMPLETED_VALIDATED"
+      },
+      "episode_id": "r2-offline-repository-maintenance",
+      "event_count": 16,
+      "recorded_at": "2026-08-15T20:24:19Z",
+      "state": "EPISODE_COMPLETED_VALIDATED",
+      "summary": "all dependency-ordered child runs reached COMPLETED_VALIDATED"
+    },
+    "trace_event_types": [
+      "episode_start",
+      "child_start",
+      "episode_stop",
+      "approval_aggregated",
+      "child_start",
+      "episode_stop",
+      "child_checkpoint",
+      "episode_stop",
+      "handoff",
+      "episode_resume",
+      "child_start",
+      "episode_stop",
+      "approval_aggregated",
+      "child_start",
+      "episode_stop",
+      "approval_aggregated",
+      "episode_stop"
+    ]
+  },
+  "fresh_clone": {
+    "clone_head": "36abd0bd17a7fad66413c997158e3a6c064eb7b9",
+    "git_push_invoked": false,
+    "head_match": true,
+    "network_allowed": false,
+    "post_episode_worktree_dirty": true,
+    "prepared_before_supervisor": true,
+    "private_paths_in_receipt": false,
+    "remote_mutation": false,
+    "source_head": "36abd0bd17a7fad66413c997158e3a6c064eb7b9"
+  },
+  "memory": {
+    "capsule": "memory-capsule.json",
+    "failure_and_recovery_recorded": true,
+    "store": "durable-memory.jsonl"
+  },
+  "pilot_id": "r2-offline-repository-maintenance"
+}

@@ -1,0 +1,111 @@
+{
+  "task_id": "IGNITION-20260907-162",
+  "protocol_version": "1.0",
+  "frozen_at": "2026-09-07T13:56:33+08:00",
+  "purpose": "Find legally accessible, book-scale, ordered full text for a preregistered external corpus without using candidate-answer vocabulary.",
+  "search_queries": [
+    "open access textbook full text biology CC BY",
+    "open access textbook full text chemistry CC BY",
+    "open access textbook full text physics CC BY",
+    "open access textbook full text psychology CC BY",
+    "open access textbook full text sociology CC BY",
+    "open access textbook full text economics CC BY",
+    "open access textbook full text calculus CC BY",
+    "open access textbook full text astronomy CC BY",
+    "public domain natural science book full text",
+    "public domain philosophy book full text",
+    "public domain history book full text",
+    "public domain economics book full text",
+    "official open technical handbook full text",
+    "open access doctoral thesis full text systems science"
+  ],
+  "allowed_discovery_backends": [
+    "Agent Reach Exa web search when available",
+    "official publisher or repository index pages",
+    "Project Gutenberg catalog",
+    "Wikisource catalog",
+    "NCBI Bookshelf",
+    "OpenStax catalog",
+    "institutional repository search"
+  ],
+  "source_selection_blindness": {
+    "forbidden_selection_terms": [
+      "transition semantics",
+      "state vs transition",
+      "first-class transition",
+      "BF-X*",
+      "junction invariant",
+      "binding candidate",
+      "V/S/E",
+      "64 meta-protocol",
+      "next leap"
+    ],
+    "answer_materials_not_consulted": [
+      "Task159 conclusions and labels",
+      "Task160 conclusions and residual-family names",
+      "Task161 model definitions, fixtures, scores, and answer key",
+      "Track B candidate labels"
+    ]
+  },
+  "eligibility_rules": {
+    "full_text_required": true,
+    "legal_basis_required": true,
+    "minimum_words": 25000,
+    "minimum_continuous_pages": 100,
+    "technical_manual_equivalence_allowed": true,
+    "must_preserve_order": true,
+    "must_have_chapter_or_section_structure": true,
+    "snippets_or_summaries_only": false,
+    "paywall_or_drm_bypass": false,
+    "shadow_library_or_unauthorized_mirror": false,
+    "copyrighted_fulltext_committed_to_git": false
+  },
+  "domain_buckets": [
+    "natural_sciences_biology_evolution",
+    "engineering_safety_control",
+    "computer_science_distributed_protocols",
+    "economics_institutions_organization",
+    "philosophy_logic_science",
+    "history_social_systems",
+    "cognition_psychology",
+    "mathematics_formal_systems",
+    "ecology_complex_systems"
+  ],
+  "quota_rules": {
+    "target_works": "20-24",
+    "hard_minimum_works": 12,
+    "minimum_domains": 6,
+    "minimum_book_monograph_thesis_scale": 8,
+    "maximum_works_per_domain": 4,
+    "maximum_works_per_author": 2,
+    "target_total_words": 700000,
+    "major_claim_ceiling_below_words": 500000
+  },
+  "fixed_source_order": [
+    "OpenStax official catalog and book files",
+    "Project Gutenberg public-domain catalog",
+    "Wikisource public-domain catalog",
+    "NCBI Bookshelf open full text",
+    "official open technical standards and handbooks",
+    "institutional repositories with explicit open full text"
+  ],
+  "retrieval_policy": {
+    "access_date_is_recorded": true,
+    "content_hash_is_sha256": true,
+    "raw_text_cache_is_task_local": true,
+    "raw_text_cache_is_not_committed_by_default": true,
+    "source_failure_is_recorded": true,
+    "retry_limit": 2,
+    "retrieval_user_agent": "IGNITION-20260907-162-research/1.0"
+  },
+  "analysis_policy": {
+    "source_level_split_frozen_before_induction": true,
+    "original_order_is_primary": true,
+    "chapter_shuffle_seed_is_frozen": true,
+    "fragment_bag_is_token_matched": true,
+    "volume_ladder_prefixes": [0.1, 0.25, 0.5, 0.75, 1.0],
+    "work_accumulation_nodes": [1, 4, 8, 12, 16, 20],
+    "work_order_permutations": 3,
+    "candidate_labels_are_anonymous_until_cross_source_freeze": true
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "ignition-134-step11-current-projection-closure-r1",
+  "task_id": "IGNITION-20260822-134",
+  "step": "11",
+  "status": "PASS",
+  "source_finding": "ignition/data/operations/iterations/134/step10-full-unittest-discovery.json",
+  "repair_scope": "Current Task134-generated function/nonfunction projection drift and its deterministic Current downstream projections",
+  "regenerated_projection_families": {
+    "function_asset_census": {
+      "builder": "ignition/tools/foundation/build_function_asset_census.py",
+      "deep_adjudicator": "ignition/tools/foundation/adjudicate_function_assets.py",
+      "canonical_cards": 5623,
+      "outputs": 13,
+      "census_check": "FUNCTION_ASSET_CENSUS_VALID",
+      "closure_check": "FUNCTION_ASSET_REGISTRY_CLOSURE_VALID CHECKS_TOTAL=46 CHECKS_PASSED=46 CHECKS_FAILED=0"
+    },
+    "nonfunction_claim_closure": {
+      "builder": "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+      "canonical_claims": 16468,
+      "tracked_files_accounted": 4421,
+      "outputs": 14,
+      "generation_check": "NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC files=14",
+      "closure_check": "NONFUNCTION_CLAIM_EVIDENCE_LINEAGE_CLOSURE_VALID CHECKS_TOTAL=54 CHECKS_PASSED=54 CHECKS_FAILED=0"
+    }
+  },
+  "current_projection_chain": {
+    "current_facts": {
+      "json": "ignition/data/architecture/current-facts.json",
+      "markdown": "ignition/docs/architecture/current-facts.md",
+      "check": "CURRENT_FACTS_DETERMINISTIC_OK"
+    },
+    "current_snapshot": {
+      "path": "ignition/data/operations/current-snapshot-r1.json",
+      "check": "CURRENT_SNAPSHOT_DETERMINISTIC_OK"
+    },
+    "compiled_current_surfaces": {
+      "surface_count": 7,
+      "check": "ALL_7_CURRENT_SURFACE_COMPILER_CHECKS_PASS"
+    },
+    "materiality_cycle_breaker": {
+      "rule": "Current Facts fingerprints materiality selection/count/policy while excluding only reciprocal machine_record_sha256 and source_sha256 bookkeeping fields",
+      "regression_test": "test_materiality_fingerprint_ignores_only_reciprocal_hash_fields PASS",
+      "stability_check": "Final Human Surface fingerprint refresh leaves CURRENT_FACTS_DETERMINISTIC_OK"
+    },
+    "state_sync": "CURRENT_STATE_SYNC_OK",
+    "durability_projection_hygiene": "DURABILITY_PROJECTION_HYGIENE_OK"
+  },
+  "human_surface_reaudit": {
+    "audited": 11,
+    "decision": "SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID",
+    "source_revision_semantics": "Current compiler digest only; no human claim text or claim ceiling changed",
+    "machine_record_provenance_only": {
+      "function_source_evidence_ids": ["D127", "D182", "D190", "D260", "T2", "Y1"],
+      "nonfunction_line_anchor_ids": ["NFC-015cfd6ba387c9b1", "NFC-02f68962a6f13abc", "NFC-0331afe8d84f2538", "NFC-14866124cc1a2cae", "NFC-154bdc1ff37c47f6"]
+    },
+    "regeneration_required": 0,
+    "superseded": 0,
+    "actual_semantic_conflict": 0,
+    "fingerprint_refresh": "11 current source and machine fingerprints refreshed only after itemized audit",
+    "contract_check": "HUMAN_SURFACE_CONTRACT_OK human_entries=48 machine_components=94 visible_graph_nodes=82 typed_graph_edges=87"
+  },
+  "current_path_manifest": {
+    "tracked": 2992,
+    "manifest": 2992,
+    "missing": 0,
+    "stale": 0,
+    "unresolved": 0,
+    "category_changed": 0,
+    "anti_backflow": 0
+  },
+  "residual_non_growth": {
+    "ledger_rebuilt": false,
+    "reason": "The Step10 raw full-suite failure remains an explicit release-blocking observation pending the Step12 adversarial classification; existing five residual tuples were not expanded or reset.",
+    "residual_objects_added": 0,
+    "failure_dimensions_added": 0,
+    "ignore_or_skip_added": false
+  },
+  "remaining_findings": {
+    "full_suite_clean_claim": false,
+    "task_identity_migration": "DEFERRED_TO_STEP_13",
+    "human_surface_reaudit": "PASS_11_ITEMIZED_PROVENANCE_ONLY",
+    "historical_propagation": "PRESERVED",
+    "default_environment_sympy": "PRESERVED",
+    "repository_root_cwd_fixture_errors": "PRESERVED_AS_RUNNER_BOUNDARY"
+  },
+  "claim_ceiling": "Repository-local current projection regeneration, closure and path-accounting evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

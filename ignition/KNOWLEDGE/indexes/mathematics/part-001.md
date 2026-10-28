@@ -1,0 +1,2506 @@
+# 数学与形式化：检索索引
+
+引导问题：对象、运算、定义域、证明和反例究竟完成到哪一步？
+
+此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
+
+- ["""A tiny read-only workspace whose lifecycle is explicit and disposable."""](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-94552875618b2be2 / """A tiny read-only workspace whose lifecycle is explicit and disposable."""
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- ["""An adapter does not claim an optional lifecycle operation."""](../../../agent_federation/contracts.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f84c059268ae7a97 / """An adapter does not claim an optional lifecycle operation."""
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- ["""Offline adversarial guards for Task142 lifecycle and executor admission.](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-f7a6c18b82763e50 / """Offline adversarial guards for Task142 lifecycle and executor admission.
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
+- ["""Raised when a live dispatch attempts an unsafe lifecycle transition."""](../../../agent_federation/live_bridge.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-91c14428966d6512 / """Raised when a live dispatch attempts an unsafe lifecycle transition."""
+  - 来源：`agent_federation/live_bridge.py`
+  - 依赖：—；被引用：—
+- ["""Terminate the process group and report signals plus proof status.](../../../agent_federation/live_transport.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-61e6994c3b3f823f / """Terminate the process group and report signals plus proof status.
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
+- ["353 条均已生成 proof obligation；351 条生成 empirical obligation"](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-20f4f9ba9e4bec66 / "353 条均已生成 proof obligation；351 条生成 empirical obligation"
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- ["a completed formal scope cannot remain IN_PROGRESS because an obligation is open",](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f7c739aa70a69c0d / "a completed formal scope cannot remain IN_PROGRESS because an obligation is open",
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
+- ["anchors": \["sec:intro", "sec:framework", "sec:lifecycle", "sec:memory"\],](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3a73ef94c9b235a6 / "anchors": \["sec:intro", "sec:framework", "sec:lifecycle", "sec:memory"\],
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["case_index": repo / "已迁移的历史案例来源/INDEX.md",](../../../inputs/020/validate_formal_protocol.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-97aaf65f37c9f441 / "case_index": repo / "已迁移的历史案例来源/INDEX.md",
+  - 来源：`inputs/020/validate_formal_protocol.py`
+  - 依赖：—；被引用：—
+- ["FORMAL_SEMANTIC_EQUIVALENCE", "EMPIRICAL_PERFORMANCE_SIMILARITY",](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-62a042b4c5841e54 / "FORMAL_SEMANTIC_EQUIVALENCE", "EMPIRICAL_PERFORMANCE_SIMILARITY",
+  - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
+  - 依赖：—；被引用：—
+- ["function_index": repo / "已迁移的历史函数来源/INDEX.md",](../../../inputs/020/validate_formal_protocol.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-38255a74ba0c318c / "function_index": repo / "已迁移的历史函数来源/INDEX.md",
+  - 来源：`inputs/020/validate_formal_protocol.py`
+  - 依赖：—；被引用：—
+- ["ignition/data/operations/formal-task-lifecycle-r1.json",](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-788d519487b81935 / "ignition/data/operations/formal-task-lifecycle-r1.json",
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
+- ["name": "乘法临界漂移函数族",](../../../data/function_dependency.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A9894A5F689145FF / "name": "乘法临界漂移函数族", / IMPLICIT-A9894A5F689145FF
+  - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["name": "函数过度泛化",](../../../data/failure_typology.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0404712F5B4792D6 / "name": "函数过度泛化", / IMPLICIT-0404712F5B4792D6
+  - 来源：`data/failure_typology.json`
+  - 依赖：—；被引用：—
+- ["name": "失败类型与反向修正函数族",](../../../data/function_dependency.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BA3BBA17A90B4972 / "name": "失败类型与反向修正函数族", / IMPLICIT-BA3BBA17A90B4972
+  - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["name": "自举函数族",](../../../data/function_dependency.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5A910DDE2BBD327C / "name": "自举函数族", / IMPLICIT-5A910DDE2BBD327C
+  - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["name": "认知函数族",](../../../data/function_dependency.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EE424AFCEBD19B51 / "name": "认知函数族", / IMPLICIT-EE424AFCEBD19B51
+  - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["name": "证据制度守门函数族",](../../../data/function_dependency.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-133C40817BDDF685 / "name": "证据制度守门函数族", / IMPLICIT-133C40817BDDF685
+  - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["name": "退出权函数族",](../../../data/function_dependency.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F463C912BED692BF / "name": "退出权函数族", / IMPLICIT-F463C912BED692BF
+  - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["name": "门控函数族",](../../../data/function_dependency.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D241E31E6C0A1B01 / "name": "门控函数族", / IMPLICIT-D241E31E6C0A1B01
+  - 来源：`data/function_dependency.json`
+  - 依赖：—；被引用：—
+- ["no-effect proof permits one fresh lineage after target policy and capability re-admission",](../../../agent_federation/live_failover.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-36dbc83c988fac6a / "no-effect proof permits one fresh lineage after target policy and capability re-admission",
+  - 来源：`agent_federation/live_failover.py`
+  - 依赖：—；被引用：—
+- ["note": "Verified via git diff: no changes to 已迁移的历史函数来源/ directory"}](../../../data/external-research/106-105-correction/106-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2135e5407310efa0 / "note": "Verified via git diff: no changes to 已迁移的历史函数来源/ directory"}
+  - 来源：`data/external-research/106-105-correction/106-validator.py`
+  - 依赖：—；被引用：—
+- ["P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e03c43dfc7d07d2 / "P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- ["proof_result",](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-1b5da0a9744c24f1 / "proof_result",
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- ["psi0": repo / "docs/phi_meta_law.md",](../../../inputs/020/validate_formal_protocol.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ab3689b7d0c996e0 / "psi0": repo / "docs/phi_meta_law.md",
+  - 来源：`inputs/020/validate_formal_protocol.py`
+  - 依赖：—；被引用：—
+- ["scope": "Independent implementation replay of scoped algebra/analysis only; no external physics claim is tested.",](../../../formal/sage/function_asset_task99_checks.sage)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf6ede88d339a717 / "scope": "Independent implementation replay of scoped algebra/analysis only; no external physics claim is tested.",
+  - 来源：`formal/sage/function_asset_task99_checks.sage`
+  - 依赖：—；被引用：—
+- ["sections": \["1 Introduction", "2 Refinement Types", "3 Refinement Reflection", "4 Proof by Logical Evaluation", "5 Eval](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-a62a2d37ad0a213b / "sections": \["1 Introduction", "2 Refinement Types", "3 Refinement Reflection", "4 Proof by Logical Evaluation", "5 Eval
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["title": "Core proof and countermodel report",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A6919E6543A7092 / "title": "Core proof and countermodel report", / IMPLICIT-1A6919E6543A7092 / IMPLICIT-1EC4CFF48D305FB7
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "Core proof and countermodel report",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1EC4CFF48D305FB7 / "title": "Core proof and countermodel report", / IMPLICIT-1EC4CFF48D305FB7 / IMPLICIT-1A6919E6543A7092
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators",](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-029.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-367DFCE8C8B8CC00 / "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators", / IMPLICIT-367DFCE8C8B8CC00
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-029.json`
+  - 依赖：—；被引用：—
+- ["title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",](../../../data/operations/iterations/109/dossiers/psd-gap-005.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1759BA0502D2F340 / "title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.", / IMPLICIT-1759BA0502D2F340 / IMPLICIT-7DD2D8A68DFC9641
+  - 来源：`data/operations/iterations/109/dossiers/psd-gap-005.json`
+  - 依赖：—；被引用：—
+- ["title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7DD2D8A68DFC9641 / "title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.", / IMPLICIT-7DD2D8A68DFC9641 / IMPLICIT-1759BA0502D2F340
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DD6B93B90CCB25D8 / "title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.", / IMPLICIT-DD6B93B90CCB25D8 / IMPLICIT-1759BA0502D2F340
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DE698B67F6F2A646 / "title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.", / IMPLICIT-DE698B67F6F2A646 / IMPLICIT-1759BA0502D2F340
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "v0.2 函数依赖图初稿",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2F36ED52A8C62848 / "title": "v0.2 函数依赖图初稿", / IMPLICIT-2F36ED52A8C62848 / IMPLICIT-DC0F63E4FC9323EB
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "v0.2 函数依赖图初稿",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DC0F63E4FC9323EB / "title": "v0.2 函数依赖图初稿", / IMPLICIT-DC0F63E4FC9323EB / IMPLICIT-2F36ED52A8C62848
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "万有理论门槛函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-33B3F0E68BEA7051 / "title": "万有理论门槛函数", / IMPLICIT-33B3F0E68BEA7051 / IMPLICIT-C936B741BF0B7EA8
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "万有理论门槛函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F58F30B70BA2208D / "title": "万有理论门槛函数", / IMPLICIT-F58F30B70BA2208D / IMPLICIT-33B3F0E68BEA7051
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6863127D708BF3CC / "title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。", / IMPLICIT-6863127D708BF3CC / IMPLICIT-B61C724CFE1C709D
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B61C724CFE1C709D / "title": "为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。", / IMPLICIT-B61C724CFE1C709D / IMPLICIT-6863127D708BF3CC
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "偏差敏感度阈值函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E624C84338B9B41 / "title": "偏差敏感度阈值函数", / IMPLICIT-6E624C84338B9B41 / IMPLICIT-6C873D048D8B56BB
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "偏差敏感度阈值函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BB86B6719795F7C4 / "title": "偏差敏感度阈值函数", / IMPLICIT-BB86B6719795F7C4 / IMPLICIT-6C873D048D8B56BB
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "全语料非函数型断言裁决索引",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B55013A0E5148E0E / "title": "全语料非函数型断言裁决索引", / IMPLICIT-B55013A0E5148E0E / IMPLICIT-FCCD25FBA4C2F1D9
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "全语料非函数型断言裁决索引",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FCCD25FBA4C2F1D9 / "title": "全语料非函数型断言裁决索引", / IMPLICIT-FCCD25FBA4C2F1D9 / IMPLICIT-B55013A0E5148E0E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5077B44C7F375A6E / "title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。", / IMPLICIT-5077B44C7F375A6E / IMPLICIT-6E73303D1FFEBDBC
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E73303D1FFEBDBC / "title": "公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。", / IMPLICIT-6E73303D1FFEBDBC / IMPLICIT-5077B44C7F375A6E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产作者指南",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4E24BF2775B8F675 / "title": "函数资产作者指南", / IMPLICIT-4E24BF2775B8F675 / IMPLICIT-58965A451F28012E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产作者指南",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-58965A451F28012E / "title": "函数资产作者指南", / IMPLICIT-58965A451F28012E / IMPLICIT-4E24BF2775B8F675
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产注册表迁移 R2",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-441287CC8A372B6F / "title": "函数资产注册表迁移 R2", / IMPLICIT-441287CC8A372B6F / IMPLICIT-8C23806341FF2200
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产注册表迁移 R2",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8C23806341FF2200 / "title": "函数资产注册表迁移 R2", / IMPLICIT-8C23806341FF2200 / IMPLICIT-441287CC8A372B6F
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产深审",](../../../data/operations/iterations/109/dossiers/OQ-63989.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2C2EB00590E8319F / "title": "函数资产深审", / IMPLICIT-2C2EB00590E8319F / IMPLICIT-3DD3FDA5BAC09E32
+  - 来源：`data/operations/iterations/109/dossiers/OQ-63989.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产深审",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3DD3FDA5BAC09E32 / "title": "函数资产深审", / IMPLICIT-3DD3FDA5BAC09E32 / IMPLICIT-2C2EB00590E8319F
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产深审",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-760BD9357BA99E1B / "title": "函数资产深审", / IMPLICIT-760BD9357BA99E1B / IMPLICIT-2C2EB00590E8319F
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "函数资产深审",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C1313954DA2E9B68 / "title": "函数资产深审", / IMPLICIT-C1313954DA2E9B68 / IMPLICIT-2C2EB00590E8319F
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数后续证明与实证路线图",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E882E1D9162E3201 / "title": "历史函数后续证明与实证路线图", / IMPLICIT-E882E1D9162E3201 / IMPLICIT-F3F3BF3A1C4AD5F2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数后续证明与实证路线图",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F3F3BF3A1C4AD5F2 / "title": "历史函数后续证明与实证路线图", / IMPLICIT-F3F3BF3A1C4AD5F2 / IMPLICIT-E882E1D9162E3201
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产全量登记",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8F2876243D7BBE1E / "title": "历史函数资产全量登记", / IMPLICIT-8F2876243D7BBE1E / IMPLICIT-AAF5690568894BF1
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产全量登记",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AAF5690568894BF1 / "title": "历史函数资产全量登记", / IMPLICIT-AAF5690568894BF1 / IMPLICIT-8F2876243D7BBE1E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产深度裁决与注册表闭合 R1",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0FE430E408A4D4F2 / "title": "历史函数资产深度裁决与注册表闭合 R1", / IMPLICIT-0FE430E408A4D4F2 / IMPLICIT-7B70F795FCBD90DE
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "历史函数资产深度裁决与注册表闭合 R1",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7B70F795FCBD90DE / "title": "历史函数资产深度裁决与注册表闭合 R1", / IMPLICIT-7B70F795FCBD90DE / IMPLICIT-0FE430E408A4D4F2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9DD437F7CA05404A / "title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。", / IMPLICIT-9DD437F7CA05404A / IMPLICIT-F39D28DC9E85A240
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F39D28DC9E85A240 / "title": "哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。", / IMPLICIT-F39D28DC9E85A240 / IMPLICIT-9DD437F7CA05404A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "大统一门槛函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7E289724C94B2215 / "title": "大统一门槛函数", / IMPLICIT-7E289724C94B2215 / IMPLICIT-9AEDC5D84E321B5B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "大统一门槛函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A13946E18521B96D / "title": "大统一门槛函数", / IMPLICIT-A13946E18521B96D / IMPLICIT-7E289724C94B2215
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-349A2D45DAB65E0D / "title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。", / IMPLICIT-349A2D45DAB65E0D / IMPLICIT-7B6E50CC6F0BCC93
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7B6E50CC6F0BCC93 / "title": "对任务 102 排除生成投影回灌后重算的 5,663 个历史函数资产建立 identity card、M/E 双轴、义务、依赖、处置与 quarantine。", / IMPLICIT-7B6E50CC6F0BCC93 / IMPLICIT-349A2D45DAB65E0D
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "强相互作用门控函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5676C0206291621F / "title": "强相互作用门控函数", / IMPLICIT-5676C0206291621F / IMPLICIT-AAD17273924DC20A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "强相互作用门控函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FC16E01FFE3F7849 / "title": "强相互作用门控函数", / IMPLICIT-FC16E01FFE3F7849 / IMPLICIT-5676C0206291621F
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "断言治理与函数身份规范",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5141B6C5279A193B / "title": "断言治理与函数身份规范", / IMPLICIT-5141B6C5279A193B / IMPLICIT-92E564FD0BA63550
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "断言治理与函数身份规范",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-92E564FD0BA63550 / "title": "断言治理与函数身份规范", / IMPLICIT-92E564FD0BA63550 / IMPLICIT-5141B6C5279A193B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "新增函数候选 · 赛课机制下的教师生存困境",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-441DE60524CFDE3C / "title": "新增函数候选 · 赛课机制下的教师生存困境", / IMPLICIT-441DE60524CFDE3C / IMPLICIT-D9331E45CFE417C4
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "新增函数候选 · 赛课机制下的教师生存困境",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D9331E45CFE417C4 / "title": "新增函数候选 · 赛课机制下的教师生存困境", / IMPLICIT-D9331E45CFE417C4 / IMPLICIT-441DE60524CFDE3C
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1BFF457BEAB3940A / "title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。", / IMPLICIT-1BFF457BEAB3940A / IMPLICIT-5D2E4514DB081FFB
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5D2E4514DB081FFB / "title": "点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。", / IMPLICIT-5D2E4514DB081FFB / IMPLICIT-1BFF457BEAB3940A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7AD3CE4E9D35A57A / "title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。", / IMPLICIT-7AD3CE4E9D35A57A / IMPLICIT-850F61215DF6B742
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-850F61215DF6B742 / "title": "点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。", / IMPLICIT-850F61215DF6B742 / IMPLICIT-7AD3CE4E9D35A57A
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "熵增门槛碾压函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63AB821E8E489960 / "title": "熵增门槛碾压函数", / IMPLICIT-63AB821E8E489960 / IMPLICIT-46CC3BDE55D77152
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "熵增门槛碾压函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DD0579BCF8E439D2 / "title": "熵增门槛碾压函数", / IMPLICIT-DD0579BCF8E439D2 / IMPLICIT-46CC3BDE55D77152
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "电弱统一规范破缺函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-192293273AC6A10E / "title": "电弱统一规范破缺函数", / IMPLICIT-192293273AC6A10E / IMPLICIT-26DABA60C710E2E6
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "电弱统一规范破缺函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-26DABA60C710E2E6 / "title": "电弱统一规范破缺函数", / IMPLICIT-26DABA60C710E2E6 / IMPLICIT-192293273AC6A10E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "相对论门槛函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CE939BE90A3DEC1D / "title": "相对论门槛函数", / IMPLICIT-CE939BE90A3DEC1D / IMPLICIT-460AA6F3C1EF3D2E
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "相对论门槛函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D2E943F7C8148C2E / "title": "相对论门槛函数", / IMPLICIT-D2E943F7C8148C2E / IMPLICIT-460AA6F3C1EF3D2E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "经典确定性函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-54050DBB3CB4E918 / "title": "经典确定性函数", / IMPLICIT-54050DBB3CB4E918 / IMPLICIT-093F6C31C7C9037B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "经典确定性函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FD87F48A75095635 / "title": "经典确定性函数", / IMPLICIT-FD87F48A75095635 / IMPLICIT-093F6C31C7C9037B
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "已迁移的历史函数来源/ and 已迁移的历史案例来源/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1923B208C2EEEAB0 / "title": "已迁移的历史函数来源/ and 已迁移的历史案例来源/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren", / IMPLICIT-1923B208C2EEEAB0 / IMPLICIT-FC08F19DF94A445E
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "已迁移的历史函数来源/ and 已迁移的历史案例来源/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FC08F19DF94A445E / "title": "已迁移的历史函数来源/ and 已迁移的历史案例来源/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren", / IMPLICIT-FC08F19DF94A445E / IMPLICIT-1923B208C2EEEAB0
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "认知路径积分函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-61EC53984EAC2720 / "title": "认知路径积分函数", / IMPLICIT-61EC53984EAC2720 / IMPLICIT-7654694796DE8FB2
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "认知路径积分函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7654694796DE8FB2 / "title": "认知路径积分函数", / IMPLICIT-7654694796DE8FB2 / IMPLICIT-61EC53984EAC2720
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数复核",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3BA46CF593E857B / "title": "跨域候选函数复核", / IMPLICIT-C3BA46CF593E857B / IMPLICIT-E9F634430362F097
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数复核",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E9F634430362F097 / "title": "跨域候选函数复核", / IMPLICIT-E9F634430362F097 / IMPLICIT-C3BA46CF593E857B
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数小批量回填审计",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-412797946557FEB2 / "title": "跨域候选函数小批量回填审计", / IMPLICIT-412797946557FEB2 / IMPLICIT-9A3164AB05E107AE
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数小批量回填审计",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9A3164AB05E107AE / "title": "跨域候选函数小批量回填审计", / IMPLICIT-9A3164AB05E107AE / IMPLICIT-412797946557FEB2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数批次收口审计",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8CCDD18A82CC1558 / "title": "跨域候选函数批次收口审计", / IMPLICIT-8CCDD18A82CC1558 / IMPLICIT-F963A390E8E037BA
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "跨域候选函数批次收口审计",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F963A390E8E037BA / "title": "跨域候选函数批次收口审计", / IMPLICIT-F963A390E8E037BA / IMPLICIT-8CCDD18A82CC1558
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "量子力学门槛聚集函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1F7FDB820F19CF5D / "title": "量子力学门槛聚集函数", / IMPLICIT-1F7FDB820F19CF5D / IMPLICIT-1E2BF745D42620E2
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "量子力学门槛聚集函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F8CFE314C57779B0 / "title": "量子力学门槛聚集函数", / IMPLICIT-F8CFE314C57779B0 / IMPLICIT-1E2BF745D42620E2
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "量子引力",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0D183A5B4C89E035 / "title": "量子引力", / IMPLICIT-0D183A5B4C89E035 / IMPLICIT-651069CCAE3D8159
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "门控面合并统一函数",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AD73DE418318FBB0 / "title": "门控面合并统一函数", / IMPLICIT-AD73DE418318FBB0 / IMPLICIT-C25FCCDC531BABA7
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "门控面合并统一函数",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C25FCCDC531BABA7 / "title": "门控面合并统一函数", / IMPLICIT-C25FCCDC531BABA7 / IMPLICIT-AD73DE418318FBB0
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不",](../../../analysis/corpus-relation/corpus_relation_graph.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-290B72F2FDD1805A / "title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不", / IMPLICIT-290B72F2FDD1805A / IMPLICIT-BBEA74C385827CA4
+  - 来源：`analysis/corpus-relation/corpus_relation_graph.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不",](../../../analysis/corpus-relation/article_cluster_candidates.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBEA74C385827CA4 / "title": "非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不", / IMPLICIT-BBEA74C385827CA4 / IMPLICIT-290B72F2FDD1805A
+  - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数断言补证",](../../../data/operations/iterations/109/dossiers/OQ-07366.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-082D1A504924985C / "title": "非函数断言补证", / IMPLICIT-082D1A504924985C / IMPLICIT-2FC584FD36CDD82E
+  - 来源：`data/operations/iterations/109/dossiers/OQ-07366.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数断言补证",](../../../data/operations/iterations/110/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2FC584FD36CDD82E / "title": "非函数断言补证", / IMPLICIT-2FC584FD36CDD82E / IMPLICIT-082D1A504924985C
+  - 来源：`data/operations/iterations/110/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数断言补证",](../../../data/operations/iterations/109/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4470808232D9BC23 / "title": "非函数断言补证", / IMPLICIT-4470808232D9BC23 / IMPLICIT-082D1A504924985C
+  - 来源：`data/operations/iterations/109/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["title": "非函数断言补证",](../../../data/operations/iterations/111/candidate_inventory.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D6FF17770ABD95A / "title": "非函数断言补证", / IMPLICIT-6D6FF17770ABD95A / IMPLICIT-082D1A504924985C
+  - 来源：`data/operations/iterations/111/candidate_inventory.json`
+  - 依赖：—；被引用：—
+- ["what_the_paper_does_not_support": "As a review, it does not introduce new formal composition operators. It does not sol](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-79a7731c68cd062c / "what_the_paper_does_not_support": "As a review, it does not introduce new formal composition operators. It does not sol
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["what_the_paper_does_not_support": "Does not claim the weight artifact is formally verified or provide a precondition/po](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-400c3f7db811ce62 / "what_the_paper_does_not_support": "Does not claim the weight artifact is formally verified or provide a precondition/po
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["what_the_paper_does_not_support": "Parsel relies on a language model and test cases; it does not produce formal precond](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b50b56f87550dcbb / "what_the_paper_does_not_support": "Parsel relies on a language model and test cases; it does not produce formal precond
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["what_the_paper_does_not_support": "Task arithmetic is a post-hoc empirical operation; it does not define a formal algeb](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-54e5c6ad24849231 / "what_the_paper_does_not_support": "Task arithmetic is a post-hoc empirical operation; it does not define a formal algeb
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["what_the_paper_does_not_support": "The survey is taxonomic and does not propose a single formal composition algebra for](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5c2f6e7c14a3b156 / "what_the_paper_does_not_support": "The survey is taxonomic and does not propose a single formal composition algebra for
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["what_the_paper_supports": "Handlers of algebraic effects separate effect signatures from their implementation, providin](../../../scripts/external-research/121_generate_evidence_cards.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-85680313d98637c6 / "what_the_paper_supports": "Handlers of algebraic effects separate effect signatures from their implementation, providin
+  - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- ["不务正业的兴趣可能成为未来专业"验证了ε函数的核心理念——状态可分辨度最高的那个方向，往往是最有潜力的方向。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ea2aa33e79ebbfa9 / "不务正业的兴趣可能成为未来专业"验证了ε函数的核心理念——状态可分辨度最高的那个方向，往往是最有潜力的方向。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- ["哥德尔不完备性定理已被证明"（这是数学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a5417bd223118bb5 / "哥德尔不完备性定理已被证明"（这是数学界的共识，点火框架只是重述）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- ["四种基本力统一"容易被误读为已解决（实际是 pending）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-304bb98d0da64f44 / "四种基本力统一"容易被误读为已解决（实际是 pending）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- ["四种基本力统一"必须标记为 pending，除非能给出外部物理理论和实验验证](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aa77e1174080a824 / "四种基本力统一"必须标记为 pending，除非能给出外部物理理论和实验验证
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- ["它证明了复杂系统的一般规律。"](../../../docs/author_motivation_and_boundary_note.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ecb95e4bacb43853 / "它证明了复杂系统的一般规律。"
+  - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
+- ["强标签在缺少 artifact/证据时被默认降级或设为未证明"](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-92b3623b04b329fa / "强标签在缺少 artifact/证据时被默认降级或设为未证明"
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- ["机制表达" vs 旧"数学表达"命名冲突。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5cc3e47e121771c8 / "机制表达" vs 旧"数学表达"命名冲突。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- ["点火框架映射"字段：需要更清晰的 L0-L5 标注，避免混淆结构性推论和外部证明](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-8f651fa60616c78b / "点火框架映射"字段：需要更清晰的 L0-L5 标注，避免混淆结构性推论和外部证明
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- ["物理大一统不可能"容易被误读为物理学 no-go theorem（实际是结构性边界推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0446920d2988dc15 / "物理大一统不可能"容易被误读为物理学 no-go theorem（实际是结构性边界推论）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- ["物理大一统不可能"必须降级为"关于绝对完备统一的结构性边界推论"，不能写成物理学 no-go theorem](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bb076e9f690fdb4d / "物理大一统不可能"必须降级为"关于绝对完备统一的结构性边界推论"，不能写成物理学 no-go theorem
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- ["矛盾转化为认知升级契机"验证了自举元函数的核心判定逻辑——J⁺=1,J⁻=0为真，J⁺=0,J⁻=1为假，J⁺=J⁻=0为认知局限信号（需要升级框架）。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2f7bc6000fc2cc88 / "矛盾转化为认知升级契机"验证了自举元函数的核心判定逻辑——J⁺=1,J⁻=0为真，J⁺=0,J⁻=1为假，J⁺=J⁻=0为认知局限信号（需要升级框架）。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- ["这是一个边界意识较强的结构性推论工作台。"](../../../docs/author_motivation_and_boundary_note.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3c26164728dd86a7 / "这是一个边界意识较强的结构性推论工作台。"
+  - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
+- ["门控面合并"只能作为结构性推论或候选机制，不能写成物理机制](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e42694374ee0886 / "门控面合并"只能作为结构性推论或候选机制，不能写成物理机制
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- ["门控面合并"容易被误读为物理机制（实际是候选机制）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-13e0a1dd532df066 / "门控面合并"容易被误读为物理机制（实际是候选机制）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- ["黎曼猜想未被证明"（这是数学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c71e0905ddba0e7e / "黎曼猜想未被证明"（这是数学界的共识，点火框架只是重述）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [# C-0715｜凯利公式的认知边界](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-112A664B455B7E81 / # C-0715｜凯利公式的认知边界 / IMPLICIT-112A664B455B7E81
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [# Chapter 04 Evidence Binder：函数与断言治理发现了什么](../../../data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-04.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9BA39232D2EAE230 / # Chapter 04 Evidence Binder：函数与断言治理发现了什么 / IMPLICIT-9BA39232D2EAE230
+  - 来源：`data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-04.md`
+  - 依赖：—；被引用：—
+- [# Core proof and countermodel report](../../../reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1BB841CD137A2F25 / # Core proof and countermodel report / IMPLICIT-1BB841CD137A2F25
+  - 来源：`reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md`
+  - 依赖：—；被引用：—
+- [# DXXX 函数名称](../../../templates/two-tables/unified-function-entry-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6B90B1E3DC9476A7 / # DXXX 函数名称 / IMPLICIT-6B90B1E3DC9476A7
+  - 来源：`templates/two-tables/unified-function-entry-template.md`
+  - 依赖：—；被引用：—
+- [# Synthetic Legacy Theorem Example \(TEST FIXTURE — NOT a real 120 asset\)](../../../function-os-candidate/v0.2/tests/fixtures/legacy_theorem_example.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-23A47EB2C476D728 / # Synthetic Legacy Theorem Example \(TEST FIXTURE — NOT a real 120 asset\) / IMPLICIT-23A47EB2C476D728
+  - 来源：`function-os-candidate/v0.2/tests/fixtures/legacy_theorem_example.md`
+  - 依赖：—；被引用：—
+- [# v0.2 函数依赖图初稿](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-016581D245F5D097 / # v0.2 函数依赖图初稿 / IMPLICIT-016581D245F5D097
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [# 函数与断言裁决总结](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-102C8B9DBD00FF0B / # 函数与断言裁决总结 / IMPLICIT-102C8B9DBD00FF0B
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
+- [# 函数依赖图](../../../docs/function_dependency_map.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-115AE661D4B2CC95 / # 函数依赖图 / IMPLICIT-115AE661D4B2CC95
+  - 来源：`docs/function_dependency_map.md`
+  - 依赖：—；被引用：—
+- [# 函数依赖审查模板](../../../docs/templates/function_dependency_review.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-72C8307AA0F369AE / # 函数依赖审查模板 / IMPLICIT-72C8307AA0F369AE
+  - 来源：`docs/templates/function_dependency_review.md`
+  - 依赖：—；被引用：—
+- [# 函数资产作者指南](../../../docs/foundation/function-asset-authoring-guide.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8F0524862508E90B / # 函数资产作者指南 / IMPLICIT-8F0524862508E90B
+  - 来源：`docs/foundation/function-asset-authoring-guide.md`
+  - 依赖：—；被引用：—
+- [# 函数资产注册表迁移 R2](../../../docs/foundation/function-asset-registry-migration-r2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-33A270AC5AA7661D / # 函数资产注册表迁移 R2 / IMPLICIT-33A270AC5AA7661D
+  - 来源：`docs/foundation/function-asset-registry-migration-r2.md`
+  - 依赖：—；被引用：—
+- [# 历史函数后续证明与实证路线图](../../../docs/foundation/function-audit-roadmap.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0E46AC70CB54B028 / # 历史函数后续证明与实证路线图 / IMPLICIT-0E46AC70CB54B028
+  - 来源：`docs/foundation/function-audit-roadmap.md`
+  - 依赖：—；被引用：—
+- [# 历史函数资产全量登记](../../../docs/foundation/historical-function-census.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-79C4ED9A0B2D6474 / # 历史函数资产全量登记 / IMPLICIT-79C4ED9A0B2D6474
+  - 来源：`docs/foundation/historical-function-census.md`
+  - 依赖：—；被引用：—
+- [# 历史函数资产深度裁决与注册表闭合 R1](../../../docs/foundation/historical-function-deep-adjudication-20260729.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-597D4F3AC80EB79B / # 历史函数资产深度裁决与注册表闭合 R1 / IMPLICIT-597D4F3AC80EB79B
+  - 来源：`docs/foundation/historical-function-deep-adjudication-20260729.md`
+  - 依赖：—；被引用：—
+- [# 得到大脑函数候选输出模板](../../../templates/two-tables/getbrain-candidate-output-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8B42947FF638E47E / # 得到大脑函数候选输出模板 / IMPLICIT-8B42947FF638E47E
+  - 来源：`templates/two-tables/getbrain-candidate-output-template.md`
+  - 依赖：—；被引用：—
+- [# 断言治理与函数身份规范](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F5AAA6B69B11D5E6 / # 断言治理与函数身份规范 / IMPLICIT-F5AAA6B69B11D5E6
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [# 新增函数候选 · 赛课机制下的教师生存困境](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AF7FDFA925CD05A8 / # 新增函数候选 · 赛课机制下的教师生存困境 / IMPLICIT-AF7FDFA925CD05A8
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
+  - 依赖：—；被引用：—
+- [# 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7282DE1962865265 / # 统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条） / IMPLICIT-7282DE1962865265
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [# 跨域候选函数复核](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6FD063FD5C88412C / # 跨域候选函数复核 / IMPLICIT-6FD063FD5C88412C
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [# 跨域候选函数小批量回填审计](../../../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F273003F1097DA7E / # 跨域候选函数小批量回填审计 / IMPLICIT-F273003F1097DA7E
+  - 来源：`outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [# 跨域候选函数批次收口审计](../../../outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0A8EA050AB999331 / # 跨域候选函数批次收口审计 / IMPLICIT-0A8EA050AB999331
+  - 来源：`outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [## 2. 元函数体系理解（Ψ₀）](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1AF393FA934AB28C / ## 2. 元函数体系理解（Ψ₀） / IMPLICIT-1AF393FA934AB28C
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [## 2026-09-08 — IGNITION-20260908-166 — formal research-chain mainline integration \[OPERATIONAL_RECORD_ONLY\]](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F497ECBB77440E43 / ## 2026-09-08 — IGNITION-20260908-166 — formal research-chain mainline integration \[OPERATIONAL_RECORD_ONLY\] / IMPLICIT-F497ECBB77440E43
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [## 6. 对应函数](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C4C1EDFD9BF150DE / ## 6. 对应函数 / IMPLICIT-C4C1EDFD9BF150DE
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [## 9. 与已有函数关系](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DB1632A39F4D405A / ## 9. 与已有函数关系 / IMPLICIT-DB1632A39F4D405A
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [## d127 — 认知路径积分函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-54E42E37590A9FA7 / ## d127 — 认知路径积分函数 / IMPLICIT-54E42E37590A9FA7
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d182 — 经典确定性函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-38DF3963AE52E0E8 / ## d182 — 经典确定性函数 / IMPLICIT-38DF3963AE52E0E8
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d183 — 门控面合并统一函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-68F3324C88312BD3 / ## d183 — 门控面合并统一函数 / IMPLICIT-68F3324C88312BD3
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d184 — 熵增门槛碾压函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B34FFC81084817A5 / ## d184 — 熵增门槛碾压函数 / IMPLICIT-B34FFC81084817A5
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d185 — 相对论门槛函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1B00C13FA4D457B7 / ## d185 — 相对论门槛函数 / IMPLICIT-1B00C13FA4D457B7
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d186 — 量子力学门槛聚集函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BAE069A7F5A21B23 / ## d186 — 量子力学门槛聚集函数 / IMPLICIT-BAE069A7F5A21B23
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d187 — 电弱统一规范破缺函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-80CA33D4650E7DDE / ## d187 — 电弱统一规范破缺函数 / IMPLICIT-80CA33D4650E7DDE
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d188 — 强相互作用门控函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F892DBD963D4D0E8 / ## d188 — 强相互作用门控函数 / IMPLICIT-F892DBD963D4D0E8
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d189 — 大统一门槛函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9B57A51F8ADA431C / ## d189 — 大统一门槛函数 / IMPLICIT-9B57A51F8ADA431C
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d190 — 万有理论门槛函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4BF75E027D11A813 / ## d190 — 万有理论门槛函数 / IMPLICIT-4BF75E027D11A813
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## d260 — 偏差敏感度阈值函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-94BEA1FF86F1D6B7 / ## d260 — 偏差敏感度阈值函数 / IMPLICIT-94BEA1FF86F1D6B7
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## Formal task terminality and open-obligation separation R1](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C1C225D3C9A2ACD / ## Formal task terminality and open-obligation separation R1 / IMPLICIT-0C1C225D3C9A2ACD
+  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
+- [## hr-2bf3c3a1ac552110 — 历史函数资产深度裁决与注册表闭合 R1](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F970DB3660F2395D / ## hr-2bf3c3a1ac552110 — 历史函数资产深度裁决与注册表闭合 R1 / IMPLICIT-F970DB3660F2395D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## hr-7a5aa67ff65f918e — Core proof and countermodel report](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E25D92C642D6A3B2 / ## hr-7a5aa67ff65f918e — Core proof and countermodel report / IMPLICIT-E25D92C642D6A3B2
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-51495C393CA36D98 / ## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。 / IMPLICIT-51495C393CA36D98 / IMPLICIT-E84097B9E41B8A35
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E84097B9E41B8A35 / ## nfc-00b4be17fb8dc706 — 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。 / IMPLICIT-E84097B9E41B8A35 / IMPLICIT-51495C393CA36D98
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-390d533e6aa565c0 — 已迁移的历史函数来源/ and 已迁移的历史案例来源/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F0C104CC21CA5C5D / ## nfc-390d533e6aa565c0 — 已迁移的历史函数来源/ and 已迁移的历史案例来源/ are immutable legacy sources and compatibility views. Never use their hand-written headers as curren / IMPLICIT-F0C104CC21CA5C5D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-65603E822888F1AC / ## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。 / IMPLICIT-65603E822888F1AC / IMPLICIT-C8814B697FC98DCF
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。](../../../analysis/corpus-relation/cluster_source_briefs/C007.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C8814B697FC98DCF / ## nfc-3d9ffb2206406fcc — 为全部恢复的结果/文章来源生成统一卡片和 1 分钟、5 分钟、完整阅读，并为全部函数/断言 registry 建立可回链来源、状态、依赖、反向依赖和历史的分片搜索索引。 / IMPLICIT-C8814B697FC98DCF / IMPLICIT-65603E822888F1AC
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C007.md`
+  - 依赖：—；被引用：—
+- [## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4EE390E4BA7AA26D / ## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。 / IMPLICIT-4EE390E4BA7AA26D / IMPLICIT-BC08F76ACE7EA84D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](../../../analysis/corpus-relation/cluster_source_briefs/C001.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BC08F76ACE7EA84D / ## nfc-61546854af53780b — 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。 / IMPLICIT-BC08F76ACE7EA84D / IMPLICIT-4EE390E4BA7AA26D
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C001.md`
+  - 依赖：—；被引用：—
+- [## nfc-7ba5ae6b5efe40a7 — 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。](../../../analysis/corpus-relation/cluster_source_briefs/C005.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-11F63EC47268D283 / ## nfc-7ba5ae6b5efe40a7 — 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。 / IMPLICIT-11F63EC47268D283
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C005.md`
+  - 依赖：—；被引用：—
+- [## 一、Ψ₀ 元函数核心定义](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1840B7314CE2D16F / ## 一、Ψ₀ 元函数核心定义 / IMPLICIT-1840B7314CE2D16F / IMPLICIT-6DAECB8CF8BDC6C7
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [## 一、Ψ₀ 元函数核心定义](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6DAECB8CF8BDC6C7 / ## 一、Ψ₀ 元函数核心定义 / IMPLICIT-6DAECB8CF8BDC6C7 / IMPLICIT-1840B7314CE2D16F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 一、Ψ₀ 元函数的核心定义](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F63CD5047FD80964 / ## 一、Ψ₀ 元函数的核心定义 / IMPLICIT-F63CD5047FD80964
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 一、函数层级定义](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5449028ED5585E49 / ## 一、函数层级定义 / IMPLICIT-5449028ED5585E49
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [## 七个函数层级](../../../docs/function_dependency_map.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FBDBB0AB556550FE / ## 七个函数层级 / IMPLICIT-FBDBB0AB556550FE
+  - 来源：`docs/function_dependency_map.md`
+  - 依赖：—；被引用：—
+- [## 三、修改内容（仅同步，未改函数/案例内容、未重新编号）](../../../outputs/audit/two-tables-version-sync-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-996DD7C6138D5501 / ## 三、修改内容（仅同步，未改函数/案例内容、未重新编号） / IMPLICIT-996DD7C6138D5501
+  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [## 三、跨域同构函数映射](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4A3CFF94E7AB00D8 / ## 三、跨域同构函数映射 / IMPLICIT-4A3CFF94E7AB00D8
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [## 与函数系统的关系](../../../docs/failure_typology.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9DEC4A148C694CB5 / ## 与函数系统的关系 / IMPLICIT-9DEC4A148C694CB5
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
+- [## 与已有函数关系](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0EE93B40224257D5 / ## 与已有函数关系 / IMPLICIT-0EE93B40224257D5 / IMPLICIT-30463DF445399DF7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 与已有函数关系](../../../templates/two-tables/unified-function-entry-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-30463DF445399DF7 / ## 与已有函数关系 / IMPLICIT-30463DF445399DF7 / IMPLICIT-0EE93B40224257D5
+  - 来源：`templates/two-tables/unified-function-entry-template.md`
+  - 依赖：—；被引用：—
+- [## 与已有函数关系](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6BFF4928CDFF1AAB / ## 与已有函数关系 / IMPLICIT-6BFF4928CDFF1AAB / IMPLICIT-0EE93B40224257D5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 与已有函数关系](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8F688CF9452D9C78 / ## 与已有函数关系 / IMPLICIT-8F688CF9452D9C78 / IMPLICIT-0EE93B40224257D5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 与已有函数关系](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-92E5C68894AA874B / ## 与已有函数关系 / IMPLICIT-92E5C68894AA874B / IMPLICIT-0EE93B40224257D5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 与已有函数关系](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D0796E06207BABE2 / ## 与已有函数关系 / IMPLICIT-D0796E06207BABE2 / IMPLICIT-0EE93B40224257D5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 主要函数族](../../../docs/function_dependency_map.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F3072F007667AADB / ## 主要函数族 / IMPLICIT-F3072F007667AADB
+  - 来源：`docs/function_dependency_map.md`
+  - 依赖：—；被引用：—
+- [## 二、边界扩展候选（不新增编号，回写已有函数）](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B45EF2E2257997BB / ## 二、边界扩展候选（不新增编号，回写已有函数） / IMPLICIT-B45EF2E2257997BB
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
+  - 依赖：—；被引用：—
+- [## 五、函数新增判定标准](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0B79B7A273DD758D / ## 五、函数新增判定标准 / IMPLICIT-0B79B7A273DD758D
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [## 使用函数范围](../../../templates/collision/task-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2122923192C17BD7 / ## 使用函数范围 / IMPLICIT-2122923192C17BD7 / IMPLICIT-2A60F405FDD72912
+  - 来源：`templates/collision/task-template.md`
+  - 依赖：—；被引用：—
+- [## 使用函数范围](../../../outputs/collisions/20260708-smoke-test/source-snapshot.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2A60F405FDD72912 / ## 使用函数范围 / IMPLICIT-2A60F405FDD72912 / IMPLICIT-2122923192C17BD7
+  - 来源：`outputs/collisions/20260708-smoke-test/source-snapshot.md`
+  - 依赖：—；被引用：—
+- [## 使用函数范围](../../../inputs/collisions/20260708-teacher-competition/task.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F2A5A541542F60E0 / ## 使用函数范围 / IMPLICIT-F2A5A541542F60E0 / IMPLICIT-2122923192C17BD7
+  - 来源：`inputs/collisions/20260708-teacher-competition/task.md`
+  - 依赖：—；被引用：—
+- [## 使用函数范围](../../../inputs/collisions/20260708-smoke-test/task.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FB6A1281AE1E30A8 / ## 使用函数范围 / IMPLICIT-FB6A1281AE1E30A8 / IMPLICIT-2122923192C17BD7
+  - 来源：`inputs/collisions/20260708-smoke-test/task.md`
+  - 依赖：—；被引用：—
+- [## 依赖的上游函数](../../../docs/templates/function_dependency_review.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-85C83F56F4FCC9A3 / ## 依赖的上游函数 / IMPLICIT-85C83F56F4FCC9A3
+  - 来源：`docs/templates/function_dependency_review.md`
+  - 依赖：—；被引用：—
+- [## 六、Ψ₀ 元函数完整结构](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-430117FE3C1EEFCE / ## 六、Ψ₀ 元函数完整结构 / IMPLICIT-430117FE3C1EEFCE / IMPLICIT-D3E67DE964166C25
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 六、Ψ₀ 元函数完整结构](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D3E67DE964166C25 / ## 六、Ψ₀ 元函数完整结构 / IMPLICIT-D3E67DE964166C25 / IMPLICIT-430117FE3C1EEFCE
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [## 六、函数依赖图可视化建议](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F4E3180B49550D5F / ## 六、函数依赖图可视化建议 / IMPLICIT-F4E3180B49550D5F
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0026301F130FD562 / ## 关联函数 / Related Functions / IMPLICIT-0026301F130FD562 / IMPLICIT-0649C9DC22511FAE
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0649C9DC22511FAE / ## 关联函数 / Related Functions / IMPLICIT-0649C9DC22511FAE / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-07433F0B1FB54C89 / ## 关联函数 / Related Functions / IMPLICIT-07433F0B1FB54C89 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0744E7E071CC5A80 / ## 关联函数 / Related Functions / IMPLICIT-0744E7E071CC5A80 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-07E768ABEF4F987B / ## 关联函数 / Related Functions / IMPLICIT-07E768ABEF4F987B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0EACEEA8E2EBBCA4 / ## 关联函数 / Related Functions / IMPLICIT-0EACEEA8E2EBBCA4 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0F6D8FA0C8160A85 / ## 关联函数 / Related Functions / IMPLICIT-0F6D8FA0C8160A85 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-105E1DD8C135C82B / ## 关联函数 / Related Functions / IMPLICIT-105E1DD8C135C82B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1519C4A3ECF3F3E7 / ## 关联函数 / Related Functions / IMPLICIT-1519C4A3ECF3F3E7 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1AC27BE5D47D0F92 / ## 关联函数 / Related Functions / IMPLICIT-1AC27BE5D47D0F92 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1C1A827A6069D3CA / ## 关联函数 / Related Functions / IMPLICIT-1C1A827A6069D3CA / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1C3CA443B45D6963 / ## 关联函数 / Related Functions / IMPLICIT-1C3CA443B45D6963 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1EA70860BD521543 / ## 关联函数 / Related Functions / IMPLICIT-1EA70860BD521543 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1EE77EAC305E6C6E / ## 关联函数 / Related Functions / IMPLICIT-1EE77EAC305E6C6E / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1FE024FC55111479 / ## 关联函数 / Related Functions / IMPLICIT-1FE024FC55111479 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2002AA1824B04F5C / ## 关联函数 / Related Functions / IMPLICIT-2002AA1824B04F5C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-20063319D3E131C1 / ## 关联函数 / Related Functions / IMPLICIT-20063319D3E131C1 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-201DCADADA7DC40A / ## 关联函数 / Related Functions / IMPLICIT-201DCADADA7DC40A / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-227790B94B926F27 / ## 关联函数 / Related Functions / IMPLICIT-227790B94B926F27 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-22A8AB31EFB0CF6E / ## 关联函数 / Related Functions / IMPLICIT-22A8AB31EFB0CF6E / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-24F4650397764B9F / ## 关联函数 / Related Functions / IMPLICIT-24F4650397764B9F / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-27787C91FA40C122 / ## 关联函数 / Related Functions / IMPLICIT-27787C91FA40C122 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-28E762A9211D2E17 / ## 关联函数 / Related Functions / IMPLICIT-28E762A9211D2E17 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2E57422C68230317 / ## 关联函数 / Related Functions / IMPLICIT-2E57422C68230317 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2E7F5308F19FF88C / ## 关联函数 / Related Functions / IMPLICIT-2E7F5308F19FF88C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2F18D32F72B8B95B / ## 关联函数 / Related Functions / IMPLICIT-2F18D32F72B8B95B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-301CD9C58506CA06 / ## 关联函数 / Related Functions / IMPLICIT-301CD9C58506CA06 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3245657EE5BF46A1 / ## 关联函数 / Related Functions / IMPLICIT-3245657EE5BF46A1 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-32812781ECCC4A47 / ## 关联函数 / Related Functions / IMPLICIT-32812781ECCC4A47 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-36048382F2F512DE / ## 关联函数 / Related Functions / IMPLICIT-36048382F2F512DE / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-364787373B2C0089 / ## 关联函数 / Related Functions / IMPLICIT-364787373B2C0089 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-36CD57D822FF727D / ## 关联函数 / Related Functions / IMPLICIT-36CD57D822FF727D / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-36D381088F44FEA6 / ## 关联函数 / Related Functions / IMPLICIT-36D381088F44FEA6 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-390E3F6EE27BBDB5 / ## 关联函数 / Related Functions / IMPLICIT-390E3F6EE27BBDB5 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3A44AF5A2A72CAA4 / ## 关联函数 / Related Functions / IMPLICIT-3A44AF5A2A72CAA4 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3B7C152DEF4360B9 / ## 关联函数 / Related Functions / IMPLICIT-3B7C152DEF4360B9 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3EEDF72AA8FB2895 / ## 关联函数 / Related Functions / IMPLICIT-3EEDF72AA8FB2895 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3FF61F60F39B5E42 / ## 关联函数 / Related Functions / IMPLICIT-3FF61F60F39B5E42 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4241B403B4D882A3 / ## 关联函数 / Related Functions / IMPLICIT-4241B403B4D882A3 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-42A107DE34F0BFCC / ## 关联函数 / Related Functions / IMPLICIT-42A107DE34F0BFCC / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-455E0F6B6C1F72BD / ## 关联函数 / Related Functions / IMPLICIT-455E0F6B6C1F72BD / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-46070001AE943B28 / ## 关联函数 / Related Functions / IMPLICIT-46070001AE943B28 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4639F2E97402F260 / ## 关联函数 / Related Functions / IMPLICIT-4639F2E97402F260 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4CE36FBC0B44B7EB / ## 关联函数 / Related Functions / IMPLICIT-4CE36FBC0B44B7EB / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4CEFADBF68EE3C07 / ## 关联函数 / Related Functions / IMPLICIT-4CEFADBF68EE3C07 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4EACA4CBA14105FA / ## 关联函数 / Related Functions / IMPLICIT-4EACA4CBA14105FA / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-51ACAC2D2CC1131E / ## 关联函数 / Related Functions / IMPLICIT-51ACAC2D2CC1131E / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-52A79C887A08E473 / ## 关联函数 / Related Functions / IMPLICIT-52A79C887A08E473 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-548AD48BBE5D96E5 / ## 关联函数 / Related Functions / IMPLICIT-548AD48BBE5D96E5 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-565A0B01DD1E7502 / ## 关联函数 / Related Functions / IMPLICIT-565A0B01DD1E7502 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-591CB59C71C4B7E6 / ## 关联函数 / Related Functions / IMPLICIT-591CB59C71C4B7E6 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5BB81799668359F7 / ## 关联函数 / Related Functions / IMPLICIT-5BB81799668359F7 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5DEA7BDCF5C8BBF6 / ## 关联函数 / Related Functions / IMPLICIT-5DEA7BDCF5C8BBF6 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-68B2148E6EA7E743 / ## 关联函数 / Related Functions / IMPLICIT-68B2148E6EA7E743 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6A75C0C9E95F3DA5 / ## 关联函数 / Related Functions / IMPLICIT-6A75C0C9E95F3DA5 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6B664B9796D324E0 / ## 关联函数 / Related Functions / IMPLICIT-6B664B9796D324E0 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6B8FF89FDDCCB619 / ## 关联函数 / Related Functions / IMPLICIT-6B8FF89FDDCCB619 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6C70B6A856EE5807 / ## 关联函数 / Related Functions / IMPLICIT-6C70B6A856EE5807 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D15FB5A9994C4EA / ## 关联函数 / Related Functions / IMPLICIT-6D15FB5A9994C4EA / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6D7E7022FE721125 / ## 关联函数 / Related Functions / IMPLICIT-6D7E7022FE721125 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6F5FDF54D80E3D2F / ## 关联函数 / Related Functions / IMPLICIT-6F5FDF54D80E3D2F / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7161C839D2F066BA / ## 关联函数 / Related Functions / IMPLICIT-7161C839D2F066BA / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-726D97301BD63229 / ## 关联函数 / Related Functions / IMPLICIT-726D97301BD63229 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-72CD9065CC4F1DDD / ## 关联函数 / Related Functions / IMPLICIT-72CD9065CC4F1DDD / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-743E037F4C744AF9 / ## 关联函数 / Related Functions / IMPLICIT-743E037F4C744AF9 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-75ECA4FFCFDD1A3A / ## 关联函数 / Related Functions / IMPLICIT-75ECA4FFCFDD1A3A / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-76E3BD414BFC8222 / ## 关联函数 / Related Functions / IMPLICIT-76E3BD414BFC8222 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-78FE303154C98074 / ## 关联函数 / Related Functions / IMPLICIT-78FE303154C98074 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C08D6401689ACE2 / ## 关联函数 / Related Functions / IMPLICIT-7C08D6401689ACE2 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7D1E0B1D9482A5D6 / ## 关联函数 / Related Functions / IMPLICIT-7D1E0B1D9482A5D6 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7E316C485E26B13D / ## 关联函数 / Related Functions / IMPLICIT-7E316C485E26B13D / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7F38B8E6A04EF706 / ## 关联函数 / Related Functions / IMPLICIT-7F38B8E6A04EF706 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-815C6461DC8B6A5B / ## 关联函数 / Related Functions / IMPLICIT-815C6461DC8B6A5B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-89B948BE7955B64F / ## 关联函数 / Related Functions / IMPLICIT-89B948BE7955B64F / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8A264819D2973940 / ## 关联函数 / Related Functions / IMPLICIT-8A264819D2973940 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8B276E59496AA2F7 / ## 关联函数 / Related Functions / IMPLICIT-8B276E59496AA2F7 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8B982D31F6010C8E / ## 关联函数 / Related Functions / IMPLICIT-8B982D31F6010C8E / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8BBFFADD68D503F8 / ## 关联函数 / Related Functions / IMPLICIT-8BBFFADD68D503F8 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8E0A5E985CB7AB59 / ## 关联函数 / Related Functions / IMPLICIT-8E0A5E985CB7AB59 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-91547F02434CAD49 / ## 关联函数 / Related Functions / IMPLICIT-91547F02434CAD49 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9343BA50DCFF6DE6 / ## 关联函数 / Related Functions / IMPLICIT-9343BA50DCFF6DE6 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-948B341D3D5AD0EA / ## 关联函数 / Related Functions / IMPLICIT-948B341D3D5AD0EA / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-95373A07149F87CB / ## 关联函数 / Related Functions / IMPLICIT-95373A07149F87CB / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-96B0D98EAD8A497C / ## 关联函数 / Related Functions / IMPLICIT-96B0D98EAD8A497C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-98590738D8F27EE7 / ## 关联函数 / Related Functions / IMPLICIT-98590738D8F27EE7 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9C1BA92630BB400C / ## 关联函数 / Related Functions / IMPLICIT-9C1BA92630BB400C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A5154D2A83CC52FC / ## 关联函数 / Related Functions / IMPLICIT-A5154D2A83CC52FC / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A74DDB7F7587CB1B / ## 关联函数 / Related Functions / IMPLICIT-A74DDB7F7587CB1B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AB177EBEC1562BA2 / ## 关联函数 / Related Functions / IMPLICIT-AB177EBEC1562BA2 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B0D36EDDAEC9534B / ## 关联函数 / Related Functions / IMPLICIT-B0D36EDDAEC9534B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B22661C48C0A0950 / ## 关联函数 / Related Functions / IMPLICIT-B22661C48C0A0950 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B2832092A1A6362E / ## 关联函数 / Related Functions / IMPLICIT-B2832092A1A6362E / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B36AB62D5C9C6E47 / ## 关联函数 / Related Functions / IMPLICIT-B36AB62D5C9C6E47 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B43339CBC8C1AB94 / ## 关联函数 / Related Functions / IMPLICIT-B43339CBC8C1AB94 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BB55E36C430FC0CD / ## 关联函数 / Related Functions / IMPLICIT-BB55E36C430FC0CD / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BC769174AAEF1CDC / ## 关联函数 / Related Functions / IMPLICIT-BC769174AAEF1CDC / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C0CEAEAE7232C3C1 / ## 关联函数 / Related Functions / IMPLICIT-C0CEAEAE7232C3C1 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C357E95C4F84B97B / ## 关联函数 / Related Functions / IMPLICIT-C357E95C4F84B97B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3A0CA2AD080115E / ## 关联函数 / Related Functions / IMPLICIT-C3A0CA2AD080115E / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C6868D93532A0674 / ## 关联函数 / Related Functions / IMPLICIT-C6868D93532A0674 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C6EAA8B9C39C23FC / ## 关联函数 / Related Functions / IMPLICIT-C6EAA8B9C39C23FC / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C76FF31CC51F5CC3 / ## 关联函数 / Related Functions / IMPLICIT-C76FF31CC51F5CC3 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C7D38580AEA8D93E / ## 关联函数 / Related Functions / IMPLICIT-C7D38580AEA8D93E / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C9213096FE24DD2C / ## 关联函数 / Related Functions / IMPLICIT-C9213096FE24DD2C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CB76C30EAAE2A387 / ## 关联函数 / Related Functions / IMPLICIT-CB76C30EAAE2A387 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CB849C62ED7CA1DC / ## 关联函数 / Related Functions / IMPLICIT-CB849C62ED7CA1DC / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CCE6174152FADCC8 / ## 关联函数 / Related Functions / IMPLICIT-CCE6174152FADCC8 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CD8B9F6C55C9DC0D / ## 关联函数 / Related Functions / IMPLICIT-CD8B9F6C55C9DC0D / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CF92B4792C47EE0B / ## 关联函数 / Related Functions / IMPLICIT-CF92B4792C47EE0B / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D048DA76BC4C1CD9 / ## 关联函数 / Related Functions / IMPLICIT-D048DA76BC4C1CD9 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D04D5105886CC9D7 / ## 关联函数 / Related Functions / IMPLICIT-D04D5105886CC9D7 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D0D88E1B6B996E98 / ## 关联函数 / Related Functions / IMPLICIT-D0D88E1B6B996E98 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D283C2CF1174B967 / ## 关联函数 / Related Functions / IMPLICIT-D283C2CF1174B967 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D4C0ED184EF433F3 / ## 关联函数 / Related Functions / IMPLICIT-D4C0ED184EF433F3 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D5B045FBC562EBB8 / ## 关联函数 / Related Functions / IMPLICIT-D5B045FBC562EBB8 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D7A7770FB1BFEDAD / ## 关联函数 / Related Functions / IMPLICIT-D7A7770FB1BFEDAD / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DA0FC119CA191FA9 / ## 关联函数 / Related Functions / IMPLICIT-DA0FC119CA191FA9 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DC1B017E294D4AC8 / ## 关联函数 / Related Functions / IMPLICIT-DC1B017E294D4AC8 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DE3BF86A58BA9DD4 / ## 关联函数 / Related Functions / IMPLICIT-DE3BF86A58BA9DD4 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E48FEAA200BD6A0C / ## 关联函数 / Related Functions / IMPLICIT-E48FEAA200BD6A0C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E55A092548F0C81C / ## 关联函数 / Related Functions / IMPLICIT-E55A092548F0C81C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E63DC3C8368C8DC9 / ## 关联函数 / Related Functions / IMPLICIT-E63DC3C8368C8DC9 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E79DBE394DE8DD9D / ## 关联函数 / Related Functions / IMPLICIT-E79DBE394DE8DD9D / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E7D4A3B7248A5AE4 / ## 关联函数 / Related Functions / IMPLICIT-E7D4A3B7248A5AE4 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EB591795B7EC7994 / ## 关联函数 / Related Functions / IMPLICIT-EB591795B7EC7994 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ED2EB839130102D4 / ## 关联函数 / Related Functions / IMPLICIT-ED2EB839130102D4 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F1F7F280ECDDCBE2 / ## 关联函数 / Related Functions / IMPLICIT-F1F7F280ECDDCBE2 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F4BA5AEC5E14B7F2 / ## 关联函数 / Related Functions / IMPLICIT-F4BA5AEC5E14B7F2 / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F7081EB75ADE910A / ## 关联函数 / Related Functions / IMPLICIT-F7081EB75ADE910A / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数 / Related Functions](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FB93731CB63F504C / ## 关联函数 / Related Functions / IMPLICIT-FB93731CB63F504C / IMPLICIT-0026301F130FD562
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数族](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1D74E42E5436041A / ## 关联函数族 / IMPLICIT-1D74E42E5436041A / IMPLICIT-4365F882270807CF
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数族](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4365F882270807CF / ## 关联函数族 / IMPLICIT-4365F882270807CF / IMPLICIT-1D74E42E5436041A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数族](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6169393ECEAA3942 / ## 关联函数族 / IMPLICIT-6169393ECEAA3942 / IMPLICIT-1D74E42E5436041A
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [## 关联函数族](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-745FF0594148E2DE / ## 关联函数族 / IMPLICIT-745FF0594148E2DE / IMPLICIT-1D74E42E5436041A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数族](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-74CD2D78319F50EE / ## 关联函数族 / IMPLICIT-74CD2D78319F50EE / IMPLICIT-1D74E42E5436041A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 关联函数族](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-989676A51E81D49E / ## 关联函数族 / IMPLICIT-989676A51E81D49E / IMPLICIT-1D74E42E5436041A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 内部子算子（Section 0 自举元函数结构件）](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EA20431FC0FA41BB / ## 内部子算子（Section 0 自举元函数结构件） / IMPLICIT-EA20431FC0FA41BB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 函数候选复核](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7CB1093137EA1B81 / ## 函数候选复核 / IMPLICIT-7CB1093137EA1B81
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [## 函数内容](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-232CEEC2D88DC2E9 / ## 函数内容 / IMPLICIT-232CEEC2D88DC2E9 / IMPLICIT-2543B81D2FE967FE
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 函数内容](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2543B81D2FE967FE / ## 函数内容 / IMPLICIT-2543B81D2FE967FE / IMPLICIT-232CEEC2D88DC2E9
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [## 函数内容](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-39259246A5B80510 / ## 函数内容 / IMPLICIT-39259246A5B80510 / IMPLICIT-232CEEC2D88DC2E9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 函数内容](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-446590F4E8AEB4E3 / ## 函数内容 / IMPLICIT-446590F4E8AEB4E3 / IMPLICIT-232CEEC2D88DC2E9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 函数内容](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D62EDD84479E2746 / ## 函数内容 / IMPLICIT-D62EDD84479E2746 / IMPLICIT-232CEEC2D88DC2E9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 函数内容](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F1F71F2CDC82CAD8 / ## 函数内容 / IMPLICIT-F1F71F2CDC82CAD8 / IMPLICIT-232CEEC2D88DC2E9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 函数名称](../../../docs/templates/function_dependency_review.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0610014EE6A50C64 / ## 函数名称 / IMPLICIT-0610014EE6A50C64
+  - 来源：`docs/templates/function_dependency_review.md`
+  - 依赖：—；被引用：—
+- [## 函数条目写作标准](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7B09BE9D4C976268 / ## 函数条目写作标准 / IMPLICIT-7B09BE9D4C976268
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [## 函数编号](../../../docs/templates/function_dependency_review.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-855037AA07AE12E2 / ## 函数编号 / IMPLICIT-855037AA07AE12E2
+  - 来源：`docs/templates/function_dependency_review.md`
+  - 依赖：—；被引用：—
+- [## 函数表差异](../../../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5C00B98FD6B9851D / ## 函数表差异 / IMPLICIT-5C00B98FD6B9851D
+  - 来源：`outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [## 函数表收口状态](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6474BA6F19EB297C / ## 函数表收口状态 / IMPLICIT-6474BA6F19EB297C
+  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [## 函数资产](../../../RESULTS/ADJUDICATION-SUMMARY.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-59C107947762C89D / ## 函数资产 / IMPLICIT-59C107947762C89D
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
+- [## 可作为现有函数/案例注释的内容](../../../outputs/collisions/20260708-teacher-competition/notes.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-17814EBEAEAC6F25 / ## 可作为现有函数/案例注释的内容 / IMPLICIT-17814EBEAEAC6F25
+  - 来源：`outputs/collisions/20260708-teacher-competition/notes.md`
+  - 依赖：—；被引用：—
+- [## 四、Foundation、函数与断言](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-902BDBE438F746CB / ## 四、Foundation、函数与断言 / IMPLICIT-902BDBE438F746CB
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
+  - 依赖：—；被引用：—
+- [## 四、重复函数识别](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-681CF9CD4643533F / ## 四、重复函数识别 / IMPLICIT-681CF9CD4643533F
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-00C4D2DCDFD1AB55 / ## 对应函数 / IMPLICIT-00C4D2DCDFD1AB55 / IMPLICIT-14F423ED22829447
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-14F423ED22829447 / ## 对应函数 / IMPLICIT-14F423ED22829447 / IMPLICIT-00C4D2DCDFD1AB55
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A9F5FBCF2DCBE4D / ## 对应函数 / IMPLICIT-1A9F5FBCF2DCBE4D / IMPLICIT-00C4D2DCDFD1AB55
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../templates/two-tables/unified-case-entry-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1F7D68FA35F3677D / ## 对应函数 / IMPLICIT-1F7D68FA35F3677D / IMPLICIT-00C4D2DCDFD1AB55
+  - 来源：`templates/two-tables/unified-case-entry-template.md`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-38145D6AC93428FF / ## 对应函数 / IMPLICIT-38145D6AC93428FF / IMPLICIT-00C4D2DCDFD1AB55
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../docs/templates/failure_typology_card.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9812BF79BEB86A08 / ## 对应函数 / IMPLICIT-9812BF79BEB86A08 / IMPLICIT-00C4D2DCDFD1AB55
+  - 来源：`docs/templates/failure_typology_card.md`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CAEFD554B69AFBEF / ## 对应函数 / IMPLICIT-CAEFD554B69AFBEF / IMPLICIT-00C4D2DCDFD1AB55
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 对应函数](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F7C1C659D8D15012 / ## 对应函数 / IMPLICIT-F7C1C659D8D15012 / IMPLICIT-00C4D2DCDFD1AB55
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 抽取内容（来自救援函数表 Section 0 内部元算子表）](../../../outputs/audit/mf-0001-0005-rescue-review-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4D4E19A1EA1D06AF / ## 抽取内容（来自救援函数表 Section 0 内部元算子表） / IMPLICIT-4D4E19A1EA1D06AF
+  - 来源：`outputs/audit/mf-0001-0005-rescue-review-20260708.md`
+  - 依赖：—；被引用：—
+- [## 新候选函数（跨域复现，待复核）](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-57F1BC2B38ABFDF5 / ## 新候选函数（跨域复现，待复核） / IMPLICIT-57F1BC2B38ABFDF5
+  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [## 新增函数](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0045EBBE4CDE85DA / ## 新增函数 / IMPLICIT-0045EBBE4CDE85DA / IMPLICIT-77E5DAB49D44C7CF
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [## 新增函数](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-77E5DAB49D44C7CF / ## 新增函数 / IMPLICIT-77E5DAB49D44C7CF / IMPLICIT-0045EBBE4CDE85DA
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：—；被引用：—
+- [## 新增函数](../../../templates/collision/output-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DDDF266712506B61 / ## 新增函数 / IMPLICIT-DDDF266712506B61 / IMPLICIT-0045EBBE4CDE85DA
+  - 来源：`templates/collision/output-template.md`
+  - 依赖：—；被引用：—
+- [## 新增函数候选](../../../outputs/collisions/20260708-smoke-test/backfill-plan.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-26BC394BB1158A1D / ## 新增函数候选 / IMPLICIT-26BC394BB1158A1D / IMPLICIT-9A1BAEBCCE398636
+  - 来源：`outputs/collisions/20260708-smoke-test/backfill-plan.md`
+  - 依赖：—；被引用：—
+- [## 新增函数候选](../../../templates/collision/backfill-plan-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9A1BAEBCCE398636 / ## 新增函数候选 / IMPLICIT-9A1BAEBCCE398636 / IMPLICIT-26BC394BB1158A1D
+  - 来源：`templates/collision/backfill-plan-template.md`
+  - 依赖：—；被引用：—
+- [## 旧函数结构总结](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-21F4E0218A4C2A33 / ## 旧函数结构总结 / IMPLICIT-21F4E0218A4C2A33
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [## 本次新增函数](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-40E66ED0619B62B9 / ## 本次新增函数 / IMPLICIT-40E66ED0619B62B9 / IMPLICIT-64E19C73A6129C00
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [## 本次新增函数](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-64E19C73A6129C00 / ## 本次新增函数 / IMPLICIT-64E19C73A6129C00 / IMPLICIT-40E66ED0619B62B9
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [## 本次新增函数](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-98B1A6F9241DAB83 / ## 本次新增函数 / IMPLICIT-98B1A6F9241DAB83 / IMPLICIT-40E66ED0619B62B9
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [## 本次新增函数](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A6CF993D3EE0977F / ## 本次新增函数 / IMPLICIT-A6CF993D3EE0977F / IMPLICIT-40E66ED0619B62B9
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [## 本次新增函数](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F28C690C56B906F3 / ## 本次新增函数 / IMPLICIT-F28C690C56B906F3 / IMPLICIT-40E66ED0619B62B9
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [## 本次新增函数](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FFFC52EFCDC1C186 / ## 本次新增函数 / IMPLICIT-FFFC52EFCDC1C186 / IMPLICIT-40E66ED0619B62B9
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [## 查重结果（全函数表 618 条）](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ED819435C53B712B / ## 查重结果（全函数表 618 条） / IMPLICIT-ED819435C53B712B
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [## 相关函数](../../../outputs/collisions/20260708-smoke-test/collision-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2D6BA0459AC1C0DE / ## 相关函数 / IMPLICIT-2D6BA0459AC1C0DE / IMPLICIT-3C5CC2DFFAA88B55
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：—；被引用：—
+- [## 相关函数](../../../templates/collision/output-template.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3C5CC2DFFAA88B55 / ## 相关函数 / IMPLICIT-3C5CC2DFFAA88B55 / IMPLICIT-2D6BA0459AC1C0DE
+  - 来源：`templates/collision/output-template.md`
+  - 依赖：—；被引用：—
+- [## 相关函数](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8BA3E44F1B5131F2 / ## 相关函数 / IMPLICIT-8BA3E44F1B5131F2 / IMPLICIT-2D6BA0459AC1C0DE
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [## 第四章 函数、断言与一座不替世界作证的账本](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-158E3BA5A01DCB9D / ## 第四章 函数、断言与一座不替世界作证的账本 / IMPLICIT-158E3BA5A01DCB9D
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-003191F281FA43ED / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-003191F281FA43ED / IMPLICIT-0277D22D2615B4E6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0277D22D2615B4E6 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0277D22D2615B4E6 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-02880B1B5593DA50 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-02880B1B5593DA50 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-02E0525482C9FBFE / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-02E0525482C9FBFE / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0355C46530A74CAB / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0355C46530A74CAB / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-05D8FB3DB77EEBEA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-05D8FB3DB77EEBEA / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0A690A20EA51B5A1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0A690A20EA51B5A1 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0DDD970F10D20726 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-0DDD970F10D20726 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-11A1B8507317C374 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-11A1B8507317C374 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-11E5C60BA7FC43A7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-11E5C60BA7FC43A7 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-139B919033141E78 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-139B919033141E78 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-154E551763D4B0D1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-154E551763D4B0D1 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-170A69C13E4B1FF2 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-170A69C13E4B1FF2 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-17B50A9E1993DE96 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-17B50A9E1993DE96 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-18FB3299803A8AA0 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-18FB3299803A8AA0 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-19C6862B1C63FC85 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-19C6862B1C63FC85 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1BA447C1C4908B43 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-1BA447C1C4908B43 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1DF14CD51FF5495C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-1DF14CD51FF5495C / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1F35A79F8B6C7027 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-1F35A79F8B6C7027 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-223BDAB10C4BD3DE / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-223BDAB10C4BD3DE / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-256C48A784CE713C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-256C48A784CE713C / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2885D53927F53B42 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2885D53927F53B42 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2A133B79D1BD2263 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2A133B79D1BD2263 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2A524AB9F3D7F758 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2A524AB9F3D7F758 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2D777A00901C5F4F / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2D777A00901C5F4F / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2D885D680ACB26BF / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2D885D680ACB26BF / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2EE9FF027C147874 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2EE9FF027C147874 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2F61A2FA7BC59857 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-2F61A2FA7BC59857 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3081FBFA239B54FF / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-3081FBFA239B54FF / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-31B2312C3F8DD908 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-31B2312C3F8DD908 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-34878497301B164B / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-34878497301B164B / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-35814244B96C95B2 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-35814244B96C95B2 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-36335C1861170095 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-36335C1861170095 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3735AA0FA25CDF6C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-3735AA0FA25CDF6C / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-37B3690A0A2DD03E / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-37B3690A0A2DD03E / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3AFE97C4000EB396 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-3AFE97C4000EB396 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-41259094302EC1EA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-41259094302EC1EA / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4182F3950339B285 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-4182F3950339B285 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-427FA5258FC1B4EF / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-427FA5258FC1B4EF / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-42C01C16E60D8A62 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-42C01C16E60D8A62 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-459B9A6FD4471FAA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-459B9A6FD4471FAA / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4AC353D81778DF42 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-4AC353D81778DF42 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4B066A30EAB1B490 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-4B066A30EAB1B490 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4FE2E3A1E62B490C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-4FE2E3A1E62B490C / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4FED263F21D3658C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-4FED263F21D3658C / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-50944CC9CB465719 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-50944CC9CB465719 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-544D7AA59B37CAF3 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-544D7AA59B37CAF3 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-54C59F1AE750392D / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-54C59F1AE750392D / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-55C6B35FAA327582 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-55C6B35FAA327582 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-57E9F4DD5E65427D / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-57E9F4DD5E65427D / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-595BF669A8CC44F5 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-595BF669A8CC44F5 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5F50FF1B20F94115 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-5F50FF1B20F94115 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6484127A3308B736 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-6484127A3308B736 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-64D8AD4A74EAADE1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-64D8AD4A74EAADE1 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-655FDA62AF52721E / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-655FDA62AF52721E / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-66E0B81B50CC51D7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-66E0B81B50CC51D7 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6881C02279C82A38 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-6881C02279C82A38 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6A1E2635BBB77AFF / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-6A1E2635BBB77AFF / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6B2CFB5C298DC3B7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-6B2CFB5C298DC3B7 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6B35A907D9991216 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-6B35A907D9991216 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-701FCB7C735DE09F / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-701FCB7C735DE09F / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-704BA14D1C5C1B8A / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-704BA14D1C5C1B8A / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-753923F3458DD678 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-753923F3458DD678 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-763C43DAFFF93B51 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-763C43DAFFF93B51 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-76A44E735AB6E499 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-76A44E735AB6E499 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7725C53ABDC50479 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-7725C53ABDC50479 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-78A9714E3B0769D7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-78A9714E3B0769D7 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7A45EA9F66E433F2 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-7A45EA9F66E433F2 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7E993B0D5EA9EAAE / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-7E993B0D5EA9EAAE / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7ED9C2D5328F25C5 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-7ED9C2D5328F25C5 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7F90EFD74CAB3B43 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-7F90EFD74CAB3B43 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-805CC614B5555D20 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-805CC614B5555D20 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-823EC70EBF801102 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-823EC70EBF801102 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-83BD9727261119F6 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-83BD9727261119F6 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8AA8ED1AAD418F8D / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-8AA8ED1AAD418F8D / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8D5561E1CFFD7B8E / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-8D5561E1CFFD7B8E / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8EADBB50611A540F / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-8EADBB50611A540F / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9109BB5AE59CEA82 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-9109BB5AE59CEA82 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-927B002898C83F9A / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-927B002898C83F9A / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-946097F48231980A / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-946097F48231980A / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9641D539D62F8DB8 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-9641D539D62F8DB8 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-96F532C6A88022F9 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-96F532C6A88022F9 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9701DA327D79F7C3 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-9701DA327D79F7C3 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-994B70DC53B44DB4 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-994B70DC53B44DB4 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-995C1A4166ABC088 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-995C1A4166ABC088 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9F54B4979D1E51A4 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-9F54B4979D1E51A4 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A0DFB8B6DAD12D7E / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-A0DFB8B6DAD12D7E / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A34D2499E97901BD / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-A34D2499E97901BD / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A66C6A5DA35EB078 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-A66C6A5DA35EB078 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A7D326A994C55807 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-A7D326A994C55807 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AA818AFF46764022 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-AA818AFF46764022 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AAB12BA6D66709B5 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-AAB12BA6D66709B5 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ACF34ED7270AD5CA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-ACF34ED7270AD5CA / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B092C8D186589A0F / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-B092C8D186589A0F / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B18AE11B08458448 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-B18AE11B08458448 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B25F12FAB734A710 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-B25F12FAB734A710 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B4082373A317DF72 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-B4082373A317DF72 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B5808337BD2D1411 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-B5808337BD2D1411 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B81AA7AFB5118A86 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-B81AA7AFB5118A86 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B950649CC12F4FD7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-B950649CC12F4FD7 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BCD136D7F689AC5C / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-BCD136D7F689AC5C / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BDA27A9187BD5612 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-BDA27A9187BD5612 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BFAE908E763618E4 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-BFAE908E763618E4 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C06C65A660F5E596 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-C06C65A660F5E596 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C0B22AD52C16BAE8 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-C0B22AD52C16BAE8 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C20999D876CA0B1B / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-C20999D876CA0B1B / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C7682C1CD62C7161 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-C7682C1CD62C7161 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CBA2B49B4223FCA5 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-CBA2B49B4223FCA5 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CCCFD1E1F73F1E33 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-CCCFD1E1F73F1E33 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CD4015AC8B765F08 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-CD4015AC8B765F08 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D03A0ED98F3FC271 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D03A0ED98F3FC271 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D21047BF5B4FFDED / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D21047BF5B4FFDED / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D2D7B8110B9D6D99 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D2D7B8110B9D6D99 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D432C60FBC944DFA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D432C60FBC944DFA / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D494D2E8664A8785 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D494D2E8664A8785 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D595D445553A0718 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D595D445553A0718 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D5A2DD309E61E3A1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D5A2DD309E61E3A1 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DF866BE94C601053 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-DF866BE94C601053 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E1501BD8D01B1814 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E1501BD8D01B1814 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E2C7E822443419AA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E2C7E822443419AA / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E64B495E169582CD / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E64B495E169582CD / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EB7B89E8311DE6C7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-EB7B89E8311DE6C7 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—

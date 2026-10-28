@@ -1,0 +1,300 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "D2-I1 Evidence-Constrained Multi-History / Multi-World Projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "task_id",
+    "capability_id",
+    "parent_binding",
+    "evidence_registry",
+    "records",
+    "facts",
+    "rule_assertions",
+    "conclusion"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.0.0"
+    },
+    "task_id": {
+      "const": "D2-I1"
+    },
+    "capability_id": {
+      "const": "multi_history_world_projection"
+    },
+    "parent_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "exact_head"
+      ],
+      "properties": {
+        "task_id": {
+          "const": "F15-D1-I1"
+        },
+        "exact_head": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "evidence_registry": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "record_type",
+          "world_candidates",
+          "divergence_point",
+          "shared_evidence",
+          "branch_specific_assumptions",
+          "indistinguishable_set",
+          "falsifiers",
+          "justified_weights",
+          "unresolved_paths",
+          "narrative_ceiling",
+          "claim_ceiling"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_type": {
+            "enum": [
+              "TWO_WORLD_EQUIVALENCE_SET",
+              "WEIGHTED_WORLD_WITH_JUSTIFICATION"
+            ]
+          },
+          "world_candidates": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "divergence_point": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "shared_evidence": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "branch_specific_assumptions": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "indistinguishable_set": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "falsifiers": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "justified_weights": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "unresolved_paths": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "narrative_ceiling": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "claim_ceiling": {
+            "$ref": "#/$defs/boundedField"
+          }
+        }
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "every_world_evidence_bound",
+        "no_forced_unique_story",
+        "indistinguishable_not_ranked_fact",
+        "weights_need_justification",
+        "possibility_not_probability",
+        "falsifier_required",
+        "unresolved_paths_preserved",
+        "narrative_ceiling_preserved"
+      ],
+      "properties": {
+        "every_world_evidence_bound": {
+          "type": "boolean"
+        },
+        "no_forced_unique_story": {
+          "type": "boolean"
+        },
+        "indistinguishable_not_ranked_fact": {
+          "type": "boolean"
+        },
+        "weights_need_justification": {
+          "type": "boolean"
+        },
+        "possibility_not_probability": {
+          "type": "boolean"
+        },
+        "falsifier_required": {
+          "type": "boolean"
+        },
+        "unresolved_paths_preserved": {
+          "type": "boolean"
+        },
+        "narrative_ceiling_preserved": {
+          "type": "boolean"
+        }
+      }
+    },
+    "rule_assertions": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "status",
+          "evidence_refs",
+          "effect"
+        ],
+        "properties": {
+          "rule_id": {
+            "enum": [
+              "every_world_evidence_bound",
+              "no_forced_unique_story",
+              "indistinguishable_not_ranked_fact",
+              "weights_need_justification",
+              "possibility_not_probability",
+              "falsifier_required",
+              "unresolved_paths_preserved",
+              "narrative_ceiling_preserved"
+            ]
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "FAIL"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "effect": {
+            "enum": [
+              "ALLOW_WITHIN_CEILING",
+              "BLOCK",
+              "DOWNGRADE"
+            ]
+          }
+        }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "statement",
+        "claim_ceiling",
+        "history_preserved",
+        "external_action_performed"
+      ],
+      "properties": {
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_ceiling": {
+          "type": "string",
+          "minLength": 1
+        },
+        "history_preserved": {
+          "type": "boolean"
+        },
+        "external_action_performed": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "boundedField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "value",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "const": "RECORDED"
+        },
+        "value": {
+          "type": [
+            "string",
+            "boolean",
+            "number",
+            "array",
+            "object",
+            "null"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "evidence_id",
+        "artifact",
+        "exact_head",
+        "artifact_digest",
+        "rights_status"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exact_head": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "artifact_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "rights_status": {
+          "enum": [
+            "REPOSITORY_INTERNAL",
+            "PUBLIC_METADATA_ONLY"
+          ]
+        }
+      }
+    }
+  }
+}

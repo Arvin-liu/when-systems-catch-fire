@@ -1,0 +1,1662 @@
+{
+  "model_id": "IGNITION-ITERATION-PLANNER-PRIORITY-MODEL-R1",
+  "total_candidates": 71,
+  "quarantine_totals": {
+    "data/foundation/function-assets/unresolved-quarantine.jsonl": {
+      "total_records": 4938,
+      "disposition_histogram": {
+        "QUARANTINE_UNTIL_DEFINED": 4816,
+        "DOWNGRADE_TO_PENDING": 77,
+        "DOWNGRADE_TO_CONJECTURE": 44,
+        "REWRITE_AND_RETEST": 1
+      },
+      "sampled": 12
+    },
+    "data/foundation/nonfunction-claims/unresolved-quarantine.jsonl": {
+      "total_records": 5702,
+      "disposition_histogram": {
+        "PENDING_EMPIRICAL_TEST": 980,
+        "QUARANTINED_AMBIGUOUS": 2422,
+        "PENDING_PROOF": 1010,
+        "REWRITE_AND_RETEST": 1,
+        "REJECTED_FALSE_OR_INVALID": 1,
+        "PENDING_LITERATURE_ADJUDICATION": 1283,
+        "WITHDRAWN_UNSUPPORTED": 5
+      },
+      "sampled": 12
+    }
+  },
+  "ranked": [
+    {
+      "canonical_id": "C-01",
+      "class": "CORE_CAPABILITY_VALIDATION",
+      "is_meta": false,
+      "aggregate_score": 73.2,
+      "blocked_reason": null,
+      "lifecycle_state": "COMPLETED_SUPPORTED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.95,
+        "data_oracle_availability": 1.0,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.9,
+        "reversibility_risk": 0.7,
+        "maturity_gap": 0.8,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.95
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "C-03",
+      "class": "CORE_CAPABILITY_VALIDATION",
+      "is_meta": false,
+      "aggregate_score": 67.5,
+      "blocked_reason": null,
+      "lifecycle_state": "COMPLETED_PARTIAL",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.3,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.9,
+        "data_oracle_availability": 0.9,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.85,
+        "reversibility_risk": 0.7,
+        "maturity_gap": 0.8,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.95
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "arn-gap-001",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "arn-gap-002",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "arn-gap-003",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "mcf-gap-001",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "mcf-gap-002",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "psd-gap-001",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "psd-gap-002",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "psd-gap-003",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "psd-gap-004",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 67.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.9,
+        "dependency_centrality": 0.8,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "C-04",
+      "class": "CORE_CAPABILITY_VALIDATION",
+      "is_meta": false,
+      "aggregate_score": 64.8,
+      "blocked_reason": null,
+      "lifecycle_state": "COMPLETED_SUPPORTED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.7,
+        "falsifiability": 0.7,
+        "data_oracle_availability": 0.6,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.7,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.95
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "C-02",
+      "class": "CORE_CAPABILITY_VALIDATION",
+      "is_meta": false,
+      "aggregate_score": 63.3,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.25,
+        "dependency_centrality": 0.3,
+        "falsifiability": 0.8,
+        "data_oracle_availability": 0.9,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.8,
+        "reversibility_risk": 0.7,
+        "maturity_gap": 0.8,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.95
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "arn-gap-004",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 60.1,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "arn-gap-005",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 60.1,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "mcf-gap-003",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 60.1,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "mcf-gap-004",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 60.1,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "mcf-gap-005",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 60.1,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "psd-gap-005",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 60.1,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "psd-gap-006",
+      "class": "MATHEMATICAL_FORMALIZATION",
+      "is_meta": false,
+      "aggregate_score": 60.1,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.5,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.5,
+        "substantive_vs_meta": 0.7
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "C-05",
+      "class": "CORE_CAPABILITY_VALIDATION",
+      "is_meta": false,
+      "aggregate_score": 57.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.5,
+        "dependency_centrality": 0.6,
+        "falsifiability": 0.6,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.7,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.95
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "OQ-02724",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-06181",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-07366",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-08618",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-09468",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-28307",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-50371",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-63989",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-68473",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-70521",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-83412",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-90163",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 54.14,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "C-07",
+      "class": "CORE_CAPABILITY_VALIDATION",
+      "is_meta": false,
+      "aggregate_score": 51.6,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.3,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.6,
+        "reversibility_risk": 0.7,
+        "maturity_gap": 0.8,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.95
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "GAP-CHUNK-INTEGRITY",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 51.5,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.4,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.5,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.9,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "GAP-DECISION-COLLAPSE",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 51.5,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.4,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.5,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.9,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "GAP-ITERATION-DELTA",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 51.5,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.4,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.5,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.9,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "GAP-NARRATIVE-PROVENANCE",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 51.5,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.4,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.5,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.9,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "GAP-PROJECT-ATTRACTOR",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 51.5,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.4,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.5,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.9,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "GAP-SAMPLE-DISTRIBUTION",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 51.5,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.4,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.5,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.7,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.9,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "OQ-37929",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 51.44,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.8,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.2,
+        "data_oracle_availability": 0.2,
+        "expected_information_gain": 0.9,
+        "effort_evidence_cost": 0.15,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.85,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-24236",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 49.34,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.6,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.2,
+        "data_oracle_availability": 0.5,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.4,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "OQ-26772",
+      "class": "SCIENTIFIC_EVIDENCE",
+      "is_meta": false,
+      "aggregate_score": 47.24,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.8,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.2,
+        "data_oracle_availability": 0.2,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.15,
+        "reversibility_risk": 0.5,
+        "maturity_gap": 0.85,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.92
+      },
+      "missing_fields": [
+        "dependency_centrality"
+      ]
+    },
+    {
+      "canonical_id": "A0",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A01",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A02",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A03",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A04",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A05",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A06",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A08",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A09",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A1",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A10",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "A100",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-003",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-004",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-006",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-012",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-013",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-014",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-015",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-018",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-019",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-BC-20260709-022",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-D107",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CLAIM-D11",
+      "class": "GOVERNANCE_OR_PROPAGATION_DEFECT",
+      "is_meta": true,
+      "aggregate_score": 42.8,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.4,
+        "dependency_centrality": 0.4,
+        "falsifiability": 0.5,
+        "data_oracle_availability": 0.4,
+        "expected_information_gain": 0.4,
+        "effort_evidence_cost": 0.3,
+        "reversibility_risk": 0.6,
+        "maturity_gap": 0.6,
+        "owner_relevance": 0.5,
+        "duplication_prior_failure": 0.7,
+        "substantive_vs_meta": 0.2
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "C-06",
+      "class": "CORE_CAPABILITY_VALIDATION",
+      "is_meta": false,
+      "aggregate_score": 34.7,
+      "blocked_reason": null,
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.3,
+        "dependency_centrality": 0.2,
+        "falsifiability": 0.2,
+        "data_oracle_availability": 0.1,
+        "expected_information_gain": 0.7,
+        "effort_evidence_cost": 0.05,
+        "reversibility_risk": 0.7,
+        "maturity_gap": 0.8,
+        "owner_relevance": 0.7,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.95
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CF-apple_gravity_failure",
+      "class": "IMPLEMENTATION_DEFECT",
+      "is_meta": false,
+      "aggregate_score": 67.9,
+      "blocked_reason": "UNRESOLVED_PREREQUISITE",
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.8,
+        "data_oracle_availability": 0.8,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.6,
+        "reversibility_risk": 0.8,
+        "maturity_gap": 0.5,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.85
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CF-cross_domain_synergy_risk",
+      "class": "IMPLEMENTATION_DEFECT",
+      "is_meta": false,
+      "aggregate_score": 67.9,
+      "blocked_reason": "UNRESOLVED_PREREQUISITE",
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.8,
+        "data_oracle_availability": 0.8,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.6,
+        "reversibility_risk": 0.8,
+        "maturity_gap": 0.5,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.85
+      },
+      "missing_fields": []
+    },
+    {
+      "canonical_id": "CF-technology_economic_growth_failure",
+      "class": "IMPLEMENTATION_DEFECT",
+      "is_meta": false,
+      "aggregate_score": 67.9,
+      "blocked_reason": "UNRESOLVED_PREREQUISITE",
+      "lifecycle_state": "UNASSESSED",
+      "factor_vector": {
+        "consequence_of_being_wrong": 0.7,
+        "dependency_centrality": 0.5,
+        "falsifiability": 0.8,
+        "data_oracle_availability": 0.8,
+        "expected_information_gain": 0.6,
+        "effort_evidence_cost": 0.6,
+        "reversibility_risk": 0.8,
+        "maturity_gap": 0.5,
+        "owner_relevance": 0.6,
+        "duplication_prior_failure": 0.6,
+        "substantive_vs_meta": 0.85
+      },
+      "missing_fields": []
+    }
+  ],
+  "recommended_next": "arn-gap-001",
+  "reserves": [
+    "arn-gap-002",
+    "arn-gap-003"
+  ],
+  "substantive_work_ratio_top10": 1.0,
+  "prior_recommendation_invalidated": {
+    "recommended_next": "C-01",
+    "state": "COMPLETED_SUPPORTED",
+    "invalidated": true
+  },
+  "completion_validation_report": [
+    {
+      "candidate_id": "C-01",
+      "claim_id": "SRC-REGISTRY-104-METADATA",
+      "ok": true,
+      "state": "COMPLETED_SUPPORTED",
+      "detail": "ok"
+    },
+    {
+      "candidate_id": "C-04",
+      "claim_id": "FUNCTION-OS-V02-CORRECTNESS",
+      "ok": true,
+      "state": "COMPLETED_SUPPORTED",
+      "detail": "ok"
+    },
+    {
+      "candidate_id": "C-03",
+      "claim_id": "DOI-OPENALEX-CROSS-CHECK",
+      "ok": true,
+      "state": "COMPLETED_PARTIAL",
+      "detail": "ok"
+    }
+  ],
+  "lifecycle_terminal_excluded": [
+    "C-01",
+    "C-03",
+    "C-04"
+  ]
+}

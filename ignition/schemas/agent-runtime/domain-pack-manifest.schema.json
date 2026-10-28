@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/agent-runtime/domain-pack-manifest.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pack_id", "display_name", "domain", "capabilities_provided", "object_types", "validators", "human_entries", "machine_entries", "required_kernel_capabilities", "prohibited_authority_upgrades", "optional_runtime_hooks"],
+  "properties": {
+    "pack_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,127}$"},
+    "display_name": {"type": "string", "minLength": 1},
+    "domain": {"type": "string", "minLength": 1},
+    "capabilities_provided": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "object_types": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "validators": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "human_entries": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "machine_entries": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "required_kernel_capabilities": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "prohibited_authority_upgrades": {"type": "array", "uniqueItems": true, "minItems": 6, "items": {"type": "string", "minLength": 1}},
+    "optional_runtime_hooks": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  }
+}

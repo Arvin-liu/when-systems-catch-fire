@@ -1,0 +1,20 @@
+{
+  "endpoint": "https://api.openalex.org/works",
+  "finished_at": "2026-08-01T07:21:03+00:00",
+  "http_200_json_records": 117,
+  "mailto_supplied": false,
+  "minimum_interval_seconds": 0.11,
+  "population_path": "population-manifest.jsonl",
+  "population_records": 117,
+  "population_sha256": "27a92a91048a8939a5a39867971323e0af5a3c6779cddf8389cf56e24746bcb2",
+  "retry_delays_seconds": [
+    1.0,
+    2.0,
+    4.0
+  ],
+  "run_id": "first-run-20260801",
+  "started_at": "2026-08-01T07:19:28+00:00",
+  "status": "COMPLETE_ACQUISITION_RUN",
+  "timeout_seconds": 30,
+  "user_agent": "ignition-task-110-openalex-census/1.0"
+}

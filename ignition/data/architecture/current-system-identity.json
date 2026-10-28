@@ -1,0 +1,269 @@
+{
+  "schema_version": "current-system-identity-r1",
+  "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "current_formal_task_id": "IGNITION-20260829-148",
+  "current_formal_task_ordinal": 148,
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "current_iteration_boundary": 148,
+  "current_iteration_boundary_semantics": {
+    "contract_id": "ITERATION_BOUNDARY_SEMANTICS_INVARIANT",
+    "status": "DEPRECATED_COMPATIBILITY_ALIAS",
+    "alias_of": "current_formal_task_ordinal",
+    "source_path": "ignition/data/operations/iteration-boundary-semantics-r1.json"
+  },
+  "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+  "epistemically_accepted": 0,
+  "current_architecture_identity": {
+    "system_role": "Ignition OS / orchestration-governance layer",
+    "driver_role": "driver",
+    "internal_control_spine": [
+      "Kernel",
+      "Runtime",
+      "Supervisor",
+      "Operational Memory",
+      "Agent Profile",
+      "Event Ledger",
+      "Monotonic Policy Compiler",
+      "Resource Arbitration",
+      "Bounded Concurrent Scheduler",
+      "Executor Health Leases",
+      "Queue and Backpressure",
+      "Dispatch and Reconciliation",
+      "Concurrent Operational Memory",
+      "Durability / Lifecycle",
+      "Driver Console",
+      "Steering / Intent / Goal / Obligation",
+      "Domain Pack Registry",
+      "External Agent Federation",
+      "Formal Task Lifecycle",
+      "Open Obligation Registry",
+      "Provider-neutral Executor Admission",
+      "Live External Executor Bridge",
+      "Live Observation / Reconciliation Plane",
+      "Live State Semantics / Structured Result Reliability"
+    ],
+    "control_plane_role": "R8 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, provider-neutral live dispatch, capability leases, bounded process transport, strict receipt validation, cancellation and timeout reconciliation, typed dispatch/process/inference/capture/structured-result/validation outcomes, append-only reconciliation events, FailureForensicsCapsule ownership before raw-spool disposal, dynamic executor admission, independent formal-task terminality, cross-task open-obligation carry-forward, operational memory, snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, capability revocation, accounting, recovery orchestration, disaster-recovery bundles, driver-readable recovery and repository-local steering of intents, goals, commitments, temporal windows, dependencies, priority, arbitration, decision traces and explainable why-next records; task terminality is determined by task scope/publication/witness and does not derive from obligation closure, while admission is provider-neutral and requires exact structured-result/capture/validator compatibility before live dispatch; process observation, inference observation, structured result return and independent validation remain separate facts, uncertain external effects stop at reconciliation, and the Structural Governance Surface remains a cross-cutting advisory overlay, not a hard control-plane authority.",
+    "external_executor_role": "replaceable executors",
+    "knowledge_role": "Knowledge is the first large Domain Pack, not the whole system.",
+    "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
+    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; Steering records distinguish Owner-declared authority from system proposals, keep Goal dependency separate from Supervisor execution DAGs, and require an independent Completion Contract before completion; Durability / Lifecycle keeps repository-local continuity and recovery records, while uncertain external effects stop at reconciliation and are never rerun automatically; the Live External Executor Bridge issues only bounded synthetic/read-only dispatch with OS permission intersection, disposable workspace binding, sanitized receipts and no channel, browser, remote Git, configuration or new billing authority; the Live Observation / Reconciliation Plane records scoped dispatch, transport, process, durable capture, structured result, validator and reconciliation states, while Live State Semantics keeps dispatch crossing, process start, independent inference marker, structured result return and validated completion as distinct dimensions; FailureForensicsCapsule records sanitized diagnostics before raw-spool disposal. Reconciliation closure is not success and external effect remains unknown unless independently validated; external Agents perform bounded local actions through adapters. The Structural Governance Surface can expose advisory context but cannot change capability, permission or epistemic status.",
+    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; Formal Task Lifecycle and Open Obligation Registry are separate repository-local records, and neither grants completion or closes the other; Steering records model repository-local authority provenance and obligations but do not infer real Owner intent or completion; Provider-neutral Executor Admission is a fail-closed eligibility gate, not a success claim; the Live External Executor Bridge records bounded transport and reconciliation evidence but a provider return or timeout cannot become validated completion without independent OS validation; Durability / Lifecycle is not proof of production durability or external completion, and the advisory Structural Governance Surface is not a new authority layer."
+  },
+  "current_map": {
+    "source_path": "ignition/data/architecture/interactive-system-map-layout.json",
+    "json_pointer": "/current_map_version",
+    "historical_map_version_source_path": "ignition/data/architecture/interactive-system-map-layout.json",
+    "historical_map_version_json_pointer": "/historical_map_version"
+  },
+  "current_method": {
+    "source_path": "ignition/ITERATION.md",
+    "required_marker": "1.4.0",
+    "status": "Current"
+  },
+  "current_operating_method": {
+    "source_path": "ignition/OPERATING-METHOD.md",
+    "required_marker": "Current: `1.0.0`",
+    "identity_marker": "Identity: `IGNITION_OPERATING_METHOD_R1`",
+    "status": "CURRENT"
+  },
+  "current_facts_projection": {
+    "json_path": "ignition/data/architecture/current-facts.json",
+    "markdown_path": "ignition/docs/architecture/current-facts.md",
+    "schema_path": "ignition/schemas/architecture/current-facts.schema.json",
+    "generator_path": "ignition/tools/generate_current_facts.py",
+    "schema_version": "current-facts-r1"
+  },
+  "current_task_lineage": {
+    "source_path": "ignition/data/operations/current-task-lineage-status.json",
+    "schema_path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
+    "validator_path": "ignition/tools/validate_current_task_lineage.py",
+    "contract_id": "CURRENT_TASK_LINEAGE_STATUS"
+  },
+  "derived_metrics": [
+    {
+      "metric_id": "registry_components",
+      "source_path": "ignition/data/operations/project-components.json",
+      "json_pointer": "/components",
+      "operation": "length"
+    },
+    {
+      "metric_id": "visible_map_nodes",
+      "source_path": "ignition/data/operations/project-components.json",
+      "json_pointer": "/components",
+      "operation": "count_where",
+      "where": {"json_pointer": "/map_projection/visible", "equals": true}
+    },
+    {
+      "metric_id": "hidden_components",
+      "source_path": "ignition/data/operations/project-components.json",
+      "json_pointer": "/components",
+      "operation": "count_where",
+      "where": {"json_pointer": "/map_projection/visible", "equals": false}
+    },
+    {
+      "metric_id": "typed_topology_relations",
+      "source_path": "ignition/data/operations/change-propagation-topology.json",
+      "json_pointer": "/relations",
+      "operation": "length"
+    },
+    {
+      "metric_id": "visible_typed_edges",
+      "source_path": "ignition/data/operations/change-propagation-topology.json",
+      "json_pointer": "/relations",
+      "operation": "count_where",
+      "where": {"json_pointer": "/map_visible", "equals": true}
+    },
+    {
+      "metric_id": "function_identity_cards",
+      "source_path": "ignition/data/foundation/function-assets/closure-summary.json",
+      "json_pointer": "/canonical_identity_cards",
+      "operation": "value"
+    },
+    {
+      "metric_id": "function_quarantine_or_pending",
+      "source_path": "ignition/data/foundation/function-assets/closure-summary.json",
+      "json_pointer": "/explicit_quarantine_or_pending",
+      "operation": "value"
+    },
+    {
+      "metric_id": "nonfunction_claims",
+      "source_path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "json_pointer": "/canonical_claims",
+      "operation": "value"
+    },
+    {
+      "metric_id": "nonfunction_quarantine_or_pending",
+      "source_path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "json_pointer": "/explicit_quarantine_or_pending",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_cards",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/cards",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_changes",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/changes",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_layered_readings",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/layered_readings",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_search_records",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/search_records",
+      "operation": "value"
+    },
+    {
+      "metric_id": "knowledge_aliases",
+      "source_path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "json_pointer": "/counts/aliases",
+      "operation": "value"
+    },
+    {
+      "metric_id": "fire_seeds",
+      "source_path": "ignition/data/publication/fire-seeds/seed-census.json",
+      "json_pointer": "/seed_count",
+      "operation": "value"
+    },
+    {
+      "metric_id": "fire_seed_sources",
+      "source_path": "ignition/data/publication/fire-seeds/seed-census.json",
+      "json_pointer": "/source_census",
+      "operation": "length"
+    }
+  ],
+  "known_open_obligations": [
+    {
+      "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+      "statement": "The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized FailureForensicsCapsule and append-only reconciliation overlays are implemented, but no validated live completion was observed. The ledger-derived historical projection records six attempts: Hermes136 remains effect-unknown after terminal reconciliation; Codex137 failed validation; Codex138 first failed before inference with no structured result; Codex138 second remains terminal observation-incomplete with effect unknown; Task139 closed only its conclusive no-live-dispatch boundary while retaining unknown external effect; and Task140 observed one real Codex process with public probe/transport return code 0, live process return code 1, complete capture and no structured result. Task141 records dispatch observed, process observed, inference not observed without an independent marker, validated completion not observed, and zero unreconciled attempts. Task148 keeps LIVE_EXTERNAL_INVOCATION OPEN and OWNER_DEFERRED while introducing no executor qualification or live attempt; any future resume requires explicit Owner reopening followed by deliberate local-environment preparation. No production, general-intelligence or external-validity claim is made.",
+      "source_paths": ["ignition/docs/architecture/external-agent-federation-r1.md", "ignition/data/agent-federation/executor-inventory-r1.json", "ignition/data/operations/open-obligation-registry-r1.json", "ignition/data/operations/iterations/136/step11-live-preflight.json", "ignition/data/operations/iterations/136/step13-live-execution-receipt.json", "ignition/data/operations/iterations/137/step01-hermes-timeout-reconciliation.json", "ignition/data/operations/iterations/137/step03-codex-live-eligibility.json", "ignition/data/operations/iterations/137/step09-live-codex-attempt.json", "ignition/data/operations/iterations/137/step10-independent-validation-outcome.json", "ignition/data/operations/iterations/138/step06-capability-reauth.json", "ignition/data/operations/iterations/138/step07-fixture-answer-freeze.json", "ignition/data/operations/iterations/138/step08-first-codex-dispatch.json", "ignition/data/operations/iterations/138/step08-amendment-01-live-codex-reconciliation.json", "ignition/data/operations/iterations/138/step10-independent-validation-gate.json", "ignition/data/operations/iterations/138/step11-obligation-semantics.json", "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl", "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl", "ignition/data/operations/iterations/140/live-observation-events-r1.jsonl", "ignition/data/operations/iterations/140/live-current-projection-r2.json", "ignition/data/operations/iterations/140/step11-live-attempt.json", "ignition/data/operations/iterations/140/step12-independent-validation.json", "ignition/data/operations/iterations/141/live-state-dimensions-r1.json", "ignition/data/operations/iterations/141/live-inference-observation-events-r1.jsonl", "ignition/data/operations/iterations/141/live-current-projection-r3.json", "ignition/data/operations/iterations/141/step04-failure-forensics-capsule.json", "ignition/data/operations/iterations/141/step06-malformed-root-cause-archaeology.json", "ignition/data/operations/iterations/141/step08-local-executor-census.json", "ignition/data/operations/iterations/141/step11-live-probe-and-independent-validation.json", "ignition/data/operations/iterations/143/phase-closure-state-r1.json", "ignition/data/operations/iterations/144/phase-closure-state-r1.json", "ignition/data/operations/iterations/146/step09-current-minimal-sync.json"]
+    },
+    {
+      "obligation_id": "PRODUCTION_AND_EXTERNAL_VALIDITY",
+      "statement": "Repository execution evidence does not establish production safety, external validity, Owner acceptance or epistemic acceptance.",
+      "source_paths": ["ignition/AI-START-HERE.md", "ignition/STATE-CHANGELOG.md"]
+    },
+    {
+      "obligation_id": "KNOWLEDGE_PROOF_AND_REPLICATION",
+      "statement": "Function/non-function registry closure leaves proof, evidence, replication and item-level review obligations independent.",
+      "source_paths": ["ignition/data/foundation/function-assets/closure-summary.json", "ignition/data/foundation/nonfunction-claims/closure-summary.json"]
+    },
+    {
+      "obligation_id": "ESI_STRUCTURAL_GOVERNANCE",
+      "statement": "The Structural Governance Surface remains a candidate advisory reading surface; separation from terminology, style, authority escalation and delayed transfer remains open.",
+      "source_paths": ["ignition/data/epistemic-governance/esi-candidate-boundary-r0.json", "ignition/data/epistemic-governance/soft-governance-non-authority-invariant-r0.json", "ignition/data/epistemic-governance/experiment-protocol-r0.json"]
+    },
+    {
+      "obligation_id": "DURABILITY_LIFECYCLE_CEILING",
+      "statement": "Durability / Lifecycle evidence is repository-local continuity and recovery evidence only; schema migration, snapshot restore, disaster-recovery restore, Pack rollback and revocation do not establish production durability, exact-once external execution, Owner acceptance or epistemic acceptance.",
+      "source_paths": ["ignition/docs/architecture/os-control-plane-r2.md", "ignition/data/operations/durability/continuity-pilot-r1.json", "ignition/data/operations/iterations/127/progress.jsonl"]
+    },
+    {
+      "obligation_id": "STEERING_INTENT_CEILING",
+      "statement": "Steering / Intent / Goal / Obligation records are repository-local coordination projections; system-derived proposals cannot become Owner authority, a passing run cannot infer goal completion, and offline pilots do not establish live executor completion or epistemic acceptance.",
+      "source_paths": ["ignition/docs/architecture/os-steering-intent-r1.md", "ignition/data/operations/steering/current-state-r1.json", "ignition/data/operations/iterations/129/progress.jsonl"]
+    }
+  ],
+  "authority_ceilings": [
+    "OS does not become an executor implementation.",
+    "External executors do not own Owner, truth, M/E, Pack, Knowledge or permission authority.",
+    "Reference Executor remains reference/conformance/fallback only.",
+    "Knowledge Domain Pack validators do not grant generic runtime authority.",
+    "Event, policy, resource, scheduler, health, queue, dispatch, memory and console records remain bounded operational projections; none grants truth, Owner, executor or epistemic authority.",
+    "Durability / Lifecycle records remain bounded repository-local continuity projections; uncertain external effects stop at reconciliation, and recovery evidence does not establish production durability or exact-once execution.",
+    "Steering / Intent / Goal / Obligation records remain bounded repository-local authority, lifecycle and explainability projections; system proposals cannot promote themselves, run-pass cannot infer completion, and no record grants Owner, truth or epistemic authority.",
+    "Live External Executor Bridge, capability leases, transport and receipts remain bounded repository-local dispatch/reconciliation projections; no executor output, timeout or captured receipt grants external completion, channel authority, billing authority, Owner authority or epistemic acceptance.",
+    "System map and propagation are repository navigation/dependency projections, not reality causality or completeness proof.",
+    "Structural Governance Surface is an advisory overlay only; it cannot grant capability, permission, authorization, truth, Owner acceptance, epistemic acceptance or safety release.",
+    "CURRENT_WITH_OPEN_OBLIGATIONS remains separate from EPISTEMICALLY_ACCEPTED=0."
+  ],
+  "architecture_impact_handshake": {
+    "field": "architecture_identity_impact",
+    "allowed_values": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"],
+    "architecture_changed_requires": [
+      "current-system-identity",
+      "project-current-state",
+      "homepage-identity",
+      "ai-cold-start-and-agents",
+      "system-map-projection",
+      "state-changelog-delta",
+      "current-state-sync-receipt"
+    ],
+    "presentation_only_rule": "Presentation-only changes may alter explanation or navigation without changing the identity epoch, system role, ownership, core relations, runtime model or current map identity.",
+    "no_self_referential_commit_sha": "The contract must not contain a self-referential current commit SHA; exact Git evidence belongs in the release receipt and STATE-CHANGELOG delta."
+  },
+  "required_sync_surfaces": [
+    {"surface_id":"homepage-identity","path":".github/README.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"project-current-state","path":"ignition/docs/project-current-state.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","current_facts","durability_lifecycle","soft_governance"]},
+    {"surface_id":"ai-cold-start","path":"ignition/AI-START-HERE.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"ai-agents-handoff","path":"ignition/AI-HANDOFF.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"architecture","path":"ignition/ARCHITECTURE.md","concepts":["os_driver","replaceable_executors","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"steering-doc","path":"ignition/docs/architecture/os-steering-intent-r1.md","concepts":["os_driver","replaceable_executors","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"machine-entry","path":"ignition/llms.txt","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"system-map-doc","path":"ignition/docs/architecture/interactive-system-map.md","concepts":["os_driver","replaceable_executors","reference_freeze","map_version","durability_lifecycle","soft_governance"]},
+    {"surface_id":"federation-doc","path":"ignition/docs/architecture/external-agent-federation-r1.md","concepts":["os_driver","replaceable_executors","reference_freeze","durability_lifecycle","soft_governance"]},
+    {"surface_id":"system-map-json","path":"ignition/data/architecture/interactive-system-map.json","concepts":["os_driver","replaceable_executors","reference_freeze","map_version","durability_lifecycle","soft_governance"]},
+    {"surface_id":"state-changelog","path":"ignition/STATE-CHANGELOG.md","concepts":["os_driver","replaceable_executors","knowledge_pack","reference_freeze","durability_lifecycle","state_delta","soft_governance"]}
+  ],
+  "concept_requirements": {
+    "os_driver": {"all_of_any_group": [["OS", "操作系统"], ["driver", "司机", "orchestration-governance layer", "治理编排"]]},
+    "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
+    "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
+    "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
+    "map_version": {"all_of_any_group": [["0.16.0"]]},
+    "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
+    "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]},
+    "soft_governance": {"all_of_any_group": [["Structural Governance Surface", "结构治理表面"], ["advisory", "ADVISORY_ONLY", "软"]]},
+    "durability_lifecycle": {"all_of_any_group": [["Durability", "durability", "持久化"], ["Lifecycle", "lifecycle", "恢复", "snapshot"]]}
+  }
+}

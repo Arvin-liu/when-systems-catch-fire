@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "pack_id": "research.reos-light",
+  "version": "1.0.0",
+  "display_name": "REOS LIGHT Research Pack",
+  "domain": "research",
+  "compatibility": {
+    "kernel_api": "r0",
+    "runtime_api": "r1",
+    "schema": "1.0.0"
+  },
+  "capabilities_provided": [
+    "research.coordinate_obligations",
+    "research.validate_reos_light"
+  ],
+  "required_kernel_capabilities": [
+    "read_declared",
+    "run_validator"
+  ],
+  "required_runtime_capabilities": [
+    "runtime.pack_registry",
+    "runtime.pack_bus"
+  ],
+  "object_types": [
+    "research_obligation",
+    "evidence_request",
+    "negative_result",
+    "reos_light_run"
+  ],
+  "validator_entrypoints": [
+    "reos_vnext/validation.py",
+    "tests/test_reos_vnext_minimal_kernel.py"
+  ],
+  "action_hooks": [
+    "research.record_obligation",
+    "research.record_negative_result"
+  ],
+  "planning_hooks": [
+    "research.plan_obligation_dag"
+  ],
+  "human_entries": [
+    "docs/architecture/reos-vnext-light.md",
+    "packs/research/README.md"
+  ],
+  "machine_entries": [
+    "reos_vnext",
+    "tests/fixtures/reos_vnext",
+    "data/operations/iterations/121"
+  ],
+  "permissions_requested": {
+    "read_paths": [
+      "reos_vnext",
+      "tests/fixtures/reos_vnext",
+      "data/operations/iterations/121"
+    ],
+    "write_paths": [
+      "data/operations/iterations/121"
+    ],
+    "command_classes": [
+      "read-only-validator"
+    ],
+    "tool_classes": [
+      "declared-research-validator"
+    ],
+    "network": false
+  },
+  "prohibited_authority_upgrades": [
+    "agent_lifecycle",
+    "executor_selection",
+    "generic_permission",
+    "checkpoint_resume",
+    "owner_acceptance",
+    "kernel_definition",
+    "truth_authority",
+    "epistemic_upgrade",
+    "charter_mutation"
+  ],
+  "load_policy": "DECLARATIVE_METADATA_ONLY",
+  "unload_policy": "SAFE_IF_NO_ACTIVE_RUNS",
+  "optional_dependencies": [],
+  "health_check": {
+    "kind": "DECLARATIVE_MANIFEST",
+    "expected": "PASS",
+    "side_effects": false
+  }
+}

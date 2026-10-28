@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "check": "D182 derivative",
+      "pass": true,
+      "result": "-1/(r*log(r)^2)"
+    },
+    {
+      "check": "D182 infinity limit",
+      "pass": true,
+      "result": "0"
+    },
+    {
+      "check": "D183 merge-order counterexample",
+      "pass": true,
+      "phi_after": "9.4912215810299030260099326864871825972877115428293773125950",
+      "phi_before": "0.86858896380650365530225783783321016458879401160733313222891"
+    },
+    {
+      "check": "D260 derivative",
+      "pass": true,
+      "result": "-1/(p - 1) + p/(p - 1)^2"
+    },
+    {
+      "carrier": "Z/6Z",
+      "check": "T2 converse zero-divisor counterexample",
+      "pass": true
+    }
+  ],
+  "checks_passed": 5,
+  "checks_total": 5,
+  "sage": "SageMath version 10.9, Release Date: 2026-05-04",
+  "scope": "Independent implementation replay of scoped algebra/analysis only; no external physics claim is tested.",
+  "status": "PASS",
+  "tool": "SageMath"
+}
