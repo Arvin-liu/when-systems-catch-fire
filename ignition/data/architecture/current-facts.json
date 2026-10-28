@@ -117,10 +117,10 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6201,
-      "function_quarantine_or_pending": 5049,
-      "nonfunction_claims": 18941,
-      "nonfunction_quarantine_or_pending": 5462
+      "function_identity_cards": 6205,
+      "function_quarantine_or_pending": 5053,
+      "nonfunction_claims": 19010,
+      "nonfunction_quarantine_or_pending": 5482
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -233,15 +233,15 @@
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "1b3421ccb9f54b17b6e34b53e9c6830ed7e3b1163ae0987e25e3dea315431de1"
+      "sha256": "a3523d5d6c3a0b80748c91f60f9a35533e78346d79e38167276a6deedbadf9de"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "f62bdf516fc38fa1d95c1c584945c18517c04bcb87ec355ce00270fa7fd1444c"
+      "sha256": "28e12878e53c56b48b26249d3ecd9d642ba12bed6bebfb42d207667394ba7d8f"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "76ae1984731e4ec1dcf55e2a44e2ceb12c85d8672426c6177c22f6cfc4712759"
+      "sha256": "a455cb72953127fcab8b254686e27f6f4c0fb3430911c9c38f8557abd9c5d1f3"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "999285e81bc8c86da2765365880b5942de8b468dd9528fbc588f7f024c3deaff"
+      "sha256": "e04c383d05b07fb88b34ce94d3d8c6258c5181d015ad38ace064662de2485b85"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",

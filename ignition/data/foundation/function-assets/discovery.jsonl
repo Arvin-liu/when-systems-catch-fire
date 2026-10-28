@@ -1691,7 +1691,7 @@
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":375,"last_line":408,"mention_count":3,"path":"data/operations/iterations/D2-I1.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":44,"last_line":1257,"mention_count":229,"path":"data/operations/iterations/F15-D1-I1.json","role":"REFERENCE","stable_id":"D1"}
-{"first_line":2887,"last_line":2933,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
+{"first_line":2909,"last_line":2955,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":6,"last_line":721,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-closure.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/operations/propagation/F15-D1-I1-impact-report.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":42,"last_line":638,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-request.json","role":"REFERENCE","stable_id":"D1"}
@@ -21133,6 +21133,7 @@
 {"first_line":83,"last_line":83,"line":83,"mention_count":1,"path":"agent_federation/live_execution.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-116C39B742AF1D01","text":"def _public_error_class(value: str) -> str:"}
 {"first_line":67,"last_line":67,"line":67,"mention_count":1,"path":"统一案例总表/0644-C-649-退出权空间案例29.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-1171DCABEAE13A8B","text":"- 数学表达 / Expression: `C_{C-649}(s_{C-649}) = (Σ_i 1[F_i(s)=1]) / |I|`"}
 {"first_line":63,"last_line":63,"line":63,"mention_count":1,"path":"agent_federation/adapters/hermes.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-1176B95AD768AE87","text":"def oneshot(self) -> bool:"}
+{"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-117D3A3697E38BD3","text":"hardcoded Python branches (`if decision.get(\"rule_id\") == \"R12\" ...`) that are *not*"}
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"统一案例总表/0673-C-0678-孪生素数问题转换.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-11A1B8507317C374","text":"## 纯数学函数与推导 / Pure Mathematical Function and Derivation"}
 {"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"统一案例总表/0138-C-138-学科训练的遮蔽作用.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-11A40C8925F7077D","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0138})=1]."}
 {"first_line":114,"last_line":114,"line":114,"mention_count":1,"path":"agent_federation/live_bridge.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-11ADE80A40114F04","text":"def _digest(value: Any, field: str) -> str:"}
@@ -21228,6 +21229,7 @@
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0229-C-229-研究成果级别=5.7.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-166E2D4E48DAF86D","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0229})=1]."}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0079-D30-ε_eff闭环动力学函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-1680890412262BC3","text":"title: \"ε_eff闭环动力学函数\""}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0079-C-79-收益-风险投影-网结构.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-1687FF3186AF9DD2","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0079})=1]."}
+{"first_line":113,"last_line":113,"line":113,"mention_count":1,"path":"docs/R3-CORPUS-RUNTIME.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-16B536917EF356D4","text":"## 10. Non-private aggregate (public, IGNITION §12 / §16(6))"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0066-D17-情绪信号分层函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-16C546E93673729D","text":"title: \"情绪信号分层函数\""}
 {"first_line":169,"last_line":169,"line":169,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-16CD87E88B2C15BB","text":"if not any(p.get(\"provider\") == \"blocked_sci_hub\" for p in blocked):"}
 {"first_line":686,"last_line":686,"line":686,"mention_count":1,"path":"agent_federation/live_adapters.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-16CE526E67C99081","text":"def _probe(self) -> tuple[LiveProcessResult, LiveProcessResult]:"}
@@ -21959,6 +21961,7 @@
 {"first_line":75,"last_line":75,"line":75,"mention_count":1,"path":"统一函数总表/0154-D115-r_cross优先性定理.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3CA29D867143C5FC","text":"#108-#128 17域词典簇碰撞（21条）→涵盖17个领域的函数投影。"}
 {"first_line":110,"last_line":110,"line":110,"mention_count":1,"path":"agent_federation/live_execution.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3CA71A7A2E9A7DCC","text":"def _failure_forensics("}
 {"first_line":21,"last_line":21,"line":21,"mention_count":1,"path":"data/external-research/121b-fulltext-batch/121b-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3CB2925AC410CCD7","text":"def load_jsonl(path):"}
+{"first_line":170,"last_line":170,"line":170,"mention_count":1,"path":"data/operations/iterations/ARR-R2-REAL-OBJECT-PILOT.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3CBE47449804E5A9","text":"\"name\": \"arr_static_gate\","}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一案例总表/0075-C-75-提议者消耗函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3CC86797E95032C2","text":"title: \"提议者消耗函数\""}
 {"first_line":25,"last_line":25,"line":25,"mention_count":1,"path":"agent_federation/conformance.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3CCB3D1FAC4EC805","text":"def passed(self) -> bool:"}
 {"first_line":159,"last_line":159,"line":159,"mention_count":1,"path":"data/external-research/121A-night-recovery/121A-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-3CD145CADD49E461","text":"if cred.get(\"env_file_content_leaked\") == 0:"}
@@ -24148,6 +24151,7 @@
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0182-D145-投资相关函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B7222A58079C5331","text":"title: \"投资相关函数\""}
 {"first_line":76,"last_line":76,"line":76,"mention_count":1,"path":"evidence-program/tests/test_evidence_program.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B72DF745603F5C85","text":"def test_leakage_no_unregistered_metrics():"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0443-D407-传染链自限函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B7364902D8DDA18B","text":"title: \"传染链自限函数\""}
+{"first_line":32,"last_line":32,"line":32,"mention_count":1,"path":"docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B7471C9448B0206A","text":"### 1.1 Registry declaration must equal runtime behavior → ADR-R2-01"}
 {"first_line":2081,"last_line":2081,"line":2081,"mention_count":1,"path":"data/operations/iterations/109/candidate_inventory.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B748E9A0E70AFEF0","text":"\"title\": \"No single validator catches adjacency/similarity/centrality/community as truth/value/causality or retrieval/diffusion as integration.\","}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0190-C-190-C_drive涌现的数学证明.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B7849047D715FD2D","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0190})=1]."}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0228-C-228-变量闭包=对称性约束.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-B78BB5BB60491DD9","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0228})=1]."}
@@ -27333,7 +27337,7 @@
 {"first_line":107,"last_line":1427,"mention_count":12,"path":"data/research/state-vs-transition-semantics-2026-09-07/split-manifest.json","role":"REFERENCE","stable_id":"T09"}
 {"first_line":466,"last_line":466,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"T1"}
 {"first_line":195,"last_line":195,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C002.md","role":"REFERENCE","stable_id":"T1"}
-{"first_line":174,"last_line":247,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/projection-routes.json","role":"REFERENCE","stable_id":"T1"}
+{"first_line":174,"last_line":355,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/projection-routes.json","role":"REFERENCE","stable_id":"T1"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"T1"}
 {"first_line":44,"last_line":71,"mention_count":4,"path":"data/external-research/121-fulltext-resolver/121-extracts.jsonl","role":"REFERENCE","stable_id":"T1"}
 {"first_line":250,"last_line":251,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json","role":"REFERENCE","stable_id":"T1"}
@@ -29470,7 +29474,7 @@
 {"first_line":52,"last_line":52,"mention_count":1,"path":"outputs/getbrain/v0.2-function-dependency-graph-20260706.md","role":"REFERENCE","stable_id":"T61"}
 {"first_line":277,"last_line":277,"mention_count":1,"path":"OPERATING-METHOD.md","role":"REFERENCE","stable_id":"T7"}
 {"first_line":700,"last_line":700,"mention_count":1,"path":"STATE-CHANGELOG.md","role":"REFERENCE","stable_id":"T7"}
-{"first_line":174,"last_line":247,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/projection-routes.json","role":"REFERENCE","stable_id":"T7"}
+{"first_line":174,"last_line":355,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/projection-routes.json","role":"REFERENCE","stable_id":"T7"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"T7"}
 {"first_line":340,"last_line":341,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json","role":"REFERENCE","stable_id":"T7"}
 {"first_line":219,"last_line":220,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json","role":"REFERENCE","stable_id":"T7"}
