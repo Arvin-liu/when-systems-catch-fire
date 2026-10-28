@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def _sha256_bytes\(value: bytes\) -> str:](../../../agent_federation/pilots.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1E786BFD70AC681B / def _sha256_bytes\(value: bytes\) -> str: / IMPLICIT-1E786BFD70AC681B / IMPLICIT-5EFFA036988D8E9C
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
 - [def _sha40\(value: Any, field: str\) -> None:](../../../agent_federation/local_executor_census.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3BBB68998FCE7F67 / def _sha40\(value: Any, field: str\) -> None: / IMPLICIT-3BBB68998FCE7F67
@@ -2497,10 +2502,5 @@
 - [def sanitize_live_result\(value: Mapping\[str, Any\], *, source_text: str \| None = None, allowed_keys: Sequence\[str\] = \(\)\) -> SanitizedLiveResult:](../../../agent_federation/live_privacy.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-580F5910F958C2EC / def sanitize_live_result\(value: Mapping\[str, Any\], *, source_text: str \| None = None, allowed_keys: Sequence\[str\] = \(\)\) -> SanitizedLiveResult: / IMPLICIT-580F5910F958C2EC
-  - 来源：`agent_federation/live_privacy.py`
-  - 依赖：—；被引用：—
-- [def sanitize_public_summary\(value: str, *, max_chars: int = 512\) -> str:](../../../agent_federation/live_privacy.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CD26820270C5FA3F / def sanitize_public_summary\(value: str, *, max_chars: int = 512\) -> str: / IMPLICIT-CD26820270C5FA3F
   - 来源：`agent_federation/live_privacy.py`
   - 依赖：—；被引用：—

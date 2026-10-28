@@ -1,0 +1,62 @@
+{
+  "boundary": "Research-only synthetic fixture evidence. No production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "command_source": {
+    "blob": "dc51ff0524d6d5c43ba149cb7cb5722f48aebcaf",
+    "commit": "6307f30abb92ab02b082476c4b627ccb0bdc6914",
+    "path": "agent-commands/IGNITION-20260906-157.md",
+    "repository": "Arvin-liu/1111",
+    "sha256": "621a4aa243a3268d65c88c1960d4690a538bd228964f2fb79df4bef3d206b2a5"
+  },
+  "control_pointers": [
+    {
+      "action": "left unchanged; not used as Task157 authority",
+      "observed_blob": "7b0976ec",
+      "observed_task": "121Q37-I1",
+      "path": "instructions/CURRENT.md",
+      "status": "STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL"
+    },
+    {
+      "action": "left unchanged; not used as Task157 authority",
+      "observed_commit": "7d6d369bc2b8add8eeaa0c076f13bcda994f1dc6",
+      "path": "relay/current",
+      "status": "STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL"
+    }
+  ],
+  "derived_after_unblind": [
+    "junction-ablation.jsonl",
+    "results.jsonl",
+    "metrics.json",
+    "transfer-generalization.json",
+    "maintenance-results.jsonl",
+    "metamorphic-results.jsonl",
+    "counterfactual-minimality.jsonl",
+    "verdict.json"
+  ],
+  "formal_baseline": {
+    "base_branch": "work/IGNITION-20260905-156",
+    "base_pr": 206,
+    "base_sha": "ad0e8f3e6c80eee5f27d05bd4b29653b2d936aae",
+    "repository": "Arvin-liu/when-systems-catch-fire"
+  },
+  "freeze_digest": "a877f928440b83c58f3638cd937cba57c8b1e8956902d573fb7dbd36baf5925a",
+  "freeze_id": "T157-FREEZE-1",
+  "frozen_files": {
+    "answer-key.jsonl": "31ef5229cb4415a2c6d38460394bfbe436f9620cde76118101a1d44f7d2d965f",
+    "blind-packets.jsonl": "1f943f98630081e4f9b82ef6dca85086761aa6c9809ea529f3c9ed342527a18a",
+    "experiment-protocol.json": "ace3262f5c11e197331100bb7e15c961cd233503c7043dc979959ee0a2d52bb1",
+    "fixture-generator-manifest.json": "519e203f745b4553082b2d0ae0be6cb0c0bf098896da60440defc329e3d107e8",
+    "fixture-manifest.json": "50e9c456d6e674c1e79aba9e3ff20641570f5fb75aea829b105a023b4a627f6a",
+    "hypothesis-freeze.json": "8a2cf01d64eb2bdfb5bf0b05b98caaa29387060817ddb07be635c3da8acd2a70",
+    "junction-candidate.json": "69142cefc00d4d9e165b6aa4918384cd826e87108c4e7d60acca2e65b8e4c011",
+    "local-predicate-registry-research.json": "dbfee5bca1e9dae09e2b10d8755001ead71e5189864088726b12659a51e56de4",
+    "model-definitions.json": "5d804d663d39eb8a1e85fd7917f6ef8fceb0b1c3f9892b8a038e4307149227bf",
+    "split-manifest.json": "2333a3fbacd24ba721b5ff9e3d7683cd3401516a1b9b891c3948327971240cd3"
+  },
+  "generator_source_sha256": "2a14d90a214c4b2f0e8b34395676a60edc9dff342b597d4a62476ce073c08bd9",
+  "post_freeze_junction_dimension_additions": 0,
+  "post_freeze_local_predicate_additions": 0,
+  "schema_version": "1.0.0",
+  "score_input_excludes_answer_key": true,
+  "status": "FROZEN_BEFORE_SCORING",
+  "task_id": "IGNITION-20260906-157"
+}

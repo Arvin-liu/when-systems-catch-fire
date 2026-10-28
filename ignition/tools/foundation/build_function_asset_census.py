@@ -72,6 +72,9 @@ GENERATED_PREFIXES = (
     # Task156 prospective fixtures are bounded research inputs, not function
     # asset sources.
     "data/research/cross-contract-prospective-fixtures-2026-09-05/",
+    # Task157 junction-vs-local-predicates corpus is bounded research-only
+    # evidence and must not feed the canonical function-asset census.
+    "data/research/junction-vs-local-predicates-2026-09-06/",
     # Durability/lifecycle contracts and receipts are OS machine records; they
     # must remain provenance-only and cannot feed Foundation discovery.
     "data/operations/durability/",
@@ -220,6 +223,15 @@ GENERATED_EXACT_PATHS = {
     "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-156.md",
     "agent-results/IGNITION-20260905-156-result.md",
+    # Task157 research harness, tests, narrative records and result are bounded
+    # evidence, not function-asset discovery sources.
+    "tools/research/junction_vs_local_predicates_task157.py",
+    "tests/test_junction_vs_local_predicates_task157.py",
+    "docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md",
+    "docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md",
+    "docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-157.md",
+    "agent-results/IGNITION-20260906-157-result.md",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

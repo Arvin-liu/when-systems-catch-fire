@@ -1,0 +1,36 @@
+{
+  "boundary": "Research-only synthetic fixture evidence. No production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "frozen_verdict_table": [
+    "LOCAL_PREDICATE_SUFFICIENCY_SUPPORTED",
+    "JUNCTION_INVARIANT_SUPPORTED_AS_RESEARCH_CANDIDATE",
+    "MIXED_NO_PROMOTION",
+    "BOTH_FAIL",
+    "INCONCLUSIVE"
+  ],
+  "gates": {
+    "metamorphic_suite_passes": true,
+    "mj_holdout_binding_subtypes_min_2": true,
+    "mj_holdout_control_fp_max_1": true,
+    "mj_holdout_families_min_3": true,
+    "mj_holdout_incremental_min_6": true,
+    "mj_transfer_has_defect_signal": true,
+    "ml_not_post_freeze_extended": true,
+    "no_new_authority_truth_capability_lifecycle": true
+  },
+  "interpretation": "Even a supported research candidate remains bounded evidence and requires a separately authorized future task before any canonical design discussion.",
+  "mj_distinct_binding_subtypes": 12,
+  "mj_only_holdout_defects": 15,
+  "ml_only_holdout_defects": 0,
+  "promotion": {
+    "authority_or_truth_state": false,
+    "canonical_layer": false,
+    "external_truth": false,
+    "lifecycle_change": false,
+    "owner_acceptance": false,
+    "production_validator": false,
+    "runtime_gate": false
+  },
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-20260906-157",
+  "verdict": "JUNCTION_INVARIANT_SUPPORTED_AS_RESEARCH_CANDIDATE"
+}

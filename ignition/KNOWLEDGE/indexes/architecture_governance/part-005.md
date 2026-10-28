@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def sanitize_public_summary\(value: str, *, max_chars: int = 512\) -> str:](../../../agent_federation/live_privacy.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CD26820270C5FA3F / def sanitize_public_summary\(value: str, *, max_chars: int = 512\) -> str: / IMPLICIT-CD26820270C5FA3F
+  - 来源：`agent_federation/live_privacy.py`
+  - 依赖：—；被引用：—
 - [def save_case\(path: str \| Path, document: Mapping\[str, Any\]\) -> None:](../../../reos_vnext/kernel.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-6C1DF25EB400D0AB / def save_case\(path: str \| Path, document: Mapping\[str, Any\]\) -> None: / IMPLICIT-6C1DF25EB400D0AB
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-6bc43d731783def5 / Evidence 与 Uncertainty / Claim Ceiling 最接近 `P`，但前者偏来源与可复核性，后者偏允许说到哪里；二者有共享基础而非同义。
   - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [evidence**：](../../../templates/protocol-entry-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-dbcbcff0d0cc578b / evidence**：
-  - 来源：`templates/protocol-entry-template.md`
   - 依赖：—；被引用：—

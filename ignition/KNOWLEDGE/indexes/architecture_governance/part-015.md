@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [证据状态：** 语法化程度跨语言差异明确；与一般推理能力的关系不能由语法直接推出。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-90e858ce2555f4c5 / 证据状态：** 语法化程度跨语言差异明确；与一般推理能力的关系不能由语法直接推出。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
 - [证据状态：** 语法差异清楚；英语—普通话非语言事件研究呈空效应或条件效应。](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-fd855af7f36004d6 / 证据状态：** 语法差异清楚；英语—普通话非语言事件研究呈空效应或条件效应。

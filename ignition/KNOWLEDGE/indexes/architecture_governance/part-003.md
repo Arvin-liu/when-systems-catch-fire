@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Claim ceiling: this is bounded read-only reconciliation evidence. It does not](../../../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aa76b1085a2beffe / Claim ceiling: this is bounded read-only reconciliation evidence. It does not
+  - 来源：`reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: this step makes timeout evidence auditable and fail closed. It](../../../reports/operations/ignition-137-step02-timeout-process-closeout-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4a1e90464ebce4c3 / Claim ceiling: this step makes timeout evidence auditable and fail closed. It
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-2F49FF8D1E6A7D0F / def _sha256\(value: Any, field: str\) -> str: / IMPLICIT-2F49FF8D1E6A7D0F
   - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _sha256_bytes\(value: bytes\) -> str:](../../../agent_federation/pilots.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1E786BFD70AC681B / def _sha256_bytes\(value: bytes\) -> str: / IMPLICIT-1E786BFD70AC681B / IMPLICIT-5EFFA036988D8E9C
-  - 来源：`agent_federation/pilots.py`
   - 依赖：—；被引用：—

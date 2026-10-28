@@ -80,6 +80,16 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["domains"], ["R"])
         self.assertEqual(result["selected_target_ids"], ["r_research_slot_consumers"])
 
+    def test_task157_historical_research_path_routes_to_its_r_consumer(self):
+        result = self.plan([
+            "data/research/junction-vs-local-predicates-2026-09-06/answer-key.jsonl"
+        ])
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertEqual(result["domains"], ["R"])
+        self.assertEqual(result["seed_components"], ["junction_vs_local_predicates_task157"])
+        self.assertEqual(result["selected_target_ids"], ["r_task157_experiment_consumers"])
+        self.assertNotIn("research_workflow_slot", result["affected_component_closure"])
+
     def test_o_only_change_selects_output_consumers(self):
         result = self.plan(["data/governance/knowledge-experience/manifest.json"])
         self.assertEqual(result["mode"], "TARGETED")

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-23\]\( \) \| \[新加坡建国\]\( \) \| 多种族居民可移民可离开，"新加坡人"认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5a85efa1c394ec82 / \| \[C-23\]\( \) \| \[新加坡建国\]\( \) \| 多种族居民可移民可离开，"新加坡人"认同经退出权验证 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-24\]\( \) \| \[德国社会市场经济\]\( \) \| 战后德国人有真实退出权，社会市场经济认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3603e21bbbc34985 / \| \[C-24\]\( \) \| \[德国社会市场经济\]\( \) \| 战后德国人有真实退出权，社会市场经济认同经退出权验证 \|
@@ -2497,10 +2502,5 @@
 - [Φ元统一律内部构件完整构成版 2026年07月05日22时22分](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d507458142401d08 / Φ元统一律内部构件完整构成版 2026年07月05日22时22分
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [Ψ_memory_intelligence_boundary := Encoding → Retrieval → Emergence](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-168396097e4dfaa6 / Ψ_memory_intelligence_boundary := Encoding → Retrieval → Emergence
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [the validator also checks derived facts, map-version coherence and stale](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ca70703be852014 / the validator also checks derived facts, map-version coherence and stale
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [The value charter remains the highest normative boundary. Ψ0 remains a workflow orchestrator / algorithm protocol. Funct](../../../reports/architecture/121Q12-baseline-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e91c0099e1079761 / The value charter remains the highest normative boundary. Ψ0 remains a workflow orchestrator / algorithm protocol. Funct
@@ -2497,10 +2502,5 @@
 - [\| \[C-222\]\( \) \| \[边界优化=变分问题\]\( \) \| 边界优化=变分问题——最小作用量原理在生物/社会域的投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-457af612ca245dd6 / \| \[C-222\]\( \) \| \[边界优化=变分问题\]\( \) \| 边界优化=变分问题——最小作用量原理在生物/社会域的投影 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-23\]\( \) \| \[新加坡建国\]\( \) \| 多种族居民可移民可离开，"新加坡人"认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a85efa1c394ec82 / \| \[C-23\]\( \) \| \[新加坡建国\]\( \) \| 多种族居民可移民可离开，"新加坡人"认同经退出权验证 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

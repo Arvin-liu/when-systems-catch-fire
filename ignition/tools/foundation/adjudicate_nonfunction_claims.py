@@ -178,6 +178,16 @@ MACHINE_EXCLUDE_PREFIXES = (
     "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-156.md",
     "agent-results/IGNITION-20260905-156-result.md",
+    # Task157 research corpus and narrative outputs stay in source accounting
+    # while remaining excluded from authoritative claim admission.
+    "data/research/junction-vs-local-predicates-2026-09-06/",
+    "tools/research/junction_vs_local_predicates_task157.py",
+    "tests/test_junction_vs_local_predicates_task157.py",
+    "docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md",
+    "docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md",
+    "docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-157.md",
+    "agent-results/IGNITION-20260906-157-result.md",
     # Task158 research-only basis-escape records are evidence for a
     # non-canonical study, not authoritative claim sources. Keep them in
     # source discovery accounting while excluding them from claim admission.

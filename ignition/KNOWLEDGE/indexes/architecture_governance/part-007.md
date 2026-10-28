@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "已迁移的历史案例来源/0745-C-0750-何刚财务观点.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9484b3b2f26ff0a9 / link: "已迁移的历史案例来源/0745-C-0750-何刚财务观点.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [link: "已迁移的历史案例来源/0746-C-0751-安然公司.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6062c9e21b78d391 / link: "已迁移的历史案例来源/0746-C-0751-安然公司.md"
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-c29e766f040e1d8c / recognizes Task140's real process while retaining zero validated completions,
   - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [Reconciliation closes the obligation to keep searching for evidence; it does](../../../reports/operations/ignition-140-step05-reconciliation-state-model.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cdeb7e1902e2cafb / Reconciliation closes the obligation to keep searching for evidence; it does
-  - 来源：`reports/operations/ignition-140-step05-reconciliation-state-model.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Reconciliation closes the obligation to keep searching for evidence; it does](../../../reports/operations/ignition-140-step05-reconciliation-state-model.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cdeb7e1902e2cafb / Reconciliation closes the obligation to keep searching for evidence; it does
+  - 来源：`reports/operations/ignition-140-step05-reconciliation-state-model.md`
+  - 依赖：—；被引用：—
 - [reconciliation. OpenClaw remains skipped at its unsafe workspace/channel](../../../reports/operations/ignition-137-step00-baseline-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e00a5822696dc021 / reconciliation. OpenClaw remains skipped at its unsafe workspace/channel
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：CLAIM-T16 / The unrestricted claim that every product of two oppositely monotone functions has an inverted-U shape is false.
   - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [the validator also checks derived facts, map-version coherence and stale](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1ca70703be852014 / the validator also checks derived facts, map-version coherence and stale
-  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—

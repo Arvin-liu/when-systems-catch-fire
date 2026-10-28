@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [是否所有事实 pending 都被保留？**](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-422cb91d1bc2ec02 / 是否所有事实 pending 都被保留？**
+  - 来源：`docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`
+  - 依赖：—；被引用：—
 - [是否把个人阐释写成普遍规律；](../../../docs/publication_risk_checklist.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-521c4525a3a8c6a6 / 是否把个人阐释写成普遍规律；
@@ -2497,10 +2502,5 @@
 - [证据状态：** 语法与篇章研究充分；自动恢复仍高不确定。](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ee72861c85bebb32 / 证据状态：** 语法与篇章研究充分；自动恢复仍高不确定。
-  - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [证据状态：** 语法化程度跨语言差异明确；与一般推理能力的关系不能由语法直接推出。](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-90e858ce2555f4c5 / 证据状态：** 语法化程度跨语言差异明确；与一般推理能力的关系不能由语法直接推出。
   - 来源：`docs/language-thought/dimensional-basis.md`
   - 依赖：—；被引用：—

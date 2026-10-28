@@ -1,0 +1,18 @@
+{
+  "families": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8"
+  ],
+  "fresh_value_namespace": "t157-20260906",
+  "generator": "junction_vs_local_predicates_task157.py",
+  "generator_version": "1.0.0",
+  "pair_spec_digest": "5cce0e40e244c063a387ad73c2051ae0cead75c61066b4e18d49bb4fb5a5e251",
+  "pairs": 96,
+  "schema_version": "1.0.0"
+}

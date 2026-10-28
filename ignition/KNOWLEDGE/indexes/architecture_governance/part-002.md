@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [_issue\(issues, "ARTIFACT_PROVENANCE", f"{item_path}.provenance", "artifact provenance is required"\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-003960da26e472ee / _issue\(issues, "ARTIFACT_PROVENANCE", f"{item_path}.provenance", "artifact provenance is required"\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - [_issue\(issues, "CANONICAL_CLAIM_MASQUERADE", f"{item_path}.canonical_status", "claim candidates are never canonical"\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b1085d939ccb1131 / _issue\(issues, "CANONICAL_CLAIM_MASQUERADE", f"{item_path}.canonical_status", "claim candidates are never canonical"\)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fc8dfae9e3db196e / Claim ceiling: this capsule is repository-local continuity and resume evidence only. It does not establish production re
   - 来源：`reports/operations/ignition-143-resume-capsule.md`
-  - 依赖：—；被引用：—
-- [Claim ceiling: this is bounded read-only reconciliation evidence. It does not](../../../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa76b1085a2beffe / Claim ceiling: this is bounded read-only reconciliation evidence. It does not
-  - 来源：`reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md`
   - 依赖：—；被引用：—

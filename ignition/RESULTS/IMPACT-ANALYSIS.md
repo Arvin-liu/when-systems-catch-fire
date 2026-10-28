@@ -135,7 +135,7 @@
 |`docs/getbrain-operation-guide-20260708.docx`|0|0|是|
 |`docs/getbrain-operation-guide-20260708.md`|26|0|否|
 |`docs/getnote-collision-workflow-final-20260708.md`|30|0|否|
-|`docs/governance/README.md`|8|0|否|
+|`docs/governance/README.md`|9|0|否|
 |`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`|71|0|否|
 |`docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md`|0|0|是|
 |`docs/governance/basis-escape-v2-2026-09-07.md`|0|0|是|
@@ -165,7 +165,10 @@
 |`docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md`|0|0|是|
 |`docs/governance/independent-historical-adjudication-2026-09-07.md`|10|0|否|
 |`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`|8|0|否|
+|`docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md`|0|0|是|
 |`docs/governance/junction-invariant-candidate-assessment-2026-09-05.md`|0|0|是|
+|`docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md`|0|0|是|
+|`docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md`|0|0|是|
 |`docs/governance/knowledge-experience-layer.md`|11|0|否|
 |`docs/governance/licensing-model-candidate.md`|3|0|否|
 |`docs/governance/licensing-rights-inventory.md`|3|0|否|
@@ -461,6 +464,7 @@
 |`reports/governance/task-IGNITION-20260904-154.md`|24|0|否|
 |`reports/governance/task-IGNITION-20260905-155.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260905-156.md`|0|0|是|
+|`reports/governance/task-IGNITION-20260906-157.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260906-158.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260907-159.md`|0|0|是|
 |`reports/governance/task-IGNITION-20260907-160.md`|0|0|是|
