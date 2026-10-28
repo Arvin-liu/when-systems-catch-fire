@@ -1419,7 +1419,8 @@
         "tests/test_human_front_door.py",
         "tests/test_overall_architecture.py",
         "tests/test_generated_output_authority.py",
-        "docs/architecture/interactive-system-map.md"
+        "docs/architecture/interactive-system-map.md",
+        "pages/generated/"
       ]
     },
     {
