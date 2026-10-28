@@ -1,0 +1,37 @@
+{
+  "schema_version": "ignition-140-step01-architecture-impact-classifier-r1",
+  "task_id": "IGNITION-20260826-140",
+  "step": "01",
+  "classifier": {
+    "module": "ignition/tools/architecture_impact.py",
+    "schema": "ignition/schemas/operations/architecture-impact-classification-r1.schema.json",
+    "classes": [
+      "NONE",
+      "ARCHITECTURE_CHANGING",
+      "BEHAVIORAL_CONTROL_PLANE_CHANGE",
+      "PRESENTATION_ONLY",
+      "RELEASE_ONLY",
+      "DATA_REFRESH_ONLY"
+    ],
+    "legacy_identity_impact_compatibility": {
+      "ARCHITECTURE_CHANGING": "ARCHITECTURE_CHANGED",
+      "BEHAVIORAL_CONTROL_PLANE_CHANGE": "ARCHITECTURE_CHANGED",
+      "PRESENTATION_ONLY": "PRESENTATION_ONLY",
+      "RELEASE_ONLY": "NONE",
+      "DATA_REFRESH_ONLY": "NONE",
+      "NONE": "NONE"
+    }
+  },
+  "negative_gate": {
+    "case": "process_transport_and_canonical_state_source_declared_as_presentation_only",
+    "observed": "REJECTED",
+    "reason": "control-plane semantic markers require a behavioral or architecture-changing classification and evidence"
+  },
+  "validation": {
+    "targeted_tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "claim_ceiling": "Repository-local semantic impact classifier and negative-gate evidence only; no external truth, Owner authority or epistemic upgrade is inferred."
+}

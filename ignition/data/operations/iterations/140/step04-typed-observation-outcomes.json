@@ -1,0 +1,49 @@
+{
+  "task_id": "IGNITION-20260826-140",
+  "step": "04",
+  "status": "PASS",
+  "contract": "LIVE_OBSERVATION_OUTCOME_TYPED_FIELDS_R1",
+  "source": {
+    "ledger_path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "ledger_schema": "live-attempt-ledger-r1",
+    "ledger_record_count": 5,
+    "ledger_head_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+    "historical_r1_projection_digest": "2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73"
+  },
+  "typed_projection": {
+    "schema": "live-current-projection-r2",
+    "digest": "b8fbe0690182dc4bed698d46007bcee1e35acb272757b8d6af18216ca7c3bbfe",
+    "return_code_field_exposure": "REMOVED_FROM_TYPED_SUMMARY",
+    "legacy_return_code_policy": "PRESERVED_WITH_EXPLICIT_SCOPE_ONLY"
+  },
+  "outcome_types": {
+    "LEGACY_SCOPE_UNRECOVERED": 4,
+    "PRE_INFERENCE_NO_LIVE_PROCESS": 1,
+    "LIVE_PROCESS_OBSERVED": 0,
+    "LIVE_PROCESS_UNOBSERVED": 0
+  },
+  "task139_sequence4": {
+    "attempt_id": "attempt-139-live-02",
+    "probe_return_code": 0,
+    "transport_return_code": 0,
+    "public_probe_calls": 2,
+    "live_dispatch_calls": 0,
+    "live_process_started": false,
+    "live_process_return_code": null,
+    "legacy_return_code_scope": "PUBLIC_PROBE_TRANSPORT_VALUE_ONLY"
+  },
+  "compatibility": {
+    "historical_r1_projection_validation": "PASS",
+    "materialized_r1_digest_unchanged": true,
+    "explicit_typed_outcome_ledger_validation": "PASS",
+    "contradictory_process_return_code_negative_gate": "PASS"
+  },
+  "tests": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_observation_plane ignition.tests.test_live_current_projection ignition.tests.test_task139_post_attempt_validation ignition.tests.test_live_attempt_ledger",
+    "tests_run": 15,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "claim_ceiling": "Repository-local typed observation semantics and compatibility only; no external process success, effect, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}

@@ -1,0 +1,49 @@
+{
+  "candidate_gate_result": "NO_MODEL_MEETS_NEW_BASIS_CANDIDATE_THRESHOLD",
+  "models": [
+    {
+      "description": "existing V x S x E / 64",
+      "model": "B0",
+      "result": "retained explanatory coverage; transition/provenance residuals remain",
+      "status": "BASELINE"
+    },
+    {
+      "description": "B0 plus local residual patches",
+      "model": "B0+Local",
+      "result": "reduces local loss but increases exception/exclusion burden",
+      "status": "EXPLAINS_CURRENT_ENGINEERING_PATH"
+    },
+    {
+      "description": "fewer-factor model",
+      "model": "B2",
+      "result": "knockout recovery argues against removing any V/S/E-like factor",
+      "status": "NOT_INSTANTIATED"
+    },
+    {
+      "description": "alternative three-factor basis",
+      "model": "B3-alt",
+      "result": "normative, relational and temporal factors recur but are semantically crosswalked to V/S/E-like structure",
+      "status": "UNDERDETERMINED"
+    },
+    {
+      "description": "V x S x E x X",
+      "model": "B4",
+      "result": "evidence/provenance/authority recur as cross-cutting factors, not independently established axis X",
+      "status": "NOT_INSTANTIATED"
+    },
+    {
+      "description": "non-Cartesian graph/transition model",
+      "model": "BG",
+      "result": "transition residual is repeated, but no positive-control and holdout superiority is established",
+      "status": "REVIEW_LENS_ONLY"
+    },
+    {
+      "description": "operator/generator model",
+      "model": "BO",
+      "result": "basis mutation path is missing from default workflow; not a new production operator candidate",
+      "status": "GENERATOR_DEFECT_LENS"
+    }
+  ],
+  "ranking_policy": "qualitative and case-count based; no pseudo-precise decimals",
+  "task_id": "IGNITION-20260906-158"
+}

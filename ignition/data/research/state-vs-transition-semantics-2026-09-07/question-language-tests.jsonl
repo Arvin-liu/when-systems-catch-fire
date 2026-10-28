@@ -1,0 +1,6 @@
+{"delta":false,"id":"Q1","ms_answer":true,"mt_answer":true,"question":"Are these endpoint states allowed?"}
+{"delta":true,"id":"Q2","ms_answer":false,"mt_answer":true,"question":"Which object did this exact change act on?"}
+{"delta":true,"id":"Q3","ms_answer":false,"mt_answer":true,"question":"Was the evidence bound to this transition rather than merely available?"}
+{"delta":true,"id":"Q4","ms_answer":false,"mt_answer":true,"question":"Which ordered hop failed before the final state?"}
+{"delta":true,"id":"Q5","ms_answer":false,"mt_answer":true,"question":"Which exact transition is this rollback reversing?"}
+{"delta":true,"id":"Q6","ms_answer":false,"mt_answer":true,"question":"Is this public projection stale for this transition and epoch?"}

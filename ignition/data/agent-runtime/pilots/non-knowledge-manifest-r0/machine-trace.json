@@ -1,0 +1,193 @@
+[
+  {
+    "event_id": "trace-0000",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 0,
+    "phase": "OBSERVE",
+    "event_type": "observe",
+    "actor_id": "executor-alpha",
+    "summary": "captured the declared environment observation",
+    "refs": [
+      "environment-001"
+    ]
+  },
+  {
+    "event_id": "trace-0001",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 1,
+    "phase": "FRAME",
+    "event_type": "frame",
+    "actor_id": "executor-alpha",
+    "summary": "recorded a bounded goal frame",
+    "refs": [
+      "manifest-pilot"
+    ]
+  },
+  {
+    "event_id": "trace-0002",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 2,
+    "phase": "PLAN",
+    "event_type": "plan",
+    "actor_id": "executor-alpha",
+    "summary": "created a deterministic action plan",
+    "refs": [
+      "manifest-plan-r0"
+    ]
+  },
+  {
+    "event_id": "trace-0003",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 3,
+    "phase": "AUTHORIZE",
+    "event_type": "authorize",
+    "actor_id": "kernel",
+    "summary": "authorization decision: ALLOW",
+    "refs": [
+      "action-scan-inputs",
+      "decision-action-scan-inputs"
+    ]
+  },
+  {
+    "event_id": "trace-0004",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 4,
+    "phase": "ACT",
+    "event_type": "act",
+    "actor_id": "executor-alpha",
+    "summary": "executor returned a typed action observation",
+    "refs": [
+      "action-scan-inputs"
+    ]
+  },
+  {
+    "event_id": "trace-0005",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 5,
+    "phase": "VALIDATE",
+    "event_type": "validate",
+    "actor_id": "validator",
+    "summary": "recorded the action validation result",
+    "refs": [
+      "validation-action-scan-inputs"
+    ]
+  },
+  {
+    "event_id": "trace-0006",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 6,
+    "phase": "REMEMBER",
+    "event_type": "remember",
+    "actor_id": "executor-alpha",
+    "summary": "persisted a structured durable memory event",
+    "refs": [
+      "memory-0000"
+    ]
+  },
+  {
+    "event_id": "trace-0007",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 7,
+    "phase": "CONTINUE",
+    "event_type": "checkpoint_prepare",
+    "actor_id": "executor-alpha",
+    "summary": "prepared a resumable handoff after a validated step",
+    "refs": [
+      "manifest-plan-r0"
+    ]
+  },
+  {
+    "event_id": "trace-0008",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 8,
+    "phase": "STOP",
+    "event_type": "checkpoint_stop",
+    "actor_id": "executor-alpha",
+    "summary": "stopped at an explicit resumable checkpoint",
+    "refs": []
+  },
+  {
+    "event_id": "trace-0009",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 9,
+    "phase": "CONTINUE",
+    "event_type": "resume",
+    "actor_id": "executor-beta",
+    "summary": "resumed from a verified capsule with a different executor",
+    "refs": [
+      "capsule-0001",
+      "checkpoint-0001"
+    ]
+  },
+  {
+    "event_id": "trace-0010",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 10,
+    "phase": "AUTHORIZE",
+    "event_type": "authorize",
+    "actor_id": "kernel",
+    "summary": "authorization decision: ALLOW",
+    "refs": [
+      "action-write-manifest",
+      "decision-action-write-manifest"
+    ]
+  },
+  {
+    "event_id": "trace-0011",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 11,
+    "phase": "ACT",
+    "event_type": "act",
+    "actor_id": "executor-beta",
+    "summary": "executor returned a typed action observation",
+    "refs": [
+      "action-write-manifest"
+    ]
+  },
+  {
+    "event_id": "trace-0012",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 12,
+    "phase": "VALIDATE",
+    "event_type": "validate",
+    "actor_id": "validator",
+    "summary": "recorded the action validation result",
+    "refs": [
+      "validation-action-write-manifest"
+    ]
+  },
+  {
+    "event_id": "trace-0013",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 13,
+    "phase": "REMEMBER",
+    "event_type": "remember",
+    "actor_id": "executor-beta",
+    "summary": "persisted a structured durable memory event",
+    "refs": [
+      "memory-0001"
+    ]
+  },
+  {
+    "event_id": "trace-0014",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 14,
+    "phase": "CONTINUE",
+    "event_type": "continue",
+    "actor_id": "executor-beta",
+    "summary": "validation passed; continuing with the next bounded step",
+    "refs": [
+      "action-write-manifest"
+    ]
+  },
+  {
+    "event_id": "trace-0015",
+    "run_id": "manifest-pilot/run-001",
+    "sequence": 15,
+    "phase": "STOP",
+    "event_type": "stop",
+    "actor_id": "executor-beta",
+    "summary": "all planned actions passed their declared validators",
+    "refs": []
+  }
+]

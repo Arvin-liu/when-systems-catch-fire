@@ -1,0 +1,45 @@
+{
+  "canonical_id": "C-05",
+  "title": "The multiscale causal fabric satisfies a bounded edge-case identity on synthetic inputs.",
+  "class": "CORE_CAPABILITY_VALIDATION",
+  "is_meta": false,
+  "current_status": "DEFERRED",
+  "provenance": {
+    "source_file": "evidence-program/registry/candidate-portfolio.jsonl",
+    "canonical_id": "C-05",
+    "upstream_source": "docs/architecture/multiscale-causal-fabric.md",
+    "claim_id": "MULTISCALE-CAUSAL-FABRIC-EDGE"
+  },
+  "dependencies": [
+    "MULTISCALE-CAUSAL-FABRIC-EDGE"
+  ],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "evidence-program",
+    "claims-registry"
+  ],
+  "evidence_needs": [
+    "preregistration",
+    "independent replication",
+    "oracle/baseline"
+  ],
+  "stop_conditions": [],
+  "claim_ceiling": "Internal consistency on synthetic data.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 57.8,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.5,
+    "dependency_centrality": 0.6,
+    "falsifiability": 0.6,
+    "data_oracle_availability": 0.5,
+    "expected_information_gain": 0.7,
+    "effort_evidence_cost": 0.4,
+    "reversibility_risk": 0.7,
+    "maturity_gap": 0.6,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.95
+  },
+  "missing_fields": [],
+  "blocked_reason": null
+}

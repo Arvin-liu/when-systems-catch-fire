@@ -1,0 +1,10 @@
+{
+  "schema": "os-steering-intent-obligation-r1.memory-profile-fixtures",
+  "cases": [
+    {"observation_id": "memory-repeated", "source_kind": "OPERATIONAL_MEMORY", "summary": "Repeated synthetic preference observed", "preference_signal": "Prefer a bounded synthetic research brief", "repeated_preference": true, "stale": false, "conflict_with_canonical": false, "canonical_mode": "NONE", "expected_decision": "PROPOSAL_ONLY", "expected_priority_effect": "NONE"},
+    {"observation_id": "esi-advisory", "source_kind": "ESI_ADVISORY", "summary": "Synthetic ESI context", "preference_signal": "ESI suggested direction", "repeated_preference": true, "stale": false, "conflict_with_canonical": false, "canonical_mode": "NONE", "expected_decision": "ADVISORY_ONLY", "expected_priority_effect": "NONE"},
+    {"observation_id": "memory-stale-canonical", "source_kind": "OPERATIONAL_MEMORY", "summary": "Stale context conflicts with canonical intent", "preference_signal": "Use stale direction", "repeated_preference": true, "stale": true, "conflict_with_canonical": true, "canonical_mode": "OWNER", "expected_decision": "CANONICAL_INTENT_WINS", "expected_priority_effect": "CANONICAL_INTENT_ONLY"},
+    {"observation_id": "profile-advisory", "source_kind": "PROFILE_PROJECTION", "summary": "Profile projection narrows runtime", "preference_signal": null, "repeated_preference": false, "stale": false, "conflict_with_canonical": false, "canonical_mode": "OWNER", "expected_decision": "ADVISORY_ONLY", "expected_priority_effect": "NONE"},
+    {"observation_id": "memory-stale-no-canonical", "source_kind": "OPERATIONAL_MEMORY", "summary": "Stale context without canonical intent", "preference_signal": "Old synthetic direction", "repeated_preference": true, "stale": true, "conflict_with_canonical": false, "canonical_mode": "NONE", "expected_decision": "STALE_IGNORED", "expected_priority_effect": "NONE"}
+  ]
+}

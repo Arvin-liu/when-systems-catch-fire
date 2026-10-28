@@ -1,0 +1,42 @@
+{
+  "schema_version": "ignition-141-step05-task140-malformed-correction-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "05",
+  "status": "PASS",
+  "historical_attempt": {
+    "task_id": "IGNITION-20260826-140",
+    "dispatch_id": "dispatch-140-live-01",
+    "attempt_id": "attempt-140-live-01",
+    "record_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+    "live_process_observed": true,
+    "return_code": 1,
+    "capture_completeness": "COMPLETE",
+    "process_group_status": "CONFIRMED_GONE",
+    "structured_result_present": false,
+    "raw_spool_status": "CLEANED",
+    "stdout_byte_count": 0,
+    "stderr_byte_count": 271,
+    "stderr_digest": "6d46bfcaa7d4f3de9fc53fb6e533252b0f7b6a7d70b4e48ea286905a68e13453"
+  },
+  "root_cause": {
+    "status": "ROOT_CAUSE_NOT_RECOVERABLE_FROM_TASK140_FORMAL_EVIDENCE",
+    "reason": "Raw spool was cleaned and formal evidence retains only public byte counts and digests, not diagnostic text",
+    "elapsed_seconds": 0.05828,
+    "elapsed_time_inference": "FORBIDDEN",
+    "same_family_retry": "NOT_AUTHORIZED_UNLESS_PUBLIC_ROOT_CAUSE_IS_CONFIRMED_AND_FIXED"
+  },
+  "correction": {
+    "mode": "ADDITIVE_PROVENANCE_OVERLAY",
+    "overlay_path": "ignition/data/operations/iterations/141/live-inference-observation-events-r1.jsonl",
+    "inference_observation_status": "NOT_OBSERVED",
+    "marker_observed": false,
+    "task140_raw_receipt_rewritten": false,
+    "task140_ledger_hash_rewritten": false,
+    "task140_projection_rewritten": false
+  },
+  "forensics": {
+    "historical_capsule": "NOT_AVAILABLE",
+    "future_failure_paths": "REQUIRE_FAILURE_FORENSICS_CAPSULE_BEFORE_RAW_SPOOL_DISPOSAL"
+  },
+  "claim_ceiling": "Task140 historical process observation and conservative Task141 correction only; precise malformed root cause, private inference, validated completion, external truth, production readiness, Owner acceptance and epistemic upgrade remain unclaimed."
+}

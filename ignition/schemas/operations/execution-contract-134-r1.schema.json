@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/execution-contract-134-r1.schema.json",
+  "title": "Ignition Task134 formal execution contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "task_id", "control_source", "formal_baseline", "identity_impact", "expected_task_branch", "expected_receipt_branch", "required_release_ref", "no_owner_intermediate", "identity_expectations", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "execution-contract-r1"},
+    "contract_id": {"const": "IGNITION_EXECUTION_CONTRACT_R1"},
+    "task_id": {"const": "IGNITION-20260822-134"},
+    "control_source": {"$ref": "#/$defs/controlSource"},
+    "formal_baseline": {"$ref": "#/$defs/formalBaseline"},
+    "identity_impact": {"const": "PRESENTATION_ONLY"},
+    "expected_task_branch": {"const": "codex/ignition-134-residual-debt-projection-hygiene-r1-20260822"},
+    "expected_receipt_branch": {"const": "relay/receipts/ignition-134-residual-debt-projection-hygiene-r1-20260822"},
+    "required_release_ref": {"const": "refs/heads/main"},
+    "no_owner_intermediate": {"const": true},
+    "identity_expectations": {"$ref": "#/$defs/identityExpectations"},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "controlSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "ref", "commit", "command_path"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "ref": {"const": "origin/relay/current"},
+        "commit": {"const": "3fc8a329eb4f581d1940688046bdc16f4594417d"},
+        "command_path": {"const": "agent-commands/IGNITION-20260822-134-residual-debt-projection-hygiene-r1.md"}
+      }
+    },
+    "formalBaseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "ref", "sha"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "ref": {"const": "refs/heads/main"},
+        "sha": {"const": "517510aed545ff440c3464536ba2964c94e5f560"}
+      }
+    },
+    "identityExpectations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_formal_task", "latest_architecture_changing_task", "previous_canonical_current_task", "previous_formal_task", "release_candidate_task", "publication_witness_task"],
+      "properties": {
+        "current_formal_task": {"const": "IGNITION-20260822-134"},
+        "latest_architecture_changing_task": {"const": "IGNITION-20260821-129"},
+        "previous_canonical_current_task": {"const": "IGNITION-20260822-133"},
+        "previous_formal_task": {"const": "IGNITION-20260822-133"},
+        "release_candidate_task": {"const": "IGNITION-20260822-134"},
+        "publication_witness_task": {"const": "IGNITION-20260822-134"}
+      }
+    }
+  }
+}

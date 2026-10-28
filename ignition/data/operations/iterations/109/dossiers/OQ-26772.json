@@ -1,0 +1,43 @@
+{
+  "canonical_id": "OQ-26772",
+  "title": "量子引力",
+  "class": "SCIENTIFIC_EVIDENCE",
+  "is_meta": false,
+  "current_status": "OPEN_QUESTION",
+  "provenance": {
+    "source_file": "RESULTS/OPEN-QUESTIONS.md",
+    "canonical_id": "OQ-26772"
+  },
+  "dependencies": [],
+  "prerequisite_unresolved": false,
+  "affected_surfaces": [
+    "articles",
+    "research-program"
+  ],
+  "evidence_needs": [
+    "明确理论对象、半经典极限、一致性条件与可观测检验。"
+  ],
+  "stop_conditions": [
+    "门函数投影若只重命名问题而无动力学与预测，不提升成熟度。"
+  ],
+  "claim_ceiling": "Open research question; not a promised roadmap item.",
+  "authority": "REPO_OWNER",
+  "aggregate_score": 47.24,
+  "factor_vector": {
+    "consequence_of_being_wrong": 0.8,
+    "dependency_centrality": 0.5,
+    "falsifiability": 0.2,
+    "data_oracle_availability": 0.2,
+    "expected_information_gain": 0.6,
+    "effort_evidence_cost": 0.15,
+    "reversibility_risk": 0.5,
+    "maturity_gap": 0.85,
+    "owner_relevance": 0.7,
+    "duplication_prior_failure": 0.6,
+    "substantive_vs_meta": 0.92
+  },
+  "missing_fields": [
+    "dependency_centrality"
+  ],
+  "blocked_reason": null
+}
