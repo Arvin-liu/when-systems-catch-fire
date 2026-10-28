@@ -2254,6 +2254,11 @@
   - 可搜索名称：NFC-a5514c421bdd6d61 / data/foundation/project-state.json、data/architecture/agentization-boundary-r0.json 与 registry-manifest.json：机器状态与边界投影。
   - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
+- [DECISION-INTEGRITY repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-55571c37dc8b05e5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：DECISION-INTEGRITY repair-r2 — R4 freeze / DECISION-INTEGRITY-REPAIR-R2-freeze
+  - 来源：`reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
 - [DECISION-INTEGRITY-I1 Architecture Decision — Principle Lock, Process Quality & Outcome-Bias Governance](../../../docs/decision/decision-integrity-i1-architecture-decision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-1ad1954fac5552e7 / DECISION-INTEGRITY-I1 Architecture Decision — Principle Lock, Process Quality & Outcome-Bias Governance
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ab0af43d35333449 / Domain layer（案例、对象、事件）→ 历史案例来源（790 条）
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
-  - 依赖：—；被引用：—
-- [dominant discourse is not fact](../../../docs/metacognition/scientific-metacognition-i1-architecture-decision.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5a6688c60ae59cfe / dominant discourse is not fact
-  - 来源：`docs/metacognition/scientific-metacognition-i1-architecture-decision.md`
   - 依赖：—；被引用：—

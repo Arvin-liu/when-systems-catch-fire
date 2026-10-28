@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [dominant discourse is not fact](../../../docs/metacognition/scientific-metacognition-i1-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a6688c60ae59cfe / dominant discourse is not fact
+  - 来源：`docs/metacognition/scientific-metacognition-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
 - [Duplicate, complementary and same-task notions drive discard/merge/utility decisions, but no behavioral equivalence, com](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7f10b159af22edd9 / Duplicate, complementary and same-task notions drive discard/merge/utility decisions, but no behavioral equivalence, com
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-029df6aa0fcf0152 / Repository-local Current Surface projection, semantic consistency, lifecycle and release evidence only; no Owner authori
   - 来源：`agent-results/IGNITION-20260821-130-machine-receipt.json`
-  - 依赖：—；被引用：—
-- [Repository-local deterministic Steering / Intent / Goal / Commitment modeling and current architecture projection only;](../../../agent-results/IGNITION-20260821-129-machine-receipt.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8fc2b78389b2cb7b / Repository-local deterministic Steering / Intent / Goal / Commitment modeling and current architecture projection only;
-  - 来源：`agent-results/IGNITION-20260821-129-machine-receipt.json`
   - 依赖：—；被引用：—

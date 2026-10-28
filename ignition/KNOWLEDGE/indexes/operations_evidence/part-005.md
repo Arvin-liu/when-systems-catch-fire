@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D011643 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json / D011643 / A5046780990
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D012106 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json / D012106 / A5046780990
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json`
   - 依赖：—；被引用：—
@@ -1208,6 +1213,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7616657AD24024FE / f\(道德自居\) = σ\(θ_moral - ε_identity\) × R_bias / IMPLICIT-7616657AD24024FE / IMPLICIT-73D12597976E83DD
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [F15-D1 repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-3dbae4b94e7b9f19)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：F15-D1 repair-r2 — R4 freeze / F15-D1-REPAIR-R2-freeze
+  - 来源：`reports/operations/F15-D1-REPAIR-R2-freeze.md`
   - 依赖：—；被引用：—
 - [F_adaptive_evolution := ∫\(environmental_perception × self_adjustment × adaptation_enhancement\) / evolutionary_protocol](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-7096d148b46fc2e6 / NC-002 表演化假课与指标消解温度：暂缓（待 NF-002 先入表后对应）
   - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [New projections use `live-current-projection-r2`. Typed attempt summaries do](../../../reports/operations/ignition-140-step04-typed-observation-outcomes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7df8eaff4320ebb4 / New projections use `live-current-projection-r2`. Typed attempt summaries do
-  - 来源：`reports/operations/ignition-140-step04-typed-observation-outcomes.md`
-  - 依赖：—；被引用：—
-- [NEW_OBJECT_TYPE（8个 HIGH）**：GAP-001~008，对应 087 重算 missing 占多数（164~250），需开新对象类型承载外部理论来源族。](../../../data/external-research/088-patch-blueprint.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-3badfadb463ef0e3 / NEW_OBJECT_TYPE（8个 HIGH）**：GAP-001~008，对应 087 重算 missing 占多数（164~250），需开新对象类型承载外部理论来源族。
-  - 来源：`data/external-research/088-patch-blueprint.md`
   - 依赖：—；被引用：—
