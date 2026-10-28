@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/component-release-manifest-r1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "component_id", "version", "release_tag", "source_repository", "source_commit_sha", "source_tree_sha", "artifact_file", "artifact_sha256", "artifact_bytes", "artifact_state", "bundle_component_ids", "files", "validation", "previous_release", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "component-release-manifest-r1"},
+    "component_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+    "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "release_tag": {"type": "string", "minLength": 1},
+    "source_repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+    "source_commit_sha": {"$ref": "#/$defs/sha40"},
+    "source_tree_sha": {"$ref": "#/$defs/sha40"},
+    "artifact_file": {"type": "string", "minLength": 1},
+    "artifact_sha256": {"$ref": "#/$defs/sha256"},
+    "artifact_bytes": {"type": "integer", "minimum": 1},
+    "artifact_state": {"const": "CONTENT_ADDRESSED"},
+    "bundle_component_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"}},
+    "files": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["path", "component_id", "git_blob_sha", "sha256", "bytes", "executable"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "component_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "git_blob_sha": {"$ref": "#/$defs/sha40"},
+          "sha256": {"$ref": "#/$defs/sha256"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "executable": {"type": "boolean"}
+        }
+      }
+    },
+    "validation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["plan_sha256", "receipt_sha256", "validation_sha", "validation_map_sha256", "selected_target_ids"],
+      "properties": {
+        "plan_sha256": {"$ref": "#/$defs/sha256"},
+        "receipt_sha256": {"$ref": "#/$defs/sha256"},
+        "validation_sha": {"$ref": "#/$defs/sha40"},
+        "validation_map_sha256": {"$ref": "#/$defs/sha256"},
+        "selected_target_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"}}
+      }
+    },
+    "previous_release": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["version", "release_tag", "artifact_sha256"],
+          "properties": {
+            "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+            "release_tag": {"type": "string", "minLength": 1},
+            "artifact_sha256": {"$ref": "#/$defs/sha256"}
+          }
+        }
+      ]
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "sha40": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
