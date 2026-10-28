@@ -910,6 +910,7 @@
       "validation_targets": [
         "g_arr_runtime",
         "g_human_front_door_consumers",
+        "g_repository_path_consumers",
         "o_human_result_consumers"
       ],
       "change_classifications": [
@@ -917,7 +918,7 @@
         "EVIDENCE_UPDATE",
         "INTERFACE_CHANGE"
       ],
-      "evidence": "ARR registry, schemas, architecture, and map projection changes are checked by the existing human front-door and human-result consumers plus the registered ARR static gate and focused pytest suite."
+      "evidence": "ARR registry, schemas, architecture, and map projection changes are checked by the existing human front-door and human-result consumers plus the registered ARR static gate and focused pytest suite. Q33 era-resolver repair evidence also routes through g_repository_path_consumers, including the existing era-resolver regression module."
     },
     {
       "component_id": "arr_runtime",

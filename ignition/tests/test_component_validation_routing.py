@@ -223,6 +223,15 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(item["authorized_overlap"]["authority_source"], "FOUNDATION.md")
         self.assertIn("formal-objects.jsonl", item["path"])
 
+    def test_q33_era_resolver_evidence_routes_to_existing_arr_consumers(self):
+        result = self.plan([
+            "evidence/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1/CI_FAILURE_REPRODUCTION.md"
+        ])
+        self.assertEqual(result["mode"], "TARGETED")
+        self.assertEqual(result["seed_components"], ["arr"])
+        self.assertIn("g_repository_path_consumers", result["selected_target_ids"])
+        self.assertIn("g_arr_runtime", result["selected_target_ids"])
+
     def test_unmapped_path_is_not_hidden_by_an_independent_full_trigger(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
             self.plan([".github/workflows/foundation-validation.yml", "tools/unregistered-output.py"])

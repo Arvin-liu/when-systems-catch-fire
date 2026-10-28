@@ -3265,7 +3265,8 @@
         "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
         "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
         "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
-        "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/"
+        "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/",
+        "evidence/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1/"
       ],
       "authority": "declarative",
       "layer_or_overlay": "overlay",
