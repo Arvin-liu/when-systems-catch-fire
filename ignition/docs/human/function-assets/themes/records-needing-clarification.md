@@ -26,10 +26,10 @@
 
 它是一个需要回到定义、边界和反例的函数登记。 [打开人话说明](../entries/a0.md)
 
-## data/operations/iterations/109/candidate_inventory.json
+## data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl
 
-它是一个需要回到定义、边界和反例的函数登记。 [打开人话说明](../entries/a01.md)
+它是一个需要回到定义、边界和反例的函数登记。 [打开人话说明](../entries/a0004.md)
 
-## data/operations/iterations/109/candidate_inventory.json
+## data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl
 
-它是一个需要回到定义、边界和反例的函数登记。 [打开人话说明](../entries/a02.md)
+它是一个需要回到定义、边界和反例的函数登记。 [打开人话说明](../entries/a0036.md)

@@ -1,0 +1,33 @@
+{
+  "after_each_mutation": [
+    "freeze rationale",
+    "replay all prior works",
+    "compare residuals exceptions questions falsifiers and causal reconstruction",
+    "test rename/schema migration/local patch explanation",
+    "discard without real capability or compression increment"
+  ],
+  "competing_representations": [
+    "current_state",
+    "current_state_plus_local_patches",
+    "one_different_structure_direction",
+    "formal_basis_after_discovery_freeze"
+  ],
+  "frozen_before_blind_run": true,
+  "max_generations": 6,
+  "mutation_is_not_forced_per_source": true,
+  "stop_rules": [
+    "two generations without holdout or ablation improvement",
+    "two generations compile away",
+    "complexity exceeds benefit",
+    "no residual reaches trigger"
+  ],
+  "task_id": "IGNITION-20260907-163",
+  "triggers": [
+    "same irreducible residual in at least 3 independent works and at least 2 domains",
+    "at least 5 distinct local exceptions",
+    "irreconcilable contradictory predictions",
+    "question language cannot express a material-required question",
+    "new falsifier catches a failure after current checks pass",
+    "complexity-adjusted compression or explanatory coverage improves"
+  ]
+}

@@ -4,6 +4,6 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → Gateway, inspect OpenClaw state, copy OpenClaw memory, or expose OpenClaw's
-- [第 002 片](./cognition/part-002.md)：501—1000；Gateway、channel、私有数据库、daemon、长期会话或配置/secret；未声明的 → transport_evidence,
-- [第 003 片](./cognition/part-003.md)：1001—1355；transport_evidence: Mapping\[str, Any\], → 高维认知必然多轨，dim>1 ⟹ P_track>1。
+- [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → for field in \("validated_completed_work", "pending_work", "allowed_capabilities", "workspace_refs", "acceptance_criteria
+- [第 002 片](./cognition/part-002.md)：501—1000；for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs", → This ledger is a correction/provenance overlay. It never rewrites the older
+- [第 003 片](./cognition/part-003.md)：1001—1392；This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion. → 高维认知必然多轨，dim>1 ⟹ P_track>1。

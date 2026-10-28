@@ -1,0 +1,4 @@
+{"false_positive_control":"same ledger and same proxy","l2_count":24,"l3_count":1,"pool_size":120,"reactivation_policy":"all frozen dormant records available","variant":"with_pool"}
+{"false_positive_control":"exploratory ablation only","l2_count":23,"l3_count":0,"pool_size":0,"reactivation_policy":"dormant records removed; active thread field retained","variant":"active_only"}
+{"false_positive_control":"no target-term ranking","l2_count":24,"l3_count":1,"pool_size":120,"reactivation_policy":"frozen source order with relevance proxy","variant":"dormant_relevance_sorted"}
+{"false_positive_control":"random same-size comparator","l2_count":24,"l3_count":1,"pool_size":120,"reactivation_policy":"deterministic low-score random sample","variant":"dormant_low_random"}

@@ -1,0 +1,8 @@
+{
+  "all_candidates_pass_v2": false,
+  "candidate_count": 10,
+  "reason": "no candidate has independently established L2/L3/L4/L6; no cognitive independence; no canonical validation",
+  "status": "UNDERDETERMINED",
+  "task159_v2_signature_reused_exactly": true,
+  "task_id": "IGNITION-20260907-162"
+}

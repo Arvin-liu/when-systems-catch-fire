@@ -66,14 +66,25 @@ GENERATED_PREFIXES = (
     "PUBLICATIONS/",
     "docs/human/",
     "data/publication/fire-seeds/",
-    # Durability/lifecycle contracts and receipts are OS machine records; they
-    # must remain provenance-only and cannot feed Foundation discovery.
-    "data/operations/durability/",
     # Task155 research-only blind-test corpus is evidence for a non-canonical
     # study and must not feed the function-asset census.
     "data/research/cross-contract-blind-test-2026-09-05/",
-    # Task156 prospective fixture corpus is likewise research-only evidence.
+    # Task156 prospective fixtures are bounded research inputs, not function
+    # asset sources.
     "data/research/cross-contract-prospective-fixtures-2026-09-05/",
+    # Durability/lifecycle contracts and receipts are OS machine records; they
+    # must remain provenance-only and cannot feed Foundation discovery.
+    "data/operations/durability/",
+    # Task158 research-only basis-escape records are evidence for a
+    # non-canonical study and must not feed the function-asset census.
+    "data/research/basis-escape-meta-plasticity-2026-09-06/",
+    # Task160 research-only basis-escape V2 records are likewise accounted for
+    # but cannot become function-asset discovery input.  This is a scoped
+    # source-discovery exclusion; canonical eligibility semantics are unchanged.
+    "data/research/basis-escape-v2-2026-09-07/",
+    # Task159 semantic-detector research records are comparison inputs only;
+    # they must remain outside function discovery to avoid answer backflow.
+    "data/research/semantic-leap-detector-v2-2026-09-07/",
     # Task141 live-state semantics and structured-result receipts are
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.
@@ -96,6 +107,10 @@ GENERATED_EXACT_PATHS = {
     "tools/governance/validate_human_surface_contract.py",
     "tests/test_overall_architecture.py",
     "tests/test_fire_seeds.py",
+    # The declarative G-domain validation map is included by the policy's
+    # automatic text discovery, but is operational mapping data rather than a
+    # mathematical function-asset source.
+    "data/operations/component-validation-map-r1.json",
     "data/architecture/overall-architecture.json",
     "data/foundation/project-state.json",
     "data/foundation/registry-manifest.json",
@@ -196,8 +211,8 @@ GENERATED_EXACT_PATHS = {
     "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-155.md",
     "agent-results/IGNITION-20260905-155-result.md",
-    # Task156 research harness, narrative records and result are bounded
-    # evidence, not function-asset discovery sources.
+    # Task156 research harness, tests, narrative and result are evidence, not
+    # function-asset discovery sources.
     "tools/research/cross_contract_prospective_experiment.py",
     "tests/test_cross_contract_prospective_experiment.py",
     "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
@@ -205,6 +220,34 @@ GENERATED_EXACT_PATHS = {
     "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-156.md",
     "agent-results/IGNITION-20260905-156-result.md",
+    # Task158 research-only narrative and receipt records are not
+    # function-asset sources; source-discovery accounting still retains them.
+    "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",
+    "docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md",
+    "docs/governance/representation-residual-casebook-2026-09-06.md",
+    "docs/governance/ignition-generator-plasticity-audit-2026-09-06.md",
+    "docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-158.md",
+    "agent-results/IGNITION-20260906-158-result.md",
+    # Task160 research-only narrative, tooling, tests and receipts are
+    # provenance outputs, not function-asset sources.
+    "tools/research/task160_basis_escape_v2.py",
+    "tests/test_task160_basis_escape_v2.py",
+    "docs/governance/basis-escape-v2-2026-09-07.md",
+    "docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md",
+    "docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md",
+    "docs/governance/generator-meta-plasticity-v2-2026-09-07.md",
+    "docs/governance/next-semantic-leap-assessment-2026-09-07.md",
+    "reports/governance/task-IGNITION-20260907-160.md",
+    "agent-results/IGNITION-20260907-160-result.md",
+    "agent-results/IGNITION-20260907-160-progress.md",
+    "agent-results/IGNITION-20260907-160-run-state.json",
+    "agent-results/IGNITION-20260907-160-step-ledger.json",
+    "tools/research/task159_semantic_leap_detector.py",
+    "tests/test_semantic_leap_detector_task159.py",
+    "docs/governance/semantic-leap-detector-v2-2026-09-07.md",
+    "reports/governance/task-IGNITION-20260907-159.md",
+    "agent-results/IGNITION-20260907-159-result.md",
 }
 SCANNER_VERSION = "2.0.0"
 SNAPSHOT = "function-census-v2-20260729"
