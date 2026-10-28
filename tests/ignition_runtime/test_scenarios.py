@@ -718,6 +718,9 @@ def test_s43_diff_scope():
         "ignition/reports/ignition-rpe/",
         "ignition/AI-HANDOFF.md",
         "ignition/AI-START-HERE.md",
+        # These exact paths keep the current-map version fact canonical across validation and the machine entry.
+        "ignition/tools/validate_human_front_door.py",
+        "ignition/llms.txt",
         "ignition/KNOWLEDGE/",
         "ignition/RESULTS/",
         "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
