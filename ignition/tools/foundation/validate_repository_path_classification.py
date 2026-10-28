@@ -66,7 +66,7 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     # 5. Test fixtures.
     ("TEST_FIXTURE", ("tests/",)),
     # 6. Generated projections / outputs / reports.
-    ("GENERATED_PROJECTION", ("outputs/", "reports/")),
+    ("GENERATED_PROJECTION", ("outputs/", "reports/", "pages/generated/")),
     # 7. Evidence / benchmark results.
     ("EVIDENCE_OR_BENCHMARK", ("evidence-program/", "case_failures/")),
     # 8. Candidate (non-authoritative) claims -- must NOT be authoritative.

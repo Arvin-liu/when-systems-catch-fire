@@ -44,6 +44,12 @@ class PositiveTreeTest(unittest.TestCase):
         self.assertEqual(rc, 0, c.text())
         self.assertIn("REPOSITORY_PATH_CLASSIFICATION_VALID", c.text())
 
+    def test_generated_pages_are_non_authoritative_projections(self) -> None:
+        self.assertEqual(
+            preflight.classify("pages/generated/ignition-system-map.svg"),
+            ("GENERATED_PROJECTION", "GENERATED_PROJECTION"),
+        )
+
 
 class NegativeClassificationTest(unittest.TestCase):
     def _live_real(self) -> dict:
