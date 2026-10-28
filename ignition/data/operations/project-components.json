@@ -119,6 +119,7 @@
         "copyright_governance_tests",
         "epistemic_governance_kernel",
         "human_knowledge_surfaces",
+        "junction_vs_local_predicates_task157",
         "licensing"
       ],
       "path_patterns": [
@@ -128,7 +129,7 @@
         "tests/test_q33_governance_infrastructure.py",
         "docs/governance/"
       ],
-      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
+      "reason": "Q33 governance components and the frozen Task157 comparison share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/. Task157 remains historical evidence and gains no current capability from the overlap."
     },
     {
       "authority_source": "docs/operations/stage-snapshot-publication.md",
