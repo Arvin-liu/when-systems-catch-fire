@@ -749,6 +749,15 @@ def test_s43_diff_scope():
         "ignition/data/operations/iterations/ARR-R1-SCAFFOLD.json",
         "ignition/docs/architecture/",
         "ignition/docs/generated/ignition-system-map.svg",
+        # Exact generated Foundation human projections changed by ARR's registry
+        # updates: aggregate totals and the two affected A1/A2 fingerprints.
+        # Keep each function-asset path explicit so unrelated prose stays blocked.
+        "ignition/docs/human/function-assets/README.md",
+        "ignition/docs/human/function-assets/bulk-explanation.md",
+        "ignition/docs/human/function-assets/entries/a1.md",
+        "ignition/docs/human/function-assets/entries/a2.md",
+        "ignition/docs/human/nonfunction-assets/README.md",
+        "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
         "ignition/docs/human/nonfunction-assets/entries/",
         "ignition/docs/project-current-state.md",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
