@@ -82,7 +82,7 @@
     {
       "surface": "data/operations/project-components.json",
       "decision": "CHANGE",
-      "reason": "ARR components registered; registry_version 1.1.13 -> 1.1.14."
+      "reason": "ARR components are registered and system_map_layout explicitly owns the geometry validator; registry_version 2.9.11 -> 2.9.12."
     },
     {
       "surface": "data/operations/change-propagation-topology.json",
