@@ -668,6 +668,23 @@
       "evidence": "The registry assigns .github/README.md as the current-state and usage entry; typed relations connect the front door to current_state and knowledge surfaces, covered by the existing G front-door and O result-consumer suites."
     },
     {
+      "component_id": "summary",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registry assigns SUMMARY.md as a current topic entry. Its R5-A status stays Draft and non-activated; the existing G front-door and O result-consumer suites validate the updated navigation boundary."
+    },
+    {
       "component_id": "research_workflow_slot",
       "domains": [
         "R"
