@@ -185,6 +185,60 @@ def build_synthetic_evidence(root: str, n: int, seed: int = 0) -> str:
     return root
 
 
+# The exact 27 capability item IDs of the sealed R3 CAPABILITY_COVERAGE_MATRIX,
+# in a fixed, deterministic order. These are capability *check names* (public
+# structural artifacts), not private note identities, so they may be referenced
+# in tests. They are kept in sync with arr_r4_self_reflection/capability_classifier.py.
+R4_CAPABILITY_ITEM_IDS = [
+    # OPERATIONAL (17)
+    "exact_836_plus_index_inventory",
+    "exact_type_distribution",
+    "no_source_mutation",
+    "duplicate_note_id_handling",
+    "malformed_frontmatter_isolation",
+    "deterministic_shard_plan_under_reorder",
+    "shard_namespace_isolation",
+    "three_crash_resume_scenarios",
+    "completed_run_idempotent_replay",
+    "changed_note_selective_rerun",
+    "all_836_receipts_present",
+    "silent_disappearances_zero",
+    "public_private_content_leakage_zero",
+    "changed_path_propagation_residue_zero",
+    "ambiguous_path_mapping_zero",
+    "system_map_front_doors_iteration_sync",
+    "q33_and_foundation_ci_green_at_head",
+    # SEMANTIC (4)
+    "event_time_distinct_from_created_time",
+    "missing_time_never_guessed",
+    "generic_relation_not_cause",
+    "decorative_probability_rejected",
+    # EVIDENCE (3)
+    "speaker_company_not_elevated",
+    "inferred_not_elevated_to_belief",
+    "same_source_not_counted_independent",
+    # GOVERNANCE (3)
+    "promote_calls_zero",
+    "evolve_calls_zero",
+    "real_world_actions_zero",
+]
+
+
+def r4_capability_matrix() -> Dict[str, Any]:
+    """In-memory R3 capability matrix carrying the exact 27 real item IDs.
+
+    Used by the closed-set classification tests so the 27-item contract can be
+    exercised deterministically without the private 836-note corpus.
+    """
+    return {
+        "schema": "r3/capability_coverage_matrix/v1",
+        "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+        "total_items": 27,
+        "all_pass": True,
+        "items": [{"id": cid, "pass": True, "evidence": "fixture"} for cid in R4_CAPABILITY_ITEM_IDS],
+    }
+
+
 def r3_like_reports() -> Dict[str, Any]:
     """In-memory report dict mimicking the REAL R3 aggregate values, for
     contradiction-engine unit tests (no private content)."""

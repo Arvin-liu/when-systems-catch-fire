@@ -35,6 +35,7 @@ def project_public_summary(analysis: Dict[str, Any]) -> Dict[str, Any]:
                 "id": c["contradiction_id"],
                 "disposition": c["disposition"],
                 "unresolved": False,
+                "lifecycle": c.get("lifecycle", {}),
             }
             for c in contradictions
         ],
@@ -44,6 +45,6 @@ def project_public_summary(analysis: Dict[str, Any]) -> Dict[str, Any]:
         "architecture_candidates_total": analysis["architecture_register"]["candidates_total"],
         "no_evolve_total": analysis["architecture_register"]["no_evolve_total"],
         "counters": {k: v for k, v in counters.items()},
-        "terminal_verdict": "ARR_R4_WAIC_SELF_REFLECTION_DRAFT_AWAITING_EXTERNAL_REVIEW",
+        "terminal_verdict": analysis.get("terminal_verdict", "ARR_R4_WAIC_SELF_REFLECTION_DRAFT_AWAITING_EXTERNAL_REVIEW"),
         "privacy_boundary": "no private note titles, raw text, transcript, URL lists, or reconstructive features are present in this public projection",
     }

@@ -14,6 +14,12 @@ hard-codes the 836 note ids, private titles, or R3 result values as passing cond
 """
 
 from .arch_gate import ArchitectureCandidateGate
+from .capability_classifier import (
+    CAPABILITY_CLOSED_SET_SIZE,
+    CAPABILITY_DIMENSION_REGISTRY,
+    classify_capability_coverage,
+    validate_closed_set_invariants,
+)
 from .four_axis import FourAxisDeriver
 from .ingest import SealedEvidenceIngestor
 from .metric_consistency import MetricContradictionEngine
@@ -27,4 +33,8 @@ __all__ = [
     "MetricContradictionEngine",
     "project_public_summary",
     "run",
+    "classify_capability_coverage",
+    "validate_closed_set_invariants",
+    "CAPABILITY_DIMENSION_REGISTRY",
+    "CAPABILITY_CLOSED_SET_SIZE",
 ]

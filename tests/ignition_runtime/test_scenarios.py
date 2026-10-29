@@ -903,6 +903,8 @@ def test_s43_diff_scope():
         "ignition/docs/architecture/arr-r4-gap-candidate-gate.md",
         "ignition/docs/architecture/arr-r4-public-aggregate.json",
         "ignition/docs/architecture/arr-r4-self-reflection.md",
+        "ignition/docs/architecture/arr-r4-metric-disclosure-repair-external-review.md",
+        "ignition/docs/architecture/arr-r4-receipt-closure-diagnosis.md",
         "ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md",
     )
     out = git("diff", "--name-only", PR_BASE)

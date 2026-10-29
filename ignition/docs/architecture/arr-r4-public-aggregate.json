@@ -1,35 +1,98 @@
 {
   "architecture_candidates_total": 0,
   "capability_reinterpretation": {
-    "all_pass_true_meaning": "all_pass aggregates OPERATIONAL/Safety/Governance properties only; it does NOT assert semantic understanding or evidence coverage.",
-    "dimension_dimension_disclosure_defect": true,
-    "evidence_coverage": {
-      "independently_supported": 0,
-      "measured": true,
-      "note": "0 of 836 objects reach INDEPENDENTLY_SUPPORTED"
+    "all_pass_true_meaning": "all_pass aggregates OPERATIONAL/Safety/Governance properties only; it does NOT assert semantic understanding or evidence coverage, and the 27 items are now exhaustively and mutually-exclusively allocated to one primary dimension each.",
+    "capability_dimension_disclosure_defect_present": false,
+    "closed_set": {
+      "classified_total": 27,
+      "expected_total": 27,
+      "invariant_ok": true,
+      "primary_overlap_total": 0,
+      "sum_primary_dimension_counts": 27,
+      "unclassified_items": [],
+      "unclassified_total": 0
     },
-    "governance_coverage": {
-      "boundary_held": 836,
-      "governance_items": 3,
-      "measured": true,
-      "prohibited_actions": 0
+    "dimensions": {
+      "EVIDENCE": {
+        "definition": "Evidence-quality guardrails (claim not elevated to verified, inference not elevated to belief, same source not counted independent). Distinct from the orthogonal INDEPENDENTLY_SUPPORTED outcome count.",
+        "fail": 0,
+        "item_count": 3,
+        "items": [
+          "same_source_not_counted_independent",
+          "speaker_company_not_elevated",
+          "inferred_not_elevated_to_belief"
+        ],
+        "measured": true,
+        "pass": 3,
+        "status": "pass"
+      },
+      "GOVERNANCE": {
+        "definition": "Prohibited-action checks (promote / evolve / real-world action == 0). Distinct from the orthogonal safety_boundary_held_objects invariant.",
+        "fail": 0,
+        "item_count": 3,
+        "items": [
+          "promote_calls_zero",
+          "evolve_calls_zero",
+          "real_world_actions_zero"
+        ],
+        "measured": true,
+        "pass": 3,
+        "status": "pass"
+      },
+      "OPERATIONAL": {
+        "definition": "Pipeline execution and corpus-integrity correctness (inventory, sharding, processing, receipting, replay, rerun, leak/ disappearance zero).",
+        "fail": 0,
+        "item_count": 17,
+        "items": [
+          "exact_836_plus_index_inventory",
+          "exact_type_distribution",
+          "no_source_mutation",
+          "duplicate_note_id_handling",
+          "malformed_frontmatter_isolation",
+          "deterministic_shard_plan_under_reorder",
+          "shard_namespace_isolation",
+          "three_crash_resume_scenarios",
+          "completed_run_idempotent_replay",
+          "changed_note_selective_rerun",
+          "all_836_receipts_present",
+          "silent_disappearances_zero",
+          "public_private_content_leakage_zero",
+          "changed_path_propagation_residue_zero",
+          "ambiguous_path_mapping_zero",
+          "system_map_front_doors_iteration_sync",
+          "q33_and_foundation_ci_green_at_head"
+        ],
+        "measured": true,
+        "pass": 17,
+        "status": "pass"
+      },
+      "SEMANTIC": {
+        "definition": "Semantic interpretation guardrails only (event-time vs created-time, no time guessing, relation!=cause, no decorative probability). R3 ran no semantic-understanding stage.",
+        "fail": 0,
+        "item_count": 4,
+        "items": [
+          "event_time_distinct_from_created_time",
+          "missing_time_never_guessed",
+          "generic_relation_not_cause",
+          "decorative_probability_rejected"
+        ],
+        "measured": false,
+        "pass": 4,
+        "status": "not_measured"
+      }
     },
-    "operational_coverage": {
-      "fail": 0,
-      "items": 17,
-      "measured": true,
-      "pass": 17
+    "evidence_quality_outcome": {
+      "independently_supported_count": 0,
+      "note": "Orthogonal to the EVIDENCE capability-check items: this counts objects that reach INDEPENDENTLY_SUPPORTED, not the three EVIDENCE guardrail checks."
     },
-    "schema": "r4/capability_coverage_reinterpretation/v1",
-    "semantic_coverage": {
-      "fail": 0,
-      "items": 0,
-      "measured": false,
-      "note": "R3 performed no semantic-understanding stage; coverage absent",
-      "pass": 0
-    }
+    "governance_safety_invariant": {
+      "note": "Orthogonal to the mutually-exclusive primary governance status enum (BOUNDARY_HELD=27, CONSENT_OR_RIGHTS_LIMITED=809): means no PROMOTE/EVOLVE/real-world/consent-violating action occurred across all objects.",
+      "prohibited_actions": 0,
+      "safety_boundary_held_objects": 836
+    },
+    "schema": "r4/capability_coverage_reinterpretation/v2"
   },
-  "control_commit": "e8530a7d87f13ef09cea58d34f6f548a695d7955",
+  "control_commit": "e0926ccb53b4bdf7b08bd54c92f440a98c7f7201",
   "counters": {
     "ARCHITECTURE_CANDIDATES_TOTAL": 0,
     "EVOLVE_CALLS": 0,
@@ -85,31 +148,79 @@
     {
       "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
       "id": "M1_SUCCESS_VS_SEMANTIC",
+      "lifecycle": {
+        "classification_resolved": true,
+        "disposition_assigned": true,
+        "followup_required": true,
+        "followup_route": "wording/definition clarification (no code defect proven)",
+        "underlying_defect_present": false,
+        "underlying_defect_repaired": false
+      },
       "unresolved": false
     },
     {
       "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
       "id": "M2_UNKNOWN_RETENTION",
+      "lifecycle": {
+        "classification_resolved": true,
+        "disposition_assigned": true,
+        "followup_required": true,
+        "followup_route": "wording/definition clarification (no code defect proven)",
+        "underlying_defect_present": false,
+        "underlying_defect_repaired": false
+      },
       "unresolved": false
     },
     {
       "disposition": "AGGREGATION_DEFECT",
       "id": "M3_CRASH_RECOVERY_RATE",
+      "lifecycle": {
+        "classification_resolved": true,
+        "disposition_assigned": true,
+        "followup_required": true,
+        "followup_route": "separately authorized R3 metric repair (AGGREGATE_METRICS aggregation defect)",
+        "underlying_defect_present": true,
+        "underlying_defect_repaired": false
+      },
       "unresolved": false
     },
     {
       "disposition": "AGGREGATION_DEFECT",
       "id": "M4_INCREMENTAL_SELECTIVITY",
+      "lifecycle": {
+        "classification_resolved": true,
+        "disposition_assigned": true,
+        "followup_required": true,
+        "followup_route": "separately authorized R3 metric repair (AGGREGATE_METRICS aggregation defect)",
+        "underlying_defect_present": true,
+        "underlying_defect_repaired": false
+      },
       "unresolved": false
     },
     {
       "disposition": "REPORTING_DEFECT",
       "id": "M5_CAPABILITY_ALL_PASS",
+      "lifecycle": {
+        "classification_resolved": true,
+        "disposition_assigned": true,
+        "followup_required": true,
+        "followup_route": "historical R3 reporting defect distinguished from current R4 disclosure state; R4 disclosure repaired in R4-metric-disclosure-repair",
+        "underlying_defect_present": true,
+        "underlying_defect_repaired": false
+      },
       "unresolved": false
     },
     {
       "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
       "id": "M6_CORPUS_SIZE_VS_SOURCES",
+      "lifecycle": {
+        "classification_resolved": true,
+        "disposition_assigned": true,
+        "followup_required": true,
+        "followup_route": "wording/definition clarification (no code defect proven)",
+        "underlying_defect_present": false,
+        "underlying_defect_repaired": false
+      },
       "unresolved": false
     }
   ],
@@ -123,6 +234,6 @@
     "envelopes": 836,
     "receipts": 836
   },
-  "task_id": "ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725",
-  "terminal_verdict": "ARR_R4_WAIC_SELF_REFLECTION_DRAFT_AWAITING_EXTERNAL_REVIEW"
+  "task_id": "ARR-R4-METRIC-DISCLOSURE-RELAY-RECEIPT-REPAIR-R1-RELAY-20260725",
+  "terminal_verdict": "ARR_R4_METRIC_DISCLOSURE_AND_RELAY_RECEIPT_REPAIR_DRAFT_AWAITING_EXTERNAL_REVIEW"
 }

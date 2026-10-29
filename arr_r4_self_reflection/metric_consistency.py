@@ -14,6 +14,24 @@ from typing import Any, Dict, List
 from .schemas import MetricContradiction
 
 
+def _lifecycle(disposition_assigned: bool, classification_resolved: bool,
+               underlying_defect_present: bool, underlying_defect_repaired: bool,
+               followup_required: bool, followup_route: str) -> Dict[str, Any]:
+    """Encode contradiction-lifecycle semantics (repair task §3.3).
+
+    Separates *disposition/classification* completion from *underlying-defect
+    repair*. Diagnosis is not the same as fixing.
+    """
+    return {
+        "disposition_assigned": disposition_assigned,
+        "classification_resolved": classification_resolved,
+        "underlying_defect_present": underlying_defect_present,
+        "underlying_defect_repaired": underlying_defect_repaired,
+        "followup_required": followup_required,
+        "followup_route": followup_route,
+    }
+
+
 class MetricContradictionEngine:
     def __init__(self, reports: Dict[str, Dict[str, Any]], four_axis_summary: Dict[str, Any]):
         self.reports = reports
@@ -57,6 +75,8 @@ class MetricContradictionEngine:
                 "the literal value 836 is correct, but reading it as '836 notes semantically "
                 "understood' is a definition misread. Pipeline success must not imply semantic sufficiency."
             ),
+            lifecycle=_lifecycle(True, True, False, False, True,
+                                 "wording/definition clarification (no code defect proven)"),
         )
 
     # C2 ----------------------------------------------------------------
@@ -85,6 +105,8 @@ class MetricContradictionEngine:
                 "'0 unknowns retained'. The value is correct under the violations definition; the "
                 "contradiction is a definition misread. Recommend renaming to retention_violations."
             ),
+            lifecycle=_lifecycle(True, True, False, False, True,
+                                 "wording/definition clarification (no code defect proven)"),
         )
 
     # C3 ----------------------------------------------------------------
@@ -114,6 +136,8 @@ class MetricContradictionEngine:
                 "(in-run crash events = 0) and reports 0.0, understating demo success. Aggregate is "
                 "defective relative to the run ledger; the demos genuinely passed."
             ),
+            lifecycle=_lifecycle(True, True, True, False, True,
+                                 "separately authorized R3 metric repair (AGGREGATE_METRICS aggregation defect)"),
         )
 
     # C4 ----------------------------------------------------------------
@@ -142,6 +166,8 @@ class MetricContradictionEngine:
                 "selective = true. The aggregate metric reports 0.0 (zero changes detected in the main "
                 "run) and omits the demo-derived value. The aggregate is defective relative to the run ledger."
             ),
+            lifecycle=_lifecycle(True, True, True, False, True,
+                                 "separately authorized R3 metric repair (AGGREGATE_METRICS aggregation defect)"),
         )
 
     # C5 ----------------------------------------------------------------
@@ -162,17 +188,22 @@ class MetricContradictionEngine:
             disposition="REPORTING_DEFECT",
             evidence_refs=[
                 "CAPABILITY_COVERAGE_MATRIX.all_pass",
-                "CAPABILITY_COVERAGE_MATRIX.items (27 operational/safety/governance)",
-                "R4: CAPABILITY_COVERAGE_REINTERPRETATION",
+                "CAPABILITY_COVERAGE_MATRIX.items (27 closed-set: 17 OPERATIONAL, 4 SEMANTIC guardrails, 3 EVIDENCE, 3 GOVERNANCE)",
+                "R4: CAPABILITY_COVERAGE_REINTERPRETATION (closed-set v2)",
             ],
             reconciled=(
-                "all_pass aggregates 27 operational/safety/governance checks (inventory, no source "
-                "mutation, duplicate handling, crash resume, idempotent replay, selective rerun, receipt "
-                "presence, leak zero, temporal discipline, promote/evolve/real-world zero, map sync, CI "
-                "green). ZERO items test semantic understanding or coverage. The report presents all_pass "
-                "without disclosing the absent semantic dimension; it is a reporting defect (incomplete "
-                "dimension disclosure), not a value error."
+                "all_pass aggregates 27 checks across OPERATIONAL (17), SEMANTIC guardrails (4), "
+                "EVIDENCE (3) and GOVERNANCE (3) dimensions. ZERO items test genuine "
+                "semantic-understanding coverage; the 4 SEMANTIC items are narrow anti-elevation / "
+                "precision guardrails, not semantic comprehension. The historical R3 report presented "
+                "all_pass without disclosing the dimension allocation -- a reporting defect (incomplete "
+                "dimension disclosure), not a value error. R4's closed-set classification now discloses "
+                "this allocation; the underlying R3 reporting defect remains and is distinguished from "
+                "the current (repaired) R4 disclosure state."
             ),
+            lifecycle=_lifecycle(True, True, True, False, True,
+                                 "historical R3 reporting defect distinguished from current R4 disclosure "
+                                 "state; R4 disclosure repaired in R4-metric-disclosure-repair"),
         )
 
     # C6 ----------------------------------------------------------------
@@ -202,4 +233,6 @@ class MetricContradictionEngine:
                 "and paraphrases from the same source do not inflate corroboration. Corpus size is not "
                 "evidence count."
             ),
+            lifecycle=_lifecycle(True, True, False, False, True,
+                                 "wording/definition clarification (no code defect proven)"),
         )

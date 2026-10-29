@@ -256,6 +256,18 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(test_result["changed_validation_test_targets"], ["g_arr_runtime"])
         self.assertIn("g_arr_runtime", test_result["selected_target_ids"])
 
+    def test_r4_disclosure_and_receipt_docs_route_to_existing_arr_consumers(self):
+        result = self.plan([
+            "docs/architecture/arr-r4-metric-disclosure-repair-external-review.md",
+            "docs/architecture/arr-r4-receipt-closure-diagnosis.md",
+        ])
+        self.assertEqual(result["seed_components"], ["arr"])
+        self.assertIn("g_arr_runtime", result["selected_target_ids"])
+        self.assertIn("g_repository_path_consumers", result["selected_target_ids"])
+        self.assertTrue(
+            all(item["components"][0]["component_id"] == "arr" for item in result["path_component_evidence"])
+        )
+
     def test_unmapped_path_is_not_hidden_by_an_independent_full_trigger(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
             self.plan([".github/workflows/foundation-validation.yml", "tools/unregistered-output.py"])

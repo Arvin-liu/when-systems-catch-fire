@@ -3295,7 +3295,9 @@
         "arr_r4_self_reflection/",
         "docs/architecture/adaptive-relational-runtime-r4-adrs.md",
         "docs/architecture/arr-r4-gap-candidate-gate.md",
+        "docs/architecture/arr-r4-metric-disclosure-repair-external-review.md",
         "docs/architecture/arr-r4-public-aggregate.json",
+        "docs/architecture/arr-r4-receipt-closure-diagnosis.md",
         "docs/architecture/arr-r4-self-reflection.md",
         "data/operations/propagation/ARR-R4-WAIC-SELF-REFLECTION-R1-system-map-delta.json",
         "requirements-r4.txt"
@@ -3348,5 +3350,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.19"
+  "registry_version": "2.9.20"
 }
