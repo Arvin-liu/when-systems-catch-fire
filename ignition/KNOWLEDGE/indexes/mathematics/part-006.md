@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D406} exist, compose F_{D406}=N\(⊕_{g∈D_{D406}} g\); otherwise treat F_{D406} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7aa505467f425d69 / If upstream objects D_{D406} exist, compose F_{D406}=N\(⊕_{g∈D_{D406}} g\); otherwise treat F_{D406} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D406；被引用：—
+- [If upstream objects D_{D407} exist, compose F_{D407}=N\(⊕_{g∈D_{D407}} g\); otherwise treat F_{D407} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f18ee7c67651f094 / If upstream objects D_{D407} exist, compose F_{D407}=N\(⊕_{g∈D_{D407}} g\); otherwise treat F_{D407} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D407；被引用：—
+- [If upstream objects D_{D408} exist, compose F_{D408}=N\(⊕_{g∈D_{D408}} g\); otherwise treat F_{D408} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-da8a322bd0130082 / If upstream objects D_{D408} exist, compose F_{D408}=N\(⊕_{g∈D_{D408}} g\); otherwise treat F_{D408} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D408；被引用：—
+- [If upstream objects D_{D409} exist, compose F_{D409}=N\(⊕_{g∈D_{D409}} g\); otherwise treat F_{D409} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38f51de5a549d115 / If upstream objects D_{D409} exist, compose F_{D409}=N\(⊕_{g∈D_{D409}} g\); otherwise treat F_{D409} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D409；被引用：—
 - [If upstream objects D_{D40} exist, compose F_{D40}=N\(⊕_{g∈D_{D40}} g\); otherwise treat F_{D40} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-85e01a61e51c7c15 / If upstream objects D_{D40} exist, compose F_{D40}=N\(⊕_{g∈D_{D40}} g\); otherwise treat F_{D40} as an axiom seed.
@@ -1214,6 +1234,11 @@
   - 可搜索名称：NFC-b22dd59f845fd436 / Lifecycle ceiling: research-only, Draft-only; no canonical, production, Current, Owner, external-truth, or epistemic acc
   - 来源：`docs/governance/basis-pressure-sensor-qualification-2026-09-07.md`
   - 依赖：—；被引用：—
+- [Lifecycle closure \(§8\)](../../../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-af035f1a7b7948f0 / Lifecycle closure \(§8\)
+  - 来源：`docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`
+  - 依赖：—；被引用：—
 - [Lifecycle inconsistency** — committed state that disagrees with the iteration lifecycle.](../../../docs/discovery/discovery-commitment-boundary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-665f86933b565263 / Lifecycle inconsistency** — committed state that disagrees with the iteration lifecycle.
@@ -1223,6 +1248,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-e748c60381a2e17b / Lifecycle orthogonality \(ten states, 26 edges\)
   - 来源：`docs/architecture/self-growth-control-plane.md`
+  - 依赖：—；被引用：—
+- [lifecycle record distinguishing *disposition assigned* / *classification resolved*](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-699c48ae712b47e6 / lifecycle record distinguishing *disposition assigned* / *classification resolved*
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
   - 依赖：—；被引用：—
 - [Lifecycle state and claim ceiling:](../../../templates/operations/execution-result-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d8f6b28dcc2f9be3 / no duplicate lifecycle records.
   - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
-  - 依赖：—；被引用：—
-- [No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e8014657a11561e6 / No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [No formal equivalence checking between different operator approximations. Only empirical error metrics \(relative L2 erro](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-46909934f90ad1a1 / No formal equivalence checking between different operator approximations. Only empirical error metrics \(relative L2 erro
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json`
-  - 依赖：—；被引用：—
-- [No formal verification of solution correctness. Empirical error metrics only \(relative L2 error, spectral analysis\). Sol](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-86848f08e924303a / No formal verification of solution correctness. Empirical error metrics only \(relative L2 error, spectral analysis\). Sol
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json`
-  - 依赖：—；被引用：—
-- [No formal verification. Adaptation quality measured empirically.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5160d73cd47227d7 / No formal verification. Adaptation quality measured empirically.
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json`
-  - 依赖：—；被引用：—
-- [No formal verification. Correctness only checked via test cases. Execution traces provide debugging information but not](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fa61529258a33860 / No formal verification. Correctness only checked via test cases. Execution traces provide debugging information but not
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json`
-  - 依赖：—；被引用：—
-- [No formal verification. Empirical accuracy only.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-688fe2d7191d2fee / No formal verification. Empirical accuracy only.
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json`
   - 依赖：—；被引用：—

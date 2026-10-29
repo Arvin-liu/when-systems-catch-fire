@@ -1854,6 +1854,11 @@
   - 可搜索名称：NFC-6210d006c7e0c01c / `machine_eligible`: passes the content, consistency, evidence, and conflict gates in audit output, but is not yet formal
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
+- [`metric_consistency.py`: adds `lifecycle` to all six contradictions.](../../../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-31f62b5e34c9eef5 / `metric_consistency.py`: adds `lifecycle` to all six contradictions.
+  - 来源：`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`
+  - 依赖：—；被引用：—
 - [`MF-0001` 正向自举通道: SOURCE_NOT_FOUND; missing=direct local note path or raw source artifact missing](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fd41999e10d4d20b / `MF-0001` 正向自举通道: SOURCE_NOT_FOUND; missing=direct local note path or raw source artifact missing
@@ -2023,6 +2028,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3fea9adb1fc63915 / `rejected`: clear evidence that the item is not a protocol-layer item.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [`schemas.py`: `MetricContradiction.lifecycle` field.](../../../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6ada10b1a033a863 / `schemas.py`: `MetricContradiction.lifecycle` field.
+  - 来源：`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`
   - 依赖：—；被引用：—
 - [`SOURCE_FACT` — 来源作为事实陈述给出的内容；这不自动证明它真实；](../../../OPERATING-METHOD.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2474,6 +2484,11 @@
   - 可搜索名称：NFC-67015ddc1a30f0d0 / An alternative decomposition is **not** a counterfactual proof.
   - 来源：`docs/counterfactual/q42-i1-repair-architecture.md`
   - 依赖：—；被引用：—
+- [an explicit `lifecycle` record \(`disposition_assigned`, `classification_resolved`,](../../../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ad5aa5112648328a / an explicit `lifecycle` record \(`disposition_assigned`, `classification_resolved`,
+  - 来源：`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`
+  - 依赖：—；被引用：—
 - [an isomorphism claim needs objects, a bijection and structure-preservation proof;](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-28a040ac06ecb179 / an isomorphism claim needs objects, a bijection and structure-preservation proof;
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-496c6570c58ef110 / An iterative NP lifecycle and library learning are explicit, but artifact identity, provenance, versions, approvals, dep
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [anomaly is not causal proof](../../../docs/anomaly/q41-i1-architecture-decision.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-58cc704641277b0f / anomaly is not causal proof
-  - 来源：`docs/anomaly/q41-i1-architecture-decision.md`
-  - 依赖：—；被引用：—
-- [Anti-overclaim is enforced twice: at the router pre-gate \(bindings B1–B6\) and again by ARN's existing validators \(causal](../../../docs/architecture/adaptive-relational-runtime-interop.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-24178a9d524839c1 / Anti-overclaim is enforced twice: at the router pre-gate \(bindings B1–B6\) and again by ARN's existing validators \(causal
-  - 来源：`docs/architecture/adaptive-relational-runtime-interop.md`
-  - 依赖：—；被引用：—
-- [APPROVAL_DECISION_STATES = frozenset\({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-f30d1b3ac74f5dfd / APPROVAL_DECISION_STATES = frozenset\({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI
-  - 来源：`agent_federation/approval_handoff.py`
   - 依赖：—；被引用：—

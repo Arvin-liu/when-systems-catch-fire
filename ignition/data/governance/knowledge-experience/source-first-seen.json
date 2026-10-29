@@ -45,7 +45,10 @@
     "docs/architecture/agent-runtime-r1.md": "2026-08-16",
     "docs/architecture/agentization-boundary-r0.md": "2026-08-15",
     "docs/architecture/approval-handoff-failover-r1.md": "2026-08-16",
+    "docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md": "2026-07-25",
     "docs/architecture/arr-r4-gap-candidate-gate.md": "2026-07-25",
+    "docs/architecture/arr-r4-metric-disclosure-repair-external-review.md": "2026-07-25",
+    "docs/architecture/arr-r4-receipt-closure-diagnosis.md": "2026-07-25",
     "docs/architecture/arr-r4-self-reflection.md": "2026-07-25",
     "docs/architecture/attention-attractor-control-plane.md": "2026-07-15",
     "docs/architecture/codex-adapter-r1.md": "2026-08-16",
@@ -601,7 +604,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 599,
+  "entry_count": 602,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

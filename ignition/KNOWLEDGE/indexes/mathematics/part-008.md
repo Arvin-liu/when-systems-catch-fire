@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The active identity, lifecycle, ordinal, Current Facts, Current Snapshot, Current Surface semantic, Current-State sync,](../../../reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-680e3d5e9b959ba0 / The active identity, lifecycle, ordinal, Current Facts, Current Snapshot, Current Surface semantic, Current-State sync,
+  - 来源：`reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md`
+  - 依赖：—；被引用：—
+- [The approved action is therefore narrow: refresh each materiality entry's current `source_sha256` to the observed source](../../../reports/operations/ignition-134-step06-human-surface-semantic-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62d2d09d55ec1c7d / The approved action is therefore narrow: refresh each materiality entry's current `source_sha256` to the observed source
+  - 来源：`reports/operations/ignition-134-step06-human-surface-semantic-audit.md`
+  - 依赖：—；被引用：—
+- [The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication produ](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4986937df68dc594 / The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication produ
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
+- [the audit output includes evidence paths for each hard gate](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-662e8659da3d78c3 / the audit output includes evidence paths for each hard gate
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [The bounded repository retrieval preserves support, counterexample, boundary, negative and failed-retrieval records with](../../../data/retrieval/fixtures/01-valid-bounded-repository-pilot.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c5c6c92d5780b4b4 / The bounded repository retrieval preserves support, counterexample, boundary, negative and failed-retrieval records with
+  - 来源：`data/retrieval/fixtures/01-valid-bounded-repository-pilot.json`
+  - 依赖：—；被引用：—
+- [The builder reads the execution contract, canonical lineage, and lifecycle before emitting a witness. When a formal resu](../../../reports/operations/ignition-132-step07-task-id-binding.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-282adfa392259145 / The builder reads the execution contract, canonical lineage, and lifecycle before emitting a witness. When a formal resu
+  - 来源：`reports/operations/ignition-132-step07-task-id-binding.md`
+  - 依赖：—；被引用：—
+- [the caller's input `source`/`observation` dicts in place \(sets lifecycle state\). Tests](../../../docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-76e8a59a10593994 / the caller's input `source`/`observation` dicts in place \(sets lifecycle state\). Tests
+  - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
+  - 依赖：—；被引用：—
+- [The canonical source now records `IGNITION-20260822-132` as the current formal task with `COMPLETED_WITH_CLASSIFIED_RESI](../../../reports/operations/ignition-132-step09-canonical-current-migration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-47ea60f11834a0d5 / The canonical source now records `IGNITION-20260822-132` as the current formal task with `COMPLETED_WITH_CLASSIFIED_RESI
+  - 来源：`reports/operations/ignition-132-step09-canonical-current-migration.md`
+  - 依赖：—；被引用：—
 - [The claim ceiling is repository-local task lifecycle, executor-admission and](../../../agent-results/IGNITION-20260827-142-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-6bbbb6de1d5f6970 / The claim ceiling is repository-local task lifecycle, executor-admission and
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-21587bdcaac2df29 / title: "物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/\|T-Tc\|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）但物理含义相同：系统对扰动最敏感。点火σ'有上限因为sigmoid有界，物理χ无上限因为
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "物理大统一本质函数 / physical grand-unification essential function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-585D085937BA3A3C / title: "物理大统一本质函数 / physical grand-unification essential function" / IMPLICIT-585D085937BA3A3C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "物理大统一本质函数 / physical grand-unification essential function"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-318672048b3787bb / title: "物理大统一本质函数 / physical grand-unification essential function"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "物理存在的时间窗口定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c3f8d941f5a9d29 / title: "物理存在的时间窗口定理"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "状态时间重写函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E0DAF39CBFB097D0 / title: "状态时间重写函数" / IMPLICIT-E0DAF39CBFB097D0
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "犹豫域维度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-12717F174EAFBC12 / title: "犹豫域维度函数" / IMPLICIT-12717F174EAFBC12 / IMPLICIT-FE9B602B09F74468
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "犹豫域维度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FE9B602B09F74468 / title: "犹豫域维度函数" / IMPLICIT-FE9B602B09F74468 / IMPLICIT-12717F174EAFBC12
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "犹豫域退化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-72E2C8F78923CF46 / title: "犹豫域退化函数" / IMPLICIT-72E2C8F78923CF46 / IMPLICIT-B4521BCCF7E7B945
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "犹豫域退化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B4521BCCF7E7B945 / title: "犹豫域退化函数" / IMPLICIT-B4521BCCF7E7B945 / IMPLICIT-72E2C8F78923CF46
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

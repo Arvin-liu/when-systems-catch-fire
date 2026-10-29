@@ -4,6 +4,136 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [这个 runner 只规定怎样把 exposure、challenge、evidence packet 和模型输出](../../../docs/architecture/esi-experiment-protocol-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3953ebcea40069d4 / 这个 runner 只规定怎样把 exposure、challenge、evidence packet 和模型输出
+  - 来源：`docs/architecture/esi-experiment-protocol-r0.md`
+  - 依赖：—；被引用：—
+- [这个故事并非毫无根据，却太早把问题关上了。它把“制造”理解成伪造，把信仰和利用切成两块，好像一个人只要认真相信，就不可能同时把信仰变成制度；又好像一个制度有政治用途，参与其中的人就一定没有宗教经验。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-88b6c6b106eaf82f / 这个故事并非毫无根据，却太早把问题关上了。它把“制造”理解成伪造，把信仰和利用切成两块，好像一个人只要认真相信，就不可能同时把信仰变成制度；又好像一个制度有政治用途，参与其中的人就一定没有宗教经验。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [这些作品是对既有百轮材料的综合与出版，不是新的外部研究结果。书目匹配、有限工程试验、历史来源和内部治理各自保留自己的证据层；可读性和可达性不会自动提高任何现实命题的真值。](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-91aac25a66d4725f / 这些作品是对既有百轮材料的综合与出版，不是新的外部研究结果。书目匹配、有限工程试验、历史来源和内部治理各自保留自己的证据层；可读性和可达性不会自动提高任何现实命题的真值。
+  - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
+  - 依赖：—；被引用：—
+- [这些是 Step 02 current-facts projection 的候选来源，不是人工复制到多个 Current 页面的新权威。](../../../reports/architecture/current-state-drift-audit-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ad50da3f89450638 / 这些是 Step 02 current-facts projection 的候选来源，不是人工复制到多个 Current 页面的新权威。
+  - 来源：`reports/architecture/current-state-drift-audit-r1.md`
+  - 依赖：—；被引用：—
+- [这十二个维度是一组可复用的观察轴，不是人类语言的完备分解，也不是十二个自动评分项。每个语言配置在同一组轴上标记语法义务、强默认、常用选项、标记形式、内部差异和证据缺口。合并候选维度会掩盖不同风险，因此本轮保留十二项；例如“体貌／终点”影响事](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dfc45ddb375b83df / 这十二个维度是一组可复用的观察轴，不是人类语言的完备分解，也不是十二个自动评分项。每个语言配置在同一组轴上标记语法义务、强默认、常用选项、标记形式、内部差异和证据缺口。合并候选维度会掩盖不同风险，因此本轮保留十二项；例如“体貌／终点”影响事
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [这并不是说徽宗亲手伪造了每一只鹤。我们没有足够依据这样说，也不需要这样说。更值得追问的是：即使一群鹤确实飞过宫门，它们为什么会成为皇帝统治有效的证据？答案不在鹤身上。要紧的是，宫廷怎样接住这件事，又怎样登记和解释它。自然事件不必是伪造的；只](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef2d1ef7c9bd121f / 这并不是说徽宗亲手伪造了每一只鹤。我们没有足够依据这样说，也不需要这样说。更值得追问的是：即使一群鹤确实飞过宫门，它们为什么会成为皇帝统治有效的证据？答案不在鹤身上。要紧的是，宫廷怎样接住这件事，又怎样登记和解释它。自然事件不必是伪造的；只
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [这时，祥瑞的意义发生了变化。它不只是天上送来的好消息。一件事经过报告、登记、解释和传播，才可能进入公共视野。流程能让事实被看见；可若每一环都握在同一权力手里，返回中心的事实就会越来越像权力自己的回声。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-160554b1cb3a611e / 这时，祥瑞的意义发生了变化。它不只是天上送来的好消息。一件事经过报告、登记、解释和传播，才可能进入公共视野。流程能让事实被看见；可若每一环都握在同一权力手里，返回中心的事实就会越来越像权力自己的回声。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [这是 `ignition_increment`，不是历史新证据。若未来收到读者、史料或研究反馈，必须登记反馈主体、时间、渠道、原文范围和解释限制，才能升级为候选 source、反例或下一轮问题。传播、赞同和多模型一致都不能替代这个登记。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bf796e4ba7e5a1fc / 这是 `ignition_increment`，不是历史新证据。若未来收到读者、史料或研究反馈，必须登记反馈主体、时间、渠道、原文范围和解释限制，才能升级为候选 source、反例或下一轮问题。传播、赞同和多模型一致都不能替代这个登记。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [这是一张由 canonical transition grammar 投影出的关系表，不是提示词、命令、](../../../docs/architecture/structural-governance-surface.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-43e9d5818d564a4e / 这是一张由 canonical transition grammar 投影出的关系表，不是提示词、命令、
+  - 来源：`docs/architecture/structural-governance-surface.md`
+  - 依赖：—；被引用：—
+- [这是一条从验证报告里长出来的故事版笔记。它保留了同一个历史骨架，但把表达写得更像一篇可读的故事，方便以后持续扩展更多同类内容。](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ddce97afcb35193f / 这是一条从验证报告里长出来的故事版笔记。它保留了同一个历史骨架，但把表达写得更像一篇可读的故事，方便以后持续扩展更多同类内容。
+  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
+  - 依赖：—；被引用：—
+- [这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf5f1fd7a36062af / 这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。](../../../docs/architecture/epistemic-structural-induction-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8cacb78df4afe7a3 / 这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。
+  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
+  - 依赖：—；被引用：—
+- [这页把机器边界翻译成人能先读懂的入口。它解释为什么要把原始结构、术语、文风和结构破坏控制分开：只重复词语或模仿语气，不等于保留了边界。它也把文献、合成夹具和 Owner 提供的公开安全观察放在不同证据位置，避免把它们合成一条更强的故事。](../../../docs/architecture/esi-human-surface-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0734a534d865d69a / 这页把机器边界翻译成人能先读懂的入口。它解释为什么要把原始结构、术语、文风和结构破坏控制分开：只重复词语或模仿语气，不等于保留了边界。它也把文献、合成夹具和 Owner 提供的公开安全观察放在不同证据位置，避免把它们合成一条更强的故事。
+  - 来源：`docs/architecture/esi-human-surface-r0.md`
+  - 依赖：—；被引用：—
+- [这页遵循之元写作法的人类入口纪律：先说范围和用途，再说不能推出什么、缺什么以及如何回到机器记录。它不改变 canonical 状态，不创建第二套断言数据库，也不把可读性当成证据。](../../../docs/architecture/esi-human-surface-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1957957fe42993b1 / 这页遵循之元写作法的人类入口纪律：先说范围和用途，再说不能推出什么、缺什么以及如何回到机器记录。它不改变 canonical 状态，不创建第二套断言数据库，也不把可读性当成证据。
+  - 来源：`docs/architecture/esi-human-surface-r0.md`
+  - 依赖：—；被引用：—
+- [退出隧穿验证 — 朝鲜脱北者-C_exit≈∞\(地理+政治+身份三维锁定\),经典P_exit≈0,但实际发生。隧穿路径-边境信息泄漏\(降低势](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-64f7bd1987d19921 / 退出隧穿验证 — 朝鲜脱北者-C_exit≈∞\(地理+政治+身份三维锁定\),经典P_exit≈0,但实际发生。隧穿路径-边境信息泄漏\(降低势
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [退相干验证 — 新员工入职6个月-r_cross从0.8→0.3→0.1\(轨道逐步关闭\),H从0.2→0.6→0.9\(组织规范遮蔽增强\),τ](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0c70a7af4052b796 / 退相干验证 — 新员工入职6个月-r_cross从0.8→0.3→0.1\(轨道逐步关闭\),H从0.2→0.6→0.9\(组织规范遮蔽增强\),τ
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [适合接入的数据](../../../docs/data_integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-98d2f62c833244cc / 适合接入的数据
+  - 来源：`docs/data_integration.md`
+  - 依赖：—；被引用：—
+- [选择一个真实、来源充分、距离足够远的外部事件。跳转时不解释“为什么要跳”，而是让共享结构先出现。](../../../docs/narrative-story-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72d0d0719c5c2060 / 选择一个真实、来源充分、距离足够远的外部事件。跳转时不解释“为什么要跳”，而是让共享结构先出现。
+  - 来源：`docs/narrative-story-template.md`
+  - 依赖：—；被引用：—
+- [通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。\[Current Facts\]\(../data/architecture/current-facts.json\) 与\[人读 facts blo](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-46234d850863c4ff / 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。\[Current Facts\]\(../data/architecture/current-facts.json\) 与\[人读 facts blo
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [道教是中国文明为百姓提供一切服务的统一答案；](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dd0453b5cd8dc8a2 / 道教是中国文明为百姓提供一切服务的统一答案；
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [道阶、受箓与官员忠诚的关系要写成可能的制度通道，不写成每个人的心理事实。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bb6971743a3e911c / 道阶、受箓与官员忠诚的关系要写成可能的制度通道，不写成每个人的心理事实。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6c31d402039e4418 / 遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [遮蔽-补偿-成本三角约束案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d95836376a525f2 / 遮蔽-补偿-成本三角约束案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-85cf9801664d358b / 遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-98aa7f7d1e80b626 / 部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9e5b3a7098f71275 / 部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [重整化群门槛标度案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-49ab0715cd940c7b / 重整化群门槛标度案例验证。

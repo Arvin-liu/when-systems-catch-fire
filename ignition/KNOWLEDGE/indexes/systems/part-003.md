@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5e9c15c55f504510 / model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [MoE top-k routing and combinations of attention patterns are concrete intra-model routing/composition mechanisms, not co](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9f6a41e9ced35a27 / MoE top-k routing and combinations of attention patterns are concrete intra-model routing/composition mechanisms, not co
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-d470f8a075b3c0d5 / Tensor shapes, mode, causality, routing and resource constraints are useful architecture-specification fragments, but th
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [test or evidence;](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-09680fff1a941685 / test or evidence;
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
   - 依赖：—；被引用：—

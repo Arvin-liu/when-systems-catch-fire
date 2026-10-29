@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e8014657a11561e6 / No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No formal equivalence checking between different operator approximations. Only empirical error metrics \(relative L2 erro](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-46909934f90ad1a1 / No formal equivalence checking between different operator approximations. Only empirical error metrics \(relative L2 erro
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json`
+  - 依赖：—；被引用：—
+- [No formal verification of solution correctness. Empirical error metrics only \(relative L2 error, spectral analysis\). Sol](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-86848f08e924303a / No formal verification of solution correctness. Empirical error metrics only \(relative L2 error, spectral analysis\). Sol
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-030.json`
+  - 依赖：—；被引用：—
+- [No formal verification. Adaptation quality measured empirically.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5160d73cd47227d7 / No formal verification. Adaptation quality measured empirically.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json`
+  - 依赖：—；被引用：—
+- [No formal verification. Correctness only checked via test cases. Execution traces provide debugging information but not](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fa61529258a33860 / No formal verification. Correctness only checked via test cases. Execution traces provide debugging information but not
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-021.json`
+  - 依赖：—；被引用：—
+- [No formal verification. Empirical accuracy only.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-688fe2d7191d2fee / No formal verification. Empirical accuracy only.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json`
+  - 依赖：—；被引用：—
 - [No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ad3864e4864504e5 / No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge
@@ -23,6 +53,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-608ddd8b619e6387 / No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.
   - 来源：`data/architecture/probabilistic-system-dynamics/gap-ledger.json`
+  - 依赖：—；被引用：—
+- [No R5 implementation, Life Integrity, Embodied Life, Modern Wuzhen, Domain](../../../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7a4231fc7b156d2 / No R5 implementation, Life Integrity, Embodied Life, Modern Wuzhen, Domain
+  - 来源：`docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`
   - 依赖：—；被引用：—
 - [No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only.](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-016.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1724,6 +1759,11 @@
   - 可搜索名称：NFC-ccb2168560ae9511 / source, claim, evidence, proof or claim-ceiling authority;
   - 来源：`docs/architecture/reos-vnext-light.md`
   - 依赖：—；被引用：—
+- [source, corrected interpretation/value and lifecycle, and marks the historical](../../../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-17e809060ce3e4e5 / source, corrected interpretation/value and lifecycle, and marks the historical
+  - 来源：`docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`
+  - 依赖：—；被引用：—
 - [Source-specific escalation reasons \(replacing generic "Cross-domain unified theorem claim"\)](../../../reports/foundation-architecture/083-escalation-routing-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-14133af40718cd56 / Source-specific escalation reasons \(replacing generic "Cross-domain unified theorem claim"\)
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-6321bb0884037b4e / The 64 combinations are a design and generation space, not a proof space or empirical exhaustion. `OS != executor`: Open
   - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [The active identity, lifecycle, ordinal, Current Facts, Current Snapshot, Current Surface semantic, Current-State sync,](../../../reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-680e3d5e9b959ba0 / The active identity, lifecycle, ordinal, Current Facts, Current Snapshot, Current Surface semantic, Current-State sync,
-  - 来源：`reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md`
-  - 依赖：—；被引用：—
-- [The approved action is therefore narrow: refresh each materiality entry's current `source_sha256` to the observed source](../../../reports/operations/ignition-134-step06-human-surface-semantic-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-62d2d09d55ec1c7d / The approved action is therefore narrow: refresh each materiality entry's current `source_sha256` to the observed source
-  - 来源：`reports/operations/ignition-134-step06-human-surface-semantic-audit.md`
-  - 依赖：—；被引用：—
-- [The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication produ](../../../reports/operations/ignition-143-resume-capsule.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4986937df68dc594 / The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication produ
-  - 来源：`reports/operations/ignition-143-resume-capsule.md`
-  - 依赖：—；被引用：—
-- [the audit output includes evidence paths for each hard gate](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-662e8659da3d78c3 / the audit output includes evidence paths for each hard gate
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [The bounded repository retrieval preserves support, counterexample, boundary, negative and failed-retrieval records with](../../../data/retrieval/fixtures/01-valid-bounded-repository-pilot.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c5c6c92d5780b4b4 / The bounded repository retrieval preserves support, counterexample, boundary, negative and failed-retrieval records with
-  - 来源：`data/retrieval/fixtures/01-valid-bounded-repository-pilot.json`
-  - 依赖：—；被引用：—
-- [The builder reads the execution contract, canonical lineage, and lifecycle before emitting a witness. When a formal resu](../../../reports/operations/ignition-132-step07-task-id-binding.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-282adfa392259145 / The builder reads the execution contract, canonical lineage, and lifecycle before emitting a witness. When a formal resu
-  - 来源：`reports/operations/ignition-132-step07-task-id-binding.md`
-  - 依赖：—；被引用：—
-- [the caller's input `source`/`observation` dicts in place \(sets lifecycle state\). Tests](../../../docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-76e8a59a10593994 / the caller's input `source`/`observation` dicts in place \(sets lifecycle state\). Tests
-  - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
-  - 依赖：—；被引用：—
-- [The canonical source now records `IGNITION-20260822-132` as the current formal task with `COMPLETED_WITH_CLASSIFIED_RESI](../../../reports/operations/ignition-132-step09-canonical-current-migration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-47ea60f11834a0d5 / The canonical source now records `IGNITION-20260822-132` as the current formal task with `COMPLETED_WITH_CLASSIFIED_RESI
-  - 来源：`reports/operations/ignition-132-step09-canonical-current-migration.md`
   - 依赖：—；被引用：—

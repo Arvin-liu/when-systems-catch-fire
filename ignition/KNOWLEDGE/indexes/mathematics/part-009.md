@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "物理大统一本质函数 / physical grand-unification essential function"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-585D085937BA3A3C / title: "物理大统一本质函数 / physical grand-unification essential function" / IMPLICIT-585D085937BA3A3C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "物理大统一本质函数 / physical grand-unification essential function"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-318672048b3787bb / title: "物理大统一本质函数 / physical grand-unification essential function"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "物理存在的时间窗口定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6c3f8d941f5a9d29 / title: "物理存在的时间窗口定理"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "状态时间重写函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E0DAF39CBFB097D0 / title: "状态时间重写函数" / IMPLICIT-E0DAF39CBFB097D0
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "犹豫域维度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-12717F174EAFBC12 / title: "犹豫域维度函数" / IMPLICIT-12717F174EAFBC12 / IMPLICIT-FE9B602B09F74468
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "犹豫域维度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FE9B602B09F74468 / title: "犹豫域维度函数" / IMPLICIT-FE9B602B09F74468 / IMPLICIT-12717F174EAFBC12
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "犹豫域退化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-72E2C8F78923CF46 / title: "犹豫域退化函数" / IMPLICIT-72E2C8F78923CF46 / IMPLICIT-B4521BCCF7E7B945
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "犹豫域退化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B4521BCCF7E7B945 / title: "犹豫域退化函数" / IMPLICIT-B4521BCCF7E7B945 / IMPLICIT-72E2C8F78923CF46
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "玻尔兹曼分布-门槛分布函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E51BC36A56575738 / title: "玻尔兹曼分布-门槛分布函数" / IMPLICIT-E51BC36A56575738
@@ -2462,45 +2502,5 @@
 - [Within the source-defined scope, 复活代价n无关性起源函数 is adjudicated as RELATION: M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D385 / Within the source-defined scope, 复活代价n无关性起源函数 is adjudicated as RELATION: M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 多因子乘法相变函数\(推论级\) is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D110 / Within the source-defined scope, 多因子乘法相变函数\(推论级\) is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 多极小点竞争函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D315 / Within the source-defined scope, 多极小点竞争函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 多频叠加阶段响应函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D336 / Within the source-defined scope, 多频叠加阶段响应函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 大统一门槛函数 is adjudicated as METRIC: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D189 / Within the source-defined scope, 大统一门槛函数 is adjudicated as METRIC: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 好奇心驱动函数 is adjudicated as MECHANISM_MODEL: 好奇心驱动，四因子乘法。. This is a model-internal contr](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T7 / Within the source-defined scope, 好奇心驱动函数 is adjudicated as MECHANISM_MODEL: 好奇心驱动，四因子乘法。. This is a model-internal contr
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 姿态-遮蔽方差函数 is adjudicated as RELATION: σ = f\(Posture_deg, H\). This is a model-internal c](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D496 / Within the source-defined scope, 姿态-遮蔽方差函数 is adjudicated as RELATION: σ = f\(Posture_deg, H\). This is a model-internal c
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙学常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束宇宙学常数：Λ_CDC过大→d_eff>4→容斥主导→结构无法形成；过](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D283 / Within the source-defined scope, 宇宙学常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束宇宙学常数：Λ_CDC过大→d_eff>4→容斥主导→结构无法形成；过
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D211 / Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [C-0809 表演化假课与量化指标消解温度索引可见性验证](../../../outputs/audit/c0809-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cdabc3af4cbafb63 / C-0809 表演化假课与量化指标消解温度索引可见性验证
+  - 来源：`outputs/audit/c0809-index-visibility-check-20260708.md`
+  - 依赖：—；被引用：—
+- [C-0810（D602/A7-A9）、C-0811（D601/A5/A8/A15）：均为独立事件案例，保留。C-0811 锚点统一记为 A5/A8/A15（命令疑点 #8 的两种口径中，A10 属B5 旧计划过期叙事、非角色覆盖主链，故主口](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c343f048ad59fd5c / C-0810（D602/A7-A9）、C-0811（D601/A5/A8/A15）：均为独立事件案例，保留。C-0811 锚点统一记为 A5/A8/A15（命令疑点 #8 的两种口径中，A10 属B5 旧计划过期叙事、非角色覆盖主链，故主口
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：A10, A15, A5, A7；被引用：—
+- [C. 访谈者解释层（脱不花提出，需区分于事实）](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d04f712de47040a9 / C. 访谈者解释层（脱不花提出，需区分于事实）
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：—；被引用：—
+- [C3-projection-mislabeled-external-research \[HIGH\]](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1130d4da2be74c8d / C3-projection-mislabeled-external-research \[HIGH\]
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
+  - 依赖：—；被引用：—
+- [Cache is a performance layer, never a second truth source. Reuse requires an intact manifest and exact identity across p](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e5cca1d40e580829 / Cache is a performance layer, never a second truth source. Reuse requires an intact manifest and exact identity across p
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [can fall back only to another already-compatible candidate; the router never](../../../docs/architecture/federation-router-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1327878e9ffd2d96 / can fall back only to another already-compatible candidate; the router never
+  - 来源：`docs/architecture/federation-router-r1.md`
+  - 依赖：—；被引用：—
+- [Can the term generate new, distinguishable questions, predictions, tests, or objections that were not already obvious?](../../../docs/architecture/compression-integrity-gate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ec27fc7645dbb54 / Can the term generate new, distinguishable questions, predictions, tests, or objections that were not already obvious?
+  - 来源：`docs/architecture/compression-integrity-gate.md`
+  - 依赖：—；被引用：—
+- [cancel 与 reconciliation 保持 OPEN，fixture 未变更且没有 retry。OpenClaw 因](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-20ca671c13054c2b / cancel 与 reconciliation 保持 OPEN，fixture 未变更且没有 retry。OpenClaw 因
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [Candidate and fresh task-clone natural regression evidence remains 1278/0/0/0, with the earlier failed run and all three](../../../reports/operations/ignition-144-step19-terminality.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fca621ec94bd66ac / Candidate and fresh task-clone natural regression evidence remains 1278/0/0/0, with the earlier failed run and all three
+  - 来源：`reports/operations/ignition-144-step19-terminality.md`
+  - 依赖：—；被引用：—
+- [Candidate functions and composed programs are artifacts, but durable identity, packaging, signing, and version semantics](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d48b37cf7a4129ed / Candidate functions and composed programs are artifacts, but durable identity, packaging, signing, and version semantics
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [candidate objects until distinguishing evidence passes an explicit identifiability gate. A residual is](../../../docs/latent/f15-d1-i1-repair-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f12a249d0aeae270 / candidate objects until distinguishing evidence passes an explicit identifiability gate. A residual is
+  - 来源：`docs/latent/f15-d1-i1-repair-architecture.md`
+  - 依赖：—；被引用：—
+- [candidate-new 只属于本次 Run 的候选区；`registry_action` 固定为 `NONE`。它不得自动获得正式编号、Current status、claim/evidence maturity、truth、novel](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fbc726aa98283289 / candidate-new 只属于本次 Run 的候选区；`registry_action` 固定为 `NONE`。它不得自动获得正式编号、Current status、claim/evidence maturity、truth、novel
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
 - [candidate_only: 121Q36-INT-REPAIR-R1 locally addresses B05 by bind Q34/Q35/Q36-OBS authority and intervention evidence t](../../../reports/operations/121Q36-INT-REPAIR-R1-completion-seal.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1368154de7ece30b / candidate_only: 121Q36-INT-REPAIR-R1 locally addresses B05 by bind Q34/Q35/Q36-OBS authority and intervention evidence t
@@ -2443,64 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-EB725629F3677F4E / def _effective\(envelope: LiveDispatchEnvelope, lease: LiveCapabilityLease, os_granted: Iterable\[str\], executor_declared: Iterable\[str\]\) -> tuple\[str, ...\]: / IMPLICIT-EB725629F3677F4E
   - 来源：`agent_federation/live_admission.py`
-  - 依赖：—；被引用：—
-- [def _emit\(self, event_type: str, payload: Mapping\[str, Any\]\) -> str:](../../../agent_federation/live_orchestration.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E0CE63920086EBCD / def _emit\(self, event_type: str, payload: Mapping\[str, Any\]\) -> str: / IMPLICIT-E0CE63920086EBCD
-  - 来源：`agent_federation/live_orchestration.py`
-  - 依赖：—；被引用：—
-- [def _ensure_probe\(self\) -> _ProbeSnapshot:](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-07852417082DCB53 / def _ensure_probe\(self\) -> _ProbeSnapshot: / IMPLICIT-07852417082DCB53 / IMPLICIT-1B6DCB8E1B0A5B5A
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [def _ensure_probe\(self\) -> _ProbeSnapshot:](../../../agent_federation/adapters/codex.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1B6DCB8E1B0A5B5A / def _ensure_probe\(self\) -> _ProbeSnapshot: / IMPLICIT-1B6DCB8E1B0A5B5A / IMPLICIT-07852417082DCB53
-  - 来源：`agent_federation/adapters/codex.py`
-  - 依赖：—；被引用：—
-- [def _ensure_probe\(self\) -> _ProbeSnapshot:](../../../agent_federation/adapters/hermes.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-98A203B378E88E1F / def _ensure_probe\(self\) -> _ProbeSnapshot: / IMPLICIT-98A203B378E88E1F / IMPLICIT-07852417082DCB53
-  - 来源：`agent_federation/adapters/hermes.py`
-  - 依赖：—；被引用：—
-- [def _entry\(](../../../agent_federation/live_preflight.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-9E5DC6796DDB7AB4 / def _entry\( / IMPLICIT-9E5DC6796DDB7AB4
-  - 来源：`agent_federation/live_preflight.py`
-  - 依赖：—；被引用：—
-- [def _enum\(value: Any, allowed: frozenset\[str\], field: str\) -> str:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-8B2FCFF1CB7EFEA6 / def _enum\(value: Any, allowed: frozenset\[str\], field: str\) -> str: / IMPLICIT-8B2FCFF1CB7EFEA6
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def _enum\(value: Any, allowed: set\[str\] \| frozenset\[str\], field: str\) -> str:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-065B44911974374A / def _enum\(value: Any, allowed: set\[str\] \| frozenset\[str\], field: str\) -> str: / IMPLICIT-065B44911974374A
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _envelope\(**changes: Any\) -> LiveDispatchEnvelope:](../../../agent_federation/live_fault_matrix.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FAEB5BC7ED9B09AD / def _envelope\(**changes: Any\) -> LiveDispatchEnvelope: / IMPLICIT-FAEB5BC7ED9B09AD
-  - 来源：`agent_federation/live_fault_matrix.py`
-  - 依赖：—；被引用：—
-- [def _envelope\(*, executor_id: str, adapter_id: str, lease_id: str\) -> LiveDispatchEnvelope:](../../../agent_federation/live_preflight.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C56F9B8C635A3810 / def _envelope\(*, executor_id: str, adapter_id: str, lease_id: str\) -> LiveDispatchEnvelope: / IMPLICIT-C56F9B8C635A3810
-  - 来源：`agent_federation/live_preflight.py`
-  - 依赖：—；被引用：—
-- [def _eval\(node, env\):](../../../function-os-candidate/v0.2/benchmark/oracle/reference.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-03DC5E9445D2A65B / def _eval\(node, env\): / IMPLICIT-03DC5E9445D2A65B
-  - 来源：`function-os-candidate/v0.2/benchmark/oracle/reference.py`
-  - 依赖：—；被引用：—
-- [def _eval_node\(self, node, context\):](../../../function-os-candidate/v0.2/function_os/n1_safe_expression_dsl.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-19FE31416A5D8FA7 / def _eval_node\(self, node, context\): / IMPLICIT-19FE31416A5D8FA7
-  - 来源：`function-os-candidate/v0.2/function_os/n1_safe_expression_dsl.py`
-  - 依赖：—；被引用：—
-- [def _eval_node\(self, node: ast.AST, variables: Dict\[str, Any\]\) -> Any:](../../../function-os-candidate/v0.1/function_os/n1_safe_expression_dsl.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C6E48F3DAEA8CF69 / def _eval_node\(self, node: ast.AST, variables: Dict\[str, Any\]\) -> Any: / IMPLICIT-C6E48F3DAEA8CF69
-  - 来源：`function-os-candidate/v0.1/function_os/n1_safe_expression_dsl.py`
   - 依赖：—；被引用：—

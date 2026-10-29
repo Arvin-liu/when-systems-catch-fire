@@ -2817,6 +2817,15 @@
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
 
+<a id="change-src-hr-fa4c0144d96151d1"></a>
+### 2026-07-25 · ARR R3/R4 Metric Semantics & Observability Closure — ADR
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** R4 metric-disclosure & relay-receipt repair (PR 128) closed the 27-item capability closed set, separated governance enum from the no-action safety invariant, and distinguished contradiction attribution from repair. Four lower-level metric / reporting issues remain before R5 can rely on observabil…
+- **来源：** [arr-r3-r4-metric-observability-closure-adrs.md](../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+- **资产卡：** [HR-FA4C0144D96151D1](./ASSET-CARDS.md#asset-hr-fa4c0144d96151d1)
+
 <a id="change-src-hr-f24a15ff21b59f0a"></a>
 ### 2026-07-25 · ARR R4 — Gap / Architecture-Candidate Gate
 
@@ -2834,6 +2843,24 @@
 - **变化：** Task class: high-risk stacked Draft / real-object read-only pilot Predecessor: PR 120 architecture/adaptive-relational-runtime-r1-scaffold @ a0d6c46 Base branch: architecture/adaptive-relational-runtime-r1-scaffold (NOT Main) R2 branch: runtime/adaptive-relational-runtime-r2-real-object-pilot Com…
 - **来源：** [adaptive-relational-runtime-r2-real-object-pilot.md](../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
 - **资产卡：** [HR-DE58F9ADF534AC72](./ASSET-CARDS.md#asset-hr-de58f9adf534ac72)
+
+<a id="change-src-hr-c96b4a9a3a112bf1"></a>
+### 2026-07-25 · R4 Receipt-Closure Diagnosis (repair prerequisite)
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** External review's precise refetch of the designated predecessor R4 receipt branch and the contracted receipt paths returned 404. The private R4 evidence branch (agent/adaptive-relational-runtime-r4-waic-self-reflection-r1-20260725) is remotely readable; only the relay receipt closure is not.
+- **来源：** [arr-r4-receipt-closure-diagnosis.md](../docs/architecture/arr-r4-receipt-closure-diagnosis.md)
+- **资产卡：** [HR-C96B4A9A3A112BF1](./ASSET-CARDS.md#asset-hr-c96b4a9a3a112bf1)
+
+<a id="change-src-hr-bd785f9a791c0369"></a>
+### 2026-07-25 · ARR R4 — Metric Disclosure & Relay Receipt Repair R1 (External Review Package)
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This package is the public, non-private summary of the narrow repair authorized by external R4 review. It closes the four findings raised in that review without touching PR 127, the frozen R4 head, or the R3 corpus.
+- **来源：** [arr-r4-metric-disclosure-repair-external-review.md](../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+- **资产卡：** [HR-BD785F9A791C0369](./ASSET-CARDS.md#asset-hr-bd785f9a791c0369)
 
 <a id="change-src-hr-60754e6f4aa10a57"></a>
 ### 2026-07-25 · Adaptive Relational Runtime R2 — Architecture Decision Records
