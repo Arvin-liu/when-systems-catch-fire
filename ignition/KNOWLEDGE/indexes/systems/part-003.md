@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-176f262e0f04d75d / Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D380；被引用：—
 - [Object D381 defines a mechanism_model within the point-fire framework. Core: 中文：M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-6b587219db6c1797 / Object D381 defines a mechanism_model within the point-fire framework. Core: 中文：M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-1f764c23c5087d6f / \| \[C-0751\]\( \) \| \[安然公司\]\( \) \| 该案例展示了元协议缺失如何直接导致系统性失效。 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [\| \[C-0792\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D585《认知复杂度收敛》，用](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-54899ec13d079e64 / \| \[C-0792\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D585《认知复杂度收敛》，用
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D585；被引用：—

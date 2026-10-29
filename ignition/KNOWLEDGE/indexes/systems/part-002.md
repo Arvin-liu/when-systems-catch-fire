@@ -6,11 +6,6 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M05 / data/external-research/088-external-source-atlas-medium.jsonl / M05 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M06 / data/external-research/088-external-source-atlas-medium.jsonl / M06 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-bf82f9437ca70052 / Object D379 defines a mechanism_model within the point-fire framework. Core: 中文：M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_m
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D379；被引用：—
+- [Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-176f262e0f04d75d / Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D380；被引用：—

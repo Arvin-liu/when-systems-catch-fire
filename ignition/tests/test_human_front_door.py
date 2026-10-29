@@ -1,4 +1,6 @@
+import fnmatch
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -14,6 +16,7 @@ from tools.validate_human_front_door import (
     CURRENT_STATE,
     GUIDE,
     HUMAN_READING,
+    IDENTITY_INPUT,
     LLMS,
     MINIMAL_INVOCATION,
     OPERATING_METHOD_LINK,
@@ -60,6 +63,12 @@ class HumanFrontDoorTests(unittest.TestCase):
         start = self.readme.index("### 项目现状") + len("### 项目现状")
         end = self.readme.index("### 价值宪章")
         self.assertEqual(self.readme[start:end].strip(), PROJECT_IDENTITY_TEXT)
+
+    def test_project_identity_has_one_machine_readable_authoring_input(self):
+        payload = json.loads(IDENTITY_INPUT.read_text(encoding="utf-8"))
+        self.assertEqual(payload["schema_version"], "human-front-door-identity-r1")
+        self.assertEqual(payload["identity_id"], "IGNITION_OWNER_HUMAN_FRONT_DOOR_IDENTITY_R1")
+        self.assertEqual(payload["text"], PROJECT_IDENTITY_TEXT)
 
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
@@ -142,6 +151,65 @@ class HumanFrontDoorTests(unittest.TestCase):
         for token in (".github/workflows/pages.yml", "pages/system-map.html"):
             self.assertNotIn(token, self.readme)
             self.assertNotIn(token, self.human_reading)
+
+    def test_q33_workflow_triggers_current_human_surface_inputs(self):
+        repo_root = Path(__file__).resolve().parents[2]
+        workflow = (repo_root / ".github/workflows/q33-governance-validation.yml").read_text(encoding="utf-8")
+        match = re.search(
+            r"(?ms)^  pull_request:\n    paths:\n(?P<paths>(?:      - [^\n]+\n)+)",
+            workflow,
+        )
+        self.assertIsNotNone(match, "Q33 pull_request trigger must declare its path coverage")
+        patterns = [
+            line.split("-", 1)[1].strip().strip("'").strip('"')
+            for line in match.group("paths").splitlines()
+        ]
+        counterfactual_inputs = (
+            ".github/README.md",
+            "ignition/AI-START-HERE.md",
+            "ignition/AI-HANDOFF.md",
+            "ignition/HUMAN-READING.md",
+            "ignition/ITERATION.md",
+            "ignition/STATE-CHANGELOG.md",
+            "ignition/SUMMARY.md",
+            "ignition/llms.txt",
+            "ignition/docs/ai-assistant-usage-reference.md",
+            "ignition/docs/project-current-state.md",
+            "ignition/data/operations/human-front-door-identity-r1.json",
+            "ignition/data/operations/project-components.json",
+            "ignition/data/architecture/interactive-system-map.json",
+            "ignition/data/foundation/function-assets/census.jsonl",
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+            "ignition/docs/human/function-assets/README.md",
+        )
+        missing = [path for path in counterfactual_inputs if not any(fnmatch.fnmatchcase(path, pattern) for pattern in patterns)]
+        self.assertEqual(missing, [], f"Q33 Human Surface input changes would skip CI: {missing}")
+        module_step_match = re.search(
+            r"(?ms)^      - name: Run Q33 governance test modules.*?(?=^      - name:|\Z)",
+            workflow,
+        )
+        self.assertIsNotNone(module_step_match, "Q33's general governance test step is missing")
+        module_step = module_step_match.group(0)
+        self.assertNotRegex(
+            module_step,
+            r"(?m)^\s*if:",
+            "general Q33 governance tests must run for every PR selected by the path filter",
+        )
+        self.assertIn(
+            "tests/test_generated_output_authority_generic.py",
+            module_step,
+            "non-Q33 PRs in this scope must exercise the generated-output authority positive/general suite",
+        )
+        self.assertIn(
+            "tests/test_generated_output_authority_negative.py",
+            module_step,
+            "non-Q33 PRs in this scope must exercise unauthorized generated-output negative controls",
+        )
+        self.assertIn(
+            "if: ${{ github.ref == 'refs/heads/agent/121q33-global-copyright-risk-and-rights-governance' || (github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/121q33-global-copyright-risk-and-rights-governance') }}",
+            workflow,
+            "the Q33 task-specific diff gate must not run on an unrelated pull request",
+        )
 
     def test_physics_correction_is_visible(self):
         self.assertIn("研究仍保持研究候选或负结果，不升级为系统能力或认识论结论", self.readme)

@@ -3,15 +3,38 @@
     {
       "authority_source": "FOUNDATION.md",
       "component_ids": [
+        "charter",
+        "charter_system_r1",
+        "copyright_governance_jurisdiction_registry",
+        "copyright_governance_source_rights",
+        "copyright_governance_material_classification",
+        "copyright_governance_non_republication_principle",
+        "copyright_governance_publication_gate_validator",
+        "copyright_governance_history_remediation",
+        "copyright_governance_tests",
+        "epistemic_governance_kernel",
+        "human_knowledge_surfaces",
+        "licensing",
         "foundation",
+        "ignition_operating_method",
+        "l5",
+        "l4",
         "l1",
         "l2",
         "l3"
       ],
       "path_patterns": [
+        "data/governance/",
+        "schemas/governance/",
+        "tools/governance/",
+        "tests/test_q33_governance_infrastructure.py",
+        "docs/governance/",
+        "tests/foundation/",
+        "tools/foundation/",
+        "formal/",
         "data/foundation/"
       ],
-      "reason": "Foundation spans L0-L6; data/foundation/ contains layer-specific and cross-layer files owned by foundation and l1/l2/l3."
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     },
     {
       "authority_source": ".github/README.md",
@@ -27,26 +50,74 @@
     {
       "authority_source": "FOUNDATION.md",
       "component_ids": [
+        "charter",
+        "charter_system_r1",
+        "copyright_governance_jurisdiction_registry",
+        "copyright_governance_source_rights",
+        "copyright_governance_material_classification",
+        "copyright_governance_non_republication_principle",
+        "copyright_governance_publication_gate_validator",
+        "copyright_governance_history_remediation",
+        "copyright_governance_tests",
+        "epistemic_governance_kernel",
+        "human_knowledge_surfaces",
+        "licensing",
         "foundation",
-        "l4"
+        "ignition_operating_method",
+        "l5",
+        "l4",
+        "l1",
+        "l2",
+        "l3"
       ],
       "path_patterns": [
-        "formal/"
+        "data/governance/",
+        "schemas/governance/",
+        "tools/governance/",
+        "tests/test_q33_governance_infrastructure.py",
+        "docs/governance/",
+        "tests/foundation/",
+        "tools/foundation/",
+        "formal/",
+        "data/foundation/"
       ],
-      "reason": "Foundation includes formal/lean/ for formal proofs; L4 owns formal/ for general math models."
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     },
     {
       "authority_source": "FOUNDATION.md",
       "component_ids": [
+        "charter",
+        "charter_system_r1",
+        "copyright_governance_jurisdiction_registry",
+        "copyright_governance_source_rights",
+        "copyright_governance_material_classification",
+        "copyright_governance_non_republication_principle",
+        "copyright_governance_publication_gate_validator",
+        "copyright_governance_history_remediation",
+        "copyright_governance_tests",
+        "epistemic_governance_kernel",
+        "human_knowledge_surfaces",
+        "licensing",
         "foundation",
         "ignition_operating_method",
-        "l5"
+        "l5",
+        "l4",
+        "l1",
+        "l2",
+        "l3"
       ],
       "path_patterns": [
+        "data/governance/",
+        "schemas/governance/",
+        "tools/governance/",
+        "tests/test_q33_governance_infrastructure.py",
+        "docs/governance/",
         "tests/foundation/",
-        "tools/foundation/"
+        "tools/foundation/",
+        "formal/",
+        "data/foundation/"
       ],
-      "reason": "Foundation includes tests/foundation/ and tools/foundation/ for cross-layer validation; L5 owns them for evaluation methodology."
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     },
     {
       "authority_source": "OPERATING-METHOD.md",
@@ -119,14 +190,25 @@
         "copyright_governance_tests",
         "epistemic_governance_kernel",
         "human_knowledge_surfaces",
-        "licensing"
+        "licensing",
+        "foundation",
+        "ignition_operating_method",
+        "l5",
+        "l4",
+        "l1",
+        "l2",
+        "l3"
       ],
       "path_patterns": [
         "data/governance/",
         "schemas/governance/",
         "tools/governance/",
         "tests/test_q33_governance_infrastructure.py",
-        "docs/governance/"
+        "docs/governance/",
+        "tests/foundation/",
+        "tools/foundation/",
+        "formal/",
+        "data/foundation/"
       ],
       "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     },
@@ -316,7 +398,8 @@
         "data/operations/current-release-lifecycle-r1.json",
         "data/operations/current-snapshot-r1.json",
         "data/operations/state-changelog-profile-r1.json",
-        "schemas/operations/state-changelog-profile-r1.schema.json",
+        "data/operations/state-changelog-profile-r2.json",
+        "data/operations/human-front-door-identity-r1.json",
         "data/operations/current-task-lineage-status.json",
         "data/operations/current-volatile-fact-registry-r1.json",
         "data/operations/task-identity-model-r1.json",
@@ -324,12 +407,17 @@
         "schemas/architecture/current-facts.schema.json",
         "schemas/architecture/current-system-identity.schema.json",
         "schemas/operations/current-snapshot-r1.schema.json",
+        "schemas/operations/human-front-door-identity-r1.schema.json",
+        "schemas/operations/state-changelog-profile-r2.schema.json",
         "tests/test_current_state_sync.py",
         "tests/test_current_surface_compiler.py",
         "tests/test_state_changelog.py",
         "tools/build_current_snapshot.py",
         "tools/current_surface_compiler.py",
         "tools/generate_current_facts.py",
+        "tools/validate_current_state_sync.py",
+        "tools/validate_state_changelog.py",
+        "schemas/operations/state-changelog-profile-r1.schema.json",
         "tools/build_publication_witness.py",
         "tools/record_current_surface_determinism.py",
         "tools/validate_current_release_lifecycle.py",
@@ -339,9 +427,7 @@
         "tests/test_current_task_advancement.py",
         "tools/advance_current_task.py",
         "tools/validate_execution_contract.py",
-        "tools/validate_iteration_ordinal_binding.py",
-        "tools/validate_current_state_sync.py",
-        "tools/validate_state_changelog.py"
+        "tools/validate_iteration_ordinal_binding.py"
       ]
     },
     {
@@ -401,13 +487,14 @@
         "group": "core",
         "visible": true
       },
-    "path_patterns": [
-      "FOUNDATION.md",
-      "data/foundation/",
-      "docs/foundation/",
-      "tools/foundation/",
-      "tests/foundation/",
-      "formal/lean/"
+      "path_patterns": [
+        "FOUNDATION.md",
+        "data/foundation/",
+        "docs/foundation/",
+        "tools/foundation/",
+        "tests/foundation/",
+        "tests/test_knowledge_corpus_admission.py",
+        "formal/lean/"
       ]
     },
     {
@@ -796,7 +883,8 @@
       },
       "path_patterns": [
         "tests/foundation/",
-        "tools/foundation/"
+        "tools/foundation/",
+        ".github/workflows/repository-path-accounting-preflight.yml"
       ]
     },
     {
@@ -815,11 +903,11 @@
         "group": "layers",
         "visible": true
       },
-    "path_patterns": [
-      "docs/publication/",
-      "reports/publication/",
-      "data/publication/fire-seeds/"
-    ]
+      "path_patterns": [
+        "docs/publication/",
+        "reports/publication/",
+        "data/publication/fire-seeds/"
+      ]
     },
     {
       "authority": "canonical",
@@ -1055,7 +1143,6 @@
         "tests/test_era_resolver_generalization.py",
         "data/operations/propagation/",
         ".github/workflows/foundation-validation.yml",
-        ".github/workflows/repository-path-accounting-preflight.yml",
         "tests/fixtures/",
         "data/operations/generated-output-authority.json",
         "data/operations/generator-source-contracts.json",
@@ -1065,7 +1152,8 @@
         "tools/operations/validate_generated_output_authority.py",
         "tools/propagation/",
         "schemas/operations/agent-platform-r2-propagation-contract.schema.json",
-        ".gitignore"
+        ".gitignore",
+        ".github/workflows/repository-path-accounting-preflight.yml"
       ]
     },
     {
@@ -1426,10 +1514,10 @@
         "docs/generated/ignition-system-architecture.svg",
         "docs/generated/ignition-system-architecture.html",
         "tools/generate_interactive_system_map.py",
-      "tools/validate_human_front_door.py",
-      "tests/test_human_front_door.py",
-      "tests/test_overall_architecture.py",
-      "tests/test_generated_output_authority.py",
+        "tools/validate_human_front_door.py",
+        "tests/test_human_front_door.py",
+        "tests/test_overall_architecture.py",
+        "tests/test_generated_output_authority.py",
         "docs/architecture/interactive-system-map.md"
       ]
     },
@@ -1618,6 +1706,8 @@
         "visible": true
       },
       "path_patterns": [
+        ".github/workflows/q33-governance-validation.yml",
+        "requirements-q33.txt",
         "tests/test_q33_governance_infrastructure.py"
       ]
     },
@@ -1705,9 +1795,18 @@
       "description": "Owner / Human 入口：保留价值、权限和停止边界，不被 Agent 自行改写。",
       "label": "Owner / Human",
       "layer_or_overlay": "governance",
-      "lifecycle": {"source": ".github/README.md", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": [".github/README.md"]
+      "lifecycle": {
+        "source": ".github/README.md",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        ".github/README.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1717,9 +1816,22 @@
       "description": "Agentization Boundary R0 的领域切割、依赖方向与不迁移处置。",
       "label": "智能体化边界 R0",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/architecture/agentization-boundary-r0.json", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/architecture/agentization-boundary-r0.json", "schemas/architecture/agentization-boundary-r0.schema.json", "docs/architecture/agentization-boundary-r0.md", "tools/generate_agentization_boundary.py", "tools/validate_agentization_boundary.py"]
+      "lifecycle": {
+        "source": "data/architecture/agentization-boundary-r0.json",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/architecture/agentization-boundary-r0.json",
+        "schemas/architecture/agentization-boundary-r0.schema.json",
+        "docs/architecture/agentization-boundary-r0.md",
+        "tools/generate_agentization_boundary.py",
+        "tools/validate_agentization_boundary.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1729,9 +1841,19 @@
       "description": "领域无关的身份、权限、状态、审计、checkpoint、handoff 和不变量契约。",
       "label": "Ignition Generic Kernel R0",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_kernel/", "status": "current", "version": "CURRENT_BOUNDED_R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_kernel/", "schemas/agent-runtime/"]
+      "lifecycle": {
+        "source": "agent_kernel/",
+        "status": "current",
+        "version": "CURRENT_BOUNDED_R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_kernel/",
+        "schemas/agent-runtime/"
+      ]
     },
     {
       "authority": "canonical",
@@ -1741,9 +1863,23 @@
       "description": "R0 typed loop 加上 R1 真实本地行动与 R2 的 Pack、Memory、Supervisor、Profile、Gateway、Routing 边界；仍保持领域无关。",
       "label": "Agent Runtime R2 (R0 base)",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/", "status": "current", "version": "EXPERIMENTAL_RUNTIME_R2_WITH_OPEN_OBLIGATIONS"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/", "data/agent-runtime/pilots/r1-real-local/", "docs/architecture/agent-runtime-r1.md", "tools/validate_agent_runtime_boundary.py", "tests/test_agent_runtime_r0.py", "tests/test_agent_runtime_r1.py"]
+      "lifecycle": {
+        "source": "agent_runtime/",
+        "status": "current",
+        "version": "EXPERIMENTAL_RUNTIME_R2_WITH_OPEN_OBLIGATIONS"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/",
+        "data/agent-runtime/pilots/r1-real-local/",
+        "docs/architecture/agent-runtime-r1.md",
+        "tools/validate_agent_runtime_boundary.py",
+        "tests/test_agent_runtime_r0.py",
+        "tests/test_agent_runtime_r1.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1753,9 +1889,21 @@
       "description": "可持久 Agent 身份、Owner/Charter 引用、能力类和禁止自我升级策略。",
       "label": "Agent Profile R0",
       "layer_or_overlay": "governance",
-      "lifecycle": {"source": "schemas/agent-runtime/agent-profile.schema.json", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/agent-runtime/agent-profile-r0.json", "data/agent-runtime/agent-profiles-r1.json", "schemas/agent-runtime/agent-profile.schema.json", "schemas/agent-runtime/agent-profile-r1.schema.json"]
+      "lifecycle": {
+        "source": "schemas/agent-runtime/agent-profile.schema.json",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/agent-runtime/agent-profile-r0.json",
+        "data/agent-runtime/agent-profiles-r1.json",
+        "schemas/agent-runtime/agent-profile.schema.json",
+        "schemas/agent-runtime/agent-profile-r1.schema.json"
+      ]
     },
     {
       "authority": "canonical",
@@ -1765,9 +1913,19 @@
       "description": "Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。",
       "label": "Environment / Tools / Executors",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "docs/architecture/agent-runtime-r0.md", "status": "current", "version": "R0"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["docs/architecture/agent-runtime-r0.md", "agent_runtime/protocols.py"]
+      "lifecycle": {
+        "source": "docs/architecture/agent-runtime-r0.md",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/architecture/agent-runtime-r0.md",
+        "agent_runtime/protocols.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1777,9 +1935,19 @@
       "description": "Working State 与可追溯 Durable Memory Event 的最小记录回路，不引入向量数据库。",
       "label": "Feedback / Memory / Correction Loop",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/runtime.py", "status": "current", "version": "R0"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/runtime.py", "schemas/agent-runtime/runtime-state.schema.json"]
+      "lifecycle": {
+        "source": "agent_runtime/runtime.py",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/runtime.py",
+        "schemas/agent-runtime/runtime-state.schema.json"
+      ]
     },
     {
       "authority": "canonical",
@@ -1789,9 +1957,19 @@
       "description": "Domain Pack manifest 与禁止权力升级的挂接契约。",
       "label": "Domain Pack Contract",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_kernel/domain_pack.py", "status": "current", "version": "R0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["agent_kernel/domain_pack.py", "schemas/agent-runtime/domain-pack-manifest.schema.json"]
+      "lifecycle": {
+        "source": "agent_kernel/domain_pack.py",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_kernel/domain_pack.py",
+        "schemas/agent-runtime/domain-pack-manifest.schema.json"
+      ]
     },
     {
       "authority": "canonical",
@@ -1801,9 +1979,19 @@
       "description": "现有 Foundation、claims、Evidence、函数/非函数资产、Results 与知识体验的第一个 Domain Pack 引用面。",
       "label": "Knowledge Domain Pack",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "packs/knowledge/manifest.json", "status": "current", "version": "ref-only-R0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["packs/knowledge/manifest.json", "packs/knowledge/README.md"]
+      "lifecycle": {
+        "source": "packs/knowledge/manifest.json",
+        "status": "current",
+        "version": "ref-only-R0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "packs/knowledge/manifest.json",
+        "packs/knowledge/README.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1813,9 +2001,19 @@
       "description": "REOS vNext LIGHT 作为有界 research pack 消费 Runtime，不定义 Runtime、权限或 Owner authority。",
       "label": "Research Pack / REOS LIGHT",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "docs/architecture/reos-vnext-light.md", "status": "current", "version": "bounded-pack"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["docs/architecture/reos-vnext-light.md", "reos_vnext/"]
+      "lifecycle": {
+        "source": "docs/architecture/reos-vnext-light.md",
+        "status": "current",
+        "version": "bounded-pack"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/architecture/reos-vnext-light.md",
+        "reos_vnext/"
+      ]
     },
     {
       "authority": "canonical",
@@ -1825,9 +2023,19 @@
       "description": "之元写作法作为 L6 writing/publication pack，不进入 Generic Kernel 或提高 Runtime 权限。",
       "label": "Writing Pack / 之元写作法",
       "layer_or_overlay": "publication",
-      "lifecycle": {"source": "docs/publication/zhiyuan-writing-method.md", "status": "current", "version": "0.5.0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["docs/publication/zhiyuan-writing-method.md", "templates/publication/zhiyuan-writing-spec.md"]
+      "lifecycle": {
+        "source": "docs/publication/zhiyuan-writing-method.md",
+        "status": "current",
+        "version": "0.5.0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/publication/zhiyuan-writing-method.md",
+        "templates/publication/zhiyuan-writing-spec.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1837,9 +2045,20 @@
       "description": "最小仓库维护 Pack 的 manifest；由 Pack Registry 声明能力，不获得通用 Owner、truth 或远端写权限。",
       "label": "Maintenance Pack",
       "layer_or_overlay": "infrastructure",
-      "lifecycle": {"source": "packs/maintenance/manifest.json", "status": "current", "version": "bounded-pack"},
-      "map_projection": {"represented_by": "domain_pack_contract", "no_change_reason": "Maintenance Pack is a bounded manifest projection represented by the visible Domain Pack Contract node.", "visible": false},
-      "path_patterns": ["packs/maintenance/manifest.json", "packs/maintenance/README.md"]
+      "lifecycle": {
+        "source": "packs/maintenance/manifest.json",
+        "status": "current",
+        "version": "bounded-pack"
+      },
+      "map_projection": {
+        "represented_by": "domain_pack_contract",
+        "no_change_reason": "Maintenance Pack is a bounded manifest projection represented by the visible Domain Pack Contract node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "packs/maintenance/manifest.json",
+        "packs/maintenance/README.md"
+      ]
     },
     {
       "authority": "derived",
@@ -1849,9 +2068,20 @@
       "description": "不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。",
       "label": "Non-knowledge Runtime Pilot",
       "layer_or_overlay": "infrastructure",
-      "lifecycle": {"source": "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "status": "current", "version": "R0"},
-      "map_projection": {"group": "domain_packs", "visible": true},
-      "path_patterns": ["agent_runtime/pilots/non_knowledge_manifest.py", "data/agent-runtime/pilots/non-knowledge-manifest-r0/", "tests/test_agent_runtime_r0.py"]
+      "lifecycle": {
+        "source": "data/agent-runtime/pilots/non-knowledge-manifest-r0/",
+        "status": "current",
+        "version": "R0"
+      },
+      "map_projection": {
+        "group": "domain_packs",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/pilots/non_knowledge_manifest.py",
+        "data/agent-runtime/pilots/non-knowledge-manifest-r0/",
+        "tests/test_agent_runtime_r0.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1861,9 +2091,23 @@
       "description": "点火 OS 与可替换外部执行器之间的统一协议、权限、验证、handoff、receipt 与记忆吸收边界；不复制任何供应商 runtime。",
       "label": "External Agent Federation R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/agent-federation/", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/", "schemas/agent-federation/", "data/agent-federation/", "docs/architecture/external-agent-federation-r1.md", "tests/test_federation*", "tools/validate_federation*"]
+      "lifecycle": {
+        "source": "data/agent-federation/",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/",
+        "schemas/agent-federation/",
+        "data/agent-federation/",
+        "docs/architecture/external-agent-federation-r1.md",
+        "tests/test_federation*",
+        "tools/validate_federation*"
+      ]
     },
     {
       "authority": "canonical",
@@ -1873,9 +2117,22 @@
       "description": "OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.",
       "label": "Live External Executor Bridge R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/live_bridge.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/live_*.py", "schemas/agent-federation/live-*.json", "data/operations/iterations/136/", "tests/test_live_*.py", "docs/architecture/external-agent-federation-r1.md"]
+      "lifecycle": {
+        "source": "agent_federation/live_bridge.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/live_*.py",
+        "schemas/agent-federation/live-*.json",
+        "data/operations/iterations/136/",
+        "tests/test_live_*.py",
+        "docs/architecture/external-agent-federation-r1.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1885,9 +2142,24 @@
       "description": "OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.",
       "label": "Live Observation / Reconciliation Plane R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/live_observation_plane.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/live_observation_plane.py", "agent_federation/live_attempt_ledger.py", "agent_federation/live_current_projection.py", "schemas/operations/live-*.json", "data/operations/iterations/140/", "tests/test_live_observation_*.py", "docs/architecture/external-agent-federation-r1.md"]
+      "lifecycle": {
+        "source": "agent_federation/live_observation_plane.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/live_observation_plane.py",
+        "agent_federation/live_attempt_ledger.py",
+        "agent_federation/live_current_projection.py",
+        "schemas/operations/live-*.json",
+        "data/operations/iterations/140/",
+        "tests/test_live_observation_*.py",
+        "docs/architecture/external-agent-federation-r1.md"
+      ]
     },
     {
       "authority": "canonical",
@@ -1897,9 +2169,19 @@
       "description": "OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带入点火。",
       "label": "OpenClaw Adapter",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/adapters/openclaw.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/adapters/openclaw.py", "tests/test_openclaw_adapter.py"]
+      "lifecycle": {
+        "source": "agent_federation/adapters/openclaw.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/adapters/openclaw.py",
+        "tests/test_openclaw_adapter.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1909,9 +2191,19 @@
       "description": "Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。",
       "label": "Hermes Adapter",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/adapters/hermes.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/adapters/hermes.py", "tests/test_hermes_adapter.py"]
+      "lifecycle": {
+        "source": "agent_federation/adapters/hermes.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/adapters/hermes.py",
+        "tests/test_hermes_adapter.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1921,9 +2213,19 @@
       "description": "Codex 的 JSONL public CLI adapter；默认 read-only、ephemeral、isolated config/rules、pointer-only thread，不保留 hidden reasoning 或危险 bypass。",
       "label": "Codex Adapter",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/adapters/codex.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/adapters/codex.py", "tests/test_codex_adapter.py"]
+      "lifecycle": {
+        "source": "agent_federation/adapters/codex.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/adapters/codex.py",
+        "tests/test_codex_adapter.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1933,9 +2235,21 @@
       "description": "现有本地 action plane 的冻结 Reference / Conformance / Fallback 角色；它验证协议，不向万能 Agent 壳、provider、daemon 或远端执行层扩张。",
       "label": "Reference Executor",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/pilots.py", "status": "current", "version": "R1-FROZEN"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/pilots.py", "agent_runtime/actions.py", "agent_runtime/r1_runtime.py", "tests/test_federation_pilots.py"]
+      "lifecycle": {
+        "source": "agent_federation/pilots.py",
+        "status": "current",
+        "version": "R1-FROZEN"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/pilots.py",
+        "agent_runtime/actions.py",
+        "agent_runtime/r1_runtime.py",
+        "tests/test_federation_pilots.py"
+      ]
     },
     {
       "authority": "declarative",
@@ -1945,9 +2259,19 @@
       "description": "未来执行器的声明式插槽；必须先满足统一 contract、最小权限、独立验证、可回执和隐私边界，不能以品牌或智能表现扩大协议。",
       "label": "Future Executors",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/contracts.py", "status": "current", "version": "deferred"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/contracts.py", "schemas/agent-federation/"]
+      "lifecycle": {
+        "source": "agent_federation/contracts.py",
+        "status": "current",
+        "version": "deferred"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/contracts.py",
+        "schemas/agent-federation/"
+      ]
     },
     {
       "authority": "canonical",
@@ -1957,9 +2281,20 @@
       "description": "Append-only typed event ledger with aggregate CAS, hash-chain integrity, deterministic replay and snapshot-tail recovery.",
       "label": "Event Ledger R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/event_ledger.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/event_ledger.py", "tests/test_event_ledger.py", "tools/validate_event_ledger.py"]
+      "lifecycle": {
+        "source": "agent_runtime/event_ledger.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/event_ledger.py",
+        "tests/test_event_ledger.py",
+        "tools/validate_event_ledger.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1969,9 +2304,20 @@
       "description": "Digest-bound effective-policy compiler whose intersections, minima, expiry and prohibitions can only narrow authority.",
       "label": "Monotonic Policy Compiler R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/policy_compiler.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/policy_compiler.py", "tests/test_policy_compiler.py", "tools/validate_policy_compiler.py"]
+      "lifecycle": {
+        "source": "agent_runtime/policy_compiler.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/policy_compiler.py",
+        "tests/test_policy_compiler.py",
+        "tools/validate_policy_compiler.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1981,9 +2327,20 @@
       "description": "Hierarchical typed resource-intent arbitration with atomic acquire-many, expiring leases and conservative unknown-side-effect serialization.",
       "label": "Resource Arbitration R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/resource_arbitration.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/resource_arbitration.py", "tests/test_resource_arbitration.py", "tools/validate_resource_arbitration.py"]
+      "lifecycle": {
+        "source": "agent_runtime/resource_arbitration.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/resource_arbitration.py",
+        "tests/test_resource_arbitration.py",
+        "tools/validate_resource_arbitration.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -1993,9 +2350,20 @@
       "description": "Bounded concurrent dependency-DAG scheduler with deterministic readiness, resource leases, budgets, cancellation, deadlines and checkpoint/resume.",
       "label": "Bounded Concurrent Scheduler R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/scheduler.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/scheduler.py", "tests/test_scheduler.py", "tools/validate_scheduler.py"]
+      "lifecycle": {
+        "source": "agent_runtime/scheduler.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/scheduler.py",
+        "tests/test_scheduler.py",
+        "tools/validate_scheduler.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2005,9 +2373,20 @@
       "description": "Digest-bound executor capability and health lease with expiry, cooldown, stale rejection and deterministic route candidates.",
       "label": "Executor Health Lease R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/executor_health.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/executor_health.py", "tests/test_executor_health.py", "tools/validate_executor_health.py"]
+      "lifecycle": {
+        "source": "agent_runtime/executor_health.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/executor_health.py",
+        "tests/test_executor_health.py",
+        "tools/validate_executor_health.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2017,9 +2396,20 @@
       "description": "Durable bounded queue with quota/backpressure, priority and aging, deadline, pause and cancellation boundaries.",
       "label": "Queue and Backpressure R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/queue_control.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/queue_control.py", "tests/test_queue_control.py", "tools/validate_queue_control.py"]
+      "lifecycle": {
+        "source": "agent_runtime/queue_control.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/queue_control.py",
+        "tests/test_queue_control.py",
+        "tools/validate_queue_control.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2029,9 +2419,20 @@
       "description": "Durable external dispatch, idempotent acknowledgement/progress and conservative receipt reconciliation with forged-record rejection.",
       "label": "Durable Dispatch and Reconciliation R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/dispatch_reconciliation.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/dispatch_reconciliation.py", "tests/test_dispatch_reconciliation.py", "tools/validate_dispatch_reconciliation.py"]
+      "lifecycle": {
+        "source": "agent_runtime/dispatch_reconciliation.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/dispatch_reconciliation.py",
+        "tests/test_dispatch_reconciliation.py",
+        "tools/validate_dispatch_reconciliation.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2041,9 +2442,20 @@
       "description": "Concurrent operational memory with generation CAS, duplicate suppression, supersession/tombstones, stale capsules and deterministic compaction.",
       "label": "Concurrent Operational Memory R2",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/concurrent_memory.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/concurrent_memory.py", "tests/test_concurrent_memory.py", "tools/validate_concurrent_memory.py"]
+      "lifecycle": {
+        "source": "agent_runtime/concurrent_memory.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/concurrent_memory.py",
+        "tests/test_concurrent_memory.py",
+        "tools/validate_concurrent_memory.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2053,9 +2465,20 @@
       "description": "Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.",
       "label": "Driver Console R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/driver_console.py", "status": "current", "version": "R2"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/driver_console.py", "tools/driver_console.py", "tests/test_driver_console.py"]
+      "lifecycle": {
+        "source": "agent_runtime/driver_console.py",
+        "status": "current",
+        "version": "R2"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/driver_console.py",
+        "tools/driver_console.py",
+        "tests/test_driver_console.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2065,9 +2488,25 @@
       "description": "Repository-local durability and lifecycle spine for snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, revocation, accounting, recovery orchestration and disaster-recovery bundles; uncertain external effects stop at reconciliation and are never rerun automatically.",
       "label": "Durability / Lifecycle R3",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/operations/durability/continuity-pilot-r1.json", "status": "current", "version": "R3"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/durability.py", "agent_runtime/recovery.py", "agent_runtime/dr_bundle.py", "agent_runtime/pilots/durability_lifecycle_127.py", "data/operations/durability/", "schemas/operations/durability-", "tools/validate_durability_", "tests/test_durability_"]
+      "lifecycle": {
+        "source": "data/operations/durability/continuity-pilot-r1.json",
+        "status": "current",
+        "version": "R3"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/durability.py",
+        "agent_runtime/recovery.py",
+        "agent_runtime/dr_bundle.py",
+        "agent_runtime/pilots/durability_lifecycle_127.py",
+        "data/operations/durability/",
+        "schemas/operations/durability-",
+        "tools/validate_durability_",
+        "tests/test_durability_"
+      ]
     },
     {
       "authority": "canonical",
@@ -2077,9 +2516,26 @@
       "description": "Repository-local steering spine for provenance-aware intents, goal lifecycle, independent completion contracts, commitments, temporal windows, dependency-aware priority, conflict arbitration, explainable why-next traces, drift guards, memory/profile boundaries, namespace isolation and federation capsules; it cannot infer Owner intent or completion.",
       "label": "Steering / Intent / Goal / Obligation R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_runtime/steering.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["agent_runtime/steering.py", "agent_runtime/driver_console.py", "agent_runtime/event_ledger.py", "agent_runtime/pilots/steering_portfolio_129.py", "agent_runtime/pilots/steering_adversarial_129.py", "data/operations/steering/", "data/operations/iterations/129/fixtures/steering-", "tools/validate_steering_", "tests/test_steering_"]
+      "lifecycle": {
+        "source": "agent_runtime/steering.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_runtime/steering.py",
+        "agent_runtime/driver_console.py",
+        "agent_runtime/event_ledger.py",
+        "agent_runtime/pilots/steering_portfolio_129.py",
+        "agent_runtime/pilots/steering_adversarial_129.py",
+        "data/operations/steering/",
+        "data/operations/iterations/129/fixtures/steering-",
+        "tools/validate_steering_",
+        "tests/test_steering_"
+      ]
     },
     {
       "authority": "canonical",
@@ -2089,9 +2545,23 @@
       "description": "Independent formal-task terminality authority: scope, steps, publication and witness determine task terminality; an open long-term obligation may be referenced and carried forward but cannot keep a completed task running.",
       "label": "Formal Task Lifecycle R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/operations/formal-task-lifecycle-r1.json", "status": "current", "version": "R1"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/operations/formal-task-lifecycle-r1.json", "schemas/operations/formal-task-lifecycle-r1.schema.json", "schemas/operations/execution-contract-r1.schema.json", "tools/validate_formal_task_lifecycle.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_formal_task_lifecycle.py"]
+      "lifecycle": {
+        "source": "data/operations/formal-task-lifecycle-r1.json",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/operations/formal-task-lifecycle-r1.json",
+        "schemas/operations/formal-task-lifecycle-r1.schema.json",
+        "schemas/operations/execution-contract-r1.schema.json",
+        "tools/validate_formal_task_lifecycle.py",
+        "tools/validate_task142_obligation_adjudication.py",
+        "tests/test_formal_task_lifecycle.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2101,9 +2571,22 @@
       "description": "Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence and carry-forward lineage; obligation closure is not formal-task liveness.",
       "label": "Open Obligation Registry R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "data/operations/open-obligation-registry-r1.json", "status": "current", "version": "R1"},
-      "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/operations/open-obligation-registry-r1.json", "schemas/operations/open-obligation-registry-r1.schema.json", "tools/validate_open_obligation_registry.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_open_obligation_registry.py"]
+      "lifecycle": {
+        "source": "data/operations/open-obligation-registry-r1.json",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "os_spine",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/operations/open-obligation-registry-r1.json",
+        "schemas/operations/open-obligation-registry-r1.schema.json",
+        "tools/validate_open_obligation_registry.py",
+        "tools/validate_task142_obligation_adjudication.py",
+        "tests/test_open_obligation_registry.py"
+      ]
     },
     {
       "authority": "canonical",
@@ -2113,53 +2596,67 @@
       "description": "Provider-neutral admission gate for installed agentic executors: public attestation, bounded interface, auth and billing policy, workspace/scratch isolation, structured result, capture, cleanup, validator and side-effect constraints are evaluated before live dispatch.",
       "label": "Executor Admission R1",
       "layer_or_overlay": "overlay",
-      "lifecycle": {"source": "agent_federation/executor_admission_contract.py", "status": "current", "version": "R1"},
-      "map_projection": {"group": "federation", "visible": true},
-      "path_patterns": ["agent_federation/executor_admission_contract.py", "schemas/operations/executor-admission-contract-r1.schema.json", "data/operations/executor-admission-contract-r1.json", "tools/validate_executor_admission_contract.py", "data/operations/iterations/142/local-executor-census-r2.json", "tests/test_executor_admission_contract.py"]
+      "lifecycle": {
+        "source": "agent_federation/executor_admission_contract.py",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "group": "federation",
+        "visible": true
+      },
+      "path_patterns": [
+        "agent_federation/executor_admission_contract.py",
+        "schemas/operations/executor-admission-contract-r1.schema.json",
+        "data/operations/executor-admission-contract-r1.json",
+        "tools/validate_executor_admission_contract.py",
+        "data/operations/iterations/142/local-executor-census-r2.json",
+        "tests/test_executor_admission_contract.py"
+      ]
     },
     {
-        "authority": "canonical",
-        "canonical_target": "scripts/external-research/openalex_client.py",
-        "component_id": "openalex_adapter_r1",
-        "component_type": "operation_control",
-        "description": "PR #259 candidate OpenAlex adapter used by the research workflow slot; this component declaration grants no source access or publication authority.",
-        "label": "OpenAlex Research Adapter R1",
-        "layer_or_overlay": "infrastructure",
-        "lifecycle": {
-            "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
-            "status": "draft_candidate",
-            "version": "R1"
-        },
-        "map_projection": {
-            "represented_by": "research_pack_reos_light",
-            "no_change_reason": "The candidate adapter is an implementation detail of the visible research pack and does not add an architecture node.",
-            "visible": false
-        },
-        "path_patterns": [
-            "scripts/external-research/openalex_client.py"
-        ]
+      "authority": "canonical",
+      "canonical_target": "scripts/external-research/openalex_client.py",
+      "component_id": "openalex_adapter_r1",
+      "component_type": "operation_control",
+      "description": "PR #259 candidate OpenAlex adapter used by the research workflow slot; this component declaration grants no source access or publication authority.",
+      "label": "OpenAlex Research Adapter R1",
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "represented_by": "research_pack_reos_light",
+        "no_change_reason": "The candidate adapter is an implementation detail of the visible research pack and does not add an architecture node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "scripts/external-research/openalex_client.py"
+      ]
     },
     {
-        "authority": "canonical",
-        "canonical_target": "research_workflow/SLOT.md",
-        "component_id": "research_workflow_slot",
-        "component_type": "operation_control",
+      "authority": "canonical",
+      "canonical_target": "research_workflow/SLOT.md",
+      "component_id": "research_workflow_slot",
+      "component_type": "operation_control",
       "description": "PR #259 candidate research workflow package, including the live CLI and source-binding slot; it does not acquire authority to alter review or release decisions.",
       "label": "Research Workflow R1",
-        "layer_or_overlay": "infrastructure",
-        "lifecycle": {
-            "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
-            "status": "draft_candidate",
-            "version": "R1"
-        },
-        "map_projection": {
-            "represented_by": "research_pack_reos_light",
-            "no_change_reason": "The workflow slot is an implementation detail of the visible research pack and does not add an architecture node.",
-            "visible": false
-        },
-        "path_patterns": [
-            "research_workflow/"
-        ]
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "PR #259 head b7bad5f89d103b3bebcd142395303fcdede8e882",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "represented_by": "research_pack_reos_light",
+        "no_change_reason": "The workflow slot is an implementation detail of the visible research pack and does not add an architecture node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "research_workflow/"
+      ]
     },
     {
       "authority": "canonical",
@@ -2184,41 +2681,42 @@
       ]
     },
     {
-        "authority": "canonical",
-        "canonical_target": "tools/operations/route_component_validation.py",
-        "component_id": "component_validation_router",
-        "component_type": "operation_control",
-        "description": "G-domain controls for causal component impact closure, exact consumer validation evidence, deterministic component releases, and final protected-main SHA witnesses.",
-        "label": "Component Validation Router",
-        "layer_or_overlay": "infrastructure",
-        "lifecycle": {
-            "source": "formal G-domain implementation candidate",
-            "status": "draft_candidate",
-            "version": "R1"
-        },
-        "map_projection": {
-            "represented_by": "iteration",
-            "no_change_reason": "The component validation router extends the existing incremental execution operation and does not add a separate architecture node.",
-            "visible": false
-        },
-        "path_patterns": [
-            "data/operations/component-validation-map-r1.json",
-            "data/operations/component-release-policy-r1.json",
-            "schemas/operations/component-validation-map-r1.schema.json",
-            "schemas/operations/component-release-policy-r1.schema.json",
-            "schemas/operations/component-release-manifest-r1.schema.json",
-            "tools/operations/route_component_validation.py",
-            "tools/operations/run_component_validation_targets.py",
-            "tools/operations/verify_component_validation_evidence.py",
-            "tools/operations/write_final_main_witness.py",
-            "tools/operations/prepare_component_release.py",
-            "tools/operations/release_authorization.py",
-            "tests/test_component_validation_routing.py",
-            "tests/test_component_validation_evidence.py",
-            "tests/test_component_release_preparation.py",
-            "tests/test_component_release_authorization.py",
-            "tests/test_history_remediation_contract.py"
-        ]
+      "authority": "canonical",
+      "canonical_target": "tools/operations/route_component_validation.py",
+      "component_id": "component_validation_router",
+      "component_type": "operation_control",
+      "description": "G-domain controls for causal component impact closure, exact consumer validation evidence, deterministic component releases, and final protected-main SHA witnesses.",
+      "label": "Component Validation Router",
+      "layer_or_overlay": "infrastructure",
+      "lifecycle": {
+        "source": "formal G-domain implementation candidate",
+        "status": "draft_candidate",
+        "version": "R1"
+      },
+      "map_projection": {
+        "represented_by": "iteration",
+        "no_change_reason": "The component validation router extends the existing incremental execution operation and does not add a separate architecture node.",
+        "visible": false
+      },
+      "path_patterns": [
+        "data/operations/component-validation-map-r1.json",
+        "data/operations/component-release-policy-r1.json",
+        "schemas/operations/component-validation-map-r1.schema.json",
+        "schemas/operations/component-release-policy-r1.schema.json",
+        "schemas/operations/component-release-manifest-r1.schema.json",
+        "tools/operations/route_component_validation.py",
+        "tools/operations/run_component_validation_targets.py",
+        "tools/operations/verify_component_validation_evidence.py",
+        "tools/operations/write_final_main_witness.py",
+        "tools/operations/prepare_component_release.py",
+        "tools/operations/release_authorization.py",
+        "tests/test_component_validation_routing.py",
+        "tests/test_component_validation_evidence.py",
+        "tests/test_component_release_preparation.py",
+        "tests/test_component_release_authorization.py",
+        "tests/test_history_remediation_contract.py",
+        ".github/workflows/release-transaction-protocol-validation.yml"
+      ]
     },
     {
       "authority": "canonical",
@@ -2253,5 +2751,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.7.1"
+  "registry_version": "2.7.0"
 }

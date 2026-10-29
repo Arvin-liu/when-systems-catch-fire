@@ -2,38 +2,8 @@ name: release-transaction-protocol-validation
 
 on:
   pull_request:
-    paths:
-      - '.github/workflows/release-transaction-protocol-validation.yml'
-      - 'ignition/data/operations/release-transaction-protocol-r2.json'
-      - 'ignition/data/operations/release-transaction-protocol-r3.json'
-      - 'ignition/data/operations/release-transaction-recovery-state-r1.json'
-      - 'ignition/schemas/operations/release-transaction-protocol-r2.schema.json'
-      - 'ignition/schemas/operations/release-transaction-protocol-r3.schema.json'
-      - 'ignition/tools/validate_release_transaction_protocol.py'
-      - 'ignition/tools/validate_release_transaction_protocol_r3.py'
-      - 'ignition/tests/test_release_transaction_protocol.py'
-      - 'ignition/tests/test_release_transaction_protocol_r3.py'
-      - 'ignition/docs/operations/stage-snapshot-publication.md'
-      - 'ignition/data/operations/current-task-lineage-status.json'
-      - 'ignition/data/operations/task-identity-model-r1.json'
-      - 'ignition/data/operations/iterations/**/execution-contract*.json'
   push:
     branches: [main]
-    paths:
-      - '.github/workflows/release-transaction-protocol-validation.yml'
-      - 'ignition/data/operations/release-transaction-protocol-r2.json'
-      - 'ignition/data/operations/release-transaction-protocol-r3.json'
-      - 'ignition/data/operations/release-transaction-recovery-state-r1.json'
-      - 'ignition/schemas/operations/release-transaction-protocol-r2.schema.json'
-      - 'ignition/schemas/operations/release-transaction-protocol-r3.schema.json'
-      - 'ignition/tools/validate_release_transaction_protocol.py'
-      - 'ignition/tools/validate_release_transaction_protocol_r3.py'
-      - 'ignition/tests/test_release_transaction_protocol.py'
-      - 'ignition/tests/test_release_transaction_protocol_r3.py'
-      - 'ignition/docs/operations/stage-snapshot-publication.md'
-      - 'ignition/data/operations/current-task-lineage-status.json'
-      - 'ignition/data/operations/task-identity-model-r1.json'
-      - 'ignition/data/operations/iterations/**/execution-contract*.json'
   workflow_dispatch:
 
 permissions:
@@ -42,6 +12,10 @@ permissions:
 defaults:
   run:
     working-directory: ignition
+
+concurrency:
+  group: release-transaction-protocol-validation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:
@@ -58,7 +32,13 @@ jobs:
         run: python3 -m pip install -r requirements-foundation.txt
       - name: Validate the effective R2 contract
         run: python3 tools/validate_release_transaction_protocol.py --check
-      - name: Validate the R3 candidate without activating it
-        run: python3 tools/validate_release_transaction_protocol_r3.py --check
-      - name: Run preserved R2 tests and R3 candidate protocol tests
-        run: python3 -m unittest tests.test_release_transaction_protocol tests.test_release_transaction_protocol_r3 -v
+      - name: Validate the R2 protocol tests
+        run: python3 -m unittest tests.test_release_transaction_protocol -v
+      - name: Validate an R3 protocol candidate when its files are present
+        run: |
+          if [ -f data/operations/release-transaction-protocol-r3.json ] \
+            || [ -f tools/validate_release_transaction_protocol_r3.py ] \
+            || [ -f tests/test_release_transaction_protocol_r3.py ]; then
+            python3 tools/validate_release_transaction_protocol_r3.py --check
+            python3 -m unittest tests.test_release_transaction_protocol_r3 -v
+          fi

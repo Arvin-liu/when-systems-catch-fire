@@ -16,7 +16,6 @@ defaults:
     working-directory: ignition
 jobs:
   route:
-    name: foundation-validation-route
     runs-on: ubuntu-latest
     outputs:
       mode: ${{ steps.plan.outputs.mode }}
@@ -140,133 +139,21 @@ jobs:
           lake-package-directory: ignition/formal/lean
           use-mathlib-cache: false
           use-github-cache: false
-      - run: cd formal/lean && lake env lean Foundation.lean
-      - run: python3 tools/foundation/adjudicate_core.py --check
-      - run: python3 tools/foundation/migrate_legacy.py --check
-      - run: python3 tools/foundation/validate_foundation.py
-      - run: python3 tools/foundation/build_function_asset_census.py --check
-      - run: python3 tools/foundation/adjudicate_function_assets.py --check
-      - run: python3 tools/foundation/validate_claim_governance.py
-      - run: python3 tools/foundation/validate_function_asset_closure.py
-      - run: python3 tools/foundation/run_function_asset_math_checks.py --check
-      - run: python3 tools/foundation/adjudicate_nonfunction_claims.py --check
-      - run: python3 tools/foundation/validate_nonfunction_claim_closure.py
-      - name: Validate human result census and self-correction products
-        run: |
-          python3 tools/governance/build_human_results.py --check
-          python3 tools/governance/run_self_correction.py --check
-          python3 tools/governance/build_knowledge_experience.py --check
-          python3 tools/governance/validate_human_visibility.py
-          python3 tools/governance/validate_knowledge_experience.py
-          python3 tools/publication/validate_fire_seeds.py --check
-          python3 tools/governance/build_claim_browsers.py --check
-          python3 tools/generate_overall_architecture.py --check
-      - name: Regression — knowledge-experience clone-independence (task 102)
-        run: python3 tools/governance/check_knowledge_experience_determinism.py
-      - run: python3 tools/foundation/verify_core_claims.py --check
-      - run: python3 tools/foundation/verify_079.py --check
-      - run: python3 tools/foundation/validate_080_adjudications.py
-      - name: Validate synchronization registry and iteration closures
-        run: python3 tools/validate_iteration_sync.py
-      - name: Validate typed change-propagation products
-        run: |
-          # Q32 is accepted historical evidence and is verified by the D4
-          # closeout validator; do not reinterpret its map delta against the
-          # later Q32I candidate registry.
-          # Q32I is validated era-aware (V15 Q32I-B): recompute its closure and
-          # delta against the registry/topology/surfaces snapshot at its merge
-          # commit, not the live (since-drifted) registry.
-          python3 tools/operations/validate_phase_d_closeout.py --check
-          python3 tools/operations/compute_change_propagation.py \
-            --request data/operations/propagation/121Q32I-request.json \
-            --output data/operations/propagation/121Q32I-closure.json \
-            --report reports/operations/121Q32I-change-propagation-impact.md \
-            --map-delta data/operations/propagation/121Q32I-system-map-delta.json \
-            --residue data/operations/propagation/121Q32I-residue.json \
-            --era-ref 0a13c246172c0338bf8dda5dc08db5a574a8b23f \
-            --check
-          # The three method-1.4 products below were jointly regenerated and
-          # sealed at f59b9f35. Validate their inputs and map at that era so a
-          # later governed surface retirement does not rewrite closed evidence.
-          python3 tools/operations/compute_change_propagation.py \
-            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json \
-            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-closure.json \
-            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md \
-            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-system-map-delta.json \
-            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-residue.json \
-            --era-ref f59b9f359ea16a346e07e9621049468417b66423 \
-            --head-ref f59b9f359ea16a346e07e9621049468417b66423 \
-            --check
-          python3 tools/operations/compute_change_propagation.py \
-            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-request.json \
-            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-closure.json \
-            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md \
-            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-system-map-delta.json \
-            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-residue.json \
-            --era-ref f59b9f359ea16a346e07e9621049468417b66423 \
-            --head-ref f59b9f359ea16a346e07e9621049468417b66423 \
-            --check
-          python3 tools/operations/compute_change_propagation.py \
-            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-request.json \
-            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-closure.json \
-            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md \
-            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-system-map-delta.json \
-            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-residue.json \
-            --era-ref f59b9f359ea16a346e07e9621049468417b66423 \
-            --head-ref f59b9f359ea16a346e07e9621049468417b66423 \
-            --check
-      - name: Validate Q32I Phase E candidate
-        run: python3 tools/operations/validate_phase_e_candidate.py --check
-      - name: Validate registry-derived system map
-        run: python3 tools/generate_interactive_system_map.py --check
-      - name: Validate homepage architecture projection provenance
-        run: python3 tools/validate_homepage_architecture_projection.py --check
-      - name: Validate stage snapshot registry and deterministic homepage projection
-        run: |
-          python3 tools/operations/generate_stage_snapshot_actor_contract.py --check
-          python3 tools/operations/validate_stage_snapshots.py --check
-      - name: Run instance-level stage snapshot responsibility actor cases
-        run: python3 tools/operations/run_stage_snapshot_responsibility_cases.py
-      - run: python3 tools/validate_human_front_door.py
-      - name: Validate Language-Thought Logic Plane
-        run: |
-          python3 tools/language_thought/validate_language_thought.py
-          python3 -m unittest tests.test_language_thought_plane
-      - name: Validate epistemic governance referential kernel
-        run: |
-          python3 tools/validate_epistemic_governance_relationships.py data/governance/epistemic-governance-relationships.json --repo-root .
-          python3 -m unittest tests.test_epistemic_governance_relationships -v
-      - name: Validate AI-first project state delta log
-        run: |
-          python3 tools/validate_state_changelog.py
-          python3 -m unittest tests.test_state_changelog -v
-      - run: python3 -m unittest tests.foundation.test_foundation
-      - run: python3 -m unittest tests.foundation.test_claim_governance
-      - run: python3 -m unittest tests.foundation.test_function_asset_closure
-      - run: python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v
-      - run: python3 -m unittest tests.test_iteration_sync -v
-      - run: python3 -m unittest tests.test_human_front_door -v
-      - run: python3 -m unittest tests.test_change_propagation -v
-      - run: python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v
-      - run: python3 -m unittest tests.test_stage_snapshot_publication -v
-      - run: python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v
-      - run: python3 -m unittest tests.test_phase_e_candidate -v
-      - run: python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v
-      - run: python3 -m unittest tests.test_production_execution_authority -v
-      - name: "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)"
-        run: python3 -m unittest tests.foundation.test_generator_reconciliation_staleness -v
-      - name: "Task 106 — fail-closed propagation reconciliation"
-        run: |
-          python3 -m unittest tests.test_propagation_reconciliation -v
-          python3 tools/propagation/validate_reconciliation.py --check
-      - name: Confirm full regression source remained unchanged
-        env:
-          VALIDATION_SHA: ${{ github.sha }}
-        run: |
-          test "$(git rev-parse HEAD)" = "$VALIDATION_SHA"
-          test -z "$(git status --porcelain --untracked-files=all)"
+      - name: Run Foundation checks sequentially and record every result
+        run: python3 tools/foundation/run_foundation_ci.py --evidence-dir "$RUNNER_TEMP/foundation-ci-evidence"
+      - name: Upload per-command Foundation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: foundation-ci-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/foundation-ci-evidence/
+          if-no-files-found: warn
+          retention-days: 30
 
   validate:
+    # Main branch protection requires this exact status context. Keep the
+    # existing fail-closed aggregation below and expose it under the protected
+    # context so a successful Foundation check is actually mergeable.
     name: foundation-validation
     if: always()
     needs: [route, full_regression]

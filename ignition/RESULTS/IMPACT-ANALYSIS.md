@@ -18,7 +18,7 @@
 |`RESULTS/OPEN-QUESTIONS.md`|27|0|否|
 |`RESULTS/README.md`|5|0|否|
 |`RESULTS/RESEARCH-AND-ARTICLES.md`|18|0|否|
-|`SUMMARY.md`|9|0|否|
+|`SUMMARY.md`|8|0|否|
 |`docs/AGENT-GUIDE.md`|11|0|否|
 |`docs/AI-PROMPT-TEMPLATES.md`|4|0|否|
 |`docs/AI-USAGE.md`|2|0|否|
