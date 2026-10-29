@@ -927,7 +927,11 @@ def test_candidate_scope_excludes_runtime_changes_inherited_from_newer_base(tmp_
     git("switch", "candidate")
     git("merge", "--no-edit", "newer-base")
     merged_head = git("rev-parse", "HEAD")
-    paths = changed_paths_for_candidate_scope(tmp_path, frozen_head)
+    local_event = tmp_path.parent / "local-push-event.json"
+    local_event.write_text("{}", encoding="utf-8")
+    paths = changed_paths_for_candidate_scope(
+        tmp_path, frozen_head, event_path=local_event
+    )
     assert "r5a-only.md" in paths
     assert "candidate-seed.txt" in paths
     assert "tools/adaptive_relational_runtime/runtime.py" not in paths
