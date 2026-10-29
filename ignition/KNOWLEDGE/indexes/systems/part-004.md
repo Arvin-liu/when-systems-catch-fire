@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [test or evidence;](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-09680fff1a941685 / test or evidence;
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
 - [Tests, losses, evaluation loaders, examples, version warnings, strict loads, and CI form concrete validation mechanisms.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f3966438cc1d875d / Tests, losses, evaluation loaders, examples, version warnings, strict loads, and CI form concrete validation mechanisms.
@@ -2234,6 +2239,11 @@
   - 可搜索名称：NFC-3e57578f44343a59 / \| S44 \| `test_s44_remote_evidence_readable` \| \(skipped when control inputs absent\) FileSystemProvider reads 5 materials;
   - 来源：`reports/ignition-rpe/ATTACK_MATRIX.md`
   - 依赖：—；被引用：—
+- [\| SEMANTIC \| 4 \| **no** \| narrow anti-elevation / precision guardrails only \(`event_time_distinct_from_created_time`, `m](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b97ed2e90b199884 / \| SEMANTIC \| 4 \| **no** \| narrow anti-elevation / precision guardrails only \(`event_time_distinct_from_created_time`, `m
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [\| Source \| Permitted Projection \| Prohibited Inference \|](../../../reports/research/121Q23-network-theory-source-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-098040e2061f0843 / \| Source \| Permitted Projection \| Prohibited Inference \|
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-142163ec00aadfe0 / → Q36-OBS residual / Q36-INT mechanism hypothesis supplied as candidate inputs
   - 来源：`docs/analogy/q37-interfaces.md`
-  - 依赖：—；被引用：—
-- [→ Q37 classifies, maps, audits counteranalogy & mechanism & transportability](../../../docs/analogy/q37-interfaces.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-98400347c9f44f67 / → Q37 classifies, maps, audits counteranalogy & mechanism & transportability
-  - 来源：`docs/analogy/q37-interfaces.md`
-  - 依赖：—；被引用：—
-- [└── 事件层：点火事件演化系统（时间-空间-动态统一）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2587e71de69f263a / └── 事件层：点火事件演化系统（时间-空间-动态统一）
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

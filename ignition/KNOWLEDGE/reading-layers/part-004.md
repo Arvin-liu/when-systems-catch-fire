@@ -225,7 +225,7 @@
 ## ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - 1 分钟：This document is the public, non-private R4 report. It contains only counts, distributions, dispositions and structural facts. No note titles, raw text, transcript content, URL lists or reconstructive features appear here; those live only in the 1111 private evidence branch. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1；taskid: ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725；controlcommit: e8530a7d87f13ef09cea58d34f6f548a695d7955；predecessor: R3 (d6719a74859f278b6166b11e6bd5235c2fa46879, PR #126, DRAFT)；terminalverdict: ARRR4WAICSELFREFLECTIONDRAFTAWAITINGEXTERNALREVIEW；authorization boundary: R4 only. No R5, no PROMOTE/EVOLVE/Ready/merge/Main change/force push.
+- 5 分钟：主题：ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1；taskid: ARR-R4-METRIC-DISCLOSURE-RELAY-RECEIPT-REPAIR-R1-RELAY-20260725；controlcommit: e0926ccb53b4bdf7b08bd54c92f440a98c7f7201；predecessor: R3 (d6719a74859f278b6166b11e6bd5235c2fa46879, PR #126, DRAFT) + R4 (PR #127, DRAFT, UNMERGED)；terminalverdict: ARRR4METRICDISCLOSUREANDRELAYRECEIPTREPAIRDRAFTAWAITINGEXTERNALREVIEW；authorization boundary: narrow R4 metric-disclosure + relay-receipt repair only. No R5, no PROMOTE/EVOLVE/Ready/merge/Main change/force push. Frozen R4 (PR #127) and R3 corpus left untouched.
 - 完整阅读：[docs/architecture/arr-r4-self-reflection.md](../../docs/architecture/arr-r4-self-reflection.md)
 
 <a id="reading-hr-52173a553c421e11"></a>

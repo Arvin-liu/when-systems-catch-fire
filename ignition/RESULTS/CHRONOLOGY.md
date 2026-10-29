@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 601 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 602 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -461,32 +461,6 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
-### [Current Facts（机器推导事实）](../docs/architecture/current-facts.md)
-
-- **结果 ID：** `HR-641DA70BEF452B2A`
-- **日期：** UNSPECIFIED
-- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
-- **问题：** 此来源记录了什么：Current Facts（机器推导事实）？
-- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. For the Human Surface materiality manifest, the fingerprint intentionally excludes only reciprocal machine/sou…
-- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
-- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **处置：** `HUMAN_INDEX_ONLY`
-
-### [Current Facts（机器推导事实）](../docs/architecture/current-facts.md)
-
-- **结果 ID：** `HR-641DA70BEF452B2A`
-- **日期：** UNSPECIFIED
-- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
-- **问题：** 此来源记录了什么：Current Facts（机器推导事实）？
-- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. For the Human Surface materiality manifest, the fingerprint intentionally excludes only reciprocal machine/sou…
-- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
-- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **处置：** `HUMAN_INDEX_ONLY`
-
 ### [Compression Integrity Gate](../docs/architecture/compression-integrity-gate.md)
 
 - **结果 ID：** `HR-D27DE59030E9F44A`
@@ -539,6 +513,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [R4 Receipt-Closure Diagnosis (repair prerequisite)](../docs/architecture/arr-r4-receipt-closure-diagnosis.md)
+
+- **结果 ID：** `HR-C96B4A9A3A112BF1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：R4 Receipt-Closure Diagnosis (repair prerequisite)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** External review's precise refetch of the designated predecessor R4 receipt branch and the contracted receipt paths returned 404. The private R4 evidence branch (agent/adaptive-relational-runtime-r4-waic-self-reflection-r1-20260725) is remotely readable; only the relay receipt closure is not.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [ARR R4 — Metric Disclosure & Relay Receipt Repair R1 (External Review Package)](../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+
+- **结果 ID：** `HR-BD785F9A791C0369`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ARR R4 — Metric Disclosure & Relay Receipt Repair R1 (External Review Package)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This package is the public, non-private summary of the narrow repair authorized by external R4 review. It closes the four findings raised in that review without touching PR 127, the frozen R4 head, or the R3 corpus.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [ARR R4 — Gap / Architecture-Candidate Gate](../docs/architecture/arr-r4-gap-candidate-gate.md)
 
 - **结果 ID：** `HR-F24A15FF21B59F0A`
@@ -547,6 +547,19 @@
 - **问题：** 此来源记录了什么：ARR R4 — Gap / Architecture-Candidate Gate？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** This document specifies the architecture-candidate gate used by R4 to decide whether an observed weakness may be promoted from a lower-level limitation to an ARCHITECTURECANDIDATE warranting a future R5 design change. The default disposition is NOEVOLVE. R4 never implements a candidate and never…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [ARR R3/R4 Metric Semantics & Observability Closure — ADR](../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+
+- **结果 ID：** `HR-FA4C0144D96151D1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ARR R3/R4 Metric Semantics & Observability Closure — ADR？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** R4 metric-disclosure & relay-receipt repair (PR 128) closed the 27-item capability closed set, separated governance enum from the no-action safety invariant, and distinguished contradiction attribution from repair. Four lower-level metric / reporting issues remain before R5 can rely on observabil…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

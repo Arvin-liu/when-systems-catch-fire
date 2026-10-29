@@ -1,0 +1,36 @@
+{
+  "fail_closed_rules": [
+    "rate/fraction requires numerator(value+source), denominator(source), population, applicability",
+    "applicability must be resolved (not UNKNOWN) for any rate/fraction",
+    "denominator 0 => NOT_APPLICABLE, never a misleading numeric 0.0",
+    "every metric references at least one evidence source"
+  ],
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "metric_ids": [
+    "unknown_event_time_coercion_violations",
+    "unknown_event_time_count",
+    "unknown_event_time_retained_count",
+    "unknown_event_time_retention_rate",
+    "crash_recovery_demo_success_rate",
+    "crash_recovery_in_run_rate",
+    "in_run_crash_events_observed",
+    "incremental_avoidance_fraction",
+    "incremental_changed_objects",
+    "incremental_corpus_objects",
+    "incremental_reprocess_fraction",
+    "incremental_reprocessed_objects",
+    "incremental_selective_rerun_pass",
+    "incremental_unchanged_objects_avoided"
+  ],
+  "schema_version": "r3r4/metric-correction/v1"
+}

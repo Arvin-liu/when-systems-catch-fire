@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "metrics": {
+    "unknown_event_time_coercion_violations": {
+      "applicability": "APPLICABLE",
+      "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "lower_is_better",
+      "display_name": "Unknown event-time coercion violations",
+      "evidence_refs": [
+        "TEMPORAL_AMBIGUITY_LEDGER"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "unknown_event_time_coercion_violations",
+      "note": "",
+      "numerator": {
+        "label": "coercion_violations",
+        "source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "value": 0
+      },
+      "population": "event times recorded as UNKNOWN",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "violation_count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "violations",
+      "value": 0
+    },
+    "unknown_event_time_count": {
+      "applicability": "APPLICABLE",
+      "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "descriptive_only",
+      "display_name": "Unknown event-time count",
+      "evidence_refs": [
+        "TEMPORAL_AMBIGUITY_LEDGER.unknown_event_time_count"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "unknown_event_time_count",
+      "note": "",
+      "numerator": {
+        "label": "unknown_event_times",
+        "source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "value": 449
+      },
+      "population": "event times across the frozen corpus",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "count",
+      "value": 449
+    },
+    "unknown_event_time_retained_count": {
+      "applicability": "APPLICABLE",
+      "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "higher_is_better",
+      "display_name": "Unknown event-times retained without coercion",
+      "evidence_refs": [
+        "TEMPORAL_AMBIGUITY_LEDGER"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "unknown_event_time_retained_count",
+      "note": "",
+      "numerator": {
+        "label": "retained",
+        "source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "value": 449
+      },
+      "population": "event times recorded as UNKNOWN",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "count",
+      "value": 449
+    },
+    "unknown_event_time_retention_rate": {
+      "applicability": "APPLICABLE",
+      "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "unknown_event_time_count",
+        "source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "value": 449
+      },
+      "directionality": "higher_is_better",
+      "display_name": "Unknown event-time retention rate (UNKNOWN preserved)",
+      "evidence_refs": [
+        "AGGREGATE_METRICS.unknown_retention",
+        "TEMPORAL_AMBIGUITY_LEDGER.unknown_event_time_count"
+      ],
+      "historical_source": "AGGREGATE_METRICS",
+      "historical_value": 0,
+      "metric_id": "unknown_event_time_retention_rate",
+      "note": "Historical 'unknown_retention=0' is a deprecated/ambiguous field (0 retention violations). 449/449 UNKNOWN event times were retained without coercion.",
+      "numerator": {
+        "label": "unknown_event_times_retained",
+        "source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "value": 449
+      },
+      "population": "event times recorded as UNKNOWN",
+      "precedence_rule": "Retention-of-UNKNOWN (no coercion) reading overrides the ambiguous aggregate 'unknown_retention=0' because the ledger is authoritative.",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "rate",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "rate",
+      "value": 1.0
+    }
+  },
+  "schema": "r3r4/unknown-retention-closure/v1"
+}

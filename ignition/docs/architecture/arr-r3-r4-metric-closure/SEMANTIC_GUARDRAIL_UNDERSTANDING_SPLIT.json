@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "schema": "r3r4/semantic-guardrail-understanding-split/v1",
+  "split": {
+    "guardrail_checks_measured": true,
+    "guardrail_fail": 0,
+    "guardrail_item_count": 4,
+    "guardrail_pass": 4,
+    "guardrail_status": "pass",
+    "note": "Guardrail execution (4/4 pass) is NOT semantic understanding; R3 ran no semantic-understanding stage. The two facts are separate typed fields, not one overloaded 'measured' boolean.",
+    "schema": "r3r4/semantic-guardrail-understanding-split/v1",
+    "semantic_understanding_coverage_measured": false,
+    "semantic_understanding_items": 0,
+    "semantic_understanding_stage_present": false,
+    "semantic_understanding_verified_objects": 0
+  }
+}

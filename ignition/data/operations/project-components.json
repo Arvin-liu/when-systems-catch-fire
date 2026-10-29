@@ -3300,6 +3300,11 @@
         "docs/architecture/arr-r4-receipt-closure-diagnosis.md",
         "docs/architecture/arr-r4-self-reflection.md",
         "data/operations/propagation/ARR-R4-WAIC-SELF-REFLECTION-R1-system-map-delta.json",
+        "arr_metric_correction/",
+        "docs/architecture/arr-r3-r4-metric-closure/",
+        "docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md",
+        "tools/generate_metric_closure.py",
+        ".github/workflows/r3-r4-metric-observability-closure.yml",
         "requirements-r4.txt"
       ],
       "authority": "declarative",
@@ -3350,5 +3355,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.20"
+  "registry_version": "2.9.21"
 }

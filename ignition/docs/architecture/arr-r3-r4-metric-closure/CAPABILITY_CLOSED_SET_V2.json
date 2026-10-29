@@ -1,0 +1,122 @@
+{
+  "interpretation": {
+    "all_checks_pass": true,
+    "all_checks_pass_definition": "all_checks_pass aggregates 17 OPERATIONAL, 4 SEMANTIC_GUARDRAIL, 3 EVIDENCE_GUARDRAIL and 3 GOVERNANCE_GUARDRAIL checks. It does NOT assert semantic understanding, independent support, claim truth, causal validity or promotion-worthiness.",
+    "all_checks_pass_does_not_imply": [
+      "semantic understanding (no semantic-understanding stage ran in R3)",
+      "independently supported objects (orthogonal outcome count, here 0)",
+      "claim truth or causal validity",
+      "PROMOTE / EVOLVE / real-world action worthiness"
+    ],
+    "closed_set": {
+      "classified_total": 27,
+      "expected_total": 27,
+      "invariant_ok": true,
+      "primary_overlap_total": 0,
+      "sum_primary_dimension_counts": 27,
+      "unclassified_items": [],
+      "unclassified_total": 0
+    },
+    "correction_status": "corrected",
+    "dimensions": {
+      "EVIDENCE": {
+        "definition": "Evidence-quality guardrails (claim not elevated to verified, inference not elevated to belief, same source not counted independent). Distinct from the orthogonal INDEPENDENTLY_SUPPORTED outcome count.",
+        "fail": 0,
+        "item_count": 3,
+        "items": [
+          "speaker_company_not_elevated",
+          "inferred_not_elevated_to_belief",
+          "same_source_not_counted_independent"
+        ],
+        "measured": true,
+        "pass": 3,
+        "status": "pass"
+      },
+      "GOVERNANCE": {
+        "definition": "Prohibited-action checks (promote / evolve / real-world action == 0). Distinct from the orthogonal safety_boundary_held_objects invariant.",
+        "fail": 0,
+        "item_count": 3,
+        "items": [
+          "promote_calls_zero",
+          "evolve_calls_zero",
+          "real_world_actions_zero"
+        ],
+        "measured": true,
+        "pass": 3,
+        "status": "pass"
+      },
+      "OPERATIONAL": {
+        "definition": "Pipeline execution and corpus-integrity correctness (inventory, sharding, processing, receipting, replay, rerun, leak/ disappearance zero).",
+        "fail": 0,
+        "item_count": 17,
+        "items": [
+          "exact_836_plus_index_inventory",
+          "exact_type_distribution",
+          "no_source_mutation",
+          "duplicate_note_id_handling",
+          "malformed_frontmatter_isolation",
+          "deterministic_shard_plan_under_reorder",
+          "shard_namespace_isolation",
+          "three_crash_resume_scenarios",
+          "completed_run_idempotent_replay",
+          "changed_note_selective_rerun",
+          "all_836_receipts_present",
+          "silent_disappearances_zero",
+          "public_private_content_leakage_zero",
+          "changed_path_propagation_residue_zero",
+          "ambiguous_path_mapping_zero",
+          "system_map_front_doors_iteration_sync",
+          "q33_and_foundation_ci_green_at_head"
+        ],
+        "measured": true,
+        "pass": 17,
+        "status": "pass"
+      },
+      "SEMANTIC": {
+        "definition": "Semantic interpretation guardrails only (event-time vs created-time, no time guessing, relation!=cause, no decorative probability). R3 ran no semantic-understanding stage.",
+        "fail": 0,
+        "guardrail_checks_measured": true,
+        "guardrail_fail": 0,
+        "guardrail_item_count": 4,
+        "guardrail_pass": 4,
+        "guardrail_status": "pass",
+        "item_count": 4,
+        "items": [
+          "event_time_distinct_from_created_time",
+          "missing_time_never_guessed",
+          "generic_relation_not_cause",
+          "decorative_probability_rejected"
+        ],
+        "note": "Guardrail execution (4/4 pass) is NOT semantic understanding; R3 ran no semantic-understanding stage. The two facts are separate typed fields, not one overloaded 'measured' boolean.",
+        "pass": 4,
+        "semantic_understanding_coverage_measured": false,
+        "semantic_understanding_items": 0,
+        "semantic_understanding_stage_present": false,
+        "semantic_understanding_verified_objects": 0,
+        "status": "pass"
+      }
+    },
+    "historical_artifact_mutated": false,
+    "historical_source": "CAPABILITY_COVERAGE_MATRIX",
+    "historical_value": {
+      "all_pass": true
+    },
+    "independently_supported_objects": 0,
+    "note": "Historical R3 all_pass=true disclosed no dimension allocation (a reporting defect). This versioned interpretation discloses the exact 27-item closed set; the historical artifact is preserved, not mutated.",
+    "schema": "r3r4/capability_interpretation_correction/v1",
+    "semantic_understanding_objects_verified": 0,
+    "underlying_defect_present": true
+  },
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "schema": "r3r4/capability_interpretation_correction/v1"
+}

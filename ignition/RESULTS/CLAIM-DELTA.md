@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 838 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 847 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -447,6 +447,78 @@
 - 状态：`ADDED`
 - Delta：`CD-E2A9200EBCC66AB2`
 - 关联断言：['NFC-02d9c5cbdc022e31', 'NFC-082b1ebd37f4d8dd', 'NFC-08ea9e97cdaf722a', 'NFC-1944eb501826a935', 'NFC-2be408cfc4e83af2', 'NFC-2f93eac3d04c9ac0', 'NFC-37e966bf163b27a4', 'NFC-600b1538100cb79c', 'NFC-6aea982252608c66', 'NFC-cdfe5defd5f093f5', 'NFC-f0787a89358344bd']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/CAPABILITY_CLOSED_SET_V2.json`
+
+- 状态：`ADDED`
+- Delta：`CD-9A23B7C8C682A3A4`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/CONTRADICTION_LIFECYCLE_CLOSURE.json`
+
+- 状态：`ADDED`
+- Delta：`CD-F13319159AEA5835`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/CRASH_RECOVERY_METRIC_CLOSURE.json`
+
+- 状态：`ADDED`
+- Delta：`CD-1CF2C99670A794EE`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/INCREMENTAL_RERUN_METRIC_CLOSURE.json`
+
+- 状态：`ADDED`
+- Delta：`CD-A1A2E903170B8EE5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/METRIC_CORRECTION_LEDGER.json`
+
+- 状态：`ADDED`
+- Delta：`CD-5089A95372879F6A`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/METRIC_DEFINITION_REGISTRY.json`
+
+- 状态：`ADDED`
+- Delta：`CD-194EAFC94052BB29`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/SEMANTIC_GUARDRAIL_UNDERSTANDING_SPLIT.json`
+
+- 状态：`ADDED`
+- Delta：`CD-0B8E2610DB9DD60C`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-closure/UNKNOWN_RETENTION_METRIC_CLOSURE.json`
+
+- 状态：`ADDED`
+- Delta：`CD-01D7B7808906711B`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FA4C0144D96151D1`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

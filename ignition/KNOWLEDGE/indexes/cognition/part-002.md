@@ -1624,6 +1624,11 @@
   - 可搜索名称：NFC-d6be150d22279266 / Privacy and non-authority: owner-observation privacy, public-artifact secret/local-path
   - 来源：`agent-results/IGNITION-20260820-127-result.md`
   - 依赖：—；被引用：—
+- [Private evidence \(1111 branch `agent/adaptive-relational-runtime-r4-metric-disclosure-relay-receipt-r1`\):](../../../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-664a78285d893b1b / Private evidence \(1111 branch `agent/adaptive-relational-runtime-r4-metric-disclosure-relay-receipt-r1`\):
+  - 来源：`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`
+  - 依赖：—；被引用：—
 - [production and release-ready candidate evidence only; no external truth,](../../../agent-results/IGNITION-20260827-143-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-37c12899800d0231 / production and release-ready candidate evidence only; no external truth,
@@ -1883,6 +1888,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-49687b0dd8488215 / R4 local freeze evidence
   - 来源：`docs/agent/121Q35-repair-r1-architecture.md`
+  - 依赖：—；被引用：—
+- [R4 Receipt-Closure Diagnosis \(repair prerequisite\)](../../ASSET-CARDS.md#asset-hr-c96b4a9a3a112bf1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：R4 Receipt-Closure Diagnosis \(repair prerequisite\) / arr-r4-receipt-closure-diagnosis
+  - 来源：`docs/architecture/arr-r4-receipt-closure-diagnosis.md`
   - 依赖：—；被引用：—
 - [R_feedback：育儿现实、健康、关系破裂等外部反馈被接收为「计划已失效」证据的程度。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-41d81a7b78c93d5a / recovery = audit\["evidence_recovery_status"\]
   - 来源：`agent_federation/live_reconciliation.py`
-  - 依赖：—；被引用：—
-- [recovery case table: PRIVATE_PROVENANCE_WITHHELD](../../../reports/foundation-architecture/local-source-recovery-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0582e564d758b776 / recovery case table: PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`reports/foundation-architecture/local-source-recovery-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [reference is  .](../../../reports/architecture/external-agent-interface-audit-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d33d88d95af66dc3 / reference is  .
-  - 来源：`reports/architecture/external-agent-interface-audit-r1.md`
   - 依赖：—；被引用：—

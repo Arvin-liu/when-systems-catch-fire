@@ -60,6 +60,15 @@
 |`docs/architecture/agent-runtime-r1.md`|5|0|否|
 |`docs/architecture/agentization-boundary-r0.md`|10|0|否|
 |`docs/architecture/approval-handoff-failover-r1.md`|11|0|否|
+|`docs/architecture/arr-r3-r4-metric-closure/CAPABILITY_CLOSED_SET_V2.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-closure/CONTRADICTION_LIFECYCLE_CLOSURE.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-closure/CRASH_RECOVERY_METRIC_CLOSURE.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-closure/INCREMENTAL_RERUN_METRIC_CLOSURE.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-closure/METRIC_CORRECTION_LEDGER.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-closure/METRIC_DEFINITION_REGISTRY.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-closure/SEMANTIC_GUARDRAIL_UNDERSTANDING_SPLIT.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-closure/UNKNOWN_RETENTION_METRIC_CLOSURE.json`|0|0|是|
+|`docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`|0|0|是|
 |`docs/architecture/arr-r4-gap-candidate-gate.md`|7|0|否|
 |`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`|0|0|是|
 |`docs/architecture/arr-r4-public-aggregate.json`|0|0|是|

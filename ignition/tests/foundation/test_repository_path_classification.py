@@ -62,6 +62,12 @@ class PositiveTreeTest(unittest.TestCase):
             ("TOOL_OR_WORKFLOW", "TOOL_OR_WORKFLOW"),
         )
 
+    def test_r3_r4_metric_correction_package_is_tooling(self) -> None:
+        self.assertEqual(
+            preflight.classify("arr_metric_correction/__init__.py"),
+            ("TOOL_OR_WORKFLOW", "TOOL_OR_WORKFLOW"),
+        )
+
 
 class NegativeClassificationTest(unittest.TestCase):
     def _live_real(self) -> dict:

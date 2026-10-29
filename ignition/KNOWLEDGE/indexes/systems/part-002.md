@@ -1794,6 +1794,11 @@
   - 可搜索名称：NFC-8bf4162702cd61de / Independent mechanism evidence is insufficient despite structural mapping.
   - 来源：`data/retrieval/fixtures/01-valid-bounded-repository-pilot.json`
   - 依赖：—；被引用：—
+- [Independently determine the cause \(this document\).](../../../docs/architecture/arr-r4-receipt-closure-diagnosis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0afab0773a3e222d / Independently determine the cause \(this document\).
+  - 来源：`docs/architecture/arr-r4-receipt-closure-diagnosis.md`
+  - 依赖：—；被引用：—
 - [inference start, and no capture capsule because Pointfire failed closed before](../../../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ca6eeab79b05a1d3 / inference start, and no capture capsule because Pointfire failed closed before
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-c008cf5697b56ad8 / Modal and evidential boundaries around Huizong's private belief, Daoism's causal role and hindsight are already explicit
   - 来源：`data/language-thought/audit-findings.jsonl`
-  - 依赖：—；被引用：—
-- [model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5e9c15c55f504510 / model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an
-  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
   - 依赖：—；被引用：—

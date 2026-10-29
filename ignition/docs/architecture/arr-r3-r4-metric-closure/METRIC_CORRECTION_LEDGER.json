@@ -1,0 +1,692 @@
+{
+  "corrections": {
+    "CONTRADICTION_LIFECYCLE": {
+      "M1_SUCCESS_VS_SEMANTIC": {
+        "classification_resolved": true,
+        "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+        "followup_required": false,
+        "followup_route": "",
+        "historical_artifact_mutated": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false
+      },
+      "M2_UNKNOWN_RETENTION": {
+        "classification_resolved": true,
+        "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+        "followup_required": false,
+        "followup_route": "",
+        "historical_artifact_mutated": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false
+      },
+      "M3_CRASH_RECOVERY_RATE": {
+        "classification_resolved": true,
+        "disposition": "AGGREGATION_DEFECT",
+        "followup_required": false,
+        "followup_route": "",
+        "historical_artifact_mutated": false,
+        "underlying_defect_present": true,
+        "underlying_defect_repaired_in_current_layer": true
+      },
+      "M4_INCREMENTAL_SELECTIVITY": {
+        "classification_resolved": true,
+        "disposition": "AGGREGATION_DEFECT",
+        "followup_required": false,
+        "followup_route": "",
+        "historical_artifact_mutated": false,
+        "underlying_defect_present": true,
+        "underlying_defect_repaired_in_current_layer": true
+      },
+      "M5_CAPABILITY_ALL_PASS": {
+        "classification_resolved": true,
+        "disposition": "REPORTING_DEFECT",
+        "followup_required": false,
+        "followup_route": "",
+        "historical_artifact_mutated": false,
+        "underlying_defect_present": true,
+        "underlying_defect_repaired_in_current_layer": true
+      },
+      "M6_CORPUS_SIZE_VS_SOURCES": {
+        "classification_resolved": true,
+        "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+        "followup_required": false,
+        "followup_route": "",
+        "historical_artifact_mutated": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false
+      },
+      "schema": "r3r4/contradiction_lifecycle/v1"
+    },
+    "M2_UNKNOWN_RETENTION": {
+      "unknown_event_time_coercion_violations": {
+        "applicability": "APPLICABLE",
+        "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "lower_is_better",
+        "display_name": "Unknown event-time coercion violations",
+        "evidence_refs": [
+          "TEMPORAL_AMBIGUITY_LEDGER"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "unknown_event_time_coercion_violations",
+        "note": "",
+        "numerator": {
+          "label": "coercion_violations",
+          "source": "TEMPORAL_AMBIGUITY_LEDGER",
+          "value": 0
+        },
+        "population": "event times recorded as UNKNOWN",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "violation_count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "violations",
+        "value": 0
+      },
+      "unknown_event_time_count": {
+        "applicability": "APPLICABLE",
+        "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "descriptive_only",
+        "display_name": "Unknown event-time count",
+        "evidence_refs": [
+          "TEMPORAL_AMBIGUITY_LEDGER.unknown_event_time_count"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "unknown_event_time_count",
+        "note": "",
+        "numerator": {
+          "label": "unknown_event_times",
+          "source": "TEMPORAL_AMBIGUITY_LEDGER",
+          "value": 449
+        },
+        "population": "event times across the frozen corpus",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "count",
+        "value": 449
+      },
+      "unknown_event_time_retained_count": {
+        "applicability": "APPLICABLE",
+        "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "higher_is_better",
+        "display_name": "Unknown event-times retained without coercion",
+        "evidence_refs": [
+          "TEMPORAL_AMBIGUITY_LEDGER"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "unknown_event_time_retained_count",
+        "note": "",
+        "numerator": {
+          "label": "retained",
+          "source": "TEMPORAL_AMBIGUITY_LEDGER",
+          "value": 449
+        },
+        "population": "event times recorded as UNKNOWN",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "count",
+        "value": 449
+      },
+      "unknown_event_time_retention_rate": {
+        "applicability": "APPLICABLE",
+        "authority_source": "TEMPORAL_AMBIGUITY_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "unknown_event_time_count",
+          "source": "TEMPORAL_AMBIGUITY_LEDGER",
+          "value": 449
+        },
+        "directionality": "higher_is_better",
+        "display_name": "Unknown event-time retention rate (UNKNOWN preserved)",
+        "evidence_refs": [
+          "AGGREGATE_METRICS.unknown_retention",
+          "TEMPORAL_AMBIGUITY_LEDGER.unknown_event_time_count"
+        ],
+        "historical_source": "AGGREGATE_METRICS",
+        "historical_value": 0,
+        "metric_id": "unknown_event_time_retention_rate",
+        "note": "Historical 'unknown_retention=0' is a deprecated/ambiguous field (0 retention violations). 449/449 UNKNOWN event times were retained without coercion.",
+        "numerator": {
+          "label": "unknown_event_times_retained",
+          "source": "TEMPORAL_AMBIGUITY_LEDGER",
+          "value": 449
+        },
+        "population": "event times recorded as UNKNOWN",
+        "precedence_rule": "Retention-of-UNKNOWN (no coercion) reading overrides the ambiguous aggregate 'unknown_retention=0' because the ledger is authoritative.",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "rate",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "rate",
+        "value": 1.0
+      }
+    },
+    "M3_CRASH_RECOVERY": {
+      "crash_recovery_demo_success_rate": {
+        "applicability": "APPLICABLE",
+        "authority_source": "CRASH_RECOVERY_REPORT; CORPUS_RUN_LEDGER",
+        "correction_status": "corrected",
+        "denominator": {
+          "label": "total_crash_resume_scenarios",
+          "source": "CRASH_RECOVERY_REPORT",
+          "value": 3
+        },
+        "directionality": "higher_is_better",
+        "display_name": "Crash recovery demonstration success rate",
+        "evidence_refs": [
+          "AGGREGATE_METRICS.crash_recovery_success_rate",
+          "CORPUS_RUN_LEDGER.crash_recovery_success_rate",
+          "CRASH_RECOVERY_REPORT.all_resume_complete"
+        ],
+        "historical_source": "AGGREGATE_METRICS",
+        "historical_value": 0.0,
+        "metric_id": "crash_recovery_demo_success_rate",
+        "note": "Historical aggregate 0.0 used in-run crash events (=0) as denominator and understated demo success; preserved as history, invalid for demonstration-success interpretation.",
+        "numerator": {
+          "label": "successful_crash_resume_scenarios",
+          "source": "CRASH_RECOVERY_REPORT",
+          "value": 3
+        },
+        "population": "isolated crash/resume demonstration scenarios",
+        "precedence_rule": "Demonstration evidence overrides the defective aggregate because the run ledger is authoritative for demo outcomes.",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "rate",
+        "supersedes_for_interpretation": true,
+        "underlying_defect_present": true,
+        "underlying_defect_repaired_in_current_layer": true,
+        "unit": "rate",
+        "value": 1.0
+      },
+      "crash_recovery_in_run_rate": {
+        "applicability": "NOT_APPLICABLE",
+        "authority_source": "CORPUS_RUN_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "in_run_crash_events_observed",
+          "source": "CORPUS_RUN_LEDGER",
+          "value": 0
+        },
+        "directionality": "descriptive_only",
+        "display_name": "In-run crash recovery rate (live run)",
+        "evidence_refs": [
+          "CORPUS_RUN_LEDGER.crash_recovery_success_rate"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "crash_recovery_in_run_rate",
+        "note": "No in-run crash events were observed; the rate is not applicable, not 0.0.",
+        "numerator": {
+          "label": "in_run_crash_resume_success",
+          "source": "CORPUS_RUN_LEDGER",
+          "value": 0
+        },
+        "population": "live corpus run crash events",
+        "precedence_rule": "Denominator 0 => not applicable; never a misleading 0.0.",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "rate",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "rate",
+        "value": "NOT_APPLICABLE"
+      },
+      "in_run_crash_events_observed": {
+        "applicability": "APPLICABLE",
+        "authority_source": "CORPUS_RUN_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "lower_is_better",
+        "display_name": "In-run crash events observed",
+        "evidence_refs": [
+          "CORPUS_RUN_LEDGER"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "in_run_crash_events_observed",
+        "note": "Zero in-run crash events were observed during the scale run.",
+        "numerator": {
+          "label": "in_run_crash_events",
+          "source": "CORPUS_RUN_LEDGER",
+          "value": 0
+        },
+        "population": "live corpus scale run",
+        "precedence_rule": "Direct count; no rate derived from it.",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "count",
+        "value": 0
+      }
+    },
+    "M4_INCREMENTAL_RERUN": {
+      "incremental_avoidance_fraction": {
+        "applicability": "APPLICABLE",
+        "authority_source": "INCREMENTAL_RERUN_REPORT; CORPUS_RUN_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "corpus_objects",
+          "source": "frozen corpus",
+          "value": 836
+        },
+        "directionality": "higher_is_better",
+        "display_name": "Incremental avoidance fraction (objects not reprocessed)",
+        "evidence_refs": [
+          "INCREMENTAL_RERUN_REPORT",
+          "CORPUS_RUN_LEDGER"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "incremental_avoidance_fraction",
+        "note": "Exact rational 835/836.",
+        "numerator": {
+          "label": "unchanged_objects_avoided",
+          "source": "CORPUS_RUN_LEDGER",
+          "value": 835
+        },
+        "population": "changed-note isolated rerun scope",
+        "precedence_rule": "Objects skipped by selective rerun.",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "fraction",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "fraction",
+        "value": 0.9988038277511961
+      },
+      "incremental_changed_objects": {
+        "applicability": "APPLICABLE",
+        "authority_source": "INCREMENTAL_RERUN_REPORT",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "descriptive_only",
+        "display_name": "Changed objects detected",
+        "evidence_refs": [
+          "INCREMENTAL_RERUN_REPORT"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "incremental_changed_objects",
+        "note": "",
+        "numerator": {
+          "label": "incremental_changed_objects",
+          "source": "INCREMENTAL_RERUN_REPORT",
+          "value": 1
+        },
+        "population": "frozen corpus",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "count",
+        "value": 1
+      },
+      "incremental_corpus_objects": {
+        "applicability": "APPLICABLE",
+        "authority_source": "frozen corpus",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "descriptive_only",
+        "display_name": "Corpus objects",
+        "evidence_refs": [
+          "frozen corpus"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "incremental_corpus_objects",
+        "note": "",
+        "numerator": {
+          "label": "incremental_corpus_objects",
+          "source": "frozen corpus",
+          "value": 836
+        },
+        "population": "frozen corpus",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "count",
+        "value": 836
+      },
+      "incremental_reprocess_fraction": {
+        "applicability": "APPLICABLE",
+        "authority_source": "INCREMENTAL_RERUN_REPORT; CORPUS_RUN_LEDGER",
+        "correction_status": "corrected",
+        "denominator": {
+          "label": "corpus_objects",
+          "source": "frozen corpus",
+          "value": 836
+        },
+        "directionality": "descriptive_only",
+        "display_name": "Incremental reprocess fraction (changed-note rerun)",
+        "evidence_refs": [
+          "AGGREGATE_METRICS.incremental_selectivity",
+          "CORPUS_RUN_LEDGER.incremental_selectivity",
+          "INCREMENTAL_RERUN_REPORT.reprocessed_on_change"
+        ],
+        "historical_source": "AGGREGATE_METRICS",
+        "historical_value": 0.0,
+        "metric_id": "incremental_reprocess_fraction",
+        "note": "Exact rational 1/836; a low reprocess fraction is good selectivity, not a failure.",
+        "numerator": {
+          "label": "reprocessed_objects",
+          "source": "INCREMENTAL_RERUN_REPORT",
+          "value": 1
+        },
+        "population": "changed-note isolated rerun scope",
+        "precedence_rule": "Exact changed-note rerun evidence overrides the defective aggregate selectivity because the run ledger is authoritative.",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "fraction",
+        "supersedes_for_interpretation": true,
+        "underlying_defect_present": true,
+        "underlying_defect_repaired_in_current_layer": true,
+        "unit": "fraction",
+        "value": 0.0011961722488038277
+      },
+      "incremental_reprocessed_objects": {
+        "applicability": "APPLICABLE",
+        "authority_source": "INCREMENTAL_RERUN_REPORT",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "descriptive_only",
+        "display_name": "Objects reprocessed on change",
+        "evidence_refs": [
+          "INCREMENTAL_RERUN_REPORT"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "incremental_reprocessed_objects",
+        "note": "",
+        "numerator": {
+          "label": "incremental_reprocessed_objects",
+          "source": "INCREMENTAL_RERUN_REPORT",
+          "value": 1
+        },
+        "population": "frozen corpus",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "count",
+        "value": 1
+      },
+      "incremental_selective_rerun_pass": {
+        "applicability": "APPLICABLE",
+        "authority_source": "INCREMENTAL_RERUN_REPORT",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "higher_is_better",
+        "display_name": "Incremental selective rerun pass",
+        "evidence_refs": [
+          "INCREMENTAL_RERUN_REPORT.selective",
+          "INCREMENTAL_RERUN_REPORT.reprocessed_on_change"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "incremental_selective_rerun_pass",
+        "note": "",
+        "numerator": {
+          "label": "selective_rerun_passed",
+          "source": "INCREMENTAL_RERUN_REPORT",
+          "value": 1
+        },
+        "population": "changed-note isolated rerun",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "boolean",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "boolean",
+        "value": true
+      },
+      "incremental_unchanged_objects_avoided": {
+        "applicability": "APPLICABLE",
+        "authority_source": "CORPUS_RUN_LEDGER",
+        "correction_status": "clarified",
+        "denominator": {
+          "label": "n/a",
+          "source": "constant",
+          "value": 1
+        },
+        "directionality": "higher_is_better",
+        "display_name": "Unchanged objects avoided by selective rerun",
+        "evidence_refs": [
+          "CORPUS_RUN_LEDGER"
+        ],
+        "historical_source": "",
+        "historical_value": null,
+        "metric_id": "incremental_unchanged_objects_avoided",
+        "note": "",
+        "numerator": {
+          "label": "incremental_unchanged_objects_avoided",
+          "source": "CORPUS_RUN_LEDGER",
+          "value": 835
+        },
+        "population": "frozen corpus",
+        "precedence_rule": "",
+        "schema_version": "r3r4/metric-correction/v1",
+        "semantic_kind": "count",
+        "supersedes_for_interpretation": false,
+        "underlying_defect_present": false,
+        "underlying_defect_repaired_in_current_layer": false,
+        "unit": "count",
+        "value": 835
+      }
+    },
+    "M5_CAPABILITY": {
+      "all_checks_pass": true,
+      "all_checks_pass_definition": "all_checks_pass aggregates 17 OPERATIONAL, 4 SEMANTIC_GUARDRAIL, 3 EVIDENCE_GUARDRAIL and 3 GOVERNANCE_GUARDRAIL checks. It does NOT assert semantic understanding, independent support, claim truth, causal validity or promotion-worthiness.",
+      "all_checks_pass_does_not_imply": [
+        "semantic understanding (no semantic-understanding stage ran in R3)",
+        "independently supported objects (orthogonal outcome count, here 0)",
+        "claim truth or causal validity",
+        "PROMOTE / EVOLVE / real-world action worthiness"
+      ],
+      "closed_set": {
+        "classified_total": 27,
+        "expected_total": 27,
+        "invariant_ok": true,
+        "primary_overlap_total": 0,
+        "sum_primary_dimension_counts": 27,
+        "unclassified_items": [],
+        "unclassified_total": 0
+      },
+      "correction_status": "corrected",
+      "dimensions": {
+        "EVIDENCE": {
+          "definition": "Evidence-quality guardrails (claim not elevated to verified, inference not elevated to belief, same source not counted independent). Distinct from the orthogonal INDEPENDENTLY_SUPPORTED outcome count.",
+          "fail": 0,
+          "item_count": 3,
+          "items": [
+            "speaker_company_not_elevated",
+            "inferred_not_elevated_to_belief",
+            "same_source_not_counted_independent"
+          ],
+          "measured": true,
+          "pass": 3,
+          "status": "pass"
+        },
+        "GOVERNANCE": {
+          "definition": "Prohibited-action checks (promote / evolve / real-world action == 0). Distinct from the orthogonal safety_boundary_held_objects invariant.",
+          "fail": 0,
+          "item_count": 3,
+          "items": [
+            "promote_calls_zero",
+            "evolve_calls_zero",
+            "real_world_actions_zero"
+          ],
+          "measured": true,
+          "pass": 3,
+          "status": "pass"
+        },
+        "OPERATIONAL": {
+          "definition": "Pipeline execution and corpus-integrity correctness (inventory, sharding, processing, receipting, replay, rerun, leak/ disappearance zero).",
+          "fail": 0,
+          "item_count": 17,
+          "items": [
+            "exact_836_plus_index_inventory",
+            "exact_type_distribution",
+            "no_source_mutation",
+            "duplicate_note_id_handling",
+            "malformed_frontmatter_isolation",
+            "deterministic_shard_plan_under_reorder",
+            "shard_namespace_isolation",
+            "three_crash_resume_scenarios",
+            "completed_run_idempotent_replay",
+            "changed_note_selective_rerun",
+            "all_836_receipts_present",
+            "silent_disappearances_zero",
+            "public_private_content_leakage_zero",
+            "changed_path_propagation_residue_zero",
+            "ambiguous_path_mapping_zero",
+            "system_map_front_doors_iteration_sync",
+            "q33_and_foundation_ci_green_at_head"
+          ],
+          "measured": true,
+          "pass": 17,
+          "status": "pass"
+        },
+        "SEMANTIC": {
+          "definition": "Semantic interpretation guardrails only (event-time vs created-time, no time guessing, relation!=cause, no decorative probability). R3 ran no semantic-understanding stage.",
+          "fail": 0,
+          "guardrail_checks_measured": true,
+          "guardrail_fail": 0,
+          "guardrail_item_count": 4,
+          "guardrail_pass": 4,
+          "guardrail_status": "pass",
+          "item_count": 4,
+          "items": [
+            "event_time_distinct_from_created_time",
+            "missing_time_never_guessed",
+            "generic_relation_not_cause",
+            "decorative_probability_rejected"
+          ],
+          "note": "Guardrail execution (4/4 pass) is NOT semantic understanding; R3 ran no semantic-understanding stage. The two facts are separate typed fields, not one overloaded 'measured' boolean.",
+          "pass": 4,
+          "semantic_understanding_coverage_measured": false,
+          "semantic_understanding_items": 0,
+          "semantic_understanding_stage_present": false,
+          "semantic_understanding_verified_objects": 0,
+          "status": "pass"
+        }
+      },
+      "historical_artifact_mutated": false,
+      "historical_source": "CAPABILITY_COVERAGE_MATRIX",
+      "historical_value": {
+        "all_pass": true
+      },
+      "independently_supported_objects": 0,
+      "note": "Historical R3 all_pass=true disclosed no dimension allocation (a reporting defect). This versioned interpretation discloses the exact 27-item closed set; the historical artifact is preserved, not mutated.",
+      "schema": "r3r4/capability_interpretation_correction/v1",
+      "semantic_understanding_objects_verified": 0,
+      "underlying_defect_present": true
+    },
+    "R4_SEMANTIC_SPLIT": {
+      "guardrail_checks_measured": true,
+      "guardrail_fail": 0,
+      "guardrail_item_count": 4,
+      "guardrail_pass": 4,
+      "guardrail_status": "pass",
+      "note": "Guardrail execution (4/4 pass) is NOT semantic understanding; R3 ran no semantic-understanding stage. The two facts are separate typed fields, not one overloaded 'measured' boolean.",
+      "schema": "r3r4/semantic-guardrail-understanding-split/v1",
+      "semantic_understanding_coverage_measured": false,
+      "semantic_understanding_items": 0,
+      "semantic_understanding_stage_present": false,
+      "semantic_understanding_verified_objects": 0
+    }
+  },
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "schema": "r3r4/correction-projection/v1",
+  "sealed_inputs": {
+    "corpus_objects": 836,
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "mutable": false,
+    "note": "Historical sealed inputs are referenced, never mutated, by the correction layer.",
+    "report_digests": {
+      "AGGREGATE_METRICS": "fa634663efbdcb2f610b397a4c58330f6c817efd10d1444bae5a63f8a75c3c65",
+      "CAPABILITY_COVERAGE_MATRIX": "173ca3263e438c2a1b5c53d07581e6f4a2e1a9dc17117235c655fc73c70bd824",
+      "CORPUS_RUN_LEDGER": "36f8981eee3536d08dab774576d96601eba5da69947d06023d72a5b86d7f53bd",
+      "CRASH_RECOVERY_REPORT": "6b3f05f00096dbea715161c99201a38fe8520238c30984e0df6b2659016014d2",
+      "INCREMENTAL_RERUN_REPORT": "6a4e4371dc52f1fb8f49283212309e5be669765c76cbc3f0c1cf649bd4bb1163",
+      "TEMPORAL_AMBIGUITY_LEDGER": "84b1c5522a288452f75136bacfce477d67d6a6d122329c79c2d964f858f97e32"
+    },
+    "report_identities": [
+      "AGGREGATE_METRICS",
+      "CAPABILITY_COVERAGE_MATRIX",
+      "CORPUS_RUN_LEDGER",
+      "CRASH_RECOVERY_REPORT",
+      "INCREMENTAL_RERUN_REPORT",
+      "TEMPORAL_AMBIGUITY_LEDGER"
+    ],
+    "schema": "r3r4/sealed-input-manifest/v1"
+  }
+}

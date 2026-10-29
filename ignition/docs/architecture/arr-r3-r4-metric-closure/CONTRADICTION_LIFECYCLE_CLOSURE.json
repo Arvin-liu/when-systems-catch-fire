@@ -1,0 +1,71 @@
+{
+  "lifecycle": {
+    "M1_SUCCESS_VS_SEMANTIC": {
+      "classification_resolved": true,
+      "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+      "followup_required": false,
+      "followup_route": "",
+      "historical_artifact_mutated": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false
+    },
+    "M2_UNKNOWN_RETENTION": {
+      "classification_resolved": true,
+      "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+      "followup_required": false,
+      "followup_route": "",
+      "historical_artifact_mutated": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false
+    },
+    "M3_CRASH_RECOVERY_RATE": {
+      "classification_resolved": true,
+      "disposition": "AGGREGATION_DEFECT",
+      "followup_required": false,
+      "followup_route": "",
+      "historical_artifact_mutated": false,
+      "underlying_defect_present": true,
+      "underlying_defect_repaired_in_current_layer": true
+    },
+    "M4_INCREMENTAL_SELECTIVITY": {
+      "classification_resolved": true,
+      "disposition": "AGGREGATION_DEFECT",
+      "followup_required": false,
+      "followup_route": "",
+      "historical_artifact_mutated": false,
+      "underlying_defect_present": true,
+      "underlying_defect_repaired_in_current_layer": true
+    },
+    "M5_CAPABILITY_ALL_PASS": {
+      "classification_resolved": true,
+      "disposition": "REPORTING_DEFECT",
+      "followup_required": false,
+      "followup_route": "",
+      "historical_artifact_mutated": false,
+      "underlying_defect_present": true,
+      "underlying_defect_repaired_in_current_layer": true
+    },
+    "M6_CORPUS_SIZE_VS_SOURCES": {
+      "classification_resolved": true,
+      "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+      "followup_required": false,
+      "followup_route": "",
+      "historical_artifact_mutated": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false
+    },
+    "schema": "r3r4/contradiction_lifecycle/v1"
+  },
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "schema": "r3r4/contradiction_lifecycle/v1"
+}
