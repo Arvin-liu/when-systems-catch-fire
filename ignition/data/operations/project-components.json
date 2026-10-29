@@ -790,7 +790,8 @@
       },
       "path_patterns": [
         "tests/foundation/",
-        "tools/foundation/"
+        "tools/foundation/",
+        ".github/workflows/repository-path-accounting-preflight.yml"
       ]
     },
     {
@@ -2212,7 +2213,8 @@
             "tests/test_component_validation_evidence.py",
             "tests/test_component_release_preparation.py",
             "tests/test_component_release_authorization.py",
-            "tests/test_history_remediation_contract.py"
+            "tests/test_history_remediation_contract.py",
+            ".github/workflows/release-transaction-protocol-validation.yml"
         ]
     }
   ],
