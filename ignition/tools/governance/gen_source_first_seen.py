@@ -30,31 +30,49 @@ DATE_RE = re.compile(r"20\d{2}-\d{2}-\d{2}")
 
 
 def require_full_history() -> None:
-    if (ROOT / ".git").is_dir():
-        proc = subprocess.run(
-            ["git", "rev-parse", "--is-shallow-repository"],
-            cwd=ROOT,
-            text=True,
-            capture_output=True,
-            check=False,
+    proc = subprocess.run(
+        ["git", "rev-parse", "--is-shallow-repository"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if proc.returncode != 0 or proc.stdout.strip() not in {"true", "false"}:
+        sys.exit("REFUSE: cannot verify repository history depth before generating source-first-seen.json.")
+    if proc.stdout.strip() == "true":
+        sys.exit(
+            "REFUSE: source-first-seen.json must be generated from a FULL clone. "
+            "Run `git fetch --unshallow` first."
         )
-        if proc.stdout.strip() == "true":
-            sys.exit(
-                "REFUSE: source-first-seen.json must be generated from a FULL clone. "
-                "Run `git fetch --unshallow` first."
-            )
 
 
 def first_seen(path: str) -> str | None:
+    command = ["git", "log", "--follow", "--diff-filter=A", "--format=%ad", "--date=short", "--"]
     proc = subprocess.run(
-        ["git", "log", "--follow", "--diff-filter=A", "--format=%ad", "--date=short", "--", path],
+        [*command, path],
         cwd=ROOT,
         text=True,
         capture_output=True,
         check=False,
     )
     dates = [line.strip() for line in proc.stdout.splitlines() if DATE_RE.fullmatch(line.strip())]
-    # git log is newest-first, so dates[-1] is the OLDEST = first appearance.
+    if dates:
+        # git log is newest-first, so dates[-1] is the OLDEST = first appearance.
+        return dates[-1]
+
+    # Human-result source identifiers are relative to the Ignition root. Some
+    # source files were first committed at the repository root and later moved
+    # under ignition/; git's --follow cannot always cross that merge/rename
+    # boundary when paired with --diff-filter=A. Retry the same source path at
+    # the repository root so the original addition remains discoverable.
+    proc = subprocess.run(
+        [*command, path],
+        cwd=ROOT.parent,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    dates = [line.strip() for line in proc.stdout.splitlines() if DATE_RE.fullmatch(line.strip())]
     return dates[-1] if dates else None
 
 

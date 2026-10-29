@@ -1424,6 +1424,21 @@
   - 可搜索名称：NFC-3aa0c00dcee00717 / Adaptive Relational Runtime \(ARR\) R1 Scaffold and the architecture's evidence and
   - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
   - 依赖：—；被引用：—
+- [Adaptive Relational Runtime / 自适应关系运行时\(R1 Scaffold 主合同\)](../../ASSET-CARDS.md#asset-hr-e2706f26c12e2dff)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：Adaptive Relational Runtime / 自适应关系运行时\(R1 Scaffold 主合同\) / adaptive-relational-runtime
+  - 来源：`docs/architecture/adaptive-relational-runtime.md`
+  - 依赖：—；被引用：—
+- [Adaptive Relational Runtime ADRs / 架构决策记录](../../ASSET-CARDS.md#asset-hr-0d6bb2101f76490d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：Adaptive Relational Runtime ADRs / 架构决策记录 / adaptive-relational-runtime-adrs
+  - 来源：`docs/architecture/adaptive-relational-runtime-adrs.md`
+  - 依赖：—；被引用：—
+- [Adaptive Relational Runtime Interoperability / 互操作合同](../../ASSET-CARDS.md#asset-hr-a941457f5102ed89)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：Adaptive Relational Runtime Interoperability / 互操作合同 / adaptive-relational-runtime-interop
+  - 来源：`docs/architecture/adaptive-relational-runtime-interop.md`
+  - 依赖：—；被引用：—
 - [Added commercial licensing, contributor-license candidate, trademarks/name-use candidate, and sustainability policy. Sup](../../../reports/governance/121Q8-final-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-91d8f3a743b8053e / Added commercial licensing, contributor-license candidate, trademarks/name-use candidate, and sustainability policy. Sup
@@ -1807,6 +1822,11 @@
 - [ARR R1 Scaffold is NOT a new truth layer, NOT an L7, and NOT a unified theory.](../../../docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1462153d3b77cd7c / ARR R1 Scaffold is NOT a new truth layer, NOT an L7, and NOT a unified theory.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
+  - 依赖：—；被引用：—
+- [ARR R1 Scaffold — Commit 5 Evidence & Known Limitations](../../ASSET-CARDS.md#asset-hr-dd37a2dbbf9fb489)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：ARR R1 Scaffold — Commit 5 Evidence & Known Limitations / adaptive-relational-runtime-r1-scaffold-evidence
   - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
   - 依赖：—；被引用：—
 - [ARR R1 Scaffold — Commit 5 Evidence & Known Limitations](../../../docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md)
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-41671392285437fd / capability smoke-test artifacts: three complete articles, one Book Project R1
   - 来源：`reports/operations/ignition-144-step01-smoke-output-inventory.md`
-  - 依赖：—；被引用：—
-- [Capability, permission, authorization, truth status, M/E, claim ceiling, Owner status and epistemic acceptance all have](../../../docs/architecture/soft-context-exposure-contract-r0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-84b146acb4fda6a2 / Capability, permission, authorization, truth status, M/E, claim ceiling, Owner status and epistemic acceptance all have
-  - 来源：`docs/architecture/soft-context-exposure-contract-r0.md`
-  - 依赖：—；被引用：—
-- [capability-not-authority** — the ability to exchange context is never](../../../docs/context_protocol/scientific-context-protocol-i1-repair-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a28793fff7cb0750 / capability-not-authority** — the ability to exchange context is never
-  - 来源：`docs/context_protocol/scientific-context-protocol-i1-repair-architecture.md`
-  - 依赖：—；被引用：—
-- [Capability:** `counterfactual_unrealized_path`](../../../docs/counterfactual/q42-i1-repair-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-52252bd7f9c7cd5f / Capability:** `counterfactual_unrealized_path`
-  - 来源：`docs/counterfactual/q42-i1-repair-architecture.md`
-  - 依赖：—；被引用：—
-- [capability_and_output: the Task148 capability registry, registry-derived playbooks, Current-first canonical resolver, ge](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4c1c5580f9d8cd69 / capability_and_output: the Task148 capability registry, registry-derived playbooks, Current-first canonical resolver, ge
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
