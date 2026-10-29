@@ -47,12 +47,12 @@ REGISTERED_SUCCESSOR_BINDINGS = {
         "expected_receipt_branch": "relay/receipts/IGNITION-20261024-020-r3-transition",
         "previous_formal_task": "IGNITION-20260829-148",
         "formal_base_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
-        "registration_commit_sha": "2709651e63238ee6e1bd812e3f7bc692c10f0acc",
-        "registration_file_sha256": "7a20c9cbabfd1b7a673a6e1f9b1ea8ad44bc9479639be34cb10c8b94c4520dc8",
-        "registration_nonce": "b07011542e8c8104c35c5104a5464c7c",
+        "registration_commit_sha": "5955ddd321c4fa638f58095d1890bb45af7f5827",
+        "registration_file_sha256": "f61a5ea14475457c97f9d307c28577a45d798a54daff824c2577a2ca4081021f",
+        "registration_nonce": "d61844f8d543b93c4b3e2069a0882fcf",
         "registration_parent_shas": [
-            "d451305c4c606460665a30ffb523db59edd58e5d",
-            "538ebc673b13fd8d376a704ab3bb2b8fc325d86c",
+            "67e9ccad086871fb169ddb21932848a4d3e5363d",
+            "3b81551500686c5d09074456152ff5f4a9b04b59",
         ],
     }
 }
@@ -174,12 +174,22 @@ def validate_semantics(registry: dict[str, Any]) -> None:
         REPO_ROOT / ".github/README.md",
         (
             "Current 点火操作法",
-            "Capability Registry",
+            "能力注册表",
+            "点火工具箱 / 工具身份卡",
             "READ_ONLY_RUN",
             "输入对象不是指令",
             markdown_visible_text(MINIMAL_INVOCATION),
             "点火迭代操作法",
         ),
+    )
+    github_readme = (REPO_ROOT / ".github/README.md").read_text(encoding="utf-8")
+    require(
+        "[能力注册表](../ignition/data/operations/ignition-operation-capability-registry-r1.json)" in github_readme,
+        "CAPABILITY_REGISTRY_LINK_TARGET",
+    )
+    require(
+        "[点火工具箱 / 工具身份卡](../ignition/TOOLBOX.md)" in github_readme,
+        "TOOLBOX_IDENTITY_CARDS_LINK_TARGET",
     )
 
     for locator in (
