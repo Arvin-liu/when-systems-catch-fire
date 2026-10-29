@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/epistemic-governance/owner-observation-r0.schema.json",
+  "type": "object",
+  "required": ["schema_version", "observation_id", "public_safe", "source_class", "summary", "status", "alternative_explanations", "privacy", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "owner-observation-r0"},
+    "observation_id": {"const": "OWNER-OBS-ESI-001"},
+    "public_safe": {"const": true},
+    "source_class": {"const": "OWNER_SUPPLIED_OBSERVATION"},
+    "summary": {"type": "string", "minLength": 80},
+    "status": {"type": "array", "allOf": [{"contains": {"const": "OWNER_SUPPLIED"}}, {"contains": {"const": "NOT_INDEPENDENTLY_REPLICATED"}}, {"contains": {"const": "NOT_CAUSAL_PROOF"}}], "items": {"type": "string"}},
+    "alternative_explanations": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+    "privacy": {
+      "type": "object",
+      "required": ["private_source_content_included", "screenshots_included", "private_paths_included", "user_identifiers_included", "platform_content_reproduced"],
+      "properties": {
+        "private_source_content_included": {"const": false},
+        "screenshots_included": {"const": false},
+        "private_paths_included": {"const": false},
+        "user_identifiers_included": {"const": false},
+        "platform_content_reproduced": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "claim_ceiling": {"type": "array", "minItems": 4, "items": {"type": "string", "minLength": 20}}
+  },
+  "additionalProperties": false
+}

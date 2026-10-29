@@ -1,0 +1,46 @@
+{
+  "schema": "ignition.governance.charter_system_registry.v1",
+  "registry_purpose": "Canonical registry of governance/charter systems in the ignition project (本系统注册表). Records each system's lifecycle state, merge provenance, bound charters and fork lineage, per charter-system-r1.md (B1 bound_charter_versions, F5 fork_lineage).",
+  "registrar": "execution_agent: WorkBuddy, at account owner explicit direction; responsible_actor: human Arvin-liu / 之元",
+  "entries": [
+    {
+      "id": "charter-system",
+      "version": "R1",
+      "title": "Charter System R1 — 宪章系统 R1（元治理层）",
+      "status": "CURRENT",
+      "on_main": true,
+      "accepted": true,
+      "current": true,
+      "activated": false,
+      "publication_status": "UNPUBLISHED",
+      "source_doc": "docs/governance/charter-system-r1.md",
+      "schema_doc": "docs/governance/charter-system-r1.schema.json",
+      "merge_commit": "0e7c03270a301a143c51a7f38e941141cae676c3",
+      "promoted_commit": "0c5fbcabc6efe0fd24c6f6ac6c9500e82e0c0ad7",
+      "promoted_via_pr": 138,
+      "exact_head_acceptance_pr": 137,
+      "promoted_date": "2026-07-26",
+      "responsible_actor": "human: Arvin-liu / 之元",
+      "execution_agent": "WorkBuddy",
+      "bound_charter_versions": [
+        "life-community-value-charter@v2"
+      ],
+      "fork_lineage": [
+        {
+          "canonical_repo": "Arvin-liu/when-systems-catch-fire",
+          "canonical_ref": "main",
+          "canonical_commit": "0c5fbcabc6efe0fd24c6f6ac6c9500e82e0c0ad7",
+          "role": "canonical_source",
+          "downstream_may_not_delete_upstream_lineage": true
+        }
+      ],
+      "invariants_preserved": [
+        "current -> accepted",
+        "candidate -> not current (now CURRENT, no longer candidate)",
+        "PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED",
+        "HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE",
+        "activated == false (non-Activated)"
+      ]
+    }
+  ]
+}

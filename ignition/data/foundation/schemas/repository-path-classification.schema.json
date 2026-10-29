@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/foundation/schemas/repository-path-classification.schema.json",
+  "title": "Repository Path Classification Manifest Line",
+  "description": "One line per Git-tracked path in data/foundation/repository-path-classification/classification-manifest.jsonl. The classification engine (tools/foundation/validate_repository_path_classification.py) is the source of truth; this manifest is a generated snapshot validated by --check.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["path", "category", "matched_rule"],
+  "properties": {
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Git-tracked repository path, relative to repo root, using forward slashes."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "AUTHORITATIVE_CLAIM_INPUT",
+        "GOVERNED_MACHINE_RECORD",
+        "GENERATED_PROJECTION",
+        "EVIDENCE_OR_BENCHMARK",
+        "EDITORIAL_ARTICLE",
+        "TEST_FIXTURE",
+        "SCHEMA",
+        "TOOL_OR_WORKFLOW",
+        "RECEIPT_HISTORY_OPERATIONS",
+        "CANDIDATE_NONAUTHORITATIVE_RECORD",
+        "REFERENCE_OR_KNOWLEDGE",
+        "REPOSITORY_GOVERNANCE_DOC"
+      ],
+      "description": "Exactly one governed category. AUTHORITATIVE_CLAIM_INPUT is restricted to the two CJK master-table prefixes (anti-backflow)."
+    },
+    "matched_rule": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Name of the rule that produced the category (for audit traceability)."
+    }
+  }
+}

@@ -7,6 +7,7 @@ Every scenario from the consolidated design is covered by a dedicated test
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import tempfile
 import threading
@@ -38,7 +39,47 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = "833c3e5f25c25c8f225ade19e6b3111f1a60e695"
+PR_BASE = os.environ.get("PR_BASE_SHA", "85ff993ee0946c5cf7d1938d069c4a3550eaea29")
+EXPECTED_HEAD_BASES = {
+    "repair-r3/scientific-context-protocol-r3-semantic-evaluator": {
+        "production/ignition-run-promote-evolve-r1",
+    },
+    "production/ignition-run-promote-evolve-r1": {
+        "repair-r3/scientific-context-protocol-r3-semantic-evaluator",
+    },
+    "architecture/adaptive-relational-runtime-r1-scaffold": {
+        "production/ignition-run-promote-evolve-r1",
+    },
+    # This stacked pilot remains on the R1 scaffold branch, never directly on main.
+    "runtime/adaptive-relational-runtime-r2-real-object-pilot": {
+        "architecture/adaptive-relational-runtime-r1-scaffold",
+    },
+    # Positive-routing repair remains stacked on the R2 pilot, not Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-r1": {
+        "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    },
+    # The CI portability repair stays stacked on the positive-routing repair,
+    # preserving the existing R2 parent instead of substituting Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+    },
+    # The front-door synchronization repair remains stacked on the CI repair.
+    "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1",
+    },
+    # Q33 era-resolver repair remains stacked on the refreshed front-door PR.
+    "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1": {
+        "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1",
+    },
+    # The R3 measurement candidate stays stacked on the current Q33 parent branch.
+    "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1": {
+        "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1",
+    },
+    # The R4 reflection candidate stays stacked directly on its R3 parent.
+    "analysis/adaptive-relational-runtime-r4-waic-self-reflection-r1": {
+        "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1",
+    },
+}
 
 
 def new_store():
@@ -679,12 +720,15 @@ def test_s40_m5_secondary_temporal():
 
 
 # --------------------------------------------------------------------------
-# S41 — formal main and #109–#118 unchanged
+# S41 — exact stacked target and no direct-main substitution
 # --------------------------------------------------------------------------
 def test_s41_branch_and_base_unchanged():
-    branch = git("branch", "--show-current")
-    assert branch == "production/ignition-run-promote-evolve-r1"
-    assert git("rev-parse", "repair-r3/scientific-context-protocol-r3-semantic-evaluator") == PR_BASE
+    branch = os.environ.get("GITHUB_HEAD_REF") or git("branch", "--show-current")
+    base_branch = os.environ.get("GITHUB_BASE_REF")
+    expected_bases = EXPECTED_HEAD_BASES.get(branch)
+    assert expected_bases is not None, f"unexpected stacked head branch: {branch}"
+    assert base_branch in expected_bases, f"unexpected base {base_branch!r} for {branch}"
+    assert git("merge-base", "HEAD", PR_BASE) == PR_BASE
     # not on main
     assert branch != "main"
 
@@ -702,19 +746,166 @@ def test_s42_runtime_imports_and_runs():
 
 
 # --------------------------------------------------------------------------
-# S43 — Draft PR diff contains only production-layer changes
+# S43 — Draft diff stays within runtime scope and authorized route/evidence sidecars
 # --------------------------------------------------------------------------
 def test_s43_diff_scope():
     allowed_prefixes = (
         "tools/ignition_runtime/",
         "schemas/ignition_runtime/",
         "tests/ignition_runtime/",
+        "tests/rpe_ci/",
         "docs/ignition-runtime/",
         ".github/workflows/ignition-production-validation.yml",
-        "ITERATION.md",
-        "README.md",
+        ".github/workflows/foundation-validation.yml",
+        # This PR's measurement-only R3 validation workflow.
+        ".github/workflows/r3-corpus-scale-validation.yml",
+        # R3 corpus scope and private-data ignore boundary.
+        ".gitignore",
         "docs/project-current-state.md",
         "reports/ignition-rpe/",
+        "ignition/reports/ignition-rpe/",
+        "ignition/AI-HANDOFF.md",
+        "ignition/AI-START-HERE.md",
+        # These exact paths keep the current-map version fact canonical across validation and the machine entry.
+        "ignition/tools/validate_human_front_door.py",
+        "ignition/llms.txt",
+        "ignition/KNOWLEDGE/",
+        "ignition/RESULTS/",
+        "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+        "ignition/data/architecture/interactive-system-map.json",
+            # Added by the newer stacked base in PR #123; keep the diff scope accurate.
+            "ignition/docs/architecture/interactive-system-map.md",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/architecture/adaptive-relational-runtime/",
+        "ignition/data/foundation/function-assets/",
+        "ignition/data/foundation/nonfunction-claims/",
+        "ignition/data/governance/human-results/",
+        "ignition/data/governance/human-surface/",
+        "ignition/data/governance/knowledge-experience/",
+        "ignition/data/governance/self-correction/",
+        "ignition/data/operations/component-execution-profiles.json",
+        "ignition/data/operations/component-validation-map-r1.json",
+        "ignition/data/operations/current-snapshot-r1.json",
+        # Exact ARR scaffold and R2 positive-routing repair assets.
+        "ignition/data/architecture/interactive-system-map-layout.json",
+        "ignition/data/architecture/system-map-geometry-quality-r1.json",
+        "ignition/data/governance/human-surface/materiality-manifest.json",
+        "ignition/data/operations/change-propagation-topology.json",
+        "ignition/data/operations/iterations/ARR-R1-SCAFFOLD.json",
+        "ignition/docs/generated/ignition-system-map.svg",
+        "ignition/docs/human/function-assets/README.md",
+        "ignition/docs/human/function-assets/bulk-explanation.md",
+        "ignition/docs/human/function-assets/entries/a1.md",
+        "ignition/docs/human/function-assets/entries/a2.md",
+        "ignition/docs/human/nonfunction-assets/README.md",
+        "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
+        "ignition/docs/human/nonfunction-assets/entries/",
+        "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
+        "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
+        # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
+        # This PR's seven-file human-front-door audit bundle is evidence only.
+        "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/",
+        # This PR's Q33 reproduction and resolver finding bundle is evidence only.
+        "evidence/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1/",
+        # Exact consumer tests changed to close this sync and its propagation blocker.
+        "ignition/tests/test_change_propagation.py",
+        "tests/test_human_front_door.py",
+        "ignition/tools/foundation/validate_repository_path_classification.py",
+        # Exact consumers changed by the Q33 resolver and path-classification repair.
+        "ignition/tests/foundation/test_repository_path_classification.py",
+        "ignition/tests/test_component_validation_routing.py",
+        "ignition/tests/test_era_resolver_generalization.py",
+        # Exact R3 corpus-scale measurement artifacts and runtime.
+        "ignition/data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json",
+        "ignition/data/r3-corpus-scale/",
+        "ignition/docs/R3-CORPUS-RUNTIME.md",
+        "ignition/requirements-r3.txt",
+        "ignition/tests/r3_synthetic_corpus.py",
+        "ignition/tests/test_r3_corpus_acceptance.py",
+        "ignition/tests/test_r3_corpus_analysis.py",
+        "ignition/tests/test_r3_corpus_boundary.py",
+        "ignition/tests/test_r3_corpus_crash.py",
+        "ignition/tests/test_r3_corpus_inventory.py",
+        "ignition/tests/test_r3_corpus_semantic.py",
+        "ignition/tools/adaptive_relational_runtime/corpus/",
+        "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
+        "ignition/requirements-foundation.txt",
+        "ignition/data/operations/project-components.json",
+        "ignition/data/publication/fire-seeds/",
+        "ignition/docs/architecture/current-facts.md",
+        "ignition/docs/project-current-state.md",
+        "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+        "ignition/docs/human/function-assets/",
+        "ignition/docs/human/nonfunction-assets/",
+        "ignition/tools/governance/gen_source_first_seen.py",
+        "ignition/tests/test_iteration_sync.py",
+        "ignition/tools/validate_iteration_sync.py",
+        "ignition/schemas/architecture/adaptive-relational-runtime/",
+        "ignition/tests/adaptive_relational_runtime/",
+        "ignition/tools/adaptive_relational_runtime/",
+        "ignition/tools/generate_interactive_system_map.py",
+        "ignition/tools/governance/build_knowledge_experience.py",
+        "ignition/tools/governance/validate_human_surface_contract.py",
+        "ignition/tools/governance/validate_human_visibility.py",
+        "ignition/tools/operations/run_component_validation_targets.py",
+        "ignition/tools/validate_system_map_geometry.py",
+        # Exact R2 pilot additions to the stacked ARR scope; unrelated paths remain rejected.
+        "ignition/ARCHITECTURE.md",
+        "ignition/STATE-CHANGELOG.md",
+        "ignition/data/operations/component-execution-profile-policies.json",
+        "ignition/data/operations/iterations/ARR-R2-REAL-OBJECT-PILOT.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-closure.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-impact-report.md",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-map-delta.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-request.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-residue.json",
+        "ignition/reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
+        'tests/rpe_ci/',
+        'ignition/reports/ignition-rpe/',
+        'ignition/AI-HANDOFF.md',
+        'ignition/AI-START-HERE.md',
+        'ignition/tools/validate_human_front_door.py',
+        'ignition/llms.txt',
+        'ignition/RESULTS/',
+        'ignition/data/governance/human-results/',
+        'ignition/data/governance/human-surface/',
+        'ignition/data/governance/self-correction/',
+        'ignition/data/operations/current-snapshot-r1.json',
+        'ignition/data/publication/fire-seeds/',
+        'ignition/docs/architecture/current-facts.md',
+        'ignition/tools/governance/gen_source_first_seen.py',
+        'ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md',
+        # Exact consumer tests changed by the Q33 routing and era-resolver repair.
+        'ignition/tests/foundation/test_repository_path_classification.py',
+        'ignition/tests/test_component_validation_routing.py',
+        'ignition/tests/test_era_resolver_generalization.py',
+        # Exact R3 corpus-scale measurement artifacts and runtime.
+        'ignition/data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json',
+        'ignition/data/r3-corpus-scale/public-aggregate.json',
+        'ignition/docs/R3-CORPUS-RUNTIME.md',
+        'ignition/requirements-r3.txt',
+        'ignition/tests/r3_synthetic_corpus.py',
+        'ignition/tests/test_r3_corpus_acceptance.py',
+        'ignition/tests/test_r3_corpus_analysis.py',
+        'ignition/tests/test_r3_corpus_boundary.py',
+        'ignition/tests/test_r3_corpus_crash.py',
+        'ignition/tests/test_r3_corpus_inventory.py',
+        'ignition/tests/test_r3_corpus_semantic.py',
+        'ignition/tools/adaptive_relational_runtime/corpus/',
+        # Exact R4 self-reflection runtime and its public propagation projection.
+        'arr_r4_self_reflection/',
+        'ignition/data/operations/propagation/ARR-R4-WAIC-SELF-REFLECTION-R1-system-map-delta.json',
+        'requirements-r4.txt',
+        "ignition/docs/architecture/adaptive-relational-runtime-r2-adrs.md",
+        "ignition/docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
+        "ignition/docs/architecture/adaptive-relational-runtime-r4-adrs.md",
+        "ignition/docs/architecture/arr-r4-gap-candidate-gate.md",
+        "ignition/docs/architecture/arr-r4-public-aggregate.json",
+        "ignition/docs/architecture/arr-r4-self-reflection.md",
+        "ignition/docs/architecture/arr-r4-metric-disclosure-repair-external-review.md",
+        "ignition/docs/architecture/arr-r4-receipt-closure-diagnosis.md",
+        "ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md",
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():

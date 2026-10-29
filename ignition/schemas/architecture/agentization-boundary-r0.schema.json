@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/architecture/agentization-boundary-r0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "task_id", "baseline", "role_vocabulary", "components", "physical_migration", "invariants"],
+  "properties": {
+    "manifest_version": {"type": "string", "const": "R0"},
+    "task_id": {"type": "string", "const": "IGNITION-20260815-119"},
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "main_sha", "registry_ref"],
+      "properties": {
+        "repository": {"type": "string", "const": "Arvin-liu/when-systems-catch-fire"},
+        "main_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "registry_ref": {"type": "string", "const": "data/operations/project-components.json"}
+      }
+    },
+    "role_vocabulary": {
+      "type": "array",
+      "minItems": 7,
+      "uniqueItems": true,
+      "items": {"enum": ["GENERIC_KERNEL", "AGENT_RUNTIME", "KNOWLEDGE_DOMAIN", "DOMAIN_PACK", "HUMAN_PUBLICATION", "PLATFORM_TOOLING", "HISTORICAL_OR_LEGACY"]}
+    },
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["component_id", "current_path", "canonical_ref", "primary_role", "secondary_roles", "domain_binding", "kernel_dependency_direction", "current_move_disposition", "reason"],
+        "properties": {
+          "component_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "current_path": {"type": "string", "minLength": 1},
+          "canonical_ref": {"type": "string", "minLength": 1},
+          "primary_role": {"enum": ["GENERIC_KERNEL", "AGENT_RUNTIME", "KNOWLEDGE_DOMAIN", "DOMAIN_PACK", "HUMAN_PUBLICATION", "PLATFORM_TOOLING", "HISTORICAL_OR_LEGACY"]},
+          "secondary_roles": {"type": "array", "uniqueItems": true, "items": {"enum": ["GENERIC_KERNEL", "AGENT_RUNTIME", "KNOWLEDGE_DOMAIN", "DOMAIN_PACK", "HUMAN_PUBLICATION", "PLATFORM_TOOLING", "HISTORICAL_OR_LEGACY"]}},
+          "domain_binding": {"type": "string", "enum": ["domain_neutral", "governance", "knowledge", "research", "writing", "publication", "platform", "historical"]},
+          "kernel_dependency_direction": {"type": "string", "enum": ["OWNS_GENERIC_CONTRACT", "CONSUMES_GENERIC_CONTRACT", "CONSUMES_DOMAIN_OUTPUT", "SUPPORTS_MULTIPLE_COMPONENTS", "NO_CURRENT_DEPENDENCY"]},
+          "current_move_disposition": {"type": "string", "enum": ["KEEP_CURRENT_PATH_R0", "ADD_R0_COMPONENT", "REF_ONLY_NO_MOVE", "HISTORICAL_NO_MOVE"]},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "physical_migration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["performed", "scope", "residual"],
+      "properties": {
+        "performed": {"type": "boolean"},
+        "scope": {"type": "string", "minLength": 1},
+        "residual": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    }
+  }
+}

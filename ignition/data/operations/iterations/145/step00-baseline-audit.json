@@ -1,0 +1,58 @@
+{
+  "schema_version": "ignition-145-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260828-145",
+  "step": "00",
+  "status": "PASS",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "refs/heads/relay/current",
+    "observed_sha": "298014368e22995f562003951bf72d8366d602d2",
+    "command_path": "agent-commands/IGNITION-20260828-145-readme-human-front-door-cleanup-r1.md"
+  },
+  "formal_remote_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "observed_sha": "74cc83b26e5903c074c2b213c3f46afac1104856",
+    "fetch_command": "git fetch --prune origin",
+    "remote_ref_command": "git ls-remote origin refs/heads/main"
+  },
+  "task144_independent_witness": {
+    "repository": "Arvin-liu/1111",
+    "receipt_ref": "refs/heads/relay/receipts/ignition-144-engineering-phase-final-closure-production-handoff-r1-20260828",
+    "receipt_branch_sha": "4aeb225bcc4cfb8bf8413b8be9cc6491fdcbbc93",
+    "witness_kind": "INDEPENDENT_1111_REMOTE_REF_OBSERVATION",
+    "formal_remote_main_sha": "74cc83b26e5903c074c2b213c3f46afac1104856",
+    "fresh_remote_main_clone_sha": "74cc83b26e5903c074c2b213c3f46afac1104856",
+    "exact_sha_binding": true,
+    "engineering_phase": "CLOSED_CURRENT_SCOPE",
+    "architecture_executor_phase": "CLOSED_OWNER_DEFERRED",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "production_handoff": "AWAIT_OWNER_PRODUCTION_BRIEF",
+    "task143_outputs": "SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "new_live_invocations": 0,
+    "automatic_next_task": false
+  },
+  "owner_delta_observations": [
+    "README contains an old Agent Platform/OpenClaw/Hermes/Codex/Durability/Structural Governance current-state paragraph before a newer closure/production paragraph.",
+    "The human Current Snapshot, task lineage, live projection, version and architecture counts are expanded in the homepage body.",
+    "validate_human_front_door.py explicitly rejects README details and requires the phrase transparent clickable complete architecture SVG.",
+    "Human-surface visibility validation also rejects details globally, so the requested README folding cannot pass without a scoped exception.",
+    "System-map validators describe one href-bearing SVG anchor per node as clickability rather than source link metadata."
+  ],
+  "root_causes": [
+    "homepage-identity is anchored by current_surface_compiler.py after an obsolete long current-state paragraph and has no details-container contract",
+    "front-door and human-visibility validators encode the former no-details policy",
+    "README, map data, SVG generator and validators use clickability language that exceeds actual GitHub rendered behavior"
+  ],
+  "scope_decision": {
+    "identity_impact": "PRESENTATION_ONLY",
+    "engineering_phase": "CLOSED_CURRENT_SCOPE",
+    "architecture_change": false,
+    "map_redraw": false,
+    "external_live_process": false,
+    "task143_body_change": false,
+    "automatic_task146": false
+  },
+  "claim_ceiling": "Repository-local baseline and Owner-delta evidence only; no external truth, production safety, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

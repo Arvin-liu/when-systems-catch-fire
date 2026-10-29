@@ -1,0 +1,379 @@
+{
+  "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
+  "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
+  "current_formal_task_id": "IGNITION-20260829-148",
+  "current_formal_task_ordinal": 148,
+  "current_iteration_boundary": 148,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "facts": {
+    "architecture": {
+      "current_map_version": "0.22.0",
+      "hidden_components": 19,
+      "historical_map_version": "0.14.0",
+      "layout_version": "2.6.0",
+      "registry_components": 134,
+      "semantic_trunk_route_steps": 7,
+      "semantic_trunk_version": "semantic-trunk-r1",
+      "typed_topology_relations": 146,
+      "visible_map_nodes": 115,
+      "visible_typed_edges": 95
+    },
+    "environmental_residuals": [
+      "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.",
+      "T16_SYMPY_COUNTEREXAMPLE is explicitly classified as an environmental SymPy-unavailable residual from Task 121; this inventory does not change claim or proof status."
+    ],
+    "federation": {
+      "adapter_ids": [
+        "external.codex",
+        "external.hermes",
+        "external.openclaw"
+      ],
+      "adapter_inventory_count": 3,
+      "live_attempt_projection": {
+        "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
+        "next_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
+        "next_action_status": "OWNER_DEFERRED",
+        "obligation_state": "OPEN",
+        "observation_incomplete_count": 2,
+        "projection_digest": "31691dc290a6192d0864f4405d8b98f8557dfe0c83c7d1e2e05850de314ee0e2",
+        "source_path": "ignition/data/operations/iterations/141/live-current-projection-r3.json",
+        "total_attempts": 6,
+        "unreconciled_attempt_ids": [],
+        "unreconciled_count": 0,
+        "validated_completion_count": 0
+      },
+      "live_invocation_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
+      "live_state_dimensions": {
+        "inference_observation_status": "NOT_OBSERVED",
+        "live_dispatch_observation_status": "OBSERVED",
+        "live_process_observation_status": "OBSERVED",
+        "next_eligible_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
+        "reconciliation_blocker_status": "NONE",
+        "schema_version": "live-state-dimensions-r1",
+        "validated_completion_status": "NOT_VALIDATED"
+      },
+      "live_status_by_executor": {
+        "external.codex": "MALFORMED_RESULT",
+        "external.hermes": "TIMED_OUT_EFFECT_UNKNOWN",
+        "external.openclaw": "NOT_RUN_STEP_00"
+      },
+      "reference_executor_identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL"
+    },
+    "fire_seeds": {
+      "seed_count": 64,
+      "source_census_count": 663
+    },
+    "formal_task_lifecycle": {
+      "authority": "FORMAL_TASK_LIFECYCLE",
+      "current_task_id": "IGNITION-20260829-148",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_terminal": true,
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "scope_complete": true,
+      "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
+      "terminal_task_history": [
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260829-148",
+          "terminal": true
+        },
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260828-147",
+          "terminal": true
+        },
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260828-146",
+          "terminal": true
+        },
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260828-145",
+          "terminal": true
+        },
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260828-144",
+          "terminal": true
+        },
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260827-143",
+          "terminal": true
+        },
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260827-142",
+          "terminal": true
+        },
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260826-141",
+          "terminal": true
+        }
+      ]
+    },
+    "foundation": {
+      "function_identity_cards": 6214,
+      "function_quarantine_or_pending": 5062,
+      "nonfunction_claims": 19059,
+      "nonfunction_quarantine_or_pending": 5496
+    },
+    "human_surface": {
+      "function_human_entries": 24,
+      "machine_human_pairs": 14,
+      "materiality_entries": 48,
+      "nonfunction_human_entries": 24,
+      "registered_synchronization_surfaces": 21,
+      "surface_role_counts": {
+        "agent_handoff": 7,
+        "ai_cold_start": 4,
+        "ai_state_recovery": 1,
+        "governance_gate": 1,
+        "governance_policy": 1,
+        "human_exploration": 1,
+        "human_front_door": 4,
+        "human_guide": 6,
+        "human_result": 1,
+        "machine_human_counterpart": 2,
+        "machine_state": 6,
+        "release_history": 3
+      }
+    },
+    "iteration": {
+      "current_formal_task_id": "IGNITION-20260829-148",
+      "current_formal_task_ordinal": 148,
+      "current_iteration_boundary": 148,
+      "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+      "current_map_version": "0.22.0",
+      "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+      "latest_architecture_task_ordinal": 142,
+      "method_status": "Current",
+      "method_version": "1.4.0"
+    },
+    "knowledge_experience": {
+      "aliases": 1401,
+      "cards": 677,
+      "changes": 572,
+      "layered_readings": 598,
+      "search_records": 25871
+    },
+    "open_obligations": {
+      "authority": "OPEN_OBLIGATION_REGISTRY",
+      "current_task_id": "IGNITION-20260829-148",
+      "next_eligible_actions": [
+        "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION"
+      ],
+      "open_count": 1,
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "source_path": "ignition/data/operations/open-obligation-registry-r1.json"
+    },
+    "operating_method": {
+      "identity": "IGNITION_OPERATING_METHOD_R1",
+      "source_path": "ignition/OPERATING-METHOD.md",
+      "status": "CURRENT",
+      "version": "1.0.0"
+    },
+    "packs": {
+      "capability_route_count": 10,
+      "count": 4,
+      "pack_ids": [
+        "knowledge.r0",
+        "maintenance.repository",
+        "research.reos-light",
+        "writing.zhiyuan"
+      ]
+    },
+    "steering": {
+      "completion_boundary": "run_pass_is_not_goal_completion; independent completion contract and validator evidence remain required",
+      "current_status": "REPOSITORY_LOCAL_CURRENT",
+      "integration_surface_count": 4,
+      "invariant_ids": [
+        "INTENT_AUTHORITY_INVARIANT",
+        "GOAL_COMPLETION_NON_INFERENCE_INVARIANT",
+        "STEERING_EXPLAINABILITY_INVARIANT"
+      ],
+      "module_count": 15,
+      "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
+    },
+    "task_lineage": {
+      "current_task_id": "IGNITION-20260829-148",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
+      "task125_file_status": "HISTORICAL_UNEXECUTED",
+      "task125_requirement_lineage_status": "REBASED_INTO_127",
+      "task127_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
+    }
+  },
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "schema_version": "current-facts-r1",
+  "source_fingerprints": [
+    {
+      "path": "ignition/ITERATION.md",
+      "sha256": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca"
+    },
+    {
+      "path": "ignition/OPERATING-METHOD.md",
+      "sha256": "139886003d2e6250e4d55ffe05e913b39d8ba562deadf6d4e5368e811ccd3072"
+    },
+    {
+      "path": "ignition/data/agent-federation/executor-inventory-r1.json",
+      "sha256": "1db5fbe2f4535cdcc0878aac71fdec4e35be23705934e29eb73025c58a4a923a"
+    },
+    {
+      "path": "ignition/data/architecture/current-system-identity.json",
+      "sha256": "5f9f0f4ac2e225b72e2a97515da7e88187f05da6df7786f5866f270fddda4761"
+    },
+    {
+      "path": "ignition/data/architecture/interactive-system-map-layout.json",
+      "sha256": "a3523d5d6c3a0b80748c91f60f9a35533e78346d79e38167276a6deedbadf9de"
+    },
+    {
+      "path": "ignition/data/foundation/function-assets/closure-summary.json",
+      "sha256": "fa0881bea08fb56c2b8cbf1168e7849f9d04f72f5cecfac9462388ae6b198237"
+    },
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "sha256": "a66c08e294547740429dc0d1cd159a7785fa3682495f3b2170330bf88390b720"
+    },
+    {
+      "path": "ignition/data/governance/human-results/config.json",
+      "sha256": "9452ae86f6ce151ac7c08ae16300aeae9a086445651e821eb40aa79f29af6b47"
+    },
+    {
+      "path": "ignition/data/governance/human-surface/materiality-manifest.json",
+      "sha256": "25479749a477e0b0094f1c7928b4dc620110e96dafbc40e87e83783de48cf042"
+    },
+    {
+      "path": "ignition/data/governance/knowledge-experience/manifest.json",
+      "sha256": "42763073f320ebb06c9309c5ecfa1508d7449ffbfcd993c320a6a1b87447f6d0"
+    },
+    {
+      "path": "ignition/data/operations/change-propagation-topology.json",
+      "sha256": "de6740369db1397e724bb2d61d1f2152ecd977704a41312f0ffd159d9df4f5a8"
+    },
+    {
+      "path": "ignition/data/operations/current-release-lifecycle-r1.json",
+      "sha256": "d8de9acdc1b2d92c92c5cd8fa6cefb9ec216160e72f4e75b06330e4c0effeb0f"
+    },
+    {
+      "path": "ignition/data/operations/current-task-lineage-status.json",
+      "sha256": "b3f73962f3ba89b78e43f6abb00bb7d6952caa0f2ba828be9cd8d63853c0f857"
+    },
+    {
+      "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
+      "sha256": "5b1d8467ef567f495216539a1f0c6683af63440f36eeda07a9b9d4a662368dd3"
+    },
+    {
+      "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
+      "sha256": "abf13717555709f42245cf8008e121af2f713cb74ed1127e6fc9635633360479"
+    },
+    {
+      "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+      "sha256": "ec6d5ba5883986495bb680335e0a6d8cd4f7456ce4b63b31d941f6d2f88f41ca"
+    },
+    {
+      "path": "ignition/data/operations/iterations/140/live-observation-events-r1.jsonl",
+      "sha256": "7f48642b937dda08b8dcb3b678ff7bc48bfc488cfbd8b813c982e61ea41d8171"
+    },
+    {
+      "path": "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl",
+      "sha256": "f045cc532d9bd48227d6c36e69bd3fb96143231f77001b0cfa8c54e8a4006062"
+    },
+    {
+      "path": "ignition/data/operations/iterations/141/live-current-projection-r3.json",
+      "sha256": "47bb033b4d6b84223a2ee03283a0170430da18e9f6ca9a63bfbe998c4867e271"
+    },
+    {
+      "path": "ignition/data/operations/iterations/141/live-inference-observation-events-r1.jsonl",
+      "sha256": "a3642322ca9eecfa1c627151150f32b1e4a3a3fa6a133098cc676e77055260fe"
+    },
+    {
+      "path": "ignition/data/operations/open-obligation-registry-r1.json",
+      "sha256": "9aa78f9835b646723b9fa8061a4720475da6c82e80bd749c65f3540996cdc7c7"
+    },
+    {
+      "path": "ignition/data/operations/project-components.json",
+      "sha256": "a6bfbb86f9fee467449e0ee7f09252a2f3782f7e2d5f836b6f267f07ba00d07e"
+    },
+    {
+      "path": "ignition/data/operations/steering/current-state-r1.json",
+      "sha256": "aacd1a317b6c9c510cdf520c2bf320fb022fb4a3d5f25bcc1b947a67f0dc3338"
+    },
+    {
+      "path": "ignition/data/operations/synchronization-surfaces.json",
+      "sha256": "c67508eba1b6ad37cfd723f06cb731877ca14a76bfa55e17bf17afc8d252eec9"
+    },
+    {
+      "path": "ignition/data/publication/fire-seeds/seed-census.json",
+      "sha256": "2e29755974376ecfbfd1ccc932b2a7f4a9b137e7650dc3ffd91697d39f4c1661"
+    },
+    {
+      "path": "ignition/packs/knowledge/manifest.json",
+      "sha256": "6e5a77f25796ce189e73f02026be1b1544f4c3f736b1a67153134c1fa181bff1"
+    },
+    {
+      "path": "ignition/packs/maintenance/manifest.json",
+      "sha256": "a4cc420eb74a773fd0f85e7d8e883b756e1ebdd8f2980a45524832235725e9e7"
+    },
+    {
+      "path": "ignition/packs/research/manifest.json",
+      "sha256": "73f6f1e8f4c4c552ca88388294b5b5c3a5079403161e2ec848aaa58bac174875"
+    },
+    {
+      "path": "ignition/packs/writing/manifest.json",
+      "sha256": "e4a751104a42b2ee72fdff660b2bf9b84fddd3016dae65e6ea4c49d40ba46d43"
+    },
+    {
+      "path": "ignition/schemas/architecture/current-facts.schema.json",
+      "sha256": "7e8a8a28e76ca7db6ae1b15073247d90ec61300592db2a8022cf5588cf2b2bf7"
+    },
+    {
+      "path": "ignition/schemas/architecture/current-system-identity.schema.json",
+      "sha256": "ce1287e23c6a16151c594d36c8c6621133e406219cf1b6b5c7d34b8c4a457663"
+    },
+    {
+      "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
+      "sha256": "bb14a1628f21f7bcc7eec5c85b678cb337f00a6e0f6126e63c88886d425026e3"
+    },
+    {
+      "path": "ignition/schemas/operations/formal-task-lifecycle-r1.schema.json",
+      "sha256": "5c31cd08bef78c7427c3d82a3e819a897410cfbda5c66f01c5438ace37c2c4ab"
+    },
+    {
+      "path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
+      "sha256": "dbedd915d553321bef9d238fd6f3e2f2df9bc1514ac5c7c01c314c30a458da79"
+    },
+    {
+      "path": "ignition/tools/generate_current_facts.py",
+      "sha256": "95aeea7559839cf8b5bcded62ddec5c72341b87b426329fe36984af68c8992c8"
+    },
+    {
+      "path": "ignition/tools/iteration_boundary.py",
+      "sha256": "155548d15758dbe82d0b09883480696cf4d4283b62dc870813f3b5c7f19e8043"
+    },
+    {
+      "path": "ignition/tools/task_identity.py",
+      "sha256": "fa4fbe69102bbb6a7a63faa137d17b1d712166714d5ba950a8e6b278c79d9ad4"
+    },
+    {
+      "path": "ignition/tools/validate_current_task_lineage.py",
+      "sha256": "6bbdf6bf6b7f2e8d572c6808dd4a117da98104507cc030a06b256f5e957ac9a7"
+    },
+    {
+      "path": "ignition/tools/validate_formal_task_lifecycle.py",
+      "sha256": "589f217f94d05380e3d0d8b94250978596774da3cb782c2b1abc9a927110a4ea"
+    },
+    {
+      "path": "ignition/tools/validate_open_obligation_registry.py",
+      "sha256": "1bcd19dc9514cd3d2293ee56c33eee778acd1b1280befa39831d14fbcb41de03"
+    }
+  ]
+}

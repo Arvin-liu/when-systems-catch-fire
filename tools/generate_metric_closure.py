@@ -1,7 +1,7 @@
 """Deterministic generator for the R3/R4 metric observability closure artifacts.
 
 Produces the non-reconstructive public correction artifacts under
-``docs/architecture/arr-r3-r4-metric-closure/`` from the versioned correction
+``ignition/docs/architecture/arr-r3-r4-metric-closure/`` from the versioned correction
 layer in ``arr_metric_correction``. Running it twice yields byte-identical
 output (deterministic). It never reads or emits private corpus content.
 
@@ -21,7 +21,7 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if REPO_ROOT not in sys.path:
     sys.path.insert(0, REPO_ROOT)
-TESTS_DIR = os.path.join(REPO_ROOT, "tests", "adaptive_relational_runtime")
+TESTS_DIR = os.path.join(REPO_ROOT, "ignition", "tests", "adaptive_relational_runtime")
 if TESTS_DIR not in sys.path:
     sys.path.insert(0, TESTS_DIR)
 
@@ -35,7 +35,7 @@ from arr_metric_correction import (  # noqa: E402
 )
 from r4_fixtures import r4_capability_matrix  # noqa: E402
 
-OUT_DIR = os.path.join(REPO_ROOT, "docs", "architecture", "arr-r3-r4-metric-closure")
+OUT_DIR = os.path.join(REPO_ROOT, "ignition", "docs", "architecture", "arr-r3-r4-metric-closure")
 
 CORRECTIONS_VALIDATED = {"M2": True, "M3": True, "M4": True, "M5": True}
 

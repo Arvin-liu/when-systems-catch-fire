@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-intent-registry-r1.schema.json",
+  "title": "OS Steering Intent Registry R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "records", "events", "record_count", "owner_authoritative_count", "proposal_count"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.intent-registry"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["intent_id", "statement", "namespace", "provenance", "status", "scope", "version", "created_at", "updated_at"], "properties": {"intent_id": {"type": "string"}, "statement": {"type": "string"}, "namespace": {"type": "string"}, "provenance": {"type": "object"}, "status": {"enum": ["PROPOSED", "ACTIVE", "PAUSED", "RETIRED", "SUPERSEDED"]}, "scope": {"type": "object"}, "version": {"type": "integer", "minimum": 1}, "created_at": {"type": "string"}, "updated_at": {"type": "string"}}}},
+    "events": {"type": "array", "items": {"type": "object"}},
+    "record_count": {"type": "integer", "minimum": 0},
+    "owner_authoritative_count": {"type": "integer", "minimum": 0},
+    "proposal_count": {"type": "integer", "minimum": 0}
+  }
+}

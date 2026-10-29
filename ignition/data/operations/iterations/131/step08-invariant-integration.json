@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-131-step08-invariant-integration-r1",
+  "task_id": "IGNITION-20260821-131",
+  "integrated_validators": [
+    "ignition/tools/validate_release_state_model.py",
+    "ignition/tools/validate_current_release_lifecycle.py",
+    "ignition/tools/validate_current_state_sync.py",
+    "ignition/tools/validate_current_task_lineage.py",
+    "ignition/tools/validate_current_surface_semantics.py",
+    "ignition/tools/validate_post_publication_current.py"
+  ],
+  "current_surface_compiler": "AI surfaces carry an explicit ref-derived verification instruction; all generated profiles carry REMOTE_REF_OBSERVATION and no static publication state.",
+  "current_state_sync": "Current lifecycle authority, snapshot authority, required refs/heads/main and AI instructions are checked together with existing sync receipts.",
+  "task_lineage": "Current AI/Human/Machine blocks are checked for ref-derived publication authority; historical sections remain outside the Current projection check.",
+  "identity_boundary": {
+    "identity_impact": "PRESENTATION_ONLY",
+    "latest_architecture_changing_task": "IGNITION-20260821-129",
+    "current_map_version": "0.12.0",
+    "historical_map_version": "0.11.0"
+  },
+  "publication_projection": {
+    "content_phase": "RELEASE_READY",
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "embedded_publication_assertion": "NONE",
+    "required_publication_ref": "refs/heads/main"
+  },
+  "claim_ceiling": "Validator integration proves repository-local consistency and authority separation only; it does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

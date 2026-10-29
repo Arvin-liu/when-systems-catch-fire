@@ -2,7 +2,10 @@
 
 Draft production layer on branch `production/ignition-run-promote-evolve-r1`.
 This is a build artifact, not merged/current capability, and does not alter the
-frozen formal protocol or the iteration method `1.3.0`.
+frozen formal protocol or current iteration method `1.4.0`. The original frozen
+build was developed against method `1.3.0`; this updated review branch inherits
+method `1.4.0` from PR #118, and the runtime has not been reviewed or revalidated
+under `1.4.0`.
 
 ## 1. Module map
 

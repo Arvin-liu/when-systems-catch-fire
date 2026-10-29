@@ -1,0 +1,173 @@
+{
+  "_derived_from_terminal_only": true,
+  "_non_terminal_tasks_excluded": [],
+  "article_review_states": {
+    "001": "REVIEWED_CURRENT",
+    "002": "REVIEWED_CURRENT",
+    "003": "REVIEWED_CURRENT",
+    "004": "REVIEWED_CURRENT",
+    "005": "REVIEWED_CURRENT",
+    "006": "REVIEWED_CURRENT",
+    "007": "REVIEWED_CURRENT"
+  },
+  "current_accepted_iteration": 114,
+  "current_capability_evidence": [
+    {
+      "ids": [
+        "editorial-layer",
+        "corpus-relation-graph"
+      ],
+      "task": 104
+    },
+    {
+      "ids": [
+        "function-os-v0.2"
+      ],
+      "task": 105
+    }
+  ],
+  "current_project_status_commit": "fb8d9c48ddf5c9236ae011323578f6965fe51d91",
+  "current_project_status_date": "2026-07-31",
+  "map_state_and_impact": [
+    {
+      "task": 104,
+      "verdict": "NO_MAP_IMPACT"
+    },
+    {
+      "task": 105,
+      "verdict": "NO_MAP_IMPACT"
+    }
+  ],
+  "recently_merged_results": [
+    {
+      "classification": "editorial article layer (six articles) + corpus relation analysis; live-system-map classified NO_MAP_IMPACT",
+      "exact_head": "see merge^2 of 16f64004",
+      "merge_commit": "16f640045b3dc9d411f015a51e45de07299d31fc",
+      "task_id": "IGNITION-NARRATIVE-SYNTHESIS-AND-LIVE-SYSTEM-MAP-R1-20260730",
+      "task_number": 104,
+      "terminal_state": "IGNITION_NARRATIVE_SYNTHESIS_EDITORIAL_LAYER_AND_RELATION_ANALYSIS_PROPAGATED_AND_MERGED"
+    },
+    {
+      "classification": "Function OS v0.2 bounded capability benchmark: original-target verdict PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES (25 false_reject from N2 bug); repaired-target verdict SUPPORTED_WITHIN_BOUNDED_DOMAIN; bounded N2 nested-equality defect repaired",
+      "exact_head": "9d7d5ab512ffe3fd109a60ebd3d9d246b3a42d19",
+      "merge_commit": "9b5b4b9bfb243fe4cc52f7b163a9613ee6628321",
+      "task_id": "IGNITION-FUNCTION-OS-CORE-CAPABILITY-BENCHMARK-ADVERSARIAL-VALIDATION-R1-20260730",
+      "task_number": 105,
+      "terminal_state": "IGNITION_FUNCTION_OS_CORE_CAPABILITY_PREREGISTERED_BENCHMARKED_ADVERSARIALLY_VALIDATED_PROPAGATED_AND_MERGED"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
+      "exact_head": "974c0531badd83d94673e9a3abb040a0855fcee1",
+      "merge_commit": "af988422030069b8fee1df7ec75670e0541a55ab",
+      "task_id": "IGNITION-CONTINUOUS-ITERATION-PROPAGATION-CLOSURE-AND-CURRENT-TRUTH-RECONCILIATION-R1-20260731",
+      "task_number": 106,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS); retroactive reconciliation by task 108",
+      "exact_head": "43011f37961137221843da97145845e2ff558e78",
+      "merge_commit": "77352d27bc997ff9418de017f622f0c72dd634e3",
+      "task_id": "IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731",
+      "task_number": 107,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "39f30eccbd2c4050bed2b83650e7d823940781ba",
+      "merge_commit": "ddf64f8b689caf20a69880b3f8bd5f2097916390",
+      "task_id": "IGNITION-TWO-PHASE-ITERATION-TERMINALIZATION-AND-SELF-CLOSING-CURRENT-TRUTH-R1-20260801",
+      "task_number": 108,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "56db4f8d40ac95bc5ed4482681d92e5c48d967cc",
+      "merge_commit": "2fa72751a29f95a1b9d72578cd25eb30f6b0e412",
+      "task_id": "IGNITION-PLANNER-COMPLETION-STATE-RECONCILIATION-AND-OPENALEX-INDEPENDENT-REPLICATION-PILOT-R1-20260801",
+      "task_number": 110,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "3c086e070998670aa88c7a9bb31481b27e17d59e",
+      "merge_commit": "efd4cef9a602c70c9c41db4c0e9c9e42d54fe49f",
+      "task_id": "IGNITION-FAILURE-CASE-EVIDENCE-GATE-AND-REAL-DEFECT-REPRODUCTION-PILOT-R1-20260801",
+      "task_number": 111,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "2e6ca101ac82d1bd8af413fbdafaaea024a9af8b",
+      "merge_commit": "24c7002477f75608b828f764fba60ebb633f88e8",
+      "task_id": "IGNITION-RESEARCH-PUBLICATION-LAYER-HUNDRED-ITERATION-KNOWLEDGE-HARVEST-VOLUME-ONE-R1-20260802",
+      "task_number": 112,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "9379aee3df73477b6f3ac6b15eed08e027124c58",
+      "merge_commit": "687591cd28aa3bad8e9a9fcb71efc2862eaca91e",
+      "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+      "task_number": 113,
+      "terminal_state": "TERMINAL_SUCCESS"
+    },
+    {
+      "classification": "folded from event-sourced lifecycle (TERMINAL_SUCCESS)",
+      "exact_head": "75d0f45122fe53a1a28a068e7ddba13fab6a41f5",
+      "merge_commit": "fb8d9c48ddf5c9236ae011323578f6965fe51d91",
+      "task_id": "IGNITION-LANGUAGE-THOUGHT-LOGIC-CROSS-LAYER-PLANE-REPRESENTATIVE-LANGUAGE-PILOT-AND-CURRENT-WORK-REPAIR-R1-20260802",
+      "task_number": 114,
+      "terminal_state": "TERMINAL_SUCCESS"
+    }
+  ],
+  "resolved_questions": [
+    "OQ-103-5: Function OS v0.2 correctness benchmark executed (bounded)",
+    "OQ-103-5: Function OS v0.2 correctness benchmark executed (bounded)"
+  ],
+  "unresolved_propagation_obligations": [
+    {
+      "surface": "docs/editorial/*",
+      "task": 104
+    },
+    {
+      "surface": "analysis/corpus-relation/*",
+      "task": 104
+    },
+    {
+      "surface": "docs/editorial/source-manifest.json (added by 106)",
+      "task": 104
+    },
+    {
+      "surface": "function-os-candidate/v0.2/README.md",
+      "task": 105
+    },
+    {
+      "surface": "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md",
+      "task": 105
+    },
+    {
+      "surface": "README.md",
+      "task": 105
+    },
+    {
+      "surface": "RESULTS/LATEST.md",
+      "task": 105
+    },
+    {
+      "surface": "RESULTS/OPEN-QUESTIONS.md",
+      "task": 105
+    },
+    {
+      "surface": "docs/project-current-state.md",
+      "task": 105
+    },
+    {
+      "surface": "KNOWLEDGE/WHATS-NEW.md",
+      "task": 105
+    },
+    {
+      "surface": "evidence-program/README.md",
+      "task": 105
+    }
+  ]
+}

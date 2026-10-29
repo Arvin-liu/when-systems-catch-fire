@@ -1,0 +1,98 @@
+{
+  "schema_version": "ignition-139-step05-historical-attempt-import-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "05",
+  "target_ledger": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+  "source_identity": {
+    "task137_canonical_attempt_id": "attempt-137-live-01",
+    "task137_source_attempt_id": "live-attempt-137",
+    "task137_identity_note": "Canonical ledger identity follows Step01 migration plan; source receipt remains unchanged."
+  },
+  "records": [
+    {
+      "sequence": 0,
+      "task_id": "IGNITION-20260823-136",
+      "dispatch_id": "live-hermes-136",
+      "attempt_id": "live-hermes-136-initial",
+      "executor_id": "external.hermes",
+      "state": "TIMED_OUT_EFFECT_UNKNOWN",
+      "evidence_completeness": "COMPLETE",
+      "reconciliation_status": "REQUIRES_RECONCILIATION",
+      "capture_completeness": "COMPLETE",
+      "return_code": -15,
+      "structured_result_present": false,
+      "validator_status": "NOT_RUN",
+      "source_refs": [
+        "ignition/data/operations/iterations/136/step13-live-execution-receipt.json"
+      ],
+      "record_hash": "24e4650f3c9a6dd20059c6b1b5f314c6edeba0288872d67c322351600dc24f9c"
+    },
+    {
+      "sequence": 1,
+      "task_id": "IGNITION-20260824-137",
+      "dispatch_id": "live-dispatch-137",
+      "attempt_id": "attempt-137-live-01",
+      "executor_id": "external.codex",
+      "state": "FAILED_VALIDATION",
+      "evidence_completeness": "COMPLETE",
+      "reconciliation_status": "NOT_REQUIRED",
+      "capture_completeness": "COMPLETE",
+      "return_code": 1,
+      "structured_result_present": false,
+      "validator_status": "FAIL",
+      "source_refs": [
+        "ignition/data/operations/iterations/137/step09-live-codex-attempt.json",
+        "ignition/data/operations/iterations/137/step10-independent-validation-outcome.json"
+      ],
+      "record_hash": "989f7bf076f161f54fae84d9a0dd9f6528ef0c47e3daf5ff1e12ae32d765f1f5"
+    },
+    {
+      "sequence": 2,
+      "task_id": "IGNITION-20260824-138",
+      "dispatch_id": "dispatch-138-live-01",
+      "attempt_id": "attempt-138-live-01",
+      "executor_id": "external.codex",
+      "state": "STARTUP_FAILURE",
+      "evidence_completeness": "COMPLETE",
+      "reconciliation_status": "NOT_REQUIRED",
+      "capture_completeness": "COMPLETE",
+      "return_code": 1,
+      "structured_result_present": false,
+      "validator_status": "NOT_RUN",
+      "source_refs": [
+        "ignition/data/operations/iterations/138/step08-first-codex-dispatch.json"
+      ],
+      "record_hash": "2ca2c7b957700e50b1fb2ef56f670b74357012041cef8015570dc502ad92077f"
+    },
+    {
+      "sequence": 3,
+      "task_id": "IGNITION-20260824-138",
+      "dispatch_id": "dispatch-138-live-02",
+      "attempt_id": "attempt-138-live-02",
+      "executor_id": "external.codex",
+      "state": "OBSERVATION_INCOMPLETE",
+      "evidence_completeness": "INCOMPLETE",
+      "reconciliation_status": "REQUIRES_RECONCILIATION",
+      "capture_completeness": "INCOMPLETE",
+      "return_code": null,
+      "structured_result_present": false,
+      "validator_status": "UNKNOWN",
+      "source_refs": [
+        "ignition/data/operations/iterations/138/step08-amendment-01-live-codex-reconciliation.json"
+      ],
+      "record_hash": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e"
+    }
+  ],
+  "canonical_task138_second_fact": "ATTEMPT_HAPPENED_OBSERVATION_INCOMPLETE",
+  "historical_sources_rewritten": false,
+  "audit": {
+    "schema_version": "live-attempt-ledger-r1",
+    "status": "PASS",
+    "record_count": 4,
+    "dispatch_count": 4,
+    "attempt_count": 4,
+    "head_hash": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e",
+    "claim_ceiling": "Append-only live-attempt identity and public evidence integrity only; no external success or truth is inferred."
+  },
+  "claim_ceiling": "Historical attempt import and append-only ledger integrity only; no external completion is inferred."
+}

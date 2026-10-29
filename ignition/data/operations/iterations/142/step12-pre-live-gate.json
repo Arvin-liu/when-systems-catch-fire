@@ -1,0 +1,32 @@
+{
+  "schema_version": "task142-pre-live-gate-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "12",
+  "status": "PASS_FAIL_CLOSED",
+  "decision": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+  "live_authorized": false,
+  "observed_at": "2026-08-26T17:14:29Z",
+  "checks": {
+    "task141_terminality": "PASS",
+    "obligation_carry_forward": "PASS",
+    "admission_contract": "PASS",
+    "offline_conformance": "PASS",
+    "fresh_census": "PASS",
+    "public_auth_and_billing": "NOT_APPLICABLE_NO_SELECTED_FAMILY",
+    "synthetic_fixture": "NOT_CREATED_NO_SELECTED_FAMILY",
+    "workspace_and_runtime_domains": "NOT_APPLICABLE_NO_SELECTED_FAMILY",
+    "no_effect_scope": "PASS",
+    "durable_capture": "NOT_APPLICABLE_NO_SELECTED_FAMILY",
+    "exact_validator": "PASS",
+    "blind_retry_policy": "PASS"
+  },
+  "missing_conditions": [
+    "At least one installed AGENTIC_EXECUTOR must pass every provider-neutral gate and have no policy blocker.",
+    "Gemini still needs public auth/source separation and an attested exact Pointfire adapter; Hermes still needs strict structured output and auth re-attestation; OpenClaw still needs workspace/channel, auth, cleanup and structured-result proof.",
+    "Codex remains technically admitted but requires confirmed Task140 malformed-result root-cause closure before any same-family live attempt is eligible."
+  ],
+  "historical_live_counts": {"attempts": 6, "validated_completion": 0, "unreconciled": 0, "observation_incomplete": 2},
+  "attempt_policy": {"max_total": 2, "max_per_family": 1, "stop_on_first_validated": true, "child_spawn": "DENY", "attempt_a_started": false, "attempt_b_started": false},
+  "safety": {"secret_content_read": false, "auth_content_copied": false, "configuration_changed": false, "billing_changed": false, "install_or_upgrade_performed": false, "live_process_started": false, "live_inference_started": false, "workspace_modified": false, "ui_action_performed": false},
+  "claim_ceiling": "Fail-closed pre-live gate evidence for Task142 only; no live process, inference, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is claimed."
+}

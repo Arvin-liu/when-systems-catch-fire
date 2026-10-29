@@ -1,0 +1,17 @@
+{
+  "schema": "os-steering-intent-obligation-r1.goal-dependency-graph",
+  "graph_kind": "LONG_TERM_STEERING",
+  "nodes": [
+    {"node_id": "goal-research", "node_kind": "GOAL", "namespace": "fixture.public", "status": "ACTIVE", "superseded_by": null},
+    {"node_id": "goal-writing", "node_kind": "GOAL", "namespace": "fixture.public", "status": "BLOCKED", "superseded_by": null},
+    {"node_id": "commitment-deadline", "node_kind": "COMMITMENT", "namespace": "fixture.public", "status": "DUE", "superseded_by": null},
+    {"node_id": "goal-old", "node_kind": "GOAL", "namespace": "fixture.public", "status": "SUPERSEDED", "superseded_by": "goal-research"}
+  ],
+  "edges": [
+    {"edge_id": "edge-research-prereq", "source_id": "goal-writing", "target_id": "goal-research", "edge_type": "PREREQUISITE", "reason": "research brief enables writing", "shared_scope_ref": null},
+    {"edge_id": "edge-commitment-due", "source_id": "commitment-deadline", "target_id": "goal-research", "edge_type": "BLOCKS", "reason": "deadline obligation blocks drift", "shared_scope_ref": null},
+    {"edge_id": "edge-supersession", "source_id": "goal-old", "target_id": "goal-research", "edge_type": "SUPERSEDES", "reason": "new goal supersedes old record", "shared_scope_ref": null}
+  ],
+  "node_count": 4,
+  "edge_count": 3
+}

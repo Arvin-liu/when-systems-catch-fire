@@ -1,0 +1,17 @@
+{
+  "top10_ratio": 1.0,
+  "threshold": 0.7,
+  "meets_threshold": true,
+  "top10_classes": {
+    "C-01": "CORE_CAPABILITY_VALIDATION",
+    "CF-apple_gravity_failure": "IMPLEMENTATION_DEFECT",
+    "CF-cross_domain_synergy_risk": "IMPLEMENTATION_DEFECT",
+    "CF-technology_economic_growth_failure": "IMPLEMENTATION_DEFECT",
+    "C-03": "CORE_CAPABILITY_VALIDATION",
+    "arn-gap-001": "MATHEMATICAL_FORMALIZATION",
+    "arn-gap-002": "MATHEMATICAL_FORMALIZATION",
+    "arn-gap-003": "MATHEMATICAL_FORMALIZATION",
+    "mcf-gap-001": "MATHEMATICAL_FORMALIZATION",
+    "mcf-gap-002": "MATHEMATICAL_FORMALIZATION"
+  }
+}

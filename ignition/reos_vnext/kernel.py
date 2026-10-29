@@ -1,0 +1,378 @@
+"""Pure operations over the R1 REOS case document.
+
+All mutators return a new document.  Callers decide when to persist the new
+document; Git remains the durable recovery/history mechanism for this round.
+"""
+
+from __future__ import annotations
+
+import copy
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any, Mapping
+
+from .contract import (
+    ActivationDecision,
+    ArtifactRefRecord,
+    ClaimCandidate,
+    EvidenceRequest,
+    HandoffBundle,
+    QuestionContract,
+    REOS_LIGHT,
+    ResearchCase,
+    ResearchObligation,
+    ReviewDecision,
+    ReviewRequest,
+    SCHEMA_VERSION,
+)
+from .validation import (
+    ContractError,
+    ValidationIssue,
+    canonical_json,
+    sha256_json,
+    validate_case,
+    validate_handoff,
+)
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def _dict(value: Any) -> dict[str, Any]:
+    if hasattr(value, "as_dict"):
+        value = value.as_dict()
+    if not isinstance(value, Mapping):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$", "REOS record must be a mapping or frozen contract object")]
+        )
+    return copy.deepcopy(dict(value))
+
+
+def _string_sequence(value: Any, path: str) -> tuple[str, ...]:
+    if not isinstance(value, (list, tuple)) or any(not isinstance(item, str) for item in value):
+        raise ContractError([ValidationIssue("MALFORMED_STATE", path, "must be a sequence of strings")])
+    return tuple(value)
+
+
+def _preregistration_binding_digest(
+    preregistration_ref: str,
+    frozen_validation_summary: Mapping[str, Any],
+) -> str:
+    return sha256_json(
+        {
+            "preregistration_ref": preregistration_ref,
+            "frozen_validation_summary": frozen_validation_summary,
+        }
+    )
+
+
+def _reject_duplicate_object_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate JSON object key: {key}")
+        result[key] = value
+    return result
+
+
+def parse_json(text: str) -> Any:
+    try:
+        return json.loads(text, object_pairs_hook=_reject_duplicate_object_keys)
+    except (json.JSONDecodeError, ValueError, TypeError) as exc:
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$", f"invalid or non-canonical JSON ({type(exc).__name__})")]
+        ) from exc
+
+
+def new_case(
+    *,
+    case_id: str,
+    mode: str = REOS_LIGHT,
+    activation_reason: str,
+    observed_need: list[str] | tuple[str, ...],
+    simpler_baseline: str,
+    unnecessary_modules: list[str] | tuple[str, ...],
+    preregistration_ref: str,
+    preregistration_digest: str,
+    frozen_validation_summary: Mapping[str, Any],
+    budget_contract: Mapping[str, Any],
+    stop_conditions: list[str] | tuple[str, ...],
+    owner_boundary: str = "GPT_OWNER_REVIEW_ONLY",
+) -> dict[str, Any]:
+    if not isinstance(frozen_validation_summary, Mapping):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", "must be an object")]
+        )
+    if not isinstance(budget_contract, Mapping):
+        raise ContractError([ValidationIssue("MALFORMED_STATE", "$.budget_contract", "must be an object")])
+    summary = copy.deepcopy(dict(frozen_validation_summary))
+    try:
+        summary_digest = sha256_json(summary)
+    except (TypeError, ValueError) as exc:
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", f"not canonical JSON ({type(exc).__name__})")]
+        ) from exc
+    if preregistration_digest != _preregistration_binding_digest(preregistration_ref, summary):
+        raise ContractError(
+            [
+                ValidationIssue(
+                    "QUESTION_MUTATION",
+                    "$.question_contract.preregistration_digest",
+                    "must bind the external preregistration reference to the compact frozen validation summary",
+                )
+            ]
+        )
+    question = QuestionContract(
+        preregistration_ref=preregistration_ref,
+        preregistration_digest=preregistration_digest,
+        frozen_validation_summary=summary,
+        current_validation_summary=summary,
+        initial_validation_summary_digest=summary_digest,
+        validation_summary_digest=summary_digest,
+    )
+    activation = ActivationDecision(
+        mode=mode,
+        reason=activation_reason,
+        observed_need=_string_sequence(observed_need, "$.activation.observed_need"),
+        simpler_baseline=simpler_baseline,
+        unnecessary_modules=_string_sequence(unnecessary_modules, "$.activation.unnecessary_modules"),
+    )
+    case = ResearchCase(
+        case_id=case_id,
+        activation=activation,
+        question_contract=question,
+        owner_boundary=owner_boundary,
+        budget_contract=copy.deepcopy(dict(budget_contract)),
+        stop_conditions=_string_sequence(stop_conditions, "$.stop_conditions"),
+    )
+    document = case.as_document()
+    validate_case(document)
+    return document
+
+
+def load_case(path: str | Path) -> dict[str, Any]:
+    document = parse_json(Path(path).read_text(encoding="utf-8"))
+    validate_case(document)
+    return document
+
+
+def serialize_case(document: Mapping[str, Any]) -> str:
+    validate_case(document)
+    return canonical_json(document) + "\n"
+
+
+def save_case(path: str | Path, document: Mapping[str, Any]) -> None:
+    Path(path).write_text(serialize_case(document), encoding="utf-8")
+
+
+def _append(document: Mapping[str, Any], field: str, value: Any) -> dict[str, Any]:
+    validate_case(document)
+    result = copy.deepcopy(dict(document))
+    result["case"][field].append(_dict(value))
+    validate_case(result)
+    return result
+
+
+def add_obligation(document: Mapping[str, Any], obligation: ResearchObligation | Mapping[str, Any]) -> dict[str, Any]:
+    return _append(document, "obligations", obligation)
+
+
+def record_artifact(document: Mapping[str, Any], artifact: ArtifactRefRecord | Mapping[str, Any]) -> dict[str, Any]:
+    return _append(document, "artifact_refs", artifact)
+
+
+def record_evidence_request(document: Mapping[str, Any], request: EvidenceRequest | Mapping[str, Any]) -> dict[str, Any]:
+    return _append(document, "evidence_requests", request)
+
+
+def record_claim_candidate(document: Mapping[str, Any], claim: ClaimCandidate | Mapping[str, Any]) -> dict[str, Any]:
+    return _append(document, "claim_candidates", claim)
+
+
+def request_review(document: Mapping[str, Any], request: ReviewRequest | Mapping[str, Any]) -> dict[str, Any]:
+    entry = {"request": _dict(request), "decision": None}
+    return _append(document, "reviews", entry)
+
+
+def record_review(
+    document: Mapping[str, Any],
+    decision: ReviewDecision | Mapping[str, Any],
+    repair_obligations: list[ResearchObligation | Mapping[str, Any]] | None = None,
+) -> dict[str, Any]:
+    validate_case(document)
+    if repair_obligations is not None and not isinstance(repair_obligations, (list, tuple)):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.repair_obligations", "must be a list or tuple")]
+        )
+    result = copy.deepcopy(dict(document))
+    decision_record = _dict(decision)
+    review_id = decision_record.get("review_id")
+    existing_repair_ids = decision_record.get("repair_obligation_ids")
+    if existing_repair_ids is not None and not isinstance(existing_repair_ids, list):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.decision.repair_obligation_ids", "must be a list")]
+        )
+    entries = result["case"]["reviews"]
+    matching = [entry for entry in entries if entry.get("request", {}).get("review_id") == review_id]
+    if len(matching) != 1:
+        raise ContractError(
+            [
+                ValidationIssue("UNKNOWN_REF", "$.case.reviews", "review decision has no unique request")
+            ]
+        )
+    if matching[0].get("decision") is not None:
+        raise ContractError(
+            [ValidationIssue("DUPLICATE_ID", "$.case.reviews", "review decision is append-only and cannot be overwritten")]
+        )
+    if repair_obligations:
+        if existing_repair_ids is None:
+            decision_record["repair_obligation_ids"] = []
+        for repair in repair_obligations:
+            result = add_obligation(result, repair)
+            decision_record["repair_obligation_ids"].append(_dict(repair)["obligation_id"])
+    for entry in result["case"]["reviews"]:
+        if entry.get("request", {}).get("review_id") == review_id:
+            entry["decision"] = decision_record
+            break
+    validate_case(result)
+    return result
+
+
+def amend_question(
+    document: Mapping[str, Any],
+    *,
+    frozen_validation_summary: Mapping[str, Any],
+    reason: str,
+    amendment_id: str,
+) -> dict[str, Any]:
+    validate_case(document)
+    result = copy.deepcopy(dict(document))
+    question = result["case"]["question_contract"]
+    if not isinstance(frozen_validation_summary, Mapping):
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", "must be an object")]
+        )
+    new_summary = copy.deepcopy(dict(frozen_validation_summary))
+    current_digest = question["validation_summary_digest"]
+    try:
+        next_digest = sha256_json(new_summary)
+    except (TypeError, ValueError) as exc:
+        raise ContractError(
+            [ValidationIssue("MALFORMED_STATE", "$.frozen_validation_summary", f"not canonical JSON ({type(exc).__name__})")]
+        ) from exc
+    question["current_validation_summary"] = new_summary
+    question["validation_summary_digest"] = next_digest
+    question["version"] += 1
+    question["amendments"].append(
+        {
+            "amendment_id": amendment_id,
+            "from_digest": current_digest,
+            "to_digest": next_digest,
+            "reason": reason,
+            "version": question["version"],
+        }
+    )
+    validate_case(result)
+    return result
+
+
+def set_case_state(document: Mapping[str, Any], state: str) -> dict[str, Any]:
+    validate_case(document)
+    result = copy.deepcopy(dict(document))
+    result["case"]["case_state"] = state
+    validate_case(result)
+    return result
+
+
+def compute_case_status(document: Mapping[str, Any]) -> str:
+    """Return an operational disposition without inferring truth."""
+
+    validate_case(document)
+    case = document["case"]
+    if case["case_state"] != "OPEN":
+        return case["case_state"]
+    evidence_states = {request["retrieval_state"] for request in case["evidence_requests"]}
+    if "BLOCKED" in evidence_states:
+        return "BLOCKED_BY_EVIDENCE_ACCESS"
+    for review in case["reviews"]:
+        decision = review.get("decision")
+        if decision and decision.get("verdict") == "MATERIAL_REPAIR_REQUIRED":
+            repairs = set(decision.get("repair_obligation_ids", []))
+            satisfied = {
+                obligation["obligation_id"]
+                for obligation in case["obligations"]
+                if obligation.get("status") in {"SATISFIED_WITH_SCOPE", "SATISFIED_WITH_RESIDUALS", "CLOSED_NO_RESULT"}
+            }
+            if not repairs or not repairs.issubset(satisfied):
+                return "OPEN_WITH_REPAIR_OBLIGATIONS"
+    if any(obligation.get("status") in {"OPEN", "READY", "WAITING_DEPENDENCY", "WAITING_REVIEW", "BLOCKED_TOOL_OR_ACCESS"} for obligation in case["obligations"]):
+        return "OPEN"
+    if case["reviews"]:
+        if any(review.get("decision", {}).get("residuals") for review in case["reviews"] if review.get("decision")):
+            return "HANDOFF_READY_WITH_EXPLICIT_RESIDUALS"
+        return "HANDOFF_READY_WITH_BOUNDED_RESULTS"
+    return "OPEN"
+
+
+def prepare_handoff(
+    document: Mapping[str, Any],
+    *,
+    bundle_id: str,
+    bundle_type: str,
+    receiving_authority: str,
+    object_refs: list[str] | tuple[str, ...],
+    allowed_claims: list[str] | tuple[str, ...],
+    noncanonical_status: str,
+    scope: str,
+    prohibited_inference: list[str] | tuple[str, ...],
+    residuals: list[str] | tuple[str, ...],
+    independent_review_required: bool = True,
+) -> dict[str, Any]:
+    validate_case(document)
+    object_refs = _string_sequence(object_refs, "$.object_refs")
+    allowed_claims = _string_sequence(allowed_claims, "$.allowed_claims")
+    prohibited_inference = _string_sequence(prohibited_inference, "$.prohibited_inference")
+    residuals = _string_sequence(residuals, "$.residuals")
+    case = document["case"]
+    known = {
+        case["case_id"],
+        *[item["obligation_id"] for item in case["obligations"]],
+        *[item["artifact_id"] for item in case["artifact_refs"]],
+        *[item["candidate_id"] for item in case["claim_candidates"]],
+        *[item["request"]["review_id"] for item in case["reviews"]],
+    }
+    unknown = sorted(set(object_refs) - known)
+    if unknown:
+        raise ContractError([ValidationIssue("UNKNOWN_REF", "$.object_refs", f"unknown handoff refs: {unknown}")])
+    bundle = HandoffBundle(
+        bundle_id=bundle_id,
+        bundle_type=bundle_type,
+        receiving_authority=receiving_authority,
+        object_refs=tuple(object_refs),
+        allowed_claims=tuple(allowed_claims),
+        noncanonical_status=noncanonical_status,
+        scope=scope,
+        prohibited_inference=tuple(prohibited_inference),
+        residuals=tuple(residuals),
+        independent_review_required=independent_review_required,
+    ).as_dict()
+    validate_handoff(bundle)
+    return bundle
+
+
+def status_snapshot(document: Mapping[str, Any]) -> dict[str, Any]:
+    validate_case(document)
+    case = document["case"]
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "case_id": case["case_id"],
+        "declared_case_state": case["case_state"],
+        "computed_status": compute_case_status(document),
+        "obligation_count": len(case["obligations"]),
+        "artifact_ref_count": len(case["artifact_refs"]),
+        "evidence_request_count": len(case["evidence_requests"]),
+        "claim_candidate_count": len(case["claim_candidates"]),
+        "review_count": len(case["reviews"]),
+    }

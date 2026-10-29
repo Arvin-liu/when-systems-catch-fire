@@ -1,0 +1,14 @@
+{
+  "allowed_statuses": [
+    "KNOWN_EQUIVALENT_FOUND",
+    "PARTIAL_PRECEDENT_FOUND",
+    "NO_EQUIVALENT_FOUND_IN_BOUNDED_SEARCH",
+    "PRECEDENT_SEARCH_UNDERDETERMINED"
+  ],
+  "bounded_search_not_run": true,
+  "epistemic_ceiling": "absence of trigger is not evidence that no public precedent exists",
+  "high_gate_candidate_count": 0,
+  "status": "NO_HIGH_GATE_CANDIDATE_TO_TRIGGER_BOUNDED_SEARCH",
+  "task_id": "IGNITION-20260908-165",
+  "trigger": "search only after a CD-X candidate passes every high-gate item"
+}

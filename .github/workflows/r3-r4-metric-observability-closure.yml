@@ -10,9 +10,9 @@ on:
     paths:
       - '.github/workflows/r3-r4-metric-observability-closure.yml'
       - 'arr_metric_correction/**'
-      - 'tests/adaptive_relational_runtime/test_metric_correction.py'
+      - 'ignition/tests/adaptive_relational_runtime/test_metric_correction.py'
       - 'tools/generate_metric_closure.py'
-      - 'docs/architecture/arr-r3-r4-metric-closure/**'
+      - 'ignition/docs/architecture/arr-r3-r4-metric-closure/**'
       - 'requirements-r4.txt'
   push:
     branches:
@@ -35,9 +35,9 @@ jobs:
           python-version: '3.12'
       - run: python3 -m pip install -r requirements-r4.txt
       - name: Run correction-layer tests (fail-closed)
-        run: python3 -m pytest tests/adaptive_relational_runtime/test_metric_correction.py -q
+        run: python3 -m pytest ignition/tests/adaptive_relational_runtime/test_metric_correction.py -q
       - name: Regenerate and verify deterministic public artifacts
         run: |
           python3 tools/generate_metric_closure.py
-          git diff --exit-code docs/architecture/arr-r3-r4-metric-closure/ || \
+          git diff --exit-code ignition/docs/architecture/arr-r3-r4-metric-closure/ || \
             (echo "Public artifacts are not deterministic / out of date"; exit 1)
