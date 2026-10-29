@@ -29,7 +29,7 @@
     "identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]},
     "expected_task_branch": {"$ref": "#/$defs/nonblank"},
     "expected_receipt_branch": {"$ref": "#/$defs/nonblank"},
-    "draft_pr_only": {"const": true},
+    "draft_pr_only": {"type": "boolean"},
     "owner_authorization_required_for_ready_merge_or_close": {"const": true},
     "required_release_ref": {"const": "refs/heads/main"},
     "no_owner_intermediate": {"const": true},
