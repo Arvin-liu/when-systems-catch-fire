@@ -349,6 +349,16 @@
   - 可搜索名称：IMPLICIT-B33F79DBF3F44907 / "title": "AI 泛化能力从何而来", / IMPLICIT-B33F79DBF3F44907 / IMPLICIT-07E05004ADD40632
   - 来源：`data/classic_problems_benchmark.json`
   - 依赖：—；被引用：—
+- ["title": "caller attempts to activate the candidate gate"](../../../docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3BCDA9D4D17EF0D8 / "title": "caller attempts to activate the candidate gate" / IMPLICIT-3BCDA9D4D17EF0D8 / IMPLICIT-8BA4D8971092BC67
+  - 来源：`docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json`
+  - 依赖：—；被引用：—
+- ["title": "caller attempts to activate the candidate gate"](../../../docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8BA4D8971092BC67 / "title": "caller attempts to activate the candidate gate" / IMPLICIT-8BA4D8971092BC67 / IMPLICIT-3BCDA9D4D17EF0D8
+  - 来源：`docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json`
+  - 依赖：—；被引用：—
 - ["title": "Compression Integrity Gate",](../../../analysis/corpus-relation/corpus_relation_graph.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-487DCE616663451A / "title": "Compression Integrity Gate", / IMPLICIT-487DCE616663451A / IMPLICIT-69D73B50BAB8CA46
@@ -633,6 +643,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DCDFFCE68B387298 / "title": "LoRA: Low-Rank Adaptation of Large Language Models", / IMPLICIT-DCDFFCE68B387298 / IMPLICIT-1DE0E55C89738A4A
   - 来源：`data/external-research/121-fulltext-resolver/121q2/family-synthesis/F5.json`
+  - 依赖：—；被引用：—
+- ["title": "machine gate binds the exact explicit case id set"](../../../docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A04B8F627727094A / "title": "machine gate binds the exact explicit case id set" / IMPLICIT-A04B8F627727094A / IMPLICIT-DE4F9599C26DC1D5
+  - 来源：`docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json`
+  - 依赖：—；被引用：—
+- ["title": "machine gate binds the exact explicit case id set"](../../../docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DE4F9599C26DC1D5 / "title": "machine gate binds the exact explicit case id set" / IMPLICIT-DE4F9599C26DC1D5 / IMPLICIT-A04B8F627727094A
+  - 来源：`docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json`
   - 依赖：—；被引用：—
 - ["title": "MetaGPT: Merging Large Language Models Using Model Exclusive Task Arithmetic",](../../../data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-040.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1079,6 +1099,16 @@
   - 可搜索名称：IMPLICIT-FFBBCC76EADCD98A / # AI external knowledge vs internal integration / IMPLICIT-FFBBCC76EADCD98A
   - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.md`
   - 依赖：—；被引用：—
+- [# ARR R3/R4 Metric Semantics & Observability Closure — ADR](../../../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2579EA6537BAD45F / # ARR R3/R4 Metric Semantics & Observability Closure — ADR / IMPLICIT-2579EA6537BAD45F
+  - 来源：`docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`
+  - 依赖：—；被引用：—
+- [# ARR R4 — Metric Disclosure & Relay Receipt Repair R1 \(External Review Package\)](../../../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AF7E49F669051482 / # ARR R4 — Metric Disclosure & Relay Receipt Repair R1 \(External Review Package\) / IMPLICIT-AF7E49F669051482
+  - 来源：`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`
+  - 依赖：—；被引用：—
 - [# C-0705｜可选集动力学×商业模式](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DF15AF38B89823E3 / # C-0705｜可选集动力学×商业模式 / IMPLICIT-DF15AF38B89823E3
@@ -1469,15 +1499,20 @@
   - 可搜索名称：IMPLICIT-FB4B7B569D425C7A / ## 3. GrowthSignal contract and the EVOLVE-candidate gate / IMPLICIT-FB4B7B569D425C7A
   - 来源：`docs/architecture/self-growth-control-plane.md`
   - 依赖：—；被引用：—
-- [## 3. Mandatory metric contradictions \(all resolved\)](../../../docs/architecture/arr-r4-self-reflection.md)
+- [## 3. Mandatory metric contradictions \(all attributed; underlying defects distinguished from repairs\)](../../../docs/architecture/arr-r4-self-reflection.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7645A0927D7C2998 / ## 3. Mandatory metric contradictions \(all resolved\) / IMPLICIT-7645A0927D7C2998
+  - 可搜索名称：IMPLICIT-7987F2ED2C70C3BB / ## 3. Mandatory metric contradictions \(all attributed; underlying defects distinguished from repairs\) / IMPLICIT-7987F2ED2C70C3BB
   - 来源：`docs/architecture/arr-r4-self-reflection.md`
   - 依赖：—；被引用：—
 - [## 3. Status Model](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BAF019A0F0A0451E / ## 3. Status Model / IMPLICIT-BAF019A0F0A0451E
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [## 3. 具身主体模型（七视图）](../../../docs/architecture/ignition-life-integrity-r5a-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AA92DD827242EA36 / ## 3. 具身主体模型（七视图） / IMPLICIT-AA92DD827242EA36
+  - 来源：`docs/architecture/ignition-life-integrity-r5a-r1.md`
   - 依赖：—；被引用：—
 - [## 4. Function OS interop — adapter, not executor](../../../docs/architecture/adaptive-relational-runtime-interop.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2467,40 +2502,5 @@
 - [### \[#131｜学科训练的遮蔽作用 / 学科训练的obscuration作用\]\(docs/zh/cases/items/C-0131.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BC33BB2E3183645E / ### \[#131｜学科训练的遮蔽作用 / 学科训练的obscuration作用\]\(docs/zh/cases/items/C-0131.md\) / IMPLICIT-BC33BB2E3183645E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#134｜8格概率\]\(docs/zh/cases/items/C-0134.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-015963A312D58F7A / ### \[#134｜8格概率\]\(docs/zh/cases/items/C-0134.md\) / IMPLICIT-015963A312D58F7A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#138｜学科训练的遮蔽作用 / 学科训练的obscuration作用\]\(docs/zh/cases/items/C-0138.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-721FDD652C45E182 / ### \[#138｜学科训练的遮蔽作用 / 学科训练的obscuration作用\]\(docs/zh/cases/items/C-0138.md\) / IMPLICIT-721FDD652C45E182
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#152｜罗森塔尔"潜力生"标签实验\]\(docs/zh/cases/items/C-0152.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A657F69968145A15 / ### \[#152｜罗森塔尔"潜力生"标签实验\]\(docs/zh/cases/items/C-0152.md\) / IMPLICIT-A657F69968145A15
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#160｜同质性遮蔽 / 同质性obscuration\]\(docs/zh/cases/items/C-0160.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4E962CED233F6044 / ### \[#160｜同质性遮蔽 / 同质性obscuration\]\(docs/zh/cases/items/C-0160.md\) / IMPLICIT-4E962CED233F6044
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#162｜定投指数基金\]\(docs/zh/cases/items/C-0162.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-163309D95418595A / ### \[#162｜定投指数基金\]\(docs/zh/cases/items/C-0162.md\) / IMPLICIT-163309D95418595A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#174｜忆秦娥纯拉力上位（外驱转自驱窗口）\]\(docs/zh/cases/items/C-0174.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8162042276C83EF0 / ### \[#174｜忆秦娥纯拉力上位（外驱转自驱窗口）\]\(docs/zh/cases/items/C-0174.md\) / IMPLICIT-8162042276C83EF0
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#178｜可靠性工程β因子模型在高β条件下的失效\]\(docs/zh/cases/items/C-0178.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A14EF836410B2875 / ### \[#178｜可靠性工程β因子模型在高β条件下的失效\]\(docs/zh/cases/items/C-0178.md\) / IMPLICIT-A14EF836410B2875
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

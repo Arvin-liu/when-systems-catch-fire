@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f0947c9dacb64078 / 认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订](../../ASSET-CARDS.md#asset-hr-0a5e4005a933ea19)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：认知迁移编辑修订 / zhiyuan-writing-cognitive-migration-editorial-revision
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订：Owner 决定与独立审查入口](../../ASSET-CARDS.md#asset-hr-deb3e834ad440e87)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：认知迁移编辑修订：Owner 决定与独立审查入口 / zhiyuan-writing-cognitive-migration-editorial-revision-review
+  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订：可恢复 before/after 范例](../../ASSET-CARDS.md#asset-hr-75430bb574c9c15b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：认知迁移编辑修订：可恢复 before/after 范例 / zhiyuan-writing-cognitive-migration-editorial-revision-examples
+  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订：来源与边界记录](../../ASSET-CARDS.md#asset-hr-9094b2cb638397a8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：认知迁移编辑修订：来源与边界记录 / cognitive-migration-editorial-revision-source
+  - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
+  - 依赖：—；被引用：—
 - [认知黑洞案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a29e905c2b9281df / 认知黑洞案例验证。
@@ -98,6 +123,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c420005ce99191f4 / 通过六组件（C / M / I_iso / L_meta / G_δ / P_meta）帮助人和 AI 发现不同领域共享的**结构性规律**。
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [长期反馈必须分别记录 observation / decision / intervention / review time、同意版本、证据链、重开触发、退役状态、回滚状态和残余伤害。](../../../docs/governance/life-integrity-charter-candidate-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-776616e0f007a962 / 长期反馈必须分别记录 observation / decision / intervention / review time、同意版本、证据链、重开触发、退役状态、回滚状态和残余伤害。
+  - 来源：`docs/governance/life-integrity-charter-candidate-r1.md`
   - 依赖：—；被引用：—
 - [集体行动如何可能](../../../data/foundation/claims/claims.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`

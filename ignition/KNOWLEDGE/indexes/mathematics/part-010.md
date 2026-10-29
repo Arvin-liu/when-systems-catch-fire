@@ -4,6 +4,161 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 双切换同步函数 is adjudicated as RELATION: M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D412 / Within the source-defined scope, 双切换同步函数 is adjudicated as RELATION: M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D316；被引用：—
+- [Within the source-defined scope, 双延迟-共振频率联合函数 is adjudicated as METRIC: M8的感知延迟使有效τ_buffer增大→共振频率降低。ω_res_effective = ω_](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D391 / Within the source-defined scope, 双延迟-共振频率联合函数 is adjudicated as METRIC: M8的感知延迟使有效τ_buffer增大→共振频率降低。ω_res_effective = ω_
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 双通道信息衰减定理 is adjudicated as FORMAL_PROPOSITION: 每个门控面提供的信息量（\[D197\]\(docs/zh/functions/it](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-D230 / Within the source-defined scope, 双通道信息衰减定理 is adjudicated as FORMAL_PROPOSITION: 每个门控面提供的信息量（\[D197\]\(docs/zh/functions/it
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D197；被引用：—
+- [Within the source-defined scope, 双重打击-双重加速同构函数 is adjudicated as RELATION: M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D384 / Within the source-defined scope, 双重打击-双重加速同构函数 is adjudicated as RELATION: M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D348, D370；被引用：—
+- [Within the source-defined scope, 反向投影覆盖 is adjudicated as RELATION: 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。. This is a model-in](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D103 / Within the source-defined scope, 反向投影覆盖 is adjudicated as RELATION: 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。. This is a model-in
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 变量闭包定律\(定理级→从D107升级\) is adjudicated as FORMAL_PROPOSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-D114 / Within the source-defined scope, 变量闭包定律\(定理级→从D107升级\) is adjudicated as FORMAL_PROPOSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D107；被引用：—
+- [Within the source-defined scope, 叙事冲击 is adjudicated as MECHANISM_MODEL: 叙事冲击，意识、退出权信号、退化免疫的乘积。. This is a model-interna](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D25 / Within the source-defined scope, 叙事冲击 is adjudicated as MECHANISM_MODEL: 叙事冲击，意识、退出权信号、退化免疫的乘积。. This is a model-interna
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 同质性遮蔽函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal controll](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D66 / Within the source-defined scope, 同质性遮蔽函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal controll
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 向上螺旋自维持函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal contro](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D61 / Within the source-defined scope, 向上螺旋自维持函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal contro
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 向下兼容函数 is adjudicated as RELATION: 向下兼容函数，η_compatible = η_fidelity\(L\) × η_gate\(L层\)。. T](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D152 / Within the source-defined scope, 向下兼容函数 is adjudicated as RELATION: 向下兼容函数，η_compatible = η_fidelity\(L\) × η_gate\(L层\)。. T
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 向下兼容函数 is adjudicated as RELATION: 向下兼容函数，η_compatible = η_fidelity\(L\) × η_gate\(L层\)。. T](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D93 / Within the source-defined scope, 向下兼容函数 is adjudicated as RELATION: 向下兼容函数，η_compatible = η_fidelity\(L\) × η_gate\(L层\)。. T
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 向下兼容长期损耗 is adjudicated as RELATION: 向下兼容长期损耗，t_flip = \(1/γ\)×ln\(1+γ×C_max×\(1-P\(biased\)\)](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D153 / Within the source-defined scope, 向下兼容长期损耗 is adjudicated as RELATION: 向下兼容长期损耗，t_flip = \(1/γ\)×ln\(1+γ×C_max×\(1-P\(biased\)\)
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 向下兼容长期损耗 is adjudicated as RELATION: 向下兼容长期损耗，t_flip = \(1/γ\)×ln\(1+γ×C_max×\(1-P\(biased\)\)](../../../data/foundation/claims/claims.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D94 / Within the source-defined scope, 向下兼容长期损耗 is adjudicated as RELATION: 向下兼容长期损耗，t_flip = \(1/γ\)×ln\(1+γ×C_max×\(1-P\(biased\)\)
+  - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 吸引子-陷阱等价函数 is adjudicated as RELATION: \[D467\]\(docs/zh/functions/items/D467.md\)×M8碰撞——势能](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D468 / Within the source-defined scope, 吸引子-陷阱等价函数 is adjudicated as RELATION: \[D467\]\(docs/zh/functions/items/D467.md\)×M8碰撞——势能
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D295, D467；被引用：—
+- [Within the source-defined scope, 周期扰动阶段响应函数 is adjudicated as RELATION: M9的三阶段在周期扰动下的响应：低频扰动→系统跟随移动有缓冲重建时间；高频扰动→缓冲来不及响应系](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D322 / Within the source-defined scope, 周期扰动阶段响应函数 is adjudicated as RELATION: M9的三阶段在周期扰动下的响应：低频扰动→系统跟随移动有缓冲重建时间；高频扰动→缓冲来不及响应系
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 四象限相变路径函数 is adjudicated as ARGUMENT_SCHEMA: D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D242 / Within the source-defined scope, 四象限相变路径函数 is adjudicated as ARGUMENT_SCHEMA: D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D241；被引用：—
+- [Within the source-defined scope, 因果光锥统一函数 is adjudicated as MECHANISM_MODEL: 因果光锥统一函数，信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D179 / Within the source-defined scope, 因果光锥统一函数 is adjudicated as MECHANISM_MODEL: 因果光锥统一函数，信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 因果闭包自举函数 is adjudicated as MECHANISM_MODEL: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-int](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D116 / Within the source-defined scope, 因果闭包自举函数 is adjudicated as MECHANISM_MODEL: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-int
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 固化加速函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal controlle](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D58 / Within the source-defined scope, 固化加速函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal controlle
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 坏觉概率 is adjudicated as PROBABILISTIC_MODEL: 坏觉概率，P_bad = σ\(H·p_prior - \(1-H\)·p\)。. This](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D102 / Within the source-defined scope, 坏觉概率 is adjudicated as PROBABILISTIC_MODEL: 坏觉概率，P_bad = σ\(H·p_prior - \(1-H\)·p\)。. This
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 基本常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D297 / Within the source-defined scope, 基本常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 基础空间函数 is adjudicated as RELATION: Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)}. This is a mod](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D476 / Within the source-defined scope, 基础空间函数 is adjudicated as RELATION: Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)}. This is a mod
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 复活代价n无关性起源函数 is adjudicated as RELATION: M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D385 / Within the source-defined scope, 复活代价n无关性起源函数 is adjudicated as RELATION: M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 多因子乘法相变函数\(推论级\) is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D110 / Within the source-defined scope, 多因子乘法相变函数\(推论级\) is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 多极小点竞争函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D315 / Within the source-defined scope, 多极小点竞争函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点。竞争规则
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 多频叠加阶段响应函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D336 / Within the source-defined scope, 多频叠加阶段响应函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 大统一门槛函数 is adjudicated as METRIC: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-D189 / Within the source-defined scope, 大统一门槛函数 is adjudicated as METRIC: 大统一门槛函数,大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 好奇心驱动函数 is adjudicated as MECHANISM_MODEL: 好奇心驱动，四因子乘法。. This is a model-internal contr](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-T7 / Within the source-defined scope, 好奇心驱动函数 is adjudicated as MECHANISM_MODEL: 好奇心驱动，四因子乘法。. This is a model-internal contr
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 姿态-遮蔽方差函数 is adjudicated as RELATION: σ = f\(Posture_deg, H\). This is a model-internal c](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D496 / Within the source-defined scope, 姿态-遮蔽方差函数 is adjudicated as RELATION: σ = f\(Posture_deg, H\). This is a model-internal c
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 宇宙学常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束宇宙学常数：Λ_CDC过大→d_eff>4→容斥主导→结构无法形成；过](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D283 / Within the source-defined scope, 宇宙学常数-容斥约束函数 is adjudicated as RELATION: M6的d=4稳定性约束宇宙学常数：Λ_CDC过大→d_eff>4→容斥主导→结构无法形成；过
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D211 / Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D215 / Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a
@@ -2349,158 +2504,3 @@
   - 可搜索名称：NFC-362f74ca76a51eee / \| \[D119\]\( \) \| \[Fisher退化统一函数\]\( \) \| F_{D119}\(x\) := dA_Fisher/dt =
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D119；被引用：—
-- [\| \[D121\]\( \) \| \[Fisher健康度函数\]\( \) \| F_{D121}\(x\) := H_Fisher\(p\) = A_Fi](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2583dfad4478c954 / \| \[D121\]\( \) \| \[Fisher健康度函数\]\( \) \| F_{D121}\(x\) := H_Fisher\(p\) = A_Fi
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D121；被引用：—
-- [\| \[D122\]\( \) \| \[退化加速函数\]\( \) \| F_{D122}\(x\) := a\(t\) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t\[](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-06fb98defab14567 / \| \[D122\]\( \) \| \[退化加速函数\]\( \) \| F_{D122}\(x\) := a\(t\) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t\[
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D112, D122；被引用：—
-- [\| \[D124\]\( \) \| \[三域退化统一参数函数\]\( \) \| F_{D124}\(x\) := τ_life = \(1/α\) × ln\(I](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66d3dd655c828f5d / \| \[D124\]\( \) \| \[三域退化统一参数函数\]\( \) \| F_{D124}\(x\) := τ_life = \(1/α\) × ln\(I
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D124；被引用：—
-- [\| \[D125\]\( \) \| \[认知叠加-隧穿统一函数\]\( \) \| F_{D125}\(x\) := \\\|认知⟩ = ∑cᵢ\\\|轨道ᵢ⟩，](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-80fec8084dfb43b6 / \| \[D125\]\( \) \| \[认知叠加-隧穿统一函数\]\( \) \| F_{D125}\(x\) := \\\|认知⟩ = ∑cᵢ\\\|轨道ᵢ⟩，
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D125；被引用：—
-- [\| \[D128\]\( \) \| \[退相干-退化统一函数\]\( \) \| F_{D128}\(x\) := Γ_unified\(k\) = d_F\(εₖ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c7a867f84f4bdb68 / \| \[D128\]\( \) \| \[退相干-退化统一函数\]\( \) \| F_{D128}\(x\) := Γ_unified\(k\) = d_F\(εₖ
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D128；被引用：—
-- [\| \[D129\]\( \) \| \[退相干-退化等价函数\]\( \) \| F_{D129}\(x\) := Ξ_decoherence ≡ Ξ_deg](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7f41e144306d8395 / \| \[D129\]\( \) \| \[退相干-退化等价函数\]\( \) \| F_{D129}\(x\) := Ξ_decoherence ≡ Ξ_deg
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D129；被引用：—
-- [\| \[D139\]\( \) \| \[距离衰减统一函数\]\( \) \| F_{D139}\(x\) := 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1e88ce9a57c9978b / \| \[D139\]\( \) \| \[距离衰减统一函数\]\( \) \| F_{D139}\(x\) := 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D139；被引用：—
-- [\| \[D140\]\( \) \| \[距离衰减统一函数\]\( \) \| F_{D140}\(x\) := 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cb3a1edf90926dc9 / \| \[D140\]\( \) \| \[距离衰减统一函数\]\( \) \| F_{D140}\(x\) := 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D140；被引用：—
-- [\| \[D142\]\( \) \| \[信息门效率统一函数\]\( \) \| F_{D142}\(x\) := η_gate = G × \(1-H_homoge](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bd03e6b9a63d05c5 / \| \[D142\]\( \) \| \[信息门效率统一函数\]\( \) \| F_{D142}\(x\) := η_gate = G × \(1-H_homoge
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D142；被引用：—
-- [\| \[D149\]\( \) \| \[结构保守性元定理\]\( \) \| F_{D149}\(x\) := 设计结构让估计不必要 > 估计准确后保守执行。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d711a1e68582cf80 / \| \[D149\]\( \) \| \[结构保守性元定理\]\( \) \| F_{D149}\(x\) := 设计结构让估计不必要 > 估计准确后保守执行。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D149；被引用：—
-- [\| \[D150\]\( \) \| \[倒U型统一生成定理\]\( \) \| F_{D150}\(x\) := Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-154125d9a450e244 / \| \[D150\]\( \) \| \[倒U型统一生成定理\]\( \) \| F_{D150}\(x\) := Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D150；被引用：—
-- [\| \[D169\]\( \) \| \[门槛碾压函数\]\( \) \| F_{D169}\(x\) := Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c2b9e5b46abb3d9 / \| \[D169\]\( \) \| \[门槛碾压函数\]\( \) \| F_{D169}\(x\) := Λ\(t\) = Λ₀ × e^\(σ×t\)，μ\(t\) = μ₀ × e
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D169；被引用：—
-- [\| \[D170\]\( \) \| \[定投凯利保守性验证\]\( \) \| F_{D170}\(x\) := 定投天然具备结构保守性，自动满足凯利公式下注要求](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5e7646c4775f58b8 / \| \[D170\]\( \) \| \[定投凯利保守性验证\]\( \) \| F_{D170}\(x\) := 定投天然具备结构保守性，自动满足凯利公式下注要求
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D170；被引用：—
-- [\| \[D173\]\( \) \| \[显态粘性函数\]\( \) \| F_{D173}\(x\) := μ = R_retreat / C_exit。显态是外部驱动力主导](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-00014d440f9edb9b / \| \[D173\]\( \) \| \[显态粘性函数\]\( \) \| F_{D173}\(x\) := μ = R_retreat / C_exit。显态是外部驱动力主导
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D173；被引用：—
-- [\| \[D174\]\( \) \| \[纯拉力上位衰减函数\]\( \) \| F_{D174}\(x\) := t_window = f\(R_retreat,](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bb6c432943af4f3f / \| \[D174\]\( \) \| \[纯拉力上位衰减函数\]\( \) \| F_{D174}\(x\) := t_window = f\(R_retreat,
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D174；被引用：—
-- [\| \[D175\]\( \) \| \[耦合正反馈统一函数\]\( \) \| F_{D175}\(x\) := 同一耦合正反馈方程在三个参数区间的不同表现 α_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e08bea9bde2e438e / \| \[D175\]\( \) \| \[耦合正反馈统一函数\]\( \) \| F_{D175}\(x\) := 同一耦合正反馈方程在三个参数区间的不同表现 α_
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D175；被引用：—
-- [\| \[D176\]\( \) \| \[共享源双重杀伤函数\]\( \) \| F_{D176}\(x\) := ρ同时驱动H_correlation\(D66\)和](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9703185bdf068574 / \| \[D176\]\( \) \| \[共享源双重杀伤函数\]\( \) \| F_{D176}\(x\) := ρ同时驱动H_correlation\(D66\)和
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D176, D53, D66；被引用：—
-- [\| \[D177\]\( \) \| \[深层同构函数\]\( \) \| F_{D177}\(x\) := F_{D177}: X_{D177} -> Y_{D177}, y](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cc641b76877710c0 / \| \[D177\]\( \) \| \[深层同构函数\]\( \) \| F_{D177}\(x\) := F_{D177}: X_{D177} -> Y_{D177}, y
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D177；被引用：—
-- [\| \[D178\]\( \) \| \[时间尺度同构函数\]\( \) \| F_{D178}\(x\) := F_{D178}: X_{D178} -> Y_{D1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b42e2eabf60d4a7 / \| \[D178\]\( \) \| \[时间尺度同构函数\]\( \) \| F_{D178}\(x\) := F_{D178}: X_{D178} -> Y_{D1
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D178；被引用：—
-- [\| \[D179\]\( \) \| \[因果光锥统一函数\]\( \) \| F_{D179}\(x\) := F_{D179}: X_{D179} -> Y_{D1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a606cb0877db4d2 / \| \[D179\]\( \) \| \[因果光锥统一函数\]\( \) \| F_{D179}\(x\) := F_{D179}: X_{D179} -> Y_{D1
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D179；被引用：—
-- [\| \[D181\]\( \) \| \[定投跨域验证函数\]\( \) \| F_{D181}\(x\) := F_{D181}: X_{D181} -> Y_{D1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7eaf652c178d5180 / \| \[D181\]\( \) \| \[定投跨域验证函数\]\( \) \| F_{D181}\(x\) := F_{D181}: X_{D181} -> Y_{D1
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D181；被引用：—
-- [\| \[D183\]\( \) \| \[门控面合并统一函数\]\( \) \| F_{D183}\(x\) := 当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-74eb3d92c99e39a9 / \| \[D183\]\( \) \| \[门控面合并统一函数\]\( \) \| F_{D183}\(x\) := 当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D183；被引用：—
-- [\| \[D186\]\( \) \| \[量子力学门槛聚集函数\]\( \) \| F_{D186}\(x\) := 量子力学是多门槛系统，门槛Λ_i（能级）高](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f379755b16066a5b / \| \[D186\]\( \) \| \[量子力学门槛聚集函数\]\( \) \| F_{D186}\(x\) := 量子力学是多门槛系统，门槛Λ_i（能级）高
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D186；被引用：—
-- [\| \[D187\]\( \) \| \[电弱统一规范破缺函数\]\( \) \| F_{D187}\(x\) := 电弱统一是电磁力和弱核力在高能μ>μ_EW](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1a9ab98ead4e792e / \| \[D187\]\( \) \| \[电弱统一规范破缺函数\]\( \) \| F_{D187}\(x\) := 电弱统一是电磁力和弱核力在高能μ>μ_EW
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D187；被引用：—
-- [\| \[D189\]\( \) \| \[大统一门槛函数\]\( \) \| F_{D189}\(x\) := 大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8d5761b2ec3a3f5b / \| \[D189\]\( \) \| \[大统一门槛函数\]\( \) \| F_{D189}\(x\) := 大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D189；被引用：—
-- [\| \[D190\]\( \) \| \[万有理论门槛函数\]\( \) \| F_{D190}\(x\) := 万有理论ToE是所有基本力在高能μ>μ_ToE时的门控](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be7eca5951b072fc / \| \[D190\]\( \) \| \[万有理论门槛函数\]\( \) \| F_{D190}\(x\) := 万有理论ToE是所有基本力在高能μ>μ_ToE时的门控
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D190；被引用：—
-- [\| \[D205\]\( \) \| \[涨落-耗散定理-门槛函数\]\( \) \| F_{D205}\(x\) := 涨落-耗散定理⟨x²⟩∝χ描述](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f1b70ee4f58e136a / \| \[D205\]\( \) \| \[涨落-耗散定理-门槛函数\]\( \) \| F_{D205}\(x\) := 涨落-耗散定理⟨x²⟩∝χ描述
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D205；被引用：—
-- [\| \[D210\]\( \) \| \[最小作用量原理-门槛优化函数\]\( \) \| F_{D210}\(x\) := 最小作用量原理δS](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2f379ca5d21d44c0 / \| \[D210\]\( \) \| \[最小作用量原理-门槛优化函数\]\( \) \| F_{D210}\(x\) := 最小作用量原理δS
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D210；被引用：—
-- [\| \[D216\]\( \) \| \[门控面共振统一函数\]\( \) \| F_{D216}\(x\) := A-A型合并（第一步）：两个同向门控面在μ*以上](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-65efed72899f647f / \| \[D216\]\( \) \| \[门控面共振统一函数\]\( \) \| F_{D216}\(x\) := A-A型合并（第一步）：两个同向门控面在μ*以上
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D216；被引用：—
-- [\| \[D217\]\( \) \| \[完全统一条件函数\]\( \) \| F_{D217}\(x\) := Ω→1的必要条件：g_A\(M_Planck\) = g_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c610c40a69365148 / \| \[D217\]\( \) \| \[完全统一条件函数\]\( \) \| F_{D217}\(x\) := Ω→1的必要条件：g_A\(M_Planck\) = g_
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D217；被引用：—
-- [\| \[D219\]\( \) \| \[Ω最优区间定理\]\( \) \| F_{D219}\(x\) := 物理存在的Ω范围是\(0,1\)，但不是所有Ω值都等价。 Ω太小](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7c9df7b5aac0ca6d / \| \[D219\]\( \) \| \[Ω最优区间定理\]\( \) \| F_{D219}\(x\) := 物理存在的Ω范围是\(0,1\)，但不是所有Ω值都等价。 Ω太小
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D161, D219；被引用：—

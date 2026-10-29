@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-44a1c398c470bbf4"></a>
+## 121Q28S 之元写作法 0.3.0 全项目整合审计
+`CANDIDATE_OR_PENDING_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q28S 之元写作法 0.3.0 全项目整合审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；Claim ceiling: candidatezhiyuanwritingmethod030wholeprojectexpressionfeedbackprojectionimplemented / repositorysynchronizationcompletependingindependentreview；主题：Remote truth and append-only history；origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；existing branch / Draft PR: docs/121q28-embodied-cognitive-leap-writing-method-20260716 / #58
+- 完整阅读：[reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md](../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
+
 <a id="reading-hr-44eb56d76a052dc0"></a>
 ## IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -225,7 +232,7 @@
 ## ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - 1 分钟：This document is the public, non-private R4 report. It contains only counts, distributions, dispositions and structural facts. No note titles, raw text, transcript content, URL lists or reconstructive features appear here; those live only in the 1111 private evidence branch. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1；taskid: ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725；controlcommit: e8530a7d87f13ef09cea58d34f6f548a695d7955；predecessor: R3 (d6719a74859f278b6166b11e6bd5235c2fa46879, PR #126, DRAFT)；terminalverdict: ARRR4WAICSELFREFLECTIONDRAFTAWAITINGEXTERNALREVIEW；authorization boundary: R4 only. No R5, no PROMOTE/EVOLVE/Ready/merge/Main change/force push.
+- 5 分钟：主题：ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1；taskid: ARR-R4-METRIC-DISCLOSURE-RELAY-RECEIPT-REPAIR-R1-RELAY-20260725；controlcommit: e0926ccb53b4bdf7b08bd54c92f440a98c7f7201；predecessor: R3 (d6719a74859f278b6166b11e6bd5235c2fa46879, PR #126, DRAFT) + R4 (PR #127, DRAFT, UNMERGED)；terminalverdict: ARRR4METRICDISCLOSUREANDRELAYRECEIPTREPAIRDRAFTAWAITINGEXTERNALREVIEW；authorization boundary: narrow R4 metric-disclosure + relay-receipt repair only. No R5, no PROMOTE/EVOLVE/Ready/merge/Main change/force push. Frozen R4 (PR #127) and R3 corpus left untouched.
 - 完整阅读：[docs/architecture/arr-r4-self-reflection.md](../../docs/architecture/arr-r4-self-reflection.md)
 
 <a id="reading-hr-52173a553c421e11"></a>
@@ -248,6 +255,13 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Remaining content work queue；Unreviewed registry objects: 1.；Queue path: data/foundation/work-queues/content-proof-queue.jsonl.；Ordering is dependency/risk based, not numeric.；D598 is the only registry object outside the literal root/MF/A/T and title-or-body strong-term scope. It remains PROVISIONAL; no semantic-completion credit is claimed for it.
 - 完整阅读：[reports/foundation-architecture/remaining-content-work-queue-20260713.md](../../reports/foundation-architecture/remaining-content-work-queue-20260713.md)
+
+<a id="reading-hr-531d1eba40f26855"></a>
+## R5-A Night Queue R1 adjudication and narrow repair
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：NIGHTQUEUER1PARTIALSALVAGENOTACCEPTED 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：R5-A Night Queue R1 adjudication and narrow repair；NIGHTQUEUER1PARTIALSALVAGENOTACCEPTED；The Workbuddy queue result at Arvin-liu/1111@a11f410b86a9ab2f9ef6474858dda99c990d198c completed twenty report rounds. That completion count is not an acceptance result. The R5-A source Draft at 0e9d1e5823b41b7e9375e5f634388371b9b024ac / PR #130 remains unaccepted, unmerged, unactivated, and not Current.；Only independently reproducible R5-A gaps are retained. Overflow candidate designs and the R6-first roadmap recommendation are not accepted or promoted. R5-B, R5-C, and R6 remain prohibited and unstarted.；主题：Finding-to-instance closure；The full concrete inputs and evidence objects are generated into docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json. The deterministic per-instance observations are in r5a-narrow-repair-attack-acceptance.json. PASS requires exact identity and successful execution of every named case. A minimum or total count cannot s…
+- 完整阅读：[docs/governance/r5a-night-queue-r1-adjudication.md](../../docs/governance/r5a-night-queue-r1-adjudication.md)
 
 <a id="reading-hr-53733a2aa5cf5dd7"></a>
 ## 碰撞输出报告 · P1 接入烟雾测试
@@ -339,17 +353,3 @@
 - 1 分钟：Live138CompletionValidator was deliberately not run for attempt-138-live-02. The host tool did not leave a recoverable structured result, return code, lease receipt, or durable output capture. Reconstructing the frozen answer would not turn it into an external executor result, so no synthetic res… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260824-138 — Amendment 01 independent validation gate；Live138CompletionValidator was deliberately not run for attempt-138-live-02. The host tool did not leave a recoverable structured result, return code, lease receipt, or durable output capture. Reconstructing the frozen answer would not turn it into an external executor result, so no synthetic result was passed to the validator.；LIVEREADONLYVALIDATEDCOMPLETION=false and LIVEEXTERNALINVOCATION=REMAINSOPEN. This is a negative evidence record, not a child-failure classification.；Claim ceiling: independent validation not run because the required durable structured result was absent; no external truth, production readiness, Owner acceptance, publication, or epistemic acceptance is inferred.
 - 完整阅读：[reports/operations/ignition-138-step10-amendment-01-independent-validation.md](../../reports/operations/ignition-138-step10-amendment-01-independent-validation.md)
-
-<a id="reading-hr-575fd55d43af78d9"></a>
-## External Agent Federation Core R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public order… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：External Agent Federation Core R1；The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public ordered progress; FederatedResultReceipt carries claims plus indepen…；ExternalSessionRef is always pointeronly. An executor's internal history, prompt, hidden reasoning, token usage, memory database or session UI is not canonical Ignition state. Receipt digests cover the unsigned public record and are checked during construction and replay.；The typed records live in agentfederation/contracts.py. The public record schema is federation-core-r1.schema.json. The FederatedExecutor protocol only asks for probe, describe, dispatch, status, cancel and optional-capability resume; it does not prescribe an internal agent loop.
-- 完整阅读：[docs/architecture/federation-core-r1.md](../../docs/architecture/federation-core-r1.md)
-
-<a id="reading-hr-578f793e0ef4f0f6"></a>
-## SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt；Status: SYMBOLICSPHEREREPAIRR1LOCALCOMPLETE；Branch: repair/symbolic-sphere-r1-reference-integrity；Original SYMBOLIC frozen head: 213dced90f1e9b1f1992a148ee10fc0844917490；Q39 repair-r1 frozen head: 99ab601a48dd45972b238e468bc8e3002d648c98；Merge propagation commit: 05976a00a8e86b9dd8fe4d638e791b372ad0af62
-- 完整阅读：[reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md](../../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)

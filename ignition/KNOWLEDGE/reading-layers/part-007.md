@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-7ced45f5b589417b"></a>
+## D2 repair-r2 — R4 freeze
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：prior-repair head f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09 to the real predecessor repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3). 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：D2 repair-r2 — R4 freeze；branch: repair-r2/d2-r2-multihistory-semantics；annotatedtag: archive/d2-repair-r2-frozen-head；base: D2 repair-r1 head 1904628103d8c23133107d501a22e3f17d08221d；direct predecessor: prior repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c (inherited via --no-ff merge of repair-r2/f15-d1-r2-identifiability-semantics)；PR base: repair-r2/f15-d1-r2-identifiability-semantics (prior repair-r2 branch)
+- 完整阅读：[reports/operations/D2-REPAIR-R2-freeze.md](../../reports/operations/D2-REPAIR-R2-freeze.md)
+
+<a id="reading-hr-7d1c593d80794fdb"></a>
+## Agent result: IGNITION-20260907-163
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+- 1 分钟：Completed the research-only Task163 Stage A package from the pinned command source 73cde2ab84d829bb0990f63d957e2152b1a330e4 / blob 521d468829425a210cc763df72456f2c28753d02 / content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Agent result: IGNITION-20260907-163；Completed the research-only Task163 Stage A package from the pinned command source 73cde2ab84d829bb0990f63d957e2152b1a330e4 / blob 521d468829425a210cc763df72456f2c28753d02 / content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1.；The exact Formal base was work/IGNITION-20260907-162@5c66ac502ca331d72c1362000ff5231503dde7ea; PR #212 was OPEN + DRAFT at preflight. The Formal worktree was clean. Missing instructions/CURRENT.md and relay/current remain recorded as STALECONTROLPOINTER / PREFLIGHTRESIDUAL.；Stage A used 18 anonymized, pre-event-only historical packets, a frozen R1 representation and mutation gate, and two byte-identical blind runs. All 12 mutation operations were syntax-trialed with no semantic claim. Capability-equivalent hits were 0/4; P02/P03/P04 hits were 0/3; true holdout hits were 0; strong-negative false positives were 0; N02/N03 remaine…；The failed qualification gates trigger the required stop. Primary verdict: BASISLEARNINGOPERATORNOTVALIDATED; secondary: UNDERDETERMINED. Stage B was not run: no Task162 induction outputs were used, no external or fresh holdout source was acquired, and no O/S/B/R, F0/M1, multi-pass, candidate freeze, or V2 scoring was performed. The package remains research-…
+- 完整阅读：[agent-results/IGNITION-20260907-163-result.md](../../agent-results/IGNITION-20260907-163-result.md)
+
+<a id="reading-hr-7d4413587f58d270"></a>
+## 扩展注释 · P1 接入烟雾测试
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：扩展注释 · P1 接入烟雾测试；对应旧条目：docs/p1-machine-data-collision-workflow-20260708.md 第 8 节「最小试运行建议」。；扩展内容：smoke test 验证了「轻量碰撞」模式——即不读全量两张表正文、仅确认目录存在 + 用 P1 七类数据做辅助索引，也能产出结构化五类输出。这对后续大规模任务有节流价值：先用 P1 数据预筛，再按需深入两张表，避免每次全量读取。；为什么不是新增条目：这是对已定义工作流的用法补充，不是新函数/新案例/新流程。；是否建议更新：建议在 docs/p1-machine-data-collision-workflow-20260708.md 的第 5 节流程中，将「轻量预筛」作为可选前置步骤注明（待人工复核后更新，本轮不修改正式文档）。
+- 完整阅读：[outputs/collisions/20260708-smoke-test/expanded-notes.md](../../outputs/collisions/20260708-smoke-test/expanded-notes.md)
+
 <a id="reading-hr-7dd95da5201b6ec1"></a>
 ## Federation Router R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
@@ -332,24 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260815-120 typed change-propagation impact report；Closure complete: true；Closure hash: 92235c362eb55b43028bd3418e25d8120ec8bde477e5b9f274405e72f49d62dc；Fixpoint iterations: 2；Seeds: agentkernelr0, agentruntimer0, currentstate, foundation, historicalreports, humanknowledgesurfaces, incrementalexecution, l6, projectcomponentregistry, propagationcalculator, propagationtopology, systemmapprojection；Resolved components: 29
 - 完整阅读：[reports/operations/IGNITION-20260815-120-change-propagation-impact.md](../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
-
-<a id="reading-hr-91e80e0c69fb56f2"></a>
-## 认识论结构诱导（ESI）R0
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个观察当作一个待测候选，而不是把它宣布成“AI 被感染”或永久训练。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个观察当作一个待测候选，而不是把它宣布成“AI 被感染”或永久训练。；这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。；主题：Candidate boundary；Epistemic Structural Induction (ESI) 是一个 inference-time / in-context 候选现象：反复、可见、结构化的认识论关系，可能帮助进入该环境的模型 推断局部规则，并在随后回答中改变断言边界。R0 不主张模型权重发生改变， 不主张跨会话永久记忆，也不主张点火发现了 ICL、structural priming 或任何 新的认知科学定律。；机器边界记录在 esi-candidate-boundary-r0.json。 替代解释包括 in-context learning、task inference、structural priming、style imitation、terminology imitation、default alignment 和 contextual mimicry。；主题：What counts as evidence in this repository
-- 完整阅读：[docs/architecture/epistemic-structural-induction-r0.md](../../docs/architecture/epistemic-structural-induction-r0.md)
-
-<a id="reading-hr-91f57f34641602bd"></a>
-## Task 98 remote truth and gap lock
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
-- 1 分钟：Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class function identity, independent mathematical/external evidence axes, ten claim-governance gates, a whole-history deterministic census, an anti-rebound withdrawal ledger or author… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Task 98 remote truth and gap lock；Formal main start: f07413d56a45285a0f0db5b3848cb4a1a37777e2；Control commit: fc3805eb6f6e48f4d46b3c60ed15e92ee3f245be；Task 97 receipt head: 01e18b382259509c5680cd126e82c61a7e861ff3；Task 97 manifest replay: 78/78 SHA-256 entries passed；Formal branch: agent/claim-governance-physics-correction-function-census-r1-20260729
-- 完整阅读：[reports/foundation-architecture/098-remote-truth-and-gap.md](../../reports/foundation-architecture/098-remote-truth-and-gap.md)
-
-<a id="reading-hr-925728869f151733"></a>
-## Soft Context Exposure Contract R0
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：This contract describes one optional, provider-neutral handoff: an external executor may read a bounded Structural Governance Surface before acting. The handoff is advisory context, not a new instruction hierarchy and not an authority channel. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Soft Context Exposure Contract R0；This contract describes one optional, provider-neutral handoff: an external executor may read a bounded Structural Governance Surface before acting. The handoff is advisory context, not a new instruction hierarchy and not an authority channel.；主题：What crosses the boundary；The observable capsule may carry a surface identifier, a transition-relation identifier, a claim ceiling, a Current-state label, unknowns/open obligations, source pointers and an advisory experiment-arm label. It may carry receipt metadata about what was exposed and what was validated.；It does not carry hidden reasoning, a full prompt or token stream, vendor session state, secrets, channel/device state, an approval decision, an Owner decision, a truth decision or an unvalidated external effect.；主题：What does not change
-- 完整阅读：[docs/architecture/soft-context-exposure-contract-r0.md](../../docs/architecture/soft-context-exposure-contract-r0.md)

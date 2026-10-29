@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [“相契”不是把差异取消，也不是把其他主体翻译成单一人类偏好的影子；它是承认差异之后仍愿意建立理解、限制、照护、协商、纠错和退出机制。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-738f3e1ff476809e / “相契”不是把差异取消，也不是把其他主体翻译成单一人类偏好的影子；它是承认差异之后仍愿意建立理解、限制、照护、协商、纠错和退出机制。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [“程序”只能是跨层的有限隐喻；北宋仪式与现代系统没有相同物质、规模或因果。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-043adb95632fe604 / “程序”只能是跨层的有限隐喻；北宋仪式与现代系统没有相同物质、规模或因果。
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [→ outcome / effect evaluation \(baseline + uncertainty, no causal overclaim\)](../../../docs/intervention/q36-int-architecture-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15573cf898bfa3e1 / → outcome / effect evaluation \(baseline + uncertainty, no causal overclaim\)
+  - 来源：`docs/intervention/q36-int-architecture-decision.md`
+  - 依赖：—；被引用：—
+- [→ Q36-OBS residual / Q36-INT mechanism hypothesis supplied as candidate inputs](../../../docs/analogy/q37-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-142163ec00aadfe0 / → Q36-OBS residual / Q36-INT mechanism hypothesis supplied as candidate inputs
+  - 来源：`docs/analogy/q37-interfaces.md`
+  - 依赖：—；被引用：—
+- [→ Q37 classifies, maps, audits counteranalogy & mechanism & transportability](../../../docs/analogy/q37-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-98400347c9f44f67 / → Q37 classifies, maps, audits counteranalogy & mechanism & transportability
+  - 来源：`docs/analogy/q37-interfaces.md`
+  - 依赖：—；被引用：—
+- [└── 事件层：点火事件演化系统（时间-空间-动态统一）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2587e71de69f263a / └── 事件层：点火事件演化系统（时间-空间-动态统一）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [└── 决定能不能做、能不能晋级](../../../data/epistemic-governance/soft-governance-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6babf9cc119bcf33 / └── 决定能不能做、能不能晋级
@@ -999,6 +1029,16 @@
   - 可搜索名称：NFC-f9a8edf675110959 / 传播：** 从 `data/operations/propagation/ -request.json` 登记 changed paths、seed components、dimensions 与 classifications，
   - 来源：`docs/USAGE.md`
   - 依赖：—；被引用：—
+- [传统/宗教材料翻译管线 R5-A R1（Tradition Translation Pipeline R1）](../../ASSET-CARDS.md#asset-hr-7a4fd027adb33d3d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：传统/宗教材料翻译管线 R5-A R1（Tradition Translation Pipeline R1） / tradition-translation-pipeline-r1
+  - 来源：`docs/architecture/tradition-translation-pipeline-r1.md`
+  - 依赖：—；被引用：—
+- [传统解释不自动成为经验机制；](../../../docs/architecture/tradition-translation-pipeline-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-52aa444fbbc602b3 / 传统解释不自动成为经验机制；
+  - 来源：`docs/architecture/tradition-translation-pipeline-r1.md`
+  - 依赖：—；被引用：—
 - [但历史的危险正在这里：我们太容易把结局当作先验知识，抹掉当时人的视野。徽宗并不是站在 1127 年之后作决定。他面对的是自己当时能看到的财政、军政、外交、宫廷和宗教世界；他可能高估了秩序，也可能真诚地认为自己正在恢复一种更高的圣王政治。后来](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ba7275e18624136d / 但历史的危险正在这里：我们太容易把结局当作先验知识，抹掉当时人的视野。徽宗并不是站在 1127 年之后作决定。他面对的是自己当时能看到的财政、军政、外交、宫廷和宗教世界；他可能高估了秩序，也可能真诚地认为自己正在恢复一种更高的圣王政治。后来
@@ -1008,6 +1048,21 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-69af0f4dc03de50b / 但现有材料只是一篇“用户综合 + 节目原文 + 未逐项回读的书目”的编译对象。它能支持“来源如此叙述”“某论证内部可理解”，不能支持兵力数字、5% 阈值、百次冲锋、制度起源、因果箭头或全球罕见性等事实结论。最明显的过度表述，是把 1127
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [体验/机制/疗效分离（experience / mechanism / efficacy separation）。](../../../docs/architecture/ignition-life-integrity-r5a-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-31b7c3028f6fd347 / 体验/机制/疗效分离（experience / mechanism / efficacy separation）。
+  - 来源：`docs/architecture/ignition-life-integrity-r5a-r1.md`
+  - 依赖：—；被引用：—
+- [体验≠机制，形而上学≠科学，后期解释≠作者意图，实践≠疗效，历史久远≠有效；](../../../docs/governance/life-integrity-charter-candidate-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-04cb0cb697501752 / 体验≠机制，形而上学≠科学，后期解释≠作者意图，实践≠疗效，历史久远≠有效；
+  - 来源：`docs/governance/life-integrity-charter-candidate-r1.md`
+  - 依赖：—；被引用：—
+- [体验有效，仅作为“体验的报告”，不自动成为机制；](../../../docs/architecture/tradition-translation-pipeline-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-20d7263b5a0c6589 / 体验有效，仅作为“体验的报告”，不自动成为机制；
+  - 来源：`docs/architecture/tradition-translation-pipeline-r1.md`
   - 依赖：—；被引用：—
 - [作品从停更决定、离别诗和“译诗需要时间”出发，而不是从贯穿全文的身体坐标出发。原文明确写道：“时间在我眼里，是一个人剩余的生命。”起始承载点保存下一层张力，并在后文被重新解释：](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1724,6 +1779,11 @@
   - 可搜索名称：NFC-3ef8aac669f1867b / 同样，我们也不能把北宋灭亡单独归给道教。战争、财政、军事判断、官僚竞争、外交选择和信息失灵，都需要各自的材料与因果分析。道教可以是权力结构中的一条通道，却不是一把能够解释所有失败的钥匙。
   - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
   - 依赖：—；被引用：—
+- [后果**：体验≠机制、形而上学≠科学、后期解释≠作者意图、实践≠疗效、历史久远≠有效，均失败关闭。](../../../docs/architecture/adaptive-relational-runtime-r5a-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d43ff1ec1734a271 / 后果**：体验≠机制、形而上学≠科学、后期解释≠作者意图、实践≠疗效、历史久远≠有效，均失败关闭。
+  - 来源：`docs/architecture/adaptive-relational-runtime-r5a-adrs.md`
+  - 依赖：—；被引用：—
 - [向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁与伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4ede3796f64ad258 / 向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁与伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN
@@ -2234,6 +2294,11 @@
   - 可搜索名称：NFC-49674524bdecb2fc / 弱势成员须有对等参与与保护机制
   - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
   - 依赖：—；被引用：—
+- [强制属性：所有视图共享同一主体身份；每个视图有 observations / confidence / time_scope / UNKNOWN；跨视图关系类型化且不暗示因果；矛盾视图可共存且必须呈现；主体有不可归约为视图分数的自主/同意字](../../../docs/architecture/ignition-life-integrity-r5a-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de0c5ed7d0e3401e / 强制属性：所有视图共享同一主体身份；每个视图有 observations / confidence / time_scope / UNKNOWN；跨视图关系类型化且不暗示因果；矛盾视图可共存且必须呈现；主体有不可归约为视图分数的自主/同意字
+  - 来源：`docs/architecture/ignition-life-integrity-r5a-r1.md`
+  - 依赖：—；被引用：—
 - [当亲密或协作关系中双方需求隐含且互相错位时，通过目标对齐机制、需求显式打分（如 0–10，9+ 必优先、6.5− 可灵活）、事后复盘与空间边界，把模糊需求转成可排序的协作协议，降低隐性冲突。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c5b00e04508482ef / 当亲密或协作关系中双方需求隐含且互相错位时，通过目标对齐机制、需求显式打分（如 0–10，9+ 必优先、6.5− 可灵活）、事后复盘与空间边界，把模糊需求转成可排序的协作协议，降低隐性冲突。
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fcccc072eaf9f98a / 把历史叙事误写成因果定律
   - 来源：`docs/failure_typology.md`
-  - 依赖：—；被引用：—
-- [把历史叙事误写成因果定律指把叙述结构或故事化解释当作强因果定律。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f8b4eaeb7f2a505d / 把历史叙事误写成因果定律指把叙述结构或故事化解释当作强因果定律。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把历史因果写成单因决定论](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4e45e2994c64111b / 把历史因果写成单因决定论
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把叙事连贯性误认为因果必然性。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-dffb28fbfce2c15e / 把叙事连贯性误认为因果必然性。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28d6a72c1a59a7ef / 把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [把局部机制误写成全局规律](../../../docs/failure_typology.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-eaca6f31486b9916 / 把局部机制误写成全局规律
-  - 来源：`docs/failure_typology.md`
-  - 依赖：—；被引用：—
-- [把局部机制误写成全局规律](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-ee5d8c5cbbf984c9 / 把局部机制误写成全局规律
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [把局部机制误写成全局规律指有限条件下成立的机制被扩展成普遍定律。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e48b5f610b28a44c / 把局部机制误写成全局规律指有限条件下成立的机制被扩展成普遍定律。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把局部机制误写成全局规律（某个具体叙事的效果误写成所有叙事的规律）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2ea6c5deccd23c3b / 把局部机制误写成全局规律（某个具体叙事的效果误写成所有叙事的规律）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [把局部机制误写成全局规律（某个现代艺术流派的特点误写成所有现代艺术的规律）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b7b6e823fab0703d / 把局部机制误写成全局规律（某个现代艺术流派的特点误写成所有现代艺术的规律）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [把局部现象当作全局机制；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4aa91577a22ff3c2 / 把局部现象当作全局机制；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-360a048007ab298f / 把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [把某一案例、局部机制或历史叙事写成普遍规律。](../../../data/publication_risk_rules.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-da41af91ec88ed2d / 把某一案例、局部机制或历史叙事写成普遍规律。
-  - 来源：`data/publication_risk_rules.csv`
-  - 依赖：—；被引用：—
-- [把相关性写成因果性](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6d846271bd671a1c / 把相关性写成因果性
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—

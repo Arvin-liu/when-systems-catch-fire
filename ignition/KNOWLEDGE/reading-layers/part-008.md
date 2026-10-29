@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-91e80e0c69fb56f2"></a>
+## 认识论结构诱导（ESI）R0
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个观察当作一个待测候选，而不是把它宣布成“AI 被感染”或永久训练。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个观察当作一个待测候选，而不是把它宣布成“AI 被感染”或永久训练。；这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。；主题：Candidate boundary；Epistemic Structural Induction (ESI) 是一个 inference-time / in-context 候选现象：反复、可见、结构化的认识论关系，可能帮助进入该环境的模型 推断局部规则，并在随后回答中改变断言边界。R0 不主张模型权重发生改变， 不主张跨会话永久记忆，也不主张点火发现了 ICL、structural priming 或任何 新的认知科学定律。；机器边界记录在 esi-candidate-boundary-r0.json。 替代解释包括 in-context learning、task inference、structural priming、style imitation、terminology imitation、default alignment 和 contextual mimicry。；主题：What counts as evidence in this repository
+- 完整阅读：[docs/architecture/epistemic-structural-induction-r0.md](../../docs/architecture/epistemic-structural-induction-r0.md)
+
+<a id="reading-hr-91f57f34641602bd"></a>
+## Task 98 remote truth and gap lock
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class function identity, independent mathematical/external evidence axes, ten claim-governance gates, a whole-history deterministic census, an anti-rebound withdrawal ledger or author… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task 98 remote truth and gap lock；Formal main start: f07413d56a45285a0f0db5b3848cb4a1a37777e2；Control commit: fc3805eb6f6e48f4d46b3c60ed15e92ee3f245be；Task 97 receipt head: 01e18b382259509c5680cd126e82c61a7e861ff3；Task 97 manifest replay: 78/78 SHA-256 entries passed；Formal branch: agent/claim-governance-physics-correction-function-census-r1-20260729
+- 完整阅读：[reports/foundation-architecture/098-remote-truth-and-gap.md](../../reports/foundation-architecture/098-remote-truth-and-gap.md)
+
+<a id="reading-hr-925728869f151733"></a>
+## Soft Context Exposure Contract R0
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：This contract describes one optional, provider-neutral handoff: an external executor may read a bounded Structural Governance Surface before acting. The handoff is advisory context, not a new instruction hierarchy and not an authority channel. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Soft Context Exposure Contract R0；This contract describes one optional, provider-neutral handoff: an external executor may read a bounded Structural Governance Surface before acting. The handoff is advisory context, not a new instruction hierarchy and not an authority channel.；主题：What crosses the boundary；The observable capsule may carry a surface identifier, a transition-relation identifier, a claim ceiling, a Current-state label, unknowns/open obligations, source pointers and an advisory experiment-arm label. It may carry receipt metadata about what was exposed and what was validated.；It does not carry hidden reasoning, a full prompt or token stream, vendor session state, secrets, channel/device state, an approval decision, an Owner decision, a truth decision or an unvalidated external effect.；主题：What does not change
+- 完整阅读：[docs/architecture/soft-context-exposure-contract-r0.md](../../docs/architecture/soft-context-exposure-contract-r0.md)
+
 <a id="reading-hr-92e68b43ea044168"></a>
 ## IGNITION-20260827-143 Step 16 — canonical 出版入口接入
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -270,6 +291,13 @@
 - 5 分钟：SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY for the frozen local-history corpus. N02 and N03 are NONLEAP because their OldBasis-to-NewRepresentation mappings preserve object language, operations, and question space. No lifecycle, canonical, provider, or publication action occurred.
 - 完整阅读：[agent-results/IGNITION-20260907-159-result.md](../../agent-results/IGNITION-20260907-159-result.md)
 
+<a id="reading-hr-a2d4a6cfa3e1870f"></a>
+## 生命完整性非影响证明 R5-A R1（Life Integrity Non-Impact Proof R1）
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：lifeintegrityr5a/nonimpact.py::buildnonimpactproof() 返回上述清单的声明式证明。窄修复不再以该声明自证：tools/validatelifeintegrityr5arepair.py 同时运行包 import 边界和从精确 R5-A 冻结头开始的 changed-path scope gate，任何 R5-B/R5-C/R6、生产运行时或 ARR 实现路径变更均阻断。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：生命完整性非影响证明 R5-A R1（Life Integrity Non-Impact Proof R1）；候选。证明 R5-A 不改动既有权威与运行时，除显式登记的注册表/地图/文档/CI 同步外无交叉文件传播。；主题：1. 非影响清单（task §13，显式逐项，全部 NOTALTEREDBYR5A）；修改 PR #109–#129 或前驱冻结标签；；调用 PROMOTE 或 EVOLVE。；lifeintegrityr5a/nonimpact.py::buildnonimpactproof() 返回上述清单的声明式证明。窄修复不再以该声明自证：tools/validatelifeintegrityr5arepair.py 同时运行包 import 边界和从精确 R5-A 冻结头开始的 changed-path scope gate，任何 R5-B/R5-C/R6、生产运行时或 ARR 实现路径变更均阻断。
+- 完整阅读：[docs/architecture/life-integrity-non-impact-proof-r1.md](../../docs/architecture/life-integrity-non-impact-proof-r1.md)
+
 <a id="reading-hr-a2e1d8a6ec4e2cf4"></a>
 ## IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -325,31 +353,3 @@
 - 1 分钟：特别规则：A 只表示声明理论内的假设/公理；T 只有链接可检查证明工件时才是 THEOREM。legacy ID 永久保留，但 legacy 标签不支配新类型。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：对象与类型：先区分集合、关系、函数、谓词、算子、状态转移、概率模型和自然语言候选。；集合与映射：每个映射声明源集合、目标集合、全/偏、确定/随机、单值/多值。；函数规则：FUNCTION 只允许单值映射；未定义点必须以偏函数或失败类型显式表示。；变量与量纲：变量、参数、单位、量纲和无量纲化过程分字段记录；量纲错误阻断发布。；命名层级：公理只在声明系统中成立；定义不是真值；引理/命题/定理/猜想/反例各有不同门禁。；方法边界：数值实验、符号计算和有限验证可找错或提供支持，不能代替无限域普遍证明。
 - 完整阅读：[docs/foundation/mathematics/README.md](../../docs/foundation/mathematics/README.md)
-
-<a id="reading-hr-a598ace26626a803"></a>
-## C-0808 职称硬门槛裹挟青年教师索引可见性验证
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：| C-0808 | 职称硬门槛裹挟青年教师 | 职称硬门槛使青年教师可拒绝性趋零，结构裹挟大于主观意愿。 | 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：C-0808 职称硬门槛裹挟青年教师索引可见性验证；索引文件：已迁移的历史案例来源/INDEX.md；C-0808 出现在 INDEX 第 810 行：；| C-0808 | 职称硬门槛裹挟青年教师 | 职称硬门槛使青年教师可拒绝性趋零，结构裹挟大于主观意愿。 |；案例总数已同步：791 → 792（INDEX 头部计数）；结论：后续碰撞流程可通过编号、标题、机制关键词三种方式召回 C-0808。
-- 完整阅读：[outputs/audit/c0808-index-visibility-check-20260708.md](../../outputs/audit/c0808-index-visibility-check-20260708.md)
-
-<a id="reading-hr-a5bec8f9274ccae4"></a>
-## IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Step 01 passes. The six outputs produced by Task143 are inventoried as capability smoke-test artifacts: three complete articles, one Book Project R1 and two mature book samples. Their existing bodies and canonical paths remain unchanged. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory；Step 01 passes. The six outputs produced by Task143 are inventoried as capability smoke-test artifacts: three complete articles, one Book Project R1 and two mature book samples. Their existing bodies and canonical paths remain unchanged.；Every item is explicitly recorded with smoketest=true, ownerselection=NOTREVIEWED and publicationacceptance=PUBLICATIONACCEPTANCENOTGRANTED. The existing registry labels describe the production phase in which the artifacts were made; they are not evidence that the Owner selected a topic or accepted a publication. Source paths and claim ceilings are preserved…
-- 完整阅读：[reports/operations/ignition-144-step01-smoke-output-inventory.md](../../reports/operations/ignition-144-step01-smoke-output-inventory.md)
-
-<a id="reading-hr-a7b229336e1604ab"></a>
-## 审计：生命共同体价值宪章 README 入口
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：验证全部通过（15/15）。文档已就绪，待提交、推送并创建 PR，不自动合并。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：审计：生命共同体价值宪章 README 入口；任务编号：IGNITION-20260709-041；正式仓库：Arvin-liu/when-systems-catch-fire；工作树：PRIVATE_PROVENANCE_WITHHELD；分支：docs/life-community-value-charter-20260711；基线 base SHA：9463459edab4803c2452ae52d0f1ca2733cdc008（执行时最新 origin/main）
-- 完整阅读：[outputs/audit/life-community-value-charter-readme-audit-20260711.md](../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
-
-<a id="reading-hr-a7d98664e45d4ecb"></a>
-## IGNITION-139 Step 00 — Baseline and observation-path audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-139 Step 00 — Baseline and observation-path audit；The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started.；The existing Current preflight was green before implementation: task-lineage, Current-state sync, volatile-fact registry, Current semantic gate, and two-pass Current projection determinism all passed. The focused live/ledger/Current test set ran 36 tests with 0 failures, 0 errors, and 0 skips.；主题：Historical fact that must become canonical；The Task138 second Codex dispatch was a real attempt. Its host result exceeded the available model context, and the receipt could not be recovered. Return code, structured result, lease receipt, and validator input were unavailable. The correct ceiling is therefore ATTEMPTHAPPENEDOBSERVATIONINCOMPLETE / REQUIRESRECONCILIATION; it is neither success nor a kno…；The current identity contract still described that same invocation as forbidden because no auth-source route was available. This is the Step139 split-brain to repair. Historical Task136–138 source records remain append-only and are not rewritten.
-- 完整阅读：[reports/operations/ignition-139-step00-baseline-audit.md](../../reports/operations/ignition-139-step00-baseline-audit.md)

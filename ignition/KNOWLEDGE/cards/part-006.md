@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-4db4d409044421b2"></a>
+## IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4DB4D409044421B2` · [reports/operations/ignition-132-step07-task-id-binding.md](../../reports/operations/ignition-132-step07-task-id-binding.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding？
+- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
+- **当前结果：** Step 07 binds the observation-time publication witness to the formal result, canonical Current source, lifecycle, and release candidate. The latest architecture-changing task remains IGNITION-20260821-129; it is deliberately not promoted to the current formal task.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-132-step07-task-id-binding.md`, `132-STEP07-TASK-ID-BINDING`
+- **演化历史：** 2026-08-22: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding`, `ignition-132-step07-task-id-binding`
+
 <a id="asset-hr-4e1f3584adabcbab"></a>
 ## IGNITION-20260824-138 — Step 00 Baseline Audit
 
@@ -283,6 +303,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Remaining content work queue`, `remaining-content-work-queue-20260713`
+
+<a id="asset-hr-531d1eba40f26855"></a>
+## R5-A Night Queue R1 adjudication and narrow repair
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-531D1EBA40F26855` · [docs/governance/r5a-night-queue-r1-adjudication.md](../../docs/governance/r5a-night-queue-r1-adjudication.md)
+- **为什么产生：** 此来源记录了什么：R5-A Night Queue R1 adjudication and narrow repair？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** NIGHTQUEUER1PARTIALSALVAGENOTACCEPTED
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/r5a-night-queue-r1-adjudication.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `R5-A Night Queue R1 adjudication and narrow repair`, `r5a-night-queue-r1-adjudication`
 
 <a id="asset-hr-53733a2aa5cf5dd7"></a>
 ## 碰撞输出报告 · P1 接入烟雾测试
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260822-134 Step 01 — Residual Ledger R1`, `ignition-134-step01-residual-ledger-r1`
-
-<a id="asset-hr-5f4adb1099e2f6a6"></a>
-## IGNITION-20260827-143 Step 00 — Baseline and Owner Override
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-5F4ADB1099E2F6A6` · [reports/operations/ignition-143-step00-baseline-owner-override-audit.md](../../reports/operations/ignition-143-step00-baseline-owner-override-audit.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260827-143 Step 00 — Baseline and Owner Override？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** The new Task143 was resolved from 1111/origin/relay/current at 867c6d8373f39f03367f9c81aab60ebd74589428. Its task definition commit is 629a05e1951151dc215c7666640aeab9e3152c9d. That control record explicitly supersedes the previously queued executor-qualification campaign and changes the active s…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-143-step00-baseline-owner-override-audit.md`, `143-STEP00-BASELINE-OWNER-OVERRIDE-AUDIT`
-- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260827-143 Step 00 — Baseline and Owner Override`, `ignition-143-step00-baseline-owner-override-audit`
-
-<a id="asset-hr-60754e6f4aa10a57"></a>
-## Adaptive Relational Runtime R2 — Architecture Decision Records
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-60754E6F4AA10A57` · [docs/architecture/adaptive-relational-runtime-r2-adrs.md](../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
-- **为什么产生：** 此来源记录了什么：Adaptive Relational Runtime R2 — Architecture Decision Records？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** Status: accepted (preferred: behaviorally registry-driven)
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/adaptive-relational-runtime-r2-adrs.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Adaptive Relational Runtime R2 — Architecture Decision Records`, `adaptive-relational-runtime-r2-adrs`

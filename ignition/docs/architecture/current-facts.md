@@ -2,15 +2,15 @@
 # Current Facts（机器推导事实）
 
 - Iteration identity: current formal task `IGNITION-20260829-148` (ordinal `148`)；latest architecture-changing task `IGNITION-20260827-142` (ordinal `142`)；`current_iteration_boundary` `148` is a deprecated compatibility alias of the formal ordinal。
-- Architecture registry: `134` components；`115` visible map nodes；`19` hidden represented components；`146` typed relations；`95` visible typed edges。
+- Architecture registry: `135` components；`115` visible map nodes；`20` hidden represented components；`146` typed relations；`95` visible typed edges。
 - Map/method: map `0.22.0` Current（historical `0.14.0`）；layout `2.6.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；Iteration Method `1.4.0` `Current`；Ignition Operating Method `IGNITION_OPERATING_METHOD_R1` / `1.0.0` `CURRENT`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live state dimensions: dispatch `OBSERVED`；process `OBSERVED`；inference `NOT_OBSERVED`；validated completion `NOT_VALIDATED`；reconciliation blocker `NONE`；next eligible action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`。
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
-- Foundation: function identity cards `6214`；function quarantine/pending `5062`；non-function claims `19059`；non-function quarantine/pending `5496`。
-- Knowledge Experience: cards `677`；changes `572`；layered readings `598`；search records `25871`；aliases `1401`。
-- Fire Seeds: `64` seeds/clusters；`663` source-census records。
+- Foundation: function identity cards `6221`；function quarantine/pending `5069`；non-function claims `19244`；non-function quarantine/pending `5562`。
+- Knowledge Experience: cards `689`；changes `584`；layered readings `610`；search records `26075`；aliases `1425`。
+- Fire Seeds: `64` seeds/clusters；`675` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`21` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
 - Formal task lifecycle: `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS` terminal `true` scope_complete `true`；source `ignition/data/operations/formal-task-lifecycle-r1.json`。

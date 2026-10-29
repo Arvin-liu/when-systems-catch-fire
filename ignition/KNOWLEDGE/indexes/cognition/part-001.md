@@ -1239,6 +1239,11 @@
   - 可搜索名称：NFC-cccc76bf44e8b5dd / `dominant_view_not_fact`
   - 来源：`docs/metacognition/scientific-metacognition-i1-architecture-decision.md`
   - 依赖：—；被引用：—
+- [`embodied_view.py` — `EmbodiedAgent` 与七视图投影合同。](../../../docs/architecture/ignition-life-integrity-r5a-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-05514f1f55f4a4fd / `embodied_view.py` — `EmbodiedAgent` 与七视图投影合同。
+  - 来源：`docs/architecture/ignition-life-integrity-r5a-r1.md`
+  - 依赖：—；被引用：—
 - [`every_world_evidence_bound`](../../../docs/multihistory/d2-i1-architecture-decision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a6fa3de3e4e7d42b / `every_world_evidence_bound`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-d9f16e6fbd409448 / Direct predecessor repair branch:** `repair/decision-integrity-r1-principle-process-binding` @ `25bd2ca3e14a2693e3c9fac4
   - 来源：`docs/metacognition/SCIENTIFIC-METACOGNITION-I1-repair-architecture.md`
-  - 依赖：—；被引用：—
-- [discovery/load、Profile 投影、Gateway 输入输出、Pack-aware routing、memory](../../../docs/architecture/agent-platform-r2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-773a8dd97cccb2ab / discovery/load、Profile 投影、Gateway 输入输出、Pack-aware routing、memory
-  - 来源：`docs/architecture/agent-platform-r2.md`
   - 依赖：—；被引用：—

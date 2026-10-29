@@ -59,6 +59,11 @@
   - 可搜索名称：NFC-30bf85d4e55c80b6 / "AI 泛化能力是由数据、模型、架构等多重因素共同促成"（这是 AI 界和计算机科学界的共识，点火框架只是重述）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
+- ["All six resolved" is wrong.** M3/M4 are only *diagnosed* as R3 aggregation defects \(not](../../../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1913c4b3d851604e / "All six resolved" is wrong.** M3/M4 are only *diagnosed* as R3 aggregation defects \(not
+  - 来源：`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`
+  - 依赖：—；被引用：—
 - ["anchors": \["sec:intro", "sec:background", "sec:fwps", "sec:delta", "sec:experiments"\],](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a9476cc3ccf155b8 / "anchors": \["sec:intro", "sec:background", "sec:fwps", "sec:delta", "sec:experiments"\],
@@ -2414,6 +2419,11 @@
   - 可搜索名称：NFC-7bdb7a5ca637982d / \[EVIDENCE-LINEAGE.md\]\(./EVIDENCE-LINEAGE.md\)：证据谱系变化。
   - 来源：`RESULTS/README.md`
   - 依赖：—；被引用：—
+- [\[Ignition perpetual-present principle\]\(./governance/ignition-perpetual-present-principle.md\) records the project's revis](../../../docs/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-bf51a322d74e5497 / \[Ignition perpetual-present principle\]\(./governance/ignition-perpetual-present-principle.md\) records the project's revis
+  - 来源：`docs/README.md`
+  - 依赖：—；被引用：—
 - [\[item\["artifact_id"\] for item in case\["artifact_refs"\]\],](../../../reos_vnext/kernel.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6974325bcde7d0df / \[item\["artifact_id"\] for item in case\["artifact_refs"\]\],
@@ -2492,15 +2502,5 @@
 - [\[点火迭代操作法\]\(../ITERATION.md\)：从远端事实、最小缺口、传播闭包、验证、审查、合并到回执的操作合同。](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9384c6f18a47dce6 / \[点火迭代操作法\]\(../ITERATION.md\)：从远端事实、最小缺口、传播闭包、验证、审查、合并到回执的操作合同。
-  - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
-  - 依赖：—；被引用：—
-- [\[点火迭代操作法\]\(./ITERATION.md\)：状态变化、传播、验证、审查、合并与回执规则。](../../../SUMMARY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8095e8bf6872d562 / \[点火迭代操作法\]\(./ITERATION.md\)：状态变化、传播、验证、审查、合并与回执规则。
-  - 来源：`SUMMARY.md`
-  - 依赖：—；被引用：—
-- [\[百轮成果台账\]\(../PUBLICATIONS/hundred-iteration-achievement-ledger.md\)：80 条可恢复记录，区分研究、纠正、实验、形式化、基础设施、维护、混合成果和开放项。](../../../RESULTS/RESEARCH-AND-ARTICLES.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a4a308d7fe372aee / \[百轮成果台账\]\(../PUBLICATIONS/hundred-iteration-achievement-ledger.md\)：80 条可恢复记录，区分研究、纠正、实验、形式化、基础设施、维护、混合成果和开放项。
   - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
   - 依赖：—；被引用：—

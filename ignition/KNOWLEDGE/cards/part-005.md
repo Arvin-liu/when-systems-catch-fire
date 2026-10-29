@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-3afc00a4edf85646"></a>
+## 生命完整性附则候选 R1（Life Integrity Annex Candidate R1）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3AFC00A4EDF85646` · [docs/governance/life-integrity-charter-candidate-r1.md](../../docs/governance/life-integrity-charter-candidate-r1.md)
+- **为什么产生：** 此来源记录了什么：生命完整性附则候选 R1（Life Integrity Annex Candidate R1）？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 本候选不激活附则、不启用人体干预、不授权医疗主张、不启动《新悟真篇》领域包、不启动领域包/联邦运行时、不宣称外部接受。张伯端与南宗材料仅作为历史与概念来源及候选协议，绝不作为科学或临床权威。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/life-integrity-charter-candidate-r1.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `生命完整性附则候选 R1（Life Integrity Annex Candidate R1）`, `life-integrity-charter-candidate-r1`
+
 <a id="asset-hr-3b5e72d7f1cdfb5b"></a>
 ## 之元写作法：内部范例与反例
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260826-140 Step 13 — Targeted regression and projection closure`, `ignition-140-step13-targeted-regression`
-
-<a id="asset-hr-4db4d409044421b2"></a>
-## IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4DB4D409044421B2` · [reports/operations/ignition-132-step07-task-id-binding.md](../../reports/operations/ignition-132-step07-task-id-binding.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** Step 07 binds the observation-time publication witness to the formal result, canonical Current source, lifecycle, and release candidate. The latest architecture-changing task remains IGNITION-20260821-129; it is deliberately not promoted to the current formal task.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-132-step07-task-id-binding.md`, `132-STEP07-TASK-ID-BINDING`
-- **演化历史：** 2026-08-22: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding`, `ignition-132-step07-task-id-binding`

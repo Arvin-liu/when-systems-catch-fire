@@ -165,7 +165,8 @@
         "copyright_governance_tests",
         "epistemic_governance_kernel",
         "human_knowledge_surfaces",
-        "licensing"
+        "licensing",
+        "life_integrity_r5a_candidate"
       ],
       "path_patterns": [
         "data/governance/",
@@ -174,7 +175,7 @@
         "tests/test_q33_governance_infrastructure.py",
         "docs/governance/"
       ],
-      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter, licensing, and the draft-only R5-A candidate; the candidate remains outside production activation."
     },
     {
       "authority_source": "docs/operations/stage-snapshot-publication.md",
@@ -3411,5 +3412,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.24"
+  "registry_version": "2.9.25"
 }
