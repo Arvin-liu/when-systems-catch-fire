@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [投影；连线不表示现实因果。`PASS` Run 不能推断 Goal completion，系统 proposal 不能成为](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d7097c783bbf69a0 / 投影；连线不表示现实因果。`PASS` Run 不能推断 Goal completion，系统 proposal 不能成为
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [报告记录开始约 16:18、完成约 16:25，约 7 分钟生成 353 条"双遍对抗审查"。这与 `process_084_batch.py` 的脚本批量生成机制一致，不能作为独立模型推理的证据。](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-474f7010a8de7780 / 报告记录开始约 16:18、完成约 16:25，约 7 分钟生成 353 条"双遍对抗审查"。这与 `process_084_batch.py` 的脚本批量生成机制一致，不能作为独立模型推理的证据。
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [挂靠 EXIT 族互补；机制 S_refuge = I_inner × \(1 - M_metric\) × R_relation](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ca947292b6668806 / 挂靠 EXIT 族互补；机制 S_refuge = I_inner × \(1 - M_metric\) × R_relation
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-16c9a16a77e958e0 / 指标排名隐性分层不是独立于 D597 的新因果原语，而是 D597 在跨域材料中的下游表现。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D597；被引用：—
+- [推荐修订定义：** 为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9e9af6016337bd21 / 推荐修订定义：** 为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [推荐修订定义：** 在局部、低耦合、关系稳定、可预测范围内，假设状态沿可预测路径演化的建模与行动方式；须设反馈点、偏差检测与非线性退出条件，禁止把复杂生命系统强行简化为直线模型。](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9901ad9c0a1f9687 / 推荐修订定义：** 在局部、低耦合、关系稳定、可预测范围内，假设状态沿可预测路径演化的建模与行动方式；须设反馈点、偏差检测与非线性退出条件，禁止把复杂生命系统强行简化为直线模型。
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [推荐：4 变量解释、5 因果链、6 适用条件、7 边界条件、8 反例、13 扩展注释。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-18b30212bac7a459 / 推荐：4 变量解释、5 因果链、6 适用条件、7 边界条件、8 反例、13 扩展注释。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [推荐：5 因果链、10 反例、12 扩展注释。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-95f3ed6456bb622a / 推荐：5 因果链、10 反例、12 扩展注释。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [提供候选机制：门控面合并作为四种基本力统一的候选结构（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bb19879fb3252547 / 提供候选机制：门控面合并作为四种基本力统一的候选结构（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供因果重排分析：叙事如何重排事件因果链，改变因果权重和优先级（L2）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6464bd513d3d1ab3 / 提供因果重排分析：叙事如何重排事件因果链，改变因果权重和优先级（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [提供因果链分析：AI 对齐困难的因果链（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2b619c5eec5c6b96 / 提供因果链分析：AI 对齐困难的因果链（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供因果链分析：AI 泛化能力的因果链（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-828f861a2e689e9b / 提供因果链分析：AI 泛化能力的因果链（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供因果链分析：中国王朝周期的因果链（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a0f5c52e867864a4 / 提供因果链分析：中国王朝周期的因果链（L2）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [提供因果链分析：习惯改变的因果链（L2）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-2ac274e9bbf4e86d / 提供因果链分析：习惯改变的因果链（L2）

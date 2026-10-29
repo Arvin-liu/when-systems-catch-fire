@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-7dfd6b8ed7333b2a"></a>
+## 跨域 smoke test — 自然科学碰撞报告
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：inputs/collisions/20260708-cross-domain-smoke-test/science.md（高通量筛选 p 值考核） 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：跨域 smoke test — 自然科学碰撞报告；inputs/collisions/20260708-cross-domain-smoke-test/science.md（高通量筛选 p 值考核）；量化指标替代真实价值：命中 D597（p 值数量成为显式入口→机制解释/复现被挤出）；显态粘性：关联 D173（朝易出数方向倾斜=指标驱动显态）；噪声累积/假阳性：零精确命中（现有表无「数量指标忽视不确定性→假阳性累积」）；复现被边缘化：关联 D597 盲区子集，但无独立条目
+- 完整阅读：[outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md](../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+
 <a id="reading-hr-7e853c8821f44f01"></a>
 ## IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：公共断言边界治理覆盖定理、定律、证明、必然、唯一、完全、统一、已解决或不可能等强词；它们必须进入 public-claim-lineage.jsonl。该登记只提供可追溯性，不使断言成立。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：公共断言边界治理覆盖定理、定律、证明、必然、唯一、完全、统一、已解决或不可能等强词；它们必须进入 public-claim-lineage.jsonl。该登记只提供可追溯性，不使断言成立。；发布前必须回答：对象是什么；主身份是什么；数学成熟度与外部证据成熟度分别是多少；证明或实证义务是否完成；允许推理方向是什么；哪些反例、失败边界和依赖降级会触发撤回。；被撤回结论不得通过加上“结构性”“框架层”“模型层”等形容词恢复。回弹检测结合 claim lineage、同义词家族、去除重命名形容词后的相似度和上下文边界；自动结果只生成候选与硬禁词检查，最终语义判断仍可进入人工复核。；当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。
 - 完整阅读：[docs/foundation/public-claim-ceiling-guidance.md](../../docs/foundation/public-claim-ceiling-guidance.md)
-
-<a id="reading-hr-9302fb0a7da093e8"></a>
-## IGNITION-20260825-139 Step 08 — Live-observation semantic gate
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260825-139 Step 08 — Live-observation semantic gate；PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit.；The gate binds the canonical Task139 ledger and Current projection before running fixtures. It therefore rejects the split-brain claim that the Task138 second Codex dispatch was forbidden, rejects success language over an incomplete capsule, and rejects exit code zero without independent validator PASS. The exact-binding positive case requires task, executor…；主题：Covered boundaries；Historical Task138 wording remains allowed only under explicit historical classification.；Duplicate dispatch/attempt identities cannot overwrite the append-only ledger.
-- 完整阅读：[reports/operations/ignition-139-step08-live-observation-semantic-gate.md](../../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)

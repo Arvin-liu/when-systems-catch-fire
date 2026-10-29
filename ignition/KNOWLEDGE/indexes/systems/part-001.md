@@ -1199,9 +1199,9 @@
   - 可搜索名称：NFC-dfc3362e34717807 / `CONFIG\["evaluator"\] = evaluate_latent_system_identifiability` and `CONFIG\["evidence_matrix"\]`, so every
   - 来源：`docs/repair-r3/repair-r3/latent_system_identifiability-freeze.md`
   - 依赖：—；被引用：—
-- [`current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [`current-facts.json` 为准；当前地图为 `0.22.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d3ad062793783315 / `current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
+  - 可搜索名称：NFC-192cb16f8d7551bb / `current-facts.json` 为准；当前地图为 `0.22.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`data/analogy/fixtures/24-real-repo-pilot-q34-analogy-as-mechanism.json` audits the existing](../../../docs/analogy/q37-interfaces.md)
@@ -1359,6 +1359,11 @@
   - 可搜索名称：NFC-9a807c889e35b769 / `mechanism_evidence` — `evidence_kind`, `status`, prohibited promotions, no self-circular evidence.
   - 来源：`docs/analogy/q37-i1-architecture-decision.md`
   - 依赖：—；被引用：—
+- [`MECHANISM_FAILURE`;](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5e60fe419ebaf664 / `MECHANISM_FAILURE`;
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
 - [`mechanism_plausible`](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-d947976f377eeba2 / `mechanism_plausible`
@@ -1473,6 +1478,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f08476fbd2e0db06 / `repository_dependency`、`synchronization_obligation` 和 `substantive_causal_candidate` 权限不同。
   - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [`REPRESENTATION_FAILURE`, `ROUTING_FAILURE`, `MECHANISM_FAILURE`, `RUNTIME_FAILURE`,](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3ae84fb33836d950 / `REPRESENTATION_FAILURE`, `ROUTING_FAILURE`, `MECHANISM_FAILURE`, `RUNTIME_FAILURE`,
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
   - 依赖：—；被引用：—
 - [`ROOT_CAUSE_NARROWED_NOT_CONFIRMED`; a Codex same-family retry is therefore a](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1648,6 +1658,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9e85d33ef82e0d9d / A relation is not automatically causal; causal claims delegate to MCF.
   - 来源：`reports/architecture/121Q23-relational-network-gap-audit.md`
+  - 依赖：—；被引用：—
+- [a replay cannot fail merely because a prior call mutated the caller object;](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c983ceaebbe9aecd / a replay cannot fail merely because a prior call mutated the caller object;
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
   - 依赖：—；被引用：—
 - [A single higher-order language can express causal Bayes-style models, infinite mixture/relational models, stochastic tra](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2384,6 +2399,11 @@
   - 可搜索名称：NFC-3714f33640fb9bae / candidate_only_repository_governance: The same object can be represented as separate material fact, actor position, mean
   - 来源：`reports/operations/SYMBOLIC-SPHERE-I1-completion-seal.json`
   - 依赖：—；被引用：—
+- [candidate_repository_pilot_capability_only: ARR R2 pilot closes the R1 registry-behavior and caller-input-mutation gaps](../../../reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-501b29c97f87176b / candidate_repository_pilot_capability_only: ARR R2 pilot closes the R1 registry-behavior and caller-input-mutation gaps
+  - 来源：`reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json`
+  - 依赖：—；被引用：—
 - [candidate_repository_scaffold_capability_only: ARR R1 scaffold registers derived-representation surfaces, maps and CI sy](../../../reports/operations/ARR-R1-SCAFFOLD-completion-seal.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2e85272a1120dff2 / candidate_repository_scaffold_capability_only: ARR R1 scaffold registers derived-representation surfaces, maps and CI sy
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-15cad65cd728ae23 / causal_inference_method_boundary
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`
-  - 依赖：—；被引用：—
-- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-006F03978554BA99 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果） / IMPLICIT-006F03978554BA99
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-001d410543ff17ee / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A020D8048B556C3D / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分） / IMPLICIT-A020D8048B556C3D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dcc24f4272e4e811 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
