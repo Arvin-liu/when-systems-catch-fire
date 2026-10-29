@@ -26,7 +26,7 @@ State typed definitions, assumptions and quantifiers; provide a checkable proof 
 
 - 机器 ID：`NFC-015cfd6ba387c9b1`；断言类别：`THEOREM_OR_MATHEMATICAL_CLAIM`；断言类型：`MATHEMATICAL`。
 - M/E：数学成熟度 `M1`；外部证据成熟度 `E0`；复现：`NOT_APPLICABLE`。
-- 处置：`PENDING_PROOF`；机器记录指纹：`3ed18758323158ad46cb42c2f417768c1051d186f0dae0cbd24f9f50d0f2c0f7`；来源指纹：`2166fb552c5f2168c0fa96a055b845004ee39d3abb672d0ba1af507dac9af9f9`。
+- 处置：`PENDING_PROOF`；机器记录指纹：`3ed18758323158ad46cb42c2f417768c1051d186f0dae0cbd24f9f50d0f2c0f7`；来源指纹：`1477a3753dc4c60f29a5dc4f85d79ee39abe758b3f718096e4162266fce7a945`。
 - 来源：[docs/project-current-state.md](../../../docs/project-current-state.md)；机器权威：[claim registry](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)；生成方法：[之元写作法 0.5.0](../../../docs/publication/zhiyuan-writing-method.md)。
 
 > 这页是可读解释，不是第二份断言数据库。任何状态变化都必须先发生在 canonical registry，并通过生成器重新投影。

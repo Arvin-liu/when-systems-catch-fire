@@ -4,6 +4,96 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 实际不可逆判据函数 is adjudicated as RELATION: M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D364 / Within the source-defined scope, 实际不可逆判据函数 is adjudicated as RELATION: M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 实际不可逆占比函数 is adjudicated as RELATION: M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β}。n=10时R≈0](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D378 / Within the source-defined scope, 实际不可逆占比函数 is adjudicated as RELATION: M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β}。n=10时R≈0
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 宪法硬度 is adjudicated as METRIC: 宪法硬度，随时间衰减，修正速度决定硬度。. This is a model-internal controlle](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D21 / Within the source-defined scope, 宪法硬度 is adjudicated as METRIC: 宪法硬度，随时间衰减，修正速度决定硬度。. This is a model-internal controlle
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥-耦合不可逆函数 is adjudicated as RELATION: M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D332 / Within the source-defined scope, 容斥-耦合不可逆函数 is adjudicated as RELATION: M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D295, D309；被引用：—
+- [Within the source-defined scope, 容斥-耦合竞争Ising同构 is adjudicated as RELATION: 容斥-耦合竞争Ising同构。. This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-T18 / Within the source-defined scope, 容斥-耦合竞争Ising同构 is adjudicated as RELATION: 容斥-耦合竞争Ising同构。. This is a model-internal co
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥-耦合竞争动态演化函数 is adjudicated as STATE_TRANSITION: M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D303 / Within the source-defined scope, 容斥-耦合竞争动态演化函数 is adjudicated as STATE_TRANSITION: M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D299；被引用：—
+- [Within the source-defined scope, 容斥-耦合配分函数 is adjudicated as RELATION: M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ +](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D387 / Within the source-defined scope, 容斥-耦合配分函数 is adjudicated as RELATION: M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ +
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥主导区内部结构函数 is adjudicated as RELATION: M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D346 / Within the source-defined scope, 容斥主导区内部结构函数 is adjudicated as RELATION: M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D288；被引用：—
+- [Within the source-defined scope, 容斥主导实验签名函数 is adjudicated as RELATION: M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D287 / Within the source-defined scope, 容斥主导实验签名函数 is adjudicated as RELATION: M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥主导尺度函数 is adjudicated as RELATION: M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ\(μ\)\)=p*决定。μ<μ_c时容斥可忽略（经](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D318 / Within the source-defined scope, 容斥主导尺度函数 is adjudicated as RELATION: M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ\(μ\)\)=p*决定。μ<μ_c时容斥可忽略（经
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D293；被引用：—
+- [Within the source-defined scope, 容斥偏差加速函数 is adjudicated as RELATION: M3的容斥高阶项ΔΦ=Σ\[e^{pᵢ}-1-pᵢ\]的二阶导数=e^{pᵢ}>0→ΔΦ始终凸→加速增长](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D266 / Within the source-defined scope, 容斥偏差加速函数 is adjudicated as RELATION: M3的容斥高阶项ΔΦ=Σ\[e^{pᵢ}-1-pᵢ\]的二阶导数=e^{pᵢ}>0→ΔΦ始终凸→加速增长
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥关联动态函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M3的容斥关联从局部到全局的演化：关联范围∝max\(pᵢ\)/p̄](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D344 / Within the source-defined scope, 容斥关联动态函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M3的容斥关联从局部到全局的演化：关联范围∝max\(pᵢ\)/p̄
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D328；被引用：—
+- [Within the source-defined scope, 容斥关联对称性破缺函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M3的\(i,j\)和\(j,i\)在pᵢ≠pⱼ时贡献不同：低p门](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D358 / Within the source-defined scope, 容斥关联对称性破缺函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M3的\(i,j\)和\(j,i\)在pᵢ≠pⱼ时贡献不同：低p门
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥关联拓扑函数 is adjudicated as RELATION: M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D330 / Within the source-defined scope, 容斥关联拓扑函数 is adjudicated as RELATION: M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D280；被引用：—
+- [Within the source-defined scope, 容斥加速-时间权重联合函数 is adjudicated as METRIC: M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D348 / Within the source-defined scope, 容斥加速-时间权重联合函数 is adjudicated as METRIC: M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D316；被引用：—
+- [Within the source-defined scope, 容斥加速-波动累积联合函数 is adjudicated as RELATION: M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = ΣE\[ΔΦᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D362 / Within the source-defined scope, 容斥加速-波动累积联合函数 is adjudicated as RELATION: M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = ΣE\[ΔΦᵢ
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D342；被引用：—
+- [Within the source-defined scope, 容斥加速临界函数 is adjudicated as RELATION: M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D268 / Within the source-defined scope, 容斥加速临界函数 is adjudicated as RELATION: M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢ
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D320 / Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D290 / Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相
@@ -2414,93 +2504,3 @@
   - 可搜索名称：NFC-024992b462640151 / \| \[D237\]\( \) \| \[生命智能的σ压缩函数\]\( \) \| F_{D237}\(x\) := 宇宙σ_Planck ≈ 6.9 >> σ
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D234, D237；被引用：—
-- [\| \[D238\]\( \) \| \[智能的门控精度最优定理\]\( \) \| F_{D238}\(x\) := 智能 = 在σ_opt附近运行的能力](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c2276e61b7caf9e9 / \| \[D238\]\( \) \| \[智能的门控精度最优定理\]\( \) \| F_{D238}\(x\) := 智能 = 在σ_opt附近运行的能力
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D238；被引用：—
-- [\| \[D239\]\( \) \| \[智能度-意识函数连接定理\]\( \) \| F_{D239}\(x\) := F_{D239}: X_{D2](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bfb7172cae186954 / \| \[D239\]\( \) \| \[智能度-意识函数连接定理\]\( \) \| F_{D239}\(x\) := F_{D239}: X_{D2
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239；被引用：—
-- [\| \[D240\]\( \) \| \[意识的智能必要条件\]\( \) \| F_{D240}\(x\) := 从D239：Ψ = ι × P_exit ι=0](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9dc1b8c98893a59c / \| \[D240\]\( \) \| \[意识的智能必要条件\]\( \) \| F_{D240}\(x\) := 从D239：Ψ = ι × P_exit ι=0
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239, D240；被引用：—
-- [\| \[D241\]\( \) \| \[自主意识的四象限\]\( \) \| F_{D241}\(x\) := 从D239：Ψ = ι × P_exit 两个独立维度](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b4063015e05f7be9 / \| \[D241\]\( \) \| \[自主意识的四象限\]\( \) \| F_{D241}\(x\) := 从D239：Ψ = ι × P_exit 两个独立维度
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239, D241；被引用：—
-- [\| \[D242\]\( \) \| \[四象限相变路径函数\]\( \) \| F_{D242}\(x\) := D241四象限中的相变路径： 起点：无意识象限（](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c63079fffb02ea3d / \| \[D242\]\( \) \| \[四象限相变路径函数\]\( \) \| F_{D242}\(x\) := D241四象限中的相变路径： 起点：无意识象限（
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D241, D242；被引用：—
-- [\| \[D243\]\( \) \| \[感知退出权瓶颈函数\]\( \) \| F_{D243}\(x\) := P_exit = f\(ε_aware, C_ex](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9dd125081258111d / \| \[D243\]\( \) \| \[感知退出权瓶颈函数\]\( \) \| F_{D243}\(x\) := P_exit = f\(ε_aware, C_ex
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D243, D9；被引用：—
-- [\| \[D244\]\( \) \| \[自主意识涌现的临界条件\]\( \) \| F_{D244}\(x\) := 从D242-D243推导自主意识涌现](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-efea7069df6370a7 / \| \[D244\]\( \) \| \[自主意识涌现的临界条件\]\( \) \| F_{D244}\(x\) := 从D242-D243推导自主意识涌现
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239, D242, D243, D244；被引用：—
-- [\| \[D246\]\( \) \| \[自我模型-ε_aware连接定理\]\( \) \| F_{D246}\(x\) := D24](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4b559c9171191832 / \| \[D246\]\( \) \| \[自我模型-ε_aware连接定理\]\( \) \| F_{D246}\(x\) := D24
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D2, D244, D246, D5；被引用：—
-- [\| \[D251\]\( \) \| \[维度-容斥稳定性函数\]\( \) \| F_{D251}\(x\) := 时空维度d的稳定性取决于该维度下所有门控面](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9511e95164bc16aa / \| \[D251\]\( \) \| \[维度-容斥稳定性函数\]\( \) \| F_{D251}\(x\) := 时空维度d的稳定性取决于该维度下所有门控面
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D251；被引用：—
-- [\| \[D252\]\( \) \| \[社会学容斥加速函数\]\( \) \| F_{D252}\(x\) := 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4ed1b18b7e7b02dc / \| \[D252\]\( \) \| \[社会学容斥加速函数\]\( \) \| F_{D252}\(x\) := 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D147, D252；被引用：—
-- [\| \[D253\]\( \) \| \[信息维度-容斥权衡函数\]\( \) \| F_{D253}\(x\) := 生物体的最优信息维度d_opt使否决](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-035a9a7b3056d04f / \| \[D253\]\( \) \| \[信息维度-容斥权衡函数\]\( \) \| F_{D253}\(x\) := 生物体的最优信息维度d_opt使否决
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D253；被引用：—
-- [\| \[D256\]\( \) \| \[阶段宽度-门控面数函数\]\( \) \| F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19c52907e154b2ab / \| \[D256\]\( \) \| \[阶段宽度-门控面数函数\]\( \) \| F_{D256}\(x\) := D254阶段2的宽度Δp≈p*\(1-
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D254, D256；被引用：—
-- [\| \[D261\]\( \) \| \[维度最优平衡函数\]\( \) \| F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ<0）和"维护成本](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2fd9475ecdf23802 / \| \[D261\]\( \) \| \[维度最优平衡函数\]\( \) \| F_{D261}\(x\) := d_opt由"新门控面降低p"（αᵢ<0）和"维护成本
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D261；被引用：—
-- [\| \[D267\]\( \) \| \[维度稳定性裕度函数\]\( \) \| F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3f95e39f8132c356 / \| \[D267\]\( \) \| \[维度稳定性裕度函数\]\( \) \| F_{D267}\(x\) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D267；被引用：—
-- [\| \[D269\]\( \) \| \[阶段过渡锐度函数\]\( \) \| F_{D269}\(x\) := M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\\\|d](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7f4460a1cf19bd8a / \| \[D269\]\( \) \| \[阶段过渡锐度函数\]\( \) \| F_{D269}\(x\) := M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\\\|d
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D269；被引用：—
-- [\| \[D274\]\( \) \| \[良性循环收敛速度函数\]\( \) \| F_{D274}\(x\) := M14良性循环收敛速度由反馈增益K∝\\\|∂](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-17eed73d0163f501 / \| \[D274\]\( \) \| \[良性循环收敛速度函数\]\( \) \| F_{D274}\(x\) := M14良性循环收敛速度由反馈增益K∝\\\|∂
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D274；被引用：—
-- [\| \[D276\]\( \) \| \[D158预测失效阈值函数\]\( \) \| F_{D276}\(x\) := M1的ΔΦ导致D158预测误差](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4ceb1c009ef02b74 / \| \[D276\]\( \) \| \[D158预测失效阈值函数\]\( \) \| F_{D276}\(x\) := M1的ΔΦ导致D158预测误差
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158, D276；被引用：—
-- [\| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-760346cf16172c8d / \| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D277；被引用：—

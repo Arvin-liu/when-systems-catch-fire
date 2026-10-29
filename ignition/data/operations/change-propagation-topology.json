@@ -1,5 +1,5 @@
 {
-  "topology_version": "1.14.0",
+  "topology_version": "1.14.2",
   "purpose": "Typed declared relations for repository change propagation and map projection. Substantive causal candidates remain informational unless separately evidenced in MCF.",
   "relation_classes": [
     "derives",
@@ -2766,6 +2766,98 @@
       "residue": []
     },
     {
+      "relation_id": "arr_documents_arn",
+      "source": "arr",
+      "target": "arn",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "capability"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION"
+      ],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": true,
+      "label": "关系网络参照",
+      "declaration_source": "docs/architecture/adaptive-relational-runtime.md",
+      "claim_ceiling": "candidate derived representation only",
+      "residue": [
+        "ARR is not a causal or truth upgrade."
+      ]
+    },
+    {
+      "relation_id": "arr_mechanism_mcf",
+      "source": "arr",
+      "target": "mcf",
+      "relation_class": "mechanism_hypothesis",
+      "relation_domain": "substantive_causal_candidate",
+      "trigger_dimensions": [
+        "capability"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION"
+      ],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": true,
+      "label": "因果审查委托",
+      "declaration_source": "docs/architecture/adaptive-relational-runtime.md",
+      "claim_ceiling": "causal review candidate delegation only",
+      "residue": [
+        "ARR reachability is not causal identification."
+      ]
+    },
+    {
+      "relation_id": "arr_mechanism_psd",
+      "source": "arr",
+      "target": "psd",
+      "relation_class": "mechanism_hypothesis",
+      "relation_domain": "substantive_causal_candidate",
+      "trigger_dimensions": [
+        "capability"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION"
+      ],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": true,
+      "label": "随机/状态语义参照",
+      "declaration_source": "docs/architecture/adaptive-relational-runtime.md",
+      "claim_ceiling": "candidate derived representation only",
+      "residue": [
+        "ARR does not establish real-world probability or causality."
+      ]
+    },
+    {
+      "relation_id": "arr_runtime_depends_arr",
+      "source": "arr_runtime",
+      "target": "arr",
+      "relation_class": "lifecycle_depends_on",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "capability"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION"
+      ],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "适配层依赖派生表示",
+      "declaration_source": "tools/adaptive_relational_runtime/runtime.py",
+      "claim_ceiling": "repository adapter dependency only",
+      "residue": [
+        "arr_runtime is an adapter, not a second executor."
+      ]
+    },
+    {
       "relation_id": "executor_admission_governs_live_executor_bridge",
       "source": "executor_admission_r1",
       "target": "live_executor_bridge_r1",
@@ -2817,7 +2909,7 @@
         "human_knowledge_surfaces"
       ],
       "path_patterns": [
-        "docs/generated/ignition-system-architecture.svg"
+        "docs/generated/ignition-system-map.svg"
       ],
       "rationale": "The generated repository SVG is both a human-readable navigation asset and a system-map projection product."
     },

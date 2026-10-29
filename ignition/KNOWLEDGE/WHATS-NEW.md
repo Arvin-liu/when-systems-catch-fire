@@ -2817,6 +2817,24 @@
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
 
+<a id="change-src-hr-e2706f26c12e2dff"></a>
+### 2026-07-24 · Adaptive Relational Runtime / 自适应关系运行时(R1 Scaffold 主合同)
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability
+- **来源：** [adaptive-relational-runtime.md](../docs/architecture/adaptive-relational-runtime.md)
+- **资产卡：** [HR-E2706F26C12E2DFF](./ASSET-CARDS.md#asset-hr-e2706f26c12e2dff)
+
+<a id="change-src-hr-dd37a2dbbf9fb489"></a>
+### 2026-07-24 · ARR R1 Scaffold — Commit 5 Evidence & Known Limitations
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: candidate derived representation.
+- **来源：** [adaptive-relational-runtime-r1-scaffold-evidence.md](../docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md)
+- **资产卡：** [HR-DD37A2DBBF9FB489](./ASSET-CARDS.md#asset-hr-dd37a2dbbf9fb489)
+
 <a id="change-src-hr-da8b5988d2d6d5c2"></a>
 ### 2026-07-24 · 点火生产运行时攻击矩阵 / Ignition RPE Attack Matrix
 
@@ -2826,6 +2844,33 @@
 - **来源：** [ATTACK_MATRIX.md](../reports/ignition-rpe/ATTACK_MATRIX.md)
 - **资产卡：** [HR-DA8B5988D2D6D5C2](./ASSET-CARDS.md#asset-hr-da8b5988d2d6d5c2)
 
+<a id="change-src-hr-c7ec97db8410be92"></a>
+### 2026-07-24 · Object–Relation–Mechanism Model / 对象–关系–机制模型(九原语合同)
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability
+- **来源：** [object-relation-mechanism-model.md](../docs/architecture/object-relation-mechanism-model.md)
+- **资产卡：** [HR-C7EC97DB8410BE92](./ASSET-CARDS.md#asset-hr-c7ec97db8410be92)
+
+<a id="change-src-hr-ae8c355ae1b5f510"></a>
+### 2026-07-24 · Self-Growth Control Plane / 自成长控制面(反思–成长合同)
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability
+- **来源：** [self-growth-control-plane.md](../docs/architecture/self-growth-control-plane.md)
+- **资产卡：** [HR-AE8C355AE1B5F510](./ASSET-CARDS.md#asset-hr-ae8c355ae1b5f510)
+
+<a id="change-src-hr-a941457f5102ed89"></a>
+### 2026-07-24 · Adaptive Relational Runtime Interoperability / 互操作合同
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability
+- **来源：** [adaptive-relational-runtime-interop.md](../docs/architecture/adaptive-relational-runtime-interop.md)
+- **资产卡：** [HR-A941457F5102ED89](./ASSET-CARDS.md#asset-hr-a941457f5102ed89)
+
 <a id="change-src-hr-17804e3dc4e94e57"></a>
 ### 2026-07-24 · 五材料收讫 / Five-Material Receipt
 
@@ -2834,6 +2879,15 @@
 - **变化：** Draft production-layer receipt for the five control materials processed by tools/ignitionruntime (branch production/ignition-run-promote-evolve-r1). This is a build artifact, not a merged/current result, and embeds no live HEAD.
 - **来源：** [FIVE_MATERIAL_RECEIPT.md](../reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md)
 - **资产卡：** [HR-17804E3DC4E94E57](./ASSET-CARDS.md#asset-hr-17804e3dc4e94e57)
+
+<a id="change-src-hr-0d6bb2101f76490d"></a>
+### 2026-07-24 · Adaptive Relational Runtime ADRs / 架构决策记录
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability
+- **来源：** [adaptive-relational-runtime-adrs.md](../docs/architecture/adaptive-relational-runtime-adrs.md)
+- **资产卡：** [HR-0D6BB2101F76490D](./ASSET-CARDS.md#asset-hr-0d6bb2101f76490d)
 
 <a id="change-src-hr-e80677686d834ef1"></a>
 ### 2026-07-23 · Q44 repair-r2 — R4 freeze
@@ -2966,7 +3020,7 @@
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
 - **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** 状态：首页使用 Task150 已验证的 standalone derived visualization 作为公共架构投影；机器可读的 0.16.0 Current registry-derived structural projection 仍作为独立 companion。两者均为派生视图，不替代 canonical source、架构权威或真值判断；0.14.0、0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
+- **变化：** 状态：首页使用 Task150 已验证的 standalone derived visualization 作为高层架构投影；当前 0.22.0 registry-derived 完整系统图是独立 companion，输出到单独的 SVG。两者均为派生视图，不替代 canonical source、架构权威或真值判断；0.14.0、0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
 - **来源：** [interactive-system-map.md](../docs/architecture/interactive-system-map.md)
 - **资产卡：** [HR-DAF1CB45CCD7B5B6](./ASSET-CARDS.md#asset-hr-daf1cb45ccd7b5b6)
 

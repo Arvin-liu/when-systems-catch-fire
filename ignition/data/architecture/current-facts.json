@@ -7,16 +7,16 @@
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
-      "current_map_version": "0.21.0",
-      "hidden_components": 18,
+      "current_map_version": "0.22.0",
+      "hidden_components": 19,
       "historical_map_version": "0.14.0",
-      "layout_version": "2.4.0",
-      "registry_components": 132,
+      "layout_version": "2.6.0",
+      "registry_components": 134,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
-      "typed_topology_relations": 142,
-      "visible_map_nodes": 114,
-      "visible_typed_edges": 92
+      "typed_topology_relations": 146,
+      "visible_map_nodes": 115,
+      "visible_typed_edges": 95
     },
     "environmental_residuals": [
       "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.",
@@ -61,7 +61,7 @@
     },
     "fire_seeds": {
       "seed_count": 64,
-      "source_census_count": 652
+      "source_census_count": 658
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
@@ -117,10 +117,10 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6194,
-      "function_quarantine_or_pending": 5042,
-      "nonfunction_claims": 18765,
-      "nonfunction_quarantine_or_pending": 5404
+      "function_identity_cards": 6202,
+      "function_quarantine_or_pending": 5050,
+      "nonfunction_claims": 18954,
+      "nonfunction_quarantine_or_pending": 5462
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -148,18 +148,18 @@
       "current_formal_task_ordinal": 148,
       "current_iteration_boundary": 148,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-      "current_map_version": "0.21.0",
+      "current_map_version": "0.22.0",
       "latest_architecture_changing_task_id": "IGNITION-20260827-142",
       "latest_architecture_task_ordinal": 142,
       "method_status": "Current",
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 1379,
-      "cards": 666,
-      "changes": 561,
-      "layered_readings": 587,
-      "search_records": 25546
+      "aliases": 1391,
+      "cards": 672,
+      "changes": 567,
+      "layered_readings": 593,
+      "search_records": 25749
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -233,15 +233,15 @@
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "67aab1ca3a9a0e09ad925e9b37c0d2f98ad9025b294a80632410e4eedf1f4e8a"
+      "sha256": "1b3421ccb9f54b17b6e34b53e9c6830ed7e3b1163ae0987e25e3dea315431de1"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "53cf3a795a6c047e81541a2448b63a2f240612c4179268c837cfc70e620ab1a1"
+      "sha256": "b6afe8aefae0d746ff3af220bee4be8a8dc9718f9a5ef618a3cdc4b458e49905"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "a9712d1b3e78f6eb5c42a64446ee09ca351d29a6bac66204470cbf19243309ab"
+      "sha256": "97aabe3bfbbd59b0af6ef6076ccf91172d0e5407650133333f1e2a238ec392cc"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -249,15 +249,15 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "8f0d9b005723f0bc945bb02e4953bcd60db12fd2381c64ad84b9b89194e0a63d"
+      "sha256": "af0438ee09fb0bad42ff2bf753114f6d2357a8e7173840abc85928f6cda9150a"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "275fa63f5e81d260a9f4c1510e00a08ead0dd513a8543b6ebd2304aaf7adfa25"
+      "sha256": "45a196f55fef0594e8cfbda8bed6ba3111cb4827cfdbb8e302634629e8b2fe5c"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "d8b0d00fae55b525694b0d05bcddf3828ca2436bd4fd6c65d111e75b5b2752dc"
+      "sha256": "de6740369db1397e724bb2d61d1f2152ecd977704a41312f0ffd159d9df4f5a8"
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "7d4c80879464db0c6b6b1dfd6bb0abbbbc280fb6fb601fb990fbf886877f4944"
+      "sha256": "4183b398b979cf09e4f42126b2139406abf7e8e62cc6a160342ec80c71f03011"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "f94f1abc89a40fd5580e14d140cae1283e0931ccbc71178919c5793ed523f888"
+      "sha256": "b9aa1406c35e74b5dd9df02a33db58d12bce7708e93fc71bdb1f2daacd7adc20"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

@@ -4,6 +4,48 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e7ceb44d380bbb46"></a>
+## IGNITION-20260827-143 Step 19 — Terminality and publication boundary
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task143 is terminal as COMPLETEDWITHOPENOBLIGATIONS. Its formal scope is complete after the phase closure, three complete article manuscripts, Book Project R1, two mature samples, canonical publication integration, Current State synchronization and the natural full regression. The independent LIV… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 19 — Terminality and publication boundary；Task143 is terminal as COMPLETEDWITHOPENOBLIGATIONS. Its formal scope is complete after the phase closure, three complete article manuscripts, Book Project R1, two mature samples, canonical publication integration, Current State synchronization and the natural full regression. The independent LIVEEXTERNALINVOCATION obligation remains OPEN / OWNERDEFERRED and…；The architecture/executor phase remains frozen on the Task142 baseline. No Gemini, Hermes, OpenClaw or Codex qualification, process, inference, install, auth action or live attempt was started in Task143. The six historical live attempts, zero validated completions, zero unreconciled records and two observation-incomplete records remain preserved.；Publication production is complete at the existing Results Book entrypoint: three substantive articles, Book Project R1 and two polished book samples are registered there. Article B preserves the D600/M3 model as an indirect-source, formalization-incomplete candidate; none of the manuscripts upgrades a repository-local result into external truth.；The exact Step18 candidate natural regression passed 1272 tests, 0 failures, 0 errors and 0 skips, with natural completion and clean before/after trees. The four natural attempts, including the earlier 29, 6 and 1 failure runs, remain retained in the Step18 receipt. Formal main publication is still an observation-time remote-ref transaction: this formal repo…；Machine evidence: step19-terminality.json.
+- 完整阅读：[reports/operations/ignition-143-step19-terminality.md](../../reports/operations/ignition-143-step19-terminality.md)
+
+<a id="reading-hr-e7d18e3a634ad513"></a>
+## Governance report: IGNITION-20260907-161
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Governance report: IGNITION-20260907-161；Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df434d39aa379fac5eb2254b250530720e994176526da3c971ee0e84d06de. Form…；The exact primary verdict is IGNITION-20260907-161. Formal review remains Draft only. The synthetic threshold candidate verdict is FIRSTCLASSTRANSITIONSEMANTICSSUPPORTEDASRESEARCHCANDIDATE, while the epistemic validity status is DETECTORNOTVALIDATED.；This branch is not Ready, merged, Current, canonical, production-validated, or Owner-accepted.；主题：Evidence pointers；Command source: https://github.com/Arvin-liu/1111/blob/59003ae23c56a2f0c4ac6389d5235c938cd5f5fd/agent-commands/IGNITION-20260907-161.md
+- 完整阅读：[reports/governance/task-IGNITION-20260907-161.md](../../reports/governance/task-IGNITION-20260907-161.md)
+
+<a id="reading-hr-e7d89c150adba4ae"></a>
+## IGNITION-20260824-137 — Step 07 Independent OS Validation R2
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests,… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-137 — Step 07 Independent OS Validation R2；LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests, result digest, executor receipt digest, and its own validator r…；Validation independently checks lease integrity/freshness, permission intersection, strict four-key output, the fixture's recomputed answer, unchanged workspace, read-only/no-forbidden external surface evidence, receipt integrity, and exact child depth one. A validation PASS is possible only after every check passes; executor PASS text or exit code alone can…；Targeted tests passed: 13 tests / 0 failures / 0 errors / 0 skips. Stale lease, forged/wrong/copy-reused result, wrong workspace, and executor substitution fixtures all fail closed.；Claim ceiling: this is an independent synthetic validator contract. It does not itself prove that a real external process has run.
+- 完整阅读：[reports/operations/ignition-137-step07-independent-os-validation-r2.md](../../reports/operations/ignition-137-step07-independent-os-validation-r2.md)
+
+<a id="reading-hr-e7e1eaa5ed0b5e25"></a>
+## Agent Platform R2 gap audit — IGNITION-20260816-121 Step 00
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This is a repository-scoped baseline audit performed from a fresh worktree at 2becca3ffd93d6ca1e147a75c159e476f4686f5d. It records engineering structure, deterministic projections, and open implementation work. It does not establish external validity, general intelligence, production readiness, O… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Agent Platform R2 gap audit — IGNITION-20260816-121 Step 00；This is a repository-scoped baseline audit performed from a fresh worktree at 2becca3ffd93d6ca1e147a75c159e476f4686f5d. It records engineering structure, deterministic projections, and open implementation work. It does not establish external validity, general intelligence, production readiness, Owner acceptance, or EPISTEMICALLYACCEPTED.；The task branch is codex/ignition-121-agent-platform-r2-nightshift-20260816. Formal main was not modified during Step 00.；主题：Baseline evidence；The previous R1 commit changed 91 generated or knowledge-facing files. Its projection delta included 132 new function-census records, a net 39-record nonfunction registry change, 8,004 additions and 7,833 removals in the Knowledge Experience search index, and 161 additions and 148 removals in the Fire Seed census. This is the measured evidence for the blast-…；主题：Current platform shape
+- 完整阅读：[reports/architecture/agent-platform-r2-gap-audit.md](../../reports/architecture/agent-platform-r2-gap-audit.md)
+
+<a id="reading-hr-e80677686d834ef1"></a>
+## Q44 repair-r2 — R4 freeze
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：prior-repair head 5efbce81e96d90d5ebd246891e4762928365d6b8 to the real predecessor repair-r2 head e5181c83efba68f847b55e13c7b5a1ee1fd6888e; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3). 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Q44 repair-r2 — R4 freeze；branch: repair-r2/q44-r2-consent-semantics；annotatedtag: archive/q44-repair-r2-frozen-head；base: Q44 repair-r1 head 4d15ccaf2e574248c0e224c05716c3af46203a39；direct predecessor: prior repair-r2 head e5181c83efba68f847b55e13c7b5a1ee1fd6888e (inherited via --no-ff merge of repair-r2/q43-r2-escalation-semantics)；PR base: repair-r2/q43-r2-escalation-semantics (prior repair-r2 branch)
+- 完整阅读：[reports/operations/Q44-REPAIR-R2-freeze.md](../../reports/operations/Q44-REPAIR-R2-freeze.md)
+
+<a id="reading-hr-e815f8ad25cfc77e"></a>
+## IGNITION 059 next collision roadmap
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION 059 next collision roadmap；total rows reviewed from inventory: 250；rows with explicit coverage evidence in this pass: 0；next step: manually map only those four-digit disciplines with direct function/case/collision/story anchors.；next step: keep the remainder UNASSESSED rather than inheriting major-level status.；next step: refresh the Get note copy with the corrected conservative wording.
+- 完整阅读：[outputs/research/ignition-next-collision-roadmap-20260712.md](../../outputs/research/ignition-next-collision-roadmap-20260712.md)
+
 <a id="reading-hr-e8430d8482271d1d"></a>
 ## IGNITION-20260822-135 — Full Regression Closure & Test Environment R1
 `HISTORICAL_COMPLETION_RECORD` · `COGNITION`

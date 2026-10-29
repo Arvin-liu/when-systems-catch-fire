@@ -9,6 +9,7 @@ from tools.validate_iteration_sync import (
     _validate_seal_f12,
     infer_seal_path,
     load_json,
+    _path_exists_current_or_alias,
     required_registry_surfaces,
     resolve_era_registry,
     validate_all,
@@ -246,6 +247,13 @@ class IterationSyncTests(unittest.TestCase):
         manifest["impact_matrix"].append({"surface": "missing/path.md", "decision": "CHANGE", "reason": "test"})
         with self.assertRaisesRegex(AssertionError, "does not exist"):
             validate_custom(manifest, __file__, valid_seal())
+
+    def test_unselected_human_claim_page_resolves_to_current_bulk_surface(self):
+        retired = "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md"
+        current = ROOT / "docs/human/nonfunction-assets/bulk-explanation.md"
+        self.assertTrue(current.is_file())
+        self.assertTrue(_path_exists_current_or_alias(retired))
+        self.assertFalse(_path_exists_current_or_alias("docs/human/nonfunction-assets/entries/nfc-0000000000000000.md"))
 
     def test_completion_seal_mismatch_is_rejected(self):
         seal = valid_seal()

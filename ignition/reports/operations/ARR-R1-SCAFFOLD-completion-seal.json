@@ -1,0 +1,44 @@
+{
+  "task_id": "ARR-R1-SCAFFOLD",
+  "status": "CANDIDATE_REPOSITORY_LOCAL_SYNC_ONLY",
+  "method_version": "1.0.0",
+  "manifest_path": "data/operations/iterations/ARR-R1-SCAFFOLD.json",
+  "phase_b": {
+    "draft_pr": null,
+    "merged_pr": null,
+    "branch": "architecture/adaptive-relational-runtime-r1-scaffold",
+    "base": "main",
+    "base_head": "6723cdfaf52873516c564c324066361b257cdf52",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/adaptive-relational-runtime-r1-scaffold-receipt.md",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_repository_scaffold_capability_only: ARR R1 scaffold registers derived-representation surfaces, maps and CI synchronization; it does not add a truth layer, L7, execution engine, external action or causal upgrade."
+  },
+  "lifecycle": {
+    "candidate": true,
+    "ready_for_gpt_verification": false,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "external_exact_head_attestation": {
+    "required": true,
+    "embedded_in_seal": false,
+    "authority": "pull_request_body_and_1111_receipt",
+    "required_workflows": [
+      "foundation-validation",
+      "function-os-ci"
+    ],
+    "live_refetch_before_acceptance_or_merge": true,
+    "claim_boundary": "This seal records repository-local ARR R1 scaffold synchronization consistency only. Final main closeout HEAD and post-closeout CI are external attestations re-fetched live; not self-asserted."
+  },
+  "boundaries": {
+    "adds_truth_layer": false,
+    "proves_truth_value_causality_or_correctness": false,
+    "modifies_frozen_assets": false
+  }
+}

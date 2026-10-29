@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Domain layer（案例、对象、事件）→ 历史案例来源（790 条）](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ab0af43d35333449 / Domain layer（案例、对象、事件）→ 历史案例来源（790 条）
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
 - [dominant discourse is not fact](../../../docs/metacognition/scientific-metacognition-i1-architecture-decision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5a6688c60ae59cfe / dominant discourse is not fact
@@ -333,6 +338,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ce50e9fc304b3863 / FEDERATION --> OPENCLAW\[OpenClaw adapter\]
   - 来源：`docs/architecture/agent-platform-r2.md`
+  - 依赖：—；被引用：—
+- [Feedback and growth signals are Plane 6 record kinds; they never rewrite Plane 1–5 records.](../../../docs/architecture/self-growth-control-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f420045df697e383 / Feedback and growth signals are Plane 6 record kinds; they never rewrite Plane 1–5 records.
+  - 来源：`docs/architecture/self-growth-control-plane.md`
   - 依赖：—；被引用：—
 - [filename = "live-current-projection-r1.schema.json"](../../../agent_federation/live_current_projection.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1804,6 +1814,11 @@
   - 可搜索名称：NFC-e7ce88d38f7516c0 / R0\(repro\): `tests/repro_rb09_r2_capability.py` + `tests/repro_rb09_world_feedback_anomaly_r2_evidence.txt` — the authent
   - 来源：`docs/repair-r3/repair-r3/world_feedback_anomaly-freeze.md`
   - 依赖：—；被引用：—
+- [R1 \(single-failure hard block\)**: `feedback_refs` length 1 or `recurrence_evidence` < 2 independent objects ⇒ G1 FAIL; t](../../../docs/architecture/self-growth-control-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bc73b6fc924369eb / R1 \(single-failure hard block\)**: `feedback_refs` length 1 or `recurrence_evidence` < 2 independent objects ⇒ G1 FAIL; t
+  - 来源：`docs/architecture/self-growth-control-plane.md`
+  - 依赖：—；被引用：—
 - [R1 process-observation ledger and never claims what an executor inferred](../../../agent_federation/live_inference_observation_events.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8a2158c5736d2739 / R1 process-observation ledger and never claims what an executor inferred
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-13743091cfedc2b0 / repeated same-context outputs are not independent evidence;
   - 来源：`reports/architecture/121Q13-attention-distribution-compression.md`
-  - 依赖：—；被引用：—
-- [repository state only. It does not assert external truth, universal](../../../agent-results/IGNITION-20260829-148-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0f8f5f91f458f363 / repository state only. It does not assert external truth, universal
-  - 来源：`agent-results/IGNITION-20260829-148-result.md`
-  - 依赖：—；被引用：—
-- [Repository-local canonical Current advancement, deterministic projections, bounded regression evidence and pre-publicati](../../../agent-results/IGNITION-20260822-132-machine-receipt.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-70bd84a3c89f16b1 / Repository-local canonical Current advancement, deterministic projections, bounded regression evidence and pre-publicati
-  - 来源：`agent-results/IGNITION-20260822-132-machine-receipt.json`
-  - 依赖：—；被引用：—
-- [Repository-local Current Surface projection, semantic consistency, lifecycle and release evidence only; no Owner authori](../../../agent-results/IGNITION-20260821-130-machine-receipt.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-029df6aa0fcf0152 / Repository-local Current Surface projection, semantic consistency, lifecycle and release evidence only; no Owner authori
-  - 来源：`agent-results/IGNITION-20260821-130-machine-receipt.json`
   - 依赖：—；被引用：—

@@ -200,6 +200,13 @@
 - 5 分钟：主题：Governance report: IGNITION-20260907-162；主题：Controlling specification and lifecycle；The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-162.md at command commit 8ab1aac0cdedd4874c798f4593614335cdd79e76, blob df58765e5c21cf3b0aba15f804ce461b4b1c542e, complete-content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a. The Formal base is Arvin-liu/when-systems-catch-fire branch work/IGNITION-…；The command was executed as research-only work. The required instructions/CURRENT.md and relay/current pointers were missing in the exact base and remain untouched, recorded as STALECONTROLPOINTER / PREFLIGHTRESIDUAL. No canonical runtime, canonical validator, Current/relay surface, Ready transition, merge, Owner acceptance, production claim, external action…；The result remains RESEARCHONLYDRAFTPENDING.；主题：Formal publication receipt
 - 完整阅读：[reports/governance/task-IGNITION-20260907-162.md](../../reports/governance/task-IGNITION-20260907-162.md)
 
+<a id="reading-hr-0d6bb2101f76490d"></a>
+## Adaptive Relational Runtime ADRs / 架构决策记录
+`CURRENT_SCOPED_SOURCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Adaptive Relational Runtime ADRs / 架构决策记录；Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability；Architecture decision records for the Adaptive Relational Runtime (ARR) R1 scaffold. Each ADR records a decision made during scaffold drafting, its context, the rejected alternatives and its consequences. These ADRs are part of a Draft/candidate scaffold; they record design intent under independent review, not accepted project direction.；主题：ADR-1: Nine primitives instead of a large domain ontology；Status: Draft (proposed for this scaffold)；Context: Plane 2 (Objectization) needs a cross-domain object model that can carry text, Git/code, structured data, runtime receipts and declared events without per-domain schema forking. A large domain ontology would freeze premature type commitments, invite silent semantic drift, and duplicate the Foundation's existing object/evidence/claim registries.
+- 完整阅读：[docs/architecture/adaptive-relational-runtime-adrs.md](../../docs/architecture/adaptive-relational-runtime-adrs.md)
+
 <a id="reading-hr-0dc8e1b43354e8da"></a>
 ## IGNITION-138 — Step 00 Amendment-01 Local Executor Census
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；选择长期极限效用或长期稳定性最大的行动。；'长期极限效用/稳定性'未界定尺度与主体，易退化为维持任何现状（歧义/适用边界）。
 - 完整阅读：[docs/governance/meta-protocol-reviews/protocols/V4.md](../../docs/governance/meta-protocol-reviews/protocols/V4.md)
-
-<a id="reading-hr-1c6a8f5e8b981082"></a>
-## 121B Fulltext Batch Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121B Fulltext Batch Report；主题：Task: IGNITION-20260709-121B；主题：Date: 2026-07-14；主题：Model: qclaw/pool-glm-5.2-night | Thinking: high；主题：Executive Summary；121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure reasons, and 30 provisional reviews were downgraded from FULLT…
-- 完整阅读：[reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)

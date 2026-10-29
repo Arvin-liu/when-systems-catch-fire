@@ -1,0 +1,82 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Function OS adapter dual-route (registered FN-YYYYMMDD-NNNN vs deterministic_stub), production receipt adapter read-only capability, and the static-gate import whitelist.",
+  "adapter_capabilities": [
+    {
+      "capability_id": "stub_text_extract",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/stubs",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "status": "active",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "stub_deterministic_transform",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/stubs",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "status": "active",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "stub_receipt_validate",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/stubs",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "status": "active",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "FN-20260724-0001",
+      "kind": "function_os_capability",
+      "source_ref": "function-os-candidate/v0.2",
+      "registered_revision": 1,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "status": "active",
+      "registry_version": "1.0.0"
+    }
+  ],
+  "production_receipt_adapter": {
+    "read_only": true,
+    "allowed_op_types": [
+      "run",
+      "bootstrap",
+      "promote_request",
+      "promote_approval",
+      "evolve"
+    ],
+    "forbidden_actions": [
+      "publish_generation",
+      "promote",
+      "evolve",
+      "network",
+      "subprocess",
+      "external_write"
+    ]
+  },
+  "static_gate_import_whitelist": [
+    "tools.ignition_runtime.generation",
+    "tools.ignition_runtime.hashutil",
+    "tools.ignition_runtime.errors",
+    "tools.ignition_runtime.schemas_loader"
+  ]
+}

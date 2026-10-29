@@ -844,6 +844,11 @@
   - 可搜索名称：IMPLICIT-3815AF344E71FE01 / ## 3. 强断言门控 \(Strong-Claim Gates\) / IMPLICIT-3815AF344E71FE01
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
   - 依赖：—；被引用：—
+- [## 6. Project registry / topology integration \(commit-5 obligation\)](../../../docs/architecture/adaptive-relational-runtime-interop.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F9DADBADFAC246E0 / ## 6. Project registry / topology integration \(commit-5 obligation\) / IMPLICIT-F9DADBADFAC246E0
+  - 来源：`docs/architecture/adaptive-relational-runtime-interop.md`
+  - 依赖：—；被引用：—
 - [## Charter Gate / 价值宪章门](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-87AC2BDB11797828 / ## Charter Gate / 价值宪章门 / IMPLICIT-87AC2BDB11797828
@@ -888,6 +893,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DCE6DA17F058B7B8 / ## 治理文档索引 / Governance Index / IMPLICIT-DCE6DA17F058B7B8
   - 来源：`docs/governance/README.md`
+  - 依赖：—；被引用：—
+- [### Kernel — judgment and governance core](../../../docs/architecture/adaptive-relational-runtime.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FADC010087FAF348 / ### Kernel — judgment and governance core / IMPLICIT-FADC010087FAF348
+  - 来源：`docs/architecture/adaptive-relational-runtime.md`
   - 依赖：—；被引用：—
 - [$ python tools/counterfactual/validate_counterfactual_unrealized_path_gate.py \\](../../../docs/counterfactual/q42-i1-repair-architecture.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -964,6 +974,11 @@
   - 可搜索名称：NFC-424b46e2e7fb81d2 / \(`Q38_START_FORBIDDEN`, 19\). Q37 never performs Q38 case retrieval.
   - 来源：`docs/analogy/q37-interfaces.md`
   - 依赖：—；被引用：—
+- [\(d\) `source.tier` ↔ `evidence.tier` bridge** — an explicit bridge field between](../../../docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-45b2e9d762bb1ec7 / \(d\) `source.tier` ↔ `evidence.tier` bridge** — an explicit bridge field between
+  - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
+  - 依赖：—；被引用：—
 - [\(EVIDENCE_BINDING_INVALID\). No strip before hashing.](../../../docs/anomaly/q41-i1-repair-architecture.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-dd81920e26fd2b21 / \(EVIDENCE_BINDING_INVALID\). No strip before hashing.
@@ -978,6 +993,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cbbb6690ed700cfa / \(OUT / "121-fulltext-evidence-cards.jsonl"\).write_text\(
   - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- [\(R12/R11 + `claim_ceiling` PRIMARY_VERIFIED + forbidden-word scan\). Security outcome is](../../../docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-67ff53aa9049917d / \(R12/R11 + `claim_ceiling` PRIMARY_VERIFIED + forbidden-word scan\). Security outcome is
+  - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
   - 依赖：—；被引用：—
 - [\(transitions, if any, validated on demand; none required for E0 retention\)](../../../evidence-program/tools/validate_evidence_program.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-82b2e679e1ae4823 / \[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)
   - 来源：`SUMMARY.md`
-  - 依赖：—；被引用：—
-- [\[验证与审计指南\]\(./validation-and-audit.md\)：机器门、人工门、项目审计及指标的准确边界。](../../../docs/language-thought/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-134505c326457312 / \[验证与审计指南\]\(./validation-and-audit.md\)：机器门、人工门、项目审计及指标的准确边界。
-  - 来源：`docs/language-thought/README.md`
-  - 依赖：—；被引用：—
-- [_CORRECTED_GAP001_EVIDENCE_READY_FOR_PROVISIONAL_INTERFACE_REVIEW](../../../reports/external-research/106-next-task-handoff.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5deeaf18a7c3f693 / _CORRECTED_GAP001_EVIDENCE_READY_FOR_PROVISIONAL_INTERFACE_REVIEW
-  - 来源：`reports/external-research/106-next-task-handoff.md`
-  - 依赖：—；被引用：—
-- [_id\(record.get\("artifact_id"\), f"{item_path}.artifact_id", issues\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e4405b6bd64a7341 / _id\(record.get\("artifact_id"\), f"{item_path}.artifact_id", issues\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "ARTIFACT_IDENTITY", f"{item_path}.sha256", "artifact must carry a sha256 identity"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6ee170888ceea6e1 / _issue\(issues, "ARTIFACT_IDENTITY", f"{item_path}.sha256", "artifact must carry a sha256 identity"\)
-  - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

@@ -1454,10 +1454,25 @@
   - 可搜索名称：IMPLICIT-C2A834023B1EFA56 / ## 3. Function Paradigm Cards / IMPLICIT-C2A834023B1EFA56
   - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
   - 依赖：—；被引用：—
+- [## 3. GrowthSignal contract and the EVOLVE-candidate gate](../../../docs/architecture/self-growth-control-plane.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FB4B7B569D425C7A / ## 3. GrowthSignal contract and the EVOLVE-candidate gate / IMPLICIT-FB4B7B569D425C7A
+  - 来源：`docs/architecture/self-growth-control-plane.md`
+  - 依赖：—；被引用：—
 - [## 3. Status Model](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BAF019A0F0A0451E / ## 3. Status Model / IMPLICIT-BAF019A0F0A0451E
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [## 4. Function OS interop — adapter, not executor](../../../docs/architecture/adaptive-relational-runtime-interop.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DF28FB84B1CECD26 / ## 4. Function OS interop — adapter, not executor / IMPLICIT-DF28FB84B1CECD26
+  - 来源：`docs/architecture/adaptive-relational-runtime-interop.md`
+  - 依赖：—；被引用：—
+- [## 4. Gate state machine \(no execution out-edges\)](../../../docs/architecture/self-growth-control-plane.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-71F8C9309E82F9E8 / ## 4. Gate state machine \(no execution out-edges\) / IMPLICIT-71F8C9309E82F9E8
+  - 来源：`docs/architecture/self-growth-control-plane.md`
   - 依赖：—；被引用：—
 - [## 4. Internal Function Asset Inventory](../../../reports/external-research/120-function-paradigm-atlas-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1523,6 +1538,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-528434CDA3829C5B / ## Activation gate / IMPLICIT-528434CDA3829C5B
   - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [## ADR-2: Routing is a pre-gate that reuses existing engine validators](../../../docs/architecture/adaptive-relational-runtime-adrs.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4DE0FE7CA73A7F93 / ## ADR-2: Routing is a pre-gate that reuses existing engine validators / IMPLICIT-4DE0FE7CA73A7F93
+  - 来源：`docs/architecture/adaptive-relational-runtime-adrs.md`
   - 依赖：—；被引用：—
 - [## Authority separation](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1763,6 +1783,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D866534FD9EB7C11 / ## nfc-a6b80fca608c8c8f — This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git / IMPLICIT-D866534FD9EB7C11
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C004.md`
+  - 依赖：—；被引用：—
+- [## One kernel, six planes](../../../docs/architecture/adaptive-relational-runtime.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8D00FA9C65D19D83 / ## One kernel, six planes / IMPLICIT-8D00FA9C65D19D83
+  - 来源：`docs/architecture/adaptive-relational-runtime.md`
   - 依赖：—；被引用：—
 - [## Operational Surface](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2477,30 +2502,5 @@
 - [### \[#236｜四层乘法门控=神经通路归零律\]\(docs/zh/cases/items/C-0236.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CC9CAA45FEE7CA33 / ### \[#236｜四层乘法门控=神经通路归零律\]\(docs/zh/cases/items/C-0236.md\) / IMPLICIT-CC9CAA45FEE7CA33
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#258｜动态算力分配\]\(docs/zh/cases/items/C-0258.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-25B250E984F8DB42 / ### \[#258｜动态算力分配\]\(docs/zh/cases/items/C-0258.md\) / IMPLICIT-25B250E984F8DB42
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#260｜r_cross=0不导致Ψ=0\]\(docs/zh/cases/items/C-0260.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B01E5F4F7D3FC904 / ### \[#260｜r_cross=0不导致Ψ=0\]\(docs/zh/cases/items/C-0260.md\) / IMPLICIT-B01E5F4F7D3FC904 / IMPLICIT-D14E2F914930DDFE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#287｜抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降\]\(docs/zh/cases/items/C-0287.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DACDC67115EED915 / ### \[#287｜抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降\]\(docs/zh/cases/items/C-0287.md\) / IMPLICIT-DACDC67115EED915
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#302｜信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降\]\(docs/zh/cases/items/C-0302.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-871CA1038A49A3A6 / ### \[#302｜信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降\]\(docs/zh/cases/items/C-0302.md\) / IMPLICIT-871CA1038A49A3A6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#317｜权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非\]\(docs/zh/cases/items/C-0317.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3DB8C281F24AEC19 / ### \[#317｜权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非\]\(docs/zh/cases/items/C-0317.md\) / IMPLICIT-3DB8C281F24AEC19
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

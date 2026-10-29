@@ -166,6 +166,7 @@
 {"first_line":22,"last_line":22,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"A1"}
 {"first_line":18,"last_line":558,"mention_count":12,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"A1"}
 {"first_line":3477,"last_line":8585,"mention_count":12,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"A1"}
+{"first_line":10,"last_line":75,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/failure-classes.json","role":"REFERENCE","stable_id":"A1"}
 {"first_line":8,"last_line":8,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"A1"}
 {"first_line":44,"last_line":73,"mention_count":4,"path":"data/external-research/121-fulltext-resolver/121-extracts.jsonl","role":"REFERENCE","stable_id":"A1"}
 {"first_line":115,"last_line":116,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json","role":"REFERENCE","stable_id":"A1"}
@@ -358,6 +359,7 @@
 {"first_line":34,"last_line":34,"mention_count":1,"path":"统一案例总表/0806-C-0811-角色覆盖主体到身份提问.md","role":"REFERENCE","stable_id":"A15"}
 {"first_line":54,"last_line":72,"mention_count":2,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"A2"}
 {"first_line":3506,"last_line":3521,"mention_count":2,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"A2"}
+{"first_line":11,"last_line":76,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/failure-classes.json","role":"REFERENCE","stable_id":"A2"}
 {"first_line":38,"last_line":38,"mention_count":1,"path":"data/collisions/20260711-disobedience-subjectivity.json","role":"REFERENCE","stable_id":"A2"}
 {"first_line":21,"last_line":21,"mention_count":1,"path":"data/collisions/20260712-disobedience-audit-056.json","role":"REFERENCE","stable_id":"A2"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"A2"}
@@ -1597,7 +1599,7 @@
 {"first_line":277,"last_line":277,"mention_count":1,"path":"OPERATING-METHOD.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":214,"last_line":214,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":195,"last_line":195,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C002.md","role":"REFERENCE","stable_id":"D1"}
-{"first_line":666,"last_line":682,"mention_count":3,"path":"data/architecture/interactive-system-map.json","role":"REFERENCE","stable_id":"D1"}
+{"first_line":674,"last_line":690,"mention_count":3,"path":"data/architecture/interactive-system-map.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":21,"last_line":21,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":73,"last_line":73,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D1"}
 {"first_line":1,"last_line":118,"mention_count":18,"path":"data/foundation/adjudications/083-repaired-adjudications.jsonl","role":"REFERENCE","stable_id":"D1"}
@@ -1689,7 +1691,7 @@
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":375,"last_line":408,"mention_count":3,"path":"data/operations/iterations/D2-I1.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":44,"last_line":1257,"mention_count":229,"path":"data/operations/iterations/F15-D1-I1.json","role":"REFERENCE","stable_id":"D1"}
-{"first_line":2886,"last_line":2932,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
+{"first_line":2889,"last_line":2935,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":6,"last_line":721,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-closure.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/operations/propagation/F15-D1-I1-impact-report.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":42,"last_line":638,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-request.json","role":"REFERENCE","stable_id":"D1"}
@@ -22232,6 +22234,7 @@
 {"first_line":55,"last_line":55,"line":55,"mention_count":1,"path":"evidence-program/tools/validate_evidence_program.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4B8E5AFB5E508906","text":"def check_instance(inst, schema, path=\"$\"):"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0437-D401-自由能-Φ等价函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4B8FE4A76F6C7D42","text":"title: \"自由能-Φ等价函数\""}
 {"first_line":40,"last_line":40,"line":40,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n6_robust.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4B91530E0B8159E4","text":"def test_trace_hash_deterministic(self):"}
+{"first_line":1,"last_line":1,"line":1,"mention_count":1,"path":"docs/architecture/object-relation-mechanism-model.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4B96193211DD91B1","text":"# Object–Relation–Mechanism Model / 对象–关系–机制模型(九原语合同)"}
 {"first_line":3735,"last_line":3735,"line":3735,"mention_count":1,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4BACD507918A13DF","text":"{\"end_word\":66768,\"label\":\"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What\",\"sequence\":254,\"source_locator\":\"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What\",\"start_word\":66688,\"word_count\":80,\"work_id\":\"OPENSTAX-ECON-3E\"}"}
 {"first_line":20,"last_line":20,"line":20,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n4_robust.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4BB09F34DE4C53A8","text":"def _artifact(self):"}
 {"first_line":4,"last_line":4,"line":4,"mention_count":1,"path":"data/operations/ignition-operation-capability-registry-r1.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4BC0B8F674EEF02F","text":"\"title\": \"Ignition Operation Capability Registry R1\","}
@@ -22274,6 +22277,7 @@
 {"first_line":179,"last_line":179,"line":179,"mention_count":1,"path":"agent_federation/task142_adversarial.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4DC689E6971108A2","text":"def validate_current_projection_fresh(current: Mapping[str, Any], expected: Mapping[str, Any]) -> None:"}
 {"first_line":3504,"last_line":3504,"line":3504,"mention_count":1,"path":"data/operations/iterations/111/candidate_inventory.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4DCC61859D2B8AF8","text":"\"title\": \"nonfunction-claim CLAIM-BC-20260709-013\","}
 {"first_line":1,"last_line":1,"line":1,"mention_count":1,"path":"reports/external-research/120-function-os-architecture-candidate-report.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4DDF8D51900C7E5E","text":"# 120 — Function OS Architecture Candidate Report"}
+{"first_line":17,"last_line":17,"line":17,"mention_count":1,"path":"docs/architecture/adaptive-relational-runtime-adrs.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4DE0FE7CA73A7F93","text":"## ADR-2: Routing is a pre-gate that reuses existing engine validators"}
 {"first_line":5134,"last_line":5134,"line":5134,"mention_count":1,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4DE5953EC658CFD3","text":"{\"end_word\":462809,\"label\":\"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why\",\"sequence\":1721,\"source_locator\":\"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why\",\"start_word\":462717,\"word_count\":92,\"work_id\":\"OPENSTAX-ECON-3E\"}"}
 {"first_line":21,"last_line":21,"line":21,"mention_count":1,"path":"统一函数总表/0566-D551-行星演化函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4DE63EEF3B3DC39D","text":"F_plant_exoplanet := ∫(planetary_conditions × cosmic_habitability × evolutionary_convergence) / exoplanet_topology"}
 {"first_line":269,"last_line":269,"line":269,"mention_count":1,"path":"agent_federation/adapters/openclaw.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-4DFA1AF915BD8A91","text":"def _capability_tokens(snapshot: _ProbeSnapshot) -> tuple[str, ...]:"}
@@ -22925,6 +22929,7 @@
 {"first_line":1,"last_line":1,"line":1,"mention_count":1,"path":"ITERATION.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-71C30753AF7778B0","text":"# 点火迭代操作法 / Ignition Iteration Method"}
 {"first_line":111,"last_line":111,"line":111,"mention_count":1,"path":"agent_federation/live_observation_events.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-71D404A4960F0975","text":"def audit(self) -> dict[str, Any]:"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"agent_federation/router.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-71DC9BF9900E5463","text":"def _strings(value: Any, field: str, *, nonempty: bool = False) -> tuple[str, ...]:"}
+{"first_line":73,"last_line":73,"line":73,"mention_count":1,"path":"docs/architecture/self-growth-control-plane.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-71F8C9309E82F9E8","text":"## 4. Gate state machine (no execution out-edges)"}
 {"first_line":156,"last_line":156,"line":156,"mention_count":1,"path":"agent_federation/adapters/openclaw.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-721850A74955D936","text":"def _public_refs(payload: Mapping[str, Any]) -> tuple[str, ...]:"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0138-C-138-学科训练的遮蔽作用.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-721FDD652C45E182","text":"### [#138｜学科训练的遮蔽作用 / 学科训练的obscuration作用](docs/zh/cases/items/C-0138.md)"}
 {"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"统一案例总表/0025-C-25-法国大革命.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-722F143FEBE6A36D","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0025})=1]."}
@@ -23377,6 +23382,7 @@
 {"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"统一案例总表/0146-C-146-西安加油站便利店.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8CDF0C7E9DDA9EA0","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0146})=1]."}
 {"first_line":67,"last_line":67,"line":67,"mention_count":1,"path":"统一案例总表/0620-C-625-退出权空间案例05.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8CDF2420D8AE5D36","text":"- 数学表达 / Expression: `C_{C-625}(s_{C-625}) = (Σ_i 1[F_i(s)=1]) / |I|`"}
 {"first_line":328,"last_line":328,"line":328,"mention_count":1,"path":"agent_federation/live_transport.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8CE166C51920A38F","text":"def _sanitized_env(env_allowlist: Sequence[str], env_overrides: Mapping[str, str] | None) -> dict[str, str]:"}
+{"first_line":34,"last_line":34,"line":34,"mention_count":1,"path":"docs/architecture/adaptive-relational-runtime.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8D00FA9C65D19D83","text":"## One kernel, six planes"}
 {"first_line":83,"last_line":83,"line":83,"mention_count":1,"path":"agent_federation/adapters/hermes.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8D0CC22BAADF21D6","text":"def no_restore_cwd(self) -> bool:"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0064-C-64-阿兹特克.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8D17ACA5248F6771","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0064})=1]."}
 {"first_line":67,"last_line":67,"line":67,"mention_count":1,"path":"统一案例总表/0630-C-635-退出权空间案例15.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8D306137C395643B","text":"- 数学表达 / Expression: `C_{C-635}(s_{C-635}) = (Σ_i 1[F_i(s)=1]) / |I|`"}
@@ -24925,6 +24931,7 @@
 {"first_line":65,"last_line":65,"line":65,"mention_count":1,"path":"统一案例总表/0458-C-459-加法退化验证 — 同一系统改为加法G=∑fi,Fisher距离有限,A_Fisher不再单调递减,dS.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-DED103C2ADB9F46F","text":"从这条案例看，中文：案例说明：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。… 更像是在验证“退出权、认同和函数映射”之间的对应关系。"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0700-C-0705-可选集动力学×商业模式.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-DF15AF38B89823E3","text":"# C-0705｜可选集动力学×商业模式"}
 {"first_line":48,"last_line":48,"line":48,"mention_count":1,"path":"agent_federation/executor_admission_contract.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-DF206134035177D7","text":"def evaluate_candidate(candidate: Mapping[str, Any]) -> dict[str, Any]:"}
+{"first_line":41,"last_line":41,"line":41,"mention_count":1,"path":"docs/architecture/adaptive-relational-runtime-interop.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-DF28FB84B1CECD26","text":"## 4. Function OS interop — adapter, not executor"}
 {"first_line":1512,"last_line":1512,"line":1512,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-DF36975ABD3B4C9A","text":"\"title\": \"Q31T 已将 L6 `之元写作法` `0.4.0` 双来源素材池收口为当前能力；`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ceilin\","}
 {"first_line":534,"last_line":534,"line":534,"mention_count":1,"path":"agent_federation/contracts.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-DF4F6B268CE996B6","text":"def from_dict(cls, data: Mapping[str, Any]) -> \"FederatedResultReceipt\":"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0250-C-250-复杂性相变退化.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-DF538737862FDAC8","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0250})=1]."}
@@ -25418,6 +25425,7 @@
 {"first_line":107,"last_line":107,"line":107,"mention_count":1,"path":"agent_federation/live_observation_events.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F9C3F87156A8E880","text":"def records(self) -> list[dict[str, Any]]:"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n7_cross_node_composition.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F9CC1D78490CA7EB","text":"def __init__(self, parser, checker, compiler, interpreter, packager,"}
 {"first_line":81,"last_line":81,"line":81,"mention_count":1,"path":"data/operations/iterations/112/publication/tools/audit_r0.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F9CE4F748CDD0AA4","text":"def parse_panorama() -> list[dict[str, object]]:"}
+{"first_line":63,"last_line":63,"line":63,"mention_count":1,"path":"docs/architecture/adaptive-relational-runtime-interop.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F9DADBADFAC246E0","text":"## 6. Project registry / topology integration (commit-5 obligation)"}
 {"first_line":31,"last_line":31,"line":31,"mention_count":1,"path":"data/operations/iterations/110/completed_register.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F9E089F948EDA776","text":"\"title\": \"A bounded subset of Function OS v0.2 operators reproduces reference numeric outputs on a curated fixture.\","}
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"统一案例总表/0732-C-0737-安然公司.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-F9E3FFB8D2C18D4A","text":"## 纯数学函数与推导 / Pure Mathematical Function and Derivation"}
 {"first_line":27,"last_line":27,"line":27,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FA0CE7597470D981","text":"def _sha256(path: Path) -> str:"}
@@ -25435,6 +25443,7 @@
 {"first_line":348,"last_line":348,"line":348,"mention_count":1,"path":"data/operations/iterations/SCIENTIFIC-CONTEXT-PROTOCOL-I1.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FAB51971703D5B9C","text":"\"name\": \"capability_gate_fixture_matrix\","}
 {"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"统一案例总表/0048-C-48-王安石变法.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FABAC4E16F273E07","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0048})=1]."}
 {"first_line":368,"last_line":368,"line":368,"mention_count":1,"path":"agent_federation/failure_forensics.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FACB8DB790A6746F","text":"def update_spool_disposition(capsule: Mapping[str, Any], *, retention_status: str, disposal_status: str) -> dict[str, Any]:"}
+{"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"docs/architecture/adaptive-relational-runtime.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FADC010087FAF348","text":"### Kernel — judgment and governance core"}
 {"first_line":83,"last_line":83,"line":83,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n7_robust.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FAE91030CAE07F24","text":"def test_trace_spec_inconsistency_warning(self):"}
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"agent_federation/live_fault_matrix.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FAEB5BC7ED9B09AD","text":"def _envelope(**changes: Any) -> LiveDispatchEnvelope:"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FAF05CCA73DDBCFA","text":"### [#533｜黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ(视界)⟩, 面积律 x 对数律](docs/zh/cases/items/C-0533.md)"}
@@ -25444,6 +25453,7 @@
 {"first_line":54,"last_line":54,"line":54,"mention_count":1,"path":"reports/external-research/121Q2W-final-consistency-seal-report.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FB15855EF6CC4312","text":"### 84-Source Canonical Index (Final)"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0291-C-291-三层重演验证 — L1.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FB16E57A3469B455","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0291})=1]."}
 {"first_line":3,"last_line":3,"line":3,"mention_count":1,"path":"data/operations/iterations/109/dossiers/OQ-28307.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FB21F1164B34139A","text":"\"title\": \"OQ-103-6：Function OS v0.2 之后的剩余问题\","}
+{"first_line":56,"last_line":56,"line":56,"mention_count":1,"path":"docs/architecture/self-growth-control-plane.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FB4B7B569D425C7A","text":"## 3. GrowthSignal contract and the EVOLVE-candidate gate"}
 {"first_line":10,"last_line":10,"line":10,"mention_count":1,"path":"inputs/collisions/20260708-smoke-test/task.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FB6A1281AE1E30A8","text":"## 使用函数范围"}
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"统一案例总表/0745-C-0750-何刚财务观点.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FB93731CB63F504C","text":"## 关联函数 / Related Functions"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0082-C-82-觅母定向传播.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-FB948C8DEBE579A1","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0082})=1]."}
@@ -27331,6 +27341,7 @@
 {"first_line":107,"last_line":1427,"mention_count":12,"path":"data/research/state-vs-transition-semantics-2026-09-07/split-manifest.json","role":"REFERENCE","stable_id":"T09"}
 {"first_line":466,"last_line":466,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"T1"}
 {"first_line":195,"last_line":195,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C002.md","role":"REFERENCE","stable_id":"T1"}
+{"first_line":174,"last_line":247,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/projection-routes.json","role":"REFERENCE","stable_id":"T1"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"T1"}
 {"first_line":44,"last_line":71,"mention_count":4,"path":"data/external-research/121-fulltext-resolver/121-extracts.jsonl","role":"REFERENCE","stable_id":"T1"}
 {"first_line":250,"last_line":251,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json","role":"REFERENCE","stable_id":"T1"}
@@ -29467,6 +29478,7 @@
 {"first_line":52,"last_line":52,"mention_count":1,"path":"outputs/getbrain/v0.2-function-dependency-graph-20260706.md","role":"REFERENCE","stable_id":"T61"}
 {"first_line":277,"last_line":277,"mention_count":1,"path":"OPERATING-METHOD.md","role":"REFERENCE","stable_id":"T7"}
 {"first_line":700,"last_line":700,"mention_count":1,"path":"STATE-CHANGELOG.md","role":"REFERENCE","stable_id":"T7"}
+{"first_line":174,"last_line":247,"mention_count":2,"path":"data/architecture/adaptive-relational-runtime/registries/projection-routes.json","role":"REFERENCE","stable_id":"T7"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"T7"}
 {"first_line":340,"last_line":341,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json","role":"REFERENCE","stable_id":"T7"}
 {"first_line":219,"last_line":220,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json","role":"REFERENCE","stable_id":"T7"}

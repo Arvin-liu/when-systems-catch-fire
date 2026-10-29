@@ -53,6 +53,9 @@ jobs:
           PY
 
       - name: Run production scenario suite (45 scenarios)
+        env:
+          EXPECTED_HEAD_REF: ${{ github.head_ref || github.ref_name }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha || 'c7f3b1a1b1d61d25aae9ffc67119054daf58d7e6' }}
         run: python3 -m pytest tests/ignition_runtime -q
 
       - name: Foundation front-door validators (must stay green)
