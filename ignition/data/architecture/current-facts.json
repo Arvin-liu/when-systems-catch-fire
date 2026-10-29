@@ -159,7 +159,7 @@
       "cards": 653,
       "changes": 548,
       "layered_readings": 574,
-      "search_records": 24697
+      "search_records": 24698
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "846fa2019f14486382cdc60161fc83be0d1803f055e1e79ff46455e2a9887213"
+      "sha256": "fa0523c66aeb7fd1e25f35d141bbd1d3e8aa058fc0b241e2700d124eb4fd2c5e"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
