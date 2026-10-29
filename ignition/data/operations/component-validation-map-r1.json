@@ -15,9 +15,11 @@
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
         "tests.test_production_execution_authority",
+        "tests.test_release_transaction_protocol",
+        "tests.test_release_transaction_protocol_r3",
         "tests.foundation.test_trigger_coverage"
       ],
-      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
+      "evidence": "Existing incremental-planner, authority, defensive-rejection, and R2/R3 release-transaction protocol tests, plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
       "import_roots": [
         "ignition"
       ]
@@ -233,7 +235,7 @@
       "validation_targets": [
         "g_component_release_controls"
       ],
-      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, and target runner; changes also match the full-regression authority paths.",
+      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, target runner, and protected-main release controls. Its R2/R3 release-transaction protocol and validation workflow are checked by the existing release-control consumer target; router and release-authority changes also match the full-regression authority paths.",
       "change_classifications": [
         "CAPABILITY_ADDITION",
         "GOVERNANCE_CHANGE",
