@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def _mapping\(value: Any, path: str, issues: list\[ValidationIssue\]\) -> Mapping\[str, Any\] \| None:](../../../reos_vnext/validation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BD39F1D466AE1497 / def _mapping\(value: Any, path: str, issues: list\[ValidationIssue\]\) -> Mapping\[str, Any\] \| None: / IMPLICIT-BD39F1D466AE1497
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [def _matrix_row\(adapter: FederatedExecutor, envelope: FederatedTaskEnvelope\) -> dict\[str, Any\]:](../../../agent_federation/pilots.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A124308F4C82A4F0 / def _matrix_row\(adapter: FederatedExecutor, envelope: FederatedTaskEnvelope\) -> dict\[str, Any\]: / IMPLICIT-A124308F4C82A4F0
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
+- [def _new_runtime_scratch\(self, attempt_id: str\) -> RuntimeScratchLease:](../../../agent_federation/live_adapters.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-53F7172E02520062 / def _new_runtime_scratch\(self, attempt_id: str\) -> RuntimeScratchLease: / IMPLICIT-53F7172E02520062
+  - 来源：`agent_federation/live_adapters.py`
+  - 依赖：—；被引用：—
 - [def _nonblank\(value: Any, field: str\) -> None:](../../../agent_federation/task142_first_completion_validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C038C4D1EBC70F82 / def _nonblank\(value: Any, field: str\) -> None: / IMPLICIT-C038C4D1EBC70F82
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-2BDB93B4EC523018 / def parse_protocol_doc\(doc_path: Path\) -> dict\[str, dict\[str, Any\]\]: / IMPLICIT-2BDB93B4EC523018
   - 来源：`inputs/020/validate_formal_protocol.py`
-  - 依赖：—；被引用：—
-- [def passed\(self\) -> bool:](../../../agent_federation/conformance.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3CCB3D1FAC4EC805 / def passed\(self\) -> bool: / IMPLICIT-3CCB3D1FAC4EC805
-  - 来源：`agent_federation/conformance.py`
-  - 依赖：—；被引用：—
-- [def pc\(expression, message\):](../../../function-os-candidate/v0.2/benchmark/generate_corpus.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-54203BAA1DA92C3C / def pc\(expression, message\): / IMPLICIT-54203BAA1DA92C3C
-  - 来源：`function-os-candidate/v0.2/benchmark/generate_corpus.py`
-  - 依赖：—；被引用：—
-- [def pdf_text\(path: Path\) -> str:](../../../scripts/external-research/121_extract_all.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-57AD9F134BF4EFD9 / def pdf_text\(path: Path\) -> str: / IMPLICIT-57AD9F134BF4EFD9
-  - 来源：`scripts/external-research/121_extract_all.py`
   - 依赖：—；被引用：—

@@ -1,5 +1,5 @@
 {
-  "computed_from": "git log --follow --diff-filter=A --format=%ad --date=short",
+  "computed_from": "git log --follow --diff-filter=A --format=%ad --date=short (Ignition and repository roots); fallback: git log --full-history -m --diff-filter=A --format=%ad --date=short (both roots)",
   "entries": {
     "agent-results/IGNITION-121Q6C-result.md": "2026-07-15",
     "agent-results/IGNITION-20260820-127-result.md": "2026-08-21",
