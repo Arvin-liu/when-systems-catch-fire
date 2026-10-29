@@ -4,17 +4,18 @@
 Every declared check runs even after an earlier check fails. The aggregate
 process exits nonzero if any check fails, so diagnostic continuation never
 turns a failed run green. Checks run in one process at a time to keep the
-memory-heavy Foundation generators from overlapping.
+memory-heavy Foundation generators from overlapping. Cancellation and an
+unreconciled timeout/process group stop later checks and are written to the
+command ledger.
 """
 from __future__ import annotations
 
 import argparse
+from contextlib import contextmanager
 import hashlib
 import json
 import os
-import platform
 import re
-import selectors
 import signal
 import subprocess
 import sys
@@ -29,12 +30,11 @@ from typing import Sequence
 
 APP_ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = APP_ROOT.parent
-CHECK_TIMEOUT_SECONDS = 45 * 60
-MAX_OUTPUT_BYTES_PER_STREAM = 256 * 1024
-STREAM_READ_CHUNK_BYTES = 64 * 1024
-PROCESS_TERMINATION_GRACE_SECONDS = 2.0
-PROCESS_REAP_GRACE_SECONDS = 2.0
-SELECT_POLL_SECONDS = 0.05
+DEFAULT_CHECK_TIMEOUT_SECONDS = 45 * 60
+OUTPUT_TAIL_BYTES = 256 * 1024
+OUTPUT_CHUNK_BYTES = 64 * 1024
+MAX_OUTPUT_ARTIFACT_BYTES = 16 * 1024 * 1024
+PROCESS_TERMINATION_GRACE_SECONDS = 5
 
 
 @dataclass(frozen=True)
@@ -42,8 +42,193 @@ class Check:
     name: str
     argv: tuple[str, ...]
     cwd: str = "."
-    timeout_seconds: float = CHECK_TIMEOUT_SECONDS
-    output_limit_bytes: int = MAX_OUTPUT_BYTES_PER_STREAM
+    timeout_seconds: float = DEFAULT_CHECK_TIMEOUT_SECONDS
+
+    def __post_init__(self) -> None:
+        if self.timeout_seconds <= 0:
+            raise ValueError("Foundation check timeout_seconds must be positive")
+
+
+class _CaptureBuffer:
+    """Stream full output to bounded disk storage and keep a bounded tail."""
+
+    def __init__(self, destination: Path | None = None, limit: int = OUTPUT_TAIL_BYTES) -> None:
+        if limit <= 0:
+            raise ValueError("output capture limit must be positive")
+        self.limit = limit
+        self.destination = destination
+        self._output = None
+        self.tail = bytearray()
+        self.total_bytes = 0
+        self.stored_bytes = 0
+        self.digest = hashlib.sha256()
+        self.read_error: str | None = None
+        self._storage_failed = False
+        self._overflowed = False
+        self._lock = threading.Lock()
+
+    def append(self, chunk: bytes) -> None:
+        with self._lock:
+            self.total_bytes += len(chunk)
+            self.digest.update(chunk)
+            self.tail.extend(chunk)
+            if len(self.tail) > self.limit:
+                del self.tail[: len(self.tail) - self.limit]
+            if self.destination is not None and not self._overflowed and not self._storage_failed:
+                remaining = MAX_OUTPUT_ARTIFACT_BYTES - self.stored_bytes
+                portion = chunk[:remaining]
+                if portion:
+                    try:
+                        if self._output is None:
+                            self._output = self.destination.open("wb")
+                        self._output.write(portion)
+                        self.stored_bytes += len(portion)
+                    except OSError as exc:
+                        self.read_error = f"output artifact write failed: {type(exc).__name__}: {exc}"
+                        self._storage_failed = True
+                if len(chunk) > remaining:
+                    self._overflowed = True
+
+    def mark_read_error(self, error: Exception) -> None:
+        with self._lock:
+            self.read_error = f"{type(error).__name__}: {error}"
+
+    def record(self, path: Path) -> dict[str, object]:
+        with self._lock:
+            retained = bytes(self.tail)
+            total_bytes = self.total_bytes
+            stream_digest = self.digest.hexdigest()
+            if self._output is not None:
+                try:
+                    self._output.flush()
+                    self._output.close()
+                except OSError as exc:
+                    self.read_error = f"output artifact close failed: {type(exc).__name__}: {exc}"
+                    self._storage_failed = True
+                self._output = None
+            storage_failed = self._storage_failed
+            overflowed = self._overflowed
+        if self.destination is None or storage_failed or overflowed or not path.exists():
+            try:
+                path.write_bytes(retained)
+            except OSError as exc:
+                self.mark_read_error(exc)
+        try:
+            stored_bytes = path.stat().st_size
+            stored_sha256 = _sha256_file(path)
+        except OSError as exc:
+            self.mark_read_error(exc)
+            stored_bytes = 0
+            stored_sha256 = _sha256(b"")
+        with self._lock:
+            read_error = self.read_error
+        return {
+            "path": path.name,
+            "bytes": stored_bytes,
+            "total_bytes": total_bytes,
+            "sha256": stored_sha256,
+            "stream_sha256": stream_digest,
+            "truncated": total_bytes > stored_bytes,
+            "retention": "last_bytes" if storage_failed or overflowed else "full",
+            "read_error": read_error,
+        }
+
+
+def _drain_pipe(pipe, capture: _CaptureBuffer) -> None:
+    try:
+        while True:
+            chunk = pipe.read(OUTPUT_CHUNK_BYTES)
+            if not chunk:
+                break
+            capture.append(chunk)
+    except (OSError, ValueError) as exc:
+        capture.mark_read_error(exc)
+    finally:
+        try:
+            pipe.close()
+        except OSError as exc:
+            capture.mark_read_error(exc)
+
+
+def _process_group_exists(process_id: int) -> bool:
+    if os.name != "posix":
+        return False
+    try:
+        os.killpg(process_id, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True
+    return True
+
+
+def _terminate_process_group(process: subprocess.Popen, grace_seconds: int = PROCESS_TERMINATION_GRACE_SECONDS) -> bool:
+    """Terminate a timed-out/cancelled check and confirm its process group is gone."""
+    process_id = process.pid
+    if os.name == "posix":
+        try:
+            os.killpg(process_id, signal.SIGTERM)
+        except ProcessLookupError:
+            pass
+        deadline = time.monotonic() + grace_seconds
+        while time.monotonic() < deadline:
+            if process.poll() is None:
+                try:
+                    process.wait(timeout=min(0.1, max(0.01, deadline - time.monotonic())))
+                except subprocess.TimeoutExpired:
+                    pass
+            if not _process_group_exists(process_id):
+                return True
+            time.sleep(0.05)
+        if _process_group_exists(process_id):
+            try:
+                os.killpg(process_id, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+        try:
+            process.wait(timeout=grace_seconds)
+        except subprocess.TimeoutExpired:
+            return False
+        return not _process_group_exists(process_id)
+
+    # GitHub's runner is POSIX, but preserve process-tree cleanup on Windows
+    # hosts too. If taskkill is unavailable, fail closed: terminating only the
+    # immediate process does not prove its descendants stopped.
+    try:
+        terminated = subprocess.run(
+            ["taskkill", "/PID", str(process_id), "/T", "/F"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=grace_seconds,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+    try:
+        process.wait(timeout=grace_seconds)
+    except subprocess.TimeoutExpired:
+        return False
+    return terminated.returncode == 0 and process.poll() is not None
+
+
+@contextmanager
+def _cancellation_watch():
+    """Record SIGINT/SIGTERM so the active child can be stopped and reconciled."""
+    state: dict[str, int | None] = {"signal": None}
+    previous: dict[int, object] = {}
+    if threading.current_thread() is threading.main_thread():
+        def record_signal(signum, _frame) -> None:
+            if state["signal"] is None:
+                state["signal"] = signum
+
+        for signum in (signal.SIGINT, signal.SIGTERM):
+            previous[signum] = signal.getsignal(signum)
+            signal.signal(signum, record_signal)
+    try:
+        yield state
+    finally:
+        for signum, handler in previous.items():
+            signal.signal(signum, handler)
 
 
 def foundation_checks(python_executable: str | Path = sys.executable) -> list[Check]:
@@ -143,7 +328,11 @@ def foundation_checks(python_executable: str | Path = sys.executable) -> list[Ch
         check("test-epistemic-governance-relationships", "-m", "unittest", "tests.test_epistemic_governance_relationships", "-v"),
         check("validate-state-changelog", "tools/validate_state_changelog.py"),
         check("test-state-changelog", "-m", "unittest", "tests.test_state_changelog", "-v"),
-        check("test-foundation", "-m", "unittest", "tests.foundation.test_foundation"),
+        check(
+            "test-foundation",
+            "-m", "unittest",
+            "tests.foundation.test_foundation", "tests.foundation.test_trigger_coverage",
+        ),
         check("test-claim-governance", "-m", "unittest", "tests.foundation.test_claim_governance"),
         check("test-function-asset-closure", "-m", "unittest", "tests.foundation.test_function_asset_closure"),
         check("test-nonfunction-claim-closure", "-m", "unittest", "tests.foundation.test_nonfunction_claim_closure", "-v"),
@@ -176,337 +365,21 @@ def _sha256(value: bytes) -> str:
     return hashlib.sha256(value).hexdigest()
 
 
+def _sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(OUTPUT_CHUNK_BYTES), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def _decode(value: bytes | str) -> str:
     return value.decode("utf-8", errors="replace") if isinstance(value, bytes) else value
 
 
-class _StreamCapture:
-    """Persist a bounded prefix while hashing every byte read from a child pipe."""
-
-    def __init__(self, path: Path, limit_bytes: int) -> None:
-        self.path = path
-        self.limit_bytes = limit_bytes
-        self.stored_bytes = 0
-        self.observed_bytes = 0
-        self.stored_hash = hashlib.sha256()
-        self.observed_hash = hashlib.sha256()
-        self.truncated = False
-        self.eof_reached = False
-        self.handle = None
-
-    def open(self) -> None:
-        self.handle = self.path.open("wb")
-
-    def consume(self, chunk: bytes) -> None:
-        self.observed_bytes += len(chunk)
-        self.observed_hash.update(chunk)
-        available = max(0, self.limit_bytes - self.stored_bytes)
-        stored = chunk[:available]
-        if stored:
-            if self.handle is None:
-                raise OSError(f"capture file is not open: {self.path.name}")
-            self.handle.write(stored)
-            self.handle.flush()
-            self.stored_hash.update(stored)
-            self.stored_bytes += len(stored)
-        if len(stored) != len(chunk):
-            self.truncated = True
-
-    def close(self, *, eof_reached: bool | None = None) -> None:
-        if eof_reached is not None:
-            self.eof_reached = eof_reached
-        if self.handle is not None:
-            self.handle.flush()
-            os.fsync(self.handle.fileno())
-            self.handle.close()
-            self.handle = None
-
-    def metadata(self) -> dict:
-        return {
-            "path": self.path.name,
-            "bytes": self.stored_bytes,
-            "sha256": self.stored_hash.hexdigest(),
-            "observed_bytes": self.observed_bytes,
-            "observed_sha256": self.observed_hash.hexdigest(),
-            "truncated": self.truncated,
-            "eof_reached": self.eof_reached,
-        }
-
-
-def _git_head(root: Path) -> str | None:
-    try:
-        result = subprocess.run(
-            ["git", "-C", str(root), "rev-parse", "HEAD"],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.DEVNULL,
-            check=False,
-            timeout=5,
-        )
-    except (OSError, subprocess.TimeoutExpired):
-        return None
-    return _decode(result.stdout).strip() if result.returncode == 0 else None
-
-
-def _process_group_exists(process: subprocess.Popen) -> bool | None:
-    if os.name != "posix":
-        return None
-    try:
-        os.killpg(process.pid, 0)
-    except ProcessLookupError:
-        return False
-    except PermissionError:
-        return True
-    return True
-
-
-def _signal_process_tree(process: subprocess.Popen, signum: int) -> bool:
-    try:
-        if os.name == "posix":
-            os.killpg(process.pid, signum)
-        elif signum == signal.SIGTERM:
-            process.terminate()
-        else:
-            process.kill()
-    except ProcessLookupError:
-        return False
-    except OSError:
-        if process.poll() is not None:
-            return False
-        raise
-    return True
-
-
-def _terminate_process_tree(process: subprocess.Popen) -> tuple[list[str], bool]:
-    """Terminate the isolated process group and reap it within two bounded waits."""
-    signals_sent: list[str] = []
-    if _signal_process_tree(process, signal.SIGTERM):
-        signals_sent.append("SIGTERM")
-    term_deadline = time.monotonic() + PROCESS_TERMINATION_GRACE_SECONDS
-    while time.monotonic() < term_deadline:
-        process.poll()
-        group_exists = _process_group_exists(process)
-        if process.returncode is not None and group_exists is False:
-            return signals_sent, True
-        time.sleep(min(SELECT_POLL_SECONDS, max(0.0, term_deadline - time.monotonic())))
-
-    group_exists = _process_group_exists(process)
-    if process.returncode is None or group_exists is True:
-        if _signal_process_tree(process, signal.SIGKILL):
-            signals_sent.append("SIGKILL")
-    kill_deadline = time.monotonic() + PROCESS_REAP_GRACE_SECONDS
-    while time.monotonic() < kill_deadline:
-        process.poll()
-        group_exists = _process_group_exists(process)
-        if process.returncode is not None and group_exists is False:
-            return signals_sent, True
-        time.sleep(min(SELECT_POLL_SECONDS, max(0.0, kill_deadline - time.monotonic())))
-    process.poll()
-    group_exists = _process_group_exists(process)
-    if os.name != "posix":
-        return signals_sent, False
-    return signals_sent, process.returncode is not None and group_exists is False
-
-
-def install_cancellation_handlers(cancel_event: threading.Event) -> None:
-    """Convert cooperative runner signals into a bounded cancellation request."""
-    def request_cancel(_signum, _frame) -> None:
-        cancel_event.set()
-
-    signal.signal(signal.SIGINT, request_cancel)
-    signal.signal(signal.SIGTERM, request_cancel)
-
-
-def _not_executed_record(index: int, item: Check, app_root: Path, head: str | None) -> dict:
-    empty = _sha256(b"")
-    return {
-        "index": index,
-        "name": item.name,
-        "argv": list(item.argv),
-        "cwd": str(app_root / item.cwd),
-        "repository_head": head,
-        "started_at_utc": None,
-        "duration_seconds": 0.0,
-        "returncode": None,
-        "status": "NOT_EXECUTED",
-        "termination_reason": "CANCELLED_BEFORE_START",
-        "stdout": {"path": None, "bytes": 0, "sha256": empty, "observed_bytes": 0,
-                   "observed_sha256": empty, "truncated": False, "eof_reached": False},
-        "stderr": {"path": None, "bytes": 0, "sha256": empty, "observed_bytes": 0,
-                   "observed_sha256": empty, "truncated": False, "eof_reached": False},
-        "process_tree_cleanup_complete": True,
-    }
-
-
-def _execute_one_check(
-    *,
-    index: int,
-    total: int,
-    item: Check,
-    command_env: dict[str, str],
-    command_cwd: Path,
-    output: Path,
-    repository_head: str | None,
-    cancel_event: threading.Event,
-) -> dict:
-    slug = re.sub(r"[^a-zA-Z0-9._-]+", "-", item.name).strip("-") or f"check-{index}"
-    stdout_capture = _StreamCapture(output / f"{index:03d}-{slug}.stdout", item.output_limit_bytes)
-    stderr_capture = _StreamCapture(output / f"{index:03d}-{slug}.stderr", item.output_limit_bytes)
-    started = datetime.now(timezone.utc).isoformat()
-    wall_start = time.monotonic()
-    process = None
-    selector = selectors.DefaultSelector()
-    stream_captures = {"stdout": stdout_capture, "stderr": stderr_capture}
-    termination_reason = None
-    termination_attempted = False
-    signals_sent: list[str] = []
-    cleanup_complete = True
-    runner_error = None
-    returncode = None
-    opened = []
-    try:
-        if item.timeout_seconds <= 0:
-            raise ValueError("check timeout_seconds must be positive")
-        if item.output_limit_bytes < 0:
-            raise ValueError("check output_limit_bytes must be nonnegative")
-        for capture in (stdout_capture, stderr_capture):
-            capture.open()
-            opened.append(capture)
-        if cancel_event.is_set():
-            termination_reason = "CANCELLED_BEFORE_START"
-            returncode = None
-        else:
-            process = subprocess.Popen(
-                list(item.argv),
-                cwd=command_cwd,
-                env=command_env,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                bufsize=0,
-                close_fds=True,
-                start_new_session=(os.name == "posix"),
-            )
-            for name, pipe in (("stdout", process.stdout), ("stderr", process.stderr)):
-                if pipe is None:
-                    raise OSError(f"child {name} pipe was not created")
-                os.set_blocking(pipe.fileno(), False)
-                selector.register(pipe, selectors.EVENT_READ, name)
-
-            while selector.get_map() or process.poll() is None:
-                if process.poll() is not None and os.name == "posix" and _process_group_exists(process) is True and termination_reason is None:
-                    termination_reason = "PROCESS_TREE_LEAK"
-                if termination_reason is None:
-                    if cancel_event.is_set():
-                        termination_reason = "CANCELLED"
-                    elif stdout_capture.truncated or stderr_capture.truncated:
-                        termination_reason = "OUTPUT_LIMIT_EXCEEDED"
-                    elif time.monotonic() - wall_start >= item.timeout_seconds:
-                        termination_reason = "TIMEOUT"
-                if termination_reason is not None and not termination_attempted:
-                    termination_attempted = True
-                    sent, cleanup_complete = _terminate_process_tree(process)
-                    signals_sent.extend(sent)
-                    if not cleanup_complete:
-                        runner_error = "process tree did not disappear within bounded termination/reap grace"
-                events = selector.select(SELECT_POLL_SECONDS)
-                for key, _mask in events:
-                    name = key.data
-                    pipe = key.fileobj
-                    try:
-                        chunk = os.read(pipe.fileno(), STREAM_READ_CHUNK_BYTES)
-                    except BlockingIOError:
-                        continue
-                    capture = stream_captures[name]
-                    if chunk:
-                        capture.consume(chunk)
-                    else:
-                        selector.unregister(pipe)
-                        pipe.close()
-                        capture.close(eof_reached=True)
-                if termination_reason is not None and runner_error is not None:
-                    break
-            if process.poll() is None:
-                process.wait(timeout=PROCESS_REAP_GRACE_SECONDS)
-            returncode = process.returncode
-    except OSError as exc:
-        runner_error = f"{type(exc).__name__}: {exc}"
-        if process is None:
-            termination_reason = "LAUNCH_ERROR"
-            returncode = 127
-        else:
-            termination_reason = "RUNNER_EXCEPTION"
-            sent, cleanup_complete = _terminate_process_tree(process)
-            signals_sent.extend(sent)
-            try:
-                returncode = process.wait(timeout=PROCESS_REAP_GRACE_SECONDS)
-            except subprocess.TimeoutExpired:
-                cleanup_complete = False
-    except (ValueError, OSError) as exc:
-        runner_error = f"{type(exc).__name__}: {exc}"
-        termination_reason = "RUNNER_EXCEPTION"
-        if process is not None:
-            sent, cleanup_complete = _terminate_process_tree(process)
-            signals_sent.extend(sent)
-            returncode = process.poll()
-    except BaseException as exc:
-        runner_error = f"{type(exc).__name__}: {exc}"
-        termination_reason = "CANCELLED" if isinstance(exc, KeyboardInterrupt) else "RUNNER_EXCEPTION"
-        if process is not None:
-            sent, cleanup_complete = _terminate_process_tree(process)
-            signals_sent.extend(sent)
-            returncode = process.poll()
-    finally:
-        for key in list(selector.get_map().values()):
-            try:
-                selector.unregister(key.fileobj)
-                key.fileobj.close()
-            except (OSError, ValueError):
-                pass
-        selector.close()
-        for capture in opened:
-            if capture.handle is not None:
-                try:
-                    capture.close()
-                except OSError as exc:
-                    runner_error = runner_error or f"capture close failed: {exc}"
-
-    duration = round(time.monotonic() - wall_start, 3)
-    if termination_reason == "CANCELLED_BEFORE_START":
-        status = "NOT_EXECUTED"
-    elif termination_reason == "TIMEOUT":
-        status = "TIMEOUT"
-    elif termination_reason == "OUTPUT_LIMIT_EXCEEDED":
-        status = "OUTPUT_LIMIT_EXCEEDED"
-    elif termination_reason == "CANCELLED":
-        status = "CANCELLED"
-    elif termination_reason == "PROCESS_TREE_LEAK":
-        status = "FAIL"
-    elif termination_reason == "RUNNER_EXCEPTION" or runner_error and termination_reason != "LAUNCH_ERROR":
-        status = "ABORTED"
-    else:
-        status = "PASS" if returncode == 0 else "FAIL"
-    if not cleanup_complete and status != "NOT_EXECUTED":
-        status = "ABORTED"
-    return {
-        "index": index,
-        "name": item.name,
-        "argv": list(item.argv),
-        "cwd": str(command_cwd),
-        "repository_head": repository_head,
-        "started_at_utc": started,
-        "duration_seconds": duration,
-        "returncode": returncode,
-        "status": status,
-        "termination_reason": termination_reason,
-        "timeout_seconds": item.timeout_seconds,
-        "output_limit_bytes_per_stream": item.output_limit_bytes,
-        "stdout": stdout_capture.metadata(),
-        "stderr": stderr_capture.metadata(),
-        "signals_sent": signals_sent,
-        "termination_grace_seconds": PROCESS_TERMINATION_GRACE_SECONDS,
-        "reap_grace_seconds": PROCESS_REAP_GRACE_SECONDS,
-        "process_tree_cleanup_complete": cleanup_complete,
-        "runner_error": runner_error,
-    }
+def _tail(value: bytes | str, max_lines: int = 100) -> str:
+    lines = _decode(value).splitlines()
+    return "\n".join(lines[-max_lines:])
 
 
 def execute_checks(
@@ -516,7 +389,6 @@ def execute_checks(
     app_root: Path = APP_ROOT,
     evidence_dir: Path,
     env: dict[str, str] | None = None,
-    cancel_event: threading.Event | None = None,
 ) -> dict:
     root = repo_root.resolve()
     app = app_root.resolve()
@@ -536,112 +408,265 @@ def execute_checks(
 
     ledger_path = output / "command-ledger.jsonl"
     records: list[dict] = []
-    failures: list[dict] = []
-    cancel_event = cancel_event or threading.Event()
+    failures: list[str] = []
     started_at = datetime.now(timezone.utc).isoformat()
-    head_sha = _git_head(root)
-    aborted = False
-    cancelled = False
-    with ledger_path.open("w", encoding="utf-8") as ledger:
+    stop_reason: str | None = None
+
+    def append_record(ledger, record: dict) -> None:
+        records.append(record)
+        ledger.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
+        ledger.flush()
+
+    def record_not_run(ledger, number: int, item: Check, reason: str) -> None:
+        slug = re.sub(r"[^a-zA-Z0-9._-]+", "-", item.name).strip("-") or f"check-{number}"
+        stdout_path = output / f"{number:03d}-{slug}.stdout"
+        stderr_path = output / f"{number:03d}-{slug}.stderr"
+        empty_stdout = _CaptureBuffer(stdout_path).record(stdout_path)
+        empty_stderr = _CaptureBuffer(stderr_path).record(stderr_path)
+        record = {
+            "index": number,
+            "name": item.name,
+            "argv": list(item.argv),
+            "cwd": str(app / item.cwd),
+            "started_at_utc": None,
+            "duration_seconds": 0,
+            "timeout_seconds": item.timeout_seconds,
+            "returncode": None,
+            "status": reason,
+            "reason": stop_reason,
+            "process_group_terminated": None,
+            "output_readers_complete": True,
+            "stdout": empty_stdout,
+            "stderr": empty_stderr,
+        }
+        failures.append(item.name)
+        append_record(ledger, record)
+
+    with _cancellation_watch() as cancel_state, ledger_path.open("w", encoding="utf-8") as ledger:
         for number, item in enumerate(checks, 1):
-            if cancel_event.is_set():
-                cancelled = True
-                record = _not_executed_record(number, item, app, head_sha)
-            else:
-                try:
-                    record = _execute_one_check(
-                        index=number,
-                        total=len(checks),
-                        item=item,
-                        command_env=command_env,
-                        command_cwd=app / item.cwd,
-                        output=output,
-                        repository_head=head_sha,
-                        cancel_event=cancel_event,
-                    )
-                except BaseException as exc:
-                    record = _not_executed_record(number, item, app, head_sha)
-                    record["status"] = "ABORTED"
-                    record["termination_reason"] = "RUNNER_EXCEPTION"
-                    record["runner_error"] = f"{type(exc).__name__}: {exc}"
-                    aborted = True
-            records.append(record)
-            ledger.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
-            ledger.flush()
-            os.fsync(ledger.fileno())
-            print(
-                f"FOUNDATION_CHECK {number}/{len(checks)} {item.name} "
-                f"status={record['status']} exit={record['returncode']} duration={record['duration_seconds']}s",
-                flush=True,
-            )
-            if record["status"] not in {"PASS", "NOT_EXECUTED"}:
-                failures.append({"name": item.name, "status": record["status"]})
-            if record["termination_reason"] == "CANCELLED_BEFORE_START":
-                cancelled = True
-            if record["status"] in {"CANCELLED", "ABORTED"}:
-                cancelled = record["status"] == "CANCELLED"
-                aborted = record["status"] == "ABORTED"
-            if cancelled or aborted:
-                for future_index, future in enumerate(checks[number:], number + 1):
-                    future_record = _not_executed_record(future_index, future, app, head_sha)
-                    records.append(future_record)
-                    ledger.write(json.dumps(future_record, ensure_ascii=False, sort_keys=True) + "\n")
-                    ledger.flush()
-                    os.fsync(ledger.fileno())
+            if cancel_state["signal"] is not None:
+                stop_reason = f"runner received signal {cancel_state['signal']} before starting {item.name}"
+                for pending_number, pending in enumerate(checks[number - 1 :], number):
+                    record_not_run(ledger, pending_number, pending, "NOT_RUN_CANCELLED")
                 break
 
-    head_after = _git_head(root)
-    if head_sha is not None and head_after != head_sha:
-        aborted = True
-        failures.append({"name": "repository-head-stability", "status": "ABORTED"})
-    checks_not_executed = sum(
-        row["status"] == "NOT_EXECUTED" or row["started_at_utc"] is None for row in records
+            slug = re.sub(r"[^a-zA-Z0-9._-]+", "-", item.name).strip("-") or f"check-{number}"
+            stdout_path = output / f"{number:03d}-{slug}.stdout"
+            stderr_path = output / f"{number:03d}-{slug}.stderr"
+            command_cwd = app / item.cwd
+            wall_start = time.monotonic()
+            started = datetime.now(timezone.utc).isoformat()
+            stdout_capture = _CaptureBuffer(stdout_path)
+            stderr_capture = _CaptureBuffer(stderr_path)
+            process: subprocess.Popen | None = None
+            stdout_reader: threading.Thread | None = None
+            stderr_reader: threading.Thread | None = None
+            status = "FAIL"
+            returncode: int | None = 127
+            process_group_terminated: bool | None = None
+            output_readers_complete = True
+            termination_reason = "NONE"
+
+            try:
+                popen_options = {"start_new_session": True} if os.name == "posix" else {
+                    "creationflags": getattr(subprocess, "CREATE_NEW_PROCESS_GROUP", 0)
+                }
+                process = subprocess.Popen(
+                    list(item.argv),
+                    cwd=command_cwd,
+                    env=command_env,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    **popen_options,
+                )
+                assert process.stdout is not None and process.stderr is not None
+                stdout_reader = threading.Thread(target=_drain_pipe, args=(process.stdout, stdout_capture), daemon=True)
+                stderr_reader = threading.Thread(target=_drain_pipe, args=(process.stderr, stderr_capture), daemon=True)
+                stdout_reader.start()
+                stderr_reader.start()
+                deadline = wall_start + item.timeout_seconds
+                print(
+                    f"FOUNDATION_CHECK_STARTED {number}/{len(checks)} {item.name} "
+                    f"timeout={item.timeout_seconds:g}s",
+                    flush=True,
+                )
+
+                while True:
+                    if cancel_state["signal"] is not None:
+                        termination_reason = f"SIGNAL_{cancel_state['signal']}"
+                        process_group_terminated = _terminate_process_group(process)
+                        status = "CANCELLED" if process_group_terminated else "CANCELLED_UNRECONCILED"
+                        try:
+                            process.wait(timeout=PROCESS_TERMINATION_GRACE_SECONDS)
+                        except subprocess.TimeoutExpired:
+                            pass
+                        returncode = process.poll()
+                        break
+
+                    remaining = deadline - time.monotonic()
+                    if remaining <= 0:
+                        termination_reason = "TIMEOUT"
+                        process_group_terminated = _terminate_process_group(process)
+                        status = "TIMEOUT" if process_group_terminated else "TIMEOUT_UNRECONCILED"
+                        try:
+                            process.wait(timeout=PROCESS_TERMINATION_GRACE_SECONDS)
+                        except subprocess.TimeoutExpired:
+                            pass
+                        returncode = process.poll()
+                        break
+
+                    try:
+                        returncode = process.wait(timeout=min(0.2, remaining))
+                    except subprocess.TimeoutExpired:
+                        continue
+                    status = "PASS" if returncode == 0 else "FAIL"
+                    break
+            except OSError as exc:
+                stderr_capture.append(str(exc).encode("utf-8", errors="replace"))
+                returncode = 127
+                status = "FAIL"
+
+            for reader in (stdout_reader, stderr_reader):
+                if reader is not None:
+                    reader.join(timeout=PROCESS_TERMINATION_GRACE_SECONDS + 1)
+                    output_readers_complete = output_readers_complete and not reader.is_alive()
+
+            if (
+                os.name == "posix"
+                and process is not None
+                and process.poll() is not None
+                and process_group_terminated is None
+                and _process_group_exists(process.pid)
+            ):
+                # A child may close both pipes and keep running. Check the
+                # process group as well as pipe EOF before starting another
+                # check, so an apparently clean command cannot overlap it.
+                termination_reason = "PROCESS_GROUP_CLEANUP"
+                process_group_terminated = _terminate_process_group(process)
+                for reader in (stdout_reader, stderr_reader):
+                    if reader is not None:
+                        reader.join(timeout=PROCESS_TERMINATION_GRACE_SECONDS + 1)
+                output_readers_complete = all(
+                    reader is None or not reader.is_alive()
+                    for reader in (stdout_reader, stderr_reader)
+                )
+                if process_group_terminated and status in {"PASS", "FAIL"}:
+                    status = "PROCESS_GROUP_CLEANED"
+                elif not process_group_terminated:
+                    status = "PROCESS_UNRECONCILED"
+
+            if not output_readers_complete and process is not None and process_group_terminated is None:
+                # A completed command may have left a descendant holding one of
+                # the pipes open. Stop that process group before deciding whether
+                # the next Foundation check can safely start.
+                if termination_reason == "NONE":
+                    termination_reason = "PROCESS_GROUP_CLEANUP"
+                process_group_terminated = _terminate_process_group(process)
+                for reader in (stdout_reader, stderr_reader):
+                    if reader is not None:
+                        reader.join(timeout=PROCESS_TERMINATION_GRACE_SECONDS + 1)
+                output_readers_complete = all(
+                    reader is None or not reader.is_alive()
+                    for reader in (stdout_reader, stderr_reader)
+                )
+
+            capture_read_error = any(
+                capture.read_error is not None for capture in (stdout_capture, stderr_capture)
+            )
+            if not output_readers_complete and status in {"PASS", "FAIL", "TIMEOUT", "CANCELLED"}:
+                status = "OUTPUT_UNRECONCILED"
+            if capture_read_error and status in {"PASS", "FAIL", "TIMEOUT", "CANCELLED"}:
+                status = "OUTPUT_UNRECONCILED"
+
+            duration = round(time.monotonic() - wall_start, 3)
+            stdout_record = stdout_capture.record(stdout_path)
+            stderr_record = stderr_capture.record(stderr_path)
+            record = {
+                "index": number,
+                "name": item.name,
+                "argv": list(item.argv),
+                "cwd": str(command_cwd),
+                "started_at_utc": started,
+                "duration_seconds": duration,
+                "timeout_seconds": item.timeout_seconds,
+                "returncode": returncode,
+                "status": status,
+                "termination_reason": termination_reason,
+                "process_group_terminated": process_group_terminated,
+                "output_readers_complete": output_readers_complete,
+                "stdout": stdout_record,
+                "stderr": stderr_record,
+            }
+            append_record(ledger, record)
+            print(
+                f"FOUNDATION_CHECK {number}/{len(checks)} {item.name} "
+                f"status={status} exit={returncode} duration={duration}s "
+                f"group_terminated={process_group_terminated} "
+                f"stdout_bytes={stdout_record['total_bytes']} stderr_bytes={stderr_record['total_bytes']} "
+                f"stdout_sha256={stdout_record['sha256']} stderr_sha256={stderr_record['sha256']}",
+                flush=True,
+            )
+            if status != "PASS":
+                failures.append(item.name)
+                if stdout_capture.tail:
+                    print(f"--- {item.name} stdout (retained tail) ---\n{_tail(bytes(stdout_capture.tail))}", flush=True)
+                if stderr_capture.tail:
+                    print(f"--- {item.name} stderr (retained tail) ---\n{_tail(bytes(stderr_capture.tail))}", flush=True)
+
+            if termination_reason.startswith("SIGNAL_"):
+                stop_reason = f"runner cancelled by {termination_reason}"
+                for pending_number, pending in enumerate(checks[number:], number + 1):
+                    record_not_run(ledger, pending_number, pending, "NOT_RUN_CANCELLED")
+                break
+            if status in {"TIMEOUT_UNRECONCILED", "OUTPUT_UNRECONCILED", "PROCESS_UNRECONCILED"}:
+                stop_reason = f"{item.name} did not close its process/output group"
+                for pending_number, pending in enumerate(checks[number:], number + 1):
+                    record_not_run(ledger, pending_number, pending, "NOT_RUN_PREVIOUS_PROCESS_UNRECONCILED")
+                break
+
+        if cancel_state["signal"] is not None and stop_reason is None:
+            stop_reason = f"runner cancelled by SIGNAL_{cancel_state['signal']} after the final check"
+
+    try:
+        head = subprocess.run(
+            ["git", "-C", str(root), "rev-parse", "HEAD"],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False,
+        )
+        head_sha = _decode(head.stdout).strip() if head.returncode == 0 else None
+    except OSError:
+        head_sha = None
+    cancelled = stop_reason is not None and "cancelled" in stop_reason
+    cancellation_unreconciled = cancelled and any(
+        row["status"] in {"CANCELLED_UNRECONCILED", "OUTPUT_UNRECONCILED"}
+        for row in records
     )
-    checks_passed = sum(row["status"] == "PASS" for row in records)
-    checks_failed = sum(row["status"] not in {"PASS", "NOT_EXECUTED"} for row in records)
-    if cancelled:
-        run_status = "CANCELLED"
-    elif aborted or checks_not_executed:
-        run_status = "ABORTED"
-    elif failures:
-        run_status = "FAIL"
-    else:
-        run_status = "PASS"
     summary = {
-        "schema_version": "foundation-ci-evidence-r2",
+        "schema_version": "foundation-ci-evidence-r1",
         "repository_head": head_sha,
-        "repository_head_after": head_after,
         "python_executable": sys.executable,
         "python_version": sys.version,
-        "platform": platform.platform(),
-        "os_name": os.name,
-        "stream_read_chunk_bytes": STREAM_READ_CHUNK_BYTES,
-        "default_timeout_seconds": CHECK_TIMEOUT_SECONDS,
-        "default_output_limit_bytes_per_stream": MAX_OUTPUT_BYTES_PER_STREAM,
-        "termination_grace_seconds": PROCESS_TERMINATION_GRACE_SECONDS,
-        "reap_grace_seconds": PROCESS_REAP_GRACE_SECONDS,
         "started_at_utc": started_at,
         "completed_at_utc": datetime.now(timezone.utc).isoformat(),
         "checks_total": len(checks),
-        "checks_executed": len(records) - checks_not_executed,
-        "checks_passed": checks_passed,
-        "checks_failed": checks_failed,
-        "checks_not_executed": checks_not_executed,
+        "checks_passed": sum(row["status"] == "PASS" for row in records),
+        "checks_failed": len(failures),
         "failed_checks": failures,
-        "full_suite_completed": checks_not_executed == 0 and len(records) == len(checks),
-        "status": run_status,
+        "status": (
+            "CANCELLED_UNRECONCILED"
+            if cancellation_unreconciled
+            else ("CANCELLED" if cancelled else ("PASS" if not failures else "FAIL"))
+        ),
+        "stop_reason": stop_reason,
         "command_ledger": ledger_path.name,
         "command_ledger_sha256": _sha256(ledger_path.read_bytes()),
     }
-    summary_tmp = output / "summary.json.tmp"
-    with summary_tmp.open("w", encoding="utf-8") as handle:
-        handle.write(json.dumps(summary, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
-        handle.flush()
-        os.fsync(handle.fileno())
-    summary_tmp.replace(output / "summary.json")
+    (output / "summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
     print(
         f"FOUNDATION_CI_RESULT={summary['status']} checks={summary['checks_passed']}/{summary['checks_total']} "
-        f"failed={summary['checks_failed']} not_executed={summary['checks_not_executed']} evidence_dir={output}",
+        f"failed={summary['checks_failed']} evidence_dir={output}",
         flush=True,
     )
     return summary
@@ -651,13 +676,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--evidence-dir", type=Path)
     args = parser.parse_args(argv)
-    cancel_event = threading.Event()
-    install_cancellation_handlers(cancel_event)
-    summary = execute_checks(
-        foundation_checks(),
-        evidence_dir=args.evidence_dir or default_evidence_dir(),
-        cancel_event=cancel_event,
-    )
+    summary = execute_checks(foundation_checks(), evidence_dir=args.evidence_dir or default_evidence_dir())
+    if summary["status"].startswith("CANCELLED"):
+        return 130
     return 0 if summary["status"] == "PASS" else 1
 
 

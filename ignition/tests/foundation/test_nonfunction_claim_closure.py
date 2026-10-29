@@ -83,7 +83,9 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
             for line in outputs[ROOT / "data/foundation/nonfunction-claims/source-discovery.jsonl"].splitlines()
             if line.strip()
         ]
-        self.assertEqual(summary["tracked_files_accounted"], 5796)
+        discovery_paths = [row["path"] for row in discovery]
+        self.assertEqual(len(discovery_paths), len(set(discovery_paths)))
+        self.assertEqual(summary["tracked_files_accounted"], len(discovery_paths))
         for path, expected_count in ((reflection, 13), ("docs/what-is-ignition/README.md", 3)):
             row = next(item for item in discovery if item["path"] == path)
             self.assertEqual(row["coverage_status"], "SCANNED_REGISTERED")
