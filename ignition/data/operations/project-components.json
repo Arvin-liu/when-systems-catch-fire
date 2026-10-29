@@ -316,6 +316,7 @@
         "data/operations/current-release-lifecycle-r1.json",
         "data/operations/current-snapshot-r1.json",
         "data/operations/state-changelog-profile-r1.json",
+        "schemas/operations/state-changelog-profile-r1.schema.json",
         "data/operations/current-task-lineage-status.json",
         "data/operations/current-volatile-fact-registry-r1.json",
         "data/operations/task-identity-model-r1.json",
@@ -2252,5 +2253,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.7.0"
+  "registry_version": "2.7.1"
 }
