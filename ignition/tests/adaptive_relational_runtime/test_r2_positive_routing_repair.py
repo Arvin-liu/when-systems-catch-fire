@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -561,7 +562,8 @@ def test_frozen_head_is_ancestor_of_repair_head():
 
 def test_current_branch_is_repair_branch():
     res = _git("rev-parse", "--abbrev-ref", "HEAD")
-    assert res.stdout.strip() == REPAIR_BRANCH
+    branch = os.environ.get("GITHUB_HEAD_REF") or res.stdout.strip()
+    assert branch == REPAIR_BRANCH
 
 
 def test_exact_48_object_manifest_digest_retained():
