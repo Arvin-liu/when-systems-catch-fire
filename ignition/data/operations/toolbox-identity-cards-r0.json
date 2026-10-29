@@ -2230,7 +2230,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
+            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
           }
         ],
         "validation_refs": [
@@ -3705,12 +3705,12 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
+            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
           },
           {
             "path": "ignition/data/operations/current-snapshot-r1.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "718bc35d2e1a0c84510b7b25cd889e639da5560e"
+            "blob_sha1": "2d9d74ba8dd56cc67c296235c0970ab0d2b4ec08"
           }
         ],
         "validation_refs": [
@@ -5687,7 +5687,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
+            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
           }
         ],
         "validation_refs": [
@@ -5819,7 +5819,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
+            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
           }
         ],
         "validation_refs": [
@@ -9744,7 +9744,7 @@
         {
           "path": "ignition/data/operations/component-execution-profiles.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "b1525a169f69d9244f9d522633c6600a0bfac6cb"
+          "sha1": "355a0b39de18c15ba0e5248eb9e2e34324fb13a5"
         },
         {
           "path": "ignition/data/operations/toolbox-validation-invocation-dedup-c1-evidence-r0.json",
@@ -24639,7 +24639,7 @@
         {
           "path": "ignition/data/architecture/interactive-system-map.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "7f13efdb25ccb8bfb3daa394eaa1c23a2ef5fb04"
+          "sha1": "d85cdcecae2dc4238e2ba7313f8ecb24e3704aed"
         },
         {
           "path": "ignition/tests/test_toolbox_build_archify_derived_ir.py",
