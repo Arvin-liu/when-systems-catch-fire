@@ -39,7 +39,7 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = "c7f3b1a1b1d61d25aae9ffc67119054daf58d7e6"
+PR_BASE = "68067b33ba0d5c102b67b6432f5d68b48ac68b25"
 
 
 def new_store():
@@ -735,6 +735,8 @@ def test_s43_diff_scope():
         "ignition/data/operations/component-execution-profiles.json",
         "ignition/data/operations/component-validation-map-r1.json",
         "ignition/data/operations/current-snapshot-r1.json",
+        # The route installs this test dependency for the RPE consumer suite.
+        "ignition/requirements-foundation.txt",
         "ignition/data/operations/project-components.json",
         "ignition/data/publication/fire-seeds/",
         "ignition/docs/architecture/current-facts.md",

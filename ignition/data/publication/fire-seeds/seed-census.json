@@ -42,7 +42,7 @@
       "changes": 561,
       "layer_shards": 12,
       "layered_readings": 587,
-      "search_records": 25532,
+      "search_records": 25546,
       "subject_indexes": 61
     },
     "layered_reading_source_origins": 587,
@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "4e270ba25d5f5f9bdcff12d3ec4c08fa9c32c27bc276c09c7a06ad2a1b26e12a",
+      "source_sha256": "d6d0ba3f4ba8a16e778d4f59f3f88a45f789187b54d906473dc0791440023618",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2347,7 +2347,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a7298e20248a8fd0d6902d46404f3cab81b3470028b50d2acdaf6aafa795b6c4",
+      "source_sha256": "f9ed5a014e25728ada7a444211a016ac46b20c32e585e9a295d6a239f01c3cd6",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2373,7 +2373,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "20d183045c4104969d7db92ffaedac4196e43f515dd2ce8a1ec63a030ead0801",
+      "source_sha256": "b5dee8cb7c0d4763da61806db4ae5e0d4e37f8f7e15131165df6899616d4d9eb",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2399,7 +2399,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f173faef5b144e971d467a6fc9aee907770618db1c145edb6fb84321db56b393",
+      "source_sha256": "e854d1c7dfc6debaa085c3ba543a14b5cc9175da02d8162f5463396904c6851a",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2415,7 +2415,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "5a3a2b49662ba7fb8a5ba9209695090c33456a046c403fa57ea95b75261c2ede",
+      "source_sha256": "619e895ef4aa38f4effb3ab022cab891ab1578e62f5b788c7d96dfb2bbff832e",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
