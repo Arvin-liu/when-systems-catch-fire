@@ -4,105 +4,6 @@
 
 ## 2026
 
-<a id="change-src-hr-e80677686d834ef1"></a>
-### 2026-10-28 · Q44 repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head 5efbce81e96d90d5ebd246891e4762928365d6b8 to the real predecessor repair-r2 head e5181c83efba68f847b55e13c7b5a1ee1fd6888e; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [Q44-REPAIR-R2-freeze.md](../reports/operations/Q44-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-E80677686D834EF1](./ASSET-CARDS.md#asset-hr-e80677686d834ef1)
-
-<a id="change-src-hr-d4c40ec0127597ed"></a>
-### 2026-10-28 · SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head 4d15ccaf2e574248c0e224c05716c3af46203a39 to the real predecessor repair-r2 head 7532b4b34cf841c09faab8c835c5fc7f896d30d8; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md](../reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-D4C40EC0127597ED](./ASSET-CARDS.md#asset-hr-d4c40ec0127597ed)
-
-<a id="change-src-hr-ac064ac68608ac32"></a>
-### 2026-10-28 · Q41 repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head 183f4343a036d0dbb20ae7df9dd96be97bcd3fc3 to the real predecessor repair-r2 head 25f937ea8d53b4b14f31fc9c8779995f3c516bac; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [Q41-REPAIR-R2-freeze.md](../reports/operations/Q41-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-AC064AC68608AC32](./ASSET-CARDS.md#asset-hr-ac064ac68608ac32)
-
-<a id="change-src-hr-9bd6fa3459079380"></a>
-### 2026-10-28 · SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e to the real predecessor repair-r2 head 1a51d1b3fd1bab4eb1c80a7429e0b629bcae69a9; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md](../reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-9BD6FA3459079380](./ASSET-CARDS.md#asset-hr-9bd6fa3459079380)
-
-<a id="change-src-hr-886483a6b67d18e9"></a>
-### 2026-10-28 · Q42 repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head 1904628103d8c23133107d501a22e3f17d08221d to the real predecessor repair-r2 head ea447ed7f6331f8ed5e58526f4c2341d3a41d6a6; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [Q42-REPAIR-R2-freeze.md](../reports/operations/Q42-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-886483A6B67D18E9](./ASSET-CARDS.md#asset-hr-886483a6b67d18e9)
-
-<a id="change-src-hr-7ced45f5b589417b"></a>
-### 2026-10-28 · D2 repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09 to the real predecessor repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [D2-REPAIR-R2-freeze.md](../reports/operations/D2-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-7CED45F5B589417B](./ASSET-CARDS.md#asset-hr-7ced45f5b589417b)
-
-<a id="change-src-hr-578f793e0ef4f0f6"></a>
-### 2026-10-28 · SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md](../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
-- **资产卡：** [HR-578F793E0EF4F0F6](./ASSET-CARDS.md#asset-hr-578f793e0ef4f0f6)
-
-<a id="change-src-hr-55571c37dc8b05e5"></a>
-### 2026-10-28 · DECISION-INTEGRITY repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** stale pre-repair i1 head 213dced90f1e9b1f1992a148ee10fc0844917490 to the real SYMBOLIC-SPHERE repair-r2 head 68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID…
-- **来源：** [DECISION-INTEGRITY-REPAIR-R2-freeze.md](../reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-55571C37DC8B05E5](./ASSET-CARDS.md#asset-hr-55571c37dc8b05e5)
-
-<a id="change-src-hr-4e7373c8b02f3f6e"></a>
-### 2026-10-28 · Q43 repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head 2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98 to the real predecessor repair-r2 head 3283ef6e76788b30a467467083f0d5ad7086b5a0; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [Q43-REPAIR-R2-freeze.md](../reports/operations/Q43-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-4E7373C8B02F3F6E](./ASSET-CARDS.md#asset-hr-4e7373c8b02f3f6e)
-
-<a id="change-src-hr-444a463e9e52df40"></a>
-### 2026-10-28 · SYMBOLIC-SPHERE repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** RB09-DIRECT-PREDECESSOR-BINDING is closed at DECISION-INTEGRITY / SCIENTIFIC-METACOGNITION checkpoints.
-- **来源：** [SYMBOLIC-SPHERE-REPAIR-R2-freeze.md](../reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-444A463E9E52DF40](./ASSET-CARDS.md#asset-hr-444a463e9e52df40)
-
-<a id="change-src-hr-3dbae4b94e7b9f19"></a>
-### 2026-10-28 · F15-D1 repair-r2 — R4 freeze
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** prior-repair head da9c4e2a6b8c0f757aa676814fda7c86d4ac2558 to the real predecessor repair-r2 head e92e7d3eadbb67da288077052f635e3c052bd3a1; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **来源：** [F15-D1-REPAIR-R2-freeze.md](../reports/operations/F15-D1-REPAIR-R2-freeze.md)
-- **资产卡：** [HR-3DBAE4B94E7B9F19](./ASSET-CARDS.md#asset-hr-3dbae4b94e7b9f19)
-
 <a id="change-src-hr-721da9720e4dc58a"></a>
 ### 2026-09-10 · IGNITION-20260910-169 result
 
@@ -2915,6 +2816,105 @@
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
+
+<a id="change-src-hr-e80677686d834ef1"></a>
+### 2026-07-23 · Q44 repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head 5efbce81e96d90d5ebd246891e4762928365d6b8 to the real predecessor repair-r2 head e5181c83efba68f847b55e13c7b5a1ee1fd6888e; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [Q44-REPAIR-R2-freeze.md](../reports/operations/Q44-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-E80677686D834EF1](./ASSET-CARDS.md#asset-hr-e80677686d834ef1)
+
+<a id="change-src-hr-d4c40ec0127597ed"></a>
+### 2026-07-23 · SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head 4d15ccaf2e574248c0e224c05716c3af46203a39 to the real predecessor repair-r2 head 7532b4b34cf841c09faab8c835c5fc7f896d30d8; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md](../reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-D4C40EC0127597ED](./ASSET-CARDS.md#asset-hr-d4c40ec0127597ed)
+
+<a id="change-src-hr-ac064ac68608ac32"></a>
+### 2026-07-23 · Q41 repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head 183f4343a036d0dbb20ae7df9dd96be97bcd3fc3 to the real predecessor repair-r2 head 25f937ea8d53b4b14f31fc9c8779995f3c516bac; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [Q41-REPAIR-R2-freeze.md](../reports/operations/Q41-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-AC064AC68608AC32](./ASSET-CARDS.md#asset-hr-ac064ac68608ac32)
+
+<a id="change-src-hr-9bd6fa3459079380"></a>
+### 2026-07-23 · SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e to the real predecessor repair-r2 head 1a51d1b3fd1bab4eb1c80a7429e0b629bcae69a9; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md](../reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-9BD6FA3459079380](./ASSET-CARDS.md#asset-hr-9bd6fa3459079380)
+
+<a id="change-src-hr-886483a6b67d18e9"></a>
+### 2026-07-23 · Q42 repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head 1904628103d8c23133107d501a22e3f17d08221d to the real predecessor repair-r2 head ea447ed7f6331f8ed5e58526f4c2341d3a41d6a6; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [Q42-REPAIR-R2-freeze.md](../reports/operations/Q42-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-886483A6B67D18E9](./ASSET-CARDS.md#asset-hr-886483a6b67d18e9)
+
+<a id="change-src-hr-7ced45f5b589417b"></a>
+### 2026-07-23 · D2 repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09 to the real predecessor repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [D2-REPAIR-R2-freeze.md](../reports/operations/D2-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-7CED45F5B589417B](./ASSET-CARDS.md#asset-hr-7ced45f5b589417b)
+
+<a id="change-src-hr-55571c37dc8b05e5"></a>
+### 2026-07-23 · DECISION-INTEGRITY repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** stale pre-repair i1 head 213dced90f1e9b1f1992a148ee10fc0844917490 to the real SYMBOLIC-SPHERE repair-r2 head 68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID…
+- **来源：** [DECISION-INTEGRITY-REPAIR-R2-freeze.md](../reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-55571C37DC8B05E5](./ASSET-CARDS.md#asset-hr-55571c37dc8b05e5)
+
+<a id="change-src-hr-4e7373c8b02f3f6e"></a>
+### 2026-07-23 · Q43 repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head 2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98 to the real predecessor repair-r2 head 3283ef6e76788b30a467467083f0d5ad7086b5a0; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [Q43-REPAIR-R2-freeze.md](../reports/operations/Q43-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-4E7373C8B02F3F6E](./ASSET-CARDS.md#asset-hr-4e7373c8b02f3f6e)
+
+<a id="change-src-hr-444a463e9e52df40"></a>
+### 2026-07-23 · SYMBOLIC-SPHERE repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** RB09-DIRECT-PREDECESSOR-BINDING is closed at DECISION-INTEGRITY / SCIENTIFIC-METACOGNITION checkpoints.
+- **来源：** [SYMBOLIC-SPHERE-REPAIR-R2-freeze.md](../reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-444A463E9E52DF40](./ASSET-CARDS.md#asset-hr-444a463e9e52df40)
+
+<a id="change-src-hr-3dbae4b94e7b9f19"></a>
+### 2026-07-23 · F15-D1 repair-r2 — R4 freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** prior-repair head da9c4e2a6b8c0f757aa676814fda7c86d4ac2558 to the real predecessor repair-r2 head e92e7d3eadbb67da288077052f635e3c052bd3a1; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **来源：** [F15-D1-REPAIR-R2-freeze.md](../reports/operations/F15-D1-REPAIR-R2-freeze.md)
+- **资产卡：** [HR-3DBAE4B94E7B9F19](./ASSET-CARDS.md#asset-hr-3dbae4b94e7b9f19)
+
+<a id="change-src-hr-578f793e0ef4f0f6"></a>
+### 2026-07-22 · SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md](../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
+- **资产卡：** [HR-578F793E0EF4F0F6](./ASSET-CARDS.md#asset-hr-578f793e0ef4f0f6)
 
 <a id="change-src-hr-43bf10109af2485e"></a>
 ### 2026-07-19 · External Input Non-Republication Principle

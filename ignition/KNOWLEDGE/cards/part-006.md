@@ -358,7 +358,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-10-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-23: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
@@ -498,7 +498,7 @@
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
 - **来源与证据：** `reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-10-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **演化历史：** 2026-07-22: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`

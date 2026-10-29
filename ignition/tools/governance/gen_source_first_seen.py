@@ -3,8 +3,9 @@
 
 This map records, for every result source referenced by the human-results
 ledger, the date that source *first appears* in repository history
-(``git log --follow --diff-filter=A`` with a ``git log --full-history -m``
-fallback for additions hidden by merge simplification). It is computed ONCE from a FULL
+(``git log --follow --diff-filter=A`` in both the Ignition and repository roots,
+with a ``git log --full-history -m`` fallback for additions hidden by merge
+simplification). It is computed ONCE from a FULL
 clone and committed as governed data so that
 ``build_knowledge_experience.py`` no longer needs to shell out to git at
 generation time. That removes the clone-depth dependence that previously
@@ -30,9 +31,13 @@ LEDGER = ROOT / "data/governance/human-results/result-ledger.jsonl"
 OUT = ROOT / "data/governance/knowledge-experience/source-first-seen.json"
 DATE_RE = re.compile(r"20\d{2}-\d{2}-\d{2}")
 LEGACY_COMPUTED_FROM = "git log --follow --diff-filter=A --format=%ad --date=short"
-COMPUTED_FROM = (
+INTERIM_COMPUTED_FROM = (
     "git log --follow --diff-filter=A --format=%ad --date=short; "
     "fallback: git log --full-history -m --diff-filter=A --format=%ad --date=short"
+)
+COMPUTED_FROM = (
+    "git log --follow --diff-filter=A --format=%ad --date=short (Ignition and repository roots); "
+    "fallback: git log --full-history -m --diff-filter=A --format=%ad --date=short (both roots)"
 )
 
 
@@ -53,11 +58,10 @@ def require_full_history() -> None:
         )
 
 
-def first_seen(path: str) -> str | None:
-    base_command = ["git", "log", "--diff-filter=A", "--format=%ad", "--date=short", "--", path]
+def history_dates(path: str, cwd: Path) -> list[str]:
     proc = subprocess.run(
         ["git", "log", "--follow", "--diff-filter=A", "--format=%ad", "--date=short", "--", path],
-        cwd=ROOT,
+        cwd=cwd,
         text=True,
         capture_output=True,
         check=False,
@@ -68,29 +72,42 @@ def first_seen(path: str) -> str | None:
         # merge commit. Compare each merge parent so the source's introducing
         # commit remains visible to the full-history census.
         proc = subprocess.run(
-            [base_command[0], "log", "--full-history", "-m", *base_command[2:]],
-            cwd=ROOT,
+            ["git", "log", "--full-history", "-m", "--diff-filter=A", "--format=%ad", "--date=short", "--", path],
+            cwd=cwd,
             text=True,
             capture_output=True,
             check=False,
         )
         dates = [line.strip() for line in proc.stdout.splitlines() if DATE_RE.fullmatch(line.strip())]
-    # git log is newest-first, so dates[-1] is the OLDEST = first appearance.
-    return dates[-1] if dates else None
+    return dates
+
+
+def first_seen(path: str) -> str | None:
+    # Source paths are relative to ignition/, but some files first appeared at
+    # the repository root before being moved under ignition/. Search both
+    # histories and keep the earliest date; checking only the current path can
+    # silently replace the source's original date with its later migration date.
+    dates = history_dates(path, ROOT) + history_dates(path, ROOT.parent)
+    return min(dates) if dates else None
 
 
 def collect_entries(
-    rows: list[dict], existing_entries: dict[str, str] | None = None, *, recompute_all: bool = False,
+    rows: list[dict], existing_entries: dict[str, str] | None = None, *,
+    recompute_all: bool = False, recompute_sources: set[str] | None = None,
 ) -> tuple[dict[str, str], int, int]:
     """Reuse committed full-history dates and compute only newly referenced sources."""
     previous = {} if recompute_all else (existing_entries or {})
     sources = sorted({row["source"] for row in rows})
+    refresh = recompute_sources or set()
+    unknown_refresh = refresh - set(sources)
+    if unknown_refresh:
+        raise ValueError("requested source refresh is absent from the ledger: " + ", ".join(sorted(unknown_refresh)))
     entries: dict[str, str] = {}
     missing = []
     reused = 0
     computed = 0
     for source in sources:
-        date = previous.get(source)
+        date = None if source in refresh else previous.get(source)
         if date and DATE_RE.fullmatch(date):
             entries[source] = date
             reused += 1
@@ -121,7 +138,7 @@ def load_existing_entries() -> dict[str, str]:
         entries = payload["entries"]
         if (
             payload.get("schema_version") != "1.0.0"
-            or payload.get("computed_from") not in {LEGACY_COMPUTED_FROM, COMPUTED_FROM}
+            or payload.get("computed_from") not in {LEGACY_COMPUTED_FROM, INTERIM_COMPUTED_FROM, COMPUTED_FROM}
             or payload.get("history_requirement") != "FULL"
             or payload.get("entry_count") != len(entries)
             or not isinstance(entries, dict)
@@ -139,6 +156,10 @@ def main() -> int:
         "--recompute-all", action="store_true",
         help="ignore the committed full-history map and recompute every source date",
     )
+    parser.add_argument(
+        "--recompute-source", action="append", default=[], metavar="PATH",
+        help="recompute one ledger source path while reusing all other committed dates; repeat as needed",
+    )
     args = parser.parse_args()
     require_full_history()
     if not LEDGER.is_file():
@@ -146,7 +167,12 @@ def main() -> int:
     rows = [json.loads(line) for line in LEDGER.read_text(encoding="utf-8").splitlines() if line.strip()]
     existing = {} if args.recompute_all else load_existing_entries()
     try:
-        entries, reused, computed = collect_entries(rows, existing, recompute_all=args.recompute_all)
+        entries, reused, computed = collect_entries(
+            rows,
+            existing,
+            recompute_all=args.recompute_all,
+            recompute_sources=set(args.recompute_source),
+        )
     except ValueError as exc:
         sys.exit(f"REFUSE: {exc}")
     OUT.parent.mkdir(parents=True, exist_ok=True)

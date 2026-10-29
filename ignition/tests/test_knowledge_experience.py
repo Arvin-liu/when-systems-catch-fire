@@ -121,20 +121,49 @@ class KnowledgeExperienceTests(unittest.TestCase):
         self.assertEqual((reused, computed), (0, 1))
         lookup.assert_called_once_with("reports/operations/existing.md")
 
-    def test_source_first_seen_checks_merge_parents_when_default_history_hides_add(self):
+    def test_source_first_seen_can_refresh_selected_sources(self):
+        rows = [{"source": "reports/operations/existing.md", "date": "2026-01-01"}]
+        with patch.object(SOURCE_MODULE, "first_seen", return_value="2024-06-03") as lookup:
+            entries, reused, computed = SOURCE_MODULE.collect_entries(
+                rows,
+                {"reports/operations/existing.md": "2025-12-31"},
+                recompute_sources={"reports/operations/existing.md"},
+            )
+        self.assertEqual(entries, {"reports/operations/existing.md": "2024-06-03"})
+        self.assertEqual((reused, computed), (0, 1))
+        lookup.assert_called_once_with("reports/operations/existing.md")
+
+    def test_source_first_seen_uses_older_repository_root_history(self):
+        with patch.object(
+            SOURCE_MODULE.subprocess,
+            "run",
+            side_effect=[
+                SimpleNamespace(stdout="2026-10-28\n"),
+                SimpleNamespace(stdout="2026-07-23\n"),
+            ],
+        ) as run:
+            date = SOURCE_MODULE.first_seen("reports/operations/frozen-source.md")
+        self.assertEqual(date, "2026-07-23")
+        self.assertEqual(run.call_args_list[0].kwargs["cwd"], SOURCE_MODULE.ROOT)
+        self.assertEqual(run.call_args_list[1].kwargs["cwd"], SOURCE_MODULE.ROOT.parent)
+
+    def test_source_first_seen_checks_merge_parents_in_both_roots(self):
         with patch.object(
             SOURCE_MODULE.subprocess,
             "run",
             side_effect=[
                 SimpleNamespace(stdout=""),
-                SimpleNamespace(stdout="2026-10-28\n2026-10-26\n"),
+                SimpleNamespace(stdout="2026-10-28\n"),
+                SimpleNamespace(stdout=""),
+                SimpleNamespace(stdout="2026-07-23\n"),
             ],
         ) as run:
             date = SOURCE_MODULE.first_seen("reports/operations/frozen-source.md")
-        self.assertEqual(date, "2026-10-26")
-        fallback_command = run.call_args_list[1].args[0]
-        self.assertIn("--full-history", fallback_command)
-        self.assertIn("-m", fallback_command)
+        self.assertEqual(date, "2026-07-23")
+        for index in (1, 3):
+            command = run.call_args_list[index].args[0]
+            self.assertIn("--full-history", command)
+            self.assertIn("-m", command)
 
     def test_source_first_seen_refuses_shallow_history(self):
         with patch.object(
