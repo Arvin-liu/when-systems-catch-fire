@@ -31,6 +31,7 @@ from agent_runtime.steering import (
 REQUEST_SCHEMA = "ignition.research_os_v1.g1_goal_intake.request.v1"
 REPORT_SCHEMA = "ignition.research_os_v1.g1_goal_intake.report.v1"
 _MAX_INPUT_BYTES = 1_000_000
+_MAX_JSON_NESTING = 128
 _SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$")
 _SHA256 = re.compile(r"^[0-9a-f]{64}$")
 _PROHIBITED_TEXT = (
@@ -112,6 +113,32 @@ def _pairs_without_duplicates(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
 
 def _reject_non_json_constant(_: str) -> Any:
     raise ValueError("non-finite JSON number")
+
+
+def _has_excessive_json_nesting(raw: bytes) -> bool:
+    """Reject pathological container depth before the JSON decoder runs."""
+
+    depth = 0
+    in_string = False
+    escaped = False
+    for byte in raw:
+        if in_string:
+            if escaped:
+                escaped = False
+            elif byte == 0x5C:
+                escaped = True
+            elif byte == 0x22:
+                in_string = False
+            continue
+        if byte == 0x22:
+            in_string = True
+        elif byte in (0x5B, 0x7B):
+            depth += 1
+            if depth > _MAX_JSON_NESTING:
+                return True
+        elif byte in (0x5D, 0x7D) and depth:
+            depth -= 1
+    return False
 
 
 def _closed_object(
@@ -263,6 +290,9 @@ def evaluate_request(raw_bytes: bytes) -> dict[str, Any]:
             structural_outcome="INVALID_INPUT",
             findings=findings,
         )
+    if _has_excessive_json_nesting(raw_bytes):
+        findings.add("invalid_input", "malformed_json", "input")
+        return _report(raw_sha256=raw_sha256, status="INVALID_INPUT", structural_outcome="INVALID_INPUT", findings=findings)
     try:
         decoded = raw_bytes.decode("utf-8")
         payload = json.loads(

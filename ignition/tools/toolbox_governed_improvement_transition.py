@@ -18,6 +18,7 @@ from typing import Any
 
 
 MAX_INPUT_BYTES = 131072
+MAX_JSON_NESTING = 128
 MAX_LIST_ITEMS = 128
 HEX_64 = re.compile(r"[0-9a-f]{64}\Z")
 INPUT_KEYS = {
@@ -59,6 +60,32 @@ def _object_pairs(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
 
 def _reject_constant(_: str) -> None:
     raise InputError("NONFINITE_JSON_NUMBER")
+
+
+def _has_excessive_json_nesting(raw: bytes) -> bool:
+    """Reject pathological container depth before the JSON decoder runs."""
+
+    depth = 0
+    in_string = False
+    escaped = False
+    for byte in raw:
+        if in_string:
+            if escaped:
+                escaped = False
+            elif byte == 0x5C:
+                escaped = True
+            elif byte == 0x22:
+                in_string = False
+            continue
+        if byte == 0x22:
+            in_string = True
+        elif byte in (0x5B, 0x7B):
+            depth += 1
+            if depth > MAX_JSON_NESTING:
+                return True
+        elif byte in (0x5D, 0x7D) and depth:
+            depth -= 1
+    return False
 
 
 def _require_object(value: Any, required: set[str], code: str) -> dict[str, Any]:
@@ -270,6 +297,8 @@ def analyze_bytes(raw: bytes) -> dict[str, Any]:
     digest = hashlib.sha256(raw).hexdigest()
     if len(raw) > MAX_INPUT_BYTES:
         return _invalid(digest, "INPUT_LIMIT_EXCEEDED")
+    if _has_excessive_json_nesting(raw):
+        return _invalid(digest, "JSON_INVALID")
     try:
         text = raw.decode("utf-8", errors="strict")
         request = json.loads(text, object_pairs_hook=_object_pairs, parse_constant=_reject_constant)

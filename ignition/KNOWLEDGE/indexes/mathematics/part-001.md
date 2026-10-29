@@ -29,6 +29,11 @@
   - 可搜索名称：NFC-61e6994c3b3f823f / """Terminate the process group and report signals plus proof status.
   - 来源：`agent_federation/live_transport.py`
   - 依赖：—；被引用：—
+- ["- Canonical writes: false; Goal lifecycle mutation: false; completion decision: false; dispatch: false.",](../../../research_os_v1/g1_goal_intake/preflight.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3dc16996ed18197c / "- Canonical writes: false; Goal lifecycle mutation: false; completion decision: false; dispatch: false.",
+  - 来源：`research_os_v1/g1_goal_intake/preflight.py`
+  - 依赖：—；被引用：—
 - ["353 条均已生成 proof obligation；351 条生成 empirical obligation"](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-20f4f9ba9e4bec66 / "353 条均已生成 proof obligation；351 条生成 empirical obligation"
@@ -59,10 +64,20 @@
   - 可搜索名称：NFC-38255a74ba0c318c / "function_index": repo / "已迁移的历史函数来源/INDEX.md",
   - 来源：`inputs/020/validate_formal_protocol.py`
   - 依赖：—；被引用：—
+- ["goal_lifecycle_mutated": False,](../../../research_os_v1/g1_goal_intake/preflight.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-91b47575114d8760 / "goal_lifecycle_mutated": False,
+  - 来源：`research_os_v1/g1_goal_intake/preflight.py`
+  - 依赖：—；被引用：—
 - ["ignition/data/operations/formal-task-lifecycle-r1.json",](../../../agent_federation/task142_adversarial.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-788d519487b81935 / "ignition/data/operations/formal-task-lifecycle-r1.json",
   - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
+- ["name": "formal_candidate_release_gate",](../../../data/operations/toolbox-counterfactual-probe-real-task-input-r0.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F667F39E3110322E / "name": "formal_candidate_release_gate", / IMPLICIT-F667F39E3110322E
+  - 来源：`data/operations/toolbox-counterfactual-probe-real-task-input-r0.json`
   - 依赖：—；被引用：—
 - ["name": "乘法临界漂移函数族",](../../../data/function_dependency.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -114,6 +129,11 @@
   - 可搜索名称：NFC-2135e5407310efa0 / "note": "Verified via git diff: no changes to 已迁移的历史函数来源/ directory"}
   - 来源：`data/external-research/106-105-correction/106-validator.py`
   - 依赖：—；被引用：—
+- ["OWNER_APPROVED_DERIVED",](../../../research_os_v1/g1_goal_intake/preflight.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-bc691e218ed97cf5 / "OWNER_APPROVED_DERIVED",
+  - 来源：`research_os_v1/g1_goal_intake/preflight.py`
+  - 依赖：—；被引用：—
 - ["P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0e03c43dfc7d07d2 / "P vs NP 问题未被证明"（这是数学界的共识，点火框架只是重述）
@@ -153,6 +173,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-367DFCE8C8B8CC00 / "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators", / IMPLICIT-367DFCE8C8B8CC00
   - 来源：`data/external-research/121-fulltext-resolver/121cx/evidence-cards-extreme/S120-029.json`
+  - 依赖：—；被引用：—
+- ["title": "Modeling sorption dynamics and ecotoxicological risk of microplastics and polybrominated diphenyl ethers in Arctic and subarctic freshwater."](../../../data/operations/toolbox-pubmed-query-search-real-task-r0.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5627CEFBD52EFFA6 / "title": "Modeling sorption dynamics and ecotoxicological risk of microplastics and polybrominated diphenyl ethers in Arctic and subarctic freshwater." / IMPLICIT-5627CEFBD52EFFA6
+  - 来源：`data/operations/toolbox-pubmed-query-search-real-task-r0.json`
   - 依赖：—；被引用：—
 - ["title": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",](../../../data/operations/iterations/109/dossiers/psd-gap-005.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2477,30 +2502,5 @@
 - [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D5A2DD309E61E3A1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-D5A2DD309E61E3A1 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DF866BE94C601053 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-DF866BE94C601053 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E1501BD8D01B1814 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E1501BD8D01B1814 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E2C7E822443419AA / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E2C7E822443419AA / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E64B495E169582CD / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-E64B495E169582CD / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EB7B89E8311DE6C7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-EB7B89E8311DE6C7 / IMPLICIT-003191F281FA43ED
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

@@ -4,9 +4,9 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → data/external-research/088-external-source-atlas-medium.jsonl
-- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢
-- [第 003 片](./systems/part-003.md)：1001—1500；Object D381 defines a mechanism_model within the point-fire framework. Core: 中文：M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg → \| \[C-0792\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D585《认知复杂度收敛》，用
-- [第 004 片](./systems/part-004.md)：1501—2000；\| \[C-169\]\( \) \| \[财商乘数四因子结构（验证D65财富域）\]\( \) \| 财富增长由认 → 历史系统可以在内部逻辑上保持自洽，但无法预测外部冲击；当外部冲击导致原有价值体系归零时，系统呈现哥德尔不完备性式的历史实例化。
-- [第 005 片](./systems/part-005.md)：2001—2500；原始上传路径：`PRIVATE_PROVENANCE_WITHHELD → 社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
-- [第 006 片](./systems/part-006.md)：2501—2695；秦统一\(P_fake高\)→真实偏好暴露后系统崩溃。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → Conflicting causal models without adjudicating evidence.
+- [第 002 片](./systems/part-002.md)：501—1000；Constraint execution and benchmark tests are explicit behavioral acceptance mechanisms, with clear evidence that their e → Not for: Searching a provider, making network requests, retrieving abstracts or full text, or expanding a source result
+- [第 003 片](./systems/part-003.md)：1001—1500；Not for: Systematic-review search, exhaustive recall, full-dataset export, paging, semantic search, or provider rerankin → This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It d
+- [第 004 片](./systems/part-004.md)：1501—2000；This audit supersedes the older 121Q21 Persistent Causal Commitment Network direction for this task. The older task is n → 中文：生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ d_opt时维护成本超过容斥收益→系统臃肿→Φ因维护负担而增长。衰老过程是d从d_opt向d<d_opt漂移（信息
+- [第 005 片](./systems/part-005.md)：2001—2500；中文：直觉是碰出来的不是算出来的——多轨碰撞的生成机制 → 本轮不恢复旧的独立阅读站及其专用工作流；旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。当前 Pages workflow 只发布上述 provenance-bound architecture payload。
+- [第 006 片](./systems/part-006.md)：2501—2835；本轮不提交大型版权语料，不复刻具体句子，不把某位作者的可识别指纹变成生成目标。以下只是阅读时要观察的机制压力；真正成品仍由文章自己的材料、作者位置和 claim 边界决定。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

@@ -639,6 +639,11 @@
   - 可搜索名称：IMPLICIT-1AF8108450D4C333 / - 标题：刷分博弈；机制表达式：G_score = B_metric × D_decomposable × R_reward × \(1 - C_reality\)； / IMPLICIT-1AF8108450D4C333
   - 来源：`outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`
   - 依赖：—；被引用：—
+- [/ Remove the candidate entry and wrapper from the isolated toolbox branch, regenerate the identity and human-directory p](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5b4618d2fb930713 / / Remove the candidate entry and wrapper from the isolated toolbox branch, regenerate the identity and human-directory p
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [085: 084 Truth Status Correction](../../ASSET-CARDS.md#asset-hr-d0d9de18fd9e9bde)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD`
   - 可搜索名称：085: 084 Truth Status Correction / 085-084-truth-status-correction
@@ -1164,6 +1169,11 @@
   - 可搜索名称：NFC-e66883cb65ff900f / `EVIDENTIALLY_SUPPORTED`**: the controlled source/material layer supported the corresponding projected wording up to tha
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
+- [`execution_authorized` is always false. The receipt does not establish source authenticity, measurement validity, statis](../../../docs/operations/execution-candidate-pareto-frontier.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98adedb45eb92574 / `execution_authorized` is always false. The receipt does not establish source authenticity, measurement validity, statis
+  - 来源：`docs/operations/execution-candidate-pareto-frontier.md`
+  - 依赖：—；被引用：—
 - [`experimentally_identified_causal`](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-47b201ff5377fb11 / `experimentally_identified_causal`
@@ -1424,6 +1434,16 @@
   - 可搜索名称：NFC-f9aa52d87e34ea2b / A learned PSL program and neural checkpoints are concrete artifact forms, but the promised Deep Weights code, data, chec
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [A literal page/raw difference is arithmetic output, not a judgment about measurement quality or which source is preferab](../../../docs/operations/noaa-sf6-source-surface-comparison.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3b855ff5559ba4ba / A literal page/raw difference is arithmetic output, not a judgment about measurement quality or which source is preferab
+  - 来源：`docs/operations/noaa-sf6-source-surface-comparison.md`
+  - 依赖：—；被引用：—
+- [A local path result records current bytes or absence relative to the supplied baseline. It does not establish that the d](../../../docs/operations/toolbox-execution-effect-receipt.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1a482b4dcec5bd5 / A local path result records current bytes or absence relative to the supplied baseline. It does not establish that the d
+  - 来源：`docs/operations/toolbox-execution-effect-receipt.md`
+  - 依赖：—；被引用：—
 - [A map is a projection, not a truth source.](../../../reports/architecture/121Q23-relational-network-gap-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ec608733d166b09a / A map is a projection, not a truth source.
@@ -1438,6 +1458,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4f05a2222b175183 / A new approach to causal inference in mortality studies with sustained exposure periods
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
+  - 依赖：—；被引用：—
+- [A page/raw difference is arithmetic output only. The tool does not validate measurements, estimate emissions, attribute](../../../docs/operations/noaa-n2o-source-surface-comparison.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9df306d2ca592cd5 / A page/raw difference is arithmetic output only. The tool does not validate measurements, estimate emissions, attribute
+  - 来源：`docs/operations/noaa-n2o-source-surface-comparison.md`
   - 依赖：—；被引用：—
 - [A paired ‘越…越…’ construction makes visibility and self-confirmation sound more deterministic than the bounded mechanism](../../../data/language-thought/audit-findings.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1624,6 +1649,11 @@
   - 可搜索名称：NFC-cb54005ffe4c7a1e / Allowed residue includes unknown causal status, unresolved scale transition, unresolved quantum/classical boundary, miss
   - 来源：`docs/architecture/multiscale-causal-fabric.md`
   - 依赖：—；被引用：—
+- [Alternatives: `visualization.render_derived_system_view` \(COMPLEMENTARY_NOT_EQUIVALENT\): The registered bounded operatio](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a2df09a6043510bc / Alternatives: `visualization.render_derived_system_view` \(COMPLEMENTARY_NOT_EQUIVALENT\): The registered bounded operatio
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [An explicit retrieval-to-composition mechanism is present, but its TIES specification is contradictory and its unseen-ta](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6e75df565641f07b / An explicit retrieval-to-composition mechanism is present, but its TIES specification is contradictory and its unseen-ta
@@ -1643,6 +1673,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0e73682d381aae96 / analogy only
   - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
+  - 依赖：—；被引用：—
+- [Annual atmospheric mole-fraction growth is not an emissions inventory, source attribution, causal explanation, or scient](../../../docs/operations/noaa-n2o-annual-growth-lookup.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ea042b2388bab455 / Annual atmospheric mole-fraction growth is not an emissions inventory, source attribution, causal explanation, or scient
+  - 来源：`docs/operations/noaa-n2o-annual-growth-lookup.md`
   - 依赖：—；被引用：—
 - [Answer: no. The repository contains many local causal components, downgrade gates, map boundaries, mechanism adjudicatio](../../../reports/architecture/121Q21R-causal-asset-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1728,6 +1763,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-100ab14bed8236fd / Audit factual fidelity, evidence links, causal language, counterevidence,
   - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
+  - 依赖：—；被引用：—
+- [Author strings and free-form unstructured citations are omitted from comparison because their formatting is not reliably](../../../docs/operations/toolbox-crossref-reference-metadata-comparison.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d103e4a98cac7c7e / Author strings and free-form unstructured citations are omitted from comparison because their formatting is not reliably
+  - 来源：`docs/operations/toolbox-crossref-reference-metadata-comparison.md`
   - 依赖：—；被引用：—
 - [authority_changes: \[`current-system-identity.json`\]\(./data/architecture/current-system-identity.json\), \[`steering curren](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2269,6 +2309,26 @@
   - 可搜索名称：NFC-d508b2012e8a6e00 / Cited expert networks, adapters, masks and checkpoints are deployable artifact forms, while this survey releases no gove
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [Claim ceiling: A deterministic preflight over caller-supplied failure, evidence excerpt, diagnosis, and recovery declara](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6045ebb4696a64b1 / Claim ceiling: A deterministic preflight over caller-supplied failure, evidence excerpt, diagnosis, and recovery declara
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Arithmetic union, sum, and multiplicity overlap of timezone-aware job intervals in caller-supplied snapsh](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b1fc231c99a49c03 / Claim ceiling: Arithmetic union, sum, and multiplicity overlap of timezone-aware job intervals in caller-supplied snapsh
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Caller-declared paired empirical pass counts and arithmetic mean of one declared resource metric over the](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-89bcdc6253a5616f / Claim ceiling: Caller-declared paired empirical pass counts and arithmetic mean of one declared resource metric over the
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Checks caller-declared execution and observation relations, and directly hashes only explicitly selected](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4b6b48d17393876e / Claim ceiling: Checks caller-declared execution and observation relations, and directly hashes only explicitly selected
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: Current bounded provider-neutral derived system view for declared technical use only; no canonical archit](../../../docs/operations/ignition-operation-playbooks-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7b63bf032ad59cf8 / Claim ceiling: Current bounded provider-neutral derived system view for declared technical use only; no canonical archit
@@ -2279,25 +2339,85 @@
   - 可搜索名称：NFC-ebb0d8ee567d662b / Claim ceiling: deterministic ARN projection only
   - 来源：`data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: Deterministic editorial structure proposal over caller-supplied paragraphs only. Selected text is copied](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-800a5f814383546c / Claim ceiling: Deterministic editorial structure proposal over caller-supplied paragraphs only. Selected text is copied
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: deterministic repository planning, execution and recovery evidence under declared authorities only; no ca](../../../docs/architecture/incremental-execution.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2c548018ea8e49ec / Claim ceiling: deterministic repository planning, execution and recovery evidence under declared authorities only; no ca
   - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Enumerates role-compatible node mappings and exact caller-declared relation-type correspondences over sup](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f5b724e85a817078 / Claim ceiling: Enumerates role-compatible node mappings and exact caller-declared relation-type correspondences over sup
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Exact selected annual atmospheric N2O mole-fraction increases and stated uncertainties from two NOAA GML](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a6523274bc3c6d24 / Claim ceiling: Exact selected annual atmospheric N2O mole-fraction increases and stated uncertainties from two NOAA GML
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Exact selected annual atmospheric SF6 mole-fraction increases and stated uncertainties from two NOAA GML](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-20646ab861c35abf / Claim ceiling: Exact selected annual atmospheric SF6 mole-fraction increases and stated uncertainties from two NOAA GML
+  - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—
 - [Claim ceiling: independent validation not run because the required durable](../../../reports/operations/ignition-138-step10-amendment-01-independent-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f5c3edf7b6255a72 / Claim ceiling: independent validation not run because the required durable
   - 来源：`reports/operations/ignition-138-step10-amendment-01-independent-validation.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: Observed repeated step names and source-supplied intervals within caller-supplied same-workflow/event/PR/](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-64256886907362c1 / Claim ceiling: Observed repeated step names and source-supplied intervals within caller-supplied same-workflow/event/PR/
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Provider-reported NOAA GML global annual atmospheric CH4 mole-fraction increment values and stated uncert](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-af4d74335f7a1871 / Claim ceiling: Provider-reported NOAA GML global annual atmospheric CH4 mole-fraction increment values and stated uncert
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Provider-reported NOAA GML global annual atmospheric N2O mole-fraction increase and stated uncertainty fo](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0d3b099c97bde6b2 / Claim ceiling: Provider-reported NOAA GML global annual atmospheric N2O mole-fraction increase and stated uncertainty fo
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Provider-reported NOAA GML global annual atmospheric SF6 mole-fraction increase and raw-table uncertainty](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8942c1db79cbe994 / Claim ceiling: Provider-reported NOAA GML global annual atmospheric SF6 mole-fraction increase and raw-table uncertainty
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Provider-reported NOAA GML globally averaged marine-surface annual atmospheric CO2 mole-fraction incremen](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a74bfe216aaf0ac9 / Claim ceiling: Provider-reported NOAA GML globally averaged marine-surface annual atmospheric CO2 mole-fraction incremen
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: Repository-state change discipline only; no truth, evidence, causal, Owner-acceptance or publication infe](../../../docs/operations/ignition-operation-playbooks-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-33f1e039100e1522 / Claim ceiling: Repository-state change discipline only; no truth, evidence, causal, Owner-acceptance or publication infe
   - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: Structural caller-record comparison only. It does not authenticate sources, assess evidence quality, adju](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-373ad29b8e9a9c1b / Claim ceiling: Structural caller-record comparison only. It does not authenticate sources, assess evidence quality, adju
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: Structural consistency and caller-excerpt substring checks on one untrusted packet only. No source authen](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50625897b1261b48 / Claim ceiling: Structural consistency and caller-excerpt substring checks on one untrusted packet only. No source authen
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: Task140 repository-local admission, capability-lease, filesystem-domain and validator-freeze evidence onl](../../../reports/operations/ignition-140-step10-live-admission.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4cd178972131e1a0 / Claim ceiling: Task140 repository-local admission, capability-lease, filesystem-domain and validator-freeze evidence onl
   - 来源：`reports/operations/ignition-140-step10-live-admission.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: The supplied bundle passed or failed this implementation’s repository-local schema and declared-consisten](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-337f04509e32fc30 / Claim ceiling: The supplied bundle passed or failed this implementation’s repository-local schema and declared-consisten
+  - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—
 - [claim_ceiling: "mechanism_plausible / causal_identification_pending / external_historical_verification_required"](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2329,6 +2449,41 @@
   - 可搜索名称：NFC-1baa61789438d714 / Collapsing thermodynamic arrow and causal arrow.
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
   - 依赖：—；被引用：—
+- [Comparators: foundation.batch_resolve_current_asset_references, foundation.resolve_current_asset; implementation refs: i](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e18cbfcb880df301 / Comparators: foundation.batch_resolve_current_asset_references, foundation.resolve_current_asset; implementation refs: i
+  - 来源：`TOOLBOX.md`
+  - 依赖：T2；被引用：—
+- [Comparators: ignition.adaptive_toolbox_route_planner; implementation refs: ignition/tools/operations/plan_ignition_opera](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-df2fde14dfa5f477 / Comparators: ignition.adaptive_toolbox_route_planner; implementation refs: ignition/tools/operations/plan_ignition_opera
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Comparators: knowledge.assemble_context_packet, knowledge.navigate_raw_evidence, knowledge.cluster_source_brief; impleme](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-05a55ada451b9814 / Comparators: knowledge.assemble_context_packet, knowledge.navigate_raw_evidence, knowledge.cluster_source_brief; impleme
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Comparators: maintenance.compare_actions_repeated_step_sequences, maintenance.summarize_actions_step_timeline; implement](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb49a416c6e674ed / Comparators: maintenance.compare_actions_repeated_step_sequences, maintenance.summarize_actions_step_timeline; implement
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Comparators: research.lookup_noaa_global_sf6_annual_growth, research.compare_noaa_co2_source_surfaces, research.compare_](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4bc8572970c60457 / Comparators: research.lookup_noaa_global_sf6_annual_growth, research.compare_noaa_co2_source_surfaces, research.compare_
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Comparators: research.preflight_g1_goal_intake, research.validate_evidence_program_snapshot; implementation refs: igniti](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fe055101252beb43 / Comparators: research.preflight_g1_goal_intake, research.validate_evidence_program_snapshot; implementation refs: igniti
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Comparison evidence: `COMPARISON_UNKNOWN` · One bounded tool-admission task was observed, but the compared systems emit](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-121132454feacb01 / Comparison evidence: `COMPARISON_UNKNOWN` · One bounded tool-admission task was observed, but the compared systems emit
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [Component ablations, parameter-space PCA and task scaling plots provide bounded support for the router and scaling mecha](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0151077605e89af6 / Component ablations, parameter-space PCA and task scaling plots provide bounded support for the router and scaling mecha
@@ -2348,159 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4a66e90fd4ea81f7 / Conflicting causal models without adjudicating evidence.
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
-  - 依赖：—；被引用：—
-- [Constraint execution and benchmark tests are explicit behavioral acceptance mechanisms, with clear evidence that their e](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-29b1be7c394af0fc / Constraint execution and benchmark tests are explicit behavioral acceptance mechanisms, with clear evidence that their e
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Corrected the Step 88 acceptance record before downstream use because the prior GLM card's legacy GAP meanings do not ma](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c39be51e74b6dfeb / Corrected the Step 88 acceptance record before downstream use because the prior GLM card's legacy GAP meanings do not ma
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [counterfactuals;](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ace68c445c0fcea9 / counterfactuals;
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
-  - 依赖：—；被引用：—
-- [D15 种子爆发后退出权信号的恢复（认知/恢复机制）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5fa1478b98c43c1e / D15 种子爆发后退出权信号的恢复（认知/恢复机制）
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D15；被引用：—
-- [D158是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-050b2d767dd0a4ee / D158是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158, D467, D468；被引用：—
-- [D173 显态粘性（`μ = R_retreat / C_exit`）描述撤退/退出成本粘性，机制不同。](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-17930fe535861fe7 / D173 显态粘性（`μ = R_retreat / C_exit`）描述撤退/退出成本粘性，机制不同。
-  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
-  - 依赖：D173；被引用：—
-- [D191是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a043bb3f278c5f1 / D191是D468在规范理论空间的投影。规范破缺后真空选择的不可逆性由陷阱深度决定\(D467覆盖\)。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D191, D467, D468；被引用：—
-- [D2 锁定-遮蔽耦合（耦合机制）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4088ee508709a718 / D2 锁定-遮蔽耦合（耦合机制）
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D2；被引用：—
-- [D25 叙事冲击（社会机制，案例关联多）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-61213df158c6a53f / D25 叙事冲击（社会机制，案例关联多）
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D25；被引用：—
-- [D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（\[D258\]\(docs/zh/functions/items/D258.md](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-46aaaaf0e5dca8e6 / D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（\[D258\]\(docs/zh/functions/items/D258.md
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D258, D259；被引用：—
-- [D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\\Delta\\Phi_{ghost}\(t\) = \\Delta\\Phi_{max} \\cdot \\exp\\left\(-\\kappa \\cdot \\left\[\\i](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-16ef6e4352aaafa2 / D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\\Delta\\Phi_{ghost}\(t\) = \\Delta\\Phi_{max} \\cdot \\exp\\left\(-\\kappa \\cdot \\left\[\\i
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D384, P17；被引用：—
-- [D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓](../../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5ca2b6c0aaa532c6 / D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓
-  - 来源：`outputs/audit/teacher-competition-index-visibility-check-20260708.md`
-  - 依赖：D595；被引用：—
-- [D595：不声称所有绩效制度都导致裹挟，只描述关键待遇强绑定时形式退出权被削弱。](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-89b8cf34afccd5de / D595：不声称所有绩效制度都导致裹挟，只描述关键待遇强绑定时形式退出权被削弱。
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：D595；被引用：—
-- [D596 避风港关联「形式主义」为侵蚀源，但未定义「指标替代价值」机制。](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-22f66a89d25faa35 / D596 避风港关联「形式主义」为侵蚀源，但未定义「指标替代价值」机制。
-  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
-  - 依赖：D596；被引用：—
-- [D597 = 基底机制（价值替代结构）；](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-753efa97680df871 / D597 = 基底机制（价值替代结构）；
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D597；被引用：—
-- [D597 索引可见性通过。再决定是否处理 NF-004 或 NC-001/NC-002。](../../../outputs/audit/d597-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4dcb45e8582d8072 / D597 索引可见性通过。再决定是否处理 NF-004 或 NC-001/NC-002。
-  - 来源：`outputs/audit/d597-index-visibility-check-20260708.md`
-  - 依赖：D597；被引用：—
-- [D598 = 组织压力下群体形成的**适应性钝化稳态**（社会心理层、群体级）](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-01362bacf26aecff / D598 = 组织压力下群体形成的**适应性钝化稳态**（社会心理层、群体级）
-  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
-  - 依赖：D598；被引用：—
-- [D598 final adjudication](../../ASSET-CARDS.md#asset-hr-adeed1d734c70a83)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：D598 final adjudication / D598-final-adjudication-20260713
-  - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
-  - 依赖：—；被引用：—
-- [D598 系统性钝化**：组织压力下群体形成的**适应性钝化稳态**——社会心理层、群体级结构（长期高压使主体压低愧疚/抵抗感，异常状态日常化，群体形成低敏感/低反抗/低修复稳态）。](../../../outputs/audit/d598-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ef6ad9042ce7ca00 / D598 系统性钝化**：组织压力下群体形成的**适应性钝化稳态**——社会心理层、群体级结构（长期高压使主体压低愧疚/抵抗感，异常状态日常化，群体形成低敏感/低反抗/低修复稳态）。
-  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
-  - 依赖：D598；被引用：—
-- [D598 系统性钝化索引可见性验证](../../ASSET-CARDS.md#asset-hr-2e400b8fd7cc6b10)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：D598 系统性钝化索引可见性验证 / d598-index-visibility-check-20260708
-  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
-  - 依赖：—；被引用：—
-- [D598 系统性钝化索引可见性验证](../../../outputs/audit/d598-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8dee280ba8b232e1 / D598 系统性钝化索引可见性验证
-  - 来源：`outputs/audit/d598-index-visibility-check-20260708.md`
-  - 依赖：D598；被引用：—
-- [D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cd8822eecdb329b1 / D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak rep
-  - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
-  - 依赖：D598；被引用：—
-- [D598｜系统性钝化](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D598 / D598｜系统性钝化
-  - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：D598；被引用：—
-- [D599 编号、标题、机制式可召回（grep 全局命中）；](../../../outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4f1f0654f56c5125 / D599 编号、标题、机制式可召回（grep 全局命中）；
-  - 来源：`outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`
-  - 依赖：D599；被引用：—
-- [D601 的上游形成机制](../../../outputs/research/role-identity-collision-batches-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-763fd616a8219b41 / D601 的上游形成机制
-  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
-  - 依赖：D601；被引用：—
-- [d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41e2ddeece668586 / d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M01 / data/external-research/088-external-source-atlas-medium.jsonl / M01 / M02
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M02 / data/external-research/088-external-source-atlas-medium.jsonl / M02 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M03 / data/external-research/088-external-source-atlas-medium.jsonl / M03 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M04 / data/external-research/088-external-source-atlas-medium.jsonl / M04 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M05 / data/external-research/088-external-source-atlas-medium.jsonl / M05 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

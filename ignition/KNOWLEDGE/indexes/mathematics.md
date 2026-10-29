@@ -6,21 +6,21 @@
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""A tiny read-only workspace whose lifecycle is explicit and disposable.""" → ## 纯数学函数与推导 / Pure Mathematical Function and Derivation
 - [第 002 片](./mathematics/part-002.md)：501—1000；## 纯数学函数与推导 / Pure Mathematical Function and Derivation → PRIVATE_PROVENANCE_WITHHELD
-- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
-- [第 004 片](./mathematics/part-004.md)：1501—2000；attempt-specific scratch lifecycle. → Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
-- [第 005 片](./mathematics/part-005.md)：2001—2500；Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness → If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.
-- [第 006 片](./mathematics/part-006.md)：2501—3000；If upstream objects D_{D52} exist, compose F_{D52}=N\(⊕_{g∈D_{D52}} g\); otherwise treat F_{D52} as an axiom seed. → Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ
-- [第 007 片](./mathematics/part-007.md)：3001—3500；Object D40 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - \(1-D_immune\) × \(1-R_pe → The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati
-- [第 008 片](./mathematics/part-008.md)：3501—4000；The source says “任一因子=0→乘积=0” and applies it to the point-fire framework product. It does not declare `Nat`, restrict th → title: "自我模型-ε_aware连接定理"
-- [第 009 片](./mathematics/part-009.md)：4001—4500；title: "自我模型函数" → Within the source-defined scope, 时间尺度同构函数 is adjudicated as RELATION: 时间尺度同构函数，不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的
-- [第 010 片](./mathematics/part-010.md)：4501—5000；Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成 → \| \[D387\]\( \) \| \[容斥-耦合配分函数\]\( \) \| F_{D387}\(x\) := M4的Ising同构意味着配分函数Z = Σ e
-- [第 011 片](./mathematics/part-011.md)：5001—5500；\| \[D389\]\( \) \| \[不归点-吸引域边界统一函数\]\( \) \| F_{D389}\(x\) := M6的δ_c恰好是D29 → 中文：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)
-- [第 012 片](./mathematics/part-012.md)：5501—6000；中文：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs… → 从原文看，情绪稳态临界，锁定退出权和退出权信号的平衡。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-- [第 013 片](./mathematics/part-013.md)：6001—6500；从原文看，投资相关函数，定投天然具备结构保守性，是巴菲特模式的精确实现。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：最优配置→P_recover高但P_innovate低→缓慢退化 关键发现：最优配置→P_recover高但P_innov… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-- [第 014 片](./mathematics/part-014.md)：6501—7000；从这条案例看，中文：案例说明：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 原始命题: 反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。 **扩展注释 / Extended Annotation**
-- [第 015 片](./mathematics/part-015.md)：7001—7500；原始命题: 地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。 → 因果关系、相关关系
-- [第 016 片](./mathematics/part-016.md)：7501—8000；因果链须能对应到具体函数的机制步骤。 → 数学表达 / Expression: `F_{D416}\(x\) := —降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启动→K=1的物理含义。**K=1与p_max=p*精确等价。**`
-- [第 017 片](./mathematics/part-017.md)：8001—8500；数学表达 / Expression: `F_{D421}\(x\) := M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。` → 生命共同体原则
-- [第 018 片](./mathematics/part-018.md)：8501—9000；生命共同体宪章链接有效 ✅ → 已迁移的历史函数来源/0346-D310-阶段2临界宽度函数.md
-- [第 019 片](./mathematics/part-019.md)：9001—9500；已迁移的历史函数来源/0347-D311-僵尸态函数.md → 距离衰减统一函数
-- [第 020 片](./mathematics/part-020.md)：9501—9738；距离衰减统一函数 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, commu
+- [第 004 片](./mathematics/part-004.md)：1501—2000；Article A 写“两个生命周期时钟”以及 Task142 的任务—义务拆分； → epistemic_state: no claim receives an M/E, proof, evidence, scope, provenance, Owner, production, external-validity or e
+- [第 005 片](./mathematics/part-005.md)：2001—2500；epistemic_state: 不提升任何 claim 的 `M/E`、proof、evidence、scope、provenance、claim ceiling、Owner acceptance 或外部真值；非知识 pilot 的 `C → If upstream objects D_{D37} exist, compose F_{D37}=N\(⊕_{g∈D_{D37}} g\); otherwise treat F_{D37} as an axiom seed.
+- [第 006 片](./mathematics/part-006.md)：2501—3000；If upstream objects D_{D380} exist, compose F_{D380}=N\(⊕_{g∈D_{D380}} g\); otherwise treat F_{D380} as an axiom seed. → n=2已证明，n≥3部分收敛，极小点存在性0.8
+- [第 007 片](./mathematics/part-007.md)：3001—3500；Namespace, delegation, Pack lifecycle, revocation, accounting, memory, recovery and → Task 142 makes the lifecycle boundary explicit beside this steering plane:
+- [第 008 片](./mathematics/part-008.md)：3501—4000；Task 142 将 Formal Task Lifecycle、Open Obligation Registry 与 → title: "植物蛋白质网络函数"
+- [第 009 片](./mathematics/part-009.md)：4001—4500；title: "植物表观遗传函数" → Within the source-defined scope, 关联长度-门槛函数 is adjudicated as METRIC: 关联长度-门槛函数，关联长度ξ=\|T-Tc\|^{-ν}描述门控面Λ的空间关联范围。. This is
+- [第 010 片](./mathematics/part-010.md)：4501—5000；Within the source-defined scope, 凯利公式认知边界 is adjudicated as RELATION: 凯利公式给出最优下注比例，认知边界决定财富上限。. This is a model-internal → \| \[D109\]\( \) \| \[乘法最优生存策略函数\]\( \) \| F_{D109}\(x\) := 给定总资源R和初始状态ε，最优分配使所有因
+- [第 011 片](./mathematics/part-011.md)：5001—5500；\| \[D110\]\( \) \| \[多因子乘法相变函数（推论级）\]\( \) \| F_{D110}\(x\) := $$P_{tran → ✅ strict isomorphism、causal、proved、impossible、unique、exact 等强标签均通过各自门或被明确降级
+- [第 012 片](./mathematics/part-012.md)：5501—6000；✅ 未修改历史函数来源和历史案例来源 → 乘法系统第二定律修正函数
+- [第 013 片](./mathematics/part-013.md)：6001—6500；九个独立状态轴为 workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration。任何一轴不得自动升级另一轴；工作流关闭不是真值，案例累积不是定理，机器证明也 → 从这条案例看，中文：案例说明：员工可辞职且行业有下家，自管理认同经退出权验证 关键发现：第5步跑通 English: Rule-based Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+- [第 014 片](./mathematics/part-014.md)：6501—7000；从这条案例看，中文：案例说明：哈勃张力超指数衰减 English: Rule-based English rendering pending human… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 内容：按指令要求含「函数内容 / 机制表达 V_effective = V_real × \(1 - Q_substitution\) / 机制链 / 关联函数族 / 与 D244 边界 / 来源 / 边界 / pending」
+- [第 015 片](./mathematics/part-015.md)：7001—7500；再按 `unified-case-entry-template.md` 从 C-0810 起逐条生成正式案例条目，更新 `已迁移的历史案例来源/INDEX.md` 与计数。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(级联防御,补门槛附近维度\),后5步β-0.1\(贪心优化,补弹性最
+- [第 016 片](./mathematics/part-016.md)：7501—8000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 数学表达 / Expression: `F_{D103}\(x\) := 覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。`
+- [第 017 片](./mathematics/part-017.md)：8001—8500；数学表达 / Expression: `F_{D108}\(x\) := $$S_{unified}\(domain\) = k_{domain} \\cdot \\ln \\Omega_{effective}\(domain\)$$ - 物理域：$\\Ome → 点火充要条件
+- [第 018 片](./mathematics/part-018.md)：8501—9000；点火充要条件 / ignition necessary and sufficient condition → 已迁移的历史函数来源/0233-D197-退相干-门槛锁定函数.md
+- [第 019 片](./mathematics/part-019.md)：9001—9500；已迁移的历史函数来源/0234-D198-Fisher信息-门控距离函数.md → 解读偏置函数\(核心疑问→错误解读的数学结构\)
+- [第 020 片](./mathematics/part-020.md)：9501—9852；计算机科学命题成立需要形式证明、工程验证、benchmark、实验评估。 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）

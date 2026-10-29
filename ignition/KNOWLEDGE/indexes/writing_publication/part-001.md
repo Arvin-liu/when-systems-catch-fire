@@ -109,6 +109,11 @@
   - 可搜索名称：NFC-6eec44a33705120e / `pull_request` 的 GitHub check run 关联 PR head SHA；Actions 作业日志显示 checkout 使用本地远端跟踪 ref `refs/remotes/pull/{number}/merge`
   - 来源：`docs/operations/stage-snapshot-publication.md`
   - 依赖：—；被引用：—
+- [`research.lookup_datacite_doi_metadata` retrieves one DataCite DOI record projection from the public, unauthenticated AP](../../../docs/operations/datacite-doi-metadata.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d1ebdd0643e46923 / `research.lookup_datacite_doi_metadata` retrieves one DataCite DOI record projection from the public, unauthenticated AP
+  - 来源：`docs/operations/datacite-doi-metadata.md`
+  - 依赖：—；被引用：—
 - [`stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2304d7a7965cf7f8 / `stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap
@@ -129,10 +134,25 @@
   - 可搜索名称：NFC-3ee61ae38bde2672 / `永昭·虚遐` remains a bounded example of optional embodied anchoring, prospective loading, lower-level preservation, a doubl
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
+- [arXiv query search candidate](../../ASSET-CARDS.md#asset-hr-c9c7be7590f4054e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：arXiv query search candidate / arxiv-query-search
+  - 来源：`docs/operations/arxiv-query-search.md`
+  - 依赖：—；被引用：—
 - [cache a public projection](../../../data/research/state-vs-transition-semantics-2026-09-07/maintenance-perturbations.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-b0335ee67607473d / cache a public projection
   - 来源：`data/research/state-vs-transition-semantics-2026-09-07/maintenance-perturbations.jsonl`
+  - 依赖：—；被引用：—
+- [Can do: Retrieve one exact-DOI-matched DataCite Public API record projection with provider-specific resource types, righ](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-83553faa34455ca7 / Can do: Retrieve one exact-DOI-matched DataCite Public API record projection with provider-specific resource types, righ
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Can do: Search Crossref Works v1 for one caller-supplied public topic query and return a bounded DOI-oriented metadata p](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-dfeae412d27ce99d / Can do: Search Crossref Works v1 for one caller-supplied public topic query and return a bounded DOI-oriented metadata p
+  - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—
 - [Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -154,6 +174,21 @@
   - 可搜索名称：NFC-ed87f4ca387552b7 / clone did not pass. It reported five deterministic projection failures:
   - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
   - 依赖：—；被引用：—
+- [Cross-source publication metadata comparison](../../ASSET-CARDS.md#asset-hr-554d799b050af008)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Cross-source publication metadata comparison / toolbox-publication-metadata-cross-source-comparison
+  - 来源：`docs/operations/toolbox-publication-metadata-cross-source-comparison.md`
+  - 依赖：—；被引用：—
+- [Crossref topic query search](../../ASSET-CARDS.md#asset-hr-6877ca1684609a44)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Crossref topic query search / crossref-query-search
+  - 来源：`docs/operations/crossref-query-search.md`
+  - 依赖：—；被引用：—
+- [Crossref 引文候选匹配器 / Crossref Citation Candidate Matcher](../../ASSET-CARDS.md#asset-hr-5f4ff7a29d422e2f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Crossref 引文候选匹配器 / Crossref Citation Candidate Matcher / toolbox-crossref-citation-matcher
+  - 来源：`docs/operations/toolbox-crossref-citation-matcher.md`
+  - 依赖：—；被引用：—
 - [Current Main vs 1.4 Candidate Homepage Comparison](../../ASSET-CARDS.md#asset-hr-4f3c4ff4a7ab0e3a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Current Main vs 1.4 Candidate Homepage Comparison / IGNITION-ITERATION-METHOD-1.4-homepage-comparison
@@ -163,6 +198,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c69e7dcb707fb73a / Current projection had no separate authority class for the later remote fact. A
   - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
+  - 依赖：—；被引用：—
+- [DataCite DOI metadata lookup](../../ASSET-CARDS.md#asset-hr-bbf9e07c5d35a7f1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：DataCite DOI metadata lookup / datacite-doi-metadata
+  - 来源：`docs/operations/datacite-doi-metadata.md`
   - 依赖：—；被引用：—
 - [delta: closes the Current-State synchronization invariant, deterministic current-facts publication gate, compact `0.8.0`](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -179,6 +219,16 @@
   - 可搜索名称：NFC-dad7d080fea392b3 / Embodied anchoring is optional mode; cross-domain isomorphism is application type; high-dimensional compression is optio
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
+- [Europe PMC topic search candidate](../../ASSET-CARDS.md#asset-hr-2535490f67eec4f5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Europe PMC topic search candidate / toolbox-europe-pmc-query-search
+  - 来源：`docs/operations/toolbox-europe-pmc-query-search.md`
+  - 依赖：—；被引用：—
+- [Fallback: If the API is unavailable or the query is unsuitable for public transmission, preserve the explicit failure or](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3a9720d5b355b6cd / Fallback: If the API is unavailable or the query is unsuitable for public transmission, preserve the explicit failure or
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [front-door validation, legacy migration, and public-projection privacy checks.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-438d8f26a135ee53 / front-door validation, legacy migration, and public-projection privacy checks.
@@ -188,6 +238,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：GetNote external verification R1 / pointfire-getnote-external-verification-r1-20260813
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [Good for: A task already has one to five public DOI, PMID, or PMCID values and needs the provider-reported Europe PMC fu](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-38227e0b2fd7ca1c / Good for: A task already has one to five public DOI, PMID, or PMCID values and needs the provider-reported Europe PMC fu
+  - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—
 - [IGNITION-140 Step 04 — Typed Observation Outcomes](../../ASSET-CARDS.md#asset-hr-67d1c79c98329e3c)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
@@ -289,10 +344,35 @@
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-change-propagation-impact
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [Migration/rollback: No Current operation or incumbent route changes. Call only after explicit selection for a public cit](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5155b7cd8ef94b74 / Migration/rollback: No Current operation or incumbent route changes. Call only after explicit selection for a public cit
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Migration/rollback: Use only for explicit structured paragraph reordering; keep generative editing and publication-surfa](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-692a826ef28cfb93 / Migration/rollback: Use only for explicit structured paragraph reordering; keep generative editing and publication-surfa
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [NOAA GML global annual CO2 growth lookup](../../ASSET-CARDS.md#asset-hr-66ba2a3b22f95840)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：NOAA GML global annual CO2 growth lookup / noaa-co2-annual-growth-lookup
+  - 来源：`docs/operations/noaa-co2-annual-growth-lookup.md`
+  - 依赖：—；被引用：—
+- [NOAA GML global annual methane growth lookup](../../ASSET-CARDS.md#asset-hr-672777f571efc62e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：NOAA GML global annual methane growth lookup / noaa-ch4-annual-growth-lookup
+  - 来源：`docs/operations/noaa-ch4-annual-growth-lookup.md`
+  - 依赖：—；被引用：—
 - [nonfunction and Knowledge projections were generated. The final tracked tree](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dc7f89bc84dd66f5 / nonfunction and Knowledge projections were generated. The final tracked tree
   - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
+- [OpenAlex bounded query search](../../ASSET-CARDS.md#asset-hr-253ab45880967464)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：OpenAlex bounded query search / openalex-query-search
+  - 来源：`docs/operations/openalex-query-search.md`
   - 依赖：—；被引用：—
 - [projection. The public view is cleared when the capture/privacy boundary fails.](../../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -303,6 +383,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6278f47ee645f19e / projections. The failed observation is preserved in the machine audit; it is
   - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
+- [PubMed Citation Matcher](../../ASSET-CARDS.md#asset-hr-96f5b44e32866558)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：PubMed Citation Matcher / pubmed-citation-matcher
+  - 来源：`docs/operations/pubmed-citation-matcher.md`
   - 依赖：—；被引用：—
 - [Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -363,6 +448,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-915290d1e60de4ca / The privacy check covers the declared public projection; it does not certify
   - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [The projection includes DataCite state and schema version, publisher, publication year, `resourceTypeGeneral`, `resource](../../../docs/operations/datacite-doi-metadata.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ba9b0f2012e646ec / The projection includes DataCite state and schema version, publisher, publication year, `resourceTypeGeneral`, `resource
+  - 来源：`docs/operations/datacite-doi-metadata.md`
   - 依赖：—；被引用：—
 - [The public knowledge-experience projection deterministically withholds](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

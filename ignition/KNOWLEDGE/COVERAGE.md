@@ -4,21 +4,21 @@ Every recovered result/article receives a card and three reading levels. Functio
 
 ## 当前覆盖
 
-- 结果/文章来源：574；资产卡：574；分层阅读：574。
-- 函数 registry：6152；重点人工可读卡：12。
-- 非函数断言 registry：17972；重点人工可读卡：67。
-- 全量搜索记录：24698；知识变化：548。
+- 结果/文章来源：633；资产卡：633；分层阅读：633。
+- 函数 registry：6189；重点人工可读卡：12。
+- 非函数断言 registry：19359；重点人工可读卡：67。
+- 全量搜索记录：26181；知识变化：591。
 
 ## 历史结果审计
 
 |类别|数量|解释|
 |---|---:|---|
-|`CURRENT_OR_SCOPED_SOURCE`|467|现存且未被识别为辅助/撤回历史的来源记录。|
-|`STALE_OR_INTERMEDIATE`|34|交接、预检、夜间进度等中间材料；保留来源与卡片，不进入主时间线。|
-|`MACHINE_ONLY`|24045|仍可全量搜索、可回到 canonical registry，但未达到本轮重点卡片 materiality policy。|
+|`CURRENT_OR_SCOPED_SOURCE`|510|现存且未被识别为辅助/撤回历史的来源记录。|
+|`STALE_OR_INTERMEDIATE`|50|交接、预检、夜间进度等中间材料；保留来源与卡片，不进入主时间线。|
+|`MACHINE_ONLY`|25469|仍可全量搜索、可回到 canonical registry，但未达到本轮重点卡片 materiality policy。|
 |`SOURCE_MISSING`|0|索引指向不存在来源；必须为零，否则 CI 阻断。|
 |`SUPERSEDED_OR_WITHDRAWN`|73|来源自身带历史、替代或撤回信号；保留演化链，不作为当前结论。|
-|`NOT_MEANINGFUL_PUBLIC_CHANGE`|34|不是有意义的公共知识变化，不进入 What's New。|
+|`NOT_MEANINGFUL_PUBLIC_CHANGE`|50|不是有意义的公共知识变化，不进入 What's New。|
 
 ## 不应误读
 
