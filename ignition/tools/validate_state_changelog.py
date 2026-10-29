@@ -15,13 +15,18 @@ REPO_ROOT = ROOT.parent
 PATH = ROOT / "STATE-CHANGELOG.md"
 PROFILE_PATH_R1 = ROOT / "data" / "operations" / "state-changelog-profile-r1.json"
 PROFILE_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r2.json"
+PROFILE_PATH_R3 = ROOT / "data" / "operations" / "state-changelog-profile-r3.json"
 R1_PROFILE_SHA256 = "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c"
 R2_PROFILE_SHA256 = "5b866d55e04ffc0fae8e89b19552084f04846df96b310eccbc24ffe7a2acd235"
+R3_PROFILE_SHA256 = "ceca193d4715fe2491af4e08890b1bd6041a0429c47b5bd9ad969d64c8e6cd5a"
 R1_SCHEMA_VERSION = "state-changelog-profile-r1"
 R2_SCHEMA_VERSION = "state-changelog-profile-r2"
+R3_SCHEMA_VERSION = "state-changelog-profile-r3"
 R1_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED"
 R2_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_SUCCESSOR"
+R3_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_SUCCESSOR_CHAIN"
 R2_APPEND_PROFILE = "current-governance-self-repair-r1"
+R3_APPEND_PROFILE = "task20-current-lineage-r1"
 R2_AUTHORIZATION = {
     "owner": "Arvin-liu",
     "repository": "Arvin-liu/1111",
@@ -29,6 +34,14 @@ R2_AUTHORIZATION = {
     "path": "instructions/goal-mode/IGNITION-2026-10-12-governance-self-repair-r1.md",
     "blob_sha1": "ec3c1d9781ead374679e334680a4f969f210a46e",
     "append_profile": R2_APPEND_PROFILE,
+}
+R3_AUTHORIZATION = {
+    "owner": "Arvin-liu",
+    "repository": "Arvin-liu/1111",
+    "commit": "44de013f09b63535fe16b1e38cab7eff4d68ae66",
+    "path": "instructions/goal-mode/IGNITION-2026-10-24-SIGNED-OWNER-WEB-MERGE-REGISTRATION-COMPATIBILITY-R0.md",
+    "blob_sha1": "6a5d36cb6c40170c1b85440047eaceda097cee8b",
+    "append_profile": R3_APPEND_PROFILE,
 }
 STRICT_FIELDS = [
     "main_state",
@@ -159,6 +172,54 @@ def _validate_profile_contract(profile: dict, errors: list[str], schema_version:
             errors.append("R2 profile changes the R1 historical entry count")
         if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
             errors.append("R2 profile changes the R1 legacy profile count")
+    elif schema_version == R3_SCHEMA_VERSION:
+        if profile.get("profile_contract") != R3_PROFILE_CONTRACT:
+            errors.append("R3 validation profile contract is unknown")
+        parent = profile.get("parent_profile")
+        expected_parent = {
+            "path": "data/operations/state-changelog-profile-r2.json",
+            "schema_version": R2_SCHEMA_VERSION,
+            "sha256": R2_PROFILE_SHA256,
+        }
+        if parent != expected_parent:
+            errors.append("R3 validation profile does not bind the exact sealed R2 parent")
+        if profile.get("authorization") != R3_AUTHORIZATION:
+            errors.append("R3 validation profile lacks the exact Task20 Owner authorization")
+        parent_bytes: bytes | None = None
+        try:
+            parent_bytes = PROFILE_PATH.read_bytes()
+            parent_profile = json.loads(parent_bytes)
+        except (OSError, json.JSONDecodeError) as exc:
+            parent_profile = {}
+            errors.append(f"cannot load sealed R2 parent profile: {exc}")
+        if parent_bytes is None or hashlib.sha256(parent_bytes).hexdigest() != R2_PROFILE_SHA256:
+            errors.append("R2 parent profile bytes differ from their sealed digest")
+        expected_profiles = parent_profile.get("profiles", {})
+        expected_profiles = json.loads(json.dumps(expected_profiles))
+        expected_profiles[R3_APPEND_PROFILE] = {
+            "kind": "current",
+            "required_fields": STRICT_FIELDS + ["claim_ceiling"],
+            "base_sha_required": True,
+        }
+        if profile.get("profiles") != expected_profiles:
+            errors.append("R3 profile definitions are not exactly R2 plus its authorized Task20 append profile")
+        entries = profile.get("entries")
+        parent_entries = parent_profile.get("entries", [])
+        if not isinstance(entries, list) or not isinstance(parent_entries, list):
+            errors.append("R3 profile entries or R2 parent entries are malformed")
+        else:
+            if len(entries) != len(parent_entries) + 1:
+                errors.append("R3 profile must append exactly one record to its sealed R2 parent")
+            if entries[:len(parent_entries)] != parent_entries:
+                errors.append("R3 profile rewrites or reorders the sealed R2 entry prefix")
+            if len(entries) > len(parent_entries):
+                added = entries[len(parent_entries)]
+                if not isinstance(added, dict) or added.get("ordinal") != len(parent_entries) + 1 or added.get("profile") != R3_APPEND_PROFILE:
+                    errors.append("R3 appended entry is not the authorized next Task20 current profile")
+        if profile.get("historical_entry_count") != parent_profile.get("historical_entry_count"):
+            errors.append("R3 profile changes the R2 historical entry count")
+        if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
+            errors.append("R3 profile changes the R2 legacy profile count")
     else:
         errors.append(f"unsupported validation profile schema: {schema_version}")
     _validate_profile_counts(profile, errors)
@@ -177,6 +238,7 @@ def _load_profile(profile_path: Path) -> tuple[dict, list[str]]:
     authorized_profiles = {
         PROFILE_PATH_R1.resolve(): (R1_SCHEMA_VERSION, R1_PROFILE_SHA256),
         PROFILE_PATH.resolve(): (R2_SCHEMA_VERSION, R2_PROFILE_SHA256),
+        PROFILE_PATH_R3.resolve(): (R3_SCHEMA_VERSION, R3_PROFILE_SHA256),
     }
     authorized = authorized_profiles.get(resolved_path)
     if authorized is None:
@@ -266,7 +328,7 @@ def _validate_links(text: str, path: Path, errors: list[str]) -> None:
             errors.append(f"broken repository link: {target}")
 
 
-def validate(path: Path = PATH, profile_path: Path = PROFILE_PATH) -> list[str]:
+def validate(path: Path = PATH, profile_path: Path = PROFILE_PATH_R3) -> list[str]:
     errors: list[str] = []
     if not path.is_file():
         return [f"missing {path.relative_to(ROOT)}"]

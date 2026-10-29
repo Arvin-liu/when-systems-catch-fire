@@ -750,3 +750,15 @@
 - stale_knowledge: connected GitHub branch-protection evidence remains `UNKNOWN/admin evidence required`; no protection setting was changed. [OPERATIONAL_RECORD_ONLY]
 - next_read: inspect the exact Draft head, additive R2 profile, unchanged R1 prefix, identity input, path manifest and triggered CI results. [OPERATIONAL_RECORD_ONLY]
 - claim_ceiling: repository-local governance implementation and test evidence only; no scientific, external-validity, Current, merge or publication claim is made. [OPERATIONAL_RECORD_ONLY]
+## 2026-10-29 — IGNITION-20261024-020 — Task20 R3 candidate first-stage closeout
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains `483658e2ff57ad553c3fda762ed855a8bd93ebbe`. This records branch-local Task20 candidate work and does not claim a main merge, R3 activation, or publication.
+- current_formal_task: `IGNITION-20261024-020` remains `IN_PROGRESS` and non-terminal; this candidate repairs registered identity-source validation and first-stage integration gates.
+- delta: consolidated duplicate G-domain validation target rows by retaining one stable target ID and the union of their existing modules and evidence; no required check name or pass standard changed. Added this append-only Task20 lineage record so Current Task Lineage reflects its canonical task identity.
+- authority_changes: none. R2 remains current. This candidate does not change branch protection, authorize an R2 exception, activate R3, or create scientific authority.
+- task_lineage: `IGNITION-20260829-148` remains `COMPLETED_WITH_OPEN_OBLIGATIONS`; `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task20 remains `IN_PROGRESS`.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Repository validation and route evidence do not establish external truth, production readiness, Owner acceptance, or scientific validity.
+- obligations: obtain the separate release evidence required for any R2 exception or R3 transition; complete exact-head checks and the legal final-main witness; continue #259 only under the active publication contract.
+- stale_knowledge: prior candidate CI and route failures remain evidence for their exact historical heads only. Old PR conflicts are excluded from this Task20 closeout by the Owner's current direction.
+- next_read: inspect the exact #264 head, its required checks, and the current R2/R3 authorization state before any merge or publication; a local candidate result is not a main witness.
+- claim_ceiling: repository-local Task20 candidate repair and first-stage integration evidence only; no formal main merge, R3 transition, #259 release, or epistemic acceptance is inferred.

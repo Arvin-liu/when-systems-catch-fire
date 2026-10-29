@@ -7,9 +7,11 @@ from pathlib import Path
 
 from tools.validate_state_changelog import (
     PROFILE_PATH,
+    PROFILE_PATH_R3,
     PROFILE_PATH_R1,
     R1_PROFILE_SHA256,
     R2_PROFILE_SHA256,
+    R3_PROFILE_SHA256,
     ROOT,
     validate,
 )
@@ -127,10 +129,43 @@ class StateChangelogTests(unittest.TestCase):
         self.assertEqual(r2["entry_count"], len(r1["entries"]) + 1)
         self.assertEqual([], validate())
 
+    def test_r3_profile_is_exact_additive_successor_of_immutable_r2(self):
+        r2_bytes = PROFILE_PATH.read_bytes()
+        r2 = json.loads(r2_bytes)
+        r3_bytes = PROFILE_PATH_R3.read_bytes()
+        r3 = json.loads(r3_bytes)
+        self.assertEqual(hashlib.sha256(r2_bytes).hexdigest(), R2_PROFILE_SHA256)
+        self.assertEqual(hashlib.sha256(r3_bytes).hexdigest(), R3_PROFILE_SHA256)
+        self.assertEqual(r3["parent_profile"]["sha256"], R2_PROFILE_SHA256)
+        self.assertEqual(r3["entries"][: len(r2["entries"])], r2["entries"])
+        self.assertEqual(r3["entry_count"], len(r3["entries"]))
+        self.assertEqual(r3["entry_count"], len(r2["entries"]) + 1)
+        self.assertEqual("task20-current-lineage-r1", r3["entries"][-1]["profile"])
+        self.assertEqual([], validate())
+
+    def test_r3_profile_rejects_an_unregistered_59th_append(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        source += (
+            "\n## 2026-10-30 — SYNTHETIC-UNAUTHORIZED-59\n\n"
+            "- main_state: synthetic candidate only\n"
+            "- delta: no authorized trust root was supplied\n"
+            "- authority_changes: none\n"
+            "- epistemic_state: unchanged\n"
+            "- obligations: remain open\n"
+            "- stale_knowledge: none\n"
+            "- next_read: Owner must authorize a real successor independently\n"
+            "- claim_ceiling: repository-local fixture only\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "STATE-CHANGELOG.md"
+            path.write_text(source, encoding="utf-8")
+            errors = validate(path=path)
+        self.assertTrue(any("expects 58 entries" in error for error in errors), errors)
+
     def test_immutable_r1_prefix_validates_with_original_profile(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
-        prefix = source[: headings[-1].start()]
+        prefix = source[: headings[56].start()]
         path = ROOT / ".state-changelog-r1-prefix-test.md"
         try:
             path.write_text(prefix, encoding="utf-8")
@@ -142,7 +177,7 @@ class StateChangelogTests(unittest.TestCase):
         errors = validate(profile_path=PROFILE_PATH_R1)
         self.assertTrue(any("expects" in error or "entry set" in error for error in errors), errors)
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
-        prefix = source[: list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))[-1].start()]
+        prefix = source
         path = ROOT / ".state-changelog-r2-downgrade-test.md"
         try:
             path.write_text(prefix, encoding="utf-8")
@@ -163,17 +198,19 @@ class StateChangelogTests(unittest.TestCase):
 
     def test_r2_negative_counterfactuals_preserve_fixed_57_entry_boundary(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
+        source_r2 = source[: headings[-1].start()]
         cases = {
-            "tampered-historical-56": _replace_in_entry(source, 56, "- main_state:", "- main_state: TAMPERED;"),
-            "tampered-current-57": _replace_in_entry(source, 57, "- main_state:", "- main_state: TAMPERED;"),
+            "tampered-historical-56": _replace_in_entry(source_r2, 56, "- main_state:", "- main_state: TAMPERED;"),
+            "tampered-current-57": _replace_in_entry(source_r2, 57, "- main_state:", "- main_state: TAMPERED;"),
             "arbitrary-scientific-claim-upgrade": _replace_in_entry(
-                source, 57, "- claim_ceiling:", "- claim_ceiling: SCIENTIFICALLY_VALIDATED_WITHOUT_EVIDENCE;"
+                source_r2, 57, "- claim_ceiling:", "- claim_ceiling: SCIENTIFICALLY_VALIDATED_WITHOUT_EVIDENCE;"
             ),
             "missing-required-field": _replace_in_entry(
-                source, 57, "- claim_ceiling:", "- claim_ceiling_removed:"
+                source_r2, 57, "- claim_ceiling:", "- claim_ceiling_removed:"
             ),
-            "duplicate-entry": source + "\n" + source[source.rfind("\n## ") + 1:],
-            "unauthorized-58th-append": source + (
+            "duplicate-entry": source_r2 + "\n" + source_r2[source_r2.rfind("\n## ") + 1:],
+            "unauthorized-58th-append": source_r2 + (
                 "\n## 2026-10-13 — SYNTHETIC-UNAUTHORIZED-58\n\n"
                 "- main_state: synthetic candidate only\n"
                 "- delta: no authorized trust root was supplied\n"
@@ -187,7 +224,7 @@ class StateChangelogTests(unittest.TestCase):
             "invalid-date": re.sub(
                 r"(?m)^## 2026-10-12 — IGNITION-GOVERNANCE-SELF-REPAIR-R1-PACKAGE-A",
                 "## 2026-99-99 — IGNITION-GOVERNANCE-SELF-REPAIR-R1-PACKAGE-A",
-                source,
+                source_r2,
                 count=1,
             ),
         }
@@ -204,7 +241,7 @@ class StateChangelogTests(unittest.TestCase):
             with self.subTest(case=case_id), tempfile.TemporaryDirectory() as tmp:
                 path = Path(tmp) / "STATE-CHANGELOG.md"
                 path.write_text(mutated, encoding="utf-8")
-                errors = validate(path=path)
+                errors = validate(path=path, profile_path=PROFILE_PATH)
                 self.assertTrue(any(expected_fragments[case_id] in error for error in errors), (case_id, errors))
 
     def test_r2_profile_authority_counterfactuals_fail_closed(self):
@@ -241,7 +278,7 @@ class StateChangelogTests(unittest.TestCase):
         r2_bytes = PROFILE_PATH.read_bytes()
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         headings = list(re.finditer(r"^## \d{4}-\d{2}-\d{2} — .+$", source, re.MULTILINE))
-        prefix_56 = source[: headings[-1].start()]
+        prefix_56 = source[: headings[-2].start()]
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "STATE-CHANGELOG.md"
             path.write_text(prefix_56, encoding="utf-8")

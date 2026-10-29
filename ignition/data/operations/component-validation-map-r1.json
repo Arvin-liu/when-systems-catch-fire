@@ -15,9 +15,13 @@
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
         "tests.test_production_execution_authority",
-        "tests.foundation.test_trigger_coverage"
+        "tests.foundation.test_trigger_coverage",
+        "tests.test_release_transaction_protocol",
+        "tests.test_q33_governance_infrastructure",
+        "tests.test_release_transaction_protocol_r3",
+        "tests.test_release_candidate_task_identity"
       ],
-      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
+      "evidence": "Existing incremental-planner, authority, defensive-rejection, and R2 release-transaction protocol tests, plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, final-main-witness workflow-path, and Q33 governance-infrastructure coverage fixtures exercise component closure and fail-closed release evidence.",
       "import_roots": [
         "ignition"
       ]
@@ -28,9 +32,10 @@
       "modules": [
         "tests.test_current_state_sync",
         "tests.test_current_surface_compiler",
-        "tests.test_state_changelog"
+        "tests.test_state_changelog",
+        "tests.test_current_task_advancement"
       ],
-      "evidence": "Existing current-state sync, surface compilation and state-change tests exercise the affected declared consumers.",
+      "evidence": "Existing current-state sync, surface compilation, state-change, and current-task advancement tests exercise the affected declared consumers.",
       "import_roots": [
         "ignition"
       ]
@@ -129,13 +134,14 @@
       "domain": "G",
       "modules": [
         "tests.foundation.test_claim_governance",
-        "tests.foundation.test_nonfunction_claim_closure"
+        "tests.foundation.test_nonfunction_claim_closure",
+        "tests.test_knowledge_corpus_admission"
       ],
       "import_roots": [
         "ignition",
         "ignition/tools/foundation"
       ],
-      "evidence": "Existing Foundation claim-governance and nonfunction-closure consumers validate L3 argument and claim relationships."
+      "evidence": "Existing Foundation claim-governance, nonfunction-closure, and corpus-admission tests validate L3 argument, claim, and source-admission boundaries."
     },
     {
       "target_id": "g_history_remediation_contract",
@@ -383,57 +389,6 @@
       ]
     },
     {
-      "target_id": "g_component_release_controls",
-      "domain": "G",
-      "modules": [
-        "tests.test_component_validation_routing",
-        "tests.test_component_validation_evidence",
-        "tests.test_component_release_preparation",
-        "tests.test_component_release_authorization",
-        "tests.test_component_profiles",
-        "tests.test_incremental_planner",
-        "tests.test_incremental_execution_defensive_rejections",
-        "tests.test_production_execution_authority",
-        "tests.test_release_transaction_protocol",
-        "tests.foundation.test_trigger_coverage",
-        "tests.test_q33_governance_infrastructure",
-        "tests.test_release_transaction_protocol_r3",
-        "tests.test_release_candidate_task_identity"
-      ],
-      "evidence": "Existing incremental-planner, authority, defensive-rejection, and R2 release-transaction protocol tests, plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, final-main-witness workflow-path, and Q33 governance-infrastructure coverage fixtures exercise component closure and fail-closed release evidence.",
-      "import_roots": [
-        "ignition"
-      ]
-    },
-    {
-      "target_id": "g_current_state_consumers",
-      "domain": "G",
-      "modules": [
-        "tests.test_current_state_sync",
-        "tests.test_current_surface_compiler",
-        "tests.test_state_changelog",
-        "tests.test_current_task_advancement"
-      ],
-      "evidence": "Existing current-state sync, surface compilation and state-change tests exercise the affected declared consumers.",
-      "import_roots": [
-        "ignition"
-      ]
-    },
-    {
-      "target_id": "g_foundation_argument_consumers",
-      "domain": "G",
-      "modules": [
-        "tests.foundation.test_claim_governance",
-        "tests.foundation.test_nonfunction_claim_closure",
-        "tests.test_knowledge_corpus_admission"
-      ],
-      "import_roots": [
-        "ignition",
-        "ignition/tools/foundation"
-      ],
-      "evidence": "Existing Foundation claim-governance, nonfunction-closure, and corpus-admission tests validate L3 argument, claim, and source-admission boundaries."
-    },
-    {
       "target_id": "g_q33_workflow_trigger_contract",
       "domain": "G",
       "modules": [
@@ -616,7 +571,7 @@
       "validation_targets": [
         "g_component_release_controls"
       ],
-      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, and target runner; changes also match the full-regression authority paths.",
+      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, target runner, and protected-main release controls. Its R2 release-transaction validation workflow is checked by the existing release-control consumer target; router and release-authority changes also match the full-regression authority paths.",
       "change_classifications": [
         "CAPABILITY_ADDITION",
         "GOVERNANCE_CHANGE",
@@ -646,11 +601,13 @@
       ],
       "validation_targets": [
         "g_current_state_consumers",
-        "o_human_result_consumers"
+        "o_human_result_consumers",
+        "g_human_front_door_consumers"
       ],
       "change_classifications": [
         "EVIDENCE_UPDATE",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
       ],
       "requires_full_regression": true,
       "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
@@ -693,9 +650,11 @@
         "O",
         "G"
       ],
-      "validation_targets": [],
+      "validation_targets": [
+        "g_foundation_argument_consumers"
+      ],
       "requires_full_regression": true,
-      "evidence": "Foundation spans all layers and shared claims; its current required consumers are the complete foundation-validation workflow.",
+      "evidence": "Foundation spans all layers and shared claims; corpus-admission changes also select the existing argument consumers and require the complete Foundation regression.",
       "change_classifications": [
         "CAPABILITY_ADDITION",
         "EVIDENCE_UPDATE",
@@ -1419,41 +1378,6 @@
       "requires_full_regression": true
     },
     {
-      "component_id": "component_validation_router",
-      "domains": [
-        "G"
-      ],
-      "validation_targets": [
-        "g_component_release_controls"
-      ],
-      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, target runner, and protected-main release controls. Its R2 release-transaction validation workflow is checked by the existing release-control consumer target; router and release-authority changes also match the full-regression authority paths.",
-      "change_classifications": [
-        "CAPABILITY_ADDITION",
-        "GOVERNANCE_CHANGE",
-        "INTERFACE_CHANGE",
-        "OPERATIONS_METHOD"
-      ]
-    },
-    {
-      "component_id": "current_state",
-      "domains": [
-        "O",
-        "G"
-      ],
-      "validation_targets": [
-        "g_current_state_consumers",
-        "g_human_front_door_consumers",
-        "o_human_result_consumers"
-      ],
-      "change_classifications": [
-        "EVIDENCE_UPDATE",
-        "RELEASE_OR_CURRENT_STATE_SYNC",
-        "OPERATIONS_METHOD"
-      ],
-      "requires_full_regression": true,
-      "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
-    },
-    {
       "component_id": "formal_task_lifecycle_r1",
       "domains": [
         "G"
@@ -1522,28 +1446,6 @@
         "OPERATIONS_METHOD"
       ],
       "evidence": "The project component registry and its route ownership are covered by the existing validation-router, plan, and defensive-rejection consumer tests."
-    },
-    {
-      "component_id": "foundation",
-      "domains": [
-        "R",
-        "O",
-        "G"
-      ],
-      "validation_targets": [
-        "g_foundation_argument_consumers"
-      ],
-      "requires_full_regression": true,
-      "evidence": "Foundation spans all layers and shared claims; corpus-admission changes also select the existing argument consumers and require the complete Foundation regression.",
-      "change_classifications": [
-        "CAPABILITY_ADDITION",
-        "EVIDENCE_UPDATE",
-        "GOVERNANCE_CHANGE",
-        "HISTORICAL_ONLY",
-        "INTERFACE_CHANGE",
-        "OPERATIONS_METHOD",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
-      ]
     },
     {
       "component_id": "agentization_boundary_r0",

@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "15fadea337e934027ae348bf8e0e22013c5798549ea1d1875e6d3186d36d0582"
+      "sha256": "acfa42b840a4e438e8f275e26e258795524ce9cc7c1357d7830f3c189d2dde43"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
