@@ -13,7 +13,7 @@
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=105; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20261024-020` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b6bbc74ee59b592be63e5dc8bc4de01b7ffbcb36ad2608c72a4d4d78abcd7901`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `9ebd773d60a3519e6f491fc840da94acdf923e50ee8575164c77882b7242fec5`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -740,7 +740,6 @@
 - stale_knowledge: a green local generator or CI result must not be read as independent validation, Current promotion, production readiness or epistemic acceptance; the old main pointer remains the baseline until remote observation. [OPERATIONAL_RECORD_ONLY]
 - next_read: inspect the dedicated integration PR and required CI at its exact head, then verify the merged remote main SHA, Task165 ancestry, post-merge smoke/Foundation gates and the independent `1111` receipt. [OPERATIONAL_RECORD_ONLY]
 - claim_ceiling: repository-local derived-output reconciliation and formal integration-candidate evidence only; no external truth, Owner acceptance, production readiness, validated research finding or `READY_FOR_NEW_MATERIAL_RUN` status is inferred before all command gates close. [OPERATIONAL_RECORD_ONLY]
-
 ## 2026-10-24 — IGNITION-20261024-020 — signed registration compatibility and exact task-source repair
 
 - main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline remains `483658e2ff57ad553c3fda762ed855a8bd93ebbe`. Task20 is an in-progress, branch-local candidate record; it is not merged or published.

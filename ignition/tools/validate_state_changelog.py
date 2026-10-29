@@ -15,8 +15,8 @@ REPO_ROOT = ROOT.parent
 PATH = ROOT / "STATE-CHANGELOG.md"
 PROFILE_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r1.json"
 PROFILE_SCHEMA_VERSION = "state-changelog-profile-r1"
-EXPECTED_ENTRY_COUNT = 56
-EXPECTED_CURRENT_ORDINALS = list(range(27, 55))
+EXPECTED_ENTRY_COUNT = 57
+EXPECTED_CURRENT_ORDINALS = [*range(27, 55), 57]
 EXPECTED_HISTORICAL_COUNT = 28
 EXPECTED_LEGACY_COUNT = 6
 STRICT_FIELDS = [
@@ -65,6 +65,11 @@ def _validate_profile_contract(profile: dict, errors: list[str]) -> None:
             "current",
             ["main_state", "architecture_boundary", "task_lineage", "current_boundary", "claim_ceiling"],
             False,
+        ),
+        "current-task-registration-r1": (
+            "current",
+            ["main_state", "delta", "task_lineage", "obligations", "release_boundary", "validation_boundary", "claim_ceiling"],
+            True,
         ),
         "historical-current-r0": ("historical", STRICT_FIELDS, True),
         "historical-legacy-r0": ("historical", [], False),

@@ -9,6 +9,12 @@
       "expected_status": "FAIL"
     },
     {
+      "case_id": "current_task_registration_missing_boundary_field",
+      "target_profile": "current-task-registration-r1",
+      "operation": "remove_release_boundary_from_entry_57",
+      "expected_status": "FAIL"
+    },
+    {
       "case_id": "historical_sealed_exact_legacy",
       "target_profile": "historical-legacy-r0",
       "operation": "validate_unmodified_sealed_entry_17",

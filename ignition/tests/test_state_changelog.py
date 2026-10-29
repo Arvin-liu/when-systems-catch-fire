@@ -76,6 +76,18 @@ class StateChangelogTests(unittest.TestCase):
                     path.write_text(mutated, encoding="utf-8")
                     errors = validate(path)
                 passed = not errors
+            elif case_id == "current_task_registration_missing_boundary_field":
+                mutated = _replace_in_entry(
+                    source,
+                    57,
+                    "- release_boundary:",
+                    "- release_boundary_removed:",
+                )
+                with tempfile.TemporaryDirectory() as tmp:
+                    path = Path(tmp) / "STATE-CHANGELOG.md"
+                    path.write_text(mutated, encoding="utf-8")
+                    errors = validate(path)
+                passed = not errors
             elif case_id == "historical_sealed_exact_legacy":
                 passed = not validate()
             elif case_id == "historical_sealed_mutation":
