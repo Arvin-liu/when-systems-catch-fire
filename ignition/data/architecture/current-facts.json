@@ -117,10 +117,10 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6152,
-      "function_quarantine_or_pending": 5000,
-      "nonfunction_claims": 17972,
-      "nonfunction_quarantine_or_pending": 4993
+      "function_identity_cards": 6189,
+      "function_quarantine_or_pending": 5022,
+      "nonfunction_claims": 19359,
+      "nonfunction_quarantine_or_pending": 5277
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -155,11 +155,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 1353,
-      "cards": 653,
-      "changes": 548,
-      "layered_readings": 574,
-      "search_records": 24698
+      "aliases": 1471,
+      "cards": 712,
+      "changes": 591,
+      "layered_readings": 633,
+      "search_records": 26181
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -237,11 +237,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "2ef95b5b70113a9bd0bf4ad5a9ececde7bbc71def419308853f72aec1c415774"
+      "sha256": "fa741408a8ce14d2043279c84e0cc180f9e530a48c5daed46cc0be0792036d95"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "ecec9a7343502e502d8e73ef7213ee0758487d3d6f52beda8497422a7ee73ffc"
+      "sha256": "7e28a14b9e8b478c6535cac8d6b70ffc0693b374d25db180e088e61d62e9a7d0"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "fa0523c66aeb7fd1e25f35d141bbd1d3e8aa058fc0b241e2700d124eb4fd2c5e"
+      "sha256": "eb79d64faaa9f899f0b581885e057640f044982143cade03f095519c13e90184"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
