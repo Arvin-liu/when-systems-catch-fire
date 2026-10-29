@@ -229,9 +229,16 @@ class LiveCodexRuntimeScratchTests(unittest.TestCase):
             schema = root / "schema.json"
             schema.write_text('{"type":"object","additionalProperties":false}', encoding="utf-8")
             schema.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+            # Keep this argv-only test independent of a developer-local Codex install.
+            fake = root / "codex-fake"
+            self._fake_codex(fake)
             adapter = LiveCodexAdapter(
                 workspace,
-                executable="/Users/zhiyuan/.local/bin/codex",
+                executable=str(fake),
+                transport=LiveProcessTransport(
+                    executable_allowlist=(str(fake),),
+                    env_allowlist=CHILD_ENV_ALLOWLIST,
+                ),
                 authentication_observed=True,
                 adapter_id="codex-live-r3",
                 model="gpt-5.6-luna",

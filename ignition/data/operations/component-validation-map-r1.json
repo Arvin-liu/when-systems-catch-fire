@@ -15,13 +15,9 @@
         "tests.test_incremental_planner",
         "tests.test_incremental_execution_defensive_rejections",
         "tests.test_production_execution_authority",
-        "tests.test_release_transaction_protocol",
-        "tests.foundation.test_trigger_coverage",
-        "tests.test_q33_governance_infrastructure",
-        "tests.test_release_transaction_protocol_r3",
-        "tests.test_release_candidate_task_identity"
+        "tests.foundation.test_trigger_coverage"
       ],
-      "evidence": "Existing incremental-planner, authority, defensive-rejection, and R2 release-transaction protocol tests, plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, final-main-witness workflow-path, and Q33 governance-infrastructure coverage fixtures exercise component closure and fail-closed release evidence.",
+      "evidence": "Existing incremental-planner, authority, and defensive-rejection tests plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, and final-main-witness workflow-path coverage fixtures exercise component closure and fail-closed release evidence.",
       "import_roots": [
         "ignition"
       ]
@@ -32,8 +28,7 @@
       "modules": [
         "tests.test_current_state_sync",
         "tests.test_current_surface_compiler",
-        "tests.test_state_changelog",
-        "tests.test_current_task_advancement"
+        "tests.test_state_changelog"
       ],
       "evidence": "Existing current-state sync, surface compilation and state-change tests exercise the affected declared consumers.",
       "import_roots": [
@@ -86,14 +81,13 @@
       "domain": "G",
       "modules": [
         "tests.foundation.test_claim_governance",
-        "tests.foundation.test_nonfunction_claim_closure",
-        "tests.test_knowledge_corpus_admission"
+        "tests.foundation.test_nonfunction_claim_closure"
       ],
       "import_roots": [
         "ignition",
         "ignition/tools/foundation"
       ],
-      "evidence": "Existing Foundation claim-governance, nonfunction-closure, and corpus-admission tests validate L3 argument, claim, and source-admission boundaries."
+      "evidence": "Existing Foundation claim-governance and nonfunction-closure consumers validate L3 argument and claim relationships."
     },
     {
       "target_id": "g_history_remediation_contract",
@@ -201,6 +195,194 @@
         "ignition/research_workflow"
       ],
       "evidence": "PR #259 candidate package tests: test_research_workflow.py covers the live CLI with OpenAlex and Crossref; test_pluggable_slot.py covers the independent offline/source-binding slot. The output receipts do not enter the canonical O human-knowledge surfaces."
+    },
+    {
+      "target_id": "g_agent_runtime_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_agent_profile_r1",
+        "tests.test_agent_runtime_r0",
+        "tests.test_agent_runtime_r1",
+        "tests.test_agent_platform_blast_radius",
+        "tests.test_live_codex_runtime_scratch",
+        "tests.test_task150_step09_environment_admission",
+        "tests.test_offline_esi_pilot"
+      ],
+      "evidence": "Existing local tests exercise Agent Profile, runtime admission, scratch isolation, and bounded non-knowledge pilot contracts for the registered agent runtime and environment components.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_federation_executor_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_adapter_sdk",
+        "tests.test_codex_adapter",
+        "tests.test_hermes_adapter",
+        "tests.test_openclaw_adapter",
+        "tests.test_live_codex_adapter",
+        "tests.test_live_hermes_adapter",
+        "tests.test_live_openclaw_adapter",
+        "tests.test_federation_pilots",
+        "tests.test_executor_conformance",
+        "tests.test_live_admission",
+        "tests.test_local_executor_census",
+        "tests.test_task141_live_admission",
+        "tests.test_executor_health",
+        "tests.test_executor_inventory"
+      ],
+      "evidence": "Existing offline contract tests exercise adapter interfaces, reference-executor conformance, admission, health, and local-executor census boundaries.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_live_reconciliation_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_live_bridge_contracts",
+        "tests.test_live_durable_transport",
+        "tests.test_live_capture",
+        "tests.test_live_pilot",
+        "tests.test_live_child_guard",
+        "tests.test_live_filesystem",
+        "tests.test_live_failover",
+        "tests.test_live_observation_plane",
+        "tests.test_live_observation_events",
+        "tests.test_live_inference_observation_events",
+        "tests.test_live_attempt_ledger",
+        "tests.test_live_reconciliation_events",
+        "tests.test_event_ledger"
+      ],
+      "evidence": "Existing local contract and adversarial tests keep dispatch, process, capture, structured observation, validation, and reconciliation states distinct for the live bridge and event-ledger components.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_durability_steering_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_durability_revocation",
+        "tests.test_durability_compaction",
+        "tests.test_durability_recovery",
+        "tests.test_durability_projection_hygiene",
+        "tests.test_durability_namespace",
+        "tests.test_durability_migration",
+        "tests.test_durability_taxonomy",
+        "tests.test_durability_executor_admission",
+        "tests.test_durability_continuity_pilot",
+        "tests.test_durability_soft_governance",
+        "tests.test_steering_intent_registry",
+        "tests.test_steering_goal_lifecycle",
+        "tests.test_steering_conflicts",
+        "tests.test_steering_durability",
+        "tests.test_steering_commitments",
+        "tests.test_steering_ontology",
+        "tests.test_steering_namespace",
+        "tests.test_steering_graph",
+        "tests.test_steering_completion",
+        "tests.test_steering_memory_profile",
+        "tests.test_steering_priority",
+        "tests.test_steering_drift",
+        "tests.test_resource_arbitration"
+      ],
+      "evidence": "Existing persistence and steering tests exercise namespace, migration, revocation, recovery, goal and obligation lifecycle, priority, conflicts, and resource-arbitration constraints.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_pack_governance_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_pack_registry",
+        "tests.test_pack_aware_routing",
+        "tests.test_durability_pack_lifecycle",
+        "tests.test_r2_repository_maintenance"
+      ],
+      "evidence": "Existing local tests exercise Pack registration, routing, lifecycle, and repository-maintenance boundaries for the registered domain and maintenance Pack components.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "o_knowledge_and_publication_consumers",
+      "domain": "O",
+      "modules": [
+        "tests.test_knowledge_corpus_admission",
+        "tests.test_knowledge_experience",
+        "tests.test_pack_registry",
+        "tests.test_pack_aware_routing",
+        "tests.test_ignition_operating_method"
+      ],
+      "evidence": "Existing knowledge admission, human-surface, Pack-routing, and publication-method tests exercise reader-facing Knowledge and writing Pack entry boundaries.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "r_reos_research_consumers",
+      "domain": "R",
+      "modules": [
+        "tests.test_reos_vnext_minimal_kernel"
+      ],
+      "evidence": "The existing bounded REOS-vNext test validates the registered lightweight research Pack interface and its local claim ceiling.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_component_release_controls",
+      "domain": "G",
+      "modules": [
+        "tests.test_component_validation_routing",
+        "tests.test_component_validation_evidence",
+        "tests.test_component_release_preparation",
+        "tests.test_component_release_authorization",
+        "tests.test_component_profiles",
+        "tests.test_incremental_planner",
+        "tests.test_incremental_execution_defensive_rejections",
+        "tests.test_production_execution_authority",
+        "tests.test_release_transaction_protocol",
+        "tests.foundation.test_trigger_coverage",
+        "tests.test_q33_governance_infrastructure",
+        "tests.test_release_transaction_protocol_r3",
+        "tests.test_release_candidate_task_identity"
+      ],
+      "evidence": "Existing incremental-planner, authority, defensive-rejection, and R2 release-transaction protocol tests, plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, final-main-witness workflow-path, and Q33 governance-infrastructure coverage fixtures exercise component closure and fail-closed release evidence.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_current_state_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.test_current_state_sync",
+        "tests.test_current_surface_compiler",
+        "tests.test_state_changelog",
+        "tests.test_current_task_advancement"
+      ],
+      "evidence": "Existing current-state sync, surface compilation and state-change tests exercise the affected declared consumers.",
+      "import_roots": [
+        "ignition"
+      ]
+    },
+    {
+      "target_id": "g_foundation_argument_consumers",
+      "domain": "G",
+      "modules": [
+        "tests.foundation.test_claim_governance",
+        "tests.foundation.test_nonfunction_claim_closure",
+        "tests.test_knowledge_corpus_admission"
+      ],
+      "import_roots": [
+        "ignition",
+        "ignition/tools/foundation"
+      ],
+      "evidence": "Existing Foundation claim-governance, nonfunction-closure, and corpus-admission tests validate L3 argument, claim, and source-admission boundaries."
     }
   ],
   "components": [
@@ -239,7 +421,7 @@
       "validation_targets": [
         "g_component_release_controls"
       ],
-      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, target runner, and protected-main release controls. Its R2 release-transaction validation workflow is checked by the existing release-control consumer target; router and release-authority changes also match the full-regression authority paths.",
+      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, and target runner; changes also match the full-regression authority paths.",
       "change_classifications": [
         "CAPABILITY_ADDITION",
         "GOVERNANCE_CHANGE",
@@ -269,7 +451,6 @@
       ],
       "validation_targets": [
         "g_current_state_consumers",
-        "g_human_front_door_consumers",
         "o_human_result_consumers"
       ],
       "change_classifications": [
@@ -278,76 +459,6 @@
       ],
       "requires_full_regression": true,
       "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
-    },
-    {
-      "component_id": "formal_task_lifecycle_r1",
-      "domains": [
-        "G"
-      ],
-      "validation_targets": [
-        "g_current_state_consumers"
-      ],
-      "change_classifications": [
-        "GOVERNANCE_CHANGE",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
-      ],
-      "evidence": "Formal-task lifecycle and Task20 advancement sources update canonical Current task identity; the existing current-state consumer target includes the Task20 identity-selection negative controls."
-    },
-    {
-      "component_id": "iteration_manifest_contract",
-      "domains": [
-        "G"
-      ],
-      "validation_targets": [
-        "g_publication_consumers"
-      ],
-      "change_classifications": [
-        "GOVERNANCE_CHANGE",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
-      ],
-      "evidence": "The Task20 iteration records and manifest-bound ordinal are covered by the existing iteration synchronization and publication consumer tests."
-    },
-    {
-      "component_id": "iteration",
-      "domains": [
-        "G"
-      ],
-      "validation_targets": [
-        "g_publication_consumers"
-      ],
-      "change_classifications": [
-        "GOVERNANCE_CHANGE",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
-      ],
-      "evidence": "Task20 current-iteration and publication changes propagate to the existing iteration synchronization and stage publication consumer tests."
-    },
-    {
-      "component_id": "open_obligation_registry_r1",
-      "domains": [
-        "G"
-      ],
-      "validation_targets": [
-        "g_current_state_consumers"
-      ],
-      "change_classifications": [
-        "GOVERNANCE_CHANGE",
-        "RELEASE_OR_CURRENT_STATE_SYNC"
-      ],
-      "evidence": "The changed cross-task obligation registry is current-state authority and is included in the existing current-state consumer closure."
-    },
-    {
-      "component_id": "project_component_registry",
-      "domains": [
-        "G"
-      ],
-      "validation_targets": [
-        "g_component_release_controls"
-      ],
-      "change_classifications": [
-        "GOVERNANCE_CHANGE",
-        "OPERATIONS_METHOD"
-      ],
-      "evidence": "The project component registry and its route ownership are covered by the existing validation-router, plan, and defensive-rejection consumer tests."
     },
     {
       "component_id": "epistemic_governance_kernel",
@@ -387,11 +498,9 @@
         "O",
         "G"
       ],
-      "validation_targets": [
-        "g_foundation_argument_consumers"
-      ],
+      "validation_targets": [],
       "requires_full_regression": true,
-      "evidence": "Foundation spans all layers and shared claims; corpus-admission changes also select the existing argument consumers and require the complete Foundation regression.",
+      "evidence": "Foundation spans all layers and shared claims; its current required consumers are the complete foundation-validation workflow.",
       "change_classifications": [
         "CAPABILITY_ADDITION",
         "EVIDENCE_UPDATE",
@@ -660,6 +769,23 @@
       "evidence": "The registry assigns .github/README.md as the current-state and usage entry; typed relations connect the front door to current_state and knowledge surfaces, covered by the existing G front-door and O result-consumer suites."
     },
     {
+      "component_id": "owner_human",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The Owner/Human identity and value slice of .github/README.md changes the public-facing project definition and its explicit authority and revision boundaries. Existing G front-door and O result-consumer suites validate structure, bounded claims and reader-facing links. This assignment selects validation only; it is not Owner approval or scientific acceptance."
+    },
+    {
       "component_id": "research_workflow_slot",
       "domains": [
         "R"
@@ -721,6 +847,462 @@
       ],
       "requires_full_regression": true,
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+    },
+    {
+      "component_id": "agent_kernel_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "Kernel and schema path ownership is exercised by the existing Agent Profile and runtime boundary consumers."
+    },
+    {
+      "component_id": "agent_profile_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "Profile registries and schemas are exercised by the existing Agent Profile and runtime boundary consumers."
+    },
+    {
+      "component_id": "agent_runtime_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "Runtime, pilot, and boundary-validator paths are exercised by the existing Agent runtime and isolation consumers."
+    },
+    {
+      "component_id": "codex_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The registered Codex adapter and test paths are exercised by adapter interface, local admission, and conformance consumers."
+    },
+    {
+      "component_id": "domain_pack_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_pack_governance_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The domain Pack contract and manifest schema are exercised by registry, routing, and lifecycle consumers."
+    },
+    {
+      "component_id": "durability_lifecycle_r3",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_durability_steering_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registered durability lifecycle inputs are exercised by persistence, migration, revocation, recovery, and Pack-lifecycle consumers."
+    },
+    {
+      "component_id": "event_ledger_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_live_reconciliation_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The event-ledger source and validator paths are exercised by append-only ledger and live-reconciliation consumers."
+    },
+    {
+      "component_id": "executor_admission_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The executor-admission contract, schema, validator, census and tests are exercised by admission, conformance, health, and local-census consumers."
+    },
+    {
+      "component_id": "hermes_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The registered Hermes adapter interface is exercised by its offline adapter and federation consumers."
+    },
+    {
+      "component_id": "knowledge_domain_pack",
+      "domains": [
+        "O"
+      ],
+      "validation_targets": [
+        "o_knowledge_and_publication_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registered Knowledge Pack manifest and reader guide are exercised by corpus admission, experience, and Pack-routing consumers."
+    },
+    {
+      "component_id": "live_executor_bridge_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_live_reconciliation_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The live bridge source, schemas, and iteration evidence are exercised by local transport, capture, child-guard, failover, and reconciliation consumers."
+    },
+    {
+      "component_id": "live_observation_reconciliation_plane_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_live_reconciliation_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The observation-plane source, ledger, projection, and schema paths are exercised by state-separation and reconciliation-event consumers."
+    },
+    {
+      "component_id": "maintenance_pack",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_pack_governance_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The maintenance Pack manifest is exercised by Pack registry, routing, lifecycle, and maintenance consumers."
+    },
+    {
+      "component_id": "nonknowledge_pilot",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The non-Knowledge pilot manifest and test paths are exercised by bounded runtime and offline pilot consumers."
+    },
+    {
+      "component_id": "openclaw_adapter",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The registered OpenClaw adapter interface is exercised by its offline adapter and federation consumers."
+    },
+    {
+      "component_id": "reference_executor",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_federation_executor_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The reference executor actions and pilot paths are exercised by federation-pilot and executor-conformance consumers."
+    },
+    {
+      "component_id": "research_pack_reos_light",
+      "domains": [
+        "R"
+      ],
+      "validation_targets": [
+        "r_reos_research_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The registered lightweight REOS research Pack is exercised by its existing bounded local-kernel consumer."
+    },
+    {
+      "component_id": "resource_arbitration_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_durability_steering_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The resource-arbitration implementation and validator are exercised by arbitration and steering-conflict consumers."
+    },
+    {
+      "component_id": "runtime_environment",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_agent_runtime_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The runtime protocol and environment documentation are exercised by isolated runtime and scratch-space consumers."
+    },
+    {
+      "component_id": "steering_intent_obligation_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_durability_steering_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Steering, driver-console, obligation, data, validator, and fixture paths are exercised by the existing steering and lifecycle consumers."
+    },
+    {
+      "component_id": "writing_pack",
+      "domains": [
+        "O"
+      ],
+      "validation_targets": [
+        "o_knowledge_and_publication_consumers"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The writing Pack method and template path are exercised by publication-method, Pack-routing, and human Knowledge entry consumers."
+    },
+    {
+      "component_id": "component_validation_router",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, target runner, and protected-main release controls. Its R2 release-transaction validation workflow is checked by the existing release-control consumer target; router and release-authority changes also match the full-regression authority paths.",
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ]
+    },
+    {
+      "component_id": "current_state",
+      "domains": [
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers",
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "requires_full_regression": true,
+      "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
+    },
+    {
+      "component_id": "formal_task_lifecycle_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Formal-task lifecycle and Task20 advancement sources update canonical Current task identity; the existing current-state consumer target includes the Task20 identity-selection negative controls."
+    },
+    {
+      "component_id": "iteration_manifest_contract",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The Task20 iteration records and manifest-bound ordinal are covered by the existing iteration synchronization and publication consumer tests."
+    },
+    {
+      "component_id": "iteration",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "Task20 current-iteration and publication changes propagate to the existing iteration synchronization and stage publication consumer tests."
+    },
+    {
+      "component_id": "open_obligation_registry_r1",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_current_state_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The changed cross-task obligation registry is current-state authority and is included in the existing current-state consumer closure."
+    },
+    {
+      "component_id": "project_component_registry",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "evidence": "The project component registry and its route ownership are covered by the existing validation-router, plan, and defensive-rejection consumer tests."
+    },
+    {
+      "component_id": "foundation",
+      "domains": [
+        "R",
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_foundation_argument_consumers"
+      ],
+      "requires_full_regression": true,
+      "evidence": "Foundation spans all layers and shared claims; corpus-admission changes also select the existing argument consumers and require the complete Foundation regression.",
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "HISTORICAL_ONLY",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ]
     },
     {
       "component_id": "agentization_boundary_r0",
