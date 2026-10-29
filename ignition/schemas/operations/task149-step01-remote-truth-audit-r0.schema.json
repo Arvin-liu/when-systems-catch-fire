@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step01-remote-truth-audit-r0.schema.json",
+  "title": "Ignition Task149 Step01 remote-truth audit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "status",
+    "audit_mode",
+    "formal_remote_observation",
+    "task148_current_gate",
+    "current_capability_census",
+    "contract_gap_inventory",
+    "minimal_contract",
+    "authority_boundaries",
+    "architecture_observation",
+    "prohibited_inferences",
+    "source_fingerprints",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step01-remote-truth-audit-r0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "step": {"const": "01"},
+    "status": {"const": "PASS"},
+    "audit_mode": {"const": "CURRENT_MAIN_ONLY_WITH_MINIMAL_PROVIDER_BOUNDARY"},
+    "formal_remote_observation": {"$ref": "#/$defs/remoteObservation"},
+    "task148_current_gate": {"$ref": "#/$defs/currentGate"},
+    "current_capability_census": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_path", "operation_count", "callable_playbook_count", "status_only_count", "provider_operation_ids", "source_evidence_coverage", "pack_count", "pack_capability_count", "all_pack_network_permissions_false"],
+      "properties": {
+        "registry_path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+        "operation_count": {"const": 19},
+        "callable_playbook_count": {"const": 15},
+        "status_only_count": {"const": 4},
+        "provider_operation_ids": {"const": []},
+        "source_evidence_coverage": {"const": "PARTIAL_BOUNDED_NO_GENERAL_DIRECT_SOURCE_RETRIEVAL_OPERATION"},
+        "pack_count": {"const": 4},
+        "pack_capability_count": {"const": 10},
+        "all_pack_network_permissions_false": {"const": true}
+      }
+    },
+    "contract_gap_inventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visualization_provider_contract", "renderer_provider", "source_acquisition_contract", "internet_research_provider_abstraction", "provider_health_admission_registry", "tool_routing_abstraction", "executor_adapter_contract", "historical_near_matches"],
+      "properties": {
+        "visualization_provider_contract": {"$ref": "#/$defs/gapEntry"},
+        "renderer_provider": {"$ref": "#/$defs/gapEntry"},
+        "source_acquisition_contract": {"$ref": "#/$defs/gapEntry"},
+        "internet_research_provider_abstraction": {"$ref": "#/$defs/gapEntry"},
+        "provider_health_admission_registry": {"$ref": "#/$defs/gapEntry"},
+        "tool_routing_abstraction": {"$ref": "#/$defs/gapEntry"},
+        "executor_adapter_contract": {"$ref": "#/$defs/gapEntry"},
+        "historical_near_matches": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/gapEntry"}}
+      }
+    },
+    "minimal_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "schema_path", "status", "provider_neutral", "provider_record_count", "current_integration", "identity_impact"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/149/step01-provider-contract-boundary-r0.json"},
+        "schema_path": {"const": "ignition/schemas/operations/provider-contract-boundary-r0.schema.json"},
+        "status": {"const": "MINIMAL_BOUNDARY_ESTABLISHED"},
+        "provider_neutral": {"const": true},
+        "provider_record_count": {"const": 0},
+        "current_integration": {"const": "NONE"},
+        "identity_impact": {"const": "NONE"}
+      }
+    },
+    "authority_boundaries": {
+      "type": "array",
+      "const": [
+        "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
+        "PROVIDER_CAPABILITY ≠ PERMISSION",
+        "PROVIDER_OUTPUT ≠ EXTERNAL_TRUTH",
+        "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
+        "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY"
+      ]
+    },
+    "architecture_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity_epoch", "system_role", "latest_architecture_changing_task", "current_map_version", "registry_components", "visible_map_nodes", "visible_map_edges", "provider_specific_node_count", "existing_provider_mentions_classification", "architecture_identity_impact"],
+      "properties": {
+        "identity_epoch": {"const": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1"},
+        "system_role": {"const": "Ignition OS / orchestration-governance layer"},
+        "latest_architecture_changing_task": {"const": "IGNITION-20260827-142"},
+        "current_map_version": {"const": "0.16.0"},
+        "registry_components": {"const": 100},
+        "visible_map_nodes": {"const": 87},
+        "visible_map_edges": {"const": 92},
+        "provider_specific_node_count": {"const": 0},
+        "existing_provider_mentions_classification": {"const": "EXECUTOR_ADMISSION_OR_EXTERNAL_EXECUTOR_TELEMETRY_NOT_PROVIDER_CAPABILITY"},
+        "architecture_identity_impact": {"const": "NONE"}
+      }
+    },
+    "prohibited_inferences": {"type": "array", "minItems": 5, "items": {"$ref": "#/$defs/nonblank"}},
+    "source_fingerprints": {"type": "array", "minItems": 20, "items": {"$ref": "#/$defs/fingerprint"}},
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "remoteObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "ref", "observed_sha", "remote_ref_verified", "clean_isolated_worktree", "non_shallow_clone", "fsck_passed"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "ref": {"const": "refs/heads/main"},
+        "observed_sha": {"const": "14c2595d796494286caf31378173fd9dd027edcf"},
+        "remote_ref_verified": {"const": true},
+        "clean_isolated_worktree": {"const": true},
+        "non_shallow_clone": {"const": true},
+        "fsck_passed": {"const": true}
+      }
+    },
+    "currentGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_formal_task", "operating_method_identity", "operating_method_version", "operating_method_status", "capability_registry_current_on_main", "live_external_invocation_status", "live_external_invocation_obligation", "task149_allowed_to_start"],
+      "properties": {
+        "current_formal_task": {"const": "IGNITION-20260829-148"},
+        "operating_method_identity": {"const": "IGNITION_OPERATING_METHOD_R1"},
+        "operating_method_version": {"const": "1.0.0"},
+        "operating_method_status": {"const": "CURRENT"},
+        "capability_registry_current_on_main": {"const": true},
+        "live_external_invocation_status": {"const": "OWNER_DEFERRED"},
+        "live_external_invocation_obligation": {"const": "OPEN"},
+        "task149_allowed_to_start": {"const": true}
+      }
+    },
+    "gapEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "scope", "evidence", "action"],
+      "properties": {
+        "status": {"enum": ["NOT_FOUND", "FOUND_NOT_CURRENT", "FOUND_EXECUTOR_ONLY", "HISTORICAL_NEAR_MATCH_NOT_CURRENT"]},
+        "scope": {"$ref": "#/$defs/nonblank"},
+        "evidence": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}},
+        "action": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "fingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"$ref": "#/$defs/nonblank"},
+        "sha256": {"$ref": "#/$defs/sha"}
+      }
+    }
+  }
+}

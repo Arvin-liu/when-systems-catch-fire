@@ -1,0 +1,38 @@
+{
+  "schema_version": "ignition-143-step08-article-b-draft-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "08",
+  "status": "PASS",
+  "article_id": "012-support-becomes-path-control",
+  "path": "docs/editorial/articles/012-support-becomes-path-control.md",
+  "title": "资源托举为什么会变成路径控制",
+  "article_kind": "SUBSTANTIVE_INTERNAL_MODEL",
+  "non_meta_pointfire_material": true,
+  "draft_completeness": {
+    "title": true,
+    "deck": true,
+    "opening_question": true,
+    "complete_argument": true,
+    "human_readable_body": true,
+    "counterexamples": true,
+    "source_and_boundary_note": true,
+    "approximate_character_target_met": true
+  },
+  "central_argument": "Support may become path control when concentrated resources are conditioned on a prescribed route, the provider controls the definition of success and refusal becomes costly; none of these conditions alone licenses a universal diagnosis.",
+  "source_status": {
+    "canonical_candidate": "D600",
+    "mechanism_candidate": "M3",
+    "current_source_ceiling": "INDIRECT_SOURCE_ONLY",
+    "formalization_status": "FORMALIZATION_INCOMPLETE",
+    "external_evidence": "PENDING",
+    "original_private_material_publication": "WITHHELD"
+  },
+  "counterexamples_explicit": [
+    "Unconditional fallback support",
+    "Advice without resource leverage",
+    "Transparent and revisable exchange terms",
+    "Direct coercion as a distinct boundary",
+    "An informed recipient choosing the route after genuine alternatives"
+  ],
+  "claim_ceiling": "A repository-originated candidate model and research problem only; no universal causal law, measured prevalence, diagnosis, external validation or epistemic acceptance."
+}

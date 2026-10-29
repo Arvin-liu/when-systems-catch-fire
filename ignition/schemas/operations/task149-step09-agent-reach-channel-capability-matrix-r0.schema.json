@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step09-agent-reach-channel-capability-matrix-r0.schema.json",
+  "title": "Task149 Step09 Agent Reach channel capability matrix",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "observed_at", "formal_previous_commit", "provider_id", "provider_class", "availability_is_not_boolean", "status_vocabulary", "doctor_evidence", "public_no_auth_candidate_capabilities", "authenticated_session_bearing_capabilities", "capabilities", "observed_doctor_channels", "isolation_evidence", "boundaries", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step09-agent-reach-channel-capability-matrix-r0"},
+    "task_id": {"const": "IGNITION-20260831-149"}, "step": {"const": "09"}, "status": {"const": "CHANNEL_MATRIX_COMPLETE"}, "observed_at": {"type": "string", "minLength": 1}, "formal_previous_commit": {"$ref": "#/$defs/sha"}, "provider_id": {"const": "agent-reach"}, "provider_class": {"const": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER"}, "availability_is_not_boolean": {"const": true}, "status_vocabulary": {"const": ["AVAILABLE_READ_ONLY", "ENVIRONMENT_MISSING", "AUTH_REQUIRED", "OWNER_APPROVAL_REQUIRED", "UNAVAILABLE", "UNTESTED"]},
+    "doctor_evidence": {"type": "object", "additionalProperties": true, "required": ["command", "result_sha256", "observed_channel_count", "runtime_version", "pinned_source_status", "doctor_does_not_equal_acquisition_success"], "properties": {"command": {"const": "agent-reach doctor --json"}, "result_sha256": {"$ref": "#/$defs/sha256"}, "observed_channel_count": {"const": 15}, "runtime_version": {"const": "1.5.0"}, "pinned_source_status": {"const": "BLOCKED_DEPENDENCY"}, "doctor_does_not_equal_acquisition_success": {"const": true}}},
+    "public_no_auth_candidate_capabilities": {"type": "array", "minItems": 8, "items": {"type": "string", "minLength": 1}},
+    "authenticated_session_bearing_capabilities": {"type": "array", "minItems": 7, "items": {"type": "string", "minLength": 1}},
+    "capabilities": {"type": "array", "minItems": 17, "items": {"$ref": "#/$defs/capability"}},
+    "observed_doctor_channels": {"type": "array", "minItems": 15, "maxItems": 15, "items": {"type": "object", "additionalProperties": false, "required": ["channel", "doctor_status", "active_backend"], "properties": {"channel": {"type": "string", "minLength": 1}, "doctor_status": {"enum": ["ok", "warn", "off"]}, "active_backend": {"type": ["string", "null"]}}}},
+    "isolation_evidence": {"type": "object", "additionalProperties": true, "required": ["system_install", "system_configuration", "browser_login", "cookie_or_session_read", "credential_content_access", "persistent_agent_reach_config_written", "upstream_source_copied_or_vendored"], "properties": {"system_install": {"const": false}, "system_configuration": {"const": false}, "browser_login": {"const": false}, "cookie_or_session_read": {"const": false}, "credential_content_access": {"const": "NONE"}, "persistent_agent_reach_config_written": {"const": false}, "upstream_source_copied_or_vendored": {"const": false}}},
+    "boundaries": {"type": "object", "additionalProperties": false, "required": ["provider_local_policy_inherited", "provider_output_is_external_truth", "provider_is_global_internet_authority", "provider_capability_is_permission", "current_integration", "production_readiness", "authenticated_channel_admission", "live_external_invocation"], "properties": {"provider_local_policy_inherited": {"const": false}, "provider_output_is_external_truth": {"const": false}, "provider_is_global_internet_authority": {"const": false}, "provider_capability_is_permission": {"const": false}, "current_integration": {"const": "NOT_CURRENT_INTEGRATION"}, "production_readiness": {"const": "NOT_PRODUCTION_READY"}, "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"}, "live_external_invocation": {"const": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"}}},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "capability": {
+      "type": "object", "additionalProperties": false,
+      "required": ["capability_id", "channel", "scope", "declared_backend", "detected_backend", "active_backend", "doctor_status", "status", "authentication_requirement", "environment_availability", "reason", "side_effects", "testability", "provider_local_policy_inherited"],
+      "properties": {
+        "capability_id": {"type": "string", "minLength": 1}, "channel": {"type": "string", "minLength": 1}, "scope": {"enum": ["PUBLIC_NO_AUTH_CANDIDATE", "AUTHENTICATED_SESSION_BEARING"]}, "declared_backend": {"type": "string", "minLength": 1}, "detected_backend": {"type": "string", "minLength": 1}, "active_backend": {"type": ["string", "null"]}, "doctor_status": {"enum": ["ok", "warn", "off"]}, "status": {"enum": ["AVAILABLE_READ_ONLY", "ENVIRONMENT_MISSING", "AUTH_REQUIRED", "OWNER_APPROVAL_REQUIRED", "UNAVAILABLE", "UNTESTED"]}, "authentication_requirement": {"type": "string", "minLength": 1}, "environment_availability": {"enum": ["AVAILABLE_READ_ONLY", "ENVIRONMENT_MISSING", "AUTH_REQUIRED", "OWNER_APPROVAL_REQUIRED", "UNAVAILABLE", "UNTESTED"]}, "reason": {"type": "string", "minLength": 1}, "side_effects": {"type": "string", "minLength": 1}, "testability": {"type": "string", "minLength": 1}, "provider_local_policy_inherited": {"const": false}
+      }
+    }
+  }
+}

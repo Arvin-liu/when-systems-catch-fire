@@ -1,0 +1,84 @@
+{
+  "manifest_version": "113.publication-manifest.v1",
+  "work_id": "zhiyuan-work-song-huizong-taoism-113",
+  "title": "当天意有了接口：宋徽宗与会自我证明的皇权",
+  "status": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS",
+  "completeness": "COMPLETE_FOR_PUBLISHED_WITH_EXPLICIT_LIMITATIONS",
+  "publication_date": "2026-08-02",
+  "method_name": "之元写作法 / Zhiyuan Writing Method",
+  "method_version": "0.4.0",
+  "authorship_and_provenance": "Codex 依据一份本地精确哈希匹配的 external_input、独立打开的有限历史来源、Pointfire 分析与之元写作法 0.4.0 进行原创重组、审查和实质重写；点火派生物用于结构与边界，不作为第二份独立史料。",
+  "source": {
+    "source_class": "external_input",
+    "source_mode": "FULL_LOCAL_NOTE_HASH_MATCH",
+    "source_label": "公元1117年：宋徽宗为什么崇信道教？-2026年07月29日-来自【得到大脑】.md",
+    "utf8_bytes": 41601,
+    "sha256": "506904a3923bf5aac9f65c8311c512d2ba70b4c1073802b02647ce294fab433f",
+    "raw_source_republished": false,
+    "copyright_boundary": "输入包含较长第三方课程原文；原文件不进入本仓库、Git 历史、PR 正文或公开回执。"
+  },
+  "pointfire": {
+    "baseline_commit": "1b3545a252c542129424a240d3c7eb3b5af808af",
+    "analysis_path": "reports/publication/song-huizong-taoism-point-fire-analysis.md",
+    "case_path": "docs/publication/cases/song-huizong-taoism-1117-source.md",
+    "selected_movement": "从瑞鹤图的自然事件，经过称号边界、制度、景观与受影响主体，递归到谁能让天意接口报告坏消息；最后回照开头的观看场景。",
+    "claim_ceiling": "历史机制的有界解释；私人信仰、历史唯一因果、疗效、未核彩色细节与跨时代同构均不获授权。"
+  },
+  "primary_reading_path": {
+    "root_entry": "README.md",
+    "shelf": "PUBLICATIONS/README.md",
+    "work": "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+    "clicks_to_shelf": 1,
+    "clicks_to_work": 2,
+    "visibility_rule": "Root README -> PUBLICATIONS/README.md -> work"
+  },
+  "artifacts": {
+    "work": {
+      "path": "docs/publication/works/when-an-emperor-manufactures-heaven.md",
+      "title": "当天意有了接口：宋徽宗与会自我证明的皇权",
+      "work_type": "ZHIYUAN_WRITING_METHOD_PUBLIC_WORK",
+      "characters": 6875,
+      "han_characters_in_main_body": 5306,
+      "sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+      "claim_ceiling": "PUBLISHED_WITH_EXPLICIT_LIMITATIONS / historical_mechanism_plausible / private_belief_unresolved / causal_identification_pending"
+    },
+    "case": {
+      "path": "docs/publication/cases/song-huizong-taoism-1117-source.md",
+      "work_type": "SOURCE_PROVENANCE_AND_BOUNDARY",
+      "claim_ceiling": "Source identity, opened-source record and public handling boundary; not independent historical proof."
+    },
+    "analysis": {
+      "path": "reports/publication/song-huizong-taoism-point-fire-analysis.md",
+      "work_type": "POINTFIRE_PUBLICATION_ANALYSIS",
+      "claim_ceiling": "Bounded analysis and candidate gap; not a truth layer."
+    },
+    "reviews": [
+      "data/operations/iterations/113/publication/SOURCE_AND_CLAIM_REVIEW.md",
+      "data/operations/iterations/113/publication/ADVERSARIAL_REVIEW.md",
+      "data/operations/iterations/113/publication/EDITORIAL_REVIEW.md",
+      "data/operations/iterations/113/publication/REVIEW_DISPOSITION_MATRIX.md",
+      "data/operations/iterations/113/publication/FINAL_REVISION_MAP.md"
+    ]
+  },
+  "review": {
+    "state": "COMPLETE",
+    "r0_sha256": "09e7b476303f74d9851a8ed227d5432f7bcc15b307c3e0607125723f61d35489",
+    "final_sha256": "8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4",
+    "roles": ["historical_source", "adversarial_interpretive", "literary_editorial"],
+    "substantive_rewrite": true,
+    "open_obligations_visible": true
+  },
+  "review_provenance": {
+    "task_number": 113,
+    "task_id": "IGNITION-ZHIYUAN-WRITING-SONG-HUIZONG-TAOISM-NOTE-TO-PUBLISHED-WORK-R1-20260802",
+    "control_commit": "d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef"
+  },
+  "publication_boundaries": [
+    "The third-party course transcript in the input note is not republished.",
+    "A supported historical detail remains bounded by its source and does not establish private belief or unique causality.",
+    "The title's manufacturing metaphor means organizing visibility, interpretation and feedback, not proving that every auspicious event was fabricated.",
+    "The work does not establish universal Daoist healthcare, talisman efficacy, a civilizational actionism law or cross-era structural identity.",
+    "Literary acceptance and repository publication do not establish universal effectiveness of the Zhiyuan Writing Method."
+  ],
+  "lifecycle_state_at_content_commit": "REVIEWED_CANDIDATE_AWAITING_ORDINARY_CONTENT_MERGE"
+}

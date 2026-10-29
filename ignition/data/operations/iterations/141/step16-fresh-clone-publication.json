@@ -1,0 +1,130 @@
+{
+  "schema_version": "ignition-141-step16-fresh-clone-publication-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "16",
+  "status": "PASS",
+  "tested_candidate": {
+    "source_task_branch": "codex/ignition-141-live-state-semantics-structured-result-reliability-r1-20260826",
+    "tested_head_sha": "6f30c9aff2b64141d4a96e32a57deb64eb89b97a",
+    "full_suite_receipt": "ignition/data/operations/iterations/141/step15-candidate-full-regression.json",
+    "full_suite": {
+      "tests_run": 1260,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS",
+      "runtime_seconds": 2948.043,
+      "elapsed_seconds": 2949.65,
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "process_killed": false,
+      "generated_output_drift": []
+    }
+  },
+  "fresh_task_branch_clone": {
+    "source_remote_branch": "refs/heads/codex/ignition-141-live-state-semantics-structured-result-reliability-r1-20260826",
+    "source_remote_sha": "6f30c9aff2b64141d4a96e32a57deb64eb89b97a",
+    "clone_mode": "fresh remote task-branch clone with no copied .venv, cache, generated temporary state or untracked files",
+    "head_sha": "6f30c9aff2b64141d4a96e32a57deb64eb89b97a",
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_path_count": 3436
+  },
+  "projection_preflight": {
+    "receipt": "ignition/data/operations/iterations/141/step16-projection-preflight.json",
+    "status": "PASS",
+    "command": "PYTHONPATH=ignition python3 ignition/tools/run_projection_preflight.py --check --require-clean",
+    "require_clean": true,
+    "check_count": 25,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "side_effect_detected": false,
+    "clean_tree_gate_pass": true,
+    "tracked_path_count": 3436,
+    "worktree_before_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "worktree_after_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "worktree_before_tracked_content_sha256": "8818c9aa7e7dea2a2a1d45143974636787374731c05d14064cf79fe11fcd71bc",
+    "worktree_after_tracked_content_sha256": "8818c9aa7e7dea2a2a1d45143974636787374731c05d14064cf79fe11fcd71bc",
+    "capture": "external temporary preflight capture; no clone write"
+  },
+  "full_suite": {
+    "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+    "working_directory": "ignition",
+    "runtime_seconds": 2948.043,
+    "elapsed_seconds": 2949.65,
+    "exit_code": 0,
+    "process_returncode": 0,
+    "tests_run": 1260,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "OK",
+    "status": "PASS",
+    "natural_window": {
+      "minimum_supported_seconds": 14400,
+      "process_completed_naturally": true,
+      "watchdog_used": false,
+      "process_killed": false,
+      "arbitrary_timeout_used": false
+    },
+    "environment": {
+      "isolated": true,
+      "dependency_preflight": "PASS",
+      "python_version": "3.14.6",
+      "execution_python": "temporary isolated foundation venv outside repository",
+      "requirements": {
+        "sympy": "1.14.0",
+        "z3-solver": "4.16.0.0",
+        "jsonschema": "4.26.0"
+      }
+    },
+    "capture": {
+      "location": "external temporary directory; not part of the formal repository",
+      "stdout_bytes": 6515,
+      "stdout_sha256": "70241fbfcbbe0caef8b97add50058c33a8d96e4a882811dbbf1d0384339ba125",
+      "stderr_bytes": 1708,
+      "stderr_sha256": "0b666ccd95089b77ce4cf0ef24b426e7fd152eb058dff7b22acc46385b828ed1"
+    },
+    "clean_before": true,
+    "clean_after": true,
+    "generated_output_drift": []
+  },
+  "residual_non_growth": {
+    "residual_ledger_path": "ignition/data/operations/residual-ledger-r1.json",
+    "historical_residuals": 9,
+    "sympy_environment_residuals": 1,
+    "ledger_incremented_by_suite": false,
+    "residual_expanded": false
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "validated_completion_count": 0,
+    "attempt_count": 6,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "retry": "NOT_AUTHORIZED",
+    "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION"
+  },
+  "publication_boundary": {
+    "formal_main_baseline_sha": "77f8fe099dbadfc7f7f32314186369c825e5f31d",
+    "required_ref": "refs/heads/main",
+    "ordinary_fast_forward_only": true,
+    "formal_candidate_parent_sha": "6f30c9aff2b64141d4a96e32a57deb64eb89b97a",
+    "formal_candidate_sha": "DEFERRED_TO_STEP16_FINAL_COMMIT",
+    "formal_main_after_sha": "DEFERRED_TO_ORDINARY_FAST_FORWARD",
+    "post_publication_current_check": "PENDING",
+    "independent_1111_witness": "PENDING",
+    "formal_self_witness_commit": false
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "next_step": "ORDINARY_FAST_FORWARD_AND_1111_WITNESS",
+  "claim_ceiling": "Exact repository-local fresh task-branch projection and natural full-suite evidence for tested SHA 6f30c9aff2b64141d4a96e32a57deb64eb89b97a; the later Step16 receipt commit, formal-main publication and independent 1111 witness are separate observations. No validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

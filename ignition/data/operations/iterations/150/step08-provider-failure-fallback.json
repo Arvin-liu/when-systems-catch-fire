@@ -1,0 +1,31 @@
+{
+  "schema_version": "ignition-150-step08-provider-failure-fallback-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "08",
+  "record_type": "PROVIDER_FAILURE_FALLBACK",
+  "status": "PROVIDER_FAILURE_MATRIX_PASS_WITH_CANONICAL_FALLBACK",
+  "formal_previous_commit": "983d418912a876195519153b8e2113ff67bce5c6",
+  "failure_injection": {"mode":"DETERMINISTIC_FAILURE_FIXTURES_NO_PROVIDER_PROCESS_START","real_provider_process_started":false,"system_mutation":false,"implicit_substitution":false},
+  "canonical_preservation": {
+    "architecture_path":"ignition/data/architecture/overall-architecture.json",
+    "architecture_before_sha256":"251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "architecture_after_sha256":"251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "last_known_map_path":"ignition/data/architecture/interactive-system-map.json",
+    "last_known_map_before_sha256":"3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313",
+    "last_known_map_after_sha256":"3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313",
+    "architecture_preserved":true,
+    "last_known_map_preserved":true
+  },
+  "cases": [
+    {"id":"archify-command-unavailable","failure_stage":"provider_command_discovery","expected":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","observed":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","canonical_preserved":true,"last_known_map_preserved":true},
+    {"id":"node-unavailable","failure_stage":"runtime_discovery","expected":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","observed":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","canonical_preserved":true,"last_known_map_preserved":true},
+    {"id":"schema-fail","failure_stage":"provider_schema_validation","expected":"BOUNDED_PROVIDER_FAILURE","observed":"BOUNDED_PROVIDER_FAILURE","canonical_preserved":true,"last_known_map_preserved":true},
+    {"id":"validation-fail","failure_stage":"derived_ir_validation","expected":"BOUNDED_PROVIDER_FAILURE","observed":"BOUNDED_PROVIDER_FAILURE","canonical_preserved":true,"last_known_map_preserved":true},
+    {"id":"deliver-fail","failure_stage":"derived_artifact_delivery","expected":"BOUNDED_PROVIDER_FAILURE","observed":"BOUNDED_PROVIDER_FAILURE","canonical_preserved":true,"last_known_map_preserved":true},
+    {"id":"visual-containment-fail","failure_stage":"visual_containment_validation","expected":"BOUNDED_PROVIDER_FAILURE","observed":"BOUNDED_PROVIDER_FAILURE","canonical_preserved":true,"last_known_map_preserved":true},
+    {"id":"upstream-version-mismatch","failure_stage":"provider_revision_admission","expected":"BOUNDED_PROVIDER_FAILURE","observed":"BOUNDED_PROVIDER_FAILURE","canonical_preserved":true,"last_known_map_preserved":true}
+  ],
+  "fallback_contract": {"unavailable_result":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","bounded_failure_result":"BOUNDED_PROVIDER_FAILURE","canonical_remains_usable":true,"last_known_map_remains_usable":true,"provider_is_replaceable":true,"authority":"IGNITION_CANONICAL_SOURCE_AND_FALLBACK_POLICY"},
+  "scope_freeze": {"task150_scope":"ARCHIFY_ONLY","agent_reach":"NO_CHANGE","installation":"NO_INSTALL_OR_AUTO_UPGRADE","authenticated_channels":"NO_AUTHENTICATED_ADMISSION","live_external_invocation":"UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN","current_admission":"NOT_ADMITTED"},
+  "claim_ceiling": "Task150 Step08 proves only deterministic failure-injection handling for seven provider failure stages, preservation of the canonical and last-known map inputs, and bounded unavailable/failure result typing. It does not prove provider quality, establish a Current capability, select a default renderer, install software, change Agent Reach, admit authentication, resolve the Step04 Delta-shell blocker, establish architecture truth, prove external truth or complete live external invocation."
+}

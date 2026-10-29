@@ -1,0 +1,50 @@
+{
+  "pilot_id": "non-knowledge-manifest-r0",
+  "domain_dependency": "none",
+  "knowledge_paths_visible": false,
+  "network_allowed": false,
+  "first_executor": "executor-alpha",
+  "resume_executor": "executor-beta",
+  "checkpoint_state": "CHECKPOINTED_RESUMABLE",
+  "final_state": "COMPLETED_VALIDATED",
+  "state_sha256": "2c725e1c02693748188a14aa77b6430d9c3f9891f890a9063de7c03631a19b93",
+  "source_hashes_before": {
+    "sandbox/input/alpha.txt": "b6a98d9ce9a2d9149288fa3df42d377c3e42737afdcdaf714e33c0a100b51060",
+    "sandbox/input/beta.txt": "f2c82decdd7181cf98945929a62598db7e6b477e11f6e0eb0ae97020eff151ad"
+  },
+  "source_hashes_after": {
+    "sandbox/input/alpha.txt": "b6a98d9ce9a2d9149288fa3df42d377c3e42737afdcdaf714e33c0a100b51060",
+    "sandbox/input/beta.txt": "f2c82decdd7181cf98945929a62598db7e6b477e11f6e0eb0ae97020eff151ad"
+  },
+  "allowed_write_set": [
+    "sandbox/manifest.json"
+  ],
+  "actual_write_set": [
+    "sandbox/manifest.json"
+  ],
+  "trace_phases": [
+    "OBSERVE",
+    "FRAME",
+    "PLAN",
+    "AUTHORIZE",
+    "ACT",
+    "VALIDATE",
+    "REMEMBER",
+    "CONTINUE",
+    "STOP",
+    "CONTINUE",
+    "AUTHORIZE",
+    "ACT",
+    "VALIDATE",
+    "REMEMBER",
+    "CONTINUE",
+    "STOP"
+  ],
+  "trace_event_count": 16,
+  "validator_checks": [
+    "manifest exists",
+    "paths are sorted",
+    "SHA-256 values match",
+    "only declared output changed"
+  ]
+}

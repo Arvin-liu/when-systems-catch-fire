@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/governance/evidence-lineage-delta.schema.json",
+  "title": "Evidence lineage delta",
+  "type": "object",
+  "required": ["canonical_id", "delta_status", "source_evidence", "external_evidence_status", "replication_status", "limitation"],
+  "properties": {
+    "canonical_id": {"type": "string", "minLength": 1},
+    "delta_status": {"const": "SOURCE_ASSET_CHANGED"},
+    "source_evidence": {"type": "array", "items": {"type": "object"}},
+    "external_evidence_status": {"type": "string", "minLength": 1},
+    "replication_status": {"type": "string", "minLength": 1},
+    "limitation": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

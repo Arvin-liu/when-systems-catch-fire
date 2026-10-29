@@ -1,0 +1,59 @@
+{
+  "schema_version": "ignition-144-step12-targeted-regression-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "12",
+  "status": "FAIL_IDENTITY_PROJECTION_REPAIR_REQUIRED",
+  "offline_only": true,
+  "external_live_attempts": 0,
+  "commands": [
+    "python3 ignition/tools/validate_current_task_lineage.py --check",
+    "python3 ignition/tools/validate_formal_task_lifecycle.py --check",
+    "python3 ignition/tools/validate_current_release_lifecycle.py --check",
+    "python3 ignition/tools/validate_open_obligation_registry.py --check",
+    "python3 ignition/tools/validate_current_volatile_fact_registry.py",
+    "python3 ignition/tools/validate_current_state_sync.py --check",
+    "python3 ignition/tools/validate_owner_editorial_authority.py --check",
+    "python3 ignition/tools/validate_release_state_model.py --check",
+    "python3 ignition/tools/validate_release_transaction_protocol.py --check",
+    "python3 ignition/tools/validate_release_fault_matrix.py --check",
+    "python3 ignition/tools/validate_release_candidate_task_identity.py --check",
+    "python3 ignition/tools/generate_current_facts.py --check",
+    "python3 ignition/tools/build_current_snapshot.py --check",
+    "python3 ignition/tools/validate_state_changelog.py",
+    "python3 -m unittest -q tests.test_owner_editorial_authority tests.test_current_task_advancement tests.test_current_task_lineage tests.test_current_state_sync tests.test_current_surface_classifier tests.test_current_surface_compiler tests.test_current_surface_determinism tests.test_current_surface_semantics tests.test_current_release_lifecycle tests.test_release_candidate_task_identity tests.test_post_publication_current tests.test_release_state_model tests.test_release_transaction_protocol tests.test_task_identity_adversarial_fixtures tests.test_task_identity_model tests.test_task_identity_parser"
+  ],
+  "standalone_validators": {
+    "commands": 14,
+    "passed": 13,
+    "failed": 1,
+    "failed_command": "python3 ignition/tools/validate_release_candidate_task_identity.py --check",
+    "failure": "RELEASE_CANDIDATE_TASK_IDENTITY_INVALID: PROGRESS_CURRENT_ITERATION_MISSING"
+  },
+  "targeted_regression": {
+    "natural_completion": true,
+    "tests": 77,
+    "failures": 4,
+    "errors": 0,
+    "skips": 0,
+    "stdout_stderr_sha256": "9d8bc99ed7e8bae5baa736ef549c4f9eb3709311cc5bf3e60adfd8b3bc03f59a",
+    "status": "FAIL_IDENTITY_PROJECTION_REPAIR_REQUIRED"
+  },
+  "failure_clusters": [
+    "Task144 progress.jsonl was absent, so the release-candidate gate could not bind the current iteration.",
+    "task-identity-model-r1.json still pointed release_candidate_task to the Task143 execution contract; the declarative identity test and dependent release-candidate tests failed."
+  ],
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "ignore_added": false,
+    "expected_failure_added": false,
+    "residual_expanded": false
+  },
+  "repair_cycle": {
+    "required": "A",
+    "root_cause_is_deterministic": true,
+    "authorized_scope": "Add the missing current Task144 progress binding and rebind the declarative release-candidate role to the current Task144 execution contract; no new capability or live action."
+  },
+  "historical_failures_preserved": true,
+  "claim_ceiling": "Natural repository-local targeted regression failure evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

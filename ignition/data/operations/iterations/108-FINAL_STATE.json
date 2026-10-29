@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-TWO-PHASE-ITERATION-TERMINALIZATION-AND-SELF-CLOSING-CURRENT-TRUTH-R1-20260801",
+  "task_number": 108,
+  "control_commit": "86f7de2ee9c60149986e2fbf1c372a91e89bacf6",
+  "terminal_state": "TERMINAL_SUCCESS",
+  "attestation_mode": "ORIGINAL_TERMINATION",
+  "terminal_tag": {
+    "ref": "ignition/iterations/108/terminal-r1",
+    "object_sha": "0a9638e8eb2e242d4aaf316f2e09a0e72ba3e040",
+    "target_commit": "8d8d30837c5ddc49f1085ae03df06a12c77a772e",
+    "object_type": "tag",
+    "created_without_force": true,
+    "on_origin": true
+  },
+  "core_receipt": {
+    "file_path": "data/operations/terminal-evidence-core.json",
+    "sha256": "df3e14ca2390d3c0954d14f5dfc459b08e700b93b301897f200aa328393fa05e",
+    "bound_by_tag_message": true
+  },
+  "content_phase": {
+    "pr_number": 164,
+    "pr_state": "MERGED",
+    "exact_head": "39f30eccbd2c4050bed2b83650e7d823940781ba",
+    "merge_commit": "ddf64f8b689caf20a69880b3f8bd5f2097916390"
+  },
+  "terminalization_phase": {
+    "pr_number": 165,
+    "pr_state": "MERGED",
+    "exact_head": "aad8ac768f2df9c2fc1b1213003b204a801cc3c0",
+    "merge_commit": "8d8d30837c5ddc49f1085ae03df06a12c77a772e"
+  },
+  "followup_evidence_phase": {
+    "pr_number": 166,
+    "pr_state": "MERGED",
+    "merge_commit": "d0a7b9609ab8b3ac04fed06c26bb38555bb28bbb",
+    "description": "resolver fail-closed correctness + bind terminal evidence + fold into path-classification and current-truth projection"
+  },
+  "reconciled_tasks": [106, 107],
+  "resolver_verification": {
+    "method": "fresh full clone (fetch-depth 0 + fetch-tags) of Arvin-liu/when-systems-catch-fire",
+    "resolved_108": "TERMINAL_SUCCESS",
+    "current_accepted_iteration": 108,
+    "terminal_tasks": [104, 105, 106, 107, 108],
+    "errors": {},
+    "git_available": true
+  },
+  "tag_validator": {
+    "result": "TAG_OK",
+    "target": "8d8d30837c5ddc49f1085ae03df06a12c77a772e",
+    "core_file_bound": "data/operations/terminal-evidence-core.json",
+    "core_sha256_matches": true
+  },
+  "ci_runs": {
+    "content_pr_164": {
+      "preflight": "30666861735=success",
+      "lifecycle_validation": "30666861726=success"
+    },
+    "terminalization_pr_165": {
+      "preflight": "30669059261=failure(initial) -> resolved by manifest regenerate; lifecycle-validation depends on tag-on-origin (see followup)",
+      "lifecycle_validation": "30669059266=failure(initial) -> resolved after 108 tag pushed to origin"
+    },
+    "followup_pr_166": {
+      "preflight": "30669809182=success",
+      "lifecycle_validation": "30670303189=success (re-run after 108 tag on origin)"
+    }
+  },
+  "required_ci_summary": "preflight=pass (30669809182); lifecycle-validation=success (30670303189); resolver fresh-clone 108=TERMINAL_SUCCESS (errors={}). foundation-validation is RED pre-existing (independent of task 108 per prior session: 106/107 legacy ledger projection cites non-terminal + MACHINE_RECORD_IMPACT drift), outside the terminalization allowlist scope and not a contract §7.11/§18 terminal-chain gate.",
+  "fresh_clone_tag_resolved": true,
+  "history_rewritten": false,
+  "force_push_used": false,
+  "task_109_auto_executed": false,
+  "success_token": "IGNITION_TWO_PHASE_ITERATION_TERMINALIZATION_ESTABLISHED_106_107_RECONCILED_108_SELF_CLOSED_AND_MERGED",
+  "recorded_at": "2026-08-01T03:30:00+08:00",
+  "agent_identity": "云天明 <49422864+Arvin-liu@users.noreply.github.com>"
+}

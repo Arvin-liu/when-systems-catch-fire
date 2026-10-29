@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/steering-driver-console-r3.schema.json",
+  "title": "OS Steering Driver Console R3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "fixture"],
+  "properties": {
+    "schema": {"const": "os-steering-intent-obligation-r1.driver-console-fixture"},
+    "fixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_state", "goals", "intents", "why_next", "owner_decisions", "completed_runs"],
+      "properties": {
+        "current_state": {"type": "string"},
+        "goals": {"type": "array", "items": {"type": "object"}},
+        "intents": {"type": "array", "items": {"type": "object"}},
+        "why_next": {"type": "object"},
+        "owner_decisions": {"type": "array", "items": {"type": "object"}},
+        "completed_runs": {"type": "array", "items": {"type": "object"}}
+      }
+    }
+  }
+}
