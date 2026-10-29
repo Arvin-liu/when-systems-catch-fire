@@ -72,6 +72,10 @@ EXPECTED_HEAD_BASES = {
     "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1": {
         "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1",
     },
+    # The R4 reflection candidate stays stacked directly on its R3 parent.
+    "analysis/adaptive-relational-runtime-r4-waic-self-reflection-r1": {
+        "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1",
+    },
 }
 
 
@@ -863,6 +867,10 @@ def test_s43_diff_scope():
         'ignition/tests/test_r3_corpus_inventory.py',
         'ignition/tests/test_r3_corpus_semantic.py',
         'ignition/tools/adaptive_relational_runtime/corpus/',
+        # Exact R4 self-reflection runtime and its public propagation projection.
+        'arr_r4_self_reflection/',
+        'ignition/data/operations/propagation/ARR-R4-WAIC-SELF-REFLECTION-R1-system-map-delta.json',
+        'requirements-r4.txt',
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():
