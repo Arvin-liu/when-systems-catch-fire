@@ -5,8 +5,8 @@
     "every_tracked_path_accounted": true,
     "generated_and_prior_function_registries_excluded_explicitly": true
   },
-  "candidate_fragments": 32915,
-  "canonical_claims": 18752,
+  "candidate_fragments": 32928,
+  "canonical_claims": 18765,
   "coverage_status_counts": {
     "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 132,
     "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 270,
@@ -17,7 +17,7 @@
     "EXCLUDED_PLATFORM_CODE_EXCLUDED": 1195,
     "EXPLICIT_CANONICAL_IMPORT": 1,
     "SCANNED_NO_CANDIDATE": 807,
-    "SCANNED_REGISTERED": 3008
+    "SCANNED_REGISTERED": 3010
   },
-  "tracked_files": 6740
+  "tracked_files": 6742
 }

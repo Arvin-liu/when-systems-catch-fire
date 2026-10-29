@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f5e6c43fb45bcd6ca357cb5ff8f83c99917d069284426bd671e4985cfc32ba37",
+      "source_sha256": "4e270ba25d5f5f9bdcff12d3ec4c08fa9c32c27bc276c09c7a06ad2a1b26e12a",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2737,7 +2737,7 @@
       "title": "CLAIM-DELTA",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "58da2f5a5c5c4d5ebe5648a5220123da63faacf72d833042a76b11406fe6d30a",
+      "source_sha256": "7ecce289a611c235d8679ffcbf9e5c1afef27810cd428aa2b0e12b5fe939ff62",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2767,7 +2767,7 @@
       "title": "EVIDENCE-LINEAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "7852d809b1b3c08315e3b47b7e4b87de0f34069a7f197f2e4157ada834192d7d",
+      "source_sha256": "f4d5e1c2d69e17fad85f55fdc97cbb84811b0438fb0d83e3ba2c78866c7c5c7a",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2780,7 +2780,7 @@
       "title": "IMPACT-ANALYSIS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "6365ade1a4f69241cf63aff36be9d557035748e7b4be2fc390854dbc149ab5b3",
+      "source_sha256": "1f922daf5ba45a76fb6d480a08cd50aba5ff3f2d3b6f2342e860b0f15b68e598",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2857,7 +2857,7 @@
       "title": "SELF-CORRECTION-AUDIT",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d50bac8e4bd00f741e3ba809a1b8f1ed57f064b509ea733aa8455ad3671ad94b",
+      "source_sha256": "b3c3fb4ddba275c818b7890d07a05ce771257b53c19db8dcd08ff11e8ca136fd",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "CF-40",
@@ -3278,7 +3278,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9f2a63963b63a1a0a71e8758c28507ac6982fee35392526cf2dff431e00fd6de",
+      "source_sha256": "53cf3a795a6c047e81541a2448b63a2f240612c4179268c837cfc70e620ab1a1",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-06"
@@ -3293,7 +3293,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "82d44c192d92b1b57a0f750555cfd12e77c0115f7be6cdf4289420f5f1e4db5d",
+      "source_sha256": "aea3515c65b9d4a168fc54b209bd99db5d7a8cb655f39e9b382c17173101ba51",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -3308,7 +3308,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "7745729c2121d458cd6fd64a53737c86568da2a89a7fb32fcad3cc32da6f9942",
+      "source_sha256": "a9712d1b3e78f6eb5c42a64446ee09ca351d29a6bac66204470cbf19243309ab",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4245,7 +4245,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "8d363c7ca32f147b30562201711d6984c442f2d4177d4867b760ff39ba2260a8",
+      "source_sha256": "53a8319c2afd4e2313fb466ef697d0176f6322b3953fa6b40db96e7ff005ae21",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -5148,7 +5148,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a5ada56642e37937cd96d60188a3e72c8165ca7f4b7551310074b1090ab3134d",
+      "source_sha256": "5f2cabbc39a0eec73e8bb24ba5c3632c6c1ea831070ff344272e3f7a4b70c67b",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-03",
@@ -5170,7 +5170,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "01e67d95a2bcd192aae37b9e29c62721a8d9ea8a461d7e0532522e41dbf7f2cf",
+      "source_sha256": "fb8b6f42d25120f7b6f4b1f29bb37e0bbcf02a0f4671399ff6a95295697bd7f6",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",

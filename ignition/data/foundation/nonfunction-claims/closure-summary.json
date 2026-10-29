@@ -2,21 +2,21 @@
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
     "DESCRIPTIVE": 471,
-    "EMPIRICAL": 5122,
+    "EMPIRICAL": 5126,
     "INTERPRETIVE": 2982,
     "MATHEMATICAL": 2429,
     "METAPHYSICAL": 831,
     "NORMATIVE": 184,
-    "UNRESOLVED": 6733
+    "UNRESOLVED": 6742
   },
   "blocked_conclusion_rebounds": 1,
-  "candidate_fragments": 32915,
-  "canonical_claims": 18752,
+  "candidate_fragments": 32928,
+  "canonical_claims": 18765,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2527,
     "DESCRIPTIVE_REPOSITORY_CLAIM": 471,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2528,
-    "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 817,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2532,
+    "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 822,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 455,
     "LAW_OR_PRINCIPLE_CLAIM": 215,
     "MECHANISM_OR_CAUSAL_CLAIM": 2343,
@@ -24,7 +24,7 @@
     "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 831,
     "PREDICTION_OR_FORECAST": 251,
     "THEOREM_OR_MATHEMATICAL_CLAIM": 2429,
-    "UNRESOLVED_CLAIM": 5701
+    "UNRESOLVED_CLAIM": 5705
   },
   "closure_semantics": "Registry accounting is closed by explicit disposition or quarantine. Mathematical proof, external evidence, novelty and replication obligations remain independently open.",
   "conclusion_rebound_candidates": 57,
@@ -32,7 +32,7 @@
   "disposition_distribution": {
     "ACCEPTED_AS_DEFINITION": 4069,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
-    "HISTORICAL_ONLY": 7481,
+    "HISTORICAL_ONLY": 7494,
     "PENDING_EMPIRICAL_TEST": 976,
     "PENDING_LITERATURE_ADJUDICATION": 1253,
     "PENDING_PROOF": 685,
@@ -50,10 +50,10 @@
   "explicitly_unresolved_dependency_edges": 50,
   "external_evidence_distribution": {
     "E0": 11265,
-    "E1": 7487
+    "E1": 7500
   },
   "mathematical_maturity_distribution": {
-    "M0": 16075,
+    "M0": 16088,
     "M1": 2672,
     "M3": 1,
     "M4": 3,
@@ -73,8 +73,8 @@
     "EXCLUDED_PLATFORM_CODE_EXCLUDED": 1195,
     "EXPLICIT_CANONICAL_IMPORT": 1,
     "SCANNED_NO_CANDIDATE": 807,
-    "SCANNED_REGISTERED": 3008
+    "SCANNED_REGISTERED": 3010
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 6740
+  "tracked_files_accounted": 6742
 }

@@ -117,9 +117,9 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6193,
-      "function_quarantine_or_pending": 5041,
-      "nonfunction_claims": 18752,
+      "function_identity_cards": 6194,
+      "function_quarantine_or_pending": 5042,
+      "nonfunction_claims": 18765,
       "nonfunction_quarantine_or_pending": 5404
     },
     "human_surface": {
@@ -237,11 +237,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "9f2a63963b63a1a0a71e8758c28507ac6982fee35392526cf2dff431e00fd6de"
+      "sha256": "53cf3a795a6c047e81541a2448b63a2f240612c4179268c837cfc70e620ab1a1"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "7745729c2121d458cd6fd64a53737c86568da2a89a7fb32fcad3cc32da6f9942"
+      "sha256": "a9712d1b3e78f6eb5c42a64446ee09ca351d29a6bac66204470cbf19243309ab"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -249,7 +249,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "02539d3f9860100b2c9c96f3f84ed02e8f49e98ce2bd49e3bf6202fb1f175357"
+      "sha256": "8f0d9b005723f0bc945bb02e4953bcd60db12fd2381c64ad84b9b89194e0a63d"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
