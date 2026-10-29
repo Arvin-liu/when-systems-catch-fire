@@ -1,9 +1,12 @@
 import importlib.util
+import hashlib
 import json
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -50,6 +53,59 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
         self.assertTrue(self.adjudicator.candidate("This theorem proves a universal result."))
         self.assertTrue(self.adjudicator.candidate("该机制导致普遍结果。"))
         self.assertFalse(self.adjudicator.candidate("ordinary navigation entry"))
+
+    def test_link_only_navigation_does_not_create_a_claim_or_url_signal(self):
+        navigation = "[Guide](https://example.test/theorem-proof)"
+        self.assertFalse(self.adjudicator.candidate(navigation, markdown=True))
+        self.assertTrue(self.adjudicator.editorial_navigation_only_fragment(navigation))
+
+    def test_public_surface_anchor_survives_inserted_navigation_line(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "SUMMARY.md"
+            claim = "[This theorem proves a universal result.](https://example.test/old-source)"
+            source.write_text(claim + "\n", encoding="utf-8")
+            with patch.object(self.adjudicator, "repo_path", return_value=source):
+                before, _ = self.adjudicator.text_fragments("SUMMARY.md")
+                before_fragment = next(row for row in before if row.get("candidate", True))
+                before_anchor = self.adjudicator.anchor("SUMMARY.md", before_fragment, "CURRENT_PUBLIC_SURFACE")
+                updated_claim = claim.replace("old-source", "new-source")
+                source.write_text("[Guide](https://example.test/theorem-proof)\n" + updated_claim + "\n", encoding="utf-8")
+                after, _ = self.adjudicator.text_fragments("SUMMARY.md")
+                after_fragment = next(row for row in after if row.get("candidate", True))
+                after_anchor = self.adjudicator.anchor("SUMMARY.md", after_fragment, "CURRENT_PUBLIC_SURFACE")
+            self.assertEqual(before_anchor, after_anchor)
+            self.assertNotIn("first_line", after_anchor)
+            self.assertEqual(after_fragment["line"], 2)
+            self.assertTrue(any(row.get("impact_class") == "EDITORIAL_NAVIGATION_ONLY" for row in after))
+
+    def test_link_destination_does_not_define_identity_but_visible_change_does(self):
+        original = "[This theorem proves a universal result.](https://example.test/old-source)"
+        moved = "[This theorem proves a universal result.](https://example.test/new-source)"
+        changed = "[This theorem proves a different universal result.](https://example.test/new-source)"
+
+        def candidate_id(text):
+            normalized = self.adjudicator.normalize(text)
+            return "NFC-" + hashlib.sha256(normalized.encode("utf-8")).hexdigest()[:16]
+
+        for text in (original, moved, changed):
+            self.assertTrue(self.adjudicator.candidate(text, markdown=True))
+        self.assertEqual(candidate_id(original), candidate_id(moved))
+        self.assertNotEqual(candidate_id(original), candidate_id(changed))
+
+    def test_claim_bearing_link_label_remains_a_new_candidate_with_all_audits(self):
+        linked_claim = "[This theorem proves a universal result.](https://example.test/source)"
+        self.assertTrue(self.adjudicator.candidate(linked_claim, markdown=True))
+        self.assertEqual(self.adjudicator.impact_class_for_fragment(linked_claim, is_new=True, markdown=True), "NEW_CLAIM_CANDIDATE")
+        claim_class = self.adjudicator.classify(linked_claim)
+        kind = self.adjudicator.assertion_type(claim_class)
+        disposition = self.adjudicator.disposition_for(claim_class, "CURRENT_PUBLIC_SURFACE", linked_claim, None, None)
+        audits = self.adjudicator.audits_for(claim_class, kind, linked_claim, disposition, "CURRENT_PUBLIC_SURFACE")
+        self.assertEqual(set(audits), {
+            "definition_audit", "quantifier_audit", "proof_audit", "counterexample_audit",
+            "type_dimension_audit", "internal_external_audit", "model_class_audit",
+            "cross_domain_audit", "evidence_audit", "novelty_audit", "prediction_audit",
+            "conclusion_rebound_audit", "public_surface_audit",
+        })
 
     def test_operational_state_record_marker_excludes_only_marked_lines(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8").splitlines()

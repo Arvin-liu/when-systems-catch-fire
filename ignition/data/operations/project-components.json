@@ -316,6 +316,8 @@
         "data/operations/current-release-lifecycle-r1.json",
         "data/operations/current-snapshot-r1.json",
         "data/operations/state-changelog-profile-r1.json",
+        "data/operations/state-changelog-profile-r2.json",
+        "data/operations/human-front-door-identity-r1.json",
         "data/operations/current-task-lineage-status.json",
         "data/operations/current-volatile-fact-registry-r1.json",
         "data/operations/task-identity-model-r1.json",
@@ -323,6 +325,8 @@
         "schemas/architecture/current-facts.schema.json",
         "schemas/architecture/current-system-identity.schema.json",
         "schemas/operations/current-snapshot-r1.schema.json",
+        "schemas/operations/human-front-door-identity-r1.schema.json",
+        "schemas/operations/state-changelog-profile-r2.schema.json",
         "tests/test_current_state_sync.py",
         "tests/test_current_surface_compiler.py",
         "tests/test_state_changelog.py",
@@ -396,6 +400,7 @@
       "docs/foundation/",
       "tools/foundation/",
       "tests/foundation/",
+      "tests/test_knowledge_corpus_admission.py",
       "formal/lean/"
       ]
     },
@@ -785,7 +790,8 @@
       },
       "path_patterns": [
         "tests/foundation/",
-        "tools/foundation/"
+        "tools/foundation/",
+        ".github/workflows/repository-path-accounting-preflight.yml"
       ]
     },
     {
@@ -1606,6 +1612,8 @@
         "visible": true
       },
       "path_patterns": [
+        ".github/workflows/q33-governance-validation.yml",
+        "requirements-q33.txt",
         "tests/test_q33_governance_infrastructure.py"
       ]
     },
@@ -2205,7 +2213,8 @@
             "tests/test_component_validation_evidence.py",
             "tests/test_component_release_preparation.py",
             "tests/test_component_release_authorization.py",
-            "tests/test_history_remediation_contract.py"
+            "tests/test_history_remediation_contract.py",
+            ".github/workflows/release-transaction-protocol-validation.yml"
         ]
     }
   ],

@@ -44,6 +44,12 @@ class KnowledgeCorpusAdmissionTests(unittest.TestCase):
         self.assertTrue(admission.provenance_only)
         self.assertTrue(admission.auto_discovery)
 
+    def test_source_and_generated_projection_impacts_are_explicit(self) -> None:
+        source = admission_for_path("docs/architecture/current-state.md")
+        generated = admission_for_path("data/foundation/nonfunction-claims/claim-registry.jsonl")
+        self.assertEqual(source.impact_class, "SOURCE_CONTENT_CHANGED")
+        self.assertEqual(generated.impact_class, "GENERATED_PROJECTION_REFRESH")
+
     def test_current_projection_has_no_platform_only_rows(self) -> None:
         result = __import__("subprocess").run(
             ["python3", "tools/validate_knowledge_corpus_admission.py"],

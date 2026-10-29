@@ -740,3 +740,13 @@
 - stale_knowledge: a green local generator or CI result must not be read as independent validation, Current promotion, production readiness or epistemic acceptance; the old main pointer remains the baseline until remote observation. [OPERATIONAL_RECORD_ONLY]
 - next_read: inspect the dedicated integration PR and required CI at its exact head, then verify the merged remote main SHA, Task165 ancestry, post-merge smoke/Foundation gates and the independent `1111` receipt. [OPERATIONAL_RECORD_ONLY]
 - claim_ceiling: repository-local derived-output reconciliation and formal integration-candidate evidence only; no external truth, Owner acceptance, production readiness, validated research finding or `READY_FOR_NEW_MATERIAL_RUN` status is inferred before all command gates close. [OPERATIONAL_RECORD_ONLY]
+## 2026-10-12 — IGNITION-GOVERNANCE-SELF-REPAIR-R1-PACKAGE-A — based on main@f17477dd9761c898563dbf5670c63914a5ecedfa
+
+- main_state: Public `main` remains `f17477dd9761c898563dbf5670c63914a5ecedfa`; this entry records a Draft candidate and does not claim a main or Current transition. [OPERATIONAL_RECORD_ONLY]
+- delta: Package A adds one authorized, versioned append to the sealed R1 changelog profile and makes the existing A homepage identity a single machine-readable input with exact README validation. [OPERATIONAL_RECORD_ONLY]
+- authority_changes: none. No Owner, merge, Current, provider, production, branch-protection or scientific-claim authority is added. [OPERATIONAL_RECORD_ONLY]
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; repository tests and this Draft establish implementation evidence only. [OPERATIONAL_RECORD_ONLY]
+- obligations: Owner review of package A and the separately scoped packages B and C remains pending; all changes stay Open/Draft until Owner/Chat decides publication order. [OPERATIONAL_RECORD_ONLY]
+- stale_knowledge: connected GitHub branch-protection evidence remains `UNKNOWN/admin evidence required`; no protection setting was changed. [OPERATIONAL_RECORD_ONLY]
+- next_read: inspect the exact Draft head, additive R2 profile, unchanged R1 prefix, identity input, path manifest and triggered CI results. [OPERATIONAL_RECORD_ONLY]
+- claim_ceiling: repository-local governance implementation and test evidence only; no scientific, external-validity, Current, merge or publication claim is made. [OPERATIONAL_RECORD_ONLY]

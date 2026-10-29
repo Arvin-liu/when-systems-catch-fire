@@ -1004,11 +1004,6 @@
   - 可搜索名称：NFC-de6701c71b50dc92 / \[docs/architecture/mechanism-adjudication-plane.md\]\(docs/architecture/mechanism-adjudication-plane.md\)
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
-- [\[MCF\]\(./docs/architecture/multiscale-causal-fabric.md\)](../../../SUMMARY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c7316446498dc629 / \[MCF\]\(./docs/architecture/multiscale-causal-fabric.md\)
-  - 来源：`SUMMARY.md`
-  - 依赖：—；被引用：—
 - [\[Q26 点火分析\]\(../../../reports/publication/jin-rise-point-fire-analysis.md\)：把单因叙事拆成有竞争解释和证据上限的机制候选。](../../../docs/publication/cases/jin-rise-case-source.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-8b9e914789c250ba / \[Q26 点火分析\]\(../../../reports/publication/jin-rise-point-fire-analysis.md\)：把单因叙事拆成有竞争解释和证据上限的机制候选。
@@ -2502,5 +2497,10 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M04 / data/external-research/088-external-source-atlas-medium.jsonl / M04 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M05 / data/external-research/088-external-source-atlas-medium.jsonl / M05 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
