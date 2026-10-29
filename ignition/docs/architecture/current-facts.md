@@ -9,7 +9,7 @@
 - Live state dimensions: dispatch `OBSERVED`；process `OBSERVED`；inference `NOT_OBSERVED`；validated completion `NOT_VALIDATED`；reconciliation blocker `NONE`；next eligible action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`。
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - Foundation: function identity cards `6202`；function quarantine/pending `5050`；non-function claims `18954`；non-function quarantine/pending `5462`。
-- Knowledge Experience: cards `672`；changes `567`；layered readings `593`；search records `25735`；aliases `1391`。
+- Knowledge Experience: cards `672`；changes `567`；layered readings `593`；search records `25749`；aliases `1391`。
 - Fire Seeds: `64` seeds/clusters；`658` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`21` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
