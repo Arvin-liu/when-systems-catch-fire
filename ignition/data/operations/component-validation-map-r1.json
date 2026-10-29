@@ -614,6 +614,25 @@
       "evidence": "The existing kernel-to-structural-surface and structural-surface-to-federation relations are checked by the ESI, soft-authority, durability, and federation consumer tests; the surface remains advisory."
     },
     {
+      "component_id": "stage_snapshot_publication",
+      "domains": [
+        "O",
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The canonical stage-snapshot operation spec owns this changed path. Existing stage-snapshot publication and iteration-sync tests cover the G publication contract; human-result consumers cover its repository Markdown projection. The new versioned release-transaction section also activates the declared synchronization and projection relations, without promoting a candidate snapshot to a capability."
+    },
+    {
       "component_id": "sync",
       "domains": [
         "G"
