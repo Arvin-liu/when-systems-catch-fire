@@ -931,6 +931,20 @@
         "INTERFACE_CHANGE"
       ],
       "evidence": "ARR adapter implementation and tests are checked by the registered anti-second-executor static gate and focused pytest suite; this adapter does not create external execution authority."
+    },
+    {
+      "component_id": "iteration",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_publication_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The registered iteration component owns the current iteration-sync validator and test; the existing publication-consumer target checks manifest path, seal, and current-state synchronization."
     }
   ]
 }
