@@ -2230,7 +2230,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "b514d3dce76f8bb42f80626364a7ce5bc85f7bfa"
+            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
           }
         ],
         "validation_refs": [
@@ -3705,7 +3705,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "b514d3dce76f8bb42f80626364a7ce5bc85f7bfa"
+            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
           },
           {
             "path": "ignition/data/operations/current-snapshot-r1.json",
@@ -5687,7 +5687,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "b514d3dce76f8bb42f80626364a7ce5bc85f7bfa"
+            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
           }
         ],
         "validation_refs": [
@@ -5819,7 +5819,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "b514d3dce76f8bb42f80626364a7ce5bc85f7bfa"
+            "blob_sha1": "fdce1a2fc73e18e38b8a4b0a2332585ea4a4995f"
           }
         ],
         "validation_refs": [
@@ -9844,7 +9844,7 @@
         {
           "path": "ignition/tools/validate_human_front_door.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "6361ad89e29aedcba508127cabe5418419f8e999"
+          "sha1": "3b8a05d96ac1f888d45e085816aa28c49f9fea0c"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
