@@ -19,9 +19,10 @@
         "tests.test_release_transaction_protocol",
         "tests.test_q33_governance_infrastructure",
         "tests.test_release_transaction_protocol_r3",
-        "tests.test_release_candidate_task_identity"
+        "tests.test_release_candidate_task_identity",
+        "tests.test_execution_contract"
       ],
-      "evidence": "Existing incremental-planner, authority, defensive-rejection, and R2 release-transaction protocol tests, plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, final-main-witness workflow-path, and Q33 governance-infrastructure coverage fixtures exercise component closure and fail-closed release evidence.",
+      "evidence": "Existing incremental-planner, authority, defensive-rejection, R2/R3 release-transaction protocol, Task20 execution-contract, and candidate-identity tests, plus negative router, exact-plan/receipt, deterministic component-bundle, rollback-selection, final-main-witness, final-main-witness workflow-path, and Q33 governance-infrastructure coverage fixtures exercise component closure and fail-closed release evidence.",
       "import_roots": [
         "ignition"
       ]
