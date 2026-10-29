@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-124-baseline-concurrency-r1",
+  "task_id": "IGNITION-20260817-124",
+  "step": "00",
+  "formal_origin_main": "266426d7110af9ee921a020a46c3a0347aa364e9",
+  "observed_at": "2026-08-17T11:15:00Z",
+  "experiment": {
+    "fixture": "two dependency-ready children with disjoint local write targets",
+    "child_ids": ["ready-a", "ready-b"],
+    "expected_ready_set": ["ready-a", "ready-b"],
+    "observed_terminal_state": "EPISODE_COMPLETED_VALIDATED",
+    "observed_start_order": ["ready-a", "ready-b"],
+    "max_concurrent_observed": 1,
+    "scheduler_behavior": "Supervisor._drive selects ready[0] and blocks in _run_child before selecting the next ready child",
+    "evidence": "PYTHONPATH=. python3 -m unittest tests.test_supervisor plus an offline two-ready-child probe"
+  },
+  "inherited_gates": {
+    "core_regression_tests": "PASS (143 tests)",
+    "current_state_sync": "PASS",
+    "executor_inventory": "PASS (3 available; no live invocation)",
+    "federation_ownership": "PASS",
+    "federation_routing": "PASS",
+    "supervisor_validator": "PASS",
+    "operational_memory_validator": "PASS",
+    "system_map_projection": "PASS (70 nodes / 77 edges)"
+  },
+  "claim_ceiling": "Repository-local baseline and bounded fixture observation only; no production, external-validity, Owner or epistemic claim."
+}

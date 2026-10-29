@@ -1,0 +1,33 @@
+{
+  "schema_version": "ignition-138-step07-fixture-answer-freeze-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "07",
+  "status": "PASS",
+  "fixture": {
+    "fixture_schema": "ignition-138-live-pilot-r1",
+    "dispatch_lineage": "NEW_TASK138_IDENTITIES_REQUIRED",
+    "files": ["README.txt", "nonce.txt", "table.json"],
+    "workspace_mode": "0555",
+    "file_mode": "0444",
+    "workspace_before_digest": "40ab9b327e6bf1044e3f57e00aaf483fe6d7f2f77a3bcddc4c414d1825556fba",
+    "nonce": "abcdef0123456789abcdef01",
+    "rule": {"eligible": true, "minimum_score": 60, "sort": ["score", "id"]}
+  },
+  "frozen_answer": {
+    "selected_ids": ["item-a", "item-d", "item-f", "item-c"],
+    "count": 4,
+    "workspace_digest_claim": "40ab9b327e6bf1044e3f57e00aaf483fe6d7f2f77a3bcddc4c414d1825556fba"
+  },
+  "strict_output_schema": {
+    "location": "EXTERNAL_READ_ONLY_SCHEMA_PATH",
+    "mode": "0444",
+    "sha256": "060ba4499607b008aa9111390662782787fbf1ce6426c16188a7195b5fbfba58",
+    "required_keys": ["nonce", "selected_ids", "count", "workspace_digest_claim"],
+    "additional_properties": false
+  },
+  "answer_file_exposed_to_executor": false,
+  "validator": "Live138CompletionValidator",
+  "targeted_tests": {"fixture_and_validator_tests": 2, "failures": 0, "errors": 0, "skips": 0, "status": "PASS"},
+  "inference_started": false,
+  "claim_ceiling": "Task138 synthetic fixture and independent answer-contract evidence only; no live result, validated completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

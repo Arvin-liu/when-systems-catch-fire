@@ -1,0 +1,18 @@
+{
+  "schema_version": "overall-architecture-derived-expectation-r1",
+  "canonical_sources": [
+    "data/operations/project-components.json",
+    "data/operations/change-propagation-topology.json",
+    "data/architecture/interactive-system-map-layout.json"
+  ],
+  "synchronized_case": {
+    "expected": "PASS",
+    "meaning": "The committed map projection and its expected counts are derived from the canonical registry, topology, and layout."
+  },
+  "unsynchronized_case": {
+    "expected": "FAIL",
+    "mutation": "remove_last_visible_node_without_updating_coverage",
+    "meaning": "A projection changed without its canonical coverage becoming consistent must fail closed."
+  },
+  "claim_ceiling": "Repository-local architecture projection consistency only; no external truth, causal proof, production readiness, Owner acceptance, or epistemic upgrade."
+}

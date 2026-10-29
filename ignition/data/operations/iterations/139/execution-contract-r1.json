@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260825-139",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "e80d7c4aeb70ae44edbd340fc2f341c7a6a737d4",
+    "command_path": "agent-commands/IGNITION-20260825-139-durable-live-attempt-journal-observation-projection-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "12205be8ad94916a39253e0eba2106bf5da9da12"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-139-durable-live-attempt-journal-r1-20260825",
+  "expected_receipt_branch": "relay/receipts/ignition-139-durable-live-attempt-journal-observation-projection-r1-20260825",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260825-139",
+    "latest_architecture_changing_task": "IGNITION-20260823-136",
+    "previous_canonical_current_task": "IGNITION-20260824-138",
+    "previous_formal_task": "IGNITION-20260824-138",
+    "release_candidate_task": "IGNITION-20260825-139",
+    "publication_witness_task": "IGNITION-20260825-139"
+  },
+  "claim_ceiling": "Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projection and bounded executor-observation evidence only; no Owner authority, external truth, production readiness or epistemic acceptance."
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "ignition-128-step00-audit-r1",
+  "task_id": "IGNITION-20260821-128",
+  "control_ref": "relay/current",
+  "control_sha": "3b6d27441395492cf633e53d3d1e985d0b2ec933",
+  "formal_start_sha": "681f86d79b1112af3c07e0f8091335860c237ef2",
+  "search_scope": "Fresh formal main; repository text and machine records, excluding .git metadata",
+  "search_patterns": [
+    "DEFERRED_PENDING_REBASE",
+    "Task 125",
+    "IGNITION-125",
+    "Task 127",
+    "IGNITION-127",
+    "DEFERRED_REBASED_INTO_127",
+    "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
+  ],
+  "hit_counts": {
+    "DEFERRED_PENDING_REBASE": 24,
+    "Task 125": 22,
+    "IGNITION-125": 5,
+    "Task 127": 57,
+    "IGNITION-127": 4
+  },
+  "disposition_ledger": [
+    {
+      "classification": "CURRENT_SURFACE",
+      "paths": [
+        "ignition/docs/project-current-state.md",
+        "ignition/AI-START-HERE.md",
+        "ignition/AI-HANDOFF.md",
+        "ignition/llms.txt"
+      ],
+      "old_wording": "Task 125 remains DEFERRED_PENDING_REBASE",
+      "intended_disposition": "CHANGE: state that the 125 file was never executed, its valid requirements were rebased into 127, and 127 is COMPLETED_WITH_CLASSIFIED_RESIDUALS."
+    },
+    {
+      "classification": "CURRENT_SURFACE",
+      "paths": [
+        ".github/README.md",
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/docs/architecture/current-facts.md"
+      ],
+      "old_wording": "No direct DEFERRED_PENDING_REBASE hit; Task 127/R3 identity is present",
+      "intended_disposition": "CHECK and minimally extend from the canonical lineage/status source; preserve map 0.11.0 and the existing R3 identity."
+    },
+    {
+      "classification": "HISTORICAL_RECORD",
+      "paths": [
+        "ignition/reports/operations/ignition-126-progress.md",
+        "ignition/data/operations/iterations/126/current-state-sync-receipt.json",
+        "ignition/data/operations/iterations/126/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/126/progress.jsonl",
+        "ignition/STATE-CHANGELOG.md"
+      ],
+      "old_wording": "Task 125 was DEFERRED_PENDING_REBASE in the Task 126 / historical changelog context",
+      "intended_disposition": "PRESERVE byte-for-byte; append only a new Task 128 current-state delta later."
+    },
+    {
+      "classification": "HISTORICAL_RECORD",
+      "paths": [
+        "ignition/data/operations/iterations/127/step00-baseline-inventory.json",
+        "ignition/data/operations/iterations/127/step00-rebase-matrix.json",
+        "ignition/data/operations/iterations/127/current-state-sync-receipt.json",
+        "ignition/data/operations/iterations/127/progress.jsonl",
+        "ignition/reports/operations/ignition-127-step00-rebase-audit.md",
+        "ignition/agent-results/IGNITION-20260820-127-result.md",
+        "ignition/agent-results/IGNITION-20260820-127-machine-receipt.json"
+      ],
+      "old_wording": "125 was not executed and was recorded as DEFERRED_REBASED_INTO_127; 127 completed with classified residuals",
+      "intended_disposition": "PRESERVE; these records are the provenance needed to explain the 125 to 127 lineage."
+    },
+    {
+      "classification": "DERIVED_CURRENT_PROJECTION",
+      "paths": [
+        "ignition/KNOWLEDGE/indexes/mathematics/part-003.md",
+        "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+      ],
+      "old_wording": "Generated entries retain historical source wording, including DEFERRED_PENDING_REBASE",
+      "intended_disposition": "PRESERVE in this narrow repair; do not hand-edit or trigger unrelated Foundation/Knowledge regeneration. The validator must classify these as derived/historical, not Current truth surfaces."
+    },
+    {
+      "classification": "HISTORICAL_RECORD",
+      "paths": [
+        "ignition/data/external-research/120-function-paradigm-atlas/120-followup-queue-121-126.jsonl",
+        "ignition/reports/external-research/120-function-paradigm-atlas-report.md"
+      ],
+      "old_wording": "IGNITION-125 appears as an unrelated historical follow-up item/title",
+      "intended_disposition": "PRESERVE; it is not the 125 Durability/Lifecycle task status."
+    }
+  ],
+  "current_surface_stale_pending_count": 4,
+  "historical_pending_records_preserved": true,
+  "architecture_map_change_required": false,
+  "claim_ceiling": "Fresh repository audit and classification only; no production readiness, external truth, Owner acceptance or epistemic acceptance."
+}

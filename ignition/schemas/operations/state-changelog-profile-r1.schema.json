@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "profile_contract", "entry_count", "active_current_ordinals", "historical_entry_count", "legacy_profile_count", "profiles", "entries"],
+  "properties": {
+    "schema_version": {"const": "state-changelog-profile-r1"},
+    "profile_contract": {"const": "CURRENT_STRICT_HISTORICAL_VERSIONED"},
+    "entry_count": {"const": 26},
+    "active_current_ordinals": {"const": [25, 26]},
+    "historical_entry_count": {"const": 24},
+    "legacy_profile_count": {"const": 6},
+    "profiles": {
+      "type": "object",
+      "required": ["current-r1", "historical-current-r0", "historical-legacy-r0"],
+      "additionalProperties": false,
+      "properties": {
+        "current-r1": {"$ref": "#/$defs/profile"},
+        "historical-current-r0": {"$ref": "#/$defs/profile"},
+        "historical-legacy-r0": {"$ref": "#/$defs/profile"}
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 26,
+      "maxItems": 26,
+      "items": {
+        "type": "object",
+        "required": ["ordinal", "date", "label", "profile", "section_sha256"],
+        "properties": {
+          "ordinal": {"type": "integer", "minimum": 1, "maximum": 26},
+          "date": {"type": "string", "format": "date"},
+          "label": {"type": "string", "minLength": 1},
+          "profile": {"enum": ["current-r1", "historical-current-r0", "historical-legacy-r0"]},
+          "section_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "profile": {
+      "type": "object",
+      "required": ["kind", "required_fields", "base_sha_required"],
+      "properties": {
+        "kind": {"enum": ["current", "historical"]},
+        "required_fields": {"type": "array", "items": {"type": "string"}},
+        "base_sha_required": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

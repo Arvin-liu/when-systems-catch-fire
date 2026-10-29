@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-07-31T09:24:34.985755+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "name": "repository-path universal preflight (--check)",
+      "pass": true,
+      "exit": 0,
+      "note": "REPOSITORY_PATH_CLASSIFICATION_VALID"
+    },
+    {
+      "step": 2,
+      "name": "classification schema/semantic validation (--self-test)",
+      "pass": true,
+      "exit": 0,
+      "note": "paths=paths=3166"
+    },
+    {
+      "step": 3,
+      "name": "generator --check: adjudicate_core.py",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 3,
+      "name": "generator --check: migrate_legacy.py",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 3,
+      "name": "generator --check: build_function_asset_census.py",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 3,
+      "name": "generator --check: adjudicate_function_assets.py",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 3,
+      "name": "generator --check: adjudicate_nonfunction_claims.py",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 3,
+      "name": "generator --check: migrate_legacy.py",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 4,
+      "name": "function discovery/adjudication/closure",
+      "pass": true,
+      "exit": 0,
+      "note": "FUNCTION_ASSET_REGISTRY_CLOSURE_VALID"
+    },
+    {
+      "step": 5,
+      "name": "nonfunction discovery/adjudication/closure",
+      "pass": true,
+      "exit": 0,
+      "note": "NONFUNCTION_CLAIM_EVIDENCE_LINEAGE_CLOSURE_VALID"
+    },
+    {
+      "step": 6,
+      "name": "two-pass fixed-point regeneration",
+      "pass": true,
+      "exit": 0,
+      "note": "pass1=0 pass2=0"
+    },
+    {
+      "step": 7,
+      "name": "no generated-output feedback (anti-backflow)",
+      "pass": true,
+      "exit": 0,
+      "note": "enforced by preflight C5/C5b"
+    },
+    {
+      "step": 8,
+      "name": "semantic before/after safety review",
+      "pass": true,
+      "exit": 0,
+      "note": "SEMANTIC_SAFE_DRIFT_CLOSURE_ONLY"
+    },
+    {
+      "step": 9,
+      "name": "task-106 reconciliation unit tests",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 10,
+      "name": "task-106 reconciliation --check",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 11,
+      "name": "iteration sync",
+      "pass": true,
+      "exit": 0,
+      "note": "propagation reconciliation green"
+    },
+    {
+      "step": 12,
+      "name": "human front door / current-truth check",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 13,
+      "name": "system-map --check",
+      "pass": true,
+      "exit": 0,
+      "note": "OK"
+    },
+    {
+      "step": 14,
+      "name": "all workflows required by changed paths (YAML valid)",
+      "pass": true,
+      "exit": 0,
+      "note": ".github/workflows/repository-path-accounting-preflight.yml: valid; .github/workflows/foundation-validation.yml: valid"
+    },
+    {
+      "step": 15,
+      "name": "fresh full clone reproduction",
+      "pass": false,
+      "exit": null,
+      "note": "PENDING: performed by remote CI / manual clone"
+    },
+    {
+      "step": 16,
+      "name": "shallow clone behavior per generator history requirement",
+      "pass": false,
+      "exit": null,
+      "note": "PENDING: environment-specific; CI"
+    }
+  ],
+  "all_local_steps_pass": false
+}

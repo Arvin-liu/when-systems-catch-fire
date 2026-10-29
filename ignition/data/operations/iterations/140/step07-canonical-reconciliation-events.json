@@ -1,0 +1,56 @@
+{
+  "task_id": "IGNITION-20260826-140",
+  "step": "07",
+  "status": "PASS",
+  "event_ledger": {
+    "path": "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl",
+    "schema": "live-reconciliation-event-r1",
+    "event_count": 3,
+    "attempt_count": 3,
+    "head_hash": "02027b3ebeb6a946333bc7ff807594083cb638753a81c267aa1601a5884cb10b",
+    "hash_chain": "PASS"
+  },
+  "events": [
+    {
+      "attempt_id": "live-hermes-136-initial",
+      "reconciliation_status": "TERMINAL_UNRECOVERABLE_EFFECT_UNKNOWN",
+      "state_digest": "ba17fcc3df159df72eff8b22d146f5746748877291366b9fa6239446ca7c19bc",
+      "external_effect_knowledge": "UNKNOWN"
+    },
+    {
+      "attempt_id": "attempt-138-live-02",
+      "reconciliation_status": "TERMINAL_UNRECOVERABLE_OBSERVATION_INCOMPLETE",
+      "state_digest": "954a65e4a24786280502a11dd0adb57b8991e454fa71c94ddcbcc0c50c4022ad",
+      "external_effect_knowledge": "UNKNOWN"
+    },
+    {
+      "attempt_id": "attempt-139-live-02",
+      "reconciliation_status": "CLOSED_NO_LIVE_DISPATCH",
+      "state_digest": "d8125317e77f271e5b97ee6122abcdc86ca63416924b2d9230f7c6a3c6890a71",
+      "external_effect_knowledge": "UNKNOWN"
+    }
+  ],
+  "immutable_source_ledger": {
+    "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "record_count": 5,
+    "head_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+    "historical_records_rewritten": false
+  },
+  "current_projection_with_overlay": {
+    "schema": "live-current-projection-r2",
+    "digest": "9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2",
+    "total_attempts": 5,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION"
+  },
+  "tests": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_reconciliation_events ignition.tests.test_live_reconciliation ignition.tests.test_live_observation_plane ignition.tests.test_live_current_projection ignition.tests.test_task139_post_attempt_validation",
+    "tests_run": 17,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "claim_ceiling": "Repository-local append-only reconciliation events and ledger-bound Current overlay only; external effect remains UNKNOWN and no validated completion, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}

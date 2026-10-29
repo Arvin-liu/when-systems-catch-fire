@@ -1,0 +1,38 @@
+{
+  "schema_version": "ignition-146-step07-first-visit-readme-audit-r1",
+  "task_id": "IGNITION-20260828-146",
+  "step": "07",
+  "status": "PASS",
+  "first_visit_surface": {
+    "visible_h2_order": [
+      "1. 项目与价值",
+      "2. 如何使用",
+      "3. 结果与火种",
+      "4. 整体架构",
+      "5. 致谢"
+    ],
+    "project_and_value_h3_order": [
+      "项目现状",
+      "价值宪章"
+    ],
+    "visible_current_state_heading_count": 1,
+    "visible_value_charter_heading_count": 1,
+    "project_current_is_first_block": true,
+    "value_charter_is_second_block": true,
+    "machine_detail_container_count": 0,
+    "current_snapshot_block_count": 0,
+    "machine_state_markers_present": [],
+    "superseded_project_definition_present": false,
+    "architecture_link_semantics": "complete architecture SVG with source-link metadata; rendered GitHub clickability is not promised",
+    "rendering_dependency": "GitHub Markdown and native SVG only",
+    "js_pages_implementation_detected": false
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "task143_article_or_book_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task147_created_or_started": false
+  },
+  "claim_ceiling": "Repository-local first-visit README information architecture, canonical value-charter summary and machine-state exclusion audit only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

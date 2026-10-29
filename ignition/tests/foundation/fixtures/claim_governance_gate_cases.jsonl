@@ -1,0 +1,11 @@
+{"case_id":"WELL_DEFINED_FUNCTION","expected":{"definition_gate":"PASS"},"record":{"domain":"R","codomain":"R","expression":"x^2"}}
+{"case_id":"MULTIVALUED_EXPRESSION","expected":{"definition_gate":"FAIL"},"record":{"domain":"R","codomain":"R","expression":"sqrt(x) with both signs and no branch"}}
+{"case_id":"DIMENSION_CONFLICT","expected":{"dimension_and_type_gate":"FAIL"},"record":{"expression":"1 metre + 1 second"}}
+{"case_id":"COUNTEREXAMPLE_UNRECORDED","expected":{"counterexample_gate":"REQUIRES_HUMAN_REVIEW"},"record":{"universal_claim":true,"counterexample":null,"counterexample_search":null}}
+{"case_id":"CIRCULAR_OUTPUT","expected":{"circular_reasoning_gate":"FAIL"},"record":{"expression":"success(x)=1 exactly when x succeeds"}}
+{"case_id":"CLAIM_LAYER_COLLAPSE","expected":{"claim_layer_gate":"FAIL"},"record":{"mathematical_result":"score=1","external_claim":"nature therefore realizes the model","bridge":null}}
+{"case_id":"CLAIM_CEILING_EXCEEDED","expected":{"claim_ceiling_gate":"FAIL"},"record":{"claim_ceiling":"internal implementation","output_claim":"externally validated physical law"}}
+{"case_id":"UNIVERSAL_WITHOUT_PROOF","expected":{"universal_quantifier_gate":"REQUIRES_HUMAN_REVIEW"},"record":{"claim":"All systems necessarily converge.","proof_artifact":null}}
+{"case_id":"CROSS_DOMAIN_ANALOGY","expected":{"cross_domain_isomorphism_gate":"FAIL"},"record":{"claim":"Organizations are isomorphic to fluids.","maps":[],"preservation_proofs":[]}}
+{"case_id":"INTERNAL_TEST_OVERREACH","expected":{"internal_test_truth_gate":"FAIL"},"record":{"claim":"Unit tests pass, therefore the model describes nature."}}
+{"case_id":"DEPENDENCY_DOWNGRADE","expected":{"dependency_impact_gate":"FAIL"},"record":{"dependency":"D183","dependency_status":"DOWNGRADE","consumer_updated":false}}

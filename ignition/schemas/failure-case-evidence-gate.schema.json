@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://when-systems-catch-fire.example/schemas/failure-case-evidence-gate.schema.json",
+  "title": "Failure case evidence gate record",
+  "type": "object",
+  "required": ["schema_version", "case_id", "source_path", "case_label", "status_dimensions"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "source_path": {"type": "string", "pattern": "^case_failures/examples/.+\\.md$"},
+    "original_classification": {"type": "string"},
+    "original_status": {"type": "string"},
+    "case_label": {"type": "string", "enum": [
+      "NARRATIVE_HYPOTHESIS", "EVIDENCE_SUPPORTED_COUNTEREXAMPLE",
+      "REPRODUCTION_PENDING", "INVALID_OR_UNDERSPECIFIED_CASE",
+      "REPRODUCED_IMPLEMENTATION_DEFECT", "NOT_REPRODUCED",
+      "EXECUTABLE_TARGET_ABSENT", "EVIDENCE_INCONCLUSIVE"
+    ]},
+    "status_dimensions": {
+      "type": "object",
+      "required": ["external_evidence", "executable_target", "formalization", "reproduction"],
+      "properties": {
+        "external_evidence": {"type": "string"},
+        "executable_target": {"type": "string"},
+        "formalization": {"type": "string"},
+        "reproduction": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "evidence_gate": {"$ref": "#/$defs/evidence_gate"}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "digest": {
+      "type": "object", "required": ["sha256"],
+      "properties": {"sha256": {"$ref": "#/$defs/sha"}, "path": {"type": "string"}, "value": {}, "status": {"type": "string"}},
+      "additionalProperties": false
+    },
+    "evidence_gate": {
+      "type": "object",
+      "required": ["target", "exact_input", "actual_output", "trace", "run_id", "repeat_count", "oracle", "claim_ceiling", "first_failure", "formalization_frozen", "regression"],
+      "properties": {
+        "target": {
+          "type": "object", "required": ["kind", "path", "commit", "interface", "case_binding"],
+          "properties": {
+            "kind": {"const": "repository_executable"}, "path": {"type": "string", "minLength": 1},
+            "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}, "interface": {"type": "string", "minLength": 1}, "case_binding": {"type": "string", "minLength": 1}
+          }, "additionalProperties": false
+        },
+        "exact_input": {"$ref": "#/$defs/digest"},
+        "actual_output": {"allOf": [{"$ref": "#/$defs/digest"}, {"required": ["status"]}]},
+        "trace": {"$ref": "#/$defs/digest"},
+        "run_id": {"type": "string", "minLength": 1}, "repeat_count": {"type": "integer", "minimum": 2},
+        "oracle": {"type": "object", "required": ["kind", "basis"], "properties": {"kind": {"type": "string", "minLength": 1}, "basis": {"type": "string", "minLength": 1}}, "additionalProperties": false},
+        "claim_ceiling": {"type": "string", "minLength": 1}, "formalization_frozen": {"const": true},
+        "first_failure": {
+          "type": "object", "required": ["preserved", "path", "sha256", "observed_at"],
+          "properties": {"preserved": {"const": true}, "path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/sha"}, "observed_at": {"type": "string", "minLength": 1}}, "additionalProperties": false
+        },
+        "regression": {
+          "type": "object", "required": ["status", "test", "command"],
+          "properties": {"status": {"const": "REGRESSION_GUARD_ESTABLISHED"}, "test": {"type": "string", "minLength": 1}, "command": {"type": "string", "minLength": 1}}, "additionalProperties": false
+        },
+        "external_evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }, "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

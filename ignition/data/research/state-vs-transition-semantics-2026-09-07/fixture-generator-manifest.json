@@ -1,0 +1,36 @@
+{
+  "families": {
+    "F1": "endpoint-valid/transition-invalid",
+    "F10": "multi-hop path",
+    "F11": "rollback/reversal/cycle",
+    "F12": "ordering/commutativity/concurrency",
+    "F2": "legal migration versus illegal jump",
+    "F3": "lifecycle epoch",
+    "F4": "approval and authority",
+    "F5": "evidence and claim promotion/demotion",
+    "F6": "Base/Delta/scope admission",
+    "F7": "release/provider/admission",
+    "F8": "projection/public surface",
+    "F9": "consequence/reconciliation/ownership"
+  },
+  "generator": "task161_state_vs_transition.py",
+  "generator_version": "1.0.0",
+  "historical_sources_not_reused_as_fixtures": true,
+  "instance_count": 288,
+  "instances_per_pair": 2,
+  "pair_count": 144,
+  "seed_rule": "family ordinal plus variant ordinal; no random source",
+  "strong_negative_controls": [
+    "PURE_STATE",
+    "EVIDENCE_QUALITY",
+    "AUTHORITY_ABSENCE_NOT_REQUIRED",
+    "OBJECT_IDENTITY_UNCONSTRAINED",
+    "EVENTUAL_PROJECTION",
+    "ORDINARY_SCHEMA_MIGRATION",
+    "PUBLICATION_ONLY",
+    "ENDPOINT_INVALID",
+    "NO_OP_OR_IDENTITY"
+  ],
+  "task_id": "IGNITION-20260907-161",
+  "variants_per_family": 12
+}

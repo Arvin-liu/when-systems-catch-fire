@@ -1,0 +1,7 @@
+{
+  "fixture_id": "ESI-AUTH-NEG-002",
+  "soft_input": {"soft_context_exposure": "ORIGINAL_STRUCTURE", "behavioral_observation": "calibrated"},
+  "requested_effect": "TRUTH_STATUS",
+  "target": "claim_registry",
+  "expected": "REJECT_SOFT_AUTHORITY_ESCALATION"
+}

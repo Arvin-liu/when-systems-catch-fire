@@ -1,0 +1,30 @@
+{
+  "schema_version": "current-task-lineage-status-fixtures-r1",
+  "task_id": "IGNITION-20260821-129",
+  "fixtures": [
+    {
+      "id": "stale-deferred-current-surface",
+      "kind": "negative",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_STALE_DEFERRED"
+    },
+    {
+      "id": "old-task-marked-completed",
+      "kind": "negative",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_OLD_TASK_COMPLETED"
+    },
+    {
+      "id": "successor-lineage-missing",
+      "kind": "negative",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_SUCCESSOR_LINEAGE_MISSING"
+    },
+    {
+      "id": "historical-record-misclassified-current",
+      "kind": "negative",
+      "expected_status": "FAIL",
+      "expected_code": "TASK_LINEAGE_HISTORICAL_MISCLASSIFIED_CURRENT"
+    }
+  ]
+}

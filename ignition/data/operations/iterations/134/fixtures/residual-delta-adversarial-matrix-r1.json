@@ -1,0 +1,25 @@
+{
+  "schema_version": "ignition-134-residual-delta-adversarial-matrix-r1",
+  "task_id": "IGNITION-20260822-134",
+  "cases": [
+    {"case_id": "inherited-unchanged", "mutation": "none", "expected": "PASS", "expected_errors": []},
+    {"case_id": "count-growth", "mutation": "add_object", "expected": "FAIL", "expected_errors": ["RESIDUAL_GROWTH_UNCLASSIFIED"]},
+    {"case_id": "same-count-object-replacement", "mutation": "replace_object", "expected": "FAIL", "expected_errors": ["RESIDUAL_GROWTH_UNCLASSIFIED"]},
+    {"case_id": "failure-dimension-growth", "mutation": "add_dimension", "expected": "FAIL", "expected_errors": ["RESIDUAL_GROWTH_UNCLASSIFIED"]},
+    {"case_id": "baseline-count-object-set-mismatch", "mutation": "forge_baseline_count", "expected": "FAIL", "expected_errors": ["BASELINE_COUNT_OBJECT_SET_MISMATCH"]},
+    {"case_id": "current-count-object-set-mismatch", "mutation": "forge_current_count", "expected": "FAIL", "expected_errors": ["CURRENT_COUNT_OBJECT_SET_MISMATCH"]},
+    {"case_id": "forged-baseline-fingerprint", "mutation": "forge_baseline_fingerprint", "expected": "FAIL", "expected_errors": ["BASELINE_FINGERPRINT_FORGED"]},
+    {"case_id": "forged-current-fingerprint", "mutation": "forge_current_fingerprint", "expected": "FAIL", "expected_errors": ["CURRENT_FINGERPRINT_FORGED"]},
+    {"case_id": "new-residual-unclassified", "mutation": "new_residual_unclassified", "expected": "FAIL", "expected_errors": ["RESIDUAL_GROWTH_UNCLASSIFIED", "NEW_RESIDUAL_REQUIRES_CLASSIFICATION"]},
+    {"case_id": "new-regression-declared", "mutation": "new_regression_declared", "expected": "FAIL", "expected_errors": ["RESIDUAL_GROWTH_UNCLASSIFIED", "NEW_REGRESSION_RELEASE_BLOCKING"]},
+    {"case_id": "new-regression-wrong-origin", "mutation": "new_regression_wrong_origin", "expected": "FAIL", "expected_errors": ["RESIDUAL_GROWTH_UNCLASSIFIED", "NEW_RESIDUAL_REQUIRES_CLASSIFICATION"]},
+    {"case_id": "source-command-without-migration", "mutation": "change_source_command", "expected": "FAIL", "expected_errors": ["SOURCE_COMMAND_CHANGED_WITHOUT_MIGRATION"]},
+    {"case_id": "source-command-valid-migration", "mutation": "valid_migration", "expected": "PASS", "expected_errors": []},
+    {"case_id": "source-command-invalid-migration", "mutation": "invalid_migration", "expected": "FAIL", "expected_errors": ["MIGRATION_SOURCE_COMMAND_MISMATCH"]},
+    {"case_id": "resolved-current", "mutation": "resolve", "expected": "PASS", "expected_errors": []},
+    {"case_id": "resolved-status-with-live-object", "mutation": "resolved_live", "expected": "FAIL", "expected_errors": ["RESOLVED_STATUS_WITH_LIVE_OBJECTS"]},
+    {"case_id": "shrink-requires-partial-status", "mutation": "shrink_without_status", "expected": "FAIL", "expected_errors": ["RESIDUAL_SHRINK_STATUS_UNCLASSIFIED"]},
+    {"case_id": "duplicate-residual-id", "mutation": "duplicate_id", "expected": "FAIL", "expected_errors": ["DUPLICATE_RESIDUAL_ID"]}
+  ],
+  "claim_ceiling": "Repository-local residual delta adversarial evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
