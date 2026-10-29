@@ -894,6 +894,11 @@
   - 可搜索名称：IMPLICIT-DCE6DA17F058B7B8 / ## 治理文档索引 / Governance Index / IMPLICIT-DCE6DA17F058B7B8
   - 来源：`docs/governance/README.md`
   - 依赖：—；被引用：—
+- [### 1.1 Registry declaration must equal runtime behavior → ADR-R2-01](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B7471C9448B0206A / ### 1.1 Registry declaration must equal runtime behavior → ADR-R2-01 / IMPLICIT-B7471C9448B0206A
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [### Kernel — judgment and governance core](../../../docs/architecture/adaptive-relational-runtime.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FADC010087FAF348 / ### Kernel — judgment and governance core / IMPLICIT-FADC010087FAF348
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a3701a0bf254e7d3 / \[证据制度库\]\(evidence_regime_library.md\)
   - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)](../../../SUMMARY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-82b2e679e1ae4823 / \[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)
-  - 来源：`SUMMARY.md`
   - 依赖：—；被引用：—

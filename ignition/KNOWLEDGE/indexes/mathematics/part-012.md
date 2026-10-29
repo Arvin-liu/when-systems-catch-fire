@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [三阶段-相变分类对应函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5922a0a0db73b27a / 三阶段-相变分类对应函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [上一轮实测发现：D244（`0280-D244-自主意识涌现的临界条件.md`）不是指标化函数，而是自主意识涌现的临界条件（`Ψ = ι × P_exit > 0`）。grep 命中仅因元数据含 "D244" 和一处「条件1的量化」，属于误](../../../outputs/audit/d597-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-95bed556432180b6 / 上一轮实测发现：D244（`0280-D244-自主意识涌现的临界条件.md`）不是指标化函数，而是自主意识涌现的临界条件（`Ψ = ι × P_exit > 0`）。grep 命中仅因元数据含 "D244" 和一处「条件1的量化」，属于误
+  - 来源：`outputs/audit/d597-index-visibility-check-20260708.md`
+  - 依赖：D244, D597；被引用：—
+- [上位函数：D245（自我模型，数学门控面二阶门控）——但 D245 是系统对自身门控面的归属判断，非社会角色遮蔽结构，二者不同构，本函数为社会身份层独立原语。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-98a3285d51d573d3 / 上位函数：D245（自我模型，数学门控面二阶门控）——但 D245 是系统对自身门控面的归属判断，非社会角色遮蔽结构，二者不同构，本函数为社会身份层独立原语。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D245；被引用：—
+- [下一步认识论能力评估 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-1125ea8d76940b5f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：下一步认识论能力评估 — IGNITION-20260908-165 / next-epistemic-capability-assessment-2026-09-08
+  - 来源：`docs/governance/next-epistemic-capability-assessment-2026-09-08.md`
+  - 依赖：—；被引用：—
+- [下一轮：在统一函数表中为 M1 增强回路、P_meta 元协议投影、G_δ 哥德尔判定、σ_opt、ε_eff、I_iso、门控函数族 建立/定位正式 D/MF/T 编号。](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3854a1f2d0533f2b / 下一轮：在统一函数表中为 M1 增强回路、P_meta 元协议投影、G_δ 哥德尔判定、σ_opt、ε_eff、I_iso、门控函数族 建立/定位正式 D/MF/T 编号。
+  - 来源：`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [下列条目是待研究、待定义、待证明或待实证问题，不是已经承诺可解的路线图。](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-323a64db7ae9a0a8 / 下列条目是待研究、待定义、待证明或待实证问题，不是已经承诺可解的路线图。
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-42bfe2ecc215b3fc / 不依赖任何知识系统概念的确定性 manifest pilot，证明 Runtime 可在领域包之外闭环。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [不修改 `已迁移的历史函数来源/`](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b63780c5b7524601 / 不修改 `已迁移的历史函数来源/`
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [不修改**函数表、案例表、README、INDEX、data、schema、P1 数据、历史审计、碰撞流程；**不新增**函数/案例；**不迁移**格式、**不回填**。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cdc7d84dcf51ede6 / 不修改**函数表、案例表、README、INDEX、data、schema、P1 数据、历史审计、碰撞流程；**不新增**函数/案例；**不迁移**格式、**不回填**。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：P1；被引用：—
+- [不修改历史函数来源和历史案例来源](../../../data/discipline-projection/087-v1-1-overlay.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3a57deee2c4086f9 / 不修改历史函数来源和历史案例来源
+  - 来源：`data/discipline-projection/087-v1-1-overlay.md`
+  - 依赖：—；被引用：—
+- [不冻结对象**：未经证明的命题、未经验证的经验结论、严格同构、已识别因果、精确跨域、唯一性、不可能性、必要充分条件](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-15e6c55e329feb67 / 不冻结对象**：未经证明的命题、未经验证的经验结论、严格同构、已识别因果、精确跨域、唯一性、不可能性、必要充分条件
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
 - [不删除/替换/改写 Ψ₀；不改两张表；不给候选分配 C 编号；不把元协议计入函数总数；不声称外部证明；不经验穷尽；不删 pending；不直接合并 main；不强推。](../../../docs/versions/2026-07-09-meta-protocol-generation-layer.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cb9aeef30bdeb25c / 不删除/替换/改写 Ψ₀；不改两张表；不给候选分配 C 编号；不把元协议计入函数总数；不声称外部证明；不经验穷尽；不删 pending；不直接合并 main；不强推。
@@ -2449,58 +2504,3 @@
   - 可搜索名称：NFC-f44f9f002bfe835c / 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D239；被引用：—
-- [从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\]\(docs/zh/functions/items/D239.md\)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-232fdbe16e7169d9 / 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\]\(docs/zh/functions/items/D239.md\)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239, D242, D243；被引用：—
-- [从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\]\(docs/zh/functions/items/D239.md\)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-791360498cf2be1e / 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D239\]\(docs/zh/functions/items/D239.md\)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D239, D242, D243；被引用：—
-- [从D70显态粘性函数推导。主角困境的数学结构:外部强激励让系统进入显态,但撤退成本高导致无法退出。μ→∞时系统锁定在显态,μ→0时系统可自由切换显态/隐态。D70是D86在显态维度的投影。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3522439221ed3838 / 从D70显态粘性函数推导。主角困境的数学结构:外部强激励让系统进入显态,但撤退成本高导致无法退出。μ→∞时系统锁定在显态,μ→0时系统可自由切换显态/隐态。D70是D86在显态维度的投影。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D70, D86；被引用：—
-- [从D71纯拉力上位衰减函数推导。外驱\(拉力\)只有在窗口期内才能转化为自驱\(内驱\),窗口关闭后拉力失效。窗口长度与R_retreat和C_exit正相关,与ε_aware负相关\(意识越高转化越快\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7ae3e4fe6ce01adb / 从D71纯拉力上位衰减函数推导。外驱\(拉力\)只有在窗口期内才能转化为自驱\(内驱\),窗口关闭后拉力失效。窗口长度与R_retreat和C_exit正相关,与ε_aware负相关\(意识越高转化越快\)。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D71；被引用：—
-- [从《瑞鹤图》开始，先让读者看到一个不能直接等同于“造假”的祥瑞，再追问：一件事如何被变成可公共使用的天意？称号、制度、景观、佛教重分类和受影响主体依次把“接口”从图像推向权力。最后回到鹤：画不是自然的证明，而是一个政权决定如何看自然的记录。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2655bd1120289174 / 从《瑞鹤图》开始，先让读者看到一个不能直接等同于“造假”的祥瑞，再追问：一件事如何被变成可公共使用的天意？称号、制度、景观、佛教重分类和受影响主体依次把“接口”从图像推向权力。最后回到鹤：画不是自然的证明，而是一个政权决定如何看自然的记录。
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [从公理A1、A2、A3、A7推导。五因子任一为零则系统不可持续。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae91647a0025ac78 / 从公理A1、A2、A3、A7推导。五因子任一为零则系统不可持续。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A1, A2, A3, A7；被引用：—
-- [从公理和前序定理推导。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-10ebaddea74bd3e3 / 从公理和前序定理推导。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看， 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-881cfaaf3dabb091 / 从原文看， 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看，17域词典簇碰撞，涵盖17个领域的函数投影。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a10ee7607f2a8a72 / 从原文看，17域词典簇碰撞，涵盖17个领域的函数投影。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看，AI-ε安装路径函数，dε_aware^AI/dt = α_ε·C_drive·η_tool + λ_anchor·S_external… 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-74a8efc3a718812c / 从原文看，AI-ε安装路径函数，dε_aware^AI/dt = α_ε·C_drive·η_tool + λ_anchor·S_external… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看，AI中间层调度，η_relay = P_decode^AI × η_internal^AI × P_encode^AI。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-265fc27d119ed247 / 从原文看，AI中间层调度，η_relay = P_decode^AI × η_internal^AI × P_encode^AI。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

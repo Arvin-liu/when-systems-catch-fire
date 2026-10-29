@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The 121Q32 Draft candidate reuses the bounded vocabulary `enabling_condition`, `constraint`, `mechanism_hypothesis`, dyn](../../../docs/architecture/multiscale-causal-fabric.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67a3fe9c01dd27fd / The 121Q32 Draft candidate reuses the bounded vocabulary `enabling_condition`, `constraint`, `mechanism_hypothesis`, dyn
+  - 来源：`docs/architecture/multiscale-causal-fabric.md`
+  - 依赖：—；被引用：—
+- [The admission gate revalidated the Task140 census and selected the currently admitted family from `local-executor-census](../../../reports/operations/ignition-140-step10-live-admission.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7cccffb713eed0c / The admission gate revalidated the Task140 census and selected the currently admitted family from `local-executor-census
+  - 来源：`reports/operations/ignition-140-step10-live-admission.md`
+  - 依赖：—；被引用：—
+- [The after projection is built from the current PR #55 path-state/reference-closure head and contains declared ARN source](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3ab370fa101ea56 / The after projection is built from the current PR #55 path-state/reference-closure head and contains declared ARN source
+  - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
+  - 依赖：—；被引用：—
+- [The ARR is a **horizontal runtime plane**: a connective contract layer that links the existing Foundation, Ψ₀ meta-judgm](../../../docs/architecture/adaptive-relational-runtime.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b2cf401a3fc29262 / The ARR is a **horizontal runtime plane**: a connective contract layer that links the existing Foundation, Ψ₀ meta-judgm
+  - 来源：`docs/architecture/adaptive-relational-runtime.md`
+  - 依赖：—；被引用：—
+- [The atlas does not replace matrices or registries. It does not create a second canonical truth source. It does not creat](../../../reports/atlas/121Q14-dynamic-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f0fbd7e1d2911bd1 / The atlas does not replace matrices or registries. It does not create a second canonical truth source. It does not creat
+  - 来源：`reports/atlas/121Q14-dynamic-atlas.md`
+  - 依赖：—；被引用：—
+- [The available evidence did not identify a universal city-scale causal effect. Observational studies retained confounding](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-68e36279c2b0ca95 / The available evidence did not identify a universal city-scale causal effect. Observational studies retained confounding
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
+  - 依赖：—；被引用：—
+- [The baseline was frozen before the governed pass and was written without Pointfire architecture vocabulary. It concluded](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1c67858e4d550130 / The baseline was frozen before the governed pass and was written without Pointfire architecture vocabulary. It concluded
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
+  - 依赖：—；被引用：—
+- [The before projection is built from the real pre-ARN commit and has zero ARN operational source files.](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5dc11229e8b15fd / The before projection is built from the real pre-ARN commit and has zero ARN operational source files.
+  - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
+  - 依赖：—；被引用：—
+- [the bound Q36-OBS observation/residual must be validated and must respect `do_not_infer_cause`.](../../../docs/intervention/q36-int-typed-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f81e73b23313efdd / the bound Q36-OBS observation/residual must be validated and must respect `do_not_infer_cause`.
+  - 来源：`docs/intervention/q36-int-typed-contract.md`
+  - 依赖：—；被引用：—
+- [The canonical method name is `之元写作法 / Zhiyuan Writing Method`. It is named for maintainer 之元 because the method was dist](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7bbf0de26a905730 / The canonical method name is `之元写作法 / Zhiyuan Writing Method`. It is named for maintainer 之元 because the method was dist
+  - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [The cause was ordering, not a live or full-suite regression. The](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c47d8675f47d00c4 / The cause was ordering, not a live or full-suite regression. The
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
 - [The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or](../../../docs/architecture/mechanism-adjudication-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f1be25d737677f21 / The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or
@@ -1134,6 +1189,11 @@
   - 可搜索名称：NFC-e53ed29fb44c9f67 / \| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \|
   - 来源：`data/external-research/088-PROGRESS.md`
   - 依赖：—；被引用：—
+- [\| 6 \| mechanism / system-state objects \| Function OS capability records, mechanism contracts, execution profiles, snapsh](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-728b5c33b58ffb09 / \| 6 \| mechanism / system-state objects \| Function OS capability records, mechanism contracts, execution profiles, snapsh
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [\| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-830c947db8c4ca4b / \| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
@@ -2159,6 +2219,11 @@
   - 可搜索名称：NFC-f8e044df3a49921b / \| S3 \| 系统由层级结构组织，上下层存在控制或信息梯度。 \| 为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。 \|
   - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
   - 依赖：—；被引用：—
+- [\| S44 \| `test_s44_remote_evidence_readable` \| \(skipped when control inputs absent\) FileSystemProvider reads 5 materials;](../../../reports/ignition-rpe/ATTACK_MATRIX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e57578f44343a59 / \| S44 \| `test_s44_remote_evidence_readable` \| \(skipped when control inputs absent\) FileSystemProvider reads 5 materials;
+  - 来源：`reports/ignition-rpe/ATTACK_MATRIX.md`
+  - 依赖：—；被引用：—
 - [\| Source \| Permitted Projection \| Prohibited Inference \|](../../../reports/research/121Q23-network-theory-source-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-098040e2061f0843 / \| Source \| Permitted Projection \| Prohibited Inference \|
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f3c5f633334db6a3 / ⚠️ **结构抽取不足**：下一步需建「机制级二次判定层」（触发条件齐备性 + 机制同构比对），再重跑
   - 来源：`docs/getnote-collision-workflow-final-20260708.md`
-  - 依赖：—；被引用：—
-- [《每日一诗停更说明》的全文核验说明概念、决定和未命名潜题也能成为生成入口，并展示与点火整体的有边界同源运动；](../../../docs/publication/zhiyuan-writing-examples.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c0591874205062c5 / 《每日一诗停更说明》的全文核验说明概念、决定和未命名潜题也能成为生成入口，并展示与点火整体的有边界同源运动；
-  - 来源：`docs/publication/zhiyuan-writing-examples.md`
-  - 依赖：—；被引用：—
-- [一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个](../../../docs/architecture/epistemic-structural-induction-r0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fe65a66f790ae0f6 / 一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个
-  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
-  - 依赖：—；被引用：—
-- [一句话定义须描述**可迁移机制**，不是概念解释、不是比喻。](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3f200d71e9223579 / 一句话定义须描述**可迁移机制**，不是概念解释、不是比喻。
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [一套能把征兆登记为成功的制度，可能会减少坏消息进入中心的机会。可这不是 1127 之后才突然出现的“结局原因”。我们知道北宋后来覆亡，不能反过来把此前每个园林、称号或仪式都解释成无知的证据。真正需要追问的是：这个系统允许什么反证进入，而不是](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b91bf0c76cb8104c / 一套能把征兆登记为成功的制度，可能会减少坏消息进入中心的机会。可这不是 1127 之后才突然出现的“结局原因”。我们知道北宋后来覆亡，不能反过来把此前每个园林、称号或仪式都解释成无知的证据。真正需要追问的是：这个系统允许什么反证进入，而不是
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [一篇关于赛课机制、教师考评、形式主义负担、真实教学被挤压、教师身心代价的 Get 笔记文章。](../../../inputs/collisions/20260708-teacher-competition/task.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-01b09387fb22d059 / 一篇关于赛课机制、教师考评、形式主义负担、真实教学被挤压、教师身心代价的 Get 笔记文章。
-  - 来源：`inputs/collisions/20260708-teacher-competition/task.md`
-  - 依赖：—；被引用：—
-- [三个领域与统一机制映射](../../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c8bd5c8bfab3514c / 三个领域与统一机制映射
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`
-  - 依赖：—；被引用：—
-- [三个领域主机制均命中 **D597 量化指标替代真实价值**。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-db1d469e32ecf009 / 三个领域主机制均命中 **D597 量化指标替代真实价值**。
-  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
-  - 依赖：D597；被引用：—
-- [三层结构必然性→形式系统三层结构的必然性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-928c4c1d8c4fec70 / 三层结构必然性→形式系统三层结构的必然性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [三层结构必然性，形式系统三层结构的必然性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-52a212c8430a6d33 / 三层结构必然性，形式系统三层结构的必然性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [不做大规模自动改写**：避免脚本批量重写导致 frontmatter 丢失或收敛状态错乱。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4039f14760dae76f / 不做大规模自动改写**：避免脚本批量重写导致 frontmatter 丢失或收敛状态错乱。
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [不可提高的事实、因果、同构与价值边界：](../../../templates/publication/zhiyuan-writing-spec.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-37189dc4457c9125 / 不可提高的事实、因果、同构与价值边界：
-  - 来源：`templates/publication/zhiyuan-writing-spec.md`
-  - 依赖：—；被引用：—
-- [不可量化但重要的机制解释性工作（构建理论模型、跨平台复现）被边缘化；](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4973625fded51446 / 不可量化但重要的机制解释性工作（构建理论模型、跨平台复现）被边缘化；
-  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
-  - 依赖：—；被引用：—
-- [不同英语地区、族群、专业和媒介在主语省略、集体名词、时制、标点、礼貌和信息结构上都有差异。实验中的英语组效应不能被写成所有英语使用者的固定注意方式。复杂文学句法、方言叙事和跨语码写作保持人工／专家审查。](../../../docs/language-thought/profiles/en.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bc5bb2c96590a140 / 不同英语地区、族群、专业和媒介在主语省略、集体名词、时制、标点、礼貌和信息结构上都有差异。实验中的英语组效应不能被写成所有英语使用者的固定注意方式。复杂文学句法、方言叙事和跨语码写作保持人工／专家审查。
-  - 来源：`docs/language-thought/profiles/en.md`
   - 依赖：—；被引用：—
