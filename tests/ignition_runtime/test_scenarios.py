@@ -753,6 +753,13 @@ def test_s43_diff_scope():
         "ignition/data/foundation/nonfunction-claims/",
         "ignition/data/governance/knowledge-experience/",
         "ignition/data/operations/component-execution-profiles.json",
+        # Source policy and focused probes for the authorized component-profile,
+        # import-isolation, source-history, and iteration-sync blocker repairs.
+        "ignition/data/operations/component-execution-profile-policies.json",
+        "ignition/tests/test_component_validation_routing.py",
+        "ignition/tests/test_iteration_sync.py",
+        "ignition/tests/test_knowledge_experience.py",
+        "ignition/tools/validate_iteration_sync.py",
         "ignition/data/operations/component-validation-map-r1.json",
         "ignition/data/operations/project-components.json",
         "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",

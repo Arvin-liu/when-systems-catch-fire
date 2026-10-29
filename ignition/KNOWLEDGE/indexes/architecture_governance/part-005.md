@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def main\(argv: list\[str\] \| None = None\) -> int:](../../../reos_vnext/cli.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9EB253743939290D / def main\(argv: list\[str\] \| None = None\) -> int: / IMPLICIT-9EB253743939290D
+  - 来源：`reos_vnext/cli.py`
+  - 依赖：—；被引用：—
+- [def main\(argv=None\):](../../../evidence-program/tools/validate_evidence_program.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-324B6EEE0F3E7AEF / def main\(argv=None\): / IMPLICIT-324B6EEE0F3E7AEF
+  - 来源：`evidence-program/tools/validate_evidence_program.py`
+  - 依赖：—；被引用：—
+- [def make_read_only\(self\) -> None:](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4035666B1F16BC1F / def make_read_only\(self\) -> None: / IMPLICIT-4035666B1F16BC1F
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- [def make_spec\(fid, name, inputs, outputs, preconditions, postconditions, effects\):](../../../function-os-candidate/v0.2/benchmark/generate_corpus.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6521F15423E5E52A / def make_spec\(fid, name, inputs, outputs, preconditions, postconditions, effects\): / IMPLICIT-6521F15423E5E52A
+  - 来源：`function-os-candidate/v0.2/benchmark/generate_corpus.py`
+  - 依赖：—；被引用：—
+- [def map_capabilities\(raw_tokens: Iterable\[str\], mapping: Mapping\[str, str\] \| None = None\) -> tuple\[str, ...\]:](../../../agent_federation/sdk.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9C9450582A65D20E / def map_capabilities\(raw_tokens: Iterable\[str\], mapping: Mapping\[str, str\] \| None = None\) -> tuple\[str, ...\]: / IMPLICIT-9C9450582A65D20E
+  - 来源：`agent_federation/sdk.py`
+  - 依赖：—；被引用：—
+- [def mark_in_flight\(self\) -> LiveTransitionRecord:](../../../agent_federation/live_bridge.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-EB8E4C58B7701508 / def mark_in_flight\(self\) -> LiveTransitionRecord: / IMPLICIT-EB8E4C58B7701508
+  - 来源：`agent_federation/live_bridge.py`
+  - 依赖：—；被引用：—
+- [def mark_timeout\(self, *, effect_known_no_effect: bool\) -> LiveTransitionRecord:](../../../agent_federation/live_bridge.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AE898056B6D4271A / def mark_timeout\(self, *, effect_known_no_effect: bool\) -> LiveTransitionRecord: / IMPLICIT-AE898056B6D4271A
+  - 来源：`agent_federation/live_bridge.py`
+  - 依赖：—；被引用：—
+- [def match_version\(version: str, pattern: str\) -> bool:](../../../agent_federation/sdk.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D368717379D35D7C / def match_version\(version: str, pattern: str\) -> bool: / IMPLICIT-D368717379D35D7C
+  - 来源：`agent_federation/sdk.py`
+  - 依赖：—；被引用：—
+- [def message_file\(self\) -> bool:](../../../agent_federation/adapters/openclaw.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C1D39818E5F87D2B / def message_file\(self\) -> bool: / IMPLICIT-C1D39818E5F87D2B
+  - 来源：`agent_federation/adapters/openclaw.py`
+  - 依赖：—；被引用：—
+- [def mk\(fid, name, post\):](../../../function-os-candidate/v0.2/benchmark/run.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B4FB6BDCD31941D1 / def mk\(fid, name, post\): / IMPLICIT-B4FB6BDCD31941D1
+  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
+  - 依赖：—；被引用：—
+- [def new_case\(](../../../reos_vnext/kernel.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-4FA3EFACEAE57C03 / def new_case\( / IMPLICIT-4FA3EFACEAE57C03
+  - 来源：`reos_vnext/kernel.py`
+  - 依赖：—；被引用：—
 - [def new_lineage_attempt\(self, attempt_id: str\) -> str:](../../../agent_federation/live_bridge.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-CAAE35058644FD7D / def new_lineage_attempt\(self, attempt_id: str\) -> str: / IMPLICIT-CAAE35058644FD7D
@@ -2244,6 +2299,11 @@
   - 可搜索名称：NFC-5d1e87b1426437ee / derivation_refs = artifact.get\("derivation_refs"\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—
+- [derivatives ≠ false consensus; event time ≠ note/download time; speaker claim ≠ verified](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9a76804e15fc3043 / derivatives ≠ false consensus; event time ≠ note/download time; speaker claim ≠ verified
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [Derived build evidence:](../../../templates/operations/execution-result-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-92e05267c80588df / Derived build evidence:
@@ -2273,6 +2333,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-7566298eb48d59d4 / desired_evidence_type: str
   - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
+- [Detailed private inputs/outputs belong in `Arvin-liu/1111` \(evidence branch](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d5606a72698006b3 / Detailed private inputs/outputs belong in `Arvin-liu/1111` \(evidence branch
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
   - 依赖：—；被引用：—
 - [Deterministic metrics only: absolute/squared error, interval coverage/width, Brier/log score \(legal probability ranges\),](../../../docs/observation/q36-obs-typed-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-10c4393c8f5c21b9 / does not establish validated live completion, production readiness, Owner
   - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
-  - 依赖：—；被引用：—
-- [Does the run independently support Task161 or a prior candidate?** No. Historical evidence is `HISTORICAL_UNDERDETERMINE](../../../reports/governance/task-IGNITION-20260907-162.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b78e95fc7239ed7 / Does the run independently support Task161 or a prior candidate?** No. Historical evidence is `HISTORICAL_UNDERDETERMINE
-  - 来源：`reports/governance/task-IGNITION-20260907-162.md`
-  - 依赖：—；被引用：—
-- [DOI 在 Crossref 数据库中存在](../../../reports/external-research/104-source-quality-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9b2e4b925d1309d0 / DOI 在 Crossref 数据库中存在
-  - 来源：`reports/external-research/104-source-quality-audit.md`
-  - 依赖：—；被引用：—
-- [DOIs that cannot be parsed are reported as `PARSE_FAILED`, never silently dropped.](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-641f07e26f951b6e / DOIs that cannot be parsed are reported as `PARSE_FAILED`, never silently dropped.
-  - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
-  - 依赖：—；被引用：—
-- [Downstream metrics and candidate selection provide a validation pattern while also showing the need for equivalence marg](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b18ca6b4ba4f0ed8 / Downstream metrics and candidate selection provide a validation pattern while also showing the need for equivalence marg
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [downstream plan effects: `SEARCH`, `PREDICT`, `ANALOGY_AUDIT`, `INTERVENE`, `ESCALATE`, `DEFER`, or `CLAIM_CEILING_CHANG](../../../docs/failure/q39-interfaces.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8a1f9b751c0f05f9 / downstream plan effects: `SEARCH`, `PREDICT`, `ANALOGY_AUDIT`, `INTERVENE`, `ESCALATE`, `DEFER`, or `CLAIM_CEILING_CHANG
-  - 来源：`docs/failure/q39-interfaces.md`
-  - 依赖：—；被引用：—
-- [Draft Pages evidence comes from the exact-head build artifact, not an unmerged production deployment.](../../../templates/operations/independent-review-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d06634096a9688e3 / Draft Pages evidence comes from the exact-head build artifact, not an unmerged production deployment.
-  - 来源：`templates/operations/independent-review-template.md`
-  - 依赖：—；被引用：—
-- [draft-07 sufficient for our schemas\) and enforces the cross-file integrity](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-00d0de736bf02de9 / draft-07 sufficient for our schemas\) and enforces the cross-file integrity
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [DSL/model/candidate/sampling/validation lineage is visibly necessary, yet the paper releases no governed hashes, manifes](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f4fd489fdd0222f0 / DSL/model/candidate/sampling/validation lineage is visibly necessary, yet the paper releases no governed hashes, manifes
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Durability projection hygiene: `PASS`; no Foundation/Knowledge, human-machine,](../../../reports/operations/ignition-138-step13-targeted-regression.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be5eb48ec02c5aae / Durability projection hygiene: `PASS`; no Foundation/Knowledge, human-machine,
-  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
-  - 依赖：—；被引用：—
-- [D层第5批收敛。D361-D430 归入跨域同构、自由能/序参量、双临界、有限尺寸、宇宙约束等家族；D431-D450 判定为完全缺失。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7d49b6b624a4e1a3 / D层第5批收敛。D361-D430 归入跨域同构、自由能/序参量、双临界、有限尺寸、宇宙约束等家族；D431-D450 判定为完全缺失。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：—
-- [E. 外部验证层（需社会科学/教育学/心理学/组织治理/AI 研究支撑，命令要求标 pending）](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-47c12a69748b3768 / E. 外部验证层（需社会科学/教育学/心理学/组织治理/AI 研究支撑，命令要求标 pending）
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
-  - 依赖：—；被引用：—
-- [E1 线性演化协议：沿单一轨迹线性推进，状态可预测。](../../../docs/protocols/protocol-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a81684d276cf1381 / E1 线性演化协议：沿单一轨迹线性推进，状态可预测。
-  - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [E1. 「听话—低成本控制」是否普遍存在于权威关系（家庭/学校/组织）。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8c95a210d9994c25 / E1. 「听话—低成本控制」是否普遍存在于权威关系（家庭/学校/组织）。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 宇宙约束边界函数 is adjudicated as RELATION: ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}. This is a model-i](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D515 / Within the source-defined scope, 宇宙约束边界函数 is adjudicated as RELATION: ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}. This is a model-i
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 宇宙膨胀-Φ衰减同构定理 is adjudicated as RELATION: 宇宙膨胀的Φ表述： 尺度因子a\(t\)增长 → 物质密度ρ_m ∝ a⁻³ → μ_m递减 辐](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D224 / Within the source-defined scope, 宇宙膨胀-Φ衰减同构定理 is adjudicated as RELATION: 宇宙膨胀的Φ表述： 尺度因子a\(t\)增长 → 物质密度ρ_m ∝ a⁻³ → μ_m递减 辐
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 宇宙膨胀-门槛扩张函数 is adjudicated as METRIC: 宇宙膨胀-门槛扩张函数,宇宙膨胀描述认知时空的尺度扩张,门控面Λ随之扩张。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D214 / Within the source-defined scope, 宇宙膨胀-门槛扩张函数 is adjudicated as METRIC: 宇宙膨胀-门槛扩张函数,宇宙膨胀描述认知时空的尺度扩张,门控面Λ随之扩张。. This is a
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 完全统一条件函数 is adjudicated as PREDICATE: Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) = 1 g_A\(M_](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D217 / Within the source-defined scope, 完全统一条件函数 is adjudicated as PREDICATE: Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) = 1 g_A\(M_
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 完成-完美函数 is adjudicated as RELATION: 任务完成度C与完美追求度P满足：当P>θ时C↓（过度追求完美阻碍完成），决策阈值∂U/∂t > ∂U/](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D537 / Within the source-defined scope, 完成-完美函数 is adjudicated as RELATION: 任务完成度C与完美追求度P满足：当P>θ时C↓（过度追求完美阻碍完成），决策阈值∂U/∂t > ∂U/
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 完美风暴-信息量等价函数 is adjudicated as RELATION: D412修正后，完美风暴条件a_excl·τ=1/\(4·ln2\)中的ln2不是数学巧合——它](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D463 / Within the source-defined scope, 完美风暴-信息量等价函数 is adjudicated as RELATION: D412修正后，完美风暴条件a_excl·τ=1/\(4·ln2\)中的ln2不是数学巧合——它
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D412；被引用：—
+- [Within the source-defined scope, 宏观僵尸态-实际不可逆等价函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D30](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D419 / Within the source-defined scope, 宏观僵尸态-实际不可逆等价函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D30
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D309；被引用：—
+- [Within the source-defined scope, 宏观僵尸态g_eff函数 is adjudicated as RELATION: M9的g_eff_macro = \(1-R_irreversible\)·g_eff。R→1时](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D406 / Within the source-defined scope, 宏观僵尸态g_eff函数 is adjudicated as RELATION: M9的g_eff_macro = \(1-R_irreversible\)·g_eff。R→1时
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D311；被引用：—
+- [Within the source-defined scope, 定向溢出强度函数 is adjudicated as METRIC: M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_max>>p̄时溢出几乎全](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D379 / Within the source-defined scope, 定向溢出强度函数 is adjudicated as METRIC: M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_max>>p̄时溢出几乎全
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 定投凯利保守性验证 is adjudicated as ARGUMENT_SCHEMA: 定投凯利保守性验证，定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D170 / Within the source-defined scope, 定投凯利保守性验证 is adjudicated as ARGUMENT_SCHEMA: 定投凯利保守性验证，定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 定投跨域验证函数 is adjudicated as ARGUMENT_SCHEMA: 定投跨域验证函数，定投策略在投资域验证了点火框架的普适性。定投不是投资特有，而是点火框](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D181 / Within the source-defined scope, 定投跨域验证函数 is adjudicated as ARGUMENT_SCHEMA: 定投跨域验证函数，定投策略在投资域验证了点火框架的普适性。定投不是投资特有，而是点火框
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 实际不可逆判据函数 is adjudicated as RELATION: M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D364 / Within the source-defined scope, 实际不可逆判据函数 is adjudicated as RELATION: M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。
@@ -2449,58 +2504,3 @@
   - 可搜索名称：NFC-b750168e4d3c5b8a / \| \[D222\]\( \) \| \[热力学第二定律的Φ表述\]\( \) \| F_{D222}\(x\) := 经典表述：dS/dt ≥ 0 Φ表述
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D184, D222；被引用：—
-- [\| \[D223\]\( \) \| \[物理存在的时间窗口定理\]\( \) \| F_{D223}\(x\) := Φ\(t\)从Φ₀单调递减到0，Ω\(t\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ef669f543aeab12d / \| \[D223\]\( \) \| \[物理存在的时间窗口定理\]\( \) \| F_{D223}\(x\) := Φ\(t\)从Φ₀单调递减到0，Ω\(t\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D223；被引用：—
-- [\| \[D224\]\( \) \| \[宇宙膨胀-Φ衰减同构定理\]\( \) \| F_{D224}\(x\) := 宇宙膨胀的Φ表述： 尺度因子a](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eda094b2eea0372f / \| \[D224\]\( \) \| \[宇宙膨胀-Φ衰减同构定理\]\( \) \| F_{D224}\(x\) := 宇宙膨胀的Φ表述： 尺度因子a
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D224；被引用：—
-- [\| \[D227\]\( \) \| \[退相干-门控退化同构定理\]\( \) \| F_{D227}\(x\) := 量子退相干：ρ_off\(t\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-70704e52e9f99de2 / \| \[D227\]\( \) \| \[退相干-门控退化同构定理\]\( \) \| F_{D227}\(x\) := 量子退相干：ρ_off\(t\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D198, D227；被引用：—
-- [\| \[D228\]\( \) \| \[T33修正\]\( \) \| F_{D228}\(x\) := A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cfefca719b909df1 / \| \[D228\]\( \) \| \[T33修正\]\( \) \| F_{D228}\(x\) := A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D228, T33；被引用：—
-- [\| \[D230\]\( \) \| \[双通道信息衰减定理\]\( \) \| F_{D230}\(x\) := 每个门控面提供的信息量（D197）： Hᵢ =](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9462a20393250b68 / \| \[D230\]\( \) \| \[双通道信息衰减定理\]\( \) \| F_{D230}\(x\) := 每个门控面提供的信息量（D197）： Hᵢ =
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D197, D230；被引用：—
-- [\| \[D231\]\( \) \| \[信息-热力学-门控三统一定理\]\( \) \| F_{D231}\(x\) := 三条衰减律的等价性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be01ccf2ec4757cd / \| \[D231\]\( \) \| \[信息-热力学-门控三统一定理\]\( \) \| F_{D231}\(x\) := 三条衰减律的等价性
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D222, D230, D231；被引用：—
-- [\| \[D233\]\( \) \| \[Shannon-Fisher跷跷板定理\]\( \) \| F_{D233}\(](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b840c3d339fbbecf / \| \[D233\]\( \) \| \[Shannon-Fisher跷跷板定理\]\( \) \| F_{D233}\(
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D233；被引用：—
-- [\| \[D234\]\( \) \| \[有效信息倒U型定理\]\( \) \| F_{D234}\(x\) := 有效信息 = 带宽 × 分辨率 的组合： I_e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d0cec567bc63b9ad / \| \[D234\]\( \) \| \[有效信息倒U型定理\]\( \) \| F_{D234}\(x\) := 有效信息 = 带宽 × 分辨率 的组合： I_e
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D234；被引用：—
-- [\| \[D235\]\( \) \| \[信息论完备性定理\]\( \) \| F_{D235}\(x\) := D231三统一定律的Fisher修正： 原三统一：dS](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5add39bfd0affb43 / \| \[D235\]\( \) \| \[信息论完备性定理\]\( \) \| F_{D235}\(x\) := D231三统一定律的Fisher修正： 原三统一：dS
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D231, D233, D235；被引用：—
-- [\| \[D236\]\( \) \| \[门控组合-中心极限定理\]\( \) \| F_{D236}\(x\) := N个独立的1/ln门控面（二值判断）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bfddace945f1fa22 / \| \[D236\]\( \) \| \[门控组合-中心极限定理\]\( \) \| F_{D236}\(x\) := N个独立的1/ln门控面（二值判断）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D236；被引用：—
-- [\| \[D237\]\( \) \| \[生命智能的σ压缩函数\]\( \) \| F_{D237}\(x\) := 宇宙σ_Planck ≈ 6.9 >> σ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-024992b462640151 / \| \[D237\]\( \) \| \[生命智能的σ压缩函数\]\( \) \| F_{D237}\(x\) := 宇宙σ_Planck ≈ 6.9 >> σ
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D234, D237；被引用：—

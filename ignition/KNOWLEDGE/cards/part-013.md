@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-daf1cb45ccd7b5b6"></a>
+## 点火仓库原生系统图
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-DAF1CB45CCD7B5B6` · [docs/architecture/interactive-system-map.md](../../docs/architecture/interactive-system-map.md)
+- **为什么产生：** 此来源记录了什么：点火仓库原生系统图？
+- **当前状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **当前结果：** 状态：首页使用 Task150 已验证的 standalone derived visualization 作为高层架构投影；当前 0.22.0 registry-derived 完整系统图是独立 companion，输出到单独的 SVG。两者均为派生视图，不替代 canonical source、架构权威或真值判断；0.14.0、0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/interactive-system-map.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-17: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `点火仓库原生系统图`, `interactive-system-map`
+
 <a id="asset-hr-daf416626a0f01ac"></a>
 ## IGNITION-20260827-142 Step 07 — Hermes Public Interface Audit
 
@@ -143,6 +163,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q28R 之元写作法 0.2.0 修订审计`, `121Q28R-cognitive-level-leap-writing-method-audit`
+
+<a id="asset-hr-de58f9adf534ac72"></a>
+## Adaptive Relational Runtime R2 — Real Object Pilot
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-DE58F9ADF534AC72` · [docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md](../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+- **为什么产生：** 此来源记录了什么：Adaptive Relational Runtime R2 — Real Object Pilot？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** Task class: high-risk stacked Draft / real-object read-only pilot Predecessor: PR 120 architecture/adaptive-relational-runtime-r1-scaffold @ a0d6c46 Base branch: architecture/adaptive-relational-runtime-r1-scaffold (NOT Main) R2 branch: runtime/adaptive-relational-runtime-r2-real-object-pilot Com…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Adaptive Relational Runtime R2 — Real Object Pilot`, `adaptive-relational-runtime-r2-real-object-pilot`
 
 <a id="asset-hr-de79d1279206415f"></a>
 ## ESI R0 人类阅读入口
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `事实 Pending 总表（外部治理记录）`, `factual-pending-register`
-
-<a id="asset-hr-f03c0e16cbb5b9f8"></a>
-## IGNITION-20260907-160 progress
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F03C0E16CBB5B9F8` · [agent-results/IGNITION-20260907-160-progress.md](../../agent-results/IGNITION-20260907-160-progress.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260907-160 progress？
-- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **当前结果：** Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `agent-results/IGNITION-20260907-160-progress.md`, `202`
-- **演化历史：** 2026-09-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260907-160 progress`, `IGNITION-20260907-160-progress`
-
-<a id="asset-hr-f25c6ad93d4e6b1c"></a>
-## IGNITION-140 Step 07 — Canonical Reconciliation Events
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F25C6AD93D4E6B1C` · [reports/operations/ignition-140-step07-canonical-reconciliation-events.md](../../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-140 Step 07 — Canonical Reconciliation Events？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-140-step07-canonical-reconciliation-events.md`, `140-STEP07-CANONICAL-RECONCILIATION-EVENTS`
-- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-140 Step 07 — Canonical Reconciliation Events`, `ignition-140-step07-canonical-reconciliation-events`

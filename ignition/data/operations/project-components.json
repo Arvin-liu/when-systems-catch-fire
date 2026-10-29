@@ -86,13 +86,14 @@
     {
       "authority_source": "reports/operations/121Q32-completion-seal.json",
       "component_ids": [
+        "arr",
         "historical_reports",
         "iteration_manifest_contract"
       ],
       "path_patterns": [
         "reports/operations/121Q32"
       ],
-      "reason": "historical_reports and iteration_manifest_contract share reports/operations/ for historical ops and 121Q32 reports."
+      "reason": "ARR adds its pilot completion seal beneath the operations reports directory, where historical_reports and iteration_manifest_contract already own 121Q32 evidence; the directory-level overlap must list every actual matching component."
     },
     {
       "authority_source": "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",

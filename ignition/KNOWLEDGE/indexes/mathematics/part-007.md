@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [No immutable artifact identity or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7d8d4445a0977636 / No immutable artifact identity or lifecycle governance is defined.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No machine-readable function/memory capability registry, immutable release, compatibility matrix, monitoring or lifecycl](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9123baf842aad743 / No machine-readable function/memory capability registry, immutable release, compatibility matrix, monitoring or lifecycl
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.](../../../data/architecture/probabilistic-system-dynamics/gap-ledger.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-608ddd8b619e6387 / No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.
+  - 来源：`data/architecture/probabilistic-system-dynamics/gap-ledger.json`
+  - 依赖：—；被引用：—
+- [No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only.](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-016.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0597ce7dafe3f32d / No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only.
+  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-016.json`
+  - 依赖：—；被引用：—
+- [No source provides formal precondition/postcondition language for neural-weight functions. Refinement types apply to sym](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-015.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a50b185b1cdcee46 / No source provides formal precondition/postcondition language for neural-weight functions. Refinement types apply to sym
+  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-015.json`
+  - 依赖：—；被引用：—
+- [No validation mechanism beyond training/validation loss. No formal checking of adaptation quality.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-501dae02b520ea17 / No validation mechanism beyond training/validation loss. No formal checking of adaptation quality.
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json`
+  - 依赖：—；被引用：—
+- [No versioned DSL/model/program registry or lifecycle governance is defined, and no implementation/data artifacts are rel](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-685ac93f82009355 / No versioned DSL/model/program registry or lifecycle governance is defined, and no implementation/data artifacts are rel
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No versioned learned-program registry, dependency graph, compatibility model or rollback lifecycle is defined or release](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a7b89b7a86bb61fb / No versioned learned-program registry, dependency graph, compatibility model or rollback lifecycle is defined or release
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [No versioned registry, compatibility model, provenance-complete task artifact or rollback lifecycle is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72f87db8ce1af328 / No versioned registry, compatibility model, provenance-complete task artifact or rollback lifecycle is defined.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [No versioned/provenance-complete function registry or operational artifact lifecycle is supplied.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-351b76b7ed267e02 / No versioned/provenance-complete function registry or operational artifact lifecycle is supplied.
@@ -1269,6 +1314,11 @@
   - 可搜索名称：NFC-4effe9f37e16a10e / re-classified in 083 based on claim_type=STRUCTURAL_ANALOGY, proof_status=REQUIRES_HIGHEST_MODEL_VERIFICATION
   - 来源：`data/foundation/work-queues/082-escalation-routing.jsonl`
   - 依赖：—；被引用：—
+- [re-running the same input dict would re-enter lifecycle state.](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3929d73a0790639c / re-running the same input dict would re-enter lifecycle state.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
 - [read from the formal repository by the child and is never written to the](../../../reports/operations/ignition-137-step06-codex-exact-output-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2ffa6aa14a81f2a2 / read from the formal repository by the child and is never written to the
@@ -2453,54 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f65dc6a9215bad08 / The combined input result is not `VOLUME_AND_COHERENCE_EFFECT_SUPPORTED_AS_RESEARCH_FINDING`. Volume is the only measure
   - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
-  - 依赖：—；被引用：—
-- [The complete machine matrix is in `data/operations/iterations/127/step00-rebase-matrix.json`. Snapshot/restore, schema m](../../../reports/operations/ignition-127-step00-rebase-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9e5ff3f33d08e26d / The complete machine matrix is in `data/operations/iterations/127/step00-rebase-matrix.json`. Snapshot/restore, schema m
-  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
-  - 依赖：—；被引用：—
-- [The complete node-by-permutation record is `cross-book-accumulation-results.jsonl`. It is intentionally reported separat](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1d21ee1e5506429b / The complete node-by-permutation record is `cross-book-accumulation-results.jsonl`. It is intentionally reported separat
-  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
-  - 依赖：—；被引用：—
-- [The complexity of theorem-proving procedures](../../../data/external-research/088-external-source-atlas-v1.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3a8628b8a171fced / The complexity of theorem-proving procedures
-  - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
-  - 依赖：—；被引用：—
-- [The controlling summary is `verdict.json`; the final V2 gate is `v2-final-gate.json`; exact command, base, pointer, and](../../../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-5dd5cdb39446ce18 / The controlling summary is `verdict.json`; the final V2 gate is `v2-final-gate.json`; exact command, base, pointer, and
-  - 来源：`docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md`
-  - 依赖：—；被引用：—
-- [The Current semantic surfaces are clean: task lineage, release lifecycle, Current Facts, Current Snapshot, compiler outp](../../../reports/operations/ignition-132-step11-residual-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28230a7acdeabe35 / The Current semantic surfaces are clean: task lineage, release lifecycle, Current Facts, Current Snapshot, compiler outp
-  - 来源：`reports/operations/ignition-132-step11-residual-audit.md`
-  - 依赖：—；被引用：—
-- [The current-state scope names the post-PR #56 / Q24D lifecycle boundary without embedding its own future commit SHA.](../../../reports/operations/121Q25-front-door-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f34925eb64a859a0 / The current-state scope names the post-PR #56 / Q24D lifecycle boundary without embedding its own future commit SHA.
-  - 来源：`reports/operations/121Q25-front-door-audit.md`
-  - 依赖：—；被引用：—
-- [The Effectual Action Plane is a cross-layer operating surface for choosing a next action when the goal, metric, path, or](../../../docs/architecture/effectual-action-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1a378590195c5211 / The Effectual Action Plane is a cross-layer operating surface for choosing a next action when the goal, metric, path, or
-  - 来源：`docs/architecture/effectual-action-plane.md`
-  - 依赖：—；被引用：—
-- [The entry must never convert open PR content or candidate notes into formal authority.](../../../docs/get-brain-latest-status-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e29290814be17664 / The entry must never convert open PR content or candidate notes into formal authority.
-  - 来源：`docs/get-brain-latest-status-protocol.md`
-  - 依赖：—；被引用：—
-- [The envelope is `additionalProperties: false` at every level. Identity hashing input excludes `record_id` itself and the](../../../docs/architecture/object-relation-mechanism-model.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-887d51a73f80291d / The envelope is `additionalProperties: false` at every level. Identity hashing input excludes `record_id` itself and the
-  - 来源：`docs/architecture/object-relation-mechanism-model.md`
-  - 依赖：—；被引用：—
-- [The evidence set contains seven substantive source families plus two contextual or methodological records](../../../data/external-research/pointfire-seven-track-replay-r1/claim-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-9483fb9f356ca718 / The evidence set contains seven substantive source families plus two contextual or methodological records
-  - 来源：`data/external-research/pointfire-seven-track-replay-r1/claim-ledger.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-006F03978554BA99 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果） / IMPLICIT-006F03978554BA99
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-001d410543ff17ee / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A020D8048B556C3D / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分） / IMPLICIT-A020D8048B556C3D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dcc24f4272e4e811 / causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [CausalConeOrHorizon](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-bd6fc4184c24d371 / CausalConeOrHorizon
@@ -769,6 +789,11 @@
   - 可搜索名称：NFC-303c989377ca1a49 / Deterministic dynamics example; probability is not forced onto causal evolution.
   - 来源：`data/architecture/probabilistic-system-dynamics/examples/deterministic-system.json`
   - 依赖：—；被引用：—
+- [deterministic identity; replay never fails because a prior call mutated the caller;](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ba09f79299f5696b / deterministic identity; replay never fails because a prior call mutated the caller;
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
 - [deterministic projection/path-accounting drift caused by the new generated](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6e2c017b50b9e796 / deterministic projection/path-accounting drift caused by the new generated
@@ -1029,6 +1054,11 @@
   - 可搜索名称：NFC-761fdb010d467883 / Evidence Tier Schema
   - 来源：`data/external-research/120-function-paradigm-atlas/120-provider-and-tool-audit.md`
   - 依赖：—；被引用：—
+- [evidence → architecture failure; extraction error → mechanism failure\) would corrupt](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1125ca4884900505 / evidence → architecture failure; extraction error → mechanism failure\) would corrupt
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
 - [Exact arXiv v1 hash/size/API metadata, all-51-page visual/full-text and paper-era/current companion-resource history aud](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-7fea2f83ee273426 / Exact arXiv v1 hash/size/API metadata, all-51-page visual/full-text and paper-era/current companion-resource history aud
@@ -1219,6 +1249,11 @@
   - 可搜索名称：IMPLICIT-93363EF065BB4B4D / F_symmetry := ∫\(local_information × local_decision × distributed_authority\) / network_topology / IMPLICIT-93363EF065BB4B4D / IMPLICIT-43BE03337A9068D3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [fact; interpreter reconstruction ≠ speaker belief; generic ≠ cause; decorative](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-fe9b8f2b3fd1e20e / fact; interpreter reconstruction ≠ speaker belief; generic ≠ cause; decorative
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-be3f869b20be0fc1 / Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle
@@ -1243,6 +1278,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-760ccaf1d8a79a4f / Failures remain append-only and deterministically change bounded later plans without establishing their causes.
   - 来源：`data/failure/fixtures/01-valid-pilot.json`
+  - 依赖：—；被引用：—
+- [false causal promotion \(generic → cause\),](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-74791b50c9f562d8 / false causal promotion \(generic → cause\),
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
   - 依赖：—；被引用：—
 - [Family assignments were mostly accurate because they were tied to the source registry.](../../../data/external-research/121-fulltext-resolver/121-template-risk-reaudit.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2454,53 +2494,13 @@
   - 可搜索名称：NFC-c008cf5697b56ad8 / Modal and evidential boundaries around Huizong's private belief, Daoism's causal role and hindsight are already explicit
   - 来源：`data/language-thought/audit-findings.jsonl`
   - 依赖：—；被引用：—
+- [model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5e9c15c55f504510 / model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [MoE top-k routing and combinations of attention patterns are concrete intra-model routing/composition mechanisms, not co](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9f6a41e9ced35a27 / MoE top-k routing and combinations of attention patterns are concrete intra-model routing/composition mechanisms, not co
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [MSA --> M0\[M0 行动前机制草图\]](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-84268eda792331c5 / MSA --> M0\[M0 行动前机制草图\]
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [Multi-backbone task tables, matched baselines, ablations and sensitivity studies validate a bounded experimental mechani](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-432a304c0710514c / Multi-backbone task tables, matched baselines, ablations and sensitivity studies validate a bounded experimental mechani
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Multiscale Causal Fabric / 多尺度因果织体](../../ASSET-CARDS.md#asset-hr-1ee77928279485fa)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
-  - 可搜索名称：Multiscale Causal Fabric / 多尺度因果织体 / multiscale-causal-fabric
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [Multiscale Causal Fabric / 多尺度因果织体](../../../docs/architecture/multiscale-causal-fabric.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b5415d7444ede178 / Multiscale Causal Fabric / 多尺度因果织体
-  - 来源：`docs/architecture/multiscale-causal-fabric.md`
-  - 依赖：—；被引用：—
-- [Multiscale Causal Fabric Data](../../../data/architecture/multiscale-causal-fabric/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b9f46d7cc1581dd1 / Multiscale Causal Fabric Data
-  - 来源：`data/architecture/multiscale-causal-fabric/README.md`
-  - 依赖：—；被引用：—
-- [Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-1b480738d54e5e56 / Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。](../../../AI-START-HERE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-273e5f577b689c6a / Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
-  - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
-- [NC-001 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0808 入表并完成最小索引追加与 D595 对应闭环。后续建议做 C-0808 索引可见性验证。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7cf222c84250ba6e / NC-001 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0808 入表并完成最小索引追加与 D595 对应闭环。后续建议做 C-0808 索引可见性验证。
-  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
-  - 依赖：D595；被引用：—
-- [NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。](../../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-dd7e8fb851ffdeef / NC-002 经全表查重（无等价案例）与 Ψ₀ 六维判定，判定为**真新增教育评价机制个案**，已以 C-0809 入表并完成最小索引追加与 D597/D173 对应闭环。后续建议做 C-0809 索引可见性验证。
-  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
-  - 依赖：D173, D597；被引用：—
