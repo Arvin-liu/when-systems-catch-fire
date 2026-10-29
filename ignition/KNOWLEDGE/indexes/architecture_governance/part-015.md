@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [点火框架外部文献缺口与来源图谱 — 阶段进度（全阶段完成）](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9217e03fa6284671 / 点火框架外部文献缺口与来源图谱 — 阶段进度（全阶段完成）
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
+- [点火框架暂不扩张材料库，而是优先审视自身结构、边界与证据协议，为后续更深的学科化整理做准备。](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5fac5b6687a3b703 / 点火框架暂不扩张材料库，而是优先审视自身结构、边界与证据协议，为后续更深的学科化整理做准备。
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [点火框架统一了四种基本力](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-bec07e9d55217ae4 / 点火框架统一了四种基本力
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
+- [点火框架解决了 AI 对齐](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-4893ab9e372c577c / 点火框架解决了 AI 对齐
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
+- [点火框架解决了 P vs NP](../../../data/pending_claims.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-63428fa6723c5130 / 点火框架解决了 P vs NP
+  - 来源：`data/pending_claims.csv`
+  - 依赖：—；被引用：—
 - [点火框架解决了市场失灵问题](../../../data/pending_claims.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-ec94a9e2c8e73089 / 点火框架解决了市场失灵问题
@@ -2477,30 +2502,5 @@
 - [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在心智中成立](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-b4f516b3d11a95bf / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-672b3fdcf231feb6 / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f8b55f9037da9e0b / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在蚁群社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在ChatGPT中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a3f3ce13bc18d844 / 验证结论：** J⁺=1, J⁻=0 → 自组织在ChatGPT中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在人类社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6612e4e7300a41bb / 验证结论：** J⁺=1, J⁻=0 → 自组织在人类社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ba1fc092766ccc23 / 验证结论：** J⁺=1, J⁻=0 → 自组织在博弈论中成立
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

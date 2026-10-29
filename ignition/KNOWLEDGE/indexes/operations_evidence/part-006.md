@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-453279BF5E747BE1 / M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\) / IMPLICIT-453279BF5E747BE1 / IMPLICIT-0198CFC2215AB617
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7E351C611EFB6A90 / n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\) / IMPLICIT-7E351C611EFB6A90
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [NC-001 / NC-002**：建议入表，但待 NF-001/NF-002 先入表后对应。](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-0f58ab563dd645fe / NC-001 / NC-002**：建议入表，但待 NF-001/NF-002 先入表后对应。
@@ -449,6 +459,26 @@
   - 可搜索名称：NFC-7986b2c883531f33 / Q36-OBS Typed Contract — Observation–Prediction Calibration
   - 来源：`docs/observation/q36-obs-typed-contract.md`
   - 依赖：—；被引用：—
+- [Q41 repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-ac064ac68608ac32)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Q41 repair-r2 — R4 freeze / Q41-REPAIR-R2-freeze
+  - 来源：`reports/operations/Q41-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
+- [Q42 repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-886483a6b67d18e9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Q42 repair-r2 — R4 freeze / Q42-REPAIR-R2-freeze
+  - 来源：`reports/operations/Q42-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
+- [Q43 repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-4e7373c8b02f3f6e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Q43 repair-r2 — R4 freeze / Q43-REPAIR-R2-freeze
+  - 来源：`reports/operations/Q43-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
+- [Q44 repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-e80677686d834ef1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Q44 repair-r2 — R4 freeze / Q44-REPAIR-R2-freeze
+  - 来源：`reports/operations/Q44-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
 - [R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s](../../ASSET-CARDS.md#asset-nfc-e9612969179efbcb)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-e9612969179efbcb / R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s / - R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-side durable capture、append-only LiveAttemptLedger 和 ledger-derived Current projection。历史 ledger 共记录四次尝试，其中 Hermes136 与 Codex138 second 仍待 reconciliation；Codex138 second 确实发生，但 outer context overflow 使 observation incomplete，return code、structured result、lease、workspace 和 validator input 未恢复。当前 live provider/inference ceiling 仍未建立。
@@ -669,6 +699,11 @@
   - 可搜索名称：NFC-13d4fb24aea5147b / Schema: `schemas/observation/observation-prediction-contract.schema.json`
   - 来源：`docs/observation/q36-obs-typed-contract.md`
   - 依赖：—；被引用：—
+- [SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-d4c40ec0127597ed)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze / SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze
+  - 来源：`reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
 - [secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS",](../../../agent_federation/live_transport.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1647FD700E719A64 / secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS", / IMPLICIT-1647FD700E719A64
@@ -773,6 +808,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0be3952fb51314cd / Surface semantics. Two deterministic projection checks were byte-identical.
   - 来源：`reports/operations/ignition-140-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt](../../ASSET-CARDS.md#asset-hr-578f793e0ef4f0f6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt / SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt
+  - 来源：`reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md`
   - 依赖：—；被引用：—
 - [Target/definition drift must be explicitly versioned \(new normalized_target = new prediction family\).](../../../docs/observation/q36-obs-typed-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-df4c4293324eb840 / 与 Ψ₀ 关系：S1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-80d782857eda9bc2 / 与 Ψ₀ 关系：S2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-09f0e731a9f0b697 / 与 Ψ₀ 关系：S3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bdec67de4240e00c / 与 Ψ₀ 关系：S4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9e5fe0a7654e2aca / 与 Ψ₀ 关系：V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8e669683c183701a / 与 Ψ₀ 关系：V2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-58dcc5813003a0ae / 与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-710e5bc34443f156 / 与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与案例表碰撞（找对应案例、反例、支撑）。](../../../docs/getbrain-operation-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f9cc2819e4431d7e / 与案例表碰撞（找对应案例、反例、支撑）。
-  - 来源：`docs/getbrain-operation-guide-20260708.md`
   - 依赖：—；被引用：—

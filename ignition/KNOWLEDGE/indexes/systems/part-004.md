@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1be25d737677f21 / The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
 - [The central role of the propensity score in observational studies for causal effects](../../../data/external-research/088-external-source-atlas-v1.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-d206cb6580e26f58 / The central role of the propensity score in observational studies for causal effects
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bc5bb2c96590a140 / 不同英语地区、族群、专业和媒介在主语省略、集体名词、时制、标点、礼貌和信息结构上都有差异。实验中的英语组效应不能被写成所有英语使用者的固定注意方式。复杂文学句法、方言叙事和跨语码写作保持人工／专家审查。
   - 来源：`docs/language-thought/profiles/en.md`
-  - 依赖：—；被引用：—
-- [不存在把争议历史压扁成单线因果](../../../docs/narrative-story-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2e7b02407f69da4 / 不存在把争议历史压扁成单线因果
-  - 来源：`docs/narrative-story-validation.md`
   - 依赖：—；被引用：—
