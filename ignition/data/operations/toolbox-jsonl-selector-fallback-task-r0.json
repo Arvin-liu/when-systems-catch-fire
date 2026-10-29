@@ -1,24 +1,24 @@
 {
-  "schema_version": "toolbox-jsonl-selector-fallback-output-r0",
   "method": "DIRECT_PYTHON_STDLIB_JSONL_SCAN",
   "source_path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
-  "source_sha256": "830628dfad1900aa16c742d8e6dddee389b716fef7a256b3b92406286645d718",
-  "source_bytes": 20470267,
-  "lines_scanned": 24698,
+  "source_sha256": "149913723ff86df95433f8343148cbfcda7f7db1b701fb0af938cd06560da094",
+  "source_bytes": 21544604,
+  "lines_scanned": 26181,
   "selector": {
-    "json_pointer": "/search_id",
+    "equality": "JSON_SCALAR_VALUE_EXACT",
     "equals": "NFC-b39db6e6d352f4f6",
-    "equality": "JSON_SCALAR_VALUE_EXACT"
+    "json_pointer": "/search_id"
   },
   "selected_record_count": 1,
   "records": [
     {
-      "line_number": 1,
-      "start_byte_offset": 0,
-      "end_byte_offset_exclusive": 728,
       "byte_count": 728,
+      "end_byte_offset_exclusive": 728,
+      "line_number": 1,
       "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
+      "start_byte_offset": 0,
       "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
     }
-  ]
+  ],
+  "schema_version": "toolbox-jsonl-selector-fallback-output-r0"
 }
