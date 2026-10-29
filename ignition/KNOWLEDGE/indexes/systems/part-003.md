@@ -929,6 +929,11 @@
   - 可搜索名称：NFC-f0f1115ae6efb142 / Object T18 defines a mechanism_model within the point-fire framework. Core expression: 容斥项可映射到Ising模型的J-K竞争：容斥项 = Σᵢⱼ Jᵢ
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：T18；被引用：—
+- [Object–Relation–Mechanism Model / 对象–关系–机制模型\(九原语合同\)](../../ASSET-CARDS.md#asset-hr-c7ec97db8410be92)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：Object–Relation–Mechanism Model / 对象–关系–机制模型\(九原语合同\) / object-relation-mechanism-model
+  - 来源：`docs/architecture/object-relation-mechanism-model.md`
+  - 依赖：—；被引用：—
 - [Object–Relation–Mechanism Model / 对象–关系–机制模型\(九原语合同\)](../../../docs/architecture/object-relation-mechanism-model.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-816d5b5a932ddd16 / Object–Relation–Mechanism Model / 对象–关系–机制模型\(九原语合同\)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c47d8675f47d00c4 / The cause was ordering, not a live or full-suite regression. The
   - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
-  - 依赖：—；被引用：—
-- [The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f1be25d737677f21 / The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
   - 依赖：—；被引用：—

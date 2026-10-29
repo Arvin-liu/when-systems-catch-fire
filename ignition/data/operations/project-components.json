@@ -1426,6 +1426,8 @@
       "path_patterns": [
         "data/architecture/interactive-system-map.json",
         "docs/generated/ignition-system-map.svg",
+        "docs/generated/ignition-system-architecture.svg",
+        "docs/generated/ignition-system-architecture.html",
         "tools/generate_interactive_system_map.py",
         "tools/validate_human_front_door.py",
         "tests/test_human_front_door.py",
@@ -3229,6 +3231,7 @@
         "reports/ignition-rpe/",
         "schemas/ignition_runtime/",
         "tests/ignition_runtime/",
+        "tests/rpe_ci/",
         "tools/ignition_runtime/"
       ],
       "authority": "canonical",

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [E1~E2（evidence 类）**：evidence_regimes（EVID-011/004）约束已在各条目 pending 标注中体现，未单独建 evidence 条目。状态：pending，等待 GPT 明确指令。](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a3250213b24e7339 / E1~E2（evidence 类）**：evidence_regimes（EVID-011/004）约束已在各条目 pending 标注中体现，未单独建 evidence 条目。状态：pending，等待 GPT 明确指令。
+  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [E2. 「资源托举退化为路径控制」在代际中的普遍发生率。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e9370c189ca08874 / E2. 「资源托举退化为路径控制」在代际中的普遍发生率。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：—；被引用：—
+- [E3 规范性审核 - 循环演化协议 \(Cyclic-Evolution Protocol\)](../../ASSET-CARDS.md#asset-hr-654ae58eec903c53)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：E3 规范性审核 - 循环演化协议 \(Cyclic-Evolution Protocol\) / E3
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/E3.md`
+  - 依赖：—；被引用：—
+- [E4. 「活得非标准化」是否真能抗 AI 替代（项飚观点，需劳动经济学验证）。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b13f5324a258b868 / E4. 「活得非标准化」是否真能抗 AI 替代（项飚观点，需劳动经济学验证）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：—；被引用：—
 - [E6. 创业中「价值创造权—决策权错配」的普遍结构（需组织行为学）。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-eb4842c475a01ff2 / E6. 创业中「价值创造权—决策权错配」的普遍结构（需组织行为学）。
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-581d9e80aca115d5 / independently verified source-text semantic review: 5/622;
   - 来源：`reports/foundation-architecture/078-truth-audit-20260713.md`
-  - 依赖：—；被引用：—
-- [inference, validated completion, model ranking, production readiness, external](../../../reports/operations/ignition-138-step00-local-executor-census.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d3a70378adbe7e23 / inference, validated completion, model ranking, production readiness, external
-  - 来源：`reports/operations/ignition-138-step00-local-executor-census.md`
-  - 依赖：—；被引用：—
-- [Inherited baseline debt \(the Q41→…→D2 chain\) not disguised as new green; repair scope limited to evidence→Git-object bin](../../../docs/counterfactual/q42-i1-repair-r1-summary.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e38639f2be449f53 / Inherited baseline debt \(the Q41→…→D2 chain\) not disguised as new green; repair scope limited to evidence→Git-object bin
-  - 来源：`docs/counterfactual/q42-i1-repair-r1-summary.md`
-  - 依赖：D2；被引用：—
-- [init = sub.add_parser\("init", help="create one validated case document"\)](../../../reos_vnext/cli.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-647447dd23253e06 / init = sub.add_parser\("init", help="create one validated case document"\)
-  - 来源：`reos_vnext/cli.py`
-  - 依赖：—；被引用：—
-- [init.add_argument\("--unnecessary-module", action="append", default=\[\]\)](../../../reos_vnext/cli.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6757fb3647bbc36d / init.add_argument\("--unnecessary-module", action="append", default=\[\]\)
-  - 来源：`reos_vnext/cli.py`
   - 依赖：—；被引用：—

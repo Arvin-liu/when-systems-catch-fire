@@ -3495,7 +3495,7 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-02f68962a6f13abc.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-0331afe8d84f2538.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-037598111338be3f.md"}
-{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-139f14280f9dd160.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-35e28dd86a8149d0.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/docs/human/nonfunction-assets/entries/nfc-d12a007686070f3d.md"}
@@ -3987,6 +3987,8 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/governance/task-IGNITION-20260907-163.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/governance/task-IGNITION-20260907-164.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/governance/task-IGNITION-20260908-165.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/ignition-rpe/ATTACK_MATRIX.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/math-foundation/blockers-20260712.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/math-foundation/full-object-inventory-20260712.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/math-foundation/local-note-sync-report-20260712.md"}
@@ -5474,8 +5476,6 @@
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/views/manifest.json"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/新故事/0001-S1-比刀剑更持久的，是共享观念.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/新故事/INDEX.md"}
-{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/ignition-rpe/ATTACK_MATRIX.md"}
-{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/ignition_runtime/authorization.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/ignition_runtime/candidate.schema.json"}
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/ignition_runtime/engineering_signal.schema.json"}
@@ -5488,6 +5488,8 @@
 {"category": "SCHEMA", "matched_rule": "SCHEMA", "path": "schemas/multihistory/multi_history_world_projection-contract.schema.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/ignition_runtime/test_fix_regressions.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/ignition_runtime/test_scenarios.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/rpe_ci/__init__.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/rpe_ci/test_consumers.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "tests/test_human_front_door.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/ignition_runtime/__init__.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "tools/ignition_runtime/__main__.py"}
