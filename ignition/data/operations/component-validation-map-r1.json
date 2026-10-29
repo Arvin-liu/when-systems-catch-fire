@@ -982,7 +982,7 @@
         "EVIDENCE_UPDATE",
         "GOVERNANCE_CHANGE"
       ],
-      "evidence": "The R5-A Draft candidate package, contract artifacts, exact case gates, route tests, and workflow form one isolated governance-validation surface; all checks remain repository-local and do not activate the candidate."
+      "evidence": "The R5-A Draft candidate package, contract artifacts, exact case gates, route tests, and workflow form one isolated governance-validation surface; its three exact pytest files overlap ARR test ownership only to preserve the ARR closure and R5-A gate. All checks remain repository-local and do not activate the candidate."
     }
   ]
 }

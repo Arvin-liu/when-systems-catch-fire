@@ -139,6 +139,19 @@
       "reason": "human_knowledge_surfaces owns the readable navigation asset while system_map_projection owns the registry-derived full-map SVG."
     },
     {
+      "authority_source": "docs/governance/life-integrity-charter-candidate-r1.md",
+      "component_ids": [
+        "arr_runtime",
+        "life_integrity_r5a_candidate"
+      ],
+      "path_patterns": [
+        "tests/adaptive_relational_runtime/run_r5a_pytest_suite.py",
+        "tests/adaptive_relational_runtime/test_life_integrity_r5a.py",
+        "tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py"
+      ],
+      "reason": "ARR retains broad ownership of tests/adaptive_relational_runtime/; these three exact files execute the R5-A candidate contract. The narrow overlap selects both existing ARR validation and the candidate-specific gate without reassigning other ARR tests."
+    },
+    {
       "authority_source": "FOUNDATION.md",
       "component_ids": [
         "charter",
@@ -3365,6 +3378,7 @@
         "tools/generate_life_integrity_r5a.py",
         "tools/validate_life_integrity_r5a_repair.py",
         "tools/validate_life_integrity_r5a_consolidated_repair.py",
+        "docs/README.md",
         "docs/architecture/adaptive-relational-runtime-r5a-adrs.md",
         "docs/architecture/ignition-life-integrity-r5a-r1.md",
         "docs/architecture/ignition-r5a-life-integrity-r1/",
@@ -3396,5 +3410,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.22"
+  "registry_version": "2.9.23"
 }
