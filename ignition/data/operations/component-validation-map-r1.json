@@ -923,7 +923,7 @@
         "EVIDENCE_UPDATE",
         "INTERFACE_CHANGE"
       ],
-      "evidence": "ARR registry, schemas, architecture, and map projection changes are checked by the existing human front-door and human-result consumers plus the registered ARR static gate and focused pytest suite. Q33 era-resolver repair evidence also routes through g_repository_path_consumers, including the existing era-resolver regression module."
+      "evidence": "ARR registry, schemas, architecture, and map projection changes are checked by the existing human front-door and human-result consumers plus the registered ARR static gate and focused pytest suite. Q33 era-resolver repair evidence also routes through g_repository_path_consumers, including the existing era-resolver regression module. The R4 read-only self-reflection package, public aggregate/docs/map delta, requirements, and synthetic tests route through the same ARR assignment; g_arr_runtime's existing arr_runtime_pytest command runs the complete tests/adaptive_relational_runtime/ directory, including the R4 synthetic suites. This is repository validation routing only and leaves the R4 corpus, claims, check names, and pass criteria unchanged."
     },
     {
       "component_id": "arr_runtime",
