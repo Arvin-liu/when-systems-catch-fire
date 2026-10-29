@@ -184,6 +184,27 @@ class HumanFrontDoorTests(unittest.TestCase):
         )
         missing = [path for path in counterfactual_inputs if not any(fnmatch.fnmatchcase(path, pattern) for pattern in patterns)]
         self.assertEqual(missing, [], f"Q33 Human Surface input changes would skip CI: {missing}")
+        module_step_match = re.search(
+            r"(?ms)^      - name: Run Q33 governance test modules.*?(?=^      - name:|\Z)",
+            workflow,
+        )
+        self.assertIsNotNone(module_step_match, "Q33's general governance test step is missing")
+        module_step = module_step_match.group(0)
+        self.assertNotRegex(
+            module_step,
+            r"(?m)^\s*if:",
+            "general Q33 governance tests must run for every PR selected by the path filter",
+        )
+        self.assertIn(
+            "tests/test_generated_output_authority_generic.py",
+            module_step,
+            "non-Q33 PRs in this scope must exercise the generated-output authority positive/general suite",
+        )
+        self.assertIn(
+            "tests/test_generated_output_authority_negative.py",
+            module_step,
+            "non-Q33 PRs in this scope must exercise unauthorized generated-output negative controls",
+        )
         self.assertIn(
             "if: ${{ github.ref == 'refs/heads/agent/121q33-global-copyright-risk-and-rights-governance' || (github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/121q33-global-copyright-risk-and-rights-governance') }}",
             workflow,
