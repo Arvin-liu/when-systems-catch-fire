@@ -67,7 +67,7 @@
       "status": "OWNER_REGISTRATION_REQUIRED",
       "authority_repository": "Arvin-liu/1111",
       "authority_branch": "main",
-      "authority_path": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R1.json",
+      "authority_path": "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json",
       "requires_github_verified_owner_signature": true,
       "must_bind": [
         "task_id",

@@ -943,6 +943,19 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(current, "R3")
         self.assertTrue(any("no first-parent update" in error for error in errors), errors)
 
+    def test_successor_registration_uses_fresh_versioned_control_path(self) -> None:
+        expected = "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R2.json"
+        self.assertEqual(r3.SUCCESSOR_REGISTRATION_PATH, expected)
+        self.assertNotEqual(
+            r3.SUCCESSOR_REGISTRATION_PATH,
+            "instructions/goal-mode/IGNITION-R3-ADMISSION-SUCCESSOR-REGISTRATION-R1.json",
+        )
+        protocol = r3.load_json(r3.PROTOCOL_PATH)
+        self.assertEqual(
+            protocol["identity_binding"]["successor_registration"]["authority_path"],
+            expected,
+        )
+
     def test_contract_preserves_r2_baseline_and_identifies_all_transition_exceptions(self) -> None:
         self.assertEqual(r3.validate_contract(), [])
 
