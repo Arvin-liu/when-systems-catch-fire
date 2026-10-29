@@ -55,6 +55,11 @@ EXPECTED_HEAD_BASES = {
     "repair/adaptive-relational-runtime-r2-positive-routing-r1": {
         "runtime/adaptive-relational-runtime-r2-real-object-pilot",
     },
+    # The CI portability repair stays stacked on the positive-routing repair,
+    # preserving the existing R2 parent instead of substituting Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+    },
 }
 
 
@@ -770,6 +775,8 @@ def test_s43_diff_scope():
         # Exact documentation, evidence bundle and path-classifier files owned by #122.
         "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
         "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
+        # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
         "ignition/tools/foundation/validate_repository_path_classification.py",
         "ignition/docs/project-current-state.md",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
