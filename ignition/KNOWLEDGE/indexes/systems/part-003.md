@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5e9c15c55f504510 / model/extraction error as `MECHANISM_FAILURE`. One object failure must not produce an
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [MoE top-k routing and combinations of attention patterns are concrete intra-model routing/composition mechanisms, not co](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9f6a41e9ced35a27 / MoE top-k routing and combinations of attention patterns are concrete intra-model routing/composition mechanisms, not co
@@ -1684,6 +1689,16 @@
   - 可搜索名称：NFC-178a240e6381829c / R2 is checked below with the same strict field contract because its
   - 来源：`agent_federation/live_current_projection.py`
   - 依赖：—；被引用：—
+- [R5-A 不授权：R5-B 具身生命系统运行时、R5-C《新悟真篇》领域包、宗教源文本摄入、对真实人的实践指令、医疗/精神科/诊断/治疗主张、人类健康数据收集、人类画像数据库、真实世界实验、领域包联邦、L7、第二执行器、PROMOTE、EV](../../../docs/governance/life-integrity-charter-candidate-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3149d249578fc00f / R5-A 不授权：R5-B 具身生命系统运行时、R5-C《新悟真篇》领域包、宗教源文本摄入、对真实人的实践指令、医疗/精神科/诊断/治疗主张、人类健康数据收集、人类画像数据库、真实世界实验、领域包联邦、L7、第二执行器、PROMOTE、EV
+  - 来源：`docs/governance/life-integrity-charter-candidate-r1.md`
+  - 依赖：—；被引用：—
+- [R5-A 不是运行时、不是第二执行器、不是 L7。它是把“性命一体、身心互成”这一用户授权规范来源转写为**可机器测试的治理与架构合同**的候选叠加层。它复用 ARR 通用原语（Source / Observation / Object /](../../../docs/architecture/ignition-life-integrity-r5a-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d09bc4772a3a7e53 / R5-A 不是运行时、不是第二执行器、不是 L7。它是把“性命一体、身心互成”这一用户授权规范来源转写为**可机器测试的治理与架构合同**的候选叠加层。它复用 ARR 通用原语（Source / Observation / Object /
+  - 来源：`docs/architecture/ignition-life-integrity-r5a-r1.md`
+  - 依赖：—；被引用：—
 - [R6 回滚条件**：哪些事实 / 伤害 / 失败 / 治理异议触发撤回。](../../../docs/governance/charter-system-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-73e710213743fe10 / R6 回滚条件**：哪些事实 / 伤害 / 失败 / 治理异议触发撤回。
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e0f4ad849a1643dc / Technical admission is not live authorization. Task140's malformed-result record remains a real non-completion, but its
   - 来源：`reports/operations/ignition-142-step09-codex-blocker-audit.md`
-  - 依赖：—；被引用：—
-- [temporal / mechanism-state\); deterministic pilot run IDs; per-object execution](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-744debd22d45b5dd / temporal / mechanism-state\); deterministic pilot run IDs; per-object execution
-  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
-  - 依赖：—；被引用：—
-- [Tensor shapes, mode, causality, routing and resource constraints are useful architecture-specification fragments, but th](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-d470f8a075b3c0d5 / Tensor shapes, mode, causality, routing and resource constraints are useful architecture-specification fragments, but th
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [test or evidence;](../../../docs/architecture/mechanism-adjudication-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-09680fff1a941685 / test or evidence;
-  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
   - 依赖：—；被引用：—

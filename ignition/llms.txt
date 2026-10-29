@@ -133,3 +133,5 @@ Validation before commit:
 - python3 tools/validate_meta_protocols.py
 - python3 tools/validate_data.py
 - python3 tools/validate_state_changelog.py
+
+R5-A candidate boundary: PR #130 remains Draft, unmerged into its predecessor/Main, not Current and not activated. The Night Queue R1 adjudication is NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED. The #131/#133 repair acceptances cover only their adjudicated instances; R5-B, R5-C and R6 remain prohibited. See docs/governance/life-integrity-charter-candidate-r1.md, docs/governance/r5a-night-queue-r1-adjudication.md and docs/governance/r5a-consolidated-contract-bypass-repair-r1.md.

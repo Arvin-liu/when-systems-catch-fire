@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-69f642bbe7b8fc10"></a>
+## Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158；This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer.；主题：What was tested；The existing matrix is documented as V×S×E = 4×4×4 = 64; its repository description says that each combination provides a reality case and an inference shape, and explicitly does not establish empirical exhaustiveness. This experiment tested whether historical changes that appear to escape a prior basis can be reconstructed without using the existing V1–V4 /…；The matrix and its meanings were read as existing comparison material only. No entry, axis, Psi-zero meaning, meta-protocol meaning, or canonical table was edited.；主题：Frozen hypotheses
+- 完整阅读：[docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md](../../docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md)
+
+<a id="reading-hr-6a9b73c834a5af36"></a>
+## IGNITION-20260823-136 — Live External Executor Bridge R1
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
+- 1 分钟：Task ID: IGNITION-20260823-136 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260823-136 — Live External Executor Bridge R1；Task ID: IGNITION-20260823-136；Formal task ordinal: 136；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task136 terminalizes the repository-local Live External Executor Bridge R1 as RELEASEREADY. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and LIVEEXTERNALINVOCATION remains an explicit open obligation. This result records repository-local implementation, bounded live-attempt observation, deterministic projection closu…
+- 完整阅读：[agent-results/IGNITION-20260823-136-result.md](../../agent-results/IGNITION-20260823-136-result.md)
+
 <a id="reading-hr-6af7b035edaef185"></a>
 ## IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction
 `CURRENT_CORRECTION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -277,6 +291,13 @@
 - 5 分钟：主题：ESI R0 literature boundary；This page records what the primary literature can motivate for the ESI R0 experiment and what it cannot authorize. It is a source boundary, not a novelty claim and not a second epistemic authority.；The literature supports asking whether recent examples or structural context can change a model's next response. It does not establish that the repository's Structural Governance Surface is a mechanism, that the effect is durable, or that context has authority over truth, permission, safety release, Owner status, or epistemic acceptance.；主题：Primary sources reviewed；Brown et al., “Language Models are Few-Shot Learners”: supports testing in-context conditioning without treating the interaction as a new model checkpoint.；Sinclair et al., “Structural Persistence in Language Models”: supports separating structural persistence from lexical and semantic overlap with controls.
 - 完整阅读：[docs/architecture/esi-literature-boundary-r0.md](../../docs/architecture/esi-literature-boundary-r0.md)
 
+<a id="reading-hr-7a4fd027adb33d3d"></a>
+## 传统/宗教材料翻译管线 R5-A R1（Tradition Translation Pipeline R1）
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：来源 provenance、源语言/翻译状态、说话者/作者/归属状态、claim class、字面文本引用或非公开摘要引用、解释层、证据等级、机制状态、适用边界、权利边界、置信度与 UNKNOWNs、禁止升级、修订历史。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：传统/宗教材料翻译管线 R5-A R1（Tradition Translation Pipeline R1）；候选。把进入点火的传统/宗教材料分类、标注 provenance、并失败关闭地阻止无声类别升级。；主题：1. 封闭 claim-class 注册表（恰好 8 类）；PHENOMENOLOGICALREPORT；MECHANISMHYPOTHESIS；RITUALSOCIALTECHNOLOGY
+- 完整阅读：[docs/architecture/tradition-translation-pipeline-r1.md](../../docs/architecture/tradition-translation-pipeline-r1.md)
+
 <a id="reading-hr-7a5aa67ff65f918e"></a>
 ## Core proof and countermodel report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
@@ -332,24 +353,3 @@
 - 1 分钟：Task: IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731 Executor: WorkBuddy Formal repo: Arvin-liu/when-systems-catch-fire Branch: agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731 Predecessor: Task 106 (IGNITIONCO… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Task 107 — Foundation Drift Repair: Incident Report；Task: IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731 Executor: WorkBuddy Formal repo: Arvin-liu/when-systems-catch-fire Branch: agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731 Predecessor: Task 106 (IGNITIONCONTINUOUSITERATIONPROPAGATIONCLOSEDCURRENTTRUTHRECONCILEDANDMERG…；主题：1. What actually broke；Task 106 merged (PR #162) but its remote foundation-validation workflow failed before reaching the new propagation-reconciliation step. The failure was not introduced by task 106 — it was latent drift already sitting in main. Task 106's receipt listed four failure modes:；generator:deterministic DEEPADJUDICATIONOUTOFDATE；generator:deterministic NONFUNCTIONCLAIMOUTPUTDRIFT
 - 完整阅读：[docs/foundation/task-107-incident-report.md](../../docs/foundation/task-107-incident-report.md)
-
-<a id="reading-hr-7ced45f5b589417b"></a>
-## D2 repair-r2 — R4 freeze
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：prior-repair head f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09 to the real predecessor repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3). 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：D2 repair-r2 — R4 freeze；branch: repair-r2/d2-r2-multihistory-semantics；annotatedtag: archive/d2-repair-r2-frozen-head；base: D2 repair-r1 head 1904628103d8c23133107d501a22e3f17d08221d；direct predecessor: prior repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c (inherited via --no-ff merge of repair-r2/f15-d1-r2-identifiability-semantics)；PR base: repair-r2/f15-d1-r2-identifiability-semantics (prior repair-r2 branch)
-- 完整阅读：[reports/operations/D2-REPAIR-R2-freeze.md](../../reports/operations/D2-REPAIR-R2-freeze.md)
-
-<a id="reading-hr-7d1c593d80794fdb"></a>
-## Agent result: IGNITION-20260907-163
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
-- 1 分钟：Completed the research-only Task163 Stage A package from the pinned command source 73cde2ab84d829bb0990f63d957e2152b1a330e4 / blob 521d468829425a210cc763df72456f2c28753d02 / content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Agent result: IGNITION-20260907-163；Completed the research-only Task163 Stage A package from the pinned command source 73cde2ab84d829bb0990f63d957e2152b1a330e4 / blob 521d468829425a210cc763df72456f2c28753d02 / content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1.；The exact Formal base was work/IGNITION-20260907-162@5c66ac502ca331d72c1362000ff5231503dde7ea; PR #212 was OPEN + DRAFT at preflight. The Formal worktree was clean. Missing instructions/CURRENT.md and relay/current remain recorded as STALECONTROLPOINTER / PREFLIGHTRESIDUAL.；Stage A used 18 anonymized, pre-event-only historical packets, a frozen R1 representation and mutation gate, and two byte-identical blind runs. All 12 mutation operations were syntax-trialed with no semantic claim. Capability-equivalent hits were 0/4; P02/P03/P04 hits were 0/3; true holdout hits were 0; strong-negative false positives were 0; N02/N03 remaine…；The failed qualification gates trigger the required stop. Primary verdict: BASISLEARNINGOPERATORNOTVALIDATED; secondary: UNDERDETERMINED. Stage B was not run: no Task162 induction outputs were used, no external or fresh holdout source was acquired, and no O/S/B/R, F0/M1, multi-pass, candidate freeze, or V2 scoring was performed. The package remains research-…
-- 完整阅读：[agent-results/IGNITION-20260907-163-result.md](../../agent-results/IGNITION-20260907-163-result.md)
-
-<a id="reading-hr-7d4413587f58d270"></a>
-## 扩展注释 · P1 接入烟雾测试
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：扩展注释 · P1 接入烟雾测试；对应旧条目：docs/p1-machine-data-collision-workflow-20260708.md 第 8 节「最小试运行建议」。；扩展内容：smoke test 验证了「轻量碰撞」模式——即不读全量两张表正文、仅确认目录存在 + 用 P1 七类数据做辅助索引，也能产出结构化五类输出。这对后续大规模任务有节流价值：先用 P1 数据预筛，再按需深入两张表，避免每次全量读取。；为什么不是新增条目：这是对已定义工作流的用法补充，不是新函数/新案例/新流程。；是否建议更新：建议在 docs/p1-machine-data-collision-workflow-20260708.md 的第 5 节流程中，将「轻量预筛」作为可选前置步骤注明（待人工复核后更新，本轮不修改正式文档）。
-- 完整阅读：[outputs/collisions/20260708-smoke-test/expanded-notes.md](../../outputs/collisions/20260708-smoke-test/expanded-notes.md)

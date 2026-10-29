@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-575fd55d43af78d9"></a>
+## External Agent Federation Core R1
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public order… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：External Agent Federation Core R1；The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public ordered progress; FederatedResultReceipt carries claims plus indepen…；ExternalSessionRef is always pointeronly. An executor's internal history, prompt, hidden reasoning, token usage, memory database or session UI is not canonical Ignition state. Receipt digests cover the unsigned public record and are checked during construction and replay.；The typed records live in agentfederation/contracts.py. The public record schema is federation-core-r1.schema.json. The FederatedExecutor protocol only asks for probe, describe, dispatch, status, cancel and optional-capability resume; it does not prescribe an internal agent loop.
+- 完整阅读：[docs/architecture/federation-core-r1.md](../../docs/architecture/federation-core-r1.md)
+
+<a id="reading-hr-578f793e0ef4f0f6"></a>
+## SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt；Status: SYMBOLICSPHEREREPAIRR1LOCALCOMPLETE；Branch: repair/symbolic-sphere-r1-reference-integrity；Original SYMBOLIC frozen head: 213dced90f1e9b1f1992a148ee10fc0844917490；Q39 repair-r1 frozen head: 99ab601a48dd45972b238e468bc8e3002d648c98；Merge propagation commit: 05976a00a8e86b9dd8fe4d638e791b372ad0af62
+- 完整阅读：[reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md](../../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
+
 <a id="reading-hr-57b4f559431d6912"></a>
 ## 121Q32 typed change-propagation impact report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -339,17 +353,3 @@
 - 1 分钟：087-v1-1-overlay.md 全程使用分母 143（如 143/143、124/143、123/143 等共9处），但 087 全部数据文件权威学科总数为 250，且投影矩阵中 NOTAPPLICABLE=0（无学科被排除）。143 在 087 任何数据文件中均无对应子集来源，属旧口径错误残留。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：088 阶段1：087 计数与分母审计；执行器：QClaw | 模型：GLM-5.2 | 推理：max；审计时间：2026-07-13T19:24:13.091825+08:00；方法：从 087 三个原始 jsonl 逐文件独立重算，不复制任何报告数字；UNESCO 四位学科唯一总数：250（registry/kernel/matrix 三集一致，0 重复）；缺口注册表：14（8 HIGH / 6 MEDIUM）
 - 完整阅读：[reports/foundation-architecture/088-087-count-and-denominator-audit.md](../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-
-<a id="reading-hr-69f642bbe7b8fc10"></a>
-## Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158；This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer.；主题：What was tested；The existing matrix is documented as V×S×E = 4×4×4 = 64; its repository description says that each combination provides a reality case and an inference shape, and explicitly does not establish empirical exhaustiveness. This experiment tested whether historical changes that appear to escape a prior basis can be reconstructed without using the existing V1–V4 /…；The matrix and its meanings were read as existing comparison material only. No entry, axis, Psi-zero meaning, meta-protocol meaning, or canonical table was edited.；主题：Frozen hypotheses
-- 完整阅读：[docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md](../../docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md)
-
-<a id="reading-hr-6a9b73c834a5af36"></a>
-## IGNITION-20260823-136 — Live External Executor Bridge R1
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
-- 1 分钟：Task ID: IGNITION-20260823-136 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260823-136 — Live External Executor Bridge R1；Task ID: IGNITION-20260823-136；Formal task ordinal: 136；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task136 terminalizes the repository-local Live External Executor Bridge R1 as RELEASEREADY. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and LIVEEXTERNALINVOCATION remains an explicit open obligation. This result records repository-local implementation, bounded live-attempt observation, deterministic projection closu…
-- 完整阅读：[agent-results/IGNITION-20260823-136-result.md](../../agent-results/IGNITION-20260823-136-result.md)

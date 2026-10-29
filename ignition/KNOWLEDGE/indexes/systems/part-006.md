@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [把历史叙事误写成因果定律指把叙述结构或故事化解释当作强因果定律。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f8b4eaeb7f2a505d / 把历史叙事误写成因果定律指把叙述结构或故事化解释当作强因果定律。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把历史因果写成单因决定论](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4e45e2994c64111b / 把历史因果写成单因决定论
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把叙事连贯性误认为因果必然性。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-dffb28fbfce2c15e / 把叙事连贯性误认为因果必然性。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28d6a72c1a59a7ef / 把因果、自举、同构、元层、哥德尔不完备性、元协议与证据强度合成总分。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [把局部机制误写成全局规律](../../../docs/failure_typology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-eaca6f31486b9916 / 把局部机制误写成全局规律
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
+- [把局部机制误写成全局规律](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ee5d8c5cbbf984c9 / 把局部机制误写成全局规律
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [把局部机制误写成全局规律指有限条件下成立的机制被扩展成普遍定律。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e48b5f610b28a44c / 把局部机制误写成全局规律指有限条件下成立的机制被扩展成普遍定律。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把局部机制误写成全局规律（某个具体叙事的效果误写成所有叙事的规律）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2ea6c5deccd23c3b / 把局部机制误写成全局规律（某个具体叙事的效果误写成所有叙事的规律）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [把局部机制误写成全局规律（某个现代艺术流派的特点误写成所有现代艺术的规律）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-b7b6e823fab0703d / 把局部机制误写成全局规律（某个现代艺术流派的特点误写成所有现代艺术的规律）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [把局部现象当作全局机制；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4aa91577a22ff3c2 / 把局部现象当作全局机制；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-360a048007ab298f / 把描述性机制和规范性判断分开，只有在正当化桥接存在时才允许合流。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [把某一案例、局部机制或历史叙事写成普遍规律。](../../../data/publication_risk_rules.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-da41af91ec88ed2d / 把某一案例、局部机制或历史叙事写成普遍规律。
+  - 来源：`data/publication_risk_rules.csv`
+  - 依赖：—；被引用：—
+- [把相关性写成因果性](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6d846271bd671a1c / 把相关性写成因果性
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [把结构相似当成机制相同。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-89661ce5cba311b2 / 把结构相似当成机制相同。
@@ -694,6 +759,11 @@
   - 可搜索名称：NFC-cc6998d2feb554b2 / 机制/因果 2,100；
   - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
   - 依赖：—；被引用：—
+- [机制假设不等于临床疗效；](../../../docs/architecture/tradition-translation-pipeline-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0a0e38facb649cb0 / 机制假设不等于临床疗效；
+  - 来源：`docs/architecture/tradition-translation-pipeline-r1.md`
+  - 依赖：—；被引用：—
 - [机制假说生成（社会机制的候选结构）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f93e68ddaba7c880 / 机制假说生成（社会机制的候选结构）
@@ -789,6 +859,11 @@
   - 可搜索名称：NFC-8d4408011b42575a / 李丹阳后来真正痛的，不只是“大家都叫我糕妈”。更痛的是，她开始意识到，如果公司真正的灵魂是她创造出来的内容，那么“我只做内容、不坐驾驶位”这件事，本身就是一种错配。内容的价值由她承担，方向的决定却不一定由她承担。战略分歧、团队内耗、亲密关系
   - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
   - 依赖：—；被引用：—
+- [来源 provenance、源语言/翻译状态、说话者/作者/归属状态、claim class、字面文本引用或非公开摘要引用、解释层、证据等级、机制状态、适用边界、权利边界、置信度与 UNKNOWNs、禁止升级、修订历史。](../../../docs/architecture/tradition-translation-pipeline-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de26f1829a0029dc / 来源 provenance、源语言/翻译状态、说话者/作者/归属状态、claim class、字面文本引用或非公开摘要引用、解释层、证据等级、机制状态、适用边界、权利边界、置信度与 UNKNOWNs、禁止升级、修订历史。
+  - 来源：`docs/architecture/tradition-translation-pipeline-r1.md`
+  - 依赖：—；被引用：—
 - [来源锚点：A1（为下一次考试准备）、B1（永远在准备）、A12（完美展示带来他人压力，反向说明窄化）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-027a1f07f9ff41eb / 来源锚点：A1（为下一次考试准备）、B1（永远在准备）、A12（完美展示带来他人压力，反向说明窄化）。
@@ -798,6 +873,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c297669508e59413 / 来源：Get 笔记文章《赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放》
   - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [来路”表示每次变化必须能回到其来源、前态、决定、验证、差异和回执。历史](../../../docs/governance/ignition-perpetual-present-principle.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd7c77739bea88a0 / 来路”表示每次变化必须能回到其来源、前态、决定、验证、差异和回执。历史
+  - 来源：`docs/governance/ignition-perpetual-present-principle.md`
   - 依赖：—；被引用：—
 - [极端事件与点火框架G_δ哥德尔不完备性判定的映射。系统内部无法预测极端事件，必须跳到元层面（元协议）处理不确定性。](../../../data/foundation/arguments/arguments.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1143,6 +1223,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-574b7cf840f90b01 / 点火框架统一约束，乘法系统中任一因子为零则整体归零。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [点火生命完整性架构 R5-A R1（Ignition Life Integrity R5-A R1）](../../ASSET-CARDS.md#asset-hr-db662c8d453d0e8a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：点火生命完整性架构 R5-A R1（Ignition Life Integrity R5-A R1） / ignition-life-integrity-r5a-r1
+  - 来源：`docs/architecture/ignition-life-integrity-r5a-r1.md`
   - 依赖：—；被引用：—
 - [点火风险：** L1 命题主体改变，L4 因果责任被虚构或抹除。](../../../docs/language-thought/dimensional-basis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1539,6 +1624,11 @@
   - 可搜索名称：NFC-6d6204a792ff009d / 联邦连接是执行器互操作的 repository dependency，不是新增 L7 或现实因果边；
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
+- [背景**：ARR 已有 Source / Observation / Object / State / Event / Assertion / Relation / Mechanism 等通用原语。](../../../docs/architecture/adaptive-relational-runtime-r5a-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a76fe073ccfb8b92 / 背景**：ARR 已有 Source / Observation / Object / State / Event / Assertion / Relation / Mechanism 等通用原语。
+  - 来源：`docs/architecture/adaptive-relational-runtime-r5a-adrs.md`
+  - 依赖：—；被引用：—
 - [脱不花在财务决策中长期被动，真实退出权不足，导致个人财务契约始终失衡。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ad38908c51428dd0 / 脱不花在财务决策中长期被动，真实退出权不足，导致个人财务契约始终失衡。
@@ -1873,6 +1963,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-92073259e5989c23 / 跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。
   - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [跨视图关系类型化，不暗示因果；](../../../docs/governance/life-integrity-charter-candidate-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2d52d5ad7a8d15e2 / 跨视图关系类型化，不暗示因果；
+  - 来源：`docs/governance/life-integrity-charter-candidate-r1.md`
   - 依赖：—；被引用：—
 - [输入材料、事实、引用或案例基础错误，导致后续结构判断失效。](../../../data/failure_typology.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`

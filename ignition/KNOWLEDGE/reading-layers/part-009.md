@@ -4,6 +4,34 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-a598ace26626a803"></a>
+## C-0808 职称硬门槛裹挟青年教师索引可见性验证
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：| C-0808 | 职称硬门槛裹挟青年教师 | 职称硬门槛使青年教师可拒绝性趋零，结构裹挟大于主观意愿。 | 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：C-0808 职称硬门槛裹挟青年教师索引可见性验证；索引文件：已迁移的历史案例来源/INDEX.md；C-0808 出现在 INDEX 第 810 行：；| C-0808 | 职称硬门槛裹挟青年教师 | 职称硬门槛使青年教师可拒绝性趋零，结构裹挟大于主观意愿。 |；案例总数已同步：791 → 792（INDEX 头部计数）；结论：后续碰撞流程可通过编号、标题、机制关键词三种方式召回 C-0808。
+- 完整阅读：[outputs/audit/c0808-index-visibility-check-20260708.md](../../outputs/audit/c0808-index-visibility-check-20260708.md)
+
+<a id="reading-hr-a5bec8f9274ccae4"></a>
+## IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 01 passes. The six outputs produced by Task143 are inventoried as capability smoke-test artifacts: three complete articles, one Book Project R1 and two mature book samples. Their existing bodies and canonical paths remain unchanged. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory；Step 01 passes. The six outputs produced by Task143 are inventoried as capability smoke-test artifacts: three complete articles, one Book Project R1 and two mature book samples. Their existing bodies and canonical paths remain unchanged.；Every item is explicitly recorded with smoketest=true, ownerselection=NOTREVIEWED and publicationacceptance=PUBLICATIONACCEPTANCENOTGRANTED. The existing registry labels describe the production phase in which the artifacts were made; they are not evidence that the Owner selected a topic or accepted a publication. Source paths and claim ceilings are preserved…
+- 完整阅读：[reports/operations/ignition-144-step01-smoke-output-inventory.md](../../reports/operations/ignition-144-step01-smoke-output-inventory.md)
+
+<a id="reading-hr-a7b229336e1604ab"></a>
+## 审计：生命共同体价值宪章 README 入口
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：验证全部通过（15/15）。文档已就绪，待提交、推送并创建 PR，不自动合并。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：审计：生命共同体价值宪章 README 入口；任务编号：IGNITION-20260709-041；正式仓库：Arvin-liu/when-systems-catch-fire；工作树：PRIVATE_PROVENANCE_WITHHELD；分支：docs/life-community-value-charter-20260711；基线 base SHA：9463459edab4803c2452ae52d0f1ca2733cdc008（执行时最新 origin/main）
+- 完整阅读：[outputs/audit/life-community-value-charter-readme-audit-20260711.md](../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
+
+<a id="reading-hr-a7d98664e45d4ecb"></a>
+## IGNITION-139 Step 00 — Baseline and observation-path audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-139 Step 00 — Baseline and observation-path audit；The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started.；The existing Current preflight was green before implementation: task-lineage, Current-state sync, volatile-fact registry, Current semantic gate, and two-pass Current projection determinism all passed. The focused live/ledger/Current test set ran 36 tests with 0 failures, 0 errors, and 0 skips.；主题：Historical fact that must become canonical；The Task138 second Codex dispatch was a real attempt. Its host result exceeded the available model context, and the receipt could not be recovered. Return code, structured result, lease receipt, and validator input were unavailable. The correct ceiling is therefore ATTEMPTHAPPENEDOBSERVATIONINCOMPLETE / REQUIRESRECONCILIATION; it is neither success nor a kno…；The current identity contract still described that same invocation as forbidden because no auth-source route was available. This is the Step139 split-brain to repair. Historical Task136–138 source records remain append-only and are not rewritten.
+- 完整阅读：[reports/operations/ignition-139-step00-baseline-audit.md](../../reports/operations/ignition-139-step00-baseline-audit.md)
+
 <a id="reading-hr-a8550987d2a41dab"></a>
 ## 经典问题 benchmark 卡片：黎曼猜想
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -325,31 +353,3 @@
 - 1 分钟：Status: BASELINEREPRODUCED 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit；Status: BASELINEREPRODUCED；The refreshed control ref is Arvin-liu/1111:origin/relay/current@3fc8a329eb4f581d1940688046bdc16f4594417d. The isolated formal worktree starts from Arvin-liu/when-systems-catch-fire:main@517510aed545ff440c3464536ba2964c94e5f560 and was clean before the audit.；主题：Current path manifest；ignition/tools/foundation/validaterepositorypathclassification.py explicitly defines classification-manifest.jsonl as a generated snapshot of the deterministic live engine. Its --check mode compares the live Git path set to the committed manifest and fails closed on missing, stale, duplicate, category-drift, unresolved, and anti-backflow violations. The clea…；The observed baseline is:
 - 完整阅读：[reports/operations/ignition-134-step00-residual-archaeology.md](../../reports/operations/ignition-134-step00-residual-archaeology.md)
-
-<a id="reading-hr-bb7bae0c9846bcb2"></a>
-## IGNITION-20260817-124 — OS Control Plane R2 progress
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This is the task-branch progress surface for the independently pushed Step 00–12 ledger. It records repository evidence and bounded claims only. The formal main tip does not move during the task branch run. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260817-124 — OS Control Plane R2 progress；This is the task-branch progress surface for the independently pushed Step 00–12 ledger. It records repository evidence and bounded claims only. The formal main tip does not move during the task branch run.；OS != executor; Reasoner != Executor; Pack != truth authority; Memory is operational recall, not Knowledge truth; CURRENTWITHOPENOBLIGATIONS and EPISTEMICALLYACCEPTED=0 remain unchanged. No live provider, daemon, network/browser/message action, vector memory or remote Git mutation is part of this task.；主题：Step 00 evidence；Baseline fixture: data/operations/iterations/124/fixtures/baseline-concurrency-r1.json；Gap audit: reports/architecture/os-control-plane-r2-gap-audit.md
-- 完整阅读：[reports/operations/ignition-124-progress.md](../../reports/operations/ignition-124-progress.md)
-
-<a id="reading-hr-bbf31ff3f05d22fe"></a>
-## 两张表全量碰撞报告（two-tables-full-collision-report）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：两张表全量碰撞报告（two-tables-full-collision-report）；函数总表：619 文件，最高编号 0609（D599）；INDEX 标注函数总数 617。；案例总表：805 文件，最高编号 0804（C-0809）。；全量查重方式：对 M1–M9 逐条在函数总表做关键词+锚点检索（家庭/身份/价值感/沉没/托举/管理成本/支持/角色/父母/服从 轴 grep），并对命中的 D595–D599、D583、T40、D245 逐篇精读确认实质同构。；查重结论：家庭/身份/价值感/托举/管理成本轴函数表零命中；退出权/自我模型/指标替代价值轴强相关。；新函数 3 条：M3、M4、M5（≤5 ✅）。
-- 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md](../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-
-<a id="reading-hr-bc1eabaeeba58eb1"></a>
-## IGNITION-20260827-142 Step 13 — Live Attempt A
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: SKIPPEDUNSAFEORUNAVAILABLE. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 13 — Live Attempt A；Status: SKIPPEDUNSAFEORUNAVAILABLE.；Attempt A was not created or started. The Step 12 gate found zero live-selectable Agentic Executor families: Codex is policy-excluded and the other installed Agentic candidates are technically blocked. This is a no-invocation adjudication, not a live failure or an inferred result.；No process, inference, auth/config/billing operation, UI action or workspace mutation occurred. Historical live counts remain 6 attempts / 0 validated completions / 0 unreconciled / 2 observation-incomplete.；Machine evidence is ignition/data/operations/iterations/142/step13-live-attempt-a.json, validated by ignition/tools/validatetask142liveattemptadjudication.py.
-- 完整阅读：[reports/operations/ignition-142-step13-live-attempt-a.md](../../reports/operations/ignition-142-step13-live-attempt-a.md)
-
-<a id="reading-hr-bcc48ae7649ea4fe"></a>
-## 材料分层图（source-layer-map）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：来源：57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，作者之元，2026-07-11） 全文读取：完成（713 行 / 137161 字节 / SHA256 ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497） 附件命令文件 SHA256：218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：材料分层图（source-layer-map）；来源：57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，作者之元，2026-07-11） 全文读取：完成（713 行 / 137161 字节 / SHA256 ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497） 附件命令文件 SHA256：218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208；分层目的：区分「可核对事件 / 当事人解释 / 访谈者解释 / 整理稿概括 / 需外部证据」。；禁止把整理稿概括层(D)当成独立证据；禁止把访谈者解释(C)直接当事实。；主题：A. 可核对事件层（访谈中具体、可回指的事件）；A1. 五年级数学考 86 分，被父亲打；从此形成「丢分=丢脸」「分数=人格价值」的内隐耦合。
-- 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md](../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)

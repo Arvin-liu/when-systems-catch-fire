@@ -4,6 +4,191 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [if artifact_id in ids:](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e900b7029c0b1911 / if artifact_id in ids:
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [if c.get\("claim_support_status"\) not in \("CONFIRMED", "PARTIAL", "NOT_SUPPORTED", "UNRESOLVED"\):](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fd751b3a7689648e / if c.get\("claim_support_status"\) not in \("CONFIRMED", "PARTIAL", "NOT_SUPPORTED", "UNRESOLVED"\):
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [if c.get\("evidence_tier"\) != "FULLTEXT_REVIEWED":](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-135665855c9145ae / if c.get\("evidence_tier"\) != "FULLTEXT_REVIEWED":
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED" and card.get\("claim_support_status"\) == "NOT_ASSESSED":](../../../data/external-research/106-105-correction/106-validator.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6AC4914A48957347 / if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED" and card.get\("claim_support_status"\) == "NOT_ASSESSED": / IMPLICIT-6AC4914A48957347
+  - 来源：`data/external-research/106-105-correction/106-validator.py`
+  - 依赖：—；被引用：—
+- [if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED" and card.get\("claim_support_status"\) == "NOT_ASSESSED":](../../../data/external-research/106-105-correction/106-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fe24071451ac21e6 / if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED" and card.get\("claim_support_status"\) == "NOT_ASSESSED":
+  - 来源：`data/external-research/106-105-correction/106-validator.py`
+  - 依赖：—；被引用：—
+- [if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED":](../../../data/external-research/106-105-correction/106-validator.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E9AAB06E3ABC5FBB / if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED": / IMPLICIT-E9AAB06E3ABC5FBB
+  - 来源：`data/external-research/106-105-correction/106-validator.py`
+  - 依赖：—；被引用：—
+- [if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED":](../../../data/external-research/106-105-correction/106-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fd8e499d5cfc878e / if card.get\("evidence_tier"\) == "FULLTEXT_REVIEWED":
+  - 来源：`data/external-research/106-105-correction/106-validator.py`
+  - 依赖：—；被引用：—
+- [if entry.get\("anchor_verified"\):](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-345bf35c298e3605 / if entry.get\("anchor_verified"\):
+  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 依赖：—；被引用：—
+- [if entry.get\("evidence_tier"\) in \("ABSTRACT_ONLY", "SNIPPET", "METADATA_ONLY"\):](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fa3860e375c9f8fc / if entry.get\("evidence_tier"\) in \("ABSTRACT_ONLY", "SNIPPET", "METADATA_ONLY"\):
+  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 依赖：—；被引用：—
+- [if evidence_cards:](../../../data/external-research/121A-night-recovery/121A-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-343c458ee6783176 / if evidence_cards:
+  - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
+  - 依赖：—；被引用：—
+- [if len\(evidence_cards\) >= 20:](../../../data/external-research/121A-night-recovery/121A-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-70ae10c80a18fe06 / if len\(evidence_cards\) >= 20:
+  - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
+  - 依赖：—；被引用：—
+- [if line and \(line.isupper\(\) or re.match\(r"^\\d+\(\\.\\d+\)*\\s+", line\) or line in \["Abstract", "Introduction", "Related Work"](../../../scripts/external-research/121_extract_all.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7b7b8a7a3b10cac7 / if line and \(line.isupper\(\) or re.match\(r"^\\d+\(\\.\\d+\)*\\s+", line\) or line in \["Abstract", "Introduction", "Related Work"
+  - 来源：`scripts/external-research/121_extract_all.py`
+  - 依赖：—；被引用：—
+- [if not evidence:](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2cf5fdde6ecf1ea4 / if not evidence:
+  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 依赖：—；被引用：—
+- [if paw.get\("semantic_review_status"\) == "FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW":](../../../data/external-research/121A-night-recovery/121A-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5ab4f0551689ee89 / if paw.get\("semantic_review_status"\) == "FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW":
+  - 来源：`data/external-research/121A-night-recovery/121A-validator.py`
+  - 依赖：—；被引用：—
+- [if record.get\("retrieval_state"\) not in EVIDENCE_STATES:](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7f441596efa28dfc / if record.get\("retrieval_state"\) not in EVIDENCE_STATES:
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [if ref not in artifact_ids:](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4de46261b8fa2a0f / if ref not in artifact_ids:
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [if result not in artifact_ids:](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f7eae0d762398e9c / if result not in artifact_ids:
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [If the attempt fails or times out, the failure remains the terminal evidence;](../../../reports/operations/ignition-137-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-eb60ddcb6d6b4fdd / If the attempt fails or times out, the failure remains the terminal evidence;
+  - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [if total_success_verified != 79:](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0e67ef5e62409275 / if total_success_verified != 79:
+  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 依赖：—；被引用：—
+- [If You institute patent litigation against any entity \(including a cross-claim or counterclaim in a lawsuit\) alleging th](../../../LICENSES/active/APACHE-2.0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-99201e138fbc24d2 / If You institute patent litigation against any entity \(including a cross-claim or counterclaim in a lawsuit\) alleging th
+  - 来源：`LICENSES/active/APACHE-2.0.md`
+  - 依赖：—；被引用：—
+- [Ignition validators establish evidence. Session values are pointer-only.](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-918902a4c2c8b508 / Ignition validators establish evidence. Session values are pointer-only.
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
+  - 依赖：—；被引用：—
+- [IGNITION-084 Max Adjudication Report](../../ASSET-CARDS.md#asset-hr-ac9e178219fcc8d0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-084 Max Adjudication Report / 084-max-adjudication-report
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [IGNITION-088 收尾报告：点火框架外部文献缺口与来源图谱](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ab3dbca889fbae71 / IGNITION-088 收尾报告：点火框架外部文献缺口与来源图谱
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [IGNITION-106: 105 证据纠错报告](../../ASSET-CARDS.md#asset-hr-7b29778a2b189cd1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_CORRECTION_RECORD`
+  - 可搜索名称：IGNITION-106: 105 证据纠错报告 / 106-105-evidence-correction-report
+  - 来源：`reports/external-research/106-105-evidence-correction-report.md`
+  - 依赖：—；被引用：—
+- [IGNITION-106: 105 证据纠错报告](../../../reports/external-research/106-105-evidence-correction-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f19b8f8f7e836181 / IGNITION-106: 105 证据纠错报告
+  - 来源：`reports/external-research/106-105-evidence-correction-report.md`
+  - 依赖：—；被引用：—
+- [IGNITION-106: 下一任务交接](../../ASSET-CARDS.md#asset-hr-0a1370d6fff72a4c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-106: 下一任务交接 / 106-next-task-handoff
+  - 来源：`reports/external-research/106-next-task-handoff.md`
+  - 依赖：—；被引用：—
+- [IGNITION-107: GAP-002 层级尺度全文证据深挖](../../../reports/external-research/106-next-task-handoff.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2d9ddfb2b0ea2822 / IGNITION-107: GAP-002 层级尺度全文证据深挖
+  - 来源：`reports/external-research/106-next-task-handoff.md`
+  - 依赖：—；被引用：—
+- [IGNITION-121A was executed by QClaw \(model: qclaw/pool-glm-5.2-night, reasoning: high\) on 2026-07-14 to recover Kimi-K2.](../../../reports/external-research/121A-night-recovery-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-024cb0bcffbb63ba / IGNITION-121A was executed by QClaw \(model: qclaw/pool-glm-5.2-night, reasoning: high\) on 2026-07-14 to recover Kimi-K2.
+  - 来源：`reports/external-research/121A-night-recovery-report.md`
+  - 依赖：—；被引用：—
+- [IGNITION-137 Step 13 — Steering / Goal / Memory boundary](../../ASSET-CARDS.md#asset-hr-07f04c57755e61ed)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-137 Step 13 — Steering / Goal / Memory boundary / ignition-137-step13-steering-goal-memory-boundary
+  - 来源：`reports/operations/ignition-137-step13-steering-goal-memory-boundary.md`
+  - 依赖：—；被引用：—
+- [IGNITION-140 Step 05 — Reconciliation State Model](../../ASSET-CARDS.md#asset-hr-2d1ffea2f1635a4d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-140 Step 05 — Reconciliation State Model / ignition-140-step05-reconciliation-state-model
+  - 来源：`reports/operations/ignition-140-step05-reconciliation-state-model.md`
+  - 依赖：—；被引用：—
+- [IGNITION-140 Step 06 — Evidence Exhaustion Audit](../../ASSET-CARDS.md#asset-hr-46cd997d4826e649)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-140 Step 06 — Evidence Exhaustion Audit / ignition-140-step06-evidence-exhaustion-audit
+  - 来源：`reports/operations/ignition-140-step06-evidence-exhaustion-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-140 Step 06 — Evidence Exhaustion Audit](../../../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e39b673f0ee53ee4 / IGNITION-140 Step 06 — Evidence Exhaustion Audit
+  - 来源：`reports/operations/ignition-140-step06-evidence-exhaustion-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260709-121 Artifact Summary](../../../data/external-research/121-fulltext-resolver/121-task-artifact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b7af1a05742f77c7 / IGNITION-20260709-121 Artifact Summary
+  - 来源：`data/external-research/121-fulltext-resolver/121-task-artifact.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260816-123 架构真相同步 R1 夜班进度](../../ASSET-CARDS.md#asset-hr-d7c4ca0bba65194f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260816-123 架构真相同步 R1 夜班进度 / ignition-123-nightshift-progress
+  - 来源：`reports/operations/ignition-123-nightshift-progress.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260818-126 — Epistemic Structural Induction R0 progress](../../ASSET-CARDS.md#asset-hr-3f9d23d382da2a17)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260818-126 — Epistemic Structural Induction R0 progress / ignition-126-progress
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix](../../ASSET-CARDS.md#asset-hr-97478cb8dceeba3a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix / ignition-132-step08-adversarial-matrix
+  - 来源：`reports/operations/ignition-132-step08-adversarial-matrix.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-132 Step 10 — Current Surface Recompilation and Stable Prose](../../ASSET-CARDS.md#asset-hr-722a8bc0a3bfd244)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-132 Step 10 — Current Surface Recompilation and Stable Prose / ignition-132-step10-surface-recompilation
+  - 来源：`reports/operations/ignition-132-step10-surface-recompilation.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh](../../ASSET-CARDS.md#asset-hr-314d6d340fda2a7b)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh / ignition-134-step07-human-surface-fingerprint-refresh
@@ -153,6 +338,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-19c3bc6c0cb45be0 / immediate recall, delayed retention, confidence, item accuracy, delay length, factual items, skills, randomized evidence
   - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
+  - 依赖：—；被引用：—
+- [Immutable-history boundary \(never mutated\)](../../../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dc02546802821578 / Immutable-history boundary \(never mutated\)
+  - 来源：`docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`
   - 依赖：—；被引用：—
 - [import validate_evidence_program as V # noqa: E402](../../../evidence-program/tests/test_evidence_program.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -734,6 +924,11 @@
   - 可搜索名称：NFC-67ab343c67223d61 / LEAD_DISCOVERED → IDENTIFIER_RESOLVED \(DOI/format check passes\)
   - 来源：`data/external-research/104-evidence-tier-schema.md`
   - 依赖：—；被引用：—
+- [ledger and other evidence files;](../../../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-62a873005b6ee660 / ledger and other evidence files;
+  - 来源：`docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md`
+  - 依赖：—；被引用：—
 - [ledger-bound Current overlay only. No validated live completion, external](../../../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-45271b5fd7d2b417 / ledger-bound Current overlay only. No validated live completion, external
@@ -768,6 +963,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3c73e09424c9ec46 / Life-community charter and general governance principles: CC BY-SA 4.0.
   - 来源：`reports/release/121Q9-final-release-candidate.md`
+  - 依赖：—；被引用：—
+- [life-integrity schema accepts UNKNOWN disclosures without evidence](../../../docs/architecture/ignition-r5a-life-integrity-r1/r5a-consolidated-repair-attack-acceptance.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9303d526592f3208 / life-integrity schema accepts UNKNOWN disclosures without evidence
+  - 来源：`docs/architecture/ignition-r5a-life-integrity-r1/r5a-consolidated-repair-attack-acceptance.json`
   - 依赖：—；被引用：—
 - [lifecycle evidence only; no Codex adapter completion, validated live result,](../../../reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1434,6 +1634,11 @@
   - 可搜索名称：NFC-1c87d9ab8af36a8e / Local validation evidence
   - 来源：`docs/analogy/121Q37-repair-r1-architecture.md`
   - 依赖：—；被引用：—
+- [logs/evidence — **no rewrite, no force-update, no history alteration**.](../../../docs/architecture/arr-r4-receipt-closure-diagnosis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b307938ae4da31cf / logs/evidence — **no rewrite, no force-update, no history alteration**.
+  - 来源：`docs/architecture/arr-r4-receipt-closure-diagnosis.md`
+  - 依赖：—；被引用：—
 - [LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ff6df4f67cae4990 / LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact
@@ -1659,6 +1864,11 @@
   - 可搜索名称：NFC-b3fee4d31f0c6402 / Machine evidence: `ignition/data/operations/iterations/140/step03-observation-plane-registration.json`.
   - 来源：`reports/operations/ignition-140-step03-observation-plane-registration.md`
   - 依赖：—；被引用：—
+- [machine gate requires exact ordered ID equality, unique case/evidence identity,](../../../docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-79ba3045281cb657 / machine gate requires exact ordered ID equality, unique case/evidence identity,
+  - 来源：`docs/governance/r5a-consolidated-contract-bypass-repair-r1.md`
+  - 依赖：—；被引用：—
 - [machine identity contract for the current architecture. Its current facts are](../../../docs/governance/current-state-sync-invariant.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-cb0707b686267f56 / machine identity contract for the current architecture. Its current facts are
@@ -1728,11 +1938,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-ff009a68c86cb6f6 / Make `projection-routes.json.anti_overstep_bindings` the **sole behavioral source**.
   - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
-  - 依赖：—；被引用：—
-- [Mandatory metric contradictions \(all resolved\)](../../../docs/architecture/arr-r4-self-reflection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-01dc199cd17c759e / Mandatory metric contradictions \(all resolved\)
-  - 来源：`docs/architecture/arr-r4-self-reflection.md`
   - 依赖：—；被引用：—
 - [Manual review records a human authority, required evidence and claim ceiling without spawning a validator; external atte](../../../docs/architecture/incremental-execution.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1948,6 +2153,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0138bc1479a341e4 / mutable working tree** \(`artifact_digest` recomputed from `path.read_text\(\)`\)
   - 来源：`docs/anomaly/q41-i1-repair-r1-summary.md`
+  - 依赖：—；被引用：—
+- [mutations block, and deterministic artifacts regenerate byte-identically. The](../../../docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5dbf21babbf301b4 / mutations block, and deterministic artifacts regenerate byte-identically. The
+  - 来源：`docs/governance/r5a-consolidated-contract-bypass-repair-r1.md`
   - 依赖：—；被引用：—
 - [n. You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2293,214 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-858b54d8d28738d4 / No intermediate state tracking. Programs are validated only end-to-end via test cases. Error localization identifies fai
   - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json`
-  - 依赖：—；被引用：—
-- [no machine-semantic crosswalk that safely unifies `ABSTAIN`, `NOT_ASSIGNED`, not-adjudicated and recovery blocking—and s](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fcd533375b61408a / no machine-semantic crosswalk that safely unifies `ABSTAIN`, `NOT_ASSIGNED`, not-adjudicated and recovery blocking—and s
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [No new obligation is manufactured, the next eligible action remains `RUN_DYNAMIC_EXECUTOR_ADMISSION`, and the historical](../../../reports/operations/ignition-142-step16-obligation-adjudication.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-65d61f5df8356fa9 / No new obligation is manufactured, the next eligible action remains `RUN_DYNAMIC_EXECUTOR_ADMISSION`, and the historical
-  - 来源：`reports/operations/ignition-142-step16-obligation-adjudication.md`
-  - 依赖：—；被引用：—
-- [No PR merged/closed/rebased. No Ψ0/085/old-tables/evidence-cards modified.](../../../data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bd6f2de4f1716cd7 / No PR merged/closed/rebased. No Ψ0/085/old-tables/evidence-cards modified.
-  - 来源：`data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md`
-  - 依赖：—；被引用：—
-- [No process, inference, auth/config/billing operation, UI action or workspace mutation occurred. Historical live counts r](../../../reports/operations/ignition-142-step13-live-attempt-a.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5cf37ccf4c034004 / No process, inference, auth/config/billing operation, UI action or workspace mutation occurred. Historical live counts r
-  - 来源：`reports/operations/ignition-142-step13-live-attempt-a.md`
-  - 依赖：—；被引用：—
-- [No Ready, merge, Current promotion, Owner acceptance, production readiness, external truth, epistemic acceptance, canoni](../../../reports/governance/task-IGNITION-20260907-164.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-57d674bd382edcff / No Ready, merge, Current promotion, Owner acceptance, production readiness, external truth, epistemic acceptance, canoni
-  - 来源：`reports/governance/task-IGNITION-20260907-164.md`
-  - 依赖：—；被引用：—
-- [No record in this scaffold carries a bare numeric probability \(`probability: 0.8`, `confidence: 0.9`\); the schemas do no](../../../docs/architecture/adaptive-relational-runtime-interop.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-56d5b341320f20d3 / No record in this scaffold carries a bare numeric probability \(`probability: 0.8`, `confidence: 0.9`\); the schemas do no
-  - 来源：`docs/architecture/adaptive-relational-runtime-interop.md`
-  - 依赖：—；被引用：—
-- [No second executor. Adapters read declared local files or already-fetched repo evidence](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c56e6330034c426e / No second executor. Adapters read declared local files or already-fetched repo evidence
-  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
-  - 依赖：—；被引用：—
-- [No selection or composition among independently trained operator artifacts is studied.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-04de9300b697e0b1 / No selection or composition among independently trained operator artifacts is studied.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [No semantic change to multi-history projection; no external action, L7, or](../../../docs/multihistory/d2-i1-repair-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e3b30e25bcc0b82d / No semantic change to multi-history projection; no external action, L7, or
-  - 来源：`docs/multihistory/d2-i1-repair-architecture.md`
-  - 依赖：—；被引用：—
-- [No source was treated as full-text evidence without actual download and hash verification.](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d85a86954c4c731f / No source was treated as full-text evidence without actual download and hash verification.
-  - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
-  - 依赖：—；被引用：—
-- [No specification language. Tasks defined by training datasets.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-27d5a200d53817b1 / No specification language. Tasks defined by training datasets.
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json`
-  - 依赖：—；被引用：—
-- [No state named `SUCCESS` is legal. Case, obligation, evidence and review states are separate namespaces and never imply](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1a729069822039b0 / No state named `SUCCESS` is legal. Case, obligation, evidence and review states are separate namespaces and never imply
-  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
-  - 依赖：—；被引用：—
-- [No Task142 live process was authorized or started, so `LIVE_EXTERNAL_INVOCATION` remains `OPEN`; the independent exact v](../../../reports/operations/ignition-142-step16-obligation-adjudication.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa1bb7f894848fc6 / No Task142 live process was authorized or started, so `LIVE_EXTERNAL_INVOCATION` remains `OPEN`; the independent exact v
-  - 来源：`reports/operations/ignition-142-step16-obligation-adjudication.md`
-  - 依赖：—；被引用：—
-- [No validated live completion occurred, so the historical `LIVE_EXTERNAL_INVOCATION` obligation remains open with its ori](../../../reports/operations/ignition-137-step12-obligation-lifecycle.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6f8e30fdf1940375 / No validated live completion occurred, so the historical `LIVE_EXTERNAL_INVOCATION` obligation remains open with its ori
-  - 来源：`reports/operations/ignition-137-step12-obligation-lifecycle.md`
-  - 依赖：—；被引用：—
-- [No validated next semantic leap can be named from this run.](../../../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4324aba65b41219e / No validated next semantic leap can be named from this run.
-  - 来源：`docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md`
-  - 依赖：—；被引用：—
-- [No validator semantics were weakened and no historical manifest, Human Surface entry, map source, or append-only histori](../../../reports/operations/ignition-132-step12-regression-closure.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-57f51a2bfea889e1 / No validator semantics were weakened and no historical manifest, Human Surface entry, map source, or append-only histori
-  - 来源：`reports/operations/ignition-132-step12-regression-closure.md`
-  - 依赖：—；被引用：—
-- [No Ψ₀ frozen assets, 085 frozen v1 assets, legacy two-table source files, or historical evidence cards were intentionall](../../../reports/governance/121Q8-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7b9864e6a60444b0 / No Ψ₀ frozen assets, 085 frozen v1 assets, legacy two-table source files, or historical evidence cards were intentionall
-  - 来源：`reports/governance/121Q8-final-report.md`
-  - 依赖：—；被引用：—
-- [Node 4: Artifact](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-701920732f557551 / Node 4: Artifact
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [nodes = load_jsonl\(f"{BASE}/121c01-function-os-node-evidence-increment.jsonl"\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-03268a0e2f5830c2 / nodes = load_jsonl\(f"{BASE}/121c01-function-os-node-evidence-increment.jsonl"\)
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
-  - 依赖：—；被引用：—
-- [non-OK must still record a reason \(never silently dropped\)](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-392fef7492457c11 / non-OK must still record a reason \(never silently dropped\)
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [Non-Sycophancy Output Protocol](../../ASSET-CARDS.md#asset-hr-70403729fef8b50e)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：Non-Sycophancy Output Protocol / non-sycophancy-output-protocol
-  - 来源：`docs/governance/non-sycophancy-output-protocol.md`
-  - 依赖：—；被引用：—
-- [nonfunction registry changed the declared Current Facts inputs. Current Facts,](../../../reports/operations/ignition-138-step13-targeted-regression.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5421779d6cc6a1b2 / nonfunction registry changed the declared Current Facts inputs. Current Facts,
-  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
-  - 依赖：—；被引用：—
-- [nor that the artifact bytes at that commit match the claimed `blob_sha`/`sha256`.](../../../docs/multihistory/d2-i1-repair-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-342d5940f10af945 / nor that the artifact bytes at that commit match the claimed `blob_sha`/`sha256`.
-  - 来源：`docs/multihistory/d2-i1-repair-architecture.md`
-  - 依赖：—；被引用：—
-- [not claim validated reader cognitive migration, literary quality, knowledge](../../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e85583fe169ccff4 / not claim validated reader cognitive migration, literary quality, knowledge
-  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
-  - 依赖：—；被引用：—
-- [Not every registered surface must change. Every applicable surface must receive exactly one explicit `CHANGE`, `NO_CHANG](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6ea07034fddf38df / Not every registered surface must change. Every applicable surface must receive exactly one explicit `CHANGE`, `NO_CHANG
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [nothing about real user data, external truth, production readiness, or Goal](../../../reports/operations/ignition-137-step05-synthetic-readonly-fixture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b2c39bb272f4a26d / nothing about real user data, external truth, production readiness, or Goal
-  - 来源：`reports/operations/ignition-137-step05-synthetic-readonly-fixture.md`
-  - 依赖：—；被引用：—
-- [NotIdentifiable --> AtomicOrIdentified: new identity evidence](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a99b98562260d02a / NotIdentifiable --> AtomicOrIdentified: new identity evidence
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [Object provenance or request-object boundary is unresolved.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-78931b0bb2ce4726 / Object provenance or request-object boundary is unresolved.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Obligation dependencies are acyclic and never imply truth inheritance.](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a9949d11c390aed / Obligation dependencies are acyclic and never imply truth inheritance.
-  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
-  - 依赖：—；被引用：—
-- [obligation registry 的当前动作仍是 `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`，历史 projection 的](../../../reports/operations/ignition-143-step17-current-state-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9e60bfe99b8d4ae7 / obligation registry 的当前动作仍是 `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`，历史 projection 的
-  - 来源：`reports/operations/ignition-143-step17-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5c886d56cdc9d3ac / obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED`; its six historical attempts and ze](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e6e72fe965d47262 / obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED`; its six historical attempts and ze
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero valida](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b60e5e84e35a6f3f / obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero valida
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` is carried forward in the independent obligation registry with status `OPEN`, bl](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-880f92136fb43e9e / obligations: `LIVE_EXTERNAL_INVOCATION` is carried forward in the independent obligation registry with status `OPEN`, bl
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-156029e0b11b06aa / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2b1e8d547fc0de3d / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-50626461930a7bac / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6fbf2c152169cfcb / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ab3b21656818ca24 / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d2a08a045a472c3f / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; its six historical attempts, zero validated comple](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5514619ef4afcbd4 / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; its six historical attempts, zero validated comple
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [obligations: complete Step15 natural candidate/fresh-clone regression, then ordinary fast-forward main and the independe](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1399faf8e06accd5 / obligations: complete Step15 natural candidate/fresh-clone regression, then ordinary fast-forward main and the independe
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-853faf13207f1d67"></a>
+## Blockers
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-853FAF13207F1D67` · [reports/math-foundation/blockers-20260712.md](../../reports/math-foundation/blockers-20260712.md)
+- **为什么产生：** 此来源记录了什么：Blockers？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/math-foundation/blockers-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Blockers`, `blockers-20260712`
+
+<a id="asset-hr-86779b6cdb3209b8"></a>
+## 22 本书验证候选案例 · 正式案例表入表 crosswalk
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-86779B6CDB3209B8` · [outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md](../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+- **为什么产生：** 此来源记录了什么：22 本书验证候选案例 · 正式案例表入表 crosswalk？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D353`, `T20`, `D177`
+- **来源与证据：** `outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`, `202`
+- **演化历史：** 2026-07-09: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `22 本书验证候选案例 · 正式案例表入表 crosswalk`, `formalization-crosswalk`
+
+<a id="asset-hr-86ad7c707a8b70d8"></a>
+## 080 Full Semantic Adjudication Report
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-86AD7C707A8B70D8` · [reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md](../../reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md)
+- **为什么产生：** 此来源记录了什么：080 Full Semantic Adjudication Report？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `T1`, `T3`, `T4`, `T5`, `T6`, `T7`, `T8`, `T9`, `T10`, `T11`, `T12`, `T13`
+- **来源与证据：** `reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md`, `080-FULL-SEMANTIC-ADJUDICATION-REPORT-20260713`
+- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `080 Full Semantic Adjudication Report`, `080-full-semantic-adjudication-report-20260713`
+
 <a id="asset-hr-86f21d4ffffb5629"></a>
 ## 跨线程认知碰撞协议 — IGNITION-20260908-165
 
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `22 本书籍验证案例候选 · 暂存层`, `README`
-
-<a id="asset-hr-9a37e04e46e43cf2"></a>
-## 121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9A37E04E46E43CF2` · [reports/external-research/121Q4-final-report.md](../../reports/external-research/121Q4-final-report.md)
-- **为什么产生：** 此来源记录了什么：121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Generated: 2026-07-15T03:50:00Z Branch: records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715 Status: CANDIDATE COMPLETE (Steps 000-024, consistency-sealed)
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/external-research/121Q4-final-report.md`, `121Q4-FINAL-REPORT`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation`, `121Q4-final-report`
-
-<a id="asset-hr-9aaea8346e63b9a2"></a>
-## IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9AAEA8346E63B9A2` · [reports/operations/ignition-134-step06-human-surface-semantic-audit.md](../../reports/operations/ignition-134-step06-human-surface-semantic-audit.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** All 11 named IDs were audited independently against their declared source and human entry. The result is 11 × SOURCECHANGEDHUMANSURFACESTILLSEMANTICALLYVALID, with zero regeneration-required cases, zero superseded cases, zero hash-only bookkeeping cases, and zero actual semantic conflicts.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-134-step06-human-surface-semantic-audit.md`, `134-STEP06-HUMAN-SURFACE-SEMANTIC-AUDIT`
-- **演化历史：** 2026-08-22: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit`, `ignition-134-step06-human-surface-semantic-audit`
-
-<a id="asset-hr-9ace99cd3f0ef0d5"></a>
-## IGNITION-20260825-139 Step 14 — Candidate natural full regression
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9ACE99CD3F0EF0D5` · [reports/operations/ignition-139-step14-candidate-full-regression.md](../../reports/operations/ignition-139-step14-candidate-full-regression.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260825-139 Step 14 — Candidate natural full regression？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** PASS on the repaired exact candidate head 9a3b4a5561cf389b4f8af91274391096f39f65c2:
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-139-step14-candidate-full-regression.md`, `139-STEP14-CANDIDATE-FULL-REGRESSION`
-- **演化历史：** 2026-08-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260825-139 Step 14 — Candidate natural full regression`, `ignition-139-step14-candidate-full-regression`

@@ -2,6 +2,8 @@
 
 版本事实从 `data/operations/current-snapshot-r1.json` 与 `data/architecture/current-facts.json` 恢复，不在本页复制易漂移的系统图版本。当前 Iteration Method 为 `1.4.0 Continuous Stage Snapshot Publication`；它治理点火如何改变自己。一般用户任务的入口是独立的[点火操作法](../OPERATING-METHOD.md)。阶段摘要可见不等于 Accepted、Current、Activated 或能力可用。
 
+R5-A 仍是堆叠 Draft、非 Main/Current/activated。`R5A-CR-001`–`011` 合同修复已在精确头 `c4576972…` 独立验收并由 PR #133 普通合并为 `ff158ba0…`，但这只接受修复，不接受完整 PR #130。AI 不得把候选分支中的阶段成果写成当前 Main 能力。唯一下一任务请求是建立“阶段成果进入 Main、但不自动成为 Accepted/Current”的持续快照与分层发布制度；这里只记录，不代表已实施。
+
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
 可任选一款你日常使用的 AI 助手：

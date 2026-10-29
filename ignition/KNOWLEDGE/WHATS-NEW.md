@@ -2772,6 +2772,24 @@
 - **来源：** [101-human-readable-surfaces-self-correction-closeout.md](../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
 - **资产卡：** [HR-04E3C04B5C9DE706](./ASSET-CARDS.md#asset-hr-04e3c04b5c9de706)
 
+<a id="change-src-hr-e8fa5ac0a66fa21a"></a>
+### 2026-07-26 · 点火“永远进行时”原则
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** SPDX-License-Identifier: CC-BY-SA-4.0
+- **来源：** [ignition-perpetual-present-principle.md](../docs/governance/ignition-perpetual-present-principle.md)
+- **资产卡：** [HR-E8FA5AC0A66FA21A](./ASSET-CARDS.md#asset-hr-e8fa5ac0a66fa21a)
+
+<a id="change-src-hr-cb582b64feee8bce"></a>
+### 2026-07-26 · R5-A consolidated contract-bypass narrow repair R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** R5ACONSOLIDATEDCONTRACTBYPASSREPAIRACCEPTEDMERGEDTOPR130SOURCECANDIDATENOTMAINNOTCURRENT
+- **来源：** [r5a-consolidated-contract-bypass-repair-r1.md](../docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)
+- **资产卡：** [HR-CB582B64FEEE8BCE](./ASSET-CARDS.md#asset-hr-cb582b64feee8bce)
+
 <a id="change-src-hr-bda837b6080acf95"></a>
 ### 2026-07-26 · IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report
 
@@ -2799,6 +2817,15 @@
 - **来源：** [charter-system-r1.md](../docs/governance/charter-system-r1.md)
 - **资产卡：** [HR-715F3951A2B86789](./ASSET-CARDS.md#asset-hr-715f3951a2b86789)
 
+<a id="change-src-hr-531d1eba40f26855"></a>
+### 2026-07-26 · R5-A Night Queue R1 adjudication and narrow repair
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** NIGHTQUEUER1PARTIALSALVAGENOTACCEPTED
+- **来源：** [r5a-night-queue-r1-adjudication.md](../docs/governance/r5a-night-queue-r1-adjudication.md)
+- **资产卡：** [HR-531D1EBA40F26855](./ASSET-CARDS.md#asset-hr-531d1eba40f26855)
+
 <a id="change-src-hr-4f3c4ff4a7ab0e3a"></a>
 ### 2026-07-26 · Current Main vs 1.4 Candidate Homepage Comparison
 
@@ -2817,6 +2844,15 @@
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
 
+<a id="change-src-hr-fa4c0144d96151d1"></a>
+### 2026-07-25 · ARR R3/R4 Metric Semantics & Observability Closure — ADR
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** R4 metric-disclosure & relay-receipt repair (PR 128) closed the 27-item capability closed set, separated governance enum from the no-action safety invariant, and distinguished contradiction attribution from repair. Four lower-level metric / reporting issues remain before R5 can rely on observabil…
+- **来源：** [arr-r3-r4-metric-observability-closure-adrs.md](../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+- **资产卡：** [HR-FA4C0144D96151D1](./ASSET-CARDS.md#asset-hr-fa4c0144d96151d1)
+
 <a id="change-src-hr-f24a15ff21b59f0a"></a>
 ### 2026-07-25 · ARR R4 — Gap / Architecture-Candidate Gate
 
@@ -2834,6 +2870,69 @@
 - **变化：** Task class: high-risk stacked Draft / real-object read-only pilot Predecessor: PR 120 architecture/adaptive-relational-runtime-r1-scaffold @ a0d6c46 Base branch: architecture/adaptive-relational-runtime-r1-scaffold (NOT Main) R2 branch: runtime/adaptive-relational-runtime-r2-real-object-pilot Com…
 - **来源：** [adaptive-relational-runtime-r2-real-object-pilot.md](../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
 - **资产卡：** [HR-DE58F9ADF534AC72](./ASSET-CARDS.md#asset-hr-de58f9adf534ac72)
+
+<a id="change-src-hr-dc97d62125a942b9"></a>
+### 2026-07-25 · R5-A 架构决策记录（Adaptive Relational Runtime R5-A ADRs）
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [adaptive-relational-runtime-r5a-adrs.md](../docs/architecture/adaptive-relational-runtime-r5a-adrs.md)
+- **资产卡：** [HR-DC97D62125A942B9](./ASSET-CARDS.md#asset-hr-dc97d62125a942b9)
+
+<a id="change-src-hr-db662c8d453d0e8a"></a>
+### 2026-07-25 · 点火生命完整性架构 R5-A R1（Ignition Life Integrity R5-A R1）
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** R5-A 不是运行时、不是第二执行器、不是 L7。它是把“性命一体、身心互成”这一用户授权规范来源转写为可机器测试的治理与架构合同的候选叠加层。它复用 ARR 通用原语（Source / Observation / Object / State / Event / Assertion / Relation / Mechanism），不建立平行真值层。
+- **来源：** [ignition-life-integrity-r5a-r1.md](../docs/architecture/ignition-life-integrity-r5a-r1.md)
+- **资产卡：** [HR-DB662C8D453D0E8A](./ASSET-CARDS.md#asset-hr-db662c8d453d0e8a)
+
+<a id="change-src-hr-c96b4a9a3a112bf1"></a>
+### 2026-07-25 · R4 Receipt-Closure Diagnosis (repair prerequisite)
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** External review's precise refetch of the designated predecessor R4 receipt branch and the contracted receipt paths returned 404. The private R4 evidence branch (agent/adaptive-relational-runtime-r4-waic-self-reflection-r1-20260725) is remotely readable; only the relay receipt closure is not.
+- **来源：** [arr-r4-receipt-closure-diagnosis.md](../docs/architecture/arr-r4-receipt-closure-diagnosis.md)
+- **资产卡：** [HR-C96B4A9A3A112BF1](./ASSET-CARDS.md#asset-hr-c96b4a9a3a112bf1)
+
+<a id="change-src-hr-c7dd4d4a9deed628"></a>
+### 2026-07-25 · 生命完整性未来激活边界 R5-A R1（Life Integrity Future Activation Boundary R1）
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本候选所有激活相关计数器保持为零（modernwuzhenpackstarted=false、domainpackfederationstarted=false、humaninterventionenabled=false、externalacceptanceclaimed=false）。任何激活必须经用户显式授权与独立外部审查，不得在 R5-A 内自启动。
+- **来源：** [life-integrity-future-activation-boundary-r1.md](../docs/architecture/life-integrity-future-activation-boundary-r1.md)
+- **资产卡：** [HR-C7DD4D4A9DEED628](./ASSET-CARDS.md#asset-hr-c7dd4d4a9deed628)
+
+<a id="change-src-hr-bd785f9a791c0369"></a>
+### 2026-07-25 · ARR R4 — Metric Disclosure & Relay Receipt Repair R1 (External Review Package)
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This package is the public, non-private summary of the narrow repair authorized by external R4 review. It closes the four findings raised in that review without touching PR 127, the frozen R4 head, or the R3 corpus.
+- **来源：** [arr-r4-metric-disclosure-repair-external-review.md](../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+- **资产卡：** [HR-BD785F9A791C0369](./ASSET-CARDS.md#asset-hr-bd785f9a791c0369)
+
+<a id="change-src-hr-a2d4a6cfa3e1870f"></a>
+### 2026-07-25 · 生命完整性非影响证明 R5-A R1（Life Integrity Non-Impact Proof R1）
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** lifeintegrityr5a/nonimpact.py::buildnonimpactproof() 返回上述清单的声明式证明。窄修复不再以该声明自证：tools/validatelifeintegrityr5arepair.py 同时运行包 import 边界和从精确 R5-A 冻结头开始的 changed-path scope gate，任何 R5-B/R5-C/R6、生产运行时或 ARR 实现路径变更均阻断。
+- **来源：** [life-integrity-non-impact-proof-r1.md](../docs/architecture/life-integrity-non-impact-proof-r1.md)
+- **资产卡：** [HR-A2D4A6CFA3E1870F](./ASSET-CARDS.md#asset-hr-a2d4a6cfa3e1870f)
+
+<a id="change-src-hr-7a4fd027adb33d3d"></a>
+### 2026-07-25 · 传统/宗教材料翻译管线 R5-A R1（Tradition Translation Pipeline R1）
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 来源 provenance、源语言/翻译状态、说话者/作者/归属状态、claim class、字面文本引用或非公开摘要引用、解释层、证据等级、机制状态、适用边界、权利边界、置信度与 UNKNOWNs、禁止升级、修订历史。
+- **来源：** [tradition-translation-pipeline-r1.md](../docs/architecture/tradition-translation-pipeline-r1.md)
+- **资产卡：** [HR-7A4FD027ADB33D3D](./ASSET-CARDS.md#asset-hr-7a4fd027adb33d3d)
 
 <a id="change-src-hr-60754e6f4aa10a57"></a>
 ### 2026-07-25 · Adaptive Relational Runtime R2 — Architecture Decision Records
@@ -2861,6 +2960,15 @@
 - **变化：** taskid: ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725 controlcommit: e8530a7d87f13ef09cea58d34f6f548a695d7955
 - **来源：** [adaptive-relational-runtime-r4-adrs.md](../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
 - **资产卡：** [HR-411160237EFE6D62](./ASSET-CARDS.md#asset-hr-411160237efe6d62)
+
+<a id="change-src-hr-3afc00a4edf85646"></a>
+### 2026-07-25 · 生命完整性附则候选 R1（Life Integrity Annex Candidate R1）
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 本候选不激活附则、不启用人体干预、不授权医疗主张、不启动《新悟真篇》领域包、不启动领域包/联邦运行时、不宣称外部接受。张伯端与南宗材料仅作为历史与概念来源及候选协议，绝不作为科学或临床权威。
+- **来源：** [life-integrity-charter-candidate-r1.md](../docs/governance/life-integrity-charter-candidate-r1.md)
+- **资产卡：** [HR-3AFC00A4EDF85646](./ASSET-CARDS.md#asset-hr-3afc00a4edf85646)
 
 <a id="change-src-hr-e2706f26c12e2dff"></a>
 ### 2026-07-24 · Adaptive Relational Runtime / 自适应关系运行时(R1 Scaffold 主合同)

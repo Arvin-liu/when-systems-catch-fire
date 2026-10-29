@@ -1,0 +1,380 @@
+{
+  "claim_ceiling": "software_behavior_reproduced",
+  "count_is_not_acceptance": true,
+  "executed_case_ids": [
+    "R5A-CR-001",
+    "R5A-CR-002",
+    "R5A-CR-003",
+    "R5A-CR-004",
+    "R5A-CR-005",
+    "R5A-CR-006",
+    "R5A-CR-007",
+    "R5A-CR-008",
+    "R5A-CR-009",
+    "R5A-CR-010",
+    "R5A-CR-011"
+  ],
+  "failed_case_ids": [],
+  "identity_errors": [],
+  "independent_acceptance_claimed": false,
+  "rejected_candidate_head": "f33be64b26ef14d14098f42ec947bd93fddd245c",
+  "required_case_ids": [
+    "R5A-CR-001",
+    "R5A-CR-002",
+    "R5A-CR-003",
+    "R5A-CR-004",
+    "R5A-CR-005",
+    "R5A-CR-006",
+    "R5A-CR-007",
+    "R5A-CR-008",
+    "R5A-CR-009",
+    "R5A-CR-010",
+    "R5A-CR-011"
+  ],
+  "results": [
+    {
+      "case_id": "R5A-CR-001",
+      "evidence_id": "EV-R5A-CR-001",
+      "expected_error": "ForbiddenClaimUpgradeError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "tradition_translation.direct_constructor",
+      "surface_results": [
+        {
+          "detail": "forbidden silent upgrade: PHENOMENOLOGICAL_REPORT -> EMPIRICALLY_SUPPORTED_MECHANISM",
+          "expected_errors": [
+            "ForbiddenClaimUpgradeError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ForbiddenClaimUpgradeError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.TranslatedClaim"
+        },
+        {
+          "detail": "{'source_provenance': 'synthetic-source', 'source_language': 'zh', 'translation_status': 'literal', 'attribution_status': 'reported', 'claim_class': 'PHENOMENOLOGICAL_REPORT', 'literal_reference': 'synthetic-ref-001', 'interpretation_layer': 'SOURCE_LITERAL', 'evidence_grade': 'SOFTWARE_CONTRACT_ONLY', 'mechanism_status': 'EMPIRICALLY_SUPPORTED_MECHANISM', 'applicability_scope': 'synthetic software fixture only', 'rights_boundary': 'synthetic public fixture', 'confidence': 0.5, 'unknowns': ['real-world validity'], 'prohibited_upgrades': ['PHENOMENOLOGICAL_REPORT->EMPIRICALLY_SUPPORTED_MECHANISM'], 'revision_history': []} should not be valid under {'properties': {'claim_class': {'const': 'PHENOMENOLOGICAL_REPORT'}, 'mechanism_status': {'const': 'EMPIRICALLY_SUPPORTED_MECHANISM'}}, 'required': ['claim_class', 'mechanism_status']}\n\nFailed validating 'not' in schema['allOf'][0]:\n    {'not': {'properties': {'claim_class': {'const': 'PHENOMENOLOGICAL_REPORT'},\n                            'mechanism_status': {'const': 'EMPIRICALLY_SUPPORTED_MECHANISM'}},\n             'required': ['claim_class', 'mechanism_status']}}\n\nOn instance:\n    {'source_provenance': 'synthetic-source',\n     'source_language': 'zh',\n     'translation_status': 'literal',\n     'attribution_status': 'reported',\n     'claim_class': 'PHENOMENOLOGICAL_REPORT',\n     'literal_reference': 'synthetic-ref-001',\n     'interpretation_layer': 'SOURCE_LITERAL',\n     'evidence_grade': 'SOFTWARE_CONTRACT_ONLY',\n     'mechanism_status': 'EMPIRICALLY_SUPPORTED_MECHANISM',\n     'applicability_scope': 'synthetic software fixture only',\n     'rights_boundary': 'synthetic public fixture',\n     'confidence': 0.5,\n     'unknowns': ['real-world validity'],\n     'prohibited_upgrades': ['PHENOMENOLOGICAL_REPORT->EMPIRICALLY_SUPPORTED_MECHANISM'],\n     'revision_history': []}",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.translated-claim"
+        }
+      ],
+      "title": "direct forbidden translated-claim construction"
+    },
+    {
+      "case_id": "R5A-CR-002",
+      "evidence_id": "EV-R5A-CR-002",
+      "expected_error": "TranslatedClaimContractError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "tradition_translation.required_fields",
+      "surface_results": [
+        {
+          "detail": "source_provenance must be a non-blank string",
+          "expected_errors": [
+            "TranslatedClaimContractError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "TranslatedClaimContractError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.TranslatedClaim"
+        },
+        {
+          "detail": "'' should be non-empty\n\nFailed validating 'minLength' in schema['properties']['source_provenance']:\n    {'type': 'string', 'minLength': 1, 'pattern': '.*\\\\S.*'}\n\nOn instance['source_provenance']:\n    ''",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.translated-claim"
+        }
+      ],
+      "title": "incomplete and overconfident translated claim"
+    },
+    {
+      "case_id": "R5A-CR-003",
+      "evidence_id": "EV-R5A-CR-003",
+      "expected_error": "EmbodiedViewError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "embodied_view.provenance_boundary",
+      "surface_results": [
+        {
+          "detail": "view provenance_boundary must match the agent provenance_boundary",
+          "expected_errors": [
+            "EmbodiedViewError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "EmbodiedViewError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.EmbodiedAgent.add_view"
+        }
+      ],
+      "title": "view crosses the agent provenance boundary"
+    },
+    {
+      "case_id": "R5A-CR-004",
+      "evidence_id": "EV-R5A-CR-004",
+      "expected_error": "EmbodiedViewError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "embodied_view.cross_view_relation",
+      "surface_results": [
+        {
+          "detail": "relation_type must be a non-blank string",
+          "expected_errors": [
+            "EmbodiedViewError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "EmbodiedViewError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.CrossViewRelation"
+        },
+        {
+          "detail": "'   ' does not match '.*\\\\S.*'\n\nFailed validating 'pattern' in schema['properties']['relation_type']:\n    {'type': 'string', 'minLength': 1, 'pattern': '.*\\\\S.*'}\n\nOn instance['relation_type']:\n    '   '",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.CrossViewRelation"
+        }
+      ],
+      "title": "whitespace-only cross-view relation type"
+    },
+    {
+      "case_id": "R5A-CR-005",
+      "evidence_id": "EV-R5A-CR-005",
+      "expected_error": "StopTreatmentRecommendationError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "safety_envelope.structured_text",
+      "surface_results": [
+        {
+          "detail": "envelope must not recommend stopping prescribed treatment or substituting an unverified practice for professional care",
+          "expected_errors": [
+            "StopTreatmentRecommendationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "StopTreatmentRecommendationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.validate_envelope"
+        },
+        {
+          "detail": "{'educational_vs_individualized': 'EDUCATIONAL_ONLY', 'intended_population': 'general adults', 'exclusion_criteria': 'none known', 'contraindications': 'none known', 'risk_severity': 'LOW', 'informed_consent_required': True, 'dependency_coercion_risk': 'LOW', 'stop_conditions': 'discontinue if adverse', 'rollback_exit_path': 'stop practice', 'professional_referral_boundary': 'licensed clinician', 'emergency_boundary': 'call emergency services', 'interaction_with_existing_care': 'COORDINATE_WITH_PROFESSIONAL', 'evidence_grade': 'SOFTWARE_CONTRACT_ONLY', 'unknowns': ['long-term data'], 'long_term_followup_plan': 'stop taking your medication', 'raw_text': 'discuss options with a licensed clinician'} should not be valid under {'properties': {'long_term_followup_plan': {'anyOf': [{'pattern': '\\\\bstop\\\\s+(?:taking\\\\s+)?(?:your\\\\s+)?(?:prescribed\\\\s+)?(?:medication|medicine|treatment|therapy)\\\\b'}, {'pattern': '\\\\bdiscontinue\\\\s+(?:your\\\\s+)?(?:prescribed\\\\s+)?(?:medication|medicine|treatment|therapy)\\\\b'}, {'pattern': '\\\\b(?:replace|substitute|abandon)\\\\s+(?:your\\\\s+)?(?:prescribed\\\\s+)?(?:medication|treatment|therapy|care)\\\\b'}, {'pattern': '\\\\bthis\\\\s+replaces\\\\s+your\\\\s+(?:treatment|therapy|care)\\\\b'}, {'pattern': '\\\\byou\\\\s+(?:must|have\\\\s+to)\\\\s+(?:continue|comply)\\\\b'}, {'pattern': '停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)'}, {'pattern': '(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)'}, {'pattern': '(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)'}, {'pattern': 'stop\\\\ taking'}, {'pattern': 'stop\\\\ your'}, {'pattern': 'discontinue\\\\ your\\\\ medication'}, {'pattern': 'discontinue\\\\ prescribed'}, {'pattern': 'replace\\\\ your'}, {'pattern': 'substitute\\\\ for'}, {'pattern': 'instead\\\\ of\\\\ your\\\\ prescribed'}, {'pattern': 'stop\\\\ prescribed'}, {'pattern': 'quit\\\\ your\\\\ medication'}, {'pattern': 'replace\\\\ prescribed'}, {'pattern': 'stop\\\\ the\\\\ medication'}, {'pattern': 'come\\\\ off\\\\ your'}]}}, 'required': ['long_term_followup_plan']}\n\nFailed validating 'not' in schema['allOf'][12]:\n    {'not': {'properties': {'long_term_followup_plan': {'anyOf': [{'pattern': '\\\\bstop\\\\s+(?:taking\\\\s+)?(?:your\\\\s+)?(?:prescribed\\\\s+)?(?:medication|medicine|treatment|therapy)\\\\b'},\n                                                                  {'pattern': '\\\\bdiscontinue\\\\s+(?:your\\\\s+)?(?:prescribed\\\\s+)?(?:medication|medicine|treatment|therapy)\\\\b'},\n                                                                  {'pattern': '\\\\b(?:replace|substitute|abandon)\\\\s+(?:your\\\\s+)?(?:prescribed\\\\s+)?(?:medication|treatment|therapy|care)\\\\b'},\n                                                                  {'pattern': '\\\\bthis\\\\s+replaces\\\\s+your\\\\s+(?:treatment|therapy|care)\\\\b'},\n                                                                  {'pattern': '\\\\byou\\\\s+(?:must|have\\\\s+to)\\\\s+(?:continue|comply)\\\\b'},\n                                                                  {'pattern': '停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)'},\n                                                                  {'pattern': '(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)'},\n                                                                  {'pattern': '(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)'},\n                                                                  {'pattern': 'stop\\\\ '\n                                                                              'taking'},\n                                                                  {'pattern': 'stop\\\\ '\n                                                                              'your'},\n                                                                  {'pattern': 'discontinue\\\\ '\n                                                                              'your\\\\ '\n                                                                              'medication'},\n                                                                  {'pattern': 'discontinue\\\\ '\n                                                                              'prescribed'},\n                                                                  {'pattern': 'replace\\\\ '\n                                                                              'your'},\n                                                                  {'pattern': 'substitute\\\\ '\n                                                                              'for'},\n                                                                  {'pattern': 'instead\\\\ '\n                                                                              'of\\\\ '\n                                                                              'your\\\\ '\n                                                                              'prescribed'},\n                                                                  {'pattern': 'stop\\\\ '\n                                                                              'prescribed'},\n                                                                  {'pattern': 'quit\\\\ '\n                                                                              'your\\\\ '\n                                                                              'medication'},\n                                                                  {'pattern': 'replace\\\\ '\n                                                                              'prescribed'},\n                                                                  {'pattern': 'stop\\\\ '\n                                                                              'the\\\\ '\n                                                                              'medication'},\n                                                                  {'pattern': 'come\\\\ '\n                                                                              'off\\\\ '\n                                                                              'your'}]}},\n             'required': ['long_term_followup_plan']}}\n\nOn instance:\n    {'educational_vs_individualized': 'EDUCATIONAL_ONLY',\n     'intended_population': 'general adults',\n     'exclusion_criteria': 'none known',\n     'contraindications': 'none known',\n     'risk_severity': 'LOW',\n     'informed_consent_required': True,\n     'dependency_coercion_risk': 'LOW',\n     'stop_conditions': 'discontinue if adverse',\n     'rollback_exit_path': 'stop practice',\n     'professional_referral_boundary': 'licensed clinician',\n     'emergency_boundary': 'call emergency services',\n     'interaction_with_existing_care': 'COORDINATE_WITH_PROFESSIONAL',\n     'evidence_grade': 'SOFTWARE_CONTRACT_ONLY',\n     'unknowns': ['long-term data'],\n     'long_term_followup_plan': 'stop taking your medication',\n     'raw_text': 'discuss options with a licensed clinician'}",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.practice-safety-envelope"
+        }
+      ],
+      "title": "stop-treatment language hidden in a structured field"
+    },
+    {
+      "case_id": "R5A-CR-006",
+      "evidence_id": "EV-R5A-CR-006",
+      "expected_error": "SafetyViolationError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "safety_envelope.runtime_types",
+      "surface_results": [
+        {
+          "detail": "informed_consent_required must be a boolean",
+          "expected_errors": [
+            "SafetyViolationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "SafetyViolationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.validate_envelope.combined"
+        },
+        {
+          "detail": "informed_consent_required must be a boolean",
+          "expected_errors": [
+            "SafetyViolationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "SafetyViolationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.validate_envelope.integer-consent"
+        },
+        {
+          "detail": "unknowns must be an array",
+          "expected_errors": [
+            "SafetyViolationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "SafetyViolationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.validate_envelope.mapping-unknowns"
+        },
+        {
+          "detail": "1 is not of type 'boolean'\n\nFailed validating 'type' in schema['properties']['informed_consent_required']:\n    {'type': 'boolean', 'const': True}\n\nOn instance['informed_consent_required']:\n    1",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.practice-safety-envelope"
+        }
+      ],
+      "title": "boolean and array runtime type confusion"
+    },
+    {
+      "case_id": "R5A-CR-007",
+      "evidence_id": "EV-R5A-CR-007",
+      "expected_error": "LongitudinalContractError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "longitudinal.distinct_times",
+      "surface_results": [
+        {
+          "detail": "observation, decision, intervention, and review times must be distinct ordered fields",
+          "expected_errors": [
+            "LongitudinalContractError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "LongitudinalContractError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.validate_longitudinal_contract"
+        }
+      ],
+      "title": "equal longitudinal observation and decision times"
+    },
+    {
+      "case_id": "R5A-CR-008",
+      "evidence_id": "EV-R5A-CR-008",
+      "expected_error": "UnknownConceptStateError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "concept_mapping.current_state",
+      "surface_results": [
+        {
+          "detail": "unknown current state: 'BOGUS_STATE'",
+          "expected_errors": [
+            "UnknownConceptStateError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "UnknownConceptStateError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "runtime.ConceptMapping"
+        },
+        {
+          "detail": "'BOGUS_STATE' is not one of ['UNMAPPED', 'SYMBOLIC_DESCRIPTION', 'PHENOMENOLOGICAL_CANDIDATE', 'PRACTICE_FUNCTION_CANDIDATE', 'MECHANISM_HYPOTHESIS', 'PARTIALLY_SUPPORTED', 'CONTRADICTED', 'UNKNOWN']\n\nFailed validating 'enum' in schema['properties']['current_state']:\n    {'enum': ['UNMAPPED',\n              'SYMBOLIC_DESCRIPTION',\n              'PHENOMENOLOGICAL_CANDIDATE',\n              'PRACTICE_FUNCTION_CANDIDATE',\n              'MECHANISM_HYPOTHESIS',\n              'PARTIALLY_SUPPORTED',\n              'CONTRADICTED',\n              'UNKNOWN']}\n\nOn instance['current_state']:\n    'BOGUS_STATE'",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.concept-mapping-transition"
+        }
+      ],
+      "title": "caller-supplied concept state outside the closed set"
+    },
+    {
+      "case_id": "R5A-CR-009",
+      "evidence_id": "EV-R5A-CR-009",
+      "expected_error": "ValidationError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "schema.life_integrity_assessment",
+      "surface_results": [
+        {
+          "detail": "'UNKNOWN' should not be valid under {'enum': ['', 'UNKNOWN', 'NOT_OBSERVED']}\n\nFailed validating 'not' in schema['properties']['proposal']['properties']['intended_benefit']:\n    {'type': 'string',\n     'minLength': 1,\n     'pattern': '.*\\\\S.*',\n     'not': {'enum': ['', 'UNKNOWN', 'NOT_OBSERVED']}}\n\nOn instance['proposal']['intended_benefit']:\n    'UNKNOWN'",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.life-integrity-assessment-schema.json"
+        }
+      ],
+      "title": "life-integrity schema accepts UNKNOWN disclosures without evidence"
+    },
+    {
+      "case_id": "R5A-CR-010",
+      "evidence_id": "EV-R5A-CR-010",
+      "expected_error": "ValidationError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "schema.translated_claim",
+      "surface_results": [
+        {
+          "detail": "'source_language' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'meta': {'task_id': 'IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725',\n              'repair_task_id': 'IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726',\n              'control_commit': 'd653c07ed6b108c98e16d111c014f87d7c7987f2',\n              'formal_predecessor': 'f236543dadcaf79ba9dba750fa21bd8b5c65a33a',\n              'candidate_frozen_head': '0e9d1e5823b41b7e9375e5f634388371b9b024ac',\n              'schema_version': 'r5a/v1.2-consolidated-contract-repair',\n              'generated_by': 'tools/generate_life_integrity_r5a.py',\n              'activation_status': 'CANDIDATE_ONLY',\n              'human_intervention_enabled': False,\n              'medical_claims_authorized': False,\n              'modern_wuzhen_pack_started': False,\n              'domain_pack_federation_started': False,\n              'external_acceptance_claimed': False,\n              'supreme_charter': 'LifeCommunityValueCharter'},\n     'schema': 'r5a/translated-claim/v1',\n     'title': 'TranslatedClaim',\n     'type': 'object',\n     'properties': {'source_provenance': {'type': 'string',\n                                          'minLength': 1,\n                                          'pattern': '.*\\\\S.*'},\n                    'source_language': {'type': 'string',\n                                        'minLength': 1,\n                                        'pattern': '.*\\\\S.*'},\n                    'translation_status': {'type': 'string',\n                                           'minLength': 1,\n                                           'pattern': '.*\\\\S.*'},\n                    'attribution_status': {'type': 'string',\n                                           'minLength': 1,\n                                           'pattern': '.*\\\\S.*'},\n                    'claim_class': {'enum': ['HISTORICAL_SOURCE',\n                                             'NORMATIVE_CLAIM',\n                                             'METAPHYSICAL_CLAIM',\n                                             'PHENOMENOLOGICAL_REPORT',\n                                             'PRACTICE_PROTOCOL',\n                                             'MECHANISM_HYPOTHESIS',\n                                             'RITUAL_SOCIAL_TECHNOLOGY',\n                                             'OUTCOME_OR_HARM_REPORT']},\n                    'literal_reference': {'type': 'string',\n                                          'minLength': 1,\n                                          'pattern': '.*\\\\S.*'},\n                    'interpretation_layer': {'enum': ['SOURCE_LITERAL',\n                                                      'AUTHOR_INTENT_CANDIDATE',\n                                                      'LATER_INTERPRETATION',\n                                                      'MODERN_RECONSTRUCTION']},\n                    'evidence_grade': {'type': 'string',\n                                       'minLength': 1,\n                                       'pattern': '.*\\\\S.*'},\n                    'mechanism_status': {'enum': ['NOT_ASSERTED',\n                                                  'MECHANISM_HYPOTHESIS',\n                                                  'EMPIRICALLY_SUPPORTED_MECHANISM',\n                                                  'SCIENTIFIC_FACT',\n                                                  'CLINICAL_EFFICACY',\n                                                  'EFFECTIVENESS']},\n                    'applicability_scope': {'type': 'string',\n                                            'minLength': 1,\n                                            'pattern': '.*\\\\S.*'},\n                    'rights_boundary': {'type': 'string',\n                                        'minLength': 1,\n                                        'pattern': '.*\\\\S.*'},\n                    'confidence': {'type': 'number',\n                                   'minimum': 0,\n                                   'maximum': 1},\n                    'unknowns': {'type': 'array',\n                                 'items': {'type': 'string',\n                                           'minLength': 1,\n                                           'pattern': '.*\\\\S.*'}},\n                    'prohibited_upgrades': {'type': 'array',\n                                            'items': {'type': 'string',\n                                                      'minLength': 1,\n                                                      'pattern': '.*\\\\S.*'}},\n                    'revision_history': {'type': 'array',\n                                         'items': {'type': 'object'}}},\n     'required': ['source_provenance',\n                  'source_language',\n                  'translation_status',\n                  'attribution_status',\n                  'claim_class',\n                  'literal_reference',\n                  'interpretation_layer',\n                  'evidence_grade',\n                  'mechanism_status',\n                  'applicability_scope',\n                  'rights_boundary',\n                  'confidence',\n                  'unknowns',\n                  'prohibited_upgrades',\n                  'revision_history'],\n     'additionalProperties': False,\n     'allOf': [{'not': {'properties': {'claim_class': {'const': 'PHENOMENOLOGICAL_REPORT'},\n                                       'mechanism_status': {'const': 'EMPIRICALLY_SUPPORTED_MECHANISM'}},\n                        'required': ['claim_class', 'mechanism_status']}},\n               {'not': {'properties': {'claim_class': {'const': 'METAPHYSICAL_CLAIM'},\n                                       'mechanism_status': {'const': 'SCIENTIFIC_FACT'}},\n                        'required': ['claim_class', 'mechanism_status']}},\n               {'not': {'properties': {'claim_class': {'const': 'PRACTICE_PROTOCOL'},\n                                       'mechanism_status': {'const': 'CLINICAL_EFFICACY'}},\n                        'required': ['claim_class', 'mechanism_status']}},\n               {'not': {'properties': {'interpretation_layer': {'const': 'LATER_INTERPRETATION'},\n                                       'attribution_status': {'const': 'AUTHOR_INTENT'}},\n                        'required': ['interpretation_layer',\n                                     'attribution_status']}}],\n     'forbidden_upgrades': [{'from': 'HISTORICAL_LONGEVITY',\n                             'to': 'EFFECTIVENESS'},\n                            {'from': 'LATER_INTERPRETATION',\n                             'to': 'AUTHOR_INTENT'},\n                            {'from': 'METAPHYSICAL_CLAIM',\n                             'to': 'SCIENTIFIC_FACT'},\n                            {'from': 'PHENOMENOLOGICAL_REPORT',\n                             'to': 'EMPIRICALLY_SUPPORTED_MECHANISM'},\n                            {'from': 'PRACTICE_PROTOCOL',\n                             'to': 'CLINICAL_EFFICACY'}],\n     'fail_closed_rules': ['claim_class must be in the eight-class closed '\n                           'set',\n                           'the five forbidden silent upgrades are '\n                           'rejected at build time',\n                           'mechanism_status/interpretation_layer may not '\n                           'realize a forbidden upgrade target',\n                           'out-of-set aliases fail closed instead of '\n                           'being treated as semantic evidence']}\n\nOn instance:\n    {'source_provenance': 'synthetic', 'claim_class': 'HISTORICAL_SOURCE'}",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.translated-claim-schema.json"
+        }
+      ],
+      "title": "translated-claim schema accepts only two fields"
+    },
+    {
+      "case_id": "R5A-CR-011",
+      "evidence_id": "EV-R5A-CR-011",
+      "expected_error": "ValidationError",
+      "expected_outcome": "REJECTED",
+      "observed_outcome": "REJECTED",
+      "passed": true,
+      "primary_surface": "schema.longitudinal_feedback",
+      "surface_results": [
+        {
+          "detail": "1 is not of type 'string'\n\nFailed validating 'type' in schema['properties']['contract_id']:\n    {'type': 'string', 'minLength': 1, 'pattern': '.*\\\\S.*'}\n\nOn instance['contract_id']:\n    1",
+          "expected_errors": [
+            "ValidationError"
+          ],
+          "expected_outcome": "REJECTED",
+          "observed_error": "ValidationError",
+          "observed_outcome": "REJECTED",
+          "passed": true,
+          "surface": "schema.longitudinal-feedback-schema.json"
+        }
+      ],
+      "title": "longitudinal schema accepts integers for all required fields"
+    }
+  ],
+  "schema": "r5a/consolidated-contract-bypass-repair-acceptance/v1",
+  "status": "PASS",
+  "task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726"
+}

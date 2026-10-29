@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "purpose": "Versioned, evidence-backed mapping from registered components and their declared consumers to repository test targets for R/O/G pull-request validation.",
   "claim_ceiling": "This map selects repository validation only. It does not establish real-world causal effects, grant execution or publication authority, or replace required shared security, permission, evidence, review, or release checks.",
   "targets": [
@@ -266,6 +266,22 @@
         "arr_runtime_pytest"
       ],
       "evidence": "The registered ARR static gate and focused pytest suite exercise adapter-only boundaries, fixtures, schemas, and growth-ceiling controls; existing router tests preserve exact target and fail-closed routing behavior. The six synthetic R3 corpus modules cover inventory, semantic analysis, checkpoint/resume, privacy boundaries, aggregation, and acceptance without loading the private WAIC corpus or enabling PROMOTE/EVOLVE."
+    },
+    {
+      "target_id": "g_life_integrity_r5a",
+      "domain": "G",
+      "modules": [
+        "ignition.tests.test_r5a_route_consumer"
+      ],
+      "import_roots": [
+        "ignition"
+      ],
+      "command_ids": [
+        "r5a_life_integrity_pytest",
+        "r5a_life_integrity_narrow_gate",
+        "r5a_life_integrity_consolidated_gate"
+      ],
+      "evidence": "The registered boundary smoke test plus exact R5-A pytest modules and the 30-case and 11-case instance gates validate repository contracts and non-activation flags only; they do not establish human safety, clinical efficacy, external acceptance, or truth."
     }
   ],
   "components": [
@@ -652,6 +668,23 @@
       "evidence": "The registry assigns .github/README.md as the current-state and usage entry; typed relations connect the front door to current_state and knowledge surfaces, covered by the existing G front-door and O result-consumer suites."
     },
     {
+      "component_id": "summary",
+      "domains": [
+        "G",
+        "O"
+      ],
+      "validation_targets": [
+        "g_human_front_door_consumers",
+        "o_human_result_consumers"
+      ],
+      "change_classifications": [
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "evidence": "The registry assigns SUMMARY.md as a current topic entry. Its R5-A status stays Draft and non-activated; the existing G front-door and O result-consumer suites validate the updated navigation boundary."
+    },
+    {
       "component_id": "research_workflow_slot",
       "domains": [
         "R"
@@ -952,6 +985,21 @@
         "INTERFACE_CHANGE"
       ],
       "evidence": "The registered iteration component owns the current iteration-sync validator and test; the existing publication-consumer target checks manifest path, seal, and current-state synchronization."
+    },
+    {
+      "component_id": "life_integrity_r5a_candidate",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_life_integrity_r5a"
+      ],
+      "change_classifications": [
+        "CAPABILITY_ADDITION",
+        "EVIDENCE_UPDATE",
+        "GOVERNANCE_CHANGE"
+      ],
+      "evidence": "The R5-A Draft candidate package, contract artifacts, exact case gates, route tests, and workflow form one isolated governance-validation surface; its three exact pytest files overlap ARR test ownership only to preserve the ARR closure and R5-A gate. All checks remain repository-local and do not activate the candidate."
     }
   ]
 }

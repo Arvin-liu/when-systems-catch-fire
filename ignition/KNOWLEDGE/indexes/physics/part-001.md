@@ -1849,6 +1849,11 @@
   - 可搜索名称：IMPLICIT-4660379FC1243B14 / 宇宙膨胀的Φ表述： 尺度因子a\(t\)增长 → 物质密度ρ_m ∝ a⁻³ → μ_m递减 辐射密度ρ_r ∝ a⁻⁴ → μ_r递减更快 暗能量密度ρ_Λ = const → μ_Λ不变 Φ\(t\) = Σᵢ exp\[-\(ln\(μᵢ\(t\)/Λᵢ\)\)²/\(2σᵢ²\)\] dΦ/dt = Σᵢ dgᵢ/dt = Σᵢ gᵢ × \[-ln\(μᵢ/Λᵢ\)/σᵢ²\] × \(dμᵢ/dt\)/μᵢ / IMPLICIT-4660379FC1243B14
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [宇宙隐喻。这只是哲学隐喻与时间观，不是物理学、宇宙学、热力学或自然定律](../../../docs/governance/ignition-perpetual-present-principle.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4b9824210c3731bd / 宇宙隐喻。这只是哲学隐喻与时间观，不是物理学、宇宙学、热力学或自然定律
+  - 来源：`docs/governance/ignition-perpetual-present-principle.md`
+  - 依赖：—；被引用：—
 - [实验可测数值；](../../../docs/physics_boundary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-423f61612c8b2c45 / 实验可测数值；

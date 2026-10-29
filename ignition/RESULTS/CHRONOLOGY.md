@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 601 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 611 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -14,6 +14,19 @@
 - **问题：** 此来源记录了什么：类型化变更传播闭包 / Typed Change-Propagation Closure？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagat…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [传统/宗教材料翻译管线 R5-A R1（Tradition Translation Pipeline R1）](../docs/architecture/tradition-translation-pipeline-r1.md)
+
+- **结果 ID：** `HR-7A4FD027ADB33D3D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：传统/宗教材料翻译管线 R5-A R1（Tradition Translation Pipeline R1）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 来源 provenance、源语言/翻译状态、说话者/作者/归属状态、claim class、字面文本引用或非公开摘要引用、解释层、证据等级、机制状态、适用边界、权利边界、置信度与 UNKNOWNs、禁止升级、修订历史。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -188,6 +201,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [生命完整性非影响证明 R5-A R1（Life Integrity Non-Impact Proof R1）](../docs/architecture/life-integrity-non-impact-proof-r1.md)
+
+- **结果 ID：** `HR-A2D4A6CFA3E1870F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：生命完整性非影响证明 R5-A R1（Life Integrity Non-Impact Proof R1）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** lifeintegrityr5a/nonimpact.py::buildnonimpactproof() 返回上述清单的声明式证明。窄修复不再以该声明自证：tools/validatelifeintegrityr5arepair.py 同时运行包 import 边界和从精确 R5-A 冻结头开始的 changed-path scope gate，任何 R5-B/R5-C/R6、生产运行时或 ARR 实现路径变更均阻断。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [生命完整性未来激活边界 R5-A R1（Life Integrity Future Activation Boundary R1）](../docs/architecture/life-integrity-future-activation-boundary-r1.md)
+
+- **结果 ID：** `HR-C7DD4D4A9DEED628`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：生命完整性未来激活边界 R5-A R1（Life Integrity Future Activation Boundary R1）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本候选所有激活相关计数器保持为零（modernwuzhenpackstarted=false、domainpackfederationstarted=false、humaninterventionenabled=false、externalacceptanceclaimed=false）。任何激活必须经用户显式授权与独立外部审查，不得在 R5-A 内自启动。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [语言—思维逻辑平面](../docs/architecture/language-thought-logic-plane.md)
 
 - **结果 ID：** `HR-CF318764B78D8743`
@@ -248,6 +287,19 @@
 - **问题：** 此来源记录了什么：Incremental Execution and Selective Materialization？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 late…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [点火生命完整性架构 R5-A R1（Ignition Life Integrity R5-A R1）](../docs/architecture/ignition-life-integrity-r5a-r1.md)
+
+- **结果 ID：** `HR-DB662C8D453D0E8A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：点火生命完整性架构 R5-A R1（Ignition Life Integrity R5-A R1）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** R5-A 不是运行时、不是第二执行器、不是 L7。它是把“性命一体、身心互成”这一用户授权规范来源转写为可机器测试的治理与架构合同的候选叠加层。它复用 ARR 通用原语（Source / Observation / Object / State / Event / Assertion / Relation / Mechanism），不建立平行真值层。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -461,32 +513,6 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
-### [Current Facts（机器推导事实）](../docs/architecture/current-facts.md)
-
-- **结果 ID：** `HR-641DA70BEF452B2A`
-- **日期：** UNSPECIFIED
-- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
-- **问题：** 此来源记录了什么：Current Facts（机器推导事实）？
-- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. For the Human Surface materiality manifest, the fingerprint intentionally excludes only reciprocal machine/sou…
-- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
-- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **处置：** `HUMAN_INDEX_ONLY`
-
-### [Current Facts（机器推导事实）](../docs/architecture/current-facts.md)
-
-- **结果 ID：** `HR-641DA70BEF452B2A`
-- **日期：** UNSPECIFIED
-- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
-- **问题：** 此来源记录了什么：Current Facts（机器推导事实）？
-- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. For the Human Surface materiality manifest, the fingerprint intentionally excludes only reciprocal machine/sou…
-- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
-- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **处置：** `HUMAN_INDEX_ONLY`
-
 ### [Compression Integrity Gate](../docs/architecture/compression-integrity-gate.md)
 
 - **结果 ID：** `HR-D27DE59030E9F44A`
@@ -539,6 +565,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [R4 Receipt-Closure Diagnosis (repair prerequisite)](../docs/architecture/arr-r4-receipt-closure-diagnosis.md)
+
+- **结果 ID：** `HR-C96B4A9A3A112BF1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：R4 Receipt-Closure Diagnosis (repair prerequisite)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** External review's precise refetch of the designated predecessor R4 receipt branch and the contracted receipt paths returned 404. The private R4 evidence branch (agent/adaptive-relational-runtime-r4-waic-self-reflection-r1-20260725) is remotely readable; only the relay receipt closure is not.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [ARR R4 — Metric Disclosure & Relay Receipt Repair R1 (External Review Package)](../docs/architecture/arr-r4-metric-disclosure-repair-external-review.md)
+
+- **结果 ID：** `HR-BD785F9A791C0369`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ARR R4 — Metric Disclosure & Relay Receipt Repair R1 (External Review Package)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This package is the public, non-private summary of the narrow repair authorized by external R4 review. It closes the four findings raised in that review without touching PR 127, the frozen R4 head, or the R3 corpus.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [ARR R4 — Gap / Architecture-Candidate Gate](../docs/architecture/arr-r4-gap-candidate-gate.md)
 
 - **结果 ID：** `HR-F24A15FF21B59F0A`
@@ -547,6 +599,19 @@
 - **问题：** 此来源记录了什么：ARR R4 — Gap / Architecture-Candidate Gate？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** This document specifies the architecture-candidate gate used by R4 to decide whether an observed weakness may be promoted from a lower-level limitation to an ARCHITECTURECANDIDATE warranting a future R5 design change. The default disposition is NOEVOLVE. R4 never implements a candidate and never…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [ARR R3/R4 Metric Semantics & Observability Closure — ADR](../docs/architecture/arr-r3-r4-metric-observability-closure-adrs.md)
+
+- **结果 ID：** `HR-FA4C0144D96151D1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ARR R3/R4 Metric Semantics & Observability Closure — ADR？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** R4 metric-disclosure & relay-receipt repair (PR 128) closed the 27-item capability closed set, separated governance enum from the no-action safety invariant, and distinguished contradiction attribution from repair. Four lower-level metric / reporting issues remain before R5 can rely on observabil…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -625,6 +690,19 @@
 - **问题：** 此来源记录了什么：Adaptive Relational Runtime / 自适应关系运行时(R1 Scaffold 主合同)？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: DRAFT SCAFFOLD (stacked on production/ignition-run-promote-evolve-r1 @ 6723cdfa) — not a Current capability
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R5-A 架构决策记录（Adaptive Relational Runtime R5-A ADRs）](../docs/architecture/adaptive-relational-runtime-r5a-adrs.md)
+
+- **结果 ID：** `HR-DC97D62125A942B9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：R5-A 架构决策记录（Adaptive Relational Runtime R5-A ADRs）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -5359,6 +5437,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [R5-A Night Queue R1 adjudication and narrow repair](../docs/governance/r5a-night-queue-r1-adjudication.md)
+
+- **结果 ID：** `HR-531D1EBA40F26855`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：R5-A Night Queue R1 adjudication and narrow repair？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** NIGHTQUEUER1PARTIALSALVAGENOTACCEPTED
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [R5-A consolidated contract-bypass narrow repair R1](../docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)
+
+- **结果 ID：** `HR-CB582B64FEEE8BCE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：R5-A consolidated contract-bypass narrow repair R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** R5ACONSOLIDATEDCONTRACTBYPASSREPAIRACCEPTEDMERGEDTOPR130SOURCECANDIDATENOTMAINNOTCURRENT
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Non-Sycophancy Output Protocol](../docs/governance/non-sycophancy-output-protocol.md)
 
 - **结果 ID：** `HR-70403729FEF8B50E`
@@ -5580,6 +5684,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [生命完整性附则候选 R1（Life Integrity Annex Candidate R1）](../docs/governance/life-integrity-charter-candidate-r1.md)
+
+- **结果 ID：** `HR-3AFC00A4EDF85646`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：生命完整性附则候选 R1（Life Integrity Annex Candidate R1）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本候选不激活附则、不启用人体干预、不授权医疗主张、不启动《新悟真篇》领域包、不启动领域包/联邦运行时、不宣称外部接受。张伯端与南宗材料仅作为历史与概念来源及候选协议，绝不作为科学或临床权威。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [生命共同体价值宪章](../docs/governance/life-community-value-charter.md)
 
 - **结果 ID：** `HR-B3910E7A27E481AC`
@@ -5627,6 +5744,19 @@
 - **问题：** 此来源记录了什么：知识体验入口与探索层？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 状态：任务 102 候选，只有普通合并、main 精确验证和全新克隆复验后才成为 Current 仓库能力。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [点火“永远进行时”原则](../docs/governance/ignition-perpetual-present-principle.md)
+
+- **结果 ID：** `HR-E8FA5AC0A66FA21A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：点火“永远进行时”原则？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** SPDX-License-Identifier: CC-BY-SA-4.0
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

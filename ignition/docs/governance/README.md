@@ -27,3 +27,9 @@ The life-community value charter and general governance principle texts are lice
 | `meta-protocol-reviews/` | 元协议规范评审 |
 
 > 边界：Charter System R1 为 `CURRENT` 但 `non-Activated`——其元治理权威仅约束"宪章如何被治理"，不激活任何能力 / 运行时 / 执行器；其 `publication_status=UNPUBLISHED`，不构成任何已发布快照（`HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE`）。
+
+## R5-A candidate records
+
+- [Life Integrity Charter Candidate R1](./life-integrity-charter-candidate-r1.md) — Draft candidate; not Current or activated.
+- [Night Queue R1 adjudication](./r5a-night-queue-r1-adjudication.md) — `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`.
+- [Consolidated contract-bypass repair](./r5a-consolidated-contract-bypass-repair-r1.md) — repair acceptance does not accept PR #130.

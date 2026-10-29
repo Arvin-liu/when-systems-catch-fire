@@ -139,6 +139,19 @@
       "reason": "human_knowledge_surfaces owns the readable navigation asset while system_map_projection owns the registry-derived full-map SVG."
     },
     {
+      "authority_source": "docs/governance/life-integrity-charter-candidate-r1.md",
+      "component_ids": [
+        "arr_runtime",
+        "life_integrity_r5a_candidate"
+      ],
+      "path_patterns": [
+        "tests/adaptive_relational_runtime/run_r5a_pytest_suite.py",
+        "tests/adaptive_relational_runtime/test_life_integrity_r5a.py",
+        "tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py"
+      ],
+      "reason": "ARR retains broad ownership of tests/adaptive_relational_runtime/; these three exact files execute the R5-A candidate contract. The narrow overlap selects both existing ARR validation and the candidate-specific gate without reassigning other ARR tests."
+    },
+    {
       "authority_source": "FOUNDATION.md",
       "component_ids": [
         "charter",
@@ -152,7 +165,8 @@
         "copyright_governance_tests",
         "epistemic_governance_kernel",
         "human_knowledge_surfaces",
-        "licensing"
+        "licensing",
+        "life_integrity_r5a_candidate"
       ],
       "path_patterns": [
         "data/governance/",
@@ -161,7 +175,7 @@
         "tests/test_q33_governance_infrastructure.py",
         "docs/governance/"
       ],
-      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter, licensing, and the draft-only R5-A candidate; the candidate remains outside production activation."
     },
     {
       "authority_source": "docs/operations/stage-snapshot-publication.md",
@@ -3352,8 +3366,51 @@
         "represented_by": "arr",
         "no_change_reason": "ARR runtime is an adapter-only tool with no second executor; it is represented by the arr derived-representation node."
       }
+    },
+    {
+      "component_id": "life_integrity_r5a_candidate",
+      "label": "生命完整性宪章候选 R1 (R5-A)",
+      "description": "Draft-only repository candidate beneath the Life Community Value Charter. Its code validates bounded contracts only; it never activates human intervention, medical claims, or a Domain Pack.",
+      "component_type": "governance_constraint",
+      "canonical_target": "docs/governance/life-integrity-charter-candidate-r1.md",
+      "path_patterns": [
+        ".github/workflows/r5a-life-integrity.yml",
+        "life_integrity_r5a/",
+        "tools/generate_life_integrity_r5a.py",
+        "tools/validate_life_integrity_r5a_repair.py",
+        "tools/validate_life_integrity_r5a_consolidated_repair.py",
+        "tools/operations/validate_r5a_candidate.py",
+        "docs/README.md",
+        "docs/architecture/adaptive-relational-runtime-r5a-adrs.md",
+        "docs/architecture/ignition-life-integrity-r5a-r1.md",
+        "docs/architecture/ignition-r5a-life-integrity-r1/",
+        "docs/architecture/life-integrity-future-activation-boundary-r1.md",
+        "docs/architecture/life-integrity-non-impact-proof-r1.md",
+        "docs/architecture/tradition-translation-pipeline-r1.md",
+        "docs/governance/README.md",
+        "docs/governance/ignition-perpetual-present-principle.md",
+        "docs/governance/life-integrity-charter-candidate-r1.md",
+        "docs/governance/r5a-consolidated-contract-bypass-repair-r1.md",
+        "docs/governance/r5a-night-queue-r1-adjudication.md",
+        "tests/adaptive_relational_runtime/test_life_integrity_r5a.py",
+        "tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py",
+        "tests/adaptive_relational_runtime/run_r5a_pytest_suite.py",
+        "tests/test_r5a_route_consumer.py"
+      ],
+      "authority": "declarative",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "status": "draft_candidate",
+        "source": "docs/governance/life-integrity-charter-candidate-r1.md",
+        "version": "R1"
+      },
+      "map_projection": {
+        "visible": false,
+        "represented_by": "epistemic_governance_kernel",
+        "no_change_reason": "R5-A remains an unactivated Draft candidate. Keep it hidden from the Current system map; the existing governance kernel represents its non-escalation boundary."
+      }
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.21"
+  "registry_version": "2.9.25"
 }

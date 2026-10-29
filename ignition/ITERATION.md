@@ -229,6 +229,47 @@ Run the narrowest relevant ladder first, then expand:
 
 No failed lower rung can be repaired by a higher-rung narrative.
 
+### 9.1 Instance-bound adversarial closure
+
+When review identifies concrete failed attacks, acceptance is bound to the
+instances, not to an aggregate test count. Each retained finding must have a
+stable case identity, a concrete non-private input, a typed evidence object, an
+expected fail-closed or accepted outcome, an executed per-case test, and a
+machine receipt. The gate must compare the exact required-id set, reject missing
+or duplicate identities, and report every failed case. A threshold such as
+`>=120 checks`, a green aggregate self-check, or several paraphrases of the same
+fixture cannot substitute for an unexecuted instance.
+
+Bounded lexical or alias fixtures prove only those software behaviors. They do
+not justify a claim of universal semantic understanding; uncovered language,
+unknown target labels and unresolved evidence stay fail-closed or `BLOCKED`.
+This clarification does not change the current method version `1.4.0` or turn tests into
+human evidence.
+
+R5-A application record (not a method-version change): the complete PR #130
+review at exact head `f33be64...` found eleven additional public runtime/schema
+bypasses `R5A-CR-001`–`011`. The consolidated repair binds each exact ID to a
+concrete fixture, typed evidence object, expected rejection and executed
+per-surface result; six Draft 2020-12 schemas have metaschema plus valid/invalid
+instance checks, and missing/duplicate/changed/bypassed/deleted-ID mutations
+block. A separate zero-background review replayed all eleven predecessor
+bypasses, reviewed the two repair commits file by file, reran the full local
+ladder and inspected exact-head raw Actions logs. Exact repair head
+`c4576972047a47045e95b1c794570597f58e6c9a` was accepted; PR #133 moved from
+Draft to Ready and was ordinarily merged as
+`ff158ba0351d68918a135ec3446f4f68ddf9387b` into PR #130's source branch. The
+accepted-head tree equals the merge tree and merge-head CI passed. This is
+instance-bound repair acceptance, not acceptance of PR #130: the candidate
+remains Draft, unmerged into its predecessor, non-Main, non-Current and
+unactivated; R5-B, R5-C and R6 remain prohibited.
+
+Unique next-task request (recorded, not started): 迭代点火操作法，建立“阶段成果进入
+Main、但不自动成为 Accepted/Current”的持续快照与分层发布制度，使 GitHub 项目
+主页能够及时显示 Agents 已完成的阶段成果。
+
+For Draft Pages work, build and inspect the exact-head artifact without deploying the unmerged branch to the production homepage. Production Pages deployment and live fetch are post-merge external synchronization obligations.
+
+
 For Draft knowledge-surface work, build and inspect the exact-head machine and human artifacts, including the knowledge-experience manifest, full search coverage and rendered Markdown shards. After merge, rerun them from current `main` and a clean clone; a repository-local pass still does not prove external substantive claims.
 
 ## 10. State Machine

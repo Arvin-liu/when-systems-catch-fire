@@ -4,6 +4,8 @@
 
 ## 先看结果
 
+- [R5-A 生命完整性候选](./docs/governance/life-integrity-charter-candidate-r1.md) — 堆叠 Draft，未并入前驱/Main、非 Current、未激活；Night Queue R1 未获接受。
+
 - [统一知识入口](./KNOWLEDGE/README.md)
 - [最新变化](./KNOWLEDGE/WHATS-NEW.md)
 - [知识地图](./KNOWLEDGE/MAP.md)

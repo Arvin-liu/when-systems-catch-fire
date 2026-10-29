@@ -169,3 +169,7 @@ Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完�
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。
+
+## R5-A candidate boundary
+
+PR #130 remains OPEN/DRAFT and is not merged into its predecessor, Main, or Current; it is not activated. The PR #131 and #133 repairs closed only their adjudicated instances on the candidate source branch. Night Queue R1 remains `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`. R5-B, R5-C and R6 remain prohibited. See [the candidate charter](./docs/governance/life-integrity-charter-candidate-r1.md), [the Night Queue adjudication](./docs/governance/r5a-night-queue-r1-adjudication.md), and [the consolidated repair record](./docs/governance/r5a-consolidated-contract-bypass-repair-r1.md).

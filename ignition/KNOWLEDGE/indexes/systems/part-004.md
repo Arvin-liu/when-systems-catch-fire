@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [temporal / mechanism-state\); deterministic pilot run IDs; per-object execution](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-744debd22d45b5dd / temporal / mechanism-state\); deterministic pilot run IDs; per-object execution
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
+- [Tensor shapes, mode, causality, routing and resource constraints are useful architecture-specification fragments, but th](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d470f8a075b3c0d5 / Tensor shapes, mode, causality, routing and resource constraints are useful architecture-specification fragments, but th
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [test or evidence;](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-09680fff1a941685 / test or evidence;
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
 - [Tests, losses, evaluation loaders, examples, version warnings, strict loads, and CI form concrete validation mechanisms.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f3966438cc1d875d / Tests, losses, evaluation loaders, examples, version warnings, strict loads, and CI form concrete validation mechanisms.
@@ -884,6 +899,11 @@
   - 可搜索名称：NFC-8db7a1282ccd65aa / Training set features' head parameters form an implicit registry; but no versioning or retrieval mechanism
   - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json`
   - 依赖：—；被引用：—
+- [translation uses an unregistered mechanism label](../../../docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-57f25f3b72340ed7 / translation uses an unregistered mechanism label
+  - 来源：`docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json`
+  - 依赖：—；被引用：—
 - [treat action choice as mechanism truth;](../../../reports/architecture/121Q13-baseline-overlap-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-967d8d0f8a37a3b6 / treat action choice as mechanism truth;
@@ -1649,6 +1669,11 @@
   - 可搜索名称：NFC-4de7f5098f25884d / \| `R1-IGNITION-143-ARTICLE-C` \| `docs/editorial/articles/013-tree-canopy-temperature-causality.md` \| 有界公开来源 replay 的读者价值
   - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
   - 依赖：—；被引用：—
+- [\| `R5A-CR-001` \| direct translated-claim construction and schema \| forbidden phenomenology-to-supported-mechanism upgrad](../../../docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b56d3d8358e906fb / \| `R5A-CR-001` \| direct translated-claim construction and schema \| forbidden phenomenology-to-supported-mechanism upgrad
+  - 来源：`docs/governance/r5a-consolidated-contract-bypass-repair-r1.md`
+  - 依赖：—；被引用：—
 - [\| `REJECT` \| executor 自行决定 stop/completion、Owner acceptance 或权限升级 \| 当前 Kernel fail closed；只有 validator 可提供最终动作验证，Owner 边](../../../reports/architecture/task115-runtime-prior-art-adoption-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ff1c7537795f1b9d / \| `REJECT` \| executor 自行决定 stop/completion、Owner acceptance 或权限升级 \| 当前 Kernel fail closed；只有 validator 可提供最终动作验证，Owner 边
@@ -2234,6 +2259,11 @@
   - 可搜索名称：NFC-3e57578f44343a59 / \| S44 \| `test_s44_remote_evidence_readable` \| \(skipped when control inputs absent\) FileSystemProvider reads 5 materials;
   - 来源：`reports/ignition-rpe/ATTACK_MATRIX.md`
   - 依赖：—；被引用：—
+- [\| SEMANTIC \| 4 \| **no** \| narrow anti-elevation / precision guardrails only \(`event_time_distinct_from_created_time`, `m](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b97ed2e90b199884 / \| SEMANTIC \| 4 \| **no** \| narrow anti-elevation / precision guardrails only \(`event_time_distinct_from_created_time`, `m
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [\| Source \| Permitted Projection \| Prohibited Inference \|](../../../reports/research/121Q23-network-theory-source-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-098040e2061f0843 / \| Source \| Permitted Projection \| Prohibited Inference \|
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f461c80dd33d78e7 / “完整”只指当前声明构件的投影覆盖；未来发现缺口时必须更新 registry，而不是把图当永久总图。
   - 来源：`docs/architecture/interactive-system-map.md`
-  - 依赖：—；被引用：—
-- [“相契”不是把差异取消，也不是把其他主体翻译成单一人类偏好的影子；它是承认差异之后仍愿意建立理解、限制、照护、协商、纠错和退出机制。](../../../docs/governance/life-community-value-charter.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-738f3e1ff476809e / “相契”不是把差异取消，也不是把其他主体翻译成单一人类偏好的影子；它是承认差异之后仍愿意建立理解、限制、照护、协商、纠错和退出机制。
-  - 来源：`docs/governance/life-community-value-charter.md`
-  - 依赖：—；被引用：—
-- [“程序”只能是跨层的有限隐喻；北宋仪式与现代系统没有相同物质、规模或因果。](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-043adb95632fe604 / “程序”只能是跨层的有限隐喻；北宋仪式与现代系统没有相同物质、规模或因果。
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [→ outcome / effect evaluation \(baseline + uncertainty, no causal overclaim\)](../../../docs/intervention/q36-int-architecture-decision.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-15573cf898bfa3e1 / → outcome / effect evaluation \(baseline + uncertainty, no causal overclaim\)
-  - 来源：`docs/intervention/q36-int-architecture-decision.md`
-  - 依赖：—；被引用：—
-- [→ Q36-OBS residual / Q36-INT mechanism hypothesis supplied as candidate inputs](../../../docs/analogy/q37-interfaces.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-142163ec00aadfe0 / → Q36-OBS residual / Q36-INT mechanism hypothesis supplied as candidate inputs
-  - 来源：`docs/analogy/q37-interfaces.md`
-  - 依赖：—；被引用：—
-- [→ Q37 classifies, maps, audits counteranalogy & mechanism & transportability](../../../docs/analogy/q37-interfaces.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-98400347c9f44f67 / → Q37 classifies, maps, audits counteranalogy & mechanism & transportability
-  - 来源：`docs/analogy/q37-interfaces.md`
-  - 依赖：—；被引用：—
-- [└── 事件层：点火事件演化系统（时间-空间-动态统一）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2587e71de69f263a / └── 事件层：点火事件演化系统（时间-空间-动态统一）
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

@@ -68,6 +68,12 @@ class PositiveTreeTest(unittest.TestCase):
             ("TOOL_OR_WORKFLOW", "TOOL_OR_WORKFLOW"),
         )
 
+    def test_r5a_candidate_package_is_non_authoritative_tooling(self) -> None:
+        self.assertEqual(
+            preflight.classify("life_integrity_r5a/validators.py"),
+            ("TOOL_OR_WORKFLOW", "TOOL_OR_WORKFLOW"),
+        )
+
 
 class NegativeClassificationTest(unittest.TestCase):
     def _live_real(self) -> dict:

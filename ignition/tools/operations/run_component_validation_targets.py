@@ -48,6 +48,9 @@ COMMANDS: dict[str, tuple[str, ...]] = {
     "generate_overall_architecture_check": ("tools/generate_overall_architecture.py", "--check"),
     "arr_runtime_static_gate": ("tools/adaptive_relational_runtime/static_gate.py",),
     "arr_runtime_pytest": ("tests/adaptive_relational_runtime/run_pytest_suite.py",),
+    "r5a_life_integrity_pytest": ("tests/adaptive_relational_runtime/run_r5a_pytest_suite.py",),
+    "r5a_life_integrity_narrow_gate": ("../tools/validate_life_integrity_r5a_repair.py",),
+    "r5a_life_integrity_consolidated_gate": ("../tools/validate_life_integrity_r5a_consolidated_repair.py",),
 }
 
 NATIVE_COMMANDS: dict[str, dict[str, Any]] = {

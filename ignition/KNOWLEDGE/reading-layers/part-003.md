@@ -151,6 +151,13 @@
 - 5 分钟：主题：121Q23 Network Theory Source Map；These sources guide representation and validator boundaries only.；Stable source cards are recorded in data/architecture/adaptive-relational-network/source-ledger.json.
 - 完整阅读：[reports/research/121Q23-network-theory-source-map.md](../../reports/research/121Q23-network-theory-source-map.md)
 
+<a id="reading-hr-3afc00a4edf85646"></a>
+## 生命完整性附则候选 R1（Life Integrity Annex Candidate R1）
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：本候选不激活附则、不启用人体干预、不授权医疗主张、不启动《新悟真篇》领域包、不启动领域包/联邦运行时、不宣称外部接受。张伯端与南宗材料仅作为历史与概念来源及候选协议，绝不作为科学或临床权威。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：生命完整性附则候选 R1（Life Integrity Annex Candidate R1）；状态：CANDIDATEONLY — 候选，未激活，未经外部接受。；任务：IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725；控制提交：d653c07ed6b108c98e16d111c014f87d7c7987f2；形式前驱：f236543dadcaf79ba9dba750fa21bd8b5c65a33a；原候选冻结头：0e9d1e5823b41b7e9375e5f634388371b9b024ac
+- 完整阅读：[docs/governance/life-integrity-charter-candidate-r1.md](../../docs/governance/life-integrity-charter-candidate-r1.md)
+
 <a id="reading-hr-3b5e72d7f1cdfb5b"></a>
 ## 之元写作法：内部范例与反例
 `CURRENT_SCOPED_SOURCE` · `WRITING_PUBLICATION`
@@ -346,10 +353,3 @@
 - 1 分钟：Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Codex Adapter R1；Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with:；read-only is the default federation sandbox. A workspace-write adapter instance must be constructed explicitly; the adapter never uses --dangerously-bypass-approvals-and-sandbox or bypasses hook trust. The effective permission is the intersection of the Ignition envelope, OS policy, Codex sandbox and Codex approval policy. A deny on any boundary cannot be ex…；JSONL events are reduced to public progress, a bounded final summary and an optional pointer-only codex-thread-id. Prompt, hidden reasoning, token usage and Codex internal history are not imported into OS state. Codex's completion event maps to COMPLETEDUNVALIDATED; the receipt remains REQUIRESRECONCILIATION until Ignition validators establish evidence.；Step 06 intentionally used a captured JSONL fixture and injected runner. LIVESMOKENOTRUN: this task is already executing in Codex, so no nested Codex invocation was allowed to modify a formal repository.；Official CLI reference: .
 - 完整阅读：[docs/architecture/codex-adapter-r1.md](../../docs/architecture/codex-adapter-r1.md)
-
-<a id="reading-hr-44a1c398c470bbf4"></a>
-## 121Q28S 之元写作法 0.3.0 全项目整合审计
-`CANDIDATE_OR_PENDING_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q28S 之元写作法 0.3.0 全项目整合审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；Claim ceiling: candidatezhiyuanwritingmethod030wholeprojectexpressionfeedbackprojectionimplemented / repositorysynchronizationcompletependingindependentreview；主题：Remote truth and append-only history；origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；existing branch / Draft PR: docs/121q28-embodied-cognitive-leap-writing-method-20260716 / #58
-- 完整阅读：[reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md](../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)

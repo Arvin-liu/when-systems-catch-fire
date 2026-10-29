@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [recovery = audit\["evidence_recovery_status"\]](../../../agent_federation/live_reconciliation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-41d81a7b78c93d5a / recovery = audit\["evidence_recovery_status"\]
+  - 来源：`agent_federation/live_reconciliation.py`
+  - 依赖：—；被引用：—
+- [recovery case table: PRIVATE_PROVENANCE_WITHHELD](../../../reports/foundation-architecture/local-source-recovery-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0582e564d758b776 / recovery case table: PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`reports/foundation-architecture/local-source-recovery-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [reference is  .](../../../reports/architecture/external-agent-interface-audit-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d33d88d95af66dc3 / reference is  .
+  - 来源：`reports/architecture/external-agent-interface-audit-r1.md`
+  - 依赖：—；被引用：—
 - [refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)](../../../agent_federation/convergence.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6a0bf9ca15d33f8d / refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)
@@ -1564,6 +1579,11 @@
   - 可搜索名称：NFC-f77789a0da49f2c5 / \| repair branch \| `repair/decision-integrity-r1-principle-process-binding` \|
   - 来源：`docs/decision/DECISION-INTEGRITY-I1-repair-architecture.md`
   - 依赖：—；被引用：—
+- [\| Surface \| Decision \| Evidence / reason \|](../../../docs/governance/r5a-night-queue-r1-adjudication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-62fd8d5222c1688e / \| Surface \| Decision \| Evidence / reason \|
+  - 来源：`docs/governance/r5a-night-queue-r1-adjudication.md`
+  - 依赖：—；被引用：—
 - [\| surface \| decision \| evidence \|](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8376e453b6e690eb / \| surface \| decision \| evidence \|
@@ -1958,6 +1978,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cc0cf073d80cabbd / 关键发现：人体一直更新但认知不自动更新。身体更新=细胞替换（硬件层），认知更新=框架替换（软件层）。硬件更新有模板（DNA），软件更新需主动拆H——而H随专业化升高。死亡必然性：V\(t\)=I\(t\)-M\(t\)必然穿过零点
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [决策**：`EmbodiedAgent` 七视图复用 ARR 通用原语，作为同一主体的投影，而不是新事实层。](../../../docs/architecture/adaptive-relational-runtime-r5a-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c0f8f5ae252be192 / 决策**：`EmbodiedAgent` 七视图复用 ARR 通用原语，作为同一主体的投影，而不是新事实层。
+  - 来源：`docs/architecture/adaptive-relational-runtime-r5a-adrs.md`
   - 依赖：—；被引用：—
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-511f02ee27b207a6 / 认知空间曲率验证 — 社会比较-均匀社会\(北欧\)εi标准差0.08→R_cog≈0→策略趋同;不平等社会\(巴西\)εi标准差0.45→R_co
   - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f0947c9dacb64078 / 认知等效原理验证 — 组织诊断-观测到ε_eff下降30%,仅从ε_eff无法判断来源。潮汐力分析-经济维度ε_econ下降50%但社交维度
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [认知迁移编辑修订](../../ASSET-CARDS.md#asset-hr-0a5e4005a933ea19)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：认知迁移编辑修订 / zhiyuan-writing-cognitive-migration-editorial-revision
-  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
-  - 依赖：—；被引用：—
-- [认知迁移编辑修订：Owner 决定与独立审查入口](../../ASSET-CARDS.md#asset-hr-deb3e834ad440e87)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
-  - 可搜索名称：认知迁移编辑修订：Owner 决定与独立审查入口 / zhiyuan-writing-cognitive-migration-editorial-revision-review
-  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
-  - 依赖：—；被引用：—
-- [认知迁移编辑修订：可恢复 before/after 范例](../../ASSET-CARDS.md#asset-hr-75430bb574c9c15b)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
-  - 可搜索名称：认知迁移编辑修订：可恢复 before/after 范例 / zhiyuan-writing-cognitive-migration-editorial-revision-examples
-  - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md`
-  - 依赖：—；被引用：—
-- [认知迁移编辑修订：来源与边界记录](../../ASSET-CARDS.md#asset-hr-9094b2cb638397a8)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
-  - 可搜索名称：认知迁移编辑修订：来源与边界记录 / cognitive-migration-editorial-revision-source
-  - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
   - 依赖：—；被引用：—

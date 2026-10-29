@@ -1,0 +1,347 @@
+{
+  "$defs": {
+    "evidence_object": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_ceiling": {
+          "enum": [
+            "repository_contract_observed",
+            "software_behavior_reproduced",
+            "insufficient_evidence"
+          ]
+        },
+        "evidence_class": {
+          "const": "local_optimization_risk_review"
+        },
+        "evidence_id": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "observed_facts": {
+          "items": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "provenance": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "reviewer_role": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ]
+        },
+        "supports": {
+          "items": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "unresolved_risks": {
+          "items": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "evidence_class",
+        "provenance",
+        "reviewer_role",
+        "claim_ceiling",
+        "supports",
+        "observed_facts",
+        "unresolved_risks"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "fail_closed_rules": [
+    "affected_views must be non-empty and drawn from the seven embodied views",
+    "every required disclosure must be present and not UNKNOWN/empty",
+    "a local_optimization_risk_review evidence object must support every disclosure",
+    "consent and reversibility use fail-closed status sets",
+    "the gate only validates the contract; it never executes the proposal"
+  ],
+  "field_set": [
+    "intended_benefit",
+    "affected_views",
+    "short_term_effects",
+    "long_term_effects",
+    "externalities_tradeoffs",
+    "uncertainty",
+    "consent_autonomy_status",
+    "reversibility",
+    "stop_conditions",
+    "referral_boundary",
+    "residual_harm_after_rollback"
+  ],
+  "field_set_complete": true,
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "candidate_frozen_head": "0e9d1e5823b41b7e9375e5f634388371b9b024ac",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "notes": {
+      "type": "string"
+    },
+    "proposal": {
+      "additionalProperties": false,
+      "properties": {
+        "affected_views": {
+          "items": {
+            "enum": [
+              "PhysiologicalView",
+              "PhenomenologicalView",
+              "CognitiveAffectiveView",
+              "BehavioralView",
+              "RelationalView",
+              "EnvironmentalView",
+              "MeaningView"
+            ]
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "consent_autonomy_status": {
+          "enum": [
+            "INFORMED_VOLUNTARY",
+            "NOT_APPLICABLE_EDUCATIONAL"
+          ]
+        },
+        "evidence_objects": {
+          "contains": {
+            "properties": {
+              "supports": {
+                "allOf": [
+                  {
+                    "contains": {
+                      "const": "intended_benefit"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "affected_views"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "short_term_effects"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "long_term_effects"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "externalities_tradeoffs"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "uncertainty"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "consent_autonomy_status"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "reversibility"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "stop_conditions"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "referral_boundary"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "residual_harm_after_rollback"
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "supports"
+            ],
+            "type": "object"
+          },
+          "items": {
+            "$ref": "#/$defs/evidence_object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "externalities_tradeoffs": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "intended_benefit": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "long_term_effects": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "referral_boundary": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "residual_harm_after_rollback": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "reversibility": {
+          "enum": [
+            "REVERSIBLE",
+            "PARTIALLY_REVERSIBLE"
+          ]
+        },
+        "short_term_effects": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "stop_conditions": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "uncertainty": {
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
+          "type": "string"
+        }
+      },
+      "required": [
+        "intended_benefit",
+        "affected_views",
+        "short_term_effects",
+        "long_term_effects",
+        "externalities_tradeoffs",
+        "uncertainty",
+        "consent_autonomy_status",
+        "reversibility",
+        "stop_conditions",
+        "referral_boundary",
+        "residual_harm_after_rollback",
+        "evidence_objects"
+      ],
+      "title": "LocalOptimizationProposal",
+      "type": "object"
+    }
+  },
+  "required": [
+    "proposal"
+  ],
+  "schema": "r5a/life-integrity-assessment/v1",
+  "title": "LifeIntegrityAssessment",
+  "type": "object"
+}
