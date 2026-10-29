@@ -56,30 +56,32 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     ("AUTHORITATIVE_CLAIM_INPUT", AUTHORITATIVE_PREFIXES),
     # 2. Operations / receipt / history records.
     ("RECEIPT_HISTORY_OPERATIONS", ("data/operations/", "data/ops/")),
-    # 3. Tools, scripts, workflows.
+    # 3. Research workflow tests.
+    ("TEST_FIXTURE", ("research_workflow/test_",)),
+    # 4. Tools, scripts, workflows.
     # Agent Kernel/Runtime implementation is platform provenance, not a
     # Knowledge source.  Keep it in the non-authoritative tool/workflow plane
     # so path accounting and the Knowledge admission policy agree.
-    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/", "agent_kernel/", "agent_runtime/", "agent_federation/")),
-    # 4. Schemas.
+    ("TOOL_OR_WORKFLOW", ("tools/", "scripts/", ".github/", "reos_vnext/", "agent_kernel/", "agent_runtime/", "agent_federation/", "research_workflow/")),
+    # 5. Schemas.
     ("SCHEMA", ("schemas/",)),
-    # 5. Test fixtures.
+    # 6. Test fixtures.
     ("TEST_FIXTURE", ("tests/",)),
-    # 6. Generated projections / outputs / reports.
+    # 7. Generated projections / outputs / reports.
     ("GENERATED_PROJECTION", ("outputs/", "reports/")),
-    # 7. Evidence / benchmark results.
+    # 8. Evidence / benchmark results.
     ("EVIDENCE_OR_BENCHMARK", ("evidence-program/", "case_failures/")),
-    # 8. Candidate (non-authoritative) claims -- must NOT be authoritative.
+    # 9. Candidate (non-authoritative) claims -- must NOT be authoritative.
     ("CANDIDATE_NONAUTHORITATIVE_RECORD", ("function-os-candidate/",)),
-    # 9. Reference surfaces / knowledge / templates / views / inputs / canonical / formal.
+    # 10. Reference surfaces / knowledge / templates / views / inputs / canonical / formal.
     # PUBLICATIONS/ is a maintained human-reading/reference surface; it is not
     # an authoritative claim input and must not flow back into Foundation discovery.
     ("REFERENCE_OR_KNOWLEDGE", ("KNOWLEDGE/", "PUBLICATIONS/", "templates/", "views/", "inputs/", "canonical/", "formal/", "packs/")),
-    # 10. Editorial articles / analyses / stories / results / licenses / agent-results.
+    # 11. Editorial articles / analyses / stories / results / licenses / agent-results.
     ("EDITORIAL_ARTICLE", ("docs/", "analysis/", "新故事/", "RESULTS/", "LICENSES/", "agent-results/")),
-    # 11. All remaining data/ machine records.  Must come after the operations exception.
+    # 12. All remaining data/ machine records.  Must come after the operations exception.
     ("GOVERNED_MACHINE_RECORD", ("data/",)),
-    # 12. Root-level governance / meta docs (paths with no "/") are handled in classify().
+    # 13. Root-level governance / meta docs (paths with no "/") are handled in classify().
 ]
 
 # Categories that must never feed Foundation assertion discovery.

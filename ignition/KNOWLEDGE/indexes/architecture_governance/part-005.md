@@ -4,61 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [def spool_ref\(self\) -> str:](../../../agent_federation/live_capture.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7479DF70B8852375 / def spool_ref\(self\) -> str: / IMPLICIT-7479DF70B8852375
-  - 来源：`agent_federation/live_capture.py`
-  - 依赖：—；被引用：—
-- [def start\(self\) -> Mapping\[str, Any\]:](../../../agent_federation/live_orchestration.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-66D2D07EC8B8BE48 / def start\(self\) -> Mapping\[str, Any\]: / IMPLICIT-66D2D07EC8B8BE48
-  - 来源：`agent_federation/live_orchestration.py`
-  - 依赖：—；被引用：—
-- [def start\(self\):](../../../function-os-candidate/v0.1/function_os/n3_expression_interpreter.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FF726554BD886AAD / def start\(self\): / IMPLICIT-FF726554BD886AAD
-  - 来源：`function-os-candidate/v0.1/function_os/n3_expression_interpreter.py`
-  - 依赖：—；被引用：—
-- [def start_validation\(self\) -> LiveTransitionRecord:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D26AC41280F9B46F / def start_validation\(self\) -> LiveTransitionRecord: / IMPLICIT-D26AC41280F9B46F
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def stat_type\(mode: int\) -> str:](../../../agent_federation/live_transport.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-304A5BCA97AC68A3 / def stat_type\(mode: int\) -> str: / IMPLICIT-304A5BCA97AC68A3
-  - 来源：`agent_federation/live_transport.py`
-  - 依赖：—；被引用：—
-- [def state\(self\) -> str:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-13184190B098E734 / def state\(self\) -> str: / IMPLICIT-13184190B098E734
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def status\(self, federation_task_id: str\) -> FederatedProgressEvent:](../../../agent_federation/pilots.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-28B88F21BEFF0595 / def status\(self, federation_task_id: str\) -> FederatedProgressEvent: / IMPLICIT-28B88F21BEFF0595 / IMPLICIT-97D7C500C1493BCD
-  - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [def status\(self, federation_task_id: str\) -> FederatedProgressEvent:](../../../agent_federation/adapters/hermes.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-97D7C500C1493BCD / def status\(self, federation_task_id: str\) -> FederatedProgressEvent: / IMPLICIT-97D7C500C1493BCD / IMPLICIT-28B88F21BEFF0595
-  - 来源：`agent_federation/adapters/hermes.py`
-  - 依赖：—；被引用：—
-- [def status\(self, federation_task_id: str\) -> FederatedProgressEvent:](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A9E587B3F04863CE / def status\(self, federation_task_id: str\) -> FederatedProgressEvent: / IMPLICIT-A9E587B3F04863CE / IMPLICIT-28B88F21BEFF0595
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [def status\(self, federation_task_id: str\) -> FederatedProgressEvent:](../../../agent_federation/adapters/codex.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D19CE0F5CAA1B71A / def status\(self, federation_task_id: str\) -> FederatedProgressEvent: / IMPLICIT-D19CE0F5CAA1B71A / IMPLICIT-28B88F21BEFF0595
-  - 来源：`agent_federation/adapters/codex.py`
-  - 依赖：—；被引用：—
-- [def status\(self, federation_task_id: str\) -> FederatedProgressEvent: ...](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CF54530A680F1CD2 / def status\(self, federation_task_id: str\) -> FederatedProgressEvent: ... / IMPLICIT-CF54530A680F1CD2 / IMPLICIT-28B88F21BEFF0595
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
 - [def status_snapshot\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../reos_vnext/kernel.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-BCEBEBDD6C38B930 / def status_snapshot\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-BCEBEBDD6C38B930
@@ -2503,4 +2448,59 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0f0112ba8a553eff / Exact-final-HEAD CI remains mandatory. After the final commit is pushed and both required workflows finish, the mutable
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf](../../../reports/operations/121Q24-current-state-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-86e2cbfb3008643b / Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf
+  - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
+  - 依赖：—；被引用：—
+- [Exact-title web/arXiv/OpenAlex and recorded-URL audit confirmed that IC-LoRA: In-Context Low-Rank Adaptation is an Emerg](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce30a3bbe62df6cd / Exact-title web/arXiv/OpenAlex and recorded-URL audit confirmed that IC-LoRA: In-Context Low-Rank Adaptation is an Emerg
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [EXEC --> OBS\[观察、测试与验证\]](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-64d3a2120beeb54c / EXEC --> OBS\[观察、测试与验证\]
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [executed by task 105: preregistered, then adversarially validated on a curated](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bd245122ac7d48f9 / executed by task 105: preregistered, then adversarially validated on a curated
+  - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
+- [Executed with `qclaw/pool-kimi-k2.7-code-highspeed` + `adaptive` thinking. The task file specified GLM-5.2 Max; this dev](../../../data/external-research/121-fulltext-resolver/121-task-artifact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef419b7891b484d9 / Executed with `qclaw/pool-kimi-k2.7-code-highspeed` + `adaptive` thinking. The task file specified GLM-5.2 Max; this dev
+  - 来源：`data/external-research/121-fulltext-resolver/121-task-artifact.md`
+  - 依赖：—；被引用：—
+- [Execution stops at the first failure. Apply snapshots the complete supported repository state before producer execution.](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9919e3d7c6893300 / Execution stops at the first failure. Apply snapshots the complete supported repository state before producer execution.
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [Execution traces support conditioning and counterfactual intervention semantically, but no trace archive, replay receipt](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3e8706cde1d64e8d / Execution traces support conditioning and counterfactual intervention semantically, but no trace archive, replay receipt
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Executor completion is represented as `COMPLETED_UNVALIDATED`; the receipt](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-468caaab051f05b3 / Executor completion is represented as `COMPLETED_UNVALIDATED`; the receipt
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
+  - 依赖：—；被引用：—
+- [Executor**: QClaw \(qclaw/pool-glm-5.2-night, reasoning: high\)](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e52202e6596c595c / Executor**: QClaw \(qclaw/pool-glm-5.2-night, reasoning: high\)
+  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
+- [Executor**: QClaw main session](../../../reports/external-research/121Q2-night-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-706cfd1a7625f2f0 / Executor**: QClaw main session
+  - 来源：`reports/external-research/121Q2-night-progress.md`
+  - 依赖：—；被引用：—
+- [Executor: QClaw \(Hy3, adaptive deep-thinking\)](../../../data/external-research/121-fulltext-resolver/121q6/121q6-reproducibility-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-663b166809deb086 / Executor: QClaw \(Hy3, adaptive deep-thinking\)
+  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q6-reproducibility-report.md`
   - 依赖：—；被引用：—
