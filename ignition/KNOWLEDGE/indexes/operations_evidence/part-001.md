@@ -1644,6 +1644,11 @@
   - 可搜索名称：IMPLICIT-AA69EAE47C2AAB80 / ## Gates / IMPLICIT-AA69EAE47C2AAB80 / IMPLICIT-9C08BBED1A4380A8
   - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
   - 依赖：—；被引用：—
+- [## H. Functional regression](../../../reports/ignition-rpe/ATTACK_MATRIX.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9E1004038FD9A65A / ## H. Functional regression / IMPLICIT-9E1004038FD9A65A
+  - 来源：`reports/ignition-rpe/ATTACK_MATRIX.md`
+  - 依赖：—；被引用：—
 - [## INDEX / 总览可见性](../../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1280E6BB621CDD00 / ## INDEX / 总览可见性 / IMPLICIT-1280E6BB621CDD00 / IMPLICIT-9B87124205FBD2ED
@@ -2497,10 +2502,5 @@
 - [### \[#236｜四层乘法门控=神经通路归零律\]\(docs/zh/cases/items/C-0236.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CC9CAA45FEE7CA33 / ### \[#236｜四层乘法门控=神经通路归零律\]\(docs/zh/cases/items/C-0236.md\) / IMPLICIT-CC9CAA45FEE7CA33
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#258｜动态算力分配\]\(docs/zh/cases/items/C-0258.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-25B250E984F8DB42 / ### \[#258｜动态算力分配\]\(docs/zh/cases/items/C-0258.md\) / IMPLICIT-25B250E984F8DB42
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

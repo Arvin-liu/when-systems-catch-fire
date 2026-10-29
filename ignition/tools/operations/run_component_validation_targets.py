@@ -123,6 +123,16 @@ def run_modules(
 
     loader = unittest.defaultTestLoader
     previous_path = list(sys.path)
+    module_prefixes = {module.split(".", 1)[0] for module in modules}
+    previous_package_modules = {
+        name: module for name, module in sys.modules.items()
+        if any(name == prefix or name.startswith(prefix + ".") for prefix in module_prefixes)
+    }
+    # The target module must resolve from the declared checkout even if an
+    # earlier test loaded a same-named package from another checkout. Keep the
+    # runner's prior module state and restore it after the isolated run.
+    for name in previous_package_modules:
+        sys.modules.pop(name, None)
     try:
         sys.path[:0] = search_paths
         # Import origins are checked before unittest loads the modules. A module
@@ -149,6 +159,10 @@ def run_modules(
                 raise RoutingBlocked(f"selected test module did not load from its registered file: {module}")
         return _run_suite(suite, modules, verbosity=verbosity)
     finally:
+        for name in list(sys.modules):
+            if any(name == prefix or name.startswith(prefix + ".") for prefix in module_prefixes):
+                sys.modules.pop(name, None)
+        sys.modules.update(previous_package_modules)
         sys.path[:] = previous_path
 
 
