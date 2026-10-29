@@ -718,6 +718,21 @@
       "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
     },
     {
+      "component_id": "agentization_boundary_r0",
+      "domains": [
+        "G"
+      ],
+      "validation_targets": [
+        "g_component_release_controls",
+        "g_human_front_door_consumers"
+      ],
+      "change_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "evidence": "The generated Agentization Boundary manifest is a deterministic projection of the registered architecture boundary. Component release-control tests cover the reviewed routing assignment, while existing human-front-door, overall-architecture, and generated-output-authority tests cover its visible system-map registration and projection. This records repository structure only; it does not claim agent capability or external truth."
+    },
+    {
       "component_id": "stage_snapshot_publication",
       "domains": [
         "G"
