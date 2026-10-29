@@ -3378,6 +3378,7 @@
         "tools/generate_life_integrity_r5a.py",
         "tools/validate_life_integrity_r5a_repair.py",
         "tools/validate_life_integrity_r5a_consolidated_repair.py",
+        "tools/operations/validate_r5a_candidate.py",
         "docs/README.md",
         "docs/architecture/adaptive-relational-runtime-r5a-adrs.md",
         "docs/architecture/ignition-life-integrity-r5a-r1.md",
@@ -3410,5 +3411,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.23"
+  "registry_version": "2.9.24"
 }
