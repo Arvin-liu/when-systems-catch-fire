@@ -39,6 +39,11 @@
   - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [## 10. Non-private aggregate \(public, IGNITION §12 / §16\(6\)\)](../../../docs/R3-CORPUS-RUNTIME.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-16B536917EF356D4 / ## 10. Non-private aggregate \(public, IGNITION §12 / §16\(6\)\) / IMPLICIT-16B536917EF356D4
+  - 来源：`docs/R3-CORPUS-RUNTIME.md`
+  - 依赖：—；被引用：—
 - [## 4. Why the commitment gate is NOT merged into the Q33 rights/publication gate](../../../docs/discovery/discovery-commitment-boundary-architecture.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-06D2DA19DA375B42 / ## 4. Why the commitment gate is NOT merged into the Q33 rights/publication gate / IMPLICIT-06D2DA19DA375B42
