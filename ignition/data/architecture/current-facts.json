@@ -117,10 +117,10 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6151,
-      "function_quarantine_or_pending": 4999,
-      "nonfunction_claims": 17966,
-      "nonfunction_quarantine_or_pending": 4993
+      "function_identity_cards": 6193,
+      "function_quarantine_or_pending": 5041,
+      "nonfunction_claims": 18752,
+      "nonfunction_quarantine_or_pending": 5404
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -159,7 +159,7 @@
       "cards": 653,
       "changes": 548,
       "layered_readings": 574,
-      "search_records": 24691
+      "search_records": 25519
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -237,11 +237,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "f30f1908774031a683546d9528e768bd350527c6e4183d135c7889b9bd5d5747"
+      "sha256": "9f2a63963b63a1a0a71e8758c28507ac6982fee35392526cf2dff431e00fd6de"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "00eb76c2d6e8d5520f359656bac88b6143ebe0bce47a3932e5c5922fb8c0101e"
+      "sha256": "7aa94ebfb265fd5930d8839fc38e8517f371e7c47fc084ef09d6ba548a087d24"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -249,11 +249,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "07e18ee690254d12cc097a981603c5ce172d3ba4caeda2774634c35258882318"
+      "sha256": "02539d3f9860100b2c9c96f3f84ed02e8f49e98ce2bd49e3bf6202fb1f175357"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "9f4336bc6050e0386a02542b9dc115504ff0d3ad83f2d1099a583da6c039776d"
+      "sha256": "968ade8e93964e4c1b19de9318378f7d15d7d718b9e9ff378eee85b959e39039"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "1cb9e4397d0d8e09c809deb30ce538012eef1e6c3f69b4ad0b748cf9b6235bef"
+      "sha256": "471ca97e3c5a17d0e019a7372ed851e946b898b2261fe3b98d72322df0928cf2"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

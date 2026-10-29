@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 575 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 586 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -4148,6 +4148,110 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [SYMBOLIC-SPHERE repair-r2 — R4 freeze](../reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-444A463E9E52DF40`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：SYMBOLIC-SPHERE repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** RB09-DIRECT-PREDECESSOR-BINDING is closed at DECISION-INTEGRITY / SCIENTIFIC-METACOGNITION checkpoints.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt](../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
+
+- **结果 ID：** `HR-578F793E0EF4F0F6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze](../reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-9BD6FA3459079380`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e to the real predecessor repair-r2 head 1a51d1b3fd1bab4eb1c80a7429e0b629bcae69a9; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze](../reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-D4C40EC0127597ED`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head 4d15ccaf2e574248c0e224c05716c3af46203a39 to the real predecessor repair-r2 head 7532b4b34cf841c09faab8c835c5fc7f896d30d8; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Q44 repair-r2 — R4 freeze](../reports/operations/Q44-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-E80677686D834EF1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Q44 repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head 5efbce81e96d90d5ebd246891e4762928365d6b8 to the real predecessor repair-r2 head e5181c83efba68f847b55e13c7b5a1ee1fd6888e; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Q43 repair-r2 — R4 freeze](../reports/operations/Q43-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-4E7373C8B02F3F6E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Q43 repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head 2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98 to the real predecessor repair-r2 head 3283ef6e76788b30a467467083f0d5ad7086b5a0; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Q42 repair-r2 — R4 freeze](../reports/operations/Q42-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-886483A6B67D18E9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Q42 repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head 1904628103d8c23133107d501a22e3f17d08221d to the real predecessor repair-r2 head ea447ed7f6331f8ed5e58526f4c2341d3a41d6a6; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Q41 repair-r2 — R4 freeze](../reports/operations/Q41-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-AC064AC68608AC32`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Q41 repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head 183f4343a036d0dbb20ae7df9dd96be97bcd3fc3 to the real predecessor repair-r2 head 25f937ea8d53b4b14f31fc9c8779995f3c516bac; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Current Main vs 1.4 Candidate Homepage Comparison](../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
 
 - **结果 ID：** `HR-4F3C4FF4A7AB0E3A`
@@ -4169,6 +4273,45 @@
 - **问题：** 此来源记录了什么：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [F15-D1 repair-r2 — R4 freeze](../reports/operations/F15-D1-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-3DBAE4B94E7B9F19`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：F15-D1 repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head da9c4e2a6b8c0f757aa676814fda7c86d4ac2558 to the real predecessor repair-r2 head e92e7d3eadbb67da288077052f635e3c052bd3a1; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [DECISION-INTEGRITY repair-r2 — R4 freeze](../reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-55571C37DC8B05E5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：DECISION-INTEGRITY repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** stale pre-repair i1 head 213dced90f1e9b1f1992a148ee10fc0844917490 to the real SYMBOLIC-SPHERE repair-r2 head 68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [D2 repair-r2 — R4 freeze](../reports/operations/D2-REPAIR-R2-freeze.md)
+
+- **结果 ID：** `HR-7CED45F5B589417B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：D2 repair-r2 — R4 freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** prior-repair head f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09 to the real predecessor repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
