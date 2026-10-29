@@ -783,6 +783,9 @@ def test_s43_diff_scope():
         "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
         # This PR's seven-file human-front-door audit bundle is evidence only.
         "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/",
+        # Exact consumer tests changed to close this sync and its propagation blocker.
+        "ignition/tests/test_change_propagation.py",
+        "tests/test_human_front_door.py",
         "ignition/tools/foundation/validate_repository_path_classification.py",
         "ignition/docs/project-current-state.md",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
