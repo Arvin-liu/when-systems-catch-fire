@@ -2099,6 +2099,11 @@
   - 可搜索名称：IMPLICIT-F703DA2D45C240DF / D179_space_iso\(A,B\) := ∃φ: A→B, scale_A\(x\) = scale_B\(φ\(x\)\) / IMPLICIT-F703DA2D45C240DF / IMPLICIT-10FB38BAF219D048
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [D2 repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-7ced45f5b589417b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：D2 repair-r2 — R4 freeze / D2-REPAIR-R2-freeze
+  - 来源：`reports/operations/D2-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
 - [D583 可移植来源引用清理审计报告（IGNITION-20260709-055）](../../ASSET-CARDS.md#asset-hr-b72bf8b27748c5e3)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：D583 可移植来源引用清理审计报告（IGNITION-20260709-055） / d583-portable-source-reference-audit-20260711
@@ -2497,10 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5082456527 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json / A5082456527 / A5080191351
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5109860041 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json / A5109860041 / A5080191351
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json`
   - 依赖：—；被引用：—

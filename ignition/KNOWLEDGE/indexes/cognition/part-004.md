@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [跨域同构识别（教育案例×社会案例×认知案例）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-31b0bf20b8a4299d / 跨域同构识别（教育案例×社会案例×认知案例）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [跨域同构识别（社会案例×历史案例×认知案例）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1ac139e18f5c7007 / 跨域同构识别（社会案例×历史案例×认知案例）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [路径积分验证 — 创业决策-ħ_eff=0.1时策略集中在最优路径附近\(D118预测\),ħ_eff=0.8时策略分散在多条路径\(非最优策略也](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-302555d12b9f2915 / 路径积分验证 — 创业决策-ħ_eff=0.1时策略集中在最优路径附近\(D118预测\),ħ_eff=0.8时策略分散在多条路径\(非最优策略也
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D118；被引用：—
 - [输出：** 索引可见性验证报告。](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-902807334cddfef2 / 输出：** 索引可见性验证报告。

@@ -144,6 +144,26 @@
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `函数资产作者指南`, `function-asset-authoring-guide`
 
+<a id="asset-hr-3dbae4b94e7b9f19"></a>
+## F15-D1 repair-r2 — R4 freeze
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3DBAE4B94E7B9F19` · [reports/operations/F15-D1-REPAIR-R2-freeze.md](../../reports/operations/F15-D1-REPAIR-R2-freeze.md)
+- **为什么产生：** 此来源记录了什么：F15-D1 repair-r2 — R4 freeze？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** prior-repair head da9c4e2a6b8c0f757aa676814fda7c86d4ac2558 to the real predecessor repair-r2 head e92e7d3eadbb67da288077052f635e3c052bd3a1; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D1`
+- **来源与证据：** `reports/operations/F15-D1-REPAIR-R2-freeze.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-10-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `F15-D1 repair-r2 — R4 freeze`, `F15-D1-REPAIR-R2-freeze`
+
 <a id="asset-hr-3ded720d598ae407"></a>
 ## Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00
 
@@ -423,6 +443,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q31T｜交互系统总图与双来源写作素材池合并收口审计`, `121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit`
+
+<a id="asset-hr-444a463e9e52df40"></a>
+## SYMBOLIC-SPHERE repair-r2 — R4 freeze
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-444A463E9E52DF40` · [reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md](../../reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md)
+- **为什么产生：** 此来源记录了什么：SYMBOLIC-SPHERE repair-r2 — R4 freeze？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** RB09-DIRECT-PREDECESSOR-BINDING is closed at DECISION-INTEGRITY / SCIENTIFIC-METACOGNITION checkpoints.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-10-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `SYMBOLIC-SPHERE repair-r2 — R4 freeze`, `SYMBOLIC-SPHERE-REPAIR-R2-freeze`
 
 <a id="asset-hr-448288b011711aef"></a>
 ## 证据制度卡片：数学
@@ -944,62 +984,22 @@
 - **主题：** `SYSTEMS`
 - **可搜索名称：** `机制抽取（mechanism-extraction）`, `mechanism-extraction`
 
-<a id="asset-hr-4ec1ffa8540c9ee2"></a>
-## 治理报告：IGNITION-20260908-165
+<a id="asset-hr-4e7373c8b02f3f6e"></a>
+## Q43 repair-r2 — R4 freeze
 
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4EC1FFA8540C9EE2` · [reports/governance/task-IGNITION-20260908-165.md](../../reports/governance/task-IGNITION-20260908-165.md)
-- **为什么产生：** 此来源记录了什么：治理报告：IGNITION-20260908-165？
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4E7373C8B02F3F6E` · [reports/operations/Q43-REPAIR-R2-freeze.md](../../reports/operations/Q43-REPAIR-R2-freeze.md)
+- **为什么产生：** 此来源记录了什么：Q43 repair-r2 — R4 freeze？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **当前结果：** prior-repair head 2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98 to the real predecessor repair-r2 head 3283ef6e76788b30a467467083f0d5ad7086b5a0; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/governance/task-IGNITION-20260908-165.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-09-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **来源与证据：** `reports/operations/Q43-REPAIR-R2-freeze.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-10-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `治理报告：IGNITION-20260908-165`, `task-IGNITION-20260908-165`
-
-<a id="asset-hr-4edebbdac25bcee9"></a>
-## IGNITION-20260825-139 Step 13 — Targeted regression and projection repair
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4EDEBBDAC25BCEE9` · [reports/operations/ignition-139-step13-targeted-regression.md](../../reports/operations/ignition-139-step13-targeted-regression.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260825-139 Step 13 — Targeted regression and projection repair？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** PASS: after the first candidate natural full run exposed 31 genuine projection/accounting failures, the repaired targeted surface completed with 83 tests, 0 failures, 0 errors, and 0 skips. The 51 Task139 live/Current/identity/surface tests completed in 182.902s; the 32 Foundation closure and pat…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-139-step13-targeted-regression.md`, `139-STEP13-TARGETED-REGRESSION`
-- **演化历史：** 2026-08-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260825-139 Step 13 — Targeted regression and projection repair`, `ignition-139-step13-targeted-regression`
-
-<a id="asset-hr-4eea99720b5fd0d4"></a>
-## IGNITION-20260826-140 Step 01 — Architecture-impact classification R1
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4EEA99720B5FD0D4` · [reports/operations/ignition-140-step01-architecture-impact-classifier.md](../../reports/operations/ignition-140-step01-architecture-impact-classifier.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260826-140 Step 01 — Architecture-impact classification R1？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The new machine-readable classifier separates ARCHITECTURECHANGING, BEHAVIORALCONTROLPLANECHANGE, PRESENTATIONONLY, RELEASEONLY and DATAREFRESHONLY (with NONE for an unchanged task). It derives the class from semantic markers rather than from whether a map node or documentation file changed. The…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-140-step01-architecture-impact-classifier.md`, `140-STEP01-ARCHITECTURE-IMPACT-CLASSIFIER`
-- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260826-140 Step 01 — Architecture-impact classification R1`, `ignition-140-step01-architecture-impact-classifier`
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Q43 repair-r2 — R4 freeze`, `Q43-REPAIR-R2-freeze`

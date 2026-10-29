@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-58dcc5813003a0ae / 与 Ψ₀ 关系：V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
+  - 来源：`docs/meta-protocols/12-meta-protocols.md`
+  - 依赖：—；被引用：—
+- [与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-710e5bc34443f156 / 与 Ψ₀ 关系：V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
+  - 来源：`docs/meta-protocols/12-meta-protocols.md`
+  - 依赖：—；被引用：—
+- [与案例表碰撞（找对应案例、反例、支撑）。](../../../docs/getbrain-operation-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f9cc2819e4431d7e / 与案例表碰撞（找对应案例、反例、支撑）。
+  - 来源：`docs/getbrain-operation-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [与退出权不同构：退出=离开，避风港=内部保留低侵蚀空间](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d23645fd745d0bb2 / 与退出权不同构：退出=离开，避风港=内部保留低侵蚀空间
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [与退出权族不同构：补「待遇强绑定→可拒绝性趋零」维度](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-246ea5f319d2e154 / 与退出权族不同构：补「待遇强绑定→可拒绝性趋零」维度
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [两张表全量碰撞报告（two-tables-full-collision-report）](../../ASSET-CARDS.md#asset-hr-bbf31ff3f05d22fe)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：两张表全量碰撞报告（two-tables-full-collision-report） / two-tables-full-collision-report
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：—；被引用：—
+- [两张表版本同步维护审计（2026-07-09 00:30）](../../ASSET-CARDS.md#asset-hr-2605b1957ccb9e09)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：两张表版本同步维护审计（2026-07-09 00:30） / two-tables-version-sync-audit-20260708
+  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [个结构缺口 × 250 学科的真实文献试投影**全部落地**：117 条来源**全部经 Crossref 双向核验、零伪造**，其中 8 个 HIGH 缺口作为**补丁库/对齐层的新对象类型接口**注入，6 个 MEDIUM 缺口作为引擎内](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3dd5038464201f66 / 个结构缺口 × 250 学科的真实文献试投影**全部落地**：117 条来源**全部经 Crossref 双向核验、零伪造**，其中 8 个 HIGH 缺口作为**补丁库/对齐层的新对象类型接口**注入，6 个 MEDIUM 缺口作为引擎内
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
 - [中文：$$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrightarrow \\quad \\text{Ignition}: \\neg G \\xrightarrow{\\text{破缺}} \\text{Directed Evolution}$$ 守恒量变化率： $$\\frac{dQ}{dt} = -\\nabla G \\cdot \\vec{v}_{evolution}$$ $](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2721291F515316D6 / 中文：$$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrightarrow \\quad \\text{Ignition}: \\neg G \\xrightarrow{\\text{破缺}} \\text{Directed Evolution}$$ 守恒量变化率： $$\\frac{dQ}{dt} = -\\nabla G \\cdot \\vec{v}_{evolution}$$ $ / IMPLICIT-2721291F515316D6

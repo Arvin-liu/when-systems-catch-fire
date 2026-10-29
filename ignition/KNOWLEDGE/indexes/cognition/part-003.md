@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Repository-local deterministic Steering / Intent / Goal / Commitment modeling and current architecture projection only;](../../../agent-results/IGNITION-20260821-129-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8fc2b78389b2cb7b / Repository-local deterministic Steering / Intent / Goal / Commitment modeling and current architecture projection only;
+  - 来源：`agent-results/IGNITION-20260821-129-machine-receipt.json`
+  - 依赖：—；被引用：—
 - [Repository-local fresh task-branch projection and natural full-suite evidence only; publication and independent 1111 wit](../../../agent-results/IGNITION-20260826-141-machine-receipt.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-09cf6d017c541eab / Repository-local fresh task-branch projection and natural full-suite evidence only; publication and independent 1111 wit
@@ -294,6 +299,11 @@
   - 可搜索名称：NFC-3c64b7e7dff51d56 / scan-freeze, CI, merge, and post-merge facts are recorded in the independent
   - 来源：`agent-results/IGNITION-20260908-168-result.md`
   - 依赖：—；被引用：—
+- [SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-9bd6fa3459079380)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze / SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze
+  - 来源：`reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
 - [scope boundary, not a successful live-agent claim. OpenClaw is denied by the](../../../docs/architecture/federation-pilots-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-99ba426ef9f11dd0 / scope boundary, not a successful live-agent claim. OpenClaw is denied by the
@@ -483,6 +493,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-45670e5a760257f3 / SYMBOLIC-SPHERE no longer accepts caller-supplied booleans as evidence that its semantic rules passed. Its validator res
   - 来源：`docs/symbolic/symbolic-sphere-i1-architecture-decision.md`
+  - 依赖：—；被引用：—
+- [SYMBOLIC-SPHERE repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-444a463e9e52df40)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：SYMBOLIC-SPHERE repair-r2 — R4 freeze / SYMBOLIC-SPHERE-REPAIR-R2-freeze
+  - 来源：`reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md`
   - 依赖：—；被引用：—
 - [target branch: `agent/121q37-i1-analogy-audit-transportability`](../../../docs/analogy/q37-i1-architecture-decision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-767b05d6ca21fa9e / 跨域同构识别（AI 案例×认知案例×社会案例）
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—
-- [跨域同构识别（教育案例×社会案例×认知案例）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-31b0bf20b8a4299d / 跨域同构识别（教育案例×社会案例×认知案例）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [跨域同构识别（社会案例×历史案例×认知案例）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1ac139e18f5c7007 / 跨域同构识别（社会案例×历史案例×认知案例）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [路径积分验证 — 创业决策-ħ_eff=0.1时策略集中在最优路径附近\(D118预测\),ħ_eff=0.8时策略分散在多条路径\(非最优策略也](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-302555d12b9f2915 / 路径积分验证 — 创业决策-ħ_eff=0.1时策略集中在最优路径附近\(D118预测\),ħ_eff=0.8时策略分散在多条路径\(非最优策略也
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：D118；被引用：—
