@@ -68,6 +68,10 @@ EXPECTED_HEAD_BASES = {
     "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1": {
         "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1",
     },
+    # The R3 measurement candidate stays stacked on the current Q33 parent branch.
+    "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1": {
+        "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1",
+    },
 }
 
 
@@ -749,6 +753,10 @@ def test_s43_diff_scope():
         "docs/ignition-runtime/",
         ".github/workflows/ignition-production-validation.yml",
         ".github/workflows/foundation-validation.yml",
+        # This PR's measurement-only R3 validation workflow.
+        ".github/workflows/r3-corpus-scale-validation.yml",
+        # R3 corpus scope and private-data ignore boundary.
+        ".gitignore",
         "docs/project-current-state.md",
         "reports/ignition-rpe/",
         "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
@@ -835,6 +843,19 @@ def test_s43_diff_scope():
         'ignition/tests/foundation/test_repository_path_classification.py',
         'ignition/tests/test_component_validation_routing.py',
         'ignition/tests/test_era_resolver_generalization.py',
+        # Exact R3 corpus-scale measurement artifacts and runtime.
+        'ignition/data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json',
+        'ignition/data/r3-corpus-scale/public-aggregate.json',
+        'ignition/docs/R3-CORPUS-RUNTIME.md',
+        'ignition/requirements-r3.txt',
+        'ignition/tests/r3_synthetic_corpus.py',
+        'ignition/tests/test_r3_corpus_acceptance.py',
+        'ignition/tests/test_r3_corpus_analysis.py',
+        'ignition/tests/test_r3_corpus_boundary.py',
+        'ignition/tests/test_r3_corpus_crash.py',
+        'ignition/tests/test_r3_corpus_inventory.py',
+        'ignition/tests/test_r3_corpus_semantic.py',
+        'ignition/tools/adaptive_relational_runtime/corpus/',
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():
