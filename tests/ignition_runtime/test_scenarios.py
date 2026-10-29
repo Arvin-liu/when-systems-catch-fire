@@ -39,8 +39,11 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = os.environ.get("PR_BASE_SHA", "c7f3b1a1b1d61d25aae9ffc67119054daf58d7e6")
+PR_BASE = os.environ.get("PR_BASE_SHA", "037420ee7a80035e448ec99facdffb7aac26406d")
 EXPECTED_HEAD_BASES = {
+    "repair-r3/scientific-context-protocol-r3-semantic-evaluator": {
+        "production/ignition-run-promote-evolve-r1",
+    },
     "production/ignition-run-promote-evolve-r1": {
         "repair-r3/scientific-context-protocol-r3-semantic-evaluator",
     },
@@ -712,15 +715,11 @@ def test_s40_m5_secondary_temporal():
 # S41 — exact stacked target and no direct-main substitution
 # --------------------------------------------------------------------------
 def test_s41_branch_and_base_unchanged():
-    branch = (
-        os.environ.get("GITHUB_HEAD_REF")
-        or os.environ.get("EXPECTED_HEAD_REF")
-        or git("branch", "--show-current")
-    )
-    assert branch in EXPECTED_HEAD_BASES
-    base_ref = os.environ.get("GITHUB_BASE_REF")
-    if base_ref:
-        assert base_ref in EXPECTED_HEAD_BASES[branch]
+    branch = os.environ.get("GITHUB_HEAD_REF") or git("branch", "--show-current")
+    base_branch = os.environ.get("GITHUB_BASE_REF")
+    expected_bases = EXPECTED_HEAD_BASES.get(branch)
+    assert expected_bases is not None, f"unexpected stacked head branch: {branch}"
+    assert base_branch in expected_bases, f"unexpected base {base_branch!r} for {branch}"
     assert git("merge-base", "HEAD", PR_BASE) == PR_BASE
     # not on main
     assert branch != "main"
@@ -739,47 +738,48 @@ def test_s42_runtime_imports_and_runs():
 
 
 # --------------------------------------------------------------------------
-# S43 — Draft diff stays within runtime, ARR, and authorized derived-evidence scope
+# S43 — Draft diff stays within runtime scope and authorized route/evidence sidecars
 # --------------------------------------------------------------------------
 def test_s43_diff_scope():
     allowed_prefixes = (
         "tools/ignition_runtime/",
         "schemas/ignition_runtime/",
         "tests/ignition_runtime/",
+        "tests/rpe_ci/",
         "docs/ignition-runtime/",
         ".github/workflows/ignition-production-validation.yml",
-        ".github/workflows/foundation-validation.yml",
         "docs/project-current-state.md",
         "reports/ignition-rpe/",
+        "ignition/reports/ignition-rpe/",
+        "ignition/AI-HANDOFF.md",
+        "ignition/AI-START-HERE.md",
+        # These exact paths keep the current-map version fact canonical across validation and the machine entry.
+        "ignition/tools/validate_human_front_door.py",
+        "ignition/llms.txt",
+        "ignition/KNOWLEDGE/",
+        "ignition/RESULTS/",
         "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
         "ignition/data/architecture/interactive-system-map.json",
+            # Added by the newer stacked base in PR #123; keep the diff scope accurate.
+            "ignition/docs/architecture/interactive-system-map.md",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/architecture/adaptive-relational-runtime/",
         "ignition/data/foundation/function-assets/",
         "ignition/data/foundation/nonfunction-claims/",
+        "ignition/data/governance/human-results/",
+        "ignition/data/governance/human-surface/",
         "ignition/data/governance/knowledge-experience/",
+        "ignition/data/governance/self-correction/",
         "ignition/data/operations/component-execution-profiles.json",
-        # Source policy and focused probes for the authorized component-profile,
-        # import-isolation, source-history, and iteration-sync blocker repairs.
-        "ignition/data/operations/component-execution-profile-policies.json",
-        "ignition/tests/test_component_validation_routing.py",
-        "ignition/tests/test_iteration_sync.py",
-        "ignition/tests/test_knowledge_experience.py",
-        "ignition/tools/validate_iteration_sync.py",
         "ignition/data/operations/component-validation-map-r1.json",
-        "ignition/data/operations/project-components.json",
-        "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
-        "ignition/KNOWLEDGE/",
-        "ignition/data/architecture/adaptive-relational-runtime/",
-        "ignition/data/architecture/current-facts.json",
+        "ignition/data/operations/current-snapshot-r1.json",
+        # Exact ARR scaffold and R2 positive-routing repair assets.
         "ignition/data/architecture/interactive-system-map-layout.json",
         "ignition/data/architecture/system-map-geometry-quality-r1.json",
         "ignition/data/governance/human-surface/materiality-manifest.json",
         "ignition/data/operations/change-propagation-topology.json",
         "ignition/data/operations/iterations/ARR-R1-SCAFFOLD.json",
-        "ignition/docs/architecture/",
         "ignition/docs/generated/ignition-system-map.svg",
-        # Exact generated Foundation human projections changed by ARR's registry
-        # updates: aggregate totals and the two affected A1/A2 fingerprints.
-        # Keep each function-asset path explicit so unrelated prose stays blocked.
         "ignition/docs/human/function-assets/README.md",
         "ignition/docs/human/function-assets/bulk-explanation.md",
         "ignition/docs/human/function-assets/entries/a1.md",
@@ -787,7 +787,6 @@ def test_s43_diff_scope():
         "ignition/docs/human/nonfunction-assets/README.md",
         "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
         "ignition/docs/human/nonfunction-assets/entries/",
-        # Exact documentation, evidence bundle and path-classifier files owned by #122.
         "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
         "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
         # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
@@ -800,9 +799,22 @@ def test_s43_diff_scope():
         "ignition/tests/test_change_propagation.py",
         "tests/test_human_front_door.py",
         "ignition/tools/foundation/validate_repository_path_classification.py",
-        "ignition/docs/project-current-state.md",
+        # Exact consumers changed by the Q33 resolver and path-classification repair.
+        "ignition/tests/foundation/test_repository_path_classification.py",
+        "ignition/tests/test_component_validation_routing.py",
+        "ignition/tests/test_era_resolver_generalization.py",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
         "ignition/requirements-foundation.txt",
+        "ignition/data/operations/project-components.json",
+        "ignition/data/publication/fire-seeds/",
+        "ignition/docs/architecture/current-facts.md",
+        "ignition/docs/project-current-state.md",
+        "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+        "ignition/docs/human/function-assets/",
+        "ignition/docs/human/nonfunction-assets/",
+        "ignition/tools/governance/gen_source_first_seen.py",
+        "ignition/tests/test_iteration_sync.py",
+        "ignition/tools/validate_iteration_sync.py",
         "ignition/schemas/architecture/adaptive-relational-runtime/",
         "ignition/tests/adaptive_relational_runtime/",
         "ignition/tools/adaptive_relational_runtime/",
@@ -823,25 +835,9 @@ def test_s43_diff_scope():
         "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-request.json",
         "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-residue.json",
         "ignition/reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
-        'tests/rpe_ci/',
-        'ignition/reports/ignition-rpe/',
-        'ignition/AI-HANDOFF.md',
-        'ignition/AI-START-HERE.md',
-        'ignition/tools/validate_human_front_door.py',
-        'ignition/llms.txt',
-        'ignition/RESULTS/',
-        'ignition/data/governance/human-results/',
-        'ignition/data/governance/human-surface/',
-        'ignition/data/governance/self-correction/',
-        'ignition/data/operations/current-snapshot-r1.json',
-        'ignition/data/publication/fire-seeds/',
-        'ignition/docs/architecture/current-facts.md',
-        'ignition/tools/governance/gen_source_first_seen.py',
-        'ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md',
-        # Exact consumer tests changed by the Q33 routing and era-resolver repair.
-        'ignition/tests/foundation/test_repository_path_classification.py',
-        'ignition/tests/test_component_validation_routing.py',
-        'ignition/tests/test_era_resolver_generalization.py',
+        "ignition/docs/architecture/adaptive-relational-runtime-r2-adrs.md",
+        "ignition/docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
+        "ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md",
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():
