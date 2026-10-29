@@ -61,7 +61,7 @@
     },
     "fire_seeds": {
       "seed_count": 64,
-      "source_census_count": 652
+      "source_census_count": 658
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
@@ -249,7 +249,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "92004c96de28738f1a62fd4d093a51cc715abea471ce2c2e1ab8d0ee62618a9d"
+      "sha256": "97ccb1c01cf7a78b27387c45f7b79908ccc253f66ea24b1a6d1cced15907c136"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "dce7f23fca733100a37f64f63f3f7fe6a33f5d1638c2f5061113a476a21690b6"
+      "sha256": "4a1df9e7db0e6c577f4156f206ae797437ee9612dc6abb2eb12e5765457a901c"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
