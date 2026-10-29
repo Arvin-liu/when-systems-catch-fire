@@ -1001,7 +1001,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/proofs/obligations.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/proofs/proof-artifacts.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","exclusion_reason":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","path":"data/foundation/registry-manifest.json"}
-{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","exclusion_reason":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","path":"data/foundation/repository-path-classification/classification-manifest.jsonl"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"data/foundation/repository-path-classification/classification-manifest.jsonl"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/schemas/adjudication.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/schemas/argument.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/foundation/schemas/claim.schema.json"}
@@ -3356,6 +3356,13 @@
 {"candidate_fragments":9,"canonical_claim_ids":["NFC-0c7b40722b6468a5","NFC-35d025d0d5a88b1c","NFC-37eceaaf3c9f4fda","NFC-3d0b07f598e8886a","NFC-438d8f26a135ee53","NFC-915290d1e60de4ca","NFC-9817eea616b45f20","NFC-aeca83150bac1150","NFC-c42ab2a7bfad6fd4"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"requirements-foundation.txt"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"requirements-q33.txt"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"research_workflow/README.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"research_workflow/SLOT.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"research_workflow/__init__.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"research_workflow/cli.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"research_workflow/slot.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"research_workflow/test_pluggable_slot.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"research_workflow/test_research_workflow.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/README.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/agent-federation/build-vs-integrate-policy-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/agent-federation/executor-component-ownership-r1.schema.json"}
@@ -3646,7 +3653,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"scripts/external-research/fulltext_fetcher.py"}
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-0e2a568830da5c60","NFC-852733e00f5dc9c4"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"scripts/external-research/fulltext_resolver.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"scripts/external-research/fulltext_resolver_config.example.json"}
-{"candidate_fragments":10,"canonical_claim_ids":["NFC-07f4b522660aa7d5","NFC-0c8e98b787fd265c","NFC-28cb03fba3f21fc8","NFC-2e5d81f7b1512222","NFC-9b1a79ace5892305","NFC-a6cd861b8939a919","NFC-ea882c5020912db8","NFC-eb2b6fd46659fa61","NFC-f737a3e533b7a597"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"scripts/external-research/openalex_client.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"scripts/external-research/openalex_client.py"}
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-9708c0d447a92f66","NFC-fb5951d592b7bd19"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"templates/book-validation-case-candidate-template.md"}
 {"candidate_fragments":4,"canonical_claim_ids":["NFC-6acbf6f7b1c347ab","NFC-71e554b546ab1bd0","NFC-c7565431848c1811","NFC-f964b994be6bda81"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"templates/collision/backfill-plan-template.md"}
 {"candidate_fragments":6,"canonical_claim_ids":["NFC-2762b048a2c9bc43","NFC-68f117ff04128b66","NFC-ac8b556355d1c6d3","NFC-ba32d7ba1ee3af06","NFC-e671ce126b64a66b","NFC-f43db75cea219155"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"templates/collision/output-template.md"}

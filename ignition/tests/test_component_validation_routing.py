@@ -563,35 +563,42 @@ class ComponentValidationRoutingTest(unittest.TestCase):
 
     def test_nested_ignition_import_roots_load_pr259_consumer_layout(self):
         with tempfile.TemporaryDirectory() as temp:
-            repo_root = Path(temp)
-            package = repo_root / "ignition/research_workflow"
-            package.mkdir(parents=True)
-            (package / "__init__.py").write_text("", encoding="utf-8")
-            (package / "cli.py").write_text("VALUE = 43\n", encoding="utf-8")
-            consumer_source = "\n".join([
-                "import cli",
-                "import unittest",
-                "class ConsumerTest(unittest.TestCase):",
-                "    def test_script_style_import(self):",
-                "        self.assertEqual(cli.VALUE, 43)",
-                "",
-            ])
-            (package / "test_nested_consumer.py").write_text(consumer_source, encoding="utf-8")
+            repo_roots = [Path(temp) / "first", Path(temp) / "second"]
+            for repo_root, value in zip(repo_roots, (43, 47)):
+                package = repo_root / "ignition/research_workflow"
+                package.mkdir(parents=True)
+                (package / "__init__.py").write_text("", encoding="utf-8")
+                (package / "cli.py").write_text(f"VALUE = {value}\n", encoding="utf-8")
+                consumer_source = "\n".join([
+                    "import cli",
+                    "import unittest",
+                    "class ConsumerTest(unittest.TestCase):",
+                    "    def test_script_style_import(self):",
+                    f"        self.assertEqual(cli.VALUE, {value})",
+                    "",
+                ])
+                (package / "test_nested_consumer.py").write_text(consumer_source, encoding="utf-8")
             for module_name in [
                 name for name in sys.modules
                 if name == "cli" or name == "research_workflow" or name.startswith("research_workflow.")
             ]:
                 sys.modules.pop(module_name, None)
-            result = run_modules(
-                ["research_workflow.test_nested_consumer"],
-                repo_root=repo_root,
-                import_roots=["ignition", "ignition/research_workflow"],
-                verbosity=0,
-            )
-        self.assertEqual(result["tests_executed"], 1)
-        self.assertEqual(result["failures"], 0)
-        self.assertEqual(result["errors"], 0)
-        self.assertTrue(result["successful"])
+            results = [
+                run_modules(
+                    ["research_workflow.test_nested_consumer"],
+                    repo_root=repo_root,
+                    import_roots=["ignition", "ignition/research_workflow"],
+                    verbosity=0,
+                )
+                for repo_root in repo_roots
+            ]
+            self.assertNotIn("research_workflow", sys.modules)
+            self.assertNotIn("cli", sys.modules)
+        for result in results:
+            self.assertEqual(result["tests_executed"], 1)
+            self.assertEqual(result["failures"], 0)
+            self.assertEqual(result["errors"], 0)
+            self.assertTrue(result["successful"])
 
     def test_plan_hash_tampering_blocks_target_execution(self):
         plan = self.plan(["data/governance/history-remediation-register.json"])
