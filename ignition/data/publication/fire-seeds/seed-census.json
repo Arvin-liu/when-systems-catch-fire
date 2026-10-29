@@ -36,16 +36,16 @@
   },
   "knowledge_experience": {
     "manifest_counts": {
-      "aliases": 1353,
+      "aliases": 1375,
       "card_shards": 14,
-      "cards": 653,
-      "changes": 548,
+      "cards": 664,
+      "changes": 559,
       "layer_shards": 12,
-      "layered_readings": 574,
-      "search_records": 25519,
+      "layered_readings": 585,
+      "search_records": 25530,
       "subject_indexes": 61
     },
-    "layered_reading_source_origins": 574,
+    "layered_reading_source_origins": 585,
     "layered_reading_status_counts": {
       "CANDIDATE_OR_PENDING_SOURCE": 30,
       "CURRENT_CORRECTION_RECORD": 7,
@@ -53,7 +53,7 @@
       "CURRENT_SCOPED_SOURCE": 8,
       "HISTORICAL_COMPLETION_RECORD": 66,
       "HISTORICAL_OR_SUPERSEDED_SOURCE": 7,
-      "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE": 355
+      "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE": 366
     }
   },
   "candidate_count": 64,
@@ -2334,7 +2334,7 @@
       "title": "ASSET-CARDS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "2bc6bf8682065212cffb93a0e047a2f232a4d6aa6f0e5f089e445f62e060873c",
+      "source_sha256": "b7651aa1e32db9b7de609266574916804ec4ee0fd7a421d6bacd3dada49fd02e",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2347,7 +2347,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "2322b4152cf0985479bdd52d60e8d973b3e3a84b0b6f42c817442a80c1f89c57",
+      "source_sha256": "235d2dc8d93f8f890704413bc8b92e1d113221d65747b6e6510d2b19e0319f76",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2373,7 +2373,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "95d01c8adbc5b6363b038f5520d7c1a60e69b9fdcc798e6e712bc2fb77cb75ab",
+      "source_sha256": "26f525016a60e6386b90529825cd82fc0313e747dec450ad18c9380730e7728d",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2386,7 +2386,7 @@
       "title": "READING-LAYERS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "6f7a8d94ea7c0a39e36a2bf82213f0b14586624ec95dfeb6c34e4a1879cfabea",
+      "source_sha256": "2ea095f442ac5401d9d2700ca8398840211a65dabc850cce56ff684964f56387",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2399,7 +2399,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "97a28832f1a7786718ee7f33ed30d676007d7439947a22ba1978de8671a25a17",
+      "source_sha256": "c3d150ea0b72484ae3db0ef1400d2bdf1fdda1b9d3717691de98aebcd61caa97",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2415,7 +2415,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "28e4d4836144d01e0a612ae4fcf329fa77a5a1a80590697431b550b582d6fd31",
+      "source_sha256": "1e541fccd07b256993583c7519ed9b1da527b34c4b0a17e0df6b6c87787bd62c",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2428,7 +2428,7 @@
       "title": "WHATS-NEW",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "7094bd015a9a87a0de4900063f9062e99c64e71d4ecea751b30b594bcd1bf929",
+      "source_sha256": "989257f2280d63cf52a5b6355d52622746bcdf76963f5f40343655a45690ae17",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -8335,6 +8335,45 @@
     },
     {
       "source_id": "ORIGIN-0456",
+      "source_path": "reports/operations/D2-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "D2 repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "461e0f360811c372599f937369492fb183614ee225e7a7bdc56fd995957162ce",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0457",
+      "source_path": "reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "DECISION-INTEGRITY repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "b5ff8242ea248e264806c55c0853ae8e7ae13d5dcbd0fd182cb38f260814c1c9",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0458",
+      "source_path": "reports/operations/F15-D1-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "F15-D1 repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "e6430fe7485e83a30c239a6e4cb94bf4f0ab75df9abe7a2408473636618f5a40",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0459",
       "source_path": "reports/operations/IGNITION-20260815-120-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260815-120 typed change-propagation impact report",
@@ -8347,7 +8386,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0457",
+      "source_id": "ORIGIN-0460",
       "source_path": "reports/operations/IGNITION-20260829-148-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260829-148 typed change-propagation impact report",
@@ -8360,7 +8399,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0458",
+      "source_id": "ORIGIN-0461",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report",
@@ -8373,7 +8412,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0459",
+      "source_id": "ORIGIN-0462",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726 typed change-propagation impact report",
@@ -8386,7 +8425,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0460",
+      "source_id": "ORIGIN-0463",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report",
@@ -8399,7 +8438,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0461",
+      "source_id": "ORIGIN-0464",
       "source_path": "reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Current Main vs 1.4 Candidate Homepage Comparison",
@@ -8412,7 +8451,111 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0462",
+      "source_id": "ORIGIN-0465",
+      "source_path": "reports/operations/Q41-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "Q41 repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "dd0ad6dbdb997bfd5611eb7a0bb2f99ab55e40aadd98146ec98825af29e8a844",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0466",
+      "source_path": "reports/operations/Q42-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "Q42 repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "e540cf76e9792fc4698b4f82789cff9ead3501f26604c9e9f2b314bda639774e",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0467",
+      "source_path": "reports/operations/Q43-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "Q43 repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "15ce801dea75efc76c8933a9fe0c4dd383b83a0a6879eacadda505c7a4f11eb8",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0468",
+      "source_path": "reports/operations/Q44-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "Q44 repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "7ceefef22c3939cd9af4d95baed73b1115dc9e76f77eb7d2de81ae80a5632902",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0469",
+      "source_path": "reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "2fae4124db469ec9c2f1b841d66bf027e07f5c8197f2421cd9da4f542f18a494",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0470",
+      "source_path": "reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "fb41cb1bd4befa6b135faf08a48470220deac14f8de6ca918a5b56ae5b84aaec",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0471",
+      "source_path": "reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "068881dd74ff31e5747fc07fdd582d2b9f450bfcd82c4ed9833d7cafa41a3fb8",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0472",
+      "source_path": "reports/operations/SYMBOLIC-SPHERE-REPAIR-R2-freeze.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "SYMBOLIC-SPHERE repair-r2 — R4 freeze",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "0882b6ae078c65312427a5b07ad0c05b3e8346dd39fd821176d6b11020bc4343",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0473",
       "source_path": "reports/operations/ignition-121-nightshift-progress.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260816-121 night-shift progress",
@@ -8425,7 +8568,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0463",
+      "source_id": "ORIGIN-0474",
       "source_path": "reports/operations/ignition-122-federation-progress.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260816-122 Federation R1 Progress",
@@ -8438,7 +8581,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0464",
+      "source_id": "ORIGIN-0475",
       "source_path": "reports/operations/ignition-123-nightshift-progress.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260816-123 架构真相同步 R1 夜班进度",
@@ -8451,7 +8594,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0465",
+      "source_id": "ORIGIN-0476",
       "source_path": "reports/operations/ignition-124-progress.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260817-124 — OS Control Plane R2 progress",
@@ -8464,7 +8607,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0466",
+      "source_id": "ORIGIN-0477",
       "source_path": "reports/operations/ignition-126-progress.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260818-126 — Epistemic Structural Induction R0 progress",
@@ -8477,7 +8620,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0467",
+      "source_id": "ORIGIN-0478",
       "source_path": "reports/operations/ignition-127-step00-rebase-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit",
@@ -8490,7 +8633,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0468",
+      "source_id": "ORIGIN-0479",
       "source_path": "reports/operations/ignition-128-step00-current-state-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-128 Step 00 — Current-State semantic audit",
@@ -8503,7 +8646,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0469",
+      "source_id": "ORIGIN-0480",
       "source_path": "reports/operations/ignition-128-step04-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-128 Step 04 — deterministic rebuild and regression",
@@ -8516,7 +8659,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0470",
+      "source_id": "ORIGIN-0481",
       "source_path": "reports/operations/ignition-129-step00-steering-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260821-129 Step 00 — Steering gap audit",
@@ -8529,7 +8672,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0471",
+      "source_id": "ORIGIN-0482",
       "source_path": "reports/operations/ignition-129-step20-current-sync.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-129 Step 20 — Current architecture/state synchronization",
@@ -8542,7 +8685,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0472",
+      "source_id": "ORIGIN-0483",
       "source_path": "reports/operations/ignition-130-step00-current-surface-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-130 Step 00 — Current surface split-brain audit",
@@ -8555,7 +8698,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0473",
+      "source_id": "ORIGIN-0484",
       "source_path": "reports/operations/ignition-130-step11-residual-reclassification.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-130 Step 11 — residual reclassification",
@@ -8568,7 +8711,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0474",
+      "source_id": "ORIGIN-0485",
       "source_path": "reports/operations/ignition-131-step00-publication-paradox-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-131 Step 00 — Release publication paradox audit",
@@ -8581,7 +8724,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0475",
+      "source_id": "ORIGIN-0486",
       "source_path": "reports/operations/ignition-132-step00-canonical-current-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction",
@@ -8594,7 +8737,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0476",
+      "source_id": "ORIGIN-0487",
       "source_path": "reports/operations/ignition-132-step07-task-id-binding.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding",
@@ -8607,7 +8750,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0477",
+      "source_id": "ORIGIN-0488",
       "source_path": "reports/operations/ignition-132-step08-adversarial-matrix.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix",
@@ -8620,7 +8763,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0478",
+      "source_id": "ORIGIN-0489",
       "source_path": "reports/operations/ignition-132-step09-canonical-current-migration.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-132 Step 09 — Canonical Current Migration",
@@ -8633,7 +8776,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0479",
+      "source_id": "ORIGIN-0490",
       "source_path": "reports/operations/ignition-132-step10-surface-recompilation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-132 Step 10 — Current Surface Recompilation and Stable Prose",
@@ -8646,7 +8789,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0480",
+      "source_id": "ORIGIN-0491",
       "source_path": "reports/operations/ignition-132-step11-residual-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-132 Step 11 — Residual and Regression Audit",
@@ -8659,7 +8802,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0481",
+      "source_id": "ORIGIN-0492",
       "source_path": "reports/operations/ignition-132-step12-regression-closure.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure",
@@ -8672,7 +8815,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0482",
+      "source_id": "ORIGIN-0493",
       "source_path": "reports/operations/ignition-134-step00-residual-archaeology.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit",
@@ -8685,7 +8828,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0483",
+      "source_id": "ORIGIN-0494",
       "source_path": "reports/operations/ignition-134-step01-residual-ledger-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 01 — Residual Ledger R1",
@@ -8698,7 +8841,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0484",
+      "source_id": "ORIGIN-0495",
       "source_path": "reports/operations/ignition-134-step02-residual-delta-gate-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 02 — Residual delta gate",
@@ -8711,7 +8854,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0485",
+      "source_id": "ORIGIN-0496",
       "source_path": "reports/operations/ignition-134-step03-path-manifest-contract-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 03 — Current path manifest contract audit",
@@ -8724,7 +8867,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0486",
+      "source_id": "ORIGIN-0497",
       "source_path": "reports/operations/ignition-134-step04-path-rules-completeness-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit",
@@ -8737,7 +8880,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0487",
+      "source_id": "ORIGIN-0498",
       "source_path": "reports/operations/ignition-134-step05-current-path-manifest-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism",
@@ -8750,7 +8893,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0488",
+      "source_id": "ORIGIN-0499",
       "source_path": "reports/operations/ignition-134-step06-human-surface-semantic-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit",
@@ -8763,7 +8906,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0489",
+      "source_id": "ORIGIN-0500",
       "source_path": "reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh",
@@ -8776,7 +8919,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0490",
+      "source_id": "ORIGIN-0501",
       "source_path": "reports/operations/ignition-134-step08-residual-sealing-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation",
@@ -8789,7 +8932,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0491",
+      "source_id": "ORIGIN-0502",
       "source_path": "reports/operations/ignition-134-step09-sympy-environment-contract.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 09 — SymPy environment contract",
@@ -8802,7 +8945,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0492",
+      "source_id": "ORIGIN-0503",
       "source_path": "reports/operations/ignition-134-step10-full-unittest-discovery.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 10 — Full unittest discovery",
@@ -8815,7 +8958,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0493",
+      "source_id": "ORIGIN-0504",
       "source_path": "reports/operations/ignition-134-step11-current-projection-closure.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 11 — Current projection closure",
@@ -8828,7 +8971,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0494",
+      "source_id": "ORIGIN-0505",
       "source_path": "reports/operations/ignition-134-step12-residual-adversarial-matrix.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 12 — Residual adversarial matrix",
@@ -8841,7 +8984,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0495",
+      "source_id": "ORIGIN-0506",
       "source_path": "reports/operations/ignition-134-step13-human-surface-semantic-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 13 — Human Surface semantic re-audit",
@@ -8854,7 +8997,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0496",
+      "source_id": "ORIGIN-0507",
       "source_path": "reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure",
@@ -8867,7 +9010,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0497",
+      "source_id": "ORIGIN-0508",
       "source_path": "reports/operations/ignition-134-step14-human-surface-semantic-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-134 Step 14 — Human Surface semantic audit",
@@ -8880,7 +9023,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0498",
+      "source_id": "ORIGIN-0509",
       "source_path": "reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-134 Step 14 — Residual debt and projection hygiene closeout",
@@ -8893,7 +9036,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0499",
+      "source_id": "ORIGIN-0510",
       "source_path": "reports/operations/ignition-135-step00-failure-inventory.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-135 Step 00 — Fresh baseline and exact failure inventory",
@@ -8906,7 +9049,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0500",
+      "source_id": "ORIGIN-0511",
       "source_path": "reports/operations/ignition-135-step01-full-regression-runner.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260822-135 Step 01 — Canonical full regression runner",
@@ -8919,7 +9062,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0501",
+      "source_id": "ORIGIN-0512",
       "source_path": "reports/operations/ignition-135-step02-projection-preflight.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-135 Step 02 — deterministic projection preflight",
@@ -8932,7 +9075,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0502",
+      "source_id": "ORIGIN-0513",
       "source_path": "reports/operations/ignition-137-step00-baseline-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 00 Baseline Audit",
@@ -8945,7 +9088,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0503",
+      "source_id": "ORIGIN-0514",
       "source_path": "reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation",
@@ -8958,7 +9101,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0504",
+      "source_id": "ORIGIN-0515",
       "source_path": "reports/operations/ignition-137-step02-timeout-process-closeout-r2.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 02 Timeout / Timestamp / Process Closeout R2",
@@ -8971,7 +9114,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0505",
+      "source_id": "ORIGIN-0516",
       "source_path": "reports/operations/ignition-137-step03-codex-live-eligibility.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 03 Codex Live Eligibility Re-attestation",
@@ -8984,7 +9127,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0506",
+      "source_id": "ORIGIN-0517",
       "source_path": "reports/operations/ignition-137-step04-live-child-reentrancy-guard.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 04 Child Context and Reentrancy Guard",
@@ -8997,7 +9140,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0507",
+      "source_id": "ORIGIN-0518",
       "source_path": "reports/operations/ignition-137-step05-synthetic-readonly-fixture.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 05 Synthetic Read-Only Fixture",
@@ -9010,7 +9153,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0508",
+      "source_id": "ORIGIN-0519",
       "source_path": "reports/operations/ignition-137-step06-codex-exact-output-contract.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract",
@@ -9023,7 +9166,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0509",
+      "source_id": "ORIGIN-0520",
       "source_path": "reports/operations/ignition-137-step07-independent-os-validation-r2.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-137 — Step 07 Independent OS Validation R2",
@@ -9036,7 +9179,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0510",
+      "source_id": "ORIGIN-0521",
       "source_path": "reports/operations/ignition-137-step08-dry-run-readiness.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-137 Step 08 — dry-run readiness",
@@ -9049,7 +9192,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0511",
+      "source_id": "ORIGIN-0522",
       "source_path": "reports/operations/ignition-137-step09-live-codex-attempt.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt",
@@ -9062,7 +9205,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0512",
+      "source_id": "ORIGIN-0523",
       "source_path": "reports/operations/ignition-137-step10-independent-validation-outcome.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-137 Step 10 — independent validation outcome",
@@ -9075,7 +9218,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0513",
+      "source_id": "ORIGIN-0524",
       "source_path": "reports/operations/ignition-137-step11-hermes-retry-decision.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-137 Step 11 — Hermes retry decision",
@@ -9088,7 +9231,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0514",
+      "source_id": "ORIGIN-0525",
       "source_path": "reports/operations/ignition-137-step12-obligation-lifecycle.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-137 Step 12 — obligation lifecycle",
@@ -9101,7 +9244,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0515",
+      "source_id": "ORIGIN-0526",
       "source_path": "reports/operations/ignition-137-step13-steering-goal-memory-boundary.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-137 Step 13 — Steering / Goal / Memory boundary",
@@ -9114,7 +9257,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0516",
+      "source_id": "ORIGIN-0527",
       "source_path": "reports/operations/ignition-137-step14-fault-matrix.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-137 Step 14 — adversarial / fault matrix",
@@ -9127,7 +9270,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0517",
+      "source_id": "ORIGIN-0528",
       "source_path": "reports/operations/ignition-138-step00-baseline-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 00 Baseline Audit",
@@ -9140,7 +9283,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0518",
+      "source_id": "ORIGIN-0529",
       "source_path": "reports/operations/ignition-138-step00-local-executor-census.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-138 — Step 00 Amendment-01 Local Executor Census",
@@ -9153,7 +9296,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0519",
+      "source_id": "ORIGIN-0530",
       "source_path": "reports/operations/ignition-138-step02-filesystem-reproduction.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 02 Deterministic Startup-Failure Reproduction",
@@ -9166,7 +9309,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0520",
+      "source_id": "ORIGIN-0531",
       "source_path": "reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle",
@@ -9179,7 +9322,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0521",
+      "source_id": "ORIGIN-0532",
       "source_path": "reports/operations/ignition-138-step04-codex-adapter-r3.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 04 Codex Live Adapter R3",
@@ -9192,7 +9335,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0522",
+      "source_id": "ORIGIN-0533",
       "source_path": "reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix",
@@ -9205,7 +9348,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0523",
+      "source_id": "ORIGIN-0534",
       "source_path": "reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-138 — Amendment-01 Step 06 Dynamic Admission",
@@ -9218,7 +9361,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0524",
+      "source_id": "ORIGIN-0535",
       "source_path": "reports/operations/ignition-138-step06-capability-reauth.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 06 Capability / Auth / Billing Re-attestation",
@@ -9231,7 +9374,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0525",
+      "source_id": "ORIGIN-0536",
       "source_path": "reports/operations/ignition-138-step07-fixture-answer-freeze.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze",
@@ -9244,7 +9387,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0526",
+      "source_id": "ORIGIN-0537",
       "source_path": "reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Amendment 01 live Codex receipt reconciliation",
@@ -9257,7 +9400,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0527",
+      "source_id": "ORIGIN-0538",
       "source_path": "reports/operations/ignition-138-step08-first-codex-dispatch.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch",
@@ -9270,7 +9413,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0528",
+      "source_id": "ORIGIN-0539",
       "source_path": "reports/operations/ignition-138-step09-second-gate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 09 Second-Invocation Gate",
@@ -9283,7 +9426,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0529",
+      "source_id": "ORIGIN-0540",
       "source_path": "reports/operations/ignition-138-step10-amendment-01-independent-validation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Amendment 01 independent validation gate",
@@ -9296,7 +9439,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0530",
+      "source_id": "ORIGIN-0541",
       "source_path": "reports/operations/ignition-138-step10-independent-validation-gate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 10 Independent OS Validation Gate",
@@ -9309,7 +9452,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0531",
+      "source_id": "ORIGIN-0542",
       "source_path": "reports/operations/ignition-138-step11-obligation-semantics.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 — Step 11 Obligation Semantics",
@@ -9322,7 +9465,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0532",
+      "source_id": "ORIGIN-0543",
       "source_path": "reports/operations/ignition-138-step12-current-state-sync.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync",
@@ -9335,7 +9478,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0533",
+      "source_id": "ORIGIN-0544",
       "source_path": "reports/operations/ignition-138-step13-targeted-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-138 Step 13 — Targeted regression and preflight",
@@ -9348,7 +9491,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0534",
+      "source_id": "ORIGIN-0545",
       "source_path": "reports/operations/ignition-139-step00-baseline-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-139 Step 00 — Baseline and observation-path audit",
@@ -9361,7 +9504,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0535",
+      "source_id": "ORIGIN-0546",
       "source_path": "reports/operations/ignition-139-step03-durable-capture-transport.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-139 Step 03 — Durable capture before model context",
@@ -9374,7 +9517,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0536",
+      "source_id": "ORIGIN-0547",
       "source_path": "reports/operations/ignition-139-step04-context-loss-fault-matrix.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix",
@@ -9387,7 +9530,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0537",
+      "source_id": "ORIGIN-0548",
       "source_path": "reports/operations/ignition-139-step05-historical-attempt-import.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-139 Step 05 — Historical Attempt Import",
@@ -9400,7 +9543,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0538",
+      "source_id": "ORIGIN-0549",
       "source_path": "reports/operations/ignition-139-step06-live-current-projection.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection",
@@ -9413,7 +9556,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0539",
+      "source_id": "ORIGIN-0550",
       "source_path": "reports/operations/ignition-139-step07-current-state-sync.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 07 — Current / Human / AI durable-observation sync",
@@ -9426,7 +9569,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0540",
+      "source_id": "ORIGIN-0551",
       "source_path": "reports/operations/ignition-139-step08-live-observation-semantic-gate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 08 — Live-observation semantic gate",
@@ -9439,7 +9582,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0541",
+      "source_id": "ORIGIN-0552",
       "source_path": "reports/operations/ignition-139-step09-local-executor-census-and-selection.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 09 — Fresh local executor census and why-executor",
@@ -9452,7 +9595,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0542",
+      "source_id": "ORIGIN-0553",
       "source_path": "reports/operations/ignition-139-step10-live-admission.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze",
@@ -9465,7 +9608,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0543",
+      "source_id": "ORIGIN-0554",
       "source_path": "reports/operations/ignition-139-step11-live-attempt.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt",
@@ -9478,7 +9621,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0544",
+      "source_id": "ORIGIN-0555",
       "source_path": "reports/operations/ignition-139-step12-independent-validation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 12 — Independent binding and Current projection",
@@ -9491,7 +9634,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0545",
+      "source_id": "ORIGIN-0556",
       "source_path": "reports/operations/ignition-139-step13-targeted-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 13 — Targeted regression and projection repair",
@@ -9504,7 +9647,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0546",
+      "source_id": "ORIGIN-0557",
       "source_path": "reports/operations/ignition-139-step14-candidate-full-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 14 — Candidate natural full regression",
@@ -9517,7 +9660,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0547",
+      "source_id": "ORIGIN-0558",
       "source_path": "reports/operations/ignition-139-step15-fresh-clone-publication.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260825-139 Step 15 — Fresh clone, publication and witness gate",
@@ -9530,7 +9673,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0548",
+      "source_id": "ORIGIN-0559",
       "source_path": "reports/operations/ignition-140-step00-baseline-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit",
@@ -9543,7 +9686,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0549",
+      "source_id": "ORIGIN-0560",
       "source_path": "reports/operations/ignition-140-step01-architecture-impact-classifier.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 01 — Architecture-impact classification R1",
@@ -9556,7 +9699,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0550",
+      "source_id": "ORIGIN-0561",
       "source_path": "reports/operations/ignition-140-step02-task139-architecture-impact-correction.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction",
@@ -9569,7 +9712,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0551",
+      "source_id": "ORIGIN-0562",
       "source_path": "reports/operations/ignition-140-step03-observation-plane-registration.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration",
@@ -9582,7 +9725,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0552",
+      "source_id": "ORIGIN-0563",
       "source_path": "reports/operations/ignition-140-step04-typed-observation-outcomes.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-140 Step 04 — Typed Observation Outcomes",
@@ -9595,7 +9738,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0553",
+      "source_id": "ORIGIN-0564",
       "source_path": "reports/operations/ignition-140-step05-reconciliation-state-model.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-140 Step 05 — Reconciliation State Model",
@@ -9608,7 +9751,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0554",
+      "source_id": "ORIGIN-0565",
       "source_path": "reports/operations/ignition-140-step06-evidence-exhaustion-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-140 Step 06 — Evidence Exhaustion Audit",
@@ -9621,7 +9764,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0555",
+      "source_id": "ORIGIN-0566",
       "source_path": "reports/operations/ignition-140-step07-canonical-reconciliation-events.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-140 Step 07 — Canonical Reconciliation Events",
@@ -9634,7 +9777,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0556",
+      "source_id": "ORIGIN-0567",
       "source_path": "reports/operations/ignition-140-step08-current-state-sync.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 — Step 08 Current State Sync",
@@ -9647,7 +9790,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0557",
+      "source_id": "ORIGIN-0568",
       "source_path": "reports/operations/ignition-140-step09-local-executor-census-and-selection.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection",
@@ -9660,7 +9803,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0558",
+      "source_id": "ORIGIN-0569",
       "source_path": "reports/operations/ignition-140-step10-live-admission.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze",
@@ -9673,7 +9816,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0559",
+      "source_id": "ORIGIN-0570",
       "source_path": "reports/operations/ignition-140-step12-independent-validation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 12 — Independent live-attempt validation",
@@ -9686,7 +9829,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0560",
+      "source_id": "ORIGIN-0571",
       "source_path": "reports/operations/ignition-140-step13-adversarial-matrix.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 13 — Adversarial / negative matrix",
@@ -9699,7 +9842,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0561",
+      "source_id": "ORIGIN-0572",
       "source_path": "reports/operations/ignition-140-step13-targeted-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 13 — Targeted regression and projection closure",
@@ -9712,7 +9855,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0562",
+      "source_id": "ORIGIN-0573",
       "source_path": "reports/operations/ignition-140-step14-current-terminal-semantics.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 14 — Current terminal semantics and open obligation",
@@ -9725,7 +9868,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0563",
+      "source_id": "ORIGIN-0574",
       "source_path": "reports/operations/ignition-140-step15-candidate-full-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 15 — Candidate natural full regression",
@@ -9738,7 +9881,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0564",
+      "source_id": "ORIGIN-0575",
       "source_path": "reports/operations/ignition-140-step16-fresh-clone-publication.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate",
@@ -9751,7 +9894,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0565",
+      "source_id": "ORIGIN-0576",
       "source_path": "reports/operations/ignition-141-step08-local-executor-census.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-141 Step 08 — Fresh local executor census",
@@ -9764,7 +9907,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0566",
+      "source_id": "ORIGIN-0577",
       "source_path": "reports/operations/ignition-141-step15-candidate-full-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-141 Step 15 — Candidate natural full regression",
@@ -9777,7 +9920,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0567",
+      "source_id": "ORIGIN-0578",
       "source_path": "reports/operations/ignition-141-step15-targeted-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-141 Step 15 — targeted regression",
@@ -9790,7 +9933,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0568",
+      "source_id": "ORIGIN-0579",
       "source_path": "reports/operations/ignition-141-step16-fresh-clone-publication.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate",
@@ -9803,7 +9946,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0569",
+      "source_id": "ORIGIN-0580",
       "source_path": "reports/operations/ignition-141-step16-post-publication-gate-repair.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260826-141 Step 16 — Post-publication projection gate repair",
@@ -9816,7 +9959,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0570",
+      "source_id": "ORIGIN-0581",
       "source_path": "reports/operations/ignition-142-step00-baseline-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 00 — Baseline and Coupling Audit",
@@ -9829,7 +9972,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0571",
+      "source_id": "ORIGIN-0582",
       "source_path": "reports/operations/ignition-142-step01-terminality-semantics.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 01 — Independent Task Terminality",
@@ -9842,7 +9985,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0572",
+      "source_id": "ORIGIN-0583",
       "source_path": "reports/operations/ignition-142-step02-obligation-registry.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry",
@@ -9855,7 +9998,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0573",
+      "source_id": "ORIGIN-0584",
       "source_path": "reports/operations/ignition-142-step03-current-advancement.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 03 — Advance Current Without Reopening Task141",
@@ -9868,7 +10011,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0574",
+      "source_id": "ORIGIN-0585",
       "source_path": "reports/operations/ignition-142-step04-admission-contract.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission",
@@ -9881,7 +10024,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0575",
+      "source_id": "ORIGIN-0586",
       "source_path": "reports/operations/ignition-142-step05-offline-conformance.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 05 — Offline Executor Conformance",
@@ -9894,7 +10037,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0576",
+      "source_id": "ORIGIN-0587",
       "source_path": "reports/operations/ignition-142-step06-gemini-public-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit",
@@ -9907,7 +10050,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0577",
+      "source_id": "ORIGIN-0588",
       "source_path": "reports/operations/ignition-142-step07-hermes-public-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 07 — Hermes Public Interface Audit",
@@ -9920,7 +10063,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0578",
+      "source_id": "ORIGIN-0589",
       "source_path": "reports/operations/ignition-142-step08-openclaw-public-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit",
@@ -9933,7 +10076,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0579",
+      "source_id": "ORIGIN-0590",
       "source_path": "reports/operations/ignition-142-step09-codex-blocker-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 09 — Codex Blocker Freeze",
@@ -9946,7 +10089,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0580",
+      "source_id": "ORIGIN-0591",
       "source_path": "reports/operations/ignition-142-step10-reasoner-tool-closure.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure",
@@ -9959,7 +10102,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0581",
+      "source_id": "ORIGIN-0592",
       "source_path": "reports/operations/ignition-142-step11-fresh-census.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 11 — Fresh Executor Census R2",
@@ -9972,7 +10115,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0582",
+      "source_id": "ORIGIN-0593",
       "source_path": "reports/operations/ignition-142-step12-pre-live-gate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate",
@@ -9985,7 +10128,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0583",
+      "source_id": "ORIGIN-0594",
       "source_path": "reports/operations/ignition-142-step13-live-attempt-a.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 13 — Live Attempt A",
@@ -9998,7 +10141,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0584",
+      "source_id": "ORIGIN-0595",
       "source_path": "reports/operations/ignition-142-step14-live-attempt-b.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 14 — Live Attempt B",
@@ -10011,7 +10154,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0585",
+      "source_id": "ORIGIN-0596",
       "source_path": "reports/operations/ignition-142-step15-independent-validator.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 15 — Independent Exact Validator",
@@ -10024,7 +10167,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0586",
+      "source_id": "ORIGIN-0597",
       "source_path": "reports/operations/ignition-142-step16-obligation-adjudication.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication",
@@ -10037,7 +10180,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0587",
+      "source_id": "ORIGIN-0598",
       "source_path": "reports/operations/ignition-142-step17-architecture-impact.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-142 Step 17 — architecture impact",
@@ -10050,7 +10193,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0588",
+      "source_id": "ORIGIN-0599",
       "source_path": "reports/operations/ignition-142-step18-adversarial-matrix.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate",
@@ -10063,7 +10206,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0589",
+      "source_id": "ORIGIN-0600",
       "source_path": "reports/operations/ignition-142-step19-publication-and-terminality.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-142 Step 19 — Publication transaction and terminal state",
@@ -10076,7 +10219,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0590",
+      "source_id": "ORIGIN-0601",
       "source_path": "reports/operations/ignition-143-resume-capsule.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-143 Resume Capsule",
@@ -10089,7 +10232,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0591",
+      "source_id": "ORIGIN-0602",
       "source_path": "reports/operations/ignition-143-step00-baseline-owner-override-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 00 — Baseline and Owner Override",
@@ -10102,7 +10245,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0592",
+      "source_id": "ORIGIN-0603",
       "source_path": "reports/operations/ignition-143-step04-corpus-census.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 04 — 可出版素材盘点",
@@ -10115,7 +10258,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0593",
+      "source_id": "ORIGIN-0604",
       "source_path": "reports/operations/ignition-143-step07-article-a-editorial-review.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 07 — Article A 对抗性编辑",
@@ -10128,7 +10271,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0594",
+      "source_id": "ORIGIN-0605",
       "source_path": "reports/operations/ignition-143-step09-article-b-editorial-review.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 09 — Article B 对抗性编辑",
@@ -10141,7 +10284,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0595",
+      "source_id": "ORIGIN-0606",
       "source_path": "reports/operations/ignition-143-step11-cross-publication-editorial-review.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 11 — 三篇文章交叉编辑与最终审校",
@@ -10154,7 +10297,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0596",
+      "source_id": "ORIGIN-0607",
       "source_path": "reports/operations/ignition-143-step15-cross-publication-coherence.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计",
@@ -10167,7 +10310,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0597",
+      "source_id": "ORIGIN-0608",
       "source_path": "reports/operations/ignition-143-step16-canonical-publication-integration.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 16 — canonical 出版入口接入",
@@ -10180,7 +10323,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0598",
+      "source_id": "ORIGIN-0609",
       "source_path": "reports/operations/ignition-143-step17-current-state-sync.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计",
@@ -10193,7 +10336,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0599",
+      "source_id": "ORIGIN-0610",
       "source_path": "reports/operations/ignition-143-step18-full-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 18 — Natural full regression and projection closure",
@@ -10206,7 +10349,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0600",
+      "source_id": "ORIGIN-0611",
       "source_path": "reports/operations/ignition-143-step19-terminality.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260827-143 Step 19 — Terminality and publication boundary",
@@ -10219,7 +10362,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0601",
+      "source_id": "ORIGIN-0612",
       "source_path": "reports/operations/ignition-144-step00-baseline-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 00 — Task143 final baseline",
@@ -10232,7 +10375,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0602",
+      "source_id": "ORIGIN-0613",
       "source_path": "reports/operations/ignition-144-step01-smoke-output-inventory.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory",
@@ -10245,7 +10388,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0603",
+      "source_id": "ORIGIN-0614",
       "source_path": "reports/operations/ignition-144-step02-owner-editorial-authority.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1",
@@ -10258,7 +10401,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0604",
+      "source_id": "ORIGIN-0615",
       "source_path": "reports/operations/ignition-144-step03-smoke-output-reclassification.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 03 — Task143 smoke-output reclassification",
@@ -10271,7 +10414,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0605",
+      "source_id": "ORIGIN-0616",
       "source_path": "reports/operations/ignition-144-step04-deferred-backlog.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule",
@@ -10284,7 +10427,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0606",
+      "source_id": "ORIGIN-0617",
       "source_path": "reports/operations/ignition-144-step05-phase-closure-state.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 05 — engineering phase closure state",
@@ -10297,7 +10440,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0607",
+      "source_id": "ORIGIN-0618",
       "source_path": "reports/operations/ignition-144-step06-current-state-sync.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 06 — Current Facts / Project Current State sync",
@@ -10310,7 +10453,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0608",
+      "source_id": "ORIGIN-0619",
       "source_path": "reports/operations/ignition-144-step07-ai-cold-start-handoff.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 07 — AI cold-start / handoff sync",
@@ -10323,7 +10466,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0609",
+      "source_id": "ORIGIN-0620",
       "source_path": "reports/operations/ignition-144-step08-publication-entrypoint-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit",
@@ -10336,7 +10479,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0610",
+      "source_id": "ORIGIN-0621",
       "source_path": "reports/operations/ignition-144-step09-production-brief-contract.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1",
@@ -10349,7 +10492,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0611",
+      "source_id": "ORIGIN-0622",
       "source_path": "reports/operations/ignition-144-step10-production-state-machine.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 10 — minimum production state machine",
@@ -10362,7 +10505,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0612",
+      "source_id": "ORIGIN-0623",
       "source_path": "reports/operations/ignition-144-step11-cross-surface-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 11 — cross-surface split-brain audit",
@@ -10375,7 +10518,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0613",
+      "source_id": "ORIGIN-0624",
       "source_path": "reports/operations/ignition-144-step12-targeted-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 12 — targeted closure regression",
@@ -10388,7 +10531,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0614",
+      "source_id": "ORIGIN-0625",
       "source_path": "reports/operations/ignition-144-step13-repair-cycle-a.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 13 — bounded Repair Cycle A",
@@ -10401,7 +10544,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0615",
+      "source_id": "ORIGIN-0626",
       "source_path": "reports/operations/ignition-144-step14-repair-cycles-b-c.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C",
@@ -10414,7 +10557,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0616",
+      "source_id": "ORIGIN-0627",
       "source_path": "reports/operations/ignition-144-step15-engineering-closure-gate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 15 — engineering closure gate",
@@ -10427,7 +10570,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0617",
+      "source_id": "ORIGIN-0628",
       "source_path": "reports/operations/ignition-144-step16-candidate-full-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 16 — candidate natural full regression",
@@ -10440,7 +10583,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0618",
+      "source_id": "ORIGIN-0629",
       "source_path": "reports/operations/ignition-144-step16-repair-cycle-b.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 16 — bounded Repair Cycle B",
@@ -10453,7 +10596,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0619",
+      "source_id": "ORIGIN-0630",
       "source_path": "reports/operations/ignition-144-step16-repair-cycle-c.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 16 — bounded Repair Cycle C",
@@ -10466,7 +10609,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0620",
+      "source_id": "ORIGIN-0631",
       "source_path": "reports/operations/ignition-144-step17-fresh-task-full-regression.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 17 — fresh task-clone natural full regression",
@@ -10479,7 +10622,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0621",
+      "source_id": "ORIGIN-0632",
       "source_path": "reports/operations/ignition-144-step18-formal-main-publication.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 18 — formal main publication transaction",
@@ -10492,7 +10635,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0622",
+      "source_id": "ORIGIN-0633",
       "source_path": "reports/operations/ignition-144-step19-terminality.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260828-144 Step 19 — terminal engineering closure",
@@ -10505,7 +10648,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0623",
+      "source_id": "ORIGIN-0634",
       "source_path": "reports/operations/lifecycle-audit-108.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）",
@@ -10518,7 +10661,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0624",
+      "source_id": "ORIGIN-0635",
       "source_path": "reports/publication/jin-rise-point-fire-analysis.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "1. 标题与机器可读前言",
@@ -10533,7 +10676,7 @@
       "review_note": "由正文继续阅读路径直接回链到内容或方法火种。"
     },
     {
-      "source_id": "ORIGIN-0625",
+      "source_id": "ORIGIN-0636",
       "source_path": "reports/publication/song-huizong-taoism-point-fire-analysis.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "任务 113：宋徽宗道教笔记的点火分析",
@@ -10546,7 +10689,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0626",
+      "source_id": "ORIGIN-0637",
       "source_path": "reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "认知迁移编辑修订：Owner 决定与独立审查入口",
@@ -10559,7 +10702,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0627",
+      "source_id": "ORIGIN-0638",
       "source_path": "reports/reality/121Q16-action-selection.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q16 Action Selection",
@@ -10572,7 +10715,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0628",
+      "source_id": "ORIGIN-0639",
       "source_path": "reports/reality/121Q16-sustainability-signal-pilot.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q16 Sustainability Signal Pilot",
@@ -10585,7 +10728,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0629",
+      "source_id": "ORIGIN-0640",
       "source_path": "reports/release/121Q10-emergent-state-license-finalization.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q10 Emergent Current State and License Text Finalization",
@@ -10598,7 +10741,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0630",
+      "source_id": "ORIGIN-0641",
       "source_path": "reports/release/121Q9-cumulative-baseline.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Cumulative Baseline",
@@ -10611,7 +10754,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0631",
+      "source_id": "ORIGIN-0642",
       "source_path": "reports/release/121Q9-final-release-candidate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Final Release Candidate",
@@ -10624,7 +10767,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0632",
+      "source_id": "ORIGIN-0643",
       "source_path": "reports/release/121Q9-global-validation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Global Validation",
@@ -10637,7 +10780,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0633",
+      "source_id": "ORIGIN-0644",
       "source_path": "reports/releases/121Q15-q12-q14-cumulative-preflight.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q15 Q12-Q14 Cumulative Preflight",
@@ -10650,7 +10793,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0634",
+      "source_id": "ORIGIN-0645",
       "source_path": "reports/research/121Q22-probability-systems-source-map.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q22 Probability and Systems Source Map",
@@ -10663,7 +10806,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0635",
+      "source_id": "ORIGIN-0646",
       "source_path": "reports/research/121Q23-network-theory-source-map.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q23 Network Theory Source Map",
@@ -10676,7 +10819,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0636",
+      "source_id": "ORIGIN-0647",
       "source_path": "reports/research/reos-vnext-light-pilot-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "REOS vNext LIGHT pilot R1 — public-safe synthesis",
@@ -10692,7 +10835,7 @@
       "review_note": "由正文继续阅读路径直接回链到内容或方法火种。"
     },
     {
-      "source_id": "ORIGIN-0637",
+      "source_id": "ORIGIN-0648",
       "source_path": "reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Pointfire seven-track current-main maintenance integration R1",
@@ -10705,7 +10848,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0638",
+      "source_id": "ORIGIN-0649",
       "source_path": "新故事/0001-S1-比刀剑更持久的，是共享观念.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "比刀剑更持久的，是共享观念",
@@ -10718,7 +10861,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0639",
+      "source_id": "ORIGIN-0650",
       "source_path": "新故事/INDEX.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "新故事索引表（2026年07月06日03时06分，故事总数 1）",
@@ -10732,11 +10875,11 @@
     }
   ],
   "source_census_summary": {
-    "source_count": 639,
-    "knowledge_experience_source_origins": 574,
+    "source_count": 650,
+    "knowledge_experience_source_origins": 585,
     "supplemental_source_count": 65,
     "disposition_counts": {
-      "EXCLUDED_NONCONTENT": 235,
+      "EXCLUDED_NONCONTENT": 246,
       "MERGED_INTO_SEED": 24,
       "NO_SEED_DELTA": 341,
       "SEED_CREATED": 39
