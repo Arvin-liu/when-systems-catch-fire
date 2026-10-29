@@ -10,7 +10,7 @@
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - Foundation: function identity cards `6206`；function quarantine/pending `5054`；non-function claims `19023`；non-function quarantine/pending `5482`。
 - Knowledge Experience: cards `672`；changes `567`；layered readings `593`；search records `25735`；aliases `1391`。
-- Fire Seeds: `64` seeds/clusters；`652` source-census records。
+- Fire Seeds: `64` seeds/clusters；`658` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`21` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
 - Formal task lifecycle: `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS` terminal `true` scope_complete `true`；source `ignition/data/operations/formal-task-lifecycle-r1.json`。
