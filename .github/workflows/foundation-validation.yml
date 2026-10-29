@@ -321,6 +321,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install final-main witness dependencies
+        run: python3 -m pip install -r requirements-foundation.txt
       - name: Download exact validation evidence
         if: needs.route.outputs.has_targets == 'true' || github.event.before != '0000000000000000000000000000000000000000'
         uses: actions/download-artifact@v4
@@ -342,7 +344,7 @@ jobs:
           EVIDENCE_DIR: ${{ runner.temp }}/main-validation-evidence
           OUTPUT_DIR: ${{ runner.temp }}/final-main-witness
         run: |
-          python3 ignition/tools/operations/write_final_main_witness.py \
+          python3 tools/operations/write_final_main_witness.py \
             --repo-root "$GITHUB_WORKSPACE" \
             --evidence-dir "$EVIDENCE_DIR" \
             --output-dir "$OUTPUT_DIR" \
