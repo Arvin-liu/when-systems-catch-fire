@@ -1691,7 +1691,7 @@
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":375,"last_line":408,"mention_count":3,"path":"data/operations/iterations/D2-I1.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":44,"last_line":1257,"mention_count":229,"path":"data/operations/iterations/F15-D1-I1.json","role":"REFERENCE","stable_id":"D1"}
-{"first_line":2901,"last_line":2947,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
+{"first_line":2900,"last_line":2946,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":6,"last_line":721,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-closure.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/operations/propagation/F15-D1-I1-impact-report.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":42,"last_line":638,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-request.json","role":"REFERENCE","stable_id":"D1"}

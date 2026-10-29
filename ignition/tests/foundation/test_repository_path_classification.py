@@ -44,6 +44,12 @@ class PositiveTreeTest(unittest.TestCase):
         self.assertEqual(rc, 0, c.text())
         self.assertIn("REPOSITORY_PATH_CLASSIFICATION_VALID", c.text())
 
+    def test_q33_resolver_evidence_is_non_authoritative_evidence(self) -> None:
+        self.assertEqual(
+            preflight.classify("evidence/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1/CI_FAILURE_REPRODUCTION.md"),
+            ("EVIDENCE_OR_BENCHMARK", "EVIDENCE_OR_BENCHMARK"),
+        )
+
     def test_generated_pages_are_non_authoritative_projections(self) -> None:
         self.assertEqual(
             preflight.classify("pages/generated/ignition-system-map.svg"),

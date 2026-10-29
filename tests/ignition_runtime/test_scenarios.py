@@ -39,7 +39,7 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = os.environ.get("PR_BASE_SHA", "96205a04413b3f46e4afd1c9141af88dd5ae00ba")
+PR_BASE = os.environ.get("PR_BASE_SHA", "037420ee7a80035e448ec99facdffb7aac26406d")
 EXPECTED_HEAD_BASES = {
     "repair-r3/scientific-context-protocol-r3-semantic-evaluator": {
         "production/ignition-run-promote-evolve-r1",
@@ -66,6 +66,10 @@ EXPECTED_HEAD_BASES = {
     # The front-door synchronization repair remains stacked on the CI repair.
     "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1": {
         "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1",
+    },
+    # Q33 era-resolver repair remains stacked on the refreshed front-door PR.
+    "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1": {
+        "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1",
     },
 }
 
@@ -789,10 +793,16 @@ def test_s43_diff_scope():
         "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
         # This PR's seven-file human-front-door audit bundle is evidence only.
         "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/",
+        # This PR's Q33 reproduction and resolver finding bundle is evidence only.
+        "evidence/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1/",
         # Exact consumer tests changed to close this sync and its propagation blocker.
         "ignition/tests/test_change_propagation.py",
         "tests/test_human_front_door.py",
         "ignition/tools/foundation/validate_repository_path_classification.py",
+        # Exact consumers changed by the Q33 resolver and path-classification repair.
+        "ignition/tests/foundation/test_repository_path_classification.py",
+        "ignition/tests/test_component_validation_routing.py",
+        "ignition/tests/test_era_resolver_generalization.py",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
         "ignition/requirements-foundation.txt",
         "ignition/data/operations/project-components.json",
