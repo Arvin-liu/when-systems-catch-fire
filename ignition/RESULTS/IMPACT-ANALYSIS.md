@@ -45,6 +45,10 @@
 |`docs/anomaly/q41-i1-repair-r1-summary.md`|26|0|否|
 |`docs/architecture/adapter-sdk-r1.md`|0|0|是|
 |`docs/architecture/adaptive-relational-network.md`|22|0|否|
+|`docs/architecture/adaptive-relational-runtime-adrs.md`|16|0|否|
+|`docs/architecture/adaptive-relational-runtime-interop.md`|35|0|否|
+|`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`|16|0|否|
+|`docs/architecture/adaptive-relational-runtime.md`|36|0|否|
 |`docs/architecture/agent-platform-r2.md`|26|0|否|
 |`docs/architecture/agent-runtime-r0.md`|3|0|否|
 |`docs/architecture/agent-runtime-r1.md`|5|0|否|
@@ -70,12 +74,13 @@
 |`docs/architecture/hermes-adapter-r1.md`|4|0|否|
 |`docs/architecture/ignition-atlas.md`|4|0|否|
 |`docs/architecture/incremental-execution.md`|17|0|否|
-|`docs/architecture/interactive-system-map.md`|26|0|否|
+|`docs/architecture/interactive-system-map.md`|25|0|否|
 |`docs/architecture/iteration-boundary-archaeology-r1.md`|10|0|否|
 |`docs/architecture/iteration-boundary-semantics-r1.md`|5|0|否|
 |`docs/architecture/language-thought-logic-plane.md`|13|0|否|
 |`docs/architecture/mechanism-adjudication-plane.md`|29|0|否|
 |`docs/architecture/multiscale-causal-fabric.md`|36|0|否|
+|`docs/architecture/object-relation-mechanism-model.md`|35|0|否|
 |`docs/architecture/openclaw-adapter-r1.md`|12|0|否|
 |`docs/architecture/os-control-plane-r2.md`|23|0|否|
 |`docs/architecture/os-steering-intent-r1.md`|17|0|否|
@@ -83,6 +88,7 @@
 |`docs/architecture/probabilistic-system-dynamics.md`|7|0|否|
 |`docs/architecture/reos-vnext-light.md`|13|0|否|
 |`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`|17|0|否|
+|`docs/architecture/self-growth-control-plane.md`|31|0|否|
 |`docs/architecture/soft-context-exposure-contract-r0.md`|4|0|否|
 |`docs/architecture/structural-governance-surface.md`|13|0|否|
 |`docs/architecture/typed-change-propagation.md`|10|0|否|
@@ -302,7 +308,6 @@
 |`docs/human/nonfunction-assets/entries/nfc-0331afe8d84f2538.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-037598111338be3f.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-139f14280f9dd160.md`|0|0|是|
-|`docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-35e28dd86a8149d0.md`|0|0|是|
 |`docs/human/nonfunction-assets/entries/nfc-d12a007686070f3d.md`|0|0|是|
@@ -546,8 +551,8 @@
 |`reports/governance/task-IGNITION-20260907-163.md`|5|0|否|
 |`reports/governance/task-IGNITION-20260907-164.md`|9|0|否|
 |`reports/governance/task-IGNITION-20260908-165.md`|7|0|否|
-|`reports/ignition-rpe/ATTACK_MATRIX.md`|0|0|是|
-|`reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md`|0|0|是|
+|`reports/ignition-rpe/ATTACK_MATRIX.md`|3|0|否|
+|`reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md`|10|0|否|
 |`reports/math-foundation/blockers-20260712.md`|1|0|否|
 |`reports/math-foundation/full-object-inventory-20260712.md`|24|0|否|
 |`reports/math-foundation/local-note-sync-report-20260712.md`|6|0|否|
@@ -605,6 +610,7 @@
 |`reports/operations/121Q38-completion-seal.json`|1|0|否|
 |`reports/operations/121Q39-REPAIR-R1-completion-seal.json`|1|0|否|
 |`reports/operations/121Q39-completion-seal.json`|1|0|否|
+|`reports/operations/ARR-R1-SCAFFOLD-completion-seal.json`|1|0|否|
 |`reports/operations/D2-I1-completion-seal.json`|1|0|否|
 |`reports/operations/D2-REPAIR-R2-completion-seal.json`|1|0|否|
 |`reports/operations/D2-REPAIR-R2-freeze.md`|2|0|否|
