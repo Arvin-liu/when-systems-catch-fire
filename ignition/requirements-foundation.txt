@@ -2,4 +2,6 @@
 sympy==1.14.0
 z3-solver==4.16.0.0
 jsonschema==4.26.0
-pytest
+
+# Required by the RPE runtime consumer suite executed in the component route.
+pytest==9.2.0
