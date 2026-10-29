@@ -2817,6 +2817,24 @@
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
 
+<a id="change-src-hr-de58f9adf534ac72"></a>
+### 2026-07-25 · Adaptive Relational Runtime R2 — Real Object Pilot
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Task class: high-risk stacked Draft / real-object read-only pilot Predecessor: PR 120 architecture/adaptive-relational-runtime-r1-scaffold @ a0d6c46 Base branch: architecture/adaptive-relational-runtime-r1-scaffold (NOT Main) R2 branch: runtime/adaptive-relational-runtime-r2-real-object-pilot Com…
+- **来源：** [adaptive-relational-runtime-r2-real-object-pilot.md](../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+- **资产卡：** [HR-DE58F9ADF534AC72](./ASSET-CARDS.md#asset-hr-de58f9adf534ac72)
+
+<a id="change-src-hr-60754e6f4aa10a57"></a>
+### 2026-07-25 · Adaptive Relational Runtime R2 — Architecture Decision Records
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: accepted (preferred: behaviorally registry-driven)
+- **来源：** [adaptive-relational-runtime-r2-adrs.md](../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+- **资产卡：** [HR-60754E6F4AA10A57](./ASSET-CARDS.md#asset-hr-60754e6f4aa10a57)
+
 <a id="change-src-hr-e2706f26c12e2dff"></a>
 ### 2026-07-24 · Adaptive Relational Runtime / 自适应关系运行时(R1 Scaffold 主合同)
 
