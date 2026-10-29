@@ -151,7 +151,10 @@ jobs:
           retention-days: 30
 
   validate:
-    name: validate
+    # Main branch protection requires this exact status context. Keep the
+    # existing fail-closed aggregation below and expose it under the protected
+    # context so a successful Foundation check is actually mergeable.
+    name: foundation-validation
     if: always()
     needs: [route, full_regression]
     runs-on: ubuntu-latest
