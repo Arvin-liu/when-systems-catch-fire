@@ -5,7 +5,6 @@
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from dataclasses import asdict, replace
 from pathlib import Path
@@ -19,7 +18,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from life_integrity_r5a import consolidated_repair_gate as CR  # noqa: E402
 from life_integrity_r5a import fixtures as FX  # noqa: E402
-from life_integrity_r5a import validators  # noqa: E402
+from life_integrity_r5a import scope, validators  # noqa: E402
 import tools.generate_life_integrity_r5a as generator  # noqa: E402
 
 
@@ -201,23 +200,8 @@ def run_mutation_probes(
 
 
 def _git_changed_paths() -> list[str]:
-    completed = subprocess.run(
-        ["git", "diff", "--name-only", CR.REJECTED_CANDIDATE_HEAD],
-        cwd=REPO_ROOT,
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    untracked = subprocess.run(
-        ["git", "ls-files", "--others", "--exclude-standard"],
-        cwd=REPO_ROOT,
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    return sorted(
-        set(filter(None, completed.stdout.splitlines()))
-        | set(filter(None, untracked.stdout.splitlines()))
+    return scope.changed_paths_for_candidate_scope(
+        REPO_ROOT, CR.REJECTED_CANDIDATE_HEAD
     )
 
 

@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step21-fresh-standalone-evidence-r1.schema.json",
+  "title": "Task150 Step21 fresh standalone evidence",
+  "description": "Exact-head standalone derived visualization evidence with source, provider, IR, artifact and viewport bindings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit",
+    "canonical_source", "provider", "adapter", "typed_ir", "typed_ir_validation", "node_edge_equality",
+    "delivery", "standalone_visual_check", "provenance", "repeatability", "adversarial_fixtures",
+    "base_gate_results", "admission_decision", "scope_freeze", "result", "next_step", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step21-fresh-standalone-evidence-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "21"},
+    "record_type": {"const": "FRESH_STANDALONE_EVIDENCE"},
+    "status": {"const": "STANDALONE_EVIDENCE_PASS_COMPATIBILITY_PENDING"},
+    "formal_previous_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "canonical_source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "formal_source_revision", "sha256", "nodes", "edges", "read_before_and_after_hash_equal", "authority"],
+      "properties": {
+        "path": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "formal_source_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "nodes": {"const": 24}, "edges": {"const": 24},
+        "read_before_and_after_hash_equal": {"const": true},
+        "authority": {"const": "IGNITION_CANONICAL_AUTHORED_SOURCE"}
+      }
+    },
+    "provider": {
+      "type": "object", "additionalProperties": false,
+      "required": ["provider_id", "repository", "immutable_revision", "package_version", "schema_path", "schema_sha256", "doctor", "provider_role", "architecture_authority", "compatibility_envelope", "automatic_update"],
+      "properties": {
+        "provider_id": {"const": "archify"},
+        "repository": {"const": "tt-a1i/archify"},
+        "immutable_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "package_version": {"type": "string"},
+        "schema_path": {"const": "archify/schemas/architecture.schema.json"},
+        "schema_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "doctor": {"const": "PASS"},
+        "provider_role": {"const": "TESTED_OPTIONAL_PROVIDER_IMPLEMENTATION"},
+        "architecture_authority": {"const": false},
+        "compatibility_envelope": {"const": "PENDING_STEP22_FRESH_IMMUTABLE_COMPATIBILITY_CHECK"},
+        "automatic_update": {"const": false}
+      }
+    },
+    "adapter": {
+      "type": "object", "additionalProperties": false,
+      "required": ["version", "path", "sha256", "system_map_path", "system_map_sha256", "geometry_repair_only", "source_scan", "canonical_write_back", "provider_output_can_change_topology"],
+      "properties": {
+        "version": {"const": "task150-bounded-visualization-adapter-r1"},
+        "path": {"const": "ignition/tools/run_task150_bounded_visualization_adapter.py"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "system_map_path": {"const": "ignition/data/architecture/interactive-system-map.json"},
+        "system_map_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "geometry_repair_only": {"const": true}, "source_scan": {"const": false},
+        "canonical_write_back": {"const": false}, "provider_output_can_change_topology": {"const": false}
+      }
+    },
+    "typed_ir": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "bytes", "formal_source_revision", "provider_id", "components", "connections", "viewBox"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "bytes": {"type": "integer", "minimum": 1},
+        "formal_source_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "provider_id": {"const": "archify"}, "components": {"const": 24}, "connections": {"const": 24},
+        "viewBox": {"const": [1650, 420]}
+      }
+    },
+    "typed_ir_validation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["command", "status", "checks_passed", "checks_total", "composition_status", "composition_errors", "composition_warnings"],
+      "properties": {
+        "command": {"type": "string"}, "status": {"const": "PASS"}, "checks_passed": {"const": 9}, "checks_total": {"const": 9},
+        "composition_status": {"const": "pass"}, "composition_errors": {"const": 0}, "composition_warnings": {"const": 0}
+      }
+    },
+    "node_edge_equality": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "node_id_order_equal", "node_label_order_equal", "edge_id_order_equal", "edge_endpoint_order_equal", "edge_label_order_equal", "canonical_node_count", "derived_node_count", "canonical_edge_count", "derived_edge_count", "semantic_relationships_unchanged"],
+      "properties": {
+        "status": {"const": "PASS"}, "node_id_order_equal": {"const": true}, "node_label_order_equal": {"const": true},
+        "edge_id_order_equal": {"const": true}, "edge_endpoint_order_equal": {"const": true}, "edge_label_order_equal": {"const": true},
+        "canonical_node_count": {"const": 24}, "derived_node_count": {"const": 24}, "canonical_edge_count": {"const": 24}, "derived_edge_count": {"const": 24},
+        "semantic_relationships_unchanged": {"const": true}
+      }
+    },
+    "delivery": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "command", "path", "artifact_sha256", "artifact_bytes", "specification_sha256", "specification_bytes", "checks_passed", "checks_total", "composition_status", "source_evidence_verified", "source_evidence_revision", "source_evidence_references"],
+      "properties": {
+        "status": {"const": "PASS"}, "command": {"type": "string"},
+        "path": {"const": "ignition/data/operations/iterations/150/standalone-evidence/task150-step21-standalone.html"},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "artifact_bytes": {"type": "integer", "minimum": 1},
+        "specification_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "specification_bytes": {"type": "integer", "minimum": 1},
+        "checks_passed": {"const": 9}, "checks_total": {"const": 9}, "composition_status": {"const": "pass"},
+        "source_evidence_verified": {"const": true}, "source_evidence_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"}, "source_evidence_references": {"const": 19}
+      }
+    },
+    "standalone_visual_check": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "visual_review", "chrome", "receipt_path", "receipt_sha256", "contact_sheet_path", "contact_sheet_sha256", "containment_failures", "readability_failures", "viewer_chrome_failures", "required_viewport_observations"],
+      "properties": {
+        "status": {"const": "PASS"}, "visual_review": {"const": "PENDING_PERCEPTUAL_REVIEW"}, "chrome": {"type": "string"},
+        "receipt_path": {"const": "ignition/data/operations/iterations/150/standalone-evidence/task150-step21-standalone.visual-check.json"},
+        "receipt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "contact_sheet_path": {"const": "ignition/data/operations/iterations/150/standalone-evidence/task150-step21-standalone.visual-check.html"},
+        "contact_sheet_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "containment_failures": {"const": 0}, "readability_failures": {"const": 0}, "viewer_chrome_failures": {"const": 0},
+        "required_viewport_observations": {
+          "type": "array", "minItems": 6,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["width", "height", "theme", "scrollWidth", "scrollHeight", "ok", "minimumProjectedNodeTextPx", "dockStageIntersectionArea", "dockStageGap", "requiredDockStageGap", "viewerChromeOk"],
+            "properties": {
+              "width": {"type": "integer"}, "height": {"type": "integer"}, "theme": {"enum": ["light", "dark"]},
+              "scrollWidth": {"type": "integer"}, "scrollHeight": {"type": "integer"}, "ok": {"const": true},
+              "minimumProjectedNodeTextPx": {"type": "number", "minimum": 6}, "dockStageIntersectionArea": {"const": 0},
+              "dockStageGap": {"type": "number", "minimum": 10}, "requiredDockStageGap": {"const": 10}, "viewerChromeOk": {"const": true}
+            }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_revision_bound", "canonical_source_sha_bound", "provider_id_bound", "provider_immutable_revision_bound", "adapter_version_bound", "typed_ir_sha_bound", "artifact_sha_bound", "artifact_is_derived_only", "architecture_truth_escalation"],
+      "properties": {
+        "source_revision_bound": {"const": true}, "canonical_source_sha_bound": {"const": true}, "provider_id_bound": {"const": true},
+        "provider_immutable_revision_bound": {"const": true}, "adapter_version_bound": {"const": true}, "typed_ir_sha_bound": {"const": true},
+        "artifact_sha_bound": {"const": true}, "artifact_is_derived_only": {"const": true}, "architecture_truth_escalation": {"const": false}
+      }
+    },
+    "repeatability": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "adapter_ir_first_sha256", "adapter_ir_second_sha256", "delivery_artifact_first_sha256", "delivery_artifact_second_sha256", "ir_identical", "artifact_identical", "provider_revision_identical", "formal_source_revision_identical"],
+      "properties": {
+        "mode": {"const": "TWO_FRESH_READ_ONLY_RUNS_SAME_FORMAL_HEAD_AND_PROVIDER_REF"},
+        "adapter_ir_first_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "adapter_ir_second_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "delivery_artifact_first_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "delivery_artifact_second_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "ir_identical": {"const": true}, "artifact_identical": {"const": true}, "provider_revision_identical": {"const": true}, "formal_source_revision_identical": {"const": true}
+      }
+    },
+    "adversarial_fixtures": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "mode", "provider_process_started", "credentials_or_sessions_accessed", "system_or_repository_mutation", "provider_validation_is_not_topology_authority", "cases"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/150/fixtures/task150-step21-topology-extra-deleted.json"},
+        "mode": {"const": "READ_ONLY_IN_MEMORY_MUTATION"}, "provider_process_started": {"const": false}, "credentials_or_sessions_accessed": {"const": false},
+        "system_or_repository_mutation": {"const": false}, "provider_validation_is_not_topology_authority": {"const": true},
+        "cases": {"type": "array", "const": [
+          {"id": "extra_node", "mutation": {"action": "APPEND_COMPONENT", "component_id": "adversarial-extra-node"}, "expected": "EXACT_NODE_SET_REJECTED", "observed": "REJECTED", "rejection": "exact canonical node set mismatch"},
+          {"id": "deleted_node", "mutation": {"action": "REMOVE_COMPONENT", "component_id": "navigation-machine"}, "expected": "EXACT_NODE_SET_REJECTED", "observed": "REJECTED", "rejection": "exact canonical node set mismatch and dangling edge/boundary"}
+        ]}
+      }
+    },
+    "base_gate_results": {"type": "object", "additionalProperties": {"type": "string"}},
+    "admission_decision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["standalone_visual_evidence", "new_base_blocker", "base_operation_status", "current_capability", "registry_write", "delta_extension", "delta_gate", "owner_aesthetic_endorsement", "default_renderer", "next_required_gate"],
+      "properties": {
+        "standalone_visual_evidence": {"const": "PASS"}, "new_base_blocker": {"const": false}, "base_operation_status": {"const": "CURRENT_BOUNDED_CANDIDATE_PENDING_STEP22"},
+        "current_capability": {"const": false}, "registry_write": {"const": false}, "delta_extension": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "delta_gate": {"const": "FAIL_DEFERRED"}, "owner_aesthetic_endorsement": {"const": "NOT_GRANTED_NOT_CLAIMED"}, "default_renderer": {"const": "NOT_SELECTED"},
+        "next_required_gate": {"const": "STEP22_IMMUTABLE_COMPATIBILITY_ENVELOPE"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"}, "agent_reach": {"const": "NO_CHANGE"}, "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"}, "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP21_FRESH_STANDALONE_EVIDENCE_PASS_COMPATIBILITY_PENDING"},
+    "next_step": {"const": "TASK150_STEP22_IMMUTABLE_COMPATIBILITY_ENVELOPE"},
+    "claim_ceiling": {"type": "string"}
+  }
+}

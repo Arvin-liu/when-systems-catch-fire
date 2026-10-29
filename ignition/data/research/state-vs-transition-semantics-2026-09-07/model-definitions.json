@@ -1,0 +1,81 @@
+{
+  "frozen_before_holdout": [
+    "hypotheses",
+    "fixture schema",
+    "discovery and threshold rules",
+    "model definitions",
+    "family/template split",
+    "answer-key construction rules"
+  ],
+  "models": {
+    "M0": {
+      "name": "current-state-baseline",
+      "reads": [
+        "source_state_valid",
+        "target_state_valid"
+      ],
+      "rule": "reject invalid endpoints; otherwise return CLEAN"
+    },
+    "MH": {
+      "name": "MS-plus-MT-diagnostic",
+      "rule": "union of MS and MT reason codes; diagnostic only"
+    },
+    "MS": {
+      "allowed_local_patchwork": [
+        "local before/after references",
+        "ordered pair as local metadata",
+        "allowed and forbidden state pairs",
+        "bounded history",
+        "local migration and rollback rules",
+        "local evidence and authority references"
+      ],
+      "forbidden_shared_primitive": [
+        "first-class transition object",
+        "transition identity",
+        "transition algebra",
+        "path semantics",
+        "central transition authority"
+      ],
+      "name": "strongest-fair-local-patchwork",
+      "reads": [
+        "endpoint validity",
+        "local_annotations.allowed_state_pairs",
+        "local_annotations.forbidden_state_pairs",
+        "local_annotations.scope_ref",
+        "local_annotations.known_lifecycle_epochs",
+        "local_annotations.history_refs",
+        "local_annotations.local_aliases"
+      ],
+      "rule": "M0 plus local state/scope/history rules only"
+    },
+    "MT": {
+      "name": "minimal-first-class-transition-candidate",
+      "new_facts_allowed": false,
+      "reads": [
+        "the exact same raw facts as MS",
+        "source-to-target transition relation",
+        "scope and lifecycle fields",
+        "trigger, evidence, authority and approval fields",
+        "ordered path, hop and rollback fields",
+        "projection and concurrency fields"
+      ],
+      "rule": "M0 plus explicit transition relation constraints; no new authority, truth, capability or lifecycle state",
+      "schema_frozen_before_holdout": true,
+      "transition_identity": "deterministically derived from refs and tuple; not an external authority"
+    }
+  },
+  "no_canonical_integration": true,
+  "research_only": true,
+  "same_facts_hard_constraint": true,
+  "task159_signature_sha256": "eb53b18121cfd6b6fa3791ce77ede5dc1f614fac39ab6e1a296b8440ce15cc04",
+  "task159_v2_signature": {
+    "L1": "NO when a semantic-conservative OldBasis -> NewRepresentation mapping preserves states, operations and questions",
+    "L2": "YES only for a previously unproducible object/operator class",
+    "L3": "YES only with a pre-leap unaskable to post-leap representable question",
+    "L4": "YES only for a failure mode passing all old checks",
+    "L5": "supportive only; requires two independent pre-existing families",
+    "L6": "YES only if removing the new semantic primitive loses capability",
+    "challenger_priority": "any complete challenger plus no independent L2/L3/L4/L6 increment is NON_LEAP"
+  },
+  "task_id": "IGNITION-20260907-161"
+}

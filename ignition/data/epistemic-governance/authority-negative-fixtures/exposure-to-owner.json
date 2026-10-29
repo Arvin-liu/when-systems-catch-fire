@@ -1,0 +1,7 @@
+{
+  "fixture_id": "ESI-AUTH-NEG-003",
+  "soft_input": {"soft_context_exposure": "DELEXICALIZED_STRUCTURE", "esi_score": 0.88},
+  "requested_effect": "OWNER_ACCEPTANCE",
+  "target": "owner_gate",
+  "expected": "REJECT_SOFT_AUTHORITY_ESCALATION"
+}

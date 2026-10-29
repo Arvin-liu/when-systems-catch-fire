@@ -8,7 +8,7 @@ provides fail-closed predicates over them.
 
 R5-A status: CANDIDATE_ONLY. Nothing here activates a charter, an executor, a
 human-intervention path, a medical claim, the Modern Wuzhen domain pack, or a
-federation runtime. See docs/governance/life-integrity-charter-candidate-r1.md.
+federation runtime. See ignition/docs/governance/life-integrity-charter-candidate-r1.md.
 """
 
 from __future__ import annotations

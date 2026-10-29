@@ -1,0 +1,59 @@
+{
+  "entries": [
+    {
+      "created_at": "2026-08-15T20:24:19Z",
+      "expires_at": null,
+      "forget_policy": "MANUAL",
+      "integrity_sha256": "5145096512d9a3f27714862ca504a6137ddd64ee78bb03b483432a9784158f18",
+      "memory_id": "r2-episode-failure-repair-crash",
+      "memory_type": "FAILURE",
+      "owner_feedback_refs": [],
+      "provenance_refs": [
+        "pilot-receipt.json"
+      ],
+      "related_refs": [],
+      "retention_class": "LONG",
+      "sensitivity_class": "INTERNAL_OPERATIONAL",
+      "source_run_id": "repair",
+      "summary": "repair child crashed after a declared patch execute and before journal persistence",
+      "superseded_by": null,
+      "supersedes": null,
+      "supersession_state": "ACTIVE",
+      "tags": [
+        "r2",
+        "checkpoint",
+        "offline"
+      ],
+      "visibility": "SHARED_OPERATIONAL"
+    },
+    {
+      "created_at": "2026-08-15T20:24:19Z",
+      "expires_at": null,
+      "forget_policy": "MANUAL",
+      "integrity_sha256": "5ba8016e332398808a489571e047a80c2557d15cac9e7653db12278ccf5390d0",
+      "memory_id": "r2-episode-completed",
+      "memory_type": "EPISODIC",
+      "owner_feedback_refs": [],
+      "provenance_refs": [
+        "pilot-receipt.json",
+        "adversarial-receipt.json"
+      ],
+      "related_refs": [],
+      "retention_class": "LONG",
+      "sensitivity_class": "INTERNAL_OPERATIONAL",
+      "source_run_id": "r2-offline-repository-maintenance",
+      "summary": "A/B/C offline repository maintenance episode completed after approval, crash recovery and executor-instance handoff",
+      "superseded_by": null,
+      "supersedes": null,
+      "supersession_state": "ACTIVE",
+      "tags": [
+        "r2",
+        "episode",
+        "offline"
+      ],
+      "visibility": "SHARED_OPERATIONAL"
+    }
+  ],
+  "schema": "operational-memory-r1",
+  "tombstones": []
+}

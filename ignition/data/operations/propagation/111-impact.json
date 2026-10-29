@@ -1,0 +1,82 @@
+{
+  "task_number": 111,
+  "dimensions": {
+    "CURRENT_PUBLIC_WORDING_IMPACT": {
+      "declared": "IMPACT_REQUIRED",
+      "governed_sources": ["README.md", "RESULTS/LATEST.md", "docs/project-current-state.md", "HUMAN-READING.md"],
+      "baseline_sha256": {
+        "HUMAN-READING.md": "1296df3feb82d9af407c4b43b1f1f98109206f712db1ab8a1e53c8169b1eec8a",
+        "README.md": "857ba8c2a075fde8d9b06401d9b155ddc7714ea2dd9d99ef0e30fb780cf4c143",
+        "RESULTS/LATEST.md": "61a6d3840ef8988b31d0e1bf59c92bb3aebf537d142f21b45118354784c1b51f",
+        "docs/project-current-state.md": "299281447731e86f445ac0a511b6a6f4de5652e22342a38b03380be8bc39f73b"
+      }
+    },
+    "EDITORIAL_ARTICLE_IMPACT": {
+      "declared": "IMPACT_REQUIRED",
+      "governed_sources": ["docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md", "docs/editorial/source-manifest.json"],
+      "baseline_sha256": {
+        "docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md": "cfb25e465b572bf954bc8987838e76071412581cc195a6c7a50d37b4929687e0",
+        "docs/editorial/source-manifest.json": "7ff2b6f959b7f5e406c477b3eda0703e4ddf12a0bd507b46b0f55209dfb2b3c4"
+      }
+    },
+    "EVIDENCE_PROGRAM_IMPACT": {
+      "declared": "IMPACT_REQUIRED",
+      "governed_sources": ["evidence-program/README.md", "evidence-program/registry/candidate-portfolio.jsonl"],
+      "baseline_sha256": {
+        "evidence-program/README.md": "a2ba2c4c843ed188d1f088c1f101337fded8381bc623eff9c17124a29e5aa3a9",
+        "evidence-program/registry/candidate-portfolio.jsonl": "5cf1bdc7a7b35a32ad9d32bf2176c886c561c205f20c8617b6402902716b5cbd"
+      }
+    },
+    "MACHINE_RECORD_IMPACT": {
+      "declared": "IMPACT_REQUIRED",
+      "governed_sources": ["RESULTS/CLAIM-DELTA.md", "RESULTS/IMPACT-ANALYSIS.md", "RESULTS/EVIDENCE-LINEAGE.md", "RESULTS/SELF-CORRECTION-AUDIT.md"],
+      "baseline_sha256": {
+        "RESULTS/CLAIM-DELTA.md": "1aae471297ee8e2895fdbc2ba2cabb0a2c7eac61da3fc7a1a3109747cf05e813",
+        "RESULTS/EVIDENCE-LINEAGE.md": "598bd5660f4a1b80474291d6cd3b64d9af9e8f98ec4cad704d8ab84d3f3907ba",
+        "RESULTS/IMPACT-ANALYSIS.md": "e0b9cfeaf994ea4f15e9d0fd3460564a81477f11608df11d1b16391988e6b36f",
+        "RESULTS/SELF-CORRECTION-AUDIT.md": "32f3a5557774ab0bd470e944f8971444198a603ae3453dd84aab0eea1097ce0d"
+      }
+    },
+    "MATURITY_OR_DISPOSITION_IMPACT": {
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": ["RESULTS/ADJUDICATION-SUMMARY.md", "function-os-candidate/v0.2/schemas/README.md"],
+      "baseline_sha256": {
+        "RESULTS/ADJUDICATION-SUMMARY.md": "4384654afc6f7d2a00fa33c1b1f0b9bdc21cfab63c24d99c0ef1a635861f873e",
+        "function-os-candidate/v0.2/schemas/README.md": "869425950358c6ffbd05bb39ad76e65204491c25cbab47e41f150da18a23e862"
+      }
+    },
+    "OPEN_QUESTION_IMPACT": {
+      "declared": "IMPACT_REQUIRED",
+      "governed_sources": ["RESULTS/OPEN-QUESTIONS.md"],
+      "baseline_sha256": {
+        "RESULTS/OPEN-QUESTIONS.md": "82634ff7183aca1fefb23d9645769cfdf2b935634e93d6ce5bae7a261a8ec8ea"
+      }
+    },
+    "PROJECT_STATE_IMPACT": {
+      "declared": "IMPACT_REQUIRED",
+      "governed_sources": ["docs/project-current-state.md", "ITERATION.md"],
+      "baseline_sha256": {
+        "ITERATION.md": "90676449d1f6d2aa4f74538bc0cb7708e76bd6a649e3bed62acf557354966feb",
+        "docs/project-current-state.md": "299281447731e86f445ac0a511b6a6f4de5652e22342a38b03380be8bc39f73b"
+      }
+    },
+    "REFERENCE_SURFACE_IMPACT": {
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": ["function-os-candidate/v0.2/README.md", "docs/architecture/interactive-system-map.md"],
+      "baseline_sha256": {
+        "docs/architecture/interactive-system-map.md": "3a6f56bb83713d0883cd5d2d14daf5628d1ccfb0b103e7ebffe244d37e08a216",
+        "function-os-candidate/v0.2/README.md": "ab80c23b895b66ff490ac81c6c687948e928743ba5c648f6acf36029d8b861c1"
+      }
+    },
+    "SYSTEM_MAP_IMPACT": {
+      "declared": "NO_IMPACT_JUSTIFIED",
+      "governed_sources": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json", "tools/generate_interactive_system_map.py"],
+      "baseline_sha256": {
+        "data/architecture/interactive-system-map-layout.json": "29fe4b1ed7e7d93a8703c5f5d53f097449d4b8c791e4660eb6830fe97f01af18",
+        "data/operations/change-propagation-topology.json": "3d8e90746ba92be9ec9d2eb84733034d092825b60bd4d0d5a3978a8988d8059a",
+        "data/operations/project-components.json": "8cf1c869cc5df0d7138c1043a1242cdff37c77bcfa3a6e12628efe95b7023a9a",
+        "tools/generate_interactive_system_map.py": "0c70dfde5f60e0947551047a2c5d3510ce871abdd323ee986720d546bffc07f8"
+      }
+    }
+  }
+}

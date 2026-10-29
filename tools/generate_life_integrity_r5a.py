@@ -2,7 +2,7 @@
 """Deterministic generator for the R5-A Life Integrity Charter Candidate artifacts.
 
 Produces the public candidate registries and schemas under
-``docs/architecture/ignition-r5a-life-integrity-r1/`` from the versioned R5-A
+``ignition/docs/architecture/ignition-r5a-life-integrity-r1/`` from the versioned R5-A
 package ``life_integrity_r5a``. Running it twice yields byte-identical output
 (deterministic). It never reads or emits private corpus content.
 
@@ -39,7 +39,7 @@ from life_integrity_r5a import (  # noqa: E402
     attack_gate,
 )
 
-OUT_DIR = os.path.join(REPO_ROOT, "docs", "architecture", "ignition-r5a-life-integrity-r1")
+OUT_DIR = os.path.join(REPO_ROOT, "ignition", "docs", "architecture", "ignition-r5a-life-integrity-r1")
 
 GENERATED_BY = "tools/generate_life_integrity_r5a.py"
 JSON_SCHEMA_DIALECT = "https://json-schema.org/draft/2020-12/schema"

@@ -15,7 +15,7 @@ acceptance. Zhang Boduan and South-School materials remain historical and
 conceptual sources and candidate protocols, never scientific or clinical
 authority.
 
-See docs/governance/life-integrity-charter-candidate-r1.md.
+See ignition/docs/governance/life-integrity-charter-candidate-r1.md.
 """
 
 from __future__ import annotations

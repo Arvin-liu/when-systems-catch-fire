@@ -1,0 +1,42 @@
+{
+  "task_number": 110,
+  "task_id": "IGNITION-PLANNER-COMPLETION-STATE-RECONCILIATION-AND-OPENALEX-INDEPENDENT-REPLICATION-PILOT-R1-20260801",
+  "control_commit": "889c555a09be93c6b6b0af8e3b985990e5a86d4e",
+  "success_token": "IGNITION_PLANNER_COMPLETION_STATE_RECONCILED_STALE_DUPLICATE_RECOMMENDATIONS_CLOSED_OPENALEX_INDEPENDENT_REPLICATION_EXECUTED_ADJUDICATED_AND_110_TERMINALIZED",
+  "terminal_tag": "ignition/iterations/110/terminal-r1",
+  "terminal_tag_object_sha": "02422984400aabb6dbecb703893962c0838fd510",
+  "terminal_tag_target": "f82c19e319a81130beb6bb5484de7ba861ed924c",
+  "core_receipt_sha256": "5b00e69fdeeb8e91dbdd5b1b05cb6e356e8478d7c1bc4e7dd942c29e838ecde3",
+  "content_pr": 171,
+  "content_head": "56db4f8d40ac95bc5ed4482681d92e5c48d967cc",
+  "content_merge_commit": "2fa72751a29f95a1b9d72578cd25eb30f6b0e412",
+  "terminalization_pr": 172,
+  "terminalization_head": "7f54b69c8427f15fc6d7cfe3454aa2e825e70cac",
+  "terminalization_commit": "f82c19e319a81130beb6bb5484de7ba861ed924c",
+  "predecessor": {
+    "task": 109,
+    "verified_terminal_state": "TERMINAL_SUCCESS",
+    "verified_independently": true
+  },
+  "resolver_verification": {
+    "resolved_110": "TERMINAL_SUCCESS",
+    "errors": {},
+    "terminal_tasks": [104, 105, 106, 107, 108, 110],
+    "current_accepted_iteration": 110,
+    "tag_validator": "TAG_OK",
+    "tag_is_annotated": true,
+    "tag_target_matches_terminalization_merge": true,
+    "core_hash_matches_tag_and_file": true,
+    "lifecycle_tests": "30/30",
+    "foundation_validate_pr172": "SUCCESS"
+  },
+  "remote_verification": {
+    "pr171_merged_ordinary": true,
+    "pr172_merged_ordinary": true,
+    "force_push": false,
+    "formal_preregistration_remote_proof_before_openalex": true,
+    "openalex_result_query_before_remote_proof": false,
+    "no_task_111_created_or_executed": true
+  },
+  "agent_terminal_chat_line": "110 已执行完成，请 GPT 查证。"
+}

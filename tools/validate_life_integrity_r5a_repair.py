@@ -10,7 +10,6 @@ does not enter prohibited R5-B/R5-C/R6 or production-runtime paths.
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from pathlib import Path
 
@@ -18,28 +17,13 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from life_integrity_r5a import attack_gate, registries, validators  # noqa: E402
+from life_integrity_r5a import attack_gate, registries, scope, validators  # noqa: E402
 import tools.generate_life_integrity_r5a as generator  # noqa: E402
 
 
 def _git_changed_paths() -> list[str]:
-    completed = subprocess.run(
-        ["git", "diff", "--name-only", registries.CANDIDATE_FROZEN_HEAD],
-        cwd=REPO_ROOT,
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    untracked = subprocess.run(
-        ["git", "ls-files", "--others", "--exclude-standard"],
-        cwd=REPO_ROOT,
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    return sorted(
-        set(line for line in completed.stdout.splitlines() if line)
-        | set(line for line in untracked.stdout.splitlines() if line)
+    return scope.changed_paths_for_candidate_scope(
+        REPO_ROOT, registries.CANDIDATE_FROZEN_HEAD
     )
 
 

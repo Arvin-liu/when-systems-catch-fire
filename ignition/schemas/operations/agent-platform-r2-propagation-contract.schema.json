@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/agent-platform-r2-propagation-contract.schema.json",
+  "title": "Agent Platform R2 propagation contract",
+  "description": "A fail-closed source-to-projection contract for the four R2 blast-radius fixtures. It describes repository materialization boundaries only; it is not a causal or epistemic authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "task_id", "claim_boundary", "projection_classes", "source_domains", "fixtures"],
+  "properties": {
+    "contract_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "task_id": {"type": "string", "minLength": 1},
+    "claim_boundary": {"type": "string", "minLength": 1},
+    "projection_classes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]*$"},
+      "uniqueItems": true
+    },
+    "source_domains": {
+      "type": "object",
+      "minProperties": 4,
+      "additionalProperties": {"$ref": "#/$defs/source_domain"}
+    },
+    "fixtures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runtime_only", "knowledge_claim", "writing_surface", "pack_manifest"],
+      "properties": {
+        "runtime_only": {"$ref": "#/$defs/fixture"},
+        "knowledge_claim": {"$ref": "#/$defs/fixture"},
+        "writing_surface": {"$ref": "#/$defs/fixture"},
+        "pack_manifest": {"$ref": "#/$defs/fixture"}
+      }
+    }
+  },
+  "$defs": {
+    "path": {"type": "string", "minLength": 1, "pattern": "^\\S+$"},
+    "projection": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]*$"},
+    "source_domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_paths", "affected_projections", "forbidden_projections"],
+      "properties": {
+        "source_paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/path"},
+          "uniqueItems": true
+        },
+        "affected_projections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/projection"},
+          "uniqueItems": true
+        },
+        "forbidden_projections": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/projection"},
+          "uniqueItems": true
+        }
+      }
+    },
+    "fixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["changed_paths", "expected_source_domains", "expected_affected_projections", "forbidden_affected_projections"],
+      "properties": {
+        "changed_paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/path"},
+          "uniqueItems": true
+        },
+        "expected_source_domains": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]*$"},
+          "uniqueItems": true
+        },
+        "expected_affected_projections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/projection"},
+          "uniqueItems": true
+        },
+        "forbidden_affected_projections": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/projection"},
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

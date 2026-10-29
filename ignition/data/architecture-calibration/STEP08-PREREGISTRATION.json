@@ -1,0 +1,71 @@
+{
+  "step": "STEP08",
+  "status": "FROZEN_CALIBRATION_PREREGISTRATION",
+  "base_tip": "e5c6d1d0b75dae41b414474bc22747816cd00c78",
+  "components": [
+    {
+      "id": "MCF",
+      "baseline": "nodes_and_source_target_edges_only",
+      "current_tests": [
+        "tests/test_multiscale_causal_fabric.py"
+      ],
+      "candidate_increment": [
+        "typed_relation_classes",
+        "claim_ceiling_and_residue",
+        "causal_fabric_diff",
+        "projection_boundary"
+      ]
+    },
+    {
+      "id": "PSD",
+      "baseline": "normalized_transition_matrix_and_path_multiplication",
+      "current_tests": [
+        "tests/test_probabilistic_system_dynamics.py"
+      ],
+      "candidate_increment": [
+        "probability_semantics",
+        "system_boundary",
+        "observation_intervention_separation",
+        "calibration_and_transition_diff"
+      ]
+    },
+    {
+      "id": "ARN",
+      "baseline": "static_directed_adjacency_dictionary",
+      "current_tests": [
+        "tests/test_adaptive_relational_network.py",
+        "tests/test_adaptive_relational_network_operational.py",
+        "tests/test_adaptive_relational_network_validation_contract.py"
+      ],
+      "candidate_increment": [
+        "temporal_activation",
+        "direction_and_path_continuity",
+        "higher_order_and_multilayer_relations",
+        "residue_and_claim_ceiling"
+      ]
+    },
+    {
+      "id": "Function_OS",
+      "baseline": "direct_bounded_function_with_precondition",
+      "current_tests": [
+        "function-os-candidate/v0.2/tests"
+      ],
+      "candidate_increment": [
+        "specification_to_artifact",
+        "execution_trace",
+        "validation_feedback",
+        "revision_and_rollback_registry"
+      ]
+    }
+  ],
+  "allowed_statuses": [
+    "OBSERVED_INCREMENTAL_VALUE_WITHIN_REPLAY",
+    "NO_INCREMENTAL_VALUE_OBSERVED",
+    "MIXED_VALUE_WITH_COST",
+    "NOT_APPLICABLE",
+    "BLOCKED_WITH_EVIDENCE",
+    "REGRESSION_OR_DEFECT_FOUND",
+    "UNDERDETERMINED"
+  ],
+  "global_ceiling": "bounded_repository_capability_comparison_only"
+}

@@ -9,29 +9,38 @@ on:
     paths:
       - '.github/workflows/r5a-life-integrity.yml'
       - 'life_integrity_r5a/**'
-      - 'tests/adaptive_relational_runtime/test_life_integrity_r5a.py'
-      - 'tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py'
+      - 'ignition/tests/adaptive_relational_runtime/test_life_integrity_r5a.py'
+      - 'ignition/tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py'
       - 'tools/generate_life_integrity_r5a.py'
       - 'tools/validate_life_integrity_r5a_repair.py'
       - 'tools/validate_life_integrity_r5a_consolidated_repair.py'
       - 'requirements-r4.txt'
-      - 'docs/architecture/ignition-r5a-life-integrity-r1/**'
-      - 'docs/governance/r5a-night-queue-r1-adjudication.md'
-      - 'docs/governance/life-integrity-charter-candidate-r1.md'
-      - 'docs/governance/ignition-perpetual-present-principle.md'
-      - 'docs/governance/r5a-consolidated-contract-bypass-repair-r1.md'
-      - 'docs/architecture/ignition-life-integrity-r5a-r1.md'
-      - 'docs/architecture/life-integrity-future-activation-boundary-r1.md'
-      - 'docs/architecture/life-integrity-non-impact-proof-r1.md'
-      - 'docs/architecture/tradition-translation-pipeline-r1.md'
-      - 'README.md'
-      - 'docs/project-current-state.md'
-      - 'ITERATION.md'
-      - 'AI-START-HERE.md'
-      - 'AI-HANDOFF.md'
-      - 'llms.txt'
-      - 'SUMMARY.md'
-      - 'CHANGELOG.md'
+      - 'ignition/docs/architecture/ignition-r5a-life-integrity-r1/**'
+      - 'ignition/docs/governance/r5a-night-queue-r1-adjudication.md'
+      - 'ignition/docs/governance/life-integrity-charter-candidate-r1.md'
+      - 'ignition/docs/governance/ignition-perpetual-present-principle.md'
+      - 'ignition/docs/governance/r5a-consolidated-contract-bypass-repair-r1.md'
+      - 'ignition/docs/architecture/adaptive-relational-runtime-r5a-adrs.md'
+      - 'ignition/docs/architecture/ignition-life-integrity-r5a-r1.md'
+      - 'ignition/docs/architecture/life-integrity-future-activation-boundary-r1.md'
+      - 'ignition/docs/architecture/life-integrity-non-impact-proof-r1.md'
+      - 'ignition/docs/architecture/tradition-translation-pipeline-r1.md'
+      - 'ignition/docs/project-current-state.md'
+      - 'ignition/ITERATION.md'
+      - 'ignition/AI-START-HERE.md'
+      - 'ignition/AI-HANDOFF.md'
+      - 'ignition/llms.txt'
+      - 'ignition/SUMMARY.md'
+      - 'ignition/CHANGELOG.md'
+      - 'ignition/docs/governance/README.md'
+      - 'AGENTS.md'
+      - 'ignition/data/operations/project-components.json'
+      - 'ignition/data/operations/component-validation-map-r1.json'
+      - 'ignition/tools/operations/run_component_validation_targets.py'
+      - 'ignition/tools/foundation/validate_repository_path_classification.py'
+      - 'ignition/tests/foundation/test_repository_path_classification.py'
+      - 'ignition/tests/test_r5a_route_consumer.py'
+      - 'ignition/tests/adaptive_relational_runtime/run_r5a_pytest_suite.py'
   push:
     branches:
       - 'architecture/ignition-r5a-life-integrity-charter-candidate-r1'
@@ -57,8 +66,8 @@ jobs:
       - name: Run R5-A contract tests (fail-closed)
         run: >-
           python3 -m pytest
-          tests/adaptive_relational_runtime/test_life_integrity_r5a.py
-          tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py
+          ignition/tests/adaptive_relational_runtime/test_life_integrity_r5a.py
+          ignition/tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py
           -q
       - name: Run exact R5-A narrow-repair instance gate
         run: python3 tools/validate_life_integrity_r5a_repair.py
@@ -67,5 +76,5 @@ jobs:
       - name: Regenerate and verify deterministic public artifacts
         run: |
           python3 tools/generate_life_integrity_r5a.py
-          git diff --exit-code docs/architecture/ignition-r5a-life-integrity-r1/ || \
+          git diff --exit-code ignition/docs/architecture/ignition-r5a-life-integrity-r1/ || \
             (echo "Public artifacts are not deterministic / out of date"; exit 1)

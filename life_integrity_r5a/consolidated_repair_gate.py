@@ -30,6 +30,7 @@ TASK_ID = "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726"
 REJECTED_CANDIDATE_HEAD = "f33be64b26ef14d14098f42ec947bd93fddd245c"
 SCHEMA_DIR = (
     Path(__file__).resolve().parents[1]
+    / "ignition"
     / "docs"
     / "architecture"
     / "ignition-r5a-life-integrity-r1"

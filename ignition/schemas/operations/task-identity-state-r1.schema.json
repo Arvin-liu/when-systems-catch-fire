@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task-identity-state-r1.schema.json",
+  "title": "Canonical Current task identity state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "current_formal_task", "latest_architecture_changing_task", "release_candidate_task", "publication_witness_task", "previous_canonical_current_task", "previous_formal_task", "historical_lineage", "advancement", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "task-identity-state-r1"},
+    "current_formal_task": {"$ref": "#/$defs/taskId"},
+    "latest_architecture_changing_task": {"$ref": "#/$defs/taskId"},
+    "release_candidate_task": {"$ref": "#/$defs/taskId"},
+    "publication_witness_task": {"$ref": "#/$defs/taskId"},
+    "previous_canonical_current_task": {"$ref": "#/$defs/taskId"},
+    "previous_formal_task": {"$ref": "#/$defs/taskId"},
+    "historical_lineage": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/edge"}},
+    "advancement": {"$ref": "#/$defs/advancement"},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "taskId": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["predecessor_task_id", "successor_task_id", "relation", "status"],
+      "properties": {
+        "predecessor_task_id": {"$ref": "#/$defs/taskId"},
+        "successor_task_id": {"$ref": "#/$defs/taskId"},
+        "relation": {"enum": ["FORMAL_TASK_SUCCESSOR", "CANONICAL_SOURCE_ADVANCEMENT", "ARCHITECTURE_TASK_REFERENCE", "REBASED_REQUIREMENT_LINEAGE"]},
+        "status": {"enum": ["COMPLETED_HISTORICAL", "CURRENT_ADVANCEMENT"]}
+      }
+    },
+    "advancement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_task_id", "to_task_id", "transition_reason", "prior_source_sha256", "execution_contract_path", "idempotency_key"],
+      "properties": {
+        "from_task_id": {"$ref": "#/$defs/taskId"},
+        "to_task_id": {"$ref": "#/$defs/taskId"},
+        "transition_reason": {"$ref": "#/$defs/nonblank"},
+        "prior_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "execution_contract_path": {"$ref": "#/$defs/nonblank"},
+        "idempotency_key": {"$ref": "#/$defs/taskId"}
+      }
+    }
+  }
+}

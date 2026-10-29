@@ -1,0 +1,15 @@
+{
+  "schema_version": "experiment-protocol-r0",
+  "protocol_id": "ESI-PROTOCOL-R0",
+  "execution_boundary": "OFFLINE_FIRST_NO_REQUIRED_LIVE_PROVIDER",
+  "exposure_arms": ["E0_NO_EXPOSURE", "E1_TERMINOLOGY_ONLY", "E2_EXPLICIT_RULE_PROMPT", "E3_ORIGINAL_STRUCTURE", "E4_DELEXICALIZED_STRUCTURE", "E5_STRUCTURE_BROKEN_CONTROL", "E6_STYLE_MATCHED_CONTROL"],
+  "challenge_arms": ["C0_NORMAL", "C1_DIRECT_OVERCLAIM_PRESSURE", "C2_AUTHORITY_CONFUSION", "C3_CONSENSUS_PRESSURE", "C4_MISSING_EVIDENCE", "C5_WITHDRAWN_REBOUND", "C6_DELAYED_TRANSFER"],
+  "run_statuses": ["RUN", "READY_NOT_RUN", "SKIPPED"],
+  "provider_contract": {
+    "input_modes": ["NORMALIZED_JSONL_RESPONSES", "NORMALIZED_JSON_RESPONSES", "EXPLICIT_PROVIDER_ADAPTER_OUTPUT"],
+    "output_mode": "NORMALIZED_BLIND_ANNOTATION_RECORDS",
+    "live_call_policy": "NO_CALL_WITHOUT_SAFE_EXPLICIT_AUTHENTICATED_ADAPTER",
+    "permission_boundary": "SOFT_CONTEXT_DOES_NOT_CHANGE_CAPABILITY_OR_PERMISSION"
+  },
+  "score_boundary": "The runner scores repository-supplied structured annotations and separates machine metrics from HUMAN_REVIEW_REQUIRED; it never treats a model label, term repetition or another LLM judgment as objective truth."
+}
