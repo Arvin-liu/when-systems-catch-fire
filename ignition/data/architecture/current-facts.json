@@ -8,10 +8,10 @@
   "facts": {
     "architecture": {
       "current_map_version": "0.16.0",
-      "hidden_components": 18,
+      "hidden_components": 19,
       "historical_map_version": "0.14.0",
       "layout_version": "2.0.0",
-      "registry_components": 105,
+      "registry_components": 106,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
       "typed_topology_relations": 142,
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "acfa42b840a4e438e8f275e26e258795524ce9cc7c1357d7830f3c189d2dde43"
+      "sha256": "c7602a54e883a9ec291d0420f2a435f56cdfe578ec5cf6c3b169584588a07721"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",

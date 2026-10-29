@@ -544,7 +544,7 @@
       "date": "2026-10-29",
       "label": "IGNITION-20261024-020 — Task20 R3 candidate first-stage closeout",
       "profile": "task20-current-lineage-r1",
-      "section_sha256": "1ba44a4d4fb9e7ce53d074d4ea91c2af685abb8e90ec55d2f7e601aa057d95cf"
+      "section_sha256": "3cfa283fb628dfd1d7ea76e328ca7ca65cd1173fabe23f8d06f915162f84ff11"
     }
   ],
   "parent_profile": {
