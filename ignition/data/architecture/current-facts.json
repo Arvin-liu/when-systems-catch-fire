@@ -117,8 +117,8 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6151,
-      "function_quarantine_or_pending": 4999,
+      "function_identity_cards": 6152,
+      "function_quarantine_or_pending": 5000,
       "nonfunction_claims": 17972,
       "nonfunction_quarantine_or_pending": 4993
     },
@@ -237,7 +237,7 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "f30f1908774031a683546d9528e768bd350527c6e4183d135c7889b9bd5d5747"
+      "sha256": "2ef95b5b70113a9bd0bf4ad5a9ececde7bbc71def419308853f72aec1c415774"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
