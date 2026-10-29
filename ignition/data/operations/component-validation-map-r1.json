@@ -1588,17 +1588,22 @@
     {
       "component_id": "stage_snapshot_publication",
       "domains": [
+        "O",
         "G"
       ],
       "validation_targets": [
         "g_component_release_controls",
-        "g_publication_consumers"
+        "g_publication_consumers",
+        "o_human_result_consumers"
       ],
       "change_classifications": [
+        "EVIDENCE_UPDATE",
         "GOVERNANCE_CHANGE",
-        "OPERATIONS_METHOD"
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
       ],
-      "evidence": "The R3 migration contract is documented alongside the existing stage-snapshot governance. Release-control consumers validate exact R2/R3 protocol tests; publication consumers validate that this documentation change preserves the existing publication boundary."
+      "evidence": "The canonical stage-snapshot operation spec owns this changed path. Existing stage-snapshot publication and iteration-sync tests cover the G publication contract; human-result consumers cover its repository Markdown projection. The new versioned release-transaction section also activates the declared synchronization and projection relations, without promoting a candidate snapshot to a capability."
     },
     {
       "component_id": "release_transaction_protocol_r3",
