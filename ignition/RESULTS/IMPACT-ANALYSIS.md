@@ -61,7 +61,9 @@
 |`docs/architecture/agentization-boundary-r0.md`|10|0|否|
 |`docs/architecture/approval-handoff-failover-r1.md`|11|0|否|
 |`docs/architecture/arr-r4-gap-candidate-gate.md`|7|0|否|
+|`docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`|0|0|是|
 |`docs/architecture/arr-r4-public-aggregate.json`|0|0|是|
+|`docs/architecture/arr-r4-receipt-closure-diagnosis.md`|0|0|是|
 |`docs/architecture/arr-r4-self-reflection.md`|21|0|否|
 |`docs/architecture/attention-attractor-control-plane.md`|10|0|否|
 |`docs/architecture/codex-adapter-r1.md`|3|0|否|

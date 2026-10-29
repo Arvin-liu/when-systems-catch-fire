@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 836 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 838 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -458,10 +458,26 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/architecture/arr-r4-metric-disclosure-repair-external-review.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BD785F9A791C0369`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/architecture/arr-r4-public-aggregate.json`
 
 - 状态：`ADDED`
 - Delta：`CD-D98016D53EB168B9`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/arr-r4-receipt-closure-diagnosis.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C96B4A9A3A112BF1`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
