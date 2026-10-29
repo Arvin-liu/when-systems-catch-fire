@@ -112,6 +112,7 @@ jobs:
     if: always() && needs.route.outputs.mode == 'FULL'
     needs: route
     runs-on: ubuntu-latest
+    timeout-minutes: 240
     # Keep direct unittest module loads on the same explicit roots as the
     # canonical full-regression runner.  Script execution adds its own
     # directory to sys.path; importlib-based tests do not.

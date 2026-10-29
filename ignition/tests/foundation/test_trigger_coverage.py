@@ -204,6 +204,96 @@ class FoundationCiRunnerTest(unittest.TestCase):
             self.assertEqual((evidence / first_stdout["path"]).read_bytes(), b"first ran\n")
             self.assertEqual(first_stdout["retention"], "full")
 
+    def test_runner_declares_bounded_resource_policies_and_job_timeout(self) -> None:
+        checks = run_foundation_ci.foundation_checks(sys.executable)
+        names = [item.name for item in checks]
+        self.assertEqual(len(checks), 57)
+        self.assertEqual(len(names), len(set(names)))
+        self.assertTrue(all(item.timeout_seconds == 45 * 60 for item in checks))
+        self.assertEqual(run_foundation_ci.OUTPUT_TAIL_BYTES, 256 * 1024)
+        self.assertEqual(run_foundation_ci.MAX_OUTPUT_ARTIFACT_BYTES, 16 * 1024 * 1024)
+        workflow = (REPO_ROOT / ".github" / "workflows" / "foundation-validation.yml").read_text(encoding="utf-8")
+        self.assertRegex(workflow, r"(?m)^    timeout-minutes:\s*240\s*$")
+
+    def test_launch_error_fails_but_does_not_hide_a_later_independent_check(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-launch-error-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            missing = root / "missing-command"
+            marker = app / "after-launch-error"
+            checks = [
+                run_foundation_ci.Check("missing-executable", (str(missing),)),
+                run_foundation_ci.Check(
+                    "run-after-launch-error",
+                    (sys.executable, "-c", f"from pathlib import Path; Path({str(marker)!r}).write_text('ran')"),
+                ),
+            ]
+            summary = run_foundation_ci.execute_checks(checks, repo_root=repo, app_root=app, evidence_dir=evidence)
+            rows = [json.loads(line) for line in (evidence / "command-ledger.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(summary["status"], "FAIL")
+            self.assertEqual([row["status"] for row in rows], ["FAIL", "PASS"])
+            self.assertEqual(rows[0]["returncode"], 127)
+            first_stderr = (evidence / rows[0]["stderr"]["path"]).read_text(encoding="utf-8")
+            self.assertIn(str(missing), first_stderr)
+            self.assertTrue(marker.is_file())
+
+    def test_success_with_margin_records_full_stream_integrity(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-success-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            payload = b"bounded-success\n"
+            code = "import sys; sys.stdout.buffer.write(" + repr(payload) + "); sys.stdout.flush()"
+            summary = run_foundation_ci.execute_checks(
+                [run_foundation_ci.Check("success-with-margin", (sys.executable, "-c", code), timeout_seconds=2.0)],
+                repo_root=repo,
+                app_root=app,
+                evidence_dir=evidence,
+            )
+            row = json.loads((evidence / "command-ledger.jsonl").read_text(encoding="utf-8"))
+            stream = (evidence / row["stdout"]["path"]).read_bytes()
+            digest = hashlib.sha256(payload).hexdigest()
+            self.assertEqual(summary["status"], "PASS")
+            self.assertEqual(row["status"], "PASS")
+            self.assertLess(row["duration_seconds"], 2.0)
+            self.assertEqual(stream, payload)
+            self.assertEqual(row["stdout"]["sha256"], digest)
+            self.assertEqual(row["stdout"]["stream_sha256"], digest)
+
+    def test_stderr_artifact_is_bounded_and_keeps_verifiable_stream_integrity(self) -> None:
+        block = b"z" * 4096
+        total_bytes = run_foundation_ci.MAX_OUTPUT_ARTIFACT_BYTES + len(block)
+        payload = block * (total_bytes // len(block))
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-stderr-bound-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            code = f"import sys; sys.stderr.buffer.write(b'z' * {len(payload)}); sys.stderr.flush()"
+            summary = run_foundation_ci.execute_checks(
+                [run_foundation_ci.Check("bounded-stderr", (sys.executable, "-c", code))],
+                repo_root=repo,
+                app_root=app,
+                evidence_dir=evidence,
+            )
+            row = json.loads((evidence / "command-ledger.jsonl").read_text(encoding="utf-8"))
+            capture = row["stderr"]
+            saved = (evidence / capture["path"]).read_bytes()
+            self.assertEqual(summary["status"], "PASS")
+            self.assertEqual(row["status"], "PASS")
+            self.assertEqual(capture["total_bytes"], len(payload))
+            self.assertEqual(capture["bytes"], run_foundation_ci.OUTPUT_TAIL_BYTES)
+            self.assertTrue(capture["truncated"])
+            self.assertEqual(capture["retention"], "last_bytes")
+            self.assertEqual(capture["sha256"], hashlib.sha256(saved).hexdigest())
+            self.assertEqual(capture["stream_sha256"], hashlib.sha256(payload).hexdigest())
+
     def test_output_capture_retains_bounded_tail_and_distinguishes_hashes(self) -> None:
         pattern = b"0123456789"
         count = run_foundation_ci.MAX_OUTPUT_ARTIFACT_BYTES // len(pattern) + 100_000
