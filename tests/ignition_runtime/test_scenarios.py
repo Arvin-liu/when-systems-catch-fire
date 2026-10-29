@@ -47,6 +47,27 @@ EXPECTED_HEAD_BASES = {
     "architecture/adaptive-relational-runtime-r1-scaffold": {
         "production/ignition-run-promote-evolve-r1",
     },
+    # This stacked pilot remains on the R1 scaffold branch, never directly on main.
+    "runtime/adaptive-relational-runtime-r2-real-object-pilot": {
+        "architecture/adaptive-relational-runtime-r1-scaffold",
+    },
+    # Positive-routing repair remains stacked on the R2 pilot, not Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-r1": {
+        "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    },
+    # The CI portability repair stays stacked on the positive-routing repair,
+    # preserving the existing R2 parent instead of substituting Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+    },
+    # The front-door synchronization repair remains stacked on the CI repair.
+    "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1",
+    },
+    # Q33 era-resolver repair remains stacked on the refreshed front-door PR.
+    "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1": {
+        "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1",
+    },
 }
 
 
@@ -759,6 +780,19 @@ def test_s43_diff_scope():
         "ignition/docs/human/nonfunction-assets/README.md",
         "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
         "ignition/docs/human/nonfunction-assets/entries/",
+        # Exact documentation, evidence bundle and path-classifier files owned by #122.
+        "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
+        "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
+        # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
+        # This PR's seven-file human-front-door audit bundle is evidence only.
+        "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/",
+        # This PR's Q33 reproduction and resolver finding bundle is evidence only.
+        "evidence/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1/",
+        # Exact consumer tests changed to close this sync and its propagation blocker.
+        "ignition/tests/test_change_propagation.py",
+        "tests/test_human_front_door.py",
+        "ignition/tools/foundation/validate_repository_path_classification.py",
         "ignition/docs/project-current-state.md",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
         "ignition/requirements-foundation.txt",
@@ -771,6 +805,36 @@ def test_s43_diff_scope():
         "ignition/tools/governance/validate_human_visibility.py",
         "ignition/tools/operations/run_component_validation_targets.py",
         "ignition/tools/validate_system_map_geometry.py",
+        # Exact R2 pilot additions to the stacked ARR scope; unrelated paths remain rejected.
+        "ignition/ARCHITECTURE.md",
+        "ignition/STATE-CHANGELOG.md",
+        "ignition/data/operations/component-execution-profile-policies.json",
+        "ignition/data/operations/iterations/ARR-R2-REAL-OBJECT-PILOT.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-closure.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-impact-report.md",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-map-delta.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-request.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-residue.json",
+        "ignition/reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
+        'tests/rpe_ci/',
+        'ignition/reports/ignition-rpe/',
+        'ignition/AI-HANDOFF.md',
+        'ignition/AI-START-HERE.md',
+        'ignition/tools/validate_human_front_door.py',
+        'ignition/llms.txt',
+        'ignition/RESULTS/',
+        'ignition/data/governance/human-results/',
+        'ignition/data/governance/human-surface/',
+        'ignition/data/governance/self-correction/',
+        'ignition/data/operations/current-snapshot-r1.json',
+        'ignition/data/publication/fire-seeds/',
+        'ignition/docs/architecture/current-facts.md',
+        'ignition/tools/governance/gen_source_first_seen.py',
+        'ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md',
+        # Exact consumer tests changed by the Q33 routing and era-resolver repair.
+        'ignition/tests/foundation/test_repository_path_classification.py',
+        'ignition/tests/test_component_validation_routing.py',
+        'ignition/tests/test_era_resolver_generalization.py',
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():

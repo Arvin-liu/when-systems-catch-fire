@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "营养课的饮食实验点火"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f5bed658b94b57df / title: "营养课的饮食实验点火"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U\(1\)=创意维度仍可自由重组"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a4c555af13544e53 / title: "规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U\(1\)=创意维度仍可自由重组"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "证据制度库初稿生成"](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3f4ef4cc5d0534e9 / title: "证据制度库初稿生成"
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [title: "词汇空间验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5b37e12b5b1c7a0 / title: "词汇空间验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "负期望回本陷阱验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4df235c43c231fe3 / title: "负期望回本陷阱验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [title: "财商乘数四因子结构（验证D65财富域）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-948d249718acf967 / title: "财商乘数四因子结构（验证D65财富域）"
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-244ec31b64a84f0d / \| `JIN-ARG-05` \| 后设史书重构开国意图 → 不能以终局倒推初衷 \| 文本层累已被文献学建立 \| 早期确有多重目标 \| 待外部考证 \|
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-CLM-05` \| 铁浮图、拐子马、连马与兵种代差不是充分解释 \| `argument_plausible`；细节待核 \| 邓广铭论证和术语年代需原文回读 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-858e868c688133e8 / \| `JIN-CLM-05` \| 铁浮图、拐子马、连马与兵种代差不是充分解释 \| `argument_plausible`；细节待核 \| 邓广铭论证和术语年代需原文回读 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-CLM-11` \| 扁平君民关系提高军事效率 \| `insufficient_evidence` \| 从轶事到军效存在跨层跳跃 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-accd5076fc727546 / \| `JIN-CLM-11` \| 扁平君民关系提高军事效率 \| `insufficient_evidence` \| 从轶事到军效存在跨层跳跃 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-CLM-12` \| 国号、年号与创始意图受到胜利后的回溯重构 \| `source_reports` / `external_verification_required` \| 刘浦江与争论文献需定位原论证 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ec1e6de023420468 / \| `JIN-CLM-12` \| 国号、年号与创始意图受到胜利后的回溯重构 \| `source_reports` / `external_verification_required` \| 刘浦江与争论文献需定位原论证 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-SRC-03` \| S3 \| 文末参考文献 \| 外部核验队列 \| 否 \| 书目出现不等于本轮已打开、定位或支持命题 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d3d4834d9a598ea1 / \| `JIN-SRC-03` \| S3 \| 文末参考文献 \| 外部核验队列 \| 否 \| 书目出现不等于本轮已打开、定位或支持命题 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `METADATA_VERIFIED` \| 标题、作者、年份、期刊/出版社与权威元数据源一致 \| Crossref metadata, publisher page, library catalog \|](../../../data/external-research/104-evidence-tier-schema.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4c14c1ea0f4d8fcb / \| `METADATA_VERIFIED` \| 标题、作者、年份、期刊/出版社与权威元数据源一致 \| Crossref metadata, publisher page, library catalog \|
-  - 来源：`data/external-research/104-evidence-tier-schema.md`
   - 依赖：—；被引用：—

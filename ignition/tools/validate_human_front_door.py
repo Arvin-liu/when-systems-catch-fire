@@ -32,6 +32,7 @@ HUMAN_READING = ROOT / "HUMAN-READING.md"
 SYSTEM_MAP_SPEC = ROOT / "data/architecture/interactive-system-map.json"
 SYSTEM_MAP_SVG = ROOT / "docs/generated/ignition-system-architecture.svg"
 COMPONENT_REGISTRY = ROOT / "data/operations/project-components.json"
+CURRENT_SYSTEM_IDENTITY = ROOT / "data/architecture/current-system-identity.json"
 
 CAPABILITIES = {
     "MCF": "docs/architecture/multiscale-causal-fabric.md",
@@ -43,7 +44,6 @@ VERSION_FACTS = {
     "current_method": "1.4.0",
     "historical_method": "1.3.0",
     "earlier_historical_method": "1.2.0",
-    "current_map": "0.22.0",
     "historical_map": "0.14.0",
     "earlier_historical_map": "0.13.0",
 }
@@ -108,6 +108,43 @@ FORBIDDEN_HOMEPAGE_MACHINE_TOKENS = (
 def require(condition: bool, message: str) -> None:
     if not condition:
         raise AssertionError(message)
+
+
+def current_map_version() -> str:
+    """Resolve the current map version from the canonical identity pointer."""
+    require(CURRENT_SYSTEM_IDENTITY.is_file(), "canonical current-system identity is missing")
+    try:
+        identity = json.loads(CURRENT_SYSTEM_IDENTITY.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise AssertionError(f"canonical current-system identity cannot be read: {exc}") from exc
+    current_map = identity.get("current_map") if isinstance(identity, dict) else None
+    require(isinstance(current_map, dict), "canonical current-system identity lacks current_map")
+    source_path = current_map.get("source_path")
+    pointer = current_map.get("json_pointer")
+    require(isinstance(source_path, str) and source_path, "canonical current_map source_path is missing")
+    require(isinstance(pointer, str) and (pointer == "" or pointer.startswith("/")), "canonical current_map JSON pointer is invalid")
+    source = (REPO_ROOT / source_path).resolve()
+    try:
+        source.relative_to(REPO_ROOT.resolve())
+    except ValueError as exc:
+        raise AssertionError("canonical current_map source_path escapes the repository") from exc
+    require(source.is_file(), f"canonical current_map source is missing: {source_path}")
+    try:
+        value = json.loads(source.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise AssertionError(f"canonical current_map source cannot be read: {source_path}: {exc}") from exc
+    for encoded_token in pointer[1:].split("/") if pointer else ():
+        token = encoded_token.replace("~1", "/").replace("~0", "~")
+        if isinstance(value, dict):
+            require(token in value, f"canonical current_map pointer is unresolved: {pointer}")
+            value = value[token]
+        elif isinstance(value, list):
+            require(token.isdigit() and int(token) < len(value), f"canonical current_map pointer is unresolved: {pointer}")
+            value = value[int(token)]
+        else:
+            raise AssertionError(f"canonical current_map pointer is unresolved: {pointer}")
+    require(isinstance(value, str) and bool(value.strip()), "canonical current_map version must be a non-empty string")
+    return value.strip()
 
 
 def _section_text(readme: str, heading: str) -> str:
@@ -323,8 +360,9 @@ def validate_texts(readme: str, guide: str, current_state: str, human_reading: s
 
 def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str, readme: str | None = None, current_state: str | None = None, nonimpact_proofs: set[str] | None = None) -> None:
     sources = {"ai.start": ai_start, "agent.handoff": ai_handoff, "machine.llms": llms}
+    required_versions = (*VERSION_FACTS.values(), current_map_version())
     for surface_id, text in sources.items():
-        for value in VERSION_FACTS.values():
+        for value in required_versions:
             require(value in text, f"{surface_id}: missing version fact {value}")
         require(re.search(r"1\.4\.0[^\n]{0,80}(?:Current|当前)|(?:Current|当前)[^\n]{0,80}1\.4\.0", text, re.I), f"{surface_id}: method 1.4.0 is not Current")
         require(not re.search(r"(?:Current|当前)[^\n]{0,30}(?:1\.1\.0|1\.2\.0|1\.3\.0)", text, re.I), f"{surface_id}: stale Current method")

@@ -492,9 +492,9 @@
     },
     {
       "asset_kind": "NONFUNCTION_ASSET",
-      "human_path": "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
-      "machine_id": "NFC-14866124cc1a2cae",
-      "machine_record_sha256": "37dc98ef530c261799bd3cda1055d34fe1722b115b6d2e34fc47e0446c5e01a9",
+      "human_path": "docs/human/nonfunction-assets/entries/nfc-139f14280f9dd160.md",
+      "machine_id": "NFC-139f14280f9dd160",
+      "machine_record_sha256": "9029e8cdbe47e16b96712c296adafdcceb949485a1f094a5f04fa074680e8078",
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",

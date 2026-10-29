@@ -1691,7 +1691,7 @@
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":375,"last_line":408,"mention_count":3,"path":"data/operations/iterations/D2-I1.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":44,"last_line":1257,"mention_count":229,"path":"data/operations/iterations/F15-D1-I1.json","role":"REFERENCE","stable_id":"D1"}
-{"first_line":2909,"last_line":2955,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
+{"first_line":2911,"last_line":2957,"mention_count":6,"path":"data/operations/project-components.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":6,"last_line":721,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-closure.json","role":"REFERENCE","stable_id":"D1"}
 {"first_line":1,"last_line":1,"mention_count":1,"path":"data/operations/propagation/F15-D1-I1-impact-report.md","role":"REFERENCE","stable_id":"D1"}
 {"first_line":42,"last_line":638,"mention_count":121,"path":"data/operations/propagation/F15-D1-I1-request.json","role":"REFERENCE","stable_id":"D1"}
@@ -23693,6 +23693,7 @@
 {"first_line":998,"last_line":998,"line":998,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-9DD437F7CA05404A","text":"\"title\": \"哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。\","}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0554-T55-植物意识函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-9DE71875DF3C7B15","text":"title: \"植物意识函数\""}
 {"first_line":50,"last_line":50,"line":50,"mention_count":1,"path":"docs/failure_typology.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-9DEC4A148C694CB5","text":"## 与函数系统的关系"}
+{"first_line":100,"last_line":100,"line":100,"mention_count":1,"path":"reports/ignition-rpe/ATTACK_MATRIX.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-9E1004038FD9A65A","text":"## H. Functional regression"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0528-C-533-黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩,面积律×对数律.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-9E1DFD1644619DEA","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0533})=1]."}
 {"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"统一案例总表/0578-C-583-路径依赖分化验证.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-9E230E052D460151","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0583})=1]."}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0578-D563-跨系统移植成功函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-9E28FD1281C36F2A","text":"title: \"跨系统移植成功函数\""}
@@ -25754,6 +25755,8 @@
 {"first_line":5,"last_line":28,"mention_count":4,"path":"outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":54,"last_line":54,"mention_count":1,"path":"reports/architecture/121Q12-baseline-audit.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"reports/governance/task-IGNITION-20260907-163.md","role":"REFERENCE","stable_id":"M1"}
+{"first_line":107,"last_line":107,"mention_count":1,"path":"reports/ignition-rpe/ATTACK_MATRIX.md","role":"REFERENCE","stable_id":"M1"}
+{"first_line":18,"last_line":25,"mention_count":2,"path":"reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":1375,"last_line":1477,"mention_count":2,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0296-D260-偏差敏感度阈值函数.md","role":"REFERENCE","stable_id":"M1"}
@@ -26052,6 +26055,7 @@
 {"first_line":13,"last_line":25,"mention_count":3,"path":"outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md","role":"REFERENCE","stable_id":"M2"}
 {"first_line":85,"last_line":85,"mention_count":1,"path":"outputs/research/role-identity-subjectivity-reading-list-20260712.json","role":"REFERENCE","stable_id":"M2"}
 {"first_line":20,"last_line":20,"mention_count":1,"path":"outputs/research/role-identity-subjectivity-reading-list-20260712.md","role":"REFERENCE","stable_id":"M2"}
+{"first_line":26,"last_line":26,"mention_count":1,"path":"reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md","role":"REFERENCE","stable_id":"M2"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0301-D265-极小点漂移方向函数.md","role":"REFERENCE","stable_id":"M2"}
 {"first_line":14,"last_line":55,"mention_count":4,"path":"统一函数总表/0317-D281-极小点漂移-鲁棒性耦合函数.md","role":"REFERENCE","stable_id":"M2"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0337-D301-极小点漂移速率函数.md","role":"REFERENCE","stable_id":"M2"}
@@ -26240,6 +26244,7 @@
 {"first_line":30,"last_line":122,"mention_count":5,"path":"outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":8,"last_line":8,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":14,"last_line":28,"mention_count":3,"path":"outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md","role":"REFERENCE","stable_id":"M3"}
+{"first_line":27,"last_line":27,"mention_count":1,"path":"reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":12,"last_line":15,"mention_count":2,"path":"reports/operations/ignition-143-step15-cross-publication-coherence.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":22,"last_line":22,"mention_count":1,"path":"reports/operations/ignition-143-step16-canonical-publication-integration.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":20,"last_line":20,"mention_count":1,"path":"reports/operations/ignition-143-step19-terminality.md","role":"REFERENCE","stable_id":"M3"}
@@ -26417,6 +26422,8 @@
 {"first_line":42,"last_line":119,"mention_count":4,"path":"outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md","role":"REFERENCE","stable_id":"M4"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md","role":"REFERENCE","stable_id":"M4"}
 {"first_line":15,"last_line":23,"mention_count":2,"path":"outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md","role":"REFERENCE","stable_id":"M4"}
+{"first_line":107,"last_line":107,"mention_count":1,"path":"reports/ignition-rpe/ATTACK_MATRIX.md","role":"REFERENCE","stable_id":"M4"}
+{"first_line":18,"last_line":28,"mention_count":2,"path":"reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md","role":"REFERENCE","stable_id":"M4"}
 {"first_line":14,"last_line":55,"mention_count":4,"path":"统一函数总表/0307-D271-容斥阈值-复杂度函数.md","role":"REFERENCE","stable_id":"M4"}
 {"first_line":14,"last_line":55,"mention_count":4,"path":"统一函数总表/0322-D286-p--分布形态函数.md","role":"REFERENCE","stable_id":"M4"}
 {"first_line":19,"last_line":55,"mention_count":3,"path":"统一函数总表/0339-D303-容斥-耦合竞争动态演化函数.md","role":"REFERENCE","stable_id":"M4"}
@@ -26516,6 +26523,7 @@
 {"first_line":54,"last_line":122,"mention_count":5,"path":"outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md","role":"REFERENCE","stable_id":"M5"}
 {"first_line":26,"last_line":26,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md","role":"REFERENCE","stable_id":"M5"}
 {"first_line":16,"last_line":28,"mention_count":3,"path":"outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md","role":"REFERENCE","stable_id":"M5"}
+{"first_line":37,"last_line":39,"mention_count":2,"path":"reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md","role":"REFERENCE","stable_id":"M5"}
 {"first_line":478,"last_line":478,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"M5"}
 {"first_line":14,"last_line":55,"mention_count":4,"path":"统一函数总表/0308-D272-量子引力-新门控面预测.md","role":"REFERENCE","stable_id":"M5"}
 {"first_line":14,"last_line":55,"mention_count":4,"path":"统一函数总表/0323-D287-容斥主导实验签名函数.md","role":"REFERENCE","stable_id":"M5"}
