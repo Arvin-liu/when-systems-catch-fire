@@ -155,11 +155,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 1391,
-      "cards": 672,
-      "changes": 567,
-      "layered_readings": 593,
-      "search_records": 25735
+      "aliases": 1401,
+      "cards": 677,
+      "changes": 572,
+      "layered_readings": 598,
+      "search_records": 25871
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "508740a181be80af991c61ed13a3e97defaa7a8fe572df1f7eff3a7f4671bf96"
+      "sha256": "42763073f320ebb06c9309c5ecfa1508d7449ffbfcd993c320a6a1b87447f6d0"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "937a5482654adb2a137d2a82fe932a7b9b65d5869d0412ffe87b88fc7630f465"
+      "sha256": "4c7de7dfcd958233f5dd9fb12cc9e26deaca557a2e21a8b2ecaa4cf3e11db82e"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",

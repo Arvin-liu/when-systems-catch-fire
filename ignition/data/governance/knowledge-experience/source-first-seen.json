@@ -1,5 +1,5 @@
 {
-  "computed_from": "git log --follow --diff-filter=A --format=%ad --date=short",
+  "computed_from": "git log --follow --diff-filter=A --format=%ad --date=short (Ignition and repository roots); fallback: git log --full-history -m --diff-filter=A --format=%ad --date=short (both roots)",
   "entries": {
     "agent-results/IGNITION-121Q6C-result.md": "2026-07-15",
     "agent-results/IGNITION-20260820-127-result.md": "2026-08-21",
@@ -36,12 +36,17 @@
     "docs/architecture/adaptive-relational-runtime-adrs.md": "2026-07-24",
     "docs/architecture/adaptive-relational-runtime-interop.md": "2026-07-24",
     "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md": "2026-07-24",
+    "docs/architecture/adaptive-relational-runtime-r2-adrs.md": "2026-07-25",
+    "docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md": "2026-07-25",
+    "docs/architecture/adaptive-relational-runtime-r4-adrs.md": "2026-07-25",
     "docs/architecture/adaptive-relational-runtime.md": "2026-07-24",
     "docs/architecture/agent-platform-r2.md": "2026-08-16",
     "docs/architecture/agent-runtime-r0.md": "2026-08-15",
     "docs/architecture/agent-runtime-r1.md": "2026-08-16",
     "docs/architecture/agentization-boundary-r0.md": "2026-08-15",
     "docs/architecture/approval-handoff-failover-r1.md": "2026-08-16",
+    "docs/architecture/arr-r4-gap-candidate-gate.md": "2026-07-25",
+    "docs/architecture/arr-r4-self-reflection.md": "2026-07-25",
     "docs/architecture/attention-attractor-control-plane.md": "2026-07-15",
     "docs/architecture/codex-adapter-r1.md": "2026-08-16",
     "docs/architecture/compression-integrity-gate.md": "2026-07-15",
@@ -596,7 +601,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 594,
+  "entry_count": 599,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

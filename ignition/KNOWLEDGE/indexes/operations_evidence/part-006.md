@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1F01489E460501F5 / meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分） / IMPLICIT-1F01489E460501F5 / IMPLICIT-CD2A5386E936680A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CD2A5386E936680A / meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分） / IMPLICIT-CD2A5386E936680A / IMPLICIT-1F01489E460501F5
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [Minimal接入 surfaces \(spec §七\) for the analogy-audit & transportability gate. All cross-Q](../../../docs/analogy/q37-interfaces.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1fcab234b3671474 / Minimal接入 surfaces \(spec §七\) for the analogy-audit & transportability gate. All cross-Q
+  - 来源：`docs/analogy/q37-interfaces.md`
+  - 依赖：—；被引用：—
+- [M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D019FDD70A9254BC / M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i / IMPLICIT-D019FDD70A9254BC / IMPLICIT-FDEF1008CEB8B8E8
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FDEF1008CEB8B8E8 / M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i / IMPLICIT-FDEF1008CEB8B8E8 / IMPLICIT-D019FDD70A9254BC
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [M₂\(线性组合\)和M₃\(对数衰减\)都是线性变换的特殊形式,M₃是M₂在对数空间的投影,归入U₂](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8b56603c334d900a / M₂\(线性组合\)和M₃\(对数衰减\)都是线性变换的特殊形式,M₃是M₂在对数空间的投影,归入U₂
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0198CFC2215AB617 / M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\) / IMPLICIT-0198CFC2215AB617 / IMPLICIT-453279BF5E747BE1
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-453279BF5E747BE1 / M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\) / IMPLICIT-453279BF5E747BE1 / IMPLICIT-0198CFC2215AB617
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fad1d0f433a492c2 / 不可复现数值：初次审计据 0000 摘要误判 `f₁/同构度/计数增量` 不可复现；**完整报告证实这些数值存在**，误判已撤销（见第〇节）。命令疑点 #2/#9 的「数值来源」已由完整报告坐实。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
-  - 依赖：—；被引用：—
-- [不采纳理由：对应 failure_typology FAIL-003 尺度错配；私有流程 ≠ 学科可判定结构。](../../../outputs/collisions/20260708-smoke-test/rejected.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5bf0747ca1cd92b4 / 不采纳理由：对应 failure_typology FAIL-003 尺度错配；私有流程 ≠ 学科可判定结构。
-  - 来源：`outputs/collisions/20260708-smoke-test/rejected.md`
-  - 依赖：—；被引用：—
-- [不采纳项 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-a3102269fa5cb3fd)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：不采纳项 · P1 接入烟雾测试 / rejected
-  - 来源：`outputs/collisions/20260708-smoke-test/rejected.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-183f4e5cc2be7804 / 与 Ψ₀ 关系：E1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8e3568f52c889b44 / 与 Ψ₀ 关系：E2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ffe1059ce8d7e896 / 与 Ψ₀ 关系：E3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：E4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-05a2b4c55c2f6b95 / 与 Ψ₀ 关系：E4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [与 Ψ₀ 关系：S1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。](../../../docs/meta-protocols/12-meta-protocols.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-df4c4293324eb840 / 与 Ψ₀ 关系：S1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定\(J⁺/J⁻\)、同构识别\(I_iso\)与收敛审核\(L_meta\)，不被替代。
-  - 来源：`docs/meta-protocols/12-meta-protocols.md`
   - 依赖：—；被引用：—

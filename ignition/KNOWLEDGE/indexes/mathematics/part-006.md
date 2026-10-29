@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D40} exist, compose F_{D40}=N\(⊕_{g∈D_{D40}} g\); otherwise treat F_{D40} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85e01a61e51c7c15 / If upstream objects D_{D40} exist, compose F_{D40}=N\(⊕_{g∈D_{D40}} g\); otherwise treat F_{D40} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D40；被引用：—
+- [If upstream objects D_{D410} exist, compose F_{D410}=N\(⊕_{g∈D_{D410}} g\); otherwise treat F_{D410} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3eee53329ec8ad3 / If upstream objects D_{D410} exist, compose F_{D410}=N\(⊕_{g∈D_{D410}} g\); otherwise treat F_{D410} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D410；被引用：—
+- [If upstream objects D_{D411} exist, compose F_{D411}=N\(⊕_{g∈D_{D411}} g\); otherwise treat F_{D411} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6e9ceca6b9f8dab8 / If upstream objects D_{D411} exist, compose F_{D411}=N\(⊕_{g∈D_{D411}} g\); otherwise treat F_{D411} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D411；被引用：—
+- [If upstream objects D_{D412} exist, compose F_{D412}=N\(⊕_{g∈D_{D412}} g\); otherwise treat F_{D412} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-089ab7720e8a899d / If upstream objects D_{D412} exist, compose F_{D412}=N\(⊕_{g∈D_{D412}} g\); otherwise treat F_{D412} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D412；被引用：—
 - [If upstream objects D_{D413} exist, compose F_{D413}=N\(⊕_{g∈D_{D413}} g\); otherwise treat F_{D413} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-42f1fa62e67ea280 / If upstream objects D_{D413} exist, compose F_{D413}=N\(⊕_{g∈D_{D413}} g\); otherwise treat F_{D413} as an axiom seed.
@@ -804,6 +824,11 @@
   - 可搜索名称：NFC-4255f431e4dbd6be / Independent bounded checks passed: task identity model, Current volatile registry, release transaction protocol, 13-case
   - 来源：`reports/operations/ignition-132-step12-regression-closure.md`
   - 依赖：—；被引用：—
+- [inputs → identical deterministic ids; no duplicate lifecycle records; every selected](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-787069cd71967a6b / inputs → identical deterministic ids; no duplicate lifecycle records; every selected
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [Inside that declared environment, `verify_core_claims.py --check` returned five passed bounded checks: `T16_SYMPY_COUNTE](../../../reports/operations/ignition-134-step09-sympy-environment-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-64894e700fc0f551 / Inside that declared environment, `verify_core_claims.py --check` returned five passed bounded checks: `T16_SYMPY_COUNTE
@@ -943,6 +968,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-d6342e10fa5ace9d / Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [known-limitation note records that lifecycle state writes could reach the caller dict.](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-5a04c47af0954bbc / known-limitation note records that lifecycle state writes could reach the caller dict.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
   - 依赖：—；被引用：—
 - [known=\("public process lifecycle was captured", "structured result presence was classified"\),](../../../agent_federation/live_execution.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -1209,6 +1239,11 @@
   - 可搜索名称：NFC-27625194c285574e / lifecycle task: `IGNITION-20260822-132`
   - 来源：`reports/operations/ignition-132-step07-task-id-binding.md`
   - 依赖：—；被引用：—
+- [lifecycle writes operate on the copies.](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-7242e865e9581269 / lifecycle writes operate on the copies.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
 - [Lifecycle 图](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-379f578b953cdade / Lifecycle 图
@@ -1253,6 +1288,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-47f1ce441f5dae42 / Likelihood on specification/held-out examples and benchmark tests provide bounded behavioral checks without proof, exhau
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [limitation records that lifecycle state writes could reach the caller objects, and that](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-590e23aa3489d5d2 / limitation records that lifecycle state writes could reach the caller objects, and that
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
   - 依赖：—；被引用：—
 - [Lin et al. exact full arXiv v2 paper, all-page visual review, complete LaTeX source and linked FDABench aggregate audit:](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2424,6 +2464,16 @@
   - 可搜索名称：NFC-af17761ef2c552f2 / No cross-representation equivalence proofs
   - 来源：`reports/external-research/121Q4-final-report.md`
   - 依赖：—；被引用：—
+- [no duplicate lifecycle records created by replay.](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-104943782c7ca922 / no duplicate lifecycle records created by replay.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
+- [no duplicate lifecycle records.](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d8f6b28dcc2f9be3 / no duplicate lifecycle records.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
 - [No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e8014657a11561e6 / No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined.
@@ -2453,54 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-688fe2d7191d2fee / No formal verification. Empirical accuracy only.
   - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json`
-  - 依赖：—；被引用：—
-- [No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ad3864e4864504e5 / No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json`
-  - 依赖：—；被引用：—
-- [No immutable artifact identity or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7d8d4445a0977636 / No immutable artifact identity or lifecycle governance is defined.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [No machine-readable function/memory capability registry, immutable release, compatibility matrix, monitoring or lifecycl](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9123baf842aad743 / No machine-readable function/memory capability registry, immutable release, compatibility matrix, monitoring or lifecycl
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.](../../../data/architecture/probabilistic-system-dynamics/gap-ledger.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-608ddd8b619e6387 / No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.
-  - 来源：`data/architecture/probabilistic-system-dynamics/gap-ledger.json`
-  - 依赖：—；被引用：—
-- [No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only.](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-016.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0597ce7dafe3f32d / No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only.
-  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-016.json`
-  - 依赖：—；被引用：—
-- [No source provides formal precondition/postcondition language for neural-weight functions. Refinement types apply to sym](../../../data/external-research/121-fulltext-resolver/121q3/gaps/GAP-015.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a50b185b1cdcee46 / No source provides formal precondition/postcondition language for neural-weight functions. Refinement types apply to sym
-  - 来源：`data/external-research/121-fulltext-resolver/121q3/gaps/GAP-015.json`
-  - 依赖：—；被引用：—
-- [No validation mechanism beyond training/validation loss. No formal checking of adaptation quality.](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-501dae02b520ea17 / No validation mechanism beyond training/validation loss. No formal checking of adaptation quality.
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json`
-  - 依赖：—；被引用：—
-- [No versioned DSL/model/program registry or lifecycle governance is defined, and no implementation/data artifacts are rel](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-685ac93f82009355 / No versioned DSL/model/program registry or lifecycle governance is defined, and no implementation/data artifacts are rel
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [No versioned learned-program registry, dependency graph, compatibility model or rollback lifecycle is defined or release](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a7b89b7a86bb61fb / No versioned learned-program registry, dependency graph, compatibility model or rollback lifecycle is defined or release
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [No versioned registry, compatibility model, provenance-complete task artifact or rollback lifecycle is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-72f87db8ce1af328 / No versioned registry, compatibility model, provenance-complete task artifact or rollback lifecycle is defined.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

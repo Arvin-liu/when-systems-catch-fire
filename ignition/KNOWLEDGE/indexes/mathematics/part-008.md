@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The claim ceiling is repository-local task lifecycle, executor-admission and](../../../agent-results/IGNITION-20260827-142-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6bbbb6de1d5f6970 / The claim ceiling is repository-local task lifecycle, executor-admission and
+  - 来源：`agent-results/IGNITION-20260827-142-result.md`
+  - 依赖：—；被引用：—
+- [The combined input result is not `VOLUME_AND_COHERENCE_EFFECT_SUPPORTED_AS_RESEARCH_FINDING`. Volume is the only measure](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f65dc6a9215bad08 / The combined input result is not `VOLUME_AND_COHERENCE_EFFECT_SUPPORTED_AS_RESEARCH_FINDING`. Volume is the only measure
+  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [The complete machine matrix is in `data/operations/iterations/127/step00-rebase-matrix.json`. Snapshot/restore, schema m](../../../reports/operations/ignition-127-step00-rebase-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9e5ff3f33d08e26d / The complete machine matrix is in `data/operations/iterations/127/step00-rebase-matrix.json`. Snapshot/restore, schema m
+  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
+  - 依赖：—；被引用：—
+- [The complete node-by-permutation record is `cross-book-accumulation-results.jsonl`. It is intentionally reported separat](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d21ee1e5506429b / The complete node-by-permutation record is `cross-book-accumulation-results.jsonl`. It is intentionally reported separat
+  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [The complexity of theorem-proving procedures](../../../data/external-research/088-external-source-atlas-v1.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-3a8628b8a171fced / The complexity of theorem-proving procedures
+  - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
+  - 依赖：—；被引用：—
+- [The controlling summary is `verdict.json`; the final V2 gate is `v2-final-gate.json`; exact command, base, pointer, and](../../../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-5dd5cdb39446ce18 / The controlling summary is `verdict.json`; the final V2 gate is `v2-final-gate.json`; exact command, base, pointer, and
+  - 来源：`docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [The Current semantic surfaces are clean: task lineage, release lifecycle, Current Facts, Current Snapshot, compiler outp](../../../reports/operations/ignition-132-step11-residual-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28230a7acdeabe35 / The Current semantic surfaces are clean: task lineage, release lifecycle, Current Facts, Current Snapshot, compiler outp
+  - 来源：`reports/operations/ignition-132-step11-residual-audit.md`
+  - 依赖：—；被引用：—
+- [The current-state scope names the post-PR #56 / Q24D lifecycle boundary without embedding its own future commit SHA.](../../../reports/operations/121Q25-front-door-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f34925eb64a859a0 / The current-state scope names the post-PR #56 / Q24D lifecycle boundary without embedding its own future commit SHA.
+  - 来源：`reports/operations/121Q25-front-door-audit.md`
+  - 依赖：—；被引用：—
+- [The Effectual Action Plane is a cross-layer operating surface for choosing a next action when the goal, metric, path, or](../../../docs/architecture/effectual-action-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1a378590195c5211 / The Effectual Action Plane is a cross-layer operating surface for choosing a next action when the goal, metric, path, or
+  - 来源：`docs/architecture/effectual-action-plane.md`
+  - 依赖：—；被引用：—
+- [The entry must never convert open PR content or candidate notes into formal authority.](../../../docs/get-brain-latest-status-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e29290814be17664 / The entry must never convert open PR content or candidate notes into formal authority.
+  - 来源：`docs/get-brain-latest-status-protocol.md`
+  - 依赖：—；被引用：—
+- [The envelope is `additionalProperties: false` at every level. Identity hashing input excludes `record_id` itself and the](../../../docs/architecture/object-relation-mechanism-model.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-887d51a73f80291d / The envelope is `additionalProperties: false` at every level. Identity hashing input excludes `record_id` itself and the
+  - 来源：`docs/architecture/object-relation-mechanism-model.md`
+  - 依赖：—；被引用：—
+- [The evidence set contains seven substantive source families plus two contextual or methodological records](../../../data/external-research/pointfire-seven-track-replay-r1/claim-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9483fb9f356ca718 / The evidence set contains seven substantive source families plus two contextual or methodological records
+  - 来源：`data/external-research/pointfire-seven-track-replay-r1/claim-ledger.jsonl`
+  - 依赖：—；被引用：—
 - [The exact primary verdict is IGNITION-20260907-161. Formal review remains Draft only. The synthetic threshold candidate](../../../reports/governance/task-IGNITION-20260907-161.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1f4cf50301c3ca43 / The exact primary verdict is IGNITION-20260907-161. Formal review remains Draft only. The synthetic threshold candidate
@@ -2442,65 +2502,5 @@
 - [title: "犹豫域退化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B4521BCCF7E7B945 / title: "犹豫域退化函数" / IMPLICIT-B4521BCCF7E7B945 / IMPLICIT-72E2C8F78923CF46
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "玻尔兹曼分布-门槛分布函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E51BC36A56575738 / title: "玻尔兹曼分布-门槛分布函数" / IMPLICIT-E51BC36A56575738
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "理想主义双重性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9DB5A059E572A6ED / title: "理想主义双重性函数" / IMPLICIT-9DB5A059E572A6ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "生命智能的σ压缩函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CFA22784BB2062A5 / title: "生命智能的σ压缩函数" / IMPLICIT-CFA22784BB2062A5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "生命智能的σ压缩函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d92be8b3eb33cc5a / title: "生命智能的σ压缩函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "生命起源与自组织"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-62579f7673a198ed / title: "生命起源与自组织"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "生存域函数 / survival domain function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C07D5B7D2EEC5FC6 / title: "生存域函数 / survival domain function" / IMPLICIT-C07D5B7D2EEC5FC6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "电弱统一规范破缺函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-43BA917185DA7A60 / title: "电弱统一规范破缺函数" / IMPLICIT-43BA917185DA7A60 / IMPLICIT-192293273AC6A10E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "电弱统一规范破缺函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2c76d2acdcea5d67 / title: "电弱统一规范破缺函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "相变序参量-门槛函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CE314E3B2EA4AF1C / title: "相变序参量-门槛函数" / IMPLICIT-CE314E3B2EA4AF1C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "相对论门槛函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-460AA6F3C1EF3D2E / title: "相对论门槛函数" / IMPLICIT-460AA6F3C1EF3D2E / IMPLICIT-CE939BE90A3DEC1D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "确定性误解函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E991CD3E3F7DCDDF / title: "确定性误解函数" / IMPLICIT-E991CD3E3F7DCDDF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "碰撞产出密度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D81A141F0BDA0BD9 / title: "碰撞产出密度函数" / IMPLICIT-D81A141F0BDA0BD9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [认知黑洞案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a29e905c2b9281df / 认知黑洞案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [认知黑洞验证 — 家暴受害者-4维锁定\(经济](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-da2843117df3b975 / 认知黑洞验证 — 家暴受害者-4维锁定\(经济
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [证据与残余](../../../docs/architecture/agent-runtime-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3d790870920cbe03 / 证据与残余
+  - 来源：`docs/architecture/agent-runtime-r1.md`
+  - 依赖：—；被引用：—
+- [证据状态：** 描述语法和信息结构证据充分；跨语言认知后果混合。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-66ae6fe8795f29ce / 证据状态：** 描述语法和信息结构证据充分；跨语言认知后果混合。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
+- [识别、判定、收敛跨领域**同构结构**；](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c2a6eba397528077 / 识别、判定、收敛跨领域**同构结构**；
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
 - [课程的叙述把徽宗写成“疯得有分寸”的统治者，并把道教解释为皇权工具；它还把祥瑞、符箓、民间服务和行动主义连成一条文明论线索。这里最有价值的不是现成答案，而是两个互相拉扯的判断：徽宗似乎在相信，又似乎在管理；道教似乎在安顿不确定性，又可能在替](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4eb9c22012b2a4c8 / 课程的叙述把徽宗写成“疯得有分寸”的统治者，并把道教解释为皇权工具；它还把祥瑞、符箓、民间服务和行动主义连成一条文明论线索。这里最有价值的不是现成答案，而是两个互相拉扯的判断：徽宗似乎在相信，又似乎在管理；道教似乎在安顿不确定性，又可能在替

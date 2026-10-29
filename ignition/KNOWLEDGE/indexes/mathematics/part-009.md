@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "玻尔兹曼分布-门槛分布函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E51BC36A56575738 / title: "玻尔兹曼分布-门槛分布函数" / IMPLICIT-E51BC36A56575738
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "理想主义双重性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9DB5A059E572A6ED / title: "理想主义双重性函数" / IMPLICIT-9DB5A059E572A6ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "生命智能的σ压缩函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CFA22784BB2062A5 / title: "生命智能的σ压缩函数" / IMPLICIT-CFA22784BB2062A5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "生命智能的σ压缩函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d92be8b3eb33cc5a / title: "生命智能的σ压缩函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "生命起源与自组织"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-62579f7673a198ed / title: "生命起源与自组织"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "生存域函数 / survival domain function"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C07D5B7D2EEC5FC6 / title: "生存域函数 / survival domain function" / IMPLICIT-C07D5B7D2EEC5FC6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "电弱统一规范破缺函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-43BA917185DA7A60 / title: "电弱统一规范破缺函数" / IMPLICIT-43BA917185DA7A60 / IMPLICIT-192293273AC6A10E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "电弱统一规范破缺函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2c76d2acdcea5d67 / title: "电弱统一规范破缺函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "相变序参量-门槛函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CE314E3B2EA4AF1C / title: "相变序参量-门槛函数" / IMPLICIT-CE314E3B2EA4AF1C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "相对论门槛函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-460AA6F3C1EF3D2E / title: "相对论门槛函数" / IMPLICIT-460AA6F3C1EF3D2E / IMPLICIT-CE939BE90A3DEC1D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "确定性误解函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E991CD3E3F7DCDDF / title: "确定性误解函数" / IMPLICIT-E991CD3E3F7DCDDF
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "碰撞产出密度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D81A141F0BDA0BD9 / title: "碰撞产出密度函数" / IMPLICIT-D81A141F0BDA0BD9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "碰撞存活率函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-73A357BA4E751A29 / title: "碰撞存活率函数" / IMPLICIT-73A357BA4E751A29
@@ -1234,6 +1294,11 @@
   - 可搜索名称：Validation summary / validation-summary-20260712
   - 来源：`reports/foundation-architecture/validation-summary-20260712.md`
   - 依赖：—；被引用：—
+- [validation, and lifecycle operation operates on the copies. The caller's `source` and](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-b7cc6d7fb89f3490 / validation, and lifecycle operation operates on the copies. The caller's `source` and
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [Validator output never equals formal approval.](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-63a76d5bc526bac1 / Validator output never equals formal approval.
@@ -2437,70 +2502,5 @@
 - [Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D211 / Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D215 / Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙约束空间函数 is adjudicated as RELATION: Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D512 / Within the source-defined scope, 宇宙约束空间函数 is adjudicated as RELATION: Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}. This is
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙约束边界函数 is adjudicated as RELATION: ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}. This is a model-i](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D515 / Within the source-defined scope, 宇宙约束边界函数 is adjudicated as RELATION: ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}. This is a model-i
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙膨胀-Φ衰减同构定理 is adjudicated as RELATION: 宇宙膨胀的Φ表述： 尺度因子a\(t\)增长 → 物质密度ρ_m ∝ a⁻³ → μ_m递减 辐](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D224 / Within the source-defined scope, 宇宙膨胀-Φ衰减同构定理 is adjudicated as RELATION: 宇宙膨胀的Φ表述： 尺度因子a\(t\)增长 → 物质密度ρ_m ∝ a⁻³ → μ_m递减 辐
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙膨胀-门槛扩张函数 is adjudicated as METRIC: 宇宙膨胀-门槛扩张函数,宇宙膨胀描述认知时空的尺度扩张,门控面Λ随之扩张。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D214 / Within the source-defined scope, 宇宙膨胀-门槛扩张函数 is adjudicated as METRIC: 宇宙膨胀-门槛扩张函数,宇宙膨胀描述认知时空的尺度扩张,门控面Λ随之扩张。. This is a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 完全统一条件函数 is adjudicated as PREDICATE: Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) = 1 g_A\(M_](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D217 / Within the source-defined scope, 完全统一条件函数 is adjudicated as PREDICATE: Ω→1的必要条件：g_A\(M_Planck\) = g_B\(M_Planck\) = 1 g_A\(M_
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 完成-完美函数 is adjudicated as RELATION: 任务完成度C与完美追求度P满足：当P>θ时C↓（过度追求完美阻碍完成），决策阈值∂U/∂t > ∂U/](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D537 / Within the source-defined scope, 完成-完美函数 is adjudicated as RELATION: 任务完成度C与完美追求度P满足：当P>θ时C↓（过度追求完美阻碍完成），决策阈值∂U/∂t > ∂U/
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 完美风暴-信息量等价函数 is adjudicated as RELATION: D412修正后，完美风暴条件a_excl·τ=1/\(4·ln2\)中的ln2不是数学巧合——它](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D463 / Within the source-defined scope, 完美风暴-信息量等价函数 is adjudicated as RELATION: D412修正后，完美风暴条件a_excl·τ=1/\(4·ln2\)中的ln2不是数学巧合——它
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D412；被引用：—
-- [Within the source-defined scope, 宏观僵尸态-实际不可逆等价函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D30](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D419 / Within the source-defined scope, 宏观僵尸态-实际不可逆等价函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D30
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D309；被引用：—
-- [Within the source-defined scope, 宏观僵尸态g_eff函数 is adjudicated as RELATION: M9的g_eff_macro = \(1-R_irreversible\)·g_eff。R→1时](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D406 / Within the source-defined scope, 宏观僵尸态g_eff函数 is adjudicated as RELATION: M9的g_eff_macro = \(1-R_irreversible\)·g_eff。R→1时
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D311；被引用：—
-- [Within the source-defined scope, 定向溢出强度函数 is adjudicated as METRIC: M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_max>>p̄时溢出几乎全](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D379 / Within the source-defined scope, 定向溢出强度函数 is adjudicated as METRIC: M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_max>>p̄时溢出几乎全
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 定投凯利保守性验证 is adjudicated as ARGUMENT_SCHEMA: 定投凯利保守性验证，定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D170 / Within the source-defined scope, 定投凯利保守性验证 is adjudicated as ARGUMENT_SCHEMA: 定投凯利保守性验证，定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 定投跨域验证函数 is adjudicated as ARGUMENT_SCHEMA: 定投跨域验证函数，定投策略在投资域验证了点火框架的普适性。定投不是投资特有，而是点火框](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D181 / Within the source-defined scope, 定投跨域验证函数 is adjudicated as ARGUMENT_SCHEMA: 定投跨域验证函数，定投策略在投资域验证了点火框架的普适性。定投不是投资特有，而是点火框
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

@@ -384,6 +384,26 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Task160｜Basis Escape V2`, `generator-meta-plasticity-v2-2026-09-07`
 
+<a id="asset-hr-411160237efe6d62"></a>
+## ARR R4 — Architecture Decision Records
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-411160237EFE6D62` · [docs/architecture/adaptive-relational-runtime-r4-adrs.md](../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+- **为什么产生：** 此来源记录了什么：ARR R4 — Architecture Decision Records？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** taskid: ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725 controlcommit: e8530a7d87f13ef09cea58d34f6f548a695d7955
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/adaptive-relational-runtime-r4-adrs.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `ARR R4 — Architecture Decision Records`, `adaptive-relational-runtime-r4-adrs`
+
 <a id="asset-hr-412946fbe63365c4"></a>
 ## IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding`, `ignition-132-step07-task-id-binding`
-
-<a id="asset-hr-4e1f3584adabcbab"></a>
-## IGNITION-20260824-138 — Step 00 Baseline Audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4E1F3584ADABCBAB` · [reports/operations/ignition-138-step00-baseline-audit.md](../../reports/operations/ignition-138-step00-baseline-audit.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260824-138 — Step 00 Baseline Audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The live control ref was refreshed before this task. origin/relay/current is 556dda03ec5019480e79d474910abe836f6f099e, which points to the IGNITION-138 task material at 6c7e01c5. The formal repository was fetched with --all --prune; its verified origin/main, remote refs/heads/main, and the new is…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-138-step00-baseline-audit.md`, `138-STEP00-BASELINE-AUDIT`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260824-138 — Step 00 Baseline Audit`, `ignition-138-step00-baseline-audit`

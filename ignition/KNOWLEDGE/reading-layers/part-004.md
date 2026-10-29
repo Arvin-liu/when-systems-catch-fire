@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-44eb56d76a052dc0"></a>
+## IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and aft… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate；主题：Fresh task-branch clone；The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and after validation.；The clone passed the independent 25-check deterministic projection preflight: failedchecks=[], releaseadmission=true, sideeffectdetected=false, and the clean-tree gate passed. Its natural isolated full regression then completed with 1227 tests, 0 failures, 0 errors and 0 skips in 3032.893s runtime / 3034.208s elapsed. Python 3.14.6, SymPy 1.14.0, z3-solver 4…；The fresh-clone full-suite capture remains external to the formal repository:；stdout SHA-256: 97fa565750566bd885c5cd275f5ba6b2260282299d4174ec0cbcef287f2890e4;
+- 完整阅读：[reports/operations/ignition-140-step16-fresh-clone-publication.md](../../reports/operations/ignition-140-step16-fresh-clone-publication.md)
+
 <a id="reading-hr-45480c716d721c81"></a>
 ## 121Q25B Whole-Project Synchronization Contract
 `HISTORICAL_OR_SUPERSEDED_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -214,6 +221,13 @@
 - 5 分钟：主题：IGNITION-20260827-142 result；Task ID: IGNITION-20260827-142 Formal task ordinal: 142；Task142 Steps 00–19 complete the formal task scope. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: terminality is decided by the task's own scope and terminal contract, while the independent LIVEEXTERNALINVOCATION obligation remains OPEN.；No new live process was started. The carried live boundary remains six attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records; the next eligible action is a fresh dynamic executor-admission decision.；This formal result records task identity and lifecycle outcome only. It does not self-witness a publication SHA; ordinary fast-forward publication, remote-ref observation, fresh-clone regression and the independent 1111 receipt are separate observations.；The claim ceiling is repository-local task lifecycle, executor-admission and publication-contract evidence only. It does not establish validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance.
 - 完整阅读：[agent-results/IGNITION-20260827-142-result.md](../../agent-results/IGNITION-20260827-142-result.md)
 
+<a id="reading-hr-5177e613de9d33f6"></a>
+## ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：This document is the public, non-private R4 report. It contains only counts, distributions, dispositions and structural facts. No note titles, raw text, transcript content, URL lists or reconstructive features appear here; those live only in the 1111 private evidence branch. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1；taskid: ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725；controlcommit: e8530a7d87f13ef09cea58d34f6f548a695d7955；predecessor: R3 (d6719a74859f278b6166b11e6bd5235c2fa46879, PR #126, DRAFT)；terminalverdict: ARRR4WAICSELFREFLECTIONDRAFTAWAITINGEXTERNALREVIEW；authorization boundary: R4 only. No R5, no PROMOTE/EVOLVE/Ready/merge/Main change/force push.
+- 完整阅读：[docs/architecture/arr-r4-self-reflection.md](../../docs/architecture/arr-r4-self-reflection.md)
+
 <a id="reading-hr-52173a553c421e11"></a>
 ## 跨协议一致性红队（外部治理记录）
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
@@ -339,17 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：SYMBOLIC-SPHERE-I1-REPAIR-R1 local receipt；Status: SYMBOLICSPHEREREPAIRR1LOCALCOMPLETE；Branch: repair/symbolic-sphere-r1-reference-integrity；Original SYMBOLIC frozen head: 213dced90f1e9b1f1992a148ee10fc0844917490；Q39 repair-r1 frozen head: 99ab601a48dd45972b238e468bc8e3002d648c98；Merge propagation commit: 05976a00a8e86b9dd8fe4d638e791b372ad0af62
 - 完整阅读：[reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md](../../reports/operations/SYMBOLIC-SPHERE-I1-REPAIR-R1-local-receipt.md)
-
-<a id="reading-hr-57b4f559431d6912"></a>
-## 121Q32 typed change-propagation impact report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q32 typed change-propagation impact report；Closure complete: true；Closure hash: 57b18c57dcefd521e9399be167f511017de785d8971af93177f25df8926ab7f1；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, iteration, iterationmanifestcontract, mcf, nol7, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, summary, sync, systemmaplayout, systemmapprojection, usage；Resolved components: 19
-- 完整阅读：[reports/operations/121Q32-change-propagation-impact.md](../../reports/operations/121Q32-change-propagation-impact.md)
-
-<a id="reading-hr-57b8850420df5865"></a>
-## Migration and rollback
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Migration and rollback；Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten.
-- 完整阅读：[reports/foundation-architecture/migration-and-rollback-20260712.md](../../reports/foundation-architecture/migration-and-rollback-20260712.md)

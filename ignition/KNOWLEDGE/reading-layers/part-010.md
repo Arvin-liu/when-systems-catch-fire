@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-bcee4731c5f039a7"></a>
+## IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contr… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix；The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contract rejects auth/config mutation, secret materialization and se…；The positive path proves a helper write occurs in the transient scratch domain, the workspace digest and permissions remain unchanged, the repo.read ceiling stays narrow, and normal cleanup returns CLEANED. Cleanup failure is recorded as FAILED; unknown or left-behind process groups remain REQUIRESRECONCILIATION and are not silently deleted. Safe argv constr…；Matrix evidence is distributed across the provider-neutral domain tests, deterministic filesystem harness, bounded transport tests, child guard tests, Codex R3 adapter tests and the dedicated safety-matrix tests. No case uses skip, xfail, ignore, workspace chmod widening or a dangerous bypass.；The live-bridge targeted set ran 88 tests with zero failures, errors or skips.；Claim ceiling: adversarial filesystem/permission policy and deterministic adapter/transport evidence only; no real Codex inference, validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
+- 完整阅读：[reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md](../../reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md)
+
+<a id="reading-hr-bd43dc0d8b91689f"></a>
+## 回填计划 · P1 接入烟雾测试
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：回填计划 · P1 接入烟雾测试；碰撞报告：outputs/collisions/20260708-smoke-test/collision-report.md；任务：inputs/collisions/20260708-smoke-test/task.md；流程注释（救援仓库不作为主线 / 差异审计优先 / 只回填增量 / 案例无增量不回灌 / 凭证保留），存于 notes.md，不强制入表。；对 docs/p1-machine-data-collision-workflow-20260708.md 的「轻量预筛」用法补充，存于 expanded-notes.md，待人工复核后更新正式文档。；不适用（本轮无新增函数/案例候选）。
+- 完整阅读：[outputs/collisions/20260708-smoke-test/backfill-plan.md](../../outputs/collisions/20260708-smoke-test/backfill-plan.md)
+
+<a id="reading-hr-bd65d2af1b1afed8"></a>
+## IGNITION-128 Step 00 — Current-State semantic audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Formal baseline: origin/main@681f86d79b1112af3c07e0f8091335860c237ef2. Control source: 1111 relay/current@3b6d27441395492cf633e53d3d1e985d0b2ec933. The formal main fetch and baseline equality check passed before this audit. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-128 Step 00 — Current-State semantic audit；Formal baseline: origin/main@681f86d79b1112af3c07e0f8091335860c237ef2. Control source: 1111 relay/current@3b6d27441395492cf633e53d3d1e985d0b2ec933. The formal main fetch and baseline equality check passed before this audit.；The search covered repository text and machine records for DEFERREDPENDINGREBASE, Task 125, IGNITION-125, Task 127, IGNITION-127, DEFERREDREBASEDINTO127, and COMPLETEDWITHCLASSIFIEDRESIDUALS. It recorded 24 old pending-status hits, 22 Task 125 hits, 5 IGNITION-125 hits, 57 Task 127 hits, and 4 IGNITION-127 hits.；Only four Human/AI Current entry surfaces still state the stale pending status: ignition/docs/project-current-state.md, ignition/AI-START-HERE.md, ignition/AI-HANDOFF.md, and ignition/llms.txt. The homepage, current identity, current-facts and map surfaces contain the R3 identity but need to be checked against the new canonical task-lineage/status source.；The Task 126 progress/receipt, Task 127 audit/progress/receipt, append-only STATE-CHANGELOG.md, and generated Knowledge/Foundation projections are explicitly preserved. Their old wording is historical source evidence or a derived projection, not permission to describe the same state as Current. The unrelated historical IGNITION-125 follow-up queue/report is…；The full path-level classification is recorded in ignition/data/operations/iterations/128/step00-audit-ledger.json.
+- 完整阅读：[reports/operations/ignition-128-step00-current-state-audit.md](../../reports/operations/ignition-128-step00-current-state-audit.md)
+
 <a id="reading-hr-bda837b6080acf95"></a>
 ## IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：价值：增加生命共同体的适应能力、问题解决能力与未来选择空间，是应对不确定性的关键。条件：仅当可检验、可逆优先、风险隔离、可停止、有失败反馈时才有价值。伤害：当以“创新”为由制造不可控、不可逆、外部化风险时，会伤害共同体。不可缺少的约束：可逆优先、小规模试验、风险隔离、可停止、失败反馈、禁止不可控外部风险。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：V3 规范性审核 - 创新性协议 (Innovation Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；选择提高系统新可能性、复杂度或生成能力的行动。；未要求可检验性，'新可能性'主观化，易被任何变化冒充创新（歧义）。
 - 完整阅读：[docs/governance/meta-protocol-reviews/protocols/V3.md](../../docs/governance/meta-protocol-reviews/protocols/V3.md)
-
-<a id="reading-hr-d4b5c8e581f06e23"></a>
-## Pilot Formal Audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Pmeta2(x) := Symmetry(Decision(x), Information(x)) 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Pilot Formal Audit；076 correction notice: this is a preserved 075 heuristic pilot, not an object-level proof audit. Its 110 selections mix A/MF/T/high-risk D/normal D and the first 12 BC candidates, omit Ψ₀/Y1 and all PEND claims, and are not the same statistical population as the 714-row ledger. “类型错误” and “反例信号” below are keyword triggers; none satisfies the replayable count…；判定维度：对象类型、定义域/值域占位、变量/单位、散文伪公式、类型错误、反例、案例-证明混淆、框架内收敛误写为外部真理。；主题：A1 I(t,L) 提议者意识 / I(t,L) proposer awareness；原始命题: 提议者是否有意识，二值变量。不可推导，作为框架起点。 扩展注释 / Extended Annotation；原始来源: PRIVATE_PROVENANCE_WITHHELD
-- 完整阅读：[reports/math-foundation/pilot-formal-audit-20260712.md](../../reports/math-foundation/pilot-formal-audit-20260712.md)
-
-<a id="reading-hr-d4c40ec0127597ed"></a>
-## SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：prior-repair head 4d15ccaf2e574248c0e224c05716c3af46203a39 to the real predecessor repair-r2 head 7532b4b34cf841c09faab8c835c5fc7f896d30d8; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3). 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：SCIENTIFIC-CONTEXT-PROTOCOL repair-r2 — R4 freeze；branch: repair-r2/scientific-context-protocol-r2-context-semantics；annotatedtag: archive/scientific-context-protocol-repair-r2-frozen-head；base: SCIENTIFIC-CONTEXT-PROTOCOL repair-r1 head 50cdf4ca95337d5adbd900140c53dfc3aaf422f4；direct predecessor: prior repair-r2 head 7532b4b34cf841c09faab8c835c5fc7f896d30d8 (inherited via --no-ff merge of repair-r2/q44-r2-consent-semantics)；PR base: repair-r2/q44-r2-consent-semantics (prior repair-r2 branch)
-- 完整阅读：[reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md](../../reports/operations/SCIENTIFIC-CONTEXT-PROTOCOL-REPAIR-R2-freeze.md)
-
-<a id="reading-hr-d5166569c3ff6750"></a>
-## 抽取审计
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：元协议文件（1902 内）：12 篇（V1–V4 / S1–S4 / E1–E4 各 1）；22 本候选是否全部映射到最终收敛报告：是（22/22）；未分配 C 编号：是（formalcaseid 全为 null）
-- 完整阅读：[outputs/book-collisions/20260709-22-book-validation/extraction-audit.md](../../outputs/book-collisions/20260709-22-book-validation/extraction-audit.md)

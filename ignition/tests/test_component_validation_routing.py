@@ -7,6 +7,7 @@ import sys
 import subprocess
 import tempfile
 import unittest
+from types import ModuleType
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -569,12 +570,23 @@ class ComponentValidationRoutingTest(unittest.TestCase):
                 "",
             ])
             (package / "test_consumer.py").write_text(consumer_source, encoding="utf-8")
-            result = run_modules(
-                ["research_workflow.test_consumer"],
-                repo_root=repo_root,
-                import_roots=["research_workflow"],
-                verbosity=0,
-            )
+            previous_package = sys.modules.get("research_workflow")
+            stale_package = ModuleType("research_workflow")
+            stale_package.__path__ = []
+            sys.modules["research_workflow"] = stale_package
+            try:
+                result = run_modules(
+                    ["research_workflow.test_consumer"],
+                    repo_root=repo_root,
+                    import_roots=["research_workflow"],
+                    verbosity=0,
+                )
+                self.assertIs(sys.modules.get("research_workflow"), stale_package)
+            finally:
+                if previous_package is None:
+                    sys.modules.pop("research_workflow", None)
+                else:
+                    sys.modules["research_workflow"] = previous_package
         self.assertEqual(result["tests_executed"], 1)
         self.assertEqual(result["failures"], 0)
         self.assertEqual(result["errors"], 0)

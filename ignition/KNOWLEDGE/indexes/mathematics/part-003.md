@@ -1909,6 +1909,11 @@
   - 可搜索名称：NFC-d937b89bdc1179e2 / `NOT_FOUND`: required source, field, or evidence is missing.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
+- [`observation` are byte/structure-identical before and after `run\(\)` \(proved by a](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-aa93bcd4571fa277 / `observation` are byte/structure-identical before and after `run\(\)` \(proved by a
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+  - 依赖：—；被引用：—
 - [`os_spine` 位于图的中央列；`federation` 明确标为外部、可替换手脚；`domain_packs` 单列表示 Domain/Skill Pack，不把 Knowledge 重新画成系统本体。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-03eeff9afac685a9 / `os_spine` 位于图的中央列；`federation` 明确标为外部、可替换手脚；`domain_packs` 单列表示 Domain/Skill Pack，不把 Knowledge 重新画成系统本体。
@@ -2497,10 +2502,5 @@
 - [APPROVAL_DECISION_STATES = frozenset\({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI](../../../agent_federation/approval_handoff.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-f30d1b3ac74f5dfd / APPROVAL_DECISION_STATES = frozenset\({"APPROVED", "WAITING_FOR_APPROVAL", "WAITING_EXTERNAL_APPROVAL", "BLOCKED_WITH_EVI
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [APPROVAL_OBSERVATION_STATES = frozenset\({"NOT_REQUESTED", "WAITING", "APPROVED", "DENIED"}\)](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7e22d2e68970a3de / APPROVAL_OBSERVATION_STATES = frozenset\({"NOT_REQUESTED", "WAITING", "APPROVED", "DENIED"}\)
   - 来源：`agent_federation/approval_handoff.py`
   - 依赖：—；被引用：—

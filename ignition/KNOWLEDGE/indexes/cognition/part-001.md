@@ -1589,6 +1589,11 @@
   - 可搜索名称：NFC-e4b7623aaa3c64ba / ADAPTERS --> OPENCLAW\[OpenClaw\]
   - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
+- [Adaptive Relational Runtime R2 — Architecture Decision Records](../../ASSET-CARDS.md#asset-hr-60754e6f4aa10a57)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Adaptive Relational Runtime R2 — Architecture Decision Records / adaptive-relational-runtime-r2-adrs
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
 - [Add a fail-closed `reference_integrity_check` to the validator: for each evidence entry carrying](../../../docs/metacognition/SCIENTIFIC-METACOGNITION-I1-repair-architecture.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-5515fe987a25ca1b / Add a fail-closed `reference_integrity_check` to the validator: for each evidence entry carrying
@@ -1803,6 +1808,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd480a73b143ab6b / are recovery accelerators and never a second truth source.
   - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [ARR R4 — Architecture Decision Records](../../ASSET-CARDS.md#asset-hr-411160237efe6d62)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：ARR R4 — Architecture Decision Records / adaptive-relational-runtime-r4-adrs
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
   - 依赖：—；被引用：—
 - [artifact_refs: tuple\[ArtifactRef, ...\]](../../../agent_federation/contracts.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2269,6 +2279,16 @@
   - 可搜索名称：NFC-1ad1954fac5552e7 / DECISION-INTEGRITY-I1 Architecture Decision — Principle Lock, Process Quality & Outcome-Bias Governance
   - 来源：`docs/decision/decision-integrity-i1-architecture-decision.md`
   - 依赖：—；被引用：—
+- [Decision.** Detailed inputs/outputs are written only to the 1111 evidence branch.](../../../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67011a5c6f55bad4 / Decision.** Detailed inputs/outputs are written only to the 1111 evidence branch.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+  - 依赖：—；被引用：—
+- [Decision.** The audit engine accepts generic evidence directories and synthetic](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0b319e7a6e384d7b / Decision.** The audit engine accepts generic evidence directories and synthetic
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
+  - 依赖：—；被引用：—
 - [Decision: `NOT_RUN_NO_JUSTIFIED_RETRY`. The old Hermes receipt is untouched, no resume/continue/channel action was sent,](../../../reports/operations/ignition-137-step11-hermes-retry-decision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-483e08864e10b85a / Decision: `NOT_RUN_NO_JUSTIFIED_RETRY`. The old Hermes receipt is untouched, no resume/continue/channel action was sent,
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-773a8dd97cccb2ab / discovery/load、Profile 投影、Gateway 输入输出、Pack-aware routing、memory
   - 来源：`docs/architecture/agent-platform-r2.md`
-  - 依赖：—；被引用：—
-- [disposable UTF-8 file and passed through the observed ``openclaw agent`` JSON](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-448f710ed4828841 / disposable UTF-8 file and passed through the observed ``openclaw agent`` JSON
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [Distribution And Decision Collapse Control Plane](../../ASSET-CARDS.md#asset-hr-c322de3c7799a555)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：Distribution And Decision Collapse Control Plane / distribution-collapse-control-plane
-  - 来源：`docs/architecture/distribution-collapse-control-plane.md`
-  - 依赖：—；被引用：—
-- [Distribution and decision collapse control: records samples, hypothesis distributions, and action collapse without promo](../../../reports/architecture/121Q13-attention-distribution-compression.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a71e24dfb9b9dbbb / Distribution and decision collapse control: records samples, hypothesis distributions, and action collapse without promo
-  - 来源：`reports/architecture/121Q13-attention-distribution-compression.md`
-  - 依赖：—；被引用：—
-- [Do not treat process completion, Agent agreement or Pack routing as truth or publication acceptance.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1fad21933dd1174d / Do not treat process completion, Agent agreement or Pack routing as truth or publication acceptance.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—

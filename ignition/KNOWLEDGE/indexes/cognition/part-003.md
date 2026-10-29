@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)](../../../agent_federation/convergence.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6a0bf9ca15d33f8d / refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)
+  - 来源：`agent_federation/convergence.py`
+  - 依赖：—；被引用：—
+- [Regression and projection closure](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1eed912b1a5e3996 / Regression and projection closure
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
+- [regression and release-ready terminality evidence only; no external truth,](../../../agent-results/IGNITION-20260828-145-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce83b24558f7a1df / regression and release-ready terminality evidence only; no external truth,
+  - 来源：`agent-results/IGNITION-20260828-145-result.md`
+  - 依赖：—；被引用：—
+- [Regression and validation evidence](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a7dccb5f960ae57c / Regression and validation evidence
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
+- [repeated same-context outputs are not independent evidence;](../../../reports/architecture/121Q13-attention-distribution-compression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-13743091cfedc2b0 / repeated same-context outputs are not independent evidence;
+  - 来源：`reports/architecture/121Q13-attention-distribution-compression.md`
+  - 依赖：—；被引用：—
 - [repository state only. It does not assert external truth, universal](../../../agent-results/IGNITION-20260829-148-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0f8f5f91f458f363 / repository state only. It does not assert external truth, universal
@@ -2478,29 +2503,4 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：认知迁移编辑修订：来源与边界记录 / cognitive-migration-editorial-revision-source
   - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
-  - 依赖：—；被引用：—
-- [认知黑洞案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a29e905c2b9281df / 认知黑洞案例验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [认知黑洞验证 — 家暴受害者-4维锁定\(经济](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-da2843117df3b975 / 认知黑洞验证 — 家暴受害者-4维锁定\(经济
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [证据与残余](../../../docs/architecture/agent-runtime-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-3d790870920cbe03 / 证据与残余
-  - 来源：`docs/architecture/agent-runtime-r1.md`
-  - 依赖：—；被引用：—
-- [证据状态：** 描述语法和信息结构证据充分；跨语言认知后果混合。](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-66ae6fe8795f29ce / 证据状态：** 描述语法和信息结构证据充分；跨语言认知后果混合。
-  - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [识别、判定、收敛跨领域**同构结构**；](../../../outputs/audit/agent-project-understanding-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c2a6eba397528077 / 识别、判定、收敛跨领域**同构结构**；
-  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—

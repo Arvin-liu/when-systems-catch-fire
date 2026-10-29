@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-92e68b43ea044168"></a>
+## IGNITION-20260827-143 Step 16 — canonical 出版入口接入
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 16 通过。Task143 的出版组合已经接回正式仓库现有的唯一 PUBLICATIONS/pointfire-results-book/ 入口，没有新建平行成果系统。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 16 — canonical 出版入口接入；Step 16 通过。Task143 的出版组合已经接回正式仓库现有的唯一 PUBLICATIONS/pointfire-results-book/ 入口，没有新建平行成果系统。；成果册 README.md：增加 Task143 R1 的出版组合、三篇文章、Book Project 和两篇样章的可读入口，并明确出版生产不等于外部真值或 EPISTEMICALLYACCEPTED。；成果册 CHANGELOG.md：追加本轮阶段封存与成果生产的 append-only 记录。；成果册 RESULT-REGISTRY.jsonl：新增 6 个 public-safe 出版工作成果登记（3 篇文章、1 个 Book Project、2 个样章），各自保留 provenance、claim ceiling、未决证据和不升级的关系说明。；docs/editorial/README.md：将三篇新文章接入人类阅读入口，说明 Task104 旧质量快照与 Task143 当前编辑证据的区别。
+- 完整阅读：[reports/operations/ignition-143-step16-canonical-publication-integration.md](../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+
+<a id="reading-hr-92fc8f7bd633607c"></a>
+## 公共断言上限指南
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：公共断言边界治理覆盖定理、定律、证明、必然、唯一、完全、统一、已解决或不可能等强词；它们必须进入 public-claim-lineage.jsonl。该登记只提供可追溯性，不使断言成立。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：公共断言边界治理覆盖定理、定律、证明、必然、唯一、完全、统一、已解决或不可能等强词；它们必须进入 public-claim-lineage.jsonl。该登记只提供可追溯性，不使断言成立。；发布前必须回答：对象是什么；主身份是什么；数学成熟度与外部证据成熟度分别是多少；证明或实证义务是否完成；允许推理方向是什么；哪些反例、失败边界和依赖降级会触发撤回。；被撤回结论不得通过加上“结构性”“框架层”“模型层”等形容词恢复。回弹检测结合 claim lineage、同义词家族、去除重命名形容词后的相似度和上下文边界；自动结果只生成候选与硬禁词检查，最终语义判断仍可进入人工复核。；当前物理边界不变：点火现有门控乘积模型没有统一四种基本相互作用；物理统一问题保持开放。当前模型失败既不证明普遍不可能，也不证明其他路线成功。
+- 完整阅读：[docs/foundation/public-claim-ceiling-guidance.md](../../docs/foundation/public-claim-ceiling-guidance.md)
+
+<a id="reading-hr-9302fb0a7da093e8"></a>
+## IGNITION-20260825-139 Step 08 — Live-observation semantic gate
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260825-139 Step 08 — Live-observation semantic gate；PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit.；The gate binds the canonical Task139 ledger and Current projection before running fixtures. It therefore rejects the split-brain claim that the Task138 second Codex dispatch was forbidden, rejects success language over an incomplete capsule, and rejects exit code zero without independent validator PASS. The exact-binding positive case requires task, executor…；主题：Covered boundaries；Historical Task138 wording remains allowed only under explicit historical classification.；Duplicate dispatch/attempt identities cannot overwrite the append-only ledger.
+- 完整阅读：[reports/operations/ignition-139-step08-live-observation-semantic-gate.md](../../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)
+
 <a id="reading-hr-930fdb2770ec5121"></a>
 ## Legacy compatibility report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
@@ -332,24 +353,3 @@
 - 1 分钟：The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-139 Step 00 — Baseline and observation-path audit；The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started.；The existing Current preflight was green before implementation: task-lineage, Current-state sync, volatile-fact registry, Current semantic gate, and two-pass Current projection determinism all passed. The focused live/ledger/Current test set ran 36 tests with 0 failures, 0 errors, and 0 skips.；主题：Historical fact that must become canonical；The Task138 second Codex dispatch was a real attempt. Its host result exceeded the available model context, and the receipt could not be recovered. Return code, structured result, lease receipt, and validator input were unavailable. The correct ceiling is therefore ATTEMPTHAPPENEDOBSERVATIONINCOMPLETE / REQUIRESRECONCILIATION; it is neither success nor a kno…；The current identity contract still described that same invocation as forbidden because no auth-source route was available. This is the Step139 split-brain to repair. Historical Task136–138 source records remain append-only and are not rewritten.
 - 完整阅读：[reports/operations/ignition-139-step00-baseline-audit.md](../../reports/operations/ignition-139-step00-baseline-audit.md)
-
-<a id="reading-hr-a8550987d2a41dab"></a>
-## 经典问题 benchmark 卡片：黎曼猜想
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：--- title: "点火框架经典问题测试" author: "之元" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：任务：G，经典问题 benchmark 初稿；用途：测试点火框架在各学科经典问题上的结构增益、重述风险、失败风险和 pending 条件。；注意：本文是初稿，不代表经典问题 benchmark 已最终完成。原稿中存在计数待复核与待补条目，索引文档会单独标注。；2026-07-29 历史纠偏： 本文保留历史候选。哥德尔类比、不同能标或门控模型失败不支持物理学或数学问题的“不可能”结论；涉及四力统一和量子引力的条目只能保持开放问题/候选类比，现行权威见 docs/foundation/physics-asset-correction-20260729.md。；--- title: "点火框架经典问题测试" author: "之元" date: "2026-07-07" ---；收到。现在开始执行任务 G：经典问题 benchmark 初稿。
-- 完整阅读：[outputs/getbrain/classic-problems-benchmark-draft-20260706.md](../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-
-<a id="reading-hr-a904c867936c20d9"></a>
-## OS Control Plane R2 gap audit — IGNITION-20260817-124
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The existing Supervisor R0 was run with two dependency-ready children, ready-a and ready-b, whose write targets do not overlap. Both were accepted and the episode reached EPISODECOMPLETEDVALIDATED, but the trace was strictly ready-a → ready-b and the maximum observed concurrency was 1. The curren… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：OS Control Plane R2 gap audit — IGNITION-20260817-124；主题：Baseline identity；Formal repository: Arvin-liu/when-systems-catch-fire；Execution baseline: origin/main=266426d7110af9ee921a020a46c3a0347aa364e9；Control source: Arvin-liu/1111, origin/relay/current=c06c556cf6e98e8d4f0b004a8c15cd19a64b3cae；Task branch: codex/ignition-124-os-control-plane-r2-20260817
-- 完整阅读：[reports/architecture/os-control-plane-r2-gap-audit.md](../../reports/architecture/os-control-plane-r2-gap-audit.md)
-
-<a id="reading-hr-a932eb17267d9709"></a>
-## 之元写作法
-`CURRENT_SCOPED_SOURCE` · `WRITING_PUBLICATION`
-- 1 分钟：English: Zhiyuan Writing Method 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：English: Zhiyuan Writing Method；Version: 0.5.0 current; 0.4.0 and 0.3.0 remain historical merged versions.；Status: CURRENTMERGEDL6CAPABILITY；Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.；本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。；“之元写作法”是方法名称；“心智层级跃迁”是其自 0.3.0 起的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
-- 完整阅读：[docs/publication/zhiyuan-writing-method.md](../../docs/publication/zhiyuan-writing-method.md)

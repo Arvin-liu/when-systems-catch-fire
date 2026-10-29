@@ -4,6 +4,106 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-ed60006ec664c67a"></a>
+## IGNITION-20260826-140 Step 13 — Adversarial / negative matrix
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-ED60006EC664C67A` · [reports/operations/ignition-140-step13-adversarial-matrix.md](../../reports/operations/ignition-140-step13-adversarial-matrix.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260826-140 Step 13 — Adversarial / negative matrix？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The required fail-closed matrix completed with 20 cases, 17 negative and 3 positive, all PASS. It started 0 live processes. The matrix exercises the architecture-impact correction, typed probe/transport/process scope, durable capture and completion gates, reconciliation unknown ceiling, executor-…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-140-step13-adversarial-matrix.md`, `140-STEP13-ADVERSARIAL-MATRIX`
+- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260826-140 Step 13 — Adversarial / negative matrix`, `ignition-140-step13-adversarial-matrix`
+
+<a id="asset-hr-ef6e1d0860ae3fef"></a>
+## 事实 Pending 总表（外部治理记录）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-EF6E1D0860AE3FEF` · [docs/governance/meta-protocol-reviews/factual-pending-register.md](../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+- **为什么产生：** 此来源记录了什么：事实 Pending 总表（外部治理记录）？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/meta-protocol-reviews/factual-pending-register.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `事实 Pending 总表（外部治理记录）`, `factual-pending-register`
+
+<a id="asset-hr-f03c0e16cbb5b9f8"></a>
+## IGNITION-20260907-160 progress
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F03C0E16CBB5B9F8` · [agent-results/IGNITION-20260907-160-progress.md](../../agent-results/IGNITION-20260907-160-progress.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260907-160 progress？
+- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **当前结果：** Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `agent-results/IGNITION-20260907-160-progress.md`, `202`
+- **演化历史：** 2026-09-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260907-160 progress`, `IGNITION-20260907-160-progress`
+
+<a id="asset-hr-f24a15ff21b59f0a"></a>
+## ARR R4 — Gap / Architecture-Candidate Gate
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F24A15FF21B59F0A` · [docs/architecture/arr-r4-gap-candidate-gate.md](../../docs/architecture/arr-r4-gap-candidate-gate.md)
+- **为什么产生：** 此来源记录了什么：ARR R4 — Gap / Architecture-Candidate Gate？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** This document specifies the architecture-candidate gate used by R4 to decide whether an observed weakness may be promoted from a lower-level limitation to an ARCHITECTURECANDIDATE warranting a future R5 design change. The default disposition is NOEVOLVE. R4 never implements a candidate and never…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/arr-r4-gap-candidate-gate.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `ARR R4 — Gap / Architecture-Candidate Gate`, `arr-r4-gap-candidate-gate`
+
+<a id="asset-hr-f25c6ad93d4e6b1c"></a>
+## IGNITION-140 Step 07 — Canonical Reconciliation Events
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F25C6AD93D4E6B1C` · [reports/operations/ignition-140-step07-canonical-reconciliation-events.md](../../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-140 Step 07 — Canonical Reconciliation Events？
+- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
+- **当前结果：** Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-140-step07-canonical-reconciliation-events.md`, `140-STEP07-CANONICAL-RECONCILIATION-EVENTS`
+- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-140 Step 07 — Canonical Reconciliation Events`, `ignition-140-step07-canonical-reconciliation-events`
+
 <a id="asset-hr-f29753586c28f9ec"></a>
 ## Governance License Scope
 

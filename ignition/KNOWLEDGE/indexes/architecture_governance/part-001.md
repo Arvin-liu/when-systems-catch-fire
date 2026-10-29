@@ -789,6 +789,11 @@
   - 可搜索名称：IMPLICIT-9FF37C23DCDFD42D / # 16. Charter Gate：负担、沉默与反浪漫化 / IMPLICIT-9FF37C23DCDFD42D
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
+- [# ARR R4 — Gap / Architecture-Candidate Gate](../../../docs/architecture/arr-r4-gap-candidate-gate.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-347949B70040F0A2 / # ARR R4 — Gap / Architecture-Candidate Gate / IMPLICIT-347949B70040F0A2
+  - 来源：`docs/architecture/arr-r4-gap-candidate-gate.md`
+  - 依赖：—；被引用：—
 - [# Chapter 05 Evidence Binder：Function OS 的能力边界与真实缺陷](../../../data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-05.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D0AED3E105E461C7 / # Chapter 05 Evidence Binder：Function OS 的能力边界与真实缺陷 / IMPLICIT-D0AED3E105E461C7
@@ -844,10 +849,20 @@
   - 可搜索名称：IMPLICIT-3815AF344E71FE01 / ## 3. 强断言门控 \(Strong-Claim Gates\) / IMPLICIT-3815AF344E71FE01
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
   - 依赖：—；被引用：—
+- [## 6. Architecture-candidate gate — default NO_EVOLVE](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-48172367D2E5886F / ## 6. Architecture-candidate gate — default NO_EVOLVE / IMPLICIT-48172367D2E5886F
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [## 6. Project registry / topology integration \(commit-5 obligation\)](../../../docs/architecture/adaptive-relational-runtime-interop.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F9DADBADFAC246E0 / ## 6. Project registry / topology integration \(commit-5 obligation\) / IMPLICIT-F9DADBADFAC246E0
   - 来源：`docs/architecture/adaptive-relational-runtime-interop.md`
+  - 依赖：—；被引用：—
+- [## ADR-R4-3 — Architecture-candidate gate defaults to NO_EVOLVE](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-450AC3BF77CEA206 / ## ADR-R4-3 — Architecture-candidate gate defaults to NO_EVOLVE / IMPLICIT-450AC3BF77CEA206
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
   - 依赖：—；被引用：—
 - [## Charter Gate / 价值宪章门](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -893,6 +908,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DCE6DA17F058B7B8 / ## 治理文档索引 / Governance Index / IMPLICIT-DCE6DA17F058B7B8
   - 来源：`docs/governance/README.md`
+  - 依赖：—；被引用：—
+- [### 1.1 Registry declaration must equal runtime behavior → ADR-R2-01](../../../docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B7471C9448B0206A / ### 1.1 Registry declaration must equal runtime behavior → ADR-R2-01 / IMPLICIT-B7471C9448B0206A
+  - 来源：`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
   - 依赖：—；被引用：—
 - [### Kernel — judgment and governance core](../../../docs/architecture/adaptive-relational-runtime.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1033,6 +1053,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2c6aa3b2f507666f / / `blob_sha` — i.e. the evidence is not anchored to an immutable Git object. The
   - 来源：`docs/multihistory/d2-i1-repair-architecture.md`
+  - 依赖：—；被引用：—
+- [/ `lower_cost_adapter_insufficient` conditions fail. R4 does not implement any](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-504e8c60a6b6c886 / / `lower_cost_adapter_insufficient` conditions fail. R4 does not implement any
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
   - 依赖：—；被引用：—
 - [/048 结果记录中涉及「material SHA」的表述已在 049 result 中按此口径统一。](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a4a308d7fe372aee / \[百轮成果台账\]\(../PUBLICATIONS/hundred-iteration-achievement-ledger.md\)：80 条可恢复记录，区分研究、纠正、实验、形式化、基础设施、维护、混合成果和开放项。
   - 来源：`RESULTS/RESEARCH-AND-ARTICLES.md`
-  - 依赖：—；被引用：—
-- [\[历史案例来源索引\]\(\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9c5468c6f6f37cfa / \[历史案例来源索引\]\(\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\[统一知识入口\]\(./KNOWLEDGE/README.md\)](../../../SUMMARY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ef2d898362d5ccd4 / \[统一知识入口\]\(./KNOWLEDGE/README.md\)
-  - 来源：`SUMMARY.md`
-  - 依赖：—；被引用：—
-- [\[统一资产卡\]\(../KNOWLEDGE/ASSET-CARDS.md\)](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3cf6603637c608ed / \[统一资产卡\]\(../KNOWLEDGE/ASSET-CARDS.md\)
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [\[证据制度库\]\(evidence_regime_library.md\)](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a3701a0bf254e7d3 / \[证据制度库\]\(evidence_regime_library.md\)
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)](../../../SUMMARY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-82b2e679e1ae4823 / \[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)
-  - 来源：`SUMMARY.md`
   - 依赖：—；被引用：—
