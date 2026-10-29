@@ -648,12 +648,13 @@ def test_ci_detached_head_branch_resolution_is_portable():
         ["git", "rev-parse", "--symbolic-full-name", "HEAD"],
         cwd=ROOT, capture_output=True, text=True,
     )
-    if (probe.stdout or "").strip() == "HEAD":
+    expected = (probe.stdout or "").strip()
+    if expected == "HEAD":
         pytest.skip("detached HEAD: local git fallback path not applicable here")
+    if expected.startswith("refs/heads/"):
+        expected = expected[len("refs/heads/"):]
     resolved = _resolve_repair_branch(env=env_local)
-    assert resolved is not None and resolved.startswith(
-        "repair/adaptive-relational-runtime-r2-positive-routing"
-    ), f"local git fallback failed: {resolved!r}"
+    assert resolved == expected, f"local git fallback returned {resolved!r}, expected {expected!r}"
 
 
 def test_exact_48_object_manifest_digest_retained():
