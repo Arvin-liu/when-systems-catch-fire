@@ -1,0 +1,45 @@
+{
+  "schema_version": "toolbox-declared-permission-delta-route-evidence-r0",
+  "tool_id": "governance.preflight_declared_permission_delta",
+  "tool_version": "0.1.0",
+  "route_profile_path": "ignition/data/operations/toolbox-declared-permission-delta-route-profile-r0.json",
+  "route_profile_sha256": "7a24cc56e1099463dbe7cbb915f6d819caa8ba3c53a01490b25c54ed9c786b39",
+  "routing_contract_sha256": "ba2ac2c32b92449e02a920ea0e1d1893c3726f3329ccd83705205dbb5d28dcf6",
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "governance.preflight_declared_permission_delta",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "unmet_outputs": [
+        "Exact string-set differences listing caller-declared (capability, scope) grants added to and removed from the candidate snapshot.",
+        "Review-required status and explicit source-authenticity, effective-policy, enforcement, permission-grant, and Owner-authorization ceilings."
+      ],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "governance.preflight_declared_permission_delta"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "governance.preflight_declared_permission_delta"
+      ],
+      "relevant_rejections": [],
+      "unmet_outputs": [],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    }
+  ],
+  "claim_ceiling": "Local planner proposals for the declared type contract only; default remains off and explicit allowlisting proposes one candidate. No permission snapshot is applied, no provider call occurs, the candidate is not invoked, and execution is not authorized."
+}

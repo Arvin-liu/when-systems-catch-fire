@@ -1,0 +1,37 @@
+{
+  "schema_version": "toolbox-failure-anchored-recovery-c1-evidence-r0",
+  "tool_id": "maintenance.preflight_failure_anchored_recovery",
+  "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "performance_and_cost_comparison_status": "COMPARISON_UNKNOWN",
+  "task_scope": "One preserved failed-run receipt plus a caller-authored diagnosis and recovery proposal; gate evidence links, repeated identical attempts, permission/budget deltas, exact-signature verification, and stop conditions.",
+  "compared_tool_ids": [
+    "maintenance.preflight_governed_improvement_transition",
+    "collaboration.validate_portable_research_episode"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_governed_improvement_transition.py",
+    "ignition/tools/toolbox_portable_research_episode.py",
+    "ignition/tools/failure_case_evidence_gate.py"
+  ],
+  "matched_real_task": {
+    "task_ref": "PR #264 run 40064357022, job 120784357732, exact head 8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+    "failure": "CURRENT_STATE_SYNC_INVALID: current-facts.json is stale relative to its declared canonical sources",
+    "new_tool_result": "READY_FOR_HUMAN_REVIEW",
+    "recovery_executed": false,
+    "execution_authorized": false,
+    "retry_authorized": false
+  },
+  "findings": [
+    "The failure-case evidence gate checks prerequisites for claiming a reproduced implementation defect; it does not accept a bounded recovery plan or gate retry instructions.",
+    "The portable research episode validator checks caller-declared artifact versions, execution/run relations, reviews, omissions, and fork mappings; it does not connect a diagnosis and proposed recovery instruction to one failure signature or suppress an unchanged failed retry.",
+    "The governed improvement transition preflight checks aggregate predecessor/successor evaluator, quality, cost, failure, authority, rollback, and next-round declarations; it does not process one failed task run into evidence-linked recovery guidance.",
+    "The new tool retains the original failure, requires evidence-linked observations or labeled hypotheses, blocks missing verification/stops, unknown or expanded budgets, permission changes, and repeated unchanged failed actions, and emits only a human-review packet.",
+    "The real-task result is a single local preflight over caller-supplied public Actions evidence; it is not an outcome trial. Relative completion quality, reliability, operator effort, latency, and monetary cost remain unknown."
+  ],
+  "unique_remaining_use_cases": [
+    "Preflight a specific proposed retry or recovery using preserved failure evidence, exact signature, labeled diagnosis, verification, and explicit stop rules without invoking it."
+  ],
+  "replacement_candidates": [],
+  "retirement_decision": "NONE",
+  "next_low_cost_comparison": "If an actual recovery is separately approved and executed, compare the retained failure signature, verifier result, operator effort, and scope/permission effects against a manual review of the same failure. Do not claim performance or cost superiority from this single preflight."
+}

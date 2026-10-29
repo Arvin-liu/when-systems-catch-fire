@@ -1,0 +1,148 @@
+{
+  "schema_version": "toolbox-actions-interval-union-real-task-r0",
+  "source_binding_path": "ignition/data/operations/toolbox-actions-interval-union-source-binding-r0.json",
+  "input_path": "ignition/tests/fixtures/toolbox-actions-repeated-step-analysis/pr264-four-runs-r0.json",
+  "input_sha256": "cf2a122311527c761aa36f491ea7bd22badc7049a3e972db23b97ef914a18676",
+  "workflow_id": 311987523,
+  "workflow_path": ".github/workflows/foundation-validation.yml",
+  "event": "pull_request",
+  "pull_request_number": 264,
+  "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "head_shas": [
+    "d21d63f8703052c83ee787da5b3bb07321df0bca",
+    "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+    "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+    "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8"
+  ],
+  "output": {
+    "schema_version": "github-actions-interval-union-r0",
+    "receipt_status": "PARTIAL_OBSERVED_INTERVAL_SET",
+    "input_sha256": "cf2a122311527c761aa36f491ea7bd22badc7049a3e972db23b97ef914a18676",
+    "tool_sha256": "a07ede899a02beeb3a1b7027eb877b749ee6e8909c5969c63d24c00c400b6191",
+    "source_binding": "CALLER_SUPPLIED_UNAUTHENTICATED_SNAPSHOTS",
+    "comparison_context": {
+      "workflow_id": 311987523,
+      "path": ".github/workflows/foundation-validation.yml",
+      "event": "pull_request",
+      "pull_request_number": 264,
+      "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+    },
+    "summary": {
+      "run_count": 4,
+      "job_lists_complete_for_all_runs": true,
+      "job_interval_coverage_complete_for_declared_jobs": false,
+      "timestamp_anomaly_count": 2,
+      "job_count": 14,
+      "jobs_with_observed_intervals": 12,
+      "jobs_without_observed_intervals": 2,
+      "job_interval_coverage_complete_for_supplied_rows": false,
+      "sum_observed_job_interval_seconds": 26972.0,
+      "union_observed_job_interval_seconds": 26972.0,
+      "excess_overlap_seconds": 0.0,
+      "maximum_concurrent_observed_jobs": 1,
+      "interval_semantics": "OBSERVED_JOB_WALL_INTERVALS_ONLY; UNION_AND_SUM_ARE_NOT_BILLABLE_MINUTES"
+    },
+    "runs": [
+      {
+        "run_id": 39889835854,
+        "run_attempt": 1,
+        "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+        "run_conclusion": "failure",
+        "job_list_complete": true,
+        "job_count": 4,
+        "jobs_with_observed_intervals": 4,
+        "jobs_without_observed_intervals": 0,
+        "job_interval_coverage_complete_for_supplied_rows": true,
+        "sum_observed_job_interval_seconds": 6539.0,
+        "union_observed_job_interval_seconds": 6539.0,
+        "excess_overlap_seconds": 0.0,
+        "maximum_concurrent_observed_jobs": 1,
+        "interval_semantics": "OBSERVED_JOB_WALL_INTERVALS_ONLY; UNION_AND_SUM_ARE_NOT_BILLABLE_MINUTES",
+        "job_interval_coverage_complete_for_declared_jobs": true
+      },
+      {
+        "run_id": 39899735096,
+        "run_attempt": 1,
+        "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+        "run_conclusion": "failure",
+        "job_list_complete": true,
+        "job_count": 4,
+        "jobs_with_observed_intervals": 3,
+        "jobs_without_observed_intervals": 1,
+        "job_interval_coverage_complete_for_supplied_rows": false,
+        "sum_observed_job_interval_seconds": 6723.0,
+        "union_observed_job_interval_seconds": 6723.0,
+        "excess_overlap_seconds": 0.0,
+        "maximum_concurrent_observed_jobs": 1,
+        "interval_semantics": "OBSERVED_JOB_WALL_INTERVALS_ONLY; UNION_AND_SUM_ARE_NOT_BILLABLE_MINUTES",
+        "job_interval_coverage_complete_for_declared_jobs": false
+      },
+      {
+        "run_id": 39910840268,
+        "run_attempt": 1,
+        "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+        "run_conclusion": "success",
+        "job_list_complete": true,
+        "job_count": 4,
+        "jobs_with_observed_intervals": 3,
+        "jobs_without_observed_intervals": 1,
+        "job_interval_coverage_complete_for_supplied_rows": false,
+        "sum_observed_job_interval_seconds": 11712.0,
+        "union_observed_job_interval_seconds": 11712.0,
+        "excess_overlap_seconds": 0.0,
+        "maximum_concurrent_observed_jobs": 1,
+        "interval_semantics": "OBSERVED_JOB_WALL_INTERVALS_ONLY; UNION_AND_SUM_ARE_NOT_BILLABLE_MINUTES",
+        "job_interval_coverage_complete_for_declared_jobs": false
+      },
+      {
+        "run_id": 40064357026,
+        "run_attempt": 1,
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "run_conclusion": "cancelled",
+        "job_list_complete": true,
+        "job_count": 2,
+        "jobs_with_observed_intervals": 2,
+        "jobs_without_observed_intervals": 0,
+        "job_interval_coverage_complete_for_supplied_rows": true,
+        "sum_observed_job_interval_seconds": 1998.0,
+        "union_observed_job_interval_seconds": 1998.0,
+        "excess_overlap_seconds": 0.0,
+        "maximum_concurrent_observed_jobs": 1,
+        "interval_semantics": "OBSERVED_JOB_WALL_INTERVALS_ONLY; UNION_AND_SUM_ARE_NOT_BILLABLE_MINUTES",
+        "job_interval_coverage_complete_for_declared_jobs": true
+      }
+    ],
+    "timestamp_anomalies": [
+      {
+        "snapshot_path": "snapshots[1].jobs_response.jobs[3]",
+        "job_id": 120270681927,
+        "job_name": "Final main SHA witness",
+        "original_started_at": "2026-10-23T06:11:58Z",
+        "original_completed_at": "2026-10-23T06:11:57Z",
+        "analysis_started_at": null,
+        "analysis_completed_at": null,
+        "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB"
+      },
+      {
+        "snapshot_path": "snapshots[2].jobs_response.jobs[3]",
+        "job_id": 120345454366,
+        "job_name": "Final main SHA witness",
+        "original_started_at": "2026-10-23T09:35:20Z",
+        "original_completed_at": "2026-10-23T09:35:19Z",
+        "analysis_started_at": null,
+        "analysis_completed_at": null,
+        "handling": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB"
+      }
+    ],
+    "non_claims": {
+      "github_source_authenticated": false,
+      "billable_minutes_calculated": false,
+      "runner_capacity_or_resource_contention_inferred": false,
+      "avoidable_work_attributed": false,
+      "cash_cost_estimated": false,
+      "required_check_satisfaction_interpreted": false,
+      "release_authorized": false
+    },
+    "claim_ceiling": "Union, sum, and multiplicity overlap of timezone-aware job intervals present in the caller-supplied snapshots. Missing intervals and incomplete job lists remain explicit; no source authentication, billable usage, runner contention, avoidable-work attribution, CI sufficiency, or release authorization is established."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "toolbox-selected-index-search-result-merge-c1-evidence-r1",
+  "tool_id": "research.merge_selected_index_search_results",
+  "tool_version": "0.2.0",
+  "evidence_type": "SAME_INPUT_PAIRED_FUNCTIONAL_EXTENSION_AND_RETIREMENT_COMPARISON",
+  "compared_tool_ids": [
+    "research.search_crossref_query",
+    "research.search_openalex_query",
+    "research.search_europe_pmc_query",
+    "research.compare_publication_metadata_snapshots",
+    "research.merge_selected_index_search_results"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_crossref_query_search.py",
+    "ignition/tools/toolbox_openalex_query_search.py",
+    "ignition/tools/toolbox_europe_pmc_query_search.py",
+    "ignition/tools/toolbox_compare_publication_metadata.py",
+    "ignition/tools/toolbox_merge_selected_index_search_results.py"
+  ],
+  "comparison_scope": "Same-input offline replay of one retained ten-row Crossref/OpenAlex task using the prior 0.1.0 output and 0.2.0 implementation; functional-contract comparison against the provider adapters and known-DOI comparator. No human decision-quality, broad reliability, latency, analyst-time, or monetary-cost benchmark was performed.",
+  "baseline": {
+    "tool_version": "0.1.0",
+    "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+    "output_sha256": "d717d8ab414cc2acdb60d0316988b0ea8ae599301daad70ab0248ead44a5300a",
+    "exact_doi_groups": 0,
+    "unclustered_records": 10,
+    "title_doi_review_candidates": 0
+  },
+  "candidate": {
+    "tool_version": "0.2.0",
+    "input_sha256": "a9fd259f96b523fb14ac7c2f59b3e1dcc6ede0b8b5571449d44fcb74bfb29cff",
+    "output_sha256": "af25dcfac9dbee1edb54ff69fe17da8ed6a2130d3d02a59139510fb8e2676f8d",
+    "exact_doi_groups": 0,
+    "unclustered_records": 10,
+    "title_doi_review_candidates": 1,
+    "review_member_count": 4,
+    "review_dois": [
+      "10.62830/mmj1-04-6",
+      "10.62830/mmj1-04-6a",
+      "10.62830/mmj1-04-6b",
+      "10.62830/mmj1-4-1a"
+    ]
+  },
+  "finding": "The paired output preserves the exact-DOI cluster and unclustered counts while adding one review-only warning for four records sharing an identical normalized title with four distinct DOIs. No rows are merged from title equality.",
+  "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "replacement_and_retirement": {
+    "decision": "Keep the exact DOI grouper as the 0.2.0 in-place specialization; retain provider adapters and the known-DOI comparator because their retrieval and pair-comparison use cases remain distinct.",
+    "replacement_candidates": [],
+    "retired_tools": []
+  },
+  "claim_ceiling": "One bounded same-input functional comparison. The new review cue did not independently establish duplicate identity, metadata correctness, improved human decisions, source authenticity, broad quality, or cost savings.",
+  "evidence_refs": [
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-input-r0.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-output-r1.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r0.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-real-task-r1.json",
+    "ignition/data/operations/toolbox-selected-index-search-result-merge-source-binding-r0.json"
+  ]
+}

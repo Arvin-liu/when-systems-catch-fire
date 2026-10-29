@@ -1,0 +1,2495 @@
+{
+  "snapshots": [
+    {
+      "workflow_run": {
+        "id": 39889835854,
+        "run_attempt": 1,
+        "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-10-23T02:29:23Z",
+        "workflow_id": 311987523,
+        "path": ".github/workflows/foundation-validation.yml",
+        "created_at": "2026-10-23T02:29:23Z",
+        "updated_at": "2026-10-23T04:18:29Z",
+        "pull_requests": [
+          {
+            "number": 264,
+            "base": {
+              "sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+            }
+          }
+        ]
+      },
+      "jobs_response": {
+        "total_count": 4,
+        "jobs": [
+          {
+            "id": 120206691828,
+            "run_id": 39889835854,
+            "run_attempt": 1,
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "name": "route",
+            "status": "completed",
+            "conclusion": "failure",
+            "started_at": "2026-10-23T02:29:25Z",
+            "completed_at": "2026-10-23T03:55:44Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T02:29:26Z",
+                "completed_at": "2026-10-23T02:29:27Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T02:29:27Z",
+                "completed_at": "2026-10-23T02:30:11Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T02:30:11Z",
+                "completed_at": "2026-10-23T02:30:11Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T02:30:11Z",
+                "completed_at": "2026-10-23T02:30:22Z"
+              },
+              {
+                "number": 5,
+                "name": "Resolve exact component and consumer closure",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T02:30:22Z",
+                "completed_at": "2026-10-23T02:30:22Z"
+              },
+              {
+                "number": 6,
+                "name": "Set up Lean for selected proof consumers",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T02:30:22Z",
+                "completed_at": "2026-10-23T02:30:29Z"
+              },
+              {
+                "number": 7,
+                "name": "Run selected component and consumer tests",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T02:30:29Z",
+                "completed_at": "2026-10-23T03:55:41Z"
+              },
+              {
+                "number": 8,
+                "name": "Verify exact plan and selected-target receipt",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T03:55:41Z",
+                "completed_at": "2026-10-23T03:55:42Z"
+              },
+              {
+                "number": 9,
+                "name": "Record exact full-regression fallback when no target closure is available",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T03:55:42Z",
+                "completed_at": "2026-10-23T03:55:42Z"
+              },
+              {
+                "number": 10,
+                "name": "Preserve exact plan and selected-test receipt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:55:42Z",
+                "completed_at": "2026-10-23T03:55:43Z"
+              },
+              {
+                "number": 19,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T03:55:43Z",
+                "completed_at": "2026-10-23T03:55:43Z"
+              },
+              {
+                "number": 20,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:55:43Z",
+                "completed_at": "2026-10-23T03:55:43Z"
+              },
+              {
+                "number": 21,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:55:43Z",
+                "completed_at": "2026-10-23T03:55:43Z"
+              }
+            ]
+          },
+          {
+            "id": 120231505937,
+            "run_id": 39889835854,
+            "run_attempt": 1,
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "name": "Full Foundation regression",
+            "status": "completed",
+            "conclusion": "failure",
+            "started_at": "2026-10-23T03:55:46Z",
+            "completed_at": "2026-10-23T04:18:14Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:55:47Z",
+                "completed_at": "2026-10-23T03:55:48Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:55:48Z",
+                "completed_at": "2026-10-23T03:56:32Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:56:32Z",
+                "completed_at": "2026-10-23T03:56:32Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:56:32Z",
+                "completed_at": "2026-10-23T03:56:43Z"
+              },
+              {
+                "number": 5,
+                "name": "Bind full regression to the exact validation commit",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:56:43Z",
+                "completed_at": "2026-10-23T03:56:44Z"
+              },
+              {
+                "number": 6,
+                "name": "Run leanprover/lean-action@v1",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:56:44Z",
+                "completed_at": "2026-10-23T03:56:51Z"
+              },
+              {
+                "number": 7,
+                "name": "Run cd formal/lean && lake env lean Foundation.lean",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:56:51Z",
+                "completed_at": "2026-10-23T03:56:51Z"
+              },
+              {
+                "number": 8,
+                "name": "Run python3 tools/foundation/adjudicate_core.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:56:51Z",
+                "completed_at": "2026-10-23T03:57:35Z"
+              },
+              {
+                "number": 9,
+                "name": "Run python3 tools/foundation/migrate_legacy.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T03:57:35Z",
+                "completed_at": "2026-10-23T03:57:38Z"
+              },
+              {
+                "number": 10,
+                "name": "Run python3 tools/foundation/validate_foundation.py",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T03:57:38Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 11,
+                "name": "Run python3 tools/foundation/build_function_asset_census.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 12,
+                "name": "Run python3 tools/foundation/adjudicate_function_assets.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 13,
+                "name": "Run python3 tools/foundation/validate_claim_governance.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 14,
+                "name": "Run python3 tools/foundation/validate_function_asset_closure.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 15,
+                "name": "Run python3 tools/foundation/run_function_asset_math_checks.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 16,
+                "name": "Run python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 17,
+                "name": "Run python3 tools/foundation/validate_nonfunction_claim_closure.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 18,
+                "name": "Validate human result census and self-correction products",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 19,
+                "name": "Regression — knowledge-experience clone-independence (task 102)",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 20,
+                "name": "Run python3 tools/foundation/verify_core_claims.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 21,
+                "name": "Run python3 tools/foundation/verify_079.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 22,
+                "name": "Run python3 tools/foundation/validate_080_adjudications.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 23,
+                "name": "Validate synchronization registry and iteration closures",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 24,
+                "name": "Validate typed change-propagation products",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 25,
+                "name": "Validate Q32I Phase E candidate",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 26,
+                "name": "Validate registry-derived system map",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 27,
+                "name": "Validate homepage architecture projection provenance",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 28,
+                "name": "Validate stage snapshot registry and deterministic homepage projection",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 29,
+                "name": "Run instance-level stage snapshot responsibility actor cases",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 30,
+                "name": "Run python3 tools/validate_human_front_door.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 31,
+                "name": "Validate Language-Thought Logic Plane",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 32,
+                "name": "Validate epistemic governance referential kernel",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 33,
+                "name": "Validate AI-first project state delta log",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 34,
+                "name": "Run python3 -m unittest tests.foundation.test_foundation",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 35,
+                "name": "Run python3 -m unittest tests.foundation.test_claim_governance",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 36,
+                "name": "Run python3 -m unittest tests.foundation.test_function_asset_closure",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 37,
+                "name": "Run python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 38,
+                "name": "Run python3 -m unittest tests.test_iteration_sync -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 39,
+                "name": "Run python3 -m unittest tests.test_human_front_door -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 40,
+                "name": "Run python3 -m unittest tests.test_change_propagation -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 41,
+                "name": "Run python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 42,
+                "name": "Run python3 -m unittest tests.test_stage_snapshot_publication -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 43,
+                "name": "Run python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 44,
+                "name": "Run python3 -m unittest tests.test_phase_e_candidate -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 45,
+                "name": "Run python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 46,
+                "name": "Run python3 -m unittest tests.test_production_execution_authority -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 47,
+                "name": "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 48,
+                "name": "Task 106 — fail-closed propagation reconciliation",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 49,
+                "name": "Confirm full regression source remained unchanged",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 97,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 98,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              },
+              {
+                "number": 99,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:18:12Z",
+                "completed_at": "2026-10-23T04:18:12Z"
+              }
+            ]
+          },
+          {
+            "id": 120237865937,
+            "run_id": 39889835854,
+            "run_attempt": 1,
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "name": "foundation-validation",
+            "status": "completed",
+            "conclusion": "failure",
+            "started_at": "2026-10-23T04:18:16Z",
+            "completed_at": "2026-10-23T04:18:28Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:18:17Z",
+                "completed_at": "2026-10-23T04:18:17Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:18:17Z",
+                "completed_at": "2026-10-23T04:18:26Z"
+              },
+              {
+                "number": 3,
+                "name": "Enforce the selected or full validation result",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T04:18:26Z",
+                "completed_at": "2026-10-23T04:18:26Z"
+              },
+              {
+                "number": 6,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:18:26Z",
+                "completed_at": "2026-10-23T04:18:26Z"
+              },
+              {
+                "number": 7,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:18:26Z",
+                "completed_at": "2026-10-23T04:18:26Z"
+              }
+            ]
+          },
+          {
+            "id": 120237936834,
+            "run_id": 39889835854,
+            "run_attempt": 1,
+            "head_sha": "d21d63f8703052c83ee787da5b3bb07321df0bca",
+            "name": "Final main SHA witness",
+            "status": "completed",
+            "conclusion": "skipped",
+            "started_at": "2026-10-23T04:18:29Z",
+            "completed_at": "2026-10-23T04:18:29Z",
+            "steps": []
+          }
+        ]
+      }
+    },
+    {
+      "workflow_run": {
+        "id": 39899735096,
+        "run_attempt": 1,
+        "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-10-23T04:19:47Z",
+        "workflow_id": 311987523,
+        "path": ".github/workflows/foundation-validation.yml",
+        "created_at": "2026-10-23T04:19:47Z",
+        "updated_at": "2026-10-23T06:11:58Z",
+        "pull_requests": [
+          {
+            "number": 264,
+            "base": {
+              "sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+            }
+          }
+        ]
+      },
+      "jobs_response": {
+        "total_count": 4,
+        "jobs": [
+          {
+            "id": 120238302350,
+            "run_id": 39899735096,
+            "run_attempt": 1,
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "name": "foundation-validation",
+            "status": "completed",
+            "conclusion": "failure",
+            "started_at": "2026-10-23T04:19:50Z",
+            "completed_at": "2026-10-23T05:49:39Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:19:51Z",
+                "completed_at": "2026-10-23T04:19:52Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:19:52Z",
+                "completed_at": "2026-10-23T04:20:37Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:20:37Z",
+                "completed_at": "2026-10-23T04:20:38Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:20:38Z",
+                "completed_at": "2026-10-23T04:20:47Z"
+              },
+              {
+                "number": 5,
+                "name": "Resolve exact component and consumer closure",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:20:47Z",
+                "completed_at": "2026-10-23T04:20:48Z"
+              },
+              {
+                "number": 6,
+                "name": "Set up Lean for selected proof consumers",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T04:20:48Z",
+                "completed_at": "2026-10-23T04:20:57Z"
+              },
+              {
+                "number": 7,
+                "name": "Run selected component and consumer tests",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T04:20:57Z",
+                "completed_at": "2026-10-23T05:49:33Z"
+              },
+              {
+                "number": 8,
+                "name": "Verify exact plan and selected-target receipt",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T05:49:33Z",
+                "completed_at": "2026-10-23T05:49:34Z"
+              },
+              {
+                "number": 9,
+                "name": "Record exact full-regression fallback when no target closure is available",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T05:49:34Z",
+                "completed_at": "2026-10-23T05:49:34Z"
+              },
+              {
+                "number": 10,
+                "name": "Preserve exact plan and selected-test receipt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:49:34Z",
+                "completed_at": "2026-10-23T05:49:36Z"
+              },
+              {
+                "number": 19,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T05:49:36Z",
+                "completed_at": "2026-10-23T05:49:36Z"
+              },
+              {
+                "number": 20,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:49:36Z",
+                "completed_at": "2026-10-23T05:49:36Z"
+              },
+              {
+                "number": 21,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:49:36Z",
+                "completed_at": "2026-10-23T05:49:36Z"
+              }
+            ]
+          },
+          {
+            "id": 120263999459,
+            "run_id": 39899735096,
+            "run_attempt": 1,
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "name": "Full Foundation regression",
+            "status": "completed",
+            "conclusion": "failure",
+            "started_at": "2026-10-23T05:49:41Z",
+            "completed_at": "2026-10-23T06:11:42Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:49:42Z",
+                "completed_at": "2026-10-23T05:49:44Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:49:44Z",
+                "completed_at": "2026-10-23T05:50:28Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:50:28Z",
+                "completed_at": "2026-10-23T05:50:29Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:50:29Z",
+                "completed_at": "2026-10-23T05:50:38Z"
+              },
+              {
+                "number": 5,
+                "name": "Bind full regression to the exact validation commit",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:50:38Z",
+                "completed_at": "2026-10-23T05:50:39Z"
+              },
+              {
+                "number": 6,
+                "name": "Run leanprover/lean-action@v1",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:50:39Z",
+                "completed_at": "2026-10-23T05:50:46Z"
+              },
+              {
+                "number": 7,
+                "name": "Run cd formal/lean && lake env lean Foundation.lean",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:50:46Z",
+                "completed_at": "2026-10-23T05:50:47Z"
+              },
+              {
+                "number": 8,
+                "name": "Run python3 tools/foundation/adjudicate_core.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:50:47Z",
+                "completed_at": "2026-10-23T05:51:32Z"
+              },
+              {
+                "number": 9,
+                "name": "Run python3 tools/foundation/migrate_legacy.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T05:51:32Z",
+                "completed_at": "2026-10-23T05:51:34Z"
+              },
+              {
+                "number": 10,
+                "name": "Run python3 tools/foundation/validate_foundation.py",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T05:51:34Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 11,
+                "name": "Run python3 tools/foundation/build_function_asset_census.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 12,
+                "name": "Run python3 tools/foundation/adjudicate_function_assets.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 13,
+                "name": "Run python3 tools/foundation/validate_claim_governance.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 14,
+                "name": "Run python3 tools/foundation/validate_function_asset_closure.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 15,
+                "name": "Run python3 tools/foundation/run_function_asset_math_checks.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 16,
+                "name": "Run python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 17,
+                "name": "Run python3 tools/foundation/validate_nonfunction_claim_closure.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 18,
+                "name": "Validate human result census and self-correction products",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 19,
+                "name": "Regression — knowledge-experience clone-independence (task 102)",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 20,
+                "name": "Run python3 tools/foundation/verify_core_claims.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 21,
+                "name": "Run python3 tools/foundation/verify_079.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 22,
+                "name": "Run python3 tools/foundation/validate_080_adjudications.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 23,
+                "name": "Validate synchronization registry and iteration closures",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 24,
+                "name": "Validate typed change-propagation products",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 25,
+                "name": "Validate Q32I Phase E candidate",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 26,
+                "name": "Validate registry-derived system map",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 27,
+                "name": "Validate homepage architecture projection provenance",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 28,
+                "name": "Validate stage snapshot registry and deterministic homepage projection",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 29,
+                "name": "Run instance-level stage snapshot responsibility actor cases",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 30,
+                "name": "Run python3 tools/validate_human_front_door.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 31,
+                "name": "Validate Language-Thought Logic Plane",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 32,
+                "name": "Validate epistemic governance referential kernel",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 33,
+                "name": "Validate AI-first project state delta log",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 34,
+                "name": "Run python3 -m unittest tests.foundation.test_foundation",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 35,
+                "name": "Run python3 -m unittest tests.foundation.test_claim_governance",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 36,
+                "name": "Run python3 -m unittest tests.foundation.test_function_asset_closure",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 37,
+                "name": "Run python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 38,
+                "name": "Run python3 -m unittest tests.test_iteration_sync -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 39,
+                "name": "Run python3 -m unittest tests.test_human_front_door -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 40,
+                "name": "Run python3 -m unittest tests.test_change_propagation -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 41,
+                "name": "Run python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 42,
+                "name": "Run python3 -m unittest tests.test_stage_snapshot_publication -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 43,
+                "name": "Run python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 44,
+                "name": "Run python3 -m unittest tests.test_phase_e_candidate -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 45,
+                "name": "Run python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 46,
+                "name": "Run python3 -m unittest tests.test_production_execution_authority -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 47,
+                "name": "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 48,
+                "name": "Task 106 — fail-closed propagation reconciliation",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 49,
+                "name": "Confirm full regression source remained unchanged",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 97,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 98,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:39Z"
+              },
+              {
+                "number": 99,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:11:39Z",
+                "completed_at": "2026-10-23T06:11:40Z"
+              }
+            ]
+          },
+          {
+            "id": 120270605586,
+            "run_id": 39899735096,
+            "run_attempt": 1,
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "name": "foundation-validation",
+            "status": "completed",
+            "conclusion": "failure",
+            "started_at": "2026-10-23T06:11:44Z",
+            "completed_at": "2026-10-23T06:11:57Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:11:45Z",
+                "completed_at": "2026-10-23T06:11:46Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:11:46Z",
+                "completed_at": "2026-10-23T06:11:55Z"
+              },
+              {
+                "number": 3,
+                "name": "Enforce the selected or full validation result",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-23T06:11:55Z",
+                "completed_at": "2026-10-23T06:11:55Z"
+              },
+              {
+                "number": 6,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:11:55Z",
+                "completed_at": "2026-10-23T06:11:55Z"
+              },
+              {
+                "number": 7,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:11:55Z",
+                "completed_at": "2026-10-23T06:11:55Z"
+              }
+            ]
+          },
+          {
+            "id": 120270681927,
+            "run_id": 39899735096,
+            "run_attempt": 1,
+            "head_sha": "d124d84273eeb142fdf2a880acd3ae6d5a29d0ba",
+            "name": "Final main SHA witness",
+            "status": "completed",
+            "conclusion": "skipped",
+            "started_at": "2026-10-23T06:11:58Z",
+            "completed_at": "2026-10-23T06:11:57Z",
+            "steps": []
+          }
+        ]
+      }
+    },
+    {
+      "workflow_run": {
+        "id": 39910840268,
+        "run_attempt": 1,
+        "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-10-23T06:20:01Z",
+        "workflow_id": 311987523,
+        "path": ".github/workflows/foundation-validation.yml",
+        "created_at": "2026-10-23T06:20:01Z",
+        "updated_at": "2026-10-23T09:35:20Z",
+        "pull_requests": [
+          {
+            "number": 264,
+            "base": {
+              "sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+            }
+          }
+        ]
+      },
+      "jobs_response": {
+        "total_count": 4,
+        "jobs": [
+          {
+            "id": 120273231745,
+            "run_id": 39910840268,
+            "run_attempt": 1,
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "name": "foundation-validation-route",
+            "status": "completed",
+            "conclusion": "success",
+            "started_at": "2026-10-23T06:20:03Z",
+            "completed_at": "2026-10-23T07:50:34Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:20:04Z",
+                "completed_at": "2026-10-23T06:20:05Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:20:05Z",
+                "completed_at": "2026-10-23T06:20:50Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:20:50Z",
+                "completed_at": "2026-10-23T06:20:50Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:20:50Z",
+                "completed_at": "2026-10-23T06:21:01Z"
+              },
+              {
+                "number": 5,
+                "name": "Resolve exact component and consumer closure",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:21:01Z",
+                "completed_at": "2026-10-23T06:21:02Z"
+              },
+              {
+                "number": 6,
+                "name": "Set up Lean for selected proof consumers",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:21:02Z",
+                "completed_at": "2026-10-23T06:21:10Z"
+              },
+              {
+                "number": 7,
+                "name": "Run selected component and consumer tests",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T06:21:10Z",
+                "completed_at": "2026-10-23T07:50:30Z"
+              },
+              {
+                "number": 8,
+                "name": "Verify exact plan and selected-target receipt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:50:30Z",
+                "completed_at": "2026-10-23T07:50:31Z"
+              },
+              {
+                "number": 9,
+                "name": "Record exact full-regression fallback when no target closure is available",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-23T07:50:31Z",
+                "completed_at": "2026-10-23T07:50:31Z"
+              },
+              {
+                "number": 10,
+                "name": "Preserve exact plan and selected-test receipt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:50:31Z",
+                "completed_at": "2026-10-23T07:50:32Z"
+              },
+              {
+                "number": 19,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:50:32Z",
+                "completed_at": "2026-10-23T07:50:32Z"
+              },
+              {
+                "number": 20,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:50:32Z",
+                "completed_at": "2026-10-23T07:50:33Z"
+              },
+              {
+                "number": 21,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:50:33Z",
+                "completed_at": "2026-10-23T07:50:33Z"
+              }
+            ]
+          },
+          {
+            "id": 120304249232,
+            "run_id": 39910840268,
+            "run_attempt": 1,
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "name": "Full Foundation regression",
+            "status": "completed",
+            "conclusion": "success",
+            "started_at": "2026-10-23T07:50:36Z",
+            "completed_at": "2026-10-23T09:35:04Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:50:37Z",
+                "completed_at": "2026-10-23T07:50:40Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:50:40Z",
+                "completed_at": "2026-10-23T07:51:08Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:08Z",
+                "completed_at": "2026-10-23T07:51:09Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:09Z",
+                "completed_at": "2026-10-23T07:51:17Z"
+              },
+              {
+                "number": 5,
+                "name": "Bind full regression to the exact validation commit",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:17Z",
+                "completed_at": "2026-10-23T07:51:18Z"
+              },
+              {
+                "number": 6,
+                "name": "Run leanprover/lean-action@v1",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:18Z",
+                "completed_at": "2026-10-23T07:51:25Z"
+              },
+              {
+                "number": 7,
+                "name": "Run cd formal/lean && lake env lean Foundation.lean",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:25Z",
+                "completed_at": "2026-10-23T07:51:25Z"
+              },
+              {
+                "number": 8,
+                "name": "Run python3 tools/foundation/adjudicate_core.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:25Z",
+                "completed_at": "2026-10-23T07:51:55Z"
+              },
+              {
+                "number": 9,
+                "name": "Run python3 tools/foundation/migrate_legacy.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:55Z",
+                "completed_at": "2026-10-23T07:51:57Z"
+              },
+              {
+                "number": 10,
+                "name": "Run python3 tools/foundation/validate_foundation.py",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T07:51:57Z",
+                "completed_at": "2026-10-23T08:03:38Z"
+              },
+              {
+                "number": 11,
+                "name": "Run python3 tools/foundation/build_function_asset_census.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:03:38Z",
+                "completed_at": "2026-10-23T08:04:22Z"
+              },
+              {
+                "number": 12,
+                "name": "Run python3 tools/foundation/adjudicate_function_assets.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:04:22Z",
+                "completed_at": "2026-10-23T08:04:25Z"
+              },
+              {
+                "number": 13,
+                "name": "Run python3 tools/foundation/validate_claim_governance.py",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:04:25Z",
+                "completed_at": "2026-10-23T08:08:29Z"
+              },
+              {
+                "number": 14,
+                "name": "Run python3 tools/foundation/validate_function_asset_closure.py",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:08:29Z",
+                "completed_at": "2026-10-23T08:10:52Z"
+              },
+              {
+                "number": 15,
+                "name": "Run python3 tools/foundation/run_function_asset_math_checks.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:10:52Z",
+                "completed_at": "2026-10-23T08:10:52Z"
+              },
+              {
+                "number": 16,
+                "name": "Run python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:10:52Z",
+                "completed_at": "2026-10-23T08:11:30Z"
+              },
+              {
+                "number": 17,
+                "name": "Run python3 tools/foundation/validate_nonfunction_claim_closure.py",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:11:30Z",
+                "completed_at": "2026-10-23T08:16:02Z"
+              },
+              {
+                "number": 18,
+                "name": "Validate human result census and self-correction products",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:16:02Z",
+                "completed_at": "2026-10-23T08:26:55Z"
+              },
+              {
+                "number": 19,
+                "name": "Regression — knowledge-experience clone-independence (task 102)",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:26:55Z",
+                "completed_at": "2026-10-23T08:48:19Z"
+              },
+              {
+                "number": 20,
+                "name": "Run python3 tools/foundation/verify_core_claims.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:19Z",
+                "completed_at": "2026-10-23T08:48:20Z"
+              },
+              {
+                "number": 21,
+                "name": "Run python3 tools/foundation/verify_079.py --check",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:20Z",
+                "completed_at": "2026-10-23T08:48:20Z"
+              },
+              {
+                "number": 22,
+                "name": "Run python3 tools/foundation/validate_080_adjudications.py",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:20Z",
+                "completed_at": "2026-10-23T08:48:20Z"
+              },
+              {
+                "number": 23,
+                "name": "Validate synchronization registry and iteration closures",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:20Z",
+                "completed_at": "2026-10-23T08:48:21Z"
+              },
+              {
+                "number": 24,
+                "name": "Validate typed change-propagation products",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:21Z",
+                "completed_at": "2026-10-23T08:48:22Z"
+              },
+              {
+                "number": 25,
+                "name": "Validate Q32I Phase E candidate",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:22Z",
+                "completed_at": "2026-10-23T08:48:33Z"
+              },
+              {
+                "number": 26,
+                "name": "Validate registry-derived system map",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:33Z",
+                "completed_at": "2026-10-23T08:48:33Z"
+              },
+              {
+                "number": 27,
+                "name": "Validate homepage architecture projection provenance",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:33Z",
+                "completed_at": "2026-10-23T08:48:33Z"
+              },
+              {
+                "number": 28,
+                "name": "Validate stage snapshot registry and deterministic homepage projection",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:33Z",
+                "completed_at": "2026-10-23T08:48:33Z"
+              },
+              {
+                "number": 29,
+                "name": "Run instance-level stage snapshot responsibility actor cases",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:33Z",
+                "completed_at": "2026-10-23T08:48:33Z"
+              },
+              {
+                "number": 30,
+                "name": "Run python3 tools/validate_human_front_door.py",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:33Z",
+                "completed_at": "2026-10-23T08:48:35Z"
+              },
+              {
+                "number": 31,
+                "name": "Validate Language-Thought Logic Plane",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:35Z",
+                "completed_at": "2026-10-23T08:48:36Z"
+              },
+              {
+                "number": 32,
+                "name": "Validate epistemic governance referential kernel",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:36Z",
+                "completed_at": "2026-10-23T08:48:36Z"
+              },
+              {
+                "number": 33,
+                "name": "Validate AI-first project state delta log",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:36Z",
+                "completed_at": "2026-10-23T08:48:36Z"
+              },
+              {
+                "number": 34,
+                "name": "Run python3 -m unittest tests.foundation.test_foundation",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T08:48:36Z",
+                "completed_at": "2026-10-23T09:00:50Z"
+              },
+              {
+                "number": 35,
+                "name": "Run python3 -m unittest tests.foundation.test_claim_governance",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:00:50Z",
+                "completed_at": "2026-10-23T09:05:19Z"
+              },
+              {
+                "number": 36,
+                "name": "Run python3 -m unittest tests.foundation.test_function_asset_closure",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:05:19Z",
+                "completed_at": "2026-10-23T09:08:26Z"
+              },
+              {
+                "number": 37,
+                "name": "Run python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:08:26Z",
+                "completed_at": "2026-10-23T09:13:43Z"
+              },
+              {
+                "number": 38,
+                "name": "Run python3 -m unittest tests.test_iteration_sync -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:13:43Z",
+                "completed_at": "2026-10-23T09:13:45Z"
+              },
+              {
+                "number": 39,
+                "name": "Run python3 -m unittest tests.test_human_front_door -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:13:45Z",
+                "completed_at": "2026-10-23T09:13:47Z"
+              },
+              {
+                "number": 40,
+                "name": "Run python3 -m unittest tests.test_change_propagation -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:13:47Z",
+                "completed_at": "2026-10-23T09:13:52Z"
+              },
+              {
+                "number": 41,
+                "name": "Run python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:13:52Z",
+                "completed_at": "2026-10-23T09:19:40Z"
+              },
+              {
+                "number": 42,
+                "name": "Run python3 -m unittest tests.test_stage_snapshot_publication -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:19:40Z",
+                "completed_at": "2026-10-23T09:19:40Z"
+              },
+              {
+                "number": 43,
+                "name": "Run python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:19:40Z",
+                "completed_at": "2026-10-23T09:19:41Z"
+              },
+              {
+                "number": 44,
+                "name": "Run python3 -m unittest tests.test_phase_e_candidate -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:19:41Z",
+                "completed_at": "2026-10-23T09:20:41Z"
+              },
+              {
+                "number": 45,
+                "name": "Run python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:20:41Z",
+                "completed_at": "2026-10-23T09:20:41Z"
+              },
+              {
+                "number": 46,
+                "name": "Run python3 -m unittest tests.test_production_execution_authority -v",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:20:41Z",
+                "completed_at": "2026-10-23T09:32:51Z"
+              },
+              {
+                "number": 47,
+                "name": "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:32:51Z",
+                "completed_at": "2026-10-23T09:35:00Z"
+              },
+              {
+                "number": 48,
+                "name": "Task 106 — fail-closed propagation reconciliation",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:00Z",
+                "completed_at": "2026-10-23T09:35:01Z"
+              },
+              {
+                "number": 49,
+                "name": "Confirm full regression source remained unchanged",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:01Z",
+                "completed_at": "2026-10-23T09:35:01Z"
+              },
+              {
+                "number": 97,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:01Z",
+                "completed_at": "2026-10-23T09:35:01Z"
+              },
+              {
+                "number": 98,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:01Z",
+                "completed_at": "2026-10-23T09:35:01Z"
+              },
+              {
+                "number": 99,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:01Z",
+                "completed_at": "2026-10-23T09:35:01Z"
+              }
+            ]
+          },
+          {
+            "id": 120345345948,
+            "run_id": 39910840268,
+            "run_attempt": 1,
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "name": "foundation-validation",
+            "status": "completed",
+            "conclusion": "success",
+            "started_at": "2026-10-23T09:35:06Z",
+            "completed_at": "2026-10-23T09:35:19Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:07Z",
+                "completed_at": "2026-10-23T09:35:08Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:08Z",
+                "completed_at": "2026-10-23T09:35:17Z"
+              },
+              {
+                "number": 3,
+                "name": "Enforce the selected or full validation result",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:17Z",
+                "completed_at": "2026-10-23T09:35:17Z"
+              },
+              {
+                "number": 6,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:17Z",
+                "completed_at": "2026-10-23T09:35:17Z"
+              },
+              {
+                "number": 7,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-23T09:35:17Z",
+                "completed_at": "2026-10-23T09:35:17Z"
+              }
+            ]
+          },
+          {
+            "id": 120345454366,
+            "run_id": 39910840268,
+            "run_attempt": 1,
+            "head_sha": "1c20dde25a836dd09fa75f1dac9e78dc8a708b39",
+            "name": "Final main SHA witness",
+            "status": "completed",
+            "conclusion": "skipped",
+            "started_at": "2026-10-23T09:35:20Z",
+            "completed_at": "2026-10-23T09:35:19Z",
+            "steps": []
+          }
+        ]
+      }
+    },
+    {
+      "workflow_run": {
+        "conclusion": "cancelled",
+        "event": "pull_request",
+        "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+        "id": 40064357026,
+        "run_attempt": 1,
+        "run_started_at": "2026-10-24T04:57:13Z",
+        "status": "completed",
+        "workflow_id": 311987523,
+        "path": ".github/workflows/foundation-validation.yml",
+        "created_at": "2026-10-24T04:57:13Z",
+        "updated_at": "2026-10-24T05:30:35Z",
+        "pull_requests": [
+          {
+            "number": 264,
+            "base": {
+              "sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+            }
+          }
+        ]
+      },
+      "jobs_response": {
+        "total_count": 2,
+        "jobs": [
+          {
+            "id": 120784357661,
+            "run_id": 40064357026,
+            "run_attempt": 1,
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "name": "foundation-validation-route",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "started_at": "2026-10-24T04:57:15Z",
+            "completed_at": "2026-10-24T05:29:44Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T04:57:16Z",
+                "completed_at": "2026-10-24T04:57:17Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T04:57:17Z",
+                "completed_at": "2026-10-24T04:57:47Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T04:57:47Z",
+                "completed_at": "2026-10-24T04:57:47Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T04:57:47Z",
+                "completed_at": "2026-10-24T04:57:58Z"
+              },
+              {
+                "number": 5,
+                "name": "Resolve exact component and consumer closure",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T04:57:58Z",
+                "completed_at": "2026-10-24T04:57:58Z"
+              },
+              {
+                "number": 6,
+                "name": "Set up Lean for selected proof consumers",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T04:57:58Z",
+                "completed_at": "2026-10-24T04:58:06Z"
+              },
+              {
+                "number": 7,
+                "name": "Run selected component and consumer tests",
+                "status": "completed",
+                "conclusion": "cancelled",
+                "started_at": "2026-10-24T04:58:06Z",
+                "completed_at": "2026-10-24T05:29:40Z"
+              },
+              {
+                "number": 8,
+                "name": "Verify exact plan and selected-target receipt",
+                "status": "completed",
+                "conclusion": "failure",
+                "started_at": "2026-10-24T05:29:40Z",
+                "completed_at": "2026-10-24T05:29:40Z"
+              },
+              {
+                "number": 9,
+                "name": "Record exact full-regression fallback when no target closure is available",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:29:40Z",
+                "completed_at": "2026-10-24T05:29:40Z"
+              },
+              {
+                "number": 10,
+                "name": "Preserve exact plan and selected-test receipt",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T05:29:40Z",
+                "completed_at": "2026-10-24T05:29:41Z"
+              },
+              {
+                "number": 19,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:29:41Z",
+                "completed_at": "2026-10-24T05:29:41Z"
+              },
+              {
+                "number": 20,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T05:29:41Z",
+                "completed_at": "2026-10-24T05:29:42Z"
+              },
+              {
+                "number": 21,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T05:29:42Z",
+                "completed_at": "2026-10-24T05:29:42Z"
+              }
+            ]
+          },
+          {
+            "id": 120790658353,
+            "run_id": 40064357026,
+            "run_attempt": 1,
+            "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+            "name": "Full Foundation regression",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "started_at": "2026-10-24T05:29:46Z",
+            "completed_at": "2026-10-24T05:30:35Z",
+            "steps": [
+              {
+                "number": 1,
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T05:29:47Z",
+                "completed_at": "2026-10-24T05:29:48Z"
+              },
+              {
+                "number": 2,
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T05:29:48Z",
+                "completed_at": "2026-10-24T05:30:26Z"
+              },
+              {
+                "number": 3,
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T05:30:26Z",
+                "completed_at": "2026-10-24T05:30:26Z"
+              },
+              {
+                "number": 4,
+                "name": "Run python3 -m pip install -r requirements-foundation.txt",
+                "status": "completed",
+                "conclusion": "cancelled",
+                "started_at": "2026-10-24T05:30:26Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 5,
+                "name": "Bind full regression to the exact validation commit",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 6,
+                "name": "Run leanprover/lean-action@v1",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 7,
+                "name": "Run cd formal/lean && lake env lean Foundation.lean",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 8,
+                "name": "Run python3 tools/foundation/adjudicate_core.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 9,
+                "name": "Run python3 tools/foundation/migrate_legacy.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 10,
+                "name": "Run python3 tools/foundation/validate_foundation.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 11,
+                "name": "Run python3 tools/foundation/build_function_asset_census.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 12,
+                "name": "Run python3 tools/foundation/adjudicate_function_assets.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 13,
+                "name": "Run python3 tools/foundation/validate_claim_governance.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 14,
+                "name": "Run python3 tools/foundation/validate_function_asset_closure.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 15,
+                "name": "Run python3 tools/foundation/run_function_asset_math_checks.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 16,
+                "name": "Run python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 17,
+                "name": "Run python3 tools/foundation/validate_nonfunction_claim_closure.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 18,
+                "name": "Validate human result census and self-correction products",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 19,
+                "name": "Regression — knowledge-experience clone-independence (task 102)",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 20,
+                "name": "Run python3 tools/foundation/verify_core_claims.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 21,
+                "name": "Run python3 tools/foundation/verify_079.py --check",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 22,
+                "name": "Run python3 tools/foundation/validate_080_adjudications.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 23,
+                "name": "Validate synchronization registry and iteration closures",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 24,
+                "name": "Validate typed change-propagation products",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 25,
+                "name": "Validate Q32I Phase E candidate",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 26,
+                "name": "Validate registry-derived system map",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 27,
+                "name": "Validate homepage architecture projection provenance",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 28,
+                "name": "Validate stage snapshot registry and deterministic homepage projection",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 29,
+                "name": "Run instance-level stage snapshot responsibility actor cases",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 30,
+                "name": "Run python3 tools/validate_human_front_door.py",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 31,
+                "name": "Validate Language-Thought Logic Plane",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 32,
+                "name": "Validate epistemic governance referential kernel",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 33,
+                "name": "Validate AI-first project state delta log",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 34,
+                "name": "Run python3 -m unittest tests.foundation.test_foundation",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 35,
+                "name": "Run python3 -m unittest tests.foundation.test_claim_governance",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 36,
+                "name": "Run python3 -m unittest tests.foundation.test_function_asset_closure",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 37,
+                "name": "Run python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 38,
+                "name": "Run python3 -m unittest tests.test_iteration_sync -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 39,
+                "name": "Run python3 -m unittest tests.test_human_front_door -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 40,
+                "name": "Run python3 -m unittest tests.test_change_propagation -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 41,
+                "name": "Run python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 42,
+                "name": "Run python3 -m unittest tests.test_stage_snapshot_publication -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 43,
+                "name": "Run python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 44,
+                "name": "Run python3 -m unittest tests.test_phase_e_candidate -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 45,
+                "name": "Run python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 46,
+                "name": "Run python3 -m unittest tests.test_production_execution_authority -v",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 47,
+                "name": "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 48,
+                "name": "Task 106 — fail-closed propagation reconciliation",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 49,
+                "name": "Confirm full regression source remained unchanged",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 97,
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 98,
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "skipped",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              },
+              {
+                "number": 99,
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "started_at": "2026-10-24T05:30:37Z",
+                "completed_at": "2026-10-24T05:30:37Z"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

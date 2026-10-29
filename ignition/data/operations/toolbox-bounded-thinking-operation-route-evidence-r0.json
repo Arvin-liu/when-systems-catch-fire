@@ -1,0 +1,147 @@
+{
+  "schema_version": "ignition.toolbox-bounded-thinking-operation-route-evidence-r0",
+  "task_id": "IGNITION-20261026-toolbox-growth-AB16",
+  "baseline_commit_ref": "8d0cf2fd3c235a66a6961339b757fef51832b901",
+  "candidate_base_ref": "8d0cf2fd3c235a66a6961339b757fef51832b901",
+  "task_profile_contract": {
+    "task_id": "IGNITION-20261026-toolbox-growth-AB16",
+    "current_ref": "8d0cf2fd3c235a66a6961339b757fef51832b901",
+    "input_types": [
+      "UTF-8 JSON stdin object matching toolbox-bounded-thinking-operation-input-r0; one bounded run with explicit task refs, state/obligations, available operation/capability lists, and candidate assessments; maximum 262144 bytes."
+    ],
+    "required_outputs": [
+      "One thinking-operation proposal READ_MORE, VERIFY, DECOMPOSE, REFRAME_OR_CLARIFY, CAPACITY_OR_EXECUTOR_ESCALATE, REQUEST_OWNER_DECISION, or STOP with a bounded terminal disposition.",
+      "Structured reasons and refs, expected state delta/value/cost declarations when present, preserved first failure, and fixed no-authority/no-execution flags."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_profiles": [
+    {
+      "profile": "default_off",
+      "allowlisted_tool_ids": [],
+      "allowed_network_hosts": [],
+      "input_sha256": "fd30147a368f23a7a3aeb5aead2f3f1e57fd9a0c8829935660b3261b74b7bb7f",
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "One thinking-operation proposal READ_MORE, VERIFY, DECOMPOSE, REFRAME_OR_CLARIFY, CAPACITY_OR_EXECUTOR_ESCALATE, REQUEST_OWNER_DECISION, or STOP with a bounded terminal disposition.",
+        "Structured reasons and refs, expected state delta/value/cost declarations when present, preserved first failure, and fixed no-authority/no-execution flags."
+      ],
+      "crossref_negative_control": [
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "result_sha256": "768219d1d1179ceb104ea3ab4e1de7d6c65b1782ceab1f63780b10ac18b56661",
+      "planner_process_wall_ms_single_observation": 33.182083
+    },
+    {
+      "profile": "sufficient_opt_in",
+      "allowlisted_tool_ids": [
+        "ignition.select_bounded_thinking_operation"
+      ],
+      "allowed_network_hosts": [],
+      "input_sha256": "fd30147a368f23a7a3aeb5aead2f3f1e57fd9a0c8829935660b3261b74b7bb7f",
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "ignition.select_bounded_thinking_operation"
+      ],
+      "unmet_outputs": [],
+      "crossref_negative_control": [
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "result_sha256": "b2828c7fe495c13770649f7d2615593d6a0847d6178915ac953e8429e89b6d83",
+      "planner_process_wall_ms_single_observation": 32.65475
+    },
+    {
+      "profile": "overinclusive_without_host_context",
+      "allowlisted_tool_ids": [
+        "ignition.select_bounded_thinking_operation",
+        "research.verify_crossref_metadata"
+      ],
+      "allowed_network_hosts": [],
+      "input_sha256": "fd30147a368f23a7a3aeb5aead2f3f1e57fd9a0c8829935660b3261b74b7bb7f",
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "ignition.select_bounded_thinking_operation"
+      ],
+      "unmet_outputs": [],
+      "crossref_negative_control": [
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        }
+      ],
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "result_sha256": "6b5c42b8262d95e52a6856febede6d22aac06a63b1a542bfea04aab55407f04d",
+      "planner_process_wall_ms_single_observation": 34.842125
+    },
+    {
+      "profile": "overinclusive_with_caller_host_context",
+      "allowlisted_tool_ids": [
+        "ignition.select_bounded_thinking_operation",
+        "research.verify_crossref_metadata"
+      ],
+      "allowed_network_hosts": [
+        "api.crossref.org"
+      ],
+      "input_sha256": "331a8ce01ffecab91948cb5d89657d6fc1a087ac40c3885214cf94420fc00641",
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "ignition.select_bounded_thinking_operation"
+      ],
+      "unmet_outputs": [],
+      "crossref_negative_control": [
+        {
+          "tool_id": "research.compare_crossref_reference_metadata",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.verify_crossref_metadata",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "result_sha256": "c381282b81e103ff559fd97043cba03b6bf9f36650714e0e6ee30dbba4423afa",
+      "planner_process_wall_ms_single_observation": 34.316958
+    }
+  ],
+  "registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "candidate_catalog_git_blob_sha1": "3535c0ca59aa0d7b9f7057e9dff317203f1e3eef",
+  "input_hash_method": "SHA-256 of compact UTF-8 JSON serialized with sorted keys.",
+  "result_hash_method": "SHA-256 of compact UTF-8 JSON serialized with sorted keys.",
+  "invocation_observations": {
+    "router_provider_calls": 0,
+    "candidate_tools_invoked_by_router": 0,
+    "execution_authorized": false
+  },
+  "cost_estimate": {
+    "status": "UNKNOWN",
+    "basis": "Process wall times are single local observations, not a benchmark; planner reports no comparable measured tool cost."
+  },
+  "claim_ceiling": "Four read-only local route proposals over the declared operation catalog and exact candidate-catalog blob. The router did not invoke candidates, grant permissions, establish Owner authority, or execute tools; caller-supplied current_ref and host context are not authority-verified."
+}

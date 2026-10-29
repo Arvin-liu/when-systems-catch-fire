@@ -1,0 +1,43 @@
+{
+  "schema_version": "execution-candidate-pareto-input-r0",
+  "evaluation_context": {
+    "evaluation_id": "c1-synthetic-multi-successor-r0",
+    "task_set_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "evaluator_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "environment_ref": "synthetic-local-r0"
+  },
+  "resource_metric": {
+    "metric_id": "declared_work_units",
+    "unit": "units"
+  },
+  "baseline_candidate_id": "predecessor-a",
+  "candidates": [
+    {
+      "candidate_id": "predecessor-a",
+      "candidate_ref": "synthetic://c1/predecessor-a",
+      "observations": [
+        {"case_id": "case-1", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 10, "evidence_ref": "synthetic:c1:a:1"},
+        {"case_id": "case-2", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 10, "evidence_ref": "synthetic:c1:a:2"},
+        {"case_id": "case-3", "trial_id": "trial-1", "outcome": "FAIL", "resource_cost": 10, "evidence_ref": "synthetic:c1:a:3"}
+      ]
+    },
+    {
+      "candidate_id": "variant-b",
+      "candidate_ref": "synthetic://c1/variant-b",
+      "observations": [
+        {"case_id": "case-1", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 8, "evidence_ref": "synthetic:c1:b:1"},
+        {"case_id": "case-2", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 8, "evidence_ref": "synthetic:c1:b:2"},
+        {"case_id": "case-3", "trial_id": "trial-1", "outcome": "FAIL", "resource_cost": 8, "evidence_ref": "synthetic:c1:b:3"}
+      ]
+    },
+    {
+      "candidate_id": "variant-c",
+      "candidate_ref": "synthetic://c1/variant-c",
+      "observations": [
+        {"case_id": "case-1", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 11, "evidence_ref": "synthetic:c1:c:1"},
+        {"case_id": "case-2", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 11, "evidence_ref": "synthetic:c1:c:2"},
+        {"case_id": "case-3", "trial_id": "trial-1", "outcome": "PASS", "resource_cost": 11, "evidence_ref": "synthetic:c1:c:3"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "handoff_bundle": {
+    "acceptance_criteria": [
+      "source binding is checked"
+    ],
+    "allowed_capabilities": [
+      "repo.read"
+    ],
+    "artifact_refs": [
+      {
+        "kind": "manifest",
+        "ref": "fixture/manifest.json",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ],
+    "external_session_refs": [
+      {
+        "created_at": "2026-08-16T00:00:00Z",
+        "executor_id": "external.codex",
+        "kind": "codex-thread-id",
+        "pointer_only": true,
+        "session_id": "thread-001"
+      }
+    ],
+    "federation_task_id": "handoff-task-001",
+    "goal": "Continue the bounded manifest task",
+    "handoff_id": "handoff-001",
+    "operational_memory_capsule_refs": [],
+    "pending_work": [
+      "re-observe the manifest"
+    ],
+    "source_executor_id": "external.codex",
+    "unresolveds": [],
+    "validated_completed_work": [
+      "read manifest"
+    ],
+    "workspace_refs": [
+      "fixture/"
+    ]
+  },
+  "observed_artifact_refs": [
+    "fixture/manifest.json"
+  ],
+  "schema_version": "receiver-handoff-preflight-r0",
+  "source_receipt": {
+    "artifact_refs": [
+      {
+        "kind": "manifest",
+        "ref": "fixture/manifest.json",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ],
+    "claimed_actions": [
+      "read manifest"
+    ],
+    "executor_id": "external.codex",
+    "executor_telemetry": {
+      "event_count": 4,
+      "transport": "fixture"
+    },
+    "external_session_ref": {
+      "created_at": "2026-08-16T00:00:00Z",
+      "executor_id": "external.codex",
+      "kind": "codex-thread-id",
+      "pointer_only": true,
+      "session_id": "thread-001"
+    },
+    "federation_task_id": "handoff-task-001",
+    "handoff_eligibility": {
+      "eligible": true,
+      "reason": "validated read-only work may be handed off"
+    },
+    "receipt_digest": "c45259c1c64b5fd57daa5c76bbebefadeddce3d66e95e02bb9660755bfb92b8a",
+    "terminal_state": "COMPLETED_VALIDATED",
+    "unresolveds": [],
+    "validation_refs": [
+      "validator/manifest-v1"
+    ]
+  },
+  "target_capabilities": [
+    "repo.read"
+  ],
+  "target_executor_id": "external.hermes",
+  "workspace_reobserved": true
+}

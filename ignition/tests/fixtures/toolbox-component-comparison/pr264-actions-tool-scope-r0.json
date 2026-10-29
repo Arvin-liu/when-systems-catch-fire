@@ -1,0 +1,74 @@
+{
+  "schema_version": "toolbox-component-comparison-input-r0",
+  "comparison_id": "pr264-actions-tool-scope-20261026",
+  "incumbent": {
+    "tool_id": "maintenance.summarize_actions_step_timeline",
+    "version": "0.1.0"
+  },
+  "proposed_successor": {
+    "tool_id": "maintenance.attribute_actions_validation_evidence",
+    "version": "0.1.0"
+  },
+  "evaluation_context": {
+    "environment_sha256": null,
+    "evaluator_sha256": null,
+    "resource_metric_id": "local_process_wall_time",
+    "resource_metric_unit": "ms"
+  },
+  "incumbent_use_cases": [
+    {
+      "use_case_id": "job_interval_summary",
+      "value_basis": "A bounded aggregate of observed job and step intervals for a supplied Actions run.",
+      "input_contract_sha256": "4675b02afc456c1ed7f2d3dd5daf16ea67968df0b2d0fd8510364e3295cc25be",
+      "output_contract_sha256": "8cd7be28ce7de89c2bd775f9bc8efba258a2c7db720a1cf23fed65cec3c7af4d",
+      "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json"
+    },
+    {
+      "use_case_id": "detailed_per_step_timeline",
+      "value_basis": "A standalone per-step interval listing when the task requests step-level detail.",
+      "input_contract_sha256": "4675b02afc456c1ed7f2d3dd5daf16ea67968df0b2d0fd8510364e3295cc25be",
+      "output_contract_sha256": "d9ca2be9886ea7b40655a2d9bf781f251facbb9edfb90ad45a083132ed3aaf7b",
+      "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-route-evidence-r0.json"
+    }
+  ],
+  "successor_use_cases": [
+    {
+      "use_case_id": "job_interval_summary",
+      "value_basis": "The attribution receipt carries a timeline summary whose selected fields matched the standalone timeline output in the recorded PR #264 comparison.",
+      "input_contract_sha256": "4675b02afc456c1ed7f2d3dd5daf16ea67968df0b2d0fd8510364e3295cc25be",
+      "output_contract_sha256": "8cd7be28ce7de89c2bd775f9bc8efba258a2c7db720a1cf23fed65cec3c7af4d",
+      "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json"
+    },
+    {
+      "use_case_id": "plan_run_artifact_attribution",
+      "value_basis": "Bind a validation plan, workflow run, artifact inventory and receipt presence without inferring target success.",
+      "input_contract_sha256": "0b687daf747d3b541fffe8d73d2e3d64df9b5daffc8f72d5a7964dcf6ad1d761",
+      "output_contract_sha256": "7e91f21211ffdce17efa93ca40d075a029a2b7b44c7285bdd01e774384a62f11",
+      "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json"
+    }
+  ],
+  "paired_results": [
+    {
+      "use_case_id": "job_interval_summary",
+      "input_sha256": "bd49cc33761e4692871fb8512e7f9fdb28a420e66363a043de6a42a2366192d1",
+      "output_contract_sha256": "8cd7be28ce7de89c2bd775f9bc8efba258a2c7db720a1cf23fed65cec3c7af4d",
+      "environment_sha256": null,
+      "evaluator_sha256": null,
+      "evidence_ref": "ignition/data/operations/toolbox-actions-validation-attribution-c1-evidence-r0.json",
+      "incumbent": {
+        "outcome": "PASS",
+        "quality_score": 1000,
+        "resource_cost": null,
+        "permission_rank": 0,
+        "adverse_effect_ids": []
+      },
+      "proposed_successor": {
+        "outcome": "PASS",
+        "quality_score": 1000,
+        "resource_cost": null,
+        "permission_rank": 0,
+        "adverse_effect_ids": []
+      }
+    }
+  ]
+}

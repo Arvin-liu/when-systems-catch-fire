@@ -1,0 +1,13 @@
+{
+  "task_id": "same-target-audit-finding-comparison-route-experiment",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON request matching toolbox-audit-finding-comparison-r0.schema.json with two audit records bound to the same scope_ref, target_ref, and target_revision; each finding includes an ID, caller-declared disposition, and bounded source references with caller-declared SHA-256 values."
+  ],
+  "required_outputs": [
+    "Caller-declared finding coverage and disposition relations, source-reference lists, target binding, and explicit non-adjudication / non-independence status in JSON."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "toolbox-context-packet-variant-real-task-r0",
+  "tool_id": "maintenance.compare_context_packet_variants",
+  "evidence_level": "REAL_TOOL_TEST",
+  "observed_at_utc": "2026-10-25T17:01:54Z",
+  "task": {
+    "task_id": "context-comparator-contract-review",
+    "intent": "Compare a full local contract context against a purpose-and-limits excerpt for the same caller-declared review obligations.",
+    "source": {
+      "path": "ignition/docs/operations/toolbox-context-packet-variant-comparator.md",
+      "sha256": "da8279d0c6a7ddb995a9c02eb694a833470c2f80ef51a793d7e23e123a5c53b9",
+      "line_count": 53
+    },
+    "baseline_selected_lines": [
+      1,
+      53
+    ],
+    "candidate_selected_lines": [
+      5,
+      32
+    ]
+  },
+  "invocations": {
+    "context_packet_assembler": {
+      "entrypoint": "python3 -B ignition/tools/toolbox_context_packet.py --stdin",
+      "baseline_exit_code": 0,
+      "candidate_exit_code": 0,
+      "baseline_packet_id": "contract-baseline",
+      "candidate_packet_id": "contract-selected",
+      "baseline_packet_json_sha256": "dd15291a88ed3f3d96062724613a2f3e5a1eb076979982edc5b785384391815d",
+      "candidate_packet_json_sha256": "caab4094b30ccdc17d7118d2493dfdd030e4dd50ae8c7b52b0d9dd36d436647f",
+      "excerpt_content_retained_in_evidence": false
+    },
+    "variant_comparator": {
+      "entrypoint": "python3 -B ignition/tools/toolbox_context_packet_variant_comparator.py --stdin",
+      "exit_code": 0,
+      "stdin_sha256": "874837209814e172464216349f09077f735d10bff59352acf177dfc026f23c17",
+      "result": {
+        "baseline": {
+          "context_item_count": 1,
+          "current_digest_item_ids_caller_packet_declared": [
+            "contract-baseline-contract"
+          ],
+          "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+          "declared_present_obligation_ids": [
+            "PURPOSE",
+            "LIMITS"
+          ],
+          "excerpt_line_count": 53,
+          "excerpt_text_characters": 2246,
+          "excerpt_text_utf8_bytes": 2246,
+          "generated_only_obligation_ids": [],
+          "item_source_bytes_reported_sum": 2299,
+          "missing_obligation_ids": [],
+          "operation_or_question_id": "context-comparator-contract-review",
+          "packet_id": "contract-baseline",
+          "packet_status": "ASSEMBLED_STRUCTURAL_CONTEXT_NO_DECLARED_GAPS",
+          "required_obligation_ids": [
+            "PURPOSE",
+            "LIMITS"
+          ],
+          "source_bytes_read_reported_by_packet": 2299,
+          "source_required_present_obligation_ids": [
+            "PURPOSE",
+            "LIMITS"
+          ],
+          "stale_or_invalid_obligation_ids": [],
+          "unique_source_digest_count": 1
+        },
+        "candidate": {
+          "context_item_count": 1,
+          "current_digest_item_ids_caller_packet_declared": [
+            "contract-selected-contract"
+          ],
+          "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+          "declared_present_obligation_ids": [
+            "PURPOSE",
+            "LIMITS"
+          ],
+          "excerpt_line_count": 28,
+          "excerpt_text_characters": 1343,
+          "excerpt_text_utf8_bytes": 1343,
+          "generated_only_obligation_ids": [],
+          "item_source_bytes_reported_sum": 2299,
+          "missing_obligation_ids": [],
+          "operation_or_question_id": "context-comparator-contract-review",
+          "packet_id": "contract-selected",
+          "packet_status": "ASSEMBLED_STRUCTURAL_CONTEXT_NO_DECLARED_GAPS",
+          "required_obligation_ids": [
+            "PURPOSE",
+            "LIMITS"
+          ],
+          "source_bytes_read_reported_by_packet": 2299,
+          "source_required_present_obligation_ids": [
+            "PURPOSE",
+            "LIMITS"
+          ],
+          "stale_or_invalid_obligation_ids": [],
+          "unique_source_digest_count": 1
+        },
+        "comparison_id": "context-contract-range-comparison-20261026",
+        "comparison_status": "MATCHED_STRUCTURAL_COMPARISON",
+        "deltas": {
+          "added_declared_obligation_ids": [],
+          "added_source_required_obligation_ids": [],
+          "candidate_excerpt_byte_reduction_fraction": 0.402048,
+          "candidate_minus_baseline_excerpt_text_utf8_bytes": -903,
+          "dropped_declared_obligation_ids": [],
+          "dropped_source_required_obligation_ids": []
+        },
+        "input_sha256": "874837209814e172464216349f09077f735d10bff59352acf177dfc026f23c17",
+        "interpretation": {
+          "caller_packet_authenticity": "NOT_VERIFIED",
+          "execution_authorized": false,
+          "provider_billing_cost": "NOT_MEASURED",
+          "provider_token_usage": "NOT_MEASURED",
+          "semantic_coverage": "NOT_EVALUATED",
+          "semantic_relevance": "NOT_EVALUATED",
+          "sufficiency_decision": "NOT_EVALUATED",
+          "task_outcome_comparison": "NOT_PERFORMED"
+        },
+        "matched_task_binding": {
+          "binding_basis": "CALLER_DECLARED_PACKET_FIELDS_NOT_INDEPENDENTLY_AUTHENTICATED",
+          "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+          "operation_or_question_id": "context-comparator-contract-review",
+          "required_obligation_ids": [
+            "PURPOSE",
+            "LIMITS"
+          ]
+        },
+        "schema_version": "toolbox-context-packet-variant-comparison-r0",
+        "tool_id": "maintenance.compare_context_packet_variants",
+        "tool_version": "0.1.0"
+      }
+    }
+  },
+  "task_outcome": "NOT_ASSESSED; this invocation verifies tool interoperability and exact structural measurement only.",
+  "cost_estimate_status": "UNKNOWN; local excerpt bytes are not provider tokens, latency, or billing.",
+  "execution_authorized": false,
+  "limits": [
+    "No semantic relevance, answer quality, important-error recall, source authority, sufficiency, or task success was evaluated.",
+    "Only comparator output is stored; the packet excerpts are represented by hashes and not retained here."
+  ]
+}

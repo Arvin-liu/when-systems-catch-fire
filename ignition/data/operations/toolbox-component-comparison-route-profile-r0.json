@@ -1,0 +1,11 @@
+{
+  "task_id": "pr264-toolbox-component-scope-comparison",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin matching toolbox-component-comparison-input-r0; exactly one incumbent, one proposed successor, 1-100 declared use cases per tool, and up to 100 paired results; maximum 512 KiB."
+  ],
+  "required_outputs": [
+    "Deterministic JSON with shared and distinct task ranges, matched-result completeness, caller-declared permission/risk/cost deltas, a bounded replacement/coexistence/retention/unknown disposition, and a next low-cost comparison suggestion."
+  ],
+  "allowed_execution_modes": ["READ_ONLY_RUN"]
+}

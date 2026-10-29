@@ -1,0 +1,100 @@
+{
+  "schema_version": "toolbox-declared-permission-delta-real-task-evidence-r0",
+  "tool_id": "governance.preflight_declared_permission_delta",
+  "tool_version": "0.1.0",
+  "classification": "REAL_LOCAL_PERMISSION_DECLARATION_COMPARISON_WITH_SYNTHETIC_NEGATIVE_CONTROL",
+  "task_ref": "compare declared permissions of collaboration.verify_handoff_artifact_files before and after adding local real-task evidence",
+  "source_snapshots": {
+    "baseline": {
+      "commit": "bef6bf467320ec1b6613ad94976d4623f3d51623",
+      "candidate_catalog_blob_sha1": "8e8d171168e3d267769eb6ecad0a827f37b000e1",
+      "permission_sha256": "f28748243da592bf96b1760ccb8ee5060ffe3748f0fedd3f7b27f128809f617d",
+      "permissions": {
+        "billing": false,
+        "external_actions": false,
+        "network": false,
+        "read_paths": [
+          "ignition/"
+        ],
+        "secrets": false,
+        "write_paths": []
+      }
+    },
+    "candidate": {
+      "commit": "6bb27e9374a0965ebe1c26c4ddd8b33bede3f08c",
+      "candidate_catalog_blob_sha1": "5d53a67cfcd3aec453485e93acda87219fd5d600",
+      "permission_sha256": "f28748243da592bf96b1760ccb8ee5060ffe3748f0fedd3f7b27f128809f617d",
+      "permissions": {
+        "billing": false,
+        "external_actions": false,
+        "network": false,
+        "read_paths": [
+          "ignition/"
+        ],
+        "secrets": false,
+        "write_paths": []
+      }
+    },
+    "same_declared_permission_object": true,
+    "positive_grant_encoding": [
+      {
+        "capability": "filesystem.read",
+        "scope": "ignition/"
+      }
+    ],
+    "encoding_rule": "Positive declared read/write/host/secret/billing/action permissions become exact capability/scope grant strings. False booleans and empty lists add no grant; no policy inheritance or runtime enforcement is inferred."
+  },
+  "input": {
+    "path": "ignition/data/operations/toolbox-declared-permission-delta-real-task-input-r0.json",
+    "sha256": "41cab48b8ba9d29fce012b325e6f539ea3aaecedd1e1274bdfea0e2a40cc089e",
+    "output_path": "ignition/data/operations/toolbox-declared-permission-delta-real-task-output-r0.json",
+    "output_sha256": "65eb372be1d41f237ca4750321aee9a80d18894f35ebab193f1c1e10cd8cdc33"
+  },
+  "positive_result": {
+    "status": "NO_EXACT_DECLARED_DIFF",
+    "counts": {
+      "baseline_grants": 1,
+      "candidate_grants": 1,
+      "declared_additions": 0,
+      "declared_removals": 0
+    },
+    "declared_additions": [],
+    "declared_removals": [],
+    "permission_granted": false,
+    "owner_authorization_granted": false,
+    "exit_code": 0,
+    "elapsed_ms": 24.341
+  },
+  "negative_control": {
+    "input_path": "ignition/data/operations/toolbox-declared-permission-delta-negative-control-input-r0.json",
+    "input_sha256": "34232c159e13e291d459fd102e9f16c0427c02b11268e6dd5417159392d9cb73",
+    "output_path": "ignition/data/operations/toolbox-declared-permission-delta-negative-control-output-r0.json",
+    "output_sha256": "ee333365cf912706e3f7eb3d167867d04c66e86e1b32e94b8d0e9af6f6a122c9",
+    "synthetic_added_grant": {
+      "capability": "filesystem.write",
+      "scope": "ignition/TOOLBOX.md"
+    },
+    "status": "DECLARED_ADDITIONS_REVIEW_REQUIRED",
+    "declared_additions": [
+      {
+        "capability": "filesystem.write",
+        "scope": "ignition/TOOLBOX.md"
+      }
+    ],
+    "permission_granted": false,
+    "owner_authorization_granted": false,
+    "exit_code": 0,
+    "elapsed_ms": 24.498
+  },
+  "tool_boundary": {
+    "network_calls": 0,
+    "repository_reads_by_tool": 0,
+    "repository_writes_by_tool": 0,
+    "effective_policy_resolved": false,
+    "snapshot_authenticity": "NOT_ESTABLISHED",
+    "sandbox_enforced": false,
+    "python_version": "3.9.6"
+  },
+  "comparison_boundary": "This tool use compares one candidate card permission declaration before and after evidence metadata changed. It does not compare alternative tools, establish security effectiveness, or justify replacement/retirement; C1 comparison remains unknown.",
+  "claim_ceiling": "One local CLI task found no exact change in caller-derived declared grant strings between two candidate-card commits; a separate synthetic added-write control was flagged for review. The snapshots are not authenticated and do not represent effective sandbox permissions, security enforcement, permission grant, Owner authorization, or production behavior."
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "toolbox-portable-research-episode-c1-comparison-r0",
+  "candidate_tool_id": "collaboration.validate_portable_research_episode",
+  "owner_rule": {
+    "source": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "section": "C1",
+    "disposition_rule": "Compare real task effects on equivalent inputs and environment before replacement; keep uncertainty and use a low-cost controlled comparison where evidence is insufficient."
+  },
+  "blueprint_source": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 75,
+    "head": "acf2caebbb615d2827d1767a7a17358f8de38fc4",
+    "path": "programs/2026-10-16-global-unfinished-blueprints/successors/MASTER-BLUEPRINT-R1-OUTCOME-AND-RESEARCH-HANDOFF.md",
+    "git_blob_sha1": "c34779720edb07f36698d1f660451a2a7ffe2ea9",
+    "target_scope": "Portable versioned research episode with explicit planned/attempted/executed/not-executed states, used/attached/produced references, version-bound reviews, omissions, and read-only fork ID remaps."
+  },
+  "frozen_task": {
+    "task_id": "portable-research-episode-manifest-preflight",
+    "question": "Are the caller-declared episode manifest schema and its artifact-version, dependency, run-state, review-target, omission, and fork-map relationships internally consistent?",
+    "input_object": "One UTF-8 JSON manifest supplied on stdin, capped at 262144 bytes.",
+    "quality_requirement": "Return bounded typed conflicts/warnings and preserve the non-authentication and non-execution claim ceiling.",
+    "environment": "Local Python 3.9+ CLI with local R0 schema and jsonschema Draft 2020-12 support.",
+    "authority": "READ_ONLY_RUN; no file/package import, execution, network, writes, or publication action."
+  },
+  "comparison_attempt": {
+    "method": "Low-cost source-contract and route-surface comparison against adjacent toolbox capabilities, plus a real task-derived input run of the candidate. No adjacent tool accepts this same manifest object and output contract.",
+    "compared_tool_ids": [
+      "collaboration.validate_agent_episode_binding",
+      "collaboration.verify_handoff_artifact_files"
+    ],
+    "observations": [
+      {
+        "tool_id": "collaboration.validate_agent_episode_binding",
+        "coverage": "Caller-declared agent execution plan roles, context access, feedback, write domains, and work-unit dependency DAG.",
+        "not_covered": "Portable artifact version and parent relations, declared run state, separate used/attached/produced artifact references, version-pinned review targets, omissions, and fork identifier maps.",
+        "same_task_result": "NOT_COMPARABLE_DIFFERENT_INPUT_CONTRACT"
+      },
+      {
+        "tool_id": "collaboration.verify_handoff_artifact_files",
+        "coverage": "Current local bytes of receipt-referenced regular files versus caller-declared SHA-256 values, within explicit path and byte limits.",
+        "not_covered": "Episode semantics and review/run/fork relationships; it also performs byte reads which this manifest validator deliberately does not.",
+        "same_task_result": "NOT_COMPARABLE_DIFFERENT_INPUT_CONTRACT"
+      }
+    ],
+    "candidate_real_task_ref": "ignition/data/operations/toolbox-portable-research-episode-real-task-r0.json",
+    "default_off_and_allowlist_ref": "ignition/data/operations/toolbox-portable-research-episode-route-evidence-r0.json",
+    "matched_task_completion_or_quality_scores": "NOT_MEASURED",
+    "runtime_memory_network_cost_and_cash_cost": "NOT_MEASURED",
+    "comparison_limits": [
+      "The candidate invocation used a real PR #264 task-derived caller manifest, but all run IDs, artifact hashes, and execution declarations remain unauthenticated input assertions.",
+      "The neighboring tools require different typed objects, so their failures on this manifest would measure schema incompatibility rather than task capability; no such failure is counted as a losing result.",
+      "No matched baseline can establish comparative correctness, reliability, task coverage, maintenance burden, or cost."
+    ]
+  },
+  "c1_disposition": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "replacement_candidates": [],
+    "retirements_supported": [],
+    "unique_scope_observed": "The local contract exposes explicit episode artifact-version, run status, used/attached/produced, review-version, omission, and fork-map relation checks that the inspected adjacent validators do not declare.",
+    "next_low_cost_comparison": "When a natural portable-episode consumer provides the same manifest task to a second capable implementation, bind both to identical manifest bytes and environment; compare typed conflict detection, omission and version coverage, false accepts/rejects, and wall/CPU/memory. Until then keep the candidate optional and default-off, with cost UNKNOWN."
+  },
+  "claim_ceiling": "This scope comparison does not show that the candidate is more accurate, reliable, cheaper, safer in all environments, or a replacement for either adjacent tool."
+}

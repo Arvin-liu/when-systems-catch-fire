@@ -1,0 +1,40 @@
+{
+  "schema_version": "toolbox-portable-research-episode-builder-c1-evidence-r0",
+  "tool_id": "collaboration.build_portable_research_episode",
+  "tool_version": "0.1.0",
+  "evidence_type": "LOW_COST_CONTRACT_COMPARISON_AND_REAL_TASK_OUTCOME",
+  "compared_tool_ids": [
+    "collaboration.validate_portable_research_episode",
+    "collaboration.verify_handoff_artifact_files"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_portable_research_episode.py",
+    "ignition/tools/toolbox_verify_handoff_artifact_files.py"
+  ],
+  "comparison_scope": "Contract-level input/output comparison plus one actual local research-task package build. The tools accept different primary objects; no fair same-input quality, reliability, analyst-time or resource-cost benchmark is possible from the current task.",
+  "real_task_observation": {
+    "input_path": "ignition/data/operations/toolbox-portable-research-episode-builder-real-task-input-r0.json",
+    "output_path": "ignition/data/operations/toolbox-portable-research-episode-builder-real-task-output-r0.json",
+    "evidence_path": "ignition/data/operations/toolbox-portable-research-episode-builder-real-task-evidence-r0.json",
+    "included_file_count": 11,
+    "independent_digest_rechecks": "PASS",
+    "existing_episode_validator_status": "EPISODE_MANIFEST_CONSISTENT",
+    "source_authenticity": "NOT_ESTABLISHED"
+  },
+  "findings": [
+    "The builder accepts caller event declarations and local relative paths, reads bounded regular-file bytes, computes SHA-256 and byte counts, resolves artifact-version references, and emits the existing portable-episode manifest shape.",
+    "The episode validator accepts a completed caller-supplied manifest and checks its schema and declared cross-reference consistency; it does not read or hash referenced package files. It remains a separate follow-up validation step.",
+    "The handoff byte verifier consumes a FederatedResultReceipt and checks local bytes against its artifact digests; it does not assemble the portable-episode version, execution, review, omission, or fork-map relations.",
+    "The builder fills a distinct producer step before manifest validation and has different input/output contracts from both neighbors. No replacement or retirement is supported.",
+    "One real task package and contract inspection do not establish broad correctness, source authenticity, reproducibility, reliability, user benefit, or comparative cost; preserve those uncertainties."
+  ],
+  "disposition": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "replacement_candidates": [],
+  "retired_tools": [],
+  "deprecation_or_retirement_status": "SPECIALIZED",
+  "estimated_cost": {
+    "status": "UNKNOWN",
+    "basis": "No matched resource or analyst-time benchmark exists; file reads are bounded to 32 MiB per invocation."
+  },
+  "claim_ceiling": "One repository-local task build and contract-boundary comparison. The builder produced an internally consistent manifest over 11 caller-selected files and separate byte rechecks matched the returned receipts. This does not authenticate provenance or actors, validate science, establish broad reliability or cost, or support replacing or retiring another tool."
+}

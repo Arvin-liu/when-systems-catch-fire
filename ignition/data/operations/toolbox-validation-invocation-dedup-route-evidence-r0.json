@@ -1,0 +1,190 @@
+{
+  "schema_version": "toolbox-validation-invocation-dedup-route-evidence-r0",
+  "tool_id": "maintenance.plan_validation_invocation_deduplication",
+  "observed_at_utc": "2026-10-27T04:21:54Z",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_git_blob_sha1": "f66bd3c4c843432dae769955c992e5539b9fb6ec",
+  "route_profile": {
+    "task_id": "plan-exact-read-only-validation-invocation-reuse",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON conforming to validation-invocation-dedup-input-r0; 1–32 profile records; maximum 262144 bytes; command arguments are arrays and are never interpreted by a shell."
+    ],
+    "required_outputs": [
+      "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "task_profile": {
+        "task_id": "plan-exact-read-only-validation-invocation-reuse",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON conforming to validation-invocation-dedup-input-r0; 1–32 profile records; maximum 262144 bytes; command arguments are arrays and are never interpreted by a shell."
+        ],
+        "required_outputs": [
+          "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "result_sha256": "1a006a0b15291ec4c1bbd305f3eb715b9b1948ac15de57d9f4a13acc05cc705b",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "maintenance.plan_validation_invocation_deduplication",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "unmet_outputs": [
+        "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+      ]
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.plan_validation_invocation_deduplication"
+      ],
+      "task_profile": {
+        "task_id": "plan-exact-read-only-validation-invocation-reuse",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON conforming to validation-invocation-dedup-input-r0; 1–32 profile records; maximum 262144 bytes; command arguments are arrays and are never interpreted by a shell."
+        ],
+        "required_outputs": [
+          "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.plan_validation_invocation_deduplication"
+      ],
+      "result_sha256": "c93a9335186e23e9df79317e57bccc6612d4d69777ecdbab473371217c527684",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/tools/toolbox_validation_invocation_deduplication.py"
+          ],
+          "write_paths": [],
+          "network": false,
+          "network_hosts": [],
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
+      "relevant_rejections": [],
+      "unmet_outputs": []
+    },
+    {
+      "scenario": "overbroad_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.plan_validation_invocation_deduplication",
+        "maintenance.compare_actions_validation_target_coverage",
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "task_profile": {
+        "task_id": "plan-exact-read-only-validation-invocation-reuse",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON conforming to validation-invocation-dedup-input-r0; 1–32 profile records; maximum 262144 bytes; command arguments are arrays and are never interpreted by a shell."
+        ],
+        "required_outputs": [
+          "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.plan_validation_invocation_deduplication"
+      ],
+      "result_sha256": "5783b1ffc55eaa78f813077d035f735bf5927880afcc67ce77da7db723ca713f",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/tools/toolbox_validation_invocation_deduplication.py"
+          ],
+          "write_paths": [],
+          "network": false,
+          "network_hosts": [],
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ],
+      "relevant_rejections": [],
+      "unmet_outputs": []
+    },
+    {
+      "scenario": "explicit_allowlist_unrelated_input",
+      "include_experimental_tool_ids": [
+        "maintenance.plan_validation_invocation_deduplication"
+      ],
+      "task_profile": {
+        "task_id": "plan-exact-read-only-validation-invocation-reuse-unrelated-input",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "ordinary prose"
+        ],
+        "required_outputs": [
+          "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "result_sha256": "44c7466f4b77a72e70f8456aae2e122b36887322ce31e4c7b357a7a6a6ebf58c",
+      "execution_authorized": false,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "selected_permissions": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "maintenance.plan_validation_invocation_deduplication",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "unmet_outputs": [
+        "Deterministic JSON with exact signature groups, per-group source-review/effect eligibility, potential duplicate-invocation counts, input digest, and fixed non-authorization claims."
+      ]
+    }
+  ],
+  "catalog_replay": {
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "route_profile_git_blob_sha1": "f66bd3c4c843432dae769955c992e5539b9fb6ec",
+    "all_expected_decisions_reproduced": true,
+    "scenario_count": 4,
+    "execution_authorized_in_all_scenarios": true,
+    "candidate_invoked_in_all_scenarios": true,
+    "previous_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a"
+  },
+  "claim_ceiling": "Local deterministic route planner proposals only. The planner does not invoke candidate tools, authenticate current_ref, change permissions, authorize result reuse, or establish CI or release sufficiency."
+}

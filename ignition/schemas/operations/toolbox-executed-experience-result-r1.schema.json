@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-executed-experience-result-r1",
+  "title": "Executed Experience Reuse Preflight Result R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "evaluated_at_utc", "evaluation_time_source", "task_id", "experience_decisions", "execution_authorized", "reuse_authorized", "claim_ceiling", "artifact_bytes_read", "artifact_read_budget_bytes"],
+  "properties": {
+    "schema_version": {"const": "toolbox-executed-experience-result-r1"},
+    "tool_id": {"const": "knowledge.preflight_executed_experience_reuse"},
+    "tool_version": {"const": "0.2.0"},
+    "evaluated_at_utc": {"type": "string"},
+    "evaluation_time_source": {"const": "CALLER_SUPPLIED_NOT_AUTHENTICATED"},
+    "task_id": {"type": "string"},
+    "experience_decisions": {"type": "array", "items": {"$ref": "#/$defs/decision"}},
+    "execution_authorized": {"const": false},
+    "reuse_authorized": {"const": false},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "artifact_bytes_read": {"type": "integer", "minimum": 0, "maximum": 8388608},
+    "artifact_read_budget_bytes": {"const": 8388608}
+  },
+  "$defs": {
+    "bindingStatus": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source", "input", "output", "failure"],
+      "properties": {
+        "source": {"enum": ["NOT_READ", "MATCHED", "RECEIPT_BINDING_MISMATCH", "DECLARATION_MISMATCH", "MISSING", "PATH_REJECTED", "TOO_LARGE", "READ_ERROR", "BUDGET_EXHAUSTED", "DIGEST_MISMATCH"]},
+        "input": {"enum": ["NOT_READ", "MATCHED", "RECEIPT_BINDING_MISMATCH", "DECLARATION_MISMATCH", "MISSING", "PATH_REJECTED", "TOO_LARGE", "READ_ERROR", "BUDGET_EXHAUSTED", "DIGEST_MISMATCH"]},
+        "output": {"enum": ["NOT_READ", "MATCHED", "RECEIPT_BINDING_MISMATCH", "DECLARATION_MISMATCH", "MISSING", "PATH_REJECTED", "TOO_LARGE", "READ_ERROR", "BUDGET_EXHAUSTED", "DIGEST_MISMATCH"]},
+        "failure": {"enum": ["NOT_READ", "MATCHED", "NOT_REQUIRED", "NOT_VERIFIABLE_UNPRESERVED", "RECEIPT_BINDING_MISMATCH", "DECLARATION_MISMATCH", "MISSING", "PATH_REJECTED", "TOO_LARGE", "READ_ERROR", "BUDGET_EXHAUSTED", "DIGEST_MISMATCH"]}
+      }
+    },
+    "decision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["experience_id", "decision", "reason", "evidence_status", "task_family_match", "environment_match", "source_scope_match", "can_execute", "can_authorize", "artifact_binding_status"],
+      "properties": {
+        "experience_id": {"type": "string"},
+        "decision": {"enum": ["WITHHOLD", "REVIEW_REQUIRED", "OPTIONAL_REFERENCE_ONLY", "COUNTEREXAMPLE_ONLY"]},
+        "reason": {"type": "string"},
+        "evidence_status": {"type": "string"},
+        "task_family_match": {"type": "boolean"},
+        "environment_match": {"type": "boolean"},
+        "source_scope_match": {"type": "boolean"},
+        "can_execute": {"const": false},
+        "can_authorize": {"const": false},
+        "artifact_binding_status": {"$ref": "#/$defs/bindingStatus"}
+      }
+    }
+  }
+}

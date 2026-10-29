@@ -1,0 +1,126 @@
+{
+  "schema_version": "toolbox-execution-effect-receipt-real-task-r0",
+  "task_ref": "pr264:four-run-target-coverage-local-replay",
+  "candidate_tool_id": "maintenance.preflight_execution_effect_receipt",
+  "candidate_version": "0.1.0",
+  "target_invocation": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_actions_validation_target_coverage.py --stdin",
+    "exit_code": 0,
+    "input_fixture": "ignition/tests/fixtures/toolbox-actions-validation-target-coverage/pr264-four-runs-r0.json",
+    "input_bytes": 835523,
+    "input_sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372",
+    "source_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636",
+    "stdout_bytes": 29294,
+    "stdout_sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+    "stderr_bytes": 0,
+    "semantic_output_matches_preserved_real_task": true,
+    "elapsed_ms": 56.189,
+    "started_at_utc": "2026-10-26T19:31:02.589147Z",
+    "completed_at_utc": "2026-10-26T19:31:02.645481Z",
+    "environment_ref": "macOS 27.0.1 arm64; Python 3.9.6; isolated formal-toolbox-growth worktree"
+  },
+  "receipt_input": {
+    "schema_version": "toolbox-execution-effect-receipt-input-r0",
+    "task_ref": "pr264:four-run-target-coverage-local-replay",
+    "execution": {
+      "status": "COMPLETED",
+      "run_id": "local:pr264-four-run-replay:72276d97ca9c4b218a6917250eab8b75",
+      "tool_id": "maintenance.compare_actions_validation_target_coverage",
+      "tool_version": "0.1.0",
+      "source_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636",
+      "input_sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372",
+      "output_sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+      "environment_ref": "macOS 27.0.1 arm64; Python 3.9.6; isolated formal-toolbox-growth worktree",
+      "executor_actor_ref": "subprocess:python3-target-coverage",
+      "started_at_utc": "2026-10-26T19:31:02.589147Z",
+      "completed_at_utc": "2026-10-26T19:31:02.645481Z",
+      "exit_code": 0
+    },
+    "observations": [
+      {
+        "observation_id": "target-coverage-stdout-observed",
+        "kind": "EFFECT",
+        "run_id": "local:pr264-four-run-replay:72276d97ca9c4b218a6917250eab8b75",
+        "tool_id": "maintenance.compare_actions_validation_target_coverage",
+        "tool_version": "0.1.0",
+        "source_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636",
+        "input_sha256": "5b5b380c7a052104b445bcdc2f24fde1e1f306fded57f892f9ee120e1f388372",
+        "output_sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+        "environment_ref": "macOS 27.0.1 arm64; Python 3.9.6; isolated formal-toolbox-growth worktree",
+        "observer_actor_ref": "parent-process:codex-local-runner",
+        "observed_at_utc": "2026-10-26T19:31:02.646257Z",
+        "evidence_ref": "stdout:sha256/d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+        "evidence_sha256": "d3d35d8ed376e45ed46fe5e9e70b7452ffffc02a64f9be9df17a635140e811e6",
+        "effect_state": "EFFECT_PRESENT",
+        "failure_record_ref": null,
+        "failure_record_sha256": null,
+        "first_failure_preserved": null
+      }
+    ],
+    "repository_paths": [
+      {
+        "path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+        "baseline_state": "PRESENT",
+        "baseline_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636"
+      }
+    ]
+  },
+  "receipt_input_sha256": "6a64239dbd4a429f809dc57912f4ea99fb3e434b76dfb6d2c046f2192d05e6fe",
+  "receipt_invocation": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_execution_effect_receipt.py --stdin",
+    "exit_code": 0,
+    "stdout_bytes": 1938,
+    "stdout_sha256": "7e143330eb4aa2bee17e91ce2b4a12e83081ed742461eeb9c4ffc15aa9be2555",
+    "stderr_bytes": 0,
+    "elapsed_ms": 91.506
+  },
+  "receipt_output": {
+    "bound_observation_ids": [
+      "target-coverage-stdout-observed"
+    ],
+    "causal_attribution": "NOT_ESTABLISHED",
+    "claim_ceiling": "Checks schema, chronology, and equality among caller-supplied run, tool/version/source, input/output, environment, observer, and failure-record references. It does not read or authenticate the referenced bytes, source, actor, environment, run, or observation; independently establish an effect; execute a tool; authorize an action; or establish scientific, production, or release truth.",
+    "effect_states": [
+      "EFFECT_PRESENT"
+    ],
+    "execution_authorized": false,
+    "execution_status": "COMPLETED",
+    "failure_preservation_declared": false,
+    "findings": [],
+    "input_sha256": "6a64239dbd4a429f809dc57912f4ea99fb3e434b76dfb6d2c046f2192d05e6fe",
+    "observer_independence": "ACTOR_REF_COMPARISON_ONLY",
+    "outcome_status": "OUTCOME_RECORDED_CALLER_DECLARATION",
+    "outcome_truth": "NOT_ESTABLISHED",
+    "referenced_bytes_read": false,
+    "repository_bytes_read": 20193,
+    "repository_effect_status": "NO_DIFFERENCE_FROM_DECLARED_BASELINE_OBSERVED",
+    "repository_state_observations": [
+      {
+        "baseline_sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636",
+        "baseline_state": "PRESENT",
+        "bytes_read": 20193,
+        "change": "UNCHANGED",
+        "matches_baseline": true,
+        "path": "ignition/tools/toolbox_actions_validation_target_coverage.py",
+        "sha256": "f500e0329d5f2796a7d1cc00ebbfb95a0bd053d258c5da0a39ce978f08485636",
+        "state": "PRESENT"
+      }
+    ],
+    "repository_state_observer": "LOCAL_READ_ONLY_RECHECK_OF_IGNITION_PATHS",
+    "run_id": "local:pr264-four-run-replay:72276d97ca9c4b218a6917250eab8b75",
+    "schema_version": "toolbox-execution-effect-receipt-output-r0",
+    "source_authentication": "NOT_PERFORMED",
+    "task_ref": "pr264:four-run-target-coverage-local-replay",
+    "tool_id": "maintenance.preflight_execution_effect_receipt",
+    "tool_source_sha256": "b710b810bc66d0f8db1d2d97679d471ac58a7071e31604d3478b89e64eb2e78a",
+    "tool_version": "0.1.0",
+    "warnings": []
+  },
+  "limits": [
+    "Run, actor, environment, and receipt references remain caller supplied.",
+    "The candidate locally reread one selected source file and returned only its digest; it did not read file contents into output.",
+    "Unchanged bytes do not establish that a particular action caused or did not cause any other system effect.",
+    "The effect declaration and source provenance were not independently authenticated."
+  ],
+  "claim_ceiling": "One actual local replay produced output bytes whose digest and semantic result matched preserved task evidence; the candidate bound the caller-declared run fields and reread one current ignition/ source file to compare with the caller-declared pre-run digest. This does not authenticate source/run/actors, prove causality or external effects, or establish CI, merge, release, or scientific truth."
+}

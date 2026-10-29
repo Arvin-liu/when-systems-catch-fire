@@ -1,0 +1,68 @@
+{
+  "schema_version": "execution-candidate-pareto-input-r0",
+  "evaluation_context": {
+    "evaluation_id": "gap001-crossref-route-tradeoff-20261027",
+    "task_set_sha256": "358549fe4b7e318b3e7a1e7dec3da63220bed41d1d19181db19e49b22c807ba0",
+    "evaluator_sha256": "2bc828629eb0bb3059b874498333794f2b3f58d55619a489c8f151129790e1d8",
+    "environment_ref": "caller-declared Crossref C1 capture batch dated 2026-10-27; provider/runtime identity not authenticated"
+  },
+  "resource_metric": {
+    "metric_id": "crossref_get_count",
+    "unit": "HTTP GET requests"
+  },
+  "baseline_candidate_id": "generic_only",
+  "candidates": [
+    {
+      "candidate_id": "generic_only",
+      "candidate_ref": "captured Crossref route variant generic_only",
+      "observations": [
+        {
+          "case_id": "crossref-gap001-citation-lookup",
+          "trial_id": "captured-live-task-2026-10-27",
+          "outcome": "FAIL",
+          "resource_cost": 1,
+          "evidence_ref": "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json"
+        }
+      ]
+    },
+    {
+      "candidate_id": "specialized_only",
+      "candidate_ref": "captured Crossref route variant specialized_only",
+      "observations": [
+        {
+          "case_id": "crossref-gap001-citation-lookup",
+          "trial_id": "captured-live-task-2026-10-27",
+          "outcome": "PASS",
+          "resource_cost": 1,
+          "evidence_ref": "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json"
+        }
+      ]
+    },
+    {
+      "candidate_id": "specialized_plus_generic",
+      "candidate_ref": "captured Crossref route variant specialized_plus_generic",
+      "observations": [
+        {
+          "case_id": "crossref-gap001-citation-lookup",
+          "trial_id": "captured-live-task-2026-10-27",
+          "outcome": "PASS",
+          "resource_cost": 2,
+          "evidence_ref": "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json"
+        }
+      ]
+    },
+    {
+      "candidate_id": "specialized_plus_generic_recheck",
+      "candidate_ref": "captured Crossref route variant specialized_plus_generic_recheck",
+      "observations": [
+        {
+          "case_id": "crossref-gap001-citation-lookup",
+          "trial_id": "captured-live-task-2026-10-27",
+          "outcome": "PASS",
+          "resource_cost": 3,
+          "evidence_ref": "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json"
+        }
+      ]
+    }
+  ]
+}

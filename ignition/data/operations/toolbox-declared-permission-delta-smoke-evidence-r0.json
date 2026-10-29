@@ -1,0 +1,21 @@
+{
+  "schema_version": "toolbox-declared-permission-delta-smoke-evidence-r0",
+  "tool_id": "governance.preflight_declared_permission_delta",
+  "tool_version": "0.1.0",
+  "input_path": "ignition/tests/fixtures/toolbox-declared-permission-delta/valid-input-r0.json",
+  "input_sha256": "3e90f6857cf3189926bfea52b8f26abd88ae9296b7d983d856d6ba6ce1abdcd8",
+  "output_sha256": "c030bd90be134371812a75119c6d443c007d1261c0ed48926038d25bdaba2cf6",
+  "return_code": 0,
+  "status": "MIXED_DECLARED_DIFF_REVIEW_REQUIRED",
+  "counts": {
+    "baseline_grants": 2,
+    "candidate_grants": 2,
+    "declared_additions": 1,
+    "declared_removals": 1
+  },
+  "sandbox_enforced": false,
+  "permission_granted": false,
+  "owner_authorization_granted": false,
+  "synthetic_only": true,
+  "claim_ceiling": "Deterministic local interface smoke on one synthetic pair; no effective policy, security outcome, or real task benefit is established."
+}

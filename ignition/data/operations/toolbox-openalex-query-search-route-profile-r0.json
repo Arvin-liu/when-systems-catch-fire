@@ -1,0 +1,26 @@
+{
+  "schema_version": "toolbox-openalex-query-search-route-profile-r0",
+  "task_id": "openalex-public-topic-discovery",
+  "source_candidate": "ignition/data/operations/toolbox-candidate-cards-r0.json#research.search_openalex_query@0.1.0",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin object with exactly a public query string (1-512 characters, at most 2048 UTF-8 bytes) and integer max_results (1-10)"
+  ],
+  "required_outputs": [
+    "At most ten OpenAlex Works metadata rows with Work ID, DOI when present, title, publication year, type, up to ten author names with count/truncation, primary venue, and provider relevance score; abstracts and full text are omitted.",
+    "Provider hit count, retrieval timestamp, source/response bytes, query/request/response SHA-256 values, HTTP/acquisition outcome, usage headers, and bounded claim ceiling."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ],
+  "allowed_network_hosts": [
+    "api.openalex.org"
+  ],
+  "route_default": "EXCLUDED",
+  "route_preconditions": [
+    "Local source navigation and an existing source-cluster brief do not already satisfy the requested source scope.",
+    "The caller explicitly selects this candidate and approves transmission of the public, non-sensitive query for this invocation.",
+    "The task requires OpenAlex query-to-Work-ID discovery, not known-identifier lookup or exhaustive review."
+  ],
+  "authority_boundary": "The route planner proposes a tool only; execution still requires --allow-public-network and task-specific caller authorization."
+}

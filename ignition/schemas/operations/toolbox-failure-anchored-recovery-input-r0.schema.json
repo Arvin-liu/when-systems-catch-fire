@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-failure-anchored-recovery-input-r0",
+  "title": "Failure-Anchored Recovery Preflight Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "failure", "diagnoses", "prior_attempts", "recovery"],
+  "properties": {
+    "schema_version": {"const": "toolbox-failure-anchored-recovery-input-r0"},
+    "failure": {"$ref": "#/$defs/failure"},
+    "diagnoses": {"type": "array", "minItems": 1, "maxItems": 16, "items": {"$ref": "#/$defs/diagnosis"}},
+    "prior_attempts": {"type": "array", "maxItems": 32, "items": {"$ref": "#/$defs/attempt"}},
+    "recovery": {"$ref": "#/$defs/recovery"}
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1, "maxLength": 2048, "pattern": "\\S"},
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,95}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "idList": {"type": "array", "minItems": 1, "maxItems": 32, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "failure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["run_ref", "run_head_sha", "failed_step", "failure_signature", "evidence", "preservation"],
+      "properties": {
+        "run_ref": {"$ref": "#/$defs/text"},
+        "run_head_sha": {"$ref": "#/$defs/commit"},
+        "failed_step": {"$ref": "#/$defs/text"},
+        "failure_signature": {"$ref": "#/$defs/text"},
+        "evidence": {"type": "array", "minItems": 1, "maxItems": 32, "items": {"$ref": "#/$defs/evidence"}},
+        "preservation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["first_failure_preserved", "evidence_append_only"],
+          "properties": {"first_failure_preserved": {"type": "boolean"}, "evidence_append_only": {"type": "boolean"}}
+        }
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "kind", "source_ref", "excerpt", "excerpt_sha256"],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/id"},
+        "kind": {"enum": ["RUN_LOG_EXCERPT", "TEST_OUTPUT", "TRACE_EXCERPT", "OTHER_DECLARED_EVIDENCE"]},
+        "source_ref": {"$ref": "#/$defs/text"},
+        "excerpt": {"type": "string", "minLength": 1, "maxLength": 4096},
+        "excerpt_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "diagnosis": {
+      "type": "object", "additionalProperties": false,
+      "required": ["diagnosis_id", "classification", "statement", "supporting_evidence_ids", "falsifier"],
+      "properties": {
+        "diagnosis_id": {"$ref": "#/$defs/id"},
+        "classification": {"enum": ["OBSERVATION", "HYPOTHESIS"]},
+        "statement": {"$ref": "#/$defs/text"},
+        "supporting_evidence_ids": {"$ref": "#/$defs/idList"},
+        "falsifier": {"$ref": "#/$defs/text"}
+      }
+    },
+    "attempt": {
+      "type": "object", "additionalProperties": false,
+      "required": ["failure_fingerprint_sha256", "action_fingerprint_sha256", "outcome"],
+      "properties": {
+        "failure_fingerprint_sha256": {"$ref": "#/$defs/sha256"},
+        "action_fingerprint_sha256": {"$ref": "#/$defs/sha256"},
+        "outcome": {"enum": ["FAILED", "PASSED", "NOT_RUN", "UNKNOWN"]}
+      }
+    },
+    "verification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["command", "success_signal", "failure_signature_to_recheck"],
+      "properties": {
+        "command": {"$ref": "#/$defs/text"},
+        "success_signal": {"$ref": "#/$defs/text"},
+        "failure_signature_to_recheck": {"$ref": "#/$defs/text"}
+      }
+    },
+    "recovery": {
+      "type": "object", "additionalProperties": false,
+      "required": ["recovery_id", "instructions", "diagnosis_ids", "evidence_ids", "permission_delta", "budget_delta", "verification", "stop_conditions"],
+      "properties": {
+        "recovery_id": {"$ref": "#/$defs/id"},
+        "instructions": {"type": "array", "minItems": 1, "maxItems": 8, "items": {"$ref": "#/$defs/text"}},
+        "diagnosis_ids": {"$ref": "#/$defs/idList"},
+        "evidence_ids": {"$ref": "#/$defs/idList"},
+        "permission_delta": {"enum": ["NONE", "EXPANSION", "UNKNOWN"]},
+        "budget_delta": {"enum": ["NONE", "WITHIN_DECLARED_BOUND", "EXPANSION", "UNKNOWN"]},
+        "verification": {"$ref": "#/$defs/verification"},
+        "stop_conditions": {"type": "array", "minItems": 1, "maxItems": 16, "items": {"$ref": "#/$defs/text"}}
+      }
+    }
+  }
+}

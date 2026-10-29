@@ -1,0 +1,89 @@
+{
+  "schema_version": "toolbox-noaa-sf6-source-surface-comparison-real-task-evidence-r0",
+  "evidence_type": "TWO_FIXED_SURFACE_LIVE_TASK_OUTCOME",
+  "candidate_tool_id": "research.compare_noaa_sf6_source_surfaces",
+  "tool_version": "0.1.0",
+  "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+  "input_path": "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-input-r0.json",
+  "input_sha256": "2d2aa1bbb5048ef87e0beed115c5cacd6b0cdbb5eead62754ee70895f3297489",
+  "output_path": "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-output-r0.json",
+  "output_sha256": "97936f7731c16b3749f4d87e8f0312202203d6eda465f99ed1417099b57deaa4",
+  "tool_source_sha256": "c340fffc227b057d007e320e38bb64b61bc9e9a301526f127066e8091458450d",
+  "observed_at_utc": "2026-10-27T00:33:10Z",
+  "request_window_utc": {
+    "page": "2026-10-27T00:33:10Z",
+    "raw_table": "2026-10-27T00:33:11Z"
+  },
+  "requests_made": 2,
+  "result_status": "COMPARED",
+  "comparison": {
+    "status": "DIFFERENT",
+    "requested_year_count": 3,
+    "exact_match_count": 0,
+    "numeric_difference_count": 3,
+    "missing_year_count": 0,
+    "rows": [
+      {
+        "page_annual_increase_ppt": "0.41",
+        "page_minus_raw_annual_increase_ppt": "0.00",
+        "page_minus_raw_uncertainty_ppt": "0.004",
+        "page_uncertainty_ppt": "0.004",
+        "raw_table_annual_increase_ppt": "0.41",
+        "raw_table_uncertainty_ppt": "0.00",
+        "status": "NUMERIC_DIFFERENCE",
+        "year": 2023
+      },
+      {
+        "page_annual_increase_ppt": "0.40",
+        "page_minus_raw_annual_increase_ppt": "0.00",
+        "page_minus_raw_uncertainty_ppt": "0.004",
+        "page_uncertainty_ppt": "0.004",
+        "raw_table_annual_increase_ppt": "0.40",
+        "raw_table_uncertainty_ppt": "0.00",
+        "status": "NUMERIC_DIFFERENCE",
+        "year": 2024
+      },
+      {
+        "page_annual_increase_ppt": "0.48",
+        "page_minus_raw_annual_increase_ppt": "0.00",
+        "page_minus_raw_uncertainty_ppt": "0.004",
+        "page_uncertainty_ppt": "0.004",
+        "raw_table_annual_increase_ppt": "0.48",
+        "raw_table_uncertainty_ppt": "0.00",
+        "status": "NUMERIC_DIFFERENCE",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": {
+    "provider_page": {
+      "url": "https://gml.noaa.gov/ccgg/trends_sf6/",
+      "acquisition_status": "OK",
+      "http_status": 200,
+      "etag": null,
+      "last_modified": null,
+      "retrieved_at_utc": "2026-10-27T00:33:10Z",
+      "response_bytes": 37699,
+      "response_sha256": "5e396c8a1a8a6609c5af5253f412e696404410d89041e98152749706c4fffcf4",
+      "raw_response_retained": false
+    },
+    "fixed_raw_table": {
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/sf6/sf6_gr_gl.txt",
+      "acquisition_status": "OK",
+      "http_status": 200,
+      "etag": "\"bba-65d6d473e6995\"",
+      "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+      "retrieved_at_utc": "2026-10-27T00:33:11Z",
+      "response_bytes": 3002,
+      "response_sha256": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927",
+      "raw_response_retained": false
+    }
+  },
+  "claim_ceiling": "Exact selected annual atmospheric SF6 mole-fraction increases and stated uncertainties from two NOAA GML surfaces at retrieval time, plus their arithmetic differences. This does not authenticate NOAA, rank the surfaces, validate measurements, estimate emissions, attribute sources, explain causes, or establish a scientific conclusion.",
+  "limitations": [
+    "The two HTTP requests were sequential and not an atomic source snapshot.",
+    "The raw response body was not retained; response digests bind received bytes but do not independently authenticate NOAA.",
+    "The recorded numeric difference is solely the published uncertainty precision: each page/raw annual growth value matched in this observation.",
+    "One matched year range does not establish long-run source agreement, accuracy, reliability, or scientific validity."
+  ]
+}

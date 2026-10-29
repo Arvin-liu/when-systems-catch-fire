@@ -1,0 +1,15 @@
+{
+  "task_id": "pr264-four-run-target-coverage-experience-reuse-r1",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "R0: one bounded JSON request with a task scope and 1–32 caller-selected execution receipts.",
+    "R1: the same scope with 1–32 receipts plus local source/input/output paths and SHA-256 bindings; preserved negative outcomes also bind failure bytes."
+  ],
+  "required_outputs": [
+    "R0: deterministic result with optional-reference, counterexample, review-required, or withhold decisions.",
+    "R1: the same decisions plus per-artifact binding status and an aggregate read-byte count bounded to 8 MiB."
+  ],
+  "allowed_execution_modes": [
+    "READ_ONLY_RUN"
+  ]
+}

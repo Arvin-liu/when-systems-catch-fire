@@ -1,0 +1,139 @@
+{
+  "schema_version": "toolbox-route-evidence-r0",
+  "tool_id": "research.verify_offline_source_snapshot_run",
+  "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "task_profile": {
+        "task_id": "offline-e37-run-receipt-verification",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One canonical absolute filesystem path to a caller-selected external E37 run directory containing receipt.json and its receipt-listed files."
+        ],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "execution_authorized": false,
+      "relevant_rejections": [
+        {
+          "tool_id": "research.verify_offline_source_snapshot_run",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_candidate_allowlist",
+      "task_profile": {
+        "task_id": "offline-e37-run-receipt-verification",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "One canonical absolute filesystem path to a caller-selected external E37 run directory containing receipt.json and its receipt-listed files."
+        ],
+        "required_outputs": [
+          "One JSON result with per-artifact byte and digest statuses, missing and unlisted paths, bounded read counts, explicit unkeyed-receipt limitations, and execution_authorized=false."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.verify_offline_source_snapshot_run"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.verify_offline_source_snapshot_run"
+      ],
+      "execution_authorized": false,
+      "relevant_rejections": []
+    }
+  ],
+  "summary": {
+    "default_decision": "INCOMPLETE",
+    "default_selected_tool_ids": [],
+    "explicit_allowlist_decision": "COMPLETE",
+    "explicit_allowlist_selected_tool_ids": [
+      "research.verify_offline_source_snapshot_run"
+    ],
+    "execution_authorized": false,
+    "network": false,
+    "repository_write_paths": []
+  },
+  "catalog_replay": {
+    "observed_at_utc": "2026-10-26T00:19:19Z",
+    "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+    "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+    "route_trials_replayed": 2,
+    "all_expected_decisions_reproduced": true,
+    "provider_calls_made": 0,
+    "execution_authorized": false,
+    "replay_result_sha256": "2f37a3c67bdf83f566386bee0d7eb5130768c47d879f121535aae147ab71bbf7"
+  },
+  "catalog_replay_history": [
+    {
+      "observed_at_utc": "2026-10-25T22:52:47Z",
+      "previous_candidate_catalog_git_blob_sha1": "3ac2ed58d49a087a69995d3368289e910c14a82e",
+      "candidate_catalog_git_blob_sha1": "8f3384fda573a43bc7cdd8564798e99f6afc026d",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    },
+    {
+      "observed_at_utc": "2026-10-25T23:10:52Z",
+      "previous_candidate_catalog_git_blob_sha1": "b2f144d5bf8b49c2d89ad8a5fc50bca8406aa177",
+      "candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    },
+    {
+      "observed_at_utc": "2026-10-25T23:11:27Z",
+      "previous_candidate_catalog_git_blob_sha1": "29a630e10f5fd83c650f88a59e79f95cb6fe82d6",
+      "candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false
+    },
+    {
+      "observed_at_utc": "2026-10-25T23:26:13Z",
+      "previous_candidate_catalog_git_blob_sha1": "62a3c6260b132528ea1cdbe58f20fd4b7f59ff3e",
+      "candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_result_sha256": "863fa8b072fb6dfdbfd58b682a7695984864e772e1661c6b5841c1aa01bbf462"
+    },
+    {
+      "observed_at_utc": "2026-10-25T23:51:22Z",
+      "previous_candidate_catalog_git_blob_sha1": "8ffa3726a6c98ba399100b9f8ef0f2883f680a69",
+      "candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_result_sha256": "863fa8b072fb6dfdbfd58b682a7695984864e772e1661c6b5841c1aa01bbf462"
+    },
+    {
+      "observed_at_utc": "2026-10-26T00:19:19Z",
+      "previous_candidate_catalog_git_blob_sha1": "7de3883a73bc14cbb32510388e51c16fb24653a1",
+      "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_result_sha256": "2f37a3c67bdf83f566386bee0d7eb5130768c47d879f121535aae147ab71bbf7"
+    }
+  ]
+}

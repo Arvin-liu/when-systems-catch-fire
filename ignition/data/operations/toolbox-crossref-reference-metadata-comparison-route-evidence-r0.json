@@ -1,0 +1,105 @@
+{
+  "schema_version": "ignition.toolbox-crossref-reference-metadata-comparison-route-evidence-r0",
+  "tool_id": "research.compare_crossref_reference_metadata",
+  "task_id": "selected-crossref-reference-doi-metadata-comparison",
+  "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+  "planner_source_sha256": "198272e717761792b50b8d47f1379a7677cd0ba15ce22dfbce1c177aa6999c83",
+  "network_calls_during_planning": 0,
+  "routes": {
+    "default_off": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_reasons": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "selected_permissions": null,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "source_refs": null
+    },
+    "host_without_tool_allowlist": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_reasons": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "selected_permissions": null,
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "source_refs": null
+    },
+    "tool_allowlist_without_host": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "candidate_reasons": [
+        "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+      ],
+      "selected_permissions": null,
+      "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+      "execution_authorized": false,
+      "source_refs": null
+    },
+    "exact_host_minimum": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "candidate_reasons": [],
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/evidence-program/tools/run_crossref_verification.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.crossref.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a"
+      }
+    },
+    "expanded_allowlist": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "research.compare_crossref_reference_metadata"
+      ],
+      "candidate_reasons": [],
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/tools/toolbox_compare_crossref_reference_metadata.py",
+          "ignition/tools/toolbox_crossref_metadata_verifier.py",
+          "ignition/evidence-program/tools/run_crossref_verification.py"
+        ],
+        "write_paths": [],
+        "network": true,
+        "network_hosts": [
+          "api.crossref.org"
+        ],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "network_authority_binding": "CALLER_SUPPLIED_NOT_AUTHORITY_VERIFIED_BY_THIS_PLANNER",
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a"
+      }
+    }
+  },
+  "execution_authorized": false,
+  "source_refs": {
+    "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "candidate_catalog_git_blob_sha1": "aa3b66032f0afea60ba51ff77cd6c8418065057a",
+    "route_test_path": "ignition/tests/test_toolbox_routing.py"
+  }
+}

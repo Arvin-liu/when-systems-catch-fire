@@ -1,0 +1,129 @@
+{
+  "schema_version": "toolbox-audit-finding-comparator-route-evidence-r0",
+  "profile_ref": "ignition/data/operations/toolbox-audit-finding-comparator-route-profile-r0.json",
+  "profile_sha256": "5f724129eb1786067713223763a267a75beff74ac5ca80def685bb89777ce30c",
+  "routes": {
+    "default_off": {
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "unmet_outputs": [
+        "Caller-declared finding coverage and disposition relations, source-reference lists, target binding, and explicit non-adjudication / non-independence status in JSON."
+      ],
+      "comparison_candidate_rejection": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "execution_authorized": false,
+      "allowed_network_hosts": [],
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+      }
+    },
+    "explicit_allowlist": {
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.compare_audit_findings"
+      ],
+      "unmet_outputs": [],
+      "comparison_candidate_rejection": [],
+      "execution_authorized": false,
+      "allowed_network_hosts": [],
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c"
+      }
+    }
+  },
+  "claim_ceiling": "Local planner behavior only: default routing leaves the optional comparator unselected and unmet; an exact experimental allowlist proposes it for this input/output contract. The planner neither invokes the tool nor grants authority.",
+  "candidate_catalog_refresh": {
+    "prior_candidate_catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+    "current_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+    "reason": "Replayed the stored route profiles after adding R1 repeated live-task evidence and measured single-run observations to the Crossref and PMC identifier cards; the evidence-reference type was corrected to its canonical string form. Decisions, selected tools, permissions, and limits remained unchanged; no provider call occurred during this route replay.",
+    "refresh_history": [
+      {
+        "prior_candidate_catalog_git_blob_sha1": "165bfed135ca4ef98a8d84b3e69c32d59112ea1f",
+        "current_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "reason": "Replayed both declared routes after adding C1 comparison evidence and an alternate-provider identity-card reference; the candidate remains default-off and route selection is unchanged."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "4d327f4b3d78be4e5c2327668862c99b3d88fa20",
+        "current_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+        "reason": "Replayed both declared audit-finding routes after the C1 source-brief implementation comparison fields changed the candidate catalog; route decisions and permissions remain unchanged."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "1e5d0410661ef1846b0deb4c18c9e7ba95acf564",
+        "current_candidate_catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+        "reason": "Replayed the stored local route profiles after adding R1 real-task route and measured single-run observations to the Crossref and PMC identifier candidate cards; selection and permissions were unchanged, and no provider request was repeated during this catalog replay."
+      },
+      {
+        "prior_candidate_catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+        "current_candidate_catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+        "reason": "Replayed the stored route profiles after adding R1 repeated live-task evidence and measured single-run observations to the Crossref and PMC identifier cards; the evidence-reference type was corrected to its canonical string form. Decisions, selected tools, permissions, and limits remained unchanged; no provider call occurred during this route replay."
+      }
+    ],
+    "last_route_replay": {
+      "catalog_git_blob_sha1": "29e157aa0bbcc072b5c5712955cce8931a85352c",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "provider_call_made": false,
+      "routes": [
+        {
+          "scenario": "default_off",
+          "decision": "INCOMPLETE",
+          "selected_tool_ids": [],
+          "unmet_outputs": [
+            "Caller-declared finding coverage and disposition relations, source-reference lists, target binding, and explicit non-adjudication / non-independence status in JSON."
+          ],
+          "execution_authorized": false
+        },
+        {
+          "scenario": "explicit_allowlist",
+          "decision": "COMPLETE",
+          "selected_tool_ids": [
+            "maintenance.compare_audit_findings"
+          ],
+          "unmet_outputs": [],
+          "execution_authorized": false
+        }
+      ]
+    },
+    "route_replay_history": [
+      {
+        "catalog_git_blob_sha1": "8422b965f2f9ef0fbbc5e8c93db6bf4e3ddd4a22",
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "provider_call_made": false,
+        "routes": [
+          {
+            "group": "audit_finding",
+            "scenario": "default_off",
+            "allowlist": [],
+            "allowed_network_hosts": [],
+            "decision": "INCOMPLETE",
+            "selected_tool_ids": [],
+            "unmet_outputs": [
+              "Caller-declared finding coverage and disposition relations, source-reference lists, target binding, and explicit non-adjudication / non-independence status in JSON."
+            ],
+            "execution_authorized": false,
+            "planner_wall_ms_observed": 2.12,
+            "relevant_rejections": []
+          },
+          {
+            "group": "audit_finding",
+            "scenario": "explicit_allowlist",
+            "allowlist": [
+              "maintenance.compare_audit_findings"
+            ],
+            "allowed_network_hosts": [],
+            "decision": "COMPLETE",
+            "selected_tool_ids": [
+              "maintenance.compare_audit_findings"
+            ],
+            "unmet_outputs": [],
+            "execution_authorized": false,
+            "planner_wall_ms_observed": 2.317,
+            "relevant_rejections": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-actions-interval-union-output-r0",
+  "title": "GitHub Actions Observed Interval Union Receipt R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "receipt_status", "input_sha256", "tool_sha256", "source_binding", "comparison_context", "summary", "runs", "timestamp_anomalies", "non_claims", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "github-actions-interval-union-r0"},
+    "receipt_status": {"enum": ["COMPLETE_OBSERVED_INTERVAL_SET", "PARTIAL_OBSERVED_INTERVAL_SET"]},
+    "input_sha256": {"$ref": "#/$defs/sha256"},
+    "tool_sha256": {"$ref": "#/$defs/sha256"},
+    "source_binding": {"const": "CALLER_SUPPLIED_UNAUTHENTICATED_SNAPSHOTS"},
+    "comparison_context": {
+      "type": "object", "additionalProperties": false,
+      "required": ["workflow_id", "path", "event", "pull_request_number", "base_sha"],
+      "properties": {
+        "workflow_id": {"type": "integer", "minimum": 1},
+        "path": {"type": "string", "minLength": 1},
+        "event": {"type": "string", "minLength": 1},
+        "pull_request_number": {"type": "integer", "minimum": 1},
+        "base_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "summary": {"$ref": "#/$defs/aggregate"},
+    "runs": {"type": "array", "minItems": 2, "maxItems": 20, "items": {"$ref": "#/$defs/run"}},
+    "timestamp_anomalies": {"type": "array", "items": {"type": "object"}},
+    "non_claims": {
+      "type": "object", "additionalProperties": false,
+      "required": ["github_source_authenticated", "billable_minutes_calculated", "runner_capacity_or_resource_contention_inferred", "avoidable_work_attributed", "cash_cost_estimated", "required_check_satisfaction_interpreted", "release_authorized"],
+      "properties": {
+        "github_source_authenticated": {"const": false},
+        "billable_minutes_calculated": {"const": false},
+        "runner_capacity_or_resource_contention_inferred": {"const": false},
+        "avoidable_work_attributed": {"const": false},
+        "cash_cost_estimated": {"const": false},
+        "required_check_satisfaction_interpreted": {"const": false},
+        "release_authorized": {"const": false}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "nullableNumber": {"type": ["number", "null"], "minimum": 0},
+    "nullableInteger": {"type": ["integer", "null"], "minimum": 0},
+    "metrics": {
+      "type": "object",
+      "required": ["job_count", "jobs_with_observed_intervals", "jobs_without_observed_intervals", "job_interval_coverage_complete_for_supplied_rows", "sum_observed_job_interval_seconds", "union_observed_job_interval_seconds", "excess_overlap_seconds", "maximum_concurrent_observed_jobs", "interval_semantics"],
+      "properties": {
+        "job_count": {"type": "integer", "minimum": 0},
+        "jobs_with_observed_intervals": {"type": "integer", "minimum": 0},
+        "jobs_without_observed_intervals": {"type": "integer", "minimum": 0},
+        "job_interval_coverage_complete_for_supplied_rows": {"type": "boolean"},
+        "sum_observed_job_interval_seconds": {"$ref": "#/$defs/nullableNumber"},
+        "union_observed_job_interval_seconds": {"$ref": "#/$defs/nullableNumber"},
+        "excess_overlap_seconds": {"$ref": "#/$defs/nullableNumber"},
+        "maximum_concurrent_observed_jobs": {"$ref": "#/$defs/nullableInteger"},
+        "interval_semantics": {"const": "OBSERVED_JOB_WALL_INTERVALS_ONLY; UNION_AND_SUM_ARE_NOT_BILLABLE_MINUTES"}
+      }
+    },
+    "aggregate": {
+      "unevaluatedProperties": false,
+      "allOf": [
+        {"$ref": "#/$defs/metrics"},
+        {
+          "type": "object",
+          "required": ["run_count", "job_lists_complete_for_all_runs", "job_interval_coverage_complete_for_declared_jobs", "timestamp_anomaly_count"],
+          "properties": {
+            "run_count": {"type": "integer", "minimum": 2, "maximum": 20},
+            "job_lists_complete_for_all_runs": {"type": "boolean"},
+            "job_interval_coverage_complete_for_declared_jobs": {"type": "boolean"},
+            "timestamp_anomaly_count": {"type": "integer", "minimum": 0}
+          }
+        }
+      ]
+    },
+    "run": {
+      "unevaluatedProperties": false,
+      "allOf": [
+        {"$ref": "#/$defs/metrics"},
+        {
+          "type": "object",
+          "required": ["run_id", "run_attempt", "head_sha", "run_conclusion", "job_list_complete", "job_interval_coverage_complete_for_declared_jobs"],
+          "properties": {
+            "run_id": {"type": "integer", "minimum": 1},
+            "run_attempt": {"type": "integer", "minimum": 1},
+            "head_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+            "run_conclusion": {"type": ["string", "null"]},
+            "job_list_complete": {"type": "boolean"},
+            "job_interval_coverage_complete_for_declared_jobs": {"type": "boolean"}
+          }
+        }
+      ]
+    }
+  }
+}

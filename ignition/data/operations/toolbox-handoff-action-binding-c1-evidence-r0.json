@@ -1,0 +1,56 @@
+{
+  "schema_version": "toolbox-handoff-action-binding-c1-evidence-r0",
+  "tool_id": "collaboration.preflight_handoff_action_binding",
+  "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "comparison_scope": "Source-bound local contract/code-gap comparison plus synthetic input/negative-control tests. No real task, authenticated authority, comparative reliability, latency, or monetary cost study was performed.",
+  "compared_tool_ids": [
+    "collaboration.preflight_receiver_handoff",
+    "maintenance.preflight_execution_effect_receipt",
+    "maintenance.preflight_producer_consumer_semantics"
+  ],
+  "compared_implementation_refs": [
+    "ignition/tools/toolbox_receiver_handoff_preflight.py",
+    "ignition/tools/toolbox_execution_effect_receipt.py",
+    "ignition/tools/toolbox_producer_consumer_semantic_preflight.py"
+  ],
+  "findings": [
+    "The receiver-handoff preflight validates receipt-to-bundle projection and declared receiver preconditions, but does not connect a local ExecutionPacket, approval request/decision, execution lease, task-state revision, and receiver adapter version into one exact binding check.",
+    "The execution-effect receipt addresses generic caller-declared run/source/input/output and later observation bindings, optionally checking local file bytes; it does not validate this Federation handoff/action/authorization/receiver contract.",
+    "The producer-consumer semantic preflight checks bounded literal text patterns and relations; it does not bind execution authority or receiver compatibility.",
+    "The new tool specializes in one exact handoff action and composes the existing receipt/receiver preflight with packet, authorization, lease, source/task revision and adapter-version comparisons. It does not replace any compared tool.",
+    "All records, revisions, descriptors, observations and approval values remain caller supplied. The positive and adversarial evidence is synthetic only; real-task benefit and comparative cost are unknown.",
+    "The local clock comparison catches a caller-supplied lease whose ACTIVE status conflicts with its declared issue/expiry window; it does not authenticate the lease issuer or state."
+  ],
+  "unique_remaining_use_cases": [
+    "Before a receiver handoff, compare the same exact pending action, source revision, task-state revision, target artifact digest, approval decision ID, packet digest, execution lease and receiver interface version across the existing local record types.",
+    "Fail closed when a caller-declared handoff needs native resume or an external-session-reference kind that the supplied receiver descriptor does not declare."
+  ],
+  "replacement_candidates": [],
+  "retirement_decision": {
+    "status": "SPECIALIZED",
+    "basis": "C1 matched-scope inspection identifies distinct complementary contracts; no replacement or retirement is supported. Keep this candidate default-off and preserve uncertainty about real-task value and cost."
+  },
+  "evidence_level": "SYNTHETIC_ONLY",
+  "real_task_outcome": "NOT_RUN",
+  "cost": {
+    "status": "UNKNOWN",
+    "basis": "No comparable latency, token, resource, operator-effort, or monetary measurements were collected."
+  },
+  "permission_and_side_effect_boundary": {
+    "network": false,
+    "secrets": false,
+    "billing": false,
+    "external_actions": false,
+    "writes": false,
+    "default_route": false
+  },
+  "source_refs": [
+    "ignition/data/operations/toolbox-handoff-action-binding-source-binding-r0.json",
+    "ignition/docs/operations/toolbox-handoff-action-binding-preflight.md",
+    "ignition/tests/test_toolbox_handoff_action_binding_preflight.py",
+    "ignition/tools/toolbox_handoff_action_binding_preflight.py",
+    "ignition/tools/toolbox_receiver_handoff_preflight.py",
+    "ignition/tools/toolbox_execution_effect_receipt.py",
+    "ignition/tools/toolbox_producer_consumer_semantic_preflight.py"
+  ]
+}

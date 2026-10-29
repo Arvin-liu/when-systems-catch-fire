@@ -1,0 +1,342 @@
+{
+  "schema_version": "ignition-governed-improvement-transition-c1-matched-comparison-run-r0",
+  "synthetic_only": true,
+  "claim_ceiling": "Synthetic caller-declared data and local CLI startup/runtime only; no real quality, cost, utility, reliability, or replacement claim.",
+  "environment": {
+    "python": "3.9.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "repetitions_per_invocation_shape": 30,
+  "operator_steps_per_multi_successor_task": {
+    "transition_preflight": 2,
+    "pareto_summary": 1,
+    "combined": 3
+  },
+  "runs": {
+    "transition_variant_b": {
+      "input_path": "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-b-r0.json",
+      "input_sha256": "03a5137cc0d3535d31db1e167f9674f42da1081ab1bd5c52d7b93ae448439058",
+      "tool_path": "ignition/tools/toolbox_governed_improvement_transition.py",
+      "tool_sha256": "aa3cae1effd0880bf732ec1cfe3903a91775e02b8cc5041a1b77e2bda32a4c49",
+      "invocation_count": 30,
+      "elapsed_ms": {
+        "min": 23.957,
+        "median": 24.378,
+        "p95_nearest_rank": 26.273,
+        "max": 28.563
+      },
+      "sample_output": {
+        "authority_delta": {
+          "added_scopes": [],
+          "removed_scopes": []
+        },
+        "claim_ceiling": "Deterministic structure and arithmetic over caller-declared transition data only; no source, evaluator, benchmark, measurement, rollback, improvement, generalization, authority, or successor state is authenticated.",
+        "cost_deltas": [
+          {
+            "delta": -6.0,
+            "max_allowed_increase": 10.0,
+            "metric_id": "declared_work_units",
+            "unit": "units",
+            "within_declared_guardrail": true
+          }
+        ],
+        "evaluation_anchor": {
+          "same_benchmark": true,
+          "same_evaluator": true,
+          "same_heldout_set": true,
+          "successor_replay_binding_matches_predecessor": null,
+          "successor_replay_on_predecessor_anchor": "NOT_RUN"
+        },
+        "execution_authorized": false,
+        "failure_deltas": [
+          {
+            "delta": 0,
+            "failure_class": "failed_cases",
+            "max_allowed_increase": 0,
+            "within_declared_guardrail": true
+          }
+        ],
+        "finding_codes": [
+          "QUALITY_GAIN_NOT_POSITIVE",
+          "NEXT_ROUND_GAIN_NOT_MEASURED"
+        ],
+        "improvement_accepted": false,
+        "input_sha256": "03a5137cc0d3535d31db1e167f9674f42da1081ab1bd5c52d7b93ae448439058",
+        "measurement_authenticity": "NOT_VERIFIED",
+        "next_round_rnd_gain": {
+          "directional_delta": null,
+          "positive": null,
+          "status": "NOT_MEASURED"
+        },
+        "quality_deltas": [
+          {
+            "comparable_directional_delta": 0.0,
+            "comparison_basis": "SAME_DECLARED_EVALUATION_ANCHOR",
+            "direction": "HIGHER_IS_BETTER",
+            "metric_id": "passed_cases",
+            "primary_directional_delta": 0.0,
+            "unit": "cases"
+          }
+        ],
+        "rollback": {
+          "exercise_status": "PASS",
+          "target_matches_predecessor": true
+        },
+        "schema_version": "governed-improvement-transition-result-r0",
+        "source_authenticity": "NOT_VERIFIED",
+        "status": "REVIEW_REQUIRED",
+        "successor_promoted": false,
+        "transition_id": "c1-synthetic-predecessor-to-variant-b"
+      }
+    },
+    "transition_variant_c": {
+      "input_path": "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-c-r0.json",
+      "input_sha256": "43d3fabcf27d24d553963323c2625ff21b5149586d883eb93ecc14d857eb696d",
+      "tool_path": "ignition/tools/toolbox_governed_improvement_transition.py",
+      "tool_sha256": "aa3cae1effd0880bf732ec1cfe3903a91775e02b8cc5041a1b77e2bda32a4c49",
+      "invocation_count": 30,
+      "elapsed_ms": {
+        "min": 23.907,
+        "median": 24.241,
+        "p95_nearest_rank": 26.205,
+        "max": 26.496
+      },
+      "sample_output": {
+        "authority_delta": {
+          "added_scopes": [],
+          "removed_scopes": []
+        },
+        "claim_ceiling": "Deterministic structure and arithmetic over caller-declared transition data only; no source, evaluator, benchmark, measurement, rollback, improvement, generalization, authority, or successor state is authenticated.",
+        "cost_deltas": [
+          {
+            "delta": 3.0,
+            "max_allowed_increase": 10.0,
+            "metric_id": "declared_work_units",
+            "unit": "units",
+            "within_declared_guardrail": true
+          }
+        ],
+        "evaluation_anchor": {
+          "same_benchmark": true,
+          "same_evaluator": true,
+          "same_heldout_set": true,
+          "successor_replay_binding_matches_predecessor": null,
+          "successor_replay_on_predecessor_anchor": "NOT_RUN"
+        },
+        "execution_authorized": false,
+        "failure_deltas": [
+          {
+            "delta": -1,
+            "failure_class": "failed_cases",
+            "max_allowed_increase": 0,
+            "within_declared_guardrail": true
+          }
+        ],
+        "finding_codes": [
+          "NEXT_ROUND_GAIN_NOT_MEASURED"
+        ],
+        "improvement_accepted": false,
+        "input_sha256": "43d3fabcf27d24d553963323c2625ff21b5149586d883eb93ecc14d857eb696d",
+        "measurement_authenticity": "NOT_VERIFIED",
+        "next_round_rnd_gain": {
+          "directional_delta": null,
+          "positive": null,
+          "status": "NOT_MEASURED"
+        },
+        "quality_deltas": [
+          {
+            "comparable_directional_delta": 1.0,
+            "comparison_basis": "SAME_DECLARED_EVALUATION_ANCHOR",
+            "direction": "HIGHER_IS_BETTER",
+            "metric_id": "passed_cases",
+            "primary_directional_delta": 1.0,
+            "unit": "cases"
+          }
+        ],
+        "rollback": {
+          "exercise_status": "PASS",
+          "target_matches_predecessor": true
+        },
+        "schema_version": "governed-improvement-transition-result-r0",
+        "source_authenticity": "NOT_VERIFIED",
+        "status": "REVIEW_REQUIRED",
+        "successor_promoted": false,
+        "transition_id": "c1-synthetic-predecessor-to-variant-c"
+      }
+    },
+    "pareto_all_successors": {
+      "input_path": "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-pareto-input-r0.json",
+      "input_sha256": "08c57fb979e7fd2c90f4693fd9e033aee1ca203f5ee01c4eecf1193ec0deefaa",
+      "tool_path": "ignition/tools/toolbox_execution_pareto_frontier.py",
+      "tool_sha256": "398d197ccb79fc4e2f7fdd6ebc13ff5ae79358a4aeb17829eac5f4ac8d2a3852",
+      "invocation_count": 30,
+      "elapsed_ms": {
+        "min": 28.322,
+        "median": 28.639,
+        "p95_nearest_rank": 28.841,
+        "max": 28.977
+      },
+      "sample_output": {
+        "analysis_status": "COMPARABLE_CALLER_DECLARED_MEASUREMENTS_NOT_AUTHENTICATED",
+        "baseline_candidate_id": "predecessor-a",
+        "candidates": [
+          {
+            "candidate_id": "predecessor-a",
+            "candidate_ref": "synthetic://c1/predecessor-a",
+            "dominated_by": [
+              "variant-b"
+            ],
+            "mean_resource_cost_fraction": "10/1",
+            "pass_count": 2,
+            "pass_rate_fraction": "2/3",
+            "resource_metric_id": "declared_work_units",
+            "resource_metric_unit": "units",
+            "status": "DOMINATED",
+            "trial_count": 3
+          },
+          {
+            "candidate_id": "variant-b",
+            "candidate_ref": "synthetic://c1/variant-b",
+            "dominated_by": [],
+            "mean_resource_cost_fraction": "8/1",
+            "pass_count": 2,
+            "pass_rate_fraction": "2/3",
+            "resource_metric_id": "declared_work_units",
+            "resource_metric_unit": "units",
+            "status": "ON_FRONTIER",
+            "trial_count": 3
+          },
+          {
+            "candidate_id": "variant-c",
+            "candidate_ref": "synthetic://c1/variant-c",
+            "dominated_by": [],
+            "mean_resource_cost_fraction": "11/1",
+            "pass_count": 3,
+            "pass_rate_fraction": "1/1",
+            "resource_metric_id": "declared_work_units",
+            "resource_metric_unit": "units",
+            "status": "ON_FRONTIER",
+            "trial_count": 3
+          }
+        ],
+        "evaluation_context": {
+          "environment_ref": "synthetic-local-r0",
+          "evaluation_id": "c1-synthetic-multi-successor-r0",
+          "evaluator_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "paired_case_trial_count": 3,
+          "task_set_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+        },
+        "execution_authorized": false,
+        "frontier_candidate_ids": [
+          "variant-b",
+          "variant-c"
+        ],
+        "frontier_status": "OBSERVED_FRONTIER",
+        "input_sha256": "08c57fb979e7fd2c90f4693fd9e033aee1ca203f5ee01c4eecf1193ec0deefaa",
+        "non_claims": {
+          "causal_improvement_established": false,
+          "measurements_authenticated": false,
+          "permission_changed": false,
+          "route_or_candidate_selected": false,
+          "statistical_significance_established": false,
+          "task_generalization_established": false,
+          "tool_or_harness_modified": false
+        },
+        "quality_floor_pass_rate_fraction": "2/3",
+        "resource_metric": {
+          "direction": "MINIMIZE",
+          "metric_id": "declared_work_units",
+          "unit": "units"
+        },
+        "schema_version": "execution-candidate-pareto-output-r0",
+        "tool_sha256": "398d197ccb79fc4e2f7fdd6ebc13ff5ae79358a4aeb17829eac5f4ac8d2a3852"
+      }
+    }
+  },
+  "observed_at_utc": "2026-10-26T08:21:59Z",
+  "comparison_design": {
+    "task": "One frozen synthetic predecessor A with two successors B and C, three shared cases, one evaluator/benchmark/held-out anchor, and the same declared pass/failure/resource observations supplied to both operations.",
+    "candidate_inputs": [
+      "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-b-r0.json",
+      "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-transition-variant-c-r0.json",
+      "ignition/tests/fixtures/toolbox-governed-improvement-transition/c1-pareto-input-r0.json"
+    ],
+    "scope": "Compare output coverage, explicit invocation count, and local command elapsed time only. Both tools receive caller-declared synthetic values; no underlying candidate systems or measurements are executed."
+  },
+  "output_coverage": {
+    "pareto_summary": {
+      "provides": [
+        "paired pass counts and exact pass-rate fractions",
+        "mean declared resource-cost fractions",
+        "baseline-floor, dominated, and multi-candidate frontier results"
+      ],
+      "omits": [
+        "predecessor/successor evaluator-benchmark-held-out bindings",
+        "failure guardrail deltas",
+        "authority-scope delta",
+        "rollback-target binding",
+        "next-round R&D gain status"
+      ]
+    },
+    "governed_transition_preflight": {
+      "provides": [
+        "predecessor/successor evaluator-benchmark-held-out binding checks",
+        "per-transition quality, cost, and failure deltas",
+        "authority-scope delta",
+        "rollback-target and declared exercise status",
+        "next-round R&D gain status"
+      ],
+      "omits": [
+        "one aggregated frontier or ranking across multiple successors"
+      ]
+    }
+  },
+  "synthetic_results": {
+    "declared_candidates": {
+      "predecessor-a": {
+        "passed_cases": 2,
+        "trial_cases": 3,
+        "mean_work_units": 10
+      },
+      "variant-b": {
+        "passed_cases": 2,
+        "trial_cases": 3,
+        "mean_work_units": 8
+      },
+      "variant-c": {
+        "passed_cases": 3,
+        "trial_cases": 3,
+        "mean_work_units": 11
+      }
+    },
+    "pareto_frontier_candidate_ids": [
+      "variant-b",
+      "variant-c"
+    ],
+    "transition_variant_b": {
+      "status": "REVIEW_REQUIRED",
+      "quality_delta_cases": 0,
+      "work_units_delta": -6,
+      "failure_delta": 0,
+      "added_authority_scopes": [],
+      "rollback_target_matches": true,
+      "next_round_gain": "NOT_MEASURED"
+    },
+    "transition_variant_c": {
+      "status": "REVIEW_REQUIRED",
+      "quality_delta_cases": 1,
+      "work_units_delta": 3,
+      "failure_delta": -1,
+      "added_authority_scopes": [],
+      "rollback_target_matches": true,
+      "next_round_gain": "NOT_MEASURED"
+    },
+    "non_promotion_invariant": "Both transition calls keep improvement_accepted=false, successor_promoted=false, and execution_authorized=false; Pareto keeps execution_authorized=false."
+  },
+  "interpretation": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "finding": "The tools are complementary on this synthetic task: Pareto answers the multi-successor outcome/resource-frontier question in one call; transition preflight adds per-successor binding, authority, rollback, failure-guardrail, and next-round status in two calls.",
+    "replacement_or_retirement": "No replacement or retirement is supported. Synthetic declared values do not establish utility, correctness, real-world cost, reliability, or superiority.",
+    "estimated_cost": "UNKNOWN; this single-machine CLI-startup benchmark is not a calibrated operating-cost estimate."
+  }
+}

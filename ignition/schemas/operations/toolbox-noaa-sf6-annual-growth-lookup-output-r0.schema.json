@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "toolbox-noaa-sf6-annual-growth-lookup-output-r0.schema.json",
+  "title": "NOAA SF6 annual growth lookup output",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "tool_id",
+    "tool_version",
+    "status",
+    "requested_range",
+    "units",
+    "source",
+    "source_caveats",
+    "non_claims",
+    "claim_ceiling",
+    "invocation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "toolbox-noaa-sf6-annual-growth-lookup-output-r0"
+    },
+    "tool_id": {
+      "const": "research.lookup_noaa_global_sf6_annual_growth"
+    },
+    "tool_version": {
+      "const": "0.1.0"
+    },
+    "status": {
+      "enum": [
+        "FOUND",
+        "PARTIAL_DATA",
+        "NO_MATCH",
+        "SOURCE_UNAVAILABLE"
+      ]
+    },
+    "requested_range": {
+      "type": "object",
+      "required": [
+        "start_year",
+        "end_year"
+      ],
+      "properties": {
+        "start_year": {
+          "type": "integer"
+        },
+        "end_year": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "units": {
+      "const": {
+        "annual_increase": "ppt",
+        "uncertainty": "ppt"
+      }
+    },
+    "source_caveats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "non_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_ceiling": {
+      "type": "string"
+    },
+    "invocation": {
+      "type": "object",
+      "required": [
+        "allow_public_network_flag",
+        "requests_made"
+      ],
+      "properties": {
+        "allow_public_network_flag": {
+          "const": true
+        },
+        "requests_made": {
+          "const": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "description": "One bounded fixed raw-table request. Detailed receipt and row fields are defined by the tool identity card."
+}

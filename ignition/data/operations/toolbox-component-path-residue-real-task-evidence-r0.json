@@ -1,0 +1,36 @@
+{
+  "claim_ceiling": "This invocation grouped a caller-supplied route residue list. Filename cohorts are not component ownership or approved path mappings.",
+  "implementation_path": "ignition/tools/toolbox_component_path_residue.py",
+  "implementation_sha256": "ebc84afb9cd6738b51d043e8e34e3f0b107878d400aa3d5195c030191bbd7ecd",
+  "input_path": "ignition/data/operations/toolbox-component-path-residue-real-task-input-r0.json",
+  "input_sha256": "bba6ddd5275b940677b26de2f46a6bffbe964cc5b2244a5a6cadf22f6845835d",
+  "invocation": "python3 -B ignition/tools/toolbox_component_path_residue.py --stdin < ignition/data/operations/toolbox-component-path-residue-real-task-input-r0.json",
+  "mapping_authority": {
+    "canonical_registry_modified": false,
+    "component_ids_suggested": [],
+    "human_mapping_decision_required": true,
+    "path_patterns_suggested": []
+  },
+  "observed_summary": {
+    "directory_group_count": 9,
+    "path_count": 235,
+    "paths_in_repeated_filename_families": 164,
+    "repeated_filename_family_count": 44,
+    "uncohorted_path_count": 71,
+    "unique_path_count": 235
+  },
+  "output_path": "ignition/data/operations/toolbox-component-path-residue-real-task-output-r0.json",
+  "output_sha256": "7cd79dee2ad86495493d4e4da63facba3367e5bcc0dbd2abea31e8882849b7d5",
+  "schema_version": "component-path-residue-real-task-evidence-r0",
+  "task_input_source": {
+    "base_main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "candidate_head_sha": "8caba2fd6856399b5fdd2c69e7ba66e8767569d2",
+    "path_error_count": 0,
+    "preflight_mode": "BLOCKED",
+    "receipt_path": "reports/operations/IGNITION-20261026-TOOLBOX-PARETO-FRONTIER-8CABA2FD-R0-ROUTE-PREFLIGHT.json",
+    "receipt_sha256": "4fdc44f76d12093010bb1818a6598f8e2d8c358114e07f30386eee3bff45d5e5",
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "unmapped_path_count": 235
+  },
+  "tool_id": "maintenance.summarize_component_path_residue"
+}

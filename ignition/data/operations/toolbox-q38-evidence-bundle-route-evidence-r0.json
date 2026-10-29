@@ -1,0 +1,92 @@
+{
+  "schema_version": "toolbox-q38-evidence-bundle-route-evidence-r0",
+  "tool_id": "knowledge.validate_q38_i1_evidence_bundle",
+  "candidate_catalog_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5",
+  "route_profile": {
+    "task_id": "q38-i1-evidence-bundle-validation",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "One UTF-8 JSON Q38 I1 evidence bundle on stdin conforming to toolbox-q38-evidence-bundle-r0.schema.json; maximum 1,000,000 bytes; duplicate object keys are rejected."
+    ],
+    "required_outputs": [
+      "One deterministic JSON gate result on stdout with tool id/version, gate id, stable exit code/name, up to 25 schema errors or the first failed contract control, and an explicit claim boundary."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "ordinary_task_control": {
+    "task_id": "ordinary-current-state-read",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "Current state query"
+    ],
+    "required_outputs": [
+      "Current identity snapshot"
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "trials": [
+    {
+      "trial": "default_off",
+      "allowlisted_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5"
+      },
+      "selected_permissions": []
+    },
+    {
+      "trial": "explicit_allowlist",
+      "allowlisted_tool_ids": [
+        "knowledge.validate_q38_i1_evidence_bundle"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "knowledge.validate_q38_i1_evidence_bundle"
+      ],
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5"
+      },
+      "selected_permissions": [
+        {
+          "read_paths": [
+            "ignition/schemas/operations/toolbox-q38-evidence-bundle-r0.schema.json"
+          ],
+          "write_paths": [],
+          "network": false,
+          "network_hosts": [],
+          "secrets": false,
+          "billing": false,
+          "external_actions": false
+        }
+      ]
+    },
+    {
+      "trial": "ordinary_current_state_read",
+      "allowlisted_tool_ids": [],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "ignition.recover_current_state"
+      ],
+      "execution_authorized": false,
+      "source_refs": {
+        "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+        "experimental_candidate_catalog_git_blob_sha1": "22d1e31397e8f087f2f0e089e10d322b2d10acc5"
+      },
+      "selected_permissions": [
+        null
+      ]
+    }
+  ],
+  "router_execution_count": 0,
+  "candidate_execution_authorized_by_planner": false,
+  "claim_ceiling": "Route planner selection only; no tool execution, permission grant, source authentication, evidence judgment, or scientific result."
+}

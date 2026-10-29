@@ -1,0 +1,120 @@
+{
+  "schema_version": "execution-candidate-pareto-crossref-route-evidence-r0",
+  "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+  "observed_at_utc": "2026-10-27T04:03:13Z",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile_path": "ignition/data/operations/toolbox-execution-pareto-crossref-route-profile-r0.json",
+  "route_profile": {
+    "task_id": "crossref-citation-route-outcome-resource-analysis",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON matching execution-candidate-pareto-input-r0 with 2–20 paired candidates and one caller-declared resource metric."
+    ],
+    "required_outputs": [
+      "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "planner_output_sha256": "6404cdb391998d483443c3c92c7580436e8bc3448b04073324076f25b1921d42",
+      "relevant_rejections": [
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ]
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "allowed_network_hosts": [],
+      "execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "planner_output_sha256": "cf6e90201e105fe74e372d2510b7e1920c8bb74b9a3ce3eac8148fafc5705186",
+      "relevant_rejections": []
+    }
+  ],
+  "tool_invocation": {
+    "candidate_invoked": true,
+    "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+    "tool_version": "0.1.0",
+    "execution_mode": "READ_ONLY_RUN",
+    "invocation": "python3 -B ignition/tools/toolbox_execution_pareto_frontier.py --stdin",
+    "input_sha256": "5c2975857ec4fd3ae66f8daa8cdf4a38550aabfda7249bbe41271ad437509eb3",
+    "output_sha256": "625c03eaa2d4f6183a942e814c9d8605316dbff628caa48d67774755c88bf0b4",
+    "tool_sha256": "398d197ccb79fc4e2f7fdd6ebc13ff5ae79358a4aeb17829eac5f4ac8d2a3852",
+    "execution_authorized_in_tool_output": false,
+    "network_calls": 0,
+    "writes_performed_by_tool": false
+  },
+  "analysis_summary": {
+    "analysis_status": "COMPARABLE_CALLER_DECLARED_MEASUREMENTS_NOT_AUTHENTICATED",
+    "paired_case_trial_count": 1,
+    "candidate_count": 4,
+    "frontier_candidate_ids": [
+      "specialized_only"
+    ],
+    "candidate_results": [
+      {
+        "candidate_id": "generic_only",
+        "pass_rate_fraction": "0/1",
+        "mean_resource_cost_fraction": "1/1",
+        "status": "DOMINATED"
+      },
+      {
+        "candidate_id": "specialized_only",
+        "pass_rate_fraction": "1/1",
+        "mean_resource_cost_fraction": "1/1",
+        "status": "ON_FRONTIER"
+      },
+      {
+        "candidate_id": "specialized_plus_generic",
+        "pass_rate_fraction": "1/1",
+        "mean_resource_cost_fraction": "2/1",
+        "status": "DOMINATED"
+      },
+      {
+        "candidate_id": "specialized_plus_generic_recheck",
+        "pass_rate_fraction": "1/1",
+        "mean_resource_cost_fraction": "3/1",
+        "status": "DOMINATED"
+      }
+    ],
+    "baseline_candidate_id": "generic_only",
+    "quality_floor_pass_rate_fraction": "0/1"
+  },
+  "provider_capture_source": {
+    "path": "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json",
+    "actual_public_get_count": 3,
+    "raw_request_or_response_saved": false,
+    "provider_authenticity_verified": false
+  },
+  "claim_ceiling": "One retrospective route comparison on one captured public citation task. The prior source-manifest DOI is only a target; provider output, environment, and measurements are caller-declared and unauthenticated. This is not a general route rule, tool lifecycle decision, source-authenticity finding, scientific claim, or authorization.",
+  "source_refs": {
+    "planner": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "analysis_tool": "ignition/tools/toolbox_execution_pareto_frontier.py",
+    "evaluator": "ignition/data/operations/toolbox-execution-pareto-crossref-evaluator-r0.json",
+    "input": "ignition/data/operations/toolbox-execution-pareto-crossref-input-r0.json",
+    "output": "ignition/data/operations/toolbox-execution-pareto-crossref-output-r0.json",
+    "source_crossref_evidence": "ignition/data/operations/toolbox-crossref-citation-matcher-c1-evidence-r0.json"
+  }
+}

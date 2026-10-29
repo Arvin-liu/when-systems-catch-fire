@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-handoff-advisory-selection-input-r0",
+  "title": "Handoff Advisory Selection Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_scope_id", "receiver_state_ref", "receiver_context_message_digests", "messages"],
+  "properties": {
+    "schema_version": {"const": "handoff-advisory-selection-r0"},
+    "task_scope_id": {"type": "string", "minLength": 1, "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"},
+    "receiver_state_ref": {"type": "string", "minLength": 1, "maxLength": 200, "pattern": "\\S"},
+    "receiver_context_message_digests": {
+      "type": "array", "maxItems": 128, "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "messages": {
+      "type": "array", "maxItems": 64,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["message_id", "kind", "must_forward", "text", "source_refs"],
+        "properties": {
+          "message_id": {"type": "string", "minLength": 1, "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"},
+          "kind": {"enum": ["ADVISORY", "ACTION", "AUTHORITY", "OUTCOME", "WITNESS", "SOURCE", "UNKNOWN"]},
+          "must_forward": {"type": "boolean"},
+          "text": {"type": "string", "minLength": 1, "maxLength": 8192, "pattern": "\\S"},
+          "source_refs": {
+            "type": "array", "maxItems": 16, "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1, "maxLength": 500, "pattern": "\\S"}
+          }
+        }
+      }
+    }
+  }
+}

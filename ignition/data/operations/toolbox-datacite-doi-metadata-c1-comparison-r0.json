@@ -1,0 +1,146 @@
+{
+  "schema_version": "toolbox-datacite-doi-metadata-c1-comparison-r0",
+  "observed_at_utc": "2026-10-27T01:57:55.597578Z",
+  "task": "For one caller-known DOI, retrieve a source-specific record projection, including provider resource classification, rights, relations, and schema identity where exposed.",
+  "doi": "10.25491/3v3x-tj13",
+  "method": {
+    "permission": "five explicitly invoked public metadata GETs; no credentials",
+    "primary_same_doi_calls": [
+      "one DataCite adapter call",
+      "one OpenAlex DOI-filter adapter call",
+      "one Crossref verifier call"
+    ],
+    "openalex_follow_up_calls": [
+      "one repeat of the existing OpenAlex DOI-filter adapter after its first NETWORK_ERROR",
+      "one direct OpenAlex DOI endpoint retrieval to inspect the route-specific difference"
+    ],
+    "network_hosts": [
+      "api.datacite.org",
+      "api.openalex.org",
+      "api.crossref.org"
+    ],
+    "content_fetches": 0,
+    "repository_writes": 0
+  },
+  "observations": {
+    "research.lookup_datacite_doi_metadata": {
+      "status": "EXACT_DOI_MATCH",
+      "acquisition_status": "OK",
+      "http_status": 200,
+      "response_bytes": 4176,
+      "response_sha256": "c64dcd04795152482a600c2297c74bdc29d6ef4cfe77312a75d3c6a0be5b57f4",
+      "record": {
+        "doi": "10.25491/3v3x-tj13",
+        "state": "findable",
+        "schema_version": "http://datacite.org/schema/kernel-4",
+        "publisher": "GTEx",
+        "publication_year": 2017,
+        "resource_type_general": "Dataset",
+        "resource_type": "CRAI index file",
+        "titles": [
+          {
+            "lang": null,
+            "title": "GTEX-ZTSS-0003-SM-6WBSU"
+          }
+        ],
+        "rights": [],
+        "related_identifiers": [],
+        "field_statuses": {
+          "rightsList": "REPORTED",
+          "relatedIdentifiers": "REPORTED"
+        },
+        "field_counts": {
+          "rightsList": {
+            "reported_count": 0,
+            "omitted_count": 0,
+            "invalid_count": 0
+          },
+          "relatedIdentifiers": {
+            "reported_count": 0,
+            "omitted_count": 0,
+            "invalid_count": 0
+          }
+        }
+      }
+    },
+    "research.lookup_openalex_work_metadata": {
+      "status": "COMPLETED_WITH_INCONCLUSIVE_ROWS",
+      "http_status": 200,
+      "response_sha256": "e143ccb57702e550ff2cd5e085c5b3df477b44848e559d911025ba728e9fd7ec",
+      "row_status": "NO_RESULT_FOR_FILTER",
+      "provider_projection": {
+        "openalex_id": null,
+        "title": null,
+        "publication_year": null,
+        "work_type": null,
+        "is_retracted": null
+      },
+      "reported_output_fields": [
+        "OpenAlex Work ID",
+        "title",
+        "year",
+        "work type",
+        "is_retracted",
+        "open-access/location projection"
+      ],
+      "wrapper_attempts": [
+        {
+          "outcome": "NETWORK_ERROR",
+          "http_status": null,
+          "response_sha256": null
+        },
+        {
+          "outcome": "NO_RESULT_FOR_FILTER",
+          "acquisition_status": "OK",
+          "http_status": 200,
+          "response_sha256": "e143ccb57702e550ff2cd5e085c5b3df477b44848e559d911025ba728e9fd7ec"
+        }
+      ],
+      "direct_doi_endpoint": {
+        "observed_at_utc": "2026-10-27T01:58:56.345064Z",
+        "http_status": 200,
+        "content_type": "application/json",
+        "response_bytes": 4398,
+        "response_sha256": "5db894a00fc90b90a75476a6e918046c051db159404a88472c4f5d6f6038616b",
+        "openalex_id": "https://openalex.org/W6907935842",
+        "doi": "https://doi.org/10.25491/3v3x-tj13",
+        "title": "GTEX-ZTSS-0003-SM-6WBSU",
+        "publication_year": 2017,
+        "work_type": "dataset",
+        "is_retracted": false
+      },
+      "acquisition_status": "OK"
+    },
+    "research.verify_crossref_metadata": {
+      "status": "COMPLETED_WITH_EXPLICIT_FAILURES",
+      "row_status": "NOT_FOUND",
+      "http_status": 404,
+      "response_sha256": null,
+      "provider_projection": {
+        "doi": null,
+        "observed_title": null,
+        "observed_year": null,
+        "title_match": null,
+        "year_match": null
+      }
+    }
+  },
+  "c1_disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "compared_tool_ids": [
+      "research.lookup_openalex_work_metadata",
+      "research.verify_crossref_metadata"
+    ],
+    "unique_remaining_use_cases": [
+      "Return DataCite-registered resourceTypeGeneral and resourceType, rightsList, relatedIdentifiers, schemaVersion, and state for a caller-known DOI."
+    ],
+    "findings": [
+      "For this purposively selected DOI, the new DataCite adapter and an OpenAlex direct DOI endpoint both returned dataset-typed records with the same title and year, using provider-specific schemas.",
+      "The existing bounded OpenAlex DOI-filter wrapper returned NETWORK_ERROR once and then HTTP 200 with NO_RESULT_FOR_FILTER; a direct OpenAlex DOI endpoint request returned the exact Work. This is an observed route-specific difference, not evidence that the work is absent.",
+      "The DataCite projection uniquely exposed the DataCite schema version, state, resourceTypeGeneral/resourceType, and bounded rights/related-identifier field status. OpenAlex returns OpenAlex Work identity and its own metadata/location fields.",
+      "Crossref returned HTTP 404 for the DOI in the comparison call; this does not establish that the DOI or work does not exist.",
+      "One purposively selected DOI establishes no provider ranking, coverage, quality, reliability, latency, or cost conclusion. Preserve the tools for provider-specific outputs; replacement value remains unknown outside this task."
+    ]
+  },
+  "claim_ceiling": "One live DOI comparison only; provider response fields are not scientific truth, source-authenticity, legal-reuse, content-access, or coverage judgments."
+}

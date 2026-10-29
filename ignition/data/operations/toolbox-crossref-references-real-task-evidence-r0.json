@@ -1,0 +1,289 @@
+{
+  "schema_version": "ignition.crossref-reference-real-task-evidence-r0",
+  "tool_id": "research.verify_crossref_metadata",
+  "tool_version": "0.3.0",
+  "task_id": "crossref-deposited-reference-projection-real-doi-r1",
+  "selection_method": "Purposive positive record selected from existing Crossref/PubMed matched-relation evidence; not a random or representative sample.",
+  "retrieval_timestamp_utc": "2026-10-25T23:39:55Z",
+  "input": {
+    "records": [
+      {
+        "source_id": "crossref-reference-c1-doi-1",
+        "doi": "10.1186/s12884-025-07725-7",
+        "expected_title": "“We need more guidance, more encouragement and empowerment for what our bodies are capable of”, pregnant and postpartum women’s knowledge and experiences of receiving physical activity guidance and support on the island of Ireland: an online survey study",
+        "expected_year": 2025
+      }
+    ]
+  },
+  "input_sha256": "dd98771025e2e7fd87819a74a629f519c7fa663476a8f7f83ecc743cfc37b3e8",
+  "implementation": {
+    "wrapper_path": "ignition/tools/toolbox_crossref_metadata_verifier.py",
+    "wrapper_sha256": "12a2803c6c5414954f9a9cd895d7d45966e9214404e887a6b97e5b486f17f11a",
+    "task103_helper_path": "ignition/evidence-program/tools/run_crossref_verification.py",
+    "task103_helper_sha256": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51"
+  },
+  "provider_request": {
+    "provider": "Crossref REST API",
+    "endpoint": "https://api.crossref.org/works/10.1186%2Fs12884-025-07725-7",
+    "host": "api.crossref.org",
+    "request_count": 1,
+    "http_status": 200,
+    "response_sha256": "1762ef52a1d3bd766876833b59832c404527dc6d6dd31e9961ffe8c002729d42",
+    "raw_provider_body_retained": false
+  },
+  "observed_outcome": {
+    "tool_status": "ALL_METADATA_MATCHED",
+    "acquisition_status": "OK",
+    "title_match": true,
+    "year_match": true,
+    "reference_field_status": "PRESENT_NONEMPTY",
+    "provider_reported_reference_count": 40,
+    "projected_reference_count": 25,
+    "omitted_reference_count": 15,
+    "invalid_entry_count": 0,
+    "projection_truncated": true
+  },
+  "tool_output_sha256": "203ae8dd91c51eb8c200e6872c86852b6c59548bfa718e9d84fce92640f7b40b",
+  "tool_output": {
+    "acquisition_failure_count": 0,
+    "claim_ceiling": "Crossref API metadata retrieval, normalized title/year comparison, and bounded projection of returned update-to, updated-by, typed relation identifiers, and deposited reference citation metadata only. Returned fields are provider-deposited metadata at retrieval time; omissions, empty fields, or relation labels do not establish completeness, source authenticity, article content, scientific truth, or current retraction status.",
+    "metadata_mismatch_count": 0,
+    "record_count": 1,
+    "resolved_count": 1,
+    "rows": [
+      {
+        "acquisition_status": "OK",
+        "canonical_identifier": "10.1186/s12884-025-07725-7",
+        "crossref_reference_metadata": {
+          "field_status": "PRESENT_NONEMPTY",
+          "invalid_entry_count": 0,
+          "omitted_count": 15,
+          "reported_count": 40,
+          "rows": [
+            {
+              "key": "7725_CR1"
+            },
+            {
+              "author": "FC Bull",
+              "doi": "10.1136/bjsports-2020-102955",
+              "first_page": "1451",
+              "journal_title": "Br J Sports Med",
+              "key": "7725_CR2",
+              "volume": "54",
+              "year": 2020
+            },
+            {
+              "author": "H Mills",
+              "doi": "10.1136/bjsports-2019-101413",
+              "first_page": "764",
+              "journal_title": "Br J Sports Med",
+              "key": "7725_CR3",
+              "volume": "54",
+              "year": 2020
+            },
+            {
+              "author": "A Deprato",
+              "doi": "10.1136/bjsports-2024-108478",
+              "journal_title": "Br J Sports Med",
+              "key": "7725_CR4",
+              "year": 2024
+            },
+            {
+              "author": "PAT Jones",
+              "doi": "10.1136/bjsports-2024-108483",
+              "journal_title": "Br J Sports Med",
+              "key": "7725_CR5",
+              "year": 2024
+            },
+            {
+              "author": "L Dipietro",
+              "doi": "10.1249/MSS.0000000000001941",
+              "first_page": "1292",
+              "journal_title": "Med Sci Sports Exerc",
+              "key": "7725_CR6",
+              "volume": "51",
+              "year": 2019
+            },
+            {
+              "author": "MH Davenport",
+              "doi": "10.1249/FIT.0000000000000602",
+              "first_page": "10",
+              "journal_title": "ACSMs Health Fit J",
+              "key": "7725_CR7",
+              "unstructured": "Davenport MH. Exercise during pregnancy: a prescription for improved maternal/fetal well-being. ACSMs Health Fit J. 2020;24:10–7.",
+              "volume": "24",
+              "year": 2020
+            },
+            {
+              "author": "Y Chen",
+              "doi": "10.1007/s40279-021-01499-6",
+              "first_page": "2329",
+              "journal_title": "Sports Med",
+              "key": "7725_CR8",
+              "volume": "51",
+              "year": 2021
+            },
+            {
+              "key": "7725_CR9"
+            },
+            {
+              "author": "World Health Organisation",
+              "edition": "1",
+              "key": "7725_CR10",
+              "unstructured": "World Health Organisation. WHO guidelines on physical activity and sedentary behaviour. 1st ed. Geneva: World Health Organization; 2020.",
+              "year": 2020
+            },
+            {
+              "author": "MH Davenport",
+              "doi": "10.1136/bjsports-2025-109785",
+              "journal_title": "Br J Sports Med",
+              "key": "7725_CR11",
+              "year": 2025
+            },
+            {
+              "author": "M Garland",
+              "doi": "10.1016/j.nurpra.2016.07.005",
+              "first_page": "54",
+              "journal_title": "J Nurse Pract",
+              "key": "7725_CR12",
+              "volume": "13",
+              "year": 2017
+            },
+            {
+              "author": "KR Marino",
+              "doi": "10.1136/bjsports-2023-107265",
+              "first_page": "1285",
+              "journal_title": "Br J Sports Med",
+              "key": "7725_CR13",
+              "volume": "57",
+              "year": 2023
+            },
+            {
+              "key": "7725_CR14"
+            },
+            {
+              "doi": "10.29219/fnr.v67.9719",
+              "key": "7725_CR15"
+            },
+            {
+              "key": "7725_CR16"
+            },
+            {
+              "author": "JA Swift",
+              "doi": "10.1016/j.midw.2017.01.016",
+              "first_page": "40",
+              "journal_title": "Midwifery",
+              "key": "7725_CR17",
+              "volume": "49",
+              "year": 2017
+            },
+            {
+              "key": "7725_CR18"
+            },
+            {
+              "key": "7725_CR19"
+            },
+            {
+              "key": "7725_CR20"
+            },
+            {
+              "key": "7725_CR21"
+            },
+            {
+              "key": "7725_CR22"
+            },
+            {
+              "key": "7725_CR23"
+            },
+            {
+              "key": "7725_CR24"
+            },
+            {
+              "author": "Public Health Agency",
+              "key": "7725_CR25",
+              "unstructured": "Public Health Agency. Children’s health in Northern Ireland 2022/23. Northern Ireland: HSc Public Health Agency; 2024.",
+              "year": 2024
+            }
+          ],
+          "truncated": true
+        },
+        "crossref_relation_metadata": {
+          "related_items": {
+            "field_status": "PRESENT_NONEMPTY",
+            "malformed_relation_type_count": 0,
+            "omitted_count": 0,
+            "relation_type_count": 1,
+            "reported_count": 1,
+            "rows": [
+              {
+                "asserted_by": "object",
+                "id_type": "doi",
+                "identifier": "10.1186/s12884-025-07791-x",
+                "relation_type": "correction"
+              }
+            ],
+            "truncated": false
+          },
+          "update_to": {
+            "field_status": "NOT_REPORTED",
+            "omitted_count": 0,
+            "reported_count": null,
+            "rows": [],
+            "truncated": false
+          },
+          "updated_by": {
+            "field_status": "PRESENT_NONEMPTY",
+            "omitted_count": 0,
+            "reported_count": 1,
+            "rows": [
+              {
+                "doi": "10.1186/s12884-025-07791-x",
+                "label": "Correction",
+                "source": "publisher",
+                "type": "correction",
+                "updated_date_time": "2025-06-13T00:00:00Z"
+              }
+            ],
+            "truncated": false
+          }
+        },
+        "expected_title": "“We need more guidance, more encouragement and empowerment for what our bodies are capable of”, pregnant and postpartum women’s knowledge and experiences of receiving physical activity guidance and support on the island of Ireland: an online survey study",
+        "expected_year": 2025,
+        "full_match": true,
+        "http_status": 200,
+        "observed_title": "“We need more guidance, more encouragement and empowerment for what our bodies are capable of”, pregnant and postpartum women’s knowledge and experiences of receiving physical activity guidance and support on the island of Ireland: an online survey study",
+        "observed_year": 2025,
+        "response_sha256": "1762ef52a1d3bd766876833b59832c404527dc6d6dd31e9961ffe8c002729d42",
+        "retraction_signal": "NONE",
+        "retrieval_timestamp_utc": "2026-10-25T23:39:55Z",
+        "source_id": "crossref-reference-c1-doi-1",
+        "source_license": "Crossref bibliographic metadata; public reuse basis documented by Crossref",
+        "source_url": "https://api.crossref.org/works/10.1186%2Fs12884-025-07725-7",
+        "title_match": true,
+        "year_match": true
+      }
+    ],
+    "schema_version": "ignition.crossref-metadata-verification-r0",
+    "source_code_sha256": {
+      "task103_crossref_helpers": "51df778b6a5a39f58e93b94fc4e8fbe85b6a246a7a13238f4a17e908673e9c51",
+      "wrapper": "12a2803c6c5414954f9a9cd895d7d45966e9214404e887a6b97e5b486f17f11a"
+    },
+    "status": "ALL_METADATA_MATCHED",
+    "tool_id": "research.verify_crossref_metadata",
+    "tool_version": "0.3.0"
+  },
+  "interpretation_and_limits": [
+    "This is one positive record-level observation for a purposively selected DOI; it cannot estimate how often Crossref deposits references.",
+    "The provider reported 40 entries; the adapter projected the first 25 and reported 15 omitted. The response was truncated by design.",
+    "The observed metadata is not a complete or verified bibliography and does not establish citation correctness, source authenticity, article content, or scientific support.",
+    "Crossref reference deposits are optional. Missing or empty fields are not evidence that a work has no references.",
+    "No cited DOI or URL was fetched; the tool response contains the bounded projection, not the raw provider response body."
+  ],
+  "primary_documentation": [
+    "https://www.crossref.org/documentation/schema-library/markup-guide-metadata-segments/references/",
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/"
+  ],
+  "related_evidence": [
+    "ignition/data/operations/toolbox-crossref-pubmed-matched-relations-c1-evidence-r1.json"
+  ]
+}

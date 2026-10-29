@@ -1,49 +1,54 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "required": ["schema_version", "profile_contract", "parent_profile", "authorization", "entry_count", "active_current_ordinals", "historical_entry_count", "legacy_profile_count", "profiles", "entries"],
+  "required": [
+    "schema_version",
+    "profile_contract",
+    "parent_profile_sha256",
+    "parent_entry_count",
+    "entry_count",
+    "extension_profile",
+    "extension_entries"
+  ],
   "properties": {
     "schema_version": {"const": "state-changelog-profile-r2"},
-    "profile_contract": {"const": "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_SUCCESSOR"},
-    "parent_profile": {
+    "profile_contract": {"const": "R1_PREFIX_PLUS_ONE_APPEND"},
+    "parent_profile_sha256": {"const": "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c"},
+    "parent_entry_count": {"const": 56},
+    "entry_count": {"const": 57},
+    "extension_profile": {
       "type": "object",
-      "required": ["path", "schema_version", "sha256"],
+      "required": ["name", "kind", "required_fields", "base_sha_required"],
       "properties": {
-        "path": {"const": "data/operations/state-changelog-profile-r1.json"},
-        "schema_version": {"const": "state-changelog-profile-r1"},
-        "sha256": {"const": "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c"}
+        "name": {"const": "current-task-progress-r1"},
+        "kind": {"const": "current"},
+        "required_fields": {
+          "const": [
+            "main_state",
+            "delta",
+            "task_lineage",
+            "obligations",
+            "release_boundary",
+            "validation_boundary",
+            "claim_ceiling"
+          ]
+        },
+        "base_sha_required": {"const": false}
       },
       "additionalProperties": false
     },
-    "authorization": {
-      "type": "object",
-      "required": ["owner", "repository", "commit", "path", "blob_sha1", "append_profile"],
-      "properties": {
-        "owner": {"const": "Arvin-liu"},
-        "repository": {"const": "Arvin-liu/1111"},
-        "commit": {"const": "bd5ec8280a8b5a2a682c7fd97f3cec6c1eec3527"},
-        "path": {"const": "instructions/goal-mode/IGNITION-2026-10-12-governance-self-repair-r1.md"},
-        "blob_sha1": {"const": "ec3c1d9781ead374679e334680a4f969f210a46e"},
-        "append_profile": {"const": "current-governance-self-repair-r1"}
-      },
-      "additionalProperties": false
-    },
-    "entry_count": {"type": "integer", "minimum": 1},
-    "active_current_ordinals": {"type": "array", "items": {"type": "integer", "minimum": 1}},
-    "historical_entry_count": {"type": "integer", "minimum": 0},
-    "legacy_profile_count": {"type": "integer", "minimum": 0},
-    "profiles": {"type": "object", "minProperties": 1},
-    "entries": {
+    "extension_entries": {
       "type": "array",
-      "minItems": 2,
+      "minItems": 1,
+      "maxItems": 1,
       "items": {
         "type": "object",
         "required": ["ordinal", "date", "label", "profile", "section_sha256"],
         "properties": {
-          "ordinal": {"type": "integer", "minimum": 1},
+          "ordinal": {"const": 57},
           "date": {"type": "string", "format": "date"},
           "label": {"type": "string", "minLength": 1},
-          "profile": {"type": "string", "minLength": 1},
+          "profile": {"const": "current-task-progress-r1"},
           "section_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
         },
         "additionalProperties": false

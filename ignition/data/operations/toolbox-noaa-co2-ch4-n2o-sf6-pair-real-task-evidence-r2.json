@@ -1,0 +1,60 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-n2o-sf6-pair-real-task-evidence-r2",
+  "evidence_type": "OBSERVED_OFFLINE_REAL_TASK_TRANSFORMATION",
+  "observed_on": "2026-10-27",
+  "task_id": "noaa-co2-ch4-n2o-sf6-captured-growth-panel-2023-2025-v0-3",
+  "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+  "tool_version": "0.3.0",
+  "input_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-sf6-extension-real-task-input-r2.json",
+  "input_sha256": "f5a418ff5b7a15fe0db9751702c63eddf5ec175886aed6602efb9f835751b099",
+  "output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-sf6-extension-real-task-output-r2.json",
+  "output_canonical_sha256": "cac6f27cec1ac6a8b38e65207862c914e489d716ea1ec896a43725ff5eaece08",
+  "input_bytes": 17955,
+  "requested_range": {
+    "start_year": 2023,
+    "end_year": 2025
+  },
+  "species_order": [
+    "co2",
+    "ch4",
+    "n2o",
+    "sf6"
+  ],
+  "units": {
+    "co2": "ppm",
+    "ch4": "ppb",
+    "n2o": "ppb",
+    "sf6": "ppt"
+  },
+  "rows": 3,
+  "per_species_comparison_status": {
+    "co2": "EXACT_MATCH",
+    "ch4": "EXACT_MATCH",
+    "n2o": "EXACT_MATCH",
+    "sf6": "DIFFERENT"
+  },
+  "sf6_page_minus_raw_uncertainty_ppt": [
+    "0.004",
+    "0.004",
+    "0.004"
+  ],
+  "years_with_two_surface_values_for_all_four_gases": 3,
+  "years_with_missing_surface_value_for_any_gas": 0,
+  "source_capture_counts": {
+    "co2": 2,
+    "ch4": 2,
+    "n2o": 2,
+    "sf6": 2
+  },
+  "cross_gas_arithmetic_performed": false,
+  "simultaneous_capture_claimed": false,
+  "pairer_network_calls_made": 0,
+  "pairer_file_reads_outside_stdin": 0,
+  "scientific_validation_performed": false,
+  "limitations": [
+    "The four comparator outputs were previously captured source results; this run did not refresh or independently authenticate NOAA.",
+    "The output preserves a literal SF6 uncertainty difference between page precision 0.004 ppt and raw-table precision 0.00 ppt; it does not interpret 0.00 as zero uncertainty.",
+    "Year-key alignment does not establish simultaneity, unit commensurability, emissions, attribution, causation, or scientific validity.",
+    "No CPU, latency, analyst-time, or broad scientific-utility benchmark was performed."
+  ]
+}

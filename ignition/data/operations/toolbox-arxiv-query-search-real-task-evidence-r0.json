@@ -1,0 +1,52 @@
+{
+  "schema_version": "toolbox-arxiv-query-search-real-task-evidence-r0",
+  "experiment_id": "research.search_arxiv_query.public_ai_healthcare_discovery",
+  "observed_at_utc": "2026-10-26T04:37:16Z",
+  "task": {
+    "description": "Find up to five arXiv records about artificial intelligence in healthcare for optional literature follow-up.",
+    "public_query_syntax": "all:\"artificial intelligence\" AND all:healthcare",
+    "query_was_public_and_non_sensitive": true,
+    "max_results": 5,
+    "claim_ceiling": "Provider-reported metadata only; no relevance review, scientific support, source authentication, or exhaustive recall was performed."
+  },
+  "execution": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_arxiv_query_search.py --stdin --allow-public-network",
+    "permission": "One explicit read-only HTTPS request to export.arxiv.org; no credentials, writes, billing, or external actions.",
+    "request_count": 1,
+    "raw_provider_response_retained": false,
+    "raw_query_in_tool_receipt": false
+  },
+  "tool_receipt": {
+    "schema_version": "ignition.arxiv-query-search-r0",
+    "tool_id": "research.search_arxiv_query",
+    "tool_version": "0.1.0",
+    "status": "FOUND",
+    "acquisition_status": "OK",
+    "http_status": 200,
+    "source_endpoint": "https://export.arxiv.org/api/query",
+    "retrieval_timestamp_utc": "2026-10-26T04:37:16Z",
+    "max_results": 5,
+    "hit_count": 4563,
+    "returned_count": 5,
+    "query_sha256": "911406f2d2b51a79888ffafdc1cafd3a1401ac70c731e3c02355e47b9c64b4ce",
+    "request_sha256": "e17b60e9189ff8c7226a09edf8193ae573117dd9975e3e4e54616c65645b6506",
+    "response_sha256": "a0a4aa37299048d4a0995f62632c58915cc6648caa9312f6807b4c42f638ec46",
+    "response_bytes": 13040,
+    "source_code_sha256": "39c5e3b5284a523ff3a106bd120865390beaa1c3929848113978449b359f8733",
+    "records": [
+      {"arxiv_id":"2304.04780v1","entry_id":"http://arxiv.org/abs/2304.04780v1","title":"A Review on Explainable Artificial Intelligence for Healthcare: Why, How, and When?","author_names":["Subrato Bharati","M. Rubaiyat Hossain Mondal","Prajoy Podder"],"author_count":3,"authors_truncated":false,"published":"2023-04-10T17:40:21Z","updated":"2023-04-10T17:40:21Z","primary_category":"cs.LG","categories":["cs.LG","cs.AI"],"journal_ref":"IEEE Transactions on Artificial Intelligence, 2023","doi":"10.1109/TAI.2023.3266418"},
+      {"arxiv_id":"1301.2158v1","entry_id":"http://arxiv.org/abs/1301.2158v1","title":"Artificial Intelligence Framework for Simulating Clinical Decision-Making: A Markov Decision Process Approach","author_names":["Casey C. Bennett","Kris Hauser"],"author_count":2,"authors_truncated":false,"published":"2013-01-10T15:29:59Z","updated":"2013-01-10T15:29:59Z","primary_category":"cs.AI","categories":["cs.AI","stat.ML"],"journal_ref":"Artificial Intelligence in Medicine. 57(1): 9-19. (2013)","doi":"10.1016/j.artmed.2012.12.003"},
+      {"arxiv_id":"2107.13454v1","entry_id":"http://arxiv.org/abs/2107.13454v1","title":"Artificial Intelligence in Healthcare: Lost In Translation?","author_names":["Vince I. Madai","David C. Higgins"],"author_count":2,"authors_truncated":false,"published":"2021-07-28T16:10:40Z","updated":"2021-07-28T16:10:40Z","primary_category":"cs.AI","categories":["cs.AI"],"journal_ref":null,"doi":null},
+      {"arxiv_id":"2508.03278v1","entry_id":"http://arxiv.org/abs/2508.03278v1","title":"Artificial Intelligence and Generative Models for Materials Discovery -- A Review","author_names":["Albertus Denny Handoko","Riko I Made"],"author_count":2,"authors_truncated":false,"published":"2025-08-05T09:56:27Z","updated":"2025-08-05T09:56:27Z","primary_category":"cond-mat.mtrl-sci","categories":["cond-mat.mtrl-sci","cs.AI","physics.app-ph"],"journal_ref":null,"doi":null},
+      {"arxiv_id":"2307.00067v1","entry_id":"http://arxiv.org/abs/2307.00067v1","title":"Transformers in Healthcare: A Survey","author_names":["Subhash Nerella","Sabyasachi Bandyopadhyay","Jiaqing Zhang","Miguel Contreras","Scott Siegel","Aysegul Bumin","Brandon Silva","Jessica Sena","Benjamin Shickel","Azra Bihorac"],"author_count":12,"authors_truncated":true,"published":"2023-06-30T18:14:20Z","updated":"2023-06-30T18:14:20Z","primary_category":"cs.AI","categories":["cs.AI","cs.CY","cs.LG"],"journal_ref":"Transformers and large language models in healthcare: A review, Artificial Intelligence in Medicine, Volume 154, 2024, 102900,","doi":"10.1016/j.artmed.2024.102900"}
+    ],
+    "rate_limit_note": "Caller must serialize arXiv API use and keep at least 3 seconds between requests across all controlled machines."
+  },
+  "outcome": "The tool returned five bounded arXiv metadata rows from one HTTP 200 response. The provider hit count is a query/index observation, not evidence of precision, recall, relevance, or scientific quality.",
+  "formal_state": {
+    "current_registry_changed": false,
+    "default_route_changed": false,
+    "formal_main_written": false,
+    "foundation_dispatched": false
+  }
+}

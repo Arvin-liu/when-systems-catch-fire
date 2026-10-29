@@ -1,0 +1,1025 @@
+{
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "catalog_replay": {
+    "all_expected_decisions_reproduced": true,
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "previous_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "observed_at_utc": "2026-10-27T04:03:13Z",
+    "replayed_at_utc": "2026-10-27T04:03:13Z",
+    "route_trials_replayed": 2,
+    "provider_calls_made": 0,
+    "candidate_invoked": false,
+    "execution_authorized": false,
+    "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
+    "replay_result_sha256": "1f87aa4dfa48f75ba01f0a71ed0ce87e8626892ee91b95ae168f61df35bd6cb7"
+  },
+  "catalog_replay_history": [
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "candidate_invoked": false,
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T02:51:16Z",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "cc50751835eaa007b05d9bfb728ff45d6d373dc809680346b46a656a9d388875",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "f2739d3f8c148406303e7d6684c4971f7390e218",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T03:11:49Z",
+      "previous_candidate_catalog_git_blob_sha1": "5f9c72ca3a8f1fda0fecfb5074bf0ecd1339c128",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "3c7bdc5424bbbc3b81777dda0133d10e56fef044f8d746ccb8b1009db84bfc61",
+      "route_trials_replayed": 2
+    },
+    {
+      "candidate_catalog_git_blob_sha1": "7d5ba0693f60e01a9be2f5eae31f65fe2abd0c59",
+      "candidate_invoked": false,
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T03:18:22Z",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "3c7bdc5424bbbc3b81777dda0133d10e56fef044f8d746ccb8b1009db84bfc61",
+      "route_trials_replayed": 2
+    },
+    {
+      "candidate_catalog_git_blob_sha1": "0ce531dd1df93cfd056ffac8958a3edae94b4f16",
+      "candidate_invoked": false,
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T08:01:37Z",
+      "provider_calls_made": 0,
+      "replay_result_sha256": "3c7bdc5424bbbc3b81777dda0133d10e56fef044f8d746ccb8b1009db84bfc61",
+      "route_trials_replayed": 2
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "312e600c0cdc62aee8d11ba572894735c1c6d089",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "execution_authorized": false,
+      "observed_at_utc": "2026-10-26T08:03:56Z",
+      "previous_candidate_catalog_git_blob_sha1": "0ce531dd1df93cfd056ffac8958a3edae94b4f16",
+      "provider_calls_made": 0,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON of ordered evidence_file, scenario, decision, selected_tool_ids, and execution_authorized projections.",
+      "replay_result_sha256": "3c7bdc5424bbbc3b81777dda0133d10e56fef044f8d746ccb8b1009db84bfc61",
+      "route_trials_replayed": 2
+    },
+    {
+      "candidate_catalog_git_blob_sha1": "2730b501fc4ccf7dcbc036f12460542e5886cf7d",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "observed_at_utc": "2026-10-26T16:59:55Z",
+      "route_trials_replayed": 2,
+      "all_expected_decisions_reproduced": true,
+      "candidate_invoked": false,
+      "provider_calls_made": 0,
+      "execution_authorized": false,
+      "replay_result_sha256": "3c7bdc5424bbbc3b81777dda0133d10e56fef044f8d746ccb8b1009db84bfc61"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "91a6010ff61a84dcf87da35d2488ea1cb334b0cb",
+      "superseded_candidate_catalog_git_blob_sha1": "696892c1afdf4fa5438f0f406d1adecab207a0d2",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T21:11:36Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "ce9f486fcf3b1cb994720feb203fc928707dfd06",
+      "superseded_candidate_catalog_git_blob_sha1": "5a6c7adc2675d2949f6fc1012f3acef735f29199",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:04:06Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "3e3c7365b1c84aa2de6a70542daa26e252f6faec",
+      "superseded_candidate_catalog_git_blob_sha1": "d35a5d22b2c2685407bc5f68dc9719e4cba73968",
+      "superseded_observed_at_utc": null,
+      "replayed_at_utc": "2026-10-26T22:44:00Z"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "ae357f69116ebe18095940e7d4f89f48394ff11c",
+      "superseded_candidate_catalog_git_blob_sha1": "e686a90f7d1ea0ce32be90f82ff720e0198f4d02",
+      "superseded_observed_at_utc": "2026-10-26T22:44:00Z",
+      "replayed_at_utc": "2026-10-27T01:22:31Z"
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "33d620970f8bffa4cd95f838b8e505cf46546ebb",
+      "previous_candidate_catalog_git_blob_sha1": "894b7b5f75e94badf70d735a34b25db896d7c3b2",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "observed_at_utc": "2026-10-27T04:02:22Z",
+      "replayed_at_utc": "2026-10-27T04:02:22Z",
+      "route_trials_replayed": 2,
+      "provider_calls_made": 0,
+      "candidate_invoked": false,
+      "execution_authorized": false,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
+      "replay_result_sha256": "20a034a69e7eee76fdd3931962f896a0bfcfa5f45d557187f17909d0ff1d11bc"
+    },
+    {
+      "all_expected_decisions_reproduced": true,
+      "candidate_catalog_git_blob_sha1": "51cdb8c1d5de773c3554e3c9af0b4149b9f88374",
+      "previous_candidate_catalog_git_blob_sha1": "33d620970f8bffa4cd95f838b8e505cf46546ebb",
+      "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+      "observed_at_utc": "2026-10-27T04:03:13Z",
+      "replayed_at_utc": "2026-10-27T04:03:13Z",
+      "route_trials_replayed": 2,
+      "provider_calls_made": 0,
+      "candidate_invoked": false,
+      "execution_authorized": false,
+      "replay_digest_method": "SHA-256 over UTF-8 canonical JSON (sort_keys=true, separators=(comma,colon), ensure_ascii=false) of ordered {scenario, planner_output_sha256} records from current planner replays.",
+      "replay_result_sha256": "1f87aa4dfa48f75ba01f0a71ed0ce87e8626892ee91b95ae168f61df35bd6cb7"
+    },
+    {
+      "superseded_evidence_git_blob_sha1": "647ae1742252ce44e032d9dc157be846524b1ac0",
+      "superseded_candidate_catalog_git_blob_sha1": "87513eff5847f1fe1e7831abcc102dcea6c3844a",
+      "superseded_observed_at_utc": "2026-10-27T04:03:13Z",
+      "replayed_at_utc": "2026-10-29T14:14:20Z"
+    }
+  ],
+  "claim_ceiling": "Offline planner routing only; the candidate was not invoked, no provider was contacted, and no execution permission was granted.",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "route_profile": {
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ],
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "UTF-8 JSON matching execution-candidate-pareto-input-r0 with 2–20 paired candidates and one caller-declared resource metric."
+    ],
+    "required_outputs": [
+      "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+    ],
+    "task_id": "paired-execution-candidate-performance-resource-analysis",
+    "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7"
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "expected_decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "expected_selected_tool_ids": [],
+      "execution_authorized": false,
+      "expected_execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "selected_permissions": [],
+      "relevant_rejections": [
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "paired-execution-candidate-performance-resource-analysis",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "INCOMPLETE",
+        "selected_tools": [],
+        "required_outputs": [
+          "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+        ],
+        "covered_outputs": [],
+        "unmet_outputs": [
+          "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+        ],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.select_handoff_advisories",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_datacite_doi_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_crossref_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+        }
+      },
+      "planner_output_sha256": "3c68d9edfe69587d6151a8739bb7c191ffd6db298e944e385b1b10beb5ec8ef5"
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "decision": "COMPLETE",
+      "expected_decision": "COMPLETE",
+      "selected_tool_ids": [
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "expected_selected_tool_ids": [
+        "maintenance.summarize_execution_candidate_pareto_frontier"
+      ],
+      "execution_authorized": false,
+      "expected_execution_authorized": false,
+      "router_provider_calls": 0,
+      "candidate_invoked": false,
+      "selected_permissions": [
+        {
+          "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+          "permissions": {
+            "read_paths": [
+              "ignition/tools/toolbox_execution_pareto_frontier.py"
+            ],
+            "write_paths": [],
+            "network": false,
+            "secrets": false,
+            "billing": false,
+            "external_actions": false
+          }
+        }
+      ],
+      "relevant_rejections": [],
+      "result": {
+        "schema_version": "ignition-tool-route-plan-r0",
+        "task_id": "paired-execution-candidate-performance-resource-analysis",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER",
+        "allowed_network_hosts": [],
+        "network_authority_binding": "NO_NETWORK_HOSTS_ALLOWED",
+        "decision": "COMPLETE",
+        "selected_tools": [
+          {
+            "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier",
+            "kind": "EXPERIMENTAL_OPTIONAL_TOOL",
+            "availability": "EXPERIMENTAL_AVAILABLE",
+            "input_types": [
+              "UTF-8 JSON matching execution-candidate-pareto-input-r0 with 2–20 paired candidates and one caller-declared resource metric."
+            ],
+            "output_types": [
+              "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+            ],
+            "execution_mode": "READ_ONLY_RUN",
+            "permission_mode": "READ_ONLY_CALLER_SUPPLIED_PAIRED_EVALUATION_JSON",
+            "permissions": {
+              "read_paths": [
+                "ignition/tools/toolbox_execution_pareto_frontier.py"
+              ],
+              "write_paths": [],
+              "network": false,
+              "secrets": false,
+              "billing": false,
+              "external_actions": false
+            },
+            "explicit_owner_authorization_required": false,
+            "dependencies": [],
+            "declared_effect_rank": 0,
+            "pre_invocation_conditions": [
+              "Only when the task explicitly compares candidate execution outcomes on the same case/trial set, evaluator, environment, and one resource metric.",
+              "The baseline candidate is named; each trial outcome is known PASS or FAIL. Missing resource cost stays null and suppresses the frontier.",
+              "The caller declares one task-set digest, evaluator digest, environment reference, and a shared resource metric with a single unit.",
+              "The caller supplies at least two candidate revisions and the same complete case/trial identifiers for each candidate.",
+              "The candidate remains default-off and requires explicit experimental allowlisting; route planning does not authorize execution.",
+              "The task explicitly needs an observed outcome/resource tradeoff summary and accepts caller-declared, unauthenticated measurements."
+            ],
+            "claim_ceiling": "Caller-declared paired empirical pass counts and arithmetic mean of one declared resource metric over the supplied rows only. No source authentication, inferential significance, generalization, causality, savings, deployment choice, route authority, or scientific validity is established.",
+            "covers_required_outputs": [
+              "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+            ]
+          }
+        ],
+        "required_outputs": [
+          "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+        ],
+        "covered_outputs": [
+          "Exact empirical pass-rate and mean-cost fractions, baseline floor, dominated/frontier status, input and tool digests, and explicit non-claims."
+        ],
+        "unmet_outputs": [],
+        "rejected_candidates": [
+          {
+            "tool_id": "collaboration.preflight_receiver_handoff",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.select_handoff_advisories",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_agent_episode_binding",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.validate_portable_research_episode",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "collaboration.verify_handoff_artifact_files",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "executor.reference_conformance",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "external.live_invocation",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "foundation.batch_resolve_current_asset_references",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.read_current_asset_card",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "foundation.resolve_current_asset",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "function_os.run_bounded_symbolic_spec",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "governance.preflight_declared_permission_delta",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.adaptive_toolbox_route_planner",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "ignition.recover_current_state",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "ignition.select_bounded_thinking_operation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.assemble_context_packet",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.cluster_source_brief",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.collide_object",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.navigate_raw_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.preflight_reusable_context",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "knowledge.project_results",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.read_foundation",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_claim",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "knowledge.validate_evidence_link",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "language_thought.project_bounded_meaning",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.attribute_actions_validation_evidence",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_repeated_step_sequences",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_actions_validation_target_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_audit_findings",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_context_packet_variants",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.compare_toolbox_component_coverage",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_exact_head_check_observations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.inspect_repository",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "maintenance.preflight_execution_effect_receipt",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_failure_anchored_recovery",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_governed_improvement_transition",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.preflight_producer_consumer_semantics",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_interval_union",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_actions_step_timeline",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.summarize_component_path_residue",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "maintenance.validate_checkpoint",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "planning.compare_task_decomposition_solvability",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "reasoning.search_structural_analogies",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method",
+            "reason": "EXECUTION_MODE_NOT_ALLOWED"
+          },
+          {
+            "tool_id": "repository.apply_iteration_method_1_3",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.audit_pubmed_updates_from_doi",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.bind_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_crossref_reference_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_evidence_update_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_ch4_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_co2_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_n2o_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_noaa_sf6_source_surfaces",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.compare_publication_metadata_snapshots",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.coordinate_obligations",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.inspect_pubmed_update_links",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_arxiv_paper_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_datacite_doi_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_ch4_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_co2_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_n2o_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.lookup_openalex_work_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_crossref_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.match_pubmed_citation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_g1_goal_intake",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.preflight_grounded_ideation",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.probe_counterfactual_fragility",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.reos_full",
+            "reason": "NOT_CURRENT_CALLABLE"
+          },
+          {
+            "tool_id": "research.resolve_europe_pmc_fulltext_locations",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.resolve_pubmed_identifiers",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_arxiv_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_crossref_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_europe_pmc_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_openalex_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.search_pubmed_query",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_evidence_program_snapshot",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.validate_reos_light",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "research.verify_crossref_metadata",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "research.verify_offline_source_snapshot_run",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "runtime.inspect_declared_pack_catalog",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.build_archify_derived_ir",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "visualization.render_derived_system_view",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.apply_editorial_method",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          },
+          {
+            "tool_id": "writing.preflight_cognitive_migration_revision",
+            "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+          },
+          {
+            "tool_id": "writing.validate_publication_surface",
+            "reason": "NO_INPUT_TYPE_MATCH"
+          }
+        ],
+        "selection_rule": "COVER_REQUIRED_OUTPUTS_THEN_MINIMIZE_ADDED_PERMISSION; GREEDY_NOT_PROVEN_GLOBAL_OPTIMUM",
+        "cost_estimate": {
+          "status": "UNKNOWN",
+          "reason": "No comparable measured cost data is declared for the candidate operations."
+        },
+        "expansion_rule": "Add another tool only when a verified result leaves a required output or quality check unmet; preserve prior failures and permissions.",
+        "execution_authorized": false,
+        "claim_ceiling": "Typed route proposal from the checked local operation registry and optional cards only; the caller-supplied current_ref and allowed_network_hosts are echoed but not authority-verified; no tool invocation, permission grant, Owner approval, scientific validity or Current promotion is established.",
+        "source_refs": {
+          "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+          "experimental_candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3"
+        }
+      },
+      "planner_output_sha256": "384b13659093499deb8abe0e6daefd84337dcdcf2fd576537feab6259e280551"
+    }
+  ],
+  "schema_version": "execution-candidate-pareto-route-evidence-r0",
+  "source_refs": {
+    "candidate_catalog": "ignition/data/operations/toolbox-candidate-cards-r0.json",
+    "planner": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "route_profile": "ignition/data/operations/toolbox-execution-pareto-frontier-route-profile-r0.json"
+  },
+  "tool_id": "maintenance.summarize_execution_candidate_pareto_frontier"
+}

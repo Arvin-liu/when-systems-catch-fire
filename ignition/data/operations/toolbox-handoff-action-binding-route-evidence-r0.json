@@ -1,0 +1,102 @@
+{
+  "schema_version": "toolbox-handoff-action-binding-route-evidence-r0",
+  "status": "PASS_EXPECTED_DEFAULT_OFF_AND_SCOPE_BEHAVIOR",
+  "tool_id": "collaboration.preflight_handoff_action_binding",
+  "evidence_level": "SYNTHETIC_ONLY",
+  "planner": "ignition/tools/operations/plan_ignition_operation_run.py::plan_tool_route",
+  "source_refs": {
+    "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+    "candidate_catalog_git_blob_sha1": "35d86bb15f6e5e21f26b82c42a7a498cf8135fa6"
+  },
+  "cases": [
+    {
+      "case": "default_off",
+      "task_profile": {
+        "task_id": "route-default-off",
+        "current_ref": "caller-ref:synthetic-handoff-route",
+        "input_types": [
+          "federated_handoff_action_binding_records"
+        ],
+        "required_outputs": [
+          "handoff_action_binding_result"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "explicit_allowlist": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "target_rejection": [
+        "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+      ],
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER"
+    },
+    {
+      "case": "explicit_matching_task",
+      "task_profile": {
+        "task_id": "route-explicit-match",
+        "current_ref": "caller-ref:synthetic-handoff-route",
+        "input_types": [
+          "federated_handoff_action_binding_records"
+        ],
+        "required_outputs": [
+          "handoff_action_binding_result"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "explicit_allowlist": [
+        "collaboration.preflight_handoff_action_binding"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "collaboration.preflight_handoff_action_binding"
+      ],
+      "target_rejection": [],
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER"
+    },
+    {
+      "case": "explicit_unrelated_task",
+      "task_profile": {
+        "task_id": "route-unrelated-input",
+        "current_ref": "caller-ref:synthetic-handoff-route",
+        "input_types": [
+          "plain_article_markdown"
+        ],
+        "required_outputs": [
+          "handoff_action_binding_result"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ]
+      },
+      "explicit_allowlist": [
+        "collaboration.preflight_handoff_action_binding"
+      ],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "target_rejection": [
+        "NO_INPUT_TYPE_MATCH"
+      ],
+      "execution_authorized": false,
+      "cost_estimate": {
+        "status": "UNKNOWN",
+        "reason": "No comparable measured cost data is declared for the candidate operations."
+      },
+      "current_ref_binding": "CALLER_SUPPLIED_NOT_RESOLVED_BY_THIS_PLANNER"
+    }
+  ],
+  "claim_ceiling": "Planner proposal only. Explicit allowlisting does not invoke the tool, validate a real task, authenticate caller-supplied current_ref, grant permissions, or authorize a handoff."
+}

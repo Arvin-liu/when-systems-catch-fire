@@ -176,7 +176,7 @@
   "owner_authorization_integrity": {
     "repository": "Arvin-liu/1111",
     "branch": "main",
-    "record_path": "instructions/goal-mode/IGNITION-2026-10-18-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R0.json",
+    "record_path": "instructions/goal-mode/IGNITION-2026-10-24-R3-ONE-TIME-TRANSITION-AUTHORIZATION-R1.json",
     "signature_verification_source": "GitHub REST commit.verification",
     "require_verified": true,
     "require_reason": "valid",

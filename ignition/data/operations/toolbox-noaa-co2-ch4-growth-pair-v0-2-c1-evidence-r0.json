@@ -1,0 +1,56 @@
+{
+  "schema_version": "toolbox-noaa-co2-ch4-growth-pair-v0-2-c1-evidence-r0",
+  "evidence_type": "C1_SAME_TASK_VERSION_COMPARISON_AND_CAPABILITY_EXTENSION",
+  "observed_on": "2026-10-27",
+  "candidate_tool_id": "research.pair_noaa_co2_ch4_growth_by_year",
+  "prior_tool_version": "0.1.0",
+  "candidate_tool_version": "0.2.0",
+  "disposition": "SAME_TOOL_ID_VERSION_UPGRADE_SUPPORTED",
+  "two_gas_same_task": {
+    "prior_input_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-input-r0.json",
+    "prior_output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-real-task-output-r0.json",
+    "candidate_output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-v0-2-real-task-output-r1.json",
+    "input_payload_sha256": "650452979fe4daa701e0d7b5b78eb7ff57b5633a025add5283fa8febf3231a3c",
+    "prior_output_canonical_sha256": "07f2298f0fb14fe3268eaa2fba0db728f9f38140772c0802caef70d0618942c3",
+    "candidate_output_canonical_sha256": "0ea2bf38ee9421185633ed8d2b7810760c4d74d1658a5c2ca41cf879c5025871",
+    "comparison": "EXACT_SEMANTIC_PARITY_AFTER_NORMALIZING_ONLY_OUTPUT_SCHEMA_VERSION_AND_TOOL_VERSION",
+    "paired_year_count": 3,
+    "cohort_capture_span_seconds": 3635,
+    "all_prior_rows_metrics_provenance_and_claim_bounds_preserved": true
+  },
+  "three_gas_extension": {
+    "input_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-input-r1.json",
+    "output_path": "ignition/data/operations/toolbox-noaa-co2-ch4-growth-pair-n2o-extension-real-task-output-r1.json",
+    "input_payload_sha256": "271126562877358bba1209b1b6ac80f3fa29ef41d64d4da4c60d69fd9231e444",
+    "output_canonical_sha256": "8f9963a69c0faa666771d12236da5f56c69986b63f0d4fbc0bf0e18bd9e2dc91",
+    "species": [
+      "co2",
+      "ch4",
+      "n2o"
+    ],
+    "years": [
+      2023,
+      2024,
+      2025
+    ],
+    "n2o_page_annual_increase_ppb": [
+      "1.01",
+      "1.02",
+      "1.23"
+    ],
+    "three_gas_years_with_two_surface_values": 3,
+    "three_gas_years_with_missing_surface_values": 0,
+    "cross_gas_arithmetic_performed": false,
+    "simultaneous_capture_claimed": false,
+    "source_retrieval_performed_by_pairer": false,
+    "upstream_n2o_source_capture_range": {
+      "end_year": 2025,
+      "start_year": 2023
+    }
+  },
+  "limits": [
+    "The evidence compares the same captured 2023-2025 task; it does not refresh or independently authenticate NOAA data.",
+    "No CPU, latency, analyst-time, or broad scientific utility benchmark was performed.",
+    "The output aligns year keys and preserves three independent gas fields; it does not support cross-gas arithmetic, physical comparability, attribution, emissions, or causation."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "toolbox-actions-interval-union-source-binding-r0",
+  "blueprint": {
+    "repository": "Arvin-liu/ignition-architecture-workbench",
+    "pull_request": 85,
+    "head": "77d308ea132a4952d151cab1d81f9f9c9f44f55c",
+    "semantic_goal_id": "G-FOUNDATION-ECONOMICS-R0",
+    "title": "Blueprint: HarnessPro Pareto RSI lessons and P0 Foundation CI verification economics",
+    "authority_boundary": "Read-only attribution only; no required-check, workflow, gate, or Foundation rerun authority."
+  },
+  "selected_slice": "Summarize observed job wall-clock interval union and overlap across caller-supplied Actions snapshots.",
+  "not_claimed": [
+    "billable minutes or cash cost",
+    "savings from job grouping or reduced validation",
+    "CI sufficiency or permission to alter required checks",
+    "source authentication by the offline analyzer"
+  ],
+  "dependency_status": "The Formal #264 snapshots and existing offline parsers are available; no new service, app, provider, secret, billing, or hardware dependency is introduced."
+}

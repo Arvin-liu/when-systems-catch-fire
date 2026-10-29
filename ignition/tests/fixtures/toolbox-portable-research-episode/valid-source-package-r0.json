@@ -1,0 +1,158 @@
+{
+  "schema_version": "ignition-portable-research-episode-r0",
+  "episode_id": "episode-research-42",
+  "package_revision": "package-v2",
+  "import_mode": "SOURCE_PACKAGE",
+  "required_artifact_ids": ["source-capture", "analysis-report"],
+  "artifacts": [
+    {
+      "artifact_id": "source-capture",
+      "version_id": "v1",
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "parent_ref": null,
+      "dependency_refs": [],
+      "availability": "INCLUDED",
+      "omission_reason": null,
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "analysis-report",
+      "version_id": "v1",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "source-capture",
+          "version_id": "v1",
+          "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        }
+      ],
+      "availability": "INCLUDED",
+      "omission_reason": null,
+      "required": true,
+      "is_current": false
+    },
+    {
+      "artifact_id": "analysis-report",
+      "version_id": "v2",
+      "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "parent_ref": {
+        "artifact_id": "analysis-report",
+        "version_id": "v1",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "dependency_refs": [
+        {
+          "artifact_id": "source-capture",
+          "version_id": "v1",
+          "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        }
+      ],
+      "availability": "INCLUDED",
+      "omission_reason": null,
+      "required": true,
+      "is_current": true
+    }
+  ],
+  "executions": [
+    {
+      "execution_id": "source-analysis-run",
+      "status": "ATTEMPTED",
+      "run_ref": {"run_id": "run-42", "attempt": 1, "evidence_ref": "receipt://run-42/attempt-1"},
+      "used_artifact_refs": [
+        {
+          "artifact_id": "source-capture",
+          "version_id": "v1",
+          "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        }
+      ],
+      "attached_artifact_refs": [
+        {
+          "artifact_id": "source-capture",
+          "version_id": "v1",
+          "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        },
+        {
+          "artifact_id": "analysis-report",
+          "version_id": "v2",
+          "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      ],
+      "produced_artifact_refs": [
+        {
+          "artifact_id": "analysis-report",
+          "version_id": "v1",
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      ],
+      "not_executed_reason": null
+    },
+    {
+      "execution_id": "planned-review-step",
+      "status": "PLANNED",
+      "run_ref": null,
+      "used_artifact_refs": [],
+      "attached_artifact_refs": [
+        {
+          "artifact_id": "analysis-report",
+          "version_id": "v2",
+          "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      ],
+      "produced_artifact_refs": [],
+      "not_executed_reason": null
+    },
+    {
+      "execution_id": "revision-run",
+      "status": "EXECUTED",
+      "run_ref": {"run_id": "run-43", "attempt": 1, "evidence_ref": "receipt://run-43/attempt-1"},
+      "used_artifact_refs": [
+        {
+          "artifact_id": "source-capture",
+          "version_id": "v1",
+          "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        },
+        {
+          "artifact_id": "analysis-report",
+          "version_id": "v1",
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      ],
+      "attached_artifact_refs": [],
+      "produced_artifact_refs": [
+        {
+          "artifact_id": "analysis-report",
+          "version_id": "v2",
+          "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      ],
+      "not_executed_reason": null
+    },
+    {
+      "execution_id": "optional-cleanup-step",
+      "status": "NOT_EXECUTED",
+      "run_ref": null,
+      "used_artifact_refs": [],
+      "attached_artifact_refs": [],
+      "produced_artifact_refs": [],
+      "not_executed_reason": "The optional cleanup step was outside this package task."
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": "review-v1",
+      "reviewer_ref": "human:reviewer-7",
+      "target_ref": {
+        "artifact_id": "analysis-report",
+        "version_id": "v1",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "status": "SUPPORTS",
+      "scope": "Historical review of analysis-report v1 only.",
+      "reviewed_at_utc": "2026-10-20T12:00:00Z"
+    }
+  ],
+  "omissions": [],
+  "fork_id_mappings": []
+}

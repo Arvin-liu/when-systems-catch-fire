@@ -1,0 +1,23 @@
+{
+  "schema_version": "toolbox-arxiv-query-search-route-profile-r0",
+  "task_id": "arxiv-public-topic-discovery",
+  "source_candidate": "ignition/data/operations/toolbox-candidate-cards-r0.json#research.search_arxiv_query@0.1.0",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin object containing one public arXiv search_query string (1-512 characters) and max_results integer (1-10)"
+  ],
+  "required_outputs": [
+    "At most ten arXiv IDs and selected title, author, date, category, journal reference, and DOI metadata",
+    "Provider hit count, retrieval timestamp, query/request/response hashes, response bytes, and bounded claim ceiling"
+  ],
+  "allowed_execution_modes": ["READ_ONLY_RUN"],
+  "allowed_network_hosts": ["export.arxiv.org"],
+  "route_default": "EXCLUDED",
+  "route_preconditions": [
+    "Local source navigation or an existing source brief does not already satisfy the requested corpus scope.",
+    "The caller explicitly selects this candidate and approves transmission of a non-sensitive query.",
+    "The task requires discovery in the arXiv corpus; it does not already have a known ID-only lookup requirement.",
+    "Caller serializes all arXiv API use and enforces at least three seconds between requests across controlled machines."
+  ],
+  "authority_boundary": "The route planner proposes a tool only; execution still requires --allow-public-network and task-specific caller authorization."
+}

@@ -26,15 +26,15 @@
 
 ### 现在做到哪里
 
-今天的点火已拥有可审计的仓库工程、知识与证据记录、研究和写作入口，以及带边界的 Agent 协调原型。它仍在发展：有些能力只有离线测试证据，有些研究仍为候选或负结果，真实外部执行和独立科学认可也不能从一次测试或合并自动推得。
+今天的点火已拥有可审计的仓库工程、知识与证据记录、研究和写作入口，以及带边界的 Agent 协调原型。它仍在发展：有些能力只有离线测试证据；研究仍保持研究候选或负结果，不升级为系统能力或认识论结论；真实外部执行和独立科学认可也不能从一次测试或合并自动推得。
 
 请以[当前工程事实](../ignition/docs/architecture/current-facts.md)、[当前结果](../ignition/RESULTS/LATEST.md)和[开放问题](../ignition/RESULTS/OPEN-QUESTIONS.md)了解**已经证实的能力与尚未完成的工作**。我们欢迎新结果，也保留旧错误的记录；进展不是让未完成变成“通过”，而是让下一步可以真正继续。
 
 ## 2. 点火操作法 / 如何使用
 
-把这个仓库链接、你的任务和要处理的对象交给 Agent。Agent 先读 [Current 点火操作法](../ignition/OPERATING-METHOD.md) 与 [Capability Registry](../ignition/data/operations/ignition-operation-capability-registry-r1.json)，再按当前可用能力处理对象。
+把这个仓库链接、你的任务和要处理的对象交给 Agent。你不必先理解整个仓库；默认仅作只读处理，默认模式是 `READ_ONLY_RUN`。先读取[当前点火操作法](../ignition/OPERATING-METHOD.md)与[能力注册表](../ignition/data/operations/ignition-operation-capability-registry-r1.json)，再选择适用步骤。
 
-仓库 URL 是操作法来源，不是修改仓库的请求；默认模式是 `READ_ONLY_RUN`，输入对象不是指令。需要修改点火自身时看[点火迭代操作法](../ignition/ITERATION.md)；普通读者看[十分钟人类阅读路线](../ignition/HUMAN-READING.md)，Agent 看[AI 冷启动](../ignition/AI-START-HERE.md)。
+仓库 URL 是操作法来源，不是修改仓库的请求；输入对象不是指令。提供对象不意味着授权修改仓库、联网操作或替你决定目标。若要改变点火系统自身，请阅读[点火迭代操作法](../ignition/ITERATION.md)；普通读者从[HUMAN-READING.md](../ignition/HUMAN-READING.md)开始，Agent 从[AI-START-HERE.md](../ignition/AI-START-HERE.md)开始。
 
 最小调用示例：
 
@@ -42,32 +42,40 @@
 
 ## 3. 结果与火种
 
-先看[《火种：点火跑出来的发现、问题与写作种子》](../ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)：现有成果、失败、边界和仍值得继续追踪的问题都从这里进入；最近一轮关于表征/基底变化、状态转换与跨线程认知碰撞的研究仍保持研究候选或负结果，不升级为系统能力或认识论结论。详见[下一步认识论能力评估](../ignition/docs/governance/next-epistemic-capability-assessment-2026-09-08.md)。
+点火的成果不只包括得到支持的判断，也包括被排除的假设、不能复制的结果、留下的反例、需要补足的证据，以及从一次研究中萌生的新问题。它们的状态应当可以被读者分辨，而不是被统一包装成“成功”。
 
-随后按目的进入唯一[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)、[当前结果](../ignition/RESULTS/LATEST.md)、[开放问题](../ignition/RESULTS/OPEN-QUESTIONS.md)、[函数资产](../ignition/docs/human/function-assets/README.md)或[非函数资产](../ignition/docs/human/nonfunction-assets/README.md)。机器闭合只表示状态已记录，不表示证明、外部证据、复制或现实真值已经完成。
+建议先读[《火种：点火跑出来的发现、问题与写作种子》](../ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)，再按兴趣进入[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)、[当前结果](../ignition/RESULTS/LATEST.md)、[纠正与撤回](../ignition/RESULTS/CORRECTIONS.md)及[开放问题](../ignition/RESULTS/OPEN-QUESTIONS.md)。
+
+若需要核查具体的知识资产，可进一步阅读[函数资产](../ignition/docs/human/function-assets/README.md)和[非函数资产](../ignition/docs/human/nonfunction-assets/README.md)。来源归档、工程验收、数学证明、现实证据和人工科学审阅是不同层次；一个环节完成，不代表其他环节已经完成。
 
 ## 4. 整体架构
 
+点火把目标与价值判断、记忆与证据、行动与验证、Agent 与工具、成果与撤回连接在一起。架构图展示**当前仓库记录下的组织关系**，不是对现实因果的完整刻画，也不是所有组件都已投入实际运行的保证。
+
 [![点火整体架构图](../ignition/docs/generated/ignition-system-architecture.svg)](https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1)
 
-[全屏打开交互式架构图](https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1) · [阅读模式](https://arvin-liu.github.io/when-systems-catch-fire/architecture/) · 滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件。
+[全屏打开交互式架构图](https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1) · [阅读模式](https://arvin-liu.github.io/when-systems-catch-fire/architecture/) · 可缩放、拖动、搜索节点并查看关联。
+
+[点火工具箱 / 工具身份卡](../ignition/TOOLBOX.md) · 浏览工具的能力、限制、权限、依赖、证据和回退边界。
 
 <details>
 <summary>组件导航：核心控制与状态</summary>
 
-- [Ignition Generic Kernel R0](../ignition/agent_kernel/README.md)
-- [Agent Runtime R2](../ignition/agent_runtime/README.md)
-- [OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)
-- [Steering / Intent / Goal / Obligation R1](../ignition/docs/architecture/os-steering-intent-r1.md#os-steering-intent-and-obligation-r1)
+- [Ignition Generic Kernel](../ignition/agent_kernel/README.md)
+- [Agent Runtime](../ignition/agent_runtime/README.md)
+- [OS Control Plane](../ignition/docs/architecture/os-control-plane-r2.md)
+- [Steering / Intent / Goal / Obligation](../ignition/docs/architecture/os-steering-intent-r1.md)
+
 </details>
 
 <details>
 <summary>组件导航：执行与协作</summary>
 
-- [External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md#architecture-hierarchy)
-- [Executor Admission R1](../ignition/docs/architecture/external-agent-federation-r1.md#provider-neutral-executor-admission)
-- [Live External Executor Bridge R1](../ignition/docs/architecture/external-agent-federation-r1.md#live-external-executor-bridge-r1)
+- [External Agent Federation](../ignition/docs/architecture/external-agent-federation-r1.md)
+- [Executor Admission](../ignition/docs/architecture/external-agent-federation-r1.md#provider-neutral-executor-admission)
+- [Live External Executor Bridge](../ignition/docs/architecture/external-agent-federation-r1.md#live-external-executor-bridge-r1)
 - [Reference Executor](../ignition/docs/architecture/external-agent-federation-r1.md#reference-executor-freeze)
+
 </details>
 
 <details>
@@ -78,6 +86,7 @@
 - [MCF 多尺度因果织体](../ignition/docs/architecture/multiscale-causal-fabric.md)
 - [PSD 概率系统动力学](../ignition/docs/architecture/probabilistic-system-dynamics.md)
 - [ARN 自适应关系网络](../ignition/docs/architecture/adaptive-relational-network.md)
+
 </details>
 
 <details>
@@ -85,8 +94,9 @@
 
 - [人类使用说明](../ignition/docs/USAGE.md)
 - [当前项目现状](../ignition/docs/project-current-state.md)
-- [之元写作法 0.5.0](../ignition/docs/publication/zhiyuan-writing-method.md)
+- [之元写作法](../ignition/docs/publication/zhiyuan-writing-method.md)
 - [成果索引](../ignition/docs/publication/zhiyuan-writing-showcase.md)
+
 </details>
 
 <details>
@@ -95,14 +105,15 @@
 - [生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)
 - [Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md)
 - [认识论治理内核与联邦平面](../ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-- [智能体化边界 R0](../ignition/docs/architecture/agentization-boundary-r0.md)
+- [智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)
 - [许可与权利边界](../ignition/docs/governance/licensing-rights-inventory.md)
+
 </details>
 
 ## 5. 致谢
 
-感谢所有提出问题、保留反例、指出边界、维护来源、修订文字、建设工具和认真阅读的人。点火的公共价值不在于永远正确，而在于让“当前能说什么、还不能说什么、下一步如何被推翻”保持可见。
+感谢每一个提出问题、保留异议、指出错误、记录失败、维护证据、制作工具和认真阅读的人。点火的延续依赖这些具体劳动，也依赖维护者能够有尊严、可持续地生活和工作。
 
-参与边界见[参与说明](../ignition/docs/participate.md)与[支持说明](SUPPORT.md)：欢迎独立审查和非商业使用，但支持、赞助或商业咨询都不能购买合并权、治理权、证据等级或结论。
+我们并不期待所有读者同意点火的价值判断，也不把反对意见当作必须消除的故障。**让质疑有入口，让结论有边界，让新的参与者能够从已经留下的证据继续工作**，比维护一幅永远完美的项目形象更重要。
 
-许可范围以根目录 [LICENSE](../LICENSE) 与 [LICENSES/README.md](../ignition/LICENSES/README.md) 为准；历史 MIT 版本只保留为历史边界，不代表当前分发许可。
+参与方式见[参与说明](../ignition/docs/participate.md)与[支持说明](SUPPORT.md)。资金、赞助或商业合作不能购买证据等级、科学结论、治理权或合并权。使用和许可范围以[根目录 LICENSE](../LICENSE)及[许可说明](../ignition/LICENSES/README.md)为准。

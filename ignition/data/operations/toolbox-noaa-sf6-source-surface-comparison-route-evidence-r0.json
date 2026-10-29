@@ -1,0 +1,329 @@
+{
+  "schema_version": "toolbox-noaa-sf6-source-surface-comparison-route-evidence-r0",
+  "evidence_type": "DEFAULT_OFF_MINIMUM_SUFFICIENT_TASK_SCOPED_ROUTING_EXPERIMENT",
+  "observed_at_utc": "2026-10-27T00:43:30Z",
+  "candidate_tool_id": "research.compare_noaa_sf6_source_surfaces",
+  "compared_existing_tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+  "candidate_catalog_git_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "current_registry_git_blob_sha1": "21fe1bfcdb0d9762edd60339aca14f1040393fc7",
+  "routing_contract_sha256": "e3cf2e32e241d6e908c92d148a9b0ac5ba52940953def0b554ba7acc28cc3fb3",
+  "route_profile_path": "ignition/data/operations/toolbox-noaa-sf6-source-surface-comparison-route-profile-r0.json",
+  "route_profile_sha256": "db1be5d622627607acd53ff26bbcfd213c41445b51f7ce00aad017c15cdc3c60",
+  "route_trials_replayed": 8,
+  "all_expected_decisions_reproduced": true,
+  "route_trials": [
+    {
+      "scenario": "DEFAULT_COMPARATOR",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+          "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "23a89c11e9caef1c3d33de17c45c46462be87a3adee10a7c6c11d940627b457d"
+    },
+    {
+      "scenario": "EXPLICIT_COMPARATOR_EXACT_HOST",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+          "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "09bc8050e0bdddc4dde13ba298c6175cc73ab3c78e099c2ef4c3d1615b7a8f1c"
+    },
+    {
+      "scenario": "COMPARATOR_HOST_MISSING",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+          "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": []
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "NETWORK_HOST_NOT_EXPLICITLY_ALLOWED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "6df1dfa5da143ef48cab30f0876f2ba5c32cce97d8fd5bf44f8867fd91b184ee"
+    },
+    {
+      "scenario": "COMPARATOR_OVERBROAD_HOSTS",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+          "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov",
+          "example.org"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "d06fc608e2e21eb0bcbf974007ba7418ac76568fbb061fa1671480daa74ba028"
+    },
+    {
+      "scenario": "COMPARATOR_WITH_RAW_LOOKUP",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+          "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.compare_noaa_sf6_source_surfaces",
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "2c4f293cc207181599448194e5505d48f735af33cf46106fb28e8ecb70a402e4"
+    },
+    {
+      "scenario": "RAW_ONLY_LOOKUP",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-raw-table-annual-growth-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+        ],
+        "required_outputs": [
+          "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "6e32858eaa4389d57287696d3568dd0dfe2d11d3a27af6588cde512108ed28e1"
+    },
+    {
+      "scenario": "RAW_ONLY_WITH_COMPARATOR",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-raw-table-annual-growth-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-annual-growth-lookup-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; range at most 50 years)"
+        ],
+        "required_outputs": [
+          "Provider-reported annual SF6 atmospheric mole-fraction increase and raw-table uncertainty in ppt for each returned year, with explicit FOUND, PARTIAL_DATA, or NO_MATCH status",
+          "Fixed NOAA source URL, retrieval timestamp, HTTP status, ETag/Last-Modified when supplied, response SHA-256, and source caveats"
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth",
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "expected_decision": "COMPLETE",
+      "expected_selected_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "49325de169760249af5d65fcf9eabdf630861c9e9523d1cf05513b43f6218c62"
+    },
+    {
+      "scenario": "COMPARATOR_TASK_LOOKUP_ONLY",
+      "task_profile": {
+        "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+        "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+        "input_types": [
+          "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+        ],
+        "required_outputs": [
+          "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+          "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+        ],
+        "allowed_execution_modes": [
+          "READ_ONLY_RUN"
+        ],
+        "allowed_network_hosts": [
+          "gml.noaa.gov"
+        ]
+      },
+      "include_experimental_tool_ids": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "expected_decision": "INCOMPLETE",
+      "expected_selected_tool_ids": [],
+      "expected_execution_authorized": false,
+      "expected_rejections": [
+        {
+          "tool_id": "research.compare_noaa_sf6_source_surfaces",
+          "reason": "EXPERIMENTAL_NOT_EXPLICITLY_INCLUDED"
+        },
+        {
+          "tool_id": "research.lookup_noaa_global_sf6_annual_growth",
+          "reason": "NO_INPUT_TYPE_MATCH"
+        }
+      ],
+      "candidate_invoked": false,
+      "network_calls_made": 0,
+      "planner_output_sha256": "6c53c7870d227427834847c2b778ded6a4ea3b721704e79b3d9f7bc95f174048"
+    }
+  ],
+  "summary": {
+    "default_off": "INCOMPLETE_NO_OPTIONAL_TOOL_SELECTED",
+    "explicit_exact_host": "COMPLETE_SELECTS_ONLY_PAIRED_COMPARATOR",
+    "missing_network_host": "INCOMPLETE_NETWORK_HOST_NOT_ALLOWED",
+    "overbroad_caller_allowlist": "COMPLETE_TOOL_STILL_RECEIVES_ONLY_DECLARED_GML_HOST",
+    "both_tools_on_comparison_task": "COMPLETE_COMPARATOR_SELECTED_RAW_LOOKUP_REJECTED_FOR_INPUT_MISMATCH",
+    "raw_only_task_with_both_included": "COMPLETE_RAW_LOOKUP_SELECTED_COMPARATOR_REJECTED_FOR_INPUT_MISMATCH",
+    "execution_authorized": false,
+    "candidate_invoked": false,
+    "network_calls_made": 0
+  },
+  "claim_ceiling": "Local route proposal only. The planner echoes caller-supplied task refs and host allowlists; it does not invoke either tool, verify Owner approval, grant permission, or establish scientific validity."
+}

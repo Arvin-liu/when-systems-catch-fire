@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "toolbox-crossref-query-search-output-r0.schema.json",
+  "title": "Crossref query search receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "status", "acquisition_status", "http_status", "source_endpoint", "retrieval_timestamp_utc", "max_results", "request_count", "query_sha256", "request_sha256", "response_sha256", "response_bytes", "source_code_sha256", "provider_hit_count", "returned_count", "usage_headers", "records", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition.crossref-query-search-r0"},
+    "tool_id": {"const": "research.search_crossref_query"},
+    "tool_version": {"const": "0.1.0"},
+    "status": {"enum": ["FOUND", "NOT_FOUND", "FAILED"]},
+    "acquisition_status": {"enum": ["OK", "HTTP_ERROR", "RATE_LIMITED", "REDIRECT_BLOCKED", "NON_JSON_RESPONSE", "RESPONSE_TIMEOUT", "RESPONSE_TOO_LARGE", "NETWORK_ERROR", "INVALID_RESPONSE"]},
+    "http_status": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+    "source_endpoint": {"const": "https://api.crossref.org/v1/works"},
+    "retrieval_timestamp_utc": {"type": "string", "format": "date-time"},
+    "max_results": {"type": "integer", "minimum": 1, "maximum": 10},
+    "request_count": {"const": 1},
+    "query_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "request_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "response_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "response_bytes": {"type": "integer", "minimum": 0, "maximum": 524288},
+    "source_code_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "provider_hit_count": {"type": ["integer", "null"], "minimum": 0},
+    "returned_count": {"type": "integer", "minimum": 0, "maximum": 10},
+    "usage_headers": {"type": "object", "maxProperties": 3, "additionalProperties": {"type": "string", "maxLength": 64}},
+    "records": {"type": "array", "maxItems": 10, "items": {"$ref": "#/$defs/record"}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["doi", "title", "publication_year", "type", "publisher", "container_title", "author_names", "author_count", "authors_truncated", "cited_by_count"],
+      "properties": {
+        "doi": {"type": ["string", "null"], "maxLength": 1100, "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"},
+        "title": {"type": ["string", "null"], "maxLength": 4096},
+        "publication_year": {"type": ["integer", "null"], "minimum": 0, "maximum": 3000},
+        "type": {"type": ["string", "null"], "maxLength": 256},
+        "publisher": {"type": ["string", "null"], "maxLength": 512},
+        "container_title": {"type": ["string", "null"], "maxLength": 4096},
+        "author_names": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 1024}},
+        "author_count": {"type": "integer", "minimum": 0, "maximum": 10000},
+        "authors_truncated": {"type": "boolean"},
+        "cited_by_count": {"type": ["integer", "null"], "minimum": 0}
+      }
+    }
+  }
+}

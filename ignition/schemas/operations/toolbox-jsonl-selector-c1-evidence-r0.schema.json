@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-jsonl-selector-c1-evidence-r0",
+  "title": "JSONL Record Selector Same-task C1 Evidence R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task", "request", "candidate", "fallback", "parity", "disposition", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition.toolbox-jsonl-selector-c1-evidence-r0"},
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "description", "source_path"],
+      "properties": {
+        "task_id": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1},
+        "source_path": {"type": "string", "pattern": "^ignition/"}
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_path", "input_sha256", "json_pointer", "equals", "max_source_bytes", "max_returned_bytes", "max_matches"],
+      "properties": {
+        "input_path": {"type": "string", "pattern": "^ignition/"},
+        "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "json_pointer": {"type": "string"},
+        "equals": {"type": ["string", "number", "boolean", "null"]},
+        "max_source_bytes": {"type": "integer", "minimum": 1},
+        "max_returned_bytes": {"type": "integer", "minimum": 1},
+        "max_matches": {"type": "integer", "minimum": 1}
+      }
+    },
+    "candidate": {"$ref": "#/$defs/observation"},
+    "fallback": {
+      "allOf": [
+        {"$ref": "#/$defs/observation"},
+        {
+          "type": "object",
+          "required": ["method"],
+          "properties": {"method": {"type": "string", "minLength": 1}}
+        }
+      ]
+    },
+    "parity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_sha256_equal", "selected_record_count_equal", "line_number_equal", "byte_offsets_equal", "record_byte_count_equal", "record_sha256_equal", "record_text_equal"],
+      "properties": {
+        "source_sha256_equal": {"const": true},
+        "selected_record_count_equal": {"const": true},
+        "line_number_equal": {"const": true},
+        "byte_offsets_equal": {"const": true},
+        "record_byte_count_equal": {"const": true},
+        "record_sha256_equal": {"const": true},
+        "record_text_equal": {"const": true}
+      }
+    },
+    "disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["comparison_status", "finding"],
+      "properties": {
+        "comparison_status": {"const": "COMPARISON_UNKNOWN"},
+        "finding": {"type": "string", "minLength": 1}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["output_path", "output_sha256", "status", "source_sha256", "source_bytes", "lines_scanned", "selected_record_count", "record"],
+      "properties": {
+        "method": {"type": "string", "minLength": 1},
+        "output_path": {"type": "string", "pattern": "^ignition/"},
+        "output_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "status": {"const": "COMPLETE"},
+        "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_bytes": {"type": "integer", "minimum": 0},
+        "lines_scanned": {"type": "integer", "minimum": 0},
+        "selected_record_count": {"const": 1},
+        "record": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["line_number", "start_byte_offset", "end_byte_offset_exclusive", "byte_count", "sha256", "text"],
+          "properties": {
+            "line_number": {"type": "integer", "minimum": 1},
+            "start_byte_offset": {"type": "integer", "minimum": 0},
+            "end_byte_offset_exclusive": {"type": "integer", "minimum": 1},
+            "byte_count": {"type": "integer", "minimum": 1},
+            "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "text": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    }
+  }
+}

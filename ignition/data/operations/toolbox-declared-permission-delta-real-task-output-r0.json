@@ -1,0 +1,36 @@
+{
+  "baseline_binding": {
+    "policy_id": "candidate-card-declared-permissions",
+    "policy_revision": "bef6bf46",
+    "snapshot_id": "bef6bf46",
+    "subject_id": "collaboration.verify_handoff_artifact_files"
+  },
+  "candidate_binding": {
+    "policy_id": "candidate-card-declared-permissions",
+    "policy_revision": "6bb27e93",
+    "snapshot_id": "6bb27e93",
+    "subject_id": "collaboration.verify_handoff_artifact_files"
+  },
+  "claim_ceiling": "Exact string-set differences between two caller-supplied grant lists only. The tool does not resolve inheritance, wildcard or path containment semantics, authenticate snapshots, inspect an effective sandbox, enforce policy, or grant authority.",
+  "counts": {
+    "baseline_grants": 1,
+    "candidate_grants": 1,
+    "declared_additions": 0,
+    "declared_removals": 0
+  },
+  "declared_additions": [],
+  "declared_removals": [],
+  "effective_policy_resolved": false,
+  "findings": [],
+  "input_sha256": "41cab48b8ba9d29fce012b325e6f539ea3aaecedd1e1274bdfea0e2a40cc089e",
+  "network_requests": 0,
+  "owner_authorization_granted": false,
+  "permission_granted": false,
+  "repository_writes": 0,
+  "sandbox_enforced": false,
+  "schema_version": "declared-permission-delta-result-r0",
+  "snapshot_authenticity": "NOT_ESTABLISHED",
+  "status": "NO_EXACT_DECLARED_DIFF",
+  "tool_id": "governance.preflight_declared_permission_delta",
+  "tool_version": "0.1.0"
+}

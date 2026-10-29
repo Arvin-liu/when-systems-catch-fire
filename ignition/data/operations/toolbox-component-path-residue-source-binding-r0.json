@@ -1,0 +1,29 @@
+{
+  "schema_version": "component-path-residue-source-binding-r0",
+  "owner_toolbox_instruction": "Arvin-liu/1111@9c9c3cdffd799c81fa28e5a3df9aad57251daae1",
+  "owner_c1_update": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682",
+  "candidate_tool_id": "maintenance.summarize_component_path_residue",
+  "candidate_status": "EXPERIMENTAL_CANDIDATE_ONLY",
+  "task_basis": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "main_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "formal_candidate_head_sha": "8caba2fd6856399b5fdd2c69e7ba66e8767569d2",
+    "exact_task": "Group the 235 unmapped_path residues from the exact-head component route preflight so a human can inspect repeated directory and filename cohorts.",
+    "source_1111_receipt": "reports/operations/IGNITION-20261026-TOOLBOX-PARETO-FRONTIER-8CABA2FD-R0-ROUTE-PREFLIGHT.json"
+  },
+  "implemented_scope": [
+    "Validate bounded, unique, normalized repository-relative unmapped_path rows.",
+    "Group paths by exact parent directory and deterministic filename-prefix cohorts.",
+    "Bind output to exact input and implementation SHA-256 digests.",
+    "Preserve uncohorted paths and emit an explicit empty mapping-suggestion record."
+  ],
+  "not_implemented": [
+    "No component ID or path pattern is proposed.",
+    "No project-components registry, validation map, workflow, branch protection, or CI gate is read or modified.",
+    "No validation targets are selected and no Owner or release authority is inferred.",
+    "No external code, package, provider, or network source is used."
+  ],
+  "dependencies": [],
+  "license_note": "Uses the Formal repository license and Python standard library only.",
+  "claim_ceiling": "The result establishes deterministic grouping of caller-supplied path strings only. It does not establish semantic ownership, path equivalence, validation scope, or approval."
+}

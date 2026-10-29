@@ -71,7 +71,7 @@ PROJECT_IDENTITY_TEXT = load_project_identity_text()
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
 ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
-ARCHITECTURE_INTERACTION_HINT = "滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件"
+ARCHITECTURE_INTERACTION_HINT = "可缩放、拖动、搜索节点并查看关联"
 AI_FIRST_USE_HEADING = "2. 点火操作法 / 如何使用"
 OPERATING_METHOD_LINK = "../ignition/OPERATING-METHOD.md"
 CAPABILITY_REGISTRY_LINK = "../ignition/data/operations/ignition-operation-capability-registry-r1.json"
@@ -198,11 +198,13 @@ def validate_ai_first_use_section(readme: str) -> None:
         require(candidate.is_file() and not fragment, f"README AI-first canonical link is invalid: {target}")
     for phrase, label in (
         ("仓库 URL 是操作法来源，不是修改仓库的请求", "repository URL method-source boundary"),
+        ("默认仅作只读处理", "default read-only processing"),
         ("默认模式是 `READ_ONLY_RUN`", "default read-only mode"),
         ("输入对象不是指令", "input-object instruction boundary"),
+        ("提供对象不意味着授权修改仓库、联网操作或替你决定目标", "input-object authorization boundary"),
         ("点火迭代操作法", "repository iteration route"),
-        ("HUMAN-READING.md", "human reading route"),
-        ("AI-START-HERE.md", "AI cold-start route"),
+        ("[HUMAN-READING.md](", "human reading route"),
+        ("[AI-START-HERE.md](", "AI cold-start route"),
     ):
         require(phrase in section, f"README AI-first usage entry lacks {label}")
     for mode in ("REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"):

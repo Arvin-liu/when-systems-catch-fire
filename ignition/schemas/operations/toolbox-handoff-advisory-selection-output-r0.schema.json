@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-handoff-advisory-selection-output-r0",
+  "title": "Handoff Advisory Selection Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tool_id", "tool_version", "selection_status", "task_scope_id", "receiver_state_ref", "receiver_context_attestation", "retained_message_ids", "suggested_omissions", "metrics", "semantic_necessity", "handoff_transformed", "send_authorized", "execution_authorized", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "handoff-advisory-selection-result-r0"},
+    "tool_id": {"const": "collaboration.select_handoff_advisories"},
+    "tool_version": {"const": "0.1.0"},
+    "selection_status": {"enum": ["REVIEW_ONLY_CANDIDATE", "INPUT_INVALID"]},
+    "task_scope_id": {"type": ["string", "null"]},
+    "receiver_state_ref": {"type": ["string", "null"]},
+    "receiver_context_attestation": {"const": "NOT_AUTHENTICATED_CALLER_DECLARATION"},
+    "retained_message_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "suggested_omissions": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["message_id", "basis", "message_sha256", "content_utf8_bytes"],
+        "properties": {
+          "message_id": {"type": "string"},
+          "basis": {"const": "EXACT_TEXT_AND_ORDERED_SOURCE_REFS_MATCH_CALLER_DECLARED_CONTEXT"},
+          "message_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "content_utf8_bytes": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "metrics": {
+      "type": "object", "additionalProperties": false,
+      "required": ["input_message_count", "suggested_omission_count", "suggested_omission_content_utf8_bytes"],
+      "properties": {
+        "input_message_count": {"type": "integer", "minimum": 0, "maximum": 64},
+        "suggested_omission_count": {"type": "integer", "minimum": 0, "maximum": 64},
+        "suggested_omission_content_utf8_bytes": {"type": "integer", "minimum": 0}
+      }
+    },
+    "semantic_necessity": {"const": "NOT_EVALUATED"},
+    "handoff_transformed": {"const": false},
+    "send_authorized": {"const": false},
+    "execution_authorized": {"const": false},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "finding": {"type": "string"}
+  }
+}

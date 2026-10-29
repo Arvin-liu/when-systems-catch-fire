@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:execution-candidate-pareto-output-r0",
+  "title": "Execution Candidate Pareto Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "analysis_status", "evaluation_context", "resource_metric", "baseline_candidate_id", "quality_floor_pass_rate_fraction", "candidates", "frontier_candidate_ids", "frontier_status", "input_sha256", "tool_sha256", "execution_authorized", "non_claims"],
+  "properties": {
+    "schema_version": {"const": "execution-candidate-pareto-output-r0"},
+    "analysis_status": {"enum": ["COMPARABLE_CALLER_DECLARED_MEASUREMENTS_NOT_AUTHENTICATED", "COMPARISON_UNDETERMINED_COST_MISSING"]},
+    "evaluation_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evaluation_id", "task_set_sha256", "evaluator_sha256", "environment_ref", "paired_case_trial_count"],
+      "properties": {
+        "evaluation_id": {"type": "string"},
+        "task_set_sha256": {"$ref": "#/$defs/sha256"},
+        "evaluator_sha256": {"$ref": "#/$defs/sha256"},
+        "environment_ref": {"type": "string"},
+        "paired_case_trial_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "resource_metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric_id", "unit", "direction"],
+      "properties": {"metric_id": {"type": "string"}, "unit": {"type": "string"}, "direction": {"const": "MINIMIZE"}}
+    },
+    "baseline_candidate_id": {"type": "string"},
+    "quality_floor_pass_rate_fraction": {"$ref": "#/$defs/fraction"},
+    "candidates": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_id", "candidate_ref", "pass_count", "trial_count", "pass_rate_fraction", "resource_metric_id", "resource_metric_unit", "mean_resource_cost_fraction", "status", "dominated_by"],
+        "properties": {
+          "candidate_id": {"type": "string"},
+          "candidate_ref": {"type": "string"},
+          "pass_count": {"type": "integer", "minimum": 0},
+          "trial_count": {"type": "integer", "minimum": 1},
+          "pass_rate_fraction": {"$ref": "#/$defs/fraction"},
+          "resource_metric_id": {"type": "string"},
+          "resource_metric_unit": {"type": "string"},
+          "mean_resource_cost_fraction": {"type": ["string", "null"], "pattern": "^\\d+(?:/\\d+)?$"},
+          "status": {"enum": ["COST_INCOMPLETE", "BELOW_BASELINE_PASS_RATE", "ABOVE_BASELINE_PASS_RATE", "DOMINATED", "ON_FRONTIER"]},
+          "dominated_by": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+        }
+      }
+    },
+    "frontier_candidate_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "frontier_status": {"enum": ["OBSERVED_FRONTIER", "NOT_COMPUTED_MISSING_COST"]},
+    "input_sha256": {"$ref": "#/$defs/sha256"},
+    "tool_sha256": {"$ref": "#/$defs/sha256"},
+    "execution_authorized": {"const": false},
+    "non_claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["measurements_authenticated", "statistical_significance_established", "task_generalization_established", "causal_improvement_established", "route_or_candidate_selected", "tool_or_harness_modified", "permission_changed"],
+      "properties": {
+        "measurements_authenticated": {"const": false},
+        "statistical_significance_established": {"const": false},
+        "task_generalization_established": {"const": false},
+        "causal_improvement_established": {"const": false},
+        "route_or_candidate_selected": {"const": false},
+        "tool_or_harness_modified": {"const": false},
+        "permission_changed": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "fraction": {"type": "string", "pattern": "^-?\\d+/\\d+$"}
+  }
+}

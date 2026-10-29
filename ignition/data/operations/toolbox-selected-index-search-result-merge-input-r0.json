@@ -1,0 +1,218 @@
+{
+  "source_results": [
+    {
+      "acquisition_status": "OK",
+      "claim_ceiling": "At most ten Crossref Works metadata rows returned for one caller-supplied query at retrieval time. The request is not exhaustive and establishes no relevance, source authenticity, metadata completeness, article content, scientific support, publication status, or scientific validity.",
+      "http_status": 200,
+      "max_results": 5,
+      "provider_hit_count": 1880808,
+      "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+      "records": [
+        {
+          "author_count": 0,
+          "author_names": [],
+          "authors_truncated": false,
+          "cited_by_count": 0,
+          "container_title": null,
+          "doi": "10.62830/mmj1-04-6",
+          "publication_year": null,
+          "publisher": "Max Healthcare Institute Limited",
+          "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care",
+          "type": "journal"
+        },
+        {
+          "author_count": 1,
+          "author_names": [
+            "Kaushaki Shankar"
+          ],
+          "authors_truncated": false,
+          "cited_by_count": 1,
+          "container_title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care",
+          "doi": "10.62830/mmj1-4-1a",
+          "publication_year": 2024,
+          "publisher": "Max Healthcare Institute Limited",
+          "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care",
+          "type": "journal-article"
+        },
+        {
+          "author_count": 1,
+          "author_names": [
+            "Kaushaki Gupta"
+          ],
+          "authors_truncated": false,
+          "cited_by_count": 1,
+          "container_title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care",
+          "doi": "10.62830/mmj1-04-6a",
+          "publication_year": 2024,
+          "publisher": "Max Healthcare Institute Limited",
+          "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care",
+          "type": "journal-article"
+        },
+        {
+          "author_count": 1,
+          "author_names": [
+            "K. Aditya Shastry"
+          ],
+          "authors_truncated": false,
+          "cited_by_count": 6,
+          "container_title": "Explainable Artificial Intelligence (XAI) in Healthcare",
+          "doi": "10.1201/9781003426073-1",
+          "publication_year": 2024,
+          "publisher": "CRC Press",
+          "title": "Artificial Intelligence for Healthcare Applications",
+          "type": "book-chapter"
+        },
+        {
+          "author_count": 1,
+          "author_names": [
+            "Dr Ritika Pan"
+          ],
+          "authors_truncated": false,
+          "cited_by_count": 1,
+          "container_title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care",
+          "doi": "10.62830/mmj1-04-6b",
+          "publication_year": 2024,
+          "publisher": "Max Healthcare Institute Limited",
+          "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care",
+          "type": "journal-article"
+        }
+      ],
+      "request_count": 1,
+      "request_sha256": "e1f98a53b061986b8640898a9267ac3328ff27d94bf87fdac5f38488d449603b",
+      "response_bytes": 2484,
+      "response_sha256": "a12b164045333f04fa4c93496129ffc50ad59b404d06b91ac4feccc39f53512f",
+      "retrieval_timestamp_utc": "2026-10-26T05:30:05.810854Z",
+      "returned_count": 5,
+      "schema_version": "ignition.crossref-query-search-r0",
+      "source_code_sha256": "95d81032c393d54fca161f797e489d0f40694d58721622c054716c17b21f9968",
+      "source_endpoint": "https://api.crossref.org/v1/works",
+      "status": "FOUND",
+      "tool_id": "research.search_crossref_query",
+      "tool_version": "0.1.0",
+      "usage_headers": {
+        "x-rate-limit-interval": "1s",
+        "x-rate-limit-limit": "1"
+      }
+    },
+    {
+      "acquisition_status": "OK",
+      "claim_ceiling": "At most ten OpenAlex-ranked Works metadata rows returned for one caller-supplied query at retrieval time. The search is not exhaustive and establishes no relevance, source authenticity, scientific support, publication status, or scientific validity.",
+      "http_status": 200,
+      "max_results": 5,
+      "provider_hit_count": 638997,
+      "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+      "records": [
+        {
+          "author_count": 6,
+          "author_names": [
+            "Fereshteh Hasanzadeh",
+            "Colin B. Josephson",
+            "Gabriella Waters",
+            "Demilade A. Adedinsewo",
+            "Zahra Azizi",
+            "James A. White"
+          ],
+          "authors_truncated": false,
+          "doi": "https://doi.org/10.1038/s41746-025-01503-7",
+          "openalex_id": "https://openalex.org/W4408314709",
+          "primary_venue": "npj Digital Medicine",
+          "publication_year": 2025,
+          "relevance_score": 183.32922,
+          "title": "Bias recognition and mitigation strategies in artificial intelligence healthcare applications",
+          "type": "article"
+        },
+        {
+          "author_count": 26,
+          "author_names": [
+            "Habiba Abdelhalim",
+            "Asude Berber",
+            "Mudassir K. Lodi",
+            "Rihi Jain",
+            "Achuth Suresh Nair",
+            "Anirudh Pappu",
+            "Kush Patel",
+            "Vignesh Venkat",
+            "Cynthia Venkatesan",
+            "Raghunandan Wable"
+          ],
+          "authors_truncated": true,
+          "doi": "https://doi.org/10.3389/fgene.2022.929736",
+          "openalex_id": "https://openalex.org/W4286628547",
+          "primary_venue": "Frontiers in Genetics",
+          "publication_year": 2022,
+          "relevance_score": 170.26207,
+          "title": "Artificial Intelligence, Healthcare, Clinical Genomics, and Pharmacogenomics Approaches in Precision Medicine",
+          "type": "article"
+        },
+        {
+          "author_count": 2,
+          "author_names": [
+            "Hyeyoung Ko",
+            "Jun‐Ho Huh"
+          ],
+          "authors_truncated": false,
+          "doi": "https://doi.org/10.3390/electronics10192421",
+          "openalex_id": "https://openalex.org/W3203074056",
+          "primary_venue": "Electronics",
+          "publication_year": 2021,
+          "relevance_score": 153.47586,
+          "title": "Electronic Solutions for Artificial Intelligence Healthcare",
+          "type": "editorial"
+        },
+        {
+          "author_count": 4,
+          "author_names": [
+            "Jan-Oliver Kutza",
+            "Niels Hannemann",
+            "Ursula Hübner",
+            "Birgit Babitsch"
+          ],
+          "authors_truncated": false,
+          "doi": "https://doi.org/10.3233/shti230409",
+          "openalex_id": "https://openalex.org/W4382631288",
+          "primary_venue": "Studies in health technology and informatics",
+          "publication_year": 2023,
+          "relevance_score": 151.8808,
+          "title": "The Representation of Trust in Artificial Intelligence Healthcare Research",
+          "type": "book-chapter"
+        },
+        {
+          "author_count": 4,
+          "author_names": [
+            "Salmani Praveena",
+            "G . Kishor Kumar",
+            "Jyothi A P",
+            "T. Vinith Anand"
+          ],
+          "authors_truncated": false,
+          "doi": "https://doi.org/10.58532/v2bs16ch28",
+          "openalex_id": "https://openalex.org/W4397041170",
+          "primary_venue": "Iterative International Publishers eBooks",
+          "publication_year": 2022,
+          "relevance_score": 147.91112,
+          "title": "ARTIFICIAL INTELLIGENCE HEALTHCARE TECHNOLOGIES IN SURGERY",
+          "type": "book-chapter"
+        }
+      ],
+      "request_count": 1,
+      "request_sha256": "e19660e37d92f38f12cce29c8aaa07ddfd02be2cfec93073be3188b69261347e",
+      "response_bytes": 47129,
+      "response_sha256": "6f79220fec231f3d27f18ca0f1716cb1f7b6c8e1afbbee49d7f5555e777a8648",
+      "retrieval_timestamp_utc": "2026-10-26T05:11:51.127704Z",
+      "returned_count": 5,
+      "schema_version": "ignition.openalex-query-search-r0",
+      "shared_client_source_sha256": "c5ea6a9109c426cf9e439c0cb31c6703039fbc52bc2a295df09ddb5b3f40e5bf",
+      "source_code_sha256": "6b1e260e61d869ecd59192888ca9e77250e208d23157aeff2f119d189e5a657a",
+      "source_endpoint": "https://api.openalex.org/works",
+      "status": "FOUND",
+      "tool_id": "research.search_openalex_query",
+      "tool_version": "0.1.0",
+      "usage_headers": {
+        "X-RateLimit-Credits-Used": "10",
+        "X-RateLimit-Limit": "1000",
+        "X-RateLimit-Remaining": "980",
+        "X-RateLimit-Reset": "67690"
+      }
+    }
+  ]
+}

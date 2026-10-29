@@ -1,0 +1,53 @@
+{
+  "schema_version": "toolbox-crossref-query-search-real-task-evidence-r1",
+  "evidence_type": "FINAL_SOURCE_REAL_TASK_OUTCOME",
+  "experiment_id": "research.search_crossref_query.public_ai_healthcare.final_source_smoke_r1",
+  "task": {
+    "description": "Retrieve at most five Crossref Works metadata rows for a public artificial-intelligence-and-healthcare topic for optional literature follow-up.",
+    "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+    "query_was_public_and_non_sensitive": true,
+    "max_results": 5,
+    "claim_ceiling": "Provider-reported bounded metadata only; no relevance review, scientific support, source authentication, or exhaustive recall was performed."
+  },
+  "execution": {
+    "entrypoint": "python3 -B ignition/tools/toolbox_crossref_query_search.py --stdin --allow-public-network",
+    "permission": "One explicit public read-only GET to api.crossref.org/v1/works; no email, API key, billing credential, repository write, redirect, or retry.",
+    "request_count": 1,
+    "raw_response_retained": false,
+    "query_echoed_in_receipt": false,
+    "response_budget_bytes": 524288,
+    "response_budget_seconds": 7
+  },
+  "tool_receipt": {
+    "schema_version": "ignition.crossref-query-search-r0",
+    "tool_id": "research.search_crossref_query",
+    "tool_version": "0.1.0",
+    "status": "FOUND",
+    "acquisition_status": "OK",
+    "http_status": 200,
+    "source_endpoint": "https://api.crossref.org/v1/works",
+    "retrieval_timestamp_utc": "2026-10-26T05:30:05.810854Z",
+    "max_results": 5,
+    "request_count": 1,
+    "query_sha256": "69f2d2965dc79930ce805e41a9dd6c60585d077d36e340f272e87eb25cfbceea",
+    "request_sha256": "e1f98a53b061986b8640898a9267ac3328ff27d94bf87fdac5f38488d449603b",
+    "response_sha256": "a12b164045333f04fa4c93496129ffc50ad59b404d06b91ac4feccc39f53512f",
+    "response_bytes": 2484,
+    "source_code_sha256": "95d81032c393d54fca161f797e489d0f40694d58721622c054716c17b21f9968",
+    "provider_hit_count": 1880808,
+    "returned_count": 5,
+    "usage_headers": {
+      "x-rate-limit-limit": "1",
+      "x-rate-limit-interval": "1s"
+    },
+    "records": [
+      {"doi": "10.62830/mmj1-04-6", "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care", "publication_year": null, "type": "journal", "publisher": "Max Healthcare Institute Limited", "container_title": null, "author_names": [], "author_count": 0, "authors_truncated": false, "cited_by_count": 0},
+      {"doi": "10.62830/mmj1-4-1a", "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care", "publication_year": 2024, "type": "journal-article", "publisher": "Max Healthcare Institute Limited", "container_title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care", "author_names": ["Kaushaki Shankar"], "author_count": 1, "authors_truncated": false, "cited_by_count": 1},
+      {"doi": "10.62830/mmj1-04-6a", "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care", "publication_year": 2024, "type": "journal-article", "publisher": "Max Healthcare Institute Limited", "container_title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care", "author_names": ["Kaushaki Gupta"], "author_count": 1, "authors_truncated": false, "cited_by_count": 1},
+      {"doi": "10.1201/9781003426073-1", "title": "Artificial Intelligence for Healthcare Applications", "publication_year": 2024, "type": "book-chapter", "publisher": "CRC Press", "container_title": "Explainable Artificial Intelligence (XAI) in Healthcare", "author_names": ["K. Aditya Shastry"], "author_count": 1, "authors_truncated": false, "cited_by_count": 6},
+      {"doi": "10.62830/mmj1-04-6b", "title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care", "publication_year": 2024, "type": "journal-article", "publisher": "Max Healthcare Institute Limited", "container_title": "Transforming Healthcare: The Role of Artificial Intelligence in Revolutionising Patient Care", "author_names": ["Dr Ritika Pan"], "author_count": 1, "authors_truncated": false, "cited_by_count": 1}
+    ],
+    "claim_ceiling": "At most ten Crossref Works metadata rows returned for one caller-supplied query at retrieval time. The request is not exhaustive and establishes no relevance, source authenticity, metadata completeness, article content, scientific support, publication status, or scientific validity."
+  },
+  "interpretation": "The response contains several related Crossref records with distinct DOIs and an item with no reported publication year. These are provider metadata observations only; they were not manually checked for scholarly relevance, record quality, or article validity."
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "toolbox-openalex-query-search-source-binding-r0",
+  "source_component": {
+    "path": "ignition/scripts/external-research/openalex_client.py",
+    "role": "EXISTING_OPENALEX_CLIENT_WITH_ADDITIVE_BOUNDED_TOOLBOX_ENTRY_POINT",
+    "legacy_search_contract_changed": false,
+    "toolbox_entrypoint_path": "ignition/tools/toolbox_openalex_query_search.py",
+    "tool_id": "research.search_openalex_query",
+    "version": "0.1.0",
+    "source_reuse": "The bounded adapter reuses the existing module and JSON work parser while adding a separate fixed-host request path; the legacy CLI and search() defaults remain unchanged."
+  },
+  "official_sources": [
+    {
+      "url": "https://help.openalex.org/api/searching/",
+      "retrieved_date": "2026-10-26",
+      "facts_used": [
+        "The Works search parameter searches title, abstract, full text, and keywords.",
+        "The default search order is relevance_score descending; the provider says that score reflects text similarity, capped citation count, and a keyword bonus.",
+        "Search requests are listed as a metered API request type; reranking adds a separate request cost. This adapter does not request reranking."
+      ]
+    },
+    {
+      "url": "https://help.openalex.org/api/paging/",
+      "retrieved_date": "2026-10-26",
+      "facts_used": [
+        "The documented per_page maximum is 100; this adapter caps a single page at ten and performs no pagination.",
+        "The provider warns against using cursor paging to download the full dataset."
+      ]
+    },
+    {
+      "url": "https://help.openalex.org/api/authentication/",
+      "retrieved_date": "2026-10-26",
+      "facts_used": [
+        "Keyless requests are supported with a provider rate budget; an API key increases the daily budget.",
+        "The provider documents request-rate limits and X-RateLimit usage headers.",
+        "An API key is account-bound; this adapter sends neither api_key nor Authorization nor mailto."
+      ]
+    }
+  ],
+  "request_contract": {
+    "method": "GET",
+    "endpoint": "https://api.openalex.org/works",
+    "query_parameters": ["search", "per_page", "select"],
+    "result_limit": {"minimum": 1, "maximum": 10},
+    "requests_per_invocation": 1,
+    "pagination": false,
+    "rerank": false,
+    "semantic_search": false,
+    "credential_fields": [],
+    "follow_redirects": false,
+    "max_response_bytes": 524288,
+    "request_timeout_seconds": 5,
+    "response_budget_seconds": 7,
+    "response_projection_excludes": ["abstract_inverted_index", "abstract", "full_text", "arbitrary_urls"]
+  },
+  "usage_cost_boundary": {
+    "provider_reports_search_usage_credits": true,
+    "adapter_sends_api_key": false,
+    "adapter_sends_account_email": false,
+    "observed_account_charge": "NOT_ESTABLISHED",
+    "smoke_usage_headers": {
+      "X-RateLimit-Limit": "1000",
+      "X-RateLimit-Remaining": "990",
+      "X-RateLimit-Credits-Used": "10",
+      "X-RateLimit-Reset": "68262"
+    }
+  },
+  "prior_art_comparison": {
+    "existing_openalex_client_has_search_function": true,
+    "existing_toolbox_openalex_adapter_accepts_topic_query": false,
+    "existing_general_cli_returns_abstracts": true,
+    "existing_general_cli_default_mailto": "research@ignition.local",
+    "toolbox_delta": "Expose the existing provider's query capability through a typed, one-call, no-key, no-placeholder-email, metadata-only, bounded, explicit-approval toolbox route. This is an adapter-safety and discoverability increment, not a claim that the provider search capability itself is new."
+  },
+  "claim_ceiling": "One provider response and its selected metadata/usage fields at retrieval time only; no exhaustive recall, human relevance, source authenticity, article content, scientific support, or account billing outcome is established."
+}

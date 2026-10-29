@@ -1,0 +1,66 @@
+{
+  "schema_version": "ignition.toolbox-jsonl-selector-c1-evidence-r0",
+  "task": {
+    "task_id": "WB86-TR26-06-LOCAL-INDEX-ROW-LOOKUP-R0",
+    "description": "Retrieve the checked-out Knowledge index row for one exact search_id and inspect its declared source/path metadata.",
+    "source_path": "ignition/data/governance/knowledge-experience/search-index.jsonl"
+  },
+  "request": {
+    "input_path": "ignition/data/operations/toolbox-jsonl-selector-real-task-input-r0.json",
+    "input_sha256": "88cac643c913d4e26d2ead4ef76ff190aa052fc5ad2a03119510afe361e1e331",
+    "json_pointer": "/search_id",
+    "equals": "NFC-b39db6e6d352f4f6",
+    "max_source_bytes": 25000000,
+    "max_returned_bytes": 8192,
+    "max_matches": 1
+  },
+  "candidate": {
+    "output_path": "ignition/data/operations/toolbox-jsonl-selector-real-task-r0.json",
+    "output_sha256": "6cd98b2afed9fca3545cea76697e0100da450d5c99cc8e0c76ebd1fffbad1de8",
+    "status": "COMPLETE",
+    "source_sha256": "830628dfad1900aa16c742d8e6dddee389b716fef7a256b3b92406286645d718",
+    "source_bytes": 20470267,
+    "lines_scanned": 24698,
+    "selected_record_count": 1,
+    "record": {
+      "line_number": 1,
+      "start_byte_offset": 0,
+      "end_byte_offset_exclusive": 728,
+      "byte_count": 728,
+      "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
+      "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
+    }
+  },
+  "fallback": {
+    "method": "One-off Python standard-library loop: json.loads each row, compare the exact top-level search_id value, and compute source/record SHA-256 and byte offsets.",
+    "output_path": "ignition/data/operations/toolbox-jsonl-selector-fallback-task-r0.json",
+    "output_sha256": "37f17d79c3ec942a29aa2b92373fda25c4b4abf2bd32015806bb6c29e697d908",
+    "status": "COMPLETE",
+    "source_sha256": "830628dfad1900aa16c742d8e6dddee389b716fef7a256b3b92406286645d718",
+    "source_bytes": 20470267,
+    "lines_scanned": 24698,
+    "selected_record_count": 1,
+    "record": {
+      "line_number": 1,
+      "start_byte_offset": 0,
+      "end_byte_offset_exclusive": 728,
+      "byte_count": 728,
+      "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
+      "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
+    }
+  },
+  "parity": {
+    "source_sha256_equal": true,
+    "selected_record_count_equal": true,
+    "line_number_equal": true,
+    "byte_offsets_equal": true,
+    "record_byte_count_equal": true,
+    "record_sha256_equal": true,
+    "record_text_equal": true
+  },
+  "disposition": {
+    "comparison_status": "COMPARISON_UNKNOWN",
+    "finding": "The candidate and one-off standard-library fallback returned the same exact row, line, byte range, record digest, and 20 MB source digest on this one local task. This establishes functional parity only; no runtime, cost, token, retrieval-quality, reliability, or replacement advantage was measured. Keep the candidate default-off."
+  },
+  "claim_ceiling": "One checked-out JSONL row was selected with exact JSON Pointer and JSON scalar equality, and its selected text and hashes matched a direct standard-library fallback. No semantic relevance, source authority, completeness outside this file, token savings, net benefit, or replacement value is established."
+}

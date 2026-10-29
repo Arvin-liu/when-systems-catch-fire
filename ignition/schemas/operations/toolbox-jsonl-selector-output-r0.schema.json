@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-jsonl-selector-output-r0",
+  "title": "Bounded JSONL Record Selector Output R0",
+  "oneOf": [
+    {"$ref": "#/$defs/complete"},
+    {"$ref": "#/$defs/rejected"}
+  ],
+  "$defs": {
+    "common": {
+      "type": "object",
+      "required": ["schema_version", "tool_id", "tool_version", "status", "effects", "claim_ceiling"],
+      "properties": {
+        "schema_version": {"const": "toolbox-jsonl-selector-output-r0"},
+        "tool_id": {"const": "knowledge.select_jsonl_records"},
+        "tool_version": {"const": "0.1.0"},
+        "effects": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["files_written", "network", "execution_authorized"],
+          "properties": {
+            "files_written": {"const": false},
+            "network": {"const": false},
+            "execution_authorized": {"const": false}
+          }
+        },
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    },
+    "complete": {
+      "allOf": [
+        {"$ref": "#/$defs/common"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema_version", "tool_id", "tool_version", "status", "source_path", "source_sha256",
+            "source_bytes", "lines_scanned", "selector", "selected_record_count", "selected_record_bytes",
+            "records", "effects", "claim_ceiling"
+          ],
+          "properties": {
+            "schema_version": {"const": "toolbox-jsonl-selector-output-r0"},
+            "tool_id": {"const": "knowledge.select_jsonl_records"},
+            "tool_version": {"const": "0.1.0"},
+            "status": {"const": "COMPLETE"},
+            "source_path": {"type": "string", "pattern": "^ignition/"},
+            "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "source_bytes": {"type": "integer", "minimum": 0, "maximum": 32000000},
+            "lines_scanned": {"type": "integer", "minimum": 0},
+            "selector": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["json_pointer", "equals", "equality"],
+              "properties": {
+                "json_pointer": {"type": "string", "maxLength": 4096},
+                "equals": {
+                  "description": "JSON scalar equality: strings compare exactly, numbers by numeric value (so 1 equals 1.0), booleans remain distinct from numbers, and null matches only null.",
+                  "type": ["string", "number", "boolean", "null"]
+                },
+                "equality": {"const": "JSON_SCALAR_VALUE_EXACT"}
+              }
+            },
+            "selected_record_count": {"type": "integer", "minimum": 0, "maximum": 100},
+            "selected_record_bytes": {"type": "integer", "minimum": 0, "maximum": 262144},
+            "records": {
+              "type": "array",
+              "maxItems": 100,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["line_number", "start_byte_offset", "end_byte_offset_exclusive", "byte_count", "sha256", "text"],
+                "properties": {
+                  "line_number": {"type": "integer", "minimum": 1},
+                  "start_byte_offset": {"type": "integer", "minimum": 0},
+                  "end_byte_offset_exclusive": {"type": "integer", "minimum": 1},
+                  "byte_count": {"type": "integer", "minimum": 1, "maximum": 1048576},
+                  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                  "text": {"type": "string"}
+                }
+              }
+            },
+            "effects": {"$ref": "#/$defs/common/properties/effects"},
+            "claim_ceiling": {"$ref": "#/$defs/common/properties/claim_ceiling"}
+          }
+        }
+      ]
+    },
+    "rejected": {
+      "allOf": [
+        {"$ref": "#/$defs/common"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["schema_version", "tool_id", "tool_version", "status", "error", "effects", "claim_ceiling"],
+          "properties": {
+            "schema_version": {"const": "toolbox-jsonl-selector-output-r0"},
+            "tool_id": {"const": "knowledge.select_jsonl_records"},
+            "tool_version": {"const": "0.1.0"},
+            "status": {"const": "REJECTED"},
+            "error": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["code", "message"],
+              "properties": {
+                "code": {"type": "string", "minLength": 1, "maxLength": 96},
+                "message": {"type": "string", "minLength": 1, "maxLength": 240}
+              }
+            },
+            "effects": {"$ref": "#/$defs/common/properties/effects"},
+            "claim_ceiling": {"$ref": "#/$defs/common/properties/claim_ceiling"}
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "toolbox-portable-research-episode-real-task-r0",
+  "candidate_tool_id": "collaboration.validate_portable_research_episode",
+  "observed_at_utc": "2026-10-25T14:24:07Z",
+  "task_binding": {
+    "task": "Offline preflight of a portable episode manifest reconstructed from the prior #264 Actions attribution task.",
+    "actions_run_id": "40064357026",
+    "attempt": 1,
+    "run_id_semantics": "CALLER_DECLARED_OFFLINE_ATTRIBUTION_REFERENCE_NOT_AUTHENTICATED_BY_THIS_TOOL",
+    "source_evidence": "ignition/data/operations/toolbox-actions-validation-attribution-real-task-r0.json",
+    "source_package_revision": "fd5b287d83584517909114b1f045e223ac77b0a8"
+  },
+  "environment": {
+    "python_version": "3.9.6",
+    "jsonschema_version": "4.25.1",
+    "mode": "LOCAL_READ_ONLY_CLI_NO_NETWORK"
+  },
+  "implementation_binding": {
+    "tool_version": "0.1.0",
+    "tool_git_blob_sha1": "cd84d14b19f7701eeda6fd98a2e0b6e7799fe9c8",
+    "tool_sha256": "213399fa838866a2b49fdafdeefbe7f93e5a5eacf55d1fbff3c86d5705d886e5",
+    "schema_git_blob_sha1": "42b3ba9eb08f457e4e38756f21a3ad346c9d1814",
+    "schema_sha256": "236c82417da12e6552eae6f478ef1de7ff7e2250c4af96d904f545bef0c01634"
+  },
+  "invocation": {
+    "command": "python3 -B ignition/tools/toolbox_portable_research_episode.py --stdin < ignition/tests/fixtures/toolbox-portable-research-episode/pr264-actions-attribution-episode-r0.json",
+    "exit_code": 0,
+    "input_sha256": "f01703806d53d2944b14575fa4635f6c72cc7b705ed9eef42a0d256f60e10e45",
+    "input_bytes": 2177,
+    "stdout_sha256": "8e6dc226f858ff87321d876ef9e25567a6b6fc3699909efce405464a9f5b0623",
+    "stdout_bytes": 1314,
+    "stderr": "",
+    "result": {
+      "artifact_bytes_verified": false,
+      "checks": {
+        "cross_reference_consistency": "PASS",
+        "input_schema": "PASS"
+      },
+      "claim_ceiling": "Checks only schema and caller-declared episode, artifact-version, execution, review, omission, and fork-map relations. It does not authenticate any source, actor, digest, execution, review, or permission; read package bytes; import or fork files; execute code; validate scientific meaning; or authorize research, publication, or external action.",
+      "episode_id": "pr264-actions-attribution-episode",
+      "execution_authorized": false,
+      "findings": [],
+      "import_performed": false,
+      "status": "EPISODE_MANIFEST_CONSISTENT",
+      "summary": {
+        "artifact_version_count": 2,
+        "attached_reference_count": 0,
+        "execution_relations": [
+          {
+            "attached_artifact_ref_count": 0,
+            "declared_status": "EXECUTED",
+            "execution_id": "offline-attribution-replay-40064357026",
+            "produced_artifact_ref_count": 1,
+            "run_ref_present": true,
+            "used_artifact_ref_count": 1
+          }
+        ],
+        "execution_status_counts": {
+          "EXECUTED": 1
+        },
+        "explicit_omission_count": 0,
+        "fork_id_mapping_count": 0,
+        "import_mode": "SOURCE_PACKAGE",
+        "included_artifact_version_count": 2,
+        "omitted_artifact_version_count": 0,
+        "review_count": 0,
+        "used_reference_count": 1
+      },
+      "tool_id": "collaboration.validate_portable_research_episode",
+      "tool_version": "0.1.0",
+      "warnings": []
+    }
+  },
+  "interpretation": {
+    "observed": "EPISODE_MANIFEST_CONSISTENT",
+    "input_schema": "PASS",
+    "cross_reference_consistency": "PASS",
+    "execution_authorized": false,
+    "import_performed": false,
+    "artifact_bytes_verified": false,
+    "source_authenticity": "NOT_ESTABLISHED",
+    "scientific_validity": "NOT_ESTABLISHED",
+    "limitation": "This is a real local invocation over a caller-constructed manifest based on prior #264 task records. The tool validates declarations only; the referenced Actions/run evidence and digest values were not independently authenticated during this invocation."
+  },
+  "execution_context": {
+    "formal_branch": "codex/toolbox-growth-20261025",
+    "git_head_when_invocation_was_run": "fd5b287d83584517909114b1f045e223ac77b0a8",
+    "tool_source_worktree_had_uncommitted_candidate_files": true,
+    "exact_tool_and_schema_identity": "implementation_binding.tool_git_blob_sha1 and implementation_binding.schema_git_blob_sha1"
+  }
+}

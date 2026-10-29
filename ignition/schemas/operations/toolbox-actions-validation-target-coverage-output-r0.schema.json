@@ -1,0 +1,736 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/operations/toolbox-actions-validation-target-coverage-output-r0.schema.json",
+  "title": "GitHub Actions validation target coverage comparison output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "input_sha256",
+    "tool_sha256",
+    "single_run_attribution_helper_sha256",
+    "source_binding",
+    "shared_context",
+    "summary",
+    "runs",
+    "adjacent_run_deltas",
+    "per_target",
+    "repeated_coverage_signatures",
+    "timestamp_anomalies",
+    "non_claims",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "toolbox-actions-validation-target-coverage-output-r0"
+    },
+    "tool_id": {
+      "const": "maintenance.compare_actions_validation_target_coverage"
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "tool_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "single_run_attribution_helper_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_binding": {
+      "const": "CALLER_SUPPLIED_UNAUTHENTICATED_JSON"
+    },
+    "shared_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workflow_id",
+        "workflow_path",
+        "event",
+        "pull_request_number",
+        "base_sha"
+      ],
+      "properties": {
+        "workflow_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "workflow_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "event": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pull_request_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "base_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_count",
+        "distinct_head_sha_count",
+        "coverage_union_target_ids",
+        "coverage_intersection_target_ids",
+        "repeated_coverage_signature_count",
+        "target_result_claims_are_official_ci_evidence"
+      ],
+      "properties": {
+        "run_count": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "distinct_head_sha_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "coverage_union_target_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "coverage_intersection_target_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+          },
+          "uniqueItems": true
+        },
+        "repeated_coverage_signature_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "target_result_claims_are_official_ci_evidence": {
+          "const": false
+        }
+      }
+    },
+    "runs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "input_ordinal",
+          "source_attribution_input_sha256",
+          "normalized_actions_snapshot_sha256",
+          "timestamp_anomalies",
+          "workflow_run",
+          "plan",
+          "artifact_inventory",
+          "validation_receipt"
+        ],
+        "properties": {
+          "input_ordinal": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_attribution_input_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "normalized_actions_snapshot_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "timestamp_anomalies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/timestampAnomaly"
+            }
+          },
+          "workflow_run": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "run_id",
+              "run_attempt",
+              "head_sha",
+              "status",
+              "conclusion"
+            ],
+            "properties": {
+              "run_id": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "run_attempt": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "head_sha": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              },
+              "status": {
+                "type": "string",
+                "minLength": 1
+              },
+              "conclusion": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "plan": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "digest_valid_under_single_run_contract",
+              "mode",
+              "plan_sha256",
+              "validation_map_sha256",
+              "selected_target_ids",
+              "target_set_sha256"
+            ],
+            "properties": {
+              "digest_valid_under_single_run_contract": {
+                "const": true
+              },
+              "mode": {
+                "enum": [
+                  "TARGETED",
+                  "FULL"
+                ]
+              },
+              "plan_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "validation_map_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "selected_target_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "target_set_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "artifact_inventory": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "run_attempt_bound_to_actions_snapshot",
+              "artifact_id",
+              "name",
+              "archive_sha256_as_supplied_unverified",
+              "files_complete_as_supplied",
+              "files"
+            ],
+            "properties": {
+              "run_attempt_bound_to_actions_snapshot": {
+                "const": true
+              },
+              "artifact_id": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "archive_sha256_as_supplied_unverified": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "files_complete_as_supplied": {
+                "type": "boolean"
+              },
+              "files": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            }
+          },
+          "validation_receipt": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "presence",
+              "binding_status",
+              "target_result_trust",
+              "declared_target_results"
+            ],
+            "properties": {
+              "presence": {
+                "type": "string",
+                "minLength": 1
+              },
+              "binding_status": {
+                "type": "string",
+                "minLength": 1
+              },
+              "target_result_trust": {
+                "type": "string",
+                "minLength": 1
+              },
+              "declared_target_results": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "target_id",
+                    "caller_declared_successful"
+                  ],
+                  "properties": {
+                    "target_id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+                    },
+                    "caller_declared_successful": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "minItems": 2,
+      "maxItems": 20
+    },
+    "adjacent_run_deltas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from_input_ordinal",
+          "to_input_ordinal",
+          "from_run_id",
+          "to_run_id",
+          "from_head_sha",
+          "to_head_sha",
+          "added_target_ids",
+          "removed_target_ids",
+          "retained_target_ids",
+          "target_result_deltas"
+        ],
+        "properties": {
+          "from_input_ordinal": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "to_input_ordinal": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "from_run_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "to_run_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "from_head_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "to_head_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "added_target_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+            },
+            "uniqueItems": true
+          },
+          "removed_target_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+            },
+            "uniqueItems": true
+          },
+          "retained_target_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+            },
+            "uniqueItems": true
+          },
+          "target_result_deltas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "target_id",
+                "previous_caller_declared_successful",
+                "current_caller_declared_successful",
+                "change"
+              ],
+              "properties": {
+                "target_id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+                },
+                "previous_caller_declared_successful": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "current_caller_declared_successful": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "change": {
+                  "enum": [
+                    "NO_COMPARABLE_RESULT_CLAIM",
+                    "CALLER_DECLARED_RESULT_UNCHANGED",
+                    "CALLER_DECLARED_RESULT_CHANGED"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "per_target": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target_id",
+          "plan_presence_count",
+          "caller_declared_success_count",
+          "caller_declared_failure_count",
+          "caller_declared_unknown_value_count",
+          "no_target_result_claim_count",
+          "claims_by_run"
+        ],
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+          },
+          "plan_presence_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "caller_declared_success_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "caller_declared_failure_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "caller_declared_unknown_value_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "no_target_result_claim_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "claims_by_run": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "input_ordinal",
+                "run_id",
+                "head_sha",
+                "outcome"
+              ],
+              "properties": {
+                "input_ordinal": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "run_id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "head_sha": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{40}$"
+                },
+                "outcome": {
+                  "enum": [
+                    "CALLER_DECLARED_SUCCESS",
+                    "CALLER_DECLARED_FAILURE",
+                    "CALLER_DECLARED_VALUE_UNKNOWN",
+                    "NO_TARGET_RESULT_CLAIM"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "repeated_coverage_signatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target_set_sha256",
+          "classification",
+          "runs"
+        ],
+        "properties": {
+          "target_set_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "classification": {
+            "const": "REPEATED_COVERAGE_SET_NOT_EVIDENCE_OF_REDUNDANCY_OR_WASTE"
+          },
+          "runs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "input_ordinal",
+                "run_id",
+                "head_sha",
+                "plan_sha256",
+                "selected_target_ids"
+              ],
+              "properties": {
+                "input_ordinal": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "run_id": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "head_sha": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{40}$"
+                },
+                "plan_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "selected_target_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9_.-]*$"
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              }
+            },
+            "minItems": 2
+          }
+        }
+      }
+    },
+    "timestamp_anomalies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "snapshot_path",
+          "job_id",
+          "job_name",
+          "original_started_at",
+          "original_completed_at",
+          "analysis_started_at",
+          "analysis_completed_at",
+          "handling"
+        ],
+        "properties": {
+          "snapshot_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "job_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "job_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "original_started_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_completed_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "analysis_started_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "analysis_completed_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "handling": {
+            "const": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB"
+          }
+        }
+      }
+    },
+    "non_claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "github_source_authenticated",
+        "artifact_archive_bytes_verified_by_this_tool",
+        "component_validation_receipt_officially_verified",
+        "missing_receipt_means_target_failure",
+        "required_check_sufficiency_or_satisfaction_interpreted",
+        "repeated_coverage_means_wasted_or_redundant_work",
+        "billable_minutes_cost_or_savings_estimated",
+        "merge_or_release_authorized"
+      ],
+      "properties": {
+        "github_source_authenticated": {
+          "const": false
+        },
+        "artifact_archive_bytes_verified_by_this_tool": {
+          "const": false
+        },
+        "component_validation_receipt_officially_verified": {
+          "const": false
+        },
+        "missing_receipt_means_target_failure": {
+          "const": false
+        },
+        "required_check_sufficiency_or_satisfaction_interpreted": {
+          "const": false
+        },
+        "repeated_coverage_means_wasted_or_redundant_work": {
+          "const": false
+        },
+        "billable_minutes_cost_or_savings_estimated": {
+          "const": false
+        },
+        "merge_or_release_authorized": {
+          "const": false
+        }
+      }
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$defs": {
+    "timestampAnomaly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "snapshot_path",
+        "job_id",
+        "job_name",
+        "original_started_at",
+        "original_completed_at",
+        "analysis_started_at",
+        "analysis_completed_at",
+        "handling"
+      ],
+      "properties": {
+        "snapshot_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "job_id": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "job_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "original_started_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "original_completed_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "analysis_started_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "analysis_completed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "handling": {
+          "const": "DROPPED_REVERSED_INTERVAL_FOR_COMPLETED_SKIPPED_JOB"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "toolbox-grounded-ideation-preflight-c1-evidence-r0",
+  "tool_id": "research.preflight_grounded_ideation",
+  "tool_version": "0.1.0",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "comparison_scope": "Low-cost contract comparison only. No same-task outcome comparison or scientific benefit comparison was run.",
+  "candidate_function": "Check one user-supplied research-ideation packet for source/anchor structure, contrary evidence, explicit cross-domain mapping, falsifiable experiment fields, and a fail-closed human-review boundary.",
+  "adjacent_existing_tools": [
+    {
+      "tool_id": "research.preflight_g1_goal_intake",
+      "implementation": "ignition/tools/toolbox_g1_goal_intake_preflight.py",
+      "observed_contract": "Validates caller-supplied ResearchEpisodeRequest Goal/Intent lineage, contract digests, policy and budget boundaries, and owner-authority separation.",
+      "relationship": "ADJACENT_DIFFERENT_INPUT_AND_OUTPUT",
+      "not_a_replacement_because": "It does not validate research-gap evidence anchors, contrary evidence, transfer mapping, or falsifiable proposal structure."
+    },
+    {
+      "tool_id": "research.validate_evidence_program_snapshot",
+      "implementation": "ignition/tools/toolbox_validate_evidence_program.py",
+      "observed_contract": "Validates the fixed checked-out Evidence Program preregistration and run-record tree.",
+      "relationship": "ADJACENT_DIFFERENT_INPUT_AND_OUTPUT",
+      "not_a_replacement_because": "It does not accept one caller-supplied ideation packet and operates on a different fixed dataset contract."
+    }
+  ],
+  "paired_same_task_trial": {
+    "status": "NOT_RUN",
+    "reason": "The adjacent tools require different input contracts and answer different questions; coercing the same packet into them would not be a fair same-task comparison.",
+    "next_low_cost_comparison": "If a real non-sensitive research proposal later needs both preflight types, record each tool's independently useful findings and human rework under the same task scope."
+  },
+  "retirement_decision": {
+    "status": "NONE",
+    "replacement_candidates": [],
+    "reason": "No same-task evidence supports replacement, superiority, or retirement. Preserve uncertainty and keep the new tool default-off."
+  },
+  "negative_controls": [
+    "An exact quote substring is not treated as semantic support or source authentication.",
+    "Attached-only sources cannot be counted as evidence anchors.",
+    "Missing contrary anchors, unresolved source IDs, missing falsifiers, same-domain transfer labels, and out-of-cutoff used sources cannot receive a ready status.",
+    "No output is described as a novel idea, supported finding, independent review, or scientific result."
+  ],
+  "claim_ceiling": "Structural interface comparison and synthetic preflight behavior only; no superiority, scientific validity, or general task benefit is established."
+}

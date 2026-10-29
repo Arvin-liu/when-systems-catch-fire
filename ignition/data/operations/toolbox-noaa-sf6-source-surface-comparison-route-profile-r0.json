@@ -1,0 +1,13 @@
+{
+  "task_id": "noaa-gml-sf6-page-raw-comparison-2023-2025",
+  "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+  "input_types": [
+    "UTF-8 JSON stdin object with schema_version toolbox-noaa-sf6-source-surface-comparison-input-r0 and exactly integer start_year/end_year (1998–2100 inclusive; at most 50 years); caller-supplied URLs and extra fields are rejected."
+  ],
+  "required_outputs": [
+    "For each requested year, provider-reported annual atmospheric SF6 mole-fraction increase and uncertainty in ppt from both fixed surfaces, exact arithmetic differences, and explicit missing-year status.",
+    "Two fixed-source receipts with retrieval timestamps, HTTP status and available validators, response byte counts and SHA-256 digests, plus request count and claim ceiling."
+  ],
+  "allowed_execution_modes": ["READ_ONLY_RUN"],
+  "allowed_network_hosts": ["gml.noaa.gov"]
+}

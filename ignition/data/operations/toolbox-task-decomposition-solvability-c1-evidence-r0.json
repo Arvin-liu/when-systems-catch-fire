@@ -1,0 +1,30 @@
+{
+  "schema_version": "toolbox-task-decomposition-solvability-c1-evidence-r0",
+  "tool_id": "planning.compare_task_decomposition_solvability",
+  "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "scope": "Bounded contract comparison for one read-only task: compare alternative declared task DAGs by dependency/input reachability, executor capability output contracts, validator coverage, and declared cost bounds. The exact same route demand was passed to the existing route planner in default-off and explicit-opt-in trials; the planner proposed the new tool but did not perform its analysis.",
+  "compared_tool_ids": [
+    "ignition.adaptive_toolbox_route_planner",
+    "collaboration.validate_agent_episode_binding"
+  ],
+  "compared_implementation_refs": [
+    "ignition/agent_runtime/scheduler.py",
+    "ignition/tools/operations/plan_ignition_operation_run.py",
+    "ignition/tools/toolbox_agent_episode_binding.py"
+  ],
+  "findings": [
+    "The Current scheduler schedules a DAG selected by the caller and models executor IDs and resource intents; it does not declare typed inputs, output types, or validator contracts for alternative DAG comparison.",
+    "The existing toolbox route planner chooses operation IDs by typed task inputs and required outputs. On this task it returns INCOMPLETE without the experimental allowlist and proposes the candidate only when explicitly allowlisted; it never calls the candidate.",
+    "Agent Episode Binding checks declared roles, context, feedback, permissions, write domains, and work-unit structure; those checks complement the new candidate's executor input/output and validator solvability checks.",
+    "The candidate is a specialized pre-execution contract comparator. No existing tool is retired, and no same-task outcome quality, safety, stable latency, or cost superiority is established.",
+    "Caller declarations are not live capability probes. A SOLVABLE_AS_DECLARED result is not a guarantee of execution success, task correctness, or authority."
+  ],
+  "route_evidence_ref": "ignition/data/operations/toolbox-task-decomposition-solvability-route-evidence-r0.json",
+  "disposition": {
+    "new_tool": "SPECIALIZED_EXPERIMENTAL_DEFAULT_OFF",
+    "existing_tools": "RETAIN_AS_COMPLEMENTARY",
+    "replacement_candidates": [],
+    "retirements": []
+  },
+  "claim_ceiling": "A source-backed contract comparison and explicit route-proposal experiment only. No matched task success, measured cost advantage, broad utility, replacement, or scientific validity is established."
+}

@@ -1,0 +1,264 @@
+{
+  "schema_version": "portable-research-episode-builder-input-r0",
+  "episode_id": "selected-index-review-episode-r0",
+  "package_revision": "refs/heads/codex/toolbox-growth-20261025@9746d8e25db4277079db0dbc809a57bbc14ec37e",
+  "import_mode": "SOURCE_PACKAGE",
+  "required_artifact_ids": [
+    "merge_input",
+    "merge_tool",
+    "merge_output",
+    "crossref_source",
+    "openalex_source",
+    "execution_evidence",
+    "real_task_evidence"
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "merge_input",
+      "version_id": "r0",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-input-r0.json",
+      "parent_ref": null,
+      "dependency_refs": [],
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "merge_tool",
+      "version_id": "0.2.0",
+      "relative_path": "tools/toolbox_merge_selected_index_search_results.py",
+      "parent_ref": null,
+      "dependency_refs": [],
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "merge_output",
+      "version_id": "r0",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-output-r0.json",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        },
+        {
+          "artifact_id": "merge_tool",
+          "version_id": "0.2.0"
+        }
+      ],
+      "required": false,
+      "is_current": false
+    },
+    {
+      "artifact_id": "merge_output",
+      "version_id": "r1",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-output-r1.json",
+      "parent_ref": {
+        "artifact_id": "merge_output",
+        "version_id": "r0"
+      },
+      "dependency_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        },
+        {
+          "artifact_id": "merge_tool",
+          "version_id": "0.2.0"
+        }
+      ],
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "crossref_source",
+      "version_id": "r1",
+      "relative_path": "data/operations/toolbox-crossref-query-search-real-task-evidence-r1.json",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        }
+      ],
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "openalex_source",
+      "version_id": "r1",
+      "relative_path": "data/operations/toolbox-openalex-query-search-real-task-evidence-r1.json",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        }
+      ],
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "route_profile",
+      "version_id": "r2",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-route-profile-r2.json",
+      "parent_ref": null,
+      "dependency_refs": [],
+      "required": false,
+      "is_current": true
+    },
+    {
+      "artifact_id": "route_evidence",
+      "version_id": "r1",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-route-evidence-r1.json",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "route_profile",
+          "version_id": "r2"
+        }
+      ],
+      "required": false,
+      "is_current": true
+    },
+    {
+      "artifact_id": "execution_evidence",
+      "version_id": "r2",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r2.json",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        },
+        {
+          "artifact_id": "merge_tool",
+          "version_id": "0.2.0"
+        },
+        {
+          "artifact_id": "merge_output",
+          "version_id": "r1"
+        },
+        {
+          "artifact_id": "route_profile",
+          "version_id": "r2"
+        },
+        {
+          "artifact_id": "route_evidence",
+          "version_id": "r1"
+        }
+      ],
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "real_task_evidence",
+      "version_id": "r1",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-real-task-r1.json",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        },
+        {
+          "artifact_id": "merge_tool",
+          "version_id": "0.2.0"
+        },
+        {
+          "artifact_id": "merge_output",
+          "version_id": "r1"
+        },
+        {
+          "artifact_id": "crossref_source",
+          "version_id": "r1"
+        },
+        {
+          "artifact_id": "openalex_source",
+          "version_id": "r1"
+        },
+        {
+          "artifact_id": "execution_evidence",
+          "version_id": "r2"
+        }
+      ],
+      "required": true,
+      "is_current": true
+    },
+    {
+      "artifact_id": "c1_evidence",
+      "version_id": "r1",
+      "relative_path": "data/operations/toolbox-selected-index-search-result-merge-c1-evidence-r1.json",
+      "parent_ref": null,
+      "dependency_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        },
+        {
+          "artifact_id": "merge_output",
+          "version_id": "r0"
+        },
+        {
+          "artifact_id": "merge_output",
+          "version_id": "r1"
+        },
+        {
+          "artifact_id": "real_task_evidence",
+          "version_id": "r1"
+        }
+      ],
+      "required": false,
+      "is_current": true
+    }
+  ],
+  "executions": [
+    {
+      "execution_id": "merge-selected-index-search-results-run-1",
+      "status": "EXECUTED",
+      "run_ref": {
+        "run_id": "research.merge_selected_index_search_results.public_ai_healthcare_cross_index_r1",
+        "attempt": 1,
+        "evidence_ref": "ignition/data/operations/toolbox-selected-index-search-result-merge-route-execution-evidence-r2.json#/observed_stdout_sha256"
+      },
+      "used_artifact_refs": [
+        {
+          "artifact_id": "merge_input",
+          "version_id": "r0"
+        },
+        {
+          "artifact_id": "merge_tool",
+          "version_id": "0.2.0"
+        },
+        {
+          "artifact_id": "crossref_source",
+          "version_id": "r1"
+        },
+        {
+          "artifact_id": "openalex_source",
+          "version_id": "r1"
+        }
+      ],
+      "attached_artifact_refs": [
+        {
+          "artifact_id": "route_profile",
+          "version_id": "r2"
+        },
+        {
+          "artifact_id": "route_evidence",
+          "version_id": "r1"
+        }
+      ],
+      "produced_artifact_refs": [
+        {
+          "artifact_id": "merge_output",
+          "version_id": "r1"
+        }
+      ],
+      "not_executed_reason": null
+    }
+  ],
+  "reviews": [],
+  "omissions": [],
+  "fork_id_mappings": []
+}

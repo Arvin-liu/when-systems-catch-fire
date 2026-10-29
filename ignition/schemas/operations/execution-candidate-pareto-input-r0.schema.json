@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:execution-candidate-pareto-input-r0",
+  "title": "Execution Candidate Pareto Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "evaluation_context", "resource_metric", "baseline_candidate_id", "candidates"],
+  "properties": {
+    "schema_version": {"const": "execution-candidate-pareto-input-r0"},
+    "evaluation_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evaluation_id", "task_set_sha256", "evaluator_sha256", "environment_ref"],
+      "properties": {
+        "evaluation_id": {"$ref": "#/$defs/id"},
+        "task_set_sha256": {"$ref": "#/$defs/sha256"},
+        "evaluator_sha256": {"$ref": "#/$defs/sha256"},
+        "environment_ref": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "resource_metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric_id", "unit"],
+      "properties": {"metric_id": {"$ref": "#/$defs/id"}, "unit": {"$ref": "#/$defs/nonblank"}}
+    },
+    "baseline_candidate_id": {"$ref": "#/$defs/id"},
+    "candidates": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_id", "candidate_ref", "observations"],
+        "properties": {
+          "candidate_id": {"$ref": "#/$defs/id"},
+          "candidate_ref": {"$ref": "#/$defs/nonblank"},
+          "observations": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 500,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["case_id", "trial_id", "outcome", "resource_cost", "evidence_ref"],
+              "properties": {
+                "case_id": {"$ref": "#/$defs/id"},
+                "trial_id": {"$ref": "#/$defs/id"},
+                "outcome": {"enum": ["PASS", "FAIL"]},
+                "resource_cost": {"type": ["number", "null"], "minimum": 0, "maximum": 1000000000000000},
+                "evidence_ref": {"$ref": "#/$defs/nonblank"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,95}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

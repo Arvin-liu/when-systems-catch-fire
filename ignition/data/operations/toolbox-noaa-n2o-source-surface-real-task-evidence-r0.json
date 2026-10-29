@@ -1,0 +1,74 @@
+{
+  "schema_version": "toolbox-noaa-n2o-source-surface-real-task-evidence-r0",
+  "evidence_type": "LIVE_FIXED_HOST_TWO_SURFACE_READ_ONLY_RUN",
+  "observed_at_utc": "2026-10-26T21:54:10Z",
+  "candidate_tool_id": "research.compare_noaa_n2o_source_surfaces",
+  "candidate_tool_version": "0.1.0",
+  "input_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-comparison-real-task-input-r0.json",
+  "input_sha256": "01069ec3ba0a9307b654852ccaa63cb6fa8c957d0a9ee9e5fd1973447d5738dd",
+  "output_path": "ignition/data/operations/toolbox-noaa-n2o-source-surface-comparison-real-task-output-r0.json",
+  "output_sha256": "4c83937fc5a0265493f51971a7f0644f8808473299dc385d1142c80289538aef",
+  "implementation_sha256": "831c032a70c57c417892da2784cab40faf86b874b45fea86bc73c506bb375d26",
+  "shared_core_sha256": "a15650c0e38a84adbe8f0d68de15e9c005379a7461d46a7c07f08892d240abe7",
+  "output_status": "COMPARED",
+  "comparison_status": "EXACT_MATCH",
+  "request_count": 2,
+  "source_receipts": {
+    "page": {
+      "url": "https://gml.noaa.gov/ccgg/trends_n2o/",
+      "acquisition_status": "OK",
+      "parse_status": "FOUND",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-26T21:54:09Z",
+      "response_bytes": 37383,
+      "response_sha256": "26224346d22b2e37312df032566be078fb8ea3af25092e164ac54cda5885e2db",
+      "raw_response_retained": false
+    },
+    "raw_table": {
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/n2o/n2o_gr_gl.txt",
+      "acquisition_status": "OK",
+      "parse_status": "FOUND",
+      "http_status": 200,
+      "etag": "\"b5d-65d6d473c6dee\"",
+      "last_modified": "Fri, 09 Oct 2026 19:23:08 GMT",
+      "retrieved_at_utc": "2026-10-26T21:54:10Z",
+      "response_bytes": 2909,
+      "response_sha256": "ca78ec8b101dc7934c95a9c33ae42ef7605e3dc45dd4b9f4fdc78ac14e99986d",
+      "raw_response_retained": false
+    }
+  },
+  "selected_rows": [
+    {
+      "page_annual_increase_ppb": "1.01",
+      "page_minus_raw_annual_increase_ppb": "0.00",
+      "page_minus_raw_uncertainty_ppb": "0.00",
+      "page_uncertainty_ppb": "0.02",
+      "raw_table_annual_increase_ppb": "1.01",
+      "raw_table_uncertainty_ppb": "0.02",
+      "status": "EXACT_MATCH",
+      "year": 2023
+    },
+    {
+      "page_annual_increase_ppb": "1.02",
+      "page_minus_raw_annual_increase_ppb": "0.00",
+      "page_minus_raw_uncertainty_ppb": "0.00",
+      "page_uncertainty_ppb": "0.01",
+      "raw_table_annual_increase_ppb": "1.02",
+      "raw_table_uncertainty_ppb": "0.01",
+      "status": "EXACT_MATCH",
+      "year": 2024
+    },
+    {
+      "page_annual_increase_ppb": "1.23",
+      "page_minus_raw_annual_increase_ppb": "0.00",
+      "page_minus_raw_uncertainty_ppb": "0.00",
+      "page_uncertainty_ppb": "0.01",
+      "raw_table_annual_increase_ppb": "1.23",
+      "raw_table_uncertainty_ppb": "0.01",
+      "status": "EXACT_MATCH",
+      "year": 2025
+    }
+  ],
+  "claim_ceiling": "Exact selected annual atmospheric N2O mole-fraction increases and stated uncertainties from two NOAA GML surfaces at retrieval time, plus their arithmetic differences. This does not authenticate NOAA, rank the surfaces, validate measurements, estimate N2O emissions, attribute sources, explain causes, or establish a scientific conclusion.",
+  "interpretation_limit": "This is one live NOAA GML page/raw observation for 2023–2025. Exact agreement in this sample does not establish long-run agreement, authenticity, measurement validity, or a scientific conclusion."
+}

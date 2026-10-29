@@ -37,6 +37,22 @@ on:
       - 'ignition/schemas/governance/**'
       - 'ignition/tools/governance/**'
       - 'ignition/data/operations/propagation/121Q33-request.json'
+      - '.github/README.md'
+      - 'ignition/HUMAN-READING.md'
+      - 'ignition/AI-START-HERE.md'
+      - 'ignition/AI-HANDOFF.md'
+      - 'ignition/llms.txt'
+      - 'ignition/docs/human/**'
+      - 'ignition/docs/governance/human-surface-editorial-contract.md'
+      - 'ignition/docs/ai-assistant-usage-reference.md'
+      - 'ignition/docs/project-current-state.md'
+      - 'ignition/docs/architecture/interactive-system-map.md'
+      - 'ignition/docs/generated/ignition-system-architecture.svg'
+      - 'ignition/data/architecture/interactive-system-map.json'
+      - 'ignition/data/operations/project-components.json'
+      - 'ignition/tools/validate_human_front_door.py'
+      - 'ignition/tools/validate_homepage_architecture_projection.py'
+      - 'ignition/tools/generate_interactive_system_map.py'
       - 'ignition/tests/test_q33_governance_infrastructure.py'
       - 'ignition/tests/test_publication_gate_fail_closed.py'
       - 'ignition/tests/test_publication_provenance_attack.py'
@@ -48,6 +64,12 @@ on:
       - 'ignition/tests/test_diff_coverage_gate.py'
       - 'ignition/tests/test_era_resolver_generalization.py'
       - 'ignition/tests/test_human_front_door.py'
+      - 'ignition/tests/test_human_visibility_gate.py'
+      - 'ignition/tests/test_current_surface_compiler.py'
+      - 'ignition/tests/test_homepage_architecture_projection.py'
+      - 'ignition/tests/test_q33_workflow_trigger_coverage.py'
+      - 'ignition/tests/fixtures/human-front-door-r3.json'
+      - 'ignition/tests/fixtures/ignition-operating-method/homepage-ai-first-r1.json'
       - 'ignition/tests/test_pr_front_door_audit.py'
       - 'ignition/tests/test_q33_fail_closed_fixtures.py'
   push:
@@ -87,6 +109,10 @@ jobs:
             tests/test_diff_coverage_gate.py \
             tests/test_era_resolver_generalization.py \
             tests/test_human_front_door.py \
+            tests/test_human_visibility_gate.py \
+            tests/test_current_surface_compiler.py \
+            tests/test_homepage_architecture_projection.py \
+            tests/test_q33_workflow_trigger_coverage.py \
             tests/test_pr_front_door_audit.py \
             tests/test_q33_fail_closed_fixtures.py \
             -v

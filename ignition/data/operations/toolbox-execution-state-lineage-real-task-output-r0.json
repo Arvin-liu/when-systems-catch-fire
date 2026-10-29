@@ -1,0 +1,31 @@
+{
+  "active_checkpoint_id": "checkpoint-0001",
+  "active_path_checkpoint_ids": [
+    "checkpoint-0001"
+  ],
+  "branch_points": [],
+  "caller_declarations_authenticated": false,
+  "checkpoint_count": 1,
+  "checkpoint_state_bytes_read": false,
+  "claim_ceiling": "Checks only the structure of caller-declared checkpoint parent links, active and inactive leaf accounting, resume-capsule identity bindings, and rollback ancestor references. It does not authenticate callers, records, digests, state bytes, branch isolation, compression quality, execution, or external effects; it reads no checkpoint state and grants no permission.",
+  "declared_inactive_tip_checkpoint_ids": [],
+  "execution_authorized": false,
+  "expected_inactive_tip_checkpoint_ids": [],
+  "findings": [],
+  "input_sha256": "074299cb3dd052a284f2def9d315a5c0145c28ce8a50186d51153e7d277f48b7",
+  "leaf_checkpoint_ids": [
+    "checkpoint-0001"
+  ],
+  "network_calls": 0,
+  "result_code": "CHECKPOINT_LINEAGE_VALID",
+  "resume_capsule_count": 1,
+  "rollback_record_count": 0,
+  "schema_version": "toolbox-execution-state-lineage-output-r0",
+  "source_authentication": "NOT_PERFORMED",
+  "status": "PASS",
+  "task_ref": "agent-runtime-pilot:non-knowledge-manifest-r0",
+  "tool_id": "maintenance.audit_execution_state_lineage",
+  "tool_source_sha256": "d94d3756efb70bb655b767f1539bf75a33173cfdb2e877d9445992ee8a814cc7",
+  "tool_version": "0.1.0",
+  "write_effects": false
+}

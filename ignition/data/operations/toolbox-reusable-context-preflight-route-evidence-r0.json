@@ -1,0 +1,59 @@
+{
+  "schema_version": "toolbox-reusable-context-preflight-route-evidence-r0",
+  "tool_id": "knowledge.preflight_reusable_context",
+  "tool_version": "0.1.0",
+  "route_profile": {
+    "task_id": "cross-task-derived-context-preflight",
+    "current_ref": "refs/heads/main@483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+    "input_types": [
+      "Exact JSON request with caller-selected derived cache cards, current local source metadata/access state, and explicit context/source-byte budgets."
+    ],
+    "required_outputs": [
+      "Byte-checked DERIVED_CONTEXT_ONLY cards, per-card reuse/skip/invalidation decisions, accessible refresh candidates, and raw-source reopen requirements."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "route_trials": [
+    {
+      "scenario": "default_off",
+      "include_experimental_tool_ids": [],
+      "decision": "INCOMPLETE",
+      "selected_tool_ids": [],
+      "execution_authorized": false,
+      "selected_permissions": null,
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    },
+    {
+      "scenario": "explicit_allowlist",
+      "include_experimental_tool_ids": [
+        "knowledge.preflight_reusable_context"
+      ],
+      "decision": "COMPLETE",
+      "selected_tool_ids": [
+        "knowledge.preflight_reusable_context"
+      ],
+      "execution_authorized": false,
+      "selected_permissions": {
+        "read_paths": [
+          "ignition/"
+        ],
+        "write_paths": [],
+        "network": false,
+        "network_hosts": [],
+        "secrets": false,
+        "billing": false,
+        "external_actions": false
+      },
+      "router_provider_calls": 0,
+      "candidate_invoked": false
+    }
+  ],
+  "claim_ceiling": "Offline planner routing only; no candidate execution, provider call, permission grant, or task effect occurred.",
+  "source_refs": {
+    "planner": "ignition/tools/operations/plan_ignition_operation_run.py",
+    "candidate_catalog": "ignition/data/operations/toolbox-candidate-cards-r0.json"
+  }
+}

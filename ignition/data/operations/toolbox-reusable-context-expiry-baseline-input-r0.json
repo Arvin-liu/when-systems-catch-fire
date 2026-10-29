@@ -1,0 +1,35 @@
+{
+  "schema_version": "toolbox-reusable-context-preflight-r0",
+  "task": {
+    "task_id": "TR26-02-expired-checkrun-memory-20261027",
+    "raw_source_required": false,
+    "max_context_bytes": 4096,
+    "max_source_bytes": 10000
+  },
+  "current_sources": [
+    {
+      "source_id": "github-checkrun-snapshot-8230dc6",
+      "path": "ignition/data/operations/toolbox-actions-check-observations-real-task-r0.json",
+      "version": "snapshot:2026-10-26T02:33:03Z",
+      "sha256": "bf4648b531c50d2ea64ef96e97f22021b1025ae74afa0e987c3f4fa94d0bd3d6",
+      "access_scope_id": "formal-repository:read-only",
+      "access_state": "ACTIVE",
+      "authorized": true
+    }
+  ],
+  "cached_cards": [
+    {
+      "card_id": "pr264-check-observation-8230dc6",
+      "source_bindings": [
+        {
+          "source_id": "github-checkrun-snapshot-8230dc6",
+          "path": "ignition/data/operations/toolbox-actions-check-observations-real-task-r0.json",
+          "version": "snapshot:2026-10-26T02:33:03Z",
+          "sha256": "bf4648b531c50d2ea64ef96e97f22021b1025ae74afa0e987c3f4fa94d0bd3d6",
+          "access_scope_id": "formal-repository:read-only"
+        }
+      ],
+      "derived_context": "Historical supplied check-run snapshot for PR #264 head 8230dc6: two named contexts had exact-head success observations; foundation-validation was not observed. This snapshot does not prove current CI sufficiency, branch protection, merge, or release authorization."
+    }
+  ]
+}

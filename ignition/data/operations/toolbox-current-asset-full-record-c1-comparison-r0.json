@@ -1,0 +1,200 @@
+{
+  "schema_version": "ignition.toolbox-c1-current-asset-card-comparison-r0",
+  "evidence_level": "REAL_TASK_OUTCOME",
+  "observed_at_utc": "2026-10-26T07:10:45Z",
+  "candidate_head": "e0c956938d354dca6144f0a4d4321b4721617f06",
+  "comparison_scope": {
+    "task_id": "current-asset-full-record-read-c1-r0",
+    "task_contract": "For exact Current ID T2, return the complete stored identity card and a verified record SHA-256; a resolution-only result is incomplete for this task.",
+    "input": {
+      "canonical_id": "T2"
+    },
+    "selection_method": "Purposively selected an existing exact Current ID that was also used in prior route evidence; this is one controlled record-level comparison.",
+    "selection_bias": "A single known record cannot estimate general registry coverage, correctness, reliability, or tool utility.",
+    "execution_conditions": {
+      "repo": "Arvin-liu/when-systems-catch-fire",
+      "checkout_head": "e0c956938d354dca6144f0a4d4321b4721617f06",
+      "python": "3.9.6",
+      "permission_scope": "Local repository reads only; no network, secrets, billing, external action, or repository writes by the compared invocations (-B and PYTHONDONTWRITEBYTECODE=1).",
+      "sample_count_per_tool": 1,
+      "latency_basis": "One process wall-time sample per tool, including interpreter startup; not a stable performance or cost estimate."
+    }
+  },
+  "source_snapshot": [
+    {
+      "path": "ignition/tools/foundation/resolve_current_canonical_asset.py",
+      "git_blob_at_candidate_head": "617b0b780154fd3c1072e835235da823183a465d",
+      "sha256": "07c50639da127f629c90d9e790d10e78606cc26ee72eb794b2468df72d220cc3"
+    },
+    {
+      "path": "ignition/tools/toolbox_batch_resolve_current_assets.py",
+      "git_blob_at_candidate_head": "983c0a43603bf7e6e786718266c51cd89a8c27ec",
+      "sha256": "b5dbeb20f2f2e0ee66298234ae0cf940f892dff0e12dd774fde6676ae93bd454"
+    },
+    {
+      "path": "ignition/tools/toolbox_read_current_asset_card.py",
+      "git_blob_at_candidate_head": "80b1d6ebd20ec7107ff158d8f75d76f8cfb7dbd6",
+      "sha256": "03a2b3adf0093e6434e7bcbeb68e2c26510b473193d0e82445e1ea8110bdd01b"
+    },
+    {
+      "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+      "git_blob_at_candidate_head": "739a72378120b6777bafe930f020f22eb141d112",
+      "sha256": "ee77061af46149f6eb92ea80ece4d61f7eac54d65ed63dfcc64adaa193d542b0"
+    },
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+      "git_blob_at_candidate_head": "81d0cd8dfc5273b0879effc6ff9a62e166d0b172",
+      "sha256": "b64c48ba8f613bbbe9c781c31117254a4a6d408335f9ae2ca30821362c9bb2d2"
+    },
+    {
+      "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+      "git_blob_at_candidate_head": "b04a68f6a9ba9674956483e1b9eabfe319726af7",
+      "sha256": "98b4a3499ecfd54514dac39cbc47b49ceeb2b570aa27f504ca4712ee16c34317"
+    },
+    {
+      "path": "ignition/data/foundation/function-assets/corrections.jsonl",
+      "git_blob_at_candidate_head": "89f98880345a427c364b566b4dbc1f403e8d37fc",
+      "sha256": "0eb7866cd20b9e1ee9e7106cca4a51277b3f3e0fa99d09e4adb1a503821c9831"
+    },
+    {
+      "path": "ignition/data/foundation/mappings/legacy-mappings.jsonl",
+      "git_blob_at_candidate_head": "d07e6f5969891a1b57921990403cb3e518f2a5c7",
+      "sha256": "f7269dc6cc6ec36d5948d52bf516448c5c2cba8f0a65dea79f1c5212bfb50524"
+    }
+  ],
+  "invocations": [
+    {
+      "tool_id": "foundation.resolve_current_asset",
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "ignition/tools/foundation/resolve_current_canonical_asset.py",
+        "--reference",
+        "T2"
+      ],
+      "input_sha256": null,
+      "exit_code": 0,
+      "elapsed_ms_single_sample": 917.807,
+      "stdout_bytes": 961,
+      "stdout_sha256": "23d9d7203a5fef3451e81b7a9fffec7baca9e71c2149d453d9c1ff1cfa2da2d2",
+      "stderr_bytes": 0,
+      "result": {
+        "canonical_id": "T2",
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "full_record_in_output": false
+      }
+    },
+    {
+      "tool_id": "foundation.batch_resolve_current_asset_references",
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "ignition/tools/toolbox_batch_resolve_current_assets.py",
+        "--stdin"
+      ],
+      "input": {
+        "references": [
+          "T2"
+        ]
+      },
+      "input_sha256": "3d1492a04bec59272ab5e8ad723d09f61d3f88e17449433eb63d9244af27b7bc",
+      "exit_code": 0,
+      "elapsed_ms_single_sample": 995.574,
+      "stdout_bytes": 3035,
+      "stdout_sha256": "4b2ebd48fadae04b82e05a59811e3d9c2b1633e0a5a72d1a3673bae15f2efd8b",
+      "stderr_bytes": 0,
+      "result": {
+        "canonical_id": "T2",
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "full_record_in_output": false,
+        "receipt_sha256": "e0a82e959c22fffd414db0c0a2f988de17f9bcc5341b12f19cbe27bcd97cbb3a"
+      }
+    },
+    {
+      "tool_id": "foundation.read_current_asset_card",
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "ignition/tools/toolbox_read_current_asset_card.py",
+        "--stdin"
+      ],
+      "input": {
+        "canonical_id": "T2"
+      },
+      "input_sha256": "321e56c611b5d5da821eccccaa51408462ddc1a4b5e6f24acc6db924d70f9349",
+      "exit_code": 0,
+      "elapsed_ms_single_sample": 970.179,
+      "stdout_bytes": 34727,
+      "stdout_sha256": "e6430218d7dd9f58dde68f7bda6a5d668720f9531490be66bd521d89fe159bad",
+      "stderr_bytes": 0,
+      "result": {
+        "canonical_id": "T2",
+        "result_status": "CURRENT_CANONICAL_RECORD_READ",
+        "record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+        "record_sha256_verified": true,
+        "full_record_in_output": true,
+        "record_keys": [
+          "adjudication_evidence_paths",
+          "algebraic_carrier_and_operation",
+          "alias_candidate_count",
+          "alias_candidates",
+          "allowed_uses",
+          "assumptions_and_quantifiers",
+          "audit_gates",
+          "canonical_id",
+          "claim_ceiling",
+          "claimed_status",
+          "current_public_exposure",
+          "definition",
+          "dependencies",
+          "empirical_obligations",
+          "external_evidence_maturity",
+          "final_disposition",
+          "first_appearance_method",
+          "first_known_appearance_commit",
+          "historical_ids",
+          "identity_authority",
+          "known_counterexamples",
+          "last_adjudicated_commit",
+          "last_adjudicated_date",
+          "mathematical_maturity",
+          "mathematical_properties",
+          "primary_identity",
+          "prohibited_uses",
+          "proof_obligations",
+          "record_sha256",
+          "reviewer_state",
+          "secondary_identities",
+          "six_layer_audit",
+          "source_anchors",
+          "title"
+        ]
+      }
+    }
+  ],
+  "paired_result": {
+    "same_exact_canonical_id": true,
+    "all_three_record_sha256_values_equal": true,
+    "resolution_only_tools_returned": [
+      "foundation.resolve_current_asset",
+      "foundation.batch_resolve_current_asset_references"
+    ],
+    "complete_stored_record_returned": "foundation.read_current_asset_card",
+    "task_contract_satisfied_by": [
+      "foundation.read_current_asset_card"
+    ],
+    "interpretation": "The full-card reader adds the stored record body and verifies its digest; the single and batch resolvers return identity-resolution outcomes and the same digest but not the full record. This is a task-scope distinction, not evidence that the reader should run for resolution-only requests."
+  },
+  "c1_disposition": {
+    "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "retention_decision": "RETAIN_AS_SPECIALIZED_OPTIONAL_DEFAULT_OFF",
+    "replacement_candidates": [],
+    "unique_remaining_use_cases": [
+      "Read the full exact Current registry row and verify its stored digest when a task explicitly requires the record's complete attributes or claim boundaries."
+    ],
+    "reason": "The same-task output contract is met only by the full-card reader, while the two resolution tools return the matching canonical identity and digest without the full record. The evidence supports narrow specialization and no replacement; it does not establish broad quality, usage frequency, reliability, or general cost."
+  },
+  "claim_ceiling": "One exact Current ID, one checkout, and one invocation per tool establish only that the compared outputs differ under this full-record task contract. Single-sample local wall time and stdout size are observations, not stable cost or performance estimates."
+}

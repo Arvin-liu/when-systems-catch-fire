@@ -1,0 +1,70 @@
+{
+  "schema_version": "toolbox-noaa-sf6-route-choice-real-task-evidence-r0",
+  "evidence_type": "REAL_TASK_ROUTE_WIDTH_COMPARISON",
+  "task_family": "NOAA GML SF6 annual growth, 2023-2025",
+  "observed_at_utc": "2026-10-27T00:33:11Z",
+  "variants": [
+    {
+      "variant": "RAW_ONLY_SUFFICIENT_FOR_RAW_ONLY_CONTRACT",
+      "required_outputs": [
+        "provider-reported raw-table annual growth and raw-table uncertainty",
+        "one raw-source receipt"
+      ],
+      "selected_tools": [
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "outcome": "FOUND",
+      "http_requests": 1,
+      "result_path": "data/operations/toolbox-noaa-sf6-annual-growth-lookup-real-task-output-r0.json",
+      "result_sha256": "0879a613c18b0dfc34fa6e0fa84f692da38466b51aeb30224a4614e90760331c",
+      "source_response_sha256": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927",
+      "adequacy": "Sufficient only for the raw-table-only contract; does not include page values or page precision."
+    },
+    {
+      "variant": "PAIRED_SURFACES_SUFFICIENT_FOR_COMPARISON_CONTRACT",
+      "required_outputs": [
+        "page and raw annual growth and uncertainty for each requested year",
+        "literal page-minus-raw differences",
+        "two fixed source receipts and response digests"
+      ],
+      "selected_tools": [
+        "research.compare_noaa_sf6_source_surfaces"
+      ],
+      "outcome": "COMPARED",
+      "http_requests": 2,
+      "result_path": "data/operations/toolbox-noaa-sf6-source-surface-comparison-real-task-output-r0.json",
+      "result_sha256": "97936f7731c16b3749f4d87e8f0312202203d6eda465f99ed1417099b57deaa4",
+      "source_response_sha256s": {
+        "page": "5e396c8a1a8a6609c5af5253f412e696404410d89041e98152749706c4fffcf4",
+        "raw": "abc760d1b43536cc4d4453dcad98ef3f559929ae20f0b501bf34288c2ad82927"
+      },
+      "adequacy": "Sufficient for paired comparison; all three growth values matched and each reported uncertainty differed by 0.004 ppt."
+    },
+    {
+      "variant": "PAIRED_COMPARATOR_PLUS_RAW_LOOKUP_REDUNDANT",
+      "required_outputs": [
+        "same paired comparison contract"
+      ],
+      "selected_tools": [
+        "research.compare_noaa_sf6_source_surfaces",
+        "research.lookup_noaa_global_sf6_annual_growth"
+      ],
+      "outcome": "PAIRED_OUTPUT_UNCHANGED_WITH_DUPLICATE_RAW_CAPTURE",
+      "http_requests": 3,
+      "evidence": "The two actual outputs above contain byte-identical raw response digests and response sizes; the additional lookup supplies no distinct field for the paired comparison task.",
+      "adequacy": "Redundant for the paired comparison contract in this matched observation; no quality or reliability gain is established."
+    }
+  ],
+  "observed_tradeoffs": {
+    "request_counts": [
+      1,
+      2,
+      3
+    ],
+    "monetary_cost": "UNKNOWN",
+    "latency": "NOT_MEASURED",
+    "source_accuracy": "NOT_ASSESSED",
+    "comparison_scope": "The raw-only capture was at 2026-10-27T00:16:53Z and the comparator capture at 2026-10-27T00:33:11Z; identical raw response bytes support this limited matched comparison, but captures were sequential and not atomic."
+  },
+  "claim_ceiling": "One live matched year-range exercise of two NOAA GML SF6 tools; does not rank sources, validate measurements, or generalize to future responses."
+}

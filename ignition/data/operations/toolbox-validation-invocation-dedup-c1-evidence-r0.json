@@ -1,0 +1,27 @@
+{
+  "schema_version": "toolbox-validation-invocation-dedup-c1-evidence-r0",
+  "tool_id": "maintenance.plan_validation_invocation_deduplication",
+  "owner_c1_source_ref": "Arvin-liu/1111@cb50e3c574688a5b50410fb51f61e3cd0226f682:instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md#C1",
+  "comparison_status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "comparison_scope": "Functional contract comparison of exact validation-command grouping against the existing actions target coverage, Actions interval, execution Pareto, and per-run attribution tools. The input unit, matching key, and output are distinct. No same-task performance, reliability, cost, or operator-time benchmark was conducted.",
+  "compared_tool_ids": [
+    "maintenance.compare_actions_validation_target_coverage",
+    "maintenance.summarize_actions_interval_union",
+    "maintenance.summarize_execution_candidate_pareto_frontier",
+    "maintenance.attribute_actions_validation_evidence"
+  ],
+  "findings": [
+    "The new planner groups exact caller-declared argv and execution-context signatures across validation profiles and refuses to call a group reusable unless each member declares source-reviewed read-only behavior.",
+    "The target-coverage comparator compares selected validation targets and declared outcomes across multiple runs; it does not group command invocations across component profiles.",
+    "The interval-union tool summarizes elapsed job intervals; it does not establish invocation identity or decide reuse.",
+    "The execution Pareto tool compares caller-declared outcomes and one resource metric across candidates; it does not analyze profile command signatures.",
+    "The single-run attribution tool binds one plan, run, artifact set, and optional receipt; it does not group validators across multiple profiles.",
+    "All four incumbent tools retain their stated task scopes. No incumbent is retired or replaced."
+  ],
+  "unknowns": [
+    "Whether a future executor can safely fan one real process result out to every grouped profile without losing profile-specific assertions.",
+    "Any latency, billing, operator-time, reliability, or generalizable process-saving effect."
+  ],
+  "retirement_decision": "NONE",
+  "claim_ceiling": "A bounded functional scope comparison supports specialized coexistence. It does not establish a performance win, production CI safety, or coverage of all valuable incumbent uses."
+}

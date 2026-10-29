@@ -1,0 +1,3875 @@
+{
+  "actions_snapshot": {
+    "jobs_response": {
+      "jobs": [
+        {
+          "completed_at": "2026-10-24T05:29:44Z",
+          "conclusion": "cancelled",
+          "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+          "id": 120784357661,
+          "name": "foundation-validation-route",
+          "run_attempt": 1,
+          "run_id": 40064357026,
+          "started_at": "2026-10-24T04:57:15Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completed_at": "2026-10-24T04:57:17Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "started_at": "2026-10-24T04:57:16Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T04:57:47Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v4",
+              "number": 2,
+              "started_at": "2026-10-24T04:57:17Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T04:57:47Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v5",
+              "number": 3,
+              "started_at": "2026-10-24T04:57:47Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T04:57:58Z",
+              "conclusion": "success",
+              "name": "Run python3 -m pip install -r requirements-foundation.txt",
+              "number": 4,
+              "started_at": "2026-10-24T04:57:47Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T04:57:58Z",
+              "conclusion": "success",
+              "name": "Resolve exact component and consumer closure",
+              "number": 5,
+              "started_at": "2026-10-24T04:57:58Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T04:58:06Z",
+              "conclusion": "success",
+              "name": "Set up Lean for selected proof consumers",
+              "number": 6,
+              "started_at": "2026-10-24T04:57:58Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:29:40Z",
+              "conclusion": "cancelled",
+              "name": "Run selected component and consumer tests",
+              "number": 7,
+              "started_at": "2026-10-24T04:58:06Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:29:40Z",
+              "conclusion": "failure",
+              "name": "Verify exact plan and selected-target receipt",
+              "number": 8,
+              "started_at": "2026-10-24T05:29:40Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:29:40Z",
+              "conclusion": "skipped",
+              "name": "Record exact full-regression fallback when no target closure is available",
+              "number": 9,
+              "started_at": "2026-10-24T05:29:40Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:29:41Z",
+              "conclusion": "success",
+              "name": "Preserve exact plan and selected-test receipt",
+              "number": 10,
+              "started_at": "2026-10-24T05:29:40Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:29:41Z",
+              "conclusion": "skipped",
+              "name": "Post Run actions/setup-python@v5",
+              "number": 19,
+              "started_at": "2026-10-24T05:29:41Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:29:42Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@v4",
+              "number": 20,
+              "started_at": "2026-10-24T05:29:41Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:29:42Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 21,
+              "started_at": "2026-10-24T05:29:42Z",
+              "status": "completed"
+            }
+          ]
+        },
+        {
+          "completed_at": "2026-10-24T05:30:35Z",
+          "conclusion": "cancelled",
+          "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+          "id": 120790658353,
+          "name": "Full Foundation regression",
+          "run_attempt": 1,
+          "run_id": 40064357026,
+          "started_at": "2026-10-24T05:29:46Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completed_at": "2026-10-24T05:29:48Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "number": 1,
+              "started_at": "2026-10-24T05:29:47Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:26Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v4",
+              "number": 2,
+              "started_at": "2026-10-24T05:29:48Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:26Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v5",
+              "number": 3,
+              "started_at": "2026-10-24T05:30:26Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "cancelled",
+              "name": "Run python3 -m pip install -r requirements-foundation.txt",
+              "number": 4,
+              "started_at": "2026-10-24T05:30:26Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Bind full regression to the exact validation commit",
+              "number": 5,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run leanprover/lean-action@v1",
+              "number": 6,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run cd formal/lean && lake env lean Foundation.lean",
+              "number": 7,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/adjudicate_core.py --check",
+              "number": 8,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/migrate_legacy.py --check",
+              "number": 9,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/validate_foundation.py",
+              "number": 10,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/build_function_asset_census.py --check",
+              "number": 11,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/adjudicate_function_assets.py --check",
+              "number": 12,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/validate_claim_governance.py",
+              "number": 13,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/validate_function_asset_closure.py",
+              "number": 14,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/run_function_asset_math_checks.py --check",
+              "number": 15,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+              "number": 16,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/validate_nonfunction_claim_closure.py",
+              "number": 17,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate human result census and self-correction products",
+              "number": 18,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Regression — knowledge-experience clone-independence (task 102)",
+              "number": 19,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/verify_core_claims.py --check",
+              "number": 20,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/verify_079.py --check",
+              "number": 21,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/foundation/validate_080_adjudications.py",
+              "number": 22,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate synchronization registry and iteration closures",
+              "number": 23,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate typed change-propagation products",
+              "number": 24,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate Q32I Phase E candidate",
+              "number": 25,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate registry-derived system map",
+              "number": 26,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate homepage architecture projection provenance",
+              "number": 27,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate stage snapshot registry and deterministic homepage projection",
+              "number": 28,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run instance-level stage snapshot responsibility actor cases",
+              "number": 29,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 tools/validate_human_front_door.py",
+              "number": 30,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate Language-Thought Logic Plane",
+              "number": 31,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate epistemic governance referential kernel",
+              "number": 32,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Validate AI-first project state delta log",
+              "number": 33,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.foundation.test_foundation",
+              "number": 34,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.foundation.test_claim_governance",
+              "number": 35,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.foundation.test_function_asset_closure",
+              "number": 36,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.foundation.test_nonfunction_claim_closure -v",
+              "number": 37,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_iteration_sync -v",
+              "number": 38,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_human_front_door -v",
+              "number": 39,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_change_propagation -v",
+              "number": 40,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v",
+              "number": 41,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_stage_snapshot_publication -v",
+              "number": 42,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v",
+              "number": 43,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_phase_e_candidate -v",
+              "number": 44,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_component_validation_routing tests.test_history_remediation_contract -v",
+              "number": 45,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Run python3 -m unittest tests.test_production_execution_authority -v",
+              "number": 46,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Task 107 — generator determinism & reconciliation staleness (Layer B negative fixtures)",
+              "number": 47,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Task 106 — fail-closed propagation reconciliation",
+              "number": 48,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Confirm full regression source remained unchanged",
+              "number": 49,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Post Run actions/setup-python@v5",
+              "number": 97,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "skipped",
+              "name": "Post Run actions/checkout@v4",
+              "number": 98,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-24T05:30:37Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 99,
+              "started_at": "2026-10-24T05:30:37Z",
+              "status": "completed"
+            }
+          ]
+        }
+      ],
+      "total_count": 2
+    },
+    "workflow_run": {
+      "conclusion": "cancelled",
+      "event": "pull_request",
+      "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+      "id": 40064357026,
+      "pull_requests": [
+        {
+          "base": {
+            "sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe"
+          },
+          "head": {
+            "sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8"
+          },
+          "number": 264
+        }
+      ],
+      "run_attempt": 1,
+      "run_started_at": "2026-10-24T04:57:13Z",
+      "status": "completed"
+    }
+  },
+  "artifact_inventory": {
+    "artifact_id": 12549244084,
+    "artifact_sha256": "cdbe451766bfbd07ebf26a5103474f4e2064902a1ad7f12627fe2756425dd888",
+    "files": [
+      "component-validation-plan.json"
+    ],
+    "files_complete": true,
+    "name": "component-validation-40064357026-1",
+    "run_attempt": 1,
+    "run_id": 40064357026
+  },
+  "schema_version": "toolbox-actions-validation-attribution-input-r0",
+  "validation_plan": {
+    "affected_component_closure": [
+      "ai_guide",
+      "component_validation_router",
+      "current_state",
+      "epistemic_governance_kernel",
+      "external_agent_federation",
+      "formal_task_lifecycle_r1",
+      "foundation",
+      "future_executors",
+      "human_knowledge_surfaces",
+      "ignition_operating_method",
+      "iteration",
+      "iteration_manifest_contract",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "no_l7",
+      "no_totality_proof",
+      "no_truth_upgrade",
+      "open_obligation_registry_r1",
+      "readme",
+      "release_transaction_protocol_r3",
+      "stage_snapshot_publication",
+      "structural_governance_surface",
+      "sync",
+      "system_map_projection"
+    ],
+    "changed_paths": [
+      ".github/workflows/foundation-validation.yml",
+      ".github/workflows/release-transaction-protocol-validation.yml",
+      ".github/workflows/repository-path-accounting-preflight.yml",
+      "AI-HANDOFF.md",
+      "AI-START-HERE.md",
+      "ARCHITECTURE.md",
+      "KNOWLEDGE/COVERAGE.md",
+      "KNOWLEDGE/MAP.md",
+      "KNOWLEDGE/README.md",
+      "KNOWLEDGE/SEARCH.md",
+      "KNOWLEDGE/indexes/architecture_governance.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-002.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-003.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-004.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-005.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-006.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-007.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-008.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-009.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-010.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-011.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-012.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-013.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-014.md",
+      "KNOWLEDGE/indexes/architecture_governance/part-015.md",
+      "KNOWLEDGE/indexes/writing_publication.md",
+      "KNOWLEDGE/indexes/writing_publication/part-001.md",
+      "RESULTS/CLAIM-DELTA.md",
+      "RESULTS/EVIDENCE-LINEAGE.md",
+      "RESULTS/IMPACT-ANALYSIS.md",
+      "STATE-CHANGELOG.md",
+      "data/architecture/current-facts.json",
+      "data/architecture/current-system-identity.json",
+      "data/architecture/interactive-system-map.json",
+      "data/foundation/function-assets/census-summary.json",
+      "data/foundation/function-assets/discovery-coverage.json",
+      "data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
+      "data/foundation/nonfunction-claims/claim-inventory.csv",
+      "data/foundation/nonfunction-claims/claim-registry.jsonl",
+      "data/foundation/nonfunction-claims/closure-summary.json",
+      "data/foundation/nonfunction-claims/dependency-graph.jsonl",
+      "data/foundation/nonfunction-claims/discovery-coverage.json",
+      "data/foundation/nonfunction-claims/evidence-lineage.jsonl",
+      "data/foundation/nonfunction-claims/inference-risk-report.jsonl",
+      "data/foundation/nonfunction-claims/source-discovery.jsonl",
+      "data/foundation/repository-path-classification/classification-manifest.jsonl",
+      "data/governance/human-surface/materiality-manifest.json",
+      "data/governance/knowledge-experience/asset-cards.jsonl",
+      "data/governance/knowledge-experience/coverage.json",
+      "data/governance/knowledge-experience/layered-reading.jsonl",
+      "data/governance/knowledge-experience/manifest.json",
+      "data/governance/knowledge-experience/search-index.jsonl",
+      "data/governance/self-correction/claim-delta.jsonl",
+      "data/governance/self-correction/evidence-lineage-delta.jsonl",
+      "data/governance/self-correction/impact-analysis.jsonl",
+      "data/governance/self-correction/summary.json",
+      "data/operations/component-execution-profiles.json",
+      "data/operations/component-validation-map-r1.json",
+      "data/operations/current-release-lifecycle-r1.json",
+      "data/operations/current-snapshot-r1.json",
+      "data/operations/current-task-lineage-status.json",
+      "data/operations/current-volatile-fact-registry-r1.json",
+      "data/operations/formal-task-lifecycle-r1.json",
+      "data/operations/iterations/020/execution-contract-r1.json",
+      "data/operations/iterations/020/progress.jsonl",
+      "data/operations/iterations/020/step01-remote-truth-audit.json",
+      "data/operations/iterations/020/step15-deterministic-current-surface-r1.json",
+      "data/operations/iterations/020/step15-ordinal-binding-gate-r1.json",
+      "data/operations/iterations/020/step15-release-lifecycle-audit.json",
+      "data/operations/open-obligation-registry-r1.json",
+      "data/operations/project-components.json",
+      "data/operations/release-transaction-protocol-r3.json",
+      "data/operations/release-transaction-recovery-state-r1.json",
+      "data/operations/task-identity-model-r1.json",
+      "data/publication/fire-seeds/seed-census.json",
+      "docs/architecture/current-facts.md",
+      "docs/foundation/nonfunction-claim-adjudication-index.md",
+      "docs/human/nonfunction-assets/README.md",
+      "docs/human/nonfunction-assets/bulk-explanation.md",
+      "docs/operations/stage-snapshot-publication.md",
+      "docs/project-current-state.md",
+      "llms.txt",
+      "schemas/operations/execution-contract-r1.schema.json",
+      "schemas/operations/release-transaction-protocol-r3.schema.json",
+      "tests/test_component_validation_routing.py",
+      "tests/test_current_task_advancement.py",
+      "tests/test_release_transaction_protocol_r3.py",
+      "tools/advance_current_task.py",
+      "tools/build_publication_witness.py",
+      "tools/generate_current_facts.py",
+      "tools/operations/route_component_validation.py",
+      "tools/record_current_surface_determinism.py",
+      "tools/validate_current_release_lifecycle.py",
+      "tools/validate_execution_contract.py",
+      "tools/validate_ignition_operation_capability_registry.py",
+      "tools/validate_iteration_ordinal_binding.py",
+      "tools/validate_post_publication_current.py",
+      "tools/validate_release_candidate_task_identity.py",
+      "tools/validate_release_transaction_protocol_r3.py",
+      "tools/validate_task_identity_model.py"
+    ],
+    "changed_validation_test_targets": [
+      "g_component_release_controls",
+      "g_current_state_consumers"
+    ],
+    "claim_ceiling": "This map selects repository validation only. It does not establish real-world causal effects, grant execution or publication authority, or replace required shared security, permission, evidence, review, or release checks.",
+    "cross_domain_impact": {
+      "direct_seed_domains": [
+        "G",
+        "O",
+        "R"
+      ],
+      "domains": [
+        "G",
+        "O",
+        "R"
+      ],
+      "traversed_cross_domain_relations": [
+        {
+          "relation_id": "formal_task_lifecycle_projects_current",
+          "source": "formal_task_lifecycle_r1",
+          "source_domains": [
+            "G"
+          ],
+          "target": "current_state",
+          "target_domains": [
+            "O",
+            "G"
+          ]
+        },
+        {
+          "relation_id": "human_results_depend_on_readme",
+          "source": "readme",
+          "source_domains": [
+            "G",
+            "O"
+          ],
+          "target": "human_knowledge_surfaces",
+          "target_domains": [
+            "O"
+          ]
+        },
+        {
+          "relation_id": "map_current_state_no_totality",
+          "source": "current_state",
+          "source_domains": [
+            "O",
+            "G"
+          ],
+          "target": "no_totality_proof",
+          "target_domains": [
+            "G"
+          ]
+        },
+        {
+          "relation_id": "map_epistemic_kernel_l6",
+          "source": "epistemic_governance_kernel",
+          "source_domains": [
+            "G"
+          ],
+          "target": "l6",
+          "target_domains": [
+            "O",
+            "G"
+          ]
+        },
+        {
+          "relation_id": "map_foundation_epistemic_kernel",
+          "source": "foundation",
+          "source_domains": [
+            "R",
+            "O",
+            "G"
+          ],
+          "target": "epistemic_governance_kernel",
+          "target_domains": [
+            "G"
+          ]
+        },
+        {
+          "relation_id": "map_foundation_no_truth",
+          "source": "foundation",
+          "source_domains": [
+            "R",
+            "O",
+            "G"
+          ],
+          "target": "no_truth_upgrade",
+          "target_domains": [
+            "G"
+          ]
+        },
+        {
+          "relation_id": "map_l4_l5",
+          "source": "l4",
+          "source_domains": [
+            "R",
+            "O",
+            "G"
+          ],
+          "target": "l5",
+          "target_domains": [
+            "G"
+          ]
+        },
+        {
+          "relation_id": "map_l5_l6",
+          "source": "l5",
+          "source_domains": [
+            "G"
+          ],
+          "target": "l6",
+          "target_domains": [
+            "O",
+            "G"
+          ]
+        },
+        {
+          "relation_id": "map_structural_surface_current_state",
+          "source": "structural_governance_surface",
+          "source_domains": [
+            "G"
+          ],
+          "target": "current_state",
+          "target_domains": [
+            "O",
+            "G"
+          ]
+        },
+        {
+          "relation_id": "open_obligation_projects_current",
+          "source": "open_obligation_registry_r1",
+          "source_domains": [
+            "G"
+          ],
+          "target": "current_state",
+          "target_domains": [
+            "O",
+            "G"
+          ]
+        },
+        {
+          "relation_id": "projection_publishes_repository_svg",
+          "source": "system_map_projection",
+          "source_domains": [
+            "O",
+            "G"
+          ],
+          "target": "human_knowledge_surfaces",
+          "target_domains": [
+            "O"
+          ]
+        },
+        {
+          "relation_id": "stage_snapshot_builds_human_results",
+          "source": "stage_snapshot_publication",
+          "source_domains": [
+            "G"
+          ],
+          "target": "human_knowledge_surfaces",
+          "target_domains": [
+            "O"
+          ]
+        },
+        {
+          "relation_id": "stage_snapshot_projects_readme",
+          "source": "stage_snapshot_publication",
+          "source_domains": [
+            "G"
+          ],
+          "target": "readme",
+          "target_domains": [
+            "G",
+            "O"
+          ]
+        },
+        {
+          "relation_id": "sync_requires_readme",
+          "source": "sync",
+          "source_domains": [
+            "G"
+          ],
+          "target": "readme",
+          "target_domains": [
+            "G",
+            "O"
+          ]
+        }
+      ],
+      "validation_test_domains": [
+        "G"
+      ]
+    },
+    "domains": [
+      "G",
+      "O",
+      "R"
+    ],
+    "excluded_relations_by_effect": [
+      {
+        "missing_classifications": [
+          "CAPABILITY_ADDITION"
+        ],
+        "missing_dimensions": [
+          "capability",
+          "handoff",
+          "identity",
+          "usage"
+        ],
+        "relation_id": "federation_projects_executor_admission",
+        "source": "external_agent_federation",
+        "target": "executor_admission_r1"
+      },
+      {
+        "missing_classifications": [
+          "CAPABILITY_ADDITION"
+        ],
+        "missing_dimensions": [
+          "capability",
+          "handoff",
+          "identity",
+          "usage"
+        ],
+        "relation_id": "federation_projects_live_executor_bridge",
+        "source": "external_agent_federation",
+        "target": "live_executor_bridge_r1"
+      },
+      {
+        "missing_classifications": [
+          "CAPABILITY_ADDITION"
+        ],
+        "missing_dimensions": [
+          "capability",
+          "handoff",
+          "identity"
+        ],
+        "relation_id": "map_federation_codex",
+        "source": "external_agent_federation",
+        "target": "codex_adapter"
+      },
+      {
+        "missing_classifications": [
+          "CAPABILITY_ADDITION"
+        ],
+        "missing_dimensions": [
+          "capability",
+          "handoff",
+          "identity"
+        ],
+        "relation_id": "map_federation_hermes",
+        "source": "external_agent_federation",
+        "target": "hermes_adapter"
+      },
+      {
+        "missing_classifications": [
+          "CAPABILITY_ADDITION"
+        ],
+        "missing_dimensions": [
+          "capability",
+          "handoff",
+          "identity"
+        ],
+        "relation_id": "map_federation_openclaw",
+        "source": "external_agent_federation",
+        "target": "openclaw_adapter"
+      },
+      {
+        "missing_classifications": [
+          "CAPABILITY_ADDITION"
+        ],
+        "missing_dimensions": [
+          "capability",
+          "handoff",
+          "identity"
+        ],
+        "relation_id": "map_federation_reference_executor",
+        "source": "external_agent_federation",
+        "target": "reference_executor"
+      },
+      {
+        "missing_classifications": [
+          "CAPABILITY_ADDITION"
+        ],
+        "missing_dimensions": [
+          "capability",
+          "handoff",
+          "usage"
+        ],
+        "relation_id": "map_federation_runtime_environment",
+        "source": "external_agent_federation",
+        "target": "runtime_environment"
+      }
+    ],
+    "excluded_substantive_causal_candidates": [],
+    "full_regression_reasons": [
+      {
+        "claim": "the impact router, its authority inputs, schemas, or the workflow changed; cross-domain validation is required",
+        "kind": "validation_authority_changed",
+        "paths": [
+          ".github/workflows/foundation-validation.yml",
+          ".github/workflows/repository-path-accounting-preflight.yml",
+          "data/operations/component-execution-profiles.json",
+          "data/operations/component-validation-map-r1.json",
+          "data/operations/project-components.json",
+          "tests/test_component_validation_routing.py",
+          "tools/operations/route_component_validation.py"
+        ]
+      },
+      {
+        "claim": "a test module selected as consumer evidence changed in this candidate; run full Foundation regression as well as the selected target",
+        "kind": "validation_target_changed",
+        "paths": [
+          "tests/test_component_validation_routing.py",
+          "tests/test_current_task_advancement.py",
+          "tests/test_release_transaction_protocol_r3.py"
+        ]
+      },
+      {
+        "component_id": "current_state",
+        "kind": "component_requires_full_regression"
+      },
+      {
+        "component_id": "foundation",
+        "kind": "component_requires_full_regression"
+      },
+      {
+        "component_id": "l2",
+        "kind": "component_requires_full_regression"
+      },
+      {
+        "component_id": "l3",
+        "kind": "component_requires_full_regression"
+      },
+      {
+        "component_id": "l4",
+        "kind": "component_requires_full_regression"
+      },
+      {
+        "component_id": "l6",
+        "kind": "component_requires_full_regression"
+      },
+      {
+        "component_id": "system_map_projection",
+        "kind": "component_requires_full_regression"
+      }
+    ],
+    "mode": "FULL",
+    "path_component_evidence": [
+      {
+        "basis": "reviewed_shared_validation_authority_path",
+        "components": [
+          "component_validation_router"
+        ],
+        "path": ".github/workflows/foundation-validation.yml"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "release_transaction_protocol_r3",
+            "patterns": [
+              ".github/workflows/release-transaction-protocol-validation.yml"
+            ]
+          }
+        ],
+        "path": ".github/workflows/release-transaction-protocol-validation.yml"
+      },
+      {
+        "basis": "reviewed_shared_validation_authority_path",
+        "components": [
+          "component_validation_router"
+        ],
+        "path": ".github/workflows/repository-path-accounting-preflight.yml"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "ai_guide",
+            "patterns": [
+              "AI-HANDOFF.md"
+            ]
+          }
+        ],
+        "path": "AI-HANDOFF.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "ai_guide",
+            "patterns": [
+              "AI-START-HERE.md"
+            ]
+          }
+        ],
+        "path": "AI-START-HERE.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "no_l7",
+            "patterns": [
+              "ARCHITECTURE.md"
+            ]
+          }
+        ],
+        "path": "ARCHITECTURE.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/COVERAGE.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/MAP.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/README.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/SEARCH.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-002.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-003.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-004.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-005.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-006.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-007.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-008.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-009.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-010.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-011.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-012.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-013.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-014.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/architecture_governance/part-015.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/writing_publication.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "KNOWLEDGE/"
+            ]
+          }
+        ],
+        "path": "KNOWLEDGE/indexes/writing_publication/part-001.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "RESULTS/"
+            ]
+          }
+        ],
+        "path": "RESULTS/CLAIM-DELTA.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "RESULTS/"
+            ]
+          }
+        ],
+        "path": "RESULTS/EVIDENCE-LINEAGE.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "RESULTS/"
+            ]
+          }
+        ],
+        "path": "RESULTS/IMPACT-ANALYSIS.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "STATE-CHANGELOG.md"
+            ]
+          }
+        ],
+        "path": "STATE-CHANGELOG.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "data/architecture/current-facts.json"
+            ]
+          }
+        ],
+        "path": "data/architecture/current-facts.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "data/architecture/current-system-identity.json"
+            ]
+          }
+        ],
+        "path": "data/architecture/current-system-identity.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "system_map_projection",
+            "patterns": [
+              "data/architecture/interactive-system-map.json"
+            ]
+          }
+        ],
+        "path": "data/architecture/interactive-system-map.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/function-assets/census-summary.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/function-assets/discovery-coverage.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/adjudication-ledger.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/claim-inventory.csv"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/claim-registry.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/closure-summary.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/dependency-graph.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/discovery-coverage.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/inference-risk-report.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/nonfunction-claims/source-discovery.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "data/foundation/"
+            ]
+          }
+        ],
+        "path": "data/foundation/repository-path-classification/classification-manifest.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/human-surface/materiality-manifest.json"
+            ]
+          }
+        ],
+        "path": "data/governance/human-surface/materiality-manifest.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/knowledge-experience/"
+            ]
+          }
+        ],
+        "path": "data/governance/knowledge-experience/asset-cards.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/knowledge-experience/"
+            ]
+          }
+        ],
+        "path": "data/governance/knowledge-experience/coverage.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/knowledge-experience/"
+            ]
+          }
+        ],
+        "path": "data/governance/knowledge-experience/layered-reading.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/knowledge-experience/"
+            ]
+          }
+        ],
+        "path": "data/governance/knowledge-experience/manifest.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/knowledge-experience/"
+            ]
+          }
+        ],
+        "path": "data/governance/knowledge-experience/search-index.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/self-correction/"
+            ]
+          }
+        ],
+        "path": "data/governance/self-correction/claim-delta.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/self-correction/"
+            ]
+          }
+        ],
+        "path": "data/governance/self-correction/evidence-lineage-delta.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/self-correction/"
+            ]
+          }
+        ],
+        "path": "data/governance/self-correction/impact-analysis.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "data/governance/self-correction/"
+            ]
+          }
+        ],
+        "path": "data/governance/self-correction/summary.json"
+      },
+      {
+        "basis": "reviewed_shared_validation_authority_path",
+        "components": [
+          "component_validation_router"
+        ],
+        "path": "data/operations/component-execution-profiles.json"
+      },
+      {
+        "basis": "reviewed_shared_validation_authority_path",
+        "components": [
+          "component_validation_router"
+        ],
+        "path": "data/operations/component-validation-map-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "data/operations/current-release-lifecycle-r1.json"
+            ]
+          }
+        ],
+        "path": "data/operations/current-release-lifecycle-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "data/operations/current-snapshot-r1.json"
+            ]
+          }
+        ],
+        "path": "data/operations/current-snapshot-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "data/operations/current-task-lineage-status.json"
+            ]
+          }
+        ],
+        "path": "data/operations/current-task-lineage-status.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "data/operations/current-volatile-fact-registry-r1.json"
+            ]
+          }
+        ],
+        "path": "data/operations/current-volatile-fact-registry-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "formal_task_lifecycle_r1",
+            "patterns": [
+              "data/operations/formal-task-lifecycle-r1.json"
+            ]
+          }
+        ],
+        "path": "data/operations/formal-task-lifecycle-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "iteration_manifest_contract",
+            "patterns": [
+              "data/operations/iterations/"
+            ]
+          }
+        ],
+        "path": "data/operations/iterations/020/execution-contract-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "iteration_manifest_contract",
+            "patterns": [
+              "data/operations/iterations/"
+            ]
+          }
+        ],
+        "path": "data/operations/iterations/020/progress.jsonl"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "iteration_manifest_contract",
+            "patterns": [
+              "data/operations/iterations/"
+            ]
+          }
+        ],
+        "path": "data/operations/iterations/020/step01-remote-truth-audit.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "iteration_manifest_contract",
+            "patterns": [
+              "data/operations/iterations/"
+            ]
+          }
+        ],
+        "path": "data/operations/iterations/020/step15-deterministic-current-surface-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "iteration_manifest_contract",
+            "patterns": [
+              "data/operations/iterations/"
+            ]
+          }
+        ],
+        "path": "data/operations/iterations/020/step15-ordinal-binding-gate-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "iteration_manifest_contract",
+            "patterns": [
+              "data/operations/iterations/"
+            ]
+          }
+        ],
+        "path": "data/operations/iterations/020/step15-release-lifecycle-audit.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "open_obligation_registry_r1",
+            "patterns": [
+              "data/operations/open-obligation-registry-r1.json"
+            ]
+          }
+        ],
+        "path": "data/operations/open-obligation-registry-r1.json"
+      },
+      {
+        "basis": "reviewed_shared_validation_authority_path",
+        "components": [
+          "component_validation_router"
+        ],
+        "path": "data/operations/project-components.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "release_transaction_protocol_r3",
+            "patterns": [
+              "data/operations/release-transaction-protocol-r3.json"
+            ]
+          }
+        ],
+        "path": "data/operations/release-transaction-protocol-r3.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "release_transaction_protocol_r3",
+            "patterns": [
+              "data/operations/release-transaction-recovery-state-r1.json"
+            ]
+          }
+        ],
+        "path": "data/operations/release-transaction-recovery-state-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "data/operations/task-identity-model-r1.json"
+            ]
+          }
+        ],
+        "path": "data/operations/task-identity-model-r1.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "l6",
+            "patterns": [
+              "data/publication/fire-seeds/"
+            ]
+          }
+        ],
+        "path": "data/publication/fire-seeds/seed-census.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "docs/architecture/current-facts.md"
+            ]
+          }
+        ],
+        "path": "docs/architecture/current-facts.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "foundation",
+            "patterns": [
+              "docs/foundation/"
+            ]
+          }
+        ],
+        "path": "docs/foundation/nonfunction-claim-adjudication-index.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "docs/human/nonfunction-assets/"
+            ]
+          }
+        ],
+        "path": "docs/human/nonfunction-assets/README.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "human_knowledge_surfaces",
+            "patterns": [
+              "docs/human/nonfunction-assets/"
+            ]
+          }
+        ],
+        "path": "docs/human/nonfunction-assets/bulk-explanation.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "stage_snapshot_publication",
+            "patterns": [
+              "docs/operations/stage-snapshot-publication.md"
+            ]
+          }
+        ],
+        "path": "docs/operations/stage-snapshot-publication.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "docs/project-current-state.md"
+            ]
+          }
+        ],
+        "path": "docs/project-current-state.md"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "ai_guide",
+            "patterns": [
+              "llms.txt"
+            ]
+          }
+        ],
+        "path": "llms.txt"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "formal_task_lifecycle_r1",
+            "patterns": [
+              "schemas/operations/execution-contract-r1.schema.json"
+            ]
+          }
+        ],
+        "path": "schemas/operations/execution-contract-r1.schema.json"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "release_transaction_protocol_r3",
+            "patterns": [
+              "schemas/operations/release-transaction-protocol-r3.schema.json"
+            ]
+          }
+        ],
+        "path": "schemas/operations/release-transaction-protocol-r3.schema.json"
+      },
+      {
+        "basis": "reviewed_shared_validation_authority_path",
+        "components": [
+          "component_validation_router"
+        ],
+        "path": "tests/test_component_validation_routing.py"
+      },
+      {
+        "basis": "registered_validation_target_module",
+        "components": [],
+        "path": "tests/test_current_task_advancement.py",
+        "validation_targets": [
+          "g_current_state_consumers"
+        ]
+      },
+      {
+        "basis": "registered_validation_target_module",
+        "components": [],
+        "path": "tests/test_release_transaction_protocol_r3.py",
+        "validation_targets": [
+          "g_component_release_controls"
+        ]
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/advance_current_task.py"
+            ]
+          }
+        ],
+        "path": "tools/advance_current_task.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/build_publication_witness.py"
+            ]
+          }
+        ],
+        "path": "tools/build_publication_witness.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/generate_current_facts.py"
+            ]
+          }
+        ],
+        "path": "tools/generate_current_facts.py"
+      },
+      {
+        "basis": "reviewed_shared_validation_authority_path",
+        "components": [
+          "component_validation_router"
+        ],
+        "path": "tools/operations/route_component_validation.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/record_current_surface_determinism.py"
+            ]
+          }
+        ],
+        "path": "tools/record_current_surface_determinism.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/validate_current_release_lifecycle.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_current_release_lifecycle.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/validate_execution_contract.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_execution_contract.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "ignition_operating_method",
+            "patterns": [
+              "tools/validate_ignition_operation_capability_registry.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_ignition_operation_capability_registry.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/validate_iteration_ordinal_binding.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_iteration_ordinal_binding.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/validate_post_publication_current.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_post_publication_current.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/validate_release_candidate_task_identity.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_release_candidate_task_identity.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "release_transaction_protocol_r3",
+            "patterns": [
+              "tools/validate_release_transaction_protocol_r3.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_release_transaction_protocol_r3.py"
+      },
+      {
+        "basis": "registered_component_path_patterns",
+        "components": [
+          {
+            "component_id": "current_state",
+            "patterns": [
+              "tools/validate_task_identity_model.py"
+            ]
+          }
+        ],
+        "path": "tools/validate_task_identity_model.py"
+      }
+    ],
+    "plan_sha256": "0bc5139b39c140cbb995d937276e332984d7ed6755c83acdbf489e8e07e1329f",
+    "schema_version": "1.0.0",
+    "seed_components": [
+      "ai_guide",
+      "component_validation_router",
+      "current_state",
+      "formal_task_lifecycle_r1",
+      "foundation",
+      "human_knowledge_surfaces",
+      "ignition_operating_method",
+      "iteration_manifest_contract",
+      "l6",
+      "no_l7",
+      "open_obligation_registry_r1",
+      "release_transaction_protocol_r3",
+      "stage_snapshot_publication",
+      "system_map_projection"
+    ],
+    "seed_effect_inputs": [
+      {
+        "classifications": [
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE"
+        ],
+        "component_id": "ai_guide",
+        "dimensions": [],
+        "evidence": "The PR changes AI-facing entry and handoff guides; these are human-facing output surfaces and use the O surface consumer target."
+      },
+      {
+        "classifications": [
+          "CAPABILITY_ADDITION",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "component_id": "component_validation_router",
+        "dimensions": [],
+        "evidence": "This component implements the G-domain exact-diff selector, validation-map contract, and target runner; changes also match the full-regression authority paths."
+      },
+      {
+        "classifications": [
+          "EVIDENCE_UPDATE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "current_state",
+        "dimensions": [
+          "governance",
+          "handoff",
+          "identity",
+          "lifecycle_current_state",
+          "usage"
+        ],
+        "evidence": "The exact PR changes current-state facts and synchronization sources as well as human-readable current surfaces; both domain targets run and cross-domain change requires Foundation regression."
+      },
+      {
+        "classifications": [
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "formal_task_lifecycle_r1",
+        "dimensions": [
+          "handoff",
+          "identity",
+          "lifecycle_current_state"
+        ],
+        "evidence": "Formal-task lifecycle and Task20 advancement sources update canonical Current task identity; the existing current-state consumer target includes the Task20 identity-selection negative controls."
+      },
+      {
+        "classifications": [
+          "CAPABILITY_ADDITION",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "HISTORICAL_ONLY",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "foundation",
+        "dimensions": [
+          "capability",
+          "governance",
+          "handoff",
+          "identity"
+        ],
+        "evidence": "Foundation spans all layers and shared claims; its current required consumers are the complete foundation-validation workflow."
+      },
+      {
+        "classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "human_knowledge_surfaces",
+        "dimensions": [
+          "capability",
+          "deployment_rendering",
+          "governance",
+          "identity",
+          "lifecycle_current_state",
+          "operations_method",
+          "usage"
+        ],
+        "evidence": "Existing registry ownership of generated human results, knowledge-experience projections, and visibility surfaces; the mapped test modules exercise these consumers."
+      },
+      {
+        "classifications": [
+          "GOVERNANCE_CHANGE",
+          "INTERFACE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "component_id": "ignition_operating_method",
+        "dimensions": [],
+        "evidence": "The changed operation-method fixture and its registered validators/tests define G-domain behavior and run-mode constraints."
+      },
+      {
+        "classifications": [
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "iteration_manifest_contract",
+        "dimensions": [
+          "lifecycle_current_state",
+          "operations_method"
+        ],
+        "evidence": "The Task20 iteration records and manifest-bound ordinal are covered by the existing iteration synchronization and publication consumer tests."
+      },
+      {
+        "classifications": [
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "l6",
+        "dimensions": [
+          "capability",
+          "governance",
+          "handoff",
+          "identity",
+          "usage"
+        ],
+        "evidence": "The PR changes the publication fire-seed census and its governing validation; O output and G publication/synchronization consumers run, and the cross-domain effect requires Foundation regression."
+      },
+      {
+        "classifications": [
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "component_id": "no_l7",
+        "dimensions": [
+          "identity"
+        ],
+        "evidence": "The changed ARCHITECTURE.md states the no-L7 governance boundary; registered front-door and projection tests are its concrete consumers."
+      },
+      {
+        "classifications": [
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "open_obligation_registry_r1",
+        "dimensions": [
+          "handoff",
+          "identity",
+          "lifecycle_current_state"
+        ],
+        "evidence": "The changed cross-task obligation registry is current-state authority and is included in the existing current-state consumer closure."
+      },
+      {
+        "classifications": [
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "component_id": "release_transaction_protocol_r3",
+        "dimensions": [],
+        "evidence": "The dedicated release-transaction-protocol-validation workflow tests the exact R2/R3 validators and fixtures; g_component_release_controls tests cover the shared validation router, release authority and defensive boundaries. R3 remains a candidate until a separate Owner authorization and 1111 witness verify the protected merge."
+      },
+      {
+        "classifications": [
+          "GOVERNANCE_CHANGE",
+          "OPERATIONS_METHOD"
+        ],
+        "component_id": "stage_snapshot_publication",
+        "dimensions": [
+          "deployment_rendering",
+          "handoff",
+          "identity",
+          "lifecycle_current_state",
+          "operations_method"
+        ],
+        "evidence": "The R3 migration contract is documented alongside the existing stage-snapshot governance. Release-control consumers validate exact R2/R3 protocol tests; publication consumers validate that this documentation change preserves the existing publication boundary."
+      },
+      {
+        "classifications": [
+          "EVIDENCE_UPDATE",
+          "INTERFACE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC"
+        ],
+        "component_id": "system_map_projection",
+        "dimensions": [
+          "capability",
+          "deployment_rendering",
+          "governance",
+          "identity",
+          "lifecycle_current_state",
+          "operations_method"
+        ],
+        "evidence": "The PR changes the front-door validator/test and projected human surfaces; both O and G consumer suites run and the cross-domain projection effect requires Foundation regression."
+      }
+    ],
+    "selected_target_ids": [
+      "g_component_release_controls",
+      "g_current_state_consumers",
+      "g_epistemic_boundary_consumers",
+      "g_federation_boundary_consumers",
+      "g_foundation_argument_consumers",
+      "g_foundation_formal_consumers",
+      "g_human_front_door_consumers",
+      "g_operating_method_consumers",
+      "g_publication_consumers",
+      "g_repository_path_consumers",
+      "o_human_result_consumers"
+    ],
+    "source": {
+      "base_sha": "483658e2ff57ad553c3fda762ed855a8bd93ebbe",
+      "changed_file_statuses": [
+        {
+          "path": ".github/workflows/foundation-validation.yml",
+          "status": "M"
+        },
+        {
+          "path": ".github/workflows/release-transaction-protocol-validation.yml",
+          "status": "A"
+        },
+        {
+          "path": ".github/workflows/repository-path-accounting-preflight.yml",
+          "status": "M"
+        },
+        {
+          "path": "ignition/AI-HANDOFF.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/AI-START-HERE.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/ARCHITECTURE.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/COVERAGE.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/MAP.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/README.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/SEARCH.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-002.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-003.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-004.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-005.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-006.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-007.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-008.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-009.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-010.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-011.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-012.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-013.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-014.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-015.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/writing_publication.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/KNOWLEDGE/indexes/writing_publication/part-001.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/RESULTS/CLAIM-DELTA.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/RESULTS/EVIDENCE-LINEAGE.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/RESULTS/IMPACT-ANALYSIS.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/STATE-CHANGELOG.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/architecture/current-facts.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/architecture/current-system-identity.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/architecture/interactive-system-map.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/function-assets/census-summary.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/function-assets/discovery-coverage.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/claim-inventory.csv",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/dependency-graph.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/evidence-lineage.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/inference-risk-report.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/human-surface/materiality-manifest.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/knowledge-experience/coverage.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/knowledge-experience/manifest.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/self-correction/claim-delta.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/self-correction/evidence-lineage-delta.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/self-correction/impact-analysis.jsonl",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/governance/self-correction/summary.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/component-execution-profiles.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/component-validation-map-r1.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/current-release-lifecycle-r1.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/current-snapshot-r1.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/current-task-lineage-status.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/current-volatile-fact-registry-r1.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/iterations/020/execution-contract-r1.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/iterations/020/progress.jsonl",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/iterations/020/step01-remote-truth-audit.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/iterations/020/step15-deterministic-current-surface-r1.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/iterations/020/step15-ordinal-binding-gate-r1.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/iterations/020/step15-release-lifecycle-audit.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/open-obligation-registry-r1.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/project-components.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/operations/release-transaction-protocol-r3.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/release-transaction-recovery-state-r1.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/data/operations/task-identity-model-r1.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/data/publication/fire-seeds/seed-census.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/docs/architecture/current-facts.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/docs/human/nonfunction-assets/README.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/docs/operations/stage-snapshot-publication.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/docs/project-current-state.md",
+          "status": "M"
+        },
+        {
+          "path": "ignition/llms.txt",
+          "status": "M"
+        },
+        {
+          "path": "ignition/schemas/operations/execution-contract-r1.schema.json",
+          "status": "M"
+        },
+        {
+          "path": "ignition/schemas/operations/release-transaction-protocol-r3.schema.json",
+          "status": "A"
+        },
+        {
+          "path": "ignition/tests/test_component_validation_routing.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tests/test_current_task_advancement.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tests/test_release_transaction_protocol_r3.py",
+          "status": "A"
+        },
+        {
+          "path": "ignition/tools/advance_current_task.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/build_publication_witness.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/generate_current_facts.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/operations/route_component_validation.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/record_current_surface_determinism.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/validate_current_release_lifecycle.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/validate_execution_contract.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/validate_ignition_operation_capability_registry.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/validate_iteration_ordinal_binding.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/validate_post_publication_current.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/validate_release_candidate_task_identity.py",
+          "status": "M"
+        },
+        {
+          "path": "ignition/tools/validate_release_transaction_protocol_r3.py",
+          "status": "A"
+        },
+        {
+          "path": "ignition/tools/validate_task_identity_model.py",
+          "status": "M"
+        }
+      ],
+      "head_sha": "8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+      "validation_sha": "91c02e7407507bae2c5b64e7e04b35f6dfb5d43d"
+    },
+    "traversed_relation_effects": [
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ]
+          }
+        ],
+        "claim_ceiling": "declared repository linkage only; task terminality never derives from obligation closure",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "projects",
+        "relation_domain": "repository_dependency",
+        "relation_id": "formal_task_lifecycle_links_open_obligation",
+        "source": "formal_task_lifecycle_r1",
+        "target": "open_obligation_registry_r1"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "identity",
+              "lifecycle_current_state"
+            ]
+          }
+        ],
+        "claim_ceiling": "formal task lifecycle projection only; open obligations remain independent and no external completion is inferred",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "projects",
+        "relation_domain": "repository_dependency",
+        "relation_id": "formal_task_lifecycle_projects_current",
+        "source": "formal_task_lifecycle_r1",
+        "target": "current_state"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "deployment_rendering",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "deployment_rendering",
+              "operations_method"
+            ]
+          },
+          {
+            "input_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "repository navigation, exploration and readability dependency only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "publishes",
+        "relation_domain": "repository_dependency",
+        "relation_id": "human_results_depend_on_readme",
+        "source": "readme",
+        "target": "human_knowledge_surfaces"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "lifecycle_current_state",
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "audit binding only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "automatic",
+        "relation_class": "version_tracks",
+        "relation_domain": "repository_dependency",
+        "relation_id": "manifest_tracks_iteration",
+        "source": "iteration_manifest_contract",
+        "target": "iteration"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "EVIDENCE_UPDATE",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "governance",
+              "handoff",
+              "identity",
+              "lifecycle_current_state",
+              "usage"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "identity",
+              "lifecycle_current_state"
+            ]
+          },
+          {
+            "input_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "identity",
+              "lifecycle_current_state"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "identity",
+              "lifecycle_current_state"
+            ]
+          },
+          {
+            "input_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "identity",
+              "lifecycle_current_state"
+            ]
+          },
+          {
+            "input_classifications": [
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "identity"
+            ],
+            "matched_classifications": [
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "identity"
+            ]
+          },
+          {
+            "input_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "lifecycle_current_state"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "lifecycle_current_state"
+            ]
+          }
+        ],
+        "claim_ceiling": "interpretation boundary only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "constraint",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_current_state_no_totality",
+        "source": "current_state",
+        "target": "no_totality_proof"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "governance",
+              "handoff",
+              "identity"
+            ],
+            "matched_classifications": [
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "governance",
+              "handoff",
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "public constraint only; publication cannot upgrade source",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "constraint",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_epistemic_kernel_l6",
+        "source": "epistemic_governance_kernel",
+        "target": "l6"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "governance",
+              "handoff",
+              "identity"
+            ],
+            "matched_classifications": [
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "governance",
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "negative permission only; FEDERATED_ARCHITECTURE_ONLY",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "constraint",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_epistemic_kernel_no_truth",
+        "source": "epistemic_governance_kernel",
+        "target": "no_truth_upgrade"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "governance",
+              "handoff",
+              "identity"
+            ],
+            "matched_classifications": [
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "governance",
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "advisory structural projection only; no truth, permission or mechanism authority",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "projects",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_epistemic_kernel_structural_surface",
+        "source": "epistemic_governance_kernel",
+        "target": "structural_governance_surface"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "governance"
+            ],
+            "matched_classifications": [
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "governance"
+            ]
+          }
+        ],
+        "claim_ceiling": "deferred compatibility slot only; brand/intelligence cannot expand permission",
+        "creates_sync_obligation": true,
+        "propagation_mode": "blocks_on_residue",
+        "relation_class": "enabling_condition",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_federation_future_executors",
+        "source": "external_agent_federation",
+        "target": "future_executors"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION",
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "HISTORICAL_ONLY",
+              "INTERFACE_CHANGE",
+              "OPERATIONS_METHOD",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "capability",
+              "governance",
+              "handoff",
+              "identity"
+            ],
+            "matched_classifications": [
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "governance",
+              "handoff",
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "referential projection only; Foundation status remains upstream",
+        "creates_sync_obligation": false,
+        "propagation_mode": "required_assessment",
+        "relation_class": "projects",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_foundation_epistemic_kernel",
+        "source": "foundation",
+        "target": "epistemic_governance_kernel"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION",
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "HISTORICAL_ONLY",
+              "INTERFACE_CHANGE",
+              "OPERATIONS_METHOD",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "capability",
+              "governance",
+              "handoff",
+              "identity"
+            ],
+            "matched_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "matched_dimensions": [
+              "capability"
+            ]
+          }
+        ],
+        "claim_ceiling": "registry authority projection",
+        "creates_sync_obligation": false,
+        "propagation_mode": "required_assessment",
+        "relation_class": "projects",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_foundation_l2",
+        "source": "foundation",
+        "target": "l2"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION",
+              "EVIDENCE_UPDATE",
+              "GOVERNANCE_CHANGE",
+              "HISTORICAL_ONLY",
+              "INTERFACE_CHANGE",
+              "OPERATIONS_METHOD",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "capability",
+              "governance",
+              "handoff",
+              "identity"
+            ],
+            "matched_classifications": [
+              "CAPABILITY_ADDITION",
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "capability",
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "interpretation boundary only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "constraint",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_foundation_no_truth",
+        "source": "foundation",
+        "target": "no_truth_upgrade"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "lifecycle_current_state",
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "governance synchronization obligation",
+        "creates_sync_obligation": true,
+        "propagation_mode": "automatic",
+        "relation_class": "synchronization_requires",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_iteration_sync",
+        "source": "iteration",
+        "target": "sync"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "input_dimensions": [
+              "capability"
+            ],
+            "matched_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "matched_dimensions": [
+              "capability"
+            ]
+          }
+        ],
+        "claim_ceiling": "declared workflow dependency",
+        "creates_sync_obligation": false,
+        "propagation_mode": "required_assessment",
+        "relation_class": "derives",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_l2_l3",
+        "source": "l2",
+        "target": "l3"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "input_dimensions": [
+              "capability"
+            ],
+            "matched_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "matched_dimensions": [
+              "capability"
+            ]
+          }
+        ],
+        "claim_ceiling": "declared workflow dependency",
+        "creates_sync_obligation": false,
+        "propagation_mode": "required_assessment",
+        "relation_class": "derives",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_l3_l4",
+        "source": "l3",
+        "target": "l4"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "input_dimensions": [
+              "capability"
+            ],
+            "matched_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "matched_dimensions": [
+              "capability"
+            ]
+          }
+        ],
+        "claim_ceiling": "validation dependency only",
+        "creates_sync_obligation": false,
+        "propagation_mode": "required_assessment",
+        "relation_class": "validates",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_l4_l5",
+        "source": "l4",
+        "target": "l5"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "input_dimensions": [
+              "capability"
+            ],
+            "matched_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "matched_dimensions": [
+              "capability"
+            ]
+          }
+        ],
+        "claim_ceiling": "publication permission dependency; no truth upgrade",
+        "creates_sync_obligation": false,
+        "propagation_mode": "required_assessment",
+        "relation_class": "publishes",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_l5_l6",
+        "source": "l5",
+        "target": "l6"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "identity"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "architecture boundary",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "constraint",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_no_l7_truth",
+        "source": "no_l7",
+        "target": "no_truth_upgrade"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "CAPABILITY_ADDITION",
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "capability",
+              "identity"
+            ],
+            "matched_classifications": [
+              "CAPABILITY_ADDITION"
+            ],
+            "matched_dimensions": [
+              "identity"
+            ]
+          },
+          {
+            "input_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "identity"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "claim boundary",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "constraint",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_no_truth_totality",
+        "source": "no_truth_upgrade",
+        "target": "no_totality_proof"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "lifecycle_current_state"
+            ]
+          }
+        ],
+        "claim_ceiling": "declared navigation dependency only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "documents",
+        "relation_domain": "repository_dependency",
+        "relation_id": "map_readme_current",
+        "source": "readme",
+        "target": "current_state"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "governance",
+              "identity"
+            ],
+            "matched_classifications": [
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "identity"
+            ]
+          }
+        ],
+        "claim_ceiling": "human-readable advisory explanation only; current state remains open",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "documents",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_structural_surface_current_state",
+        "source": "structural_governance_surface",
+        "target": "current_state"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "input_dimensions": [
+              "governance",
+              "identity"
+            ],
+            "matched_classifications": [
+              "GOVERNANCE_CHANGE",
+              "INTERFACE_CHANGE"
+            ],
+            "matched_dimensions": [
+              "governance"
+            ]
+          }
+        ],
+        "claim_ceiling": "provider-neutral advisory exposure only; capability and permission remain unchanged",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "documents",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "map_structural_surface_federation",
+        "source": "structural_governance_surface",
+        "target": "external_agent_federation"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ]
+          },
+          {
+            "input_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "handoff",
+              "identity",
+              "lifecycle_current_state"
+            ]
+          }
+        ],
+        "claim_ceiling": "repository-local obligation status and carry-forward projection only; no task liveness or external truth is inferred",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "projects",
+        "relation_domain": "repository_dependency",
+        "relation_id": "open_obligation_projects_current",
+        "source": "open_obligation_registry_r1",
+        "target": "current_state"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "EVIDENCE_UPDATE",
+              "INTERFACE_CHANGE",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "capability",
+              "deployment_rendering",
+              "governance",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "INTERFACE_CHANGE",
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "deployment_rendering",
+              "lifecycle_current_state",
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "repository navigation projection only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "automatic",
+        "relation_class": "publishes",
+        "relation_domain": "repository_dependency",
+        "relation_id": "projection_publishes_repository_svg",
+        "source": "system_map_projection",
+        "target": "human_knowledge_surfaces"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "deployment_rendering",
+              "handoff",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "deployment_rendering",
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "repository human-readable candidate summary only; no lifecycle promotion",
+        "creates_sync_obligation": true,
+        "propagation_mode": "automatic",
+        "relation_class": "publishes",
+        "relation_domain": "repository_dependency",
+        "relation_id": "stage_snapshot_builds_human_results",
+        "source": "stage_snapshot_publication",
+        "target": "human_knowledge_surfaces"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "deployment_rendering",
+              "handoff",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "deployment_rendering",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "public stage-summary projection only; no capability lifecycle promotion",
+        "creates_sync_obligation": true,
+        "propagation_mode": "automatic",
+        "relation_class": "projects",
+        "relation_domain": "repository_dependency",
+        "relation_id": "stage_snapshot_projects_readme",
+        "source": "stage_snapshot_publication",
+        "target": "readme"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "GOVERNANCE_CHANGE",
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "deployment_rendering",
+              "handoff",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "deployment_rendering",
+              "handoff",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "repository synchronization obligation only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "synchronization_requires",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "stage_snapshot_requires_sync",
+        "source": "stage_snapshot_publication",
+        "target": "sync"
+      },
+      {
+        "activations": [
+          {
+            "input_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "input_dimensions": [
+              "deployment_rendering",
+              "handoff",
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "OPERATIONS_METHOD"
+            ],
+            "matched_dimensions": [
+              "identity",
+              "lifecycle_current_state",
+              "operations_method"
+            ]
+          },
+          {
+            "input_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "input_dimensions": [
+              "lifecycle_current_state",
+              "operations_method"
+            ],
+            "matched_classifications": [
+              "RELEASE_OR_CURRENT_STATE_SYNC"
+            ],
+            "matched_dimensions": [
+              "lifecycle_current_state",
+              "operations_method"
+            ]
+          }
+        ],
+        "claim_ceiling": "governance obligation only",
+        "creates_sync_obligation": true,
+        "propagation_mode": "required_assessment",
+        "relation_class": "synchronization_requires",
+        "relation_domain": "synchronization_obligation",
+        "relation_id": "sync_requires_readme",
+        "source": "sync",
+        "target": "readme"
+      }
+    ],
+    "traversed_relations": [
+      "formal_task_lifecycle_links_open_obligation",
+      "formal_task_lifecycle_projects_current",
+      "human_results_depend_on_readme",
+      "manifest_tracks_iteration",
+      "map_current_state_no_totality",
+      "map_epistemic_kernel_l6",
+      "map_epistemic_kernel_no_truth",
+      "map_epistemic_kernel_structural_surface",
+      "map_federation_future_executors",
+      "map_foundation_epistemic_kernel",
+      "map_foundation_l2",
+      "map_foundation_no_truth",
+      "map_iteration_sync",
+      "map_l2_l3",
+      "map_l3_l4",
+      "map_l4_l5",
+      "map_l5_l6",
+      "map_no_l7_truth",
+      "map_no_truth_totality",
+      "map_readme_current",
+      "map_structural_surface_current_state",
+      "map_structural_surface_federation",
+      "open_obligation_projects_current",
+      "projection_publishes_repository_svg",
+      "stage_snapshot_builds_human_results",
+      "stage_snapshot_projects_readme",
+      "stage_snapshot_requires_sync",
+      "sync_requires_readme"
+    ],
+    "validation_map_sha256": "c5f6bf9905505c9dc7bbd0d7d45675250cf0954c268f3501e076c1ac23248f9c"
+  },
+  "validation_receipt": null
+}

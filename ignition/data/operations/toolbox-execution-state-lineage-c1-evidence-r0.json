@@ -1,0 +1,49 @@
+{
+  "schema_version": "ignition.toolbox-execution-state-lineage-c1-evidence-r0",
+  "tool_id": "maintenance.audit_execution_state_lineage",
+  "comparison_scope": "Low-cost contract and matched synthetic test comparison. Kernel validate_resume_lineage is exercised on both valid sibling checkpoint/capsule pairs; this candidate then evaluates the full graph with the inactive sibling intentionally omitted. Existing portable-research-episode and execution-effect-receipt contracts are inspected for adjacent scope. No benchmark or real production checkpoint set was used.",
+  "comparators": [
+    {
+      "identity": "Kernel validate_resume_lineage function (not a separately registered toolbox identity)",
+      "implementation_ref": "ignition/agent_kernel/contracts.py",
+      "observation": "Both independently valid sibling checkpoint/resume pairs pass pairwise validation; the pairwise function does not consume a graph-wide active-tip accounting declaration."
+    },
+    {
+      "tool_id": "collaboration.validate_portable_research_episode",
+      "implementation_ref": "ignition/tools/toolbox_portable_research_episode.py",
+      "observation": "Validates versioned research artifact and fork-map relations; no checkpoint DAG leaf accounting or rollback ancestry contract."
+    },
+    {
+      "tool_id": "maintenance.preflight_execution_effect_receipt",
+      "implementation_ref": "ignition/tools/toolbox_execution_effect_receipt.py",
+      "observation": "Binds a declared execution to later caller observation and selected file digests; no multi-checkpoint branch-tip accounting."
+    }
+  ],
+  "matched_test": {
+    "fixture": "ignition/tests/fixtures/toolbox-execution-state-lineage/valid-two-branch-r0.json",
+    "negative_variant": "Same graph with declared_inactive_tip_checkpoint_ids empty",
+    "result": "Candidate reports INACTIVE_TIP_ACCOUNTING_MISMATCH while both sibling pairwise Kernel resume checks pass.",
+    "candidate_finding": "INACTIVE_TIP_ACCOUNTING_MISMATCH"
+  },
+  "disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "replacement_candidates": [],
+    "unique_use_case": "Graph-wide active path, all-leaf/inactive-tip accounting, and rollback ancestry over caller-supplied checkpoint projections."
+  },
+  "uncertainty": [
+    "Evidence is synthetic and scoped to structural contract behavior.",
+    "No same-task reliability, latency, resource, operator-effort or monetary-cost comparison was conducted.",
+    "No claim is made about authenticating checkpoint provenance, declaration completeness, branch isolation or actual rollback success."
+  ],
+  "actual_pilot_compatibility": {
+    "source_classification": "CHECKED_IN_OFFLINE_SYNTHETIC_RUNTIME_PILOT",
+    "source_refs": [
+      "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/run-state.json",
+      "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/resume-capsule.json",
+      "ignition/data/agent-runtime/pilots/non-knowledge-manifest-r0/pilot-receipt.json"
+    ],
+    "candidate_result": "PASS: one active leaf and one matching resume capsule; state bytes were not read by the candidate.",
+    "kernel_pairwise_result": "PASS on the same checkpoint/resume values through validate_resume_lineage.",
+    "interpretation": "Actual local integration compatibility over repository-held synthetic pilot data; not production runtime or external-effect evidence."
+  }
+}

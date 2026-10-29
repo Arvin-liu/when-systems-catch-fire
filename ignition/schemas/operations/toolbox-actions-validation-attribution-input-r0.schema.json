@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:toolbox-actions-validation-attribution-input-r0",
+  "title": "Actions Validation Attribution Input R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "validation_plan", "actions_snapshot", "artifact_inventory"],
+  "properties": {
+    "schema_version": {"const": "toolbox-actions-validation-attribution-input-r0"},
+    "validation_plan": {"$ref": "#/$defs/plan"},
+    "actions_snapshot": {"$ref": "#/$defs/actionsSnapshot"},
+    "artifact_inventory": {"$ref": "#/$defs/artifactInventory"},
+    "validation_receipt": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/receipt"}]}
+  },
+  "$defs": {
+    "sha40": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha64": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "plan": {
+      "type": "object",
+      "required": ["schema_version", "mode", "plan_sha256", "validation_map_sha256", "source", "selected_target_ids"],
+      "properties": {
+        "schema_version": {"const": "1.0.0"},
+        "mode": {"enum": ["TARGETED", "FULL"]},
+        "plan_sha256": {"$ref": "#/$defs/sha64"},
+        "validation_map_sha256": {"$ref": "#/$defs/sha64"},
+        "source": {
+          "type": "object",
+          "required": ["base_sha", "head_sha", "validation_sha"],
+          "properties": {
+            "base_sha": {"$ref": "#/$defs/sha40"},
+            "head_sha": {"$ref": "#/$defs/sha40"},
+            "validation_sha": {"$ref": "#/$defs/sha40"}
+          }
+        },
+        "selected_target_ids": {
+          "type": "array", "minItems": 1, "maxItems": 500, "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_.-]*$"}
+        }
+      }
+    },
+    "actionsSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workflow_run", "jobs_response"],
+      "properties": {
+        "workflow_run": {
+          "type": "object",
+          "required": ["id", "run_attempt", "head_sha", "event", "status", "conclusion"],
+          "properties": {
+            "id": {"type": "integer", "minimum": 1},
+            "run_attempt": {"type": "integer", "minimum": 1},
+            "head_sha": {"$ref": "#/$defs/sha40"},
+            "event": {"$ref": "#/$defs/nonblank"},
+            "status": {"$ref": "#/$defs/nonblank"},
+            "conclusion": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/nonblank"}]},
+            "run_started_at": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/nonblank"}]},
+            "pull_requests": {"type": "array", "items": {"type": "object"}}
+          },
+          "additionalProperties": true
+        },
+        "jobs_response": {
+          "type": "object",
+          "required": ["jobs"],
+          "properties": {
+            "total_count": {"type": "integer", "minimum": 0},
+            "jobs": {"type": "array", "maxItems": 500, "items": {"type": "object"}}
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "artifactInventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["run_id", "run_attempt", "artifact_id", "name", "artifact_sha256", "files_complete", "files"],
+      "properties": {
+        "run_id": {"type": "integer", "minimum": 1},
+        "run_attempt": {"type": "integer", "minimum": 1},
+        "artifact_id": {"type": "integer", "minimum": 1},
+        "name": {"$ref": "#/$defs/nonblank"},
+        "artifact_sha256": {"$ref": "#/$defs/sha64"},
+        "files_complete": {"type": "boolean"},
+        "files": {
+          "type": "array", "maxItems": 100, "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[A-Za-z0-9._-]+$"}
+        }
+      }
+    },
+    "receipt": {
+      "type": "object",
+      "required": ["schema_version", "receipt_sha256", "base_sha", "head_sha", "validation_sha", "plan_sha256", "validation_map_sha256", "target_results"],
+      "properties": {
+        "schema_version": {"const": "1.0.0"},
+        "receipt_sha256": {"$ref": "#/$defs/sha64"},
+        "base_sha": {"$ref": "#/$defs/sha40"},
+        "head_sha": {"$ref": "#/$defs/sha40"},
+        "validation_sha": {"$ref": "#/$defs/sha40"},
+        "plan_sha256": {"$ref": "#/$defs/sha64"},
+        "validation_map_sha256": {"$ref": "#/$defs/sha64"},
+        "target_results": {"type": "array", "maxItems": 500, "items": {"type": "object"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "toolbox-audit-finding-comparator-c1-evidence-r0",
+  "blueprint_source": "Arvin-liu/1111@9c9c3cdffd799c81fa28e5a3df9aad57251daae1; TR26-04 independent audit findings",
+  "candidate_tool_id": "maintenance.compare_audit_findings",
+  "candidate_version": "0.1.0",
+  "candidate_source_sha256": "9027941e364c3b1fb8652e685310e925f29c09b3146e0a0b7f3ec5575914673b",
+  "comparison_method": "Exact local candidate-card input/output contract review plus source SHA-256 binding; no performance or reviewer-independence benchmark was performed.",
+  "compared_tools": [
+    {
+      "tool_id": "research.validate_evidence_program_snapshot",
+      "version": "toolbox-wrapper-0.1.0; upstream Task103 Evidence Program validator",
+      "source_path": "ignition/tools/toolbox_validate_evidence_program.py",
+      "source_sha256": "0fc3a92a078efc1c4077d8edeff38fa41dc27139d5d964edd1775a1049659261",
+      "input_contract": [
+        "fixed checked-out ignition/evidence-program snapshot plus containing checkout Git metadata for read-only ancestry checks"
+      ],
+      "output_contract": [
+        "compact validator status, check count, failure count, and bounded failure details",
+        "SHA-256 digest and file count for the complete checked-out Evidence Program tree",
+        "validator source SHA-256 and local Git root identity"
+      ],
+      "functional_relation": "Runs the fixed repository evidence-program validator and returns a source-tree digest; it does not compare two review finding sets."
+    },
+    {
+      "tool_id": "maintenance.attribute_actions_validation_evidence",
+      "version": "0.1.0",
+      "source_path": "ignition/tools/toolbox_actions_validation_attribution.py",
+      "source_sha256": "9ac1000a812e5abf3207a361aa5499ed61e080685a527738613fd683581a2558",
+      "input_contract": [
+        "UTF-8 JSON stdin containing one component validation plan, one workflow run/jobs snapshot, one artifact inventory with extracted basenames and completeness flag, and an optional component validation receipt."
+      ],
+      "output_contract": [
+        "Deterministic JSON receipt with plan/run/artifact identity bindings, selected-target IDs, receipt presence or binding status, observed job intervals, source/tool digests, and explicit non-claims."
+      ],
+      "functional_relation": "Maps a validation plan and its targets to one Actions run snapshot; it does not reconcile audit disposition or evidence-reference differences."
+    },
+    {
+      "tool_id": "knowledge.navigate_raw_evidence",
+      "version": "0.1.0",
+      "source_path": "ignition/tools/toolbox_raw_evidence_navigator.py",
+      "source_sha256": "229d0c707af65f49ca1e0e566e6c341214878b7193d1448e58cdc682ec728752",
+      "input_contract": [
+        "Bounded UTF-8 JSON stdin with requirement IDs, literal query terms, maximum sources per requirement, total raw-source byte budget, and maximum excerpt length"
+      ],
+      "output_contract": [
+        "Ranked Knowledge-index candidates with exact repository source paths and indexed/current SHA-256 comparison.",
+        "Current raw line matches with line numbers, matched and missing query terms, current/indexed SHA-256 comparison, at most 8 excerpts per source, matched-line count, truncation flag, and explicit partial/unopened/missing statuses.",
+        "Requirement-level navigation hints and unresolved gaps; sufficiency_decision is always NOT_EVALUATED."
+      ],
+      "functional_relation": "Finds bounded raw source lines in the checked-out Knowledge index; it does not compare caller-supplied review records."
+    },
+    {
+      "tool_id": "maintenance.compare_context_packet_variants",
+      "version": "0.1.0",
+      "source_path": "ignition/tools/toolbox_context_packet_variant_comparator.py",
+      "source_sha256": "7c58022ff875575bec65fb0db7747e35dd5c4458cc38caefa3f2a6bde59a6490",
+      "input_contract": [
+        "UTF-8 JSON object with exactly comparison_id, baseline_packet, candidate_packet; each packet is a knowledge.assemble_context_packet R0 result."
+      ],
+      "output_contract": [
+        "Matched caller-declared task binding, exact UTF-8 excerpt-text byte/character/line counts, source identity counts, and declared obligation set differences without echoing excerpts.",
+        "Explicit NOT_EVALUATED semantic coverage and sufficiency, NOT_MEASURED provider tokens/cost, and execution_authorized=false."
+      ],
+      "functional_relation": "Compares same-task ContextPacket excerpt and obligation structures, not audit finding records."
+    }
+  ],
+  "finding": "The reviewed neighbors validate one fixed evidence tree, attribute one Actions validation snapshot to planned targets, find bounded raw evidence, or compare structural ContextPackets. None accepts two same-target audit finding records and reports missing/shared findings, disposition differences, and evidence-reference set differences.",
+  "disposition": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+  "retirement_review": {
+    "old_tools_retired": [],
+    "basis": "Inputs and outputs differ; comparison evidence does not establish that this tool covers any neighbor's valuable use cases."
+  },
+  "real_task_link": {
+    "evidence_path": "ignition/data/operations/toolbox-audit-finding-comparator-real-task-r0.json",
+    "tool_input_sha256": "4b09392226ac4313b41f242eab5874479523e1b13da43649051dd219abd9126e",
+    "tool_output_sha256": "fcba464aa683a62944b229e6f94af871056b1387f132923248e5fc09a24e2073"
+  },
+  "limits": [
+    "Caller-declared reviewer references are unauthenticated; independent review is not established.",
+    "Evidence refs and digests are echoed but not read or authenticated.",
+    "One local invocation demonstrates interface execution only; no reduction in false PASS, review time, or audit error was measured."
+  ]
+}

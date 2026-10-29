@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 680 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 740 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -118,7 +118,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-4F74B24C8CD7466C`
-- 关联断言：['NFC-6371ba9b57f2ffb5', 'NFC-8095e8bf6872d562', 'NFC-82b2e679e1ae4823', 'NFC-88b7385f8ba2981c', 'NFC-98987570e463f164', 'NFC-a1fd51fcfe3cc3ac', 'NFC-e67cc40ec0729822', 'NFC-ef2d898362d5ccd4']
+- 关联断言：['NFC-6371ba9b57f2ffb5', 'NFC-8095e8bf6872d562', 'NFC-82b2e679e1ae4823', 'NFC-88b7385f8ba2981c', 'NFC-98987570e463f164', 'NFC-a1fd51fcfe3cc3ac', 'NFC-c7316446498dc629', 'NFC-e67cc40ec0729822', 'NFC-ef2d898362d5ccd4']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -2362,6 +2362,134 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/operations/actions-interval-union.md`
+
+- 状态：`ADDED`
+- Delta：`CD-5ACB62A3128A55C1`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/actions-step-timeline-summary.md`
+
+- 状态：`ADDED`
+- Delta：`CD-19BCDF261EB4D816`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/actions-validation-attribution.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A3012CEDCCD93410`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/actions-validation-target-coverage.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A042D0F21E30AEF9`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/arxiv-metadata-lookup.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9F3A5CBFB80053B2`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/arxiv-query-search.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C9C7BE7590F4054E`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/counterfactual-fragility-probe.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E7556FFBAC294881`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/crossref-query-search.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6877CA1684609A44`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/datacite-doi-metadata.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BBF9E07C5D35A7F1`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/declared-permission-delta-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-8A2D6BB23669742E`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/executed-experience-reuse-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-278ED53DC2D9A73F`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/execution-candidate-pareto-frontier.md`
+
+- 状态：`ADDED`
+- Delta：`CD-351C314DDB7F12A6`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/execution-state-lineage-audit.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E45C9AB464407BF5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/failure-anchored-recovery-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-46C5D8B0948512D4`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/governed-improvement-transition.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E66D0FD402A55EB1`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/grounded-ideation-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B8735594845D5B76`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/operations/ignition-operation-playbooks-r1.md`
 
 - 状态：`ADDED`
@@ -2378,11 +2506,355 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/operations/noaa-ch4-annual-growth-lookup.md`
+
+- 状态：`ADDED`
+- Delta：`CD-672777F571EFC62E`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-ch4-source-surface-comparison.md`
+
+- 状态：`ADDED`
+- Delta：`CD-84143D17D04E770A`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-co2-annual-growth-lookup.md`
+
+- 状态：`ADDED`
+- Delta：`CD-66BA2A3B22F95840`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-co2-ch4-annual-growth-pairing.md`
+
+- 状态：`ADDED`
+- Delta：`CD-549E70F041F9D2DA`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-co2-source-surface-comparison.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C2940EFA778EA858`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-n2o-annual-growth-lookup.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A58DDA231F0C4268`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-n2o-source-surface-comparison.md`
+
+- 状态：`ADDED`
+- Delta：`CD-395798E80C24DE9F`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-sf6-annual-growth-lookup.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E56DD6AE366C46D0`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/noaa-sf6-source-surface-comparison.md`
+
+- 状态：`ADDED`
+- Delta：`CD-AFEC762EF69D1B94`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/openalex-query-search.md`
+
+- 状态：`ADDED`
+- Delta：`CD-253AB45880967464`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/portable-research-episode-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-DE2155B5CA586323`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/producer-consumer-semantic-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-0CC88B44B786A0B2`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/pubmed-citation-matcher.md`
+
+- 状态：`ADDED`
+- Delta：`CD-96F5B44E32866558`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/selected-index-search-result-merge.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CEB262B64142D010`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/source-section-byte-parity.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D7A14DE5391B6177`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/operations/stage-snapshot-publication.md`
 
 - 状态：`ADDED`
 - Delta：`CD-8E4B48D6273130F9`
 - 关联断言：['NFC-0c156ad0b51abef7', 'NFC-0da8b6cab577c460', 'NFC-130daa959c23c142', 'NFC-213f498cf1cd9172', 'NFC-3174573d77926519', 'NFC-3b9b0fe26c149fdf', 'NFC-43772cebae9b6ee6', 'NFC-47fd7ec820cc2212', 'NFC-532a35848e59dc23', 'NFC-538ce24d1dad6ade', 'NFC-610b1215906d4897', 'NFC-6b87a85e0920cee9', 'NFC-6e3478fe878eae79', 'NFC-6eec44a33705120e', 'NFC-78aca6fed07add63', 'NFC-7ca988186770616b', 'NFC-81cd82780770aba9', 'NFC-98710f14baf31ace', 'NFC-9ac871cfa3be8d83', 'NFC-9f9b5ee24f8b6fd7']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-actions-check-observations.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4E495C404F7D17B1`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-agent-episode-binding.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9A2112123D248AF3`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-audit-finding-comparator.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CFC7E6ABCA6A8EE5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-bounded-thinking-operation.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3717A33FCA149544`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-component-comparison.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3D2F359D4D5AA628`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-component-path-residue.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D2507C43EE6390F9`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-context-packet-variant-comparator.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EB6950CE5817FC8E`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-crossref-citation-matcher.md`
+
+- 状态：`ADDED`
+- Delta：`CD-5F4FF7A29D422E2F`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-crossref-metadata-verifier.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EAC4F5F01038D25C`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-crossref-reference-metadata-comparison.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B21E9407F99BE35B`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-europe-pmc-fulltext-locator.md`
+
+- 状态：`ADDED`
+- Delta：`CD-AD94CF91BC1E6953`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-europe-pmc-query-search.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2535490F67EEC4F5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-evidence-update-snapshot-comparator.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4F27B5F34521AFE8`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-execution-effect-receipt.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6E55AF3204BDECC7`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-handoff-action-binding-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-694824C32FDF3279`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-handoff-advisory-selection.md`
+
+- 状态：`ADDED`
+- Delta：`CD-19BC76898D1E08C5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-handoff-artifact-byte-check.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C89C1B1DD9604EAF`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-offline-source-snapshot-binding.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D15D17D7AA8F8152`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-openalex-work-metadata.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2C7EEB53147147E5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-portable-research-episode-builder.md`
+
+- 状态：`ADDED`
+- Delta：`CD-37A0D2F882088DBF`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-publication-metadata-cross-source-comparison.md`
+
+- 状态：`ADDED`
+- Delta：`CD-554D799B050AF008`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-pubmed-query-search.md`
+
+- 状态：`ADDED`
+- Delta：`CD-719106FADBC1F1B0`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-receiver-handoff-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-73071217495B5939`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-reusable-context-preflight.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2EDDD73F8E2AFB38`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-structural-analogy-search.md`
+
+- 状态：`ADDED`
+- Delta：`CD-AF93590EF97F9465`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-task-decomposition-solvability.md`
+
+- 状态：`ADDED`
+- Delta：`CD-1EC7ABBE63CC5D5F`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-validation-invocation-deduplication.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D0F2B4236C36DF64`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/operations/toolbox-verify-offline-source-snapshot-run.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6D4A0058A515C96E`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -2631,6 +3103,14 @@
 - 状态：`ADDED`
 - Delta：`CD-E31EC0D50B51B476`
 - 关联断言：['NFC-052867bcbe31ce89', 'NFC-3e599587ce7ff5b3', 'NFC-6f389bf1d443dcc6', 'NFC-764683173e7d1b91', 'NFC-94cf6d330142287d', 'NFC-9586d9ebd2bf09bb', 'NFC-9e9068781ff63a95', 'NFC-ad9f85c8943d67b3', 'NFC-eac003e00bff6672', 'NFC-eec329729792da9a']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/toolbox-jsonl-selector-r0.md`
+
+- 状态：`ADDED`
+- Delta：`CD-046ADDD1D73F4B42`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

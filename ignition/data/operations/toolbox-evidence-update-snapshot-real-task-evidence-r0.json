@@ -1,0 +1,33 @@
+{
+  "schema_version": "toolbox-evidence-update-snapshot-real-task-evidence-r0",
+  "tool_id": "research.compare_evidence_update_snapshots",
+  "tool_version": "0.1.0",
+  "evidence_level": "REAL_TASK_OUTCOME",
+  "task": "Compare the committed claim/evidence-lineage/adjudication records for CLAIM-A1 between Formal main and the isolated toolbox candidate using exact repository refs.",
+  "input_path": "ignition/data/operations/toolbox-evidence-update-snapshot-real-task-input-r0.json",
+  "input_sha256": "7fecccb1d35bc4e2a0aaf5f7a77443ffb553f60646498e664ec444488e15d2cf",
+  "output_path": "ignition/data/operations/toolbox-evidence-update-snapshot-real-task-output-r0.json",
+  "output_sha256": "073be87e362d3f10b3eb3425f258e08ec7e3b8c46e549c73513a0bf16321ec4c",
+  "exit_code": 0,
+  "reported_status": "NO_CHANGE_NOT_ESTABLISHED",
+  "comparison_status": "COMPARISON_UNKNOWN",
+  "added_evidence_count": 0,
+  "absent_from_candidate_count": 0,
+  "changed_record_count": 0,
+  "retained_exact_count": 4,
+  "claim_ceiling": "This is a real repository-record comparison. The source artifacts are caller-supplied from exact Git refs; the tool does not authenticate them, adjudicate CLAIM-A1, or infer scientific evidence quality. Missing acquisition/evaluator/update/stopping controls remain COMPARISON_UNKNOWN; no-change is not established.",
+  "execution_authorized": false,
+  "tool_source_sha256": "2e152ced821601270cea76f097bd02d0b50deb1d7874668f8443fa872792a93f",
+  "tool_source_binding": {
+    "path": "ignition/tools/toolbox_compare_evidence_update_snapshots.py",
+    "sha256": "2e152ced821601270cea76f097bd02d0b50deb1d7874668f8443fa872792a93f",
+    "source_commit_at_execution": null,
+    "binding_limit": "Exact local worktree file content only; no independent runtime or external source authenticity is established."
+  },
+  "execution_environment": {
+    "python_version": "3.9.6",
+    "runtime_dependencies": "standard library only",
+    "network_requests": 0,
+    "filesystem_access": "NONE"
+  }
+}

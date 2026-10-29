@@ -1,0 +1,31 @@
+{
+  "baseline": {
+    "grants": [
+      {
+        "capability": "filesystem.read",
+        "scope": "ignition/"
+      }
+    ],
+    "policy_id": "candidate-card-declared-permissions",
+    "policy_revision": "bef6bf46",
+    "snapshot_id": "bef6bf46",
+    "subject_id": "collaboration.verify_handoff_artifact_files"
+  },
+  "candidate": {
+    "grants": [
+      {
+        "capability": "filesystem.read",
+        "scope": "ignition/"
+      },
+      {
+        "capability": "filesystem.write",
+        "scope": "ignition/TOOLBOX.md"
+      }
+    ],
+    "policy_id": "candidate-card-declared-permissions",
+    "policy_revision": "6bb27e93",
+    "snapshot_id": "negative-control",
+    "subject_id": "collaboration.verify_handoff_artifact_files"
+  },
+  "schema_version": "declared-permission-delta-r0"
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:validation-invocation-dedup-output-r0",
+  "title": "Validation Invocation Deduplication Output R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "evaluation_id", "source_ref", "analysis_purpose", "input_sha256",
+    "profiles_analyzed", "invocation_group_count", "potential_reuse_group_count",
+    "potential_duplicate_invocations", "groups", "non_claims"
+  ],
+  "properties": {
+    "schema_version": {"const": "validation-invocation-dedup-output-r0"},
+    "evaluation_id": {"$ref": "#/$defs/id"},
+    "source_ref": {"$ref": "#/$defs/nonblank"},
+    "analysis_purpose": {"$ref": "#/$defs/nonblank"},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "profiles_analyzed": {"type": "integer", "minimum": 1, "maximum": 32},
+    "invocation_group_count": {"type": "integer", "minimum": 1, "maximum": 32},
+    "potential_reuse_group_count": {"type": "integer", "minimum": 0, "maximum": 32},
+    "potential_duplicate_invocations": {"type": "integer", "minimum": 0, "maximum": 31},
+    "groups": {"type": "array", "minItems": 1, "maxItems": 32, "items": {"$ref": "#/$defs/group"}},
+    "non_claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "commands_executed", "execution_authorized", "results_authenticated",
+        "semantic_equivalence_authenticated", "process_launches_saved",
+        "runtime_or_cost_savings_established", "ci_or_required_checks_changed"
+      ],
+      "properties": {
+        "commands_executed": {"const": false},
+        "execution_authorized": {"const": false},
+        "results_authenticated": {"const": false},
+        "semantic_equivalence_authenticated": {"const": false},
+        "process_launches_saved": {"const": false},
+        "runtime_or_cost_savings_established": {"const": false},
+        "ci_or_required_checks_changed": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,95}$"},
+    "nonblank": {"type": "string", "minLength": 1, "maxLength": 2048, "pattern": "\\S"},
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "invocation_signature_sha256", "argv", "working_directory", "source_tree_git_sha1",
+        "runtime_fingerprint_sha256", "environment_fingerprint_sha256", "result_contract_id",
+        "profile_ids", "profile_count", "potential_duplicate_invocations",
+        "reuse_candidate_status", "non_eligibility_reasons", "review_evidence_refs"
+      ],
+      "properties": {
+        "invocation_signature_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "argv": {"type": "array", "minItems": 1, "maxItems": 64, "items": {"type": "string", "minLength": 1}},
+        "working_directory": {"type": "string", "minLength": 1, "maxLength": 256},
+        "source_tree_git_sha1": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "runtime_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "environment_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "result_contract_id": {"$ref": "#/$defs/id"},
+        "profile_ids": {"type": "array", "minItems": 1, "maxItems": 32, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "profile_count": {"type": "integer", "minimum": 1, "maximum": 32},
+        "potential_duplicate_invocations": {"type": "integer", "minimum": 0, "maximum": 31},
+        "reuse_candidate_status": {"enum": ["POTENTIAL_READ_ONLY_REUSE", "NOT_ESTABLISHED"]},
+        "non_eligibility_reasons": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "review_evidence_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "toolbox-handoff-advisory-selection-route-evidence-r0",
+  "tool_id": "collaboration.select_handoff_advisories",
+  "task_profile": {
+    "task_id": "handoff-advisory-route-c1-01",
+    "current_ref": "receiver-handoff-composition-review",
+    "input_types": [
+      "One UTF-8 JSON object matching handoff-advisory-selection-r0; max 262144 stdin bytes, 64 messages, 128 context digests, 8192 characters per message, and 16 source refs per message."
+    ],
+    "required_outputs": [
+      "One JSON result with retained message IDs and suggested optional-advisory omission IDs, exact digest basis, and a narrow omitted-content UTF-8 byte count.",
+      "Explicit caller-context-not-authenticated, semantic_necessity=NOT_EVALUATED, handoff_transformed=false, send_authorized=false, and execution_authorized=false."
+    ],
+    "allowed_execution_modes": [
+      "READ_ONLY_RUN"
+    ]
+  },
+  "candidate_catalog_blob_sha1": "8da7aeaed5c92ee585979a6f9deb026a4fd890e3",
+  "default_off": {
+    "decision": "INCOMPLETE",
+    "selected_tool_ids": [],
+    "execution_authorized": false,
+    "network_permissions": [],
+    "write_paths": []
+  },
+  "explicit_allowlist": {
+    "decision": "COMPLETE",
+    "selected_tool_ids": [
+      "collaboration.select_handoff_advisories"
+    ],
+    "execution_authorized": false,
+    "network_permissions": [
+      false
+    ],
+    "write_paths": [
+      []
+    ]
+  },
+  "selected_plan_source_catalog_blob_sha1": "a723c5cd61c491aa2c13c3b45741832e0558adfb",
+  "tool_invocation_performed": false,
+  "execution_authorized": false,
+  "conclusion": "The canonical planner leaves this optional tool out by default and proposes it only after its exact ID is allowlisted with matching typed coverage. The plan does not invoke the tool, authorize sending, or authenticate receiver state."
+}

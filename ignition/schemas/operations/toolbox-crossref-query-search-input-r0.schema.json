@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "toolbox-crossref-query-search-input-r0.schema.json",
+  "title": "Crossref query search input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["query", "max_results"],
+  "properties": {
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "pattern": "^[^\\s\\u0000-\\u001f\\u007f-\\u009f](?:[^\\u0000-\\u001f\\u007f-\\u009f]*[^\\s\\u0000-\\u001f\\u007f-\\u009f])?$",
+      "description": "Already-trimmed public query; the runtime also enforces the 2048-byte UTF-8 ceiling and rejects control characters."
+    },
+    "max_results": {"type": "integer", "minimum": 1, "maximum": 10}
+  }
+}

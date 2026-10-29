@@ -1,0 +1,223 @@
+{
+  "schema_version": "ignition.toolbox-pubmed-doi-update-c1-evidence-r0",
+  "task": {
+    "doi": "10.1371/journal.pone.0005403",
+    "goal": "Resolve the public DOI to an exact PMID, then return only raw PubMed Comments/Corrections relation fields when PMID is returned.",
+    "source_quality": "Same fixed NCBI/PMC providers and identical DOI/PMID for both execution paths.",
+    "permissions": {
+      "explicit_cli_flag": "--allow-public-network",
+      "hosts": [
+        "pmc.ncbi.nlm.nih.gov",
+        "eutils.ncbi.nlm.nih.gov"
+      ],
+      "writes": false,
+      "secrets": false,
+      "billing": false
+    }
+  },
+  "manual_two_stage": {
+    "resolver": {
+      "returncode": 0,
+      "result": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "DOI-to-PMID/PMCID identifier lookup in the live PMC ID Converter response only; no article-content, bibliographic-accuracy, source-authenticity, scientific-validity, or completeness claim is established.",
+        "doi_count": 1,
+        "resolved_count": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "doi": "10.1371/journal.pone.0005403",
+            "http_status": 200,
+            "identifier_status": "IDENTIFIER_RESOLVED",
+            "matched_doi": "10.1371/journal.pone.0005403",
+            "pmcid": "PMC2671458",
+            "pmid": "19404397",
+            "response_sha256": "644a73226b46bf3d309e02d590f72f9514cef7341aed35dc11b2bd965e370954",
+            "retrieval_timestamp_utc": "2026-10-25T19:23:30Z",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids=10.1371%2Fjournal.pone.0005403&format=json"
+          }
+        ],
+        "schema_version": "ignition.pubmed-identifier-resolution-r0",
+        "source_code_sha256": {
+          "wrapper": "8d1b416c81073fe6c6d7fc73a174880018efc5568daafb78e51aba252649395e"
+        },
+        "status": "IDENTIFIERS_RESOLVED",
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "tool_version": "0.1.1"
+      },
+      "stderr": "",
+      "process_wall_ms": 736.743,
+      "child_cpu_ms": 65.101
+    },
+    "update_link_reader": {
+      "returncode": 0,
+      "result": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "Raw Comments/Corrections relation fields returned for exact PubMed records at retrieval time only; no completeness claim is made and an empty relation list does not prove that no correction, expression of concern, or retraction exists.",
+        "pmid_count": 1,
+        "records_found": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "http_status": 200,
+            "pmid": "19404397",
+            "pubmed_record_url": "https://pubmed.ncbi.nlm.nih.gov/19404397/",
+            "record_status": "RECORD_FOUND_NO_RECORDED_RELATIONS",
+            "relations": [],
+            "relations_truncated": false,
+            "response_sha256": "dda1eca21cd979b5435bb6e3f26503cec9c6eb4fee2d4ed1fa71ff0d9881941e",
+            "retrieval_timestamp_utc": "2026-10-25T19:23:31Z",
+            "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=19404397&retmode=xml&tool=IgnitionToolbox"
+          }
+        ],
+        "schema_version": "ignition.pubmed-update-link-inspection-r0",
+        "source_code_sha256": {
+          "wrapper": "01823e6d5c4eda500f83a10ae08028de7ce2431375c7e58c36647635c1303f3c"
+        },
+        "status": "RECORDS_INSPECTED",
+        "tool_id": "research.inspect_pubmed_update_links",
+        "tool_version": "0.1.0"
+      },
+      "stderr": "",
+      "process_wall_ms": 1491.184,
+      "child_cpu_ms": 74.004
+    }
+  },
+  "composed_tool": {
+    "returncode": 0,
+    "result": {
+      "claim_ceiling": "One DOI-to-PMID resolution response followed, only when an exact PMID is returned, by raw PubMed Comments/Corrections fields for that exact record. An absent PMID, unavailable response, or empty relation list does not establish that no update exists; no source authenticity, completeness, retraction-status, article-content, or scientific-validity claim is made.",
+      "doi": "10.1371/journal.pone.0005403",
+      "identifier_resolution": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "DOI-to-PMID/PMCID identifier lookup in the live PMC ID Converter response only; no article-content, bibliographic-accuracy, source-authenticity, scientific-validity, or completeness claim is established.",
+        "doi_count": 1,
+        "resolved_count": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "doi": "10.1371/journal.pone.0005403",
+            "http_status": 200,
+            "identifier_status": "IDENTIFIER_RESOLVED",
+            "matched_doi": "10.1371/journal.pone.0005403",
+            "pmcid": "PMC2671458",
+            "pmid": "19404397",
+            "response_sha256": "a28325adf5be8eb97d956278a5a4112abf2306a0767e7277c48c4576022f4712",
+            "retrieval_timestamp_utc": "2026-10-25T19:23:32Z",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids=10.1371%2Fjournal.pone.0005403&format=json"
+          }
+        ],
+        "schema_version": "ignition.pubmed-identifier-resolution-r0",
+        "source_code_sha256": {
+          "wrapper": "8d1b416c81073fe6c6d7fc73a174880018efc5568daafb78e51aba252649395e"
+        },
+        "status": "IDENTIFIERS_RESOLVED",
+        "tool_id": "research.resolve_pubmed_identifiers",
+        "tool_version": "0.1.1"
+      },
+      "schema_version": "ignition.pubmed-doi-update-audit-r0",
+      "source_code_sha256": {
+        "composition_wrapper": "cd491bd0bfa0a72e43a8c993f3cac20d21903e4a972f96611afbb9a96a2a8c6e",
+        "identifier_resolver": "8d1b416c81073fe6c6d7fc73a174880018efc5568daafb78e51aba252649395e",
+        "update_link_reader": "01823e6d5c4eda500f83a10ae08028de7ce2431375c7e58c36647635c1303f3c"
+      },
+      "status": "COMPLETED_WITH_EXPLICIT_STAGE_OUTCOMES",
+      "tool_id": "research.audit_pubmed_updates_from_doi",
+      "tool_version": "0.1.0",
+      "update_link_inspection": {
+        "acquisition_failure_count": 0,
+        "claim_ceiling": "Raw Comments/Corrections relation fields returned for exact PubMed records at retrieval time only; no completeness claim is made and an empty relation list does not prove that no correction, expression of concern, or retraction exists.",
+        "pmid_count": 1,
+        "records_found": 1,
+        "rows": [
+          {
+            "acquisition_status": "OK",
+            "http_status": 200,
+            "pmid": "19404397",
+            "pubmed_record_url": "https://pubmed.ncbi.nlm.nih.gov/19404397/",
+            "record_status": "RECORD_FOUND_NO_RECORDED_RELATIONS",
+            "relations": [],
+            "relations_truncated": false,
+            "response_sha256": "dda1eca21cd979b5435bb6e3f26503cec9c6eb4fee2d4ed1fa71ff0d9881941e",
+            "retrieval_timestamp_utc": "2026-10-25T19:23:33Z",
+            "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=19404397&retmode=xml&tool=IgnitionToolbox"
+          }
+        ],
+        "schema_version": "ignition.pubmed-update-link-inspection-r0",
+        "source_code_sha256": {
+          "wrapper": "01823e6d5c4eda500f83a10ae08028de7ce2431375c7e58c36647635c1303f3c"
+        },
+        "status": "RECORDS_INSPECTED",
+        "tool_id": "research.inspect_pubmed_update_links",
+        "tool_version": "0.1.0"
+      },
+      "update_link_status": "NO_RELATIONS_RETURNED_IN_THIS_RESPONSE"
+    },
+    "stderr": "",
+    "process_wall_ms": 1740.448,
+    "child_cpu_ms": 103.762
+  },
+  "comparison": {
+    "same_doi": true,
+    "identifier_response_hash_equal": false,
+    "exact_pmid": "19404397",
+    "inspection_stage_projection_matches_after_removing_retrieval_timestamps": true,
+    "inspection_response_hash_equal": true,
+    "identifier_semantic_projection_matches_excluding_timestamps_and_response_hashes": true,
+    "identifier_response_hash_interpretation": "The mapped DOI/PMID/PMCID/status fields agree, but the provider response digest changed across the two calls; these are separate live responses, not byte-identical evidence.",
+    "identifier_stage_full_projection_matches_after_removing_only_retrieval_timestamps": false
+  },
+  "interpretation": "One matched live task compares a manual resolver-plus-reader sequence with the composed route. The normalized DOI/PMID/PMCID/status fields match after excluding per-run timestamps and response digests; the resolver response hashes differ across calls, while the exact PubMed reader response hash matches. The initial 0.1.0 resolver result omitted an integer PMID; a raw response-shape probe identified the integer and version 0.1.1 now normalizes it. Process times are one-run observations, not a benchmark or cost estimate; no completeness or absence claim follows from an empty relation list.",
+  "owner_decision_ref": {
+    "repository": "Arvin-liu/1111",
+    "commit": "cb50e3c574688a5b50410fb51f61e3cd0226f682",
+    "path": "instructions/goal-mode/IGNITION-2026-10-25-TOOLBOX-COMPONENT-ADMISSION-IDENTITY-CARDS-ADAPTIVE-ROUTING-R0.md",
+    "c1_blob_sha1": "c72bd80563637f5802205ed6462ed2e26b688b5e"
+  },
+  "pre_fix_numeric_pmid_finding": {
+    "tool_version": "0.1.0",
+    "legacy_result": {
+      "doi": "10.1371/journal.pone.0005403",
+      "http_status": 200,
+      "identifier_status": "IDENTIFIER_RESOLVED",
+      "pmcid": "PMC2671458",
+      "pmid": null,
+      "response_sha256": "17bca05784dd9f0c6b5df080070d6caaeb9adf4b8281ce47721969a735868254"
+    },
+    "provider_response_shape_probe": {
+      "http_status": 200,
+      "response_sha256": "a67c25f46eb5eec7e3e336bbeaf8f55ac9e152c0b969c1f36c6435def8ed3c7b",
+      "doi": "10.1371/journal.pone.0005403",
+      "pmid_json_type": "int",
+      "pmid": 19404397,
+      "pmcid": "PMC2671458",
+      "full_provider_body_retained": false
+    },
+    "fixed_result": {
+      "tool_version": "0.1.1",
+      "normalized_pmid": "19404397",
+      "normalization": "positive bounded JSON integer to decimal string; previous decimal-string input remains accepted"
+    },
+    "negative_controls": [
+      "zero",
+      "negative integer",
+      "boolean",
+      "13-digit integer"
+    ]
+  },
+  "c1_disposition": {
+    "status": "SPECIALIZED_NO_REPLACEMENT_ESTABLISHED",
+    "compared_same_task": "one DOI executed as the manual resolver plus exact-PMID reader and through the composed DOI tool",
+    "findings": [
+      "Both paths returned DOI 10.1371/journal.pone.0005403 -> PMID 19404397 and PMCID PMC2671458. The separate update-reader stage returned the same exact record status and response hash in both paths: RECORD_FOUND_NO_RECORDED_RELATIONS.",
+      "The resolver stage's mapped identity/status fields matched after removing retrieval timestamps and response hashes; its response hashes differed across live calls, so the raw provider responses were not byte-identical.",
+      "The composed route adds one-DOI task entry and explicit stage receipt; it uses the same two pinned adapters and does not replace either one's independently useful DOI-only or exact-PMID-only task."
+    ],
+    "limits": [
+      "One matched task does not establish broad accuracy, coverage, service reliability, cost, maintainability, or a general speed advantage.",
+      "Single-run process wall and child-CPU observations are not a benchmark; billed cost and bandwidth remain UNKNOWN.",
+      "An empty Comments/Corrections list is only what this PubMed response returned and does not prove that no update exists."
+    ],
+    "retirement_decision": "Retain the two source adapters and the optional composition with narrowed task scopes; no retirement or replacement is supported."
+  }
+}

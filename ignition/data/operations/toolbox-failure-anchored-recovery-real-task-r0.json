@@ -1,0 +1,30 @@
+{
+  "schema_version": "toolbox-failure-anchored-recovery-real-task-r0",
+  "tool_id": "maintenance.preflight_failure_anchored_recovery",
+  "task_ref": "Arvin-liu/when-systems-catch-fire PR #264 exact head 8230dc6c13ec12c57f9c81f81994ee775ebb2ce8",
+  "observed_failure": {
+    "workflow_run_id": 40064357022,
+    "job_id": 120784357732,
+    "failed_step": "Validate current-state synchronization",
+    "failure_signature": "current-facts.json is stale relative to its declared canonical sources",
+    "source": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/40064357022/job/120784357732"
+  },
+  "input_ref": "ignition/tests/fixtures/toolbox-failure-anchored-recovery/pr264-current-state-sync-failure-r0.json",
+  "input_sha256": "1fafcd76a17727dd481b5c723bc640e1d951153a627f9e133b3840100e498f4b",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/python3 -B ignition/tools/toolbox_failure_anchored_recovery.py --stdin < ignition/tests/fixtures/toolbox-failure-anchored-recovery/pr264-current-state-sync-failure-r0.json",
+  "process_exit_code": 0,
+  "stdout_sha256": "1a43a660403e2ba86c39148e6f93530f39a04ae4722ddc1a1055612e2cbfe7a9",
+  "observed_tool_result": {
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "next_action": "HUMAN_REVIEW",
+    "finding_codes": [],
+    "failure_fingerprint_sha256": "94f41ccaf984b2f21b9a9ee61b0a2461606e4fd1d754983e43a338fb4fa72e49",
+    "action_fingerprint_sha256": "3dd6e477df3ff53938de904b6dcc495713a312d1c3a54f54a66dd90b7f5852f0",
+    "execution_authorized": false,
+    "retry_authorized": false,
+    "source_authentication": "NOT_PERFORMED"
+  },
+  "recovery_execution": "NOT_RUN",
+  "network_calls_made_by_candidate": 0,
+  "claim_ceiling": "One tool run over the caller-supplied public Actions excerpt and proposed recovery. It verifies excerpt bytes against the supplied digest only; it does not authenticate the run, confirm root cause, validate command safety, execute the generator, or authorize retry."
+}
