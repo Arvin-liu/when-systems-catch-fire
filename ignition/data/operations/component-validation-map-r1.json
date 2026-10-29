@@ -239,13 +239,12 @@
       "target_id": "o_ignition_runtime_r1_consumers",
       "domain": "O",
       "modules": [
-        "ignition_runtime.test_fix_regressions",
-        "ignition_runtime.test_scenarios"
+        "rpe_ci.test_consumers"
       ],
       "import_roots": [
         "tests"
       ],
-      "evidence": "The existing runtime regression and scenario modules cover schema and receipt integrity, fail-closed authorization, RUN/PROMOTE/EVOLVE boundaries, recovery, and crash-safe publication. The evidence is repository-local and grants no production or scientific authority."
+      "evidence": "A uniquely named unittest target invokes the existing pytest regression and scenario modules so their real test cases execute through the Foundation router without namespace shadowing; the evidence remains repository-local and grants no production or scientific authority."
     },
     {
       "target_id": "g_arr_runtime",

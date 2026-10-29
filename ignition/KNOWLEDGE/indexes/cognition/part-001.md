@@ -2259,6 +2259,11 @@
   - 可搜索名称：NFC-465f715faebf512e / Decision**: The projection router is a **pre-gate only**: deterministic R1–R13 routing rules, cue lexicons and anti-over
   - 来源：`docs/architecture/adaptive-relational-runtime-adrs.md`
   - 依赖：—；被引用：—
+- [DECISION-INTEGRITY repair-r2 — R4 freeze](../../ASSET-CARDS.md#asset-hr-55571c37dc8b05e5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：DECISION-INTEGRITY repair-r2 — R4 freeze / DECISION-INTEGRITY-REPAIR-R2-freeze
+  - 来源：`reports/operations/DECISION-INTEGRITY-REPAIR-R2-freeze.md`
+  - 依赖：—；被引用：—
 - [DECISION-INTEGRITY-I1 Architecture Decision — Principle Lock, Process Quality & Outcome-Bias Governance](../../../docs/decision/decision-integrity-i1-architecture-decision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-1ad1954fac5552e7 / DECISION-INTEGRITY-I1 Architecture Decision — Principle Lock, Process Quality & Outcome-Bias Governance
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1fad21933dd1174d / Do not treat process completion, Agent agreement or Pack routing as truth or publication acceptance.
   - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Domain layer（案例、对象、事件）→ 历史案例来源（790 条）](../../../outputs/audit/agent-project-understanding-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ab0af43d35333449 / Domain layer（案例、对象、事件）→ 历史案例来源（790 条）
-  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—

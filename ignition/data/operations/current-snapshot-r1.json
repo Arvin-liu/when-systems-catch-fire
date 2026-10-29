@@ -146,7 +146,7 @@
       }
     ]
   },
-  "generated_from_source_digest": "3dfb8824b6095bb264ce01d88f09c67dfb2d719488ecb613752376d5bac7cc04",
+  "generated_from_source_digest": "78268a129e7eebd3618894e600ec15e59cb47c6c280acb4bbc61884bab644c42",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
