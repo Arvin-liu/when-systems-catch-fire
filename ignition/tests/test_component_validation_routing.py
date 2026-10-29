@@ -583,6 +583,8 @@ class ComponentValidationRoutingTest(unittest.TestCase):
             ])
             (package / "test_consumer.py").write_text(consumer_source, encoding="utf-8")
             previous_package = sys.modules.get("research_workflow")
+            previous_cli = sys.modules.get("cli")
+            sys.modules.pop("cli", None)
             stale_package = ModuleType("research_workflow")
             stale_package.__path__ = []
             sys.modules["research_workflow"] = stale_package
@@ -599,6 +601,10 @@ class ComponentValidationRoutingTest(unittest.TestCase):
                     sys.modules.pop("research_workflow", None)
                 else:
                     sys.modules["research_workflow"] = previous_package
+                if previous_cli is None:
+                    sys.modules.pop("cli", None)
+                else:
+                    sys.modules["cli"] = previous_cli
         self.assertEqual(result["tests_executed"], 1)
         self.assertEqual(result["failures"], 0)
         self.assertEqual(result["errors"], 0)
