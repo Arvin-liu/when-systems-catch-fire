@@ -117,6 +117,17 @@
       "reason": "The R3 system-map delta is ARR-specific validation evidence while propagation_calculator retains the generic propagation/ directory. This exact-file overlap preserves both route closures without transferring ownership of other propagation records."
     },
     {
+      "authority_source": "data/operations/propagation/ARR-R4-WAIC-SELF-REFLECTION-R1-system-map-delta.json",
+      "component_ids": [
+        "arr",
+        "propagation_calculator"
+      ],
+      "path_patterns": [
+        "data/operations/propagation/ARR-R4-WAIC-SELF-REFLECTION-R1-system-map-delta.json"
+      ],
+      "reason": "The R4 system-map delta is specific evidence for the ARR self-reflection candidate while propagation_calculator retains the generic propagation/ directory. This exact-file overlap preserves both existing route owners without transferring ownership of other propagation records."
+    },
+    {
       "authority_source": "HUMAN-READING.md",
       "component_ids": [
         "human_knowledge_surfaces",
