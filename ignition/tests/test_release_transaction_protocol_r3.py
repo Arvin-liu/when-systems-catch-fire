@@ -1154,6 +1154,68 @@ class ReleaseTransactionProtocolR3Tests(unittest.TestCase):
         self.assertEqual(active, "R2")
         self.assertTrue(errors)
 
+    def test_r2_restoration_fixed_paths_accept_owner_signed_web_flow_merges(self) -> None:
+        _, _, restore_statement, receipt, _, _ = _recovery_fixture()
+        api = _github_api()
+        control = api.control
+        control._materialize_witness()
+
+        def canonical_bytes(value: object) -> bytes:
+            return json.dumps(value, sort_keys=True, separators=(",", ":")).encode("utf-8")
+
+        def add_web_flow_merge(path: str, raw: bytes, parent_sha: str, stage_sha: str, merge_sha: str) -> None:
+            files = dict(control.snapshots[parent_sha])
+            files[path] = raw
+            control.add_commit(stage_sha, [parent_sha], files, date="2026-10-19T05:10:00Z", signed=False)
+            control.add_commit(
+                merge_sha, [parent_sha, stage_sha], files, date="2026-10-19T05:30:00Z",
+                committer_id=r3.GITHUB_WEB_FLOW_ACCOUNT_ID, committer_login="web-flow", signed=True,
+            )
+
+        authorization_sha = "c" * 40
+        authorization_raw = canonical_bytes(restore_statement)
+        add_web_flow_merge(
+            r3.R2_RESTORE_AUTHORIZATION_PATH, authorization_raw, control.witness_sha,
+            "d" * 40, authorization_sha,
+        )
+        control.main_sha = authorization_sha
+
+        authorization, errors = r3.read_authenticated_r2_restore_authorization(
+            authorization_sha, expected_file_sha256=hashlib.sha256(authorization_raw).hexdigest(),
+            github_api=api,
+        )
+        self.assertEqual(errors, [])
+        self.assertIsNotNone(authorization)
+        self.assertTrue(authorization["authorization_signature_verified"])
+        self.assertEqual(control.commits[authorization_sha]["committer"]["login"], "web-flow")
+
+        witnessed_receipt = dict(receipt, owner_authorization_commit_sha=authorization_sha)
+        witness_sha = "e" * 40
+        witness_raw = canonical_bytes(witnessed_receipt)
+        add_web_flow_merge(
+            r3.R2_RESTORATION_WITNESS_PATH, witness_raw, authorization_sha,
+            "a" * 40, witness_sha,
+        )
+        control.main_sha = witness_sha
+
+        witness, errors = r3.read_live_r2_restoration_witness(
+            witnessed_receipt, restore_authorization=authorization, github_api=api,
+        )
+        self.assertEqual(errors, [])
+        self.assertIsNotNone(witness)
+        self.assertTrue(witness["witness_signature_verified"])
+        self.assertEqual(witness["witness_commit_sha"], witness_sha)
+        self.assertFalse(any("commits?path=" in endpoint for endpoint in control.calls))
+
+        control.commits[witness_sha]["commit"]["verification"] = {
+            "verified": False, "reason": "unsigned", "signature": None, "payload": None,
+        }
+        witness, errors = r3.read_live_r2_restoration_witness(
+            witnessed_receipt, restore_authorization=authorization, github_api=api,
+        )
+        self.assertIsNone(witness)
+        self.assertTrue(any("signature failed closed" in error for error in errors), errors)
+
     def test_owner_authorization_accepts_only_verified_owner_authored_web_flow_commit(self) -> None:
         base_api = _github_api()
         authorization_sha = "f" * 40
