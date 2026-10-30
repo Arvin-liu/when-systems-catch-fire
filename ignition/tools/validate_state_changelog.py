@@ -16,17 +16,22 @@ PATH = ROOT / "STATE-CHANGELOG.md"
 PROFILE_PATH_R1 = ROOT / "data" / "operations" / "state-changelog-profile-r1.json"
 PROFILE_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r2.json"
 PROFILE_PATH_R3 = ROOT / "data" / "operations" / "state-changelog-profile-r3.json"
+PROFILE_PATH_R4 = ROOT / "data" / "operations" / "state-changelog-profile-r4.json"
 R1_PROFILE_SHA256 = "8a431819d3ad59702cd0cf24e324f9082400c3b84828cbf3c06fe9fb0ce5c96c"
 R2_PROFILE_SHA256 = "5b866d55e04ffc0fae8e89b19552084f04846df96b310eccbc24ffe7a2acd235"
 R3_PROFILE_SHA256 = "b52f2c3886f09b91fcf677c18ca1d9dc8ae658e2d233bcad357965cb649e4d2d"
+R4_PROFILE_SHA256 = "32097d8a25ad66d6089bdb8e7c1898237152d189df8792f79505fc08ba047993"
 R1_SCHEMA_VERSION = "state-changelog-profile-r1"
 R2_SCHEMA_VERSION = "state-changelog-profile-r2"
 R3_SCHEMA_VERSION = "state-changelog-profile-r3"
+R4_SCHEMA_VERSION = "state-changelog-profile-r4"
 R1_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED"
 R2_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_SUCCESSOR"
 R3_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_SUCCESSOR_CHAIN"
+R4_PROFILE_CONTRACT = "CURRENT_STRICT_HISTORICAL_VERSIONED_APPEND_ONLY_OWNER_AUTHORIZED_SUCCESSOR_CHAIN"
 R2_APPEND_PROFILE = "current-governance-self-repair-r1"
 R3_APPEND_PROFILE = "task20-current-lineage-r1"
+R4_APPEND_PROFILE = "task20-v1-homepage-r1"
 R2_AUTHORIZATION = {
     "owner": "Arvin-liu",
     "repository": "Arvin-liu/1111",
@@ -42,6 +47,14 @@ R3_AUTHORIZATION = {
     "path": "instructions/goal-mode/IGNITION-2026-10-24-SIGNED-OWNER-WEB-MERGE-REGISTRATION-COMPATIBILITY-R0.md",
     "blob_sha1": "6a5d36cb6c40170c1b85440047eaceda097cee8b",
     "append_profile": R3_APPEND_PROFILE,
+}
+R4_AUTHORIZATION = {
+    "owner": "Arvin-liu",
+    "repository": "Arvin-liu/1111",
+    "commit": "ea631933be075684ef8de663e202db2ea9523221",
+    "path": "instructions/goal-mode/IGNITION-2026-10-30-ONE-TIME-R3-V1-CLOSEOUT-EXECUTION-DELEGATION-R0.json",
+    "blob_sha1": "e93a53eabe7007a2447c9677f9a8d7b7f2428646",
+    "append_profile": R4_APPEND_PROFILE,
 }
 STRICT_FIELDS = [
     "main_state",
@@ -220,6 +233,63 @@ def _validate_profile_contract(profile: dict, errors: list[str], schema_version:
             errors.append("R3 profile changes the R2 historical entry count")
         if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
             errors.append("R3 profile changes the R2 legacy profile count")
+    elif schema_version == R4_SCHEMA_VERSION:
+        if profile.get("profile_contract") != R4_PROFILE_CONTRACT:
+            errors.append("R4 validation profile contract is unknown")
+        parent = profile.get("parent_profile")
+        expected_parent = {
+            "path": "data/operations/state-changelog-profile-r3.json",
+            "schema_version": R3_SCHEMA_VERSION,
+            "sha256": R3_PROFILE_SHA256,
+        }
+        if parent != expected_parent:
+            errors.append("R4 validation profile does not bind the exact sealed R3 parent")
+        if profile.get("authorization") != R4_AUTHORIZATION:
+            errors.append("R4 validation profile lacks the exact signed V1 closeout delegation")
+        parent_bytes: bytes | None = None
+        try:
+            parent_bytes = PROFILE_PATH_R3.read_bytes()
+            parent_profile = json.loads(parent_bytes)
+        except (OSError, json.JSONDecodeError) as exc:
+            parent_profile = {}
+            errors.append(f"cannot load sealed R3 parent profile: {exc}")
+        if parent_bytes is None or hashlib.sha256(parent_bytes).hexdigest() != R3_PROFILE_SHA256:
+            errors.append("R3 parent profile bytes differ from their sealed digest")
+        expected_profiles = parent_profile.get("profiles", {})
+        expected_profiles = json.loads(json.dumps(expected_profiles))
+        expected_profiles[R4_APPEND_PROFILE] = {
+            "kind": "current",
+            "required_fields": [
+                "main_state",
+                "delta",
+                "homepage_boundary",
+                "architecture_language",
+                "task_lineage",
+                "obligations",
+                "epistemic_state",
+                "claim_ceiling",
+            ],
+            "base_sha_required": True,
+        }
+        if profile.get("profiles") != expected_profiles:
+            errors.append("R4 profile definitions are not exactly R3 plus its Owner-authorized V1 homepage profile")
+        entries = profile.get("entries")
+        parent_entries = parent_profile.get("entries", [])
+        if not isinstance(entries, list) or not isinstance(parent_entries, list):
+            errors.append("R4 profile entries or R3 parent entries are malformed")
+        else:
+            if len(entries) != len(parent_entries) + 1:
+                errors.append("R4 profile must append exactly one record to its sealed R3 parent")
+            if entries[:len(parent_entries)] != parent_entries:
+                errors.append("R4 profile rewrites or reorders the sealed R3 entry prefix")
+            if len(entries) > len(parent_entries):
+                added = entries[len(parent_entries)]
+                if not isinstance(added, dict) or added.get("ordinal") != len(parent_entries) + 1 or added.get("profile") != R4_APPEND_PROFILE:
+                    errors.append("R4 appended entry is not the authorized next V1 homepage profile")
+        if profile.get("historical_entry_count") != parent_profile.get("historical_entry_count"):
+            errors.append("R4 profile changes the R3 historical entry count")
+        if profile.get("legacy_profile_count") != parent_profile.get("legacy_profile_count"):
+            errors.append("R4 profile changes the R3 legacy profile count")
     else:
         errors.append(f"unsupported validation profile schema: {schema_version}")
     _validate_profile_counts(profile, errors)
@@ -239,6 +309,7 @@ def _load_profile(profile_path: Path) -> tuple[dict, list[str]]:
         PROFILE_PATH_R1.resolve(): (R1_SCHEMA_VERSION, R1_PROFILE_SHA256),
         PROFILE_PATH.resolve(): (R2_SCHEMA_VERSION, R2_PROFILE_SHA256),
         PROFILE_PATH_R3.resolve(): (R3_SCHEMA_VERSION, R3_PROFILE_SHA256),
+        PROFILE_PATH_R4.resolve(): (R4_SCHEMA_VERSION, R4_PROFILE_SHA256),
     }
     authorized = authorized_profiles.get(resolved_path)
     if authorized is None:
@@ -328,7 +399,7 @@ def _validate_links(text: str, path: Path, errors: list[str]) -> None:
             errors.append(f"broken repository link: {target}")
 
 
-def validate(path: Path = PATH, profile_path: Path = PROFILE_PATH_R3) -> list[str]:
+def validate(path: Path = PATH, profile_path: Path = PROFILE_PATH_R4) -> list[str]:
     errors: list[str] = []
     if not path.is_file():
         return [f"missing {path.relative_to(ROOT)}"]
