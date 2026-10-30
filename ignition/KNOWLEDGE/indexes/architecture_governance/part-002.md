@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\[历史案例来源索引\]\(\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9c5468c6f6f37cfa / \[历史案例来源索引\]\(\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\[统一知识入口\]\(./KNOWLEDGE/README.md\)](../../../SUMMARY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ef2d898362d5ccd4 / \[统一知识入口\]\(./KNOWLEDGE/README.md\)
+  - 来源：`SUMMARY.md`
+  - 依赖：—；被引用：—
+- [\[统一资产卡\]\(../KNOWLEDGE/ASSET-CARDS.md\)](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3cf6603637c608ed / \[统一资产卡\]\(../KNOWLEDGE/ASSET-CARDS.md\)
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [\[证据制度库\]\(evidence_regime_library.md\)](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a3701a0bf254e7d3 / \[证据制度库\]\(evidence_regime_library.md\)
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
 - [\[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)](../../../SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-82b2e679e1ae4823 / \[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)
@@ -969,6 +989,11 @@
   - 可搜索名称：NFC-9c75ea70bb6c93d3 / `schemas/failure-case-evidence-gate.schema.json` reject a defect claim unless
   - 来源：`evidence-program/README.md`
   - 依赖：—；被引用：—
+- [`SEMANTIC_REPRESENTATION_SUFFICIENT`; `INDEPENDENTLY_SUPPORTED` is never assigned](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-eaaf43d8bbf18078 / `SEMANTIC_REPRESENTATION_SUFFICIENT`; `INDEPENDENTLY_SUPPORTED` is never assigned
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [`SEMANTICALLY_INTERPRETED`**: a bounded interpretation was available, while the wording must remain visibly interpretive](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-40001df7869a3c2b / `SEMANTICALLY_INTERPRETED`**: a bounded interpretation was available, while the wording must remain visibly interpretive
@@ -1864,6 +1889,16 @@
   - 可搜索名称：NFC-4b987088eb8aefa5 / ARR R1 Scaffold — Commit 5 Evidence & Known Limitations
   - 来源：`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`
   - 依赖：—；被引用：—
+- [ARR R4 — Gap / Architecture-Candidate Gate](../../ASSET-CARDS.md#asset-hr-f24a15ff21b59f0a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：ARR R4 — Gap / Architecture-Candidate Gate / arr-r4-gap-candidate-gate
+  - 来源：`docs/architecture/arr-r4-gap-candidate-gate.md`
+  - 依赖：—；被引用：—
+- [ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1](../../ASSET-CARDS.md#asset-hr-5177e613de9d33f6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1 / arr-r4-self-reflection
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [artifact binding** — every exchanged artifact carries `exact_head`](../../../docs/context_protocol/scientific-context-protocol-i1-repair-architecture.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6e16afab8e608428 / artifact binding** — every exchanged artifact carries `exact_head`
@@ -1953,6 +1988,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-81a43b8bb89be0e1 / artifacts, artifact_ids = _validate_artifacts\(case.get\("artifact_refs"\), "$.case.artifact_refs", issues\)
   - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [as "836 notes understood/verified." The four-axis model makes the distinctions](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-03bc167913311775 / as "836 notes understood/verified." The four-axis model makes the distinctions
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
   - 依赖：—；被引用：—
 - [as soon as the Evidence Program contained two pilots.](../../../evidence-program/tools/validate_evidence_program.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fbc726aa98283289 / candidate-new 只属于本次 Run 的候选区；`registry_action` 固定为 `NONE`。它不得自动获得正式编号、Current status、claim/evidence maturity、truth、novel
   - 来源：`OPERATING-METHOD.md`
-  - 依赖：—；被引用：—
-- [candidate_only: 121Q36-INT-REPAIR-R1 locally addresses B05 by bind Q34/Q35/Q36-OBS authority and intervention evidence t](../../../reports/operations/121Q36-INT-REPAIR-R1-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1368154de7ece30b / candidate_only: 121Q36-INT-REPAIR-R1 locally addresses B05 by bind Q34/Q35/Q36-OBS authority and intervention evidence t
-  - 来源：`reports/operations/121Q36-INT-REPAIR-R1-completion-seal.json`
-  - 依赖：—；被引用：—
-- [candidate_only: 121Q37-REPAIR-R1 locally addresses B06 by bind final checkout head, canonical Q34/Q35 claims, Q36 eviden](../../../reports/operations/121Q37-REPAIR-R1-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c1e170acbf37f32d / candidate_only: 121Q37-REPAIR-R1 locally addresses B06 by bind final checkout head, canonical Q34/Q35 claims, Q36 eviden
-  - 来源：`reports/operations/121Q37-REPAIR-R1-completion-seal.json`
-  - 依赖：—；被引用：—
-- [candidate_only: 121Q38-REPAIR-R1 locally addresses B07 by bind Q37 seed and repository retrieval evidence to contained p](../../../reports/operations/121Q38-REPAIR-R1-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a83b8b5e83d0c4be / candidate_only: 121Q38-REPAIR-R1 locally addresses B07 by bind Q37 seed and repository retrieval evidence to contained p
-  - 来源：`reports/operations/121Q38-REPAIR-R1-completion-seal.json`
-  - 依赖：—；被引用：—
-- [candidate_only: 121Q39-REPAIR-R1 locally addresses B08 by resolve propagation targets, canonical authority and structure](../../../reports/operations/121Q39-REPAIR-R1-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-34fdc1f29bf06a02 / candidate_only: 121Q39-REPAIR-R1 locally addresses B08 by resolve propagation targets, canonical authority and structure
-  - 来源：`reports/operations/121Q39-REPAIR-R1-completion-seal.json`
-  - 依赖：—；被引用：—
-- [candidate_only: Q34 repair-r1 deterministically binds immutable claim bytes, repository-contained Git objects, actual-by](../../../reports/operations/121Q34-REPAIR-R1-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0765961eb390d815 / candidate_only: Q34 repair-r1 deterministically binds immutable claim bytes, repository-contained Git objects, actual-by
-  - 来源：`reports/operations/121Q34-REPAIR-R1-completion-seal.json`
-  - 依赖：—；被引用：—
-- [candidate_only: Q35 repair-r1 resolves Q34 claims, principals and grants through canonical repository surfaces with exac](../../../reports/operations/121Q35-REPAIR-R1-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bd529d55f77e086f / candidate_only: Q35 repair-r1 resolves Q34 claims, principals and grants through canonical repository surfaces with exac
-  - 来源：`reports/operations/121Q35-REPAIR-R1-completion-seal.json`
-  - 依赖：—；被引用：—
-- [candidate_only: repository-native, evidence-bound, deterministically verifiable analogy-audit & transportability gate th](../../../reports/operations/121Q37-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d508d1ded413bc02 / candidate_only: repository-native, evidence-bound, deterministically verifiable analogy-audit & transportability gate th
-  - 来源：`reports/operations/121Q37-completion-seal.json`
-  - 依赖：—；被引用：—
-- [candidate_only: repository-native, evidence-bound, deterministically verifiable responsibility-authority-action-trace bo](../../../reports/operations/121Q35-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c03b7f5bb4683f98 / candidate_only: repository-native, evidence-bound, deterministically verifiable responsibility-authority-action-trace bo
-  - 来源：`reports/operations/121Q35-completion-seal.json`
   - 依赖：—；被引用：—

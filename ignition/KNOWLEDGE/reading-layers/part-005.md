@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-57b4f559431d6912"></a>
+## 121Q32 typed change-propagation impact report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q32 typed change-propagation impact report；Closure complete: true；Closure hash: 57b18c57dcefd521e9399be167f511017de785d8971af93177f25df8926ab7f1；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, iteration, iterationmanifestcontract, mcf, nol7, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, summary, sync, systemmaplayout, systemmapprojection, usage；Resolved components: 19
+- 完整阅读：[reports/operations/121Q32-change-propagation-impact.md](../../reports/operations/121Q32-change-propagation-impact.md)
+
+<a id="reading-hr-57b8850420df5865"></a>
+## Migration and rollback
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Migration and rollback；Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten.
+- 完整阅读：[reports/foundation-architecture/migration-and-rollback-20260712.md](../../reports/foundation-architecture/migration-and-rollback-20260712.md)
+
 <a id="reading-hr-589863c3bd7ff8fd"></a>
 ## IGNITION-20260824-137 — Step 03 Codex Live Eligibility Re-attestation
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -339,17 +353,3 @@
 - 1 分钟：Task ID: IGNITION-20260823-136 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260823-136 — Live External Executor Bridge R1；Task ID: IGNITION-20260823-136；Formal task ordinal: 136；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task136 terminalizes the repository-local Live External Executor Bridge R1 as RELEASEREADY. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and LIVEEXTERNALINVOCATION remains an explicit open obligation. This result records repository-local implementation, bounded live-attempt observation, deterministic projection closu…
 - 完整阅读：[agent-results/IGNITION-20260823-136-result.md](../../agent-results/IGNITION-20260823-136-result.md)
-
-<a id="reading-hr-6af7b035edaef185"></a>
-## IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction
-`CURRENT_CORRECTION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The independent audit confirms that Task139 was not presentation-only in semantic terms. It changed the bounded process-transport/capture path, made an append-only live-attempt ledger the canonical observation source, and derived Current live state from that ledger. The typed correction is BEHAVI… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction；The independent audit confirms that Task139 was not presentation-only in semantic terms. It changed the bounded process-transport/capture path, made an append-only live-attempt ledger the canonical observation source, and derived Current live state from that ledger. The typed correction is BEHAVIORALCONTROLPLANECHANGE, whose compatibility projection is ARCHI…；Task139 result, machine receipt, Current State sync receipt and execution contract were not edited. Their SHA-256 digests are recorded in the machine provenance record and checked by focused tests. Task140 itself will be the latest architecture-changing task once its Observation/Reconciliation Plane registration is materialized in canonical Current.；Machine evidence: ignition/data/operations/iterations/140/step02-task139-architecture-impact-correction.json.；Claim ceiling: repository-local correction provenance only; it does not grant external truth, Owner authority or epistemic acceptance.
-- 完整阅读：[reports/operations/ignition-140-step02-task139-architecture-impact-correction.md](../../reports/operations/ignition-140-step02-task139-architecture-impact-correction.md)
-
-<a id="reading-hr-6b1889db66759f9d"></a>
-## IGNITION-20260827-142 Step 01 — Independent Task Terminality
-`HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Task141 is now explicitly COMPLETEDWITHOPENOBLIGATIONS and terminal=true. The formal lifecycle source records that its Step00–16 scope and publication are complete, while naming LIVEEXTERNALINVOCATION as an independently open obligation. CURRENTWITHOPENOBLIGATIONS and EPISTEMICALLYACCEPTED=0 rema… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 01 — Independent Task Terminality；Task141 is now explicitly COMPLETEDWITHOPENOBLIGATIONS and terminal=true. The formal lifecycle source records that its Step00–16 scope and publication are complete, while naming LIVEEXTERNALINVOCATION as an independently open obligation. CURRENTWITHOPENOBLIGATIONS and EPISTEMICALLYACCEPTED=0 remain unchanged.；The new enum value is deliberately narrow. It does not redefine classified residual completion, and it does not close, validate, or otherwise weaken the open obligation. The validator enforces task scope/status terminality independently of obligation status; this is the first half of the decoupling.；The independent source is ignition/data/operations/formal-task-lifecycle-r1.json, validated by ignition/tools/validateformaltasklifecycle.py. Step 02 will add the separate obligation registry and carry-forward validator.
-- 完整阅读：[reports/operations/ignition-142-step01-terminality-semantics.md](../../reports/operations/ignition-142-step01-terminality-semantics.md)

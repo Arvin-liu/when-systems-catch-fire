@@ -1424,6 +1424,11 @@
   - 可搜索名称：IMPLICIT-C232637CB90F59EC / ## 14. Boundary With Psi0 / Function Layer / Case Layer / IMPLICIT-C232637CB90F59EC
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
+- [## 2. Four-axis outcome model](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4A5EF936A9C591F2 / ## 2. Four-axis outcome model / IMPLICIT-4A5EF936A9C591F2
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [## 2. Protocol 与 Function 的边界](../../../docs/protocols/protocol-architecture.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0F225055DE434E33 / ## 2. Protocol 与 Function 的边界 / IMPLICIT-0F225055DE434E33
@@ -1463,6 +1468,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FB4B7B569D425C7A / ## 3. GrowthSignal contract and the EVOLVE-candidate gate / IMPLICIT-FB4B7B569D425C7A
   - 来源：`docs/architecture/self-growth-control-plane.md`
+  - 依赖：—；被引用：—
+- [## 3. Mandatory metric contradictions \(all resolved\)](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7645A0927D7C2998 / ## 3. Mandatory metric contradictions \(all resolved\) / IMPLICIT-7645A0927D7C2998
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
   - 依赖：—；被引用：—
 - [## 3. Status Model](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1548,6 +1558,21 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4DE0FE7CA73A7F93 / ## ADR-2: Routing is a pre-gate that reuses existing engine validators / IMPLICIT-4DE0FE7CA73A7F93
   - 来源：`docs/architecture/adaptive-relational-runtime-adrs.md`
+  - 依赖：—；被引用：—
+- [## ADR-R4-1 — Four-axis model replaces the single `SUCCESS` verdict](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9CB8D57DEFF1726C / ## ADR-R4-1 — Four-axis model replaces the single `SUCCESS` verdict / IMPLICIT-9CB8D57DEFF1726C
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
+  - 依赖：—；被引用：—
+- [## ADR-R4-2 — Metric contradictions get exactly one machine-readable disposition](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DA7DF381E147916E / ## ADR-R4-2 — Metric contradictions get exactly one machine-readable disposition / IMPLICIT-DA7DF381E147916E
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
+  - 依赖：—；被引用：—
+- [## ADR-R4-5 — Exactly five ordinary commits; no amend/rebase/force](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1175B10D73915B3C / ## ADR-R4-5 — Exactly five ordinary commits; no amend/rebase/force / IMPLICIT-1175B10D73915B3C
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
   - 依赖：—；被引用：—
 - [## Authority separation](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2477,30 +2502,5 @@
 - [### \[#178｜可靠性工程β因子模型在高β条件下的失效\]\(docs/zh/cases/items/C-0178.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A14EF836410B2875 / ### \[#178｜可靠性工程β因子模型在高β条件下的失效\]\(docs/zh/cases/items/C-0178.md\) / IMPLICIT-A14EF836410B2875
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#200｜仙人球模型\]\(docs/zh/cases/items/C-0200.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E7ABC4B7F946B410 / ### \[#200｜仙人球模型\]\(docs/zh/cases/items/C-0200.md\) / IMPLICIT-E7ABC4B7F946B410
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#204｜哥德尔不完备定理\]\(docs/zh/cases/items/C-0204.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-88BEE75E208A14CF / ### \[#204｜哥德尔不完备定理\]\(docs/zh/cases/items/C-0204.md\) / IMPLICIT-88BEE75E208A14CF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#219｜闭合缺失锁死收敛概率\]\(docs/zh/cases/items/C-0219.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5CD0E1DFE90E4212 / ### \[#219｜闭合缺失锁死收敛概率\]\(docs/zh/cases/items/C-0219.md\) / IMPLICIT-5CD0E1DFE90E4212
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#224｜退出概率=阿伦尼乌斯方程 / exit probability=阿伦尼乌斯方程\]\(docs/zh/cases/items/C-0224.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E15BB317AE2A2782 / ### \[#224｜退出概率=阿伦尼乌斯方程 / exit probability=阿伦尼乌斯方程\]\(docs/zh/cases/items/C-0224.md\) / IMPLICIT-E15BB317AE2A2782
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#226｜涨落-遮蔽定理 / 涨落-obscuration定理\]\(docs/zh/cases/items/C-0226.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6F64939117C3932D / ### \[#226｜涨落-遮蔽定理 / 涨落-obscuration定理\]\(docs/zh/cases/items/C-0226.md\) / IMPLICIT-6F64939117C3932D
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

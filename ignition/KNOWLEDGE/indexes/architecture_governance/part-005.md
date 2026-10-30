@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def main\(\) -> None:](../../../data/operations/iterations/113/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-30A2AC0812E39779 / def main\(\) -> None: / IMPLICIT-30A2AC0812E39779 / IMPLICIT-338DA62D6E8A7D63
+  - 来源：`data/operations/iterations/113/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [def main\(\) -> None:](../../../data/operations/iterations/112/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-338DA62D6E8A7D63 / def main\(\) -> None: / IMPLICIT-338DA62D6E8A7D63 / IMPLICIT-30A2AC0812E39779
+  - 来源：`data/operations/iterations/112/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [def main\(\) -> None:](../../../data/operations/iterations/110/openalex/adjudicate_first_run.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-36E66652E7E30608 / def main\(\) -> None: / IMPLICIT-36E66652E7E30608 / IMPLICIT-30A2AC0812E39779
+  - 来源：`data/operations/iterations/110/openalex/adjudicate_first_run.py`
+  - 依赖：—；被引用：—
+- [def main\(\) -> None:](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5338F028BB806F10 / def main\(\) -> None: / IMPLICIT-5338F028BB806F10 / IMPLICIT-30A2AC0812E39779
+  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [def main\(\) -> None:](../../../data/operations/iterations/110/openalex/run_first_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-536267557742169B / def main\(\) -> None: / IMPLICIT-536267557742169B / IMPLICIT-30A2AC0812E39779
+  - 来源：`data/operations/iterations/110/openalex/run_first_census.py`
+  - 依赖：—；被引用：—
+- [def main\(\) -> None:](../../../data/operations/iterations/112/publication/tools/r0_intake.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-921E4D424E6EA82A / def main\(\) -> None: / IMPLICIT-921E4D424E6EA82A / IMPLICIT-30A2AC0812E39779
+  - 来源：`data/operations/iterations/112/publication/tools/r0_intake.py`
+  - 依赖：—；被引用：—
+- [def main\(\) -> None:](../../../data/operations/iterations/112/publication/tools/build_notes_index.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CEF9B90268341C7C / def main\(\) -> None: / IMPLICIT-CEF9B90268341C7C / IMPLICIT-30A2AC0812E39779
+  - 来源：`data/operations/iterations/112/publication/tools/build_notes_index.py`
+  - 依赖：—；被引用：—
+- [def main\(\) -> None:](../../../data/operations/iterations/112/publication/tools/audit_r0.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DF755B5C004A8F7D / def main\(\) -> None: / IMPLICIT-DF755B5C004A8F7D / IMPLICIT-30A2AC0812E39779
+  - 来源：`data/operations/iterations/112/publication/tools/audit_r0.py`
+  - 依赖：—；被引用：—
+- [def main\(\):](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-17934D5A1A705744 / def main\(\): / IMPLICIT-17934D5A1A705744 / IMPLICIT-230C90E00C7909CB
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [def main\(\):](../../../function-os-candidate/v0.2/benchmark/run.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-230C90E00C7909CB / def main\(\): / IMPLICIT-230C90E00C7909CB / IMPLICIT-17934D5A1A705744
+  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
+  - 依赖：—；被引用：—
 - [def main\(\):](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-84583BD810B7F4AF / def main\(\): / IMPLICIT-84583BD810B7F4AF / IMPLICIT-17934D5A1A705744
@@ -2439,68 +2489,18 @@
   - 可搜索名称：NFC-d69799823caaed14 / Discovery** — noticing or generating a *candidate* claim \(an idea, observation, hypothesis, analogy, or in-repo fact\).
   - 来源：`docs/discovery/discovery-commitment-boundary.md`
   - 依赖：—；被引用：—
+- [disposition is **`NO_EVOLVE`**. R4 never implements a candidate and never starts R5.](../../../docs/architecture/arr-r4-gap-candidate-gate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3950eded9f805272 / disposition is **`NO_EVOLVE`**. R4 never implements a candidate and never starts R5.
+  - 来源：`docs/architecture/arr-r4-gap-candidate-gate.md`
+  - 依赖：—；被引用：—
+- [distributions, dispositions and structural facts. No note titles, raw text,](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3e5066d1cc4dd05f / distributions, dispositions and structural facts. No note titles, raw text,
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [Do factors accumulate across books and permutations?** At nodes 1/4/8/12/16/20 across three permutations, all ten generi](../../../reports/governance/task-IGNITION-20260907-162.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d2950b7a2d537f4b / Do factors accumulate across books and permutations?** At nodes 1/4/8/12/16/20 across three permutations, all ten generi
   - 来源：`reports/governance/task-IGNITION-20260907-162.md`
-  - 依赖：—；被引用：—
-- [Do not auto-render for an architecture-analysis-only request or claim Current, production, aesthetic or external truth f](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ee0cf88b573a5795 / Do not auto-render for an architecture-analysis-only request or claim Current, production, aesthetic or external truth f
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Do not claim language-independent universal meaning or guaranteed literary quality.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef4a6a8059b1ac2c / Do not claim language-independent universal meaning or guaranteed literary quality.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Do not erase unmapped residue or let translation raise truth status.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-da9eb9574a52c791 / Do not erase unmapped residue or let translation raise truth status.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Do not execute a domain operation or infer external truth from Current recovery.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-12f905adca2eca07 / Do not execute a domain operation or infer external truth from Current recovery.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Do not infer content truth, literary quality or publication acceptance from surface validity.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2c7704690eddadda / Do not infer content truth, literary quality or publication acceptance from surface validity.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Do not infer proposition truth, external validity or publication status from structural validation.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e8e5fe82b515e263 / Do not infer proposition truth, external validity or publication status from structural validation.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Do not infer truth, replication or acceptance from link validity.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-024881122c935b34 / Do not infer truth, replication or acceptance from link validity.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Do not reuse withdrawn or superseded statistics as current fact.](../../../GET-BRAIN-LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c36f5584c31d5d6f / Do not reuse withdrawn or superseded statistics as current fact.
-  - 来源：`GET-BRAIN-LATEST.md`
-  - 依赖：—；被引用：—
-- [Do not submit third-party excerpts, generated content with uncertain rights, imported datasets, or private material with](../../../CONTRIBUTOR-LICENSE-CANDIDATE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-671f8d45234fcc3d / Do not submit third-party excerpts, generated content with uncertain rights, imported datasets, or private material with
-  - 来源：`CONTRIBUTOR-LICENSE-CANDIDATE.md`
-  - 依赖：—；被引用：—
-- [Do not treat a URL or citation as evidence for every nearby claim.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2168e99973b3fc2e / Do not treat a URL or citation as evidence for every nearby claim.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [docs/evidence_regime_library.md](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-11d064457afa0788 / docs/evidence_regime_library.md
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [docs/governance/meta-protocol-reviews/factual-pending-register.md](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5c424c8d7f0ebb93 / docs/governance/meta-protocol-reviews/factual-pending-register.md
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
   - 依赖：—；被引用：—

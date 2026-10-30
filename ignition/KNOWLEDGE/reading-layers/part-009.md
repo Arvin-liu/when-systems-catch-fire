@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-a8550987d2a41dab"></a>
+## 经典问题 benchmark 卡片：黎曼猜想
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：--- title: "点火框架经典问题测试" author: "之元" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：任务：G，经典问题 benchmark 初稿；用途：测试点火框架在各学科经典问题上的结构增益、重述风险、失败风险和 pending 条件。；注意：本文是初稿，不代表经典问题 benchmark 已最终完成。原稿中存在计数待复核与待补条目，索引文档会单独标注。；2026-07-29 历史纠偏： 本文保留历史候选。哥德尔类比、不同能标或门控模型失败不支持物理学或数学问题的“不可能”结论；涉及四力统一和量子引力的条目只能保持开放问题/候选类比，现行权威见 docs/foundation/physics-asset-correction-20260729.md。；--- title: "点火框架经典问题测试" author: "之元" date: "2026-07-07" ---；收到。现在开始执行任务 G：经典问题 benchmark 初稿。
+- 完整阅读：[outputs/getbrain/classic-problems-benchmark-draft-20260706.md](../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+
+<a id="reading-hr-a904c867936c20d9"></a>
+## OS Control Plane R2 gap audit — IGNITION-20260817-124
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The existing Supervisor R0 was run with two dependency-ready children, ready-a and ready-b, whose write targets do not overlap. Both were accepted and the episode reached EPISODECOMPLETEDVALIDATED, but the trace was strictly ready-a → ready-b and the maximum observed concurrency was 1. The curren… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：OS Control Plane R2 gap audit — IGNITION-20260817-124；主题：Baseline identity；Formal repository: Arvin-liu/when-systems-catch-fire；Execution baseline: origin/main=266426d7110af9ee921a020a46c3a0347aa364e9；Control source: Arvin-liu/1111, origin/relay/current=c06c556cf6e98e8d4f0b004a8c15cd19a64b3cae；Task branch: codex/ignition-124-os-control-plane-r2-20260817
+- 完整阅读：[reports/architecture/os-control-plane-r2-gap-audit.md](../../reports/architecture/os-control-plane-r2-gap-audit.md)
+
 <a id="reading-hr-a932eb17267d9709"></a>
 ## 之元写作法
 `CURRENT_SCOPED_SOURCE` · `WRITING_PUBLICATION`
@@ -339,17 +353,3 @@
 - 1 分钟：来源：57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，作者之元，2026-07-11） 全文读取：完成（713 行 / 137161 字节 / SHA256 ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497） 附件命令文件 SHA256：218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：材料分层图（source-layer-map）；来源：57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，作者之元，2026-07-11） 全文读取：完成（713 行 / 137161 字节 / SHA256 ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497） 附件命令文件 SHA256：218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208；分层目的：区分「可核对事件 / 当事人解释 / 访谈者解释 / 整理稿概括 / 需外部证据」。；禁止把整理稿概括层(D)当成独立证据；禁止把访谈者解释(C)直接当事实。；主题：A. 可核对事件层（访谈中具体、可回指的事件）；A1. 五年级数学考 86 分，被父亲打；从此形成「丢分=丢脸」「分数=人格价值」的内隐耦合。
 - 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md](../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-
-<a id="reading-hr-bcee4731c5f039a7"></a>
-## IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contr… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix；The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contract rejects auth/config mutation, secret materialization and se…；The positive path proves a helper write occurs in the transient scratch domain, the workspace digest and permissions remain unchanged, the repo.read ceiling stays narrow, and normal cleanup returns CLEANED. Cleanup failure is recorded as FAILED; unknown or left-behind process groups remain REQUIRESRECONCILIATION and are not silently deleted. Safe argv constr…；Matrix evidence is distributed across the provider-neutral domain tests, deterministic filesystem harness, bounded transport tests, child guard tests, Codex R3 adapter tests and the dedicated safety-matrix tests. No case uses skip, xfail, ignore, workspace chmod widening or a dangerous bypass.；The live-bridge targeted set ran 88 tests with zero failures, errors or skips.；Claim ceiling: adversarial filesystem/permission policy and deterministic adapter/transport evidence only; no real Codex inference, validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md](../../reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md)
-
-<a id="reading-hr-bd43dc0d8b91689f"></a>
-## 回填计划 · P1 接入烟雾测试
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：回填计划 · P1 接入烟雾测试；碰撞报告：outputs/collisions/20260708-smoke-test/collision-report.md；任务：inputs/collisions/20260708-smoke-test/task.md；流程注释（救援仓库不作为主线 / 差异审计优先 / 只回填增量 / 案例无增量不回灌 / 凭证保留），存于 notes.md，不强制入表。；对 docs/p1-machine-data-collision-workflow-20260708.md 的「轻量预筛」用法补充，存于 expanded-notes.md，待人工复核后更新正式文档。；不适用（本轮无新增函数/案例候选）。
-- 完整阅读：[outputs/collisions/20260708-smoke-test/backfill-plan.md](../../outputs/collisions/20260708-smoke-test/backfill-plan.md)

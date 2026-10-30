@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The claim ceiling is repository-local task lifecycle, executor-admission and](../../../agent-results/IGNITION-20260827-142-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6bbbb6de1d5f6970 / The claim ceiling is repository-local task lifecycle, executor-admission and
+  - 来源：`agent-results/IGNITION-20260827-142-result.md`
+  - 依赖：—；被引用：—
+- [The combined input result is not `VOLUME_AND_COHERENCE_EFFECT_SUPPORTED_AS_RESEARCH_FINDING`. Volume is the only measure](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f65dc6a9215bad08 / The combined input result is not `VOLUME_AND_COHERENCE_EFFECT_SUPPORTED_AS_RESEARCH_FINDING`. Volume is the only measure
+  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
+  - 依赖：—；被引用：—
 - [The complete machine matrix is in `data/operations/iterations/127/step00-rebase-matrix.json`. Snapshot/restore, schema m](../../../reports/operations/ignition-127-step00-rebase-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9e5ff3f33d08e26d / The complete machine matrix is in `data/operations/iterations/127/step00-rebase-matrix.json`. Snapshot/restore, schema m
@@ -2492,15 +2502,5 @@
 - [title: "犹豫域退化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B4521BCCF7E7B945 / title: "犹豫域退化函数" / IMPLICIT-B4521BCCF7E7B945 / IMPLICIT-72E2C8F78923CF46
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "玻尔兹曼分布-门槛分布函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E51BC36A56575738 / title: "玻尔兹曼分布-门槛分布函数" / IMPLICIT-E51BC36A56575738
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "理想主义双重性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9DB5A059E572A6ED / title: "理想主义双重性函数" / IMPLICIT-9DB5A059E572A6ED
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

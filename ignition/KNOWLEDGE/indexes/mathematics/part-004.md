@@ -2439,6 +2439,11 @@
   - 可搜索名称：NFC-5852c51bb07cc0bc / Every formal iteration merged to `main` must append exactly one short, structured delta to `STATE-CHANGELOG.md` in the s
   - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
+- [evidence branch; the formal repo receives a non-private projection only.](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8e93aa7084c127e0 / evidence branch; the formal repo receives a non-private projection only.
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
+  - 依赖：—；被引用：—
 - [Evidence retrieval state cannot set truth, proof, causal identification, external validity, claim ceiling or acceptance.](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-a0ba791fc9f0b70e / Evidence retrieval state cannot set truth, proof, causal identification, external validity, claim ceiling or acceptance.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7b19ab52ed7039ad / Execution started from formal `origin/main@c5cec3a212dbf42564985b71c0fcec3b1fb1e564` in the isolated task branch `codex/
   - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
-  - 依赖：—；被引用：—
-- [existing claim ceiling: recall is not Knowledge truth, proof or permission.](../../../docs/architecture/federation-convergence-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-000475d0cf8166db / existing claim ceiling: recall is not Knowledge truth, proof or permission.
-  - 来源：`docs/architecture/federation-convergence-r1.md`
   - 依赖：—；被引用：—

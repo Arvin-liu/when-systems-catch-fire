@@ -53,12 +53,16 @@
 |`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`|16|0|否|
 |`docs/architecture/adaptive-relational-runtime-r2-adrs.md`|18|0|否|
 |`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`|29|0|否|
+|`docs/architecture/adaptive-relational-runtime-r4-adrs.md`|8|0|否|
 |`docs/architecture/adaptive-relational-runtime.md`|36|0|否|
 |`docs/architecture/agent-platform-r2.md`|26|0|否|
 |`docs/architecture/agent-runtime-r0.md`|3|0|否|
 |`docs/architecture/agent-runtime-r1.md`|5|0|否|
 |`docs/architecture/agentization-boundary-r0.md`|10|0|否|
 |`docs/architecture/approval-handoff-failover-r1.md`|11|0|否|
+|`docs/architecture/arr-r4-gap-candidate-gate.md`|7|0|否|
+|`docs/architecture/arr-r4-public-aggregate.json`|0|0|是|
+|`docs/architecture/arr-r4-self-reflection.md`|21|0|否|
 |`docs/architecture/attention-attractor-control-plane.md`|10|0|否|
 |`docs/architecture/codex-adapter-r1.md`|3|0|否|
 |`docs/architecture/compression-integrity-gate.md`|5|0|否|

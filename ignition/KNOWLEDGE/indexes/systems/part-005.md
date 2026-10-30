@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [└── 决定能不能做、能不能晋级](../../../data/epistemic-governance/soft-governance-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6babf9cc119bcf33 / └── 决定能不能做、能不能晋级
+  - 来源：`data/epistemic-governance/soft-governance-contract.md`
+  - 依赖：—；被引用：—
 - [⚠️ **结构抽取不足**：下一步需建「机制级二次判定层」（触发条件齐备性 + 机制同构比对），再重跑](../../../docs/getnote-collision-workflow-final-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f3c5f633334db6a3 / ⚠️ **结构抽取不足**：下一步需建「机制级二次判定层」（触发条件齐备性 + 机制同构比对），再重跑
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-6d846271bd671a1c / 把相关性写成因果性
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [把结构相似当成机制相同。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-89661ce5cba311b2 / 把结构相似当成机制相同。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—

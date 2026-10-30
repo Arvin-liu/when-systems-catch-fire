@@ -75,6 +75,10 @@ EXPECTED_HEAD_BASES = {
     "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1": {
         "repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1",
     },
+    # The R4 reflection candidate stays stacked directly on its R3 parent.
+    "analysis/adaptive-relational-runtime-r4-waic-self-reflection-r1": {
+        "runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1",
+    },
 }
 
 
@@ -857,8 +861,48 @@ def test_s43_diff_scope():
         "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-request.json",
         "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-residue.json",
         "ignition/reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
+        'tests/rpe_ci/',
+        'ignition/reports/ignition-rpe/',
+        'ignition/AI-HANDOFF.md',
+        'ignition/AI-START-HERE.md',
+        'ignition/tools/validate_human_front_door.py',
+        'ignition/llms.txt',
+        'ignition/RESULTS/',
+        'ignition/data/governance/human-results/',
+        'ignition/data/governance/human-surface/',
+        'ignition/data/governance/self-correction/',
+        'ignition/data/operations/current-snapshot-r1.json',
+        'ignition/data/publication/fire-seeds/',
+        'ignition/docs/architecture/current-facts.md',
+        'ignition/tools/governance/gen_source_first_seen.py',
+        'ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md',
+        # Exact consumer tests changed by the Q33 routing and era-resolver repair.
+        'ignition/tests/foundation/test_repository_path_classification.py',
+        'ignition/tests/test_component_validation_routing.py',
+        'ignition/tests/test_era_resolver_generalization.py',
+        # Exact R3 corpus-scale measurement artifacts and runtime.
+        'ignition/data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json',
+        'ignition/data/r3-corpus-scale/public-aggregate.json',
+        'ignition/docs/R3-CORPUS-RUNTIME.md',
+        'ignition/requirements-r3.txt',
+        'ignition/tests/r3_synthetic_corpus.py',
+        'ignition/tests/test_r3_corpus_acceptance.py',
+        'ignition/tests/test_r3_corpus_analysis.py',
+        'ignition/tests/test_r3_corpus_boundary.py',
+        'ignition/tests/test_r3_corpus_crash.py',
+        'ignition/tests/test_r3_corpus_inventory.py',
+        'ignition/tests/test_r3_corpus_semantic.py',
+        'ignition/tools/adaptive_relational_runtime/corpus/',
+        # Exact R4 self-reflection runtime and its public propagation projection.
+        'arr_r4_self_reflection/',
+        'ignition/data/operations/propagation/ARR-R4-WAIC-SELF-REFLECTION-R1-system-map-delta.json',
+        'requirements-r4.txt',
         "ignition/docs/architecture/adaptive-relational-runtime-r2-adrs.md",
         "ignition/docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
+        "ignition/docs/architecture/adaptive-relational-runtime-r4-adrs.md",
+        "ignition/docs/architecture/arr-r4-gap-candidate-gate.md",
+        "ignition/docs/architecture/arr-r4-public-aggregate.json",
+        "ignition/docs/architecture/arr-r4-self-reflection.md",
         "ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md",
     )
     out = git("diff", "--name-only", PR_BASE)

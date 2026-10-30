@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9BA081A084529694 / 从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-9BA081A084529694
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8186e69db22d2ef3 / 从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：好奇心驱动 English: Rule-based English rendering pending human rev… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-221ca2d5863d96e6 / 从这条案例看，中文：案例说明：好奇心驱动 English: Rule-based English rendering pending human rev… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b7cff513161dd4c3 / 函数预测和现实不一致的案例
   - 来源：`case_failures/README.md`
-  - 依赖：—；被引用：—
-- [分层编码优于扁平化](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D154 / 分层编码优于扁平化 / D154
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D180, D91；被引用：NFC-0c9b45822b9adc52, NFC-27772a71343cf70a, NFC-a79ef2cc93be2746
-- [分层记账规则** — GLM review / rule-based gate / machine proof / external evidence / cross-model acceptance](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1e542863eea2c861 / 分层记账规则** — GLM review / rule-based gate / machine proof / external evidence / cross-model acceptance
-  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
   - 依赖：—；被引用：—

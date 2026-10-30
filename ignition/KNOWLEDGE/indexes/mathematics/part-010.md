@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D215 / Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 宇宙约束空间函数 is adjudicated as RELATION: Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D512 / Within the source-defined scope, 宇宙约束空间函数 is adjudicated as RELATION: Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}. This is
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 宇宙约束边界函数 is adjudicated as RELATION: ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}. This is a model-i](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D515 / Within the source-defined scope, 宇宙约束边界函数 is adjudicated as RELATION: ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}. This is a model-i
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-7c9df7b5aac0ca6d / \| \[D219\]\( \) \| \[Ω最优区间定理\]\( \) \| F_{D219}\(x\) := 物理存在的Ω范围是\(0,1\)，但不是所有Ω值都等价。 Ω太小
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D161, D219；被引用：—
-- [\| \[D221\]\( \) \| \[热寂-完全统一同构定理\]\( \) \| F_{D221}\(x\) := 热力学第二定律的终态：热寂 = 所有](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-592c63c69895ddc2 / \| \[D221\]\( \) \| \[热寂-完全统一同构定理\]\( \) \| F_{D221}\(x\) := 热力学第二定律的终态：热寂 = 所有
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D221；被引用：—
-- [\| \[D222\]\( \) \| \[热力学第二定律的Φ表述\]\( \) \| F_{D222}\(x\) := 经典表述：dS/dt ≥ 0 Φ表述](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b750168e4d3c5b8a / \| \[D222\]\( \) \| \[热力学第二定律的Φ表述\]\( \) \| F_{D222}\(x\) := 经典表述：dS/dt ≥ 0 Φ表述
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D184, D222；被引用：—

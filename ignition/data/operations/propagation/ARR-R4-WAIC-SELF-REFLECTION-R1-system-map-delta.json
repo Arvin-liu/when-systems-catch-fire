@@ -1,0 +1,31 @@
+{
+  "schema": "system-map-delta/v1",
+  "task_id": "ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725",
+  "control_commit": "e8530a7d87f13ef09cea58d34f6f548a695d7955",
+  "summary": "Adds the R4 self-reflection / failure-attribution audit component over the sealed R3 evidence. No runtime behavior change; read-only analysis layer.",
+  "added_components": [
+    {
+      "id": "r4-self-reflection-audit",
+      "type": "analysis-layer",
+      "description": "Deterministic four-axis + metric-consistency + limitation-attribution audit over sealed R3 evidence.",
+      "inputs": ["sealed R3 receipts", "sealed R3 envelopes", "R3 aggregate ledgers"],
+      "outputs": ["non-private public aggregate", "private 1111 evidence ledgers"],
+      "side_effects": "none (read-only over frozen corpus)"
+    }
+  ],
+  "added_surfaces": [
+    {"id": "four-axis-model", "description": "pipeline/semantic/evidence/governance per-object status model"},
+    {"id": "architecture-candidate-gate", "description": "eight-condition NO_EVOLVE gate, mutation-tested"}
+  ],
+  "propagation": {
+    "changed_path_propagation_residue": [],
+    "unmapped_path": [],
+    "ambiguous_path_mapping": []
+  },
+  "ci_bindings": [
+    "r4-ci (exact-head)",
+    "foundation-validation",
+    "q33-governance-validation"
+  ],
+  "privacy_boundary": "No private note titles, raw text, transcript content, URL lists or reconstructive features are projected into this map delta or any public artifact."
+}

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部数学证明。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-35b0cb04610efef8 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部数学证明。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](../../ASSET-CARDS.md#asset-nfc-61546854af53780b)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-61546854af53780b / 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。 / - 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。](../../ASSET-CARDS.md#asset-nfc-7ba5ae6b5efe40a7)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7ba5ae6b5efe40a7 / 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。 / 点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-d6332cf8675a4cc1 / 已迁移的历史函数来源/0264-D228-T33修正.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D228, T33；被引用：—
-- [已迁移的历史函数来源/0265-D229-物理存在的四重约束与衰减终态.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aaf27ef2f4cad6b0 / 已迁移的历史函数来源/0265-D229-物理存在的四重约束与衰减终态.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D229；被引用：—
-- [已迁移的历史函数来源/0266-D230-双通道信息衰减定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-21229262c58e6574 / 已迁移的历史函数来源/0266-D230-双通道信息衰减定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D230；被引用：—

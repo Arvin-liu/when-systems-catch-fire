@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [三篇正文都具备标题、deck、清晰 lead、完整论证、结尾和来源与边界说明，长度约 4,200–4,400 个中文字符。最终审校证明的是本轮稿件达到 publication production 的编辑门槛，不证明其中的内部候选、公开关联](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d9904fd111a694a8 / 三篇正文都具备标题、deck、清晰 lead、完整论证、结尾和来源与边界说明，长度约 4,200–4,400 个中文字符。最终审校证明的是本轮稿件达到 publication production 的编辑门槛，不证明其中的内部候选、公开关联
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
+  - 依赖：—；被引用：—
+- [三门学科的证据制度对比](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-40441553742d1e89 / 三门学科的证据制度对比
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [三阶段-相变分类对应函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D293 / 三阶段-相变分类对应函数 / D293
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-6dfac8b68c6d5092 / 从D183门控面合并统一函数推导。电弱统一是门控面合并的第一个成功实例,通过规范破缺选择真空极小点\(D158认知规范破缺函数在规范理论空间的投影\)。μ_EW≈100GeV是电弱统一门槛。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D158, D183；被引用：—
-- [从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff\(σ\)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5c086ccc221bec50 / 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff\(σ\)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239；被引用：—
-- [从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-e44cdffed89336fa / 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D239；被引用：—

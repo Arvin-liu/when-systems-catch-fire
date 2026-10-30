@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "玻尔兹曼分布-门槛分布函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E51BC36A56575738 / title: "玻尔兹曼分布-门槛分布函数" / IMPLICIT-E51BC36A56575738
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "理想主义双重性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9DB5A059E572A6ED / title: "理想主义双重性函数" / IMPLICIT-9DB5A059E572A6ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "生命智能的σ压缩函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CFA22784BB2062A5 / title: "生命智能的σ压缩函数" / IMPLICIT-CFA22784BB2062A5
@@ -2492,15 +2502,5 @@
 - [Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D211 / Within the source-defined scope, 宇宙学常数-门槛函数 is adjudicated as METRIC: 宇宙学常数-门槛函数,宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。. This is a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D215 / Within the source-defined scope, 宇宙年龄-门槛时间函数 is adjudicated as METRIC: 宇宙年龄-门槛时间函数,宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。. This is a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 宇宙约束空间函数 is adjudicated as RELATION: Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D512 / Within the source-defined scope, 宇宙约束空间函数 is adjudicated as RELATION: Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}. This is
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

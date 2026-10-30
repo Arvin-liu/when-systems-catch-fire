@@ -1809,6 +1809,11 @@
   - 可搜索名称：NFC-cd480a73b143ab6b / are recovery accelerators and never a second truth source.
   - 来源：`agent-results/IGNITION-20260820-127-result.md`
   - 依赖：—；被引用：—
+- [ARR R4 — Architecture Decision Records](../../ASSET-CARDS.md#asset-hr-411160237efe6d62)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：ARR R4 — Architecture Decision Records / adaptive-relational-runtime-r4-adrs
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
+  - 依赖：—；被引用：—
 - [artifact_refs: tuple\[ArtifactRef, ...\]](../../../agent_federation/contracts.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0a0bc7c43cc2ad85 / artifact_refs: tuple\[ArtifactRef, ...\]
@@ -2279,6 +2284,11 @@
   - 可搜索名称：NFC-67011a5c6f55bad4 / Decision.** Detailed inputs/outputs are written only to the 1111 evidence branch.
   - 来源：`docs/architecture/adaptive-relational-runtime-r2-adrs.md`
   - 依赖：—；被引用：—
+- [Decision.** The audit engine accepts generic evidence directories and synthetic](../../../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-0b319e7a6e384d7b / Decision.** The audit engine accepts generic evidence directories and synthetic
+  - 来源：`docs/architecture/adaptive-relational-runtime-r4-adrs.md`
+  - 依赖：—；被引用：—
 - [Decision: `NOT_RUN_NO_JUSTIFIED_RETRY`. The old Hermes receipt is untouched, no resume/continue/channel action was sent,](../../../reports/operations/ignition-137-step11-hermes-retry-decision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-483e08864e10b85a / Decision: `NOT_RUN_NO_JUSTIFIED_RETRY`. The old Hermes receipt is untouched, no resume/continue/channel action was sent,
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-773a8dd97cccb2ab / discovery/load、Profile 投影、Gateway 输入输出、Pack-aware routing、memory
   - 来源：`docs/architecture/agent-platform-r2.md`
-  - 依赖：—；被引用：—
-- [disposable UTF-8 file and passed through the observed ``openclaw agent`` JSON](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-448f710ed4828841 / disposable UTF-8 file and passed through the observed ``openclaw agent`` JSON
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [Distribution And Decision Collapse Control Plane](../../ASSET-CARDS.md#asset-hr-c322de3c7799a555)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：Distribution And Decision Collapse Control Plane / distribution-collapse-control-plane
-  - 来源：`docs/architecture/distribution-collapse-control-plane.md`
   - 依赖：—；被引用：—

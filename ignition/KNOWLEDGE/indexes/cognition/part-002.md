@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [disposable UTF-8 file and passed through the observed ``openclaw agent`` JSON](../../../agent_federation/adapters/openclaw.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-448f710ed4828841 / disposable UTF-8 file and passed through the observed ``openclaw agent`` JSON
+  - 来源：`agent_federation/adapters/openclaw.py`
+  - 依赖：—；被引用：—
+- [Distribution And Decision Collapse Control Plane](../../ASSET-CARDS.md#asset-hr-c322de3c7799a555)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Distribution And Decision Collapse Control Plane / distribution-collapse-control-plane
+  - 来源：`docs/architecture/distribution-collapse-control-plane.md`
+  - 依赖：—；被引用：—
 - [Distribution and decision collapse control: records samples, hypothesis distributions, and action collapse without promo](../../../reports/architecture/121Q13-attention-distribution-compression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a71e24dfb9b9dbbb / Distribution and decision collapse control: records samples, hypothesis distributions, and action collapse without promo
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d33d88d95af66dc3 / reference is  .
   - 来源：`reports/architecture/external-agent-interface-audit-r1.md`
-  - 依赖：—；被引用：—
-- [refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)](../../../agent_federation/convergence.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6a0bf9ca15d33f8d / refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)
-  - 来源：`agent_federation/convergence.py`
-  - 依赖：—；被引用：—
-- [Regression and projection closure](../../../agent-results/IGNITION-20260823-136-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-1eed912b1a5e3996 / Regression and projection closure
-  - 来源：`agent-results/IGNITION-20260823-136-result.md`
   - 依赖：—；被引用：—

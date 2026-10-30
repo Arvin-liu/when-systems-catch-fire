@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff\(σ\)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5c086ccc221bec50 / 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff\(σ\)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D239；被引用：—
+- [从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e44cdffed89336fa / 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D239；被引用：—
 - [从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f44f9f002bfe835c / 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： \| \| P_exit高 \| P_exit低 \| \|---\|---------\|---------\| \| ι高 \| 自主意识（Ψ→1） \|
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-ee2148ad25182ae1 / 从这条案例看，中文：案例说明：好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ<σ_opt时增加带宽。核心函数：\[D238\]\(doc… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D238；被引用：—
-- [从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9BA081A084529694 / 从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-9BA081A084529694
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8186e69db22d2ef3 / 从这条案例看，中文：案例说明：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

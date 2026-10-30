@@ -2219,6 +2219,11 @@
   - 可搜索名称：NFC-9795099f6d93a36c / Semantic nonblank fields are checked after trimming whitespace. Lists such as provenance, alternatives, residue, evidenc
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
+- [semantic understanding, independent verification, causal modeling, temporal](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-335909df216ac178 / semantic understanding, independent verification, causal modeling, temporal
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
+  - 依赖：—；被引用：—
 - [Set-semantics arrays \(`endpoints`, `provenance`, `observation_refs`, `evidence_refs`, `alternatives`, `object_refs`, `su](../../../docs/architecture/object-relation-mechanism-model.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-d26577f3d3bdaee6 / Set-semantics arrays \(`endpoints`, `provenance`, `observation_refs`, `evidence_refs`, `alternatives`, `object_refs`, `su
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-09680fff1a941685 / test or evidence;
   - 来源：`docs/architecture/mechanism-adjudication-plane.md`
-  - 依赖：—；被引用：—
-- [Tests, losses, evaluation loaders, examples, version warnings, strict loads, and CI form concrete validation mechanisms.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f3966438cc1d875d / Tests, losses, evaluation loaders, examples, version warnings, strict loads, and CI form concrete validation mechanisms.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

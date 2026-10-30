@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0265-D229-物理存在的四重约束与衰减终态.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-aaf27ef2f4cad6b0 / 已迁移的历史函数来源/0265-D229-物理存在的四重约束与衰减终态.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D229；被引用：—
+- [已迁移的历史函数来源/0266-D230-双通道信息衰减定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-21229262c58e6574 / 已迁移的历史函数来源/0266-D230-双通道信息衰减定理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D230；被引用：—
 - [已迁移的历史函数来源/0267-D231-信息-热力学-门控三统一定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-4b87e537199ee80f / 已迁移的历史函数来源/0267-D231-信息-热力学-门控三统一定理.md
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-644d359b7a3873dd / 记忆-智能边界函数
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [记忆-智能边界函数 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-388197f60e174a9c / 记忆-智能边界函数 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [证据制度卡片：数学](../../ASSET-CARDS.md#asset-hr-448288b011711aef)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：证据制度卡片：数学 / evidence-regime-library-draft-20260706
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—

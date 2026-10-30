@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-86f21d4ffffb5629"></a>
+## 跨线程认知碰撞协议 — IGNITION-20260908-165
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-86F21D4FFFFB5629` · [docs/governance/cross-thread-cognitive-collision-2026-09-08.md](../../docs/governance/cross-thread-cognitive-collision-2026-09-08.md)
+- **为什么产生：** 此来源记录了什么：跨线程认知碰撞协议 — IGNITION-20260908-165？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/cross-thread-cognitive-collision-2026-09-08.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-09-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `跨线程认知碰撞协议 — IGNITION-20260908-165`, `cross-thread-cognitive-collision-2026-09-08`
+
+<a id="asset-hr-87a808ae0e53a33b"></a>
+## 点火项目总体定位更新
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-87A808AE0E53A33B` · [outputs/getbrain/project-position-update-20260706.md](../../outputs/getbrain/project-position-update-20260706.md)
+- **为什么产生：** 此来源记录了什么：点火项目总体定位更新？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 它提供一套用于识别、判定和收敛跨领域同构结构的函数系统，包含：
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `outputs/getbrain/project-position-update-20260706.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-06: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `SYSTEMS`
+- **可搜索名称：** `点火项目总体定位更新`, `project-position-update-20260706`
+
 <a id="asset-hr-885cd7549621bd64"></a>
 ## IGNITION-20260822-135 Step 00 — Fresh baseline and exact failure inventory
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260825-139 Step 14 — Candidate natural full regression`, `ignition-139-step14-candidate-full-regression`
-
-<a id="asset-hr-9ba686d027762485"></a>
-## Architecture rebuild summary
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9BA686D027762485` · [reports/foundation-architecture/architecture-rebuild-summary-20260712.md](../../reports/foundation-architecture/architecture-rebuild-summary-20260712.md)
-- **为什么产生：** 此来源记录了什么：Architecture rebuild summary？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The seven-layer architecture, separated registries, nine status axes, gates, deterministic migration, compatibility views and executable benchmarks are installed. Status: ARCHITECTURECOMPLETEPENDINGCONTENTPROOFS. Architecture completion does not prove the registered content.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/architecture-rebuild-summary-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Architecture rebuild summary`, `architecture-rebuild-summary-20260712`
-
-<a id="asset-hr-9bd6fa3459079380"></a>
-## SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9BD6FA3459079380` · [reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md](../../reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md)
-- **为什么产生：** 此来源记录了什么：SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** prior-repair head b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e to the real predecessor repair-r2 head 1a51d1b3fd1bab4eb1c80a7429e0b629bcae69a9; the pilot bundle's parentbinding.exacthead is rebound to match. A bundle bound to the wrong predecessor is now rejected with PARENTBINDINGINVALID (exit 3).
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-23: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `SCIENTIFIC-METACOGNITION repair-r2 — R4 freeze`, `SCIENTIFIC-METACOGNITION-REPAIR-R2-freeze`

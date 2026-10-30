@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ad3864e4864504e5 / No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json`
+  - 依赖：—；被引用：—
 - [No immutable artifact identity or lifecycle governance is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7d8d4445a0977636 / No immutable artifact identity or lifecycle governance is defined.
@@ -1233,6 +1238,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fbb7d3d5bd0725ea / R1 已通过独立 exact-head acceptance（PR #137 head `669c9f8c`；merge commit `0e7c032`）并由所有者提升为 Current（non-Activated）。作为 Current
   - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [R3 proved **operational scale properties** \(deterministic inventory, sharding,](../../../docs/architecture/arr-r4-self-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d549cfd1bbd43a1d / R3 proved **operational scale properties** \(deterministic inventory, sharding,
+  - 来源：`docs/architecture/arr-r4-self-reflection.md`
   - 依赖：—；被引用：—
 - [r_cross优先性定理](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-47ea60f11834a0d5 / The canonical source now records `IGNITION-20260822-132` as the current formal task with `COMPLETED_WITH_CLASSIFIED_RESI
   - 来源：`reports/operations/ignition-132-step09-canonical-current-migration.md`
-  - 依赖：—；被引用：—
-- [The claim ceiling is repository-local task lifecycle, executor-admission and](../../../agent-results/IGNITION-20260827-142-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-6bbbb6de1d5f6970 / The claim ceiling is repository-local task lifecycle, executor-admission and
-  - 来源：`agent-results/IGNITION-20260827-142-result.md`
-  - 依赖：—；被引用：—
-- [The combined input result is not `VOLUME_AND_COHERENCE_EFFECT_SUPPORTED_AS_RESEARCH_FINDING`. Volume is the only measure](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f65dc6a9215bad08 / The combined input result is not `VOLUME_AND_COHERENCE_EFFECT_SUPPORTED_AS_RESEARCH_FINDING`. Volume is the only measure
-  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
   - 依赖：—；被引用：—

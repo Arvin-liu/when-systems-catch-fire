@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-60c1b4d3b3d1d0f5"></a>
+## IGNITION-135 Step 02 — deterministic projection preflight
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-60C1B4D3B3D1D0F5` · [reports/operations/ignition-135-step02-projection-preflight.md](../../reports/operations/ignition-135-step02-projection-preflight.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-135 Step 02 — deterministic projection preflight？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 本步把 full suite 前的 generated-output cleanliness 变成显式、只读、可机器判定的 preflight。tools/runprojectionpreflight.py --check 从自身路径推导 repository/application root，在 ignition/ 作为 subprocess cwd，逐项执行 contract 中的 --check/validator 命令；不会自动 regeneration。--record 是单独的、显式的 receipt 写入动作。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-135-step02-projection-preflight.md`, `135-STEP02-PROJECTION-PREFLIGHT`
+- **演化历史：** 2026-08-23: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-135 Step 02 — deterministic projection preflight`, `ignition-135-step02-projection-preflight`
+
+<a id="asset-hr-6106e26409ecfa79"></a>
+## 跨域 smoke test — 社会学碰撞报告
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-6106E26409ECFA79` · [outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md](../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+- **为什么产生：** 此来源记录了什么：跨域 smoke test — 社会学碰撞报告？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** inputs/collisions/20260708-cross-domain-smoke-test/social.md（邻里积分制）
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D597`, `D173`, `D595`, `D94`
+- **来源与证据：** `outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`, `202`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `跨域 smoke test — 社会学碰撞报告`, `collision-report`
+
 <a id="asset-hr-615330c2f4c14260"></a>
 ## IGNITION-20260827-142 Step 11 — Fresh Executor Census R2
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Longform causal-chain basis learning — Task163`, `longform-causal-chain-basis-learning-2026-09-07`
-
-<a id="asset-hr-741abc37fd9e4409"></a>
-## Formalization roadmap
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-741ABC37FD9E4409` · [reports/foundation-architecture/formalization-roadmap-20260712.md](../../reports/foundation-architecture/formalization-roadmap-20260712.md)
-- **为什么产生：** 此来源记录了什么：Formalization roadmap？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Prioritize MF predicates, Y1 operational semantics, protocol typing, theorem candidates, then high-risk D records. Each promotion requires a linked proof or replay artifact.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/formalization-roadmap-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Formalization roadmap`, `formalization-roadmap-20260712`
-
-<a id="asset-hr-7491533b5a81fa71"></a>
-## 历史函数资产全量登记
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7491533B5A81FA71` · [docs/foundation/historical-function-census.md](../../docs/foundation/historical-function-census.md)
-- **为什么产生：** 此来源记录了什么：历史函数资产全量登记？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 任务 98 对 formal main 的全部 Git 跟踪文本源执行了确定性扫描。扫描范围包含函数与案例表、Foundation、theory kernels、投影矩阵、元函数、执行器、README/SUMMARY/USAGE、代码以及 JSON/YAML/CSV/Markdown 中的显式编号和隐式命名资产。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/foundation/historical-function-census.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `历史函数资产全量登记`, `historical-function-census`
