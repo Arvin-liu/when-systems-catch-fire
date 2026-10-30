@@ -247,6 +247,14 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["changed_validation_test_targets"], ["r_research_slot_consumers"])
         self.assertEqual(result["domains"], ["R"])
 
+    def test_fire_seeds_consumer_test_alone_routes_to_publication_validation(self):
+        result = self.plan(["tests/test_fire_seeds.py"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], [])
+        self.assertEqual(result["selected_target_ids"], ["g_publication_consumers"])
+        self.assertEqual(result["changed_validation_test_targets"], ["g_publication_consumers"])
+        self.assertEqual(result["domains"], ["G"])
+
     def test_cochanged_governance_consumer_test_requires_full_regression(self):
         result = self.plan([
             "data/governance/history-remediation-register.json",

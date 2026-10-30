@@ -2175,7 +2175,7 @@
   - 来源：`docs/language-thought/dimensional-basis.md`
   - 依赖：D02, D05, D08, D11；被引用：—
 - [一套曾经帮助我们抵达某处的正确方法，也不意味着必须永远背负着它前行。](../../../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cedb7a93b3fe85aa / 一套曾经帮助我们抵达某处的正确方法，也不意味着必须永远背负着它前行。
   - 来源：`docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md`
   - 依赖：—；被引用：—

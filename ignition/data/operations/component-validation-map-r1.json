@@ -236,13 +236,14 @@
       "target_id": "g_publication_consumers",
       "domain": "G",
       "modules": [
+        "tests.test_fire_seeds",
         "tests.test_iteration_sync",
         "tests.test_publication_gate_fail_closed",
         "tests.test_publication_provenance_attack",
         "tests.test_publication_witness",
         "tests.test_stage_snapshot_publication"
       ],
-      "evidence": "These existing publication and synchronization consumer tests cover L6/iteration publication constraints. Existing publication-gate, provenance-attack, and witness tests cover the writing/publication pack boundary.",
+      "evidence": "These existing publication and synchronization consumer tests cover L6/iteration publication constraints. Existing publication-gate, provenance-attack, and witness tests cover the writing/publication pack boundary. The existing Fire Seeds validator regression verifies Q1 source-origin accounting and confirms that historical editorial reflection creates no new seed.",
       "import_roots": [
         "ignition"
       ]

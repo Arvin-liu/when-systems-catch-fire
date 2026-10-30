@@ -1915,7 +1915,7 @@
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
 - [丹无定型。** 点火所要生成的知识、思想、作品，乃至它自身，都没有一个必须永远保持的形态。今天它是研究系统，明天可以是思考系统，后天甚至可以不再需要我们现在所理解的系统架构。](../../../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-67fb8b03e6f2223c / 丹无定型。** 点火所要生成的知识、思想、作品，乃至它自身，都没有一个必须永远保持的形态。今天它是研究系统，明天可以是思考系统，后天甚至可以不再需要我们现在所理解的系统架构。
   - 来源：`docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md`
   - 依赖：—；被引用：—
@@ -2155,7 +2155,7 @@
   - 来源：`docs/publication/zhiyuan-writing-examples.md`
   - 依赖：—；被引用：—
 - [依据 Owner 对早期对话的回溯，2026-07-25 的讨论涉及紫阳地方历史、张伯端（号紫阳真人）与道教南宗内丹。2026-07-26，Owner 将“南派炼丹”的意象转化为点火持续求知、没有终极形态的项目隐喻；ChatGPT 随后拟出](../../../docs/what-is-ignition/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dbd5f612e0246360 / 依据 Owner 对早期对话的回溯，2026-07-25 的讨论涉及紫阳地方历史、张伯端（号紫阳真人）与道教南宗内丹。2026-07-26，Owner 将“南派炼丹”的意象转化为点火持续求知、没有终极形态的项目隐喻；ChatGPT 随后拟出
   - 来源：`docs/what-is-ignition/README.md`
   - 依赖：—；被引用：—
@@ -2304,6 +2304,11 @@
   - 可搜索名称：NFC-d0b927c20db37db6 / 全表搜「指标」：仅 D596 避风港（指标化作侵蚀源引用）、D277 统一健康指标、D386 容斥集中性指标、Ψ₀ 收敛检测用「指标」一词——均**非**「指标替代价值」机制。
   - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
   - 依赖：D277, D386, D596；被引用：—
+- [公共仓库 \[PR #142\]\(https://github.com/Arvin-liu/when-systems-catch-fire/pull/142\) 将它作为独立“项目宣言”合并；\[合并后的 README\]\(https://githu](../../../docs/what-is-ignition/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f41818a4a2bbdec4 / 公共仓库 \[PR #142\]\(https://github.com/Arvin-liu/when-systems-catch-fire/pull/142\) 将它作为独立“项目宣言”合并；\[合并后的 README\]\(https://githu
+  - 来源：`docs/what-is-ignition/README.md`
+  - 依赖：—；被引用：—
 - [公司灵魂（内容价值）由李丹阳创造，但决策权结构未与之对齐：丈夫主张做线上母婴 Costco + 教育平台，李丹阳坚持内容主业；她一度主动放弃董事长头衔、只任首席内容官，导致价值来源与决策权错配。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f50c14ec22f12a93 / 公司灵魂（内容价值）由李丹阳创造，但决策权结构未与之对齐：丈夫主张做线上母婴 Costco + 教育平台，李丹阳坚持内容主业；她一度主动放弃董事长头衔、只任首席内容官，导致价值来源与决策权错配。
@@ -2497,10 +2502,5 @@
 - [历史学界通过史料考证、比较研究、跨学科分析等方法研究中国王朝周期问题。主流观点认为是多因导致，包括制度缺陷、经济压力、军事冲突、文化传统等。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ada79205a7d3b129 / 历史学界通过史料考证、比较研究、跨学科分析等方法研究中国王朝周期问题。主流观点认为是多因导致，包括制度缺陷、经济压力、军事冲突、文化传统等。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [历史学界通过史料考证、比较研究、跨学科分析等方法研究罗马帝国衰亡问题。主流观点认为是多因导致，包括政治腐败、经济衰退、军事压力、文化变迁等。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e314b4d4797ecfff / 历史学界通过史料考证、比较研究、跨学科分析等方法研究罗马帝国衰亡问题。主流观点认为是多因导致，包括政治腐败、经济衰退、军事压力、文化变迁等。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

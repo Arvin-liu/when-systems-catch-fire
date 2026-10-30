@@ -4,10 +4,10 @@
     "DESCRIPTIVE": 438,
     "EMPIRICAL": 4643,
     "INTERPRETIVE": 2936,
-    "MATHEMATICAL": 2398,
+    "MATHEMATICAL": 2395,
     "METAPHYSICAL": 824,
     "NORMATIVE": 178,
-    "UNRESOLVED": 6564
+    "UNRESOLVED": 6567
   },
   "blocked_conclusion_rebounds": 1,
   "candidate_fragments": 31034,
@@ -23,16 +23,16 @@
     "NORMATIVE_OR_GOVERNANCE_CLAIM": 178,
     "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 824,
     "PREDICTION_OR_FORECAST": 200,
-    "THEOREM_OR_MATHEMATICAL_CLAIM": 2398,
-    "UNRESOLVED_CLAIM": 5615
+    "THEOREM_OR_MATHEMATICAL_CLAIM": 2395,
+    "UNRESOLVED_CLAIM": 5618
   },
   "closure_semantics": "Registry accounting is closed by explicit disposition or quarantine. Mathematical proof, external evidence, novelty and replication obligations remain independently open.",
   "conclusion_rebound_candidates": 57,
   "dependency_edges": 5642,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3791,
+    "ACCEPTED_AS_DEFINITION": 3777,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
-    "HISTORICAL_ONLY": 7440,
+    "HISTORICAL_ONLY": 7454,
     "PENDING_EMPIRICAL_TEST": 888,
     "PENDING_LITERATURE_ADJUDICATION": 1028,
     "PENDING_PROOF": 658,
@@ -53,8 +53,8 @@
     "E1": 7446
   },
   "mathematical_maturity_distribution": {
-    "M0": 15335,
-    "M1": 2641,
+    "M0": 15338,
+    "M1": 2638,
     "M3": 1,
     "M4": 3,
     "M6": 1

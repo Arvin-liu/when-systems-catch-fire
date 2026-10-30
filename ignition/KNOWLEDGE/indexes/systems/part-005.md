@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [历史学界通过史料考证、比较研究、跨学科分析等方法研究罗马帝国衰亡问题。主流观点认为是多因导致，包括政治腐败、经济衰退、军事压力、文化变迁等。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e314b4d4797ecfff / 历史学界通过史料考证、比较研究、跨学科分析等方法研究罗马帝国衰亡问题。主流观点认为是多因导致，包括政治腐败、经济衰退、军事压力、文化变迁等。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [历史学：所有历史因果的具体判定](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e662d281681f3faa / 历史学：所有历史因果的具体判定
@@ -45,7 +50,7 @@
   - 来源：`docs/governance/meta-protocol-reviews/protocols/S3.md`
   - 依赖：—；被引用：—
 - [原文写到 GPT-6 查看当时的公开 `main` 与 #252 候选 README 后，没有找到诗句。这只记录了评论写作时检查的范围，并未核对 Git 历史。后续来源重建确认：Owner 在 2026-07-26 的人机讨论中提出南宗炼丹](../../../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c40d60a7788e4005 / 原文写到 GPT-6 查看当时的公开 `main` 与 #252 候选 README 后，没有找到诗句。这只记录了评论写作时检查的范围，并未核对 Git 历史。后续来源重建确认：Owner 在 2026-07-26 的人机讨论中提出南宗炼丹
   - 来源：`docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md`
   - 依赖：—；被引用：—
@@ -1030,7 +1035,7 @@
   - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—
 - [我们可以今天建立一个非常复杂的治理系统，明天又发现其中九成没有必要，于是删除它们。只要这种删除来自更好的认识，而不是任意破坏，那么它不仅不是对点火的背叛，反而可能是点火精神最充分的一次实践。](../../../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d56ddd8152e826a5 / 我们可以今天建立一个非常复杂的治理系统，明天又发现其中九成没有必要，于是删除它们。只要这种删除来自更好的认识，而不是任意破坏，那么它不仅不是对点火的背叛，反而可能是点火精神最充分的一次实践。
   - 来源：`docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md`
   - 依赖：—；被引用：—
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-75f11fff3c6448fe / 社会科学因果判定；
   - 来源：`docs/v0.2_summary.md`
-  - 依赖：—；被引用：—
-- [社会科学因果判定；](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-919acc5904af88df / 社会科学因果判定；
-  - 来源：`docs/publication_risk_checklist.md`
   - 依赖：—；被引用：—
