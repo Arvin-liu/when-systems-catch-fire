@@ -227,6 +227,10 @@ jobs:
       - name: Run instance-level stage snapshot responsibility actor cases
         run: python3 tools/operations/run_stage_snapshot_responsibility_cases.py
       - run: python3 tools/validate_human_front_door.py
+      - name: Validate ARR adapter static gate and focused tests
+        run: |
+          python3 tools/adaptive_relational_runtime/static_gate.py
+          python3 -m pytest tests/adaptive_relational_runtime/ -q
       - name: Validate Language-Thought Logic Plane
         run: |
           python3 tools/language_thought/validate_language_thought.py

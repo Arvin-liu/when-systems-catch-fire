@@ -1,0 +1,254 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Projection routing matrix R1-R13, route targets, engine guards, anti-overstep bindings B1-B6, and the 8 machine REJECT codes.",
+  "route_targets": [
+    {
+      "target": "ARN",
+      "description": "Project as ARN typed_relation / node / hyper_relation."
+    },
+    {
+      "target": "MCF_REVIEW",
+      "description": "Generate MCF handoff record; do not write MCF fabric directly."
+    },
+    {
+      "target": "PSD_WITH_BOUNDARY",
+      "description": "Project as PSD element with mandatory system boundary."
+    },
+    {
+      "target": "REJECT",
+      "description": "Reject routing with a machine-readable reason code."
+    },
+    {
+      "target": "QUARANTINE_UNKNOWN",
+      "description": "Insufficient info; suspend as UNKNOWN, never guess."
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "R1",
+      "category": "causal_wording",
+      "target": "MCF_REVIEW",
+      "priority": 1,
+      "condition_summary": "relation_type in causal_cue_types OR linked assertion proposition hits cue_causal_lexicon OR causal_handoff_ref non-null.",
+      "cue_registries": [
+        "causal_cue_types",
+        "cue_causal_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R2",
+      "category": "intervention_semantics",
+      "target": "MCF_REVIEW",
+      "priority": 2,
+      "condition_summary": "intervention lexicon hit OR intervention action_type OR explicit do-calculus notation.",
+      "cue_registries": [
+        "cue_intervention_lexicon",
+        "intervention_action_types"
+      ]
+    },
+    {
+      "rule_id": "R3",
+      "category": "stochastic_dynamics",
+      "target": "PSD_WITH_BOUNDARY",
+      "priority": 3,
+      "condition_summary": "stochastic cue type/lexicon hit OR numeric probability claim; requires PSD boundary five-part.",
+      "cue_registries": [
+        "stochastic_cue_types",
+        "cue_stochastic_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R4",
+      "category": "risk",
+      "target": "PSD_WITH_BOUNDARY",
+      "priority": 4,
+      "condition_summary": "risk cue type/lexicon hit; numeric probability required else ARN unknown + residue.",
+      "cue_registries": [
+        "risk_cue_types",
+        "cue_risk_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R5",
+      "category": "higher_order",
+      "target": "ARN",
+      "priority": 5,
+      "condition_summary": ">=1 endpoint ref is a Relation; routes to ARN hyper_relations (members>=3) or native (2-endpoint).",
+      "cue_registries": []
+    },
+    {
+      "rule_id": "R6",
+      "category": "temporal",
+      "target": "ARN",
+      "priority": 6,
+      "condition_summary": "temporal cue/lexicon hit OR temporal_scope.interval non-null; time-impossible path rejected.",
+      "cue_registries": [
+        "temporal_cue_types",
+        "cue_temporal_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R7",
+      "category": "support",
+      "target": "ARN",
+      "priority": 7,
+      "condition_summary": "support cue hit and not R1/R2; conditions required (B2).",
+      "cue_registries": [
+        "support_cue_types",
+        "cue_support_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R8",
+      "category": "conflict",
+      "target": "ARN",
+      "priority": 8,
+      "condition_summary": "conflict cue hit and not R1/R2; object is proposition/evidence not mechanism.",
+      "cue_registries": [
+        "conflict_cue_types",
+        "cue_conflict_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R9",
+      "category": "role",
+      "target": "ARN",
+      "priority": 9,
+      "condition_summary": "role cue hit; map to social_expectation/action_affordance/value_priority.",
+      "cue_registries": [
+        "role_cue_types",
+        "cue_role_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R10",
+      "category": "dependency",
+      "target": "ARN",
+      "priority": 10,
+      "condition_summary": "dependency cue hit; map to dependency/enabling/inhibition (not causal).",
+      "cue_registries": [
+        "dependency_cue_types",
+        "cue_dependency_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R11",
+      "category": "similarity",
+      "target": "ARN",
+      "priority": 11,
+      "condition_summary": "similarity cue hit or embedding distance; never upgrades to causality (B3).",
+      "cue_registries": [
+        "similarity_cue_types",
+        "cue_similarity_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R12",
+      "category": "adjacency",
+      "target": "ARN",
+      "priority": 12,
+      "condition_summary": "adjacency/co-occurrence cue hit; never upgrades to causality/truth/value (B1).",
+      "cue_registries": [
+        "adjacency_cue_types",
+        "cue_adjacency_lexicon"
+      ]
+    },
+    {
+      "rule_id": "R13",
+      "category": "broad_heterogeneous",
+      "target": "ARN",
+      "priority": 13,
+      "condition_summary": "fallback; map by sign or unknown; unfamiliar predicate forces relation_class=unknown (residue).",
+      "cue_registries": []
+    }
+  ],
+  "engine_guards": [
+    {
+      "guard_id": "G_PSD_BOUNDARY",
+      "scope": "R3/R4",
+      "description": "PSD five-part system boundary + probability_value ten-field + obs!=do; missing -> psd_boundary_incomplete."
+    },
+    {
+      "guard_id": "G_TEMPORAL",
+      "scope": "R6",
+      "description": "time-impossible path rejects (T1-T7): reversed interval, MALFORMED, mixed timescale, unknown direction, sequence inversion, topology break, causal escape."
+    },
+    {
+      "guard_id": "G_HIGHER_ORDER",
+      "scope": "R5",
+      "description": "higher-order relation must not silently collapse; preserve_as_higher_order, residue_if_projected, no fabricated third member."
+    }
+  ],
+  "anti_overstep_bindings": [
+    {
+      "binding_id": "B1",
+      "rule": "R12 adjacency routes to ARN",
+      "enforced_field": "claim_ceiling",
+      "value_template": "adjacency is not causality/truth/importance/value/consensus"
+    },
+    {
+      "binding_id": "B2",
+      "rule": "R7 support routes to ARN",
+      "enforced_field": "claim_ceiling",
+      "value_template": "support relation does not establish evidence independence; independence requires separate provenance-disjoint evidence assertion"
+    },
+    {
+      "binding_id": "B3",
+      "rule": "R11 similarity routes to ARN",
+      "enforced_field": "claim_ceiling",
+      "value_template": "similarity/embedding distance is not causality/truth/importance"
+    },
+    {
+      "binding_id": "B4",
+      "rule": "all routes output scan",
+      "enforced_field": "proposition/conditions/claim_ceiling",
+      "value_template": "anti-overclaim-matrix forbidden words -> REJECT(overclaim_upgrade_attempt)"
+    },
+    {
+      "binding_id": "B5",
+      "rule": "MCF causal_delegated_to_mcf only on router return",
+      "enforced_field": "relation_class",
+      "value_template": "causal_delegated_to_mcf writable only by router on ADMITTED handoff return"
+    },
+    {
+      "binding_id": "B6",
+      "rule": "generic relation never self-upgrades",
+      "enforced_field": "causal_status",
+      "value_template": "generic relation (relation_type=generic / R13 unknown) must never set causal_status=established"
+    }
+  ],
+  "reject_codes": [
+    {
+      "code": "not_a_relation_record",
+      "reason": "input record_kind is not Relation."
+    },
+    {
+      "code": "relation_schema_invalid",
+      "reason": "relation record fails its schema validation."
+    },
+    {
+      "code": "psd_boundary_incomplete",
+      "reason": "R3/R4 hit but PSD five-part boundary incomplete."
+    },
+    {
+      "code": "decorative_probability",
+      "reason": "bare numeric probability outside PSD ten-field discipline."
+    },
+    {
+      "code": "observation_intervention_conflated",
+      "reason": "observational and interventional distributions not distinct."
+    },
+    {
+      "code": "overclaim_upgrade_attempt",
+      "reason": "adjacency/repetition/similarity/embedding/graph-path upgraded to causality/truth/importance/value/consensus."
+    },
+    {
+      "code": "time_impossible_path",
+      "reason": "temporal relation forms a time-impossible path (T1-T7)."
+    },
+    {
+      "code": "psd_causal_escape_attempt",
+      "reason": "PSD record asserts real-world causality without MCF handoff."
+    }
+  ]
+}

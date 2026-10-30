@@ -1,0 +1,46 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Evidence tiers and claim ceilings (reuses Foundation ALLOWED_TIERS/ALLOWED_CEILINGS/tier_to_ceiling). claim_ceiling is a closed 3-value enum.",
+  "evidence_tiers": [
+    {
+      "tier": "PRIMARY_REPORT",
+      "description": "First-hand report / raw data / primary receipt."
+    },
+    {
+      "tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "description": "Secondary academic interpretation."
+    },
+    {
+      "tier": "MEDIA_SYNTHESIS",
+      "description": "Media synthesis."
+    }
+  ],
+  "claim_ceilings": [
+    {
+      "ceiling": "PRIMARY_VERIFIED",
+      "description": "Verified by primary evidence."
+    },
+    {
+      "ceiling": "SECONDARY",
+      "description": "Secondary / interpretation-level only."
+    },
+    {
+      "ceiling": "UNKNOWN",
+      "description": "Unknown / downgraded; safe default."
+    }
+  ],
+  "tier_to_ceiling": [
+    {
+      "tier": "PRIMARY_REPORT",
+      "ceiling": "PRIMARY_VERIFIED"
+    },
+    {
+      "tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "ceiling": "SECONDARY"
+    },
+    {
+      "tier": "MEDIA_SYNTHESIS",
+      "ceiling": "UNKNOWN"
+    }
+  ]
+}

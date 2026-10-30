@@ -2,30 +2,31 @@
   "bottom_only_groups": [
     "boundaries",
     "front_doors",
+    "governance",
     "layers"
   ],
   "bottom_only_isolated_groups": [],
   "canvas": {
     "height": 3044.0,
     "preserve_aspect_ratio": "xMidYMin meet",
-    "view_box": "0 0 1800 3044",
-    "width": 1800.0
+    "view_box": "0 0 2388 3044",
+    "width": 2388.0
   },
   "checks": {
     "bottom_only_isolated_groups": [],
-    "clickable_target_count": 93,
+    "clickable_target_count": 115,
     "clickable_target_coverage": true,
-    "expected_node_count": 93,
+    "expected_node_count": 115,
     "group_box_overlap_count": 0,
     "label_clip_count": 0,
     "node_box_overlap_count": 0,
-    "node_geometry_count": 93,
+    "node_geometry_count": 115,
     "nodes_outside_group_count": 0,
     "solid_background_rect_count": 1
   },
-  "clickable_target_count": 93,
+  "clickable_target_count": 115,
   "clickable_target_coverage": true,
-  "edge_crossing_proxy": 186,
+  "edge_crossing_proxy": 176,
   "edges": [
     {
       "id": "map_analysis_increment",
@@ -483,12 +484,27 @@
       "target": "executor_admission_r1"
     },
     {
+      "id": "arr_documents_arn",
+      "source": "arr",
+      "target": "arn"
+    },
+    {
+      "id": "arr_mechanism_mcf",
+      "source": "arr",
+      "target": "mcf"
+    },
+    {
+      "id": "arr_mechanism_psd",
+      "source": "arr",
+      "target": "psd"
+    },
+    {
       "id": "executor_admission_governs_live_executor_bridge",
       "source": "executor_admission_r1",
       "target": "live_executor_bridge_r1"
     }
   ],
-  "expected_node_count": 93,
+  "expected_node_count": 115,
   "failures": [],
   "gap_by_column": {
     "0": {
@@ -523,13 +539,18 @@
     },
     "2": {
       "groups": [
+        "governance"
+      ],
+      "internal_gaps": [],
+      "max_internal_gap": 0.0
+    },
+    "3": {
+      "groups": [
         "core",
-        "governance",
         "federation",
         "boundaries"
       ],
       "internal_gaps": [
-        28.0,
         28.0,
         28.0
       ],
@@ -539,23 +560,23 @@
   "group_box_overlap_count": 0,
   "groups": [
     {
-      "column": 2,
+      "column": 3,
       "degree": 4,
       "height": 322.0,
       "id": "boundaries",
       "node_count": 3,
       "width": 560.0,
-      "x": 1208.0,
-      "y": 2624.0
+      "x": 1796.0,
+      "y": 1218.0
     },
     {
-      "column": 2,
+      "column": 3,
       "degree": 4,
       "height": 256.0,
       "id": "core",
       "node_count": 2,
       "width": 560.0,
-      "x": 1208.0,
+      "x": 1796.0,
       "y": 122.0
     },
     {
@@ -566,17 +587,17 @@
       "node_count": 5,
       "width": 560.0,
       "x": 32.0,
-      "y": 1436.0
+      "y": 1502.0
     },
     {
-      "column": 2,
+      "column": 3,
       "degree": 2,
       "height": 784.0,
       "id": "federation",
       "node_count": 10,
       "width": 560.0,
-      "x": 1208.0,
-      "y": 1812.0
+      "x": 1796.0,
+      "y": 406.0
     },
     {
       "column": 1,
@@ -596,17 +617,17 @@
       "node_count": 6,
       "width": 560.0,
       "x": 32.0,
-      "y": 1918.0
+      "y": 1984.0
     },
     {
       "column": 2,
       "degree": 12,
-      "height": 1378.0,
+      "height": 2764.0,
       "id": "governance",
-      "node_count": 19,
+      "node_count": 40,
       "width": 560.0,
       "x": 1208.0,
-      "y": 406.0
+      "y": 122.0
     },
     {
       "column": 0,
@@ -616,7 +637,7 @@
       "node_count": 1,
       "width": 560.0,
       "x": 32.0,
-      "y": 472.0
+      "y": 538.0
     },
     {
       "column": 1,
@@ -631,9 +652,9 @@
     {
       "column": 0,
       "degree": 0,
-      "height": 322.0,
+      "height": 388.0,
       "id": "models",
-      "node_count": 3,
+      "node_count": 4,
       "width": 560.0,
       "x": 32.0,
       "y": 122.0
@@ -666,38 +687,38 @@
       "node_count": 9,
       "width": 560.0,
       "x": 32.0,
-      "y": 690.0
+      "y": 756.0
     }
   ],
-  "internal_blank_area": 156800.0,
+  "internal_blank_area": 141120.0,
   "label_clip_count": 0,
-  "layout_version": "2.2.0",
-  "map_version": "0.18.0",
+  "layout_version": "2.6.0",
+  "map_version": "0.22.0",
   "max_internal_gap": 28.0,
   "metrics": {
     "baseline_canvas_height": 3988.0,
     "baseline_edge_crossing_proxy": 173.0,
     "baseline_internal_blank_area": 1245440.0,
-    "blank_area_reduction_vs_baseline": 0.8741007194,
+    "blank_area_reduction_vs_baseline": 0.8866906475,
     "canvas_height": 3044.0,
     "canvas_height_reduction_vs_baseline": 0.2367101304,
-    "canvas_width": 1800.0,
-    "edge_crossing_proxy": 186,
-    "edge_crossing_ratio_vs_baseline": 1.0751445087,
-    "group_occupancy_ratio": 0.792086436,
-    "internal_blank_area": 156800.0,
+    "canvas_width": 2388.0,
+    "edge_crossing_proxy": 176,
+    "edge_crossing_ratio_vs_baseline": 1.0173410405,
+    "group_occupancy_ratio": 0.7089102983,
+    "internal_blank_area": 141120.0,
     "max_internal_gap": 28.0,
     "mobile_viewports_fit": 2
   },
   "mobile_viewports": [
     {
-      "fit_scale": 0.20833333,
+      "fit_scale": 0.15703518,
       "fit_without_horizontal_scroll": true,
       "height": 667,
       "width": 375
     },
     {
-      "fit_scale": 0.21666667,
+      "fit_scale": 0.16331658,
       "fit_without_horizontal_scroll": true,
       "height": 844,
       "width": 390
@@ -711,7 +732,7 @@
       "id": "accepted_work",
       "width": 516.0,
       "x": 54.0,
-      "y": 1178.0
+      "y": 1244.0
     },
     {
       "group": "os_spine",
@@ -751,7 +772,7 @@
       "id": "ai_guide",
       "width": 516.0,
       "x": 54.0,
-      "y": 2274.0
+      "y": 2340.0
     },
     {
       "group": "models",
@@ -759,7 +780,15 @@
       "id": "arn",
       "width": 516.0,
       "x": 54.0,
-      "y": 346.0
+      "y": 412.0
+    },
+    {
+      "group": "models",
+      "height": 54.0,
+      "id": "arr",
+      "width": 516.0,
+      "x": 54.0,
+      "y": 214.0
     },
     {
       "group": "os_spine",
@@ -783,7 +812,7 @@
       "id": "case_source",
       "width": 516.0,
       "x": 54.0,
-      "y": 1046.0
+      "y": 1112.0
     },
     {
       "group": "governance",
@@ -791,7 +820,7 @@
       "id": "charter",
       "width": 516.0,
       "x": 1230.0,
-      "y": 498.0
+      "y": 214.0
     },
     {
       "group": "governance",
@@ -799,15 +828,39 @@
       "id": "charter_system_r1",
       "width": 516.0,
       "x": 1230.0,
-      "y": 564.0
+      "y": 280.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "coaching_commitment_subcapability_contract",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2458.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "coaching_commitment_subcapability_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2524.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "coaching_commitment_subcapability_pilot",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2590.0
     },
     {
       "group": "federation",
       "height": 54.0,
       "id": "codex_adapter",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2102.0
+      "x": 1818.0,
+      "y": 696.0
     },
     {
       "group": "os_spine",
@@ -823,7 +876,7 @@
       "id": "copyright_governance_history_remediation",
       "width": 516.0,
       "x": 1230.0,
-      "y": 762.0
+      "y": 478.0
     },
     {
       "group": "governance",
@@ -831,7 +884,7 @@
       "id": "copyright_governance_jurisdiction_registry",
       "width": 516.0,
       "x": 1230.0,
-      "y": 828.0
+      "y": 544.0
     },
     {
       "group": "governance",
@@ -839,7 +892,7 @@
       "id": "copyright_governance_material_classification",
       "width": 516.0,
       "x": 1230.0,
-      "y": 894.0
+      "y": 610.0
     },
     {
       "group": "governance",
@@ -847,7 +900,7 @@
       "id": "copyright_governance_non_republication_principle",
       "width": 516.0,
       "x": 1230.0,
-      "y": 960.0
+      "y": 676.0
     },
     {
       "group": "governance",
@@ -855,7 +908,7 @@
       "id": "copyright_governance_publication_gate_validator",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1026.0
+      "y": 742.0
     },
     {
       "group": "governance",
@@ -863,7 +916,7 @@
       "id": "copyright_governance_source_rights",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1092.0
+      "y": 808.0
     },
     {
       "group": "governance",
@@ -871,7 +924,31 @@
       "id": "copyright_governance_tests",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1158.0
+      "y": 874.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "counterfactual_unrealized_path_contract",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2062.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "counterfactual_unrealized_path_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2128.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "counterfactual_unrealized_path_pilot",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2194.0
     },
     {
       "group": "front_doors",
@@ -879,7 +956,7 @@
       "id": "current_state",
       "width": 516.0,
       "x": 54.0,
-      "y": 2340.0
+      "y": 2406.0
     },
     {
       "group": "governance",
@@ -887,7 +964,7 @@
       "id": "decision_integrity_contract",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1554.0
+      "y": 1270.0
     },
     {
       "group": "governance",
@@ -895,7 +972,7 @@
       "id": "decision_integrity_gate_validator",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1620.0
+      "y": 1336.0
     },
     {
       "group": "governance",
@@ -903,7 +980,7 @@
       "id": "decision_integrity_pilot",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1686.0
+      "y": 1402.0
     },
     {
       "group": "domain_packs",
@@ -911,7 +988,7 @@
       "id": "domain_pack_contract",
       "width": 516.0,
       "x": 54.0,
-      "y": 1528.0
+      "y": 1594.0
     },
     {
       "group": "os_spine",
@@ -943,7 +1020,31 @@
       "id": "epistemic_governance_kernel",
       "width": 516.0,
       "x": 1230.0,
-      "y": 630.0
+      "y": 346.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "epistemic_state_control_plane_contract",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1468.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "epistemic_state_control_plane_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1534.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "epistemic_state_control_plane_pilot",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1600.0
     },
     {
       "group": "os_spine",
@@ -958,8 +1059,8 @@
       "height": 54.0,
       "id": "executor_admission_r1",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2366.0
+      "x": 1818.0,
+      "y": 960.0
     },
     {
       "group": "os_spine",
@@ -974,8 +1075,8 @@
       "height": 54.0,
       "id": "external_agent_federation",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 1904.0
+      "x": 1818.0,
+      "y": 498.0
     },
     {
       "group": "writing",
@@ -983,7 +1084,7 @@
       "id": "external_input",
       "width": 516.0,
       "x": 54.0,
-      "y": 782.0
+      "y": 848.0
     },
     {
       "group": "feedback",
@@ -1006,7 +1107,7 @@
       "height": 54.0,
       "id": "foundation",
       "width": 516.0,
-      "x": 1230.0,
+      "x": 1818.0,
       "y": 214.0
     },
     {
@@ -1014,7 +1115,7 @@
       "height": 54.0,
       "id": "function_os",
       "width": 516.0,
-      "x": 1230.0,
+      "x": 1818.0,
       "y": 280.0
     },
     {
@@ -1022,16 +1123,40 @@
       "height": 54.0,
       "id": "future_executors",
       "width": 516.0,
+      "x": 1818.0,
+      "y": 828.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "graded_intervention_escalation_contract",
+      "width": 516.0,
       "x": 1230.0,
-      "y": 2234.0
+      "y": 2260.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "graded_intervention_escalation_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2326.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "graded_intervention_escalation_pilot",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2392.0
     },
     {
       "group": "federation",
       "height": 54.0,
       "id": "hermes_adapter",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2036.0
+      "x": 1818.0,
+      "y": 630.0
     },
     {
       "group": "front_doors",
@@ -1039,7 +1164,7 @@
       "id": "human_knowledge_surfaces",
       "width": 516.0,
       "x": 54.0,
-      "y": 2076.0
+      "y": 2142.0
     },
     {
       "group": "writing",
@@ -1047,7 +1172,7 @@
       "id": "ignition_increment",
       "width": 516.0,
       "x": 54.0,
-      "y": 848.0
+      "y": 914.0
     },
     {
       "group": "operations",
@@ -1063,7 +1188,7 @@
       "id": "knowledge_domain_pack",
       "width": 516.0,
       "x": 54.0,
-      "y": 1594.0
+      "y": 1660.0
     },
     {
       "group": "layers",
@@ -1127,7 +1252,31 @@
       "id": "language_thought_plane",
       "width": 516.0,
       "x": 54.0,
-      "y": 564.0
+      "y": 630.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "latent_system_identifiability_contract",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1864.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "latent_system_identifiability_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1930.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "latent_system_identifiability_pilot",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1996.0
     },
     {
       "group": "governance",
@@ -1135,23 +1284,23 @@
       "id": "licensing",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1224.0
+      "y": 940.0
     },
     {
       "group": "federation",
       "height": 54.0,
       "id": "live_executor_bridge_r1",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2432.0
+      "x": 1818.0,
+      "y": 1026.0
     },
     {
       "group": "federation",
       "height": 54.0,
       "id": "live_observation_reconciliation_plane_r1",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2498.0
+      "x": 1818.0,
+      "y": 1092.0
     },
     {
       "group": "models",
@@ -1159,31 +1308,31 @@
       "id": "mcf",
       "width": 516.0,
       "x": 54.0,
-      "y": 214.0
+      "y": 280.0
     },
     {
       "group": "boundaries",
       "height": 54.0,
       "id": "no_l7",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2716.0
+      "x": 1818.0,
+      "y": 1310.0
     },
     {
       "group": "boundaries",
       "height": 54.0,
       "id": "no_totality_proof",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2848.0
+      "x": 1818.0,
+      "y": 1442.0
     },
     {
       "group": "boundaries",
       "height": 54.0,
       "id": "no_truth_upgrade",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2782.0
+      "x": 1818.0,
+      "y": 1376.0
     },
     {
       "group": "domain_packs",
@@ -1191,7 +1340,7 @@
       "id": "nonknowledge_pilot",
       "width": 516.0,
       "x": 54.0,
-      "y": 1792.0
+      "y": 1858.0
     },
     {
       "group": "os_spine",
@@ -1202,12 +1351,36 @@
       "y": 1336.0
     },
     {
+      "group": "governance",
+      "height": 54.0,
+      "id": "open_scientific_context_protocol_contract",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2656.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "open_scientific_context_protocol_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2722.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "open_scientific_context_protocol_pilot",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 2788.0
+    },
+    {
       "group": "federation",
       "height": 54.0,
       "id": "openclaw_adapter",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 1970.0
+      "x": 1818.0,
+      "y": 564.0
     },
     {
       "group": "os_spine",
@@ -1223,7 +1396,7 @@
       "id": "point_fire_analysis",
       "width": 516.0,
       "x": 54.0,
-      "y": 1112.0
+      "y": 1178.0
     },
     {
       "group": "os_spine",
@@ -1247,7 +1420,7 @@
       "id": "psd",
       "width": 516.0,
       "x": 54.0,
-      "y": 280.0
+      "y": 346.0
     },
     {
       "group": "feedback",
@@ -1295,15 +1468,15 @@
       "id": "readme",
       "width": 516.0,
       "x": 54.0,
-      "y": 2010.0
+      "y": 2076.0
     },
     {
       "group": "federation",
       "height": 54.0,
       "id": "reference_executor",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2168.0
+      "x": 1818.0,
+      "y": 762.0
     },
     {
       "group": "domain_packs",
@@ -1311,7 +1484,7 @@
       "id": "research_pack_reos_light",
       "width": 516.0,
       "x": 54.0,
-      "y": 1660.0
+      "y": 1726.0
     },
     {
       "group": "os_spine",
@@ -1326,8 +1499,8 @@
       "height": 54.0,
       "id": "runtime_environment",
       "width": 516.0,
-      "x": 1230.0,
-      "y": 2300.0
+      "x": 1818.0,
+      "y": 894.0
     },
     {
       "group": "os_spine",
@@ -1343,7 +1516,7 @@
       "id": "showcase",
       "width": 516.0,
       "x": 54.0,
-      "y": 1244.0
+      "y": 1310.0
     },
     {
       "group": "writing",
@@ -1351,7 +1524,7 @@
       "id": "showcase_registry",
       "width": 516.0,
       "x": 54.0,
-      "y": 1310.0
+      "y": 1376.0
     },
     {
       "group": "writing",
@@ -1359,7 +1532,7 @@
       "id": "source_pool",
       "width": 516.0,
       "x": 54.0,
-      "y": 914.0
+      "y": 980.0
     },
     {
       "group": "os_spine",
@@ -1375,7 +1548,7 @@
       "id": "structural_governance_surface",
       "width": 516.0,
       "x": 1230.0,
-      "y": 696.0
+      "y": 412.0
     },
     {
       "group": "front_doors",
@@ -1383,7 +1556,7 @@
       "id": "summary",
       "width": 516.0,
       "x": 54.0,
-      "y": 2142.0
+      "y": 2208.0
     },
     {
       "group": "governance",
@@ -1391,7 +1564,7 @@
       "id": "sustainability",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1290.0
+      "y": 1006.0
     },
     {
       "group": "governance",
@@ -1399,7 +1572,7 @@
       "id": "symbolic_power_perspective_contract",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1356.0
+      "y": 1072.0
     },
     {
       "group": "governance",
@@ -1407,7 +1580,7 @@
       "id": "symbolic_power_perspective_gate_validator",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1422.0
+      "y": 1138.0
     },
     {
       "group": "governance",
@@ -1415,7 +1588,7 @@
       "id": "symbolic_power_perspective_pilot",
       "width": 516.0,
       "x": 1230.0,
-      "y": 1488.0
+      "y": 1204.0
     },
     {
       "group": "operations",
@@ -1431,7 +1604,31 @@
       "id": "usage",
       "width": 516.0,
       "x": 54.0,
-      "y": 2208.0
+      "y": 2274.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "world_feedback_anomaly_contract",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1666.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "world_feedback_anomaly_gate_validator",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1732.0
+    },
+    {
+      "group": "governance",
+      "height": 54.0,
+      "id": "world_feedback_anomaly_pilot",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1798.0
     },
     {
       "group": "domain_packs",
@@ -1439,7 +1636,7 @@
       "id": "writing_pack",
       "width": 516.0,
       "x": 54.0,
-      "y": 1726.0
+      "y": 1792.0
     },
     {
       "group": "writing",
@@ -1447,7 +1644,7 @@
       "id": "zhiyuan_method",
       "width": 516.0,
       "x": 54.0,
-      "y": 980.0
+      "y": 1046.0
     }
   ],
   "nodes_outside_group_count": 0,

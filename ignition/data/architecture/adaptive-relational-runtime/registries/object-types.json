@@ -1,0 +1,195 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Controlled vocabulary of the nine ARR cross-domain object primitives; each carries a deterministic kind_prefix and the shared 12-field envelope.",
+  "object_types": [
+    {
+      "kind": "Source",
+      "kind_prefix": "src",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Typed reference to external material; identity = sha256(content+scope).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "Observation",
+      "kind_prefix": "obs",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Product of a single collection act over a Source.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "Object",
+      "kind_prefix": "obj",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Type-identified entity objectified from Observation(s).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "State",
+      "kind_prefix": "sta",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Condition snapshot over a persistence interval.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "Event",
+      "kind_prefix": "evt",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Bounded occurrence in an observation frame.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "Assertion",
+      "kind_prefix": "ast",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Propositional claim; carrier of explicitness + claim_ceiling.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "Relation",
+      "kind_prefix": "rel",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Typed relation over >=2 endpoints; no causal/truth conclusion.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "Mechanism",
+      "kind_prefix": "mec",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Mechanism contract (seven required elements).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "kind": "Action",
+      "kind_prefix": "act",
+      "envelope_fields": [
+        "record_id",
+        "record_kind",
+        "schema_version",
+        "scope",
+        "provenance",
+        "explicitness",
+        "claim_ceiling",
+        "uncertainty",
+        "alternatives",
+        "lifecycle",
+        "time",
+        "extensions"
+      ],
+      "description": "Pending/decided action intent; execution re-enters as receipt only.",
+      "status": "active",
+      "since_version": "1.0.0"
+    }
+  ]
+}

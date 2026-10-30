@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/unknown.schema.json",
+  "title": "Ignition Runtime UNKNOWN Ledger Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["unknown_id", "semantic_id", "question", "scope", "tier", "created_gen"],
+  "properties": {
+    "unknown_id": { "type": "string" },
+    "material_id": { "type": "string" },
+    "semantic_id": { "type": "string", "pattern": "^sid_[0-9a-f]+$|^$" },
+    "question": { "type": "string", "minLength": 1 },
+    "scope": { "type": "string", "minLength": 1 },
+    "tier": {
+      "type": "string",
+      "enum": ["PRIMARY_REPORT", "SECONDARY_ACADEMIC_INTERPRETATION", "MEDIA_SYNTHESIS"]
+    },
+    "created_gen": { "type": "string" },
+    "resolved": { "type": "boolean" }
+  }
+}

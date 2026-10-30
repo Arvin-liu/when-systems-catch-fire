@@ -62,16 +62,16 @@
     }
   ],
   "architecture_counts": {
-    "current_map_version": "0.21.0",
-    "hidden_components": 17,
+    "current_map_version": "0.22.0",
+    "hidden_components": 19,
     "historical_map_version": "0.14.0",
-    "layout_version": "2.4.0",
-    "registry_components": 131,
+    "layout_version": "2.6.0",
+    "registry_components": 134,
     "semantic_trunk_route_steps": 7,
     "semantic_trunk_version": "semantic-trunk-r1",
-    "typed_topology_relations": 142,
-    "visible_map_nodes": 114,
-    "visible_typed_edges": 92
+    "typed_topology_relations": 146,
+    "visible_map_nodes": 115,
+    "visible_typed_edges": 95
   },
   "claim_ceiling": "Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.",
   "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
@@ -146,7 +146,7 @@
       }
     ]
   },
-  "generated_from_source_digest": "5135f8cc0c13a51dc28f3cc26318c6bb840ab3e13ab2fd6e3dc91ef1ba8a4d3d",
+  "generated_from_source_digest": "a014e9682362f30fa7361e18df1dd3081e4d801372f7213dc531f00b1e632cc1",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
@@ -188,7 +188,7 @@
     "validated_completion_status": "NOT_VALIDATED"
   },
   "map": {
-    "current_version": "0.21.0",
+    "current_version": "0.22.0",
     "historical_versions": [
       "0.14.0"
     ],

@@ -161,3 +161,31 @@ A coaching subcapability can support user-declared informed commitments while pr
 ### SCIENTIFIC-CONTEXT-PROTOCOL-I1 Open Scientific Context Protocol (stacked Draft candidate)
 
 A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no deployed ecosystem; no hardware execution; no platform model copying; no sensitive-data/network boundary bypass.
+
+### IGNITION-RUNTIME-R1 Production RUN/PROMOTE/EVOLVE (stacked Draft candidate)
+
+A draft production execution layer (`tools/ignition_runtime`) commits every
+authoritative state change as a new immutable generation for the repair-r3
+scientific-context-protocol material set. It remains evidence-bound,
+repository-local, unreviewed, unready, unmerged and not Current. Explicit
+non-claims: the original frozen build was developed against iteration method
+`1.3.0`; this review branch inherits method `1.4.0` from PR #118, and the runtime
+has not been reviewed or revalidated under `1.4.0`. The runtime does not itself
+change the current method, seven-layer epistemic architecture, or any frozen
+formal protocol; it does not auto-promote candidates to formal knowledge and
+does not auto-trigger engineering evolution; an ordinary RUN never imports or
+calls PROMOTE/EVOLVE. Its original 45-scenario suite was authored against the
+frozen `1.3.0` base; exact-parent regression is pending.
+
+### ARR-R1 Adaptive Relational Runtime Scaffold (stacked Draft candidate)
+
+A registry-driven adaptive relational runtime scaffold (one-kernel six-plane) can keep
+heterogeneous sources, relations, lifecycle and mechanism as a derived-representation
+adapter package (`tools/adaptive_relational_runtime`) with an anti-second-executor static
+gate. It remains evidence-bound, repository-local, unreviewed, unready, unmerged and not
+Current. Explicit non-claims: it is not a new truth layer or L7; it is not a second
+execution engine; it does not perform process spawn, network I/O or path write beyond the
+ignition_runtime predecessor modules it reuses; commit 5 synchronizes maps, registries,
+topology and CI without changing runtime behavior. The exact final main closeout HEAD and
+post-commit CI are external attestations re-fetched live; this artifact does not
+self-assert a final SHA.

@@ -1,7 +1,7 @@
 {
-  "current_map_version": "0.21.0",
+  "current_map_version": "0.22.0",
   "geometry": {
-    "columns": 3,
+    "columns": 4,
     "group_gap": 28,
     "group_header_height": 92,
     "group_width": 560,
@@ -31,7 +31,7 @@
     },
     {
       "color": "#0f766e",
-      "column": 2,
+      "column": 3,
       "description": "权威数据、形式门禁与可执行函数接口",
       "id": "core",
       "label": "基础核心",
@@ -79,7 +79,7 @@
     },
     {
       "color": "#475569",
-      "column": 2,
+      "column": 3,
       "description": "这是一张导航接口，不是完整性、因果或理论证明",
       "id": "boundaries",
       "label": "图的解释边界",
@@ -111,7 +111,7 @@
     },
     {
       "color": "#ea580c",
-      "column": 2,
+      "column": 3,
       "description": "Federation、provider-neutral admission 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
       "id": "federation",
       "label": "Federation / 外部手脚",
@@ -119,7 +119,7 @@
     }
   ],
   "historical_map_version": "0.14.0",
-  "layout_version": "2.4.0",
+  "layout_version": "2.6.0",
   "node_order": {
     "boundaries": [
       "no_l7",
@@ -239,6 +239,7 @@
       "driver_console_r1"
     ],
     "models": [
+      "arr",
       "mcf",
       "psd",
       "arn"

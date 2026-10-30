@@ -1,0 +1,54 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Controlled vocabulary of mechanism_type values (contract declarations; no execution in scaffold).",
+  "mechanism_types": [
+    {
+      "type": "text_extract",
+      "description": "Extract structured assertion candidates from observation.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "deterministic_transform",
+      "description": "Pure deterministic record transform.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "validation_check",
+      "description": "Validate a contract/record; emit verdict.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "projection_route",
+      "description": "Route a relation to ARN/MCF/PSD.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "diff_compare",
+      "description": "Diff two registry snapshots/envelopes (read-only).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "receipt_validate",
+      "description": "Validate a production operation_receipt adapter record.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "stub_executor",
+      "description": "Run a deterministic stub and emit a stub receipt.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "schema_validate",
+      "description": "Validate a record against its schema.",
+      "status": "active",
+      "since_version": "1.0.0"
+    }
+  ]
+}
