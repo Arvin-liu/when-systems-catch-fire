@@ -1,0 +1,37 @@
+{
+  "formal_predecessor_head": "bfe90c65a80619e6c6c81586a2befb15796b93bb",
+  "draft_pr": "#121",
+  "base": "architecture/adaptive-relational-runtime-r1-scaffold",
+  "evidence_branch": "agent/adaptive-relational-runtime-r2-real-object-pilot-20260725",
+  "original_manifest_digest": "d132c82554469e1136ba31220dc2afbcdcc5c0df0afc25822e5e70738e58e956",
+  "external_review_verdict": {
+    "R2_FAIL_CLOSED_BOUNDARY_PILOT": "ACCEPT",
+    "R2_POSITIVE_REAL_OBJECT_PROCESSING": "REJECT",
+    "R3_SCALE_RUN_AUTHORIZED": "NO",
+    "POSITIVE_ROUTING_REPAIR_R1": "AUTHORIZED"
+  },
+  "negative_result": {
+    "selected": 48,
+    "adapter_dispatch_failures": 40,
+    "runtime_source_validation_failures": 8,
+    "projection_executed": 0,
+    "all_inputs_immutable": false,
+    "positive_end_to_end_successes": 0,
+    "note": "GENUINE measured values on frozen R2 (bfe90c65) with the synthetic 48-object manifest (digest d132c825): 40 extraction failures + 8 runtime failures. The instruction prose (IGNITION \u00a75) stated 42/6, but the synthetic manifest assigns exactly 8 objects per class via (i-1)%6, so the 5 non-mechanism adapter classes yield 5x8=40 TypeError dispatch failures and all 8 mechanism objects reach eng.run and fail Source validation (8 runtime failures). The 42/6 figure in the prose is an internal miscount; this record reports the true behavior."
+  },
+  "measured_before": {
+    "selected": 48,
+    "extraction_failures": 40,
+    "runtime_failures": 8,
+    "routing_failures": 0,
+    "unknown_count": 0,
+    "projection_executed": 0,
+    "all_inputs_immutable": false,
+    "positive_successes": 0,
+    "real_world_actions": 0,
+    "privacy_boundary_ok": true,
+    "manifest_digest": "d132c82554469e1136ba31220dc2afbcdcc5c0df0afc25822e5e70738e58e956",
+    "expected_digest": "d132c82554469e1136ba31220dc2afbcdcc5c0df0afc25822e5e70738e58e956",
+    "digest_matches": true
+  }
+}

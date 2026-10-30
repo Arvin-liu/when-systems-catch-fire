@@ -182,39 +182,147 @@
   "anti_overstep_bindings": [
     {
       "binding_id": "B1",
-      "rule": "R12 adjacency routes to ARN",
+      "rule": "R12 adjacency routes to ARN; adjacency may not be upgraded to causality/truth/importance/value/consensus",
       "enforced_field": "claim_ceiling",
-      "value_template": "adjacency is not causality/truth/importance/value/consensus"
+      "condition": {
+        "all": [
+          {
+            "field": "decision.rule_id",
+            "op": "equals",
+            "value": "R12"
+          },
+          {
+            "field": "relation.claim_ceiling",
+            "op": "equals",
+            "value": "PRIMARY_VERIFIED"
+          }
+        ]
+      },
+      "effect": {
+        "type": "reject",
+        "reject_code": "overclaim_upgrade_attempt"
+      }
     },
     {
       "binding_id": "B2",
-      "rule": "R7 support routes to ARN",
+      "rule": "R7 support routes to ARN; support relation does not establish evidence independence",
       "enforced_field": "claim_ceiling",
-      "value_template": "support relation does not establish evidence independence; independence requires separate provenance-disjoint evidence assertion"
+      "condition": {
+        "all": [
+          {
+            "field": "decision.rule_id",
+            "op": "equals",
+            "value": "R7"
+          },
+          {
+            "field": "relation.claim_ceiling",
+            "op": "equals",
+            "value": "PRIMARY_VERIFIED"
+          }
+        ]
+      },
+      "effect": {
+        "type": "reject",
+        "reject_code": "overclaim_upgrade_attempt"
+      }
     },
     {
       "binding_id": "B3",
-      "rule": "R11 similarity routes to ARN",
+      "rule": "R11 similarity routes to ARN; similarity/embedding distance is not causality/truth/importance",
       "enforced_field": "claim_ceiling",
-      "value_template": "similarity/embedding distance is not causality/truth/importance"
+      "condition": {
+        "all": [
+          {
+            "field": "decision.rule_id",
+            "op": "equals",
+            "value": "R11"
+          },
+          {
+            "field": "relation.claim_ceiling",
+            "op": "equals",
+            "value": "PRIMARY_VERIFIED"
+          }
+        ]
+      },
+      "effect": {
+        "type": "reject",
+        "reject_code": "overclaim_upgrade_attempt"
+      }
     },
     {
       "binding_id": "B4",
-      "rule": "all routes output scan",
+      "rule": "anti-overclaim-matrix forbidden words in asserted proposition -> REJECT",
       "enforced_field": "proposition/conditions/claim_ceiling",
-      "value_template": "anti-overclaim-matrix forbidden words -> REJECT(overclaim_upgrade_attempt)"
+      "condition": {
+        "any": [
+          {
+            "field": "relation.uncertainty",
+            "op": "contains_any",
+            "value": [
+              "therefore causes",
+              "proves that",
+              "definitely true",
+              "is the consensus",
+              "is the most important"
+            ]
+          }
+        ]
+      },
+      "effect": {
+        "type": "reject",
+        "reject_code": "overclaim_upgrade_attempt"
+      }
     },
     {
       "binding_id": "B5",
-      "rule": "MCF causal_delegated_to_mcf only on router return",
+      "rule": "MCF causal_delegated_to_mcf only writable by router on ADMITTED handoff return (non-generic relations)",
       "enforced_field": "relation_class",
-      "value_template": "causal_delegated_to_mcf writable only by router on ADMITTED handoff return"
+      "condition": {
+        "all": [
+          {
+            "field": "relation.extensions.x_causal_status",
+            "op": "equals",
+            "value": "established"
+          },
+          {
+            "field": "relation.causal_handoff_ref",
+            "op": "equals",
+            "value": null
+          },
+          {
+            "field": "relation.relation_type",
+            "op": "not_equals",
+            "value": "generic"
+          }
+        ]
+      },
+      "effect": {
+        "type": "reject",
+        "reject_code": "unauthorized_causal_delegation"
+      }
     },
     {
       "binding_id": "B6",
-      "rule": "generic relation never self-upgrades",
+      "rule": "generic relation never self-upgrades to causality",
       "enforced_field": "causal_status",
-      "value_template": "generic relation (relation_type=generic / R13 unknown) must never set causal_status=established"
+      "condition": {
+        "all": [
+          {
+            "field": "relation.relation_type",
+            "op": "equals",
+            "value": "generic"
+          },
+          {
+            "field": "relation.extensions.x_causal_status",
+            "op": "equals",
+            "value": "established"
+          }
+        ]
+      },
+      "effect": {
+        "type": "reject",
+        "reject_code": "overclaim_upgrade_attempt"
+      }
     }
   ],
   "reject_codes": [
@@ -249,6 +357,10 @@
     {
       "code": "psd_causal_escape_attempt",
       "reason": "PSD record asserts real-world causality without MCF handoff."
+    },
+    {
+      "code": "unauthorized_causal_delegation",
+      "meaning": "causal_status=established set on a relation without an admitted MCF handoff ref (B5)"
     }
   ]
 }

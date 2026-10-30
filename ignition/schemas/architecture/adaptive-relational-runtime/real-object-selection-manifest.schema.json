@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.dev/schemas/adaptive-relational-runtime/real-object-selection-manifest.schema.json",
+  "title": "Real Object Selection Manifest",
+  "description": "Immutable, digested manifest of the exactly-48 real objects selected for the R2 pilot, locked before the first run.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "pilot_id", "locked_at", "selection_policy", "object_count", "objects"],
+  "properties": {
+    "manifest_version": {"type": "string", "const": "arr-r2.0"},
+    "pilot_id": {"type": "string", "pattern": "^arr-r2-pilot-[0-9]{8}$"},
+    "locked_at": {"type": "string", "format": "date-time"},
+    "selection_policy": {
+      "type": "string",
+      "description": "Summary of how the 48 objects were selected; must state replacements require a new pilot_id."
+    },
+    "object_count": {"type": "integer", "const": 48,
+      "description": "Exactly 48 real objects are required."},
+    "objects": {
+      "type": "array",
+      "minItems": 48, "maxItems": 48,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "object_id", "object_class", "location", "content_ref_digest",
+          "rights_tier", "source_tier", "permitted_formal_representation",
+          "excluded_content", "expected_routing_target", "claim_ceiling"
+        ],
+        "properties": {
+          "object_id": {"type": "string", "pattern": "^OBJ-[0-9]{2}$"},
+          "object_class": {
+            "type": "string",
+            "enum": [
+              "text_transcript_source", "git_pr_ci_chain", "structured_data_object",
+              "production_runtime_receipt", "temporal_event_sequence", "mechanism_system_state"
+            ]
+          },
+          "location": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["visibility", "ref"],
+            "properties": {
+              "visibility": {"type": "string", "enum": ["private_1111", "public_formal", "point_fire_repo"]},
+              "ref": {"type": "string", "description": "Typed reference; never full private content."}
+            }
+          },
+          "content_ref_digest": {
+            "type": "string",
+            "description": "sha256 of the referenced content/ref; the public repo stores only this digest."
+          },
+          "rights_tier": {
+            "type": "string",
+            "enum": ["owner_public", "owner_private", "third_party_copyright", "personal_data"]
+          },
+          "source_tier": {
+            "type": "string",
+            "enum": ["PRIMARY_REPORT", "SECONDARY_ACADEMIC_INTERPRETATION", "MEDIA_SYNTHESIS"]
+          },
+          "event_time": {"type": ["string", "null"], "format": "date-time"},
+          "publication_time": {"type": ["string", "null"], "format": "date-time"},
+          "observation_time": {"type": ["string", "null"], "format": "date-time"},
+          "ingestion_time": {"type": ["string", "null"], "format": "date-time"},
+          "permitted_formal_representation": {
+            "type": "string",
+            "description": "What the public repo may store (digest / typed ref / short paraphrase / aggregate)."
+          },
+          "excluded_content": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Content categories that must NEVER enter the public formal repo."
+          },
+          "expected_routing_target": {
+            "type": "string",
+            "enum": ["ARN", "MCF_REVIEW", "PSD_WITH_BOUNDARY", "REJECT", "QUARANTINE_UNKNOWN"]
+          },
+          "claim_ceiling": {
+            "type": "string",
+            "enum": ["PRIMARY_VERIFIED", "SECONDARY", "UNKNOWN"]
+          },
+          "adapter_ref": {
+            "type": "object",
+            "description": "Typed reference passed to the read-only adapter (digest + location only; never full private content).",
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}

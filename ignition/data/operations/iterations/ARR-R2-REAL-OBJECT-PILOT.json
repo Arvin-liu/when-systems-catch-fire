@@ -1,0 +1,198 @@
+{
+  "method_version": "1.0.0",
+  "task_id": "ARR-R2-REAL-OBJECT-PILOT",
+  "change_classification": [
+    "CAPABILITY_ADDITION",
+    "OPERATIONS_METHOD"
+  ],
+  "verified_start": {
+    "main_head": "6723cdfaf52873516c564c324066361b257cdf52",
+    "source": "ARR R2 real-object pilot branch based on R1 scaffold exact head a0d6c46cd55ef2dde49d13f958b230f71f619e73 (architecture/adaptive-relational-runtime-r1-scaffold)",
+    "verified_at": "2026-07-25"
+  },
+  "branch_pr": {
+    "branch": "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    "pr_number": 121,
+    "base": "architecture/adaptive-relational-runtime-r1-scaffold",
+    "base_head": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+    "draft": true,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": 121,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "evidence/adaptive-relational-runtime-r2-real-object-pilot/REMOTE_IDENTITY_RECEIPT.json",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "ARR R2 pilot records repository-local map/registry/CI synchronization only. The exact final closeout HEAD and post-commit CI are external attestations re-fetched live before any acceptance; this artifact does not self-assert a final SHA."
+  },
+  "gap": {
+    "summary": "R1 scaffold proved the runtime can exist as a repository-native scaffold, but two runtime gaps remained: B1-B6 anti-overstep bindings were loaded but not behaviorally used (decorative registry), and run() could mutate caller-owned source/observation lifecycle fields. R2 closes both and proves the scaffold over 48 genuine heterogeneous real objects without state pollution, hidden second executor, false causal promotion, false consensus or privacy leakage.",
+    "evidence": [
+      "R1 evidence doc records NB-1 (bindings param unused) and NB-2 (run() mutates caller input in place) as known limitations.",
+      "R2 commit 2 replaces the hardcoded _apply_anti_overstep with a fail-closed registry interpreter and deep-copies caller inputs at run() entry."
+    ],
+    "smallest_material_action": "R2 commit 2 edits tools/adaptive_relational_runtime/runtime.py to replace the hardcoded _apply_anti_overstep branch with a registry interpreter and to deep-copy caller source/observation at run() entry; no new capability or executor is introduced."
+  },
+  "claim_ceiling": "candidate_repository_pilot_capability_only: ARR R2 pilot closes the R1 registry-behavior and caller-input-mutation gaps and runs 48 real objects under a strict privacy boundary. It does not add a truth layer, L7, execution engine, external action, auto-PROMOTE/EVOLVE or causal upgrade, and is not the full 836-note corpus run.",
+  "status": {
+    "candidate": true,
+    "ready_for_gpt_verification": false,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Current-state doc records ARR-R2 real-object pilot as a stacked Draft candidate."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "R2 contract/ADR docs added to arr path_patterns; registry_version 1.1.15 -> 1.1.16."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map.json",
+      "decision": "CHANGE",
+      "reason": "Materialized map regenerated after component registry change (arr paths added)."
+    },
+    {
+      "surface": "pages/generated/ignition-system-map.svg",
+      "decision": "CHANGE",
+      "reason": "SVG regenerated with updated arr node metadata."
+    },
+    {
+      "surface": "data/operations/component-execution-profiles.json",
+      "decision": "CHANGE",
+      "reason": "Profiles regenerated after registry_version bump."
+    },
+    {
+      "surface": "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-request.json",
+      "decision": "CHANGE",
+      "reason": "Propagation request records the 18 R2 changed paths, 112 component decisions and 17 surface decisions."
+    },
+    {
+      "surface": "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-closure.json",
+      "decision": "CHANGE",
+      "reason": "Propagation closure: closure_complete=true, zero residue."
+    },
+    {
+      "surface": "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-residue.json",
+      "decision": "CHANGE",
+      "reason": "Propagation residue: unmapped_path=[], ambiguous_path_mapping=[], total=0."
+    },
+    {
+      "surface": "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-map-delta.json",
+      "decision": "CHANGE",
+      "reason": "System-map delta: NO_CHANGE_WITH_REASON (existing ARR/ARN nodes unchanged)."
+    },
+    {
+      "surface": "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-impact-report.md",
+      "decision": "CHANGE",
+      "reason": "Propagation impact report."
+    },
+    {
+      "surface": "tools/validate_human_front_door.py",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No front-door gate logic change in R2 commit 6; arr node already required."
+    },
+    {
+      "surface": ".github/workflows/foundation-validation.yml",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "CI already triggers on tools/adaptive_relational_runtime/** and tests/adaptive_relational_runtime/** and runs the static gate + pytest; R2 tests are covered without edits."
+    },
+    {
+      "surface": "docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
+      "decision": "CHANGE",
+      "reason": "R2 architecture/sampling contract (commit 1) — registered to arr in commit 6."
+    },
+    {
+      "surface": "docs/architecture/adaptive-relational-runtime-r2-adrs.md",
+      "decision": "CHANGE",
+      "reason": "R2 ADRs (commit 1) — registered to arr in commit 6."
+    },
+    {
+      "surface": "CHANGELOG.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Release history not appended in this R2 pilot synchronization commit."
+    },
+    {
+      "surface": "AI-HANDOFF.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No handoff-policy change in this R2 pilot synchronization commit."
+    },
+    {
+      "surface": "AI-START-HERE.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No cold-start ordering change in this R2 pilot synchronization commit."
+    },
+    {
+      "surface": "llms.txt",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No machine-boundary change in this R2 pilot synchronization commit."
+    },
+    {
+      "surface": "SUMMARY.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No navigation change in this R2 pilot synchronization commit."
+    },
+    {
+      "surface": "README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "ARR R2 pilot is map/registry/CI synchronization; README front-door structure is unchanged."
+    }
+  ],
+  "changed_surfaces": [
+    "docs/project-current-state.md",
+    "data/operations/project-components.json",
+    "data/architecture/interactive-system-map.json",
+    "pages/generated/ignition-system-map.svg",
+    "data/operations/component-execution-profiles.json",
+    "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-request.json",
+    "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-closure.json",
+    "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-residue.json",
+    "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-map-delta.json",
+    "data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-impact-report.md",
+    "docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
+    "docs/architecture/adaptive-relational-runtime-r2-adrs.md"
+  ],
+  "validation": {
+    "local": [
+      {
+        "name": "arr_r2_sync",
+        "status": "PASS",
+        "evidence": "repo-native validators (front-door, iteration_sync, system-map --check) pass after map/registry/CI sync; compute_change_propagation reports closure_complete=true with zero residue"
+      },
+      {
+        "name": "arr_static_gate",
+        "status": "PASS",
+        "evidence": "tools/adaptive_relational_runtime/static_gate.py reports ZERO VIOLATIONS"
+      },
+      {
+        "name": "arr_tests",
+        "status": "PASS",
+        "evidence": "111 tests pass (R1 79 + R2 32 >= 72 required)"
+      }
+    ],
+    "remote": [],
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    }
+  },
+  "rollback_strategy": "ARR R2 pilot surfaces are additive map/registry/CI synchronization plus the 6 pilot commits; rollback is a revert of commit 6, after which the two R2 docs are removed from arr path_patterns and the propagation artifacts are dropped. The runtime/test/adapters from commits 1-5 remain inert (adapter-only, no second executor) on the R2 branch, which is Draft and unmerged.",
+  "remaining_limitations": [
+    "R2 is a 48-object pilot, not the full 836-note WAIC corpus run (R3 requires separate authorization)",
+    "arr remains a candidate derived representation; it does not establish real-world truth, causality or an execution engine",
+    "detailed private inputs and per-object results live in 1111 evidence only, never in the public formal repo"
+  ],
+  "receipt_location": "evidence/adaptive-relational-runtime-r2-real-object-pilot/REMOTE_IDENTITY_RECEIPT.json"
+}

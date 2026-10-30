@@ -1,0 +1,9 @@
+{
+  "pilot_id": "arr-r2-pilot-20260725",
+  "run_id": "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+  "reference_only_representations": 48,
+  "failed_representations": 0,
+  "full_private_content_leaked": 0,
+  "residue": [],
+  "boundary_holding": "all 48 objects represented by digest/typed-ref only"
+}

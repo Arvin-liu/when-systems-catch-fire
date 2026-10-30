@@ -1,0 +1,18 @@
+........................................................................ [ 39%]
+........................................................................ [ 79%]
+..............................F.......                                   [100%]
+=================================== FAILURES ===================================
+_____________________ test_current_branch_is_repair_branch _____________________
+
+    def test_current_branch_is_repair_branch():
+        res = _git("rev-parse", "--abbrev-ref", "HEAD")
+>       assert res.stdout.strip() == REPAIR_BRANCH
+E       AssertionError: assert 'HEAD' == 'repair/adapt...ve-routing-r1'
+E         
+E         - repair/adaptive-relational-runtime-r2-positive-routing-r1
+E         + HEAD
+
+tests/adaptive_relational_runtime/test_r2_positive_routing_repair.py:564: AssertionError
+=========================== short test summary info ============================
+FAILED tests/adaptive_relational_runtime/test_r2_positive_routing_repair.py::test_current_branch_is_repair_branch
+1 failed, 181 passed in 10.24s

@@ -1,0 +1,346 @@
+{
+  "pilot_id": "arr-r2-pilot-20260725",
+  "run_id": "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+  "primary_class_counts": {
+    "UNKNOWN": 48
+  },
+  "entries": [
+    {
+      "object_id": "OBJ-01",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-02",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-03",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-04",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-05",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-06",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-07",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-08",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-09",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-10",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-11",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-12",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-13",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-14",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-15",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-16",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-17",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-18",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-19",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-20",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-21",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-22",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-23",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-24",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-25",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-26",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-27",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-28",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-29",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-30",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-31",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-32",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-33",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-34",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-35",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-36",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-37",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-38",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-39",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-40",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-41",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-42",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-43",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-44",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-45",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-46",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-47",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    },
+    {
+      "object_id": "OBJ-48",
+      "primary_class": "UNKNOWN",
+      "secondary_factors": [],
+      "note": "no defect observed on pilot path",
+      "outcome_status": "SUCCESS"
+    }
+  ],
+  "every_failure_has_exactly_one_primary": true
+}

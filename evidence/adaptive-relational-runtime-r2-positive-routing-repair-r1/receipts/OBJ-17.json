@@ -1,0 +1,36 @@
+{
+  "receipt_id": "r2rcpt_8027fcc0d2b9c54ecdba936759bcc046",
+  "pilot_id": "arr-r2-pilot-20260725",
+  "object_id": "OBJ-17",
+  "object_class": "temporal_event_sequence",
+  "deterministic_identity": "28f624787b635d43fe71ccb15568879d9f66efb04783f9a450dc2ba1bf998921",
+  "adapter_success": true,
+  "runtime_success": true,
+  "projection_executed": true,
+  "expected_route": {
+    "target": "ARN",
+    "reject_code": null
+  },
+  "actual_route": {
+    "target": "ARN",
+    "reject_code": null
+  },
+  "expectation_matched": true,
+  "outcome_status": "SUCCESS",
+  "route_or_rejection": {
+    "target": "ARN",
+    "reject_code": null
+  },
+  "failure_attribution": {
+    "primary_class": "UNKNOWN",
+    "secondary_factors": [],
+    "note": "no defect observed on pilot path"
+  },
+  "input_immutable": true,
+  "replay_count": 3,
+  "real_world_actions": 0,
+  "privacy_boundary_ok": true,
+  "evolution_candidate": false,
+  "growth_gate": "SIGNAL_ONLY",
+  "replay_stable": true
+}

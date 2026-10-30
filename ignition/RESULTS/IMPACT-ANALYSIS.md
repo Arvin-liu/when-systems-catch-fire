@@ -27,6 +27,8 @@
 |`docs/README.md`|1|0|否|
 |`docs/USAGE.md`|23|0|否|
 |`docs/VERSIONING.md`|17|0|否|
+|`docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_ADRS.md`|0|0|是|
+|`docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_CONTRACT.md`|0|0|是|
 |`docs/agent-trigger-phrases-20260708.md`|11|0|否|
 |`docs/agent/121Q35-repair-r1-architecture.md`|3|0|否|
 |`docs/agent/q35-legacy-lab-salvage-matrix.json`|3|0|否|
@@ -48,6 +50,8 @@
 |`docs/architecture/adaptive-relational-runtime-adrs.md`|16|0|否|
 |`docs/architecture/adaptive-relational-runtime-interop.md`|35|0|否|
 |`docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md`|16|0|否|
+|`docs/architecture/adaptive-relational-runtime-r2-adrs.md`|18|0|否|
+|`docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`|29|0|否|
 |`docs/architecture/adaptive-relational-runtime.md`|36|0|否|
 |`docs/architecture/agent-platform-r2.md`|26|0|否|
 |`docs/architecture/agent-runtime-r0.md`|3|0|否|
@@ -611,6 +615,7 @@
 |`reports/operations/121Q39-REPAIR-R1-completion-seal.json`|1|0|否|
 |`reports/operations/121Q39-completion-seal.json`|1|0|否|
 |`reports/operations/ARR-R1-SCAFFOLD-completion-seal.json`|1|0|否|
+|`reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json`|1|0|否|
 |`reports/operations/D2-I1-completion-seal.json`|1|0|否|
 |`reports/operations/D2-REPAIR-R2-completion-seal.json`|1|0|否|
 |`reports/operations/D2-REPAIR-R2-freeze.md`|2|0|否|

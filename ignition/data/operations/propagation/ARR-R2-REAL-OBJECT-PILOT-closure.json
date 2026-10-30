@@ -1,0 +1,745 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "accepted_work",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_pilot_q34",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai_guide",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "arn",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "arr",
+      "reason": "R2 real-object pilot adds R2 contract/ADR docs (arr) and registry-driven runtime, adapters, deterministic pilot runner and tests (arr_runtime)."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "arr_runtime",
+      "reason": "R2 real-object pilot adds R2 contract/ADR docs (arr) and registry-driven runtime, adapters, deterministic pilot runner and tests (arr_runtime)."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "candidate_return",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "case_source",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "coaching_commitment_subcapability_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "coaching_commitment_subcapability_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "coaching_commitment_subcapability_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_history_remediation",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_material_classification",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_non_republication_principle",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_publication_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_source_rights",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_tests",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "counterfactual_unrealized_path_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "counterfactual_unrealized_path_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "counterfactual_unrealized_path_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "current_state",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "decision_integrity_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "decision_integrity_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "decision_integrity_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_claim_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_pilot_q33",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "epistemic_state_control_plane_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "epistemic_state_control_plane_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "epistemic_state_control_plane_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external_input",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "feedback_routes",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation_data",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "function_os",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "graded_intervention_escalation_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "graded_intervention_escalation_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "graded_intervention_escalation_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ignition_increment",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l0",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l1",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l2",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l3",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l4",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l5",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l6",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "latent_system_identifiability_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "latent_system_identifiability_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "latent_system_identifiability_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "licensing",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "mcf",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "multi_history_world_projection_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "multi_history_world_projection_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "multi_history_world_projection_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_l7",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_totality_proof",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_truth_upgrade",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_pilot_q34",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "open_scientific_context_protocol_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "open_scientific_context_protocol_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "open_scientific_context_protocol_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "point_fire_analysis",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_topology",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "provenance_capture",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "psd",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "public_response",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q12",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q13",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q14",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase_registry",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "source_pool",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "summary",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sustainability",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "symbolic_power_perspective_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "symbolic_power_perspective_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "symbolic_power_perspective_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_projection",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "usage",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "world_feedback_anomaly_contract",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "world_feedback_anomaly_gate_validator",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "world_feedback_anomaly_pilot",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "zhiyuan_method",
+      "reason": "R2 real-object pilot does not alter this component's semantics."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "R2 real-object pilot does not alter this synchronization surface."
+    }
+  ],
+  "base_identity": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "1c162625dbf65170e17bc6ebe3f4929a0426f4ad593916479d001decfccb74ca",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 1,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "method.result_template",
+    "method.review_template",
+    "method.task_template",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "arr",
+    "arr_runtime"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "method.result_template",
+    "method.review_template",
+    "method.task_template",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "arr",
+    "arr_runtime"
+  ],
+  "seed_components": [
+    "arr",
+    "arr_runtime"
+  ],
+  "seed_paths": [
+    "data/architecture/adaptive-relational-runtime/registries/adapter-capabilities.json",
+    "data/architecture/adaptive-relational-runtime/registries/projection-routes.json",
+    "docs/architecture/adaptive-relational-runtime-r2-adrs.md",
+    "docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
+    "schemas/architecture/adaptive-relational-runtime/real-object-receipt.schema.json",
+    "schemas/architecture/adaptive-relational-runtime/real-object-selection-manifest.schema.json",
+    "tests/adaptive_relational_runtime/test_r2_pilot.py",
+    "tools/adaptive_relational_runtime/adapters/__init__.py",
+    "tools/adaptive_relational_runtime/adapters/git_pr_ci_adapter.py",
+    "tools/adaptive_relational_runtime/adapters/mechanism_state_adapter.py",
+    "tools/adaptive_relational_runtime/adapters/production_receipt_adapter_r2.py",
+    "tools/adaptive_relational_runtime/adapters/structured_data_adapter.py",
+    "tools/adaptive_relational_runtime/adapters/temporal_sequence_adapter.py",
+    "tools/adaptive_relational_runtime/adapters/text_ref_adapter.py",
+    "tools/adaptive_relational_runtime/aggregation.py",
+    "tools/adaptive_relational_runtime/failure_attribution.py",
+    "tools/adaptive_relational_runtime/manifest_validator.py",
+    "tools/adaptive_relational_runtime/pilot_runner.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [],
+    "changed_edges": [],
+    "changed_nodes": [],
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "R2 adds no new capability/identity/lifecycle/target/relation; the existing ARR/ARN map nodes are unchanged and the R2 docs/adapters are represented by the existing arr/arr_runtime nodes.",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "ARR-R2-REAL-OBJECT-PILOT",
+  "typed_paths": []
+}

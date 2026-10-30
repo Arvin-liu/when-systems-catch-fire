@@ -1,0 +1,297 @@
+{
+  "pilot_id": "arr-r2-pilot-20260725",
+  "run_id": "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+  "replay_count_per_object": 3,
+  "all_inputs_immutable": true,
+  "all_replays_stable": true,
+  "per_object": [
+    {
+      "object_id": "OBJ-01",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-02",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-03",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-04",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-05",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-06",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-07",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-08",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-09",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-10",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-11",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-12",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-13",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-14",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-15",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-16",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-17",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-18",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-19",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-20",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-21",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-22",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-23",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-24",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-25",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-26",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-27",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-28",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-29",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-30",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-31",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-32",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-33",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-34",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-35",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-36",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-37",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-38",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-39",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-40",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-41",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-42",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-43",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-44",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-45",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-46",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-47",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    },
+    {
+      "object_id": "OBJ-48",
+      "replay_count": 3,
+      "input_immutable": true,
+      "replay_stable": true
+    }
+  ]
+}

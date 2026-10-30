@@ -86,13 +86,25 @@
     {
       "authority_source": "reports/operations/121Q32-completion-seal.json",
       "component_ids": [
+        "arr",
         "historical_reports",
         "iteration_manifest_contract"
       ],
       "path_patterns": [
         "reports/operations/"
       ],
-      "reason": "historical_reports and iteration_manifest_contract share reports/operations/ for historical ops and 121Q32 reports."
+      "reason": "ARR adds its pilot completion seal beneath the operations reports directory, where historical_reports and iteration_manifest_contract already own 121Q32 evidence; the directory-level overlap must list every actual matching component."
+    },
+    {
+      "authority_source": "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
+      "component_ids": [
+        "arr",
+        "historical_reports"
+      ],
+      "path_patterns": [
+        "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json"
+      ],
+      "reason": "ARR owns this exact R2 completion seal as component-specific evidence; historical_reports retains generic reports/operations/ archival ownership. The narrow overlap lets both focused validations account for the file without transferring ownership of other operations reports."
     },
     {
       "authority_source": "HUMAN-READING.md",
@@ -3247,10 +3259,16 @@
         "docs/architecture/adaptive-relational-runtime-adrs.md",
         "docs/architecture/adaptive-relational-runtime-interop.md",
         "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
+        "docs/architecture/adaptive-relational-runtime-r2-adrs.md",
+        "docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
         "docs/architecture/object-relation-mechanism-model.md",
         "docs/architecture/self-growth-control-plane.md",
         "schemas/architecture/adaptive-relational-runtime/",
-        "data/architecture/adaptive-relational-runtime/"
+        "data/architecture/adaptive-relational-runtime/",
+        "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
+        "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
+        "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/"
       ],
       "authority": "declarative",
       "layer_or_overlay": "overlay",
@@ -3287,5 +3305,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.12"
+  "registry_version": "2.9.17"
 }

@@ -1,0 +1,12 @@
+{
+  "force_pushes": 0,
+  "history_rewrites": 0,
+  "predecessor_pr_changes": 0,
+  "main_changes": 0,
+  "formal_merges": 0,
+  "formal_assets_promoted": 0,
+  "auto_evolve_started": 0,
+  "external_acceptance_claimed": 0,
+  "waic_full_corpus_runs": 0,
+  "proof": "All writes are ordinary commits on the new child branch repair/adaptive-relational-runtime-r2-positive-routing-r1 created from exact frozen R2 head bfe90c65; no amend/rebase/squash/reset/filter/history rewrite; no force push; predecessor PRs/Main/tags untouched."
+}

@@ -1,0 +1,12 @@
+{
+  "pilot_id": "arr-r2-pilot-20260725",
+  "run_id": "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+  "signal": "pilot_coverage_complete",
+  "coverage_complete": true,
+  "object_count": 48,
+  "primary_class_counts": {
+    "UNKNOWN": 48
+  },
+  "recommendation": "NO_EVOLVE: pilot is a controlled read-only real-object run; no architecture growth is warranted by a single-object outcome.",
+  "evolution_candidate": false
+}

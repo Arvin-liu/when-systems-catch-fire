@@ -255,6 +255,12 @@ class IterationSyncTests(unittest.TestCase):
         self.assertTrue(_path_exists_current_or_alias(retired))
         self.assertFalse(_path_exists_current_or_alias("docs/human/nonfunction-assets/entries/nfc-0000000000000000.md"))
 
+    def test_legacy_pages_map_path_resolves_to_current_docs_projection(self):
+        current = ROOT / "docs/generated/ignition-system-map.svg"
+        self.assertTrue(current.is_file())
+        self.assertTrue(_path_exists_current_or_alias("pages/generated/ignition-system-map.svg"))
+        self.assertFalse(_path_exists_current_or_alias("pages/generated/missing-system-map.svg"))
+
     def test_completion_seal_mismatch_is_rejected(self):
         seal = valid_seal()
         seal["phase_b"]["draft_pr"] = 57

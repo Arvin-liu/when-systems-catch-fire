@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 826 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 831 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -186,6 +186,22 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_ADRS.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BAA7B71A2D6ACF7A`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_CONTRACT.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2688E179FC9CB824`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/agent-trigger-phrases-20260708.md`
 
 - 状态：`ADDED`
@@ -351,6 +367,22 @@
 - 状态：`ADDED`
 - Delta：`CD-DD37A2DBBF9FB489`
 - 关联断言：['NFC-1462153d3b77cd7c', 'NFC-338459d543549328', 'NFC-3aa0c00dcee00717', 'NFC-45b2e9d762bb1ec7', 'NFC-4afe3ad9efc825de', 'NFC-4b987088eb8aefa5', 'NFC-67ff53aa9049917d', 'NFC-6d76582546efb2ca', 'NFC-6ff6f8442af2b625', 'NFC-76e8a59a10593994', 'NFC-8ac87f2b00a6a4ee', 'NFC-98cec16d856c44a9', 'NFC-9c6c418a2dc982ad', 'NFC-cb1c6b788b58c776', 'NFC-d55888ee8d3fc2f2', 'NFC-f221717797f912ed']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/adaptive-relational-runtime-r2-adrs.md`
+
+- 状态：`ADDED`
+- Delta：`CD-60754E6F4AA10A57`
+- 关联断言：['NFC-0c33249d3fb53600', 'NFC-1125ca4884900505', 'NFC-3929d73a0790639c', 'NFC-590e23aa3489d5d2', 'NFC-5e60fe419ebaf664', 'NFC-66bf11751ce1ed02', 'NFC-67011a5c6f55bad4', 'NFC-7242e865e9581269', 'NFC-83535344d9df3cf2', 'NFC-a29d294aa06ea0d8', 'NFC-a2b9361349f9c2f9', 'NFC-a813a4796f796978', 'NFC-ba09f79299f5696b', 'NFC-c0271f1d8a5426a0', 'NFC-d00db1dfe3fab913', 'NFC-d8f6b28dcc2f9be3', 'NFC-e8b6cab513c766b0', 'NFC-e90bd6d09f25e5ea']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md`
+
+- 状态：`ADDED`
+- Delta：`CD-DE58F9ADF534AC72`
+- 关联断言：['NFC-104943782c7ca922', 'NFC-1261d61ebd4c6436', 'NFC-1d9332522aa6733d', 'NFC-3ae84fb33836d950', 'NFC-3d986822a1a5abf0', 'NFC-40ea0f4a8dfba68c', 'NFC-4f2f86ce661cd0ba', 'NFC-5a04c47af0954bbc', 'NFC-5d2fad6c3f52872a', 'NFC-5d91ebac0cc7478b', 'NFC-5e9c15c55f504510', 'NFC-728b5c33b58ffb09', 'NFC-744debd22d45b5dd', 'NFC-74791b50c9f562d8', 'NFC-787069cd71967a6b', 'NFC-94804927a389dd2c', 'NFC-9a76804e15fc3043', 'NFC-9dc2da06f859a6c1', 'NFC-aa93bcd4571fa277', 'NFC-b7cc6d7fb89f3490']（仅显示前 20 项）
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -4855,6 +4887,14 @@
 - 状态：`ADDED`
 - Delta：`CD-F08F1751E6F8A87A`
 - 关联断言：['NFC-2e85272a1120dff2']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json`
+
+- 状态：`ADDED`
+- Delta：`CD-A75DF0C4B738E2BC`
+- 关联断言：['NFC-501b29c97f87176b']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

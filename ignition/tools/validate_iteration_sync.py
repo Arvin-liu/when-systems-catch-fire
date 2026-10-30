@@ -62,6 +62,9 @@ CURRENT_PATH_ALIASES = {
     # resolvable through the human bulk explanation, which links to that
     # registry and describes the machine-only remainder.
     "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md": "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
+    # Older ARR iteration manifests name the Pages location; the current
+    # complete map SVG is published under docs/generated/.
+    "pages/generated/ignition-system-map.svg": "ignition/docs/generated/ignition-system-map.svg",
 }
 TRIGGERING_CLASSIFICATIONS = {
     "CAPABILITY_ADDITION",

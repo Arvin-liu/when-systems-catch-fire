@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.dev/schemas/adaptive-relational-runtime/real-object-receipt.schema.json",
+  "title": "Real Object Receipt",
+  "description": "Per-object execution receipt for the R2 real-object pilot. One receipt per selected object.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "receipt_id", "pilot_id", "run_id", "object_id", "object_class",
+    "deterministic_identity", "route_or_rejection", "failure_attribution",
+    "input_immutable", "replay_count", "real_world_actions", "privacy_boundary_ok"
+  ],
+  "properties": {
+    "receipt_id": {"type": "string"},
+    "pilot_id": {"type": "string", "pattern": "^arr-r2-pilot-[0-9]{8}$"},
+    "run_id": {"type": "string", "description": "Deterministic run id (pilot_id + object_count + manifest digest)."},
+    "object_id": {"type": "string", "pattern": "^OBJ-[0-9]{2}$"},
+    "object_class": {"type": "string"},
+    "deterministic_identity": {
+      "type": "string",
+      "description": "sha256 of canonical(object_id + adapter_output); stable across replays and reorderings."
+    },
+    "route_or_rejection": {
+      "type": "object",
+      "required": ["target"],
+      "properties": {
+        "target": {"type": "string", "enum": ["ARN", "MCF_REVIEW", "PSD_WITH_BOUNDARY", "REJECT", "QUARANTINE_UNKNOWN"]},
+        "reject_code": {"type": ["string", "null"]}
+      }
+    },
+    "failure_attribution": {
+      "type": "object",
+      "required": ["primary_class", "secondary_factors"],
+      "properties": {
+        "primary_class": {
+          "type": "string",
+          "enum": [
+            "SOURCE_FAILURE", "EXTRACTION_FAILURE", "REPRESENTATION_FAILURE",
+            "ROUTING_FAILURE", "MECHANISM_FAILURE", "RUNTIME_FAILURE",
+            "ARCHITECTURE_FAILURE", "GOVERNANCE_REFUSAL", "UNKNOWN"
+          ]
+        },
+        "secondary_factors": {"type": "array", "items": {"type": "string"}},
+        "note": {"type": "string"}
+      }
+    },
+    "input_immutable": {"type": "boolean", "description": "Caller input byte/structure-identical before and after run."},
+    "replay_count": {"type": "integer", "minimum": 1, "description": "Number of deterministic replays performed (>=3 for immutability proof)."},
+    "real_world_actions": {"type": "integer", "const": 0, "description": "Must remain 0; adapters are read-only."},
+    "privacy_boundary_ok": {"type": "boolean", "description": "No excluded_content leaked into the public artifact."},
+    "evolution_candidate": {"type": "boolean", "const": false, "description": "A single object failure never yields a promotion/evolution candidate."},
+    "growth_gate": {"type": "string", "enum": ["SIGNAL_ONLY", "NO_EVOLVE", "EVOLVE_CANDIDATE"]}
+  }
+}

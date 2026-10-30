@@ -1,0 +1,10 @@
+{
+  "pilot_id": "arr-r2-pilot-20260725",
+  "run_id": "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+  "justifications": [
+    "Single-object failures are attributed to their own primary class; none produce an EVOLVE candidate (ADR-R2-03).",
+    "The pilot is a controlled read-only run; it is non-goal to elevate formal assets or auto-evolution (instruction \u00a714).",
+    "Growth-signal gates G1-G6 + G5g require recurrence, scope, measured loss, workaround assessment, minimal-repair hypothesis, governance hard-refusal, and human authorization -- none are satisfied by the pilot scope."
+  ],
+  "evolution_candidate": false
+}

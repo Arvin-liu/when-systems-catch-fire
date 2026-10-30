@@ -39,7 +39,31 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = "68067b33ba0d5c102b67b6432f5d68b48ac68b25"
+PR_BASE = os.environ.get("PR_BASE_SHA", "a70abd87673296abc18421b2032266a3cbaec577")
+EXPECTED_HEAD_BASES = {
+    "repair-r3/scientific-context-protocol-r3-semantic-evaluator": {
+        "production/ignition-run-promote-evolve-r1",
+    },
+    "production/ignition-run-promote-evolve-r1": {
+        "repair-r3/scientific-context-protocol-r3-semantic-evaluator",
+    },
+    "architecture/adaptive-relational-runtime-r1-scaffold": {
+        "production/ignition-run-promote-evolve-r1",
+    },
+    # This stacked pilot remains on the R1 scaffold branch, never directly on main.
+    "runtime/adaptive-relational-runtime-r2-real-object-pilot": {
+        "architecture/adaptive-relational-runtime-r1-scaffold",
+    },
+    # Positive-routing repair remains stacked on the R2 pilot, not Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-r1": {
+        "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    },
+    # The CI portability repair stays stacked on the positive-routing repair,
+    # preserving the existing R2 parent instead of substituting Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+    },
+}
 
 
 def new_store():
@@ -684,7 +708,10 @@ def test_s40_m5_secondary_temporal():
 # --------------------------------------------------------------------------
 def test_s41_branch_and_base_unchanged():
     branch = os.environ.get("GITHUB_HEAD_REF") or git("branch", "--show-current")
-    assert branch == "production/ignition-run-promote-evolve-r1"
+    base_branch = os.environ.get("GITHUB_BASE_REF")
+    expected_bases = EXPECTED_HEAD_BASES.get(branch)
+    assert expected_bases is not None, f"unexpected stacked head branch: {branch}"
+    assert base_branch in expected_bases, f"unexpected base {base_branch!r} for {branch}"
     assert git("merge-base", "HEAD", PR_BASE) == PR_BASE
     # not on main
     assert branch != "main"
@@ -726,6 +753,7 @@ def test_s43_diff_scope():
         "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
         "ignition/data/architecture/interactive-system-map.json",
         "ignition/data/architecture/current-facts.json",
+        "ignition/data/architecture/adaptive-relational-runtime/",
         "ignition/data/foundation/function-assets/",
         "ignition/data/foundation/nonfunction-claims/",
         "ignition/data/governance/human-results/",
@@ -735,15 +763,60 @@ def test_s43_diff_scope():
         "ignition/data/operations/component-execution-profiles.json",
         "ignition/data/operations/component-validation-map-r1.json",
         "ignition/data/operations/current-snapshot-r1.json",
-        # The route installs this test dependency for the RPE consumer suite.
+        # Exact ARR scaffold and R2 positive-routing repair assets.
+        "ignition/data/architecture/interactive-system-map-layout.json",
+        "ignition/data/architecture/system-map-geometry-quality-r1.json",
+        "ignition/data/governance/human-surface/materiality-manifest.json",
+        "ignition/data/operations/change-propagation-topology.json",
+        "ignition/data/operations/iterations/ARR-R1-SCAFFOLD.json",
+        "ignition/docs/generated/ignition-system-map.svg",
+        "ignition/docs/human/function-assets/README.md",
+        "ignition/docs/human/function-assets/bulk-explanation.md",
+        "ignition/docs/human/function-assets/entries/a1.md",
+        "ignition/docs/human/function-assets/entries/a2.md",
+        "ignition/docs/human/nonfunction-assets/README.md",
+        "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
+        "ignition/docs/human/nonfunction-assets/entries/",
+        "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
+        "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
+        # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
+        "ignition/tools/foundation/validate_repository_path_classification.py",
+        "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
         "ignition/requirements-foundation.txt",
         "ignition/data/operations/project-components.json",
         "ignition/data/publication/fire-seeds/",
         "ignition/docs/architecture/current-facts.md",
+        "ignition/docs/project-current-state.md",
         "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
         "ignition/docs/human/function-assets/",
         "ignition/docs/human/nonfunction-assets/",
         "ignition/tools/governance/gen_source_first_seen.py",
+        "ignition/tests/test_iteration_sync.py",
+        "ignition/tools/validate_iteration_sync.py",
+        "ignition/schemas/architecture/adaptive-relational-runtime/",
+        "ignition/tests/adaptive_relational_runtime/",
+        "ignition/tools/adaptive_relational_runtime/",
+        "ignition/tools/generate_interactive_system_map.py",
+        "ignition/tools/governance/build_knowledge_experience.py",
+        "ignition/tools/governance/validate_human_surface_contract.py",
+        "ignition/tools/governance/validate_human_visibility.py",
+        "ignition/tools/operations/run_component_validation_targets.py",
+        "ignition/tools/validate_system_map_geometry.py",
+        # Exact R2 pilot additions to the stacked ARR scope; unrelated paths remain rejected.
+        "ignition/ARCHITECTURE.md",
+        "ignition/STATE-CHANGELOG.md",
+        "ignition/data/operations/component-execution-profile-policies.json",
+        "ignition/data/operations/iterations/ARR-R2-REAL-OBJECT-PILOT.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-closure.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-impact-report.md",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-map-delta.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-request.json",
+        "ignition/data/operations/propagation/ARR-R2-REAL-OBJECT-PILOT-residue.json",
+        "ignition/reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
+        "ignition/docs/architecture/adaptive-relational-runtime-r2-adrs.md",
+        "ignition/docs/architecture/adaptive-relational-runtime-r2-real-object-pilot.md",
+        "ignition/docs/human/nonfunction-assets/themes/evidence-and-literature.md",
     )
     out = git("diff", "--name-only", PR_BASE)
     for path in out.splitlines():

@@ -215,6 +215,15 @@ def build_cases() -> list:
            "overclaim_upgrade_attempt",
            "reject receipt: overclaim_upgrade_attempt (B4 forbidden words)")
 
+    # ---- unauthorized_causal_delegation (B5) ----------------------------
+    reject("ATT-20b", "reject:unauthorized_causal_delegation(B5)",
+           "runtime._project(relation_type='supports', x_causal_status='established', no handoff)",
+           base_relation(relation_type="supports",
+                         claim_ceiling="SECONDARY",
+                         extensions={"x_causal_status": "established"}),
+           "unauthorized_causal_delegation",
+           "reject receipt: unauthorized_causal_delegation (B5 causal claimed without MCF handoff)")
+
     # ---- time_impossible_path (G_TEMPORAL) ------------------------------
     reject("ATT-21", "reject:time_impossible_path(G_TEMPORAL)",
            "runtime._project(relation_type='temporal', interval start>end)",
