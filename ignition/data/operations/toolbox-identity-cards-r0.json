@@ -2230,7 +2230,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
+            "blob_sha1": "6d3dbb6fa1048b416f50558f8bb57ee87206359d"
           }
         ],
         "validation_refs": [
@@ -2458,7 +2458,7 @@
         {
           "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
+          "sha1": "4457dc80970f3473fd43972ea5f69525be0191c0"
         },
         {
           "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
@@ -2695,7 +2695,7 @@
         {
           "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
+          "sha1": "4457dc80970f3473fd43972ea5f69525be0191c0"
         },
         {
           "path": "ignition/tests/test_toolbox_read_current_asset_card.py",
@@ -2866,7 +2866,7 @@
           {
             "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
             "role": "CAPABILITY_DECLARATION",
-            "blob_sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
+            "blob_sha1": "4457dc80970f3473fd43972ea5f69525be0191c0"
           },
           {
             "path": "ignition/docs/foundation/migration.md",
@@ -2881,7 +2881,7 @@
           {
             "path": "ignition/data/governance/knowledge-experience/manifest.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "ab57908bdafb92661937e7cf74b78d16f5cb8a75"
+            "blob_sha1": "20764bc22347fa917a6cc21d3222774d58475f96"
           }
         ],
         "validation_refs": [
@@ -3705,12 +3705,12 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
+            "blob_sha1": "6d3dbb6fa1048b416f50558f8bb57ee87206359d"
           },
           {
             "path": "ignition/data/operations/current-snapshot-r1.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "45697ade7eeb9cd25d10ac771824728f1c75b49c"
+            "blob_sha1": "8d2118062f97f17574f8ae98305174ae0554277c"
           }
         ],
         "validation_refs": [
@@ -4775,7 +4775,7 @@
         {
           "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "7fca42ba1c2e0f6f94c890e30b3c624b4e3e1861"
+          "sha1": "925b130bc515eb95b50c1501d34e83f978852889"
         },
         {
           "path": "ignition/KNOWLEDGE/SEARCH.md",
@@ -5687,7 +5687,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
+            "blob_sha1": "6d3dbb6fa1048b416f50558f8bb57ee87206359d"
           }
         ],
         "validation_refs": [
@@ -5819,7 +5819,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
+            "blob_sha1": "6d3dbb6fa1048b416f50558f8bb57ee87206359d"
           }
         ],
         "validation_refs": [
@@ -6062,22 +6062,22 @@
         {
           "path": "ignition/data/operations/toolbox-jsonl-selector-real-task-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "2f390d8026073515025680ac480a57200ea48889"
+          "sha1": "8d70fd842ead7b3cc446ef893066d56c033193d5"
         },
         {
           "path": "ignition/data/operations/toolbox-jsonl-selector-fallback-task-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "009881008d0c744de3e766ad7725c11cf817cf32"
+          "sha1": "dfd62ddd480c5285036cc5f37717fe20c4d31540"
         },
         {
           "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "7fca42ba1c2e0f6f94c890e30b3c624b4e3e1861"
+          "sha1": "925b130bc515eb95b50c1501d34e83f978852889"
         },
         {
           "path": "ignition/data/operations/toolbox-jsonl-selector-c1-evidence-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "ecf295094db1e89b24189506d4c9acb1f34d39fe"
+          "sha1": "9286cc5d7f242b184293dac90035a3e30f4ad4e7"
         },
         {
           "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
@@ -14527,17 +14527,17 @@
         {
           "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
+          "sha1": "4457dc80970f3473fd43972ea5f69525be0191c0"
         },
         {
           "path": "ignition/data/foundation/nonfunction-claims/evidence-lineage.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "6d34c5cbc1d4604db4e10f1a3a20bbc5c40ed814"
+          "sha1": "7bf26a3d9c07abe76facac9e306d02f53be528c2"
         },
         {
           "path": "ignition/data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "77c65ef37615ae8082e5dc8b8a6c3d87157493dd"
+          "sha1": "def2940c050b0298d94c134aafca587112729b70"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",

@@ -16,9 +16,9 @@
   },
   "candidate": {
     "output_path": "ignition/data/operations/toolbox-jsonl-selector-real-task-r0.json",
-    "output_sha256": "b2328c15f8546f9b9a3f02e7b6075bf8bc78bb8f88e70101d8f14d68f4d2b9b7",
+    "output_sha256": "efd9e8707ee15891b2d21051e8056e43149f4b683069f05fd5b1a44b28798b13",
     "status": "COMPLETE",
-    "source_sha256": "149913723ff86df95433f8343148cbfcda7f7db1b701fb0af938cd06560da094",
+    "source_sha256": "08e2d9e5bc87be80673741354f6cbc31dc97794ba74c537adc0d0d829b49559b",
     "source_bytes": 21544604,
     "lines_scanned": 26181,
     "selected_record_count": 1,
@@ -34,18 +34,18 @@
   "fallback": {
     "method": "One-off Python standard-library loop: json.loads each row, compare the exact top-level search_id value, and compute source/record SHA-256 and byte offsets.",
     "output_path": "ignition/data/operations/toolbox-jsonl-selector-fallback-task-r0.json",
-    "output_sha256": "b396615e5f6c4537ddc9dab403d30ff07b381222ae7713e6cc2ac57b3b6f2d96",
+    "output_sha256": "d565dfdb23e6cd0b73f1d32e510378c99d9c4d85ffcd64900845dc2cfbd1edfa",
     "status": "COMPLETE",
-    "source_sha256": "149913723ff86df95433f8343148cbfcda7f7db1b701fb0af938cd06560da094",
+    "source_sha256": "08e2d9e5bc87be80673741354f6cbc31dc97794ba74c537adc0d0d829b49559b",
     "source_bytes": 21544604,
     "lines_scanned": 26181,
     "selected_record_count": 1,
     "record": {
-      "byte_count": 728,
-      "end_byte_offset_exclusive": 728,
       "line_number": 1,
-      "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
       "start_byte_offset": 0,
+      "end_byte_offset_exclusive": 728,
+      "byte_count": 728,
+      "sha256": "077cf7c446b569330c93e87653a5ccd4e207194461dc8e31ca3941cec7ce0a06",
       "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
     }
   },
