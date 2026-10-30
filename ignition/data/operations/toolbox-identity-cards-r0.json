@@ -2230,7 +2230,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
+            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
           }
         ],
         "validation_refs": [
@@ -2453,17 +2453,17 @@
         {
           "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "bc47cffc5b49395558e693bc7475f157de9146a8"
+          "sha1": "2274d01793b28a90d3fc42e9228d91f93a4c9a7e"
         },
         {
           "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "95ec0fd36149795f5a2b080fa6bce04de2293729"
+          "sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
         },
         {
           "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "b04a68f6a9ba9674956483e1b9eabfe319726af7"
+          "sha1": "35f494c1250b3ea477e0b21bd4c0da8aae9926c0"
         },
         {
           "path": "ignition/data/foundation/function-assets/corrections.jsonl",
@@ -2690,12 +2690,12 @@
         {
           "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "bc47cffc5b49395558e693bc7475f157de9146a8"
+          "sha1": "2274d01793b28a90d3fc42e9228d91f93a4c9a7e"
         },
         {
           "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "95ec0fd36149795f5a2b080fa6bce04de2293729"
+          "sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
         },
         {
           "path": "ignition/tests/test_toolbox_read_current_asset_card.py",
@@ -2861,12 +2861,12 @@
           {
             "path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
             "role": "CAPABILITY_DECLARATION",
-            "blob_sha1": "bc47cffc5b49395558e693bc7475f157de9146a8"
+            "blob_sha1": "2274d01793b28a90d3fc42e9228d91f93a4c9a7e"
           },
           {
             "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
             "role": "CAPABILITY_DECLARATION",
-            "blob_sha1": "95ec0fd36149795f5a2b080fa6bce04de2293729"
+            "blob_sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
           },
           {
             "path": "ignition/docs/foundation/migration.md",
@@ -2881,7 +2881,7 @@
           {
             "path": "ignition/data/governance/knowledge-experience/manifest.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "9e44ea591f7a90a94e77d6acb32e3c842c641a6c"
+            "blob_sha1": "ab57908bdafb92661937e7cf74b78d16f5cb8a75"
           }
         ],
         "validation_refs": [
@@ -3700,17 +3700,17 @@
           {
             "path": "ignition/AI-START-HERE.md",
             "role": "METHOD_AUTHORITY",
-            "blob_sha1": "24d9f85afc744b9a99b12d3df97f091e8fad4ecf"
+            "blob_sha1": "e4a7ea13c4e49c845300e6aaaa283b922ea77644"
           },
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
+            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
           },
           {
             "path": "ignition/data/operations/current-snapshot-r1.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "2d9d74ba8dd56cc67c296235c0970ab0d2b4ec08"
+            "blob_sha1": "45697ade7eeb9cd25d10ac771824728f1c75b49c"
           }
         ],
         "validation_refs": [
@@ -4211,7 +4211,7 @@
         {
           "path": "ignition/AI-START-HERE.md",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "24d9f85afc744b9a99b12d3df97f091e8fad4ecf"
+          "sha1": "e4a7ea13c4e49c845300e6aaaa283b922ea77644"
         },
         {
           "path": "ignition/OPERATING-METHOD.md",
@@ -4430,8 +4430,8 @@
         {
           "path": "ignition/KNOWLEDGE/cards/",
           "hash_kind": "SHA256_FILE_TREE_R0",
-          "sha256": "ce86c1e13b22c09cee66c06c7e72266ce60a6e5c4f8a649430605019f719d4dd",
-          "file_count": 14
+          "sha256": "bd994c5b2c6f826b51b995c7b8d72a8b75f077ee82bcfa3112971dbd22cc72dd",
+          "file_count": 15
         },
         {
           "path": "ignition/tests/test_cluster_source_brief_tool.py",
@@ -4451,7 +4451,7 @@
         {
           "path": "ignition/data/operations/toolbox-cluster-source-brief-c1-evidence-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "542673313c82931e94801e6887b00287633b032a"
+          "sha1": "a807584f3a9b4b8eb2dbee93e1620a05870ec4f3"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
@@ -4775,12 +4775,12 @@
         {
           "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "e4cb3ab55782a1133892e9f75c1df8efd63de285"
+          "sha1": "7fca42ba1c2e0f6f94c890e30b3c624b4e3e1861"
         },
         {
           "path": "ignition/KNOWLEDGE/SEARCH.md",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "fefbf41ee7f14be628738e9b67e4fe682d1aac0e"
+          "sha1": "8d1b0ef1cbf85165ee88aaafdeac34011d012d19"
         },
         {
           "path": "ignition/tests/test_toolbox_raw_evidence_navigator.py",
@@ -5687,7 +5687,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
+            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
           }
         ],
         "validation_refs": [
@@ -5819,7 +5819,7 @@
           {
             "path": "ignition/data/architecture/current-facts.json",
             "role": "CURRENT_STATUS_AUTHORITY",
-            "blob_sha1": "f9cf4f2d0616288ac176b2bf1f892471d04f207e"
+            "blob_sha1": "a6fdd57c57132218a2df6a5cf67f23a6310ca886"
           }
         ],
         "validation_refs": [
@@ -6062,22 +6062,22 @@
         {
           "path": "ignition/data/operations/toolbox-jsonl-selector-real-task-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "d3e6f671736ebd3ee18fa36727f20cd893bf775d"
+          "sha1": "2f390d8026073515025680ac480a57200ea48889"
         },
         {
           "path": "ignition/data/operations/toolbox-jsonl-selector-fallback-task-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "e6e089e766736a23db1680b6d1510660076cf7d9"
+          "sha1": "009881008d0c744de3e766ad7725c11cf817cf32"
         },
         {
           "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "e4cb3ab55782a1133892e9f75c1df8efd63de285"
+          "sha1": "7fca42ba1c2e0f6f94c890e30b3c624b4e3e1861"
         },
         {
           "path": "ignition/data/operations/toolbox-jsonl-selector-c1-evidence-r0.json",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "99b69e21e8b409d2028cb26d91276446df89cff2"
+          "sha1": "ecf295094db1e89b24189506d4c9acb1f34d39fe"
         },
         {
           "path": "ignition/tools/toolbox_raw_evidence_navigator.py",
@@ -10435,7 +10435,7 @@
         {
           "path": "ignition/tools/toolbox_governed_improvement_transition.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "abd4f5c1392aecff7739c87b1f302bacafcace0c"
+          "sha1": "cb9efaffa03402bf5f6891c4ca92b11c05ad6801"
         },
         {
           "path": "ignition/tools/toolbox_portable_research_episode.py",
@@ -10696,12 +10696,12 @@
       ],
       "claim_ceiling": "Deterministic input structure and arithmetic over caller-declared transition data only; no source, evaluator, benchmark, measurement, rollback, improvement, generalization, authority, or successor state is authenticated.",
       "card_kind": "OPTIONAL_EXPERIMENTAL_TOOL",
-      "source_blob_sha1": "abd4f5c1392aecff7739c87b1f302bacafcace0c",
+      "source_blob_sha1": "cb9efaffa03402bf5f6891c4ca92b11c05ad6801",
       "source_refs_with_hashes": [
         {
           "path": "ignition/tools/toolbox_governed_improvement_transition.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "abd4f5c1392aecff7739c87b1f302bacafcace0c"
+          "sha1": "cb9efaffa03402bf5f6891c4ca92b11c05ad6801"
         },
         {
           "path": "ignition/schemas/operations/governed-improvement-transition-r0.schema.json",
@@ -14522,22 +14522,22 @@
         {
           "path": "ignition/data/governance/self-correction/evidence-lineage-delta.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "fcadd7292b5bd3819317f8cd4dc328b94efcdecf"
+          "sha1": "e298717dc219ac35c1e97cf67076a90e3a541fb9"
         },
         {
           "path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "95ec0fd36149795f5a2b080fa6bce04de2293729"
+          "sha1": "632e2a5c95b0a94199b48e625bbb39adafb0276c"
         },
         {
           "path": "ignition/data/foundation/nonfunction-claims/evidence-lineage.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "85c7c12a986c8f1798956c7d037de3e86132236e"
+          "sha1": "6d34c5cbc1d4604db4e10f1a3a20bbc5c40ed814"
         },
         {
           "path": "ignition/data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "fd08f584df6bb6999707380bf0b60afd2ff8ca16"
+          "sha1": "77c65ef37615ae8082e5dc8b8a6c3d87157493dd"
         }
       ],
       "candidate_catalog_path": "ignition/data/operations/toolbox-candidate-cards-r0.json",
@@ -20167,19 +20167,19 @@
         {
           "path": "ignition/research_os_v1/g1_goal_intake/preflight.py",
           "hash_kind": "GIT_BLOB_SHA1",
-          "sha1": "7fe6a99a78ccb75a94f06dcf80048946476b9ce1"
+          "sha1": "aa6f482417d55a66dba7c97487f5aa90a4747725"
         },
         {
           "path": "ignition/agent_runtime/",
           "hash_kind": "SHA256_FILE_TREE_R0",
-          "sha256": "e77a3bb6d4ed62955a211a9e528cc1d2b78d1834a4b3ac3dc54052c17078ae99",
-          "file_count": 46
+          "sha256": "c22282212d147fedaa074bb02bb296d15e482d69e6c9779c28ee0e0c6713b24c",
+          "file_count": 79
         },
         {
           "path": "ignition/agent_kernel/",
           "hash_kind": "SHA256_FILE_TREE_R0",
-          "sha256": "6deb64914fe385f050ba95598fc918fe0a5afb7ff487267e57f7e5ac5a6e580e",
-          "file_count": 5
+          "sha256": "e676e613843a760b7150ea9a7881e3741971562dc194369bba73d62d0b246ff2",
+          "file_count": 9
         },
         {
           "path": "ignition/tests/test_toolbox_g1_goal_intake_preflight.py",
@@ -24415,14 +24415,14 @@
         {
           "path": "ignition/agent_runtime/",
           "hash_kind": "SHA256_FILE_TREE_R0",
-          "sha256": "e77a3bb6d4ed62955a211a9e528cc1d2b78d1834a4b3ac3dc54052c17078ae99",
-          "file_count": 46
+          "sha256": "c22282212d147fedaa074bb02bb296d15e482d69e6c9779c28ee0e0c6713b24c",
+          "file_count": 79
         },
         {
           "path": "ignition/agent_kernel/",
           "hash_kind": "SHA256_FILE_TREE_R0",
-          "sha256": "6deb64914fe385f050ba95598fc918fe0a5afb7ff487267e57f7e5ac5a6e580e",
-          "file_count": 5
+          "sha256": "e676e613843a760b7150ea9a7881e3741971562dc194369bba73d62d0b246ff2",
+          "file_count": 9
         },
         {
           "path": "ignition/packs/",
