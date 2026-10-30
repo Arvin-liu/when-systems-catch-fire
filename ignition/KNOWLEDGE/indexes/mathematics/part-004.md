@@ -2079,6 +2079,11 @@
   - 可搜索名称：NFC-a379453029e7f83a / deletion is a method sensitivity observation, not V2 semantic capability proof
   - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/candidate-deletion-conditions.jsonl`
   - 依赖：—；被引用：—
+- [delta: `.github/README.md` component 1 now uses the Owner-approved copy from `Arvin-liu/1111@4e1e3ae8cade11f1932d10169f5](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-60a56eb279575930 / delta: `.github/README.md` component 1 now uses the Owner-approved copy from `Arvin-liu/1111@4e1e3ae8cade11f1932d10169f5
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [delta: advances canonical Current from the stale post-Task131 source state to terminal Task132 and binds the content-own](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-c6e46c3a65bacda7 / delta: advances canonical Current from the stale post-Task131 source state to terminal Task132 and binds the content-own
@@ -2497,10 +2502,5 @@
 - [epistemic_state: `COMPLETED_VALIDATED` 只表示一条本地 bounded run 的 typed validation 通过；`FAILED_VALIDATION_ROLLED_BACK` 只表示失败后](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6d6f3bf9b2028e05 / epistemic_state: `COMPLETED_VALIDATED` 只表示一条本地 bounded run 的 typed validation 通过；`FAILED_VALIDATION_ROLLED_BACK` 只表示失败后
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [epistemic_state: no claim receives an M/E, proof, evidence, scope, provenance, Owner, production, external-validity or e](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1c2244e505df44a5 / epistemic_state: no claim receives an M/E, proof, evidence, scope, provenance, Owner, production, external-validity or e
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

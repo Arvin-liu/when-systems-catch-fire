@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def direct_url\(src: dict\) -> tuple\[str, str, str\] \| None:](../../../scripts/external-research/121_fetch_one.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D3893E4EA0522493 / def direct_url\(src: dict\) -> tuple\[str, str, str\] \| None: / IMPLICIT-D3893E4EA0522493
+  - 来源：`scripts/external-research/121_fetch_one.py`
+  - 依赖：—；被引用：—
 - [def discover_executable\(name: str\) -> str \| None:](../../../agent_federation/sdk.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-84E703271E6C7C09 / def discover_executable\(name: str\) -> str \| None: / IMPLICIT-84E703271E6C7C09
@@ -2497,10 +2502,5 @@
 - [def test_update_increments_revision\(self\):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-121CFEAC5CAE9783 / def test_update_increments_revision\(self\): / IMPLICIT-121CFEAC5CAE9783
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
-  - 依赖：—；被引用：—
-- [def test_update_missing_function\(self\):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-86B63A96B42C9114 / def test_update_missing_function\(self\): / IMPLICIT-86B63A96B42C9114
   - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
   - 依赖：—；被引用：—

@@ -1829,6 +1829,11 @@
   - 可搜索名称：NFC-33f1f9f67ac4c5a0 / architecture_language: the complete architecture SVG remains the same frozen Task142/map `0.16.0` projection; SVG `href`
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [architecture_language: the copy places Ignition's methods, tools, routing, governance, and its definition itself inside](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1593ed899f2f36fb / architecture_language: the copy places Ignition's methods, tools, routing, governance, and its definition itself inside
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [architecture_navigation: the embedded architecture image remains the visual overview. The raw/transparent SVG secondary](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5caa96377697a15c / architecture_navigation: the embedded architecture image remains the visual overview. The raw/transparent SVG secondary
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fd0ba32208c11b5d / capture/recovery evidence only.
   - 来源：`reports/operations/ignition-139-step04-context-loss-fault-matrix.md`
-  - 依赖：—；被引用：—
-- [cards = load_jsonl\(f"{BASE}/121c01-max-semantic-evidence-cards.jsonl"\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4fac607bc238892b / cards = load_jsonl\(f"{BASE}/121c01-max-semantic-evidence-cards.jsonl"\)
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
   - 依赖：—；被引用：—

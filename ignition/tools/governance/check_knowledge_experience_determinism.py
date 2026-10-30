@@ -22,7 +22,6 @@ that guarantee so it cannot regress:
 from __future__ import annotations
 
 import hashlib
-import importlib.util
 import json
 import subprocess
 import sys
@@ -32,6 +31,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BKE_PATH = ROOT / "tools/governance/build_knowledge_experience.py"
 LEDGER = ROOT / "data/governance/human-results/result-ledger.jsonl"
 FIRST_SEEN_PATH = ROOT / "data/governance/knowledge-experience/source-first-seen.json"
+MANIFEST_PATH = ROOT / "data/governance/knowledge-experience/manifest.json"
 
 
 def fail(msg: str) -> int:
@@ -39,15 +39,34 @@ def fail(msg: str) -> int:
     return 1
 
 
-def load_module(name: str, path: Path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
+def hash_outputs() -> dict[str, str]:
+    """Hash the exact output set declared by the just-completed generator pass.
 
+    The generated manifest enumerates every output except itself. Checking its
+    entries against the files on disk preserves complete output coverage while
+    avoiding a separate, redundant in-process build just to discover paths.
+    """
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    declared = manifest.get("generated_outputs")
+    if not isinstance(declared, dict) or not declared:
+        raise ValueError("manifest has no generated_outputs mapping")
 
-def hash_outputs(paths: list[Path]) -> dict[str, str]:
-    return {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths if p.is_file()}
+    hashes: dict[str, str] = {}
+    for relative, expected in sorted(declared.items()):
+        relative_path = Path(relative)
+        if relative_path.is_absolute() or ".." in relative_path.parts:
+            raise ValueError(f"manifest contains unsafe output path: {relative}")
+        path = ROOT / relative_path
+        if not path.is_file():
+            raise ValueError(f"generator did not create declared output: {relative}")
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        if actual != expected:
+            raise ValueError(f"generated output does not match its manifest digest: {relative}")
+        hashes[relative_path.as_posix()] = actual
+
+    manifest_relative = MANIFEST_PATH.relative_to(ROOT).as_posix()
+    hashes[manifest_relative] = hashlib.sha256(MANIFEST_PATH.read_bytes()).hexdigest()
+    return hashes
 
 
 def main() -> int:
@@ -72,13 +91,9 @@ def main() -> int:
         return fail("build_knowledge_experience.py does not reference the governed first-seen map")
 
     # --- 3. two-pass determinism + match to committed ----------------------------
-    bke = load_module("bke_check", BKE_PATH)
-    config = json.loads(bke.CONFIG_PATH.read_text(encoding="utf-8"))
-    data = bke.build(config)
-    bke.validate_data(data, config)
-    products = bke.output_map(data, config)
-    paths = sorted(products.keys(), key=lambda p: str(p))
-
+    # Each generator invocation performs the complete build and schema
+    # validation. Use its manifest to enumerate outputs instead of doing an
+    # additional in-process build solely to obtain the same output paths.
     def run_generator() -> int:
         proc = subprocess.run([sys.executable, str(BKE_PATH)], cwd=ROOT, capture_output=True, text=True)
         if proc.returncode != 0:
@@ -88,12 +103,18 @@ def main() -> int:
 
     if run_generator() != 0:
         return fail("generator failed on first pass")
-    hashes_a = hash_outputs(paths)
+    try:
+        hashes_a = hash_outputs()
+    except (OSError, json.JSONDecodeError, TypeError, ValueError) as exc:
+        return fail(f"first-pass output inventory invalid: {exc}")
     if run_generator() != 0:
         return fail("generator failed on second pass")
-    hashes_b = hash_outputs(paths)
+    try:
+        hashes_b = hash_outputs()
+    except (OSError, json.JSONDecodeError, TypeError, ValueError) as exc:
+        return fail(f"second-pass output inventory invalid: {exc}")
     if hashes_a != hashes_b:
-        diffs = [str(p) for p in paths if hashes_a.get(str(p)) != hashes_b.get(str(p))]
+        diffs = sorted(path for path in hashes_a.keys() | hashes_b.keys() if hashes_a.get(path) != hashes_b.get(path))
         return fail("two-pass non-determinism: " + ", ".join(diffs[:20]))
 
     # confirm regenerated output matches the committed output

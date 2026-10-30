@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def __init__\(self, path: str \| Path\) -> None:](../../../agent_federation/live_observation_events.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7578DD8FD0C53706 / def __init__\(self, path: str \| Path\) -> None: / IMPLICIT-7578DD8FD0C53706 / IMPLICIT-B6DA09A990E40DFC
+  - 来源：`agent_federation/live_observation_events.py`
+  - 依赖：—；被引用：—
 - [def __init__\(self, path: str \| Path\) -> None:](../../../agent_federation/live_attempt_ledger.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B6DA09A990E40DFC / def __init__\(self, path: str \| Path\) -> None: / IMPLICIT-B6DA09A990E40DFC / IMPLICIT-7578DD8FD0C53706
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-6FD6005C1D561CFF / def deterministic_selection\(data: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-6FD6005C1D561CFF
   - 来源：`agent_federation/local_executor_census.py`
-  - 依赖：—；被引用：—
-- [def direct_url\(src: dict\) -> tuple\[str, str, str\] \| None:](../../../scripts/external-research/121_fetch_one.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D3893E4EA0522493 / def direct_url\(src: dict\) -> tuple\[str, str, str\] \| None: / IMPLICIT-D3893E4EA0522493
-  - 来源：`scripts/external-research/121_fetch_one.py`
   - 依赖：—；被引用：—
