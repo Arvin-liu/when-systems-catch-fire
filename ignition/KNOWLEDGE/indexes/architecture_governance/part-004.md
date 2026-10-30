@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def __init__\(self, kind: str, *, response: str \| None = None\) -> None:](../../../agent_federation/pilots.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-14855CDF28DE1DB3 / def __init__\(self, kind: str, *, response: str \| None = None\) -> None: / IMPLICIT-14855CDF28DE1DB3
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
+- [def __init__\(self, memory_store: Any \| None = None\) -> None:](../../../agent_federation/convergence.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1B770035AA7527EE / def __init__\(self, memory_store: Any \| None = None\) -> None: / IMPLICIT-1B770035AA7527EE
+  - 来源：`agent_federation/convergence.py`
+  - 依赖：—；被引用：—
+- [def __init__\(self, parser, checker, compiler, interpreter, packager,](../../../function-os-candidate/v0.1/function_os/n7_cross_node_composition.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-F9CC1D78490CA7EB / def __init__\(self, parser, checker, compiler, interpreter, packager, / IMPLICIT-F9CC1D78490CA7EB
+  - 来源：`function-os-candidate/v0.1/function_os/n7_cross_node_composition.py`
+  - 依赖：—；被引用：—
 - [def __init__\(self, path: str \| Path\) -> None:](../../../agent_federation/live_observation_events.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-7578DD8FD0C53706 / def __init__\(self, path: str \| Path\) -> None: / IMPLICIT-7578DD8FD0C53706 / IMPLICIT-B6DA09A990E40DFC
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C1349882A8FAB996 / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-C1349882A8FAB996 / IMPLICIT-2B46F54C3D2120FF
   - 来源：`agent_federation/adapters/codex.py`
-  - 依赖：—；被引用：—
-- [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/adapters/hermes.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D9C8B4EFDAB73C6B / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-D9C8B4EFDAB73C6B / IMPLICIT-2B46F54C3D2120FF
-  - 来源：`agent_federation/adapters/hermes.py`
-  - 依赖：—；被引用：—
-- [def describe\(self\) -> ExecutorDescriptor: ...](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B634FFF1C24BCE08 / def describe\(self\) -> ExecutorDescriptor: ... / IMPLICIT-B634FFF1C24BCE08 / IMPLICIT-2B46F54C3D2120FF
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def deterministic_selection\(data: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/local_executor_census.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-6FD6005C1D561CFF / def deterministic_selection\(data: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-6FD6005C1D561CFF
-  - 来源：`agent_federation/local_executor_census.py`
   - 依赖：—；被引用：—

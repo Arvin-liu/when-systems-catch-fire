@@ -448,6 +448,7 @@
 |`reports/external-research/121b-fulltext-batch-report.md`|5|0|否|
 |`reports/external-research/121b-handoff-to-121c.md`|9|0|否|
 |`reports/external-research/121c01-max-semantic-review-batch-01.md`|33|0|否|
+|`reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md`|8|0|否|
 |`reports/external-research/pointfire-getnote-external-verification-r1-20260813-sources.jsonl`|0|0|是|
 |`reports/external-research/pointfire-getnote-external-verification-r1-20260813.jsonl`|9|0|否|
 |`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`|16|0|否|

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-90\]\( \) \| \[结构保守性元定理\]\( \) \| 结构保守性元定理 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-48a2bf5691462e73 / \| \[C-90\]\( \) \| \[结构保守性元定理\]\( \) \| 结构保守性元定理 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-91\]\( \) \| \[倒U型统一生成定理\]\( \) \| 倒U型统一生成定理 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-74e67df663c0e0ae / \| \[C-91\]\( \) \| \[倒U型统一生成定理\]\( \) \| 倒U型统一生成定理 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[D108\]\( \) \| \[三域熵统一函数（推论级）\]\( \) \| F_{D108}\(x\) := $$S_{unified}\(d](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d6f0569040155a7f / \| \[D108\]\( \) \| \[三域熵统一函数（推论级）\]\( \) \| F_{D108}\(x\) := $$S_{unified}\(d
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-a3b03e0a74afe276 / ├── T9 自主意识函数
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：T9；被引用：—
-- [⚠️ 置信度判定不能靠关键词签名：V2 高置信 2 条经机制级比对均为「已有函数覆盖 / 不新增」，且 D597/D599 在反向语境误触发](../../../docs/getnote-collision-workflow-final-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-86ed66ca6fae8b02 / ⚠️ 置信度判定不能靠关键词签名：V2 高置信 2 条经机制级比对均为「已有函数覆盖 / 不新增」，且 D597/D599 在反向语境误触发
-  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
-  - 依赖：D597, D599；被引用：—
-- [✅ No modifications to 历史函数来源 or 历史案例来源](../../../reports/external-research/120-function-paradigm-atlas-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8c2aba1b278539cc / ✅ No modifications to 历史函数来源 or 历史案例来源
-  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
-  - 依赖：—；被引用：—

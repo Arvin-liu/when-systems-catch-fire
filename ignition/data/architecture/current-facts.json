@@ -61,7 +61,7 @@
     },
     "fire_seeds": {
       "seed_count": 64,
-      "source_census_count": 698
+      "source_census_count": 699
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
@@ -119,8 +119,8 @@
     "foundation": {
       "function_identity_cards": 6190,
       "function_quarantine_or_pending": 5023,
-      "nonfunction_claims": 19363,
-      "nonfunction_quarantine_or_pending": 5277
+      "nonfunction_claims": 19375,
+      "nonfunction_quarantine_or_pending": 5280
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -155,11 +155,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 1471,
-      "cards": 712,
-      "changes": 591,
-      "layered_readings": 633,
-      "search_records": 26186
+      "aliases": 1473,
+      "cards": 713,
+      "changes": 592,
+      "layered_readings": 634,
+      "search_records": 26199
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "6e25872b2059c8e13ed9627a7eeb98920d7034d8a76561bed92da2f31e2a3f3e"
+      "sha256": "d65d174ea525b09752bea9c72d268b436068d57f1267026637a87f0172e31826"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "25d6b6684cc9896fb3d99be0908e55fb768c17af11f1e7f3941b4590eaec451b"
+      "sha256": "3cf643edcb34e6f389aebb3ab090e68877aae4b744dbc4ad4a5f4b5ef4778e62"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "cd71ca09d4dba232fa7c4fc67065b63d82ab024a2065543269db0a5e7be0da8f"
+      "sha256": "d5e2e03e9fbec348422fab591ba11b08408b909443f7d3a452da3f953ec1c9e5"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

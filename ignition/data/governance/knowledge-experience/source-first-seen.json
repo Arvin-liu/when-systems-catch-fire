@@ -362,6 +362,7 @@
     "reports/external-research/121b-fulltext-batch-report.md": "2026-07-14",
     "reports/external-research/121b-handoff-to-121c.md": "2026-07-14",
     "reports/external-research/121c01-max-semantic-review-batch-01.md": "2026-07-14",
+    "reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md": "2026-10-31",
     "reports/external-research/pointfire-getnote-external-verification-r1-20260813.md": "2026-08-14",
     "reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md": "2026-08-14",
     "reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md": "2026-08-14",
@@ -636,7 +637,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 634,
+  "entry_count": 635,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

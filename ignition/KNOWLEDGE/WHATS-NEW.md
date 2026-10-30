@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-3f1b23502128513c"></a>
+### 2026-10-31 · Slower methane growth and emissions: bounded source review
+
+- **类型：** `RESEARCH_OR_SOURCE_REVIEW`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: PARTIAL. This is a bounded source review and reproducible calculation for one published inversion. It is not human scientific review, peer review, or scientific acceptance. No result changes EPISTEMICALLYACCEPTED=0.
+- **来源：** [2026-10-31-methane-growth-emissions-source-bound-review-r0.md](../reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md)
+- **资产卡：** [HR-3F1B23502128513C](./ASSET-CARDS.md#asset-hr-3f1b23502128513c)
+
 <a id="change-src-hr-e56dd6ae366c46d0"></a>
 ### 2026-10-27 · NOAA GML global annual SF6 growth lookup
 

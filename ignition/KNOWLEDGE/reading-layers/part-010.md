@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-afec762ef69d1b94"></a>
+## NOAA GML global annual SF6 source-surface comparison
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `OPERATIONS_EVIDENCE`
+- 1 分钟：research.comparenoaasf6sourcesurfaces compares NOAA GML's rendered annual SF6 growth page with its fixed raw table for a bounded inclusive year range. It returns both provider-reported increments and uncertainties in ppt, literal differences, missing years, retrieval metadata, and a digest for ea… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：NOAA GML global annual SF6 source-surface comparison；research.comparenoaasf6sourcesurfaces compares NOAA GML's rendered annual SF6 growth page with its fixed raw table for a bounded inclusive year range. It returns both provider-reported increments and uncertainties in ppt, literal differences, missing years, retrieval metadata, and a digest for each received response.；The fixed sources are NOAA's annual SF6 increase page and raw annual-growth table. The page reports globally averaged marine-surface values and notes that annual estimates can change as observations and quality-control updates enter the analysis. The tool records the two surfaces at retrieval time; it does not determine which is correct.；The --allow-public-network flag is required on every invocation. Without it, the program exits before any request. A route proposal must separately include the experimental candidate and gml.noaa.gov; route planning does not authorize network access or execution.；The page and raw-table URLs are fixed. Caller-supplied URLs, redirects, credentials, secrets, billing, file writes, and external actions are not used.；Input contains only schemaversion, startyear, and endyear; years range from 1998 through 2100 and the inclusive range is at most 50 years.
+- 完整阅读：[docs/operations/noaa-sf6-source-surface-comparison.md](../../docs/operations/noaa-sf6-source-surface-comparison.md)
+
 <a id="reading-hr-b00bbd6f7fea949f"></a>
 ## IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：120 — Function Paradigm Atlas Report；主题：IGNITION-20260709-120；Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713；主题：1. Executive Summary；This report documents the collection and analysis of 84 academic sources across 10 function paradigm families, the generation of function paradigm cards, internal asset inventory, and adjudication of 6 candidate architecture gaps (GAP-015 through GAP-020). All 6 candidates were adjudicated as FIELDENHANCEMENTONLY due to insufficient fulltext evidence (0 FULL…；主题：2. Source Collection
 - 完整阅读：[reports/external-research/120-function-paradigm-atlas-report.md](../../reports/external-research/120-function-paradigm-atlas-report.md)
-
-<a id="reading-hr-c893a4870d083875"></a>
-## Agent Platform R2 — 点火工程脊柱与边界
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：本页是 R2 的人类架构说明。它回答“这套工程接口怎样分工、为什么存在、怎样 找到机器证据、不能推出什么、还缺什么”；机器契约仍以 registry、schema、 manifest、测试和 receipt 为准。本页不新增 L7，不替代 Foundation、claim/evidence registry、Value Charter、Results Book 或唯一完整系统图。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Agent Platform R2 — 点火工程脊柱与边界；本页是 R2 的人类架构说明。它回答“这套工程接口怎样分工、为什么存在、怎样 找到机器证据、不能推出什么、还缺什么”；机器契约仍以 registry、schema、 manifest、测试和 receipt 为准。本页不新增 L7，不替代 Foundation、claim/evidence registry、Value Charter、Results Book 或唯一完整系统图。；点火当前主干是一个有界、可审计、可恢复的 Agent Platform 原型；知识治理是 它的第一个大型 Domain Pack，而不是整个系统本体。当前公开上限仍为 CURRENTWITHOPENOBLIGATIONS，EPISTEMICALLYACCEPTED=0。；当前身份 contract/facts 见 current-system-identity.json 和 current-facts.json：点火是 OS / orchestration-governance layer 与 driver，OpenClaw、Hermes、Codex 是外部可替换 executors，当前唯一完整系统图为 0.8.0（0.7.0 Historical）。默认策略是 integrate public boundary；本地行动层只保留 Reference / Conformance / Fallback。；Kernel 保存领域无关 identity、state、capability、approval、audit、；checkpoint、handoff、resume lineage 和 non-escalation contract；不导入 Knowledge、Research、Writing 或具体 provider。
-- 完整阅读：[docs/architecture/agent-platform-r2.md](../../docs/architecture/agent-platform-r2.md)

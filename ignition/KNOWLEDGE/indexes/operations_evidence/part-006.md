@@ -1114,6 +1114,11 @@
   - 可搜索名称：NFC-14c5b0fd46b1b6d3 / Side effects: When explicitly invoked, sends exactly one HTTPS GET to https://api.datacite.org/dois/{percent-encoded-doi
   - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—
+- [Slower methane growth and emissions: bounded source review](../../ASSET-CARDS.md#asset-hr-3f1b23502128513c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Slower methane growth and emissions: bounded source review / 2026-10-31-methane-growth-emissions-source-bound-review-r0
+  - 来源：`reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md`
+  - 依赖：—；被引用：—
 - [smoke test **通过**：不同领域材料可正常接入，查重/Ψ₀/候选输出链路完整，跨域同构可被框架识别。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6cee1acec0811671 / smoke test **通过**：不同领域材料可正常接入，查重/Ψ₀/候选输出链路完整，跨域同构可被框架识别。
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DC8ABD60E12CAD8C / {"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7 / IMPLICIT-DC8ABD60E12CAD8C / IMPLICIT-3FEE0BBFCC6A53A4
   - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
-  - 依赖：—；被引用：—
-- [{"end_word":99379,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 $28 $28×0=$0","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"sequ](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A5541CAB2FBB9DAF / {"end_word":99379,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 $28 $28×0=$0","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"sequ / IMPLICIT-A5541CAB2FBB9DAF
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
   - 依赖：—；被引用：—

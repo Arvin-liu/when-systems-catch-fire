@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Executor: QClaw \(Hy3, adaptive deep-thinking\)](../../../data/external-research/121-fulltext-resolver/121q6/121q6-reproducibility-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-663b166809deb086 / Executor: QClaw \(Hy3, adaptive deep-thinking\)
+  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q6-reproducibility-report.md`
+  - 依赖：—；被引用：—
+- [Executor: QClaw \| Model: Hy3 \(深度思考 high\)](../../../data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-0754e3321df9a272 / Executor: QClaw \| Model: Hy3 \(深度思考 high\)
+  - 来源：`data/ops/121q7/121Q7-foundation-ci-mail-storm-repair-report.md`
+  - 依赖：—；被引用：—
+- [Executor:** QClaw](../../../reports/foundation-architecture/083-max-queue-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a868d6499bfa3673 / Executor:** QClaw
+  - 来源：`reports/foundation-architecture/083-max-queue-readiness.md`
+  - 依赖：—；被引用：—
 - [Executor:** QClaw GLM-5.2 \(pool-glm-5.2\)](../../../reports/foundation-architecture/082-independent-acceptance-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-34aadae3fb5da3d7 / Executor:** QClaw GLM-5.2 \(pool-glm-5.2\)
@@ -2487,20 +2502,5 @@
 - [Limits: Cannot be selected as the Current method.; Historical execution evidence cannot override Current 1.4.0.](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-042fb48d29006c72 / Limits: Cannot be selected as the Current method.; Historical execution evidence cannot override Current 1.4.0.
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [Limits: Meaning candidates are not language-independent truth.; Human review remains required for naturalness, literary](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-722dea42f78f9e06 / Limits: Meaning candidates are not language-independent truth.; Human review remains required for naturalness, literary
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [Limits: OPEN and OWNER_DEFERRED with zero validated completions.; No automatic resume; explicit Owner reopening and a pr](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cdbd34267218fa75 / Limits: OPEN and OWNER_DEFERRED with zero validated completions.; No automatic resume; explicit Owner reopening and a pr
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [Limits: Recovers what is Current and where authority lives; it does not itself choose or execute a user-facing domain op](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-afcda470961b0617 / Limits: Recovers what is Current and where authority lives; it does not itself choose or execute a user-facing domain op
   - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—

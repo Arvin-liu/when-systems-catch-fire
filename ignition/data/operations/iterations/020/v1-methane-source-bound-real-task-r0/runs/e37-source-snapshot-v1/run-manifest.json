@@ -1,0 +1,26 @@
+{
+  "adapter_id": "e37-source-snapshot-v1",
+  "adapter_source_commit": "e37b8f2b222c9718fdd5383c3a7fb9c782e4f5db",
+  "authorization_scope": "read-only-public-observations",
+  "canonical_source_set_sha256": "44e774ac6b3a6c897693fcb27c76af819ec580c2a17ea4f978bf036ba7c3c032",
+  "capabilities": [
+    "offline_source_snapshots",
+    "capture_bytes",
+    "captured_text_anchor"
+  ],
+  "claim_review_sha256": "b53162b014383244869732d1d3c43632f9c6af4e712fe4358651278c967b1c6e",
+  "draft_sha256": "2b030751493830c8408906e4002a26f36db30efbc2c1546ea018b0dc15a48c79",
+  "episode_id": "METHANE-ANNUAL-GROWTH-SOURCE-BINDING-R1",
+  "namespace": "research/methane-growth-emissions",
+  "selected_at_utc": "2026-10-30T21:58:42Z",
+  "selection_policy": "fixed_at_run_start_no_hot_swap",
+  "slot_capabilities": [
+    "common_abstract_anchor_consumer",
+    "expected_capture_sha256_lock",
+    "canonical_source_set_sha256_lock",
+    "run_artifact_receipt"
+  ],
+  "slot_implementation_commit": "f57713e679cfaf1adaeb777bc1f14dffaa9fc8e8",
+  "source_set_id": "NOAA-WMO-GONGGA-2019-2025-R0",
+  "task_id": "V1-TOOLBOX-METHANE-20261031"
+}

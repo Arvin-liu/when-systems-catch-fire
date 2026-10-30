@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/adapters/hermes.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D9C8B4EFDAB73C6B / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-D9C8B4EFDAB73C6B / IMPLICIT-2B46F54C3D2120FF
+  - 来源：`agent_federation/adapters/hermes.py`
+  - 依赖：—；被引用：—
+- [def describe\(self\) -> ExecutorDescriptor: ...](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B634FFF1C24BCE08 / def describe\(self\) -> ExecutorDescriptor: ... / IMPLICIT-B634FFF1C24BCE08 / IMPLICIT-2B46F54C3D2120FF
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def deterministic_selection\(data: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6FD6005C1D561CFF / def deterministic_selection\(data: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-6FD6005C1D561CFF
+  - 来源：`agent_federation/local_executor_census.py`
+  - 依赖：—；被引用：—
 - [def direct_url\(src: dict\) -> tuple\[str, str, str\] \| None:](../../../scripts/external-research/121_fetch_one.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-D3893E4EA0522493 / def direct_url\(src: dict\) -> tuple\[str, str, str\] \| None: / IMPLICIT-D3893E4EA0522493
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-FE3646A333D3F25D / def test_undefined_symbol_rejected\(self\): / IMPLICIT-FE3646A333D3F25D
   - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_unknown_out_of_scope_blocked\(self\):](../../../function-os-candidate/v0.2/tests/test_legacy_asset_importer.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E796FB4959FE637C / def test_unknown_out_of_scope_blocked\(self\): / IMPLICIT-E796FB4959FE637C
-  - 来源：`function-os-candidate/v0.2/tests/test_legacy_asset_importer.py`
-  - 依赖：—；被引用：—
-- [def test_update_increment\(self\):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EA5A3CE5DDDDB985 / def test_update_increment\(self\): / IMPLICIT-EA5A3CE5DDDDB985
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_update_increments_revision\(self\):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-121CFEAC5CAE9783 / def test_update_increments_revision\(self\): / IMPLICIT-121CFEAC5CAE9783
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
   - 依赖：—；被引用：—

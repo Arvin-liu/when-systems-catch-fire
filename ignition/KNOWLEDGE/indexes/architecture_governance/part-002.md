@@ -1914,6 +1914,11 @@
   - 可搜索名称：NFC-81a43b8bb89be0e1 / artifacts, artifact_ids = _validate_artifacts\(case.get\("artifact_refs"\), "$.case.artifact_refs", issues\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—
+- [As a second, matched-calendar-date proxy, January 1–December 29 sums are 577.560 Tg over 363 days for 2023 and 594.613 T](../../../reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c4e7f5b440e0c055 / As a second, matched-calendar-date proxy, January 1–December 29 sums are 577.560 Tg over 363 days for 2023 and 594.613 T
+  - 来源：`reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md`
+  - 依赖：—；被引用：—
 - [as soon as the Evidence Program contained two pilots.](../../../evidence-program/tools/validate_evidence_program.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c1d37a81785eae7a / as soon as the Evidence Program contained two pilots.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-c78069843c71873a / capability、permission、truth、Owner 或 epistemic status。
   - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [capture/recovery evidence only.](../../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fd0ba32208c11b5d / capture/recovery evidence only.
-  - 来源：`reports/operations/ignition-139-step04-context-loss-fault-matrix.md`
   - 依赖：—；被引用：—

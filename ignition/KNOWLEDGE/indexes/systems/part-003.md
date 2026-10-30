@@ -2299,6 +2299,11 @@
   - 可搜索名称：NFC-8a5500996268118d / The names `When Systems Catch Fire`, `点火`, official project badges, logos, and release labels may be used to refer truth
   - 来源：`TRADEMARKS.md`
   - 依赖：—；被引用：—
+- [The narrow conclusion is supported: slower atmospheric methane growth alone does not prove that emissions declined, beca](../../../reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e66aaacdcb63ab8 / The narrow conclusion is supported: slower atmospheric methane growth alone does not prove that emissions declined, beca
+  - 来源：`reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md`
+  - 依赖：—；被引用：—
 - [The offline closure suite completed naturally. Fourteen standalone validators passed except the release-candidate identi](../../../reports/operations/ignition-144-step12-targeted-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0594663802146141 / The offline closure suite completed naturally. Fourteen standalone validators passed except the release-candidate identi
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0f2d16e82c9f63f0 / This audit establishes an architectural representation gap only; it does not prove any new causal relation.
   - 来源：`data/architecture/causal-gap-ledger.json`
-  - 依赖：—；被引用：—
-- [This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It d](../../../reports/architecture/121Q12-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-63fadf5f6ec67ab5 / This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It d
-  - 来源：`reports/architecture/121Q12-baseline-audit.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-545b33bce6b635d1"></a>
+## CURRENTSTATESYNCINVARIANT
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：CURRENTSTATESYNCINVARIANT makes the current architecture identity and its current-state synchronization obligations machine-checkable. It closes the failure mode in which an architecture iteration changes the canonical machine projection while a Current State, home page, AI handoff or map still d… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：CURRENTSTATESYNCINVARIANT；CURRENTSTATESYNCINVARIANT makes the current architecture identity and its current-state synchronization obligations machine-checkable. It closes the failure mode in which an architecture iteration changes the canonical machine projection while a Current State, home page, AI handoff or map still describes an older identity.；The canonical contract is ignition/data/architecture/current-system-identity.json. It is the only machine identity contract for the current architecture. Its current facts are derived from declared repository sources by JSON-pointer recipes; the contract does not become a second manually maintained count registry. Historical snapshots remain historical and m…；主题：Impact handshake；Each iteration that touches identity, current-state prose, architecture meaning, map identity or a declared handoff surface records one of:；NONE: no synchronization obligation applies, with a reason.
+- 完整阅读：[docs/governance/current-state-sync-invariant.md](../../docs/governance/current-state-sync-invariant.md)
+
 <a id="reading-hr-549e70f041f9d2da"></a>
 ## NOAA greenhouse gas annual-growth pairing
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The existing ordered path rules cover all required current planes without an authoritative allowlist expansion: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit；The existing ordered path rules cover all required current planes without an authoritative allowlist expansion:；agentkernel/, agentruntime/, and agentfederation/ are TOOLORWORKFLOW;；packs/ is REFERENCEORKNOWLEDGE;；data/operations/iterations/ is RECEIPTHISTORYOPERATIONS;；tools/ is TOOLORWORKFLOW;
 - 完整阅读：[reports/operations/ignition-134-step04-path-rules-completeness-r1.md](../../reports/operations/ignition-134-step04-path-rules-completeness-r1.md)
-
-<a id="reading-hr-672777f571efc62e"></a>
-## NOAA GML global annual methane growth lookup
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This optional tool reads NOAA Global Monitoring Laboratory's fixed public text table at https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4grgl.txt. Its task contract is narrow: select a caller-bounded inclusive year range (1984–2100, at most 50 years), returning the provider's annual atmospheric me… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：NOAA GML global annual methane growth lookup；This optional tool reads NOAA Global Monitoring Laboratory's fixed public text table at https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4grgl.txt. Its task contract is narrow: select a caller-bounded inclusive year range (1984–2100, at most 50 years), returning the provider's annual atmospheric methane mole-fraction increment and uncertainty in ppb with retri…；The table's header defines annual CH4 mole-fraction increase from Jan 1 through Dec 31. NOAA's Trends in Atmospheric Methane page explains the global marine-surface basis and says the annual increase sums methane added to and removed from the atmosphere by human and natural processes. Therefore this is a net atmospheric concentration change, not an emissions…；The URL, HTTPS hostname, and path are fixed in code. One GET is attempted per explicit CLI invocation; redirects are rejected, only text/plain is accepted, response size is capped at 128 KiB, socket timeout is 5 seconds, and body reading has a 7-second budget.；The JSON input must contain exactly integer startyear and endyear keys. No caller URL, identifier, title, credential, or other query value is sent.；The CLI requires --allow-public-network on every invocation. A route proposal additionally requires explicit candidate inclusion and the exact gml.noaa.gov host in the route profile; route output does not authorize execution.
-- 完整阅读：[docs/operations/noaa-ch4-annual-growth-lookup.md](../../docs/operations/noaa-ch4-annual-growth-lookup.md)

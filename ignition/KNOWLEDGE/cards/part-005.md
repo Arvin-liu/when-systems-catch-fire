@@ -484,6 +484,26 @@
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260907-162: information volume and logical coherence`, `information-volume-and-logical-coherence-experiment-2026-09-07`
 
+<a id="asset-hr-3f1b23502128513c"></a>
+## Slower methane growth and emissions: bounded source review
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3F1B23502128513C` · [reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md](../../reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md)
+- **为什么产生：** 此来源记录了什么：Slower methane growth and emissions: bounded source review？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Status: PARTIAL. This is a bounded source review and reproducible calculation for one published inversion. It is not human scientific review, peer review, or scientific acceptance. No result changes EPISTEMICALLYACCEPTED=0.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md`, `202`
+- **演化历史：** 2026-10-31: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Slower methane growth and emissions: bounded source review`, `2026-10-31-methane-growth-emissions-source-bound-review-r0`
+
 <a id="asset-hr-3f9d23d382da2a17"></a>
 ## IGNITION-20260818-126 — Epistemic Structural Induction R0 progress
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Core kernel adjudication`, `core-kernel-adjudication-20260713`
-
-<a id="asset-hr-48973e3aa76b6fae"></a>
-## 121Q22 Probability and System Dynamics Gap Audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-48973E3AA76B6FAE` · [reports/architecture/121Q22-probability-system-gap-audit.md](../../reports/architecture/121Q22-probability-system-gap-audit.md)
-- **为什么产生：** 此来源记录了什么：121Q22 Probability and System Dynamics Gap Audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Status: LOCALPROBABILITYANDSYSTEMCOMPONENTSWITHOUTUNIFIEDEXECUTABLEPSDSEMANTICS
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/architecture/121Q22-probability-system-gap-audit.md`, `121Q22-PROBABILITY-SYSTEM-GAP-AUDIT`
-- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q22 Probability and System Dynamics Gap Audit`, `121Q22-probability-system-gap-audit`

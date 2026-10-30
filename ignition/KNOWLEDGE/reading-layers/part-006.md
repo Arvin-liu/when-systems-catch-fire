@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-672777f571efc62e"></a>
+## NOAA GML global annual methane growth lookup
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This optional tool reads NOAA Global Monitoring Laboratory's fixed public text table at https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4grgl.txt. Its task contract is narrow: select a caller-bounded inclusive year range (1984–2100, at most 50 years), returning the provider's annual atmospheric me… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：NOAA GML global annual methane growth lookup；This optional tool reads NOAA Global Monitoring Laboratory's fixed public text table at https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4grgl.txt. Its task contract is narrow: select a caller-bounded inclusive year range (1984–2100, at most 50 years), returning the provider's annual atmospheric methane mole-fraction increment and uncertainty in ppb with retri…；The table's header defines annual CH4 mole-fraction increase from Jan 1 through Dec 31. NOAA's Trends in Atmospheric Methane page explains the global marine-surface basis and says the annual increase sums methane added to and removed from the atmosphere by human and natural processes. Therefore this is a net atmospheric concentration change, not an emissions…；The URL, HTTPS hostname, and path are fixed in code. One GET is attempted per explicit CLI invocation; redirects are rejected, only text/plain is accepted, response size is capped at 128 KiB, socket timeout is 5 seconds, and body reading has a 7-second budget.；The JSON input must contain exactly integer startyear and endyear keys. No caller URL, identifier, title, credential, or other query value is sent.；The CLI requires --allow-public-network on every invocation. A route proposal additionally requires explicit candidate inclusion and the exact gml.noaa.gov host in the route profile; route output does not authorize execution.
+- 完整阅读：[docs/operations/noaa-ch4-annual-growth-lookup.md](../../docs/operations/noaa-ch4-annual-growth-lookup.md)
+
 <a id="reading-hr-6750bcffe399a4fb"></a>
 ## 121Q2R Canonical Reconciliation Report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Human Surface 编辑契约；状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0；本契约把“所有 Human Surface 必须经过之元写作法”变成长期制度。它不是第二套写作方法，也不是事实、证明、外部证据或 Owner 授权。它只规定：机器记录如何被翻译成面向人的入口，以及这次翻译必须留下哪些边界。；凡是面向人的项目入口、结果页、成果册、文章、案例、研究报告摘要、函数资产、非函数资产、写作片段、失败说明、负结果和公共回应，均属于 Human Surface。机器 JSON/JSONL、schema、测试日志和内部收据可以保持精确字段，但只要它们被转成面向人的页面，就必须经过本契约。；它是什么、为什么出现。 用目标读者能直接理解的语言说明对象、来源类型和阅读目的。；它可以做什么。 只写当前登记允许的用途，例如继续阅读、比较、复核、提出下一步问题或运行仓库内的受限流程。
 - 完整阅读：[docs/governance/human-surface-editorial-contract.md](../../docs/governance/human-surface-editorial-contract.md)
-
-<a id="reading-hr-771c2981fcc20396"></a>
-## 121Q13 Attention, Distribution, And Compression Report
-`CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Status: READYASATTENTIONDISTRIBUTIONCONTROLCANDIDATE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q13 Attention, Distribution, And Compression Report；Status: READYASATTENTIONDISTRIBUTIONCONTROLCANDIDATE；121Q13 adds three control surfaces on top of 121Q12:；Attention and attractor control: records IterationDelta and detects no-information-gain loops.；Distribution and decision collapse control: records samples, hypothesis distributions, and action collapse without promoting them to truth.；Compression integrity gate: audits whether high-frequency terms can expand, generate questions, reduce burden, and continue inquiry.
-- 完整阅读：[reports/architecture/121Q13-attention-distribution-compression.md](../../reports/architecture/121Q13-attention-distribution-compression.md)

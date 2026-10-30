@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-40912baa99eefd4a"></a>
+## IGNITION 059 UNESCO coverage ledger
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：--- title: IGNITION 059 UNESCO coverage ledger taskid: IGNITION-20260709-059 --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION 059 UNESCO coverage ledger；This ledger is conservative and evidence-led.；total records: 250；FUNCTIONPARTIAL: 0；THEORYCOREEXTRACTED: 0；EXTERNALEVIDENCEPENDING: 0
+- 完整阅读：[outputs/research/ignition-gap-map-unesco-coverage-20260712.md](../../outputs/research/ignition-gap-map-unesco-coverage-20260712.md)
+
 <a id="reading-hr-40a77c9aaf81e52d"></a>
 ## Task160｜Basis Escape V2
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and mani… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism；The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and manifest both contain 2,980 paths.；Two consecutive generations were byte-identical. The final check reports:；category drift: 0;；anti-backflow violations: 0.；The adversarial fixture check staged one temporary tracked path without regenerating and observed the required failure. The fixture was then removed and was not included in the formal commit. The authoritative allowlist remains unchanged.
 - 完整阅读：[reports/operations/ignition-134-step05-current-path-manifest-r1.md](../../reports/operations/ignition-134-step05-current-path-manifest-r1.md)
-
-<a id="reading-hr-545b33bce6b635d1"></a>
-## CURRENTSTATESYNCINVARIANT
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：CURRENTSTATESYNCINVARIANT makes the current architecture identity and its current-state synchronization obligations machine-checkable. It closes the failure mode in which an architecture iteration changes the canonical machine projection while a Current State, home page, AI handoff or map still d… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：CURRENTSTATESYNCINVARIANT；CURRENTSTATESYNCINVARIANT makes the current architecture identity and its current-state synchronization obligations machine-checkable. It closes the failure mode in which an architecture iteration changes the canonical machine projection while a Current State, home page, AI handoff or map still describes an older identity.；The canonical contract is ignition/data/architecture/current-system-identity.json. It is the only machine identity contract for the current architecture. Its current facts are derived from declared repository sources by JSON-pointer recipes; the contract does not become a second manually maintained count registry. Historical snapshots remain historical and m…；主题：Impact handshake；Each iteration that touches identity, current-state prose, architecture meaning, map identity or a declared handoff surface records one of:；NONE: no synchronization obligation applies, with a reason.
-- 完整阅读：[docs/governance/current-state-sync-invariant.md](../../docs/governance/current-state-sync-invariant.md)

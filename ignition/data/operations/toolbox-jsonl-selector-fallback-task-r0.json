@@ -1,5 +1,5 @@
 {
-  "lines_scanned": 26186,
+  "lines_scanned": 26199,
   "method": "DIRECT_PYTHON_STDLIB_JSONL_SCAN",
   "records": [
     {
@@ -14,11 +14,10 @@
   "schema_version": "toolbox-jsonl-selector-fallback-output-r0",
   "selected_record_count": 1,
   "selector": {
-    "equality": "JSON_SCALAR_VALUE_EXACT",
     "equals": "NFC-b39db6e6d352f4f6",
     "json_pointer": "/search_id"
   },
-  "source_bytes": 21548235,
+  "source_bytes": 21558426,
   "source_path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
-  "source_sha256": "457a32246163277fce2b70834da913cb2e521c06af2ced6d101b105f5ce94135"
+  "source_sha256": "7d8179e849119611f6c60614116bfedc64afad618c09660d868d75b03bfce6c7"
 }

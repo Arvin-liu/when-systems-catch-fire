@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 740 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 741 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -3551,6 +3551,14 @@
 - 状态：`ADDED`
 - Delta：`CD-933D6BA7D34F8014`
 - 关联断言：['NFC-04c18c91d6b9d7ce', 'NFC-147000fb2d1c7268', 'NFC-23018b52d4456c53', 'NFC-2de8997174d4434c', 'NFC-345da3f7311b86d5', 'NFC-3e111d5a3fcf6467', 'NFC-429162fe595605ea', 'NFC-43ed9ee882071037', 'NFC-4646b63c7f3e67b5', 'NFC-4790652cf608aae8', 'NFC-5998e89248b47b7c', 'NFC-5ce62cae14f01df9', 'NFC-679a1d7c2a8f8ccc', 'NFC-6f2f091519649f8d', 'NFC-74e24d46793b192b', 'NFC-760ac7168e7aa124', 'NFC-7978682e6023c4a6', 'NFC-7a5507be7c7038cf', 'NFC-85e07304e7b89f4b', 'NFC-87bfb6c70f23ead4']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/2026-10-31-methane-growth-emissions-source-bound-review-r0.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3F1B23502128513C`
+- 关联断言：['NFC-4e331a43970c8543', 'NFC-5e66aaacdcb63ab8', 'NFC-6d88fcadf61041e5', 'NFC-6ea8fc6653102fbb', 'NFC-b465c1ce6e8200db', 'NFC-bfc08083b070acbd', 'NFC-c4e7f5b440e0c055', 'NFC-cc25192392111e46']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

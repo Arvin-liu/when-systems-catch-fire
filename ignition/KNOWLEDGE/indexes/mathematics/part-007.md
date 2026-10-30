@@ -709,6 +709,11 @@
   - 可搜索名称：NFC-abd4cac951f2a101 / obligations: \[开放问题\]\(./RESULTS/OPEN-QUESTIONS.md\)、\[纠正与撤回\]\(./RESULTS/CORRECTIONS.md\)、Foundation 的证明/实证义务和 Results Book 的显式
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [obligations: complete exact-head checks, fresh exact-head Owner authorization, protected Formal merge and post-publicati](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-33c1c77396ac91a6 / obligations: complete exact-head checks, fresh exact-head Owner authorization, protected Formal merge and post-publicati
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [obligations: complete Step15 Current projections, Step16 formal result/receipt and manifest-LAST closure, then perform t](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-de9197170148b95f / obligations: complete Step15 Current projections, Step16 formal result/receipt and manifest-LAST closure, then perform t
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-6a44f7449d613e68 / Task 119 保持 `CURRENT_WITH_OPEN_OBLIGATIONS`：Task 115 Draft prior art 仅完成采纳审计，真实 provider/API、daemon、多 agent scheduler、向量
   - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [Task 127 adds a single Durability / Lifecycle component inside the existing](../../../docs/architecture/os-control-plane-r2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-43b1b77570d31bcf / Task 127 adds a single Durability / Lifecycle component inside the existing
-  - 来源：`docs/architecture/os-control-plane-r2.md`
   - 依赖：—；被引用：—

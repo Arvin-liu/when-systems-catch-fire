@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Limits: Meaning candidates are not language-independent truth.; Human review remains required for naturalness, literary](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-722dea42f78f9e06 / Limits: Meaning candidates are not language-independent truth.; Human review remains required for naturalness, literary
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Limits: OPEN and OWNER_DEFERRED with zero validated completions.; No automatic resume; explicit Owner reopening and a pr](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cdbd34267218fa75 / Limits: OPEN and OWNER_DEFERRED with zero validated completions.; No automatic resume; explicit Owner reopening and a pr
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Limits: Recovers what is Current and where authority lives; it does not itself choose or execute a user-facing domain op](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-afcda470961b0617 / Limits: Recovers what is Current and where authority lives; it does not itself choose or execute a user-facing domain op
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [Limits: REOS LIGHT adds process control, not epistemic authority.; Direct research remains preferable when obligation co](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bd34372d4134be6b / Limits: REOS LIGHT adds process control, not epistemic authority.; Direct research remains preferable when obligation co
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-cbba3380823caa93 / P1-7：P1 数据完整性审计。
   - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
   - 依赖：P1；被引用：—
-- [P1-7：已完成 P1 数据完整性审计，见 `outputs/audit/p1-machine-readable-data-audit-20260707.md`。](../../../docs/v0.2_next_tasks.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-88663417f98cf096 / P1-7：已完成 P1 数据完整性审计，见 `outputs/audit/p1-machine-readable-data-audit-20260707.md`。
-  - 来源：`docs/v0.2_next_tasks.md`
-  - 依赖：P1；被引用：—
-- [P1：建立机器可读依赖数据](../../../docs/function_dependency_map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-349ba8a4c4d6c1f7 / P1：建立机器可读依赖数据
-  - 来源：`docs/function_dependency_map.md`
-  - 依赖：P1；被引用：—
-- [P4 RETAIN_SCOPED_DEFINITION（1 条）— 严格同构验证需要](../../../reports/foundation-architecture/085-backlog-prioritization.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-59bfa986013f7fd3 / P4 RETAIN_SCOPED_DEFINITION（1 条）— 严格同构验证需要
-  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
-  - 依赖：P4；被引用：—

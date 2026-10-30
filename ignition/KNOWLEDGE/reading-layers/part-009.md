@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-9e39d8c09bf33c74"></a>
+## 121Q9 Cumulative Baseline
+`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: Step 000 baseline for cumulative release candidate. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q9 Cumulative Baseline；Status: Step 000 baseline for cumulative release candidate.；主题：Verified Inputs；PR #45 state: OPEN / DRAFT / UNMERGED / MERGEABLE.；PR #45 head: 5a9a860dc7fc0c0d4536586f5ff27f5180838e52.；PR #45 step commits: 16.
+- 完整阅读：[reports/release/121Q9-cumulative-baseline.md](../../reports/release/121Q9-cumulative-baseline.md)
+
 <a id="reading-hr-9e4e9fae33d82afe"></a>
 ## 121Q2W Final Consistency Seal Report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Tool ID: reasoning.searchstructuralanalogies Version: 0.1.0 Availability: optional experimental tool, default off Entrypoint: python3.10+ -B ignition/tools/toolboxstructuralanalogysearch.py --stdin 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Structural Analogy Search；Tool ID: reasoning.searchstructuralanalogies Version: 0.1.0 Availability: optional experimental tool, default off Entrypoint: python3.10+ -B ignition/tools/toolboxstructuralanalogysearch.py --stdin；Compare one small caller-supplied relation graph with one to eight candidate graphs in other domains. The tool enumerates injective node mappings that preserve exact controlled role classes, applies the caller's one-to-one relation-type map, and ranks candidates by exact directed relation matches and then fewer extra mapped relations.；The input contains identifiers, role classes, directed relation triples, and an explicit relation map. It contains no free-text labels, embeddings, internet lookup, ontology, or authority metadata. The algorithm therefore measures only the structure encoded in that input.；Find bounded candidate structures when a task already has a typed source graph, typed target graphs, and an explicit relation-type correspondence.；Generate a short list of transfer hypotheses for later target-domain validation.
 - 完整阅读：[docs/operations/toolbox-structural-analogy-search.md](../../docs/operations/toolbox-structural-analogy-search.md)
-
-<a id="reading-hr-afec762ef69d1b94"></a>
-## NOAA GML global annual SF6 source-surface comparison
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `OPERATIONS_EVIDENCE`
-- 1 分钟：research.comparenoaasf6sourcesurfaces compares NOAA GML's rendered annual SF6 growth page with its fixed raw table for a bounded inclusive year range. It returns both provider-reported increments and uncertainties in ppt, literal differences, missing years, retrieval metadata, and a digest for ea… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：NOAA GML global annual SF6 source-surface comparison；research.comparenoaasf6sourcesurfaces compares NOAA GML's rendered annual SF6 growth page with its fixed raw table for a bounded inclusive year range. It returns both provider-reported increments and uncertainties in ppt, literal differences, missing years, retrieval metadata, and a digest for each received response.；The fixed sources are NOAA's annual SF6 increase page and raw annual-growth table. The page reports globally averaged marine-surface values and notes that annual estimates can change as observations and quality-control updates enter the analysis. The tool records the two surfaces at retrieval time; it does not determine which is correct.；The --allow-public-network flag is required on every invocation. Without it, the program exits before any request. A route proposal must separately include the experimental candidate and gml.noaa.gov; route planning does not authorize network access or execution.；The page and raw-table URLs are fixed. Caller-supplied URLs, redirects, credentials, secrets, billing, file writes, and external actions are not used.；Input contains only schemaversion, startyear, and endyear; years range from 1998 through 2100 and the inclusive range is at most 50 years.
-- 完整阅读：[docs/operations/noaa-sf6-source-surface-comparison.md](../../docs/operations/noaa-sf6-source-surface-comparison.md)

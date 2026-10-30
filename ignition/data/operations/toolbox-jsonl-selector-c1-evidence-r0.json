@@ -1,8 +1,8 @@
 {
   "candidate": {
-    "lines_scanned": 26186,
+    "lines_scanned": 26199,
     "output_path": "ignition/data/operations/toolbox-jsonl-selector-real-task-r0.json",
-    "output_sha256": "e2378f4bd17395f8191bbbfc40cefb8266fd8ab997a414d77fccd1f703462277",
+    "output_sha256": "72b50a1fa1f8b2e08c403dfcfe69a47ea8f5ff8f86a0cc1d65e8cd89e8ac7a76",
     "record": {
       "byte_count": 728,
       "end_byte_offset_exclusive": 728,
@@ -12,20 +12,20 @@
       "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
     },
     "selected_record_count": 1,
-    "source_bytes": 21548235,
-    "source_sha256": "457a32246163277fce2b70834da913cb2e521c06af2ced6d101b105f5ce94135",
+    "source_bytes": 21558426,
+    "source_sha256": "7d8179e849119611f6c60614116bfedc64afad618c09660d868d75b03bfce6c7",
     "status": "COMPLETE"
   },
   "claim_ceiling": "One checked-out JSONL row was selected with exact JSON Pointer and JSON scalar equality, and its selected text and hashes matched a direct standard-library fallback. No semantic relevance, source authority, completeness outside this file, token savings, net benefit, or replacement value is established.",
   "disposition": {
     "comparison_status": "COMPARISON_UNKNOWN",
-    "finding": "After refreshing both observations against the current 21,548,235-byte checked-out Knowledge index, the candidate and one-off standard-library fallback returned the same exact row, line, byte range, record digest, and source digest on this one local task. This establishes functional parity only; no runtime, cost, token, retrieval-quality, reliability, or replacement advantage was measured. Keep the candidate default-off."
+    "finding": "After refreshing both observations against the current 21,558,426-byte checked-out Knowledge index, the candidate and one-off standard-library fallback returned the same exact row, line, byte range, record digest, and source digest on this one local task. This establishes functional parity only; no runtime, cost, token, retrieval-quality, reliability, or replacement advantage was measured. Keep the candidate default-off."
   },
   "fallback": {
-    "lines_scanned": 26186,
+    "lines_scanned": 26199,
     "method": "One-off Python standard-library loop: json.loads each row, compare the exact top-level search_id value, and compute source/record SHA-256 and byte offsets.",
     "output_path": "ignition/data/operations/toolbox-jsonl-selector-fallback-task-r0.json",
-    "output_sha256": "6e634ffac2cb8e6976549c91a12b6a3380f5c3ea07d8826f097109d59fb583fc",
+    "output_sha256": "6639ba11b5fce2ed1658e4ebfdf7b75c70ff1aab0c4327d017a666ac8bf6c44f",
     "record": {
       "byte_count": 728,
       "end_byte_offset_exclusive": 728,
@@ -35,8 +35,8 @@
       "text": "{\"aliases\":[\"NFC-b39db6e6d352f4f6\",\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"],\"asset_kind\":\"NONFUNCTION_CLAIM\",\"canonical_source\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"dependencies\":[],\"destination\":\"data/external-research/121-fulltext-resolver/121-validator.py\",\"history\":[\"Lineage: NO_NAMED_LINEAGE\",\"Lineage status: CURRENT_SCOPED_RECORD\"],\"reverse_dependencies\":[],\"search_id\":\"NFC-b39db6e6d352f4f6\",\"source_sha256\":\"cb5ee309a1a7bef24e5a495638e90764431a592926d691c1d4972dd1dd14f35d\",\"status\":\"QUARANTINED_AMBIGUOUS\",\"subjects\":[\"ARCHITECTURE_GOVERNANCE\"],\"title\":\"\\\"\\\"\\\"121-validator.py — Validate 121 fulltext artifacts by actually reading files.\"}"
     },
     "selected_record_count": 1,
-    "source_bytes": 21548235,
-    "source_sha256": "457a32246163277fce2b70834da913cb2e521c06af2ced6d101b105f5ce94135",
+    "source_bytes": 21558426,
+    "source_sha256": "7d8179e849119611f6c60614116bfedc64afad618c09660d868d75b03bfce6c7",
     "status": "COMPLETE"
   },
   "parity": {
