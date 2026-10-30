@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [isomorphism_topology := ∫_{Ω} structure_A ≅ structure_B × mapping_consistency dΩ](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c5c59b586a1da1c5 / isomorphism_topology := ∫_{Ω} structure_A ≅ structure_B × mapping_consistency dΩ
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [It is not a general external validation of GetNote, its source projection, or](../../../reports/external-research/pointfire-getnote-external-verification-r1-20260813.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ba8cc68dc0566917 / It is not a general external validation of GetNote, its source projection, or
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A5541CAB2FBB9DAF / {"end_word":99379,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 $28 $28×0=$0","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"sequ / IMPLICIT-A5541CAB2FBB9DAF
   - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
-  - 依赖：—；被引用：—
-- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-61A095D15775AC06 / {"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E / IMPLICIT-61A095D15775AC06 / IMPLICIT-CA9F40FC7FB03AD2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
   - 依赖：—；被引用：—

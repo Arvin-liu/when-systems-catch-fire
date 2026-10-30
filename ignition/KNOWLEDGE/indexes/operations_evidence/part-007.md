@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-61A095D15775AC06 / {"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E / IMPLICIT-61A095D15775AC06 / IMPLICIT-CA9F40FC7FB03AD2
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 依赖：—；被引用：—
 - [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CA9F40FC7FB03AD2 / {"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E / IMPLICIT-CA9F40FC7FB03AD2 / IMPLICIT-61A095D15775AC06

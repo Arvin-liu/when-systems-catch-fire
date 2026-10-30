@@ -1409,6 +1409,11 @@
   - 可搜索名称：IMPLICIT-76B35CFE0976AB03 / ## 2026-08-24 — IGNITION-20260824-138 — executor runtime scratch separation continuation / IMPLICIT-76B35CFE0976AB03
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [## 2026-10-30 — IGNITION-20261024-020 — approved homepage component 1 update \[OPERATIONAL_RECORD_ONLY\]](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BFEBC1276DE0EF92 / ## 2026-10-30 — IGNITION-20261024-020 — approved homepage component 1 update \[OPERATIONAL_RECORD_ONLY\] / IMPLICIT-BFEBC1276DE0EF92
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [## 3. Function Paradigm Cards](../../../reports/external-research/120-function-paradigm-atlas-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C2A834023B1EFA56 / ## 3. Function Paradigm Cards / IMPLICIT-C2A834023B1EFA56
@@ -2497,10 +2502,5 @@
 - [### \[#418｜核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定\]\(docs/zh/cases/items/C-0418.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-708414E7E57A7C7E / ### \[#418｜核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定\]\(docs/zh/cases/items/C-0418.md\) / IMPLICIT-708414E7E57A7C7E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#424｜天赋努力是乘法不是加法——任何一个为零则整体为零\]\(docs/zh/cases/items/C-0424.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8876545CDCF54F82 / ### \[#424｜天赋努力是乘法不是加法——任何一个为零则整体为零\]\(docs/zh/cases/items/C-0424.md\) / IMPLICIT-8876545CDCF54F82
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
