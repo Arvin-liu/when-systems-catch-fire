@@ -1228,7 +1228,8 @@
         "visible": true
       },
       "path_patterns": [
-        ".github/README.md"
+        ".github/README.md",
+        "docs/what-is-ignition/"
       ]
     },
     {

@@ -89,7 +89,7 @@ def date_hint(path: str) -> str:
 def category(path: str) -> str:
     if path.startswith("reports/external-research/"):
         return "EXTERNAL_RESEARCH"
-    if path.startswith("docs/publication/") or path.startswith("reports/publication/"):
+    if path.startswith(("docs/publication/", "reports/publication/", "docs/what-is-ignition/")):
         return "ARTICLE_OR_PUBLICATION"
     if path.startswith("docs/foundation/") or path.startswith("reports/foundation-architecture/"):
         return "FOUNDATION_AND_ADJUDICATION"
@@ -100,7 +100,15 @@ def category(path: str) -> str:
     return "OTHER_REPOSITORY_RESULT"
 
 
+def change_record(path: str) -> str:
+    if path.startswith("docs/what-is-ignition/"):
+        return "Added to the authorized historical viewpoint column; no claim status, evidence level or maturity is changed."
+    return "Recovered into the task 101 human-readable ledger without altering the source."
+
+
 def originating_iteration(path: str) -> str:
+    if path.startswith("docs/what-is-ignition/"):
+        return "REPOSITORY_HISTORY_SOURCE"
     task = re.search(r"(?:^|/)(?:IGNITION-)?((?:121Q\d+[A-Z]*|0?\d{2,3})(?:[-_][A-Z0-9]+)*)", path, re.IGNORECASE)
     if task:
         return task.group(1).upper()
@@ -121,7 +129,7 @@ def build_records(config: dict) -> list[dict]:
             "method_or_evidence_class": "SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION",
             "result_summary": summary,
             "maturity_and_evidence": "SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.",
-            "change_record": "Recovered into the task 101 human-readable ledger without altering the source.",
+            "change_record": change_record(path),
             "limitations": "This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.",
             "source": path,
             "final_disposition": "HUMAN_INDEX_ONLY",

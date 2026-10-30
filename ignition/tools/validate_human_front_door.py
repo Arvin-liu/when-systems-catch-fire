@@ -245,7 +245,7 @@ def validate_readme_structure(readme: str) -> None:
 
     current_text = section_one[h3_matches[0].end() : h3_matches[1].start()].strip()
     charter_text = section_one[h3_matches[1].end() :]
-    require(current_text == PROJECT_IDENTITY_TEXT, "README 项目现状 must match the Owner-provided identity text exactly")
+    require(current_text == PROJECT_IDENTITY_TEXT, "README 项目现状 must match the controlled identity input exactly")
     for phrase, label in (
         ("长瞻一宇同叩月", "poetic source"),
         ("生命共同体", "life-community scope"),

@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 575 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 576 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -733,6 +733,19 @@
 - **来源摘要：** 原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [GPT-6 对“点火是什么”的一次参与者回应](../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
+
+- **结果 ID：** `HR-49C323B109C04A79`
+- **日期：** 2026-10-13
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：GPT-6 对“点火是什么”的一次参与者回应？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文写到 GPT-6 查看当时的公开 main 与 252 候选 README 后，没有找到诗句。这只记录了评论写作时检查的范围，并未核对 Git 历史。后续来源重建确认：Owner 在 2026-07-26 的人机讨论中提出南宗炼丹与“没有最终形态”的项目隐喻，ChatGPT 随后拟出四句，Owner 认可并决定将其作为独立项目宣言；公开仓库 PR 142 于 2026-07-27 合并该宣言，2026-08-28 的首页简化提交移除了含诗句的旧引言。请查阅栏目中的来源重建、PR 142和移除提交。原文保留其当时视角，不把后来查到的历史混入作者原稿。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Added to the authorized historical viewpoint column; no claim status, evidence level or maturity is changed.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 

@@ -39,6 +39,19 @@ class FunctionAssetClosureTests(unittest.TestCase):
         self.assertTrue(self.builder.implicit_candidate("fixture.md", "Φ(x) = x / (1 + x)"))
         self.assertFalse(self.builder.implicit_candidate("fixture.md", "ordinary prose"))
 
+    def test_q1_url_encoding_does_not_invent_explicit_asset_ids(self):
+        readme_path = "docs/what-is-ignition/README.md"
+        reflection_path = "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md"
+        tracked = set(self.builder.tracked_text_files())
+        self.assertIn(readme_path, tracked)
+        self.assertIn(reflection_path, tracked)
+
+        line = (ROOT / readme_path).read_text(encoding="utf-8").splitlines()[16]
+        self.assertIn("%E5%BC%A0", line)
+        self.assertNotIn("A0", self.builder.explicit_asset_ids(line, readme_path))
+        self.assertIn("A0", self.builder.explicit_asset_ids(line))
+        self.assertEqual(self.builder.explicit_asset_ids("explicit asset A0"), ["A0"])
+
     def test_task99_identity_examples_cover_twelve(self):
         path = ROOT / "tests/foundation/fixtures/function_asset_identity_task99.jsonl"
         rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]

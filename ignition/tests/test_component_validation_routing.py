@@ -86,6 +86,66 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["domains"], ["O"])
         self.assertEqual(result["selected_target_ids"], ["o_human_result_consumers"])
 
+    def test_historical_what_is_ignition_sources_route_to_existing_readme_consumers(self):
+        paths = [
+            "docs/what-is-ignition/README.md",
+            "docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md",
+        ]
+        for path in paths:
+            with self.subTest(path=path):
+                result = self.plan([path])
+                self.assertEqual(result["mode"], "FULL")
+                self.assertEqual(result["domains"], ["G", "O"])
+                self.assertEqual(result["seed_components"], ["readme"])
+                self.assertIn("current_state", result["affected_component_closure"])
+                self.assertEqual(
+                    result["selected_target_ids"],
+                    [
+                        "g_current_state_consumers",
+                        "g_human_front_door_consumers",
+                        "o_human_result_consumers",
+                    ],
+                )
+                self.assertIn(
+                    {"kind": "component_requires_full_regression", "component_id": "current_state"},
+                    result["full_regression_reasons"],
+                )
+
+    def test_owner_human_readme_overlap_routes_to_governance_front_door(self):
+        result = self.plan([".github/README.md"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["domains"], ["G", "O", "R"])
+        self.assertEqual(result["seed_components"], ["owner_human", "readme"])
+        self.assertIn("current_state", result["affected_component_closure"])
+        self.assertTrue({
+            "agent_profile_r0", "agent_kernel_r0", "agent_runtime_r0",
+            "external_agent_federation", "domain_pack_contract",
+            "durability_lifecycle_r3", "steering_intent_obligation_r1",
+            "live_observation_reconciliation_plane_r1", "research_pack_reos_light",
+            "writing_pack",
+        }.issubset(set(result["affected_component_closure"])))
+        self.assertEqual(
+            result["selected_target_ids"],
+            [
+                "g_current_state_consumers",
+                "g_epistemic_boundary_consumers",
+                "g_federation_boundary_consumers",
+                "g_human_front_door_consumers",
+                "g_owner_agent_contract_consumers",
+                "g_owner_external_executor_consumers",
+                "g_owner_lifecycle_consumers",
+                "g_publication_consumers",
+                "o_human_result_consumers",
+                "r_owner_research_pack_consumers",
+            ],
+        )
+        self.assertIn(
+            {"kind": "component_requires_full_regression", "component_id": "owner_human"},
+            result["full_regression_reasons"],
+        )
+        overlap = result["path_component_evidence"][0]["authorized_overlap"]
+        self.assertEqual(overlap["component_ids"], ["owner_human", "readme"])
+
     def test_ai_usage_guide_routes_to_its_registered_o_component(self):
         result = self.plan(["ignition/docs/AI-USAGE.md"])
         self.assertEqual(result["mode"], "TARGETED")
@@ -186,6 +246,14 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertEqual(result["selected_target_ids"], ["r_research_slot_consumers"])
         self.assertEqual(result["changed_validation_test_targets"], ["r_research_slot_consumers"])
         self.assertEqual(result["domains"], ["R"])
+
+    def test_fire_seeds_consumer_test_alone_routes_to_publication_validation(self):
+        result = self.plan(["tests/test_fire_seeds.py"])
+        self.assertEqual(result["mode"], "FULL")
+        self.assertEqual(result["seed_components"], [])
+        self.assertEqual(result["selected_target_ids"], ["g_publication_consumers"])
+        self.assertEqual(result["changed_validation_test_targets"], ["g_publication_consumers"])
+        self.assertEqual(result["domains"], ["G"])
 
     def test_cochanged_governance_consumer_test_requires_full_regression(self):
         result = self.plan([

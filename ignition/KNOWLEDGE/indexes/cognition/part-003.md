@@ -1379,6 +1379,11 @@
   - 可搜索名称：NFC-56c46bf9983fe369 / 查重不充分；
   - 来源：`docs/agent-trigger-phrases-20260708.md`
   - 依赖：—；被引用：—
+- [火有法度。** 没有固定形态，不等于可以任意妄为。求知需要证据，判断需要理由，行动需要边界。这里的法度不是为了维持某套制度的永恒存在，而是为了使探索不至于沦为任性。](../../../docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0c59848f2f029fb7 / 火有法度。** 没有固定形态，不等于可以任意妄为。求知需要证据，判断需要理由，行动需要边界。这里的法度不是为了维持某套制度的永恒存在，而是为了使探索不至于沦为任性。
+  - 来源：`docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md`
+  - 依赖：—；被引用：—
 - [点火与之元写作法的同源认知投影及 L6 双向反馈](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-143c82aa34fd886b / 点火与之元写作法的同源认知投影及 L6 双向反馈

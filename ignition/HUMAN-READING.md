@@ -35,6 +35,7 @@ Reference / Conformance / Fallback。当前唯一完整系统图为 `0.8.0`，�
 |你的目的|先读|继续读|
 |---|---|---|
 |不知道名称或路径，只想探索|[知识地图](./KNOWLEDGE/MAP.md)|[最新变化](./KNOWLEDGE/WHATS-NEW.md)、[搜索](./KNOWLEDGE/SEARCH.md)|
+|比较不同时期对点火的解释、异议与回应|[何谓点火专栏](./docs/what-is-ignition/README.md)|[GPT-6 参与者回应](./docs/what-is-ignition/2026-10-13-gpt6-participant-reflection.md)、[当前结果](./RESULTS/LATEST.md)|
 |快速读懂一篇长文|[分层阅读](./KNOWLEDGE/READING-LAYERS.md)|对应完整来源、[统一资产卡](./KNOWLEDGE/ASSET-CARDS.md)|
 |判断点火是什么、当前做到哪里|[当前结果](./RESULTS/LATEST.md)|[项目现状](./docs/project-current-state.md)、[架构](./ARCHITECTURE.md)|
 |让点火处理一篇笔记、网页、PDF、代码或其它对象|[点火操作法（OPERATING-METHOD.md）](./OPERATING-METHOD.md)|[Capability Registry（ignition-operation-capability-registry-r1.json）](./data/operations/ignition-operation-capability-registry-r1.json)、[统一输出契约（ignition-run-output-contract-r1.json）](./data/operations/ignition-run-output-contract-r1.json)|

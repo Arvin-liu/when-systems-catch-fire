@@ -1,3 +1,4 @@
+import hashlib
 import importlib.util
 import json
 import unittest
@@ -35,6 +36,19 @@ class SelfCorrectionEngineTests(unittest.TestCase):
         for pair in config["machine_human_pairs"]:
             self.assertTrue((ROOT / pair["machine"]).is_file(), pair["machine"])
             self.assertTrue((ROOT / pair["human"]).is_file(), pair["human"])
+
+    def test_extra_canonical_outputs_have_no_source_or_authority_impact(self):
+        products, summary = MODULE.build()
+        expected = {
+            MODULE.MACHINE_OUTPUTS["plan"]: "065806e7e11ff3a22a7dd387ad0c9b1176976bbeb4e9504f25e669611d026c69",
+            MODULE.HUMAN_OUTPUTS["audit"]: "d50bac8e4bd00f741e3ba809a1b8f1ed57f064b509ea733aa8455ad3671ad94b",
+        }
+        self.assertEqual(len(products), 11)
+        for path, expected_sha256 in expected.items():
+            actual = hashlib.sha256(products[path].encode("utf-8")).hexdigest()
+            self.assertEqual(actual, expected_sha256, str(path.relative_to(ROOT)))
+        self.assertEqual(summary["blocking_rules"], 0)
+        self.assertEqual(summary["claim_ceiling"], "Automated repository governance only; no external truth adjudication.")
 
 
 if __name__ == "__main__":
