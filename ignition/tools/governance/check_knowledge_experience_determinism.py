@@ -126,7 +126,7 @@ def main() -> int:
 
     print(
         f"KNOWLEDGE_EXPERIENCE_DETERMINISM_OK sources={len(sources)} "
-        f"map_entries={len(entries)} outputs={len(paths)} two_pass=identical"
+        f"map_entries={len(entries)} outputs={len(hashes_b)} two_pass=identical"
     )
     return 0
 
