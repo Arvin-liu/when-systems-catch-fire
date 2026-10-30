@@ -1,5 +1,5 @@
 {
-  "lines_scanned": 26185,
+  "lines_scanned": 26186,
   "method": "DIRECT_PYTHON_STDLIB_JSONL_SCAN",
   "records": [
     {
@@ -18,7 +18,7 @@
     "equals": "NFC-b39db6e6d352f4f6",
     "json_pointer": "/search_id"
   },
-  "source_bytes": 21547492,
+  "source_bytes": 21548235,
   "source_path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
-  "source_sha256": "92ed6254ceac0e2c6a1d6de56a53f19b92d63953f836e95119aec2f4a12496ef"
+  "source_sha256": "457a32246163277fce2b70834da913cb2e521c06af2ced6d101b105f5ce94135"
 }
