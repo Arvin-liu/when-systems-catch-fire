@@ -27,6 +27,8 @@
 |`docs/README.md`|1|0|否|
 |`docs/USAGE.md`|23|0|否|
 |`docs/VERSIONING.md`|17|0|否|
+|`docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_ADRS.md`|0|0|是|
+|`docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_CONTRACT.md`|0|0|是|
 |`docs/agent-trigger-phrases-20260708.md`|11|0|否|
 |`docs/agent/121Q35-repair-r1-architecture.md`|3|0|否|
 |`docs/agent/q35-legacy-lab-salvage-matrix.json`|3|0|否|

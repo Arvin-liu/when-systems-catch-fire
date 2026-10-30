@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 829 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 831 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -183,6 +183,22 @@
 - 状态：`ADDED`
 - Delta：`CD-BD83CF9C1616763E`
 - 关联断言：['NFC-097df042864faddb', 'NFC-0a2af3a391131876', 'NFC-12ec8672657b9ca6', 'NFC-2f4a94041f3c1370', 'NFC-3df3db0092eea1e2', 'NFC-56b71eecf6d30f0f', 'NFC-6a2e2859e974ccd4', 'NFC-6b573e1f3e330846', 'NFC-866b4bcb3795a540', 'NFC-8beb09aac7088c1f', 'NFC-94e5fcd10761eaf4', 'NFC-9d7557ed4d174405', 'NFC-ac9cf1ed04e33fb2', 'NFC-bd95f1c58b340f12', 'NFC-c4dbfb7e080846fc', 'NFC-ceaa1ccfe2963791', 'NFC-de292ce3648cb60e']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_ADRS.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BAA7B71A2D6ACF7A`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/adaptive-relational-runtime-r2-positive-routing-repair/REPAIR_CONTRACT.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2688E179FC9CB824`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

@@ -1,0 +1,12 @@
+{
+  "manifest_bytes_identical_before_after": true,
+  "nested_adapter_ref_identical": true,
+  "same_instance_three_runs_identical_run_ids": true,
+  "three_run_ids": [
+    "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+    "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+    "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf"
+  ],
+  "per_object_deterministic_identity_stable": true,
+  "no_adapter_inserted_defaults": true
+}

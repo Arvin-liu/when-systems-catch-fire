@@ -39,7 +39,7 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = os.environ.get("PR_BASE_SHA", "4901ae3c18db670bcb39286b55eaba29ac5169c8")
+PR_BASE = os.environ.get("PR_BASE_SHA", "a70abd87673296abc18421b2032266a3cbaec577")
 EXPECTED_HEAD_BASES = {
     "repair-r3/scientific-context-protocol-r3-semantic-evaluator": {
         "production/ignition-run-promote-evolve-r1",
@@ -53,6 +53,15 @@ EXPECTED_HEAD_BASES = {
     # This stacked pilot remains on the R1 scaffold branch, never directly on main.
     "runtime/adaptive-relational-runtime-r2-real-object-pilot": {
         "architecture/adaptive-relational-runtime-r1-scaffold",
+    },
+    # Positive-routing repair remains stacked on the R2 pilot, not Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-r1": {
+        "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    },
+    # The CI portability repair stays stacked on the positive-routing repair,
+    # preserving the existing R2 parent instead of substituting Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-r1",
     },
 }
 
@@ -754,7 +763,26 @@ def test_s43_diff_scope():
         "ignition/data/operations/component-execution-profiles.json",
         "ignition/data/operations/component-validation-map-r1.json",
         "ignition/data/operations/current-snapshot-r1.json",
-        # The route installs this test dependency for the RPE consumer suite.
+        # Exact ARR scaffold and R2 positive-routing repair assets.
+        "ignition/data/architecture/interactive-system-map-layout.json",
+        "ignition/data/architecture/system-map-geometry-quality-r1.json",
+        "ignition/data/governance/human-surface/materiality-manifest.json",
+        "ignition/data/operations/change-propagation-topology.json",
+        "ignition/data/operations/iterations/ARR-R1-SCAFFOLD.json",
+        "ignition/docs/generated/ignition-system-map.svg",
+        "ignition/docs/human/function-assets/README.md",
+        "ignition/docs/human/function-assets/bulk-explanation.md",
+        "ignition/docs/human/function-assets/entries/a1.md",
+        "ignition/docs/human/function-assets/entries/a2.md",
+        "ignition/docs/human/nonfunction-assets/README.md",
+        "ignition/docs/human/nonfunction-assets/bulk-explanation.md",
+        "ignition/docs/human/nonfunction-assets/entries/",
+        "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
+        "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
+        # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
+        "ignition/tools/foundation/validate_repository_path_classification.py",
+        "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
         "ignition/requirements-foundation.txt",
         "ignition/data/operations/project-components.json",
         "ignition/data/publication/fire-seeds/",
