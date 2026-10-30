@@ -39,7 +39,7 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = os.environ.get("PR_BASE_SHA", "ab7ff81f2f32509411ee935b56996894c864496d")
+PR_BASE = os.environ.get("PR_BASE_SHA", "a70abd87673296abc18421b2032266a3cbaec577")
 EXPECTED_HEAD_BASES = {
     "repair-r3/scientific-context-protocol-r3-semantic-evaluator": {
         "production/ignition-run-promote-evolve-r1",
@@ -57,6 +57,11 @@ EXPECTED_HEAD_BASES = {
     # Positive-routing repair remains stacked on the R2 pilot, not Main.
     "repair/adaptive-relational-runtime-r2-positive-routing-r1": {
         "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    },
+    # The CI portability repair stays stacked on the positive-routing repair,
+    # preserving the existing R2 parent instead of substituting Main.
+    "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-r1",
     },
 }
 
@@ -774,6 +779,8 @@ def test_s43_diff_scope():
         "ignition/docs/human/nonfunction-assets/entries/",
         "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
         "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
+        # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
         "ignition/tools/foundation/validate_repository_path_classification.py",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
         "ignition/requirements-foundation.txt",
