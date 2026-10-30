@@ -117,8 +117,8 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 6189,
-      "function_quarantine_or_pending": 5022,
+      "function_identity_cards": 6190,
+      "function_quarantine_or_pending": 5023,
       "nonfunction_claims": 19363,
       "nonfunction_quarantine_or_pending": 5277
     },
@@ -237,7 +237,7 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "fa741408a8ce14d2043279c84e0cc180f9e530a48c5daed46cc0be0792036d95"
+      "sha256": "3a21a0759c1c66107ceee432a75b655c9e7718ae917369391323f0952b1654fb"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
@@ -249,7 +249,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "69c1ee00360388ae418f7340d695f2b8d3325130f54b9d07eb52aec056a3bbda"
+      "sha256": "4980e8767f597b175b394f41db2ed8cceef567388b37d73720784772930dcb29"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "456bd7b71461309d328cf165950076c55acc0c2d2c2fe5e45595bb2a8233d040"
+      "sha256": "cd71ca09d4dba232fa7c4fc67065b63d82ab024a2065543269db0a5e7be0da8f"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
