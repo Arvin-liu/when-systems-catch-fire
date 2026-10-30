@@ -4,6 +4,301 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The exact primary verdict is IGNITION-20260907-161. Formal review remains Draft only. The synthetic threshold candidate](../../../reports/governance/task-IGNITION-20260907-161.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f4cf50301c3ca43 / The exact primary verdict is IGNITION-20260907-161. Formal review remains Draft only. The synthetic threshold candidate
+  - 来源：`reports/governance/task-IGNITION-20260907-161.md`
+  - 依赖：—；被引用：—
+- [The exact rows, sequence digests, token-preservation flags, and pair calculations are in `coherence-ablation-results.jso](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c970efa25ea281f3 / The exact rows, sequence digests, token-preservation flags, and pair calculations are in `coherence-ablation-results.jso
+  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [The execution contract, canonical lineage, lifecycle, Current Snapshot, Current Facts, seven compiler-owned surfaces, re](../../../agent-results/IGNITION-20260822-133-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ccd5c256b30a3619 / The execution contract, canonical lineage, lifecycle, Current Snapshot, Current Facts, seven compiler-owned surfaces, re
+  - 来源：`agent-results/IGNITION-20260822-133-result.md`
+  - 依赖：—；被引用：—
+- [The execution contract, task-identity model, lifecycle, Current Snapshot, Current Facts and seven compiler-owned Current](../../../agent-results/IGNITION-20260822-132-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-9eff4f544879e392 / The execution contract, task-identity model, lifecycle, Current Snapshot, Current Facts and seven compiler-owned Current
+  - 来源：`agent-results/IGNITION-20260822-132-result.md`
+  - 依赖：—；被引用：—
+- [The fake child proof and adapter/dispatch tests passed: `11 tests / 0 failures /](../../../reports/operations/ignition-137-step04-live-child-reentrancy-guard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-50686b9dbb569440 / The fake child proof and adapter/dispatch tests passed: `11 tests / 0 failures /
+  - 来源：`reports/operations/ignition-137-step04-live-child-reentrancy-guard.md`
+  - 依赖：—；被引用：—
+- [The final 126 baseline already contains the R2 Event Ledger/CAS/replay spine, concurrent scheduler and queue controls, d](../../../reports/operations/ignition-127-step00-rebase-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b2b11515e0f80cd / The final 126 baseline already contains the R2 Event Ledger/CAS/replay spine, concurrent scheduler and queue controls, d
+  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
+  - 依赖：—；被引用：—
+- [The final 22-work corpus was processed in source order with ten anonymous, generic feature extractors \(`EL-X01` through](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-59920a9c7f220156 / The final 22-work corpus was processed in source order with ten anonymous, generic feature extractors \(`EL-X01` through
+  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [The final task-branch commit must be freshly cloned and replayed before formal `main` is moved. Then verify local, track](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-42ee3e5413c7df8d / The final task-branch commit must be freshly cloned and replayed before formal `main` is moved. Then verify local, track
+  - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [The formal PLoT hypothesis identifies reusable concepts with stochastic functions in a universal PPL, combining probabil](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-517c1107f0277504 / The formal PLoT hypothesis identifies reusable concepts with stochastic functions in a universal PPL, combining probabil
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The formal result and machine receipt are candidate-local closure evidence. They deliberately do not embed a final relea](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6fde6b94c7f544c8 / The formal result and machine receipt are candidate-local closure evidence. They deliberately do not embed a final relea
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
+- [The formal result and machine receipt are candidate-local closure evidence. They do not self-assert the final commit SHA](../../../agent-results/IGNITION-20260822-135-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-78f1d9495fc89ccd / The formal result and machine receipt are candidate-local closure evidence. They do not self-assert the final commit SHA
+  - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
+- [The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity ove](../../../reports/foundation-architecture/098-claim-governance-implementation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-704394da53e2a852 / The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity ove
+  - 来源：`reports/foundation-architecture/098-claim-governance-implementation.md`
+  - 依赖：—；被引用：—
+- [The fresh clone of exact candidate tip `a609c5aa7cfae52dfda144072be8c2198d9df0fc` was clean. It passed the Current regis](../../../agent-results/IGNITION-20260821-130-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d1ff93da02dc7080 / The fresh clone of exact candidate tip `a609c5aa7cfae52dfda144072be8c2198d9df0fc` was clean. It passed the Current regis
+  - 来源：`agent-results/IGNITION-20260821-130-result.md`
+  - 依赖：—；被引用：—
+- [The front-door staleness check is fail-closed: `tools/validate_human_front_door.py` enforces the current method version,](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-5406b09b345f2a77 / The front-door staleness check is fail-closed: `tools/validate_human_front_door.py` enforces the current method version,
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The frozen formal baseline is `Arvin-liu/when-systems-catch-fire` `refs/heads/main` at `b359580fe31866bc04eeb24911011e0b](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8ab17a690a205ae / The frozen formal baseline is `Arvin-liu/when-systems-catch-fire` `refs/heads/main` at `b359580fe31866bc04eeb24911011e0b
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
+- [The functions satisfy the stated opposing monotonicity and the product lacks an interior inverted-U maximum. It refutes](../../../data/foundation/validations/079-equivalence-checks.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-eebd1962b2d3e785 / The functions satisfy the stated opposing monotonicity and the product lacks an interior inverted-U maximum. It refutes
+  - 来源：`data/foundation/validations/079-equivalence-checks.jsonl`
+  - 依赖：—；被引用：—
+- [The hash-bound paper/source and peer-reviewed publication are durable research artifacts, but there is no software or me](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b895df4c12a5baf4 / The hash-bound paper/source and peer-reviewed publication are durable research artifacts, but there is no software or me
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The historical 104–106 propagation validator reports nine mismatch dimensions across the three sealed historical tasks \(](../../../reports/operations/ignition-134-step00-residual-archaeology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-27e50ea7d68814ec / The historical 104–106 propagation validator reports nine mismatch dimensions across the three sealed historical tasks \(
+  - 来源：`reports/operations/ignition-134-step00-residual-archaeology.md`
+  - 依赖：T16；被引用：—
+- [The Human front-door validator continues to reproduce the 11 pre-existing source-hash drifts \(`d127`, `d182`, `d190`, `d](../../../agent-results/IGNITION-20260821-130-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-87b7f350c0fba379 / The Human front-door validator continues to reproduce the 11 pre-existing source-hash drifts \(`d127`, `d182`, `d190`, `d
+  - 来源：`agent-results/IGNITION-20260821-130-result.md`
+  - 依赖：—；被引用：—
+- [The independent source is `ignition/data/operations/formal-task-lifecycle-r1.json`, validated by `ignition/tools/validat](../../../reports/operations/ignition-142-step01-terminality-semantics.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85e6bbfda1906eb7 / The independent source is `ignition/data/operations/formal-task-lifecycle-r1.json`, validated by `ignition/tools/validat
+  - 来源：`reports/operations/ignition-142-step01-terminality-semantics.md`
+  - 依赖：—；被引用：—
+- [The initialization and adapted weights motivate artifact lineage, and released repositories/checkpoints provide fragment](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-95da0a6623b142d5 / The initialization and adapted weights motivate artifact lineage, and released repositories/checkpoints provide fragment
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The later official repository and optional checkpoints provide limited provenance fragments, not a versioned learned-fun](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-97099409076e2c11 / The later official repository and optional checkpoints provide limited provenance fragments, not a versioned learned-fun
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The library is an implementation-oriented realization of the evidence-translation semantics rather than a new proof of t](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-fef7bba68232416f / The library is an implementation-oriented realization of the evidence-translation semantics rather than a new proof of t
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The lifecycle is conceptual and has no versioned/provenance-complete program registry.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-266d0c8c2a549aa1 / The lifecycle is conceptual and has no versioned/provenance-complete program registry.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The lifecycle may reference an open obligation, but obligation liveness cannot](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d23614f47b4cf1fc / The lifecycle may reference an open obligation, but obligation liveness cannot
+  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
+- [The maintainer is part of the life community the project claims to protect. Public value and maintainer survival are not](../../../SUSTAINABILITY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1eb5b1f7fdfffad6 / The maintainer is part of the life community the project claims to protect. Public value and maintainer survival are not
+  - 来源：`SUSTAINABILITY.md`
+  - 依赖：—；被引用：—
+- [The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, p](../../../reports/operations/ignition-142-step18-adversarial-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c99e9f1af6e35839 / The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, p
+  - 来源：`reports/operations/ignition-142-step18-adversarial-matrix.md`
+  - 依赖：—；被引用：—
+- [The Mechanism Adjudication Plane constrains what the project may say after an action, test, failure, or external respons](../../../docs/architecture/mechanism-adjudication-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-506b15d3475b0fee / The Mechanism Adjudication Plane constrains what the project may say after an action, test, failure, or external respons
+  - 来源：`docs/architecture/mechanism-adjudication-plane.md`
+  - 依赖：—；被引用：—
+- [The merge recipe is machine-operational but lacks typed callable, effect and lifecycle contracts.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-c2c562d9bb01f690 / The merge recipe is machine-operational but lacks typed callable, effect and lifecycle contracts.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The multi-stage checkpoint-to-latent-to-generated-LoRA lifecycle makes provenance necessary, but the paper provides only](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-adeb4ef16a5192ad / The multi-stage checkpoint-to-latent-to-generated-LoRA lifecycle makes provenance necessary, but the paper provides only
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The Multiscale Causal Fabric \(MCF\) is a versioned modeling and navigation structure across the existing L0-L6 architectu](../../../docs/architecture/multiscale-causal-fabric.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c79ecbb5b2b26435 / The Multiscale Causal Fabric \(MCF\) is a versioned modeling and navigation structure across the existing L0-L6 architectu
+  - 来源：`docs/architecture/multiscale-causal-fabric.md`
+  - 依赖：—；被引用：—
+- [The numerical merge recipe and checkpoint compatibility premise are explicit, while identity, precision, semantics, fail](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-560b67e51fa3337c / The numerical merge recipe and checkpoint compatibility premise are explicit, while identity, precision, semantics, fail
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The observed source revisions are limited to the generated Current projection changes in `AI-HANDOFF.md`, `ARCHITECTURE.](../../../reports/operations/ignition-134-step13-human-surface-semantic-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a92d2b61a4f29cad / The observed source revisions are limited to the generated Current projection changes in `AI-HANDOFF.md`, `ARCHITECTURE.
+  - 来源：`reports/operations/ignition-134-step13-human-surface-semantic-audit.md`
+  - 依赖：—；被引用：—
+- [The op-lax inclusion, strict example and conditional maximality theorem validate core finite semantics, bounded by conci](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-389c19a46fde2a0f / The op-lax inclusion, strict example and conditional maximality theorem validate core finite semantics, bounded by conci
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The ordered section state retained local definitions, unresolved premises, concept-term sets, causal/constraint edges, r](../../../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-611e2d7d6555d643 / The ordered section state retained local definitions, unresolved premises, concept-term sets, causal/constraint edges, r
+  - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [The OS continues to route bounded work to replaceable executors through an external executor adapter boundary; the `Refe](../../../docs/architecture/os-steering-intent-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e468959bf32efba8 / The OS continues to route bounded work to replaceable executors through an external executor adapter boundary; the `Refe
+  - 来源：`docs/architecture/os-steering-intent-r1.md`
+  - 依赖：—；被引用：—
+- [The paper defines no versioned registry or lifecycle policy, and its two code links do not preserve a complete immutable](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8b73f65e56e3b919 / The paper defines no versioned registry or lifecycle policy, and its two code links do not preserve a complete immutable
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The paper directly distinguishes semi-formal descriptions, dependency graphs/SCCs, candidate implementations, constraint](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c92e3550dc9b8eef / The paper directly distinguishes semi-formal descriptions, dependency graphs/SCCs, candidate implementations, constraint
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The paper distinguishes theorem-scoped approximation and discretization properties from finite benchmark validation and](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-64841df15c9464af / The paper distinguishes theorem-scoped approximation and discretization properties from finite benchmark validation and
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The paper has no versioned/provenance-complete learned-function registry or operational lifecycle.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-94785169322cf91d / The paper has no versioned/provenance-complete learned-function registry or operational lifecycle.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The paper has publication provenance but no model-registry or lifecycle state machine.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f1f644f15f2f907c / The paper has publication provenance but no model-registry or lifecycle state machine.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The paper surveys expert lifecycle fragments but supplies no machine-readable versioned function registry or provenance/](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a42b83b8f7b2108 / The paper surveys expert lifecycle fragments but supplies no machine-readable versioned function registry or provenance/
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The plane is not L7 or a truth-functional logic.](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0f42c004e74378bc / The plane is not L7 or a truth-functional logic.
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
+- [The plane keeps public probes, transport wrappers, live-process lifecycle,](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-25cf70384dbe9483 / The plane keeps public probes, transport wrappers, live-process lifecycle,
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [The planner resolves real changed paths through the component registry and typed topology. Every registered component re](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5e94f580746486a2 / The planner resolves real changed paths through the component registry and typed topology. Every registered component re
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [The preflight created a disposable synthetic read-only fixture, observed its write guard, exercised public Codex version](../../../reports/operations/ignition-140-step10-live-admission.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5a542cb38e8a8ce / The preflight created a disposable synthetic read-only fixture, observed its write guard, exercised public Codex version
+  - 来源：`reports/operations/ignition-140-step10-live-admission.md`
+  - 依赖：—；被引用：—
+- [The published proof is not valid as printed: Eq. 39-40 sums only over k≠t while trying to include the k=t term, and writ](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aa0b2d722323967c / The published proof is not valid as printed: Eq. 39-40 sums only over k≠t while trying to include the k=t term, and writ
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [the R3 attempt scratch lifecycle. `codex login status` reported an existing](../../../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f30cdb1978e21b84 / the R3 attempt scratch lifecycle. `codex login status` reported an existing
+  - 来源：`reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md`
+  - 依赖：—；被引用：—
+- [The registry is linked from the formal lifecycle and task-lineage sources, but neither lifecycle source derives task ter](../../../reports/operations/ignition-142-step02-obligation-registry.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-16a159618402cf8e / The registry is linked from the formal lifecycle and task-lineage sources, but neither lifecycle source derives task ter
+  - 来源：`reports/operations/ignition-142-step02-obligation-registry.md`
+  - 依赖：—；被引用：—
+- [The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy](../../../agent-results/IGNITION-20260821-129-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3105c1372a644df8 / The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy
+  - 来源：`agent-results/IGNITION-20260821-129-result.md`
+  - 依赖：—；被引用：—
+- [The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func](../../../reports/foundation-architecture/099-function-asset-registry-closure.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-20ebb8fe331114bf / The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func
+  - 来源：`reports/foundation-architecture/099-function-asset-registry-closure.md`
+  - 依赖：—；被引用：—
+- [The result is a research candidate only. It does not establish production readiness, canonical semantics, lifecycle trut](../../../docs/governance/state-vs-transition-semantics-competition-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b1254590ce04c72f / The result is a research candidate only. It does not establish production readiness, canonical semantics, lifecycle trut
+  - 来源：`docs/governance/state-vs-transition-semantics-competition-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-08b4833286ba7f0e / The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The review gives a precise ontology for function spaces, operators, latent carriers, parameterized artifacts, distributi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-8526d9499f54baaf / The review gives a precise ontology for function spaces, operators, latent carriers, parameterized artifacts, distributi
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The scaffold registers into `data/operations/project-components.json` as a **horizontal infrastructure/overlay component](../../../docs/architecture/adaptive-relational-runtime-interop.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e5a9af57a12e1885 / The scaffold registers into `data/operations/project-components.json` as a **horizontal infrastructure/overlay component
+  - 来源：`docs/architecture/adaptive-relational-runtime-interop.md`
+  - 依赖：—；被引用：—
+- [The semantics and standard lazy runtime are explicitly related by the soundness proof.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-571811073f5c8a68 / The semantics and standard lazy runtime are explicitly related by the soundness proof.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The seven-layer architecture, separated registries, nine status axes, gates, deterministic migration, compatibility view](../../../reports/foundation-architecture/architecture-rebuild-summary-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7ff1d830a74c852c / The seven-layer architecture, separated registries, nine status axes, gates, deterministic migration, compatibility view
+  - 来源：`reports/foundation-architecture/architecture-rebuild-summary-20260712.md`
+  - 依赖：—；被引用：—
+- [The six function entries remain bounded by their existing identity labels, M/E records and claim ceilings. The five non-](../../../reports/operations/ignition-134-step06-human-surface-semantic-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e9d43b41f1ff6f49 / The six function entries remain bounded by their existing identity labels, M/E records and claim ceilings. The five non-
+  - 来源：`reports/operations/ignition-134-step06-human-surface-semantic-audit.md`
+  - 依赖：—；被引用：—
+- [The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-715e1326448ff4c6 / The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [The source says “任一因子=0→乘积=0” and applies it to the point-fire framework product. It does not declare `Nat`, restrict th](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e9f9143662b561af / The source says “任一因子=0→乘积=0” and applies it to the point-fire framework product. It does not declare `Nat`, restrict th
@@ -139,6 +434,11 @@
   - 可搜索名称：NFC-25601b5b858e63ad / These sources are used as modeling references and boundary checks. They are not imported as proved Ignition claims.
   - 来源：`reports/research/121Q22-probability-systems-source-map.md`
   - 依赖：—；被引用：—
+- [This candidate does **not** establish a causal proof.](../../../docs/coaching/q44-i1-repair-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-95fd3462d8de723b / This candidate does **not** establish a causal proof.
+  - 来源：`docs/coaching/q44-i1-repair-architecture.md`
+  - 依赖：—；被引用：—
 - [This contract is scoped to one bounded `REOS_LIGHT` research case. It is a research-execution control surface, not a sou](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-db253a381672bf98 / This contract is scoped to one bounded `REOS_LIGHT` research case. It is a research-execution control surface, not a sou
@@ -158,6 +458,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a22282ccdb7fa53f / This formal result records task identity and lifecycle outcome only. It does
   - 来源：`agent-results/IGNITION-20260827-142-result.md`
+  - 依赖：—；被引用：—
+- [This is **not** a proof that any project conclusion is true in the real world, and it does **not** create L7, a truth la](../../../docs/discovery/discovery-commitment-boundary-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a5bca974af64499b / This is **not** a proof that any project conclusion is true in the real world, and it does **not** create L7, a truth la
+  - 来源：`docs/discovery/discovery-commitment-boundary-architecture.md`
+  - 依赖：—；被引用：—
+- [This is **not** a proof that real-world legal, moral, or organizational responsibility has been automatically adjudicate](../../../docs/agent/responsibility-authority-action-trace-architecture.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1e4c87af254ab495 / This is **not** a proof that real-world legal, moral, or organizational responsibility has been automatically adjudicate
+  - 来源：`docs/agent/responsibility-authority-action-trace-architecture.md`
   - 依赖：—；被引用：—
 - [This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal network](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -208,6 +518,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3f5667059a89f9ce / Three fixed permutations were evaluated at work nodes 1, 4, 8, 12, 16, and 20. All ten anonymous factors were visible at
   - 来源：`docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [three-gate thought is an early seed but checks are shallow \(plane/status/gate enum only\). Reimplemented as tools/discove](../../../docs/discovery/q34-legacy-lab-salvage-matrix.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-13933a92c263f2d6 / three-gate thought is an early seed but checks are shallow \(plane/status/gate enum only\). Reimplemented as tools/discove
+  - 来源：`docs/discovery/q34-legacy-lab-salvage-matrix.json`
   - 依赖：—；被引用：—
 - [TIES NeurIPS full-text, prior-card acceptance and exact-code review: top-k trimming, magnitude-based sign election, sign](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2188,319 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D81A141F0BDA0BD9 / title: "碰撞产出密度函数" / IMPLICIT-D81A141F0BDA0BD9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "碰撞存活率函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-73A357BA4E751A29 / title: "碰撞存活率函数" / IMPLICIT-73A357BA4E751A29
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "碰撞层级8格概率函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-83DA1A2A62F41F7F / title: "碰撞层级8格概率函数" / IMPLICIT-83DA1A2A62F41F7F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "社会学容斥加速函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-462EA99B6DCD26DD / title: "社会学容斥加速函数" / IMPLICIT-462EA99B6DCD26DD
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "社会学容斥加速函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c10d191e3fea63af / title: "社会学容斥加速函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "祥瑞符号系统稳定性指示器函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F603EC785EB9269D / title: "祥瑞符号系统稳定性指示器函数" / IMPLICIT-F603EC785EB9269D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "种子-点火结果概率分布函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2902CB87EC4B0C8B / title: "种子-点火结果概率分布函数" / IMPLICIT-2902CB87EC4B0C8B
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间函数三元投影"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B792731227831396 / title: "空间函数三元投影" / IMPLICIT-B792731227831396
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间函数三元投影"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-35b0a95aac2dbfce / title: "空间函数三元投影"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间动态性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6EC7CB7EA2FE991A / title: "空间动态性函数" / IMPLICIT-6EC7CB7EA2FE991A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间有界性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-01A68BE7B609791D / title: "空间有界性函数" / IMPLICIT-01A68BE7B609791D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间竞争性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-68892BB40F496C42 / title: "空间竞争性函数" / IMPLICIT-68892BB40F496C42
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间耦合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-10D5834954CB5B0F / title: "空间耦合函数" / IMPLICIT-10D5834954CB5B0F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间锁死维度计数函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-147F18FD8DEEE846 / title: "空间锁死维度计数函数" / IMPLICIT-147F18FD8DEEE846
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "空间集中性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3CE2FEDB5CCB3831 / title: "空间集中性函数" / IMPLICIT-3CE2FEDB5CCB3831
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "纯拉力上位衰减函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-266717E44AF1E53E / title: "纯拉力上位衰减函数" / IMPLICIT-266717E44AF1E53E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "经典确定性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-093F6C31C7C9037B / title: "经典确定性函数" / IMPLICIT-093F6C31C7C9037B / IMPLICIT-54050DBB3CB4E918
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "经典问题差分函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6C51AEC80D09458 / title: "经典问题差分函数" / IMPLICIT-C6C51AEC80D09458
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-15041674d637e42d / title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-79CC3712E269007D / title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例" / IMPLICIT-79CC3712E269007D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "结构保守性元定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f31c1f2523a96189 / title: "结构保守性元定理"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "统一健康指标函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A02F11550F365BD5 / title: "统一健康指标函数" / IMPLICIT-A02F11550F365BD5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "统一健康指标函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1ea1078b9615b16b / title: "统一健康指标函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "统一内部驱动力函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2F1321B7A45ABE48 / title: "统一内部驱动力函数" / IMPLICIT-2F1321B7A45ABE48 / IMPLICIT-923298EDA525CEAE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "统一内部驱动力函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-923298EDA525CEAE / title: "统一内部驱动力函数" / IMPLICIT-923298EDA525CEAE / IMPLICIT-2F1321B7A45ABE48
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "统一内部驱动力函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f8937e7eeadc0783 / title: "统一内部驱动力函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度-容斥稳定性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-08F74701B9627707 / title: "维度-容斥稳定性函数" / IMPLICIT-08F74701B9627707
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度不归点-退化路径联合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0FFD14568CC4E6A9 / title: "维度不归点-退化路径联合函数" / IMPLICIT-0FFD14568CC4E6A9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度偏离退化路径函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2A3AECE974ADBE51 / title: "维度偏离退化路径函数" / IMPLICIT-2A3AECE974ADBE51
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度回复力函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2A5FC175308BCFBA / title: "维度回复力函数" / IMPLICIT-2A5FC175308BCFBA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度回复阻尼函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0CA06FCDA1FD5DB9 / title: "维度回复阻尼函数" / IMPLICIT-0CA06FCDA1FD5DB9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度回复非线性-阻尼联合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-31BAB242160EC320 / title: "维度回复非线性-阻尼联合函数" / IMPLICIT-31BAB242160EC320
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度回复非线性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-771E863CC6E190AC / title: "维度回复非线性函数" / IMPLICIT-771E863CC6E190AC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度坐标化边界函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5CE937404A223125 / title: "维度坐标化边界函数" / IMPLICIT-5CE937404A223125
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度最优吸引域函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E094F240DAD7A118 / title: "维度最优吸引域函数" / IMPLICIT-E094F240DAD7A118
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度最优平衡函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6D62D2DADEBBE39C / title: "维度最优平衡函数" / IMPLICIT-6D62D2DADEBBE39C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度最优漂移函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-858DB201D1DF5D3F / title: "维度最优漂移函数" / IMPLICIT-858DB201D1DF5D3F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度稳定性裕度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-335B880B93E4005D / title: "维度稳定性裕度函数" / IMPLICIT-335B880B93E4005D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度饥渴感知函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FEDC911A9FF442CA / title: "维度饥渴感知函数" / IMPLICIT-FEDC911A9FF442CA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲关联结构函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-679C92156B721BBB / title: "缓冲关联结构函数" / IMPLICIT-679C92156B721BBB
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲可重建性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-65C5C26768AA40F7 / title: "缓冲可重建性函数" / IMPLICIT-65C5C26768AA40F7
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲容量峰值函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8491C68506F65D45 / title: "缓冲容量峰值函数" / IMPLICIT-8491C68506F65D45
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲峰值余量函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E9390C11A2538865 / title: "缓冲峰值余量函数" / IMPLICIT-E9390C11A2538865
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲消耗速度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B5ED0B920231AF7F / title: "缓冲消耗速度函数" / IMPLICIT-B5ED0B920231AF7F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲溢出方向函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A96F6BF352EA737F / title: "缓冲溢出方向函数" / IMPLICIT-A96F6BF352EA737F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲部分重建效率函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-424923C0FC7CC38D / title: "缓冲部分重建效率函数" / IMPLICIT-424923C0FC7CC38D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓冲重建时间函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2F20566D7ABD07DF / title: "缓冲重建时间函数" / IMPLICIT-2F20566D7ABD07DF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "缓存容量倒U型函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-59163FE46247C69E / title: "缓存容量倒U型函数" / IMPLICIT-59163FE46247C69E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "群体智能函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FD1424D514090A7C / title: "群体智能函数" / IMPLICIT-FD1424D514090A7C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "群体智能函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1dc4bf4f318b7895 / title: "群体智能函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "耦合-容斥-平坦度三阶段函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-664F12BAE975357E / title: "耦合-容斥-平坦度三阶段函数" / IMPLICIT-664F12BAE975357E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "耦合强度-分布形态函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-679BE77756B442C9 / title: "耦合强度-分布形态函数" / IMPLICIT-679BE77756B442C9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "耦合正反馈统一函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BEEE3DB557775896 / title: "耦合正反馈统一函数" / IMPLICIT-BEEE3DB557775896
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "耦合正反馈统一函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eb75a2f5b38f7f51 / title: "耦合正反馈统一函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "耦合缓冲容量函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DA711F5485C18A2A / title: "耦合缓冲容量函数" / IMPLICIT-DA711F5485C18A2A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-00B936301892F1DB / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-00B936301892F1DB / IMPLICIT-9172D280A45CB270
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9172D280A45CB270 / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-9172D280A45CB270 / IMPLICIT-00B936301892F1DB
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B2FBDAEC3BE1FE33 / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-B2FBDAEC3BE1FE33 / IMPLICIT-00B936301892F1DB
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-621b85d0ba9997c4 / title: "自主意识函数 / autonomous consciousness function"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识涌现的临界条件"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d96360ec6fc08083 / title: "自主意识涌现的临界条件"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识的四象限"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b732312af760e3f3 / title: "自主意识的四象限"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自举元函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EBF009DB2763F66C / title: "自举元函数" / IMPLICIT-EBF009DB2763F66C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自举元函数层级 / bootstrap meta-function hierarchy"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6E11A269E0E95047 / title: "自举元函数层级 / bootstrap meta-function hierarchy" / IMPLICIT-6E11A269E0E95047
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自我模型-ε_aware连接定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ae515423558ec05 / title: "自我模型-ε_aware连接定理"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

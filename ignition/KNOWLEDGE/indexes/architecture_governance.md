@@ -4,18 +4,19 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
-- [第 002 片](./architecture_governance/part-002.md)：501—1000；_strings\(results, f"{item_path}.result_artifact_ids", issues\) → classic_problems_benchmark 数据结构
-- [第 003 片](./architecture_governance/part-003.md)：1001—1500；classic_problems_benchmark（34 条）— 无标题命中，验证未命中正常输出 → def _tree_digest\(root: Path\) -> str:
-- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _tree_has_symlink\(path: Path\) -> bool: → def sha256_text\(text: str\) -> str:
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def spool_ref\(self\) -> str: → Exact-final-HEAD CI remains mandatory. After the final commit is pushed and both required workflows finish, the mutable
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workf → link: "已迁移的历史案例来源/0787-C-0792-青蒿素从《肘后备急方》提炼.md"
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；link: "已迁移的历史案例来源/0788-C-0793-《写作是门手艺》段落控制≤10行.md" → Repository objects cannot self-claim Accepted, Merged or Current or cite their own current HEAD as their validity premis
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Repository-local candidate state is `CURRENT` for all four capability names and boundaries across README, the expanded g → Three public trial libraries contain 51, 52 and 55 active executable skill artifacts plus retained replacement files.
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；tiers = Counter\(s.get\("evidence_tier"\) for s in sources\) → \| \[C-50\]\( \) \| \[华为员工持股\]\( \) \| 员工可辞职且行业有下家，"华为人"认同经退出权验证 \|
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-510\]\( \) \| \[三阶段=曲率穿越验证 — 创业者路 → 个数据集（classic_problems_benchmark、pending_claims、storytelling_backlog）可自动抽取，基础行完整；4 个数据集（publication_risk_rules、failure_ty
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；个案经验上升为普遍法则； → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 吴军财富规划笔记碰撞验证
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；周公制礼\(dim=2\)→八百年；#3秦统一\(dim=2\)→15年亡\(但通过H压制犹豫域\)。 → 案例不能从单一材料推出普遍结论（边界条件强制约束）。
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；案例范围默认全量**（即 `已迁移的历史案例来源/` 全部条目）；除非任务明确限定。 → 须经逐本人工复核：分配 C 编号、补齐案例字段、标注证据等级，再写入 `已迁移的历史案例来源/` 并更新 INDEX。本轮（第三步）未做此步。
-- [第 015 片](./architecture_governance/part-015.md)：7001—7111；预测命题（如：某个教育现象的预测） → （证据不足、需外部验证、待人工复核）
+- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → \[证据谱系变化\]\(./data/governance/self-correction/evidence-lineage-delta.jsonl\)
+- [第 002 片](./architecture_governance/part-002.md)：501—1000；\[验证与审计指南\]\(./validation-and-audit.md\)：机器门、人工门、项目审计及指标的准确边界。 → capability ceiling. Unknown side effects and unverified receipts become
+- [第 003 片](./architecture_governance/part-003.md)：1001—1500；capability itself \(multiple evidence-constrained history/world candidates → def _head\(url: str, timeout: int = 30\) -> tuple\[int, dict\[str, str\]\]:
+- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _html_has_sections\(path: Path\) -> list\[str\]: → def match_version\(version: str, pattern: str\) -> bool:
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def message_file\(self\) -> bool: → D层第5批收敛。D361-D430 归入跨域同构、自由能/序参量、双临界、有限尺寸、宇宙约束等家族；D431-D450 判定为完全缺失。
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；E. 外部验证层（需社会科学/教育学/心理学/组织治理/AI 研究支撑，命令要求标 pending） → Independent Draft PR #96 \(base = `repair/q42-r1-counterfactual-ledger-binding`\).
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；independent evidence. → Original documentation, reports, narrative explanations, and copyrightable curated content are licensed under CC BY-NC-S
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；original_verified = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "ORIGINAL_SUCCESS_VERIFIED"\) → stale_knowledge: a successful adapter call, public CLI observation, model/provider label, executor telemetry, session po
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；stale_knowledge: equal workspace digests and a cleaned runtime scratch do not prove absence of the historical Hermes unk → title: "经验法则证伪 — 经验说\\"先确保生存再追求增长\\"，但D112说防守强度在接近门槛时反而增大——不是\\"先防守完再进攻\\"，而是\\"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果\\""
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；title: "统一内部驱动力" → \| `evidence/` \| 案例事实、解释、争议、关系和强度 \|
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；\| `external-input-non-republication-principle.md` \| 外部输入不重发原则 \| → 中文：σ_opt=√e验证
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 多位一线教师证实，赛课和日常教学几乎是完全脱节的两套体系，对真实课堂的指导意义十分有限：
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；多样性保留的最低阈值待治理与实证 → 点火主仓库已完成元协议生成层的文档/数据/模板/导航/审计升级；Ψ₀ 与两张表未改动，12 元协议作为 P_meta 展开进入第0层候选结构。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7500；点火增量层：结构材料，不是第二份证据 → 验证结论：** J⁺=1, J⁻=0 → 智能契约在蚁群社会中成立
+- [第 016 片](./architecture_governance/part-016.md)：7501—7560；验证结论：** J⁺=1, J⁻=0 → 涌现在ChatGPT中部分成立（停留在L1层） → （证据不足、需外部验证、待人工复核）

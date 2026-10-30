@@ -28,7 +28,12 @@ except ModuleNotFoundError:
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SPEC = ROOT / "data/architecture/interactive-system-map.json"
-DEFAULT_OUTPUT = ROOT / "docs/generated/ignition-system-architecture.svg"
+# The registry-derived full system map is a different projection from the
+# Task150-verified high-level homepage architecture SVG.  Keep their output
+# paths separate so component additions do not rewrite historical homepage
+# evidence or desynchronize its paired HTML payload.
+DEFAULT_OUTPUT = ROOT / "docs/generated/ignition-system-map.svg"
+HOMEPAGE_OUTPUT = ROOT / "docs/generated/ignition-system-architecture.svg"
 COMPONENT_REGISTRY = ROOT / "data/operations/project-components.json"
 PROPAGATION_TOPOLOGY = ROOT / "data/operations/change-propagation-topology.json"
 LAYOUT_OVERLAY = ROOT / "data/architecture/interactive-system-map-layout.json"
@@ -520,7 +525,7 @@ def main() -> int:
     args = parser.parse_args()
     derived = build_projection()
     rendered = render_svg(derived, ROOT)
-    homepage_output = args.output.resolve() == DEFAULT_OUTPUT.resolve()
+    homepage_output = args.output.resolve() == HOMEPAGE_OUTPUT.resolve()
     if args.check:
         require(args.spec.is_file(), f"materialized system-map projection missing: {args.spec}")
         require(args.spec.read_bytes() == serialized_projection(derived), "materialized system-map projection is stale or hand-edited")
@@ -529,7 +534,9 @@ def main() -> int:
             validate_homepage_projection(ROOT)
         else:
             require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator")
-        suffix = " homepage_projection=PASS" if homepage_output else ""
+            if args.output.resolve() == DEFAULT_OUTPUT.resolve():
+                validate_homepage_projection(ROOT)
+        suffix = " homepage_projection=PASS" if homepage_output or args.output.resolve() == DEFAULT_OUTPUT.resolve() else ""
         print(f"SYSTEM_MAP_DERIVED_OK nodes={len(derived['nodes'])} edges={len(derived['edges'])}{suffix}")
         return 0
     args.spec.parent.mkdir(parents=True, exist_ok=True)

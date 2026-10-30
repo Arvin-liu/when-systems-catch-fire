@@ -101,9 +101,9 @@
         "system_map_projection"
       ],
       "path_patterns": [
-        "docs/generated/ignition-system-architecture.svg"
+        "docs/generated/ignition-system-map.svg"
       ],
-      "reason": "human_knowledge_surfaces owns readable repository navigation while system_map_projection owns the generated SVG under docs/generated/."
+      "reason": "human_knowledge_surfaces owns the readable navigation asset while system_map_projection owns the registry-derived full-map SVG."
     },
     {
       "authority_source": "FOUNDATION.md",
@@ -961,6 +961,7 @@
         "data/governance/knowledge-experience/",
         "data/governance/self-correction/",
         "docs/generated/ignition-system-architecture.svg",
+        "docs/generated/ignition-system-map.svg",
         "docs/governance/human-surface-editorial-contract.md",
         "docs/human/function-assets/",
         "docs/human/nonfunction-assets/",
@@ -1373,13 +1374,13 @@
       "canonical_target": "data/architecture/interactive-system-map-layout.json",
       "component_id": "system_map_layout",
       "component_type": "repository_infrastructure",
-      "description": "只保存分组、颜色、顺序与几何；1.1 候选只同步 0.3 投影标识，不创建新真值。",
-      "label": "系统图布局 overlay 1.0 Current / 1.1 Draft",
+      "description": "只保存分组、颜色、顺序与几何；布局与几何质量属于表现 overlay，不创建新真值。",
+      "label": "系统图布局与几何验证",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "data/architecture/interactive-system-map-layout.json",
         "status": "current",
-        "version": "1.1.0"
+        "version": "2.6.0"
       },
       "map_projection": {
         "no_change_reason": "布局是图的表现 overlay，不是实质项目构件。",
@@ -1389,7 +1390,8 @@
       "path_patterns": [
         "data/architecture/interactive-system-map-layout.json",
         "schemas/architecture/interactive-system-map-layout.schema.json",
-        "data/architecture/system-map-geometry-quality-r1.json"
+        "data/architecture/system-map-geometry-quality-r1.json",
+        "tools/validate_system_map_geometry.py"
       ]
     },
     {
@@ -1397,21 +1399,22 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map_projection",
       "component_type": "repository_infrastructure",
-      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.5.0 是当前唯一完整总架构图，0.4.0 与 0.3.0 为 Historical 权威链。",
-      "label": "系统图 0.5 唯一完整投影派生基础设施",
+      "description": "由 component registry、topology 与 layout overlay 确定性派生的完整机器系统图；与 Task150 验证的首页高层架构图分开发布。",
+      "label": "当前系统图投影派生基础设施",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "tools/generate_interactive_system_map.py",
         "status": "current",
-        "version": "0.5.0"
+        "version": "0.22.0"
       },
       "map_projection": {
-        "no_change_reason": "完整 SVG 自身是全图投影，不应再作为图中的自指节点。",
+        "no_change_reason": "完整系统图 SVG 是派生全图，不应再作为图中的自指节点。",
         "represented_by": "sync",
         "visible": false
       },
       "path_patterns": [
         "data/architecture/interactive-system-map.json",
+        "docs/generated/ignition-system-map.svg",
         "docs/generated/ignition-system-architecture.svg",
         "docs/generated/ignition-system-architecture.html",
         "tools/generate_interactive_system_map.py",
@@ -1419,7 +1422,8 @@
         "tests/test_human_front_door.py",
         "tests/test_overall_architecture.py",
         "tests/test_generated_output_authority.py",
-        "docs/architecture/interactive-system-map.md"
+        "docs/architecture/interactive-system-map.md",
+        "pages/generated/"
       ]
     },
     {
@@ -3134,8 +3138,154 @@
         "data/coaching/pilot-q44-i1.json",
         "data/coaching/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
+      "component_id": "open_scientific_context_protocol_contract",
+      "component_type": "governance_constraint",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed evidence-bound contract. A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.",
+      "label": "Open Scientific Context Protocol 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
+        "docs/context_protocol/",
+        "docs/repair-r3/repair-r3/open_scientific_context_protocol-freeze.md"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/context_protocol/validate_open_scientific_context_protocol_gate.py",
+      "component_id": "open_scientific_context_protocol_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 fail-closed real CLI enforcing evidence binding, exact parent, 11 task rules, candidate ceiling and no external action.",
+      "label": "Open Scientific Context Protocol 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/context_protocol/",
+        "tests/context_protocol/",
+        "tests/repro_rb09_open_scientific_context_protocol_r2_evidence.txt",
+        "tests/test_r3_open_scientific_context_protocol.py"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/context_protocol/pilot-scientific-context-protocol-i1.json",
+      "component_id": "open_scientific_context_protocol_pilot",
+      "component_type": "governance_constraint",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 self-authored bounded repository pilot covering LOCAL_MOCK_REQUEST and LOCAL_MOCK_RESPONSE; 24 fixtures drive the real CLI; no external action.",
+      "label": "Open Scientific Context Protocol 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/context_protocol/pilot-scientific-context-protocol-i1.json",
+        "data/context_protocol/fixtures/",
+        "data/context_protocol/repair-r2-controlled-reproduction.json",
+        "data/context_protocol/repro/original-evidence-binding-failure.json",
+        "data/context_protocol/repro/scp-r0-context-protocol-sample.json"
+      ]
+    },
+    {
+      "component_id": "ignition_runtime_r1",
+      "label": "点火运行时 R1 / Ignition Runtime R1",
+      "description": "Draft repository-local RUN/PROMOTE/EVOLVE runtime with schema-bound materials, authorization records, immutable generation receipts, and recovery. Its checks establish repository behavior only; registration grants no production authority and does not promote claims to formal or scientific knowledge.",
+      "component_type": "operation_control",
+      "canonical_target": "docs/ignition-runtime/ARCHITECTURE.md",
+      "path_patterns": [
+        ".github/workflows/ignition-production-validation.yml",
+        "docs/ignition-runtime/",
+        "reports/ignition-rpe/",
+        "schemas/ignition_runtime/",
+        "tests/ignition_runtime/",
+        "tests/rpe_ci/",
+        "tools/ignition_runtime/"
+      ],
+      "authority": "canonical",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "status": "draft_candidate",
+        "version": "R1",
+        "source": "docs/ignition-runtime/ARCHITECTURE.md"
+      },
+      "map_projection": {
+        "visible": false,
+        "represented_by": "agent_runtime_r0",
+        "no_change_reason": "This R1 runtime remains a draft candidate registered for path ownership and validation. It is represented within the existing runtime spine until separate architecture review; registration does not activate production capability."
+      }
+    },
+    {
+      "component_id": "arr",
+      "label": "ARR 自适应关系运行时 (R1 Scaffold)",
+      "description": "候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。",
+      "component_type": "model_projection",
+      "canonical_target": "docs/architecture/adaptive-relational-runtime.md",
+      "path_patterns": [
+        "docs/architecture/adaptive-relational-runtime.md",
+        "docs/architecture/adaptive-relational-runtime-adrs.md",
+        "docs/architecture/adaptive-relational-runtime-interop.md",
+        "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
+        "docs/architecture/object-relation-mechanism-model.md",
+        "docs/architecture/self-growth-control-plane.md",
+        "schemas/architecture/adaptive-relational-runtime/",
+        "data/architecture/adaptive-relational-runtime/"
+      ],
+      "authority": "declarative",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "status": "current",
+        "source": "docs/architecture/adaptive-relational-runtime.md"
+      },
+      "map_projection": {
+        "visible": true,
+        "group": "models"
+      }
+    },
+    {
+      "component_id": "arr_runtime",
+      "label": "ARR 运行时适配工具 (adapter-only)",
+      "description": "工具适配层，复用 ignition_runtime 的 hashutil/errors/schemas_loader；声明为 NON-executor adapter，不引入第二执行引擎，不执行进程/网络/写路径。",
+      "component_type": "operation_control",
+      "canonical_target": "tools/adaptive_relational_runtime/runtime.py",
+      "path_patterns": [
+        "tools/adaptive_relational_runtime/",
+        "tests/adaptive_relational_runtime/"
+      ],
+      "authority": "declarative",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "status": "current",
+        "source": "tools/adaptive_relational_runtime/runtime.py"
+      },
+      "map_projection": {
+        "visible": false,
+        "represented_by": "arr",
+        "no_change_reason": "ARR runtime is an adapter-only tool with no second executor; it is represented by the arr derived-representation node."
+      }
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.8"
+  "registry_version": "2.9.12"
 }

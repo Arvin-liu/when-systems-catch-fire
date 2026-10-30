@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.20.0",
+  "map_version": "0.22.0",
   "historical_map_version": "0.14.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整总架构图",
@@ -10,12 +10,12 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.9.8",
-    "topology_version": "1.14.0",
-    "layout_version": "2.4.0"
+    "component_registry_version": "2.9.12",
+    "topology_version": "1.14.2",
+    "layout_version": "2.6.0"
   },
   "layout": {
-    "columns": 3,
+    "columns": 4,
     "group_gap": 28,
     "group_header_height": 92,
     "group_width": 560,
@@ -45,7 +45,7 @@
     },
     {
       "color": "#0f766e",
-      "column": 2,
+      "column": 3,
       "description": "权威数据、形式门禁与可执行函数接口",
       "id": "core",
       "label": "基础核心",
@@ -93,7 +93,7 @@
     },
     {
       "color": "#475569",
-      "column": 2,
+      "column": 3,
       "description": "这是一张导航接口，不是完整性、因果或理论证明",
       "id": "boundaries",
       "label": "图的解释边界",
@@ -125,7 +125,7 @@
     },
     {
       "color": "#ea580c",
-      "column": 2,
+      "column": 3,
       "description": "Federation、provider-neutral admission 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
       "id": "federation",
       "label": "Federation / 外部手脚",
@@ -392,6 +392,14 @@
       "group": "core",
       "target": "function-os-candidate/v0.2/README.md",
       "description": "执行受约束的函数动作，不决定真值或价值。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "arr",
+      "label": "ARR 自适应关系运行时 (R1 Scaffold)",
+      "group": "models",
+      "target": "docs/architecture/adaptive-relational-runtime.md",
+      "description": "候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。",
       "lifecycle_status": "current"
     },
     {
@@ -752,6 +760,30 @@
       "group": "governance",
       "target": "data/coaching/pilot-q44-i1.json",
       "description": "Q44-I1 self-authored bounded repository pilot covering USER_LED_COMMITMENT and PAUSE_OR_REVISE_PATH; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_contract",
+      "label": "Open Scientific Context Protocol 合同",
+      "group": "governance",
+      "target": "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed evidence-bound contract. A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_gate_validator",
+      "label": "Open Scientific Context Protocol 门禁",
+      "group": "governance",
+      "target": "tools/context_protocol/validate_open_scientific_context_protocol_gate.py",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 fail-closed real CLI enforcing evidence binding, exact parent, 11 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_pilot",
+      "label": "Open Scientific Context Protocol 受控试点",
+      "group": "governance",
+      "target": "data/context_protocol/pilot-scientific-context-protocol-i1.json",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 self-authored bounded repository pilot covering LOCAL_MOCK_REQUEST and LOCAL_MOCK_RESPONSE; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {
@@ -1893,6 +1925,30 @@
       "relation_domain": "repository_dependency"
     },
     {
+      "id": "arr_documents_arn",
+      "source": "arr",
+      "target": "arn",
+      "label": "关系网络参照",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "arr_mechanism_mcf",
+      "source": "arr",
+      "target": "mcf",
+      "label": "因果审查委托",
+      "relation_class": "mechanism_hypothesis",
+      "relation_domain": "substantive_causal_candidate"
+    },
+    {
+      "id": "arr_mechanism_psd",
+      "source": "arr",
+      "target": "psd",
+      "label": "随机/状态语义参照",
+      "relation_class": "mechanism_hypothesis",
+      "relation_domain": "substantive_causal_candidate"
+    },
+    {
       "id": "executor_admission_governs_live_executor_bridge",
       "source": "executor_admission_r1",
       "target": "live_executor_bridge_r1",
@@ -1902,9 +1958,9 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 128,
-    "visible_nodes": 111,
-    "hidden_components": 17,
+    "registry_components": 134,
+    "visible_nodes": 115,
+    "hidden_components": 19,
     "hidden_representatives": {
       "foundation_data": "foundation",
       "historical_reports": "current_state",
@@ -1922,7 +1978,9 @@
       "openalex_adapter_r1": "research_pack_reos_light",
       "research_workflow_slot": "research_pack_reos_light",
       "crossref_verifier_r1": "research_pack_reos_light",
-      "component_validation_router": "iteration"
+      "component_validation_router": "iteration",
+      "ignition_runtime_r1": "agent_runtime_r0",
+      "arr_runtime": "arr"
     },
     "orphan_components": []
   }

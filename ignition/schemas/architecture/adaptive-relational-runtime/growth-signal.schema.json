@@ -1,0 +1,452 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:adaptive-relational-runtime:schema:growth-signal",
+  "title": "ARR Growth Signal record",
+  "description": "Plane 6 aggregate of >=1 feedbacks gated by six criteria. EVOLVE_CANDIDATE is a terminal state with NO execution edges in this scaffold.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "record_kind",
+    "schema_version",
+    "scope",
+    "provenance",
+    "explicitness",
+    "claim_ceiling",
+    "uncertainty",
+    "alternatives",
+    "lifecycle",
+    "time",
+    "extensions",
+    "failure_class",
+    "feedback_refs",
+    "title",
+    "description",
+    "measured_loss",
+    "recurrence_evidence",
+    "workaround_assessment",
+    "minimal_repair_hypothesis",
+    "human_authorization",
+    "gate_evaluation",
+    "status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2,4}_[0-9a-f]{32}$"
+    },
+    "record_kind": {
+      "const": "GrowthSignal"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^arr-r[0-9]+\\.[0-9]+$"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "explicitness": {
+      "type": "string",
+      "enum": [
+        "EXPLICIT",
+        "STRONGLY_IMPLIED",
+        "PLAUSIBLE_ASSUMPTION",
+        "INTERPRETER_RECONSTRUCTION",
+        "UNKNOWN"
+      ]
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_VERIFIED",
+        "SECONDARY",
+        "UNKNOWN"
+      ]
+    },
+    "uncertainty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "OBSERVED",
+            "PROVISIONAL",
+            "CANDIDATE",
+            "SUPPORTED",
+            "CONTESTED",
+            "SUPERSEDED",
+            "ARCHIVED",
+            "REACTIVATED",
+            "REJECTED",
+            "UNKNOWN"
+          ]
+        },
+        "entered_at_scope": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transition_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "time": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ingestion_time",
+        "ingestion_time_status"
+      ],
+      "properties": {
+        "ingestion_time": {
+          "type": "string"
+        },
+        "ingestion_time_status": {
+          "type": "string",
+          "enum": [
+            "OK",
+            "ABSENT",
+            "MALFORMED"
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "propertyNames": {
+        "pattern": "^x_[a-z0-9_]+$"
+      },
+      "patternProperties": {
+        "^x_[a-z0-9_]+$": {}
+      }
+    },
+    "failure_class": {
+      "type": "string",
+      "enum": [
+        "INPUT_SOURCE",
+        "EXTRACTION_MODEL",
+        "REPRESENTATION",
+        "MECHANISM",
+        "INFRASTRUCTURE_RUNTIME",
+        "ARCHITECTURE",
+        "GOVERNANCE_REFUSAL",
+        "UNKNOWN"
+      ]
+    },
+    "feedback_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^fb_[0-9a-f]{32}$"
+      }
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "signal_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "object_refs",
+        "source_refs",
+        "domain_span"
+      ],
+      "properties": {
+        "object_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "domain_span": {
+          "type": "string"
+        }
+      }
+    },
+    "measured_loss": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "loss_type",
+        "metric",
+        "value",
+        "unit",
+        "measurement_method",
+        "baseline"
+      ],
+      "properties": {
+        "loss_type": {
+          "type": "string",
+          "enum": [
+            "VALIDATION_FAILURE",
+            "REPLAY_DIVERGENCE",
+            "CLAIM_DOWNGRADE",
+            "THROUGHPUT_BLOCK",
+            "HUMAN_REVIEW_LOAD",
+            "OTHER_DECLARED"
+          ]
+        },
+        "metric": {
+          "type": "string"
+        },
+        "value": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "measurement_method": {
+          "type": "string"
+        },
+        "baseline": {
+          "type": "string"
+        }
+      }
+    },
+    "recurrence_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "object_ref",
+          "source_ref",
+          "failure_event_ref",
+          "reproduction_method",
+          "reproduction_digest"
+        ],
+        "properties": {
+          "object_ref": {
+            "type": "string"
+          },
+          "source_ref": {
+            "type": "string"
+          },
+          "failure_event_ref": {
+            "type": "string"
+          },
+          "reproduction_method": {
+            "type": "string"
+          },
+          "reproduction_digest": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "workaround_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assessed",
+        "adequate_low_cost_exists",
+        "candidates_considered",
+        "rationale"
+      ],
+      "properties": {
+        "assessed": {
+          "type": "boolean"
+        },
+        "adequate_low_cost_exists": {
+          "type": "boolean"
+        },
+        "candidates_considered": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rationale": {
+          "type": "string"
+        }
+      }
+    },
+    "minimal_repair_hypothesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hypothesis",
+        "touched_surface",
+        "falsification_test",
+        "rollback_path"
+      ],
+      "properties": {
+        "hypothesis": {
+          "type": "string"
+        },
+        "touched_surface": {
+          "type": "string"
+        },
+        "falsification_test": {
+          "type": "string"
+        },
+        "rollback_path": {
+          "type": "string"
+        }
+      }
+    },
+    "human_authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorized_by",
+        "authorization_ref",
+        "authorized_at",
+        "scope_of_authorization",
+        "verified"
+      ],
+      "properties": {
+        "authorized_by": {
+          "type": "string"
+        },
+        "authorization_ref": {
+          "type": "string"
+        },
+        "authorized_at": {
+          "type": "string"
+        },
+        "scope_of_authorization": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      }
+    },
+    "gate_evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "items",
+        "evaluated_at",
+        "evaluator_version",
+        "decision_digest"
+      ],
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "gate_id",
+              "result",
+              "evidence_ref"
+            ],
+            "properties": {
+              "gate_id": {
+                "type": "string",
+                "enum": [
+                  "G1",
+                  "G2",
+                  "G3",
+                  "G4",
+                  "G5",
+                  "G5g",
+                  "G6"
+                ]
+              },
+              "result": {
+                "type": "string",
+                "enum": [
+                  "PASS",
+                  "FAIL"
+                ]
+              },
+              "evidence_ref": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "evaluated_at": {
+          "type": "string"
+        },
+        "evaluator_version": {
+          "type": "string"
+        },
+        "decision_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "SIGNAL_ONLY",
+        "EVOLVE_CANDIDATE",
+        "REJECTED",
+        "ARCHIVED",
+        "SUPERSEDED",
+        "WITHDRAWN"
+      ]
+    }
+  },
+  "$comment": "SPDX-License-Identifier: Apache-2.0"
+}

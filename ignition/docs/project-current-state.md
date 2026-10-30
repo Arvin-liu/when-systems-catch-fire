@@ -245,7 +245,7 @@ GitHub 仓库 Markdown 是唯一持续维护的人类阅读层：
 - [裁决总结](../RESULTS/ADJUDICATION-SUMMARY.md)
 - [研究与文章](../RESULTS/RESEARCH-AND-ARTICLES.md)
 
-此前独立部署的阅读站已退出产品与同步面，独有系统图迁移到 [仓库内唯一完整 SVG](./generated/ignition-system-architecture.svg)。历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。
+此前独立部署的阅读站已退出产品与同步面，历史部署证据仍留在 Git 与旧报告，不再构成当前完成门禁。当前完整 registry 派生系统图位于 [系统图 SVG](./generated/ignition-system-map.svg)；首页使用 Task150 验证并与 HTML 配对的 [高层架构 SVG](./generated/ignition-system-architecture.svg)。
 
 ## 当前治理结论
 
@@ -327,6 +327,10 @@ guard 的 `REPRODUCED_IMPLEMENTATION_DEFECT`。三项历史案例仍可检索，
 - 任务 105：Function OS v0.2 基准——**原始目标** `PARTIALLY_SUPPORTED_WITH_IDENTIFIED_FAILURES`（25 个 false_reject，源自 N2 嵌套相等提取缺陷），**修复后目标** `SUPPORTED_WITHIN_BOUNDED_DOMAIN`；有界 N2 缺陷已修复并复跑通过。
 - 证据上限：有界域内可信；**不声称**完整沙箱化、生产就绪或普遍正确。原始与修复判定保持区分，不合并为单一结论。
 - 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的当前真相可确定性传播并在矛盾时 fail closed。
+
+### SCIENTIFIC-CONTEXT-PROTOCOL-I1 Open Scientific Context Protocol (stacked Draft candidate)
+
+A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no deployed ecosystem; no hardware execution; no platform model copying; no sensitive-data/network boundary bypass.
 
 ## 更新规则
 

@@ -1,0 +1,312 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Plane 5 ten-state lifecycle: 10 states, 26 legal directed edges (each with guard hash), and 11 reject reason_codes.",
+  "lifecycle_states": [
+    {
+      "state": "OBSERVED",
+      "terminal": false,
+      "description": "Registered observation; source/observation separated."
+    },
+    {
+      "state": "PROVISIONAL",
+      "terminal": false,
+      "description": "Schema-valid draft; title/heuristic only."
+    },
+    {
+      "state": "CANDIDATE",
+      "terminal": false,
+      "description": "In candidate pool; reference only, not conclusion."
+    },
+    {
+      "state": "SUPPORTED",
+      "terminal": false,
+      "description": "Independently supported within scope/ceiling; not universal truth."
+    },
+    {
+      "state": "CONTESTED",
+      "terminal": false,
+      "description": "Undisposed opposing evidence or adjudication conflict."
+    },
+    {
+      "state": "SUPERSEDED",
+      "terminal": false,
+      "description": "Replaced; original record + time scope preserved."
+    },
+    {
+      "state": "ARCHIVED",
+      "terminal": false,
+      "description": "Tombstone; content/digest retained, no active inference."
+    },
+    {
+      "state": "REACTIVATED",
+      "terminal": false,
+      "description": "Revived from ARCHIVED; same identity, history preserved."
+    },
+    {
+      "state": "REJECTED",
+      "terminal": true,
+      "description": "Terminal reject (fail-closed / refutation / ceiling violation)."
+    },
+    {
+      "state": "UNKNOWN",
+      "terminal": false,
+      "description": "Safe terminal/safe state; info insufficient / malformed / downgrade."
+    }
+  ],
+  "lifecycle_edges": [
+    {
+      "from": "OBSERVED",
+      "to": "PROVISIONAL",
+      "guard_hash": "1b0613bfd2f7a7ff6231c69cc13d9fba3a84d4c243b02985ba863f436dc75281",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "OBSERVED",
+      "to": "UNKNOWN",
+      "guard_hash": "ad992885bce89795f55d14269a3dc3388df5bd5f4ce730145a1daa4e8a18268a",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "OBSERVED",
+      "to": "REJECTED",
+      "guard_hash": "f8fb962c4d776d15ad59d0bac3003a92c581748b68975f58db4e519c6a466b64",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "PROVISIONAL",
+      "to": "CANDIDATE",
+      "guard_hash": "74d95ac3106232e139b8e0058f4e71ea6d73c3491ef0cec510f5121265c4f3f3",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "PROVISIONAL",
+      "to": "UNKNOWN",
+      "guard_hash": "865c6a60c30167600e88a0c514e206af3f81bb95809d0c56bbf08ac477dc1f41",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "PROVISIONAL",
+      "to": "REJECTED",
+      "guard_hash": "609738e267fb2408e7408f33a701bea06fab044da5dacc18179a859a9873cda2",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "SUPPORTED",
+      "guard_hash": "1d01db7c52e64d2882ce2d42746ccabad8218fc058fe90106f94780150f19504",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "CONTESTED",
+      "guard_hash": "c8af6c0e5aff5f3f7ca13369a66f746f65a70e1c0987d6a2232d15d890b12c0a",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "REJECTED",
+      "guard_hash": "bc65c748e800fb48a752cb828e2dafd61ab3f291ea7f42dfe0b44a9877aedae6",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "UNKNOWN",
+      "guard_hash": "f19d6c17f4e37b5261277dbf859719803af2e3d79d6929f1a1040b80fb4c9a2f",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "ARCHIVED",
+      "guard_hash": "a784987839fcd8e47ee7d50d4e5f5cb0016396004c610049bf885e89ce34f118",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "SUPPORTED",
+      "to": "CONTESTED",
+      "guard_hash": "49221ac9b057df676832406be3d4f3eca855c038ee334f6f2497a8cf90ed6ceb",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "SUPPORTED",
+      "to": "SUPERSEDED",
+      "guard_hash": "ce9a49d0838523cdf069ea0d85602b2b95da814678b70b3198e109a0aad8049c",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "SUPPORTED",
+      "to": "ARCHIVED",
+      "guard_hash": "86d729f26d4d877cd1a1e480d955bc1fec38549d16480b50ab737104fa5b4ca1",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "SUPPORTED",
+      "to": "UNKNOWN",
+      "guard_hash": "1f5d5d0681522216f18bc3484af242a83175f377f6b7810ef15dca05394d552c",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CONTESTED",
+      "to": "SUPPORTED",
+      "guard_hash": "fb8c6e436b9ffa4f0c7be0faa5245820c5c2d5889dc1ed1618f6cce11e9554f8",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CONTESTED",
+      "to": "REJECTED",
+      "guard_hash": "9453eaa5830799ab4e1351b713e5b7418f959cad3dfa5b5694431f8b82a87178",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CONTESTED",
+      "to": "SUPERSEDED",
+      "guard_hash": "c52605e3c548d74cd3bd601cbba2a35da24dbd6a2941d5714364bffffe9328bd",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CONTESTED",
+      "to": "UNKNOWN",
+      "guard_hash": "d02529e78406c0786186f63fb826a81fd961dd902aaeee12bbae2e9419075fde",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "CONTESTED",
+      "to": "ARCHIVED",
+      "guard_hash": "f27186e462340cec5bf84e169994510f6e1f5d371e4ab5f2d915e65cd18ec8d1",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "SUPERSEDED",
+      "to": "ARCHIVED",
+      "guard_hash": "b50ebd47ca95be92ea80c066a4ef667f3df7bf5aace58113ff8e6ec8034f6c1d",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "ARCHIVED",
+      "to": "REACTIVATED",
+      "guard_hash": "2c2859c8eebd6c021b3d8a866c2706c2ae9a1649e24e813f436d2e18b4b793b6",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "REACTIVATED",
+      "to": "PROVISIONAL",
+      "guard_hash": "936212423c0b1b284914c514415e8a42991905377b0cce4b6d1b63887f9dfa16",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "REACTIVATED",
+      "to": "CANDIDATE",
+      "guard_hash": "33447228a725b9f8db5df781c1a8550ee33bf67ba057a1e91cadd5877ad891f8",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "UNKNOWN",
+      "to": "OBSERVED",
+      "guard_hash": "f666610bf54140114b6bebb11ef74f6ad894a00162a065028a245992d09d731e",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    },
+    {
+      "from": "UNKNOWN",
+      "to": "PROVISIONAL",
+      "guard_hash": "e603872f5e5fb823278b3f00fec50de56aa37587563927b6b488caa9d696b21b",
+      "reason_codes": [
+        "EDGE_OK"
+      ]
+    }
+  ],
+  "reject_reason_codes": [
+    {
+      "code": "EDGE_NOT_IN_TRANSITION_REGISTRY",
+      "trigger": "(from,to) not in the 26-edge table."
+    },
+    {
+      "code": "UNKNOWN_TO_SUPPORTED_DIRECT",
+      "trigger": "UNKNOWN -> SUPPORTED direct edge attempted (attack 32)."
+    },
+    {
+      "code": "REACTIVATED_TO_SUPPORTED_DIRECT",
+      "trigger": "REACTIVATED -> SUPPORTED without re-walking promotion gate."
+    },
+    {
+      "code": "REJECTED_IS_TERMINAL",
+      "trigger": "any outgoing edge from REJECTED."
+    },
+    {
+      "code": "SUPERSESSION_HISTORY_MISSING",
+      "trigger": "->SUPERSEDED missing supersession_record/digest/valid range (attack 31)."
+    },
+    {
+      "code": "REPETITION_COUNT_PROMOTION",
+      "trigger": "transition guard references occurrence_count/repeat_count/mention_count (banned fields)."
+    },
+    {
+      "code": "CEILING_EXCEEDED",
+      "trigger": "target state requires ceiling above evidence tier ceiling (attack 28)."
+    },
+    {
+      "code": "INDEPENDENCE_NOT_DECLARED",
+      "trigger": "->SUPPORTED with insufficient independent evidence (attack 30)."
+    },
+    {
+      "code": "OPPOSING_EVIDENCE_UNDISPOSED",
+      "trigger": "->SUPPORTED with undisposed opposing evidence (attack 29)."
+    },
+    {
+      "code": "TEMPORAL_MALFORMED_FAIL_TO_UNKNOWN",
+      "trigger": "temporal malformed yet not routed to UNKNOWN (attack 6)."
+    },
+    {
+      "code": "PROVENANCE_MISSING",
+      "trigger": "any promotion with missing provenance (attack 4)."
+    }
+  ]
+}

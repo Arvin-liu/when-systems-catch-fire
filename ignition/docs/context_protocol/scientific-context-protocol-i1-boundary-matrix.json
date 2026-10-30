@@ -1,0 +1,53 @@
+{
+  "task_id": "SCIENTIFIC-CONTEXT-PROTOCOL-I1",
+  "parent_id": "Q44-I1",
+  "fields": [
+    "protocol_version",
+    "source_rights_context",
+    "model_tool_executor_identity",
+    "authority_capability",
+    "observation_prediction",
+    "analogy_search_case",
+    "intervention_failure",
+    "symbolic_perspectives",
+    "decision_integrity",
+    "epistemic_state",
+    "latent_multi_history_counterfactual",
+    "experiment_hardware_request_result",
+    "exact_head_provenance_digest",
+    "stop_rollback",
+    "sensitive_data_network_local_first",
+    "capability_negotiation",
+    "request_response_envelope",
+    "identity_authorization",
+    "artifact_binding",
+    "failure_retry_semantics",
+    "compatibility_policy",
+    "local_mock_adapter",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "version_negotiated",
+    "identity_authorized",
+    "capability_not_authority",
+    "artifact_exact_head_bound",
+    "rights_preserved",
+    "failure_retry_typed",
+    "compatibility_fail_closed",
+    "sensitive_local_first",
+    "hardware_request_only",
+    "no_ecosystem_overclaim",
+    "stop_rollback_present"
+  ],
+  "record_types": [
+    "LOCAL_MOCK_REQUEST",
+    "LOCAL_MOCK_RESPONSE"
+  ],
+  "nonclaims": [
+    "no deployed ecosystem",
+    "no hardware execution",
+    "no platform model copying",
+    "no sensitive-data/network boundary bypass"
+  ],
+  "next_task": "FINAL_BUILD_SUMMARY"
+}
