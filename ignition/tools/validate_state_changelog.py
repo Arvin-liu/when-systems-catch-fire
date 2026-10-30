@@ -473,7 +473,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    profile, _ = _load_profile(PROFILE_PATH)
+    profile, _ = _load_profile(PROFILE_PATH_R4)
     entries = profile.get("entries", [])
     definitions = profile.get("profiles", {})
     current = sum(
