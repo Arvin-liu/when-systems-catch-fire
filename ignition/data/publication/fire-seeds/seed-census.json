@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "c0157c8a7dc3d45798624831976d6316ca3cf73790d4ee5c6e26eee5e0a1c986",
+      "source_sha256": "2035452a995cc49ed1cdde25047e0a4cb873b6aa934618b74fcafafec5c03da5",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "2d9a44c777d8f2f879682f1c3d494bffb3402079b2e65a4e35dc5ac96e394678",
+      "source_sha256": "532d786d7ab265b3b129b9ce92c7e239469de758251582110eb55a94ceb076e4",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2737,7 +2737,7 @@
       "title": "CLAIM-DELTA",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ab55042abdc63557fe9f80964f104824073392160d035454f28943a9dc2eaee2",
+      "source_sha256": "5877cc8ab72f27917971440ce4fb11d87e6bdcd44b44a3541a3c0a5e42089c64",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2767,7 +2767,7 @@
       "title": "EVIDENCE-LINEAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "bb56384ed1f273bb624b48479959e974d02226ac6d51770c7f0c491107d7ccc9",
+      "source_sha256": "829702490233ee97a9acff355240a75476399397ec53600074166ad1badd8a8f",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2873,7 +2873,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d8c58038e092a971f1c186cd9e5481936770dec15a49fc95f10ab3bddc94924b",
+      "source_sha256": "0b80ec8693a32543fbb7fcc938145ddde140f87db7c4ae0ea6b853d06cd05870",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -3308,7 +3308,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f3ff98061a1b71f87950ee530b473b15e4b9dae28b72ef00e237c202d1448a88",
+      "source_sha256": "f42454f6c75f8b7f83dd07a74c5a089a36e5c93f8e634caa7f532a5e84a201db",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3744,7 +3744,7 @@
       "title": "点火仓库原生系统图",
       "knowledge_status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
       "subject": null,
-      "source_sha256": "80b4299e1ec2781997eac7b025d4560a760d46b4c785163b2dc397ae0995d50d",
+      "source_sha256": "b01d484698672177770e5d9d52a68d677e38a348f88e4772b5a7ae6dc3d9ac49",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-12"
@@ -4349,7 +4349,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "21c328a77b4eab1c333ea6ce4cdba92cec48f4d21d16487d5bba9103649e7e29",
+      "source_sha256": "24ed9055d934f1bfa414a42fa1272a4a98f0754bcee6f350467eb4d41c5ab93f",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

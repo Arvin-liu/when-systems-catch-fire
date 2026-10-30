@@ -233,7 +233,7 @@
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "1b3421ccb9f54b17b6e34b53e9c6830ed7e3b1163ae0987e25e3dea315431de1"
+      "sha256": "a3523d5d6c3a0b80748c91f60f9a35533e78346d79e38167276a6deedbadf9de"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "f3ff98061a1b71f87950ee530b473b15e4b9dae28b72ef00e237c202d1448a88"
+      "sha256": "f42454f6c75f8b7f83dd07a74c5a089a36e5c93f8e634caa7f532a5e84a201db"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "8a8ed1ffc236f6cf99e5aadcff0956791393844fac4bf9a48877f044245bfe6f"
+      "sha256": "6c7582301833b3a8d4d2c91de9c7a76f8e5258e2a25ce07a7139274dd7098620"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -301,7 +301,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "c3cb325de97084d5a546914d3a378463486e560ebed21dd3619456ac45582f92"
+      "sha256": "611f54f099a18c7fbb2671d58113d26f74851c1294fa65250b66360d9ee67edf"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",

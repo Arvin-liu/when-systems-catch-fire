@@ -86,14 +86,13 @@
     {
       "authority_source": "reports/operations/121Q32-completion-seal.json",
       "component_ids": [
-        "arr",
         "historical_reports",
         "iteration_manifest_contract"
       ],
       "path_patterns": [
-        "reports/operations/"
+        "reports/operations/121Q32"
       ],
-      "reason": "ARR adds its pilot completion seal beneath the operations reports directory, where historical_reports and iteration_manifest_contract already own 121Q32 evidence; the directory-level overlap must list every actual matching component."
+      "reason": "The 121Q32 completion seal and its evidence are shared by historical_reports and iteration_manifest_contract. ARR's pilot seal has its own exact overlap declaration below."
     },
     {
       "authority_source": "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
@@ -3268,7 +3267,8 @@
         "reports/operations/ARR-R2-REAL-OBJECT-PILOT-completion-seal.json",
         "docs/adaptive-relational-runtime-r2-positive-routing-repair/",
         "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
-        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/"
+        "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
+        "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/"
       ],
       "authority": "declarative",
       "layer_or_overlay": "overlay",
@@ -3305,5 +3305,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.9.17"
+  "registry_version": "2.9.18"
 }

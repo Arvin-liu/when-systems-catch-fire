@@ -58,6 +58,13 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/multihistory/d2-i1-repair-architecture.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/multihistory/d2-i1-repair-r1-summary.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "docs/project-current-state.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/CANONICAL_NODE_IDENTITY_AUDIT.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/CI_FAILURE_REPRODUCTION.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/FIX_VERIFICATION.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/MASKED_CASCADE_FINDING.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/NARROW_REPAIR_CONTRACT.md"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/REMOTE_CI_JOB_LOG_30143814302.txt"}
+{"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/ROLE_MATRIX_A_F.md"}
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/CI_FAILURE_REPRODUCTION.md"}
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/FIX_VERIFICATION.md"}
 {"category": "EVIDENCE_OR_BENCHMARK", "matched_rule": "EVIDENCE_OR_BENCHMARK", "path": "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/LOCAL_DETACHED_HEAD_REPRODUCTION.txt"}

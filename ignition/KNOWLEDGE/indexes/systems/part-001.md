@@ -1199,9 +1199,9 @@
   - 可搜索名称：NFC-dfc3362e34717807 / `CONFIG\["evaluator"\] = evaluate_latent_system_identifiability` and `CONFIG\["evidence_matrix"\]`, so every
   - 来源：`docs/repair-r3/repair-r3/latent_system_identifiability-freeze.md`
   - 依赖：—；被引用：—
-- [`current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [`current-facts.json` 为准；当前地图为 `0.22.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d3ad062793783315 / `current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
+  - 可搜索名称：NFC-192cb16f8d7551bb / `current-facts.json` 为准；当前地图为 `0.22.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`data/analogy/fixtures/24-real-repo-pilot-q34-analogy-as-mechanism.json` audits the existing](../../../docs/analogy/q37-interfaces.md)

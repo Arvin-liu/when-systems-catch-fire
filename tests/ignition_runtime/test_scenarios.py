@@ -39,7 +39,7 @@ from tools.ignition_runtime.evolve import evolve
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CTRL_INPUTS = Path("/tmp/ctrl-1111/inputs/ignition-run-promote-evolve-r1")
-PR_BASE = os.environ.get("PR_BASE_SHA", "a70abd87673296abc18421b2032266a3cbaec577")
+PR_BASE = os.environ.get("PR_BASE_SHA", "96205a04413b3f46e4afd1c9141af88dd5ae00ba")
 EXPECTED_HEAD_BASES = {
     "repair-r3/scientific-context-protocol-r3-semantic-evaluator": {
         "production/ignition-run-promote-evolve-r1",
@@ -62,6 +62,10 @@ EXPECTED_HEAD_BASES = {
     # preserving the existing R2 parent instead of substituting Main.
     "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1": {
         "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+    },
+    # The front-door synchronization repair remains stacked on the CI repair.
+    "repair/adaptive-relational-runtime-r2-human-front-door-sync-r1": {
+        "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1",
     },
 }
 
@@ -752,6 +756,8 @@ def test_s43_diff_scope():
         "ignition/RESULTS/",
         "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
         "ignition/data/architecture/interactive-system-map.json",
+            # Added by the newer stacked base in PR #123; keep the diff scope accurate.
+            "ignition/docs/architecture/interactive-system-map.md",
         "ignition/data/architecture/current-facts.json",
         "ignition/data/architecture/adaptive-relational-runtime/",
         "ignition/data/foundation/function-assets/",
@@ -781,6 +787,11 @@ def test_s43_diff_scope():
         "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/",
         # This PR's six-file CI reproduction bundle is separate evidence, not runtime scope.
         "evidence/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1/",
+        # This PR's seven-file human-front-door audit bundle is evidence only.
+        "evidence/adaptive-relational-runtime-r2-human-front-door-sync-r1/",
+        # Exact consumer tests changed to close this sync and its propagation blocker.
+        "ignition/tests/test_change_propagation.py",
+        "tests/test_human_front_door.py",
         "ignition/tools/foundation/validate_repository_path_classification.py",
         "ignition/reports/operations/ARR-R1-SCAFFOLD-completion-seal.json",
         "ignition/requirements-foundation.txt",
