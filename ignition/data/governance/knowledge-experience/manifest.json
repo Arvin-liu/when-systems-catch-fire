@@ -43,7 +43,7 @@
     "KNOWLEDGE/indexes/architecture_governance/part-006.md": "6cac0a711f9586cdb0e24507d94d2935485f7009a350f6a365ecc5f62d41389e",
     "KNOWLEDGE/indexes/architecture_governance/part-007.md": "e10c50dc2343b20f3b9ab5079485d9070175d2759140700389ea980e2be99950",
     "KNOWLEDGE/indexes/architecture_governance/part-008.md": "365a4cd79554a4eec5afea5ca6a4e8bf3b1a0e6c2722e636759b56e043bf32b1",
-    "KNOWLEDGE/indexes/architecture_governance/part-009.md": "9f8f39ff1293a6a68ef7e9b86d972f6c1eb6ad74de068bd8600029a4afa6e64e",
+    "KNOWLEDGE/indexes/architecture_governance/part-009.md": "213c4e356305c8cd2457a745397204a724fe4ae958e16748d52651c5b8bb2884",
     "KNOWLEDGE/indexes/architecture_governance/part-010.md": "8ee7475fc249deaafa416f09d1236bda82477238cf005e4ca0d1c21b00f951b6",
     "KNOWLEDGE/indexes/architecture_governance/part-011.md": "e479939e9ae3f9cc5a1143e729aed881cabb3c15093c8aad4b7d51a009bf3cea",
     "KNOWLEDGE/indexes/architecture_governance/part-012.md": "62e2d80383939ec1ded88fa95e460619f02212c323d2edcc402446a8550ea2d2",
@@ -114,7 +114,7 @@
     "data/governance/knowledge-experience/changes.jsonl": "e7189b9583f2c865fce5d3a4bb9e73497e9c844f0630b1e37f5aa8d26ea59508",
     "data/governance/knowledge-experience/coverage.json": "6ad6375dd092322c932e638154ee489413c182288353bdb972b607ff07481b61",
     "data/governance/knowledge-experience/layered-reading.jsonl": "81d1cdef32a223a38b7f9d5fdc48536a599a2859c66f12bd921b60a36f26f773",
-    "data/governance/knowledge-experience/search-index.jsonl": "149913723ff86df95433f8343148cbfcda7f7db1b701fb0af938cd06560da094"
+    "data/governance/knowledge-experience/search-index.jsonl": "08e2d9e5bc87be80673741354f6cbc31dc97794ba74c537adc0d0d829b49559b"
   },
   "machine_human_pairs": [
     {
@@ -146,7 +146,7 @@
   "snapshot_date": "2026-07-30",
   "source_inputs": {
     "data/foundation/function-assets/identity-cards.jsonl": "5af8b666cc91598ebf847e0fe2b59c2f9614c31506d4ee76a5a90dd2d16f1b7c",
-    "data/foundation/nonfunction-claims/claim-registry.jsonl": "7cabf7846bd27158bcc44370a36ae124f8684ed3ec23853e6b29d74f507542e8",
+    "data/foundation/nonfunction-claims/claim-registry.jsonl": "53fe8226cbb477a701a87d2577e9827aa2fe46e7abe20ff54afa8f4aa70b458d",
     "data/governance/human-results/result-ledger.jsonl": "56ba6cc922e1e72de842b00f1c6688333bdc4291c047964b61bbd30724235b68",
     "data/governance/knowledge-experience/config.json": "b10d5fe209ce4f185693571e31917bea63b85d7b4dbe8d4294fb373117563eca",
     "data/governance/knowledge-experience/source-first-seen.json": "22150358bf449daa3389eb15de3335c59f5327e56bab5e5952134787904e800c"
