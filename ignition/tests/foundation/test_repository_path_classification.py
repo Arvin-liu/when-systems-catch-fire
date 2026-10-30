@@ -56,6 +56,12 @@ class PositiveTreeTest(unittest.TestCase):
             ("GENERATED_PROJECTION", "GENERATED_PROJECTION"),
         )
 
+    def test_r4_self_reflection_package_is_tooling(self) -> None:
+        self.assertEqual(
+            preflight.classify("arr_r4_self_reflection/arch_gate.py"),
+            ("TOOL_OR_WORKFLOW", "TOOL_OR_WORKFLOW"),
+        )
+
 
 class NegativeClassificationTest(unittest.TestCase):
     def _live_real(self) -> dict:

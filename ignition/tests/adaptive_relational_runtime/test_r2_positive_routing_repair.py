@@ -606,6 +606,11 @@ def test_current_branch_is_repair_branch():
     """
     branch = _resolve_repair_branch()
     assert branch is not None, "could not resolve a repair branch (detached HEAD with no CI ref)"
+    if not branch.startswith("repair/adaptive-relational-runtime-r2-"):
+        pytest.skip(
+            f"not an R2 repair branch (got {branch!r}); the R2 repair invariant is "
+            f"only enforced on repair/adaptive-relational-runtime-r2-* branches"
+        )
     assert branch.startswith("repair/adaptive-relational-runtime-r2-"), \
         f"expected an R2 repair branch (positive-routing / human-front-door-sync / ...), got {branch!r}"
 

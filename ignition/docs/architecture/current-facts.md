@@ -8,9 +8,9 @@
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live state dimensions: dispatch `OBSERVED`；process `OBSERVED`；inference `NOT_OBSERVED`；validated completion `NOT_VALIDATED`；reconciliation blocker `NONE`；next eligible action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`。
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
-- Foundation: function identity cards `6205`；function quarantine/pending `5053`；non-function claims `19003`；non-function quarantine/pending `5476`。
-- Knowledge Experience: cards `674`；changes `569`；layered readings `595`；search records `25803`；aliases `1395`。
-- Fire Seeds: `64` seeds/clusters；`660` source-census records。
+- Foundation: function identity cards `6214`；function quarantine/pending `5062`；non-function claims `19059`；non-function quarantine/pending `5496`。
+- Knowledge Experience: cards `677`；changes `572`；layered readings `598`；search records `25871`；aliases `1401`。
+- Fire Seeds: `64` seeds/clusters；`663` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`21` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
 - Formal task lifecycle: `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS` terminal `true` scope_complete `true`；source `ignition/data/operations/formal-task-lifecycle-r1.json`。

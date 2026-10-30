@@ -19,3 +19,4 @@ htmlcov/
 .tmp-dl/
 .tmp-dl-artifact/
 tests/intervention/.int_test_tmp/
+.tmp_r3_*/

@@ -233,6 +233,29 @@ class ComponentValidationRoutingTest(unittest.TestCase):
         self.assertIn("g_repository_path_consumers", result["selected_target_ids"])
         self.assertIn("g_arr_runtime", result["selected_target_ids"])
 
+    def test_r3_corpus_runtime_and_synthetic_tests_route_to_existing_arr_target(self):
+        runtime_result = self.plan([
+            "ignition/tools/adaptive_relational_runtime/corpus/runner.py",
+            "ignition/docs/R3-CORPUS-RUNTIME.md",
+            "ignition/data/r3-corpus-scale/public-aggregate.json",
+            "ignition/data/operations/propagation/R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json",
+        ])
+        self.assertIn("arr_runtime", runtime_result["seed_components"])
+        self.assertIn("g_arr_runtime", runtime_result["selected_target_ids"])
+        delta_evidence = next(
+            item for item in runtime_result["path_component_evidence"]
+            if item["path"].endswith("R3-WAIC-CORPUS-SCALE-R1-system-map-delta.json")
+        )
+        self.assertEqual(
+            delta_evidence["authorized_overlap"]["component_ids"],
+            ["arr_runtime", "propagation_calculator"],
+        )
+
+        test_result = self.plan(["ignition/tests/test_r3_corpus_inventory.py"])
+        self.assertEqual(test_result["mode"], "FULL")
+        self.assertEqual(test_result["changed_validation_test_targets"], ["g_arr_runtime"])
+        self.assertIn("g_arr_runtime", test_result["selected_target_ids"])
+
     def test_unmapped_path_is_not_hidden_by_an_independent_full_trigger(self):
         with self.assertRaisesRegex(RoutingBlocked, "unmapped_path"):
             self.plan([".github/workflows/foundation-validation.yml", "tools/unregistered-output.py"])

@@ -2817,6 +2817,15 @@
 - **来源：** [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md](../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md)
 - **资产卡：** [HR-3C8E2580116A3CD7](./ASSET-CARDS.md#asset-hr-3c8e2580116a3cd7)
 
+<a id="change-src-hr-f24a15ff21b59f0a"></a>
+### 2026-07-25 · ARR R4 — Gap / Architecture-Candidate Gate
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This document specifies the architecture-candidate gate used by R4 to decide whether an observed weakness may be promoted from a lower-level limitation to an ARCHITECTURECANDIDATE warranting a future R5 design change. The default disposition is NOEVOLVE. R4 never implements a candidate and never…
+- **来源：** [arr-r4-gap-candidate-gate.md](../docs/architecture/arr-r4-gap-candidate-gate.md)
+- **资产卡：** [HR-F24A15FF21B59F0A](./ASSET-CARDS.md#asset-hr-f24a15ff21b59f0a)
+
 <a id="change-src-hr-de58f9adf534ac72"></a>
 ### 2026-07-25 · Adaptive Relational Runtime R2 — Real Object Pilot
 
@@ -2834,6 +2843,24 @@
 - **变化：** Status: accepted (preferred: behaviorally registry-driven)
 - **来源：** [adaptive-relational-runtime-r2-adrs.md](../docs/architecture/adaptive-relational-runtime-r2-adrs.md)
 - **资产卡：** [HR-60754E6F4AA10A57](./ASSET-CARDS.md#asset-hr-60754e6f4aa10a57)
+
+<a id="change-src-hr-5177e613de9d33f6"></a>
+### 2026-07-25 · ARR R4 — WAIC Corpus-Scale Self-Reflection and Failure-Attribution R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This document is the public, non-private R4 report. It contains only counts, distributions, dispositions and structural facts. No note titles, raw text, transcript content, URL lists or reconstructive features appear here; those live only in the 1111 private evidence branch.
+- **来源：** [arr-r4-self-reflection.md](../docs/architecture/arr-r4-self-reflection.md)
+- **资产卡：** [HR-5177E613DE9D33F6](./ASSET-CARDS.md#asset-hr-5177e613de9d33f6)
+
+<a id="change-src-hr-411160237efe6d62"></a>
+### 2026-07-25 · ARR R4 — Architecture Decision Records
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** taskid: ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725 controlcommit: e8530a7d87f13ef09cea58d34f6f548a695d7955
+- **来源：** [adaptive-relational-runtime-r4-adrs.md](../docs/architecture/adaptive-relational-runtime-r4-adrs.md)
+- **资产卡：** [HR-411160237EFE6D62](./ASSET-CARDS.md#asset-hr-411160237efe6d62)
 
 <a id="change-src-hr-e2706f26c12e2dff"></a>
 ### 2026-07-24 · Adaptive Relational Runtime / 自适应关系运行时(R1 Scaffold 主合同)

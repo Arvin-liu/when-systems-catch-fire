@@ -1,0 +1,32 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "r3_corpus_runtime",
+    "r3_corpus_schemas",
+    "r3_corpus_identity",
+    "r3_corpus_inventory",
+    "r3_corpus_shard",
+    "r3_corpus_checkpoint",
+    "r3_corpus_runner",
+    "r3_corpus_semantic",
+    "r3_corpus_private_ref",
+    "r3_corpus_analysis",
+    "r3_corpus_aggregate",
+    "r3_corpus_driver",
+    "r3_corpus_cli",
+    "r3_synthetic_corpus_fixture",
+    "r3_corpus_scale_validation_ci"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": [
+    "per_note_receipts_private_branch",
+    "duplicate_clusters_private_branch",
+    "source_graph_private_branch",
+    "temporal_ledger_private_branch"
+  ]
+}

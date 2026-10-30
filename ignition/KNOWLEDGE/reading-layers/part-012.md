@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e5b132f83f5707d0"></a>
+## 121Q21R Multiscale Causal Fabric Validation
+`CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: READYASMULTISCALECAUSALFABRICCANDIDATE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q21R Multiscale Causal Fabric Validation；Status: READYASMULTISCALECAUSALFABRICCANDIDATE；Q12: effectual action can select small actions that change a fabric; mechanism adjudication can compare candidate paths and set claim ceilings.；Q13: attractor, distribution, narrative provenance, and compression checks are used to prevent "causal network" from becoming a label without information gain.；Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not proof.；Charter Gate: responsibility and burden projections must record beneficiaries, risk bearers, silent subjects, irreversibility, and rollback limits.
+- 完整阅读：[reports/architecture/121Q21R-multiscale-causal-fabric-validation.md](../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
+
+<a id="reading-hr-e5c82087cc19191e"></a>
+## 121Q14 Baseline And Latent Map Audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：121Q14 starts from 121Q13 Draft PR 48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q14 Baseline And Latent Map Audit；Status: BASELINEAUDITED；121Q14 starts from 121Q13 Draft PR #48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441.；PR #48: open, draft, unmerged, mergeable.；121Q13 Foundation remote run 29410550418: success.；121Q13 Function OS remote run 29410552324: success.
+- 完整阅读：[reports/atlas/121Q14-baseline-latent-map-audit.md](../../reports/atlas/121Q14-baseline-latent-map-audit.md)
+
 <a id="reading-hr-e628768805f5eb1d"></a>
 ## Counterexample replay audit
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -157,6 +171,13 @@
 - 1 分钟：Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260907-160 progress；Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.；Task160 remains research-only; exact-head and lifecycle ceilings are preserved.
 - 完整阅读：[agent-results/IGNITION-20260907-160-progress.md](../../agent-results/IGNITION-20260907-160-progress.md)
+
+<a id="reading-hr-f24a15ff21b59f0a"></a>
+## ARR R4 — Gap / Architecture-Candidate Gate
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This document specifies the architecture-candidate gate used by R4 to decide whether an observed weakness may be promoted from a lower-level limitation to an ARCHITECTURECANDIDATE warranting a future R5 design change. The default disposition is NOEVOLVE. R4 never implements a candidate and never… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：ARR R4 — Gap / Architecture-Candidate Gate；This document specifies the architecture-candidate gate used by R4 to decide whether an observed weakness may be promoted from a lower-level limitation to an ARCHITECTURECANDIDATE warranting a future R5 design change. The default disposition is NOEVOLVE. R4 never implements a candidate and never starts R5.；R4 must separate "the material / evidence / extraction / metric is weak" from "the runtime or architecture is structurally incapable." Only the latter may become an architecture candidate. Promoting a material or metric defect to an architecture candidate would misallocate future effort and violate the non-goals (§15) of R4.；主题：2. The eight mandatory conditions；A limitation may be labeled ARCHITECTURECANDIDATE only when all of the following hold. If any is false, the disposition is NOEVOLVE.；主题：3. Implementation
+- 完整阅读：[docs/architecture/arr-r4-gap-candidate-gate.md](../../docs/architecture/arr-r4-gap-candidate-gate.md)
 
 <a id="reading-hr-f25c6ad93d4e6b1c"></a>
 ## IGNITION-140 Step 07 — Canonical Reconciliation Events
