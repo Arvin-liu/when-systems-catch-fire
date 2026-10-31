@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Executor completion is represented as `COMPLETED_UNVALIDATED`; the receipt](../../../reports/operations/ignition-122-federation-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-468caaab051f05b3 / Executor completion is represented as `COMPLETED_UNVALIDATED`; the receipt
+  - 来源：`reports/operations/ignition-122-federation-progress.md`
+  - 依赖：—；被引用：—
+- [Executor**: QClaw \(qclaw/pool-glm-5.2-night, reasoning: high\)](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e52202e6596c595c / Executor**: QClaw \(qclaw/pool-glm-5.2-night, reasoning: high\)
+  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
+- [Executor**: QClaw main session](../../../reports/external-research/121Q2-night-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-706cfd1a7625f2f0 / Executor**: QClaw main session
+  - 来源：`reports/external-research/121Q2-night-progress.md`
+  - 依赖：—；被引用：—
+- [Executor/validator availability is supplied by the caller and is not live-probed. Validators are checked by declared typ](../../../docs/operations/toolbox-task-decomposition-solvability.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b2a0fca61d6ad092 / Executor/validator availability is supplied by the caller and is not live-probed. Validators are checked by declared typ
+  - 来源：`docs/operations/toolbox-task-decomposition-solvability.md`
+  - 依赖：—；被引用：—
 - [Executor: QClaw \(Hy3, adaptive deep-thinking\)](../../../data/external-research/121-fulltext-resolver/121q6/121q6-reproducibility-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-663b166809deb086 / Executor: QClaw \(Hy3, adaptive deep-thinking\)
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-69d9afd526b388f6 / Lifecycle: `OPTIONAL_EXPERIMENTAL_MODULE`
   - 来源：`docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md`
-  - 依赖：—；被引用：—
-- [Limitation**: 只能验证元数据，不能验证论文内容](../../../docs/external-research/provider-contract.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-82613fc146cbf86b / Limitation**: 只能验证元数据，不能验证论文内容
-  - 来源：`docs/external-research/provider-contract.md`
-  - 依赖：—；被引用：—
-- [Limits: A valid link establishes traceability, not truth or replication.; Source presence cannot substitute for claim-sp](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5fc06e5c564a0005 / Limits: A valid link establishes traceability, not truth or replication.; Source presence cannot substitute for claim-sp
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [Limits: Aliases and search hits are navigation aids, not canonical identity by themselves.; Unresolved legacy references](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1a5d0d1f75e228cf / Limits: Aliases and search hits are navigation aids, not canonical identity by themselves.; Unresolved legacy references
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [Limits: Cannot be selected as the Current method.; Historical execution evidence cannot override Current 1.4.0.](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-042fb48d29006c72 / Limits: Cannot be selected as the Current method.; Historical execution evidence cannot override Current 1.4.0.
-  - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/adapters/codex.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C1349882A8FAB996 / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-C1349882A8FAB996 / IMPLICIT-2B46F54C3D2120FF
+  - 来源：`agent_federation/adapters/codex.py`
+  - 依赖：—；被引用：—
 - [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/adapters/hermes.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-D9C8B4EFDAB73C6B / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-D9C8B4EFDAB73C6B / IMPLICIT-2B46F54C3D2120FF
@@ -544,6 +549,11 @@
   - 可搜索名称：IMPLICIT-F82EB4B46F51C07B / def ingest_receipt\(self, receipt: FederatedResultReceipt, *, source_run_id: str, memory_id: str \| None = None\) -> ReceiptIngestResult: / IMPLICIT-F82EB4B46F51C07B
   - 来源：`agent_federation/convergence.py`
   - 依赖：—；被引用：—
+- [def integrate_sectors\(flux_by_sector, area, day_weights\):](../../../data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-13C3B37EB80F5548 / def integrate_sectors\(flux_by_sector, area, day_weights\): / IMPLICIT-13C3B37EB80F5548
+  - 来源：`data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py`
+  - 依赖：—；被引用：—
 - [def interface_digest\(public_help: str\) -> str:](../../../agent_federation/live_transport.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-78281BC4CE01D295 / def interface_digest\(public_help: str\) -> str: / IMPLICIT-78281BC4CE01D295
@@ -773,6 +783,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-ACD18BE31E480969 / def main\(\): / IMPLICIT-ACD18BE31E480969 / IMPLICIT-17934D5A1A705744
   - 来源：`function-os-candidate/v0.2/benchmark/generate_corpus.py`
+  - 依赖：—；被引用：—
+- [def main\(\):](../../../data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B5CC3C0FDB70BE3F / def main\(\): / IMPLICIT-B5CC3C0FDB70BE3F / IMPLICIT-17934D5A1A705744
+  - 来源：`data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py`
   - 依赖：—；被引用：—
 - [def main\(\):](../../../scripts/external-research/121_build_registry_and_logs.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -1613,6 +1628,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-403A3B7539F0C735 / def sha256_text\(text: str\) -> str: / IMPLICIT-403A3B7539F0C735
   - 来源：`function-os-candidate/v0.2/benchmark/oracle/reference.py`
+  - 依赖：—；被引用：—
+- [def source_dates_from_history\(history, year\):](../../../data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-15DFD36BB2F647DD / def source_dates_from_history\(history, year\): / IMPLICIT-15DFD36BB2F647DD
+  - 来源：`data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py`
   - 依赖：—；被引用：—
 - [def spool_ref\(self\) -> str:](../../../agent_federation/live_capture.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -2483,24 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-223E672DB6F5DE45 / def test_type_mismatch_input\(self\): / IMPLICIT-223E672DB6F5DE45
   - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
-  - 依赖：—；被引用：—
-- [def test_undeclared_symbol_in_expression\(self\):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CF40978A2257DC1F / def test_undeclared_symbol_in_expression\(self\): / IMPLICIT-CF40978A2257DC1F
-  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
-  - 依赖：—；被引用：—
-- [def test_undefined_symbol_in_postcondition\(self\):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B600754148D32040 / def test_undefined_symbol_in_postcondition\(self\): / IMPLICIT-B600754148D32040
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_undefined_symbol_in_precondition\(self\):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0F5D15EBFBE63D39 / def test_undefined_symbol_in_precondition\(self\): / IMPLICIT-0F5D15EBFBE63D39
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_undefined_symbol_rejected\(self\):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FE3646A333D3F25D / def test_undefined_symbol_rejected\(self\): / IMPLICIT-FE3646A333D3F25D
-  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [P1-6：建立数据校验器；](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d33a62301cb2006 / P1-6：建立数据校验器；
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：P1；被引用：—
+- [P1-7 数据完整性审计已完成：](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5bebb020e9239fe1 / P1-7 数据完整性审计已完成：
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：P1；被引用：—
+- [P1-7：P1 数据完整性审计](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e2c7cfaaf885fd8e / P1-7：P1 数据完整性审计
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：P1；被引用：—
+- [P1-7：P1 数据完整性审计。](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cbba3380823caa93 / P1-7：P1 数据完整性审计。
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：P1；被引用：—
 - [P1-7：已完成 P1 数据完整性审计，见 `outputs/audit/p1-machine-readable-data-audit-20260707.md`。](../../../docs/v0.2_next_tasks.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-88663417f98cf096 / P1-7：已完成 P1 数据完整性审计，见 `outputs/audit/p1-machine-readable-data-audit-20260707.md`。
@@ -2482,25 +2502,5 @@
 - [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ca8040a226c57e40 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d6803387d592d860 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ee972efbb7b76790 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-eefdec6106e4f9cc / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
-  - 来源：`TOOLBOX.md`
-  - 依赖：—；被引用：—
-- [State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor](../../../TOOLBOX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef563b72b4f76437 / State: `EXPERIMENTAL_AVAILABLE` / `EXPERIMENTAL` · version `0.1.0` · license `BUSL-1.1` · maintainer `Ignition repositor
   - 来源：`TOOLBOX.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-339\]\( \) \| \[遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死\]](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0fad71d2e497a417 / \| \[C-339\]\( \) \| \[遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死\]
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D88；被引用：—
+- [\| \[C-35\]\( \) \| \[罗斯福新政\]\( \) \| 美国人有真实退出权，新政认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99f220a8bec6cc76 / \| \[C-35\]\( \) \| \[罗斯福新政\]\( \) \| 美国人有真实退出权，新政认同经退出权验证 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-36\]\( \) \| \[中国土地改革\]\( \) \| 农民"可以不接受"但计划经济+户籍事实上走不了，温室 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-23093dd0d96efc47 / \| \[C-36\]\( \) \| \[中国土地改革\]\( \) \| 农民"可以不接受"但计划经济+户籍事实上走不了，温室 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-37\]\( \) \| \[韩国新村运动\]\( \) \| 农民"可以不参与"但威权体制下事实上无法退出 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e262cb9725858a60 / \| \[C-37\]\( \) \| \[韩国新村运动\]\( \) \| 农民"可以不参与"但威权体制下事实上无法退出 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-38\]\( \) \| \[北欧福利国家\]\( \) \| 公民有真实退出权，福利国家认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-19151114e10298a5 / \| \[C-38\]\( \) \| \[北欧福利国家\]\( \) \| 公民有真实退出权，福利国家认同经退出权验证 \|
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-1f262503caf2121a / 下一步进入 P1-4：生成 pending / risk / failure 数据。
   - 来源：`docs/machine_readable_data_plan.md`
   - 依赖：P1；被引用：—
-- [下一步进入 P1-7：P1 数据完整性审计。](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-875a36d7789a0ef3 / 下一步进入 P1-7：P1 数据完整性审计。
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：P1；被引用：—
-- [下一步（待 GPT 指令）：逐本复核后，给通过者分配 C 编号、写入 `已迁移的历史案例来源/`。](../../../outputs/book-collisions/20260709-22-book-validation/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-32ee2c7862ecea25 / 下一步（待 GPT 指令）：逐本复核后，给通过者分配 C 编号、写入 `已迁移的历史案例来源/`。
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/README.md`
-  - 依赖：—；被引用：—
-- [不修改 `已迁移的历史案例来源/`](../../../docs/p1-machine-data-collision-workflow-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b7f0cca201bac6e2 / 不修改 `已迁移的历史案例来源/`
-  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
-  - 依赖：—；被引用：—
-- [不可能性/普遍断言 699；](../../ASSET-CARDS.md#asset-nfc-7d491e8a66bfebe6)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7d491e8a66bfebe6 / 不可能性/普遍断言 699； / - 不可能性/普遍断言 699；
-  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
-  - 依赖：—；被引用：—

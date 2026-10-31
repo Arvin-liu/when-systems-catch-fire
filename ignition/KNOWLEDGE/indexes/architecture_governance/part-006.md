@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_undeclared_symbol_in_expression\(self\):](../../../function-os-candidate/v0.2/tests/test_n3_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CF40978A2257DC1F / def test_undeclared_symbol_in_expression\(self\): / IMPLICIT-CF40978A2257DC1F
+  - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
+  - 依赖：—；被引用：—
+- [def test_undefined_symbol_in_postcondition\(self\):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B600754148D32040 / def test_undefined_symbol_in_postcondition\(self\): / IMPLICIT-B600754148D32040
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
+  - 依赖：—；被引用：—
+- [def test_undefined_symbol_in_precondition\(self\):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0F5D15EBFBE63D39 / def test_undefined_symbol_in_precondition\(self\): / IMPLICIT-0F5D15EBFBE63D39
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
+  - 依赖：—；被引用：—
+- [def test_undefined_symbol_rejected\(self\):](../../../function-os-candidate/v0.2/tests/test_n1_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-FE3646A333D3F25D / def test_undefined_symbol_rejected\(self\): / IMPLICIT-FE3646A333D3F25D
+  - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
+  - 依赖：—；被引用：—
 - [def test_unknown_out_of_scope_blocked\(self\):](../../../function-os-candidate/v0.2/tests/test_legacy_asset_importer.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-E796FB4959FE637C / def test_unknown_out_of_scope_blocked\(self\): / IMPLICIT-E796FB4959FE637C
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3e8706cde1d64e8d / Execution traces support conditioning and counterfactual intervention semantically, but no trace archive, replay receipt
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Executor completion is represented as `COMPLETED_UNVALIDATED`; the receipt](../../../reports/operations/ignition-122-federation-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-468caaab051f05b3 / Executor completion is represented as `COMPLETED_UNVALIDATED`; the receipt
-  - 来源：`reports/operations/ignition-122-federation-progress.md`
-  - 依赖：—；被引用：—
-- [Executor**: QClaw \(qclaw/pool-glm-5.2-night, reasoning: high\)](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e52202e6596c595c / Executor**: QClaw \(qclaw/pool-glm-5.2-night, reasoning: high\)
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [Executor**: QClaw main session](../../../reports/external-research/121Q2-night-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-706cfd1a7625f2f0 / Executor**: QClaw main session
-  - 来源：`reports/external-research/121Q2-night-progress.md`
-  - 依赖：—；被引用：—
-- [Executor/validator availability is supplied by the caller and is not live-probed. Validators are checked by declared typ](../../../docs/operations/toolbox-task-decomposition-solvability.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b2a0fca61d6ad092 / Executor/validator availability is supplied by the caller and is not live-probed. Validators are checked by declared typ
-  - 来源：`docs/operations/toolbox-task-decomposition-solvability.md`
   - 依赖：—；被引用：—

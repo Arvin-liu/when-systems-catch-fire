@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "Science Earth × 点火框架碰撞验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-584107c9a92c8773 / title: "Science Earth × 点火框架碰撞验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（\\"想通\\"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ead1175eebcc059b / title: "Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（\\"想通\\"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018,β=0.18；εₖ=0.3: σ'=0.12,β=1.2；εₖ=0.4: σ'=0.25,β=2.5\(峰值\)；εₖ=0.5:](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28e09162ffc15673 / title: "β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018,β=0.18；εₖ=0.3: σ'=0.12,β=1.2；εₖ=0.4: σ'=0.25,β=2.5\(峰值\)；εₖ=0.5:
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "七层主权最低门槛（验证A7财富维度）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-620cb8b6b843749b / title: "七层主权最低门槛（验证A7财富维度）"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A7；被引用：—
 - [title: "万维钢AI学习笔记碰撞验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a4a7bbf772e0e4ac / title: "万维钢AI学习笔记碰撞验证"
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-0f30651d813989c8 / \| \[C-338\]\( \) \| \[D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要\]\(<./0337-C-338-D
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D149, D89；被引用：—
-- [\| \[C-339\]\( \) \| \[遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死\]](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0fad71d2e497a417 / \| \[C-339\]\( \) \| \[遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死\]
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D88；被引用：—
-- [\| \[C-35\]\( \) \| \[罗斯福新政\]\( \) \| 美国人有真实退出权，新政认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99f220a8bec6cc76 / \| \[C-35\]\( \) \| \[罗斯福新政\]\( \) \| 美国人有真实退出权，新政认同经退出权验证 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-36\]\( \) \| \[中国土地改革\]\( \) \| 农民"可以不接受"但计划经济+户籍事实上走不了，温室 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-23093dd0d96efc47 / \| \[C-36\]\( \) \| \[中国土地改革\]\( \) \| 农民"可以不接受"但计划经济+户籍事实上走不了，温室 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-37\]\( \) \| \[韩国新村运动\]\( \) \| 农民"可以不参与"但威权体制下事实上无法退出 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e262cb9725858a60 / \| \[C-37\]\( \) \| \[韩国新村运动\]\( \) \| 农民"可以不参与"但威权体制下事实上无法退出 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

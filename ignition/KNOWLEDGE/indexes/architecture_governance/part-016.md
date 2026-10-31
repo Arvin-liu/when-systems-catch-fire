@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [材料错误（文本错误、实验数据错误）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bdc120f9d2fb34bd / 材料错误（文本错误、实验数据错误）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [条 empirical obligations — 需要经验证据、实验或外部来源](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-77ff737af04b16f1 / 条 empirical obligations — 需要经验证据、实验或外部来源
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [条 empirical obligations 需要经验证据](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-be169943df3c14f7 / 条 empirical obligations 需要经验证据
+  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
+  - 依赖：—；被引用：—
+- [条有 `CLAIM_SUPPORT_CONFIRMED`（需全文内容验证）](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ee3ccae201365201 / 条有 `CLAIM_SUPPORT_CONFIRMED`（需全文内容验证）
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
 - [条有 `CONTRADICTORY_EVIDENCE` 标记](../../../data/external-research/104-evidence-tier-schema.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-9ad45e6b777a8d26 / 条有 `CONTRADICTORY_EVIDENCE` 标记
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-49ab0715cd940c7b / 重整化群门槛标度案例验证。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [重算轴覆盖（与执行报告一致，证实 250 分母正确）](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-faddbf78e3156e64 / 重算轴覆盖（与执行报告一致，证实 250 分母正确）
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
-- [量化竞赛转化**：专业成长 → 可量化指标（磨课轮数、获奖等级、AI 课堂分析数据）。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ff4ee677a662de46 / 量化竞赛转化**：专业成长 → 可量化指标（磨课轮数、获奖等级、AI 课堂分析数据）。
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [量词膨胀：局部结果是否被写成所有、任何、必然、唯一；](../../../docs/governance/self-correction-engine.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4495d501a8239800 / 量词膨胀：局部结果是否被写成所有、任何、必然、唯一；
-  - 来源：`docs/governance/self-correction-engine.md`
-  - 依赖：—；被引用：—
-- [金融危机为何发生](../../../data/foundation/claims/claims.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：CLAIM-PEND-013 / 金融危机为何发生
-  - 来源：`data/foundation/claims/claims.jsonl`
   - 依赖：—；被引用：—

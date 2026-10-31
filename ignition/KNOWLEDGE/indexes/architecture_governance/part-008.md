@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Limitation**: 只能验证元数据，不能验证论文内容](../../../docs/external-research/provider-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-82613fc146cbf86b / Limitation**: 只能验证元数据，不能验证论文内容
+  - 来源：`docs/external-research/provider-contract.md`
+  - 依赖：—；被引用：—
+- [Limits: A valid link establishes traceability, not truth or replication.; Source presence cannot substitute for claim-sp](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5fc06e5c564a0005 / Limits: A valid link establishes traceability, not truth or replication.; Source presence cannot substitute for claim-sp
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Limits: Aliases and search hits are navigation aids, not canonical identity by themselves.; Unresolved legacy references](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1a5d0d1f75e228cf / Limits: Aliases and search hits are navigation aids, not canonical identity by themselves.; Unresolved legacy references
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
+- [Limits: Cannot be selected as the Current method.; Historical execution evidence cannot override Current 1.4.0.](../../../TOOLBOX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-042fb48d29006c72 / Limits: Cannot be selected as the Current method.; Historical execution evidence cannot override Current 1.4.0.
+  - 来源：`TOOLBOX.md`
+  - 依赖：—；被引用：—
 - [Limits: Meaning candidates are not language-independent truth.; Human review remains required for naturalness, literary](../../../TOOLBOX.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-722dea42f78f9e06 / Limits: Meaning candidates are not language-independent truth.; Human review remains required for naturalness, literary
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d2169985e80154e7 / P1-6：建立数据校验器
   - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：P1；被引用：—
-- [P1-6：建立数据校验器；](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1d33a62301cb2006 / P1-6：建立数据校验器；
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
-  - 依赖：P1；被引用：—
-- [P1-7 数据完整性审计已完成：](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5bebb020e9239fe1 / P1-7 数据完整性审计已完成：
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：P1；被引用：—
-- [P1-7：P1 数据完整性审计](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e2c7cfaaf885fd8e / P1-7：P1 数据完整性审计
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：P1；被引用：—
-- [P1-7：P1 数据完整性审计。](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cbba3380823caa93 / P1-7：P1 数据完整性审计。
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
   - 依赖：P1；被引用：—

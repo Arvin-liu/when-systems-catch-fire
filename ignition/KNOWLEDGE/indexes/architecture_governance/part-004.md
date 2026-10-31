@@ -2444,6 +2444,11 @@
   - 可搜索名称：IMPLICIT-CFA26A2217EAE1A3 / def current_validity\(row: dict\[str, object\]\) -> str: / IMPLICIT-CFA26A2217EAE1A3
   - 来源：`data/operations/iterations/112/publication/tools/build_ledger.py`
   - 依赖：—；被引用：—
+- [def daily_counts_by_month\(source_dates\):](../../../data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-81D55E01EF3F04A2 / def daily_counts_by_month\(source_dates\): / IMPLICIT-81D55E01EF3F04A2
+  - 来源：`data/operations/iterations/020/v1-methane-source-bound-real-task-r0/recompute_gongga_annual_totals.py`
+  - 依赖：—；被引用：—
 - [def decide_bounded_failover\(](../../../agent_federation/live_failover.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-A5DF6093B08534A7 / def decide_bounded_failover\( / IMPLICIT-A5DF6093B08534A7
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-62448B3035636E77 / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-62448B3035636E77 / IMPLICIT-2B46F54C3D2120FF
   - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [def describe\(self\) -> ExecutorDescriptor:](../../../agent_federation/adapters/codex.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C1349882A8FAB996 / def describe\(self\) -> ExecutorDescriptor: / IMPLICIT-C1349882A8FAB996 / IMPLICIT-2B46F54C3D2120FF
-  - 来源：`agent_federation/adapters/codex.py`
   - 依赖：—；被引用：—
